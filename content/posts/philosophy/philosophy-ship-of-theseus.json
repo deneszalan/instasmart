@@ -32,33 +32,32 @@
       "text": "Japan’s Ise Shrine is rebuilt with fresh timber every 20 years, yet is treated as the same sacred place. Restored antiques and old bands raise the same question."
     },
     {
-      "type": "spectrum",
-      "heading": "Two thousand years of the same question",
+      "type": "place",
+      "question": "When was Japan’s Ise Shrine first ceremonially rebuilt?",
       "min": 1,
       "max": 2050,
+      "step": 1,
+      "answer": 692,
+      "format": "year",
       "ends": [
         "AD 1",
         "Today"
       ],
-      "marks": [
+      "hints": [
         {
-          "label": "Plutarch tells the tale",
+          "label": "Plutarch",
           "value": 100
         },
         {
-          "label": "Ise Shrine first rebuilt",
-          "value": 692
-        },
-        {
-          "label": "Hobbes adds a second ship",
+          "label": "Hobbes",
           "value": 1655
         },
         {
-          "label": "Ise rebuilt, 62nd time",
+          "label": "62nd rebuild",
           "value": 2013
         }
       ],
-      "note": "Ise’s first ceremonial rebuilding was in 692; the 62nd came in 2013 and the next is due in 2033."
+      "explanation": "Empress Jitō carried out the first ceremonial rebuilding in 692. Rebuilt roughly every 20 years since, with some wartime delays, the shrine reached its 62nd version in 2013; the next is due in 2033."
     },
     {
       "type": "text",

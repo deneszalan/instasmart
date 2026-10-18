@@ -7,30 +7,28 @@
   "body": "A long-held view treats knowledge as justified true belief. Edmund Gettier’s tiny paper described cases where all three conditions hold, yet the person was only lucky. Bertrand Russell had a similar example: you glance at a clock that stopped exactly twelve hours ago and believe the right time. Around AD 770, the Indian Buddhist philosopher Dharmottara imagined a traveler who sees a mirage and finds real water there.",
   "slides": [
     {
-      "type": "spectrum",
-      "heading": "Who saw the problem, and when",
+      "type": "place",
+      "question": "When did Bertrand Russell publish his stopped-clock example?",
       "min": 700,
       "max": 2000,
+      "step": 1,
+      "answer": 1948,
+      "format": "year",
       "ends": [
         "AD 700",
         "AD 2000"
       ],
-      "marks": [
+      "hints": [
         {
-          "label": "Dharmottara’s mirage",
+          "label": "Dharmottara",
           "value": 770
         },
         {
-          "label": "Russell’s stopped clock",
-          "value": 1948
-        },
-        {
-          "label": "Gettier’s three pages",
-          "value": 1963,
-          "emphasis": true
+          "label": "Gettier paper",
+          "value": 1963
         }
       ],
-      "note": "Dharmottara’s commentary is dated c. 770; Russell’s Human Knowledge appeared in 1948."
+      "explanation": "Russell’s stopped clock appears in Human Knowledge: Its Scope and Limits (1948), only 15 years before Gettier’s 1963 paper; Dharmottara’s mirage case dates from around AD 770."
     },
     {
       "type": "quiz",
