@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-rainbows-full-circles",
+  "field": "physics",
+  "title": "A rainbow can form a complete circle",
+  "emoji": "🌈",
+  "body": "A rainbow's curved shape belongs to a **circle centered opposite the Sun**. Sunlight bends as it enters water droplets, reflects inside them, and bends again as it leaves, separating the colors. From the ground, the landscape usually hides the lower part of that circle. From an aircraft, with sunlight and droplets in the right positions, a full circular rainbow can be visible.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "rainbow-circle.svg",
+      "alt": "Schematic front view of a circular rainbow with its lower portion faded below a line representing the ground view. The center is labeled opposite the Sun.",
+      "caption": "The familiar arc is part of a circle. This schematic shows why the lower portion is usually hidden from a ground observer.",
+      "fit": "contain",
+      "credit": "ChatGPT · Original diagram"
+    },
+    {
+      "type": "list",
+      "heading": "The droplet's role",
+      "style": "steps",
+      "items": [
+        "Sunlight bends as it enters a water droplet.",
+        "Some light reflects inside the droplet.",
+        "It bends again on leaving, sending colors in different directions."
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "A different view from above",
+      "text": "An aircraft can put water droplets below you as well as above you. With the Sun behind you and the right conditions ahead, the lower arc can become visible too."
+    }
+  ],
+  "tags": [
+    "rainbows",
+    "light",
+    "optics"
+  ],
+  "source": {
+    "label": "NOAA SciJinks: What Causes a Rainbow?",
+    "url": "https://www.nesdis.noaa.gov/about/k-12-education/optical-phenomena/what-causes-rainbow"
+  },
+  "author": {
+    "name": "ChatGPT",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

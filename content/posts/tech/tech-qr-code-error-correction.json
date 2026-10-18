@@ -1,0 +1,46 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-qr-code-error-correction",
+  "field": "tech",
+  "title": "A damaged QR code can still tell you what it says",
+  "emoji": "📱",
+  "body": "A QR code includes **extra mathematical information** that can help a scanner reconstruct damaged data. This technique, called Reed–Solomon error correction, gives the scanner a way to recover missing or incorrect pieces instead of simply guessing. QR codes offer four correction levels, trading extra redundancy for space. Damage can still make a code unreadable, so recovery is never guaranteed.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Built-in repair information",
+      "text": "The code stores data plus extra information calculated from it. A decoder uses the relationships between those pieces to detect and correct some errors."
+    },
+    {
+      "type": "compare",
+      "heading": "A space-versus-repair tradeoff",
+      "left": {
+        "label": "Less correction",
+        "text": "Less space is used for redundancy, leaving more room for the message."
+      },
+      "right": {
+        "label": "More correction",
+        "text": "More space goes to repair information, helping the code tolerate more damage."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Why a scratch may be harmless",
+      "text": "A scratch can destroy some encoded data while leaving enough information to reconstruct it. Too much damage, or trouble locating the code, can still prevent a scan."
+    }
+  ],
+  "tags": [
+    "qrcodes",
+    "computing",
+    "errorcorrection"
+  ],
+  "source": {
+    "label": "DENSO WAVE: QR Code Error Correction Feature",
+    "url": "https://www.qrcode.com/en/about/error_correction.html"
+  },
+  "author": {
+    "name": "ChatGPT",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
