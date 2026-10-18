@@ -143,6 +143,10 @@ function SlideBody({ slide, challengeId }: { slide: Slide; challengeId: string }
     case 'sort':
     case 'scramble':
     case 'odd':
+    case 'rank':
+    case 'higher':
+    case 'fill':
+    case 'place':
       return <InteractiveSlide slide={slide} challengeId={challengeId} />;
     case 'chart':
     case 'pictogram':

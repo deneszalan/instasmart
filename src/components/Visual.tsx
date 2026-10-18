@@ -34,51 +34,100 @@ function Frame({ kicker, heading, note, children }: { kicker: string; heading: s
   );
 }
 
+export interface ChartRow {
+  label: string;
+  value: number;
+  emphasis?: boolean;
+  /** Not revealed yet: no bar, a "?" for the value. */
+  hidden?: boolean;
+  /** Colours the bar after a guess. */
+  state?: 'right' | 'wrong';
+  /** A small badge after the label, e.g. the reader's guess. */
+  tag?: ReactNode;
+}
+
 /** Horizontal bars, longest at 100%. */
+export function ChartRows({ rows, unit, label }: { rows: ChartRow[]; unit?: string; label?: string }) {
+  const max = Math.max(...rows.map((r) => r.value));
+  return (
+    <ul className="chart" aria-label={label ?? 'Bar chart'}>
+      {rows.map((r, i) => (
+        <li
+          key={i}
+          className={`chart__row${r.emphasis ? ' chart__row--on' : ''}${r.state ? ` chart__row--${r.state}` : ''}${r.hidden ? ' chart__row--hidden' : ''}`}
+        >
+          <span className="chart__label">
+            {r.label}
+            {r.tag}
+          </span>
+          <span className="chart__value">{r.hidden ? '?' : withUnit(r.value, unit)}</span>
+          <span className="chart__track" aria-hidden="true">
+            <span className="chart__bar" style={{ width: r.hidden ? '0%' : `${(r.value / max) * 100}%` }} />
+          </span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export function ChartSlideView({ slide }: { slide: Of<'chart'> }) {
-  const max = Math.max(...slide.items.map((d) => d.value));
   return (
     <Frame kicker="In numbers" heading={slide.heading} note={slide.note}>
-      <ul className="chart" aria-label="Bar chart">
-        {slide.items.map((d, i) => (
-          <li key={i} className={`chart__row${d.emphasis ? ' chart__row--on' : ''}`}>
-            <span className="chart__label">{d.label}</span>
-            <span className="chart__value">{withUnit(d.value, slide.unit)}</span>
-            <span className="chart__track" aria-hidden="true">
-              <span className="chart__bar" style={{ width: `${(d.value / max) * 100}%` }} />
-            </span>
-          </li>
-        ))}
-      </ul>
+      <ChartRows rows={slide.items} unit={slide.unit} />
     </Frame>
   );
 }
 
 /** Grid shape for a pictogram: columns that divide the total evenly where possible, and an icon size that fits. */
-function pictogramGrid(total: number): { cols: number; size: 'xl' | 'lg' | 'md' | 'sm' } {
+export function pictogramGrid(total: number): { cols: number; size: 'xl' | 'lg' | 'md' | 'sm' } {
   const cols = total <= 5 ? total : total <= 25 ? ([5, 6, 4, 7, 8].find((c) => total % c === 0) ?? 5) : 10;
   const rows = Math.ceil(total / cols);
   const size = cols <= 5 && rows <= 2 ? 'xl' : rows <= 3 ? 'lg' : rows <= 5 ? 'md' : 'sm';
   return { cols, size };
 }
 
+interface PictogramGridProps {
+  icon: string;
+  total: number;
+  /** How many icons are lit, from the first. */
+  count: number;
+  label: string;
+  /** Makes the icons tappable. */
+  onTap?: (index: number) => void;
+  revealed?: boolean;
+}
+
+/** A grid of icons with the first `count` lit up. */
+export function PictogramGrid({ icon, total, count, label, onTap, revealed }: PictogramGridProps) {
+  const { cols, size } = pictogramGrid(total);
+  return (
+    <div
+      className={`pictogram pictogram--${size}${revealed ? ' pictogram--revealed' : ''}`}
+      style={{ '--cols': cols } as CSSProperties}
+      role={onTap ? 'group' : 'img'}
+      aria-label={label}
+    >
+      {Array.from({ length: total }, (_, i) => {
+        const cls = i < count ? 'pictogram__on' : 'pictogram__off';
+        return onTap ? (
+          <button key={i} type="button" className={cls} onClick={() => onTap(i)} aria-label={`${i + 1} of ${total}`} aria-pressed={i < count}>
+            {icon}
+          </button>
+        ) : (
+          <span key={i} className={cls} aria-hidden="true">
+            {icon}
+          </span>
+        );
+      })}
+    </div>
+  );
+}
+
 /** "3 in 10": a grid of icons with the first `count` lit up. */
 export function PictogramSlideView({ slide }: { slide: Of<'pictogram'> }) {
-  const { cols, size } = pictogramGrid(slide.total);
   return (
     <Frame kicker="In proportion" heading={slide.heading} note={slide.note}>
-      <div
-        className={`pictogram pictogram--${size}`}
-        style={{ '--cols': cols } as CSSProperties}
-        role="img"
-        aria-label={`${slide.count} of ${slide.total} highlighted`}
-      >
-        {Array.from({ length: slide.total }, (_, i) => (
-          <span key={i} className={i < slide.count ? 'pictogram__on' : 'pictogram__off'} aria-hidden="true">
-            {slide.icon}
-          </span>
-        ))}
-      </div>
+      <PictogramGrid icon={slide.icon} total={slide.total} count={slide.count} label={`${slide.count} of ${slide.total} highlighted`} />
       <p className="pictogram__ratio">
         <strong>{slide.count}</strong> of {slide.total}
       </p>

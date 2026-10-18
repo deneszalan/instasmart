@@ -1,9 +1,23 @@
 import type { KnowledgeCard, Slide } from '../types';
+import { createRng, shuffle } from './feed';
 
-const INTERACTIVE_TYPES = new Set<Slide['type']>(['quiz', 'reveal', 'estimate', 'order', 'match', 'sort', 'scramble', 'odd']);
+const INTERACTIVE_TYPES = new Set<Slide['type']>([
+  'quiz',
+  'reveal',
+  'estimate',
+  'order',
+  'match',
+  'sort',
+  'scramble',
+  'odd',
+  'rank',
+  'higher',
+  'fill',
+  'place',
+]);
 
 /** Puzzles are the interactive slides with more than one tap in them. */
-const PUZZLE_TYPES = new Set<Slide['type']>(['order', 'match', 'sort', 'scramble', 'odd']);
+const PUZZLE_TYPES = new Set<Slide['type']>(['order', 'match', 'sort', 'scramble', 'odd', 'rank', 'higher', 'fill', 'place']);
 
 export function isInteractive(slide: Slide): boolean {
   return INTERACTIVE_TYPES.has(slide.type);
@@ -28,4 +42,14 @@ export function seed(s: string): number {
   let h = 2166136261;
   for (const ch of s) h = Math.imul(h ^ ch.charCodeAt(0), 16777619);
   return h >>> 0;
+}
+
+/** A shuffle of 0..n-1 that is the same on every visit and never the identity. */
+export function stableShuffle(n: number, key: string): number[] {
+  const out = shuffle(
+    Array.from({ length: n }, (_, i) => i),
+    createRng(seed(key)),
+  );
+  if (out.every((v, i) => v === i)) out.push(out.shift()!);
+  return out;
 }

@@ -347,6 +347,99 @@ export const OddSlide = z
     }
   });
 
+/* ---- Visual puzzles: a chart, pictogram or spectrum the reader guesses at before it is revealed. ---- */
+
+export const RankSlide = z
+  .object({
+    type: z.literal('rank'),
+    heading: text(80).describe('What to rank, e.g. "Which emits the most CO₂ per person?"'),
+    items: z
+      .array(Datum.strict())
+      .min(3)
+      .max(5)
+      .describe('Any order; the app shuffles them and the reader taps from largest to smallest. Values must all differ.'),
+    unit: text(16).optional(),
+    note: text(100).optional(),
+    explanation: text(160).optional().describe('Shown with the revealed bars.'),
+  })
+  .strict()
+  .superRefine((slide, ctx) => {
+    if (slide.items.some((d) => d.value < 0)) ctx.addIssue({ code: 'custom', path: ['items'], message: 'values must be 0 or more' });
+    else if (new Set(slide.items.map((d) => d.value)).size < slide.items.length) {
+      ctx.addIssue({ code: 'custom', path: ['items'], message: 'values must all differ, or there is no single right order' });
+    }
+  });
+
+export const HigherSlide = z
+  .object({
+    type: z.literal('higher'),
+    heading: text(80).describe('The measure, e.g. "Known moons" or "Boiling point".'),
+    items: z
+      .array(Datum.strict())
+      .min(3)
+      .max(5)
+      .describe('In play order: the first is shown, then the reader guesses higher or lower for each of the rest.'),
+    unit: text(16).optional(),
+    note: text(100).optional(),
+    explanation: text(160).optional(),
+  })
+  .strict()
+  .superRefine((slide, ctx) => {
+    if (slide.items.some((d) => d.value < 0)) ctx.addIssue({ code: 'custom', path: ['items'], message: 'values must be 0 or more' });
+    else if (slide.items.some((d, i) => i > 0 && d.value === slide.items[i - 1].value)) {
+      ctx.addIssue({ code: 'custom', path: ['items'], message: 'two items in a row must not have the same value' });
+    }
+  });
+
+export const FillSlide = z
+  .object({
+    type: z.literal('fill'),
+    question: text(120).describe('e.g. "Out of 10 adults, how many don’t get enough exercise?"'),
+    icon: text(8).describe('One emoji, repeated.'),
+    total: z.number().int().min(2).max(20).describe('How many icons: 10 or 20 are easiest to count.'),
+    answer: z.number().int().min(0).describe('How many really count: the real share, rounded.'),
+    explanation: text(200).describe('Shown after the guess.'),
+  })
+  .strict()
+  .superRefine((slide, ctx) => {
+    if (slide.answer > slide.total) ctx.addIssue({ code: 'custom', path: ['answer'], message: 'answer cannot be more than total' });
+  });
+
+export const PlaceSlide = z
+  .object({
+    type: z.literal('place'),
+    question: text(120).describe('e.g. "How loud is a rock concert?"'),
+    min: z.number(),
+    max: z.number(),
+    step: z.number().positive().optional().describe('Slider step; defaults to a hundredth of the range.'),
+    answer: z.number().describe('The real value, between min and max.'),
+    unit: text(16).optional(),
+    ends: z.tuple([text(16), text(16)]).optional().describe('Words at the low and high ends, e.g. ["Silence", "Pain"].'),
+    colors: z.tuple([hexColor, hexColor]).optional().describe('Bar colours at the low and high ends.'),
+    hints: z
+      .array(z.object({ label: text(14), value: z.number() }).strict())
+      .max(4)
+      .optional()
+      .describe('Known points shown on the scale as clues, e.g. a whisper at 30 dB.'),
+    explanation: text(200).describe('Shown after the guess.'),
+  })
+  .strict()
+  .superRefine((slide, ctx) => {
+    if (slide.max <= slide.min) {
+      ctx.addIssue({ code: 'custom', path: ['max'], message: 'max must be greater than min' });
+    } else {
+      if (slide.answer < slide.min || slide.answer > slide.max) {
+        ctx.addIssue({ code: 'custom', path: ['answer'], message: 'answer must lie between min and max' });
+      }
+      if (slide.hints?.some((h) => h.value < slide.min || h.value > slide.max)) {
+        ctx.addIssue({ code: 'custom', path: ['hints'], message: 'every hint must lie between min and max' });
+      }
+    }
+    if (slide.step !== undefined && slide.step > slide.max - slide.min) {
+      ctx.addIssue({ code: 'custom', path: ['step'], message: 'step must be smaller than the range' });
+    }
+  });
+
 export const Slide = z.discriminatedUnion('type', [
   TextSlide,
   ImageSlide,
@@ -368,6 +461,10 @@ export const Slide = z.discriminatedUnion('type', [
   SortSlide,
   ScrambleSlide,
   OddSlide,
+  RankSlide,
+  HigherSlide,
+  FillSlide,
+  PlaceSlide,
 ]);
 
 export const Source = z.object({ label: text(120), url: httpsUrl }).strict();

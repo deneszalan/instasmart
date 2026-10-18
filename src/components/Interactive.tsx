@@ -6,6 +6,7 @@ import { withUnit } from '../lib/format';
 import { seed } from '../lib/interactive';
 import { inline } from '../lib/markdown';
 import { MatchSlideView, OddSlideView, ScrambleSlideView, SortSlideView } from './Puzzles';
+import { FillSlideView, HigherSlideView, PlaceSlideView, RankSlideView } from './VisualPuzzles';
 import { useRecord } from './useRecord';
 
 type Of<T extends Slide['type']> = Extract<Slide, { type: T }>;
@@ -29,6 +30,14 @@ export function InteractiveSlide({ slide, challengeId }: { slide: Slide; challen
       return <ScrambleSlideView slide={slide} challengeId={challengeId} />;
     case 'odd':
       return <OddSlideView slide={slide} challengeId={challengeId} />;
+    case 'rank':
+      return <RankSlideView slide={slide} challengeId={challengeId} />;
+    case 'higher':
+      return <HigherSlideView slide={slide} challengeId={challengeId} />;
+    case 'fill':
+      return <FillSlideView slide={slide} challengeId={challengeId} />;
+    case 'place':
+      return <PlaceSlideView slide={slide} challengeId={challengeId} />;
     default:
       return null;
   }

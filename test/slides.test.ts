@@ -28,7 +28,9 @@ describe('visual and puzzle slides', () => {
       'Fact or myth? Honey keeps (Fact)',
     );
     expect(slideText({ type: 'scramble', clue: 'Plants do it', answer: 'photosynthesis' })).toBe('Plants do it photosynthesis');
-    expect(slideText({ type: 'odd', items: ['Mercury', 'Jupiter'], answer: 1, explanation: 'Gas giant.' })).toBe('Mercury / Jupiter Gas giant.');
+    expect(slideText({ type: 'odd', items: ['Mercury', 'Jupiter'], answer: 1, explanation: 'Gas giant.' })).toBe('Mercury / Jupiter Gas giant.');    expect(slideText({ type: 'rank', heading: 'Moons', unit: 'moons', items: [{ label: 'Mars', value: 2 }], explanation: 'Few.' })).toBe('Moons Mars 2 moons Few.');
+    expect(slideText({ type: 'fill', question: 'How many?', icon: '🧍', total: 10, answer: 3, explanation: 'Three.' })).toBe('How many? 3 of 10 Three.');
+    expect(slideText({ type: 'place', question: 'How loud?', min: 0, max: 140, answer: 110, unit: 'dB', explanation: 'Loud.' })).toBe('How loud? 110 dB Loud.');
   });
 
   it('count as visual or interactive', () => {
@@ -41,5 +43,9 @@ describe('visual and puzzle slides', () => {
     expect(firstInteractive(c)).toBe(2);
     expect(isPuzzle(c.slides![2])).toBe(true);
     expect(isPuzzle({ type: 'quiz', question: 'q', options: ['a', 'b'], answer: 0, explanation: 'e' })).toBe(false);
+    const fill: Slide = { type: 'fill', question: 'q', icon: '🧍', total: 10, answer: 3, explanation: 'e' };
+    expect(isPuzzle(fill)).toBe(true);
+    expect(firstVisual(card([fill]))).toBe(0);
+    expect(firstInteractive(card([fill]))).toBe(0);
   });
 });

@@ -1048,6 +1048,294 @@
               "explanation"
             ],
             "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "rank"
+              },
+              "heading": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "description": "What to rank, e.g. \"Which emits the most CO₂ per person?\""
+              },
+              "items": {
+                "minItems": 3,
+                "maxItems": 5,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 28
+                    },
+                    "value": {
+                      "type": "number",
+                      "description": "The number, in the unit the slide names."
+                    },
+                    "emphasis": {
+                      "description": "Highlight this one.",
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "label",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                },
+                "description": "Any order; the app shuffles them and the reader taps from largest to smallest. Values must all differ."
+              },
+              "unit": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 16
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              },
+              "explanation": {
+                "description": "Shown with the revealed bars.",
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              }
+            },
+            "required": [
+              "type",
+              "heading",
+              "items"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "higher"
+              },
+              "heading": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "description": "The measure, e.g. \"Known moons\" or \"Boiling point\"."
+              },
+              "items": {
+                "minItems": 3,
+                "maxItems": 5,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 28
+                    },
+                    "value": {
+                      "type": "number",
+                      "description": "The number, in the unit the slide names."
+                    },
+                    "emphasis": {
+                      "description": "Highlight this one.",
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "label",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                },
+                "description": "In play order: the first is shown, then the reader guesses higher or lower for each of the rest."
+              },
+              "unit": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 16
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              },
+              "explanation": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              }
+            },
+            "required": [
+              "type",
+              "heading",
+              "items"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "fill"
+              },
+              "question": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120,
+                "description": "e.g. \"Out of 10 adults, how many don’t get enough exercise?\""
+              },
+              "icon": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 8,
+                "description": "One emoji, repeated."
+              },
+              "total": {
+                "type": "integer",
+                "minimum": 2,
+                "maximum": 20,
+                "description": "How many icons: 10 or 20 are easiest to count."
+              },
+              "answer": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991,
+                "description": "How many really count: the real share, rounded."
+              },
+              "explanation": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200,
+                "description": "Shown after the guess."
+              }
+            },
+            "required": [
+              "type",
+              "question",
+              "icon",
+              "total",
+              "answer",
+              "explanation"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "place"
+              },
+              "question": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120,
+                "description": "e.g. \"How loud is a rock concert?\""
+              },
+              "min": {
+                "type": "number"
+              },
+              "max": {
+                "type": "number"
+              },
+              "step": {
+                "description": "Slider step; defaults to a hundredth of the range.",
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "answer": {
+                "type": "number",
+                "description": "The real value, between min and max."
+              },
+              "unit": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 16
+              },
+              "ends": {
+                "description": "Words at the low and high ends, e.g. [\"Silence\", \"Pain\"].",
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 16
+                  },
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 16
+                  }
+                ],
+                "items": false,
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "colors": {
+                "description": "Bar colours at the low and high ends.",
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "type": "string",
+                    "pattern": "^#[0-9a-fA-F]{6}$"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^#[0-9a-fA-F]{6}$"
+                  }
+                ],
+                "items": false,
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "hints": {
+                "description": "Known points shown on the scale as clues, e.g. a whisper at 30 dB.",
+                "maxItems": 4,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 14
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "label",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "explanation": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200,
+                "description": "Shown after the guess."
+              }
+            },
+            "required": [
+              "type",
+              "question",
+              "min",
+              "max",
+              "answer",
+              "explanation"
+            ],
+            "additionalProperties": false
           }
         ]
       }

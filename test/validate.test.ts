@@ -162,6 +162,22 @@ describe('validateContent', () => {
     ]);
   });
 
+  it('checks visual puzzles', () => {
+    const check = (slide: object) =>
+      validateContent([file('content/posts/space/space-test-post.json', JSON.stringify(post({ slides: [slide] })))]).problems.map((p) => p.message);
+    const bars = (values: number[]) => values.map((value, i) => ({ label: `Bar ${i}`, value }));
+    expect(check({ type: 'rank', heading: 'Moons', items: bars([2, 1, 95]), unit: 'moons' })).toEqual([]);
+    expect(check({ type: 'rank', heading: 'Moons', items: bars([2, 2, 95]) })).toEqual(['slides[0].items: values must all differ, or there is no single right order']);
+    expect(check({ type: 'higher', heading: 'Moons', items: bars([2, 1, 95]) })).toEqual([]);
+    expect(check({ type: 'higher', heading: 'Moons', items: bars([2, 2, 95]) })).toEqual(['slides[0].items: two items in a row must not have the same value']);
+    expect(check({ type: 'fill', question: 'How many of 10?', icon: '🧍', total: 10, answer: 3, explanation: 'Three.' })).toEqual([]);
+    expect(check({ type: 'fill', question: 'How many of 10?', icon: '🧍', total: 10, answer: 11, explanation: 'Three.' })).toEqual(['slides[0].answer: answer cannot be more than total']);
+    const place = { type: 'place', question: 'How loud?', min: 0, max: 140, answer: 110, unit: 'dB', hints: [{ label: 'Whisper', value: 30 }], explanation: 'Loud.' };
+    expect(check(place)).toEqual([]);
+    expect(check({ ...place, answer: 150 })).toEqual(['slides[0].answer: answer must lie between min and max']);
+    expect(check({ ...place, hints: [{ label: 'Jet', value: 200 }] })).toEqual(['slides[0].hints: every hint must lie between min and max']);
+  });
+
   it('turns schema errors into readable messages', () => {
     const { problems } = validateContent([
       file('content/posts/space/space-test-post.json', JSON.stringify(post({ tags: ['#Space'], slides: [{ type: 'list', items: ['one'] }] }))),

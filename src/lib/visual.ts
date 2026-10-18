@@ -1,7 +1,7 @@
 import type { KnowledgeCard, Slide } from '../types';
 
 /** Slides that are a picture rather than text: drawn from numbers, or an image file. */
-const VISUAL_TYPES = new Set<Slide['type']>(['chart', 'pictogram', 'scale', 'spectrum', 'flow', 'image']);
+const VISUAL_TYPES = new Set<Slide['type']>(['chart', 'pictogram', 'scale', 'spectrum', 'flow', 'image', 'rank', 'higher', 'fill', 'place']);
 
 export function isVisual(slide: Slide): boolean {
   return VISUAL_TYPES.has(slide.type);

@@ -145,6 +145,13 @@ function slideParts(slide: Slide): string[] {
     case 'chart':
     case 'scale':
       return [slide.items.map((d) => `${d.label} ${d.value}${slide.unit ? ` ${slide.unit}` : ''}`).join(', '), slide.note ?? ''];
+    case 'rank':
+    case 'higher':
+      return [slide.items.map((d) => `${d.label} ${d.value}${slide.unit ? ` ${slide.unit}` : ''}`).join(', '), slide.note ?? '', slide.explanation ?? ''];
+    case 'fill':
+      return [slide.question, `${slide.answer} of ${slide.total}`, slide.explanation];
+    case 'place':
+      return [slide.question, `${slide.answer}${slide.unit ? ` ${slide.unit}` : ''}`, slide.explanation];
     case 'pictogram':
       return [`${slide.count} of ${slide.total}`, slide.note ?? ''];
     case 'spectrum':

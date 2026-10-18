@@ -1,8 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Check, RotateCcw, X } from 'lucide-react';
 import type { Slide } from '../types';
-import { createRng, shuffle } from '../lib/feed';
-import { seed } from '../lib/interactive';
+import { stableShuffle } from '../lib/interactive';
 import { inline } from '../lib/markdown';
 import { useRecord } from './useRecord';
 
@@ -22,16 +21,6 @@ function useTimer() {
     window.clearTimeout(timer.current);
     timer.current = window.setTimeout(fn, ms);
   };
-}
-
-/** A shuffle of 0..n-1 that is the same on every visit and never the identity. */
-function stableShuffle(n: number, key: string): number[] {
-  const out = shuffle(
-    Array.from({ length: n }, (_, i) => i),
-    createRng(seed(key)),
-  );
-  if (out.every((v, i) => v === i)) out.push(out.shift()!);
-  return out;
 }
 
 /** Two columns; tap one on each side to pair them up. */
