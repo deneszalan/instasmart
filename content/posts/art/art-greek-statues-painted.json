@@ -1,0 +1,45 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-greek-statues-painted",
+  "field": "art",
+  "title": "Ancient Greek statues weren’t white: they were brightly painted",
+  "emoji": "🖌️",
+  "body": "The gleaming white marble we associate with classical sculpture is mostly the work of time. Greek and Roman statues and temples, including the Parthenon, were often painted in strong colors, with patterned clothing and colored eyes. By the time Renaissance artists and 18th-century collectors studied them, most of the paint had weathered away, and bare white stone became the ideal of classical beauty.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Clues in the stone",
+      "text": "Tiny traces of pigment survive in crevices on many statues and buildings. Modern imaging and chemical analysis can identify which colors were used."
+    },
+    {
+      "type": "text",
+      "heading": "A glowing blue",
+      "text": "Egyptian blue, a pigment used across the ancient Mediterranean, gives off infrared light when lit, revealing paint on surfaces that look bare to the eye."
+    },
+    {
+      "type": "text",
+      "heading": "Gods in Color",
+      "text": "Since 2003, the touring exhibition Gods in Color, led by archaeologist Vinzenz Brinkmann, has shown full-size painted reconstructions of ancient sculpture."
+    },
+    {
+      "type": "text",
+      "heading": "Informed guesses",
+      "text": "Reconstructions are hypotheses: only traces survive, so the exact shades, shading and finish of the originals remain uncertain."
+    }
+  ],
+  "tags": [
+    "art",
+    "arthistory",
+    "mythbusting",
+    "sculpture"
+  ],
+  "source": {
+    "label": "Wikipedia: Polychrome",
+    "url": "https://en.wikipedia.org/wiki/Polychrome"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

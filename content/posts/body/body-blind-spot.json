@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-blind-spot",
+  "field": "body",
+  "title": "Each of your eyes has a blind spot that your brain quietly fills in",
+  "emoji": "🙈",
+  "body": "Where the optic nerve leaves the back of the eye, there are no light-detecting cells, so a patch of each eye’s field of view is completely blind. You don’t normally notice because the brain fills in the gap using surrounding detail and the view from your other eye, whose blind spot falls on a different part of the scene. The blind spot was first documented by the French scientist Edme Mariotte in the 1660s.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Find yours",
+      "text": "Draw an X and a dot about 8 cm to its right. Close your left eye, stare at the X with your right, and slowly move the page closer: at some point the dot vanishes."
+    },
+    {
+      "type": "text",
+      "heading": "Bigger than you’d think",
+      "text": "Each blind spot is about 7.5° tall and 5.5° wide, sitting some 12–15° to the side of where you look. That’s room for about ten full moons in a row."
+    },
+    {
+      "type": "text",
+      "heading": "Octopuses have none",
+      "text": "In octopus eyes, which evolved separately, the optic nerve approaches the light sensors from behind, so there is no gap in the retina and no blind spot."
+    }
+  ],
+  "tags": [
+    "vision",
+    "eyes",
+    "brain"
+  ],
+  "source": {
+    "label": "Wikipedia: Blind spot (vision)",
+    "url": "https://en.wikipedia.org/wiki/Blind_spot_(vision)"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

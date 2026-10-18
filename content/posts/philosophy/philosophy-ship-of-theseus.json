@@ -1,0 +1,45 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "philosophy-ship-of-theseus",
+  "field": "philosophy",
+  "title": "A ship rebuilt plank by plank has puzzled thinkers for two millennia",
+  "emoji": "⛵",
+  "body": "The Greek biographer Plutarch, writing around AD 100, says the Athenians preserved the ship of the hero Theseus by swapping each rotten plank for new timber, until philosophers argued over whether it was still the same ship. The puzzle is really about identity over time: what makes anything, including you, the same thing from one year to the next when its parts keep changing?",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Hobbes’s twist",
+      "text": "In 1655 Thomas Hobbes asked: what if someone kept every discarded plank and rebuilt the original ship? Now there are two ships, and both have a claim."
+    },
+    {
+      "type": "text",
+      "heading": "Form or matter?",
+      "text": "If identity follows the parts, the rebuilt ship is the original. If it follows shape, function and unbroken history, the repaired one is."
+    },
+    {
+      "type": "text",
+      "heading": "Real-world versions",
+      "text": "Japan’s Ise Shrine is rebuilt with fresh timber every 20 years, yet is treated as the same sacred place. Restored antiques and old bands raise the same question."
+    },
+    {
+      "type": "text",
+      "heading": "Why it matters",
+      "text": "Many of the molecules in your body are replaced over time. Whether a person is their matter, their pattern or their memories is still debated."
+    }
+  ],
+  "tags": [
+    "philosophy",
+    "thoughtexperiment",
+    "identity",
+    "metaphysics"
+  ],
+  "source": {
+    "label": "Wikipedia: Ship of Theseus",
+    "url": "https://en.wikipedia.org/wiki/Ship_of_Theseus"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

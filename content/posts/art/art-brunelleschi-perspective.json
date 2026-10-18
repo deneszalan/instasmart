@@ -1,0 +1,45 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-brunelleschi-perspective",
+  "field": "art",
+  "title": "A peephole and a mirror taught the Renaissance to paint depth",
+  "emoji": "🪞",
+  "body": "Painters had long shown distant things smaller, but without a consistent system. Around 1415–1420, the Florentine architect Filippo Brunelleschi, later famous for the dome of Florence Cathedral, demonstrated geometric linear perspective, in which parallel lines receding from the viewer meet at a single vanishing point. Within a few years, artists across Florence, from Masaccio to Donatello, were using it.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "The painted panel",
+      "text": "Brunelleschi painted Florence’s Baptistery in perspective on a small panel, then made a hole through it at the vanishing point."
+    },
+    {
+      "type": "text",
+      "heading": "The mirror test",
+      "text": "Viewers looked through the hole from behind at a mirror reflecting the painting. Moving the mirror aside revealed the real building, so the two could be compared."
+    },
+    {
+      "type": "text",
+      "heading": "Writing the rules",
+      "text": "Masaccio’s Holy Trinity fresco of the 1420s set the vanishing point at the viewer’s eye level, and Leon Battista Alberti explained the method in 1435."
+    },
+    {
+      "type": "text",
+      "heading": "The lost proof",
+      "text": "The panel itself is lost. We know the experiment mainly from his biographer Antonio Manetti, so exactly how it worked is still debated."
+    }
+  ],
+  "tags": [
+    "art",
+    "renaissance",
+    "perspective",
+    "painting"
+  ],
+  "source": {
+    "label": "Wikipedia: Perspective (graphical)",
+    "url": "https://en.wikipedia.org/wiki/Perspective_(graphical)"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

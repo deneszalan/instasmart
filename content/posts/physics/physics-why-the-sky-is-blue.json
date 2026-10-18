@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-why-the-sky-is-blue",
+  "field": "physics",
+  "title": "The sky is blue, not violet, partly because of your eyes",
+  "emoji": "🌅",
+  "body": "Sunlight contains every colour, but air molecules scatter short wavelengths far more strongly than long ones. This Rayleigh scattering sends blue and violet light bouncing across the sky from every direction, while redder light mostly carries straight on. Violet is scattered even more than blue, yet the sky doesn’t look violet: sunlight contains less of it, and our eyes are much less sensitive to it.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "The fourth-power rule",
+      "text": "Scattering grows with 1 divided by wavelength to the fourth power. Blue light at 450 nm scatters roughly five to six times more than red light at 700 nm."
+    },
+    {
+      "type": "text",
+      "heading": "Why it looks pale",
+      "text": "The scattered mix of violet, blue and some green stimulates our colour receptors much like blue light blended with white, so we see a soft sky blue."
+    },
+    {
+      "type": "text",
+      "heading": "Sunsets flip it",
+      "text": "Near the horizon, sunlight crosses far more air. Most of the blue is scattered out along the way, leaving the oranges and reds of sunset."
+    }
+  ],
+  "tags": [
+    "light",
+    "optics",
+    "sky",
+    "colour"
+  ],
+  "source": {
+    "label": "Wikipedia: Rayleigh scattering",
+    "url": "https://en.wikipedia.org/wiki/Rayleigh_scattering"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

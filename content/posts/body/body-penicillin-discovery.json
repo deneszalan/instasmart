@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-penicillin-discovery",
+  "field": "body",
+  "title": "One of medicine’s greatest discoveries began with a mouldy lab dish",
+  "emoji": "🧫",
+  "body": "In 1928 Alexander Fleming noticed that a mould contaminating one of his bacterial cultures had killed the bacteria around it. He named the active substance penicillin, but it was hard to purify and his work on it ended in 1929. A decade later, a team at Oxford led by Howard Florey worked out how to grow, extract, purify and test it, and by the Second World War it was being mass-produced and saving thousands of soldiers’ lives.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "A lucky return",
+      "text": "On 3 September 1928, Fleming returned from a family holiday to find that a mould had spoiled one of the bacterial culture plates he had left on his bench."
+    },
+    {
+      "type": "text",
+      "heading": "The first patient",
+      "text": "In 1941 Oxford policeman Albert Alexander began recovering within a day of receiving penicillin. Supplies were so scarce it was even recovered from his urine."
+    },
+    {
+      "type": "text",
+      "heading": "An early warning",
+      "text": "Fleming, Florey and Chain shared the 1945 Nobel Prize. In his Nobel lecture, Fleming warned that underdosing could make bacteria resistant to penicillin."
+    }
+  ],
+  "tags": [
+    "antibiotics",
+    "medicine",
+    "history"
+  ],
+  "source": {
+    "label": "Wikipedia: Discovery of penicillin",
+    "url": "https://en.wikipedia.org/wiki/Discovery_of_penicillin"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

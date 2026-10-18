@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-double-slit",
+  "field": "physics",
+  "title": "A single particle can interfere with itself",
+  "emoji": "🌊",
+  "body": "Shine light through two narrow slits and a pattern of bright and dark stripes appears, the signature of overlapping waves; Thomas Young showed this in 1801. The quantum shock is that electrons, atoms and even big molecules do the same, as if each one travels through both slits as a wave and only lands at a single spot when detected. Richard Feynman called the experiment the heart of quantum mechanics.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "One at a time",
+      "text": "Send electrons through singly and each lands as one dot. Yet thousands of dots slowly build up the striped pattern, as if every electron passed through both slits."
+    },
+    {
+      "type": "text",
+      "heading": "Look, and it vanishes",
+      "text": "Measure which slit each particle goes through and the stripes disappear, leaving two plain bands. Getting “which-path” information destroys the interference."
+    },
+    {
+      "type": "text",
+      "heading": "Not just tiny things",
+      "text": "The effect has been shown with molecules made of about 2,000 atoms, with a mass around 25,000 times that of a hydrogen atom."
+    }
+  ],
+  "tags": [
+    "quantum",
+    "waves",
+    "experiment"
+  ],
+  "source": {
+    "label": "Wikipedia: Double-slit experiment",
+    "url": "https://en.wikipedia.org/wiki/Double-slit_experiment"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

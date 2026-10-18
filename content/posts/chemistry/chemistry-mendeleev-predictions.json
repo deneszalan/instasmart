@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-mendeleev-predictions",
+  "field": "chemistry",
+  "title": "Mendeleev predicted elements nobody had ever seen",
+  "emoji": "🔮",
+  "body": "When Dmitri Mendeleev published his periodic table in 1869, he arranged the known elements by atomic weight and recurring properties, and boldly left gaps where the pattern demanded elements no one had found. He then predicted their atomic weights, densities and chemical behaviour. Within about 17 years three of them turned up, matching his forecasts closely, which convinced chemists that the periodic table reflected something real.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Placeholder names",
+      "text": "He called the missing elements eka-aluminium, eka-boron and eka-silicon, using the Sanskrit word for “one” to mean one place below a known element."
+    },
+    {
+      "type": "text",
+      "heading": "Gallium, 1875",
+      "text": "Gallium’s discoverer measured its density as 4.7 g/cm³. Mendeleev wrote suggesting he remeasure. The new value was 5.9, exactly as predicted."
+    },
+    {
+      "type": "text",
+      "heading": "Scandium and germanium",
+      "text": "Scandium (1879) matched eka-boron’s predicted atomic mass of 44, and germanium (1886) closely matched eka-silicon."
+    }
+  ],
+  "tags": [
+    "periodictable",
+    "mendeleev",
+    "elements",
+    "history"
+  ],
+  "source": {
+    "label": "Wikipedia: Mendeleev’s predicted elements",
+    "url": "https://en.wikipedia.org/wiki/Mendeleev's_predicted_elements"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

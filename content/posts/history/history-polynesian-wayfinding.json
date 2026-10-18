@@ -1,0 +1,45 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-polynesian-wayfinding",
+  "field": "history",
+  "title": "Polynesians crossed the Pacific with no compass, map or sextant",
+  "emoji": "🛶",
+  "body": "Over many centuries, Polynesian voyagers in double-hulled canoes reached nearly every habitable island in a triangle spanning Hawaiʻi, New Zealand and Rapa Nui, across thousands of kilometers of open ocean. They navigated by reading the sky and the sea, with knowledge passed down orally. New Zealand, probably settled in the 13th or 14th century, was among the last major lands on Earth reached by humans.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "A compass made of stars",
+      "text": "Navigators memorized where dozens of stars rise and set on the horizon. Steering toward a rising star, then the next one to rise there, holds a course all night."
+    },
+    {
+      "type": "text",
+      "heading": "Reading the swells",
+      "text": "Under clouds, they felt ocean swells through the hull. Islands bend and reflect swells, so a changed pattern can betray land beyond the horizon."
+    },
+    {
+      "type": "text",
+      "heading": "Follow the birds",
+      "text": "Terns and noddies fly out to fish at dawn and return to land at dusk. Sailing the way they head in the evening points toward an island."
+    },
+    {
+      "type": "text",
+      "heading": "The 1976 test",
+      "text": "The canoe Hōkūleʻa sailed from Hawaiʻi to Tahiti without instruments, guided by Micronesian navigator Mau Piailug, showing such voyages could be deliberate."
+    }
+  ],
+  "tags": [
+    "history",
+    "polynesia",
+    "navigation",
+    "pacific"
+  ],
+  "source": {
+    "label": "Wikipedia: Polynesian navigation",
+    "url": "https://en.wikipedia.org/wiki/Polynesian_navigation"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

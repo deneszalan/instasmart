@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="system-ui, sans-serif">
+  <text x="540" y="120" fill="#fff" font-size="60" font-weight="800" text-anchor="middle">Equal areas, equal times</text>
+  <ellipse cx="540" cy="560" rx="420" ry="300" fill="none" stroke="#fff" stroke-opacity="0.75" stroke-width="8" stroke-dasharray="2 18" stroke-linecap="round"/>
+  <path d="M834,560 L801,325 A420,300 0 0 1 801,795 Z" fill="#fff" fill-opacity="0.3" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M834,560 L129,622 A420,300 0 0 1 129,498 Z" fill="#fff" fill-opacity="0.3" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="834" cy="560" r="40" fill="#fde047"/>
+  <text x="834" y="650" fill="#fff" font-size="40" font-weight="700" text-anchor="middle">Sun</text>
+  <circle cx="960" cy="560" r="22" fill="#7dd3fc" stroke="#fff" stroke-width="5"/>
+  <circle cx="120" cy="560" r="22" fill="#7dd3fc" stroke="#fff" stroke-width="5"/>
+  <text x="870" y="950" fill="#fff" font-size="46" font-weight="800" text-anchor="middle">Close: fast</text>
+  <text x="230" y="950" fill="#fff" font-size="46" font-weight="800" text-anchor="middle">Far: slow</text>
+  <text x="540" y="1030" fill="#fff" fill-opacity="0.75" font-size="32" text-anchor="middle">Orbit shape exaggerated for clarity</text>
+</svg>

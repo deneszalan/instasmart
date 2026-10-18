@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-gps-relativity",
+  "field": "physics",
+  "title": "Your phone’s GPS only works because it corrects for relativity",
+  "emoji": "📍",
+  "body": "GPS finds your position by timing signals from satellites, so their atomic clocks must agree with clocks on the ground to within billionths of a second. Einstein’s relativity spoils that: combined, its effects make the satellite clocks run fast by about 38 microseconds a day. That sounds tiny, but light travels more than 11 km in that time, so without a correction your position would be off by kilometres within a single day.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Speed slows the clock",
+      "text": "Orbiting at nearly 4 km/s, each satellite clock runs slow by about 7 microseconds a day, as special relativity predicts for moving clocks."
+    },
+    {
+      "type": "text",
+      "heading": "Weak gravity speeds it up",
+      "text": "About 20,000 km up, gravity is weaker, and general relativity says clocks there tick faster: about 45 microseconds a day gained. Net result: +38."
+    },
+    {
+      "type": "text",
+      "heading": "The fix is built in",
+      "text": "Before launch, the satellite clocks are tuned to tick at 10.22999999543 MHz instead of 10.23 MHz, so once in orbit they match clocks on Earth."
+    }
+  ],
+  "tags": [
+    "relativity",
+    "gps",
+    "einstein",
+    "time"
+  ],
+  "source": {
+    "label": "Wikipedia: Error analysis for the Global Positioning System",
+    "url": "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
