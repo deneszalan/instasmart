@@ -11,6 +11,28 @@
       "prompt": "Early italic type had a quirk that modern fonts dropped. What was it?",
       "answer": "Slanted lowercase paired with upright capitals",
       "detail": "Cut by Francesco Griffo, Aldus Manutius’s italic imitated humanist handwriting and filled a whole edition of Virgil in 1501, made for small, portable books."
+    },
+    {
+      "type": "flow",
+      "heading": "How italic type came about",
+      "steps": [
+        {
+          "icon": "✍️",
+          "label": "Italian humanists write in a flowing hand"
+        },
+        {
+          "icon": "🔨",
+          "label": "Francesco Griffo cuts type imitating it"
+        },
+        {
+          "icon": "📖",
+          "label": "1501: Aldus prints a pocket Virgil in it"
+        },
+        {
+          "icon": "💬",
+          "label": "By the 1600s, italics mean emphasis"
+        }
+      ]
     }
   ],
   "tags": [

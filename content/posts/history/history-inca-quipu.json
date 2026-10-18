@@ -7,6 +7,32 @@
   "body": "The Inca Empire had no writing in the usual sense, yet it tracked taxes, census counts and calendars across the Andes using quipus: bundles of cotton or camelid-fiber cords. Knots tied in a decimal positional system stored numbers, while color and cord order added categories. Trained specialists called quipucamayocs read them, and courts accepted them as records. Whether some quipus also encoded words is still debated.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "How a quipu kept the books",
+      "steps": [
+        {
+          "icon": "🧮",
+          "label": "A tax or census count needs recording"
+        },
+        {
+          "icon": "🪢",
+          "label": "Knots in decimal positions store the numbers"
+        },
+        {
+          "icon": "🎨",
+          "label": "Cord colour and order add the categories"
+        },
+        {
+          "icon": "📖",
+          "label": "A trained quipucamayoc reads it back"
+        },
+        {
+          "icon": "⚖️",
+          "label": "Courts accept it as a record"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "How did a quipu store a number?",
       "options": [
@@ -16,6 +42,12 @@
       ],
       "answer": 0,
       "explanation": "Knots tied in a decimal positional system recorded numbers, while cord colour and order added categories. Trained quipucamayocs read them, and courts accepted them as records."
+    },
+    {
+      "type": "scramble",
+      "clue": "The trained specialist who could read a quipu",
+      "answer": "QUIPUCAMAYOC",
+      "detail": "Quipucamayocs kept and read the knotted cords, and courts accepted the records they held."
     }
   ],
   "tags": [

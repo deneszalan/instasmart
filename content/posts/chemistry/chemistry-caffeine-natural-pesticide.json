@@ -29,6 +29,28 @@
       "text": "Adenosine is a molecule that signals the brain to slow down and feel sleepy. Caffeine blocks the receptors adenosine binds to, so the signal doesn’t get through. Almost 10 million tonnes of coffee beans were consumed worldwide in 2020."
     },
     {
+      "type": "flow",
+      "heading": "How caffeine keeps you awake",
+      "steps": [
+        {
+          "icon": "😴",
+          "label": "Adenosine builds up during the day"
+        },
+        {
+          "icon": "🧠",
+          "label": "It binds to receptors that say: slow down"
+        },
+        {
+          "icon": "☕",
+          "label": "Caffeine blocks those same receptors"
+        },
+        {
+          "icon": "⚡",
+          "label": "The slow-down signal never gets through"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "Why do plants put caffeine in their nectar?",
       "options": [
@@ -39,6 +61,12 @@
       ],
       "answer": 1,
       "explanation": "Caffeine in nectar appears to enhance pollinators’ reward memory, so honeybees are more likely to return to that plant."
+    },
+    {
+      "type": "scramble",
+      "clue": "The molecule that tells your brain to slow down; caffeine blocks its receptors",
+      "answer": "ADENOSINE",
+      "detail": "Caffeine fits the receptors adenosine would bind to, so the sleepy signal never gets through."
     }
   ],
   "tags": [

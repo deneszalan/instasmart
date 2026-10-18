@@ -55,6 +55,37 @@
       "text": "A far older agreement between Ebla and Abarsal may be the earliest recorded diplomatic treaty of all. But Kadesh is the oldest surviving peace treaty, and the only one from the ancient Near East with both sides’ texts preserved."
     },
     {
+      "type": "sort",
+      "heading": "Egypt or Hatti?",
+      "bins": [
+        "Egypt",
+        "Hatti"
+      ],
+      "items": [
+        {
+          "text": "Ramesses II",
+          "bin": 0
+        },
+        {
+          "text": "Hattusili III",
+          "bin": 1
+        },
+        {
+          "text": "Treaty text carved on the walls of Karnak",
+          "bin": 0
+        },
+        {
+          "text": "Treaty text in Akkadian on clay tablets",
+          "bin": 1
+        },
+        {
+          "text": "A capital at Hattusa, in modern Turkey",
+          "bin": 1
+        }
+      ],
+      "explanation": "Ramesses II ruled Egypt, Hattusili III the Hittites. Egypt carved its copy at Karnak and the Ramesseum; the Hittite copy, on clay, was dug up at Hattusa."
+    },
+    {
       "type": "order",
       "heading": "Oldest first",
       "items": [

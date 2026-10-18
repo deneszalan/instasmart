@@ -47,6 +47,32 @@
       ]
     },
     {
+      "type": "flow",
+      "heading": "From tomb to paint tube",
+      "steps": [
+        {
+          "icon": "⚰️",
+          "label": "Colourmakers buy up Egyptian mummies"
+        },
+        {
+          "icon": "🥣",
+          "label": "Flesh is ground up with pitch and myrrh"
+        },
+        {
+          "icon": "🏪",
+          "label": "Sold as paint in Paris from 1712"
+        },
+        {
+          "icon": "🖼️",
+          "label": "A Pre-Raphaelite favourite in the 1800s"
+        },
+        {
+          "icon": "🪦",
+          "label": "By the mid-1900s, the mummies run out"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "A burial in the garden",
       "text": "Edward Burne-Jones was reported to have ceremonially buried his tube of mummy brown when he discovered its true origins. His wife Georgiana recalled that he insisted on giving it ‘a decent burial there and then’."

@@ -17,6 +17,37 @@
       ],
       "answer": 1,
       "explanation": "Older methods made sheets of varying thickness, so panes were uneven from the start; some are even thicker at the top. Medieval glass flows at most about 1 nanometre per billion years."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Glass is a liquid that slowly flows over centuries",
+          "bin": 1
+        },
+        {
+          "text": "Glass is an amorphous solid with disordered atoms",
+          "bin": 0
+        },
+        {
+          "text": "Old panes were uneven from the day they were made",
+          "bin": 0
+        },
+        {
+          "text": "Some old window panes are thicker at the top",
+          "bin": 0
+        },
+        {
+          "text": "Medieval glass has visibly sagged since the 1200s",
+          "bin": 1
+        }
+      ],
+      "explanation": "Glass is an amorphous solid. A 2017 study of medieval glass found it could flow at most about 1 nanometre per billion years."
     }
   ],
   "tags": [

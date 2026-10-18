@@ -36,6 +36,63 @@
       "type": "text",
       "heading": "A later legend",
       "text": "Stories that Caliph Umar ordered the books burned in 642 appear only centuries later, and historians such as Bernard Lewis regard them as a myth."
+    },
+    {
+      "type": "flow",
+      "heading": "A slow decline, not one fire",
+      "steps": [
+        {
+          "icon": "👑",
+          "label": "Royal support dwindles"
+        },
+        {
+          "icon": "🚪",
+          "label": "145 BC: scholars are purged"
+        },
+        {
+          "icon": "🔥",
+          "label": "48 BC: fire spreads from Caesar’s ships"
+        },
+        {
+          "icon": "⚔️",
+          "label": "AD 272: the palace quarter is destroyed"
+        },
+        {
+          "icon": "📜",
+          "label": "Papyrus no one recopies crumbles away"
+        }
+      ]
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "One great fire wiped out the Library",
+          "bin": 1
+        },
+        {
+          "text": "Ptolemy VIII purged Alexandria’s scholars",
+          "bin": 0
+        },
+        {
+          "text": "Caesar’s fire of 48 BC ended the Library for good",
+          "bin": 1
+        },
+        {
+          "text": "Aurelian’s troops destroyed the palace quarter",
+          "bin": 0
+        },
+        {
+          "text": "Caliph Umar ordered the books burned in 642",
+          "bin": 1
+        }
+      ],
+      "explanation": "The Library faded over centuries. It apparently survived Caesar’s fire, and the Umar story appears only centuries later and is regarded as a myth."
     }
   ],
   "tags": [

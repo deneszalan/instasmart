@@ -30,6 +30,41 @@
       "text": "That is why it keeps things cold without any meltwater."
     },
     {
+      "type": "spectrum",
+      "heading": "How cold is dry ice?",
+      "min": -200,
+      "max": 20,
+      "unit": "°C",
+      "ends": [
+        "Colder",
+        "Warmer"
+      ],
+      "marks": [
+        {
+          "label": "Liquid nitrogen boils",
+          "value": -195.8
+        },
+        {
+          "label": "Liquid oxygen boils",
+          "value": -183
+        },
+        {
+          "label": "Coldest air ever recorded",
+          "value": -89.2
+        },
+        {
+          "label": "Dry ice turns to gas",
+          "value": -78.5,
+          "emphasis": true
+        },
+        {
+          "label": "Water freezes",
+          "value": 0
+        }
+      ],
+      "note": "The air record is −89.2 °C at Vostok Station, Antarctica, in July 1983."
+    },
+    {
       "type": "compare",
       "heading": "Where does the fog come from?",
       "left": {

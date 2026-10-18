@@ -17,6 +17,28 @@
       "text": "Egyptian blue, a pigment used across the ancient Mediterranean, gives off infrared light when lit, revealing paint on surfaces that look bare to the eye."
     },
     {
+      "type": "flow",
+      "heading": "How the colours are found",
+      "steps": [
+        {
+          "icon": "🔍",
+          "label": "Pigment traces survive in crevices"
+        },
+        {
+          "icon": "🔬",
+          "label": "Imaging and chemical analysis identify them"
+        },
+        {
+          "icon": "💡",
+          "label": "Egyptian blue glows in infrared under light"
+        },
+        {
+          "icon": "🎨",
+          "label": "Reconstructions are painted as hypotheses"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "Gods in Color",
       "text": "Since 2003, the touring exhibition Gods in Color, led by archaeologist Vinzenz Brinkmann, has shown full-size painted reconstructions of ancient sculpture."

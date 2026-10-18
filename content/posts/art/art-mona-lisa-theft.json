@@ -11,6 +11,44 @@
       "prompt": "A famous poet and a famous painter were questioned over the theft. Who?",
       "answer": "Guillaume Apollinaire and Pablo Picasso",
       "detail": "The real thief was Vincenzo Peruggia, a Louvre worker who had helped build the painting’s glass case. It was recovered in Florence in 1913."
+    },
+    {
+      "type": "flow",
+      "heading": "How a theft made a celebrity",
+      "steps": [
+        {
+          "icon": "🔧",
+          "label": "Peruggia helps build its glass case"
+        },
+        {
+          "icon": "🚪",
+          "label": "21 Aug 1911: he walks out with it"
+        },
+        {
+          "icon": "📰",
+          "label": "Newspapers follow the hunt for two years"
+        },
+        {
+          "icon": "🔎",
+          "label": "1913: recovered in Florence"
+        },
+        {
+          "icon": "🌟",
+          "label": "It returns to Paris world-famous"
+        }
+      ]
+    },
+    {
+      "type": "odd",
+      "heading": "Which one had nothing to do with the 1911 theft?",
+      "items": [
+        "Vincenzo Peruggia",
+        "Guillaume Apollinaire",
+        "Pablo Picasso",
+        "Leonardo da Vinci"
+      ],
+      "answer": 3,
+      "explanation": "Peruggia stole the painting, and Apollinaire and Picasso were questioned by the police. Leonardo only painted it, four centuries earlier."
     }
   ],
   "tags": [

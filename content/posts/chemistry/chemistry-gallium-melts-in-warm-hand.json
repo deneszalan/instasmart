@@ -23,6 +23,35 @@
       "text": "That is about 85.6°F, far below the temperatures needed to melt familiar metals such as iron."
     },
     {
+      "type": "chart",
+      "heading": "Melting points of some metals",
+      "unit": "°C",
+      "items": [
+        {
+          "label": "Gallium",
+          "value": 29.8,
+          "emphasis": true
+        },
+        {
+          "label": "Tin",
+          "value": 232
+        },
+        {
+          "label": "Lead",
+          "value": 327
+        },
+        {
+          "label": "Aluminium",
+          "value": 660
+        },
+        {
+          "label": "Iron",
+          "value": 1538
+        }
+      ],
+      "note": "At normal pressure. A warm hand is about 37 °C; the rest need a furnace."
+    },
+    {
       "type": "text",
       "heading": "Where the heat comes from",
       "text": "Heat flows from a warmer hand into cooler gallium. Once the metal reaches its melting point, more heat can turn solid gallium into liquid."

@@ -7,6 +7,32 @@
   "body": "In April 1815, Mount Tambora on the island of Sumbawa produced the most powerful eruption in recorded history. Its haze cooled the globe, and 1816 became the ‘Year Without a Summer’, with failed harvests in Europe and North America. That June, incessant rain kept Mary Godwin, soon to be Mary Shelley, indoors by Lake Geneva with Lord Byron, where a ghost-story contest led her to begin Frankenstein.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "From eruption to novel",
+      "steps": [
+        {
+          "icon": "🌋",
+          "label": "April 1815: Tambora erupts on Sumbawa"
+        },
+        {
+          "icon": "🌫️",
+          "label": "Its haze cools the whole globe"
+        },
+        {
+          "icon": "🌧️",
+          "label": "1816: a summer of cold and failed harvests"
+        },
+        {
+          "icon": "🏠",
+          "label": "Rain keeps Mary Godwin indoors at Geneva"
+        },
+        {
+          "icon": "👻",
+          "label": "A ghost-story contest begins Frankenstein"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "How did an eruption in Indonesia end up shaping a novel begun in Switzerland?",
       "options": [

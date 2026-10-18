@@ -17,6 +17,27 @@
       "text": "Mauna Kea rises 4,207 m above sea level, but most of it is underwater. From its seafloor base it rises roughly 9 to 10 km, depending on how the base is defined."
     },
     {
+      "type": "chart",
+      "heading": "Height above sea level",
+      "unit": "m",
+      "items": [
+        {
+          "label": "Everest",
+          "value": 8849,
+          "emphasis": true
+        },
+        {
+          "label": "Chimborazo",
+          "value": 6263
+        },
+        {
+          "label": "Mauna Kea",
+          "value": 4207
+        }
+      ],
+      "note": "Yet Chimborazo’s summit is 6,384.4 km from Earth’s centre, 2.1 km farther out than Everest’s."
+    },
+    {
       "type": "text",
       "heading": "Three different records",
       "text": "Highest above sea level: Everest. Tallest from base to peak: Mauna Kea. Farthest from Earth’s centre: Chimborazo."
@@ -32,6 +53,25 @@
       ],
       "answer": 0,
       "explanation": "Earth’s spin flattens it: the equatorial radius is about 21 km larger than the polar one, so Chimborazo, near the equator, ends up about 2 km farther out than Everest."
+    },
+    {
+      "type": "match",
+      "heading": "Match the mountain to its record",
+      "pairs": [
+        {
+          "left": "Everest",
+          "right": "Highest above sea level"
+        },
+        {
+          "left": "Mauna Kea",
+          "right": "Tallest from base to peak"
+        },
+        {
+          "left": "Chimborazo",
+          "right": "Farthest from Earth’s centre"
+        }
+      ],
+      "explanation": "Three ways to measure a mountain, three different winners."
     }
   ],
   "tags": [

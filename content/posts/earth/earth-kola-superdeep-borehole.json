@@ -20,6 +20,41 @@
       "text": "Just 23 centimetres wide. The original target was 15,000 metres."
     },
     {
+      "type": "spectrum",
+      "heading": "How far down the drill got",
+      "min": -35,
+      "max": 0,
+      "unit": "km",
+      "ends": [
+        "Mantle",
+        "Surface"
+      ],
+      "colors": [
+        "#b45309",
+        "#86efac"
+      ],
+      "marks": [
+        {
+          "label": "Ground level",
+          "value": 0
+        },
+        {
+          "label": "Deepest mine (Mponeng)",
+          "value": -4
+        },
+        {
+          "label": "Kola borehole, 1989",
+          "value": -12.262,
+          "emphasis": true
+        },
+        {
+          "label": "Bottom of the crust",
+          "value": -35
+        }
+      ],
+      "note": "Depths below ground. Mponeng gold mine in South Africa reaches about 4 km down."
+    },
+    {
       "type": "list",
       "heading": "What the drill found",
       "style": "bullets",

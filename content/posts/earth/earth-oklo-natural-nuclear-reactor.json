@@ -23,6 +23,31 @@
       "text": "The missing fraction had been split by fission long ago. Later samples ran as low as 0.44%."
     },
     {
+      "type": "chart",
+      "heading": "Uranium-235 as a share of natural uranium",
+      "unit": "%",
+      "items": [
+        {
+          "label": "Oklo, 1.7 billion years ago",
+          "value": 3.1
+        },
+        {
+          "label": "Natural uranium today",
+          "value": 0.72
+        },
+        {
+          "label": "Oklo ore found in 1972",
+          "value": 0.6,
+          "emphasis": true
+        },
+        {
+          "label": "Lowest Oklo sample",
+          "value": 0.44
+        }
+      ],
+      "note": "U-235 decays faster than U-238, so its share keeps falling; fission cut Oklo’s further."
+    },
+    {
       "type": "compare",
       "heading": "A slow pulse",
       "left": {

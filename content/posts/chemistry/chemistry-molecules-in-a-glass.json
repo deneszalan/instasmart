@@ -11,6 +11,29 @@
       "prompt": "Your glass holds more molecules than the oceans hold glasses. By how much?",
       "answer": "Over a thousand times more",
       "detail": "About 8 × 10²⁴ molecules in a 250 ml glass, against roughly 5 × 10²¹ glassfuls of water in all the seas."
+    },
+    {
+      "type": "scale",
+      "heading": "Your glass against all the oceans",
+      "unit": "sextillion",
+      "items": [
+        {
+          "label": "Glasses in the sea",
+          "value": 5
+        },
+        {
+          "label": "Molecules in a glass",
+          "value": 8000,
+          "emphasis": true
+        }
+      ],
+      "note": "1 sextillion is 10²¹. The glass wins by more than a thousand to one."
+    },
+    {
+      "type": "scramble",
+      "clue": "The constant 6.022 × 10²³ per mole is named after this Italian scientist",
+      "answer": "AVOGADRO",
+      "detail": "Named after Amedeo Avogadro (1776–1856), who proposed in 1811 that equal volumes of gas hold equal numbers of molecules."
     }
   ],
   "tags": [

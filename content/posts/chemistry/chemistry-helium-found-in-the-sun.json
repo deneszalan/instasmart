@@ -7,6 +7,39 @@
   "body": "During a total solar eclipse in August 1868, astronomers studying the Sun’s glowing outer layers with spectroscopes spotted a bright yellow line that didn’t match any known element. Norman Lockyer proposed it came from a new element and named it after Helios, the Greek word for the Sun. Helium wasn’t isolated on Earth until 1895, when William Ramsay and others found it seeping from a uranium mineral. It is now known to be the second most abundant element in the universe.",
   "slides": [
     {
+      "type": "chart",
+      "heading": "What ordinary matter in our galaxy is made of, by mass",
+      "unit": "%",
+      "items": [
+        {
+          "label": "Hydrogen",
+          "value": 73.97
+        },
+        {
+          "label": "Helium",
+          "value": 24.02,
+          "emphasis": true
+        },
+        {
+          "label": "Oxygen",
+          "value": 1.04
+        },
+        {
+          "label": "Carbon",
+          "value": 0.46
+        },
+        {
+          "label": "Neon",
+          "value": 0.134
+        },
+        {
+          "label": "Iron",
+          "value": 0.109
+        }
+      ],
+      "note": "Spectroscopic estimate for the Milky Way. Everything else together is under 1%."
+    },
+    {
       "type": "quiz",
       "question": "How did astronomers first detect helium in 1868?",
       "options": [
@@ -17,6 +50,29 @@
       ],
       "answer": 1,
       "explanation": "During the August 1868 total eclipse, spectroscopes showed a bright yellow line matching no known element. Lockyer named it after Helios, the Sun; it was found on Earth only in 1895."
+    },
+    {
+      "type": "match",
+      "heading": "Match each to its part in helium’s story",
+      "pairs": [
+        {
+          "left": "Norman Lockyer",
+          "right": "Named the new element"
+        },
+        {
+          "left": "William Ramsay",
+          "right": "Found it on Earth, 1895"
+        },
+        {
+          "left": "Helios",
+          "right": "Greek word for the Sun"
+        },
+        {
+          "left": "August 1868",
+          "right": "An eclipse, a yellow line"
+        }
+      ],
+      "explanation": "A yellow line in the eclipse spectrum of 1868 matched no known element; Lockyer named it after the Sun, and Ramsay isolated it on Earth in 1895."
     }
   ],
   "tags": [

@@ -34,6 +34,27 @@
       ]
     },
     {
+      "type": "scale",
+      "heading": "Baikal holds more water than all five Great Lakes together",
+      "unit": "km³",
+      "items": [
+        {
+          "label": "Lake Superior",
+          "value": 12000
+        },
+        {
+          "label": "All five Great Lakes",
+          "value": 22671
+        },
+        {
+          "label": "Lake Baikal",
+          "value": 23615,
+          "emphasis": true
+        }
+      ],
+      "note": "Volumes in cubic kilometres; the Great Lakes figure is their combined total."
+    },
+    {
       "type": "text",
       "heading": "A lake in a crack",
       "text": "Baikal sits in the Baikal Rift Zone, where the Earth’s crust is slowly tearing apart. The rift keeps deepening the basin, which is why the lake has lasted tens of millions of years instead of filling with sediment. Its waters hold more than 1,000 species of plants and 2,500 of animals, many of them endemic."

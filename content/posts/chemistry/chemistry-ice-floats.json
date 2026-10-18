@@ -22,6 +22,37 @@
       "text": "Liquid water is densest at about 4 °C. In winter that water sinks to the bottom of lakes while colder water rises, so lakes freeze from the top down."
     },
     {
+      "type": "spectrum",
+      "heading": "Density of water and ice",
+      "min": 900,
+      "max": 1000,
+      "unit": "kg/m³",
+      "ends": [
+        "Lighter",
+        "Denser"
+      ],
+      "marks": [
+        {
+          "label": "Ice at 0 °C",
+          "value": 916.7,
+          "emphasis": true
+        },
+        {
+          "label": "Water at 25 °C",
+          "value": 997.05
+        },
+        {
+          "label": "Water at 0 °C",
+          "value": 999.84
+        },
+        {
+          "label": "Water at 4 °C, densest",
+          "value": 999.97
+        }
+      ],
+      "note": "Ice is about 9% less dense than the water it floats on."
+    },
+    {
       "type": "text",
       "heading": "Pipes and potholes",
       "text": "Freezing water expands with enough force to burst pipes and split rocks. Repeated freeze–thaw cycles crack roads and help wear down mountains."

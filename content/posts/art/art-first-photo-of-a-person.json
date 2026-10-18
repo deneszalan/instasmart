@@ -25,6 +25,32 @@
       }
     },
     {
+      "type": "flow",
+      "heading": "Why the boulevard looks empty",
+      "steps": [
+        {
+          "icon": "🌅",
+          "label": "Daguerre starts the exposure at about 8 am"
+        },
+        {
+          "icon": "⏱️",
+          "label": "The exposure runs four to five minutes"
+        },
+        {
+          "icon": "🐎",
+          "label": "Carriages and walkers pass: no trace"
+        },
+        {
+          "icon": "👞",
+          "label": "A bootblack and customer hold still"
+        },
+        {
+          "icon": "📷",
+          "label": "Only they show clearly on the plate"
+        }
+      ]
+    },
+    {
       "type": "timeline",
       "events": [
         {

@@ -12,6 +12,29 @@
       "text": "Plain steel rusts because iron oxide is loose and lets oxygen and water keep reaching the metal. Chromium oxide is different: it forms a tight, invisible skin that stops oxygen getting through, and it re-forms wherever it is scratched or disturbed, as long as some oxygen is around."
     },
     {
+      "type": "flow",
+      "heading": "How stainless steel heals a scratch",
+      "cycle": true,
+      "steps": [
+        {
+          "icon": "🛡️",
+          "label": "Chromium at the surface meets oxygen"
+        },
+        {
+          "icon": "🔬",
+          "label": "A thin, invisible chromium oxide film forms"
+        },
+        {
+          "icon": "🔪",
+          "label": "A scratch exposes fresh metal underneath"
+        },
+        {
+          "icon": "🔁",
+          "label": "Fresh chromium oxidises and seals the gap"
+        }
+      ]
+    },
+    {
       "type": "stat",
       "value": "10.5%",
       "label": "the minimum chromium content for a steel to count as stainless",

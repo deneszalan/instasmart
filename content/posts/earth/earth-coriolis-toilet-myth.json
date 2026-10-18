@@ -7,6 +7,28 @@
   "body": "The Coriolis effect, caused by Earth’s rotation, is real and steers huge weather systems: hurricanes spin anticlockwise in the Northern Hemisphere and clockwise in the Southern. But it only matters over large distances and long times. In a sink or toilet that drains in seconds, it is far weaker than the shape of the bowl and the way the water entered. Only carefully controlled experiments with very still water can detect it.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "How Earth’s spin sets a hurricane turning",
+      "steps": [
+        {
+          "icon": "📉",
+          "label": "Air rushes in toward a low-pressure centre"
+        },
+        {
+          "icon": "🌍",
+          "label": "North of the equator it bends to the right"
+        },
+        {
+          "icon": "🌀",
+          "label": "The inflow curls into an anticlockwise spin"
+        },
+        {
+          "icon": "⏱️",
+          "label": "It only shows in huge, long-lived systems"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "Why doesn’t the Coriolis effect decide which way your sink drains?",
       "options": [
@@ -17,6 +39,18 @@
       ],
       "answer": 2,
       "explanation": "The Coriolis effect only matters over large distances and long times. In a bowl that empties in seconds, its shape and the way the water entered matter far more."
+    },
+    {
+      "type": "odd",
+      "heading": "Which one is not steered by the Coriolis effect?",
+      "items": [
+        "A hurricane’s spin",
+        "Large ocean currents",
+        "Long-range artillery shells",
+        "Your bathtub drain"
+      ],
+      "answer": 3,
+      "explanation": "Hurricanes, ocean currents and shells flying for kilometres move far enough for Earth’s spin to bend their paths. A bathtub empties in seconds, where the effect is negligible."
     }
   ],
   "tags": [

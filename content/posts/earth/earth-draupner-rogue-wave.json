@@ -15,6 +15,33 @@
       "answer": 25.6,
       "unit": "m",
       "explanation": "25.6 m, while the waves around it were about 12 m. Measured on 1 January 1995 in the North Sea, it was the first rogue wave ever caught by an instrument."
+    },
+    {
+      "type": "chart",
+      "heading": "Wave heights at the Draupner platform, 1 January 1995",
+      "unit": "m",
+      "items": [
+        {
+          "label": "Typical waves that day",
+          "value": 12
+        },
+        {
+          "label": "Its crest above still water",
+          "value": 18.5
+        },
+        {
+          "label": "The Draupner wave",
+          "value": 25.6,
+          "emphasis": true
+        }
+      ],
+      "note": "Wave height is trough to crest; ‘typical’ is the significant wave height at the time."
+    },
+    {
+      "type": "scramble",
+      "clue": "The North Sea gas platform whose instruments recorded the wave on New Year’s Day 1995",
+      "answer": "DRAUPNER",
+      "detail": "The platform stands about 160 km south-west of the southern tip of Norway. Its wave sensor caught the 25.6 m wave."
     }
   ],
   "tags": [

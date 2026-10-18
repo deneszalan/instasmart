@@ -35,6 +35,32 @@
       }
     },
     {
+      "type": "flow",
+      "heading": "How the picture came about",
+      "steps": [
+        {
+          "icon": "🌅",
+          "label": "A sunset walk on the road above Oslo"
+        },
+        {
+          "icon": "🔴",
+          "label": "The sky turns blood red"
+        },
+        {
+          "icon": "👂",
+          "label": "Munch senses a scream pass through nature"
+        },
+        {
+          "icon": "🎨",
+          "label": "He paints a figure covering its ears"
+        },
+        {
+          "icon": "🖼️",
+          "label": "First shown as The Scream of Nature"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "Where it happened",
       "text": "The road overlooks Oslo and the Oslofjord from the hill of Ekeberg. At the foot of the hill stood the asylum where Munch’s sister was a patient when he painted it."

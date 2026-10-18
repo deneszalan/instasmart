@@ -7,6 +7,41 @@
   "body": "As snow piles up on Antarctica, it is squeezed into ice that traps tiny pockets of air. Cores drilled more than 3 km deep give a continuous record of the atmosphere going back about 800,000 years. Over that span, carbon dioxide swung between roughly 180 and 300 parts per million as ice ages came and went. Today it is above 420 ppm, higher than at any point in that record, because of human activity.",
   "slides": [
     {
+      "type": "spectrum",
+      "heading": "Carbon dioxide in the air, parts per million",
+      "min": 150,
+      "max": 450,
+      "unit": "ppm",
+      "ends": [
+        "Less CO₂",
+        "More CO₂"
+      ],
+      "colors": [
+        "#38bdf8",
+        "#f97316"
+      ],
+      "marks": [
+        {
+          "label": "Ice-age lows",
+          "value": 180
+        },
+        {
+          "label": "Pre-industrial, 1700s",
+          "value": 280
+        },
+        {
+          "label": "Warm-period highs",
+          "value": 300
+        },
+        {
+          "label": "Today, more than",
+          "value": 420,
+          "emphasis": true
+        }
+      ],
+      "note": "The ice record spans 800,000 years. Today’s level is above 420 ppm and still rising."
+    },
+    {
       "type": "text",
       "heading": "Read like tree rings",
       "text": "Where snowfall is heavy, yearly layers can be counted like tree rings. Deeper down they thin out, so scientists also date ice by other methods."

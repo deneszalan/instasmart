@@ -7,10 +7,38 @@
   "body": "Kintsugi repairs cracked ceramics with urushi lacquer dusted or mixed with powdered gold, silver or platinum, turning each break into a shining seam. Rather than hiding damage, it treats breakage and repair as part of an object’s history. One theory traces it to the late 15th century, when the shogun Ashikaga Yoshimasa sent a damaged Chinese tea bowl for repair and it came back held together with crude metal staples.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "Mending with gold",
+      "steps": [
+        {
+          "icon": "🍵",
+          "label": "A bowl breaks"
+        },
+        {
+          "icon": "🧴",
+          "label": "The pieces are joined with urushi lacquer"
+        },
+        {
+          "icon": "✨",
+          "label": "The seams are dusted with powdered gold"
+        },
+        {
+          "icon": "🏺",
+          "label": "The break becomes part of its history"
+        }
+      ]
+    },
+    {
       "type": "reveal",
       "prompt": "One theory says kintsugi began with a shogun’s disappointment. What came back from the repair shop?",
       "answer": "A tea bowl held together with crude metal staples",
       "detail": "Ashikaga Yoshimasa had sent a damaged Chinese tea bowl for repair in the late 15th century. The ugly fix may have inspired a more beautiful one."
+    },
+    {
+      "type": "scramble",
+      "clue": "The Japanese art of mending broken pottery with gold-dusted lacquer",
+      "answer": "KINTSUGI",
+      "detail": "Kintsugi means ‘golden joinery’; the related word kintsukuroi means ‘golden repair’."
     }
   ],
   "tags": [

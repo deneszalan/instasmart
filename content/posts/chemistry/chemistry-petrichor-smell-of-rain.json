@@ -35,6 +35,29 @@
       "text": "Geosmin isn’t for us. Springtails, tiny soil creatures, are drawn to it, feed on the Streptomyces and carry its spores to new ground. The smell is advertising, and we just happen to be very good at reading it."
     },
     {
+      "type": "flow",
+      "heading": "Why soil bacteria make geosmin",
+      "cycle": true,
+      "steps": [
+        {
+          "icon": "🦠",
+          "label": "Streptomyces in the soil make geosmin"
+        },
+        {
+          "icon": "🐛",
+          "label": "Springtails are drawn to the smell"
+        },
+        {
+          "icon": "🍽️",
+          "label": "They feed on the bacteria"
+        },
+        {
+          "icon": "🌱",
+          "label": "And carry its spores to new ground"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "Which of these makes the earthy part of the smell of rain?",
       "options": [
@@ -45,6 +68,12 @@
       ],
       "answer": 1,
       "explanation": "Streptomyces bacteria in the soil make geosmin, and rain flings it into the air along with oils that plants shed in dry weather."
+    },
+    {
+      "type": "scramble",
+      "clue": "The name for the smell of rain on dry earth, coined in 1964 from the Greek for stone and for the gods’ blood",
+      "answer": "PETRICHOR",
+      "detail": "From petra, stone, and ichor, the fluid said to run in the veins of the Greek gods. Two Australian scientists coined it in 1964."
     }
   ],
   "tags": [

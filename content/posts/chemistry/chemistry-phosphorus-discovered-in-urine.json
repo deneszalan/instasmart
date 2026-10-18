@@ -7,6 +7,28 @@
   "body": "In 1669 the Hamburg alchemist Hennig Brand was hunting for the philosopher’s stone, the legendary substance that would turn base metals into gold. He experimented with urine, which contains plenty of dissolved phosphates, and after much heating obtained a waxy white substance that **glowed in the dark**. He had found phosphorus, the first element discovered since antiquity. The name means ‘light-bearer’ in Greek, after the morning star; the glow is not phosphorescence at all but chemiluminescence, light given off as white phosphorus slowly reacts with the air.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "Brand’s recipe, 1669",
+      "steps": [
+        {
+          "icon": "🧪",
+          "label": "Let urine stand, then boil it to a paste"
+        },
+        {
+          "icon": "🔥",
+          "label": "Distil the paste at a high temperature"
+        },
+        {
+          "icon": "💧",
+          "label": "Lead the vapours through water"
+        },
+        {
+          "icon": "✨",
+          "label": "A waxy white solid that glows in the dark"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "Light-bearer",
       "text": "Phosphorus comes from the Greek phōsphoros, ‘light-bearer’, a name for the morning star, the planet Venus shining before sunrise. Exposed to air, white phosphorus faintly glows green and blue as it oxidises."

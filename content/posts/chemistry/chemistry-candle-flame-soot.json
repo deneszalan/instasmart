@@ -7,6 +7,28 @@
   "body": "In a candle flame, oxygen can only mix in from the edges, so the wax vapour doesn’t burn completely. Unburned carbon clumps into microscopic soot particles that get so hot they glow, like the filament of an old light bulb; that incandescence is the yellow. Near the base, where fuel and air mix better, faint blue light comes from excited molecular fragments such as CH and C₂. Give a gas burner plenty of air and the soot disappears, leaving a clean blue flame.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "Why a candle flame glows yellow",
+      "steps": [
+        {
+          "icon": "🕯️",
+          "label": "Heat from the flame turns wax into vapour"
+        },
+        {
+          "icon": "🌬️",
+          "label": "Oxygen can only mix in from the edges"
+        },
+        {
+          "icon": "⚫",
+          "label": "Unburned carbon clumps into tiny soot specks"
+        },
+        {
+          "icon": "✨",
+          "label": "Hot soot glows yellow, like a bulb filament"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "Why does a gas burner with plenty of air burn blue instead of yellow?",
       "options": [
@@ -17,6 +39,33 @@
       ],
       "answer": 1,
       "explanation": "With enough air the fuel burns completely, so no soot forms to glow yellow. The faint blue comes from excited molecular fragments such as CH and C₂."
+    },
+    {
+      "type": "sort",
+      "heading": "Yellow light or blue light?",
+      "bins": [
+        "Yellow",
+        "Blue"
+      ],
+      "items": [
+        {
+          "text": "Glowing specks of hot soot",
+          "bin": 0
+        },
+        {
+          "text": "Excited CH and C₂ fragments near the base",
+          "bin": 1
+        },
+        {
+          "text": "A gas burner fed plenty of air",
+          "bin": 1
+        },
+        {
+          "text": "The main body of a candle flame",
+          "bin": 0
+        }
+      ],
+      "explanation": "Soot glows yellow by incandescence. Blue comes from excited molecular fragments, which is all you see when a flame burns cleanly."
     }
   ],
   "tags": [

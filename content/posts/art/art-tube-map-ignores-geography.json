@@ -19,6 +19,28 @@
       }
     },
     {
+      "type": "flow",
+      "heading": "Beck’s recipe for a readable map",
+      "steps": [
+        {
+          "icon": "📐",
+          "label": "Lines only vertical, horizontal or at 45°"
+        },
+        {
+          "icon": "⚪",
+          "label": "Stations sit at even spacing"
+        },
+        {
+          "icon": "🗺️",
+          "label": "Real distances and directions are ignored"
+        },
+        {
+          "icon": "🔀",
+          "label": "Keep only the station order and the changes"
+        }
+      ]
+    },
+    {
       "type": "estimate",
       "question": "How much was Beck paid for the first card edition of his map?",
       "min": 0,
@@ -55,6 +77,37 @@
       "type": "text",
       "heading": "Not a circuit",
       "text": "A popular story says Beck borrowed the look from electrical circuit diagrams. The approach is similar, but circuits were not the inspiration for his map. Underground, a passenger needs the sequence of stations and the changes, not the geography above."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Beck based the map on electrical circuit diagrams",
+          "bin": 1
+        },
+        {
+          "text": "Stations are evenly spaced whatever the real distance",
+          "bin": 0
+        },
+        {
+          "text": "London Underground commissioned the map from Beck",
+          "bin": 1
+        },
+        {
+          "text": "Beck was paid ten guineas for the card edition",
+          "bin": 0
+        },
+        {
+          "text": "Metro maps worldwide have copied the style",
+          "bin": 0
+        }
+      ],
+      "explanation": "It was Beck’s own spare-time project, and London Underground was sceptical of it. The look resembles a circuit diagram, but circuits were not his inspiration."
     }
   ],
   "tags": [

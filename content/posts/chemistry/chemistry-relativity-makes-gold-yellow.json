@@ -22,6 +22,14 @@
       "text": "Similar effects weaken bonding in mercury, helping keep it liquid. Calculations suggest about 10 V of a 12 V lead–acid car battery is due to relativity."
     },
     {
+      "type": "pictogram",
+      "heading": "About 10 of a car battery’s 12 volts come from relativistic effects",
+      "icon": "🔋",
+      "total": 12,
+      "count": 10,
+      "note": "Calculated for a six-cell lead–acid battery; lead is heavy enough for relativity to matter."
+    },
+    {
       "type": "quiz",
       "question": "Why does gold look yellow rather than silvery?",
       "options": [

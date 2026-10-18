@@ -7,6 +7,14 @@
   "body": "Chill oxygen below −183 °C and it condenses into a liquid with a light sky-blue colour. Pour it between the poles of a strong magnet and it clings there as a bridge, because the O₂ molecule carries **two unpaired electrons** whose spins make it paramagnetic, attracted into magnetic fields. Simple dot-and-line pictures of bonding predict that all of oxygen’s electrons should be paired up; molecular orbital theory, which builds orbitals spanning the whole molecule, explains why two are left alone. The gas that makes up about 21% of the air you breathe is quietly magnetic.",
   "slides": [
     {
+      "type": "pictogram",
+      "heading": "About 21 of every 100 molecules in the air you breathe are oxygen",
+      "icon": "🔵",
+      "total": 100,
+      "count": 21,
+      "note": "By volume; almost all the rest is nitrogen."
+    },
+    {
       "type": "stat",
       "value": "−183 °C",
       "label": "where oxygen condenses into a sky-blue liquid",

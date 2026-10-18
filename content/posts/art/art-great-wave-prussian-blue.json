@@ -11,6 +11,32 @@
       "prompt": "A Berlin paint maker got this blue by accident. What had tainted his potash?",
       "answer": "Blood",
       "detail": "Johann Jacob Diesbach was probably trying to make a red around 1706. Imported into Japan, the pigment gave printmakers a long-lasting blue."
+    },
+    {
+      "type": "flow",
+      "heading": "How an accident reached Hokusai",
+      "steps": [
+        {
+          "icon": "🧪",
+          "label": "c. 1706: Diesbach tries to make a red"
+        },
+        {
+          "icon": "🩸",
+          "label": "His potash is tainted with blood"
+        },
+        {
+          "icon": "🟦",
+          "label": "The batch comes out blue: Prussian blue"
+        },
+        {
+          "icon": "🚢",
+          "label": "The pigment is imported into Japan"
+        },
+        {
+          "icon": "🌊",
+          "label": "c. 1831: Hokusai prints the Great Wave"
+        }
+      ]
     }
   ],
   "tags": [

@@ -27,6 +27,31 @@
       "text": "A bolt heats the air around it to about 30,000 °C, roughly five times hotter than the Sun’s surface. The air expands explosively, and that’s thunder."
     },
     {
+      "type": "chart",
+      "heading": "Hotter than the Sun’s surface",
+      "unit": "°C",
+      "items": [
+        {
+          "label": "Basalt lava",
+          "value": 1200
+        },
+        {
+          "label": "Iron melts",
+          "value": 1538
+        },
+        {
+          "label": "Surface of the Sun",
+          "value": 5500
+        },
+        {
+          "label": "Air in a lightning channel",
+          "value": 30000,
+          "emphasis": true
+        }
+      ],
+      "note": "Approximate figures. The Sun’s core is far hotter, at about 15 million °C."
+    },
+    {
       "type": "text",
       "heading": "Struck seven times",
       "text": "US park ranger Roy Sullivan reportedly survived seven lightning strikes between 1942 and 1977, a feat recognised by Guinness World Records."

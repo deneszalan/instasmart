@@ -20,6 +20,16 @@
       "right": { "label": "Defenders", "text": "About 7,000 men, 2,000 of them foreigners, spread along the city’s walls." }
     },
     {
+      "type": "scale",
+      "heading": "Besiegers and defenders, by numbers",
+      "items": [
+        { "label": "Defenders", "value": 7000 },
+        { "label": "Ottoman army", "value": 50000, "emphasis": true }
+      ],
+      "unit": "men",
+      "note": "About 7,000 defenders faced 50,000 to 80,000 Ottomans by modern estimates; the circles use 50,000."
+    },
+    {
       "type": "timeline",
       "heading": "The siege of 1453",
       "events": [
@@ -39,6 +49,13 @@
       "options": ["11 days", "53 days", "6 months", "2 years"],
       "answer": 1,
       "explanation": "From 6 April to 29 May 1453: 53 days, with the ships crossing the hill on 22 April, roughly halfway through."
+    },
+    {
+      "type": "odd",
+      "heading": "Which one is not at Constantinople?",
+      "items": ["Galata", "Golden Horn", "Bosporus", "Edirne"],
+      "answer": 3,
+      "explanation": "Galata is the hill across the inlet, the Golden Horn the inlet itself and the Bosporus the strait beside the city. Edirne is the city the great bombard was dragged from."
     }
   ],
   "tags": ["ottoman", "byzantium", "siege"],

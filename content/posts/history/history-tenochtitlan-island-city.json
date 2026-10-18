@@ -20,6 +20,16 @@
       "text": "That made it about five times the size of London under Henry VIII."
     },
     {
+      "type": "scale",
+      "heading": "Tenochtitlan next to London, by population",
+      "items": [
+        { "label": "London, 1519", "value": 1 },
+        { "label": "Tenochtitlan", "value": 5, "emphasis": true }
+      ],
+      "unit": "×",
+      "note": "At least 200,000 people lived in Tenochtitlan: about five times the London of Henry VIII."
+    },
+    {
       "type": "list",
       "heading": "How a city worked on a lake",
       "style": "bullets",

@@ -17,6 +17,18 @@
       ],
       "answer": 0,
       "explanation": "Diamond is metastable: its atoms are held by strong bonds and a high energy barrier, so the change would take millions to billions of years."
+    },
+    {
+      "type": "odd",
+      "heading": "Which one is not a form of carbon?",
+      "items": [
+        "Diamond",
+        "Graphite",
+        "Graphene",
+        "Quartz"
+      ],
+      "answer": 3,
+      "explanation": "Quartz is silicon dioxide. Diamond, graphite and graphene are all pure carbon with the atoms bonded in different patterns; at room conditions graphite is the most stable of them."
     }
   ],
   "tags": [

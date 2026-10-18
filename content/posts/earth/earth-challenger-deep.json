@@ -7,10 +7,47 @@
   "body": "The Challenger Deep, at the southern end of the Mariana Trench in the western Pacific, is the deepest known point of the seabed, nearly 11,000 m down. Drop Mount Everest (8,849 m) into it and its summit would still sit about 2 km below the waves. The water pressure at the bottom is more than 1,000 times that at the surface. The first people to reach it were Jacques Piccard and Don Walsh, in the bathyscaphe Trieste in 1960.",
   "slides": [
     {
+      "type": "spectrum",
+      "heading": "From the deepest seabed to the highest summit",
+      "min": -11000,
+      "max": 9000,
+      "unit": "m",
+      "ends": [
+        "Deepest",
+        "Highest"
+      ],
+      "marks": [
+        {
+          "label": "Challenger Deep",
+          "value": -10935,
+          "emphasis": true
+        },
+        {
+          "label": "Wreck of the Titanic",
+          "value": -3800
+        },
+        {
+          "label": "Sea level",
+          "value": 0
+        },
+        {
+          "label": "Everest summit",
+          "value": 8849
+        }
+      ],
+      "note": "Drop Everest into the Challenger Deep and its summit would sit about 2 km below the waves."
+    },
+    {
       "type": "reveal",
       "prompt": "Who were the first people to reach the bottom of the Challenger Deep, and when?",
       "answer": "Jacques Piccard and Don Walsh, in 1960",
       "detail": "They descended in the bathyscaphe Trieste, nearly 11,000 m down, where the water pressure is more than 1,000 times that at the surface."
+    },
+    {
+      "type": "scramble",
+      "clue": "The deep-diving vessel, a crew sphere hung under a float, that carried Piccard and Walsh to the bottom in 1960",
+      "answer": "BATHYSCAPHE",
+      "detail": "From the Greek bathys, deep, and skaphos, ship. The Trieste was designed by Auguste Piccard, father of Jacques."
     }
   ],
   "tags": [

@@ -13,6 +13,23 @@
       "text": "For comparison, the International Space Station orbits only about 400 km above the surface."
     },
     {
+      "type": "chart",
+      "heading": "Distances from Point Nemo",
+      "unit": "km",
+      "items": [
+        {
+          "label": "Nearest land, any direction",
+          "value": 2688
+        },
+        {
+          "label": "Space station overhead",
+          "value": 400,
+          "emphasis": true
+        }
+      ],
+      "note": "The ISS orbits about 400 km up, so when it passes over, its crew are the nearest people."
+    },
+    {
       "type": "list",
       "heading": "The three nearest shores",
       "style": "bullets",

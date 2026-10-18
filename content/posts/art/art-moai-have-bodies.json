@@ -14,6 +14,14 @@
       "fit": "contain"
     },
     {
+      "type": "pictogram",
+      "heading": "A moai’s head is about three-eighths of the whole statue",
+      "icon": "🗿",
+      "total": 8,
+      "count": 3,
+      "note": "The rest, hidden by soil on the quarry slopes, is a torso with arms but no legs."
+    },
+    {
       "type": "stat",
       "value": "900+",
       "label": "moai known on Rapa Nui; nearly half are still at the Rano Raraku quarry",
@@ -47,6 +55,37 @@
       ],
       "answer": 1,
       "explanation": "Heads make up three-eighths of the whole statue. Together with the quarry statues buried to the shoulders, that created the myth of bodiless heads."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "The moai are just giant heads",
+          "bin": 1
+        },
+        {
+          "text": "They have torsos and arms but no legs",
+          "bin": 0
+        },
+        {
+          "text": "They were carved from volcanic tuff",
+          "bin": 0
+        },
+        {
+          "text": "The coastal moai looked out to sea",
+          "bin": 1
+        },
+        {
+          "text": "More than 900 moai are known",
+          "bin": 0
+        }
+      ],
+      "explanation": "The coastal moai faced inland, over their clan lands. Most were cut from the tuff of Rano Raraku, where nearly half of the 900-plus known statues remain."
     }
   ],
   "tags": [

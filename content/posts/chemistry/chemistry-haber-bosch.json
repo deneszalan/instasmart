@@ -22,6 +22,29 @@
       "text": "Classic plants run at around 500 °C and roughly 200 times atmospheric pressure. Only about 15% converts per pass, so leftover gas is recycled."
     },
     {
+      "type": "flow",
+      "heading": "Inside a Haber–Bosch plant",
+      "cycle": true,
+      "steps": [
+        {
+          "icon": "💨",
+          "label": "Nitrogen from the air is mixed with hydrogen"
+        },
+        {
+          "icon": "🔥",
+          "label": "About 500 °C and 200 atmospheres, over iron"
+        },
+        {
+          "icon": "🧪",
+          "label": "Only about 15% turns into ammonia"
+        },
+        {
+          "icon": "🔁",
+          "label": "Ammonia is drawn off; leftover gas recycles"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "Drop by drop",
       "text": "Fritz Haber’s 1909 lab demonstration made ammonia from air at about 125 ml per hour. By 1914 a BASF plant was making 20 tonnes a day."

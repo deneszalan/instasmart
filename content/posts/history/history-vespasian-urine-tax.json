@@ -17,6 +17,32 @@
       ]
     },
     {
+      "type": "flow",
+      "heading": "From urinal to treasury",
+      "steps": [
+        {
+          "icon": "🏺",
+          "label": "Public urinals collect the city’s urine"
+        },
+        {
+          "icon": "🛒",
+          "label": "Launderers and tanners buy it"
+        },
+        {
+          "icon": "🧪",
+          "label": "Left to stand, it turns into ammonia"
+        },
+        {
+          "icon": "👕",
+          "label": "Ammonia lifts grease: togas come out white"
+        },
+        {
+          "icon": "💰",
+          "label": "Vespasian taxes the trade, c. AD 70"
+        }
+      ]
+    },
+    {
       "type": "quote",
       "text": "Yet it comes from urine.",
       "attribution": "Vespasian to Titus, as told by Suetonius"
@@ -42,6 +68,29 @@
       ],
       "answer": 1,
       "explanation": "The tax fell on the trade: the fullers and tanners who bought urine from the public urinals paid it."
+    },
+    {
+      "type": "match",
+      "heading": "Who did what?",
+      "pairs": [
+        {
+          "left": "Vespasian",
+          "right": "Revived the urine tax"
+        },
+        {
+          "left": "Nero",
+          "right": "Tried the tax first"
+        },
+        {
+          "left": "Titus",
+          "right": "Called the money disgusting"
+        },
+        {
+          "left": "Suetonius",
+          "right": "Wrote the story down"
+        }
+      ],
+      "explanation": "Nero’s vectigal urinae was dropped; Vespasian brought it back around AD 70; his son Titus objected; and the biographer Suetonius preserved the exchange."
     }
   ],
   "tags": [

@@ -25,6 +25,23 @@
       "text": "Estimates for Menelik’s force range from 73,000 to over 100,000. Empress Taytu Betul marched with it and urged the 25,000-strong reserve into the fight."
     },
     {
+      "type": "chart",
+      "heading": "Fighting men at Adwa, lowest estimates",
+      "items": [
+        {
+          "label": "Menelik’s army",
+          "value": 73000,
+          "emphasis": true
+        },
+        {
+          "label": "Italian force",
+          "value": 14519
+        }
+      ],
+      "unit": "men",
+      "note": "Estimates run from 73,000 to over 100,000 Ethiopians and 14,519 to 17,770 on the Italian side."
+    },
+    {
       "type": "timeline",
       "events": [
         {
@@ -61,6 +78,29 @@
       ],
       "answer": 1,
       "explanation": "Article 17: the Amharic text said Ethiopia could use Italy’s good offices; the Italian text said it was obliged to, which Italy read as a protectorate."
+    },
+    {
+      "type": "match",
+      "heading": "Match the name to its part in the story",
+      "pairs": [
+        {
+          "left": "Menelik II",
+          "right": "Refused the protectorate"
+        },
+        {
+          "left": "Taytu Betul",
+          "right": "Urged the reserve to fight"
+        },
+        {
+          "left": "Treaty of Wuchale",
+          "right": "Two texts, 1889"
+        },
+        {
+          "left": "Treaty of Addis Ababa",
+          "right": "Independence recognised"
+        }
+      ],
+      "explanation": "Menelik rejected Italy’s reading of Article 17; Empress Taytu pushed the 25,000-strong reserve into the battle; the 1896 treaty ended the war."
     }
   ],
   "tags": [

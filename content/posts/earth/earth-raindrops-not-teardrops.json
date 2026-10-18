@@ -32,6 +32,23 @@
       "text": "A 0.5 mm drizzle drop lands at about 2 m/s. Bigger drops have more weight for their drag, so they fall faster."
     },
     {
+      "type": "chart",
+      "heading": "How fast raindrops hit the ground",
+      "unit": "m/s",
+      "items": [
+        {
+          "label": "0.5 mm drizzle drop",
+          "value": 2
+        },
+        {
+          "label": "5 mm raindrop",
+          "value": 9,
+          "emphasis": true
+        }
+      ],
+      "note": "At sea level in still air: about 7 km/h against 32 km/h."
+    },
+    {
       "type": "estimate",
       "question": "How wide was the biggest raindrop ever recorded?",
       "min": 0,
@@ -40,6 +57,37 @@
       "answer": 10,
       "unit": "mm",
       "explanation": "About 10 mm. Drops have a tendency to break up as they grow, so they rarely get much bigger than that."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Falling raindrops are teardrop-shaped",
+          "bin": 1
+        },
+        {
+          "text": "The smallest drops are almost perfect spheres",
+          "bin": 0
+        },
+        {
+          "text": "Big drops flatten underneath, like a bun",
+          "bin": 0
+        },
+        {
+          "text": "Raindrops commonly grow to 2 cm across",
+          "bin": 1
+        },
+        {
+          "text": "Bigger drops fall faster than small ones",
+          "bin": 0
+        }
+      ],
+      "explanation": "Air pushing up on the bottom flattens big drops and eventually tears them apart, which is why drops rarely pass about 9 to 10 mm."
     }
   ],
   "tags": [

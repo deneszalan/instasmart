@@ -13,6 +13,27 @@
       "text": "The platform is 3 metres above the level of the marketplace, and the central tower rises about 16 metres."
     },
     {
+      "type": "chart",
+      "heading": "The Great Mosque in metres",
+      "items": [
+        {
+          "label": "Platform, each side",
+          "value": 75,
+          "emphasis": true
+        },
+        {
+          "label": "Central tower, height",
+          "value": 16
+        },
+        {
+          "label": "Platform above the market",
+          "value": 3
+        }
+      ],
+      "unit": "m",
+      "note": "The tower’s height is approximate; the platform lifts the mosque 3 m above the marketplace."
+    },
+    {
       "type": "list",
       "heading": "The yearly repair",
       "style": "steps",
@@ -59,6 +80,12 @@
       ],
       "answer": 0,
       "explanation": "Mostly erosion from the annual rains, plus cracks from changes in temperature and humidity. In 2009 part of a tower collapsed after 75 mm of rain fell in 24 hours."
+    },
+    {
+      "type": "scramble",
+      "clue": "The palm sticks bristling from the walls: decoration, and scaffolding for the yearly replastering",
+      "answer": "TORON",
+      "detail": "Bundles of palm sticks built into the walls; they jut out about 60 cm and carry the plasterers each year."
     }
   ],
   "tags": [

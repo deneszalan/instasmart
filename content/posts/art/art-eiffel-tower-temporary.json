@@ -7,6 +7,27 @@
   "body": "Built for the 1889 Exposition Universelle, the tower had a 20-year permit, after which it was due to pass to the City of Paris and be dismantled. Leading artists and writers had protested against it, including Guy de Maupassant, who supposedly lunched in its restaurant because it was the one place in Paris where he could not see it. It was saved by science: the tower made an ideal antenna for the new wireless telegraphy.",
   "slides": [
     {
+      "type": "chart",
+      "heading": "The world’s tallest structure, in metres",
+      "items": [
+        {
+          "label": "Washington Monument, 1884",
+          "value": 169
+        },
+        {
+          "label": "Eiffel Tower, 1889",
+          "value": 300,
+          "emphasis": true
+        },
+        {
+          "label": "Chrysler Building, 1930",
+          "value": 319
+        }
+      ],
+      "unit": "m",
+      "note": "The tower held the title for 41 years. With its aerials it now stands 330 m tall."
+    },
+    {
       "type": "quiz",
       "question": "What saved the Eiffel Tower when its 20-year permit ran out?",
       "options": [

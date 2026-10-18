@@ -27,6 +27,28 @@
       "text": "The canoe Hōkūleʻa sailed from Hawaiʻi to Tahiti without instruments, guided by Micronesian navigator Mau Piailug, showing such voyages could be deliberate."
     },
     {
+      "type": "flow",
+      "heading": "Finding an island without instruments",
+      "steps": [
+        {
+          "icon": "⭐",
+          "label": "Hold a course by stars rising on the horizon"
+        },
+        {
+          "icon": "🌊",
+          "label": "Under cloud, keep course by the swells"
+        },
+        {
+          "icon": "🏝️",
+          "label": "A changed swell pattern: land is near"
+        },
+        {
+          "icon": "🐦",
+          "label": "At dusk, follow birds heading home"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "How could ocean swells reveal an island beyond the horizon?",
       "options": [

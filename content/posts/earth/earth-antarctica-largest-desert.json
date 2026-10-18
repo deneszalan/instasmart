@@ -7,6 +7,31 @@
   "body": "A desert is defined by how little precipitation it gets, usually less than about 250 mm a year, not by heat or sand. Antarctica’s coasts get a bit more than that, but its vast interior gets far less, almost all of it as snow. That makes the continent, about 14 million square kilometres, the largest desert on Earth; the Sahara is the largest hot desert. The irony: Antarctica’s ice holds about 70% of the world’s fresh water.",
   "slides": [
     {
+      "type": "scale",
+      "heading": "The biggest deserts, to scale by area",
+      "unit": "million km²",
+      "items": [
+        {
+          "label": "Gobi",
+          "value": 1.3
+        },
+        {
+          "label": "Arabian",
+          "value": 2.3
+        },
+        {
+          "label": "Sahara",
+          "value": 9.2
+        },
+        {
+          "label": "Antarctica",
+          "value": 14.2,
+          "emphasis": true
+        }
+      ],
+      "note": "The Arctic, at 13.9 million km², is the other cold desert larger than the Sahara."
+    },
+    {
       "type": "estimate",
       "question": "How much of the world’s fresh water is locked up in Antarctica’s ice?",
       "min": 0,
@@ -15,6 +40,33 @@
       "answer": 70,
       "unit": "%",
       "explanation": "About 70%. Yet the continent counts as a desert, because its vast interior gets far less than about 250 mm of precipitation a year, almost all of it snow."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "A desert has to be hot",
+          "bin": 1
+        },
+        {
+          "text": "A desert is defined by how little precipitation it gets",
+          "bin": 0
+        },
+        {
+          "text": "The Sahara is the largest desert of any kind",
+          "bin": 1
+        },
+        {
+          "text": "About 70% of Earth’s fresh water is in Antarctic ice",
+          "bin": 0
+        }
+      ],
+      "explanation": "Deserts are defined by dryness, usually under about 250 mm of precipitation a year. Antarctica qualifies, and it is bigger than the Sahara."
     }
   ],
   "tags": [

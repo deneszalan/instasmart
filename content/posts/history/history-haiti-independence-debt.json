@@ -32,6 +32,27 @@
       "type": "text",
       "heading": "Paid off in 1947",
       "text": "A 2022 New York Times analysis found the related loans were cleared only in 1947, after Haiti paid about 112 million francs, roughly 560 million dollars today."
+    },
+    {
+      "type": "chart",
+      "heading": "What France demanded, and what Haiti paid",
+      "items": [
+        {
+          "label": "Demanded, 1825",
+          "value": 150
+        },
+        {
+          "label": "Cut to, 1838",
+          "value": 60
+        },
+        {
+          "label": "Paid in all, by 1947",
+          "value": 112,
+          "emphasis": true
+        }
+      ],
+      "unit": "million francs",
+      "note": "About 112 million francs by the 2022 New York Times analysis, roughly 560 million dollars today."
     }
   ],
   "tags": [
