@@ -1,0 +1,98 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "language-armenian-alphabet-numbers",
+  "field": "language",
+  "title": "Every one of the 36 original Armenian letters is also a number, up to Ք = 9,000",
+  "emoji": "🔤",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Armenian_Alphabet_Monument.JPG/960px-Armenian_Alphabet_Monument.JPG",
+    "alt": "Giant carved stone letters of the Armenian alphabet standing in the open at the Alphabet Monument in Artashavan, near Mount Aragats, Armenia.",
+    "credit": "Edgar Keshishian · CC BY-SA 4.0"
+  },
+  "body": "Around 405 AD the linguist and churchman Mesrop Mashtots, helped by Sahak and King Vramshapuh, created a 36-letter alphabet for Armenian. Its order follows the Greek alphabet, with extra letters for sounds Greek lacked, and each letter was also given a numerical value, so the script could count as well as spell. Two letters were added in the Middle Ages and a ligature became a letter in the 1920s reform, so the alphabet has 39 letters today. Sixteen centuries on, it is still written from left to right, and in 2005 its 1,600th anniversary was marked with a monument of giant stone letters near Mount Aragats.",
+  "slides": [
+    {
+      "type": "stat",
+      "value": "36",
+      "label": "letters in Mashtots’s original alphabet, around 405 AD",
+      "text": "By tradition the first sentence written in it was Proverbs 1:2: ‘To know wisdom and instruction; to perceive the words of understanding.’"
+    },
+    {
+      "type": "text",
+      "heading": "Letters that count",
+      "text": "Each of the 36 original letters doubles as a number: nine each for units, tens, hundreds and thousands, from Ա (1) through Ժ (10), Ճ (100) and Ռ (1,000) to Ք (9,000). A line over a numeral multiplies it by 10,000. The system is set out at [Armenian numerals](https://en.wikipedia.org/wiki/Armenian_numerals)."
+    },
+    {
+      "type": "spectrum",
+      "heading": "Sixteen centuries of one alphabet",
+      "min": 300,
+      "max": 2100,
+      "format": "year",
+      "ends": [
+        "300 AD",
+        "today"
+      ],
+      "marks": [
+        {
+          "label": "Alphabet created",
+          "value": 405,
+          "emphasis": true
+        },
+        {
+          "label": "Bible translated",
+          "value": 434
+        },
+        {
+          "label": "Matenadaran named",
+          "value": 1962
+        }
+      ],
+      "note": "The Matenadaran manuscript library in Yerevan was named after Mashtots in 1962"
+    },
+    {
+      "type": "order",
+      "heading": "Oldest first",
+      "items": [
+        "Mashtots creates the 36-letter alphabet",
+        "Armenian Bible translation completed",
+        "Two letters added in the Middle Ages",
+        "A ligature becomes letter 39"
+      ],
+      "explanation": "About 405: the alphabet. About 434: the Bible translation still used by the Armenian Church. Middle Ages: օ and ֆ added. 1920s: the ligature և becomes a letter."
+    },
+    {
+      "type": "quiz",
+      "question": "Which alphabet’s letter order did Mashtots follow?",
+      "options": [
+        "Greek",
+        "Latin",
+        "Syriac",
+        "Hebrew"
+      ],
+      "answer": 0,
+      "explanation": "The letters follow the Greek order, with added letters for sounds Greek lacked. That order is a main piece of evidence that Greek was the model."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Yerevan%2C_Matenadaran%2C_Mesrop_Mashtots%2C_Armenia.jpg/960px-Yerevan%2C_Matenadaran%2C_Mesrop_Mashtots%2C_Armenia.jpg",
+      "alt": "The Matenadaran, the stone-built manuscript library in Yerevan, Armenia, named after Mesrop Mashtots.",
+      "caption": "The Matenadaran in Yerevan, Armenia’s library of ancient manuscripts, was named after [Mesrop Mashtots](https://en.wikipedia.org/wiki/Mesrop_Mashtots) in 1962.",
+      "fit": "cover",
+      "credit": "Vyacheslav Argenberg · CC BY 4.0"
+    }
+  ],
+  "tags": [
+    "armenian",
+    "alphabets",
+    "numerals"
+  ],
+  "source": {
+    "label": "Wikipedia: Armenian alphabet",
+    "url": "https://en.wikipedia.org/wiki/Armenian_alphabet"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
