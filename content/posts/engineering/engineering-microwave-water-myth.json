@@ -7,27 +7,24 @@
   "body": "A popular explanation says microwave ovens are tuned to a special resonance of water. They aren’t: most home ovens run at about 2.45 GHz, a radio band set aside for such uses, and water has no sharp resonance there. Instead, the rapidly flipping electric field keeps twisting polar molecules like water, which have a positive and a negative end, and their jostling becomes heat. This dielectric heating works across a wide range of frequencies.",
   "slides": [
     {
-      "type": "spectrum",
-      "heading": "Where microwave ovens work, in megahertz",
+      "type": "place",
+      "question": "At what frequency, in megahertz, do most home microwave ovens run?",
       "min": 0,
       "max": 6000,
+      "step": 10,
+      "answer": 2450,
       "unit": "MHz",
-      "marks": [
+      "hints": [
         {
-          "label": "Industrial ovens",
+          "label": "Industrial",
           "value": 915
         },
         {
-          "label": "Home ovens",
-          "value": 2450,
-          "emphasis": true
-        },
-        {
-          "label": "A free band ovens don’t use",
+          "label": "Unused band",
           "value": 5800
         }
       ],
-      "note": "All are ISM radio bands; 915 MHz counts as one only in some countries, 2.45 GHz worldwide"
+      "explanation": "About 2,450 MHz (2.45 GHz), a radio band set aside worldwide for such uses; 915 MHz is set aside only in some countries. Water has no sharp resonance there."
     },
     {
       "type": "quiz",

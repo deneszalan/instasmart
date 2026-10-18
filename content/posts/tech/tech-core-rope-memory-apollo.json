@@ -20,6 +20,14 @@
       "detail": "Every wire adds one bit, since it either passes through the core or bypasses it."
     },
     {
+      "type": "fill",
+      "question": "Out of every 20 words of memory in the Apollo computer, how many were woven, read-only rope?",
+      "icon": "🧶",
+      "total": 20,
+      "answer": 19,
+      "explanation": "About 19 of 20, roughly 95%: there were 18 times as many woven words as erasable ones. Once woven, the program could not be wiped, and could not be changed either."
+    },
+    {
       "type": "stat",
       "value": "36,864",
       "label": "16-bit words of woven, read-only memory in the Apollo computer",

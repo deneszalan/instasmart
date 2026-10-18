@@ -29,6 +29,30 @@
       ]
     },
     {
+      "type": "place",
+      "question": "Engineers already called glitches bugs. When did Edison write about them in a letter?",
+      "min": 1840,
+      "max": 1960,
+      "step": 1,
+      "answer": 1878,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Edison born",
+          "value": 1847
+        },
+        {
+          "label": "Light bulb",
+          "value": 1879
+        },
+        {
+          "label": "The moth",
+          "value": 1947
+        }
+      ],
+      "explanation": "1878. Difficulties arise, Edison wrote to an associate, and then “Bugs”, as such little faults and difficulties are called, show themselves. The moth turned up 69 years later."
+    },
+    {
       "type": "order",
       "heading": "Oldest first",
       "items": [

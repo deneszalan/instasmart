@@ -7,22 +7,12 @@
   "body": "Tall buildings sway in strong winds and earthquakes. Between the 88th and 92nd floors of Taipei 101, a steel sphere weighing about 660 tonnes hangs from cables as a tuned mass damper. When the tower moves one way, the heavy pendulum lags behind and pulls against the motion, while hydraulic dampers turn its swinging into heat. It can cut the tower’s movement by up to 40%, and the giant ball is now a tourist attraction.",
   "slides": [
     {
-      "type": "estimate",
-      "question": "Up to what share of the tower’s movement can the damper remove?",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "answer": 40,
-      "unit": "%",
-      "explanation": "The pendulum lags behind the tower and pulls against its motion, while hydraulic dampers turn the swinging into heat, cutting movement by up to 40%."
-    },
-    {
-      "type": "pictogram",
-      "heading": "The damper can cut the tower’s movement by up to 4 parts in 10",
+      "type": "fill",
+      "question": "The tower sways in strong winds. Out of 10 units of that sway, up to how many can the 660-tonne damper take away?",
       "icon": "🏢",
       "total": 10,
-      "count": 4,
-      "note": "Up to 40% less sway, from a 660-tonne steel sphere hung between the 88th and 92nd floors"
+      "answer": 4,
+      "explanation": "Up to 4 in 10, or 40%. The pendulum lags behind the tower and pulls against its motion, and hydraulic dampers turn its swinging into heat. The 660-tonne ball hangs between floors 88 and 92."
     },
     {
       "type": "scramble",

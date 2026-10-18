@@ -7,26 +7,17 @@
   "body": "On 20 April 2020, the May futures contract for West Texas Intermediate crude closed at **−$37.63 a barrel**: sellers were paying buyers to take the oil. COVID-19 lockdowns had crushed demand, storage was a problem, and the contract expired the next day, when anyone still holding it would have to take delivery at Cushing, Oklahoma, the settlement point for WTI. Traders with no tanks sold at any price, and so few buyers were left that the exchange’s trade-at-settlement mechanism shut down for the first time ever. The June contract closed the same day at a positive $20.43, so the negative price was about timing and storage, not oil being worthless.",
   "slides": [
     {
-      "type": "stat",
-      "value": "−$37.63",
-      "label": "closing price of the May 2020 WTI contract on 20 April 2020",
-      "text": "The June contract closed at +$20.43 the same day."
-    },
-    {
-      "type": "spectrum",
-      "heading": "WTI futures at the close on 20 April 2020, dollars a barrel",
+      "type": "place",
+      "question": "On 20 April 2020, where did the expiring May contract for WTI crude close, in dollars a barrel?",
       "min": -50,
       "max": 50,
+      "step": 1,
+      "answer": -37.63,
       "ends": [
         "Paid to take it",
         "Paid for it"
       ],
-      "marks": [
-        {
-          "label": "May contract",
-          "value": -37.63,
-          "emphasis": true
-        },
+      "hints": [
         {
           "label": "Free oil",
           "value": 0
@@ -36,7 +27,13 @@
           "value": 20.43
         }
       ],
-      "note": "Below zero, sellers pay buyers to take the oil off their hands"
+      "explanation": "It closed at −$37.63: sellers were paying buyers to take the oil off their hands, because the contract expired the next day with delivery at Cushing. The June contract closed at $20.43."
+    },
+    {
+      "type": "stat",
+      "value": "−$37.63",
+      "label": "closing price of the May 2020 WTI contract on 20 April 2020",
+      "text": "The June contract closed at +$20.43 the same day."
     },
     {
       "type": "list",

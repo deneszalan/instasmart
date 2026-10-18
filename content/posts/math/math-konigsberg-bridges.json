@@ -25,17 +25,17 @@
       ]
     },
     {
+      "type": "fill",
+      "question": "Of Königsberg’s 7 original bridges, how many still stand today?",
+      "icon": "🌉",
+      "total": 7,
+      "answer": 3,
+      "explanation": "Three: two fell to the wartime bombing of the city and two more were demolished for a highway. One of the three left was rebuilt in 1935, so only two date from Euler’s day."
+    },
+    {
       "type": "text",
       "heading": "The bridges today",
       "text": "Two of the seven bridges did not survive the bombing of the city in the Second World War, and two more were later demolished for a highway. With the bridges that stand today, a walk crossing each once is possible, but it has to begin on one island and end on the other."
-    },
-    {
-      "type": "pictogram",
-      "heading": "Only 3 of Königsberg’s 7 original bridges still stand",
-      "icon": "🌉",
-      "total": 7,
-      "count": 3,
-      "note": "Two fell to wartime bombing, two to a highway; one of the three left was rebuilt in 1935."
     },
     {
       "type": "quiz",

@@ -24,6 +24,14 @@
       }
     },
     {
+      "type": "fill",
+      "question": "At the highest correction level, out of 10 pieces of a QR code’s data, how many can be lost and still recovered?",
+      "icon": "🟦",
+      "total": 10,
+      "answer": 3,
+      "explanation": "About 3 in 10: level H restores roughly 30% of the codewords, Q 25%, M 15% and L 7%. The more space goes to repair data, the less is left for the message."
+    },
+    {
       "type": "chart",
       "heading": "Share of a QR code that can be restored, by correction level",
       "items": [

@@ -41,6 +41,26 @@
       "fit": "contain"
     },
     {
+      "type": "place",
+      "question": "The lab pointed a camera at the pot in 1991. When did the picture go on the web?",
+      "min": 1985,
+      "max": 2005,
+      "step": 1,
+      "answer": 1993,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Camera set up",
+          "value": 1991
+        },
+        {
+          "label": "Switched off",
+          "value": 2001
+        }
+      ],
+      "explanation": "November 1993, once web browsers could show pictures. From then on, people around the world checked a Cambridge coffee pot they would never drink from."
+    },
+    {
       "type": "timeline",
       "heading": "Life of a coffee pot",
       "events": [

@@ -52,6 +52,14 @@
       "text": "It only works on sorted data. In an unsorted list you must check items one by one, which for a million items can take a million steps."
     },
     {
+      "type": "fill",
+      "question": "Jon Bentley asked professional programmers to write a binary search. Out of 10, how many got it wrong?",
+      "icon": "🧑‍💻",
+      "total": 10,
+      "answer": 9,
+      "explanation": "About 9 in 10 failed to produce a correct version, even after several hours of work. The halving idea is simple; getting every edge case right is not."
+    },
+    {
       "type": "text",
       "heading": "Easy to get wrong",
       "text": "When Jon Bentley set it as a task, about 90% of professional programmers failed to write a correct version. Java’s library version hid a bug for over nine years."

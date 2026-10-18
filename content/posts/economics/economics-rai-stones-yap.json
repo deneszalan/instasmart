@@ -17,35 +17,32 @@
       "explanation": "The largest discs were up to 3.6 metres across, quarried far away on Palau. Many were too heavy to move, so ownership passed by public agreement."
     },
     {
-      "type": "spectrum",
-      "heading": "How big is a rai stone? Diameters in centimetres",
+      "type": "place",
+      "question": "The biggest rai is 3.6 m across. How wide is the smallest, in centimetres?",
       "min": 0,
       "max": 400,
+      "step": 0.5,
+      "answer": 3.5,
       "unit": "cm",
       "ends": [
         "0 cm",
         "4 m"
       ],
-      "marks": [
+      "hints": [
         {
-          "label": "Smallest",
-          "value": 3.5
-        },
-        {
-          "label": "Most stones, from",
+          "label": "Typical, from",
           "value": 30
         },
         {
-          "label": "Most stones, to",
+          "label": "Typical, to",
           "value": 50
         },
         {
-          "label": "Largest, on Rumung island",
-          "value": 360,
-          "emphasis": true
+          "label": "Largest",
+          "value": 360
         }
       ],
-      "note": "Most rai are 30 to 50 cm across; the largest is too heavy to move"
+      "explanation": "Just 3.5 cm across, while the largest, on Rumung island, is 360 cm. Most rai are 30 to 50 cm, and the biggest are too heavy to move."
     },
     {
       "type": "sort",

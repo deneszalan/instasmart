@@ -29,6 +29,30 @@
       ]
     },
     {
+      "type": "place",
+      "question": "When did Banach and Tarski publish the proof that one ball can become two?",
+      "min": 1890,
+      "max": 1960,
+      "step": 1,
+      "answer": 1924,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Choice axiom",
+          "value": 1904
+        },
+        {
+          "label": "Hausdorff",
+          "value": 1914
+        },
+        {
+          "label": "Five pieces",
+          "value": 1947
+        }
+      ],
+      "explanation": "1924, building on Hausdorff’s 1914 paradox and on the axiom of choice, which Zermelo formulated in 1904. In 1947 Robinson showed that five pieces suffice and four do not."
+    },
+    {
       "type": "quiz",
       "question": "Why can’t the Banach–Tarski trick be done with a real ball?",
       "options": [

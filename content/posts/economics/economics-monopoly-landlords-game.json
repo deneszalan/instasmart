@@ -7,35 +7,28 @@
   "body": "In 1904 Lizzie Magie, a follower of economist Henry George, patented The Landlord’s Game to show how owning land lets landlords grow rich from rents while tenants grow poor. She designed two sets of rules: one where players race to build monopolies, and one where everyone is rewarded as wealth is created. Homemade versions spread for decades before Charles Darrow sold a variant to Parker Brothers in 1935 as Monopoly.",
   "slides": [
     {
-      "type": "spectrum",
-      "heading": "Years after Lizzie Magie’s first patent",
-      "min": 0,
-      "max": 36,
-      "unit": "years",
-      "ends": [
-        "1904",
-        "1940"
-      ],
-      "marks": [
+      "type": "place",
+      "question": "In what year did Lizzie Magie patent The Landlord’s Game, the ancestor of Monopoly?",
+      "min": 1880,
+      "max": 1950,
+      "step": 1,
+      "answer": 1904,
+      "format": "year",
+      "hints": [
         {
-          "label": "The Landlord’s Game patented",
-          "value": 0,
-          "emphasis": true
+          "label": "Second patent",
+          "value": 1924
         },
         {
-          "label": "Magie’s second patent",
-          "value": 20
+          "label": "Darrow sells",
+          "value": 1935
         },
         {
-          "label": "Darrow sells Monopoly",
-          "value": 31
-        },
-        {
-          "label": "Parker Brothers’ edition",
-          "value": 35
+          "label": "Parker edition",
+          "value": 1939
         }
       ],
-      "note": "Magie sold her patent to Parker Brothers for $500 in 1935; their Landlord’s Game came out in 1939"
+      "explanation": "Magie patented it in 1904 and again in 1924. She sold her patent to Parker Brothers for $500 in 1935, the year Darrow sold them Monopoly; their own Landlord’s Game came out in 1939."
     },
     {
       "type": "reveal",

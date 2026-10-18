@@ -24,35 +24,28 @@
       "explanation": "Portugal said 987 km, Spain 1,214 km. Richardson realised the two had measured with rulers of different lengths."
     },
     {
-      "type": "text",
-      "heading": "Fractal dimension",
-      "text": "A smooth curve has dimension 1; a curve so wiggly that it nearly fills a surface approaches 2. Mandelbrot put the west coast of Great Britain at about 1.25 and South Africa’s coast at about 1.02. He was careful to note that the paper did not claim real coastlines truly have fractional dimension: the fractal is a model."
-    },
-    {
-      "type": "spectrum",
-      "heading": "Fractal dimension: how wiggly is a coastline?",
+      "type": "place",
+      "question": "If a smooth line scores 1 and a curve that fills a surface scores 2, how wiggly is Britain’s west coast?",
       "min": 1,
       "max": 2,
+      "step": 0.01,
+      "answer": 1.25,
       "ends": [
         "Smooth line",
         "Fills a surface"
       ],
-      "marks": [
+      "hints": [
         {
-          "label": "South Africa’s coast",
+          "label": "South Africa",
           "value": 1.02
-        },
-        {
-          "label": "Britain’s west coast",
-          "value": 1.25,
-          "emphasis": true
-        },
-        {
-          "label": "A typical lake shore",
-          "value": 1.28
         }
       ],
-      "note": "A smooth curve has dimension 1; a curve so wiggly it fills a surface approaches 2."
+      "explanation": "About 1.25, Mandelbrot found; South Africa’s coast scores about 1.02 and a typical lake shore 1.28. He stressed that the fractal is a model, not a claim about real coastlines."
+    },
+    {
+      "type": "text",
+      "heading": "Fractal dimension",
+      "text": "A smooth curve has dimension 1; a curve so wiggly that it nearly fills a surface approaches 2. Mandelbrot put the west coast of Great Britain at about 1.25 and South Africa’s coast at about 1.02. He was careful to note that the paper did not claim real coastlines truly have fractional dimension: the fractal is a model."
     },
     {
       "type": "text",

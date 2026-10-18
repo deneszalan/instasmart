@@ -7,8 +7,8 @@
   "body": "After the Second World War, Hungary suffered the worst hyperinflation on record. In July 1946 the monthly inflation rate reached about 41.9 quadrillion percent, so prices doubled roughly every 15 hours. The central bank issued a 100 quintillion pengő note, the highest face value of any banknote ever circulated, before replacing the pengő with the forint in August 1946.",
   "slides": [
     {
-      "type": "chart",
-      "heading": "Days for prices to double, at each hyperinflation’s peak",
+      "type": "rank",
+      "heading": "How many days prices took to double, at each hyperinflation’s peak",
       "items": [
         {
           "label": "Hungary, July 1946",
@@ -33,7 +33,8 @@
         }
       ],
       "unit": "days",
-      "note": "Hours for Hungary (14.82) and Zimbabwe (24.35) turned into days; Wikipedia’s 2012 table"
+      "note": "Hours for Hungary (14.82) and Zimbabwe (24.35) turned into days; Wikipedia’s 2012 table",
+      "explanation": "Hungary’s prices doubled every 15 hours and Zimbabwe’s about every day. Germany’s famous 1923 inflation was far slower at its peak: 3.65 days."
     },
     {
       "type": "reveal",
