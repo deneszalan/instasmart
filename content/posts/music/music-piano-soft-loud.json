@@ -5,6 +5,20 @@
   "title": "‘Piano’ is short for an Italian name meaning ‘soft-loud’",
   "emoji": "🎼",
   "body": "By 1700, Bartolomeo Cristofori, keeper of instruments for the Medici court in Florence, had built a keyboard whose strings were struck by small hammers instead of plucked. Unlike the harpsichord, it let players control volume by how hard they pressed the keys, so it was described as a harpsichord ‘col piano e forte’, with soft and loud. That was shortened to pianoforte, and then simply piano.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "What let Cristofori’s instrument play both soft and loud?",
+      "options": [
+        "Hammers striking the strings",
+        "A second keyboard",
+        "Pedals that opened the lid",
+        "Thicker strings"
+      ],
+      "answer": 0,
+      "explanation": "Unlike the plucked harpsichord, hammers let players control volume by how hard they pressed the keys, hence ‘col piano e forte’."
+    }
+  ],
   "tags": [
     "piano",
     "instruments",

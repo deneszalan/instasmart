@@ -5,6 +5,20 @@
   "title": "Mencius argued that a child near a well shows we are born good",
   "emoji": "🌱",
   "body": "The Confucian thinker Mencius, of the 4th century BC, asked readers to imagine suddenly seeing a small child about to fall into a well. Anyone would feel instant alarm, he said, not to impress the parents or neighbors, but spontaneously. Such reactions are ‘sprouts’ of compassion, shame, respect and moral judgment that must be cultivated like plants. The later Confucian Xunzi argued instead that human nature is bad.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why did Mencius stress that the alarm at the well is spontaneous?",
+      "options": [
+        "Goodness is innate, not put on for show",
+        "Children must be watched constantly",
+        "We act mainly from fear of punishment",
+        "Adults simply copy their neighbors"
+      ],
+      "answer": 0,
+      "explanation": "The alarm comes before any thought of impressing parents or neighbors, so Mencius read it as a ‘sprout’ of compassion that must be cultivated like a plant."
+    }
+  ],
   "tags": [
     "philosophy",
     "confucianism",

@@ -7,6 +7,16 @@
   "body": "The saying that lightning never strikes the same place twice is a myth. Lightning tends to hit whatever offers the easiest path to the ground, usually the tallest or most exposed object around, and that doesn’t change after a strike. Across the planet there are about 44 lightning flashes every second, close to 1.4 billion a year, so repeat hits on towers, trees and mountaintops are routine.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "How many times a year is the Empire State Building struck by lightning, on average?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 23,
+      "unit": "strikes",
+      "explanation": "About 23 times a year. Lightning takes the easiest path to the ground, usually the tallest object around, and a strike does nothing to change that."
+    },
+    {
       "type": "text",
       "heading": "Tall targets get hit",
       "text": "The Empire State Building in New York is struck by lightning about 23 times a year on average."

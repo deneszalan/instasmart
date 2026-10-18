@@ -5,6 +5,20 @@
   "title": "People were already playing flutes more than 40,000 years ago",
   "emoji": "🦴",
   "body": "Flutes carved from bird bone and mammoth ivory, found in caves in southern Germany such as Geissenklösterle and Hohle Fels, are the oldest undisputed musical instruments, dated to between about 35,000 and 43,000 years ago. Their carefully spaced finger holes show that early modern humans in Europe were making melodic music. An older bone from Divje Babe in Slovenia has been claimed as a Neanderthal flute, but many researchers think animals made its holes.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "What were the oldest undisputed flutes made from?",
+      "options": [
+        "Bird bone and mammoth ivory",
+        "Hollow reeds",
+        "Deer antler",
+        "Fired clay"
+      ],
+      "answer": 0,
+      "explanation": "Flutes of bird bone and mammoth ivory from caves in southern Germany, such as Hohle Fels, date to between about 35,000 and 43,000 years ago."
+    }
+  ],
   "tags": [
     "prehistory",
     "flute",

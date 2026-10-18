@@ -27,6 +27,18 @@
       "type": "text",
       "heading": "More than a pretty picture",
       "text": "Sunset images help scientists study how high Martian dust reaches and look for dust or ice clouds."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does the Martian sky near the setting Sun look blue?",
+      "options": [
+        "Dust sends blue light mostly Sunward",
+        "Its thin air scatters light like Earth’s",
+        "Ice clouds reflect a blue glow",
+        "The Sun looks bluer from farther away"
+      ],
+      "answer": 0,
+      "explanation": "Fine dust in the thin atmosphere scatters blue light mostly in the Sun’s direction, while other colours spread more widely. At sunset the longer path through dust makes it easier to see."
     }
   ],
   "tags": [

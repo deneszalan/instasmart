@@ -20,6 +20,18 @@
       "type": "text",
       "heading": "Real examples",
       "text": "Alpine pastures in Switzerland and village forests in Japan were run as commons for centuries, as were irrigation systems in Spain and the Philippines."
+    },
+    {
+      "type": "quiz",
+      "question": "Which is one of Ostrom’s rules for a lasting commons?",
+      "options": [
+        "Rules made by the users themselves",
+        "A single owner for the resource",
+        "No penalties for rule breakers",
+        "Decisions made by distant officials"
+      ],
+      "answer": 0,
+      "explanation": "Lasting commons tend to have clear boundaries, rules made by the users, monitoring, graduated penalties and cheap ways to settle disputes."
     }
   ],
   "tags": [

@@ -25,6 +25,18 @@
       "type": "text",
       "heading": "A common mix-up",
       "text": "The new number isn’t always prime: 2 × 3 × 5 × 7 × 11 × 13 + 1 = 30,031 = 59 × 509. But 59 and 509 are primes missing from the list."
+    },
+    {
+      "type": "quiz",
+      "question": "Multiply every prime on a list together and add 1. Why can’t any prime on the list divide the result?",
+      "options": [
+        "It always leaves a remainder of 1",
+        "The result is always odd",
+        "The result is always prime",
+        "The list is always too short"
+      ],
+      "answer": 0,
+      "explanation": "Dividing by any prime on the list leaves a remainder of 1, so none of them is a factor. The result is either prime itself or has a prime factor missing from the list."
     }
   ],
   "tags": [

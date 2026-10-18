@@ -5,6 +5,19 @@
   "title": "Your body makes about 2.4 million red blood cells every second",
   "emoji": "🩸",
   "body": "Red blood cells are by far the most common cells in the body, with roughly 20 to 30 trillion in circulation at any time. To pack in as much oxygen-carrying haemoglobin as possible, they expel their nucleus as they mature, so they cannot divide or repair themselves. After about 100 to 120 days of squeezing through narrow capillaries they wear out and are recycled by immune cells, so bone marrow must keep replacing them at a furious pace.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why can’t a mature red blood cell divide or repair itself?",
+      "options": [
+        "It has expelled its nucleus",
+        "It is too small to split",
+        "Haemoglobin locks its shape"
+      ],
+      "answer": 0,
+      "explanation": "To pack in as much oxygen-carrying haemoglobin as possible, red cells expel their nucleus as they mature, so after 100 to 120 days they wear out and are recycled."
+    }
+  ],
   "tags": [
     "blood",
     "cells",

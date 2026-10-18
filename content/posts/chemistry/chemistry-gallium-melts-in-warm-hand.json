@@ -7,6 +7,16 @@
   "body": "Pure gallium melts at about **29.8°C**, only a little above a typical room temperature. A sufficiently warm hand can transfer enough heat to turn a small solid piece into liquid metal. Melting changes how its atoms are arranged and move; it does not turn gallium into a different substance. The dramatic change is a physical change of state.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "At what temperature does pure gallium melt?",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "answer": 29.8,
+      "unit": "°C",
+      "explanation": "About 29.8 °C, roughly 85.6 °F, only a little above room temperature, which is why a warm hand can turn a small piece into liquid metal."
+    },
+    {
       "type": "stat",
       "value": "29.8°C",
       "label": "Approximate melting point of pure gallium",

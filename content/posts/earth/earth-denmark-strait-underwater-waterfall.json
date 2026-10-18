@@ -28,6 +28,18 @@
       "type": "text",
       "heading": "Why you cannot watch it from shore",
       "text": "This cascade is a submerged current. Its huge flow is hidden below the surface and is measured with scientific instruments."
+    },
+    {
+      "type": "quiz",
+      "question": "What makes the water in the Denmark Strait ‘fall’, even though it is already underwater?",
+      "options": [
+        "Colder, denser water sinks downhill",
+        "Wind drives it over the seafloor ridge",
+        "Tides drain the strait twice a day",
+        "Melting ice floods in from Greenland"
+      ],
+      "answer": 0,
+      "explanation": "Cold, dense water from the Nordic Seas sinks beneath warmer water, spills over a ridge in the seafloor and is pulled down the slope by gravity: a waterfall flowing through water."
     }
   ],
   "tags": [

@@ -5,6 +5,19 @@
   "title": "Egypt’s royal tomb builders staged one of history’s first strikes",
   "emoji": "🪧",
   "body": "Around 1158 BC, in the 29th year of Ramesses III’s reign, the artisans of Deir el-Medina, who cut and decorated the royal tombs in the Valley of the Kings, put down their tools because their grain rations had not arrived. They staged sit-ins at temples and told officials, ‘We are hungry’. Grain was released, and the dispute was written down on a papyrus now kept in Turin.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why did the tomb builders of Deir el-Medina put down their tools?",
+      "options": [
+        "Their grain rations had not arrived",
+        "They wanted shorter working days",
+        "A new pharaoh cancelled their tombs"
+      ],
+      "answer": 0,
+      "explanation": "In the 29th year of Ramesses III, around 1158 BC, the artisans’ grain rations failed to arrive. They staged sit-ins at temples, telling officials ‘We are hungry’, and grain was released."
+    }
+  ],
   "tags": [
     "history",
     "ancientegypt",

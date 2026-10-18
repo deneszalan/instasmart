@@ -5,6 +5,20 @@
   "title": "In blind tests, top violinists often couldn’t pick out a Stradivarius",
   "emoji": "🕶️",
   "body": "Violins made by Antonio Stradivari around three centuries ago sell for millions and are widely believed to have an unmatched sound. But in double-blind studies published in 2012 and 2014, experienced violinists wearing modified goggles could not reliably tell top old Italian violins from good new ones, and many preferred the new. Researchers still debate what makes a great violin, but the old-instrument edge seems smaller than the legend.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "How were the violinists kept from seeing which instrument they played?",
+      "options": [
+        "They wore modified goggles",
+        "They played in total darkness",
+        "The violins were painted alike",
+        "They only heard recordings"
+      ],
+      "answer": 0,
+      "explanation": "In double-blind studies from 2012 and 2014, players in modified goggles could not reliably tell old Italian violins from good new ones, and many preferred the new."
+    }
+  ],
   "tags": [
     "violin",
     "stradivarius",

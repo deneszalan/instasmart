@@ -5,6 +5,18 @@
   "title": "A teaspoon of neutron star would weigh billions of tonnes",
   "emoji": "🥄",
   "body": "When a massive star explodes as a supernova, its core can collapse into a ball only about 20 km across that holds around 1.4 times the Sun’s mass. Gravity crushes the matter to the density of an atomic nucleus, made mostly of neutrons. A teaspoon of it would have a mass of about 5.5 billion tonnes, roughly 900 Great Pyramids. Many neutron stars also spin furiously; the fastest known turns about 716 times a second.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How many times a second does the fastest known neutron star spin?",
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "answer": 716,
+      "unit": "per second",
+      "explanation": "About 716 times a second. Such a star packs around 1.4 times the Sun’s mass into a ball only about 20 km across, at the density of an atomic nucleus."
+    }
+  ],
   "tags": [
     "neutronstars",
     "stars",

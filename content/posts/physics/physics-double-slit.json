@@ -20,6 +20,18 @@
       "type": "text",
       "heading": "Not just tiny things",
       "text": "The effect has been shown with molecules made of about 2,000 atoms, with a mass around 25,000 times that of a hydrogen atom."
+    },
+    {
+      "type": "quiz",
+      "question": "What happens to the stripes if you measure which slit each particle goes through?",
+      "options": [
+        "They get brighter and sharper",
+        "They shift to one side",
+        "They vanish, leaving two plain bands",
+        "Nothing changes"
+      ],
+      "answer": 2,
+      "explanation": "Getting ‘which-path’ information destroys the interference: the striped pattern disappears and only two plain bands remain."
     }
   ],
   "tags": [

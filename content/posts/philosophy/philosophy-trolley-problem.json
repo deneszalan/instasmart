@@ -25,6 +25,18 @@
       "type": "text",
       "heading": "Inside the brain",
       "text": "Brain scans suggest ‘personal’ dilemmas like pushing engage emotion-related regions more, while flipping a switch engages areas tied to controlled reasoning."
+    },
+    {
+      "type": "quiz",
+      "question": "Which idea explains why pushing feels worse than pulling the lever?",
+      "options": [
+        "The doctrine of double effect",
+        "The principle of utility",
+        "The golden rule",
+        "The precautionary principle"
+      ],
+      "answer": 0,
+      "explanation": "Harm foreseen as a side effect can be permissible, but using a person as the means to an end is not. Brain scans suggest ‘personal’ dilemmas engage emotion-related regions more."
     }
   ],
   "tags": [

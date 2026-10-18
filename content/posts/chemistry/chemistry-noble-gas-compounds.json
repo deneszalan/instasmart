@@ -5,6 +5,20 @@
   "title": "The “inert” noble gases can form compounds after all",
   "emoji": "🧪",
   "body": "For decades chemists assumed noble gases like neon, argon and xenon couldn’t react, because their outer electron shells are full. In 1962 Neil Bartlett noticed that platinum hexafluoride could rip an electron off an oxygen molecule, and that xenon gives up an electron almost as easily. He mixed xenon with it and made the first credible noble gas compound. Many xenon compounds are now known, and in 2000 chemists even made a compound of argon.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "What gave Neil Bartlett the idea that xenon might react?",
+      "options": [
+        "Xenon glowed in an electric discharge",
+        "Argon had already formed a compound",
+        "PtF₆ could take an electron from O₂",
+        "Xenon’s outer shell is not quite full"
+      ],
+      "answer": 2,
+      "explanation": "In 1962 Bartlett saw platinum hexafluoride rip an electron off an oxygen molecule, and knew xenon gives up an electron almost as easily. Mixing them made the first credible noble gas compound."
+    }
+  ],
   "tags": [
     "noblegases",
     "xenon",

@@ -5,6 +5,20 @@
   "title": "0.999… with nines forever is exactly equal to 1, not just close",
   "emoji": "🔢",
   "body": "One quick way to see it: 1/3 = 0.333…, and three times that is 0.999…, while three times 1/3 is exactly 1. More rigorously, two different real numbers always have some gap between them, but no positive gap fits between 0.999… and 1, because the endless 9s get closer than any distance you can name. They are simply two ways of writing the same number, just as 8.32 can also be written 8.31999….",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why must 0.999… and 1 be the very same number?",
+      "options": [
+        "Calculators round it up",
+        "The nines eventually stop",
+        "No positive gap fits between them",
+        "1 has no decimal expansion"
+      ],
+      "answer": 2,
+      "explanation": "Two different real numbers always have some gap between them, but the endless 9s get closer to 1 than any distance you can name. No gap, so no difference."
+    }
+  ],
   "tags": [
     "numbers",
     "infinity",

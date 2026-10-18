@@ -25,6 +25,17 @@
       "type": "text",
       "heading": "A cosmic catch",
       "text": "An expanding universe isn’t the same from moment to moment, so physicists note that total energy isn’t simply conserved on cosmic scales."
+    },
+    {
+      "type": "quiz",
+      "question": "Which symmetry of nature gives us conservation of momentum?",
+      "options": [
+        "Same laws at every moment in time",
+        "Same laws at every place in space",
+        "Same laws in every direction"
+      ],
+      "answer": 1,
+      "explanation": "Noether’s theorem pairs each symmetry with a conserved quantity: shifting in time gives energy, shifting in space gives momentum, and rotating gives angular momentum."
     }
   ],
   "tags": [

@@ -5,6 +5,19 @@
   "title": "An octopus has three hearts and blue blood",
   "emoji": "🐙",
   "body": "Two small branchial hearts pump an octopus’s blood through its two gills, while a third, the systemic heart, sends it around the rest of the body. The blood is blue because oxygen is carried by haemocyanin, a copper-rich protein dissolved in the plasma, rather than iron-based haemoglobin inside red cells. Oddly, the systemic heart stops beating while an octopus swims, which may help explain why they often prefer to crawl.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "What does an octopus’s systemic heart, the one that supplies its body, do while it swims?",
+      "options": [
+        "It stops beating",
+        "It beats twice as fast",
+        "It takes over pumping to the gills"
+      ],
+      "answer": 0,
+      "explanation": "The systemic heart stops beating while an octopus swims, which may help explain why octopuses often prefer to crawl."
+    }
+  ],
   "tags": [
     "octopus",
     "marinebiology",

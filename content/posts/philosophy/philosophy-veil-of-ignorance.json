@@ -25,6 +25,18 @@
       "type": "text",
       "heading": "Older roots",
       "text": "Similar ideas of impartial judgment appear in Kant and in Adam Smith’s ‘impartial spectator’, though Rawls coined the phrase ‘veil of ignorance’."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did Rawls and Harsanyi reach different answers from the same veil?",
+      "options": [
+        "Different assumptions about risk",
+        "Harsanyi rejected the veil idea",
+        "Rawls ignored economics entirely",
+        "They asked different age groups"
+      ],
+      "answer": 0,
+      "explanation": "Rawls assumed people would guard against the worst outcome; Harsanyi assumed they would weigh the odds and maximize average well-being."
     }
   ],
   "tags": [

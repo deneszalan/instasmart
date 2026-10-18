@@ -5,6 +5,19 @@
   "title": "In 1752, Britain went to bed on 2 September and woke on the 14th",
   "emoji": "📅",
   "body": "To switch from the Julian to the Gregorian calendar, which Catholic Europe had used since 1582, Britain and its colonies dropped eleven days: Wednesday 2 September 1752 was followed by Thursday 14 September. Rent and contract dates were shifted so nobody gained or lost, which is why the UK tax year still ends on 5 April. Tales of mobs demanding ‘give us our eleven days’ are very likely a myth.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "What do historians make of the tales of mobs shouting ‘give us our eleven days’?",
+      "options": [
+        "Very likely a myth",
+        "Well documented in several cities",
+        "True, but only in Scotland"
+      ],
+      "answer": 0,
+      "explanation": "Those tales are very likely a myth. Rent and contract dates were shifted so nobody gained or lost, which is why the UK tax year still ends on 5 April."
+    }
+  ],
   "tags": [
     "history",
     "calendar",

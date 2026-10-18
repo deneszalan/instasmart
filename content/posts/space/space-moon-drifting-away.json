@@ -15,6 +15,18 @@
       "type": "text",
       "heading": "Earth pays the price",
       "text": "The same tidal tug slows Earth’s rotation, adding a little under 2 milliseconds to the length of a day every century."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does the Moon keep climbing into a higher orbit?",
+      "options": [
+        "Earth’s tidal bulges tug it forward",
+        "The Sun’s gravity drags it outward",
+        "Earth’s gravity is slowly weakening",
+        "The solar wind pushes on it"
+      ],
+      "answer": 0,
+      "explanation": "Earth spins faster than the Moon orbits, so the tidal bulges are dragged slightly ahead of the Moon and their pull tugs it forward. In return, Earth’s spin slows and days lengthen."
     }
   ],
   "tags": [

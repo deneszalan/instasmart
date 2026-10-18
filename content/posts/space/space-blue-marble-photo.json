@@ -23,6 +23,17 @@
       "text": "The Sun was behind the spacecraft, so the crew saw Earth as a full disc. Most photos from space show it partly in shadow."
     },
     {
+      "type": "order",
+      "heading": "Earliest first",
+      "items": [
+        "First photo of Earth from a V-2 rocket",
+        "Apollo 8’s Earthrise",
+        "Apollo 17’s The Blue Marble",
+        "Voyager 1’s Pale Blue Dot"
+      ],
+      "explanation": "1946: a captured V-2 rocket. 1968: Apollo 8’s Earthrise. 1972: Apollo 17’s The Blue Marble. 1990: Voyager 1’s Pale Blue Dot, from about 6 billion km away."
+    },
+    {
       "type": "timeline",
       "heading": "Earth from afar",
       "events": [

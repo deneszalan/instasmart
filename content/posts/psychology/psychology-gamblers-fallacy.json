@@ -5,6 +5,19 @@
   "title": "Roulette once hit black 26 times in a row, and gamblers lost millions",
   "emoji": "🎲",
   "body": "On 18 August 1913 at the Monte Carlo Casino, the ball landed on black 26 times running. Gamblers lost millions of francs betting on red, convinced it was ‘due’. But a fair wheel has no memory: each spin is independent, so the chance of red was the same every time. The mistaken belief that past random outcomes change future ones is called the gambler’s fallacy, or the Monte Carlo fallacy.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "After black had come up 25 times, what was the chance of red on the 26th spin?",
+      "options": [
+        "The same as on any other spin",
+        "Much higher than usual",
+        "Lower, since black was on a streak"
+      ],
+      "answer": 0,
+      "explanation": "A fair wheel has no memory: each spin is independent, so the chance of red was the same every time. Betting on red because it was ‘due’ is the gambler’s fallacy."
+    }
+  ],
   "tags": [
     "cognitivebias",
     "probability",

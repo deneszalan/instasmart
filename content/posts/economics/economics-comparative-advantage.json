@@ -20,6 +20,18 @@
       "type": "text",
       "heading": "The everyday version",
       "text": "A lawyer who types faster than her assistant still hires one, because an hour of legal work earns far more than the hour of typing she would save."
+    },
+    {
+      "type": "quiz",
+      "question": "In Ricardo’s example, why should England make the cloth?",
+      "options": [
+        "It gives up less wine to make it",
+        "It has more workers",
+        "Its cloth is better quality",
+        "Portugal has no sheep"
+      ],
+      "answer": 0,
+      "explanation": "England’s cloth costs about 0.83 batches of wine in labour, against 1.125 in Portugal, so England is the cheaper cloth maker even though Portugal needs fewer men for both."
     }
   ],
   "tags": [

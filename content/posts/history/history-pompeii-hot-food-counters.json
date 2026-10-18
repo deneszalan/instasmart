@@ -7,6 +7,16 @@
   "body": "Eating a ready-made meal away from home was part of life in ancient Pompeii. Shops called **thermopolia** served hot food and drinks from masonry counters with large storage jars built into them. Archaeologists have identified at least 80 examples in the city. Their surviving counters reveal an everyday food culture far beyond grand banquets and wealthy households.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "How many thermopolia, or hot-food shops, have been identified in Pompeii?",
+      "min": 0,
+      "max": 200,
+      "step": 1,
+      "answer": 80,
+      "unit": "shops",
+      "explanation": "At least 80. Their masonry counters, with big storage jars called dolia built in, served hot food and drinks to people eating away from home."
+    },
+    {
       "type": "stat",
       "value": "80+",
       "label": "Thermopolia identified in Pompeii",

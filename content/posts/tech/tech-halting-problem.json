@@ -5,6 +5,20 @@
   "title": "Some questions about programs no computer can ever answer",
   "emoji": "♾️",
   "body": "In the 1930s Alan Turing proved there can be no general program that inspects any program and its input and always correctly predicts whether it will finish or run forever. The proof uses a paradox: if such a checker existed, you could write a program that asks the checker about itself and then does the opposite. This is the halting problem, and it means no tool can catch every infinite loop.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "How does Turing’s proof rule out a universal halting checker?",
+      "options": [
+        "A program could contradict the checker",
+        "Computers are too slow to check",
+        "Programs can be rewritten endlessly",
+        "Loops cannot be defined precisely"
+      ],
+      "answer": 0,
+      "explanation": "If a checker existed, you could write a program that asks the checker about itself and then does the opposite, a contradiction. So no such checker can exist."
+    }
+  ],
   "tags": [
     "computability",
     "alanturing",

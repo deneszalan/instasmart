@@ -7,6 +7,16 @@
   "body": "Jørn Utzon’s winning design of 1957 showed soaring shells with no defined geometry, and for years nobody could work out how to build them. The breakthrough was to make every shell a section of one imaginary sphere, so curved ribs could be cast from shared moulds. The roofs are clad in 1,056,006 tiles in two finishes, glossy white and matte cream, laid in a subtle chevron pattern.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "The Opera House was budgeted at $7 million. What did it finally cost?",
+      "min": 0,
+      "max": 250,
+      "step": 1,
+      "answer": 102,
+      "unit": "million dollars",
+      "explanation": "Budgeted at $7 million for 1963, it opened in 1973 at $102 million. Utzon had resigned in 1966 and never returned, but won the Pritzker Prize in 2003."
+    },
+    {
       "type": "text",
       "heading": "A sketch wins",
       "text": "In 1957 Utzon, a Danish architect who had never seen one of his designs built, beat 232 other entries in Sydney’s international design competition."

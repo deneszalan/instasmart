@@ -25,6 +25,18 @@
       "type": "text",
       "heading": "The lost proof",
       "text": "The panel itself is lost. We know the experiment mainly from his biographer Antonio Manetti, so exactly how it worked is still debated."
+    },
+    {
+      "type": "quiz",
+      "question": "Where did Brunelleschi make the hole in his painted panel?",
+      "options": [
+        "At the vanishing point",
+        "At the top edge, for hanging",
+        "Where the Baptistery door was",
+        "At the viewer’s feet"
+      ],
+      "answer": 0,
+      "explanation": "He pierced the panel at the vanishing point. Viewers looked through the hole from behind at a mirror reflecting the painting, then moved the mirror aside to compare it with the real building."
     }
   ],
   "tags": [

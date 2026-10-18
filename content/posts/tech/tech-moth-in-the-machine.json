@@ -5,6 +5,18 @@
   "title": "In 1947, operators found a literal bug in a computer: a moth",
   "emoji": "🦋",
   "body": "In 1947, operators of Harvard’s Mark II computer traced a fault to a moth trapped in a relay. They taped it into the logbook with the note “First actual case of bug being found.” The joke worked because engineers already called glitches “bugs”: Thomas Edison used the word in the 1870s. Grace Hopper, who worked on the machine, helped make the story famous.",
+  "slides": [
+    {
+      "type": "order",
+      "heading": "Oldest first",
+      "items": [
+        "Edison calls glitches ‘bugs’",
+        "A moth is found in Harvard’s Mark II",
+        "Grace Hopper spreads the story"
+      ],
+      "explanation": "Edison used ‘bug’ in the 1870s, so the 1947 moth was a joke on an old word. Grace Hopper, who worked on the Mark II, helped make the story famous."
+    }
+  ],
   "tags": [
     "computinghistory",
     "debugging",

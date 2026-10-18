@@ -20,6 +20,18 @@
       "type": "text",
       "heading": "Three different records",
       "text": "Highest above sea level: Everest. Tallest from base to peak: Mauna Kea. Farthest from Earth’s centre: Chimborazo."
+    },
+    {
+      "type": "quiz",
+      "question": "Why is Chimborazo’s summit farther from Earth’s centre than Everest’s?",
+      "options": [
+        "Earth bulges at the equator",
+        "Chimborazo sits on thicker crust",
+        "Everest is slowly sinking",
+        "Sea level is lower near the equator"
+      ],
+      "answer": 0,
+      "explanation": "Earth’s spin flattens it: the equatorial radius is about 21 km larger than the polar one, so Chimborazo, near the equator, ends up about 2 km farther out than Everest."
     }
   ],
   "tags": [

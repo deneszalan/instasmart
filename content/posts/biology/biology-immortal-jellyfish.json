@@ -5,6 +5,19 @@
   "title": "One jellyfish can revert to its juvenile stage and start life over",
   "emoji": "🪼",
   "body": "When an adult Turritopsis dohrnii is stressed, injured, sick or old, it can sink down and transform back into a polyp, the immature stage that lives attached to the seabed, and grow a new colony. It does this by transdifferentiation, turning specialised cells into different cell types. In theory the cycle could repeat indefinitely, earning it the nickname ‘immortal jellyfish’, but in the wild most are eaten or killed by disease first.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "How does Turritopsis dohrnii turn itself back into a polyp?",
+      "options": [
+        "Its cells change into other cell types",
+        "It regrows from a fertilised egg",
+        "It splits into identical clones"
+      ],
+      "answer": 0,
+      "explanation": "Transdifferentiation: specialised cells turn into different cell types, and the adult becomes a polyp attached to the seabed that can grow a new colony."
+    }
+  ],
   "tags": [
     "jellyfish",
     "ageing",

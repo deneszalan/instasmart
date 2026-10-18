@@ -12,6 +12,12 @@
       "text": "A string vibrating at 110 Hz also vibrates in halves, thirds and quarters, adding 220, 330 and 440 Hz. Together these blend into what we hear as one note."
     },
     {
+      "type": "reveal",
+      "prompt": "Cut the first fraction of a second off a recorded note. What happens?",
+      "answer": "Instruments become hard to tell apart",
+      "detail": "A note’s attack carries much of an instrument’s character, alongside the mix of overtones its shape and material strengthen."
+    },
+    {
       "type": "text",
       "heading": "The start matters",
       "text": "The first fraction of a second of a note, its attack, carries much of an instrument’s character. Cut it from a recording and instruments can become hard to tell apart."

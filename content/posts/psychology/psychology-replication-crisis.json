@@ -7,6 +7,16 @@
   "body": "In 2015, a large collaboration led by Brian Nosek redid 100 studies from three leading psychology journals. Of 97 originals that had reported significant results, only about 36% gave significant results again, and effects were on average about half as large. Small samples, flexible analyses and a preference for striking results had let false or inflated findings through. The shock helped launch reforms such as pre-registration and large multi-lab studies.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "Of the 97 studies with significant results, what percentage gave significant results again?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 36,
+      "unit": "%",
+      "explanation": "Only about 36%, and the effects were on average about half as large as first reported."
+    },
+    {
       "type": "text",
       "heading": "Famous casualties",
       "text": "Ego depletion, the idea that willpower runs out like fuel, and the claim that power poses change your hormones have both struggled in careful replications."

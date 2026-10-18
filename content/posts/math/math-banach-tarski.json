@@ -5,6 +5,20 @@
   "title": "One ball can be cut into 5 pieces and rebuilt into two identical balls",
   "emoji": "⚽",
   "body": "The Banach–Tarski paradox, published in 1924, proves that a solid ball can be split into finitely many pieces, as few as five, that can be moved and rotated, without stretching, into two balls each identical to the original. The catch is that the pieces are infinitely intricate scatterings of points with no definable volume, so nothing like this can be done with a real object. The proof also depends on a set-theory axiom called the axiom of choice.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why can’t the Banach–Tarski trick be done with a real ball?",
+      "options": [
+        "The pieces must be stretched to fit",
+        "The pieces have no definable volume",
+        "It only works for a hollow sphere",
+        "The maths was later shown to be wrong"
+      ],
+      "answer": 1,
+      "explanation": "The pieces are infinitely intricate scatterings of points with no definable volume, so nothing like this works on a real object. The proof also relies on the axiom of choice."
+    }
+  ],
   "tags": [
     "geometry",
     "settheory",

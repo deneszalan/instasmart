@@ -7,6 +7,16 @@
   "body": "The Greek biographer Plutarch, writing around AD 100, says the Athenians preserved the ship of the hero Theseus by swapping each rotten plank for new timber, until philosophers argued over whether it was still the same ship. The puzzle is really about identity over time: what makes anything, including you, the same thing from one year to the next when its parts keep changing?",
   "slides": [
     {
+      "type": "estimate",
+      "question": "Japan’s Ise Shrine is rebuilt with fresh timber on a fixed cycle. How many years?",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "answer": 20,
+      "unit": "years",
+      "explanation": "The shrine is rebuilt every 20 years, yet treated as the same sacred place: a living version of the ship of Theseus puzzle."
+    },
+    {
       "type": "text",
       "heading": "Hobbes’s twist",
       "text": "In 1655 Thomas Hobbes asked: what if someone kept every discarded plank and rebuilt the original ship? Now there are two ships, and both have a claim."

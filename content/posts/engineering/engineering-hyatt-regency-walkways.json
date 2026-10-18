@@ -25,6 +25,18 @@
       "type": "text",
       "heading": "The aftermath",
       "text": "The engineering firm lost its licences in four states, and the case is now taught worldwide as a lesson in checking design changes."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did splitting the rods make the walkways fail?",
+      "options": [
+        "Upper joints now carried both walkways",
+        "The new rods were made of weaker steel",
+        "Dancers made the lower walkway swing",
+        "The ceiling anchors came loose"
+      ],
+      "answer": 0,
+      "explanation": "Hanging the lower walkway from the upper one doubled the load on the upper walkway’s connections, which were already weaker than the building code required."
     }
   ],
   "tags": [

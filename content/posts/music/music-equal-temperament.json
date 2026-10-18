@@ -20,6 +20,18 @@
       "type": "text",
       "heading": "Before it took over",
       "text": "Older systems such as meantone made common keys sweeter but remote keys harsh. Equal temperament gradually became the Western norm in the 19th century."
+    },
+    {
+      "type": "quiz",
+      "question": "Which interval stays perfectly pure in equal temperament?",
+      "options": [
+        "The octave",
+        "The perfect fifth",
+        "The major third",
+        "None of them"
+      ],
+      "answer": 0,
+      "explanation": "Twelve equal semitones multiply the frequency by exactly 2, so octaves are pure. Fifths end up about 2 cents narrow and major thirds about 14 cents wide."
     }
   ],
   "tags": [

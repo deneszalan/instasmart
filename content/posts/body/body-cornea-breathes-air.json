@@ -5,6 +5,19 @@
   "title": "Your corneas take their oxygen from the air, not from your blood",
   "emoji": "👁️",
   "body": "The cornea, the clear dome at the front of the eye, must stay perfectly transparent, so it has no blood vessels at all. Instead, oxygen from the air dissolves into the thin film of tears and diffuses into the cornea, while nutrients arrive from the tears and the fluid behind it. Starved of oxygen, for example by poorly fitted contact lenses, the cornea can respond by growing new blood vessels into itself, which can cloud vision.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why does the cornea have no blood vessels?",
+      "options": [
+        "It must stay perfectly transparent",
+        "It is too thin to hold any",
+        "Its cells need no oxygen at all"
+      ],
+      "answer": 0,
+      "explanation": "Vessels would spoil its transparency, so oxygen from the air dissolves into the tear film and diffuses in, while nutrients arrive from the tears and the fluid behind it."
+    }
+  ],
   "tags": [
     "eyes",
     "anatomy",

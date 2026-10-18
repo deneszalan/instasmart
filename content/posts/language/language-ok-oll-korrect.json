@@ -5,6 +5,19 @@
   "title": "‘OK’ began as a joke abbreviation for ‘oll korrect’",
   "emoji": "👌",
   "body": "In the late 1830s, Boston newspapers had a fad for abbreviating comic misspellings, and ‘O.K.’ for ‘oll korrect’ appeared in the Boston Morning Post on 23 March 1839. Most such jokes died out, but OK got a boost in the 1840 election, when Martin Van Buren’s supporters recast it as ‘Old Kinderhook’, his nickname. Linguist Allen Walker Read traced this history in the 1960s, and most dictionaries now accept it.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "What gave ‘OK’ a boost after most of the joke abbreviations died out?",
+      "options": [
+        "Van Buren’s ‘Old Kinderhook’ campaign",
+        "Telegraph operators adopted it",
+        "Boston’s newspapers kept using it"
+      ],
+      "answer": 0,
+      "explanation": "In the 1840 election Martin Van Buren’s supporters recast OK as ‘Old Kinderhook’, his nickname, and the abbreviation stuck."
+    }
+  ],
   "tags": [
     "language",
     "etymology",

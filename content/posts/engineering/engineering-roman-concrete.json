@@ -5,6 +5,20 @@
   "title": "Some Roman concrete has lasted 2,000 years, and may even self-heal",
   "emoji": "🏛️",
   "body": "Roman harbour walls and buildings like the Pantheon have stood for around two millennia. Their concrete mixed lime with volcanic ash, and in seawater this slowly grows a rare crystal, tobermorite, that may help it resist fracturing. A 2023 study also found that small lumps of lime, likely from mixing with hot quicklime, can react with water in cracks and reseal them. The ash also makes it more resistant to salt water than typical modern concrete.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "According to a 2023 study, what lets Roman concrete reseal its cracks?",
+      "options": [
+        "Lumps of lime reacting with water",
+        "Volcanic ash melting in the sun",
+        "Salt crystals filling the gaps",
+        "Iron rods rusting and swelling"
+      ],
+      "answer": 0,
+      "explanation": "Small lumps of lime, likely left from mixing with hot quicklime, can react with water that seeps into cracks and reseal them."
+    }
+  ],
   "tags": [
     "concrete",
     "ancientrome",

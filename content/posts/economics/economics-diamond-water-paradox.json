@@ -5,6 +5,20 @@
   "title": "Water keeps you alive, so why do diamonds cost more?",
   "emoji": "💎",
   "body": "Adam Smith described the puzzle in 1776: water is essential yet cheap, while diamonds are useless for survival yet expensive. Economists resolved it in the 1870s with marginal utility: prices reflect the value of one more unit, not of all units together. Water is usually plentiful, so an extra litre adds little, while diamonds are scarce, so one more is prized. Lost in a desert, you would rank them very differently.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "According to marginal utility, what does a price reflect?",
+      "options": [
+        "The value of one more unit",
+        "The total usefulness of a good",
+        "The cost of digging it up",
+        "How badly you need it to survive"
+      ],
+      "answer": 0,
+      "explanation": "Prices track the value of an extra unit. Water is usually plentiful, so one more litre adds little; diamonds are scarce, so one more is prized."
+    }
+  ],
   "tags": [
     "value",
     "marginalutility",

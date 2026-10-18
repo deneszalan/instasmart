@@ -25,6 +25,17 @@
       "type": "text",
       "heading": "A slow victory",
       "text": "Elites who prized Chinese learning looked down on Hangul for centuries, and a king persecuted its use in 1504. It became the government’s preferred script only in 1894."
+    },
+    {
+      "type": "quiz",
+      "question": "What does an extra stroke on a Hangul consonant mark?",
+      "options": [
+        "A harsher, aspirated sound",
+        "A long vowel after it",
+        "The end of a syllable"
+      ],
+      "answer": 0,
+      "explanation": "Related sounds share a shape, and an extra stroke marks aspiration: ㄱ (k) becomes ㅋ (kh), and ㄷ (t) becomes ㅌ (th)."
     }
   ],
   "tags": [

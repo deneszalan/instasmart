@@ -25,6 +25,18 @@
       "type": "text",
       "heading": "An endless ladder",
       "text": "Cantor also showed that the set of all subsets of any set is always bigger than the set itself, so there is no largest infinity."
+    },
+    {
+      "type": "quiz",
+      "question": "Why can’t Cantor’s diagonal number be anywhere on the list?",
+      "options": [
+        "It differs from every entry somewhere",
+        "It is bigger than every number listed",
+        "It has infinitely many digits",
+        "It contains no 0s or 9s"
+      ],
+      "answer": 0,
+      "explanation": "Its nth digit was chosen to differ from the nth digit of the nth number, so it differs from every listed number in at least one place. The list was incomplete."
     }
   ],
   "tags": [

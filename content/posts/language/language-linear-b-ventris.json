@@ -25,6 +25,17 @@
       "type": "text",
       "heading": "The tripod test",
       "text": "In 1953 a tablet from Pylos showed a drawing of a tripod cauldron beside signs reading ti-ri-po-de, Greek for tripods. Ventris had originally expected Etruscan."
+    },
+    {
+      "type": "quiz",
+      "question": "Which language did Ventris originally expect Linear B to hide?",
+      "options": [
+        "Etruscan",
+        "Greek",
+        "Egyptian"
+      ],
+      "answer": 0,
+      "explanation": "Ventris had expected Etruscan. His place-name hunch showed the language was an early form of Greek, and the 1953 tripod tablet from Pylos confirmed it."
     }
   ],
   "tags": [

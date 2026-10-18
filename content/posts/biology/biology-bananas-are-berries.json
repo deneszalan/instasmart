@@ -5,6 +5,19 @@
   "title": "Botanically, bananas are berries but strawberries are not",
   "emoji": "🍌",
   "body": "To a botanist, a berry is a fleshy fruit that develops from a single flower with a single ovary, where the whole ovary wall ripens into the soft flesh. Bananas, grapes, tomatoes, aubergines and cucumbers all fit. A strawberry’s flesh grows mostly from the swollen base of the flower rather than the ovary, and its true fruits are the tiny seed-like specks on the outside, so it doesn’t qualify. Raspberries fail too: each is a cluster of many small fruits.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Which of these is a berry to a botanist?",
+      "options": [
+        "Raspberry",
+        "Cucumber",
+        "Strawberry"
+      ],
+      "answer": 1,
+      "explanation": "A cucumber grows from one flower with one ovary whose wall ripens into the flesh. A strawberry’s flesh is the swollen flower base, and a raspberry is a cluster of small fruits."
+    }
+  ],
   "tags": [
     "plants",
     "botany",

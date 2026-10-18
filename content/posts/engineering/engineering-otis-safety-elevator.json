@@ -5,6 +5,14 @@
   "title": "Elevators existed before Otis; he made them safe to ride",
   "emoji": "🛗",
   "body": "Hoists for lifting goods are ancient, but riding one was risky because a snapped rope meant a deadly fall. In the 1850s Elisha Otis developed a safety brake: if the rope lost tension, a spring forced catches into toothed rails beside the platform. At an exhibition in New York in 1854, he rode a platform up and had the rope cut, and it stayed put. Safe passenger elevators helped make tall buildings practical.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "In 1854 Otis rode a platform up in front of a New York crowd. Then what?",
+      "answer": "He had the rope cut, and the platform stayed put",
+      "detail": "When the rope lost tension, a spring forced catches into toothed rails beside the platform. Safe passenger elevators helped make tall buildings practical."
+    }
+  ],
   "tags": [
     "elevators",
     "inventions",

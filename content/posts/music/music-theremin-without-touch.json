@@ -27,6 +27,18 @@
       "type": "text",
       "heading": "This is not a recent invention",
       "text": "The Science Museum Group holds an RCA theremin manufactured in 1929. Playing music without touching the instrument has a history stretching back nearly a century."
+    },
+    {
+      "type": "quiz",
+      "question": "What does the theremin’s upright antenna control?",
+      "options": [
+        "Pitch",
+        "Volume",
+        "Vibrato",
+        "Echo"
+      ],
+      "answer": 0,
+      "explanation": "The upright antenna sets how high or low the note is, while the horizontal one controls volume. The player’s hands interact with the electric fields around each."
     }
   ],
   "tags": [

@@ -5,6 +5,18 @@
   "title": "Physicists once slowed light down to the speed of a car",
   "emoji": "🐢",
   "body": "In a vacuum, light covers about 300,000 km every second, but inside matter it can be dramatically slower. In 1998 a team led by Danish physicist Lene Hau sent a laser pulse through a cloud of sodium atoms chilled to a tiny fraction of a degree above absolute zero and slowed it to about 17 metres per second, roughly 60 km/h. A second laser made the cloud transparent but extremely sluggish. Her team later stopped light completely and then restarted it.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "In the 1998 experiment, how fast did the light pulse travel, in metres per second?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 17,
+      "unit": "m/s",
+      "explanation": "About 17 m/s, roughly 60 km/h, through sodium atoms chilled to a tiny fraction of a degree above absolute zero. In a vacuum, light covers about 300,000 km every second."
+    }
+  ],
   "tags": [
     "light",
     "optics",

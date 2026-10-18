@@ -12,6 +12,12 @@
       "text": "Building stopped for almost a century during wars, giving the soil under the first storeys time to compact. Without that pause, it would likely have toppled."
     },
     {
+      "type": "reveal",
+      "prompt": "The tower doesn’t just lean. What else is odd about its shape?",
+      "answer": "It is slightly curved",
+      "detail": "Later builders tried to compensate for the lean by making upper floors taller on the lower side, which left the tower slightly bent."
+    },
+    {
       "type": "text",
       "heading": "A tower that bends",
       "text": "Later builders tried to compensate by making upper floors taller on the lower side. As a result, the tower is actually slightly curved."

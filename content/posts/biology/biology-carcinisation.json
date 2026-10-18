@@ -5,6 +5,19 @@
   "title": "Evolution keeps turning other crustaceans into crab look-alikes",
   "emoji": "🦀",
   "body": "Carcinisation is the repeated evolution of a crab-like body: a flattened, widened shell with the tail tucked underneath. It has happened independently several times, mostly among anomurans, the group that includes hermit crabs. King crabs, for example, evolved from hermit crab ancestors and still have lopsided abdomens, a leftover from ancestors that lived in coiled snail shells. A compact body that shields vital organs may explain why evolution keeps landing on this design.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why do king crabs have lopsided abdomens?",
+      "options": [
+        "Ancestors lived in coiled snail shells",
+        "They walk sideways",
+        "One claw is far bigger than the other"
+      ],
+      "answer": 0,
+      "explanation": "King crabs evolved from hermit crab ancestors, and the asymmetry is a leftover from ancestors that lived in coiled snail shells."
+    }
+  ],
   "tags": [
     "evolution",
     "crabs",

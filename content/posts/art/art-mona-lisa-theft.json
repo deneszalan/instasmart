@@ -5,6 +5,14 @@
   "title": "The Mona Lisa became world-famous partly because it was stolen",
   "emoji": "🖼️",
   "body": "In 1911 Leonardo’s portrait was admired by connoisseurs but not especially popular with the public. On 21 August that year, Vincenzo Peruggia, a Louvre worker who had helped build its glass case, walked out with it. The search filled newspapers for two years and even brought the poet Guillaume Apollinaire and Pablo Picasso in for questioning. Recovered in Florence in 1913, it returned to Paris a celebrity.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "A famous poet and a famous painter were questioned over the theft. Who?",
+      "answer": "Guillaume Apollinaire and Pablo Picasso",
+      "detail": "The real thief was Vincenzo Peruggia, a Louvre worker who had helped build the painting’s glass case. It was recovered in Florence in 1913."
+    }
+  ],
   "tags": [
     "art",
     "arthistory",

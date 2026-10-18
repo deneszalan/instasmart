@@ -5,6 +5,20 @@
   "title": "Old windows aren’t thicker at the bottom because glass flows",
   "emoji": "🪟",
   "body": "It’s a popular myth that glass is a super-slow liquid that sags over centuries. Glass is an amorphous solid: its atoms are disordered like a liquid’s but locked in place. Old panes were uneven from the day they were made, because older methods produced sheets of varying thickness, and some old panes are actually thicker at the top. A 2017 study of medieval glass from Westminster Abbey estimated it could flow at most about 1 nanometre per billion years.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why are some old window panes thicker at the bottom?",
+      "options": [
+        "Glass sagged slowly over the centuries",
+        "They were made uneven in the first place",
+        "Heat from indoors softened the base",
+        "Rain wore the top edge thinner"
+      ],
+      "answer": 1,
+      "explanation": "Older methods made sheets of varying thickness, so panes were uneven from the start; some are even thicker at the top. Medieval glass flows at most about 1 nanometre per billion years."
+    }
+  ],
   "tags": [
     "glass",
     "materials",

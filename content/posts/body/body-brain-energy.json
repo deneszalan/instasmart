@@ -5,6 +5,19 @@
   "title": "Your brain is about 2% of your weight but uses about 20% of your energy",
   "emoji": "🧠",
   "body": "An adult brain weighs roughly 1.2 to 1.4 kilograms, yet it uses around a fifth of the body’s energy, more than any other organ. Much of that goes into maintaining the electrical gradients across neuron membranes that let them fire and into restoring those gradients after each signal. Because the brain stores very little fuel, it depends on a steady supply of glucose and oxygen from the blood, which is why a brief drop in blood flow to the brain can cause fainting.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Where does much of the brain’s energy go?",
+      "options": [
+        "Keeping neurons’ electrical gradients",
+        "Pumping blood through the skull",
+        "Storing fuel for emergencies"
+      ],
+      "answer": 0,
+      "explanation": "Much of it maintains the electrical gradients across neuron membranes that let them fire, and restores those gradients after each signal."
+    }
+  ],
   "tags": [
     "brain",
     "energy",

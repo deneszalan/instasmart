@@ -5,6 +5,18 @@
   "title": "Venus takes longer to spin once than to circle the Sun",
   "emoji": "⏳",
   "body": "Venus needs about 243 Earth days to rotate once relative to the stars, but only about 225 Earth days to orbit the Sun. It also spins backwards compared with most planets, so the Sun rises in the west. Because the spin and the orbit work against each other, one sunrise to the next takes about 117 Earth days. At the equator, the surface turns at only about 6.5 km/h, barely faster than walking pace.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "On Venus, how many Earth days pass from one sunrise to the next?",
+      "min": 0,
+      "max": 400,
+      "step": 1,
+      "answer": 117,
+      "unit": "Earth days",
+      "explanation": "About 117 Earth days. Venus needs 243 Earth days to rotate once but only 225 to orbit the Sun, and the spin and the orbit work against each other."
+    }
+  ],
   "tags": [
     "venus",
     "planets",

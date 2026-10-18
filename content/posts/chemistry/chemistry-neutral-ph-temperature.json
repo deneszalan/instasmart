@@ -5,6 +5,17 @@
   "title": "Pure water is only pH 7 at room temperature",
   "emoji": "💧",
   "body": "Water molecules constantly split into H⁺ and OH⁻ ions and recombine. Pure water is neutral because those two ions are always present in equal amounts, but how many form depends on temperature. Around 25 °C neutral water has a pH of about 7, but at 100 °C more molecules break apart and neutral pH falls to about 6.1, while near 0 °C it is about 7.5. So boiling water isn’t acidic: the meaning of “neutral” simply shifts with temperature.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "What is the pH of pure, neutral water at 100 °C?",
+      "min": 4,
+      "max": 10,
+      "step": 0.1,
+      "answer": 6.1,
+      "explanation": "About 6.1. At 100 °C more water molecules split into H⁺ and OH⁻, but the two are still present in equal amounts, so boiling water is neutral, not acidic."
+    }
+  ],
   "tags": [
     "ph",
     "water",

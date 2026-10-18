@@ -5,6 +5,20 @@
   "title": "The Sahara was green, with lakes and hippos, 10,000 years ago",
   "emoji": "🦛",
   "body": "During the African Humid Period, roughly 14,500 to 5,000 years ago, much of the Sahara was covered in grasses, trees and lakes. A slow wobble in Earth’s axis and orbit put more summer sunlight on the Northern Hemisphere, strengthening the African monsoon, and spreading plants helped bring even more rain. Fossils show hippos, crocodiles, giraffes and elephants lived there, and rock art in what is now bare desert seems to show people swimming.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "What made the Sahara green during the African Humid Period?",
+      "options": [
+        "Melting ice sheets flooded the region",
+        "The Mediterranean spilled inland",
+        "Orbital wobble strengthened the monsoon",
+        "A hotter Sun evaporated more sea water"
+      ],
+      "answer": 2,
+      "explanation": "A slow wobble in Earth’s axis and orbit put more summer sunlight on the Northern Hemisphere, strengthening the African monsoon. Spreading plants then helped bring even more rain."
+    }
+  ],
   "tags": [
     "sahara",
     "climate",

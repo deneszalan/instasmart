@@ -5,6 +5,18 @@
   "title": "Continents drift about as fast as your fingernails grow",
   "emoji": "💅",
   "body": "Earth’s rigid outer shell is broken into tectonic plates that glide over the hot, slowly deforming mantle beneath. At the Mid-Atlantic Ridge they spread apart by roughly 1 to 4 cm a year, about fingernail speed, while the Pacific’s Nazca Plate moves up to about 16 cm a year. Tiny as that sounds, over roughly 200 million years such motion tore apart the supercontinent Pangaea and opened the whole Atlantic Ocean.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How far does the Pacific’s Nazca Plate move in a year, at most?",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "answer": 16,
+      "unit": "cm",
+      "explanation": "Up to about 16 cm a year, against roughly 1 to 4 cm at the Mid-Atlantic Ridge. Over about 200 million years, such motion tore Pangaea apart and opened the Atlantic."
+    }
+  ],
   "tags": [
     "platetectonics",
     "geology",

@@ -5,6 +5,18 @@
   "title": "A 660-tonne steel ball hangs inside Taipei 101 to calm its sway",
   "emoji": "🏙️",
   "body": "Tall buildings sway in strong winds and earthquakes. Between the 88th and 92nd floors of Taipei 101, a steel sphere weighing about 660 tonnes hangs from cables as a tuned mass damper. When the tower moves one way, the heavy pendulum lags behind and pulls against the motion, while hydraulic dampers turn its swinging into heat. It can cut the tower’s movement by up to 40%, and the giant ball is now a tourist attraction.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Up to what share of the tower’s movement can the damper remove?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 40,
+      "unit": "%",
+      "explanation": "The pendulum lags behind the tower and pulls against its motion, while hydraulic dampers turn the swinging into heat, cutting movement by up to 40%."
+    }
+  ],
   "tags": [
     "skyscrapers",
     "taipei101",

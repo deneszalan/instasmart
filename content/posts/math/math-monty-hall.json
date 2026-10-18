@@ -25,6 +25,18 @@
       "type": "text",
       "heading": "The rules matter",
       "text": "It all hinges on the host knowingly avoiding the car. If he opened a door at random and it just happened to show a goat, switching would only be 50/50."
+    },
+    {
+      "type": "quiz",
+      "question": "What changes if the host opens a door at random and it just happens to show a goat?",
+      "options": [
+        "Switching still wins 2 times in 3",
+        "Switching becomes a 50/50 bet",
+        "Switching now loses 2 times in 3",
+        "You should always stay put"
+      ],
+      "answer": 1,
+      "explanation": "The 2-in-3 edge depends on the host knowingly avoiding the car. If his reveal was pure luck, switching is only 50/50."
     }
   ],
   "tags": [

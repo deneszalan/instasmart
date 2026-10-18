@@ -5,6 +5,18 @@
   "title": "In a room of 23 people, a shared birthday is more likely than not",
   "emoji": "🎂",
   "body": "The trick is that birthdays get compared between every pair of people, not just against yours. With 23 people there are 253 possible pairs, and each pair is another chance for a match, so the probability of at least one shared birthday passes 50%. With 70 people it tops 99.9%. The same maths, known as the birthday attack, tells cryptographers how quickly two different inputs to a hash function are likely to collide.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How many different pairs of people can you form from 23 people?",
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "answer": 253,
+      "unit": "pairs",
+      "explanation": "253 pairs, and each pair is another chance for a match. That is why the odds of a shared birthday pass 50% with 23 people and top 99.9% with 70."
+    }
+  ],
   "tags": [
     "probability",
     "paradox",

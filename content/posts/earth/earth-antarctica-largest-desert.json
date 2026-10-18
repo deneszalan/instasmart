@@ -5,6 +5,18 @@
   "title": "The world’s largest desert is Antarctica, not the Sahara",
   "emoji": "🐧",
   "body": "A desert is defined by how little precipitation it gets, usually less than about 250 mm a year, not by heat or sand. Antarctica’s coasts get a bit more than that, but its vast interior gets far less, almost all of it as snow. That makes the continent, about 14 million square kilometres, the largest desert on Earth; the Sahara is the largest hot desert. The irony: Antarctica’s ice holds about 70% of the world’s fresh water.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How much of the world’s fresh water is locked up in Antarctica’s ice?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 70,
+      "unit": "%",
+      "explanation": "About 70%. Yet the continent counts as a desert, because its vast interior gets far less than about 250 mm of precipitation a year, almost all of it snow."
+    }
+  ],
   "tags": [
     "antarctica",
     "deserts",

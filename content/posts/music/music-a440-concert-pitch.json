@@ -5,6 +5,20 @@
   "title": "‘A = 440 Hz’ is a 20th-century agreement, not a law of nature",
   "emoji": "🎻",
   "body": "Across European history, the A above middle C has been tuned anywhere from about 390 Hz to over 450 Hz, depending on city, era and instrument. An international conference in London settled on 440 Hz in 1939, and the standard was later adopted by ISO. Even now many orchestras tune a little higher, around 442 Hz, for a brighter sound, while baroque ensembles often play at about 415 Hz.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why do many orchestras tune a little above 440 Hz?",
+      "options": [
+        "For a brighter sound",
+        "To match old pianos",
+        "Because ISO requires it",
+        "To suit baroque instruments"
+      ],
+      "answer": 0,
+      "explanation": "Many orchestras tune around 442 Hz for a brighter sound, while baroque ensembles often go the other way and play at about 415 Hz."
+    }
+  ],
   "tags": [
     "pitch",
     "tuning",

@@ -7,6 +7,16 @@
   "body": "Where the optic nerve leaves the back of the eye, there are no light-detecting cells, so a patch of each eye’s field of view is completely blind. You don’t normally notice because the brain fills in the gap using surrounding detail and the view from your other eye, whose blind spot falls on a different part of the scene. The blind spot was first documented by the French scientist Edme Mariotte in the 1660s.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "How many full moons, side by side, would fit across one of your blind spots?",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "answer": 10,
+      "unit": "full moons",
+      "explanation": "About ten. Each blind spot is roughly 7.5° tall and 5.5° wide and sits some 12–15° to the side of where you look, yet your brain fills the gap so well you never notice."
+    },
+    {
       "type": "text",
       "heading": "Find yours",
       "text": "Draw an X and a dot about 8 cm to its right. Close your left eye, stare at the X with your right, and slowly move the page closer: at some point the dot vanishes."

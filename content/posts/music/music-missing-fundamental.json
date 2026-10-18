@@ -5,6 +5,20 @@
   "title": "Your brain can hear a bass note that isn’t actually there",
   "emoji": "👂",
   "body": "A musical note usually contains a fundamental frequency plus overtones at whole-number multiples of it. Remove the fundamental but keep the overtones, and listeners still hear the same pitch, because the brain infers it from the spacing of the harmonics. That is why a deep voice still sounds deep over a traditional phone line, which cuts off frequencies below about 300 Hz, and why tiny speakers can suggest bass they cannot produce.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "How does the brain work out a pitch whose fundamental is missing?",
+      "options": [
+        "From the spacing of the harmonics",
+        "By remembering the singer’s voice",
+        "From the loudest overtone alone",
+        "It guesses from the rhythm"
+      ],
+      "answer": 0,
+      "explanation": "Overtones sit at whole-number multiples of the fundamental, so their spacing gives it away. That is why a deep voice still sounds deep over a phone line."
+    }
+  ],
   "tags": [
     "acoustics",
     "psychoacoustics",

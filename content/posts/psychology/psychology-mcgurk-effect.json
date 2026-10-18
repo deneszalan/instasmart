@@ -5,6 +5,19 @@
   "title": "What you see can change what you hear",
   "emoji": "👄",
   "body": "In the McGurk effect, first described in 1976, a video shows a face mouthing ‘ga’ while the soundtrack plays ‘ba’, and many people hear a third sound, ‘da’. Your brain combines lip movements with sound to decode speech, and when the two conflict it settles on a compromise. The illusion often persists even when you know exactly what is going on, but close your eyes and the true sound returns.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "A face mouths ‘ga’ while the soundtrack plays ‘ba’. What do many people hear?",
+      "options": [
+        "‘da’",
+        "‘ba’",
+        "‘ga’"
+      ],
+      "answer": 0,
+      "explanation": "The brain combines lip movements with sound and, when they conflict, settles on a compromise. Close your eyes and the true ‘ba’ returns."
+    }
+  ],
   "tags": [
     "perception",
     "hearing",

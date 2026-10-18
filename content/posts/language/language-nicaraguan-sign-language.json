@@ -5,6 +5,19 @@
   "title": "Deaf children in Nicaragua created a brand-new language",
   "emoji": "🤟",
   "body": "Before 1977, most deaf Nicaraguans were isolated, communicating with family through simple home signs. When special schools opened in Managua, teachers focused on lipreading Spanish, but on playgrounds and buses the children pooled their gestures into a shared system. Younger pupils then made it richer, adding grammar such as verb agreement. Linguists treat it as a rare chance to watch a language being born.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Who added grammar, such as verb agreement, to the new sign language?",
+      "options": [
+        "Younger pupils",
+        "The teachers",
+        "Visiting linguists"
+      ],
+      "answer": 0,
+      "explanation": "The first pupils pooled their home signs into a shared system; younger children then made it richer, adding grammar such as verb agreement."
+    }
+  ],
   "tags": [
     "language",
     "signlanguage",

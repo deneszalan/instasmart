@@ -5,6 +5,18 @@
   "title": "ARPANET’s first message was just “lo”, then the computer crashed",
   "emoji": "📡",
   "body": "On 29 October 1969, UCLA student programmer Charley Kline tried to log in to a computer at the Stanford Research Institute over ARPANET, the network that grew into the internet. He got as far as “L” and “O” before the SRI system crashed. About an hour later the full login worked. By the end of 1969, ARPANET linked just four sites.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How many sites did ARPANET connect by the end of 1969?",
+      "min": 2,
+      "max": 50,
+      "step": 1,
+      "answer": 4,
+      "unit": "sites",
+      "explanation": "By the end of 1969 ARPANET linked just four sites. The first login attempt, from UCLA to the Stanford Research Institute, crashed after two letters."
+    }
+  ],
   "tags": [
     "internethistory",
     "arpanet",

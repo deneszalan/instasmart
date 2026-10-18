@@ -5,6 +5,18 @@
   "title": "Black holes don’t suck things in like cosmic vacuum cleaners",
   "emoji": "⚫",
   "body": "From a distance, a black hole pulls just like any other object with the same mass. If the Sun were magically replaced by a black hole of equal mass, only about 6 km across, Earth would keep orbiting exactly as it does now; it would just get cold and dark. The danger is up close, near the event horizon, where gravity becomes so intense that nothing, not even light, can climb back out.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "If the Sun were squeezed into a black hole of the same mass, how wide would it be?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 6,
+      "unit": "km",
+      "explanation": "Only about 6 km across, yet Earth would keep orbiting exactly as it does now, because from a distance a black hole pulls like any object of the same mass. It would just get cold and dark."
+    }
+  ],
   "tags": [
     "blackholes",
     "gravity",

@@ -7,6 +7,17 @@
   "body": "The popular image is a single catastrophic blaze that wiped out ancient knowledge. Historians instead see a slow decline over several centuries, driven by political purges, war damage and dwindling royal support. Many works survived elsewhere because scholars kept copying them, while others were lost simply because nobody recopied them before the papyrus decayed.",
   "slides": [
     {
+      "type": "order",
+      "heading": "Earliest first",
+      "items": [
+        "Ptolemy VIII purges the scholars",
+        "Fire spreads from Caesar’s burning ships",
+        "Aurelian retakes Alexandria from Zenobia",
+        "The tale of Caliph Umar’s book-burning"
+      ],
+      "explanation": "Ptolemy VIII’s purge: 145 BC. Caesar’s fire: 48 BC. Aurelian: AD 272. The Umar story is set in 642 but appears only centuries later and is regarded as a myth."
+    },
+    {
       "type": "text",
       "heading": "145 BC: scholars expelled",
       "text": "Ptolemy VIII purged intellectuals from Alexandria. The head librarian, Aristarchus of Samothrace, fled to Cyprus, and the Library’s prestige began to slide."

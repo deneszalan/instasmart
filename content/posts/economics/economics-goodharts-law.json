@@ -5,6 +5,20 @@
   "title": "When a measure becomes a target, it stops being a good measure",
   "emoji": "🎯",
   "body": "Economist Charles Goodhart observed in 1975 that statistics used to steer policy tend to break down once people start aiming at them, because behaviour shifts to hit the number rather than the goal behind it. The snappy one-line version was popularised by anthropologist Marilyn Strathern in 1997. Examples are everywhere: a call centre judged on call length may rush customers off the phone, and a school judged on test scores may teach to the test.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why does a statistic break down once people aim at it?",
+      "options": [
+        "Behaviour shifts to hit the number",
+        "The numbers are recalculated",
+        "Targets are always set too high",
+        "Nobody bothers to measure it"
+      ],
+      "answer": 0,
+      "explanation": "People chase the number rather than the goal behind it: a call centre judged on call length may rush customers, and a school judged on scores may teach to the test."
+    }
+  ],
   "tags": [
     "goodhartslaw",
     "incentives",

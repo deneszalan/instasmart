@@ -12,6 +12,12 @@
       "text": "Much of the lore traces to moralising pamphlets of the time and to Charles Mackay’s 1841 book Extraordinary Popular Delusions and the Madness of Crowds."
     },
     {
+      "type": "reveal",
+      "prompt": "The most prized tulips had flame-like streaks. What caused them?",
+      "answer": "A virus",
+      "detail": "Found centuries later, the virus ‘broke’ the colour into streaks that made the bulbs striking and hard to propagate, which is why they fetched such prices."
+    },
+    {
       "type": "text",
       "heading": "Why bulbs were pricey",
       "text": "The most prized ‘broken’ tulips had flame-like streaks caused, as was found centuries later, by a virus, which made them striking and hard to propagate."

@@ -5,6 +5,20 @@
   "title": "Zeno ‘proved’ that the fastest runner can never catch a tortoise",
   "emoji": "🐢",
   "body": "Zeno of Elea, in the 5th century BC, argued that if a tortoise has a head start, Achilles must first reach where it was, by which time it has moved on, and so on forever. He wanted to support his teacher Parmenides’ view that change is an illusion. Calculus shows that infinitely many shrinking steps can add up to a finite time, though philosophers still debate whether that fully dissolves the puzzle.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "What was Zeno trying to support with the paradox?",
+      "options": [
+        "Parmenides: change is an illusion",
+        "Motion is faster than it looks",
+        "Achilles never really existed",
+        "Space is made of tiny atoms"
+      ],
+      "answer": 0,
+      "explanation": "Zeno wanted to back his teacher Parmenides, who held that change is an illusion. Calculus later showed infinitely many shrinking steps can add up to a finite time."
+    }
+  ],
   "tags": [
     "philosophy",
     "paradox",

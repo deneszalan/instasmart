@@ -28,6 +28,18 @@
       "type": "text",
       "heading": "A different view from above",
       "text": "An aircraft can put water droplets below you as well as above you. With the Sun behind you and the right conditions ahead, the lower arc can become visible too."
+    },
+    {
+      "type": "quiz",
+      "question": "Why do we usually see only an arc of the rainbow’s circle from the ground?",
+      "options": [
+        "Droplets only form high in the sky",
+        "The landscape hides the lower part",
+        "The Sun lights only the top half",
+        "Our eyes can’t see below the horizon"
+      ],
+      "answer": 1,
+      "explanation": "A rainbow belongs to a circle centred opposite the Sun. From the ground the landscape hides the lower part; from an aircraft, with droplets below you, the full circle can show."
     }
   ],
   "tags": [

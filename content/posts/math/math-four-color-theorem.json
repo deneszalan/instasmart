@@ -5,6 +5,18 @@
   "title": "Any map needs only four colours, and proving it took a computer",
   "emoji": "🗺️",
   "body": "It was conjectured in 1852 that any map can be coloured with just four colours so that regions sharing a border never match. Simple to state, it resisted proof for over a century. In 1976 Kenneth Appel and Wolfgang Haken finally succeeded by reducing the problem to 1,834 special configurations and checking them one by one by computer. It was the first major theorem proved this way, and some mathematicians were uneasy that no human could check it by hand.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How many special map configurations did the 1976 computer proof have to check?",
+      "min": 0,
+      "max": 5000,
+      "step": 1,
+      "answer": 1834,
+      "unit": "configurations",
+      "explanation": "1,834. Appel and Haken reduced the problem to that many configurations and checked them one by one by computer, the first major theorem proved this way."
+    }
+  ],
   "tags": [
     "graphtheory",
     "maps",

@@ -20,6 +20,18 @@
       "type": "text",
       "heading": "Even older ice",
       "text": "In 2016, cores from Antarctica’s Allan Hills, where old ice lies near the surface, held ice dated to about 2.7 million years ago."
+    },
+    {
+      "type": "quiz",
+      "question": "Why is the air in an ice bubble younger than the ice around it?",
+      "options": [
+        "Snow stays porous before it seals shut",
+        "Air leaks in through cracks in the ice",
+        "Bubbles slowly rise through the ice",
+        "Ice forms faster than snow falls"
+      ],
+      "answer": 0,
+      "explanation": "Snow stays porous for tens of metres before sealing, so the air trapped in a bubble can be centuries to thousands of years younger than the ice around it."
     }
   ],
   "tags": [

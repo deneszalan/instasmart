@@ -20,6 +20,18 @@
       "type": "text",
       "heading": "Galileo’s vanishing act",
       "text": "Galileo saw the rings as Saturn’s “ears”. In 1612 Earth lined up with the ring plane, they seemed to vanish, and he was baffled."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did Saturn’s rings seem to vanish when Galileo looked in 1612?",
+      "options": [
+        "Saturn passed behind the Sun",
+        "His telescope was too weak",
+        "Earth lined up with the ring plane",
+        "A moon was hiding them"
+      ],
+      "answer": 2,
+      "explanation": "The rings are incredibly thin, so when Earth lined up with the ring plane in 1612 they seemed to disappear. Galileo, who saw them as Saturn’s ‘ears’, was baffled."
     }
   ],
   "tags": [

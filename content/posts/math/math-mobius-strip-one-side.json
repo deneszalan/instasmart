@@ -32,6 +32,17 @@
         "label": "Möbius strip",
         "text": "One continuous side and one continuous boundary edge."
       }
+    },
+    {
+      "type": "quiz",
+      "question": "How many boundary edges does a Möbius strip have?",
+      "options": [
+        "One",
+        "Two",
+        "None"
+      ],
+      "answer": 0,
+      "explanation": "The half-twist joins what looked like two edges into one continuous boundary, just as it joins the two apparent sides into one surface. An untwisted loop has two edges."
     }
   ],
   "tags": [

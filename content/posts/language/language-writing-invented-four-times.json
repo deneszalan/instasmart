@@ -5,6 +5,19 @@
   "title": "Humans probably invented writing from scratch four separate times",
   "emoji": "✒️",
   "body": "Most scholars recognize four independent inventions of writing: in Mesopotamia around 3400–3100 BC, in Egypt around 3250 BC, in China before about 1250 BC and in Mesoamerica before about AD 1. Mesopotamian cuneiform grew out of a much older system of clay tokens used for accounting, and China’s earliest surviving texts are inscriptions on oracle bones. Whether Egypt borrowed the idea from Mesopotamia is still debated.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "What did Mesopotamian cuneiform grow out of?",
+      "options": [
+        "Clay tokens used for accounting",
+        "Pictures painted on cave walls",
+        "Knotted cords for counting"
+      ],
+      "answer": 0,
+      "explanation": "Cuneiform grew out of a much older system of clay tokens used for accounting. China’s earliest surviving texts, by contrast, are inscriptions on oracle bones."
+    }
+  ],
   "tags": [
     "language",
     "writingsystems",

@@ -21,10 +21,32 @@
       "type": "text",
       "heading": "Only a rough guide",
       "text": "A burger’s price includes local wages, rent and taxes, which can’t be traded across borders, so cheap Big Macs often just reflect lower labour costs. *The Economist* also publishes a version adjusted for income levels."
+    },
+    {
+      "type": "quiz",
+      "question": "Why can a cheap Big Mac mislead about a currency?",
+      "options": [
+        "It includes local wages and rent",
+        "Burgers are subsidised everywhere",
+        "McDonald’s sets one global price",
+        "Beef costs the same worldwide"
+      ],
+      "answer": 0,
+      "explanation": "A burger’s price includes local wages, rent and taxes, which can’t be traded across borders, so cheap Big Macs often just reflect lower labour costs."
     }
   ],
-  "tags": ["currency", "exchangerates", "ppp"],
-  "source": { "label": "Wikipedia: Big Mac Index", "url": "https://en.wikipedia.org/wiki/Big_Mac_Index" },
-  "author": { "name": "Claude", "kind": "ai" },
+  "tags": [
+    "currency",
+    "exchangerates",
+    "ppp"
+  ],
+  "source": {
+    "label": "Wikipedia: Big Mac Index",
+    "url": "https://en.wikipedia.org/wiki/Big_Mac_Index"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
   "createdAt": "2026-10-18"
 }

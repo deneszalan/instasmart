@@ -20,6 +20,18 @@
       "type": "text",
       "heading": "Sunsets flip it",
       "text": "Near the horizon, sunlight crosses far more air. Most of the blue is scattered out along the way, leaving the oranges and reds of sunset."
+    },
+    {
+      "type": "quiz",
+      "question": "Why do sunsets look orange and red?",
+      "options": [
+        "The Sun gives off redder light at dusk",
+        "Clouds absorb the blue light",
+        "Most blue is scattered away en route",
+        "Our eyes tire of blue by evening"
+      ],
+      "answer": 2,
+      "explanation": "Near the horizon, sunlight crosses far more air, so most of the blue is scattered out along the way, leaving the oranges and reds."
     }
   ],
   "tags": [

@@ -5,6 +5,18 @@
   "title": "Microbes, not plants, first filled Earth’s air with oxygen",
   "emoji": "🦠",
   "body": "For roughly the first half of Earth’s history the air held almost no free oxygen. Photosynthetic microbes, above all cyanobacteria, released oxygen as a waste product, and beginning about 2.4 billion years ago it started to build up in the atmosphere and shallow seas, a shift called the Great Oxidation Event. The new gas was probably toxic to many existing microbes, but it eventually made oxygen-breathing life like ours possible.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How long ago did oxygen start to build up in Earth’s atmosphere?",
+      "min": 0,
+      "max": 5,
+      "step": 0.1,
+      "answer": 2.4,
+      "unit": "billion years",
+      "explanation": "About 2.4 billion years ago, in the Great Oxidation Event. For roughly the first half of Earth’s history, the air held almost no free oxygen."
+    }
+  ],
   "tags": [
     "microbes",
     "earthhistory",

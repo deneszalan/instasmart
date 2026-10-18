@@ -5,6 +5,20 @@
   "title": "A term paper, written instead of an exam, gave us Huffman coding",
   "emoji": "🗜️",
   "body": "In 1951, MIT professor Robert Fano gave his information theory students a choice: sit the final exam or write a paper on finding the most efficient binary code. David Huffman was about to give up when he hit on building the code from the bottom up, repeatedly pairing the two rarest symbols. Common symbols get short codes and rare ones long codes, and the result is provably the most efficient code of its kind. Variants still help compress ZIP files, JPEGs and MP3s.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "What was Huffman’s key insight?",
+      "options": [
+        "Pair the two rarest symbols, bottom up",
+        "Give every symbol the same length",
+        "Start from the most common symbol",
+        "Encode whole words, not letters"
+      ],
+      "answer": 0,
+      "explanation": "Huffman built the code from the bottom up, repeatedly pairing the two rarest symbols. Common symbols get short codes, rare ones long, and the result is provably the most efficient of its kind."
+    }
+  ],
   "tags": [
     "compression",
     "algorithms",

@@ -5,6 +5,20 @@
   "title": "Atoms are almost entirely empty space",
   "emoji": "🔬",
   "body": "Nearly all of an atom’s mass sits in its nucleus, yet the nucleus is tiny: the whole atom is roughly 27,000 (uranium) to 60,000 (hydrogen) times wider. If a nucleus were a marble, the atom’s electron cloud would stretch for hundreds of metres. So why don’t you sink through your chair? The electrons in its atoms and in yours repel each other, and quantum rules stop electrons from crowding into the same states.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "If atoms are mostly empty space, why don’t you sink through your chair?",
+      "options": [
+        "The nuclei bump into each other",
+        "Electrons repel and can’t share states",
+        "Air fills the gaps inside the atoms",
+        "Gravity holds the atoms apart"
+      ],
+      "answer": 1,
+      "explanation": "The electrons in the chair’s atoms and in yours repel each other, and quantum rules stop electrons from crowding into the same states."
+    }
+  ],
   "tags": [
     "atoms",
     "nucleus",

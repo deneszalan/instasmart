@@ -5,6 +5,19 @@
   "title": "The Cold War ‘red telephone’ was never a telephone",
   "emoji": "📠",
   "body": "After the 1962 Cuban Missile Crisis exposed how slowly messages moved between the superpowers, the US and the Soviet Union opened a direct link in 1963. It carried text only, on teleprinters, because speech might be misinterpreted. It moved to fax in 1986 and to a secure computer link in 2008. The first test message was a pangram: ‘THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG’S BACK 1234567890’.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why did the 1963 hotline carry text rather than voice?",
+      "options": [
+        "Speech might be misinterpreted",
+        "Phone lines could not reach Moscow",
+        "Voice calls were easier to tap"
+      ],
+      "answer": 0,
+      "explanation": "It used teleprinters because spoken words might be misinterpreted. The link moved to fax in 1986 and to a secure computer link in 2008."
+    }
+  ],
   "tags": [
     "history",
     "coldwar",

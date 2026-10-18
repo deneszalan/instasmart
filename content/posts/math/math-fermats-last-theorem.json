@@ -5,6 +5,20 @@
   "title": "A note scribbled in a book’s margin took 358 years to prove",
   "emoji": "📜",
   "body": "Around 1637, Pierre de Fermat wrote in his copy of the ancient Greek text Arithmetica that a^n + b^n = c^n has no solutions in positive whole numbers when n is greater than 2. He added that he had a truly marvellous proof the margin was too narrow to contain. Generations of mathematicians failed to find one, until Andrew Wiles proved it in 1994 using advanced 20th-century tools, which is why most experts doubt Fermat ever had a valid proof.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why do most experts doubt that Fermat really had a proof?",
+      "options": [
+        "Fermat never studied number theory",
+        "Wiles’s proof needed 20th-century tools",
+        "The margin note was a later forgery",
+        "Fermat admitted it in a later letter"
+      ],
+      "answer": 1,
+      "explanation": "Generations of mathematicians failed, and Andrew Wiles’s 1994 proof relies on advanced 20th-century mathematics, so most experts doubt Fermat ever had a valid proof."
+    }
+  ],
   "tags": [
     "numbertheory",
     "proofs",

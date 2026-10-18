@@ -25,6 +25,18 @@
       "type": "text",
       "heading": "Informed guesses",
       "text": "Reconstructions are hypotheses: only traces survive, so the exact shades, shading and finish of the originals remain uncertain."
+    },
+    {
+      "type": "quiz",
+      "question": "How does Egyptian blue give away paint on statues that look bare?",
+      "options": [
+        "It glows in infrared when lit",
+        "It smells faintly of copper",
+        "It turns green as it ages",
+        "It is heavier than marble"
+      ],
+      "answer": 0,
+      "explanation": "Egyptian blue gives off infrared light when lit, revealing traces of paint on surfaces that look bare to the eye."
     }
   ],
   "tags": [

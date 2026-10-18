@@ -20,6 +20,18 @@
       "type": "text",
       "heading": "Mercury and your car",
       "text": "Similar effects weaken bonding in mercury, helping keep it liquid. Calculations suggest about 10 V of a 12 V lead–acid car battery is due to relativity."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does gold look yellow rather than silvery?",
+      "options": [
+        "It gives off yellow light of its own",
+        "Its surface carries a thin oxide film",
+        "It reflects red light more strongly",
+        "Its electrons absorb some blue light"
+      ],
+      "answer": 3,
+      "explanation": "Relativity shrinks gold’s 6s orbital and expands 5d, bringing them close in energy, so gold absorbs blue. The reflected light is missing blue, which our eyes read as warm yellow."
     }
   ],
   "tags": [

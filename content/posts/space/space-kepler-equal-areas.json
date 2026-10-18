@@ -14,6 +14,12 @@
       "fit": "contain"
     },
     {
+      "type": "reveal",
+      "prompt": "In which month is Earth moving fastest along its orbit?",
+      "answer": "Early January, when it is closest to the Sun",
+      "detail": "Earth is nearest the Sun around 3 January, moving about 30.3 km/s, and farthest around 4 July, at about 29.3 km/s."
+    },
+    {
       "type": "stat",
       "value": "≈1 km/s",
       "label": "faster in early January than in early July",

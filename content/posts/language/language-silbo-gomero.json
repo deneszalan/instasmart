@@ -5,6 +5,18 @@
   "title": "On one Canary Island, people can whistle Spanish across valleys",
   "emoji": "🎶",
   "body": "Silbo Gomero is a whistled form of Spanish from La Gomera, an island whose deep ravines made walking to the neighbors slow. Whistlers turn the sounds of speech into shifting pitches loud enough to carry up to about five kilometers. Its roots likely go back to the island’s original Guanche inhabitants. After decades of decline, it became a compulsory school subject in 1999 and was recognized by UNESCO in 2009.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How far can a Silbo Gomero whistle carry?",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "answer": 5,
+      "unit": "km",
+      "explanation": "Up to about five kilometers, far enough to cross La Gomera’s deep ravines, which made walking to the neighbors slow."
+    }
+  ],
   "tags": [
     "language",
     "whistledlanguage",

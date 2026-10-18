@@ -5,6 +5,19 @@
   "title": "The first author known by name may have been a priestess of Ur",
   "emoji": "✍️",
   "body": "Enheduanna, daughter of Sargon of Akkad, served as high priestess of the moon god Nanna in the city of Ur around 2300 BC. Hymns such as the Exaltation of Inanna speak in her voice, which is why she is often called the earliest named author in history. Scholars still debate whether she composed them herself: the surviving copies were made by Babylonian scribes some six centuries later.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why do scholars still debate whether Enheduanna composed the hymns herself?",
+      "options": [
+        "The surviving copies are much later",
+        "The hymns never mention her name",
+        "They were found far away, in Egypt"
+      ],
+      "answer": 0,
+      "explanation": "The surviving copies were made by Babylonian scribes some six centuries later. She served as high priestess of the moon god Nanna in Ur around 2300 BC."
+    }
+  ],
   "tags": [
     "history",
     "mesopotamia",

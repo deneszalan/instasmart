@@ -5,6 +5,20 @@
   "title": "A three-page paper from 1963 upended the definition of knowledge",
   "emoji": "🕰️",
   "body": "A long-held view treats knowledge as justified true belief. Edmund Gettier’s tiny paper described cases where all three conditions hold, yet the person was only lucky. Bertrand Russell had a similar example: you glance at a clock that stopped exactly twelve hours ago and believe the right time. Around AD 770, the Indian Buddhist philosopher Dharmottara imagined a traveler who sees a mirage and finds real water there.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Russell’s clock stopped exactly twelve hours ago. Why does that matter for knowledge?",
+      "options": [
+        "You get the right time only by luck",
+        "The clock is still running",
+        "You cannot read a stopped clock",
+        "Twelve hours is too long to wait"
+      ],
+      "answer": 0,
+      "explanation": "Your belief is justified and true, yet right only by luck. Gettier cases like this suggest justified true belief is not enough for knowledge."
+    }
+  ],
   "tags": [
     "philosophy",
     "epistemology",

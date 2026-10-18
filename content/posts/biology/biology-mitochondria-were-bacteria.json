@@ -20,6 +20,17 @@
       "type": "text",
       "heading": "Clue 3: a bacterial wrapper",
       "text": "Their inner membrane contains cardiolipin, a lipid otherwise found in bacterial membranes, and their outer membrane has bacteria-like porin proteins."
+    },
+    {
+      "type": "quiz",
+      "question": "In the same theory, where do plant chloroplasts come from?",
+      "options": [
+        "Captured cyanobacteria",
+        "Modified mitochondria",
+        "Folds of the cell nucleus"
+      ],
+      "answer": 0,
+      "explanation": "Endosymbiotic theory holds that chloroplasts descend from cyanobacteria taken in by another cell, just as mitochondria descend from engulfed bacteria."
     }
   ],
   "tags": [

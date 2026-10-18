@@ -5,6 +5,20 @@
   "title": "Blind men touching an elephant became a philosophy of many truths",
   "emoji": "🐘",
   "body": "In a parable found in Buddhist, Jain and Hindu texts, blind men each touch one part of an elephant and confidently describe something different, such as a rope, a pillar or a fan, then quarrel over who is right. In the Buddhist Udana it mocks rival sects arguing over fragments of truth. Jain thinkers used it to illustrate anekāntavāda, ‘many-sidedness’: the idea that reality is complex and no single viewpoint captures all of it.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "In the Buddhist Udana, who do the quarrelling blind men stand for?",
+      "options": [
+        "Rival sects arguing over partial truths",
+        "Kings fighting over land",
+        "Students who skip their lessons",
+        "Merchants haggling over prices"
+      ],
+      "answer": 0,
+      "explanation": "The Udana uses the parable to mock sects quarrelling over fragments of truth. Jain thinkers drew a broader lesson: no single viewpoint captures all of reality."
+    }
+  ],
   "tags": [
     "philosophy",
     "jainism",

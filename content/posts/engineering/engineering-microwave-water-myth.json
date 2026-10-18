@@ -5,6 +5,20 @@
   "title": "Microwave ovens don’t work by ‘resonating’ water molecules",
   "emoji": "🍲",
   "body": "A popular explanation says microwave ovens are tuned to a special resonance of water. They aren’t: most home ovens run at about 2.45 GHz, a radio band set aside for such uses, and water has no sharp resonance there. Instead, the rapidly flipping electric field keeps twisting polar molecules like water, which have a positive and a negative end, and their jostling becomes heat. This dielectric heating works across a wide range of frequencies.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why do most home microwave ovens run at about 2.45 GHz?",
+      "options": [
+        "A radio band is reserved for such uses",
+        "Water resonates sharply there",
+        "Magnetrons can go no higher",
+        "It matches the size of a plate"
+      ],
+      "answer": 0,
+      "explanation": "That frequency sits in a radio band set aside for such uses. Water has no sharp resonance there, and dielectric heating works across a wide range of frequencies."
+    }
+  ],
   "tags": [
     "microwave",
     "physics",

@@ -5,6 +5,19 @@
   "title": "An Indonesian volcano helped bring Frankenstein to life",
   "emoji": "🌋",
   "body": "In April 1815, Mount Tambora on the island of Sumbawa produced the most powerful eruption in recorded history. Its haze cooled the globe, and 1816 became the ‘Year Without a Summer’, with failed harvests in Europe and North America. That June, incessant rain kept Mary Godwin, soon to be Mary Shelley, indoors by Lake Geneva with Lord Byron, where a ghost-story contest led her to begin Frankenstein.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "How did an eruption in Indonesia end up shaping a novel begun in Switzerland?",
+      "options": [
+        "Its haze brought a cold, rainy 1816",
+        "Its ash buried Mary Shelley’s home",
+        "Its glow inspired the monster’s look"
+      ],
+      "answer": 0,
+      "explanation": "Tambora’s haze cooled the globe, 1816 became the ‘Year Without a Summer’, and incessant June rain kept Mary Godwin indoors by Lake Geneva, where a ghost-story contest began Frankenstein."
+    }
+  ],
   "tags": [
     "history",
     "volcanoes",

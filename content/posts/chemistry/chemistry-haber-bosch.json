@@ -7,6 +7,16 @@
   "body": "Nitrogen makes up most of the air, but plants can’t use it directly because the two atoms in N₂ are held together by an extremely strong triple bond. The Haber–Bosch process, developed in Germany around 1909 to 1913, forces nitrogen and hydrogen together over an iron catalyst to make ammonia for fertiliser. It is estimated that the food grown with that fertiliser supports nearly half the world’s population.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "In a classic Haber–Bosch plant, what share of the gas turns into ammonia in a single pass?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 15,
+      "unit": "%",
+      "explanation": "Only about 15% per pass, even at around 500 °C and roughly 200 times atmospheric pressure, so the leftover nitrogen and hydrogen are recycled through again."
+    },
+    {
       "type": "text",
       "heading": "Heat, pressure, iron",
       "text": "Classic plants run at around 500 °C and roughly 200 times atmospheric pressure. Only about 15% converts per pass, so leftover gas is recycled."

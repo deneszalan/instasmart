@@ -7,6 +7,17 @@
   "body": "Launched in 1977, Voyager 1 flew past Jupiter and Saturn and simply kept going. It is now more than 170 times farther from the Sun than Earth is, making it the most distant human-made object, and its radio signals, travelling at the speed of light, need roughly 23 to 24 hours to arrive. It is projected to reach one full light-day from Earth in November 2026. NASA still listens for its faint whisper with giant 70-metre dishes.",
   "slides": [
     {
+      "type": "order",
+      "heading": "Earliest first",
+      "items": [
+        "Voyager 2 launches",
+        "Voyager 1 launches",
+        "Voyager 1 flies past Jupiter and Saturn",
+        "Voyager 1 crosses the heliopause"
+      ],
+      "explanation": "Voyager 2 left first; Voyager 1 followed 16 days later, on 5 September 1977, took a faster route past Jupiter and Saturn, and crossed the heliopause in 2012."
+    },
+    {
       "type": "text",
       "heading": "Launched second",
       "text": "Despite its name, Voyager 1 left Earth 16 days after its twin, Voyager 2, on 5 September 1977. A faster route soon put it in the lead."

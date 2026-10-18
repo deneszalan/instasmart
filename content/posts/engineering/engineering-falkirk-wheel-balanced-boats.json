@@ -25,6 +25,18 @@
       "type": "text",
       "heading": "Balance saves effort",
       "text": "The descending side helps counterbalance the rising side. Motors still supply energy to turn the mechanism, but they do not have to lift an unbalanced load of boats and water."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does adding a boat not unbalance the wheel?",
+      "options": [
+        "It displaces its own weight in water",
+        "Pumps add water to the other side",
+        "Boats are weighed and matched up",
+        "Motors hold the heavy side up"
+      ],
+      "answer": 0,
+      "explanation": "A floating boat displaces its own weight in water, so adding one lets an equal weight of water leave the chamber and the two sides stay balanced."
     }
   ],
   "tags": [

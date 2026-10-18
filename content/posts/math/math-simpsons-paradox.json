@@ -20,6 +20,18 @@
       "type": "text",
       "heading": "The hidden factor",
       "text": "Treatment A was mostly used on large stones, the harder cases that fail more often, while B mostly got easy small stones. Stone size skewed the totals."
+    },
+    {
+      "type": "quiz",
+      "question": "In the kidney stone study, why did treatment A look worse overall?",
+      "options": [
+        "The percentages were added up wrongly",
+        "B’s patients were younger and fitter",
+        "A was mostly used on the harder cases",
+        "A’s small-stone results were left out"
+      ],
+      "answer": 2,
+      "explanation": "Treatment A was mostly given for large stones, the harder cases that fail more often, while B mostly got easy small stones. Stone size, the hidden factor, skewed the totals."
     }
   ],
   "tags": [

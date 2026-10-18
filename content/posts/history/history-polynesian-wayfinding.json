@@ -25,6 +25,17 @@
       "type": "text",
       "heading": "The 1976 test",
       "text": "The canoe Hōkūleʻa sailed from Hawaiʻi to Tahiti without instruments, guided by Micronesian navigator Mau Piailug, showing such voyages could be deliberate."
+    },
+    {
+      "type": "quiz",
+      "question": "How could ocean swells reveal an island beyond the horizon?",
+      "options": [
+        "Islands bend and reflect the swells",
+        "Swells always run away from land",
+        "Swells warm up near islands"
+      ],
+      "answer": 0,
+      "explanation": "Navigators felt the swells through the hull. Islands bend and reflect them, so a changed pattern can betray land that is still out of sight."
     }
   ],
   "tags": [

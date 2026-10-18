@@ -5,6 +5,20 @@
   "title": "A candle’s yellow glow is tiny specks of soot shining",
   "emoji": "🔥",
   "body": "In a candle flame, oxygen can only mix in from the edges, so the wax vapour doesn’t burn completely. Unburned carbon clumps into microscopic soot particles that get so hot they glow, like the filament of an old light bulb; that incandescence is the yellow. Near the base, where fuel and air mix better, faint blue light comes from excited molecular fragments such as CH and C₂. Give a gas burner plenty of air and the soot disappears, leaving a clean blue flame.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why does a gas burner with plenty of air burn blue instead of yellow?",
+      "options": [
+        "The extra air cools the flame down",
+        "Complete burning leaves no glowing soot",
+        "Blue is the colour of hot soot",
+        "Air itself burns with a blue flame"
+      ],
+      "answer": 1,
+      "explanation": "With enough air the fuel burns completely, so no soot forms to glow yellow. The faint blue comes from excited molecular fragments such as CH and C₂."
+    }
+  ],
   "tags": [
     "fire",
     "combustion",

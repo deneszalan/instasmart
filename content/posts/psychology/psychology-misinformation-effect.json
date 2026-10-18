@@ -7,6 +7,16 @@
   "body": "In a 1974 study by Elizabeth Loftus and John Palmer, people watched film of a car crash and were asked how fast the cars were going when they ‘smashed into’ or ‘hit’ each other. The word ‘smashed’ led to higher speed estimates, and a week later those people were more likely to recall broken glass that was never in the film. Memory isn’t a recording; each recall is a reconstruction that later information can quietly reshape.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "Asked how fast the cars were going when they ‘smashed into’ each other, what did people estimate?",
+      "min": 10,
+      "max": 80,
+      "step": 1,
+      "answer": 41,
+      "unit": "mph",
+      "explanation": "About 41 mph, against about 34 mph when the question said ‘hit’, for the very same film."
+    },
+    {
       "type": "text",
       "heading": "Same film, new memories",
       "text": "Changing just the verb shifted average speed estimates for the very same film, from about 34 mph for ‘hit’ to about 41 mph for ‘smashed’."

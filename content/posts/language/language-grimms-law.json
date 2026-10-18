@@ -25,6 +25,17 @@
       "type": "text",
       "heading": "Why it matters",
       "text": "Regular sound laws let linguists rebuild lost ancestors like Proto-Indo-European and tell true cognates from words that only look alike by chance."
+    },
+    {
+      "type": "quiz",
+      "question": "By Grimm’s law, which English word is the cousin of Latin ‘cornu’?",
+      "options": [
+        "Horn",
+        "Corn",
+        "Crown"
+      ],
+      "answer": 0,
+      "explanation": "Latin k became Germanic h, so cornu lines up with horn. ‘Corn’ is actually the cousin of Latin granum, where g became k."
     }
   ],
   "tags": [

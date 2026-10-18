@@ -5,6 +5,20 @@
   "title": "Mars has a volcano about 2.5 times the height of Everest",
   "emoji": "🌋",
   "body": "Olympus Mons rises roughly 22 km above the surrounding plains and spreads about 600 km across. Volcanoes grow this huge on Mars because gravity is weaker and the crust doesn’t drift: on Earth, moving plates carry volcanoes away from the hotspots that feed them, but on Mars lava kept piling up in the same place for ages. It roughly ties with a peak on the asteroid Vesta as the tallest mountain known in the Solar System.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why can a volcano grow so much bigger on Mars than on Earth?",
+      "options": [
+        "Mars has far more lava than Earth",
+        "Its crust doesn’t drift off the hotspot",
+        "Thin air lets ash pile up higher",
+        "Mars’s gravity is stronger"
+      ],
+      "answer": 1,
+      "explanation": "On Earth, moving plates carry volcanoes away from the hotspots that feed them. On Mars the crust doesn’t drift and gravity is weaker, so lava kept piling up in one place for ages."
+    }
+  ],
   "tags": [
     "mars",
     "volcanoes",

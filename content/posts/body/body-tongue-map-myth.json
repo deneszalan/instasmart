@@ -5,6 +5,19 @@
   "title": "The famous ‘tongue map’ of separate taste zones is a myth",
   "emoji": "👅",
   "body": "Many textbooks once showed sweet at the tip, bitter at the back and sour and salty along the sides. In reality, every basic taste can be detected by all regions of the tongue that have taste buds, though sensitivity varies slightly from place to place. The map traces back to a 1901 German paper that measured small differences in taste thresholds, which were exaggerated when the results were replotted in a 1942 book.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Where did the tongue map come from?",
+      "options": [
+        "A 1901 study, exaggerated in a 1942 book",
+        "A medieval anatomy textbook",
+        "A 1950s advertising campaign"
+      ],
+      "answer": 0,
+      "explanation": "A 1901 German paper measured small differences in taste thresholds; when a 1942 book replotted the results, those differences were exaggerated."
+    }
+  ],
   "tags": [
     "taste",
     "myths",

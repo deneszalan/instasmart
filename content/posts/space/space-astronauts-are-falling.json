@@ -7,6 +7,16 @@
   "body": "Gravity is everywhere in space; it is what keeps the Moon and every satellite in orbit. Astronauts on the International Space Station feel weightless because they and the station are falling together, all the time. With nothing pushing back on them, there is no sensation of weight. The trick is that the station also moves sideways so fast that, as it falls, Earth’s curved surface keeps dropping away beneath it.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "At the height of the ISS, how strong is gravity compared with on the ground?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 90,
+      "unit": "%",
+      "explanation": "Roughly 90%. Height alone barely weakens gravity. Astronauts float because they and the station are falling together, moving sideways so fast that Earth keeps curving away beneath them."
+    },
+    {
       "type": "text",
       "heading": "Gravity is still strong",
       "text": "About 400 km up, where the ISS flies, gravity is still roughly 90% as strong as on the ground. Height alone barely weakens it."

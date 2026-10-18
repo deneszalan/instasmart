@@ -20,6 +20,18 @@
       "type": "text",
       "heading": "The lasting lesson",
       "text": "Since then, major bridge designs are tested in wind tunnels, and decks are built stiffer or more aerodynamic, often with open trusses or streamlined box girders."
+    },
+    {
+      "type": "quiz",
+      "question": "Why don’t engineers call the collapse simple resonance?",
+      "options": [
+        "A steady wind has no matching rhythm",
+        "The wind was far too weak that day",
+        "Bridges have no natural frequency",
+        "The deck was made of concrete"
+      ],
+      "answer": 0,
+      "explanation": "Classic resonance needs pushes at a matching rhythm. Here the deck’s own twisting changed the airflow, which fed energy into ever larger twists: flutter."
     }
   ],
   "tags": [

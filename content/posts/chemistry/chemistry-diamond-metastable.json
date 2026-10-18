@@ -5,6 +5,20 @@
   "title": "Diamonds aren’t forever: graphite is carbon’s more stable form",
   "emoji": "💎",
   "body": "At everyday temperature and pressure, graphite, the stuff in pencils, is the most stable arrangement of carbon atoms. Diamond is only metastable: in principle it “wants” to turn into graphite, but its atoms are locked in place by strong bonds and a high energy barrier, so the change would take millions to billions of years. Diamonds are not indestructible, though; in pure oxygen they ignite at roughly 690 to 840 °C and burn away to carbon dioxide.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "If graphite is more stable, why don’t diamonds turn into graphite?",
+      "options": [
+        "A high energy barrier locks the atoms",
+        "Diamond is really the stabler form",
+        "Oxygen in the air protects them",
+        "They do, within a few decades"
+      ],
+      "answer": 0,
+      "explanation": "Diamond is metastable: its atoms are held by strong bonds and a high energy barrier, so the change would take millions to billions of years."
+    }
+  ],
   "tags": [
     "diamond",
     "carbon",

@@ -5,6 +5,20 @@
   "title": "With your naked eye you can see 2.5 million years into the past",
   "emoji": "🌌",
   "body": "On a dark, moonless night the Andromeda Galaxy shows up as a faint, fuzzy smudge in the constellation Andromeda. It lies about 2.5 million light-years away, so the light hitting your eye left it around 2.5 million years ago, roughly when the first members of our genus Homo were appearing. It is one of the most distant things most people can see without a telescope; the Persian astronomer al-Sufi described it as a “small cloud” over a thousand years ago.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Which naked-eye object lets you see 2.5 million years into the past?",
+      "options": [
+        "The Andromeda Galaxy",
+        "The centre of the Milky Way",
+        "The Moon",
+        "The nearest star to the Sun"
+      ],
+      "answer": 0,
+      "explanation": "On a dark, moonless night the Andromeda Galaxy shows as a faint smudge. Its light left about 2.5 million years ago, roughly when the first members of our genus Homo were appearing."
+    }
+  ],
   "tags": [
     "galaxies",
     "andromeda",

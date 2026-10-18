@@ -5,6 +5,18 @@
   "title": "Basque has no known relatives among the world’s languages",
   "emoji": "🧩",
   "body": "Basque, spoken by roughly 800,000 people in northern Spain and southwestern France, is a language isolate. Although it is surrounded by Romance languages, it is not Indo-European, and repeated attempts to link it to other families have not convinced most linguists. The mainstream view is that early forms of Basque were already spoken in the region before Indo-European languages arrived.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Roughly how many people speak Basque?",
+      "min": 0,
+      "max": 3000000,
+      "step": 10000,
+      "answer": 800000,
+      "unit": "speakers",
+      "explanation": "Roughly 800,000, in northern Spain and southwestern France. Surrounded by Romance languages, Basque is not Indo-European and has no known relatives."
+    }
+  ],
   "tags": [
     "language",
     "basque",

@@ -5,6 +5,20 @@
   "title": "Helium was discovered on the Sun before it was found on Earth",
   "emoji": "🎈",
   "body": "During a total solar eclipse in August 1868, astronomers studying the Sun’s glowing outer layers with spectroscopes spotted a bright yellow line that didn’t match any known element. Norman Lockyer proposed it came from a new element and named it after Helios, the Greek word for the Sun. Helium wasn’t isolated on Earth until 1895, when William Ramsay and others found it seeping from a uranium mineral. It is now known to be the second most abundant element in the universe.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "How did astronomers first detect helium in 1868?",
+      "options": [
+        "Gas seeping from a uranium mineral",
+        "A yellow line in the Sun’s spectrum",
+        "Bubbles in a balloon of hot air",
+        "Its glow inside a lightning bolt"
+      ],
+      "answer": 1,
+      "explanation": "During the August 1868 total eclipse, spectroscopes showed a bright yellow line matching no known element. Lockyer named it after Helios, the Sun; it was found on Earth only in 1895."
+    }
+  ],
   "tags": [
     "helium",
     "elements",

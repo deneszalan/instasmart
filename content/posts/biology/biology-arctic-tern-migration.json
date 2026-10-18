@@ -5,6 +5,18 @@
   "title": "Arctic terns fly roughly 70,000 km a year to enjoy two summers",
   "emoji": "🐦",
   "body": "Arctic terns breed around the Arctic, then fly to the coast of Antarctica for the southern summer and back again about six months later. Tiny tracking devices have measured average round trips of about 70,900 km for birds nesting in Iceland and Greenland, and one tagged bird from England covered roughly 96,000 km in ten months. Weighing only around 100 grams, they make the longest known migrations in the animal kingdom.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How much does an Arctic tern weigh?",
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "answer": 100,
+      "unit": "g",
+      "explanation": "Only around 100 grams, yet it makes the longest known migration in the animal kingdom: one tagged bird covered roughly 96,000 km in ten months."
+    }
+  ],
   "tags": [
     "birds",
     "migration",

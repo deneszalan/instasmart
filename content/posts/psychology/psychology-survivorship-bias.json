@@ -20,6 +20,17 @@
       "type": "text",
       "heading": "Everyday versions",
       "text": "‘They don’t make them like they used to’ forgets that the flimsy old products broke and were thrown away. Only the sturdy survivors are left to admire."
+    },
+    {
+      "type": "quiz",
+      "question": "Why do old products seem sturdier than new ones?",
+      "options": [
+        "Only the sturdy old ones survived",
+        "Factories used thicker metal then",
+        "Old owners took better care of them"
+      ],
+      "answer": 0,
+      "explanation": "Survivorship bias: the flimsy old products broke and were thrown away, so only the sturdy survivors are left to admire. The failures quietly drop out of view."
     }
   ],
   "tags": [

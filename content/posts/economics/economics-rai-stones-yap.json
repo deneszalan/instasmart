@@ -5,6 +5,18 @@
   "title": "On Yap, giant stone money changed hands without moving",
   "emoji": "🪨",
   "body": "On the Pacific island of Yap, large carved limestone discs called rai, quarried far away on Palau and up to 3.6 metres across, were used for important ceremonial exchanges. Many were too heavy to move, so ownership passed by public agreement and was remembered in oral history. One stone, said to have sunk during transport, reportedly kept its value because everyone knew who owned it. Economists compare it to modern money, which is mostly a record in a ledger.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How wide could the biggest rai stones be?",
+      "min": 0,
+      "max": 10,
+      "step": 0.1,
+      "answer": 3.6,
+      "unit": "m",
+      "explanation": "The largest discs were up to 3.6 metres across, quarried far away on Palau. Many were too heavy to move, so ownership passed by public agreement."
+    }
+  ],
   "tags": [
     "money",
     "yap",

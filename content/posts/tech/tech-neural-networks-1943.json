@@ -7,6 +7,18 @@
   "body": "Today’s AI boom rests on an old idea. In 1943 Warren McCulloch and Walter Pitts showed how simplified on-off neurons could compute logic, and in 1958 Frank Rosenblatt unveiled the perceptron, which learned to classify simple patterns by adjusting the strength of its connections. Interest rose and fell for decades before more data, better training methods and fast graphics chips made deep networks work in the 2010s.",
   "slides": [
     {
+      "type": "order",
+      "heading": "Oldest first",
+      "items": [
+        "McCulloch and Pitts model neurons",
+        "Rosenblatt unveils the perceptron",
+        "Minsky and Papert’s Perceptrons book",
+        "Backpropagation is popularised",
+        "AlexNet wins ImageNet"
+      ],
+      "explanation": "1943 McCulloch and Pitts, 1958 the perceptron, 1969 the Perceptrons book and a long lull, 1986 backpropagation, 2012 AlexNet and the deep learning era."
+    },
+    {
       "type": "text",
       "heading": "1969: the setback",
       "text": "Marvin Minsky and Seymour Papert’s book Perceptrons showed a single-layer perceptron cannot learn even XOR, and interest in the approach faded for years."

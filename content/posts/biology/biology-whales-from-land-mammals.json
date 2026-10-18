@@ -7,6 +7,17 @@
   "body": "Around 50 million years ago, the ancestors of whales were four-legged, even-toed mammals living near the shores of an ancient sea in what is now Pakistan and India. Fossils show a gradual move into the water over millions of years: legs shrank, nostrils shifted up the head to become blowholes, and tails turned into powerful flukes. Molecular studies show that their closest living relatives are hippopotamuses.",
   "slides": [
     {
+      "type": "order",
+      "heading": "Oldest first",
+      "items": [
+        "Pakicetus, a wolf-like animal",
+        "Ambulocetus, the ‘walking whale’",
+        "Basilosaurus, a fully aquatic giant",
+        "Today’s whales"
+      ],
+      "explanation": "Pakicetus, about 48.5 million years ago; Ambulocetus, about 48; Basilosaurus, about 41–34. Legs shrank and tails became flukes as the lineage took to the sea."
+    },
+    {
       "type": "text",
       "heading": "Pakicetus, ~48.5 Mya",
       "text": "A wolf-like animal about 1–2 m long that lived in and around water. Its ear bones already had a shape found only in whales."

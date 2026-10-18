@@ -7,6 +7,18 @@
   "body": "In August 1791, enslaved people in the French colony of Saint-Domingue rose up. After more than a decade of war, they declared independence on 1 January 1804, creating Haiti: one of the only states in history born from a slave rebellion and ruled by the formerly enslaved. But France withheld recognition, and the price Haiti was later forced to pay shaped its economy for more than a century.",
   "slides": [
     {
+      "type": "order",
+      "heading": "Earliest first",
+      "items": [
+        "Uprising begins in Saint-Domingue",
+        "Haiti declares independence",
+        "France demands 150 million francs",
+        "The debt is cut to 60 million francs",
+        "The related loans are finally paid off"
+      ],
+      "explanation": "The uprising began in 1791, independence came on 1 January 1804, France’s demand in 1825, the cut to 60 million in 1838, and the loans were cleared in 1947."
+    },
+    {
       "type": "text",
       "heading": "1825: terms at gunpoint",
       "text": "French warships delivered King Charles X’s terms: recognition for 150 million francs, to compensate ex-colonists for lost property, including enslaved people."

@@ -20,6 +20,17 @@
       "type": "text",
       "heading": "An ancient design",
       "text": "Tardigrades are an old lineage. The earliest known tardigrade fossil dates from the Cambrian period, some 500 million years ago."
+    },
+    {
+      "type": "quiz",
+      "question": "In the 2007 space experiment, what killed many of the dried tardigrades?",
+      "options": [
+        "Unfiltered solar ultraviolet light",
+        "The vacuum alone",
+        "The heat of re-entry"
+      ],
+      "answer": 0,
+      "explanation": "The vacuum alone had no significant effect, but adding unfiltered solar UV killed many of the tuns, though some still revived when rehydrated on Earth."
     }
   ],
   "tags": [

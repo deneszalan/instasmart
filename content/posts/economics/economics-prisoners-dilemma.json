@@ -20,6 +20,18 @@
       "type": "text",
       "heading": "The lesson",
       "text": "When people expect to meet again, cooperation can pay. That is one reason reputation, repeat customers and long-term contracts matter so much."
+    },
+    {
+      "type": "quiz",
+      "question": "Which strategy won Axelrod’s repeated-game tournaments?",
+      "options": [
+        "Tit for tat: cooperate, then copy",
+        "Always betray",
+        "Always stay silent",
+        "Betray at random"
+      ],
+      "answer": 0,
+      "explanation": "Tit for tat cooperates first, then copies whatever the other player did last. When people expect to meet again, cooperation can pay."
     }
   ],
   "tags": [

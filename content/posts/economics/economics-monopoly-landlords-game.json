@@ -5,6 +5,14 @@
   "title": "Monopoly began as a board game warning against landlords",
   "emoji": "🎲",
   "body": "In 1904 Lizzie Magie, a follower of economist Henry George, patented The Landlord’s Game to show how owning land lets landlords grow rich from rents while tenants grow poor. She designed two sets of rules: one where players race to build monopolies, and one where everyone is rewarded as wealth is created. Homemade versions spread for decades before Charles Darrow sold a variant to Parker Brothers in 1935 as Monopoly.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Magie’s game came with a twist that Monopoly dropped. What was it?",
+      "answer": "A second rule set where everyone is rewarded",
+      "detail": "One rule set had players race to build monopolies; the other rewarded everyone as wealth was created. Charles Darrow sold a variant to Parker Brothers in 1935."
+    }
+  ],
   "tags": [
     "monopoly",
     "boardgames",

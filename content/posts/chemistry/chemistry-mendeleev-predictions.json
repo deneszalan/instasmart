@@ -12,6 +12,17 @@
       "text": "He called the missing elements eka-aluminium, eka-boron and eka-silicon, using the Sanskrit word for “one” to mean one place below a known element."
     },
     {
+      "type": "order",
+      "heading": "Earliest first",
+      "items": [
+        "Mendeleev publishes his table",
+        "Gallium is discovered",
+        "Scandium is discovered",
+        "Germanium is discovered"
+      ],
+      "explanation": "The table came in 1869. Gallium turned up in 1875, scandium in 1879 and germanium in 1886, each matching Mendeleev’s forecasts closely."
+    },
+    {
       "type": "text",
       "heading": "Gallium, 1875",
       "text": "Gallium’s discoverer measured its density as 4.7 g/cm³. Mendeleev wrote suggesting he remeasure. The new value was 5.9, exactly as predicted."

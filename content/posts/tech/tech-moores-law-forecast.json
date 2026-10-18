@@ -5,6 +5,20 @@
   "title": "Moore’s law was never a law of nature, it was a forecast",
   "emoji": "📈",
   "body": "In 1965 Gordon Moore, who later co-founded Intel, noticed that the number of components on a chip was doubling about every year and predicted the trend would continue. In 1975 he revised the pace to roughly every two years. The trend held for decades partly because the industry planned around it, turning a prediction into a target. As transistors near atomic scales, the doubling has slowed and its future is debated.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why did Moore’s forecast hold for decades?",
+      "options": [
+        "The industry treated it as a target",
+        "Physics guarantees the doubling",
+        "Governments required it by law",
+        "Silicon is an unlimited resource"
+      ],
+      "answer": 0,
+      "explanation": "The trend held partly because the industry planned around it, turning a prediction into a target. In 1975 Moore revised the pace to roughly every two years."
+    }
+  ],
   "tags": [
     "moore",
     "chips",

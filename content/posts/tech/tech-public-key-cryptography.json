@@ -12,6 +12,17 @@
       "text": "Both sides start with a public colour and each mixes in a secret one. They swap mixes and add their own secret again, ending with the same colour no onlooker can unmix."
     },
     {
+      "type": "order",
+      "heading": "Oldest first",
+      "items": [
+        "GCHQ finds the ideas in secret",
+        "Diffie and Hellman publish key exchange",
+        "Rivest, Shamir and Adleman invent RSA",
+        "GCHQ’s work is declassified"
+      ],
+      "explanation": "GCHQ got there first in the early 1970s but kept it secret; Diffie–Hellman came in 1976, RSA in 1977, and the GCHQ work stayed classified until 1997."
+    },
+    {
       "type": "text",
       "heading": "Published in 1976",
       "text": "Whitfield Diffie and Martin Hellman published their key exchange in 1976. In 1977, Rivest, Shamir and Adleman invented RSA, which also handles digital signatures."

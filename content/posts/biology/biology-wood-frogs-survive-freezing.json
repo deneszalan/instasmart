@@ -32,6 +32,17 @@
       "type": "text",
       "heading": "Frozen does not mean dead",
       "text": "This is a specialized survival adaptation. The frog remains alive through conditions that would kill most animals."
+    },
+    {
+      "type": "quiz",
+      "question": "Where does ice form inside a frozen wood frog?",
+      "options": [
+        "Outside its cells",
+        "Inside every cell",
+        "Only in its skin"
+      ],
+      "answer": 0,
+      "explanation": "Ice forms between tissues and around organs, while glucose released by the liver helps protect the insides of cells from freezing and losing water."
     }
   ],
   "tags": [
