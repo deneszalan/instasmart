@@ -1,0 +1,98 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-vanguard-1-oldest-satellite",
+  "field": "space",
+  "title": "A satellite launched in 1958 is still up there: the oldest human-made object in orbit",
+  "emoji": "🛰️",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Vanguard_1_satellite_%28flight_backup%29_-_Udvar-Hazy_Center.JPG/960px-Vanguard_1_satellite_%28flight_backup%29_-_Udvar-Hazy_Center.JPG",
+    "alt": "The flight backup of Vanguard 1 in a museum display case: a small shiny metal sphere with six long thin antennas sticking out.",
+    "credit": "Daderot · Public domain"
+  },
+  "body": "Vanguard 1 went up on 17 March 1958, only the fourth satellite ever to reach orbit and the first to run on solar power. It is a 1.46 kg aluminium ball 15 cm across, which the Soviet leader Nikita Khrushchev mocked as “the grapefruit satellite”. It fell silent in 1964, but it still loops around Earth between 654 and 3,969 km up. Its orbit was first expected to last 2,000 years; the push of sunlight and extra air drag when the Sun is active have cut that to **about 240 years**.",
+  "slides": [
+    {
+      "type": "order",
+      "heading": "Put the first four satellites in launch order",
+      "items": [
+        "Sputnik 1",
+        "Sputnik 2",
+        "Explorer 1",
+        "Vanguard 1"
+      ],
+      "explanation": "Two Soviet satellites, then two American ones. Of the four, only Vanguard 1 is still in orbit."
+    },
+    {
+      "type": "stat",
+      "value": "1.46 kg",
+      "label": "the mass of the whole satellite, an aluminium sphere 15 cm wide",
+      "text": "Its antennas span about 0.91 m. Khrushchev’s “grapefruit” jibe was about how small and light it was."
+    },
+    {
+      "type": "chart",
+      "heading": "How long Vanguard 1 should stay in orbit, in years",
+      "items": [
+        {
+          "label": "First estimate",
+          "value": 2000
+        },
+        {
+          "label": "Revised estimate",
+          "value": 240,
+          "emphasis": true
+        }
+      ],
+      "unit": "years",
+      "note": "The revised figure is approximate: re-entry is expected late in the 22nd century"
+    },
+    {
+      "type": "text",
+      "heading": "The first solar-powered satellite",
+      "text": "Six solar cells on its body powered a 5 mW transmitter for more than six years. Its battery-powered transmitter, by contrast, sent tracking signals for only about 20 days."
+    },
+    {
+      "type": "timeline",
+      "heading": "A long life in orbit",
+      "events": [
+        {
+          "when": "17 Mar 1958",
+          "text": "Launched into orbit"
+        },
+        {
+          "when": "May 1964",
+          "text": "Last signals heard, in Quito, Ecuador"
+        },
+        {
+          "when": "Apr 2026",
+          "text": "Imaged by a Delft University telescope"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Vanguard 1’s orbit shrank faster than expected. What did that reveal?",
+      "options": [
+        "The upper air was denser",
+        "Earth’s gravity is weaker",
+        "Meteoroids kept hitting it",
+        "The Moon was pulling it down"
+      ],
+      "answer": 0,
+      "explanation": "Atmospheric pressure, and so drag and orbital decay, were higher than anticipated. Tracking its orbit also helped measure the shape of Earth."
+    }
+  ],
+  "tags": [
+    "satellites",
+    "orbits",
+    "spacerace"
+  ],
+  "source": {
+    "label": "Wikipedia: Vanguard 1",
+    "url": "https://en.wikipedia.org/wiki/Vanguard_1"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

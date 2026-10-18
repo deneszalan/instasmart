@@ -1,0 +1,64 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "psychology-cafe-wall-illusion",
+  "field": "psychology",
+  "title": "The tiles on a Bristol café make perfectly parallel lines look like wedges",
+  "emoji": "☕",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/808_Bristol_Caf%C3%A9_Wall_Illusion_-_March_2026.jpg/960px-808_Bristol_Caf%C3%A9_Wall_Illusion_-_March_2026.jpg",
+    "alt": "A corner café on St Michael's Hill in Bristol with rows of green and cream tiles under its window and a sign reading ‘The Original Cafe Wall Illusion’.",
+    "credit": "Captain Galaxy · CC BY 4.0"
+  },
+  "body": "At the bottom of St Michael’s Hill in Bristol, a café wall is covered in staggered rows of dark and light tiles, with thin grout lines between the rows. Every grout line is straight and parallel to the next, yet they seem to tilt, closing into long wedges. Steve Simpson, a member of the psychologist Richard Gregory’s lab, noticed the effect there, and Gregory named it the café wall illusion in the 1970s. The pattern only works through brightness: swap the black and white for two colours of equal brightness and the tilt disappears.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CafeWall.jpg/960px-CafeWall.jpg",
+      "alt": "Richard Gregory, an elderly man with white hair and a walking stick, standing beside the green and cream tiled wall of the original café in Bristol.",
+      "caption": "Richard Gregory visiting the original café wall on St Michael’s Hill in February 2010.",
+      "fit": "cover",
+      "credit": "StevenBattle · CC BY-SA 3.0"
+    },
+    {
+      "type": "flow",
+      "heading": "How the pattern is built",
+      "steps": [
+        { "icon": "⬛", "label": "Rows of alternating dark and light tiles" },
+        { "icon": "↔️", "label": "Each row staggered against the next" },
+        { "icon": "➖", "label": "Grout lines of a shade in between" },
+        { "icon": "📐", "label": "The parallel lines appear to slope" }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Seen vs measured",
+      "left": { "label": "What you see", "text": "Grout lines that slope in alternate directions, as if the rows were tapering wedges." },
+      "right": { "label": "What’s there", "text": "Horizontal lines, all straight and exactly parallel. A ruler laid along any of them shows it." }
+    },
+    {
+      "type": "reveal",
+      "prompt": "Replace the dark and light tiles with two colours of the same brightness. What happens to the tilt?",
+      "answer": "It disappears",
+      "detail": "The illusion depends on contrast in brightness. Researchers have also found that the contrast between tiles and grout sets which way the lines seem to tilt."
+    },
+    {
+      "type": "match",
+      "heading": "One illusion, three names",
+      "pairs": [
+        { "left": "Münsterberg illusion", "right": "Described in 1894" },
+        { "left": "Kindergarten illusion", "right": "A. H. Pierce, 1898" },
+        { "left": "Café wall illusion", "right": "Richard Gregory, 1970s" }
+      ],
+      "explanation": "Münsterberg described a version in 1894 and Pierce named it the kindergarten illusion in 1898. Gregory’s name, after the café, is the one used today."
+    },
+    {
+      "type": "text",
+      "heading": "Why vision gets it wrong",
+      "text": "Early explanations pointed to irradiation: a bright area looks bigger than an equal dark one. Later work found that part of the effect remains with optical and retinal factors removed, so some of it happens in the brain. A building in Melbourne’s Docklands is clad in the pattern."
+    }
+  ],
+  "tags": ["illusions", "perception", "vision"],
+  "source": { "label": "Wikipedia: Café wall illusion", "url": "https://en.wikipedia.org/wiki/Caf%C3%A9_wall_illusion" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

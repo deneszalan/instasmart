@@ -1,0 +1,66 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-marquis-yi-two-tone-bells",
+  "field": "music",
+  "title": "Each bell in a 2,400-year-old Chinese set rings two different notes",
+  "emoji": "🔔",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Two_Tone_Set-bells_of_Marquis_Yi_of_Zeng_%2810166313655%29.jpg/960px-Two_Tone_Set-bells_of_Marquis_Yi_of_Zeng_%2810166313655%29.jpg",
+    "alt": "A large bronze bell from the tomb of Marquis Yi of Zeng, studded with rows of knobs and a flat, cut-away mouth, hanging by a bronze animal bracket from a red and black lacquered beam.",
+    "credit": "Gary Todd · CC0"
+  },
+  "body": "Marquis Yi ruled the small state of Zeng, in what is now Hubei province in China, and died around 430 BC. When his tomb was excavated in 1978 it held a complete ceremonial set of bronze bells, hung on wooden beams and in near-perfect condition. These zhong bells are not round in cross-section but **lens-shaped**, with a cut-away mouth, and that shape gives each one two pitches: strike the centre for the main note, or a corner for a second note a major or minor third higher. Together the set covers five octaves and is fully chromatic across the middle three.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How many bells are in the Marquis Yi set?",
+      "min": 5,
+      "max": 150,
+      "step": 1,
+      "answer": 65,
+      "explanation": "65 bells. Zhou-dynasty sets usually had between 13 and 64."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Two_Tone_Set-bells_of_Marquis_Yi_of_Zeng_%2810166273994%29.jpg/960px-Two_Tone_Set-bells_of_Marquis_Yi_of_Zeng_%2810166273994%29.jpg",
+      "alt": "The whole set of bronze bells of Marquis Yi on display, hanging in rows from red and black beams in an L-shaped frame held up by small bronze human figures.",
+      "caption": "The full set at the Hubei Provincial Museum in Wuhan. Wooden beams set at right angles carry the bells, propped up by six bronze figures with raised arms.",
+      "fit": "cover",
+      "credit": "Gary Todd · CC0"
+    },
+    {
+      "type": "flow",
+      "heading": "One bell, two notes",
+      "steps": [
+        { "icon": "🔔", "label": "A lens-shaped bell, not a round one" },
+        { "icon": "🎯", "label": "Strike the centre: the main note" },
+        { "icon": "↔️", "label": "Strike a corner: a note a third higher" },
+        { "icon": "🎶", "label": "65 bells, five octaves" }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Music for rulers",
+      "text": "Bell sets like this were organised during the Zhou dynasty, which lasted from 1046 to 256 BC. They were status symbols for the upper class and sat at the heart of ritual and court music. Musicians today play a modern replica of the Marquis Yi set at the Hubei museum."
+    },
+    {
+      "type": "quiz",
+      "question": "The original bells have been played only three times since 1978. What was the most recent occasion?",
+      "options": [
+        "Hong Kong’s return in 1997",
+        "The 2008 Beijing Olympics",
+        "The museum’s opening",
+        "A millennium concert in 2000"
+      ],
+      "answer": 0,
+      "explanation": "They rang for the 1997 ceremony marking Hong Kong’s return to China. Musicians now perform on a modern replica."
+    }
+  ],
+  "tags": ["china", "bells", "instruments", "archaeology"],
+  "source": {
+    "label": "Wikipedia: Bianzhong",
+    "url": "https://en.wikipedia.org/wiki/Bianzhong"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

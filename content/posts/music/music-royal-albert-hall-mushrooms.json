@@ -1,0 +1,65 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-royal-albert-hall-mushrooms",
+  "field": "music",
+  "title": "The Royal Albert Hall’s echo took 98 years and a ceiling of giant ‘mushrooms’ to fix",
+  "emoji": "🍄",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Fibreglass_acoustic_diffusing_discs_at_the_Royal_Albert_Hall_-_geograph.org.uk_-_7667667.jpg/960px-Fibreglass_acoustic_diffusing_discs_at_the_Royal_Albert_Hall_-_geograph.org.uk_-_7667667.jpg",
+    "alt": "Dozens of large round fibreglass discs hanging below the domed ceiling of the Royal Albert Hall, lit pink and purple above the tiers of boxes.",
+    "credit": "Marathon · CC BY-SA 2.0"
+  },
+  "body": "Queen Victoria opened London’s Royal Albert Hall on 29 March 1871, and its acoustic problems became obvious at the very first concert: the huge oval hall under its glass dome threw back a strong echo. A canvas awning hung below the dome didn’t cure it, and nor did fluted aluminium panels in 1949. The fix finally came in **1969**, when large fibreglass acoustic diffusing discs, nicknamed ‘mushrooms’ or ‘flying saucers’, were hung below the ceiling to scatter the sound instead of letting it bounce straight back.",
+  "slides": [
+    {
+      "type": "order",
+      "heading": "Put the echo fixes in order, first to last",
+      "items": [
+        "A canvas awning below the dome",
+        "Fluted aluminium panels",
+        "Fibreglass ‘mushrooms’"
+      ],
+      "explanation": "The awning came first and also kept the sun off the audience. The aluminium panels replaced it in 1949, and the discs went up in 1969."
+    },
+    {
+      "type": "quote",
+      "text": "The only place where a British composer could be sure of hearing his work twice.",
+      "attribution": "Old joke about the Royal Albert Hall’s echo"
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Royal_Albert_Hall_-_Central_View_169.jpg/960px-Royal_Albert_Hall_-_Central_View_169.jpg",
+      "alt": "The inside of the Royal Albert Hall seen from a box: red tiers of seats curving round the arena, the great organ behind the stage, and rows of pale discs hanging from the ceiling.",
+      "caption": "The hall from the Grand Tier. It seats 5,272, and behind the stage stands the organ known as the ‘Voice of Jupiter’.",
+      "fit": "cover",
+      "credit": "Colin · CC BY-SA 4.0"
+    },
+    {
+      "type": "place",
+      "question": "In what year were the ‘mushrooms’ finally hung?",
+      "min": 1871,
+      "max": 2000,
+      "step": 1,
+      "answer": 1969,
+      "format": "year",
+      "ends": ["Opening, 1871", "2000"],
+      "hints": [
+        { "label": "Proms arrive", "value": 1941 }
+      ],
+      "explanation": "1969, 98 years after the hall opened. Until then the acoustics were never properly tackled."
+    },
+    {
+      "type": "stat",
+      "value": "9,997",
+      "label": "pipes in the hall’s organ, the ‘Voice of Jupiter’, spread over 147 stops",
+      "text": "The Proms have been held in the hall every summer since 1941, after their old home, the Queen’s Hall, was destroyed in an air raid."
+    }
+  ],
+  "tags": ["acoustics", "london", "concerthalls", "echo"],
+  "source": {
+    "label": "Wikipedia: Royal Albert Hall",
+    "url": "https://en.wikipedia.org/wiki/Royal_Albert_Hall"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

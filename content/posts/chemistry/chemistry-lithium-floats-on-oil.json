@@ -1,0 +1,86 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-lithium-floats-on-oil",
+  "field": "chemistry",
+  "title": "Lithium is so light for a metal that it floats on water, and even on oil",
+  "emoji": "🪶",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Limetal.JPG/960px-Limetal.JPG",
+    "alt": "Three flat pieces of lithium metal on a white surface, their silvery surfaces streaked dark grey and black with tarnish.",
+    "credit": "Dnn87 · CC BY 3.0"
+  },
+  "body": "Lithium is **the least dense metal**, and the least dense solid element of all. Its atoms have a low mass but a large radius, so not much mass is packed into each cubic centimetre. It is one of only three metals that can float on water, and it floats even on the lightest hydrocarbon oils. That makes it awkward to store: it corrodes quickly in air, so it has to be kept in a vacuum, an inert gas or an inert liquid, yet it is not dense enough to sink fully into oils like kerosene.",
+  "slides": [
+    {
+      "type": "place",
+      "question": "Where does the density of lithium sit, in grams per cubic centimetre?",
+      "min": 0,
+      "max": 2,
+      "step": 0.01,
+      "answer": 0.534,
+      "unit": "g/cm³",
+      "ends": [
+        "Lighter",
+        "Denser"
+      ],
+      "hints": [
+        {
+          "label": "Water",
+          "value": 1
+        }
+      ],
+      "explanation": "0.534 g/cm³, about half as dense as water, and the lowest density of any metal under standard conditions."
+    },
+    {
+      "type": "list",
+      "heading": "Why lithium is hard to keep",
+      "style": "bullets",
+      "items": [
+        "In air it dulls to silvery grey, then black",
+        "It is one of the few metals that react with nitrogen",
+        "So it is kept in vacuum, inert gas or oil",
+        "It floats in oil, so petroleum jelly is often used"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Purified_lithium_in_an_ampoule_under_argon%2C_dark_background.png/960px-Purified_lithium_in_an_ampoule_under_argon%2C_dark_background.png",
+      "alt": "A sealed glass tube full of bright silvery chunks of lithium, propped at an angle against a black background.",
+      "caption": "Lithium purified by vacuum distillation and sealed in a glass ampoule filled with argon, which keeps air away from the metal.",
+      "fit": "cover",
+      "credit": "AdvancedTinkering · CC BY-SA 4.0"
+    },
+    {
+      "type": "text",
+      "heading": "Soft, red and ancient",
+      "text": "Lithium metal is soft enough to cut with a knife, and lithium compounds turn a flame a striking crimson. Some of the lithium-7 in the universe was made in nuclear reactions very early in its history."
+    },
+    {
+      "type": "quiz",
+      "question": "The name lithium comes from the Greek word for what?",
+      "options": [
+        "Stone",
+        "Light",
+        "Silver",
+        "Float"
+      ],
+      "answer": 0,
+      "explanation": "From líthos, stone. Johan August Arfwedson is credited with discovering it in 1817, while analysing a mineral called petalite."
+    }
+  ],
+  "tags": [
+    "lithium",
+    "metals",
+    "elements",
+    "density"
+  ],
+  "source": {
+    "label": "Wikipedia: Lithium",
+    "url": "https://en.wikipedia.org/wiki/Lithium"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-ludolph-pi-tombstone",
+  "field": "math",
+  "title": "A mathematician's tombstone in Leiden is carved with π to 35 decimal places",
+  "emoji": "🪦",
+  "cover": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Monument_voor_PI.jpg",
+    "alt": "A carved stone memorial plaque set into a church wall in Leiden, with long rows of digits of pi in its inscription.",
+    "credit": "A.L. Boon · CC BY-SA 3.0"
+  },
+  "body": "**Ludolph van Ceulen** was a fencing master and mathematician who spent a major part of his life calculating π. He used essentially the same method Archimedes had used some 1,700 years earlier, squeezing a circle between polygons with more and more sides, and did all the arithmetic by hand. He published a first result in his 1596 book *Van den Circkel* (\"On the Circle\") and kept going until he had **35 decimal places**. After he died in Leiden in 1610, those digits were engraved on his tombstone. The original stone was eventually lost, and it was restored in 2000 in the city's Pieterskerk.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Titelblad_Ludolf_van_Ceulen%2C_Vanden_circkel_%28Delft_1596%29%2C_met_portret_van_Ludolf_van_Ceulen_op_56-jarige_leeftijd%2C_RP-P-1906-876.jpg/960px-Titelblad_Ludolf_van_Ceulen%2C_Vanden_circkel_%28Delft_1596%29%2C_met_portret_van_Ludolf_van_Ceulen_op_56-jarige_leeftijd%2C_RP-P-1906-876.jpg",
+      "alt": "An engraved title page with an oval portrait of a bearded man in a ruff, coats of arms, and a circle diagram below.",
+      "caption": "The title page of *Van den Circkel* (Delft, 1596), engraved by Jacob de Gheyn II. It shows Van Ceulen at 56, above a circle diagram.",
+      "fit": "cover",
+      "credit": "Jacob de Gheyn II, via Rijksmuseum · CC0"
+    },
+    {
+      "type": "estimate",
+      "question": "How many decimal places of π did Van Ceulen publish in his 1596 book?",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "answer": 20,
+      "unit": "decimals",
+      "explanation": "20 decimal places, in *Van den Circkel*. He later extended the calculation to 35."
+    },
+    {
+      "type": "stat",
+      "value": "35",
+      "label": "decimal places of π engraved on his tombstone",
+      "text": "3.14159265358979323846264338327950288… In Germany π is still sometimes called the \"Ludolphine number\" after him."
+    },
+    {
+      "type": "text",
+      "heading": "Far more than anyone needs",
+      "text": "Even 20 digits is more precision than any practical job could use. If a drawn circle were perfect down to the atomic scale, the jiggling of the ink's molecules would still make most of those digits meaningless. Ever longer calculations of π have been driven mainly by curiosity about the number itself."
+    },
+    {
+      "type": "place",
+      "question": "In what year did Van Ceulen publish Van den Circkel, with his first 20 decimals?",
+      "min": 1530,
+      "max": 1620,
+      "step": 1,
+      "answer": 1596,
+      "format": "year",
+      "ends": [
+        "1530",
+        "1620"
+      ],
+      "hints": [
+        {
+          "label": "Born",
+          "value": 1540
+        },
+        {
+          "label": "In Delft",
+          "value": 1576
+        },
+        {
+          "label": "Professor",
+          "value": 1600
+        },
+        {
+          "label": "Dies",
+          "value": 1610
+        }
+      ],
+      "explanation": "1596. Four years later he became the first professor of mathematics at Leiden's new Engineering School, and he died in Leiden in 1610."
+    },
+    {
+      "type": "text",
+      "heading": "A professor who taught in Dutch",
+      "text": "In 1600 he became the first professor of mathematics at the new Engineering School that Prince Maurice set up at Leiden University. The school taught practical subjects in Dutch rather than Latin, and some university professors refused at first to accept its teachers as equals."
+    },
+    {
+      "type": "scramble",
+      "clue": "Besides mathematics, Van Ceulen taught this sword sport, and opened a school for it in Leiden in 1594.",
+      "answer": "FENCING",
+      "detail": "He taught fencing and mathematics in Delft before moving to Leiden."
+    }
+  ],
+  "tags": [
+    "pi",
+    "geometry",
+    "history",
+    "leiden"
+  ],
+  "source": {
+    "label": "Wikipedia: Ludolph van Ceulen",
+    "url": "https://en.wikipedia.org/wiki/Ludolph_van_Ceulen"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "psychology-ames-room",
+  "field": "psychology",
+  "title": "In an Ames room, a person seems to grow or shrink just by walking across it",
+  "emoji": "🚪",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Ames_House_Illusion_%282537162135%29.jpg/960px-Ames_House_Illusion_%282537162135%29.jpg",
+    "alt": "Inside an empty Ames room at Macalester College: blue walls with white-framed windows, a plywood side wall and a black-and-white checkerboard floor whose squares are subtly distorted.",
+    "credit": "Alan Levine · CC BY-SA 2.0"
+  },
+  "body": "Seen through a peephole, an Ames room looks like an ordinary box-shaped room. In fact it is lopsided: one back corner is much farther from the viewer than the other, and the floor tiles, walls and windows are distorted so that the image reaching the eye matches a normal room. The peephole forces you to use one eye from one fixed spot, which removes the depth cues that would give the trick away. Your vision accepts the room as normal, so the only way to explain the difference is in the people: an adult in the near corner looks like a giant, and one in the far corner looks tiny.",
+  "slides": [
+    {
+      "type": "compare",
+      "heading": "Peephole vs reality",
+      "left": { "label": "Through the peephole", "text": "A rectangular room with square tiles, where two people stand side by side at very different heights." },
+      "right": { "label": "The real shape", "text": "A slanted room: one corner is much farther away, so the person standing there simply looks smaller." }
+    },
+    {
+      "type": "flow",
+      "heading": "Why the far person shrinks",
+      "steps": [
+        { "icon": "📏", "label": "One corner is much farther from your eye" },
+        { "icon": "🧍", "label": "A person there casts a smaller image" },
+        { "icon": "👁️", "label": "The distorted room still looks like a box" },
+        { "icon": "🤏", "label": "So the person, not the room, seems small" }
+      ]
+    },
+    {
+      "type": "list",
+      "heading": "What the peephole takes away",
+      "style": "bullets",
+      "items": [
+        "Stereopsis: depth from comparing two eyes",
+        "Motion parallax: depth from moving your head",
+        "Any view of the room’s true outside shape"
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "Ames’s original design included a groove with a ball in it. What did the ball appear to do?",
+      "answer": "Roll uphill",
+      "detail": "Richard Gregory linked this to ‘gravity hills’ such as the Electric Brae in Scotland, where the surroundings make a gentle downhill slope look like an uphill one."
+    },
+    {
+      "type": "text",
+      "heading": "Hollywood’s favourite room",
+      "text": "The Lord of the Rings films used Ames room sets to make hobbits look small beside Gandalf. One appears in Willy Wonka and the Chocolate Factory (1971), and another makes Joel look child-sized in Eternal Sunshine of the Spotless Mind (2004). The American scientist Adelbert Ames Jr. patented the design in 1940."
+    },
+    {
+      "type": "text",
+      "heading": "A finding that didn’t hold up",
+      "text": "One study reported a ‘Honi phenomenon’: married people saw less distortion when their own spouse walked across the room. A later study found the effect less reliable, so the shrinking illusion is solid but the spouse version is not well established."
+    },
+    {
+      "type": "quiz",
+      "question": "Why must you look into an Ames room with one eye through a small hole?",
+      "options": ["To remove depth cues", "To dim the light", "To magnify the room", "To hide the walls’ colour"],
+      "answer": 0,
+      "explanation": "With one eye at one fixed spot you lose two-eyed depth and the shifts you get by moving your head, so the slanted room can pass for a normal one."
+    }
+  ],
+  "tags": ["illusions", "perception", "vision"],
+  "source": { "label": "Wikipedia: Ames room", "url": "https://en.wikipedia.org/wiki/Ames_room" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

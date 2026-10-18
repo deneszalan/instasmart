@@ -1,0 +1,109 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-harrison-h4-five-seconds",
+  "field": "engineering",
+  "title": "Harrison's H4 sea watch lost just 5 seconds on an 81-day voyage to Jamaica",
+  "emoji": "⌚",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Harrison_H4_clockwork_1.jpg/960px-Harrison_H4_clockwork_1.jpg",
+    "alt": "The gilded, intricately engraved clockwork of John Harrison's H4 marine timekeeper, displayed on a clear stand.",
+    "credit": "Mike Peel · CC BY-SA 4.0"
+  },
+  "body": "At sea you can work out your longitude by comparing local time with the time at a known reference place, because the Earth turns through 360 degrees every 24 hours. The hard part was a clock that kept time on a constantly moving ship, through changes in temperature, pressure and humidity. Britain's Longitude Act of 1714 offered big rewards for a solution. The joiner and clockmaker **John Harrison** built three large sea clocks, then a watch about 13 cm across, **H4**, dated 1759. On its 1761 trial voyage to Kingston, Jamaica, it was just 5 seconds slow after 81 days, an error of about one nautical mile.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The Longitude Act of 1714 offered a reward for a way to find longitude at sea. Up to how much?",
+      "min": 0,
+      "max": 100000,
+      "step": 1000,
+      "answer": 20000,
+      "unit": "£",
+      "explanation": "Up to £20,000, about £3.83 million in 2025 money. Harrison never received the official award itself."
+    },
+    {
+      "type": "timeline",
+      "heading": "The race for longitude",
+      "events": [
+        {
+          "when": "1714",
+          "text": "Longitude Act offers up to £20,000"
+        },
+        {
+          "when": "1736",
+          "text": "H1 sails to Lisbon on trial"
+        },
+        {
+          "when": "1759",
+          "text": "The date engraved on H4"
+        },
+        {
+          "when": "1761",
+          "text": "H4's trial voyage to Jamaica"
+        },
+        {
+          "when": "1773",
+          "text": "Parliament pays Harrison £8,750"
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "heading": "What Harrison was paid, in total £23,065",
+      "items": [
+        {
+          "label": "Board of Longitude, in parts",
+          "value": 4315
+        },
+        {
+          "label": "Parliament, 1765",
+          "value": 10000
+        },
+        {
+          "label": "Parliament, 1773",
+          "value": 8750,
+          "emphasis": true
+        }
+      ],
+      "unit": "£",
+      "note": "He never received the official award itself; he was about 80 by the final payment."
+    },
+    {
+      "type": "text",
+      "heading": "Captain Cook's copy",
+      "text": "The watchmaker Larcum Kendall made a copy of H4, called K1. Captain James Cook took it on his second and third voyages, having used the slower lunar-distance method on his first, and his log praised the watch."
+    },
+    {
+      "type": "text",
+      "heading": "Still at Greenwich",
+      "text": "Harrison's H1, H2, H3 and H4 have been restored and are on display at the Royal Observatory, Greenwich. The three big sea clocks still run. H4 is kept stopped, because running it would need oil."
+    },
+    {
+      "type": "quiz",
+      "question": "H3 never won the prize, but it gave the world which invention?",
+      "options": [
+        "The bimetallic strip",
+        "The quartz crystal clock",
+        "The pendulum clock",
+        "The mainspring"
+      ],
+      "answer": 0,
+      "explanation": "H3 gave us the bimetallic strip, Harrison's most widespread invention, and the caged roller bearing."
+    }
+  ],
+  "tags": [
+    "clocks",
+    "navigation",
+    "longitude",
+    "inventors"
+  ],
+  "source": {
+    "label": "Wikipedia: John Harrison",
+    "url": "https://en.wikipedia.org/wiki/John_Harrison"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

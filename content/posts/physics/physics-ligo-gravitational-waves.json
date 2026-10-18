@@ -1,0 +1,134 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-ligo-gravitational-waves",
+  "field": "physics",
+  "title": "Two black holes merged and turned about three Suns’ worth of mass into ripples in space",
+  "emoji": "🌊",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/LIGO_Hanford_aerial_05.jpg/960px-LIGO_Hanford_aerial_05.jpg",
+    "alt": "Aerial view of the LIGO Hanford Observatory: a long straight arm running for kilometres across flat brown desert from a cluster of buildings.",
+    "credit": "LIGO Laboratory · Public domain"
+  },
+  "body": "On 14 September 2015 the two LIGO detectors, at Hanford and Livingston in the US, picked up a signal that lasted about a fifth of a second. It came from two black holes, of about 36 and 29 times the Sun’s mass, spiralling together some 1.4 billion light-years away into one of about 62. The missing mass, about **3 Suns’ worth**, left as gravitational waves: ripples in space-time that stretch and squeeze whatever they pass through. Each detector catches them by bouncing laser light along two 4 km arms and watching for tiny changes in their length.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The detectors are 3,002 km apart. How many milliseconds after Livingston did Hanford see the wave?",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "answer": 7,
+      "unit": "ms",
+      "explanation": "Seven milliseconds, consistent with the light travel time between the two sites: gravitational waves move at the speed of light."
+    },
+    {
+      "type": "chart",
+      "heading": "The collision, in Suns’ worth of mass",
+      "items": [
+        {
+          "label": "Black hole one",
+          "value": 36
+        },
+        {
+          "label": "Black hole two",
+          "value": 29
+        },
+        {
+          "label": "Merged black hole",
+          "value": 62
+        },
+        {
+          "label": "Radiated as waves",
+          "value": 3,
+          "emphasis": true
+        }
+      ],
+      "unit": "Suns",
+      "note": "Best estimates; the radiated mass is 3.0 ± 0.5 Suns"
+    },
+    {
+      "type": "flow",
+      "heading": "How LIGO felt the collision",
+      "steps": [
+        {
+          "icon": "⚫",
+          "label": "Two black holes spiral together and merge"
+        },
+        {
+          "icon": "🌊",
+          "label": "Ripples in space-time spread at light speed"
+        },
+        {
+          "icon": "📏",
+          "label": "Each 4 km laser arm stretches by a sliver"
+        },
+        {
+          "icon": "📈",
+          "label": "Both detectors record the same chirp"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Northern_leg_of_LIGO_interferometer_on_Hanford_Reservation.JPG/960px-Northern_leg_of_LIGO_interferometer_on_Hanford_Reservation.JPG",
+      "alt": "The northern arm of LIGO Hanford: a long, low, pale tunnel running straight to the horizon beside a road across dry grassland.",
+      "caption": "The northern arm of the Hanford detector. Each LIGO observatory is an L-shaped vacuum system 4 km long on each side.",
+      "fit": "cover",
+      "credit": "Umptanum · CC BY-SA 3.0"
+    },
+    {
+      "type": "text",
+      "heading": "A chirp you could hear",
+      "text": "In about eight cycles the signal rose from 35 to 250 hertz, which is in the range of human hearing, so it has been likened to a bird’s chirp. At its peak, the merger gave off more power than all the light from all the stars in the observable universe combined."
+    },
+    {
+      "type": "timeline",
+      "heading": "A century-long wait",
+      "events": [
+        {
+          "when": "1916",
+          "text": "Einstein predicts gravitational waves"
+        },
+        {
+          "when": "14 Sep 2015",
+          "text": "LIGO detects one, days before its formal run"
+        },
+        {
+          "when": "11 Feb 2016",
+          "text": "The detection is announced"
+        },
+        {
+          "when": "2017",
+          "text": "Nobel Prize: Weiss, Barish and Thorne"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "The signal is called GW150914. What does the name stand for?",
+      "options": [
+        "Gravitational wave, 14 Sept 2015",
+        "Galaxy W, catalogue number 150914",
+        "A wave 150,914 light-years long",
+        "Detector GW, event 15, run 914"
+      ],
+      "answer": 0,
+      "explanation": "GW for gravitational wave, then the date it was seen: 2015-09-14. Einstein himself had doubted such tiny waves could ever be detected."
+    }
+  ],
+  "tags": [
+    "gravity",
+    "blackholes",
+    "einstein",
+    "ligo"
+  ],
+  "source": {
+    "label": "Wikipedia: First observation of gravitational waves",
+    "url": "https://en.wikipedia.org/wiki/First_observation_of_gravitational_waves"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-clifton-bridge-recycled-chains",
+  "field": "engineering",
+  "title": "The Clifton bridge was finished after Brunel's death, using a demolished bridge's chains",
+  "emoji": "⛓️",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Clifton_Suspension_Bridge-9350.jpg/960px-Clifton_Suspension_Bridge-9350.jpg",
+    "alt": "The Clifton Suspension Bridge spanning the deep, wooded Avon Gorge in Bristol between two stone towers.",
+    "credit": "Gothick · CC BY-SA 3.0"
+  },
+  "body": "In 1753 a Bristol merchant, William Vick, left £1,000 in his will, to be invested until it grew to £10,000 and could pay for a bridge across the Avon Gorge. Isambard Kingdom Brunel won the design contest in 1831, but the Bristol riots halted work within months, and by 1843 the money had run out and the Act's time limit had passed. The ironwork was sold off in 1851. Brunel died in 1859. The Institution of Civil Engineers decided that finishing the bridge would be a fitting memorial, and in 1860 it bought the chains of Brunel's **Hungerford suspension bridge**, which was being demolished. The Clifton bridge opened on 8 December 1864, 111 years after Vick's will.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How long is the bridge's main span, in metres?",
+      "min": 0,
+      "max": 500,
+      "step": 1,
+      "answer": 214,
+      "unit": "m",
+      "explanation": "214 m, or 702 ft 3 in. Its towers rise 101 m above the river at high water."
+    },
+    {
+      "type": "pictogram",
+      "heading": "The 1829 design contest had 22 entries. Judges threw out 17.",
+      "icon": "📐",
+      "total": 22,
+      "count": 17,
+      "note": "Thomas Telford was asked to pick from the last five, rejected those too, and drew his own."
+    },
+    {
+      "type": "timeline",
+      "heading": "Over a century in the making",
+      "events": [
+        {
+          "when": "1753",
+          "text": "Vick leaves £1,000 for a bridge"
+        },
+        {
+          "when": "1831",
+          "text": "Brunel wins; work begins"
+        },
+        {
+          "when": "1843",
+          "text": "Money runs out; work stops"
+        },
+        {
+          "when": "1859",
+          "text": "Brunel dies"
+        },
+        {
+          "when": "1864",
+          "text": "The bridge opens on 8 December"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "500 tons",
+      "label": "of stone spread over the deck to test it",
+      "text": "The bridge sagged by 7 inches (180 mm), within the expected tolerances."
+    },
+    {
+      "type": "text",
+      "heading": "Whose bridge is it?",
+      "text": "William Barlow and John Hawkshaw, who finished the job, revised Brunel's plan: a wider, higher and sturdier deck, three chains a side instead of two, and towers left in rough stone instead of Egyptian-style decoration. Some argue the design credit should really be theirs."
+    },
+    {
+      "type": "text",
+      "heading": "Rooms nobody knew about",
+      "text": "In 2002 it was found that the abutment on the Leigh Woods side of the gorge isn't solid. It contains 12 vaulted chambers, some up to 11 m high, hidden inside the sandstone-clad pier."
+    },
+    {
+      "type": "quiz",
+      "question": "What happened to the bridge's first ironwork after work stopped in 1843?",
+      "options": [
+        "It went into another Brunel bridge",
+        "It was melted down for cannon",
+        "It was dumped in the gorge",
+        "It rusted away in storage"
+      ],
+      "answer": 0,
+      "explanation": "It was sold in 1851 and used for Brunel's Royal Albert Bridge, on the railway between Plymouth and Saltash."
+    }
+  ],
+  "tags": [
+    "bridges",
+    "brunel",
+    "bristol",
+    "suspensionbridges"
+  ],
+  "source": {
+    "label": "Wikipedia: Clifton Suspension Bridge",
+    "url": "https://en.wikipedia.org/wiki/Clifton_Suspension_Bridge"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

@@ -1,0 +1,126 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-fax-before-telephone",
+  "field": "tech",
+  "title": "Paris and Lyon had a fax service about 11 years before the telephone was invented",
+  "emoji": "📠",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Pantelegrafo_Caselli_Museo_scienza_e_tecnologia_Milano.jpg/960px-Pantelegrafo_Caselli_Museo_scienza_e_tecnologia_Milano.jpg",
+    "alt": "A replica of Caselli's pantelegraph in a glass museum case: a tall green iron frame with a long pendulum rod, on a wooden base beside a clock case.",
+    "credit": "Alessandro Nassiri, Museo scienza e tecnologia Milano · CC BY-SA 4.0"
+  },
+  "body": "Sending a picture down a wire turned out to be easier than sending a voice. In the 1840s the Scottish inventor Alexander Bain patented an \"Electric Printing Telegraph\", one of the first fax-type devices. The Italian physicist Giovanni Caselli then invented the **pantelegraph**, and in 1865 he introduced the first commercial fax service, between Paris and Lyon. That was some 11 years before the telephone was invented. Every fax since works on the same idea: scan a page bit by bit, turn what you see into an electrical signal, and redraw it at the other end in step with the sender.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "In what year did Alexander Bain patent his \"Electric Printing Telegraph\"?",
+      "min": 1800,
+      "max": 1950,
+      "step": 1,
+      "answer": 1843,
+      "format": "year",
+      "explanation": "1843: British patent 9745, granted on 27 May. By 1846 he could reproduce graphic signs in laboratory experiments."
+    },
+    {
+      "type": "timeline",
+      "heading": "Pictures by wire",
+      "events": [
+        {
+          "when": "1843",
+          "text": "Bain patents a printing telegraph"
+        },
+        {
+          "when": "1865",
+          "text": "Caselli's Paris–Lyon fax service"
+        },
+        {
+          "when": "c. 1876",
+          "text": "The telephone is invented"
+        },
+        {
+          "when": "1924",
+          "text": "AT&T sends news photos by wire"
+        },
+        {
+          "when": "1964",
+          "text": "Xerox launches an early modern fax"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "heading": "How an analogue fax sends a page",
+      "steps": [
+        {
+          "icon": "🌀",
+          "label": "The page spins on a drum past a light sensor"
+        },
+        {
+          "icon": "🎵",
+          "label": "Brightness sets the pitch of a tone"
+        },
+        {
+          "icon": "☎️",
+          "label": "The tone travels down the phone line"
+        },
+        {
+          "icon": "🖊️",
+          "label": "The receiver turns it back into pen strokes"
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "heading": "Seconds to send one page",
+      "items": [
+        {
+          "label": "Xerox Magnafax (1966)",
+          "value": 360
+        },
+        {
+          "label": "1980 standard (T.4)",
+          "value": 40
+        },
+        {
+          "label": "Typical Group 3 fax",
+          "value": 10,
+          "emphasis": true
+        }
+      ],
+      "unit": "s",
+      "note": "Magnafax: about six minutes. Group 3: 6 to 15 seconds a page, not counting the handshake."
+    },
+    {
+      "type": "text",
+      "heading": "Not dead yet",
+      "text": "In Japan faxes were still in wide use in 2025, partly because many people prefer handwriting to typing, and you can send one from over 81% of the country's convenience stores. Radio fax also still carries weather charts to ships at sea."
+    },
+    {
+      "type": "quiz",
+      "question": "How does a classic fax machine send a page over a telephone line?",
+      "options": [
+        "As audio-frequency tones",
+        "As a printed sheet by pneumatic tube",
+        "As Morse code tapped by hand",
+        "As a beam of light"
+      ],
+      "answer": 0,
+      "explanation": "The page is scanned into an image and sent as tones, like sound. The receiving machine decodes the tones and prints a copy."
+    }
+  ],
+  "tags": [
+    "fax",
+    "telegraph",
+    "communication",
+    "history"
+  ],
+  "source": {
+    "label": "Wikipedia: Fax",
+    "url": "https://en.wikipedia.org/wiki/Fax"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

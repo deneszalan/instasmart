@@ -1,0 +1,103 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-shoemaker-levy-9-jupiter-impact",
+  "field": "space",
+  "title": "In 1994 we watched a comet, torn apart by Jupiter’s gravity, crash into it piece by piece",
+  "emoji": "☄️",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Impact_site_of_fragment_G.png/960px-Impact_site_of_fragment_G.png",
+    "alt": "Hubble image of Jupiter’s cream and orange cloud bands, with a large dark brown blotch and ring near the top where a comet fragment struck.",
+    "credit": "Hubble Space Telescope Jupiter Imaging Team · Public domain"
+  },
+  "body": "Comet Shoemaker–Levy 9 was the first active comet ever seen orbiting a planet. On 7 July 1992 it passed just over 40,000 km above Jupiter’s cloud tops, and the planet’s tidal forces pulled it apart into a train of fragments up to 2 km across. Two years later, between 16 and 22 July 1994, the pieces slammed one after another into Jupiter’s southern hemisphere at about 60 km/s. It was **the first direct observation of two Solar System bodies colliding**, and the dark scars were more visible than the Great Red Spot for many months.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How many separate impacts did astronomers see as the broken comet hit Jupiter?",
+      "min": 1,
+      "max": 60,
+      "step": 1,
+      "answer": 21,
+      "explanation": "21 distinct impacts were observed, over about a week in July 1994."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Shoemaker-Levy_9_on_1994-05-17.png/960px-Shoemaker-Levy_9_on_1994-05-17.png",
+      "alt": "A long diagonal line of small glowing red blobs on black, each a fragment of the same comet.",
+      "caption": "Hubble’s view of the comet’s icy fragments strung out in a line, months before they hit Jupiter.",
+      "fit": "contain",
+      "credit": "NASA, ESA, H. Weaver and E. Smith (STScI) · Public domain"
+    },
+    {
+      "type": "stat",
+      "value": "6 million",
+      "label": "megatons of TNT: the estimated energy of the largest impact, by fragment G",
+      "text": "That is about 600 times the world’s nuclear arsenal. Even the first impact, fragment A, threw up a fireball plume more than 3,000 km high."
+    },
+    {
+      "type": "scale",
+      "heading": "One fragment and the scar it left",
+      "items": [
+        {
+          "label": "Largest fragments",
+          "value": 2
+        },
+        {
+          "label": "Fragment G’s scar",
+          "value": 12000
+        }
+      ],
+      "unit": "km",
+      "note": "Fragments were up to 2 km across; the spot from fragment G was over 12,000 km wide"
+    },
+    {
+      "type": "timeline",
+      "heading": "A comet’s last years",
+      "events": [
+        {
+          "when": "Early 1970s?",
+          "text": "Probably captured into orbit by Jupiter"
+        },
+        {
+          "when": "July 1992",
+          "text": "Torn apart in a close pass"
+        },
+        {
+          "when": "March 1993",
+          "text": "Discovered by the Shoemakers and Levy"
+        },
+        {
+          "when": "16–22 Jul 1994",
+          "text": "The fragments hit Jupiter"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "The fragments struck the side of Jupiter facing away from Earth. What saw them hit as it happened?",
+      "options": [
+        "The Galileo spacecraft",
+        "Voyager 2",
+        "Astronauts on the Mir station",
+        "A telescope on the Moon"
+      ],
+      "answer": 0,
+      "explanation": "NASA’s Galileo spacecraft, then 1.6 AU from Jupiter, was able to see the impacts as they occurred. The scars later became more visible than the Great Red Spot."
+    }
+  ],
+  "tags": [
+    "jupiter",
+    "comets",
+    "impacts",
+    "hubble"
+  ],
+  "source": {
+    "label": "Wikipedia: Comet Shoemaker–Levy 9",
+    "url": "https://en.wikipedia.org/wiki/Comet_Shoemaker%E2%80%93Levy_9"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

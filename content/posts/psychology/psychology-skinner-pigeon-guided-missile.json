@@ -1,0 +1,65 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "psychology-skinner-pigeon-guided-missile",
+  "field": "psychology",
+  "title": "During World War II, the psychologist B. F. Skinner trained pigeons to steer bombs",
+  "emoji": "🐦",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Rock_dove_-_natures_pics.jpg/960px-Rock_dove_-_natures_pics.jpg",
+    "alt": "A grey feral rock dove, the common city pigeon, with an iridescent green and purple neck, standing on the ground.",
+    "credit": "Alan D. Wilson · CC BY-SA 2.5"
+  },
+  "body": "Skinner studied operant conditioning: behaviour that is rewarded gets repeated. In Project Pigeon he used food rewards to train pigeons to recognise a target and peck at its image. Three lenses in the nose of a glider bomb projected the view ahead onto a pivoting screen, with one to three birds in front of it. If the bomb drifted off course, the target’s image slid towards the edge, the pecks pushed the screen, and sensors turned that movement into steering. A wartime research committee put $25,000 into it, yet, as Skinner put it, no one would take the team seriously, and electronics eventually took over the job.",
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "How a pigeon steered",
+      "steps": [
+        { "icon": "🔭", "label": "Lenses project the target onto a screen" },
+        { "icon": "🐦", "label": "Trained pigeons peck at the target’s image" },
+        { "icon": "↗️", "label": "Off course, the image drifts to the edge" },
+        { "icon": "👆", "label": "Pecks tilt the pivoting screen" },
+        { "icon": "🎯", "label": "Sensors steer the bomb back on target" }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "10,000+",
+      "label": "pecks by one pigeon in 45 minutes",
+      "text": "Training rewarded faster and faster pecking with food, until the birds kept up a furious rate."
+    },
+    {
+      "type": "quote",
+      "text": "Our problem was no one would take us seriously.",
+      "attribution": "B. F. Skinner, on Project Pigeon"
+    },
+    {
+      "type": "order",
+      "heading": "Put the pigeon programme in order",
+      "items": [
+        "Wartime project gets $25,000",
+        "Cancelled on 8 October 1944",
+        "Navy revives it as Project Orcon",
+        "Dropped for electronic guidance",
+        "Skinner wins an Ig Nobel Prize"
+      ],
+      "explanation": "Orcon ran from 1948 until 1953, when electronic guidance proved reliable. The Ig Nobel Peace Prize followed in 2024, awarded to Skinner posthumously."
+    },
+    {
+      "type": "quiz",
+      "question": "When the Navy revived the idea in 1948, it called it Project Orcon. What did Orcon stand for?",
+      "options": ["Organic control", "Ordnance control", "Optical recognition", "Orbital control"],
+      "answer": 0,
+      "explanation": "Organic control: a living guidance system. Early electronic guidance worked in a similar way, with signals and processors in place of the birds."
+    },
+    {
+      "type": "text",
+      "heading": "A prize, eight decades late",
+      "text": "In 2024 Skinner was awarded the Ig Nobel Peace Prize for the project. His daughter Julie Vargas accepted it on his behalf, thanking the organisers ‘for finally acknowledging his most important contribution’."
+    }
+  ],
+  "tags": ["conditioning", "behaviourism", "animals", "worldwar2"],
+  "source": { "label": "Wikipedia: Project Pigeon", "url": "https://en.wikipedia.org/wiki/Project_Pigeon" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

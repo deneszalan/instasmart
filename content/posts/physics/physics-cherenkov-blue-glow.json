@@ -1,0 +1,122 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-cherenkov-blue-glow",
+  "field": "physics",
+  "title": "A nuclear reactor’s blue glow comes from particles outrunning light in water",
+  "emoji": "💙",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Advanced_Test_Reactor.jpg/960px-Advanced_Test_Reactor.jpg",
+    "alt": "The core of the Advanced Test Reactor at Idaho National Laboratory, seen through the water of its pool, glowing an intense blue.",
+    "credit": "Argonne National Laboratory · CC BY-SA 2.0"
+  },
+  "body": "Nothing beats light in a vacuum, but in water light slows to **about 0.75 of its vacuum speed**. Charged particles from a reactor, such as fast electrons, can move faster than that while still staying below the cosmic limit. A charged particle that outruns light in a material sheds a cone of light, much as a supersonic jet leaves a sonic boom. This Cherenkov radiation grows stronger at higher frequencies, so most of it is ultraviolet and the part we can see looks brilliant blue.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "In water, light travels at what share of its speed in a vacuum?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 75,
+      "unit": "%",
+      "explanation": "About 75%, because water’s refractive index is about 1.33. A charged particle moving faster than that, though still slower than light in a vacuum, gives off Cherenkov light."
+    },
+    {
+      "type": "compare",
+      "heading": "Faster than light?",
+      "left": {
+        "label": "Sounds like",
+        "text": "The particles break Einstein’s speed limit."
+      },
+      "right": {
+        "label": "Actually",
+        "text": "They only beat light slowed down by water. Light in a vacuum, c, stays the limit, so relativity is safe."
+      }
+    },
+    {
+      "type": "flow",
+      "heading": "How a reactor pool glows",
+      "steps": [
+        {
+          "icon": "⚛️",
+          "label": "The reactor releases fast charged particles"
+        },
+        {
+          "icon": "💨",
+          "label": "They move faster than light does in water"
+        },
+        {
+          "icon": "📐",
+          "label": "They shed a cone of light, like a sonic boom"
+        },
+        {
+          "icon": "💙",
+          "label": "Mostly ultraviolet, so what we see is blue"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "A sonic boom made of light",
+      "text": "A jet faster than sound piles its sound waves into a cone-shaped shock front. A charged particle faster than light in a material does the same with light. The faster it goes, the wider the cone, so measuring the angle tells physicists how fast the particle was moving."
+    },
+    {
+      "type": "timeline",
+      "heading": "Seeing the blue light",
+      "events": [
+        {
+          "when": "1888–89",
+          "text": "Oliver Heaviside predicts it"
+        },
+        {
+          "when": "1910",
+          "text": "Marie Curie sees blue light in radium"
+        },
+        {
+          "when": "1934",
+          "text": "Pavel Cherenkov detects it"
+        },
+        {
+          "when": "1937",
+          "text": "Tamm and Frank explain it"
+        },
+        {
+          "when": "1958",
+          "text": "All three share the Nobel Prize"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why physicists love it",
+      "text": "Cherenkov light is used to identify particles in accelerator experiments, to catch neutrinos in giant water tanks such as Super-Kamiokande, to check that spent fuel really sits in a reactor’s storage pool, and even to image radiotherapy beams inside patients."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does Cherenkov light look blue rather than red?",
+      "options": [
+        "It grows stronger at higher frequencies",
+        "The particles are blue-hot",
+        "Uranium gives off blue light",
+        "Reactor water is dyed blue"
+      ],
+      "answer": 0,
+      "explanation": "Its strength rises with frequency, so most of it is ultraviolet. Of the part our eyes can see, the blue end is the brightest."
+    }
+  ],
+  "tags": [
+    "light",
+    "nuclear",
+    "relativity",
+    "radiation"
+  ],
+  "source": {
+    "label": "Wikipedia: Cherenkov radiation",
+    "url": "https://en.wikipedia.org/wiki/Cherenkov_radiation"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

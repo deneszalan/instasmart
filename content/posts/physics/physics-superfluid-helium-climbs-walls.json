@@ -1,0 +1,107 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-superfluid-helium-climbs-walls",
+  "field": "physics",
+  "title": "Below 2.17 kelvin, liquid helium climbs out of its cup and drips off the bottom",
+  "emoji": "🥶",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Liquid_helium_Rollin_film.jpg/960px-Liquid_helium_Rollin_film.jpg",
+    "alt": "Black-and-white photo of a small glass cup hanging on wires above a bath of liquid helium, with a drop forming under its base.",
+    "credit": "Alfred Leitner · Public domain"
+  },
+  "body": "Cool helium-4 below **2.17 K**, about two degrees above absolute zero, and part of it becomes a superfluid with zero viscosity. With nothing to slow it, a thin film creeps up the inside wall of a cup, over the rim and down the outside, where it gathers into drops that fall back into the bath until the cup is empty. This happens because huge numbers of helium atoms fall into the same quantum state, a Bose–Einstein condensate, so quantum physics shows up at a size you can see. Pyotr Kapitsa, and separately John Allen and Don Misener, discovered superfluidity in 1937.",
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "How the cup empties itself",
+      "steps": [
+        {
+          "icon": "⬆️",
+          "label": "A film of helium creeps up the inner wall"
+        },
+        {
+          "icon": "↪️",
+          "label": "It flows over the rim"
+        },
+        {
+          "icon": "⬇️",
+          "label": "It runs down the outside"
+        },
+        {
+          "icon": "💧",
+          "label": "Drops fall from the base until it is empty"
+        }
+      ]
+    },
+    {
+      "type": "sort",
+      "heading": "Water or superfluid helium?",
+      "bins": [
+        "Water",
+        "Helium II"
+      ],
+      "items": [
+        {
+          "text": "Stays liquid even at absolute zero",
+          "bin": 1
+        },
+        {
+          "text": "Freezes when cooled at normal pressure",
+          "bin": 0
+        },
+        {
+          "text": "Creeps up and over the rim of its cup",
+          "bin": 1
+        },
+        {
+          "text": "Has viscosity, so it resists flowing",
+          "bin": 0
+        }
+      ],
+      "explanation": "Helium II is the name for superfluid helium-4. Its superfluid part has zero viscosity, and at ordinary pressures it never freezes."
+    },
+    {
+      "type": "stat",
+      "value": "25 bar",
+      "label": "the pressure it takes to make helium-4 solid at all",
+      "text": "Below that pressure, helium-4 stays liquid even at absolute zero: the only way to make it solid is to squeeze it hard."
+    },
+    {
+      "type": "text",
+      "heading": "Two liquids in one",
+      "text": "Physicists describe helium below 2.17 K with a two-fluid model: a normal liquid mixed with a superfluid part that has zero viscosity and zero entropy. As the temperature drops, more and more of the liquid is superfluid."
+    },
+    {
+      "type": "text",
+      "heading": "A fountain with no pump",
+      "text": "Close one end of a thin tube with a plug of extremely fine pores, called a superleak, stand it in a bath of superfluid helium and warm it. Helium flows up through the tube and squirts out of the top like a fountain."
+    },
+    {
+      "type": "quiz",
+      "question": "What makes helium a superfluid?",
+      "options": [
+        "Its atoms share one quantum state",
+        "It turns into a plasma",
+        "Its atoms bond into long chains",
+        "It becomes a metal"
+      ],
+      "answer": 0,
+      "explanation": "Superfluid helium-4 forms when many of its atoms fall into the same quantum state, a Bose–Einstein condensate."
+    }
+  ],
+  "tags": [
+    "helium",
+    "quantum",
+    "cold",
+    "superfluids"
+  ],
+  "source": {
+    "label": "Wikipedia: Superfluid helium-4",
+    "url": "https://en.wikipedia.org/wiki/Superfluid_helium-4"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

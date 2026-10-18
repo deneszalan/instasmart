@@ -1,0 +1,102 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-smeaton-oak-tree-lighthouse",
+  "field": "engineering",
+  "title": "Smeaton's lighthouse copied the shape of an oak tree and lit its reef for 122 years",
+  "emoji": "🗼",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Smeaton%27s_Tower%2C_Plymouth_Hoe_-_geograph.org.uk_-_7529420.jpg/960px-Smeaton%27s_Tower%2C_Plymouth_Hoe_-_geograph.org.uk_-_7529420.jpg",
+    "alt": "Smeaton's Tower, a red-and-white striped stone lighthouse with a flared base, standing on the grass of Plymouth Hoe above the sea.",
+    "credit": "Mark Anderson · CC BY-SA 2.0"
+  },
+  "body": "The Eddystone reef off Plymouth wrecked the first two lighthouses built on it: a storm swept away one in 1703 and fire destroyed the next in 1755. In 1756 **John Smeaton**, a mathematical instrument maker and aspiring civil engineer, proposed a stone tower **modelled on the shape of an oak tree**, broad and heavy at the base and narrowing towards the top. He locked its granite blocks together with dovetail joints and marble dowels, and pioneered *hydraulic lime*, a concrete that sets underwater. First lit on 16 October 1759, it worked until 1882, when erosion of the rock beneath it made it shake in big waves.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Phare-d-Eddystone-Rocks.jpg/960px-Phare-d-Eddystone-Rocks.jpg",
+      "alt": "A tall grey granite lighthouse rising from the sea, with a short, dark stone stump topped by a thin mast beside it.",
+      "caption": "Today's Eddystone lighthouse, with the stump of Smeaton's tower beside it. Its upper part was taken down and rebuilt on Plymouth Hoe.",
+      "fit": "cover",
+      "credit": "Pline · Public domain"
+    },
+    {
+      "type": "order",
+      "heading": "Eddystone's lighthouses, oldest first",
+      "items": [
+        "Winstanley's",
+        "Rudyard's",
+        "Smeaton's",
+        "Douglass's"
+      ],
+      "explanation": "First lit in 1698, 1708, 1759 and 1882. Douglass's tower is still in use."
+    },
+    {
+      "type": "chart",
+      "heading": "How long each lighthouse worked",
+      "items": [
+        {
+          "label": "Winstanley's, 1698–1703",
+          "value": 5
+        },
+        {
+          "label": "Rudyard's, 1708–1755",
+          "value": 47
+        },
+        {
+          "label": "Smeaton's, 1759–1882",
+          "value": 122,
+          "emphasis": true
+        },
+        {
+          "label": "Douglass's, 1882–today",
+          "value": 144
+        }
+      ],
+      "unit": "years",
+      "note": "Years from first lighting to loss or retirement, rounded down; Douglass's figure is as of 2026."
+    },
+    {
+      "type": "text",
+      "heading": "Built like a jigsaw",
+      "text": "Cornish granite formed the foundations and the outside, with lighter Portland limestone inside. Each block was cut to dovetail into its neighbours and was pinned in place with marble dowels."
+    },
+    {
+      "type": "stat",
+      "value": "24",
+      "label": "tallow candles lit Smeaton's lantern",
+      "text": "They hung in a chandelier at the top of the 18 m tower, which was 7.9 m across at the base and 5.2 m at the top."
+    },
+    {
+      "type": "text",
+      "heading": "The two that came before",
+      "text": "Henry Winstanley's lighthouse was destroyed in the Great Storm of 1703, killing him and five others. John Rudyard's burned in December 1755; its keeper, 94-year-old Henry Hall, died several days later after swallowing molten lead from the lantern roof."
+    },
+    {
+      "type": "quiz",
+      "question": "Why was Smeaton's lighthouse replaced?",
+      "options": [
+        "The rock under it was eroding",
+        "A storm knocked it down",
+        "It burned down",
+        "Its light was too dim"
+      ],
+      "answer": 0,
+      "explanation": "Erosion under the tower made it shake from side to side when large waves hit. The original base still stands on the rock, 37 m from the new lighthouse."
+    }
+  ],
+  "tags": [
+    "lighthouses",
+    "stone",
+    "concrete",
+    "england"
+  ],
+  "source": {
+    "label": "Wikipedia: Eddystone Lighthouse",
+    "url": "https://en.wikipedia.org/wiki/Eddystone_Lighthouse"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

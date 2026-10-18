@@ -1,0 +1,66 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "psychology-moon-illusion",
+  "field": "psychology",
+  "title": "The huge Moon on the horizon is an illusion: it is actually slightly smaller there",
+  "emoji": "🌕",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/A_full_moon_rises_%28potw2402a%29.jpg/960px-A_full_moon_rises_%28potw2402a%29.jpg",
+    "alt": "A bright full Moon rising in a deep blue evening sky above reddish-brown mountains on the Chajnantor plateau in Chile.",
+    "credit": "P. Horálek/ESO · CC BY 4.0"
+  },
+  "body": "A Moon low over the horizon looks far bigger than the same Moon high in the sky, yet photos and measurements show its size in the sky does not grow. If anything it shrinks: at the horizon the Moon is about **1.5% farther away** from you, so it covers a slightly smaller angle. The effect has been described since antiquity, and it still has no agreed explanation. The one most often found in textbooks is apparent distance: the horizon Moon seems to sit beyond a long stretch of terrain, and something that looks farther away while casting the same image on the eye is judged to be bigger.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Hold a small pebble, about 8 mm wide, at arm’s length with one eye shut. Does it cover more of the Moon when the Moon is high or low?",
+      "answer": "Neither: it covers it just the same",
+      "detail": "The pebble blots out the whole Moon both overhead and at the horizon. The size you perceive changes; the size in the sky does not."
+    },
+    {
+      "type": "chart",
+      "heading": "The Moon’s real width in the sky does change, but with distance",
+      "items": [
+        { "label": "Farthest point of orbit", "value": 29.43 },
+        { "label": "Closest point of orbit", "value": 33.5, "emphasis": true }
+      ],
+      "unit": "arcminutes",
+      "note": "The Moon’s orbit is an ellipse. Rising to setting, the change is only about 1.5%, and the other way."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/%281%29_Moonrise_Bondi_Beach.JPG/960px-%281%29_Moonrise_Bondi_Beach.JPG",
+      "alt": "A full Moon rising above white clouds and sunlit low-rise apartment blocks at Bondi Beach in Sydney, against a deep blue sky.",
+      "caption": "Moonrise over apartments at Bondi, Sydney. Buildings and terrain near the horizon are part of what seems to make the low Moon look so large.",
+      "fit": "cover",
+      "credit": "Sardaka · CC BY 3.0"
+    },
+    {
+      "type": "list",
+      "heading": "Explanations on the table",
+      "style": "bullets",
+      "items": [
+        "Apparent distance: the low Moon seems farther",
+        "Relative size: it is judged against nearby objects",
+        "Angle of regard: eye elevation; little support now",
+        "Bending of light by the air: Ptolemy’s idea, but photos show no growth"
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "No single theory has emerged victorious.",
+      "attribution": "Helen Ross and Cornelis Plug, The Mystery of the Moon Illusion (2002)"
+    },
+    {
+      "type": "quiz",
+      "question": "Which odd viewing trick noticeably reduces the illusion?",
+      "options": ["Looking between your legs", "Staring for a full minute", "Viewing it through glass", "Wearing sunglasses"],
+      "answer": 0,
+      "explanation": "Looking at the horizon Moon upside down through your legs makes it seem smaller, perhaps because the image on the retina is inverted."
+    }
+  ],
+  "tags": ["illusions", "perception", "moon"],
+  "source": { "label": "Wikipedia: Moon illusion", "url": "https://en.wikipedia.org/wiki/Moon_illusion" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

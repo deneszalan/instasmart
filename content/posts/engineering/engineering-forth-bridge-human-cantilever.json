@@ -1,0 +1,130 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-forth-bridge-human-cantilever",
+  "field": "engineering",
+  "title": "The Forth Bridge's engineers explained it with a ‘bridge’ made of three men",
+  "emoji": "🌉",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Close_up_on_the_Forth_Bridge%2C_Scotland_arp.jpg/960px-Close_up_on_the_Forth_Bridge%2C_Scotland_arp.jpg",
+    "alt": "Huge red riveted steel tubes of the Forth Bridge splaying out from a granite pier, with a web of lattice girders behind.",
+    "credit": "Adrian Pingstone · Public domain"
+  },
+  "body": "The Forth Bridge in Scotland, opened on 4 March 1890, is a **cantilever** bridge: each of its three giant steel towers holds out two arms, and short, light girders hang between the arms' tips. To show how the forces flow, its engineers John Fowler and Benjamin Baker made a living model in 1887. Two men sat on chairs with their arms out and sticks braced against the chairs, and the Japanese engineer Kaichi Watanabe sat on a plank slung between them. The men's arms were in tension, like steel being pulled; the sticks were in compression, like steel being squeezed.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Cantilever_bridge_human_model.jpg/960px-Cantilever_bridge_human_model.jpg",
+      "alt": "An old photograph of two seated men holding out their arms and angled sticks, with stacks of bricks at the outer ends and a third man seated on a plank between them, below a drawing of the bridge.",
+      "caption": "Baker's \"living model\" of the Forth Bridge. The chairs are the towers' piers, and the bricks at each end weigh down the outer ends, like the end piers weighted with cast iron.",
+      "fit": "contain",
+      "credit": "Unknown photographer for Benjamin Baker · Public domain"
+    },
+    {
+      "type": "match",
+      "heading": "Match the model to the bridge",
+      "pairs": [
+        {
+          "left": "The men's arms",
+          "right": "Steel in tension"
+        },
+        {
+          "left": "The sticks",
+          "right": "Steel in compression"
+        },
+        {
+          "left": "The piles of bricks",
+          "right": "Weighted end piers"
+        },
+        {
+          "left": "The man in the middle",
+          "right": "Light central girder"
+        }
+      ],
+      "explanation": "The middle man's weight pulls on the arms and pushes the sticks onto the chairs, as loads flow through the steel to the piers."
+    },
+    {
+      "type": "chart",
+      "heading": "Wind loads a Forth bridge had to resist",
+      "items": [
+        {
+          "label": "Thomas Bouch's design",
+          "value": 10
+        },
+        {
+          "label": "Rule after Tay disaster",
+          "value": 56,
+          "emphasis": true
+        }
+      ],
+      "unit": "lb/sq ft",
+      "note": "Bouch's Tay Bridge had failed in high winds. His Forth design was dropped in January 1881."
+    },
+    {
+      "type": "stat",
+      "value": "6.5 million",
+      "label": "rivets in the Forth Bridge",
+      "text": "Its three cantilever towers are each 110 m tall and stand on separate granite piers. The whole bridge is about 2.5 km long."
+    },
+    {
+      "type": "compare",
+      "heading": "Painting the Forth Bridge",
+      "left": {
+        "label": "Myth",
+        "text": "Painters started again at one end the moment they finished at the other, so the job never ended."
+      },
+      "right": {
+        "label": "Fact",
+        "text": "There was no such cycle: a permanent crew gave worn areas more attention. A coating applied by 2011 was designed to last 25 years."
+      }
+    },
+    {
+      "type": "timeline",
+      "heading": "The bridge's story",
+      "events": [
+        {
+          "when": "1881",
+          "text": "Bouch's Forth design is abandoned"
+        },
+        {
+          "when": "1887",
+          "text": "The human cantilever demonstration"
+        },
+        {
+          "when": "1890",
+          "text": "The bridge opens on 4 March"
+        },
+        {
+          "when": "2015",
+          "text": "Made a UNESCO World Heritage Site"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "In 1919 another bridge took the Forth Bridge's record for the longest cantilever span. Which?",
+      "options": [
+        "The Quebec Bridge",
+        "Sydney Harbour Bridge",
+        "The Golden Gate",
+        "Tower Bridge"
+      ],
+      "answer": 0,
+      "explanation": "The Quebec Bridge in Canada, with a 549 m span. The Forth Bridge still has the world's second-longest single cantilever span."
+    }
+  ],
+  "tags": [
+    "bridges",
+    "scotland",
+    "cantilever",
+    "structures"
+  ],
+  "source": {
+    "label": "Wikipedia: Forth Bridge",
+    "url": "https://en.wikipedia.org/wiki/Forth_Bridge"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
