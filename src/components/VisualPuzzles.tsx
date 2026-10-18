@@ -217,7 +217,7 @@ export function PlaceSlideView({ slide, challengeId }: Props<'place'>) {
   const record = useRecord(challengeId);
   const span = slide.max - slide.min;
   const step = slide.step ?? span / 100;
-  const [value, setValue] = useState(slide.min + span / 2);
+  const [value, setValue] = useState(slide.min + Math.round(span / 2 / step) * step);
   const [locked, setLocked] = useState(false);
   const pct = (v: number) => ((v - slide.min) / span) * 100;
   const off = Math.abs(value - slide.answer) / span;

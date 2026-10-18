@@ -128,7 +128,8 @@ export function EstimateSlideView({ slide, challengeId }: Props<'estimate'>) {
   const record = useRecord(challengeId);
   const span = slide.max - slide.min;
   const step = slide.step ?? span / 100;
-  const [value, setValue] = useState(slide.min + span / 2);
+  // Start in the middle, on the step grid, so a whole-number slider never shows 100.5.
+  const [value, setValue] = useState(slide.min + Math.round(span / 2 / step) * step);
   const [locked, setLocked] = useState(false);
 
   // How far off, as a share of the slider's range.
