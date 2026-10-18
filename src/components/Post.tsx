@@ -5,6 +5,7 @@ import type { WikiPost } from '../lib/wiki';
 import { FIELD_BY_ID } from '../data/fields';
 import { LIBRARY } from '../data/library';
 import { cardText, readSeconds, slideDetail } from '../lib/feed';
+import { authorGroup, badgeLabel } from '../lib/authors';
 import { inline } from '../lib/markdown';
 import { sharePost } from '../lib/share';
 import { useRoute } from '../lib/route';
@@ -218,6 +219,8 @@ export function PostView({ post, className }: PostViewProps) {
   const field = card ? FIELD_BY_ID[card.field] : null;
   const handle = field ? field.handle : 'wikipedia.featured';
   const slideCount = 1 + (card?.slides?.length ?? 0);
+  const group = card ? authorGroup(card) : null;
+  const badge = group && badgeLabel(group);
 
   return (
     <article ref={ref} className={`post${className ? ` ${className}` : ''}`} aria-label={card?.title ?? wiki!.title}>
@@ -226,10 +229,15 @@ export function PostView({ post, className }: PostViewProps) {
         <div className="post__who">
           <span className="post__handle">
             {handle}
-            {card?.author?.kind === 'ai' && (
-              <span className="badge-ai" title={`Written by ${card.author.name}`}>
-                AI
-              </span>
+            {group && badge && (
+              <button
+                className={`badge badge--${group.id}`}
+                onClick={() => navigate({ tab: 'explore', by: group.id, q: '', post: null })}
+                title={`Written by ${card!.author!.name}. Show all posts by ${group.label}`}
+                aria-label={`Written by ${group.label}. Show all their posts`}
+              >
+                {badge}
+              </button>
             )}
           </span>
           <span className="post__sub">

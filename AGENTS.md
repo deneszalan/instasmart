@@ -8,7 +8,7 @@ All content lives in `content/` as one JSON file per post. Read `content/README.
 
 1. Pick a field and check `content/posts/<field>/` so you don't duplicate a topic.
 2. Create `content/posts/<field>/<field>-<slug>.json` (`npm run content -- new <field> <slug>` makes a starter). Put images in `content/media/<id>/`.
-3. Set `"author": { "name": "<your name>", "kind": "ai" }` when an AI wrote the post.
+3. Sign the post: `"author": { "name": "Claude", "kind": "ai" }`, or `"ChatGPT"`, or your own name. See "Signing posts" in `content/README.md`.
 4. Run `npm run content` and fix every problem it reports.
 5. Commit only the content files, one topic per post, and open a pull request.
 

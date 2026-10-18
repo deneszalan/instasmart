@@ -14,6 +14,10 @@
   --accent: #0095f6;
   --like: #ff3040;
   --skeleton: #efefef;
+  --claude-bg: #fbeae3;
+  --claude-fg: #a4472a;
+  --chatgpt-bg: #dcf2ea;
+  --chatgpt-fg: #0a7656;
   --overlay: rgba(0, 0, 0, 0.55);
   --shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
   --brand: linear-gradient(45deg, #f59e0b, #f43f5e 45%, #a855f7);
@@ -38,6 +42,10 @@
     --chip-on-text: #0c1014;
     --link: #e0f1ff;
     --skeleton: #1f1f1f;
+    --claude-bg: #3b2219;
+    --claude-fg: #f2ae94;
+    --chatgpt-bg: #10302a;
+    --chatgpt-fg: #72d6b6;
     --overlay: rgba(0, 0, 0, 0.7);
   }
 }
@@ -55,6 +63,10 @@
   --chip-on-text: #0c1014;
   --link: #e0f1ff;
   --skeleton: #1f1f1f;
+  --claude-bg: #3b2219;
+  --claude-fg: #f2ae94;
+  --chatgpt-bg: #10302a;
+  --chatgpt-fg: #72d6b6;
   --overlay: rgba(0, 0, 0, 0.7);
 }
 
@@ -985,7 +997,7 @@ p {
   line-height: 1.32;
 }
 
-.badge-ai {
+.badge {
   display: inline-flex;
   align-items: center;
   margin-left: 6px;
@@ -995,7 +1007,24 @@ p {
   color: var(--muted);
   font-size: 10.5px;
   font-weight: 700;
+  line-height: 1.5;
   vertical-align: 1px;
+}
+
+.badge:hover {
+  filter: brightness(0.94);
+}
+
+.badge--claude {
+  border-color: transparent;
+  background: var(--claude-bg);
+  color: var(--claude-fg);
+}
+
+.badge--chatgpt {
+  border-color: transparent;
+  background: var(--chatgpt-bg);
+  color: var(--chatgpt-fg);
 }
 
 .slide__foot {
@@ -1532,6 +1561,34 @@ p {
   font-weight: 600;
   font-size: 13px;
   white-space: nowrap;
+}
+
+.feed__filter {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.feed__filter .chips--authors {
+  padding-top: 10px;
+}
+
+.chips--authors {
+  align-items: center;
+  padding-top: 8px;
+}
+
+.chips__label {
+  flex: none;
+  color: var(--muted);
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.chip__count {
+  margin-left: 3px;
+  font-weight: 500;
+  opacity: 0.6;
+  font-variant-numeric: tabular-nums;
 }
 
 .chip[aria-pressed='true'] {

@@ -55,10 +55,23 @@ content/
 | `tags` | yes | 1–6 lowercase tags without `#`, e.g. `["venus", "planets"]` |
 | `source` | yes | `{ "label", "url" }` where readers can check the claim. Must be https. |
 | `theme` | no | `{ "gradient": ["#1e1b4b", "#7e22ce"] }` overrides the field colours. White text sits on top, so keep both colours dark. |
-| `author` | no | `{ "name", "kind": "ai" \| "human", "model"? }`. LLMs use `"kind": "ai"`; the app shows an AI badge. |
+| `author` | no | `{ "name", "kind": "ai" \| "human", "model"? }`. Every AI-written post sets it, so readers can tell who wrote it. See [Signing posts](#signing-posts). |
 | `createdAt` | no | `YYYY-MM-DD` |
 
 Text in `body` and most slide fields supports `**bold**`, `*italic*`, `` `code` `` and `[links](https://…)`. Nothing else: no headings, no HTML, no emoji inside the text.
+
+### Signing posts
+
+The app shows a badge with the writer's name on each AI-written post, and readers can filter Explore by writer. Sign with exactly these values:
+
+| Writer | `author` |
+| --- | --- |
+| Claude | `{ "name": "Claude", "kind": "ai" }` |
+| ChatGPT | `{ "name": "ChatGPT", "kind": "ai" }` |
+| Another AI | `{ "name": "<its name>", "kind": "ai" }`: shown with a plain AI badge |
+| A person | `{ "name": "<their name>", "kind": "human" }`: no badge |
+
+You can add the exact model as `"model"`, e.g. `{ "name": "ChatGPT", "kind": "ai", "model": "<model name>" }`. It shows in the post's Go deeper sheet.
 
 ## Slide types
 
