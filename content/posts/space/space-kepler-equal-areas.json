@@ -26,6 +26,23 @@
       "text": "Earth is closest to the Sun around 3 January (about 30.3 km/s) and farthest around 4 July (about 29.3 km/s)."
     },
     {
+      "type": "chart",
+      "heading": "Earth’s speed along its orbit",
+      "items": [
+        {
+          "label": "Early January, closest",
+          "value": 30.3,
+          "emphasis": true
+        },
+        {
+          "label": "Early July, farthest",
+          "value": 29.3
+        }
+      ],
+      "unit": "km/s",
+      "note": "Closest to the Sun around 3 January, farthest around 4 July: a difference of about 3%"
+    },
+    {
       "type": "timeline",
       "heading": "From data to law",
       "events": [
@@ -42,6 +59,25 @@
           "text": "Newton’s *Principia* shows all three laws follow from gravity."
         }
       ]
+    },
+    {
+      "type": "match",
+      "heading": "Match Kepler’s laws",
+      "pairs": [
+        {
+          "left": "First law",
+          "right": "Orbits are ellipses"
+        },
+        {
+          "left": "Second law",
+          "right": "Equal areas in equal times"
+        },
+        {
+          "left": "Third law",
+          "right": "Bigger orbit, longer period"
+        }
+      ],
+      "explanation": "Kepler published the first two laws in 1609 and the third in 1619; Newton later showed all three follow from gravity."
     }
   ],
   "tags": [

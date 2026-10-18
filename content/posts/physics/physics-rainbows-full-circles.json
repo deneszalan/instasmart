@@ -15,13 +15,25 @@
       "credit": "ChatGPT · Original diagram"
     },
     {
-      "type": "list",
-      "heading": "The droplet's role",
-      "style": "steps",
-      "items": [
-        "Sunlight bends as it enters a water droplet.",
-        "Some light reflects inside the droplet.",
-        "It bends again on leaving, sending colors in different directions."
+      "type": "flow",
+      "heading": "Inside a raindrop",
+      "steps": [
+        {
+          "icon": "☀️",
+          "label": "Sunlight bends as it enters a droplet"
+        },
+        {
+          "icon": "💧",
+          "label": "Some of it reflects off the back"
+        },
+        {
+          "icon": "🌈",
+          "label": "It bends again on leaving: colours fan out"
+        },
+        {
+          "icon": "👁️",
+          "label": "You see a circle centred opposite the Sun"
+        }
       ]
     },
     {
@@ -40,6 +52,37 @@
       ],
       "answer": 1,
       "explanation": "A rainbow belongs to a circle centred opposite the Sun. From the ground the landscape hides the lower part; from an aircraft, with droplets below you, the full circle can show."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "A rainbow is part of a circle centred opposite the Sun",
+          "bin": 0
+        },
+        {
+          "text": "You could walk to the end of a rainbow",
+          "bin": 1
+        },
+        {
+          "text": "The Sun must be behind you to see a rainbow",
+          "bin": 0
+        },
+        {
+          "text": "Each colour comes from a different kind of droplet",
+          "bin": 1
+        },
+        {
+          "text": "Droplets bend and reflect the light to split its colours",
+          "bin": 0
+        }
+      ],
+      "explanation": "A rainbow does not exist at one place, so it has no end to reach. Every droplet splits all the colours; your eye catches each from a different ring."
     }
   ],
   "tags": [

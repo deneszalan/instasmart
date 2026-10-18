@@ -12,6 +12,37 @@
       "text": "A string vibrating at 110 Hz also vibrates in halves, thirds and quarters, adding 220, 330 and 440 Hz. Together these blend into what we hear as one note."
     },
     {
+      "type": "spectrum",
+      "heading": "The harmonic series of a string tuned to 110 Hz",
+      "min": 0,
+      "max": 500,
+      "unit": "Hz",
+      "ends": [
+        "Low",
+        "High"
+      ],
+      "marks": [
+        {
+          "label": "Fundamental: whole string",
+          "value": 110,
+          "emphasis": true
+        },
+        {
+          "label": "2nd harmonic: halves",
+          "value": 220
+        },
+        {
+          "label": "3rd harmonic: thirds",
+          "value": 330
+        },
+        {
+          "label": "4th harmonic: quarters",
+          "value": 440
+        }
+      ],
+      "note": "Evenly spaced overtones blend into one note; each instrument strengthens different ones."
+    },
+    {
       "type": "reveal",
       "prompt": "Cut the first fraction of a second off a recorded note. What happens?",
       "answer": "Instruments become hard to tell apart",
@@ -26,6 +57,12 @@
       "type": "text",
       "heading": "The clarinet clue",
       "text": "A clarinet’s cylindrical tube acts like a pipe closed at one end, so its low notes are dominated by odd harmonics, giving its hollow, woody tone."
+    },
+    {
+      "type": "scramble",
+      "clue": "The quality that makes a violin and a flute sound different on the same note",
+      "answer": "TIMBRE",
+      "detail": "The mix of overtones an instrument strengthens, and the way its notes start and fade, give it its timbre."
     }
   ],
   "tags": [

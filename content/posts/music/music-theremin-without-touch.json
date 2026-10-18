@@ -19,6 +19,28 @@
       }
     },
     {
+      "type": "flow",
+      "heading": "How a theremin makes a note",
+      "steps": [
+        {
+          "icon": "✋",
+          "label": "One hand moves near the upright antenna"
+        },
+        {
+          "icon": "⚡",
+          "label": "Its electric field shifts the circuit"
+        },
+        {
+          "icon": "🎵",
+          "label": "The pitch rises or falls with the hand"
+        },
+        {
+          "icon": "🤚",
+          "label": "The other hand sets the volume"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "The air becomes the interface",
       "text": "The instrument responds to the position of the player's hands. Electronics generate the sound; the performer controls it through movement."

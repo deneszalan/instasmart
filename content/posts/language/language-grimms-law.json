@@ -12,6 +12,28 @@
       "text": "Latin pater, pes and piscis line up with English father, foot and fish. The old p sound, kept in Latin, turned into f in Germanic."
     },
     {
+      "type": "flow",
+      "heading": "How ‘pater’ became ‘father’",
+      "steps": [
+        {
+          "icon": "🌳",
+          "label": "Proto-Indo-European: *ph₂tḗr"
+        },
+        {
+          "icon": "🏛️",
+          "label": "Latin keeps the p: pater"
+        },
+        {
+          "icon": "🔀",
+          "label": "Germanic shifts p to f: *fadēr"
+        },
+        {
+          "icon": "🏴",
+          "label": "Old English fæder, modern English father"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "t became th, k became h",
       "text": "Latin tres matches English three, and centum, said with a hard k, matches hundred. Latin cornu and English horn follow the same pattern."
@@ -25,6 +47,33 @@
       "type": "text",
       "heading": "Why it matters",
       "text": "Regular sound laws let linguists rebuild lost ancestors like Proto-Indo-European and tell true cognates from words that only look alike by chance."
+    },
+    {
+      "type": "match",
+      "heading": "Match the Latin word to its English cousin",
+      "pairs": [
+        {
+          "left": "pater",
+          "right": "father"
+        },
+        {
+          "left": "tres",
+          "right": "three"
+        },
+        {
+          "left": "decem",
+          "right": "ten"
+        },
+        {
+          "left": "genu",
+          "right": "knee"
+        },
+        {
+          "left": "piscis",
+          "right": "fish"
+        }
+      ],
+      "explanation": "p became f, t became th, d became t and g became k: the regular shifts that Grimm’s law describes."
     },
     {
       "type": "quiz",

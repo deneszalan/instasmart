@@ -7,6 +7,32 @@
   "body": "Mars is the Red Planet, but its sunsets can glow **blue near the Sun**. Fine dust in the thin atmosphere scatters blue light mostly in the Sun's direction, while other colors spread more widely. When sunlight takes a longer path through that dust at sunset, the difference becomes easier to see. NASA's rovers have photographed the effect from the surface.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "Why the sunset glows blue",
+      "steps": [
+        {
+          "icon": "☀️",
+          "label": "Sunlight enters Mars’s thin, dusty air"
+        },
+        {
+          "icon": "🔵",
+          "label": "Dust sends blue light mostly Sunward"
+        },
+        {
+          "icon": "🟠",
+          "label": "Other colours spread across the sky"
+        },
+        {
+          "icon": "🌄",
+          "label": "At sunset the path through dust is longer"
+        },
+        {
+          "icon": "🌅",
+          "label": "A blue glow around the setting Sun"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "Dust sorts the colors",
       "text": "The dust grains scatter different colors in different directions. Blue light stays more concentrated around the Sun, creating a bluish glow."
@@ -39,6 +65,37 @@
       ],
       "answer": 0,
       "explanation": "Fine dust in the thin atmosphere scatters blue light mostly in the Sun’s direction, while other colours spread more widely. At sunset the longer path through dust makes it easier to see."
+    },
+    {
+      "type": "sort",
+      "heading": "Mars or Earth?",
+      "bins": [
+        "Mars",
+        "Earth"
+      ],
+      "items": [
+        {
+          "text": "The daytime sky is reddish or butterscotch",
+          "bin": 0
+        },
+        {
+          "text": "The sky near the setting Sun glows blue",
+          "bin": 0
+        },
+        {
+          "text": "Sunsets glow orange and red",
+          "bin": 1
+        },
+        {
+          "text": "Air molecules scatter blue across the whole sky",
+          "bin": 1
+        },
+        {
+          "text": "Fine dust does most of the scattering",
+          "bin": 0
+        }
+      ],
+      "explanation": "Earth’s air molecules scatter blue light everywhere; Mars’s fine dust sends blue light mostly toward the Sun, so its sunsets glow blue."
     }
   ],
   "tags": [

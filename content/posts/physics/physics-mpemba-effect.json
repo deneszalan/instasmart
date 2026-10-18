@@ -11,6 +11,18 @@
       "prompt": "Erasto Mpemba was a student in the 1960s when he noticed the effect. What was he freezing?",
       "answer": "A hot ice-cream mix",
       "detail": "It froze faster than a cool one. He later studied the effect with physicist Denis Osborne, and it was named after him."
+    },
+    {
+      "type": "odd",
+      "heading": "Which is not a suggested cause?",
+      "items": [
+        "Dissolved gases",
+        "Convection",
+        "Supercooling",
+        "Radioactivity"
+      ],
+      "answer": 3,
+      "explanation": "Dissolved gases, convection and supercooling all feature in proposed explanations of the Mpemba effect. Radioactivity has nothing to do with it."
     }
   ],
   "tags": [

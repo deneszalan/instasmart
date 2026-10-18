@@ -7,6 +7,28 @@
   "body": "‘Nice’ comes from Latin nescius, ‘not knowing’, and reached English through Old French, where it meant simple or foolish. Over the centuries it drifted to ‘fussy’, then ‘delicate’, then ‘precise’, a sense that survives in ‘a nice distinction’, before meaning ‘agreeable’ by the 1760s and ‘kind’ by the 1830s. Linguists call this semantic change: a word keeps its form while its meaning wanders.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "How ‘nice’ wandered",
+      "steps": [
+        {
+          "icon": "🏛️",
+          "label": "Latin nescius: ‘not knowing’"
+        },
+        {
+          "icon": "🤪",
+          "label": "Old French, then English: simple, foolish"
+        },
+        {
+          "icon": "🧐",
+          "label": "Fussy, then delicate, then precise"
+        },
+        {
+          "icon": "🙂",
+          "label": "Agreeable by the 1760s, kind by the 1830s"
+        }
+      ]
+    },
+    {
       "type": "order",
       "heading": "Meanings of ‘nice’, oldest first",
       "items": [

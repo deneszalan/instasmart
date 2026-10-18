@@ -17,6 +17,18 @@
       ],
       "answer": 0,
       "explanation": "On a dark, moonless night the Andromeda Galaxy shows as a faint smudge. Its light left about 2.5 million years ago, roughly when the first members of our genus Homo were appearing."
+    },
+    {
+      "type": "odd",
+      "heading": "Which can’t you see with the naked eye?",
+      "items": [
+        "The Andromeda Galaxy",
+        "Jupiter",
+        "The Moon",
+        "Pluto"
+      ],
+      "answer": 3,
+      "explanation": "Pluto never gets brighter than magnitude 13.65, hundreds of times too faint for the naked eye. Andromeda, Jupiter and the Moon can all be spotted without a telescope."
     }
   ],
   "tags": [

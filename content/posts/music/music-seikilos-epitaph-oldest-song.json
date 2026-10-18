@@ -40,6 +40,27 @@
       ]
     },
     {
+      "type": "scale",
+      "heading": "The oldest complete song next to the oldest instruments, years ago",
+      "items": [
+        {
+          "label": "Seikilos song",
+          "value": 1900,
+          "emphasis": true
+        },
+        {
+          "label": "Hurrian hymn",
+          "value": 3400
+        },
+        {
+          "label": "Bone flutes",
+          "value": 42000
+        }
+      ],
+      "unit": "years ago",
+      "note": "Seikilos: 1st–2nd century AD; Hurrian hymn: c. 1400 BC; Geissenklösterle flutes: 42,000 years."
+    },
+    {
       "type": "quiz",
       "question": "Why is the Seikilos epitaph called the oldest complete song, rather than the older Hurrian hymn?",
       "options": [

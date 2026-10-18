@@ -44,6 +44,50 @@
       "type": "text",
       "heading": "A vulnerable language",
       "text": "Only about half of the 1,400 Guugu Yimithirr people speak it; the 2021 census counted around 810 speakers, most of them at Hope Vale, about 46 km from Cooktown. UNESCO lists it as vulnerable."
+    },
+    {
+      "type": "chart",
+      "heading": "Guugu Yimithirr people and speakers",
+      "items": [
+        {
+          "label": "Guugu Yimithirr people",
+          "value": 1400
+        },
+        {
+          "label": "Speak the language",
+          "value": 810,
+          "emphasis": true
+        }
+      ],
+      "unit": "people",
+      "note": "2021 census; UNESCO lists the language as vulnerable."
+    },
+    {
+      "type": "sort",
+      "heading": "English or Guugu Yimithirr?",
+      "bins": [
+        "English",
+        "Guugu Yimithirr"
+      ],
+      "items": [
+        {
+          "text": "The cup is on your left",
+          "bin": 0
+        },
+        {
+          "text": "The cup is north of the plate",
+          "bin": 1
+        },
+        {
+          "text": "The directions flip when you turn around",
+          "bin": 0
+        },
+        {
+          "text": "You must always know where north is",
+          "bin": 1
+        }
+      ],
+      "explanation": "Guugu Yimithirr speakers use north, south, east and west instead of left and right, so they must always know which way they are facing."
     }
   ],
   "tags": [

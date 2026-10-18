@@ -56,6 +56,23 @@
       ]
     },
     {
+      "type": "chart",
+      "heading": "How far away the camera was",
+      "items": [
+        {
+          "label": "V-2 rocket, 1946",
+          "value": 105
+        },
+        {
+          "label": "Apollo 17, 1972",
+          "value": 29400,
+          "emphasis": true
+        }
+      ],
+      "unit": "km",
+      "note": "Voyager 1’s Pale Blue Dot, from about 6 billion km, would need a bar 200,000 times longer"
+    },
+    {
       "type": "quote",
       "text": "Look again at that dot. That’s here. That’s home. That’s us.",
       "attribution": "Carl Sagan, Pale Blue Dot (1994)"

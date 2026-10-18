@@ -19,6 +19,29 @@
       "text": "Each octave copy fades in at the bottom of the range and fades out at the top, so you never hear a scale start or finish. Your brain tracks the strong middle tones and hears one endless climb, like watching the stripes on a barber’s pole."
     },
     {
+      "type": "flow",
+      "heading": "The barber’s pole of sound",
+      "steps": [
+        {
+          "icon": "🎵",
+          "label": "Stack the same note in several octaves"
+        },
+        {
+          "icon": "⬆️",
+          "label": "Slide every copy upward together"
+        },
+        {
+          "icon": "🔉",
+          "label": "The top copy fades out as it climbs"
+        },
+        {
+          "icon": "🔈",
+          "label": "A new copy fades in at the bottom"
+        }
+      ],
+      "cycle": true
+    },
+    {
       "type": "reveal",
       "prompt": "A 1996 video game used a Shepard scale to make a staircase feel endless. Which one?",
       "answer": "Super Mario 64: the never-ending stairs in Peach’s Castle",

@@ -15,6 +15,32 @@
       "answer": 5,
       "unit": "km",
       "explanation": "Up to about five kilometers, far enough to cross La Gomera’s deep ravines, which made walking to the neighbors slow."
+    },
+    {
+      "type": "flow",
+      "heading": "How Spanish becomes a whistle",
+      "steps": [
+        {
+          "icon": "🗣️",
+          "label": "Words are split into vowels and consonants"
+        },
+        {
+          "icon": "🎶",
+          "label": "Each sound becomes a whistle, high or low"
+        },
+        {
+          "icon": "✂️",
+          "label": "Pitch and breaks tell the sounds apart"
+        },
+        {
+          "icon": "🏔️",
+          "label": "The whistle carries up to 5 km over ravines"
+        },
+        {
+          "icon": "👂",
+          "label": "The listener turns it back into Spanish"
+        }
+      ]
     }
   ],
   "tags": [

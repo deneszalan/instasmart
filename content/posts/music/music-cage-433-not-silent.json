@@ -18,6 +18,26 @@
       "detail": "The Woodstock score gives the movements as 30 seconds, 2 minutes 23 seconds and 1 minute 40 seconds."
     },
     {
+      "type": "chart",
+      "heading": "The three movements of 4′33″",
+      "items": [
+        {
+          "label": "Movement I",
+          "value": 30
+        },
+        {
+          "label": "Movement II",
+          "value": 143
+        },
+        {
+          "label": "Movement III",
+          "value": 100
+        }
+      ],
+      "unit": "s",
+      "note": "As given in the Woodstock score: 30 s, 2 min 23 s and 1 min 40 s, 4 min 33 s in all."
+    },
+    {
       "type": "text",
       "heading": "The anechoic chamber",
       "text": "In 1951 Cage visited an anechoic chamber at Harvard, a room built to absorb all sound. He heard two sounds, one high and one low. The engineer told him the high one was his nervous system in operation and the low one his blood in circulation."

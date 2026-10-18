@@ -17,6 +17,14 @@
       "explanation": "About 34 kPa against 101 kPa at sea level: roughly a third. That is why water boils so cool up there."
     },
     {
+      "type": "pictogram",
+      "heading": "On Everest’s summit, only about a third of sea-level air pressure is left",
+      "icon": "💨",
+      "total": 100,
+      "count": 34,
+      "note": "About 34 kPa against 101 kPa at sea level, so water boils at about 71 °C"
+    },
+    {
       "type": "image",
       "src": "everest-boiling.svg",
       "alt": "A mountain outline with four marked heights: sea level 100 °C, 1,500 m 95 °C, 4,500 m about 85 °C, and the 8,849 m summit about 71 °C.",
@@ -38,6 +46,29 @@
       "type": "text",
       "heading": "The fix",
       "text": "A pressure cooker seals the steam in, raising the pressure and with it the boiling point, which is why high-altitude kitchens rely on them. The opposite trick works too: in a vacuum chamber, water boils at room temperature."
+    },
+    {
+      "type": "match",
+      "heading": "Where does water boil?",
+      "pairs": [
+        {
+          "left": "Sea level",
+          "right": "100 °C"
+        },
+        {
+          "left": "Everest’s summit",
+          "right": "About 71 °C"
+        },
+        {
+          "left": "Pressure cooker",
+          "right": "Above 100 °C"
+        },
+        {
+          "left": "Vacuum chamber",
+          "right": "Room temperature"
+        }
+      ],
+      "explanation": "Boiling point rises and falls with the pressure on the water: a sealed pressure cooker raises it, thin mountain air or a vacuum lowers it."
     }
   ],
   "tags": [

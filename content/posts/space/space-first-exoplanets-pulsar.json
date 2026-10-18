@@ -7,6 +7,26 @@
   "body": "In 1992 astronomers Aleksander Wolszczan and Dale Frail confirmed planets around PSR B1257+12, a pulsar about 2,300 light-years away. A pulsar is the spinning, collapsed core left behind when a massive star explodes. They found the planets through tiny, regular shifts in the timing of its radio pulses, which arrive about 161 times a second. The first planet around a Sun-like star wasn’t found until 1995, and pulsar planets turned out to be rare.",
   "slides": [
     {
+      "type": "scale",
+      "heading": "The three planets of PSR B1257+12, by mass",
+      "items": [
+        {
+          "label": "Draugr",
+          "value": 0.02
+        },
+        {
+          "label": "Phobetor",
+          "value": 3.9
+        },
+        {
+          "label": "Poltergeist",
+          "value": 4.3
+        }
+      ],
+      "unit": "Earths",
+      "note": "Poltergeist and Phobetor were found in 1992, tiny Draugr in 1994, all from the timing of the pulses"
+    },
+    {
       "type": "quiz",
       "question": "How were the planets around the pulsar PSR B1257+12 found?",
       "options": [
@@ -17,6 +37,12 @@
       ],
       "answer": 2,
       "explanation": "Wolszczan and Frail found them in 1992 through tiny, regular shifts in the timing of the pulsar’s radio pulses, which arrive about 161 times a second."
+    },
+    {
+      "type": "scramble",
+      "clue": "The spinning, collapsed star whose steady radio beat gave away the first exoplanets",
+      "answer": "PULSAR",
+      "detail": "PSR B1257+12 pulses about 161 times a second; its planets showed up as tiny, regular hiccups in that rhythm."
     }
   ],
   "tags": [

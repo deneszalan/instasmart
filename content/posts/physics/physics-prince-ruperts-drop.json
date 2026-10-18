@@ -20,6 +20,23 @@
       "text": "Roughly 7,000 times atmospheric pressure, in a layer only about a tenth of the head’s diameter thick."
     },
     {
+      "type": "scale",
+      "heading": "Pressure in the air around you, and inside the drop’s skin",
+      "items": [
+        {
+          "label": "Air pressure",
+          "value": 0.1
+        },
+        {
+          "label": "The drop’s skin",
+          "value": 700,
+          "emphasis": true
+        }
+      ],
+      "unit": "MPa",
+      "note": "Atmospheric pressure is about 0.1 MPa; the skin is squeezed roughly 7,000 times harder"
+    },
+    {
       "type": "timeline",
       "heading": "A 17th-century party trick",
       "events": [

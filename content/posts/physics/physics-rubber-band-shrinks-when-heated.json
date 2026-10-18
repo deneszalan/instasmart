@@ -14,14 +14,23 @@
       "fit": "contain"
     },
     {
-      "type": "list",
-      "heading": "Try it",
-      "style": "steps",
-      "items": [
-        "Stretch a thick rubber band fast and touch it to your lip: it feels warm",
-        "Keep it stretched a few seconds so it cools to room temperature",
-        "Let it snap back and touch it again: it feels cool"
-      ]
+      "type": "flow",
+      "heading": "Try it on your lip",
+      "steps": [
+        {
+          "icon": "🔥",
+          "label": "Stretch a thick band fast: it feels warm"
+        },
+        {
+          "icon": "⏳",
+          "label": "Hold it: it cools back to room temperature"
+        },
+        {
+          "icon": "❄️",
+          "label": "Let it snap back: it feels cool"
+        }
+      ],
+      "cycle": true
     },
     {
       "type": "timeline",
@@ -60,6 +69,12 @@
       ],
       "answer": 0,
       "explanation": "Heat jostles the long chains harder, and tangled chains have far more possible arrangements than straight ones, so the band pulls itself shorter."
+    },
+    {
+      "type": "scramble",
+      "clue": "The physicists’ count of possible arrangements, which drops when you straighten rubber’s chains",
+      "answer": "ENTROPY",
+      "detail": "Heat drives the chains back toward their many tangled arrangements, so a warm band held under tension pulls itself shorter."
     }
   ],
   "tags": [

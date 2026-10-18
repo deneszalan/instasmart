@@ -19,6 +19,14 @@
       }
     },
     {
+      "type": "pictogram",
+      "heading": "58 in 100 modern ASL signs are cognates of Old French Sign Language signs",
+      "icon": "🤟",
+      "total": 100,
+      "count": 58,
+      "note": "ASL and British Sign Language, by contrast, are mutually unintelligible."
+    },
+    {
       "type": "timeline",
       "events": [
         {
@@ -45,6 +53,37 @@
       "type": "text",
       "heading": "A creole?",
       "text": "Some linguists have proposed that ASL is a creole of French Sign Language, born when Clerc’s signs met the signing that deaf pupils brought from home. The 58% figure is well below the 80% usually expected between dialects of one language, so ASL counts as a language of its own."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Sign language is the same all over the world",
+          "bin": 1
+        },
+        {
+          "text": "ASL’s closest relative is French Sign Language",
+          "bin": 0
+        },
+        {
+          "text": "ASL and British Sign Language are mutually intelligible",
+          "bin": 1
+        },
+        {
+          "text": "ASL grew up at a school for the deaf in Hartford",
+          "bin": 0
+        },
+        {
+          "text": "A sign language copies the spoken language around it",
+          "bin": 1
+        }
+      ],
+      "explanation": "Sign languages are not universal and don’t follow the spoken language: ASL is closest to French signing and unintelligible to BSL users."
     },
     {
       "type": "quiz",

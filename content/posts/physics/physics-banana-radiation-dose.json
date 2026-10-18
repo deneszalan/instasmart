@@ -19,6 +19,23 @@
       "text": "A banana manages about 15. By that measure you are worth roughly 360 bananas, every second of your life."
     },
     {
+      "type": "scale",
+      "heading": "Radioactive decays every second: a banana next to you",
+      "items": [
+        {
+          "label": "One banana",
+          "value": 15
+        },
+        {
+          "label": "A 70 kg adult",
+          "value": 5400,
+          "emphasis": true
+        }
+      ],
+      "unit": "decays/s",
+      "note": "Both from potassium-40. By this measure you are worth about 360 bananas."
+    },
+    {
       "type": "text",
       "heading": "Other radioactive snacks",
       "text": "Potatoes, kidney beans, sunflower seeds and nuts are rich in potassium-40 too. Brazil nuts go further: they can also contain radium, measured at up to 444 becquerels per kilogram. None of this is a health concern; it is a reminder that natural radioactivity is everywhere, including in us."
@@ -34,6 +51,37 @@
       ],
       "answer": 0,
       "explanation": "Your kidneys hold the body’s potassium level constant, so the extra potassium-40 from a banana is excreted within hours and the dose never accumulates."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Eating bananas makes you steadily more radioactive",
+          "bin": 1
+        },
+        {
+          "text": "Your body gives off more radiation than a banana",
+          "bin": 0
+        },
+        {
+          "text": "Brazil nuts can contain radium",
+          "bin": 0
+        },
+        {
+          "text": "Most of a banana’s potassium is radioactive",
+          "bin": 1
+        },
+        {
+          "text": "Potatoes and nuts are a little radioactive too",
+          "bin": 0
+        }
+      ],
+      "explanation": "Only 0.0117% of potassium is potassium-40, and your body keeps its potassium level steady, so the extra from a banana is flushed out within hours."
     }
   ],
   "tags": [

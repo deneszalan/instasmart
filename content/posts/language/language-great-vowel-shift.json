@@ -23,6 +23,28 @@
       "text": "The highest vowels became diphthongs: the ‘ee’ of ‘bite’ turned into ‘eye’ and the ‘oo’ of ‘mouse’ into ‘ow’. Other vowels moved up to fill the gaps."
     },
     {
+      "type": "flow",
+      "heading": "The chain, 1400 to 1700",
+      "steps": [
+        {
+          "icon": "🗣️",
+          "label": "c. 1400: ‘bite’ sounds like ‘beet’"
+        },
+        {
+          "icon": "🔀",
+          "label": "The highest vowels break into diphthongs"
+        },
+        {
+          "icon": "⬆️",
+          "label": "Lower vowels move up to fill the gaps"
+        },
+        {
+          "icon": "✍️",
+          "label": "Spelling settles, so the letters stay put"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "German respelled",
       "text": "German went through a similar change but updated its spelling, so medieval ‘mūs’ became ‘Maus’. English kept its old letters, and they drifted out of step."
@@ -31,6 +53,25 @@
       "type": "text",
       "heading": "The North held out",
       "text": "In Scots and older northern speech, the long ‘oo’ of ‘house’ never shifted, which is why Scots still says ‘hoose’ and ‘oot’."
+    },
+    {
+      "type": "match",
+      "heading": "How did it sound around 1400?",
+      "pairs": [
+        {
+          "left": "bite",
+          "right": "‘beet’"
+        },
+        {
+          "left": "mouse",
+          "right": "‘moose’"
+        },
+        {
+          "left": "meet",
+          "right": "a drawn-out ‘met’"
+        }
+      ],
+      "explanation": "Before the shift the letters matched the sounds far better: ‘bite’ was ‘beet’, ‘mouse’ was ‘moose’ and ‘meet’ a long ‘met’."
     }
   ],
   "tags": [

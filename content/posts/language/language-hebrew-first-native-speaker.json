@@ -43,6 +43,14 @@
       "text": "Today several million people speak Hebrew as their mother tongue."
     },
     {
+      "type": "pictogram",
+      "heading": "In 1948, 81 in 100 Jews born in Palestine spoke Hebrew as their only daily language",
+      "icon": "🧍",
+      "total": 100,
+      "count": 81,
+      "note": "80.9% in 1948; the 1922 census had counted only 80,396 Hebrew speakers in all."
+    },
+    {
       "type": "text",
       "heading": "A language on hold",
       "text": "Hebrew never vanished. For seventeen centuries it was read, written and prayed in, and it served as a literary and official language. What it lacked was children who learned it first, and that is exactly what the revival set out to create."

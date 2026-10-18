@@ -7,6 +7,27 @@
   "body": "Saturn’s main rings stretch roughly 280,000 km from edge to edge, more than 20 Earths side by side, yet in places they are estimated to be only about 10 metres thick. They are made of countless chunks of almost pure water ice, each on its own orbit around the planet. Shrink the rings to the thickness of a sheet of paper and they would still be nearly 3 km wide.",
   "slides": [
     {
+      "type": "chart",
+      "heading": "Widths, side by side",
+      "items": [
+        {
+          "label": "Earth",
+          "value": 12742
+        },
+        {
+          "label": "Saturn’s main rings",
+          "value": 280000,
+          "emphasis": true
+        },
+        {
+          "label": "Earth to the Moon",
+          "value": 384400
+        }
+      ],
+      "unit": "km",
+      "note": "Edge to edge the rings span about 22 Earths, yet in places they are only about 10 m thick"
+    },
+    {
       "type": "text",
       "heading": "Dust to boulders",
       "text": "Ring particles range from specks smaller than a grain of sand to chunks metres across, all orbiting Saturn like countless tiny moons."
@@ -32,6 +53,37 @@
       ],
       "answer": 2,
       "explanation": "The rings are incredibly thin, so when Earth lined up with the ring plane in 1612 they seemed to disappear. Galileo, who saw them as Saturn’s ‘ears’, was baffled."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Saturn’s rings are solid sheets of ice",
+          "bin": 1
+        },
+        {
+          "text": "The rings are almost pure water ice",
+          "bin": 0
+        },
+        {
+          "text": "Galileo took the rings for Saturn’s ‘ears’",
+          "bin": 0
+        },
+        {
+          "text": "The rings may be younger than the first dinosaurs",
+          "bin": 0
+        },
+        {
+          "text": "All the ring particles are about the same size",
+          "bin": 1
+        }
+      ],
+      "explanation": "The rings are countless separate chunks, from specks to boulders, each on its own orbit. Cassini data hint they formed within the last 100 million years."
     }
   ],
   "tags": [

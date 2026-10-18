@@ -15,6 +15,27 @@
       "answer": 117,
       "unit": "Earth days",
       "explanation": "About 117 Earth days. Venus needs 243 Earth days to rotate once but only 225 to orbit the Sun, and the spin and the orbit work against each other."
+    },
+    {
+      "type": "chart",
+      "heading": "Venus, in Earth days",
+      "items": [
+        {
+          "label": "One spin, against the stars",
+          "value": 243,
+          "emphasis": true
+        },
+        {
+          "label": "One orbit of the Sun",
+          "value": 225
+        },
+        {
+          "label": "Sunrise to sunrise",
+          "value": 117
+        }
+      ],
+      "unit": "Earth days",
+      "note": "Venus spins backwards, so spin and orbit work against each other and the solar day is shorter"
     }
   ],
   "tags": [

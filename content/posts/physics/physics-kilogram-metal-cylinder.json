@@ -24,6 +24,14 @@
       ]
     },
     {
+      "type": "pictogram",
+      "heading": "Le Grand K: 9 parts platinum to 1 part iridium",
+      "icon": "⚪",
+      "total": 10,
+      "count": 9,
+      "note": "90% platinum and 10% iridium, in a cylinder about 39 mm tall and wide"
+    },
+    {
       "type": "text",
       "heading": "Why a constant",
       "text": "The metre was already defined by the speed of light. On 16 November 2018 the General Conference on Weights and Measures voted to treat mass the same way: fix the Planck constant at exactly 6.62607015 × 10⁻³⁴ joule-seconds, and a Kibble balance can realise a kilogram anywhere, with no master object to guard."

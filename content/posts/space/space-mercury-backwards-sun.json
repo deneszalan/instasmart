@@ -40,6 +40,25 @@
       ],
       "answer": 1,
       "explanation": "Close to perihelion Mercury moves along its orbit faster than it rotates, so the Sun’s motion across the sky stalls and reverses for a few Earth days."
+    },
+    {
+      "type": "match",
+      "heading": "How long does it take on Mercury?",
+      "pairs": [
+        {
+          "left": "One rotation",
+          "right": "59 Earth days"
+        },
+        {
+          "left": "One year",
+          "right": "88 Earth days"
+        },
+        {
+          "left": "Sunrise to sunrise",
+          "right": "176 Earth days"
+        }
+      ],
+      "explanation": "Mercury spins three times for every two orbits, and the slow spin plus the fast orbit stretch a solar day to two Mercury years."
     }
   ],
   "tags": [

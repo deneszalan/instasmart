@@ -13,6 +13,27 @@
       "text": "The visible surface below it is only about 5,800 K."
     },
     {
+      "type": "chart",
+      "heading": "Temperature, from the inside out",
+      "items": [
+        {
+          "label": "Core",
+          "value": 15700000
+        },
+        {
+          "label": "Visible surface",
+          "value": 5800
+        },
+        {
+          "label": "Corona",
+          "value": 1000000,
+          "emphasis": true
+        }
+      ],
+      "unit": "K",
+      "note": "The corona runs 1 to 2 million K; the bar shows the lower figure"
+    },
+    {
       "type": "compare",
       "heading": "Backwards",
       "left": {
@@ -45,6 +66,12 @@
       ],
       "answer": 0,
       "explanation": "The mystery line once blamed on ‘coronium’ comes from iron atoms missing many electrons, which happens only at around a million degrees. Edlén showed this in 1940."
+    },
+    {
+      "type": "scramble",
+      "clue": "The Sun’s visible surface, a cool 5,800 K beneath the million-degree corona",
+      "answer": "PHOTOSPHERE",
+      "detail": "From the Greek for light (phos) and sphere (sphaira). It is the layer whose light we actually see."
     }
   ],
   "tags": [

@@ -7,6 +7,28 @@
   "body": "The Moon’s gravity raises tidal bulges on Earth. Because Earth spins faster than the Moon orbits, those bulges get dragged slightly ahead of the Moon, and their pull tugs it forward, nudging it into a gradually higher orbit. In return, the Moon’s pull on the bulges acts like a brake on Earth’s spin. The result: the Moon slips about 3.8 cm farther away every year, while our days slowly get longer.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "How tides push the Moon away",
+      "steps": [
+        {
+          "icon": "🌊",
+          "label": "The Moon’s pull raises tidal bulges on Earth"
+        },
+        {
+          "icon": "🔄",
+          "label": "Earth spins faster than the Moon orbits"
+        },
+        {
+          "icon": "➡️",
+          "label": "The bulges run ahead and tug the Moon on"
+        },
+        {
+          "icon": "🌙",
+          "label": "The Moon climbs 3.8 cm a year; Earth slows"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "Measured with mirrors",
       "text": "Apollo 11, 14 and 15 crews left reflectors on the Moon. Observatories fire lasers at them and time the roughly 2.5-second round trip with great precision."
@@ -27,6 +49,18 @@
       ],
       "answer": 0,
       "explanation": "Earth spins faster than the Moon orbits, so the tidal bulges are dragged slightly ahead of the Moon and their pull tugs it forward. In return, Earth’s spin slows and days lengthen."
+    },
+    {
+      "type": "odd",
+      "heading": "Which mission left no laser reflector?",
+      "items": [
+        "Apollo 11",
+        "Apollo 14",
+        "Apollo 15",
+        "Apollo 17"
+      ],
+      "answer": 3,
+      "explanation": "Apollo 11, 14 and 15 each left a reflector that observatories still bounce lasers off. Apollo 17 did not; two Soviet Lunokhod rovers carried smaller arrays."
     }
   ],
   "tags": [

@@ -7,9 +7,26 @@
   "body": "Shine light through two narrow slits and a pattern of bright and dark stripes appears, the signature of overlapping waves; Thomas Young showed this in 1801. The quantum shock is that electrons, atoms and even big molecules do the same, as if each one travels through both slits as a wave and only lands at a single spot when detected. Richard Feynman called the experiment the heart of quantum mechanics.",
   "slides": [
     {
-      "type": "text",
-      "heading": "One at a time",
-      "text": "Send electrons through singly and each lands as one dot. Yet thousands of dots slowly build up the striped pattern, as if every electron passed through both slits."
+      "type": "flow",
+      "heading": "One electron at a time",
+      "steps": [
+        {
+          "icon": "⚛️",
+          "label": "Fire electrons at two slits, one at a time"
+        },
+        {
+          "icon": "🔘",
+          "label": "Each lands as a single dot"
+        },
+        {
+          "icon": "🌊",
+          "label": "Thousands of dots build up stripes"
+        },
+        {
+          "icon": "🤯",
+          "label": "As if each one went through both slits"
+        }
+      ]
     },
     {
       "type": "text",

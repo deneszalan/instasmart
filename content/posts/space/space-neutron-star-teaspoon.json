@@ -15,6 +15,23 @@
       "answer": 716,
       "unit": "per second",
       "explanation": "About 716 times a second. Such a star packs around 1.4 times the Sun’s mass into a ball only about 20 km across, at the density of an atomic nucleus."
+    },
+    {
+      "type": "scale",
+      "heading": "A teaspoon of neutron star next to the Great Pyramid, by mass",
+      "items": [
+        {
+          "label": "Great Pyramid",
+          "value": 6
+        },
+        {
+          "label": "Teaspoon of star",
+          "value": 5500,
+          "emphasis": true
+        }
+      ],
+      "unit": "million tonnes",
+      "note": "The pyramid weighs about 6 million tonnes; the teaspoon about 5.5 billion, roughly 900 pyramids"
     }
   ],
   "tags": [

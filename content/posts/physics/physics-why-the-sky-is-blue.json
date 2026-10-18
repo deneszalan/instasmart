@@ -12,6 +12,30 @@
       "text": "Scattering grows with 1 divided by wavelength to the fourth power. Blue light at 450 nm scatters roughly five to six times more than red light at 700 nm."
     },
     {
+      "type": "chart",
+      "heading": "How strongly air scatters each colour",
+      "items": [
+        {
+          "label": "Red, 700 nm",
+          "value": 1
+        },
+        {
+          "label": "Green, 550 nm",
+          "value": 2.6
+        },
+        {
+          "label": "Blue, 450 nm",
+          "value": 5.9,
+          "emphasis": true
+        },
+        {
+          "label": "Violet, 400 nm",
+          "value": 9.4
+        }
+      ],
+      "note": "Relative to red, from the fourth-power rule. Sunlight has less violet and our eyes barely see it"
+    },
+    {
       "type": "text",
       "heading": "Why it looks pale",
       "text": "The scattered mix of violet, blue and some green stimulates our colour receptors much like blue light blended with white, so we see a soft sky blue."
@@ -32,6 +56,12 @@
       ],
       "answer": 2,
       "explanation": "Near the horizon, sunlight crosses far more air, so most of the blue is scattered out along the way, leaving the oranges and reds."
+    },
+    {
+      "type": "scramble",
+      "clue": "The scattering, named after a British physicist, that fills the sky with blue",
+      "answer": "RAYLEIGH",
+      "detail": "Named after Lord Rayleigh (John William Strutt), who showed that scattering grows as one over wavelength to the fourth power."
     }
   ],
   "tags": [

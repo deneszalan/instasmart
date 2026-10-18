@@ -20,6 +20,27 @@
       "text": "Common black films are around 50 nm. In both, the two surfaces have practically snapped together, pinching out the water between them."
     },
     {
+      "type": "chart",
+      "heading": "How thin is a soap film?",
+      "items": [
+        {
+          "label": "Typical film",
+          "value": 1000
+        },
+        {
+          "label": "Common black film",
+          "value": 50
+        },
+        {
+          "label": "Newton black film",
+          "value": 4,
+          "emphasis": true
+        }
+      ],
+      "unit": "nm",
+      "note": "A fresh film is about a micrometre, 1,000 nm, thick; below about 100 nm it looks black"
+    },
+    {
       "type": "text",
       "heading": "Why a bubble is round",
       "text": "A soap film pulls itself as small as it can. For a given volume of air, the shape with the least surface is a sphere, a fact proved in 1884 by H. A. Schwarz. Blow a bubble through a square frame and it still comes out round."

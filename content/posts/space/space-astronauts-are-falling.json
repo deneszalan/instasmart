@@ -17,9 +17,12 @@
       "explanation": "Roughly 90%. Height alone barely weakens gravity. Astronauts float because they and the station are falling together, moving sideways so fast that Earth keeps curving away beneath them."
     },
     {
-      "type": "text",
-      "heading": "Gravity is still strong",
-      "text": "About 400 km up, where the ISS flies, gravity is still roughly 90% as strong as on the ground. Height alone barely weakens it."
+      "type": "pictogram",
+      "heading": "400 km up, where the ISS flies, gravity is still roughly 90% as strong as on the ground",
+      "icon": "🧑‍🚀",
+      "total": 10,
+      "count": 9,
+      "note": "Height alone barely weakens gravity: the crew floats because station and crew fall together"
     },
     {
       "type": "text",
@@ -30,6 +33,29 @@
       "type": "text",
       "heading": "16 sunrises a day",
       "text": "One lap takes about 93 minutes, or around 15.5 orbits a day, so the crew sees about 16 sunrises and 16 sunsets every 24 hours."
+    },
+    {
+      "type": "match",
+      "heading": "Match the ISS numbers",
+      "pairs": [
+        {
+          "left": "Speed",
+          "right": "About 7.7 km a second"
+        },
+        {
+          "left": "Height",
+          "right": "About 400 km"
+        },
+        {
+          "left": "One lap of Earth",
+          "right": "About 93 minutes"
+        },
+        {
+          "left": "Sunrises a day",
+          "right": "About 16"
+        }
+      ],
+      "explanation": "At 7.7 km/s the station laps Earth every 93 minutes, about 15.5 times a day, so the crew sees roughly 16 sunrises."
     }
   ],
   "tags": [

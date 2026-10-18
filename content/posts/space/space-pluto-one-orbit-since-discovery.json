@@ -39,6 +39,39 @@
       "text": "Pluto’s distance from the Sun swings between about 30 and 49 astronomical units along the way."
     },
     {
+      "type": "chart",
+      "heading": "One trip around the Sun, in Earth years",
+      "items": [
+        {
+          "label": "Earth",
+          "value": 1
+        },
+        {
+          "label": "Jupiter",
+          "value": 11.86
+        },
+        {
+          "label": "Saturn",
+          "value": 29.45
+        },
+        {
+          "label": "Uranus",
+          "value": 84
+        },
+        {
+          "label": "Neptune",
+          "value": 164.8
+        },
+        {
+          "label": "Pluto",
+          "value": 247.94,
+          "emphasis": true
+        }
+      ],
+      "unit": "years",
+      "note": "The lap Pluto was on when it was discovered in 1930 will not end until around 2178"
+    },
+    {
       "type": "text",
       "heading": "Small world",
       "text": "Pluto’s diameter is about 2,377 km. It has roughly one-sixth the mass of our Moon and a third of its volume, yet it has five known moons of its own; the largest and closest is Charon."
@@ -54,6 +87,18 @@
       ],
       "answer": 1,
       "explanation": "Pluto’s orbit ranges from about 30 to 49 astronomical units, so for about 20 years of each lap it dips inside Neptune’s path."
+    },
+    {
+      "type": "odd",
+      "heading": "Which is not a moon of Pluto?",
+      "items": [
+        "Charon",
+        "Nix",
+        "Hydra",
+        "Triton"
+      ],
+      "answer": 3,
+      "explanation": "Charon, Nix and Hydra orbit Pluto, along with Styx and Kerberos. Triton is Neptune’s largest moon."
     }
   ],
   "tags": [

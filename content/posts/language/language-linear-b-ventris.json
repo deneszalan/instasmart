@@ -27,6 +27,18 @@
       "text": "In 1953 a tablet from Pylos showed a drawing of a tripod cauldron beside signs reading ti-ri-po-de, Greek for tripods. Ventris had originally expected Etruscan."
     },
     {
+      "type": "odd",
+      "heading": "Which script is still undeciphered?",
+      "items": [
+        "Linear B",
+        "Linear A",
+        "Egyptian hieroglyphs",
+        "Cuneiform"
+      ],
+      "answer": 1,
+      "explanation": "Ventris read Linear B as Greek in 1952, and hieroglyphs and cuneiform were cracked in the 19th century. Linear A, Linear B’s older cousin, remains unread."
+    },
+    {
       "type": "quiz",
       "question": "Which language did Ventris originally expect Linear B to hide?",
       "options": [

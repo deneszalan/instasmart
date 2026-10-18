@@ -17,6 +17,37 @@
       "explanation": "About 38 microseconds a day: their speed slows them by about 7, but weaker gravity 20,000 km up speeds them by about 45. Light covers more than 11 km in 38 microseconds."
     },
     {
+      "type": "spectrum",
+      "heading": "What relativity does to a GPS clock, per day",
+      "min": -10,
+      "max": 50,
+      "marks": [
+        {
+          "label": "Ground clock",
+          "value": 0
+        },
+        {
+          "label": "Orbital speed",
+          "value": -7
+        },
+        {
+          "label": "Net effect",
+          "value": 38,
+          "emphasis": true
+        },
+        {
+          "label": "Weaker gravity",
+          "value": 45
+        }
+      ],
+      "unit": "µs",
+      "ends": [
+        "Runs slow",
+        "Runs fast"
+      ],
+      "note": "Microseconds gained each day: speed costs 7, weaker gravity adds 45, net 38 fast"
+    },
+    {
       "type": "text",
       "heading": "Speed slows the clock",
       "text": "Orbiting at nearly 4 km/s, each satellite clock runs slow by about 7 microseconds a day, as special relativity predicts for moving clocks."

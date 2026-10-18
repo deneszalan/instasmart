@@ -17,9 +17,49 @@
       "text": "Equal-tempered fifths are only about 2 cents (hundredths of a semitone) narrow, but major thirds are about 14 cents wide, a faint beating trained ears can hear."
     },
     {
+      "type": "chart",
+      "heading": "How far equal temperament strays from pure",
+      "items": [
+        {
+          "label": "Octave",
+          "value": 0
+        },
+        {
+          "label": "Perfect fifth",
+          "value": 2
+        },
+        {
+          "label": "Major third",
+          "value": 14,
+          "emphasis": true
+        }
+      ],
+      "unit": "cents",
+      "note": "A cent is a hundredth of a semitone; fifths come out slightly narrow, major thirds wide."
+    },
+    {
       "type": "text",
       "heading": "Before it took over",
       "text": "Older systems such as meantone made common keys sweeter but remote keys harsh. Equal temperament gradually became the Western norm in the 19th century."
+    },
+    {
+      "type": "match",
+      "heading": "Match the interval to its frequency ratio",
+      "pairs": [
+        {
+          "left": "Octave",
+          "right": "2:1"
+        },
+        {
+          "left": "Perfect fifth",
+          "right": "3:2"
+        },
+        {
+          "left": "Equal-tempered semitone",
+          "right": "Twelfth root of 2"
+        }
+      ],
+      "explanation": "Pure intervals come from simple ratios; equal temperament replaces them with twelve identical steps of about 1.0595 each."
     },
     {
       "type": "quiz",

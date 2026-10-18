@@ -7,6 +7,23 @@
   "body": "Olympus Mons rises roughly 22 km above the surrounding plains and spreads about 600 km across. Volcanoes grow this huge on Mars because gravity is weaker and the crust doesn’t drift: on Earth, moving plates carry volcanoes away from the hotspots that feed them, but on Mars lava kept piling up in the same place for ages. It roughly ties with a peak on the asteroid Vesta as the tallest mountain known in the Solar System.",
   "slides": [
     {
+      "type": "chart",
+      "heading": "Height, in kilometres",
+      "items": [
+        {
+          "label": "Olympus Mons, Mars",
+          "value": 21.3,
+          "emphasis": true
+        },
+        {
+          "label": "Mount Everest",
+          "value": 8.8
+        }
+      ],
+      "unit": "km",
+      "note": "Olympus Mons above the Mars reference level; Everest above sea level. Olympus is also 600 km wide"
+    },
+    {
       "type": "quiz",
       "question": "Why can a volcano grow so much bigger on Mars than on Earth?",
       "options": [

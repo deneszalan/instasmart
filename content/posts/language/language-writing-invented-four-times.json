@@ -7,6 +7,37 @@
   "body": "Most scholars recognize four independent inventions of writing: in Mesopotamia around 3400–3100 BC, in Egypt around 3250 BC, in China before about 1250 BC and in Mesoamerica before about AD 1. Mesopotamian cuneiform grew out of a much older system of clay tokens used for accounting, and China’s earliest surviving texts are inscriptions on oracle bones. Whether Egypt borrowed the idea from Mesopotamia is still debated.",
   "slides": [
     {
+      "type": "spectrum",
+      "heading": "Four separate inventions of writing, years ago",
+      "min": 0,
+      "max": 6000,
+      "unit": "years ago",
+      "ends": [
+        "Today",
+        "Deep past"
+      ],
+      "marks": [
+        {
+          "label": "Mesopotamia, c. 3400–3100 BC",
+          "value": 5400,
+          "emphasis": true
+        },
+        {
+          "label": "Egypt, c. 3250 BC",
+          "value": 5300
+        },
+        {
+          "label": "China, before c. 1250 BC",
+          "value": 3300
+        },
+        {
+          "label": "Mesoamerica, before AD 1",
+          "value": 2000
+        }
+      ],
+      "note": "Approximate ages; whether Egypt borrowed the idea from Mesopotamia is still debated."
+    },
+    {
       "type": "quiz",
       "question": "What did Mesopotamian cuneiform grow out of?",
       "options": [
@@ -16,6 +47,25 @@
       ],
       "answer": 0,
       "explanation": "Cuneiform grew out of a much older system of clay tokens used for accounting. China’s earliest surviving texts, by contrast, are inscriptions on oracle bones."
+    },
+    {
+      "type": "match",
+      "heading": "Match the region to its earliest writing",
+      "pairs": [
+        {
+          "left": "Mesopotamia",
+          "right": "Cuneiform on clay"
+        },
+        {
+          "left": "China",
+          "right": "Oracle bone inscriptions"
+        },
+        {
+          "left": "Egypt",
+          "right": "Hieroglyphs"
+        }
+      ],
+      "explanation": "Cuneiform grew out of clay accounting tokens, China’s earliest texts are on oracle bones, and Egypt’s hieroglyphs go back to about 3250 BC."
     }
   ],
   "tags": [

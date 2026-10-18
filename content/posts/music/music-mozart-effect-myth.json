@@ -22,6 +22,32 @@
       "text": "36 college students, one Mozart sonata for two pianos, then spatial puzzles such as paper folding. No babies, and no claims about general intelligence."
     },
     {
+      "type": "flow",
+      "heading": "How a small study became a myth",
+      "steps": [
+        {
+          "icon": "🎓",
+          "label": "1993: 36 students hear a Mozart sonata"
+        },
+        {
+          "icon": "🧩",
+          "label": "Spatial scores rise for about 15 minutes"
+        },
+        {
+          "icon": "📰",
+          "label": "Headlines: ‘Mozart makes babies smarter’"
+        },
+        {
+          "icon": "💿",
+          "label": "Georgia’s governor proposes CDs for newborns"
+        },
+        {
+          "icon": "🔬",
+          "label": "Later reviews find little lasting effect"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "A likely explanation",
       "text": "Music or stories people enjoy can briefly lift mood and alertness, which nudges test scores. Similar bumps have been found with music other than Mozart."
@@ -30,6 +56,33 @@
       "type": "text",
       "heading": "What may help",
       "text": "Actually learning an instrument is linked to some cognitive benefits, though how large they are, and whether they carry over to other skills, is still debated."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "The 1993 study tested babies",
+          "bin": 1
+        },
+        {
+          "text": "The boost lasted about 15 minutes",
+          "bin": 0
+        },
+        {
+          "text": "The original study had 36 college students",
+          "bin": 0
+        },
+        {
+          "text": "Listening to Mozart raises intelligence for life",
+          "bin": 1
+        }
+      ],
+      "explanation": "The study tested 36 students on spatial tasks for about 15 minutes after a sonata; later reviews found little or no lasting effect on intelligence."
     }
   ],
   "tags": [

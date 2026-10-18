@@ -14,6 +14,28 @@
       "fit": "contain"
     },
     {
+      "type": "flow",
+      "heading": "How to sing two notes at once",
+      "steps": [
+        {
+          "icon": "🎤",
+          "label": "Hum one low, steady drone"
+        },
+        {
+          "icon": "👄",
+          "label": "Shape mouth, tongue and lips as for a vowel"
+        },
+        {
+          "icon": "🔊",
+          "label": "One overtone is boosted, the others filtered"
+        },
+        {
+          "icon": "👂",
+          "label": "It rings out as a whistling second note"
+        }
+      ]
+    },
+    {
       "type": "list",
       "heading": "Three main styles",
       "style": "bullets",
@@ -27,6 +49,33 @@
       "type": "text",
       "heading": "Imitating the land",
       "text": "Sub-styles mimic the world around: borbangnadyr is a trill reminiscent of birds and travelling brooks, made with rapid movements of the tongue and lips, and ezenggileer pulses like the rhythm of riding a horse, by opening and closing the velum."
+    },
+    {
+      "type": "match",
+      "heading": "Match the style to its sound",
+      "pairs": [
+        {
+          "left": "Khoomei",
+          "right": "Soft, two or three harmonics"
+        },
+        {
+          "left": "Sygyt",
+          "right": "Piercing, flute-like whistle"
+        },
+        {
+          "left": "Kargyraa",
+          "right": "Deep and growling"
+        },
+        {
+          "left": "Borbangnadyr",
+          "right": "Trill like birds and brooks"
+        },
+        {
+          "left": "Ezenggileer",
+          "right": "Pulses like riding a horse"
+        }
+      ],
+      "explanation": "Khoomei is softest, sygyt whistles, kargyraa growls; borbangnadyr and ezenggileer are sub-styles that imitate birds, brooks and riding."
     },
     {
       "type": "quiz",

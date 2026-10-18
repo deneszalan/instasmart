@@ -20,6 +20,35 @@
       "text": "Even so, it is slightly less than one-thousandth of the Sun’s mass, which is why the balance point sits so close to the Sun."
     },
     {
+      "type": "chart",
+      "heading": "Mass, compared with Earth",
+      "items": [
+        {
+          "label": "Jupiter",
+          "value": 318,
+          "emphasis": true
+        },
+        {
+          "label": "Saturn",
+          "value": 95
+        },
+        {
+          "label": "Neptune",
+          "value": 17
+        },
+        {
+          "label": "Uranus",
+          "value": 14.5
+        },
+        {
+          "label": "Earth",
+          "value": 1
+        }
+      ],
+      "unit": "Earths",
+      "note": "Jupiter alone outweighs the other seven planets put together, 2.5 times over"
+    },
+    {
       "type": "text",
       "heading": "A wobbling star",
       "text": "Seen from far away, our Sun shifts back and forth around that balance point once every 11.86 years, the length of Jupiter’s orbit. Hunting for the same tiny wobble in other stars, through shifts in the colour of their light, is one of the main ways astronomers discover planets around them."

@@ -17,6 +17,27 @@
       "explanation": "One string per note in the bass, two in the tenor and three in the treble, so a piano has far more strings than its 88 keys."
     },
     {
+      "type": "chart",
+      "heading": "How many strings one key strikes",
+      "items": [
+        {
+          "label": "Bass",
+          "value": 1
+        },
+        {
+          "label": "Tenor",
+          "value": 2
+        },
+        {
+          "label": "Treble",
+          "value": 3,
+          "emphasis": true
+        }
+      ],
+      "unit": "per key",
+      "note": "That is why a piano has far more strings than its 88 keys."
+    },
+    {
       "type": "stat",
       "value": "20 tons",
       "label": "total string tension the iron plate of a modern grand must withstand",

@@ -7,6 +7,23 @@
   "body": "Without air resistance, gravity accelerates everything at the same rate, whatever its mass. In 1971 Apollo 15 commander David Scott tested this on camera, dropping a hammer and a falcon feather side by side on the airless Moon; they landed at the same moment. Galileo is often said to have proved the same thing by dropping balls from the Leaning Tower of Pisa, but most historians think that was a thought experiment, not a real test.",
   "slides": [
     {
+      "type": "chart",
+      "heading": "How hard gravity pulls at the surface",
+      "items": [
+        {
+          "label": "Earth",
+          "value": 9.81
+        },
+        {
+          "label": "The Moon",
+          "value": 1.62,
+          "emphasis": true
+        }
+      ],
+      "unit": "m/s²",
+      "note": "The Moon’s pull is about a sixth of Earth’s: a slower fall, but the same for hammer and feather"
+    },
+    {
       "type": "quiz",
       "question": "Why did the hammer and the feather land at the same moment?",
       "options": [
@@ -17,6 +34,37 @@
       ],
       "answer": 1,
       "explanation": "Without air resistance, gravity accelerates everything at the same rate whatever its mass. Apollo 15’s David Scott showed it on camera in 1971."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Heavier objects always fall faster",
+          "bin": 1
+        },
+        {
+          "text": "Air resistance is what slows a falling feather on Earth",
+          "bin": 0
+        },
+        {
+          "text": "The Moon has no gravity, so things just drift",
+          "bin": 1
+        },
+        {
+          "text": "Apollo 15’s David Scott did the test on camera in 1971",
+          "bin": 0
+        },
+        {
+          "text": "Galileo’s Pisa drop was probably only a thought experiment",
+          "bin": 0
+        }
+      ],
+      "explanation": "Gravity accelerates everything at the same rate; only air resistance separates a feather from a hammer. The Moon’s gravity is about a sixth of Earth’s."
     }
   ],
   "tags": [

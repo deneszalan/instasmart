@@ -50,6 +50,32 @@
       "text": "The number of visible stars is limited by the age of the universe, not by its size."
     },
     {
+      "type": "flow",
+      "heading": "Why the night sky is dark",
+      "steps": [
+        {
+          "icon": "💥",
+          "label": "The universe began 13.8 billion years ago"
+        },
+        {
+          "icon": "⏳",
+          "label": "Light from farther stars hasn’t arrived yet"
+        },
+        {
+          "icon": "🔭",
+          "label": "Expanding space stretches arriving light"
+        },
+        {
+          "icon": "📡",
+          "label": "The oldest glow is now invisible microwaves"
+        },
+        {
+          "icon": "🌑",
+          "label": "To our eyes, the sky stays dark"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "The glow is still there",
       "text": "Look far enough and every line of sight does end on something: the surface of last scattering, where the light of the Big Bang first escaped. Expansion has stretched that glow into microwaves, the cosmic microwave background, so to our eyes the sky stays dark."

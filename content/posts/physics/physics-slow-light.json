@@ -15,6 +15,28 @@
       "answer": 17,
       "unit": "m/s",
       "explanation": "About 17 m/s, roughly 60 km/h, through sodium atoms chilled to a tiny fraction of a degree above absolute zero. In a vacuum, light covers about 300,000 km every second."
+    },
+    {
+      "type": "flow",
+      "heading": "How light was slowed to 17 m/s",
+      "steps": [
+        {
+          "icon": "❄️",
+          "label": "Chill sodium atoms to near absolute zero"
+        },
+        {
+          "icon": "🔦",
+          "label": "A second laser makes the cloud transparent"
+        },
+        {
+          "icon": "🐢",
+          "label": "Send in a pulse: it crawls at 17 m/s"
+        },
+        {
+          "icon": "⏯️",
+          "label": "Later: stop the light, then restart it"
+        }
+      ]
     }
   ],
   "tags": [

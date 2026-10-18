@@ -23,10 +23,12 @@
       ]
     },
     {
-      "type": "stat",
-      "value": "59%",
-      "label": "of the Moon’s surface visible from Earth over time",
-      "text": "Never all at once: at any moment you see half. The extra 9% comes in slivers along the edges."
+      "type": "pictogram",
+      "heading": "Over time, 59% of the Moon’s surface shows itself to Earth",
+      "icon": "🌕",
+      "total": 100,
+      "count": 59,
+      "note": "Never all at once: at any moment you see half. The extra 9% comes in slivers along the edges."
     },
     {
       "type": "quiz",

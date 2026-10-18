@@ -7,6 +7,41 @@
   "body": "A musical note usually contains a fundamental frequency plus overtones at whole-number multiples of it. Remove the fundamental but keep the overtones, and listeners still hear the same pitch, because the brain infers it from the spacing of the harmonics. That is why a deep voice still sounds deep over a traditional phone line, which cuts off frequencies below about 300 Hz, and why tiny speakers can suggest bass they cannot produce.",
   "slides": [
     {
+      "type": "spectrum",
+      "heading": "What a traditional phone line throws away",
+      "min": 0,
+      "max": 500,
+      "unit": "Hz",
+      "ends": [
+        "Low",
+        "High"
+      ],
+      "marks": [
+        {
+          "label": "Lowest piano note (A0)",
+          "value": 27.5
+        },
+        {
+          "label": "Male voices: 90–155 Hz",
+          "value": 90
+        },
+        {
+          "label": "Female voices: 165–255 Hz",
+          "value": 165
+        },
+        {
+          "label": "Phone line cuts below this",
+          "value": 300,
+          "emphasis": true
+        },
+        {
+          "label": "Concert A",
+          "value": 440
+        }
+      ],
+      "note": "Phone lines carry about 300–3,400 Hz, so a deep voice’s fundamental never arrives."
+    },
+    {
       "type": "quiz",
       "question": "How does the brain work out a pitch whose fundamental is missing?",
       "options": [
@@ -17,6 +52,18 @@
       ],
       "answer": 0,
       "explanation": "Overtones sit at whole-number multiples of the fundamental, so their spacing gives it away. That is why a deep voice still sounds deep over a phone line."
+    },
+    {
+      "type": "odd",
+      "heading": "Which is not a harmonic of a 100 Hz note?",
+      "items": [
+        "200 Hz",
+        "300 Hz",
+        "450 Hz",
+        "500 Hz"
+      ],
+      "answer": 2,
+      "explanation": "Harmonics sit at whole-number multiples of the fundamental: 200, 300, 400 and 500 Hz. 450 Hz is 4.5 times 100, so it doesn’t belong."
     }
   ],
   "tags": [

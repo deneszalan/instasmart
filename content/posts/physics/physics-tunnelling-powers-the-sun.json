@@ -15,6 +15,32 @@
       "answer": 15,
       "unit": "million °C",
       "explanation": "About 15 million °C, yet protons there almost never have enough energy to climb over their electrical repulsion. They fuse because quantum mechanics lets them tunnel through the barrier."
+    },
+    {
+      "type": "flow",
+      "heading": "How protons fuse in the Sun",
+      "steps": [
+        {
+          "icon": "⚛️",
+          "label": "Two protons rush toward each other"
+        },
+        {
+          "icon": "🧱",
+          "label": "Electric repulsion: a wall too high to climb"
+        },
+        {
+          "icon": "🌊",
+          "label": "Rarely, a proton tunnels through the wall"
+        },
+        {
+          "icon": "☀️",
+          "label": "The pair fuses, releasing energy"
+        },
+        {
+          "icon": "🔆",
+          "label": "Countless rare events add up to sunshine"
+        }
+      ]
     }
   ],
   "tags": [

@@ -17,6 +17,33 @@
       ],
       "answer": 0,
       "explanation": "In double-blind studies from 2012 and 2014, players in modified goggles could not reliably tell old Italian violins from good new ones, and many preferred the new."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Top violinists can always pick out a Stradivarius by sound",
+          "bin": 1
+        },
+        {
+          "text": "In blind tests, many players preferred new violins",
+          "bin": 0
+        },
+        {
+          "text": "Stradivari’s violins sell for millions",
+          "bin": 0
+        },
+        {
+          "text": "Science has settled what makes a great violin",
+          "bin": 1
+        }
+      ],
+      "explanation": "In the 2012 and 2014 blind studies players could not reliably tell old Italian violins from good new ones; what makes a great violin is still debated."
     }
   ],
   "tags": [

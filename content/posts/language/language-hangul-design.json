@@ -22,6 +22,28 @@
       "text": "Vowels grow from a dot, a flat line and an upright line, which the original text tied to cosmic ideas. ㅏ, for example, is ㅣ plus the dot."
     },
     {
+      "type": "flow",
+      "heading": "How a Hangul syllable is built",
+      "steps": [
+        {
+          "icon": "👄",
+          "label": "ㄱ sketches the back of the tongue raised"
+        },
+        {
+          "icon": "➕",
+          "label": "Add a stroke for a harsher sound: ㄱ to ㅋ"
+        },
+        {
+          "icon": "🔵",
+          "label": "Vowels: a dot, a flat line, an upright line"
+        },
+        {
+          "icon": "🧱",
+          "label": "Stack the letters into one syllable block"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "A slow victory",
       "text": "Elites who prized Chinese learning looked down on Hangul for centuries, and a king persecuted its use in 1504. It became the government’s preferred script only in 1894."

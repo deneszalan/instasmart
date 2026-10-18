@@ -13,14 +13,25 @@
       "text": "That is about 1,235 km/h. Whips are often called the first human-made objects to break the sound barrier, though that claim is hard to pin down."
     },
     {
-      "type": "list",
+      "type": "flow",
       "heading": "How the crack happens",
-      "style": "steps",
-      "items": [
-        "Flick the handle: a loop forms and runs down the whip",
-        "The whip tapers, so the loop speeds up as it reaches lighter material",
-        "Near the tip it passes the speed of sound",
-        "The air can’t get out of the way in time: a small sonic boom"
+      "steps": [
+        {
+          "icon": "🤚",
+          "label": "Flick the handle: a loop runs down the whip"
+        },
+        {
+          "icon": "⚡",
+          "label": "It tapers, so the loop keeps speeding up"
+        },
+        {
+          "icon": "💨",
+          "label": "Near the tip it passes the speed of sound"
+        },
+        {
+          "icon": "💥",
+          "label": "Air can’t get out of the way: a sonic boom"
+        }
       ]
     },
     {

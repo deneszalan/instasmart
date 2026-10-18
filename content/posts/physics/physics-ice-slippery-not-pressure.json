@@ -23,6 +23,37 @@
       "text": "Figure skaters prefer about −5.5 °C. Both are colder than pressure melting alone could explain."
     },
     {
+      "type": "spectrum",
+      "heading": "How cold is the ice?",
+      "min": -12,
+      "max": 0,
+      "marks": [
+        {
+          "label": "Ice hockey rink",
+          "value": -9,
+          "emphasis": true
+        },
+        {
+          "label": "Figure skating",
+          "value": -5.5
+        },
+        {
+          "label": "Pressure melting’s limit",
+          "value": -4
+        },
+        {
+          "label": "Ice melts",
+          "value": 0
+        }
+      ],
+      "unit": "°C",
+      "ends": [
+        "Colder",
+        "Melting"
+      ],
+      "note": "By pressure melting alone, skating below about −4 °C would be impossible; rinks are colder"
+    },
+    {
       "type": "text",
       "heading": "Still an open question",
       "text": "Even standing still on ice can be slippery below freezing, which friction heating can’t explain, while microscope measurements have found surprisingly high friction on the surface layer. A full theory has to combine all three mechanisms, and the question is still an active area of research."
