@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-saharan-dust-feeds-amazon",
+  "field": "earth",
+  "title": "Dust from the Sahara helps keep the Amazon rainforest fertilised",
+  "emoji": "🏜️",
+  "body": "The Sahara produces roughly 400 to 700 million tonnes of dust a year, and the winds carry some of it across the Atlantic to South America, the Caribbean and the United States. Much of it rises from the Bodélé Depression in Chad, one of the biggest dust sources on Earth. The dust carries **phosphorus**, a nutrient that heavy tropical rain steadily washes out of Amazon soils. Dust supplies only about 13% of the phosphorus landing on the forest each year, but without it the rain’s losses could slowly drain the basin of this nutrient, so the forest’s long-term health is thought to depend on the delivery.",
+  "slides": [
+    {
+      "type": "stat",
+      "value": "400–700 million",
+      "label": "tonnes of dust the Sahara produces each year",
+      "text": "Some of it crosses the Atlantic to the Amazon, the Caribbean and the United States."
+    },
+    {
+      "type": "list",
+      "heading": "A transatlantic delivery",
+      "style": "steps",
+      "items": [
+        "Wind lifts fine dust from the Bodélé Depression in Chad, a major source",
+        "Winds carry it thousands of kilometres across the Atlantic",
+        "Rain and gravity drop it onto the Amazon canopy and soil"
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why phosphorus matters",
+      "text": "Plants need phosphorus to grow, and the Amazon’s heavy rain keeps washing it out of the soil. Dust provides only around 13% of what settles on the forest each year, yet without that top-up the losses could eventually deplete the basin, so the forest’s long-term productivity is thought to depend on it."
+    },
+    {
+      "type": "quiz",
+      "question": "Which nutrient does Saharan dust bring to the Amazon?",
+      "options": [
+        "Nitrogen",
+        "Phosphorus",
+        "Salt",
+        "Carbon"
+      ],
+      "answer": 1,
+      "explanation": "Phosphorus, which tropical rain keeps washing out of the soil. Dust supplies only about 13% of what arrives, but it helps offset that loss."
+    }
+  ],
+  "tags": [
+    "sahara",
+    "amazon",
+    "dust"
+  ],
+  "source": {
+    "label": "Wikipedia: Saharan dust",
+    "url": "https://en.wikipedia.org/wiki/Saharan_dust"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

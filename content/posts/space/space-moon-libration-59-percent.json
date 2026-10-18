@@ -1,0 +1,58 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-moon-libration-59-percent",
+  "field": "space",
+  "title": "We can see 59% of the Moon from Earth, not just half",
+  "emoji": "🌗",
+  "body": "The Moon keeps the same face toward Earth, but not perfectly. Its orbit is an ellipse, so its steady spin and its varying orbital speed drift out of step, and the Moon appears to nod side to side by up to about 7.9°. Its axis is tilted by about 6.7° to its orbit, so it also nods up and down, by up to about 6.8°. And because you watch from Earth’s surface rather than its centre, Earth’s rotation adds another small peek of under a degree. Together these **librations** let patient observers map about 59% of the lunar surface.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "The Moon’s orbit isn’t a circle. What does that do to our view?",
+      "answer": "It lets us peek around the Moon’s edges",
+      "detail": "Its spin is steady but its orbital speed isn’t, so the two drift out of step by up to 7°54′ and we see a little way round each side."
+    },
+    {
+      "type": "list",
+      "heading": "Three nods",
+      "style": "bullets",
+      "items": [
+        "Side to side, up to 7°54′: the orbit is an ellipse, so spin and orbit drift out of step",
+        "Up and down, up to 6°50′: the spin axis is tilted about 6.7° to the orbit",
+        "Daily, under 1°: Earth’s rotation carries you across its width"
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "59%",
+      "label": "of the Moon’s surface visible from Earth over time",
+      "text": "Never all at once: at any moment you see half. The extra 9% comes in slivers along the edges."
+    },
+    {
+      "type": "quiz",
+      "question": "Why do we also see a little past the Moon’s north and south poles?",
+      "options": [
+        "Its spin axis is tilted to its orbit",
+        "Earth’s axis is tilted",
+        "The Moon wobbles at random",
+        "The Sun pulls it over"
+      ],
+      "answer": 0,
+      "explanation": "The Moon’s axis is tilted about 6.7° relative to its orbit, so over a month we look a bit over the top, then a bit under the bottom, up to 6°50′."
+    }
+  ],
+  "tags": [
+    "moon",
+    "libration",
+    "orbits"
+  ],
+  "source": {
+    "label": "Wikipedia: Libration",
+    "url": "https://en.wikipedia.org/wiki/Libration"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

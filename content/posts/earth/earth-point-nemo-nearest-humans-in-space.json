@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-point-nemo-nearest-humans-in-space",
+  "field": "earth",
+  "title": "At one spot in the Pacific, the nearest people are often astronauts",
+  "emoji": "🛰️",
+  "body": "Point Nemo, at 48°52.6′S 123°23.6′W, is the place in the ocean farthest from any land: the nearest shores are about 2,688 km away in three directions. It is so remote that when the International Space Station passes overhead, about 400 km up, its crew are sometimes the **closest human beings**. The spot was calculated in 1992 by the Croatian survey engineer Hrvoje Lukatela and named after Jules Verne’s Captain Nemo; nemo is Latin for ‘nobody’. Space agencies use the empty ocean around it as a spacecraft cemetery, steering hundreds of retired satellites and stations to fall there.",
+  "slides": [
+    {
+      "type": "stat",
+      "value": "2,688 km",
+      "label": "from Point Nemo to the nearest land, in three directions",
+      "text": "For comparison, the International Space Station orbits only about 400 km above the surface."
+    },
+    {
+      "type": "list",
+      "heading": "The three nearest shores",
+      "style": "bullets",
+      "items": [
+        "Ducie Island, an atoll of the Pitcairn Islands, to the north",
+        "Motu Nui, an islet off Easter Island, to the north-east",
+        "Maher Island, off the coast of Antarctica, to the south"
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Spacecraft cemetery",
+      "text": "Falling spacecraft are aimed at the ocean around Point Nemo because almost nothing is there: no regular shipping or air routes pass within about 400 km. Hundreds of decommissioned satellites, space stations and other spacecraft have been brought down into this stretch of the South Pacific."
+    },
+    {
+      "type": "quiz",
+      "question": "What does ‘nemo’ mean in Latin?",
+      "options": [
+        "Nobody",
+        "Far away",
+        "Sailor",
+        "The deep"
+      ],
+      "answer": 0,
+      "explanation": "The point is named after Jules Verne’s Captain Nemo, whose name is Latin for ‘nobody’. H. P. Lovecraft also placed his sunken city R’lyeh nearby."
+    }
+  ],
+  "tags": [
+    "pacific",
+    "geography",
+    "iss"
+  ],
+  "source": {
+    "label": "Wikipedia: Point Nemo",
+    "url": "https://en.wikipedia.org/wiki/Point_Nemo"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-statue-of-liberty-was-brown",
+  "field": "chemistry",
+  "title": "The Statue of Liberty was shiny reddish-brown when it was unveiled",
+  "emoji": "🗽",
+  "body": "The statue is a skin of copper only 2.4 mm thick over Gustave Eiffel’s iron framework, and fresh copper is shiny and reddish-brown. After the dedication on 28 October 1886 the metal slowly reacted with air, water and acidic city pollution; shortly after 1900 a green **patina** began to spread, and by 1906 it covered the whole statue. Congress, believing the green was corrosion eating the metal, authorised $62,800 for repairs and a coat of paint. The public protested, and the Army Corps of Engineers found that the patina actually protects the copper beneath, so the statue was painted only on the inside.",
+  "slides": [
+    {
+      "type": "timeline",
+      "heading": "From brown to green",
+      "events": [
+        {
+          "when": "Oct 1886",
+          "text": "Dedicated: a shiny, reddish-brown copper statue"
+        },
+        {
+          "when": "1902",
+          "text": "Newspapers notice the green patches spreading"
+        },
+        {
+          "when": "1906",
+          "text": "The patina covers the entire statue; Congress funds a paint job"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "What the green is",
+      "text": "Copper reacts with oxygen, water and acidic pollution to form a crust of green copper compounds called verdigris. Unlike rust, which flakes off iron and exposes fresh metal, the patina stays put and shields the metal below, so the reaction almost stops."
+    },
+    {
+      "type": "stat",
+      "value": "2.4 mm",
+      "label": "thickness of the statue’s copper skin",
+      "text": "Thin enough to keep the 46-metre statue light; thick enough that, sealed by its patina, it has stood since 1886."
+    },
+    {
+      "type": "quiz",
+      "question": "Why was the statue painted only on the inside in 1906?",
+      "options": [
+        "The patina was found to protect it",
+        "Paint wouldn’t stick to copper",
+        "The outside was too high to reach",
+        "France objected"
+      ],
+      "answer": 0,
+      "explanation": "The Army Corps of Engineers concluded the green patina protects the copper skin and makes the statue beautiful, so only the interior got paint."
+    }
+  ],
+  "tags": [
+    "copper",
+    "patina",
+    "corrosion"
+  ],
+  "source": {
+    "label": "Wikipedia: Statue of Liberty",
+    "url": "https://en.wikipedia.org/wiki/Statue_of_Liberty"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

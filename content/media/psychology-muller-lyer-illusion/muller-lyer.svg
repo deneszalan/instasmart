@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="system-ui, sans-serif">
+  <text x="540" y="110" fill="#fff" font-size="58" font-weight="800" text-anchor="middle">Same length, every time</text>
+  <text x="540" y="260" fill="#fff" fill-opacity="0.9" font-size="40" font-weight="700" text-anchor="middle">Fins out: looks longer</text>
+  <g stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="240" y1="380" x2="840" y2="380"/>
+    <polyline points="170,310 240,380 170,450"/>
+    <polyline points="910,310 840,380 910,450"/>
+    <line x1="240" y1="700" x2="840" y2="700"/>
+    <polyline points="310,630 240,700 310,770"/>
+    <polyline points="770,630 840,700 770,770"/>
+  </g>
+  <g stroke="#fde047" stroke-width="5" stroke-dasharray="12 14" stroke-linecap="round">
+    <line x1="240" y1="300" x2="240" y2="800"/>
+    <line x1="840" y1="300" x2="840" y2="800"/>
+  </g>
+  <text x="540" y="880" fill="#fff" fill-opacity="0.9" font-size="40" font-weight="700" text-anchor="middle">Fins in: looks shorter</text>
+  <text x="540" y="990" fill="#fff" fill-opacity="0.8" font-size="34" text-anchor="middle">The dashed lines show the shafts start and end together</text>
+</svg>

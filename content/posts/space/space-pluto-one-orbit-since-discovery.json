@@ -1,0 +1,73 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-pluto-one-orbit-since-discovery",
+  "field": "space",
+  "title": "Pluto hasn’t completed a single orbit since it was discovered",
+  "emoji": "🔭",
+  "body": "Clyde Tombaugh spotted Pluto in 1930, and it is still on its first lap. A Plutonian year lasts 247.94 Earth years, so the orbit that was under way at discovery won’t close until around 2178. The path is also lopsided, ranging from about 30 to 49 times the Earth–Sun distance, which is why Pluto was **closer to the Sun than Neptune** from February 1979 to February 1999. In 2006 the International Astronomical Union redefined ‘planet’ and Pluto became a dwarf planet; in 2015 New Horizons flew past it after a 3,462-day journey.",
+  "slides": [
+    {
+      "type": "timeline",
+      "heading": "One lap, still running",
+      "events": [
+        {
+          "when": "1930",
+          "text": "Discovered by Clyde Tombaugh"
+        },
+        {
+          "when": "1979–1999",
+          "text": "Closer to the Sun than Neptune"
+        },
+        {
+          "when": "2006",
+          "text": "Reclassified as a dwarf planet"
+        },
+        {
+          "when": "2015",
+          "text": "New Horizons flies past"
+        },
+        {
+          "when": "~2178",
+          "text": "First full orbit since discovery"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "247.94",
+      "label": "Earth years in one Plutonian year",
+      "text": "Pluto’s distance from the Sun swings between about 30 and 49 astronomical units along the way."
+    },
+    {
+      "type": "text",
+      "heading": "Small world",
+      "text": "Pluto’s diameter is about 2,377 km. It has roughly one-sixth the mass of our Moon and a third of its volume, yet it has five known moons of its own; the largest and closest is Charon."
+    },
+    {
+      "type": "quiz",
+      "question": "Why was Pluto closer to the Sun than Neptune from 1979 to 1999?",
+      "options": [
+        "Neptune drifted outward",
+        "Pluto’s orbit is stretched",
+        "Neptune captured Pluto",
+        "A measurement error"
+      ],
+      "answer": 1,
+      "explanation": "Pluto’s orbit ranges from about 30 to 49 astronomical units, so for about 20 years of each lap it dips inside Neptune’s path."
+    }
+  ],
+  "tags": [
+    "pluto",
+    "orbits",
+    "dwarfplanets"
+  ],
+  "source": {
+    "label": "Wikipedia: Pluto",
+    "url": "https://en.wikipedia.org/wiki/Pluto"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

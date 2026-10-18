@@ -1,0 +1,58 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-naked-mole-rat-no-oxygen",
+  "field": "biology",
+  "title": "A naked mole-rat can survive 18 minutes with no oxygen at all",
+  "emoji": "🐀",
+  "body": "Naked mole-rats live in crowded, poorly ventilated burrows in East Africa, where oxygen runs low and carbon dioxide runs high. In a zero-oxygen atmosphere they survive 18 minutes apparently unharmed, and in air with only 5% oxygen, about a quarter of normal, they last at least five hours. Their trick is to **switch fuel**: when oxygen is gone, their cells break down fructose instead of glucose through a pathway that needs no oxygen, producing lactic acid. How they tolerate the resulting acid build-up without tissue damage was still unknown as of 2017.",
+  "slides": [
+    {
+      "type": "stat",
+      "value": "18 min",
+      "label": "survived in a zero-oxygen atmosphere, apparently without harm",
+      "text": "At 5% oxygen, about a quarter of what normal air holds, a naked mole-rat lasts at least five hours."
+    },
+    {
+      "type": "text",
+      "heading": "Running on fructose",
+      "text": "Most mammal cells rely on glucose, and the main way of burning it stalls without oxygen. The naked mole-rat instead feeds fructose into anaerobic glycolysis, a pathway that works with no oxygen at all, and makes lactic acid as the by-product."
+    },
+    {
+      "type": "list",
+      "heading": "More mole-rat oddities",
+      "style": "bullets",
+      "items": [
+        "The first mammal found to be eusocial: one queen breeds, with one to three males",
+        "Feels no pain from acid or from capsaicin, the heat of chillies",
+        "Lives more than 30 years, longer than any other rodent",
+        "Nearly cold-blooded: its body temperature tracks the burrow"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Which fuel keeps a naked mole-rat going when the oxygen runs out?",
+      "options": [
+        "Stored fat",
+        "Fructose",
+        "Protein from muscle",
+        "Glucose, as usual"
+      ],
+      "answer": 1,
+      "explanation": "With no oxygen, its cells push fructose through anaerobic glycolysis, a pathway that needs no oxygen, producing lactic acid."
+    }
+  ],
+  "tags": [
+    "mammals",
+    "metabolism",
+    "adaptation"
+  ],
+  "source": {
+    "label": "Wikipedia: Naked mole-rat",
+    "url": "https://en.wikipedia.org/wiki/Naked_mole-rat"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="system-ui, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#fff"/>
+    </marker>
+  </defs>
+  <text x="540" y="80" fill="#fff" font-size="56" font-weight="800" text-anchor="middle">Which way does the tail go?</text>
+  <ellipse cx="660" cy="540" rx="400" ry="300" fill="none" stroke="#fff" stroke-width="5" stroke-dasharray="14 14" stroke-opacity="0.7"/>
+  <circle cx="170" cy="540" r="70" fill="#fff" fill-opacity="0.9"/>
+  <text x="170" y="553" fill="#1e1b4b" font-size="36" font-weight="800" text-anchor="middle">Sun</text>
+  <g fill="#fff" fill-opacity="0.6">
+    <polygon points="394,779 412,761 524,890"/>
+    <polygon points="260,527 260,553 430,540"/>
+    <polygon points="412,319 394,301 524,190"/>
+    <polygon points="865,292 855,268 954,245"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="403" cy="770" r="13"/>
+    <circle cx="260" cy="540" r="13"/>
+    <circle cx="403" cy="310" r="13"/>
+    <circle cx="860" cy="280" r="13"/>
+  </g>
+  <line x1="740" y1="840" x2="620" y2="840" stroke="#fff" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="600" y1="240" x2="720" y2="240" stroke="#fff" stroke-width="8" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="690" y="790" fill="#fff" font-size="34" text-anchor="middle">direction of travel</text>
+  <text x="300" y="945" fill="#fff" font-size="36" font-weight="700" text-anchor="start">arriving: tail behind</text>
+  <text x="110" y="200" fill="#fff" font-size="36" font-weight="700" text-anchor="start">leaving: tail first</text>
+  <text x="540" y="1040" fill="#fff" font-size="36" font-weight="800" text-anchor="middle">The tail always points away from the Sun</text>
+</svg>

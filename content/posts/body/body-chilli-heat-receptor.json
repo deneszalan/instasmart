@@ -1,0 +1,62 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-chilli-heat-receptor",
+  "field": "body",
+  "title": "Chilli doesn’t burn you; it trips the same nerve sensor as real heat",
+  "emoji": "🌶️",
+  "body": "A chilli’s heat comes from capsaicin, which binds to TRPV1, a channel on pain-sensing nerve fibres. The same channel opens when tissue is heated above about **43 °C**, exposed to acid or scraped, so the brain receives the alarm it would get from a burn, with no burn behind it. David Julius’s group identified the channel in 1997, and he shared the 2021 Nobel Prize in Physiology or Medicine. Birds carry a version of TRPV1 that ignores capsaicin, which suits the plant: birds swallow chilli seeds whole and spread them, while mammals’ molars destroy them.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Above what temperature does the TRPV1 channel start to open?",
+      "min": 20,
+      "max": 80,
+      "step": 1,
+      "answer": 43,
+      "unit": "°C",
+      "explanation": "TRPV1 opens at temperatures greater than 43 °C, and also in acid and with capsaicin, so the brain gets the same signal from all three."
+    },
+    {
+      "type": "list",
+      "heading": "What opens the TRPV1 channel",
+      "style": "bullets",
+      "items": [
+        "Heat above 43 °C",
+        "Acidic conditions",
+        "Capsaicin, the irritating compound in hot chillies",
+        "Allyl isothiocyanate, the pungent compound in mustard and wasabi"
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Mammals vs birds",
+      "left": {
+        "label": "Mammals",
+        "text": "TRPV1 responds to capsaicin: eating chilli feels like heat. Molars destroy the seeds."
+      },
+      "right": {
+        "label": "Birds",
+        "text": "Their TRPV1 does not respond to capsaicin. They swallow the fruit and disperse the seeds intact."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Where the heat sits",
+      "text": "The seeds themselves make no capsaicin: the highest concentration is in the white pith of the inner wall where the seeds attach. Capsaicin and dihydrocapsaicin, the hottest members of the family, rate 16 million Scoville heat units."
+    }
+  ],
+  "tags": [
+    "senses",
+    "pain",
+    "chilli"
+  ],
+  "source": {
+    "label": "Wikipedia: TRPV1",
+    "url": "https://en.wikipedia.org/wiki/TRPV1"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

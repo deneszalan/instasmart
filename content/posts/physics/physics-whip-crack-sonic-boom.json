@@ -1,0 +1,58 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-whip-crack-sonic-boom",
+  "field": "physics",
+  "title": "A whip cracks because its tip breaks the sound barrier",
+  "emoji": "💥",
+  "body": "The crack of a whip is a tiny sonic boom. A flick of the handle sends a loop travelling down the whip, and because the whip tapers toward its light, thin tip, the loop keeps speeding up as it goes, reaching more than 30 times the speed of the handle’s movement. By the time it reaches the end it is moving faster than sound, about 343 metres per second in air at 20 °C, and the air answers with a **small sonic boom**. Nothing is being struck; the noise is the air itself.",
+  "slides": [
+    {
+      "type": "stat",
+      "value": "343 m/s",
+      "label": "the speed of sound in air at 20 °C, which a whip’s tip beats",
+      "text": "That is about 1,235 km/h. Whips are often called the first human-made objects to break the sound barrier, though that claim is hard to pin down."
+    },
+    {
+      "type": "list",
+      "heading": "How the crack happens",
+      "style": "steps",
+      "items": [
+        "Flick the handle: a loop forms and runs down the whip",
+        "The whip tapers, so the loop speeds up as it reaches lighter material",
+        "Near the tip it passes the speed of sound",
+        "The air can’t get out of the way in time: a small sonic boom"
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Tested on camera",
+      "text": "MythBusters filmed a whip with a high-speed camera and confirmed the tip passes the speed of sound. Some long-tailed dinosaurs have been proposed as prehistoric whip-crackers, but newer models suggest diplodocid tails probably could not break the sound barrier."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does the loop speed up as it travels down the whip?",
+      "options": [
+        "The whip gets thinner and lighter",
+        "Gravity pulls it downward",
+        "The handle keeps pushing it",
+        "Air drags it along"
+      ],
+      "answer": 0,
+      "explanation": "The whip tapers, so the loop runs into ever lighter material and accelerates, reaching more than 30 times the speed of the handle’s movement."
+    }
+  ],
+  "tags": [
+    "sound",
+    "whips",
+    "sonicboom"
+  ],
+  "source": {
+    "label": "Wikipedia: Whip",
+    "url": "https://en.wikipedia.org/wiki/Whip"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

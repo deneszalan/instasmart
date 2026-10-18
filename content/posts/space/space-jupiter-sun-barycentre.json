@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-jupiter-sun-barycentre",
+  "field": "space",
+  "title": "Jupiter is so heavy that the Sun orbits a point outside itself",
+  "emoji": "🪐",
+  "body": "Planets don’t simply circle the Sun; each pair swings around their shared centre of mass. For most planets that point lies deep inside the Sun, but Jupiter has 2.5 times the mass of all the other planets combined, slightly less than a thousandth of the Sun’s mass. That is enough to put the Sun–Jupiter balance point at **1.068 solar radii** from the Sun’s centre, just above its visible surface. So every 11.86 years the Sun completes a small loop around a point in empty space. Astronomers hunt for distant planets by spotting exactly this kind of stellar wobble.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "barycentre.svg",
+      "alt": "A large disc for the Sun with its centre marked, and a dot just outside its surface labelled balance point, 1.068 radii from the centre. Jupiter is drawn small and far away, not to scale.",
+      "caption": "The Sun and Jupiter both circle the balance point; for the Sun that is a small loop just outside its surface.",
+      "fit": "contain"
+    },
+    {
+      "type": "stat",
+      "value": "2.5×",
+      "label": "Jupiter’s mass compared with all the other planets put together",
+      "text": "Even so, it is slightly less than one-thousandth of the Sun’s mass, which is why the balance point sits so close to the Sun."
+    },
+    {
+      "type": "text",
+      "heading": "A wobbling star",
+      "text": "Seen from far away, our Sun shifts back and forth around that balance point once every 11.86 years, the length of Jupiter’s orbit. Hunting for the same tiny wobble in other stars, through shifts in the colour of their light, is one of the main ways astronomers discover planets around them."
+    },
+    {
+      "type": "quiz",
+      "question": "How often does the Sun complete one loop around the balance point?",
+      "options": [
+        "Once a year",
+        "Every 11.86 years",
+        "Every 248 years",
+        "Once a day"
+      ],
+      "answer": 1,
+      "explanation": "The loop follows Jupiter’s orbit, which takes 11.86 years. Every planet tugs the Sun a little, but Jupiter’s pull dominates."
+    }
+  ],
+  "tags": [
+    "jupiter",
+    "sun",
+    "orbits"
+  ],
+  "source": {
+    "label": "Wikipedia: Jupiter",
+    "url": "https://en.wikipedia.org/wiki/Jupiter"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

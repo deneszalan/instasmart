@@ -1,0 +1,58 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-cant-tickle-yourself",
+  "field": "body",
+  "title": "You can’t tickle yourself because your brain predicts the touch",
+  "emoji": "😂",
+  "body": "In 1998, Sarah-Jayne Blakemore and colleagues used brain imaging to study the self-tickle response. When volunteers used a joystick to control a small tickling robot themselves, they could not make themselves laugh. The explanation: the **cerebellum**, which helps coordinate movement, sends the somatosensory cortex precise information about where your own movement will land, and a cortical mechanism, still not fully identified, then damps the sensation. Another person’s fingers can’t be forecast, so the full surprise arrives on your skin.",
+  "slides": [
+    {
+      "type": "list",
+      "heading": "Why self-tickling fails",
+      "style": "steps",
+      "items": [
+        "You decide to move your hand",
+        "The cerebellum predicts the touch and tells the somatosensory cortex",
+        "That predicted sensation is damped, so it barely registers",
+        "Another person’s hand can’t be predicted: full tickle"
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "In 1897, psychologists G. Stanley Hall and Arthur Allin split tickling into two kinds. What are they called?",
+      "answer": "Knismesis and gargalesis",
+      "detail": "Knismesis is the light, moving itch; gargalesis the harsher, deeper pressure that makes you laugh."
+    },
+    {
+      "type": "compare",
+      "heading": "Two kinds of tickle",
+      "left": {
+        "label": "Knismesis",
+        "text": "A mildly annoying sensation caused by a light movement on the skin, like an insect crawling."
+      },
+      "right": {
+        "label": "Gargalesis",
+        "text": "A laughter-provoking feeling from harsher, deeper pressure. Thought limited to humans and other primates, and perhaps rats."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Robots and rats",
+      "text": "In another experiment, people laughed just as much when they believed a machine was tickling them as when they thought a person was. And some research indicates that rats can be tickled too."
+    }
+  ],
+  "tags": [
+    "brain",
+    "touch",
+    "senses"
+  ],
+  "source": {
+    "label": "Wikipedia: Tickling",
+    "url": "https://en.wikipedia.org/wiki/Tickling"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

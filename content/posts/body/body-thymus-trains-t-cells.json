@@ -1,0 +1,73 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-thymus-trains-t-cells",
+  "field": "body",
+  "title": "Your T cells train in an organ that peaks at puberty and then withers",
+  "emoji": "🛡️",
+  "body": "T cells are named after the thymus, the organ behind your breastbone where they mature. Inside, young cells face a brutal exam: those whose receptors fail to react die, and so do those that react strongly to the body’s own antigens, a guard against self-attack. The thymus grows until puberty, when it weighs **20 to 50 grams**, but after the first year of life its output of T cells begins to fall. Fat and connective tissue fill it in; by old age it weighs 5 to 15 grams and can be hard to find, though some T cell production continues through adult life.",
+  "slides": [
+    {
+      "type": "compare",
+      "heading": "Weight through life",
+      "left": {
+        "label": "At puberty",
+        "text": "20 to 50 grams, its relative maximum size."
+      },
+      "right": {
+        "label": "In old age",
+        "text": "5 to 15 grams, with fat and connective tissue filling much of the space. It may be difficult to detect."
+      }
+    },
+    {
+      "type": "list",
+      "heading": "The exam inside",
+      "style": "steps",
+      "items": [
+        "Immature T cells arrive from the bone marrow and start making receptors",
+        "No reaction, or a weak one: the cell dies",
+        "Strong reaction to the body’s own antigens: the cell dies",
+        "The survivors leave as T cells ready to fight infection"
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "Slow to be understood",
+      "events": [
+        {
+          "when": "Antiquity",
+          "text": "Known to the ancient Greeks; Galen noted it changes size over a lifetime"
+        },
+        {
+          "when": "1961",
+          "text": "Jacques Miller discovers its immune role. Until then it was dismissed as an evolutionary accident"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What happens to a new T cell that reacts strongly to the body’s own antigens?",
+      "options": [
+        "It dies in the thymus",
+        "It becomes a memory cell",
+        "It is sent to the spleen",
+        "It divides faster"
+      ],
+      "answer": 0,
+      "explanation": "Thymocytes that react strongly to self antigens die by apoptosis. Only cells that react, but not against the body itself, survive and leave."
+    }
+  ],
+  "tags": [
+    "immunity",
+    "organs",
+    "thymus"
+  ],
+  "source": {
+    "label": "Wikipedia: Thymus",
+    "url": "https://en.wikipedia.org/wiki/Thymus"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

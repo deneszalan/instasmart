@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-base-rate-fallacy",
+  "field": "math",
+  "title": "A 99%-accurate alarm can be wrong 99 times out of 100 when it goes off",
+  "emoji": "🚨",
+  "body": "Imagine a city of a million, 100 of them terrorists, and a camera that spots 99% of terrorists and wrongly flags 1% of everyone else. About 99 of the 100 terrorists trigger the alarm, but so do about 9,999 of the 999,900 innocent people, so someone who sets it off is a terrorist in only about 99 of 10,098 cases, under 1%. Expecting 99% instead is the **base rate fallacy**: ignoring how rare the thing you are hunting is. Bayes’ theorem gives the right answer, though it isn’t how most people think; in court the same slip is the prosecutor’s fallacy.",
+  "slides": [
+    {
+      "type": "list",
+      "heading": "Do the count",
+      "style": "steps",
+      "items": [
+        "A million people: 100 terrorists, 999,900 not",
+        "99 of the 100 terrorists trip the alarm",
+        "1% of everyone else also trips it: about 9,999 people",
+        "So about 99 of 10,098 alarms are right: under 1%"
+      ]
+    },
+    {
+      "type": "estimate",
+      "question": "1 in 1,000 drivers is drunk; the breathalyser wrongly flags 5% of sober ones. Chance a flagged driver is drunk?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 2,
+      "unit": "%",
+      "explanation": "Many people say 95%. It is about 2%: for every drunk driver caught, about 50 sober drivers also fail the test."
+    },
+    {
+      "type": "text",
+      "heading": "The breathalyser version",
+      "text": "Per 1,000 drivers there is one drunk driver, who fails the test, and about 50 sober drivers who also fail, 5% of 999. So of roughly 51 failed tests, just one belongs to a drunk driver: about 2%. The same arithmetic, written formally, is Bayes’ theorem."
+    },
+    {
+      "type": "text",
+      "heading": "In court",
+      "text": "The prosecutor’s fallacy is the same slip in a courtroom: assuming that the chance of a random match, such as a shared blood type, equals the chance that the defendant is innocent. It ignores how many other people in the population would match too."
+    }
+  ],
+  "tags": [
+    "probability",
+    "bayes",
+    "statistics"
+  ],
+  "source": {
+    "label": "Wikipedia: Base rate fallacy",
+    "url": "https://en.wikipedia.org/wiki/Base_rate_fallacy"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
