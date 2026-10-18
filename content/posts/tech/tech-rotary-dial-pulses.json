@@ -1,0 +1,131 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-rotary-dial-pulses",
+  "field": "tech",
+  "title": "Dialling 0 on a rotary phone sent ten clicks down the line",
+  "emoji": "☎️",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Rotarydial.JPG/960px-Rotarydial.JPG",
+    "alt": "Close-up of a telephone's rotary dial with numbered finger holes and a curved metal finger stop.",
+    "credit": "R Sull / Dhscommtech · CC BY-SA 3.0"
+  },
+  "body": "A rotary dial is a pulse generator. You put a finger in a hole, turn the dial clockwise to the finger stop and let go; a spring returns it, a governor keeps the speed steady, and a switch interrupts the line current once per pulse at about **ten pulses per second**. Each digit sent that many pulses, so 1 was one click and 0 was ten, and the exchange counted the clicks to route your call. The first dial installation came with a 99-line automatic exchange in La Porte, Indiana, in 1892, built on Almon Strowger's exchange patent; the familiar finger-hole dial arrived about 1907 and ruled until push-button Touch-Tone phones, first shown at the 1962 World's Fair, took over from the 1960s on.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "At the standard rate, how many pulses per second did a rotary dial send?",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "answer": 10,
+      "unit": "pulses/s",
+      "explanation": "Ten pulses per second at ordinary telephones, with exchanges usually accepting 9 to 13. Operator consoles often pulsed faster, at 18 per second."
+    },
+    {
+      "type": "flow",
+      "heading": "What happens when you let the dial go",
+      "steps": [
+        {
+          "icon": "👆",
+          "label": "You turn the dial to the finger stop"
+        },
+        {
+          "icon": "🌀",
+          "label": "A spring returns it at governed speed"
+        },
+        {
+          "icon": "🔌",
+          "label": "Contacts break the current once per pulse"
+        },
+        {
+          "icon": "🏢",
+          "label": "The exchange counts the pulses"
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "heading": "Pulses sent for each digit, North American scheme",
+      "items": [
+        {
+          "label": "Digit 1",
+          "value": 1
+        },
+        {
+          "label": "Digit 5",
+          "value": 5
+        },
+        {
+          "label": "Digit 9",
+          "value": 9
+        },
+        {
+          "label": "Digit 0",
+          "value": 10,
+          "emphasis": true
+        }
+      ],
+      "unit": "pulses",
+      "note": "So a number full of zeros and nines took noticeably longer to dial"
+    },
+    {
+      "type": "list",
+      "heading": "Not everywhere the same",
+      "style": "bullets",
+      "items": [
+        "Sweden: 0 sent one pulse, 9 sent ten",
+        "New Zealand: ten minus the digit, so 7 sent three",
+        "Norway used the American way, except Oslo"
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "From Strowger to Touch-Tone",
+      "events": [
+        {
+          "when": "1891",
+          "text": "Strowger files his automatic exchange patent"
+        },
+        {
+          "when": "1892",
+          "text": "First dial exchange, La Porte, Indiana"
+        },
+        {
+          "when": "c. 1907",
+          "text": "The finger-hole dial we know appears"
+        },
+        {
+          "when": "1962",
+          "text": "Touch-Tone shown at the World's Fair"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "On a New Zealand rotary phone, how many pulses did dialling 7 send?",
+      "options": [
+        "Three",
+        "Seven",
+        "Ten",
+        "One"
+      ],
+      "answer": 0,
+      "explanation": "New Zealand dials sent ten minus the digit, so 7 produced three pulses. Sweden went the other way, sending one pulse for 0."
+    }
+  ],
+  "tags": [
+    "telephones",
+    "signalling",
+    "techhistory",
+    "strowger"
+  ],
+  "source": {
+    "label": "Wikipedia: Rotary dial",
+    "url": "https://en.wikipedia.org/wiki/Rotary_dial"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

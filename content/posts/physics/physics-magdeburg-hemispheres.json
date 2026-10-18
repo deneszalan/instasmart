@@ -1,0 +1,126 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-magdeburg-hemispheres",
+  "field": "physics",
+  "title": "In 1654, thirty horses couldn’t pull apart two copper bowls held by nothing but air",
+  "emoji": "🐎",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Magdeburg_hemispheres-CnAM_8075-IMG_6605.JPG/960px-Magdeburg_hemispheres-CnAM_8075-IMG_6605.JPG",
+    "alt": "A pair of copper Magdeburg hemispheres with mating rims and a stopcock, photographed on a plain background.",
+    "credit": "Rama · CC BY-SA 3.0 fr"
+  },
+  "body": "On 8 May 1654, before Emperor Ferdinand III and the Imperial Diet at Regensburg, Otto von Guericke pressed two copper hemispheres about 50 cm across rim to rim, pumped the air out of them with his newly invented air pump, and hitched up two teams of fifteen horses. They could not pull the halves apart; the moment he opened the valve and let air back in, the bowls fell open by themselves. Nothing inside was holding them: it was the weight of the atmosphere outside, pressing on every square centimetre of the shells with nothing pushing back. With a perfect vacuum the force would be about **20 kilonewtons**, the weight of a two-tonne car, though Guericke’s pump never got that far.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How many horses pulled on the hemispheres at Regensburg in 1654?",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "answer": 30,
+      "unit": "horses",
+      "explanation": "Thirty, in two teams of fifteen, and the hemispheres stayed shut until Guericke opened the valve. In 1656 he repeated the show in Magdeburg with sixteen horses."
+    },
+    {
+      "type": "flow",
+      "heading": "How the trick works",
+      "steps": [
+        {
+          "icon": "🥣",
+          "label": "Two copper bowls are pressed rim to rim"
+        },
+        {
+          "icon": "🔧",
+          "label": "A piston pump sucks the air out"
+        },
+        {
+          "icon": "🌍",
+          "label": "Outside air presses on the whole shell"
+        },
+        {
+          "icon": "🚫",
+          "label": "Nothing pushes back from inside"
+        },
+        {
+          "icon": "🐎",
+          "label": "The horses cannot pull them apart"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Suction or pressure?",
+      "left": {
+        "label": "It seems",
+        "text": "The vacuum inside sucks the two halves together."
+      },
+      "right": {
+        "label": "Really",
+        "text": "A vacuum pulls on nothing. The air outside pushes on the shells, with about the weight of a two-tonne car over a 50 cm sphere, and nothing inside pushes back."
+      }
+    },
+    {
+      "type": "stat",
+      "value": "20 kN",
+      "label": "the force holding 50 cm hemispheres together with a perfect vacuum inside",
+      "text": "Force = air pressure × π r², with r the radius of the rim. Guericke’s piston pump leaked, so the real vacuum, and the real force, were smaller."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Pranishnikoff_Flammarion_Experience_des_hemispheres_de_Magdeburg.jpg/960px-Pranishnikoff_Flammarion_Experience_des_hemispheres_de_Magdeburg.jpg",
+      "alt": "A 19th-century engraving of two teams of horses straining to pull apart the Magdeburg hemispheres while onlookers watch.",
+      "caption": "The horses straining at the hemispheres, as imagined in an 1888 engraving for a book by Camille Flammarion.",
+      "fit": "cover",
+      "credit": "Ivan Pranishnikoff · Public domain"
+    },
+    {
+      "type": "timeline",
+      "heading": "Guericke on tour",
+      "events": [
+        {
+          "when": "8 May 1654",
+          "text": "Regensburg: thirty horses fail"
+        },
+        {
+          "when": "1656",
+          "text": "Magdeburg: sixteen horses fail"
+        },
+        {
+          "when": "1657",
+          "text": "Gaspar Schott publishes the experiment"
+        },
+        {
+          "when": "1663",
+          "text": "Berlin: twenty-four horses, for the Elector"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What actually held the hemispheres together?",
+      "options": [
+        "Air pressure from outside",
+        "Suction from the vacuum inside",
+        "Magnetism in the copper",
+        "Grease on the rims"
+      ],
+      "answer": 0,
+      "explanation": "With the air pumped out, nothing inside balanced the push of the atmosphere on the outside of the shells. Let air back in and the push is equal on both sides, so the halves fall apart."
+    }
+  ],
+  "tags": [
+    "pressure",
+    "vacuum",
+    "air",
+    "experiments"
+  ],
+  "source": {
+    "label": "Wikipedia: Magdeburg hemispheres",
+    "url": "https://en.wikipedia.org/wiki/Magdeburg_hemispheres"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

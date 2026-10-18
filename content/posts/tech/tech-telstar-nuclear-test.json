@@ -1,0 +1,102 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-telstar-nuclear-test",
+  "field": "tech",
+  "title": "The first TV satellite was crippled by a nuclear test fired the day before its launch",
+  "emoji": "📡",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Telstar_satellite-CnAM_35181-IMG_5408-gradient.jpg/960px-Telstar_satellite-CnAM_35181-IMG_5408-gradient.jpg",
+    "alt": "A model of the Telstar satellite: a sphere studded with solar cells and ringed by small antenna windows.",
+    "credit": "Rama · CC BY-SA 3.0 fr"
+  },
+  "body": "**Telstar 1**, built by Bell Labs and launched by NASA on 10 July 1962, was a 77 kg sphere powered by just 14 watts of solar cells. On 23 July it relayed the first publicly available live transatlantic television pictures, opening with the Statue of Liberty and the Eiffel Tower. But on 9 July, the day before launch, the United States had exploded a 1.4-megaton bomb 400 km above the Pacific in the Starfish Prime test, flooding the Van Allen belt with charged particles. That radiation, topped up by further tests including a Soviet one in October, overwhelmed Telstar's transistors; it fell silent in November, was coaxed back in January 1963 and failed for good on 21 February 1963. It is still in orbit.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How much electrical power did Telstar 1's solar cells produce?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 14,
+      "unit": "W",
+      "explanation": "Just 14 watts from the solar cells covering its surface. The satellite was about 88 cm across and weighed about 77 kg."
+    },
+    {
+      "type": "timeline",
+      "heading": "Eight months of Telstar",
+      "events": [
+        {
+          "when": "9 Jul 1962",
+          "text": "Starfish Prime explodes 400 km up"
+        },
+        {
+          "when": "10 Jul 1962",
+          "text": "Telstar 1 launches from Cape Canaveral"
+        },
+        {
+          "when": "23 Jul 1962",
+          "text": "First public live TV across the Atlantic"
+        },
+        {
+          "when": "21 Feb 1963",
+          "text": "Telstar fails for good"
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "heading": "Telstar's stretched orbit: height above Earth",
+      "items": [
+        {
+          "label": "Lowest point",
+          "value": 952
+        },
+        {
+          "label": "Highest point",
+          "value": 5933,
+          "emphasis": true
+        }
+      ],
+      "unit": "km",
+      "note": "One orbit took 2 hours 37 minutes, tilted about 45 degrees to the equator"
+    },
+    {
+      "type": "stat",
+      "value": "30 min",
+      "label": "of transatlantic coverage per 2.5-hour orbit",
+      "text": "Telstar was not geostationary. Ground stations in Maine, Cornwall and Brittany could only use it while it was above the horizon on both sides."
+    },
+    {
+      "type": "text",
+      "heading": "How a bomb killed a satellite",
+      "text": "[Starfish Prime](https://en.wikipedia.org/wiki/Starfish_Prime) created an artificial radiation belt around Earth. The trapped charged particles damaged the solar cells and electronics of six or more satellites, including Telstar 1 and Britain's Ariel 1."
+    },
+    {
+      "type": "quiz",
+      "question": "What finally silenced Telstar 1 in February 1963?",
+      "options": [
+        "Radiation damage to its transistors",
+        "A micrometeoroid strike",
+        "Its batteries ran flat",
+        "A ground-station error"
+      ],
+      "answer": 0,
+      "explanation": "Radiation from high-altitude nuclear tests, starting with Starfish Prime the day before launch, overwhelmed its transistors. The satellite itself is still circling Earth."
+    }
+  ],
+  "tags": [
+    "satellites",
+    "television",
+    "spacerace",
+    "techhistory"
+  ],
+  "source": {
+    "label": "Wikipedia: Telstar",
+    "url": "https://en.wikipedia.org/wiki/Telstar"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
