@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-tasmanian-devil-contagious-cancer",
+  "field": "biology",
+  "title": "Tasmanian devils catch a deadly cancer from each other by biting",
+  "emoji": "🦷",
+  "body": "Most cancers die with the body they grew in, but devil facial tumour disease spreads like an infection. The cancer cells themselves are the germ: when one devil bites another, living tumour cells pass into the wound and keep growing in the new host. Tumours sampled from different devils turned out to be genetically identical, so they all descend from the cells of **one single devil**, most likely its Schwann cells, which wrap nerve fibres. Infected devils usually die within about six months.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Healesville_Sarcophilus_harrisii_in_Healesville_Sanctuary_02.jpg/960px-Healesville_Sarcophilus_harrisii_in_Healesville_Sanctuary_02.jpg",
+    "alt": "A black Tasmanian devil with a white chest band sitting on grass with its jaws wide open, showing its teeth",
+    "credit": "Ymblanter · CC BY-SA 4.0"
+  },
+  "slides": [
+    {
+      "type": "text",
+      "heading": "A cancer that changes hosts",
+      "text": "A devil's immune system should attack cells from another animal, the way a body rejects a badly matched transplant. These tumour cells slip past it: the devil's defences fail to recognise them as foreign, so a bite can seed a new tumour."
+    },
+    {
+      "type": "reveal",
+      "prompt": "Scientists compared tumours taken from many different devils. What did they find?",
+      "answer": "The tumours were genetically identical",
+      "detail": "Every tumour descends from one original devil's cancer, passed on from animal to animal, rather than growing from each new host's own cells."
+    },
+    {
+      "type": "pictogram",
+      "heading": "About 8 in 10 devils lost within two decades",
+      "icon": "🟫",
+      "total": 10,
+      "count": 8,
+      "note": "Down about 80% in the 20 years after the disease was spotted, and over 90% in some areas"
+    },
+    {
+      "type": "timeline",
+      "heading": "How the outbreak unfolded",
+      "events": [
+        { "when": "c. 1986", "text": "Estimated start of the main tumour strain" },
+        { "when": "1996", "text": "A photographer captures devils with facial tumours in northeast Tasmania" },
+        { "when": "2005", "text": "Insurance populations of disease-free devils begin" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Which devils are the most likely to become infected?",
+      "options": ["The fittest adults", "Old, weak devils", "Young joeys", "Devils kept alone"],
+      "answer": 0,
+      "explanation": "Adult devils that are otherwise the fittest are the most susceptible, and researchers found it hits hardest the devils that breed the most."
+    }
+  ],
+  "tags": ["tasmaniandevil", "cancer", "marsupials", "australia"],
+  "source": { "label": "Wikipedia: Devil facial tumour disease", "url": "https://en.wikipedia.org/wiki/Devil_facial_tumour_disease" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

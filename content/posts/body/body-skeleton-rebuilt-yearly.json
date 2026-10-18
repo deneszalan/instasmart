@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-skeleton-rebuilt-yearly",
+  "field": "body",
+  "title": "About a tenth of your skeleton is torn down and rebuilt every year",
+  "emoji": "🦴",
+  "body": "Bone is living tissue that is constantly being replaced. Cells called **osteoclasts** dissolve small patches of old bone, and **osteoblasts** follow behind to lay down fresh bone matrix, which then hardens with minerals. In an adult, about 10% of the skeleton's mass is remodelled like this each year. In a baby's [first year of life](https://en.wikipedia.org/wiki/Bone_remodeling), nearly the whole skeleton gets replaced.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Bone-inside.jpg/960px-Bone-inside.jpg",
+    "alt": "The inside of a broken-open bone, showing a fine spongy mesh of thin bony struts beneath a dense outer wall",
+    "credit": "Daniel Ullrich (Threedots) · CC BY-SA 3.0"
+  },
+  "slides": [
+    {
+      "type": "match",
+      "heading": "Who does what in your bones?",
+      "pairs": [
+        { "left": "Osteoclast", "right": "Breaks old bone down" },
+        { "left": "Osteoblast", "right": "Builds new bone matrix" },
+        { "left": "Cortical bone", "right": "Dense outer layer" },
+        { "left": "Trabecular bone", "right": "Spongy inner mesh" }
+      ],
+      "explanation": "Remodelling is a relay: osteoclasts clear a patch of old bone, then osteoblasts fill it in with new bone."
+    },
+    {
+      "type": "pictogram",
+      "heading": "About 8 in 10 parts of your bone mass is dense cortical bone",
+      "icon": "🦴",
+      "total": 10,
+      "count": 8,
+      "note": "The spongy trabecular bone makes up the other 20%, but has about ten times the surface area"
+    },
+    {
+      "type": "text",
+      "heading": "Bone follows the load",
+      "text": "Repeated stress, such as weight-bearing exercise, makes bone thicken at the points of greatest stress. Exactly how bone senses the load is still debated: one hypothesis is that bone gives off tiny electrical signals when it is squeezed."
+    },
+    {
+      "type": "sort",
+      "heading": "Bones: fact or myth?",
+      "bins": ["Fact", "Myth"],
+      "items": [
+        { "text": "Adult bone is dead, unchanging tissue", "bin": 1 },
+        { "text": "A baby replaces nearly all its skeleton in year one", "bin": 0 },
+        { "text": "Exercise thickens bone where stress is greatest", "bin": 0 },
+        { "text": "Spongy bone has less surface than dense bone", "bin": 1 }
+      ],
+      "explanation": "Bone is rebuilt all the time, and its spongy inner mesh has about ten times the surface area of the dense outer layer."
+    }
+  ],
+  "tags": ["bones", "skeleton", "cells", "anatomy"],
+  "source": { "label": "Wikipedia: Bone", "url": "https://en.wikipedia.org/wiki/Bone" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

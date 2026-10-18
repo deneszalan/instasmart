@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-ether-dome-anaesthesia-1846",
+  "field": "body",
+  "title": "Before anaesthesia, 90 seconds was considered a good time for an amputation",
+  "emoji": "💤",
+  "body": "Pain during surgery could send patients into shock, so surgeons prided themselves on speed. That changed on **16 October 1846** in the operating theatre of Massachusetts General Hospital in Boston. The dentist William Morton had a young printer, Edward Gilbert Abbott, breathe ether vapour, and the surgeon John Collins Warren then painlessly removed part of a tumour from his neck. It was the first public demonstration of ether as a surgical anaesthetic, and the room is now known as the **Ether Dome**.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Inside_the_Ether_Dome_at_Massachusetts_General_Hospital.jpg/960px-Inside_the_Ether_Dome_at_Massachusetts_General_Hospital.jpg",
+    "alt": "Inside the Ether Dome, a round 19th-century operating theatre with steep curved rows of blue seats under a white domed ceiling",
+    "credit": "Kenneth C. Zirkel · CC BY-SA 4.0"
+  },
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "When Abbott woke up after the operation, what did he reportedly say?",
+      "answer": "\"Feels as if my neck's been scratched\"",
+      "detail": "The operation to remove part of a tumour from his neck had been painless."
+    },
+    {
+      "type": "quote",
+      "text": "Gentlemen, this is no humbug.",
+      "attribution": "Surgeon John Collins Warren, turning to the observers, 16 October 1846"
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Ether_Day%2C_or_The_First_Operation_with_Ether_by_Robert_C._Hinckley.jpg/960px-Ether_Day%2C_or_The_First_Operation_with_Ether_by_Robert_C._Hinckley.jpg",
+      "alt": "A painting of a crowd of men in dark 19th-century suits gathered around a patient lying unconscious in a chair in an operating theatre",
+      "caption": "Robert C. Hinckley's painting Ether Day, or The First Operation with Ether, recreating the scene in the dome.",
+      "fit": "cover",
+      "credit": "Robert C. Hinckley · Public domain"
+    },
+    {
+      "type": "quiz",
+      "question": "Ether Day was the first public demonstration. Who had already used ether in an operation, back in 1842?",
+      "options": ["Crawford Long", "William Morton", "John Collins Warren", "Horace Wells"],
+      "answer": 0,
+      "explanation": "Crawford Long removed a tumour from a young man's neck under ether in 1842, but he did not publish anything until he read about Morton's demonstration."
+    },
+    {
+      "type": "spectrum",
+      "heading": "The race to painless surgery",
+      "min": 1840,
+      "max": 1850,
+      "format": "year",
+      "marks": [
+        { "label": "Long's ether", "value": 1842 },
+        { "label": "Wells's laughing gas", "value": 1845 },
+        { "label": "Ether Day", "value": 1846, "emphasis": true }
+      ],
+      "note": "Wells's 1845 nitrous oxide demonstration was dismissed as humbug when his patient cried out"
+    },
+    {
+      "type": "text",
+      "heading": "Why it changed surgery",
+      "text": "With the patient unconscious, a surgeon no longer had to race against pain and shock. Warren could take his time over a delicate operation that speed surgery did not allow. By December 1846 a medical journal was already reporting on Morton's demonstration."
+    }
+  ],
+  "tags": ["anaesthesia", "surgery", "medicine", "history"],
+  "source": { "label": "Wikipedia: Ether Dome", "url": "https://en.wikipedia.org/wiki/Ether_Dome" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

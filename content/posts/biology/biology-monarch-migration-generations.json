@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-monarch-migration-generations",
+  "field": "biology",
+  "title": "The monarch butterfly's yearly round trip to Mexico takes four generations",
+  "emoji": "🦋",
+  "body": "Each autumn, monarchs from eastern North America fly up to **4,830 km** to spend the winter roosting on fir trees in the mountains of central Mexico. No single butterfly does the whole loop: the monarchs flying south are not the ones that flew north about five months earlier. The southbound generation is special, living far longer than the summer butterflies, which usually last less than two months. In spring the trip north is relayed by new generations, with females laying eggs along the way.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Monarch_butterflies_%28Danaus_plexippus_plexippus%29_Piedra_Herrada_2.jpg/960px-Monarch_butterflies_%28Danaus_plexippus_plexippus%29_Piedra_Herrada_2.jpg",
+    "alt": "Several orange and black monarch butterflies feeding on and flying around a cluster of yellow flowers",
+    "credit": "Charles J. Sharp · CC BY-SA 4.0"
+  },
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "One migration, four generations",
+      "cycle": true,
+      "steps": [
+        { "icon": "🍂", "label": "Autumn: a long-lived generation flies south" },
+        { "icon": "🌲", "label": "Winter: it roosts on fir trees in Mexico" },
+        { "icon": "🥚", "label": "Spring: they head north, laying eggs" },
+        { "icon": "☀️", "label": "Summer: short-lived generations move north" }
+      ]
+    },
+    {
+      "type": "estimate",
+      "question": "How many times longer does the southbound generation live than its parents and grandparents?",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "answer": 8,
+      "unit": "×",
+      "explanation": "About eight times longer, an effect linked to a hormone that regulates ageing. That extra lifespan lets one generation cover the whole journey south."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Monarch_butterflies_%28Danaus_plexippus_plexippus%29_on_Oyamel_fir_%28Abies_religiosa%29_Piedra_Herrada.jpg/960px-Monarch_butterflies_%28Danaus_plexippus_plexippus%29_on_Oyamel_fir_%28Abies_religiosa%29_Piedra_Herrada.jpg",
+      "alt": "Hundreds of orange monarch butterflies clustered on the drooping branches of a fir tree in a Mexican forest",
+      "caption": "Monarchs roosting on oyamel firs at Piedra Herrada, Mexico. The winter sites lie on volcanic mountains in the states of Michoacán and México.",
+      "fit": "cover",
+      "credit": "Charles J. Sharp · CC BY-SA 4.0"
+    },
+    {
+      "type": "text",
+      "heading": "Steering by the Sun",
+      "text": "Monarchs use a sun compass that corrects for the time of day, and the clock that drives it sits in their antennae. How butterflies setting off from all over a continent end up at the same few mountain forests is still not fully understood."
+    },
+    {
+      "type": "timeline",
+      "heading": "Finding the winter roosts",
+      "events": [
+        { "when": "1937", "text": "Fred Urquhart begins plotting the monarchs' route" },
+        { "when": "1975", "text": "Catalina Trail and Kenneth Brugger lead him to a major roost in Mexico" },
+        { "when": "1976", "text": "The discovery is published, though local people had long known of it" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Where is the clock that monarchs use to steer by the Sun?",
+      "options": ["In their antennae", "In their wing muscles", "In their eyes", "In their legs"],
+      "answer": 0,
+      "explanation": "The circadian clock behind the migration sits in the antennae. Butterflies with their antennae removed lost their consistent group heading."
+    }
+  ],
+  "tags": ["butterflies", "insects", "migration", "mexico"],
+  "source": { "label": "Wikipedia: Monarch butterfly migration", "url": "https://en.wikipedia.org/wiki/Monarch_butterfly_migration" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

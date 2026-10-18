@@ -1,0 +1,62 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-snowflake-bentley-first-photo",
+  "field": "earth",
+  "title": "A 19-year-old in rural Vermont took the first known detailed photos of snowflakes in 1885",
+  "emoji": "❄️",
+  "body": "Wilson Bentley of Jericho, Vermont, was given a microscope by his mother when he was 15, and at first he tried to draw the snow crystals he saw through it. He then fixed a bellows camera to a compound microscope, caught each crystal on a blackboard and moved it quickly onto a microscope slide. On **15 January 1885** he photographed his first snowflake. Over his life he captured more than 5,000 snow crystals, and he argued that no two were alike.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/-Snow_Crystal-_MET_DT259027.jpg/960px--Snow_Crystal-_MET_DT259027.jpg",
+    "alt": "An old sepia photomicrograph of a single six-armed snow crystal with feathery branches on a dark background",
+    "credit": "Wilson Bentley · Public domain"
+  },
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "How to photograph a snowflake in 1885",
+      "steps": [
+        { "icon": "❄️", "label": "Catch a falling crystal on a blackboard" },
+        { "icon": "🔬", "label": "Move it fast onto a microscope slide" },
+        { "icon": "📷", "label": "Photograph it through the microscope" }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/SnowflakesWilsonBentley.jpg/960px-SnowflakesWilsonBentley.jpg",
+      "alt": "A grid of twelve numbered black and white photographs of different six-sided snow crystals",
+      "caption": "A page of Bentley's snow crystals, numbered 889 to 900. Every one has six sides, and every one is different.",
+      "fit": "contain",
+      "credit": "Wilson Bentley · Public domain"
+    },
+    {
+      "type": "estimate",
+      "question": "Bentley's 1931 book Snow Crystals was illustrated with how many of his photographs?",
+      "min": 0,
+      "max": 10000,
+      "step": 100,
+      "answer": 2500,
+      "explanation": "2,500 photographs. He wrote it with William J. Humphreys of the US Weather Bureau, and it came out shortly before his death."
+    },
+    {
+      "type": "timeline",
+      "heading": "Snowflake Bentley's life",
+      "events": [
+        { "when": "1865", "text": "Born in Jericho, Vermont" },
+        { "when": "c. 1880", "text": "Gets a microscope from his mother, aged 15" },
+        { "when": "1885", "text": "Photographs his first snowflake" },
+        { "when": "1931", "text": "Publishes Snow Crystals and dies at his farm" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Which idea about snow did Bentley argue for?",
+      "options": ["No two snow crystals are alike", "All snowflakes are identical", "Snowflakes have eight arms", "Snow is just frozen raindrops"],
+      "answer": 0,
+      "explanation": "With George Henry Perkins he published an article arguing that no two snow crystals were alike, an idea that caught the public imagination."
+    }
+  ],
+  "tags": ["snow", "weather", "photography", "crystals"],
+  "source": { "label": "Wikipedia: Wilson Bentley", "url": "https://en.wikipedia.org/wiki/Wilson_Bentley" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

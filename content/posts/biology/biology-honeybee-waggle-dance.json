@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-honeybee-waggle-dance",
+  "field": "biology",
+  "title": "Honeybees give directions by dancing, with straight up standing for the Sun",
+  "emoji": "🐝",
+  "body": "A forager that finds good flowers comes home and performs a **waggle dance** on the vertical comb, in the dark of the hive. The angle of her waggling run, measured from straight up, matches the angle between the food and the Sun outside. The longer the waggle phase lasts, the farther away the food is. Bees that have been inside for a while even shift the angle of their dance as the Sun moves across the sky, so the directions stay correct.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Apis_mellifera_carnica_worker_honeycomb_3.jpg/960px-Apis_mellifera_carnica_worker_honeycomb_3.jpg",
+    "alt": "Close-up of honeybee workers walking over golden honeycomb cells filled with honey",
+    "credit": "Richard Bartz · CC BY-SA 2.5"
+  },
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "Reading a waggle dance",
+      "steps": [
+        { "icon": "🌼", "label": "A forager finds a rich patch of flowers" },
+        { "icon": "🐝", "label": "Back home, she dances on the vertical comb" },
+        { "icon": "🧭", "label": "Angle from 'up' shows angle from the Sun" },
+        { "icon": "⏱️", "label": "A longer waggle means food farther away" }
+      ]
+    },
+    {
+      "type": "place",
+      "question": "For Italian honeybees, beyond how many metres from the hive does a forager switch to the full waggle dance?",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "answer": 40,
+      "unit": "m",
+      "ends": ["At the hive", "100 m away"],
+      "hints": [{ "label": "Round dance", "value": 10 }],
+      "explanation": "Up to about 10 m she does a simple round dance, at 20 to 30 m a transitional dance, and beyond about 40 m the waggle dance."
+    },
+    {
+      "type": "stat",
+      "value": "93%",
+      "label": "of dance followers in one experiment ignored the directions",
+      "text": "They flew back to places they already knew. Researchers still debate how much foragers rely on the dance itself rather than on smells or their own memories."
+    },
+    {
+      "type": "quiz",
+      "question": "A dancer's waggle run points 45° to the right of straight up. Where is the food?",
+      "options": ["45° to the right of the Sun", "45° to the left of the Sun", "45 m from the hive", "Directly below the Sun"],
+      "answer": 0,
+      "explanation": "On the comb, 'up' stands for the Sun's direction, so the angle of the run from vertical is the angle of the food from the Sun."
+    }
+  ],
+  "tags": ["bees", "insects", "communication", "navigation"],
+  "source": { "label": "Wikipedia: Waggle dance", "url": "https://en.wikipedia.org/wiki/Waggle_dance" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

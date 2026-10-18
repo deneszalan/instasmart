@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-wollemi-pine-found-1994",
+  "field": "biology",
+  "title": "In 1994 a tree new to science turned up in a gorge just 150 km from Sydney",
+  "emoji": "🌲",
+  "body": "In September 1994, David Noble and two companions exploring canyons in Wollemi National Park came across trees nobody had ever described. Despite its name, the **Wollemi pine** is not a pine at all: it belongs to the Araucariaceae, and is one of only three living genera in that family. It is often called a 'living fossil', though no fossil can be pinned on it for certain. The wild grove is so precious that its location is still kept from the public.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Wakehurst_Place_woodland_Wollemi_pine.jpg/960px-Wakehurst_Place_woodland_Wollemi_pine.jpg",
+    "alt": "A tall Wollemi pine against a blue sky, its fern-like branches tipped with round green cones",
+    "credit": "AndyScott · CC BY-SA 4.0"
+  },
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "How many adult Wollemi pines are known to grow in the wild?",
+      "answer": "Fewer than 60",
+      "detail": "They grow in four locations not far apart. Counting is tricky, because most trees have several trunks that may share one root system."
+    },
+    {
+      "type": "text",
+      "heading": "Copies of copies",
+      "text": "Every wild tree tested so far is genetically indistinguishable from the others. That suggests the species squeezed through a bottleneck between about 10,000 and 26,000 years ago, possibly down to just one or two individuals."
+    },
+    {
+      "type": "timeline",
+      "heading": "Saving a tree that hid for ages",
+      "events": [
+        { "when": "1994", "text": "Found in sandstone gorges in Wollemi National Park" },
+        { "when": "2005", "text": "The root-rot mould *Phytophthora* is found in wild trees" },
+        { "when": "2006", "text": "Young trees go to Australian botanic gardens" },
+        { "when": "2019–20", "text": "Firefighters save the grove from bushfires" }
+      ]
+    },
+    {
+      "type": "chart",
+      "heading": "How tall Wollemi pines grow",
+      "unit": "m",
+      "items": [
+        { "label": "Wild trees, up to", "value": 40, "emphasis": true },
+        { "label": "Tallest garden tree", "value": 8.1 }
+      ],
+      "note": "Wild trees reach 25 to 40 m; the garden record, in France, was 8.1 m at 14 years old"
+    },
+    {
+      "type": "quiz",
+      "question": "Why are wild Wollemi pines almost genetically identical?",
+      "options": ["The species went through a bottleneck", "They were planted from one seed", "They are hybrids of two species", "Bushfires mixed their genes"],
+      "answer": 0,
+      "explanation": "Thousands of years ago the population probably crashed to a tiny number of trees, so all of today's trees descend from very few ancestors."
+    }
+  ],
+  "tags": ["trees", "conifers", "australia", "conservation"],
+  "source": { "label": "Wikipedia: Wollemia", "url": "https://en.wikipedia.org/wiki/Wollemia" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

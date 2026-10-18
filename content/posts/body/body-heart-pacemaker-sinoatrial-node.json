@@ -1,0 +1,62 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-heart-pacemaker-sinoatrial-node",
+  "field": "body",
+  "title": "Every heartbeat starts in a 15 mm strip of muscle first spotted in a mole's heart",
+  "emoji": "❤️",
+  "body": "Your heart sets its own rhythm. Each beat begins in the **sinoatrial node**, a strip of specialised muscle about 15 mm long, 3 mm wide and 1 mm thick in the wall of the right atrium. Its pacemaker cells never settle at rest: straight after each electrical pulse, their voltage starts creeping up again by itself until it sets off the next one. Nerves only speed this up or slow it down, which keeps a resting heart at about 60 to 100 beats a minute.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Dresden%2C_Deutsches_Hygiene-Museum%2C_anatomisches_Modell%2C_Herz.jpg/960px-Dresden%2C_Deutsches_Hygiene-Museum%2C_anatomisches_Modell%2C_Herz.jpg",
+    "alt": "A large painted anatomical model of a human heart, cut open to show its thick muscle walls, valves and blood vessels",
+    "credit": "Dguendel · CC BY 4.0"
+  },
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "The pacemaker's endless loop",
+      "cycle": true,
+      "steps": [
+        { "icon": "⚡", "label": "Pacemaker cells fire an electrical pulse" },
+        { "icon": "❤️", "label": "The pulse spreads and the heart contracts" },
+        { "icon": "🔄", "label": "The cells' voltage resets" },
+        { "icon": "📈", "label": "It starts creeping up again on its own" }
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "Where exactly does your heart keep its pacemaker?",
+      "answer": "High in the back wall of the right atrium",
+      "detail": "It sits beside the opening of the superior vena cava, the large vein that brings blood back from the upper body."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Sinoatrial_node_2_low_mag.jpg/960px-Sinoatrial_node_2_low_mag.jpg",
+      "alt": "A pink-stained microscope slide of heart tissue showing muscle fibres, pale fat cells and a small artery cut across",
+      "caption": "The sinoatrial node under a microscope, stained pink. Its pacemaker cells are a kind of heart muscle cell, specialised to fire on their own.",
+      "fit": "cover",
+      "credit": "Nephron · CC BY-SA 3.0"
+    },
+    {
+      "type": "text",
+      "heading": "Found while the boss went cycling",
+      "text": "In a makeshift laboratory in a Kent farmhouse, the young medical student Martin Flack spotted the node in the heart of a mole while his mentor, Sir Arthur Keith, was out on a bicycle ride with his wife. They published the discovery in 1907, and it is still also called the Keith–Flack node."
+    },
+    {
+      "type": "compare",
+      "heading": "Nerves only adjust the pace",
+      "left": { "label": "Speeding up", "text": "Sympathetic nerves raise a signalling molecule called cAMP in the cells, which makes each slow voltage climb faster." },
+      "right": { "label": "Slowing down", "text": "The vagus nerve releases acetylcholine onto the node, slowing the pacemaker and lowering the heart rate." }
+    },
+    {
+      "type": "quiz",
+      "question": "If the sinoatrial node stops working, what normally takes over?",
+      "options": ["Slower cells further down", "Nerves from the brain", "The left ventricle's valves", "Nothing: the heart stops"],
+      "answer": 0,
+      "explanation": "Other heart cells can also start beats, just at a slower rate. Normally the node outpaces them, but if it fails, a group of cells further down becomes the pacemaker."
+    }
+  ],
+  "tags": ["heart", "anatomy", "physiology", "electricity"],
+  "source": { "label": "Wikipedia: Sinoatrial node", "url": "https://en.wikipedia.org/wiki/Sinoatrial_node" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}
