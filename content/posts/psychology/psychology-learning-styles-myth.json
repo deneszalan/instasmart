@@ -7,8 +7,8 @@
   "body": "Many people believe they are visual, auditory or kinaesthetic learners who learn best when taught that way. People certainly have preferences, but when researchers test the key claim, that matching teaching to a person’s style improves results, well-designed studies have largely failed to find a benefit. What seems to matter more is matching the method to the material, such as using diagrams for anatomy or audio for pronunciation.",
   "slides": [
     {
-      "type": "chart",
-      "heading": "UK academics surveyed in 2017 on learning styles",
+      "type": "rank",
+      "heading": "Share of UK academics who said this about learning styles, 2017",
       "items": [
         {
           "label": "Agree the theory is flawed",
@@ -25,7 +25,8 @@
         }
       ],
       "unit": "%",
-      "note": "A 2017 survey of academics in the UK. ‘Matching’: teaching students in their preferred style."
+      "note": "A 2017 survey of academics in the UK. ‘Matching’: teaching students in their preferred style.",
+      "explanation": "Nine in ten agreed the theory is flawed, yet 58% still believed matching helps, and a third had used it that year."
     },
     {
       "type": "quiz",

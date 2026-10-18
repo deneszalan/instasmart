@@ -143,7 +143,7 @@ They count as interactive slides, so the limits below apply to them too.
 - `sort` shows the items one at a time and asks which of the two `bins` each belongs in; use both bins. "Fact or myth?" is the classic.
 - `scramble` is one word of 3–14 plain letters (A–Z, no spaces or accents) that the clue makes solvable: a key term from the post, not a random word. `detail` can give its origin.
 - `odd` lists 3–4 things of which one doesn't belong as a matter of fact, and the explanation says what the others share.
-- One or two interactive slides per post is plenty; a visual slide beside them gives readers something to look at between plays.
+- Two interactive slides per post is plenty, three at most and only when one of them is a visual puzzle standing in for a chart, pictogram or spectrum; a visual slide beside them gives readers something to look at between plays.
 
 A slide is phone-sized, so `list` and `timeline` slides must stay short: about 12 lines in total, where a timeline date counts as a line and a line holds roughly 34 characters (30 in a list). `npm run content` checks this and tells you by how much to cut.
 

@@ -30,6 +30,30 @@
       "cycle": true
     },
     {
+      "type": "place",
+      "question": "When did the Monte Carlo wheel land on black 26 times in a row?",
+      "min": 1850,
+      "max": 1950,
+      "step": 1,
+      "answer": 1913,
+      "format": "year",
+      "ends": [
+        "1850",
+        "1950"
+      ],
+      "hints": [
+        {
+          "label": "Casino built",
+          "value": 1863
+        },
+        {
+          "label": "1st Monaco GP",
+          "value": 1929
+        }
+      ],
+      "explanation": "On 18 August 1913. A run of 26 of one colour has odds of around 1 in 68 million on a fair wheel, yet the chance of red on the very next spin never changed."
+    },
+    {
       "type": "quiz",
       "question": "After black had come up 25 times, what was the chance of red on the 26th spin?",
       "options": [

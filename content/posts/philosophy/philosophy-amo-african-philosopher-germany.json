@@ -64,6 +64,34 @@
       "text": "Enemies in Halle staged a public lampoon of him. Amo sailed on a Dutch West India Company ship, arriving in Ghana about 1747, and was later taken to a fort at Shama, possibly to keep him from stirring dissent. The exact date and place of his death are unknown."
     },
     {
+      "type": "place",
+      "question": "When did Berlin finally rename its Mohrenstraße after Amo?",
+      "min": 1700,
+      "max": 2030,
+      "step": 1,
+      "answer": 2025,
+      "format": "year",
+      "ends": [
+        "1700",
+        "2030"
+      ],
+      "hints": [
+        {
+          "label": "Street named",
+          "value": 1707
+        },
+        {
+          "label": "Amo’s thesis",
+          "value": 1729
+        },
+        {
+          "label": "Wall falls",
+          "value": 1989
+        }
+      ],
+      "explanation": "Berlin-Mitte proposed the change in 2020, but objections kept it in court until 23 August 2025, when Mohrenstraße became Anton-Wilhelm-Amo-Straße. The street had carried its old name since 1707."
+    },
+    {
       "type": "stat",
       "value": "2025",
       "label": "the year Berlin renamed its Mohrenstraße after Amo, ending a long legal battle",

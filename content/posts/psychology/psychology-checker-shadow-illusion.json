@@ -29,6 +29,34 @@
       ]
     },
     {
+      "type": "place",
+      "question": "When did Adelson publish the checker shadow illusion?",
+      "min": 1850,
+      "max": 2025,
+      "step": 1,
+      "answer": 1995,
+      "format": "year",
+      "ends": [
+        "1850",
+        "2025"
+      ],
+      "hints": [
+        {
+          "label": "Müller-Lyer",
+          "value": 1889
+        },
+        {
+          "label": "Stroop test",
+          "value": 1935
+        },
+        {
+          "label": "The dress",
+          "value": 2015
+        }
+      ],
+      "explanation": "Edward H. Adelson, a vision scientist at MIT, published it in 1995: a modern classic, a century after Müller-Lyer’s arrows and two decades before the dress photo divided the internet."
+    },
+    {
       "type": "quiz",
       "question": "Why does the square in the shadow look lighter than it really is?",
       "options": [

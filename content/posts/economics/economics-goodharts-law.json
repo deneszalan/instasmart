@@ -29,6 +29,26 @@
       ]
     },
     {
+      "type": "place",
+      "question": "In what year did Charles Goodhart first state his law?",
+      "min": 1900,
+      "max": 2000,
+      "step": 1,
+      "answer": 1975,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Wall St crash",
+          "value": 1929
+        },
+        {
+          "label": "Strathern",
+          "value": 1997
+        }
+      ],
+      "explanation": "Charles Goodhart made the observation in a 1975 paper on UK monetary policy. Marilyn Strathern’s one-line version, the form everyone quotes, came in 1997."
+    },
+    {
       "type": "quiz",
       "question": "Why does a statistic break down once people aim at it?",
       "options": [

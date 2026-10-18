@@ -29,17 +29,17 @@
       "text": "If someone asks for a horse, yellow and black horses may be delivered. If they ask for a white horse, those horses may not. What is asked for differs, says the advocate, so a white horse is not the same as a horse."
     },
     {
+      "type": "fill",
+      "question": "Gongsun Long’s book had 14 chapters. How many survive today?",
+      "icon": "📜",
+      "total": 14,
+      "answer": 6,
+      "explanation": "Only 6 of the 14 chapters survive, and the White Horse Dialogue is one of them."
+    },
+    {
       "type": "text",
       "heading": "Mocked and remembered",
       "text": "The Liezi calls his paradoxes ‘perversions of reason and sense’, and two chapters of the Zhuangzi make fun of him. Yet the dialogue is still one of the best-known arguments of the School of Names, even though only six of the fourteen chapters of his book survive."
-    },
-    {
-      "type": "pictogram",
-      "heading": "Only 6 of the 14 chapters of Gongsun Long’s book survive",
-      "icon": "📜",
-      "total": 14,
-      "count": 6,
-      "note": "The White Horse Dialogue is one of the six."
     },
     {
       "type": "quiz",

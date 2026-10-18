@@ -29,6 +29,34 @@
       ]
     },
     {
+      "type": "place",
+      "question": "When was the McGurk effect first described?",
+      "min": 1850,
+      "max": 2025,
+      "step": 1,
+      "answer": 1976,
+      "format": "year",
+      "ends": [
+        "1850",
+        "2025"
+      ],
+      "hints": [
+        {
+          "label": "Müller-Lyer",
+          "value": 1889
+        },
+        {
+          "label": "Stroop test",
+          "value": 1935
+        },
+        {
+          "label": "Checker shadow",
+          "value": 1995
+        }
+      ],
+      "explanation": "Harry McGurk and John MacDonald described it in 1976. Perception’s classic illusions span more than a century, from Müller-Lyer’s arrows to Adelson’s checkerboard."
+    },
+    {
       "type": "quiz",
       "question": "A face mouths ‘ga’ while the soundtrack plays ‘ba’. What do many people hear?",
       "options": [

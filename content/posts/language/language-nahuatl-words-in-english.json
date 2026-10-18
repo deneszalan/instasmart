@@ -19,8 +19,8 @@
       "right": { "label": "Today", "text": "About 1.7 million speakers, mostly in central Mexico, with smaller communities in the United States." }
     },
     {
-      "type": "chart",
-      "heading": "Mexico’s most spoken indigenous languages",
+      "type": "rank",
+      "heading": "Which of Mexico’s indigenous languages has the most speakers?",
       "items": [
         { "label": "Nahuatl", "value": 1700000, "emphasis": true },
         { "label": "Yucatec Maya", "value": 775000 },
@@ -28,7 +28,8 @@
         { "label": "Tzotzil", "value": 550000 }
       ],
       "unit": "speakers",
-      "note": "Speakers in Mexico at the 2020 census; Nahuatl’s 1.7 million is a rounded figure."
+      "note": "Speakers in Mexico at the 2020 census; Nahuatl’s 1.7 million is a rounded figure.",
+      "explanation": "Nahuatl leads with about 1.7 million speakers, ahead of Yucatec Maya, Tzeltal and Tzotzil."
     },
     {
       "type": "text",

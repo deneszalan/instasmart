@@ -49,6 +49,32 @@
       "text": "The descending side helps counterbalance the rising side. Motors still supply energy to turn the mechanism, but they do not have to lift an unbalanced load of boats and water."
     },
     {
+      "type": "higher",
+      "heading": "Boat lifts around the world: how far each raises a boat, in metres",
+      "items": [
+        {
+          "label": "Falkirk Wheel, Scotland",
+          "value": 24,
+          "emphasis": true
+        },
+        {
+          "label": "Three Gorges Dam, China",
+          "value": 113
+        },
+        {
+          "label": "Anderton Lift, England",
+          "value": 15.2
+        },
+        {
+          "label": "Strépy-Thieu, Belgium",
+          "value": 73.15
+        }
+      ],
+      "unit": "m",
+      "note": "Anderton opened in 1875, Falkirk and Strépy-Thieu in 2002, the Three Gorges ship lift in 2016",
+      "explanation": "The Falkirk Wheel’s 24 m is modest: Strépy-Thieu in Belgium lifts boats 73 m, and the ship lift at China’s Three Gorges Dam 113 m."
+    },
+    {
       "type": "quiz",
       "question": "Why does adding a boat not unbalance the wheel?",
       "options": [

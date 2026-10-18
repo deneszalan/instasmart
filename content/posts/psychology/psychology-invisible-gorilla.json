@@ -15,6 +15,31 @@
       "note": "Simons and Chabris, 1999: in most groups 50% did not report the gorilla while counting passes."
     },
     {
+      "type": "higher",
+      "heading": "Who noticed the gorilla while counting passes? Share of each group",
+      "items": [
+        {
+          "label": "Adult basketball experts",
+          "value": 62
+        },
+        {
+          "label": "Children, 2 years’ practice",
+          "value": 18
+        },
+        {
+          "label": "Adult novices",
+          "value": 38
+        },
+        {
+          "label": "Child novices",
+          "value": 0
+        }
+      ],
+      "unit": "%",
+      "note": "Memmert, 2006: all counted passes in the gorilla video; experts had years of basketball practice.",
+      "explanation": "Practice at the game freed up attention: 62% of adult experts saw the gorilla against 38% of adult novices, and no child novice did."
+    },
+    {
       "type": "quiz",
       "question": "What were viewers asked to do while the gorilla walked through?",
       "options": [

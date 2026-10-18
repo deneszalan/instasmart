@@ -7,6 +7,14 @@
   "body": "In the ultimatum game, one player proposes how to divide a sum and the other can accept or reject; a rejection leaves both with nothing. Pure self-interest says the responder should take any amount above zero, since something beats nothing. In experiments since the first by Güth, Schmittberger and Schwarze in 1982, proposers typically offer about **40% of the pie**, and offers below roughly 30% are often rejected. Rejecting costs the responder real money, so the result shows that people will pay to punish what they see as unfair.",
   "slides": [
     {
+      "type": "fill",
+      "question": "Someone must split 10 coins with you; if you refuse, both get nothing. How many do proposers typically offer?",
+      "icon": "🪙",
+      "total": 10,
+      "answer": 4,
+      "explanation": "About 4 in 10: proposers typically offer around 40% of the pie. Offers below roughly 3 in 10 are often rejected, leaving both players with nothing."
+    },
+    {
       "type": "compare",
       "heading": "Theory vs people",
       "left": {
@@ -23,14 +31,6 @@
       "value": "40%",
       "label": "what proposers typically offer, in a 2004 review of 37 studies",
       "text": "Among members of the same group, people often offer an even 50:50 split."
-    },
-    {
-      "type": "pictogram",
-      "heading": "Proposers typically offer about 4 coins in every 10",
-      "icon": "🪙",
-      "total": 10,
-      "count": 4,
-      "note": "Offers below roughly 3 in 10 are often rejected, leaving both players with nothing"
     },
     {
       "type": "text",

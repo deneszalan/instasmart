@@ -48,6 +48,34 @@
       ]
     },
     {
+      "type": "place",
+      "question": "When did Müller-Lyer first draw his finned lines?",
+      "min": 1850,
+      "max": 2025,
+      "step": 1,
+      "answer": 1889,
+      "format": "year",
+      "ends": [
+        "1850",
+        "2025"
+      ],
+      "hints": [
+        {
+          "label": "Stroop test",
+          "value": 1935
+        },
+        {
+          "label": "McGurk effect",
+          "value": 1976
+        },
+        {
+          "label": "Checker shadow",
+          "value": 1995
+        }
+      ],
+      "explanation": "Franz Carl Müller-Lyer, a German sociologist, devised the illusion in 1889, and psychologists have argued about why it works ever since."
+    },
+    {
       "type": "text",
       "heading": "Does culture matter?",
       "text": "Segall, Campbell and Herskovits (1966) found people from carpentered, rectangular environments more susceptible, with San foragers of the Kalahari the least. Later work by Jahoda found no difference between rural and city Africans and suggested retinal pigmentation might play a role. The debate goes on."

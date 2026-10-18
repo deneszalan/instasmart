@@ -12,6 +12,30 @@
       "text": "From the time the deck was built, it rose and fell so much in wind that construction workers nicknamed it Galloping Gertie. Damping measures failed to stop it."
     },
     {
+      "type": "place",
+      "question": "How strong was the steady wind that tore the Tacoma Narrows Bridge apart?",
+      "min": 0,
+      "max": 118,
+      "step": 1,
+      "answer": 64,
+      "unit": "km/h",
+      "ends": [
+        "Calm",
+        "Hurricane"
+      ],
+      "hints": [
+        {
+          "label": "Strong breeze",
+          "value": 39
+        },
+        {
+          "label": "Storm",
+          "value": 89
+        }
+      ],
+      "explanation": "Only about 64 km/h (40 mph), a gale on the Beaufort scale and far short of hurricane force. The deck’s own twisting, not raw wind power, fed the flutter that tore it apart."
+    },
+    {
       "type": "text",
       "heading": "Why not resonance?",
       "text": "Classic resonance needs pushes that arrive at a matching rhythm. A steady wind has no such rhythm. Here the motion itself shaped the forces: a self-feeding loop."

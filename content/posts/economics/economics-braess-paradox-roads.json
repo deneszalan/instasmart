@@ -54,6 +54,26 @@
       "type": "text",
       "heading": "Why it happens",
       "text": "Each driver chooses the quickest route given what everyone else is doing, a Nash equilibrium. Once the shortcut exists, giving it up alone would hand you a slower trip, so nobody does. Only a shared agreement, or closing the road, gets everyone their 15 minutes back."
+    },
+    {
+      "type": "place",
+      "question": "The paradox is named after Dietrich Braess. In what year did he publish his analysis?",
+      "min": 1900,
+      "max": 2000,
+      "step": 1,
+      "answer": 1968,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Pigou spots it",
+          "value": 1920
+        },
+        {
+          "label": "Nash’s paper",
+          "value": 1950
+        }
+      ],
+      "explanation": "Braess published it in 1968, 48 years after Pigou first noticed the effect. Each driver’s best reply to the others, a Nash equilibrium, is what traps them all."
     }
   ],
   "tags": [
