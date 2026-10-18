@@ -1,0 +1,45 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-sydney-opera-house-sphere",
+  "field": "art",
+  "title": "Every shell of the Sydney Opera House is cut from the same sphere",
+  "emoji": "🎭",
+  "body": "Jørn Utzon’s winning design of 1957 showed soaring shells with no defined geometry, and for years nobody could work out how to build them. The breakthrough was to make every shell a section of one imaginary sphere, so curved ribs could be cast from shared moulds. The roofs are clad in 1,056,006 tiles in two finishes, glossy white and matte cream, laid in a subtle chevron pattern.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "A sketch wins",
+      "text": "In 1957 Utzon, a Danish architect who had never seen one of his designs built, beat 232 other entries in Sydney’s international design competition."
+    },
+    {
+      "type": "text",
+      "heading": "Years of failed geometry",
+      "text": "From 1957 to 1963 the team tried at least 12 versions of the shells, from parabolas to ellipsoids, hunting for a form that could be built affordably."
+    },
+    {
+      "type": "text",
+      "heading": "The spherical solution",
+      "text": "In mid-1961 they settled on taking every shell from the surface of a single sphere, so standard rib segments could be precast and assembled."
+    },
+    {
+      "type": "text",
+      "heading": "A bitter ending",
+      "text": "Budgeted at $7 million for 1963, it opened in 1973 at $102 million. Utzon resigned in 1966 and never returned, but won the Pritzker Prize in 2003."
+    }
+  ],
+  "tags": [
+    "art",
+    "architecture",
+    "geometry",
+    "design"
+  ],
+  "source": {
+    "label": "Wikipedia: Sydney Opera House",
+    "url": "https://en.wikipedia.org/wiki/Sydney_Opera_House"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

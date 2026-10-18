@@ -1,0 +1,45 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "philosophy-veil-of-ignorance",
+  "field": "philosophy",
+  "title": "The fairest rules are the ones you’d pick before knowing who you are",
+  "emoji": "🎲",
+  "body": "In his 1971 book A Theory of Justice, John Rawls proposed a thought experiment: choose the basic rules of society from behind a ‘veil of ignorance’, without knowing your gender, ethnicity, talents, wealth or even your idea of a good life. Since nobody can rig the rules in their own favor, Rawls argued, whatever people would agree to there counts as fair.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Rawls’s answer",
+      "text": "He argued people would choose equal basic liberties for all, and accept inequalities only if they benefit the least advantaged: the ‘difference principle’."
+    },
+    {
+      "type": "text",
+      "heading": "Same veil, other answer",
+      "text": "Economist John Harsanyi had used a similar device earlier and concluded that rational people would maximize average well-being, a utilitarian result."
+    },
+    {
+      "type": "text",
+      "heading": "The hidden variable",
+      "text": "The split comes down to risk: Rawls assumed people would guard against the worst outcome, while Harsanyi assumed they would weigh the odds."
+    },
+    {
+      "type": "text",
+      "heading": "Older roots",
+      "text": "Similar ideas of impartial judgment appear in Kant and in Adam Smith’s ‘impartial spectator’, though Rawls coined the phrase ‘veil of ignorance’."
+    }
+  ],
+  "tags": [
+    "philosophy",
+    "justice",
+    "politicalphilosophy",
+    "thoughtexperiment"
+  ],
+  "source": {
+    "label": "Wikipedia: Original position",
+    "url": "https://en.wikipedia.org/wiki/Original_position"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
