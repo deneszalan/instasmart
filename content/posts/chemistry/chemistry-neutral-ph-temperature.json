@@ -16,38 +16,35 @@
       "explanation": "About 6.1. At 100 °C more water molecules split into H⁺ and OH⁻, but the two are still present in equal amounts, so boiling water is neutral, not acidic."
     },
     {
-      "type": "spectrum",
-      "heading": "Neutral pH at different temperatures",
+      "type": "place",
+      "question": "Neutral pH drifts with temperature. Where does pure water sit near 0 °C?",
       "min": 5,
       "max": 9,
+      "step": 0.1,
+      "answer": 7.5,
       "ends": [
         "More acidic",
         "More alkaline"
+      ],
+      "hints": [
+        {
+          "label": "At 100 °C",
+          "value": 6.1
+        },
+        {
+          "label": "At 50 °C",
+          "value": 6.6
+        },
+        {
+          "label": "At 25 °C",
+          "value": 7
+        }
       ],
       "colors": [
         "#f87171",
         "#60a5fa"
       ],
-      "marks": [
-        {
-          "label": "Neutral at 100 °C",
-          "value": 6.1
-        },
-        {
-          "label": "Neutral at 50 °C",
-          "value": 6.6
-        },
-        {
-          "label": "Neutral at 25 °C",
-          "value": 7,
-          "emphasis": true
-        },
-        {
-          "label": "Neutral at 0 °C",
-          "value": 7.5
-        }
-      ],
-      "note": "Half of pKw at each temperature. Neutral always means equal amounts of H⁺ and OH⁻."
+      "explanation": "About 7.5. Fewer water molecules split apart in the cold, so neutral pH rises: it is 7 at 25 °C, about 6.6 at 50 °C and 6.1 at 100 °C, always with equal amounts of H⁺ and OH⁻."
     }
   ],
   "tags": [

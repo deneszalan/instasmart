@@ -30,39 +30,36 @@
       "text": "That is why it keeps things cold without any meltwater."
     },
     {
-      "type": "spectrum",
-      "heading": "How cold is dry ice?",
+      "type": "place",
+      "question": "How cold was the coldest air ever recorded on Earth, at Vostok Station in Antarctica in 1983?",
       "min": -200,
-      "max": 20,
+      "max": 100,
+      "step": 0.1,
+      "answer": -89.2,
       "unit": "°C",
       "ends": [
         "Colder",
         "Warmer"
       ],
-      "marks": [
+      "hints": [
         {
-          "label": "Liquid nitrogen boils",
+          "label": "Nitrogen boils",
           "value": -195.8
         },
         {
-          "label": "Liquid oxygen boils",
+          "label": "Oxygen boils",
           "value": -183
         },
         {
-          "label": "Coldest air ever recorded",
-          "value": -89.2
-        },
-        {
-          "label": "Dry ice turns to gas",
-          "value": -78.5,
-          "emphasis": true
+          "label": "Dry ice",
+          "value": -78.5
         },
         {
           "label": "Water freezes",
           "value": 0
         }
       ],
-      "note": "The air record is −89.2 °C at Vostok Station, Antarctica, in July 1983."
+      "explanation": "−89.2 °C, on 21 July 1983: colder than dry ice at −78.5 °C, though nowhere near the −183 °C and −195.8 °C at which liquid oxygen and liquid nitrogen boil."
     },
     {
       "type": "compare",

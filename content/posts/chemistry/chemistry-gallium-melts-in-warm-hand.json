@@ -23,9 +23,8 @@
       "text": "That is about 85.6°F, far below the temperatures needed to melt familiar metals such as iron."
     },
     {
-      "type": "chart",
-      "heading": "Melting points of some metals",
-      "unit": "°C",
+      "type": "rank",
+      "heading": "Melting points: which of these metals needs the most heat?",
       "items": [
         {
           "label": "Gallium",
@@ -49,7 +48,9 @@
           "value": 1538
         }
       ],
-      "note": "At normal pressure. A warm hand is about 37 °C; the rest need a furnace."
+      "unit": "°C",
+      "note": "At normal pressure. A warm hand is about 37 °C; the rest need a furnace.",
+      "explanation": "Iron needs 1,538 °C, aluminium 660 °C, lead 327 °C and tin 232 °C. Gallium melts at just 29.8 °C, which a warm hand can supply."
     },
     {
       "type": "text",

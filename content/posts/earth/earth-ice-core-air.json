@@ -7,39 +7,36 @@
   "body": "As snow piles up on Antarctica, it is squeezed into ice that traps tiny pockets of air. Cores drilled more than 3 km deep give a continuous record of the atmosphere going back about 800,000 years. Over that span, carbon dioxide swung between roughly 180 and 300 parts per million as ice ages came and went. Today it is above 420 ppm, higher than at any point in that record, because of human activity.",
   "slides": [
     {
-      "type": "spectrum",
-      "heading": "Carbon dioxide in the air, parts per million",
+      "type": "place",
+      "question": "Ice cores show CO₂ swinging between about 180 and 300 ppm as ice ages came and went. Where is it today?",
       "min": 150,
       "max": 450,
+      "step": 5,
+      "answer": 420,
       "unit": "ppm",
       "ends": [
         "Less CO₂",
         "More CO₂"
       ],
-      "colors": [
-        "#38bdf8",
-        "#f97316"
-      ],
-      "marks": [
+      "hints": [
         {
           "label": "Ice-age lows",
           "value": 180
         },
         {
-          "label": "Pre-industrial, 1700s",
+          "label": "Pre-industrial",
           "value": 280
         },
         {
-          "label": "Warm-period highs",
+          "label": "Warm highs",
           "value": 300
-        },
-        {
-          "label": "Today, more than",
-          "value": 420,
-          "emphasis": true
         }
       ],
-      "note": "The ice record spans 800,000 years. Today’s level is above 420 ppm and still rising."
+      "colors": [
+        "#38bdf8",
+        "#f97316"
+      ],
+      "explanation": "Above 420 ppm, and still rising: higher than at any point in the 800,000-year ice record, from about 180 ppm in ice ages to 300 ppm in warm periods, and about 280 ppm before industry."
     },
     {
       "type": "text",

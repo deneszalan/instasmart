@@ -23,6 +23,30 @@
       "text": "In winter the water can be clear enough to see 30 to 40 metres down."
     },
     {
+      "type": "place",
+      "question": "Baikal is only 79 km across at its widest. How long is it?",
+      "min": 0,
+      "max": 1000,
+      "step": 10,
+      "answer": 636,
+      "unit": "km",
+      "ends": [
+        "Shorter",
+        "Longer"
+      ],
+      "hints": [
+        {
+          "label": "Lake Victoria",
+          "value": 359
+        },
+        {
+          "label": "Tanganyika",
+          "value": 673
+        }
+      ],
+      "explanation": "636 km, nearly as long as Lake Tanganyika (673 km), the world’s longest freshwater lake. Both are long and thin because they fill rift valleys where the crust is pulling apart."
+    },
+    {
       "type": "list",
       "heading": "Baikal in numbers",
       "style": "bullets",

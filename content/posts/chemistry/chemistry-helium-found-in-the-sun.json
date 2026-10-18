@@ -7,9 +7,8 @@
   "body": "During a total solar eclipse in August 1868, astronomers studying the Sun’s glowing outer layers with spectroscopes spotted a bright yellow line that didn’t match any known element. Norman Lockyer proposed it came from a new element and named it after Helios, the Greek word for the Sun. Helium wasn’t isolated on Earth until 1895, when William Ramsay and others found it seeping from a uranium mineral. It is now known to be the second most abundant element in the universe.",
   "slides": [
     {
-      "type": "chart",
-      "heading": "What ordinary matter in our galaxy is made of, by mass",
-      "unit": "%",
+      "type": "rank",
+      "heading": "Which elements make up most of the ordinary matter in our galaxy, by mass?",
       "items": [
         {
           "label": "Hydrogen",
@@ -31,13 +30,11 @@
         {
           "label": "Neon",
           "value": 0.134
-        },
-        {
-          "label": "Iron",
-          "value": 0.109
         }
       ],
-      "note": "Spectroscopic estimate for the Milky Way. Everything else together is under 1%."
+      "unit": "%",
+      "note": "Spectroscopic estimate for the Milky Way. Everything else together is under 1%.",
+      "explanation": "Hydrogen and helium make up about 98% of it. Oxygen, carbon and neon come next, with iron close behind at 0.109%."
     },
     {
       "type": "quiz",

@@ -23,25 +23,24 @@
     },
     {
       "type": "text",
-      "heading": "Hotter than the Sun",
-      "text": "A bolt heats the air around it to about 30,000 °C, roughly five times hotter than the Sun’s surface. The air expands explosively, and that’s thunder."
+      "heading": "Why thunder booms",
+      "text": "A bolt heats the air in its channel in a split second. The air expands explosively, and the shock wave it sends out is what we hear as thunder."
     },
     {
-      "type": "chart",
-      "heading": "Hotter than the Sun’s surface",
-      "unit": "°C",
+      "type": "higher",
+      "heading": "How hot is lightning, next to the Sun and molten rock?",
       "items": [
         {
-          "label": "Basalt lava",
-          "value": 1200
+          "label": "Surface of the Sun",
+          "value": 5500
         },
         {
           "label": "Iron melts",
           "value": 1538
         },
         {
-          "label": "Surface of the Sun",
-          "value": 5500
+          "label": "Basalt lava",
+          "value": 1200
         },
         {
           "label": "Air in a lightning channel",
@@ -49,7 +48,9 @@
           "emphasis": true
         }
       ],
-      "note": "Approximate figures. The Sun’s core is far hotter, at about 15 million °C."
+      "unit": "°C",
+      "note": "Approximate figures. The Sun’s core is far hotter, at about 15 million °C.",
+      "explanation": "About 30,000 °C in the channel, roughly five times the Sun’s surface. Molten iron and basalt lava, at 1,538 °C and about 1,200 °C, are cool by comparison."
     },
     {
       "type": "text",

@@ -35,6 +35,14 @@
       ]
     },
     {
+      "type": "fill",
+      "question": "Out of 20 parts of steel by weight, how many must be chromium for it to count as stainless?",
+      "icon": "🔩",
+      "total": 20,
+      "answer": 2,
+      "explanation": "At least 10.5% chromium by weight, so about 2 parts in 20. Raising it above 11% boosts the protection further, and the most common grade, type 304 or ‘18/8’, has about 18%."
+    },
+    {
       "type": "stat",
       "value": "10.5%",
       "label": "the minimum chromium content for a steel to count as stainless",

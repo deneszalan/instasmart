@@ -52,6 +52,30 @@
       ]
     },
     {
+      "type": "place",
+      "question": "The statue is a skin of copper over an iron frame. How thick is that copper?",
+      "min": 0,
+      "max": 10,
+      "step": 0.1,
+      "answer": 2.4,
+      "unit": "mm",
+      "ends": [
+        "Thinner",
+        "Thicker"
+      ],
+      "hints": [
+        {
+          "label": "Credit card",
+          "value": 0.76
+        },
+        {
+          "label": "US penny",
+          "value": 1.52
+        }
+      ],
+      "explanation": "Just 2.4 mm, thinner than two pennies stacked. It keeps the 46-metre statue light, and once the green patina formed it has shielded that thin skin ever since."
+    },
+    {
       "type": "stat",
       "value": "2.4 mm",
       "label": "thickness of the statue’s copper skin",

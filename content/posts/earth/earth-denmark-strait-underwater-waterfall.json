@@ -7,21 +7,28 @@
   "body": "Between Greenland and Iceland, a huge underwater cascade flows through the **Denmark Strait**. Cold, dense water from the Nordic Seas sinks beneath warmer water and spills over a ridge in the seafloor. Gravity pulls this deep current down the slope, even though the whole scene is already underwater. NOAA describes it as Earth's largest waterfall.",
   "slides": [
     {
-      "type": "chart",
-      "heading": "How far the water falls",
-      "unit": "ft",
-      "items": [
+      "type": "place",
+      "question": "How far down does the water plunge in the Denmark Strait cataract?",
+      "min": 0,
+      "max": 4000,
+      "step": 50,
+      "answer": 3500,
+      "unit": "m",
+      "ends": [
+        "Short drop",
+        "Huge drop"
+      ],
+      "hints": [
         {
-          "label": "Denmark Strait cataract",
-          "value": 11500,
-          "emphasis": true
+          "label": "Burj Khalifa",
+          "value": 828
         },
         {
-          "label": "Tallest waterfall on land",
-          "value": 3212
+          "label": "Angel Falls",
+          "value": 979
         }
       ],
-      "note": "NOAA’s figures: about 3,500 m against 980 m. The land record is Angel Falls, Venezuela."
+      "explanation": "About 3,500 m (11,500 ft), by NOAA’s figures: more than three times Angel Falls in Venezuela, the tallest waterfall on land at 979 m (3,212 ft)."
     },
     {
       "type": "image",

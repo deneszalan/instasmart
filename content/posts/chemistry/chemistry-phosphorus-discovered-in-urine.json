@@ -51,6 +51,14 @@
       "text": "Phosphorus is in every cell: in DNA, RNA, ATP and the phospholipids of cell membranes, and bone mineral is a form of calcium phosphate. The body sheds phosphates in urine, so Brand’s unappealing raw material was a decent source."
     },
     {
+      "type": "fill",
+      "question": "Your body holds about 0.7 kg of phosphorus. Out of every 10 grams, how many are in your bones and teeth?",
+      "icon": "🦴",
+      "total": 10,
+      "answer": 9,
+      "explanation": "About 85 to 90%, as apatite, the calcium phosphate mineral of bone and tooth enamel. The rest is spread through soft tissues and body fluids, in DNA, ATP and cell membranes."
+    },
+    {
       "type": "quiz",
       "question": "What was Hennig Brand actually trying to make?",
       "options": [

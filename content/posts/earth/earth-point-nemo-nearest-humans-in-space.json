@@ -45,6 +45,30 @@
       "text": "Falling spacecraft are aimed at the ocean around Point Nemo because almost nothing is there: no regular shipping or air routes pass within about 400 km. Hundreds of decommissioned satellites, space stations and other spacecraft have been brought down into this stretch of the South Pacific."
     },
     {
+      "type": "place",
+      "question": "Point Nemo was calculated, not discovered. In which year was its position first worked out?",
+      "min": 1850,
+      "max": 2020,
+      "step": 1,
+      "answer": 1992,
+      "format": "year",
+      "ends": [
+        "Age of steam",
+        "Space age"
+      ],
+      "hints": [
+        {
+          "label": "Verne’s Nemo",
+          "value": 1870
+        },
+        {
+          "label": "First ISS crew",
+          "value": 2000
+        }
+      ],
+      "explanation": "1992: Croatian survey engineer Hrvoje Lukatela computed it with geospatial software, 122 years after Captain Nemo appeared in book form and eight years before the first ISS crew arrived."
+    },
+    {
       "type": "quiz",
       "question": "What does ‘nemo’ mean in Latin?",
       "options": [

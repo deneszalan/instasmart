@@ -25,15 +25,15 @@
     {
       "type": "text",
       "heading": "Why phosphorus matters",
-      "text": "Plants need phosphorus to grow, and the Amazon’s heavy rain keeps washing it out of the soil. Dust provides only around 13% of what settles on the forest each year, yet without that top-up the losses could eventually deplete the basin, so the forest’s long-term productivity is thought to depend on it."
+      "text": "Plants need phosphorus to grow, and the Amazon’s heavy rain keeps washing it out of the soil. Dust provides only a modest share of what settles on the forest each year, yet without that top-up the losses could eventually deplete the basin, so the forest’s long-term productivity is thought to depend on it."
     },
     {
-      "type": "pictogram",
-      "heading": "About 13% of the phosphorus that lands on the Amazon each year arrives as Saharan dust",
+      "type": "fill",
+      "question": "Of every 20 kg of phosphorus that lands on the Amazon in a year, how many come as Saharan dust?",
       "icon": "🌱",
-      "total": 100,
-      "count": 13,
-      "note": "A small share, but it offsets what the rain washes out of the soil over the long run."
+      "total": 20,
+      "answer": 3,
+      "explanation": "Roughly 13%, so about 3 in 20. A small share, but it offsets what the rain washes out of the soil over the long run, so the forest’s health is thought to depend on it."
     },
     {
       "type": "quiz",
