@@ -53,7 +53,7 @@ export function RankSlideView({ slide, challengeId }: Props<'rank'>) {
       ) : (
         <>
           <p className="rank__hint">Tap them from largest to smallest</p>
-          <ol className="choices" aria-label="Items to rank">
+          <ol className={`choices${slide.items.length >= 5 ? ' choices--5' : ''}`} aria-label="Items to rank">
             {shuffled.map((i) => {
               const pos = picks.indexOf(i);
               return (
@@ -225,6 +225,8 @@ export function PlaceSlideView({ slide, challengeId }: Props<'place'>) {
   const [low, high] = slide.colors ?? ['#38bdf8', '#fbbf24'];
   const format = slide.format ?? guessFormat(slide.unit, [slide.min, slide.max, slide.answer, ...(slide.hints ?? []).map((h) => h.value)]);
   const show = (v: number) => withUnit(v, slide.unit, format);
+  // Low to high, so neighbouring labels land on alternate rows.
+  const hints = [...(slide.hints ?? [])].sort((a, b) => a.value - b.value);
 
   const lock = () => {
     setLocked(true);
@@ -236,9 +238,9 @@ export function PlaceSlideView({ slide, challengeId }: Props<'place'>) {
       <p className="slide__heading">Place it</p>
       <p className="interactive__question">{inline(slide.question)}</p>
       <div className="place">
-        {slide.hints && (
+        {hints.length > 0 && (
           <div className="place__hints" aria-hidden="true">
-            {slide.hints.map((h, i) => (
+            {hints.map((h, i) => (
               <span key={i} className={`place__hint place__hint--${i % 2}`} style={{ left: `${Math.min(92, Math.max(8, pct(h.value)))}%` }}>
                 {h.label}
                 <small>{show(h.value)}</small>
@@ -247,7 +249,7 @@ export function PlaceSlideView({ slide, challengeId }: Props<'place'>) {
           </div>
         )}
         <div className="place__bar" style={{ background: `linear-gradient(90deg, ${low}, ${high})` }}>
-          {slide.hints?.map((h, i) => <i key={i} className="place__tick" style={{ left: `${pct(h.value)}%` }} />)}
+          {hints.map((h, i) => <i key={i} className="place__tick" style={{ left: `${pct(h.value)}%` }} />)}
           <i className="place__pin place__pin--you" style={{ left: `${pct(value)}%` }} />
           {locked && <i className="place__pin place__pin--real" style={{ left: `${pct(slide.answer)}%` }} />}
         </div>

@@ -3017,3 +3017,31 @@ p {
 .place__key--real {
   background: #22c55e;
 }
+
+/* Five tap-in-order items share the room with a long question. */
+.choices--5 {
+  gap: 6px;
+}
+
+.choices--5 .choice {
+  padding: 7px 10px;
+  font-size: 14px;
+}
+
+/* A tighter place puzzle: four hints plus a long question must still fit. */
+.place__hints {
+  height: 46px;
+}
+
+.place__slider {
+  height: 30px;
+}
+
+.place__value {
+  margin-top: 6px;
+  font-size: clamp(30px, 9vw, 38px);
+}
+
+.slide--place .btn--light {
+  margin-top: 10px;
+}

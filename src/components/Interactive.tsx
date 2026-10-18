@@ -226,7 +226,7 @@ export function OrderSlideView({ slide, challengeId }: Props<'order'>) {
     <div className="slide__center interactive" data-interactive>
       <p className="slide__heading">Tap in order</p>
       <p className="interactive__question">{inline(slide.heading)}</p>
-      <ol className="choices" aria-label="Items to order">
+      <ol className={`choices${slide.items.length >= 5 ? ' choices--5' : ''}`} aria-label="Items to order">
         {shuffled.map((original) => {
           const pos = picks.indexOf(original);
           const state = !done ? (pos >= 0 ? ' choice--picked' : '') : pos === original ? ' choice--right' : ' choice--wrong';
