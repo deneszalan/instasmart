@@ -9,7 +9,7 @@
     "alt": "A polished stainless steel sculpture of an impossible triangle standing on one corner against a blue backdrop.",
     "credit": "W. A. Stanggaßinger · CC BY-SA 4.0"
   },
-  "body": "The Penrose triangle looks like three square beams joined at right angles into a closed loop, and every corner seems believable on its own. But taken together they describe a shape that cannot exist as a solid in ordinary three-dimensional space. The Swedish artist Oscar Reutersvärd drew the first one in 1934, and the psychiatrist Lionel Penrose and his son Roger, the mathematician, came up with it independently and published it in the *British Journal of Psychology* in 1958. Sculptors get around the impossibility with shapes that only line up from one viewpoint; step aside and the ‘triangle’ falls apart.",
+  "body": "The Penrose triangle looks like three square beams joined at right angles into a closed loop, and every corner seems believable on its own. But taken together they describe a shape that cannot exist as a solid in ordinary three-dimensional space. The Swedish artist Oscar Reutersvärd drew the first one in 1934, and Lionel Penrose and his son Roger, later a Nobel-winning mathematician, came up with it independently and published it in the *British Journal of Psychology* in 1958. Sculptors get around the impossibility with shapes that only line up from one viewpoint; step aside and the ‘triangle’ falls apart.",
   "slides": [
     {
       "type": "image",
@@ -39,7 +39,7 @@
       "question": "The 1958 paper was co-written by Lionel Penrose. What was his profession?",
       "options": ["Psychiatrist", "Architect", "Sculptor", "Engineer"],
       "answer": 0,
-      "explanation": "Lionel Penrose was a psychiatrist; his son Roger became a mathematician and Nobel laureate. Their paper called impossible objects ‘a special type of visual illusion’."
+      "explanation": "Lionel Penrose was a psychiatrist and his son Roger a mathematician. Their paper called impossible objects ‘a special type of visual illusion’."
     },
     {
       "type": "scramble",

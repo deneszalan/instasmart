@@ -38,14 +38,18 @@
       "text": "Estimates of native speakers, who grew up with it at home, range from about 1,000 to 2,000."
     },
     {
-      "type": "timeline",
-      "heading": "A hopeful language",
-      "events": [
-        { "when": "1887", "text": "Unua Libro, the first textbook, appears in Russian" },
-        { "when": "1905", "text": "First World Esperanto Congress, in Boulogne-sur-Mer" },
-        { "when": "1954", "text": "UNESCO gives it official support as an auxiliary language" },
-        { "when": "Today", "text": "Its Wikipedia has about 390,000 articles" }
-      ]
+      "type": "spectrum",
+      "heading": "From one textbook to a world movement",
+      "min": 1880,
+      "max": 1960,
+      "format": "year",
+      "ends": ["1880", "1960"],
+      "marks": [
+        { "label": "Unua Libro", "value": 1887, "emphasis": true },
+        { "label": "First World Congress", "value": 1905 },
+        { "label": "UNESCO support", "value": 1954 }
+      ],
+      "note": "The first World Congress met in Boulogne-sur-Mer. Its Wikipedia now has about 390,000 articles."
     },
     {
       "type": "quiz",

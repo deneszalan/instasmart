@@ -6,7 +6,7 @@
   "emoji": "🪦",
   "cover": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Monument_voor_PI.jpg",
-    "alt": "A carved stone memorial plaque set into a church wall in Leiden, with long rows of digits of pi in its inscription.",
+    "alt": "The stone memorial to Ludolph van Ceulen in Leiden's Pieterskerk, a copy of his lost tombstone, inscribed with π to 35 decimal places.",
     "credit": "A.L. Boon · CC BY-SA 3.0"
   },
   "body": "**Ludolph van Ceulen** was a fencing master and mathematician who spent a major part of his life calculating π. He used essentially the same method Archimedes had used some 1,700 years earlier, squeezing a circle between polygons with more and more sides, and did all the arithmetic by hand. He published a first result in his 1596 book *Van den Circkel* (\"On the Circle\") and kept going until he had **35 decimal places**. After he died in Leiden in 1610, those digits were engraved on his tombstone. The original stone was eventually lost, and it was restored in 2000 in the city's Pieterskerk.",

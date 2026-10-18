@@ -9,7 +9,7 @@
     "alt": "A marble bust of Socrates with a broad, snub-nosed face, a bald crown and a thick curly beard, in the Vatican’s Pio-Clementino Museum.",
     "credit": "Jastrow · Public domain"
   },
-  "body": "No writings by Socrates have come down to us, so his views have to be pieced together from other people’s accounts. The main ones come from Plato and Xenophon, from the comic playwright Aristophanes, and from Aristotle, and they do not always agree. Plato’s Socrates says he never took money for teaching; Xenophon’s says his students pay him. Plato also seems to have used Socrates as a voice for his own ideas, and very few, if any, of his dialogues are word-for-word records. Telling the historical man apart from the literary character is known as the Socratic problem.",
+  "body": "No writings by Socrates have come down to us, so his views have to be pieced together from other people’s accounts. The main ones come from Plato and Xenophon, from the comic playwright Aristophanes, and from Aristotle, and they do not always agree. Plato’s Socrates says he never took money for teaching; Xenophon’s says his students pay him. Plato also seems to have used Socrates as a voice for his own ideas. Telling the historical man apart from the literary character is known as the Socratic problem.",
   "slides": [
     {
       "type": "list",
@@ -18,27 +18,39 @@
       "items": [
         "Plato: dialogues starring Socrates",
         "Xenophon: his own Apology and Symposium",
-        "Aristophanes: the comedy Clouds, 423 BC",
+        "Aristophanes: a comic playwright",
         "Aristotle: notes on what Socrates taught"
       ]
     },
     {
       "type": "compare",
       "heading": "Did Socrates charge for lessons?",
-      "left": { "label": "Plato’s Socrates", "text": "Denies ever having accepted money to teach anyone." },
-      "right": { "label": "Xenophon’s Socrates", "text": "In Xenophon’s Symposium, he says his students pay him for teaching wisdom." }
+      "left": {
+        "label": "Plato’s Socrates",
+        "text": "Denies ever having accepted money to teach anyone."
+      },
+      "right": {
+        "label": "Xenophon’s Socrates",
+        "text": "In Xenophon’s Symposium, he says his students pay him for teaching wisdom."
+      }
     },
     {
       "type": "quiz",
       "question": "Which of these early accounts of Socrates was a comedy written to make fun of him?",
-      "options": ["Clouds", "Apology", "Symposium", "Crito"],
+      "options": [
+        "Clouds",
+        "Apology",
+        "Symposium",
+        "Crito"
+      ],
       "answer": 0,
       "explanation": "Aristophanes’ Clouds, staged in 423 BC, humorously attacks Socrates. The others are Socratic works by Plato or Xenophon."
     },
     {
-      "type": "text",
-      "heading": "Whose ideas are they?",
-      "text": "Many of Plato’s dialogues seem to use Socrates as a device for Plato’s own thought. Aristotle offers a clue: he says Socrates did not hold that the Forms exist separately, the famous theory most associated with Plato, and that Socrates focused on defining concepts."
+      "type": "reveal",
+      "prompt": "Aristotle gives a clue for telling the two men apart. Which famous idea did he say was not Socrates’?",
+      "answer": "Forms that exist separately",
+      "detail": "Aristotle says Socrates did not hold that the Forms exist separately, the theory most associated with Plato. Socrates, he says, focused on defining concepts."
     },
     {
       "type": "image",
@@ -49,14 +61,23 @@
       "credit": "Jacques-Louis David · Public domain"
     },
     {
-      "type": "scramble",
-      "clue": "The comic playwright who mocked Socrates on stage in 423 BC",
-      "answer": "ARISTOPHANES",
-      "detail": "Aristophanes is one of the four main sources on Socrates, alongside Plato, Xenophon and Aristotle."
+      "type": "text",
+      "heading": "Plato’s mouthpiece",
+      "text": "Many of Plato’s dialogues seem to use Socrates as a device for Plato’s own thought, and very few, if any, are word-for-word records of real conversations. So the Socrates most people know may be partly Plato in disguise."
     }
   ],
-  "tags": ["socrates", "ancientgreece", "plato"],
-  "source": { "label": "Wikipedia: Socratic problem", "url": "https://en.wikipedia.org/wiki/Socratic_problem" },
-  "author": { "name": "Claude", "kind": "ai" },
+  "tags": [
+    "socrates",
+    "ancientgreece",
+    "plato"
+  ],
+  "source": {
+    "label": "Wikipedia: Socratic problem",
+    "url": "https://en.wikipedia.org/wiki/Socratic_problem"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
   "createdAt": "2026-10-18"
 }
