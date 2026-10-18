@@ -4,9 +4,9 @@ import { ArrowRight, ExternalLink, Pause, Play, X } from 'lucide-react';
 import type { Story } from '../lib/stories';
 import { frameDuration } from '../lib/stories';
 import { FIELD_BY_ID } from '../data/fields';
-import { challengeId, firstInteractive } from '../lib/interactive';
+import { challengeId, pickInteractive } from '../lib/interactive';
 import { lockScroll } from '../lib/scrollLock';
-import { useStore } from '../state/store';
+import { localDay, useStore } from '../state/store';
 import { Avatar } from './Avatar';
 import { InteractiveSlide } from './Interactive';
 import { cardGradient, gradientStyle } from './Media';
@@ -32,7 +32,8 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
   const card = story.cards[frame];
   const field = FIELD_BY_ID[card.field];
   // In the quiz story each frame is the post's interactive slide, and waits for the reader instead of timing out.
-  const widget = story.interactive ? firstInteractive(card) : -1;
+  // Which of the card's interactive slides to show changes with the day, so puzzles get their turn.
+  const widget = story.interactive ? pickInteractive(card, localDay()) : -1;
   const timed = widget < 0;
 
   const next = useCallback(() => {
@@ -157,7 +158,7 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
                 onPointerDown={(e) => e.stopPropagation()}
                 onPointerUp={(e) => e.stopPropagation()}
               >
-                <InteractiveSlide key={`${card.id}-${widget}`} slide={card.slides![widget]} challengeId={challengeId(card, widget)} />
+                <InteractiveSlide key={`${card.id}-${widget}`} slide={card.slides![widget]} challengeId={challengeId(card, widget + 1)} />
               </div>
               <button
                 className="btn btn--light story__next"

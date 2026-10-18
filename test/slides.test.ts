@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { KnowledgeCard, Slide } from '../src/types';
 import { slideText } from '../src/lib/feed';
-import { firstInteractive, isPuzzle } from '../src/lib/interactive';
+import { firstInteractive, isPuzzle, pickInteractive } from '../src/lib/interactive';
 import { firstVisual } from '../src/lib/visual';
 
 const card = (slides: Slide[]): KnowledgeCard => ({
@@ -31,6 +31,19 @@ describe('visual and puzzle slides', () => {
     expect(slideText({ type: 'odd', items: ['Mercury', 'Jupiter'], answer: 1, explanation: 'Gas giant.' })).toBe('Mercury / Jupiter Gas giant.');    expect(slideText({ type: 'rank', heading: 'Moons', unit: 'moons', items: [{ label: 'Mars', value: 2 }], explanation: 'Few.' })).toBe('Moons Mars 2 moons Few.');
     expect(slideText({ type: 'fill', question: 'How many?', icon: '🧍', total: 10, answer: 3, explanation: 'Three.' })).toBe('How many? 3 of 10 Three.');
     expect(slideText({ type: 'place', question: 'How loud?', min: 0, max: 140, answer: 110, unit: 'dB', explanation: 'Loud.' })).toBe('How loud? 110 dB Loud.');
+  });
+
+  it('can be picked for a story by a key', () => {
+    const c = card([
+      { type: 'text', text: 'Hello' },
+      { type: 'quiz', question: 'q', options: ['a', 'b'], answer: 0, explanation: 'e' },
+      { type: 'scramble', clue: 'c', answer: 'word' },
+    ]);
+    const picks = new Set(['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'].map((day) => pickInteractive(c, day)));
+    expect([...picks].every((i) => i === 1 || i === 2)).toBe(true);
+    expect(picks.size).toBe(2);
+    expect(pickInteractive(c, 'mon')).toBe(pickInteractive(c, 'mon'));
+    expect(pickInteractive(card([{ type: 'text', text: 'Hello' }]), 'mon')).toBe(-1);
   });
 
   it('count as visual or interactive', () => {

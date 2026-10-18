@@ -32,7 +32,14 @@ export function firstInteractive(card: KnowledgeCard): number {
   return card.slides?.findIndex(isInteractive) ?? -1;
 }
 
-/** The key a slide's result is stored under in the reader's progress. */
+/** One of the card's interactive slides, chosen by `key` (for example the day) so stories vary, or -1. */
+export function pickInteractive(card: KnowledgeCard, key: string): number {
+  const options = (card.slides ?? []).map((slide, i) => (isInteractive(slide) ? i : -1)).filter((i) => i >= 0);
+  if (!options.length) return -1;
+  return options[seed(`${key}:${card.id}`) % options.length];
+}
+
+/** The key a slide's result is stored under in the reader's progress; `slideIndex` counts the title slide as 0. */
 export function challengeId(card: KnowledgeCard, slideIndex: number): string {
   return `${card.id}#${slideIndex}`;
 }
