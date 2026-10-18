@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-gallium-melts-in-warm-hand",
+  "field": "chemistry",
+  "title": "Gallium is a metal that can melt in a warm hand",
+  "emoji": "🫠",
+  "body": "Pure gallium melts at about **29.8°C**, only a little above a typical room temperature. A sufficiently warm hand can transfer enough heat to turn a small solid piece into liquid metal. Melting changes how its atoms are arranged and move; it does not turn gallium into a different substance. The dramatic change is a physical change of state.",
+  "slides": [
+    {
+      "type": "stat",
+      "value": "29.8°C",
+      "label": "Approximate melting point of pure gallium",
+      "text": "That is about 85.6°F, far below the temperatures needed to melt familiar metals such as iron."
+    },
+    {
+      "type": "text",
+      "heading": "Where the heat comes from",
+      "text": "Heat flows from a warmer hand into cooler gallium. Once the metal reaches its melting point, more heat can turn solid gallium into liquid."
+    },
+    {
+      "type": "compare",
+      "heading": "Different state, same element",
+      "left": {
+        "label": "Solid gallium",
+        "text": "Its atoms form an ordered structure."
+      },
+      "right": {
+        "label": "Liquid gallium",
+        "text": "Its atoms can move past one another. They are still gallium atoms."
+      }
+    }
+  ],
+  "tags": [
+    "gallium",
+    "metals",
+    "temperature"
+  ],
+  "source": {
+    "label": "Royal Society of Chemistry: Gallium",
+    "url": "https://periodic-table.rsc.org/element/31/gallium"
+  },
+  "author": {
+    "name": "ChatGPT",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

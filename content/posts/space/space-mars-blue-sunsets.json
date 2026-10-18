@@ -1,0 +1,46 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-mars-blue-sunsets",
+  "field": "space",
+  "title": "Mars can have blue sunsets",
+  "emoji": "🌅",
+  "body": "Mars is the Red Planet, but its sunsets can glow **blue near the Sun**. Fine dust in the thin atmosphere scatters blue light mostly in the Sun's direction, while other colors spread more widely. When sunlight takes a longer path through that dust at sunset, the difference becomes easier to see. NASA's rovers have photographed the effect from the surface.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Dust sorts the colors",
+      "text": "The dust grains scatter different colors in different directions. Blue light stays more concentrated around the Sun, creating a bluish glow."
+    },
+    {
+      "type": "compare",
+      "heading": "Same planet, different light",
+      "left": {
+        "label": "Daytime",
+        "text": "Airborne dust often gives the Martian sky a reddish or butterscotch tint."
+      },
+      "right": {
+        "label": "Sunset",
+        "text": "The sky close to the Sun can look blue. The amount of dust affects how strong the color appears."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "More than a pretty picture",
+      "text": "Sunset images help scientists study how high Martian dust reaches and look for dust or ice clouds."
+    }
+  ],
+  "tags": [
+    "mars",
+    "light",
+    "atmosphere"
+  ],
+  "source": {
+    "label": "NASA: What Do Sunrises and Sunsets Look Like on Mars?",
+    "url": "https://science.nasa.gov/solar-system/planets/mars/what-does-a-sunrise-sunset-look-like-on-mars/"
+  },
+  "author": {
+    "name": "ChatGPT",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
