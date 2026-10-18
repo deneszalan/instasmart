@@ -7,6 +7,28 @@
   "body": "The cornea, the clear dome at the front of the eye, must stay perfectly transparent, so it has no blood vessels at all. Instead, oxygen from the air dissolves into the thin film of tears and diffuses into the cornea, while nutrients arrive from the tears and the fluid behind it. Starved of oxygen, for example by poorly fitted contact lenses, the cornea can respond by growing new blood vessels into itself, which can cloud vision.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "How the cornea breathes",
+      "steps": [
+        {
+          "icon": "🌬️",
+          "label": "Oxygen in the air meets the tear film"
+        },
+        {
+          "icon": "💧",
+          "label": "It dissolves into the tears"
+        },
+        {
+          "icon": "👁️",
+          "label": "It diffuses into the cornea"
+        },
+        {
+          "icon": "✨",
+          "label": "No blood vessels needed, so it stays clear"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "Why does the cornea have no blood vessels?",
       "options": [
@@ -16,6 +38,18 @@
       ],
       "answer": 0,
       "explanation": "Vessels would spoil its transparency, so oxygen from the air dissolves into the tear film and diffuses in, while nutrients arrive from the tears and the fluid behind it."
+    },
+    {
+      "type": "odd",
+      "heading": "Which one has blood vessels?",
+      "items": [
+        "Cornea",
+        "Cartilage",
+        "Lens of the eye",
+        "Skin"
+      ],
+      "answer": 3,
+      "explanation": "Skin is full of blood vessels. The cornea, cartilage and the lens have none: the cornea takes oxygen from the air, and the lens is fed by the fluid around it."
     }
   ],
   "tags": [

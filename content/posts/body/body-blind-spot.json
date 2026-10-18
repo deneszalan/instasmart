@@ -27,6 +27,27 @@
       "text": "Each blind spot is about 7.5° tall and 5.5° wide, sitting some 12–15° to the side of where you look. That’s room for about ten full moons in a row."
     },
     {
+      "type": "chart",
+      "heading": "Across the sky, in degrees",
+      "items": [
+        {
+          "label": "The full Moon",
+          "value": 0.5
+        },
+        {
+          "label": "Your blind spot, wide",
+          "value": 5.5
+        },
+        {
+          "label": "Your blind spot, tall",
+          "value": 7.5,
+          "emphasis": true
+        }
+      ],
+      "unit": "°",
+      "note": "The Moon spans about half a degree; the blind spot sits 12–15° to the side of where you look"
+    },
+    {
       "type": "text",
       "heading": "Octopuses have none",
       "text": "In octopus eyes, which evolved separately, the optic nerve approaches the light sensors from behind, so there is no gap in the retina and no blind spot."

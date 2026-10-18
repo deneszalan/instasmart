@@ -7,6 +7,25 @@
   "body": "Two small branchial hearts pump an octopus’s blood through its two gills, while a third, the systemic heart, sends it around the rest of the body. The blood is blue because oxygen is carried by haemocyanin, a copper-rich protein dissolved in the plasma, rather than iron-based haemoglobin inside red cells. Oddly, the systemic heart stops beating while an octopus swims, which may help explain why they often prefer to crawl.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "Three hearts, one circuit",
+      "steps": [
+        {
+          "icon": "🫧",
+          "label": "Two branchial hearts pump blood to the gills"
+        },
+        {
+          "icon": "🔵",
+          "label": "Copper-based haemocyanin loads up oxygen"
+        },
+        {
+          "icon": "🐙",
+          "label": "The systemic heart sends it round the body"
+        }
+      ],
+      "cycle": true
+    },
+    {
       "type": "quiz",
       "question": "What does an octopus’s systemic heart, the one that supplies its body, do while it swims?",
       "options": [
@@ -16,6 +35,25 @@
       ],
       "answer": 0,
       "explanation": "The systemic heart stops beating while an octopus swims, which may help explain why octopuses often prefer to crawl."
+    },
+    {
+      "type": "match",
+      "heading": "Match each part to its job",
+      "pairs": [
+        {
+          "left": "Branchial hearts",
+          "right": "Pump blood through the gills"
+        },
+        {
+          "left": "Systemic heart",
+          "right": "Serves the rest of the body"
+        },
+        {
+          "left": "Haemocyanin",
+          "right": "Carries oxygen, using copper"
+        }
+      ],
+      "explanation": "Two branchial hearts feed the gills, the systemic heart the body, and copper-based haemocyanin carries the oxygen and makes the blood blue."
     }
   ],
   "tags": [

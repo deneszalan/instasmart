@@ -29,6 +29,27 @@
       "explanation": "Some 62,000 toadlets were bred in captivity and released within two years of the first 102 arriving."
     },
     {
+      "type": "scale",
+      "heading": "From 102 toads to 200 million",
+      "items": [
+        {
+          "label": "1935: imported",
+          "value": 102
+        },
+        {
+          "label": "1937: released",
+          "value": 62000
+        },
+        {
+          "label": "2011: estimated",
+          "value": 200000000,
+          "emphasis": true
+        }
+      ],
+      "unit": "toads",
+      "note": "The 2011 figure is an estimate; the first 102 were shipped from Hawaii in June 1935"
+    },
+    {
       "type": "timeline",
       "heading": "An invasion speeds up",
       "events": [
@@ -49,6 +70,18 @@
           "text": "About 60 km a year, with longer-legged toads leading"
         }
       ]
+    },
+    {
+      "type": "odd",
+      "heading": "Which one isn’t a victim of the toad’s toxin?",
+      "items": [
+        "Northern quoll",
+        "Goanna",
+        "Snake",
+        "Cane beetle"
+      ],
+      "answer": 3,
+      "explanation": "Quolls, goannas and snakes die when they bite a cane toad. The cane beetle was the pest the toads were imported to eat, and there is no evidence they dented its numbers."
     }
   ],
   "tags": [

@@ -15,6 +15,23 @@
       "answer": 43,
       "unit": "hectares",
       "explanation": "About 43 hectares. Its roughly 47,000 stems are genetically identical shoots from one shared root system in Utah’s Fishlake National Forest."
+    },
+    {
+      "type": "scale",
+      "heading": "The heaviest organism known, next to the heaviest animal",
+      "items": [
+        {
+          "label": "Blue whale, up to",
+          "value": 200
+        },
+        {
+          "label": "Pando",
+          "value": 6000,
+          "emphasis": true
+        }
+      ],
+      "unit": "t",
+      "note": "Both are estimates: the heaviest blue whales reach 190–200 tonnes"
     }
   ],
   "tags": [

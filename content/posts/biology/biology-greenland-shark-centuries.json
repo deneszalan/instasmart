@@ -13,6 +13,37 @@
       "text": "Even the low end of that range, 272 years, beats every other vertebrate known."
     },
     {
+      "type": "spectrum",
+      "heading": "A Greenland shark’s life next to a human one",
+      "min": 0,
+      "max": 400,
+      "unit": "years",
+      "ends": [
+        "Birth",
+        "400 years"
+      ],
+      "marks": [
+        {
+          "label": "Oldest verified human",
+          "value": 122
+        },
+        {
+          "label": "Shark reaches maturity",
+          "value": 150
+        },
+        {
+          "label": "Oldest shark, at least",
+          "value": 272
+        },
+        {
+          "label": "Oldest shark, best estimate",
+          "value": 392,
+          "emphasis": true
+        }
+      ],
+      "note": "Jeanne Calment lived 122 years; the oldest shark’s age was estimated at 392 ± 120"
+    },
+    {
       "type": "estimate",
       "question": "How long was the largest confirmed Greenland shark?",
       "min": 1,

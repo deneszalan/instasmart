@@ -18,6 +18,40 @@
       "explanation": "The mouldy dish: 1928. Florey’s team purified penicillin about a decade later, Albert Alexander was treated in 1941, and the Nobel Prize came in 1945."
     },
     {
+      "type": "spectrum",
+      "heading": "Years after Fleming’s mouldy dish of 1928",
+      "min": 0,
+      "max": 20,
+      "ends": [
+        "1928",
+        "1948"
+      ],
+      "marks": [
+        {
+          "label": "Fleming spots the mould",
+          "value": 0,
+          "emphasis": true
+        },
+        {
+          "label": "Fleming’s work on it ends",
+          "value": 1
+        },
+        {
+          "label": "Oxford team takes it up",
+          "value": 11
+        },
+        {
+          "label": "First patient treated",
+          "value": 13
+        },
+        {
+          "label": "Nobel Prize",
+          "value": 17
+        }
+      ],
+      "note": "1928, 1929, 1939, 1941 and 1945: a decade passed before anyone turned the mould into a medicine"
+    },
+    {
       "type": "text",
       "heading": "A lucky return",
       "text": "On 3 September 1928, Fleming returned from a family holiday to find that a mould had spoiled one of the bacterial culture plates he had left on his bench."

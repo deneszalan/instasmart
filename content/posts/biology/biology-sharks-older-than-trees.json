@@ -44,6 +44,41 @@
       ]
     },
     {
+      "type": "spectrum",
+      "heading": "Who came first, in millions of years ago",
+      "min": 0,
+      "max": 500,
+      "unit": "Mya",
+      "ends": [
+        "Today",
+        "500 Mya"
+      ],
+      "marks": [
+        {
+          "label": "Shark-like fish scales",
+          "value": 450,
+          "emphasis": true
+        },
+        {
+          "label": "First trees",
+          "value": 385
+        },
+        {
+          "label": "First dinosaurs",
+          "value": 230
+        },
+        {
+          "label": "Modern-style sharks",
+          "value": 200
+        },
+        {
+          "label": "Dinosaurs die out",
+          "value": 66
+        }
+      ],
+      "note": "Mya: million years ago. Trees and dinosaurs both arrived after the first shark-like fish"
+    },
+    {
       "type": "compare",
       "heading": "Old, but how old?",
       "left": {

@@ -54,6 +54,12 @@
       ],
       "answer": 0,
       "explanation": "Thymocytes that react strongly to self antigens die by apoptosis. Only cells that react, but not against the body itself, survive and leave."
+    },
+    {
+      "type": "scramble",
+      "clue": "The orderly form of cell death that removes T cells that fail the thymus exam",
+      "answer": "APOPTOSIS",
+      "detail": "From the Greek for ‘falling off’, as leaves fall from a tree. Both the non-reactors and the self-attackers die this way."
     }
   ],
   "tags": [

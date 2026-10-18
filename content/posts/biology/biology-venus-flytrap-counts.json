@@ -38,6 +38,30 @@
       "type": "text",
       "heading": "Flies, mostly not",
       "text": "Despite the name, flying insects make up under 5% of its catch. A study of its prey found about 33% ants, 30% spiders, 10% beetles and 10% grasshoppers. In the wild the plant grows only in a patch of the coastal Carolinas, within roughly 100 km of Wilmington, North Carolina."
+    },
+    {
+      "type": "chart",
+      "heading": "What a Venus flytrap actually catches",
+      "items": [
+        {
+          "label": "Ants",
+          "value": 33
+        },
+        {
+          "label": "Spiders",
+          "value": 30
+        },
+        {
+          "label": "Beetles",
+          "value": 10
+        },
+        {
+          "label": "Grasshoppers",
+          "value": 10
+        }
+      ],
+      "unit": "%",
+      "note": "Share of prey in one study; flying insects made up under 5%"
     }
   ],
   "tags": [

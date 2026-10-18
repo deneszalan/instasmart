@@ -17,6 +17,41 @@
       "explanation": "TRPV1 opens at temperatures greater than 43 °C, and also in acid and with capsaicin, so the brain gets the same signal from all three."
     },
     {
+      "type": "spectrum",
+      "heading": "Where the heat sensor switches on",
+      "min": 0,
+      "max": 100,
+      "unit": "°C",
+      "ends": [
+        "Ice",
+        "Boiling"
+      ],
+      "marks": [
+        {
+          "label": "Ice melts",
+          "value": 0
+        },
+        {
+          "label": "Body temperature",
+          "value": 37
+        },
+        {
+          "label": "TRPV1 opens",
+          "value": 43,
+          "emphasis": true
+        },
+        {
+          "label": "Water boils",
+          "value": 100
+        }
+      ],
+      "colors": [
+        "#38bdf8",
+        "#f97316"
+      ],
+      "note": "Capsaicin opens the same channel at any temperature, so chilli feels hot without heat"
+    },
+    {
       "type": "list",
       "heading": "What opens the TRPV1 channel",
       "style": "bullets",
@@ -43,6 +78,37 @@
       "type": "text",
       "heading": "Where the heat sits",
       "text": "The seeds themselves make no capsaicin: the highest concentration is in the white pith of the inner wall where the seeds attach. Capsaicin and dihydrocapsaicin, the hottest members of the family, rate 16 million Scoville heat units."
+    },
+    {
+      "type": "sort",
+      "heading": "Does it open the TRPV1 channel?",
+      "bins": [
+        "Opens it",
+        "Doesn’t"
+      ],
+      "items": [
+        {
+          "text": "Heat above 43 °C",
+          "bin": 0
+        },
+        {
+          "text": "Capsaicin, the heat in chilli",
+          "bin": 0
+        },
+        {
+          "text": "An ice cube’s cold",
+          "bin": 1
+        },
+        {
+          "text": "Acid",
+          "bin": 0
+        },
+        {
+          "text": "Wasabi’s pungent compound",
+          "bin": 0
+        }
+      ],
+      "explanation": "Heat, acid, capsaicin and allyl isothiocyanate all open TRPV1. Cold is sensed by a different channel, TRPM8, which also responds to menthol."
     }
   ],
   "tags": [

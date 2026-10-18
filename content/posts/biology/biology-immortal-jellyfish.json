@@ -7,6 +7,29 @@
   "body": "When an adult Turritopsis dohrnii is stressed, injured, sick or old, it can sink down and transform back into a polyp, the immature stage that lives attached to the seabed, and grow a new colony. It does this by transdifferentiation, turning specialised cells into different cell types. In theory the cycle could repeat indefinitely, earning it the nickname ‘immortal jellyfish’, but in the wild most are eaten or killed by disease first.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "The loop that earns its nickname",
+      "steps": [
+        {
+          "icon": "🪼",
+          "label": "An adult is hurt, starving, sick or old"
+        },
+        {
+          "icon": "🫧",
+          "label": "Its bell and tentacles break down"
+        },
+        {
+          "icon": "🔬",
+          "label": "Its cells turn into a seabed polyp colony"
+        },
+        {
+          "icon": "🌱",
+          "label": "The colony buds off new jellyfish"
+        }
+      ],
+      "cycle": true
+    },
+    {
       "type": "quiz",
       "question": "How does Turritopsis dohrnii turn itself back into a polyp?",
       "options": [
@@ -16,6 +39,12 @@
       ],
       "answer": 0,
       "explanation": "Transdifferentiation: specialised cells turn into different cell types, and the adult becomes a polyp attached to the seabed that can grow a new colony."
+    },
+    {
+      "type": "scramble",
+      "clue": "The attached, immature stage that this jellyfish can turn back into",
+      "answer": "POLYP",
+      "detail": "The polyp lives fixed to the seabed and buds off new jellyfish, so in theory the cycle could repeat for ever."
     }
   ],
   "tags": [

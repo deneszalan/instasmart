@@ -17,6 +17,14 @@
       "explanation": "18.3% of mothers died that April. By July, with chlorinated lime hand-washing in force, the rate was 1.2%."
     },
     {
+      "type": "pictogram",
+      "heading": "April 1847: 18 of every 100 mothers in the doctors’ clinic died",
+      "icon": "🧍",
+      "total": 100,
+      "count": 18,
+      "note": "18.3% that month; by July, with chlorinated-lime hand-washing in force, 1.2%"
+    },
+    {
       "type": "image",
       "src": "semmelweis.svg",
       "alt": "Bar chart of maternal deaths in Vienna’s First Clinic in 1847: 18.3% in April, then after chlorinated-lime hand-washing began in mid-May, 2.2% in June, 1.2% in July and 1.9% in August.",

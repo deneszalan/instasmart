@@ -7,6 +7,28 @@
   "body": "Many textbooks once showed sweet at the tip, bitter at the back and sour and salty along the sides. In reality, every basic taste can be detected by all regions of the tongue that have taste buds, though sensitivity varies slightly from place to place. The map traces back to a 1901 German paper that measured small differences in taste thresholds, which were exaggerated when the results were replotted in a 1942 book.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "How a myth was made",
+      "steps": [
+        {
+          "icon": "📏",
+          "label": "1901: a paper measures tiny differences"
+        },
+        {
+          "icon": "📖",
+          "label": "1942: a book replots them, exaggerated"
+        },
+        {
+          "icon": "🏫",
+          "label": "Textbooks copy the map for decades"
+        },
+        {
+          "icon": "👅",
+          "label": "Reality: every region tastes every taste"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "Where did the tongue map come from?",
       "options": [
@@ -16,6 +38,18 @@
       ],
       "answer": 0,
       "explanation": "A 1901 German paper measured small differences in taste thresholds; when a 1942 book replotted the results, those differences were exaggerated."
+    },
+    {
+      "type": "odd",
+      "heading": "Which one isn’t a basic taste?",
+      "items": [
+        "Sweet",
+        "Sour",
+        "Umami",
+        "Spicy"
+      ],
+      "answer": 3,
+      "explanation": "Sweet, sour, salty, bitter and umami are the five basic tastes. ‘Spicy’ is not a taste: capsaicin stimulates pain and temperature fibres, a sensation called chemesthesis."
     }
   ],
   "tags": [

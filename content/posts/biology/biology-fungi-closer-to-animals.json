@@ -16,6 +16,37 @@
       ],
       "answer": 0,
       "explanation": "The name refers to the single tail-like flagellum at the back of cells such as animal sperm and the swimming spores of some fungi."
+    },
+    {
+      "type": "sort",
+      "heading": "Opisthokont, or not?",
+      "bins": [
+        "Opisthokont",
+        "Another branch"
+      ],
+      "items": [
+        {
+          "text": "A mushroom",
+          "bin": 0
+        },
+        {
+          "text": "An oak tree",
+          "bin": 1
+        },
+        {
+          "text": "A human",
+          "bin": 0
+        },
+        {
+          "text": "Kelp, a brown alga",
+          "bin": 1
+        },
+        {
+          "text": "Baker’s yeast",
+          "bin": 0
+        }
+      ],
+      "explanation": "Animals and fungi, yeast included, share the opisthokont branch. Plants and brown algae such as kelp sit on other branches of the tree of life."
     }
   ],
   "tags": [

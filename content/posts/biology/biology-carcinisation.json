@@ -16,6 +16,18 @@
       ],
       "answer": 0,
       "explanation": "King crabs evolved from hermit crab ancestors, and the asymmetry is a leftover from ancestors that lived in coiled snail shells."
+    },
+    {
+      "type": "odd",
+      "heading": "Which one is a true crab?",
+      "items": [
+        "King crab",
+        "Porcelain crab",
+        "Coconut crab",
+        "Blue crab"
+      ],
+      "answer": 3,
+      "explanation": "The blue crab belongs to the true crabs, the Brachyura. King, porcelain and coconut crabs are anomurans, relatives of hermit crabs that evolved crab-like bodies on their own."
     }
   ],
   "tags": [

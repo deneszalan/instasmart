@@ -7,6 +7,29 @@
   "body": "Tardigrades, or water bears, are eight-legged animals about half a millimetre long. When their surroundings dry out, many species shrivel into a dormant ‘tun’, losing most of their water and slowing their metabolism almost to a stop while protective proteins shield their cells. In 2007, dried tardigrades flew on the FOTON-M3 mission and spent 10 days exposed to open space. The vacuum alone had no significant effect on them.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "From water bear to tun and back",
+      "steps": [
+        {
+          "icon": "🏜️",
+          "label": "Its surroundings dry out"
+        },
+        {
+          "icon": "🫘",
+          "label": "It shrivels into a dormant tun"
+        },
+        {
+          "icon": "🛡️",
+          "label": "Metabolism all but stops; cells shielded"
+        },
+        {
+          "icon": "💧",
+          "label": "Water returns and the tun revives"
+        }
+      ],
+      "cycle": true
+    },
+    {
       "type": "text",
       "heading": "Not invincible",
       "text": "Active, water-filled tardigrades are far more fragile. Their famous toughness belongs mainly to the dried tun state, and it varies a lot between species."
@@ -31,6 +54,37 @@
       ],
       "answer": 0,
       "explanation": "The vacuum alone had no significant effect, but adding unfiltered solar UV killed many of the tuns, though some still revived when rehydrated on Earth."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Dried tardigrades survived 10 days in open space",
+          "bin": 0
+        },
+        {
+          "text": "Active, water-filled tardigrades are just as tough",
+          "bin": 1
+        },
+        {
+          "text": "The vacuum alone killed most of them",
+          "bin": 1
+        },
+        {
+          "text": "Unfiltered sunlight killed many of them",
+          "bin": 0
+        },
+        {
+          "text": "A tardigrade has eight legs",
+          "bin": 0
+        }
+      ],
+      "explanation": "The vacuum had no significant effect on the dried tuns; solar ultraviolet did the damage. Active tardigrades are far more fragile."
     }
   ],
   "tags": [

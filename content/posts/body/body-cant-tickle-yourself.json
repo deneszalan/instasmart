@@ -7,6 +7,28 @@
   "body": "In 1998, Sarah-Jayne Blakemore and colleagues used brain imaging to study the self-tickle response. When volunteers used a joystick to control a small tickling robot themselves, they could not make themselves laugh. The explanation: the **cerebellum**, which helps coordinate movement, sends the somatosensory cortex precise information about where your own movement will land, and a cortical mechanism, still not fully identified, then damps the sensation. Another person’s fingers can’t be forecast, so the full surprise arrives on your skin.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "The 1998 tickling-robot experiment",
+      "steps": [
+        {
+          "icon": "🕹️",
+          "label": "Volunteers steer a tickling robot"
+        },
+        {
+          "icon": "🧠",
+          "label": "Brain imaging records the response"
+        },
+        {
+          "icon": "😐",
+          "label": "Self-steered touch: no laughter"
+        },
+        {
+          "icon": "😂",
+          "label": "Touch they don’t control: the full tickle"
+        }
+      ]
+    },
+    {
       "type": "list",
       "heading": "Why self-tickling fails",
       "style": "steps",

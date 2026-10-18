@@ -16,6 +16,37 @@
       ],
       "answer": 1,
       "explanation": "A cucumber grows from one flower with one ovary whose wall ripens into the flesh. A strawberry’s flesh is the swollen flower base, and a raspberry is a cluster of small fruits."
+    },
+    {
+      "type": "sort",
+      "heading": "Berry or not, to a botanist?",
+      "bins": [
+        "Berry",
+        "Not a berry"
+      ],
+      "items": [
+        {
+          "text": "Grape",
+          "bin": 0
+        },
+        {
+          "text": "Strawberry",
+          "bin": 1
+        },
+        {
+          "text": "Tomato",
+          "bin": 0
+        },
+        {
+          "text": "Raspberry",
+          "bin": 1
+        },
+        {
+          "text": "Aubergine",
+          "bin": 0
+        }
+      ],
+      "explanation": "A berry grows from one flower’s single ovary. A strawberry’s flesh is the swollen flower base, and a raspberry is a cluster of tiny fruits."
     }
   ],
   "tags": [

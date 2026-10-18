@@ -11,6 +11,24 @@
       "prompt": "If the appendix does have a job, what is the leading idea?",
       "answer": "A safe house for beneficial gut bacteria",
       "detail": "Rich in immune tissue, it may help repopulate the intestines after an illness such as severe diarrhoea, though its roles are still being studied."
+    },
+    {
+      "type": "flow",
+      "heading": "The ‘safe house’ idea",
+      "steps": [
+        {
+          "icon": "🚽",
+          "label": "Severe diarrhoea flushes out gut bacteria"
+        },
+        {
+          "icon": "🛡️",
+          "label": "Bacteria sheltered in the appendix survive"
+        },
+        {
+          "icon": "🦠",
+          "label": "They move out and repopulate the intestines"
+        }
+      ]
     }
   ],
   "tags": [

@@ -13,6 +13,37 @@
       "text": "At 5% oxygen, about a quarter of what normal air holds, a naked mole-rat lasts at least five hours."
     },
     {
+      "type": "spectrum",
+      "heading": "How long a naked mole-rat lasts at each oxygen level",
+      "min": 0,
+      "max": 21,
+      "unit": "% oxygen",
+      "ends": [
+        "No oxygen",
+        "Normal air"
+      ],
+      "marks": [
+        {
+          "label": "Survives 18 minutes",
+          "value": 0,
+          "emphasis": true
+        },
+        {
+          "label": "Lasts at least 5 hours",
+          "value": 5
+        },
+        {
+          "label": "Ordinary air",
+          "value": 20.95
+        }
+      ],
+      "colors": [
+        "#f43f5e",
+        "#38bdf8"
+      ],
+      "note": "Dry air at sea level is 20.95% oxygen"
+    },
+    {
       "type": "text",
       "heading": "Running on fructose",
       "text": "Most mammal cells rely on glucose, and the main way of burning it stalls without oxygen. The naked mole-rat instead feeds fructose into anaerobic glycolysis, a pathway that works with no oxygen at all, and makes lactic acid as the by-product."

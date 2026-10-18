@@ -12,6 +12,14 @@
       "label": "of an adult’s sleep is REM: about 90 to 120 minutes a night"
     },
     {
+      "type": "pictogram",
+      "heading": "Up to 25 of every 100 minutes of adult sleep are REM",
+      "icon": "🌙",
+      "total": 100,
+      "count": 25,
+      "note": "Adults spend 20 to 25% of the night in REM, about 90 to 120 minutes"
+    },
+    {
       "type": "list",
       "heading": "A night in cycles",
       "style": "bullets",
@@ -38,6 +46,37 @@
       ],
       "answer": 2,
       "explanation": "Without REM atonia the body is free to move, and people physically act out their dreams."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "In REM, your muscles are almost completely paralysed",
+          "bin": 0
+        },
+        {
+          "text": "Dreams happen only in REM sleep",
+          "bin": 1
+        },
+        {
+          "text": "The first REM episode comes about 70 minutes in",
+          "bin": 0
+        },
+        {
+          "text": "Your eyes stay still during REM",
+          "bin": 1
+        },
+        {
+          "text": "Non-REM and REM alternate in cycles of about 90 minutes",
+          "bin": 0
+        }
+      ],
+      "explanation": "REM stands for rapid eye movement: the eyes move in tandem while the body lies still. Some dreaming happens in non-REM sleep too."
     }
   ],
   "tags": [

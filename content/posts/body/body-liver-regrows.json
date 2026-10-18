@@ -7,6 +7,24 @@
   "body": "The liver is the only internal organ able to regenerate substantial lost tissue. After surgeons remove part of a healthy liver, the remaining cells start dividing and the organ grows back to its original size, though not its original shape. This is what makes living-donor transplants possible: a donor gives away a section of their liver, and both the piece they keep and the piece the recipient receives grow back to near full size.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "How a living-donor transplant works",
+      "steps": [
+        {
+          "icon": "🔪",
+          "label": "A section of the donor’s liver is removed"
+        },
+        {
+          "icon": "🏥",
+          "label": "It is transplanted into the recipient"
+        },
+        {
+          "icon": "🌱",
+          "label": "Both pieces regrow to near full size"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "After part of a healthy liver is removed, what grows back?",
       "options": [

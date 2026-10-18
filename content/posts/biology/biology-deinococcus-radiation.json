@@ -13,6 +13,27 @@
       "text": "About 5 Gy kills a human. Even at 12,000 Gy, roughly 10% of the bacteria pull through."
     },
     {
+      "type": "scale",
+      "heading": "Radiation doses, in grays",
+      "items": [
+        {
+          "label": "Lethal to a human",
+          "value": 5
+        },
+        {
+          "label": "Almost unharmed",
+          "value": 5000,
+          "emphasis": true
+        },
+        {
+          "label": "10% still survive",
+          "value": 12000
+        }
+      ],
+      "unit": "Gy",
+      "note": "About 5 Gy kills a person; D. radiodurans shrugs off 5,000 Gy with almost no loss of viability"
+    },
+    {
       "type": "list",
       "heading": "How it survives",
       "style": "bullets",
