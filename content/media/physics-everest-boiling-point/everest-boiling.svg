@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="system-ui, sans-serif">
+  <text x="540" y="100" fill="#fff" font-size="58" font-weight="800" text-anchor="middle">Where water boils</text>
+  <path d="M200,900 L420,470 L500,590 L600,180 L720,440 L800,360 L880,900 Z" fill="#fff" fill-opacity="0.16" stroke="#fff" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M600,180 L560,262 L600,242 L640,262 Z" fill="#fff" fill-opacity="0.85"/>
+  <g stroke="#fff" stroke-opacity="0.55" stroke-width="4" stroke-dasharray="4 16" stroke-linecap="round">
+    <line x1="70" y1="900" x2="1010" y2="900"/>
+    <line x1="70" y1="776" x2="1010" y2="776"/>
+    <line x1="70" y1="528" x2="1010" y2="528"/>
+    <line x1="70" y1="180" x2="1010" y2="180"/>
+  </g>
+  <g fill="#fff" font-size="40" font-weight="700">
+    <text x="70" y="166">Summit, 8,849 m</text>
+    <text x="1010" y="166" text-anchor="end">≈71 °C</text>
+    <text x="70" y="514">4,500 m</text>
+    <text x="1010" y="514" text-anchor="end">≈85 °C</text>
+    <text x="70" y="762">1,500 m</text>
+    <text x="1010" y="762" text-anchor="end">95 °C</text>
+    <text x="70" y="948">Sea level</text>
+    <text x="1010" y="948" text-anchor="end">100 °C</text>
+  </g>
+  <text x="540" y="1030" fill="#fff" fill-opacity="0.8" font-size="34" text-anchor="middle">Heights to scale. Less air above you, lower boiling point.</text>
+</svg>
