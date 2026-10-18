@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Check, RotateCcw, X } from 'lucide-react';
+import { Check, Eye, RotateCcw, X } from 'lucide-react';
 import type { Slide } from '../types';
 import { stableShuffle } from '../lib/interactive';
 import { inline } from '../lib/markdown';
@@ -200,7 +200,6 @@ export function ScrambleSlideView({ slide, challengeId }: Props<'scramble'>) {
   }, [letters, challengeId]);
   const [placed, setPlaced] = useState<number[]>([]);
   const [status, setStatus] = useState<'playing' | 'wrong' | 'solved' | 'revealed'>('playing');
-  const [tries, setTries] = useState(0);
   const over = status === 'solved' || status === 'revealed';
 
   const add = (tile: number) => {
@@ -214,7 +213,6 @@ export function ScrambleSlideView({ slide, challengeId }: Props<'scramble'>) {
       record(true);
     } else {
       setStatus('wrong');
-      setTries(tries + 1);
     }
   };
   const remove = (pos: number) => {
@@ -261,10 +259,20 @@ export function ScrambleSlideView({ slide, challengeId }: Props<'scramble'>) {
         ))}
       </div>
       <p className="interactive__result" role="status" aria-live="polite">
-        {status === 'playing' && placed.length > 0 && (
-          <button className="link-btn link-btn--light" onClick={clear}>
-            <RotateCcw size={13} /> Clear
-          </button>
+        {status === 'playing' && (
+          <>
+            {placed.length > 0 && (
+              <>
+                <button className="link-btn link-btn--light" onClick={clear}>
+                  <RotateCcw size={13} /> Clear
+                </button>
+                {' · '}
+              </>
+            )}
+            <button className="link-btn link-btn--light" onClick={reveal}>
+              <Eye size={13} /> Show answer
+            </button>
+          </>
         )}
         {status === 'solved' && (
           <>
@@ -284,14 +292,10 @@ export function ScrambleSlideView({ slide, challengeId }: Props<'scramble'>) {
             <button className="link-btn link-btn--light" onClick={clear}>
               <RotateCcw size={13} /> Clear
             </button>
-            {tries >= 2 && (
-              <>
-                {' · '}
-                <button className="link-btn link-btn--light" onClick={reveal}>
-                  Show me
-                </button>
-              </>
-            )}
+            {' · '}
+            <button className="link-btn link-btn--light" onClick={reveal}>
+              <Eye size={13} /> Show answer
+            </button>
           </>
         )}
       </p>
