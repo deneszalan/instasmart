@@ -4,7 +4,7 @@
   "field": "engineering",
   "title": "Engineers saved the Leaning Tower of Pisa by removing soil",
   "emoji": "🗼",
-  "body": "Pisa’s bell tower began to lean during construction in the 12th century because its foundations sat on soft clay and sand. By 1990 it tilted about 5.5 degrees and was closed over fears it could topple. Rather than push it upright, engineers slowly drew out small amounts of soil from beneath the high side, letting the tower settle back. By 2001 it had straightened by about 45 centimetres, enough to keep it stable for an estimated 200 years.",
+  "body": "Pisa’s bell tower began to lean during construction in the 12th century because its foundations sat on soft clay and sand. By 1990 it tilted about 5.5 degrees and was closed over fears it could topple. Rather than push it upright, engineers slowly drew out small amounts of soil from beneath the high side, letting the tower settle back. By 2001 it had straightened by about 45 centimetres, and it was declared stable for centuries to come.",
   "slides": [
     {
       "type": "text",
@@ -18,8 +18,8 @@
     },
     {
       "type": "text",
-      "heading": "Fixes that backfired",
-      "text": "Earlier attempts to stabilise it, such as injecting grout into the foundations in the 1930s, actually made the lean worse."
+      "heading": "A gentle fix",
+      "text": "Only about 38 cubic metres of soil came out from under the raised side, yet the tower settled back to the tilt it had in 1838."
     }
   ],
   "tags": [

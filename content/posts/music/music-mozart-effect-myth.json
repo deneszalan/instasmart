@@ -4,12 +4,12 @@
   "field": "music",
   "title": "Listening to Mozart won’t make you, or your baby, smarter",
   "emoji": "🧒",
-  "body": "In 1993 a small study found that college students who listened to a Mozart sonata scored slightly better on a spatial reasoning task for about 10 to 15 minutes afterwards. Media reports turned this into ‘Mozart makes babies smarter’, and the governor of Georgia even proposed giving every newborn a classical music CD. Later attempts to replicate the result were mixed, and reviews found little or no lasting effect on intelligence.",
+  "body": "In 1993 a small study found that college students who listened to a Mozart sonata scored slightly better on spatial reasoning tasks for about 15 minutes afterwards. Media reports turned this into ‘Mozart makes babies smarter’, and the governor of Georgia even proposed giving every newborn a classical music CD. Later attempts to replicate the result were mixed, and reviews found little or no lasting effect on intelligence.",
   "slides": [
     {
       "type": "text",
       "heading": "What was actually tested",
-      "text": "36 students, one Mozart sonata for two pianos, then paper-folding and cutting puzzles. No babies, and no claims about general intelligence."
+      "text": "36 college students, one Mozart sonata for two pianos, then spatial puzzles such as paper folding. No babies, and no claims about general intelligence."
     },
     {
       "type": "text",

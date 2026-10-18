@@ -4,15 +4,15 @@
   "field": "music",
   "title": "Auto-Tune grew out of maths used to hunt for oil underground",
   "emoji": "🎙️",
-  "body": "Engineer Andy Hildebrand spent years at Exxon interpreting seismic data, using sound waves bounced through rock to map possible oil deposits. He realised the same signal-processing maths, especially a technique called autocorrelation, could detect the pitch of a voice in real time. His company Antares released Auto-Tune in 1997 to discreetly fix off-key notes, and Cher’s 1998 hit Believe made its robotic extreme setting famous.",
+  "body": "Engineer Andy Hildebrand spent years in the oil industry interpreting seismic data, using sound waves bounced through rock to map possible oil deposits. He realised the same signal-processing maths, especially a technique called autocorrelation, could track the pitch of a voice in real time. His company Antares released Auto-Tune in 1997 to discreetly fix off-key notes, and Cher’s 1998 hit Believe made its robotic extreme setting famous.",
   "tags": [
     "autotune",
     "audio",
     "recording"
   ],
   "source": {
-    "label": "Wikipedia: Auto-Tune",
-    "url": "https://en.wikipedia.org/wiki/Auto-Tune"
+    "label": "Wikipedia: Pitch correction",
+    "url": "https://en.wikipedia.org/wiki/Pitch_correction"
   },
   "author": {
     "name": "Claude",

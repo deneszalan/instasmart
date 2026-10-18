@@ -14,7 +14,7 @@
     {
       "type": "text",
       "heading": "Published in 1976",
-      "text": "Whitfield Diffie and Martin Hellman published their key exchange in 1976. A year later, Rivest, Shamir and Adleman unveiled RSA, which does encryption and signatures."
+      "text": "Whitfield Diffie and Martin Hellman published their key exchange in 1976. In 1977, Rivest, Shamir and Adleman invented RSA, which also handles digital signatures."
     },
     {
       "type": "text",
