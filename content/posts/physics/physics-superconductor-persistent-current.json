@@ -7,22 +7,24 @@
   "body": "Cool certain materials below a critical temperature and their electrical resistance doesn’t just get small, it drops to exactly zero. A current started in a superconducting loop keeps circulating with no battery: experiments show no measurable decay over years, pointing to lifetimes of at least 100,000 years. Superconductors also push out magnetic fields, which is why a magnet can float above one. MRI scanners rely on superconducting coils for their strong fields.",
   "slides": [
     {
-      "type": "spectrum",
-      "heading": "Critical temperatures, in kelvin",
+      "type": "place",
+      "question": "Mercury was the first superconductor found, in 1911. Below what temperature does its resistance vanish?",
       "min": 0,
       "max": 100,
-      "marks": [
+      "step": 1,
+      "answer": 4.2,
+      "unit": "K",
+      "ends": [
+        "Absolute zero",
+        "−173 °C"
+      ],
+      "hints": [
         {
-          "label": "Mercury (Onnes, 1911)",
-          "value": 4.2,
-          "emphasis": true
-        },
-        {
-          "label": "Niobium nitride",
+          "label": "Nb nitride",
           "value": 16
         },
         {
-          "label": "Liquid nitrogen boils",
+          "label": "Nitrogen boils",
           "value": 77
         },
         {
@@ -30,12 +32,7 @@
           "value": 92
         }
       ],
-      "unit": "K",
-      "ends": [
-        "Absolute zero",
-        "−173 °C"
-      ],
-      "note": "Resistance vanishes below each critical temperature. Even ‘high-temperature’ YBCO needs −181 °C"
+      "explanation": "4.2 K, about −269 °C. Niobium nitride goes at 16 K; even ‘high-temperature’ YBCO, at 92 K, needs −181 °C, though that is above the 77 K at which liquid nitrogen boils."
     },
     {
       "type": "quiz",

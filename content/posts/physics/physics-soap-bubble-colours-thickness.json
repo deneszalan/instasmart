@@ -20,6 +20,30 @@
       "text": "Common black films are around 50 nm. In both, the two surfaces have practically snapped together, pinching out the water between them."
     },
     {
+      "type": "place",
+      "question": "Below what thickness does a soap film stop reflecting colour and look black?",
+      "min": 0,
+      "max": 1000,
+      "step": 10,
+      "answer": 100,
+      "unit": "nm",
+      "ends": [
+        "Vanishing",
+        "Fresh film"
+      ],
+      "hints": [
+        {
+          "label": "Newton black",
+          "value": 4
+        },
+        {
+          "label": "Common black",
+          "value": 50
+        }
+      ],
+      "explanation": "Below about 100 nm. The front and back reflections then cancel almost completely for every colour, so the patch sends almost no light back to your eye, yet it can last for minutes."
+    },
+    {
       "type": "chart",
       "heading": "How thin is a soap film?",
       "items": [

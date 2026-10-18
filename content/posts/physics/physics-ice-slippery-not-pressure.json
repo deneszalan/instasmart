@@ -23,35 +23,28 @@
       "text": "Figure skaters prefer about −5.5 °C. Both are colder than pressure melting alone could explain."
     },
     {
-      "type": "spectrum",
-      "heading": "How cold is the ice?",
+      "type": "place",
+      "question": "By pressure melting alone, skating would be impossible below what temperature?",
       "min": -12,
       "max": 0,
-      "marks": [
-        {
-          "label": "Ice hockey rink",
-          "value": -9,
-          "emphasis": true
-        },
-        {
-          "label": "Figure skating",
-          "value": -5.5
-        },
-        {
-          "label": "Pressure melting’s limit",
-          "value": -4
-        },
-        {
-          "label": "Ice melts",
-          "value": 0
-        }
-      ],
+      "step": 0.5,
+      "answer": -4,
       "unit": "°C",
       "ends": [
         "Colder",
         "Melting"
       ],
-      "note": "By pressure melting alone, skating below about −4 °C would be impossible; rinks are colder"
+      "hints": [
+        {
+          "label": "Hockey rink",
+          "value": -9
+        },
+        {
+          "label": "Figure skating",
+          "value": -5.5
+        }
+      ],
+      "explanation": "About −4 °C. Rinks are colder than that, so a blade’s pressure can’t be what melts the ice, as Bowden and Hughes showed in 1939. Friction heat and a liquid-like surface layer matter more."
     },
     {
       "type": "text",

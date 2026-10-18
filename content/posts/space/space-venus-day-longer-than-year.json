@@ -36,6 +36,22 @@
       ],
       "unit": "Earth days",
       "note": "Venus spins backwards, so spin and orbit work against each other and the solar day is shorter"
+    },
+    {
+      "type": "place",
+      "question": "At the equator, how fast does Venus’s surface move as the planet spins?",
+      "min": 0,
+      "max": 100,
+      "step": 0.5,
+      "answer": 6.5,
+      "unit": "km/h",
+      "hints": [
+        {
+          "label": "Usain Bolt",
+          "value": 44.72
+        }
+      ],
+      "explanation": "About 6.5 km/h, barely faster than walking pace, because one turn takes 243 Earth days. Earth’s equator, by contrast, moves at about 1,675 km/h."
     }
   ],
   "tags": [

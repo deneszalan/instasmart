@@ -23,6 +23,30 @@
       "text": "The Sun was behind the spacecraft, so the crew saw Earth as a full disc. Most photos from space show it partly in shadow."
     },
     {
+      "type": "place",
+      "question": "In what year did a camera first photograph Earth from space?",
+      "min": 1900,
+      "max": 2000,
+      "step": 1,
+      "answer": 1946,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Wright flight",
+          "value": 1903
+        },
+        {
+          "label": "Sputnik",
+          "value": 1957
+        },
+        {
+          "label": "Moon landing",
+          "value": 1969
+        }
+      ],
+      "explanation": "1946, eleven years before Sputnik: on 24 October a camera on a captured German V-2 rocket took the first photos of Earth from space, about 105 km up."
+    },
+    {
       "type": "order",
       "heading": "Earliest first",
       "items": [

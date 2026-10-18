@@ -20,8 +20,8 @@
       "text": "Even so, it is slightly less than one-thousandth of the Sun’s mass, which is why the balance point sits so close to the Sun."
     },
     {
-      "type": "chart",
-      "heading": "Mass, compared with Earth",
+      "type": "rank",
+      "heading": "Mass, compared with Earth: which planet is heaviest?",
       "items": [
         {
           "label": "Jupiter",
@@ -46,7 +46,8 @@
         }
       ],
       "unit": "Earths",
-      "note": "Jupiter alone outweighs the other seven planets put together, 2.5 times over"
+      "note": "Jupiter alone outweighs the other seven planets put together, 2.5 times over",
+      "explanation": "Neptune is the catch: it is slightly smaller than Uranus but denser, so it holds more mass."
     },
     {
       "type": "text",

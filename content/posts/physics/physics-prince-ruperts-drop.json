@@ -37,6 +37,30 @@
       "note": "Atmospheric pressure is about 0.1 MPa; the skin is squeezed roughly 7,000 times harder"
     },
     {
+      "type": "place",
+      "question": "In what year did Prince Rupert of the Rhine bring the glass drops to Britain?",
+      "min": 1600,
+      "max": 1700,
+      "step": 1,
+      "answer": 1660,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Mayflower",
+          "value": 1620
+        },
+        {
+          "label": "Galileo trial",
+          "value": 1633
+        },
+        {
+          "label": "Principia",
+          "value": 1687
+        }
+      ],
+      "explanation": "1660. Accounts of the drops go back to 1625 in northern Germany, and in 1661 King Charles II handed them to the Royal Society to study."
+    },
+    {
       "type": "timeline",
       "heading": "A 17th-century party trick",
       "events": [

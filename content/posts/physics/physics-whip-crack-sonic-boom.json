@@ -7,6 +7,26 @@
   "body": "The crack of a whip is a tiny sonic boom. A flick of the handle sends a loop travelling down the whip, and because the whip tapers toward its light, thin tip, the loop keeps speeding up as it goes, reaching more than 30 times the speed of the handle’s movement. By the time it reaches the end it is moving faster than sound, about 343 metres per second in air at 20 °C, and the air answers with a **small sonic boom**. Nothing is being struck; the noise is the air itself.",
   "slides": [
     {
+      "type": "place",
+      "question": "The crack is a sonic boom. How fast does sound travel through air at 20 °C?",
+      "min": 0,
+      "max": 1500,
+      "step": 5,
+      "answer": 1235,
+      "unit": "km/h",
+      "hints": [
+        {
+          "label": "Usain Bolt",
+          "value": 44.72
+        },
+        {
+          "label": "TGV record",
+          "value": 574.8
+        }
+      ],
+      "explanation": "About 1,235 km/h, or 343 m/s. The loop running down a whip tapers into ever lighter material and beats that speed near the tip, so the air answers with a tiny boom."
+    },
+    {
       "type": "stat",
       "value": "343 m/s",
       "label": "the speed of sound in air at 20 °C, which a whip’s tip beats",

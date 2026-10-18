@@ -12,6 +12,30 @@
       "text": "Imagine standing in an endless forest: wherever you look, your eye eventually meets a tree trunk. Stars in an infinite, ageless universe would do the same to the sky. Each shell of space farther out holds more stars, just enough to make up for their dimness."
     },
     {
+      "type": "place",
+      "question": "In what year did Johannes Kepler first pose the dark-night-sky problem?",
+      "min": 1500,
+      "max": 1900,
+      "step": 1,
+      "answer": 1610,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Copernicus",
+          "value": 1543
+        },
+        {
+          "label": "Principia",
+          "value": 1687
+        },
+        {
+          "label": "Olbers",
+          "value": 1823
+        }
+      ],
+      "explanation": "1610, more than two centuries before Olbers described it in 1823 and gave it his name. Halley and de Chéseaux gave it its mature form in the 1700s."
+    },
+    {
       "type": "timeline",
       "heading": "Who asked first",
       "events": [

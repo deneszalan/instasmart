@@ -37,6 +37,30 @@
           "label": "Later: stop the light, then restart it"
         }
       ]
+    },
+    {
+      "type": "place",
+      "question": "In what year did Lene Hau’s team slow a light pulse to 17 metres per second?",
+      "min": 1950,
+      "max": 2026,
+      "step": 1,
+      "answer": 1998,
+      "format": "year",
+      "hints": [
+        {
+          "label": "First laser",
+          "value": 1960
+        },
+        {
+          "label": "Hubble launch",
+          "value": 1990
+        },
+        {
+          "label": "Higgs found",
+          "value": 2012
+        }
+      ],
+      "explanation": "1998. The pulse crawled through sodium atoms chilled to a tiny fraction of a degree above absolute zero. Later the team stopped light completely, then restarted it."
     }
   ],
   "tags": [

@@ -7,6 +7,26 @@
   "body": "GPS finds your position by timing signals from satellites, so their atomic clocks must agree with clocks on the ground to within billionths of a second. Einstein’s relativity spoils that: combined, its effects make the satellite clocks run fast by about 38 microseconds a day. That sounds tiny, but light travels more than 11 km in that time, so without a correction your position would be off by kilometres within a single day.",
   "slides": [
     {
+      "type": "place",
+      "question": "How high above Earth do GPS satellites orbit?",
+      "min": 0,
+      "max": 40000,
+      "step": 100,
+      "answer": 20200,
+      "unit": "km",
+      "hints": [
+        {
+          "label": "ISS",
+          "value": 400
+        },
+        {
+          "label": "Geostationary",
+          "value": 35786
+        }
+      ],
+      "explanation": "About 20,200 km up, in medium Earth orbit: 50 times higher than the ISS, yet well below geostationary satellites. Up there gravity is weaker, so the satellite clocks tick faster."
+    },
+    {
       "type": "estimate",
       "question": "Overall, by how many microseconds a day do GPS satellite clocks run fast?",
       "min": 0,

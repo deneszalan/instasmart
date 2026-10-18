@@ -13,6 +13,14 @@
       "text": "A tiny amount, but with the kilogram tied to one object there was no way to tell which cylinder had changed."
     },
     {
+      "type": "fill",
+      "question": "Le Grand K is a platinum–iridium alloy. Out of 10 parts, how many are platinum?",
+      "icon": "⚪",
+      "total": 10,
+      "answer": 9,
+      "explanation": "9 of 10: the cylinder is 90% platinum and 10% iridium, about 39 mm tall and wide."
+    },
+    {
       "type": "list",
       "heading": "Le Grand K",
       "style": "bullets",
@@ -22,14 +30,6 @@
         "Three keys, held separately, to open the vault",
         "Compared with its copies only in 1889, 1948 and 1989"
       ]
-    },
-    {
-      "type": "pictogram",
-      "heading": "Le Grand K: 9 parts platinum to 1 part iridium",
-      "icon": "⚪",
-      "total": 10,
-      "count": 9,
-      "note": "90% platinum and 10% iridium, in a cylinder about 39 mm tall and wide"
     },
     {
       "type": "text",

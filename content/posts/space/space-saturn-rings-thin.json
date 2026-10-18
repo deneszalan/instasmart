@@ -7,8 +7,8 @@
   "body": "Saturn’s main rings stretch roughly 280,000 km from edge to edge, more than 20 Earths side by side, yet in places they are estimated to be only about 10 metres thick. They are made of countless chunks of almost pure water ice, each on its own orbit around the planet. Shrink the rings to the thickness of a sheet of paper and they would still be nearly 3 km wide.",
   "slides": [
     {
-      "type": "chart",
-      "heading": "Widths, side by side",
+      "type": "rank",
+      "heading": "Widths, side by side: which is widest?",
       "items": [
         {
           "label": "Earth",
@@ -25,7 +25,8 @@
         }
       ],
       "unit": "km",
-      "note": "Edge to edge the rings span about 22 Earths, yet in places they are only about 10 m thick"
+      "note": "Edge to edge the rings span about 22 Earths, yet in places they are only about 10 m thick",
+      "explanation": "The rings would not quite reach from Earth to the Moon: 280,000 km against 384,400."
     },
     {
       "type": "text",

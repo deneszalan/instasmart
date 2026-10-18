@@ -7,7 +7,7 @@
   "body": "Without air resistance, gravity accelerates everything at the same rate, whatever its mass. In 1971 Apollo 15 commander David Scott tested this on camera, dropping a hammer and a falcon feather side by side on the airless Moon; they landed at the same moment. Galileo is often said to have proved the same thing by dropping balls from the Leaning Tower of Pisa, but most historians think that was a thought experiment, not a real test.",
   "slides": [
     {
-      "type": "chart",
+      "type": "higher",
       "heading": "How hard gravity pulls at the surface",
       "items": [
         {
@@ -18,10 +18,19 @@
           "label": "The Moon",
           "value": 1.62,
           "emphasis": true
+        },
+        {
+          "label": "Mars",
+          "value": 3.72
+        },
+        {
+          "label": "Jupiter",
+          "value": 24.79
         }
       ],
       "unit": "m/s²",
-      "note": "The Moon’s pull is about a sixth of Earth’s: a slower fall, but the same for hammer and feather"
+      "note": "About a sixth of Earth’s pull on the Moon; Jupiter’s figure is taken at its cloud tops",
+      "explanation": "A slower fall on the Moon, but the same for hammer and feather: with no air, everything accelerates alike."
     },
     {
       "type": "quiz",
