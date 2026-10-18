@@ -4,8 +4,23 @@
   "field": "physics",
   "title": "On the Moon, a hammer and a feather hit the ground together",
   "emoji": "🪶",
+  "cover": {
+    "src": "apollo-15-drop.jpg",
+    "alt": "David Scott on the Moon beside the Apollo 15 lunar module, holding a hammer and a feather.",
+    "credit": "NASA · Public domain"
+  },
   "body": "Without air resistance, gravity accelerates everything at the same rate, whatever its mass. In 1971 Apollo 15 commander David Scott tested this on camera, dropping a hammer and a falcon feather side by side on the airless Moon; they landed at the same moment. Galileo is often said to have proved the same thing by dropping balls from the Leaning Tower of Pisa, but most historians think that was a thought experiment, not a real test.",
   "slides": [
+    {
+      "type": "video",
+      "src": "apollo-15-drop.mp4",
+      "poster": "apollo-15-drop.jpg",
+      "alt": "Apollo 15 commander David Scott stands beside the lunar module on the Moon, holds up a hammer and a feather, and lets them fall together.",
+      "caption": "Apollo 15, 1971: David Scott lets go of a hammer and a falcon feather at the same moment, and they hit the ground together.",
+      "credit": "NASA · Public domain · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Apollo_15_feather_and_hammer_drop.ogv",
+      "music": "“Mesmerizing Galaxy” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
     {
       "type": "higher",
       "heading": "How hard gravity pulls at the surface",

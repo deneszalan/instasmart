@@ -12,7 +12,8 @@
     "test": "vitest run",
     "content": "node scripts/content.ts",
     "mcp": "node mcp/index.ts",
-    "mcp:http": "node mcp/index.ts --http"
+    "mcp:http": "node mcp/index.ts --http",
+    "clip": "node scripts/clip.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.1",

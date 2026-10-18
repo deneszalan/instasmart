@@ -2011,6 +2011,19 @@ p {
   box-shadow: 3px -3px 0 -1px rgba(255, 255, 255, 0.7);
 }
 
+/* A clip inside: a small play triangle instead of the carousel mark. */
+.tile__video {
+  position: absolute;
+  top: 8px;
+  right: 9px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 0 7px 12px;
+  border-color: transparent transparent transparent #fff;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
+}
+
 .view-title {
   margin: 0;
   padding: 16px 14px 12px;
@@ -3044,4 +3057,82 @@ p {
 
 .slide--place .btn--light {
   margin-top: 10px;
+}
+
+/* ---- Video slides ---- */
+.slide--video {
+  padding: 0;
+}
+
+.slide-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #000;
+}
+
+/* Whole frame on the field colours: the clip takes the space the text below it leaves. */
+.slide--video.slide--fit-contain {
+  padding-top: 52px;
+}
+
+.slide--video.slide--fit-contain .slide-video {
+  position: static;
+  flex: 1 1 auto;
+  min-height: 0;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+}
+
+.slide--video.slide--fit-contain .slide-image__text {
+  position: static;
+  flex: none;
+  padding-top: 10px;
+}
+
+.slide--video .slide-image__text a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.slide--video.slide--fit-cover .slide-image__text {
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.72));
+}
+
+.video__play {
+  position: absolute;
+  z-index: 3;
+  top: 40%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding-left: 4px;
+}
+
+.slide--video.slide--fit-cover .video__play {
+  top: 50%;
+}
+
+.video__sound {
+  position: absolute;
+  z-index: 3;
+  top: 60px;
+  right: 12px;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
 }

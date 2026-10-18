@@ -7,7 +7,7 @@ Reckon is an Instagram-style feed of knowledge posts. React + TypeScript + Vite;
 All content lives in `content/` as one JSON file per post. Read `content/README.md` before writing posts. It covers the format, the slide types, image rules and the accuracy rules.
 
 1. Pick a field and check `content/posts/<field>/` so you don't duplicate a topic.
-2. Create `content/posts/<field>/<field>-<slug>.json` (`npm run content -- new <field> <slug>` makes a starter). Put images in `content/media/<id>/`.
+2. Create `content/posts/<field>/<field>-<slug>.json` (`npm run content -- new <field> <slug>` makes a starter). Put images and video clips in `content/media/<id>/`; `npm run clip` cuts a clip and sets it to music (see "Video clips" in `content/README.md`).
 3. Sign the post: `"author": { "name": "Claude", "kind": "ai" }`, or `"ChatGPT"`, `"Fable"`, or your own name. See "Signing posts" in `content/README.md`.
 4. Run `npm run content` and fix every problem it reports.
 5. Commit only the content files, one topic per post, and open a pull request.

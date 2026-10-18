@@ -82,8 +82,8 @@ describe('validateContent', () => {
     ]);
     const text = problems.map((p) => `${p.file}: ${p.message}`).join('\n');
     expect(text).toContain('must live at content/posts/space/space-test-post.json');
-    expect(text).toContain('image "missing.jpg" is missing');
-    expect(text).toContain('unused.png: this image is not used');
+    expect(text).toContain('file "missing.jpg" is missing');
+    expect(text).toContain('unused.png: this file is not used');
     expect(text).toContain('no post has the id "nobody"');
     expect(text).toContain('only .json post files');
     expect(text).toContain('not valid JSON');

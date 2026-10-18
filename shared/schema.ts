@@ -11,6 +11,9 @@ export const IMAGE_HOSTS = ['upload.wikimedia.org', 'thumb.wikimedia.org'];
 
 export const MEDIA_EXTENSIONS = ['png', 'jpg', 'jpeg', 'webp', 'gif', 'avif', 'svg'] as const;
 
+/** Video clips are committed like images; only MP4 (H.264, optionally AAC audio) plays on every phone. */
+export const VIDEO_EXTENSIONS = ['mp4'] as const;
+
 const MEDIA_NAME = new RegExp(`^[a-z0-9][a-z0-9_-]*\\.(${MEDIA_EXTENSIONS.join('|')})$`);
 
 const text = (max: number) => z.string().trim().min(1).max(max);
@@ -37,6 +40,17 @@ export const ImageSrc = z
     },
   )
   .describe('File name in content/media/<post-id>/, e.g. "diagram.svg", or an https:// URL on upload.wikimedia.org or thumb.wikimedia.org');
+
+/** A clip in the post's media folder: content/media/<post-id>/<name>.mp4. */
+export const VideoSrc = z
+  .string()
+  .regex(/^[a-z0-9][a-z0-9_-]*\.mp4$/, 'Use an .mp4 file name from content/media/<post-id>/ (lowercase, e.g. "launch.mp4")')
+  .describe('File name of an MP4 clip in content/media/<post-id>/. Make it with `npm run clip`.');
+
+/** A still from the clip, shown before it plays: a local image file. */
+const LocalImage = z
+  .string()
+  .regex(new RegExp(`^[a-z0-9][a-z0-9_-]*\\.(${MEDIA_EXTENSIONS.filter((e) => e !== 'svg').join('|')})$`), 'Use an image file name from content/media/<post-id>/, e.g. "launch.jpg"');
 
 export const TextSlide = z
   .object({
@@ -66,6 +80,25 @@ export const StatSlide = z
     value: text(16).describe('The big number, e.g. "86 billion" or "3×".'),
     label: text(90).describe('What the number counts.'),
     text: text(220).optional(),
+  })
+  .strict();
+
+export const VideoSlide = z
+  .object({
+    type: z.literal('video'),
+    src: VideoSrc,
+    poster: LocalImage.describe('A still from the clip, shown before it plays (`npm run clip` makes one).'),
+    alt: text(300).describe('What the clip shows, for screen readers.'),
+    caption: text(200).optional(),
+    fit: z
+      .enum(['contain', 'cover'])
+      .optional()
+      .describe('"contain" shows the whole frame on the field colours (default, best for landscape footage); "cover" fills the slide.'),
+    credit: text(120).describe('Who made the footage and its licence, e.g. "NASA/JPL-Caltech · Public domain · excerpt".'),
+    href: httpsUrl.optional().describe('The page the footage comes from, e.g. its NASA or Wikimedia Commons page.'),
+    music: text(160)
+      .optional()
+      .describe('Credit for the soundtrack, required when the clip has audio, e.g. "“Mesmerizing Galaxy” Kevin MacLeod (incompetech.com) · CC BY 4.0".'),
   })
   .strict();
 
@@ -467,6 +500,7 @@ export const Slide = z.discriminatedUnion('type', [
   HigherSlide,
   FillSlide,
   PlaceSlide,
+  VideoSlide,
 ]);
 
 export const Source = z.object({ label: text(120), url: httpsUrl }).strict();
@@ -524,9 +558,12 @@ export type Post = z.infer<typeof Post>;
 export type Slide = z.infer<typeof Slide>;
 export type Source = z.infer<typeof Source>;
 
-/** Every image file name a post refers to (excluding allowed remote URLs). */
+/** Every image and video file name a post refers to (excluding allowed remote URLs). */
 export function localMedia(post: Post): string[] {
-  const srcs = [post.cover?.src, ...(post.slides ?? []).map((s) => (s.type === 'image' ? s.src : undefined))];
+  const srcs = [
+    post.cover?.src,
+    ...(post.slides ?? []).flatMap((s) => (s.type === 'image' ? [s.src] : s.type === 'video' ? [s.src, s.poster] : [])),
+  ];
   return [...new Set(srcs.filter((s): s is string => !!s && !s.startsWith('https://')))];
 }
 
