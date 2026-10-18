@@ -13,6 +13,14 @@
       "text": "26% never did. With no group pressure, the error rate was under 1%."
     },
     {
+      "type": "pictogram",
+      "heading": "74 of 100 participants sided with the wrong majority at least once",
+      "icon": "🧍",
+      "total": 100,
+      "count": 74,
+      "note": "Asch, 1951: 74% conformed on at least one of the 12 critical trials; 26% never did."
+    },
+    {
       "type": "list",
       "heading": "Three ways people gave in",
       "style": "bullets",
@@ -38,6 +46,25 @@
       ],
       "answer": 0,
       "explanation": "A single dissenting partner cut conformity to about 5%. Even a dissenter who gave a different wrong answer cut it to about 9%."
+    },
+    {
+      "type": "match",
+      "heading": "Match the kind of distortion to what the person did",
+      "pairs": [
+        {
+          "left": "Distortion of perception",
+          "right": "Believed the group was right"
+        },
+        {
+          "left": "Distortion of judgement",
+          "right": "Decided they were misreading"
+        },
+        {
+          "left": "Distortion of action",
+          "right": "Knew, but hid it to fit in"
+        }
+      ],
+      "explanation": "Asch found that most conformers knew the right answer but did not want to seem out of step."
     }
   ],
   "tags": [

@@ -15,6 +15,20 @@
       "answer": 40,
       "unit": "%",
       "explanation": "The pendulum lags behind the tower and pulls against its motion, while hydraulic dampers turn the swinging into heat, cutting movement by up to 40%."
+    },
+    {
+      "type": "pictogram",
+      "heading": "The damper can cut the tower’s movement by up to 4 parts in 10",
+      "icon": "🏢",
+      "total": 10,
+      "count": 4,
+      "note": "Up to 40% less sway, from a 660-tonne steel sphere hung between the 88th and 92nd floors"
+    },
+    {
+      "type": "scramble",
+      "clue": "What the 660-tonne ball becomes when it hangs from cables and swings against the tower’s motion",
+      "answer": "PENDULUM",
+      "detail": "A tuned mass damper is a pendulum sized so that its swing matches the tower’s own, lagging behind and pulling against each sway."
     }
   ],
   "tags": [

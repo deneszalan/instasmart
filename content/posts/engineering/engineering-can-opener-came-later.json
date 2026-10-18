@@ -7,6 +7,41 @@
   "body": "Peter Durand obtained an English patent for preserving food in tin cans in 1810, and Bryan Donkin bought it in 1812 and began canning. The first cans were robust containers that weighed more than the food inside, and the instructions read **cut round the top near the outer edge with a chisel and hammer**. Nobody patented a tool for the job until Robert Yeates’s claw-ended opener in England in 1855 and Ezra Warner’s lever opener in the United States in 1858. The familiar cutting wheel arrived in 1870, from William Lyman of Meriden, Connecticut.",
   "slides": [
     {
+      "type": "spectrum",
+      "heading": "Years after Durand’s 1810 patent for the tin can",
+      "min": 0,
+      "max": 60,
+      "unit": "years",
+      "ends": [
+        "1810",
+        "1870"
+      ],
+      "marks": [
+        {
+          "label": "Durand patents the can",
+          "value": 0,
+          "emphasis": true
+        },
+        {
+          "label": "Donkin starts canning",
+          "value": 2
+        },
+        {
+          "label": "Yeates’s claw opener",
+          "value": 45
+        },
+        {
+          "label": "Warner’s lever opener",
+          "value": 48
+        },
+        {
+          "label": "Lyman’s cutting wheel",
+          "value": 60
+        }
+      ],
+      "note": "Yeates 1855, Warner 1858, Lyman 1870: the first openers came 45 years after the can"
+    },
+    {
       "type": "quote",
       "text": "Cut round the top near the outer edge with a chisel and hammer.",
       "attribution": "Instructions printed on an early tin can"

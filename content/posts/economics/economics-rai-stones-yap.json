@@ -15,6 +15,64 @@
       "answer": 3.6,
       "unit": "m",
       "explanation": "The largest discs were up to 3.6 metres across, quarried far away on Palau. Many were too heavy to move, so ownership passed by public agreement."
+    },
+    {
+      "type": "spectrum",
+      "heading": "How big is a rai stone? Diameters in centimetres",
+      "min": 0,
+      "max": 400,
+      "unit": "cm",
+      "ends": [
+        "0 cm",
+        "4 m"
+      ],
+      "marks": [
+        {
+          "label": "Smallest",
+          "value": 3.5
+        },
+        {
+          "label": "Most stones, from",
+          "value": 30
+        },
+        {
+          "label": "Most stones, to",
+          "value": 50
+        },
+        {
+          "label": "Largest, on Rumung island",
+          "value": 360,
+          "emphasis": true
+        }
+      ],
+      "note": "Most rai are 30 to 50 cm across; the largest is too heavy to move"
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Rai were quarried far away, mainly on Palau",
+          "bin": 0
+        },
+        {
+          "text": "The biggest rai are about 36 cm across",
+          "bin": 1
+        },
+        {
+          "text": "Ownership could change without the stone moving",
+          "bin": 0
+        },
+        {
+          "text": "Rai were used for everyday shopping",
+          "bin": 1
+        }
+      ],
+      "explanation": "The discs, up to 3.6 metres across, came mainly from Palau and were used for important ceremonial exchanges, not daily purchases."
     }
   ],
   "tags": [

@@ -17,6 +17,29 @@
       "text": "Classic resonance needs pushes that arrive at a matching rhythm. A steady wind has no such rhythm. Here the motion itself shaped the forces: a self-feeding loop."
     },
     {
+      "type": "flow",
+      "heading": "Flutter: a self-feeding loop",
+      "steps": [
+        {
+          "icon": "🌬️",
+          "label": "A steady wind blows across the deck"
+        },
+        {
+          "icon": "↪️",
+          "label": "The deck twists a little"
+        },
+        {
+          "icon": "🌀",
+          "label": "The twist changes how air flows round it"
+        },
+        {
+          "icon": "📈",
+          "label": "The new airflow pushes the twist further"
+        }
+      ],
+      "cycle": true
+    },
+    {
       "type": "text",
       "heading": "The lasting lesson",
       "text": "Since then, major bridge designs are tested in wind tunnels, and decks are built stiffer or more aerodynamic, often with open trusses or streamlined box girders."

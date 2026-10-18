@@ -19,6 +19,29 @@
       }
     },
     {
+      "type": "spectrum",
+      "heading": "When the window closes",
+      "min": 0,
+      "max": 12,
+      "unit": "months",
+      "ends": [
+        "Birth",
+        "1 year"
+      ],
+      "marks": [
+        {
+          "label": "Tells monkey faces apart",
+          "value": 6
+        },
+        {
+          "label": "Faces blur, unless named",
+          "value": 9,
+          "emphasis": true
+        }
+      ],
+      "note": "Ages in the monkey-face study; other-group faces and non-native speech sounds narrow too."
+    },
+    {
       "type": "list",
       "heading": "Tuning in to speech",
       "style": "bullets",

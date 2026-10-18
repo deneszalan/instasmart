@@ -7,6 +7,28 @@
   "body": "In 1964 The New York Times reported that 37 witnesses saw or heard Kitty Genovese being attacked in New York and none called police or helped. Later investigations found far fewer people saw anything, many didn’t realise how serious it was, and some did try to call police; in 2016 the Times itself called its reporting flawed. The story still inspired valuable research on bystanders, though studies of real conflicts caught on camera find that someone usually steps in.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "How a flawed story became a textbook case",
+      "steps": [
+        {
+          "icon": "📰",
+          "label": "1964: the Times reports 37 silent witnesses"
+        },
+        {
+          "icon": "🔬",
+          "label": "Psychologists start studying bystanders"
+        },
+        {
+          "icon": "🔍",
+          "label": "Later checks: far fewer saw anything at all"
+        },
+        {
+          "icon": "✍️",
+          "label": "2016: the Times calls its reporting flawed"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "What do studies of real conflicts caught on camera tend to find?",
       "options": [
@@ -16,6 +38,37 @@
       ],
       "answer": 0,
       "explanation": "Despite the famous story, studies of real conflicts caught on camera find that someone usually steps in to help."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "37 witnesses watched the attack and none did anything",
+          "bin": 1
+        },
+        {
+          "text": "Nobody at all called the police",
+          "bin": 1
+        },
+        {
+          "text": "The Times later called its own reporting flawed",
+          "bin": 0
+        },
+        {
+          "text": "The story still inspired research on bystanders",
+          "bin": 0
+        },
+        {
+          "text": "In filmed real conflicts, someone usually steps in",
+          "bin": 0
+        }
+      ],
+      "explanation": "Far fewer people saw anything, some did try to call the police, and in 2016 the Times itself called its reporting flawed."
     }
   ],
   "tags": [

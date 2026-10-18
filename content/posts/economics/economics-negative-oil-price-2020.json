@@ -13,6 +13,32 @@
       "text": "The June contract closed at +$20.43 the same day."
     },
     {
+      "type": "spectrum",
+      "heading": "WTI futures at the close on 20 April 2020, dollars a barrel",
+      "min": -50,
+      "max": 50,
+      "ends": [
+        "Paid to take it",
+        "Paid for it"
+      ],
+      "marks": [
+        {
+          "label": "May contract",
+          "value": -37.63,
+          "emphasis": true
+        },
+        {
+          "label": "Free oil",
+          "value": 0
+        },
+        {
+          "label": "June contract",
+          "value": 20.43
+        }
+      ],
+      "note": "Below zero, sellers pay buyers to take the oil off their hands"
+    },
+    {
       "type": "list",
       "heading": "Why it went negative",
       "style": "bullets",
@@ -39,6 +65,33 @@
       ],
       "answer": 0,
       "explanation": "The May contract expired the next day and forced delivery at Cushing, while June left a month for storage and demand to change, so it closed at $20.43."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Sellers paid buyers to take the May contract",
+          "bin": 0
+        },
+        {
+          "text": "Oil itself had become worthless",
+          "bin": 1
+        },
+        {
+          "text": "The June contract also closed below zero",
+          "bin": 1
+        },
+        {
+          "text": "Storage was hard to find as lockdowns cut demand",
+          "bin": 0
+        }
+      ],
+      "explanation": "It was about timing and storage: holders of the expiring May contract faced delivery at Cushing the next day, while June closed at $20.43."
     }
   ],
   "tags": [

@@ -30,6 +30,21 @@
       "text": "Finance minister Fernando Henrique Cardoso led the plan’s architects and went on to become president."
     },
     {
+      "type": "scale",
+      "heading": "One real next to the cruzeiros reais it replaced",
+      "items": [
+        {
+          "label": "One real",
+          "value": 1
+        },
+        {
+          "label": "Cruzeiros reais",
+          "value": 2750
+        }
+      ],
+      "note": "On 1 July 1994 one real, and one URV, was worth 2,750 cruzeiros reais"
+    },
+    {
       "type": "quiz",
       "question": "What was the URV’s value tied to?",
       "options": [

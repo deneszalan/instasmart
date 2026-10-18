@@ -14,6 +14,25 @@
       "fit": "contain"
     },
     {
+      "type": "flow",
+      "heading": "How the shield crept forward",
+      "steps": [
+        {
+          "icon": "⛏️",
+          "label": "Miners dig a little in each cell"
+        },
+        {
+          "icon": "➡️",
+          "label": "Jackscrews push the frame forward"
+        },
+        {
+          "icon": "🧱",
+          "label": "Bricklayers line the tunnel behind it"
+        }
+      ],
+      "cycle": true
+    },
+    {
       "type": "timeline",
       "heading": "Eighteen years under the river",
       "events": [
@@ -56,6 +75,29 @@
       ],
       "answer": 0,
       "explanation": "The cast-iron shield was moved forward by jackscrews, a little at a time, while shelves supported the earth until the brick lining was built behind it."
+    },
+    {
+      "type": "match",
+      "heading": "Match the name to the part it played",
+      "pairs": [
+        {
+          "left": "Marc Brunel",
+          "right": "Designed the shield"
+        },
+        {
+          "left": "Isambard Brunel",
+          "right": "His son; nearly drowned"
+        },
+        {
+          "left": "Lord Cochrane",
+          "right": "Co-holder of the 1818 patent"
+        },
+        {
+          "left": "Shipworm",
+          "right": "Mollusc that inspired it"
+        }
+      ],
+      "explanation": "Marc watched shipworms bore through timber in a shipyard; the shield’s iron frame protects the miners as the shell protects the worm."
     }
   ],
   "tags": [

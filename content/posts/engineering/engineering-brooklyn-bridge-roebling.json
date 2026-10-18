@@ -7,10 +7,38 @@
   "body": "John Roebling designed the Brooklyn Bridge but died of tetanus in 1869 after an accident at the site. His son Washington took over, then was disabled by decompression sickness, or caisson disease, from working in the pressurised chambers used to dig the foundations. His wife, Emily Warren Roebling, studied engineering and relayed his instructions to the site for more than ten years. When the bridge opened in 1883, she was the first to ride across.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "Three Roeblings, one bridge",
+      "steps": [
+        {
+          "icon": "📐",
+          "label": "John Roebling designs it, then dies in 1869"
+        },
+        {
+          "icon": "🤕",
+          "label": "Son Washington takes over, then falls ill"
+        },
+        {
+          "icon": "📝",
+          "label": "Emily studies engineering, relays his orders"
+        },
+        {
+          "icon": "🌁",
+          "label": "It opens in 1883; Emily rides across first"
+        }
+      ]
+    },
+    {
       "type": "reveal",
       "prompt": "When the bridge opened in 1883, who was the first to ride across it?",
       "answer": "Emily Warren Roebling",
       "detail": "She had studied engineering and relayed her housebound husband Washington’s instructions to the site for more than ten years."
+    },
+    {
+      "type": "scramble",
+      "clue": "The pressurised chamber used to dig the bridge’s foundations; its ‘disease’ disabled Washington Roebling",
+      "answer": "CAISSON",
+      "detail": "From the French for a box. Workers who came up too fast from the compressed air inside got the bends, now called decompression sickness."
     }
   ],
   "tags": [

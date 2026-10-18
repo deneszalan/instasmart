@@ -7,6 +7,32 @@
   "body": "The slogan ‘entities must not be multiplied beyond necessity’ was formulated by the Irish Franciscan John Punch in 1639, nearly 300 years after Ockham died in 1347. Ockham did use the principle often, in wordings like ‘plurality must never be posited without necessity’, but versions go back to Aristotle and Ptolemy. It is a rule of thumb for choosing between explanations, not proof that the simplest one is true.",
   "slides": [
     {
+      "type": "spectrum",
+      "heading": "The slogan came almost 300 years after Ockham",
+      "min": 1250,
+      "max": 1700,
+      "ends": [
+        "1250",
+        "1700"
+      ],
+      "marks": [
+        {
+          "label": "Ockham born",
+          "value": 1287
+        },
+        {
+          "label": "Ockham dies",
+          "value": 1347
+        },
+        {
+          "label": "Punch writes the slogan",
+          "value": 1639,
+          "emphasis": true
+        }
+      ],
+      "note": "Ockham lived c. 1287–1347; Punch’s wording appeared in his 1639 commentary on Duns Scotus."
+    },
+    {
       "type": "quiz",
       "question": "What does Occam’s razor actually offer?",
       "options": [

@@ -7,6 +7,29 @@
   "body": "On 18 August 1913 at the Monte Carlo Casino, the ball landed on black 26 times running. Gamblers lost millions of francs betting on red, convinced it was ‘due’. But a fair wheel has no memory: each spin is independent, so the chance of red was the same every time. The mistaken belief that past random outcomes change future ones is called the gambler’s fallacy, or the Monte Carlo fallacy.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "The fallacy that cost millions of francs",
+      "steps": [
+        {
+          "icon": "⚫",
+          "label": "Black comes up again"
+        },
+        {
+          "icon": "🤔",
+          "label": "Gamblers feel red is ‘due’"
+        },
+        {
+          "icon": "💸",
+          "label": "They bet on red, and lose"
+        },
+        {
+          "icon": "🎡",
+          "label": "The wheel has no memory: black again"
+        }
+      ],
+      "cycle": true
+    },
+    {
       "type": "quiz",
       "question": "After black had come up 25 times, what was the chance of red on the 26th spin?",
       "options": [

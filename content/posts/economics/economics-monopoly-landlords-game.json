@@ -7,10 +7,64 @@
   "body": "In 1904 Lizzie Magie, a follower of economist Henry George, patented The Landlord’s Game to show how owning land lets landlords grow rich from rents while tenants grow poor. She designed two sets of rules: one where players race to build monopolies, and one where everyone is rewarded as wealth is created. Homemade versions spread for decades before Charles Darrow sold a variant to Parker Brothers in 1935 as Monopoly.",
   "slides": [
     {
+      "type": "spectrum",
+      "heading": "Years after Lizzie Magie’s first patent",
+      "min": 0,
+      "max": 36,
+      "unit": "years",
+      "ends": [
+        "1904",
+        "1940"
+      ],
+      "marks": [
+        {
+          "label": "The Landlord’s Game patented",
+          "value": 0,
+          "emphasis": true
+        },
+        {
+          "label": "Magie’s second patent",
+          "value": 20
+        },
+        {
+          "label": "Darrow sells Monopoly",
+          "value": 31
+        },
+        {
+          "label": "Parker Brothers’ edition",
+          "value": 35
+        }
+      ],
+      "note": "Magie sold her patent to Parker Brothers for $500 in 1935; their Landlord’s Game came out in 1939"
+    },
+    {
       "type": "reveal",
       "prompt": "Magie’s game came with a twist that Monopoly dropped. What was it?",
       "answer": "A second rule set where everyone is rewarded",
       "detail": "One rule set had players race to build monopolies; the other rewarded everyone as wealth was created. Charles Darrow sold a variant to Parker Brothers in 1935."
+    },
+    {
+      "type": "match",
+      "heading": "Match each name to the part it played",
+      "pairs": [
+        {
+          "left": "Lizzie Magie",
+          "right": "Patented the game, 1904"
+        },
+        {
+          "left": "Henry George",
+          "right": "Economist who inspired it"
+        },
+        {
+          "left": "Charles Darrow",
+          "right": "Sold Monopoly, 1935"
+        },
+        {
+          "left": "Parker Brothers",
+          "right": "Publisher that bought it"
+        }
+      ],
+      "explanation": "Homemade versions of Magie’s game circulated for three decades before Darrow’s variant reached Parker Brothers."
     }
   ],
   "tags": [

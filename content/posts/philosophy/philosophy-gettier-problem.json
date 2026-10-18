@@ -7,6 +7,32 @@
   "body": "A long-held view treats knowledge as justified true belief. Edmund Gettier’s tiny paper described cases where all three conditions hold, yet the person was only lucky. Bertrand Russell had a similar example: you glance at a clock that stopped exactly twelve hours ago and believe the right time. Around AD 770, the Indian Buddhist philosopher Dharmottara imagined a traveler who sees a mirage and finds real water there.",
   "slides": [
     {
+      "type": "spectrum",
+      "heading": "Who saw the problem, and when",
+      "min": 700,
+      "max": 2000,
+      "ends": [
+        "AD 700",
+        "AD 2000"
+      ],
+      "marks": [
+        {
+          "label": "Dharmottara’s mirage",
+          "value": 770
+        },
+        {
+          "label": "Russell’s stopped clock",
+          "value": 1948
+        },
+        {
+          "label": "Gettier’s three pages",
+          "value": 1963,
+          "emphasis": true
+        }
+      ],
+      "note": "Dharmottara’s commentary is dated c. 770; Russell’s Human Knowledge appeared in 1948."
+    },
+    {
       "type": "quiz",
       "question": "Russell’s clock stopped exactly twelve hours ago. Why does that matter for knowledge?",
       "options": [
@@ -17,6 +43,25 @@
       ],
       "answer": 0,
       "explanation": "Your belief is justified and true, yet right only by luck. Gettier cases like this suggest justified true belief is not enough for knowledge."
+    },
+    {
+      "type": "match",
+      "heading": "Match the thinker to the example",
+      "pairs": [
+        {
+          "left": "Edmund Gettier",
+          "right": "A three-page paper, 1963"
+        },
+        {
+          "left": "Bertrand Russell",
+          "right": "A clock stopped 12 hours ago"
+        },
+        {
+          "left": "Dharmottara",
+          "right": "A mirage, then real water"
+        }
+      ],
+      "explanation": "In each case the belief is justified and true, yet right only by luck."
     }
   ],
   "tags": [

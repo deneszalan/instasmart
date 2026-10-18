@@ -12,6 +12,28 @@
       "text": "Much of the lore traces to moralising pamphlets of the time and to Charles Mackay’s 1841 book Extraordinary Popular Delusions and the Madness of Crowds."
     },
     {
+      "type": "flow",
+      "heading": "How the legend grew",
+      "steps": [
+        {
+          "icon": "🌷",
+          "label": "Rare bulb prices soar, then crash in 1637"
+        },
+        {
+          "icon": "📜",
+          "label": "Moralising pamphlets spread the tale"
+        },
+        {
+          "icon": "📖",
+          "label": "Mackay retells it in 1841"
+        },
+        {
+          "icon": "🔍",
+          "label": "Goldgar checks the contracts: little harm"
+        }
+      ]
+    },
+    {
       "type": "reveal",
       "prompt": "The most prized tulips had flame-like streaks. What caused them?",
       "answer": "A virus",
@@ -26,6 +48,33 @@
       "type": "text",
       "heading": "Still debated",
       "text": "Some economists, like Peter Garber, argue prices were less irrational than they look; others see a true bubble. Either way, the damage was far smaller than the legend."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Prices for rare bulbs really did collapse in 1637",
+          "bin": 0
+        },
+        {
+          "text": "The crash wrecked the Dutch economy",
+          "bin": 1
+        },
+        {
+          "text": "The prized streaks were caused by a virus",
+          "bin": 0
+        },
+        {
+          "text": "Most of the Dutch population traded bulbs",
+          "bin": 1
+        }
+      ],
+      "explanation": "Goldgar’s archive work found a fairly small group of merchants and craftsmen trading, and little lasting harm to a booming economy."
     }
   ],
   "tags": [

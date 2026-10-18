@@ -17,6 +17,14 @@
       "explanation": "Only about 36%, and the effects were on average about half as large as first reported."
     },
     {
+      "type": "pictogram",
+      "heading": "Of 97 significant findings, only about 36% were significant again",
+      "icon": "🔬",
+      "total": 100,
+      "count": 36,
+      "note": "Reproducibility Project: Psychology, 2015; effect sizes averaged half the original magnitude."
+    },
+    {
       "type": "text",
       "heading": "Famous casualties",
       "text": "Ego depletion, the idea that willpower runs out like fuel, and the claim that power poses change your hormones have both struggled in careful replications."
@@ -35,6 +43,17 @@
       "type": "text",
       "heading": "Plenty survived",
       "text": "Many findings hold up well, from anchoring to the spacing effect. The crisis is about separating solid results from shaky ones, not dismissing the field."
+    },
+    {
+      "type": "odd",
+      "heading": "Which finding has held up well?",
+      "items": [
+        "Ego depletion",
+        "Power poses changing hormones",
+        "The anchoring effect"
+      ],
+      "answer": 2,
+      "explanation": "Anchoring has replicated well in large projects. Ego depletion and the hormonal effects of power poses have struggled in careful replications."
     }
   ],
   "tags": [

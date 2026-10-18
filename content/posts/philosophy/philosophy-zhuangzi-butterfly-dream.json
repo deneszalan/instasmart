@@ -7,6 +7,29 @@
   "body": "In a famous passage of the Zhuangzi, a Daoist classic from China’s Warring States period, Zhuang Zhou dreams he is a butterfly, fluttering happily with no idea who he is. On waking, he cannot tell whether he is a man who dreamt of a butterfly or a butterfly now dreaming it is a man. He calls this ‘the transformation of things’, a playful challenge to fixed identities, written long before Descartes worried about dreams.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "The butterfly dream",
+      "steps": [
+        {
+          "icon": "😴",
+          "label": "Zhuang Zhou dreams he is a butterfly"
+        },
+        {
+          "icon": "🦋",
+          "label": "Fluttering happily, unaware of any Zhou"
+        },
+        {
+          "icon": "🌅",
+          "label": "He wakes: a man, surely"
+        },
+        {
+          "icon": "❓",
+          "label": "Or a butterfly now dreaming it is a man?"
+        }
+      ],
+      "cycle": true
+    },
+    {
       "type": "reveal",
       "prompt": "Zhuangzi gave his puzzle a name. What did he call it?",
       "answer": "‘The transformation of things’",

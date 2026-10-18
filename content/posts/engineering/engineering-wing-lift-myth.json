@@ -46,6 +46,37 @@
       ],
       "answer": 0,
       "explanation": "Nothing forces the two streams to meet at the trailing edge. The air over the top of a lifting wing moves much faster than equal transit time predicts."
+    },
+    {
+      "type": "sort",
+      "heading": "Myth or fact?",
+      "bins": [
+        "Myth",
+        "Fact"
+      ],
+      "items": [
+        {
+          "text": "Air split at the nose must meet again at the tail",
+          "bin": 0
+        },
+        {
+          "text": "Air over the top reaches the tail first",
+          "bin": 1
+        },
+        {
+          "text": "A flat plate at an angle makes lift",
+          "bin": 1
+        },
+        {
+          "text": "A cambered wing can fly upside down",
+          "bin": 1
+        },
+        {
+          "text": "Bernoulli’s principle is simply wrong",
+          "bin": 0
+        }
+      ],
+      "explanation": "Lift comes from turning the flow downward and from lower pressure above the wing; both views are right, the equal-transit story is not."
     }
   ],
   "tags": [

@@ -24,6 +24,28 @@
       "text": "Brenda Milner asked him to trace a shape while watching his hand only in a mirror. Over several days he got steadily better, even though each time he had no memory of ever having done the task before. Skill learning, it turned out, runs on different circuits from conscious memory."
     },
     {
+      "type": "flow",
+      "heading": "The mirror-drawing test",
+      "steps": [
+        {
+          "icon": "⭐",
+          "label": "Trace a star while watching a mirror only"
+        },
+        {
+          "icon": "📈",
+          "label": "Ten tries a day: his errors fall day by day"
+        },
+        {
+          "icon": "🤷",
+          "label": "Yet each day he says he has never done it"
+        },
+        {
+          "icon": "🧠",
+          "label": "Skill memory runs on separate circuits"
+        }
+      ]
+    },
+    {
       "type": "timeline",
       "heading": "H.M.",
       "events": [
@@ -56,6 +78,37 @@
       ],
       "answer": 1,
       "explanation": "He improved at mirror drawing over days without remembering practising. Procedural and working memory were intact; new long-term memories were not."
+    },
+    {
+      "type": "sort",
+      "heading": "After the operation: lost or kept?",
+      "bins": [
+        "Lost",
+        "Kept"
+      ],
+      "items": [
+        {
+          "text": "Forming new long-term memories",
+          "bin": 0
+        },
+        {
+          "text": "Childhood memories",
+          "bin": 1
+        },
+        {
+          "text": "Working memory",
+          "bin": 1
+        },
+        {
+          "text": "Learning new motor skills",
+          "bin": 1
+        },
+        {
+          "text": "Most of the year or two before surgery",
+          "bin": 0
+        }
+      ],
+      "explanation": "Removing the hippocampi stopped new long-term memories, but skills, intelligence, working memory and old memories survived."
     }
   ],
   "tags": [

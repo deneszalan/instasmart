@@ -24,6 +24,23 @@
       "explanation": "Everyone piles onto the two stretches whose delay grows with traffic, so each trip takes 80 minutes, and no single driver gains by switching back."
     },
     {
+      "type": "chart",
+      "heading": "Minutes per trip for all 4,000 drivers",
+      "items": [
+        {
+          "label": "Two routes, no shortcut",
+          "value": 65
+        },
+        {
+          "label": "With the free shortcut",
+          "value": 80,
+          "emphasis": true
+        }
+      ],
+      "unit": "min",
+      "note": "The textbook network: everyone takes the shortcut, and everyone loses 15 minutes"
+    },
+    {
       "type": "list",
       "heading": "Seen in the real world",
       "style": "bullets",

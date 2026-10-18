@@ -15,6 +15,29 @@
       "answer": 7,
       "unit": "items",
       "explanation": "‘Seven, plus or minus two’. Later work, notably by Nelson Cowan, suggests the core capacity is closer to about four chunks for young adults."
+    },
+    {
+      "type": "chart",
+      "heading": "How many items can working memory juggle at once?",
+      "items": [
+        {
+          "label": "Miller, 1956",
+          "value": 7
+        },
+        {
+          "label": "Cowan, later work",
+          "value": 4,
+          "emphasis": true
+        }
+      ],
+      "unit": "items",
+      "note": "Miller: seven, plus or minus two. Cowan: about four chunks, for young adults."
+    },
+    {
+      "type": "scramble",
+      "clue": "Grouping items into meaningful units, so that FBI takes one slot in memory instead of three",
+      "answer": "CHUNKING",
+      "detail": "Working memory holds about four chunks, so packing more into each chunk is how we stretch it."
     }
   ],
   "tags": [

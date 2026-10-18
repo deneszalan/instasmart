@@ -18,6 +18,29 @@
       "explanation": "Liquid boils inside and soaks up heat; the compressor makes the gas hot enough to shed it outside, where it condenses; a valve then drops its pressure."
     },
     {
+      "type": "flow",
+      "heading": "The refrigerant’s loop",
+      "steps": [
+        {
+          "icon": "🧊",
+          "label": "Boils inside the fridge, soaking up heat"
+        },
+        {
+          "icon": "🔩",
+          "label": "Compressed until hotter than the room"
+        },
+        {
+          "icon": "🔥",
+          "label": "Condenses in outside coils, shedding heat"
+        },
+        {
+          "icon": "🔽",
+          "label": "Expands through a valve; pressure drops"
+        }
+      ],
+      "cycle": true
+    },
+    {
       "type": "text",
       "heading": "1. Evaporate",
       "text": "Low-pressure liquid refrigerant boils inside the fridge at well below freezing, absorbing heat from the food, much as evaporating sweat cools your skin."

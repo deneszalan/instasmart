@@ -7,6 +7,29 @@
   "body": "Zeno of Elea, in the 5th century BC, argued that if a tortoise has a head start, Achilles must first reach where it was, by which time it has moved on, and so on forever. He wanted to support his teacher Parmenides’ view that change is an illusion. Calculus shows that infinitely many shrinking steps can add up to a finite time, though philosophers still debate whether that fully dissolves the puzzle.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "Why Achilles never catches up, according to Zeno",
+      "steps": [
+        {
+          "icon": "🐢",
+          "label": "The tortoise starts with a head start"
+        },
+        {
+          "icon": "🏃",
+          "label": "Achilles runs to where the tortoise was"
+        },
+        {
+          "icon": "🐢",
+          "label": "By then it has crept a little further"
+        },
+        {
+          "icon": "♾️",
+          "label": "A new, smaller gap: he must close that too"
+        }
+      ],
+      "cycle": true
+    },
+    {
       "type": "quiz",
       "question": "What was Zeno trying to support with the paradox?",
       "options": [
@@ -17,6 +40,18 @@
       ],
       "answer": 0,
       "explanation": "Zeno wanted to back his teacher Parmenides, who held that change is an illusion. Calculus later showed infinitely many shrinking steps can add up to a finite time."
+    },
+    {
+      "type": "odd",
+      "heading": "Which is not one of Zeno’s paradoxes?",
+      "items": [
+        "Achilles and the tortoise",
+        "The dichotomy",
+        "The arrow",
+        "The ship of Theseus"
+      ],
+      "answer": 3,
+      "explanation": "The ship of Theseus is a puzzle about identity told by Plutarch. The other three are Zeno’s paradoxes of motion."
     }
   ],
   "tags": [

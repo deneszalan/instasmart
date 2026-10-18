@@ -7,6 +7,30 @@
   "body": "Since 1986, *The Economist* has compared the price of a McDonald’s Big Mac around the world. The idea comes from **purchasing-power parity**: over the long run, exchange rates should drift towards the rate at which the same goods cost the same everywhere. If a Big Mac is much cheaper in one country once its price is converted to dollars, that currency looks undervalued.",
   "slides": [
     {
+      "type": "chart",
+      "heading": "What a Big Mac cost in July 2023, converted to US dollars",
+      "items": [
+        {
+          "label": "Switzerland",
+          "value": 7.73
+        },
+        {
+          "label": "United States",
+          "value": 5.58,
+          "emphasis": true
+        },
+        {
+          "label": "Egypt",
+          "value": 2.62
+        },
+        {
+          "label": "Taiwan",
+          "value": 2.39
+        }
+      ],
+      "note": "Prices from The Economist’s July 2023 index; the Swiss franc looked 38.5% overvalued"
+    },
+    {
       "type": "list",
       "heading": "The burger maths",
       "style": "steps",

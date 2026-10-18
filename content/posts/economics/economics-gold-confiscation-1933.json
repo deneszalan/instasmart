@@ -49,9 +49,56 @@
       "explanation": "From $20.67 to $35 is a rise of about 69%. The dollar was worth that much less in gold, which gave the Federal Reserve room to expand the money supply."
     },
     {
+      "type": "chart",
+      "heading": "The official price of gold, in dollars per troy ounce",
+      "items": [
+        {
+          "label": "Paid to citizens, 1933",
+          "value": 20.67
+        },
+        {
+          "label": "Gold Reserve Act, 1934",
+          "value": 35,
+          "emphasis": true
+        }
+      ],
+      "note": "A rise of about 69%: each dollar was now worth far less gold"
+    },
+    {
       "type": "text",
       "heading": "Why?",
       "text": "The Federal Reserve Act of 1913 required 40% gold backing for the notes the Fed issued, and by the late 1920s it had nearly reached the limit of credit it could extend. Taking gold out of private hands and then repricing it loosened that constraint."
+    },
+    {
+      "type": "sort",
+      "heading": "Keep it or hand it in, under the 1933 order?",
+      "bins": [
+        "Keep",
+        "Hand in"
+      ],
+      "items": [
+        {
+          "text": "A $5 gold coin, under the $100 limit",
+          "bin": 0
+        },
+        {
+          "text": "Rare coins prized by collectors",
+          "bin": 0
+        },
+        {
+          "text": "A dentist’s gold for fillings",
+          "bin": 0
+        },
+        {
+          "text": "A bar of gold bullion",
+          "bin": 1
+        },
+        {
+          "text": "Gold certificates worth $500",
+          "bin": 1
+        }
+      ],
+      "explanation": "The order exempted up to $100 in coin, rare collectors’ coins and gold used in industry, a profession or art. The rest went to the Fed at $20.67 an ounce."
     }
   ],
   "tags": [

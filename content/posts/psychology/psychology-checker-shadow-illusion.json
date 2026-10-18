@@ -7,6 +7,28 @@
   "body": "In Edward Adelson’s 1995 checker shadow illusion, a square in the light looks dark and a square in a cylinder’s shadow looks light, yet on the page they are exactly the same shade. Your visual system isn’t measuring raw brightness: it estimates the true colour of surfaces by compensating for lighting and shadows. That usually helps you see the world accurately, but here it makes identical patches look strikingly different.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "How identical greys come to look different",
+      "steps": [
+        {
+          "icon": "💡",
+          "label": "A cylinder casts a shadow across the board"
+        },
+        {
+          "icon": "👁️",
+          "label": "Two squares send the same grey to your eye"
+        },
+        {
+          "icon": "🧠",
+          "label": "The brain corrects for the shadow it sees"
+        },
+        {
+          "icon": "✨",
+          "label": "So the shaded square looks lighter"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "Why does the square in the shadow look lighter than it really is?",
       "options": [

@@ -7,6 +7,14 @@
   "body": "In a famous 1999 study by Daniel Simons and Christopher Chabris, people watched a video of players passing basketballs and counted one team’s passes. Midway through, a person in a gorilla suit walked right through the scene, and in most groups about half the viewers never noticed. Attention works like a spotlight: when it is locked onto a demanding task, even striking but unexpected things can go completely unseen. It is called inattentional blindness.",
   "slides": [
     {
+      "type": "pictogram",
+      "heading": "In most groups, half the viewers never saw the gorilla",
+      "icon": "🧍",
+      "total": 10,
+      "count": 5,
+      "note": "Simons and Chabris, 1999: in most groups 50% did not report the gorilla while counting passes."
+    },
+    {
       "type": "quiz",
       "question": "What were viewers asked to do while the gorilla walked through?",
       "options": [

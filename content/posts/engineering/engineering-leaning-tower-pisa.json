@@ -7,6 +7,23 @@
   "body": "Pisa’s bell tower began to lean during construction in the 12th century because its foundations sat on soft clay and sand. By 1990 it tilted about 5.5 degrees and was closed over fears it could topple. Rather than push it upright, engineers slowly drew out small amounts of soil from beneath the high side, letting the tower settle back. By 2001 it had straightened by about 45 centimetres, and it was declared stable for centuries to come.",
   "slides": [
     {
+      "type": "chart",
+      "heading": "How far the tower leans",
+      "items": [
+        {
+          "label": "By 1990",
+          "value": 5.5
+        },
+        {
+          "label": "After the fix, 2001",
+          "value": 3.97,
+          "emphasis": true
+        }
+      ],
+      "unit": "°",
+      "note": "Remedial work from 1993 to 2001 took the tilt back to where it stood in 1838"
+    },
+    {
       "type": "text",
       "heading": "A lucky pause",
       "text": "Building stopped for almost a century during wars, giving the soil under the first storeys time to compact. Without that pause, it would likely have toppled."
@@ -26,6 +43,37 @@
       "type": "text",
       "heading": "A gentle fix",
       "text": "Only about 38 cubic metres of soil came out from under the raised side, yet the tower settled back to the tilt it had in 1838."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Engineers jacked the tower upright",
+          "bin": 1
+        },
+        {
+          "text": "Soil was drawn out from under the high side",
+          "bin": 0
+        },
+        {
+          "text": "A century-long pause in building helped it survive",
+          "bin": 0
+        },
+        {
+          "text": "The tower is slightly curved",
+          "bin": 0
+        },
+        {
+          "text": "It now leans more than it did in 1990",
+          "bin": 1
+        }
+      ],
+      "explanation": "About 38 cubic metres of soil came out from under the raised side, easing the tilt from 5.5 to about 4 degrees, its 1838 position."
     }
   ],
   "tags": [

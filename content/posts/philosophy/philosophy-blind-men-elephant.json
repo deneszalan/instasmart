@@ -7,6 +7,28 @@
   "body": "In a parable found in Buddhist, Jain and Hindu texts, blind men each touch one part of an elephant and confidently describe something different, such as a rope, a pillar or a fan, then quarrel over who is right. In the Buddhist Udana it mocks rival sects arguing over fragments of truth. Jain thinkers used it to illustrate anekāntavāda, ‘many-sidedness’: the idea that reality is complex and no single viewpoint captures all of it.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "The parable in four moves",
+      "steps": [
+        {
+          "icon": "🐘",
+          "label": "Each blind man feels just one part"
+        },
+        {
+          "icon": "🗣️",
+          "label": "Each describes a different object"
+        },
+        {
+          "icon": "😤",
+          "label": "They quarrel: each is sure he alone is right"
+        },
+        {
+          "icon": "🧩",
+          "label": "Each holds a fragment of the truth"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "In the Buddhist Udana, who do the quarrelling blind men stand for?",
       "options": [
@@ -17,6 +39,29 @@
       ],
       "answer": 0,
       "explanation": "The Udana uses the parable to mock sects quarrelling over fragments of truth. Jain thinkers drew a broader lesson: no single viewpoint captures all of reality."
+    },
+    {
+      "type": "match",
+      "heading": "In the Buddhist Udana, what did each part feel like?",
+      "pairs": [
+        {
+          "left": "Head",
+          "right": "A pot"
+        },
+        {
+          "left": "Ear",
+          "right": "A winnowing basket"
+        },
+        {
+          "left": "Foot",
+          "right": "A pillar"
+        },
+        {
+          "left": "Tail",
+          "right": "A pestle"
+        }
+      ],
+      "explanation": "The Udana’s blind men also likened the tusk to a ploughshare, the trunk to a plough and the body to a granary."
     }
   ],
   "tags": [

@@ -18,6 +18,22 @@
       ]
     },
     {
+      "type": "scale",
+      "heading": "A million grains is a heap. One grain is not. Where is the line?",
+      "items": [
+        {
+          "label": "One grain",
+          "value": 1
+        },
+        {
+          "label": "A million grains",
+          "value": 1000000,
+          "emphasis": true
+        }
+      ],
+      "note": "Every step down is one grain, and no single grain seems to make the difference."
+    },
+    {
       "type": "list",
       "heading": "Ways out",
       "style": "bullets",
@@ -44,6 +60,12 @@
       ],
       "answer": 1,
       "explanation": "Heap, bald and tall have no exact boundary, so no single grain or hair can be the one that makes the difference, yet the difference clearly appears somewhere."
+    },
+    {
+      "type": "scramble",
+      "clue": "The culprit behind the heap paradox: words like heap, bald and tall have no sharp edge",
+      "answer": "VAGUENESS",
+      "detail": "Philosophers answer with sharp lines, unknowable lines or degrees of truth, and none of the fixes is painless."
     }
   ],
   "tags": [

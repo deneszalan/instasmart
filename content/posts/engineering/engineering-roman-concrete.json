@@ -7,6 +7,28 @@
   "body": "Roman harbour walls and buildings like the Pantheon have stood for around two millennia. Their concrete mixed lime with volcanic ash, and in seawater this slowly grows a rare crystal, tobermorite, that may help it resist fracturing. A 2023 study also found that small lumps of lime, likely from mixing with hot quicklime, can react with water in cracks and reseal them. The ash also makes it more resistant to salt water than typical modern concrete.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "How Roman concrete heals itself",
+      "steps": [
+        {
+          "icon": "💧",
+          "label": "A crack opens and water seeps in"
+        },
+        {
+          "icon": "🪨",
+          "label": "The water meets a lump of lime"
+        },
+        {
+          "icon": "⚗️",
+          "label": "Reactive calcium forms new calcium carbonate"
+        },
+        {
+          "icon": "🧱",
+          "label": "The crystals reseal the crack"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "According to a 2023 study, what lets Roman concrete reseal its cracks?",
       "options": [
@@ -17,6 +39,12 @@
       ],
       "answer": 0,
       "explanation": "Small lumps of lime, likely left from mixing with hot quicklime, can react with water that seeps into cracks and reseal them."
+    },
+    {
+      "type": "scramble",
+      "clue": "The rare crystal that grows in Roman concrete when seawater reacts with its volcanic ash",
+      "answer": "TOBERMORITE",
+      "detail": "The mineral was first described in 1880 from the Isle of Mull in Scotland, around the town of Tobermory."
     }
   ],
   "tags": [

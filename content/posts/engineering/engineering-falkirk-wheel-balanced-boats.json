@@ -12,6 +12,28 @@
       "text": "A 10-tonne floating boat displaces 10 tonnes of water. At the same water level, a chamber with the boat can weigh the same as that chamber filled with water alone."
     },
     {
+      "type": "flow",
+      "heading": "Why the wheel stays balanced",
+      "steps": [
+        {
+          "icon": "🚤",
+          "label": "A boat floats into a chamber"
+        },
+        {
+          "icon": "💧",
+          "label": "It pushes out its own weight in water"
+        },
+        {
+          "icon": "⚖️",
+          "label": "Both chambers still weigh the same"
+        },
+        {
+          "icon": "🔄",
+          "label": "The wheel turns with little effort"
+        }
+      ]
+    },
+    {
       "type": "list",
       "heading": "From one level to another",
       "style": "steps",

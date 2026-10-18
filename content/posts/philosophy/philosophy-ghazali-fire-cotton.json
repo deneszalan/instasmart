@@ -56,6 +56,32 @@
       "text": "In the 18th century David Hume argued that the only place to find necessary connections is in the mind’s own associations of ideas. Al-Ghazali had reached the sceptical half of that conclusion seven centuries earlier, and drew the opposite moral: that God, not nature, does the work."
     },
     {
+      "type": "spectrum",
+      "heading": "Seven centuries of the same doubt",
+      "min": 1000,
+      "max": 1800,
+      "ends": [
+        "1000",
+        "1800"
+      ],
+      "marks": [
+        {
+          "label": "Al-Ghazali, Incoherence",
+          "value": 1095,
+          "emphasis": true
+        },
+        {
+          "label": "Averroes replies",
+          "value": 1180
+        },
+        {
+          "label": "Hume’s Enquiry",
+          "value": 1748
+        }
+      ],
+      "note": "Al-Ghazali’s book is dated 1095, Averroes’s reply 1180, Hume’s Enquiry 1748."
+    },
+    {
       "type": "order",
       "heading": "Earliest first",
       "items": [
@@ -65,6 +91,33 @@
         "Hume’s argument about causes"
       ],
       "explanation": "Born c. 1058, the crisis of 1095, Averroes’s Incoherence of the Incoherence in the 12th century, and Hume in the 18th."
+    },
+    {
+      "type": "sort",
+      "heading": "Who would say it: al-Ghazali or the philosophers?",
+      "bins": [
+        "Al-Ghazali",
+        "Philosophers"
+      ],
+      "items": [
+        {
+          "text": "Fire has a nature that must produce burning",
+          "bin": 1
+        },
+        {
+          "text": "We only ever see burning follow contact",
+          "bin": 0
+        },
+        {
+          "text": "What looks like a law of nature is God’s habit",
+          "bin": 0
+        },
+        {
+          "text": "Cause and effect are bound together by necessity",
+          "bin": 1
+        }
+      ],
+      "explanation": "Al-Ghazali’s occasionalism: God causes each burning directly, and the fire is only the occasion."
     }
   ],
   "tags": [

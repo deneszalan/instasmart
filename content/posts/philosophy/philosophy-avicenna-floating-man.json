@@ -7,6 +7,28 @@
   "body": "In the early 11th century, the Persian philosopher Ibn Sina, known in Europe as Avicenna, asked readers to imagine a person created fully formed but suspended in the air, unable to see, limbs held apart, sensing nothing at all. Such a person, he argued, would still be aware that they exist, so the self must be distinct from the body. Scholars debate how closely Descartes’s ‘I think, therefore I am’ echoes the idea six centuries later.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "The floating man, step by step",
+      "steps": [
+        {
+          "icon": "🌌",
+          "label": "A person is created adult, floating in air"
+        },
+        {
+          "icon": "🙈",
+          "label": "No sight, no touch: not one sensation"
+        },
+        {
+          "icon": "💭",
+          "label": "Would they still affirm that they exist? Yes"
+        },
+        {
+          "icon": "✨",
+          "label": "So the self is known apart from the body"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "Cut off from every sensation, what would the floating man still know, according to Avicenna?",
       "options": [

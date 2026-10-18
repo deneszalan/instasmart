@@ -39,6 +39,22 @@
       "explanation": "37 fluid-viscous dampers and 52 tuned mass dampers, 89 in all, fitted between May 2001 and January 2002 for about £5 million."
     },
     {
+      "type": "chart",
+      "heading": "The fix: 89 dampers",
+      "items": [
+        {
+          "label": "Tuned mass dampers",
+          "value": 52,
+          "emphasis": true
+        },
+        {
+          "label": "Fluid-viscous dampers",
+          "value": 37
+        }
+      ],
+      "note": "Installed between May 2001 and January 2002 for about £5 million"
+    },
+    {
       "type": "text",
       "heading": "The feedback loop",
       "text": "People tend to match their footsteps to a sway, and a crowd walking in step pushes the deck sideways at just the right moment, so the sway grows. Crowds of up to 275 people were used to test the fix before the bridge reopened."

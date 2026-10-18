@@ -7,6 +7,29 @@
   "body": "A popular explanation says microwave ovens are tuned to a special resonance of water. They aren’t: most home ovens run at about 2.45 GHz, a radio band set aside for such uses, and water has no sharp resonance there. Instead, the rapidly flipping electric field keeps twisting polar molecules like water, which have a positive and a negative end, and their jostling becomes heat. This dielectric heating works across a wide range of frequencies.",
   "slides": [
     {
+      "type": "spectrum",
+      "heading": "Where microwave ovens work, in megahertz",
+      "min": 0,
+      "max": 6000,
+      "unit": "MHz",
+      "marks": [
+        {
+          "label": "Industrial ovens",
+          "value": 915
+        },
+        {
+          "label": "Home ovens",
+          "value": 2450,
+          "emphasis": true
+        },
+        {
+          "label": "A free band ovens don’t use",
+          "value": 5800
+        }
+      ],
+      "note": "All are ISM radio bands; 915 MHz counts as one only in some countries, 2.45 GHz worldwide"
+    },
+    {
       "type": "quiz",
       "question": "Why do most home microwave ovens run at about 2.45 GHz?",
       "options": [
@@ -17,6 +40,18 @@
       ],
       "answer": 0,
       "explanation": "That frequency sits in a radio band set aside for such uses. Water has no sharp resonance there, and dielectric heating works across a wide range of frequencies."
+    },
+    {
+      "type": "odd",
+      "heading": "Which one doesn’t absorb microwaves?",
+      "items": [
+        "Water",
+        "Sugar",
+        "Fat",
+        "Metal"
+      ],
+      "answer": 3,
+      "explanation": "Water, sugars and fats are polar molecules that soak up microwave energy and heat. Metal reflects microwaves, which is why a metal pot keeps them from the food."
     }
   ],
   "tags": [

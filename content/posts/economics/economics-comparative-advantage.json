@@ -12,6 +12,31 @@
       "text": "England needed the labour of 100 men for a year to make a set amount of cloth and 120 for wine. Portugal needed 90 and 80, so it was better at both."
     },
     {
+      "type": "chart",
+      "heading": "Ricardo’s example: men needed for a year to make the same goods",
+      "items": [
+        {
+          "label": "England: cloth",
+          "value": 100
+        },
+        {
+          "label": "England: wine",
+          "value": 120
+        },
+        {
+          "label": "Portugal: cloth",
+          "value": 90
+        },
+        {
+          "label": "Portugal: wine",
+          "value": 80,
+          "emphasis": true
+        }
+      ],
+      "unit": "men",
+      "note": "Portugal needs fewer men for both, yet England gives up less wine to make cloth"
+    },
+    {
       "type": "text",
       "heading": "Count what you give up",
       "text": "In Portugal, the labour spent on that cloth could have made 1.125 batches of wine. In England, only about 0.83. So England is the cheaper cloth maker."

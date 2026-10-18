@@ -25,6 +25,14 @@
       "text": "Among members of the same group, people often offer an even 50:50 split."
     },
     {
+      "type": "pictogram",
+      "heading": "Proposers typically offer about 4 coins in every 10",
+      "icon": "🪙",
+      "total": 10,
+      "count": 4,
+      "note": "Offers below roughly 3 in 10 are often rejected, leaving both players with nothing"
+    },
+    {
       "type": "text",
       "heading": "Do high stakes change it?",
       "text": "In Indonesia, $30 offers were refused even though that equalled two weeks’ wages. But a 2011 study in India, with stakes of up to 40 weeks’ wages, found that as the stakes rise, rejection rates approach zero."

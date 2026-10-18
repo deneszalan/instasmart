@@ -13,6 +13,23 @@
       "text": "The 1866 cable, laid by the giant Great Eastern, managed about 8 words a minute, roughly 80 times faster."
     },
     {
+      "type": "scale",
+      "heading": "Telegraph speed across the Atlantic, in words a minute",
+      "items": [
+        {
+          "label": "1858 cable",
+          "value": 0.1
+        },
+        {
+          "label": "1866 cable",
+          "value": 8,
+          "emphasis": true
+        }
+      ],
+      "unit": "words/min",
+      "note": "98 words in 16 hours works out at about a tenth of a word a minute; the 1866 cable managed 8"
+    },
+    {
       "type": "timeline",
       "heading": "Three weeks of glory",
       "events": [
@@ -50,6 +67,18 @@
       ],
       "answer": 0,
       "explanation": "Wildman Whitehouse’s repeated attempts to drive up to 2,000 volts through the cable compromised its insulation, and in September 1858 it failed altogether."
+    },
+    {
+      "type": "odd",
+      "heading": "Which is not a cable ship?",
+      "items": [
+        "HMS Agamemnon",
+        "USS Niagara",
+        "Great Eastern",
+        "Trinity Bay"
+      ],
+      "answer": 3,
+      "explanation": "Trinity Bay is the Newfoundland landing point of the 1858 cable. Agamemnon and Niagara laid that cable, and the Great Eastern laid the successful one in 1866."
     }
   ],
   "tags": [

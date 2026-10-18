@@ -7,6 +7,28 @@
   "body": "In his 1971 book A Theory of Justice, John Rawls proposed a thought experiment: choose the basic rules of society from behind a ‘veil of ignorance’, without knowing your gender, ethnicity, talents, wealth or even your idea of a good life. Since nobody can rig the rules in their own favor, Rawls argued, whatever people would agree to there counts as fair.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "Choosing rules from behind the veil",
+      "steps": [
+        {
+          "icon": "🏛️",
+          "label": "You are to pick the basic rules of society"
+        },
+        {
+          "icon": "🎭",
+          "label": "But you don’t know who you will be in it"
+        },
+        {
+          "icon": "🚫",
+          "label": "So no one can rig the rules in their favour"
+        },
+        {
+          "icon": "⚖️",
+          "label": "Whatever is agreed there counts as fair"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "Rawls’s answer",
       "text": "He argued people would choose equal basic liberties for all, and accept inequalities only if they benefit the least advantaged: the ‘difference principle’."
@@ -37,6 +59,25 @@
       ],
       "answer": 0,
       "explanation": "Rawls assumed people would guard against the worst outcome; Harsanyi assumed they would weigh the odds and maximize average well-being."
+    },
+    {
+      "type": "match",
+      "heading": "Match the thinker to the idea",
+      "pairs": [
+        {
+          "left": "John Rawls",
+          "right": "The difference principle"
+        },
+        {
+          "left": "John Harsanyi",
+          "right": "Maximise average well-being"
+        },
+        {
+          "left": "Adam Smith",
+          "right": "The impartial spectator"
+        }
+      ],
+      "explanation": "Rawls: inequalities only if they help the least advantaged. Harsanyi: the utilitarian average. Smith: judge as a fair onlooker would."
     }
   ],
   "tags": [

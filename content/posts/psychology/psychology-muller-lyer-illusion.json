@@ -26,6 +26,28 @@
       }
     },
     {
+      "type": "flow",
+      "heading": "The perspective explanation",
+      "steps": [
+        {
+          "icon": "📦",
+          "label": "Fins in: a box corner jutting toward you"
+        },
+        {
+          "icon": "🏠",
+          "label": "Fins out: a room corner, far away"
+        },
+        {
+          "icon": "🧠",
+          "label": "Size constancy scales the ‘far’ line up"
+        },
+        {
+          "icon": "📏",
+          "label": "So the tailed line looks longer"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "Does culture matter?",
       "text": "Segall, Campbell and Herskovits (1966) found people from carpentered, rectangular environments more susceptible, with San foragers of the Kalahari the least. Later work by Jahoda found no difference between rural and city Africans and suggested retinal pigmentation might play a role. The debate goes on."

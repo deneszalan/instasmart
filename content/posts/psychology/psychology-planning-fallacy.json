@@ -28,6 +28,22 @@
       ]
     },
     {
+      "type": "scale",
+      "heading": "Sydney Opera House: estimated cost vs final cost, in millions of dollars",
+      "items": [
+        {
+          "label": "Estimate",
+          "value": 7
+        },
+        {
+          "label": "Final cost",
+          "value": 102,
+          "emphasis": true
+        }
+      ],
+      "note": "Expected to open in 1963 for $7 million; a scaled-down version opened in 1973 at $102 million."
+    },
+    {
       "type": "text",
       "heading": "The fix: look outside",
       "text": "Why does it happen? People focus on the task ahead rather than on how similar tasks went before, and blame past delays on outside events. One remedy is reference class forecasting: predict the outcome from the actual outcomes of a whole class of similar projects, not from your plan."

@@ -28,6 +28,32 @@
       ]
     },
     {
+      "type": "flow",
+      "heading": "From Axim to German lecture halls and back",
+      "steps": [
+        {
+          "icon": "🌍",
+          "label": "Born in Axim, present-day Ghana, c. 1703"
+        },
+        {
+          "icon": "🚢",
+          "label": "Taken to Amsterdam at about four"
+        },
+        {
+          "icon": "🏰",
+          "label": "Raised at the Brunswick-Wolfenbüttel court"
+        },
+        {
+          "icon": "🎓",
+          "label": "Scholar at Halle, Wittenberg and Jena"
+        },
+        {
+          "icon": "⛵",
+          "label": "Returns to Ghana, c. 1747"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "Mind and body",
       "text": "His 1734 dissertation, On the Apathy of the Human Mind, argued for a broadly Cartesian dualism: mind and body are distinct kinds of thing. Four years later he published a treatise on the art of philosophising soberly and accurately."

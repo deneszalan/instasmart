@@ -24,6 +24,32 @@
       ]
     },
     {
+      "type": "flow",
+      "heading": "What happens when ‘red’ is printed in blue",
+      "steps": [
+        {
+          "icon": "👀",
+          "label": "The word and its ink colour arrive together"
+        },
+        {
+          "icon": "⚡",
+          "label": "Reading is automatic: ‘red’ comes first"
+        },
+        {
+          "icon": "🎨",
+          "label": "Naming the colour, ‘blue’, takes longer"
+        },
+        {
+          "icon": "🛑",
+          "label": "‘Red’ must be suppressed before you answer"
+        },
+        {
+          "icon": "🐢",
+          "label": "So the answer comes slower"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "A tool in the clinic",
       "text": "Stroop interference increases with brain damage and in disorders such as schizophrenia, addictions and depression. In the emotional Stroop, depressed people are slower to name the colour of negative words than of neutral ones. Reaction times on the task fall steadily from early childhood to early adulthood."

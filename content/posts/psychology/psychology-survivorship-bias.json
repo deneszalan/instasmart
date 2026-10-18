@@ -17,6 +17,28 @@
       "text": "Statistician Abraham Wald worked on estimating vulnerability from survivors’ damage. The key idea: planes hit in the spots where survivors lacked holes didn’t come back."
     },
     {
+      "type": "flow",
+      "heading": "Wald’s reasoning",
+      "steps": [
+        {
+          "icon": "✈️",
+          "label": "Bombers come home riddled with bullet holes"
+        },
+        {
+          "icon": "🔍",
+          "label": "The holes cluster in some areas, not others"
+        },
+        {
+          "icon": "💀",
+          "label": "Planes hit in the clean spots never returned"
+        },
+        {
+          "icon": "🛡️",
+          "label": "So armour the places without holes"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "Everyday versions",
       "text": "‘They don’t make them like they used to’ forgets that the flimsy old products broke and were thrown away. Only the sturdy survivors are left to admire."

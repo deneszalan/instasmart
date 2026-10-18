@@ -7,6 +7,28 @@
   "body": "In 1968 ecologist Garrett Hardin argued that when a resource like a pasture is open to all, each user gains by taking a little more while the damage is shared, so the resource gets ruined. The logic fits overfishing and pollution well. But Elinor Ostrom studied real fisheries, forests and irrigation systems and found many communities had managed shared resources sustainably for centuries. That work made her the first woman to win the economics Nobel, in 2009.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "Hardin’s logic",
+      "steps": [
+        {
+          "icon": "🌾",
+          "label": "A pasture is open to every herder"
+        },
+        {
+          "icon": "🐄",
+          "label": "Each herder gains by adding one more cow"
+        },
+        {
+          "icon": "⚖️",
+          "label": "The gain is theirs; the damage is shared"
+        },
+        {
+          "icon": "🏜️",
+          "label": "Everyone adds cows: the pasture is ruined"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "Where the idea began",
       "text": "Hardin built on an 1833 pamphlet by economist William Forster Lloyd, who imagined herders overgrazing a shared village pasture."
@@ -32,6 +54,25 @@
       ],
       "answer": 0,
       "explanation": "Lasting commons tend to have clear boundaries, rules made by the users, monitoring, graduated penalties and cheap ways to settle disputes."
+    },
+    {
+      "type": "match",
+      "heading": "Match the thinker to the work",
+      "pairs": [
+        {
+          "left": "William Forster Lloyd",
+          "right": "1833 pamphlet on overgrazing"
+        },
+        {
+          "left": "Garrett Hardin",
+          "right": "1968 ‘tragedy’ essay"
+        },
+        {
+          "left": "Elinor Ostrom",
+          "right": "2009 economics Nobel"
+        }
+      ],
+      "explanation": "Hardin built on Lloyd’s pamphlet; Ostrom’s fieldwork on real commons made her the first woman to win the economics Nobel."
     }
   ],
   "tags": [

@@ -19,6 +19,23 @@
       }
     },
     {
+      "type": "chart",
+      "heading": "Seconds with a hand in painfully cold water",
+      "items": [
+        {
+          "label": "Trial A: 60 s at 14 °C",
+          "value": 60
+        },
+        {
+          "label": "Trial B: plus 30 s at 15 °C",
+          "value": 90,
+          "emphasis": true
+        }
+      ],
+      "unit": "s",
+      "note": "Most volunteers chose to repeat Trial B: more pain in total, but a gentler ending."
+    },
+    {
       "type": "text",
       "heading": "Memory is not a sum",
       "text": "The remembering self doesn’t add up every second. It samples the peak and the ending, and the length barely registers, a quirk Kahneman called duration neglect. Trial B’s milder last half-minute made the whole memory feel better."
@@ -39,6 +56,12 @@
       ],
       "answer": 1,
       "explanation": "The remembering self samples the peak and the end; the length barely registers, which Kahneman called duration neglect."
+    },
+    {
+      "type": "scramble",
+      "clue": "What the remembering self largely ignores: how long an experience lasted. Kahneman called it ___ neglect",
+      "answer": "DURATION",
+      "detail": "The remembering self samples the peak and the ending; the length barely registers."
     }
   ],
   "tags": [

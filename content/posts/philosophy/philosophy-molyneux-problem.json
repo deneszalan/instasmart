@@ -12,6 +12,32 @@
       "attribution": "William Molyneux, quoted in Locke’s Essay Concerning Human Understanding"
     },
     {
+      "type": "flow",
+      "heading": "Molyneux’s question, and its answer",
+      "steps": [
+        {
+          "icon": "✋",
+          "label": "Born blind, he knows cube and globe by touch"
+        },
+        {
+          "icon": "👁️",
+          "label": "Now imagine he is given sight"
+        },
+        {
+          "icon": "❓",
+          "label": "Before touching, can he tell which is which?"
+        },
+        {
+          "icon": "📜",
+          "label": "Locke: no. Leibniz: yes, by reasoning"
+        },
+        {
+          "icon": "🔬",
+          "label": "2011: not at first, but within days"
+        }
+      ]
+    },
+    {
       "type": "compare",
       "heading": "Three answers",
       "left": {
@@ -51,6 +77,33 @@
       ],
       "answer": 1,
       "explanation": "Right after surgery their matches were barely better than chance; three of them, retested days later, reached 80–90 per cent."
+    },
+    {
+      "type": "sort",
+      "heading": "Could he name the cube by sight alone? Who said what",
+      "bins": [
+        "No",
+        "Yes"
+      ],
+      "items": [
+        {
+          "text": "William Molyneux, who posed the question",
+          "bin": 0
+        },
+        {
+          "text": "John Locke",
+          "bin": 0
+        },
+        {
+          "text": "George Berkeley",
+          "bin": 0
+        },
+        {
+          "text": "Gottfried Leibniz",
+          "bin": 1
+        }
+      ],
+      "explanation": "Molyneux answered ‘Not’, and Locke and Berkeley agreed; Leibniz argued the man could reason it out, since both senses share geometry."
     }
   ],
   "tags": [

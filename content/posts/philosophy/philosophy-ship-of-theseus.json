@@ -32,9 +32,57 @@
       "text": "Japan’s Ise Shrine is rebuilt with fresh timber every 20 years, yet is treated as the same sacred place. Restored antiques and old bands raise the same question."
     },
     {
+      "type": "spectrum",
+      "heading": "Two thousand years of the same question",
+      "min": 1,
+      "max": 2050,
+      "ends": [
+        "AD 1",
+        "Today"
+      ],
+      "marks": [
+        {
+          "label": "Plutarch tells the tale",
+          "value": 100
+        },
+        {
+          "label": "Ise Shrine first rebuilt",
+          "value": 692
+        },
+        {
+          "label": "Hobbes adds a second ship",
+          "value": 1655
+        },
+        {
+          "label": "Ise rebuilt, 62nd time",
+          "value": 2013
+        }
+      ],
+      "note": "Ise’s first ceremonial rebuilding was in 692; the 62nd came in 2013 and the next is due in 2033."
+    },
+    {
       "type": "text",
       "heading": "Why it matters",
       "text": "Many of the molecules in your body are replaced over time. Whether a person is their matter, their pattern or their memories is still debated."
+    },
+    {
+      "type": "match",
+      "heading": "Match each to its part in the puzzle",
+      "pairs": [
+        {
+          "left": "Plutarch",
+          "right": "Tells the tale, c. AD 100"
+        },
+        {
+          "left": "Thomas Hobbes",
+          "right": "Rebuilds the old planks"
+        },
+        {
+          "left": "Ise Shrine",
+          "right": "New timber every 20 years"
+        }
+      ],
+      "explanation": "Plutarch reports the Athenians’ repairs; Hobbes imagined a second ship built from the discarded planks; Ise is rebuilt on a 20-year cycle."
     }
   ],
   "tags": [
