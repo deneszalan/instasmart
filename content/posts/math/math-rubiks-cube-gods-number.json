@@ -1,0 +1,102 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-rubiks-cube-gods-number",
+  "field": "math",
+  "title": "Every one of the Rubik's Cube's 43 quintillion positions can be solved in 20 moves",
+  "emoji": "🧩",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Original_Rubik%27s_cube_from_1980.jpg/960px-Original_Rubik%27s_cube_from_1980.jpg",
+    "alt": "An original 1980 Rubik's Cube, partly scrambled, with its coloured stickers catching the light.",
+    "credit": "Racomi · CC BY-SA 4.0"
+  },
+  "body": "Turning the faces of a standard cube can produce **43,252,003,274,489,856,000** different arrangements, about 43 quintillion. Yet in 2010 a team including Tomas Rokicki, using computer time donated by Google, proved that none of them needs more than **20 moves** to solve. Mathematicians call this maximum \"God's number\", because only an all-knowing solver would always find the shortest route. The puzzle's inventor, Ernő Rubik, needed about a month of trial and error to solve his own creation in 1974.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "At most how many moves does any cube position need, if you always play perfectly?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 20,
+      "unit": "moves",
+      "explanation": "The proof came in July 2010: every one of the 43 quintillion positions can be solved in 20 moves or fewer, and millions of positions really do need all 20."
+    },
+    {
+      "type": "text",
+      "heading": "Why 43 quintillion?",
+      "text": "There are 8! ways to place the eight corners and 12!/2 ways to place the edges. Seven corners can be twisted independently (3 ways each) and eleven edges flipped (2 ways each). Multiplied, that is 43 quintillion. Take it apart and 519 quintillion arrangements exist, but only one twelfth can be solved by turning."
+    },
+    {
+      "type": "stat",
+      "value": "275×",
+      "label": "the Earth's surface could be covered by one cube per position",
+      "text": "Stacked instead, those cubes would make a tower 261 light-years high."
+    },
+    {
+      "type": "chart",
+      "heading": "Proven maximum moves needed for any position, by year",
+      "items": [
+        {
+          "label": "2007 (Kunkle, Cooperman)",
+          "value": 26
+        },
+        {
+          "label": "2008 (Rokicki)",
+          "value": 22
+        },
+        {
+          "label": "2010 (final proof)",
+          "value": 20,
+          "emphasis": true
+        }
+      ],
+      "unit": "moves",
+      "note": "Each result is an upper bound; the 2010 proof showed 20 is exact"
+    },
+    {
+      "type": "timeline",
+      "heading": "From Magic Cube to God's number",
+      "events": [
+        {
+          "when": "1974",
+          "text": "Ernő Rubik builds his \"Magic Cube\" in Budapest"
+        },
+        {
+          "when": "1980",
+          "text": "Released internationally; German Game of the Year"
+        },
+        {
+          "when": "2010",
+          "text": "Rokicki's team proves 20 moves always suffice"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why is the maximum number of moves called \"God's number\"?",
+      "options": [
+        "Only a perfect solver always finds it",
+        "Rubik was a theology student",
+        "It was found on a Sunday",
+        "The cube has 20 stickers per face"
+      ],
+      "answer": 0,
+      "explanation": "The name imagines an all-knowing solver who always plays the shortest possible solution. God's number, 20, is the most such a solver would ever need."
+    }
+  ],
+  "tags": [
+    "puzzles",
+    "combinatorics",
+    "rubikscube",
+    "grouptheory"
+  ],
+  "source": {
+    "label": "Wikipedia: Rubik's Cube",
+    "url": "https://en.wikipedia.org/wiki/Rubik%27s_Cube"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
