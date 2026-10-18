@@ -1,0 +1,60 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-atacama-never-recorded-rain",
+  "field": "earth",
+  "title": "Some weather stations in Chile's Atacama Desert have never recorded rain",
+  "emoji": "🏜️",
+  "body": "The Atacama Desert of northern Chile, wedged between the Andes and the Pacific, averages only about **15 mm of rain a year**, and some places get just 1 to 3 mm; a few weather stations there have never recorded any. It is dry because mountains block moisture from both sides: the Andes stop moist air from the east and the Coast Range blocks the Pacific, while the cold Humboldt Current offshore and the South Pacific anticyclone keep rain clouds from forming. Hyper-arid conditions may stretch back to the Middle Miocene, making it possibly the oldest desert on Earth, and NASA tests Mars instruments in its Mars-like soils. When rare rains do fall, the southern desert erupts in flowers.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/AtacamaDesertByFrode.jpg/960px-AtacamaDesertByFrode.jpg",
+    "alt": "A narrow gap between two tall pink rock walls in the Atacama Desert opens onto a plain, with snow-capped Andean volcanoes on the horizon",
+    "credit": "Frodosleveland · CC BY-SA 4.0"
+  },
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How much rain falls on the Atacama Desert in an average year?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 15,
+      "unit": "mm",
+      "explanation": "About 15 mm a year on average, and some spots get only 1 to 3 mm. A few weather stations in the desert have never recorded rain at all."
+    },
+    {
+      "type": "flow",
+      "heading": "Why so dry? A desert boxed in",
+      "steps": [
+        { "icon": "🏔️", "label": "The Andes block moist air from the east" },
+        { "icon": "⛰️", "label": "The Coast Range blocks the Pacific side" },
+        { "icon": "🌊", "label": "The cold Humboldt Current chills the air" },
+        { "icon": "☀️", "label": "A high-pressure system suppresses rain" }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Desierto_florido_2010.jpg/960px-Desierto_florido_2010.jpg",
+      "alt": "A field of bright pink flowers carpeting sandy desert ground under a pale sky",
+      "caption": "The desierto florido: in years with enough rain, such as 2015, the southern Atacama blooms between September and November.",
+      "fit": "cover",
+      "credit": "Joselyn Anfossi Mardones · CC BY 2.0"
+    },
+    {
+      "type": "quiz",
+      "question": "Why does NASA send instruments to the Atacama?",
+      "options": ["Its soil resembles Martian soil", "It is the highest desert on Earth", "Nothing at all lives in it"],
+      "answer": 0,
+      "explanation": "Atacama soils are compared with Martian soil, so NASA tests instruments for future Mars missions there. Viking-style life-detection tests once missed the microbes that do live in it."
+    },
+    {
+      "type": "stat",
+      "value": "105,000 km²",
+      "label": "area of the Atacama Desert",
+      "text": "Roughly 128,000 km² if the barren lower slopes of the Andes are included. Hyper-aridity dates back at least to the Middle Miocene, though a 2026 study questioned whether it was continuous."
+    }
+  ],
+  "tags": ["deserts", "chile", "rain", "climate"],
+  "source": { "label": "Wikipedia: Atacama Desert", "url": "https://en.wikipedia.org/wiki/Atacama_Desert" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

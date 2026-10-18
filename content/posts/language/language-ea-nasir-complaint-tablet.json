@@ -1,0 +1,94 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "language-ea-nasir-complaint-tablet",
+  "field": "language",
+  "title": "The oldest known customer complaint is a 3,800-year-old clay tablet about bad copper",
+  "emoji": "📝",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Complaint_tablet_to_Ea-Nasir%2C_2023.jpg/960px-Complaint_tablet_to_Ea-Nasir%2C_2023.jpg",
+    "alt": "A small rectangular clay tablet densely covered in cuneiform wedge marks: the complaint letter to Ea-nasir.",
+    "credit": "Joel Bellviure · CC BY 4.0"
+  },
+  "body": "Around 1750 BC, in the Mesopotamian city of Ur, a merchant named Ea-nasir sold copper ingots from Dilmun, promising they would be of fine quality. A customer called Nanni wrote him a furious letter in Akkadian cuneiform: his servant had been handed poor copper and told, in effect, to take it or leave it, and the messengers he sent to recover his deposit had been turned away rudely. The tablet, 11.6 cm tall, was dug up by Leonard Woolley’s excavation at Ur between 1922 and 1934, in ruins thought to be Ea-nasir’s own house, along with other letters complaining about his copper. Guinness World Records lists it as the oldest written customer complaint.",
+  "slides": [
+    {
+      "type": "stat",
+      "value": "11.6 cm",
+      "label": "tall: the whole complaint fits on a tablet smaller than a phone",
+      "text": "It is 5.0 cm wide and 2.6 cm thick, slightly damaged, and belongs to the British Museum."
+    },
+    {
+      "type": "flow",
+      "heading": "Anatomy of a complaint",
+      "steps": [
+        {
+          "icon": "🧾",
+          "label": "Ea-nasir sells copper, ‘of fine quality’"
+        },
+        {
+          "icon": "😠",
+          "label": "Poor copper: take it or leave it"
+        },
+        {
+          "icon": "🚪",
+          "label": "Messengers sent for a refund are turned away"
+        },
+        {
+          "icon": "✍️",
+          "label": "Nanni demands his money back, in cuneiform"
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "A long wait for a refund",
+      "events": [
+        {
+          "when": "c. 1750 BC",
+          "text": "Nanni writes to Ea-nasir in Ur"
+        },
+        {
+          "when": "1922–1934",
+          "text": "Woolley’s expedition digs up the house and its letters"
+        }
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "What else was found in the same ruined house?",
+      "answer": "More complaints about Ea-nasir",
+      "detail": "One writer said he had still not received his copper; another was tired of getting bad copper. The house is thought to have been Ea-nasir’s own."
+    },
+    {
+      "type": "quiz",
+      "question": "What did Nanni say he would do with future deliveries?",
+      "options": [
+        "Inspect each ingot on his own ground",
+        "Pay double for good copper",
+        "Report Ea-nasir to the king",
+        "Melt them down"
+      ],
+      "answer": 0,
+      "explanation": "Nanni demanded his money back and said that from then on he would inspect the ingots one by one on his own property."
+    },
+    {
+      "type": "text",
+      "heading": "Why it survives",
+      "text": "Clay tablets harden and last where paper, parchment and papyrus rot. Letters like this one were recovered by a joint University of Pennsylvania and British Museum expedition led by Leonard Woolley, and translated in full by W. F. Leemans in 1960 and by A. Leo Oppenheim in 1967."
+    }
+  ],
+  "tags": [
+    "cuneiform",
+    "mesopotamia",
+    "writing"
+  ],
+  "source": {
+    "label": "Wikipedia: Complaint tablet to Ea-nāṣir",
+    "url": "https://en.wikipedia.org/wiki/Complaint_tablet_to_Ea-n%C4%81%E1%B9%A3ir"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

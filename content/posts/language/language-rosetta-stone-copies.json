@@ -1,0 +1,112 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "language-rosetta-stone-copies",
+  "field": "language",
+  "title": "The Rosetta Stone was never one of a kind: the decree ordered a copy in every temple",
+  "emoji": "🪨",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Rosetta_Stone.JPG/960px-Rosetta_Stone.JPG",
+    "alt": "The Rosetta Stone, a dark stone slab covered in three bands of inscription, hieroglyphs at the top, Demotic in the middle and Greek at the bottom, in the British Museum.",
+    "credit": "Hans Hillewaert · CC BY-SA 4.0"
+  },
+  "body": "The stone carries a decree issued at Memphis on 27 March 196 BC by priests honouring King Ptolemy V, written three times: in Egyptian hieroglyphs, in Demotic and in Greek. The text itself orders that a copy be set up in every temple, and the stone is not even complete: it is a fragment of a taller stele. It was reused as building material in a fort near Rashid (Rosetta), where a French officer, Pierre-François Bouchard, found it in July 1799, and it has been on show in the British Museum since 1802, where it is the most visited single object. Because scholars could already read the Greek, it became the key to hieroglyphs.",
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "The same text, three times",
+      "steps": [
+        {
+          "icon": "🔝",
+          "label": "Top band: Egyptian hieroglyphs"
+        },
+        {
+          "icon": "✒️",
+          "label": "Middle band: Demotic, the everyday script"
+        },
+        {
+          "icon": "🏛️",
+          "label": "Bottom band: Greek, readable by scholars"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "What the decree says",
+      "text": "It is not poetry. The priests record that Ptolemy V gave silver and grain to the temples and had the waters of an unusually high Nile flood dammed for the benefit of farmers. In return he would be served alongside the other gods, with his birthday and coronation day celebrated every year."
+    },
+    {
+      "type": "stat",
+      "value": "760 kg",
+      "label": "the weight of the stone, which is 112 cm tall and 76 cm wide",
+      "text": "Only a fragment: the original stele is thought to have stood about 149 cm tall. Three other fragmentary copies of the same decree have been found."
+    },
+    {
+      "type": "timeline",
+      "heading": "From Memphis to London",
+      "events": [
+        {
+          "when": "196 BC",
+          "text": "Priests at Memphis issue the decree for Ptolemy V"
+        },
+        {
+          "when": "1799",
+          "text": "Found at Fort Julien near Rashid"
+        },
+        {
+          "when": "1802",
+          "text": "Goes on display in the British Museum"
+        },
+        {
+          "when": "1822",
+          "text": "Champollion announces his decipherment of hieroglyphs"
+        }
+      ]
+    },
+    {
+      "type": "place",
+      "question": "In what year did Champollion announce the decipherment of hieroglyphs?",
+      "min": 1780,
+      "max": 1880,
+      "step": 1,
+      "answer": 1822,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Found",
+          "value": 1799
+        },
+        {
+          "label": "To London",
+          "value": 1802
+        }
+      ],
+      "explanation": "1822: on 27 September Jean-François Champollion presented his phonetic alphabet of hieroglyphs to the Académie in Paris, 23 years after the stone was found."
+    },
+    {
+      "type": "quiz",
+      "question": "What did Thomas Young work out before Champollion?",
+      "options": [
+        "Signs spelling ‘Ptolemaios’",
+        "The full Demotic alphabet",
+        "The date of the decree",
+        "That the Greek was a forgery"
+      ],
+      "answer": 0,
+      "explanation": "Young identified the phonetic signs for the name Ptolemaios in the hieroglyphs and showed that Demotic was partly phonetic. Champollion then built the full system."
+    }
+  ],
+  "tags": [
+    "egypt",
+    "writing",
+    "decipherment"
+  ],
+  "source": {
+    "label": "Wikipedia: Rosetta Stone",
+    "url": "https://en.wikipedia.org/wiki/Rosetta_Stone"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

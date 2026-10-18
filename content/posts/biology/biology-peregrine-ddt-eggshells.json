@@ -1,0 +1,62 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-peregrine-ddt-eggshells",
+  "field": "biology",
+  "title": "DDT drove peregrine falcons to local extinction by thinning their eggshells",
+  "emoji": "🦅",
+  "body": "The peregrine is famous for its hunting stoop, widely reported at over 320 km/h, though radar studies have confirmed far lower speeds. In the 1950s, 60s and 70s it crashed across much of its range, because the pesticide **DDT** built up in the birds and thinned their eggshells, so fewer eggs survived to hatch. It disappeared from parts of the south-eastern United States and from Belgium. After DDT was banned in the early 1970s, nest protection and the release of captive-bred birds brought it back: the United States removed it from its endangered list in 1999, Canada declared it no longer at risk in 2017, and peregrines now nest on cathedrals, skyscraper ledges and bridges, hunting city pigeons.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg/960px-Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg",
+    "alt": "A peregrine falcon with a dark hood, white chest and barred belly perched on a bare branch against a blue sky",
+    "credit": "Mykola Swarnyk · CC BY-SA 3.0"
+  },
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Why did DDT make peregrine eggs fail?",
+      "options": ["It thinned the eggshells", "It poisoned the chicks' food", "It made adults abandon nests"],
+      "answer": 0,
+      "explanation": "DDT built up in the birds' bodies and thinned their eggshells, so fewer eggs survived to hatch. Populations crashed from the 1950s to the 1970s and recovered after the bans of the early 1970s."
+    },
+    {
+      "type": "timeline",
+      "heading": "Crash and comeback",
+      "events": [
+        { "when": "1950s–70s", "text": "DDT thins eggshells; populations crash" },
+        { "when": "1978", "text": "Endangered in Canada; one pair left in the Yukon" },
+        { "when": "1999", "text": "Taken off the US endangered list" },
+        { "when": "2017", "text": "Canada: no longer at risk" }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Falco_peregrinus_nest_USFWS.jpg/960px-Falco_peregrinus_nest_USFWS.jpg",
+      "alt": "A peregrine falcon perched on a steep, lichen-covered rock ledge, looking down",
+      "caption": "Cliff ledges are the classic nest site. In many parts of its range the peregrine now also nests on tall buildings and bridges, where feral pigeons are its main prey.",
+      "fit": "cover",
+      "credit": "USFWS · Public domain"
+    },
+    {
+      "type": "compare",
+      "heading": "How fast is the stoop?",
+      "left": { "label": "Often claimed", "text": "Over 320 km/h; a 2005 television programme reported a dive clocked at 389 km/h." },
+      "right": { "label": "Measured", "text": "Radar tracks have never confirmed such speeds; the highest reliably measured is 184 km/h." }
+    },
+    {
+      "type": "reveal",
+      "prompt": "Which large US city made the peregrine falcon its official city bird?",
+      "answer": "Chicago",
+      "detail": "Peregrines have adapted to cities worldwide, nesting on cathedrals, skyscraper window ledges and tower blocks. The first recorded urban pair nested on Swansea Guildhall in the 1980s."
+    },
+    {
+      "type": "stat",
+      "value": "1,402",
+      "label": "breeding pairs in the UK in 2011, by RSPB estimate",
+      "text": "The UK population crashed in the 1960s and recovered after DDT was banned. British peregrines have become increasingly urban, especially in the south, where natural cliffs are scarce."
+    }
+  ],
+  "tags": ["falcons", "birds", "ddt", "conservation"],
+  "source": { "label": "Wikipedia: Peregrine falcon", "url": "https://en.wikipedia.org/wiki/Peregrine_falcon" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "psychology-phineas-gage",
+  "field": "psychology",
+  "title": "The man who survived an iron rod through his brain later drove stagecoaches in Chile",
+  "emoji": "🧠",
+  "cover": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Phineas_Gage_Cased_Daguerreotype_WilgusPhoto2008-12-19_EnhancedRetouched_Color.jpg",
+    "alt": "A daguerreotype of Phineas Gage, a young man in a suit with his left eye closed, holding the long iron tamping bar that passed through his head.",
+    "credit": "Jack and Beverly Wilgus, retouched by Joe Haythornthwaite · CC BY-SA 3.0"
+  },
+  "body": "On 13 September 1848, railway foreman Phineas Gage was blasting rock near Cavendish, Vermont, when the charge went off early and drove a 1.1-metre, 6-kilogram iron bar through his left cheek and out of the top of his skull. He spoke within minutes and walked with little help. Textbooks say he turned from a reliable worker into a boastful brawler, but the historian Malcolm Macmillan found that the known facts do not support that picture, which grew in the retelling. Gage later worked for years as a long-distance stagecoach driver in Chile, and died of seizures in 1860, aged 36.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How far away did the iron bar land after passing through Gage’s head?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 25,
+      "unit": "m",
+      "explanation": "About 25 metres (80 feet). The bar was 1.1 m long, 3.2 cm thick and weighed about 6 kg."
+    },
+    {
+      "type": "stat",
+      "value": "1.1 m",
+      "label": "long iron bar, 3.2 cm thick and 6 kg, that passed through Gage’s head",
+      "text": "It entered under his left cheekbone, passed behind the left eye and through the left side of the brain, and exited through the top of his skull."
+    },
+    {
+      "type": "flow",
+      "heading": "The bar’s path",
+      "steps": [
+        { "icon": "💥", "label": "The charge explodes in the drill hole" },
+        { "icon": "⬆️", "label": "The bar enters under the left cheekbone" },
+        { "icon": "🧠", "label": "Passes behind the eye, through the brain" },
+        { "icon": "🪨", "label": "Exits through the top of the skull" },
+        { "icon": "📍", "label": "Lands about 25 metres away" }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Phineas_Gage_Countway_Library.jpg/960px-Phineas_Gage_Countway_Library.jpg",
+      "alt": "Phineas Gage’s skull, shown in sections, in a display case at Harvard Medical School’s Warren Anatomical Museum.",
+      "caption": "Gage’s skull and the tamping iron are kept at the Warren Anatomical Museum at Harvard Medical School in Boston.",
+      "fit": "cover",
+      "credit": "That Coptic Guy · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Legend vs record",
+      "left": { "label": "Legend", "text": "Gage became a foul-mouthed, unreliable drifter who never worked properly again." },
+      "right": { "label": "Record", "text": "From 1852 he spent about seven years driving long-distance stagecoaches between Valparaíso and Santiago." }
+    },
+    {
+      "type": "timeline",
+      "heading": "Gage’s life",
+      "events": [
+        { "when": "1848", "text": "Iron bar through the skull, aged about 25" },
+        { "when": "1852", "text": "Drives stagecoaches in Chile" },
+        { "when": "1860", "text": "Dies of seizures, aged 36" },
+        { "when": "2009", "text": "His photograph is identified" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "How soon after the accident did Gage speak?",
+      "options": [
+        "Within minutes",
+        "After three days",
+        "After a month",
+        "Never again"
+      ],
+      "answer": 0,
+      "explanation": "He spoke within minutes and walked with little help. His doctor, John Martyn Harlow, drained an abscess and nursed him through the infection."
+    },
+    {
+      "type": "text",
+      "heading": "Why the legend grew",
+      "text": "Gage mattered because his case suggested that the frontal lobes shape personality. But Harlow’s report that friends called him ‘no longer Gage’ was stretched over the decades into tales of drunkenness and brawling that nobody who knew him recorded. The real Gage recovered enough to hold down a demanding job for years."
+    }
+  ],
+  "tags": ["brain", "neuroscience", "history", "myths"],
+  "source": { "label": "Wikipedia: Phineas Gage", "url": "https://en.wikipedia.org/wiki/Phineas_Gage" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

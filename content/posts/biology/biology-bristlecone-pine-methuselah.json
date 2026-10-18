@@ -1,0 +1,59 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-bristlecone-pine-methuselah",
+  "field": "biology",
+  "title": "A pine tree in California has been alive for more than 4,800 years",
+  "emoji": "🌲",
+  "body": "Methuselah, a Great Basin bristlecone pine in the White Mountains of eastern California, is **4,858 years old** by a count of the rings in a small core sample, which makes it the oldest known living non-clonal organism. Its exact location is kept secret to protect it. These pines grow slowly in the high, dry mountains near the treeline, and their needles can stay green for up to 45 years. The wood is so durable in that climate that dead trunks can stand beside living trees for around 7,000 years.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Inyo_Bristlecone_bcp_tree_%285632371665%29.jpg/960px-Inyo_Bristlecone_bcp_tree_%285632371665%29.jpg",
+    "alt": "A gnarled Great Basin bristlecone pine with twisted bare wood and tufts of green needles against a deep blue sky",
+    "credit": "USFS Region 5 · Public domain"
+  },
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How old is Methuselah, the oldest known bristlecone pine?",
+      "min": 0,
+      "max": 6000,
+      "step": 1,
+      "answer": 4858,
+      "unit": "years",
+      "explanation": "4,858 years by ring count, making it the oldest known living non-clonal organism. A 5,062-year-old tree was reported in 2010, but neither it nor its core sample has been found since."
+    },
+    {
+      "type": "chart",
+      "heading": "Bristlecone time, in years",
+      "unit": "years",
+      "items": [
+        { "label": "A needle stays green, up to", "value": 45 },
+        { "label": "Methuselah, still alive", "value": 4858, "emphasis": true },
+        { "label": "Dead wood can stand, about", "value": 7000 }
+      ],
+      "note": "The climate and the wood's durability preserve dead trees next to living ones"
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Bristlecone_hillside.jpg/960px-Bristlecone_hillside.jpg",
+      "alt": "Several bristlecone pines scattered across a rocky, pale hillside under a blue sky",
+      "caption": "Bristlecones grow near the treeline in the White Mountains of California and the high ranges of Nevada and Utah, including the Ancient Bristlecone Pine Forest and Great Basin National Park.",
+      "fit": "cover",
+      "credit": "Dcrjsr · CC BY-SA 3.0"
+    },
+    {
+      "type": "reveal",
+      "prompt": "In 2010 a tree-ring researcher reported an even older White Mountains tree, aged 5,062. Where is it today?",
+      "answer": "Nobody knows",
+      "detail": "Tom Harlan kept its location secret and died in 2013. Neither the tree nor his core sample has been found, so its age and even its existence cannot be confirmed."
+    },
+    {
+      "type": "text",
+      "heading": "Why ‘non-clonal’ matters",
+      "text": "Some organisms, such as the aspen grove Pando in Utah, are far older as a whole but keep replacing their stems. Methuselah is a single trunk that has stood for nearly five millennia, which is why it counts as the oldest living individual rather than the oldest clone."
+    }
+  ],
+  "tags": ["trees", "bristlecone", "records", "california"],
+  "source": { "label": "Wikipedia: Great Basin bristlecone pine", "url": "https://en.wikipedia.org/wiki/Great_Basin_bristlecone_pine" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

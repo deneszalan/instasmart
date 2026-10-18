@@ -1,0 +1,58 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-hyoid-floating-bone",
+  "field": "body",
+  "title": "One bone in your body touches no other bone: the hyoid, floating in your throat",
+  "emoji": "🦴",
+  "body": "The hyoid is a small U-shaped bone in the front of the neck, between the chin and the thyroid cartilage. It is the **only bone in the human body not connected to any other bone**: it is held in place entirely by muscles and ligaments. Those attachments let it anchor the tongue, help with swallowing and keep the upper airway open, including during sleep. A roughly 60,000-year-old Neanderthal hyoid from Kebara Cave in Israel looks much like ours, which some researchers take as a hint that Neanderthals could speak, though others dispute what its shape can tell us.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Zungenbein_Homo_neanderthalensis_Kebara_a.jpg/960px-Zungenbein_Homo_neanderthalensis_Kebara_a.jpg",
+    "alt": "A fossil hyoid bone, U-shaped and yellow-brown, displayed against a dark blue background at the Neanderthal Museum in Mettmann",
+    "credit": "Thilo Parg · CC BY-SA 4.0"
+  },
+  "slides": [
+    {
+      "type": "sort",
+      "heading": "Hyoid: fact or myth?",
+      "bins": ["Fact", "Myth"],
+      "items": [
+        { "text": "It is joined to the jaw by a joint", "bin": 1 },
+        { "text": "It helps keep the airway open during sleep", "bin": 0 },
+        { "text": "It is one solid bone from birth", "bin": 1 },
+        { "text": "Woodpeckers' hyoids wrap around their skulls", "bin": 0 }
+      ],
+      "explanation": "The hyoid meets other bones only through muscles and ligaments, and its body and greater horns stay joined by fibrous tissue until middle age."
+    },
+    {
+      "type": "list",
+      "heading": "What the hyoid does",
+      "style": "bullets",
+      "items": [
+        "Anchors tongue muscles from several directions",
+        "Helps you swallow",
+        "Supports breathing and keeps the upper airway open",
+        "Its position is linked to obstructive sleep apnoea"
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "Whose roughly 60,000-year-old hyoid, found in Kebara Cave in Israel, reignited the debate over whether they could speak?",
+      "answer": "A Neanderthal's",
+      "detail": "The bone looks modern, leading some researchers to argue that Neanderthals had a descended larynx and human-like speech. Others say hyoid shape does not reveal where the larynx sat."
+    },
+    {
+      "type": "text",
+      "heading": "A bone that comes together slowly",
+      "text": "The hyoid ossifies from six centres: two for the body and one for each of its greater and lesser horns. The greater horns start to harden near the end of fetal life, the lesser horns only in the first or second year after birth, and the body and greater horns are usually joined by fibrous tissue until middle age."
+    },
+    {
+      "type": "text",
+      "heading": "Hyoids across the animal kingdom",
+      "text": "In fish the hyoid comes from the second gill arch. Mammals have two pairs of horns and birds one. Woodpeckers have elongated hyoids that wrap around the skull, and howler monkeys carry a hollow, air-filled hyoid."
+    }
+  ],
+  "tags": ["bones", "throat", "anatomy", "neanderthals"],
+  "source": { "label": "Wikipedia: Hyoid bone", "url": "https://en.wikipedia.org/wiki/Hyoid_bone" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

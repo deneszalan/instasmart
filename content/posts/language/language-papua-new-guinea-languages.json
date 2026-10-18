@@ -1,0 +1,67 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "language-papua-new-guinea-languages",
+  "field": "language",
+  "title": "Papua New Guinea has about 840 living languages, more than any other country",
+  "emoji": "🗣️",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Lower_Tari_Valley_-_8605496865.jpg/960px-Lower_Tari_Valley_-_8605496865.jpg",
+    "alt": "A misty green valley and forested mountains in the Lower Tari Valley, Hela Province, in the highlands of Papua New Guinea.",
+    "credit": "sussexbirder · CC BY 2.0"
+  },
+  "body": "Ethnologue counts 840 living languages in Papua New Guinea, a country of roughly 12 million people by official estimates, which makes it the most linguistically diverse country in the world; the exact number depends on where you draw the line between a language and a dialect. Most are Papuan languages, alongside Austronesian languages, and the country’s highly mountainous geography kept a scattered rural population apart, so languages multiplied in isolation. To talk across the gaps, people use Tok Pisin, an English-based creole, which with English, Hiri Motu and Papua New Guinean Sign Language is one of four languages with official status.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Language or dialect?",
+      "text": "The count is not exact. Ethnologue lists 840 living languages; in 2006 the prime minister, Michael Somare, put it at 832 ‘languages, not dialects’. Either way, it is well ahead of any other country."
+    },
+    {
+      "type": "list",
+      "heading": "Four languages with official status",
+      "style": "bullets",
+      "items": [
+        "Tok Pisin: an English-based creole, the everyday lingua franca",
+        "English: government, schools and formal writing",
+        "Hiri Motu: read by under 5% of people in 2011",
+        "Papua New Guinean Sign Language: official since May 2015"
+      ]
+    },
+    {
+      "type": "rank",
+      "heading": "Who could read which language in the 2011 census?",
+      "items": [
+        { "label": "Tok Pisin", "value": 68.4 },
+        { "label": "English", "value": 39.9 },
+        { "label": "Hiri Motu", "value": 4.7 }
+      ],
+      "unit": "%",
+      "note": "Share of people over 10 literate in each language, 2011 census",
+      "explanation": "Tok Pisin is the most widely read: 68.4% could read it, against 39.9% for English and 4.7% for Hiri Motu."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Lae_War_Cemetery_TokPisin_sign_at_front_gate.jpg/960px-Lae_War_Cemetery_TokPisin_sign_at_front_gate.jpg",
+      "alt": "A sign written in Tok Pisin at the front gate of Lae War Cemetery in Papua New Guinea.",
+      "caption": "A notice in Tok Pisin, the creole most Papua New Guineans share, at the gate of Lae War Cemetery.",
+      "fit": "cover",
+      "credit": "Phenss · CC BY-SA 3.0"
+    },
+    {
+      "type": "quiz",
+      "question": "What is Tok Pisin?",
+      "options": [
+        "An English-based creole",
+        "The largest Papuan language",
+        "A sign language",
+        "A dialect of Hiri Motu"
+      ],
+      "answer": 0,
+      "explanation": "Tok Pisin is an English-based creole and the most widely used language in the country. Standard English is used in government, education and formal writing."
+    }
+  ],
+  "tags": ["diversity", "creole", "oceania"],
+  "source": { "label": "Wikipedia: Languages of Papua New Guinea", "url": "https://en.wikipedia.org/wiki/Languages_of_Papua_New_Guinea" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "psychology-hawthorne-effect",
+  "field": "psychology",
+  "title": "The Hawthorne effect, taught in every textbook, barely shows up in the original data",
+  "emoji": "🏭",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Hawthorne_Works_tower_2012_1.JPG/960px-Hawthorne_Works_tower_2012_1.JPG",
+    "alt": "A brick tower bearing the name Hawthorne Works, the last remaining part of the Western Electric factory in Cicero, Illinois.",
+    "credit": "MrHarman · CC BY-SA 3.0"
+  },
+  "body": "Between 1924 and 1932, researchers at Western Electric’s Hawthorne Works near Chicago changed the lighting, rest breaks and working hours of small groups of workers. Output seemed to rise whatever they did, even when a change simply put things back as they were. The lesson that people perform better just because they are being watched became the ‘Hawthorne effect’, a name coined in the 1950s. But when the economists Steven Levitt and John List found the original lighting data on microfilm in 2011, they saw only slight evidence of the effect, ‘in no way as drastic as suggested initially’. The idea survives in research design; the famous study behind it does not hold up well.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Hawthorne%2C_Illinois_Works_of_the_Western_Electric_Company%2C_1925.jpg/960px-Hawthorne%2C_Illinois_Works_of_the_Western_Electric_Company%2C_1925.jpg",
+      "alt": "A 1925 black-and-white panoramic photograph of the sprawling factory buildings of the Western Electric Company’s Hawthorne Works.",
+      "caption": "The Hawthorne Works in 1925. The plant made telephone equipment; the studies ran there from 1924 to 1932.",
+      "fit": "cover",
+      "credit": "Western Electric Company · Public domain"
+    },
+    {
+      "type": "timeline",
+      "heading": "From factory floor to textbook",
+      "events": [
+        { "when": "1924", "text": "Lighting experiments begin; output rises in both rooms" },
+        { "when": "1927", "text": "Six women assemble relays under changing breaks and hours" },
+        { "when": "2011", "text": "Levitt and List re-analyse the lighting data: only slight evidence" }
+      ]
+    },
+    {
+      "type": "flow",
+      "heading": "The pattern that fooled everyone",
+      "steps": [
+        { "icon": "💡", "label": "Change something: light, breaks, hours" },
+        { "icon": "📈", "label": "Output goes up" },
+        { "icon": "↩️", "label": "Undo the change" },
+        { "icon": "📈", "label": "Output still goes up" },
+        { "icon": "🤔", "label": "Conclusion: attention itself did it" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "When the test room’s light was cut to about moonlight levels, what happened?",
+      "options": [
+        "Output finally dropped",
+        "Output kept rising",
+        "Workers walked out",
+        "Nothing changed"
+      ],
+      "answer": 0,
+      "explanation": "Productivity rose in both the test and control rooms through most changes, and fell in the test room only when the light dropped to roughly moonlight. Lighting itself was not driving output."
+    },
+    {
+      "type": "compare",
+      "heading": "Legend vs data",
+      "left": { "label": "Legend", "text": "Workers produced more whatever the researchers did, simply because someone was paying attention." },
+      "right": { "label": "Data", "text": "Levitt and List, 2011: slight evidence over the long run, nothing like the dramatic effect in the textbooks." }
+    },
+    {
+      "type": "text",
+      "heading": "Why it matters",
+      "text": "Researchers still plan for a Hawthorne effect: being observed can change behaviour, and good studies control for it. The surprise is how thin the evidence from Hawthorne itself is. Richard Nisbett called it ‘a glorified anecdote’; John List still believes the effect is real, just much smaller than the legend."
+    },
+    {
+      "type": "reveal",
+      "prompt": "The Hawthorne effect got its name decades after the studies. When?",
+      "answer": "In the 1950s",
+      "detail": "John R. P. French is credited with the term in 1953, and Henry Landsberger’s 1958 book Hawthorne Revisited with popularising the interpretation."
+    }
+  ],
+  "tags": ["workplace", "experiments", "replication"],
+  "source": { "label": "Wikipedia: Hawthorne effect", "url": "https://en.wikipedia.org/wiki/Hawthorne_effect" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}
