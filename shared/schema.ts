@@ -69,6 +69,11 @@ export const StatSlide = z
   })
   .strict();
 
+/** Rough number of lines a piece of text takes on a phone-width slide. */
+const lines = (value: string, perLine: number) => Math.max(1, Math.ceil(value.length / perLine));
+/** How many such lines fit on one slide below its heading. */
+const SLIDE_LINES = 12;
+
 export const ListSlide = z
   .object({
     type: z.literal('list'),
@@ -76,7 +81,17 @@ export const ListSlide = z
     style: z.enum(['bullets', 'numbers', 'steps']).optional(),
     items: z.array(text(110)).min(2).max(6),
   })
-  .strict();
+  .strict()
+  .superRefine((slide, ctx) => {
+    const rows = slide.items.reduce((n, item) => n + lines(item, 30), 0);
+    if (rows > SLIDE_LINES) {
+      ctx.addIssue({
+        code: 'custom',
+        path: ['items'],
+        message: `Too much text for one slide: about ${rows} lines, and ${SLIDE_LINES} fit. Shorten the items or use fewer.`,
+      });
+    }
+  });
 
 export const QuoteSlide = z
   .object({
@@ -106,7 +121,18 @@ export const TimelineSlide = z
       .min(2)
       .max(5),
   })
-  .strict();
+  .strict()
+  .superRefine((slide, ctx) => {
+    // Each event takes a line for its date plus its text.
+    const rows = slide.events.reduce((n, e) => n + 1 + lines(e.text, 34), 0);
+    if (rows > SLIDE_LINES) {
+      ctx.addIssue({
+        code: 'custom',
+        path: ['events'],
+        message: `Too much text for one slide: about ${rows} lines, and ${SLIDE_LINES} fit. Shorten the events or use fewer.`,
+      });
+    }
+  });
 
 export const Slide = z.discriminatedUnion('type', [
   TextSlide,

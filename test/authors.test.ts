@@ -20,6 +20,8 @@ describe('authorGroup', () => {
     [{ name: 'chatgpt', kind: 'ai' as const }, 'chatgpt'],
     [{ name: 'Chat-GPT', kind: 'ai' as const }, 'chatgpt'],
     [{ name: 'OpenAI', kind: 'ai' as const, model: 'GPT-5' }, 'chatgpt'],
+    [{ name: 'Fable', kind: 'ai' as const }, 'fable'],
+    [{ name: 'fable', kind: 'ai' as const, model: 'Fable 5.1' }, 'fable'],
     [{ name: 'Claude', kind: 'ai' as const }, 'claude'],
     [{ name: 'Anthropic', kind: 'ai' as const, model: 'Claude Opus' }, 'claude'],
     [{ name: 'Gemini', kind: 'ai' as const }, 'ai'],
@@ -37,6 +39,7 @@ describe('badgeLabel', () => {
   it('names known AI writers, says "AI" for others and shows nothing for people', () => {
     expect(badgeLabel(authorGroup(card({ name: 'ChatGPT', kind: 'ai' }))!)).toBe('ChatGPT');
     expect(badgeLabel(authorGroup(card({ name: 'Claude', kind: 'ai' }))!)).toBe('Claude');
+    expect(badgeLabel(authorGroup(card({ name: 'Fable', kind: 'ai' }))!)).toBe('Fable');
     expect(badgeLabel(authorGroup(card({ name: 'Gemini', kind: 'ai' }))!)).toBe('AI');
     expect(badgeLabel(authorGroup(card({ name: 'Ada', kind: 'human' }))!)).toBeNull();
   });
@@ -47,6 +50,7 @@ describe('authorFilters', () => {
     expect(authorFilters([card({ name: 'Claude', kind: 'ai' })])).toEqual([
       { id: 'claude', label: 'Claude', count: 1 },
       { id: 'chatgpt', label: 'ChatGPT', count: 0 },
+      { id: 'fable', label: 'Fable', count: 0 },
     ]);
     const mixed = authorFilters([
       card({ name: 'ChatGPT', kind: 'ai' }),
@@ -57,6 +61,7 @@ describe('authorFilters', () => {
     expect(mixed.map((f) => [f.id, f.count])).toEqual([
       ['claude', 0],
       ['chatgpt', 2],
+      ['fable', 0],
       ['ai', 1],
       ['people', 1],
     ]);

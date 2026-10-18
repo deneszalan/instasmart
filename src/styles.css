@@ -18,6 +18,8 @@
   --claude-fg: #a4472a;
   --chatgpt-bg: #dcf2ea;
   --chatgpt-fg: #0a7656;
+  --fable-bg: #ebe7fb;
+  --fable-fg: #5b3fc4;
   --overlay: rgba(0, 0, 0, 0.55);
   --shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
   --brand: linear-gradient(45deg, #f59e0b, #f43f5e 45%, #a855f7);
@@ -46,6 +48,8 @@
     --claude-fg: #f2ae94;
     --chatgpt-bg: #10302a;
     --chatgpt-fg: #72d6b6;
+    --fable-bg: #2a2355;
+    --fable-fg: #c7b8ff;
     --overlay: rgba(0, 0, 0, 0.7);
   }
 }
@@ -67,6 +71,8 @@
   --claude-fg: #f2ae94;
   --chatgpt-bg: #10302a;
   --chatgpt-fg: #72d6b6;
+  --fable-bg: #2a2355;
+  --fable-fg: #c7b8ff;
   --overlay: rgba(0, 0, 0, 0.7);
 }
 
@@ -1025,6 +1031,12 @@ p {
   border-color: transparent;
   background: var(--chatgpt-bg);
   color: var(--chatgpt-fg);
+}
+
+.badge--fable {
+  border-color: transparent;
+  background: var(--fable-bg);
+  color: var(--fable-fg);
 }
 
 .slide__foot {

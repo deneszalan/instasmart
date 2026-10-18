@@ -7,5 +7,7 @@ export default defineConfig({
   base: './',
   test: {
     environment: 'node',
+    // The library is an import.meta.glob over content/; a cached transform would miss newly added posts.
+    fsModuleCache: false,
   },
 });

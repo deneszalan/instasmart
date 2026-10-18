@@ -89,6 +89,20 @@ describe('validateContent', () => {
     expect(text).toContain('not valid JSON');
   });
 
+  it('rejects lists and timelines too tall for a phone-sized slide', () => {
+    const long = 'A sentence that runs on for about eighty characters to fill two or three lines.';
+    const tall = (slide: object) =>
+      validateContent([file('content/posts/space/space-test-post.json', JSON.stringify(post({ slides: [slide] })))]).problems.map((p) => p.message);
+    expect(tall({ type: 'timeline', events: Array.from({ length: 5 }, (_, i) => ({ when: `${1900 + i}`, text: long })) })).toEqual([
+      'slides[0].events: Too much text for one slide: about 20 lines, and 12 fit. Shorten the events or use fewer.',
+    ]);
+    expect(tall({ type: 'list', items: Array.from({ length: 6 }, () => long) })).toEqual([
+      'slides[0].items: Too much text for one slide: about 18 lines, and 12 fit. Shorten the items or use fewer.',
+    ]);
+    expect(tall({ type: 'timeline', events: Array.from({ length: 5 }, (_, i) => ({ when: `${1900 + i}`, text: 'One short line' })) })).toEqual([]);
+    expect(tall({ type: 'list', items: Array.from({ length: 6 }, () => 'A short item') })).toEqual([]);
+  });
+
   it('turns schema errors into readable messages', () => {
     const { problems } = validateContent([
       file('content/posts/space/space-test-post.json', JSON.stringify(post({ tags: ['#Space'], slides: [{ type: 'list', items: ['one'] }] }))),

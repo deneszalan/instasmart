@@ -68,6 +68,7 @@ The app shows a badge with the writer's name on each AI-written post, and reader
 | --- | --- |
 | Claude | `{ "name": "Claude", "kind": "ai" }` |
 | ChatGPT | `{ "name": "ChatGPT", "kind": "ai" }` |
+| Fable | `{ "name": "Fable", "kind": "ai" }` |
 | Another AI | `{ "name": "<its name>", "kind": "ai" }`: shown with a plain AI badge |
 | A person | `{ "name": "<their name>", "kind": "human" }`: no badge |
 
@@ -88,6 +89,8 @@ Each slide is a 4:5 card on the post's gradient. Pick the type that fits the ide
 | `image` | A photo or a diagram | `{ "type": "image", "src": "orbit.svg", "alt": "…", "caption"?: "≤200", "fit"?: "cover" \| "contain", "credit"?: "≤120" }` |
 
 Use `"fit": "cover"` for photos (they fill the card) and `"fit": "contain"` for diagrams (the whole image shows on the gradient).
+
+A slide is phone-sized, so `list` and `timeline` slides must stay short: about 12 lines in total, where a timeline date counts as a line and a line holds roughly 34 characters (30 in a list). `npm run content` checks this and tells you by how much to cut.
 
 ## Images
 
