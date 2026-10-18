@@ -41,6 +41,22 @@
       ]
     },
     {
+      "type": "place",
+      "question": "By tradition, in what year did the Mexica found Tenochtitlan on its island?",
+      "min": 1000,
+      "max": 1500,
+      "step": 1,
+      "answer": 1325,
+      "format": "year",
+      "ends": ["Earlier", "Later"],
+      "hints": [
+        { "label": "Magna Carta", "value": 1215 },
+        { "label": "Black Death", "value": 1347 },
+        { "label": "Columbus sails", "value": 1492 }
+      ],
+      "explanation": "1325, by tradition: when Cortés arrived in 1519 the city was less than two centuries old, yet already home to 200,000 people or more."
+    },
+    {
       "type": "timeline",
       "events": [
         { "when": "1325", "text": "Traditional founding date of the Mexica city on the island" },

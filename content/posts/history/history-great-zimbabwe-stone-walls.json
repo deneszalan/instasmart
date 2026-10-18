@@ -23,7 +23,7 @@
       "text": "They extend for roughly 250 metres with no mortar at all: the stones are simply fitted together."
     },
     {
-      "type": "chart",
+      "type": "rank",
       "heading": "Walls and tower of the Great Enclosure, in metres",
       "items": [
         {
@@ -41,7 +41,8 @@
         }
       ],
       "unit": "m",
-      "note": "The outer wall runs for about 250 m; the Conical Tower stands between the inner and outer walls."
+      "note": "The outer wall runs for about 250 m; the Conical Tower stands between the inner and outer walls.",
+      "explanation": "The wall outdoes the tower: 11 m against 9 m. The Conical Tower is 5.5 m across at its base."
     },
     {
       "type": "timeline",

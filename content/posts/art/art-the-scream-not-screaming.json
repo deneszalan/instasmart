@@ -66,6 +66,34 @@
       "text": "The road overlooks Oslo and the Oslofjord from the hill of Ekeberg. At the foot of the hill stood the asylum where Munch’s sister was a patient when he painted it."
     },
     {
+      "type": "place",
+      "question": "In what year was The Scream first stolen?",
+      "min": 1890,
+      "max": 2010,
+      "step": 1,
+      "format": "year",
+      "ends": [
+        "Earlier",
+        "Later"
+      ],
+      "answer": 1994,
+      "hints": [
+        {
+          "label": "Painted",
+          "value": 1893
+        },
+        {
+          "label": "Munch dies",
+          "value": 1944
+        },
+        {
+          "label": "Munch Museum",
+          "value": 1963
+        }
+      ],
+      "explanation": "1994: thieves took it from Oslo’s National Gallery on 12 February, the opening day of the Lillehammer Winter Olympics, and left a note: ‘Thanks for the poor security’. It was recovered that May."
+    },
+    {
       "type": "timeline",
       "heading": "Stolen twice",
       "events": [

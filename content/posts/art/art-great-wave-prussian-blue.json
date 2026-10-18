@@ -7,6 +7,34 @@
   "body": "Hokusai made The Great Wave off Kanagawa around 1831, when he was about 70, and its deep blue is Prussian blue. The pigment was probably first made by accident around 1706, when the Berlin paint maker Johann Jacob Diesbach used potash tainted with blood while trying to produce a red. Imported into Japan, it gave printmakers a long-lasting blue and helped make his Thirty-six Views of Mount Fuji a hit.",
   "slides": [
     {
+      "type": "place",
+      "question": "Roughly when did a Berlin paint maker first make Prussian blue, by accident?",
+      "min": 1600,
+      "max": 1900,
+      "step": 1,
+      "format": "year",
+      "ends": [
+        "Earlier",
+        "Later"
+      ],
+      "answer": 1706,
+      "hints": [
+        {
+          "label": "Great Fire",
+          "value": 1666
+        },
+        {
+          "label": "Hokusai born",
+          "value": 1760
+        },
+        {
+          "label": "The Great Wave",
+          "value": 1831
+        }
+      ],
+      "explanation": "Around 1706, when Diesbach’s potash turned out to be tainted with blood: half a century before Hokusai was born and 125 years before the Great Wave. It gave Japan’s printmakers a lasting blue."
+    },
+    {
       "type": "reveal",
       "prompt": "A Berlin paint maker got this blue by accident. What had tainted his potash?",
       "answer": "Blood",

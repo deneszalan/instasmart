@@ -33,6 +33,33 @@
       ]
     },
     {
+      "type": "place",
+      "question": "On the Volcanic Explosivity Index, which runs from 0 to 8, where does Tambora’s 1815 eruption sit?",
+      "min": 0,
+      "max": 8,
+      "step": 1,
+      "answer": 7,
+      "ends": [
+        "Effusive",
+        "Mega-colossal"
+      ],
+      "hints": [
+        {
+          "label": "Iceland 2010",
+          "value": 4
+        },
+        {
+          "label": "St Helens 1980",
+          "value": 5
+        },
+        {
+          "label": "Krakatoa 1883",
+          "value": 6
+        }
+      ],
+      "explanation": "VEI 7, a step above Krakatoa and Pinatubo, and the most recent confirmed VEI-7 eruption. It threw out at least 37 cubic kilometres of dense rock, and the haze cooled the globe by 0.4 to 0.7 °C."
+    },
+    {
       "type": "quiz",
       "question": "How did an eruption in Indonesia end up shaping a novel begun in Switzerland?",
       "options": [

@@ -30,39 +30,36 @@
       "text": "Janszoon’s crew went ashore on the Gulf of Carpentaria side of Cape York, near where Weipa stands today."
     },
     {
-      "type": "spectrum",
-      "heading": "Europeans reach Australia",
+      "type": "place",
+      "question": "When did Dirk Hartog make the first recorded European landfall on Australia’s west coast?",
       "min": 1600,
       "max": 1800,
+      "step": 1,
       "format": "year",
       "ends": [
         "Earlier",
         "Later"
       ],
-      "marks": [
+      "answer": 1616,
+      "hints": [
         {
-          "label": "Janszoon lands, Cape York",
-          "value": 1606,
-          "emphasis": true
+          "label": "Janszoon",
+          "value": 1606
         },
         {
-          "label": "Hartog lands, Shark Bay",
-          "value": 1616
-        },
-        {
-          "label": "Tasman sights Tasmania",
+          "label": "Tasman",
           "value": 1642
         },
         {
-          "label": "Cook lands, Botany Bay",
+          "label": "Cook",
           "value": 1770
         },
         {
-          "label": "The First Fleet arrives",
+          "label": "First Fleet",
           "value": 1788
         }
       ],
-      "note": "Dirk Hartog made the first landfall on the west coast; Abel Tasman named Van Diemen’s Land."
+      "explanation": "1616, only a decade after Janszoon: Hartog landed at Shark Bay and left an inscribed pewter plate. Tasman sighted Van Diemen’s Land in 1642, and Cook reached Botany Bay only in 1770."
     },
     {
       "type": "compare",

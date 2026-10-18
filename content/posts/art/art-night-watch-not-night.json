@@ -40,6 +40,34 @@
       ]
     },
     {
+      "type": "place",
+      "question": "How wide is the Night Watch today, in centimetres?",
+      "min": 0,
+      "max": 700,
+      "step": 1,
+      "answer": 437,
+      "unit": "cm",
+      "ends": [
+        "Narrow",
+        "Wide"
+      ],
+      "hints": [
+        {
+          "label": "Mona Lisa",
+          "value": 53
+        },
+        {
+          "label": "Starry Night",
+          "value": 92.1
+        },
+        {
+          "label": "Las Meninas",
+          "value": 276
+        }
+      ],
+      "explanation": "437 cm wide and 363 cm tall, even after it was trimmed in 1715. By area, almost 40 Mona Lisas would fit on the canvas."
+    },
+    {
       "type": "stat",
       "value": "363 × 437 cm",
       "label": "the painting’s size today, after the 1715 trimming",

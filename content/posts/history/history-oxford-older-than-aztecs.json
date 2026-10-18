@@ -7,35 +7,28 @@
   "body": "Teaching was already happening at Oxford by 1096, and the university grew quickly after 1167. The Mexica founded their island city of Tenochtitlan around 1325, and the Triple Alliance we call the Aztec Empire only formed in 1428. We tend to file the Aztecs under ‘ancient’ and Oxford under ‘modern’, but Oxford was already more than 300 years old when the alliance was born.",
   "slides": [
     {
-      "type": "spectrum",
-      "heading": "Oxford and the Aztecs on one timeline",
+      "type": "place",
+      "question": "By what year was teaching already under way at Oxford?",
       "min": 1050,
       "max": 1450,
+      "step": 1,
       "format": "year",
       "ends": [
         "Earlier",
         "Later"
       ],
-      "marks": [
+      "answer": 1096,
+      "hints": [
         {
-          "label": "Teaching at Oxford",
-          "value": 1096,
-          "emphasis": true
+          "label": "Magna Carta",
+          "value": 1215
         },
         {
-          "label": "Oxford grows after 1167",
-          "value": 1167
-        },
-        {
-          "label": "Tenochtitlan founded",
+          "label": "Tenochtitlan",
           "value": 1325
-        },
-        {
-          "label": "Aztec Triple Alliance",
-          "value": 1428
         }
       ],
-      "note": "Oxford was more than 300 years old when the Triple Alliance formed."
+      "explanation": "By 1096, and the university grew quickly after 1167. Tenochtitlan was founded around 1325 and the Aztec Triple Alliance formed only in 1428, when Oxford was already more than 300 years old."
     },
     {
       "type": "quiz",

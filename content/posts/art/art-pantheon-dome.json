@@ -7,16 +7,11 @@
   "body": "Rebuilt under Emperor Hadrian and probably dedicated around AD 126, the Pantheon in Rome still has the largest unreinforced concrete dome in the world. Its interior is 43.3 meters wide and exactly as tall, so a perfect sphere would fit inside. Roman builders made the concrete lighter toward the top, moving from heavy travertine to porous tufa and pumice, and left an open oculus at the crown.",
   "slides": [
     {
-      "type": "chart",
+      "type": "rank",
       "heading": "The Pantheon’s dome in metres",
       "items": [
         {
           "label": "Width of the interior",
-          "value": 43.3,
-          "emphasis": true
-        },
-        {
-          "label": "Floor to oculus",
           "value": 43.3,
           "emphasis": true
         },
@@ -34,7 +29,8 @@
         }
       ],
       "unit": "m",
-      "note": "Equal width and height: a 43.3-metre sphere would fit inside. The concrete thins toward the top."
+      "note": "Equal width and height: a 43.3-metre sphere would fit inside. The concrete thins toward the top.",
+      "explanation": "The oculus is wider than the concrete is thick at the dome’s base, 9.1 m against 6.4 m, and the shell thins to 1.2 m around the opening."
     },
     {
       "type": "quiz",
