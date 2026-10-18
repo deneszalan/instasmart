@@ -1,0 +1,195 @@
+import { z } from 'zod';
+import { FIELD_IDS } from './fields.ts';
+
+/**
+ * The content format for every post in content/posts/. Shared by the app,
+ * the `npm run content` validator and the MCP upload server.
+ */
+
+/** Hosts that posts may link images from directly. Anything else must be committed under content/media/. */
+export const IMAGE_HOSTS = ['upload.wikimedia.org', 'thumb.wikimedia.org'];
+
+export const MEDIA_EXTENSIONS = ['png', 'jpg', 'jpeg', 'webp', 'gif', 'avif', 'svg'] as const;
+
+const MEDIA_NAME = new RegExp(`^[a-z0-9][a-z0-9_-]*\\.(${MEDIA_EXTENSIONS.join('|')})$`);
+
+const text = (max: number) => z.string().trim().min(1).max(max);
+
+const hexColor = z.string().regex(/^#[0-9a-fA-F]{6}$/, 'Use a 6-digit hex colour such as #1d4ed8');
+
+const httpsUrl = z.url({ protocol: /^https$/, error: 'Use a full https:// URL' });
+
+/** A file in the post's media folder (content/media/<post-id>/<name>) or an image on an allowed host. */
+export const ImageSrc = z
+  .string()
+  .refine(
+    (src) => {
+      if (MEDIA_NAME.test(src)) return true;
+      try {
+        const url = new URL(src);
+        return url.protocol === 'https:' && IMAGE_HOSTS.includes(url.hostname);
+      } catch {
+        return false;
+      }
+    },
+    {
+      error: `Use a file name from content/media/<post-id>/ (lowercase, e.g. "diagram.svg"; allowed: ${MEDIA_EXTENSIONS.join(', ')}) or an https URL on ${IMAGE_HOSTS.join(', ')}`,
+    },
+  )
+  .describe('File name in content/media/<post-id>/, e.g. "diagram.svg", or an https:// URL on upload.wikimedia.org or thumb.wikimedia.org');
+
+export const TextSlide = z
+  .object({
+    type: z.literal('text'),
+    heading: text(40).optional(),
+    text: text(320).describe('Supports **bold**, *italic* and [links](https://…).'),
+  })
+  .strict();
+
+export const ImageSlide = z
+  .object({
+    type: z.literal('image'),
+    src: ImageSrc,
+    alt: text(300).describe('What the image shows, for screen readers.'),
+    caption: text(200).optional(),
+    fit: z
+      .enum(['cover', 'contain'])
+      .optional()
+      .describe('"cover" fills the slide (photos); "contain" shows the whole image on the field colours (diagrams). Default cover.'),
+    credit: text(120).optional().describe('Photographer / licence, e.g. "NASA · Public domain".'),
+  })
+  .strict();
+
+export const StatSlide = z
+  .object({
+    type: z.literal('stat'),
+    value: text(16).describe('The big number, e.g. "86 billion" or "3×".'),
+    label: text(90).describe('What the number counts.'),
+    text: text(220).optional(),
+  })
+  .strict();
+
+export const ListSlide = z
+  .object({
+    type: z.literal('list'),
+    heading: text(40).optional(),
+    style: z.enum(['bullets', 'numbers', 'steps']).optional(),
+    items: z.array(text(110)).min(2).max(6),
+  })
+  .strict();
+
+export const QuoteSlide = z
+  .object({
+    type: z.literal('quote'),
+    text: text(240).describe('A real, verifiable quotation. Never invent or misattribute quotes.'),
+    attribution: text(80).optional(),
+  })
+  .strict();
+
+const CompareSide = z.object({ label: text(24), text: text(160) }).strict();
+
+export const CompareSlide = z
+  .object({
+    type: z.literal('compare'),
+    heading: text(40).optional(),
+    left: CompareSide.describe('e.g. { "label": "Myth", ... }'),
+    right: CompareSide.describe('e.g. { "label": "Fact", ... }'),
+  })
+  .strict();
+
+export const TimelineSlide = z
+  .object({
+    type: z.literal('timeline'),
+    heading: text(40).optional(),
+    events: z
+      .array(z.object({ when: text(24), text: text(110) }).strict())
+      .min(2)
+      .max(5),
+  })
+  .strict();
+
+export const Slide = z.discriminatedUnion('type', [
+  TextSlide,
+  ImageSlide,
+  StatSlide,
+  ListSlide,
+  QuoteSlide,
+  CompareSlide,
+  TimelineSlide,
+]);
+
+export const Source = z.object({ label: text(120), url: httpsUrl }).strict();
+
+export const Post = z
+  .object({
+    $schema: z.string().optional(),
+    id: z
+      .string()
+      .regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'Use lowercase kebab-case, e.g. "physics-mpemba-effect"')
+      .max(80)
+      .describe('`<field>-<slug>`. Also the file name: content/posts/<field>/<id>.json'),
+    field: z.enum(FIELD_IDS),
+    title: text(90).describe('The hook shown big on the first slide: a surprising, complete statement.'),
+    emoji: text(16).describe('One emoji illustrating the post.'),
+    cover: z
+      .object({ src: ImageSrc, alt: text(300), credit: text(120).optional() })
+      .strict()
+      .optional()
+      .describe('Optional photo behind the title on the first slide.'),
+    body: text(1200).min(80).describe('The caption: 2–5 sentences explaining why or how. Supports **bold**, *italic*, [links](https://…).'),
+    slides: z.array(Slide).max(9).optional().describe('Extra carousel slides after the title slide.'),
+    tags: z
+      .array(z.string().regex(/^[a-z0-9]+$/, 'Tags are lowercase letters and digits, without "#"').max(30))
+      .min(1)
+      .max(6),
+    source: Source.describe('Where a reader can check the claim. Prefer Wikipedia or a primary/academic source.'),
+    theme: z
+      .object({ gradient: z.tuple([hexColor, hexColor]) })
+      .strict()
+      .optional()
+      .describe('Override the field colours. Pick dark enough colours for white text.'),
+    author: z
+      .object({
+        name: text(60),
+        kind: z.enum(['ai', 'human']),
+        model: text(60).optional(),
+      })
+      .strict()
+      .optional()
+      .describe('Who wrote it. LLM contributors use kind "ai".'),
+    createdAt: z
+      .string()
+      .regex(/^\d{4}-\d{2}-\d{2}$/, 'Use YYYY-MM-DD')
+      .optional(),
+  })
+  .strict()
+  .superRefine((post, ctx) => {
+    if (!post.id.startsWith(`${post.field}-`)) {
+      ctx.addIssue({ code: 'custom', path: ['id'], message: `id must start with "${post.field}-"` });
+    }
+  });
+
+export type Post = z.infer<typeof Post>;
+export type Slide = z.infer<typeof Slide>;
+export type Source = z.infer<typeof Source>;
+
+/** Every image file name a post refers to (excluding allowed remote URLs). */
+export function localMedia(post: Post): string[] {
+  const srcs = [post.cover?.src, ...(post.slides ?? []).map((s) => (s.type === 'image' ? s.src : undefined))];
+  return [...new Set(srcs.filter((s): s is string => !!s && !s.startsWith('https://')))];
+}
+
+export function formatIssues(error: z.ZodError): string[] {
+  return error.issues.map((issue) => {
+    const path = issue.path.map((p) => (typeof p === 'number' ? `[${p}]` : `.${String(p)}`)).join('').replace(/^\./, '');
+    return path ? `${path}: ${issue.message}` : issue.message;
+  });
+}
+
+export function postJsonSchema(): unknown {
+  return {
+    $id: 'https://github.com/deneszalan/instasmart/content/schema/post.schema.json',
+    title: 'InstaSmart post',
+    ...(z.toJSONSchema(Post, { io: 'input', unrepresentable: 'any' }) as object),
+  };
+}

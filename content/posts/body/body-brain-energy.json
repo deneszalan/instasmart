@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-brain-energy",
+  "field": "body",
+  "title": "Your brain is about 2% of your weight but uses about 20% of your energy",
+  "emoji": "🧠",
+  "body": "An adult brain weighs roughly 1.2 to 1.4 kilograms, yet it uses around a fifth of the body’s energy, more than any other organ. Much of that goes into maintaining the electrical gradients across neuron membranes that let them fire and into restoring those gradients after each signal. Because the brain stores very little fuel, it depends on a steady supply of glucose and oxygen from the blood, which is why a brief drop in blood flow to the brain can cause fainting.",
+  "tags": [
+    "brain",
+    "energy",
+    "neuroscience"
+  ],
+  "source": {
+    "label": "Wikipedia: Human brain",
+    "url": "https://en.wikipedia.org/wiki/Human_brain"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

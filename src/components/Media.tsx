@@ -1,8 +1,9 @@
 import { useRef, useState, type CSSProperties } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import type { KnowledgeCard } from '../types';
+import type { KnowledgeCard, Slide } from '../types';
 import type { WikiPost } from '../lib/wiki';
 import { FIELD_BY_ID } from '../data/fields';
+import { inline } from '../lib/markdown';
 
 function titleSize(title: string): string {
   if (title.length <= 36) return 'xl';
@@ -14,25 +15,136 @@ export function gradientStyle(gradient: [string, string]): CSSProperties {
   return { '--c1': gradient[0], '--c2': gradient[1] } as CSSProperties;
 }
 
+/** A post's colours: its own theme if it has one, otherwise its field's. */
+export function cardGradient(card: KnowledgeCard): [string, string] {
+  return card.theme?.gradient ?? FIELD_BY_ID[card.field].gradient;
+}
+
 export function TitleSlide({ card, hasMore }: { card: KnowledgeCard; hasMore?: boolean }) {
   const field = FIELD_BY_ID[card.field];
+  const cover = card.cover;
   return (
-    <div className="slide slide--title" style={gradientStyle(field.gradient)}>
-      <span className="slide__bg-emoji" aria-hidden="true">
-        {card.emoji}
-      </span>
+    <div className={`slide slide--title${cover ? ' slide--cover' : ''}`} style={gradientStyle(cardGradient(card))}>
+      {cover ? (
+        <img className="slide__cover" src={cover.src} alt={cover.alt} loading="lazy" decoding="async" />
+      ) : (
+        <span className="slide__bg-emoji" aria-hidden="true">
+          {card.emoji}
+        </span>
+      )}
       <span className="slide__pill">
         {field.emoji} {field.name}
       </span>
       <div className="slide__center">
-        <div className="slide__emoji" aria-hidden="true">
-          {card.emoji}
-        </div>
+        {!cover && (
+          <div className="slide__emoji" aria-hidden="true">
+            {card.emoji}
+          </div>
+        )}
         <h3 className={`slide__title slide__title--${titleSize(card.title)}`}>{card.title}</h3>
       </div>
       <div className="slide__foot">
-        <span>@{field.handle}</span>
+        <span>{cover?.credit ? `📷 ${cover.credit}` : `@${field.handle}`}</span>
         {hasMore && <span className="slide__swipe">Swipe for more →</span>}
+      </div>
+    </div>
+  );
+}
+
+function SlideBody({ slide }: { slide: Slide }) {
+  switch (slide.type) {
+    case 'text':
+      return (
+        <div className="slide__center">
+          {slide.heading && <p className="slide__heading">{slide.heading}</p>}
+          <p className="slide__text">{inline(slide.text)}</p>
+        </div>
+      );
+
+    case 'stat':
+      return (
+        <div className="slide__center slide__center--stat">
+          <p className="stat__value">{slide.value}</p>
+          <p className="stat__label">{inline(slide.label)}</p>
+          {slide.text && <p className="stat__text">{inline(slide.text)}</p>}
+        </div>
+      );
+
+    case 'list': {
+      const style = slide.style ?? 'bullets';
+      const Tag = style === 'bullets' ? 'ul' : 'ol';
+      return (
+        <div className="slide__center">
+          {slide.heading && <p className="slide__heading">{slide.heading}</p>}
+          <Tag className={`slide-list slide-list--${style}`}>
+            {slide.items.map((item, i) => (
+              <li key={i}>
+                <span className="slide-list__mark" aria-hidden="true">
+                  {style === 'bullets' ? '' : i + 1}
+                </span>
+                <span>{inline(item)}</span>
+              </li>
+            ))}
+          </Tag>
+        </div>
+      );
+    }
+
+    case 'quote':
+      return (
+        <div className="slide__center">
+          <span className="quote__mark" aria-hidden="true">
+            “
+          </span>
+          <blockquote className="quote__text">{inline(slide.text)}</blockquote>
+          {slide.attribution && <p className="quote__by">— {slide.attribution}</p>}
+        </div>
+      );
+
+    case 'compare':
+      return (
+        <div className="slide__center">
+          {slide.heading && <p className="slide__heading">{slide.heading}</p>}
+          <div className="compare">
+            {[slide.left, slide.right].map((side, i) => (
+              <div key={i} className={`compare__side compare__side--${i === 0 ? 'a' : 'b'}`}>
+                <span className="compare__label">{side.label}</span>
+                <p>{inline(side.text)}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+
+    case 'timeline':
+      return (
+        <div className="slide__center">
+          {slide.heading && <p className="slide__heading">{slide.heading}</p>}
+          <ol className="timeline">
+            {slide.events.map((e, i) => (
+              <li key={i}>
+                <span className="timeline__when">{e.when}</span>
+                <span className="timeline__text">{inline(e.text)}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      );
+
+    case 'image':
+      // Rendered by ImageSlideView.
+      return null;
+  }
+}
+
+function ImageSlideView({ slide, card }: { slide: Extract<Slide, { type: 'image' }>; card: KnowledgeCard }) {
+  const fit = slide.fit ?? 'cover';
+  return (
+    <div className={`slide slide--image slide--fit-${fit}`} style={gradientStyle(cardGradient(card))}>
+      <img className="slide-image" src={slide.src} alt={slide.alt} loading="lazy" decoding="async" />
+      <div className="slide-image__text">
+        {slide.caption && <p className="slide-image__caption">{inline(slide.caption)}</p>}
+        {slide.credit && <p className="slide-image__credit">📷 {slide.credit}</p>}
       </div>
     </div>
   );
@@ -41,18 +153,13 @@ export function TitleSlide({ card, hasMore }: { card: KnowledgeCard; hasMore?: b
 function DetailSlide({ card, index, total }: { card: KnowledgeCard; index: number; total: number }) {
   const field = FIELD_BY_ID[card.field];
   const slide = card.slides![index - 1];
+  if (slide.type === 'image') return <ImageSlideView slide={slide} card={card} />;
   return (
-    <div className="slide slide--detail" style={gradientStyle(field.gradient)}>
+    <div className={`slide slide--detail slide--${slide.type}`} style={gradientStyle(cardGradient(card))}>
       <span className="slide__bg-emoji" aria-hidden="true">
         {card.emoji}
       </span>
-      <span className="slide__count">
-        {index + 1}/{total}
-      </span>
-      <div className="slide__center">
-        <p className="slide__heading">{slide.heading}</p>
-        <p className="slide__text">{slide.text}</p>
-      </div>
+      <SlideBody slide={slide} />
       <div className="slide__foot">
         <span>@{field.handle}</span>
         {index + 1 < total && <span className="slide__swipe">→</span>}

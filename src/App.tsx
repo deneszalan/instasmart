@@ -116,7 +116,7 @@ function Shell() {
 
       {openedPost && (
         <Sheet title="Post" variant="dialog" onClose={() => navigate({ post: null })}>
-          <PostView post={openedPost} className="post--flat" />
+          <PostView key={openedPost.key} post={openedPost} className="post--flat" />
         </Sheet>
       )}
       <Toast />

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="system-ui, sans-serif">
+  <defs>
+    <marker id="head" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#fff"/>
+    </marker>
+  </defs>
+  <circle cx="150" cy="150" r="62" fill="#fde047"/>
+  <g stroke="#fde047" stroke-width="10" stroke-linecap="round">
+    <line x1="150" y1="40" x2="150" y2="62"/><line x1="40" y1="150" x2="62" y2="150"/>
+    <line x1="72" y1="72" x2="88" y2="88"/><line x1="228" y1="72" x2="212" y2="88"/>
+    <line x1="72" y1="228" x2="88" y2="212"/><line x1="260" y1="150" x2="238" y2="150"/>
+  </g>
+  <text x="150" y="285" fill="#fff" font-size="40" font-weight="700" text-anchor="middle">light</text>
+  <path d="M540,200 C820,300 860,700 540,900 C220,700 260,300 540,200 Z" fill="#fff" fill-opacity="0.16" stroke="#fff" stroke-width="8"/>
+  <path d="M540,230 L540,880" stroke="#fff" stroke-opacity="0.6" stroke-width="6"/>
+  <text x="540" y="560" fill="#fff" font-size="54" font-weight="800" text-anchor="middle">sugar</text>
+  <line x1="40" y1="600" x2="300" y2="600" stroke="#fff" stroke-width="10" marker-end="url(#head)"/>
+  <text x="150" y="570" fill="#fff" font-size="52" font-weight="800" text-anchor="middle">CO₂</text>
+  <line x1="540" y1="1060" x2="540" y2="920" stroke="#fff" stroke-width="10" marker-end="url(#head)"/>
+  <text x="700" y="1010" fill="#fff" font-size="52" font-weight="800" text-anchor="middle">H₂O</text>
+  <line x1="740" y1="420" x2="960" y2="250" stroke="#fff" stroke-width="10" marker-end="url(#head)"/>
+  <text x="935" y="190" fill="#fff" font-size="52" font-weight="800" text-anchor="middle">O₂</text>
+  <text x="935" y="380" fill="#fff" font-size="34" font-weight="600" text-anchor="middle">split from</text>
+  <text x="935" y="420" fill="#fff" font-size="34" font-weight="600" text-anchor="middle">the water</text>
+</svg>

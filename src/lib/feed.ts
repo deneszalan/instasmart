@@ -1,4 +1,5 @@
-import type { FieldId, KnowledgeCard } from '../types';
+import type { FieldId, KnowledgeCard, Slide } from '../types';
+import { plain } from './markdown';
 
 /** Small, fast seeded PRNG (mulberry32) so feed order is reproducible in tests. */
 export function createRng(seed: number): () => number {
@@ -117,8 +118,38 @@ export function readSeconds(text: string): number {
   return Math.max(10, Math.round(((words / 230) * 60) / 5) * 5);
 }
 
+function slideParts(slide: Slide): string[] {
+  switch (slide.type) {
+    case 'text':
+      return [slide.text];
+    case 'image':
+      return [slide.caption ?? slide.alt];
+    case 'stat':
+      return [`${slide.value} ${slide.label}`, slide.text ?? ''];
+    case 'list':
+      return slide.items;
+    case 'quote':
+      return [slide.text, slide.attribution ? `— ${slide.attribution}` : ''];
+    case 'compare':
+      return [`${slide.left.label}: ${slide.left.text}`, `${slide.right.label}: ${slide.right.text}`];
+    case 'timeline':
+      return slide.events.map((e) => `${e.when}: ${e.text}`);
+  }
+}
+
+/** A slide's words without its heading, as plain text. */
+export function slideDetail(slide: Slide): string {
+  return plain(slideParts(slide).filter(Boolean).join(' '));
+}
+
+/** All the readable words on a slide, for search and read time. */
+export function slideText(slide: Slide): string {
+  const heading = 'heading' in slide && slide.heading ? `${slide.heading} ` : '';
+  return heading + slideDetail(slide);
+}
+
 export function cardText(card: KnowledgeCard): string {
-  return [card.title, card.body, ...(card.slides ?? []).flatMap((s) => [s.heading, s.text])].join(' ');
+  return [card.title, plain(card.body), ...(card.slides ?? []).map(slideText)].join(' ');
 }
 
 /** Case-insensitive search over title, body, slides, tags and field. A leading '#' matches tags only. */

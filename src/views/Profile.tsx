@@ -20,7 +20,9 @@ export function Profile() {
   const perField = FIELDS.map((f) => {
     const cards = LIBRARY.filter((c) => c.field === f.id);
     return { field: f, total: cards.length, seen: cards.filter((c) => seenIds.has(c.id)).length };
-  }).sort((a, b) => b.seen / b.total - a.seen / a.total);
+  })
+    .filter((row) => row.total > 0)
+    .sort((a, b) => b.seen / b.total - a.seen / a.total);
 
   return (
     <div className="profile">
@@ -132,8 +134,8 @@ export function Profile() {
       </section>
 
       <p className="about">
-        Library pieces are written for InstaSmart, each with a source to check. Live posts come from Wikipedia’s featured
-        content, under CC BY-SA.
+        Posts live as files in the InstaSmart GitHub repository. Ones marked AI were written by an AI, and every post links
+        a source so you can check it. Live posts come from Wikipedia’s featured content, under CC BY-SA.
       </p>
     </div>
   );

@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-smallpox-eradicated",
+  "field": "body",
+  "title": "Smallpox is the only human disease ever wiped out completely",
+  "emoji": "💉",
+  "body": "Smallpox killed about 30% of the people it infected and is estimated to have caused up to 300 million deaths in the 20th century alone. It could be eradicated because it spread only between humans, with no animal reservoir, caused an unmistakable rash and could be prevented with an effective vaccine. A global campaign coordinated by the World Health Organization tracked down outbreaks, and the world was certified smallpox-free in 1980.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Before vaccines",
+      "text": "People practised variolation: deliberately infecting someone with material from a smallpox sore. It usually caused milder illness, but was still risky."
+    },
+    {
+      "type": "text",
+      "heading": "Jenner’s cowpox",
+      "text": "In 1796 Edward Jenner showed that infection with mild cowpox protected people against smallpox. ‘Vaccine’ comes from vacca, Latin for cow."
+    },
+    {
+      "type": "text",
+      "heading": "Find and contain",
+      "text": "Late in the campaign, teams hunted down every case and vaccinated the people around it, a ring of immunity that left the virus nowhere to go."
+    },
+    {
+      "type": "text",
+      "heading": "The last case",
+      "text": "The last naturally occurring case was diagnosed in Somalia in October 1977. Live virus samples are now kept in just two labs, in the US and Russia."
+    }
+  ],
+  "tags": [
+    "vaccines",
+    "publichealth",
+    "history"
+  ],
+  "source": {
+    "label": "Wikipedia: Smallpox",
+    "url": "https://en.wikipedia.org/wiki/Smallpox"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

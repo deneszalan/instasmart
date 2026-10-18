@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-floating-point-point-three",
+  "field": "tech",
+  "title": "In most programming languages, 0.1 + 0.2 doesn’t equal 0.3",
+  "emoji": "🧮",
+  "body": "Type 0.1 + 0.2 into JavaScript or Python and you get 0.30000000000000004. Computers usually store decimals as binary floating-point numbers, defined by the IEEE 754 standard, and just as 1/3 never ends in decimal, 0.1 never ends in binary. The machine keeps the nearest value it can fit, and the tiny rounding errors become visible when numbers are added.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Why 0.1 is hard",
+      "text": "In binary, 0.1 is 0.0001100110011… repeating forever. A standard 64-bit number keeps about 15 to 17 significant decimal digits, then rounds the rest."
+    },
+    {
+      "type": "text",
+      "heading": "Usually harmless",
+      "text": "The error is around one part in ten quadrillion, too small to matter for most science or graphics. It bites when code checks whether two results are exactly equal."
+    },
+    {
+      "type": "text",
+      "heading": "How money is handled",
+      "text": "Financial software often counts whole cents as integers or uses special decimal number types, so adding up prices stays exact."
+    }
+  ],
+  "tags": [
+    "programming",
+    "floatingpoint",
+    "numbers"
+  ],
+  "source": {
+    "label": "Wikipedia: Floating-point arithmetic",
+    "url": "https://en.wikipedia.org/wiki/Floating-point_arithmetic"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

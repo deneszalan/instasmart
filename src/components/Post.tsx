@@ -4,7 +4,8 @@ import type { KnowledgeCard, Post } from '../types';
 import type { WikiPost } from '../lib/wiki';
 import { FIELD_BY_ID } from '../data/fields';
 import { LIBRARY } from '../data/library';
-import { cardText, readSeconds } from '../lib/feed';
+import { cardText, readSeconds, slideDetail } from '../lib/feed';
+import { inline } from '../lib/markdown';
 import { sharePost } from '../lib/share';
 import { useRoute } from '../lib/route';
 import { postId, useStore } from '../state/store';
@@ -115,16 +116,32 @@ export function LearnMore({ post, onClose }: { post: Post; onClose: () => void }
           {field.emoji} {field.name} · {readSeconds(cardText(card))} s read
         </p>
         <h3 className="learn__title">{card.title}</h3>
-        <p className="learn__body">{card.body}</p>
+        <p className="learn__body">{inline(card.body)}</p>
         {card.slides && (
           <ol className="learn__slides">
-            {card.slides.map((s) => (
-              <li key={s.heading}>
-                <strong>{s.heading}</strong>
-                <span>{s.text}</span>
+            {card.slides.map((s, i) => (
+              <li key={i}>
+                {'heading' in s && s.heading && <strong>{s.heading}</strong>}
+                {s.type === 'image' ? (
+                  <figure className="learn__figure">
+                    <img src={s.src} alt={s.alt} loading="lazy" />
+                    {(s.caption || s.credit) && (
+                      <figcaption>{[s.caption, s.credit && `📷 ${s.credit}`].filter(Boolean).join(' · ')}</figcaption>
+                    )}
+                  </figure>
+                ) : (
+                  <span>{slideDetail(s)}</span>
+                )}
               </li>
             ))}
           </ol>
+        )}
+        {card.author && (
+          <p className="learn__author">
+            {card.author.kind === 'ai' ? 'AI-written' : 'Written'} by {card.author.name}
+            {card.author.model ? ` (${card.author.model})` : ''}
+            {card.createdAt ? ` · ${formatDay(card.createdAt)}` : ''}
+          </p>
         )}
         <div className="learn__tags">
           {card.tags.map((t) => (
@@ -159,7 +176,7 @@ function Caption({ handle, text, onMore }: { handle: string; text: string; onMor
   return (
     <div className="caption">
       <p className={`caption__text${expanded ? '' : ' caption__text--clamped'}`}>
-        <strong>{handle}</strong> {text}
+        <strong>{handle}</strong> {inline(text)}
       </p>
       {!expanded ? (
         <button className="link-btn" onClick={() => setExpanded(true)}>
@@ -207,7 +224,14 @@ export function PostView({ post, className }: PostViewProps) {
       <header className="post__head">
         <Avatar emoji={field?.emoji} gradient={field?.gradient} wiki={!!wiki} size={34} ring="new" />
         <div className="post__who">
-          <span className="post__handle">{handle}</span>
+          <span className="post__handle">
+            {handle}
+            {card?.author?.kind === 'ai' && (
+              <span className="badge-ai" title={`Written by ${card.author.name}`}>
+                AI
+              </span>
+            )}
+          </span>
           <span className="post__sub">
             {field ? `${field.name} · ${readSeconds(cardText(card!))} s read` : `${wiki!.label} · ${formatDay(wiki!.date)}`}
           </span>

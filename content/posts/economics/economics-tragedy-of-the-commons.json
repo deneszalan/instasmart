@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "economics-tragedy-of-the-commons",
+  "field": "economics",
+  "title": "The ‘tragedy of the commons’ often isn’t a tragedy at all",
+  "emoji": "🐄",
+  "body": "In 1968 ecologist Garrett Hardin argued that when a resource like a pasture is open to all, each user gains by taking a little more while the damage is shared, so the resource gets ruined. The logic fits overfishing and pollution well. But Elinor Ostrom studied real fisheries, forests and irrigation systems and found many communities had managed shared resources sustainably for centuries. That work made her the first woman to win the economics Nobel, in 2009.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Where the idea began",
+      "text": "Hardin built on an 1833 pamphlet by economist William Forster Lloyd, who imagined herders overgrazing a shared village pasture."
+    },
+    {
+      "type": "text",
+      "heading": "Ostrom’s design rules",
+      "text": "Lasting commons tend to have clear boundaries, rules made by the users themselves, monitoring, graduated penalties and cheap ways to settle disputes."
+    },
+    {
+      "type": "text",
+      "heading": "Real examples",
+      "text": "Alpine pastures in Switzerland and village forests in Japan were run as commons for centuries, as were irrigation systems in Spain and the Philippines."
+    }
+  ],
+  "tags": [
+    "commons",
+    "elinorostrom",
+    "gametheory"
+  ],
+  "source": {
+    "label": "Wikipedia: Tragedy of the commons",
+    "url": "https://en.wikipedia.org/wiki/Tragedy_of_the_commons"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

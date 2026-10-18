@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "psychology-replication-crisis",
+  "field": "psychology",
+  "title": "When 100 psychology studies were repeated, most failed to replicate",
+  "emoji": "🔁",
+  "body": "In 2015, a large collaboration led by Brian Nosek redid 100 studies from three leading psychology journals. Of 97 originals that had reported significant results, only about 36% gave significant results again, and effects were on average about half as large. Small samples, flexible analyses and a preference for striking results had let false or inflated findings through. The shock helped launch reforms such as pre-registration and large multi-lab studies.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Famous casualties",
+      "text": "Ego depletion, the idea that willpower runs out like fuel, and the claim that power poses change your hormones have both struggled in careful replications."
+    },
+    {
+      "type": "text",
+      "heading": "How flukes get published",
+      "text": "Testing many measures and reporting only the ones that ‘worked’, or stopping data collection once results look good, can make chance noise look real."
+    },
+    {
+      "type": "text",
+      "heading": "The fix: pre-registration",
+      "text": "Researchers publish their hypothesis and analysis plan before collecting data, so results can’t be quietly reshaped afterwards."
+    },
+    {
+      "type": "text",
+      "heading": "Plenty survived",
+      "text": "Many findings hold up well, from anchoring to the spacing effect. The crisis is about separating solid results from shaky ones, not dismissing the field."
+    }
+  ],
+  "tags": [
+    "science",
+    "replication",
+    "research"
+  ],
+  "source": {
+    "label": "Wikipedia: Replication crisis",
+    "url": "https://en.wikipedia.org/wiki/Replication_crisis"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

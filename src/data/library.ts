@@ -1,39 +1,25 @@
 import type { FieldId, KnowledgeCard } from '../types';
-import { art } from './cards/art';
-import { biology } from './cards/biology';
-import { body } from './cards/body';
-import { chemistry } from './cards/chemistry';
-import { earth } from './cards/earth';
-import { economics } from './cards/economics';
-import { engineering } from './cards/engineering';
-import { history } from './cards/history';
-import { language } from './cards/language';
-import { math } from './cards/math';
-import { music } from './cards/music';
-import { philosophy } from './cards/philosophy';
-import { physics } from './cards/physics';
-import { psychology } from './cards/psychology';
-import { space } from './cards/space';
-import { tech } from './cards/tech';
 
-export const LIBRARY: KnowledgeCard[] = [
-  ...physics,
-  ...space,
-  ...biology,
-  ...chemistry,
-  ...math,
-  ...history,
-  ...psychology,
-  ...economics,
-  ...tech,
-  ...language,
-  ...philosophy,
-  ...art,
-  ...music,
-  ...earth,
-  ...body,
-  ...engineering,
-];
+// Every post is a JSON file in content/posts/<field>/<id>.json; images live in content/media/<id>/.
+const postFiles = import.meta.glob<KnowledgeCard>('../../content/posts/*/*.json', { eager: true, import: 'default' });
+const mediaFiles = import.meta.glob<string>('../../content/media/*/*', { eager: true, query: '?url', import: 'default' });
+
+function resolveImage(postId: string, src: string): string {
+  if (src.startsWith('https://')) return src;
+  return mediaFiles[`../../content/media/${postId}/${src}`] ?? src;
+}
+
+function resolve(post: KnowledgeCard): KnowledgeCard {
+  return {
+    ...post,
+    cover: post.cover && { ...post.cover, src: resolveImage(post.id, post.cover.src) },
+    slides: post.slides?.map((s) => (s.type === 'image' ? { ...s, src: resolveImage(post.id, s.src) } : s)),
+  };
+}
+
+export const LIBRARY: KnowledgeCard[] = Object.values(postFiles)
+  .map(resolve)
+  .sort((a, b) => a.id.localeCompare(b.id));
 
 export const CARD_BY_ID: ReadonlyMap<string, KnowledgeCard> = new Map(LIBRARY.map((c) => [c.id, c]));
 

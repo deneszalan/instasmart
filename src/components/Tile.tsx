@@ -1,6 +1,5 @@
 import type { Post } from '../types';
-import { FIELD_BY_ID } from '../data/fields';
-import { gradientStyle } from './Media';
+import { cardGradient, gradientStyle } from './Media';
 
 interface TileProps {
   post: Post;
@@ -28,16 +27,16 @@ export function Tile({ post, onOpen, tall }: TileProps) {
   }
 
   const { card } = post;
-  const field = FIELD_BY_ID[card.field];
   return (
     <button className={className} onClick={onOpen} aria-label={card.title}>
-      <span className="tile__face" style={gradientStyle(field.gradient)}>
+      {card.cover && <img src={card.cover.src} alt="" loading="lazy" decoding="async" />}
+      <span className={`tile__face${card.cover ? ' tile__face--photo' : ''}`} style={gradientStyle(cardGradient(card))}>
         <span className="tile__emoji" aria-hidden="true">
           {card.emoji}
         </span>
         <span className="tile__title">{card.title}</span>
       </span>
-      {card.slides && <span className="tile__multi" aria-hidden="true" />}
+      {card.slides?.length ? <span className="tile__multi" aria-hidden="true" /> : null}
     </button>
   );
 }

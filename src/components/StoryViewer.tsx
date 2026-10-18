@@ -7,7 +7,8 @@ import { FIELD_BY_ID } from '../data/fields';
 import { lockScroll } from '../lib/scrollLock';
 import { useStore } from '../state/store';
 import { Avatar } from './Avatar';
-import { gradientStyle } from './Media';
+import { cardGradient, gradientStyle } from './Media';
+import { inline } from '../lib/markdown';
 
 interface StoryViewerProps {
   stories: Story[];
@@ -90,7 +91,7 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
 
   return createPortal(
     <div className="story-overlay" role="dialog" aria-modal="true" aria-label={`${story.label} story`}>
-      <div className="story" style={gradientStyle(field.gradient)}>
+      <div className="story" style={gradientStyle(cardGradient(card))}>
         <div className="story__bars">
           {story.cards.map((c, i) => (
             <span key={c.id} className="story__bar">
@@ -134,7 +135,7 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
             {card.emoji}
           </div>
           <h3 className="story__title">{card.title}</h3>
-          <p className="story__body">{card.body}</p>
+          <p className="story__body">{inline(card.body)}</p>
         </div>
 
         <a className="story__source" href={card.source.url} target="_blank" rel="noreferrer">

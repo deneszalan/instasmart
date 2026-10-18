@@ -1,0 +1,457 @@
+{
+  "$id": "https://github.com/deneszalan/instasmart/content/schema/post.schema.json",
+  "title": "InstaSmart post",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "maxLength": 80,
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "`<field>-<slug>`. Also the file name: content/posts/<field>/<id>.json"
+    },
+    "field": {
+      "type": "string",
+      "enum": [
+        "physics",
+        "space",
+        "biology",
+        "chemistry",
+        "math",
+        "history",
+        "psychology",
+        "economics",
+        "tech",
+        "language",
+        "philosophy",
+        "art",
+        "music",
+        "earth",
+        "body",
+        "engineering"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 90,
+      "description": "The hook shown big on the first slide: a surprising, complete statement."
+    },
+    "emoji": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 16,
+      "description": "One emoji illustrating the post."
+    },
+    "cover": {
+      "description": "Optional photo behind the title on the first slide.",
+      "type": "object",
+      "properties": {
+        "src": {
+          "type": "string",
+          "description": "File name in content/media/<post-id>/, e.g. \"diagram.svg\", or an https:// URL on upload.wikimedia.org or thumb.wikimedia.org"
+        },
+        "alt": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "credit": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        }
+      },
+      "required": [
+        "src",
+        "alt"
+      ],
+      "additionalProperties": false
+    },
+    "body": {
+      "type": "string",
+      "minLength": 80,
+      "maxLength": 1200,
+      "description": "The caption: 2–5 sentences explaining why or how. Supports **bold**, *italic*, [links](https://…)."
+    },
+    "slides": {
+      "description": "Extra carousel slides after the title slide.",
+      "maxItems": 9,
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "text"
+              },
+              "heading": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 40
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 320,
+                "description": "Supports **bold**, *italic* and [links](https://…)."
+              }
+            },
+            "required": [
+              "type",
+              "text"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "image"
+              },
+              "src": {
+                "type": "string",
+                "description": "File name in content/media/<post-id>/, e.g. \"diagram.svg\", or an https:// URL on upload.wikimedia.org or thumb.wikimedia.org"
+              },
+              "alt": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300,
+                "description": "What the image shows, for screen readers."
+              },
+              "caption": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "fit": {
+                "description": "\"cover\" fills the slide (photos); \"contain\" shows the whole image on the field colours (diagrams). Default cover.",
+                "type": "string",
+                "enum": [
+                  "cover",
+                  "contain"
+                ]
+              },
+              "credit": {
+                "description": "Photographer / licence, e.g. \"NASA · Public domain\".",
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120
+              }
+            },
+            "required": [
+              "type",
+              "src",
+              "alt"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "stat"
+              },
+              "value": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 16,
+                "description": "The big number, e.g. \"86 billion\" or \"3×\"."
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 90,
+                "description": "What the number counts."
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 220
+              }
+            },
+            "required": [
+              "type",
+              "value",
+              "label"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "list"
+              },
+              "heading": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 40
+              },
+              "style": {
+                "type": "string",
+                "enum": [
+                  "bullets",
+                  "numbers",
+                  "steps"
+                ]
+              },
+              "items": {
+                "minItems": 2,
+                "maxItems": 6,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 110
+                }
+              }
+            },
+            "required": [
+              "type",
+              "items"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "quote"
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240,
+                "description": "A real, verifiable quotation. Never invent or misattribute quotes."
+              },
+              "attribution": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              }
+            },
+            "required": [
+              "type",
+              "text"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "compare"
+              },
+              "heading": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 40
+              },
+              "left": {
+                "type": "object",
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 24
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  }
+                },
+                "required": [
+                  "label",
+                  "text"
+                ],
+                "additionalProperties": false,
+                "description": "e.g. { \"label\": \"Myth\", ... }"
+              },
+              "right": {
+                "type": "object",
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 24
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 160
+                  }
+                },
+                "required": [
+                  "label",
+                  "text"
+                ],
+                "additionalProperties": false,
+                "description": "e.g. { \"label\": \"Fact\", ... }"
+              }
+            },
+            "required": [
+              "type",
+              "left",
+              "right"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "timeline"
+              },
+              "heading": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 40
+              },
+              "events": {
+                "minItems": 2,
+                "maxItems": 5,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "when": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 24
+                    },
+                    "text": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 110
+                    }
+                  },
+                  "required": [
+                    "when",
+                    "text"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "type",
+              "events"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    "tags": {
+      "minItems": 1,
+      "maxItems": 6,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 30,
+        "pattern": "^[a-z0-9]+$"
+      }
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "label",
+        "url"
+      ],
+      "additionalProperties": false,
+      "description": "Where a reader can check the claim. Prefer Wikipedia or a primary/academic source."
+    },
+    "theme": {
+      "description": "Override the field colours. Pick dark enough colours for white text.",
+      "type": "object",
+      "properties": {
+        "gradient": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "string",
+              "pattern": "^#[0-9a-fA-F]{6}$"
+            },
+            {
+              "type": "string",
+              "pattern": "^#[0-9a-fA-F]{6}$"
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "required": [
+        "gradient"
+      ],
+      "additionalProperties": false
+    },
+    "author": {
+      "description": "Who wrote it. LLM contributors use kind \"ai\".",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "ai",
+            "human"
+          ]
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60
+        }
+      },
+      "required": [
+        "name",
+        "kind"
+      ],
+      "additionalProperties": false
+    },
+    "createdAt": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    }
+  },
+  "required": [
+    "id",
+    "field",
+    "title",
+    "emoji",
+    "body",
+    "tags",
+    "source"
+  ],
+  "additionalProperties": false
+}

@@ -1,58 +1,10 @@
-export type FieldId =
-  | 'physics'
-  | 'space'
-  | 'biology'
-  | 'chemistry'
-  | 'math'
-  | 'history'
-  | 'psychology'
-  | 'economics'
-  | 'tech'
-  | 'language'
-  | 'philosophy'
-  | 'art'
-  | 'music'
-  | 'earth'
-  | 'body'
-  | 'engineering';
+import type { Post as PostData, Slide, Source } from '../shared/schema.ts';
 
-export interface Field {
-  id: FieldId;
-  name: string;
-  /** Account-style handle shown as the post author. */
-  handle: string;
-  emoji: string;
-  /** Two gradient stops used for the post visual and story ring. */
-  gradient: [string, string];
-}
+export type { Field, FieldId } from '../shared/fields.ts';
+export type { Slide, Source };
 
-export interface Slide {
-  heading: string;
-  text: string;
-}
-
-export interface Source {
-  label: string;
-  url: string;
-}
-
-/** A hand-written knowledge piece from the curated library. */
-export interface KnowledgeCard {
-  /** Unique, stable id: `${field}-${slug}`. */
-  id: string;
-  field: FieldId;
-  /** The hook shown big on the first slide. */
-  title: string;
-  /** One emoji illustrating the piece. */
-  emoji: string;
-  /** Caption text: the explanation. */
-  body: string;
-  /** Extra carousel slides shown after the title slide. */
-  slides?: Slide[];
-  /** Lowercase hashtags without the leading '#'. */
-  tags: string[];
-  source: Source;
-}
+/** A knowledge post from content/posts/, with image paths resolved to URLs. */
+export type KnowledgeCard = PostData;
 
 export interface WikiImage {
   src: string;
@@ -61,7 +13,7 @@ export interface WikiImage {
   credit?: string;
 }
 
-/** A post rendered in the feed: either a curated card or a live Wikipedia piece. */
+/** A post rendered in the feed: either a library card or a live Wikipedia piece. */
 export type Post =
   | { kind: 'card'; key: string; card: KnowledgeCard }
   | {

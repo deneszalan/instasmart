@@ -2,70 +2,134 @@
 
 An Instagram-style app where the endless feed is made of bite-sized knowledge, not user posts. Scroll, double-tap what you like, save what you want to remember, and watch your "learned" count grow.
 
+All content lives in this GitHub repository as plain files, and LLMs can contribute posts, images and diagrams. They either commit directly or go through the included MCP server, which opens pull requests.
+
 ## Features
 
-- **Endless feed.** A hand-written library of knowledge pieces across 16 fields: physics, space, biology, chemistry, mathematics, history, psychology, economics, computer science, language, philosophy, art & design, music, Earth science, the human body and engineering.
-  - Pieces you haven't read come first. Two posts in a row never come from the same field when it can be avoided.
-  - When you've seen the whole library you get a "you've explored everything" marker, and the feed carries on with a fresh shuffle.
-- **Live posts from Wikipedia.** Wikipedia's featured article and picture of the day are mixed in, walking back one day at a time, so the feed never runs dry. You can turn this off in Profile.
-- **Carousel posts.** Some pieces have extra slides that go deeper. Swipe, or use the arrows on desktop.
-- **Stories.** A "Daily 5" mix plus one story per field. Tap to move forward or back, hold to pause, and use the arrow keys or Space on desktop.
-- **Instagram interactions.** Double-tap to like, save with the bookmark, share (native share sheet, or the link is copied). The comment button opens a **Go deeper** sheet with the full explanation, the source and related pieces.
-- **Explore.** A search across every piece (`#tag` matches tags exactly), with field filters and a mosaic grid.
-- **Saved and Profile.** Your saved pieces, a learning streak, progress per field, a light/dark/auto theme, and a reset button.
-- **Local only.** Everything is stored in your browser's `localStorage`. There's no account and no backend.
+- **Endless feed** across 16 fields: physics, space, biology, chemistry, mathematics, history, psychology, economics, computer science, language, philosophy, art & design, music, Earth science, the human body and engineering.
+  - Unread posts come first. Two posts in a row never come from the same field when it can be avoided.
+  - When you've seen everything you get an "all explored" marker, and the feed carries on with a fresh shuffle.
+- **Rich posts.** A title slide (optionally over a photo), followed by a swipeable carousel of text, big-number stats, lists and steps, quotes, myth-vs-fact comparisons, timelines, photos and SVG diagrams. Captions support **bold**, *italic* and links.
+- **Live posts from Wikipedia.** The featured article and picture of the day are mixed in, walking back one day at a time, so the feed never runs dry. You can turn this off in Profile.
+- **Stories.** A "Daily 5" mix plus one story per field. Tap to move forward or back, hold to pause, or use the arrow keys and Space.
+- **Instagram interactions.** Double-tap to like, bookmark to save, and share through the native share sheet or a copied link. The comment button opens **Go deeper**, with the full text, the source, the author and related posts. AI-written posts carry an **AI** badge.
+- **Explore, Saved, Profile.** Search (`#tag` matches tags exactly) with field filters and a mosaic grid, your saved posts, a learning streak, progress per field, and a light/dark/auto theme.
+- **No backend.** Reading progress stays in your browser's `localStorage`. The site is static and deploys to GitHub Pages.
 
 ## Getting started
+
+Requires Node.js 22.18 or newer, which runs the TypeScript scripts without a build step.
 
 ```bash
 npm install
 npm run dev        # http://localhost:5173
 ```
 
-| Script              | What it does                                      |
-| ------------------- | ------------------------------------------------- |
-| `npm run dev`       | Start the dev server                              |
-| `npm run build`     | Type-check and build a static site into `dist/`   |
-| `npm run preview`   | Serve the production build                        |
-| `npm test`          | Run the unit tests (feed logic, data checks, state) |
-| `npm run typecheck` | Type-check only                                   |
+| Script | What it does |
+| --- | --- |
+| `npm run dev` | Start the dev server |
+| `npm run build` | Type-check and build the static site into `dist/` |
+| `npm test` | Unit tests: feed logic, content validation, MCP server |
+| `npm run content` | Validate every post and image in `content/` |
+| `npm run content -- new <field> <slug>` | Create a starter post file |
+| `npm run content -- schema` | Regenerate `content/schema/post.schema.json` |
+| `npm run mcp` | Start the MCP server on stdio |
+| `npm run mcp:http` | Start the MCP server over HTTP at `/mcp` |
 
-The build uses relative paths, so you can host `dist/` from any static host or sub-path, GitHub Pages included.
+## How content works
+
+```
+content/
+  README.md                    the content guide (format, slide types, rules)
+  posts/<field>/<id>.json      one post per file
+  media/<id>/<file>            images and diagrams for that post
+  schema/post.schema.json      JSON Schema for editors and LLMs
+```
+
+1. A post is added as a JSON file, with any images it uses: by a person, a coding agent, or the MCP server.
+2. **CI** (`.github/workflows/ci.yml`) runs `npm run content` on every pull request. It checks the format, lengths, field folders, that every referenced image exists, file types and sizes, and that SVGs contain no scripts, event handlers or external references.
+3. A maintainer reviews the facts and merges.
+4. **Deploy** (`.github/workflows/deploy.yml`) rebuilds the site on `main` and publishes it to GitHub Pages. The app bundles every post at build time.
+
+To turn on deployment once: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
+The format and the writing rules are in [`content/README.md`](content/README.md). That file is also what the MCP server hands to LLMs.
+
+## Letting LLMs upload content
+
+### Option 1: agents with repository access
+
+Claude Code, GitHub Copilot's coding agent, Codex and similar tools read [`AGENTS.md`](AGENTS.md) (Claude Code reads it through `CLAUDE.md`). It tells them where files go, to validate with `npm run content`, and to open a pull request. Try asking: *"Add three history posts about ancient engineering, with a timeline slide each."*
+
+### Option 2: the MCP server
+
+`mcp/` is a [Model Context Protocol](https://modelcontextprotocol.io) server. Any MCP client (Claude Desktop, Claude Code, claude.ai or others) can use it to publish posts.
+
+| Tool | What it does |
+| --- | --- |
+| `get_content_guide` | The content guide, the field list and the JSON Schema |
+| `list_posts` | Existing post ids, to avoid duplicates |
+| `get_post` | One post's JSON, for revisions |
+| `validate_post` | Check a post and its images, and list every problem to fix |
+| `submit_post` | Save a post with its images (SVG markup or base64 PNG/JPEG/WebP/GIF/AVIF) |
+
+Posts submitted this way are always labelled `"author": { "kind": "ai" }`.
+
+**Where submissions go** depends on the environment:
+
+| Variable | Meaning |
+| --- | --- |
+| `INSTASMART_GITHUB_TOKEN` | A GitHub token that can write to the repo. With `INSTASMART_GITHUB_REPO` set too, posts go to GitHub; without both, they're written to this checkout's `content/` folder. |
+| `INSTASMART_GITHUB_REPO` | `owner/name`, e.g. `deneszalan/instasmart` |
+| `INSTASMART_GITHUB_BRANCH` | Base branch (default `main`) |
+| `INSTASMART_PUBLISH_MODE` | `pull-request` (default: one PR per post, for review) or `commit` (commit straight to the branch) |
+| `MCP_AUTH_TOKEN` | Required for `--http`: the bearer token clients must send (16 or more characters) |
+| `PORT` | HTTP port (default `8788`) |
+
+For the token, a [fine-grained personal access token](https://github.com/settings/personal-access-tokens/new) limited to this repository is enough, with **Contents: read and write** and **Pull requests: read and write**.
+
+**Claude Code:**
+
+```bash
+claude mcp add instasmart \
+  -e INSTASMART_GITHUB_TOKEN=github_pat_… \
+  -e INSTASMART_GITHUB_REPO=deneszalan/instasmart \
+  -- node /path/to/instasmart/mcp/index.ts
+```
+
+**Claude Desktop** (`claude_desktop_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "instasmart": {
+      "command": "node",
+      "args": ["/path/to/instasmart/mcp/index.ts"],
+      "env": {
+        "INSTASMART_GITHUB_TOKEN": "github_pat_…",
+        "INSTASMART_GITHUB_REPO": "deneszalan/instasmart"
+      }
+    }
+  }
+}
+```
+
+**Remote (HTTP):** run `MCP_AUTH_TOKEN=… npm run mcp:http` on a server, put HTTPS in front of it, and point your client at `https://your-host/mcp` with the header `Authorization: Bearer <MCP_AUTH_TOKEN>`. For example, with Claude Code: `claude mcp add --transport http instasmart https://your-host/mcp --header "Authorization: Bearer …"`.
+
+Then ask your assistant something like: *"Use InstaSmart to publish a post explaining why the sky is red at sunset, with an SVG diagram."*
 
 ## Project layout
 
 ```
+content/          posts and images (the app's library)
+shared/           content schema + validator, shared by the app, scripts and MCP server
 src/
-  data/
-    fields.ts          the 16 fields: names, handles, emoji, colours
-    cards/*.ts         the knowledge library, one file per field
-    library.ts         combines every card file
-  lib/
-    feed.ts            endless feed: shuffling, field spreading, search
-    wiki.ts            Wikipedia featured-content client
-    stories.ts         builds the daily stories
-    route.ts           hash routing (#/explore, #/p/<id>, …)
-  state/store.tsx      likes, saves, reading history, streak and settings
-  components/          post, carousel, stories, sheets, tiles
-  views/               Feed, Explore, Saved, Profile
-  test/                Vitest unit tests
+  data/           fields and the library loader (bundles content/ at build time)
+  lib/            feed engine, Wikipedia client, stories, routing, markdown
+  state/          likes, saves, reading history, streak and settings
+  components/     post, slides and carousel, stories, sheets, tiles
+  views/          Feed, Explore, Saved, Profile
+mcp/              MCP server: tools, plus local and GitHub content stores
+scripts/          content CLI
+test/             Vitest tests
 ```
-
-## Adding knowledge
-
-Add an entry to the right file in `src/data/cards/`:
-
-```ts
-{
-  id: 'physics-mpemba-effect',          // `${field}-${slug}`, unique
-  field: 'physics',
-  title: 'Hot water can sometimes freeze faster than cold',  // the hook shown on the image
-  emoji: '🧊',
-  body: 'Two to four sentences explaining why…',             // the caption
-  slides: [{ heading: 'Why it’s debated', text: '…' }],      // optional: makes a carousel
-  tags: ['thermodynamics', 'water'],
-  source: { label: 'Wikipedia: Mpemba effect', url: 'https://en.wikipedia.org/wiki/Mpemba_effect' },
-}
-```
-
-`npm test` checks every card: unique ids, sensible lengths, lowercase tags and an https source.
