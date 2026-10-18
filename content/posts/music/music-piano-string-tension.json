@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-piano-string-tension",
+  "field": "music",
+  "title": "A grand piano’s strings pull with a force of around 20 tons",
+  "emoji": "🎹",
+  "body": "The strings of a modern grand piano pull together with a force that can exceed 20 tons, about 180 kilonewtons, which is why a massive **cast-iron plate** sits inside the case on top of the soundboard. Each key strikes one string in the bass, two in the tenor and three in the treble, all of high-carbon steel wire made to vary as little as possible in thickness. The single-piece iron frame was patented in Boston in 1825 by Alpheus Babcock, and iron frames let builders use heavier strings under more tension, giving the piano the powerful sound it has today.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How many strings does one key sound in the treble of a piano?",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "answer": 3,
+      "unit": "strings",
+      "explanation": "One string per note in the bass, two in the tenor and three in the treble, so a piano has far more strings than its 88 keys."
+    },
+    {
+      "type": "stat",
+      "value": "20 tons",
+      "label": "total string tension the iron plate of a modern grand must withstand",
+      "text": "That is about 180 kilonewtons, roughly the weight of a dozen family cars."
+    },
+    {
+      "type": "timeline",
+      "heading": "Iron takes the strain",
+      "events": [
+        {
+          "when": "1820",
+          "text": "Thom and Allen add resisting bars"
+        },
+        {
+          "when": "1825",
+          "text": "Babcock patents a one-piece iron frame"
+        },
+        {
+          "when": "1843",
+          "text": "Chickering patents a full iron frame for grands"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why unisons?",
+      "text": "Striking two or three strings tuned to the same note gives more sound than one string could. The strings are high-carbon steel, made to vary as little as possible in diameter so that a unison stays a unison through years of extreme tension and hard blows."
+    }
+  ],
+  "tags": [
+    "piano",
+    "instruments",
+    "acoustics"
+  ],
+  "source": {
+    "label": "Wikipedia: Piano",
+    "url": "https://en.wikipedia.org/wiki/Piano"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

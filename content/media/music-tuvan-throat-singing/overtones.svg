@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="system-ui, sans-serif">
+  <text x="540" y="92" fill="#fff" font-size="56" font-weight="800" text-anchor="middle">One voice, two notes</text>
+  <text x="540" y="150" fill="#fff" fill-opacity="0.85" font-size="34" text-anchor="middle">A sung drone contains harmonics at multiples of its pitch</text>
+  <g fill="#fff" fill-opacity="0.8">
+    <rect x="110" y="380" width="48" height="420" rx="6"/>
+    <rect x="182" y="590" width="48" height="210" rx="6"/>
+    <rect x="254" y="660" width="48" height="140" rx="6"/>
+    <rect x="326" y="695" width="48" height="105" rx="6"/>
+    <rect x="398" y="716" width="48" height="84" rx="6"/>
+    <rect x="470" y="730" width="48" height="70" rx="6"/>
+    <rect x="542" y="740" width="48" height="60" rx="6"/>
+    <rect x="686" y="753" width="48" height="47" rx="6"/>
+    <rect x="758" y="758" width="48" height="42" rx="6"/>
+    <rect x="830" y="762" width="48" height="38" rx="6"/>
+    <rect x="902" y="765" width="48" height="35" rx="6"/>
+    <rect x="974" y="768" width="48" height="32" rx="6"/>
+  </g>
+  <rect x="614" y="440" width="48" height="360" rx="6" fill="#fde047"/>
+  <line x1="100" y1="800" x2="1030" y2="800" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#fff" font-size="34" font-weight="700" text-anchor="middle">
+    <text x="134" y="848">1</text><text x="206" y="848">2</text><text x="278" y="848">3</text><text x="350" y="848">4</text>
+    <text x="422" y="848">5</text><text x="494" y="848">6</text><text x="566" y="848">7</text><text x="638" y="848">8</text>
+    <text x="710" y="848">9</text><text x="782" y="848">10</text><text x="854" y="848">11</text><text x="926" y="848">12</text><text x="998" y="848">13</text>
+  </g>
+  <text x="134" y="350" fill="#fff" font-size="34" font-weight="700" text-anchor="middle">drone</text>
+  <text x="638" y="410" fill="#fde047" font-size="34" font-weight="700" text-anchor="middle">the second note</text>
+  <text x="540" y="910" fill="#fff" fill-opacity="0.85" font-size="32" text-anchor="middle">Harmonic number: its frequency is the drone’s times this</text>
+  <text x="540" y="985" fill="#fff" font-size="34" font-weight="700" text-anchor="middle">Shaping the mouth boosts one harmonic (here the 8th)</text>
+  <text x="540" y="1032" fill="#fff" font-size="34" font-weight="700" text-anchor="middle">until it is heard as a separate whistling melody</text>
+</svg>

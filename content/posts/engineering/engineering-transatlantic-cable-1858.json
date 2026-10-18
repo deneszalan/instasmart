@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-transatlantic-cable-1858",
+  "field": "engineering",
+  "title": "In 1858, a 98-word telegram across the Atlantic took 16 hours",
+  "emoji": "⚡",
+  "body": "The first transatlantic telegraph cable was laid in August 1858 by two converted warships, HMS Agamemnon and USS Niagara, between Valentia Island in Ireland and Trinity Bay in Newfoundland. New York fired a hundred-gun salute, but the signal was so faint and slow that Queen Victoria’s **98-word** greeting to President Buchanan took 16 hours to send. The cable’s electrician, Wildman Whitehouse, tried to force messages through with up to 2,000 volts, which wrecked the insulation; after three weeks and 732 messages the line fell silent. The successful 1866 cable managed 8 words a minute.",
+  "slides": [
+    {
+      "type": "stat",
+      "value": "16 hours",
+      "label": "to transmit Queen Victoria’s 98-word message in August 1858",
+      "text": "The 1866 cable, laid by the giant Great Eastern, managed about 8 words a minute, roughly 80 times faster."
+    },
+    {
+      "type": "timeline",
+      "heading": "Three weeks of glory",
+      "events": [
+        {
+          "when": "5 Aug 1858",
+          "text": "Agamemnon lands the cable at Valentia"
+        },
+        {
+          "when": "16 Aug 1858",
+          "text": "First official message"
+        },
+        {
+          "when": "Sep 1858",
+          "text": "Cable fails after 732 messages"
+        },
+        {
+          "when": "27 Jul 1866",
+          "text": "Great Eastern’s cable enters service"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "What killed it",
+      "text": "Signals crawled through the long cable because of an effect William Thomson called retardation; he argued for a thicker cable and gentle currents, and clashed repeatedly with Whitehouse. Whitehouse’s attempts to drive up to 2,000 volts through the line broke down its insulation within weeks."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did the 1858 cable die after three weeks?",
+      "options": [
+        "Too much voltage wrecked it",
+        "A whale bit through it",
+        "Ice dragged it off Newfoundland",
+        "The company ran out of money"
+      ],
+      "answer": 0,
+      "explanation": "Wildman Whitehouse’s repeated attempts to drive up to 2,000 volts through the cable compromised its insulation, and in September 1858 it failed altogether."
+    }
+  ],
+  "tags": [
+    "telegraph",
+    "cables",
+    "victorian"
+  ],
+  "source": {
+    "label": "Wikipedia: Transatlantic telegraph cable",
+    "url": "https://en.wikipedia.org/wiki/Transatlantic_telegraph_cable"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

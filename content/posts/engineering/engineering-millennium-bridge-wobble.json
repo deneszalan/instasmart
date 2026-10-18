@@ -1,0 +1,78 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-millennium-bridge-wobble",
+  "field": "engineering",
+  "title": "London’s Millennium Bridge closed after two days because walkers synced up",
+  "emoji": "🌉",
+  "body": "The Millennium Bridge, a 325-metre steel suspension footbridge across the Thames, opened on 10 June 2000; about 90,000 people crossed that day, up to 2,000 at a time, and the deck swayed sideways by up to about 70 millimetres. Walkers unconsciously matched their steps to the sway, and each synchronised footstep pushed the bridge a little harder: a feedback loop known as **synchronous lateral excitation**, which the designers had not anticipated. The bridge closed on 12 June. Engineers fitted 37 fluid-viscous dampers and 52 tuned mass dampers for about £5 million, and the ‘Wobbly Bridge’ reopened on 22 February 2002 and has not swayed significantly since.",
+  "slides": [
+    {
+      "type": "timeline",
+      "heading": "Two days open, 20 months shut",
+      "events": [
+        {
+          "when": "10 Jun 2000",
+          "text": "Opens; 90,000 people cross"
+        },
+        {
+          "when": "12 Jun 2000",
+          "text": "Closed after the sway"
+        },
+        {
+          "when": "May 2001",
+          "text": "Damper installation begins"
+        },
+        {
+          "when": "22 Feb 2002",
+          "text": "Reopens, wobble gone"
+        }
+      ]
+    },
+    {
+      "type": "estimate",
+      "question": "How many dampers did engineers add to tame the sway?",
+      "min": 0,
+      "max": 200,
+      "step": 1,
+      "answer": 89,
+      "unit": "dampers",
+      "explanation": "37 fluid-viscous dampers and 52 tuned mass dampers, 89 in all, fitted between May 2001 and January 2002 for about £5 million."
+    },
+    {
+      "type": "text",
+      "heading": "The feedback loop",
+      "text": "People tend to match their footsteps to a sway, and a crowd walking in step pushes the deck sideways at just the right moment, so the sway grows. Crowds of up to 275 people were used to test the fix before the bridge reopened."
+    },
+    {
+      "type": "text",
+      "heading": "Not the first time",
+      "text": "Similar wobbles had struck the Auckland Harbour Bridge and the Birmingham NEC Link bridge, but the effect was not anticipated by the Millennium Bridge’s designers, Arup, Foster + Partners and the sculptor Anthony Caro."
+    },
+    {
+      "type": "quiz",
+      "question": "What drove the sway on the Millennium Bridge?",
+      "options": [
+        "Walkers falling into step",
+        "Wind across the deck",
+        "Boats passing underneath",
+        "Trains on nearby tracks"
+      ],
+      "answer": 0,
+      "explanation": "Synchronous lateral excitation: people matched their footsteps to the sway, which pushed it further. Unlike Tacoma Narrows, wind was not the driver."
+    }
+  ],
+  "tags": [
+    "bridges",
+    "vibration",
+    "london"
+  ],
+  "source": {
+    "label": "Wikipedia: Millennium Bridge, London",
+    "url": "https://en.wikipedia.org/wiki/Millennium_Bridge,_London"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

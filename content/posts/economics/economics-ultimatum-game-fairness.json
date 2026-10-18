@@ -1,0 +1,59 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "economics-ultimatum-game-fairness",
+  "field": "economics",
+  "title": "People turn down free money when the split feels unfair",
+  "emoji": "🤝",
+  "body": "In the ultimatum game, one player proposes how to divide a sum and the other can accept or reject; a rejection leaves both with nothing. Pure self-interest says the responder should take any amount above zero, since something beats nothing. In experiments since the first by Güth, Schmittberger and Schwarze in 1982, proposers typically offer about **40% of the pie**, and offers below roughly 30% are often rejected. Rejecting costs the responder real money, so the result shows that people will pay to punish what they see as unfair.",
+  "slides": [
+    {
+      "type": "compare",
+      "heading": "Theory vs people",
+      "left": {
+        "label": "Self-interest says",
+        "text": "Offer the smallest possible amount; the responder accepts, since something beats nothing."
+      },
+      "right": {
+        "label": "People do",
+        "text": "Proposers offer about 40%; responders often reject anything under roughly 30%."
+      }
+    },
+    {
+      "type": "stat",
+      "value": "40%",
+      "label": "what proposers typically offer, in a 2004 review of 37 studies",
+      "text": "Among members of the same group, people often offer an even 50:50 split."
+    },
+    {
+      "type": "text",
+      "heading": "Do high stakes change it?",
+      "text": "In Indonesia, $30 offers were refused even though that equalled two weeks’ wages. But a 2011 study in India, with stakes of up to 40 weeks’ wages, found that as the stakes rise, rejection rates approach zero."
+    },
+    {
+      "type": "quiz",
+      "question": "Why do responders reject small offers, according to the two leading accounts?",
+      "options": [
+        "Punishment, or a self-control lapse",
+        "They misread the amount",
+        "They expect a second round",
+        "They want to end the game fast"
+      ],
+      "answer": 0,
+      "explanation": "One account calls rejection altruistic punishment, a lesson for the proposer; another calls it a failure to inhibit the urge to punish. Intoxicated players reject more, which supports the second."
+    }
+  ],
+  "tags": [
+    "behaviouraleconomics",
+    "fairness",
+    "gametheory"
+  ],
+  "source": {
+    "label": "Wikipedia: Ultimatum game",
+    "url": "https://en.wikipedia.org/wiki/Ultimatum_game"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
