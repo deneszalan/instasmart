@@ -9,7 +9,7 @@
     "alt": "Dozens of large round fibreglass discs hanging below the domed ceiling of the Royal Albert Hall, lit pink and purple above the tiers of boxes.",
     "credit": "Marathon · CC BY-SA 2.0"
   },
-  "body": "Queen Victoria opened London’s Royal Albert Hall on 29 March 1871, and its acoustic problems became obvious at the very first concert: the huge oval hall under its glass dome threw back a strong echo. A canvas awning hung below the dome didn’t cure it, and nor did fluted aluminium panels in 1949. The fix finally came in **1969**, when large fibreglass acoustic diffusing discs, nicknamed ‘mushrooms’ or ‘flying saucers’, were hung below the ceiling to scatter the sound instead of letting it bounce straight back.",
+  "body": "Queen Victoria opened London’s Royal Albert Hall on 29 March 1871, and its acoustic problems became obvious at the very first concert: the huge oval hall under its glass dome threw back a strong echo. Engineers tried more than one cure, but the acoustics were not properly tackled until **1969**, when large fibreglass acoustic diffusing discs, nicknamed ‘mushrooms’ or ‘flying saucers’, were hung below the ceiling to scatter the sound instead of letting it bounce straight back.",
   "slides": [
     {
       "type": "order",
@@ -24,35 +24,43 @@
     {
       "type": "quote",
       "text": "The only place where a British composer could be sure of hearing his work twice.",
-      "attribution": "Old joke about the Royal Albert Hall’s echo"
+      "attribution": "A joke once told about the Royal Albert Hall"
+    },
+    {
+      "type": "spectrum",
+      "heading": "Curing the echo",
+      "min": 1860,
+      "max": 2000,
+      "format": "year",
+      "marks": [
+        { "label": "Hall opens", "value": 1871 },
+        { "label": "Aluminium panels", "value": 1949 },
+        { "label": "The ‘mushrooms’", "value": 1969, "emphasis": true }
+      ],
+      "note": "The canvas awning went up early on; the source gives no exact year."
     },
     {
       "type": "image",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Royal_Albert_Hall_-_Central_View_169.jpg/960px-Royal_Albert_Hall_-_Central_View_169.jpg",
       "alt": "The inside of the Royal Albert Hall seen from a box: red tiers of seats curving round the arena, the great organ behind the stage, and rows of pale discs hanging from the ceiling.",
-      "caption": "The hall from the Grand Tier. It seats 5,272, and behind the stage stands the organ known as the ‘Voice of Jupiter’.",
+      "caption": "The hall from the Grand Tier, with the great organ behind the stage and the discs hanging overhead.",
       "fit": "cover",
       "credit": "Colin · CC BY-SA 4.0"
     },
     {
-      "type": "place",
-      "question": "In what year were the ‘mushrooms’ finally hung?",
-      "min": 1871,
-      "max": 2000,
+      "type": "estimate",
+      "question": "How many pipes does the hall’s great organ, the ‘Voice of Jupiter’, have?",
+      "min": 100,
+      "max": 20000,
       "step": 1,
-      "answer": 1969,
-      "format": "year",
-      "ends": ["Opening, 1871", "2000"],
-      "hints": [
-        { "label": "Proms arrive", "value": 1941 }
-      ],
-      "explanation": "1969, 98 years after the hall opened. Until then the acoustics were never properly tackled."
+      "answer": 9997,
+      "explanation": "9,997 pipes, spread over 147 stops."
     },
     {
       "type": "stat",
-      "value": "9,997",
-      "label": "pipes in the hall’s organ, the ‘Voice of Jupiter’, spread over 147 stops",
-      "text": "The Proms have been held in the hall every summer since 1941, after their old home, the Queen’s Hall, was destroyed in an air raid."
+      "value": "5,272",
+      "label": "seats in the oval hall, about 67 by 56 m inside",
+      "text": "The Proms have been held there every summer since 1941, after their old home, the Queen’s Hall, was destroyed in an air raid."
     }
   ],
   "tags": ["acoustics", "london", "concerthalls", "echo"],
