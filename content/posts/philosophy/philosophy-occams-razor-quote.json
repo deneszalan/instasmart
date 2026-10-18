@@ -11,6 +11,7 @@
       "heading": "The slogan came almost 300 years after Ockham",
       "min": 1250,
       "max": 1700,
+      "format": "year",
       "ends": [
         "1250",
         "1700"

@@ -32,9 +32,56 @@
       "text": "Quasicrystalline patterns are ordered and rich in fivefold symmetry, yet never repeat at regular intervals. Real quasicrystals were only discovered in 1982."
     },
     {
+      "type": "spectrum",
+      "heading": "Eight centuries from tiles to physics",
+      "min": 1150,
+      "max": 2050,
+      "format": "year",
+      "ends": [
+        "Earlier",
+        "Later"
+      ],
+      "marks": [
+        {
+          "label": "Girih patterns spread",
+          "value": 1200
+        },
+        {
+          "label": "Darb-i Imam shrine, Isfahan",
+          "value": 1453,
+          "emphasis": true
+        },
+        {
+          "label": "Penrose tilings (1970s)",
+          "value": 1975
+        },
+        {
+          "label": "Quasicrystals discovered",
+          "value": 1982
+        },
+        {
+          "label": "Lu and Steinhardt’s paper",
+          "value": 2007
+        }
+      ],
+      "note": "Girih decoration took off from around 1200; Penrose described his tilings in the 1970s."
+    },
+    {
       "type": "text",
       "heading": "What it doesn’t mean",
       "text": "Nobody claims medieval artisans knew modern quasicrystal math. They likely drafted designs with compass and straightedge, using templates like the Topkapı Scroll."
+    },
+    {
+      "type": "odd",
+      "heading": "Which is not one of the five girih tiles?",
+      "items": [
+        "Decagon",
+        "Bowtie",
+        "Triangle",
+        "Rhombus"
+      ],
+      "answer": 2,
+      "explanation": "Lu and Steinhardt’s five tiles are a decagon, a pentagon, a bowtie, a rhombus and an elongated hexagon. There is no triangle among them."
     }
   ],
   "tags": [

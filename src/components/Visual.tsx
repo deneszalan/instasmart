@@ -1,7 +1,7 @@
 import { useId, type CSSProperties, type ReactNode } from 'react';
 import type { Slide } from '../types';
 import { inline } from '../lib/markdown';
-import { withUnit } from '../lib/format';
+import { guessFormat, withUnit } from '../lib/format';
 
 type Of<T extends Slide['type']> = Extract<Slide, { type: T }>;
 
@@ -186,6 +186,7 @@ export function SpectrumSlideView({ slide }: { slide: Of<'spectrum'> }) {
   const span = slide.max - slide.min;
   const yOf = (v: number) => bottom - ((v - slide.min) / span) * (bottom - top);
   const marks = slide.marks.map((m) => ({ ...m, y: yOf(m.value) })).sort((a, b) => a.y - b.y);
+  const format = slide.format ?? guessFormat(slide.unit, [slide.min, slide.max, ...slide.marks.map((m) => m.value)]);
   // Labels keep a minimum gap: nudged down from the top, then back up if they run off the bottom.
   const GAP = 32;
   const ys = marks.map((m) => m.y);
@@ -197,7 +198,7 @@ export function SpectrumSlideView({ slide }: { slide: Of<'spectrum'> }) {
   }
   const [low, high] = slide.colors ?? ['#38bdf8', '#fbbf24'];
   const mid = barX + barW / 2;
-  const describe = marks.map((m) => `${m.label}: ${withUnit(m.value, slide.unit)}`).join(', ');
+  const describe = marks.map((m) => `${m.label}: ${withUnit(m.value, slide.unit, format)}`).join(', ');
   return (
     <Frame kicker="On the scale" heading={slide.heading} note={slide.note}>
       <svg className="spectrum" viewBox={`0 0 ${W} 240`} role="img" aria-label={describe}>
@@ -226,7 +227,7 @@ export function SpectrumSlideView({ slide }: { slide: Of<'spectrum'> }) {
               {m.label}
             </text>
             <text className="spectrum__value" x={barX + barW + 30} y={ys[i] + 12}>
-              {withUnit(m.value, slide.unit)}
+              {withUnit(m.value, slide.unit, format)}
             </text>
           </g>
         ))}

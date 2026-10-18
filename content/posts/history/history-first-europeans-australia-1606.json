@@ -30,6 +30,41 @@
       "text": "Janszoon’s crew went ashore on the Gulf of Carpentaria side of Cape York, near where Weipa stands today."
     },
     {
+      "type": "spectrum",
+      "heading": "Europeans reach Australia",
+      "min": 1600,
+      "max": 1800,
+      "format": "year",
+      "ends": [
+        "Earlier",
+        "Later"
+      ],
+      "marks": [
+        {
+          "label": "Janszoon lands, Cape York",
+          "value": 1606,
+          "emphasis": true
+        },
+        {
+          "label": "Hartog lands, Shark Bay",
+          "value": 1616
+        },
+        {
+          "label": "Tasman sights Tasmania",
+          "value": 1642
+        },
+        {
+          "label": "Cook lands, Botany Bay",
+          "value": 1770
+        },
+        {
+          "label": "The First Fleet arrives",
+          "value": 1788
+        }
+      ],
+      "note": "Dirk Hartog made the first landfall on the west coast; Abel Tasman named Van Diemen’s Land."
+    },
+    {
       "type": "compare",
       "heading": "What he thought he’d found",
       "left": {

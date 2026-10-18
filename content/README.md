@@ -93,7 +93,7 @@ Each slide is a 4:5 card on the post's gradient. Pick the type that fits the ide
 | `chart` | Compare 2–6 numbers as bars | `{ "type": "chart", "heading": "≤80", "items": [{ "label": "≤28", "value": 14.9, "emphasis"?: true }, … 2–6], "unit"?: "t", "note"?: "≤100" }` |
 | `pictogram` | A share: "1 in 4", "71 of 100" | `{ "type": "pictogram", "heading": "≤90", "icon": "🧍", "total": 4, "count": 1, "note"?: "≤100" }` |
 | `scale` | How much bigger one thing is than another | `{ "type": "scale", "heading": "≤80", "items": [{ "label": "≤20", "value": 1 }, … 2–4], "unit"?: "Earths", "note"?: "≤100" }` |
-| `spectrum` | Where things sit on one measure: dB, pH, °C, years | `{ "type": "spectrum", "heading": "≤80", "min": 0, "max": 140, "unit"?: "dB", "ends"?: ["Silence", "Pain"], "marks": [{ "label": "≤28", "value": 30, "emphasis"?: true }, … 2–6], "colors"?: ["#38bdf8", "#fbbf24"], "note"? }` |
+| `spectrum` | Where things sit on one measure: dB, pH, °C, years | `{ "type": "spectrum", "heading": "≤80", "min": 0, "max": 140, "unit"?: "dB", "ends"?: ["Silence", "Pain"], "marks": [{ "label": "≤28", "value": 30, "emphasis"?: true }, … 2–6], "format"?: "year", "colors"?: ["#38bdf8", "#fbbf24"], "note"? }` |
 | `flow` | A process or a cycle in 3–5 steps | `{ "type": "flow", "heading": "≤60", "steps": [{ "icon"?: "💉", "label": "≤44" }, … 3–5], "cycle"?: true }` |
 | `match` | Pair things up: person and discovery, word and meaning | `{ "type": "match", "heading": "≤60", "pairs": [{ "left": "≤28", "right": "≤28" }, … 3–5], "explanation"?: "≤160" }` |
 | `sort` | Fact or myth, A or B, one item at a time | `{ "type": "sort", "heading": "≤60", "bins": ["Fact", "Myth"], "items": [{ "text": "≤60", "bin": 0 }, … 3–5], "explanation"?: "≤160" }` |
@@ -102,7 +102,7 @@ Each slide is a 4:5 card on the post's gradient. Pick the type that fits the ide
 | `rank` | Guess the order of 3–5 numbers; the bars then reveal | `{ "type": "rank", "heading": "≤80", "items": [{ "label": "≤28", "value": 14.9 }, … 3–5, all different], "unit"?, "note"?, "explanation"?: "≤160" }` |
 | `higher` | Higher or lower, one bar at a time | `{ "type": "higher", "heading": "≤80", "items": [{ "label": "≤28", "value": 2 }, … 3–5 in play order], "unit"?, "note"?, "explanation"?: "≤160" }` |
 | `fill` | Guess a share by lighting up icons | `{ "type": "fill", "question": "≤120", "icon": "🧍", "total": 10, "answer": 3, "explanation": "≤200" }` |
-| `place` | Put a value on a spectrum, with known points as clues | `{ "type": "place", "question": "≤120", "min": 0, "max": 140, "step"?: 1, "answer": 110, "unit"?: "dB", "ends"?: ["Silence", "Pain"], "hints"?: [{ "label": "≤14", "value": 30 }, … ≤4], "colors"?, "explanation": "≤200" }` |
+| `place` | Put a value on a spectrum, with known points as clues | `{ "type": "place", "question": "≤120", "min": 0, "max": 140, "step"?: 1, "answer": 110, "unit"?: "dB", "ends"?: ["Silence", "Pain"], "hints"?: [{ "label": "≤14", "value": 30 }, … ≤4], "format"?: "year", "colors"?, "explanation": "≤200" }` |
 | `image` | A photo or a diagram | `{ "type": "image", "src": "orbit.svg", "alt": "…", "caption"?: "≤200", "fit"?: "cover" \| "contain", "credit"?: "≤120" }` |
 
 Use `"fit": "cover"` for photos (they fill the card) and `"fit": "contain"` for diagrams (the whole image shows on the gradient).
@@ -114,7 +114,7 @@ The app draws these from the numbers in the JSON, so they need no image file and
 - `chart`: a comparison, as bars. 2–6 items, longest bar at full width, values in one `unit`. Mark the item the post is about with `"emphasis": true`. Put the year, the measure or a caveat in `note`.
 - `pictogram`: one share, as a grid of icons. `count` of `total` light up: "1 in 4" is `1` of `4`, "71%" is `71` of `100`. Pick an `icon` that fits (🧍 people, 🌍 planets, 🟦 anything). Up to 100 icons.
 - `scale`: "X times bigger", as circles whose areas are proportional to the values. 2–4 items, smallest first. With a ratio above a few thousand the small one becomes a dot, which can be the whole point.
-- `spectrum`: where things sit on one measure, as marks along a bar from `min` to `max`. 2–6 marks, each inside the range; `ends` names the two extremes; `colors` sets the bar's colours at the low and high ends. Good for decibels, pH, temperatures, frequencies, years.
+- `spectrum`: where things sit on one measure, as marks along a bar from `min` to `max`. 2–6 marks, each inside the range; `ends` names the two extremes; `colors` sets the bar's colours at the low and high ends. Good for decibels, pH, temperatures, frequencies, years. For years, add `"format": "year"` so 1963 is not shown as 1,963 (the app assumes it for unit-less whole numbers between 1000 and 2100).
 - `flow`: how something happens, in 3–5 steps with an emoji each. `"cycle": true` when the last step leads back to the first.
 
 Numbers are plain JSON numbers (`14.9`, not `"14.9"`), rounded as the source gives them; the app formats them. Only use figures you can point to in the source.

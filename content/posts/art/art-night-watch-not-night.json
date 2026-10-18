@@ -51,6 +51,45 @@
       "text": "The painting was attacked with a knife in 1975 and sprayed with acid in 1990. In July 2019 a long restoration began inside a specially built glass enclosure in the museum, so that visitors could watch the work."
     },
     {
+      "type": "spectrum",
+      "heading": "Four centuries of the Night Watch",
+      "min": 1600,
+      "max": 2050,
+      "format": "year",
+      "ends": [
+        "Earlier",
+        "Later"
+      ],
+      "marks": [
+        {
+          "label": "Completed",
+          "value": 1642,
+          "emphasis": true
+        },
+        {
+          "label": "Trimmed for the Town Hall",
+          "value": 1715
+        },
+        {
+          "label": "Attacked with a knife",
+          "value": 1975
+        },
+        {
+          "label": "Sprayed with acid",
+          "value": 1990
+        },
+        {
+          "label": "Public restoration begins",
+          "value": 2019
+        },
+        {
+          "label": "Shown with AI-made edges",
+          "value": 2021
+        }
+      ],
+      "note": "The dark varnish that earned the nickname came off in the 1940s."
+    },
+    {
       "type": "order",
       "heading": "Earliest first",
       "items": [

@@ -746,6 +746,14 @@
                 "minLength": 1,
                 "maxLength": 16
               },
+              "format": {
+                "description": "\"year\" shows 1963 rather than 1,963. Assumed for unit-less whole numbers between 1000 and 2100.",
+                "type": "string",
+                "enum": [
+                  "number",
+                  "year"
+                ]
+              },
               "ends": {
                 "description": "Words at the low and high ends, e.g. [\"Acid\", \"Alkaline\"].",
                 "type": "array",
@@ -1260,6 +1268,14 @@
                 "type": "string",
                 "minLength": 1,
                 "maxLength": 16
+              },
+              "format": {
+                "description": "\"year\" shows 1963 rather than 1,963. Assumed for unit-less whole numbers between 1000 and 2100.",
+                "type": "string",
+                "enum": [
+                  "number",
+                  "year"
+                ]
               },
               "ends": {
                 "description": "Words at the low and high ends, e.g. [\"Silence\", \"Pain\"].",

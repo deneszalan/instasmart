@@ -255,6 +255,7 @@ export const SpectrumSlide = z
       .max(6)
       .describe('Points on the scale, each between min and max.'),
     unit: text(16).optional(),
+    format: z.enum(['number', 'year']).optional().describe('"year" shows 1963 rather than 1,963. Assumed for unit-less whole numbers between 1000 and 2100.'),
     ends: z.tuple([text(16), text(16)]).optional().describe('Words at the low and high ends, e.g. ["Acid", "Alkaline"].'),
     colors: z.tuple([hexColor, hexColor]).optional().describe('Bar colours at the low and high ends.'),
     note: text(100).optional(),
@@ -414,6 +415,7 @@ export const PlaceSlide = z
     step: z.number().positive().optional().describe('Slider step; defaults to a hundredth of the range.'),
     answer: z.number().describe('The real value, between min and max.'),
     unit: text(16).optional(),
+    format: z.enum(['number', 'year']).optional().describe('"year" shows 1963 rather than 1,963. Assumed for unit-less whole numbers between 1000 and 2100.'),
     ends: z.tuple([text(16), text(16)]).optional().describe('Words at the low and high ends, e.g. ["Silence", "Pain"].'),
     colors: z.tuple([hexColor, hexColor]).optional().describe('Bar colours at the low and high ends.'),
     hints: z

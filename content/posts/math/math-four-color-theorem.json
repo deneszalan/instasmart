@@ -7,6 +7,37 @@
   "body": "It was conjectured in 1852 that any map can be coloured with just four colours so that regions sharing a border never match. Simple to state, it resisted proof for over a century. In 1976 Kenneth Appel and Wolfgang Haken finally succeeded by reducing the problem to 1,834 special configurations and checking them one by one by computer. It was the first major theorem proved this way, and some mathematicians were uneasy that no human could check it by hand.",
   "slides": [
     {
+      "type": "spectrum",
+      "heading": "A century and a half from guess to checked proof",
+      "min": 1850,
+      "max": 2010,
+      "format": "year",
+      "marks": [
+        {
+          "label": "Guthrie’s conjecture",
+          "value": 1852
+        },
+        {
+          "label": "Kempe’s flawed proof",
+          "value": 1879
+        },
+        {
+          "label": "Heawood finds the flaw",
+          "value": 1890
+        },
+        {
+          "label": "Appel–Haken computer proof",
+          "value": 1976,
+          "emphasis": true
+        },
+        {
+          "label": "Gonthier’s formal check",
+          "value": 2005
+        }
+      ],
+      "note": "Heawood salvaged a five-colour theorem in 1890; the four-colour case waited until 1976."
+    },
+    {
       "type": "estimate",
       "question": "How many special map configurations did the 1976 computer proof have to check?",
       "min": 0,

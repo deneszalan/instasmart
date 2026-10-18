@@ -7,6 +7,38 @@
   "body": "Around 1637, Pierre de Fermat wrote in his copy of the ancient Greek text Arithmetica that a^n + b^n = c^n has no solutions in positive whole numbers when n is greater than 2. He added that he had a truly marvellous proof the margin was too narrow to contain. Generations of mathematicians failed to find one, until Andrew Wiles proved it in 1994 using advanced 20th-century tools, which is why most experts doubt Fermat ever had a valid proof.",
   "slides": [
     {
+      "type": "spectrum",
+      "heading": "358 years from a margin note to a proof",
+      "min": 1600,
+      "max": 2000,
+      "format": "year",
+      "marks": [
+        {
+          "label": "Fermat’s margin note",
+          "value": 1637,
+          "emphasis": true
+        },
+        {
+          "label": "Euler proves n = 3",
+          "value": 1770
+        },
+        {
+          "label": "Lamé proves n = 7",
+          "value": 1839
+        },
+        {
+          "label": "Ribet links it to curves",
+          "value": 1986
+        },
+        {
+          "label": "Wiles’s proof",
+          "value": 1994,
+          "emphasis": true
+        }
+      ],
+      "note": "Fermat had settled n = 4 himself; Legendre and Dirichlet did n = 5 around 1825."
+    },
+    {
       "type": "quiz",
       "question": "Why do most experts doubt that Fermat really had a proof?",
       "options": [
@@ -17,6 +49,18 @@
       ],
       "answer": 1,
       "explanation": "Generations of mathematicians failed, and Andrew Wiles’s 1994 proof relies on advanced 20th-century mathematics, so most experts doubt Fermat ever had a valid proof."
+    },
+    {
+      "type": "odd",
+      "heading": "Which equation has whole-number solutions?",
+      "items": [
+        "a² + b² = c²",
+        "a³ + b³ = c³",
+        "a⁴ + b⁴ = c⁴",
+        "a⁵ + b⁵ = c⁵"
+      ],
+      "answer": 0,
+      "explanation": "3² + 4² = 5² is one of endless Pythagorean triples. For every exponent above 2 no positive whole numbers work: that is Fermat’s Last Theorem."
     }
   ],
   "tags": [

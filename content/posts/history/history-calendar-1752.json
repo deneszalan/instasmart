@@ -7,6 +7,45 @@
   "body": "To switch from the Julian to the Gregorian calendar, which Catholic Europe had used since 1582, Britain and its colonies dropped eleven days: Wednesday 2 September 1752 was followed by Thursday 14 September. Rent and contract dates were shifted so nobody gained or lost, which is why the UK tax year still ends on 5 April. Tales of mobs demanding ‘give us our eleven days’ are very likely a myth.",
   "slides": [
     {
+      "type": "spectrum",
+      "heading": "When countries switched to the Gregorian calendar",
+      "min": 1550,
+      "max": 1950,
+      "format": "year",
+      "ends": [
+        "Earlier",
+        "Later"
+      ],
+      "marks": [
+        {
+          "label": "Spain, Portugal, France",
+          "value": 1582
+        },
+        {
+          "label": "Denmark, Protestant Germany",
+          "value": 1700
+        },
+        {
+          "label": "Britain and its colonies",
+          "value": 1752,
+          "emphasis": true
+        },
+        {
+          "label": "Japan",
+          "value": 1873
+        },
+        {
+          "label": "Russia",
+          "value": 1918
+        },
+        {
+          "label": "Greece",
+          "value": 1923
+        }
+      ],
+      "note": "The later the switch, the more days to drop: 10 in 1582, 11 in 1752, 13 in 1918."
+    },
+    {
       "type": "quiz",
       "question": "What do historians make of the tales of mobs shouting ‘give us our eleven days’?",
       "options": [
@@ -16,6 +55,18 @@
       ],
       "answer": 0,
       "explanation": "Those tales are very likely a myth. Rent and contract dates were shifted so nobody gained or lost, which is why the UK tax year still ends on 5 April."
+    },
+    {
+      "type": "odd",
+      "heading": "Which country did not switch in 1582?",
+      "items": [
+        "Spain",
+        "Portugal",
+        "France",
+        "Britain"
+      ],
+      "answer": 3,
+      "explanation": "Spain, Portugal and France all adopted the Gregorian calendar in 1582, the year Pope Gregory XIII introduced it. Britain and its colonies held out until 1752."
     }
   ],
   "tags": [

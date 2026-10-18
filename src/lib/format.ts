@@ -9,3 +9,9 @@ export function withUnit(n: number, unit?: string, format?: NumberFormat): strin
   if (!unit) return formatNumber(n, format);
   return /^[%°×]/.test(unit) ? `${formatNumber(n, format)}${unit}` : `${formatNumber(n, format)} ${unit}`;
 }
+
+/** The format to use when a slide names none: unit-less whole numbers that all look like years are shown as years. */
+export function guessFormat(unit: string | undefined, values: number[]): NumberFormat {
+  if (unit) return 'number';
+  return values.every((v) => Number.isInteger(v) && v >= 1000 && v <= 2100) ? 'year' : 'number';
+}

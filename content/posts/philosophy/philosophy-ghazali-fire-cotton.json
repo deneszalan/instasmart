@@ -60,6 +60,7 @@
       "heading": "Seven centuries of the same doubt",
       "min": 1000,
       "max": 1800,
+      "format": "year",
       "ends": [
         "1000",
         "1800"

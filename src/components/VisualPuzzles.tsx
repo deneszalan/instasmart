@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Check, RotateCcw, X } from 'lucide-react';
 import type { Slide } from '../types';
-import { withUnit } from '../lib/format';
+import { guessFormat, withUnit } from '../lib/format';
 import { stableShuffle } from '../lib/interactive';
 import { inline } from '../lib/markdown';
 import { useRecord } from './useRecord';
@@ -217,6 +217,8 @@ export function PlaceSlideView({ slide, challengeId }: Props<'place'>) {
   const off = Math.abs(value - slide.answer) / span;
   const verdict = off <= 0.02 ? 'Spot on!' : off <= 0.1 ? 'Close!' : off <= 0.25 ? 'Not far off.' : 'Way off, but now you know.';
   const [low, high] = slide.colors ?? ['#38bdf8', '#fbbf24'];
+  const format = slide.format ?? guessFormat(slide.unit, [slide.min, slide.max, slide.answer, ...(slide.hints ?? []).map((h) => h.value)]);
+  const show = (v: number) => withUnit(v, slide.unit, format);
 
   const lock = () => {
     setLocked(true);
@@ -233,7 +235,7 @@ export function PlaceSlideView({ slide, challengeId }: Props<'place'>) {
             {slide.hints.map((h, i) => (
               <span key={i} className={`place__hint place__hint--${i % 2}`} style={{ left: `${Math.min(92, Math.max(8, pct(h.value)))}%` }}>
                 {h.label}
-                <small>{withUnit(h.value, slide.unit)}</small>
+                <small>{show(h.value)}</small>
               </span>
             ))}
           </div>
@@ -253,22 +255,22 @@ export function PlaceSlideView({ slide, challengeId }: Props<'place'>) {
             value={value}
             onChange={(e) => setValue(Number(e.target.value))}
             aria-label={slide.question}
-            aria-valuetext={withUnit(value, slide.unit)}
+            aria-valuetext={show(value)}
           />
         )}
         <div className="estimate__ends" aria-hidden="true">
-          <span>{slide.ends?.[0] ?? withUnit(slide.min, slide.unit)}</span>
-          <span>{slide.ends?.[1] ?? withUnit(slide.max, slide.unit)}</span>
+          <span>{slide.ends?.[0] ?? show(slide.min)}</span>
+          <span>{slide.ends?.[1] ?? show(slide.max)}</span>
         </div>
       </div>
       {locked ? (
         <div role="status" aria-live="polite">
           <p className="place__legend">
             <span>
-              <i className="place__key place__key--you" /> You: {withUnit(value, slide.unit)}
+              <i className="place__key place__key--you" /> You: {show(value)}
             </span>
             <span>
-              <i className="place__key place__key--real" /> Real: {withUnit(slide.answer, slide.unit)}
+              <i className="place__key place__key--real" /> Real: {show(slide.answer)}
             </span>
           </p>
           <p className="interactive__result">
@@ -279,7 +281,7 @@ export function PlaceSlideView({ slide, challengeId }: Props<'place'>) {
       ) : (
         <>
           <p className="estimate__value place__value" aria-live="polite">
-            {withUnit(value, slide.unit)}
+            {show(value)}
           </p>
           <button className="btn btn--light" onClick={lock}>
             Lock in my guess

@@ -31,6 +31,60 @@
       "type": "text",
       "heading": "Gutenberg’s edge",
       "text": "His Bible appeared in the 1450s, 78 years after the Jikji. An alphabet of a few dozen letters, plus a press and oil-based ink, made reusable type cheap."
+    },
+    {
+      "type": "spectrum",
+      "heading": "Four centuries of movable type",
+      "min": 1000,
+      "max": 1500,
+      "format": "year",
+      "ends": [
+        "Earlier",
+        "Later"
+      ],
+      "marks": [
+        {
+          "label": "Bi Sheng’s clay type (1040s)",
+          "value": 1045,
+          "emphasis": true
+        },
+        {
+          "label": "Wang Zhen’s wooden type",
+          "value": 1300
+        },
+        {
+          "label": "The Jikji, in metal type",
+          "value": 1377
+        },
+        {
+          "label": "Gutenberg’s Bible (1450s)",
+          "value": 1455
+        }
+      ],
+      "note": "Bi Sheng worked in the 1040s and Gutenberg’s Bible appeared in the 1450s; the marks sit mid-decade."
+    },
+    {
+      "type": "match",
+      "heading": "Who made what?",
+      "pairs": [
+        {
+          "left": "Bi Sheng",
+          "right": "Fired-clay type"
+        },
+        {
+          "left": "Wang Zhen",
+          "right": "Working wooden type"
+        },
+        {
+          "left": "Shen Kuo",
+          "right": "The Dream Pool Essays"
+        },
+        {
+          "left": "Gutenberg",
+          "right": "A Bible in the 1450s"
+        }
+      ],
+      "explanation": "Bi Sheng’s clay type is known only from Shen Kuo’s Dream Pool Essays; Wang Zhen made wooden type work around 1300; Gutenberg printed his Bible in the 1450s."
     }
   ],
   "tags": [
