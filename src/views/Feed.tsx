@@ -1,12 +1,14 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Check } from 'lucide-react';
-import type { Post } from '../types';
+import type { KnowledgeCard, Post } from '../types';
 import { LIBRARY } from '../data/library';
+import { authorGroup } from '../lib/authors';
 import { endlessFeed, take, type FeedEntry } from '../lib/feed';
 import { createWikiStream, type WikiPost } from '../lib/wiki';
 import { useStore } from '../state/store';
 import { PostView } from '../components/Post';
 import { StoriesBar } from '../components/StoriesBar';
+import { WRITERS, WriterChips } from '../components/WriterChips';
 
 type FeedItem = Post | { kind: 'caught-up'; key: string; round: number };
 
@@ -14,13 +16,38 @@ const PAGE_SIZE = 6;
 /** One live Wikipedia post after every this many library cards. */
 const WIKI_EVERY = 4;
 
-function CaughtUp({ round }: { round: number }) {
+interface CaughtUpProps {
+  round: number;
+  total: number;
+  /** Set when the feed shows one writer's posts; that feed ends here instead of reshuffling. */
+  writer?: string;
+  onShowAll: () => void;
+}
+
+function CaughtUp({ round, total, writer, onShowAll }: CaughtUpProps) {
+  const pieces = `${total} ${total === 1 ? 'piece' : 'pieces'}`;
+  if (writer) {
+    return (
+      <div className="caught-up" role="note">
+        <span className="caught-up__icon">
+          <Check size={30} strokeWidth={2.5} />
+        </span>
+        <p className="caught-up__title">
+          That’s all {pieces} by {writer}
+        </p>
+        <p className="caught-up__sub">Switch back to everyone to keep scrolling.</p>
+        <button className="btn btn--primary" onClick={onShowAll}>
+          Show everyone’s posts
+        </button>
+      </div>
+    );
+  }
   return (
     <div className="caught-up" role="note">
       <span className="caught-up__icon">
         <Check size={30} strokeWidth={2.5} />
       </span>
-      <p className="caught-up__title">You’ve explored all {LIBRARY.length} pieces</p>
+      <p className="caught-up__title">You’ve explored all {pieces}</p>
       <p className="caught-up__sub">
         {round === 1 ? 'Nice work. ' : `That’s round ${round}. `}
         Keep scrolling for a fresh shuffle — repetition is how things stick.
@@ -29,16 +56,38 @@ function CaughtUp({ round }: { round: number }) {
   );
 }
 
-export function Feed() {
+interface FeedProps {
+  /** "Written by" filter: an author group id, or "" for everyone. The parent remounts the feed when it changes. */
+  by: string;
+  onBy: (id: string) => void;
+}
+
+export function Feed({ by, onBy }: FeedProps) {
   const { state } = useStore();
-  const wikiEnabled = state.settings.wiki;
+  // Wikipedia's posts aren't by any of the writers, so they only appear in the unfiltered feed.
+  const wikiEnabled = state.settings.wiki && !by;
+  const writer = WRITERS.find((w) => w.id === by)?.label;
+
+  /** Next page of entries. A one-writer feed stops after its first full round. */
+  const takePage = useCallback(
+    (stream: Generator<FeedEntry, never, void>) => {
+      const entries = take(stream, PAGE_SIZE);
+      const end = by ? entries.findIndex((e) => e.type === 'caught-up') : -1;
+      return end === -1 ? { entries, done: false } : { entries: entries.slice(0, end + 1), done: true };
+    },
+    [by],
+  );
 
   // The stream is created once per visit, putting pieces you haven't read yet first.
   const [session] = useState(() => {
-    const feed = endlessFeed(LIBRARY, { seed: Date.now(), seen: new Set(Object.keys(state.seen)) });
-    return { feed, firstPage: take(feed, PAGE_SIZE) };
+    const cards: KnowledgeCard[] = by ? LIBRARY.filter((c) => authorGroup(c)?.id === by) : LIBRARY;
+    if (cards.length === 0) return { cards, feed: null, firstPage: [], done: true };
+    const feed = endlessFeed(cards, { seed: Date.now(), seen: new Set(Object.keys(state.seen)) });
+    const first = takePage(feed);
+    return { cards, feed, firstPage: first.entries, done: first.done };
   });
   const { feed } = session;
+  const [ended, setEnded] = useState(session.done);
   const wiki = useRef(createWikiStream());
   const wikiBuffer = useRef<WikiPost[]>([]);
   const wikiLoading = useRef(false);
@@ -84,31 +133,56 @@ export function Feed() {
   }, [topUpWiki]);
 
   const loadMore = useCallback(() => {
-    const more = toItems(take(feed, PAGE_SIZE));
+    if (!feed || ended) return;
+    const page = takePage(feed);
+    const more = toItems(page.entries);
     setItems((prev) => prev.concat(more));
+    if (page.done) setEnded(true);
     void topUpWiki();
-  }, [feed, toItems, topUpWiki]);
+  }, [feed, ended, takePage, toItems, topUpWiki]);
 
   // Re-observe after every page so a sentinel that is still on screen loads again.
   useEffect(() => {
     const el = sentinel.current;
-    if (!el) return;
+    if (!el || !feed || ended) return;
     const observer = new IntersectionObserver(([entry]) => entry.isIntersecting && loadMore(), {
       rootMargin: '0px 0px 1400px 0px',
     });
     observer.observe(el);
     return () => observer.disconnect();
-  }, [items.length, loadMore]);
+  }, [items.length, loadMore, feed, ended]);
 
   const visible = wikiEnabled ? items : items.filter((item) => item.kind !== 'wiki');
 
   return (
     <div className="feed">
       <StoriesBar />
-      {visible.map((item) =>
-        item.kind === 'caught-up' ? <CaughtUp key={item.key} round={item.round} /> : <PostView key={item.key} post={item} />,
+      <div className="feed__filter">
+        <WriterChips value={by} onChange={onBy} />
+      </div>
+      {!feed && (
+        <div className="empty">
+          <p className="empty__title">No posts by {writer ?? 'this writer'} yet</p>
+          <p className="empty__sub">They’ll show up here as soon as they’re added to the library.</p>
+          <button className="btn btn--primary" onClick={() => onBy('')}>
+            Show everyone’s posts
+          </button>
+        </div>
       )}
-      <div ref={sentinel} className="feed__loader" aria-hidden="true">
+      {visible.map((item) =>
+        item.kind === 'caught-up' ? (
+          <CaughtUp
+            key={item.key}
+            round={item.round}
+            total={session.cards.length}
+            writer={by ? (writer ?? 'this writer') : undefined}
+            onShowAll={() => onBy('')}
+          />
+        ) : (
+          <PostView key={item.key} post={item} />
+        ),
+      )}
+      <div ref={sentinel} className="feed__loader" aria-hidden="true" hidden={!feed || ended}>
         <div className="skeleton">
           <div className="skeleton__head">
             <span className="skeleton__circle" />

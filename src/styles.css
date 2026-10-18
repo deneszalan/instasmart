@@ -1563,6 +1563,15 @@ p {
   white-space: nowrap;
 }
 
+.feed__filter {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.feed__filter .chips--authors {
+  padding-top: 10px;
+}
+
 .chips--authors {
   align-items: center;
   padding-top: 8px;

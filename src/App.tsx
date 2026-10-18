@@ -64,8 +64,8 @@ function Shell() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
-    const keepFilters = tab === 'explore';
-    navigate({ tab, post: null, q: keepFilters ? route.q : '', by: keepFilters ? route.by : '' });
+    // The search stays with Explore; the "Written by" filter is shared by the feed and Explore.
+    navigate({ tab, post: null, q: tab === 'explore' ? route.q : '' });
   };
 
   const openPost = (id: string) => navigate({ post: id });
@@ -92,7 +92,7 @@ function Shell() {
 
       <main className="main">
         <div hidden={route.tab !== 'home'}>
-          <Feed />
+          <Feed key={route.by || 'everyone'} by={route.by} onBy={(by) => navigate({ by }, { replace: true })} />
         </div>
         {route.tab === 'explore' && (
           <Explore

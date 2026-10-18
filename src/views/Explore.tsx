@@ -3,9 +3,10 @@ import { Search, X } from 'lucide-react';
 import type { FieldId } from '../types';
 import { FIELDS } from '../data/fields';
 import { LIBRARY } from '../data/library';
-import { authorFilters, authorGroup } from '../lib/authors';
+import { authorGroup } from '../lib/authors';
 import { createRng, searchCards, shuffle } from '../lib/feed';
 import { Tile } from '../components/Tile';
+import { WRITERS, WriterChips } from '../components/WriterChips';
 
 interface ExploreProps {
   query: string;
@@ -19,8 +20,6 @@ interface ExploreProps {
 /** Every 10 tiles, two are tall — the mosaic look of an explore grid. */
 const isTall = (i: number) => i % 10 === 2 || i % 10 === 5;
 
-const AUTHORS = authorFilters(LIBRARY);
-
 export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExploreProps) {
   const [field, setField] = useState<FieldId | 'all'>('all');
   // A per-visit shuffle so the grid isn't grouped by field.
@@ -33,7 +32,7 @@ export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExplorePro
     return searchCards(filtered, query);
   }, [order, field, author, query]);
 
-  const authorLabel = AUTHORS.find((a) => a.id === author)?.label;
+  const authorLabel = WRITERS.find((w) => w.id === author)?.label;
   const fieldName = FIELDS.find((f) => f.id === field)?.name;
 
   return (
@@ -64,17 +63,7 @@ export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExplorePro
             </button>
           ))}
         </div>
-        <div className="chips chips--authors" role="group" aria-label="Written by">
-          <span className="chips__label">Written by</span>
-          <button aria-pressed={!author} className="chip" onClick={() => onAuthor('')}>
-            Anyone
-          </button>
-          {AUTHORS.map((a) => (
-            <button key={a.id} aria-pressed={author === a.id} className="chip" onClick={() => onAuthor(a.id)}>
-              {a.label} <span className="chip__count">{a.count}</span>
-            </button>
-          ))}
-        </div>
+        <WriterChips value={author} onChange={onAuthor} />
       </div>
 
       <p className="explore__count">
