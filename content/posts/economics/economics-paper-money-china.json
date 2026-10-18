@@ -49,6 +49,18 @@
       "value": "638 years",
       "label": "between China’s first state banknotes and Europe’s",
       "text": "From 1023 in Chengdu to 1661 in Stockholm."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did Chengdu’s merchants start issuing paper notes?",
+      "options": [
+        "Iron coins were too heavy to carry",
+        "Paper was cheaper than silver",
+        "The emperor banned coins",
+        "To pay foreign traders"
+      ],
+      "answer": 0,
+      "explanation": "Sichuan used iron coins, far too heavy in quantity. Six centuries later, Stockholm’s notes replaced plate-sized copper coins for the same reason."
     }
   ],
   "tags": [

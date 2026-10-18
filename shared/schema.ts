@@ -134,6 +134,61 @@ export const TimelineSlide = z
     }
   });
 
+export const QuizSlide = z
+  .object({
+    type: z.literal('quiz'),
+    question: text(140),
+    options: z.array(text(40)).min(2).max(4).describe('2–4 short answers; make the wrong ones plausible.'),
+    answer: z.number().int().min(0).describe('Index of the correct option, counting from 0.'),
+    explanation: text(200).describe('Shown after answering: why that is the answer.'),
+  })
+  .strict()
+  .superRefine((slide, ctx) => {
+    if (slide.answer >= slide.options.length) {
+      ctx.addIssue({ code: 'custom', path: ['answer'], message: `answer must be between 0 and ${slide.options.length - 1}` });
+    }
+  });
+
+export const RevealSlide = z
+  .object({
+    type: z.literal('reveal'),
+    prompt: text(140).describe('The teaser or question shown first.'),
+    answer: text(80).describe('Revealed when the reader taps.'),
+    detail: text(200).optional().describe('A line of context under the answer.'),
+  })
+  .strict();
+
+export const EstimateSlide = z
+  .object({
+    type: z.literal('estimate'),
+    question: text(120).describe('What to guess, e.g. "How hot is the surface of Venus?"'),
+    min: z.number(),
+    max: z.number(),
+    step: z.number().positive().optional().describe('Slider step; defaults to a hundredth of the range.'),
+    answer: z.number().describe('The real value, between min and max.'),
+    unit: text(16).optional().describe('Shown after the number, e.g. "km", "%", "°C".'),
+    explanation: text(200).describe('Shown after guessing.'),
+  })
+  .strict()
+  .superRefine((slide, ctx) => {
+    if (slide.max <= slide.min) ctx.addIssue({ code: 'custom', path: ['max'], message: 'max must be greater than min' });
+    else if (slide.answer < slide.min || slide.answer > slide.max) {
+      ctx.addIssue({ code: 'custom', path: ['answer'], message: 'answer must lie between min and max' });
+    }
+    if (slide.step !== undefined && slide.step > slide.max - slide.min) {
+      ctx.addIssue({ code: 'custom', path: ['step'], message: 'step must be smaller than the range' });
+    }
+  });
+
+export const OrderSlide = z
+  .object({
+    type: z.literal('order'),
+    heading: text(60).describe('The instruction, e.g. "Oldest first" or "Smallest to largest".'),
+    items: z.array(text(40)).min(3).max(5).describe('In the correct order; the app shuffles them.'),
+    explanation: text(160).optional().describe('Shown after the reader has ordered them.'),
+  })
+  .strict();
+
 export const Slide = z.discriminatedUnion('type', [
   TextSlide,
   ImageSlide,
@@ -142,6 +197,10 @@ export const Slide = z.discriminatedUnion('type', [
   QuoteSlide,
   CompareSlide,
   TimelineSlide,
+  QuizSlide,
+  RevealSlide,
+  EstimateSlide,
+  OrderSlide,
 ]);
 
 export const Source = z.object({ label: text(120), url: httpsUrl }).strict();

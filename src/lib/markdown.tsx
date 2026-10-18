@@ -11,7 +11,9 @@ export function inline(text: string): ReactNode {
     if (part.startsWith('**')) return <strong key={i}>{part.slice(2, -2)}</strong>;
     if (part.startsWith('`')) return <code key={i}>{part.slice(1, -1)}</code>;
     if (part.startsWith('[')) {
-      const [, label, href] = /^\[([^\]]+)\]\((.+)\)$/.exec(part)!;
+      const match = /^\[([^\]]+)\]\((.+)\)$/.exec(part);
+      if (!match) return <Fragment key={i}>{part}</Fragment>;
+      const [, label, href] = match;
       return (
         <a key={i} href={href} target="_blank" rel="noreferrer">
           {label}

@@ -26,6 +26,12 @@
       "type": "text",
       "heading": "The fine print",
       "text": "If the digits are all the same, like 1111, the step gives 0 and the trick stalls. Keep leading zeros when you sort, so 3087 becomes 8730 − 0378. Every other four-digit number arrives at 6174 in at most seven steps."
+    },
+    {
+      "type": "reveal",
+      "prompt": "Start from 2025. How many steps to 6174?",
+      "answer": "Six steps",
+      "detail": "2025 → 4995 → 5355 → 1998 → 8082 → 8532 → 6174."
     }
   ],
   "tags": [

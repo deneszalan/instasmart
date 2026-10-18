@@ -134,6 +134,14 @@ function slideParts(slide: Slide): string[] {
       return [`${slide.left.label}: ${slide.left.text}`, `${slide.right.label}: ${slide.right.text}`];
     case 'timeline':
       return slide.events.map((e) => `${e.when}: ${e.text}`);
+    case 'quiz':
+      return [slide.question, slide.options.join(' / '), slide.explanation];
+    case 'reveal':
+      return [slide.prompt, slide.answer, slide.detail ?? ''];
+    case 'estimate':
+      return [slide.question, `${slide.answer}${slide.unit ? ` ${slide.unit}` : ''}`, slide.explanation];
+    case 'order':
+      return [slide.items.join(' → '), slide.explanation ?? ''];
   }
 }
 

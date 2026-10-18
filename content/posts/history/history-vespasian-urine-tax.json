@@ -30,6 +30,18 @@
       "type": "text",
       "heading": "Still with us",
       "text": "Two thousand years on, public urinals in Italy are vespasiani and in France vespasiennes, and ‘money doesn’t stink’ is still the shrug of anyone taking cash from an unglamorous source."
+    },
+    {
+      "type": "quiz",
+      "question": "Who actually paid Vespasian’s urine tax?",
+      "options": [
+        "People using the urinals",
+        "The buyers who collected the urine",
+        "Every household in Rome",
+        "Roman soldiers"
+      ],
+      "answer": 1,
+      "explanation": "The tax fell on the trade: the fullers and tanners who bought urine from the public urinals paid it."
     }
   ],
   "tags": [

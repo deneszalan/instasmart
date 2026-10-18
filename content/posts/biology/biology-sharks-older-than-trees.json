@@ -7,6 +7,17 @@
   "body": "Scales from shark-like fish turn up in rocks about **450 million years** old, from the Late Ordovician. The first trees, such as Wattieza, didn’t appear until roughly 385 million years ago, and the earliest dinosaurs not until about 230 million years ago. The lineage outlived the dinosaurs, though the sharks we know today, with their modern body plan, only show up in the fossil record around 200 million years ago.",
   "slides": [
     {
+      "type": "order",
+      "heading": "Oldest first",
+      "items": [
+        "Shark-like fish",
+        "The first trees",
+        "The first dinosaurs",
+        "Sharks with today’s body plan"
+      ],
+      "explanation": "Shark-like scales: about 450 million years ago. Trees: about 385. Dinosaurs: about 230. Modern sharks: about 200."
+    },
+    {
       "type": "timeline",
       "heading": "Who came first",
       "events": [

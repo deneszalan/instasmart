@@ -5,6 +5,7 @@ import { CARD_BY_ID } from './data/library';
 import { useRoute, type Tab } from './lib/route';
 import { toast } from './lib/toast';
 import { streak, StoreProvider, useStore, type LearnState } from './state/store';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { PostView } from './components/Post';
 import { Sheet } from './components/Sheet';
 import { Toast } from './components/Toast';
@@ -133,8 +134,10 @@ function Shell() {
 
 export function App() {
   return (
-    <StoreProvider>
-      <Shell />
-    </StoreProvider>
+    <ErrorBoundary>
+      <StoreProvider>
+        <Shell />
+      </StoreProvider>
+    </ErrorBoundary>
   );
 }

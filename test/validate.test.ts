@@ -103,6 +103,24 @@ describe('validateContent', () => {
     expect(tall({ type: 'list', items: Array.from({ length: 6 }, () => 'A short item') })).toEqual([]);
   });
 
+  it('checks interactive slides', () => {
+    const check = (slide: object) =>
+      validateContent([file('content/posts/space/space-test-post.json', JSON.stringify(post({ slides: [slide] })))]).problems.map((p) => p.message);
+    expect(check({ type: 'quiz', question: 'Which planet is hottest?', options: ['Mercury', 'Venus'], answer: 1, explanation: 'Venus, thanks to its thick CO₂ atmosphere.' })).toEqual([]);
+    expect(check({ type: 'quiz', question: 'Which planet is hottest?', options: ['Mercury', 'Venus'], answer: 2, explanation: 'Venus.' })).toEqual([
+      'slides[0].answer: answer must be between 0 and 1',
+    ]);
+    expect(check({ type: 'estimate', question: 'How hot is Venus?', min: 0, max: 500, step: 10, answer: 464, unit: '°C', explanation: 'About 464 °C.' })).toEqual([]);
+    expect(check({ type: 'estimate', question: 'How hot is Venus?', min: 0, max: 400, answer: 464, explanation: 'About 464 °C.' })).toEqual([
+      'slides[0].answer: answer must lie between min and max',
+    ]);
+    expect(check({ type: 'order', heading: 'Closest to the Sun first', items: ['Mercury', 'Venus', 'Earth'] })).toEqual([]);
+    expect(check({ type: 'order', heading: 'Closest first', items: ['Mercury', 'Venus'] })).toEqual([
+      'slides[0].items: Too small: expected array to have >=3 items',
+    ]);
+    expect(check({ type: 'reveal', prompt: 'Which planet spins backwards?', answer: 'Venus' })).toEqual([]);
+  });
+
   it('turns schema errors into readable messages', () => {
     const { problems } = validateContent([
       file('content/posts/space/space-test-post.json', JSON.stringify(post({ tags: ['#Space'], slides: [{ type: 'list', items: ['one'] }] }))),

@@ -7,6 +7,16 @@
   "body": "In 1991, researchers at the University of Cambridge Computer Laboratory were tired of walking to the Trojan Room coffee machine and finding it empty. Quentin Stafford-Fraser and Paul Jardetzky pointed a camera at the pot and wrote software, XCoffee, to show a live **128×128-pixel greyscale picture** on everyone’s desktop. When browsers learned to display images in 1993, the feed went on the web that November and became the first webcam online, watched by people around the world who would never taste the coffee.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "How many pixels wide was the coffee-pot picture?",
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "answer": 128,
+      "unit": "px",
+      "explanation": "128 × 128 greyscale pixels: enough to tell whether the pot was empty, and no more."
+    },
+    {
       "type": "image",
       "src": "coffee-pot.svg",
       "alt": "A blocky, grey, pixel-style drawing of a filter coffee pot inside a small square window, labelled 128 by 128 pixels.",

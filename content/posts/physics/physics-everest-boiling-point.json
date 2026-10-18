@@ -7,6 +7,16 @@
   "body": "Water boils when the pressure of its own vapour matches the pressure of the air pressing down on it. At sea level that takes 100 °C, but on Everest’s summit, 8,849 m up, the air pushes with only about **a third of the force**, roughly 34 kPa, so water boils at about 71 °C. Climbers’ tea is lukewarm, and a boiled egg stays runny, because the water simply cannot get any hotter than that without a pressure cooker.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "How much of sea-level air pressure is left on Everest’s summit?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 34,
+      "unit": "%",
+      "explanation": "About 34 kPa against 101 kPa at sea level: roughly a third. That is why water boils so cool up there."
+    },
+    {
       "type": "image",
       "src": "everest-boiling.svg",
       "alt": "A mountain outline with four marked heights: sea level 100 °C, 1,500 m 95 °C, 4,500 m about 85 °C, and the 8,849 m summit about 71 °C.",

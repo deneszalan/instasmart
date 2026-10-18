@@ -27,6 +27,18 @@
       "type": "text",
       "heading": "Colonoscopies and holidays",
       "text": "In a 1996 study, patients rated a colonoscopy by its worst moment and its final minutes, not by how long it took. The lesson travels: a trip, a meal or a meeting is judged by its best moment and its ending, so end things well."
+    },
+    {
+      "type": "quiz",
+      "question": "What does the peak–end rule say we mostly remember about an experience?",
+      "options": [
+        "How long it lasted",
+        "Its most intense moment and its ending",
+        "Its average intensity",
+        "How it began"
+      ],
+      "answer": 1,
+      "explanation": "The remembering self samples the peak and the end; the length barely registers, which Kahneman called duration neglect."
     }
   ],
   "tags": [

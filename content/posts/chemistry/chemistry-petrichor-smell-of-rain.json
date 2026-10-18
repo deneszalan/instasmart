@@ -33,6 +33,18 @@
       "type": "text",
       "heading": "Why bacteria bother",
       "text": "Geosmin isn’t for us. Springtails, tiny soil creatures, are drawn to it, feed on the Streptomyces and carry its spores to new ground. The smell is advertising, and we just happen to be very good at reading it."
+    },
+    {
+      "type": "quiz",
+      "question": "Which of these makes the earthy part of the smell of rain?",
+      "options": [
+        "Ozone from lightning",
+        "Geosmin from soil bacteria",
+        "Chlorophyll from leaves",
+        "Dissolved minerals"
+      ],
+      "answer": 1,
+      "explanation": "Streptomyces bacteria in the soil make geosmin, and rain flings it into the air along with oils that plants shed in dry weather."
     }
   ],
   "tags": [

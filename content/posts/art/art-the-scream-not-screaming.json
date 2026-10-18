@@ -17,6 +17,12 @@
       "attribution": "Edvard Munch, from his diary"
     },
     {
+      "type": "reveal",
+      "prompt": "Under what title did Munch first exhibit the picture?",
+      "answer": "The Scream of Nature",
+      "detail": "Shown in German as Der Schrei der Natur: the scream belongs to nature, not to the figure on the bridge."
+    },
+    {
       "type": "compare",
       "heading": "What’s happening",
       "left": {
