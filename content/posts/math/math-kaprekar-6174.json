@@ -7,6 +7,33 @@
   "body": "Pick any four-digit number whose digits aren’t all the same. Arrange the digits from largest to smallest, then from smallest to largest, and subtract the second from the first. Repeat with the result. Within **seven rounds** you always reach 6174, and from there the step gives 6174 forever. Indian mathematician D. R. Kaprekar published this oddity in 1955, and 6174 has been called Kaprekar’s constant ever since.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "Kaprekar’s routine",
+      "steps": [
+        {
+          "icon": "🔢",
+          "label": "Pick four digits, not all the same"
+        },
+        {
+          "icon": "⬇️",
+          "label": "Arrange them largest to smallest"
+        },
+        {
+          "icon": "⬆️",
+          "label": "And smallest to largest"
+        },
+        {
+          "icon": "➖",
+          "label": "Subtract the second from the first"
+        },
+        {
+          "icon": "🎯",
+          "label": "Within seven rounds the answer is 6174"
+        }
+      ],
+      "cycle": true
+    },
+    {
       "type": "list",
       "heading": "Try it with 3524",
       "style": "steps",
@@ -32,6 +59,12 @@
       "prompt": "Start from 2025. How many steps to 6174?",
       "answer": "Six steps",
       "detail": "2025 → 4995 → 5355 → 1998 → 8082 → 8532 → 6174."
+    },
+    {
+      "type": "scramble",
+      "clue": "The Indian mathematician who published the 6174 routine in 1955; the constant bears his name",
+      "answer": "KAPREKAR",
+      "detail": "6174 is Kaprekar’s constant. Three-digit numbers have their own: 495."
     }
   ],
   "tags": [

@@ -12,6 +12,27 @@
       "text": "In binary, 0.1 is 0.0001100110011… repeating forever. A standard 64-bit number keeps about 15 to 17 significant decimal digits, then rounds the rest."
     },
     {
+      "type": "chart",
+      "heading": "How a 64-bit floating-point number spends its bits",
+      "items": [
+        {
+          "label": "Sign",
+          "value": 1
+        },
+        {
+          "label": "Exponent",
+          "value": 11
+        },
+        {
+          "label": "Fraction",
+          "value": 52,
+          "emphasis": true
+        }
+      ],
+      "unit": "bits",
+      "note": "IEEE 754 double precision. With an implied leading 1, that is 53 bits: 15 to 17 decimal digits."
+    },
+    {
       "type": "text",
       "heading": "Usually harmless",
       "text": "The error is around one part in ten quadrillion, too small to matter for most science or graphics. It bites when code checks whether two results are exactly equal."
@@ -32,6 +53,37 @@
       ],
       "answer": 0,
       "explanation": "Just as 1/3 never ends in decimal, 0.1 never ends in binary. The machine keeps the nearest value it can fit, and the rounding errors show up when numbers are added."
+    },
+    {
+      "type": "sort",
+      "heading": "Stored exactly in binary, or rounded?",
+      "bins": [
+        "Exact",
+        "Rounded"
+      ],
+      "items": [
+        {
+          "text": "0.5",
+          "bin": 0
+        },
+        {
+          "text": "0.1",
+          "bin": 1
+        },
+        {
+          "text": "0.25",
+          "bin": 0
+        },
+        {
+          "text": "0.2",
+          "bin": 1
+        },
+        {
+          "text": "0.75",
+          "bin": 0
+        }
+      ],
+      "explanation": "Halves and quarters are sums of powers of two, so they fit exactly. 0.1 and 0.2 repeat forever in binary and get rounded off."
     }
   ],
   "tags": [

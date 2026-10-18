@@ -43,6 +43,37 @@
       ],
       "answer": 0,
       "explanation": "The half-twist joins what looked like two edges into one continuous boundary, just as it joins the two apparent sides into one surface. An untwisted loop has two edges."
+    },
+    {
+      "type": "sort",
+      "heading": "Plain loop or Möbius strip?",
+      "bins": [
+        "Plain loop",
+        "Möbius strip"
+      ],
+      "items": [
+        {
+          "text": "Two separate edges",
+          "bin": 0
+        },
+        {
+          "text": "One continuous side",
+          "bin": 1
+        },
+        {
+          "text": "A centre line comes back without crossing an edge",
+          "bin": 1
+        },
+        {
+          "text": "Made with a half-twist before joining",
+          "bin": 1
+        },
+        {
+          "text": "Two faces that never connect",
+          "bin": 0
+        }
+      ],
+      "explanation": "The half-twist joins the two apparent sides into one surface, and the two edges into one boundary."
     }
   ],
   "tags": [

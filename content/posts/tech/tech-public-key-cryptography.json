@@ -7,6 +7,28 @@
   "body": "Before the 1970s, encrypting a message meant both sides first had to share a secret key. Public-key cryptography broke that rule: you publish a key anyone can use to lock a message, while only your private key can unlock it. It relies on maths that is easy one way and very hard to reverse, such as multiplying two huge primes versus factoring the result. Every HTTPS connection depends on it.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "Locking a message with a public key",
+      "steps": [
+        {
+          "icon": "🔑",
+          "label": "Bob publishes his public key for anyone"
+        },
+        {
+          "icon": "🔒",
+          "label": "Alice locks her message with it"
+        },
+        {
+          "icon": "👀",
+          "label": "Eavesdroppers see only scrambled text"
+        },
+        {
+          "icon": "🔓",
+          "label": "Only Bob’s private key can unlock it"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "The paint analogy",
       "text": "Both sides start with a public colour and each mixes in a secret one. They swap mixes and add their own secret again, ending with the same colour no onlooker can unmix."
@@ -31,6 +53,12 @@
       "type": "text",
       "heading": "The secret twist",
       "text": "At Britain’s GCHQ, James Ellis, Clifford Cocks and Malcolm Williamson had found the same ideas in the early 1970s, but their work stayed classified until 1997."
+    },
+    {
+      "type": "scramble",
+      "clue": "The hard-to-reverse step: splitting a huge number back into the two primes that were multiplied to make it",
+      "answer": "FACTORING",
+      "detail": "Multiplying two huge primes takes a computer an instant; recovering them from the product is what keeps the lock shut."
     }
   ],
   "tags": [

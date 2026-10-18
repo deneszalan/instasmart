@@ -28,6 +28,35 @@
       "text": "In 1930, in a paper called On a Problem of Formal Logic, Frank Ramsey proved a far more general result: make a structure large enough and some orderly pattern inside it becomes unavoidable. The party puzzle is its simplest case, written R(3,3) = 6."
     },
     {
+      "type": "chart",
+      "heading": "Guests needed to force a group of friends or a group of strangers",
+      "items": [
+        {
+          "label": "3 friends or 3 strangers",
+          "value": 6,
+          "emphasis": true
+        },
+        {
+          "label": "3 friends or 4 strangers",
+          "value": 9
+        },
+        {
+          "label": "3 friends or 5 strangers",
+          "value": 14
+        },
+        {
+          "label": "4 friends or 4 strangers",
+          "value": 18
+        },
+        {
+          "label": "4 friends or 5 strangers",
+          "value": 25
+        }
+      ],
+      "unit": "people",
+      "note": "Ramsey numbers R(3,3) to R(4,5). R(5,5) is unknown: somewhere from 43 to 46."
+    },
+    {
       "type": "quiz",
       "question": "Which idea makes the first step of the proof work?",
       "options": [

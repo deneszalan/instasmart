@@ -17,6 +17,31 @@
       "explanation": "Guess 50, then 25 or 75, and keep halving: 7 guesses always suffice, because 2 to the power of 7 is 128, more than 100."
     },
     {
+      "type": "chart",
+      "heading": "Guesses you need when every guess halves the range",
+      "items": [
+        {
+          "label": "1 to 100",
+          "value": 7
+        },
+        {
+          "label": "1 to 1,000",
+          "value": 10
+        },
+        {
+          "label": "1 to a million",
+          "value": 20,
+          "emphasis": true
+        },
+        {
+          "label": "1 to a billion",
+          "value": 30
+        }
+      ],
+      "unit": "guesses",
+      "note": "2⁷ = 128, 2¹⁰ = 1,024, 2²⁰ ≈ 1.05 million, 2³⁰ ≈ 1.07 billion: each just clears its range."
+    },
+    {
       "type": "text",
       "heading": "Try it yourself",
       "text": "Picking from 1 to 100? Guess 50, then 25 or 75, and keep halving. You never need more than 7 guesses, because 2 to the power of 7 is 128."

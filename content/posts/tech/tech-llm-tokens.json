@@ -7,6 +7,29 @@
   "body": "Large language models don’t see text as individual characters. Text is first split into tokens, common chunks such as whole words, pieces of words or punctuation, and each token becomes a number. The model then learns to predict the next token from the ones before. This helps explain why such models have often stumbled on tasks like counting the letters in a word: the letters are hidden inside tokens.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "How a language model writes",
+      "steps": [
+        {
+          "icon": "✂️",
+          "label": "The text is split into tokens"
+        },
+        {
+          "icon": "🔢",
+          "label": "Each token becomes a number"
+        },
+        {
+          "icon": "🎯",
+          "label": "The model predicts the next token"
+        },
+        {
+          "icon": "➕",
+          "label": "It is added to the text"
+        }
+      ],
+      "cycle": true
+    },
+    {
       "type": "quiz",
       "question": "What does a large language model actually predict, one step at a time?",
       "options": [

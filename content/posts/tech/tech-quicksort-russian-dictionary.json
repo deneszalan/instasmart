@@ -7,6 +7,28 @@
   "body": "In 1959 Tony Hoare was a visiting student at Moscow State University, working on a machine-translation project for Britain’s National Physical Laboratory. The Russian–English dictionary sat in alphabetical order on magnetic tape, so the words of each sentence had to be sorted before they could be looked up. His first idea, insertion sort, would be slow, so he found another: choose a pivot, split the words into those before it and those after, and **sort each part the same way**. Back in England his boss bet sixpence that nothing beat Shellsort, and lost. Published in 1961, Quicksort is still one of the most used sorting algorithms.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "Why the words had to be sorted first",
+      "steps": [
+        {
+          "icon": "📖",
+          "label": "Take the words of a Russian sentence"
+        },
+        {
+          "icon": "🔤",
+          "label": "Sort them into alphabetical order"
+        },
+        {
+          "icon": "📼",
+          "label": "Run the dictionary tape once, start to end"
+        },
+        {
+          "icon": "🔍",
+          "label": "Look up each word as it comes by"
+        }
+      ]
+    },
+    {
       "type": "list",
       "heading": "How Quicksort works",
       "style": "steps",
@@ -51,6 +73,12 @@
       ],
       "answer": 0,
       "explanation": "The Russian–English dictionary was stored in alphabetical order on magnetic tape, so looking words up in sorted order meant a single pass through the tape."
+    },
+    {
+      "type": "scramble",
+      "clue": "The item Quicksort picks first; smaller items go before it, larger ones after",
+      "answer": "PIVOT",
+      "detail": "After one pass the pivot sits in its final place, and each side is sorted the same way."
     }
   ],
   "tags": [

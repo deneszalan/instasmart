@@ -18,9 +18,38 @@
       "detail": "1 + 1,728 = 729 + 1,000 = 1,729. No smaller number can be split into two cubes in two different ways."
     },
     {
+      "type": "chart",
+      "heading": "Two pairs of cubes that both add up to 1,729",
+      "items": [
+        {
+          "label": "1³",
+          "value": 1
+        },
+        {
+          "label": "12³",
+          "value": 1728
+        },
+        {
+          "label": "9³",
+          "value": 729
+        },
+        {
+          "label": "10³",
+          "value": 1000
+        }
+      ],
+      "note": "1 + 1,728 = 729 + 1,000. No smaller number splits into two cubes in two different ways."
+    },
+    {
       "type": "text",
       "heading": "Not quite off the cuff",
       "text": "Ramanujan had already met the number: it appears in one of his notebooks dated years before the taxi ride. Even earlier, in 1657, Frénicle de Bessy had noted the same property. The anecdote nonetheless gave us taxicab numbers, named after Hardy’s cab."
+    },
+    {
+      "type": "scramble",
+      "clue": "The kind of number 1,729 is: the smallest sum of two positive cubes in a given number of ways",
+      "answer": "TAXICAB",
+      "detail": "Named after Hardy’s cab: the taxicab number for n is the smallest integer that is a sum of two positive cubes in n ways."
     }
   ],
   "tags": [

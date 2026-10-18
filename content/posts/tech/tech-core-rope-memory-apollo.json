@@ -26,6 +26,23 @@
       "text": "Alongside just 2,048 words of erasable memory. The whole computer weighed 70 lb (32 kg) and held 4,100 integrated-circuit packages."
     },
     {
+      "type": "scale",
+      "heading": "Apollo’s memory: woven rope next to erasable",
+      "items": [
+        {
+          "label": "Erasable",
+          "value": 2048
+        },
+        {
+          "label": "Core rope",
+          "value": 36864,
+          "emphasis": true
+        }
+      ],
+      "unit": "words",
+      "note": "16-bit words in the Block II computer: 18 times as much woven program as erasable scratch space."
+    },
+    {
       "type": "text",
       "heading": "Why weave?",
       "text": "A rope could not be rewritten, which made the program impossible to wipe, and it packed far more into the same space than ordinary core memory. The price: once woven, nothing could be changed."

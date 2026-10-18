@@ -7,6 +7,28 @@
   "body": "In 1947, operators of Harvard’s Mark II computer traced a fault to a moth trapped in a relay. They taped it into the logbook with the note “First actual case of bug being found.” The joke worked because engineers already called glitches “bugs”: Thomas Edison used the word in the 1870s. Grace Hopper, who worked on the machine, helped make the story famous.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "How the moth got into the logbook",
+      "steps": [
+        {
+          "icon": "🖥️",
+          "label": "Harvard’s Mark II develops a fault"
+        },
+        {
+          "icon": "🔎",
+          "label": "Operators trace the fault to a relay"
+        },
+        {
+          "icon": "🦋",
+          "label": "Inside it, a moth is trapped"
+        },
+        {
+          "icon": "📒",
+          "label": "They tape it into the logbook with a note"
+        }
+      ]
+    },
+    {
       "type": "order",
       "heading": "Oldest first",
       "items": [

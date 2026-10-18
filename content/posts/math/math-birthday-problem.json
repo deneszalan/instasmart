@@ -15,6 +15,39 @@
       "answer": 253,
       "unit": "pairs",
       "explanation": "253 pairs, and each pair is another chance for a match. That is why the odds of a shared birthday pass 50% with 23 people and top 99.9% with 70."
+    },
+    {
+      "type": "chart",
+      "heading": "Chance that at least two people share a birthday",
+      "items": [
+        {
+          "label": "10 people",
+          "value": 11.7
+        },
+        {
+          "label": "20 people",
+          "value": 41.1
+        },
+        {
+          "label": "23 people",
+          "value": 50.7,
+          "emphasis": true
+        },
+        {
+          "label": "30 people",
+          "value": 70.6
+        },
+        {
+          "label": "50 people",
+          "value": 97
+        },
+        {
+          "label": "70 people",
+          "value": 99.9
+        }
+      ],
+      "unit": "%",
+      "note": "Assuming 365 equally likely birthdays and ignoring leap days."
     }
   ],
   "tags": [

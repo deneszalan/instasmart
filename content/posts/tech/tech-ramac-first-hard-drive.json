@@ -17,6 +17,23 @@
       "explanation": "US$3,200 a month, equivalent to about $36,700 in 2025. More than 1,000 systems were built before production ended in 1961."
     },
     {
+      "type": "chart",
+      "heading": "A RAMAC system’s monthly lease, then and in today’s money",
+      "items": [
+        {
+          "label": "1956 dollars",
+          "value": 3200,
+          "emphasis": true
+        },
+        {
+          "label": "2025 dollars",
+          "value": 36700
+        }
+      ],
+      "unit": "USD",
+      "note": "Equivalent value for 2025. More than 1,000 systems were built before production ended in 1961."
+    },
+    {
       "type": "stat",
       "value": "50",
       "label": "spinning 24-inch disks inside the IBM 350 disk unit",

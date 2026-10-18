@@ -15,6 +15,33 @@
       "answer": 67,
       "unit": "zeros",
       "explanation": "About 8 followed by 67 zeros. Even if every human who ever lived had shuffled a deck every second since the Big Bang, only a vanishing fraction of those orders would have appeared."
+    },
+    {
+      "type": "scale",
+      "heading": "Ways to order a hand of cards, to scale",
+      "items": [
+        {
+          "label": "3 cards",
+          "value": 6
+        },
+        {
+          "label": "5 cards",
+          "value": 120
+        },
+        {
+          "label": "7 cards",
+          "value": 5040,
+          "emphasis": true
+        }
+      ],
+      "unit": "ways",
+      "note": "Every extra card multiplies the count. A full deck of 52: about 8 followed by 67 zeros."
+    },
+    {
+      "type": "scramble",
+      "clue": "The operation written 52!, multiplying every whole number from 52 down to 1",
+      "answer": "FACTORIAL",
+      "detail": "52! is about 8 followed by 67 zeros, so a well-shuffled deck is almost surely in a brand-new order."
     }
   ],
   "tags": [

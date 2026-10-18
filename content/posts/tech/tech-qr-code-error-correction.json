@@ -24,6 +24,31 @@
       }
     },
     {
+      "type": "chart",
+      "heading": "Share of a QR code that can be restored, by correction level",
+      "items": [
+        {
+          "label": "Level L (low)",
+          "value": 7
+        },
+        {
+          "label": "Level M (medium)",
+          "value": 15
+        },
+        {
+          "label": "Level Q (quartile)",
+          "value": 25
+        },
+        {
+          "label": "Level H (high)",
+          "value": 30,
+          "emphasis": true
+        }
+      ],
+      "unit": "%",
+      "note": "Approximate share of codewords that can be recovered. Higher levels leave less room for the data."
+    },
+    {
       "type": "text",
       "heading": "Why a scratch may be harmless",
       "text": "A scratch can destroy some encoded data while leaving enough information to reconstruct it. Too much damage, or trouble locating the code, can still prevent a scan."

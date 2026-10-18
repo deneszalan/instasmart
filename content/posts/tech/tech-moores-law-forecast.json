@@ -7,6 +7,26 @@
   "body": "In 1965 Gordon Moore, who later co-founded Intel, noticed that the number of components on a chip was doubling about every year and predicted the trend would continue. In 1975 he revised the pace to roughly every two years. The trend held for decades partly because the industry planned around it, turning a prediction into a target. As transistors near atomic scales, the doubling has slowed and its future is debated.",
   "slides": [
     {
+      "type": "scale",
+      "heading": "Transistors on one Intel chip, 1971 to 1993",
+      "items": [
+        {
+          "label": "4004, 1971",
+          "value": 2250
+        },
+        {
+          "label": "386, 1985",
+          "value": 275000
+        },
+        {
+          "label": "Pentium, 1993",
+          "value": 3100000,
+          "emphasis": true
+        }
+      ],
+      "note": "From 2,250 to 3.1 million in 22 years, close to a doubling every two years."
+    },
+    {
       "type": "quiz",
       "question": "Why did Moore’s forecast hold for decades?",
       "options": [

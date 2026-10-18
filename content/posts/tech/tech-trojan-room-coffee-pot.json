@@ -17,6 +17,23 @@
       "explanation": "128 × 128 greyscale pixels: enough to tell whether the pot was empty, and no more."
     },
     {
+      "type": "scale",
+      "heading": "The coffee-pot picture next to one full-HD frame",
+      "items": [
+        {
+          "label": "Coffee pot 128×128",
+          "value": 16384,
+          "emphasis": true
+        },
+        {
+          "label": "Full HD 1920×1080",
+          "value": 2073600
+        }
+      ],
+      "unit": "pixels",
+      "note": "16,384 greyscale pixels against 2,073,600: about 1/127 of a modern 1080p frame."
+    },
+    {
       "type": "image",
       "src": "coffee-pot.svg",
       "alt": "A blocky, grey, pixel-style drawing of a filter coffee pot inside a small square window, labelled 128 by 128 pixels.",

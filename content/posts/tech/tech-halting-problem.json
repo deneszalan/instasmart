@@ -7,6 +7,28 @@
   "body": "In the 1930s Alan Turing proved there can be no general program that inspects any program and its input and always correctly predicts whether it will finish or run forever. The proof uses a paradox: if such a checker existed, you could write a program that asks the checker about itself and then does the opposite. This is the halting problem, and it means no tool can catch every infinite loop.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "Turing’s proof by contradiction",
+      "steps": [
+        {
+          "icon": "🔍",
+          "label": "Suppose checker H predicts if programs halt"
+        },
+        {
+          "icon": "🧩",
+          "label": "Build program D that asks H about D itself"
+        },
+        {
+          "icon": "🔁",
+          "label": "D then does the opposite of what H predicts"
+        },
+        {
+          "icon": "❌",
+          "label": "H is wrong either way, so no H can exist"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "How does Turing’s proof rule out a universal halting checker?",
       "options": [

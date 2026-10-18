@@ -29,9 +29,58 @@
       "text": "A smooth curve has dimension 1; a curve so wiggly that it nearly fills a surface approaches 2. Mandelbrot put the west coast of Great Britain at about 1.25 and South Africa’s coast at about 1.02. He was careful to note that the paper did not claim real coastlines truly have fractional dimension: the fractal is a model."
     },
     {
+      "type": "spectrum",
+      "heading": "Fractal dimension: how wiggly is a coastline?",
+      "min": 1,
+      "max": 2,
+      "ends": [
+        "Smooth line",
+        "Fills a surface"
+      ],
+      "marks": [
+        {
+          "label": "South Africa’s coast",
+          "value": 1.02
+        },
+        {
+          "label": "Britain’s west coast",
+          "value": 1.25,
+          "emphasis": true
+        },
+        {
+          "label": "A typical lake shore",
+          "value": 1.28
+        }
+      ],
+      "note": "A smooth curve has dimension 1; a curve so wiggly it fills a surface approaches 2."
+    },
+    {
       "type": "text",
       "heading": "Without limit",
       "text": "In the idealised model, as the measuring unit shrinks toward zero the coastline’s length heads toward infinity. Real measurements have to stop somewhere, but the lesson stands: a coastline has no single, well-defined length, only a length at a given scale."
+    },
+    {
+      "type": "match",
+      "heading": "Match each figure to what it measured",
+      "pairs": [
+        {
+          "left": "987 km",
+          "right": "Portugal’s border figure"
+        },
+        {
+          "left": "1,214 km",
+          "right": "Spain’s border figure"
+        },
+        {
+          "left": "About 1.25",
+          "right": "Britain’s west coast"
+        },
+        {
+          "left": "About 1.02",
+          "right": "South Africa’s coast"
+        }
+      ],
+      "explanation": "The two border figures came from rulers of different lengths; the two decimals are fractal dimensions, higher for a wigglier coast."
     }
   ],
   "tags": [

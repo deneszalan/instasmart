@@ -7,6 +7,32 @@
   "body": "The one-time pad combines each character of a message with one from a secret key. If the key is truly random, at least as long as the message, never reused and kept secret, Claude Shannon proved in the 1940s that the result has **perfect secrecy**: the scrambled text reveals nothing about the original, however much computing power an attacker has. The catch is the key. It must be as long as everything you will ever send, delivered in secret and destroyed after use, which is why the method is rare outside diplomacy and espionage, and why the Moscow–Washington hotline relied on it.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "How a one-time pad works",
+      "steps": [
+        {
+          "icon": "✉️",
+          "label": "Write the message"
+        },
+        {
+          "icon": "🎲",
+          "label": "Take a random key at least as long"
+        },
+        {
+          "icon": "➕",
+          "label": "Combine each character with one from the key"
+        },
+        {
+          "icon": "📨",
+          "label": "The receiver, with the same key, reverses it"
+        },
+        {
+          "icon": "🔥",
+          "label": "Destroy the key: never use it again"
+        }
+      ]
+    },
+    {
       "type": "list",
       "heading": "The four conditions",
       "style": "bullets",
@@ -49,6 +75,37 @@
       "type": "text",
       "heading": "Why not use it everywhere?",
       "text": "Making truly random key, as long as all your traffic, and carrying it to the other side in secret is harder than sending the messages. Everyday encryption instead uses methods that are computationally secure: breakable in theory, but not with any computer we can build."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "A fast enough computer could crack it",
+          "bin": 1
+        },
+        {
+          "text": "The key must be truly random",
+          "bin": 0
+        },
+        {
+          "text": "A long key can safely be used twice",
+          "bin": 1
+        },
+        {
+          "text": "The key must be at least as long as the message",
+          "bin": 0
+        },
+        {
+          "text": "The Moscow–Washington hotline used it",
+          "bin": 0
+        }
+      ],
+      "explanation": "Shannon’s proof gives perfect secrecy, immune to computing power, but only while every condition holds; reuse broke Soviet traffic in Venona."
     }
   ],
   "tags": [

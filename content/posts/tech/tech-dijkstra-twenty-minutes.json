@@ -37,6 +37,33 @@
       "value": "64",
       "label": "cities on the simplified map of the Netherlands that ARMAC first solved",
       "text": "Six bits were enough to encode each city number. The same idea now routes packets across the internet and finds roads on maps."
+    },
+    {
+      "type": "match",
+      "heading": "Match each name or number to its part in the story",
+      "pairs": [
+        {
+          "left": "ARMAC",
+          "right": "Computer that first ran it"
+        },
+        {
+          "left": "OSPF",
+          "right": "Internet routing protocol"
+        },
+        {
+          "left": "Mathematical Center",
+          "right": "His Amsterdam employer"
+        },
+        {
+          "left": "64",
+          "right": "Cities on the demo map"
+        },
+        {
+          "left": "1959",
+          "right": "Year it was published"
+        }
+      ],
+      "explanation": "Designed in 1956 for an ARMAC demo of 64 Dutch cities, published in 1959, and now at the heart of link-state routing such as OSPF."
     }
   ],
   "tags": [

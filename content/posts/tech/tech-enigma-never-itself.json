@@ -7,6 +7,32 @@
   "body": "Enigma’s rotors scrambled letters in an astronomical number of ways, but a part called the reflector meant a letter could never come out as itself. That sounds harmless, yet it helped Allied codebreakers at Bletchley Park, building on Polish breakthroughs, test guessed phrases such as weather reports. Any alignment where a guessed letter matched the ciphertext letter was impossible and could be discarded at once.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "One keypress through Enigma",
+      "steps": [
+        {
+          "icon": "⌨️",
+          "label": "A key closes a circuit"
+        },
+        {
+          "icon": "🔌",
+          "label": "The plugboard may swap the letter"
+        },
+        {
+          "icon": "⚙️",
+          "label": "The rotors scramble it; one steps each key"
+        },
+        {
+          "icon": "↩️",
+          "label": "The reflector sends it back a different way"
+        },
+        {
+          "icon": "💡",
+          "label": "A lamp lights: never the key you pressed"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "Which part of Enigma made it impossible for a letter to encrypt as itself?",
       "options": [
@@ -17,6 +43,29 @@
       ],
       "answer": 0,
       "explanation": "The reflector meant a letter could never come out as itself, so codebreakers could discard any alignment where a guessed letter matched the ciphertext."
+    },
+    {
+      "type": "match",
+      "heading": "Match the Enigma part to its job",
+      "pairs": [
+        {
+          "left": "Plugboard",
+          "right": "Swaps pairs of letters"
+        },
+        {
+          "left": "Right-hand rotor",
+          "right": "Steps with every keypress"
+        },
+        {
+          "left": "Reflector",
+          "right": "Turns the current around"
+        },
+        {
+          "left": "Lampboard",
+          "right": "Shows the output letter"
+        }
+      ],
+      "explanation": "Operators normally plugged ten cables, swapping ten pairs; the reflector’s U-turn is what stops any letter encrypting as itself."
     }
   ],
   "tags": [

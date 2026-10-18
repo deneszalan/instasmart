@@ -7,6 +7,38 @@
   "body": "Primes, numbers divisible only by 1 and themselves, get rarer as numbers grow, so you might expect them to run out eventually. Euclid showed in his Elements, written around 300 BC, that they never do. His argument is short enough to explain in a minute, it’s still taught today, and mathematicians have since found at least 200 different proofs of the same fact.",
   "slides": [
     {
+      "type": "chart",
+      "heading": "Share of whole numbers that are prime, up to each limit",
+      "items": [
+        {
+          "label": "Up to 10",
+          "value": 40
+        },
+        {
+          "label": "Up to 100",
+          "value": 25
+        },
+        {
+          "label": "Up to 1,000",
+          "value": 16.8
+        },
+        {
+          "label": "Up to 10,000",
+          "value": 12.3
+        },
+        {
+          "label": "Up to 100,000",
+          "value": 9.6
+        },
+        {
+          "label": "Up to a million",
+          "value": 7.8
+        }
+      ],
+      "unit": "%",
+      "note": "4 of the first 10 numbers are prime, 25 of the first 100, 78,498 of the first million."
+    },
+    {
       "type": "text",
       "heading": "Take any list of primes",
       "text": "Suppose you have a finite list of primes, say 2, 3 and 5. Multiply them all together and add 1: 2 × 3 × 5 + 1 = 31."
@@ -37,6 +69,18 @@
       ],
       "answer": 0,
       "explanation": "Dividing by any prime on the list leaves a remainder of 1, so none of them is a factor. The result is either prime itself or has a prime factor missing from the list."
+    },
+    {
+      "type": "odd",
+      "heading": "Which one is not prime?",
+      "items": [
+        "31",
+        "59",
+        "509",
+        "30,031"
+      ],
+      "answer": 3,
+      "explanation": "30,031 = 59 × 509. The other three are prime: 31 = 2 × 3 × 5 + 1 happens to be prime, but a product of primes plus one need not be."
     }
   ],
   "tags": [

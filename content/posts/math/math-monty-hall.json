@@ -12,6 +12,14 @@
       "text": "Say the car is behind door 1. Pick door 1 and switch: you lose. Pick door 2 or 3: the host must reveal the other goat, so switching wins. Two wins out of three."
     },
     {
+      "type": "pictogram",
+      "heading": "Switching wins the car in 2 games out of 3",
+      "icon": "🚗",
+      "total": 3,
+      "count": 2,
+      "note": "Sticking with your first door wins only when that first 1-in-3 guess was right."
+    },
+    {
       "type": "text",
       "heading": "Imagine 100 doors",
       "text": "You pick one, and the host opens 98 doors with goats, leaving one closed. Sticking with your 1-in-100 first guess suddenly looks far less tempting."

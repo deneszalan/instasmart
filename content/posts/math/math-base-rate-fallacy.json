@@ -18,6 +18,23 @@
       ]
     },
     {
+      "type": "chart",
+      "heading": "Who sets off the alarm, in a city of a million",
+      "items": [
+        {
+          "label": "Terrorists caught",
+          "value": 99,
+          "emphasis": true
+        },
+        {
+          "label": "Innocent people flagged",
+          "value": 9999
+        }
+      ],
+      "unit": "people",
+      "note": "The camera spots 99% of the 100 terrorists and wrongly flags 1% of the other 999,900."
+    },
+    {
       "type": "estimate",
       "question": "1 in 1,000 drivers is drunk; the breathalyser wrongly flags 5% of sober ones. Chance a flagged driver is drunk?",
       "min": 0,

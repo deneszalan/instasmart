@@ -45,6 +45,28 @@
       ]
     },
     {
+      "type": "flow",
+      "heading": "How DNS finds an address today",
+      "steps": [
+        {
+          "icon": "❓",
+          "label": "Your resolver asks for www.wikipedia.org"
+        },
+        {
+          "icon": "🌳",
+          "label": "A root server points it to the org servers"
+        },
+        {
+          "icon": "🏢",
+          "label": "They point to Wikipedia’s own name servers"
+        },
+        {
+          "icon": "📬",
+          "label": "Those reply with the address; it gets cached"
+        }
+      ]
+    },
+    {
       "type": "quiz",
       "question": "Why did a single HOSTS.TXT file stop working in the early 1980s?",
       "options": [
