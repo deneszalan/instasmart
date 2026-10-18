@@ -142,6 +142,23 @@ function slideParts(slide: Slide): string[] {
       return [slide.question, `${slide.answer}${slide.unit ? ` ${slide.unit}` : ''}`, slide.explanation];
     case 'order':
       return [slide.items.join(' → '), slide.explanation ?? ''];
+    case 'chart':
+    case 'scale':
+      return [slide.items.map((d) => `${d.label} ${d.value}${slide.unit ? ` ${slide.unit}` : ''}`).join(', '), slide.note ?? ''];
+    case 'pictogram':
+      return [`${slide.count} of ${slide.total}`, slide.note ?? ''];
+    case 'spectrum':
+      return [slide.marks.map((m) => `${m.label} ${m.value}${slide.unit ? ` ${slide.unit}` : ''}`).join(', '), slide.note ?? ''];
+    case 'flow':
+      return [slide.steps.map((s) => s.label).join(' → ')];
+    case 'match':
+      return [slide.pairs.map((p) => `${p.left}: ${p.right}`).join(', '), slide.explanation ?? ''];
+    case 'sort':
+      return [slide.items.map((i) => `${i.text} (${slide.bins[i.bin]})`).join(', '), slide.explanation ?? ''];
+    case 'scramble':
+      return [slide.clue, slide.answer, slide.detail ?? ''];
+    case 'odd':
+      return [slide.items.join(' / '), slide.explanation ?? ''];
   }
 }
 

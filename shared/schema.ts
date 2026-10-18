@@ -190,6 +190,163 @@ export const OrderSlide = z
   })
   .strict();
 
+/* ---- Visual slides: drawn by the app from numbers, so they need no image files. ---- */
+
+const Datum = z.object({
+  label: text(28),
+  value: z.number().finite().describe('The number, in the unit the slide names.'),
+  emphasis: z.boolean().optional().describe('Highlight this one.'),
+});
+
+export const ChartSlide = z
+  .object({
+    type: z.literal('chart'),
+    heading: text(80).describe('What the bars compare, e.g. "CO₂ per person, tonnes a year".'),
+    items: z.array(Datum.strict()).min(2).max(6).describe('Bars, top to bottom. Values must be 0 or more.'),
+    unit: text(16).optional().describe('Shown after each number, e.g. "t", "%", "km".'),
+    note: text(100).optional().describe('A line under the chart: the year, the measure, a caveat.'),
+  })
+  .strict()
+  .superRefine((slide, ctx) => {
+    if (slide.items.some((d) => d.value < 0)) ctx.addIssue({ code: 'custom', path: ['items'], message: 'bar values must be 0 or more' });
+    else if (!slide.items.some((d) => d.value > 0)) ctx.addIssue({ code: 'custom', path: ['items'], message: 'at least one bar must be above 0' });
+  });
+
+export const PictogramSlide = z
+  .object({
+    type: z.literal('pictogram'),
+    heading: text(90).describe('The statement the icons show, e.g. "1 in 4 adults don’t get enough exercise".'),
+    icon: text(8).describe('One emoji, repeated once per unit, e.g. "🧍".'),
+    total: z.number().int().min(2).max(100).describe('How many icons to draw: the whole. 100 makes a 10×10 grid.'),
+    count: z.number().int().min(0).describe('How many of them light up: the part.'),
+    note: text(100).optional(),
+  })
+  .strict()
+  .superRefine((slide, ctx) => {
+    if (slide.count > slide.total) ctx.addIssue({ code: 'custom', path: ['count'], message: 'count cannot be more than total' });
+  });
+
+export const ScaleSlide = z
+  .object({
+    type: z.literal('scale'),
+    heading: text(80).describe('What is being compared, e.g. "Earth next to Jupiter, by volume".'),
+    items: z
+      .array(Datum.extend({ label: text(20) }).strict())
+      .min(2)
+      .max(4)
+      .describe('Circles whose areas are proportional to the values. Smallest to largest reads best.'),
+    unit: text(16).optional(),
+    note: text(100).optional(),
+  })
+  .strict()
+  .superRefine((slide, ctx) => {
+    if (slide.items.some((d) => d.value <= 0)) ctx.addIssue({ code: 'custom', path: ['items'], message: 'scale values must be above 0' });
+  });
+
+export const SpectrumSlide = z
+  .object({
+    type: z.literal('spectrum'),
+    heading: text(80).describe('What the scale measures, e.g. "How loud is loud? (decibels)".'),
+    min: z.number(),
+    max: z.number(),
+    marks: z
+      .array(z.object({ label: text(28), value: z.number(), emphasis: z.boolean().optional() }).strict())
+      .min(2)
+      .max(6)
+      .describe('Points on the scale, each between min and max.'),
+    unit: text(16).optional(),
+    ends: z.tuple([text(16), text(16)]).optional().describe('Words at the low and high ends, e.g. ["Acid", "Alkaline"].'),
+    colors: z.tuple([hexColor, hexColor]).optional().describe('Bar colours at the low and high ends.'),
+    note: text(100).optional(),
+  })
+  .strict()
+  .superRefine((slide, ctx) => {
+    if (slide.max <= slide.min) ctx.addIssue({ code: 'custom', path: ['max'], message: 'max must be greater than min' });
+    else if (slide.marks.some((m) => m.value < slide.min || m.value > slide.max)) {
+      ctx.addIssue({ code: 'custom', path: ['marks'], message: 'every mark must lie between min and max' });
+    }
+  });
+
+export const FlowSlide = z
+  .object({
+    type: z.literal('flow'),
+    heading: text(60).describe('The process, e.g. "How a vaccine trains the immune system".'),
+    steps: z
+      .array(z.object({ icon: text(8).optional().describe('One emoji.'), label: text(44) }).strict())
+      .min(3)
+      .max(5),
+    cycle: z.boolean().optional().describe('The last step leads back to the first.'),
+  })
+  .strict();
+
+/* ---- Puzzle slides: interactive like quiz and order; the app records how the reader did. ---- */
+
+export const MatchSlide = z
+  .object({
+    type: z.literal('match'),
+    heading: text(60).describe('The instruction, e.g. "Match the scientist to the discovery".'),
+    pairs: z
+      .array(z.object({ left: text(28), right: text(28) }).strict())
+      .min(3)
+      .max(5)
+      .describe('Correct pairs; the app shuffles the right-hand side.'),
+    explanation: text(160).optional().describe('Shown once every pair is matched.'),
+  })
+  .strict()
+  .superRefine((slide, ctx) => {
+    const lefts = new Set(slide.pairs.map((p) => p.left.toLowerCase()));
+    const rights = new Set(slide.pairs.map((p) => p.right.toLowerCase()));
+    if (lefts.size < slide.pairs.length || rights.size < slide.pairs.length) {
+      ctx.addIssue({ code: 'custom', path: ['pairs'], message: 'each side of the pairs must be unique' });
+    }
+  });
+
+export const SortSlide = z
+  .object({
+    type: z.literal('sort'),
+    heading: text(60).describe('The question each item answers, e.g. "Fact or myth?" or "Mammal or not?".'),
+    bins: z.tuple([text(16), text(16)]).describe('The two answers, e.g. ["Fact", "Myth"].'),
+    items: z
+      .array(z.object({ text: text(60), bin: z.number().int().min(0).max(1).describe('0 for the first bin, 1 for the second.') }).strict())
+      .min(3)
+      .max(5),
+    explanation: text(160).optional().describe('Shown at the end.'),
+  })
+  .strict()
+  .superRefine((slide, ctx) => {
+    if (new Set(slide.items.map((i) => i.bin)).size < 2) {
+      ctx.addIssue({ code: 'custom', path: ['items'], message: 'use both bins at least once' });
+    }
+  });
+
+export const ScrambleSlide = z
+  .object({
+    type: z.literal('scramble'),
+    clue: text(120).describe('The hint, e.g. "The process plants use to turn light into sugar".'),
+    answer: z
+      .string()
+      .trim()
+      .regex(/^[A-Za-z]{3,14}$/, 'One word of 3–14 plain letters (A–Z), no spaces or accents')
+      .describe('The word, shown as shuffled letter tiles.'),
+    detail: text(160).optional().describe('Shown after solving.'),
+  })
+  .strict();
+
+export const OddSlide = z
+  .object({
+    type: z.literal('odd'),
+    heading: text(60).optional().describe('Defaults to "Which one doesn’t belong?".'),
+    items: z.array(text(36)).min(3).max(4),
+    answer: z.number().int().min(0).describe('Index of the odd one out, counting from 0.'),
+    explanation: text(200).describe('Why it doesn’t belong, and what the others share.'),
+  })
+  .strict()
+  .superRefine((slide, ctx) => {
+    if (slide.answer >= slide.items.length) {
+      ctx.addIssue({ code: 'custom', path: ['answer'], message: `answer must be between 0 and ${slide.items.length - 1}` });
+    }
+  });
+
 export const Slide = z.discriminatedUnion('type', [
   TextSlide,
   ImageSlide,
@@ -202,6 +359,15 @@ export const Slide = z.discriminatedUnion('type', [
   RevealSlide,
   EstimateSlide,
   OrderSlide,
+  ChartSlide,
+  PictogramSlide,
+  ScaleSlide,
+  SpectrumSlide,
+  FlowSlide,
+  MatchSlide,
+  SortSlide,
+  ScrambleSlide,
+  OddSlide,
 ]);
 
 export const Source = z.object({ label: text(120), url: httpsUrl }).strict();

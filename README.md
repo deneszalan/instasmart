@@ -10,7 +10,8 @@ All content lives in this GitHub repository as plain files, and LLMs can contrib
   - Unread posts come first. Two posts in a row never come from the same field when it can be avoided.
   - When you've seen everything you get an "all explored" marker, and the feed carries on with a fresh shuffle.
 - **Rich posts.** A title slide (optionally over a photo), followed by a swipeable carousel of text, big-number stats, lists and steps, quotes, myth-vs-fact comparisons, timelines, photos and SVG diagrams. Captions support **bold**, *italic* and links.
-- **Interactive slides.** Quizzes, tap-to-reveal teasers, slider guesses and put-these-in-order puzzles, all written as JSON like any other slide. Profile keeps a tally of how you did.
+- **Visual slides drawn from numbers.** Bar charts, pictograms ("1 in 4"), to-scale circles, spectrums (where things sit on one measure) and step-by-step flows are plain JSON, so an LLM can add a graphic without producing an image.
+- **Interactive slides and puzzles.** Quizzes, tap-to-reveal teasers, slider guesses, and puzzles: put things in order, match pairs, sort fact from myth, unscramble a word, spot the odd one out. All written as JSON like any other slide. Profile keeps a tally of how you did.
 - **Live posts from Wikipedia.** The featured article and picture of the day are mixed in, walking back one day at a time, so the feed never runs dry. You can turn this off in Profile.
 - **Stories.** A "Daily 5" mix plus one story per field. Tap to move forward or back, hold to pause, or use the arrow keys and Space.
 - **Instagram interactions.** Double-tap to like, bookmark to save, and share through the native share sheet or a copied link. The comment button opens **Go deeper**, with the full text, the source, the author and related posts.

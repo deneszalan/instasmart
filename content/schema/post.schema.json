@@ -526,6 +526,528 @@
               "items"
             ],
             "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "chart"
+              },
+              "heading": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "description": "What the bars compare, e.g. \"CO₂ per person, tonnes a year\"."
+              },
+              "items": {
+                "minItems": 2,
+                "maxItems": 6,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 28
+                    },
+                    "value": {
+                      "type": "number",
+                      "description": "The number, in the unit the slide names."
+                    },
+                    "emphasis": {
+                      "description": "Highlight this one.",
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "label",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                },
+                "description": "Bars, top to bottom. Values must be 0 or more."
+              },
+              "unit": {
+                "description": "Shown after each number, e.g. \"t\", \"%\", \"km\".",
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 16
+              },
+              "note": {
+                "description": "A line under the chart: the year, the measure, a caveat.",
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              }
+            },
+            "required": [
+              "type",
+              "heading",
+              "items"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "pictogram"
+              },
+              "heading": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 90,
+                "description": "The statement the icons show, e.g. \"1 in 4 adults don’t get enough exercise\"."
+              },
+              "icon": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 8,
+                "description": "One emoji, repeated once per unit, e.g. \"🧍\"."
+              },
+              "total": {
+                "type": "integer",
+                "minimum": 2,
+                "maximum": 100,
+                "description": "How many icons to draw: the whole. 100 makes a 10×10 grid."
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991,
+                "description": "How many of them light up: the part."
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              }
+            },
+            "required": [
+              "type",
+              "heading",
+              "icon",
+              "total",
+              "count"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "scale"
+              },
+              "heading": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "description": "What is being compared, e.g. \"Earth next to Jupiter, by volume\"."
+              },
+              "items": {
+                "minItems": 2,
+                "maxItems": 4,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 20
+                    },
+                    "value": {
+                      "type": "number",
+                      "description": "The number, in the unit the slide names."
+                    },
+                    "emphasis": {
+                      "description": "Highlight this one.",
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "label",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                },
+                "description": "Circles whose areas are proportional to the values. Smallest to largest reads best."
+              },
+              "unit": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 16
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              }
+            },
+            "required": [
+              "type",
+              "heading",
+              "items"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "spectrum"
+              },
+              "heading": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "description": "What the scale measures, e.g. \"How loud is loud? (decibels)\"."
+              },
+              "min": {
+                "type": "number"
+              },
+              "max": {
+                "type": "number"
+              },
+              "marks": {
+                "minItems": 2,
+                "maxItems": 6,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 28
+                    },
+                    "value": {
+                      "type": "number"
+                    },
+                    "emphasis": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "label",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                },
+                "description": "Points on the scale, each between min and max."
+              },
+              "unit": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 16
+              },
+              "ends": {
+                "description": "Words at the low and high ends, e.g. [\"Acid\", \"Alkaline\"].",
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 16
+                  },
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 16
+                  }
+                ],
+                "items": false,
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "colors": {
+                "description": "Bar colours at the low and high ends.",
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "type": "string",
+                    "pattern": "^#[0-9a-fA-F]{6}$"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^#[0-9a-fA-F]{6}$"
+                  }
+                ],
+                "items": false,
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              }
+            },
+            "required": [
+              "type",
+              "heading",
+              "min",
+              "max",
+              "marks"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "flow"
+              },
+              "heading": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 60,
+                "description": "The process, e.g. \"How a vaccine trains the immune system\"."
+              },
+              "steps": {
+                "minItems": 3,
+                "maxItems": 5,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "icon": {
+                      "description": "One emoji.",
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 8
+                    },
+                    "label": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 44
+                    }
+                  },
+                  "required": [
+                    "label"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "cycle": {
+                "description": "The last step leads back to the first.",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "type",
+              "heading",
+              "steps"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "match"
+              },
+              "heading": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 60,
+                "description": "The instruction, e.g. \"Match the scientist to the discovery\"."
+              },
+              "pairs": {
+                "minItems": 3,
+                "maxItems": 5,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "left": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 28
+                    },
+                    "right": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 28
+                    }
+                  },
+                  "required": [
+                    "left",
+                    "right"
+                  ],
+                  "additionalProperties": false
+                },
+                "description": "Correct pairs; the app shuffles the right-hand side."
+              },
+              "explanation": {
+                "description": "Shown once every pair is matched.",
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              }
+            },
+            "required": [
+              "type",
+              "heading",
+              "pairs"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "sort"
+              },
+              "heading": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 60,
+                "description": "The question each item answers, e.g. \"Fact or myth?\" or \"Mammal or not?\"."
+              },
+              "bins": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 16
+                  },
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 16
+                  }
+                ],
+                "items": false,
+                "minItems": 2,
+                "maxItems": 2,
+                "description": "The two answers, e.g. [\"Fact\", \"Myth\"]."
+              },
+              "items": {
+                "minItems": 3,
+                "maxItems": 5,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 60
+                    },
+                    "bin": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 1,
+                      "description": "0 for the first bin, 1 for the second."
+                    }
+                  },
+                  "required": [
+                    "text",
+                    "bin"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "explanation": {
+                "description": "Shown at the end.",
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              }
+            },
+            "required": [
+              "type",
+              "heading",
+              "bins",
+              "items"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "scramble"
+              },
+              "clue": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120,
+                "description": "The hint, e.g. \"The process plants use to turn light into sugar\"."
+              },
+              "answer": {
+                "type": "string",
+                "pattern": "^[A-Za-z]{3,14}$",
+                "description": "The word, shown as shuffled letter tiles."
+              },
+              "detail": {
+                "description": "Shown after solving.",
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              }
+            },
+            "required": [
+              "type",
+              "clue",
+              "answer"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "odd"
+              },
+              "heading": {
+                "description": "Defaults to \"Which one doesn’t belong?\".",
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 60
+              },
+              "items": {
+                "minItems": 3,
+                "maxItems": 4,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 36
+                }
+              },
+              "answer": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991,
+                "description": "Index of the odd one out, counting from 0."
+              },
+              "explanation": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200,
+                "description": "Why it doesn’t belong, and what the others share."
+              }
+            },
+            "required": [
+              "type",
+              "items",
+              "answer",
+              "explanation"
+            ],
+            "additionalProperties": false
           }
         ]
       }

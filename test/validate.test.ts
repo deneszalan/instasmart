@@ -121,6 +121,47 @@ describe('validateContent', () => {
     expect(check({ type: 'reveal', prompt: 'Which planet spins backwards?', answer: 'Venus' })).toEqual([]);
   });
 
+  it('checks visual slides', () => {
+    const check = (slide: object) =>
+      validateContent([file('content/posts/space/space-test-post.json', JSON.stringify(post({ slides: [slide] })))]).problems.map((p) => p.message);
+    const bars = (values: number[]) => values.map((value, i) => ({ label: `Bar ${i}`, value }));
+    expect(check({ type: 'chart', heading: 'Moons', items: bars([1, 2]), unit: 'moons', note: 'Known moons' })).toEqual([]);
+    expect(check({ type: 'chart', heading: 'Moons', items: bars([0, 0]) })).toEqual(['slides[0].items: at least one bar must be above 0']);
+    expect(check({ type: 'chart', heading: 'Moons', items: bars([-1, 2]) })).toEqual(['slides[0].items: bar values must be 0 or more']);
+    expect(check({ type: 'pictogram', heading: '1 in 4', icon: '🧍', total: 4, count: 1 })).toEqual([]);
+    expect(check({ type: 'pictogram', heading: '5 in 4', icon: '🧍', total: 4, count: 5 })).toEqual(['slides[0].count: count cannot be more than total']);
+    expect(check({ type: 'scale', heading: 'Earth and Jupiter', items: bars([1, 1321]) })).toEqual([]);
+    expect(check({ type: 'scale', heading: 'Earth and Jupiter', items: bars([0, 1321]) })).toEqual(['slides[0].items: scale values must be above 0']);
+    const marks = [{ label: 'Whisper', value: 30 }, { label: 'Jet engine', value: 140, emphasis: true }];
+    expect(check({ type: 'spectrum', heading: 'Loudness', min: 0, max: 140, unit: 'dB', ends: ['Silence', 'Pain'], marks })).toEqual([]);
+    expect(check({ type: 'spectrum', heading: 'Loudness', min: 0, max: 100, marks })).toEqual(['slides[0].marks: every mark must lie between min and max']);
+    expect(check({ type: 'spectrum', heading: 'Loudness', min: 100, max: 100, marks })).toEqual(['slides[0].max: max must be greater than min']);
+    const steps = (labels: string[]) => labels.map((label) => ({ label }));
+    expect(check({ type: 'flow', heading: 'Water cycle', cycle: true, steps: steps(['Evaporation', 'Condensation', 'Rain']) })).toEqual([]);
+    expect(check({ type: 'flow', heading: 'Water cycle', steps: steps(['Evaporation', 'Rain']) })).toEqual([
+      'slides[0].steps: Too small: expected array to have >=3 items',
+    ]);
+  });
+
+  it('checks puzzle slides', () => {
+    const check = (slide: object) =>
+      validateContent([file('content/posts/space/space-test-post.json', JSON.stringify(post({ slides: [slide] })))]).problems.map((p) => p.message);
+    const pairs = (lefts: string[]) => lefts.map((left, i) => ({ left, right: `Right ${i}` }));
+    expect(check({ type: 'match', heading: 'Match them', pairs: pairs(['A', 'B', 'C']) })).toEqual([]);
+    expect(check({ type: 'match', heading: 'Match them', pairs: pairs(['A', 'a', 'C']) })).toEqual(['slides[0].pairs: each side of the pairs must be unique']);
+    const items = (bins: number[]) => bins.map((bin, i) => ({ text: `Claim ${i}`, bin }));
+    expect(check({ type: 'sort', heading: 'Fact or myth?', bins: ['Fact', 'Myth'], items: items([0, 1, 1]) })).toEqual([]);
+    expect(check({ type: 'sort', heading: 'Fact or myth?', bins: ['Fact', 'Myth'], items: items([1, 1, 1]) })).toEqual(['slides[0].items: use both bins at least once']);
+    expect(check({ type: 'scramble', clue: 'What plants do with light', answer: 'photosynthesis', detail: 'Greek roots.' })).toEqual([]);
+    expect(check({ type: 'scramble', clue: 'Two words', answer: 'ice cream' })).toEqual([
+      'slides[0].answer: One word of 3–14 plain letters (A–Z), no spaces or accents',
+    ]);
+    expect(check({ type: 'odd', items: ['Mercury', 'Venus', 'Jupiter'], answer: 2, explanation: 'A gas giant among rocky planets.' })).toEqual([]);
+    expect(check({ type: 'odd', items: ['Mercury', 'Venus', 'Jupiter'], answer: 3, explanation: 'A gas giant.' })).toEqual([
+      'slides[0].answer: answer must be between 0 and 2',
+    ]);
+  });
+
   it('turns schema errors into readable messages', () => {
     const { problems } = validateContent([
       file('content/posts/space/space-test-post.json', JSON.stringify(post({ tags: ['#Space'], slides: [{ type: 'list', items: ['one'] }] }))),

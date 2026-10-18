@@ -2,8 +2,11 @@ import { useMemo, useState } from 'react';
 import { Check, RotateCcw, X } from 'lucide-react';
 import type { Slide } from '../types';
 import { createRng, shuffle } from '../lib/feed';
+import { withUnit } from '../lib/format';
+import { seed } from '../lib/interactive';
 import { inline } from '../lib/markdown';
-import { useStore } from '../state/store';
+import { MatchSlideView, OddSlideView, ScrambleSlideView, SortSlideView } from './Puzzles';
+import { useRecord } from './useRecord';
 
 type Of<T extends Slide['type']> = Extract<Slide, { type: T }>;
 
@@ -18,6 +21,14 @@ export function InteractiveSlide({ slide, challengeId }: { slide: Slide; challen
       return <EstimateSlideView slide={slide} challengeId={challengeId} />;
     case 'order':
       return <OrderSlideView slide={slide} challengeId={challengeId} />;
+    case 'match':
+      return <MatchSlideView slide={slide} challengeId={challengeId} />;
+    case 'sort':
+      return <SortSlideView slide={slide} challengeId={challengeId} />;
+    case 'scramble':
+      return <ScrambleSlideView slide={slide} challengeId={challengeId} />;
+    case 'odd':
+      return <OddSlideView slide={slide} challengeId={challengeId} />;
     default:
       return null;
   }
@@ -27,11 +38,6 @@ interface Props<T extends Slide['type']> {
   slide: Of<T>;
   /** `${postId}#${slideIndex}`: where the result is recorded. */
   challengeId: string;
-}
-
-function useRecord(challengeId: string) {
-  const { recordChallenge } = useStore();
-  return (correct: boolean | null) => recordChallenge(challengeId, correct);
 }
 
 const LETTERS = ['A', 'B', 'C', 'D'];
@@ -108,16 +114,6 @@ export function RevealSlideView({ slide, challengeId }: Props<'reveal'>) {
   );
 }
 
-type NumberFormat = 'number' | 'year' | undefined;
-
-const formatNumber = (n: number, format: NumberFormat) =>
-  new Intl.NumberFormat(undefined, { maximumFractionDigits: 2, useGrouping: format !== 'year' }).format(n);
-
-function withUnit(n: number, unit?: string, format?: NumberFormat): string {
-  if (!unit) return formatNumber(n, format);
-  return /^[%°×]/.test(unit) ? `${formatNumber(n, format)}${unit}` : `${formatNumber(n, format)} ${unit}`;
-}
-
 /** Guess a number with a slider, then see the real value and how close you were. */
 export function EstimateSlideView({ slide, challengeId }: Props<'estimate'>) {
   const record = useRecord(challengeId);
@@ -192,12 +188,6 @@ export function EstimateSlideView({ slide, challengeId }: Props<'estimate'>) {
   );
 }
 
-function hash(s: string): number {
-  let h = 2166136261;
-  for (const ch of s) h = Math.imul(h ^ ch.charCodeAt(0), 16777619);
-  return h >>> 0;
-}
-
 /** Shuffled items the reader taps into the right order. */
 export function OrderSlideView({ slide, challengeId }: Props<'order'>) {
   const record = useRecord(challengeId);
@@ -205,7 +195,7 @@ export function OrderSlideView({ slide, challengeId }: Props<'order'>) {
   const shuffled = useMemo(() => {
     const out = shuffle(
       slide.items.map((_, i) => i),
-      createRng(hash(challengeId)),
+      createRng(seed(challengeId)),
     );
     if (out.every((v, i) => v === i)) out.push(out.shift()!);
     return out;

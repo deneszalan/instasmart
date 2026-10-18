@@ -76,7 +76,7 @@ You can add the exact model as `"model"`, e.g. `{ "name": "ChatGPT", "kind": "ai
 
 ## Slide types
 
-Each slide is a 4:5 card on the post's gradient. Pick the type that fits the idea, and keep one idea per slide.
+Each slide is a 4:5 card on the post's gradient. Pick the type that fits the idea, and keep one idea per slide. There are three kinds: text slides, **visual** slides the app draws from numbers (`chart`, `pictogram`, `scale`, `spectrum`, `flow`), and **interactive** slides the reader plays (`quiz`, `reveal`, `estimate`, and the puzzles `order`, `match`, `sort`, `scramble`, `odd`).
 
 | Type | Use it for | Shape |
 | --- | --- | --- |
@@ -90,19 +90,45 @@ Each slide is a 4:5 card on the post's gradient. Pick the type that fits the ide
 | `reveal` | A teaser the reader taps to flip over | `{ "type": "reveal", "prompt": "≤140", "answer": "≤80", "detail"?: "≤200" }` |
 | `estimate` | Guess a number with a slider | `{ "type": "estimate", "question": "≤120", "min": 0, "max": 100, "step"?: 1, "answer": 34, "unit"?: "%", "format"?: "year", "explanation": "≤200" }` |
 | `order` | Put 3–5 things in order by tapping | `{ "type": "order", "heading": "Oldest first", "items": ["≤40", … in the correct order], "explanation"?: "≤160" }` |
+| `chart` | Compare 2–6 numbers as bars | `{ "type": "chart", "heading": "≤80", "items": [{ "label": "≤28", "value": 14.9, "emphasis"?: true }, … 2–6], "unit"?: "t", "note"?: "≤100" }` |
+| `pictogram` | A share: "1 in 4", "71 of 100" | `{ "type": "pictogram", "heading": "≤90", "icon": "🧍", "total": 4, "count": 1, "note"?: "≤100" }` |
+| `scale` | How much bigger one thing is than another | `{ "type": "scale", "heading": "≤80", "items": [{ "label": "≤20", "value": 1 }, … 2–4], "unit"?: "Earths", "note"?: "≤100" }` |
+| `spectrum` | Where things sit on one measure: dB, pH, °C, years | `{ "type": "spectrum", "heading": "≤80", "min": 0, "max": 140, "unit"?: "dB", "ends"?: ["Silence", "Pain"], "marks": [{ "label": "≤28", "value": 30, "emphasis"?: true }, … 2–6], "colors"?: ["#38bdf8", "#fbbf24"], "note"? }` |
+| `flow` | A process or a cycle in 3–5 steps | `{ "type": "flow", "heading": "≤60", "steps": [{ "icon"?: "💉", "label": "≤44" }, … 3–5], "cycle"?: true }` |
+| `match` | Pair things up: person and discovery, word and meaning | `{ "type": "match", "heading": "≤60", "pairs": [{ "left": "≤28", "right": "≤28" }, … 3–5], "explanation"?: "≤160" }` |
+| `sort` | Fact or myth, A or B, one item at a time | `{ "type": "sort", "heading": "≤60", "bins": ["Fact", "Myth"], "items": [{ "text": "≤60", "bin": 0 }, … 3–5], "explanation"?: "≤160" }` |
+| `scramble` | Unscramble a key word from a clue | `{ "type": "scramble", "clue": "≤120", "answer": "3–14 letters", "detail"?: "≤160" }` |
+| `odd` | Which one doesn’t belong | `{ "type": "odd", "heading"?: "≤60", "items": ["≤36", … 3–4], "answer": 3, "explanation": "≤200" }` |
 | `image` | A photo or a diagram | `{ "type": "image", "src": "orbit.svg", "alt": "…", "caption"?: "≤200", "fit"?: "cover" \| "contain", "credit"?: "≤120" }` |
 
 Use `"fit": "cover"` for photos (they fill the card) and `"fit": "contain"` for diagrams (the whole image shows on the gradient).
 
+### Visual slides
+
+The app draws these from the numbers in the JSON, so they need no image file and always match the post's colours. Reach for one whenever a sentence would otherwise carry the numbers.
+
+- `chart`: a comparison, as bars. 2–6 items, longest bar at full width, values in one `unit`. Mark the item the post is about with `"emphasis": true`. Put the year, the measure or a caveat in `note`.
+- `pictogram`: one share, as a grid of icons. `count` of `total` light up: "1 in 4" is `1` of `4`, "71%" is `71` of `100`. Pick an `icon` that fits (🧍 people, 🌍 planets, 🟦 anything). Up to 100 icons.
+- `scale`: "X times bigger", as circles whose areas are proportional to the values. 2–4 items, smallest first. With a ratio above a few thousand the small one becomes a dot, which can be the whole point.
+- `spectrum`: where things sit on one measure, as marks along a bar from `min` to `max`. 2–6 marks, each inside the range; `ends` names the two extremes; `colors` sets the bar's colours at the low and high ends. Good for decibels, pH, temperatures, frequencies, years.
+- `flow`: how something happens, in 3–5 steps with an emoji each. `"cycle": true` when the last step leads back to the first.
+
+Numbers are plain JSON numbers (`14.9`, not `"14.9"`), rounded as the source gives them; the app formats them. Only use figures you can point to in the source.
+
 ### Interactive slides
 
-`quiz`, `reveal`, `estimate` and `order` turn a post into something to do, and the app keeps a tally of them in Profile. Tips:
+`quiz`, `reveal`, `estimate` and the puzzles `order`, `match`, `sort`, `scramble` and `odd` turn a post into something to do, and the app keeps a tally of them in Profile. Tips:
 
 - Put an `estimate` or `reveal` *before* the slide that gives the answer, so the guess is real; put a `quiz` or `order` near the end, as a recap.
 - Don't quiz the title: readers have just seen it. Ask about the why, a number from the body, or a detail from a slide.
 - Make wrong options plausible, keep every option under 40 characters, and never build a question on a hedged or disputed figure.
 - `answer` in a quiz counts from 0. `order` items are written in the correct order; the app shuffles them.
 - An `estimate` needs a range that makes guessing interesting (not 0–1,000,000 for an answer of 5) and `step: 1` for whole numbers. For a year, add `"format": "year"` so it shows as 1582, not 1,582.
+- `match` needs 3–5 pairs where each left has exactly one right answer; both sides must be unique. The app shuffles the right-hand column.
+- `sort` shows the items one at a time and asks which of the two `bins` each belongs in; use both bins. "Fact or myth?" is the classic.
+- `scramble` is one word of 3–14 plain letters (A–Z, no spaces or accents) that the clue makes solvable: a key term from the post, not a random word. `detail` can give its origin.
+- `odd` lists 3–4 things of which one doesn't belong as a matter of fact, and the explanation says what the others share.
+- One or two interactive slides per post is plenty; a visual slide beside them gives readers something to look at between plays.
 
 A slide is phone-sized, so `list` and `timeline` slides must stay short: about 12 lines in total, where a timeline date counts as a line and a line holds roughly 34 characters (30 in a list). `npm run content` checks this and tells you by how much to cut.
 

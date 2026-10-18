@@ -5,6 +5,7 @@ import { FIELDS } from '../data/fields';
 import { LIBRARY } from '../data/library';
 import { authorGroup } from '../lib/authors';
 import { firstInteractive } from '../lib/interactive';
+import { firstVisual } from '../lib/visual';
 import { createRng, searchCards, shuffle } from '../lib/feed';
 import { Tile } from '../components/Tile';
 import { WRITERS, WriterChips } from '../components/WriterChips';
@@ -24,6 +25,7 @@ const isTall = (i: number) => i % 10 === 2 || i % 10 === 5;
 export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExploreProps) {
   const [field, setField] = useState<FieldId | 'all'>('all');
   const [interactiveOnly, setInteractiveOnly] = useState(false);
+  const [visualOnly, setVisualOnly] = useState(false);
   // A per-visit shuffle so the grid isn't grouped by field.
   const [order] = useState(() => shuffle(LIBRARY, createRng(Date.now())));
 
@@ -32,10 +34,11 @@ export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExplorePro
       (c) =>
         (field === 'all' || c.field === field) &&
         (!author || authorGroup(c)?.id === author) &&
-        (!interactiveOnly || firstInteractive(c) >= 0),
+        (!interactiveOnly || firstInteractive(c) >= 0) &&
+        (!visualOnly || firstVisual(c) >= 0),
     );
     return searchCards(filtered, query);
-  }, [order, field, author, query, interactiveOnly]);
+  }, [order, field, author, query, interactiveOnly, visualOnly]);
 
   const authorLabel = WRITERS.find((w) => w.id === author)?.label;
   const fieldName = FIELDS.find((f) => f.id === field)?.name;
@@ -64,6 +67,9 @@ export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExplorePro
           </button>
           <button aria-pressed={interactiveOnly} className="chip" onClick={() => setInteractiveOnly((v) => !v)}>
             🎯 Interactive
+          </button>
+          <button aria-pressed={visualOnly} className="chip" onClick={() => setVisualOnly((v) => !v)}>
+            📊 Visual
           </button>
           {FIELDS.map((f) => (
             <button key={f.id} aria-pressed={field === f.id} className="chip" onClick={() => setField(f.id)}>

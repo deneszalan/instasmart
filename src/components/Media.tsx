@@ -5,6 +5,7 @@ import type { WikiPost } from '../lib/wiki';
 import { FIELD_BY_ID } from '../data/fields';
 import { inline } from '../lib/markdown';
 import { InteractiveSlide } from './Interactive';
+import { VisualSlide } from './Visual';
 import { challengeId } from '../lib/interactive';
 
 function titleSize(title: string): string {
@@ -138,7 +139,17 @@ function SlideBody({ slide, challengeId }: { slide: Slide; challengeId: string }
     case 'reveal':
     case 'estimate':
     case 'order':
+    case 'match':
+    case 'sort':
+    case 'scramble':
+    case 'odd':
       return <InteractiveSlide slide={slide} challengeId={challengeId} />;
+    case 'chart':
+    case 'pictogram':
+    case 'scale':
+    case 'spectrum':
+    case 'flow':
+      return <VisualSlide slide={slide} />;
     case 'image':
       // Rendered by ImageSlideView.
       return null;
