@@ -456,6 +456,34 @@ p {
   backdrop-filter: blur(6px);
 }
 
+/* Quiz story frames */
+.story__content--interactive {
+  justify-content: flex-start;
+  gap: 14px;
+  padding-top: 18px;
+  cursor: default;
+}
+
+.story__from {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.85;
+  text-wrap: balance;
+}
+
+.story__widget {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.story__next {
+  align-self: flex-end;
+  margin-top: 0;
+}
+
 /* ---------- Post ---------- */
 .post {
   border-bottom: 1px solid var(--hairline);

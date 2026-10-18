@@ -1,6 +1,7 @@
 import type { KnowledgeCard } from '../types';
 import { FIELDS } from '../data/fields';
 import { createRng, shuffle, spreadByField } from './feed';
+import { firstInteractive } from './interactive';
 
 export interface Story {
   id: string;
@@ -8,6 +9,8 @@ export interface Story {
   emoji: string;
   gradient: [string, string];
   cards: KnowledgeCard[];
+  /** Frames show each card's interactive slide instead of its text, and wait for the reader. */
+  interactive?: boolean;
 }
 
 export const STORY_LENGTH = 5;
@@ -25,8 +28,16 @@ function pick(cards: readonly KnowledgeCard[], seen: ReadonlySet<string>, rng: (
   return fresh.concat(old).slice(0, count);
 }
 
-/** A "Daily 5" mix across fields, followed by one story per field. Changes every day. */
-export function buildStories(library: readonly KnowledgeCard[], seen: ReadonlySet<string>, day: string): Story[] {
+/**
+ * A "Daily 5" mix across fields, a "Daily quiz" of interactive slides, then one story per field.
+ * Changes every day. `played` holds the ids of posts whose challenge the reader has already tried.
+ */
+export function buildStories(
+  library: readonly KnowledgeCard[],
+  seen: ReadonlySet<string>,
+  day: string,
+  played: ReadonlySet<string> = new Set(),
+): Story[] {
   const rng = createRng(daySeed(day));
 
   const daily = spreadByField(pick(library, seen, rng, STORY_LENGTH * 4), rng)
@@ -36,6 +47,22 @@ export function buildStories(library: readonly KnowledgeCard[], seen: ReadonlySe
   const stories: Story[] = [
     { id: 'daily', label: 'Daily 5', emoji: '✨', gradient: ['#f59e0b', '#db2777'], cards: daily },
   ];
+
+  // One challenge per field, from posts the reader hasn't played; played ones only fill gaps.
+  const withChallenges = library.filter((c) => firstInteractive(c) >= 0);
+  const onePerField = (cards: KnowledgeCard[], count: number) =>
+    spreadByField(shuffle(cards, rng), rng)
+      .filter((card, i, all) => all.findIndex((c) => c.field === card.field) === i)
+      .slice(0, count);
+  let quiz = onePerField(withChallenges.filter((c) => !played.has(c.id)), STORY_LENGTH);
+  if (quiz.length < STORY_LENGTH) {
+    const taken = new Set(quiz.map((c) => c.field));
+    const rest = withChallenges.filter((c) => played.has(c.id) && !taken.has(c.field));
+    quiz = quiz.concat(onePerField(rest, STORY_LENGTH - quiz.length));
+  }
+  if (quiz.length) {
+    stories.push({ id: 'quiz', label: 'Daily quiz', emoji: '🎯', gradient: ['#0ea5e9', '#6366f1'], cards: quiz, interactive: true });
+  }
   for (const field of FIELDS) {
     const cards = pick(
       library.filter((c) => c.field === field.id),

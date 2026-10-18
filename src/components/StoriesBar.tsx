@@ -8,7 +8,14 @@ import { StoryViewer } from './StoryViewer';
 export function StoriesBar() {
   const { state } = useStore();
   // Build once per visit so stories don't reshuffle while you read them.
-  const [stories] = useState(() => buildStories(LIBRARY, new Set(Object.keys(state.seen)), localDay()));
+  const [stories] = useState(() =>
+    buildStories(
+      LIBRARY,
+      new Set(Object.keys(state.seen)),
+      localDay(),
+      new Set(Object.keys(state.challenges).map((key) => key.split('#')[0])),
+    ),
+  );
   const [open, setOpen] = useState<number | null>(null);
   const today = localDay();
 

@@ -7,6 +7,22 @@ import { useStore } from '../state/store';
 
 type Of<T extends Slide['type']> = Extract<Slide, { type: T }>;
 
+/** Renders whichever interactive slide this is; nothing for other slide types. */
+export function InteractiveSlide({ slide, challengeId }: { slide: Slide; challengeId: string }) {
+  switch (slide.type) {
+    case 'quiz':
+      return <QuizSlideView slide={slide} challengeId={challengeId} />;
+    case 'reveal':
+      return <RevealSlideView slide={slide} challengeId={challengeId} />;
+    case 'estimate':
+      return <EstimateSlideView slide={slide} challengeId={challengeId} />;
+    case 'order':
+      return <OrderSlideView slide={slide} challengeId={challengeId} />;
+    default:
+      return null;
+  }
+}
+
 interface Props<T extends Slide['type']> {
   slide: Of<T>;
   /** `${postId}#${slideIndex}`: where the result is recorded. */

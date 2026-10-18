@@ -4,6 +4,7 @@ import type { FieldId } from '../types';
 import { FIELDS } from '../data/fields';
 import { LIBRARY } from '../data/library';
 import { authorGroup } from '../lib/authors';
+import { firstInteractive } from '../lib/interactive';
 import { createRng, searchCards, shuffle } from '../lib/feed';
 import { Tile } from '../components/Tile';
 import { WRITERS, WriterChips } from '../components/WriterChips';
@@ -22,15 +23,19 @@ const isTall = (i: number) => i % 10 === 2 || i % 10 === 5;
 
 export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExploreProps) {
   const [field, setField] = useState<FieldId | 'all'>('all');
+  const [interactiveOnly, setInteractiveOnly] = useState(false);
   // A per-visit shuffle so the grid isn't grouped by field.
   const [order] = useState(() => shuffle(LIBRARY, createRng(Date.now())));
 
   const results = useMemo(() => {
     const filtered = order.filter(
-      (c) => (field === 'all' || c.field === field) && (!author || authorGroup(c)?.id === author),
+      (c) =>
+        (field === 'all' || c.field === field) &&
+        (!author || authorGroup(c)?.id === author) &&
+        (!interactiveOnly || firstInteractive(c) >= 0),
     );
     return searchCards(filtered, query);
-  }, [order, field, author, query]);
+  }, [order, field, author, query, interactiveOnly]);
 
   const authorLabel = WRITERS.find((w) => w.id === author)?.label;
   const fieldName = FIELDS.find((f) => f.id === field)?.name;
@@ -56,6 +61,9 @@ export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExplorePro
         <div className="chips" role="group" aria-label="Fields">
           <button aria-pressed={field === 'all'} className="chip" onClick={() => setField('all')}>
             All
+          </button>
+          <button aria-pressed={interactiveOnly} className="chip" onClick={() => setInteractiveOnly((v) => !v)}>
+            🎯 Interactive
           </button>
           {FIELDS.map((f) => (
             <button key={f.id} aria-pressed={field === f.id} className="chip" onClick={() => setField(f.id)}>
