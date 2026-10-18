@@ -13,28 +13,29 @@
       "text": "In East Asian and Native American populations the figure is 5% or lower."
     },
     {
-      "type": "chart",
-      "heading": "Adults with lactase persistence, by population",
+      "type": "higher",
+      "heading": "Adults who can still digest milk sugar, by population",
       "items": [
-        {
-          "label": "North-west Europe, at least",
-          "value": 89
-        },
         {
           "label": "Greece",
           "value": 17
         },
         {
-          "label": "Sardinia",
-          "value": 14
+          "label": "North-west Europe",
+          "value": 89
         },
         {
-          "label": "East Asia, at most",
+          "label": "East Asia",
           "value": 5
+        },
+        {
+          "label": "Sardinia",
+          "value": 14
         }
       ],
       "unit": "%",
-      "note": "Predicted from DNA; the source gives 89–96% for north-west Europe and 5% or less for East Asia"
+      "note": "Predicted from DNA; the source gives 89–96% for north-west Europe and 5% or less for East Asia",
+      "explanation": "Even in Greece and Sardinia most adults lose the enzyme after childhood; north-west Europe’s exception traces almost entirely to one mutation."
     },
     {
       "type": "compare",

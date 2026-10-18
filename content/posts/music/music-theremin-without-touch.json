@@ -46,6 +46,26 @@
       "text": "The instrument responds to the position of the player's hands. Electronics generate the sound; the performer controls it through movement."
     },
     {
+      "type": "place",
+      "question": "The Science Museum Group holds an RCA theremin. When was it made?",
+      "min": 1870,
+      "max": 2000,
+      "step": 1,
+      "answer": 1929,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Phonograph",
+          "value": 1877
+        },
+        {
+          "label": "Moog synth",
+          "value": 1964
+        }
+      ],
+      "explanation": "1929. Léon Theremin invented the instrument in 1920 and licensed it to RCA, whose model went on sale just after the Wall Street crash. Hands-free music is nearly a century old."
+    },
+    {
       "type": "text",
       "heading": "This is not a recent invention",
       "text": "The Science Museum Group holds an RCA theremin manufactured in 1929. Playing music without touching the instrument has a history stretching back nearly a century."

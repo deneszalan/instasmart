@@ -35,6 +35,14 @@
       ]
     },
     {
+      "type": "fill",
+      "question": "Out of 10 creatures a Venus flytrap catches, how many are ants?",
+      "icon": "🍽️",
+      "total": 10,
+      "answer": 3,
+      "explanation": "About 33%, by a count of its prey, with 30% spiders, 10% beetles and 10% grasshoppers. Flying insects make up fewer than 5% of what the ‘flytrap’ actually eats."
+    },
+    {
       "type": "text",
       "heading": "Flies, mostly not",
       "text": "Despite the name, flying insects make up under 5% of its catch. A study of its prey found about 33% ants, 30% spiders, 10% beetles and 10% grasshoppers. In the wild the plant grows only in a patch of the coastal Carolinas, within roughly 100 km of Wilmington, North Carolina."

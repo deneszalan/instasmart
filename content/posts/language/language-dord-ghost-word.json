@@ -7,6 +7,26 @@
   "body": "In 1931 a chemistry editor at the Merriam company filed a slip reading ‘D or d, cont./density’, meaning the letter D can abbreviate density. It was misread as one word, and the 1934 Webster’s New International Dictionary defined ‘dord’ as a term for density in physics and chemistry. An editor noticed in 1939 that it had no etymology, but the ghost word was not fully removed until 1947.",
   "slides": [
     {
+      "type": "place",
+      "question": "In what year was the ghost word ‘dord’ finally removed from Webster’s?",
+      "min": 1920,
+      "max": 1960,
+      "step": 1,
+      "answer": 1947,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Slip filed",
+          "value": 1931
+        },
+        {
+          "label": "Dord printed",
+          "value": 1934
+        }
+      ],
+      "explanation": "1947. On 28 February 1939 an editor noticed that dord had no etymology and found the error, but the entry was not completely removed until 1947, thirteen years after it was printed."
+    },
+    {
       "type": "flow",
       "heading": "How a ghost word is born",
       "steps": [

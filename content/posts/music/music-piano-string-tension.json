@@ -44,6 +44,26 @@
       "text": "That is about 180 kilonewtons, roughly the weight of a dozen family cars."
     },
     {
+      "type": "place",
+      "question": "When was a one-piece cast-iron piano frame first patented?",
+      "min": 1650,
+      "max": 1900,
+      "step": 1,
+      "answer": 1825,
+      "format": "year",
+      "hints": [
+        {
+          "label": "First piano",
+          "value": 1700
+        },
+        {
+          "label": "Steinway opens",
+          "value": 1853
+        }
+      ],
+      "explanation": "1825, by Alpheus Babcock in Boston, for a square piano; Chickering patented the first full iron frame for grands in 1843. Iron let builders use heavier strings under far more tension."
+    },
+    {
       "type": "timeline",
       "heading": "Iron takes the strain",
       "events": [

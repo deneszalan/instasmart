@@ -17,6 +17,30 @@
       "explanation": "About 43 hectares. Its roughly 47,000 stems are genetically identical shoots from one shared root system in Utah’s Fishlake National Forest."
     },
     {
+      "type": "place",
+      "question": "Pando, one tree with about 47,000 trunks: how much does it weigh?",
+      "min": 0,
+      "max": 8000,
+      "step": 100,
+      "answer": 6000,
+      "unit": "t",
+      "ends": [
+        "0 t",
+        "8,000 t"
+      ],
+      "hints": [
+        {
+          "label": "Blue whale",
+          "value": 200
+        },
+        {
+          "label": "Giant sequoia",
+          "value": 1910
+        }
+      ],
+      "explanation": "An estimated 6,000 tonnes, generally held to be the heaviest organism known. The biggest blue whales reach 190–200 t; General Sherman, the largest single-trunk tree, is estimated at about 1,900 t."
+    },
+    {
       "type": "scale",
       "heading": "The heaviest organism known, next to the heaviest animal",
       "items": [

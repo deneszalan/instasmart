@@ -40,6 +40,30 @@
       ]
     },
     {
+      "type": "place",
+      "question": "In what year did the first international treaty halt the hunting of sea otters for their fur?",
+      "min": 1700,
+      "max": 2000,
+      "step": 1,
+      "answer": 1911,
+      "format": "year",
+      "ends": [
+        "1700",
+        "2000"
+      ],
+      "hints": [
+        {
+          "label": "Hunt begins",
+          "value": 1741
+        },
+        {
+          "label": "US hunting ban",
+          "value": 1972
+        }
+      ],
+      "explanation": "1911: Russia, Japan, Britain and the US signed a treaty with a moratorium on hunting sea otters; by then an estimated 1,000–2,000 were left. A 1972 US law later made hunting them illegal."
+    },
+    {
       "type": "text",
       "heading": "Remove the otter",
       "text": "Fur hunting from 1741 to 1911 cut sea otters to roughly 1,000–2,000 animals. Where they vanished, urchin numbers could boom and kelp forests suffered."

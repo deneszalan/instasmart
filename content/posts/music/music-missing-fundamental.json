@@ -7,39 +7,36 @@
   "body": "A musical note usually contains a fundamental frequency plus overtones at whole-number multiples of it. Remove the fundamental but keep the overtones, and listeners still hear the same pitch, because the brain infers it from the spacing of the harmonics. That is why a deep voice still sounds deep over a traditional phone line, which cuts off frequencies below about 300 Hz, and why tiny speakers can suggest bass they cannot produce.",
   "slides": [
     {
-      "type": "spectrum",
-      "heading": "What a traditional phone line throws away",
+      "type": "place",
+      "question": "A traditional phone line throws away everything below a certain frequency. Where is the cut-off?",
       "min": 0,
       "max": 500,
+      "step": 5,
+      "answer": 300,
       "unit": "Hz",
       "ends": [
         "Low",
         "High"
       ],
-      "marks": [
+      "hints": [
         {
-          "label": "Lowest piano note (A0)",
+          "label": "Lowest piano A",
           "value": 27.5
         },
         {
-          "label": "Male voices: 90–155 Hz",
+          "label": "Men, low end",
           "value": 90
         },
         {
-          "label": "Female voices: 165–255 Hz",
+          "label": "Women, low end",
           "value": 165
-        },
-        {
-          "label": "Phone line cuts below this",
-          "value": 300,
-          "emphasis": true
         },
         {
           "label": "Concert A",
           "value": 440
         }
       ],
-      "note": "Phone lines carry about 300–3,400 Hz, so a deep voice’s fundamental never arrives."
+      "explanation": "About 300 Hz. A traditional line carries roughly 300–3,400 Hz, so a deep voice’s fundamental never arrives; your brain rebuilds the pitch from the spacing of the harmonics that do."
     },
     {
       "type": "quiz",

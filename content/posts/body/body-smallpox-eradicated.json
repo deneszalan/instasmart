@@ -7,12 +7,12 @@
   "body": "Smallpox killed about 30% of the people it infected and is estimated to have caused up to 300 million deaths in the 20th century alone. It could be eradicated because it spread only between humans, with no animal reservoir, caused an unmistakable rash and could be prevented with an effective vaccine. A global campaign coordinated by the World Health Organization tracked down outbreaks, and the world was certified smallpox-free in 1980.",
   "slides": [
     {
-      "type": "pictogram",
-      "heading": "Smallpox killed about 3 in 10 of the people it infected",
+      "type": "fill",
+      "question": "Out of every 10 people who caught smallpox, how many did it kill?",
       "icon": "🧍",
       "total": 10,
-      "count": 3,
-      "note": "It is estimated to have caused up to 300 million deaths in the 20th century alone"
+      "answer": 3,
+      "explanation": "About 3 in 10: smallpox killed about 30% of the people it infected, and is estimated to have caused up to 300 million deaths in the 20th century alone."
     },
     {
       "type": "order",

@@ -44,6 +44,26 @@
       ]
     },
     {
+      "type": "place",
+      "question": "Hangul was published in 1446. When did the government decree it Korea’s preferred script?",
+      "min": 1400,
+      "max": 2000,
+      "step": 1,
+      "answer": 1894,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Published",
+          "value": 1446
+        },
+        {
+          "label": "Persecuted",
+          "value": 1504
+        }
+      ],
+      "explanation": "Only in 1894, some 450 years later, when the Joseon government decreed Hangul the preferred script for administrative documents. Elites who prized Chinese learning had looked down on it for centuries."
+    },
+    {
       "type": "text",
       "heading": "A slow victory",
       "text": "Elites who prized Chinese learning looked down on Hangul for centuries, and a king persecuted its use in 1504. It became the government’s preferred script only in 1894."

@@ -41,6 +41,22 @@
           "label": "The listener turns it back into Spanish"
         }
       ]
+    },
+    {
+      "type": "place",
+      "question": "After decades of decline, when did Silbo Gomero become a compulsory school subject on La Gomera?",
+      "min": 1950,
+      "max": 2020,
+      "step": 1,
+      "answer": 1999,
+      "format": "year",
+      "hints": [
+        {
+          "label": "UNESCO listing",
+          "value": 2009
+        }
+      ],
+      "explanation": "July 1999, in La Gomera’s primary and secondary schools. Ten years later, in 2009, UNESCO declared it a masterpiece of the intangible heritage of humanity."
     }
   ],
   "tags": [

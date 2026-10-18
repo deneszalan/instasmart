@@ -7,6 +7,22 @@
   "body": "Before 1977, most deaf Nicaraguans were isolated, communicating with family through simple home signs. When special schools opened in Managua, teachers focused on lipreading Spanish, but on playgrounds and buses the children pooled their gestures into a shared system. Younger pupils then made it richer, adding grammar such as verb agreement. Linguists treat it as a rare chance to watch a language being born.",
   "slides": [
     {
+      "type": "place",
+      "question": "When did the Managua special-education programme open where deaf children pooled their signs?",
+      "min": 1800,
+      "max": 2020,
+      "step": 1,
+      "answer": 1977,
+      "format": "year",
+      "hints": [
+        {
+          "label": "ASL begins",
+          "value": 1817
+        }
+      ],
+      "explanation": "1977: a programme that began with 50 deaf children. A vocational school followed in 1980, and by 1983 more than 400 deaf pupils were pooling their gestures into a shared language."
+    },
+    {
       "type": "flow",
       "heading": "How a language was born",
       "steps": [

@@ -7,6 +7,26 @@
   "body": "Engineer Andy Hildebrand spent years in the oil industry interpreting seismic data, using sound waves bounced through rock to map possible oil deposits. He realised the same signal-processing maths, especially a technique called autocorrelation, could track the pitch of a voice in real time. His company Antares released Auto-Tune in 1997 to discreetly fix off-key notes, and Cher’s 1998 hit Believe made its robotic extreme setting famous.",
   "slides": [
     {
+      "type": "place",
+      "question": "Auto-Tune’s maths came from oil prospecting. When did Antares release it?",
+      "min": 1970,
+      "max": 2010,
+      "step": 1,
+      "answer": 1997,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Compact disc",
+          "value": 1982
+        },
+        {
+          "label": "iPod",
+          "value": 2001
+        }
+      ],
+      "explanation": "1997, sold to fix off-key notes discreetly. A year later Cher’s hit Believe made its robotic extreme setting famous."
+    },
+    {
       "type": "flow",
       "heading": "From oil wells to pop vocals",
       "steps": [

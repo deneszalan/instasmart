@@ -7,39 +7,36 @@
   "body": "Across European history, the A above middle C has been tuned anywhere from about 390 Hz to over 450 Hz, depending on city, era and instrument. An international conference in London settled on 440 Hz in 1939, and the standard was later adopted by ISO. Even now many orchestras tune a little higher, around 442 Hz, for a brighter sound, while baroque ensembles often play at about 415 Hz.",
   "slides": [
     {
-      "type": "spectrum",
-      "heading": "Where the A above middle C has been tuned",
+      "type": "place",
+      "question": "In 1859 France fixed concert pitch by law. Where did it put the A above middle C?",
       "min": 380,
       "max": 480,
+      "step": 1,
+      "answer": 435,
       "unit": "Hz",
       "ends": [
         "Lower",
         "Higher"
       ],
-      "marks": [
+      "hints": [
         {
-          "label": "Modern baroque pitch",
+          "label": "Baroque pitch",
           "value": 415
         },
         {
-          "label": "French standard, 1800s",
-          "value": 435
+          "label": "London, 1939",
+          "value": 440
         },
         {
-          "label": "London conference, 1939",
-          "value": 440,
-          "emphasis": true
-        },
-        {
-          "label": "Bernstein’s NY Philharmonic",
+          "label": "New York Phil",
           "value": 442
         },
         {
-          "label": "Bach-era German churches",
+          "label": "Bach-era organ",
           "value": 466
         }
       ],
-      "note": "Historically A ranged from about 390 Hz to over 450 Hz; ISO adopted 440 Hz in 1955."
+      "explanation": "435 Hz, France’s ‘diapason normal’. The London conference of 1939 chose 440 Hz, which ISO adopted in 1955; historically A has ranged from about 390 Hz to over 450 Hz."
     },
     {
       "type": "quiz",

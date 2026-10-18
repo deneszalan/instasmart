@@ -7,35 +7,32 @@
   "body": "Most scholars recognize four independent inventions of writing: in Mesopotamia around 3400–3100 BC, in Egypt around 3250 BC, in China before about 1250 BC and in Mesoamerica before about AD 1. Mesopotamian cuneiform grew out of a much older system of clay tokens used for accounting, and China’s earliest surviving texts are inscriptions on oracle bones. Whether Egypt borrowed the idea from Mesopotamia is still debated.",
   "slides": [
     {
-      "type": "spectrum",
-      "heading": "Four separate inventions of writing, years ago",
+      "type": "place",
+      "question": "How long ago did China’s earliest surviving writing, the oracle-bone inscriptions, appear?",
       "min": 0,
       "max": 6000,
+      "step": 100,
+      "answer": 3300,
       "unit": "years ago",
       "ends": [
         "Today",
         "Deep past"
       ],
-      "marks": [
+      "hints": [
         {
-          "label": "Mesopotamia, c. 3400–3100 BC",
-          "value": 5400,
-          "emphasis": true
+          "label": "Mesopotamia",
+          "value": 5400
         },
         {
-          "label": "Egypt, c. 3250 BC",
+          "label": "Egypt",
           "value": 5300
         },
         {
-          "label": "China, before c. 1250 BC",
-          "value": 3300
-        },
-        {
-          "label": "Mesoamerica, before AD 1",
+          "label": "Mesoamerica",
           "value": 2000
         }
       ],
-      "note": "Approximate ages; whether Egypt borrowed the idea from Mesopotamia is still debated."
+      "explanation": "About 3,300 years ago: the oracle bones date from before about 1250 BC, some two millennia after writing began in Mesopotamia and Egypt. Whether Egypt borrowed the idea is still debated."
     },
     {
       "type": "quiz",

@@ -43,12 +43,12 @@
       "text": "Today several million people speak Hebrew as their mother tongue."
     },
     {
-      "type": "pictogram",
-      "heading": "In 1948, 81 in 100 Jews born in Palestine spoke Hebrew as their only daily language",
+      "type": "fill",
+      "question": "In 1948, out of 10 Jews born in Palestine, how many spoke Hebrew as their only daily language?",
       "icon": "🧍",
-      "total": 100,
-      "count": 81,
-      "note": "80.9% in 1948; the 1922 census had counted only 80,396 Hebrew speakers in all."
+      "total": 10,
+      "answer": 8,
+      "explanation": "80.9% in 1948, so eight in ten. The 1922 census had counted only 80,396 Hebrew speakers in all of Palestine."
     },
     {
       "type": "text",
