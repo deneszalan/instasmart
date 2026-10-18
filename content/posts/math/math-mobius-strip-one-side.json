@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-mobius-strip-one-side",
+  "field": "math",
+  "title": "A loop with one half-twist has only one side",
+  "emoji": "➰",
+  "body": "Give a strip of paper a half-twist before joining its ends, and you make a **Möbius strip**. A line drawn along its middle can travel across what looked like both sides of the paper and return to its start without crossing an edge. The half-twist connects those apparent sides into one continuous surface. The strip also has just one continuous boundary edge.",
+  "slides": [
+    {
+      "type": "list",
+      "heading": "Make the shape",
+      "style": "steps",
+      "items": [
+        "Take a long rectangular strip of paper.",
+        "Turn one end through half a turn: 180 degrees.",
+        "Join the short ends to make a loop."
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Try the pencil test",
+      "text": "Start a line in the middle and keep going around the loop. You can return to the start after visiting both original faces, without lifting the pencil or crossing an edge."
+    },
+    {
+      "type": "compare",
+      "heading": "One twist changes the surface",
+      "left": {
+        "label": "Untwisted loop",
+        "text": "Two sides and two separate boundary edges."
+      },
+      "right": {
+        "label": "Möbius strip",
+        "text": "One continuous side and one continuous boundary edge."
+      }
+    }
+  ],
+  "tags": [
+    "geometry",
+    "topology",
+    "mobius"
+  ],
+  "source": {
+    "label": "Wolfram MathWorld: Möbius Strip",
+    "url": "https://mathworld.wolfram.com/MoebiusStrip.html"
+  },
+  "author": {
+    "name": "ChatGPT",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
