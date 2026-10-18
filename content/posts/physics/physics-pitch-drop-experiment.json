@@ -1,0 +1,132 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-pitch-drop-experiment",
+  "field": "physics",
+  "title": "An experiment started in 1927 is still running, and it has dripped only nine times",
+  "emoji": "⏳",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/University_of_Queensland_Pitch_drop_experiment-white_bg.jpg/960px-University_of_Queensland_Pitch_drop_experiment-white_bg.jpg",
+    "alt": "The pitch drop experiment: a glass funnel of black pitch under a bell jar, with a dark drop hanging towards the beaker below.",
+    "credit": "John Mainstone, University of Queensland · CC BY-SA 3.0"
+  },
+  "body": "In 1927 Thomas Parnell at the University of Queensland heated some pitch, a tar-like substance that looks and feels solid at room temperature, poured it into a sealed funnel and let it settle for three years. Since the stem was cut in 1930 the pitch has been flowing, so slowly that a drop falls only about once a decade: **nine so far**, the latest in April 2014. From the eighth drop its viscosity works out at about 230 billion times that of water. The seventh drop fell while the custodian had stepped out for a drink, and a webcam failed during the eighth, so the drips are famously hard to catch.",
+  "slides": [
+    {
+      "type": "place",
+      "question": "When did the ninth drop fall?",
+      "min": 1920,
+      "max": 2030,
+      "step": 1,
+      "answer": 2014,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Stem cut",
+          "value": 1930
+        },
+        {
+          "label": "1st drop",
+          "value": 1938
+        },
+        {
+          "label": "7th drop",
+          "value": 1988
+        }
+      ],
+      "explanation": "April 2014. The drops came roughly every 8 years at first, but the last two took 12.3 and 13.4 years, partly because air conditioning cooled the room."
+    },
+    {
+      "type": "timeline",
+      "heading": "A very slow drip",
+      "events": [
+        {
+          "when": "1927",
+          "text": "Thomas Parnell pours the heated pitch"
+        },
+        {
+          "when": "1930",
+          "text": "The stem is cut; the pitch starts to flow"
+        },
+        {
+          "when": "1938",
+          "text": "First drop"
+        },
+        {
+          "when": "1988",
+          "text": "Seventh drop falls, unwitnessed"
+        },
+        {
+          "when": "2014",
+          "text": "Ninth drop"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "230 billion",
+      "label": "times the viscosity of water, worked out from the eighth drop",
+      "text": "A similar pitch at Trinity College Dublin, timed on camera in 2013, came out at about 20 billion times water."
+    },
+    {
+      "type": "chart",
+      "heading": "Years each drop took to form and fall",
+      "items": [
+        {
+          "label": "3rd drop (1954)",
+          "value": 7.2
+        },
+        {
+          "label": "5th drop (1970)",
+          "value": 8.3
+        },
+        {
+          "label": "7th drop (1988)",
+          "value": 9.2
+        },
+        {
+          "label": "8th drop (2000)",
+          "value": 12.3
+        },
+        {
+          "label": "9th drop (2014)",
+          "value": 13.4,
+          "emphasis": true
+        }
+      ],
+      "unit": "years",
+      "note": "Later drops took longer after air conditioning lowered the room’s average temperature"
+    },
+    {
+      "type": "text",
+      "heading": "Solid or liquid?",
+      "text": "Pitch can look like a rock, but it is a liquid with an enormous viscosity. Given years, it flows under its own weight into a drop. The room was never climate-controlled, so the flow rate drifted with the seasons until air conditioning was added."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did nobody see the seventh drop fall in 1988?",
+      "options": [
+        "The custodian went for a drink",
+        "The lab was closed for a holiday",
+        "A power cut turned the lights off",
+        "It fell in the middle of the night"
+      ],
+      "answer": 0,
+      "explanation": "John Mainstone, custodian from 1961 to 2013, had stepped out for a drink. In 2000 a webcam was watching, but technical problems stopped it recording the eighth drop."
+    }
+  ],
+  "tags": [
+    "viscosity",
+    "fluids",
+    "experiments",
+    "pitch"
+  ],
+  "source": {
+    "label": "Wikipedia: Pitch drop experiment",
+    "url": "https://en.wikipedia.org/wiki/Pitch_drop_experiment"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

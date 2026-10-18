@@ -1,0 +1,106 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-foucault-pendulum",
+  "field": "physics",
+  "title": "In 1851 a pendulum in Paris showed Earth spinning without a glance at the sky",
+  "emoji": "🕰️",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Foucault_pendulum_at_the_Panth%C3%A9on_de_Paris%2C_2012.jpg/960px-Foucault_pendulum_at_the_Panth%C3%A9on_de_Paris%2C_2012.jpg",
+    "alt": "Foucault’s pendulum swinging under the dome of the Panthéon in Paris, its brass bob hanging on a long wire above a circular scale on the floor.",
+    "credit": "Marko Kudjerski · CC BY 2.0"
+  },
+  "body": "Léon Foucault hung a 28 kg brass-coated lead bob on a 67 m wire from the dome of the Panthéon and set it swinging. Hour by hour the line of its swing crept clockwise across the floor, about **11.3° an hour** in Paris, a full circle in roughly 32 hours. The pendulum keeps swinging in the same plane; it is the floor, and the whole Earth beneath it, that turns. It was the first simple, direct demonstration of Earth’s rotation that needed no star or Sun to watch.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "In Paris, how many hours does the swing plane take to come full circle?",
+      "min": 0,
+      "max": 72,
+      "step": 1,
+      "answer": 32,
+      "unit": "hours",
+      "explanation": "About 32 hours (the article gives 31.8 h). The rate depends on latitude: one day at the pole, slower towards the equator, where it stops altogether."
+    },
+    {
+      "type": "stat",
+      "value": "11.3°",
+      "label": "an hour: the drift of the swing plane at the latitude of Paris",
+      "text": "Foucault measured about 2.3 mm of sideways drift at the bob’s edge on every swing of the 16.5-second pendulum."
+    },
+    {
+      "type": "chart",
+      "heading": "Hours for the swing plane to turn full circle",
+      "items": [
+        {
+          "label": "North Pole",
+          "value": 24
+        },
+        {
+          "label": "Paris (49° N)",
+          "value": 31.8,
+          "emphasis": true
+        },
+        {
+          "label": "New York (41° N)",
+          "value": 36.7
+        }
+      ],
+      "unit": "h",
+      "note": "At the equator the plane never turns at all; south of it, the drift runs anticlockwise"
+    },
+    {
+      "type": "text",
+      "heading": "Why latitude matters",
+      "text": "At the pole the pendulum’s plane stays fixed in space while Earth turns beneath it once a day. Elsewhere only part of Earth’s spin is around the local vertical, so the drift is slower: 360° times the sine of the latitude per day, which comes to zero at the equator."
+    },
+    {
+      "type": "timeline",
+      "heading": "Foucault’s pendulum",
+      "events": [
+        {
+          "when": "Feb 1851",
+          "text": "First shown at the Paris Observatory"
+        },
+        {
+          "when": "1851",
+          "text": "28 kg bob hung in the Panthéon"
+        },
+        {
+          "when": "1995",
+          "text": "Exact copy installed under the Panthéon dome"
+        },
+        {
+          "when": "2010",
+          "text": "Museum cable snaps; the original bob is damaged"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Where would a Foucault pendulum’s swing plane never drift at all?",
+      "options": [
+        "At the North Pole",
+        "In Paris",
+        "On the equator",
+        "At the South Pole"
+      ],
+      "answer": 2,
+      "explanation": "On the equator Earth’s spin axis lies flat in the pendulum’s horizon, so there is no rotation about the vertical and the plane stays put. At the poles it turns once a day."
+    }
+  ],
+  "tags": [
+    "pendulum",
+    "earth",
+    "rotation",
+    "foucault"
+  ],
+  "source": {
+    "label": "Wikipedia: Foucault pendulum",
+    "url": "https://en.wikipedia.org/wiki/Foucault_pendulum"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

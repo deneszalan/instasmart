@@ -1,0 +1,123 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-lhc-colder-than-space",
+  "field": "physics",
+  "title": "The magnets of the Large Hadron Collider are colder than outer space",
+  "emoji": "🧲",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/LHC%2C_dipole.jpg/960px-LHC%2C_dipole.jpg",
+    "alt": "Blue cylindrical dipole magnets of the Large Hadron Collider lined up along the curved tunnel at CERN.",
+    "credit": "Christophe Delaere · CC BY 2.0"
+  },
+  "body": "The LHC steers protons around a 26.7 km ring with about 10,000 superconducting magnets, which only work when their coils are cold enough to lose all electrical resistance. Some 96 tonnes of superfluid helium chill them to **1.9 K, about −271 °C**. Empty space is warmer: the cosmic microwave background that fills the universe sits at about 2.7 K. Inside those magnets, protons circle at 0.999999990 of the speed of light, lapping the ring 11,245 times a second.",
+  "slides": [
+    {
+      "type": "stat",
+      "value": "1.9 K",
+      "label": "the magnets’ operating temperature, about −271 °C",
+      "text": "Colder than the 2.7 K afterglow of the Big Bang that fills the gaps between the galaxies."
+    },
+    {
+      "type": "spectrum",
+      "heading": "How cold is cold?",
+      "min": 0,
+      "max": 300,
+      "unit": "K",
+      "ends": [
+        "Absolute zero",
+        "Room"
+      ],
+      "marks": [
+        {
+          "label": "Absolute zero",
+          "value": 0
+        },
+        {
+          "label": "LHC magnets",
+          "value": 1.9,
+          "emphasis": true
+        },
+        {
+          "label": "Deep space",
+          "value": 2.7
+        },
+        {
+          "label": "Room temperature",
+          "value": 293
+        }
+      ],
+      "note": "The cosmic microwave background is at 2.725 K; the magnets run at 1.9 K"
+    },
+    {
+      "type": "estimate",
+      "question": "How many laps of the 27 km ring does a proton complete every second?",
+      "min": 0,
+      "max": 20000,
+      "step": 1,
+      "answer": 11245,
+      "unit": "laps",
+      "explanation": "11,245 laps a second: at 0.999999990 of the speed of light, the protons are only about 3.1 m/s slower than light itself."
+    },
+    {
+      "type": "list",
+      "heading": "The LHC in numbers",
+      "style": "bullets",
+      "items": [
+        "26.7 km ring, 50 to 175 m underground",
+        "About 10,000 superconducting magnets",
+        "96 tonnes of superfluid helium",
+        "Protons at 0.999999990 of light speed",
+        "13.6 TeV collisions in Run 3"
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "Milestones",
+      "events": [
+        {
+          "when": "Sep 2008",
+          "text": "First beam circulates"
+        },
+        {
+          "when": "Mar 2010",
+          "text": "First 7 TeV collisions"
+        },
+        {
+          "when": "Jul 2012",
+          "text": "Higgs boson discovery announced"
+        },
+        {
+          "when": "2022",
+          "text": "Run 3 begins at 13.6 TeV"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why must the LHC’s magnet coils be kept so cold?",
+      "options": [
+        "So the coils superconduct",
+        "To stop the protons melting",
+        "To keep the beam pipe empty",
+        "Helium is cheaper when cold"
+      ],
+      "answer": 0,
+      "explanation": "Below their critical temperature the coils lose all electrical resistance, so huge currents flow without heating and the magnets can bend protons moving at nearly the speed of light."
+    }
+  ],
+  "tags": [
+    "cern",
+    "particles",
+    "superconductors",
+    "cold"
+  ],
+  "source": {
+    "label": "Wikipedia: Large Hadron Collider",
+    "url": "https://en.wikipedia.org/wiki/Large_Hadron_Collider"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

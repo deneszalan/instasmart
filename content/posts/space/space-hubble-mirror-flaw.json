@@ -1,0 +1,103 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-hubble-mirror-flaw",
+  "field": "space",
+  "title": "Hubble launched with a mirror ground wrong by 2 micrometres, and it blurred everything",
+  "emoji": "🔭",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/STS-125_approaching_the_Hubble_Space_Telescope.jpg/960px-STS-125_approaching_the_Hubble_Space_Telescope.jpg",
+    "alt": "The Hubble Space Telescope floating above Earth, photographed from Space Shuttle Atlantis during the 2009 servicing mission.",
+    "credit": "NASA · Public domain"
+  },
+  "body": "Weeks after its launch on 24 April 1990, Hubble’s first images came back blurred. The outer edge of its 2.4 m primary mirror had been polished too flat by about **2.2 micrometres**, because a lens in the test instrument used to check its shape was 1.3 mm out of position. The error was tiny but it spread each star’s light over a radius of more than an arcsecond instead of the 0.1 arcsecond the design demanded. In December 1993 shuttle astronauts installed corrective optics called COSTAR and a new camera, WFPC2, with the correction built into its own mirrors, and the telescope finally saw as sharply as intended.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "By how many micrometres was the mirror’s edge too flat?",
+      "min": 0,
+      "max": 50,
+      "step": 0.1,
+      "answer": 2.2,
+      "unit": "µm",
+      "explanation": "Just 2.2 micrometres (2,200 nanometres), yet enough to smear starlight over more than an arcsecond instead of the 0.1 arcsecond specified."
+    },
+    {
+      "type": "scale",
+      "heading": "The blur: area of a star’s image, flawed versus design",
+      "items": [
+        {
+          "label": "As designed",
+          "value": 1
+        },
+        {
+          "label": "Flawed mirror",
+          "value": 100,
+          "emphasis": true
+        }
+      ],
+      "note": "Light spread over a radius of more than 1 arcsecond instead of 0.1: about 100 times the area"
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Improvement_in_Hubble_images_after_SMM1.jpg/960px-Improvement_in_Hubble_images_after_SMM1.jpg",
+      "alt": "Two views of the core of galaxy M100: blurred on the left before the 1993 repair, sharp on the right afterwards.",
+      "caption": "The core of galaxy M100 before (left) and after (right) the December 1993 servicing mission.",
+      "fit": "contain",
+      "credit": "NASA · Public domain"
+    },
+    {
+      "type": "text",
+      "heading": "Why the test lied",
+      "text": "The mirror was polished with great precision to the wrong shape. Its curve was checked with a reflective null corrector whose lens had been assembled 1.3 mm out of place, so the instrument reported a perfect mirror while the edge sat 2.2 micrometres too low."
+    },
+    {
+      "type": "timeline",
+      "heading": "A long-sighted telescope",
+      "events": [
+        {
+          "when": "24 Apr 1990",
+          "text": "Launched on Discovery, STS-31"
+        },
+        {
+          "when": "Mid 1990",
+          "text": "First images reveal the flaw"
+        },
+        {
+          "when": "Dec 1993",
+          "text": "STS-61 crew fits COSTAR and WFPC2"
+        },
+        {
+          "when": "May 2009",
+          "text": "Fifth and final servicing mission"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why was the mirror ground to the wrong shape?",
+      "options": [
+        "A test lens was 1.3 mm off",
+        "The glass warped in orbit",
+        "It was dropped before launch",
+        "The plans were misread"
+      ],
+      "answer": 0,
+      "explanation": "The null corrector used to check the mirror’s curve had a lens out of position by 1.3 mm, so the mirror was polished with great precision to a slightly wrong shape."
+    }
+  ],
+  "tags": [
+    "hubble",
+    "telescopes",
+    "optics",
+    "nasa"
+  ],
+  "source": {
+    "label": "Wikipedia: Hubble Space Telescope",
+    "url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
