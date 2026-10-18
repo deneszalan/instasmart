@@ -32,7 +32,8 @@ const PostInput = z
   .describe(
     'The post as JSON: { id: "<field>-<slug>", field, title (≤90 chars, the hook), emoji, body (2–5 sentences), ' +
       'slides?: [{ type: "text" | "stat" | "list" | "quote" | "compare" | "timeline" | "image", … }], tags: ["lowercase"], ' +
-      'source: { label, url } }. Call get_content_guide for every option; validate_post explains any problem.',
+      'source: { label, url }, author: { name: "Claude" | "ChatGPT" | <your name>, kind: "ai" } }. ' +
+      'Call get_content_guide for every option; validate_post explains any problem.',
   );
 
 export interface PreparedPost {

@@ -64,7 +64,8 @@ function Shell() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
-    navigate({ tab, post: null, q: tab === 'explore' ? route.q : '' });
+    const keepFilters = tab === 'explore';
+    navigate({ tab, post: null, q: keepFilters ? route.q : '', by: keepFilters ? route.by : '' });
   };
 
   const openPost = (id: string) => navigate({ post: id });
@@ -94,7 +95,13 @@ function Shell() {
           <Feed />
         </div>
         {route.tab === 'explore' && (
-          <Explore query={route.q} onQuery={(q) => navigate({ q }, { replace: true })} onOpen={openPost} />
+          <Explore
+            query={route.q}
+            onQuery={(q) => navigate({ q }, { replace: true })}
+            author={route.by}
+            onAuthor={(by) => navigate({ by }, { replace: true })}
+            onOpen={openPost}
+          />
         )}
         {route.tab === 'saved' && <Saved onOpen={openPost} />}
         {route.tab === 'profile' && <Profile />}

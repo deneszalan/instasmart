@@ -3,27 +3,38 @@ import { Search, X } from 'lucide-react';
 import type { FieldId } from '../types';
 import { FIELDS } from '../data/fields';
 import { LIBRARY } from '../data/library';
+import { authorFilters, authorGroup } from '../lib/authors';
 import { createRng, searchCards, shuffle } from '../lib/feed';
 import { Tile } from '../components/Tile';
 
 interface ExploreProps {
   query: string;
   onQuery: (q: string) => void;
+  /** Author group id from the "Written by" filter, or "" for anyone. */
+  author: string;
+  onAuthor: (id: string) => void;
   onOpen: (id: string) => void;
 }
 
 /** Every 10 tiles, two are tall — the mosaic look of an explore grid. */
 const isTall = (i: number) => i % 10 === 2 || i % 10 === 5;
 
-export function Explore({ query, onQuery, onOpen }: ExploreProps) {
+const AUTHORS = authorFilters(LIBRARY);
+
+export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExploreProps) {
   const [field, setField] = useState<FieldId | 'all'>('all');
   // A per-visit shuffle so the grid isn't grouped by field.
   const [order] = useState(() => shuffle(LIBRARY, createRng(Date.now())));
 
   const results = useMemo(() => {
-    const inField = field === 'all' ? order : order.filter((c) => c.field === field);
-    return searchCards(inField, query);
-  }, [order, field, query]);
+    const filtered = order.filter(
+      (c) => (field === 'all' || c.field === field) && (!author || authorGroup(c)?.id === author),
+    );
+    return searchCards(filtered, query);
+  }, [order, field, author, query]);
+
+  const authorLabel = AUTHORS.find((a) => a.id === author)?.label;
+  const fieldName = FIELDS.find((f) => f.id === field)?.name;
 
   return (
     <div className="explore">
@@ -53,6 +64,17 @@ export function Explore({ query, onQuery, onOpen }: ExploreProps) {
             </button>
           ))}
         </div>
+        <div className="chips chips--authors" role="group" aria-label="Written by">
+          <span className="chips__label">Written by</span>
+          <button aria-pressed={!author} className="chip" onClick={() => onAuthor('')}>
+            Anyone
+          </button>
+          {AUTHORS.map((a) => (
+            <button key={a.id} aria-pressed={author === a.id} className="chip" onClick={() => onAuthor(a.id)}>
+              {a.label} <span className="chip__count">{a.count}</span>
+            </button>
+          ))}
+        </div>
       </div>
 
       <p className="explore__count">
@@ -61,8 +83,20 @@ export function Explore({ query, onQuery, onOpen }: ExploreProps) {
 
       {results.length === 0 ? (
         <div className="empty">
-          <p className="empty__title">Nothing found</p>
-          <p className="empty__sub">Try another word, or pick a different field.</p>
+          {authorLabel && !query ? (
+            <>
+              <p className="empty__title">
+                No posts by {authorLabel}
+                {fieldName ? ` in ${fieldName}` : ''} yet
+              </p>
+              <p className="empty__sub">They’ll show up here as soon as they’re added to the library.</p>
+            </>
+          ) : (
+            <>
+              <p className="empty__title">Nothing found</p>
+              <p className="empty__sub">Try another word, or change the filters.</p>
+            </>
+          )}
         </div>
       ) : (
         <div className="grid">
