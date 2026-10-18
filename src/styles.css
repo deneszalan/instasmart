@@ -649,6 +649,8 @@ p {
   position: relative;
   aspect-ratio: 4 / 5;
   width: 100%;
+  /* The box is sized by its width alone; long content clips instead of stretching the carousel. */
+  contain: size;
   overflow: hidden;
   display: flex;
   flex-direction: column;
