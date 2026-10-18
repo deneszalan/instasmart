@@ -1,0 +1,168 @@
+import type { KnowledgeCard } from '../../types';
+
+export const biology: KnowledgeCard[] = [
+  {
+    id: 'biology-tardigrades-survive-space',
+    field: 'biology',
+    title: 'Tardigrades have survived exposure to the vacuum of open space',
+    emoji: '🐻',
+    body: 'Tardigrades, or water bears, are eight-legged animals about half a millimetre long. When their surroundings dry out, many species shrivel into a dormant ‘tun’, losing most of their water and slowing their metabolism almost to a stop while protective proteins shield their cells. In 2007, dried tardigrades flew on the FOTON-M3 mission and spent 10 days exposed to open space. The vacuum alone had no significant effect on them.',
+    slides: [
+      {
+        heading: 'Not invincible',
+        text: 'Active, water-filled tardigrades are far more fragile. Their famous toughness belongs mainly to the dried tun state, and it varies a lot between species.',
+      },
+      {
+        heading: 'Sunlight was the real test',
+        text: 'In the same experiment, adding unfiltered solar ultraviolet light killed many of the tuns, though some still revived when they were rehydrated back on Earth.',
+      },
+      {
+        heading: 'An ancient design',
+        text: 'Tardigrades are an old lineage. The earliest known tardigrade fossil dates from the Cambrian period, some 500 million years ago.',
+      },
+    ],
+    tags: ['tardigrades', 'extremophiles', 'space'],
+    source: { label: 'Wikipedia: Tardigrade', url: 'https://en.wikipedia.org/wiki/Tardigrade' },
+  },
+  {
+    id: 'biology-octopus-three-hearts',
+    field: 'biology',
+    title: 'An octopus has three hearts and blue blood',
+    emoji: '🐙',
+    body: 'Two small branchial hearts pump an octopus’s blood through its two gills, while a third, the systemic heart, sends it around the rest of the body. The blood is blue because oxygen is carried by haemocyanin, a copper-rich protein dissolved in the plasma, rather than iron-based haemoglobin inside red cells. Oddly, the systemic heart stops beating while an octopus swims, which may help explain why they often prefer to crawl.',
+    tags: ['octopus', 'marinebiology', 'animals'],
+    source: { label: 'Wikipedia: Octopus', url: 'https://en.wikipedia.org/wiki/Octopus' },
+  },
+  {
+    id: 'biology-immortal-jellyfish',
+    field: 'biology',
+    title: 'One jellyfish can revert to its juvenile stage and start life over',
+    emoji: '🪼',
+    body: 'When an adult Turritopsis dohrnii is stressed, injured, sick or old, it can sink down and transform back into a polyp, the immature stage that lives attached to the seabed, and grow a new colony. It does this by transdifferentiation, turning specialised cells into different cell types. In theory the cycle could repeat indefinitely, earning it the nickname ‘immortal jellyfish’, but in the wild most are eaten or killed by disease first.',
+    tags: ['jellyfish', 'ageing', 'marinebiology'],
+    source: { label: 'Wikipedia: Turritopsis dohrnii', url: 'https://en.wikipedia.org/wiki/Turritopsis_dohrnii' },
+  },
+  {
+    id: 'biology-arctic-tern-migration',
+    field: 'biology',
+    title: 'Arctic terns fly roughly 70,000 km a year to enjoy two summers',
+    emoji: '🐦',
+    body: 'Arctic terns breed around the Arctic, then fly to the coast of Antarctica for the southern summer and back again about six months later. Tiny tracking devices have measured average round trips of about 70,900 km for birds nesting in Iceland and Greenland, and one tagged bird from England covered roughly 96,000 km in ten months. Weighing only around 100 grams, they make the longest known migrations in the animal kingdom.',
+    tags: ['birds', 'migration', 'animals'],
+    source: { label: 'Wikipedia: Arctic tern', url: 'https://en.wikipedia.org/wiki/Arctic_tern' },
+  },
+  {
+    id: 'biology-bananas-are-berries',
+    field: 'biology',
+    title: 'Botanically, bananas are berries but strawberries are not',
+    emoji: '🍌',
+    body: 'To a botanist, a berry is a fleshy fruit that develops from a single flower with a single ovary, where the whole ovary wall ripens into the soft flesh. Bananas, grapes, tomatoes, aubergines and cucumbers all fit. A strawberry’s flesh grows mostly from the swollen base of the flower rather than the ovary, and its true fruits are the tiny seed-like specks on the outside, so it doesn’t qualify. Raspberries fail too: each is a cluster of many small fruits.',
+    tags: ['plants', 'botany', 'fruit'],
+    source: { label: 'Wikipedia: Berry (botany)', url: 'https://en.wikipedia.org/wiki/Berry_(botany)' },
+  },
+  {
+    id: 'biology-pando-aspen-clone',
+    field: 'biology',
+    title: 'A ‘forest’ in Utah is really one tree with about 47,000 trunks',
+    emoji: '🌳',
+    body: 'Pando is a grove of quaking aspen in Utah’s Fishlake National Forest. Its roughly 47,000 stems look like separate trees, but they are genetically identical shoots sent up from one shared root system covering about 43 hectares. Weighing an estimated 6,000 tonnes, it is generally considered the heaviest single organism known. Because stems keep dying and being replaced, its age is hard to pin down, but estimates run to many thousands of years.',
+    tags: ['trees', 'plants', 'records'],
+    source: { label: 'Wikipedia: Pando (tree)', url: 'https://en.wikipedia.org/wiki/Pando_(tree)' },
+  },
+  {
+    id: 'biology-whales-from-land-mammals',
+    field: 'biology',
+    title: 'Whales evolved from four-legged land mammals related to hippos',
+    emoji: '🐋',
+    body: 'Around 50 million years ago, the ancestors of whales were four-legged, even-toed mammals living near the shores of an ancient sea in what is now Pakistan and India. Fossils show a gradual move into the water over millions of years: legs shrank, nostrils shifted up the head to become blowholes, and tails turned into powerful flukes. Molecular studies show that their closest living relatives are hippopotamuses.',
+    slides: [
+      {
+        heading: 'Pakicetus, ~48.5 Mya',
+        text: 'A wolf-like animal about 1–2 m long that lived in and around water. Its ear bones already had a shape found only in whales.',
+      },
+      {
+        heading: 'Ambulocetus, ~48 Mya',
+        text: 'The ‘walking whale’ had large feet and eyes on top of its head, and probably ambushed prey from the water’s edge much like a crocodile.',
+      },
+      {
+        heading: 'Basilosaurus, ~41–34 Mya',
+        text: 'A fully aquatic giant around 16 m long that still carried hind legs only about 35 cm long, far too small to walk on.',
+      },
+    ],
+    tags: ['evolution', 'whales', 'fossils'],
+    source: { label: 'Wikipedia: Evolution of cetaceans', url: 'https://en.wikipedia.org/wiki/Evolution_of_cetaceans' },
+  },
+  {
+    id: 'biology-carcinisation',
+    field: 'biology',
+    title: 'Evolution keeps turning other crustaceans into crab look-alikes',
+    emoji: '🦀',
+    body: 'Carcinisation is the repeated evolution of a crab-like body: a flattened, widened shell with the tail folded tightly underneath. It has happened independently several times, mostly among anomurans, the group that includes hermit crabs. King crabs, for example, evolved from hermit crab ancestors and still have lopsided abdomens, a leftover from ancestors that lived in coiled snail shells. A compact body that protects vital organs may explain why selection keeps landing on this design.',
+    tags: ['evolution', 'crabs', 'convergentevolution'],
+    source: { label: 'Wikipedia: Carcinisation', url: 'https://en.wikipedia.org/wiki/Carcinisation' },
+  },
+  {
+    id: 'biology-fungi-closer-to-animals',
+    field: 'biology',
+    title: 'Mushrooms are more closely related to you than to plants',
+    emoji: '🍄',
+    body: 'Fungi were long lumped in with plants because they grow in place and have cell walls. But genetic studies place fungi and animals together on one branch of the tree of life, the opisthokonts, separate from plants. The name means ‘rear pole’ and refers to the single tail-like flagellum at the back of cells such as animal sperm and the swimming spores of some fungi. Fungal cell walls are made of chitin, the material in insect shells, not plant cellulose.',
+    tags: ['fungi', 'evolution', 'treeoflife'],
+    source: { label: 'Wikipedia: Opisthokont', url: 'https://en.wikipedia.org/wiki/Opisthokont' },
+  },
+  {
+    id: 'biology-sea-otters-kelp',
+    field: 'biology',
+    title: 'Sea otters protect underwater forests by eating sea urchins',
+    emoji: '🦦',
+    body: 'Sea urchins graze on kelp, and when nothing keeps them in check they can multiply and strip kelp forests down to bare rock. Sea otters eat large numbers of urchins, which lets kelp grow back and shelter fish and countless other species. Because a single predator shapes an entire ecosystem far out of proportion to its numbers, the sea otter is a textbook example of what ecologists call a keystone species.',
+    slides: [
+      {
+        heading: 'Remove the otter',
+        text: 'Fur hunting from 1741 to 1911 cut sea otters to roughly 1,000–2,000 animals. Where they vanished, urchin numbers could boom and kelp forests suffered.',
+      },
+      {
+        heading: 'Bring it back',
+        text: 'After a hunting ban and reintroductions, otters returned to much of their range. Where they recovered, urchins declined and kelp could regrow.',
+      },
+      {
+        heading: 'No blubber needed',
+        text: 'Unlike seals and whales, sea otters have no thick blubber layer. They stay warm with the densest fur in the animal kingdom.',
+      },
+    ],
+    tags: ['ecology', 'keystonespecies', 'oceans'],
+    source: { label: 'Wikipedia: Sea otter', url: 'https://en.wikipedia.org/wiki/Sea_otter' },
+  },
+  {
+    id: 'biology-cyanobacteria-oxygen',
+    field: 'biology',
+    title: 'Microbes, not plants, first filled Earth’s air with oxygen',
+    emoji: '🦠',
+    body: 'For roughly the first half of Earth’s history the air held almost no free oxygen. Photosynthetic microbes, above all cyanobacteria, released oxygen as a waste product, and beginning about 2.4 billion years ago it started to build up in the atmosphere and shallow seas, a shift called the Great Oxidation Event. The new gas was probably toxic to many existing microbes, but it eventually made oxygen-breathing life like ours possible.',
+    tags: ['microbes', 'earthhistory', 'oxygen'],
+    source: { label: 'Wikipedia: Great Oxidation Event', url: 'https://en.wikipedia.org/wiki/Great_Oxidation_Event' },
+  },
+  {
+    id: 'biology-mitochondria-were-bacteria',
+    field: 'biology',
+    title: 'The power plants inside your cells were once free-living bacteria',
+    emoji: '🔋',
+    body: 'Mitochondria, which generate most of a cell’s usable energy, are thought to descend from bacteria that were engulfed by another single-celled organism and ended up living inside it permanently, well over a billion years ago. This idea, known as symbiogenesis or endosymbiotic theory, was championed by Lynn Margulis in 1967 and is now the leading explanation for the origin of complex cells. Plant chloroplasts are thought to come from captured cyanobacteria in the same way.',
+    slides: [
+      {
+        heading: 'Clue 1: their own DNA',
+        text: 'Mitochondria carry their own small chromosome, separate from the cell nucleus, and in many cases it is a single circular molecule like a bacterium’s.',
+      },
+      {
+        heading: 'Clue 2: they split in two',
+        text: 'New mitochondria only come from existing ones, which divide by a process resembling bacterial binary fission.',
+      },
+      {
+        heading: 'Clue 3: a bacterial wrapper',
+        text: 'Their inner membrane contains cardiolipin, a lipid otherwise found in bacterial membranes, and their outer membrane has bacteria-like porin proteins.',
+      },
+    ],
+    tags: ['cells', 'evolution', 'microbes'],
+    source: { label: 'Wikipedia: Symbiogenesis', url: 'https://en.wikipedia.org/wiki/Symbiogenesis' },
+  },
+];

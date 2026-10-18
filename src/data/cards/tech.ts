@@ -1,0 +1,168 @@
+import type { KnowledgeCard } from '../../types';
+
+export const tech: KnowledgeCard[] = [
+  {
+    id: 'tech-moth-in-the-machine',
+    field: 'tech',
+    title: 'In 1947, engineers found a literal bug in a computer: a moth',
+    emoji: '🦋',
+    body: 'In September 1947, operators of Harvard’s Mark II computer traced a fault to a moth trapped in a relay. They taped it into the logbook with the note “First actual case of bug being found.” The joke worked because engineers already called glitches “bugs”: Thomas Edison used the word in the 1870s. Grace Hopper, who worked on the machine, helped make the story famous.',
+    tags: ['computinghistory', 'debugging', 'gracehopper'],
+    source: { label: 'Wikipedia: Bug (engineering)', url: 'https://en.wikipedia.org/wiki/Bug_(engineering)' },
+  },
+  {
+    id: 'tech-arpanet-first-message-lo',
+    field: 'tech',
+    title: 'The first message sent over ARPANET was “lo”, then it crashed',
+    emoji: '📡',
+    body: 'On 29 October 1969, UCLA student programmer Charley Kline tried to log in to a computer at the Stanford Research Institute over ARPANET, the network that grew into the internet. He got as far as “L” and “O” before the SRI system crashed. About an hour later the full login worked. By the end of 1969, ARPANET linked just four sites.',
+    tags: ['internethistory', 'arpanet', 'networking'],
+    source: { label: 'Wikipedia: ARPANET', url: 'https://en.wikipedia.org/wiki/ARPANET' },
+  },
+  {
+    id: 'tech-public-key-cryptography',
+    field: 'tech',
+    title: 'Two strangers can agree on a secret while everyone listens in',
+    emoji: '🔐',
+    body: 'Before the 1970s, encrypting a message meant both sides first had to share a secret key. Public-key cryptography broke that rule: you publish a key anyone can use to lock a message, while only your private key can unlock it. It relies on maths that is easy one way and very hard to reverse, such as multiplying two huge primes versus factoring the result. Every HTTPS connection depends on it.',
+    slides: [
+      {
+        heading: 'The paint analogy',
+        text: 'Both sides start with a public colour and each mixes in a secret one. They swap mixes and add their secret again. Both end with the same colour, which onlookers can’t unmix.',
+      },
+      {
+        heading: 'Published in 1976',
+        text: 'Whitfield Diffie and Martin Hellman published their key exchange in 1976. A year later, Rivest, Shamir and Adleman unveiled RSA, which does encryption and signatures.',
+      },
+      {
+        heading: 'The secret twist',
+        text: 'At Britain’s GCHQ, James Ellis, Clifford Cocks and Malcolm Williamson had found the same ideas in the early 1970s, but their work stayed classified until 1997.',
+      },
+    ],
+    tags: ['cryptography', 'security', 'encryption'],
+    source: { label: 'Wikipedia: Public-key cryptography', url: 'https://en.wikipedia.org/wiki/Public-key_cryptography' },
+  },
+  {
+    id: 'tech-enigma-never-itself',
+    field: 'tech',
+    title: 'Enigma’s fatal flaw: no letter could ever be encrypted as itself',
+    emoji: '🗝️',
+    body: 'Enigma’s rotors scrambled letters in an astronomical number of ways, but a part called the reflector meant a letter could never come out as itself. That sounds harmless, yet it helped Allied codebreakers at Bletchley Park, building on Polish breakthroughs, test guessed phrases such as weather reports. Any alignment where a guessed letter matched the ciphertext letter was impossible and could be discarded at once.',
+    tags: ['cryptography', 'enigma', 'codebreaking'],
+    source: { label: 'Wikipedia: Enigma machine', url: 'https://en.wikipedia.org/wiki/Enigma_machine' },
+  },
+  {
+    id: 'tech-binary-search-twenty-guesses',
+    field: 'tech',
+    title: 'You can find any number from 1 to a million in just 20 guesses',
+    emoji: '🎯',
+    body: 'If someone only answers “higher” or “lower”, always guess the middle of the remaining range. Each guess throws away half the possibilities, and halving a million 20 times leaves a single number, because 2 to the power of 20 is 1,048,576. This is binary search, and it is why a computer can find an entry in a sorted list of a billion items in about 30 steps.',
+    slides: [
+      {
+        heading: 'Try it yourself',
+        text: 'Picking from 1 to 100? Guess 50, then 25 or 75, and keep halving. You never need more than 7 guesses, because 2 to the power of 7 is 128.',
+      },
+      {
+        heading: 'The catch',
+        text: 'It only works on sorted data. In an unsorted list you must check items one by one, which for a million items can take a million steps.',
+      },
+      {
+        heading: 'Easy to get wrong',
+        text: 'Jon Bentley found most professional programmers he tested wrote it with bugs, and an overflow bug sat in Java’s standard binary search for about nine years.',
+      },
+    ],
+    tags: ['algorithms', 'binarysearch', 'computerscience'],
+    source: { label: 'Wikipedia: Binary search', url: 'https://en.wikipedia.org/wiki/Binary_search' },
+  },
+  {
+    id: 'tech-huffman-coding-term-paper',
+    field: 'tech',
+    title: 'A student’s term paper, written instead of an exam, gave us Huffman coding',
+    emoji: '🗜️',
+    body: 'In 1951, MIT professor Robert Fano gave his information theory students a choice: sit the final exam or write a paper on finding the most efficient binary code. David Huffman was about to give up when he hit on building the code from the bottom up, repeatedly pairing the two rarest symbols. Common symbols get short codes and rare ones long codes, and the result is provably optimal. Variants still help compress ZIP files, JPEGs and MP3s.',
+    tags: ['compression', 'algorithms', 'informationtheory'],
+    source: { label: 'Wikipedia: Huffman coding', url: 'https://en.wikipedia.org/wiki/Huffman_coding' },
+  },
+  {
+    id: 'tech-halting-problem',
+    field: 'tech',
+    title: 'Some questions about programs no computer can ever answer',
+    emoji: '♾️',
+    body: 'In the 1930s Alan Turing proved there can be no general program that inspects any program and its input and always correctly predicts whether it will finish or run forever. The proof uses a paradox: if such a checker existed, you could write a program that asks the checker about itself and then does the opposite. This is the halting problem, and it means no tool can catch every infinite loop.',
+    tags: ['computability', 'alanturing', 'theory'],
+    source: { label: 'Wikipedia: Halting problem', url: 'https://en.wikipedia.org/wiki/Halting_problem' },
+  },
+  {
+    id: 'tech-floating-point-point-three',
+    field: 'tech',
+    title: 'In most programming languages, 0.1 + 0.2 doesn’t equal 0.3',
+    emoji: '🧮',
+    body: 'Type 0.1 + 0.2 into JavaScript or Python and you get 0.30000000000000004. Computers usually store decimals as binary floating-point numbers, defined by the IEEE 754 standard, and just as 1/3 never ends in decimal, 0.1 never ends in binary. The machine keeps the nearest value it can fit, and the tiny rounding errors become visible when numbers are added.',
+    slides: [
+      {
+        heading: 'Why 0.1 is hard',
+        text: 'In binary, 0.1 is 0.0001100110011… repeating forever. A standard 64-bit number keeps about 15 to 17 significant decimal digits, then rounds the rest.',
+      },
+      {
+        heading: 'Usually harmless',
+        text: 'The error is around one part in ten quadrillion, too small to matter for most science or graphics. It bites when code checks whether two results are exactly equal.',
+      },
+      {
+        heading: 'How money is handled',
+        text: 'Financial software often counts whole cents as integers or uses special decimal number types, so adding up prices stays exact.',
+      },
+    ],
+    tags: ['programming', 'floatingpoint', 'numbers'],
+    source: { label: 'Wikipedia: Floating-point arithmetic', url: 'https://en.wikipedia.org/wiki/Floating-point_arithmetic' },
+  },
+  {
+    id: 'tech-year-2038-problem',
+    field: 'tech',
+    title: 'Some computer clocks will overflow on 19 January 2038',
+    emoji: '⏰',
+    body: 'Much software counts time as seconds since 1 January 1970. Stored as a signed 32-bit number, that count tops out at 2,147,483,647, which falls at 03:14:07 UTC on 19 January 2038. One second later it wraps to a negative number, which affected systems read as a date in December 1901. Most modern systems already use 64-bit time, but old embedded devices and file formats may still be at risk.',
+    tags: ['y2038', 'software', 'unixtime'],
+    source: { label: 'Wikipedia: Year 2038 problem', url: 'https://en.wikipedia.org/wiki/Year_2038_problem' },
+  },
+  {
+    id: 'tech-neural-networks-1943',
+    field: 'tech',
+    title: 'Artificial neural networks were first described back in 1943',
+    emoji: '🧠',
+    body: 'Today’s AI boom rests on an old idea. In 1943 Warren McCulloch and Walter Pitts showed how simplified on-off neurons could compute logic, and in 1958 Frank Rosenblatt unveiled the perceptron, which learned to classify simple patterns by adjusting the strength of its connections. Interest rose and fell for decades before more data, better training methods and fast graphics chips made deep networks work in the 2010s.',
+    slides: [
+      {
+        heading: '1969: the setback',
+        text: 'Marvin Minsky and Seymour Papert’s book Perceptrons showed a single-layer perceptron cannot learn even XOR, and interest in the approach faded for years.',
+      },
+      {
+        heading: '1986: backpropagation',
+        text: 'Rumelhart, Hinton and Williams popularised backpropagation, a way to train networks with hidden layers by passing errors backwards to adjust every connection.',
+      },
+      {
+        heading: '2012: the breakthrough',
+        text: 'AlexNet, a deep network trained on graphics chips, won the ImageNet image-recognition contest by a wide margin, kicking off the deep learning era.',
+      },
+    ],
+    tags: ['ai', 'neuralnetworks', 'machinelearning'],
+    source: { label: 'Wikipedia: Perceptron', url: 'https://en.wikipedia.org/wiki/Perceptron' },
+  },
+  {
+    id: 'tech-llm-tokens',
+    field: 'tech',
+    title: 'AI chatbots don’t read letters, they read tokens',
+    emoji: '🤖',
+    body: 'Large language models don’t see text as individual characters. Text is first split into tokens, common chunks such as whole words, pieces of words or punctuation, and each token becomes a number. The model then learns to predict the next token from the ones before. This helps explain why such models have often stumbled on tasks like counting the letters in a word: the letters are hidden inside tokens.',
+    tags: ['ai', 'languagemodels', 'tokens'],
+    source: { label: 'Wikipedia: Large language model', url: 'https://en.wikipedia.org/wiki/Large_language_model' },
+  },
+  {
+    id: 'tech-moores-law-forecast',
+    field: 'tech',
+    title: 'Moore’s law was never a law of nature, it was a forecast',
+    emoji: '📈',
+    body: 'In 1965 Gordon Moore, who later co-founded Intel, noticed that the number of components on a chip was doubling about every year and predicted the trend would continue. In 1975 he revised the pace to roughly every two years. The trend held for decades partly because the industry planned around it, turning a prediction into a target. As transistors near atomic scales, the doubling has slowed and its future is debated.',
+    tags: ['moore', 'chips', 'hardware'],
+    source: { label: 'Wikipedia: Moore’s law', url: 'https://en.wikipedia.org/wiki/Moore%27s_law' },
+  },
+];
