@@ -29,7 +29,9 @@ type Action =
   | { type: 'settings'; patch: Partial<LearnState['settings']> }
   | { type: 'reset' };
 
-const STORAGE_KEY = 'instasmart:v1';
+const STORAGE_KEY = 'reckon:v1';
+/** Where progress was saved before the app was renamed; read once, then carried over. */
+const LEGACY_KEY = 'instasmart:v1';
 
 export const initialState: LearnState = {
   liked: {},
@@ -113,7 +115,7 @@ export function streak(activeDays: readonly string[], today = new Date()): numbe
 
 function load(): LearnState {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(STORAGE_KEY) ?? localStorage.getItem(LEGACY_KEY);
     if (!raw) return initialState;
     const parsed = JSON.parse(raw) as Partial<LearnState>;
     return {

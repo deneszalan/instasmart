@@ -82,8 +82,8 @@ function Shell() {
   return (
     <div className="app">
       <header className="topbar">
-        <button className="logo" onClick={() => goTab('home')} aria-label="InstaSmart home">
-          InstaSmart
+        <button className="logo" onClick={() => goTab('home')} aria-label="Reckon home">
+          Reckon
         </button>
         <button className="topbar__streak" onClick={() => goTab('profile')} aria-label={`${days}-day learning streak`}>
           <Flame size={22} className={days > 0 ? 'streak__flame--on' : undefined} />

@@ -99,7 +99,7 @@ export class GitHubStore implements ContentStore {
         Authorization: `Bearer ${this.opts.token}`,
         Accept: 'application/vnd.github+json',
         'X-GitHub-Api-Version': '2022-11-28',
-        'User-Agent': 'instasmart-mcp',
+        'User-Agent': 'reckon-mcp',
         ...(body ? { 'Content-Type': 'application/json' } : {}),
       },
       body: body ? JSON.stringify(body) : undefined,

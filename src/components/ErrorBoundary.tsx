@@ -8,7 +8,7 @@ interface State {
   error: Error | null;
 }
 
-const STORAGE_KEY = 'instasmart:v1';
+const STORAGE_KEYS = ['reckon:v1', 'instasmart:v1'];
 
 /**
  * Catches rendering errors so a bug shows a message and a way back,
@@ -22,7 +22,7 @@ export class ErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, info: ErrorInfo) {
-    console.error('InstaSmart crashed:', error, info.componentStack);
+    console.error('Reckon crashed:', error, info.componentStack);
   }
 
   render() {
@@ -32,7 +32,7 @@ export class ErrorBoundary extends Component<Props, State> {
     const reload = () => location.reload();
     const reset = () => {
       try {
-        localStorage.removeItem(STORAGE_KEY);
+        for (const key of STORAGE_KEYS) localStorage.removeItem(key);
       } catch {
         // Nothing to clear.
       }

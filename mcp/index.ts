@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-// InstaSmart MCP server: lets LLM clients publish posts to the app's content repository.
+// Reckon MCP server: lets LLM clients publish posts to the app's content repository.
 //
 //   node mcp/index.ts                 stdio (Claude Desktop, Claude Code, …)
 //   node mcp/index.ts --http          Streamable HTTP on $PORT (default 8788) at /mcp
 //
 // Where posts go:
-//   INSTASMART_GITHUB_TOKEN + INSTASMART_GITHUB_REPO  → GitHub (pull requests by default)
+//   RECKON_GITHUB_TOKEN + RECKON_GITHUB_REPO  → GitHub (pull requests by default)
 //   otherwise                                          → this checkout's content/ folder
 import { createServer as createHttpServer, type IncomingMessage } from 'node:http';
 import { timingSafeEqual } from 'node:crypto';
@@ -19,19 +19,22 @@ import { GitHubStore, LocalStore, type ContentStore } from './stores.ts';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const env = process.env;
 
+/** RECKON_* settings, still honouring the INSTASMART_* names from before the rename. */
+const setting = (name: string): string | undefined => env[`RECKON_${name}`] ?? env[`INSTASMART_${name}`];
+
 function makeStore(): ContentStore {
-  const token = env.INSTASMART_GITHUB_TOKEN;
-  const repo = env.INSTASMART_GITHUB_REPO;
+  const token = setting('GITHUB_TOKEN');
+  const repo = setting('GITHUB_REPO');
   if (token && repo) {
     return new GitHubStore({
       token,
       repo,
-      branch: env.INSTASMART_GITHUB_BRANCH || 'main',
-      mode: env.INSTASMART_PUBLISH_MODE === 'commit' ? 'commit' : 'pull-request',
+      branch: setting('GITHUB_BRANCH') || 'main',
+      mode: setting('PUBLISH_MODE') === 'commit' ? 'commit' : 'pull-request',
     });
   }
-  if (token || repo) throw new Error('Set both INSTASMART_GITHUB_TOKEN and INSTASMART_GITHUB_REPO, or neither for local mode.');
-  return new LocalStore(env.INSTASMART_CONTENT_ROOT || root);
+  if (token || repo) throw new Error('Set both RECKON_GITHUB_TOKEN and RECKON_GITHUB_REPO, or neither for local mode.');
+  return new LocalStore(setting('CONTENT_ROOT') || root);
 }
 
 function bearerMatches(req: IncomingMessage, expected: string): boolean {
@@ -57,7 +60,7 @@ async function main() {
 
   if (!process.argv.includes('--http')) {
     await createServer(store, root).connect(new StdioServerTransport());
-    console.error(`InstaSmart MCP server on stdio → ${store.description}`);
+    console.error(`Reckon MCP server on stdio → ${store.description}`);
     return;
   }
 
@@ -89,7 +92,7 @@ async function main() {
     }
   });
 
-  http.listen(port, () => console.error(`InstaSmart MCP server on http://localhost:${port}/mcp → ${store.description}`));
+  http.listen(port, () => console.error(`Reckon MCP server on http://localhost:${port}/mcp → ${store.description}`));
 }
 
 main().catch((err) => {

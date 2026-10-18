@@ -1,6 +1,6 @@
 {
   "$id": "https://github.com/deneszalan/instasmart/content/schema/post.schema.json",
-  "title": "InstaSmart post",
+  "title": "Reckon post",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "properties": {

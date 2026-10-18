@@ -275,7 +275,7 @@ export function formatIssues(error: z.ZodError): string[] {
 export function postJsonSchema(): unknown {
   return {
     $id: 'https://github.com/deneszalan/instasmart/content/schema/post.schema.json',
-    title: 'InstaSmart post',
+    title: 'Reckon post',
     ...(z.toJSONSchema(Post, { io: 'input', unrepresentable: 'any' }) as object),
   };
 }

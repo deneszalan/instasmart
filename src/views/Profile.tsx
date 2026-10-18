@@ -147,7 +147,7 @@ export function Profile() {
       </section>
 
       <p className="about">
-        Posts live as files in the InstaSmart GitHub repository. Ones marked AI were written by an AI, and every post links
+        Posts live as files in the Reckon GitHub repository. Ones marked AI were written by an AI, and every post links
         a source so you can check it. Live posts come from Wikipedia’s featured content, under CC BY-SA.
       </p>
     </div>

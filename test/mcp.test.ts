@@ -40,7 +40,7 @@ describe('MCP server with a local checkout', () => {
   let dir: string;
 
   beforeEach(() => {
-    dir = mkdtempSync(join(tmpdir(), 'instasmart-'));
+    dir = mkdtempSync(join(tmpdir(), 'reckon-'));
     cpSync(join(repoRoot, 'content', 'README.md'), join(dir, 'content', 'README.md'));
   });
   afterEach(() => rmSync(dir, { recursive: true, force: true }));
@@ -54,9 +54,9 @@ describe('MCP server with a local checkout', () => {
   it('serves the guide with fields and schema', async () => {
     const { call } = await connect(new LocalStore(dir));
     const { text } = await call('get_content_guide');
-    expect(text).toContain('# InstaSmart content guide');
+    expect(text).toContain('# Reckon content guide');
     expect(text).toContain('`physics` — Physics');
-    expect(text).toContain('"title":"InstaSmart post"');
+    expect(text).toContain('"title":"Reckon post"');
   });
 
   it('explains what to fix', async () => {

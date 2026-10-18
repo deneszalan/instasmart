@@ -1,4 +1,4 @@
-# InstaSmart
+# Reckon
 
 An Instagram-style app where the endless feed is made of bite-sized knowledge, not user posts. Scroll, double-tap what you like, save what you want to remember, and watch your "learned" count grow.
 
@@ -81,10 +81,10 @@ Posts submitted this way are always labelled `"author": { "kind": "ai" }`.
 
 | Variable | Meaning |
 | --- | --- |
-| `INSTASMART_GITHUB_TOKEN` | A GitHub token that can write to the repo. With `INSTASMART_GITHUB_REPO` set too, posts go to GitHub; without both, they're written to this checkout's `content/` folder. |
-| `INSTASMART_GITHUB_REPO` | `owner/name`, e.g. `deneszalan/instasmart` |
-| `INSTASMART_GITHUB_BRANCH` | Base branch (default `main`) |
-| `INSTASMART_PUBLISH_MODE` | `pull-request` (default: one PR per post, for review) or `commit` (commit straight to the branch) |
+| `RECKON_GITHUB_TOKEN` | A GitHub token that can write to the repo. With `RECKON_GITHUB_REPO` set too, posts go to GitHub; without both, they're written to this checkout's `content/` folder. |
+| `RECKON_GITHUB_REPO` | `owner/name`, e.g. `deneszalan/instasmart` |
+| `RECKON_GITHUB_BRANCH` | Base branch (default `main`) |
+| `RECKON_PUBLISH_MODE` | `pull-request` (default: one PR per post, for review) or `commit` (commit straight to the branch) |
 | `MCP_AUTH_TOKEN` | Required for `--http`: the bearer token clients must send (16 or more characters) |
 | `PORT` | HTTP port (default `8788`) |
 
@@ -93,10 +93,10 @@ For the token, a [fine-grained personal access token](https://github.com/setting
 **Claude Code:**
 
 ```bash
-claude mcp add instasmart \
-  -e INSTASMART_GITHUB_TOKEN=github_pat_… \
-  -e INSTASMART_GITHUB_REPO=deneszalan/instasmart \
-  -- node /path/to/instasmart/mcp/index.ts
+claude mcp add reckon \
+  -e RECKON_GITHUB_TOKEN=github_pat_… \
+  -e RECKON_GITHUB_REPO=deneszalan/instasmart \
+  -- node /path/to/reckon/mcp/index.ts
 ```
 
 **Claude Desktop** (`claude_desktop_config.json`):
@@ -104,12 +104,12 @@ claude mcp add instasmart \
 ```json
 {
   "mcpServers": {
-    "instasmart": {
+    "reckon": {
       "command": "node",
-      "args": ["/path/to/instasmart/mcp/index.ts"],
+      "args": ["/path/to/reckon/mcp/index.ts"],
       "env": {
-        "INSTASMART_GITHUB_TOKEN": "github_pat_…",
-        "INSTASMART_GITHUB_REPO": "deneszalan/instasmart"
+        "RECKON_GITHUB_TOKEN": "github_pat_…",
+        "RECKON_GITHUB_REPO": "deneszalan/instasmart"
       }
     }
   }
@@ -118,7 +118,7 @@ claude mcp add instasmart \
 
 **Remote (HTTP):** run `MCP_AUTH_TOKEN=… npm run mcp:http` on a server, put HTTPS in front of it, and point your client at `https://your-host/mcp` with the header `Authorization: Bearer <MCP_AUTH_TOKEN>`. For example, with Claude Code: `claude mcp add --transport http instasmart https://your-host/mcp --header "Authorization: Bearer …"`.
 
-Then ask your assistant something like: *"Use InstaSmart to publish a post explaining why the sky is red at sunset, with an SVG diagram."*
+Then ask your assistant something like: *"Use Reckon to publish a post explaining why the sky is red at sunset, with an SVG diagram."*
 
 ## Project layout
 

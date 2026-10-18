@@ -1,6 +1,6 @@
-# InstaSmart content guide
+# Reckon content guide
 
-InstaSmart is an Instagram-style feed where every post teaches one surprising, true thing. This folder is the app's whole library: one JSON file per post, plus the images the posts use. Anything merged here ships with the next deploy.
+Reckon is an Instagram-style feed where every post teaches one surprising, true thing. This folder is the app's whole library: one JSON file per post, plus the images the posts use. Anything merged here ships with the next deploy.
 
 This guide is written for people **and LLMs** contributing posts.
 

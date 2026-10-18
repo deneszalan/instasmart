@@ -1,6 +1,6 @@
-# Working on InstaSmart
+# Working on Reckon
 
-InstaSmart is an Instagram-style feed of knowledge posts. React + TypeScript + Vite; Node 22.18+ runs the TypeScript scripts directly.
+Reckon is an Instagram-style feed of knowledge posts. React + TypeScript + Vite; Node 22.18+ runs the TypeScript scripts directly.
 
 ## Adding or editing posts
 
