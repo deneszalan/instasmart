@@ -1,0 +1,100 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-aerogel-mostly-air",
+  "field": "chemistry",
+  "title": "A solid that is up to 99.98% air can shield a flower from a flame",
+  "emoji": "🌫️",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Aerogelflower_filtered.jpg/960px-Aerogelflower_filtered.jpg",
+    "alt": "A red flower resting on a thin, hazy blue slab of aerogel held directly above the blue flame of a Bunsen burner.",
+    "credit": "Derivative work by JovanCormac · Public domain"
+  },
+  "body": "Aerogel is a gel whose liquid has been swapped for gas without the structure collapsing. Just letting the liquid evaporate would not work, because surface tension in the tiny pores would crush the network, so the gel is dried in a special way called supercritical drying. What is left can be **anything from 50% to 99.98% air** by volume. Its maze of tiny air-filled pores makes it a superb insulator: until 2011, silica aerogel held Guinness World Records for best insulator and lowest-density solid.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Samuel Kistler made the first documented aerogel in 1931. What was he trying to do?",
+      "answer": "Win a bet",
+      "detail": "He and Charles Learned had wagered over who could replace the liquid in a jelly with gas without it shrinking."
+    },
+    {
+      "type": "flow",
+      "heading": "How to make solid smoke",
+      "steps": [
+        {
+          "icon": "🧪",
+          "label": "Make a gel: a fine solid web full of liquid"
+        },
+        {
+          "icon": "🌡️",
+          "label": "Dry it supercritically: no surface tension"
+        },
+        {
+          "icon": "💨",
+          "label": "The liquid leaves as gas; the web survives"
+        },
+        {
+          "icon": "🧊",
+          "label": "A rigid solid that is mostly air"
+        }
+      ]
+    },
+    {
+      "type": "sort",
+      "heading": "Which kinds of heat flow does aerogel stop?",
+      "bins": [
+        "Blocks it",
+        "Lets it through"
+      ],
+      "items": [
+        {
+          "text": "Conduction through the solid",
+          "bin": 0
+        },
+        {
+          "text": "Convection of the air in its pores",
+          "bin": 0
+        },
+        {
+          "text": "Infrared radiation",
+          "bin": 1
+        }
+      ],
+      "explanation": "Silica conducts heat poorly and the trapped air cannot circulate, but infrared radiation passes straight through, so aerogel stops two of the three."
+    },
+    {
+      "type": "stat",
+      "value": "2 g",
+      "label": "of aerogel can hold up a 2.5 kg brick",
+      "text": "That is more than a thousand times its own weight. Silica aerogel feels like fragile styrofoam to the touch."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Stardust_Dust_Collector_with_aerogel.jpg/960px-Stardust_Dust_Collector_with_aerogel.jpg",
+      "alt": "A metal grid shaped like a tennis racket head, each cell filled with a pale blue translucent block of aerogel.",
+      "caption": "NASA’s Stardust dust collector. Space dust that would vaporise on hitting a solid was caught in these aerogel blocks instead.",
+      "fit": "cover",
+      "credit": "NASA · Public domain"
+    },
+    {
+      "type": "text",
+      "heading": "Why it looks blue",
+      "text": "Silica aerogel has a faint blue haze for the same reason the sky does: Rayleigh scattering. Its nano-sized structure scatters the shorter, bluer wavelengths of light more than the longer ones. Its nicknames include ‘frozen smoke’ and ‘blue smoke’."
+    }
+  ],
+  "tags": [
+    "materials",
+    "insulation",
+    "gels",
+    "nasa"
+  ],
+  "source": {
+    "label": "Wikipedia: Aerogel",
+    "url": "https://en.wikipedia.org/wiki/Aerogel"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

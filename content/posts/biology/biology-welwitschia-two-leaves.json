@@ -1,0 +1,68 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-welwitschia-two-leaves",
+  "field": "biology",
+  "title": "A Namib desert plant grows only two leaves in its whole life, and they can last centuries",
+  "emoji": "🌵",
+  "body": "Welwitschia mirabilis grows just **two leaves** from a woody, disc-shaped crown, and keeps adding to them for its entire life. Over the centuries they stretch to as much as 4 m, splitting into ribbons and fraying as they weather, which makes the plant look like a heap of leaves. Its age is hard to measure, but radiocarbon dating suggests the oldest individuals may be around 2,000 years old, and many are hundreds of years old. It survives in a strip of the Namib Desert more than 1,000 km long, in Angola and Namibia, where rainfall is under 100 mm a year and fog and groundwater keep it alive. It appears on Namibia's coat of arms.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/WelwitchiaMale.JPG/960px-WelwitchiaMale.JPG",
+    "alt": "A Welwitschia plant in the Namib Desert, its two long green leaves torn into frayed ribbons spreading across the sand around a central crown with reddish cones",
+    "credit": "Petr Berka · Public domain"
+  },
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Its Afrikaans name is tweeblaarkanniedood. What does it mean?",
+      "answer": "Two leaves, can't die",
+      "detail": "The two leaves grow continuously from the crown for the plant's whole life, and the oldest individuals are thought to be around 2,000 years old."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Welwitschia_mirabilis_002.jpg/960px-Welwitschia_mirabilis_002.jpg",
+      "alt": "A young Welwitschia in a pot, showing two broad strap-like leaves emerging on either side of a small woody crown",
+      "caption": "A young plant shows the design clearly: two strap-shaped leaves growing from a woody crown. In old plants the same two leaves split and fray into many ribbons.",
+      "fit": "cover",
+      "credit": "Amada44 · CC BY 3.0"
+    },
+    {
+      "type": "estimate",
+      "question": "How long can a Welwitschia leaf grow?",
+      "min": 0,
+      "max": 10,
+      "step": 0.5,
+      "answer": 4,
+      "unit": "m",
+      "explanation": "Up to about 4 m. The leaves keep growing from their base throughout the plant's life while their tips weather away and split into ribbons."
+    },
+    {
+      "type": "list",
+      "heading": "Where it lives",
+      "style": "bullets",
+      "items": [
+        "A strip of the Namib over 1,000 km long, in Angola and Namibia",
+        "Rain under 100 mm a year, mostly February to April",
+        "Fog and groundwater supply the rest",
+        "The crown can reach a metre across; the plant stays under 1.5 m tall"
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "One plant, three names",
+      "events": [
+        { "when": "1859", "text": "Austrian botanist Friedrich Welwitsch documents it in Angola" },
+        { "when": "1863", "text": "Joseph Dalton Hooker names the genus Welwitschia after him" },
+        { "when": "Today", "text": "Also called tree tumbo, onyanga and tweeblaarkanniedood" }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "A gymnosperm on its own",
+      "text": "Welwitschia is not a flowering plant but a gymnosperm, a relative of conifers, and the only living member of its family and order. Its closest living relatives are the gnetophytes Gnetum and Ephedra, a tiny group of survivors from a once larger lineage."
+    }
+  ],
+  "tags": ["welwitschia", "plants", "namib", "deserts"],
+  "source": { "label": "Wikipedia: Welwitschia", "url": "https://en.wikipedia.org/wiki/Welwitschia" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

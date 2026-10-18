@@ -5,6 +5,55 @@
   "title": "A teaspoon of neutron star would weigh billions of tonnes",
   "emoji": "🥄",
   "body": "When a massive star explodes as a supernova, its core can collapse into a ball only about 20 km across that holds around 1.4 times the Sun’s mass. Gravity crushes the matter to the density of an atomic nucleus, made mostly of neutrons. A teaspoon of it would have a mass of about 5.5 billion tonnes, roughly 900 Great Pyramids. Many neutron stars also spin furiously; the fastest known turns about 716 times a second.",
+  "slides": [
+    {
+      "type": "place",
+      "question": "A neutron star packs about 1.4 Suns of mass into a ball how wide?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 20,
+      "unit": "km",
+      "hints": [
+        {
+          "label": "Everest height",
+          "value": 8.8
+        },
+        {
+          "label": "Marathon",
+          "value": 42.195
+        }
+      ],
+      "explanation": "About 20 km across, the size of a city, at the density of an atomic nucleus. A teaspoon of it would have a mass of about 5.5 billion tonnes."
+    },
+    {
+      "type": "estimate",
+      "question": "How many times a second does the fastest known neutron star spin?",
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "answer": 716,
+      "unit": "per second",
+      "explanation": "About 716 times a second. Such a star packs around 1.4 times the Sun’s mass into a ball only about 20 km across, at the density of an atomic nucleus."
+    },
+    {
+      "type": "scale",
+      "heading": "A teaspoon of neutron star next to the Great Pyramid, by mass",
+      "items": [
+        {
+          "label": "Great Pyramid",
+          "value": 6
+        },
+        {
+          "label": "Teaspoon of star",
+          "value": 5500,
+          "emphasis": true
+        }
+      ],
+      "unit": "million tonnes",
+      "note": "The pyramid weighs about 6 million tonnes; the teaspoon about 5.5 billion, roughly 900 pyramids"
+    }
+  ],
   "tags": [
     "neutronstars",
     "stars",

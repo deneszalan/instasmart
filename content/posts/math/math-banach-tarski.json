@@ -5,6 +5,66 @@
   "title": "One ball can be cut into 5 pieces and rebuilt into two identical balls",
   "emoji": "⚽",
   "body": "The Banach–Tarski paradox, published in 1924, proves that a solid ball can be split into finitely many pieces, as few as five, that can be moved and rotated, without stretching, into two balls each identical to the original. The catch is that the pieces are infinitely intricate scatterings of points with no definable volume, so nothing like this can be done with a real object. The proof also depends on a set-theory axiom called the axiom of choice.",
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "The Banach–Tarski recipe",
+      "steps": [
+        {
+          "icon": "⚽",
+          "label": "Start with one solid ball"
+        },
+        {
+          "icon": "✂️",
+          "label": "Split it into just five pieces"
+        },
+        {
+          "icon": "🔄",
+          "label": "Move and rotate them, never stretching"
+        },
+        {
+          "icon": "🎉",
+          "label": "Rebuild them into two full-size balls"
+        }
+      ]
+    },
+    {
+      "type": "place",
+      "question": "When did Banach and Tarski publish the proof that one ball can become two?",
+      "min": 1890,
+      "max": 1960,
+      "step": 1,
+      "answer": 1924,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Choice axiom",
+          "value": 1904
+        },
+        {
+          "label": "Hausdorff",
+          "value": 1914
+        },
+        {
+          "label": "Five pieces",
+          "value": 1947
+        }
+      ],
+      "explanation": "1924, building on Hausdorff’s 1914 paradox and on the axiom of choice, which Zermelo formulated in 1904. In 1947 Robinson showed that five pieces suffice and four do not."
+    },
+    {
+      "type": "quiz",
+      "question": "Why can’t the Banach–Tarski trick be done with a real ball?",
+      "options": [
+        "The pieces must be stretched to fit",
+        "The pieces have no definable volume",
+        "It only works for a hollow sphere",
+        "The maths was later shown to be wrong"
+      ],
+      "answer": 1,
+      "explanation": "The pieces are infinitely intricate scatterings of points with no definable volume, so nothing like this works on a real object. The proof also relies on the axiom of choice."
+    }
+  ],
   "tags": [
     "geometry",
     "settheory",

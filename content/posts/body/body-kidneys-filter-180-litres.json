@@ -1,0 +1,72 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-kidneys-filter-180-litres",
+  "field": "body",
+  "title": "Your kidneys filter 180 litres a day but you pee only a litre or two",
+  "emoji": "🫘",
+  "body": "Each adult kidney contains around a million nephrons, microscopic filtering units, and together the two kidneys receive roughly **20 to 25% of the heart’s output**. From that blood they generate about 180 litres of filtrate a day: water, salts, glucose and waste all pass through. The nephron’s long tubule then reclaims almost everything useful and returns it to the blood. What is left, normally 800 to 2,000 millilitres a day, is urine. Filtering nearly everything and taking back only what is needed lets the body fine-tune its water and salt balance.",
+  "slides": [
+    {
+      "type": "stat",
+      "value": "180 L",
+      "label": "of filtrate your kidneys produce in a day",
+      "text": "More than 99% is reabsorbed. The 800 to 2,000 mL that remain leave as urine."
+    },
+    {
+      "type": "pictogram",
+      "heading": "Of every 100 litres your kidneys filter, 99 go back into the blood",
+      "icon": "💧",
+      "total": 100,
+      "count": 99,
+      "note": "About 180 litres of filtrate a day; only 0.8 to 2 litres leave as urine"
+    },
+    {
+      "type": "list",
+      "heading": "Inside a nephron",
+      "style": "steps",
+      "items": [
+        "Blood arrives: the kidneys take 20 to 25% of the heart’s output",
+        "A tuft of capillaries, the glomerulus, filters out water and small molecules",
+        "The tubule reabsorbs the water, salts and glucose the body needs",
+        "What is left drains to the bladder as urine"
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "A million filters",
+      "text": "Each adult human kidney holds around one million nephrons; a mouse kidney has only about 12,500. The whole organ is only about 12 centimetres long, which makes the daily 180 litres all the more remarkable."
+    },
+    {
+      "type": "quiz",
+      "question": "What happens to most of the 180 litres your kidneys filter each day?",
+      "options": [
+        "It is stored in the bladder",
+        "It is reabsorbed into the blood",
+        "It leaves as sweat",
+        "It is broken down by the liver"
+      ],
+      "answer": 1,
+      "explanation": "Most of the filtrate is reabsorbed along the nephron’s tubule. Only about 800 to 2,000 mL a day ends up as urine."
+    },
+    {
+      "type": "scramble",
+      "clue": "The kidney’s microscopic filtering unit; each adult kidney holds around a million of them",
+      "answer": "NEPHRON",
+      "detail": "From the Greek nephros, ‘kidney’. A tuft of capillaries filters the blood, and a long tubule takes back what the body needs."
+    }
+  ],
+  "tags": [
+    "kidneys",
+    "organs",
+    "physiology"
+  ],
+  "source": {
+    "label": "Wikipedia: Kidney",
+    "url": "https://en.wikipedia.org/wiki/Kidney"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

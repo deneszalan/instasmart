@@ -1,0 +1,106 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-jwst-gold-mirror",
+  "field": "space",
+  "title": "The Webb telescope’s 6.5-metre mirror is gilded with just 48 grams of gold",
+  "emoji": "🪞",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/James_Webb_Space_Telescope%27s_Golden_Mirror_Unveiled_%2826076364723%29.jpg/960px-James_Webb_Space_Telescope%27s_Golden_Mirror_Unveiled_%2826076364723%29.jpg",
+    "alt": "The James Webb Space Telescope’s primary mirror, 18 gold-coated hexagonal segments, standing upright in a clean room.",
+    "credit": "NASA/Chris Gunn · Public domain"
+  },
+  "body": "Webb’s primary mirror is 6.5 m across, built from 18 hexagonal beryllium segments, and every one of them is coated in gold. But the layer is only about **100 nanometres** thick, so the whole telescope carries just 48.25 g of gold, about the mass of a golf ball. Gold is used because it reflects red and infrared light extremely well, and Webb observes in the infrared, where the faint, stretched light of the earliest galaxies and the glow of newborn stars show up best. A thin layer of glass protects the gold, and the telescope works 1.5 million km from Earth, kept below 50 K behind its sunshield.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How much gold coats Webb’s 18 mirror segments, in grams?",
+      "min": 0,
+      "max": 5000,
+      "step": 1,
+      "answer": 48,
+      "unit": "g",
+      "explanation": "Just 48.25 g, about a golf ball’s worth, because the layer is only about 100 nanometres thick, roughly a thousandth of the thickness of a sheet of paper."
+    },
+    {
+      "type": "stat",
+      "value": "100 nm",
+      "label": "thickness of the gold layer on each mirror segment",
+      "text": "The 18 segments and their backing frame weigh about 625 kg in total; the gold is a rounding error."
+    },
+    {
+      "type": "chart",
+      "heading": "Primary mirror diameter, in metres",
+      "items": [
+        {
+          "label": "Hubble",
+          "value": 2.4
+        },
+        {
+          "label": "Webb",
+          "value": 6.5,
+          "emphasis": true
+        }
+      ],
+      "unit": "m",
+      "note": "Webb’s segments give a light-collecting area of 25.4 m²"
+    },
+    {
+      "type": "text",
+      "heading": "Why gold?",
+      "text": "Gold reflects blue light poorly but red and infrared light extremely well. Webb was built to see in the infrared, so a gold coating gives it the brightest possible view of distant galaxies, whose light has been stretched to longer wavelengths by the expansion of the universe."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/James_Webb_Space_Telescope_Mirror_Seen_in_Full_Bloom_%2833433274343%29.jpg/960px-James_Webb_Space_Telescope_Mirror_Seen_in_Full_Bloom_%2833433274343%29.jpg",
+      "alt": "The fully deployed Webb primary mirror, its gold hexagons arranged like a flower, hanging from a crane in a clean room.",
+      "caption": "The deployed mirror being moved into a clean room at NASA Goddard.",
+      "fit": "cover",
+      "credit": "NASA · Public domain"
+    },
+    {
+      "type": "timeline",
+      "heading": "First light",
+      "events": [
+        {
+          "when": "25 Dec 2021",
+          "text": "Launch"
+        },
+        {
+          "when": "11 Jul 2022",
+          "text": "The first deep-field image is revealed"
+        },
+        {
+          "when": "12 Jul 2022",
+          "text": "First full set of images and spectra released"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why gold rather than silver or aluminium on Webb’s mirrors?",
+      "options": [
+        "Gold reflects infrared best",
+        "Gold is the lightest metal",
+        "Gold never needs cleaning",
+        "Gold stays warm in space"
+      ],
+      "answer": 0,
+      "explanation": "Gold reflects red and infrared light extremely well. Webb works in the infrared, so gold gives it the brightest view of the heat glow of distant galaxies and newborn stars."
+    }
+  ],
+  "tags": [
+    "telescopes",
+    "gold",
+    "infrared",
+    "nasa"
+  ],
+  "source": {
+    "label": "NASA: James Webb Space Telescope FAQ",
+    "url": "https://science.nasa.gov/mission/webb/faqs-full/"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

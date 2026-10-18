@@ -1,0 +1,66 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-bayreuth-hidden-orchestra",
+  "field": "music",
+  "title": "Wagner built an opera house where the orchestra plays hidden under the stage",
+  "emoji": "🎻",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Bayreuth_Festspielhaus_2006-07-16.jpg/960px-Bayreuth_Festspielhaus_2006-07-16.jpg",
+    "alt": "The Bayreuth Festspielhaus, a plain brick and timber-framed opera house on a green hill, seen beyond a garden of purple, white and yellow flowers.",
+    "credit": "Rico Neitzel · CC BY-SA 2.5"
+  },
+  "body": "Richard Wagner adapted the design of the Festspielhaus in Bayreuth, Germany, from an unbuilt plan by Gottfried Semper, purely for his own stage works; it opened in August 1876 with the complete four-opera cycle Der Ring des Nibelungen, and his operas are still the only ones performed there. Its most unusual feature is the orchestra pit, recessed under the stage and covered by a hood, so the **orchestra is completely invisible** to the audience. The design also corrects the balance of volume between singers and orchestra, and the first violins’ sound reaches the audience by bouncing off the back of the stage. Wagner called the gap the pit and a double proscenium create between audience and stage a ‘mystic gulf’.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Playing in the Bayreuth pit comes with an unusual problem. What is it?",
+      "answer": "Most can’t see or hear the singers",
+      "detail": "The reverberation also makes it hard to keep orchestra and singers together, so conductors must train themselves to ignore cues from the singers."
+    },
+    {
+      "type": "flow",
+      "heading": "How the hidden sound gets out",
+      "steps": [
+        { "icon": "🎻", "label": "The first violins play beneath the hood" },
+        { "icon": "🔊", "label": "Their sound travels to the back of the stage" },
+        { "icon": "↩️", "label": "It is reflected out to the audience" }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "1,925",
+      "label": "seats, arranged in a single steep wedge",
+      "text": "There are galleries or boxes along the back wall only, and a double proscenium makes the stage seem further away than it is."
+    },
+    {
+      "type": "list",
+      "heading": "A house built for one composer",
+      "style": "bullets",
+      "items": [
+        "Foundation stone laid on 22 May 1872",
+        "Opened in August 1876 with the whole Ring cycle",
+        "One of the largest free-standing timber structures ever built",
+        "Still stages only Wagner’s operas"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Who provided most of the money to build the Festspielhaus?",
+      "options": [
+        "King Ludwig II of Bavaria",
+        "Emperor Wilhelm I",
+        "The town of Bayreuth",
+        "A Paris opera company"
+      ],
+      "answer": 0,
+      "explanation": "Ludwig II of Bavaria provided the primary funding for the building."
+    }
+  ],
+  "tags": ["wagner", "opera", "acoustics", "germany"],
+  "source": {
+    "label": "Wikipedia: Bayreuth Festspielhaus",
+    "url": "https://en.wikipedia.org/wiki/Bayreuth_Festspielhaus"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

@@ -7,6 +7,16 @@
   "body": "From around 1200, artisans across the Islamic world decorated buildings with intricate star-and-polygon strapwork called girih. In 2007, physicists Peter Lu and Paul Steinhardt argued that many of these designs were built from just five tile shapes, and that some, like those on the 1453 Darb-i Imam shrine in Isfahan, are consistent with quasicrystalline tilings like those Roger Penrose described in the 1970s.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "How many basic tile shapes did Lu and Steinhardt find behind these intricate patterns?",
+      "min": 1,
+      "max": 30,
+      "step": 1,
+      "answer": 5,
+      "unit": "shapes",
+      "explanation": "Just five: a decagon, a pentagon, a bowtie, a rhombus and an elongated hexagon, each carrying decorative lines that join up however the tiles are laid."
+    },
+    {
       "type": "text",
       "heading": "Five hidden tiles",
       "text": "A decagon, a pentagon, a bowtie, a rhombus and an elongated hexagon. Each carries decorative lines, while the tile edges vanish in the finished design."
@@ -22,9 +32,56 @@
       "text": "Quasicrystalline patterns are ordered and rich in fivefold symmetry, yet never repeat at regular intervals. Real quasicrystals were only discovered in 1982."
     },
     {
+      "type": "spectrum",
+      "heading": "Eight centuries from tiles to physics",
+      "min": 1150,
+      "max": 2050,
+      "format": "year",
+      "ends": [
+        "Earlier",
+        "Later"
+      ],
+      "marks": [
+        {
+          "label": "Girih patterns spread",
+          "value": 1200
+        },
+        {
+          "label": "Darb-i Imam shrine, Isfahan",
+          "value": 1453,
+          "emphasis": true
+        },
+        {
+          "label": "Penrose tilings (1970s)",
+          "value": 1975
+        },
+        {
+          "label": "Quasicrystals discovered",
+          "value": 1982
+        },
+        {
+          "label": "Lu and Steinhardt’s paper",
+          "value": 2007
+        }
+      ],
+      "note": "Girih decoration took off from around 1200; Penrose described his tilings in the 1970s."
+    },
+    {
       "type": "text",
       "heading": "What it doesn’t mean",
       "text": "Nobody claims medieval artisans knew modern quasicrystal math. They likely drafted designs with compass and straightedge, using templates like the Topkapı Scroll."
+    },
+    {
+      "type": "odd",
+      "heading": "Which is not one of the five girih tiles?",
+      "items": [
+        "Decagon",
+        "Bowtie",
+        "Triangle",
+        "Rhombus"
+      ],
+      "answer": 2,
+      "explanation": "Lu and Steinhardt’s five tiles are a decagon, a pentagon, a bowtie, a rhombus and an elongated hexagon. There is no triangle among them."
     }
   ],
   "tags": [

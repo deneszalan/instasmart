@@ -1,0 +1,138 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "philosophy-ghazali-fire-cotton",
+  "field": "philosophy",
+  "title": "A medieval Islamic thinker argued that fire doesn’t really burn cotton",
+  "emoji": "🔥",
+  "body": "In The Incoherence of the Philosophers, al-Ghazali (c. 1058–1111) took aim at thinkers who treated natural causes as necessary. Put cotton to a flame and it burns, but, he argued, nothing we observe shows that the fire *must* burn it: we only ever see one event follow another. On his view, known as **occasionalism**, God directly causes each burning, and what looks like a law of nature is God’s habit. Averroes replied a century later that God had created real natural laws; centuries on, David Hume made a similar sceptical argument about cause and effect.",
+  "slides": [
+    {
+      "type": "compare",
+      "heading": "Why does the cotton burn?",
+      "left": {
+        "label": "The philosophers",
+        "text": "Fire has a nature that necessarily produces burning. Cause and effect are bound together."
+      },
+      "right": {
+        "label": "Al-Ghazali",
+        "text": "We only see burning follow contact. God wills each burning directly; the fire is the occasion, not the cause."
+      }
+    },
+    {
+      "type": "list",
+      "heading": "The argument",
+      "style": "steps",
+      "items": [
+        "Watch cotton touch fire: it blackens and burns",
+        "All you observed was one event, then another",
+        "Nothing you saw shows the first must produce the second",
+        "So the link is God’s habit, not a necessity"
+      ]
+    },
+    {
+      "type": "timeline",
+      "events": [
+        {
+          "when": "c. 1058",
+          "text": "Al-Ghazali is born near Tus, in Khorasan"
+        },
+        {
+          "when": "1091",
+          "text": "He becomes head of the Nizamiyya college in Baghdad"
+        },
+        {
+          "when": "1095",
+          "text": "A spiritual crisis: he abandons his post and leaves Baghdad"
+        },
+        {
+          "when": "1111",
+          "text": "He dies on 19 December"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Hume’s echo",
+      "text": "In the 18th century David Hume argued that the only place to find necessary connections is in the mind’s own associations of ideas. Al-Ghazali had reached the sceptical half of that conclusion seven centuries earlier, and drew the opposite moral: that God, not nature, does the work."
+    },
+    {
+      "type": "spectrum",
+      "heading": "Seven centuries of the same doubt",
+      "min": 1000,
+      "max": 1800,
+      "format": "year",
+      "ends": [
+        "1000",
+        "1800"
+      ],
+      "marks": [
+        {
+          "label": "Al-Ghazali, Incoherence",
+          "value": 1095,
+          "emphasis": true
+        },
+        {
+          "label": "Averroes replies",
+          "value": 1180
+        },
+        {
+          "label": "Hume’s Enquiry",
+          "value": 1748
+        }
+      ],
+      "note": "Al-Ghazali’s book is dated 1095, Averroes’s reply 1180, Hume’s Enquiry 1748."
+    },
+    {
+      "type": "order",
+      "heading": "Earliest first",
+      "items": [
+        "Al-Ghazali is born",
+        "He leaves Baghdad in crisis",
+        "Averroes writes his reply",
+        "Hume’s argument about causes"
+      ],
+      "explanation": "Born c. 1058, the crisis of 1095, Averroes’s Incoherence of the Incoherence in the 12th century, and Hume in the 18th."
+    },
+    {
+      "type": "sort",
+      "heading": "Who would say it: al-Ghazali or the philosophers?",
+      "bins": [
+        "Al-Ghazali",
+        "Philosophers"
+      ],
+      "items": [
+        {
+          "text": "Fire has a nature that must produce burning",
+          "bin": 1
+        },
+        {
+          "text": "We only ever see burning follow contact",
+          "bin": 0
+        },
+        {
+          "text": "What looks like a law of nature is God’s habit",
+          "bin": 0
+        },
+        {
+          "text": "Cause and effect are bound together by necessity",
+          "bin": 1
+        }
+      ],
+      "explanation": "Al-Ghazali’s occasionalism: God causes each burning directly, and the fire is only the occasion."
+    }
+  ],
+  "tags": [
+    "islam",
+    "causation",
+    "ghazali"
+  ],
+  "source": {
+    "label": "Wikipedia: Al-Ghazali",
+    "url": "https://en.wikipedia.org/wiki/Al-Ghazali"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

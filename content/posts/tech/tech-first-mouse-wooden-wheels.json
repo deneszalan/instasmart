@@ -1,0 +1,116 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-first-mouse-wooden-wheels",
+  "field": "tech",
+  "title": "The first computer mouse was a wooden block rolling on two metal wheels",
+  "emoji": "🖱️",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/The_original_computer_mouse._%282585230887%29.jpg/960px-The_original_computer_mouse._%282585230887%29.jpg",
+    "alt": "Douglas Engelbart's prototype mouse, a small wooden box with a button and a cord, in a museum display beside an early Logitech prototype.",
+    "credit": "Erik Pitti · CC BY 2.0"
+  },
+  "body": "[Douglas Engelbart](https://en.wikipedia.org/wiki/Douglas_Engelbart) and his engineer Bill English built the first mouse at the Stanford Research Institute in the mid-1960s: a **wooden shell** over two metal wheels set at right angles, each turning a potentiometer, so that sliding the block sideways turned one wheel and pushing it forward turned the other. Engelbart said the nickname came from the cord trailing out of the end like a tail. He showed it to the public on 9 December 1968 in the presentation now called the Mother of All Demos, alongside hypertext and on-screen collaboration. SRI held the patent, granted in 1970, and later licensed it to Apple for what Engelbart recalled as \"something like $40,000\"; it expired before mice became common on personal computers, and he never received royalties.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Computer_mouse_prototype_bottom.jpg/960px-Computer_mouse_prototype_bottom.jpg",
+      "alt": "The underside of a replica of Engelbart's mouse, showing two metal wheels mounted at right angles to each other.",
+      "caption": "The underside of a replica of Engelbart's mouse: two wheels at right angles, one for each direction of movement.",
+      "fit": "cover",
+      "credit": "Science Museum Group · CC BY 4.0"
+    },
+    {
+      "type": "reveal",
+      "prompt": "SRI licensed the mouse patent to Apple. For roughly how much, according to Engelbart?",
+      "answer": "Something like $40,000",
+      "detail": "Engelbart said SRI \"really had no idea of its value\". The patent, US 3,541,541, expired before mice became common on personal computers, so he never earned royalties."
+    },
+    {
+      "type": "flow",
+      "heading": "How the wheel mouse tracked your hand",
+      "steps": [
+        {
+          "icon": "✋",
+          "label": "You slide the wooden block"
+        },
+        {
+          "icon": "🛞",
+          "label": "The wheel in line with the motion turns"
+        },
+        {
+          "icon": "🎚️",
+          "label": "Each wheel drives a potentiometer"
+        },
+        {
+          "icon": "🖥️",
+          "label": "Two voltages become x and y on screen"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Who invented the mouse?",
+      "left": {
+        "label": "Myth",
+        "text": "Apple invented the mouse for the Macintosh in 1984."
+      },
+      "right": {
+        "label": "Fact",
+        "text": "Engelbart and English built it at SRI in the 1960s. Xerox's Alto used one in 1973; the Macintosh of 1984 helped make it ordinary."
+      }
+    },
+    {
+      "type": "timeline",
+      "heading": "Pointing devices through the years",
+      "events": [
+        {
+          "when": "1946",
+          "text": "Ralph Benjamin's radar trackball"
+        },
+        {
+          "when": "1964",
+          "text": "Bill English builds the prototype"
+        },
+        {
+          "when": "1968",
+          "text": "Engelbart's Mother of All Demos"
+        },
+        {
+          "when": "1973",
+          "text": "Xerox Alto comes with a mouse"
+        },
+        {
+          "when": "1984",
+          "text": "Apple's Macintosh ships with one"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why did Engelbart earn nothing from the mouse?",
+      "options": [
+        "SRI owned the patent; it expired early",
+        "He gave the rights to Xerox",
+        "Mice were never patented",
+        "He sold the idea for one dollar"
+      ],
+      "answer": 0,
+      "explanation": "The patent belonged to SRI, his employer, and it ran out before mice became common on personal computers, so there were no royalties to collect."
+    }
+  ],
+  "tags": [
+    "mouse",
+    "engelbart",
+    "computinghistory",
+    "interfaces"
+  ],
+  "source": {
+    "label": "Wikipedia: Computer mouse",
+    "url": "https://en.wikipedia.org/wiki/Computer_mouse"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

@@ -1,0 +1,112 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-mercury-polar-ice",
+  "field": "space",
+  "title": "The planet closest to the Sun has ice at its poles, in craters that never see daylight",
+  "emoji": "🧊",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg/960px-Mercury_in_color_-_Prockter07-edit1.jpg",
+    "alt": "Mercury’s cratered grey-brown globe, photographed by the MESSENGER spacecraft.",
+    "credit": "NASA/JHUAPL/Carnegie Institution · Public domain"
+  },
+  "body": "Mercury’s equator roasts at up to about 430 °C, yet the planet’s axis is tilted by only about 0.03°, so the floors of some polar craters have never seen the Sun and stay below about **102 K, around −171 °C**. Radar from Earth in the early 1990s picked up unusually bright patches there, and in 2012 NASA’s MESSENGER probe, orbiting the planet, found strong evidence that they are water ice, an estimated 10^14 to 10^15 kg of it, possibly protected by a layer of soil that stops it evaporating. Whether it came from comet impacts or from gas seeping out of the planet is still unknown.",
+  "slides": [
+    {
+      "type": "place",
+      "question": "How hot does Mercury’s equator get at noon?",
+      "min": -200,
+      "max": 500,
+      "step": 1,
+      "answer": 427,
+      "unit": "°C",
+      "ends": [
+        "Frozen",
+        "Roasting"
+      ],
+      "hints": [
+        {
+          "label": "Crater floors",
+          "value": -171
+        },
+        {
+          "label": "Ice melts",
+          "value": 0
+        },
+        {
+          "label": "Water boils",
+          "value": 100
+        }
+      ],
+      "explanation": "About 427 °C at the equator, and up to 700 K at the point right under the Sun when Mercury is closest to it. The shadowed crater floors stay below 102 K, about −171 °C."
+    },
+    {
+      "type": "stat",
+      "value": "0.03°",
+      "label": "Mercury’s axial tilt, so the Sun never rises above some polar crater rims",
+      "text": "Earth’s axis tilts about 23.4°, which is why we have seasons and why even our poles get months of sunshine."
+    },
+    {
+      "type": "stat",
+      "value": "10¹⁵ kg",
+      "label": "the upper estimate of the ice in Mercury’s polar craters",
+      "text": "That is up to a trillion tonnes. Its source, comets or gas from the planet’s interior, is still unknown."
+    },
+    {
+      "type": "timeline",
+      "heading": "Finding the ice",
+      "events": [
+        {
+          "when": "Early 1990s",
+          "text": "Earth-based radar sees bright polar patches"
+        },
+        {
+          "when": "Mar 2011",
+          "text": "MESSENGER enters orbit around Mercury"
+        },
+        {
+          "when": "Nov 2012",
+          "text": "Strong evidence of water ice announced"
+        },
+        {
+          "when": "Apr 2015",
+          "text": "MESSENGER crashes into the planet"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Radar-bright_Deposits_near_Mercury%27s_North_Pole_messenger_orbit_image20120322.jpg/960px-Radar-bright_Deposits_near_Mercury%27s_North_Pole_messenger_orbit_image20120322.jpg",
+      "alt": "A MESSENGER mosaic of Mercury’s north polar craters with yellow patches marking radar-bright deposits inside them.",
+      "caption": "Radar-bright deposits (yellow), detected from Earth, sit exactly in the craters’ permanent shadows.",
+      "fit": "cover",
+      "credit": "NASA/JHUAPL/Carnegie Institution · Public domain"
+    },
+    {
+      "type": "quiz",
+      "question": "Why can ice survive on the planet nearest the Sun?",
+      "options": [
+        "Some crater floors never see sunlight",
+        "Mercury has a thick atmosphere",
+        "The ice is frozen carbon dioxide",
+        "Sunlight is weak at Mercury’s poles"
+      ],
+      "answer": 0,
+      "explanation": "With almost no axial tilt, the Sun never rises above the rims of some polar craters. Their floors stay below about 102 K, and a layer of soil may insulate the ice further."
+    }
+  ],
+  "tags": [
+    "mercury",
+    "ice",
+    "planets",
+    "messenger"
+  ],
+  "source": {
+    "label": "Wikipedia: Mercury (planet)",
+    "url": "https://en.wikipedia.org/wiki/Mercury_(planet)"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

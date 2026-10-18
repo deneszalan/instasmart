@@ -1,0 +1,67 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-lituya-bay-megatsunami-1958",
+  "field": "earth",
+  "title": "In 1958 a wave in Alaska stripped the forest 524 m up a mountainside",
+  "emoji": "🌊",
+  "body": "Late on 9 July 1958, a magnitude 7.8 earthquake in south-east Alaska sent about **30 million cubic metres of rock**, roughly 90 million tonnes, crashing into the head of Lituya Bay. The splash raised a wave that ran 524 m up the opposite slope, shearing off trees and soil and leaving a bare trimline that is still visible today. Three fishing boats were in the bay: one sank with two people aboard, while the other crews rode the swell and survived, including a skipper and his seven-year-old son. Five people died in all, and it remains the largest megatsunami of modern times.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Lituya_Bay%2C_Alaska.jpg/960px-Lituya_Bay%2C_Alaska.jpg",
+    "alt": "Aerial view of Lituya Bay in Alaska, a fjord of turquoise water flanked by forested ridges and snow-capped mountains",
+    "credit": "NOAA Photo Library · Public domain"
+  },
+  "slides": [
+    {
+      "type": "place",
+      "question": "How high did the 1958 Lituya Bay wave run up the slope?",
+      "min": 0,
+      "max": 600,
+      "step": 1,
+      "answer": 524,
+      "unit": "m",
+      "ends": ["Sea level", "600 m"],
+      "hints": [
+        { "label": "1899 wave", "value": 60 },
+        { "label": "1854 wave", "value": 120 },
+        { "label": "1936 wave", "value": 150 }
+      ],
+      "explanation": "524 m, the largest megatsunami of modern times. Lituya Bay had already seen waves of 60 to 150 m in 1854, 1899 and 1936, but nothing on this scale."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Evidence_of_1958_Lituya_Bay_tsunami_still_clearly_visible_in_2010.jpg/960px-Evidence_of_1958_Lituya_Bay_tsunami_still_clearly_visible_in_2010.jpg",
+      "alt": "A forested hillside at Lituya Bay with a sharp line where younger, lighter trees replace older forest, seen across calm grey water",
+      "caption": "The trimline in 2010: below the line the 1958 wave stripped the slope bare, and younger forest has since grown back.",
+      "fit": "cover",
+      "credit": "Pohopetch · CC BY-SA 3.0"
+    },
+    {
+      "type": "flow",
+      "heading": "From earthquake to megatsunami",
+      "steps": [
+        { "icon": "🌍", "label": "A magnitude 7.8 earthquake, 9 July 1958" },
+        { "icon": "🪨", "label": "30 million m³ of rock falls into the bay" },
+        { "icon": "💦", "label": "The splash surges up the far slope" },
+        { "icon": "🌲", "label": "Trees are sheared off up to 524 m" },
+        { "icon": "🚤", "label": "A wave sweeps down the bay" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What made the 1958 wave so tall?",
+      "options": ["A huge rockfall into a narrow bay", "An undersea volcanic eruption", "A storm surge from the Pacific"],
+      "answer": 0,
+      "explanation": "The earthquake shook loose about 30 million cubic metres of rock, which plunged into the confined head of Lituya Bay. The displaced water had nowhere to go but up the opposite slope."
+    },
+    {
+      "type": "stat",
+      "value": "5",
+      "label": "people killed, from three fishing boats in the bay",
+      "text": "One boat was lost with two people aboard. The others were carried by the wave; one skipper and his seven-year-old son came through with only minor injuries."
+    }
+  ],
+  "tags": ["tsunami", "alaska", "earthquakes", "waves"],
+  "source": { "label": "Wikipedia: 1958 Lituya Bay earthquake and megatsunami", "url": "https://en.wikipedia.org/wiki/1958_Lituya_Bay_earthquake_and_megatsunami" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

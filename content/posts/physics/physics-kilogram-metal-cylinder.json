@@ -1,0 +1,65 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-kilogram-metal-cylinder",
+  "field": "physics",
+  "title": "Until 2019, the kilogram was defined by a metal cylinder near Paris",
+  "emoji": "⚖️",
+  "body": "From 1889 to 2019 the kilogram was defined by one object: a golf-ball-sized cylinder of 90% platinum and 10% iridium, kept under nested bell jars in a vault outside Paris that takes three separate keys to open. Copies went to countries around the world and came back for comparison only three times, in 1889, 1948 and 1989. Those checks revealed a problem: the prototype and its copies were drifting apart, by roughly **50 micrograms over a century**, and nobody could say which was right. On 20 May 2019 the kilogram was redefined through a fixed value of the Planck constant, which can’t drift or be scratched.",
+  "slides": [
+    {
+      "type": "stat",
+      "value": "~50 μg",
+      "label": "by which the prototype seems to have drifted from its copies in a century",
+      "text": "A tiny amount, but with the kilogram tied to one object there was no way to tell which cylinder had changed."
+    },
+    {
+      "type": "fill",
+      "question": "Le Grand K is a platinum–iridium alloy. Out of 10 parts, how many are platinum?",
+      "icon": "⚪",
+      "total": 10,
+      "answer": 9,
+      "explanation": "9 of 10: the cylinder is 90% platinum and 10% iridium, about 39 mm tall and wide."
+    },
+    {
+      "type": "list",
+      "heading": "Le Grand K",
+      "style": "bullets",
+      "items": [
+        "90% platinum, 10% iridium, about 39 mm tall and wide",
+        "Kept under nested bell jars in a basement vault at the BIPM in Saint-Cloud",
+        "Three keys, held separately, to open the vault",
+        "Compared with its copies only in 1889, 1948 and 1989"
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why a constant",
+      "text": "The metre was already defined by the speed of light. On 16 November 2018 the General Conference on Weights and Measures voted to treat mass the same way: fix the Planck constant at exactly 6.62607015 × 10⁻³⁴ joule-seconds, and a Kibble balance can realise a kilogram anywhere, with no master object to guard."
+    },
+    {
+      "type": "order",
+      "heading": "Earliest first",
+      "items": [
+        "Metre Convention signed",
+        "Cylinder ratified as the kilogram",
+        "Copies compared for the last time",
+        "Planck-constant definition in force"
+      ],
+      "explanation": "1875, 1889, 1989 and 20 May 2019. The last comparison of the copies is what revealed the drift."
+    }
+  ],
+  "tags": [
+    "kilogram",
+    "metrology",
+    "units"
+  ],
+  "source": {
+    "label": "Wikipedia: International Prototype of the Kilogram",
+    "url": "https://en.wikipedia.org/wiki/International_Prototype_of_the_Kilogram"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

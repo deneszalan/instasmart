@@ -1,0 +1,83 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-last-supper-flaking-by-1517",
+  "field": "art",
+  "title": "Leonardo’s Last Supper was already flaking by 1517, because it isn’t a true fresco",
+  "emoji": "🍞",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Cenacolo_Vinciano%2C_Santuario_di_Santa_Maria_delle_Grazie%2C_Milano_%2830787690786%29.jpg/960px-Cenacolo_Vinciano%2C_Santuario_di_Santa_Maria_delle_Grazie%2C_Milano_%2830787690786%29.jpg",
+    "alt": "Detail of Leonardo’s Last Supper on the refectory wall in Milan: Jesus in red and blue at the centre of the table, apostles leaning beside him, the paint worn and patchy.",
+    "credit": "Dimitris Kamaras · CC BY 2.0"
+  },
+  "body": "Leonardo da Vinci painted The Last Supper on the end wall of the dining hall of Santa Maria delle Grazie in Milan between about 1495 and 1498, for the Duke of Milan, Ludovico Sforza. A true fresco is painted onto wet plaster laid fresh each day in sections, which makes it hard to work slowly or change your mind, and Leonardo wanted to do both. So he painted in tempera, normally used on wooden panels, over a wall sealed with gesso, pitch and mastic, and the painting began to deteriorate soon after it was finished. Flaking was noted as early as **1517**, and in 1556 the biographer Giorgio Vasari called it a ‘muddle of blots’.",
+  "slides": [
+    {
+      "type": "place",
+      "question": "Leonardo finished in February 1498. When was the paint first recorded flaking?",
+      "min": 1498,
+      "max": 1700,
+      "step": 1,
+      "answer": 1517,
+      "format": "year",
+      "ends": ["1498", "1700"],
+      "hints": [
+        { "label": "Vasari’s visit", "value": 1556 }
+      ],
+      "explanation": "As early as 1517, less than 20 years after it was completed on 9 February 1498."
+    },
+    {
+      "type": "compare",
+      "heading": "Why it decayed",
+      "left": {
+        "label": "True fresco",
+        "text": "Colours go onto wet plaster laid fresh each day in sections, leaving little room to work slowly or make changes."
+      },
+      "right": {
+        "label": "Leonardo’s way",
+        "text": "Tempera, a panel-painting medium, over a sealed wall, so he could take his time and chase luminous light and shade. It did not last."
+      }
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Cenacolo_Vinciano%2C_Santuario_di_Santa_Maria_delle_Grazie%2C_Milano_%2830824242905%29.jpg/960px-Cenacolo_Vinciano%2C_Santuario_di_Santa_Maria_delle_Grazie%2C_Milano_%2830824242905%29.jpg",
+      "alt": "The whole Last Supper on the refectory wall, under painted lunettes with coats of arms, with the arched outline of a later doorway cut into the wall below the centre of the table.",
+      "caption": "The full wall, about 4.6 by 8.8 m. The arch below the table is a doorway cut through the painting in 1652 and later bricked up.",
+      "fit": "cover",
+      "credit": "Dimitris Kamaras · CC BY 2.0"
+    },
+    {
+      "type": "timeline",
+      "heading": "A hard 500 years",
+      "events": [
+        { "when": "1498", "text": "Completed on 9 February" },
+        { "when": "1652", "text": "A doorway is cut through the bottom" },
+        { "when": "1943", "text": "Allied bombs hit the refectory on 15 August" },
+        { "when": "1978–99", "text": "A 21-year restoration" }
+      ]
+    },
+    {
+      "type": "chart",
+      "heading": "Painting it vs restoring it",
+      "items": [
+        { "label": "Painting it", "value": 3 },
+        { "label": "Restoring it", "value": 21, "emphasis": true }
+      ],
+      "unit": "years",
+      "note": "Leonardo worked on it about 1495–1498; the restoration ran 1978–1999."
+    },
+    {
+      "type": "quiz",
+      "question": "When a bomb hit the refectory in 1943, what kept splinters off the painting?",
+      "options": ["Sandbags", "A steel shutter", "A thick glass screen", "It had been taken down"],
+      "answer": 0,
+      "explanation": "Sandbagging stopped bomb splinters striking it, though the vibration may still have done damage."
+    }
+  ],
+  "tags": ["painting", "leonardo", "milan", "conservation"],
+  "source": {
+    "label": "Wikipedia: The Last Supper (Leonardo)",
+    "url": "https://en.wikipedia.org/wiki/The_Last_Supper_(Leonardo)"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

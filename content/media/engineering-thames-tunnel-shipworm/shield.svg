@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="system-ui, sans-serif">
+  <text x="540" y="92" fill="#fff" font-size="56" font-weight="800" text-anchor="middle">Brunel’s tunnelling shield</text>
+  <text x="540" y="150" fill="#fff" fill-opacity="0.85" font-size="34" text-anchor="middle">Side view: the tunnel grows from left to right</text>
+  <line x1="420" y1="250" x2="740" y2="250" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  <path d="M706,222 L746,250 L706,278" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="580" y="222" fill="#fff" font-size="32" font-weight="700" text-anchor="middle">direction of digging</text>
+  <rect x="720" y="400" width="300" height="340" rx="10" fill="#fff" fill-opacity="0.14"/>
+  <g stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-dasharray="28 16">
+    <line x1="60" y1="420" x2="600" y2="420"/>
+    <line x1="60" y1="720" x2="600" y2="720"/>
+  </g>
+  <rect x="640" y="400" width="80" height="340" rx="8" fill="#fff" fill-opacity="0.92"/>
+  <g stroke="#334155" stroke-width="8">
+    <line x1="640" y1="513" x2="720" y2="513"/>
+    <line x1="640" y1="627" x2="720" y2="627"/>
+  </g>
+  <g stroke="#fde047" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M580,460 L632,460 M608,440 L632,460 L608,480"/>
+    <path d="M580,570 L632,570 M608,550 L632,570 L608,590"/>
+    <path d="M580,680 L632,680 M608,660 L632,680 L608,700"/>
+  </g>
+  <g fill="#fff" font-size="32" font-weight="700" text-anchor="middle">
+    <text x="330" y="380">Brick lining built behind</text>
+    <text x="680" y="380">Shield</text>
+    <text x="870" y="380">Earth to dig</text>
+  </g>
+  <text x="330" y="580" fill="#fff" fill-opacity="0.8" font-size="30" text-anchor="middle">finished tunnel</text>
+  <text x="606" y="790" fill="#fde047" font-size="30" font-weight="700" text-anchor="middle">jackscrews</text>
+  <text x="540" y="900" fill="#fff" font-size="34" font-weight="700" text-anchor="middle">Miners dig a little in each of the shield’s cells,</text>
+  <text x="540" y="948" fill="#fff" font-size="34" font-weight="700" text-anchor="middle">screws push the frame on, bricklayers line the gap</text>
+  <text x="540" y="1020" fill="#fff" fill-opacity="0.75" font-size="30" text-anchor="middle">Three levels of twelve cells, simplified here</text>
+</svg>

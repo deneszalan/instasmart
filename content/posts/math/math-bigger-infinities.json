@@ -22,9 +22,74 @@
       "text": "The new number differs from every listed number in at least one place, so the list was incomplete. That holds for any list anyone could make."
     },
     {
+      "type": "flow",
+      "heading": "Cantor’s diagonal argument in four moves",
+      "steps": [
+        {
+          "icon": "📜",
+          "label": "Suppose every real in (0, 1) is on a list"
+        },
+        {
+          "icon": "↘️",
+          "label": "Read off the diagonal: digit n of number n"
+        },
+        {
+          "icon": "✏️",
+          "label": "Change every digit you took"
+        },
+        {
+          "icon": "❌",
+          "label": "It differs from every entry: no list works"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "An endless ladder",
       "text": "Cantor also showed that the set of all subsets of any set is always bigger than the set itself, so there is no largest infinity."
+    },
+    {
+      "type": "quiz",
+      "question": "Why can’t Cantor’s diagonal number be anywhere on the list?",
+      "options": [
+        "It differs from every entry somewhere",
+        "It is bigger than every number listed",
+        "It has infinitely many digits",
+        "It contains no 0s or 9s"
+      ],
+      "answer": 0,
+      "explanation": "Its nth digit was chosen to differ from the nth digit of the nth number, so it differs from every listed number in at least one place. The list was incomplete."
+    },
+    {
+      "type": "sort",
+      "heading": "Countable or uncountable?",
+      "bins": [
+        "Countable",
+        "Uncountable"
+      ],
+      "items": [
+        {
+          "text": "The even numbers",
+          "bin": 0
+        },
+        {
+          "text": "All fractions",
+          "bin": 0
+        },
+        {
+          "text": "The real numbers",
+          "bin": 1
+        },
+        {
+          "text": "All subsets of the counting numbers",
+          "bin": 1
+        },
+        {
+          "text": "All whole numbers, negatives included",
+          "bin": 0
+        }
+      ],
+      "explanation": "Evens, negatives and even all fractions can be paired off with 1, 2, 3… Cantor showed that the reals, and the set of all subsets of any infinite set, cannot."
     }
   ],
   "tags": [

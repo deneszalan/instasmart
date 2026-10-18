@@ -15,6 +15,8 @@ export interface LearnState {
   activeDays: string[];
   /** Story id → local day it was last watched. */
   storiesViewed: Record<string, string>;
+  /** `${postId}#${slideIndex}` → result of a quiz, guess or ordering puzzle (null when it has no right answer). */
+  challenges: Record<string, { correct: boolean | null; at: number }>;
   settings: { wiki: boolean; theme: Theme };
 }
 
@@ -23,10 +25,13 @@ type Action =
   | { type: 'save'; post: Post }
   | { type: 'seen'; id: string }
   | { type: 'story'; id: string }
+  | { type: 'challenge'; id: string; correct: boolean | null }
   | { type: 'settings'; patch: Partial<LearnState['settings']> }
   | { type: 'reset' };
 
-const STORAGE_KEY = 'instasmart:v1';
+const STORAGE_KEY = 'reckon:v1';
+/** Where progress was saved before the app was renamed; read once, then carried over. */
+const LEGACY_KEY = 'instasmart:v1';
 
 export const initialState: LearnState = {
   liked: {},
@@ -34,6 +39,7 @@ export const initialState: LearnState = {
   seen: {},
   activeDays: [],
   storiesViewed: {},
+  challenges: {},
   settings: { wiki: true, theme: 'system' },
 };
 
@@ -85,6 +91,8 @@ export function reducer(state: LearnState, action: Action): LearnState {
       if (state.storiesViewed[action.id] === today) return state;
       return { ...state, storiesViewed: { ...state.storiesViewed, [action.id]: today } };
     }
+    case 'challenge':
+      return { ...state, challenges: { ...state.challenges, [action.id]: { correct: action.correct, at: Date.now() } } };
     case 'settings':
       return { ...state, settings: { ...state.settings, ...action.patch } };
     case 'reset':
@@ -107,7 +115,7 @@ export function streak(activeDays: readonly string[], today = new Date()): numbe
 
 function load(): LearnState {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(STORAGE_KEY) ?? localStorage.getItem(LEGACY_KEY);
     if (!raw) return initialState;
     const parsed = JSON.parse(raw) as Partial<LearnState>;
     return {
@@ -127,6 +135,7 @@ interface Store {
   toggleSave: (post: Post) => void;
   markSeen: (id: string) => void;
   markStory: (id: string) => void;
+  recordChallenge: (id: string, correct: boolean | null) => void;
   updateSettings: (patch: Partial<LearnState['settings']>) => void;
   reset: () => void;
 }
@@ -152,6 +161,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       toggleSave: (post) => dispatch({ type: 'save', post }),
       markSeen: (id) => dispatch({ type: 'seen', id }),
       markStory: (id) => dispatch({ type: 'story', id }),
+      recordChallenge: (id, correct) => dispatch({ type: 'challenge', id, correct }),
       updateSettings: (patch) => dispatch({ type: 'settings', patch }),
       reset: () => dispatch({ type: 'reset' }),
     }),

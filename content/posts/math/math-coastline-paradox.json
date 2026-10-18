@@ -1,0 +1,93 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-coastline-paradox",
+  "field": "math",
+  "title": "The coast of Britain gets longer the more carefully you measure it",
+  "emoji": "🗺️",
+  "body": "Lewis Fry Richardson noticed that Portugal put its border with Spain at 987 km while Spain said 1,214 km. The two had used different rulers, and **the shorter the ruler, the longer the border** came out, because a small unit follows wiggles a big one steps over. Benoit Mandelbrot’s 1967 paper, How Long Is the Coast of Britain?, turned this into fractal dimension: about 1.25 for the west coast of Great Britain, about 1.02 for South Africa’s smoother coast. Measured in 100 km units, Britain’s coastline is about 2,800 km; in 50 km units, about 3,400 km.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "coastline.svg",
+      "alt": "The same wiggly coastline measured twice: with long ruler segments it comes out shorter, with short ruler segments it comes out longer, because the short segments follow more of the bays and headlands.",
+      "caption": "Shorter rulers follow more wiggles and add up to more coast.",
+      "fit": "contain"
+    },
+    {
+      "type": "estimate",
+      "question": "Spain reported its border with Portugal as 1,214 km. What did Portugal report?",
+      "min": 500,
+      "max": 1500,
+      "step": 1,
+      "answer": 987,
+      "unit": "km",
+      "explanation": "Portugal said 987 km, Spain 1,214 km. Richardson realised the two had measured with rulers of different lengths."
+    },
+    {
+      "type": "place",
+      "question": "If a smooth line scores 1 and a curve that fills a surface scores 2, how wiggly is Britain’s west coast?",
+      "min": 1,
+      "max": 2,
+      "step": 0.01,
+      "answer": 1.25,
+      "ends": [
+        "Smooth line",
+        "Fills a surface"
+      ],
+      "hints": [
+        {
+          "label": "South Africa",
+          "value": 1.02
+        }
+      ],
+      "explanation": "About 1.25, Mandelbrot found; South Africa’s coast scores about 1.02 and a typical lake shore 1.28. He stressed that the fractal is a model, not a claim about real coastlines."
+    },
+    {
+      "type": "text",
+      "heading": "Fractal dimension",
+      "text": "A smooth curve has dimension 1; a curve so wiggly that it nearly fills a surface approaches 2. Mandelbrot put the west coast of Great Britain at about 1.25 and South Africa’s coast at about 1.02. He was careful to note that the paper did not claim real coastlines truly have fractional dimension: the fractal is a model."
+    },
+    {
+      "type": "text",
+      "heading": "Without limit",
+      "text": "In the idealised model, as the measuring unit shrinks toward zero the coastline’s length heads toward infinity. Real measurements have to stop somewhere, but the lesson stands: a coastline has no single, well-defined length, only a length at a given scale."
+    },
+    {
+      "type": "match",
+      "heading": "Match each figure to what it measured",
+      "pairs": [
+        {
+          "left": "987 km",
+          "right": "Portugal’s border figure"
+        },
+        {
+          "left": "1,214 km",
+          "right": "Spain’s border figure"
+        },
+        {
+          "left": "About 1.25",
+          "right": "Britain’s west coast"
+        },
+        {
+          "left": "About 1.02",
+          "right": "South Africa’s coast"
+        }
+      ],
+      "explanation": "The two border figures came from rulers of different lengths; the two decimals are fractal dimensions, higher for a wigglier coast."
+    }
+  ],
+  "tags": [
+    "fractals",
+    "geometry",
+    "measurement"
+  ],
+  "source": {
+    "label": "Wikipedia: Coastline paradox",
+    "url": "https://en.wikipedia.org/wiki/Coastline_paradox"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

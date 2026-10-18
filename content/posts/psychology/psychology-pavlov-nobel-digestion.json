@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "psychology-pavlov-nobel-digestion",
+  "field": "psychology",
+  "title": "Pavlov won his Nobel Prize for digestion, not for making dogs drool",
+  "emoji": "🐕",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Ivan_Pavlov_NLM.jpg/960px-Ivan_Pavlov_NLM.jpg",
+    "alt": "Black-and-white portrait photograph of Ivan Pavlov, an elderly man with a full white beard.",
+    "credit": "Unknown photographer, via U.S. National Library of Medicine · Public domain"
+  },
+  "body": "Ivan Pavlov received the 1904 Nobel Prize in Physiology or Medicine ‘in recognition of his work on the physiology of digestion’: years of careful surgery and measurement of how the stomach and its glands work. The famous drooling came out of that research. Pavlov noticed that his dogs began to salivate when the technician who normally fed them appeared, before any food did. He called the learned response a ‘conditional reflex’, usually rendered in English as ‘conditioned’, and spent the rest of his long life studying it.",
+  "slides": [
+    {
+      "type": "timeline",
+      "heading": "Pavlov’s life",
+      "events": [
+        { "when": "1849", "text": "Born in Ryazan, Russia" },
+        { "when": "1903", "text": "Explains conditioned reflexes at a medical congress in Madrid" },
+        { "when": "1904", "text": "Nobel Prize for the physiology of digestion" },
+        { "when": "1936", "text": "Dies in Leningrad, aged 86" }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "The bell",
+      "left": { "label": "Myth", "text": "Pavlov always rang a bell before feeding his dogs." },
+      "right": { "label": "Fact", "text": "His notes record metronomes, whistles, tuning forks, lights and electric shocks. Whether he ever used a bell is still argued by historians." }
+    },
+    {
+      "type": "flow",
+      "heading": "A conditioned reflex, step by step",
+      "steps": [
+        { "icon": "🍖", "label": "Food alone makes the dog salivate" },
+        { "icon": "🎵", "label": "A metronome ticks before each meal" },
+        { "icon": "🔁", "label": "Repeat the pairing many times" },
+        { "icon": "💧", "label": "The ticking alone now makes the dog drool" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What first tipped Pavlov off that his dogs had learned something?",
+      "options": [
+        "They drooled when the feeder appeared",
+        "They barked at the metronome",
+        "They refused unfamiliar food",
+        "They slept through meals"
+      ],
+      "answer": 0,
+      "explanation": "The dogs salivated at the sight of the technician who normally fed them, before any food arrived. Pavlov turned that observation into a research programme."
+    },
+    {
+      "type": "scramble",
+      "clue": "Pavlov’s own word for the learned reflex, usually translated into English as ‘conditioned’",
+      "answer": "CONDITIONAL",
+      "detail": "Pavlov wrote of the ‘conditional reflex’: one that depends on conditions. English texts settled on ‘conditioned’."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Pavlov_House_Ryazan.JPG/960px-Pavlov_House_Ryazan.JPG",
+      "alt": "A wooden house in Ryazan, Russia, the former home of Ivan Pavlov, now a memorial museum.",
+      "caption": "Pavlov’s former family home in Ryazan, the city where he was born in 1849, is now a memorial museum.",
+      "fit": "cover",
+      "credit": "Ceroi · CC BY-SA 3.0"
+    }
+  ],
+  "tags": ["conditioning", "nobel", "history"],
+  "source": { "label": "Wikipedia: Ivan Pavlov", "url": "https://en.wikipedia.org/wiki/Ivan_Pavlov" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

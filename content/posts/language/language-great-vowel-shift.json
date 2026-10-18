@@ -7,6 +7,12 @@
   "body": "Between roughly 1400 and 1700, the long vowels of English shifted in a chain, each moving to a new position in the mouth. Meanwhile, spelling was starting to settle into fixed forms. The result is a writing system that often records late medieval pronunciation: the letters in ‘bite’, ‘meet’ and ‘name’ once matched their sounds far better than they do today.",
   "slides": [
     {
+      "type": "reveal",
+      "prompt": "Around 1400, what did the English word ‘mouse’ sound like?",
+      "answer": "Much like today’s ‘moose’",
+      "detail": "And ‘bite’ sounded roughly like ‘beet’. Between about 1400 and 1700 the long vowels shifted in a chain, while the spelling stayed put."
+    },
+    {
       "type": "text",
       "heading": "Before the shift",
       "text": "Around 1400, ‘bite’ sounded roughly like today’s ‘beet’, ‘meet’ like a drawn-out ‘met’, and ‘mouse’ much like ‘moose’."
@@ -17,6 +23,28 @@
       "text": "The highest vowels became diphthongs: the ‘ee’ of ‘bite’ turned into ‘eye’ and the ‘oo’ of ‘mouse’ into ‘ow’. Other vowels moved up to fill the gaps."
     },
     {
+      "type": "flow",
+      "heading": "The chain, 1400 to 1700",
+      "steps": [
+        {
+          "icon": "🗣️",
+          "label": "c. 1400: ‘bite’ sounds like ‘beet’"
+        },
+        {
+          "icon": "🔀",
+          "label": "The highest vowels break into diphthongs"
+        },
+        {
+          "icon": "⬆️",
+          "label": "Lower vowels move up to fill the gaps"
+        },
+        {
+          "icon": "✍️",
+          "label": "Spelling settles, so the letters stay put"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "German respelled",
       "text": "German went through a similar change but updated its spelling, so medieval ‘mūs’ became ‘Maus’. English kept its old letters, and they drifted out of step."
@@ -25,6 +53,25 @@
       "type": "text",
       "heading": "The North held out",
       "text": "In Scots and older northern speech, the long ‘oo’ of ‘house’ never shifted, which is why Scots still says ‘hoose’ and ‘oot’."
+    },
+    {
+      "type": "match",
+      "heading": "How did it sound around 1400?",
+      "pairs": [
+        {
+          "left": "bite",
+          "right": "‘beet’"
+        },
+        {
+          "left": "mouse",
+          "right": "‘moose’"
+        },
+        {
+          "left": "meet",
+          "right": "a drawn-out ‘met’"
+        }
+      ],
+      "explanation": "Before the shift the letters matched the sounds far better: ‘bite’ was ‘beet’, ‘mouse’ was ‘moose’ and ‘meet’ a long ‘met’."
     }
   ],
   "tags": [

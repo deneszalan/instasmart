@@ -1,0 +1,60 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-hailstones-grow-in-layers",
+  "field": "earth",
+  "title": "Slice a big hailstone in half and you find rings inside, like an onion",
+  "emoji": "🧊",
+  "body": "A hailstone starts as a tiny frozen droplet inside a thunderstorm, carried upward by winds that can blow at up to **180 km/h**. As it moves through the cloud it keeps collecting ice. Where it passes through lots of supercooled water droplets it gains a layer of clear ice; where there is mostly water vapour, it gains a layer of cloudy white ice. A strong updraft can hold it aloft for at least 30 minutes, so a large stone can build up many alternating shells.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Record_hailstone_Vivian%2C_SD.jpg/960px-Record_hailstone_Vivian%2C_SD.jpg",
+    "alt": "A huge lumpy white hailstone lying on a towel next to a tape measure that shows it is about 20 cm across",
+    "credit": "NWS Aberdeen, SD · Public domain"
+  },
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How wide was the largest hailstone ever officially measured?",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "answer": 20,
+      "unit": "cm",
+      "explanation": "About 20 cm across, with a circumference of 47.3 cm. It fell on Vivian, South Dakota, on 23 July 2010, and it is the stone on the cover."
+    },
+    {
+      "type": "stat",
+      "value": "1.02 kg",
+      "label": "the heaviest hailstone on record",
+      "text": "It fell in Gopalganj District, Bangladesh, on 14 April 1986."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Hagelkorn_mit_Anlagerungsschichten.jpg/960px-Hagelkorn_mit_Anlagerungsschichten.jpg",
+      "alt": "A hailstone cut in half on a wooden board, showing rings of clear and milky white ice around a white core",
+      "caption": "A hailstone cut open. Each ring is a layer of ice it picked up on its way through the storm cloud.",
+      "fit": "cover",
+      "credit": "ERZ · CC BY-SA 3.0"
+    },
+    {
+      "type": "chart",
+      "heading": "How fast hailstones fall",
+      "unit": "m/s",
+      "items": [
+        { "label": "1 cm hailstone", "value": 9 },
+        { "label": "8 cm hailstone", "value": 48, "emphasis": true }
+      ],
+      "note": "Estimates: real speeds vary with shape, wind, collisions and melting"
+    },
+    {
+      "type": "quiz",
+      "question": "What gives a growing hailstone a layer of clear ice?",
+      "options": ["Lots of water droplets", "Mostly water vapour", "A lightning strike", "Dust in the cloud"],
+      "answer": 0,
+      "explanation": "Water droplets freeze onto the stone as clear ice. Where there is mostly water vapour instead, the new layer is opaque and white."
+    }
+  ],
+  "tags": ["hail", "weather", "storms", "ice"],
+  "source": { "label": "Wikipedia: Hail", "url": "https://en.wikipedia.org/wiki/Hail" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

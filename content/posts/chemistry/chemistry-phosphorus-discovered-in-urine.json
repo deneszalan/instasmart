@@ -1,0 +1,88 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-phosphorus-discovered-in-urine",
+  "field": "chemistry",
+  "title": "Phosphorus was discovered by an alchemist boiling urine",
+  "emoji": "🧪",
+  "body": "In 1669 the Hamburg alchemist Hennig Brand was hunting for the philosopher’s stone, the legendary substance that would turn base metals into gold. He experimented with urine, which contains plenty of dissolved phosphates, and after much heating obtained a waxy white substance that **glowed in the dark**. He had found phosphorus, the first element discovered since antiquity. The name means ‘light-bearer’ in Greek, after the morning star; the glow is not phosphorescence at all but chemiluminescence, light given off as white phosphorus slowly reacts with the air.",
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "Brand’s recipe, 1669",
+      "steps": [
+        {
+          "icon": "🧪",
+          "label": "Let urine stand, then boil it to a paste"
+        },
+        {
+          "icon": "🔥",
+          "label": "Distil the paste at a high temperature"
+        },
+        {
+          "icon": "💧",
+          "label": "Lead the vapours through water"
+        },
+        {
+          "icon": "✨",
+          "label": "A waxy white solid that glows in the dark"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Light-bearer",
+      "text": "Phosphorus comes from the Greek phōsphoros, ‘light-bearer’, a name for the morning star, the planet Venus shining before sunrise. Exposed to air, white phosphorus faintly glows green and blue as it oxidises."
+    },
+    {
+      "type": "compare",
+      "heading": "Glow in the dark",
+      "left": {
+        "label": "Phosphorescence",
+        "text": "Stored light released slowly, like glow-in-the-dark stars. Named after phosphorus, but not what phosphorus does."
+      },
+      "right": {
+        "label": "Chemiluminescence",
+        "text": "Light made by a chemical reaction. White phosphorus glows because it is slowly reacting with the air."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Why urine",
+      "text": "Phosphorus is in every cell: in DNA, RNA, ATP and the phospholipids of cell membranes, and bone mineral is a form of calcium phosphate. The body sheds phosphates in urine, so Brand’s unappealing raw material was a decent source."
+    },
+    {
+      "type": "fill",
+      "question": "Your body holds about 0.7 kg of phosphorus. Out of every 10 grams, how many are in your bones and teeth?",
+      "icon": "🦴",
+      "total": 10,
+      "answer": 9,
+      "explanation": "About 85 to 90%, as apatite, the calcium phosphate mineral of bone and tooth enamel. The rest is spread through soft tissues and body fluids, in DNA, ATP and cell membranes."
+    },
+    {
+      "type": "quiz",
+      "question": "What was Hennig Brand actually trying to make?",
+      "options": [
+        "Gunpowder",
+        "The philosopher’s stone",
+        "Fertiliser",
+        "Matches"
+      ],
+      "answer": 1,
+      "explanation": "He hoped to turn base metals into gold and worked with urine, which is rich in dissolved phosphates. Instead he isolated a glowing new element."
+    }
+  ],
+  "tags": [
+    "phosphorus",
+    "alchemy",
+    "elements"
+  ],
+  "source": {
+    "label": "Wikipedia: Phosphorus",
+    "url": "https://en.wikipedia.org/wiki/Phosphorus"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

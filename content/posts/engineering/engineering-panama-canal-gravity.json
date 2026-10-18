@@ -5,6 +5,60 @@
   "title": "The Panama Canal lifts ships 26 metres without a single pump",
   "emoji": "🚢",
   "body": "Ships crossing Panama are raised about 26 metres to Gatun Lake, an artificial lake made by damming the Chagres River, then lowered again on the other side. The original locks need no pumps: valves open and lake water flows downhill through large tunnels into each chamber, lifting the ship. The catch is that each transit sends roughly 200 million litres of fresh water out to sea, so droughts can force limits on traffic.",
+  "slides": [
+    {
+      "type": "scale",
+      "heading": "Fresh water one transit sends to sea, next to an Olympic pool",
+      "items": [
+        {
+          "label": "Olympic pool",
+          "value": 2.5
+        },
+        {
+          "label": "One transit",
+          "value": 200,
+          "emphasis": true
+        }
+      ],
+      "unit": "million litres",
+      "note": "An Olympic pool holds about 2.5 million litres; each transit uses roughly 200 million"
+    },
+    {
+      "type": "quiz",
+      "question": "What is the catch with the canal’s gravity-fed locks?",
+      "options": [
+        "Each transit drains lake water to sea",
+        "Ships can only travel downhill",
+        "The locks work only at high tide",
+        "Pumps must refill the lake at night"
+      ],
+      "answer": 0,
+      "explanation": "Every transit sends roughly 200 million litres of fresh water from Gatun Lake out to sea, so droughts can force limits on traffic."
+    },
+    {
+      "type": "match",
+      "heading": "Match the part to its role",
+      "pairs": [
+        {
+          "left": "Gatun Lake",
+          "right": "Artificial lake, 26 m up"
+        },
+        {
+          "left": "Chagres River",
+          "right": "Dammed to make the lake"
+        },
+        {
+          "left": "Lock valves",
+          "right": "Let lake water flow downhill"
+        },
+        {
+          "left": "Each transit",
+          "right": "Costs 200 million litres"
+        }
+      ],
+      "explanation": "Valves open and lake water pours into each chamber by gravity, so no pumps are needed, but every transit sends fresh water out to sea."
+    }
+  ],
   "tags": [
     "canals",
     "panama",

@@ -1,0 +1,91 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-qr-code-error-correction",
+  "field": "tech",
+  "title": "A damaged QR code can still tell you what it says",
+  "emoji": "📱",
+  "body": "A QR code includes **extra mathematical information** that can help a scanner reconstruct damaged data. This technique, called Reed–Solomon error correction, gives the scanner a way to recover missing or incorrect pieces instead of simply guessing. QR codes offer four correction levels, trading extra redundancy for space. Damage can still make a code unreadable, so recovery is never guaranteed.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Built-in repair information",
+      "text": "The code stores data plus extra information calculated from it. A decoder uses the relationships between those pieces to detect and correct some errors."
+    },
+    {
+      "type": "compare",
+      "heading": "A space-versus-repair tradeoff",
+      "left": {
+        "label": "Less correction",
+        "text": "Less space is used for redundancy, leaving more room for the message."
+      },
+      "right": {
+        "label": "More correction",
+        "text": "More space goes to repair information, helping the code tolerate more damage."
+      }
+    },
+    {
+      "type": "fill",
+      "question": "At the highest correction level, out of 10 pieces of a QR code’s data, how many can be lost and still recovered?",
+      "icon": "🟦",
+      "total": 10,
+      "answer": 3,
+      "explanation": "About 3 in 10: level H restores roughly 30% of the codewords, Q 25%, M 15% and L 7%. The more space goes to repair data, the less is left for the message."
+    },
+    {
+      "type": "chart",
+      "heading": "Share of a QR code that can be restored, by correction level",
+      "items": [
+        {
+          "label": "Level L (low)",
+          "value": 7
+        },
+        {
+          "label": "Level M (medium)",
+          "value": 15
+        },
+        {
+          "label": "Level Q (quartile)",
+          "value": 25
+        },
+        {
+          "label": "Level H (high)",
+          "value": 30,
+          "emphasis": true
+        }
+      ],
+      "unit": "%",
+      "note": "Approximate share of codewords that can be recovered. Higher levels leave less room for the data."
+    },
+    {
+      "type": "text",
+      "heading": "Why a scratch may be harmless",
+      "text": "A scratch can destroy some encoded data while leaving enough information to reconstruct it. Too much damage, or trouble locating the code, can still prevent a scan."
+    },
+    {
+      "type": "quiz",
+      "question": "What is the trade-off of choosing a higher correction level?",
+      "options": [
+        "Less room for the message",
+        "It must be printed larger",
+        "Scanning takes longer",
+        "It needs a special app"
+      ],
+      "answer": 0,
+      "explanation": "More of the code goes to repair information, so it tolerates more damage but has less space for the data itself. QR codes offer four such levels."
+    }
+  ],
+  "tags": [
+    "qrcodes",
+    "computing",
+    "errorcorrection"
+  ],
+  "source": {
+    "label": "DENSO WAVE: QR Code Error Correction Feature",
+    "url": "https://www.qrcode.com/en/about/error_correction.html"
+  },
+  "author": {
+    "name": "ChatGPT",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

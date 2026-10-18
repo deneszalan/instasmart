@@ -1,0 +1,95 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-ukulele-portuguese",
+  "field": "music",
+  "title": "The ukulele descends from Portuguese instruments that reached Hawaii by ship in 1879",
+  "emoji": "🎸",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Clearwater_Vita_soprano_ukulele_%282014-05-14_14.34.26_by_Lardy_Fatboy%29.jpg/960px-Clearwater_Vita_soprano_ukulele_%282014-05-14_14.34.26_by_Lardy_Fatboy%29.jpg",
+    "alt": "A soprano ukulele lying on its side: a small guitar-shaped wooden body with a round sound hole, a short fretted neck and four strings.",
+    "credit": "Lardy Fatboy · CC BY 2.0"
+  },
+  "body": "Hawaii’s signature instrument began as the machete, cavaquinho and rajão, small guitar-like instruments from Madeira, the Azores and Cape Verde. Portuguese immigrants carried them to the islands, and three Madeiran cabinet makers who landed from the SS *Ravenscrag* in late August 1879, Manuel Nunes, José do Espírito Santo and Augusto Dias, are generally credited as the first ukulele makers. King Kalākaua championed the new instrument at royal gatherings, and the Hawaiian Pavilion at the 1915 Panama–Pacific International Exposition in San Francisco spread it across the US mainland. Its name roughly means ‘jumping flea’ in Hawaiian, perhaps for the way a player’s fingers hop about.",
+  "slides": [
+    {
+      "type": "rank",
+      "heading": "Typical length of the four sizes",
+      "items": [
+        {
+          "label": "Baritone",
+          "value": 74
+        },
+        {
+          "label": "Tenor",
+          "value": 66
+        },
+        {
+          "label": "Concert",
+          "value": 58
+        },
+        {
+          "label": "Soprano",
+          "value": 53
+        }
+      ],
+      "unit": "cm",
+      "explanation": "Baritone 74 cm, tenor 66, concert 58 and soprano 53. The soprano is the classic size."
+    },
+    {
+      "type": "text",
+      "heading": "Four strings, one of them high",
+      "text": "Most ukuleles have four nylon strings tuned G–C–E–A. The standard tuning is ‘re-entrant’: the G string nearest the player’s thumb is pitched an octave higher than you might expect, above the C and E beside it. The traditionally preferred wood is koa, an acacia found only in Hawaii."
+    },
+    {
+      "type": "scramble",
+      "clue": "The small Madeiran instrument the ukulele grew out of (7 letters)",
+      "answer": "MACHETE",
+      "detail": "A small guitar-like instrument from Madeira; the cavaquinho and the rajão were its cousins."
+    },
+    {
+      "type": "timeline",
+      "events": [
+        {
+          "when": "1879",
+          "text": "Madeirans land from the Ravenscrag"
+        },
+        {
+          "when": "1880s",
+          "text": "The ukulele takes shape in Hawaii"
+        },
+        {
+          "when": "1915",
+          "text": "San Francisco exposition craze"
+        },
+        {
+          "when": "1985",
+          "text": "Ukulele Orchestra of GB forms"
+        },
+        {
+          "when": "1993",
+          "text": "Kamakawiwoʻole’s famous medley"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Jumping flea",
+      "text": "In Hawaiian the name roughly translates as ‘jumping flea’, perhaps from the movement of the player’s fingers. One legend credits the nickname to Edward William Purvis, a small, fidgety officer at King Kalākaua’s court who played well. The instrument faded in the rock-and-roll 1960s and revived from the late 80s."
+    }
+  ],
+  "tags": [
+    "hawaii",
+    "ukulele",
+    "instruments",
+    "portugal"
+  ],
+  "source": {
+    "label": "Wikipedia: Ukulele",
+    "url": "https://en.wikipedia.org/wiki/Ukulele"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

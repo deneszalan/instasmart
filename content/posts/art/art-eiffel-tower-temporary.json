@@ -5,6 +5,42 @@
   "title": "The Eiffel Tower was supposed to be taken down in 1909",
   "emoji": "🗼",
   "body": "Built for the 1889 Exposition Universelle, the tower had a 20-year permit, after which it was due to pass to the City of Paris and be dismantled. Leading artists and writers had protested against it, including Guy de Maupassant, who supposedly lunched in its restaurant because it was the one place in Paris where he could not see it. It was saved by science: the tower made an ideal antenna for the new wireless telegraphy.",
+  "slides": [
+    {
+      "type": "rank",
+      "heading": "Three holders of the world height record, in metres",
+      "items": [
+        {
+          "label": "Washington Monument",
+          "value": 169
+        },
+        {
+          "label": "Eiffel Tower",
+          "value": 300,
+          "emphasis": true
+        },
+        {
+          "label": "Chrysler Building",
+          "value": 319
+        }
+      ],
+      "unit": "m",
+      "note": "The Eiffel Tower held the title for 41 years. With its aerials it now stands 330 m tall.",
+      "explanation": "Washington Monument 169 m (1884), Eiffel Tower 300 m (1889), Chrysler Building 319 m (1930): each took the record from the one before."
+    },
+    {
+      "type": "quiz",
+      "question": "What saved the Eiffel Tower when its 20-year permit ran out?",
+      "options": [
+        "Its value as a radio antenna",
+        "A vote by the people of Paris",
+        "Income from tourist tickets",
+        "A petition by leading artists"
+      ],
+      "answer": 0,
+      "explanation": "The tower made an ideal antenna for the new wireless telegraphy. Leading artists and writers had actually protested against it."
+    }
+  ],
   "tags": [
     "art",
     "architecture",

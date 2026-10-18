@@ -12,6 +12,7 @@ export interface AuthorGroup {
 const KNOWN_AI: (AuthorGroup & { match: RegExp })[] = [
   { id: 'claude', label: 'Claude', match: /\bclaude\b/i },
   { id: 'chatgpt', label: 'ChatGPT', match: /chat\s*-?\s*gpt|\bgpt-?\d/i },
+  { id: 'fable', label: 'Fable', match: /\bfable\b/i },
 ];
 
 const OTHER_AI: AuthorGroup = { id: 'ai', label: 'Other AI' };

@@ -1,0 +1,83 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-dijkstra-twenty-minutes",
+  "field": "tech",
+  "title": "Dijkstra’s shortest-path algorithm was designed in about 20 minutes at a café",
+  "emoji": "☕",
+  "body": "In 1956 Edsger Dijkstra, a programmer at the Mathematical Center in Amsterdam, wanted a demonstration for its new ARMAC computer that non-computing people could understand, and chose the shortest route between two Dutch cities. One morning, resting at a café terrace with his fiancée, he worked out the method in his head, **without pencil and paper**, which he later said forced him to avoid every avoidable complexity. He published it in 1959. Today it is the working principle behind link-state routing protocols such as OSPF, which steer traffic across the internet.",
+  "slides": [
+    {
+      "type": "quote",
+      "text": "One of the reasons that it is so nice was that I designed it without pencil and paper. I learned later that one of the advantages of designing without pencil and paper is that you are almost forced to avoid all avoidable complexities.",
+      "attribution": "Edsger W. Dijkstra, in an interview"
+    },
+    {
+      "type": "list",
+      "heading": "How it works",
+      "style": "steps",
+      "items": [
+        "Give the start a distance of 0 and every other node infinity",
+        "Visit the unvisited node with the smallest known distance",
+        "If going through it shortens a neighbour’s distance, update it",
+        "Repeat until the destination is settled"
+      ]
+    },
+    {
+      "type": "estimate",
+      "question": "How many Dutch cities were on the map Dijkstra used to show it off on ARMAC?",
+      "min": 10,
+      "max": 200,
+      "step": 1,
+      "answer": 64,
+      "unit": "cities",
+      "explanation": "He capped the map at 64 cities so that a city number would fit in 6 bits."
+    },
+    {
+      "type": "stat",
+      "value": "64",
+      "label": "cities on the simplified map of the Netherlands that ARMAC first solved",
+      "text": "Six bits were enough to encode each city number. The same idea now routes packets across the internet and finds roads on maps."
+    },
+    {
+      "type": "match",
+      "heading": "Match each name or number to its part in the story",
+      "pairs": [
+        {
+          "left": "ARMAC",
+          "right": "Computer that first ran it"
+        },
+        {
+          "left": "OSPF",
+          "right": "Internet routing protocol"
+        },
+        {
+          "left": "Mathematical Center",
+          "right": "His Amsterdam employer"
+        },
+        {
+          "left": "64",
+          "right": "Cities on the demo map"
+        },
+        {
+          "left": "1959",
+          "right": "Year it was published"
+        }
+      ],
+      "explanation": "Designed in 1956 for an ARMAC demo of 64 Dutch cities, published in 1959, and now at the heart of link-state routing such as OSPF."
+    }
+  ],
+  "tags": [
+    "algorithms",
+    "dijkstra",
+    "graphs"
+  ],
+  "source": {
+    "label": "Wikipedia: Dijkstra's algorithm",
+    "url": "https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

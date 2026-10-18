@@ -1,0 +1,64 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-sailing-stones-racetrack-playa",
+  "field": "earth",
+  "title": "Death Valley's ‘sailing stones’ really do move, and in 2013 cameras finally caught them",
+  "emoji": "🧊",
+  "body": "On Racetrack Playa, a dry lakebed in Death Valley, California, rocks weighing up to 36 kg sit at the ends of trails up to 100 m long, as if they had crawled across the mud. For decades the cause was argued over: strong winds, thick ice floes, slick mud. In **December 2013** a team using GPS-tagged rocks and time-lapse cameras finally saw it happen. A shallow winter pond froze into ice only a few millimetres thick; on sunny mornings the ice broke into large panels, and light winds pushed them across the water, shoving rocks along at up to 5 m a minute and carving the trails. The right mix of rain, frost, sun and wind is rare, which is why the moves had gone unseen.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Racetrack_Playa_in_Death_Valley_National_Park.jpg/960px-Racetrack_Playa_in_Death_Valley_National_Park.jpg",
+    "alt": "A grey boulder on the cracked flat surface of Racetrack Playa, with a long curving trail behind it leading toward distant mountains",
+    "credit": "Lgcharlot · CC BY-SA 4.0"
+  },
+  "slides": [
+    {
+      "type": "order",
+      "heading": "How a stone sails, in order",
+      "items": [
+        "Rain makes a shallow pond on the playa",
+        "Night frost freezes a thin ice sheet",
+        "Morning sun breaks the ice into panels",
+        "Wind pushes the panels into the rocks",
+        "Rocks slide, carving trails in the mud"
+      ],
+      "explanation": "Observed in December 2013: ice a few millimetres thick, broken up by the sun and driven by light wind, shoved rocks along at up to 5 m per minute."
+    },
+    {
+      "type": "chart",
+      "heading": "Record moves on Racetrack Playa",
+      "unit": "m",
+      "items": [
+        { "label": "Dec 2013–Jan 2014, up to", "value": 224, "emphasis": true },
+        { "label": "Nancy, in one winter", "value": 201 },
+        { "label": "Karen's old track, about", "value": 170 },
+        { "label": "A typical trail, up to", "value": 100 }
+      ],
+      "note": "Nancy, the smallest monitored stone at 6.4 cm across, moved 260 m in total"
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Death_8_bg_082303.jpg/960px-Death_8_bg_082303.jpg",
+      "alt": "A small dark rock at the end of a long furrow that zigzags across the pale, cracked lakebed of Racetrack Playa",
+      "caption": "Trails are usually 8 to 30 cm wide and much less than 2.5 cm deep. Movement needs a rare combination of flooding, freezing, sunshine and wind.",
+      "fit": "cover",
+      "credit": "Jon Sullivan · Public domain"
+    },
+    {
+      "type": "quiz",
+      "question": "How thick was the ice that moved the rocks in 2013?",
+      "options": ["A few millimetres", "About half a metre", "Several metres"],
+      "answer": 0,
+      "explanation": "Thin floating ice sheets only a few millimetres thick, broken into panels by the morning sun and pushed by light winds, did the job that thick ice floes and gales had been blamed for."
+    },
+    {
+      "type": "stat",
+      "value": "36 kg",
+      "label": "the heaviest stone seen to move",
+      "text": "Most moving stones are 15 to 46 cm across. Karen, a 320 kg block, stayed put during the monitoring, though its old track runs about 170 m."
+    }
+  ],
+  "tags": ["deathvalley", "rocks", "ice", "geology"],
+  "source": { "label": "Wikipedia: Sailing stones", "url": "https://en.wikipedia.org/wiki/Sailing_stones" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

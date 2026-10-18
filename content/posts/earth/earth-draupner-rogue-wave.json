@@ -5,6 +5,45 @@
   "title": "Giant rogue waves were doubted until a sensor caught one in 1995",
   "emoji": "🌊",
   "body": "For centuries sailors described walls of water appearing out of nowhere, and many scientists doubted them, because standard wave models said such giants should be almost impossibly rare. On 1 January 1995, instruments on the Draupner gas platform in the North Sea recorded a wave 25.6 m high, while the waves around it were about 12 m. It was the first rogue wave ever measured by an instrument, and it pushed oceanographers to rethink how waves combine.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How tall was the rogue wave recorded at the Draupner platform?",
+      "min": 0,
+      "max": 40,
+      "step": 0.1,
+      "answer": 25.6,
+      "unit": "m",
+      "explanation": "25.6 m, while the waves around it were about 12 m. Measured on 1 January 1995 in the North Sea, it was the first rogue wave ever caught by an instrument."
+    },
+    {
+      "type": "chart",
+      "heading": "Wave heights at the Draupner platform, 1 January 1995",
+      "unit": "m",
+      "items": [
+        {
+          "label": "Typical waves that day",
+          "value": 12
+        },
+        {
+          "label": "Its crest above still water",
+          "value": 18.5
+        },
+        {
+          "label": "The Draupner wave",
+          "value": 25.6,
+          "emphasis": true
+        }
+      ],
+      "note": "Wave height is trough to crest; ‘typical’ is the significant wave height at the time."
+    },
+    {
+      "type": "scramble",
+      "clue": "The North Sea gas platform whose instruments recorded the wave on New Year’s Day 1995",
+      "answer": "DRAUPNER",
+      "detail": "The platform stands about 160 km south-west of the southern tip of Norway. Its wave sensor caught the 25.6 m wave."
+    }
+  ],
   "tags": [
     "ocean",
     "waves",

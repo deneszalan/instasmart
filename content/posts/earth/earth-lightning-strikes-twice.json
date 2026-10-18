@@ -7,14 +7,50 @@
   "body": "The saying that lightning never strikes the same place twice is a myth. Lightning tends to hit whatever offers the easiest path to the ground, usually the tallest or most exposed object around, and that doesn’t change after a strike. Across the planet there are about 44 lightning flashes every second, close to 1.4 billion a year, so repeat hits on towers, trees and mountaintops are routine.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "How many times a year is the Empire State Building struck by lightning, on average?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 23,
+      "unit": "strikes",
+      "explanation": "About 23 times a year. Lightning takes the easiest path to the ground, usually the tallest object around, and a strike does nothing to change that."
+    },
+    {
       "type": "text",
       "heading": "Tall targets get hit",
       "text": "The Empire State Building in New York is struck by lightning about 23 times a year on average."
     },
     {
       "type": "text",
-      "heading": "Hotter than the Sun",
-      "text": "A bolt heats the air around it to about 30,000 °C, roughly five times hotter than the Sun’s surface. The air expands explosively, and that’s thunder."
+      "heading": "Why thunder booms",
+      "text": "A bolt heats the air in its channel in a split second. The air expands explosively, and the shock wave it sends out is what we hear as thunder."
+    },
+    {
+      "type": "higher",
+      "heading": "How hot is lightning, next to the Sun and molten rock?",
+      "items": [
+        {
+          "label": "Surface of the Sun",
+          "value": 5500
+        },
+        {
+          "label": "Iron melts",
+          "value": 1538
+        },
+        {
+          "label": "Basalt lava",
+          "value": 1200
+        },
+        {
+          "label": "Air in a lightning channel",
+          "value": 30000,
+          "emphasis": true
+        }
+      ],
+      "unit": "°C",
+      "note": "Approximate figures. The Sun’s core is far hotter, at about 15 million °C.",
+      "explanation": "About 30,000 °C in the channel, roughly five times the Sun’s surface. Molten iron and basalt lava, at 1,538 °C and about 1,200 °C, are cool by comparison."
     },
     {
       "type": "text",

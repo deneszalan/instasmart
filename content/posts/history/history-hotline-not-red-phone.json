@@ -5,6 +5,81 @@
   "title": "The Cold War ‘red telephone’ was never a telephone",
   "emoji": "📠",
   "body": "After the 1962 Cuban Missile Crisis exposed how slowly messages moved between the superpowers, the US and the Soviet Union opened a direct link in 1963. It carried text only, on teleprinters, because speech might be misinterpreted. It moved to fax in 1986 and to a secure computer link in 2008. The first test message was a pangram: ‘THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG’S BACK 1234567890’.",
+  "slides": [
+    {
+      "type": "spectrum",
+      "heading": "The hotline’s technology over the years",
+      "min": 1960,
+      "max": 2010,
+      "format": "year",
+      "ends": [
+        "Earlier",
+        "Later"
+      ],
+      "marks": [
+        {
+          "label": "Cuban Missile Crisis",
+          "value": 1962
+        },
+        {
+          "label": "Teleprinter link opens",
+          "value": 1963,
+          "emphasis": true
+        },
+        {
+          "label": "Fax replaces teleprinters",
+          "value": 1986
+        },
+        {
+          "label": "Secure computer link",
+          "value": 2008
+        }
+      ],
+      "note": "Text at every stage: no voice line, and no red telephone."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did the 1963 hotline carry text rather than voice?",
+      "options": [
+        "Speech might be misinterpreted",
+        "Phone lines could not reach Moscow",
+        "Voice calls were easier to tap"
+      ],
+      "answer": 0,
+      "explanation": "It used teleprinters because spoken words might be misinterpreted. The link moved to fax in 1986 and to a secure computer link in 2008."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "It was a red telephone on the president’s desk",
+          "bin": 1
+        },
+        {
+          "text": "Its first messages were typed on teleprinters",
+          "bin": 0
+        },
+        {
+          "text": "Leaders could speak to each other by voice over it",
+          "bin": 1
+        },
+        {
+          "text": "The US end was in the Pentagon, not the White House",
+          "bin": 0
+        },
+        {
+          "text": "It switched to fax in 1986",
+          "bin": 0
+        }
+      ],
+      "explanation": "The link has never carried voice: teleprinters, then fax, then a secure computer link. Its US terminal is in the Pentagon’s National Military Command Center."
+    }
+  ],
   "tags": [
     "history",
     "coldwar",

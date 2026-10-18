@@ -12,6 +12,17 @@
       "text": "He called the missing elements eka-aluminium, eka-boron and eka-silicon, using the Sanskrit word for “one” to mean one place below a known element."
     },
     {
+      "type": "order",
+      "heading": "Earliest first",
+      "items": [
+        "Mendeleev publishes his table",
+        "Gallium is discovered",
+        "Scandium is discovered",
+        "Germanium is discovered"
+      ],
+      "explanation": "The table came in 1869. Gallium turned up in 1875, scandium in 1879 and germanium in 1886, each matching Mendeleev’s forecasts closely."
+    },
+    {
       "type": "text",
       "heading": "Gallium, 1875",
       "text": "Gallium’s discoverer measured its density as 4.7 g/cm³. Mendeleev wrote suggesting he remeasure. The new value was 5.9, exactly as predicted."
@@ -20,6 +31,60 @@
       "type": "text",
       "heading": "Scandium and germanium",
       "text": "Scandium (1879) matched eka-boron’s predicted atomic mass of 44, and germanium (1886) closely matched eka-silicon."
+    },
+    {
+      "type": "chart",
+      "heading": "Atomic mass: Mendeleev’s prediction next to the element found",
+      "unit": "u",
+      "items": [
+        {
+          "label": "Eka-aluminium (predicted)",
+          "value": 68
+        },
+        {
+          "label": "Gallium (found 1875)",
+          "value": 69.72,
+          "emphasis": true
+        },
+        {
+          "label": "Eka-boron (predicted)",
+          "value": 44
+        },
+        {
+          "label": "Scandium (found 1879)",
+          "value": 44.96,
+          "emphasis": true
+        },
+        {
+          "label": "Eka-silicon (predicted)",
+          "value": 72
+        },
+        {
+          "label": "Germanium (found 1886)",
+          "value": 72.63,
+          "emphasis": true
+        }
+      ],
+      "note": "Atomic mass in daltons (u). Each real element landed within about 2 units of the forecast."
+    },
+    {
+      "type": "match",
+      "heading": "Match the placeholder to the element it became",
+      "pairs": [
+        {
+          "left": "Eka-aluminium",
+          "right": "Gallium"
+        },
+        {
+          "left": "Eka-boron",
+          "right": "Scandium"
+        },
+        {
+          "left": "Eka-silicon",
+          "right": "Germanium"
+        }
+      ],
+      "explanation": "Eka means ‘one’ in Sanskrit: one place below aluminium, boron and silicon in the table. Gallium came in 1875, scandium in 1879, germanium in 1886."
     }
   ],
   "tags": [

@@ -1,0 +1,70 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-mantis-shrimp-punch",
+  "field": "biology",
+  "title": "The mantis shrimp's punch is so fast it makes bubbles of vapour that flash with light",
+  "emoji": "🦐",
+  "body": "The peacock mantis shrimp swings its club-like forelimbs at about **23 m/s** from a standing start, with an acceleration of around 10,400 g, and the blow lands with instantaneous forces of about 1,500 newtons. It moves so fast that the water beside the club vaporises into cavitation bubbles. When those bubbles collapse they deliver a second hit to the prey and even emit tiny flashes of light, a phenomenon called sonoluminescence. The same animal has some of the most elaborate eyes known, with 12 to 16 types of photoreceptor cell, compared with four in humans.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/OdontodactylusScyllarus2.jpg/960px-OdontodactylusScyllarus2.jpg",
+    "alt": "A red and blue peacock mantis shrimp standing on gravel, its stalked eyes raised and its club-like forelimbs folded under its head",
+    "credit": "Roy L. Caldwell, UC Berkeley · Public domain"
+  },
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How fast does the peacock mantis shrimp's club move, from a standing start?",
+      "min": 0,
+      "max": 150,
+      "step": 1,
+      "answer": 83,
+      "unit": "km/h",
+      "explanation": "About 23 m/s, or 83 km/h, with an acceleration of around 10,400 g. One species, Gonodactylus smithii, has been clocked even faster, at about 110 km/h."
+    },
+    {
+      "type": "flow",
+      "heading": "One punch, two hits",
+      "steps": [
+        { "icon": "🥊", "label": "The club strikes at about 23 m/s" },
+        { "icon": "💧", "label": "Water beside it vaporises into bubbles" },
+        { "icon": "💥", "label": "The bubbles collapse and hit the prey again" },
+        { "icon": "✨", "label": "The collapse emits tiny flashes of light" }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Odontodactylus_scyllarus_eyes.jpg/960px-Odontodactylus_scyllarus_eyes.jpg",
+      "alt": "Close-up of a peacock mantis shrimp's two stalked compound eyes, each with a horizontal band of specialised facets across its middle",
+      "caption": "Each eye carries a band of specialised rows across its middle. Mantis shrimp see from deep ultraviolet to far red, and a few species can detect circularly polarised light.",
+      "fit": "cover",
+      "credit": "Cédric Peneau · CC BY-SA 4.0"
+    },
+    {
+      "type": "chart",
+      "heading": "Types of photoreceptor cell in the eye",
+      "unit": "types",
+      "items": [
+        { "label": "Human", "value": 4 },
+        { "label": "Some mantis shrimp", "value": 16, "emphasis": true }
+      ],
+      "note": "Humans use three of their four types for colour; mantis shrimp have 12 to 16 types"
+    },
+    {
+      "type": "quiz",
+      "question": "Why does a mantis shrimp's punch hit its prey twice?",
+      "options": ["Collapsing vapour bubbles strike again", "It always punches with both clubs", "The prey bounces back off its shell"],
+      "answer": 0,
+      "explanation": "The club moves so fast that water vaporises into cavitation bubbles. When they collapse they deliver a second, measurable blow, and even a missed strike can stun prey with the shock wave."
+    },
+    {
+      "type": "stat",
+      "value": "520+",
+      "label": "living species of mantis shrimp",
+      "text": "Most are around 10 cm long, but the zebra mantis shrimp reaches 38 cm. They are stomatopods, an order of crustaceans separate from true shrimp."
+    }
+  ],
+  "tags": ["mantisshrimp", "crustaceans", "vision", "ocean"],
+  "source": { "label": "Wikipedia: Mantis shrimp", "url": "https://en.wikipedia.org/wiki/Mantis_shrimp" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

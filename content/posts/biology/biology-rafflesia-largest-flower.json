@@ -1,0 +1,56 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-rafflesia-largest-flower",
+  "field": "biology",
+  "title": "The world's largest single flower grows on a plant with no leaves, stem or roots",
+  "emoji": "🌺",
+  "body": "*Rafflesia arnoldii*, from the rainforests of Sumatra and Borneo, opens a flower about **1 m across**. The rest of the plant has no leaves, stem or roots, and no chlorophyll, so it cannot make its own food. It lives as a parasite hidden inside the tissue of *Tetrastigma* vines, feeding entirely on its host, and can be seen only when a bud breaks out ready to flower. The open bloom smells of rotting flesh, which draws in the flies that pollinate it.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Rafflesia_arnoldii%2C_Sumatra.jpg/960px-Rafflesia_arnoldii%2C_Sumatra.jpg",
+    "alt": "A huge red Rafflesia arnoldii flower with five thick white-spotted petals and a deep central cup, lying on the forest floor",
+    "credit": "LukeTriton · CC BY-SA 4.0"
+  },
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How heavy can a single Rafflesia arnoldii flower get?",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "answer": 11,
+      "unit": "kg",
+      "explanation": "Up to about 11 kg. The widest one ever measured was 1.14 m across, and even the buds are typically about 30 cm wide."
+    },
+    {
+      "type": "flow",
+      "heading": "A life spent mostly out of sight",
+      "steps": [
+        { "icon": "🌿", "label": "Its tissue grows hidden inside a vine" },
+        { "icon": "🟤", "label": "A bud forms on the vine's root or stem" },
+        { "icon": "⏳", "label": "The bud swells for many months" },
+        { "icon": "🌺", "label": "The flower opens for just a few days" }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why it stinks",
+      "text": "Chemical studies traced the smell to sulfur compounds such as dimethyl disulfide and dimethyl trisulfide. Each flower is either male or female, so a fly has to visit a male flower first and then a female one for seeds to form."
+    },
+    {
+      "type": "sort",
+      "heading": "Rafflesia: true or false?",
+      "bins": ["True", "False"],
+      "items": [
+        { "text": "It has no chlorophyll", "bin": 0 },
+        { "text": "Each flower is both male and female", "bin": 1 },
+        { "text": "Its smell resembles decaying flesh", "bin": 0 },
+        { "text": "An open flower lasts for months", "bin": 1 }
+      ],
+      "explanation": "The flowers are either male or female, and an open bloom lasts just a few days after a bud that took many months to grow."
+    }
+  ],
+  "tags": ["rafflesia", "plants", "parasites", "flowers", "sumatra"],
+  "source": { "label": "Wikipedia: Rafflesia arnoldii", "url": "https://en.wikipedia.org/wiki/Rafflesia_arnoldii" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

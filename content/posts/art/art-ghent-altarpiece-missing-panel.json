@@ -1,0 +1,72 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-ghent-altarpiece-missing-panel",
+  "field": "art",
+  "title": "One panel of the Ghent Altarpiece was stolen in 1934 and has never been found",
+  "emoji": "🕵️",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Ghent_Altarpiece_Google_Art_Project.jpg/960px-Ghent_Altarpiece_Google_Art_Project.jpg",
+    "alt": "The Ghent Altarpiece opened out: an enthroned figure in red between the Virgin Mary and John the Baptist, singing angels and Adam and Eve above, and the Adoration of the Lamb across the lower panels.",
+    "credit": "Hubert and Jan van Eyck · Public domain"
+  },
+  "body": "Hubert and Jan van Eyck’s great folding altarpiece in St Bavo’s Cathedral, Ghent, was completed by 1432, and few paintings have had a rougher life. It was carried off to Paris after the French Revolution, partly sold to Prussia, and seized on Hitler’s orders in 1942. In 1934 thieves took two of its panels, *The Just Judges* and *Saint John the Baptist*. One came back, but **The Just Judges is still missing**, and the Belgian restorer Jef Van der Veken later painted a copy of it.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Ghent_Altarpiece_E_-_Just_Judges_%28original_painting%29.jpg/960px-Ghent_Altarpiece_E_-_Just_Judges_%28original_painting%29.jpg",
+      "alt": "A black-and-white photograph of the original Just Judges panel: richly dressed men on horseback, one on a pale horse in front, below a rocky hill topped by towers.",
+      "caption": "An old photograph of the original Just Judges, the panel that vanished in 1934.",
+      "fit": "cover",
+      "credit": "Photo by Max Friedländer · Public domain"
+    },
+    {
+      "type": "reveal",
+      "prompt": "The art historian Noah Charney has counted the crimes committed against this one altarpiece. How many?",
+      "answer": "13 crimes",
+      "detail": "Counted from the time it was first installed, through wartime looting and the 1934 theft."
+    },
+    {
+      "type": "pictogram",
+      "heading": "Seven of the 13 crimes against it were thefts",
+      "icon": "🖼️",
+      "total": 13,
+      "count": 7,
+      "note": "Count by the art historian Noah Charney."
+    },
+    {
+      "type": "timeline",
+      "heading": "A hard six centuries",
+      "events": [
+        { "when": "1432", "text": "Completed by this year" },
+        { "when": "1815", "text": "Back from Paris; wings pawned" },
+        { "when": "1920", "text": "The Treaty of Versailles returns the wings" },
+        { "when": "1934", "text": "Two panels stolen" },
+        { "when": "1942–45", "text": "Seized for Hitler, stored in a salt mine, recovered" }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "A lamb with a human face",
+      "text": "A restoration that began in 2012 finished the five lower panels in January 2020. It uncovered the original face of the Lamb of God, with oddly human features and forward-facing eyes that stare straight out at the viewer."
+    },
+    {
+      "type": "quiz",
+      "question": "What happened to the Saint John the Baptist panel stolen in 1934?",
+      "options": [
+        "The thief gave it back",
+        "It burned in a fire",
+        "It was sold in America",
+        "It is still missing"
+      ],
+      "answer": 0,
+      "explanation": "The thief returned it as a goodwill gesture. Only The Just Judges stayed missing."
+    }
+  ],
+  "tags": ["painting", "vaneyck", "theft", "belgium"],
+  "source": {
+    "label": "Wikipedia: Ghent Altarpiece",
+    "url": "https://en.wikipedia.org/wiki/Ghent_Altarpiece"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

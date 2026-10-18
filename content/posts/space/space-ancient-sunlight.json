@@ -5,6 +5,40 @@
   "title": "The energy in sunlight spent millennia escaping the Sun",
   "emoji": "🔆",
   "body": "Energy released by fusion in the Sun’s core doesn’t fly straight out. In the dense interior, light is absorbed and re-emitted in random directions over and over, a zigzag “random walk” that takes the energy somewhere between 10,000 and 170,000 years to reach the surface, depending on the estimate. After that long struggle, the final dash from the Sun’s surface to your skin takes only about 8 minutes and 20 seconds.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Once it leaves the Sun’s surface, how many seconds does light take to reach Earth?",
+      "min": 0,
+      "max": 1800,
+      "step": 1,
+      "answer": 500,
+      "unit": "s",
+      "explanation": "About 8 minutes and 20 seconds, around 500 s. Getting from the core to the surface takes far longer: a random walk estimated at anywhere from 10,000 to 170,000 years."
+    },
+    {
+      "type": "flow",
+      "heading": "A long way out, a short way here",
+      "steps": [
+        {
+          "icon": "☀️",
+          "label": "Fusion in the core releases energy"
+        },
+        {
+          "icon": "🔁",
+          "label": "Absorbed and re-emitted, over and over"
+        },
+        {
+          "icon": "⏳",
+          "label": "10,000 to 170,000 years to reach the surface"
+        },
+        {
+          "icon": "🌍",
+          "label": "Then 8 minutes 20 seconds to Earth"
+        }
+      ]
+    }
+  ],
   "tags": [
     "sun",
     "light",

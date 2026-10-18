@@ -1,0 +1,60 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "language-beowulf-one-scorched-manuscript",
+  "field": "language",
+  "title": "Beowulf survives in just one manuscript, and that copy was scorched in a 1731 fire",
+  "emoji": "🔥",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Beowulf_Cotton_MS_Vitellius_A_XV_f._132r.jpg/960px-Beowulf_Cotton_MS_Vitellius_A_XV_f._132r.jpg",
+    "alt": "The first page of Beowulf: brown Old English handwriting on stained parchment, opening with large capitals, the right-hand edge ragged and darkened by fire.",
+    "credit": "British Library, Cotton MS Vitellius A XV · Public domain"
+  },
+  "body": "The Old English epic *Beowulf* runs to 3,182 alliterative lines, and every one of them comes from a single copy, the Nowell Codex, written out around the year 1000. In 1731 it was kept at Ashburnham House in London with the rest of Sir Robert Cotton’s collection of medieval manuscripts, and a fire broke out there. The book survived, but its margins were charred and some readings were lost. Had it burned, the poem would have vanished with it.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Beowulf_Manuscript.jpg/960px-Beowulf_Manuscript.jpg",
+      "alt": "The Beowulf manuscript open in a dimly lit display case, its fire-damaged parchment pages set into paler paper mounts.",
+      "caption": "The Nowell Codex on display at the British Library. Its damaged leaves have been remounted.",
+      "fit": "cover",
+      "credit": "Ken Eckert · CC BY-SA 4.0"
+    },
+    {
+      "type": "reveal",
+      "prompt": "The poem opens ‘Hwæt we Gar-Dena in geardagum’. Who are the ‘Gar-Dena’?",
+      "answer": "The Spear-Danes",
+      "detail": "The story is set among Danes and Geats in Scandinavia, around the 5th and 6th centuries, though the poem itself is in Old English."
+    },
+    {
+      "type": "spectrum",
+      "heading": "One copy, a thousand years",
+      "min": 950,
+      "max": 2000,
+      "format": "year",
+      "ends": ["950", "2000"],
+      "marks": [
+        { "label": "Copied out", "value": 1000 },
+        { "label": "Cotton library fire", "value": 1731, "emphasis": true },
+        { "label": "First printed edition", "value": 1815 },
+        { "label": "Tolkien’s lecture", "value": 1936 }
+      ],
+      "note": "The manuscript is dated around 975–1025. When the poem was composed is disputed: perhaps 700–1000."
+    },
+    {
+      "type": "text",
+      "heading": "Saved on paper",
+      "text": "After the fire, the scholar Grímur Jónsson Thorkelin made the first transcriptions in 1786 and published the first printed edition in 1815. In 1936 J. R. R. Tolkien’s lecture ‘The Monsters and the Critics’ criticised scholars’ excessive interest in its historical implications."
+    },
+    {
+      "type": "odd",
+      "heading": "Which is not one of Beowulf’s monsters?",
+      "items": ["Grendel", "Grendel’s mother", "A dragon", "A one-eyed giant"],
+      "answer": 3,
+      "explanation": "Grendel attacks the hall Heorot, his mother comes for revenge, and a dragon terrorises the realm in Beowulf’s old age. The one-eyed giant is from Homer."
+    }
+  ],
+  "tags": ["oldenglish", "manuscripts", "poetry", "beowulf"],
+  "source": { "label": "Wikipedia: Beowulf", "url": "https://en.wikipedia.org/wiki/Beowulf" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

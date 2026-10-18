@@ -5,6 +5,48 @@
   "title": "A NASA Mars probe was lost because of a mix-up of units",
   "emoji": "🛰️",
   "body": "In 1999 NASA’s Mars Climate Orbiter flew far too close to Mars and was lost, probably destroyed in its atmosphere. Ground software supplied by Lockheed Martin reported thruster impulse in pound-force seconds, while NASA’s navigation software expected newton-seconds, a factor of about 4.45. The small errors added up over months of course corrections. Investigators blamed not just the conversion, but the checks and communication that failed to catch it.",
+  "slides": [
+    {
+      "type": "scale",
+      "heading": "The missing factor: one pound-force second next to one newton-second",
+      "items": [
+        {
+          "label": "Newton-second",
+          "value": 1
+        },
+        {
+          "label": "Pound-force second",
+          "value": 4.45,
+          "emphasis": true
+        }
+      ],
+      "note": "Lockheed’s software sent pound-force seconds; NASA’s read them as newton-seconds"
+    },
+    {
+      "type": "quiz",
+      "question": "Which two units got mixed up?",
+      "options": [
+        "Pound-force seconds and newton-seconds",
+        "Miles and kilometres",
+        "Pounds and kilograms",
+        "Feet and metres"
+      ],
+      "answer": 0,
+      "explanation": "Lockheed Martin’s software reported thruster impulse in pound-force seconds while NASA’s navigation software expected newton-seconds, a factor of about 4.45."
+    },
+    {
+      "type": "odd",
+      "heading": "Which unit doesn’t belong?",
+      "items": [
+        "Newton",
+        "Pascal",
+        "Joule",
+        "Pound-force"
+      ],
+      "answer": 3,
+      "explanation": "Newton, pascal and joule are SI units. The pound-force belongs to the older British and US systems, which Lockheed’s software used while NASA’s expected SI."
+    }
+  ],
   "tags": [
     "space",
     "units",

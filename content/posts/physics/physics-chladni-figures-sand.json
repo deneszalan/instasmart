@@ -1,0 +1,110 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-chladni-figures-sand",
+  "field": "physics",
+  "title": "Bow a sand-covered metal plate like a violin and the sand draws the sound",
+  "emoji": "🎻",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Chladni_plate_02.jpg/960px-Chladni_plate_02.jpg",
+    "alt": "A brass plate on a wooden stand, its surface dusted with fine sand gathered into curving lines, with a violin bow resting against its edge.",
+    "credit": "Estes Objethos Atelier, photo Rodrigo Tetsuo Argenton · CC BY-SA 4.0"
+  },
+  "body": "When a violin bow is drawn along the edge of a metal plate, the plate vibrates in a pattern: some regions shake hard while the lines between them stay perfectly still. Sand sprinkled on top is flung off the moving regions and **piles up along the still lines**, called nodal lines, drawing a figure of the vibration. A different note makes a different pattern. The German physicist Ernst Chladni, sometimes called the father of acoustics, published the method in 1787, and these shapes are still known as Chladni figures.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Robert Hooke saw patterns like these a century before Chladni. What did he sprinkle on his plate?",
+      "answer": "Flour",
+      "detail": "In 1680 Hooke drew a violin bow along a glass plate covered with flour. Chladni’s version used sand on metal."
+    },
+    {
+      "type": "flow",
+      "heading": "How sand draws a sound",
+      "steps": [
+        {
+          "icon": "🎻",
+          "label": "A bow sets the plate vibrating"
+        },
+        {
+          "icon": "〰️",
+          "label": "Patches shake while lines between stay still"
+        },
+        {
+          "icon": "💨",
+          "label": "Sand is flung off the shaking patches"
+        },
+        {
+          "icon": "✳️",
+          "label": "It settles on the still lines as a figure"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Chladni_plate_10.jpg/960px-Chladni_plate_10.jpg",
+      "alt": "Four brass plates of different shapes, including a star and two hexagons, on turned wooden posts, each covered in its own pattern of sand lines.",
+      "caption": "Every plate shape and every note gives its own figure. These are from the Matemateca collection at the University of São Paulo.",
+      "fit": "contain",
+      "credit": "Estes Objethos Atelier, photo Rodrigo Tetsuo Argenton · CC BY-SA 4.0"
+    },
+    {
+      "type": "timeline",
+      "heading": "Making vibrations visible",
+      "events": [
+        {
+          "when": "1680",
+          "text": "Hooke sees nodal patterns in flour"
+        },
+        {
+          "when": "1787",
+          "text": "Chladni publishes his sand method"
+        },
+        {
+          "when": "1808",
+          "text": "He demonstrates it in Paris to Napoleon"
+        },
+        {
+          "when": "1816",
+          "text": "Sophie Germain wins it on her third try"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Napoleon’s prize",
+      "text": "Napoleon set a prize for the best mathematical explanation of the patterns. [Sophie Germain](https://en.wikipedia.org/wiki/Sophie_Germain)’s entry was the only one with the right approach, and on her third attempt she became the first woman to win a prize from the Paris Academy of Sciences."
+    },
+    {
+      "type": "text",
+      "heading": "Still in the workshop",
+      "text": "Variations of Chladni’s technique are still commonly used in designing and building acoustic instruments such as violins, guitars and cellos."
+    },
+    {
+      "type": "quiz",
+      "question": "Where on the vibrating plate does the sand end up?",
+      "options": [
+        "Where the plate doesn’t move",
+        "Where it shakes hardest",
+        "Only around the edges",
+        "Under the violin bow"
+      ],
+      "answer": 0,
+      "explanation": "The shaking regions throw the sand off, and it comes to rest along the nodal lines, where there is no vibration at all."
+    }
+  ],
+  "tags": [
+    "sound",
+    "vibration",
+    "waves",
+    "acoustics"
+  ],
+  "source": {
+    "label": "Wikipedia: Ernst Chladni",
+    "url": "https://en.wikipedia.org/wiki/Ernst_Chladni"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

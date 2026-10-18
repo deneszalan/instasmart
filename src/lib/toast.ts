@@ -1,4 +1,4 @@
-const EVENT = 'instasmart:toast';
+const EVENT = 'reckon:toast';
 
 export function toast(message: string): void {
   window.dispatchEvent(new CustomEvent<string>(EVENT, { detail: message }));

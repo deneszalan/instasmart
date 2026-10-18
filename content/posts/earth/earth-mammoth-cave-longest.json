@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-mammoth-cave-longest",
+  "field": "earth",
+  "title": "The world's longest known cave runs for more than 686 km under Kentucky",
+  "emoji": "🦇",
+  "body": "Mammoth Cave began forming about **330 million years ago** in thick layers of limestone. Groundwater seeping through the rock slowly dissolved it, hollowing out passages at different levels over millions of years. A cap of sandstone on top keeps the system remarkably stable. By 2025, cavers had surveyed more than 686 km of passages, over 1.5 times the length of the second-longest known cave system, Ox Bel Ha in Mexico, and new discoveries still add more every year.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Mammoth_Cave_Mammoth_Dome.jpg/960px-Mammoth_Cave_Mammoth_Dome.jpg",
+    "alt": "A tall metal staircase climbing up inside Mammoth Dome, a towering shaft in the cave lit orange against fluted limestone walls",
+    "credit": "Daniel Schwen · CC BY-SA 4.0"
+  },
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "How a limestone cave is carved",
+      "steps": [
+        { "icon": "🪨", "label": "Thick limestone layers form" },
+        { "icon": "🟫", "label": "A sandstone cap covers them" },
+        { "icon": "💧", "label": "Groundwater slowly dissolves the limestone" },
+        { "icon": "🕳️", "label": "Passages open up level by level" }
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "In 1972 cavers found a link between Mammoth Cave and something else. What?",
+      "answer": "An even longer cave system under Flint Ridge",
+      "detail": "The final connection was made on 9 September 1972. Since then the combined network has been known as the Mammoth–Flint Ridge Cave System."
+    },
+    {
+      "type": "timeline",
+      "heading": "People in Mammoth Cave",
+      "events": [
+        { "when": "1812–15", "text": "Wartime miners dig saltpetre for gunpowder" },
+        { "when": "1840s", "text": "Enslaved guide Stephen Bishop maps and names many passages" },
+        { "when": "1941", "text": "Becomes a US national park" },
+        { "when": "1981", "text": "Named a World Heritage Site" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why did miners dig in Mammoth Cave during the War of 1812?",
+      "options": ["For saltpetre to make gunpowder", "For gold in the cave streams", "For coal to fuel ships", "For fresh drinking water"],
+      "answer": 0,
+      "explanation": "A trade embargo cut off imports, starving the American military of saltpetre and so of gunpowder. Mining the cave for nitrates suddenly paid."
+    }
+  ],
+  "tags": ["caves", "limestone", "kentucky", "geology"],
+  "source": { "label": "Wikipedia: Mammoth Cave National Park", "url": "https://en.wikipedia.org/wiki/Mammoth_Cave_National_Park" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

@@ -5,6 +5,44 @@
   "title": "The Sun only shines because particles tunnel through walls",
   "emoji": "🌞",
   "body": "Fusing hydrogen means forcing together protons that repel each other electrically. Even at about 15 million °C, protons in the Sun’s core almost never have enough energy to climb over that barrier. Quantum mechanics lets them occasionally “tunnel” straight through it instead, because a particle’s position is smeared out like a wave. Each tunnelling event is rare, but the core holds so many protons that it adds up to the Sun’s steady glow.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Roughly how hot is the Sun’s core, in millions of degrees Celsius?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 15,
+      "unit": "million °C",
+      "explanation": "About 15 million °C, yet protons there almost never have enough energy to climb over their electrical repulsion. They fuse because quantum mechanics lets them tunnel through the barrier."
+    },
+    {
+      "type": "flow",
+      "heading": "How protons fuse in the Sun",
+      "steps": [
+        {
+          "icon": "⚛️",
+          "label": "Two protons rush toward each other"
+        },
+        {
+          "icon": "🧱",
+          "label": "Electric repulsion: a wall too high to climb"
+        },
+        {
+          "icon": "🌊",
+          "label": "Rarely, a proton tunnels through the wall"
+        },
+        {
+          "icon": "☀️",
+          "label": "The pair fuses, releasing energy"
+        },
+        {
+          "icon": "🔆",
+          "label": "Countless rare events add up to sunshine"
+        }
+      ]
+    }
+  ],
   "tags": [
     "quantum",
     "tunnelling",

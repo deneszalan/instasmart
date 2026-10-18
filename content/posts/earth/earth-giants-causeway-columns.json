@@ -1,0 +1,66 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-giants-causeway-columns",
+  "field": "earth",
+  "title": "The Giant's Causeway's 40,000 stone columns were shaped by cooling lava, not by giants",
+  "emoji": "🪨",
+  "body": "On the coast of County Antrim in Northern Ireland, about **40,000 interlocking basalt columns** step down into the sea. Legend says the giant Fionn mac Cumhaill built them as a road to fight a Scottish rival; geology says they formed 50 to 60 million years ago, in the Paleocene, when molten basalt flooded the area. As the thick lava cooled it contracted and cracked, much as drying mud does, and the cracks spread downward through the flow, leaving columns that are mostly hexagonal, though some have four to eight sides. The tallest stand about 12 m. The site became a UNESCO World Heritage Site in 1986 and draws around a million visitors a year.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Giant%27s_Causeway_%2814%29.JPG/960px-Giant%27s_Causeway_%2814%29.JPG",
+    "alt": "Hexagonal basalt columns of the Giant's Causeway forming a stepped stone platform beside breaking waves under a cloudy sky",
+    "credit": "Chmee2 · CC BY 3.0"
+  },
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "About how many basalt columns make up the Giant's Causeway?",
+      "min": 0,
+      "max": 100000,
+      "step": 1000,
+      "answer": 40000,
+      "explanation": "Approximately 40,000 interlocking columns. Most are hexagonal, but some have between four and eight sides, and the tallest are about 12 m high."
+    },
+    {
+      "type": "flow",
+      "heading": "How lava turns into columns",
+      "steps": [
+        { "icon": "🌋", "label": "Basalt lava floods the land, 50–60 Mya" },
+        { "icon": "❄️", "label": "The surface cools and shrinks" },
+        { "icon": "🧩", "label": "It cracks like drying mud" },
+        { "icon": "⬇️", "label": "The cracks spread down through the flow" },
+        { "icon": "🪨", "label": "Columns, mostly six-sided, remain" }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Giant_Causrway_Jan_2018.jpg/960px-Giant_Causrway_Jan_2018.jpg",
+      "alt": "Rounded tops of basalt columns and a tidal pool in the foreground, with the stepped causeway and the sea behind",
+      "caption": "The size of each column was set mainly by how fast the lava cooled. Nearly a million people visited in 2019.",
+      "fit": "cover",
+      "credit": "Minh28397 · CC BY-SA 4.0"
+    },
+    {
+      "type": "sort",
+      "heading": "Giant's Causeway: fact or legend?",
+      "bins": ["Fact", "Legend"],
+      "items": [
+        { "text": "A giant built it to reach Scotland", "bin": 1 },
+        { "text": "The columns are cooled lava", "bin": 0 },
+        { "text": "Most columns have six sides", "bin": 0 },
+        { "text": "It is a UNESCO World Heritage Site", "bin": 0 },
+        { "text": "The giant's wife disguised him as a baby", "bin": 1 }
+      ],
+      "explanation": "In one version of the legend, Fionn's wife Sadhbh disguises him as a baby; the Scottish giant Benandonner flees and tears up the causeway behind him."
+    },
+    {
+      "type": "stat",
+      "value": "1,011,473",
+      "label": "visitors recorded at the visitor centre in 2018",
+      "text": "The site was inscribed on the UNESCO World Heritage List in 1986."
+    }
+  ],
+  "tags": ["geology", "basalt", "ireland", "volcanoes"],
+  "source": { "label": "Wikipedia: Giant's Causeway", "url": "https://en.wikipedia.org/wiki/Giant%27s_Causeway" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

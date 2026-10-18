@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-first-medical-xray-1895",
+  "field": "body",
+  "title": "The first medical X-ray showed a hand wearing a ring: Röntgen's wife's, in December 1895",
+  "emoji": "🩻",
+  "body": "On **8 November 1895** Wilhelm Röntgen, working in Würzburg, noticed a faint glow on a screen while experimenting with a cathode-ray tube and realised he had found an unknown kind of ray, which he labelled X, the mathematical symbol for an unknown. About six weeks later he made the first medical X-ray image: his wife Anna Bertha Ludwig's hand, with her ring showing as a dark blob on a finger of bones. On seeing her own skeleton she reportedly said that she had seen her death. Röntgen refused to patent the discovery so that everyone could benefit, and in 1901 he received the first Nobel Prize in Physics.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/First_medical_X-ray_by_Wilhelm_R%C3%B6ntgen_of_his_wife_Anna_Bertha_Ludwig%27s_hand_-_18951222.jpg/960px-First_medical_X-ray_by_Wilhelm_R%C3%B6ntgen_of_his_wife_Anna_Bertha_Ludwig%27s_hand_-_18951222.jpg",
+    "alt": "The first medical X-ray, a sepia print of the bones of a hand with a dark ring on one finger, labelled in handwriting 'Hand mit Ringen'",
+    "credit": "Wilhelm Röntgen · Public domain"
+  },
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "What did Anna Bertha Ludwig reportedly exclaim when she saw the X-ray of her own hand?",
+      "answer": "I have seen my death!",
+      "detail": "The image, made about six weeks after the discovery, showed the bones of her hand and her ring. It is regarded as the first medical X-ray."
+    },
+    {
+      "type": "timeline",
+      "heading": "From a faint glow to a Nobel Prize",
+      "events": [
+        { "when": "8 Nov 1895", "text": "Röntgen notices a glowing screen and finds the rays" },
+        { "when": "Dec 1895", "text": "First medical X-ray: his wife's hand" },
+        { "when": "Jan 1896", "text": "He X-rays the anatomist Albert von Kölliker's hand" },
+        { "when": "1901", "text": "First Nobel Prize in Physics" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why are they called X-rays?",
+      "options": ["X stands for something unknown", "They were made with an X-shaped tube", "X was Röntgen's laboratory code"],
+      "answer": 0,
+      "explanation": "Röntgen first just called them rays, then X-rays, using X as the mathematical symbol for an unknown quantity. In German and several other languages they are named after him instead."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Wilhelm_Conrad_R%C3%B6ntgen_%281888-1900%29%2C_88374_p.jpg/960px-Wilhelm_Conrad_R%C3%B6ntgen_%281888-1900%29%2C_88374_p.jpg",
+      "alt": "A black-and-white studio portrait of Wilhelm Röntgen, a man with a full dark beard wearing a suit and waistcoat",
+      "caption": "Wilhelm Röntgen around 1900. He refused to patent X-rays, wanting society as a whole to benefit, and received the first Nobel Prize in Physics in 1901.",
+      "fit": "cover",
+      "credit": "Erwin Hanfstaengl · Public domain"
+    },
+    {
+      "type": "text",
+      "heading": "Why bones show up",
+      "text": "X-rays are electromagnetic radiation with far shorter wavelengths than visible light. Dense tissue such as bone absorbs more of them than soft tissue does, so bones and metal rings cast shadows on a photographic plate placed behind the body."
+    }
+  ],
+  "tags": ["xrays", "medicine", "history", "roentgen"],
+  "source": { "label": "Wikipedia: Wilhelm Röntgen", "url": "https://en.wikipedia.org/wiki/Wilhelm_R%C3%B6ntgen" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

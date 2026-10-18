@@ -5,6 +5,31 @@
   "title": "Losing $100 hurts more than winning $100 feels good",
   "emoji": "⚖️",
   "body": "Daniel Kahneman and Amos Tversky found that people weigh losses more heavily than equal gains, a key part of their 1979 prospect theory. Many people turn down a coin flip that loses $100 on tails unless heads wins well over $100, often around double. Estimates of the ratio vary by study and context, and some researchers think the effect is smaller than once claimed, but it helps explain why people hate fees and cling to things they own.",
+  "slides": [
+    {
+      "type": "scale",
+      "heading": "How heavily a loss weighs against an equal gain",
+      "items": [
+        {
+          "label": "Gain $100",
+          "value": 1
+        },
+        {
+          "label": "Lose $100",
+          "value": 2,
+          "emphasis": true
+        }
+      ],
+      "unit": "×",
+      "note": "Losses are often treated as about twice as large as equal gains, though estimates vary by study"
+    },
+    {
+      "type": "reveal",
+      "prompt": "Loss aversion is a key part of a famous 1979 theory. Which one?",
+      "answer": "Prospect theory, by Kahneman and Tversky",
+      "detail": "It helps explain why people hate fees and cling to things they own, though estimates of how strong the effect is vary by study and context."
+    }
+  ],
   "tags": [
     "behaviouraleconomics",
     "lossaversion",

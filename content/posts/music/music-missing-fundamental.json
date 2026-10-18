@@ -5,6 +5,64 @@
   "title": "Your brain can hear a bass note that isn’t actually there",
   "emoji": "👂",
   "body": "A musical note usually contains a fundamental frequency plus overtones at whole-number multiples of it. Remove the fundamental but keep the overtones, and listeners still hear the same pitch, because the brain infers it from the spacing of the harmonics. That is why a deep voice still sounds deep over a traditional phone line, which cuts off frequencies below about 300 Hz, and why tiny speakers can suggest bass they cannot produce.",
+  "slides": [
+    {
+      "type": "place",
+      "question": "A traditional phone line throws away everything below a certain frequency. Where is the cut-off?",
+      "min": 0,
+      "max": 500,
+      "step": 5,
+      "answer": 300,
+      "unit": "Hz",
+      "ends": [
+        "Low",
+        "High"
+      ],
+      "hints": [
+        {
+          "label": "Lowest piano A",
+          "value": 27.5
+        },
+        {
+          "label": "Men, low end",
+          "value": 90
+        },
+        {
+          "label": "Women, low end",
+          "value": 165
+        },
+        {
+          "label": "Concert A",
+          "value": 440
+        }
+      ],
+      "explanation": "About 300 Hz. A traditional line carries roughly 300–3,400 Hz, so a deep voice’s fundamental never arrives; your brain rebuilds the pitch from the spacing of the harmonics that do."
+    },
+    {
+      "type": "quiz",
+      "question": "How does the brain work out a pitch whose fundamental is missing?",
+      "options": [
+        "From the spacing of the harmonics",
+        "By remembering the singer’s voice",
+        "From the loudest overtone alone",
+        "It guesses from the rhythm"
+      ],
+      "answer": 0,
+      "explanation": "Overtones sit at whole-number multiples of the fundamental, so their spacing gives it away. That is why a deep voice still sounds deep over a phone line."
+    },
+    {
+      "type": "odd",
+      "heading": "Which is not a harmonic of a 100 Hz note?",
+      "items": [
+        "200 Hz",
+        "300 Hz",
+        "450 Hz",
+        "500 Hz"
+      ],
+      "answer": 2,
+      "explanation": "Harmonics sit at whole-number multiples of the fundamental: 200, 300, 400 and 500 Hz. 450 Hz is 4.5 times 100, so it doesn’t belong."
+    }
+  ],
   "tags": [
     "acoustics",
     "psychoacoustics",

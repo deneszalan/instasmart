@@ -1,0 +1,127 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-halberstadt-639-year-organ",
+  "field": "music",
+  "title": "An organ in Germany is playing one piece of music that will end in the year 2640",
+  "emoji": "🎹",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/John_Cage_Orgel_Kloster_St._Burchardi_Halberstadt.jpg/960px-John_Cage_Orgel_Kloster_St._Burchardi_Halberstadt.jpg",
+    "alt": "The small purpose-built organ for John Cage’s Organ²/ASLSP inside the bare stone church of St Burchardi in Halberstadt: a few metal pipes on a wooden frame, enclosed in a clear acrylic case.",
+    "credit": "Clemensfranz · CC BY-SA 4.0"
+  },
+  "body": "In St Burchardi church in Halberstadt, Germany, a specially built organ has been performing John Cage’s *Organ²/ASLSP* (‘As Slow as Possible’) since 5 September 2001. The performance began with a rest; the first pipes sounded on 5 February 2003, and the piece is scheduled to end on 5 September 2640, **639 years** after it began. The organisers chose that length because the first documented permanent organ in Halberstadt Cathedral dates from about 1361, 639 years before the originally planned start in 2000. Sandbags hold the pedals down and bellows supply a constant flow of air, so a chord sounds for years at a time; the next change is scheduled for 5 October 2027.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/John_Cage_Orgel_Balganlage_Kloster_St._Burchardi_Halberstadt.jpg/960px-John_Cage_Orgel_Balganlage_Kloster_St._Burchardi_Halberstadt.jpg",
+      "alt": "The wooden bellows system that feeds air to the Halberstadt organ, standing in a transept of St Burchardi church.",
+      "caption": "The bellows in the transept keep air flowing to the pipes. In 2011 the organ was boxed in acrylic glass to soften the sound for visitors.",
+      "fit": "cover",
+      "credit": "Clemensfranz · CC BY-SA 4.0"
+    },
+    {
+      "type": "quiz",
+      "question": "Why does the performance last exactly 639 years?",
+      "options": [
+        "Halberstadt’s first organ, c. 1361",
+        "Cage lived for 639 months",
+        "The organ has 639 pipes",
+        "The number was drawn by lot"
+      ],
+      "answer": 0,
+      "explanation": "From the first documented permanent organ in Halberstadt Cathedral, about 1361, to the planned start in 2000 is 639 years. A shortage of money delayed the start to 2001."
+    },
+    {
+      "type": "spectrum",
+      "heading": "The performance in years",
+      "min": 1300,
+      "max": 2700,
+      "format": "year",
+      "ends": [
+        "1300",
+        "2700"
+      ],
+      "marks": [
+        {
+          "label": "Halberstadt’s first organ",
+          "value": 1361
+        },
+        {
+          "label": "Performance begins",
+          "value": 2001,
+          "emphasis": true
+        },
+        {
+          "label": "First pipes sound",
+          "value": 2003
+        },
+        {
+          "label": "Final note",
+          "value": 2640
+        }
+      ],
+      "note": "The gap from the 1361 organ to 2000 equals the gap from 2001 to 2640."
+    },
+    {
+      "type": "timeline",
+      "events": [
+        {
+          "when": "5 Sep 2001",
+          "text": "Performance begins with a rest"
+        },
+        {
+          "when": "5 Feb 2003",
+          "text": "First pipes sound"
+        },
+        {
+          "when": "5 Feb 2024",
+          "text": "A new note, D4, joins the chord"
+        },
+        {
+          "when": "5 Aug 2026",
+          "text": "An A4 pipe is added"
+        },
+        {
+          "when": "5 Oct 2027",
+          "text": "Next change: E4 is released"
+        }
+      ]
+    },
+    {
+      "type": "higher",
+      "heading": "Longest human performances, in hours",
+      "items": [
+        {
+          "label": "Gennarelli, 2025",
+          "value": 25
+        },
+        {
+          "label": "Luchese, 2009",
+          "value": 14.9
+        },
+        {
+          "label": "Relay team, 2025",
+          "value": 192
+        }
+      ],
+      "unit": "hours",
+      "note": "Played on a piano, the piece usually lasts 20 to 70 minutes.",
+      "explanation": "Gennarelli’s 25 hours is the solo record; a relay of players in Arizona kept it going for 192 hours. Halberstadt will outlast them all by some 639 years."
+    }
+  ],
+  "tags": [
+    "johncage",
+    "organ",
+    "germany",
+    "performance"
+  ],
+  "source": {
+    "label": "Wikipedia: As Slow as Possible",
+    "url": "https://en.wikipedia.org/wiki/As_Slow_as_Possible"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

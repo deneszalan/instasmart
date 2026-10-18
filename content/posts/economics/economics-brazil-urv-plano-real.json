@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "economics-brazil-urv-plano-real",
+  "field": "economics",
+  "title": "Brazil ended hyperinflation with a currency you couldn’t spend",
+  "emoji": "🇧🇷",
+  "body": "Brazil’s hyperinflation ran from 1985 to 1994, with prices rising more than 1,000% a year by the end, and a string of plans had failed. In March 1994 the government created the **Unidade Real de Valor**, a unit of account with a fixed one-to-one parity to the daily US dollar rate; its value in the inflating cruzeiro real was recalculated and published every day. Prices, wages and contracts were rewritten in URV, so they stopped changing, while every payment still had to be made in cruzeiros reais. On 1 July 1994 the real was launched at one real per URV, worth 2,750 cruzeiros reais, and the inflationary cycle broke.",
+  "slides": [
+    {
+      "type": "list",
+      "heading": "The trick, step by step",
+      "style": "steps",
+      "items": [
+        "Create a stable unit, the URV, pegged to the dollar",
+        "Publish its cruzeiro value every day",
+        "Rewrite prices, wages and contracts in URV",
+        "Launch the real at one URV and retire the cruzeiro real"
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "If you couldn’t pay in URV, what was the point of quoting prices in it?",
+      "answer": "Prices stopped moving: only the exchange rate to cruzeiros did",
+      "detail": "A price in URV could stay fixed while the cruzeiro figure printed beside it rose every day, so people relearned what stable prices felt like."
+    },
+    {
+      "type": "stat",
+      "value": "2,750",
+      "label": "cruzeiros reais for one real, and one URV, on 1 July 1994",
+      "text": "Finance minister Fernando Henrique Cardoso led the plan’s architects and went on to become president."
+    },
+    {
+      "type": "scale",
+      "heading": "One real next to the cruzeiros reais it replaced",
+      "items": [
+        {
+          "label": "One real",
+          "value": 1
+        },
+        {
+          "label": "Cruzeiros reais",
+          "value": 2750
+        }
+      ],
+      "note": "On 1 July 1994 one real, and one URV, was worth 2,750 cruzeiros reais"
+    },
+    {
+      "type": "quiz",
+      "question": "What was the URV’s value tied to?",
+      "options": [
+        "The US dollar, one to one, daily",
+        "The price of coffee",
+        "A basket of gold and silver",
+        "The German mark"
+      ],
+      "answer": 0,
+      "explanation": "The URV had a fixed one-to-one parity to the daily dollar exchange rate; its rate against the cruzeiro real was recalculated and published by the government every day."
+    }
+  ],
+  "tags": [
+    "inflation",
+    "brazil",
+    "money"
+  ],
+  "source": {
+    "label": "Wikipedia: Unidade real de valor",
+    "url": "https://en.wikipedia.org/wiki/Unidade_real_de_valor"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

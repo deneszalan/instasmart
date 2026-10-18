@@ -1,0 +1,68 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-didgeridoo-termites",
+  "field": "music",
+  "title": "Termites hollow out the eucalyptus trunks that become traditional didgeridoos",
+  "emoji": "🐜",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/National_Museum_of_Ethnology%2C_Osaka_-_Didjeridu_-_Northern_Territory_%26_Queensland_in_Australia_-_Made_in_the_era_from_the_1980s_to_the_1990s.jpg/960px-National_Museum_of_Ethnology%2C_Osaka_-_Didjeridu_-_Northern_Territory_%26_Queensland_in_Australia_-_Made_in_the_era_from_the_1980s_to_the_1990s.jpg",
+    "alt": "Three tall painted didgeridoos standing upright in a museum display, decorated with bands of red, yellow and black and painted figures.",
+    "credit": "Yanajin33 · CC BY-SA 3.0"
+  },
+  "body": "The didgeridoo was probably developed by Aboriginal peoples of northern Australia, possibly in Arnhem Land. A traditional one starts as a living eucalyptus tree that termites have attacked, eating out the dead heartwood at its core and leaving a natural tube. Makers read the landscape and the termites’ habits to find such trees, then peel back a little bark and knock on the wood to hear whether it is hollow. A good trunk is felled, cleaned out, stripped of bark and shaped, and the result, anywhere from **1 to 3 m** long, is played with vibrating lips as a continuous drone.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Termites eat out the tree’s core. Why don’t they chew right through the outside too?",
+      "options": [
+        "Living sapwood repels them",
+        "The bark is too hard to bite",
+        "They only feed in the dry season",
+        "Makers cut the tree down first"
+      ],
+      "answer": 0,
+      "explanation": "The termites remove only the dead heartwood. The living sapwood around it contains a chemical that repels them, so it stays as the walls of the tube."
+    },
+    {
+      "type": "flow",
+      "heading": "From termite nest to instrument",
+      "steps": [
+        { "icon": "🐜", "label": "Termites hollow a living eucalyptus" },
+        { "icon": "✊", "label": "Knock on the trunk to hear if it’s hollow" },
+        { "icon": "🪓", "label": "Fell it, clean it out, strip the bark" },
+        { "icon": "🐝", "label": "Shape it, maybe add a beeswax mouthpiece" }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Australiandidgeridoos.jpg/960px-Australiandidgeridoos.jpg",
+      "alt": "Five didgeridoos laid side by side above a centimetre scale running to 150 cm, three painted in traditional patterns and two in non-traditional styles.",
+      "caption": "Five modern eucalyptus didgeridoos. A to C are traditional Aboriginal instruments; D and E are not.",
+      "fit": "contain",
+      "credit": "Hmarin · Public domain"
+    },
+    {
+      "type": "text",
+      "heading": "Breathing in while blowing out",
+      "text": "To keep the drone going without a break, players use circular breathing: they breathe in through the nose while squeezing air out with the cheeks. Over the drone they add vocal sounds, many of them imitating Australian animals."
+    },
+    {
+      "type": "sort",
+      "heading": "Aboriginal name or not?",
+      "bins": ["Aboriginal name", "Not Aboriginal"],
+      "items": [
+        { "text": "Yiḏaki", "bin": 0 },
+        { "text": "Mako", "bin": 0 },
+        { "text": "Didgeridoo", "bin": 1 }
+      ],
+      "explanation": "Yiḏaki is the Yolngu name and mako is used in West Arnhem Land. ‘Didgeridoo’ is thought to imitate the sound; it was in print as ‘did-gery-do’ by 1908."
+    }
+  ],
+  "tags": ["instruments", "australia", "aboriginal", "termites"],
+  "source": {
+    "label": "Wikipedia: Didgeridoo",
+    "url": "https://en.wikipedia.org/wiki/Didgeridoo"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

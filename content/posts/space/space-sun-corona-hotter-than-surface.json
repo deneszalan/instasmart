@@ -1,0 +1,91 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-sun-corona-hotter-than-surface",
+  "field": "space",
+  "title": "The Sun’s outer atmosphere is 200 times hotter than its surface",
+  "emoji": "🌞",
+  "body": "The Sun’s visible surface, the photosphere, is about 5,800 K. Move outward into the faint corona, the halo seen during a total eclipse, and the temperature climbs to **1 to 2 million kelvin**. That is backwards from everyday experience, where things cool as you move away from the heat source, and it has been an unsolved problem for decades. The clue came from a mystery green line in the corona’s light, once blamed on an unknown element nicknamed ‘coronium’. In 1940, following Walter Grotrian’s work, Bengt Edlén showed it comes from iron atoms stripped of many of their electrons, something only extreme heat can do.",
+  "slides": [
+    {
+      "type": "stat",
+      "value": "1–2 million K",
+      "label": "the typical temperature of the Sun’s corona",
+      "text": "The visible surface below it is only about 5,800 K."
+    },
+    {
+      "type": "chart",
+      "heading": "Temperature, from the inside out",
+      "items": [
+        {
+          "label": "Core",
+          "value": 15700000
+        },
+        {
+          "label": "Visible surface",
+          "value": 5800
+        },
+        {
+          "label": "Corona",
+          "value": 1000000,
+          "emphasis": true
+        }
+      ],
+      "unit": "K",
+      "note": "The corona runs 1 to 2 million K; the bar shows the lower figure"
+    },
+    {
+      "type": "compare",
+      "heading": "Backwards",
+      "left": {
+        "label": "Expect",
+        "text": "Like a campfire, the Sun should get cooler the farther you move from its core."
+      },
+      "right": {
+        "label": "Observed",
+        "text": "The temperature drops through the photosphere, then soars by a factor of about 200 in the thin corona above it."
+      }
+    },
+    {
+      "type": "list",
+      "heading": "Suspects for the heating",
+      "style": "bullets",
+      "items": [
+        "Waves: energy carried up along magnetic fields, an idea from Evry Schatzman in 1949",
+        "Reconnection: snapping magnetic field lines drive electric currents in the corona",
+        "Nanoflares: countless tiny flares, proposed by Eugene Parker"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What revealed that the corona is incredibly hot?",
+      "options": [
+        "A green line from stripped iron atoms",
+        "Its brightness during eclipses",
+        "Its white colour",
+        "Sunspots on the surface"
+      ],
+      "answer": 0,
+      "explanation": "The mystery line once blamed on ‘coronium’ comes from iron atoms missing many electrons, which happens only at around a million degrees. Edlén showed this in 1940."
+    },
+    {
+      "type": "scramble",
+      "clue": "The Sun’s visible surface, a cool 5,800 K beneath the million-degree corona",
+      "answer": "PHOTOSPHERE",
+      "detail": "From the Greek for light (phos) and sphere (sphaira). It is the layer whose light we actually see."
+    }
+  ],
+  "tags": [
+    "sun",
+    "corona",
+    "plasma"
+  ],
+  "source": {
+    "label": "Wikipedia: Solar corona",
+    "url": "https://en.wikipedia.org/wiki/Solar_corona"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

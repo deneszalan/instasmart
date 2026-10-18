@@ -5,6 +5,41 @@
   "title": "A random number from a spinning wheel can sway your next guess",
   "emoji": "⚓",
   "body": "In a classic study, Amos Tversky and Daniel Kahneman spun a wheel rigged to stop on either 10 or 65, then asked people what percentage of United Nations members were African countries. Those who saw 10 guessed about 25%, while those who saw 65 guessed about 45%. An obviously irrelevant number became a starting point, and people adjusted away from it too little. This anchoring effect has since held up well in large replication projects.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "People who saw the wheel stop on 65 guessed what share of UN members were African countries?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 45,
+      "unit": "%",
+      "explanation": "About 45%, against about 25% for those who saw 10. An obviously irrelevant number became a starting point, and people adjusted away from it too little."
+    },
+    {
+      "type": "chart",
+      "heading": "Guessed share of African countries among UN members",
+      "items": [
+        {
+          "label": "Wheel stopped on 10",
+          "value": 25
+        },
+        {
+          "label": "Wheel stopped on 65",
+          "value": 45,
+          "emphasis": true
+        }
+      ],
+      "unit": "%",
+      "note": "The wheel was rigged to stop on 10 or 65; the number was plainly irrelevant to the question."
+    },
+    {
+      "type": "scramble",
+      "clue": "The bias in which an irrelevant starting number drags your estimate toward it",
+      "answer": "ANCHORING",
+      "detail": "Like a ship’s anchor, the first number holds your guess near one spot, and people adjust away from it too little."
+    }
+  ],
   "tags": [
     "cognitivebias",
     "decisions",

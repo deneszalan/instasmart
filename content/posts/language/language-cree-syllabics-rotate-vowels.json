@@ -1,0 +1,64 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "language-cree-syllabics-rotate-vowels",
+  "field": "language",
+  "title": "In Cree syllabics, turning a letter around changes which vowel it stands for",
+  "emoji": "🔄",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Speed_limit_syllabics.jpg/960px-Speed_limit_syllabics.jpg",
+    "alt": "A roadside 30 km/h speed limit sign in Iqaluit, Nunavut, with a word in Inuktitut syllabics above the English word MAXIMUM, under a deep blue sky.",
+    "credit": "Anick-Marie · CC BY-SA 2.0"
+  },
+  "body": "The linguist and missionary James Evans finished this script in 1840 at Norway House in Manitoba, working with the Cree and Ojibwe. Each symbol stands for a whole syllable: its shape gives the consonant, and the direction it points gives the vowel. One shape can therefore stand for four different syllables. Literacy in it comes easily, and the local Cree took to it fast, writing messages on tree bark for hunting trails. By the late 19th century they may have had one of the highest literacy rates in the world.",
+  "slides": [
+    {
+      "type": "match",
+      "heading": "Which way does the ‘p’ point?",
+      "pairs": [
+        { "left": "Points up", "right": "pi" },
+        { "left": "Points down", "right": "pe" },
+        { "left": "Points left", "right": "pa" },
+        { "left": "Points right", "right": "po" }
+      ],
+      "explanation": "One chevron shape gives four syllables. Other consonants have shapes of their own, turned in the same way to show the vowel."
+    },
+    {
+      "type": "flow",
+      "heading": "Writing a syllable",
+      "steps": [
+        { "icon": "🔷", "label": "Pick the shape for the consonant" },
+        { "icon": "🔄", "label": "Turn it to choose the vowel" },
+        { "icon": "⬆️", "label": "Add a raised ‘final’ for an ending consonant" }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Tummivut_Building.jpg/960px-Tummivut_Building.jpg",
+      "alt": "A blue Government of Nunavut sign reading Tummivut Building in Inuktitut syllabics, English, Inuinnaqtun and French, in front of a dark blue office building in Igloolik.",
+      "caption": "Syllabics are a co-official script in Nunavut and are used by its government, as on this building in Igloolik.",
+      "fit": "cover",
+      "credit": "BaShildy · CC BY 3.0"
+    },
+    {
+      "type": "timeline",
+      "heading": "From Cree to the Arctic",
+      "events": [
+        { "when": "1840", "text": "James Evans completes Cree syllabics at Norway House" },
+        { "when": "1876", "text": "Edmund Peck is hired to teach syllabics to the Inuit" },
+        { "when": "Late 1800s", "text": "Cree literacy may be among the world’s highest" },
+        { "when": "Today", "text": "Co-official script of Nunavut" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Which writing systems did Evans draw on when he designed syllabics?",
+      "options": ["Devanagari and shorthand", "Greek and Hebrew", "Chinese and Japanese", "Runes and Ogham"],
+      "answer": 0,
+      "explanation": "He knew Devanagari and Pitman shorthand, and was also inspired by Sequoyah’s Cherokee syllabary after struggling with Latin-based alphabets."
+    }
+  ],
+  "tags": ["scripts", "cree", "inuktitut", "canada"],
+  "source": { "label": "Wikipedia: Canadian Aboriginal syllabics", "url": "https://en.wikipedia.org/wiki/Canadian_Aboriginal_syllabics" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

@@ -5,6 +5,48 @@
   "title": "More efficient engines made Britain burn more coal, not less",
   "emoji": "🏭",
   "body": "In 1865 economist William Stanley Jevons pointed out that Britain’s coal use had soared after James Watt’s far more efficient steam engine arrived. Because each unit of work became cheaper, steam power spread into many more industries and total consumption rose. Economists now call this a rebound effect. Its size varies a lot and efficiency usually does save resources, but the Jevons paradox shows that saving is not guaranteed.",
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "How a better engine burned more coal",
+      "steps": [
+        {
+          "icon": "⚙️",
+          "label": "Watt’s engine gets more work from each lump"
+        },
+        {
+          "icon": "💷",
+          "label": "Each unit of work becomes cheaper"
+        },
+        {
+          "icon": "🏭",
+          "label": "Steam power spreads to many more industries"
+        },
+        {
+          "icon": "🪨",
+          "label": "Britain burns more coal in total"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why did a more efficient steam engine raise Britain’s coal use?",
+      "options": [
+        "Cheaper power spread steam to new uses",
+        "The new engines leaked more coal",
+        "Coal became cheaper to mine",
+        "Factories ran the engines faster"
+      ],
+      "answer": 0,
+      "explanation": "Each unit of work became cheaper, so steam power spread into many more industries and total consumption rose. Economists call this a rebound effect."
+    },
+    {
+      "type": "scramble",
+      "clue": "Economists’ name for efficiency savings being eaten up by extra use: the ___ effect",
+      "answer": "REBOUND",
+      "detail": "When the rebound passes 100%, so that efficiency raises total use, it is the Jevons paradox. Usually it stays below that."
+    }
+  ],
   "tags": [
     "jevonsparadox",
     "energy",

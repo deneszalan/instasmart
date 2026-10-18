@@ -5,6 +5,45 @@
   "title": "A well-shuffled deck is almost surely in an order never seen before",
   "emoji": "🃏",
   "body": "A 52-card deck can be ordered in 52! ways, meaning 52 × 51 × 50 × … × 1, which comes to about 8 followed by 67 zeros. Even if every human who ever lived had shuffled a deck every second since the Big Bang, they would have produced only a vanishingly tiny fraction of those orders. Mathematicians have shown that about seven good riffle shuffles are enough to mix a deck thoroughly, after which its exact sequence is almost certainly brand new.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The number of ways to order a 52-card deck is 8 followed by how many zeros?",
+      "min": 0,
+      "max": 200,
+      "step": 1,
+      "answer": 67,
+      "unit": "zeros",
+      "explanation": "About 8 followed by 67 zeros. Even if every human who ever lived had shuffled a deck every second since the Big Bang, only a vanishing fraction of those orders would have appeared."
+    },
+    {
+      "type": "scale",
+      "heading": "Ways to order a hand of cards, to scale",
+      "items": [
+        {
+          "label": "3 cards",
+          "value": 6
+        },
+        {
+          "label": "5 cards",
+          "value": 120
+        },
+        {
+          "label": "7 cards",
+          "value": 5040,
+          "emphasis": true
+        }
+      ],
+      "unit": "ways",
+      "note": "Every extra card multiplies the count. A full deck of 52: about 8 followed by 67 zeros."
+    },
+    {
+      "type": "scramble",
+      "clue": "The operation written 52!, multiplying every whole number from 52 down to 1",
+      "answer": "FACTORIAL",
+      "detail": "52! is about 8 followed by 67 zeros, so a well-shuffled deck is almost surely in a brand-new order."
+    }
+  ],
   "tags": [
     "combinatorics",
     "factorials",

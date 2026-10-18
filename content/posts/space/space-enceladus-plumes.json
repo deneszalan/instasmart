@@ -1,0 +1,130 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-enceladus-plumes",
+  "field": "space",
+  "title": "Saturn’s moon Enceladus sprays its ocean into space and feeds one of Saturn’s rings",
+  "emoji": "⛲",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Enceladus_geysers_June_2009.jpg/960px-Enceladus_geysers_June_2009.jpg",
+    "alt": "Backlit jets of ice and vapour spraying from the south pole of Saturn’s moon Enceladus, a thin bright crescent against black space.",
+    "credit": "NASA/JPL/Space Science Institute · Public domain"
+  },
+  "body": "Enceladus is only about 500 km across, yet in 2005 the Cassini spacecraft found jets near its south pole blasting water vapour and ice grains into space, about **200 kg every second** from more than 100 geysers. The spray comes from a salty ocean 26 to 31 km deep under an ice shell 30 to 40 km thick, kept warm by tides: an orbital resonance with the moon Dione keeps Enceladus’s orbit slightly eccentric, and Saturn’s pull flexes and heats it. Some of the vapour falls back as snow, now several hundred metres thick, which makes Enceladus the most reflective body in the Solar System; the rest escapes and supplies most of Saturn’s E ring. In 2015 Cassini flew through a plume just 48 km above the surface and found hydrogen, salts, silica grains and organic molecules.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How much material do the geysers throw out every second?",
+      "min": 0,
+      "max": 1000,
+      "step": 10,
+      "answer": 200,
+      "unit": "kg",
+      "explanation": "About 200 kg a second (one estimate of the water vapour alone is 250 kg/s). That adds up to roughly 17,000 tonnes a day."
+    },
+    {
+      "type": "stat",
+      "value": "100+",
+      "label": "geysers found along the four ‘tiger stripes’ near the south pole",
+      "text": "The stripes are long fractures bounded by ridges, where ocean water escapes through the ice."
+    },
+    {
+      "type": "flow",
+      "heading": "From ocean to ring",
+      "steps": [
+        {
+          "icon": "🪐",
+          "label": "Saturn’s tides heat and crack the ice shell"
+        },
+        {
+          "icon": "🌊",
+          "label": "Ocean water rises through the fissures"
+        },
+        {
+          "icon": "⛲",
+          "label": "Geysers spray vapour and ice grains"
+        },
+        {
+          "icon": "❄️",
+          "label": "Some falls back as bright snow"
+        },
+        {
+          "icon": "💍",
+          "label": "The rest feeds Saturn’s E ring"
+        }
+      ]
+    },
+    {
+      "type": "spectrum",
+      "heading": "Cold outside, liquid inside",
+      "min": -273,
+      "max": 30,
+      "unit": "°C",
+      "ends": [
+        "Absolute zero",
+        "Room"
+      ],
+      "marks": [
+        {
+          "label": "Absolute zero",
+          "value": -273
+        },
+        {
+          "label": "Surface at noon",
+          "value": -198,
+          "emphasis": true
+        },
+        {
+          "label": "Water freezes",
+          "value": 0
+        }
+      ],
+      "note": "The mean noon surface temperature is −198 °C, yet 30 to 40 km down there is liquid water"
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Successful_Flight_Through_Enceladus_Plume.jpg/960px-Successful_Flight_Through_Enceladus_Plume.jpg",
+      "alt": "A thin bright crescent of Enceladus with a faint plume rising from its edge, photographed by Cassini during a flyby.",
+      "caption": "Cassini’s unprocessed view of the plume during its October 2015 flight through it, taken from about 190,000 km.",
+      "fit": "cover",
+      "credit": "NASA/JPL/Space Science Institute · Public domain"
+    },
+    {
+      "type": "list",
+      "heading": "What Cassini tasted in the spray",
+      "items": [
+        "Water vapour, about 91% of the gas",
+        "Salt (sodium chloride) crystals",
+        "Silica grains, a hint of hot rock",
+        "Molecular hydrogen",
+        "Organic molecules, up to benzene"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why is Enceladus the most reflective body in the Solar System?",
+      "options": [
+        "Fresh snow from the plumes coats it",
+        "It is made of polished metal",
+        "Saturn shines on it",
+        "It has no craters at all"
+      ],
+      "answer": 0,
+      "explanation": "Plume material falls back as fresh, clean ice and snow, several hundred metres thick in places, so the surface reflects most of the sunlight that hits it."
+    }
+  ],
+  "tags": [
+    "saturn",
+    "moons",
+    "oceans",
+    "cassini"
+  ],
+  "source": {
+    "label": "Wikipedia: Enceladus",
+    "url": "https://en.wikipedia.org/wiki/Enceladus"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

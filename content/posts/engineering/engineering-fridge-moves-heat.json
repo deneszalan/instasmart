@@ -7,6 +7,40 @@
   "body": "Cold is just a lack of heat, so a refrigerator works by moving heat from inside to the kitchen. A refrigerant flows around a sealed loop: it evaporates in pipes inside the fridge, soaking up heat as it turns to gas, then a compressor squeezes that gas until it is hot enough to shed the heat through coils on the back or sides. That is why those parts of a fridge feel warm.",
   "slides": [
     {
+      "type": "order",
+      "heading": "The refrigerant’s journey, in order",
+      "items": [
+        "Evaporates inside the fridge",
+        "Is squeezed by the compressor",
+        "Condenses in the outside coils",
+        "Expands through a narrow valve"
+      ],
+      "explanation": "Liquid boils inside and soaks up heat; the compressor makes the gas hot enough to shed it outside, where it condenses; a valve then drops its pressure."
+    },
+    {
+      "type": "flow",
+      "heading": "The refrigerant’s loop",
+      "steps": [
+        {
+          "icon": "🧊",
+          "label": "Boils inside the fridge, soaking up heat"
+        },
+        {
+          "icon": "🔩",
+          "label": "Compressed until hotter than the room"
+        },
+        {
+          "icon": "🔥",
+          "label": "Condenses in outside coils, shedding heat"
+        },
+        {
+          "icon": "🔽",
+          "label": "Expands through a valve; pressure drops"
+        }
+      ],
+      "cycle": true
+    },
+    {
       "type": "text",
       "heading": "1. Evaporate",
       "text": "Low-pressure liquid refrigerant boils inside the fridge at well below freezing, absorbing heat from the food, much as evaporating sweat cools your skin."

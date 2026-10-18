@@ -5,6 +5,71 @@
   "title": "Comic Sans was designed for cartoon speech bubbles in Microsoft Bob",
   "emoji": "💬",
   "body": "In 1994, Microsoft designer Vincent Connare saw a test version of Microsoft Bob, a program with cartoon guides who spoke in Times New Roman, and found it far too formal. Modeling his letters on comics such as Watchmen and The Dark Knight Returns, he drew a casual typeface using just a mouse. It missed Bob’s release but shipped with a Windows 95 add-on and spread everywhere. Today it is also used in schools and by some readers with dyslexia.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Connare modeled his letters on two famous comics. Which ones?",
+      "answer": "Watchmen and The Dark Knight Returns",
+      "detail": "He drew the casual face with just a mouse in 1994, after finding that Microsoft Bob’s cartoon guides looked far too formal speaking in Times New Roman."
+    },
+    {
+      "type": "flow",
+      "heading": "How Comic Sans happened",
+      "steps": [
+        {
+          "icon": "🐶",
+          "label": "Bob’s cartoon guides talk in Times New Roman"
+        },
+        {
+          "icon": "🤔",
+          "label": "Connare finds it far too formal"
+        },
+        {
+          "icon": "🖱️",
+          "label": "He draws casual letters with a mouse, 1994"
+        },
+        {
+          "icon": "⏰",
+          "label": "It misses Bob’s release"
+        },
+        {
+          "icon": "🪟",
+          "label": "Ships with a Windows 95 add-on and spreads"
+        }
+      ]
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "It was drawn for Microsoft Bob’s speech bubbles",
+          "bin": 0
+        },
+        {
+          "text": "It shipped in the first release of Microsoft Bob",
+          "bin": 1
+        },
+        {
+          "text": "Connare drew it using just a mouse",
+          "bin": 0
+        },
+        {
+          "text": "Its letters were modeled on comic books",
+          "bin": 0
+        },
+        {
+          "text": "Some readers with dyslexia use it",
+          "bin": 0
+        }
+      ],
+      "explanation": "Drawn in 1994 for Bob’s cartoon guides and modeled on comics, it missed Bob’s release and shipped with a Windows 95 add-on instead."
+    }
+  ],
   "tags": [
     "art",
     "typography",

@@ -1,0 +1,102 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-opportunity-rover-90-days",
+  "field": "space",
+  "title": "A Mars rover sent on a 90-day mission kept driving for more than 14 years",
+  "emoji": "🤖",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/PIA18079-MarsOpportunityRover-SelfPortrait-201403.jpg/960px-PIA18079-MarsOpportunityRover-SelfPortrait-201403.jpg",
+    "alt": "Self-portrait of NASA’s Opportunity rover on Mars, its solar panels mostly clean of dust, on the rust-coloured surface.",
+    "credit": "NASA/JPL-Caltech/Cornell/ASU · Public domain"
+  },
+  "body": "Opportunity landed in Eagle crater on 25 January 2004 with a planned mission of 90 sols, about 92 Earth days. It kept working for **5,111 sols, more than 14 years**, drove 45.16 km, found hematite and other evidence that water once flowed at Meridiani Planum, and came across the first meteorite ever found on Mars. Its solar panels should have been buried in dust, but Martian winds cleaned them time and again. A planet-wide dust storm in June 2018 finally cut off its power; after more than 1,000 recovery commands went unanswered, NASA declared the mission complete on 13 February 2019.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Planned for 90 sols. How many sols did Opportunity actually work?",
+      "min": 0,
+      "max": 6000,
+      "step": 1,
+      "answer": 5111,
+      "unit": "sols",
+      "explanation": "5,111 sols, 14 years and 138 days, almost 57 times the plan. A sol, one Martian day, is about 40 minutes longer than an Earth day."
+    },
+    {
+      "type": "chart",
+      "heading": "Mission length, in sols",
+      "items": [
+        {
+          "label": "Planned",
+          "value": 90
+        },
+        {
+          "label": "Actual",
+          "value": 5111,
+          "emphasis": true
+        }
+      ],
+      "unit": "sols",
+      "note": "Last contact on sol 5111, 10 June 2018; the mission was declared over on 13 February 2019"
+    },
+    {
+      "type": "stat",
+      "value": "45.16 km",
+      "label": "driven across Mars, farther than a marathon",
+      "text": "Its top speed was 5 cm per second, and about 1 cm per second on average."
+    },
+    {
+      "type": "timeline",
+      "heading": "Opportunity’s long drive",
+      "events": [
+        {
+          "when": "Jul 2003",
+          "text": "Launch"
+        },
+        {
+          "when": "25 Jan 2004",
+          "text": "Lands in Eagle crater, Meridiani Planum"
+        },
+        {
+          "when": "10 Jun 2018",
+          "text": "Last contact as a dust storm darkens the sky"
+        },
+        {
+          "when": "13 Feb 2019",
+          "text": "Mission declared complete"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Dust and wind",
+      "text": "Dust settling on the solar panels was expected to end the mission within months. Instead, gusts repeatedly blew the panels clean, so the rover kept its power for years. The 2018 storm was different: it darkened the whole planet, the rover went into hibernation on 12 June, and it never woke."
+    },
+    {
+      "type": "quiz",
+      "question": "What finally ended Opportunity’s mission?",
+      "options": [
+        "A planet-wide dust storm",
+        "A broken wheel",
+        "A software crash",
+        "It tipped into a crater"
+      ],
+      "answer": 0,
+      "explanation": "The June 2018 dust storm blotted out the Sun; the solar-powered rover fell silent on 12 June and never answered more than 1,000 recovery commands."
+    }
+  ],
+  "tags": [
+    "mars",
+    "rovers",
+    "nasa",
+    "exploration"
+  ],
+  "source": {
+    "label": "Wikipedia: Opportunity (rover)",
+    "url": "https://en.wikipedia.org/wiki/Opportunity_(rover)"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

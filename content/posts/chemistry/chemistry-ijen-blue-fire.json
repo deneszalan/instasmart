@@ -1,0 +1,107 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-ijen-blue-fire",
+  "field": "chemistry",
+  "title": "A volcano in Java burns with blue flames at night, and it isn’t the lava",
+  "emoji": "🔵",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Blue_flames_in_the_Ijen_Caldera.jpg/960px-Blue_flames_in_the_Ijen_Caldera.jpg",
+    "alt": "Electric-blue flames burning among dark rocks at night in the crater of Kawah Ijen, Java.",
+    "credit": "Isderion · CC BY-SA 3.0 de"
+  },
+  "body": "At Kawah Ijen in East Java, gases rich in sulfur escape from cracks in the crater at up to **600 °C**. On meeting the air they ignite, and burning sulfur gives a blue flame that can reach 5 m high; some of the gas condenses into liquid sulfur that keeps burning as it flows, so that it looks like blue lava. The flames are far easier to see in the dark, which is why visitors hike up for midnight tours. The same crater holds a 1 km-wide turquoise lake recognised as the largest highly acidic crater lake in the world, with a pH measured as low as 0.13, and about 200 miners carry 75 to 90 kg baskets of solid sulfur up its walls.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How hot are the gases when they emerge from the cracks?",
+      "min": 0,
+      "max": 1500,
+      "step": 10,
+      "answer": 600,
+      "unit": "°C",
+      "explanation": "Up to about 600 °C. The sulfur-rich gases ignite on contact with the air and burn with blue flames up to 5 m high."
+    },
+    {
+      "type": "spectrum",
+      "heading": "How acidic is Ijen’s crater lake? (pH)",
+      "min": 0,
+      "max": 14,
+      "ends": [
+        "Acid",
+        "Alkaline"
+      ],
+      "marks": [
+        {
+          "label": "Lake centre, 2008",
+          "value": 0.13,
+          "emphasis": true
+        },
+        {
+          "label": "Lake edge, 2008",
+          "value": 0.5
+        },
+        {
+          "label": "Pure water",
+          "value": 7
+        }
+      ],
+      "note": "Measured at pH 0.5 at the edges and 0.13 in the middle in 2008"
+    },
+    {
+      "type": "stat",
+      "value": "75–90 kg",
+      "label": "of sulfur a miner carries up 300 m to the crater rim, usually twice a day",
+      "text": "About 200 miners extract some 14 tonnes a day; in 2010 a typical day’s pay was roughly US$13."
+    },
+    {
+      "type": "compare",
+      "heading": "Blue lava?",
+      "left": {
+        "label": "Looks like",
+        "text": "Glowing blue lava pouring down the slopes of the crater at night."
+      },
+      "right": {
+        "label": "Actually is",
+        "text": "Sulfur gas at up to 600 °C igniting in the air, and liquid sulfur that burns as it flows. Molten rock glows red and orange, not blue."
+      }
+    },
+    {
+      "type": "list",
+      "heading": "Kawah Ijen in numbers",
+      "items": [
+        "Highest point 2,769 m",
+        "Crater lake about 200 m deep",
+        "Gas at up to 600 °C",
+        "Flames up to 5 m high",
+        "pH as low as 0.13"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "How high can the blue flames reach?",
+      "options": [
+        "About 50 cm",
+        "Up to 5 m",
+        "Up to 50 m",
+        "Hundreds of metres"
+      ],
+      "answer": 1,
+      "explanation": "Up to about 5 m. The flames are burning sulfur gas, which emerges from cracks at temperatures up to 600 °C and ignites in the air."
+    }
+  ],
+  "tags": [
+    "sulfur",
+    "volcanoes",
+    "flames",
+    "indonesia"
+  ],
+  "source": {
+    "label": "Wikipedia: Ijen",
+    "url": "https://en.wikipedia.org/wiki/Ijen"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

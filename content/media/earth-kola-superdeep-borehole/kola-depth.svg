@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="system-ui, sans-serif">
+  <text x="540" y="80" fill="#fff" font-size="52" font-weight="800" text-anchor="middle">The deepest hole vs the crust</text>
+  <text x="200" y="180" fill="#fff" font-size="34" text-anchor="start">surface</text>
+  <line x1="200" y1="200" x2="880" y2="200" stroke="#fff" stroke-width="8"/>
+  <rect x="300" y="200" width="320" height="700" fill="#fff" fill-opacity="0.12" stroke="#fff" stroke-width="4"/>
+  <g stroke="#fff" stroke-width="4">
+    <line x1="285" y1="400" x2="300" y2="400"/>
+    <line x1="285" y1="600" x2="300" y2="600"/>
+    <line x1="285" y1="800" x2="300" y2="800"/>
+  </g>
+  <text x="275" y="412" fill="#fff" font-size="34" text-anchor="end">10 km</text>
+  <text x="275" y="612" fill="#fff" font-size="34" text-anchor="end">20 km</text>
+  <text x="275" y="812" fill="#fff" font-size="34" text-anchor="end">30 km</text>
+  <rect x="450" y="200" width="20" height="245" fill="#fff"/>
+  <line x1="480" y1="445" x2="640" y2="445" stroke="#fff" stroke-width="4" stroke-dasharray="10 8"/>
+  <text x="655" y="458" fill="#fff" font-size="40" font-weight="800" text-anchor="start">12,262 m</text>
+  <text x="655" y="503" fill="#fff" font-size="34" text-anchor="start">Kola borehole, 1989</text>
+  <text x="655" y="548" fill="#fff" font-size="34" text-anchor="start">23 cm wide</text>
+  <text x="655" y="593" fill="#fff" font-size="34" text-anchor="start">180 °C at the bottom</text>
+  <text x="655" y="638" fill="#fff" font-size="34" text-anchor="start">a third of the crust</text>
+  <text x="460" y="955" fill="#fff" font-size="34" font-weight="700" text-anchor="middle">35 km: base of the crust (Baltic Shield)</text>
+</svg>

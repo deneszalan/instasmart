@@ -17,14 +17,52 @@
       "text": "When she first sees red, does she learn something? Jackson called the ‘irresistible conclusion’ that there are more properties than physicalists talk about."
     },
     {
+      "type": "flow",
+      "heading": "The knowledge argument, step by step",
+      "steps": [
+        {
+          "icon": "📚",
+          "label": "Mary learns every physical fact about colour"
+        },
+        {
+          "icon": "⬛",
+          "label": "But she has lived in a black-and-white room"
+        },
+        {
+          "icon": "🍅",
+          "label": "She steps out and sees a ripe tomato"
+        },
+        {
+          "icon": "💡",
+          "label": "She seems to learn something new"
+        },
+        {
+          "icon": "❓",
+          "label": "If so, not every fact is physical"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "The replies",
       "text": "Some say she gains new abilities, like imagining red, not new facts. Daniel Dennett argued that a truly all-knowing Mary would not be surprised at all."
     },
     {
+      "type": "reveal",
+      "prompt": "What did Frank Jackson himself eventually make of his own argument?",
+      "answer": "He rejected it and became a physicalist",
+      "detail": "The argument remains one of the most debated ideas in philosophy of mind, even though its author changed his mind."
+    },
+    {
       "type": "text",
       "heading": "The twist",
       "text": "Jackson himself later became a physicalist and rejected his own argument, yet it remains one of the most debated ideas in philosophy of mind."
+    },
+    {
+      "type": "scramble",
+      "clue": "The view that everything is physical, which Mary’s tomato is meant to challenge",
+      "answer": "PHYSICALISM",
+      "detail": "Jackson later came round to physicalism himself and gave up his own argument."
     }
   ],
   "tags": [

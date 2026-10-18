@@ -1,0 +1,103 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-nazca-lines",
+  "field": "art",
+  "title": "The Nazca Lines are only 10–15 cm deep, yet they have survived for some 2,000 years",
+  "emoji": "🦜",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_52.JPG/960px-L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_52.JPG",
+    "alt": "Aerial view of the Nazca hummingbird geoglyph: a pale outline of a bird with a long beak and spread wings drawn across the reddish-brown desert floor in Peru.",
+    "credit": "Diego Delso · CC BY-SA 4.0"
+  },
+  "body": "Across a dry plateau in southern Peru, people of the Nazca culture and their Paracas predecessors drew hundreds of lines, geometric shapes and more than 70 animal and plant figures between about 500 BC and 500 AD. They simply removed the top layer of reddish-brown, iron-oxide-coated pebbles to expose the lighter ground beneath; most trenches are only 10–15 cm deep. The drawings survive because the plateau is dry, windless and stable, and because lime in the subsoil hardens with the morning mist into a protective crust. The hummingbird is 93 m long, the condor 134 m, and the largest designs stretch about 370 m.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_54.JPG/960px-L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_54.JPG",
+      "alt": "Aerial view of the Nazca spider geoglyph: a single pale line traces a spider with eight legs on the flat brown desert, crossed by straight lines.",
+      "caption": "The spider, about 47 m long. Some figures are best seen from about 500 m up, but many can be made out from the surrounding foothills.",
+      "fit": "cover",
+      "credit": "Diego Delso · CC BY-SA 4.0"
+    },
+    {
+      "type": "rank",
+      "heading": "Which figure is the longest?",
+      "items": [
+        {
+          "label": "Condor",
+          "value": 134
+        },
+        {
+          "label": "Hummingbird",
+          "value": 93
+        },
+        {
+          "label": "Spider",
+          "value": 47
+        }
+      ],
+      "unit": "m",
+      "explanation": "The condor stretches 134 m, the hummingbird 93 m and the spider 47 m. The biggest designs of all reach about 370 m."
+    },
+    {
+      "type": "flow",
+      "heading": "How a line was made",
+      "steps": [
+        {
+          "icon": "🪨",
+          "label": "Dark, iron-stained pebbles cover the ground"
+        },
+        {
+          "icon": "🧹",
+          "label": "Builders clear a strip 10–15 cm deep"
+        },
+        {
+          "icon": "⬜",
+          "label": "Pale subsoil shows as a bright line"
+        },
+        {
+          "icon": "🌫️",
+          "label": "Mist hardens lime in the soil to a crust"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why don’t wind and rain erase the lines?",
+      "options": [
+        "The plateau is dry, windless and stable",
+        "They are repainted every year",
+        "They are cut into solid rock",
+        "Sand dunes shelter them"
+      ],
+      "answer": 0,
+      "explanation": "It barely rains, the air is still, and lime in the subsoil sets into a crust with the morning mist, so the shallow trenches persist."
+    },
+    {
+      "type": "text",
+      "heading": "Still being found",
+      "text": "In 2019 researchers from Yamagata University and IBM Japan announced 143 new geoglyphs, one found with machine learning. By 2022 the known total was 358, and in 2024 an AI-assisted survey confirmed 303 more figures. Their purpose is still debated: astronomy, largely rejected since 1990, water rituals, or pilgrimage."
+    },
+    {
+      "type": "stat",
+      "value": "1,300 km",
+      "label": "the combined length of all the lines",
+      "text": "UNESCO listed them in 1994. Toribio Mejía Xesspe noticed the lines while hiking in 1927; Paul Kosok was the first to study them from the air, in 1941."
+    }
+  ],
+  "tags": [
+    "peru",
+    "geoglyphs",
+    "nazca",
+    "archaeology"
+  ],
+  "source": {
+    "label": "Wikipedia: Nazca Lines",
+    "url": "https://en.wikipedia.org/wiki/Nazca_Lines"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

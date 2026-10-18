@@ -7,9 +7,26 @@
   "body": "Shine light through two narrow slits and a pattern of bright and dark stripes appears, the signature of overlapping waves; Thomas Young showed this in 1801. The quantum shock is that electrons, atoms and even big molecules do the same, as if each one travels through both slits as a wave and only lands at a single spot when detected. Richard Feynman called the experiment the heart of quantum mechanics.",
   "slides": [
     {
-      "type": "text",
-      "heading": "One at a time",
-      "text": "Send electrons through singly and each lands as one dot. Yet thousands of dots slowly build up the striped pattern, as if every electron passed through both slits."
+      "type": "flow",
+      "heading": "One electron at a time",
+      "steps": [
+        {
+          "icon": "⚛️",
+          "label": "Fire electrons at two slits, one at a time"
+        },
+        {
+          "icon": "🔘",
+          "label": "Each lands as a single dot"
+        },
+        {
+          "icon": "🌊",
+          "label": "Thousands of dots build up stripes"
+        },
+        {
+          "icon": "🤯",
+          "label": "As if each one went through both slits"
+        }
+      ]
     },
     {
       "type": "text",
@@ -17,9 +34,41 @@
       "text": "Measure which slit each particle goes through and the stripes disappear, leaving two plain bands. Getting “which-path” information destroys the interference."
     },
     {
+      "type": "place",
+      "question": "The largest molecules shown to interfere so far: roughly how many atoms in each?",
+      "min": 0,
+      "max": 3000,
+      "step": 10,
+      "answer": 2000,
+      "unit": "atoms",
+      "hints": [
+        {
+          "label": "Buckyball 1999",
+          "value": 60
+        },
+        {
+          "label": "Record 2013",
+          "value": 810
+        }
+      ],
+      "explanation": "About 2,000 atoms, in a 2019 experiment: each molecule still went through the slits as a wave and landed as a single dot. Buckyballs of 60 atoms did it in 1999, molecules of 810 atoms in 2013."
+    },
+    {
       "type": "text",
       "heading": "Not just tiny things",
       "text": "The effect has been shown with molecules made of about 2,000 atoms, with a mass around 25,000 times that of a hydrogen atom."
+    },
+    {
+      "type": "quiz",
+      "question": "What happens to the stripes if you measure which slit each particle goes through?",
+      "options": [
+        "They get brighter and sharper",
+        "They shift to one side",
+        "They vanish, leaving two plain bands",
+        "Nothing changes"
+      ],
+      "answer": 2,
+      "explanation": "Getting ‘which-path’ information destroys the interference: the striped pattern disappears and only two plain bands remain."
     }
   ],
   "tags": [

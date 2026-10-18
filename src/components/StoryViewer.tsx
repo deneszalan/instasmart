@@ -1,12 +1,14 @@
 import { useCallback, useEffect, useRef, useState, type PointerEvent } from 'react';
 import { createPortal } from 'react-dom';
-import { ExternalLink, Pause, Play, X } from 'lucide-react';
+import { ArrowRight, ExternalLink, Pause, Play, X } from 'lucide-react';
 import type { Story } from '../lib/stories';
 import { frameDuration } from '../lib/stories';
 import { FIELD_BY_ID } from '../data/fields';
+import { challengeId, pickInteractive } from '../lib/interactive';
 import { lockScroll } from '../lib/scrollLock';
-import { useStore } from '../state/store';
+import { localDay, useStore } from '../state/store';
 import { Avatar } from './Avatar';
+import { InteractiveSlide } from './Interactive';
 import { cardGradient, gradientStyle } from './Media';
 import { inline } from '../lib/markdown';
 
@@ -29,6 +31,10 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
   const story = stories[storyIdx];
   const card = story.cards[frame];
   const field = FIELD_BY_ID[card.field];
+  // In the quiz story each frame is the post's interactive slide, and waits for the reader instead of timing out.
+  // Which of the card's interactive slides to show changes with the day, so puzzles get their turn.
+  const widget = story.interactive ? pickInteractive(card, localDay()) : -1;
+  const timed = widget < 0;
 
   const next = useCallback(() => {
     if (frame + 1 < story.cards.length) setFrame(frame + 1);
@@ -97,9 +103,9 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
             <span key={c.id} className="story__bar">
               <span
                 key={`${storyIdx}-${frame}`}
-                className={`story__fill${i < frame ? ' story__fill--done' : ''}${i === frame ? ' story__fill--active' : ''}`}
-                style={i === frame ? { animationDuration: `${duration}ms`, animationPlayState: isPaused ? 'paused' : 'running' } : undefined}
-                onAnimationEnd={i === frame ? next : undefined}
+                className={`story__fill${i < frame || (i === frame && !timed) ? ' story__fill--done' : ''}${i === frame && timed ? ' story__fill--active' : ''}`}
+                style={i === frame && timed ? { animationDuration: `${duration}ms`, animationPlayState: isPaused ? 'paused' : 'running' } : undefined}
+                onAnimationEnd={i === frame && timed ? next : undefined}
               />
             </span>
           ))}
@@ -108,18 +114,20 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
         <div className="story__head">
           <Avatar emoji={story.emoji} gradient={story.gradient} size={32} />
           <span className="story__label">{story.label}</span>
-          {story.id === 'daily' && <span className="story__sub">{field.name}</span>}
+          {(story.id === 'daily' || story.interactive) && <span className="story__sub">{field.name}</span>}
           <span className="story__spacer" />
-          <button className="icon-btn icon-btn--light" onClick={() => setPaused((p) => !p)} aria-label={isPaused ? 'Play' : 'Pause'}>
-            {isPaused ? <Play size={20} /> : <Pause size={20} />}
-          </button>
+          {timed && (
+            <button className="icon-btn icon-btn--light" onClick={() => setPaused((p) => !p)} aria-label={isPaused ? 'Play' : 'Pause'}>
+              {isPaused ? <Play size={20} /> : <Pause size={20} />}
+            </button>
+          )}
           <button className="icon-btn icon-btn--light" onClick={onClose} aria-label="Close stories">
             <X size={24} />
           </button>
         </div>
 
         <div
-          className="story__content"
+          className={`story__content${timed ? '' : ' story__content--interactive'}`}
           onPointerDown={onPointerDown}
           onPointerUp={onPointerUp}
           onPointerLeave={() => {
@@ -131,11 +139,37 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
           <span className="slide__bg-emoji" aria-hidden="true">
             {card.emoji}
           </span>
-          <div className="story__emoji" aria-hidden="true">
-            {card.emoji}
-          </div>
-          <h3 className="story__title">{card.title}</h3>
-          <p className="story__body">{inline(card.body)}</p>
+          {timed ? (
+            <>
+              <div className="story__emoji" aria-hidden="true">
+                {card.emoji}
+              </div>
+              <h3 className="story__title">{card.title}</h3>
+              <p className="story__body">{inline(card.body)}</p>
+            </>
+          ) : (
+            <>
+              <p className="story__from">
+                {card.emoji} {card.title}
+              </p>
+              {/* Taps inside the widget answer the question; they must not flip the story. */}
+              <div
+                className="story__widget"
+                onPointerDown={(e) => e.stopPropagation()}
+                onPointerUp={(e) => e.stopPropagation()}
+              >
+                <InteractiveSlide key={`${card.id}-${widget}`} slide={card.slides![widget]} challengeId={challengeId(card, widget + 1)} />
+              </div>
+              <button
+                className="btn btn--light story__next"
+                onPointerDown={(e) => e.stopPropagation()}
+                onPointerUp={(e) => e.stopPropagation()}
+                onClick={next}
+              >
+                {frame + 1 < story.cards.length ? 'Next' : 'Done'} <ArrowRight size={16} />
+              </button>
+            </>
+          )}
         </div>
 
         <a className="story__source" href={card.source.url} target="_blank" rel="noreferrer">

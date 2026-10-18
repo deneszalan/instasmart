@@ -1,0 +1,78 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-pompeii-hot-food-counters",
+  "field": "history",
+  "title": "People in ancient Pompeii bought hot meals at street counters",
+  "emoji": "🏺",
+  "body": "Eating a ready-made meal away from home was part of life in ancient Pompeii. Shops called **thermopolia** served hot food and drinks from masonry counters with large storage jars built into them. Archaeologists have identified at least 80 examples in the city. Their surviving counters reveal an everyday food culture far beyond grand banquets and wealthy households.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How many thermopolia, or hot-food shops, have been identified in Pompeii?",
+      "min": 0,
+      "max": 200,
+      "step": 1,
+      "answer": 80,
+      "unit": "shops",
+      "explanation": "At least 80. Their masonry counters, with big storage jars called dolia built in, served hot food and drinks to people eating away from home."
+    },
+    {
+      "type": "stat",
+      "value": "80+",
+      "label": "Thermopolia identified in Pompeii",
+      "text": "These food-and-drink shops were a familiar part of the city."
+    },
+    {
+      "type": "text",
+      "heading": "The counter was the equipment",
+      "text": "Large jars called dolia were set into masonry counters to hold food and drink. Customers could buy a prepared meal outside the home."
+    },
+    {
+      "type": "flow",
+      "heading": "Lunch at a thermopolium",
+      "steps": [
+        {
+          "icon": "🍲",
+          "label": "Food and drink wait in dolia in the counter"
+        },
+        {
+          "icon": "🚶",
+          "label": "A passer-by stops at the street counter"
+        },
+        {
+          "icon": "🪙",
+          "label": "Buys a hot meal or a drink"
+        },
+        {
+          "icon": "🏛️",
+          "label": "Eats a ready-made meal away from home"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "A shop's decoration survives",
+      "text": "The counter excavated in Regio V has colorful paintings, including animals that archaeologists think were likely prepared and sold there."
+    },
+    {
+      "type": "scramble",
+      "clue": "A Pompeii shop that sold hot food and drink over a masonry counter",
+      "answer": "THERMOPOLIUM",
+      "detail": "From Greek, literally ‘a place where something hot is sold’. At least 80 have been identified in Pompeii."
+    }
+  ],
+  "tags": [
+    "pompeii",
+    "rome",
+    "foodhistory"
+  ],
+  "source": {
+    "label": "Pompeii Archaeological Park: The Thermopolium of Regio V",
+    "url": "https://pompeiisites.org/en/press-releases/from-the-12th-august-the-thermopolium-of-regio-v-is-opening-to-the-public/"
+  },
+  "author": {
+    "name": "ChatGPT",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

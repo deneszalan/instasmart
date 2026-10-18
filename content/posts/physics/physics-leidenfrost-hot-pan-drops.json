@@ -1,0 +1,120 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-leidenfrost-hot-pan-drops",
+  "field": "physics",
+  "title": "A drop of water lasts longer on a very hot pan than on a merely hot one",
+  "emoji": "💧",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Water_droplet_Leidenfrost_effect_cropped.JPG/960px-Water_droplet_Leidenfrost_effect_cropped.JPG",
+    "alt": "A single round bead of water sitting on a dark, scorched electric hot plate, its surface reflecting the light.",
+    "credit": "Cryonic07 · CC BY-SA 3.0"
+  },
+  "body": "Just above 100 °C, a drop of water touches the pan, hisses and boils away quickly. But on a much hotter pan, above roughly **193 °C** for water, the underside of the drop turns to vapour so fast that it forms a cushion the drop rides on. Vapour carries heat poorly, so the drop balls up, skitters around and lasts far longer. The German doctor Johann Gottlob Leidenfrost described the effect in 1756, and the exact temperature where it starts is hard to predict: it depends on the surface and on impurities in the liquid.",
+  "slides": [
+    {
+      "type": "compare",
+      "heading": "Same drop, two pans",
+      "left": {
+        "label": "Just over 100 °C",
+        "text": "The drop touches the metal, hisses and boils away quickly."
+      },
+      "right": {
+        "label": "Far hotter",
+        "text": "A layer of vapour lifts it. It balls up, skitters around and evaporates slowly."
+      }
+    },
+    {
+      "type": "flow",
+      "heading": "How a drop levitates",
+      "steps": [
+        {
+          "icon": "💧",
+          "label": "A drop lands on very hot metal"
+        },
+        {
+          "icon": "💨",
+          "label": "Its underside flashes into vapour"
+        },
+        {
+          "icon": "🛡️",
+          "label": "The vapour layer lifts and insulates it"
+        },
+        {
+          "icon": "⏳",
+          "label": "It hovers and boils away slowly"
+        }
+      ]
+    },
+    {
+      "type": "spectrum",
+      "heading": "Pan temperatures for a drop of water",
+      "min": 0,
+      "max": 300,
+      "unit": "°C",
+      "ends": [
+        "Cool pan",
+        "Very hot pan"
+      ],
+      "marks": [
+        {
+          "label": "Water boils",
+          "value": 100
+        },
+        {
+          "label": "Drops start to hover",
+          "value": 193,
+          "emphasis": true
+        }
+      ],
+      "colors": [
+        "#38bdf8",
+        "#f97316"
+      ],
+      "note": "The hover point is approximate and changes with the surface and impurities"
+    },
+    {
+      "type": "text",
+      "heading": "It works with cold liquids too",
+      "text": "What matters is a surface much hotter than the liquid’s boiling point. So drops of liquid nitrogen skate over things at room temperature on their own vapour, and in the inverse effect, drops of warm liquid levitate on a bath of liquid nitrogen."
+    },
+    {
+      "type": "odd",
+      "heading": "Which is not the Leidenfrost effect?",
+      "items": [
+        "Drops skittering on a hot pan",
+        "Liquid nitrogen beads rolling about",
+        "Warm drop on liquid nitrogen",
+        "Ice cubes floating in a drink"
+      ],
+      "answer": 3,
+      "explanation": "Ice floats because it is less dense than water. In the other three, a layer of vapour keeps a liquid from touching the surface below it."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does the drop on the hotter pan last longer?",
+      "options": [
+        "A vapour layer insulates it",
+        "Very hot metal repels water",
+        "The drop freezes on the outside",
+        "The pan dries the air above it"
+      ],
+      "answer": 0,
+      "explanation": "The drop sits on a thin film of its own vapour, which conducts heat poorly, so heat from the pan reaches it far more slowly than when it touches the metal."
+    }
+  ],
+  "tags": [
+    "water",
+    "heat",
+    "boiling",
+    "kitchen"
+  ],
+  "source": {
+    "label": "Wikipedia: Leidenfrost effect",
+    "url": "https://en.wikipedia.org/wiki/Leidenfrost_effect"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

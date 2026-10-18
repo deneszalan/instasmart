@@ -1,0 +1,105 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-neptune-found-by-maths",
+  "field": "space",
+  "title": "Neptune was discovered on paper first, then found within a degree of the prediction",
+  "emoji": "🔭",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Neptune_Voyager2_color_calibrated.png/960px-Neptune_Voyager2_color_calibrated.png",
+    "alt": "Neptune photographed by Voyager 2: a pale blue-green globe on black space, with faint white cloud streaks and a darker oval spot.",
+    "credit": "NASA / Voyager 2, processed by Ardenau4 · CC0"
+  },
+  "body": "By the 1840s Uranus was straying from the path that Newton’s law of gravity predicted for it. Urbain Le Verrier in Paris, and separately John Couch Adams in Cambridge, worked out where an unseen planet would have to be to pull it off course. Le Verrier’s letter reached Johann Galle at the Berlin Observatory on the morning of 23 September 1846, and that night, after less than an hour of searching, Galle and Heinrich d’Arrest found Neptune **less than 1° from the predicted spot**. In François Arago’s phrase, Le Verrier had discovered a planet “with the point of his pen”.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Galileo saw Neptune in December 1612 and January 1613. Why isn’t he credited with discovering it?",
+      "answer": "He took it for a fixed star",
+      "detail": "His notes even record that a nearby “star” seemed to have moved, but there is no clear evidence he realised it was a planet."
+    },
+    {
+      "type": "flow",
+      "heading": "Finding a planet with gravity",
+      "steps": [
+        {
+          "icon": "🪐",
+          "label": "Uranus strays from its predicted path"
+        },
+        {
+          "icon": "🧮",
+          "label": "Le Verrier works out where a planet must be"
+        },
+        {
+          "icon": "✉️",
+          "label": "His letter reaches Berlin Observatory"
+        },
+        {
+          "icon": "🔭",
+          "label": "A ‘star’ missing from the chart is Neptune"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "That star is not on the map!",
+      "attribution": "Heinrich d’Arrest, comparing the sky with a new star chart, 1846"
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Deutsches_Museum_M%C3%BCnchen_-_15803973590.jpg/960px-Deutsches_Museum_M%C3%BCnchen_-_15803973590.jpg",
+      "alt": "A long brass refracting telescope on a tall wooden mount in a museum gallery.",
+      "caption": "The refractor Galle used at the Berlin Observatory to find Neptune, now in the Deutsches Museum in Munich.",
+      "fit": "cover",
+      "credit": "tm-md · CC BY-SA 2.0"
+    },
+    {
+      "type": "chart",
+      "heading": "How far each prediction was from Neptune, in degrees",
+      "items": [
+        {
+          "label": "Le Verrier",
+          "value": 1,
+          "emphasis": true
+        },
+        {
+          "label": "Adams (final)",
+          "value": 12
+        }
+      ],
+      "unit": "°",
+      "note": "Le Verrier was less than 1° off; Adams’s final prediction was 12° west of Neptune"
+    },
+    {
+      "type": "quiz",
+      "question": "Both men put Neptune much too far from the Sun. Why?",
+      "options": [
+        "They relied on Bode’s law",
+        "They ignored the Moon’s pull",
+        "Their clocks ran slow",
+        "They used the wrong star chart"
+      ],
+      "answer": 0,
+      "explanation": "Both used Bode’s law, an old number pattern for planet distances, and greatly overestimated Neptune’s. Le Verrier’s direction in the sky was still very close."
+    },
+    {
+      "type": "text",
+      "heading": "Who gets the credit?",
+      "text": "A fierce dispute broke out between France and England over whether Adams deserved equal credit. His long-lost correspondence turned up in Chile in 1999, and some historians now argue that the achievement was Le Verrier’s alone."
+    }
+  ],
+  "tags": [
+    "neptune",
+    "planets",
+    "gravity",
+    "astronomy"
+  ],
+  "source": {
+    "label": "Wikipedia: Discovery of Neptune",
+    "url": "https://en.wikipedia.org/wiki/Discovery_of_Neptune"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

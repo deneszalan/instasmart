@@ -1,0 +1,100 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-arnolfini-portrait-signature",
+  "field": "art",
+  "title": "Jan van Eyck signed the Arnolfini Portrait on the wall: ‘Jan van Eyck was here 1434’",
+  "emoji": "🪞",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/The_Arnolfini_portrait_%281434%29.jpg/960px-The_Arnolfini_portrait_%281434%29.jpg",
+    "alt": "Jan van Eyck’s Arnolfini Portrait: a man in a dark fur-trimmed robe and wide hat holds the hand of a woman in a green gown in a bedroom, with a small dog at their feet, a brass chandelier above and a round convex mirror on the back wall.",
+    "credit": "Jan van Eyck, 1434 · Public domain"
+  },
+  "body": "Above the convex mirror in his 1434 double portrait, Jan van Eyck painted the Latin words *Johannes de eyck fuit hic 1434*, ‘Jan van Eyck was here 1434’, in an ornate script more like a legal document than a painter’s signature. The mirror reflects the backs of the couple and two tiny figures in the doorway, one in red who is presumably the artist. The art historian Erwin Panofsky argued in 1934 that the picture records a marriage, with the painter as witness; others read it as a betrothal, a legal mandate or a memorial, and some think the inscription is simply a decorative flourish of the period. The oil painting on oak, 82.2 by 60 cm, has hung in London’s National Gallery since 1842.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Jan_van_Eyck_-_Portrait_of_Giovanni_Arnolfini_and_his_Wife_%28detail%29_-_WGA7695.jpg/960px-Jan_van_Eyck_-_Portrait_of_Giovanni_Arnolfini_and_his_Wife_%28detail%29_-_WGA7695.jpg",
+      "alt": "Detail of the Arnolfini Portrait: the round convex mirror reflecting the couple from behind and two figures in a doorway, with the ornate inscription ‘Johannes de eyck fuit hic 1434’ painted on the wall above it.",
+      "caption": "The mirror and the inscription. Tiny medallions around the mirror’s frame show scenes from the Passion of Christ.",
+      "fit": "cover",
+      "credit": "Jan van Eyck, 1434 · Public domain"
+    },
+    {
+      "type": "reveal",
+      "prompt": "Who are the two tiny figures reflected in the doorway?",
+      "answer": "Two visitors; the one in red is presumably Van Eyck",
+      "detail": "They stand where a viewer would stand. Panofsky saw them as witnesses to a wedding, with the signature as the painter’s notarial stamp."
+    },
+    {
+      "type": "flow",
+      "heading": "Panofsky’s theory, step by step",
+      "steps": [
+        {
+          "icon": "💍",
+          "label": "A couple takes vows in a private room"
+        },
+        {
+          "icon": "🪞",
+          "label": "Two witnesses appear in the mirror"
+        },
+        {
+          "icon": "✍️",
+          "label": "Van Eyck signs the wall like a notary"
+        },
+        {
+          "icon": "📜",
+          "label": "The painting serves as the record"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "heading": "Objects loaded with meaning",
+      "items": [
+        "One lit candle: marriage custom, or the eye of God",
+        "A little dog: fidelity, or just a lap pet",
+        "Oranges: wealth, and fertility in Italy",
+        "Her gathered gown: fashion, not pregnancy"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What did Panofsky think the painting was?",
+      "options": [
+        "A record of a marriage",
+        "A portrait of the painter’s parents",
+        "An advert for a cloth merchant",
+        "A scene from the Bible"
+      ],
+      "answer": 0,
+      "explanation": "Panofsky (1934) read it as a marriage certificate in paint, with the signature as notarial authentication. Later scholars have proposed a betrothal, a legal mandate or a memorial portrait."
+    },
+    {
+      "type": "compare",
+      "heading": "Is she pregnant?",
+      "left": {
+        "label": "It looks like it",
+        "text": "Her hand rests on a full, gathered green gown, and viewers have long assumed she is expecting."
+      },
+      "right": {
+        "label": "Scholars say no",
+        "text": "Gathered gowns were the fashion of the day, and virgin saints were painted in the same pose. Even the couple’s identity is debated."
+      }
+    }
+  ],
+  "tags": [
+    "vaneyck",
+    "painting",
+    "flemish",
+    "symbolism"
+  ],
+  "source": {
+    "label": "Wikipedia: Arnolfini Portrait",
+    "url": "https://en.wikipedia.org/wiki/Arnolfini_Portrait"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

@@ -1,0 +1,127 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "philosophy-amo-african-philosopher-germany",
+  "field": "philosophy",
+  "title": "In the 1730s a Ghana-born philosopher taught at German universities",
+  "emoji": "🎓",
+  "body": "Anton Wilhelm Amo was born around 1703 in Axim, in present-day Ghana, and taken to Amsterdam by the Dutch West India Company at about the age of four. Presented to the dukes of Brunswick-Wolfenbüttel in 1707, he was raised in the ducal household, entered the law school at Halle in 1727, and in 1729 defended a thesis on **the rights of Africans in Europe**. A doctorate in philosophy followed at Wittenberg in 1734, and he went on to lecture at Halle and Jena. A hostile campaign and a public lampoon drove him back to Africa around 1747, where he died around 1759.",
+  "slides": [
+    {
+      "type": "timeline",
+      "events": [
+        {
+          "when": "c. 1703",
+          "text": "Born in Axim, in present-day Ghana"
+        },
+        {
+          "when": "1729",
+          "text": "Defends a thesis on the rights of Africans in Europe"
+        },
+        {
+          "when": "1734",
+          "text": "Doctorate in philosophy at Wittenberg"
+        },
+        {
+          "when": "c. 1747",
+          "text": "Returns to Africa after a campaign against him"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "heading": "From Axim to German lecture halls and back",
+      "steps": [
+        {
+          "icon": "🌍",
+          "label": "Born in Axim, present-day Ghana, c. 1703"
+        },
+        {
+          "icon": "🚢",
+          "label": "Taken to Amsterdam at about four"
+        },
+        {
+          "icon": "🏰",
+          "label": "Raised at the Brunswick-Wolfenbüttel court"
+        },
+        {
+          "icon": "🎓",
+          "label": "Scholar at Halle, Wittenberg and Jena"
+        },
+        {
+          "icon": "⛵",
+          "label": "Returns to Ghana, c. 1747"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Mind and body",
+      "text": "His 1734 dissertation, On the Apathy of the Human Mind, argued for a broadly Cartesian dualism: mind and body are distinct kinds of thing. Four years later he published a treatise on the art of philosophising soberly and accurately."
+    },
+    {
+      "type": "text",
+      "heading": "Why he left",
+      "text": "Enemies in Halle staged a public lampoon of him. Amo sailed on a Dutch West India Company ship, arriving in Ghana about 1747, and was later taken to a fort at Shama, possibly to keep him from stirring dissent. The exact date and place of his death are unknown."
+    },
+    {
+      "type": "place",
+      "question": "When did Berlin finally rename its Mohrenstraße after Amo?",
+      "min": 1700,
+      "max": 2030,
+      "step": 1,
+      "answer": 2025,
+      "format": "year",
+      "ends": [
+        "1700",
+        "2030"
+      ],
+      "hints": [
+        {
+          "label": "Street named",
+          "value": 1707
+        },
+        {
+          "label": "Amo’s thesis",
+          "value": 1729
+        },
+        {
+          "label": "Wall falls",
+          "value": 1989
+        }
+      ],
+      "explanation": "Berlin-Mitte proposed the change in 2020, but objections kept it in court until 23 August 2025, when Mohrenstraße became Anton-Wilhelm-Amo-Straße. The street had carried its old name since 1707."
+    },
+    {
+      "type": "stat",
+      "value": "2025",
+      "label": "the year Berlin renamed its Mohrenstraße after Amo, ending a long legal battle",
+      "text": "Stuttgart dedicated an Anton Wilhelm Amo Square in 2022, and two German exhibitions in 2024 were devoted to him."
+    },
+    {
+      "type": "quiz",
+      "question": "What was the subject of Amo’s 1729 thesis?",
+      "options": [
+        "The rights of Africans in Europe",
+        "The immortality of the soul",
+        "The laws of motion",
+        "The geography of the Gold Coast"
+      ],
+      "answer": 0,
+      "explanation": "De iure Maurorum in Europa, ‘On the rights of Moors in Europe’. The manuscript is lost, but a summary was published in 1730."
+    }
+  ],
+  "tags": [
+    "amo",
+    "ghana",
+    "enlightenment"
+  ],
+  "source": {
+    "label": "Wikipedia: Anton Wilhelm Amo",
+    "url": "https://en.wikipedia.org/wiki/Anton_Wilhelm_Amo"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

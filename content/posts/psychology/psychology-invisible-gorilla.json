@@ -5,6 +5,52 @@
   "title": "About half of viewers miss a gorilla strolling through a video",
   "emoji": "🦍",
   "body": "In a famous 1999 study by Daniel Simons and Christopher Chabris, people watched a video of players passing basketballs and counted one team’s passes. Midway through, a person in a gorilla suit walked right through the scene, and in most groups about half the viewers never noticed. Attention works like a spotlight: when it is locked onto a demanding task, even striking but unexpected things can go completely unseen. It is called inattentional blindness.",
+  "slides": [
+    {
+      "type": "pictogram",
+      "heading": "In most groups, half the viewers never saw the gorilla",
+      "icon": "🧍",
+      "total": 10,
+      "count": 5,
+      "note": "Simons and Chabris, 1999: in most groups 50% did not report the gorilla while counting passes."
+    },
+    {
+      "type": "higher",
+      "heading": "Who noticed the gorilla while counting passes? Share of each group",
+      "items": [
+        {
+          "label": "Adult basketball experts",
+          "value": 62
+        },
+        {
+          "label": "Children, 2 years’ practice",
+          "value": 18
+        },
+        {
+          "label": "Adult novices",
+          "value": 38
+        },
+        {
+          "label": "Child novices",
+          "value": 0
+        }
+      ],
+      "unit": "%",
+      "note": "Memmert, 2006: all counted passes in the gorilla video; experts had years of basketball practice.",
+      "explanation": "Practice at the game freed up attention: 62% of adult experts saw the gorilla against 38% of adult novices, and no child novice did."
+    },
+    {
+      "type": "quiz",
+      "question": "What were viewers asked to do while the gorilla walked through?",
+      "options": [
+        "Count one team’s basketball passes",
+        "Spot anything unusual",
+        "Memorise the players’ faces"
+      ],
+      "answer": 0,
+      "explanation": "Counting passes locked their attention onto a demanding task, and in most groups about half never noticed the gorilla: inattentional blindness."
+    }
+  ],
   "tags": [
     "attention",
     "perception",

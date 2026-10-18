@@ -7,6 +7,41 @@
   "body": "If someone only answers “higher” or “lower”, always guess the middle of the remaining range. Each guess throws away half the possibilities, and halving a million 20 times leaves a single number, because 2 to the power of 20 is 1,048,576. This is binary search, and it is why a computer can find an entry in a sorted list of a billion items in about 30 steps.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "Guessing a number from 1 to 100 by always halving, what is the most guesses you ever need?",
+      "min": 1,
+      "max": 30,
+      "step": 1,
+      "answer": 7,
+      "unit": "guesses",
+      "explanation": "Guess 50, then 25 or 75, and keep halving: 7 guesses always suffice, because 2 to the power of 7 is 128, more than 100."
+    },
+    {
+      "type": "chart",
+      "heading": "Guesses you need when every guess halves the range",
+      "items": [
+        {
+          "label": "1 to 100",
+          "value": 7
+        },
+        {
+          "label": "1 to 1,000",
+          "value": 10
+        },
+        {
+          "label": "1 to a million",
+          "value": 20,
+          "emphasis": true
+        },
+        {
+          "label": "1 to a billion",
+          "value": 30
+        }
+      ],
+      "unit": "guesses",
+      "note": "2⁷ = 128, 2¹⁰ = 1,024, 2²⁰ ≈ 1.05 million, 2³⁰ ≈ 1.07 billion: each just clears its range."
+    },
+    {
       "type": "text",
       "heading": "Try it yourself",
       "text": "Picking from 1 to 100? Guess 50, then 25 or 75, and keep halving. You never need more than 7 guesses, because 2 to the power of 7 is 128."
@@ -15,6 +50,14 @@
       "type": "text",
       "heading": "The catch",
       "text": "It only works on sorted data. In an unsorted list you must check items one by one, which for a million items can take a million steps."
+    },
+    {
+      "type": "fill",
+      "question": "Jon Bentley asked professional programmers to write a binary search. Out of 10, how many got it wrong?",
+      "icon": "🧑‍💻",
+      "total": 10,
+      "answer": 9,
+      "explanation": "About 9 in 10 failed to produce a correct version, even after several hours of work. The halving idea is simple; getting every edge case right is not."
     },
     {
       "type": "text",

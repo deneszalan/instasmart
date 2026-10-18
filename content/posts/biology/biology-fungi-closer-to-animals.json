@@ -5,6 +5,50 @@
   "title": "Mushrooms are more closely related to you than to plants",
   "emoji": "🍄",
   "body": "Fungi were long lumped in with plants because they grow in place and have cell walls. But genetic studies place fungi and animals together on one branch of the tree of life, the opisthokonts, separate from plants. The name means ‘rear pole’ and refers to the single tail-like flagellum at the back of cells such as animal sperm and the swimming spores of some fungi. Fungal cell walls are made of chitin, the material in insect shells, not plant cellulose.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Fungi and animals are ‘opisthokonts’, meaning ‘rear pole’. What does the name refer to?",
+      "options": [
+        "A single flagellum at the back of cells",
+        "A root-like anchor at the cell’s base",
+        "The hind end of a chitin cell wall"
+      ],
+      "answer": 0,
+      "explanation": "The name refers to the single tail-like flagellum at the back of cells such as animal sperm and the swimming spores of some fungi."
+    },
+    {
+      "type": "sort",
+      "heading": "Opisthokont, or not?",
+      "bins": [
+        "Opisthokont",
+        "Another branch"
+      ],
+      "items": [
+        {
+          "text": "A mushroom",
+          "bin": 0
+        },
+        {
+          "text": "An oak tree",
+          "bin": 1
+        },
+        {
+          "text": "A human",
+          "bin": 0
+        },
+        {
+          "text": "Kelp, a brown alga",
+          "bin": 1
+        },
+        {
+          "text": "Baker’s yeast",
+          "bin": 0
+        }
+      ],
+      "explanation": "Animals and fungi, yeast included, share the opisthokont branch. Plants and brown algae such as kelp sit on other branches of the tree of life."
+    }
+  ],
   "tags": [
     "fungi",
     "evolution",

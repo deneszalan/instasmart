@@ -5,6 +5,64 @@
   "title": "In 1947, operators found a literal bug in a computer: a moth",
   "emoji": "🦋",
   "body": "In 1947, operators of Harvard’s Mark II computer traced a fault to a moth trapped in a relay. They taped it into the logbook with the note “First actual case of bug being found.” The joke worked because engineers already called glitches “bugs”: Thomas Edison used the word in the 1870s. Grace Hopper, who worked on the machine, helped make the story famous.",
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "How the moth got into the logbook",
+      "steps": [
+        {
+          "icon": "🖥️",
+          "label": "Harvard’s Mark II develops a fault"
+        },
+        {
+          "icon": "🔎",
+          "label": "Operators trace the fault to a relay"
+        },
+        {
+          "icon": "🦋",
+          "label": "Inside it, a moth is trapped"
+        },
+        {
+          "icon": "📒",
+          "label": "They tape it into the logbook with a note"
+        }
+      ]
+    },
+    {
+      "type": "place",
+      "question": "Engineers already called glitches bugs. When did Edison write about them in a letter?",
+      "min": 1840,
+      "max": 1960,
+      "step": 1,
+      "answer": 1878,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Edison born",
+          "value": 1847
+        },
+        {
+          "label": "Light bulb",
+          "value": 1879
+        },
+        {
+          "label": "The moth",
+          "value": 1947
+        }
+      ],
+      "explanation": "1878. Difficulties arise, Edison wrote to an associate, and then “Bugs”, as such little faults and difficulties are called, show themselves. The moth turned up 69 years later."
+    },
+    {
+      "type": "order",
+      "heading": "Oldest first",
+      "items": [
+        "Edison calls glitches ‘bugs’",
+        "A moth is found in Harvard’s Mark II",
+        "Grace Hopper spreads the story"
+      ],
+      "explanation": "Edison used ‘bug’ in the 1870s, so the 1947 moth was a joke on an old word. Grace Hopper, who worked on the Mark II, helped make the story famous."
+    }
+  ],
   "tags": [
     "computinghistory",
     "debugging",

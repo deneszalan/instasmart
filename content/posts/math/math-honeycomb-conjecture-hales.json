@@ -1,0 +1,92 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-honeycomb-conjecture-hales",
+  "field": "math",
+  "title": "Bees' hexagons were only proven to be the best possible shape in 1999",
+  "emoji": "🐝",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Western_honey_bee_on_a_honeycomb.jpg/960px-Western_honey_bee_on_a_honeycomb.jpg",
+    "alt": "A honey bee walking across a comb of neat golden hexagonal wax cells.",
+    "credit": "Matthew T Rader · CC BY-SA 4.0"
+  },
+  "body": "The idea that a honeycomb's hexagons use the least wax for a given amount of storage was written down by the Roman scholar **Marcus Terentius Varro** in 36 BC, and often credited to Pappus of Alexandria. Proving it took far longer. The **honeycomb conjecture** says that of all ways to divide a flat surface into regions of equal area, the regular hexagonal grid has the least total perimeter. László Fejes Tóth proved it in 1943 for cells with straight, convex sides, but curved walls were allowed too, and only in 1999 did Thomas Hales show that even wiggly cells cannot beat the hexagon.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Varro recorded the claim in 36 BC. In which year was it finally proven in full?",
+      "answer": "1999",
+      "detail": "Thomas Hales proved the honeycomb conjecture in 1999, more than 2,000 years after Varro. The paper appeared in Discrete and Computational Geometry in 2001."
+    },
+    {
+      "type": "text",
+      "heading": "What the theorem says",
+      "text": "Cut a flat surface into cells of equal area, using any shapes you like, straight or curved. The total length of wall you need, per unit of area, can never be less than the hexagonal grid's figure: the fourth root of 12, about 1.86. Triangles and squares tile just as neatly, but they need more wall."
+    },
+    {
+      "type": "timeline",
+      "heading": "A 2,000-year-old claim",
+      "events": [
+        {
+          "when": "36 BC",
+          "text": "Varro records the hexagon claim"
+        },
+        {
+          "when": "c. 300s",
+          "text": "Pappus of Alexandria restates it"
+        },
+        {
+          "when": "1943",
+          "text": "Fejes Tóth proves it for convex cells"
+        },
+        {
+          "when": "1999",
+          "text": "Hales proves it for any cells at all"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Do bees know geometry?",
+      "left": {
+        "label": "Myth",
+        "text": "Bees deliberately measure out perfect hexagons."
+      },
+      "right": {
+        "label": "Fact",
+        "text": "One explanation, from D'Arcy Thompson, is that the shape simply results from many bees building cells pressed against each other."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Clever details in the comb",
+      "text": "Real [honeycomb](https://en.wikipedia.org/wiki/Honeycomb) cells are hexagonal prisms of beeswax, tilted upwards by about 13 degrees so the honey does not run out. Each cell's closed end is made of three flat faces, a corner of a rhombic dodecahedron, so the cells on the two sides of the comb nest into each other."
+    },
+    {
+      "type": "quiz",
+      "question": "Why was Fejes Tóth's 1943 result not the end of the story?",
+      "options": [
+        "It only covered straight-sided cells",
+        "It had an arithmetic error",
+        "It only worked for 100 cells or fewer",
+        "It was never published"
+      ],
+      "answer": 0,
+      "explanation": "Fejes Tóth proved the hexagon wins when every cell is a convex polygon. Cells with curved walls remained possible until Hales ruled them out in 1999."
+    }
+  ],
+  "tags": [
+    "geometry",
+    "bees",
+    "proofs",
+    "hexagons"
+  ],
+  "source": {
+    "label": "Wikipedia: Honeycomb conjecture",
+    "url": "https://en.wikipedia.org/wiki/Honeycomb_conjecture"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

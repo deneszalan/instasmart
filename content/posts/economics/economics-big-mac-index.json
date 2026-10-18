@@ -7,6 +7,31 @@
   "body": "Since 1986, *The Economist* has compared the price of a McDonald’s Big Mac around the world. The idea comes from **purchasing-power parity**: over the long run, exchange rates should drift towards the rate at which the same goods cost the same everywhere. If a Big Mac is much cheaper in one country once its price is converted to dollars, that currency looks undervalued.",
   "slides": [
     {
+      "type": "rank",
+      "heading": "Where was a Big Mac most expensive in July 2023? Prices in US dollars",
+      "items": [
+        {
+          "label": "Switzerland",
+          "value": 7.73
+        },
+        {
+          "label": "United States",
+          "value": 5.58,
+          "emphasis": true
+        },
+        {
+          "label": "Egypt",
+          "value": 2.62
+        },
+        {
+          "label": "Taiwan",
+          "value": 2.39
+        }
+      ],
+      "note": "Prices from The Economist’s July 2023 index; the Swiss franc looked 38.5% overvalued",
+      "explanation": "Switzerland’s cost the most. Egypt’s and Taiwan’s were under half the US price in dollars, so by the index’s logic those currencies looked undervalued."
+    },
+    {
       "type": "list",
       "heading": "The burger maths",
       "style": "steps",
@@ -21,10 +46,32 @@
       "type": "text",
       "heading": "Only a rough guide",
       "text": "A burger’s price includes local wages, rent and taxes, which can’t be traded across borders, so cheap Big Macs often just reflect lower labour costs. *The Economist* also publishes a version adjusted for income levels."
+    },
+    {
+      "type": "quiz",
+      "question": "Why can a cheap Big Mac mislead about a currency?",
+      "options": [
+        "It includes local wages and rent",
+        "Burgers are subsidised everywhere",
+        "McDonald’s sets one global price",
+        "Beef costs the same worldwide"
+      ],
+      "answer": 0,
+      "explanation": "A burger’s price includes local wages, rent and taxes, which can’t be traded across borders, so cheap Big Macs often just reflect lower labour costs."
     }
   ],
-  "tags": ["currency", "exchangerates", "ppp"],
-  "source": { "label": "Wikipedia: Big Mac Index", "url": "https://en.wikipedia.org/wiki/Big_Mac_Index" },
-  "author": { "name": "Claude", "kind": "ai" },
+  "tags": [
+    "currency",
+    "exchangerates",
+    "ppp"
+  ],
+  "source": {
+    "label": "Wikipedia: Big Mac Index",
+    "url": "https://en.wikipedia.org/wiki/Big_Mac_Index"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
   "createdAt": "2026-10-18"
 }

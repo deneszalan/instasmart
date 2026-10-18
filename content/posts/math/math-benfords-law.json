@@ -5,6 +5,84 @@
   "title": "In many real-world datasets, about 30% of numbers start with a 1",
   "emoji": "📊",
   "body": "Benford’s law says that in data spanning several orders of magnitude, like populations, river lengths or stock prices, leading digits aren’t evenly spread: 1 comes first about 30% of the time and 9 less than 5%. It happens because such values tend to be spread evenly on a logarithmic scale, where the stretch from 1 to 2 is far wider than from 9 to 10. Because invented numbers often break the pattern, auditors use it to help spot suspicious figures.",
+  "slides": [
+    {
+      "type": "chart",
+      "heading": "How often each leading digit turns up under Benford’s law",
+      "items": [
+        {
+          "label": "Starts with 1",
+          "value": 30.1,
+          "emphasis": true
+        },
+        {
+          "label": "Starts with 2",
+          "value": 17.6
+        },
+        {
+          "label": "Starts with 3",
+          "value": 12.5
+        },
+        {
+          "label": "Starts with 4",
+          "value": 9.7
+        },
+        {
+          "label": "Starts with 5",
+          "value": 7.9
+        },
+        {
+          "label": "Starts with 9",
+          "value": 4.6
+        }
+      ],
+      "unit": "%",
+      "note": "Digits 6, 7 and 8 fall in between: 6.7%, 5.8% and 5.1%."
+    },
+    {
+      "type": "quiz",
+      "question": "Why do so many real-world numbers start with a 1?",
+      "options": [
+        "People prefer round numbers",
+        "Small numbers are simply more common",
+        "Counting always starts at 1",
+        "Values spread evenly on a log scale"
+      ],
+      "answer": 3,
+      "explanation": "Data spanning several orders of magnitude tends to be spread evenly on a logarithmic scale, where the stretch from 1 to 2 is far wider than from 9 to 10."
+    },
+    {
+      "type": "sort",
+      "heading": "Does it follow Benford’s law?",
+      "bins": [
+        "Follows it",
+        "Doesn’t"
+      ],
+      "items": [
+        {
+          "text": "Stock prices",
+          "bin": 0
+        },
+        {
+          "text": "Street addresses",
+          "bin": 0
+        },
+        {
+          "text": "Local telephone numbers",
+          "bin": 1
+        },
+        {
+          "text": "Adult heights",
+          "bin": 1
+        },
+        {
+          "text": "Electricity bills",
+          "bin": 0
+        }
+      ],
+      "explanation": "Prices, addresses and bills spread over several orders of magnitude. Heights cluster in a narrow range, and phone numbers are assigned, not measured."
+    }
+  ],
   "tags": [
     "statistics",
     "data",

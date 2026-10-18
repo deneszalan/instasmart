@@ -1,0 +1,97 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-washington-monument-aluminium",
+  "field": "chemistry",
+  "title": "The Washington Monument is capped with aluminium because in 1884 it was a precious metal",
+  "emoji": "🗼",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Washington_Monument_%28July_2020%29.jpg/960px-Washington_Monument_%28July_2020%29.jpg",
+    "alt": "The white marble obelisk of the Washington Monument rising against a blue sky.",
+    "credit": "TheWxResearcher · CC0"
+  },
+  "body": "When the 169 m obelisk was finished in 1884, its builders topped it with a small pyramid of aluminium weighing **100 ounces, about 2.8 kg**, and 23 cm tall. It was then the largest piece of aluminium ever cast, and the metal was so hard to extract that it was still pricier than silver; before being set in place on 6 December 1884 the cap was displayed at Tiffany’s in New York, where visitors stepped over it so they could say they had stepped over the top of the Washington Monument. Just two years later the Hall–Héroult process, which pulls aluminium out of its oxide with electricity, turned it into an inexpensive commodity, and today more than 50 million tonnes are made a year. The cap also serves as a lightning rod, and strikes have vaporised about a centimetre from its tip.",
+  "slides": [
+    {
+      "type": "place",
+      "question": "In what year was the aluminium cap set on the monument?",
+      "min": 1800,
+      "max": 1900,
+      "step": 1,
+      "answer": 1884,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Ørsted’s find",
+          "value": 1825
+        },
+        {
+          "label": "Deville plant",
+          "value": 1856
+        }
+      ],
+      "explanation": "6 December 1884. Just two years later, in 1886, Hall and Héroult independently found how to make aluminium cheaply with electricity, and the price collapsed."
+    },
+    {
+      "type": "stat",
+      "value": "2.8 kg",
+      "label": "of aluminium in the cap, then the largest piece ever cast",
+      "text": "100 ounces, 23 cm tall, cast by William Frishmuth of Philadelphia. Lightning has since vaporised about 1 cm from the tip."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Aluminum_apex_Repaired_1934.png/960px-Aluminum_apex_Repaired_1934.png",
+      "alt": "Close-up of the Washington Monument’s small aluminium pyramid, with inscriptions engraved on its faces.",
+      "caption": "The aluminium apex, with its engraved inscriptions, photographed in 1934.",
+      "fit": "cover",
+      "credit": "Theodor Horydczak · Public domain"
+    },
+    {
+      "type": "chart",
+      "heading": "The real price of aluminium, in dollars per tonne",
+      "items": [
+        {
+          "label": "1900",
+          "value": 14000
+        },
+        {
+          "label": "1948",
+          "value": 2340
+        }
+      ],
+      "unit": "$",
+      "note": "Before 1886 it cost more than silver; in the early 1800s, more than gold or platinum"
+    },
+    {
+      "type": "text",
+      "heading": "Why so precious?",
+      "text": "Aluminium is the most abundant metal in Earth’s crust, but it clings to oxygen so tightly that it never occurs as a free metal, and early chemists could free it only in tiny, costly batches. Hall and Héroult dissolved its oxide, alumina, in molten cryolite and split it with an electric current."
+    },
+    {
+      "type": "quiz",
+      "question": "What happened to aluminium two years after the cap was set?",
+      "options": [
+        "A cheap electric process arrived",
+        "It was banned from buildings",
+        "It became rarer still",
+        "The cap was swapped for gold"
+      ],
+      "answer": 0,
+      "explanation": "In 1886 Charles Martin Hall and Paul Héroult independently invented electrolytic smelting. Aluminium went from precious metal to the everyday stuff of cans and foil."
+    }
+  ],
+  "tags": [
+    "aluminium",
+    "metals",
+    "history",
+    "monuments"
+  ],
+  "source": {
+    "label": "Wikipedia: Washington Monument",
+    "url": "https://en.wikipedia.org/wiki/Washington_Monument"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

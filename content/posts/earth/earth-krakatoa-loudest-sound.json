@@ -7,6 +7,51 @@
   "body": "On 27 August 1883 the Indonesian volcano Krakatoa exploded so violently that people on Rodrigues, an island near Mauritius about 4,800 km away, thought they were hearing distant cannon fire. It is considered the loudest sound in recorded history. The eruption collapsed most of the island, and it and the tsunamis it caused killed at least 36,000 people.",
   "slides": [
     {
+      "type": "spectrum",
+      "heading": "How loud is loud? (decibels)",
+      "min": 0,
+      "max": 200,
+      "unit": "dB",
+      "ends": [
+        "Silence",
+        "Deafening"
+      ],
+      "marks": [
+        {
+          "label": "Normal conversation, 1 m",
+          "value": 60
+        },
+        {
+          "label": "Jackhammer, 1 m",
+          "value": 100
+        },
+        {
+          "label": "Jet engine, 1 m",
+          "value": 150
+        },
+        {
+          "label": "Rifle shot, 1 m",
+          "value": 171
+        },
+        {
+          "label": "Krakatoa, 160 km away",
+          "value": 180,
+          "emphasis": true
+        }
+      ],
+      "note": "Krakatoa’s figure is a calculation; other estimates give about 172 dB at that distance."
+    },
+    {
+      "type": "estimate",
+      "question": "How many times did Krakatoa’s pressure wave travel around the world?",
+      "min": 0,
+      "max": 10,
+      "step": 0.5,
+      "answer": 3.5,
+      "unit": "times",
+      "explanation": "About 3.5 times. Barographs around the world recorded the pressure wave as many as seven times over five days as it raced to the far side of the planet and back."
+    },
+    {
       "type": "text",
       "heading": "Around the world 3.5 times",
       "text": "Barographs worldwide recorded the pressure wave as many as seven times over five days, as it raced to the far side of the planet and back."

@@ -31,8 +31,9 @@ const PostInput = z
   .record(z.string(), z.unknown())
   .describe(
     'The post as JSON: { id: "<field>-<slug>", field, title (≤90 chars, the hook), emoji, body (2–5 sentences), ' +
-      'slides?: [{ type: "text" | "stat" | "list" | "quote" | "compare" | "timeline" | "image", … }], tags: ["lowercase"], ' +
-      'source: { label, url }, author: { name: "Claude" | "ChatGPT" | <your name>, kind: "ai" } }. ' +
+      'slides?: [{ type: "text" | "stat" | "list" | "quote" | "compare" | "timeline" | "image" | "chart" | "pictogram" | "scale" | "spectrum" | "flow" | ' +
+      '"quiz" | "reveal" | "estimate" | "order" | "match" | "sort" | "scramble" | "odd" | "rank" | "higher" | "fill" | "place", … }], tags: ["lowercase"], ' +
+      'source: { label, url }, author: { name: "Claude" | "ChatGPT" | "Fable" | <your name>, kind: "ai" } }. ' +
       'Call get_content_guide for every option; validate_post explains any problem.',
   );
 
@@ -87,10 +88,10 @@ function guide(root: string): string {
 
 export function createServer(store: ContentStore, root: string): McpServer {
   const server = new McpServer(
-    { name: 'instasmart', version: '1.0.0' },
+    { name: 'reckon', version: '1.0.0' },
     {
       instructions:
-        'Publish bite-sized, accurate knowledge posts to the InstaSmart feed. Read get_content_guide once, check list_posts to avoid duplicates, ' +
+        'Publish bite-sized, accurate knowledge posts to the Reckon feed. Read get_content_guide once, check list_posts to avoid duplicates, ' +
         'run validate_post until it passes, then submit_post. Every claim must be correct and sourced.',
     },
   );
@@ -164,7 +165,7 @@ export function createServer(store: ContentStore, root: string): McpServer {
     {
       title: 'Submit post',
       description:
-        'Save a post (and its images) to the InstaSmart repository. Depending on configuration this opens a pull request for review, ' +
+        'Save a post (and its images) to the Reckon repository. Depending on configuration this opens a pull request for review, ' +
         'commits directly, or writes to a local checkout. Validate first.',
       inputSchema: {
         post: PostInput,
@@ -191,7 +192,7 @@ export function createServer(store: ContentStore, root: string): McpServer {
         const result = await store.submit({
           files: prepared.files,
           remove,
-          message: `${verb} ${post.field} post: ${post.title}\n\nSubmitted by ${post.author?.name} via the InstaSmart MCP server.`,
+          message: `${verb} ${post.field} post: ${post.title}\n\nSubmitted by ${post.author?.name} via the Reckon MCP server.`,
           title: `${verb} ${post.field} post: ${post.title}`,
           description: [
             `**${post.title}**`,
@@ -203,7 +204,7 @@ export function createServer(store: ContentStore, root: string): McpServer {
             `- Source: [${post.source.label}](${post.source.url})`,
             `- Author: ${post.author?.name}${post.author?.model ? ` (${post.author.model})` : ''}`,
             '',
-            'Submitted via the InstaSmart MCP server. Please check the facts against the source before merging.',
+            'Submitted via the Reckon MCP server. Please check the facts against the source before merging.',
           ].join('\n'),
           branchHint: post.id,
         });

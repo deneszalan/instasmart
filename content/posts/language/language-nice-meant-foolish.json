@@ -5,6 +5,58 @@
   "title": "Calling someone ‘nice’ once meant they were foolish",
   "emoji": "🙂",
   "body": "‘Nice’ comes from Latin nescius, ‘not knowing’, and reached English through Old French, where it meant simple or foolish. Over the centuries it drifted to ‘fussy’, then ‘delicate’, then ‘precise’, a sense that survives in ‘a nice distinction’, before meaning ‘agreeable’ by the 1760s and ‘kind’ by the 1830s. Linguists call this semantic change: a word keeps its form while its meaning wanders.",
+  "slides": [
+    {
+      "type": "place",
+      "question": "‘Nice’ entered English meaning ‘foolish’. When is it first recorded meaning ‘agreeable, delightful’?",
+      "min": 1300,
+      "max": 1900,
+      "step": 1,
+      "answer": 1769,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Means ‘kind’",
+          "value": 1830
+        }
+      ],
+      "explanation": "1769, after centuries of drift: fussy by the late 1300s, dainty around 1400, precise in the 1500s, as in ‘a nice distinction’. The sense ‘kind, thoughtful’ followed in 1830."
+    },
+    {
+      "type": "flow",
+      "heading": "How ‘nice’ wandered",
+      "steps": [
+        {
+          "icon": "🏛️",
+          "label": "Latin nescius: ‘not knowing’"
+        },
+        {
+          "icon": "🤪",
+          "label": "Old French, then English: simple, foolish"
+        },
+        {
+          "icon": "🧐",
+          "label": "Fussy, then delicate, then precise"
+        },
+        {
+          "icon": "🙂",
+          "label": "Agreeable by the 1760s, kind by the 1830s"
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "heading": "Meanings of ‘nice’, oldest first",
+      "items": [
+        "Foolish",
+        "Fussy",
+        "Delicate",
+        "Precise",
+        "Agreeable"
+      ],
+      "explanation": "From Latin nescius, ‘not knowing’: foolish, then fussy, delicate and precise (as in ‘a nice distinction’), then agreeable by the 1760s and kind by the 1830s."
+    }
+  ],
   "tags": [
     "language",
     "etymology",

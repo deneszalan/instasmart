@@ -5,6 +5,69 @@
   "title": "Two squares that look completely different can be the exact same grey",
   "emoji": "♟️",
   "body": "In Edward Adelson’s 1995 checker shadow illusion, a square in the light looks dark and a square in a cylinder’s shadow looks light, yet on the page they are exactly the same shade. Your visual system isn’t measuring raw brightness: it estimates the true colour of surfaces by compensating for lighting and shadows. That usually helps you see the world accurately, but here it makes identical patches look strikingly different.",
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "How identical greys come to look different",
+      "steps": [
+        {
+          "icon": "💡",
+          "label": "A cylinder casts a shadow across the board"
+        },
+        {
+          "icon": "👁️",
+          "label": "Two squares send the same grey to your eye"
+        },
+        {
+          "icon": "🧠",
+          "label": "The brain corrects for the shadow it sees"
+        },
+        {
+          "icon": "✨",
+          "label": "So the shaded square looks lighter"
+        }
+      ]
+    },
+    {
+      "type": "place",
+      "question": "When did Adelson publish the checker shadow illusion?",
+      "min": 1850,
+      "max": 2025,
+      "step": 1,
+      "answer": 1995,
+      "format": "year",
+      "ends": [
+        "1850",
+        "2025"
+      ],
+      "hints": [
+        {
+          "label": "Müller-Lyer",
+          "value": 1889
+        },
+        {
+          "label": "Stroop test",
+          "value": 1935
+        },
+        {
+          "label": "The dress",
+          "value": 2015
+        }
+      ],
+      "explanation": "Edward H. Adelson, a vision scientist at MIT, published it in 1995: a modern classic, a century after Müller-Lyer’s arrows and two decades before the dress photo divided the internet."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does the square in the shadow look lighter than it really is?",
+      "options": [
+        "The brain compensates for the shadow",
+        "The pupil widens over dark areas",
+        "The printed shades are slightly off"
+      ],
+      "answer": 0,
+      "explanation": "Your visual system isn’t measuring raw brightness: it estimates the true colour of surfaces by compensating for lighting and shadows, which usually helps you see accurately."
+    }
+  ],
   "tags": [
     "perception",
     "illusions",

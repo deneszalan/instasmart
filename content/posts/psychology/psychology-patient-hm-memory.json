@@ -1,0 +1,128 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "psychology-patient-hm-memory",
+  "field": "psychology",
+  "title": "A 1953 operation left a man unable to form new memories for 55 years",
+  "emoji": "🧠",
+  "body": "Henry Molaison had severe epilepsy. On 1 September 1953, aged 27, neurosurgeon William Beecher Scoville removed the medial temporal lobes on both sides of his brain, including the hippocampi. The seizures eased, but Molaison could **no longer form new long-term memories**, and he lost most of the one to two years before the operation. Childhood memories, intelligence, working memory and the ability to learn skills survived, which taught science that memory is not one thing. Known as H.M., he was studied from 1957 until his death in 2008.",
+  "slides": [
+    {
+      "type": "compare",
+      "heading": "Lost and kept",
+      "left": {
+        "label": "Lost",
+        "text": "New long-term memories, and most events from the one to two years before surgery."
+      },
+      "right": {
+        "label": "Kept",
+        "text": "Childhood memories, normal scores on intelligence tests, working memory, and the ability to learn new skills."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "The mirror-drawing test",
+      "text": "Brenda Milner asked him to trace a shape while watching his hand only in a mirror. Over several days he got steadily better, even though each time he had no memory of ever having done the task before. Skill learning, it turned out, runs on different circuits from conscious memory."
+    },
+    {
+      "type": "flow",
+      "heading": "The mirror-drawing test",
+      "steps": [
+        {
+          "icon": "⭐",
+          "label": "Trace a star while watching a mirror only"
+        },
+        {
+          "icon": "📈",
+          "label": "Ten tries a day: his errors fall day by day"
+        },
+        {
+          "icon": "🤷",
+          "label": "Yet each day he says he has never done it"
+        },
+        {
+          "icon": "🧠",
+          "label": "Skill memory runs on separate circuits"
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "H.M.",
+      "events": [
+        {
+          "when": "1 Sep 1953",
+          "text": "Scoville removes his medial temporal lobes to treat epilepsy"
+        },
+        {
+          "when": "1957",
+          "text": "Case reported by Scoville and Brenda Milner under the initials H.M."
+        },
+        {
+          "when": "2008",
+          "text": "Dies; his full name is made public"
+        },
+        {
+          "when": "2009",
+          "text": "His brain is cut into histological sections at UC San Diego"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Which ability did H.M. keep after the operation?",
+      "options": [
+        "Forming new long-term memories",
+        "Learning new motor skills",
+        "Recalling the year before surgery",
+        "Recognising new researchers"
+      ],
+      "answer": 1,
+      "explanation": "He improved at mirror drawing over days without remembering practising. Procedural and working memory were intact; new long-term memories were not."
+    },
+    {
+      "type": "sort",
+      "heading": "After the operation: lost or kept?",
+      "bins": [
+        "Lost",
+        "Kept"
+      ],
+      "items": [
+        {
+          "text": "Forming new long-term memories",
+          "bin": 0
+        },
+        {
+          "text": "Childhood memories",
+          "bin": 1
+        },
+        {
+          "text": "Working memory",
+          "bin": 1
+        },
+        {
+          "text": "Learning new motor skills",
+          "bin": 1
+        },
+        {
+          "text": "Most of the year or two before surgery",
+          "bin": 0
+        }
+      ],
+      "explanation": "Removing the hippocampi stopped new long-term memories, but skills, intelligence, working memory and old memories survived."
+    }
+  ],
+  "tags": [
+    "memory",
+    "neuroscience",
+    "brain"
+  ],
+  "source": {
+    "label": "Wikipedia: Henry Molaison",
+    "url": "https://en.wikipedia.org/wiki/Henry_Molaison"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

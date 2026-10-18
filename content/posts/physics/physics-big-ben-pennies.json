@@ -1,0 +1,115 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-big-ben-pennies",
+  "field": "physics",
+  "title": "Big Ben’s clock is kept on time with a stack of old pennies",
+  "emoji": "🪙",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Elizabeth_Tower_2014-09-21_205MP.jpg/960px-Elizabeth_Tower_2014-09-21_205MP.jpg",
+    "alt": "The Elizabeth Tower at the Palace of Westminster in London, with a dial of the Great Clock near the top, against a blue sky.",
+    "credit": "Colin · CC BY-SA 4.0"
+  },
+  "body": "The Great Clock in London’s Elizabeth Tower, the one whose bell is Big Ben, is regulated with a small stack of pre-decimal pennies on its pendulum. Adding a coin lifts the pendulum’s centre of mass by a hair, which shortens its effective length and makes it swing very slightly faster: **one penny changes the clock’s rate by 0.4 seconds a day**. The clockmakers add or remove coins to keep it within a few seconds a week. In 2009 three of the pennies were replaced by a £5 commemorative coin.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Adding a penny to the pendulum makes the clock run faster, not slower. Why?",
+      "answer": "It lifts the centre of mass",
+      "detail": "A pendulum’s period depends on its length. A coin on the tray minutely raises the swinging mass’s centre, shortening the effective pendulum, so it swings faster."
+    },
+    {
+      "type": "stat",
+      "value": "0.4 s",
+      "label": "a day: the change in the clock’s rate from one penny",
+      "text": "Add a coin and the clock gains, remove one and it loses. In August 2015 it was found running seven seconds fast and corrected by taking coins off."
+    },
+    {
+      "type": "flow",
+      "heading": "How a penny speeds the clock",
+      "steps": [
+        {
+          "icon": "🪙",
+          "label": "A penny is laid on the pendulum"
+        },
+        {
+          "icon": "⚖️",
+          "label": "Its centre of mass rises a fraction"
+        },
+        {
+          "icon": "📏",
+          "label": "The effective length gets shorter"
+        },
+        {
+          "icon": "⏱️",
+          "label": "Each swing takes slightly less time"
+        },
+        {
+          "icon": "⏰",
+          "label": "The clock gains 0.4 s a day"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "How accurate is it?",
+      "text": "The clock keeps time to within a few seconds a week, and the design brief was that the first stroke of each hour be correct to a second against Greenwich Mean Time. On New Year’s Eve 2024 it struck midnight within about five thousandths of a second."
+    },
+    {
+      "type": "timeline",
+      "heading": "The Great Clock",
+      "events": [
+        {
+          "when": "Apr 1859",
+          "text": "The clock is installed in the tower"
+        },
+        {
+          "when": "Jul 1859",
+          "text": "The recast 13.7-tonne bell first chimes"
+        },
+        {
+          "when": "Sep 1859",
+          "text": "The bell cracks; it still rings today"
+        },
+        {
+          "when": "2009",
+          "text": "Three pennies swapped for a £5 coin"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/London_Big_Ben_Inner_Clock_Face_1070925-PSD.jpg/960px-London_Big_Ben_Inner_Clock_Face_1070925-PSD.jpg",
+      "alt": "The inside of one of the Great Clock’s dials, seen from within the Elizabeth Tower.",
+      "caption": "Behind one of the four dials, each 6.9 m across.",
+      "fit": "cover",
+      "credit": "Ermell · CC BY-SA 4.0"
+    },
+    {
+      "type": "quiz",
+      "question": "The clock is running a little fast. What do the clockmakers do?",
+      "options": [
+        "Take a penny off the pendulum",
+        "Add a penny to the pendulum",
+        "Shorten the pendulum rod",
+        "Wind it less often"
+      ],
+      "answer": 0,
+      "explanation": "Removing a coin lowers the centre of mass, lengthening the effective pendulum, so it swings slower and the clock loses about 0.4 s a day per penny."
+    }
+  ],
+  "tags": [
+    "clocks",
+    "pendulum",
+    "london",
+    "time"
+  ],
+  "source": {
+    "label": "Wikipedia: Big Ben",
+    "url": "https://en.wikipedia.org/wiki/Big_Ben"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

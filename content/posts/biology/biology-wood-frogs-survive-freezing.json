@@ -1,0 +1,116 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-wood-frogs-survive-freezing",
+  "field": "biology",
+  "title": "Wood frogs can survive with ice inside their bodies",
+  "emoji": "🐸",
+  "body": "A wood frog can spend winter partly frozen, with **no heartbeat or breathing**, then become active again after thawing. Ice forms outside its cells, while its liver releases large amounts of glucose, a sugar that helps protect the cells from freezing and losing water. This lets the frog overwinter in leaf litter on the forest floor. The crucial trick is controlling where ice forms, rather than freezing every cell solid.",
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "A wood frog’s winter",
+      "steps": [
+        {
+          "icon": "🧊",
+          "label": "Cold sets in: ice forms outside its cells"
+        },
+        {
+          "icon": "🍬",
+          "label": "The liver floods the body with glucose"
+        },
+        {
+          "icon": "❄️",
+          "label": "No heartbeat and no breathing all winter"
+        },
+        {
+          "icon": "🌱",
+          "label": "Spring: it thaws from the inside out"
+        }
+      ],
+      "cycle": true
+    },
+    {
+      "type": "compare",
+      "heading": "Location makes the difference",
+      "left": {
+        "label": "Outside cells",
+        "text": "Ice can form between tissues and around organs during the frog's winter freeze."
+      },
+      "right": {
+        "label": "Inside cells",
+        "text": "Protective substances help keep cell interiors from freezing and limit dehydration."
+      }
+    },
+    {
+      "type": "list",
+      "heading": "A winter survival sequence",
+      "style": "steps",
+      "items": [
+        "Cooling triggers ice formation and the release of protective glucose.",
+        "Heartbeat and breathing stop as the frog freezes.",
+        "Warming allows thawing, followed by the return of body functions."
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Frozen does not mean dead",
+      "text": "This is a specialized survival adaptation. The frog remains alive through conditions that would kill most animals."
+    },
+    {
+      "type": "quiz",
+      "question": "Where does ice form inside a frozen wood frog?",
+      "options": [
+        "Outside its cells",
+        "Inside every cell",
+        "Only in its skin"
+      ],
+      "answer": 0,
+      "explanation": "Ice forms between tissues and around organs, while glucose released by the liver helps protect the insides of cells from freezing and losing water."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Its heart stops while it is frozen",
+          "bin": 0
+        },
+        {
+          "text": "It keeps breathing slowly while frozen",
+          "bin": 1
+        },
+        {
+          "text": "Its liver releases glucose to protect its cells",
+          "bin": 0
+        },
+        {
+          "text": "It thaws from the outside in",
+          "bin": 1
+        },
+        {
+          "text": "It overwinters in leaf litter on the forest floor",
+          "bin": 0
+        }
+      ],
+      "explanation": "Frozen, the frog has no heartbeat and no breathing. In spring it thaws from the inside outward, the heart restarting first."
+    }
+  ],
+  "tags": [
+    "frogs",
+    "winter",
+    "adaptation"
+  ],
+  "source": {
+    "label": "National Park Service: Wood Frog — Biological Miracle",
+    "url": "https://www.nps.gov/gaar/learn/nature/wood-frog-page-2.htm"
+  },
+  "author": {
+    "name": "ChatGPT",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

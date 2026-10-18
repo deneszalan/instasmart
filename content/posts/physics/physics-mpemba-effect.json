@@ -5,6 +5,26 @@
   "title": "Hot water may freeze faster than cold — scientists still argue",
   "emoji": "🍦",
   "body": "The Mpemba effect is named after Erasto Mpemba, a Tanzanian student who in the 1960s noticed that a hot ice-cream mix froze faster than a cool one, and later studied it with physicist Denis Osborne. Aristotle, Francis Bacon and Descartes described similar things. Suggested causes include evaporation, dissolved gases, convection and supercooling, but careful experiments often fail to reproduce it, and results depend on the setup and on what counts as “frozen”.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Erasto Mpemba was a student in the 1960s when he noticed the effect. What was he freezing?",
+      "answer": "A hot ice-cream mix",
+      "detail": "It froze faster than a cool one. He later studied the effect with physicist Denis Osborne, and it was named after him."
+    },
+    {
+      "type": "odd",
+      "heading": "Which is not a suggested cause?",
+      "items": [
+        "Dissolved gases",
+        "Convection",
+        "Supercooling",
+        "Radioactivity"
+      ],
+      "answer": 3,
+      "explanation": "Dissolved gases, convection and supercooling all feature in proposed explanations of the Mpemba effect. Radioactivity has nothing to do with it."
+    }
+  ],
   "tags": [
     "water",
     "thermodynamics",

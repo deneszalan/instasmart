@@ -7,6 +7,49 @@
   "body": "Today’s AI boom rests on an old idea. In 1943 Warren McCulloch and Walter Pitts showed how simplified on-off neurons could compute logic, and in 1958 Frank Rosenblatt unveiled the perceptron, which learned to classify simple patterns by adjusting the strength of its connections. Interest rose and fell for decades before more data, better training methods and fast graphics chips made deep networks work in the 2010s.",
   "slides": [
     {
+      "type": "order",
+      "heading": "Oldest first",
+      "items": [
+        "McCulloch and Pitts model neurons",
+        "Rosenblatt unveils the perceptron",
+        "Minsky and Papert’s Perceptrons book",
+        "Backpropagation is popularised",
+        "AlexNet wins ImageNet"
+      ],
+      "explanation": "1943 McCulloch and Pitts, 1958 the perceptron, 1969 the Perceptrons book and a long lull, 1986 backpropagation, 2012 AlexNet and the deep learning era."
+    },
+    {
+      "type": "spectrum",
+      "heading": "Seven decades from the first model to the deep learning boom",
+      "min": 1940,
+      "max": 2020,
+      "marks": [
+        {
+          "label": "McCulloch and Pitts",
+          "value": 1943,
+          "emphasis": true
+        },
+        {
+          "label": "Rosenblatt’s perceptron",
+          "value": 1958
+        },
+        {
+          "label": "The book Perceptrons",
+          "value": 1969
+        },
+        {
+          "label": "Backpropagation",
+          "value": 1986
+        },
+        {
+          "label": "AlexNet wins ImageNet",
+          "value": 2012,
+          "emphasis": true
+        }
+      ],
+      "note": "Interest rose and fell twice before data, training tricks and graphics chips came together."
+    },
+    {
       "type": "text",
       "heading": "1969: the setback",
       "text": "Marvin Minsky and Seymour Papert’s book Perceptrons showed a single-layer perceptron cannot learn even XOR, and interest in the approach faded for years."
@@ -20,6 +63,29 @@
       "type": "text",
       "heading": "2012: the breakthrough",
       "text": "AlexNet, a deep network trained on graphics chips, won the ImageNet image-recognition contest by a wide margin, kicking off the deep learning era."
+    },
+    {
+      "type": "match",
+      "heading": "Who did what?",
+      "pairs": [
+        {
+          "left": "McCulloch and Pitts",
+          "right": "Neurons that compute logic"
+        },
+        {
+          "left": "Frank Rosenblatt",
+          "right": "The perceptron"
+        },
+        {
+          "left": "Minsky and Papert",
+          "right": "The book Perceptrons"
+        },
+        {
+          "left": "Rumelhart, Hinton, Williams",
+          "right": "Backpropagation"
+        }
+      ],
+      "explanation": "1943, 1958, 1969 and 1986: the idea kept returning, each time with a new way to learn."
     }
   ],
   "tags": [

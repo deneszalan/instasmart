@@ -1,0 +1,107 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-ybc-7289-square-root-two",
+  "field": "math",
+  "title": "A student's clay tablet from about 1700 BC gives √2 to six decimal places",
+  "emoji": "🧱",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/YBC-7289-OBV-REV.jpg/960px-YBC-7289-OBV-REV.jpg",
+    "alt": "Both faces of a small, round, palm-sized clay tablet; one shows a square with its two diagonals and wedge-shaped cuneiform numbers.",
+    "credit": "A. Urcia, Yale Peabody Museum · CC0"
+  },
+  "body": "**YBC 7289** is a small round tablet, probably made in southern Mesopotamia between 1800 and 1600 BC. It shows a square with both diagonals, and along one diagonal a number written in base 60: 1;24,51,10. That works out to about 1.414213, the square root of 2, off by less than one part in 2 million. It is the equivalent of six decimal digits, which scholars have called the greatest known computational accuracy anywhere in the ancient world. The student who scratched it probably copied the value from a table of constants, but other Babylonian tablets show a step-by-step method for computing such roots.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/YBC-7289-OBV-labeled.jpg/960px-YBC-7289-OBV-labeled.jpg",
+      "alt": "The front of the tablet with modern labels added: 30 on the side of the square, 1 24 51 10 along the diagonal and 42 25 35 below it.",
+      "caption": "The side of the square is labelled 30. Along the diagonal is √2 in base 60, and below it the diagonal of a square of side 30.",
+      "fit": "contain",
+      "credit": "A. Urcia, Yale Peabody Museum; labels Theodor L. Franklin · CC0"
+    },
+    {
+      "type": "text",
+      "heading": "Reading base 60",
+      "text": "Babylonian scribes counted in sixties, as we still do with minutes and seconds. So 1;24,51,10 means 1 + 24/60 + 51/3,600 + 10/216,000, which is 1.41421296… The true value of √2 is 1.41421356…"
+    },
+    {
+      "type": "match",
+      "heading": "Match each digit to its place",
+      "pairs": [
+        {
+          "left": "1",
+          "right": "Whole units"
+        },
+        {
+          "left": "24",
+          "right": "Sixtieths"
+        },
+        {
+          "left": "51",
+          "right": "3,600ths"
+        },
+        {
+          "left": "10",
+          "right": "216,000ths"
+        }
+      ],
+      "explanation": "Each place is worth 60 times less than the one before it, just as each decimal place is worth 10 times less."
+    },
+    {
+      "type": "stat",
+      "value": "< 1 in 2 million",
+      "label": "how far the tablet's value is from the true √2",
+      "text": "The Greek astronomer Ptolemy used exactly the same base-60 value many centuries later in his Almagest, without saying where it came from."
+    },
+    {
+      "type": "flow",
+      "heading": "The student's sum",
+      "steps": [
+        {
+          "icon": "📜",
+          "label": "Copy √2 from a table of constants"
+        },
+        {
+          "icon": "✖️",
+          "label": "Multiply it by the side, 30"
+        },
+        {
+          "icon": "📐",
+          "label": "Write the diagonal: 42;25,35, about 42.426"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Where's the point?",
+      "text": "Babylonian numbers had no mark showing which digit stood for units. So the 30 might really mean 30/60, a half. Read that way, the diagonal number is about 0.70711, which is 1 divided by √2. Historians aren't sure which reading the student intended."
+    },
+    {
+      "type": "quiz",
+      "question": "Why do historians think a student, not a master scribe, made this tablet?",
+      "options": [
+        "It's small, round and boldly written",
+        "It has spelling mistakes",
+        "It is signed with a child's name",
+        "The sums are wrong"
+      ],
+      "answer": 0,
+      "explanation": "Its small round shape and large writing match a \"hand tablet\", held in the palm for rough work. The arithmetic itself is excellent."
+    }
+  ],
+  "tags": [
+    "babylon",
+    "squareroot",
+    "history",
+    "numbers"
+  ],
+  "source": {
+    "label": "Wikipedia: YBC 7289",
+    "url": "https://en.wikipedia.org/wiki/YBC_7289"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

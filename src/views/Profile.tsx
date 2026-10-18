@@ -16,6 +16,9 @@ export function Profile() {
   const learned = LIBRARY.filter((c) => seenIds.has(c.id)).length;
   const days = streak(state.activeDays);
   const pct = Math.round((learned / LIBRARY.length) * 100);
+  const results = Object.values(state.challenges);
+  const scored = results.filter((r) => r.correct !== null);
+  const right = scored.filter((r) => r.correct).length;
 
   const perField = FIELDS.map((f) => {
     const cards = LIBRARY.filter((c) => c.field === f.id);
@@ -55,6 +58,16 @@ export function Profile() {
           <p className="streak__title">{days > 0 ? `${days}-day learning streak` : 'Start a streak today'}</p>
           <p className="streak__sub">Read at least one piece a day to keep it going.</p>
         </div>
+      </section>
+
+      <section className="card-box">
+        <div className="progress-row">
+          <span>Challenges</span>
+          <span>
+            {results.length} played{scored.length ? ` · ${right}/${scored.length} right` : ''}
+          </span>
+        </div>
+        <p className="streak__sub">Quizzes, guesses and ordering puzzles inside posts.</p>
       </section>
 
       <section className="card-box">
@@ -134,7 +147,7 @@ export function Profile() {
       </section>
 
       <p className="about">
-        Posts live as files in the InstaSmart GitHub repository. Ones marked AI were written by an AI, and every post links
+        Posts live as files in the Reckon GitHub repository. Ones marked AI were written by an AI, and every post links
         a source so you can check it. Live posts come from Wikipedia’s featured content, under CC BY-SA.
       </p>
     </div>

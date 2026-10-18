@@ -7,6 +7,28 @@
   "body": "Mitochondria, which generate most of a cell’s usable energy, are thought to descend from bacteria that were engulfed by another single-celled organism and ended up living inside it permanently, well over a billion years ago. This idea, known as symbiogenesis or endosymbiotic theory, was championed by Lynn Margulis in 1967 and is now the leading explanation for the origin of complex cells. Plant chloroplasts are thought to come from captured cyanobacteria in the same way.",
   "slides": [
     {
+      "type": "flow",
+      "heading": "How a cell got its power plants",
+      "steps": [
+        {
+          "icon": "🦠",
+          "label": "A single-celled host engulfs a bacterium"
+        },
+        {
+          "icon": "⚡",
+          "label": "The bacterium survives and lives inside it"
+        },
+        {
+          "icon": "🤝",
+          "label": "Host and guest become inseparable"
+        },
+        {
+          "icon": "🔋",
+          "label": "Over a billion years on: your mitochondria"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "Clue 1: their own DNA",
       "text": "Mitochondria carry their own small chromosome, separate from the cell nucleus, and in many cases it is a single circular molecule like a bacterium’s."
@@ -20,6 +42,40 @@
       "type": "text",
       "heading": "Clue 3: a bacterial wrapper",
       "text": "Their inner membrane contains cardiolipin, a lipid otherwise found in bacterial membranes, and their outer membrane has bacteria-like porin proteins."
+    },
+    {
+      "type": "quiz",
+      "question": "In the same theory, where do plant chloroplasts come from?",
+      "options": [
+        "Captured cyanobacteria",
+        "Modified mitochondria",
+        "Folds of the cell nucleus"
+      ],
+      "answer": 0,
+      "explanation": "Endosymbiotic theory holds that chloroplasts descend from cyanobacteria taken in by another cell, just as mitochondria descend from engulfed bacteria."
+    },
+    {
+      "type": "match",
+      "heading": "Match each feature to its bacterial echo",
+      "pairs": [
+        {
+          "left": "Their DNA",
+          "right": "A small circular chromosome"
+        },
+        {
+          "left": "How they multiply",
+          "right": "Splitting, like bacteria"
+        },
+        {
+          "left": "Inner membrane",
+          "right": "Contains cardiolipin"
+        },
+        {
+          "left": "Outer membrane",
+          "right": "Bacteria-like porins"
+        }
+      ],
+      "explanation": "Circular DNA, division like binary fission, cardiolipin and porins are all bacterial traits, the fingerprints of the mitochondrion’s ancestry."
     }
   ],
   "tags": [

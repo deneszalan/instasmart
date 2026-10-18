@@ -1,0 +1,65 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-taj-mahal-minarets-lean",
+  "field": "art",
+  "title": "The Taj Mahal’s four minarets lean outward so they would fall away from the tomb",
+  "emoji": "🕌",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/960px-Taj_Mahal_%28Edited%29.jpeg",
+    "alt": "The Taj Mahal in Agra: the white marble mausoleum with its great central dome and four slender minarets, reflected in the long pool of the gardens in front.",
+    "credit": "Yann, edited by Jim Carter · CC BY-SA 4.0"
+  },
+  "body": "Each of the four minarets framing the Taj Mahal is more than 40 m tall and was built slightly tilted outward, so that in the event of a collapse the towers would tend to fall away from the central tomb rather than onto it. The mausoleum was commissioned by the Mughal emperor Shah Jahan after his wife Mumtaz Mahal died in 1631 giving birth to their fourteenth child. Construction began in 1632; the mausoleum was complete by 1648 and the whole complex by about 1653. More than 20,000 artisans and labourers are believed to have worked on it, and 28 types of precious and semi-precious stone were inlaid into its white Makrana marble.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/One_of_the_four_minarets_of_Taj_Mahal.jpg/960px-One_of_the_four_minarets_of_Taj_Mahal.jpg",
+      "alt": "One of the Taj Mahal’s white marble minarets in morning light, a tall tapering tower with balconies and a small domed pavilion on top.",
+      "caption": "One of the four minarets in morning light. Each is more than 40 m tall and was built with a slight outward tilt, away from the tomb.",
+      "fit": "cover",
+      "credit": "Dey.sandip · CC BY 3.0"
+    },
+    {
+      "type": "estimate",
+      "question": "How many artisans and labourers are thought to have worked on the Taj Mahal?",
+      "min": 1000,
+      "max": 100000,
+      "step": 1000,
+      "answer": 20000,
+      "explanation": "More than 20,000, with teams of oxen and elephants hauling marble up a 15 km earthen ramp. The bill came to about 32 million rupees of the day."
+    },
+    {
+      "type": "chart",
+      "heading": "Heights, in metres",
+      "items": [
+        { "label": "Whole building", "value": 73 },
+        { "label": "Minaret", "value": 40, "emphasis": true },
+        { "label": "Main dome", "value": 23 }
+      ],
+      "unit": "m",
+      "note": "The minarets are a little over 40 m; 23 m is the height of the dome itself."
+    },
+    {
+      "type": "text",
+      "heading": "A changing colour",
+      "text": "The marble seems to change colour through the day: pinkish in the morning, milky white at noon, golden under the moon and sometimes bluish in certain light, as the stone’s surface reacts to light and moisture. Shah Jahan’s own tomb was later placed beside his wife’s inside the mausoleum."
+    },
+    {
+      "type": "quiz",
+      "question": "Where does the Taj Mahal’s white marble come from?",
+      "options": ["Makrana, in Rajasthan", "Carrara, in Italy", "The Himalayan foothills", "Quarries on the Nile"],
+      "answer": 0,
+      "explanation": "The mausoleum is white Makrana marble from Rajasthan; the other buildings of the complex are red sandstone."
+    },
+    {
+      "type": "stat",
+      "value": "28",
+      "label": "types of precious and semi-precious stone inlaid into the marble",
+      "text": "The pietra dura inlays trace vines, flowers and fruit. UNESCO listed the Taj Mahal in 1983; it draws more than five million visitors a year."
+    }
+  ],
+  "tags": ["india", "mughal", "architecture", "agra"],
+  "source": { "label": "Wikipedia: Taj Mahal", "url": "https://en.wikipedia.org/wiki/Taj_Mahal" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

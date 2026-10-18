@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="system-ui, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#fff"/>
+    </marker>
+  </defs>
+  <text x="540" y="90" fill="#fff" font-size="52" font-weight="800" text-anchor="middle">What falling drops really look like</text>
+  <path d="M160,220 C200,290 215,320 215,350 A55,55 0 1 1 105,350 C105,320 120,290 160,220 Z" fill="#fff" fill-opacity="0.5"/>
+  <line x1="110" y1="240" x2="210" y2="400" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  <line x1="210" y1="240" x2="110" y2="400" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  <text x="160" y="460" fill="#fff" font-size="34" font-weight="700" text-anchor="middle">not this</text>
+  <g fill="#fff" fill-opacity="0.85">
+    <circle cx="280" cy="640" r="28"/>
+    <ellipse cx="500" cy="640" rx="66" ry="56"/>
+    <path d="M640,650 A100,100 0 0 1 840,650 Q740,695 640,650 Z"/>
+    <path d="M875,660 A85,85 0 0 1 1045,660 Q960,605 875,660 Z"/>
+  </g>
+  <text x="280" y="760" fill="#fff" font-size="34" font-weight="700" text-anchor="middle">small</text>
+  <text x="280" y="800" fill="#fff" font-size="34" text-anchor="middle">sphere</text>
+  <text x="500" y="760" fill="#fff" font-size="34" font-weight="700" text-anchor="middle">larger</text>
+  <text x="500" y="800" fill="#fff" font-size="34" text-anchor="middle">a bit flat</text>
+  <text x="740" y="760" fill="#fff" font-size="34" font-weight="700" text-anchor="middle">large</text>
+  <text x="740" y="800" fill="#fff" font-size="34" text-anchor="middle">like a bun</text>
+  <text x="960" y="760" fill="#fff" font-size="34" font-weight="700" text-anchor="middle">very large</text>
+  <text x="960" y="800" fill="#fff" font-size="34" text-anchor="middle">parachute</text>
+  <line x1="740" y1="910" x2="740" y2="845" stroke="#fff" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="960" y1="910" x2="960" y2="845" stroke="#fff" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="850" y="960" fill="#fff" font-size="34" text-anchor="middle">air pushes up</text>
+  <text x="540" y="1010" fill="#fff" font-size="34" text-anchor="middle">Surface tension pulls drops round;</text>
+  <text x="540" y="1055" fill="#fff" font-size="34" text-anchor="middle">air drag flattens the big ones.</text>
+</svg>

@@ -1,0 +1,96 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-stainless-steel-heals-itself",
+  "field": "chemistry",
+  "title": "Stainless steel doesn’t rust because it corrodes a tiny bit first",
+  "emoji": "🍴",
+  "body": "Stainless steel is an iron alloy with at least 10.5% chromium. The chromium reacts with oxygen in the air to form a microscopically thin, invisible film of chromium oxide on the surface. This **passive film** blocks oxygen from reaching the iron beneath, so the steel can’t rust. Best of all, it repairs itself: scratch it and, with oxygen present, fresh chromium at the surface oxidises and seals the gap. Harry Brearley of Sheffield hit on the alloy in 1913 while looking for a corrosion-resistant steel for gun barrels.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "A film that heals",
+      "text": "Plain steel rusts because iron oxide is loose and lets oxygen and water keep reaching the metal. Chromium oxide is different: it forms a tight, invisible skin that stops oxygen getting through, and it re-forms wherever it is scratched or disturbed, as long as some oxygen is around."
+    },
+    {
+      "type": "flow",
+      "heading": "How stainless steel heals a scratch",
+      "cycle": true,
+      "steps": [
+        {
+          "icon": "🛡️",
+          "label": "Chromium at the surface meets oxygen"
+        },
+        {
+          "icon": "🔬",
+          "label": "A thin, invisible chromium oxide film forms"
+        },
+        {
+          "icon": "🔪",
+          "label": "A scratch exposes fresh metal underneath"
+        },
+        {
+          "icon": "🔁",
+          "label": "Fresh chromium oxidises and seals the gap"
+        }
+      ]
+    },
+    {
+      "type": "fill",
+      "question": "Out of 20 parts of steel by weight, how many must be chromium for it to count as stainless?",
+      "icon": "🔩",
+      "total": 20,
+      "answer": 2,
+      "explanation": "At least 10.5% chromium by weight, so about 2 parts in 20. Raising it above 11% boosts the protection further, and the most common grade, type 304 or ‘18/8’, has about 18%."
+    },
+    {
+      "type": "stat",
+      "value": "10.5%",
+      "label": "the minimum chromium content for a steel to count as stainless",
+      "text": "Raising the chromium above 11% boosts the resistance further."
+    },
+    {
+      "type": "timeline",
+      "heading": "Who found it",
+      "events": [
+        {
+          "when": "1821",
+          "text": "Pierre Berthier may be the first to notice that iron–chromium alloys resist corrosion"
+        },
+        {
+          "when": "1912",
+          "text": "Krupp engineers patent ‘Nirosta’; Elwood Haynes files a US patent"
+        },
+        {
+          "when": "1913",
+          "text": "Harry Brearley in Sheffield hits on stainless steel while seeking rustproof gun barrels"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What happens when stainless steel gets scratched?",
+      "options": [
+        "The film re-forms with oxygen",
+        "It starts to rust at once",
+        "Chromium leaks out",
+        "Nothing: the film can’t break"
+      ],
+      "answer": 0,
+      "explanation": "Fresh chromium at the exposed surface reacts with oxygen and rebuilds the passive film, so the scratch seals itself."
+    }
+  ],
+  "tags": [
+    "steel",
+    "chromium",
+    "corrosion"
+  ],
+  "source": {
+    "label": "Wikipedia: Stainless steel",
+    "url": "https://en.wikipedia.org/wiki/Stainless_steel"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

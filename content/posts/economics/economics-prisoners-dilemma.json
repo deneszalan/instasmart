@@ -12,6 +12,30 @@
       "text": "Both stay silent: 1 year each. Both betray: 2 years each. If only one betrays, the betrayer walks free and the silent partner gets 3 years."
     },
     {
+      "type": "chart",
+      "heading": "Years in prison for you, by what each of you does",
+      "items": [
+        {
+          "label": "You betray, partner silent",
+          "value": 0
+        },
+        {
+          "label": "Both stay silent",
+          "value": 1
+        },
+        {
+          "label": "Both betray",
+          "value": 2,
+          "emphasis": true
+        },
+        {
+          "label": "You silent, partner betrays",
+          "value": 3
+        }
+      ],
+      "note": "Whatever your partner does, betraying cuts your own sentence by a year"
+    },
+    {
       "type": "text",
       "heading": "Play it again",
       "text": "In Robert Axelrod’s 1980 computer tournaments of the repeated game, the winner was tit for tat: cooperate first, then copy whatever the other player did last."
@@ -20,6 +44,18 @@
       "type": "text",
       "heading": "The lesson",
       "text": "When people expect to meet again, cooperation can pay. That is one reason reputation, repeat customers and long-term contracts matter so much."
+    },
+    {
+      "type": "quiz",
+      "question": "Which strategy won Axelrod’s repeated-game tournaments?",
+      "options": [
+        "Tit for tat: cooperate, then copy",
+        "Always betray",
+        "Always stay silent",
+        "Betray at random"
+      ],
+      "answer": 0,
+      "explanation": "Tit for tat cooperates first, then copies whatever the other player did last. When people expect to meet again, cooperation can pay."
     }
   ],
   "tags": [

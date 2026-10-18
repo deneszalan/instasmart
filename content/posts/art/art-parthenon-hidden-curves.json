@@ -1,0 +1,78 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-parthenon-hidden-curves",
+  "field": "art",
+  "title": "The Parthenon is full of hidden curves: even its floor bulges about 10 cm in the middle",
+  "emoji": "📐",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/960px-The_Parthenon_in_Athens.jpg",
+    "alt": "The Parthenon on the Acropolis in Athens: a ruined marble temple with rows of Doric columns under a deep blue sky, fallen blocks of stone in the foreground.",
+    "credit": "Steve Swayne · CC BY 2.0"
+  },
+  "body": "The Parthenon, begun in Athens in 447 BC, looks like a box of straight lines, but careful measurements in the 19th century showed it is nothing of the sort. Its stone platform bulges upward at the centre, the beams above curve to match, the columns swell slightly as they rise and the columns and walls lean a little inward. Why the builders did this is still argued over: the classic answer is that the curves cancel optical illusions that make long straight lines look like they sag, but others have proposed settlement of the stones, drainage or pure aesthetics, and some call the optical story a myth.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The Parthenon’s platform is about 70 m long. How many centimetres does it rise at the centre?",
+      "min": 0,
+      "max": 50,
+      "step": 0.1,
+      "answer": 10.3,
+      "unit": "cm",
+      "explanation": "10.3 cm over about 70 m, a ratio of 1 in 700: too gentle to spot, but enough to measure."
+    },
+    {
+      "type": "scale",
+      "heading": "10.3 cm of rise along a 70 m platform",
+      "items": [
+        { "label": "Rise at centre", "value": 0.103 },
+        { "label": "Platform length", "value": 70 }
+      ],
+      "unit": "m",
+      "note": "Circle areas to scale. The platform measures 69.5 by 30.9 m."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Parthenon_curve.jpg/960px-Parthenon_curve.jpg",
+      "alt": "A 1910 black-and-white photograph looking along the stepped marble platform of the Parthenon, its edges rising gently towards the middle.",
+      "caption": "Look along the steps and the curve shows: a photograph of the Parthenon’s stylobate, its platform, published in 1910.",
+      "fit": "cover",
+      "credit": "G. Fougères · Public domain"
+    },
+    {
+      "type": "list",
+      "heading": "Not one straight line",
+      "style": "bullets",
+      "items": [
+        "The platform bulges upward at the centre",
+        "The beams above curve to match",
+        "Columns swell slightly as they taper (entasis)",
+        "Columns and walls lean a little inward",
+        "Corner columns are slightly shifted"
+      ]
+    },
+    {
+      "type": "match",
+      "heading": "Match each explanation to who proposed it",
+      "pairs": [
+        { "left": "Optical correction", "right": "Francis Penrose, 1851" },
+        { "left": "Settling of the stones", "right": "Karl Bötticher" },
+        { "left": "Symbolic and aesthetic", "right": "William Henry Goodyear" },
+        { "left": "An old myth", "right": "Alain Goriely" }
+      ],
+      "explanation": "Penrose’s optical theory is the classic answer. The mathematician Alain Goriely argues its effects are unproven or too small to notice."
+    },
+    {
+      "type": "text",
+      "heading": "How it was wrecked",
+      "text": "The Ottomans used the Parthenon to store gunpowder. On 26 September 1687 a Venetian mortar round, fired from the nearby Hill of Philopappos, blew up the magazine, and the explosion severely damaged the temple."
+    }
+  ],
+  "tags": ["greece", "athens", "architecture", "temples"],
+  "source": {
+    "label": "Wikipedia: Parthenon",
+    "url": "https://en.wikipedia.org/wiki/Parthenon"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

@@ -7,6 +7,33 @@
   "body": "In a 1974 study by Elizabeth Loftus and John Palmer, people watched film of a car crash and were asked how fast the cars were going when they ‘smashed into’ or ‘hit’ each other. The word ‘smashed’ led to higher speed estimates, and a week later those people were more likely to recall broken glass that was never in the film. Memory isn’t a recording; each recall is a reconstruction that later information can quietly reshape.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "Asked how fast the cars were going when they ‘smashed into’ each other, what did people estimate?",
+      "min": 10,
+      "max": 80,
+      "step": 1,
+      "answer": 41,
+      "unit": "mph",
+      "explanation": "About 41 mph, against about 34 mph when the question said ‘hit’, for the very same film."
+    },
+    {
+      "type": "chart",
+      "heading": "Average speed estimate for the same crash film",
+      "items": [
+        {
+          "label": "Asked ‘hit’",
+          "value": 34
+        },
+        {
+          "label": "Asked ‘smashed into’",
+          "value": 41,
+          "emphasis": true
+        }
+      ],
+      "unit": "mph",
+      "note": "Loftus and Palmer, 1974. A week on, the ‘smashed’ group more often recalled broken glass."
+    },
+    {
       "type": "text",
       "heading": "Same film, new memories",
       "text": "Changing just the verb shifted average speed estimates for the very same film, from about 34 mph for ‘hit’ to about 41 mph for ‘smashed’."
@@ -20,6 +47,33 @@
       "type": "text",
       "heading": "Why it matters",
       "text": "Eyewitness memories can feel vivid and certain yet still be distorted by leading questions, which is why careful, neutral interviewing matters."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Memory works like a video recording",
+          "bin": 1
+        },
+        {
+          "text": "One word in a question can change what people recall",
+          "bin": 0
+        },
+        {
+          "text": "People can be led to ‘remember’ events that never happened",
+          "bin": 0
+        },
+        {
+          "text": "A vivid, confident memory is always an accurate one",
+          "bin": 1
+        }
+      ],
+      "explanation": "Each recall is a reconstruction, which is why leading questions can quietly reshape what a witness remembers."
     }
   ],
   "tags": [

@@ -17,6 +17,32 @@
       "text": "Viewers looked through the hole from behind at a mirror reflecting the painting. Moving the mirror aside revealed the real building, so the two could be compared."
     },
     {
+      "type": "flow",
+      "heading": "Brunelleschi’s demonstration",
+      "steps": [
+        {
+          "icon": "🎨",
+          "label": "Paint the Baptistery in perspective"
+        },
+        {
+          "icon": "🕳️",
+          "label": "Pierce a hole at the vanishing point"
+        },
+        {
+          "icon": "👁️",
+          "label": "Look through the hole at a mirror"
+        },
+        {
+          "icon": "🪞",
+          "label": "The mirror shows the painted view"
+        },
+        {
+          "icon": "🏛️",
+          "label": "Slide the mirror away: the real building"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "Writing the rules",
       "text": "Masaccio’s Holy Trinity fresco of the 1420s set the vanishing point at the viewer’s eye level, and Leon Battista Alberti explained the method in 1435."
@@ -25,6 +51,41 @@
       "type": "text",
       "heading": "The lost proof",
       "text": "The panel itself is lost. We know the experiment mainly from his biographer Antonio Manetti, so exactly how it worked is still debated."
+    },
+    {
+      "type": "quiz",
+      "question": "Where did Brunelleschi make the hole in his painted panel?",
+      "options": [
+        "At the vanishing point",
+        "At the top edge, for hanging",
+        "Where the Baptistery door was",
+        "At the viewer’s feet"
+      ],
+      "answer": 0,
+      "explanation": "He pierced the panel at the vanishing point. Viewers looked through the hole from behind at a mirror reflecting the painting, then moved the mirror aside to compare it with the real building."
+    },
+    {
+      "type": "match",
+      "heading": "Match the name to the role",
+      "pairs": [
+        {
+          "left": "Brunelleschi",
+          "right": "The peephole experiment"
+        },
+        {
+          "left": "Masaccio",
+          "right": "The Holy Trinity fresco"
+        },
+        {
+          "left": "Alberti",
+          "right": "Wrote the method down, 1435"
+        },
+        {
+          "left": "Manetti",
+          "right": "Brunelleschi’s biographer"
+        }
+      ],
+      "explanation": "Brunelleschi demonstrated linear perspective around 1415–1420, Masaccio painted it in the 1420s, Alberti explained it in 1435, and Manetti told the story."
     }
   ],
   "tags": [

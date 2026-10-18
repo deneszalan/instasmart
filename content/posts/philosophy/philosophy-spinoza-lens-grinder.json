@@ -1,0 +1,118 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "philosophy-spinoza-lens-grinder",
+  "field": "philosophy",
+  "title": "Spinoza was expelled from his community at 23 and lived by grinding lenses",
+  "emoji": "🔍",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Amsterdam_-_Spinoza_Monument_%2830183649192%29.jpg/960px-Amsterdam_-_Spinoza_Monument_%2830183649192%29.jpg",
+    "alt": "A bronze statue of Baruch Spinoza in a long coat, on a stone base beside a canal at Zwanenburgwal in Amsterdam.",
+    "credit": "Fred Romero · CC BY 2.0"
+  },
+  "body": "On 27 July 1656 the leaders of Amsterdam’s Portuguese-Jewish community issued a herem, a writ of expulsion, against the 23-year-old Baruch Spinoza for ‘abominable heresies’ and ‘monstrous deeds’ it never specified. Cut off, he supported himself by grinding lenses and building microscopes and telescopes, work that Christiaan Huygens and other scientists praised. He turned down a professorship at Heidelberg, possibly to keep his freedom of thought. His great work, the Ethics, appeared only after his death in 1677, aged 44, from a lung disease, probably tuberculosis and possibly worsened by the glass dust of his trade.",
+  "slides": [
+    {
+      "type": "timeline",
+      "heading": "Spinoza’s life",
+      "events": [
+        {
+          "when": "1632",
+          "text": "Born in Amsterdam"
+        },
+        {
+          "when": "1656",
+          "text": "Expelled by herem, aged 23"
+        },
+        {
+          "when": "1677",
+          "text": "Dies in The Hague; friends publish the Ethics"
+        }
+      ]
+    },
+    {
+      "type": "place",
+      "question": "In what year was the Ethics finally published?",
+      "min": 1600,
+      "max": 1750,
+      "step": 1,
+      "answer": 1677,
+      "format": "year",
+      "ends": [
+        "1600",
+        "1750"
+      ],
+      "hints": [
+        {
+          "label": "Born",
+          "value": 1632
+        },
+        {
+          "label": "Herem",
+          "value": 1656
+        }
+      ],
+      "explanation": "1677, the year he died. His friends issued it in the Opera Posthuma with the publisher’s name and the place of printing deliberately left off."
+    },
+    {
+      "type": "flow",
+      "heading": "Spinoza’s trade",
+      "steps": [
+        {
+          "icon": "🔍",
+          "label": "Grind and polish glass lenses"
+        },
+        {
+          "icon": "🔬",
+          "label": "Build microscopes and telescopes"
+        },
+        {
+          "icon": "🧪",
+          "label": "Huygens and others praise their quality"
+        },
+        {
+          "icon": "😮",
+          "label": "Glass dust may have harmed his lungs"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What did the 1656 writ say Spinoza had done?",
+      "options": [
+        "It never said exactly",
+        "Denied the soul’s immortality",
+        "Converted to Christianity",
+        "Published the Ethics"
+      ],
+      "answer": 0,
+      "explanation": "The herem spoke of ‘abominable heresies’ and ‘monstrous deeds’ but gave no specifics. The exact reason is not stated."
+    },
+    {
+      "type": "text",
+      "heading": "Published in secret",
+      "text": "His friends issued his works in 1677 as the Opera Posthuma, with the publisher and place of printing deliberately left off. The Ethics, finished around 1674, is built like Euclid’s geometry, from definitions and axioms to proofs, and argues that God is identical with the universe: Deus sive Natura, ‘God or Nature’."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Amsterdam_-_Zwanenburgwal_-_Amstel_-_View_North_on_Statue_of_Benedictus_de_Spinoza_2008_by_Nicolas_Dings.jpg/960px-Amsterdam_-_Zwanenburgwal_-_Amstel_-_View_North_on_Statue_of_Benedictus_de_Spinoza_2008_by_Nicolas_Dings.jpg",
+      "alt": "The Spinoza statue by Nicolas Dings seen from the Zwanenburgwal canal in Amsterdam, with canal houses behind it.",
+      "caption": "Nicolas Dings’s 2008 statue stands at Zwanenburgwal in Amsterdam, near Spinoza’s birthplace.",
+      "fit": "cover",
+      "credit": "Txllxt TxllxT · CC BY-SA 4.0"
+    }
+  ],
+  "tags": [
+    "spinoza",
+    "amsterdam",
+    "ethics"
+  ],
+  "source": {
+    "label": "Wikipedia: Baruch Spinoza",
+    "url": "https://en.wikipedia.org/wiki/Baruch_Spinoza"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

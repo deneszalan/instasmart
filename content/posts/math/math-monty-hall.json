@@ -12,9 +12,25 @@
       "text": "Say the car is behind door 1. Pick door 1 and switch: you lose. Pick door 2 or 3: the host must reveal the other goat, so switching wins. Two wins out of three."
     },
     {
+      "type": "pictogram",
+      "heading": "Switching wins the car in 2 games out of 3",
+      "icon": "🚗",
+      "total": 3,
+      "count": 2,
+      "note": "Sticking with your first door wins only when that first 1-in-3 guess was right."
+    },
+    {
       "type": "text",
       "heading": "Imagine 100 doors",
       "text": "You pick one, and the host opens 98 doors with goats, leaving one closed. Sticking with your 1-in-100 first guess suddenly looks far less tempting."
+    },
+    {
+      "type": "fill",
+      "question": "When columnist Marilyn vos Savant said switching wins, some 10,000 readers wrote in. Out of 10, how many held a PhD?",
+      "icon": "🎓",
+      "total": 10,
+      "answer": 1,
+      "explanation": "About 1 in 10: close to 1,000 of the letters came from PhD holders, many on the letterhead of maths and science departments, and most of the letters insisted she was wrong. She was right."
     },
     {
       "type": "text",
@@ -25,6 +41,18 @@
       "type": "text",
       "heading": "The rules matter",
       "text": "It all hinges on the host knowingly avoiding the car. If he opened a door at random and it just happened to show a goat, switching would only be 50/50."
+    },
+    {
+      "type": "quiz",
+      "question": "What changes if the host opens a door at random and it just happens to show a goat?",
+      "options": [
+        "Switching still wins 2 times in 3",
+        "Switching becomes a 50/50 bet",
+        "Switching now loses 2 times in 3",
+        "You should always stay put"
+      ],
+      "answer": 1,
+      "explanation": "The 2-in-3 edge depends on the host knowingly avoiding the car. If his reveal was pure luck, switching is only 50/50."
     }
   ],
   "tags": [

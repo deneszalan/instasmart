@@ -5,6 +5,42 @@
   "title": "Your intestines replace their inner lining every four to five days",
   "emoji": "🔄",
   "body": "The inner surface of your intestines is a single layer of cells exposed to digestive juices, food and trillions of microbes, and it wears out quickly. Stem cells tucked into tiny pits called crypts divide constantly, and their offspring mature as they migrate toward the surface, where they are shed. The whole lining is renewed roughly every four to five days, while the total number of cells stays constant, making it one of the fastest-renewing tissues in the body.",
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "A gut lining cell’s short life",
+      "steps": [
+        {
+          "icon": "🧬",
+          "label": "Stem cells in a crypt divide"
+        },
+        {
+          "icon": "⬆️",
+          "label": "Daughter cells mature as they climb"
+        },
+        {
+          "icon": "🍽️",
+          "label": "At the surface they face food and microbes"
+        },
+        {
+          "icon": "🔄",
+          "label": "Worn out, they are shed"
+        }
+      ],
+      "cycle": true
+    },
+    {
+      "type": "quiz",
+      "question": "Where do the replacement cells for the gut lining come from?",
+      "options": [
+        "Stem cells in tiny pits called crypts",
+        "Bacteria that turn into gut cells",
+        "Cells carried in by the blood"
+      ],
+      "answer": 0,
+      "explanation": "Stem cells tucked into the crypts divide constantly; their offspring mature as they migrate to the surface, where they are shed, so the total number of cells stays constant."
+    }
+  ],
   "tags": [
     "digestion",
     "cells",

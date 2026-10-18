@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "psychology-penrose-impossible-triangle",
+  "field": "psychology",
+  "title": "The ‘impossible triangle’ can’t exist as a solid, yet sculptures fake it from one spot",
+  "emoji": "🔺",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Penrose_Triangle_auf_Ecke_stehend.jpg/960px-Penrose_Triangle_auf_Ecke_stehend.jpg",
+    "alt": "A polished stainless steel sculpture of an impossible triangle standing on one corner against a blue backdrop.",
+    "credit": "W. A. Stanggaßinger · CC BY-SA 4.0"
+  },
+  "body": "The Penrose triangle looks like three square beams joined at right angles into a closed loop, and every corner seems believable on its own. But taken together they describe a shape that cannot exist as a solid in ordinary three-dimensional space. The Swedish artist Oscar Reutersvärd drew the first one in 1934, and Lionel Penrose and his son Roger, later a Nobel-winning mathematician, came up with it independently and published it in the *British Journal of Psychology* in 1958. Sculptors get around the impossibility with shapes that only line up from one viewpoint; step aside and the ‘triangle’ falls apart.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Perth_Impossible_Triangle.jpg/960px-Perth_Impossible_Triangle.jpg",
+      "alt": "Three photos side by side of a white sculpture on a roundabout in East Perth: from two angles it is an open, bent shape; from the third it looks like a closed impossible triangle.",
+      "caption": "Impossible Triangle by Brian McKay and Ahmad Abas, East Perth, 1999. Only from the right angle does it match the flat drawing.",
+      "fit": "contain",
+      "credit": "Bjørn Christian Tørrissen · CC BY-SA 3.0"
+    },
+    {
+      "type": "timeline",
+      "heading": "An impossible history",
+      "events": [
+        { "when": "1934", "text": "Oscar Reutersvärd draws the first impossible triangle" },
+        { "when": "1958", "text": "The Penroses publish it in a psychology journal" },
+        { "when": "1961", "text": "M. C. Escher uses it in his lithograph Waterfall" },
+        { "when": "1999", "text": "A giant version goes up on a roundabout in East Perth" }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why the eye accepts it",
+      "text": "Each corner, seen alone, is a perfectly ordinary join of two beams, and the figure can be built up from parts that make sense separately. The contradiction only appears when you follow a beam all the way round. Roger Penrose called it ‘impossibility in its purest form’."
+    },
+    {
+      "type": "quiz",
+      "question": "The 1958 paper was co-written by Lionel Penrose. What was his profession?",
+      "options": ["Psychiatrist", "Architect", "Sculptor", "Engineer"],
+      "answer": 0,
+      "explanation": "Lionel Penrose was a psychiatrist and his son Roger a mathematician. Their paper called impossible objects ‘a special type of visual illusion’."
+    },
+    {
+      "type": "scramble",
+      "clue": "Another name for the Penrose triangle: three bars that can’t be built",
+      "answer": "TRIBAR",
+      "detail": "The Penrose tribar. Its surface can be bent, without stretching, into five-dimensional space, but never built as a solid in ordinary 3D."
+    }
+  ],
+  "tags": ["illusions", "perception", "impossibleobjects"],
+  "source": { "label": "Wikipedia: Penrose triangle", "url": "https://en.wikipedia.org/wiki/Penrose_triangle" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

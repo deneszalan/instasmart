@@ -1,0 +1,125 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-one-time-pad-unbreakable",
+  "field": "tech",
+  "title": "There is a cipher that is mathematically proven to be unbreakable",
+  "emoji": "🔐",
+  "body": "The one-time pad combines each character of a message with one from a secret key. If the key is truly random, at least as long as the message, never reused and kept secret, Claude Shannon proved in the 1940s that the result has **perfect secrecy**: the scrambled text reveals nothing about the original, however much computing power an attacker has. The catch is the key. It must be as long as everything you will ever send, delivered in secret and destroyed after use, which is why the method is rare outside diplomacy and espionage, and why the Moscow–Washington hotline relied on it.",
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "How a one-time pad works",
+      "steps": [
+        {
+          "icon": "✉️",
+          "label": "Write the message"
+        },
+        {
+          "icon": "🎲",
+          "label": "Take a random key at least as long"
+        },
+        {
+          "icon": "➕",
+          "label": "Combine each character with one from the key"
+        },
+        {
+          "icon": "📨",
+          "label": "The receiver, with the same key, reverses it"
+        },
+        {
+          "icon": "🔥",
+          "label": "Destroy the key: never use it again"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "heading": "The four conditions",
+      "style": "bullets",
+      "items": [
+        "The key is truly random",
+        "It is at least as long as the message",
+        "It is never reused, in whole or in part",
+        "It is kept completely secret"
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "A long road to a proof",
+      "events": [
+        {
+          "when": "1882",
+          "text": "Frank Miller describes it for telegraphy"
+        },
+        {
+          "when": "1917",
+          "text": "Gilbert Vernam builds an electrical version"
+        },
+        {
+          "when": "1949",
+          "text": "Shannon publishes his proof"
+        },
+        {
+          "when": "1963",
+          "text": "The Moscow–Washington hotline uses it"
+        }
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "Reusing a pad even once is fatal. Which famous codebreaking project exploited exactly that?",
+      "answer": "Venona: US and UK analysts read some Soviet WWII traffic",
+      "detail": "Moscow is thought to have produced duplicate key material in 1941–42. Over decades a few thousand of several hundred thousand intercepts were read."
+    },
+    {
+      "type": "text",
+      "heading": "Why not use it everywhere?",
+      "text": "Making truly random key, as long as all your traffic, and carrying it to the other side in secret is harder than sending the messages. Everyday encryption instead uses methods that are computationally secure: breakable in theory, but not with any computer we can build."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "A fast enough computer could crack it",
+          "bin": 1
+        },
+        {
+          "text": "The key must be truly random",
+          "bin": 0
+        },
+        {
+          "text": "A long key can safely be used twice",
+          "bin": 1
+        },
+        {
+          "text": "The key must be at least as long as the message",
+          "bin": 0
+        },
+        {
+          "text": "The Moscow–Washington hotline used it",
+          "bin": 0
+        }
+      ],
+      "explanation": "Shannon’s proof gives perfect secrecy, immune to computing power, but only while every condition holds; reuse broke Soviet traffic in Venona."
+    }
+  ],
+  "tags": [
+    "cryptography",
+    "onetimepad",
+    "shannon"
+  ],
+  "source": {
+    "label": "Wikipedia: One-time pad",
+    "url": "https://en.wikipedia.org/wiki/One-time_pad"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

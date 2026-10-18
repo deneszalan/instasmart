@@ -1,0 +1,94 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-greenland-shark-centuries",
+  "field": "biology",
+  "title": "Greenland sharks live for centuries and may not mature until about 150",
+  "emoji": "🦈",
+  "body": "Greenland sharks drift through cold Arctic and North Atlantic water at about 0.34 metres per second and grow only half a centimetre to a centimetre a year. In 2016, researchers estimated their ages by **radiocarbon dating crystals in the sharks’ eye lenses**. The species lives at least 272 years, and the oldest individual came out at 392 years, give or take 120, which makes it the longest-lived vertebrate known. Living that slowly has a cost: the sharks are thought to reach sexual maturity only at around 150 years of age.",
+  "slides": [
+    {
+      "type": "stat",
+      "value": "392 ± 120",
+      "label": "years: the estimated age of the oldest Greenland shark in the 2016 study",
+      "text": "Even the low end of that range, 272 years, beats every other vertebrate known."
+    },
+    {
+      "type": "spectrum",
+      "heading": "A Greenland shark’s life next to a human one",
+      "min": 0,
+      "max": 400,
+      "unit": "years",
+      "ends": [
+        "Birth",
+        "400 years"
+      ],
+      "marks": [
+        {
+          "label": "Oldest verified human",
+          "value": 122
+        },
+        {
+          "label": "Shark reaches maturity",
+          "value": 150
+        },
+        {
+          "label": "Oldest shark, at least",
+          "value": 272
+        },
+        {
+          "label": "Oldest shark, best estimate",
+          "value": 392,
+          "emphasis": true
+        }
+      ],
+      "note": "Jeanne Calment lived 122 years; the oldest shark’s age was estimated at 392 ± 120"
+    },
+    {
+      "type": "estimate",
+      "question": "How long was the largest confirmed Greenland shark?",
+      "min": 1,
+      "max": 12,
+      "step": 0.1,
+      "answer": 6.4,
+      "unit": "m",
+      "explanation": "The largest confirmed specimen measured 6.4 m and weighed around 1,023 kg. Most adults are 4 to 5 m long."
+    },
+    {
+      "type": "list",
+      "heading": "Life in the slow lane",
+      "style": "bullets",
+      "items": [
+        "Grows about 0.5 to 1 cm a year",
+        "Cruises at about 0.34 metres per second, slower than a strolling person",
+        "Reaches sexual maturity at around 150 years",
+        "Adults are 4 to 5 m long; the largest confirmed measured 6.4 m"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "How did the 2016 study work out the sharks’ ages?",
+      "options": [
+        "Growth rings in the backbone",
+        "Radiocarbon dating of the eye lens",
+        "Wear on the teeth",
+        "Size divided by growth rate"
+      ],
+      "answer": 1,
+      "explanation": "Crystals in the eye lens were radiocarbon dated, giving an estimated lifespan of at least 272 years."
+    }
+  ],
+  "tags": [
+    "sharks",
+    "longevity",
+    "arctic"
+  ],
+  "source": {
+    "label": "Wikipedia: Greenland shark",
+    "url": "https://en.wikipedia.org/wiki/Greenland_shark"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

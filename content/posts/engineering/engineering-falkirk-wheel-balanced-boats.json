@@ -1,0 +1,104 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-falkirk-wheel-balanced-boats",
+  "field": "engineering",
+  "title": "A giant rotating wheel lifts boats between Scottish canals",
+  "emoji": "⚙️",
+  "body": "Scotland's **Falkirk Wheel** carries boats in two water-filled chambers, raising one while lowering the other. A floating boat displaces its own weight in water, so adding a boat lets an equal weight of water leave the chamber. With water levels carefully controlled, the two sides remain balanced. Gears keep the chambers level while the wheel turns, so the boats stay afloat throughout the ride.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "The boat replaces water",
+      "text": "A 10-tonne floating boat displaces 10 tonnes of water. At the same water level, a chamber with the boat can weigh the same as that chamber filled with water alone."
+    },
+    {
+      "type": "flow",
+      "heading": "Why the wheel stays balanced",
+      "steps": [
+        {
+          "icon": "🚤",
+          "label": "A boat floats into a chamber"
+        },
+        {
+          "icon": "💧",
+          "label": "It pushes out its own weight in water"
+        },
+        {
+          "icon": "⚖️",
+          "label": "Both chambers still weigh the same"
+        },
+        {
+          "icon": "🔄",
+          "label": "The wheel turns with little effort"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "heading": "From one level to another",
+      "style": "steps",
+      "items": [
+        "A boat enters a water-filled chamber.",
+        "The gates close and the balanced wheel rotates.",
+        "Gears keep the chamber level as the boat rises or descends."
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Balance saves effort",
+      "text": "The descending side helps counterbalance the rising side. Motors still supply energy to turn the mechanism, but they do not have to lift an unbalanced load of boats and water."
+    },
+    {
+      "type": "higher",
+      "heading": "Boat lifts around the world: how far each raises a boat, in metres",
+      "items": [
+        {
+          "label": "Falkirk Wheel, Scotland",
+          "value": 24,
+          "emphasis": true
+        },
+        {
+          "label": "Three Gorges Dam, China",
+          "value": 113
+        },
+        {
+          "label": "Anderton Lift, England",
+          "value": 15.2
+        },
+        {
+          "label": "Strépy-Thieu, Belgium",
+          "value": 73.15
+        }
+      ],
+      "unit": "m",
+      "note": "Anderton opened in 1875, Falkirk and Strépy-Thieu in 2002, the Three Gorges ship lift in 2016",
+      "explanation": "The Falkirk Wheel’s 24 m is modest: Strépy-Thieu in Belgium lifts boats 73 m, and the ship lift at China’s Three Gorges Dam 113 m."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does adding a boat not unbalance the wheel?",
+      "options": [
+        "It displaces its own weight in water",
+        "Pumps add water to the other side",
+        "Boats are weighed and matched up",
+        "Motors hold the heavy side up"
+      ],
+      "answer": 0,
+      "explanation": "A floating boat displaces its own weight in water, so adding one lets an equal weight of water leave the chamber and the two sides stay balanced."
+    }
+  ],
+  "tags": [
+    "boats",
+    "engineering",
+    "buoyancy"
+  ],
+  "source": {
+    "label": "Wikipedia: Falkirk Wheel — Operation",
+    "url": "https://en.wikipedia.org/wiki/Falkirk_Wheel#Operation"
+  },
+  "author": {
+    "name": "ChatGPT",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

@@ -134,6 +134,38 @@ function slideParts(slide: Slide): string[] {
       return [`${slide.left.label}: ${slide.left.text}`, `${slide.right.label}: ${slide.right.text}`];
     case 'timeline':
       return slide.events.map((e) => `${e.when}: ${e.text}`);
+    case 'quiz':
+      return [slide.question, slide.options.join(' / '), slide.explanation];
+    case 'reveal':
+      return [slide.prompt, slide.answer, slide.detail ?? ''];
+    case 'estimate':
+      return [slide.question, `${slide.answer}${slide.unit ? ` ${slide.unit}` : ''}`, slide.explanation];
+    case 'order':
+      return [slide.items.join(' → '), slide.explanation ?? ''];
+    case 'chart':
+    case 'scale':
+      return [slide.items.map((d) => `${d.label} ${d.value}${slide.unit ? ` ${slide.unit}` : ''}`).join(', '), slide.note ?? ''];
+    case 'rank':
+    case 'higher':
+      return [slide.items.map((d) => `${d.label} ${d.value}${slide.unit ? ` ${slide.unit}` : ''}`).join(', '), slide.note ?? '', slide.explanation ?? ''];
+    case 'fill':
+      return [slide.question, `${slide.answer} of ${slide.total}`, slide.explanation];
+    case 'place':
+      return [slide.question, `${slide.answer}${slide.unit ? ` ${slide.unit}` : ''}`, slide.explanation];
+    case 'pictogram':
+      return [`${slide.count} of ${slide.total}`, slide.note ?? ''];
+    case 'spectrum':
+      return [slide.marks.map((m) => `${m.label} ${m.value}${slide.unit ? ` ${slide.unit}` : ''}`).join(', '), slide.note ?? ''];
+    case 'flow':
+      return [slide.steps.map((s) => s.label).join(' → ')];
+    case 'match':
+      return [slide.pairs.map((p) => `${p.left}: ${p.right}`).join(', '), slide.explanation ?? ''];
+    case 'sort':
+      return [slide.items.map((i) => `${i.text} (${slide.bins[i.bin]})`).join(', '), slide.explanation ?? ''];
+    case 'scramble':
+      return [slide.clue, slide.answer, slide.detail ?? ''];
+    case 'odd':
+      return [slide.items.join(' / '), slide.explanation ?? ''];
   }
 }
 

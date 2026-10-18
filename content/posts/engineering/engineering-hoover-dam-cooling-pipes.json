@@ -1,0 +1,111 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-hoover-dam-cooling-pipes",
+  "field": "engineering",
+  "title": "Hoover Dam's concrete would have taken 125 years to cool without 937 km of pipes",
+  "emoji": "🏗️",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/2017_Aerial_view_Hoover_Dam_4774.jpg/960px-2017_Aerial_view_Hoover_Dam_4774.jpg",
+    "alt": "Aerial view of Hoover Dam's curved concrete wall holding back the blue water of Lake Mead between red canyon cliffs.",
+    "credit": "Mariordo · CC BY-SA 4.0"
+  },
+  "body": "Concrete gives off heat as it cures. Engineers calculated that if **Hoover Dam** had been poured as one continuous block, its concrete would have taken **125 years** to cool, and the uneven shrinking would have cracked it. So the dam, built on the Colorado River between 1931 and 1936, was poured as columns of interlocking blocks, some about 50 ft (15 m) square and 5 ft (1.5 m) high, threaded with more than 582 miles (937 km) of one-inch steel pipe. River water, and later ice-cold water from a refrigeration plant, flowed through the pipes and carried the heat away. In all, 3.25 million cubic yards (2.48 million cubic metres) of concrete went in, enough to pave a two-lane highway from San Francisco to New York.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Damforms.jpg/960px-Damforms.jpg",
+      "alt": "Hoover Dam under construction in 1934, rising from the canyon as a grid of separate concrete columns of different heights.",
+      "caption": "February 1934: the dam rising as a grid of concrete columns, seen from the Nevada rim. Each block was poured, cooled and then built on.",
+      "fit": "cover",
+      "credit": "Bureau of Reclamation · Public domain"
+    },
+    {
+      "type": "estimate",
+      "question": "Poured as a single block, how many years would the concrete have taken to cool?",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "answer": 125,
+      "unit": "years",
+      "explanation": "About 125 years, by the engineers' calculation. Pouring in blocks laced with cooling pipes brought the heat out as the dam rose."
+    },
+    {
+      "type": "flow",
+      "heading": "Keeping the concrete cool",
+      "steps": [
+        {
+          "icon": "🧱",
+          "label": "Pour a block up to 5 ft high"
+        },
+        {
+          "icon": "💧",
+          "label": "Run river water through its pipes"
+        },
+        {
+          "icon": "🧊",
+          "label": "Then ice-cold water from a chiller plant"
+        },
+        {
+          "icon": "🔁",
+          "label": "Build the next block on top"
+        }
+      ]
+    },
+    {
+      "type": "rank",
+      "heading": "Hoover Dam's dimensions: rank them, largest first",
+      "items": [
+        {
+          "label": "Length along the top",
+          "value": 379
+        },
+        {
+          "label": "Height",
+          "value": 221.4
+        },
+        {
+          "label": "Thickness at the base",
+          "value": 200
+        },
+        {
+          "label": "Thickness at the top",
+          "value": 14
+        }
+      ],
+      "unit": "m",
+      "explanation": "The wedge-shaped dam is 379 m long and 221.4 m high, 200 m thick at the bottom and only 14 m thick at the crest, where the road runs."
+    },
+    {
+      "type": "text",
+      "heading": "The human cost",
+      "text": "The official count lists 112 deaths associated with the dam's construction, 96 of them at the site. Workers who died of pneumonia, 42 of them, were not included in that total."
+    },
+    {
+      "type": "quiz",
+      "question": "Why was Hoover Dam poured as separate blocks?",
+      "options": [
+        "So the heat of curing could escape",
+        "To save concrete",
+        "Because the mixers were small",
+        "So workers could rest between pours"
+      ],
+      "answer": 0,
+      "explanation": "Curing concrete releases heat. Small blocks threaded with cooling pipes let the heat out quickly, instead of taking more than a century to cool and cracking."
+    }
+  ],
+  "tags": [
+    "dams",
+    "concrete",
+    "construction",
+    "hooverdam"
+  ],
+  "source": {
+    "label": "Wikipedia: Hoover Dam",
+    "url": "https://en.wikipedia.org/wiki/Hoover_Dam"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

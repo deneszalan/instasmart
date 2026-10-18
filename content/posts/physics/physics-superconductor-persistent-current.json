@@ -5,6 +5,79 @@
   "title": "In a superconductor, current can flow for years with no power",
   "emoji": "🧲",
   "body": "Cool certain materials below a critical temperature and their electrical resistance doesn’t just get small, it drops to exactly zero. A current started in a superconducting loop keeps circulating with no battery: experiments show no measurable decay over years, pointing to lifetimes of at least 100,000 years. Superconductors also push out magnetic fields, which is why a magnet can float above one. MRI scanners rely on superconducting coils for their strong fields.",
+  "slides": [
+    {
+      "type": "place",
+      "question": "Mercury was the first superconductor found, in 1911. Below what temperature does its resistance vanish?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 4.2,
+      "unit": "K",
+      "ends": [
+        "Absolute zero",
+        "−173 °C"
+      ],
+      "hints": [
+        {
+          "label": "Nb nitride",
+          "value": 16
+        },
+        {
+          "label": "Nitrogen boils",
+          "value": 77
+        },
+        {
+          "label": "YBCO",
+          "value": 92
+        }
+      ],
+      "explanation": "4.2 K, about −269 °C. Niobium nitride goes at 16 K; even ‘high-temperature’ YBCO, at 92 K, needs −181 °C, though that is above the 77 K at which liquid nitrogen boils."
+    },
+    {
+      "type": "quiz",
+      "question": "Why can a magnet float above a superconductor?",
+      "options": [
+        "Cold air beneath the magnet lifts it",
+        "It pushes magnetic fields out of itself",
+        "Zero resistance makes it weightless",
+        "It attracts the magnet from below"
+      ],
+      "answer": 1,
+      "explanation": "Superconductors push out magnetic fields, so a magnet above one is held up rather than resting on it. The same materials carry current with exactly zero resistance."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "A superconductor’s resistance is tiny but not zero",
+          "bin": 1
+        },
+        {
+          "text": "A magnet can hover above a superconductor",
+          "bin": 0
+        },
+        {
+          "text": "MRI scanners rely on superconducting coils",
+          "bin": 0
+        },
+        {
+          "text": "A superconducting loop needs a battery to keep its current",
+          "bin": 1
+        },
+        {
+          "text": "Superconductors push magnetic fields out of themselves",
+          "bin": 0
+        }
+      ],
+      "explanation": "Below the critical temperature resistance is exactly zero, so a current circulates for years with no power source, and expelled fields let magnets float."
+    }
+  ],
   "tags": [
     "superconductivity",
     "electricity",

@@ -1,0 +1,58 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "philosophy-know-thyself-delphi",
+  "field": "philosophy",
+  "title": "‘Know thyself’ was carved on Apollo’s temple, and first meant ‘know your limits’",
+  "emoji": "🏛️",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Temple_of_Apollo_in_Delphi_-_columns_01.jpg/960px-Temple_of_Apollo_in_Delphi_-_columns_01.jpg",
+    "alt": "Six restored Doric columns and the stone platform of the ruined Temple of Apollo at Delphi, with cypress trees, cliffs and a mountain valley behind.",
+    "credit": "Bernard Gagnon · CC BY-SA 4.0"
+  },
+  "body": "*Gnōthi seauton*, ‘know thyself’, was one of three maxims inscribed at the Temple of Apollo in Delphi, home of the Delphic oracle. Today it sounds like advice to look inward, but its main original sense was closer to ‘know your limits’: know your abilities, your place in the world, and that you are mortal, not a god. Tradition credited the maxims to the Seven Sages of Greece, this one most often to Chilon, or to Apollo himself. Plato’s Socrates returned to it in several dialogues, admitting he had not yet managed to know himself.",
+  "slides": [
+    {
+      "type": "list",
+      "heading": "The three Delphic maxims",
+      "style": "numbers",
+      "items": [
+        "Know thyself",
+        "Nothing too much",
+        "Give a pledge and trouble is at hand"
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Then vs now",
+      "left": { "label": "Original sense", "text": "Know your limits: what you can do, where you stand, and that you are a mortal, not a god." },
+      "right": { "label": "Modern reading", "text": "Look inward and discover who you really are: a call to self-examination." }
+    },
+    {
+      "type": "odd",
+      "heading": "Who was not one of the Seven Sages?",
+      "items": ["Thales", "Solon", "Chilon", "Socrates"],
+      "answer": 3,
+      "explanation": "The Seven Sages were Thales, Pittacus, Bias, Solon, Cleobulus, Myson and Chilon. Socrates came later and discussed the maxim in Plato’s dialogues."
+    },
+    {
+      "type": "quote",
+      "text": "I am not yet able, as the Delphic inscription has it, to know myself.",
+      "attribution": "Socrates, in Plato’s Phaedrus"
+    },
+    {
+      "type": "match",
+      "heading": "Who did what with the maxim?",
+      "pairs": [
+        { "left": "Juvenal", "right": "Said it came ‘from Heaven’" },
+        { "left": "Alexander Pope", "right": "‘Know then thyself’" },
+        { "left": "S. T. Coleridge", "right": "‘Ignore thyself’" },
+        { "left": "Cicero", "right": "Not just against arrogance" }
+      ],
+      "explanation": "Pope: ‘Know then thyself, presume not God to scan’. Coleridge turned it around: ‘Ignore thyself, and strive to know thy God!’"
+    }
+  ],
+  "tags": ["ancientgreece", "maxims", "socrates"],
+  "source": { "label": "Wikipedia: Know thyself", "url": "https://en.wikipedia.org/wiki/Know_thyself" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

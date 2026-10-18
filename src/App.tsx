@@ -5,6 +5,7 @@ import { CARD_BY_ID } from './data/library';
 import { useRoute, type Tab } from './lib/route';
 import { toast } from './lib/toast';
 import { streak, StoreProvider, useStore, type LearnState } from './state/store';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { PostView } from './components/Post';
 import { Sheet } from './components/Sheet';
 import { Toast } from './components/Toast';
@@ -81,8 +82,8 @@ function Shell() {
   return (
     <div className="app">
       <header className="topbar">
-        <button className="logo" onClick={() => goTab('home')} aria-label="InstaSmart home">
-          InstaSmart
+        <button className="logo" onClick={() => goTab('home')} aria-label="Reckon home">
+          Reckon
         </button>
         <button className="topbar__streak" onClick={() => goTab('profile')} aria-label={`${days}-day learning streak`}>
           <Flame size={22} className={days > 0 ? 'streak__flame--on' : undefined} />
@@ -133,8 +134,10 @@ function Shell() {
 
 export function App() {
   return (
-    <StoreProvider>
-      <Shell />
-    </StoreProvider>
+    <ErrorBoundary>
+      <StoreProvider>
+        <Shell />
+      </StoreProvider>
+    </ErrorBoundary>
   );
 }

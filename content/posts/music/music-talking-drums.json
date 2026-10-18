@@ -5,6 +5,48 @@
   "title": "West African talking drums can imitate human speech",
   "emoji": "🥁",
   "body": "Many West African languages, such as Yoruba, are tonal: the pitch of a syllable changes its meaning. The hourglass-shaped talking drum, called dùndún in Yoruba, has cords a player squeezes under the arm to raise or lower its pitch, copying the tones and rhythms of spoken phrases. Skilled drummers can recite proverbs and praise poetry that knowing listeners understand, and drums were used to send messages over long distances.",
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "How a drum talks",
+      "steps": [
+        {
+          "icon": "🗣️",
+          "label": "Yoruba: a syllable’s pitch changes meaning"
+        },
+        {
+          "icon": "🥁",
+          "label": "Squeezing the cords bends the drum’s pitch"
+        },
+        {
+          "icon": "🎶",
+          "label": "The beats copy the phrase’s tones and rhythm"
+        },
+        {
+          "icon": "👂",
+          "label": "Listeners who know the phrase understand it"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "How does a player change the talking drum’s pitch?",
+      "options": [
+        "By squeezing cords under the arm",
+        "By striking different spots",
+        "By warming the drumhead",
+        "By switching sticks"
+      ],
+      "answer": 0,
+      "explanation": "The hourglass-shaped dùndún has cords a player squeezes under the arm to raise or lower its pitch, copying the tones of a language like Yoruba."
+    },
+    {
+      "type": "scramble",
+      "clue": "The kind of language, like Yoruba, in which a syllable’s pitch changes its meaning",
+      "answer": "TONAL",
+      "detail": "Because pitch carries meaning in Yoruba, a drum that can bend its pitch can copy the words."
+    }
+  ],
   "tags": [
     "drums",
     "westafrica",

@@ -1,0 +1,110 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "psychology-muller-lyer-illusion",
+  "field": "psychology",
+  "title": "Add fins to two equal lines and one looks longer, even to pigeons",
+  "emoji": "👁️",
+  "body": "In 1889 Franz Carl Müller-Lyer drew two equal lines and gave one outward fins, like an arrow’s tail, and the other inward fins, like an arrowhead. The tailed line usually looks longer. One idea is that the brain reads the fins as **corners seen in perspective**: an arrowhead resembles a box corner jutting toward you, a tail a room corner far away, so it scales the far line up. The evidence is mixed: people from carpentered, right-angled surroundings seem more susceptible, yet later work found no rural–urban gap, and pigeons and parrots fall for it too.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "muller-lyer.svg",
+      "alt": "Two horizontal lines of equal length: the top one has fins pointing outward and looks longer, the bottom one has fins pointing inward and looks shorter. Dashed guides show that the ends line up.",
+      "caption": "Both shafts are exactly the same length.",
+      "fit": "contain"
+    },
+    {
+      "type": "compare",
+      "heading": "Two explanations",
+      "left": {
+        "label": "Perspective",
+        "text": "The brain treats the fins as corners: fins-in looks like a near corner, fins-out like a far one, and size constancy scales the far line up."
+      },
+      "right": {
+        "label": "Centroids",
+        "text": "Your judgement of distance is pulled toward the centre of mass of each figure, and the fins shift those centres."
+      }
+    },
+    {
+      "type": "flow",
+      "heading": "The perspective explanation",
+      "steps": [
+        {
+          "icon": "📦",
+          "label": "Fins in: a box corner jutting toward you"
+        },
+        {
+          "icon": "🏠",
+          "label": "Fins out: a room corner, far away"
+        },
+        {
+          "icon": "🧠",
+          "label": "Size constancy scales the ‘far’ line up"
+        },
+        {
+          "icon": "📏",
+          "label": "So the tailed line looks longer"
+        }
+      ]
+    },
+    {
+      "type": "place",
+      "question": "When did Müller-Lyer first draw his finned lines?",
+      "min": 1850,
+      "max": 2025,
+      "step": 1,
+      "answer": 1889,
+      "format": "year",
+      "ends": [
+        "1850",
+        "2025"
+      ],
+      "hints": [
+        {
+          "label": "Stroop test",
+          "value": 1935
+        },
+        {
+          "label": "McGurk effect",
+          "value": 1976
+        },
+        {
+          "label": "Checker shadow",
+          "value": 1995
+        }
+      ],
+      "explanation": "Franz Carl Müller-Lyer, a German sociologist, devised the illusion in 1889, and psychologists have argued about why it works ever since."
+    },
+    {
+      "type": "text",
+      "heading": "Does culture matter?",
+      "text": "Segall, Campbell and Herskovits (1966) found people from carpentered, rectangular environments more susceptible, with San foragers of the Kalahari the least. Later work by Jahoda found no difference between rural and city Africans and suggested retinal pigmentation might play a role. The debate goes on."
+    },
+    {
+      "type": "quiz",
+      "question": "In the 1966 cross-cultural study, who was least fooled by the illusion?",
+      "options": [
+        "San foragers of the Kalahari",
+        "European city dwellers",
+        "American city dwellers",
+        "University students"
+      ],
+      "answer": 0,
+      "explanation": "People from carpentered, right-angled surroundings were the most susceptible and San foragers the least. Later studies questioned the explanation."
+    }
+  ],
+  "tags": [
+    "perception",
+    "illusions",
+    "vision"
+  ],
+  "source": {
+    "label": "Wikipedia: Müller-Lyer illusion",
+    "url": "https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

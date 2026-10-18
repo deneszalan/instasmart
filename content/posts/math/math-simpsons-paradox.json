@@ -17,9 +17,62 @@
       "text": "Yet with all patients pooled, treatment B looked better: about 83% success versus 78% for A. How can A win both rounds and still lose overall?"
     },
     {
+      "type": "chart",
+      "heading": "Kidney stone success rates: A wins both rounds, B wins overall",
+      "items": [
+        {
+          "label": "A, small stones",
+          "value": 93,
+          "emphasis": true
+        },
+        {
+          "label": "B, small stones",
+          "value": 87
+        },
+        {
+          "label": "A, large stones",
+          "value": 73,
+          "emphasis": true
+        },
+        {
+          "label": "B, large stones",
+          "value": 69
+        },
+        {
+          "label": "A, all patients",
+          "value": 78,
+          "emphasis": true
+        },
+        {
+          "label": "B, all patients",
+          "value": 83
+        }
+      ],
+      "unit": "%",
+      "note": "From a 1986 study comparing two treatments for kidney stones."
+    },
+    {
       "type": "text",
       "heading": "The hidden factor",
       "text": "Treatment A was mostly used on large stones, the harder cases that fail more often, while B mostly got easy small stones. Stone size skewed the totals."
+    },
+    {
+      "type": "quiz",
+      "question": "In the kidney stone study, why did treatment A look worse overall?",
+      "options": [
+        "The percentages were added up wrongly",
+        "B’s patients were younger and fitter",
+        "A was mostly used on the harder cases",
+        "A’s small-stone results were left out"
+      ],
+      "answer": 2,
+      "explanation": "Treatment A was mostly given for large stones, the harder cases that fail more often, while B mostly got easy small stones. Stone size, the hidden factor, skewed the totals."
+    },
+    {
+      "type": "scramble",
+      "clue": "A hidden factor, like stone size, that affects both which treatment is chosen and how well it works",
+      "answer": "CONFOUNDER",
+      "detail": "Confounders are why pooled totals can mislead: ask what drives the numbers before judging cause and effect."
     }
   ],
   "tags": [

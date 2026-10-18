@@ -7,9 +7,50 @@
   "body": "Most substances shrink when they freeze, so their solid sinks in their own liquid. Water does the opposite. As it freezes, hydrogen bonds lock its V-shaped molecules into an open, hexagonal lattice with lots of empty space, making ice about 9% less dense than liquid water. That one quirk shapes our planet: ice forms a floating lid on lakes and oceans, insulating the water below and letting life survive the winter.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "How much less dense is ice than liquid water?",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "answer": 9,
+      "unit": "%",
+      "explanation": "About 9%. As water freezes, hydrogen bonds lock its molecules into an open hexagonal lattice full of empty space, so ice floats as a lid on lakes and oceans."
+    },
+    {
       "type": "text",
       "heading": "Densest at 4 °C",
       "text": "Liquid water is densest at about 4 °C. In winter that water sinks to the bottom of lakes while colder water rises, so lakes freeze from the top down."
+    },
+    {
+      "type": "spectrum",
+      "heading": "Density of water and ice",
+      "min": 900,
+      "max": 1000,
+      "unit": "kg/m³",
+      "ends": [
+        "Lighter",
+        "Denser"
+      ],
+      "marks": [
+        {
+          "label": "Ice at 0 °C",
+          "value": 916.7,
+          "emphasis": true
+        },
+        {
+          "label": "Water at 25 °C",
+          "value": 997.05
+        },
+        {
+          "label": "Water at 0 °C",
+          "value": 999.84
+        },
+        {
+          "label": "Water at 4 °C, densest",
+          "value": 999.97
+        }
+      ],
+      "note": "Ice is about 9% less dense than the water it floats on."
     },
     {
       "type": "text",

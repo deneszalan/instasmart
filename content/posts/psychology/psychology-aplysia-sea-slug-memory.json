@@ -1,0 +1,72 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "psychology-aplysia-sea-slug-memory",
+  "field": "psychology",
+  "title": "A sea slug with 20,000 neurons taught us how memories are stored",
+  "emoji": "🐌",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/California_sea_hare_%28Aplysia_californica%29.jpg/960px-California_sea_hare_%28Aplysia_californica%29.jpg",
+    "alt": "A large, mottled brownish-purple California sea hare, a soft-bodied sea slug, resting on the seabed.",
+    "credit": "Claire Fackler, CINMS, NOAA · Public domain"
+  },
+  "body": "The California sea hare, Aplysia californica, can grow to 75 cm and weigh up to 7 kg, yet its nervous system has only about **20,000 neurons**, some with cell bodies up to a millimetre across, big enough to find the same cell in every animal and record from it. Eric Kandel chose it to ask what happens inside nerve cells when an animal learns. Working with its gill-withdrawal reflex, he showed that short-term memory comes from changes in how existing connections work, while long-term memory needs new proteins and the growth of new synapses. That work earned him a share of the 2000 Nobel Prize in Physiology or Medicine.",
+  "slides": [
+    {
+      "type": "stat",
+      "value": "20,000",
+      "label": "neurons in a sea hare’s nervous system",
+      "text": "Some cell bodies reach about 1 mm across, large enough to identify the same neuron in every animal."
+    },
+    {
+      "type": "flow",
+      "heading": "Learning in the gill-withdrawal reflex",
+      "steps": [
+        { "icon": "💦", "label": "Touch the siphon: the gill pulls in" },
+        { "icon": "🔁", "label": "Touch it again and again" },
+        { "icon": "😴", "label": "The reflex weakens: habituation" },
+        { "icon": "⚡", "label": "Tail shock: it comes back stronger" }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Short vs long-term memory",
+      "left": { "label": "Short-term", "text": "Existing synapses change how they work. No new proteins are needed." },
+      "right": { "label": "Long-term", "text": "The neuron makes new proteins and grows extra synaptic connections, so the change lasts." }
+    },
+    {
+      "type": "reveal",
+      "prompt": "What does a sea hare do when it is seriously disturbed?",
+      "answer": "Squirts purple ink",
+      "detail": "It releases reddish-purple ink and a milky secretion called opaline. The cloud confuses a predator’s senses and can make it attack the cloud as if it were food."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Sea-hare-morro-bay_%28431920585%29.jpg/960px-Sea-hare-morro-bay_%28431920585%29.jpg",
+      "alt": "A dark, mottled sea hare in shallow water at Morro Bay, California.",
+      "caption": "A sea hare at Morro Bay, California. The record length is 75 cm, though most adults are half that size or smaller.",
+      "fit": "cover",
+      "credit": "Mike Baird · CC BY 2.0"
+    },
+    {
+      "type": "text",
+      "heading": "Why a slug?",
+      "text": "Kandel wanted an animal simple enough to watch learning happen synapse by synapse, and bet that what he found would apply to humans too. [Eric Kandel](https://en.wikipedia.org/wiki/Eric_Kandel) was born in Vienna in 1929 and shared the 2000 Nobel Prize with Arvid Carlsson and Paul Greengard."
+    },
+    {
+      "type": "quiz",
+      "question": "What did Kandel find a long-term memory needs that a short-term one does not?",
+      "options": [
+        "New proteins and synapses",
+        "More neurons",
+        "Sleep",
+        "A bigger brain"
+      ],
+      "answer": 0,
+      "explanation": "Long-term memory required new protein synthesis and a change in the number of synaptic connections; short-term memory only changed how existing synapses worked."
+    }
+  ],
+  "tags": ["memory", "neuroscience", "animals", "nobel"],
+  "source": { "label": "Wikipedia: Aplysia californica", "url": "https://en.wikipedia.org/wiki/Aplysia_californica" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

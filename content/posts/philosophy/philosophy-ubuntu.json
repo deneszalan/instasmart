@@ -5,6 +5,38 @@
   "title": "‘A person is a person through other people’ is a whole philosophy",
   "emoji": "🤝",
   "body": "Ubuntu, a family of related value systems from Bantu-speaking Africa, is often summed up by the Zulu saying umuntu ngumuntu ngabantu. It holds that we become fully human through our relationships, so caring for others is part of being a person rather than an optional extra. After apartheid, the word appeared in South Africa’s 1993 interim constitution and was championed by Desmond Tutu, who chaired the Truth and Reconciliation Commission.",
+  "slides": [
+    {
+      "type": "place",
+      "question": "When did ‘ubuntu’ enter South Africa’s interim constitution?",
+      "min": 1960,
+      "max": 2020,
+      "step": 1,
+      "answer": 1993,
+      "format": "year",
+      "ends": [
+        "1960",
+        "2020"
+      ],
+      "hints": [
+        {
+          "label": "Tutu’s Nobel",
+          "value": 1984
+        },
+        {
+          "label": "Mandela freed",
+          "value": 1990
+        }
+      ],
+      "explanation": "The 1993 interim constitution’s epilogue called for ‘a need for ubuntu but not for victimisation’ as South Africa left apartheid behind; Tutu went on to chair the Truth and Reconciliation Commission."
+    },
+    {
+      "type": "reveal",
+      "prompt": "Ubuntu is often summed up by a Zulu saying. What is it?",
+      "answer": "Umuntu ngumuntu ngabantu",
+      "detail": "A person is a person through other people. After apartheid the word entered South Africa’s 1993 interim constitution, championed by Desmond Tutu."
+    }
+  ],
   "tags": [
     "philosophy",
     "africanphilosophy",

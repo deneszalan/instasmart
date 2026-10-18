@@ -50,7 +50,7 @@ function useDoubleTap(onDoubleTap: () => void) {
       down.current = { x: e.clientX, y: e.clientY };
     },
     onPointerUp: (e: PointerEvent) => {
-      if ((e.target as HTMLElement).closest('button')) return;
+      if ((e.target as HTMLElement).closest('button, input, [data-interactive]')) return;
       if (Math.hypot(e.clientX - down.current.x, e.clientY - down.current.y) > 10) return;
       const now = performance.now();
       const prev = lastTap.current;
@@ -87,7 +87,10 @@ export function LearnMore({ post, onClose }: { post: Post; onClose: () => void }
     navigate({ tab: 'explore', q: `#${tag}`, post: null });
   };
 
-  useEffect(() => bodyRef.current?.closest('.panel__body')?.scrollTo({ top: 0 }), [current]);
+  useEffect(() => {
+    const scroller = bodyRef.current?.closest('.panel__body');
+    if (scroller) scroller.scrollTop = 0;
+  }, [current]);
 
   if (current.kind === 'wiki') {
     return (

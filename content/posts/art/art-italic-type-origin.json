@@ -5,6 +5,64 @@
   "title": "Italic type was invented for pocket books, not for emphasis",
   "emoji": "📖",
   "body": "The Venetian printer Aldus Manutius introduced italic type in 1500 and in 1501 used it for an entire edition of Virgil. Cut by his punchcutter Francesco Griffo, it imitated the flowing handwriting of Italian humanists and was meant for small, portable books of popular texts. Using italics to stress a word came later and was a clear norm only by the 17th century. Early italics even paired slanted lowercase with upright capitals.",
+  "slides": [
+    {
+      "type": "place",
+      "question": "When did Aldus Manutius print a whole book, a pocket Virgil, in the new italic type?",
+      "min": 1400,
+      "max": 1700,
+      "step": 1,
+      "format": "year",
+      "ends": [
+        "Earlier",
+        "Later"
+      ],
+      "answer": 1501,
+      "hints": [
+        {
+          "label": "Gutenberg",
+          "value": 1455
+        },
+        {
+          "label": "Reformation",
+          "value": 1517
+        },
+        {
+          "label": "Galileo born",
+          "value": 1564
+        }
+      ],
+      "explanation": "1501, in Venice, under 50 years after Gutenberg’s Bible. Cut by Francesco Griffo to imitate humanist handwriting, it was meant for small, portable books; using italics for emphasis came much later."
+    },
+    {
+      "type": "reveal",
+      "prompt": "Early italic type had a quirk that modern fonts dropped. What was it?",
+      "answer": "Slanted lowercase paired with upright capitals",
+      "detail": "Cut by Francesco Griffo, Aldus Manutius’s italic imitated humanist handwriting and filled a whole edition of Virgil in 1501, made for small, portable books."
+    },
+    {
+      "type": "flow",
+      "heading": "How italic type came about",
+      "steps": [
+        {
+          "icon": "✍️",
+          "label": "Italian humanists write in a flowing hand"
+        },
+        {
+          "icon": "🔨",
+          "label": "Francesco Griffo cuts type imitating it"
+        },
+        {
+          "icon": "📖",
+          "label": "1501: Aldus prints a pocket Virgil in it"
+        },
+        {
+          "icon": "💬",
+          "label": "By the 1600s, italics mean emphasis"
+        }
+      ]
+    }
+  ],
   "tags": [
     "art",
     "typography",

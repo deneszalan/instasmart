@@ -1,0 +1,73 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-sutton-hoo-ghost-ship",
+  "field": "history",
+  "title": "Sutton Hoo’s 27-metre burial ship had rotted away, leaving only rivets and a ghost",
+  "emoji": "⚔️",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Sutton_Hoo_Ship_Burial_-_British_Museum_-_Joy_of_Museums.jpg/960px-Sutton_Hoo_Ship_Burial_-_British_Museum_-_Joy_of_Museums.jpg",
+    "alt": "The original Sutton Hoo helmet in a British Museum case: corroded iron with a bronze nose, mouth and eyebrows, and gaps where fragments are missing.",
+    "credit": "Joyofmuseums · CC BY-SA 4.0"
+  },
+  "body": "In May 1939 Basil Brown, a self-taught Suffolk archaeologist, began digging Mound 1 on Edith Pretty’s land at Sutton Hoo, and on the third day he found an iron ship’s rivet. Practically none of the ship’s timber survived, but nearly all its iron rivets were still in place, and sand stained by the rotted wood kept its exact form: **27 metres long**, pointed at both ends. The burial chamber held a masked helmet, a great gold buckle and silver bowls probably made in the eastern Roman world, but no body survived; phosphate traces suggest it dissolved in the acidic soil. Scholars think the most likely person buried there is Rædwald, king of the East Angles, in the early 7th century.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Brown opened Mound 1 in May 1939. What did he find on the third day of digging?",
+      "answer": "An iron ship’s rivet",
+      "detail": "More rivets soon appeared, still in their original places. Together with a ‘ghostly’ stain in the sand, they traced the hull of a ship whose wood had rotted away."
+    },
+    {
+      "type": "stat",
+      "value": "27 m",
+      "label": "length of the buried ship, pointed at both ends",
+      "text": "Clinker-built from nine overlapping planks on each side over 26 wooden ribs, with oar-rests for perhaps 40 oarsmen."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Sutton_Hoo_helmet_reconstructed.jpg/960px-Sutton_Hoo_helmet_reconstructed.jpg",
+      "alt": "A modern replica of the Sutton Hoo helmet, shining silver and gold, with a face mask, cheek guards, a crest and panels of patterned decoration.",
+      "caption": "The helmet rusted and shattered into hundreds of tiny fragments when the chamber roof collapsed. This modern replica shows how it may have looked when new.",
+      "fit": "cover",
+      "credit": "Gernot Keller · CC BY-SA 2.5"
+    },
+    {
+      "type": "list",
+      "heading": "In the burial chamber",
+      "style": "bullets",
+      "items": [
+        "A crested, masked helmet wrapped in cloths",
+        "A great gold buckle made in three parts",
+        "Hinged shoulder-clasps inlaid with garnets",
+        "Ten silver bowls, probably from the Eastern Empire"
+      ]
+    },
+    {
+      "type": "pictogram",
+      "heading": "The purse: 37 gold coins and 3 blanks",
+      "icon": "🪙",
+      "total": 40,
+      "count": 37,
+      "note": "Each coin came from a different Frankish mint. Two small gold ingots lay with them."
+    },
+    {
+      "type": "quiz",
+      "question": "Why was no body found in the Sutton Hoo ship?",
+      "options": [
+        "Acidic soil dissolved it",
+        "Robbers carried it off",
+        "It was buried at sea",
+        "A flood washed it away"
+      ],
+      "answer": 0,
+      "explanation": "Soil tests in 1967 found traces of phosphate, which supports the view that a body lay there and disappeared in the acidic soil."
+    }
+  ],
+  "tags": ["anglosaxons", "england", "ships", "archaeology"],
+  "source": {
+    "label": "Wikipedia: Sutton Hoo",
+    "url": "https://en.wikipedia.org/wiki/Sutton_Hoo"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

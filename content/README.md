@@ -1,6 +1,6 @@
-# InstaSmart content guide
+# Reckon content guide
 
-InstaSmart is an Instagram-style feed where every post teaches one surprising, true thing. This folder is the app's whole library: one JSON file per post, plus the images the posts use. Anything merged here ships with the next deploy.
+Reckon is an Instagram-style feed where every post teaches one surprising, true thing. This folder is the app's whole library: one JSON file per post, plus the images the posts use. Anything merged here ships with the next deploy.
 
 This guide is written for people **and LLMs** contributing posts.
 
@@ -68,6 +68,7 @@ The app shows a badge with the writer's name on each AI-written post, and reader
 | --- | --- |
 | Claude | `{ "name": "Claude", "kind": "ai" }` |
 | ChatGPT | `{ "name": "ChatGPT", "kind": "ai" }` |
+| Fable | `{ "name": "Fable", "kind": "ai" }` |
 | Another AI | `{ "name": "<its name>", "kind": "ai" }`: shown with a plain AI badge |
 | A person | `{ "name": "<their name>", "kind": "human" }`: no badge |
 
@@ -75,7 +76,7 @@ You can add the exact model as `"model"`, e.g. `{ "name": "ChatGPT", "kind": "ai
 
 ## Slide types
 
-Each slide is a 4:5 card on the post's gradient. Pick the type that fits the idea, and keep one idea per slide.
+Each slide is a 4:5 card on the post's gradient. Pick the type that fits the idea, and keep one idea per slide. There are three kinds: text slides, **visual** slides the app draws from numbers (`chart`, `pictogram`, `scale`, `spectrum`, `flow`), and **interactive** slides the reader plays (`quiz`, `reveal`, `estimate`, the puzzles `order`, `match`, `sort`, `scramble`, `odd`, and the visual puzzles `rank`, `higher`, `fill`, `place`, which reveal a graphic once the reader has guessed).
 
 | Type | Use it for | Shape |
 | --- | --- | --- |
@@ -85,9 +86,66 @@ Each slide is a 4:5 card on the post's gradient. Pick the type that fits the ide
 | `quote` | A real, verifiable quotation | `{ "type": "quote", "text": "≤240", "attribution"?: "≤80" }` |
 | `compare` | Myth vs fact, before vs after, A vs B | `{ "type": "compare", "heading"?, "left": { "label": "Myth", "text": "≤160" }, "right": { "label": "Fact", "text": "≤160" } }` |
 | `timeline` | 2–5 dated events | `{ "type": "timeline", "heading"?, "events": [{ "when": "1687", "text": "≤110" }, …] }` |
+| `quiz` | A question with one right answer | `{ "type": "quiz", "question": "≤140", "options": ["≤40", … 2–4], "answer": 0, "explanation": "≤200" }` |
+| `reveal` | A teaser the reader taps to flip over | `{ "type": "reveal", "prompt": "≤140", "answer": "≤80", "detail"?: "≤200" }` |
+| `estimate` | Guess a number with a slider | `{ "type": "estimate", "question": "≤120", "min": 0, "max": 100, "step"?: 1, "answer": 34, "unit"?: "%", "format"?: "year", "explanation": "≤200" }` |
+| `order` | Put 3–5 things in order by tapping | `{ "type": "order", "heading": "Oldest first", "items": ["≤40", … in the correct order], "explanation"?: "≤160" }` |
+| `chart` | Compare 2–6 numbers as bars | `{ "type": "chart", "heading": "≤80", "items": [{ "label": "≤28", "value": 14.9, "emphasis"?: true }, … 2–6], "unit"?: "t", "note"?: "≤100" }` |
+| `pictogram` | A share: "1 in 4", "71 of 100" | `{ "type": "pictogram", "heading": "≤90", "icon": "🧍", "total": 4, "count": 1, "note"?: "≤100" }` |
+| `scale` | How much bigger one thing is than another | `{ "type": "scale", "heading": "≤80", "items": [{ "label": "≤20", "value": 1 }, … 2–4], "unit"?: "Earths", "note"?: "≤100" }` |
+| `spectrum` | Where things sit on one measure: dB, pH, °C, years | `{ "type": "spectrum", "heading": "≤80", "min": 0, "max": 140, "unit"?: "dB", "ends"?: ["Silence", "Pain"], "marks": [{ "label": "≤28", "value": 30, "emphasis"?: true }, … 2–6], "format"?: "year", "colors"?: ["#38bdf8", "#fbbf24"], "note"? }` |
+| `flow` | A process or a cycle in 3–5 steps | `{ "type": "flow", "heading": "≤60", "steps": [{ "icon"?: "💉", "label": "≤44" }, … 3–5], "cycle"?: true }` |
+| `match` | Pair things up: person and discovery, word and meaning | `{ "type": "match", "heading": "≤60", "pairs": [{ "left": "≤28", "right": "≤28" }, … 3–5], "explanation"?: "≤160" }` |
+| `sort` | Fact or myth, A or B, one item at a time | `{ "type": "sort", "heading": "≤60", "bins": ["Fact", "Myth"], "items": [{ "text": "≤60", "bin": 0 }, … 3–5], "explanation"?: "≤160" }` |
+| `scramble` | Unscramble a key word from a clue | `{ "type": "scramble", "clue": "≤120", "answer": "3–14 letters", "detail"?: "≤160" }` |
+| `odd` | Which one doesn’t belong | `{ "type": "odd", "heading"?: "≤60", "items": ["≤36", … 3–4], "answer": 3, "explanation": "≤200" }` |
+| `rank` | Guess the order of 3–5 numbers; the bars then reveal | `{ "type": "rank", "heading": "≤80", "items": [{ "label": "≤28", "value": 14.9 }, … 3–5, all different], "unit"?, "note"?, "explanation"?: "≤160" }` |
+| `higher` | Higher or lower, one bar at a time | `{ "type": "higher", "heading": "≤80", "items": [{ "label": "≤28", "value": 2 }, … 3–5 in play order], "unit"?, "note"?, "explanation"?: "≤160" }` |
+| `fill` | Guess a share by lighting up icons | `{ "type": "fill", "question": "≤120", "icon": "🧍", "total": 10, "answer": 3, "explanation": "≤200" }` |
+| `place` | Put a value on a spectrum, with known points as clues | `{ "type": "place", "question": "≤120", "min": 0, "max": 140, "step"?: 1, "answer": 110, "unit"?: "dB", "ends"?: ["Silence", "Pain"], "hints"?: [{ "label": "≤14", "value": 30 }, … ≤4], "format"?: "year", "colors"?, "explanation": "≤200" }` |
 | `image` | A photo or a diagram | `{ "type": "image", "src": "orbit.svg", "alt": "…", "caption"?: "≤200", "fit"?: "cover" \| "contain", "credit"?: "≤120" }` |
 
 Use `"fit": "cover"` for photos (they fill the card) and `"fit": "contain"` for diagrams (the whole image shows on the gradient).
+
+### Visual slides
+
+The app draws these from the numbers in the JSON, so they need no image file and always match the post's colours. Reach for one whenever a sentence would otherwise carry the numbers.
+
+- `chart`: a comparison, as bars. 2–6 items, longest bar at full width, values in one `unit`. Mark the item the post is about with `"emphasis": true`. Put the year, the measure or a caveat in `note`.
+- `pictogram`: one share, as a grid of icons. `count` of `total` light up: "1 in 4" is `1` of `4`, "71%" is `71` of `100`. Pick an `icon` that fits (🧍 people, 🌍 planets, 🟦 anything). Up to 100 icons.
+- `scale`: "X times bigger", as circles whose areas are proportional to the values. 2–4 items, smallest first. With a ratio above a few thousand the small one becomes a dot, which can be the whole point.
+- `spectrum`: where things sit on one measure, as marks along a bar from `min` to `max`. 2–6 marks, each inside the range; `ends` names the two extremes; `colors` sets the bar's colours at the low and high ends. Good for decibels, pH, temperatures, frequencies, years. For years, add `"format": "year"` so 1963 is not shown as 1,963 (the app assumes it for unit-less whole numbers between 1000 and 2100).
+- `flow`: how something happens, in 3–5 steps with an emoji each. `"cycle": true` when the last step leads back to the first.
+
+Numbers are plain JSON numbers (`14.9`, not `"14.9"`), rounded as the source gives them; the app formats them. Only use figures you can point to in the source.
+
+### Visual puzzles
+
+Each is the playable twin of a visual slide: `rank` and `higher` end as a `chart`, `fill` as a `pictogram`, `place` as a `spectrum`. Use the puzzle instead of the static slide when the numbers are surprising enough to guess at; the reveal shows the full graphic either way.
+
+- `rank`: 3–5 items with all-different values; the reader taps them from largest to smallest, then sees the bars with their guesses marked.
+- `higher`: 3–5 items in play order; the first bar is shown and the reader says higher or lower for each next one. Mix ups and downs, and avoid near-ties.
+- `fill`: "out of 10, how many…?" with a grid of 10 or 20 icons the reader lights up. `answer` is the real share, rounded to the grid.
+- `place`: a value to put on a bar from `min` to `max`. Give 1–4 `hints`, known points that make the guess fair without giving it away, and `ends` for the two extremes.
+
+They count as interactive slides, so the limits below apply to them too.
+
+### Interactive slides
+
+`quiz`, `reveal`, `estimate`, the puzzles `order`, `match`, `sort`, `scramble`, `odd` and the visual puzzles above turn a post into something to do, and the app keeps a tally of them in Profile. Tips:
+
+- Put an `estimate` or `reveal` *before* the slide that gives the answer, so the guess is real; put a `quiz` or `order` near the end, as a recap.
+- Don't quiz the title: readers have just seen it. Ask about the why, a number from the body, or a detail from a slide.
+- Make wrong options plausible, keep every option under 40 characters, and never build a question on a hedged or disputed figure.
+- `answer` in a quiz counts from 0. `order` items are written in the correct order; the app shuffles them.
+- An `estimate` needs a range that makes guessing interesting (not 0–1,000,000 for an answer of 5) and `step: 1` for whole numbers. For a year, add `"format": "year"` so it shows as 1582, not 1,582.
+- `match` needs 3–5 pairs where each left has exactly one right answer; both sides must be unique. The app shuffles the right-hand column.
+- `sort` shows the items one at a time and asks which of the two `bins` each belongs in; use both bins. "Fact or myth?" is the classic.
+- `scramble` is one word of 3–14 plain letters (A–Z, no spaces or accents) that the clue makes solvable: a key term from the post, not a random word. `detail` can give its origin.
+- `odd` lists 3–4 things of which one doesn't belong as a matter of fact, and the explanation says what the others share.
+- Two interactive slides per post is plenty, three at most and only when one of them is a visual puzzle standing in for a chart, pictogram or spectrum; a visual slide beside them gives readers something to look at between plays.
+
+A slide is phone-sized, so `list` and `timeline` slides must stay short: about 12 lines in total, where a timeline date counts as a line and a line holds roughly 34 characters (30 in a list). `npm run content` checks this and tells you by how much to cut.
 
 ## Images
 

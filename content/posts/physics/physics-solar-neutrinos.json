@@ -5,6 +5,52 @@
   "title": "Billions of ghostly neutrinos pass through your thumbnail every second",
   "emoji": "👻",
   "body": "Fusion in the Sun’s core releases neutrinos, tiny neutral particles that barely interact with anything. At Earth, about 65 billion of them cross every square centimetre, roughly a thumbnail, each second, and they keep coming at night because they fly straight through the planet. Almost all pass through you without a trace. Catching even a few takes huge detectors deep underground, where rare collisions produce faint flashes of light.",
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "A neutrino’s journey",
+      "steps": [
+        {
+          "icon": "☀️",
+          "label": "Fusion in the Sun’s core makes neutrinos"
+        },
+        {
+          "icon": "🚀",
+          "label": "They fly straight out through the Sun"
+        },
+        {
+          "icon": "👻",
+          "label": "65 billion cross your thumbnail a second"
+        },
+        {
+          "icon": "🌍",
+          "label": "Through Earth and out the other side"
+        },
+        {
+          "icon": "💡",
+          "label": "Rarely, one hits a detector: a faint flash"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why do solar neutrinos keep streaming through you at night?",
+      "options": [
+        "They are stored in the atmosphere",
+        "The Moon reflects them back down",
+        "They fly straight through the Earth",
+        "They come from the Sun’s far side"
+      ],
+      "answer": 2,
+      "explanation": "Neutrinos barely interact with anything, so they pass straight through the planet, and through you. Catching a few takes huge detectors deep underground."
+    },
+    {
+      "type": "scramble",
+      "clue": "The ghostly neutral particle that streams through you by the billion every second",
+      "answer": "NEUTRINO",
+      "detail": "Italian for ‘little neutral one’: a name coined in jest by Edoardo Amaldi and made standard by Enrico Fermi."
+    }
+  ],
   "tags": [
     "neutrinos",
     "particles",

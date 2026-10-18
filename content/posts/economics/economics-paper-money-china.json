@@ -1,0 +1,126 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "economics-paper-money-china",
+  "field": "economics",
+  "title": "China had state-issued paper money 600 years before Europe",
+  "emoji": "💴",
+  "body": "In 11th-century Sichuan, merchants in Chengdu began issuing paper notes called jiaozi, because the iron coins used there were too heavy to carry in quantity. In 1023 the Song government took the idea over and opened an office to print official notes, the first state paper currency anywhere. Europe’s first banknotes came from Stockholms Banco in 1661, and they too replaced coins that were too heavy to carry: Sweden’s plate-sized copper daler. In both places the printers soon printed too much.",
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "How paper money was born in Sichuan",
+      "steps": [
+        {
+          "icon": "🪙",
+          "label": "Iron coins: too heavy to carry in bulk"
+        },
+        {
+          "icon": "🧾",
+          "label": "Chengdu merchants issue paper notes"
+        },
+        {
+          "icon": "🏛️",
+          "label": "The Song state takes over printing, 1023"
+        },
+        {
+          "icon": "📈",
+          "label": "Too many notes are printed: prices rise"
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "Paper money’s long road",
+      "events": [
+        {
+          "when": "618–907",
+          "text": "Tang merchants’ deposit receipts"
+        },
+        {
+          "when": "11th century",
+          "text": "Jiaozi notes appear in Chengdu"
+        },
+        {
+          "when": "1023",
+          "text": "The Song state takes them over"
+        },
+        {
+          "when": "c. 1300",
+          "text": "Marco Polo describes paper money"
+        },
+        {
+          "when": "1661",
+          "text": "Europe’s first notes, in Stockholm"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Same problem, same fix",
+      "left": {
+        "label": "Chengdu, 1023",
+        "text": "Iron coins too heavy to carry. Paper notes stand in for them, and are later over-printed, driving up prices."
+      },
+      "right": {
+        "label": "Stockholm, 1661",
+        "text": "Plate-sized copper coins. Paper notes are easier to carry, but the bank over-issues them and stops trading within three years."
+      }
+    },
+    {
+      "type": "stat",
+      "value": "638 years",
+      "label": "between China’s first state banknotes and Europe’s",
+      "text": "From 1023 in Chengdu to 1661 in Stockholm."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did Chengdu’s merchants start issuing paper notes?",
+      "options": [
+        "Iron coins were too heavy to carry",
+        "Paper was cheaper than silver",
+        "The emperor banned coins",
+        "To pay foreign traders"
+      ],
+      "answer": 0,
+      "explanation": "Sichuan used iron coins, far too heavy in quantity. Six centuries later, Stockholm’s notes replaced plate-sized copper coins for the same reason."
+    },
+    {
+      "type": "match",
+      "heading": "Match the money to its story",
+      "pairs": [
+        {
+          "left": "Jiaozi",
+          "right": "Chengdu merchants’ notes"
+        },
+        {
+          "left": "Iron coins",
+          "right": "Sichuan’s heavy money"
+        },
+        {
+          "left": "Copper daler",
+          "right": "Sweden’s plate-sized coins"
+        },
+        {
+          "left": "Stockholms Banco",
+          "right": "Europe’s first banknotes"
+        }
+      ],
+      "explanation": "In both places paper stood in for coins too heavy to carry, and in both the printers soon issued too many."
+    }
+  ],
+  "tags": [
+    "money",
+    "banknotes",
+    "china",
+    "song"
+  ],
+  "source": {
+    "label": "Wikipedia: History of money",
+    "url": "https://en.wikipedia.org/wiki/History_of_money"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

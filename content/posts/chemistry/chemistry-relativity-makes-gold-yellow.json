@@ -19,7 +19,27 @@
     {
       "type": "text",
       "heading": "Mercury and your car",
-      "text": "Similar effects weaken bonding in mercury, helping keep it liquid. Calculations suggest about 10 V of a 12 V lead–acid car battery is due to relativity."
+      "text": "Similar effects weaken bonding in mercury, helping keep it liquid. They even reach into something as everyday as the lead–acid battery that starts a car."
+    },
+    {
+      "type": "fill",
+      "question": "A lead–acid car battery gives 12 volts. How many of those 12 volts come from relativistic effects?",
+      "icon": "🔋",
+      "total": 12,
+      "answer": 10,
+      "explanation": "About 10 of the 12 volts, by calculation: lead is heavy enough for relativity to shift its electron energies, much as in gold. The same sums explain why a tin–acid battery does not work."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does gold look yellow rather than silvery?",
+      "options": [
+        "It gives off yellow light of its own",
+        "Its surface carries a thin oxide film",
+        "It reflects red light more strongly",
+        "Its electrons absorb some blue light"
+      ],
+      "answer": 3,
+      "explanation": "Relativity shrinks gold’s 6s orbital and expands 5d, bringing them close in energy, so gold absorbs blue. The reflected light is missing blue, which our eyes read as warm yellow."
     }
   ],
   "tags": [

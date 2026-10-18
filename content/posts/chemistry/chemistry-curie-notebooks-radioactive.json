@@ -1,0 +1,110 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-curie-notebooks-radioactive",
+  "field": "chemistry",
+  "title": "Marie Curie’s 1890s papers are still so radioactive they are kept in lead-lined boxes",
+  "emoji": "☢️",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Pierre_and_Marie_Curie.jpg/960px-Pierre_and_Marie_Curie.jpg",
+    "alt": "Black-and-white photo of Pierre and Marie Curie in their laboratory around 1904, standing and sitting beside apparatus for detecting radioactivity.",
+    "credit": "Unknown photographer · Public domain"
+  },
+  "body": "In 1898 Marie and Pierre Curie announced two new elements, polonium and radium, and Marie coined the word ‘radioactivity’. She worked with them at close quarters: she carried test tubes of radioactive isotopes in her pocket and kept them in her desk drawer, remarking on the faint light they gave off in the dark. Because of their levels of radioactive contamination, her papers from the 1890s are now **considered too dangerous to handle**, and even her cookbooks are highly radioactive. They are kept in lead-lined boxes, and anyone who wants to consult them must wear protective clothing.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Radium-226, the longest-lived form of radium, has a half-life of how many years?",
+      "min": 0,
+      "max": 5000,
+      "step": 100,
+      "answer": 1600,
+      "unit": "years",
+      "explanation": "1,600 years, according to [Wikipedia’s radium article](https://en.wikipedia.org/wiki/Radium). After that long, only half of a sample has decayed."
+    },
+    {
+      "type": "spectrum",
+      "heading": "How slowly radium fades",
+      "min": 1850,
+      "max": 3600,
+      "format": "year",
+      "marks": [
+        {
+          "label": "Radium announced",
+          "value": 1898
+        },
+        {
+          "label": "Today",
+          "value": 2026
+        },
+        {
+          "label": "Half of 1898’s radium gone",
+          "value": 3498,
+          "emphasis": true
+        }
+      ],
+      "colors": [
+        "#a3e635",
+        "#475569"
+      ],
+      "note": "A sample of radium-226 from 1898 will not be half decayed until about 3498"
+    },
+    {
+      "type": "timeline",
+      "heading": "Two elements, two Nobels",
+      "events": [
+        {
+          "when": "1898",
+          "text": "Polonium and radium announced"
+        },
+        {
+          "when": "1903",
+          "text": "Nobel Prize in Physics, shared"
+        },
+        {
+          "when": "1911",
+          "text": "Nobel Prize in Chemistry"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Marie_Curie_c._1920s.jpg/960px-Marie_Curie_c._1920s.jpg",
+      "alt": "Black-and-white portrait of Marie Curie around 1920, seated, wearing a dark dress, her grey hair pulled back.",
+      "caption": "Marie Curie around 1920. She was the first woman to win a Nobel Prize, and is still the only person to win in two different sciences.",
+      "fit": "cover",
+      "credit": "Henri Manuel · Public domain"
+    },
+    {
+      "type": "text",
+      "heading": "The cost of the work",
+      "text": "Curie died on 4 July 1934 from aplastic anaemia, believed to have been caused by her long-term exposure to radiation. When her remains and Pierre’s were moved to the Panthéon in Paris in 1995, they were sealed in a lead lining because of the radioactivity."
+    },
+    {
+      "type": "quiz",
+      "question": "Polonium, the first element the Curies announced in 1898, is named after what?",
+      "options": [
+        "Marie’s native Poland",
+        "The North Pole",
+        "The Greek word for many",
+        "The pole of a magnet"
+      ],
+      "answer": 0,
+      "explanation": "Marie Curie was born Maria Skłodowska in Warsaw, and she named polonium after her homeland."
+    }
+  ],
+  "tags": [
+    "radioactivity",
+    "curie",
+    "radium",
+    "elements"
+  ],
+  "source": {
+    "label": "Wikipedia: Marie Curie",
+    "url": "https://en.wikipedia.org/wiki/Marie_Curie"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

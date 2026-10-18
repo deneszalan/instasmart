@@ -5,6 +5,61 @@
   "title": "Earth’s inner core is about as hot as the surface of the Sun",
   "emoji": "🌍",
   "body": "More than 5,000 km beneath your feet sits a ball of iron and nickel nearly 2,500 km across, with an estimated temperature around 5,400 °C, similar to the Sun’s surface. At that heat it should melt, but pressure of roughly 3.3 to 3.6 million atmospheres keeps it solid. No one has ever sampled it: Danish seismologist Inge Lehmann discovered it in 1936 by studying how earthquake waves travel through the planet.",
+  "slides": [
+    {
+      "type": "chart",
+      "heading": "How hot is the inner core?",
+      "unit": "°C",
+      "items": [
+        {
+          "label": "Boiling water",
+          "value": 100
+        },
+        {
+          "label": "Basalt lava",
+          "value": 1200
+        },
+        {
+          "label": "Iron melts",
+          "value": 1538
+        },
+        {
+          "label": "Earth’s inner core",
+          "value": 5400,
+          "emphasis": true
+        },
+        {
+          "label": "Surface of the Sun",
+          "value": 5500
+        }
+      ],
+      "note": "Approximate figures. The core stays solid only because of the immense pressure."
+    },
+    {
+      "type": "quiz",
+      "question": "The inner core is hot enough to melt, so why is it solid?",
+      "options": [
+        "Immense pressure keeps it solid",
+        "Its iron–nickel alloy never melts",
+        "The outer core cools it down",
+        "It is really a very dense gas"
+      ],
+      "answer": 0,
+      "explanation": "Pressure of roughly 3.3 to 3.6 million atmospheres keeps the iron and nickel solid at around 5,400 °C. Inge Lehmann found the core in 1936 by studying earthquake waves."
+    },
+    {
+      "type": "odd",
+      "heading": "Which layer of the Earth is liquid?",
+      "items": [
+        "Crust",
+        "Mantle",
+        "Outer core",
+        "Inner core"
+      ],
+      "answer": 2,
+      "explanation": "The outer core is molten iron and nickel, and its churning generates Earth’s magnetic field. The crust, the mantle and the inner core are solid; the mantle only creeps, very slowly."
+    }
+  ],
   "tags": [
     "innercore",
     "geology",

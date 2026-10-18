@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "philosophy-boethius-consolation-prison",
+  "field": "philosophy",
+  "title": "A book read all through the Middle Ages was written in a cell, awaiting execution",
+  "emoji": "⛓️",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Boethius%2C_Consolatio_philosophiae_%28French%29.jpg/960px-Boethius%2C_Consolatio_philosophiae_%28French%29.jpg",
+    "alt": "A page from a 15th-century French manuscript with a flowered border: Boethius sits in a room visited by Philosophy, beside a painted wheel of Fortune carrying a crowned king at the top and figures rising and falling.",
+    "credit": "Bibliothèque nationale de France, Fr. 809 · Public domain"
+  },
+  "body": "Boethius had been at the very top of power in Rome, holding the high office of *magister officiorum* under the Ostrogothic king Theodoric. Then he was accused of treason and imprisoned. Waiting to die, in 523 he wrote *The Consolation of Philosophy*, a dialogue in which Philosophy visits him as a woman. She reminds him that Fortune’s wheel always turns, that earthly goods such as wealth and beauty are fleeting, and that true happiness lies in wisdom. Written in alternating prose and verse, it became one of the most popular and influential philosophical works of the Middle Ages.",
+  "slides": [
+    {
+      "type": "match",
+      "heading": "Match each book to its theme",
+      "pairs": [
+        { "left": "Book I", "right": "Lament in a prison cell" },
+        { "left": "Book II", "right": "The wheel of Fortune" },
+        { "left": "Book IV", "right": "Good and evil" },
+        { "left": "Book V", "right": "Free will and providence" }
+      ],
+      "explanation": "In Book III, Philosophy shows that wisdom has a divine source. Book V asks how an all-knowing God can leave room for free will."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Boethius_initial_consolation_philosophy.jpg/960px-Boethius_initial_consolation_philosophy.jpg",
+      "alt": "A gilded medieval initial letter enclosing a painting of Boethius in a white robe and red hat, teaching from an open book to five students in coloured robes.",
+      "caption": "Boethius teaching, in an initial from a manuscript of the Consolation made around 1385, probably in Italy.",
+      "fit": "cover",
+      "credit": "Unknown illuminator, Glasgow University Library · Public domain"
+    },
+    {
+      "type": "quote",
+      "text": "A golden volume not unworthy of the leisure of Plato or Tully.",
+      "attribution": "Edward Gibbon, on the Consolation"
+    },
+    {
+      "type": "odd",
+      "heading": "Who did not translate the Consolation?",
+      "items": ["King Alfred", "Geoffrey Chaucer", "Elizabeth I", "Theodoric"],
+      "answer": 3,
+      "explanation": "Alfred, Chaucer (as his Boece) and Queen Elizabeth I all translated it. Theodoric was the Ostrogothic king who had Boethius imprisoned."
+    },
+    {
+      "type": "text",
+      "heading": "A long shadow",
+      "text": "It is often called the last great Western work of the Classical period. Dante quotes it often in the Divine Comedy, its influence runs through Chaucer’s poetry, and the scholar Tom Shippey has pointed out how ‘Boethian’ the treatment of evil is in The Lord of the Rings."
+    }
+  ],
+  "tags": ["medieval", "books", "fortune", "prison"],
+  "source": { "label": "Wikipedia: The Consolation of Philosophy", "url": "https://en.wikipedia.org/wiki/The_Consolation_of_Philosophy" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

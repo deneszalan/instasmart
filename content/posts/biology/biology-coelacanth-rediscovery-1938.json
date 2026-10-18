@@ -1,0 +1,104 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-coelacanth-rediscovery-1938",
+  "field": "biology",
+  "title": "A fish thought extinct for 66 million years turned up in a fisherman's catch in 1938",
+  "emoji": "🐟",
+  "body": "Coelacanths were known only from fossils, and the youngest were about **66 million years** old, so scientists assumed they had died out along with the dinosaurs. On 22 December 1938 museum curator Marjorie Courtenay-Latimer noticed a strange fish in a catch landed near the Chalumna River in South Africa, and the ichthyologist J. L. B. Smith identified it from her drawings. Coelacanths are lobe-finned fish, more closely related to land vertebrates like us than to most other fish. They are thought to mature only after about 20 years, females may carry their young for as long as five years, and the African species is critically endangered.",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Coelacanth_sea_world.JPG/960px-Coelacanth_sea_world.JPG",
+    "alt": "A preserved coelacanth specimen with large grey scales and lobed fins displayed in a glass tank",
+    "credit": "Amelia Guo · CC BY 3.0"
+  },
+  "slides": [
+    {
+      "type": "quote",
+      "text": "Most Important Preserve Skeleton and Gills = Fish Described",
+      "attribution": "J. L. B. Smith, cable to Marjorie Courtenay-Latimer"
+    },
+    {
+      "type": "image",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Marjorie_Courtenay-Latimer_and_Coelacanth.jpg",
+      "alt": "A black-and-white photograph of Marjorie Courtenay-Latimer standing beside the mounted 1938 coelacanth specimen",
+      "caption": "Marjorie Courtenay-Latimer with the mounted specimen. The genus of living coelacanths, Latimeria, was named in her honour.",
+      "fit": "cover",
+      "credit": "Unknown author · Public domain"
+    },
+    {
+      "type": "timeline",
+      "heading": "Back from the dead",
+      "events": [
+        {
+          "when": "66 Mya",
+          "text": "Youngest fossils; group presumed extinct"
+        },
+        {
+          "when": "1938",
+          "text": "First live specimen, off South Africa"
+        },
+        {
+          "when": "1997",
+          "text": "Second species found in Indonesia"
+        },
+        {
+          "when": "2021",
+          "text": "Study: pregnancy may last five years"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Coelacanths are more closely related to which of these?",
+      "options": [
+        "Humans and other land vertebrates",
+        "Tuna and other ray-finned fish",
+        "Sharks"
+      ],
+      "answer": 0,
+      "explanation": "They are lobe-finned fish, sharing that branch of the tree with lungfish and the tetrapods, so they are closer to land vertebrates than to ray-finned fish such as tuna."
+    },
+    {
+      "type": "chart",
+      "heading": "A slow life, in years",
+      "unit": "years",
+      "items": [
+        {
+          "label": "Pregnancy, up to",
+          "value": 5
+        },
+        {
+          "label": "Age at maturity, about",
+          "value": 20,
+          "emphasis": true
+        }
+      ],
+      "note": "Earlier estimates put gestation at 13 to 15 months; 2021 research suggests up to five years"
+    },
+    {
+      "type": "reveal",
+      "prompt": "Whom does the genus name of the living coelacanths, Latimeria, commemorate?",
+      "answer": "Marjorie Courtenay-Latimer",
+      "detail": "The museum curator who spotted the first specimen in a fisherman's catch on 22 December 1938 and sent drawings to J. L. B. Smith, who identified it."
+    },
+    {
+      "type": "text",
+      "heading": "Still at risk",
+      "text": "The IUCN lists the West Indian Ocean coelacanth as critically endangered and the Indonesian species as vulnerable. The main threat is bycatch, especially from commercial deep-sea trawling, in the deep reef and volcanic slope habitats where they live."
+    }
+  ],
+  "tags": [
+    "coelacanth",
+    "fish",
+    "evolution",
+    "fossils"
+  ],
+  "source": {
+    "label": "Wikipedia: Coelacanth",
+    "url": "https://en.wikipedia.org/wiki/Coelacanth"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

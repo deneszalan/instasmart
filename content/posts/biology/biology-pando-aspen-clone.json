@@ -5,6 +5,59 @@
   "title": "A ‘forest’ in Utah is really one tree with about 47,000 trunks",
   "emoji": "🌳",
   "body": "Pando is a grove of quaking aspen in Utah’s Fishlake National Forest. Its roughly 47,000 stems look like separate trees, but they are genetically identical shoots sent up from one shared root system covering about 43 hectares. Weighing an estimated 6,000 tonnes, it is generally considered the heaviest single organism known. Because stems keep dying and being replaced, its age is hard to pin down, but estimates run to many thousands of years.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How much ground does Pando’s single root system cover?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 43,
+      "unit": "hectares",
+      "explanation": "About 43 hectares. Its roughly 47,000 stems are genetically identical shoots from one shared root system in Utah’s Fishlake National Forest."
+    },
+    {
+      "type": "place",
+      "question": "Pando, one tree with about 47,000 trunks: how much does it weigh?",
+      "min": 0,
+      "max": 8000,
+      "step": 100,
+      "answer": 6000,
+      "unit": "t",
+      "ends": [
+        "0 t",
+        "8,000 t"
+      ],
+      "hints": [
+        {
+          "label": "Blue whale",
+          "value": 200
+        },
+        {
+          "label": "Giant sequoia",
+          "value": 1910
+        }
+      ],
+      "explanation": "An estimated 6,000 tonnes, generally held to be the heaviest organism known. The biggest blue whales reach 190–200 t; General Sherman, the largest single-trunk tree, is estimated at about 1,900 t."
+    },
+    {
+      "type": "scale",
+      "heading": "The heaviest organism known, next to the heaviest animal",
+      "items": [
+        {
+          "label": "Blue whale, up to",
+          "value": 200
+        },
+        {
+          "label": "Pando",
+          "value": 6000,
+          "emphasis": true
+        }
+      ],
+      "unit": "t",
+      "note": "Both are estimates: the heaviest blue whales reach 190–200 tonnes"
+    }
+  ],
   "tags": [
     "trees",
     "plants",

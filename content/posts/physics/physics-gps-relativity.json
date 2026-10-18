@@ -7,6 +7,67 @@
   "body": "GPS finds your position by timing signals from satellites, so their atomic clocks must agree with clocks on the ground to within billionths of a second. Einstein’s relativity spoils that: combined, its effects make the satellite clocks run fast by about 38 microseconds a day. That sounds tiny, but light travels more than 11 km in that time, so without a correction your position would be off by kilometres within a single day.",
   "slides": [
     {
+      "type": "place",
+      "question": "How high above Earth do GPS satellites orbit?",
+      "min": 0,
+      "max": 40000,
+      "step": 100,
+      "answer": 20200,
+      "unit": "km",
+      "hints": [
+        {
+          "label": "ISS",
+          "value": 400
+        },
+        {
+          "label": "Geostationary",
+          "value": 35786
+        }
+      ],
+      "explanation": "About 20,200 km up, in medium Earth orbit: 50 times higher than the ISS, yet well below geostationary satellites. Up there gravity is weaker, so the satellite clocks tick faster."
+    },
+    {
+      "type": "estimate",
+      "question": "Overall, by how many microseconds a day do GPS satellite clocks run fast?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 38,
+      "unit": "µs",
+      "explanation": "About 38 microseconds a day: their speed slows them by about 7, but weaker gravity 20,000 km up speeds them by about 45. Light covers more than 11 km in 38 microseconds."
+    },
+    {
+      "type": "spectrum",
+      "heading": "What relativity does to a GPS clock, per day",
+      "min": -10,
+      "max": 50,
+      "marks": [
+        {
+          "label": "Ground clock",
+          "value": 0
+        },
+        {
+          "label": "Orbital speed",
+          "value": -7
+        },
+        {
+          "label": "Net effect",
+          "value": 38,
+          "emphasis": true
+        },
+        {
+          "label": "Weaker gravity",
+          "value": 45
+        }
+      ],
+      "unit": "µs",
+      "ends": [
+        "Runs slow",
+        "Runs fast"
+      ],
+      "note": "Microseconds gained each day: speed costs 7, weaker gravity adds 45, net 38 fast"
+    },
+    {
       "type": "text",
       "heading": "Speed slows the clock",
       "text": "Orbiting at nearly 4 km/s, each satellite clock runs slow by about 7 microseconds a day, as special relativity predicts for moving clocks."

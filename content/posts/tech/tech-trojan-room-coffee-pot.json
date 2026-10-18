@@ -1,0 +1,105 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-trojan-room-coffee-pot",
+  "field": "tech",
+  "title": "The world’s first webcam was pointed at a coffee pot",
+  "emoji": "☕",
+  "body": "In 1991, researchers at the University of Cambridge Computer Laboratory were tired of walking to the Trojan Room coffee machine and finding it empty. Quentin Stafford-Fraser and Paul Jardetzky pointed a camera at the pot and wrote software, XCoffee, to show a live **128×128-pixel greyscale picture** on everyone’s desktop. When browsers learned to display images in 1993, the feed went on the web that November and became the first webcam online, watched by people around the world who would never taste the coffee.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How many pixels wide was the coffee-pot picture?",
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "answer": 128,
+      "unit": "px",
+      "explanation": "128 × 128 greyscale pixels: enough to tell whether the pot was empty, and no more."
+    },
+    {
+      "type": "scale",
+      "heading": "The coffee-pot picture next to one full-HD frame",
+      "items": [
+        {
+          "label": "Coffee pot 128×128",
+          "value": 16384,
+          "emphasis": true
+        },
+        {
+          "label": "Full HD 1920×1080",
+          "value": 2073600
+        }
+      ],
+      "unit": "pixels",
+      "note": "16,384 greyscale pixels against 2,073,600: about 1/127 of a modern 1080p frame."
+    },
+    {
+      "type": "image",
+      "src": "coffee-pot.svg",
+      "alt": "A blocky, grey, pixel-style drawing of a filter coffee pot inside a small square window, labelled 128 by 128 pixels.",
+      "caption": "The feed was tiny, grey and famous.",
+      "fit": "contain"
+    },
+    {
+      "type": "place",
+      "question": "The lab pointed a camera at the pot in 1991. When did the picture go on the web?",
+      "min": 1985,
+      "max": 2005,
+      "step": 1,
+      "answer": 1993,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Camera set up",
+          "value": 1991
+        },
+        {
+          "label": "Switched off",
+          "value": 2001
+        }
+      ],
+      "explanation": "November 1993, once web browsers could show pictures. From then on, people around the world checked a Cambridge coffee pot they would never drink from."
+    },
+    {
+      "type": "timeline",
+      "heading": "Life of a coffee pot",
+      "events": [
+        {
+          "when": "1991",
+          "text": "XCoffee shows the pot on the lab’s own network"
+        },
+        {
+          "when": "Nov 1993",
+          "text": "The picture goes on the web, the first webcam to do so"
+        },
+        {
+          "when": "22 Aug 2001",
+          "text": "The camera is switched off at 09:54 UTC"
+        },
+        {
+          "when": "2001",
+          "text": "The pot sells on eBay for £3,350"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why it mattered",
+      "text": "It showed that a live picture of anything could be shared over the internet, years before video calls or streaming. The idea was mundane; the habit it started, checking a distant camera from wherever you are, now lives in every phone."
+    }
+  ],
+  "tags": [
+    "webcam",
+    "internet",
+    "cambridge"
+  ],
+  "source": {
+    "label": "Wikipedia: Trojan Room coffee pot",
+    "url": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

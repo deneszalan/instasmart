@@ -7,6 +7,35 @@
   "body": "On 17 July 1981, two suspended walkways crashed into a crowded hotel atrium in Kansas City, killing 114 people. The original design hung both walkways from shared long rods. During construction this was changed so the lower walkway hung from the upper one. The change, approved without proper checking, doubled the load on the upper walkway’s connections, which were already weaker than the building code required.",
   "slides": [
     {
+      "type": "fill",
+      "question": "The code required a certain strength. For every 10 units of that, how many could the as-built connections hold?",
+      "icon": "🔩",
+      "total": 10,
+      "answer": 3,
+      "explanation": "Only 3 in 10. The original design managed just 6 in 10 of the code minimum, and hanging the lower walkway from the upper one doubled the load on those connections, halving that."
+    },
+    {
+      "type": "chart",
+      "heading": "What the walkway connections could hold, as a share of the code minimum",
+      "items": [
+        {
+          "label": "Building code minimum",
+          "value": 100
+        },
+        {
+          "label": "Original design",
+          "value": 60
+        },
+        {
+          "label": "As built",
+          "value": 30,
+          "emphasis": true
+        }
+      ],
+      "unit": "%",
+      "note": "With the lower walkway hung from the upper one, the upper connections carried both"
+    },
+    {
       "type": "text",
       "heading": "The original design",
       "text": "Single long rods ran from the ceiling through both walkways. Each walkway rested on nuts on those rods, so each connection held up only its own walkway."
@@ -25,6 +54,18 @@
       "type": "text",
       "heading": "The aftermath",
       "text": "The engineering firm lost its licences in four states, and the case is now taught worldwide as a lesson in checking design changes."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did splitting the rods make the walkways fail?",
+      "options": [
+        "Upper joints now carried both walkways",
+        "The new rods were made of weaker steel",
+        "Dancers made the lower walkway swing",
+        "The ceiling anchors came loose"
+      ],
+      "answer": 0,
+      "explanation": "Hanging the lower walkway from the upper one doubled the load on the upper walkway’s connections, which were already weaker than the building code required."
     }
   ],
   "tags": [

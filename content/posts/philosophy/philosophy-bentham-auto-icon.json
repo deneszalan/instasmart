@@ -1,0 +1,70 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "philosophy-bentham-auto-icon",
+  "field": "philosophy",
+  "title": "Jeremy Bentham’s preserved body still sits in a glass case at a London university",
+  "emoji": "🪑",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/2012-01-18_Jeremy_Bentham%27s_auto-icon.jpg/960px-2012-01-18_Jeremy_Bentham%27s_auto-icon.jpg",
+    "alt": "Jeremy Bentham’s auto-icon: his dressed skeleton with a wax head, seated on a chair in his own black clothes and broad-brimmed hat inside a display case at University College London.",
+    "credit": "Marit & Toomas Hinnosaar · CC BY 2.0"
+  },
+  "body": "The philosopher Jeremy Bentham, the thinker behind utilitarianism, died on 6 June 1832, aged 84, and left instructions in his will that his body be dissected, his skeleton dressed in one of his black suits and seated in a chair inside a case engraved with his name. His friend Dr Southwood Smith tried to preserve the head by drying it over sulphuric acid, but the result was so grim that a wax head, fitted with some of Bentham’s own hair, was made instead. The ‘auto-icon’ was given to University College London in 1850 and now sits by the entrance of the UCL Student Centre on Gordon Square.",
+  "slides": [
+    {
+      "type": "timeline",
+      "heading": "A body on display",
+      "events": [
+        { "when": "1832", "text": "Dies aged 84; his will leaves his body to Dr Southwood Smith" },
+        { "when": "1850", "text": "Smith offers the auto-icon to University College London" },
+        { "when": "2020", "text": "Moved into a new glass case at the UCL Student Centre" }
+      ]
+    },
+    {
+      "type": "flow",
+      "heading": "Making an auto-icon",
+      "steps": [
+        { "icon": "📜", "label": "The will: dissect me, keep the skeleton" },
+        { "icon": "🧪", "label": "Head dried over sulphuric acid: too macabre" },
+        { "icon": "🕯️", "label": "A wax head is made, with his own hair" },
+        { "icon": "🪑", "label": "Skeleton dressed, seated and cased" }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "A persistent myth",
+      "left": { "label": "Myth", "text": "Bentham is wheeled into every UCL council meeting and recorded as ‘present but not voting’." },
+      "right": { "label": "Fact", "text": "It happened once, at the provost’s final meeting in 2013. The rest is a persistent myth." }
+    },
+    {
+      "type": "reveal",
+      "prompt": "Where is Bentham’s real head?",
+      "answer": "Locked away at UCL",
+      "detail": "It was displayed in the same case for many years, but repeated student pranks led the college to lock it away."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does the auto-icon have a wax head?",
+      "options": [
+        "The preserved head looked too macabre",
+        "The real head was stolen",
+        "Bentham asked for wax",
+        "The skull was needed for science"
+      ],
+      "answer": 0,
+      "explanation": "Southwood Smith’s drying method worked, but the skin darkened and shrank. A wax head fitted with some of Bentham’s own hair replaced it."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Jeremy_Bentham_UCL_March_2016.JPG/960px-Jeremy_Bentham_UCL_March_2016.JPG",
+      "alt": "Jeremy Bentham’s auto-icon seated in its wooden display case at University College London in 2016.",
+      "caption": "The auto-icon in its old wooden case at the end of the South Cloisters, where it stood until 2020.",
+      "fit": "cover",
+      "credit": "Philafrenzy · CC BY-SA 4.0"
+    }
+  ],
+  "tags": ["utilitarianism", "london", "history"],
+  "source": { "label": "Wikipedia: Auto-icon", "url": "https://en.wikipedia.org/wiki/Auto-icon" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

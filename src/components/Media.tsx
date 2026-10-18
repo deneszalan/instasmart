@@ -4,6 +4,9 @@ import type { KnowledgeCard, Slide } from '../types';
 import type { WikiPost } from '../lib/wiki';
 import { FIELD_BY_ID } from '../data/fields';
 import { inline } from '../lib/markdown';
+import { InteractiveSlide } from './Interactive';
+import { VisualSlide } from './Visual';
+import { challengeId } from '../lib/interactive';
 
 function titleSize(title: string): string {
   if (title.length <= 36) return 'xl';
@@ -51,7 +54,8 @@ export function TitleSlide({ card, hasMore }: { card: KnowledgeCard; hasMore?: b
   );
 }
 
-function SlideBody({ slide }: { slide: Slide }) {
+function SlideBody({ slide, challengeId }: { slide: Slide; challengeId: string }) {
+  // The id is passed through to the interactive slides; other types ignore it.
   switch (slide.type) {
     case 'text':
       return (
@@ -131,6 +135,25 @@ function SlideBody({ slide }: { slide: Slide }) {
         </div>
       );
 
+    case 'quiz':
+    case 'reveal':
+    case 'estimate':
+    case 'order':
+    case 'match':
+    case 'sort':
+    case 'scramble':
+    case 'odd':
+    case 'rank':
+    case 'higher':
+    case 'fill':
+    case 'place':
+      return <InteractiveSlide slide={slide} challengeId={challengeId} />;
+    case 'chart':
+    case 'pictogram':
+    case 'scale':
+    case 'spectrum':
+    case 'flow':
+      return <VisualSlide slide={slide} />;
     case 'image':
       // Rendered by ImageSlideView.
       return null;
@@ -159,7 +182,7 @@ function DetailSlide({ card, index, total }: { card: KnowledgeCard; index: numbe
       <span className="slide__bg-emoji" aria-hidden="true">
         {card.emoji}
       </span>
-      <SlideBody slide={slide} />
+      <SlideBody slide={slide} challengeId={challengeId(card, index)} />
       <div className="slide__foot">
         <span>@{field.handle}</span>
         {index + 1 < total && <span className="slide__swipe">→</span>}

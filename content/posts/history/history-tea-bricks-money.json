@@ -1,0 +1,82 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-tea-bricks-money",
+  "field": "history",
+  "title": "In parts of Asia, money came in bricks of tea you could also drink",
+  "emoji": "🍵",
+  "body": "For centuries, compressed bricks of tea served as currency across China, Tibet, Mongolia and Central Asia, and the nomads of Mongolia and Siberia **preferred them to metal coins**. A brick travelled better than loose leaves by caravan, and it kept its value: Tibetan bricks came in five grades, and in Lhasa a third-grade brick was once worth eight silver tangka coins. In hard times you broke off a piece, boiled it and, in Tibet, churned it with butter and salt. In Siberia, tea bricks were still an edible currency until the Second World War.",
+  "slides": [
+    {
+      "type": "list",
+      "heading": "Making a brick",
+      "style": "steps",
+      "items": [
+        "Steam the tea, ground or whole",
+        "Press it in a mould, often stamped with a design",
+        "Dry it, then let it cure and age before it is traded"
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "In Lhasa, what was one third-grade tea brick worth at one time?",
+      "answer": "Eight silver tangka coins",
+      "detail": "Tibetan bricks came in five grades. The third grade was the everyday money of the late 1800s and early 1900s, and Tibet exported it to Bhutan and Ladakh."
+    },
+    {
+      "type": "list",
+      "heading": "Where tea was money",
+      "style": "bullets",
+      "items": [
+        "China, Tibet, Mongolia and Central Asia",
+        "Preferred to coins by nomads in Mongolia and Siberia",
+        "Siberia: an edible currency until the Second World War"
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why bricks?",
+      "text": "Pressed tea was compact and far less easily damaged than loose leaf, which mattered on long overland journeys by caravan. Some bricks meant to be used as money were even bound with flour, blood or manure to help them keep their shape. And a brick was never worthless: in a famine you could eat it."
+    },
+    {
+      "type": "flow",
+      "heading": "The life of a tea brick",
+      "steps": [
+        {
+          "icon": "🍃",
+          "label": "Tea is steamed and pressed into a brick"
+        },
+        {
+          "icon": "🐪",
+          "label": "It travels by caravan across Asia"
+        },
+        {
+          "icon": "🪙",
+          "label": "It changes hands as money"
+        },
+        {
+          "icon": "🔥",
+          "label": "Hard times: break off a piece and boil it"
+        },
+        {
+          "icon": "🧈",
+          "label": "In Tibet, churned with butter and salt"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "tea",
+    "money",
+    "tibet",
+    "asia"
+  ],
+  "source": {
+    "label": "Wikipedia: Tea brick",
+    "url": "https://en.wikipedia.org/wiki/Tea_brick"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

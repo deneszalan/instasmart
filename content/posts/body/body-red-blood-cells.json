@@ -5,6 +5,54 @@
   "title": "Your body makes about 2.4 million red blood cells every second",
   "emoji": "🩸",
   "body": "Red blood cells are by far the most common cells in the body, with roughly 20 to 30 trillion in circulation at any time. To pack in as much oxygen-carrying haemoglobin as possible, they expel their nucleus as they mature, so they cannot divide or repair themselves. After about 100 to 120 days of squeezing through narrow capillaries they wear out and are recycled by immune cells, so bone marrow must keep replacing them at a furious pace.",
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "A red blood cell’s life",
+      "steps": [
+        {
+          "icon": "🦴",
+          "label": "Made in the bone marrow"
+        },
+        {
+          "icon": "🔴",
+          "label": "Expels its nucleus to pack in haemoglobin"
+        },
+        {
+          "icon": "🩸",
+          "label": "Circulates for 100 to 120 days"
+        },
+        {
+          "icon": "♻️",
+          "label": "Worn out, it is recycled by immune cells"
+        }
+      ],
+      "cycle": true
+    },
+    {
+      "type": "quiz",
+      "question": "Why can’t a mature red blood cell divide or repair itself?",
+      "options": [
+        "It has expelled its nucleus",
+        "It is too small to split",
+        "Haemoglobin locks its shape"
+      ],
+      "answer": 0,
+      "explanation": "To pack in as much oxygen-carrying haemoglobin as possible, red cells expel their nucleus as they mature, so after 100 to 120 days they wear out and are recycled."
+    },
+    {
+      "type": "odd",
+      "heading": "Which one does a mature red blood cell lack?",
+      "items": [
+        "Haemoglobin",
+        "Iron",
+        "A cell membrane",
+        "A nucleus"
+      ],
+      "answer": 3,
+      "explanation": "A red blood cell keeps its membrane and is packed with iron-containing haemoglobin, but it expels its nucleus as it matures, so it cannot divide or repair itself."
+    }
+  ],
   "tags": [
     "blood",
     "cells",

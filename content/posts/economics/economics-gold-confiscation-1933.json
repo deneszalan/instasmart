@@ -1,0 +1,118 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "economics-gold-confiscation-1933",
+  "field": "economics",
+  "title": "In 1933 the US ordered its citizens to hand in their gold",
+  "emoji": "🪙",
+  "body": "On 5 April 1933, President Franklin D. Roosevelt signed Executive Order 6102, forbidding the hoarding of gold coin, bullion and gold certificates in the continental United States. Americans had to deliver most of their gold to the Federal Reserve by 1 May and were paid **$20.67 per troy ounce**; breaking the order risked a $10,000 fine or ten years in prison. The aim was to free the Federal Reserve, whose notes needed 40% gold backing, to expand the money supply during the Depression. In 1934 the Gold Reserve Act set the price at $35 an ounce, and private gold ownership became legal again only at the end of 1974.",
+  "slides": [
+    {
+      "type": "timeline",
+      "heading": "Gold, banned and unbanned",
+      "events": [
+        {
+          "when": "5 Apr 1933",
+          "text": "Roosevelt signs Executive Order 6102"
+        },
+        {
+          "when": "1 May 1933",
+          "text": "Deadline to hand gold to the Fed"
+        },
+        {
+          "when": "1934",
+          "text": "Gold Reserve Act: $35 an ounce"
+        },
+        {
+          "when": "31 Dec 1974",
+          "text": "Private gold ownership legal again"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "heading": "What you could keep",
+      "style": "bullets",
+      "items": [
+        "Up to $100 in gold coins and certificates per person",
+        "Rare coins of special value to collectors",
+        "Gold for industry, a profession or art: jewellers, dentists, artists"
+      ]
+    },
+    {
+      "type": "estimate",
+      "question": "The official price went from $20.67 to $35 an ounce in 1934. By what percentage did gold’s dollar price rise?",
+      "min": 0,
+      "max": 150,
+      "step": 1,
+      "answer": 69,
+      "unit": "%",
+      "explanation": "From $20.67 to $35 is a rise of about 69%. The dollar was worth that much less in gold, which gave the Federal Reserve room to expand the money supply."
+    },
+    {
+      "type": "chart",
+      "heading": "The official price of gold, in dollars per troy ounce",
+      "items": [
+        {
+          "label": "Paid to citizens, 1933",
+          "value": 20.67
+        },
+        {
+          "label": "Gold Reserve Act, 1934",
+          "value": 35,
+          "emphasis": true
+        }
+      ],
+      "note": "A rise of about 69%: each dollar was now worth far less gold"
+    },
+    {
+      "type": "text",
+      "heading": "Why?",
+      "text": "The Federal Reserve Act of 1913 required 40% gold backing for the notes the Fed issued, and by the late 1920s it had nearly reached the limit of credit it could extend. Taking gold out of private hands and then repricing it loosened that constraint."
+    },
+    {
+      "type": "sort",
+      "heading": "Keep it or hand it in, under the 1933 order?",
+      "bins": [
+        "Keep",
+        "Hand in"
+      ],
+      "items": [
+        {
+          "text": "A $5 gold coin, under the $100 limit",
+          "bin": 0
+        },
+        {
+          "text": "Rare coins prized by collectors",
+          "bin": 0
+        },
+        {
+          "text": "A dentist’s gold for fillings",
+          "bin": 0
+        },
+        {
+          "text": "A bar of gold bullion",
+          "bin": 1
+        },
+        {
+          "text": "Gold certificates worth $500",
+          "bin": 1
+        }
+      ],
+      "explanation": "The order exempted up to $100 in coin, rare collectors’ coins and gold used in industry, a profession or art. The rest went to the Fed at $20.67 an ounce."
+    }
+  ],
+  "tags": [
+    "gold",
+    "money",
+    "greatdepression"
+  ],
+  "source": {
+    "label": "Wikipedia: Executive Order 6102",
+    "url": "https://en.wikipedia.org/wiki/Executive_Order_6102"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

@@ -22,9 +22,66 @@
       "text": "Terns and noddies fly out to fish at dawn and return to land at dusk. Sailing the way they head in the evening points toward an island."
     },
     {
+      "type": "place",
+      "question": "In what year did the canoe Hōkūleʻa sail from Hawaiʻi to Tahiti with no instruments at all?",
+      "min": 1900,
+      "max": 2000,
+      "step": 1,
+      "format": "year",
+      "ends": [
+        "Earlier",
+        "Later"
+      ],
+      "answer": 1976,
+      "hints": [
+        {
+          "label": "Kon-Tiki raft",
+          "value": 1947
+        },
+        {
+          "label": "Moon landing",
+          "value": 1969
+        }
+      ],
+      "explanation": "1976. Guided by the Micronesian navigator Mau Piailug, the crew found Tahiti with no compass, chart or sextant, showing that such voyages could be deliberate rather than luck."
+    },
+    {
       "type": "text",
       "heading": "The 1976 test",
       "text": "The canoe Hōkūleʻa sailed from Hawaiʻi to Tahiti without instruments, guided by Micronesian navigator Mau Piailug, showing such voyages could be deliberate."
+    },
+    {
+      "type": "flow",
+      "heading": "Finding an island without instruments",
+      "steps": [
+        {
+          "icon": "⭐",
+          "label": "Hold a course by stars rising on the horizon"
+        },
+        {
+          "icon": "🌊",
+          "label": "Under cloud, keep course by the swells"
+        },
+        {
+          "icon": "🏝️",
+          "label": "A changed swell pattern: land is near"
+        },
+        {
+          "icon": "🐦",
+          "label": "At dusk, follow birds heading home"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "How could ocean swells reveal an island beyond the horizon?",
+      "options": [
+        "Islands bend and reflect the swells",
+        "Swells always run away from land",
+        "Swells warm up near islands"
+      ],
+      "answer": 0,
+      "explanation": "Navigators felt the swells through the hull. Islands bend and reflect them, so a changed pattern can betray land that is still out of sight."
     }
   ],
   "tags": [

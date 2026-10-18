@@ -1,0 +1,98 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-quicksort-russian-dictionary",
+  "field": "tech",
+  "title": "Quicksort was invented to help a computer translate Russian",
+  "emoji": "📖",
+  "body": "In 1959 Tony Hoare was a visiting student at Moscow State University, working on a machine-translation project for Britain’s National Physical Laboratory. The Russian–English dictionary sat in alphabetical order on magnetic tape, so the words of each sentence had to be sorted before they could be looked up. His first idea, insertion sort, would be slow, so he found another: choose a pivot, split the words into those before it and those after, and **sort each part the same way**. Back in England his boss bet sixpence that nothing beat Shellsort, and lost. Published in 1961, Quicksort is still one of the most used sorting algorithms.",
+  "slides": [
+    {
+      "type": "flow",
+      "heading": "Why the words had to be sorted first",
+      "steps": [
+        {
+          "icon": "📖",
+          "label": "Take the words of a Russian sentence"
+        },
+        {
+          "icon": "🔤",
+          "label": "Sort them into alphabetical order"
+        },
+        {
+          "icon": "📼",
+          "label": "Run the dictionary tape once, start to end"
+        },
+        {
+          "icon": "🔍",
+          "label": "Look up each word as it comes by"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "heading": "How Quicksort works",
+      "style": "steps",
+      "items": [
+        "Pick one item as the pivot",
+        "Move smaller items before it and larger ones after",
+        "The pivot is now in its final place",
+        "Sort the two sides the same way, recursively"
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "From Moscow to the textbooks",
+      "events": [
+        {
+          "when": "1959",
+          "text": "Invented in Moscow during a translation project"
+        },
+        {
+          "when": "1961",
+          "text": "Published in ALGOL in Communications of the ACM"
+        },
+        {
+          "when": "1962",
+          "text": "Full analysis in The Computer Journal"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why it is fast",
+      "text": "On average Quicksort needs about n log n comparisons to sort n items: each round of partitioning roughly halves the problem, so a million items take around 20 rounds. With badly chosen pivots, such as always the last item of an already sorted list, it slows to about n² steps."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did Hoare need to sort the words of each Russian sentence?",
+      "options": [
+        "The dictionary was on tape, in order",
+        "Russian grammar demands it",
+        "To count the words",
+        "To compress the text"
+      ],
+      "answer": 0,
+      "explanation": "The Russian–English dictionary was stored in alphabetical order on magnetic tape, so looking words up in sorted order meant a single pass through the tape."
+    },
+    {
+      "type": "scramble",
+      "clue": "The item Quicksort picks first; smaller items go before it, larger ones after",
+      "answer": "PIVOT",
+      "detail": "After one pass the pivot sits in its final place, and each side is sorted the same way."
+    }
+  ],
+  "tags": [
+    "algorithms",
+    "sorting",
+    "quicksort"
+  ],
+  "source": {
+    "label": "Wikipedia: Quicksort",
+    "url": "https://en.wikipedia.org/wiki/Quicksort"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

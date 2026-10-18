@@ -7,6 +7,42 @@
   "body": "In the early 11th century, the Italian monk Guido of Arezzo taught singers a hymn to John the Baptist, Ut queant laxis, in which each line starts one note higher than the last. The first syllables of those lines, ut, re, mi, fa, sol and la, became names for the notes, helping choirs learn chants much faster. Guido also helped develop the staff of lines for writing pitch, the ancestor of modern notation.",
   "slides": [
     {
+      "type": "order",
+      "heading": "Oldest first",
+      "items": [
+        "Guido names ut, re, mi, fa, sol, la",
+        "Italians swap ut for do",
+        "Sarah Glover turns si into ti"
+      ],
+      "explanation": "Guido taught the syllables in the early 11th century, do replaced ut in the 1600s, and the English teacher Sarah Glover changed si to ti in the 19th century."
+    },
+    {
+      "type": "flow",
+      "heading": "From a hymn to do-re-mi",
+      "steps": [
+        {
+          "icon": "📜",
+          "label": "Guido teaches the hymn Ut queant laxis"
+        },
+        {
+          "icon": "🎶",
+          "label": "Each line starts a note higher than the last"
+        },
+        {
+          "icon": "🔤",
+          "label": "The lines’ first syllables name the notes"
+        },
+        {
+          "icon": "🇮🇹",
+          "label": "1600s: Italians swap ut for do"
+        },
+        {
+          "icon": "🇬🇧",
+          "label": "1800s: Sarah Glover turns si into ti"
+        }
+      ]
+    },
+    {
       "type": "text",
       "heading": "Ut became do",
       "text": "In the 1600s, Italians swapped the closed syllable ut for the easier-to-sing do, a change often credited to Giovanni Battista Doni. French sometimes still uses ut."

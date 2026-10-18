@@ -17,9 +17,53 @@
       "text": "Every well-timed review makes the memory fade more slowly, so the next review can wait longer. Apps that schedule flashcards this way use spaced repetition."
     },
     {
+      "type": "flow",
+      "heading": "The spaced repetition loop",
+      "steps": [
+        {
+          "icon": "📖",
+          "label": "Learn something new"
+        },
+        {
+          "icon": "⏳",
+          "label": "Leave a gap: a little forgetting sets in"
+        },
+        {
+          "icon": "🧠",
+          "label": "Review by pulling it back from memory"
+        },
+        {
+          "icon": "📈",
+          "label": "The memory now fades more slowly"
+        },
+        {
+          "icon": "📅",
+          "label": "So the next review can wait longer"
+        }
+      ],
+      "cycle": true
+    },
+    {
       "type": "text",
       "heading": "Test, don’t reread",
       "text": "Spacing works best with retrieval practice: trying to recall answers from memory, as with flashcards, beats simply rereading your notes."
+    },
+    {
+      "type": "quiz",
+      "question": "Which review method works best with spacing?",
+      "options": [
+        "Trying to recall answers from memory",
+        "Rereading your notes",
+        "Copying notes out again"
+      ],
+      "answer": 0,
+      "explanation": "Spacing works best with retrieval practice, as with flashcards: pulling the answer from memory beats rereading, and each well-timed review makes the memory fade more slowly."
+    },
+    {
+      "type": "scramble",
+      "clue": "Pulling an answer out of memory, as with flashcards: ___ practice, which beats rereading",
+      "answer": "RETRIEVAL",
+      "detail": "Spacing works best with retrieval practice: the effort of recalling strengthens the memory more than an easy repeat."
     }
   ],
   "tags": [

@@ -7,6 +7,16 @@
   "body": "Jørn Utzon’s winning design of 1957 showed soaring shells with no defined geometry, and for years nobody could work out how to build them. The breakthrough was to make every shell a section of one imaginary sphere, so curved ribs could be cast from shared moulds. The roofs are clad in 1,056,006 tiles in two finishes, glossy white and matte cream, laid in a subtle chevron pattern.",
   "slides": [
     {
+      "type": "estimate",
+      "question": "The Opera House was budgeted at $7 million. What did it finally cost?",
+      "min": 0,
+      "max": 250,
+      "step": 1,
+      "answer": 102,
+      "unit": "million dollars",
+      "explanation": "Budgeted at $7 million for 1963, it opened in 1973 at $102 million. Utzon had resigned in 1966 and never returned, but won the Pritzker Prize in 2003."
+    },
+    {
       "type": "text",
       "heading": "A sketch wins",
       "text": "In 1957 Utzon, a Danish architect who had never seen one of his designs built, beat 232 other entries in Sydney’s international design competition."
@@ -25,6 +35,50 @@
       "type": "text",
       "heading": "A bitter ending",
       "text": "Budgeted at $7 million for 1963, it opened in 1973 at $102 million. Utzon resigned in 1966 and never returned, but won the Pritzker Prize in 2003."
+    },
+    {
+      "type": "scale",
+      "heading": "Budget against final cost",
+      "items": [
+        {
+          "label": "Budget, 1963",
+          "value": 7
+        },
+        {
+          "label": "Final cost, 1973",
+          "value": 102,
+          "emphasis": true
+        }
+      ],
+      "unit": "million dollars",
+      "note": "More than fourteen times the original estimate, and the building opened ten years late."
+    },
+    {
+      "type": "match",
+      "heading": "Match the year to the event",
+      "pairs": [
+        {
+          "left": "1957",
+          "right": "Utzon wins the competition"
+        },
+        {
+          "left": "1961",
+          "right": "The spherical solution"
+        },
+        {
+          "left": "1966",
+          "right": "Utzon resigns"
+        },
+        {
+          "left": "1973",
+          "right": "The Opera House opens"
+        },
+        {
+          "left": "2003",
+          "right": "Utzon wins the Pritzker"
+        }
+      ],
+      "explanation": "A 1957 sketch beat 232 rivals; the sphere idea came in mid-1961; Utzon quit in 1966 and never returned; it opened in 1973; the Pritzker came in 2003."
     }
   ],
   "tags": [

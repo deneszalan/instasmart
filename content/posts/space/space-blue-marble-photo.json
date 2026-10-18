@@ -23,6 +23,41 @@
       "text": "The Sun was behind the spacecraft, so the crew saw Earth as a full disc. Most photos from space show it partly in shadow."
     },
     {
+      "type": "place",
+      "question": "In what year did a camera first photograph Earth from space?",
+      "min": 1900,
+      "max": 2000,
+      "step": 1,
+      "answer": 1946,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Wright flight",
+          "value": 1903
+        },
+        {
+          "label": "Sputnik",
+          "value": 1957
+        },
+        {
+          "label": "Moon landing",
+          "value": 1969
+        }
+      ],
+      "explanation": "1946, eleven years before Sputnik: on 24 October a camera on a captured German V-2 rocket took the first photos of Earth from space, about 105 km up."
+    },
+    {
+      "type": "order",
+      "heading": "Earliest first",
+      "items": [
+        "First photo of Earth from a V-2 rocket",
+        "Apollo 8’s Earthrise",
+        "Apollo 17’s The Blue Marble",
+        "Voyager 1’s Pale Blue Dot"
+      ],
+      "explanation": "1946: a captured V-2 rocket. 1968: Apollo 8’s Earthrise. 1972: Apollo 17’s The Blue Marble. 1990: Voyager 1’s Pale Blue Dot, from about 6 billion km away."
+    },
+    {
       "type": "timeline",
       "heading": "Earth from afar",
       "events": [
@@ -43,6 +78,23 @@
           "text": "Voyager 1 shows Earth as a *Pale Blue Dot*, about 6 billion km away."
         }
       ]
+    },
+    {
+      "type": "chart",
+      "heading": "How far away the camera was",
+      "items": [
+        {
+          "label": "V-2 rocket, 1946",
+          "value": 105
+        },
+        {
+          "label": "Apollo 17, 1972",
+          "value": 29400,
+          "emphasis": true
+        }
+      ],
+      "unit": "km",
+      "note": "Voyager 1’s Pale Blue Dot, from about 6 billion km, would need a bar 200,000 times longer"
     },
     {
       "type": "quote",

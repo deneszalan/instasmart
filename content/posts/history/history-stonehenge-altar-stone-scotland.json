@@ -1,0 +1,78 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-stonehenge-altar-stone-scotland",
+  "field": "history",
+  "title": "Stonehenge’s Altar Stone came from Scotland, some 700 km away",
+  "emoji": "🪨",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/960px-Stonehenge2007_07_30.jpg",
+    "alt": "The standing stones of Stonehenge on green grass under a blue sky with white clouds, some uprights still capped by horizontal lintel stones.",
+    "credit": "garethwiscombe · CC BY 2.0"
+  },
+  "body": "Stonehenge was built in stages, from a ditch and bank dug around 3100 BC to the great sarsen circle raised between 2600 and 2400 BC. Its stones came from very different places: the big sarsens match rock at West Woods, about 25 km to the north, and the smaller bluestones were brought from the Preseli Hills in Wales. The Altar Stone was long thought to be Welsh as well. In 2024 a team from Curtin University analysed fragments that had fallen off it and matched them to rocks of the Orcadian Basin in north-east Scotland, which means it was moved **some 700 km**.",
+  "slides": [
+    {
+      "type": "match",
+      "heading": "Match each kind of stone to its source",
+      "pairs": [
+        { "left": "Sarsens", "right": "West Woods, Wiltshire" },
+        { "left": "Bluestones", "right": "Preseli Hills, Wales" },
+        { "left": "Altar Stone", "right": "North-east Scotland" }
+      ],
+      "explanation": "Sarsens are local. Bluestones came from south-west Wales, the Altar Stone from the Orcadian Basin around Caithness, Orkney and the Moray Firth."
+    },
+    {
+      "type": "chart",
+      "heading": "How far the stones travelled",
+      "items": [
+        { "label": "Sarsens", "value": 25 },
+        { "label": "Bluestones", "value": 240 },
+        { "label": "Altar Stone", "value": 690, "emphasis": true }
+      ],
+      "unit": "km",
+      "note": "Approximate: the source gives about 25 km, 230–240 km and 690–700 km."
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Stonehenge-Altar-Stone_P1110732.jpg/960px-Stonehenge-Altar-Stone_P1110732.jpg",
+      "alt": "A flat, weathered grey slab lying in the grass between two larger stones: the Altar Stone at Stonehenge.",
+      "caption": "The Altar Stone lies flat, partly buried by a collapsed sarsen. Fragments that had broken off it gave away its Scottish origin.",
+      "fit": "cover",
+      "credit": "The Stones of Stonehenge · CC BY 4.0"
+    },
+    {
+      "type": "text",
+      "heading": "Not from Wales after all",
+      "text": "It was once traced to the Senni Beds in the Brecon Beacons of Wales. The 2024 study tested the chemistry and ages of fragments that had fallen off it, and the best match lay far to the north. The researchers say this shows cultural links between southern England and northern Scotland."
+    },
+    {
+      "type": "timeline",
+      "heading": "Building Stonehenge",
+      "events": [
+        { "when": "c. 3100 BC", "text": "The first ditch and bank are dug" },
+        { "when": "2600–2400 BC", "text": "The sarsen circle goes up" },
+        { "when": "2400–2200 BC", "text": "The bluestones reach their present positions" },
+        { "when": "2024", "text": "The Altar Stone is traced to Scotland" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Which way is Stonehenge lined up?",
+      "options": [
+        "Midsummer sunrise",
+        "Due north",
+        "Spring equinox sunset",
+        "The North Star"
+      ],
+      "answer": 0,
+      "explanation": "It points towards sunrise on the summer solstice, and the other way towards sunset on the winter solstice."
+    }
+  ],
+  "tags": ["stonehenge", "neolithic", "britain", "archaeology"],
+  "source": {
+    "label": "Wikipedia: Stonehenge",
+    "url": "https://en.wikipedia.org/wiki/Stonehenge"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}
