@@ -72,7 +72,7 @@ export function RankSlideView({ slide, challengeId }: Props<'rank'>) {
       )}
       {done && slide.note && <p className="visual__note">{inline(slide.note)}</p>}
       <p className="interactive__result" role="status" aria-live="polite">
-        {done && (
+        {done ? (
           <>
             <strong>{right === slide.items.length ? 'Perfect order! ' : `${right} of ${slide.items.length} in the right place. `}</strong>
             {slide.explanation && inline(slide.explanation)}{' '}
@@ -80,6 +80,12 @@ export function RankSlideView({ slide, challengeId }: Props<'rank'>) {
               <RotateCcw size={13} /> Try again
             </button>
           </>
+        ) : (
+          picks.length > 0 && (
+            <button className="link-btn link-btn--light" onClick={() => setPicks([])}>
+              <RotateCcw size={13} /> Reset
+            </button>
+          )
         )}
       </p>
     </div>

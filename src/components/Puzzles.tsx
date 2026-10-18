@@ -261,6 +261,11 @@ export function ScrambleSlideView({ slide, challengeId }: Props<'scramble'>) {
         ))}
       </div>
       <p className="interactive__result" role="status" aria-live="polite">
+        {status === 'playing' && placed.length > 0 && (
+          <button className="link-btn link-btn--light" onClick={clear}>
+            <RotateCcw size={13} /> Clear
+          </button>
+        )}
         {status === 'solved' && (
           <>
             <strong>Solved! </strong>

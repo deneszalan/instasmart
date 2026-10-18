@@ -242,7 +242,7 @@ export function OrderSlideView({ slide, challengeId }: Props<'order'>) {
         })}
       </ol>
       <p className="interactive__result" role="status" aria-live="polite">
-        {done && (
+        {done ? (
           <>
             <strong>{allRight ? 'Perfect order! ' : 'Not quite. '}</strong>
             {!allRight && <>The order is {slide.items.join(' → ')}. </>}
@@ -251,6 +251,12 @@ export function OrderSlideView({ slide, challengeId }: Props<'order'>) {
               <RotateCcw size={13} /> Try again
             </button>
           </>
+        ) : (
+          picks.length > 0 && (
+            <button className="link-btn link-btn--light" onClick={() => setPicks([])}>
+              <RotateCcw size={13} /> Reset
+            </button>
+          )
         )}
       </p>
     </div>
