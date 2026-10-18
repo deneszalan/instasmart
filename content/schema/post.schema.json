@@ -464,6 +464,14 @@
                 "minLength": 1,
                 "maxLength": 16
               },
+              "format": {
+                "description": "\"year\" shows 1582 rather than 1,582.",
+                "type": "string",
+                "enum": [
+                  "number",
+                  "year"
+                ]
+              },
               "explanation": {
                 "type": "string",
                 "minLength": 1,

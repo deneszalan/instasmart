@@ -88,7 +88,7 @@ Each slide is a 4:5 card on the post's gradient. Pick the type that fits the ide
 | `timeline` | 2–5 dated events | `{ "type": "timeline", "heading"?, "events": [{ "when": "1687", "text": "≤110" }, …] }` |
 | `quiz` | A question with one right answer | `{ "type": "quiz", "question": "≤140", "options": ["≤40", … 2–4], "answer": 0, "explanation": "≤200" }` |
 | `reveal` | A teaser the reader taps to flip over | `{ "type": "reveal", "prompt": "≤140", "answer": "≤80", "detail"?: "≤200" }` |
-| `estimate` | Guess a number with a slider | `{ "type": "estimate", "question": "≤120", "min": 0, "max": 100, "step"?: 1, "answer": 34, "unit"?: "%", "explanation": "≤200" }` |
+| `estimate` | Guess a number with a slider | `{ "type": "estimate", "question": "≤120", "min": 0, "max": 100, "step"?: 1, "answer": 34, "unit"?: "%", "format"?: "year", "explanation": "≤200" }` |
 | `order` | Put 3–5 things in order by tapping | `{ "type": "order", "heading": "Oldest first", "items": ["≤40", … in the correct order], "explanation"?: "≤160" }` |
 | `image` | A photo or a diagram | `{ "type": "image", "src": "orbit.svg", "alt": "…", "caption"?: "≤200", "fit"?: "cover" \| "contain", "credit"?: "≤120" }` |
 
@@ -102,7 +102,7 @@ Use `"fit": "cover"` for photos (they fill the card) and `"fit": "contain"` for 
 - Don't quiz the title: readers have just seen it. Ask about the why, a number from the body, or a detail from a slide.
 - Make wrong options plausible, keep every option under 40 characters, and never build a question on a hedged or disputed figure.
 - `answer` in a quiz counts from 0. `order` items are written in the correct order; the app shuffles them.
-- An `estimate` needs a range that makes guessing interesting (not 0–1,000,000 for an answer of 5) and `step: 1` for whole numbers.
+- An `estimate` needs a range that makes guessing interesting (not 0–1,000,000 for an answer of 5) and `step: 1` for whole numbers. For a year, add `"format": "year"` so it shows as 1582, not 1,582.
 
 A slide is phone-sized, so `list` and `timeline` slides must stay short: about 12 lines in total, where a timeline date counts as a line and a line holds roughly 34 characters (30 in a list). `npm run content` checks this and tells you by how much to cut.
 

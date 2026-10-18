@@ -108,11 +108,14 @@ export function RevealSlideView({ slide, challengeId }: Props<'reveal'>) {
   );
 }
 
-const formatNumber = (n: number) => new Intl.NumberFormat(undefined, { maximumFractionDigits: 2 }).format(n);
+type NumberFormat = 'number' | 'year' | undefined;
 
-function withUnit(n: number, unit?: string): string {
-  if (!unit) return formatNumber(n);
-  return /^[%°×]/.test(unit) ? `${formatNumber(n)}${unit}` : `${formatNumber(n)} ${unit}`;
+const formatNumber = (n: number, format: NumberFormat) =>
+  new Intl.NumberFormat(undefined, { maximumFractionDigits: 2, useGrouping: format !== 'year' }).format(n);
+
+function withUnit(n: number, unit?: string, format?: NumberFormat): string {
+  if (!unit) return formatNumber(n, format);
+  return /^[%°×]/.test(unit) ? `${formatNumber(n, format)}${unit}` : `${formatNumber(n, format)} ${unit}`;
 }
 
 /** Guess a number with a slider, then see the real value and how close you were. */
@@ -145,14 +148,14 @@ export function EstimateSlideView({ slide, challengeId }: Props<'estimate'>) {
               <span className="estimate__bar">
                 <span style={{ width: width(value) }} />
               </span>
-              <strong>{withUnit(value, slide.unit)}</strong>
+              <strong>{withUnit(value, slide.unit, slide.format)}</strong>
             </div>
             <div className="estimate__row estimate__row--answer">
               <span>Real</span>
               <span className="estimate__bar">
                 <span style={{ width: width(slide.answer) }} />
               </span>
-              <strong>{withUnit(slide.answer, slide.unit)}</strong>
+              <strong>{withUnit(slide.answer, slide.unit, slide.format)}</strong>
             </div>
           </div>
           <p className="interactive__result">
@@ -163,7 +166,7 @@ export function EstimateSlideView({ slide, challengeId }: Props<'estimate'>) {
       ) : (
         <>
           <p className="estimate__value" aria-live="polite">
-            {withUnit(value, slide.unit)}
+            {withUnit(value, slide.unit, slide.format)}
           </p>
           <input
             type="range"
@@ -174,11 +177,11 @@ export function EstimateSlideView({ slide, challengeId }: Props<'estimate'>) {
             value={value}
             onChange={(e) => setValue(Number(e.target.value))}
             aria-label={slide.question}
-            aria-valuetext={withUnit(value, slide.unit)}
+            aria-valuetext={withUnit(value, slide.unit, slide.format)}
           />
           <div className="estimate__ends" aria-hidden="true">
-            <span>{withUnit(slide.min, slide.unit)}</span>
-            <span>{withUnit(slide.max, slide.unit)}</span>
+            <span>{withUnit(slide.min, slide.unit, slide.format)}</span>
+            <span>{withUnit(slide.max, slide.unit, slide.format)}</span>
           </div>
           <button className="btn btn--light" onClick={lock}>
             Lock in my guess

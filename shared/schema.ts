@@ -167,6 +167,7 @@ export const EstimateSlide = z
     step: z.number().positive().optional().describe('Slider step; defaults to a hundredth of the range.'),
     answer: z.number().describe('The real value, between min and max.'),
     unit: text(16).optional().describe('Shown after the number, e.g. "km", "%", "°C".'),
+    format: z.enum(['number', 'year']).optional().describe('"year" shows 1582 rather than 1,582.'),
     explanation: text(200).describe('Shown after guessing.'),
   })
   .strict()
