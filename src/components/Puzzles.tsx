@@ -70,7 +70,7 @@ export function MatchSlideView({ slide, challengeId }: Props<'match'>) {
     <div className="slide__center interactive" data-interactive>
       <p className="slide__heading">Match the pairs</p>
       <p className="interactive__question">{inline(slide.heading)}</p>
-      <div className="match">
+      <div className={`match${slide.pairs.length >= 5 ? ' match--5' : ''}`}>
         <div className="match__col" role="group" aria-label="Left column">
           {slide.pairs.map((p, i) => (
             <button

@@ -211,10 +211,10 @@ export function SpectrumSlideView({ slide }: { slide: Of<'spectrum'> }) {
         <rect x={barX} y={top} width={barW} height={bottom - top} rx={barW / 2} fill={`url(#${gradient})`} />
         {slide.ends && (
           <>
-            <text className="spectrum__end" x={mid} y={bottom + 18} textAnchor="middle">
+            <text className="spectrum__end" x={barX} y={bottom + 18}>
               {slide.ends[0]}
             </text>
-            <text className="spectrum__end" x={mid} y={top - 10} textAnchor="middle">
+            <text className="spectrum__end" x={barX} y={top - 10}>
               {slide.ends[1]}
             </text>
           </>

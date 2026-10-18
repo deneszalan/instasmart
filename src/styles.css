@@ -2257,6 +2257,23 @@ p {
 }
 
 /* ---- Visual slides: chart, pictogram, scale, spectrum, flow ---- */
+.slide--chart,
+.slide--pictogram,
+.slide--scale,
+.slide--spectrum,
+.slide--flow {
+  padding-top: 50px;
+  padding-bottom: 14px;
+}
+
+.slide--chart .slide__foot,
+.slide--pictogram .slide__foot,
+.slide--scale .slide__foot,
+.slide--spectrum .slide__foot,
+.slide--flow .slide__foot {
+  display: none;
+}
+
 .visual {
   min-height: 0;
 }
@@ -2356,8 +2373,8 @@ p {
 }
 
 .pictogram--sm {
-  font-size: 18px;
-  gap: 2px 0;
+  font-size: 17px;
+  gap: 1px 0;
 }
 
 .pictogram__off {
@@ -2366,7 +2383,7 @@ p {
 }
 
 .pictogram__ratio {
-  margin-top: 14px;
+  margin-top: 10px;
   font-size: 15px;
   font-weight: 600;
   opacity: 0.9;
@@ -2475,7 +2492,7 @@ p {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding-bottom: 22px;
+  padding-bottom: 18px;
 }
 
 .flow__step:last-child {
@@ -2554,6 +2571,22 @@ p {
   font-size: 14px;
   text-align: center;
   overflow-wrap: anywhere;
+}
+
+/* Five pairs need a tighter grid to fit. */
+.match--5 {
+  gap: 6px;
+}
+
+.match--5 .match__col {
+  gap: 6px;
+}
+
+.match--5 .match__item {
+  min-height: 38px;
+  padding: 6px 8px;
+  font-size: 13px;
+  line-height: 1.25;
 }
 
 .sort__dots {
