@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-everest-chimborazo-mauna-kea",
+  "field": "earth",
+  "title": "Everest is the highest peak, but not the tallest or farthest out",
+  "emoji": "🗻",
+  "body": "Mount Everest’s summit, 8,849 m above sea level, is the highest point on Earth measured from sea level. But Earth bulges at the equator, so Ecuador’s Chimborazo, only 6,263 m high, has a summit about 2 km farther from Earth’s centre, the farthest point on the surface from the core. And measured from its base on the seafloor, Hawaii’s Mauna Kea is taller than Everest.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "The bulge",
+      "text": "Earth’s spin flattens it slightly: the equatorial radius is about 21 km larger than the polar radius. Peaks near the equator get a free boost."
+    },
+    {
+      "type": "text",
+      "heading": "Mauna Kea’s hidden half",
+      "text": "Mauna Kea rises 4,207 m above sea level, but most of it is underwater. From its seafloor base it rises roughly 9 to 10 km, depending on how the base is defined."
+    },
+    {
+      "type": "text",
+      "heading": "Three different records",
+      "text": "Highest above sea level: Everest. Tallest from base to peak: Mauna Kea. Farthest from Earth’s centre: Chimborazo."
+    }
+  ],
+  "tags": [
+    "mountains",
+    "everest",
+    "geography"
+  ],
+  "source": {
+    "label": "Wikipedia: Chimborazo",
+    "url": "https://en.wikipedia.org/wiki/Chimborazo"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

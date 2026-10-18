@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-voyager-1-light-day",
+  "field": "space",
+  "title": "Voyager 1’s messages take almost a full day to reach us",
+  "emoji": "📡",
+  "body": "Launched in 1977, Voyager 1 flew past Jupiter and Saturn and simply kept going. It is now more than 170 times farther from the Sun than Earth is, making it the most distant human-made object, and its radio signals, travelling at the speed of light, need roughly 23 to 24 hours to arrive. It is projected to reach one full light-day from Earth in November 2026. NASA still listens for its faint whisper with giant 70-metre dishes.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Launched second",
+      "text": "Despite its name, Voyager 1 left Earth 16 days after its twin, Voyager 2, on 5 September 1977. A faster route soon put it in the lead."
+    },
+    {
+      "type": "text",
+      "heading": "Into interstellar space",
+      "text": "On 25 August 2012 it crossed the heliopause, where the Sun’s wind gives way to the gas between stars, the first spacecraft ever to do so."
+    },
+    {
+      "type": "text",
+      "heading": "Running on plutonium",
+      "text": "Its nuclear generators made about 470 watts at launch. Output keeps falling, so instruments are being switched off, but it may keep working into the 2030s."
+    }
+  ],
+  "tags": [
+    "voyager",
+    "nasa",
+    "exploration",
+    "interstellar"
+  ],
+  "source": {
+    "label": "Wikipedia: Voyager 1",
+    "url": "https://en.wikipedia.org/wiki/Voyager_1"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

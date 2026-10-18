@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-astronauts-are-falling",
+  "field": "space",
+  "title": "Astronauts float because they’re falling, not because gravity is gone",
+  "emoji": "🚀",
+  "body": "Gravity is everywhere in space; it is what keeps the Moon and every satellite in orbit. Astronauts on the International Space Station feel weightless because they and the station are falling together, all the time. With nothing pushing back on them, there is no sensation of weight. The trick is that the station also moves sideways so fast that, as it falls, Earth’s curved surface keeps dropping away beneath it.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Gravity is still strong",
+      "text": "About 400 km up, where the ISS flies, gravity is still roughly 90% as strong as on the ground. Height alone barely weakens it."
+    },
+    {
+      "type": "text",
+      "heading": "Falling around Earth",
+      "text": "The ISS moves at about 7.7 km per second, roughly 27,000 km/h. That sideways speed turns endless falling into a circle around the planet."
+    },
+    {
+      "type": "text",
+      "heading": "16 sunrises a day",
+      "text": "One lap takes about 93 minutes, or around 15.5 orbits a day, so the crew sees about 16 sunrises and 16 sunsets every 24 hours."
+    }
+  ],
+  "tags": [
+    "iss",
+    "astronauts",
+    "gravity",
+    "mythbusting"
+  ],
+  "source": {
+    "label": "Wikipedia: Weightlessness",
+    "url": "https://en.wikipedia.org/wiki/Weightlessness"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
