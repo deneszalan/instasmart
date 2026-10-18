@@ -1,0 +1,64 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-ea-nasir-complaint",
+  "field": "history",
+  "title": "The world’s oldest known customer complaint is a clay tablet from about 1750 BC",
+  "emoji": "📜",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Complaint_tablet_to_Ea-Nasir_2023.JPG/960px-Complaint_tablet_to_Ea-Nasir_2023.JPG",
+    "alt": "A small, slightly damaged clay tablet covered in dense rows of cuneiform writing, the complaint letter to the copper merchant Ea-nasir.",
+    "credit": "Geni · CC BY-SA 4.0"
+  },
+  "body": "Around 1750 BC a man named Nanni pressed his grievance into clay in Akkadian cuneiform: the merchant Ea-nasir had promised fine copper ingots from Dilmun, delivered poor ones, told Nanni’s servant to ‘take it or leave it’, and rudely turned away the messengers sent to recover the deposit. The tablet, 11.6 cm tall, was unearthed at Ur, in what is now Iraq, by Leonard Woolley’s British Museum and Penn Museum expedition of 1922–1934, in ruins believed to be Ea-nasir’s own house, together with other letters complaining about his copper. It is held by the British Museum, Guinness World Records lists it as the oldest written customer complaint, and since 2015 it has been an internet meme.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "What did Nanni say he would do about future deliveries?",
+      "answer": "Inspect every ingot himself",
+      "detail": "He also demanded his money back, after his messengers had been sent away empty-handed and, he says, treated with contempt."
+    },
+    {
+      "type": "list",
+      "heading": "What Nanni complained about",
+      "items": [
+        "Copper ingots of poor grade, not the fine quality promised",
+        "His servant told to take it or leave it",
+        "Messengers sent for the deposit turned away rudely",
+        "Delays with other deliveries"
+      ]
+    },
+    {
+      "type": "flow",
+      "heading": "How a deal went sour",
+      "steps": [
+        { "icon": "💰", "label": "Nanni pays a deposit for copper" },
+        { "icon": "🚢", "label": "Ingots from Dilmun are offered" },
+        { "icon": "😠", "label": "His servant gets poor copper" },
+        { "icon": "📨", "label": "Messengers for the money are rebuffed" },
+        { "icon": "✍️", "label": "Nanni writes the tablet" }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "11.6 cm",
+      "label": "the height of the tablet, 5 cm wide and 2.6 cm thick",
+      "text": "Small enough to hold in one hand, slightly damaged, and still readable after about 3,750 years."
+    },
+    {
+      "type": "quiz",
+      "question": "Where was the tablet found?",
+      "options": ["In Ea-nasir’s house at Ur", "In a temple archive at Babylon", "In a shipwreck in the Gulf", "In Nanni’s tomb"],
+      "answer": 0,
+      "explanation": "Woolley’s expedition found it in ruins thought to be Ea-nasir’s home, alongside other letters grumbling about his copper and undelivered orders."
+    },
+    {
+      "type": "text",
+      "heading": "Why it went viral",
+      "text": "The tablet became a meme in February 2015, probably starting on Reddit and spreading through Tumblr, because the situation feels so modern: a bad delivery, a rude supplier and a customer who wants his money back. Ea-nasir apparently kept the letters, so we know that more than one customer was unhappy with him."
+    }
+  ],
+  "tags": ["mesopotamia", "cuneiform", "ur", "trade"],
+  "source": { "label": "Wikipedia: Complaint tablet to Ea-nāṣir", "url": "https://en.wikipedia.org/wiki/Complaint_tablet_to_Ea-n%C4%81%E1%B9%A3ir" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

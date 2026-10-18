@@ -1,0 +1,111 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-gobekli-tepe",
+  "field": "history",
+  "title": "Göbekli Tepe’s stone pillars went up 6,000 years before Stonehenge",
+  "emoji": "🗿",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/G%C3%B6bekli_Tepe%2C_Urfa.jpg/960px-G%C3%B6bekli_Tepe%2C_Urfa.jpg",
+    "alt": "The excavated stone enclosures of Göbekli Tepe: rings of T-shaped limestone pillars set into dry-stone walls on a hilltop near Urfa, Turkey.",
+    "credit": "Teomancimit · CC BY-SA 3.0"
+  },
+  "body": "On a hilltop in south-eastern Turkey, people were carving and raising T-shaped limestone pillars by about **9500 BC**, in the Pre-Pottery Neolithic. That is roughly 6,000 years before Stonehenge’s first earthworks and long before the pyramids. The builders had no pottery and no metal. They were largely hunter-gatherers, though finds published in 2019 suggest they also processed early forms of domesticated cereal and lived on the site for part of the year. The pillars are the oldest known megaliths in the world, and only about a tenth of the site has been excavated.",
+  "slides": [
+    {
+      "type": "place",
+      "question": "How long ago were Göbekli Tepe’s first enclosures built?",
+      "min": 0,
+      "max": 15000,
+      "step": 100,
+      "answer": 11500,
+      "unit": "years ago",
+      "ends": [
+        "Today",
+        "15,000 years ago"
+      ],
+      "hints": [
+        {
+          "label": "Stonehenge",
+          "value": 5100
+        },
+        {
+          "label": "Great Pyramid",
+          "value": 4600
+        }
+      ],
+      "explanation": "About 11,500 years ago, around 9500 BC, in the Pre-Pottery Neolithic: more than 6,000 years before Stonehenge and before farming, pottery or metal."
+    },
+    {
+      "type": "text",
+      "heading": "No farmers, no pottery",
+      "text": "The builders had no pottery, no metal and no writing. Klaus Schmidt, who dug here from 1995 until his death in 2014, saw a ritual centre for roaming hunter-gatherer bands. Finds published in 2019 complicate that: domestic buildings, cereal processing and a water supply suggest people lived here for part of the year."
+    },
+    {
+      "type": "stat",
+      "value": "~200",
+      "label": "T-shaped pillars in some 20 enclosures, most of them still underground",
+      "text": "Four enclosures have been dug; geophysical surveys show about 16 more. Each enclosure is 10 to 30 m across."
+    },
+    {
+      "type": "list",
+      "heading": "Carved on the pillars",
+      "items": [
+        "Foxes, boars and snakes, often in aggressive poses",
+        "Vultures, ducks, gazelle and wild asses",
+        "Arms, hands and loincloths: the pillars are stylised people",
+        "Abstract H-shapes, crescents and discs"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "How much of Göbekli Tepe had been excavated by 2021?",
+      "options": [
+        "About 10%",
+        "About 50%",
+        "About 90%"
+      ],
+      "answer": 0,
+      "explanation": "Roughly a tenth. Four circular enclosures are exposed; surveys suggest at least 16 more remain buried in the mound."
+    },
+    {
+      "type": "timeline",
+      "events": [
+        {
+          "when": "c. 9500 BC",
+          "text": "The first enclosures are raised"
+        },
+        {
+          "when": "c. 8000 BC",
+          "text": "Use of the site ends"
+        },
+        {
+          "when": "1963",
+          "text": "Noted in an archaeological survey"
+        },
+        {
+          "when": "1995",
+          "text": "Klaus Schmidt starts excavating"
+        },
+        {
+          "when": "2018",
+          "text": "UNESCO World Heritage Site"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "turkey",
+    "neolithic",
+    "archaeology",
+    "megaliths"
+  ],
+  "source": {
+    "label": "Wikipedia: Göbekli Tepe",
+    "url": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

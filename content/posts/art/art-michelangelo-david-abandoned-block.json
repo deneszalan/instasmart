@@ -1,0 +1,101 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-michelangelo-david-abandoned-block",
+  "field": "art",
+  "title": "Michelangelo carved David from a marble block two sculptors had given up on",
+  "emoji": "🗿",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/%27David%27_by_Michelangelo_FI_Acca_JBU_014.jpg/960px-%27David%27_by_Michelangelo_FI_Acca_JBU_014.jpg",
+    "alt": "Michelangelo’s marble David in the Galleria dell’Accademia, Florence: the nude figure stands with his weight on one leg, sling over his shoulder, beneath a domed skylight.",
+    "credit": "Jörg Bittner Unna · CC BY 4.0"
+  },
+  "body": "The block of Carrara marble that became David was bought in 1465 for the sculptor Agostino di Duccio, who roughed out a torso and legs and then stopped. Antonio Rossellino was hired to continue in 1476, but his contract was apparently rescinded, and the block, nicknamed *il gigante*, lay neglected for about 25 more years. In 1501 the 26-year-old Michelangelo won the commission and began carving on 13 September; the finished **5.17 m** figure was unveiled on 8 September 1504. It had been meant for a buttress high on the cathedral, but raising it there was judged all but impossible, so it stood beside the Palazzo della Signoria instead.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Michelangelo_David_Philpot.jpg/960px-Michelangelo_David_Philpot.jpg",
+      "alt": "A 19th-century photograph of Michelangelo’s David standing outdoors on its pedestal in the Piazza della Signoria, with the palace wall behind it.",
+      "caption": "David outdoors in the Piazza della Signoria, photographed around 1860–70, shortly before it moved indoors to the Accademia in 1873.",
+      "fit": "cover",
+      "credit": "John Brampton Philpot · Public domain"
+    },
+    {
+      "type": "estimate",
+      "question": "How tall is the statue, in centimetres?",
+      "min": 200,
+      "max": 1000,
+      "step": 1,
+      "answer": 517,
+      "unit": "cm",
+      "explanation": "5.17 m of marble, so tall that workers had nicknamed the block ‘the giant’ decades before Michelangelo touched it."
+    },
+    {
+      "type": "spectrum",
+      "heading": "A block that waited 36 years",
+      "min": 1460,
+      "max": 1510,
+      "format": "year",
+      "ends": [
+        "1460",
+        "1510"
+      ],
+      "marks": [
+        {
+          "label": "Block bought",
+          "value": 1465
+        },
+        {
+          "label": "Rossellino hired",
+          "value": 1476
+        },
+        {
+          "label": "Michelangelo starts",
+          "value": 1501,
+          "emphasis": true
+        },
+        {
+          "label": "Unveiled",
+          "value": 1504
+        }
+      ],
+      "note": "Agostino di Duccio had the contract from 1464 and acquired the block the next year."
+    },
+    {
+      "type": "text",
+      "heading": "Stones, a riot and a hammer",
+      "text": "Protesters pelted the statue with stones in its first year. In 1527 an anti-Medici riot broke its left arm into three pieces. In 1991 a man attacked it with a hidden hammer and broke off the tip of a toe on the left foot. Nearly 1.5 million people a year now come to see it, about 4,000 a day when the gallery is open."
+    },
+    {
+      "type": "quiz",
+      "question": "Where was David originally meant to stand?",
+      "options": [
+        "High on the cathedral",
+        "In the Medici palace garden",
+        "In the Piazza della Signoria",
+        "On the Ponte Vecchio"
+      ],
+      "answer": 0,
+      "explanation": "It was commissioned as one of twelve prophets for the buttresses of Florence Cathedral, but hoisting a 5 m marble that high was judged scarcely possible."
+    },
+    {
+      "type": "text",
+      "heading": "Cracks in the ankles",
+      "text": "Monitoring shows the statue leaning forward by 1 to 3 degrees, which has played a major part in hairline cracks at the ankles, though engineering analyses find it stable. One study traces the tilt to a flood in 1844. The spots most watched now are the tree-stump support behind the right leg and the left ankle and heel."
+    }
+  ],
+  "tags": [
+    "michelangelo",
+    "sculpture",
+    "florence",
+    "renaissance"
+  ],
+  "source": {
+    "label": "Wikipedia: David (Michelangelo)",
+    "url": "https://en.wikipedia.org/wiki/David_(Michelangelo)"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

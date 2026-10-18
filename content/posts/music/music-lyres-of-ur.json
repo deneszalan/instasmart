@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-lyres-of-ur",
+  "field": "music",
+  "title": "The oldest surviving stringed instruments are 4,500-year-old lyres from royal graves",
+  "emoji": "🎼",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/The_Queen%27s_lyre_and_the_silver_lyre%2C_from_the_Royal_Cemetery_at_Ur%2C_southern_Mesopotamia%2C_Iraq._The_British_Museum%2C_London..JPG/960px-The_Queen%27s_lyre_and_the_silver_lyre%2C_from_the_Royal_Cemetery_at_Ur%2C_southern_Mesopotamia%2C_Iraq._The_British_Museum%2C_London..JPG",
+    "alt": "The Queen’s Lyre, with a golden bull’s head and lapis lazuli beard on its sound box, standing beside the Silver Lyre in a display case at the British Museum.",
+    "credit": "Osama Shukir Muhammed Amin · CC BY-SA 4.0"
+  },
+  "body": "Between about 2550 and 2450 BC, musicians at Ur in southern Mesopotamia played box lyres with eleven strings, decorated with golden bulls’ heads, lapis lazuli and shell inlay. Four of these instruments, three lyres and a harp, were found in the Royal Cemetery at Ur by Leonard Woolley’s British Museum and Penn Museum expedition in the late 1920s, and they are considered the world’s oldest surviving stringed instruments. Their wooden bodies had rotted away, so Woolley poured liquid plaster into the hollows left in the soil to recover their shapes. They lay among the skeletons of women buried with the royal dead, one with her hand where the strings had been.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Bull-headed_lyre_recovered_from_the_royal_cemetery_of_Ur_Iraq_2550-2450_BCE_Gold_Lapis_Lazuli_%282%29.jpg/960px-Bull-headed_lyre_recovered_from_the_royal_cemetery_of_Ur_Iraq_2550-2450_BCE_Gold_Lapis_Lazuli_%282%29.jpg",
+      "alt": "The Bull-Headed Lyre from Ur at the Penn Museum: a gold bull’s head with a blue lapis lazuli beard above a panel of shell inlay figures on the front of the sound box.",
+      "caption": "The Bull-Headed Lyre at the Penn Museum: gold foil over the head, a lapis lazuli beard, and a shell inlay panel set in bitumen below it.",
+      "fit": "cover",
+      "credit": "Mary Harrsch · CC BY 2.0"
+    },
+    {
+      "type": "place",
+      "question": "How long ago were the lyres of Ur buried?",
+      "min": 0,
+      "max": 6000,
+      "step": 100,
+      "answer": 4500,
+      "unit": "years ago",
+      "ends": ["Today", "6,000 years ago"],
+      "hints": [
+        { "label": "Stonehenge", "value": 5100 },
+        { "label": "Rosetta Stone", "value": 2200 }
+      ],
+      "explanation": "About 4,500 years ago: the Early Dynastic III period, roughly 2550–2450 BC, around the time the Great Pyramid was going up in Egypt."
+    },
+    {
+      "type": "text",
+      "heading": "A bull that sings",
+      "text": "The bull’s head on the Bull-Headed Lyre probably represents the sun god Utu, who was believed able to descend into the underworld. The shell panel beneath it shows a figure gripping two bulls, and animals behaving like people. Lyres like these, it is thought, accompanied songs at burial ceremonies."
+    },
+    {
+      "type": "stat",
+      "value": "11",
+      "label": "strings on each lyre, plucked with both hands while the instrument stood upright",
+      "text": "A replica of the Golden Lyre is played by a touring ensemble, and engineers at the University of Liverpool helped rebuild one of the instruments."
+    },
+    {
+      "type": "list",
+      "heading": "Where they are today",
+      "items": [
+        "Queen’s Lyre and Silver Lyre: British Museum, London",
+        "Bull-Headed Lyre: Penn Museum, Philadelphia",
+        "Golden Lyre: Iraq Museum, Baghdad, its rebuilt body damaged by flooding in the Iraq War"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "How did Woolley recover the shape of the rotted wooden lyres?",
+      "options": ["He poured plaster into the hollows", "He X-rayed the soil", "He copied Sumerian drawings", "He reassembled charred fragments"],
+      "answer": 0,
+      "explanation": "The wood had decayed, leaving cavities in the ground. Liquid plaster filled them, and the gold, silver and inlay stayed in place on the casts."
+    }
+  ],
+  "tags": ["mesopotamia", "ur", "instruments", "archaeology"],
+  "source": { "label": "Wikipedia: Lyres of Ur", "url": "https://en.wikipedia.org/wiki/Lyres_of_Ur" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

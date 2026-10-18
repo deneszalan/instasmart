@@ -1,0 +1,104 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-mozart-starling",
+  "field": "music",
+  "title": "Mozart kept a pet starling that sang a theme from his piano concerto",
+  "emoji": "🐦",
+  "cover": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/European_starling_in_CP_%2833849%29.jpg/960px-European_starling_in_CP_%2833849%29.jpg",
+    "alt": "A common starling in glossy breeding plumage, its dark feathers shimmering green and purple with pale speckles, perched on a branch.",
+    "credit": "Rhododendrites · CC BY-SA 4.0"
+  },
+  "body": "On 27 May 1784 Mozart noted in his expense book: ‘Starling bird, 34 kreuzer’, followed by a few bars of music and the words *Das war schön!* (‘That was beautiful!’). The tune is almost the opening of the finale of his Piano Concerto No. 17 in G, K. 453, which he had completed on 12 April and presumably taught the bird; in Mozart’s transcription the starling adds a pause and sings a G sharp where the concerto has a G. Starlings are gifted mimics. The bird lived with the household for about three years, and when it died on 4 June 1787 Mozart buried it in the garden with some ceremony and wrote a verse epitaph for it.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Barbara_Krafft_-_Portr%C3%A4t_Wolfgang_Amadeus_Mozart_%281819%29.jpg/960px-Barbara_Krafft_-_Portr%C3%A4t_Wolfgang_Amadeus_Mozart_%281819%29.jpg",
+      "alt": "Portrait of Wolfgang Amadeus Mozart in a red coat and white powdered wig, painted by Barbara Krafft.",
+      "caption": "Mozart, painted posthumously by Barbara Krafft in 1819. In May 1784, when he bought the starling, he was 28.",
+      "fit": "cover",
+      "credit": "Barbara Krafft, 1819 · Public domain"
+    },
+    {
+      "type": "reveal",
+      "prompt": "What did the starling get wrong when it sang Mozart’s tune?",
+      "answer": "A G sharp instead of G, plus an extra pause",
+      "detail": "Mozart wrote the bird’s version down: a fermata and a sharpened note. Corrected, it matches the concerto’s finale theme almost exactly."
+    },
+    {
+      "type": "flow",
+      "heading": "From concerto to birdsong",
+      "steps": [
+        {
+          "icon": "🎹",
+          "label": "Mozart finishes Concerto K. 453"
+        },
+        {
+          "icon": "🐦",
+          "label": "He buys a starling six weeks later"
+        },
+        {
+          "icon": "🎶",
+          "label": "The bird sings the theme, sharpening a G"
+        },
+        {
+          "icon": "📝",
+          "label": "He writes it down: ‘That was beautiful!’"
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "events": [
+        {
+          "when": "12 Apr 1784",
+          "text": "Piano Concerto No. 17 completed"
+        },
+        {
+          "when": "27 May 1784",
+          "text": "Buys the starling for 34 kreuzer"
+        },
+        {
+          "when": "4 Jun 1787",
+          "text": "The bird dies; a garden funeral"
+        },
+        {
+          "when": "1787",
+          "text": "A Musical Joke, K. 522"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "How did Mozart mark the starling’s death?",
+      "options": [
+        "A funeral and a verse epitaph",
+        "A requiem for choir",
+        "He noted nothing",
+        "He bought a canary the same day"
+      ],
+      "answer": 0,
+      "explanation": "He buried it in the garden with considerable ceremony and wrote a poem for its grave, according to early biographers. It was a time of grief: his father had died a week before."
+    },
+    {
+      "type": "text",
+      "heading": "A joke with feathers?",
+      "text": "The biologists Meredith West and Andrew King argued that Mozart’s A Musical Joke, K. 522, of 1787, bears ‘the vocal autograph of a starling’. It is a speculation, not a proven link. Mozart also kept a canary; biographer Hermann Abert reports that on his deathbed in 1791 he had it taken away, unable to bear its song."
+    }
+  ],
+  "tags": [
+    "mozart",
+    "birds",
+    "composers",
+    "vienna"
+  ],
+  "source": {
+    "label": "Wikipedia: Mozart’s starling",
+    "url": "https://en.wikipedia.org/wiki/Mozart%27s_starling"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
