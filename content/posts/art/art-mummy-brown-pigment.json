@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-mummy-brown-pigment",
+  "field": "art",
+  "title": "Painters once used a brown made from ground-up Egyptian mummies",
+  "emoji": "🟤",
+  "body": "Mummy brown was a real pigment: the flesh of Egyptian mummies, ground up and mixed with white pitch and myrrh. A Paris shop was selling powdered mummy in 1712, and the colour was hugely popular from the mid-18th century through the 19th, especially with the Pre-Raphaelites. It was poor paint, fading and cracking, and its ammonia and fat spoiled neighbouring colours. When Edward Burne-Jones learned what was in his tube, he **gave it a burial in his garden**. By the mid-20th century suppliers had stopped offering it; one London colourmaker had simply run out of mummies.",
+  "slides": [
+    {
+      "type": "list",
+      "heading": "The recipe",
+      "style": "bullets",
+      "items": [
+        "Flesh of Egyptian or Canary Island mummies, human and feline",
+        "White pitch",
+        "Myrrh"
+      ]
+    },
+    {
+      "type": "estimate",
+      "question": "In what year is mummy brown first recorded on sale, at a Paris shop?",
+      "min": 1500,
+      "max": 1950,
+      "step": 1,
+      "answer": 1712,
+      "explanation": "1712, though a document of 1594 already mentions the pigment. Its heyday came in the mid-18th and 19th centuries."
+    },
+    {
+      "type": "timeline",
+      "events": [
+        {
+          "when": "1712",
+          "text": "A Paris shop sells powdered mummy for paint"
+        },
+        {
+          "when": "1700s–1800s",
+          "text": "Peak popularity, a Pre-Raphaelite favourite"
+        },
+        {
+          "when": "1915",
+          "text": "Demand has fallen sharply"
+        },
+        {
+          "when": "1964",
+          "text": "Time reports the last supplier ran out of mummies years before"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "A burial in the garden",
+      "text": "Edward Burne-Jones was reported to have ceremonially buried his tube of mummy brown when he discovered its true origins. His wife Georgiana recalled that he insisted on giving it ‘a decent burial there and then’."
+    },
+    {
+      "type": "text",
+      "heading": "Not just paint",
+      "text": "Europeans also swallowed mummy: preparations made from it were used as medicine for complaints from toothache to dysentery. As a pigment its drawbacks were practical as well as macabre: poor permanence, cracking, and ammonia and fat that affected other colours."
+    }
+  ],
+  "tags": [
+    "pigment",
+    "painting",
+    "egypt"
+  ],
+  "source": {
+    "label": "Wikipedia: Mummy brown",
+    "url": "https://en.wikipedia.org/wiki/Mummy_brown"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

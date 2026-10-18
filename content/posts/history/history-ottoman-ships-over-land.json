@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-ottoman-ships-over-land",
+  "field": "history",
+  "title": "Ottoman warships were dragged over a hill to besiege Constantinople",
+  "emoji": "🚢",
+  "body": "The defenders of Constantinople had stretched a great chain, floating on logs, across the mouth of the Golden Horn, and no Ottoman ship could force it. So the 21-year-old sultan Mehmed II had a road of greased logs laid across Galata, the hill on the inlet’s north side. On **22 April 1453** his ships were hauled overland and slid into the harbour behind the chain, and the outnumbered defenders suddenly had another long stretch of wall to guard. The city fell on 29 May, after a siege of 53 days, and with it the Byzantine Empire.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "golden-horn.svg",
+      "alt": "Sketch map: the triangular city of Constantinople, the Golden Horn inlet to its north closed by a chain at its mouth, Galata on the far shore, and a dashed arrow showing ships hauled over the hill from the Bosporus into the inlet.",
+      "caption": "The chain closed the harbour mouth, so the fleet went round it: over the hill behind Galata.",
+      "fit": "contain"
+    },
+    {
+      "type": "compare",
+      "heading": "Who faced whom",
+      "left": { "label": "Ottomans", "text": "Some 50,000 to 80,000 soldiers by modern estimates, a fleet, and Orban’s 8.2-metre bombard, dragged from Edirne by 60 oxen." },
+      "right": { "label": "Defenders", "text": "About 7,000 men, 2,000 of them foreigners, spread along the city’s walls." }
+    },
+    {
+      "type": "timeline",
+      "heading": "The siege of 1453",
+      "events": [
+        { "when": "6 April", "text": "The siege begins" },
+        { "when": "22 April", "text": "Ships are hauled over the hill into the Golden Horn" },
+        { "when": "29 May", "text": "The walls are breached and the city falls" }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why go over land?",
+      "text": "The chain was meant to keep the inlet safe, so the sea walls along the Golden Horn were thinly held. Once Ottoman vessels were floating inside it, the defenders were forced to send part of their small force to guard those walls too."
+    },
+    {
+      "type": "quiz",
+      "question": "How long did the siege of Constantinople last in 1453?",
+      "options": ["11 days", "53 days", "6 months", "2 years"],
+      "answer": 1,
+      "explanation": "From 6 April to 29 May 1453: 53 days, with the ships crossing the hill on 22 April, roughly halfway through."
+    }
+  ],
+  "tags": ["ottoman", "byzantium", "siege"],
+  "source": { "label": "Wikipedia: Fall of Constantinople", "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople" },
+  "author": { "name": "Fable", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

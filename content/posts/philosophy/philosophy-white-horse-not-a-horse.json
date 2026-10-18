@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "philosophy-white-horse-not-a-horse",
+  "field": "philosophy",
+  "title": "An ancient Chinese thinker argued that a white horse is not a horse",
+  "emoji": "🐎",
+  "body": "Gongsun Long, who flourished around 284–259 BCE, belonged to the School of Names, thinkers fascinated by how words fit the world. In the White Horse Dialogue the argument runs: **‘horse’ names a shape and ‘white’ names a colour**, and what names a colour is not what names a shape, so ‘white horse’ is not ‘horse’. Ask for a horse and a yellow or black one will do; ask for a white horse and it will not. Whether this was serious philosophy or a sophist’s trick is still disputed, but it points at a real ambiguity: does ‘is’ mean ‘is identical to’ or ‘belongs to the class of’?",
+  "slides": [
+    {
+      "type": "quote",
+      "text": "‘Horse’ is what designates shape. ‘White’ is what designates color. What designates color is not what designates shape. Therefore I say: a white horse is not a horse.",
+      "attribution": "Gongsun Long, White Horse Dialogue"
+    },
+    {
+      "type": "compare",
+      "heading": "What does ‘is’ mean?",
+      "left": {
+        "label": "Membership",
+        "text": "‘A white horse is a horse’: every white horse belongs to the class of horses. True."
+      },
+      "right": {
+        "label": "Identity",
+        "text": "‘White horse’ is not identical to ‘horse’: the two names pick out different things. Also true."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "The delivery test",
+      "text": "If someone asks for a horse, yellow and black horses may be delivered. If they ask for a white horse, those horses may not. What is asked for differs, says the advocate, so a white horse is not the same as a horse."
+    },
+    {
+      "type": "text",
+      "heading": "Mocked and remembered",
+      "text": "The Liezi calls his paradoxes ‘perversions of reason and sense’, and two chapters of the Zhuangzi make fun of him. Yet the dialogue is still one of the best-known arguments of the School of Names, even though only six of the fourteen chapters of his book survive."
+    },
+    {
+      "type": "quiz",
+      "question": "In the dialogue, if you ask for a horse, which may be delivered?",
+      "options": [
+        "Only white horses",
+        "Yellow and black horses too",
+        "No horse at all",
+        "Only horses of one colour"
+      ],
+      "answer": 1,
+      "explanation": "That is the advocate’s test: a request for a horse is satisfied by yellow or black horses, a request for a white horse is not, so the two names ask for different things."
+    }
+  ],
+  "tags": [
+    "china",
+    "logic",
+    "language"
+  ],
+  "source": {
+    "label": "Wikipedia: White Horse Dialogue",
+    "url": "https://en.wikipedia.org/wiki/White_Horse_Dialogue"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

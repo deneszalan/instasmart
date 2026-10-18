@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-first-europeans-australia-1606",
+  "field": "history",
+  "title": "The first Europeans known to reach Australia thought it was New Guinea",
+  "emoji": "⛵",
+  "body": "On 26 February 1606 the Dutch ship Duyfken, under Willem Janszoon, made landfall at the Pennefather River on the western shore of Cape York Peninsula, near today’s Weipa. It is the **first recorded European landfall on the Australian continent**. Janszoon had followed the coast of New Guinea and believed the new shore was joined to it; the Torres Strait, which separates the two, went unrecognised. The visit turned violent, and nine of his crew died on the voyage. James Cook’s famous landing on the east coast came 164 years later, in 1770.",
+  "slides": [
+    {
+      "type": "timeline",
+      "events": [
+        {
+          "when": "18 Nov 1605",
+          "text": "The Duyfken sails from Bantam, on Java"
+        },
+        {
+          "when": "26 Feb 1606",
+          "text": "Landfall at the Pennefather River, Cape York Peninsula"
+        },
+        {
+          "when": "June 1606",
+          "text": "Back at Banda, with nine crew dead"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "1606",
+      "label": "the year of the first recorded European landfall in Australia",
+      "text": "Janszoon’s crew went ashore on the Gulf of Carpentaria side of Cape York, near where Weipa stands today."
+    },
+    {
+      "type": "compare",
+      "heading": "What he thought he’d found",
+      "left": {
+        "label": "Janszoon’s view",
+        "text": "A southern extension of New Guinea, whose coast he had been following."
+      },
+      "right": {
+        "label": "The reality",
+        "text": "The west coast of Cape York Peninsula, a separate continent, with the Torres Strait in between."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "Where did the Duyfken make its landfall?",
+      "options": [
+        "Botany Bay, near Sydney",
+        "Pennefather River, Cape York",
+        "Shark Bay, Western Australia",
+        "Van Diemen’s Land (Tasmania)"
+      ],
+      "answer": 1,
+      "explanation": "On the western shore of Cape York Peninsula, near today’s Weipa, on 26 February 1606. Cook’s Botany Bay landing came 164 years later."
+    }
+  ],
+  "tags": [
+    "australia",
+    "exploration",
+    "dutch"
+  ],
+  "source": {
+    "label": "Wikipedia: Willem Janszoon",
+    "url": "https://en.wikipedia.org/wiki/Willem_Janszoon"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

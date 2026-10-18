@@ -1,0 +1,83 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-oldest-peace-treaty-un",
+  "field": "history",
+  "title": "A copy of the world’s oldest surviving peace treaty hangs at the UN",
+  "emoji": "📜",
+  "body": "Around 1259 BC, Ramesses II of Egypt and Hattusili III of the Hittites made peace, some fifteen years after their armies had fought at Kadesh. Each side swore to help the other if attacked and to send political refugees back. The silver tablets they exchanged are lost, but the Egyptian text survives carved on temple walls at Karnak and the Ramesseum, and the Hittite version, in Akkadian on clay tablets, was dug up at Hattusa in 1906. It is the **only ancient Near Eastern treaty of which both sides’ versions survive**, and a copy hangs at United Nations headquarters.",
+  "slides": [
+    {
+      "type": "timeline",
+      "events": [
+        {
+          "when": "c. 1274 BC",
+          "text": "Egyptian and Hittite armies clash at Kadesh"
+        },
+        {
+          "when": "c. 1259 BC",
+          "text": "The two kings conclude a peace treaty on silver tablets"
+        },
+        {
+          "when": "1906",
+          "text": "The Hittite clay tablets are found at Hattusa"
+        },
+        {
+          "when": "Today",
+          "text": "A copy hangs on a wall at UN headquarters"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "heading": "What they promised",
+      "style": "bullets",
+      "items": [
+        "Military aid if either was attacked by a third party",
+        "Extradition of political refugees to their home country",
+        "Lasting peace: the pact is also known as the Eternal Treaty"
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Two copies, two scripts",
+      "left": {
+        "label": "Egypt",
+        "text": "Hieroglyphs carved on the walls of two temples in Thebes: the Ramesseum and Karnak."
+      },
+      "right": {
+        "label": "Hatti",
+        "text": "Akkadian cuneiform on clay tablets, found in 1906 in the Hittite capital Hattusa, in modern Turkey."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Older treaties?",
+      "text": "A far older agreement between Ebla and Abarsal may be the earliest recorded diplomatic treaty of all. But Kadesh is the oldest surviving peace treaty, and the only one from the ancient Near East with both sides’ texts preserved."
+    },
+    {
+      "type": "order",
+      "heading": "Oldest first",
+      "items": [
+        "Armies clash at Kadesh",
+        "Egypt and Hatti make peace",
+        "Hittite tablets dug up at Hattusa",
+        "A copy goes up at the UN"
+      ],
+      "explanation": "Kadesh c. 1274 BC, the treaty c. 1259 BC, the tablets found in 1906, and the copy at UN headquarters today."
+    }
+  ],
+  "tags": [
+    "egypt",
+    "hittites",
+    "diplomacy"
+  ],
+  "source": {
+    "label": "Wikipedia: Egyptian–Hittite peace treaty",
+    "url": "https://en.wikipedia.org/wiki/Egyptian%E2%80%93Hittite_peace_treaty"
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

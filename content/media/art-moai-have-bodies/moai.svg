@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="system-ui, sans-serif">
+  <text x="540" y="80" fill="#fff" font-size="54" font-weight="800" text-anchor="middle">A moai, buried to the shoulders</text>
+  <rect x="60" y="560" width="960" height="460" fill="#fff" fill-opacity="0.12"/>
+  <line x1="60" y1="560" x2="1020" y2="560" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  <text x="1010" y="545" fill="#fff" fill-opacity="0.85" font-size="34" text-anchor="end">ground level</text>
+  <path d="M380,560 L700,560 L720,1020 L360,1020 Z" fill="#fff" fill-opacity="0.35" stroke="#fff" stroke-width="6" stroke-dasharray="14 12"/>
+  <path d="M420,620 L410,900 Q540,950 670,900 L660,620" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="14 12" stroke-linecap="round"/>
+  <path d="M420,250 Q420,210 480,210 L600,210 Q660,210 660,250 L660,520 Q660,560 620,560 L460,560 Q420,560 420,520 Z" fill="#fff" fill-opacity="0.92"/>
+  <g fill="none" stroke="#5a1a0c" stroke-width="8" stroke-linecap="round">
+    <path d="M455,330 L625,330"/>
+    <path d="M540,330 L540,450 M515,450 L565,450"/>
+    <path d="M500,505 L580,505"/>
+  </g>
+  <text x="230" y="370" fill="#fff" font-size="36" font-weight="700" text-anchor="middle">Above ground:</text>
+  <text x="230" y="414" fill="#fff" font-size="36" font-weight="700" text-anchor="middle">the head</text>
+  <text x="190" y="770" fill="#fff" font-size="36" font-weight="700" text-anchor="middle">Buried:</text>
+  <text x="190" y="814" fill="#fff" font-size="36" font-weight="700" text-anchor="middle">torso and arms</text>
+  <line x1="780" y1="215" x2="780" y2="555" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <line x1="780" y1="565" x2="780" y2="1015" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-dasharray="14 12"/>
+  <text x="810" y="395" fill="#fff" font-size="40" font-weight="800">3/8</text>
+  <text x="810" y="800" fill="#fff" font-size="40" font-weight="800">5/8</text>
+</svg>
