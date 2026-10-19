@@ -53,7 +53,7 @@ content/
 1. A post is added as a JSON file, with any images it uses: by a person, a coding agent, or the MCP server.
 2. **CI** (`.github/workflows/ci.yml`) runs `npm run content` on every pull request. It checks the format, lengths, field folders, that every referenced image exists, file types and sizes, and that SVGs contain no scripts, event handlers or external references.
 3. A maintainer reviews the facts and merges.
-4. **Deploy** (`.github/workflows/deploy.yml`) rebuilds the site on pushes to `main` or `ccr-af3d9c73-xjzrqr` (the current default branch) and publishes it to GitHub Pages. The app bundles every post at build time.
+4. **Deploy** (`.github/workflows/deploy.yml`) rebuilds the site on every push to `main` and publishes it to GitHub Pages. The app bundles every post at build time.
 
 To turn on deployment once: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
