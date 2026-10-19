@@ -1,0 +1,103 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "economics-dutch-auction-falling-clock",
+  "field": "economics",
+  "title": "In a Dutch auction the price only ever falls, and the very first bid wins",
+  "emoji": "⏱️",
+  "cover": {
+    "src": "auction-clock-1937.jpg",
+    "alt": "Black-and-white newsreel still from 1937: the big round dial of an electric auction clock, with a pointer and rings of lamps, on the wall of an auction hall.",
+    "credit": "Polygoon Hollands Nieuws · Public domain"
+  },
+  "body": "The auctioneer starts high and lowers the price until someone accepts, so every sale needs **exactly one bid**. That speed suits goods that must be sold quickly, such as flowers, fresh produce or tobacco, and Dutch flower auctions use an electronic device to bring the price down. When the method reached England in the 17th century it was called ‘mineing’, because the auctioneer kept cutting the price until one bidder cried out ‘Mine!’. Each buyer has to judge how long to wait: hold out for a lower price and someone else may grab the lot first.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "auction-clock-1937.mp4",
+      "poster": "auction-clock-1937.jpg",
+      "alt": "Black-and-white newsreel from 1937: a crowd of buyers in caps fills an auction hall, then the camera rises to a large round electric auction clock whose pointer moves around the dial.",
+      "caption": "Beverwijk, the Netherlands, 1937: buyers crowd a new produce auction hall, and the camera rises to its electric auction clock, which replaced auctioneers calling out prices.",
+      "credit": "Polygoon Hollands Nieuws · Public domain · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Veilinggebouw_met_electrische_afmijninstallatie.webm",
+      "music": "“Look Busy” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Two ways to auction",
+      "left": {
+        "label": "Traditional auction",
+        "text": "Bids rise until nobody is willing to go higher. A sale can take many bids."
+      },
+      "right": {
+        "label": "Dutch auction",
+        "text": "The price starts high and falls until someone accepts. A sale takes one bid."
+      }
+    },
+    {
+      "type": "chart",
+      "heading": "Selling a used company car, Dutch-style",
+      "items": [
+        {
+          "label": "Opening price",
+          "value": 15000
+        },
+        {
+          "label": "First cut",
+          "value": 14000
+        },
+        {
+          "label": "Second cut",
+          "value": 13000
+        },
+        {
+          "label": "Third cut",
+          "value": 12000
+        },
+        {
+          "label": "Fourth cut",
+          "value": 11000
+        },
+        {
+          "label": "Fifth cut: sold",
+          "value": 10000,
+          "emphasis": true
+        }
+      ],
+      "unit": "€",
+      "note": "A worked example: the price drops in €1,000 steps until one bidder takes it"
+    },
+    {
+      "type": "reveal",
+      "prompt": "A Dutch auction is strategically similar to another kind of auction. Which?",
+      "answer": "A first-price sealed-bid auction",
+      "detail": "There, each buyer hands in one secret bid and the highest pays what they offered. In both, you must settle on your price without seeing anyone else’s."
+    },
+    {
+      "type": "quiz",
+      "question": "Why do flower and produce markets like Dutch auctions?",
+      "options": [
+        "One bid per sale makes them fast",
+        "Sellers always get a higher price",
+        "Buyers can bid again and again",
+        "No auctioneer or clock is needed"
+      ],
+      "answer": 0,
+      "explanation": "A sale never needs more than one bid, so perishable goods change hands quickly. Dutch flower auctions are known for being fast and cheap to run."
+    }
+  ],
+  "tags": [
+    "auctions",
+    "markets",
+    "prices",
+    "netherlands"
+  ],
+  "source": {
+    "label": "Wikipedia: Dutch auction",
+    "url": "https://en.wikipedia.org/wiki/Dutch_auction"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

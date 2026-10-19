@@ -1,0 +1,70 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-hurdy-gurdy-wheel-bow",
+  "field": "music",
+  "title": "The hurdy-gurdy is a fiddle you play by cranking a wheel instead of drawing a bow",
+  "emoji": "🎡",
+  "cover": {
+    "src": "hurdy-gurdy.jpg",
+    "alt": "Close-up of a hurdy-gurdy: a lute-shaped wooden body with a curved black cover over its wheel, a box of keys along the side, and the player’s hand on the keys.",
+    "credit": "Emilio Villalba · CC BY 3.0"
+  },
+  "body": "Turning the handle spins a **rosined wheel** that rubs the strings, doing a violin bow’s job without ever running out of bow. The other hand plays a keyboard whose keys press small wedges, called tangents, against the melody strings to change their pitch, while drone strings sound all the time, which is why it is often heard alongside bagpipes. On French instruments a string passes over a buzzing bridge called the *chien*, or ‘dog’: strike the crank sharply and it rattles against the soundboard, adding a rhythmic buzz.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "hurdy-gurdy.mp4",
+      "poster": "hurdy-gurdy.jpg",
+      "alt": "Close-up of a hurdy-gurdy being played: one hand turns the crank at the end of the instrument in a blur while the other hand presses the wooden keys along its side.",
+      "caption": "A Spanish zanfona, or hurdy-gurdy, modelled on a French instrument of 1728: one hand turns the crank that spins the wheel, the other presses the keys.",
+      "credit": "Emilio Villalba · CC BY 3.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Emilio_Villalba.-_Zanfona_s._XVIII_(Hurdy_gurdy)._El_Zorongo_gitano.webm",
+      "music": "“Village Consort” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "pictogram",
+      "heading": "On a classic French hurdy-gurdy, only 2 of the 6 strings play the tune",
+      "icon": "🎵",
+      "total": 6,
+      "count": 2,
+      "note": "The other four are drones. Modern instruments often have 24 keys covering two chromatic octaves."
+    },
+    {
+      "type": "text",
+      "heading": "Once a job for two",
+      "text": "An early form, the organistrum, was so big that two people played it: one turned the crank while the other pulled the keys upward. A 12th-century carving at Santiago de Compostela shows two musicians at one. Later it shrank so a single player could do both."
+    },
+    {
+      "type": "text",
+      "heading": "From the streets to the palace",
+      "text": "In the late 1600s changing tastes pushed the hurdy-gurdy down to the lowest social classes. Then, in 18th-century France, a rococo fashion for rustic pastimes brought it back to the attention of the upper classes and the nobility."
+    },
+    {
+      "type": "quiz",
+      "question": "What makes the hurdy-gurdy’s rhythmic buzz?",
+      "options": [
+        "A bridge called the ‘dog’",
+        "A loose wooden key",
+        "Air from a leather bag",
+        "A second, faster wheel"
+      ],
+      "answer": 0,
+      "explanation": "On French instruments a string called the trompette runs over the chien, or ‘dog’. Striking the crank makes it vibrate against the soundboard."
+    }
+  ],
+  "tags": [
+    "hurdygurdy",
+    "instruments",
+    "strings",
+    "medieval"
+  ],
+  "source": {
+    "label": "Wikipedia: Hurdy-gurdy",
+    "url": "https://en.wikipedia.org/wiki/Hurdy-gurdy"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
