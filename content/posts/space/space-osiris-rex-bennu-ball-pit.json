@@ -1,0 +1,105 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-osiris-rex-bennu-ball-pit",
+  "field": "space",
+  "title": "Asteroid Bennu is so loose that a NASA probe would have sunk into it",
+  "emoji": "☄️",
+  "cover": {
+    "src": "bennu-tag.jpg",
+    "alt": "Black-and-white view from OSIRIS-REx’s camera: the round sampler head on the end of its arm, just above a surface of jumbled dark rocks and boulders.",
+    "credit": "NASA/Goddard/University of Arizona · Public domain"
+  },
+  "body": "Bennu, about **490 m** across, seems to be not one solid rock but a rubble pile: boulders and gravel loosely gathered together. Its bulk density is only slightly more than water’s, which suggests that a large share of its inside is empty gaps. When OSIRIS-REx touched it on 20 October 2020 to grab a sample, analysis showed the particles are loosely packed and lightly bound, and that the spacecraft would have sunk in had it not fired its thrusters to back away at once.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "bennu-tag.mp4",
+      "poster": "bennu-tag.jpg",
+      "alt": "Black-and-white camera view of the sampler head on OSIRIS-REx’s arm closing in on a rocky surface; on contact, a bright cloud of rocks and dust bursts out and fills the frame.",
+      "caption": "20 October 2020: the sampler head on OSIRIS-REx’s arm touches Bennu, and rocks and dust fly everywhere as the spacecraft backs away.",
+      "credit": "NASA/Goddard/University of Arizona · Public domain · excerpt",
+      "href": "https://images.nasa.gov/details/GSFC_20201021_M13745_TAG",
+      "music": "“Static Motion” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "stat",
+      "value": "1,190 kg/m³",
+      "label": "Bennu’s bulk density, only slightly more than water’s",
+      "text": "Its predicted macroporosity is about 40%, give or take 10: that much of its volume may be gaps between the rubble."
+    },
+    {
+      "type": "chart",
+      "heading": "Pieces of Bennu are denser than Bennu itself",
+      "items": [
+        {
+          "label": "Water",
+          "value": 1
+        },
+        {
+          "label": "Bennu as a whole",
+          "value": 1.19,
+          "emphasis": true
+        },
+        {
+          "label": "Hummocky grains",
+          "value": 1.55
+        },
+        {
+          "label": "Mottled grains",
+          "value": 1.77
+        }
+      ],
+      "unit": "g/cm³",
+      "note": "Grain figures are averages for two particle types in the returned sample"
+    },
+    {
+      "type": "timeline",
+      "heading": "A round trip to Bennu",
+      "events": [
+        {
+          "when": "8 Sep 2016",
+          "text": "OSIRIS-REx launches"
+        },
+        {
+          "when": "3 Dec 2018",
+          "text": "It arrives and starts mapping Bennu"
+        },
+        {
+          "when": "20 Oct 2020",
+          "text": "Touch-and-go: a sample is grabbed"
+        },
+        {
+          "when": "Sep 2023",
+          "text": "The sample capsule lands on Earth"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Roughly how much of Bennu did OSIRIS-REx bring back to Earth?",
+      "options": [
+        "About 1.2 grams",
+        "About 120 grams",
+        "About 12 kilograms",
+        "About 1 tonne"
+      ],
+      "answer": 1,
+      "explanation": "About 120 grams of mostly very dark material, landed in a capsule in September 2023 and now being studied around the world."
+    }
+  ],
+  "tags": [
+    "asteroids",
+    "bennu",
+    "nasa",
+    "spacecraft"
+  ],
+  "source": {
+    "label": "Wikipedia: 101955 Bennu",
+    "url": "https://en.wikipedia.org/wiki/101955_Bennu"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-dart-asteroid-nudge",
+  "field": "space",
+  "title": "NASA rammed a probe into an asteroid and cut its orbit by over half an hour",
+  "emoji": "🎯",
+  "cover": {
+    "src": "dart-impact.jpg",
+    "alt": "The grey, boulder-strewn surface of the asteroid Dimorphos fills the frame, photographed by the DART spacecraft seconds before it hit.",
+    "credit": "NASA/Johns Hopkins APL · Public domain"
+  },
+  "body": "DART was a test of planetary defence. On 26 September 2022 it flew head-on into **Dimorphos**, a 160 m moonlet circling the bigger asteroid Didymos, at about 6.6 km/s. Dimorphos used to go round once every 11 hours 52 minutes; afterwards its orbit was about 33 minutes shorter. Most of the push came from the recoil of rubble blasted off its surface, not from the spacecraft itself. Neither asteroid was ever a threat to Earth. The pair was chosen because Dimorphos passes in front of Didymos on every orbit, so telescopes on Earth could time it before and after.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "dart-impact.mp4",
+      "poster": "dart-impact.jpg",
+      "alt": "Sped-up view from DART’s camera: the large asteroid Didymos drifts out of frame while a small dot, Dimorphos, grows into a boulder-strewn surface that fills the picture, until the last image is cut off and the screen turns red.",
+      "caption": "Speeded up: DART’s camera passes Didymos and closes in on its moonlet Dimorphos. The last picture is cut off as the spacecraft hits, and the signal ends.",
+      "credit": "NASA/Johns Hopkins APL · Public domain · excerpt",
+      "href": "https://svs.gsfc.nasa.gov/31194/",
+      "music": "“Stormfront” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "estimate",
+      "question": "NASA would count DART a success if it changed Dimorphos’s orbit by at least how many seconds?",
+      "min": 0,
+      "max": 600,
+      "step": 1,
+      "answer": 73,
+      "unit": "s",
+      "explanation": "Just 73 seconds. The measured change was about 33 minutes, more than 25 times the target."
+    },
+    {
+      "type": "chart",
+      "heading": "How much DART changed Dimorphos’s orbit",
+      "items": [
+        {
+          "label": "Needed for success",
+          "value": 1.2
+        },
+        {
+          "label": "Measured change",
+          "value": 33,
+          "emphasis": true
+        }
+      ],
+      "unit": "min",
+      "note": "The orbit took 11 h 52 min before the impact; the change is 33 ± 1 minutes"
+    },
+    {
+      "type": "stat",
+      "value": "3.6×",
+      "label": "the momentum Dimorphos got, compared with simply absorbing the spacecraft",
+      "text": "Debris blasted off by the impact recoiled like rocket exhaust, so the ejecta moved the asteroid more than DART did. Other estimates range from 2.2 to 4.9."
+    },
+    {
+      "type": "quiz",
+      "question": "After the hit, telescopes saw a tail of debris streaming from Dimorphos. How long was it?",
+      "options": [
+        "About 10 metres",
+        "About 10 km",
+        "Over 10,000 km",
+        "Over 10 million km"
+      ],
+      "answer": 2,
+      "explanation": "The SOAR telescope measured a trail over 10,000 km long; later estimates put the tail at 30,000 km or more. DART had turned Dimorphos into an active asteroid."
+    }
+  ],
+  "tags": [
+    "asteroids",
+    "dart",
+    "planetarydefence",
+    "nasa"
+  ],
+  "source": {
+    "label": "Wikipedia: Double Asteroid Redirection Test",
+    "url": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

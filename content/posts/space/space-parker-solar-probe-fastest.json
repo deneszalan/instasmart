@@ -1,0 +1,91 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-parker-solar-probe-fastest",
+  "field": "space",
+  "title": "At 690,000 km/h, a NASA Sun probe is the fastest thing humans have built",
+  "emoji": "☀️",
+  "cover": {
+    "src": "wispr-corona.jpg",
+    "alt": "Black-and-white view from inside the Sun’s outer atmosphere: a bright, billowing cloud of plasma swirls over streaks of solar wind.",
+    "credit": "NASA/Johns Hopkins APL/Naval Research Lab · Public domain"
+  },
+  "body": "Parker Solar Probe isn’t pushed to that speed by its engines: it falls. Seven flybys of Venus took away some of its orbital speed, so each orbit dropped closer to the Sun, and like any orbiting object it moves fastest at its closest point. On 24 December 2024 it passed just **6.16 million km** from the Sun’s surface at about 191 km/s, almost three times as fast as the previous record holder, Helios 2. A carbon heat shield only 11.4 cm thick keeps its instruments at about 29 °C.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "wispr-corona.mp4",
+      "poster": "wispr-corona.jpg",
+      "alt": "Grainy black-and-white time-lapse from Parker Solar Probe’s WISPR camera: bright clouds of plasma billow up and stream away over fine streaks of solar wind, while specks of dust flash across the view.",
+      "caption": "25 December 2024, about seven hours squeezed into seconds and shown at half speed: from inside the corona, WISPR watches the solar wind and bright clouds of plasma stream out.",
+      "credit": "NASA/Johns Hopkins APL/Naval Research Lab · Public domain · excerpt",
+      "href": "https://svs.gsfc.nasa.gov/14865/",
+      "music": "“Odyssey” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "chart",
+      "heading": "Closest a spacecraft has come to the Sun’s surface",
+      "items": [
+        {
+          "label": "Helios 2, 1976",
+          "value": 42.73
+        },
+        {
+          "label": "Parker, 2023",
+          "value": 7.26
+        },
+        {
+          "label": "Parker, 2024",
+          "value": 6.16,
+          "emphasis": true
+        }
+      ],
+      "unit": "million km",
+      "note": "Parker broke Helios 2’s record in October 2018, under three months after launch"
+    },
+    {
+      "type": "compare",
+      "heading": "Either side of the heat shield",
+      "left": {
+        "label": "Facing the Sun",
+        "text": "Built to take about 1,370 °C, in sunlight around 475 times as intense as at Earth"
+      },
+      "right": {
+        "label": "Behind it",
+        "text": "About 29 °C. The 2.3 m shield is 11.4 cm thick and weighs just 73 kg"
+      }
+    },
+    {
+      "type": "reveal",
+      "prompt": "Parker Solar Probe was the first NASA spacecraft named after someone who was…",
+      "answer": "Still alive",
+      "detail": "Physicist Eugene Parker, who worked out a theory predicting the solar wind, was alive when the probe was renamed for him in May 2017."
+    },
+    {
+      "type": "quiz",
+      "question": "What let Parker Solar Probe get so close to the Sun?",
+      "options": [
+        "One huge rocket burn",
+        "Seven flybys of Venus",
+        "A slingshot round Jupiter",
+        "A giant solar sail"
+      ],
+      "answer": 1,
+      "explanation": "Each Venus flyby slowed it in its orbit, letting it fall closer to the Sun. An earlier design would have used Jupiter instead."
+    }
+  ],
+  "tags": [
+    "sun",
+    "spacecraft",
+    "speed",
+    "nasa"
+  ],
+  "source": {
+    "label": "Wikipedia: Parker Solar Probe",
+    "url": "https://en.wikipedia.org/wiki/Parker_Solar_Probe"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

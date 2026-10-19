@@ -1,0 +1,92 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-v838-light-echo",
+  "field": "space",
+  "title": "After a star flared in 2002, its echo of light seemed to spread faster than light",
+  "emoji": "💫",
+  "cover": {
+    "src": "light-echo.jpg",
+    "alt": "A glowing shell of red and brown dust with swirls and eddies, surrounding a bright red star among blue-white stars, photographed by Hubble.",
+    "credit": "ESA/Hubble · CC BY 4.0"
+  },
+  "body": "In early 2002 the star **V838 Monocerotis**, about 19,000 light-years away, suddenly brightened to hundreds of thousands of times the Sun’s luminosity. Its flash lit up clouds of dust around it, and light that bounced off the dust took a longer path to us than light that came straight. So for years afterwards we saw the flash reach dust further and further from the star: a growing light echo. The rings seem to spread faster than light, but nothing is moving that fast; we are seeing different parts of the cloud light up in turn.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "light-echo.mp4",
+      "poster": "light-echo.jpg",
+      "alt": "Blended sequence of Hubble images: a small glowing ring around a red star swells into a huge shell of swirling red and brown dust that fills the frame.",
+      "caption": "Eight Hubble images of V838 Monocerotis, taken over the years after its 2002 outburst, blended into one sped-up sequence: the echo sweeps outward through the dust.",
+      "credit": "ESA/Hubble · CC BY 4.0 · excerpt",
+      "href": "https://esahubble.org/videos/heic0617a/",
+      "music": "“Space X-plorers” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "How a light echo works",
+      "steps": [
+        {
+          "icon": "💥",
+          "label": "The star suddenly flares, in 2002"
+        },
+        {
+          "icon": "🌫️",
+          "label": "Its light reaches dust around it"
+        },
+        {
+          "icon": "↪️",
+          "label": "Reflected light takes a longer path to us"
+        },
+        {
+          "icon": "👁️",
+          "label": "Dust further out seems to light up later"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "How far away is it?",
+      "left": {
+        "label": "First estimate",
+        "text": "1,900 to 2,900 light-years, from a wrong reading of the light echo"
+      },
+      "right": {
+        "label": "Now",
+        "text": "About 19,000 light-years, several times further"
+      }
+    },
+    {
+      "type": "reveal",
+      "prompt": "What made V838 Monocerotis flare up?",
+      "answer": "Possibly two stars merging",
+      "detail": "Outbursts like this one, called luminous red novae, are thought to be caused by stellar mergers, but the reason for this one is still uncertain."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does the light echo seem to spread faster than light?",
+      "options": [
+        "Dust further out is lit later",
+        "The blast pushed the dust outward",
+        "Hubble’s camera sped it up",
+        "Light speeds up inside dust"
+      ],
+      "answer": 0,
+      "explanation": "The dust isn’t moving. Light reflected from dust further from the star travels a longer route, so that dust appears to light up later."
+    }
+  ],
+  "tags": [
+    "stars",
+    "light",
+    "hubble",
+    "illusions"
+  ],
+  "source": {
+    "label": "Wikipedia: V838 Monocerotis",
+    "url": "https://en.wikipedia.org/wiki/V838_Monocerotis"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
