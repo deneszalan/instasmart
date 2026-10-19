@@ -1,0 +1,86 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-saccades-eyes-jump",
+  "field": "body",
+  "title": "Your eyes don’t glide over a scene: they jump two or three times a second",
+  "emoji": "👁️",
+  "cover": {
+    "src": "eye-saccades.jpg",
+    "alt": "Black-and-white infrared close-up of a single eye: grey iris, round black pupil, two small white reflections and the lashes above.",
+    "credit": "InkassoSchroeder · CC BY-SA 4.0"
+  },
+  "body": "When you look at a picture or read, your eyes don’t sweep smoothly. They make quick jumps called **saccades**, from the French for ‘jerk’, stopping on one spot after another, two or three times a second. The reason is the **fovea**, the sharp-seeing centre of the retina: it covers only about 1–2 degrees of your view, so your eyes keep aiming it at new details, and your brain stitches the glimpses into one steady scene.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "eye-saccades.mp4",
+      "poster": "eye-saccades.jpg",
+      "alt": "Black-and-white infrared close-up of an eye. The iris and pupil hold still, then flick to a new position, again and again, while the pupil slowly changes size.",
+      "caption": "An infrared camera in a lab in Tübingen, Germany, films one eye as a volunteer looks freely at a picture. The eye holds still, jumps and holds still again, while the pupil widens and narrows.",
+      "credit": "InkassoSchroeder · CC BY-SA 4.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:This_shows_a_recording_of_the_eye_movements_of_a_participant_looking_freely_at_a_picture.webm",
+      "music": "“Sneaky Adventure” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "reveal",
+      "prompt": "Stand at a mirror and look from one of your eyes to the other. What do you see?",
+      "answer": "Your eyes never seem to move",
+      "detail": "A friend watching would see them jump. During each saccade your brain hides the movement, an effect called saccadic masking, and even hides that anything was hidden."
+    },
+    {
+      "type": "stat",
+      "value": "20–30 ms",
+      "label": "how long a typical saccade lasts while you read",
+      "text": "Bigger jumps take up to about 200 ms. Reacting to something unexpected takes around 200 ms before the eyes even start to move."
+    },
+    {
+      "type": "chart",
+      "heading": "How fast a saccade can turn the eye, at its peak",
+      "items": [
+        {
+          "label": "Human, big saccade",
+          "value": 700,
+          "emphasis": true
+        },
+        {
+          "label": "Some monkeys",
+          "value": 1000
+        }
+      ],
+      "unit": "°/s",
+      "note": "Peak speeds for large saccades. Blinks can be faster still."
+    },
+    {
+      "type": "text",
+      "heading": "Spotted with a mirror",
+      "text": "The word seems to have been coined in the 1870s by the French eye doctor Émile Javal. He put a mirror beside a page to watch people reading silently, and saw that their eyes moved in a string of separate jumps, not one smooth sweep."
+    },
+    {
+      "type": "quiz",
+      "question": "Why do your eyes keep jumping from spot to spot?",
+      "options": [
+        "Only a tiny patch sees sharply",
+        "To stop the eyes drying out",
+        "To rest the eye muscles",
+        "To keep the pupils clean"
+      ],
+      "answer": 0,
+      "explanation": "The fovea, the retina’s sharp centre, covers only about 1–2 degrees of view, so the eyes aim it at one detail after another."
+    }
+  ],
+  "tags": [
+    "eyes",
+    "vision",
+    "saccades",
+    "brain"
+  ],
+  "source": {
+    "label": "Wikipedia: Saccade",
+    "url": "https://en.wikipedia.org/wiki/Saccade"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-19"
+}

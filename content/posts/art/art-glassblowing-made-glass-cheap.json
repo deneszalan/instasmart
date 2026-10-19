@@ -1,0 +1,107 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-glassblowing-made-glass-cheap",
+  "field": "art",
+  "title": "Glassblowing made Roman glass so cheap a cup could cost one copper coin",
+  "emoji": "🍷",
+  "cover": {
+    "src": "glass-bubble.jpg",
+    "alt": "A glowing orange gather of molten glass hangs from the end of a dark blowpipe, just lowered into a round mould.",
+    "credit": "Bentaylor13413 · CC BY-SA 4.0"
+  },
+  "body": "Early Roman glass was mostly cast, slow work that left thick-walled vessels needing a lot of finishing, so glass stayed an **expensive, high-status** material. Blowing a bubble of molten glass on the end of a pipe changed that. The walls could be much thinner, so each vessel took less glass, and the work was quicker, with far less finishing. By the mid-1st century AD, the geographer Strabo noted that a glass drinking cup could be bought for **a copper coin**.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "glass-bubble.mp4",
+      "poster": "glass-bubble.jpg",
+      "alt": "A glowing gather of molten glass on the end of a blowpipe is lowered into a dark mould and slowly swells into a large round orange bubble.",
+      "caption": "At a glassworks in Eswatini, a gather of molten glass on a blowpipe is lowered into a mould and blown. It swells into a glowing bubble that will become the bowl of a wine glass.",
+      "credit": "Bentaylor13413 · CC BY-SA 4.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Creating_a_wine_glass_with_a_gathered_stem.webm",
+      "music": "“Truth in the Stones” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "Why blown glass got cheap",
+      "steps": [
+        {
+          "icon": "🫧",
+          "label": "Blow a bubble instead of casting"
+        },
+        {
+          "icon": "📏",
+          "label": "Thinner walls need less glass"
+        },
+        {
+          "icon": "⏱️",
+          "label": "Quicker work, far less finishing"
+        },
+        {
+          "icon": "🪙",
+          "label": "Glass within reach of far more people"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "From rare to everywhere",
+      "text": "At the start of the 1st century AD there was still no Latin word for glass. By the late 1st century, blowing had largely replaced the older methods, and by the early 2nd century glass objects turned up in homes of every kind across the Roman world."
+    },
+    {
+      "type": "timeline",
+      "heading": "Rome’s glass boom",
+      "events": [
+        {
+          "when": "Late 1st c. BC",
+          "text": "Italian workshops make blown vessels beside cast ones"
+        },
+        {
+          "when": "c. AD 25–50",
+          "text": "Glass blown into moulds appears"
+        },
+        {
+          "when": "Mid-1st c. AD",
+          "text": "Strabo: a glass cup for a copper coin"
+        },
+        {
+          "when": "Early 2nd c. AD",
+          "text": "Roman glassmaking reaches its peak"
+        }
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "Cheap cups weren’t the only new thing in Rome’s glass boom. What else did glassmakers make for the first time?",
+      "answer": "Window glass, and glass tiles for mosaics",
+      "detail": "As furnaces improved enough to melt glass fully, the first glass mosaic tiles and the first window glass followed."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did blown glass cost less than the cast glass before it?",
+      "options": [
+        "Thinner walls used less glass",
+        "It was made from cheaper sand",
+        "It needed no furnace at all",
+        "It was shipped in from China"
+      ],
+      "answer": 0,
+      "explanation": "Blown vessels had much thinner walls, so each took less glass, and blowing was quicker, with far less finishing to do."
+    }
+  ],
+  "tags": [
+    "glass",
+    "glassblowing",
+    "romans",
+    "craft"
+  ],
+  "source": {
+    "label": "Wikipedia: Roman glass",
+    "url": "https://en.wikipedia.org/wiki/Roman_glass"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-19"
+}
