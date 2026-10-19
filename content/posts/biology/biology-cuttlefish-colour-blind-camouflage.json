@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-cuttlefish-colour-blind-camouflage",
+  "field": "biology",
+  "title": "Cuttlefish can't see colour, yet they repaint their skin to match the seabed",
+  "emoji": "🦑",
+  "cover": {
+    "src": "cuttlefish-colour-change.jpg",
+    "alt": "A dark, mottled cuttlefish rests on pale sand scattered with bits of weed.",
+    "credit": "Kaeptn*haddock · CC BY 3.0"
+  },
+  "body": "A cuttlefish's skin holds up to **200 colour cells per square millimetre**. Each is an elastic sac of pigment with hundreds of tiny muscles around it, controlled by nerves, so the animal can pull the sacs open or let them shut and change its pattern within about a second. Deeper layers of reflective cells add sheen and brightness. How an animal that cannot see colour matches the colour, contrast and texture of the seabed is not fully understood; one idea is that its W-shaped pupil lets it pick up colour from the way different wavelengths come into focus.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "cuttlefish-colour-change.mp4",
+      "poster": "cuttlefish-colour-change.jpg",
+      "alt": "A dark, mottled cuttlefish on the sand moves off and, within a few seconds, turns pale green-grey with white speckles as it glides over sand and weed.",
+      "caption": "Off Sardinia, a cuttlefish starts out dark and blotchy, then turns pale and speckled within seconds as it glides on over sand and weed.",
+      "credit": "Kaeptn*haddock · CC BY 3.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Sepia_changes_color_vq8aq5.ogv",
+      "music": "“Doobly Doo” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "list",
+      "heading": "Three layers of colour",
+      "style": "numbers",
+      "items": [
+        "Chromatophores: sacs of yellow, red and brown-black pigment",
+        "Iridophores: reflective cells just below them",
+        "Leucophores: white cells deeper down that brighten pale areas"
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "Cuttlefish can't see colour. What can they see that we can't?",
+      "answer": "Polarised light",
+      "detail": "Their sharp polarisation vision may give them another way to pick up contrast. Muscles in the skin can also raise bumps and spikes to copy the texture of rocks or weed."
+    },
+    {
+      "type": "quiz",
+      "question": "How fast can a cuttlefish change its colour pattern?",
+      "options": ["Within about a second", "In about a minute", "Over an hour", "Only overnight"],
+      "answer": 0,
+      "explanation": "The pigment sacs are pulled open by muscles that nerves control directly, so a change can happen within a second."
+    }
+  ],
+  "tags": ["cuttlefish", "cephalopods", "camouflage", "ocean"],
+  "source": { "label": "Wikipedia: Cuttlefish", "url": "https://en.wikipedia.org/wiki/Cuttlefish" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}
