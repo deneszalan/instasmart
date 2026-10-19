@@ -1,0 +1,90 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-deep-impact-comet-talcum",
+  "field": "space",
+  "title": "In 2005 NASA crashed a probe into a comet and found it full of talcum-fine dust",
+  "emoji": "☄️",
+  "cover": {
+    "src": "impactor-view.jpg",
+    "alt": "Black-and-white spacecraft image of comet Tempel 1’s nucleus, a small lumpy grey body against black space.",
+    "credit": "NASA/JPL-Caltech/UMD · Public domain"
+  },
+  "body": "Deep Impact was a two-part spacecraft. A day before arrival it released a 372 kg impactor, which used its own camera to steer itself into the path of comet **Tempel 1** and hit it at about 10.2 km/s on 4 July 2005, with the energy of 4.8 tonnes of TNT. Minutes later the main spacecraft flew past about 500 km away and photographed the blast. The plume showed that the comet had more dust and less ice than expected, and that the dust was as fine as **talcum powder rather than sand**. The bright dust cloud hid the new crater; in 2011 another probe, Stardust, photographed it: about 150 m wide.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "impactor-view.mp4",
+      "poster": "impactor-view.jpg",
+      "alt": "Black-and-white sequence from the impactor’s camera: a speck grows into a lumpy comet nucleus, then the view zooms closer and closer over its cratered, ridged surface until the last frames blur just before the impact.",
+      "caption": "4 July 2005: the impactor’s own camera on its final approach to comet Tempel 1, from a distant speck to close-up ridges and craters, ending moments before it hit.",
+      "credit": "NASA/JPL-Caltech/UMD · Public domain · excerpt",
+      "href": "https://science.nasa.gov/photojournal/one-way-trip-to-tempel/",
+      "music": "“Constance” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "reveal",
+      "prompt": "The impactor carried a 113 kg chunk of pure copper. Why copper?",
+      "answer": "Comets aren’t expected to contain it",
+      "detail": "So scientists could ignore copper in their measurements of the debris. It was also cheaper than explosives. Copper made up 49% of the impactor’s mass."
+    },
+    {
+      "type": "flow",
+      "heading": "How Deep Impact hit a comet",
+      "steps": [
+        {
+          "icon": "🚀",
+          "label": "One spacecraft carries the impactor"
+        },
+        {
+          "icon": "✂️",
+          "label": "A day out, the impactor is released"
+        },
+        {
+          "icon": "📷",
+          "label": "Its camera steers it into the comet"
+        },
+        {
+          "icon": "💥",
+          "label": "Impact at about 10 km per second"
+        },
+        {
+          "icon": "🛰️",
+          "label": "The flyby craft snaps it from 500 km"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "4.8 tonnes",
+      "label": "of TNT: the energy of the impact",
+      "text": "There were no explosives on board: all of that energy came from the speed of the 372 kg probe."
+    },
+    {
+      "type": "quiz",
+      "question": "Why couldn’t Deep Impact’s flyby spacecraft see the crater it made?",
+      "options": [
+        "A cloud of fine dust hid it",
+        "The comet spun it out of view",
+        "Its camera was not working",
+        "The crater filled with ice"
+      ],
+      "answer": 0,
+      "explanation": "The bright dust thrown up by the impact hid the crater. NASA’s Stardust probe photographed it in 2011: it is about 150 m across."
+    }
+  ],
+  "tags": [
+    "comets",
+    "deepimpact",
+    "impact",
+    "nasa"
+  ],
+  "source": {
+    "label": "Wikipedia: Deep Impact (spacecraft)",
+    "url": "https://en.wikipedia.org/wiki/Deep_Impact_(spacecraft)"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-19"
+}

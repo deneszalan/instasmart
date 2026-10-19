@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-mail-caught-on-the-fly",
+  "field": "history",
+  "title": "US mail trains snatched mailbags from trackside posts without stopping",
+  "emoji": "🚂",
+  "cover": {
+    "src": "mail-catch.jpg",
+    "alt": "Black-and-white film still from 1903: a mailbag hangs from the arm of a white trackside post while a steam train approaches in the distance.",
+    "credit": "American Mutoscope & Biograph · Public domain"
+  },
+  "body": "From the 1860s, many American passenger trains carried a **railway post office**: a car where clerks sorted letters while the train was moving. At small towns where the train did not stop, a local postal worker hung a pouch of outgoing mail on a trackside crane. As the train passed, often at 70 mph or more, a clerk swung out a hooked catcher arm that snagged the pouch, and at the same moment kicked a pouch of mail for the town out of the door.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "mail-catch.mp4",
+      "poster": "mail-catch.jpg",
+      "alt": "Black-and-white film: a mailbag hangs from a white trackside post as a steam locomotive approaches and passes close by; as the last car goes past, the bag is gone and the empty arm springs up.",
+      "caption": "1903: a steam train passes a mail crane. As the last car goes by, the bag is snatched away and the crane’s empty arm springs up.",
+      "credit": "American Mutoscope & Biograph · Public domain · excerpt",
+      "href": "https://archive.org/details/CEP00089",
+      "music": "“Maple Leaf Rag” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "Catching the mail on the fly",
+      "steps": [
+        { "icon": "📮", "label": "A pouch is hung on a trackside crane" },
+        { "icon": "🚂", "label": "The train passes, often at 70 mph or more" },
+        { "icon": "🪝", "label": "A catcher arm on the car snags the pouch" },
+        { "icon": "👢", "label": "The clerk kicks the outgoing pouch out" }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "9,000+",
+      "label": "train routes with a railway post office at their height",
+      "text": "Together they covered more than 200,000 route miles in North America, and as many as a dozen clerks could work in one car."
+    },
+    {
+      "type": "estimate",
+      "question": "Clerks sat regular sorting tests. What accuracy score could still earn a clerk a warning?",
+      "min": 50,
+      "max": 100,
+      "step": 1,
+      "answer": 96,
+      "unit": "%",
+      "explanation": "96%. Clerks had to know every post office, junction and connection on their route, and the Railway Mail Service expected near-perfect sorting."
+    },
+    {
+      "type": "timeline",
+      "heading": "Post offices on rails",
+      "events": [
+        { "when": "1862", "text": "First US railway post office, in converted baggage cars" },
+        { "when": "1864", "text": "First permanent route: Chicago to Clinton, Iowa" },
+        { "when": "1867", "text": "First US patent for a mail-catching hook" },
+        { "when": "1977", "text": "The last one on rails, New York to Washington, ends" }
+      ]
+    }
+  ],
+  "tags": ["mail", "railways", "trains", "1900s"],
+  "source": {
+    "label": "Wikipedia: Railway post office",
+    "url": "https://en.wikipedia.org/wiki/Railway_post_office"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-19"
+}

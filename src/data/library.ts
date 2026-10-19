@@ -1,6 +1,6 @@
 import type { FieldId, KnowledgeCard } from '../types';
 
-// Every post is a JSON file in content/posts/<field>/<id>.json; images live in content/media/<id>/.
+// Every post is a JSON file in content/posts/<field>/<id>.json; images and clips live in content/media/<id>/.
 const postFiles = import.meta.glob<KnowledgeCard>('../../content/posts/*/*.json', { eager: true, import: 'default' });
 const mediaFiles = import.meta.glob<string>('../../content/media/*/*', { eager: true, query: '?url', import: 'default' });
 
@@ -13,7 +13,13 @@ function resolve(post: KnowledgeCard): KnowledgeCard {
   return {
     ...post,
     cover: post.cover && { ...post.cover, src: resolveImage(post.id, post.cover.src) },
-    slides: post.slides?.map((s) => (s.type === 'image' ? { ...s, src: resolveImage(post.id, s.src) } : s)),
+    slides: post.slides?.map((s) =>
+      s.type === 'image'
+        ? { ...s, src: resolveImage(post.id, s.src) }
+        : s.type === 'video'
+          ? { ...s, src: resolveImage(post.id, s.src), poster: resolveImage(post.id, s.poster) }
+          : s,
+    ),
   };
 }
 

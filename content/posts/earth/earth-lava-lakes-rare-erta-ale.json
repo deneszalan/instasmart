@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-lava-lakes-rare-erta-ale",
+  "field": "earth",
+  "title": "Lakes of molten lava are so rare that only eight were reported in 2019",
+  "emoji": "🔥",
+  "body": "Erta Ale, whose name means “smoking mountain” in the local Afar language, rises 613 m from Ethiopia’s Danakil Depression, a region below sea level where three tectonic plates are splitting apart. Its summit holds one or sometimes two active lakes of molten rock that occasionally overflow, and one has been reported since at least 1906, the longest-existing lava lake known. Volcanoes with lava lakes are rare: in 2019 only **eight** were reported anywhere in the world. Watch the lake’s skin in the clip: it cools into a dark crust that keeps tearing open along glowing cracks.",
+  "cover": {
+    "src": "erta-ale-lake.jpg",
+    "alt": "A lake of molten lava at night, its dark crust laced with glowing orange cracks under red-lit fumes",
+    "credit": "Alton Chang · CC BY 3.0"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "erta-ale-lake.mp4",
+      "poster": "erta-ale-lake.jpg",
+      "alt": "At night, a lake of molten lava inside a crater: a dark crust laced with bright orange cracks, a glowing spot spattering lava near the far shore, and red-lit fumes drifting overhead.",
+      "caption": "Erta Ale’s summit lava lake at night: the cooled crust keeps splitting along glowing cracks while a vent spatters lava near the far edge.",
+      "credit": "Alton Chang · CC BY 3.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Erta_Ale_Volcano,_Ethiopia.webm",
+      "music": "“Ancient Rite” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "pictogram",
+      "heading": "Erta Ale is one of only eight volcanoes with a lava lake reported in 2019",
+      "icon": "🌋",
+      "total": 8,
+      "count": 1
+    },
+    {
+      "type": "stat",
+      "value": "1906",
+      "label": "the earliest report of Erta Ale’s lava lake",
+      "text": "That makes it the longest-existing lava lake known. The summit sometimes holds two lakes at once, and they occasionally overflow down the volcano’s south side."
+    },
+    {
+      "type": "reveal",
+      "prompt": "Erta Ale stands where something unusual is happening to the ground beneath it. What?",
+      "answer": "Three tectonic plates are splitting apart",
+      "detail": "It sits at the Afar triple junction, near the southern end of the Red Sea Rift, in a depression that lies below sea level."
+    },
+    {
+      "type": "quiz",
+      "question": "What does the name Erta Ale mean in the local Afar language?",
+      "options": ["Smoking mountain", "Fire lake", "Red hill", "Salt mountain"],
+      "answer": 0,
+      "explanation": "Erta Ale means “smoking mountain”, a fitting name for a volcano whose summit lava lake is wreathed in fumes, as in the clip."
+    }
+  ],
+  "tags": ["volcanoes", "lava", "ethiopia", "geology"],
+  "source": { "label": "Wikipedia: Erta Ale", "url": "https://en.wikipedia.org/wiki/Erta_Ale" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

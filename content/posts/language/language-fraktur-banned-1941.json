@@ -1,0 +1,102 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "language-fraktur-banned-1941",
+  "field": "language",
+  "title": "In 1941 the Nazis suddenly banned Fraktur, the lettering they had hailed as German",
+  "emoji": "✒️",
+  "cover": {
+    "src": "fraktur-pen.jpg",
+    "alt": "A hand holding a broad-edged pen beside two freshly written Fraktur capital letters, A and B, in thick, angular black strokes on white paper.",
+    "credit": "Ruben Amadori (Raise Lab) · CC BY 3.0"
+  },
+  "body": "Fraktur, an angular blackletter script, had been Germany’s official typeface since the German Empire was founded in 1871, while Roman-style Antiqua letters were normally kept for Latin texts. In 1911 the Reichstag narrowly rejected a switch to Antiqua, 85 votes to 82, and in the early Nazi years Fraktur was promoted as the true German script. Then, on 3 January 1941, an edict signed by Martin Bormann banned blackletter type, asserting that it was really made of ‘Schwabacher Jewish letters’. One likely motive was that Antiqua was easier to read in the countries Germany had occupied.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "fraktur-pen.mp4",
+      "poster": "fraktur-pen.jpg",
+      "alt": "Close-up of a hand writing Fraktur capital letters on white paper with a broad-edged pen, building each letter from thick, angular black strokes, one letter after another.",
+      "caption": "Writing Fraktur capitals with a broad-edged pen: every letter is built from thick, angular strokes, and the scene dissolves from one letter to the next.",
+      "credit": "Ruben Amadori (Raise Lab) · CC BY 3.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Calligraphy_Alphabet_Tutorial_-_Fraktur_Upper_Case_Letters_for_Beginners.webm",
+      "music": "“Sinfonia Number 5” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "timeline",
+      "heading": "Fraktur’s fall",
+      "events": [
+        {
+          "when": "1871",
+          "text": "Fraktur is the new German Empire’s official typeface"
+        },
+        {
+          "when": "1911",
+          "text": "The Reichstag narrowly votes to keep it"
+        },
+        {
+          "when": "1941",
+          "text": "Bormann’s edict bans blackletter type"
+        },
+        {
+          "when": "1941–42",
+          "text": "Schools may teach only ‘Normalschrift’"
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "heading": "1911 Reichstag vote on making Antiqua official",
+      "items": [
+        {
+          "label": "Against",
+          "value": 85,
+          "emphasis": true
+        },
+        {
+          "label": "For",
+          "value": 82
+        }
+      ],
+      "unit": "votes",
+      "note": "The proposal would also have dropped Kurrent handwriting from schools."
+    },
+    {
+      "type": "text",
+      "heading": "Handwriting went too",
+      "text": "A second memo banned Kurrent handwriting, including the Sütterlin script introduced in the 1920s. Some German states taught Sütterlin again after 1945, but it could not compete with Latin cursive, so most Germans now struggle to read their grandparents’ handwriting."
+    },
+    {
+      "type": "reveal",
+      "prompt": "Why might Nazi leaders have suddenly wanted Roman letters in 1941?",
+      "answer": "They were easier to read in occupied Europe",
+      "detail": "Antiqua matched the lettering of other European languages, and the push for the change probably came from Joseph Goebbels’s Propaganda Ministry."
+    },
+    {
+      "type": "quiz",
+      "question": "Where are you most likely to meet Fraktur in Germany today?",
+      "options": [
+        "Pub signs and beer labels",
+        "Road signs",
+        "Passports",
+        "School textbooks"
+      ],
+      "answer": 0,
+      "explanation": "Fraktur lives on mostly where advertisers want an old-fashioned, rustic feel, such as pub signs and beer brands."
+    }
+  ],
+  "tags": [
+    "fraktur",
+    "typography",
+    "german",
+    "scripts"
+  ],
+  "source": {
+    "label": "Wikipedia: Antiqua–Fraktur dispute",
+    "url": "https://en.wikipedia.org/wiki/Antiqua%E2%80%93Fraktur_dispute"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

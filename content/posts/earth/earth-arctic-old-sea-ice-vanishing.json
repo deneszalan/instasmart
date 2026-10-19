@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-arctic-old-sea-ice-vanishing",
+  "field": "earth",
+  "title": "The Arctic’s oldest sea ice shrank from a quarter of the pack to 7% in 25 years",
+  "emoji": "🧊",
+  "body": "Sea ice that survives the summer melt keeps thickening year after year: multi-year ice can grow [up to 4 m thick](https://svs.gsfc.nasa.gov/4750/), while ice from a single winter is generally at most 2 m. So as old ice disappears, the pack gets thinner and easier to melt. In 1988, ice at least **4 years old** made up 26% of the Arctic’s sea ice; by 2013 it was only 7%. A 2018 study found the ice had thinned by about 2 metres, or 66%, over six decades.",
+  "cover": {
+    "src": "sea-ice-age.jpg",
+    "alt": "A globe seen from above the North Pole in 1984, with a large white mass of old sea ice between Alaska, Canada and Greenland",
+    "credit": "NASA · Public domain"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "sea-ice-age.mp4",
+      "poster": "sea-ice-age.jpg",
+      "alt": "Animated globe over the Arctic, 1984 to 2019: the sea ice pulses with the seasons, and the bright white ice that is four or more years old shrinks to a thin band north of Greenland, leaving mostly younger, darker ice.",
+      "caption": "Sea ice by age, 1984 to 2019, sped up 7 times. White is ice four or more years old; darker shades are younger. The white core dwindles to a sliver by Greenland.",
+      "credit": "NASA Scientific Visualization Studio · Public domain · excerpt, sped up",
+      "href": "https://svs.gsfc.nasa.gov/4750/",
+      "music": "“Colorless Aura” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "scale",
+      "heading": "Ice 4+ years old at the September minimum",
+      "items": [
+        { "label": "2019", "value": 53 },
+        { "label": "1984", "value": 2687 }
+      ],
+      "unit": "thousand km²",
+      "note": "Week 38 of each year, from NASA’s sea ice age data"
+    },
+    {
+      "type": "stat",
+      "value": "66%",
+      "label": "thinner over six decades",
+      "text": "A 2018 study found Arctic sea ice had lost about 2.0 m of thickness, as permanent ice gave way to ice that comes and goes with the seasons."
+    },
+    {
+      "type": "flow",
+      "heading": "Why losing ice speeds up the loss",
+      "steps": [
+        { "icon": "🧊", "label": "Bright ice melts" },
+        { "icon": "🌊", "label": "Dark ocean is exposed" },
+        { "icon": "☀️", "label": "The water absorbs more sunlight" },
+        { "icon": "🌡️", "label": "Warmer water melts more ice" }
+      ],
+      "cycle": true
+    },
+    {
+      "type": "quiz",
+      "question": "In which year did Arctic sea ice reach its record-low summer minimum, about 3.4 million km²?",
+      "options": ["1998", "2007", "2012", "2019"],
+      "answer": 2,
+      "explanation": "The record lowest minimum, 3,410,000 km², came in September 2012."
+    }
+  ],
+  "tags": ["arctic", "ice", "climate", "satellites"],
+  "source": { "label": "Wikipedia: Arctic sea ice decline", "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

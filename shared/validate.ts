@@ -1,5 +1,6 @@
 import { FIELD_IDS } from './fields.ts';
-import { formatIssues, localMedia, MEDIA_EXTENSIONS, Post } from './schema.ts';
+import { formatIssues, localMedia, MEDIA_EXTENSIONS, Post, VIDEO_EXTENSIONS } from './schema.ts';
+import { readMp4, videoProblems } from './video.ts';
 
 /** A file in the repository, addressed by its repo-relative path. */
 export interface ContentFile {
@@ -67,15 +68,18 @@ export function svgProblems(svg: string): string[] {
   return problems;
 }
 
-/** Check one image file: allowed type, matching content, size limits and SVG safety. */
+const ALLOWED_EXTENSIONS: readonly string[] = [...MEDIA_EXTENSIONS, ...VIDEO_EXTENSIONS];
+
+/** Check one media file: allowed type, matching content, size limits, SVG safety and playable video. */
 export function mediaProblems(name: string, bytes: Uint8Array): string[] {
   const ext = name.split('.').pop()?.toLowerCase() ?? '';
-  if (!(MEDIA_EXTENSIONS as readonly string[]).includes(ext)) {
-    return [`unsupported file type ".${ext}" (allowed: ${MEDIA_EXTENSIONS.join(', ')})`];
+  if (!ALLOWED_EXTENSIONS.includes(ext)) {
+    return [`unsupported file type ".${ext}" (allowed: ${ALLOWED_EXTENSIONS.join(', ')})`];
   }
-  if (name !== name.toLowerCase() || !/^[a-z0-9][a-z0-9_-]*\.[a-z]+$/.test(name)) {
+  if (name !== name.toLowerCase() || !/^[a-z0-9][a-z0-9_-]*\.[a-z0-9]+$/.test(name)) {
     return ['file names must be lowercase letters, digits, "-" or "_", e.g. "orbit-diagram.svg"'];
   }
+  if (ext === 'mp4') return videoProblems(bytes);
   if (ext === 'svg') {
     if (bytes.length > MAX_SVG_BYTES) return [`SVG is ${bytes.length} bytes; the limit is ${MAX_SVG_BYTES}`];
     return svgProblems(new TextDecoder().decode(bytes));
@@ -87,6 +91,25 @@ export function mediaProblems(name: string, bytes: Uint8Array): string[] {
   const expected = ext === 'jpeg' ? 'jpg' : ext;
   if (actual !== expected) return [`the file content is ${actual ? actual.toUpperCase() : 'not a recognised image'}, but the name says .${ext}`];
   return [];
+}
+
+/** Every soundtrack must be credited, and every credited soundtrack must exist. */
+function soundtrackProblems(post: Post, mediaBytes: Map<string, Uint8Array>): string[] {
+  const problems: string[] = [];
+  (post.slides ?? []).forEach((slide, i) => {
+    if (slide.type !== 'video') return;
+    const bytes = mediaBytes.get(mediaPath(post.id, slide.src));
+    if (!bytes) return;
+    let hasAudio: boolean;
+    try {
+      hasAudio = readMp4(bytes).audioCodec !== null;
+    } catch {
+      return; // The file's own problems are reported with the file.
+    }
+    if (hasAudio && !slide.music) problems.push(`slides[${i}]: "${slide.src}" has a soundtrack, so credit it in "music" (or remove the audio)`);
+    if (!hasAudio && slide.music) problems.push(`slides[${i}]: "music" is credited but "${slide.src}" has no audio track`);
+  });
+  return problems;
 }
 
 export interface ParsedPost {
@@ -120,6 +143,7 @@ export function validateContent(files: ContentFile[]): { posts: Post[]; problems
   const posts: Post[] = [];
   const media = new Map<string, Set<string>>();
   const seenIds = new Map<string, string>();
+  const mediaBytes = new Map<string, Uint8Array>();
 
   for (const file of files) {
     if (file.path.startsWith(`${MEDIA_DIR}/`)) {
@@ -131,6 +155,7 @@ export function validateContent(files: ContentFile[]): { posts: Post[]; problems
       const [postId, name] = parts;
       if (!media.has(postId)) media.set(postId, new Set());
       media.get(postId)!.add(name);
+      mediaBytes.set(file.path, file.bytes);
       for (const message of mediaProblems(name, file.bytes)) problems.push({ file: file.path, message });
     }
   }
@@ -158,9 +183,10 @@ export function validateContent(files: ContentFile[]): { posts: Post[]; problems
     const available = media.get(post.id) ?? new Set<string>();
     for (const name of localMedia(post)) {
       if (!available.has(name)) {
-        problems.push({ file: file.path, message: `image "${name}" is missing: add it at ${mediaPath(post.id, name)}` });
+        problems.push({ file: file.path, message: `file "${name}" is missing: add it at ${mediaPath(post.id, name)}` });
       }
     }
+    for (const message of soundtrackProblems(post, mediaBytes)) problems.push({ file: file.path, message });
     if (own.length === 0) posts.push(post);
   }
 
@@ -173,7 +199,7 @@ export function validateContent(files: ContentFile[]): { posts: Post[]; problems
     if (!owner) continue;
     const used = new Set(localMedia(owner));
     for (const name of names) {
-      if (!used.has(name)) problems.push({ file: mediaPath(postId, name), message: 'this image is not used by its post; remove it or reference it' });
+      if (!used.has(name)) problems.push({ file: mediaPath(postId, name), message: 'this file is not used by its post; remove it or reference it' });
     }
   }
 

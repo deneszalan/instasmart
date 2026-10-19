@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-crawler-transporter-slow-giant",
+  "field": "engineering",
+  "title": "NASA has moved its rockets to the pad on the same two crawlers since 1965",
+  "emoji": "🚜",
+  "cover": {
+    "src": "crawler-roll.jpg",
+    "alt": "Side view of a huge grey tracked vehicle with a flat steel deck, rolling across a gravel road under a cloudy sky.",
+    "credit": "NASA/Glenn Benson · Public domain"
+  },
+  "body": "Kennedy Space Center's two **crawler-transporters** were built by the Marion Power Shovel Company for $14 million each, and on completion were the largest self-powered land vehicles in the world. Each weighs about 2,721 tonnes and rides on eight tracks, two at each corner, with 57 shoes per track and each shoe weighing about a tonne. Loaded, a crawler tops out at 1 mph (1.6 km/h). The same pair carried Saturn V rockets for Apollo, Space Shuttles from 1981 to 2011, and now NASA's Space Launch System.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "crawler-roll.mp4",
+      "poster": "crawler-roll.jpg",
+      "alt": "A giant grey tracked vehicle with a flat steel deck rolls slowly across gravel, raising a haze of dust, then a low view across the gravel as it passes.",
+      "caption": "Kennedy Space Center, 2022: crawler-transporter 2, carrying nothing, rolls towards the Vehicle Assembly Building to fetch the Artemis I rocket.",
+      "credit": "NASA/Glenn Benson · Public domain · excerpt",
+      "href": "https://images.nasa.gov/details/KSC-20220601-MH-GEB01-0001-CT-2_Roll_to_VAB_Highbay_3-3305899",
+      "music": "“Magistar” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "estimate",
+      "question": "Loaded, it tops out at 1 mph. How many hours does a crawler take to carry a rocket to the pad?",
+      "min": 1,
+      "max": 24,
+      "step": 1,
+      "answer": 5,
+      "unit": "hours",
+      "explanation": "The average trip is about five hours, along crawlerways roughly 5.5 and 6.8 km long to pads 39A and 39B."
+    },
+    {
+      "type": "stat",
+      "value": "296 litres",
+      "label": "of diesel burned per kilometre (125.7 US gallons a mile)",
+      "text": "Two V16 diesel engines drive generators that power 16 electric traction motors. The fuel tanks hold about 19,000 litres."
+    },
+    {
+      "type": "text",
+      "heading": "Keeping a rocket upright",
+      "text": "The ramp up to the launch pad climbs at a 5% slope. As the crawler climbs it, a laser guidance and levelling system raises or lowers each side so the launch platform stays level to within 0.16 degrees, which is no more than about 30 cm out at the top of a Saturn V."
+    },
+    {
+      "type": "chart",
+      "heading": "Crawler-transporter 2's lifting capacity",
+      "items": [
+        { "label": "Before the upgrade", "value": 12 },
+        { "label": "After 2014–2016 upgrade", "value": 18, "emphasis": true }
+      ],
+      "unit": "million lb",
+      "note": "Upgraded to carry the heavier Space Launch System and its launch tower"
+    },
+    {
+      "type": "quiz",
+      "question": "Why is the crawlerway paved with river rock?",
+      "options": [
+        "It grips the tracks better",
+        "It drains rainwater fast",
+        "Low friction means fewer sparks",
+        "It was the cheapest stone nearby"
+      ],
+      "answer": 2,
+      "explanation": "The road is about 2 m deep and topped with Alabama and Tennessee river rock, chosen for its low friction to reduce the chance of sparks."
+    }
+  ],
+  "tags": ["nasa", "rockets", "vehicles"],
+  "source": {
+    "label": "Wikipedia: Crawler-transporter",
+    "url": "https://en.wikipedia.org/wiki/Crawler-transporter"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

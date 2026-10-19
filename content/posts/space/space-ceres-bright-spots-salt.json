@@ -1,0 +1,90 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-ceres-bright-spots-salt",
+  "field": "space",
+  "title": "The bright spots on the dwarf planet Ceres are salt left by water from deep below",
+  "emoji": "🧂",
+  "cover": {
+    "src": "occator-flyover.jpg",
+    "alt": "False-colour view over the curved, cratered horizon of the dwarf planet Ceres against black space.",
+    "credit": "NASA/JPL-Caltech/UCLA/MPS/DLR/IDA · Public domain"
+  },
+  "body": "When NASA’s Dawn spacecraft reached Ceres, the largest object in the asteroid belt, in 2015, it found dazzling white patches inside the 92 km wide Occator crater. They turned out to be deposits made **mostly of sodium carbonate**, a salt left behind when salty water reached the surface and evaporated. Measurements of Ceres’s gravity, made when Dawn dipped to less than 35 km above the surface, point to a reservoir of brine about 40 km down and hundreds of kilometres wide. The impact that dug Occator about 20 million years ago left fractures that could reach it, and some of the salts still contain water, so they must have arrived very recently: some bright areas are less than 2 million years old.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "occator-flyover.mp4",
+      "poster": "occator-flyover.jpg",
+      "alt": "False-colour flyover above the curved horizon of Ceres: cratered grey-brown ground glides past, then a large crater with brilliant white-blue patches on its floor rises into view and passes beneath.",
+      "caption": "Flyover built from Dawn images, in false colour: the cratered horizon of Ceres slides past until Occator crater and its brilliant salt deposits come into view.",
+      "credit": "NASA/JPL-Caltech/UCLA/MPS/DLR/IDA · Public domain · excerpt",
+      "href": "https://science.nasa.gov/photojournal/ceres-rotation-and-occator-crater-video/",
+      "music": "“Floating Cities” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "How salt got onto Ceres",
+      "steps": [
+        {
+          "icon": "💧",
+          "label": "A brine reservoir lies about 40 km down"
+        },
+        {
+          "icon": "☄️",
+          "label": "The impact that dug Occator cracks the crust"
+        },
+        {
+          "icon": "⬆️",
+          "label": "Salty water rises through the fractures"
+        },
+        {
+          "icon": "🧂",
+          "label": "It evaporates, leaving bright salt behind"
+        }
+      ]
+    },
+    {
+      "type": "estimate",
+      "question": "How far below the surface of Ceres does Dawn’s gravity data put the brine reservoir?",
+      "min": 0,
+      "max": 200,
+      "step": 1,
+      "answer": 40,
+      "unit": "km",
+      "explanation": "About 40 km (25 miles) deep, and hundreds of kilometres wide."
+    },
+    {
+      "type": "stat",
+      "value": "2 million years",
+      "label": "or less: the age of some of Occator’s bright salt deposits",
+      "text": "Young enough that some of the salts still hold water. The crater itself formed about 20 million years ago."
+    },
+    {
+      "type": "quiz",
+      "question": "What are Occator’s bright spots made of, mostly?",
+      "options": [
+        "Sodium carbonate, a salt",
+        "Fresh water ice",
+        "Exposed metal",
+        "Frozen carbon dioxide"
+      ],
+      "answer": 0,
+      "explanation": "Mostly sodium carbonate, with other salts such as ammonium chloride: what salty water leaves behind when it evaporates on an airless world."
+    }
+  ],
+  "tags": [
+    "ceres",
+    "dawn",
+    "salt",
+    "nasa"
+  ],
+  "source": {
+    "label": "NASA JPL: Mystery solved, bright areas on Ceres come from salty water below",
+    "url": "https://www.jpl.nasa.gov/news/mystery-solved-bright-areas-on-ceres-come-from-salty-water-below/"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-19"
+}

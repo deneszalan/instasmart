@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-tides-spin-amphidromic-points",
+  "field": "earth",
+  "title": "Ocean tides spin around spots where the sea barely rises or falls at all",
+  "emoji": "🌙",
+  "body": "On a planet with no continents, tides would be [vast bulges of water sweeping west](https://svs.gsfc.nasa.gov/4821/) with the Moon and Sun. On Earth, coastlines trap and reflect the tidal waves and the planet's spin turns them, so in each ocean basin the high water **rotates around a point** where the sea level hardly changes between high and low tide. These are called amphidromic points, and the farther a coast is from one, the bigger its tides tend to be. In the North Atlantic the tide circles anticlockwise, small in mid-ocean and large along the coasts of north-west Europe and Britain.",
+  "cover": {
+    "src": "tides.jpg",
+    "alt": "World map with grey continents and oceans shaded in light and dark blue patches, the pattern of the tides at one moment",
+    "credit": "NASA Scientific Visualization Studio · Public domain"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "tides.mp4",
+      "poster": "tides.jpg",
+      "alt": "World map with grey continents. Across the oceans, patches of high and low water in shades of blue sweep around in circles within each ocean basin, while a clock at the bottom ticks through the hours.",
+      "caption": "Computer model of the ocean tides over about a day and a half, sped up so 2.5 hours pass every second (see the clock). Patches of high and low water, in shades of blue, wheel around each ocean basin.",
+      "credit": "NASA Scientific Visualization Studio · Public domain · excerpt",
+      "href": "https://svs.gsfc.nasa.gov/4821/",
+      "music": "“On the Shore” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Which way the tide turns",
+      "left": { "label": "Northern Hemisphere", "text": "High water circles an amphidromic point anticlockwise" },
+      "right": { "label": "Southern Hemisphere", "text": "High water circles clockwise, in the direction Earth's spin deflects moving water" }
+    },
+    {
+      "type": "reveal",
+      "prompt": "The tide does something odd around New Zealand. What?",
+      "answer": "It can be high on one side and low on the other",
+      "detail": "The tidal wave is trapped and runs around the islands in about 12.5 hours, so the whole country acts like one giant amphidromic point."
+    },
+    {
+      "type": "text",
+      "heading": "Mapped by flying tide gauges",
+      "text": "The TOPEX/Poseidon and Jason satellites measured sea height from orbit for years. From those records, plus the motion of the Sun and Moon, scientists can predict the tide at any spot in the ocean at any time."
+    },
+    {
+      "type": "flow",
+      "heading": "Why the tide goes round in circles",
+      "steps": [
+        { "icon": "🌙", "label": "The Moon and Sun raise bulges of water" },
+        { "icon": "🏝️", "label": "Coastlines block and reflect the tidal wave" },
+        { "icon": "🌍", "label": "Earth's spin deflects the moving water" },
+        { "icon": "🔄", "label": "High water circles an amphidromic point" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What happens to the tide as you move away from an amphidromic point?",
+      "options": ["Its range grows", "It stops completely", "It turns the other way", "It gets faster"],
+      "answer": 0,
+      "explanation": "At the point itself high and low tide are almost the same height. The range, the gap between them, increases with distance, though not evenly."
+    }
+  ],
+  "tags": ["tides", "ocean", "moon", "waves"],
+  "source": { "label": "Wikipedia: Amphidromic point", "url": "https://en.wikipedia.org/wiki/Amphidromic_point" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

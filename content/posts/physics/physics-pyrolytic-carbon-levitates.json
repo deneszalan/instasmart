@@ -1,0 +1,100 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-pyrolytic-carbon-levitates",
+  "field": "physics",
+  "title": "Water, wood and even a live frog are pushed away by magnets",
+  "emoji": "🧲",
+  "cover": {
+    "src": "levitating-carbon.jpg",
+    "alt": "Side view of a thin dark square of pyrolytic carbon hovering just above a block of neodymium magnets, with a sliver of light showing underneath.",
+    "credit": "Peter L. · CC BY 3.0"
+  },
+  "body": "Most things we call non-magnetic, including water, wood, some plastics and metals such as copper and gold, are actually **diamagnetic**: a magnetic field makes them produce a tiny opposing field, so they are weakly repelled. Usually the push is far too weak to notice. Pyrolytic carbon, one of the most strongly diamagnetic materials at room temperature, is repelled enough to float above strong neodymium magnets, using no power at all. A much stronger field, about 16 teslas at the Nijmegen High Field Magnet Laboratory, has levitated a live frog.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "levitating-carbon.mp4",
+      "poster": "levitating-carbon.jpg",
+      "alt": "A thin dark square of pyrolytic carbon rests in mid-air above a block of four cube-shaped magnets. A fingertip nudges it, then the camera drops to a side view that shows a clear gap between the square and the magnets.",
+      "caption": "A thin square of pyrolytic carbon floats above a block of neodymium magnets. A fingertip nudges it, and a side view shows the gap underneath.",
+      "credit": "Peter L. · CC BY 3.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Diamagnetic_Pyrolytic_carbon_levitating_over_permanent_magnets.webm",
+      "music": "“Floating Cities” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "rank",
+      "heading": "Which is pushed away hardest? Largest first",
+      "items": [
+        {
+          "label": "Pyrolytic carbon",
+          "value": 40.9
+        },
+        {
+          "label": "Bismuth",
+          "value": 16.6
+        },
+        {
+          "label": "Gold",
+          "value": 3.5
+        },
+        {
+          "label": "Water",
+          "value": 0.91
+        }
+      ],
+      "unit": "× 10⁻⁵",
+      "note": "Strength of diamagnetism: minus the magnetic susceptibility, χv (SI)",
+      "explanation": "All far weaker than iron's pull towards a magnet, so the push goes unnoticed. A superconductor beats them all: it expels the field completely."
+    },
+    {
+      "type": "text",
+      "heading": "Why it can hover in one spot",
+      "text": "Earnshaw's theorem seems to forbid floating anything in a fixed magnetic field. But it only covers things that are drawn towards strong fields. A diamagnet is pushed towards the weakest part of the field, and a field can have a weak spot in empty space, so the carbon settles there, stable."
+    },
+    {
+      "type": "timeline",
+      "heading": "Pushed away by magnets",
+      "events": [
+        {
+          "when": "1778",
+          "text": "Anton Brugmans sees bismuth repelled"
+        },
+        {
+          "when": "1845",
+          "text": "Faraday shows all matter responds"
+        },
+        {
+          "when": "2009",
+          "text": "NASA's JPL levitates mice"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "A rule of thumb: if every electron in a particle is paired, the substance is…",
+      "options": [
+        "Diamagnetic",
+        "Ferromagnetic",
+        "Paramagnetic",
+        "Radioactive"
+      ],
+      "answer": 0,
+      "explanation": "All electrons paired means diamagnetic; unpaired electrons make a substance paramagnetic, and drawn into a magnetic field instead."
+    }
+  ],
+  "tags": [
+    "magnetism",
+    "levitation",
+    "diamagnetism",
+    "materials"
+  ],
+  "source": {
+    "label": "Wikipedia: Diamagnetism",
+    "url": "https://en.wikipedia.org/wiki/Diamagnetism"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

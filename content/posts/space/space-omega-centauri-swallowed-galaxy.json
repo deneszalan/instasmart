@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-omega-centauri-swallowed-galaxy",
+  "field": "space",
+  "title": "The Milky Way’s biggest star cluster may be the core of a galaxy it swallowed",
+  "emoji": "✨",
+  "cover": {
+    "src": "omega-centauri-stars.jpg",
+    "alt": "A dense field of thousands of red, blue and white stars in the core of the globular cluster Omega Centauri.",
+    "credit": "NASA, ESA, J. Anderson and R. van der Marel (STScI) · CC BY 4.0"
+  },
+  "body": "Omega Centauri packs about **10 million stars** into a ball roughly 150 light-years across, making it the largest and most massive known globular cluster in our galaxy. It is so bright that Ptolemy listed it as a single star; Edmond Halley recognised it as something else in 1677. But Omega Centauri’s stars span a range of ages and chemical makeups, so they did not all form at once. That suggests it is the leftover core of a small galaxy that the Milky Way tore apart long ago.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "omega-centauri-stars.mp4",
+      "poster": "omega-centauri-stars.jpg",
+      "alt": "A dense field of thousands of red, blue and white stars, each drifting slowly in its own direction, like a swarm of bees.",
+      "caption": "Computer model based on Hubble measurements: stars in the core of Omega Centauri moving over the next 10,000 years, projected from how far each shifted between 2002 and 2006.",
+      "credit": "NASA, ESA, J. Anderson and R. van der Marel (STScI) · CC BY 4.0 · excerpt",
+      "href": "https://esahubble.org/videos/heic1017a/",
+      "music": "“Mesmerizing Galaxy” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "stat",
+      "value": "10 million",
+      "label": "stars in Omega Centauri, the Milky Way’s biggest globular cluster",
+      "text": "Together they weigh about 4 million Suns. The cluster is about 17,000 light-years away and around 12 billion years old."
+    },
+    {
+      "type": "reveal",
+      "prompt": "In the crowded core of Omega Centauri, how far apart are neighbouring stars, on average?",
+      "answer": "Only about 0.1 light-years",
+      "detail": "Hubble can still pick them apart: astronomers measured the motions of more than 100,000 stars in the core, which is how the clip was made."
+    },
+    {
+      "type": "flow",
+      "heading": "The leading idea for how it formed",
+      "steps": [
+        { "icon": "🌌", "label": "A small galaxy strays close to the Milky Way" },
+        { "icon": "🌀", "label": "Gravity strips away its outer stars" },
+        { "icon": "✨", "label": "Its dense core survives" },
+        { "icon": "🔭", "label": "It now orbits our galaxy as Omega Centauri" }
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "Seeing what it really is",
+      "events": [
+        { "when": "2nd century", "text": "Ptolemy lists it as a star on the centaur’s back" },
+        { "when": "1677", "text": "Edmond Halley lists it as a non-stellar object" },
+        { "when": "2010", "text": "Hubble data track the motions of 100,000+ stars" },
+        { "when": "2024", "text": "Fast stars hint at a hidden black hole, a claim later questioned" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why do astronomers think Omega Centauri was once the core of a small galaxy?",
+      "options": ["Its stars differ in age and makeup", "It is shaped like a spiral", "It contains no old stars", "It glows only in X-rays"],
+      "answer": 0,
+      "explanation": "Its stars span a range of ages and of metallicities, the amounts of elements heavier than helium, which suggests they did not all form at the same time."
+    }
+  ],
+  "tags": ["stars", "clusters", "galaxies", "hubble", "milkyway"],
+  "source": {
+    "label": "Wikipedia: Omega Centauri",
+    "url": "https://en.wikipedia.org/wiki/Omega_Centauri"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

@@ -20,9 +20,9 @@ const MediaInput = z
   .object({
     name: z.string().describe('File name the post refers to, e.g. "orbit-diagram.svg" (lowercase, a-z 0-9 - _).'),
     svg: z.string().optional().describe('SVG markup, for diagrams and illustrations you draw yourself.'),
-    base64: z.string().optional().describe('Base64-encoded PNG, JPEG, WebP, GIF or AVIF bytes.'),
+    base64: z.string().optional().describe('Base64-encoded PNG, JPEG, WebP, GIF or AVIF bytes, or an MP4 clip (H.264, ≤30 s, ≤3 MB) for a video slide.'),
   })
-  .describe('An image for the post. Give exactly one of `svg` or `base64`.');
+  .describe('An image or video clip for the post. Give exactly one of `svg` or `base64`.');
 
 type MediaInput = z.infer<typeof MediaInput>;
 
@@ -31,7 +31,7 @@ const PostInput = z
   .record(z.string(), z.unknown())
   .describe(
     'The post as JSON: { id: "<field>-<slug>", field, title (≤90 chars, the hook), emoji, body (2–5 sentences), ' +
-      'slides?: [{ type: "text" | "stat" | "list" | "quote" | "compare" | "timeline" | "image" | "chart" | "pictogram" | "scale" | "spectrum" | "flow" | ' +
+      'slides?: [{ type: "text" | "stat" | "list" | "quote" | "compare" | "timeline" | "image" | "video" | "chart" | "pictogram" | "scale" | "spectrum" | "flow" | ' +
       '"quiz" | "reveal" | "estimate" | "order" | "match" | "sort" | "scramble" | "odd" | "rank" | "higher" | "fill" | "place", … }], tags: ["lowercase"], ' +
       'source: { label, url }, author: { name: "Claude" | "ChatGPT" | "Fable" | <your name>, kind: "ai" } }. ' +
       'Call get_content_guide for every option; validate_post explains any problem.',

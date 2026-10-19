@@ -1,0 +1,116 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-marbled-paper-banknotes",
+  "field": "art",
+  "title": "No two marbled papers match, so Benjamin Franklin put marbling on banknotes",
+  "emoji": "🌀",
+  "cover": {
+    "src": "ebru-leaves.jpg",
+    "alt": "Close-up of a marbling bath: white, blue and brown paint floats in feathery swirls around drops of green, with a hand at the top edge.",
+    "credit": "epSos.de · CC BY 3.0"
+  },
+  "body": "Marbling floats drops of colour on a bath of thickened water, called **size**, and then combs and styluses drag them into feathers, waves or flowers. A sheet of paper laid on the surface picks up the whole design, so every print is a **one-off**. That made marbled paper useful for security: in 1775 Benjamin Franklin obtained English marbled paper to print the Continental Congress’s $20 note, and the Bank of England issued partly marbled cheques until the 1810s.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "ebru-leaves.mp4",
+      "poster": "ebru-leaves.jpg",
+      "alt": "A hand pulls a fine stylus through drops of green paint floating among white and blue swirls, dragging them into pointed leaf shapes.",
+      "caption": "Ebru, Turkish-style marbling: drops of green paint float on a bath of thickened water, and a stylus drags them into leaves. Paper laid on top would pick up the whole design.",
+      "credit": "epSos.de · CC BY 3.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:How_to_paint_on_Water_for_Paper_Marbling_and_Ebru_Art.ogv",
+      "music": "“Desert City” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "How a marbled sheet is made",
+      "steps": [
+        {
+          "icon": "💧",
+          "label": "Drop colours onto a bath of size"
+        },
+        {
+          "icon": "🫧",
+          "label": "A little ox gall helps each colour spread"
+        },
+        {
+          "icon": "🪮",
+          "label": "Combs and styluses pull them into patterns"
+        },
+        {
+          "icon": "📄",
+          "label": "Lay paper on top and lift a one-off print"
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "From poems to banknotes",
+      "events": [
+        {
+          "when": "1112",
+          "text": "Oldest known marbled paper, in a Japanese book of poems"
+        },
+        {
+          "when": "1695",
+          "text": "Bank of England briefly tries partly marbled notes"
+        },
+        {
+          "when": "1775",
+          "text": "Franklin gets marbled paper for $20 notes"
+        },
+        {
+          "when": "1810s",
+          "text": "The Bank’s partly marbled cheques end"
+        }
+      ]
+    },
+    {
+      "type": "match",
+      "heading": "Match each name for marbling",
+      "pairs": [
+        {
+          "left": "Suminagashi",
+          "right": "Japanese: floating ink"
+        },
+        {
+          "left": "Abrī",
+          "right": "Persian: clouded paper"
+        },
+        {
+          "left": "Ebru",
+          "right": "Today’s Turkish name"
+        }
+      ],
+      "explanation": "Suminagashi is the oldest known form. Ebru, the modern Turkish word, is related to the Persian abrī, which Annemarie Schimmel translated as ‘clouded paper’."
+    },
+    {
+      "type": "quiz",
+      "question": "What is the thickened bath that the colours float on called?",
+      "options": [
+        "Size",
+        "Glaze",
+        "Gesso",
+        "Slip"
+      ],
+      "answer": 0,
+      "explanation": "Size was traditionally made from plant gums such as gum tragacanth. Since the late 19th century, carrageenan from seaweed has been used."
+    }
+  ],
+  "tags": [
+    "marbling",
+    "ebru",
+    "paper",
+    "craft",
+    "banknotes"
+  ],
+  "source": {
+    "label": "Wikipedia: Paper marbling",
+    "url": "https://en.wikipedia.org/wiki/Paper_marbling"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-19"
+}

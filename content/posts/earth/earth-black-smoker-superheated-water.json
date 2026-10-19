@@ -1,0 +1,68 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-black-smoker-superheated-water",
+  "field": "earth",
+  "title": "Black smokers on the seabed gush water above 400 °C that the pressure keeps from boiling",
+  "emoji": "🌊",
+  "body": "On mid-ocean ridges and undersea volcanoes, seawater seeps down through cracks, is heated by hot rock above magma, and comes back out loaded with dissolved metals at temperatures that can top **400 °C**. It doesn’t boil, because the weight of the ocean above raises the boiling point, so the water stays liquid or becomes a supercritical fluid. When it hits the surrounding water, at about 2 °C, the metals drop out as dark sulfide minerals: that is the black “smoke”, and it slowly builds the chimney.",
+  "cover": {
+    "src": "black-smoker.jpg",
+    "alt": "A pale mineral chimney on the dark seafloor with a cloud of black smoky water billowing from its side",
+    "credit": "NOAA Ocean Exploration · Public domain"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "black-smoker.mp4",
+      "poster": "black-smoker.jpg",
+      "alt": "Deep-sea footage lit by a submersible’s lights: black, smoke-like water billows out of a tall, pale mineral chimney, then the view moves to a cluster of spiky chimneys on the seafloor.",
+      "caption": "A vent puffing black ‘smoke’, filmed in 2016 on NOAA’s Deepwater Exploration of the Marianas expedition in the western Pacific.",
+      "credit": "NOAA Ocean Exploration · Public domain · excerpt",
+      "href": "https://oceanexplorer.noaa.gov/multimedia/edu-themes-vents-and-volcanoes-media-video-multimedia-hydrothermal/",
+      "music": "“Shadowlands 1 - Horizon” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "spectrum",
+      "heading": "How hot a black smoker gets",
+      "min": 0,
+      "max": 500,
+      "unit": "°C",
+      "ends": ["Icy", "Scalding"],
+      "marks": [
+        { "label": "Deep seawater", "value": 2 },
+        { "label": "Water boils at sea level", "value": 100 },
+        { "label": "Vent water", "value": 400, "emphasis": true },
+        { "label": "Brief record spike", "value": 464 }
+      ],
+      "colors": ["#38bdf8", "#ef4444"],
+      "note": "The 464 °C reading was a brief burst at Sister Peak, not steady venting"
+    },
+    {
+      "type": "flow",
+      "heading": "How a black smoker works",
+      "steps": [
+        { "icon": "🌊", "label": "Seawater seeps down into the crust" },
+        { "icon": "🔥", "label": "Hot rock heats it and it dissolves metals" },
+        { "icon": "⬆️", "label": "It gushes back out of the seafloor" },
+        { "icon": "🖤", "label": "Metal sulfides form in the cold: the smoke" }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "30 cm a day",
+      "label": "the fastest chimney growth on record",
+      "text": "Chimneys can reach 60 m. One off Oregon, nicknamed Godzilla, grew to 40 m before it fell over in 1996."
+    },
+    {
+      "type": "quiz",
+      "question": "What makes the smoke of a black smoker black?",
+      "options": ["Dark metal sulfide minerals", "Soot from burning rock", "Clouds of volcanic ash", "Swarms of dark microbes"],
+      "answer": 0,
+      "explanation": "Dissolved metals in the hot vent fluid drop out as dark sulfide minerals when it meets the near-freezing seawater."
+    }
+  ],
+  "tags": ["ocean", "volcanoes", "seafloor", "geology"],
+  "source": { "label": "Wikipedia: Hydrothermal vent", "url": "https://en.wikipedia.org/wiki/Hydrothermal_vent" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

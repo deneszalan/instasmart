@@ -5,7 +5,7 @@ import { FIELDS } from '../data/fields';
 import { LIBRARY } from '../data/library';
 import { authorGroup } from '../lib/authors';
 import { firstInteractive } from '../lib/interactive';
-import { firstVisual } from '../lib/visual';
+import { firstVideo, firstVisual } from '../lib/visual';
 import { createRng, searchCards, shuffle } from '../lib/feed';
 import { Tile } from '../components/Tile';
 import { WRITERS, WriterChips } from '../components/WriterChips';
@@ -26,6 +26,7 @@ export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExplorePro
   const [field, setField] = useState<FieldId | 'all'>('all');
   const [interactiveOnly, setInteractiveOnly] = useState(false);
   const [visualOnly, setVisualOnly] = useState(false);
+  const [videoOnly, setVideoOnly] = useState(false);
   // A per-visit shuffle so the grid isn't grouped by field.
   const [order] = useState(() => shuffle(LIBRARY, createRng(Date.now())));
 
@@ -35,10 +36,11 @@ export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExplorePro
         (field === 'all' || c.field === field) &&
         (!author || authorGroup(c)?.id === author) &&
         (!interactiveOnly || firstInteractive(c) >= 0) &&
-        (!visualOnly || firstVisual(c) >= 0),
+        (!visualOnly || firstVisual(c) >= 0) &&
+        (!videoOnly || firstVideo(c) >= 0),
     );
     return searchCards(filtered, query);
-  }, [order, field, author, query, interactiveOnly, visualOnly]);
+  }, [order, field, author, query, interactiveOnly, visualOnly, videoOnly]);
 
   const authorLabel = WRITERS.find((w) => w.id === author)?.label;
   const fieldName = FIELDS.find((f) => f.id === field)?.name;
@@ -70,6 +72,9 @@ export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExplorePro
           </button>
           <button aria-pressed={visualOnly} className="chip" onClick={() => setVisualOnly((v) => !v)}>
             📊 Visual
+          </button>
+          <button aria-pressed={videoOnly} className="chip" onClick={() => setVideoOnly((v) => !v)}>
+            🎬 Video
           </button>
           {FIELDS.map((f) => (
             <button key={f.id} aria-pressed={field === f.id} className="chip" onClick={() => setField(f.id)}>

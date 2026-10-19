@@ -1,0 +1,99 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-transit-of-venus-pairs",
+  "field": "space",
+  "title": "Venus crosses the Sun’s face in pairs eight years apart, then not for over a century",
+  "emoji": "⚫",
+  "cover": {
+    "src": "venus-transit.jpg",
+    "alt": "The black disc of Venus silhouetted just inside the curved orange edge of the Sun.",
+    "credit": "NASA/Goddard Space Flight Center/SDO · Public domain"
+  },
+  "body": "Venus’s orbit is tilted by about **3.4°** to Earth’s, so most times it passes between us and the Sun it slips just above or below the Sun as we see it. Only when it lines up while crossing Earth’s orbital plane do we get a transit: a small black dot crawling across the Sun for about six hours. The timing repeats in a 243-year cycle of two transits eight years apart, a gap of 121.5 years, another pair, then a gap of 105.5 years. After 2004 and 2012, the next pair is due in December 2117 and 2125.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "venus-transit.mp4",
+      "poster": "venus-transit.jpg",
+      "alt": "Close-up time-lapse of the Sun’s glowing orange edge against black space; a round black disc, Venus, slides in from the edge and moves onto the face of the Sun.",
+      "caption": "5 June 2012, sped up: Venus slides onto the face of the Sun, seen by NASA’s Solar Dynamics Observatory. The whole crossing took about six hours.",
+      "credit": "NASA/Goddard Space Flight Center/SDO · Public domain · excerpt",
+      "href": "https://svs.gsfc.nasa.gov/10996/",
+      "music": "“Airship Serenity” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "timeline",
+      "heading": "Watching Venus cross the Sun",
+      "events": [
+        {
+          "when": "1639",
+          "text": "Jeremiah Horrocks makes the first recorded observation"
+        },
+        {
+          "when": "1769",
+          "text": "James Cook and Charles Green observe it from Tahiti"
+        },
+        {
+          "when": "2004, 2012",
+          "text": "The most recent pair"
+        }
+      ]
+    },
+    {
+      "type": "place",
+      "question": "When will the next transit of Venus happen?",
+      "min": 2000,
+      "max": 2250,
+      "step": 1,
+      "answer": 2117,
+      "format": "year",
+      "ends": [
+        "2000",
+        "2250"
+      ],
+      "hints": [
+        {
+          "label": "2004",
+          "value": 2004
+        },
+        {
+          "label": "2012",
+          "value": 2012
+        }
+      ],
+      "explanation": "On 10–11 December 2117, with its partner on 8 December 2125. Then there is a gap of 121.5 years before the next pair."
+    },
+    {
+      "type": "stat",
+      "value": "153 million km",
+      "label": "the Sun’s distance, worked out from the transits of 1761 and 1769",
+      "text": "Expeditions around the world timed Venus’s crossing to calculate it. The black drop effect, which smears Venus at the Sun’s edge, limited the precision."
+    },
+    {
+      "type": "quiz",
+      "question": "Why doesn’t Venus cross the Sun’s face every time it passes between us and the Sun?",
+      "options": [
+        "Its orbit is tilted to ours",
+        "It is too small to see",
+        "The Sun’s glare hides it",
+        "It moves too fast"
+      ],
+      "answer": 0,
+      "explanation": "Venus’s orbit is tilted by about 3.4° to Earth’s, so it usually passes just above or below the Sun. A transit needs it to line up while crossing our orbital plane."
+    }
+  ],
+  "tags": [
+    "venus",
+    "sun",
+    "transits"
+  ],
+  "source": {
+    "label": "Wikipedia: Transit of Venus",
+    "url": "https://en.wikipedia.org/wiki/Transit_of_Venus"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

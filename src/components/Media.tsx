@@ -6,6 +6,7 @@ import { FIELD_BY_ID } from '../data/fields';
 import { inline } from '../lib/markdown';
 import { InteractiveSlide } from './Interactive';
 import { VisualSlide } from './Visual';
+import { VideoSlideView } from './Video';
 import { challengeId } from '../lib/interactive';
 
 function titleSize(title: string): string {
@@ -155,7 +156,8 @@ function SlideBody({ slide, challengeId }: { slide: Slide; challengeId: string }
     case 'flow':
       return <VisualSlide slide={slide} />;
     case 'image':
-      // Rendered by ImageSlideView.
+    case 'video':
+      // Rendered by ImageSlideView and VideoSlideView.
       return null;
   }
 }
@@ -177,6 +179,7 @@ function DetailSlide({ card, index, total }: { card: KnowledgeCard; index: numbe
   const field = FIELD_BY_ID[card.field];
   const slide = card.slides![index - 1];
   if (slide.type === 'image') return <ImageSlideView slide={slide} card={card} />;
+  if (slide.type === 'video') return <VideoSlideView slide={slide} card={card} />;
   return (
     <div className={`slide slide--detail slide--${slide.type}`} style={gradientStyle(cardGradient(card))}>
       <span className="slide__bg-emoji" aria-hidden="true">

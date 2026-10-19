@@ -1,0 +1,111 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-mandelbrot-endless-detail",
+  "field": "math",
+  "title": "One tiny rule, z² + c, draws a shape with new detail at every zoom, forever",
+  "emoji": "🌀",
+  "cover": {
+    "src": "mandelbrot-zoom.jpg",
+    "alt": "The Mandelbrot set: a black shape like a heart with a round bulb attached, fringed with tiny buds, on a blue background.",
+    "credit": "SimsContPics · Public domain"
+  },
+  "body": "Pick a number c (complex numbers allowed), start at zero and repeat one step: square it, then add c. For some values of c the results stay small forever; for others they race off to infinity. The **Mandelbrot set** is every c that stays bounded, and colouring the rest by how fast they escape gives this picture. Its edge is infinitely complicated: zooming in reveals ever finer spirals, and slightly distorted copies of the whole set at every scale. Robert Brooks and Peter Matelski first drew it in 1978; Benoit Mandelbrot made his images at IBM in 1980.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "mandelbrot-zoom.mp4",
+      "poster": "mandelbrot-zoom.jpg",
+      "alt": "A continuous zoom into the Mandelbrot set. Starting from the whole black shape, the view dives into the crack between two bulbs, past glowing spirals, until a tiny black copy of the whole set appears and the dive continues into its edge.",
+      "caption": "The dive starts from the whole set and heads into one crack in its edge. Spirals give way to a tiny copy of the whole set, and the same crack appears again.",
+      "credit": "SimsContPics, WebM by Nick Birse · Public domain · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Mandelbrot_zoom_1.webm",
+      "music": "“Equatorial Complex” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "Repeat forever: does the number stay small?",
+      "steps": [
+        {
+          "icon": "0️⃣",
+          "label": "Start with z = 0"
+        },
+        {
+          "icon": "✖️",
+          "label": "Square z"
+        },
+        {
+          "icon": "➕",
+          "label": "Add c, and go again"
+        }
+      ],
+      "cycle": true
+    },
+    {
+      "type": "sort",
+      "heading": "Start at 0, square, add c, repeat. In or out?",
+      "bins": [
+        "In the set",
+        "Escapes"
+      ],
+      "items": [
+        {
+          "text": "c = −1: 0, −1, 0, −1, 0, …",
+          "bin": 0
+        },
+        {
+          "text": "c = 1: 0, 1, 2, 5, 26, …",
+          "bin": 1
+        },
+        {
+          "text": "c = −2: 0, −2, 2, 2, 2, …",
+          "bin": 0
+        },
+        {
+          "text": "c = 3: 0, 3, 12, 147, …",
+          "bin": 1
+        }
+      ],
+      "explanation": "A value is in the set if the numbers stay bounded. Once they get more than 2 away from zero they are certain to run off to infinity."
+    },
+    {
+      "type": "stat",
+      "value": "2",
+      "label": "the fractal dimension of the set’s edge",
+      "text": "A smooth curve has dimension 1 and a filled area 2. The edge is so wrinkled that it scores as high as an area, as Mitsuhiro Shishikura proved."
+    },
+    {
+      "type": "reveal",
+      "prompt": "Zooms seem to show little islands floating off the main shape. Is the Mandelbrot set one piece, or many?",
+      "answer": "One single connected piece",
+      "detail": "Adrien Douady and John Hubbard proved it is connected, although Mandelbrot had first guessed it was not. They also named it after him."
+    },
+    {
+      "type": "timeline",
+      "heading": "Drawing the set",
+      "events": [
+        {
+          "when": "1978",
+          "text": "Robert Brooks and Peter Matelski first define and draw it"
+        },
+        {
+          "when": "1980",
+          "text": "Benoit Mandelbrot makes his first images of it at IBM"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "fractals",
+    "mandelbrot",
+    "complexnumbers"
+  ],
+  "source": {
+    "label": "Wikipedia: Mandelbrot set",
+    "url": "https://en.wikipedia.org/wiki/Mandelbrot_set"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

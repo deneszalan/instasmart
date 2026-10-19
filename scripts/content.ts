@@ -28,7 +28,7 @@ function check(): number {
   }
   const media = files.filter((f) => f.path.startsWith('content/media/')).length;
   const perField = FIELDS.map((f) => `${f.id} ${posts.filter((p) => p.field === f.id).length}`).join(', ');
-  console.log(`✓ ${posts.length} posts and ${media} images are valid.\n  ${perField}`);
+  console.log(`✓ ${posts.length} posts and ${media} media files are valid.\n  ${perField}`);
   return 0;
 }
 

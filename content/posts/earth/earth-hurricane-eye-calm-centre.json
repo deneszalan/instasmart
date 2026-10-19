@@ -1,0 +1,61 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-hurricane-eye-calm-centre",
+  "field": "earth",
+  "title": "The calmest place in a hurricane is its eye, ringed by the storm’s fiercest winds",
+  "emoji": "🌀",
+  "body": "At the centre of a strong hurricane, air sinks instead of rising, which leaves a mostly rain-free hole called the eye, typically **30 to 65 km** across, with light winds and often clear skies. Around it spins the eyewall, a ring of towering thunderstorms that carries the most severe weather and highest winds of the whole storm. That is why the eye can fool people on land: some go outside to look at the damage while it passes, then get caught by the violent winds of the eyewall’s far side.",
+  "cover": {
+    "src": "nigel-eye.jpg",
+    "alt": "Satellite view looking down on a hurricane: a wide dark hole in the middle of a bright swirl of cloud",
+    "credit": "CSU/CIRA & NOAA · Public domain"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "nigel-eye.mp4",
+      "poster": "nigel-eye.jpg",
+      "alt": "Black-and-white satellite time-lapse of a hurricane from above: bright clouds spiral round a large dark eye, inside which low clouds slowly churn, while thunderstorm tops bubble up along its rim.",
+      "caption": "Hurricane Nigel over the open Atlantic on 19 September 2023, about eight hours squeezed into seconds by the GOES-16 satellite. Low clouds turn slowly inside the eye.",
+      "credit": "CSU/CIRA & NOAA · Public domain · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Hurricane_Nigel%E2%80%99s_Large_Eye_Swirls_(CIRA_2023-09-19_-_nolabels).webm",
+      "music": "“Stormfront” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Two neighbours, two worlds",
+      "left": { "label": "The eye", "text": "Sinking air, light winds, little rain and often clear sky overhead" },
+      "right": { "label": "The eyewall", "text": "A ring of towering thunderstorms with the storm’s heaviest weather and strongest winds" }
+    },
+    {
+      "type": "reveal",
+      "prompt": "Most eyes are 30 to 65 km wide. How small was the tiniest eye on record?",
+      "answer": "About 3.7 km, in Hurricane Wilma",
+      "detail": "Small eyes often set off an eyewall replacement cycle: a new ring of thunderstorms forms outside the old eyewall, contracts and replaces it."
+    },
+    {
+      "type": "pictogram",
+      "heading": "Intense hurricanes that replace their eyewall at least once",
+      "icon": "🌀",
+      "total": 100,
+      "count": 53,
+      "note": "53 in 100, in storms with winds above about 185 km/h; they usually weaken while it happens"
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": ["Fact", "Myth"],
+      "items": [
+        { "text": "The eye is the windiest part of a hurricane", "bin": 1 },
+        { "text": "An eye is wider at the top of the storm than at the bottom", "bin": 0 },
+        { "text": "Once the eye passes over you, the storm is over", "bin": 1 },
+        { "text": "Air sinks in the middle of the eye", "bin": 0 }
+      ],
+      "explanation": "The eye is calm because air sinks there, and it widens with height like a stadium. The far side of the eyewall still has to pass."
+    }
+  ],
+  "tags": ["hurricanes", "weather", "storms", "satellites"],
+  "source": { "label": "Wikipedia: Eye (cyclone)", "url": "https://en.wikipedia.org/wiki/Eye_(cyclone)" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

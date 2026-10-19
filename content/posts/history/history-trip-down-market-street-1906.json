@@ -1,0 +1,103 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-trip-down-market-street-1906",
+  "field": "history",
+  "title": "A famous film of San Francisco was shot just weeks before the 1906 earthquake",
+  "emoji": "🚋",
+  "cover": {
+    "src": "market-street.jpg",
+    "alt": "Black-and-white film still of Market Street in 1906, looking down the cable car tracks towards the clock tower of the Ferry Building, with a streetcar and a motor car crossing ahead.",
+    "credit": "Miles Brothers · Public domain"
+  },
+  "body": "*A Trip Down Market Street* was filmed from the front of a cable car riding from 8th Street to the Ferry Building. It was first dated to autumn 1905 from its shadows, but film historian David Kiehn noticed puddles in the street when newspapers recorded no rain, and found a licence plate in the film registered in February 1906. He dated it to late March or early April 1906; engineer Richard Greene, measuring shadows on the Ferry Building, puts it at 24–30 March, about three weeks before the earthquake. The film survived because two of the Miles brothers had left for New York with it on 17 April.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "market-street.mp4",
+      "poster": "market-street.jpg",
+      "alt": "Black-and-white film shot from the front of a cable car on Market Street in 1906: other cable cars pass close by, then a horse-drawn streetcar and an open motor car cut across the tracks ahead, below the Ferry Building’s clock tower.",
+      "caption": "Near the end of the ride: cable cars pass, then a horse-drawn streetcar and a motor car cut across the tracks, with the Ferry Building clock tower ahead.",
+      "credit": "Miles Brothers · Public domain · excerpt",
+      "href": "https://archive.org/details/167622",
+      "music": "“Frogs Legs Rag” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "How the film was dated",
+      "steps": [
+        {
+          "icon": "🌤️",
+          "label": "Shadows first suggest autumn 1905"
+        },
+        {
+          "icon": "💧",
+          "label": "But puddles, and no rain fell then"
+        },
+        {
+          "icon": "🚗",
+          "label": "A car plate registered in February 1906"
+        },
+        {
+          "icon": "🕒",
+          "label": "Ferry Building shadows: 24–30 March 1906"
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "heading": "Vehicles on rails counted in the film",
+      "items": [
+        {
+          "label": "Cable cars",
+          "value": 30,
+          "emphasis": true
+        },
+        {
+          "label": "Horsecars",
+          "value": 4
+        },
+        {
+          "label": "Streetcars",
+          "value": 4
+        }
+      ],
+      "note": "The motor cars are harder to count: most are the same few, circling round."
+    },
+    {
+      "type": "estimate",
+      "question": "One motor car loops round to pass the camera again and again. How many times?",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "answer": 10,
+      "explanation": "Ten. The traffic seems to have been staged to make Market Street look like a prosperous modern boulevard; in 1906, cars were still a novelty there."
+    },
+    {
+      "type": "quiz",
+      "question": "How did the film survive the earthquake and the fire that followed?",
+      "options": [
+        "It was on its way to New York",
+        "It was locked in a bank vault",
+        "It was buried in a garden",
+        "It was filmed after the fire"
+      ],
+      "answer": 0,
+      "explanation": "Harry and Joseph Miles boarded a train for New York with it on 17 April. Hearing of the earthquake, they sent it on and headed back."
+    }
+  ],
+  "tags": [
+    "sanfrancisco",
+    "film",
+    "earthquake",
+    "1906"
+  ],
+  "source": {
+    "label": "Wikipedia: A Trip Down Market Street",
+    "url": "https://en.wikipedia.org/wiki/A_Trip_Down_Market_Street"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

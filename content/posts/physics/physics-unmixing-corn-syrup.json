@@ -1,0 +1,91 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-unmixing-corn-syrup",
+  "field": "physics",
+  "title": "Stir dye into thick syrup, then stir it backwards, and the drops come back",
+  "emoji": "🍯",
+  "cover": {
+    "src": "unmixing.jpg",
+    "alt": "A clear cylindrical cell full of pale corn syrup with three small drops of yellow, blue and red dye suspended in it.",
+    "credit": "UNM Physics and Astronomy · CC BY 3.0"
+  },
+  "body": "In a very thick liquid like corn syrup, moved slowly through a thin gap, the fluid's internal friction (its viscosity) overwhelms its inertia. Each layer simply slides past its neighbours instead of swirling into eddies. This **creeping**, or Stokes, flow is reversible: run the motion backwards and the fluid retraces its path. Turning the inner cylinder of this cell smears the dye into thin sheets that look thoroughly mixed; turning it back restores the drops, a little blurred because some dye diffuses into the syrup.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "unmixing.mp4",
+      "poster": "unmixing.jpg",
+      "alt": "Hands turn a handle on top of a clear cylinder full of corn syrup. A smeared band of coloured dye narrows as the handle turns back, and three separate drops of yellow, blue and red dye reappear.",
+      "caption": "The dye has been sheared into thin bands by cranking the inner cylinder. Cranking it back brings the yellow, blue and red drops back.",
+      "credit": "UNM Physics and Astronomy · CC BY 3.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Couette_Cell_for_Displaying_the_Properties_of_Laminar_Flow_(2)_-_UNM_Physics_and_Astronomy.webm",
+      "music": "“Magic Escape Room” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "How the trick works",
+      "steps": [
+        {
+          "icon": "🍯",
+          "label": "Syrup fills a gap between two cylinders"
+        },
+        {
+          "icon": "🐢",
+          "label": "Turning slowly keeps the flow in layers"
+        },
+        {
+          "icon": "🌀",
+          "label": "The dye is sheared into a thin spiral"
+        },
+        {
+          "icon": "↩️",
+          "label": "Turn back, and every layer slides back"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Mixed, or just stretched?",
+      "left": {
+        "label": "From the side",
+        "text": "The dye seems to have blended into the syrup."
+      },
+      "right": {
+        "label": "From above",
+        "text": "It has been sheared into a thin spiral between sliding layers, ready to be unrolled."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "A low Reynolds number",
+      "text": "The Reynolds number compares a fluid's inertia with its viscosity. A slow turn, a thin gap and very viscous syrup make it tiny here, so the flow obeys the linear Stokes equations, which work just as well run backwards. Swimming microorganisms and sperm live in this kind of flow."
+    },
+    {
+      "type": "quiz",
+      "question": "Why don't the drops come back perfectly sharp?",
+      "options": [
+        "Some dye diffuses into the syrup",
+        "The syrup evaporates",
+        "Gravity drags the dye down",
+        "The cylinder slips"
+      ],
+      "answer": 0,
+      "explanation": "Reversing the flow undoes the stretching, but not diffusion: while the dye is spread thin, a little of it spreads into the syrup for good."
+    }
+  ],
+  "tags": [
+    "fluids",
+    "viscosity",
+    "flow",
+    "reversibility"
+  ],
+  "source": {
+    "label": "Wikipedia: Stokes flow",
+    "url": "https://en.wikipedia.org/wiki/Stokes_flow"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

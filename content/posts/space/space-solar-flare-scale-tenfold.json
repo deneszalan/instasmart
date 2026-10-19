@@ -1,0 +1,68 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-solar-flare-scale-tenfold",
+  "field": "space",
+  "title": "Each step up the solar flare scale, from A to X, means 10 times more X-rays",
+  "emoji": "⚡",
+  "cover": {
+    "src": "x-flare-2014.jpg",
+    "alt": "Part of the Sun in teal ultraviolet light, its curved edge against black space, with bright knots of activity across its surface.",
+    "credit": "NASA’s Goddard Space Flight Center/SDO · Public domain"
+  },
+  "body": "A solar flare is a sudden flash from an active region, often around sunspots, as magnetic energy stored in the Sun’s atmosphere is released within minutes, heating gas to more than 10 million kelvin. Flares are graded by their peak X-ray brightness, measured by GOES satellites orbiting Earth, in the classes A, B, C, M and X, each **ten times** stronger than the one before. A number then gives finer steps: an X2 flare is twice as strong as an X1. The biggest ever measured, on 4 November 2003, saturated the detectors; it was first rated X28, and later analysis raised that to X45.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "x-flare-2014.mp4",
+      "poster": "x-flare-2014.jpg",
+      "alt": "Close-up of part of the Sun in teal ultraviolet light: one spot on its face suddenly brightens into a dazzling white blob, which then slowly fades.",
+      "caption": "19–20 December 2014: an X-class flare erupts on the Sun, seen in extreme ultraviolet light by NASA’s Solar Dynamics Observatory. About two hours pass in 22 seconds.",
+      "credit": "NASA’s Goddard Space Flight Center/SDO · Public domain · excerpt, cropped",
+      "href": "https://svs.gsfc.nasa.gov/4267/",
+      "music": "“Division” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "chart",
+      "heading": "Peak X-ray brightness, compared with an A-class flare",
+      "items": [
+        { "label": "A", "value": 1 },
+        { "label": "B", "value": 10 },
+        { "label": "C", "value": 100 },
+        { "label": "M", "value": 1000 },
+        { "label": "X", "value": 10000, "emphasis": true }
+      ],
+      "unit": "×",
+      "note": "Lower edge of each class; each letter is ten times the one before"
+    },
+    {
+      "type": "estimate",
+      "question": "How many times stronger is an X5 flare than an M5 flare?",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "answer": 10,
+      "unit": "times",
+      "explanation": "Each letter is ten times the one below it, and the number scales evenly within a class, so an X5 is ten times an M5 and five times an X1."
+    },
+    {
+      "type": "stat",
+      "value": "X45",
+      "label": "the estimated class of the biggest flare ever measured, on 4 November 2003",
+      "text": "It saturated the detectors on the GOES satellites. It was first rated X28; later study of its effects on Earth’s upper atmosphere raised that to X45."
+    },
+    {
+      "type": "quiz",
+      "question": "Who were the first people to see a solar flare, on 1 September 1859?",
+      "options": ["Richard Carrington and Richard Hodgson", "Galileo Galilei", "George Ellery Hale", "Samuel Schwabe"],
+      "answer": 0,
+      "explanation": "Carrington and Hodgson each independently spotted an unusually intense flare that was bright even in ordinary white light."
+    }
+  ],
+  "tags": ["sun", "flares", "spaceweather", "xrays", "sdo"],
+  "source": {
+    "label": "Wikipedia: Solar flare",
+    "url": "https://en.wikipedia.org/wiki/Solar_flare"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

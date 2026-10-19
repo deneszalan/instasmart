@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-mimosa-leaves-fold-touch",
+  "field": "biology",
+  "title": "Touch a sensitive plant and its leaves fold shut, powered by water pressure",
+  "emoji": "🌿",
+  "cover": {
+    "src": "mimosa-folding.jpg",
+    "alt": "A young sensitive-plant leaf glowing under a fluorescence microscope: a bright green stem with pairs of open leaflets.",
+    "credit": "Mano, Fujii, Sumikawa, Hiwatashi & Hasebe · CC BY 4.0"
+  },
+  "body": "*Mimosa pudica* folds its leaflets inward and droops when it is touched, shaken, blown on or warmed, then reopens a few minutes later. The touch is passed on as an electrical signal, an action potential, to a swollen joint at the base of each leaflet called a **pulvinus**. There, water moves out of the cells, they lose their pressure, and the leaflet sags shut. The plant may do this to put off plant-eaters, or to shade itself and save water.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "mimosa-folding.mp4",
+      "poster": "mimosa-folding.jpg",
+      "alt": "Under a fluorescence microscope, a pointed tip touches the leaf of a sensitive-plant seedling, and its leaflets fold up pair by pair until the leaf is closed.",
+      "caption": "Under a fluorescence microscope, a 10-day-old seedling is touched with a pointed tip, and its leaflets fold shut pair by pair.",
+      "credit": "Mano, Fujii, Sumikawa, Hiwatashi & Hasebe · CC BY 4.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Development-of-an-Agrobacterium-Mediated-Stable-Transformation-Method-for-the-Sensitive-Plant-pone.0088611.s003.ogv",
+      "music": "“Teddy Bear Waltz” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "How a touch closes a leaf",
+      "steps": [
+        { "icon": "👆", "label": "A leaflet is touched or shaken" },
+        { "icon": "⚡", "label": "An electrical signal travels to its base" },
+        { "icon": "💧", "label": "Pulvinus cells lose water and pressure" },
+        { "icon": "🍃", "label": "The leaflet folds, then reopens later" }
+      ],
+      "cycle": true
+    },
+    {
+      "type": "compare",
+      "heading": "Why bother? Two ideas",
+      "left": { "label": "Defence", "text": "A leaf that suddenly droops may put off plant-eaters." },
+      "right": { "label": "Shade", "text": "Folded leaves may lose less water to evaporation." }
+    },
+    {
+      "type": "text",
+      "heading": "Can a plant learn?",
+      "text": "In one experiment, plants were dropped again and again until they stopped folding. They went on ignoring drops for at least 28 days, yet still folded at once when shaken. Whether that counts as a kind of memory is still debated."
+    },
+    {
+      "type": "scramble",
+      "clue": "The swollen joint at the base of each leaflet that makes it fold",
+      "answer": "PULVINUS",
+      "detail": "Its cells gain and lose water. When they lose it, the leaflet sags shut. Folding costs the plant energy and cuts into its photosynthesis."
+    }
+  ],
+  "tags": ["plants", "movement", "botany"],
+  "source": { "label": "Wikipedia: Mimosa pudica", "url": "https://en.wikipedia.org/wiki/Mimosa_pudica" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

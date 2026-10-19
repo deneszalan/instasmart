@@ -1,0 +1,62 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-kilauea-summit-collapse-2018",
+  "field": "earth",
+  "title": "In 2018 a crater on Kīlauea deepened from 85 m to nearly half a kilometre",
+  "emoji": "🌋",
+  "body": "In May 2018, magma beneath the summit of Kīlauea, in Hawaiʻi, drained away down the volcano’s East Rift Zone, and on 3 May it began erupting from fissures in a housing subdivision, Leilani Estates. With its support gone, the summit caved in: on average every 28 hours the ground in the summit caldera dropped in a jolt, and the crater Halemaʻumaʻu went from **85 m deep to about 488 m**, while its width more than doubled. More than 60,000 earthquakes shook the area from May to August.",
+  "cover": {
+    "src": "summit-collapse.jpg",
+    "alt": "A wide, steep-walled crater with terraced, slumped walls on Kīlauea’s summit after the 2018 collapse, under a blue sky",
+    "credit": "USGS · Public domain"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "summit-collapse.mp4",
+      "poster": "summit-collapse.jpg",
+      "alt": "Time-lapse from a fixed camera on the crater rim: a gas plume rises from a lava lake, ash explosions billow up in May, then the crater floor and walls slump and sink, leaving a far wider, deeper pit.",
+      "caption": "One photo a day from a USGS camera, 14 April to 20 August 2018: the lava lake drains, explosions follow, then the crater floor sinks away until it stops in early August.",
+      "credit": "USGS Hawaiian Volcano Observatory · Public domain · excerpt",
+      "href": "https://www.usgs.gov/media/videos/changes-over-time-kilauea-april-august-2018",
+      "music": "“Mary Celeste” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "chart",
+      "heading": "Depth of Halemaʻumaʻu crater",
+      "unit": "m",
+      "items": [
+        { "label": "Before 2018", "value": 85 },
+        { "label": "After the collapse", "value": 488, "emphasis": true }
+      ],
+      "note": "From 280 ft to about 1,600 ft"
+    },
+    {
+      "type": "flow",
+      "heading": "How the summit fell in",
+      "steps": [
+        { "icon": "🔥", "label": "Magma flows out to the lower East Rift Zone" },
+        { "icon": "🕳️", "label": "The summit loses its support" },
+        { "icon": "📉", "label": "The caldera floor drops in jolts" },
+        { "icon": "🌫️", "label": "Earthquakes and ash plumes follow" }
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "Down in the lower East Rift Zone, how many homes did the 2018 lava flows destroy?",
+      "answer": "About 700",
+      "detail": "The flows covered 13.7 square miles of land, displaced more than 2,000 people and added 875 acres of new land to the island."
+    },
+    {
+      "type": "quiz",
+      "question": "On average, how often did the floor of Kīlauea’s summit caldera sink during the collapse?",
+      "options": ["Every 28 minutes", "Every 28 hours", "Every 28 days", "Only once, in August"],
+      "answer": 1,
+      "explanation": "The ground in the caldera dropped in a series of jolts, about once every 28 hours on average, until the collapses stopped in early August."
+    }
+  ],
+  "tags": ["volcanoes", "hawaii", "kilauea", "geology"],
+  "source": { "label": "National Park Service: 2018 Eruption and Summit Collapse", "url": "https://www.nps.gov/havo/learn/nature/2018-eruption.htm" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

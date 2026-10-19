@@ -1,0 +1,88 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-europa-clipper-giant-solar-arrays",
+  "field": "space",
+  "title": "To run on Jupiter’s weak sunlight, Europa Clipper needs solar wings 30 metres across",
+  "emoji": "🛰️",
+  "cover": {
+    "src": "array-unfolds.jpg",
+    "alt": "In a huge white clean room, a tall dark folded solar array stands beside the Europa Clipper spacecraft, with technicians in clean suits nearby.",
+    "credit": "NASA/Glenn Benson · Public domain"
+  },
+  "body": "At Jupiter, sunlight is only about **4% as strong** as it is near Earth, so a spacecraft that runs on solar power there needs enormous panels. NASA’s Europa Clipper, the largest interplanetary spacecraft the agency has launched, carries two arrays that give it a span of 30.5 m (100 ft), yet at Jupiter they will make only about 600 watts. Engineers chose solar power because it was cheaper than a plutonium generator and still practical. After a 2.9-billion-kilometre voyage it is due at Jupiter in April 2030, to fly past the icy moon Europa again and again, at times just 25 km above its surface.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "array-unfolds.mp4",
+      "poster": "array-unfolds.jpg",
+      "alt": "A wide view of a white clean room: a tall stack of dark solar panels beside the spacecraft swings open panel by panel into a long flat wing of solar cells, while technicians in blue suits stand by on the floor.",
+      "caption": "August 2024, Kennedy Space Center: one of Europa Clipper’s solar arrays unfolds beside the spacecraft in a clean room, its folded panels opening one after another. Sped up.",
+      "credit": "NASA/Glenn Benson · Public domain · excerpt, sped up 2×",
+      "href": "https://images.nasa.gov/details/KSC-20240821-MH-GEB01-0001-Europa_Clipper_Solar_Array_Deployment_PHSF-M8663",
+      "music": "“Adding the Sun” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "pictogram",
+      "heading": "At Jupiter, sunlight is only about 4% as strong as it is in Earth’s orbit",
+      "icon": "☀️",
+      "total": 100,
+      "count": 4,
+      "note": "Jupiter is about five times farther from the Sun than Earth is"
+    },
+    {
+      "type": "reveal",
+      "prompt": "Europa Clipper’s solar wings span 30.5 metres. How much power will they make at Jupiter?",
+      "answer": "Only about 600 watts",
+      "detail": "Near Earth the same panels would make far more. Out at Jupiter they have to catch every bit of the faint sunlight."
+    },
+    {
+      "type": "timeline",
+      "heading": "The long road to Europa",
+      "events": [
+        {
+          "when": "14 Oct 2024",
+          "text": "Launch on a Falcon Heavy"
+        },
+        {
+          "when": "1 Mar 2025",
+          "text": "A gravity boost from Mars"
+        },
+        {
+          "when": "Dec 2026",
+          "text": "Due: a gravity boost from Earth"
+        },
+        {
+          "when": "Apr 2030",
+          "text": "Due to arrive at Jupiter"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why did engineers give Europa Clipper solar panels instead of a nuclear power source?",
+      "options": [
+        "Solar was cheaper and still practical",
+        "Nuclear power is banned in space",
+        "Sunlight is stronger at Jupiter",
+        "The panels shield it from radiation"
+      ],
+      "answer": 0,
+      "explanation": "Solar power was cheaper than a plutonium-fuelled generator and practical to use, even with sunlight at Jupiter only about 4% as strong as near Earth."
+    }
+  ],
+  "tags": [
+    "europa",
+    "jupiter",
+    "solarpower",
+    "nasa"
+  ],
+  "source": {
+    "label": "Wikipedia: Europa Clipper",
+    "url": "https://en.wikipedia.org/wiki/Europa_Clipper"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-19"
+}

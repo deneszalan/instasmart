@@ -1,0 +1,56 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-euglena-plant-and-animal",
+  "field": "biology",
+  "title": "Euglena can feed like a plant in the light and like an animal in the dark",
+  "emoji": "🟢",
+  "cover": {
+    "src": "euglena.jpg",
+    "alt": "Two green, single-celled Euglena under a microscope: one long and spindle-shaped, the other rounded.",
+    "credit": "Deuterostome · CC BY-SA 3.0"
+  },
+  "body": "Most species of *Euglena*, single-celled organisms common in pond water, carry chloroplasts and make their food from sunlight, as plants do. Without light, they can survive by taking in organic matter instead, feeding the way animals do. That mix puzzled early naturalists, who sorted all life into just two kingdoms, and creatures like it prompted Ernst Haeckel to add a third: the **Protista**. Euglena has no cell wall, either: strips of protein in its flexible outer layer slide over one another, so the cell can squirm and change shape.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "euglena.mp4",
+      "poster": "euglena.jpg",
+      "alt": "A green Euglena cell under the microscope shortens from a long spindle into a plump teardrop and wriggles, beside a second, rounded green cell.",
+      "caption": "Under the microscope, a Euglena squeezes itself from a long spindle into a plump teardrop and back again, a squirming movement called metaboly.",
+      "credit": "Deuterostome · CC BY-SA 3.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Euglena_metaboly_and_swimming_movement.ogv",
+      "music": "“Fuzzball Parade” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Plant or animal?",
+      "left": { "label": "Like a plant", "text": "Chloroplasts inside the cell make food from sunlight." },
+      "right": { "label": "Like an animal", "text": "In the dark it can live on organic matter instead, and it moves about, swimming with a long flagellum." }
+    },
+    {
+      "type": "text",
+      "heading": "An eyespot that doesn't see",
+      "text": "Near its front, Euglena has a red eyespot. The spot itself is not thought to sense light. It shades a light detector at the base of the flagellum, and as the cell rotates, the changing shadow helps it find the light and swim towards it."
+    },
+    {
+      "type": "timeline",
+      "heading": "Naming a puzzle",
+      "events": [
+        { "when": "1786", "text": "O. F. Müller describes it as Cercaria viridis, noting its changeable shape" },
+        { "when": "1830", "text": "C. G. Ehrenberg renames it Euglena viridis and spots its eyespot" },
+        { "when": "1866", "text": "Ernst Haeckel proposes a third kingdom of life, Protista" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What lets Euglena change shape so easily?",
+      "options": ["Strips in its outer layer slide", "A hard shell that folds up", "Water pumped into a bubble", "Its chloroplasts pushing out"],
+      "answer": 0,
+      "explanation": "Euglena has no cell wall. Its pellicle, a layer of protein strips spiralling around the cell, lets the strips slide past each other in the movement called metaboly."
+    }
+  ],
+  "tags": ["microbes", "protists", "microscopy", "cells"],
+  "source": { "label": "Wikipedia: Euglena", "url": "https://en.wikipedia.org/wiki/Euglena" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

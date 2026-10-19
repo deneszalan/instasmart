@@ -1,0 +1,66 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-ozone-treaty-every-country",
+  "field": "earth",
+  "title": "The ozone treaty was the first in UN history to be ratified by every country",
+  "emoji": "🛡️",
+  "body": "Ozone high in the atmosphere is Earth's natural sunscreen, shielding life from the Sun's ultraviolet light. In the early 1970s [scientists recognised](https://svs.gsfc.nasa.gov/31392/) that CFCs, chemicals then used as refrigerants and in spray cans, could destroy it, and by the 1980s a hole was opening over Antarctica every southern spring. In 1987 governments agreed the **Montreal Protocol** to phase out CFCs and similar chemicals; it now has 198 parties, every UN member and a few more, the first universally ratified treaty in UN history. Ozone levels have been fairly stable since the mid-1990s, and a 2022 assessment projects that ozone over Antarctica will be back to 1980 levels by about 2066.",
+  "cover": {
+    "src": "ozone-hole.jpg",
+    "alt": "Globe centred on Antarctica in 1979, mostly green and yellow ozone with only light blue over the continent, beside an almost empty graph",
+    "credit": "NASA Scientific Visualization Studio · Public domain"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "ozone-hole.mp4",
+      "poster": "ozone-hole.jpg",
+      "alt": "Antarctica seen from above, one frame per year from 1979 to 2025. A deep blue and purple hole of low ozone grows over the continent through the 1980s and stays large, while a graph beside it climbs from near zero and then levels off with ups and downs.",
+      "caption": "The ozone hole on its biggest day of each year, 1979 to 2025, sped up 1.5×. Blue and purple mark the least ozone. The graph's peak areas run from 1.1 to 29.9 million km².",
+      "credit": "NASA Scientific Visualization Studio · Public domain · excerpt, sped up 1.5×",
+      "href": "https://svs.gsfc.nasa.gov/31392/",
+      "music": "“Rumination” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "chart",
+      "heading": "The ozone hole on its biggest day of the year",
+      "items": [
+        { "label": "1979", "value": 1.1 },
+        { "label": "Largest on record", "value": 29.9, "emphasis": true },
+        { "label": "2025", "value": 22.86 }
+      ],
+      "unit": "million km²",
+      "note": "From NASA's satellite record; 2025 peaked on 9 September"
+    },
+    {
+      "type": "quote",
+      "text": "Perhaps the single most successful international agreement to date has been the Montreal Protocol.",
+      "attribution": "Kofi Annan, then UN Secretary-General"
+    },
+    {
+      "type": "spectrum",
+      "heading": "When ozone should be back to 1980 levels",
+      "min": 2020,
+      "max": 2080,
+      "format": "year",
+      "ends": ["2020", "2080"],
+      "marks": [
+        { "label": "Most of the world", "value": 2040 },
+        { "label": "The Arctic", "value": 2045 },
+        { "label": "Antarctica", "value": 2066, "emphasis": true }
+      ],
+      "note": "Projections from the 2022 scientific assessment of ozone depletion"
+    },
+    {
+      "type": "quiz",
+      "question": "Look at the dates in the clip. When does the ozone hole reach its biggest each year?",
+      "options": ["September or October", "June or July", "December or January", "March or April"],
+      "answer": 0,
+      "explanation": "It peaks in the southern spring, in September or early October. In 2025 the hole was biggest on 9 September, at 22.86 million km²."
+    }
+  ],
+  "tags": ["ozone", "atmosphere", "antarctica", "climate"],
+  "source": { "label": "Wikipedia: Montreal Protocol", "url": "https://en.wikipedia.org/wiki/Montreal_Protocol" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

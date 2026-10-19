@@ -1,0 +1,92 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-water-drops-orbit-charged-needle",
+  "field": "physics",
+  "title": "In orbit, a drop of water can circle a charged knitting needle like a tiny moon",
+  "emoji": "🪡",
+  "cover": {
+    "src": "needle-orbit.jpg",
+    "alt": "A pale blue knitting needle floating against a dark background aboard the space station, with a tiny water droplet just above it.",
+    "credit": "NASA Johnson · Public domain"
+  },
+  "body": "In 2012, aboard the International Space Station, astronaut Don Pettit charged knitting needles by rubbing them with paper, then released charged water droplets near them from a syringe. Electric attraction pulls each droplet towards the needle, while its sideways speed carries it past, so some droplets loop round and round, much as gravity and speed keep a moon in orbit. On Earth the drops would simply fall; aboard the station they are in free fall along with everything else, so the weak electric force is enough to steer them. NASA says a simulation that included air drag matched the orbits he filmed.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "needle-orbit.mp4",
+      "poster": "needle-orbit.jpg",
+      "alt": "A blue knitting needle lies across a dark background. A tiny bright water droplet swings down beneath it, round the tip, back over the top and down again, looping around the needle.",
+      "caption": "Space station, 2012: a tiny water droplet loops around Don Pettit's charged knitting needle, passing under it, round the tip and back over the top.",
+      "credit": "NASA Johnson · Public domain · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Science_off_the_Sphere-_Knitting_Needle_Experiment.webm",
+      "music": "“Soaring” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "reveal",
+      "prompt": "Pettit needed electrically charged knitting needles. How did he charge them aboard the space station?",
+      "answer": "He rubbed them with paper",
+      "detail": "Rubbing transfers electric charge between materials, the same static you get from a balloon rubbed on a jumper."
+    },
+    {
+      "type": "flow",
+      "heading": "How a droplet ends up in orbit",
+      "steps": [
+        {
+          "icon": "📄",
+          "label": "Rubbing with paper charges the needle"
+        },
+        {
+          "icon": "💧",
+          "label": "A syringe releases charged water droplets"
+        },
+        {
+          "icon": "🧲",
+          "label": "Electric attraction pulls a drop inwards"
+        },
+        {
+          "icon": "🔄",
+          "label": "Its sideways speed carries it round"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Two kinds of orbit",
+      "left": {
+        "label": "A moon",
+        "text": "Gravity pulls it towards its planet; its sideways speed keeps it from falling in."
+      },
+      "right": {
+        "label": "A droplet",
+        "text": "Electric attraction pulls it towards the needle; its sideways speed keeps it circling."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "Why can a weak electric force steer the drops aboard the station, but not on Earth?",
+      "options": [
+        "Everything there is in free fall",
+        "There is no air in the station",
+        "Water can't freeze in orbit",
+        "Space makes needles stronger"
+      ],
+      "answer": 0,
+      "explanation": "The station and everything in it are falling around Earth together, so nothing presses the drops downwards. On Earth they would drop to the floor long before completing an orbit."
+    }
+  ],
+  "tags": [
+    "electrostatics",
+    "orbits",
+    "microgravity",
+    "iss"
+  ],
+  "source": {
+    "label": "NASA: Don Pettit's science of opportunity on the space station",
+    "url": "https://www.nasa.gov/missions/station/iss-research/nasa-astronaut-don-pettits-science-of-opportunity-on-space-station"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

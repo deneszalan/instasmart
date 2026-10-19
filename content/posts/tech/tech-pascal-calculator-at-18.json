@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-pascal-calculator-at-18",
+  "field": "tech",
+  "title": "At 18, Blaise Pascal began building a calculator to help his father add up taxes",
+  "emoji": "🧮",
+  "cover": {
+    "src": "pascaline.jpg",
+    "alt": "A brass box on a wooden table, with five toothed dials along the front and five small windows showing digits along the back.",
+    "credit": "Clermont Auvergne Métropole/Pierre Tribhou · CC BY-SA 4.0"
+  },
+  "body": "In 1642 the teenage **Blaise Pascal** started work on a calculating machine to ease the work of his father, the supervisor of taxes in Rouen. On the **Pascaline**, you dial each digit with a stylus and the total appears in the windows above. Its cleverest part is the carry: when a wheel passes from 9 back to 0, a little lever called a **sautoir**, moved by gravity alone, nudges the next wheel on by one. The gears turn only one way, so the machine can only add; to subtract, the user works with nines’ complements.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "pascaline.mp4",
+      "poster": "pascaline.jpg",
+      "alt": "A hand uses a thin stylus to turn the toothed dials at the front of a brass Pascaline, one after another, while the digits in the small windows along the back change.",
+      "caption": "A Pascaline demonstrated by the Muséum Henri-Lecoq in Clermont-Ferrand: numbers are dialled in with a stylus, and the total appears in the windows along the top.",
+      "credit": "Clermont Auvergne Métropole/Pierre Tribhou · CC BY-SA 4.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Pascaline_Clermont-Ferrand_2023.ogv",
+      "music": "“Village Consort” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "estimate",
+      "question": "How many prototypes did Pascal build before he showed his machine to the public in 1645?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 50,
+      "explanation": "About 50, built over three years, before he presented the device in 1645."
+    },
+    {
+      "type": "timeline",
+      "heading": "The rise and fall of the Pascaline",
+      "events": [
+        { "when": "1642", "text": "Pascal, aged 18, starts work on the machine" },
+        { "when": "1645", "text": "He presents it to the public" },
+        { "when": "1649", "text": "Louis XIV grants him the sole right to make calculators in France" },
+        { "when": "1654", "text": "About 20 sold; cost and complexity end production" }
+      ]
+    },
+    {
+      "type": "pictogram",
+      "heading": "Of the roughly 20 Pascalines sold, nine survive",
+      "icon": "🧮",
+      "total": 20,
+      "count": 9,
+      "note": "Two of them are in Pascal’s home town, Clermont-Ferrand"
+    },
+    {
+      "type": "quiz",
+      "question": "The Pascaline’s gears turn only one way. What does that mean?",
+      "options": [
+        "It can only add",
+        "It can only count to nine",
+        "It has to be reset every sum",
+        "It works only with money"
+      ],
+      "answer": 0,
+      "explanation": "With wheels that turn in one direction only, it can only add. Subtraction is done with nines’ complements, a trick that turns it into an addition."
+    }
+  ],
+  "tags": ["calculators", "computing", "history"],
+  "source": {
+    "label": "Wikipedia: Pascal’s calculator",
+    "url": "https://en.wikipedia.org/wiki/Pascal%27s_calculator"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

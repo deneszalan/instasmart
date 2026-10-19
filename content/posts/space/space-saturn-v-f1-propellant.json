@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-saturn-v-f1-propellant",
+  "field": "space",
+  "title": "The Saturn V’s five main engines burned almost 13 tonnes of propellant every second",
+  "emoji": "🚀",
+  "cover": {
+    "src": "saturn-v-ignition.jpg",
+    "alt": "The bell-shaped engines of a Saturn V rocket blasting white-hot flame beside the launch tower.",
+    "credit": "NASA/MSFC · Public domain"
+  },
+  "body": "The first stage of the Saturn V moon rocket had five **F-1** engines, and each one burned about 2,578 kg of liquid oxygen and RP-1 kerosene a second. Together that is almost 13 tonnes a second, for about two and a half minutes. The F-1 is still the most powerful single-chamber liquid-fuelled rocket engine ever developed. Taming it was hard: early test engines suffered combustion instability that sometimes destroyed them, and engineers found the cure by setting off small explosive charges while the engine fired, to see how the chamber responded, then trying fuel-injector designs until the burning stayed stable.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "saturn-v-ignition.mp4",
+      "poster": "saturn-v-ignition.jpg",
+      "alt": "Launch-pad film of a Saturn V: the engine bells light up from below, flakes shower down the rocket’s side, the engines blaze at full power beside the tower, and the rocket’s side slides up past the camera.",
+      "caption": "Cameras on the launch pad film a Saturn V: its five engines light, flakes shower down its side, and the rocket begins to climb past the tower.",
+      "credit": "NASA/MSFC · Public domain · excerpt",
+      "href": "https://images.nasa.gov/details/Ultimate%20Saturn%20V%20Launch%20w%20Enhanced%20Sound",
+      "music": "“Tempting Secrets” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "estimate",
+      "question": "How many kilograms of propellant did ONE F-1 engine burn every second?",
+      "min": 0,
+      "max": 10000,
+      "step": 1,
+      "answer": 2578,
+      "unit": "kg",
+      "explanation": "About 2,578 kg, more than two tonnes a second. Five of them on the first stage made almost 13 tonnes a second."
+    },
+    {
+      "type": "chart",
+      "heading": "What one F-1 engine burned each second",
+      "items": [
+        {
+          "label": "Liquid oxygen",
+          "value": 1789
+        },
+        {
+          "label": "RP-1 kerosene",
+          "value": 788
+        }
+      ],
+      "unit": "kg",
+      "note": "The oxygen outweighed the fuel more than two to one"
+    },
+    {
+      "type": "stat",
+      "value": "55,000 hp",
+      "label": "the power of the turbine that drove each F-1’s pumps",
+      "text": "That is about 41 megawatts, spinning at 5,500 rpm, just to force propellant into the engine fast enough."
+    },
+    {
+      "type": "quiz",
+      "question": "To track down the F-1’s dangerous combustion instability, what did engineers do?",
+      "options": [
+        "Set off small bombs as it fired",
+        "Swapped kerosene for hydrogen",
+        "Split it into five small engines",
+        "Fired it only in short bursts"
+      ],
+      "answer": 0,
+      "explanation": "Small charges jolted the running engine so engineers could see how it responded. They tested injector designs until the engine damped out even these jolts by itself."
+    }
+  ],
+  "tags": [
+    "rockets",
+    "apollo",
+    "engines",
+    "nasa"
+  ],
+  "source": {
+    "label": "Wikipedia: Rocketdyne F-1",
+    "url": "https://en.wikipedia.org/wiki/Rocketdyne_F-1"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-black-hole-disk-seen-over-the-top",
+  "field": "space",
+  "title": "A black hole bends light so much that you could see the back of its disc over the top",
+  "emoji": "🕳️",
+  "cover": {
+    "src": "black-hole-disk.jpg",
+    "alt": "Computer visualisation of a black hole: a glowing orange disc of gas seen edge-on, with a bright arch bulging over the black centre and a smaller arch below it.",
+    "credit": "NASA’s Goddard Space Flight Center/Jeremy Schnittman · Public domain"
+  },
+  "body": "Gas falling into a black hole often collects in a thin, hot, spinning disc. Seen almost edge-on, you would expect a flat line, but the black hole’s gravity bends light passing near it. Light from the part of the disc **behind** the black hole is bent up and over the top, so the far side appears as a glowing arch, and light from the underside of the far disc is bent down to make a second arch below. Closest in, some light loops around the black hole two, three or more times before escaping, drawing a thin bright ring around its dark shadow.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "black-hole-disk.mp4",
+      "poster": "black-hole-disk.jpg",
+      "alt": "Computer visualisation: a glowing orange disc of gas around a black hole, seen edge-on with arches above and below the black centre; the view swings over the top to show the disc face-on as a swirling ring, then back round underneath.",
+      "caption": "Computer visualisation: one full trip around a black hole and its disc of hot gas. Seen edge-on, the disc’s far side appears above and below the black hole, bent there by its gravity.",
+      "credit": "NASA’s Goddard Space Flight Center/Jeremy Schnittman · Public domain · excerpt",
+      "href": "https://svs.gsfc.nasa.gov/13326/",
+      "music": "“Phantom from Space” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "image",
+      "src": "black-hole-labelled.jpg",
+      "alt": "Labelled still from the visualisation: the arch above is marked as the image of the disc’s far side, the arch below as its underside, with the photon ring, the black hole’s shadow, Doppler beaming and the accretion disc also labelled.",
+      "caption": "What you are looking at: the arch on top is the far side of the disc, the arch below is its underside, and a thin photon ring outlines the shadow.",
+      "fit": "contain",
+      "credit": "NASA’s Goddard Space Flight Center/Jeremy Schnittman · Public domain"
+    },
+    {
+      "type": "reveal",
+      "prompt": "Seen from the side, the disc is brighter on the left than on the right. Why?",
+      "answer": "Gas on the left is rushing towards us",
+      "detail": "Gas moving towards us so fast gets a boost in brightness from Einstein’s relativity, and gas moving away looks dimmer. Seen face-on, the effect disappears."
+    },
+    {
+      "type": "stat",
+      "value": "2×",
+      "label": "the size of the event horizon: roughly how big a black hole’s shadow looks",
+      "text": "The event horizon is the point of no return. Its shadow is outlined by the photon ring, light that has circled the black hole before escaping."
+    },
+    {
+      "type": "quiz",
+      "question": "What did the Event Horizon Telescope team release on 10 April 2019?",
+      "options": ["The first image of a black hole’s shadow", "A recording of a black hole’s sound", "Proof that black holes suck in stars", "A map of the whole Milky Way"],
+      "answer": 0,
+      "explanation": "Using radio telescopes, the team made the first-ever image of a black hole’s shadow, at the heart of the galaxy M87."
+    }
+  ],
+  "tags": ["blackholes", "gravity", "light", "relativity", "nasa"],
+  "source": {
+    "label": "NASA: NASA Visualization Shows a Black Hole’s Warped World",
+    "url": "https://www.nasa.gov/universe/nasa-visualization-shows-a-black-holes-warped-world/"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

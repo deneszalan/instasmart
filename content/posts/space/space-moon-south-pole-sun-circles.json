@@ -1,0 +1,97 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-moon-south-pole-sun-circles",
+  "field": "space",
+  "title": "At the Moon’s poles the Sun just circles the horizon, so some craters never see daylight",
+  "emoji": "🌑",
+  "cover": {
+    "src": "pole-shadows.jpg",
+    "alt": "Computer model of grey, cratered lunar highlands near the Moon’s south pole, half in sunlight and half in deep black shadow.",
+    "credit": "NASA/GSFC Scientific Visualization Studio · Public domain"
+  },
+  "body": "Near the Moon’s north and south poles, the Sun is **never more than 1.5° above or below the horizon**. It doesn’t rise and set as it does elsewhere: as the Moon turns, the Sun skims along the horizon all the way round, and shadows sweep across the ground like the hands of a clock, cast by mountains as far as 120 km away. With the Sun always that low, it can never reach the floors of some deep craters. These permanently shadowed regions are among the coldest places in the Solar System, cold enough to trap water ice that would turn straight to vapour in the sunshine almost everywhere else on the Moon.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "pole-shadows.mp4",
+      "poster": "pole-shadows.jpg",
+      "alt": "Computer animation looking down on cratered grey lunar highlands: patches of sunlight and long black shadows slide and swing across the ground, the whole area goes almost dark for a moment, then light sweeps back from another direction while some crater floors stay black.",
+      "caption": "Computer model from Lunar Reconnaissance Orbiter data: about one lunar day, roughly a month, near the Moon’s south pole, sped up. The low Sun circles the sky, so shadows swing all the way round.",
+      "credit": "NASA/GSFC Scientific Visualization Studio · Public domain · excerpt, cropped, sped up 1.5×",
+      "href": "https://svs.gsfc.nasa.gov/4893/",
+      "music": "“Send for the Horses” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "place",
+      "question": "At its highest, how many degrees above the horizon does the Sun get at the Moon’s poles?",
+      "min": 0,
+      "max": 30,
+      "step": 0.5,
+      "answer": 1.5,
+      "unit": "°",
+      "ends": ["On the horizon", "30°"],
+      "hints": [
+        {
+          "label": "Earth’s poles",
+          "value": 23.4
+        }
+      ],
+      "explanation": "No more than about 1.5°. At Earth’s poles the Sun climbs to 23.4° by midsummer, but the Moon’s Sun always hugs the horizon, so its shadows stay long."
+    },
+    {
+      "type": "flow",
+      "heading": "How a crater can hold ice next to the Sun",
+      "steps": [
+        {
+          "icon": "🌅",
+          "label": "The Sun only skims the horizon"
+        },
+        {
+          "icon": "⛰️",
+          "label": "Crater rims block it from deep floors"
+        },
+        {
+          "icon": "🥶",
+          "label": "The floors stay in permanent shadow"
+        },
+        {
+          "icon": "🧊",
+          "label": "Water ice stays frozen there"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "120 km",
+      "label": "how far away the mountains can be that cast shadows across this landscape",
+      "text": "With the Sun this low, a peak’s shadow can stretch that far across the ground."
+    },
+    {
+      "type": "quiz",
+      "question": "Why can water ice last on the floors of some polar craters on the Moon?",
+      "options": [
+        "Sunlight never reaches them",
+        "They are lined with metal",
+        "The poles have a thin atmosphere",
+        "Comets refill them every year"
+      ],
+      "answer": 0,
+      "explanation": "In permanent shadow they are among the coldest places in the Solar System. In the Moon’s airless sunshine the ice would turn straight to vapour."
+    }
+  ],
+  "tags": [
+    "moon",
+    "ice",
+    "shadows",
+    "lro"
+  ],
+  "source": {
+    "label": "NASA Scientific Visualization Studio: Shadows near the Moon’s South Pole",
+    "url": "https://svs.gsfc.nasa.gov/4893/"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-19"
+}

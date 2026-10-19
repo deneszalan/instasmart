@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-hunga-tonga-plume-57-km",
+  "field": "earth",
+  "title": "Tonga’s 2022 eruption threw a plume 57 km high, the tallest since Krakatoa in 1883",
+  "emoji": "🌋",
+  "body": "At 17:14 local time on 15 January 2022, the mostly underwater volcano Hunga Tonga–Hunga Haʻapai, in the South Pacific, exploded. Its eruption column climbed to about **57 km**, punching through the stratosphere into the mesosphere, the highest recorded since Krakatoa’s in 1883. Weather satellites watched the plume burst through the clouds and spread into giant umbrella-shaped clouds. It was the largest volcanic eruption since Mount Pinatubo in 1991, and its bangs were heard in Alaska, about 9,300 km away.",
+  "cover": {
+    "src": "tonga-plume.jpg",
+    "alt": "Satellite view from above of a round grey plume with ripples, bursting up through a sheet of white cloud over the ocean",
+    "credit": "NOAA · Public domain"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "tonga-plume.mp4",
+      "poster": "tonga-plume.jpg",
+      "alt": "Satellite time-lapse looking down on the South Pacific: a dark dot appears in the clouds, swells into a rippled grey disc, and spreads into a vast pale umbrella cloud as evening darkness sweeps across.",
+      "caption": "15 January 2022, seen by a GOES weather satellite: the plume punches up through the clouds and spreads out into a vast umbrella cloud as night falls.",
+      "credit": "NOAA · Public domain · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:The_Hunga_Tonga-Hunga_Ha%E2%80%99apai_Eruption,_a_Multi-Hazard_Event_(NESDIS_2022-01-26_Tonga_EfO_4k_clean).webm",
+      "music": "“The Descent” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "chart",
+      "heading": "How high the eruption reached",
+      "unit": "km",
+      "items": [
+        { "label": "Lower umbrella cloud", "value": 17 },
+        { "label": "Upper umbrella cloud", "value": 31 },
+        { "label": "Top of Tonga’s column", "value": 57, "emphasis": true },
+        { "label": "Krakatoa’s column, 1883", "value": 80 }
+      ],
+      "note": "Krakatoa’s figure is an upper estimate: its column rose “up to 80 km”"
+    },
+    {
+      "type": "reveal",
+      "prompt": "People in Fiji, 700 km away, heard what sounded like thunder. What is the farthest place the bangs were reported?",
+      "answer": "Anchorage, Alaska, about 9,300 km away",
+      "detail": "A series of bangs was heard there at around 3:30 in the morning local time, hours after the blast."
+    },
+    {
+      "type": "stat",
+      "value": "146 million t",
+      "label": "of seawater blasted into the stratosphere",
+      "text": "That was about 10% of the water vapour the stratosphere normally holds, and the excess is expected to linger for 5 to 10 years."
+    },
+    {
+      "type": "quiz",
+      "question": "Which layer of the atmosphere did the top of the plume break into?",
+      "options": ["The troposphere", "The stratosphere", "The mesosphere", "The thermosphere"],
+      "answer": 2,
+      "explanation": "At about 57 km the column passed right through the stratosphere and broke into the mesosphere above it, the highest column on record since Krakatoa."
+    }
+  ],
+  "tags": ["volcanoes", "tonga", "eruptions", "satellites"],
+  "source": {
+    "label": "Wikipedia: 2022 Hunga Tonga–Hunga Haʻapai eruption and tsunami",
+    "url": "https://en.wikipedia.org/wiki/2022_Hunga_Tonga%E2%80%93Hunga_Ha%CA%BBapai_eruption_and_tsunami"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

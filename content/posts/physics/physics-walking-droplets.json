@@ -1,0 +1,67 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-walking-droplets",
+  "field": "physics",
+  "title": "A droplet bouncing on a shaking bath walks along by surfing its own ripples",
+  "emoji": "💧",
+  "cover": {
+    "src": "superwalker.jpg",
+    "alt": "A dark, shiny droplet sitting on a smooth greenish liquid surface, with faint ripples around it.",
+    "credit": "Rahil Valani · CC BY 4.0"
+  },
+  "body": "Shake a bath of silicone oil up and down and a droplet of the same oil can bounce on it instead of merging, because a thin layer of air stays trapped beneath it. Each bounce sends out ripples, and with the right shaking the droplet is pushed along by its own waves, so it **walks** across the surface. Ordinary walkers are about 1 mm across and move at about 1 cm a second. [In 2019, researchers in Australia](https://phys.org/news/2019-07-droplets-liquid-surface.html) found that shaking the bath at two frequencies at once makes bigger, faster 'superwalkers', like the one filmed here.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "superwalker.mp4",
+      "poster": "superwalker.jpg",
+      "alt": "Close-up high-speed footage of a dark droplet bouncing again and again on a greenish liquid surface. Rings of ripples spread from it, and its reflection appears below it at each impact, as it drifts steadily to the right.",
+      "caption": "High-speed footage of a superwalker: the droplet bounces on a vibrating bath of the same liquid, sending out ripples as it travels across the surface.",
+      "credit": "Rahil Valani · CC BY 4.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Superwalking_droplet.webm.480p.vp9_(1).webm",
+      "music": "“Myst on the Moor” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "reveal",
+      "prompt": "The droplet is made of the same oil as the bath. Why doesn't it simply merge into it?",
+      "answer": "A thin cushion of air",
+      "detail": "Each time it lands, a layer of air is trapped beneath it, and the bath's shaking launches it again before the air can drain away."
+    },
+    {
+      "type": "compare",
+      "heading": "Walker vs superwalker",
+      "left": {
+        "label": "Walker",
+        "text": "Bath shaken at one frequency, such as 80 Hz. About 1 mm across, moving at about 1 cm a second."
+      },
+      "right": {
+        "label": "Superwalker",
+        "text": "Bath shaken at 80 Hz and 40 Hz together. Up to 2.8 mm across, moving at about 5 cm a second."
+      }
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": ["Fact", "Myth"],
+      "items": [
+        { "text": "Walkers can cross barriers, less often as they widen", "bin": 0 },
+        { "text": "Pairs of walkers orbit at set distances", "bin": 0 },
+        { "text": "Every team has seen double-slit interference", "bin": 1 },
+        { "text": "The droplets obey quantum mechanics", "bin": 1 }
+      ],
+      "explanation": "Walkers are entirely classical, yet mimic tunnelling and quantised orbits. In 2015, three teams found no double-slit interference."
+    },
+    {
+      "type": "text",
+      "heading": "Quantum lookalikes",
+      "text": "Yves Couder's lab was the first to study walkers systematically, in 2005. They have since become a tabletop analogy for some quantum systems, though it has limits: their paths are easily disturbed by the container's walls and by air currents."
+    }
+  ],
+  "tags": ["fluids", "waves", "quantum", "droplets"],
+  "source": {
+    "label": "Wikipedia: Hydrodynamic quantum analogs",
+    "url": "https://en.wikipedia.org/wiki/Hydrodynamic_quantum_analogs"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

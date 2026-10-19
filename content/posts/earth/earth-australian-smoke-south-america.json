@@ -1,0 +1,62 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-australian-smoke-south-america",
+  "field": "earth",
+  "title": "Smoke from Australia's 2019–20 bushfires drifted all the way to South America",
+  "emoji": "🌫️",
+  "body": "Australia's Black Summer fires [burnt more than 24 million hectares](https://en.wikipedia.org/wiki/2019%E2%80%9320_Australian_bushfire_season), and the worst of them, around the new year, built towering fire clouds that lifted smoke **over 10 km** up. Up there sunlight heated the soot, so the smoke kept rising on its own: within two weeks of 6 January 2020 the plume's top had climbed deep into the stratosphere, higher than any wildfire plume NASA's CALIPSO satellite had tracked before. Fast high-altitude winds then carried it east across the South Pacific to South America, and NASA expected it to [travel on around the globe back to Australia](https://science.nasa.gov/resource/global-transport-of-australian-bushfire-smoke/).",
+  "cover": {
+    "src": "smoke.jpg",
+    "alt": "World map of airborne particles in a computer model, with orange dust over the Sahara and a red smear of smoke over south-eastern Australia",
+    "credit": "NASA GMAO · Public domain"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "smoke.mp4",
+      "poster": "smoke.jpg",
+      "alt": "World map of airborne particles. Red, orange and white streaks of smoke pour off south-eastern Australia, stretch east across the South Pacific, reach the tip of South America and drift on into the South Atlantic.",
+      "caption": "NASA's computer model of particles in the air, 22 December 2019 to 28 January 2020, about 2.5 days every second. Red to white is carbon from smoke; orange is desert dust.",
+      "credit": "NASA Global Modeling and Assimilation Office · Public domain · excerpt",
+      "href": "https://svs.gsfc.nasa.gov/31100/",
+      "music": "“Lost Time” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "estimate",
+      "question": "Within two weeks of 6 January 2020, how high did the top of the smoke plume rise?",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "answer": 25,
+      "unit": "km",
+      "explanation": "About 25 km, well into the stratosphere. CALIPSO first measured the smoke at 15 to 19 km on 6 January; sunlight warming the soot kept lifting it."
+    },
+    {
+      "type": "flow",
+      "heading": "How the smoke climbed so high",
+      "steps": [
+        { "icon": "🔥", "label": "Huge fires build their own storm clouds" },
+        { "icon": "☁️", "label": "The clouds lift smoke over 10 km up" },
+        { "icon": "☀️", "label": "Sunlight heats the soot in the smoke" },
+        { "icon": "⬆️", "label": "The warm smoke keeps rising on its own" }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "24 million ha",
+      "label": "burnt by the 2019–20 fires, from June 2019 to March 2020",
+      "text": "About 240,000 km². The most severe fires hit in December 2019 and January 2020."
+    },
+    {
+      "type": "quiz",
+      "question": "How much carbon monoxide did the fires push into the stratosphere, compared with British Columbia's huge 2017 fires?",
+      "options": ["About three times as much", "About the same", "About half as much", "About a tenth as much"],
+      "answer": 0,
+      "explanation": "NASA's Aura satellite suggests about three times as much: more, in that January, than any other event it had seen outside the tropics in 15 years."
+    }
+  ],
+  "tags": ["fire", "smoke", "australia", "atmosphere", "satellites"],
+  "source": { "label": "NASA Earth Observatory: Australian smoke plume sets records", "url": "https://science.nasa.gov/earth/earth-observatory/australian-smoke-plume-sets-records-146235/" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

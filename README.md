@@ -10,6 +10,7 @@ All content lives in this GitHub repository as plain files, and LLMs can contrib
   - Unread posts come first. Two posts in a row never come from the same field when it can be avoided.
   - When you've seen everything you get an "all explored" marker, and the feed carries on with a fresh shuffle.
 - **Rich posts.** A title slide (optionally over a photo), followed by a swipeable carousel of text, big-number stats, lists and steps, quotes, myth-vs-fact comparisons, timelines, photos and SVG diagrams. Captions support **bold**, *italic* and links.
+- **Video slides.** Short clips of footage that moves, from NASA, ESO, Wikimedia Commons and other free sources, set to a credited music bed. They play muted and looping while on screen, load only when reached, and take a tap for sound; `npm run clip` cuts and encodes them.
 - **Visual slides drawn from numbers.** Bar charts, pictograms ("1 in 4"), to-scale circles, spectrums (where things sit on one measure) and step-by-step flows are plain JSON, so an LLM can add a graphic without producing an image.
 - **Interactive slides and puzzles.** Quizzes, tap-to-reveal teasers, slider guesses, and puzzles: put things in order, match pairs, sort fact from myth, unscramble a word, spot the odd one out. Visual puzzles reveal a graphic once you've guessed: rank the bars, higher or lower, light up a share of icons, place a value on a spectrum. All written as JSON like any other slide. Profile keeps a tally of how you did.
 - **Live posts from Wikipedia.** The featured article and picture of the day are mixed in, walking back one day at a time, so the feed never runs dry. You can turn this off in Profile.
@@ -52,7 +53,7 @@ content/
 1. A post is added as a JSON file, with any images it uses: by a person, a coding agent, or the MCP server.
 2. **CI** (`.github/workflows/ci.yml`) runs `npm run content` on every pull request. It checks the format, lengths, field folders, that every referenced image exists, file types and sizes, and that SVGs contain no scripts, event handlers or external references.
 3. A maintainer reviews the facts and merges.
-4. **Deploy** (`.github/workflows/deploy.yml`) rebuilds the site on pushes to `main` or `ccr-af3d9c73-xjzrqr` (the current default branch) and publishes it to GitHub Pages. The app bundles every post at build time.
+4. **Deploy** (`.github/workflows/deploy.yml`) rebuilds the site on every push to `main` and publishes it to GitHub Pages. The app bundles every post at build time.
 
 To turn on deployment once: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 

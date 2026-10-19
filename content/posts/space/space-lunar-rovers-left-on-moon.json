@@ -1,0 +1,88 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-lunar-rovers-left-on-moon",
+  "field": "space",
+  "title": "Three electric cars are still parked on the Moon",
+  "emoji": "🚙",
+  "cover": {
+    "src": "grand-prix.jpg",
+    "alt": "A four-wheeled lunar rover with a dish antenna and one astronaut aboard drives across grey lunar ground under a black sky.",
+    "credit": "NASA/JSC · Public domain"
+  },
+  "body": "NASA’s Lunar Roving Vehicle flew on the last three Apollo landings, in 1971 and 1972, and all three rovers are still where their crews parked them. Each weighed about 210 kg, rode to the Moon folded up in a bay on the side of the lunar module, and was unfolded on the surface. Every wheel had its own small electric motor, about a quarter of a horsepower, running on two batteries that could not be recharged. The crews still had to stay close enough to walk back to the lunar module if the rover broke down, but with it they covered **tens of kilometres** on each mission.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "grand-prix.mp4",
+      "poster": "grand-prix.jpg",
+      "alt": "On grey lunar ground under a black sky, a four-wheeled rover with a dish antenna and one astronaut aboard drives towards the camera, swerves and turns, its wheels throwing up sprays of dust.",
+      "caption": "April 1972: John Young puts Apollo 16’s rover through a ‘Grand Prix’ test drive while Charlie Duke films it. The wheels throw up sprays of lunar dust as it turns.",
+      "credit": "NASA/JSC · Public domain · excerpt",
+      "href": "https://archive.org/details/Apollo1616mmOnboardFilm",
+      "music": "“Son of a Rocket” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "chart",
+      "heading": "How far each rover was driven",
+      "items": [
+        {
+          "label": "Apollo 15, 1971",
+          "value": 27.76
+        },
+        {
+          "label": "Apollo 16, 1972",
+          "value": 26.55,
+          "emphasis": true
+        },
+        {
+          "label": "Apollo 17, 1972",
+          "value": 35.89
+        }
+      ],
+      "unit": "km",
+      "note": "Total distance over each mission’s moonwalks"
+    },
+    {
+      "type": "estimate",
+      "question": "The fastest anyone drove a rover on the Moon was an unofficial record set on Apollo 17. How fast?",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "answer": 18,
+      "unit": "km/h",
+      "explanation": "About 18 km/h (11.2 mph), recorded by Gene Cernan. The rover had been designed for a top speed of about 6 mph, roughly 10 km/h."
+    },
+    {
+      "type": "text",
+      "heading": "Folded for the trip",
+      "text": "Each rover rode to the Moon folded into a bay on the outside of the lunar module. The astronauts lowered it to the ground with pulleys, braked reels, ropes and cloth tapes, and then its front unfolded."
+    },
+    {
+      "type": "quiz",
+      "question": "When a hammer broke a fender on Apollo 17’s rover, what did the crew make the replacement from?",
+      "options": [
+        "Maps, duct tape and clamps",
+        "A spare wheel cover",
+        "Parts of a camera",
+        "A cut-up spacesuit glove"
+      ],
+      "answer": 0,
+      "explanation": "Their first patch of tape failed in the dust. For the second moonwalk they built a new fender extension from maps, duct tape and clamps taken from the lunar module."
+    }
+  ],
+  "tags": [
+    "apollo",
+    "moon",
+    "rover",
+    "nasa"
+  ],
+  "source": {
+    "label": "Wikipedia: Lunar Roving Vehicle",
+    "url": "https://en.wikipedia.org/wiki/Lunar_Roving_Vehicle"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-19"
+}

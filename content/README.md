@@ -9,12 +9,12 @@ This guide is written for people **and LLMs** contributing posts.
 ```
 content/
   posts/<field>/<id>.json      one post per file
-  media/<id>/<file>            images used by that post (optional)
+  media/<id>/<file>            images and video clips used by that post (optional)
   schema/post.schema.json      JSON Schema (generated — don't edit)
 ```
 
 - `id` is `<field>-<slug>` in lowercase kebab-case, e.g. `physics-mpemba-effect`. The file name is the id.
-- Images are referenced by file name only (`"src": "orbit.svg"`) and live in `content/media/<id>/orbit.svg`.
+- Images and clips are referenced by file name only (`"src": "orbit.svg"`) and live in `content/media/<id>/orbit.svg`.
 - Run `npm run content` to validate everything. CI runs the same check on every pull request.
 
 ## How to submit
@@ -103,6 +103,7 @@ Each slide is a 4:5 card on the post's gradient. Pick the type that fits the ide
 | `higher` | Higher or lower, one bar at a time | `{ "type": "higher", "heading": "≤80", "items": [{ "label": "≤28", "value": 2 }, … 3–5 in play order], "unit"?, "note"?, "explanation"?: "≤160" }` |
 | `fill` | Guess a share by lighting up icons | `{ "type": "fill", "question": "≤120", "icon": "🧍", "total": 10, "answer": 3, "explanation": "≤200" }` |
 | `place` | Put a value on a spectrum, with known points as clues | `{ "type": "place", "question": "≤120", "min": 0, "max": 140, "step"?: 1, "answer": 110, "unit"?: "dB", "ends"?: ["Silence", "Pain"], "hints"?: [{ "label": "≤14", "value": 30 }, … ≤4], "format"?: "year", "colors"?, "explanation": "≤200" }` |
+| `video` | A short clip of something moving: a launch, a collapse, an animal | `{ "type": "video", "src": "launch.mp4", "poster": "launch.jpg", "alt": "…", "caption"?: "≤200", "fit"?: "contain" \| "cover", "credit": "≤120", "href"?: "https://…", "music"?: "≤160" }` |
 | `image` | A photo or a diagram | `{ "type": "image", "src": "orbit.svg", "alt": "…", "caption"?: "≤200", "fit"?: "cover" \| "contain", "credit"?: "≤120" }` |
 
 Use `"fit": "cover"` for photos (they fill the card) and `"fit": "contain"` for diagrams (the whole image shows on the gradient).
@@ -154,6 +155,42 @@ A slide is phone-sized, so `list` and `timeline` slides must stay short: about 1
 - You may link Wikimedia images (`https://upload.wikimedia.org/…` or `https://thumb.wikimedia.org/…`) directly instead of committing them. Other hosts aren't allowed, because hotlinks break and can track readers.
 - Only use images you have the right to use: your own diagrams, public domain or openly licensed work. Put the author and licence in `credit`, e.g. `"NASA · Public domain"` or `"Jane Doe · CC BY-SA 4.0"`.
 - Every image needs an `alt` text describing what it shows.
+
+## Video clips
+
+A `video` slide plays a short clip, muted and looping while the slide is on screen, with a sound button when it has music. Use one when motion shows something a photo can't: a launch, a collapse, a fluid, an animal's movement, a time-lapse.
+
+**The clip**
+- An MP4 file in `content/media/<id>/` with H.264 video, 2–30 seconds long (8–20 s is ideal), at most 1080 px wide (480–720 px is plenty) and at most 3 MB, with its index at the start ("fast start"). `npm run content` checks all of this by reading the file.
+- A still from the clip as `poster`: a JPEG shown before it plays. It also makes a good `cover` for the post.
+- `"fit": "contain"` (the default) shows the whole frame on the field colours with the text below it; `"cover"` fills the slide, for portrait or square footage.
+
+**Making it: `npm run clip`** (needs ffmpeg)
+
+```
+npm run clip -- source.mp4 --post <post-id> --name <name> --start 33 --end 44.5 \
+  --music track.mp3 --music-start auto
+```
+
+It cuts the source between `--start` and `--end`, re-encodes it for phones, drops the original sound and lays in a music excerpt (normalised to a quiet background level, faded in and out), makes `<name>.jpg` from the first second (`--still <s>` picks another moment), checks both files and prints the slide JSON. `--music-start auto` skips silent or quiet passages; give seconds to choose the passage yourself. Leave out `--music` for a silent clip. `--crop 4:5` or `--crop 1:1` crops landscape footage to fill the slide.
+
+Contributors without ffmpeg can upload a finished MP4 through the MCP server's `media` list like an image (`base64`); the same checks apply.
+
+**Finding the moment.** Pick the seconds where the thing happens, and keep a little before and after. Extract a frame every second (or every quarter-second around the action) with timestamps, look at them, and check the finished clip the same way before you use it.
+
+**Sources and licences.** Use footage you may reuse and credit it like an image, saying it is an excerpt: `"NASA/JPL-Caltech · Public domain · excerpt"`.
+- NASA (images.nasa.gov, svs.gsfc.nasa.gov): generally not copyrighted; credit NASA and the centre. Skip items NASA marks as third-party, and title cards or logos.
+- ESO, ESA/Hubble and ESA/Webb: CC BY 4.0 for images and videos, but not their music.
+- Wikimedia Commons: public domain, CC0, CC BY or CC BY-SA files; read the file page's licence.
+- US federal agencies such as USGS and NOAA: generally public domain.
+- Old films in the public domain (Library of Congress, Internet Archive), checked item by item.
+- No footage that features identifiable private people, nothing graphic, and no YouTube or other streams you can't download under a licence.
+- `href` links the page the footage came from.
+
+**Music instead of the original sound.** Original soundtracks often carry narration in another language, crowd noise or music that is not licensed for reuse, so clips use a music bed instead, or no sound.
+- Choose a track whose mood fits the clip: calm and spacious for orbits and nebulae, tense for storms and collapses, playful for animals, period music for old film.
+- Use music you may reuse: Kevin MacLeod's catalogue at incompetech.com (CC BY 4.0) has mood tags and tempos; public-domain recordings work too.
+- Credit it in `music`, e.g. `"“Mesmerizing Galaxy” Kevin MacLeod (incompetech.com) · CC BY 4.0"`. The validator requires a `music` credit whenever the clip has a sound track, and rejects one when it hasn't.
 
 ### Drawing SVG diagrams (great for LLMs)
 

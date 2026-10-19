@@ -1,0 +1,77 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-pahoehoe-aa-lava",
+  "field": "earth",
+  "title": "Geologists everywhere use two Hawaiian words for lava: pāhoehoe and ʻaʻā",
+  "emoji": "🌋",
+  "body": "Runny basalt lava sets in two very different ways, and geology borrowed the Hawaiian names for both. **Pāhoehoe** (“smooth, unbroken lava”) cools into a smooth, billowy or ropy skin, and a flow creeps forward as small lobes and toes that keep breaking out of its cooled crust. **ʻAʻā** (“stony rough lava”) is usually stiffer and ends up as a jumble of broken blocks called clinker. Pāhoehoe can turn into ʻaʻā when it becomes turbulent, for example on steep slopes or when it meets obstacles.",
+  "cover": {
+    "src": "pahoehoe-toes.jpg",
+    "alt": "A lobe of fresh silvery lava with glowing orange edges spreading over older dark grey lava",
+    "credit": "USGS · Public domain"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "pahoehoe-toes.mp4",
+      "poster": "pahoehoe-toes.jpg",
+      "alt": "Real-time close-up of a pāhoehoe lava breakout: a wrinkled silvery lobe of lava swells and creeps over older black lava, its edges glowing orange where new toes of molten rock push out.",
+      "caption": "A pāhoehoe breakout on Kīlauea’s “61g” flow, Hawaiʻi, 12 August 2016, at actual speed: glowing toes keep bursting out of the cooling crust.",
+      "credit": "USGS · Public domain · excerpt",
+      "href": "https://www.usgs.gov/media/videos/pahoehoe-breakout",
+      "music": "“Hidden Wonders” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Same rock, two finishes",
+      "left": { "label": "Pāhoehoe", "text": "A smooth, billowy or ropy skin; runnier; creeps along in lobes and toes" },
+      "right": { "label": "ʻAʻā", "text": "A rough rubble of broken blocks called clinker; usually stiffer" }
+    },
+    {
+      "type": "spectrum",
+      "heading": "Typical temperature as they erupt",
+      "min": 1000,
+      "max": 1250,
+      "unit": "°C",
+      "ends": ["Cooler", "Hotter"],
+      "marks": [
+        { "label": "ʻAʻā, from", "value": 1050 },
+        { "label": "Pāhoehoe, from", "value": 1100, "emphasis": true },
+        { "label": "ʻAʻā, up to", "value": 1150 },
+        { "label": "Pāhoehoe, up to", "value": 1200, "emphasis": true }
+      ],
+      "colors": ["#f97316", "#fde047"],
+      "note": "Typical ranges; ʻaʻā sometimes erupts hotter than 1,150 °C"
+    },
+    {
+      "type": "stat",
+      "value": "142 km²",
+      "label": "of Kīlauea buried by flows like this one",
+      "text": "By 2016, countless pāhoehoe flows from the Puʻu ʻŌʻō eruption, which began in 1983, had covered that much land, according to the USGS."
+    },
+    {
+      "type": "sort",
+      "heading": "Pāhoehoe or ʻaʻā?",
+      "bins": ["Pāhoehoe", "ʻAʻā"],
+      "items": [
+        { "text": "Its name means “stony rough lava”", "bin": 1 },
+        { "text": "Advances as small lobes and toes", "bin": 0 },
+        { "text": "Covered in broken blocks called clinker", "bin": 1 },
+        { "text": "Smooth, ropy surface", "bin": 0 },
+        { "text": "Can build lava tubes that keep it hot and runny", "bin": 0 }
+      ],
+      "explanation": "Pāhoehoe is the smooth, runny kind that creeps along in toes and builds lava tubes; ʻaʻā is the stiffer, rubbly kind."
+    },
+    {
+      "type": "quiz",
+      "question": "Pāhoehoe can turn into ʻaʻā. What makes it change?",
+      "options": ["Turbulence from slopes or obstacles", "Contact with seawater", "Rain falling on it", "Flowing into a lava tube"],
+      "answer": 0,
+      "explanation": "When pāhoehoe becomes turbulent, on steep slopes or by running into obstacles, it can turn into rubbly ʻaʻā."
+    }
+  ],
+  "tags": ["volcanoes", "lava", "hawaii", "geology", "words"],
+  "source": { "label": "Wikipedia: Lava", "url": "https://en.wikipedia.org/wiki/Lava" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-double-pendulum-chaos",
+  "field": "math",
+  "title": "A double pendulum is so chaotic that a tiny nudge at the start changes everything",
+  "emoji": "🦋",
+  "cover": {
+    "src": "three-pendulums.jpg",
+    "alt": "Three blue double pendulums, each a rod hanging from the end of another rod, splayed in three different directions over a tangle of dotted trails.",
+    "credit": "Zvika · CC0"
+  },
+  "body": "A double pendulum, one pendulum hanging from the end of another, follows exact laws of motion with no randomness in them at all. Yet its motion is **chaotic**: start two of them a hair’s breadth apart and they track each other for a while, then the tiny difference snowballs until they move in completely different ways. This sensitive dependence on starting conditions is the heart of chaos theory, and it is one reason weather is generally predictable only about a week ahead.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "three-pendulums.mp4",
+      "poster": "three-pendulums.jpg",
+      "alt": "A computer simulation of three double pendulums drawn on top of each other. They swing together as if they were one, then suddenly fan apart and flail in three different directions, leaving tangled dotted trails.",
+      "caption": "Three simulated double pendulums start from almost exactly the same position and swing as one. After about ten seconds they split apart and never move together again.",
+      "credit": "Zvika · CC0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:3-double-pendulums.webm",
+      "music": "“Master Disorder” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Chaos is not chance",
+      "left": {
+        "label": "Random",
+        "text": "Chance decides what happens. Run it again from exactly the same start and you can get something different."
+      },
+      "right": {
+        "label": "Chaotic",
+        "text": "Nothing is left to chance. The same start always gives the same motion, but the smallest difference grows huge."
+      }
+    },
+    {
+      "type": "reveal",
+      "prompt": "In 1961 Edward Lorenz reran a weather simulation, typing in 0.506 instead of the full 0.506127. What happened?",
+      "answer": "He got completely different weather",
+      "detail": "A difference of about one part in 4,000 grew until the simulated weather looked nothing like the first run. It became the classic example of the butterfly effect."
+    },
+    {
+      "type": "quote",
+      "text": "Chaos: When the present determines the future but the approximate present does not approximately determine the future.",
+      "attribution": "Edward Lorenz, summing up chaos theory"
+    },
+    {
+      "type": "timeline",
+      "heading": "How the butterfly got its name",
+      "events": [
+        {
+          "when": "1961",
+          "text": "Lorenz rounds one number and his simulated weather changes completely"
+        },
+        {
+          "when": "1963",
+          "text": "He publishes the maths behind it as “Deterministic Nonperiodic Flow”"
+        },
+        {
+          "when": "1972",
+          "text": "His talk asks if a butterfly’s wings in Brazil can set off a tornado in Texas"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Because the atmosphere is chaotic, roughly how far ahead can weather generally be predicted?",
+      "options": [
+        "About a day",
+        "About a week",
+        "About a month",
+        "About a year"
+      ],
+      "answer": 1,
+      "explanation": "About a week. Beyond that, tiny errors in today’s measurements grow too large for a useful forecast."
+    }
+  ],
+  "tags": [
+    "chaos",
+    "pendulums",
+    "butterflyeffect"
+  ],
+  "source": {
+    "label": "Wikipedia: Chaos theory",
+    "url": "https://en.wikipedia.org/wiki/Chaos_theory"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

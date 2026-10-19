@@ -1,0 +1,62 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-snailfish-deepest-fish",
+  "field": "biology",
+  "title": "The deepest fish ever filmed is a snailfish, 8,336 metres down",
+  "emoji": "🐟",
+  "cover": {
+    "src": "snailfish.jpg",
+    "alt": "A pale pink, tadpole-shaped fish with a large head rests against a dark rock on the deep seafloor.",
+    "credit": "NOAA Ocean Exploration · Public domain"
+  },
+  "body": "Snailfishes are tadpole-like fish with large heads, small eyes and no scales, found everywhere from shallow coastal seas to ocean trenches. In 2023 researchers filmed one **8,336 m** below the surface, about 1,000 m deeper than any other kind of fish has been seen alive. It may be close to the limit: research suggests a boundary at about 8,200 to 8,400 m, below which the crushing pressure stops any fish from living. Every animal found deeper so far has been an invertebrate, such as sea cucumbers and isopods.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "snailfish.mp4",
+      "poster": "snailfish.jpg",
+      "alt": "A pink snailfish rests beside a dark rock, swims off over the rocky seafloor, then hovers head-up in the water near a small red crustacean.",
+      "caption": "A snailfish 1,365 m down on a seamount off Alaska, filmed by NOAA in 2023. It rests on a rock, then swims off. The record-holding snailfish was filmed more than six times deeper.",
+      "credit": "NOAA Ocean Exploration, Seascape Alaska 5 · Public domain · excerpt",
+      "href": "https://oceanexplorer.noaa.gov/ocean-fact/what-is-the-deepest-living-fish/",
+      "music": "“Almost New” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "place",
+      "question": "How deep was the deepest fish ever filmed, in metres?",
+      "min": 0,
+      "max": 11000,
+      "step": 1,
+      "answer": 8336,
+      "unit": "m",
+      "ends": ["Surface", "11,000 m"],
+      "hints": [
+        { "label": "This clip", "value": 1365 },
+        { "label": "Deepest ocean", "value": 11000 }
+      ],
+      "explanation": "8,336 m, a snailfish filmed in 2023. The deepest point in the ocean, the Challenger Deep, is about 11,000 m down."
+    },
+    {
+      "type": "text",
+      "heading": "A depth limit for fish",
+      "text": "Deep-sea snailfish cope with enormous water pressure, but their bodies have limits too. Below roughly 8,200 to 8,400 m, research suggests, no fish can survive. Everything found below that so far has been an invertebrate without a bony skeleton."
+    },
+    {
+      "type": "compare",
+      "heading": "A rival for the record?",
+      "left": { "label": "The catch", "text": "In 1970 a cusk eel was hauled up in a net that had gone down to 8,370 m." },
+      "right": { "label": "The doubt", "text": "No one can be sure the eel was caught at the net's deepest point, so the snailfish keeps the title." }
+    },
+    {
+      "type": "quiz",
+      "question": "Which of these do snailfish not have?",
+      "options": ["Scales", "Fins", "Eyes", "Gills"],
+      "answer": 0,
+      "explanation": "Snailfishes are scaleless, tadpole-shaped fish with large heads and small eyes."
+    }
+  ],
+  "tags": ["deepsea", "fish", "ocean", "records"],
+  "source": { "label": "NOAA Ocean Exploration: What is the deepest-living fish?", "url": "https://oceanexplorer.noaa.gov/ocean-fact/what-is-the-deepest-living-fish/" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

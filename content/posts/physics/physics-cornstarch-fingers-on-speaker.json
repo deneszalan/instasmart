@@ -1,0 +1,67 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-cornstarch-fingers-on-speaker",
+  "field": "physics",
+  "title": "Cornstarch goo on a shaking speaker grows fingers that rise and wriggle",
+  "emoji": "🔊",
+  "cover": {
+    "src": "goo-speaker.jpg",
+    "alt": "A pale, thick cornstarch paste sitting in the cone of a small black loudspeaker, with two lumpy fingers sticking up from it.",
+    "credit": "NASA Johnson · Public domain"
+  },
+  "body": "Mix cornstarch with a little water and you get a **shear-thickening** fluid, sometimes called oobleck: stir it slowly and it flows, but hit it hard and it resists like a solid. Under strong, fast shaking a layer of such a mixture can hold shapes no ordinary liquid could, including holes that stay open and fingers that stand up. [Physicists at the University of Texas](https://arxiv.org/abs/nlin/0311026) described them in 2004. Why the shapes last is still debated: the first explanation was shear thickening, and later work points to the way dense mixtures stay stiff for a while after being stressed.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "goo-speaker.mp4",
+      "poster": "goo-speaker.jpg",
+      "alt": "A pale paste fills the cone of a small black speaker. Lumpy fingers push up out of it, stretch, wobble, sag back and rise again in new places.",
+      "caption": "Aboard the space station, astronaut Don Pettit put cornstarch goo on a computer speaker. As it vibrates, fingers of goo rise, wobble and sink back.",
+      "credit": "NASA Johnson · Public domain · excerpt, cropped",
+      "href": "https://commons.wikimedia.org/wiki/File:Science_off_the_Sphere-_Goo!.webm",
+      "music": "“Android Sock Hop” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Same goo, two ways to push it",
+      "left": {
+        "label": "Slow and gentle",
+        "text": "A spoon or finger sinks in, and the mixture flows like a thick liquid."
+      },
+      "right": {
+        "label": "Fast and hard",
+        "text": "The mixture stiffens and resists the force, acting for a moment like a solid."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Why it stiffens",
+      "text": "Forcing the mixture to move fast knocks the starch grains out of their resting places, and they crowd into clumps called hydroclusters. Like logs jamming in a river, the clumps lock up and the goo stops flowing freely."
+    },
+    {
+      "type": "stat",
+      "value": "Over 10 g",
+      "label": "how hard a layer of cornstarch goo had to be shaken for holes poked in it to stay open",
+      "text": "In the 2004 experiments, the holes' rims began sprouting fingers once the shaking passed about 17 times the pull of gravity."
+    },
+    {
+      "type": "quiz",
+      "question": "Which of these has been tested with shear-thickening fluid in it?",
+      "options": [
+        "Body armour",
+        "Contact lenses",
+        "Shampoo",
+        "Window glass"
+      ],
+      "answer": 0,
+      "explanation": "In one study, Kevlar soaked in a shear-thickening fluid did better than Kevlar alone: the fluid spreads a sudden blow over a wider area."
+    }
+  ],
+  "tags": ["fluids", "viscosity", "vibration", "iss"],
+  "source": {
+    "label": "Wikipedia: Dilatant",
+    "url": "https://en.wikipedia.org/wiki/Dilatant"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

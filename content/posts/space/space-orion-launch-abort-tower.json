@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-orion-launch-abort-tower",
+  "field": "space",
+  "title": "Orion’s escape rocket can yank the crew from 0 to 500 mph in 2 seconds",
+  "emoji": "🚀",
+  "cover": {
+    "src": "las-jettison.jpg",
+    "alt": "View from an Orion window high above Earth: the curved blue horizon and white clouds below a black sky, with a bright glare at the top of the frame.",
+    "credit": "NASA · Public domain"
+  },
+  "body": "On top of every crewed Orion launch sits a tower of solid rockets called the **launch abort system**. If the rocket below fails early in the climb, its abort motor fires and pulls the capsule away, accelerating **from 0 to 500 mph (800 km/h) in 2 seconds**; a smaller attitude control motor then steers it, and a jettison motor throws the tower off so the parachutes can open. If all goes well, the tower is not needed at all. On Artemis II in April 2026 the climb went smoothly, and the unused tower was jettisoned 3 minutes and 18 seconds after liftoff.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "las-jettison.mp4",
+      "poster": "las-jettison.jpg",
+      "alt": "Two views from cameras on Orion. First, looking up through a window, the cover overhead flares white and pulls away, leaving a bright dot of light that shrinks into the distance. Then, from a side window over Earth’s curved blue horizon, the white abort tower tumbles away across the black sky.",
+      "caption": "1 April 2026: two views from Orion as Artemis II climbs. The abort tower and its cover fire away from the capsule and tumble off over Earth’s horizon, no longer needed.",
+      "credit": "NASA · Public domain · excerpt",
+      "href": "https://images.nasa.gov/details/Launch%20Abort%20System%20Jettison%20-%20Two%20Views",
+      "music": "“Prelude and Action” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "If the rocket fails during the climb",
+      "steps": [
+        {
+          "icon": "🔥",
+          "label": "Abort motor pulls the capsule clear"
+        },
+        {
+          "icon": "🧭",
+          "label": "Attitude control motor steers it"
+        },
+        {
+          "icon": "💨",
+          "label": "Jettison motor throws off the tower"
+        },
+        {
+          "icon": "🪂",
+          "label": "Parachutes bring the crew down"
+        }
+      ]
+    },
+    {
+      "type": "estimate",
+      "question": "On Artemis II, how many seconds after liftoff was the unused abort tower thrown away?",
+      "min": 0,
+      "max": 600,
+      "step": 1,
+      "answer": 198,
+      "unit": "s",
+      "explanation": "198 seconds: 3 minutes and 18 seconds into the flight. By then the abort tower was no longer needed, so it was thrown clear."
+    },
+    {
+      "type": "text",
+      "heading": "Tested for real in 2019",
+      "text": "In the [Ascent Abort-2](https://en.wikipedia.org/wiki/Ascent_Abort-2) test, a booster carried a dummy Orion about 31,000 ft (9.4 km) up, and 55 seconds after launch the abort tower fired it away. The capsule had no parachutes; 12 data recorders were ejected and recovered from the Atlantic."
+    },
+    {
+      "type": "quiz",
+      "question": "In a normal launch with no emergency, which of the tower’s three motors fires?",
+      "options": [
+        "Only the jettison motor",
+        "Only the abort motor",
+        "All three, one after another",
+        "None of them"
+      ],
+      "answer": 0,
+      "explanation": "The abort and steering motors are only for emergencies. The jettison motor is used on every flight, to pull the tower away from Orion once it is no longer needed."
+    }
+  ],
+  "tags": [
+    "artemis",
+    "orion",
+    "rockets",
+    "safety"
+  ],
+  "source": {
+    "label": "NASA: Artemis II launch abort system jettison",
+    "url": "https://images.nasa.gov/details/Launch%20Abort%20System%20Jettison%20-%20Two%20Views"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-19"
+}

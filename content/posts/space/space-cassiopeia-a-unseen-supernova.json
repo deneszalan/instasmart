@@ -1,0 +1,66 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-cassiopeia-a-unseen-supernova",
+  "field": "space",
+  "title": "Light from a supernova in our galaxy reached Earth in the 1600s, but dust hid it",
+  "emoji": "💥",
+  "cover": {
+    "src": "cas-a-2000-2019.jpg",
+    "alt": "Cassiopeia A in X-rays: a roughly round cloud of glowing blue filaments with a thin bright rim, scattered with stars.",
+    "credit": "X-ray: NASA/CXC/SAO; optical: NASA/STScI; processing: NASA/CXC/SAO/J. Major, A. Jubett, K. Arcand · Public domain"
+  },
+  "body": "Cassiopeia A is the wreck of a massive star about 11,000 light-years away. Tracing its debris back suggests the explosion’s light reached Earth some time in the 1600s (estimates centre on the 1660s), yet no one left a clear record of a new star. The likely reason is **dust** between us and it, which soaked up most of its visible light; John Flamsteed may have logged it in 1680 as a faint star, at a spot where no star is seen today. Today the debris is about 10 light-years across and still racing outwards at 4,000 to 6,000 km/s.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "cas-a-2000-2019.mp4",
+      "poster": "cas-a-2000-2019.jpg",
+      "alt": "Chandra X-ray images of Cassiopeia A, a ball of blue glowing filaments, cycle from 2000 to 2019 as labelled in the corner; the filaments flicker and shift and the faint outer rim edges outwards.",
+      "caption": "Chandra X-ray images of Cassiopeia A from 2000 to 2019, shown in a repeating loop: the debris shifts and the outer blast wave keeps pushing outwards.",
+      "credit": "NASA/CXC/SAO; NASA/STScI; J. Major, A. Jubett, K. Arcand · Public domain · excerpt",
+      "href": "https://chandra.harvard.edu/photo/2024/timelapse/animations.html",
+      "music": "“Myst on the Moor” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "reveal",
+      "prompt": "Cassiopeia A was first reported in 1948, long before anyone could see it well. What kind of telescope found it?",
+      "answer": "A radio telescope",
+      "detail": "Martin Ryle and Francis Graham-Smith reported it as a radio source. It is the brightest radio source beyond the Solar System at frequencies below 1 GHz."
+    },
+    {
+      "type": "chart",
+      "heading": "How fast Cassiopeia A’s debris is flying",
+      "items": [
+        { "label": "Main shell, slowest", "value": 4000 },
+        { "label": "Main shell, fastest", "value": 6000, "emphasis": true },
+        { "label": "Fastest outlying knots", "value": 14500 }
+      ],
+      "unit": "km/s",
+      "note": "Speeds across the sky; the fastest knots range from 5,500 to 14,500 km/s"
+    },
+    {
+      "type": "timeline",
+      "heading": "Uncovering a hidden supernova",
+      "events": [
+        { "when": "1600s", "text": "Light from the explosion reaches Earth" },
+        { "when": "1680", "text": "Flamsteed may have logged it as a faint star" },
+        { "when": "1948", "text": "Ryle and Graham-Smith report it as a radio source" },
+        { "when": "1999", "text": "Chandra’s first image reveals the neutron star left behind" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why did hardly anyone see Cassiopeia A explode?",
+      "options": ["Dust absorbed most of its light", "It exploded in daylight", "Telescopes hadn’t been invented", "It was hidden behind the Moon"],
+      "answer": 0,
+      "explanation": "Interstellar dust between Earth and the star probably absorbed most of its visible light, so it never became the dazzling new star it might have been."
+    }
+  ],
+  "tags": ["supernovae", "stars", "chandra", "xrays", "dust"],
+  "source": {
+    "label": "Wikipedia: Cassiopeia A",
+    "url": "https://en.wikipedia.org/wiki/Cassiopeia_A"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

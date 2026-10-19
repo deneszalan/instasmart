@@ -1,0 +1,70 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-apollo-11-tv-filmed-a-screen",
+  "field": "history",
+  "title": "The world watched the first Moon walk through a camera filming a TV screen",
+  "emoji": "📺",
+  "cover": {
+    "src": "ghost-walk.jpg",
+    "alt": "Ghostly black-and-white TV image from the Moon: the leg and ladder of the lunar module in the foreground, with the bright, sunlit lunar surface beyond.",
+    "credit": "NASA · Public domain"
+  },
+  "body": "Apollo 11’s camera on the Moon sent a black-and-white **slow-scan** picture, 10 frames a second with 320 lines, which ordinary television sets could not show. At the receiving stations, a converter displayed it on a 10-inch monitor and a broadcast camera simply re-filmed that screen. Each step lost contrast, brightness and detail, and wrong converter settings at Goldstone in the first minutes left Armstrong barely visible on the ladder. The better-quality original recordings were never found.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "ghost-walk.mp4",
+      "poster": "ghost-walk.jpg",
+      "alt": "Ghostly black-and-white TV footage: beside the lunar module’s leg and ladder, an astronaut walks into the sunlight and flares bright white, then passes close to the camera as a blurred, smeared shape.",
+      "caption": "The restored broadcast, 20 July 1969: by the lunar module’s ladder, an astronaut walks into sunlight and flares white, then passes close as a smeared ghost.",
+      "credit": "NASA · Public domain · excerpt",
+      "href": "https://images.nasa.gov/details/KSC-20090716-MH-NAS01-0001-Apollo_11_Restored_Moonwalk-HM_795",
+      "music": "“Immersed” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Two kinds of television",
+      "left": { "label": "From the Moon", "text": "Slow-scan: 10 frames a second, 320 lines, black and white" },
+      "right": { "label": "US broadcast TV", "text": "NTSC: about 30 frames a second, 525 lines" }
+    },
+    {
+      "type": "flow",
+      "heading": "From the Moon to living rooms",
+      "steps": [
+        { "icon": "📹", "label": "The lunar camera sends slow-scan TV" },
+        { "icon": "📡", "label": "Dishes in California and Australia catch it" },
+        { "icon": "🖥️", "label": "A converter shows it on a 10-inch monitor" },
+        { "icon": "🎥", "label": "A TV camera re-films that screen" },
+        { "icon": "📺", "label": "Relayed on via Houston and New York" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why was Armstrong barely visible in the first minutes, as he came down the ladder?",
+      "options": [
+        "Wrong settings on a converter",
+        "Moon dust on the lens",
+        "Rocket exhaust in the air",
+        "The camera’s battery was low"
+      ],
+      "answer": 0,
+      "explanation": "The scan converter at Goldstone was set wrongly at first. Every analogue link afterwards, through Houston and New York, added more noise."
+    },
+    {
+      "type": "reveal",
+      "prompt": "What happened to the tapes of the original, sharper slow-scan signal?",
+      "answer": "They were probably wiped and reused",
+      "detail": "A 2006–2009 search concluded the one-inch data tapes were most likely erased and reused in the early 1980s, during a tape shortage. NASA restored the best broadcast copies instead."
+    }
+  ],
+  "tags": ["apollo11", "moon", "television", "nasa", "1969"],
+  "source": {
+    "label": "Wikipedia: Apollo 11 missing tapes",
+    "url": "https://en.wikipedia.org/wiki/Apollo_11_missing_tapes"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-19"
+}

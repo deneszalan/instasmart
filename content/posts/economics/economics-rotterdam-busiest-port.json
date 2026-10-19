@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "economics-rotterdam-busiest-port",
+  "field": "economics",
+  "title": "Rotterdam was the world’s busiest port for 42 years, until Singapore overtook it in 2004",
+  "emoji": "⚓",
+  "cover": {
+    "src": "rotterdam-coal-1920s.jpg",
+    "alt": "Black-and-white film still of Rotterdam harbour in the early 1920s: a steamship moored under tall steel unloading bridges, with a small tug in the foreground.",
+    "credit": "Willy Mullens / Haghefilm · Public domain"
+  },
+  "body": "From 1962 until 2004 Rotterdam handled more cargo by tonnage than any other port on Earth. Geography explains much of it: the city sits in the delta of the Rhine and the Meuse, and the Nieuwe Waterweg canal, ready in 1872, connected those rivers to the sea, opening a **hinterland** that today holds over 500 million consumers across Europe. Singapore passed it in 2004, then Shanghai and other giant Chinese ports, but it is still the largest seaport in Europe and the largest outside Asia.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "rotterdam-coal-1920s.mp4",
+      "poster": "rotterdam-coal-1920s.jpg",
+      "alt": "Black-and-white silent film of Rotterdam harbour: steamships moored beneath tall steel unloading bridges, then a close view of a grab bucket running along a bridge to move coal from a ship.",
+      "caption": "Rotterdam in the early 1920s: on the Maas, steel unloading bridges run a grab back and forth to move coal from sea-going ships into inland barges.",
+      "credit": "Willy Mullens / Haghefilm · Public domain · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Havens_te_Rotterdam.webm",
+      "music": "“Royal Coupling” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "place",
+      "question": "In what year did Rotterdam become the world’s busiest port by cargo tonnage?",
+      "min": 1850,
+      "max": 2010,
+      "step": 1,
+      "answer": 1962,
+      "format": "year",
+      "hints": [
+        {
+          "label": "Waterweg",
+          "value": 1872
+        },
+        {
+          "label": "Singapore",
+          "value": 2004
+        }
+      ],
+      "explanation": "1962. Rotterdam then led the world for 42 years, until Singapore overtook it in 2004."
+    },
+    {
+      "type": "stat",
+      "value": "428 million",
+      "label": "tonnes of cargo handled at Rotterdam in 2025",
+      "text": "Plus 14.2 million containers counted in twenty-foot units, through a port 40 km long."
+    },
+    {
+      "type": "list",
+      "heading": "Four ways goods leave the port",
+      "style": "bullets",
+      "items": [
+        "Sea-going ships",
+        "River barges, inland along the Rhine and Meuse",
+        "Freight trains",
+        "Lorries on the road"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Which port overtook Rotterdam as the world’s busiest in 2004?",
+      "options": [
+        "Singapore",
+        "Shanghai",
+        "Hamburg",
+        "Antwerp"
+      ],
+      "answer": 0,
+      "explanation": "Singapore came first in 2004; Shanghai and other very large Chinese seaports have since passed Rotterdam too."
+    }
+  ],
+  "tags": [
+    "ports",
+    "trade",
+    "shipping",
+    "netherlands"
+  ],
+  "source": {
+    "label": "Wikipedia: Port of Rotterdam",
+    "url": "https://en.wikipedia.org/wiki/Port_of_Rotterdam"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

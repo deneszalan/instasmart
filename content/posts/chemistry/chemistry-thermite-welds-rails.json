@@ -1,0 +1,118 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-thermite-welds-rails",
+  "field": "chemistry",
+  "title": "Rust and aluminium powder burn hot enough to weld railway tracks together",
+  "emoji": "🛤️",
+  "cover": {
+    "src": "thermite.jpg",
+    "alt": "A blinding white flare with sparks and smoke rising from a blue bowl of reddish-brown powder.",
+    "credit": "ScienceCOLA · CC BY 3.0"
+  },
+  "body": "**Thermite** is a mix of aluminium powder and iron oxide, the stuff of rust. Once it is lit, the aluminium tears the oxygen away from the iron, because aluminium forms much stronger bonds with oxygen, and the energy released heats the mixture to up to about **2,500 °C**. The products come out as liquids: molten iron and a slag of aluminium oxide. Rail crews use that white-hot iron to fill the gap between two rails and fuse them, a trick first used on tram tracks in Essen in 1899 and still the main use of thermite today.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "thermite.mp4",
+      "poster": "thermite.jpg",
+      "alt": "A small paper cone of thermite sits in a blue bowl of reddish-brown powder. It is lit from the side, flares up so brightly that the camera is dazzled, throws sparks and smoke, and then glows as a small orange blob.",
+      "caption": "Lit from the side, a small cone of thermite flares so brightly that it dazzles the camera, then keeps glowing as a blob of molten metal.",
+      "credit": "ScienceCOLA · CC BY 3.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Thermit_Reaction.webm",
+      "music": "“Rynos Theme” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "Welding a rail with thermite",
+      "steps": [
+        {
+          "icon": "🧪",
+          "label": "Mix aluminium powder with iron oxide"
+        },
+        {
+          "icon": "🔥",
+          "label": "Light it with something very hot"
+        },
+        {
+          "icon": "⚗️",
+          "label": "Aluminium takes the iron’s oxygen"
+        },
+        {
+          "icon": "🛤️",
+          "label": "Molten iron fills the gap between rails"
+        }
+      ]
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Thermite is an explosive",
+          "bin": 1
+        },
+        {
+          "text": "Water reliably puts burning thermite out",
+          "bin": 1
+        },
+        {
+          "text": "Red-hot thermite can still fail to ignite",
+          "bin": 0
+        },
+        {
+          "text": "Thermite is still used to weld railway tracks",
+          "bin": 0
+        }
+      ],
+      "explanation": "Not an explosive: it pours intense heat into one small spot. It burns even when wet, water can set off a steam explosion, and it needs a very hot igniter."
+    },
+    {
+      "type": "timeline",
+      "heading": "From discovery to the railway",
+      "events": [
+        {
+          "when": "1893",
+          "text": "German chemist Hans Goldschmidt discovers the reaction"
+        },
+        {
+          "when": "1895",
+          "text": "He files a patent; it is still called the Goldschmidt process"
+        },
+        {
+          "when": "1899",
+          "text": "Thermite welds tram tracks in Essen, its first commercial use"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why does aluminium take the oxygen away from the iron?",
+      "options": [
+        "It bonds to oxygen more strongly",
+        "It is heavier than iron",
+        "It melts at a higher temperature",
+        "It is magnetic"
+      ],
+      "answer": 0,
+      "explanation": "Aluminium forms stronger, more stable bonds with oxygen than iron does, so swapping partners releases a great deal of energy as heat."
+    }
+  ],
+  "tags": [
+    "thermite",
+    "metals",
+    "reactions"
+  ],
+  "source": {
+    "label": "Wikipedia: Thermite",
+    "url": "https://en.wikipedia.org/wiki/Thermite"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

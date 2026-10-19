@@ -1,0 +1,98 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-lumiere-train-panic-myth",
+  "field": "history",
+  "title": "Historians find no report from the time of audiences fleeing the Lumières’ train film",
+  "emoji": "🚂",
+  "cover": {
+    "src": "train-arrival.jpg",
+    "alt": "Black-and-white film still of a steam locomotive pulling into a station platform, heading almost straight at the camera.",
+    "credit": "Auguste and Louis Lumière · Public domain"
+  },
+  "body": "The story goes that when *L’Arrivée d’un train en gare de La Ciotat* was first shown, people screamed and ran from the life-sized train coming at them. Film historian Martin Loiperdinger notes there are no contemporary reports of panic, which in the crowded rooms of the day would probably have caused injuries and made the local papers. Viewers were startled, but historian Stephen Bottomore found no confirmed case of anyone believing the train was real. Loiperdinger suggests the legend grew from early comedies that mocked naive country folk fleeing a train on the screen.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "train-arrival.mp4",
+      "poster": "train-arrival.jpg",
+      "alt": "Black-and-white film of an empty station platform; a steam train appears in the distance, grows larger as it heads almost straight at the camera, and its carriages slide past.",
+      "caption": "A steam train pulls into La Ciotat station, almost straight at the camera, in the Lumière brothers’ film. It is all one continuous shot.",
+      "credit": "Auguste and Louis Lumière · Public domain · excerpt",
+      "href": "https://archive.org/details/FilmsLumiere1",
+      "music": "“Iron Horse” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "The legend and the record",
+      "left": {
+        "label": "Myth",
+        "text": "At its first screening, people screamed and ran to the back of the room."
+      },
+      "right": {
+        "label": "Record",
+        "text": "No contemporary reports of panic. Some viewers were startled, but none is confirmed to have thought the train real."
+      }
+    },
+    {
+      "type": "reveal",
+      "prompt": "Was the train film shown at the Lumières’ first public screening, in Paris on 28 December 1895?",
+      "answer": "No: it isn’t on that day’s programme",
+      "detail": "The programme of ten films makes no mention of it. Its first public showing came in January 1896."
+    },
+    {
+      "type": "spectrum",
+      "heading": "A legend that outlived the evidence",
+      "min": 1890,
+      "max": 2000,
+      "format": "year",
+      "marks": [
+        {
+          "label": "First shown in public",
+          "value": 1896,
+          "emphasis": true
+        },
+        {
+          "label": "Comedy: a fleeing countryman",
+          "value": 1901
+        },
+        {
+          "label": "3D reshoot shown",
+          "value": 1934
+        },
+        {
+          "label": "Der Spiegel: ‘even panic’",
+          "value": 1994
+        }
+      ],
+      "note": "In 1994 Der Spiegel still wrote that the film caused ‘fear, terror, even panic’."
+    },
+    {
+      "type": "quiz",
+      "question": "Where does Loiperdinger think the panic legend came from?",
+      "options": [
+        "Comedies mocking country folk",
+        "Newspaper reports of injuries",
+        "A Lumière advertising poster",
+        "Police records from the time"
+      ],
+      "answer": 0,
+      "explanation": "Films such as The Countryman and the Cinematograph (1901) showed a rural viewer fleeing an on-screen train. That joke may be the source of the belief."
+    }
+  ],
+  "tags": [
+    "film",
+    "cinema",
+    "myths",
+    "lumiere",
+    "france"
+  ],
+  "source": {
+    "label": "Wikipedia: L’Arrivée d’un train en gare de La Ciotat",
+    "url": "https://en.wikipedia.org/wiki/L%27Arriv%C3%A9e_d%27un_train_en_gare_de_La_Ciotat"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

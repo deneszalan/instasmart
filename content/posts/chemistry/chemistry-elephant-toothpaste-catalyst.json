@@ -1,0 +1,88 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-elephant-toothpaste-catalyst",
+  "field": "chemistry",
+  "title": "A catalyst can turn a slow reaction into an eruption without being used up",
+  "emoji": "🧪",
+  "cover": {
+    "src": "toothpaste.jpg",
+    "alt": "A thick column of pale yellow foam bursting out of the top of a tall glass cylinder and folding down over it into a metal tray.",
+    "credit": "Petrovskyz · CC BY-SA 4.0"
+  },
+  "body": "Concentrated hydrogen peroxide [breaks down](https://en.wikipedia.org/wiki/Hydrogen_peroxide) into water and oxygen gas, but only slowly on its own. Add iodide ions, here from potassium iodide, and the breakdown speeds up so much that the oxygen bursts out at once; washing-up liquid in the mix traps the gas as foam. The iodide is a **catalyst**: it takes part in the reaction but comes out chemically unchanged, so a little can split a lot of peroxide. The reaction also gives off heat, which is why the foam in this demonstration, called elephant’s toothpaste, comes out hot.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "toothpaste.mp4",
+      "poster": "toothpaste.jpg",
+      "alt": "A hand pours a clear liquid into a tall glass cylinder standing in a metal tray. The mixture turns orange, then a thick column of pale foam shoots out of the top, curls over and piles up around the cylinder, giving off a little steam.",
+      "caption": "Potassium iodide solution goes into a cylinder of hydrogen peroxide and washing-up liquid. Within seconds a column of steaming foam bursts out of the top.",
+      "credit": "Petrovskyz · CC BY-SA 4.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:14._%D0%A1%D0%BB%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0_%D0%BF%D0%B0%D1%81%D1%82%D0%B0_%D0%B7%D0%B0_%D0%B7%D0%B0%D0%B1%D0%B8.webm",
+      "music": "“Glitter Blast” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "What the catalyst does",
+      "steps": [
+        {
+          "icon": "🐢",
+          "label": "Hydrogen peroxide breaks down slowly"
+        },
+        {
+          "icon": "⚡",
+          "label": "Iodide speeds the breakdown up hugely"
+        },
+        {
+          "icon": "🫧",
+          "label": "Soap traps the oxygen gas as foam"
+        },
+        {
+          "icon": "♻️",
+          "label": "The iodide comes out unchanged"
+        }
+      ]
+    },
+    {
+      "type": "estimate",
+      "question": "The reaction gives off heat. How hot is the foam as it pours out?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 75,
+      "unit": "°C",
+      "explanation": "About 75 °C: too hot to touch. Every 2 molecules of hydrogen peroxide that split into water and oxygen release energy as heat."
+    },
+    {
+      "type": "text",
+      "heading": "Your cells do it too",
+      "text": "Normal metabolism makes hydrogen peroxide as a harmful by-product, so nearly every living thing that uses oxygen makes an enzyme, [catalase](https://en.wikipedia.org/wiki/Catalase), to destroy it. One catalase molecule can split millions of peroxide molecules a second. Yeast catalase works in this demo too."
+    },
+    {
+      "type": "quiz",
+      "question": "Which gas fills the bubbles in the foam?",
+      "options": [
+        "Oxygen",
+        "Hydrogen",
+        "Carbon dioxide",
+        "Chlorine"
+      ],
+      "answer": 0,
+      "explanation": "2 H₂O₂ → 2 H₂O + O₂. Push a glowing splint into the foam and it bursts back into flame, the classic test for oxygen."
+    }
+  ],
+  "tags": [
+    "catalysts",
+    "reactions",
+    "enzymes"
+  ],
+  "source": {
+    "label": "Wikipedia: Elephant’s toothpaste",
+    "url": "https://en.wikipedia.org/wiki/Elephant%27s_toothpaste"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

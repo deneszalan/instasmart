@@ -1,0 +1,61 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-glacier-bay-retreat",
+  "field": "earth",
+  "title": "In 1794 Glacier Bay was almost all ice; by 1879 the ice had retreated 77 km",
+  "emoji": "🧊",
+  "body": "When George Vancouver’s expedition sailed past in 1794, Icy Strait at the mouth of Glacier Bay, in Alaska, was choked with ice, and the bay itself was nearly filled by one huge tidewater glacier. When John Muir visited in 1879, the ice had pulled back almost all the way up the bay, about **77 km**, and by 1916 the Grand Pacific Glacier stood about 105 km from the bay’s mouth. It has been called the fastest documented glacier retreat, and it left behind a bay of fjords where glaciers still drop icebergs into the sea.",
+  "cover": {
+    "src": "margerie-calving.jpg",
+    "alt": "The tall, jagged blue-white ice cliff of Margerie Glacier rising from grey water, with a column of ice collapsing down its face",
+    "credit": "gails_pictures (Flickr) · CC BY 2.0"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "margerie-calving.mp4",
+      "poster": "margerie-calving.jpg",
+      "alt": "A towering wall of white and blue glacier ice at the water’s edge: a slab breaks off its face, crashes down into the sea and throws up a spray that spreads across the water.",
+      "caption": "Margerie Glacier in Glacier Bay, Alaska, September 2015: a slab of ice breaks off its face and crashes into the sea, a process called calving.",
+      "credit": "gails_pictures (Flickr) · CC BY 2.0 · excerpt",
+      "href": "https://www.flickr.com/photos/gails_pictures/21488409969",
+      "music": "“The Ice Giants” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "timeline",
+      "heading": "The vanishing glacier",
+      "events": [
+        { "when": "1794", "text": "Vancouver’s expedition finds Icy Strait choked with ice" },
+        { "when": "1879", "text": "John Muir finds the ice about 77 km up the bay" },
+        { "when": "1916", "text": "The Grand Pacific Glacier is about 105 km from the bay’s mouth" }
+      ]
+    },
+    {
+      "type": "chart",
+      "heading": "How far up the bay the ice had retreated",
+      "unit": "km",
+      "items": [
+        { "label": "1879", "value": 77 },
+        { "label": "1916", "value": 105, "emphasis": true }
+      ],
+      "note": "Approximate distance of the ice front from the bay’s mouth; in 1794 the ice reached the mouth"
+    },
+    {
+      "type": "reveal",
+      "prompt": "Glacier Bay National Park has 1,045 glaciers. How many of them reach the sea?",
+      "answer": "Seven, and four of those calve icebergs",
+      "detail": "Glaciers that end in the sea are called tidewater glaciers. Margerie Glacier, in the clip, is one of them."
+    },
+    {
+      "type": "quiz",
+      "question": "With the weight of all that ice gone, what is the land around Glacier Bay doing?",
+      "options": ["Rising", "Sinking", "Sliding into the sea", "Staying exactly still"],
+      "answer": 0,
+      "explanation": "Parts of the region are undergoing post-glacial rebound: the land rises once the weight of the glacier has been removed."
+    }
+  ],
+  "tags": ["glaciers", "alaska", "ice", "geology"],
+  "source": { "label": "Wikipedia: Glacier Bay National Park and Preserve", "url": "https://en.wikipedia.org/wiki/Glacier_Bay_National_Park_and_Preserve" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

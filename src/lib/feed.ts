@@ -124,6 +124,8 @@ function slideParts(slide: Slide): string[] {
       return [slide.text];
     case 'image':
       return [slide.caption ?? slide.alt];
+    case 'video':
+      return [slide.caption ?? slide.alt];
     case 'stat':
       return [`${slide.value} ${slide.label}`, slide.text ?? ''];
     case 'list':

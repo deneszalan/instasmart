@@ -1,0 +1,102 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-music-box-steel-comb",
+  "field": "music",
+  "title": "A music box’s steel comb was invented to save space: it replaced a stack of bells",
+  "emoji": "🎶",
+  "cover": {
+    "src": "music-box-comb.jpg",
+    "alt": "Close-up inside an antique music box: a brass cylinder studded with tiny pins lies beside a polished steel comb with dozens of fine teeth.",
+    "credit": "Kijk- en Luistermuseum (Collectie Gelderland) · CC BY-SA 4.0"
+  },
+  "body": "Inside a music box, pins on a turning cylinder pluck the tuned teeth of a steel **comb**, each tooth sounding its own note. Earlier musical clocks rang little bells from a pinned barrel instead. In 1796 the Geneva clockmaker **Antoine Favre-Salomon** replaced the stack of bells with one comb of pre-tuned metal teeth to save space, and with the pinned barrel lying flat beside it the mechanism could play more varied and complex music.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "music-box-comb.mp4",
+      "poster": "music-box-comb.jpg",
+      "alt": "Close-ups of an antique cylinder music box: a brass cylinder dotted with tiny pins turns slowly beside a long steel comb, seen from the side and then from above inside its wooden case.",
+      "caption": "A cylinder music box made by Nicole Frères in 1864, now in a Dutch museum. As the brass cylinder slowly turns, its pins pluck the teeth of the steel comb beside it.",
+      "credit": "Kijk- en Luistermuseum (Collectie Gelderland) · CC BY-SA 4.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Cilinderspeeldoos_Nicole_Fr%C3%A8res_uit_1864,_Kijk-_en_Luistermuseum,_800030.webm",
+      "music": "“Melodie Victoria” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "How a music box plays",
+      "steps": [
+        {
+          "icon": "🔄",
+          "label": "A pinned cylinder turns slowly"
+        },
+        {
+          "icon": "📍",
+          "label": "Each pin catches one tooth of the comb"
+        },
+        {
+          "icon": "🎵",
+          "label": "The tooth springs free and rings its note"
+        },
+        {
+          "icon": "🎼",
+          "label": "Rows of pins play the whole tune"
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "Music from pins",
+      "events": [
+        {
+          "when": "9th c.",
+          "text": "Banū Mūsā brothers build a water-powered organ played by pinned cylinders"
+        },
+        {
+          "when": "1598",
+          "text": "A clock’s pinned barrel plays tuned bells"
+        },
+        {
+          "when": "1796",
+          "text": "Favre-Salomon swaps the bells for a steel comb"
+        },
+        {
+          "when": "1877",
+          "text": "Edison’s phonograph arrives"
+        }
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "Music boxes grew out of 18th-century musical snuffboxes. What were they first called, in French?",
+      "answer": "Carillons à musique: ‘chimes of music’",
+      "detail": "Some more complex boxes also hold a tiny drum or bells as well as the steel comb."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did Favre-Salomon swap the bells for a steel comb?",
+      "options": [
+        "To make it smaller",
+        "Bells were too loud",
+        "Steel was cheaper than bronze",
+        "Bells went out of tune"
+      ],
+      "answer": 0,
+      "explanation": "He replaced the stack of bells with a comb of pre-tuned metal teeth to reduce space, and the result could play more varied and complex music."
+    }
+  ],
+  "tags": [
+    "musicbox",
+    "automata",
+    "instruments",
+    "geneva"
+  ],
+  "source": {
+    "label": "Wikipedia: Music box",
+    "url": "https://en.wikipedia.org/wiki/Music_box"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-19"
+}

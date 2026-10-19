@@ -1,0 +1,92 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-singing-bird-box-one-whistle",
+  "field": "music",
+  "title": "One tiny whistle with a sliding piston sings every note of a mechanical bird",
+  "emoji": "🐦",
+  "cover": {
+    "src": "bird-box.jpg",
+    "alt": "A small black tortoiseshell box with its gilt oval lid flipped up and a tiny iridescent green feathered bird standing on a pierced gilt grille.",
+    "credit": "Raphael Cole · CC0"
+  },
+  "body": "A singing bird box hides a clockwork motor with two jobs. It pumps a small bellows that blows air into a whistle: a miniature organ pipe with a close-fitting **piston** that slides up and down to change the note, over a range of more than an octave. It also turns a set of **cams** that decide which note sounds, when and for how long, and that turn the bird from side to side. The beak is linked to the cam that controls the air, so it opens and shuts in time with the song.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "bird-box.mp4",
+      "poster": "bird-box.jpg",
+      "alt": "Hands hold a small black box as its gilt lid flips up. A tiny feathered bird rises on a gilt grille, turns from side to side and flaps its wings, and at the end the lid snaps shut.",
+      "caption": "A singing bird box made by Bontems in Paris around 1890, now in the Museo Cerralbo, Madrid. The lid flips up, the bird rises, turns and flaps, and at the end the lid snaps shut.",
+      "credit": "Raphael Cole · CC0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Bo%C3%AEte_%C3%A0_oiseau_chanteur,_Bontems,_circa_1890.webm",
+      "music": "“Teddy Bear Waltz” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "Inside the box",
+      "steps": [
+        {
+          "icon": "🔑",
+          "label": "Wind up the clockwork motor"
+        },
+        {
+          "icon": "🌬️",
+          "label": "A bellows blows air into one whistle"
+        },
+        {
+          "icon": "⚙️",
+          "label": "Cams slide its piston to change the note"
+        },
+        {
+          "icon": "🐦",
+          "label": "More cams turn the bird and work its beak"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "The trick that made it small",
+      "left": {
+        "label": "Before 1784",
+        "text": "Mechanical singing birds in cages used a miniature organ with a separate pipe for every note."
+      },
+      "right": {
+        "label": "1784–85",
+        "text": "A single pipe whose pitch could change shrank the movement enough to fit a box about 10 cm long."
+      }
+    },
+    {
+      "type": "reveal",
+      "prompt": "The singing bird box was invented in Geneva in 1784–85. Whose workshop is usually credited?",
+      "answer": "Pierre Jaquet-Droz’s",
+      "detail": "Jaquet-Droz, a celebrated maker of automata, gets the credit, though his colleagues Jean-Frédéric Leschot or Henri Maillardet may have devised the variable-pitch whistle."
+    },
+    {
+      "type": "quiz",
+      "question": "How does a singing bird box change the note of its song?",
+      "options": [
+        "A piston slides inside one whistle",
+        "Air jumps between dozens of pipes",
+        "Pins pluck the teeth of a comb",
+        "A reed is stretched and slackened"
+      ],
+      "answer": 0,
+      "explanation": "One miniature organ pipe does it all: a close-fitting piston moves up and down inside it, guided by a cam, giving a range of over an octave."
+    }
+  ],
+  "tags": [
+    "automata",
+    "birdsong",
+    "clockwork",
+    "instruments"
+  ],
+  "source": {
+    "label": "Wikipedia: Singing bird box",
+    "url": "https://en.wikipedia.org/wiki/Singing_bird_box"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-19"
+}

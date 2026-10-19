@@ -1,0 +1,61 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-starling-murmuration-seven-neighbours",
+  "field": "biology",
+  "title": "In a starling flock, each bird keeps track of just six or seven neighbours",
+  "emoji": "🐦",
+  "cover": {
+    "src": "starling-murmuration.jpg",
+    "alt": "A huge, loose cloud of starlings fills the sky above a reed bed at sunset.",
+    "credit": "Karen Roe · CC BY 2.0"
+  },
+  "body": "A murmuration can hold thousands of starlings turning as one, yet each bird follows only a handful of others. Researchers filmed flocks of up to 2,600 starlings over Rome with stereo cameras and rebuilt every bird's position in 3D. Each bird responded to a fixed number of nearest neighbours, **six to seven on average**, however near or far they were. Because the rule counts birds rather than metres, the flock holds together whether it spreads out or bunches up, as it does when a falcon attacks.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "starling-murmuration.mp4",
+      "poster": "starling-murmuration.jpg",
+      "alt": "A dark cloud of thousands of starlings swirls over a reed bed against a pink and blue evening sky, stretching out, thinning and bunching up again.",
+      "caption": "Starlings swirl at dusk over Strumpshaw Fen in Norfolk, England, in November 2017. The flock stretches, thins and bunches up again as it moves.",
+      "credit": "Karen Roe · CC BY 2.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Flock_of_starlings_(Sturnus_vulgaris).webm",
+      "music": "“Ever Mindful” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Two possible rules",
+      "left": { "label": "By distance", "text": "Respond to every bird within a set range. When the flock spreads out, birds would drift out of range and lose touch." },
+      "right": { "label": "By count", "text": "Respond to your six or seven nearest birds, wherever they are. The link stays as strong at any density. This is what starlings do." }
+    },
+    {
+      "type": "spectrum",
+      "heading": "Average gap to a bird's nearest neighbour",
+      "min": 0,
+      "max": 2,
+      "unit": "m",
+      "ends": ["0 m", "2 m"],
+      "marks": [
+        { "label": "Densest flock", "value": 0.68 },
+        { "label": "Sparsest flock", "value": 1.51 }
+      ],
+      "colors": ["#fbbf24", "#38bdf8"],
+      "note": "Flocks filmed over Rome's Termini station, winter 2005–06"
+    },
+    {
+      "type": "text",
+      "heading": "Why stick together?",
+      "text": "The flocks gather over their roost in the evening, and they can come under attack from predators such as peregrine falcons. Stragglers and small groups are much more likely to be caught, so a rule that keeps the flock in one piece pays off."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does tracking a fixed number of neighbours suit a flock better than tracking every bird within a set distance?",
+      "options": ["It holds together at any density", "It lets the birds fly faster", "It lets one bird lead the rest", "It saves energy on long flights"],
+      "answer": 0,
+      "explanation": "Counting neighbours keeps the link equally strong whether the birds are 0.7 m apart or twice that, so the flock stays cohesive even when an attack scatters it."
+    }
+  ],
+  "tags": ["birds", "starlings", "flocking", "behaviour"],
+  "source": { "label": "Ballerini et al., PNAS (2008)", "url": "https://www.pnas.org/doi/10.1073/pnas.0711437105" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

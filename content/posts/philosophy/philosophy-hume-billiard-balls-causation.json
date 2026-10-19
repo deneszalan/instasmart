@@ -1,0 +1,111 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "philosophy-hume-billiard-balls-causation",
+  "field": "philosophy",
+  "title": "David Hume argued that you never actually see one billiard ball make another move",
+  "emoji": "🎱",
+  "cover": {
+    "src": "carom-shot.jpg",
+    "alt": "A computer-rendered billiard table with a blue cloth seen from above: a cue at one corner, a white ball, and a yellow ball rolling towards a red one.",
+    "credit": "Natalia Cabezón González · CC BY 4.0"
+  },
+  "body": "Watch a billiard ball strike another and you see one motion, a touch, then another motion. The empiricist philosopher David Hume (1711–1776) pointed out that you never perceive any ‘power’ passing between them: we have no impression of efficacy at all, only of one kind of event **constantly conjoined** with another. The only way to know what the second ball will do is past experience. After enough repeats the mind feels a natural pull from cause to effect, and Hume argued that this inner feeling is where our idea of necessary connection comes from.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "carom-shot.mp4",
+      "poster": "carom-shot.jpg",
+      "alt": "A computer animation of a pocketless billiard table seen from above: a cue strikes the yellow ball, which hits the red ball, rebounds off several cushions and finally strikes the white ball.",
+      "caption": "A computer-animated carom shot: the cue sends the yellow ball into the red one, then around the cushions until it taps the white. You see motion and contact, but never the push itself.",
+      "credit": "Natalia Cabezón González · CC BY 4.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Billar_Franc%C3%A9s.webm",
+      "music": "“Gymnopedie No. 3” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "sort",
+      "heading": "Can you see it happen?",
+      "bins": [
+        "You see it",
+        "You never see it"
+      ],
+      "items": [
+        {
+          "text": "The first ball rolling",
+          "bin": 0
+        },
+        {
+          "text": "The two balls touching",
+          "bin": 0
+        },
+        {
+          "text": "The second ball moving off",
+          "bin": 0
+        },
+        {
+          "text": "A force that makes it move",
+          "bin": 1
+        }
+      ],
+      "explanation": "Hume’s point: experience gives us motion, contact and more motion, every time. The causal power linking them is never itself observed."
+    },
+    {
+      "type": "flow",
+      "heading": "Where the idea of ‘cause’ comes from",
+      "steps": [
+        {
+          "icon": "🎱",
+          "label": "See one ball strike another"
+        },
+        {
+          "icon": "🔁",
+          "label": "See the same thing again and again"
+        },
+        {
+          "icon": "🧠",
+          "label": "The mind comes to expect the effect"
+        },
+        {
+          "icon": "🔗",
+          "label": "That expectation feels like necessity"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "An object precedent and contiguous to another, and where all the objects resembling the former are placed in like relations of precedency and contiguity to those objects that resemble the latter.",
+      "attribution": "David Hume’s first definition of a cause, A Treatise of Human Nature"
+    },
+    {
+      "type": "text",
+      "heading": "But I’ve never played billiards!",
+      "text": "Hume didn’t claim a newcomer to the game would have no idea what happens next. We can reason by resemblance, borrowing from past experience of things knocking into each other. The prediction still rests on earlier experience, not on seeing the cause itself."
+    },
+    {
+      "type": "quiz",
+      "question": "For Hume, how do we know what the second ball will do?",
+      "options": [
+        "Only from past experience",
+        "By pure reasoning",
+        "By seeing the force pass",
+        "By measuring momentum"
+      ],
+      "answer": 0,
+      "explanation": "Nothing in the cause implies the effect on its own. Only experience of what has followed before lets us predict what the second ball will do."
+    }
+  ],
+  "tags": [
+    "hume",
+    "causation",
+    "induction",
+    "experience"
+  ],
+  "source": {
+    "label": "Internet Encyclopedia of Philosophy: Hume, Causation",
+    "url": "https://iep.utm.edu/hume-causation/"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

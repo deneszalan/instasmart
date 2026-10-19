@@ -1352,6 +1352,69 @@
               "explanation"
             ],
             "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "const": "video"
+              },
+              "src": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9_-]*\\.mp4$",
+                "description": "File name of an MP4 clip in content/media/<post-id>/. Make it with `npm run clip`."
+              },
+              "poster": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9_-]*\\.(png|jpg|jpeg|webp|gif|avif)$",
+                "description": "A still from the clip, shown before it plays (`npm run clip` makes one)."
+              },
+              "alt": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300,
+                "description": "What the clip shows, for screen readers."
+              },
+              "caption": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "fit": {
+                "description": "\"contain\" shows the whole frame on the field colours (default, best for landscape footage); \"cover\" fills the slide.",
+                "type": "string",
+                "enum": [
+                  "contain",
+                  "cover"
+                ]
+              },
+              "credit": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120,
+                "description": "Who made the footage and its licence, e.g. \"NASA/JPL-Caltech · Public domain · excerpt\"."
+              },
+              "href": {
+                "description": "The page the footage comes from, e.g. its NASA or Wikimedia Commons page.",
+                "type": "string",
+                "format": "uri"
+              },
+              "music": {
+                "description": "Credit for the soundtrack, required when the clip has audio, e.g. \"“Mesmerizing Galaxy” Kevin MacLeod (incompetech.com) · CC BY 4.0\".",
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              }
+            },
+            "required": [
+              "type",
+              "src",
+              "poster",
+              "alt",
+              "credit"
+            ],
+            "additionalProperties": false
           }
         ]
       }

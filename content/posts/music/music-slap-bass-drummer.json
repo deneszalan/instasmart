@@ -1,0 +1,113 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-slap-bass-drummer",
+  "field": "music",
+  "title": "Larry Graham says he began slapping his bass to imitate a drummer his band didn’t have",
+  "emoji": "🎸",
+  "cover": {
+    "src": "slap-bass.jpg",
+    "alt": "Close-up of a black five-string bass guitar: the player’s right thumb rests over the strings where the neck meets the body, while the left hand frets notes.",
+    "credit": "Aristides Guitars · CC BY 4.0"
+  },
+  "body": "Slapping makes a bass guitar sound percussive, almost like a drum. The player strikes the low strings with the **bony joint of the thumb**, letting them smack the metal frets for a buzzing thump, and pops the high strings by snapping them with a finger so they bounce off the fretboard. On the electric bass the technique is widely credited to Larry Graham of Sly and the Family Stone in the late 1960s, who has said he was trying to copy the sound of a drum set before his band had found its drummer. Jazz bands in New Orleans had already slapped the double bass in the early 1900s.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "slap-bass.mp4",
+      "poster": "slap-bass.jpg",
+      "alt": "Close-up of a black five-string bass guitar against a white wall: the player’s right thumb repeatedly strikes the strings near the end of the neck while the left hand moves along the frets.",
+      "caption": "Slapping a five-string bass: the right thumb strikes the strings where the neck meets the body, while the left hand frets the notes.",
+      "credit": "Aristides Guitars · CC BY 4.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Slap_and_harmonics_on_a_5_string_bass_guitar.ogv",
+      "music": "“Got Funk” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Two halves of one technique",
+      "left": {
+        "label": "Slap",
+        "text": "The thumb’s bony joint strikes the low E and A strings, which buzz against the metal frets."
+      },
+      "right": {
+        "label": "Pop",
+        "text": "The index or middle finger snaps the high D and G strings so they bounce off the fretboard."
+      }
+    },
+    {
+      "type": "flow",
+      "heading": "How slapping travelled",
+      "steps": [
+        {
+          "icon": "🎷",
+          "label": "New Orleans jazz double bass, early 1900s"
+        },
+        {
+          "icon": "🤠",
+          "label": "Western swing and hillbilly boogie"
+        },
+        {
+          "icon": "🎸",
+          "label": "Rockabilly, an early rock and roll"
+        },
+        {
+          "icon": "🕺",
+          "label": "Late-1960s electric bass, then funk, disco"
+        }
+      ]
+    },
+    {
+      "type": "sort",
+      "heading": "Slap or pop?",
+      "bins": [
+        "Slap",
+        "Pop"
+      ],
+      "items": [
+        {
+          "text": "Strike the low E and A strings",
+          "bin": 0
+        },
+        {
+          "text": "Snap the high D and G strings",
+          "bin": 1
+        },
+        {
+          "text": "Use the bony joint of the thumb",
+          "bin": 0
+        },
+        {
+          "text": "Use the index or middle finger",
+          "bin": 1
+        }
+      ],
+      "explanation": "The thumb slaps the low strings against the frets; a finger pops the high strings off the fretboard. Graham calls it ‘thumpin’ and pluckin’’."
+    },
+    {
+      "type": "quiz",
+      "question": "Which band was Larry Graham playing in when he made slap bass famous?",
+      "options": [
+        "Sly and the Family Stone",
+        "The Beatles",
+        "The Rolling Stones",
+        "Earth, Wind & Fire"
+      ],
+      "answer": 0,
+      "explanation": "Graham was the electric bassist in Sly and the Family Stone in the late 1960s. From there the technique quickly spread to funk and disco."
+    }
+  ],
+  "tags": [
+    "bass",
+    "funk",
+    "technique",
+    "instruments"
+  ],
+  "source": {
+    "label": "Wikipedia: Slapping (music)",
+    "url": "https://en.wikipedia.org/wiki/Slapping_(music)"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

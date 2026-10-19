@@ -69,7 +69,7 @@ describe('MCP server with a local checkout', () => {
     expect(media.text).toContain('media[0] (orbit.svg): must not contain event handler');
 
     const missing = await call('validate_post', { post });
-    expect(missing.text).toContain('image "orbit.svg" is missing');
+    expect(missing.text).toContain('file "orbit.svg" is missing');
   });
 
   it('saves a valid post with its image, labelled as AI-written', async () => {

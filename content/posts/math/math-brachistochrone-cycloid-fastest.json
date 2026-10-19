@@ -1,0 +1,86 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-brachistochrone-cycloid-fastest",
+  "field": "math",
+  "title": "The quickest slide down to a point off to one side isn’t a straight line but a cycloid",
+  "emoji": "🎢",
+  "cover": {
+    "src": "ball-race.jpg",
+    "alt": "A computer rendering of five curved blue tracks running side by side down to a common wall, with coloured balls at different points along them.",
+    "credit": "PantheraLeo1359531 · CC0"
+  },
+  "body": "Picture a bead sliding without friction from one point to a lower point off to the side. The straight line is the shortest path, but not the quickest: a track that drops steeply at first lets the bead build up speed early. The best trade-off, the **brachistochrone** (Greek for “shortest time”), is a cycloid, the curve traced by a point on the rim of a rolling wheel. Johann Bernoulli set the problem as a challenge in 1696, and Isaac Newton, Jakob Bernoulli, Leibniz, Tschirnhaus and L’Hôpital all sent in solutions.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "ball-race.mp4",
+      "poster": "ball-race.jpg",
+      "alt": "Computer animation at half speed: five identical balls start at the same height on five differently curved frictionless tracks and roll down to a wall. The yellow ball on the second track arrives first; the red ball, on the track that drops steepest at the start, comes fourth.",
+      "caption": "Half speed: five identical balls race down five frictionless tracks. Yellow, on the cycloid, wins. Red drops steepest at the start but only comes fourth.",
+      "credit": "PantheraLeo1359531 · CC0 · excerpt, slowed to half speed",
+      "href": "https://commons.wikimedia.org/wiki/File:Brachistochrone_8000x7200p120_20220719.webm",
+      "music": "“Thinking Music” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Even Galileo got it wrong",
+      "left": {
+        "label": "Galileo, 1638",
+        "text": "The quickest way down is along an arc of a circle."
+      },
+      "right": {
+        "label": "The answer, 1697",
+        "text": "It is a cycloid, the curve a point on a rolling wheel’s rim traces out."
+      }
+    },
+    {
+      "type": "timeline",
+      "heading": "Bernoulli’s challenge",
+      "events": [
+        {
+          "when": "1638",
+          "text": "Galileo concludes the fastest path is a circular arc"
+        },
+        {
+          "when": "June 1696",
+          "text": "Johann Bernoulli sets the problem in the journal Acta Eruditorum"
+        },
+        {
+          "when": "Jan 1697",
+          "text": "Newton reportedly solves it in one night and mails it anonymously"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Known by his claw",
+      "text": "Newton’s answer arrived without a name, but Johann Bernoulli is said to have known at once who wrote it, as you recognise a lion from its claw mark. The famous Latin version of the line, “tanquam ex ungue leonem”, comes from an 1855 biography of Newton."
+    },
+    {
+      "type": "quiz",
+      "question": "Would a much heavier ball need a different fastest curve?",
+      "options": [
+        "Yes, a steeper one",
+        "Yes, a flatter one",
+        "No, the same curve",
+        "It depends on its size"
+      ],
+      "answer": 2,
+      "explanation": "The brachistochrone doesn’t depend on the ball’s mass or on the strength of gravity. Stronger gravity makes every ball faster, but the same curve still wins."
+    }
+  ],
+  "tags": [
+    "calculus",
+    "curves",
+    "newton"
+  ],
+  "source": {
+    "label": "Wikipedia: Brachistochrone curve",
+    "url": "https://en.wikipedia.org/wiki/Brachistochrone_curve"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
