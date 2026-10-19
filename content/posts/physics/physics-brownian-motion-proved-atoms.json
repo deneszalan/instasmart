@@ -1,0 +1,70 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-brownian-motion-proved-atoms",
+  "field": "physics",
+  "title": "Tiny specks jiggling in water helped prove that atoms are real",
+  "emoji": "🔬",
+  "cover": {
+    "src": "brownian.jpg",
+    "alt": "A golden-brown microscope view crowded with small dark specks and pale particles suspended in liquid.",
+    "credit": "V. L. Fedorov · CC BY-SA 4.0"
+  },
+  "body": "Under a microscope, specks suspended in water never settle down: they jitter and wander at random, however long you watch. Botanist Robert Brown saw this in 1827 in particles from pollen grains, but could not explain it. In 1905 Albert Einstein showed it is what you would expect if the water is made of molecules that keep hitting each speck, a few more on one side than the other at any instant. Jean Perrin's careful experiments in 1908 matched Einstein's predictions, helping to settle the long debate over whether atoms exist.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "brownian.mp4",
+      "poster": "brownian.jpg",
+      "alt": "A microscope view of many small dark and pale particles in a golden liquid. They jiggle on the spot and drift a little in random directions, some blurring as they move in and out of focus.",
+      "caption": "Under a microscope, tiny particles suspended in a liquid jiggle and drift at random, nudged by molecules far too small to see. Time-lapse footage.",
+      "credit": "V. L. Fedorov · CC BY-SA 4.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:%D0%91%D1%80%D0%BE%D1%83%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5_%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5.ogv",
+      "music": "“Confused State” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "reveal",
+      "prompt": "Brown first saw the jiggling in particles from pollen, so it might have been life. How did he rule that out?",
+      "answer": "Specks of glass and rock dust did it too",
+      "detail": "He repeated the experiment with inorganic particles, which jiggled just the same, so the cause had to be physical, not biological."
+    },
+    {
+      "type": "flow",
+      "heading": "Why a speck never sits still",
+      "steps": [
+        { "icon": "💧", "label": "Water molecules move constantly" },
+        { "icon": "🎯", "label": "They hit the speck from every side" },
+        { "icon": "⚖️", "label": "Each instant, one side gets a few more hits" },
+        { "icon": "〰️", "label": "The speck lurches one way, then another" }
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "From pollen to atoms",
+      "events": [
+        { "when": "1827", "text": "Robert Brown sees particles from pollen jiggling in water" },
+        { "when": "1905", "text": "Einstein explains the motion as molecules hitting the particles" },
+        { "when": "1908", "text": "Jean Perrin's experiments confirm Einstein's predictions" },
+        { "when": "1926", "text": "Perrin wins the Nobel Prize in Physics" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Einstein's theory of the jiggling let scientists work out what?",
+      "options": [
+        "The size of atoms",
+        "The speed of light",
+        "The age of Earth",
+        "The charge of an electron"
+      ],
+      "answer": 0,
+      "explanation": "By linking how quickly the specks spread out to the molecules hitting them, it gave the size of atoms and how many atoms there are in a mole."
+    }
+  ],
+  "tags": ["atoms", "molecules", "einstein", "microscopes"],
+  "source": {
+    "label": "Wikipedia: Brownian motion",
+    "url": "https://en.wikipedia.org/wiki/Brownian_motion"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

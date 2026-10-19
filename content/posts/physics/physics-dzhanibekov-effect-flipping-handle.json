@@ -1,0 +1,65 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-dzhanibekov-effect-flipping-handle",
+  "field": "physics",
+  "title": "In orbit, a spinning T-handle keeps flipping over, with nothing touching it",
+  "emoji": "🔧",
+  "cover": {
+    "src": "t-handle.jpg",
+    "alt": "A small metal T-shaped handle floating in front of equipment racks aboard the space station.",
+    "credit": "NASA · Public domain"
+  },
+  "body": "A rigid object such as a book, a phone or a T-handle has three special axes it can spin about, and for most shapes each one resists being turned by a different amount. Spin it about the axis with the most or the least resistance and the rotation stays steady. Spin about the middle one and the tiniest wobble grows, so the object flips over, rights itself and flips again. This is the **tennis racket theorem**, described by Louis Poinsot in 1834. It is also called the Dzhanibekov effect, after the Soviet cosmonaut who noticed it while in space in 1985.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "t-handle.mp4",
+      "poster": "t-handle.jpg",
+      "alt": "A metal T-handle floats and spins in front of white and blue equipment racks. Every few seconds its short arm swaps from pointing one way to pointing the other as the whole handle flips over, while it drifts slowly to the right.",
+      "caption": "Aboard the space station, a T-handle set spinning keeps flipping over by itself: watch its short arm swap sides every few seconds.",
+      "credit": "NASA · Public domain · excerpt, cropped",
+      "href": "https://commons.wikimedia.org/wiki/File:Dzhanibekov_effect.ogv",
+      "music": "“Moon Lounge Omicron Prime” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "text",
+      "heading": "Why space makes it obvious",
+      "text": "On Earth a spinning handle falls or lands before it can flip more than once. In orbit it floats freely, so the instability has time to play out again and again. Nothing pushes it: the flips come from the way its mass is spread out."
+    },
+    {
+      "type": "sort",
+      "heading": "Steady spin or flips over?",
+      "bins": ["Steady", "Flips over"],
+      "items": [
+        { "text": "A phone spun flat on its back, like a record", "bin": 0 },
+        { "text": "A phone spun like a drill around its length", "bin": 0 },
+        { "text": "A phone tossed end over end, top over bottom", "bin": 1 },
+        { "text": "A tennis racket tossed head over handle", "bin": 1 }
+      ],
+      "explanation": "End over end is the middle axis. Toss a racket that way through one full turn and its face also makes a half turn, so you catch it the other side up."
+    },
+    {
+      "type": "timeline",
+      "heading": "An old theorem, a new name",
+      "events": [
+        { "when": "1834", "text": "Louis Poinsot describes the motion of spinning bodies" },
+        { "when": "1900s", "text": "It is taught in standard mechanics textbooks" },
+        { "when": "1985", "text": "Vladimir Dzhanibekov notices it in space" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "A book has three special spin axes. How many of them can it spin about steadily?",
+      "options": ["Two", "One", "All three", "None"],
+      "answer": 0,
+      "explanation": "Spins about the axes with the largest and smallest resistance to turning are stable. Only the middle, or intermediate, axis is unstable."
+    }
+  ],
+  "tags": ["rotation", "spin", "microgravity", "iss"],
+  "source": {
+    "label": "Wikipedia: Tennis racket theorem",
+    "url": "https://en.wikipedia.org/wiki/Tennis_racket_theorem"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}
