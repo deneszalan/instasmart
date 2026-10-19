@@ -1,0 +1,76 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-sunspots-brighter-than-full-moon",
+  "field": "space",
+  "title": "A sunspot looks black, but on its own it would shine brighter than the full Moon",
+  "emoji": "🌞",
+  "cover": {
+    "src": "big-sunspot-2014.jpg",
+    "alt": "The orange disc of the Sun in visible light, with a cluster of dark sunspots near its left edge.",
+    "credit": "NASA’s Goddard Space Flight Center/SDO · Public domain"
+  },
+  "body": "Sunspots are patches where bundled-up magnetic fields block the hot gas that normally wells up from inside the Sun, so the surface there cools from about 5,780 K to roughly **3,000–4,500 K**. That is still searingly hot: cut out and seen on its own, a single sunspot would shine brighter than the full Moon, glowing crimson-orange. It only looks black because the surface around it is so much brighter. Sunspots range from about 16 km to 160,000 km across, and the biggest can be seen without a telescope, through a proper solar filter.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "big-sunspot-2014.mp4",
+      "poster": "big-sunspot-2014.jpg",
+      "alt": "Time-lapse of the orange Sun: a cluster of dark spots appears at its left edge, grows, drifts across its face and slips off the right edge, while a few small spots travel with it.",
+      "caption": "17 to 29 October 2014: the Sun’s rotation carries AR 12192, the biggest sunspot group of its solar cycle up to then, across its face. NASA’s Solar Dynamics Observatory, sped up 2×.",
+      "credit": "NASA’s Goddard Space Flight Center/SDO · Public domain · excerpt, cropped, sped up 2×",
+      "href": "https://svs.gsfc.nasa.gov/4246/",
+      "music": "“Concentration” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "reveal",
+      "prompt": "The sunspot group took about two weeks to cross the Sun’s face. Why does it move at all?",
+      "answer": "The Sun is spinning",
+      "detail": "The spots are part of the surface, so the Sun’s rotation carries them from one edge to the other. Sunspot counts even show a 27-day rhythm from this rotation."
+    },
+    {
+      "type": "spectrum",
+      "heading": "How hot is a sunspot?",
+      "min": 2000,
+      "max": 6500,
+      "unit": "K",
+      "ends": ["Cooler", "Hotter"],
+      "marks": [
+        { "label": "Sunspot core, coolest", "value": 3000 },
+        { "label": "Sunspot core, warmest", "value": 4500 },
+        { "label": "Surface around it", "value": 5780 }
+      ],
+      "colors": ["#b91c1c", "#fde68a"],
+      "note": "Temperatures of the umbra, the dark centre of a sunspot"
+    },
+    {
+      "type": "flow",
+      "heading": "How a sunspot forms",
+      "steps": [
+        { "icon": "🧲", "label": "Magnetic field lines bunch together" },
+        { "icon": "🚧", "label": "They block hot gas rising from below" },
+        { "icon": "🌡️", "label": "That patch of surface cools" },
+        { "icon": "⚫", "label": "It looks dark next to the brighter surface" }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "160,000 km",
+      "label": "across: the biggest sunspots, more than 12 Earths wide",
+      "text": "The smallest are about 16 km wide. A sunspot can last anywhere from a few days to a few months before it decays."
+    },
+    {
+      "type": "quiz",
+      "question": "Who left the oldest known record of sunspots?",
+      "options": ["Chinese astronomers", "Galileo", "Isaac Newton", "Johannes Kepler"],
+      "answer": 0,
+      "explanation": "The earliest record is in the Chinese I Ching, completed before 800 BC. The first telescope sightings came much later, in 1610."
+    }
+  ],
+  "tags": ["sun", "sunspots", "magnetism", "sdo"],
+  "source": {
+    "label": "Wikipedia: Sunspot",
+    "url": "https://en.wikipedia.org/wiki/Sunspot"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

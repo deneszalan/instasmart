@@ -1,0 +1,61 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-crab-nebula-supernova-1054",
+  "field": "space",
+  "title": "In 1054 a new star appeared, bright enough to see in daylight for 23 days",
+  "emoji": "🦀",
+  "cover": {
+    "src": "crab-1999-2024.jpg",
+    "alt": "The Crab Nebula seen by Hubble: a glowing tangle of orange, pink and blue filaments around a pale blue haze.",
+    "credit": "NASA, ESA, STScI, W. Blair (JHU); J. DePasquale (STScI) · CC BY 4.0"
+  },
+  "body": "In July 1054, Chinese astronomers recorded a ‘guest star’ in the constellation Taurus that was visible in daylight, like Venus. By their records it shone in the daytime sky for 23 days and stayed visible at night until April 1056. It was a **supernova**, a star blowing itself apart, and it lies about 6,500 light-years away, so the explosion had happened thousands of years before its light arrived. The debris is still flying outwards today as the Crab Nebula, and at its centre spins the collapsed core of the star, the Crab Pulsar.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "crab-1999-2024.mp4",
+      "poster": "crab-1999-2024.jpg",
+      "alt": "Two Hubble images of the Crab Nebula flick back and forth, labelled 1999 and 2024: a glowing tangle of orange, pink and blue filaments whose outer strands shift slightly outwards between the two.",
+      "caption": "Hubble images of the Crab Nebula taken 25 years apart, in 1999 and 2024, shown in turn: the filaments of the exploded star have moved outwards at about 5.5 million km/h.",
+      "credit": "NASA, ESA, STScI, W. Blair (JHU); video: J. DePasquale (STScI) · CC BY 4.0 · excerpt",
+      "href": "https://esahubble.org/videos/heic2607a/",
+      "music": "“Infinite Perspective” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "reveal",
+      "prompt": "The supernova’s light reached Earth in 1054. When did the star actually explode?",
+      "answer": "Roughly 6,500 years earlier",
+      "detail": "The Crab Nebula is about 6,500 light-years away, so its light spent roughly that long crossing space before anyone on Earth could see it."
+    },
+    {
+      "type": "stat",
+      "value": "642 days",
+      "label": "that the guest star of 1054 stayed visible to the naked eye",
+      "text": "It was bright enough to see in daylight for 23 days, then faded until it vanished from the night sky in April 1056."
+    },
+    {
+      "type": "timeline",
+      "heading": "From guest star to nebula",
+      "events": [
+        { "when": "July 1054", "text": "Chinese astronomers record a ‘guest star’" },
+        { "when": "April 1056", "text": "It fades from the night sky" },
+        { "when": "1758", "text": "Charles Messier logs the nebula, later his object M1" },
+        { "when": "1928", "text": "Edwin Hubble links the nebula to the star of 1054" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "How did Edwin Hubble tie the Crab Nebula to the star of 1054?",
+      "options": ["From how fast it is growing", "From its colour", "From its pulsar’s beat", "From an old drawing of it"],
+      "answer": 0,
+      "explanation": "The rate at which the cloud is expanding meant the explosion must have been seen from Earth only about nine centuries earlier, matching the Chinese record."
+    }
+  ],
+  "tags": ["supernovae", "stars", "nebulae", "hubble", "history"],
+  "source": {
+    "label": "Wikipedia: SN 1054",
+    "url": "https://en.wikipedia.org/wiki/SN_1054"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

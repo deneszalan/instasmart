@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-alma-telescope-rearranges-itself",
+  "field": "space",
+  "title": "One telescope in Chile zooms by driving its 100-tonne dishes around the desert",
+  "emoji": "📡",
+  "cover": {
+    "src": "alma-transporter.jpg",
+    "alt": "A huge yellow many-wheeled vehicle carries a white 12-metre radio dish across a dusty plain, with rows of other dishes behind it.",
+    "credit": "ALMA (ESO/NAOJ/NRAO)/UHD Team · CC BY 4.0"
+  },
+  "body": "ALMA, high in Chile’s Atacama Desert, is made of 66 antennas that work together as one telescope. How much detail it sees depends not on the size of each dish but on how far apart the dishes are: [moving them further apart sharpens the view](https://www.eso.org/public/teles-instr/alma/interferometry/). So ALMA rearranges itself, spreading its dishes over anything from 150 metres to about 16 kilometres. Each 12-metre antenna weighs over 100 tonnes, and two giant transporters named **Otto and Lore** carry them around and set each one down on its concrete pad to within a few millimetres.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "alma-transporter.mp4",
+      "poster": "alma-transporter.jpg",
+      "alt": "A huge yellow transporter on many wheels drives slowly across a dusty plain carrying a white radio dish on its back, past rows of other dishes, puffing out dark exhaust.",
+      "caption": "The transporter Otto gives an ALMA antenna a ride at the observatory’s support base, 2,900 metres up in the Chilean Andes.",
+      "credit": "ALMA (ESO/NAOJ/NRAO)/UHD Team · CC BY 4.0 · excerpt",
+      "href": "https://www.eso.org/public/videos/uhd_alma8_2014/",
+      "music": "“Strength of the Titans” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "estimate",
+      "question": "How much does an empty ALMA transporter weigh, in tonnes?",
+      "min": 10,
+      "max": 300,
+      "step": 10,
+      "answer": 130,
+      "unit": "tonnes",
+      "explanation": "130 tonnes each, before they pick up an antenna of over 100 tonnes. Each is 20 metres long, 10 metres wide, 6 metres high and rolls on 28 tyres."
+    },
+    {
+      "type": "chart",
+      "heading": "Transporter top speed",
+      "items": [
+        { "label": "Empty", "value": 20 },
+        { "label": "Carrying an antenna", "value": 12, "emphasis": true }
+      ],
+      "unit": "km/h",
+      "note": "Safety and precision matter more than speed"
+    },
+    {
+      "type": "list",
+      "heading": "Built for thin air at 5,000 metres",
+      "items": [
+        "Two diesel engines of about 700 hp each",
+        "At 5,000 m they manage only about 450 hp each",
+        "The driver’s seat leaves room for an oxygen tank",
+        "A remote control lets the driver watch from outside"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why does ALMA move its antennas further apart?",
+      "options": ["To see finer detail", "To catch more rain", "To avoid strong winds", "To cool the electronics"],
+      "answer": 0,
+      "explanation": "An array’s sharpness depends on the greatest distance between its antennas, so spreading them out works like zooming in."
+    }
+  ],
+  "tags": ["telescopes", "alma", "eso", "radio", "engineering"],
+  "source": {
+    "label": "ESO: The ALMA Transporters, Otto and Lore",
+    "url": "https://www.eso.org/public/teles-instr/alma/transporters/"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}
