@@ -1,0 +1,107 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-apophis-2029-close-flyby",
+  "field": "space",
+  "title": "In April 2029, an asteroid will slip past Earth closer than our highest satellites",
+  "emoji": "☄️",
+  "cover": {
+    "src": "ride-along.jpg",
+    "alt": "Computer model of the dark, lumpy asteroid Apophis in black space, seen from behind as it heads towards Earth.",
+    "credit": "NASA/GSFC Scientific Visualization Studio · Public domain"
+  },
+  "body": "On 13 April 2029, the asteroid **Apophis**, a lump of rock a few hundred metres across, will pass about 31,600 km above Earth’s surface: inside the ring of geostationary satellites, and only a tenth of the way to the Moon. No asteroid this big has come so close in recorded history; on average it happens about once every 800 years. Soon after its discovery in 2004, the chance of a 2029 impact was briefly put at 2.7%, the highest rating any object has had on the Torino scale of impact hazards. Later measurements, including radar, ruled out a collision for at least the next 100 years, so the flyby will be a show instead: from dark places in Europe, Africa and western Asia it should be visible to the naked eye.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "ride-along.mp4",
+      "poster": "ride-along.jpg",
+      "alt": "Computer animation seen from just behind the asteroid Apophis: Earth, first a dark night side dotted with city lights, grows huge behind the rock, swings past in daylight, then shrinks into a small blue ball as the asteroid moves away.",
+      "caption": "Computer model: riding along with Apophis through 13 April 2029, as Earth looms up behind it, sweeps past and shrinks away again.",
+      "credit": "NASA/GSFC Scientific Visualization Studio · Public domain · excerpt, cropped",
+      "href": "https://svs.gsfc.nasa.gov/5651/",
+      "music": "“Ossuary 7 - Resolve” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "place",
+      "question": "How far above Earth’s surface will Apophis pass, in thousands of kilometres?",
+      "min": 0,
+      "max": 400,
+      "step": 1,
+      "answer": 32,
+      "unit": "thousand km",
+      "ends": ["Earth", "400,000 km"],
+      "hints": [
+        {
+          "label": "Geostationary",
+          "value": 36
+        },
+        {
+          "label": "The Moon",
+          "value": 384
+        }
+      ],
+      "explanation": "About 31,600 km, just under the roughly 35,900 km height of geostationary satellites, and about a tenth of the distance to the Moon."
+    },
+    {
+      "type": "pictogram",
+      "heading": "In late 2004, the odds of Apophis hitting Earth in 2029 were put at 1 in 37 (2.7%)",
+      "icon": "☄️",
+      "total": 37,
+      "count": 1,
+      "note": "New observations soon ruled out a 2029 impact"
+    },
+    {
+      "type": "timeline",
+      "heading": "From scare to spectacle",
+      "events": [
+        {
+          "when": "June 2004",
+          "text": "Apophis is discovered at Kitt Peak"
+        },
+        {
+          "when": "Dec 2004",
+          "text": "A record Torino scale rating of 4"
+        },
+        {
+          "when": "2013",
+          "text": "Radar rules out a 2036 impact"
+        },
+        {
+          "when": "2021",
+          "text": "No risk for at least 100 years"
+        },
+        {
+          "when": "13 Apr 2029",
+          "text": "The close flyby"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What should Earth’s gravity do to Apophis as it passes?",
+      "options": [
+        "Change its orbit and spin",
+        "Capture it as a second moon",
+        "Pull it into the atmosphere",
+        "Nothing you could measure"
+      ],
+      "answer": 0,
+      "explanation": "Earth’s pull will move it into a larger orbit and is likely to alter its rotation. NASA’s OSIRIS-APEX spacecraft is due to arrive soon after to study the changes."
+    }
+  ],
+  "tags": [
+    "asteroids",
+    "apophis",
+    "earth",
+    "nasa"
+  ],
+  "source": {
+    "label": "Wikipedia: 99942 Apophis",
+    "url": "https://en.wikipedia.org/wiki/99942_Apophis"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-19"
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-great-red-spot-shrinking",
+  "field": "space",
+  "title": "Jupiter’s Great Red Spot is a storm wider than Earth, and it has been shrinking",
+  "emoji": "🌀",
+  "cover": {
+    "src": "voyager-approach.jpg",
+    "alt": "Black-and-white Voyager 1 image of Jupiter, a striped globe with the oval of the Great Red Spot in its southern half.",
+    "credit": "NASA/JPL · Public domain"
+  },
+  "body": "The Great Red Spot is a giant storm about 22 degrees south of Jupiter’s equator, a high-pressure system whose clouds turn anticlockwise roughly once every 4.5 Earth days, with winds of up to about 430 km/h around its edge. It has been watched continuously since 1878, and it may be older still. But it is getting smaller: at its biggest, more than a century ago, it reached about **40,000 km** across, roughly three Earths, while in 2017 it measured about **16,350 km**, still 1.3 times the width of Earth. Its cloud tops rise about 8 km above the clouds around it.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "voyager-approach.mp4",
+      "poster": "voyager-approach.jpg",
+      "alt": "Black-and-white time-lapse of Jupiter growing larger as a spacecraft approaches: the planet’s light and dark bands slide past one another, and the oval Great Red Spot swirls in the lower half. A few frames are cut off on one side where image data is missing.",
+      "caption": "Voyager 1’s ‘Blue Movie’, Jan–Feb 1979: 66 images, one every Jupiter rotation of about 10 hours, as the probe closed from 58 to 31 million km. Bands slide past each other around the Great Red Spot.",
+      "credit": "NASA/JPL · Public domain · shown at 5 frames a second",
+      "href": "https://science.nasa.gov/photojournal/voyager-1-blue-movie/",
+      "music": "“Space 1990” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "scale",
+      "heading": "The Great Red Spot, then and now",
+      "items": [
+        {
+          "label": "Earth",
+          "value": 12742
+        },
+        {
+          "label": "The spot in 2017",
+          "value": 16350
+        },
+        {
+          "label": "At its biggest",
+          "value": 40000
+        }
+      ],
+      "unit": "km",
+      "note": "Width of the oval; its biggest size, over a century ago, is approximate"
+    },
+    {
+      "type": "estimate",
+      "question": "At the edge of the Great Red Spot, how fast do the winds blow, in km/h?",
+      "min": 0,
+      "max": 1000,
+      "step": 10,
+      "answer": 430,
+      "unit": "km/h",
+      "explanation": "About 430 km/h (268 mph). The storm turns anticlockwise roughly once every 4.5 Earth days."
+    },
+    {
+      "type": "text",
+      "heading": "Seen up close",
+      "text": "In 1979 Voyager 1 sent back the first detailed picture of the spot, taken from about 9.2 million km away and showing clouds as small as 160 km across."
+    },
+    {
+      "type": "quiz",
+      "question": "How long have astronomers watched the Great Red Spot without a break?",
+      "options": [
+        "Since the late 1870s",
+        "Since Voyager 1 in 1979",
+        "Since Galileo in 1610",
+        "Only since the 1990s"
+      ],
+      "answer": 0,
+      "explanation": "It was first recorded in 1831 and has been watched continuously since about 1878. A spot seen from 1665 to 1713 may or may not have been the same storm."
+    }
+  ],
+  "tags": [
+    "jupiter",
+    "storms",
+    "voyager",
+    "planets"
+  ],
+  "source": {
+    "label": "Wikipedia: Great Red Spot",
+    "url": "https://en.wikipedia.org/wiki/Great_Red_Spot"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-19"
+}
