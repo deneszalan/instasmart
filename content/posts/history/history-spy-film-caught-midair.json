@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-spy-film-caught-midair",
+  "field": "history",
+  "title": "The first spy-satellite photos were caught in mid-air by a plane",
+  "emoji": "🛩️",
+  "cover": {
+    "src": "midair-catch.jpg",
+    "alt": "Grainy black-and-white film still: a twin-boomed cargo plane flies through a pale sky with long poles trailing beneath it.",
+    "credit": "Universal Newsreel · Public domain"
+  },
+  "body": "**Discoverer 14** was really a CORONA spy satellite, built to photograph the Soviet Union from orbit. It launched on 18 August 1960, and the next day, over Alaska, it dropped a capsule holding its exposed film. The capsule came down by parachute southwest of Hawaii, where a C-119 cargo plane called Pelican 9 snatched it out of the air. It was the first film recovered from an orbiting satellite, and the first object caught in mid-air on its way back from orbit.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "midair-catch.mp4",
+      "poster": "midair-catch.jpg",
+      "alt": "Black-and-white newsreel: a cargo plane flies with long poles trailing below; the view looks down past the poles at clouds; the plane tows something on a line; a cable drum turns; a battered capsule dangles in the air.",
+      "caption": "From a newsreel on the first catch, August 1960: a C-119 trails long hooks, then tows a snagged capsule as a winch reels it in.",
+      "credit": "Universal Newsreel · Public domain · excerpt",
+      "href": "https://archive.org/details/1960-08-22_space_race",
+      "music": "“Spy Glass” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "Special delivery from orbit",
+      "steps": [
+        { "icon": "📸", "label": "The satellite photographs the USSR" },
+        { "icon": "🌍", "label": "17th pass, over Alaska: film capsule out" },
+        { "icon": "🪂", "label": "Parachute spotted 360 miles from Honolulu" },
+        { "icon": "✈️", "label": "A C-119 catches it in mid-air" }
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "The capsule held only 20 lb (9.1 kg) of film, half a full load. How much did it show?",
+      "answer": "More than every U-2 flight before it",
+      "detail": "It gave broader coverage of the Soviet Union than all the U-2 spy-plane missions flown until then."
+    },
+    {
+      "type": "quiz",
+      "question": "Pilot Harold Mitchell flew Pelican 9 past the falling capsule more than once. On which pass did he catch it?",
+      "options": ["The first", "The second", "The third", "The sixth"],
+      "answer": 2,
+      "explanation": "The third, on 19 August 1960. The parachute had been sighted about 360 miles (580 km) southwest of Honolulu."
+    },
+    {
+      "type": "text",
+      "heading": "A name that hid a spy",
+      "text": "Discoverer 14, also known as Corona 9009, was a KH-1 satellite in the Corona spy programme, run by the Pentagon’s Advanced Research Projects Agency and the US Air Force."
+    }
+  ],
+  "tags": ["spysatellite", "coldwar", "spacerace", "aviation", "1960"],
+  "source": {
+    "label": "Wikipedia: Discoverer 14",
+    "url": "https://en.wikipedia.org/wiki/Discoverer_14"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-19"
+}
