@@ -1,0 +1,72 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-giant-isopod-deep-sea",
+  "field": "biology",
+  "title": "On the cold, dark sea floor, an isopod can grow to half a metre long",
+  "emoji": "🦐",
+  "cover": {
+    "src": "giant-isopod.jpg",
+    "alt": "A pale lilac giant isopod with a segmented, armoured body walks across a flat, sandy sea floor.",
+    "credit": "NOAA Office of Ocean Exploration and Research · Public domain"
+  },
+  "body": "The giant isopod *Bathynomus giganteus* usually grows to between 19 and 36 cm, and the largest confirmed specimen was about 50 cm long. Its size is put down to **deep-sea gigantism**: invertebrates living in cold, deep water tend to grow larger and live longer. It is a scavenger, feeding on the remains of dead animals that sink to the sea floor, and so helps recycle nutrients in the deep.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "giant-isopod.mp4",
+      "poster": "giant-isopod.jpg",
+      "alt": "A giant isopod swims low over a pale sea floor, settles in a small puff of sediment, and then walks slowly across the sand.",
+      "caption": "Filmed by NOAA's remotely operated vehicle Deep Discoverer 816 m down in the Gulf of Mexico: a giant isopod swims low, settles in a puff of sediment, then walks on.",
+      "credit": "NOAA Office of Ocean Exploration and Research · Public domain · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Bathynomus_giganteus_as_seen_by_remotely_operated_vehicle_(ROV)_Deep_Discoverer_at_a_depth_of_816_meters_at_South_Reed,_Gulf_of_Mexico,_2017-11-30.webm",
+      "music": "“Intrepid” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "place",
+      "question": "How long was the largest confirmed giant isopod, in centimetres?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 50,
+      "unit": "cm",
+      "ends": ["0 cm", "1 m"],
+      "hints": [
+        { "label": "Typical, small", "value": 19 },
+        { "label": "Typical, large", "value": 36 }
+      ],
+      "explanation": "About 50 cm. A 76 cm giant has been claimed in the popular press, but it has never been confirmed."
+    },
+    {
+      "type": "spectrum",
+      "heading": "How deep its genus lives in the western Atlantic",
+      "min": 0,
+      "max": 2500,
+      "unit": "m",
+      "ends": ["Surface", "2,500 m"],
+      "marks": [
+        { "label": "Shallowest", "value": 310 },
+        { "label": "This clip", "value": 816, "emphasis": true },
+        { "label": "Deepest", "value": 2140 }
+      ],
+      "colors": ["#38bdf8", "#1e1b4b"],
+      "note": "Range given for the genus Bathynomus, in cold water from 310 to 2,140 m"
+    },
+    {
+      "type": "stat",
+      "value": "4,000+",
+      "label": "facets in each of its large compound eyes",
+      "text": "A mirror-like layer behind them, the tapetum lucidum, bounces light back through the eye, so the eyes seem to glow in a lamp's beam."
+    },
+    {
+      "type": "quiz",
+      "question": "What does the giant isopod mostly eat?",
+      "options": ["Dead animals sinking from above", "Live fish it chases down", "Seaweed on the sea floor", "Plankton filtered from water"],
+      "answer": 0,
+      "explanation": "It is a scavenger. By eating the remains that sink to the bottom, it helps recycle nutrients in the deep sea."
+    }
+  ],
+  "tags": ["deepsea", "crustaceans", "ocean", "gigantism"],
+  "source": { "label": "Wikipedia: Bathynomus giganteus", "url": "https://en.wikipedia.org/wiki/Bathynomus_giganteus" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-volvox-colony-spheres",
+  "field": "biology",
+  "title": "Volvox is a green ball of up to 50,000 cells, with its offspring growing inside",
+  "emoji": "🟢",
+  "cover": {
+    "src": "volvox-rolling.jpg",
+    "alt": "A Volvox colony under the microscope: a translucent green sphere studded with tiny cells, with darker green clusters inside.",
+    "credit": "Alexander Klepnev · CC BY 4.0"
+  },
+  "body": "*Volvox* is a green alga that lives as a hollow sphere of up to **50,000 cells**, each with two flagella pointing outwards. The cells beat in a coordinated way, and an eyespot at the front lets the colony swim towards light. Most of the cells never reproduce. That job falls to a few large cells inside, which divide again and again to build new colonies within the parent.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "volvox-rolling.mp4",
+      "poster": "volvox-rolling.jpg",
+      "alt": "Microscope footage of a Volvox colony: a green sphere covered in tiny dot-like cells turns slowly, and as the focus shifts darker green clusters show inside it.",
+      "caption": "A Volvox colony turns under the microscope. As the focus moves from its surface of tiny cells to its middle, the darker green clusters inside come into view.",
+      "credit": "Alexander Klepnev · CC BY 4.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%BE%D0%BB%D1%8C%D0%B2%D0%BE%D0%BA%D1%81.webm",
+      "music": "“Mana Two - Part 2” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "How a colony makes a colony",
+      "steps": [
+        { "icon": "🟢", "label": "A large reproductive cell sits inside" },
+        { "icon": "➗", "label": "It divides again and again" },
+        { "icon": "🔄", "label": "The embryo, inside out, turns itself right" },
+        { "icon": "🫧", "label": "A daughter colony forms within the parent" }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Two kinds of cells",
+      "left": { "label": "Body cells", "text": "Small cells in a single layer on the surface, each with two flagella. They swim, but never reproduce." },
+      "right": { "label": "Reproductive cells", "text": "A few large cells in the interior that cannot swim. They divide to build the next generation." }
+    },
+    {
+      "type": "estimate",
+      "question": "About how many million years ago did Volvox's line split from single-celled ancestors?",
+      "min": 0,
+      "max": 1000,
+      "step": 10,
+      "answer": 200,
+      "unit": "million years",
+      "explanation": "About 200 million years ago. Since then its colonies have split the work: body cells to swim, a few big cells to reproduce."
+    },
+    {
+      "type": "scramble",
+      "clue": "The Latin verb meaning 'to roll' that gave Volvox its name",
+      "answer": "VOLVERE",
+      "detail": "The name joins volvere, 'to roll', with -ox, 'fierce'. Antonie van Leeuwenhoek first reported seeing Volvox in 1700."
+    }
+  ],
+  "tags": ["algae", "microscopy", "multicellularity", "cells"],
+  "source": { "label": "Wikipedia: Volvox", "url": "https://en.wikipedia.org/wiki/Volvox" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

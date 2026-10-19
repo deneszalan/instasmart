@@ -1,0 +1,66 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-leafcutter-ants-farm-fungus",
+  "field": "biology",
+  "title": "Leafcutter ants don't eat the leaves they carry: they feed them to a fungus farm",
+  "emoji": "🐜",
+  "cover": {
+    "src": "leafcutters-nest.jpg",
+    "alt": "Leafcutter ants carrying small green and pale pieces of leaf across bare earth towards the dark entrance of their nest.",
+    "credit": "Filo gèn' · CC BY-SA 4.0"
+  },
+  "body": "Leafcutter ants cut fresh leaves and haul them home, but not to eat. The leaves feed a **fungus garden** underground, and the fungus feeds the ant larvae, while the adult ants drink leaf sap. Workers of different sizes split the work: medium-sized ones cut and carry, the tiniest tend the garden, and the biggest guard the nest. These ants fully domesticated their fungus about 15 million years ago.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "leafcutters-nest.mp4",
+      "poster": "leafcutters-nest.jpg",
+      "alt": "Leafcutter ants, each holding up a piece of green leaf or pale petal, march up a slope of bare earth and disappear into the dark opening of their nest.",
+      "caption": "Leafcutter ants carry pieces of leaf and petal up a bare slope and into the dark entrance of their nest.",
+      "credit": "Filo gèn' · CC BY-SA 4.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Leafcutter_ants_video.webm",
+      "music": "“Industrious Ferret” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "From leaf to lunch",
+      "steps": [
+        { "icon": "✂️", "label": "Foragers cut pieces of fresh leaf" },
+        { "icon": "🐜", "label": "They carry them back to the nest" },
+        { "icon": "🍄", "label": "The leaves feed the fungus garden" },
+        { "icon": "🐛", "label": "The fungus feeds the ant larvae" }
+      ]
+    },
+    {
+      "type": "estimate",
+      "question": "A leafcutter ant can carry up to how many times its own body weight?",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "answer": 50,
+      "unit": "×",
+      "explanation": "Up to 50 times. Teams of such workers can strip an entire citrus tree in less than 24 hours, which makes some species serious farm pests."
+    },
+    {
+      "type": "match",
+      "heading": "Match each worker to its job",
+      "pairs": [
+        { "left": "Minims, the tiniest", "right": "Tend the fungus garden" },
+        { "left": "Minors", "right": "Patrol the foraging trails" },
+        { "left": "Mediae", "right": "Cut and carry leaves" },
+        { "left": "Majors, the biggest", "right": "Defend the nest" }
+      ],
+      "explanation": "Workers come in sizes suited to different jobs. Minors are the first line of defence, patrolling around the foraging columns."
+    },
+    {
+      "type": "stat",
+      "value": "3.55 million",
+      "label": "ants in one huge nest, with mounds spreading up to 80 m",
+      "text": "Next to humans, leafcutter ants form some of the largest and most complex animal societies on Earth."
+    }
+  ],
+  "tags": ["ants", "insects", "fungi", "farming"],
+  "source": { "label": "Wikipedia: Leafcutter ant", "url": "https://en.wikipedia.org/wiki/Leafcutter_ant" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}
