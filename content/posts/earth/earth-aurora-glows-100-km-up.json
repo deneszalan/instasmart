@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-aurora-glows-100-km-up",
+  "field": "earth",
+  "title": "Most auroras glow about 100 km up, so astronauts can watch them from above",
+  "emoji": "🌌",
+  "body": "Auroras appear when disturbances in Earth’s magnetosphere, the region its magnetic field controls, send charged particles, mostly electrons and protons, plunging into the thin upper air, where they make oxygen and nitrogen give off light. That only happens high up: from 1911, Carl Størmer and his colleagues triangulated more than **12,000** auroras with cameras and found none below 70 km, with most near 100 km. The International Space Station orbits at [about 400 km](https://en.wikipedia.org/wiki/International_Space_Station), so its crew looks down on the glowing curtains.",
+  "cover": {
+    "src": "aurora-iss.jpg",
+    "alt": "Green aurora swirling over the dark Southern Ocean, with a red glow above it along Earth’s curved horizon, seen from orbit",
+    "credit": "NASA · Public domain"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "aurora-iss.mp4",
+      "poster": "aurora-iss.jpg",
+      "alt": "Time-lapse from the International Space Station over the night side of Earth: green auroral curtains ripple and swirl below along the curved horizon, topped by a faint red glow, with stars above.",
+      "caption": "17 August 2022: the space station crosses the Southern Ocean between Africa and Antarctica while the green and red aurora australis ripples below it.",
+      "credit": "NASA Scientific Visualization Studio · Public domain · excerpt",
+      "href": "https://svs.gsfc.nasa.gov/31281/",
+      "music": "“That Zen Moment” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "spectrum",
+      "heading": "How high auroras are",
+      "min": 0,
+      "max": 450,
+      "unit": "km",
+      "ends": ["Ground", "Low orbit"],
+      "marks": [
+        { "label": "Lowest found", "value": 70 },
+        { "label": "Most common", "value": 100, "emphasis": true },
+        { "label": "Only 6.5% above", "value": 150 },
+        { "label": "Space station", "value": 400 }
+      ],
+      "colors": ["#22c55e", "#ef4444"],
+      "note": "From Størmer’s survey of more than 12,000 auroras; the station orbits at about 400 km"
+    },
+    {
+      "type": "text",
+      "heading": "Why green below and red above?",
+      "text": "Both colours come from oxygen atoms. Red light takes an excited atom a long time to give off, so it only escapes high up, where the air is so thin that collisions are rare. Lower down, more frequent collisions knock out the red, and oxygen’s green light dominates."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does the bottom of an auroral curtain look so sharp?",
+      "options": ["Atomic oxygen thins fast below it", "The ozone layer blocks it", "Clouds hide everything lower", "Earth’s magnetic field ends there"],
+      "answer": 0,
+      "explanation": "The concentration of atomic oxygen drops quickly below about 100 km, so the glow ends abruptly instead of fading out."
+    }
+  ],
+  "tags": ["aurora", "atmosphere", "iss", "magnetism"],
+  "source": { "label": "Wikipedia: Aurora", "url": "https://en.wikipedia.org/wiki/Aurora" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

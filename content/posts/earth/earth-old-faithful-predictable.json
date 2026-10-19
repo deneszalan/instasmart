@@ -1,0 +1,101 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-old-faithful-predictable",
+  "field": "earth",
+  "title": "Old Faithful’s next eruption can be predicted from how long the last one lasted",
+  "emoji": "⛲",
+  "body": "Yellowstone’s Old Faithful doesn’t run on a fixed timetable: as of January 2025 the median gap between eruptions was **102 minutes**, but single gaps ranged from 54 to 118 minutes. Years of study by mathematicians, statisticians and dedicated observers showed that the gap depends on how long the previous eruption lasted. A short eruption discharges less water and heat, so the geyser recharges quickly; a long one discharges more and needs more time, which lets rangers post a prediction for the next eruption.",
+  "cover": {
+    "src": "old-faithful.jpg",
+    "alt": "Old Faithful geyser shooting a white jet of water and steam into a blue sky, with steam drifting across a pale mound of rock",
+    "credit": "UrsRuebli · CC BY 3.0"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "old-faithful.mp4",
+      "poster": "old-faithful.jpg",
+      "alt": "Old Faithful geyser erupting on a sunny day: steam drifts from a low mound, water splashes up and then bursts into a tall white jet, and a wider view shows the full column of water and steam against blue sky.",
+      "caption": "Old Faithful in Yellowstone, 2019: after a few splashes the jet bursts upwards, and the wider view shows the whole column of boiling water and steam.",
+      "credit": "UrsRuebli · CC BY 3.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Old_Faithful_Geyser_Eruption_selection_2019.webm",
+      "music": "“Americana” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Why the wait varies",
+      "left": {
+        "label": "Short eruption",
+        "text": "Less water and heat are discharged, so the geyser recharges in a short time"
+      },
+      "right": {
+        "label": "Long eruption",
+        "text": "More water and heat are discharged, so it needs more time to recharge before the next one"
+      }
+    },
+    {
+      "type": "spectrum",
+      "heading": "How high Old Faithful shoots",
+      "min": 0,
+      "max": 60,
+      "unit": "m",
+      "ends": [
+        "Ground",
+        "Tallest"
+      ],
+      "marks": [
+        {
+          "label": "Lowest",
+          "value": 32.3
+        },
+        {
+          "label": "Average",
+          "value": 40,
+          "emphasis": true
+        },
+        {
+          "label": "Highest",
+          "value": 54.8
+        }
+      ],
+      "colors": [
+        "#38bdf8",
+        "#f8fafc"
+      ],
+      "note": "Eruptions normally last 1½ to 5 minutes and expel 14,000 to 31,800 litres of water"
+    },
+    {
+      "type": "quiz",
+      "question": "Old Faithful has just had an unusually long eruption. What should you expect next?",
+      "options": [
+        "A longer wait than usual",
+        "A shorter wait than usual",
+        "Exactly the usual wait",
+        "No more eruptions that day"
+      ],
+      "answer": 0,
+      "explanation": "A long eruption discharges more water and heat, so the geyser needs more time to recharge before it erupts again."
+    },
+    {
+      "type": "reveal",
+      "prompt": "Yellowstone has nearly 500 geysers. How many of them do park rangers predict?",
+      "answer": "Six, including Old Faithful",
+      "detail": "Predictions are posted at the Old Faithful Visitor Education Center, the lodges and the NPS App."
+    }
+  ],
+  "tags": [
+    "geysers",
+    "yellowstone",
+    "geology",
+    "prediction"
+  ],
+  "source": {
+    "label": "National Park Service: Explore Old Faithful",
+    "url": "https://www.nps.gov/yell/planyourvisit/exploreoldfaithful.htm"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
