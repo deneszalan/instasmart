@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-saturn-v-shake-tower-imploded",
+  "field": "engineering",
+  "title": "NASA shook a full-size Saturn V inside this tower, then imploded it in 2026",
+  "emoji": "🏗️",
+  "cover": {
+    "src": "implosion.jpg",
+    "alt": "A tall, narrow grey tower clad in metal panels, with an open steel frame and a crane on top, stands against a cloudy sky above a line of trees.",
+    "credit": "NASA/Marshall Television · Public domain"
+  },
+  "body": "The **Dynamic Test Stand** at NASA’s Marshall Space Flight Center in Huntsville, Alabama, was built in 1964 to put fully assembled rockets through mechanical and vibration tests. Engineers shook and stressed whole vehicles inside it to see how they responded to vibration and bending, and how well the joints between the stages held. The stand was 363 feet (111 m) tall, with a derrick on top that could swing 200-ton parts into place. It became a National Historic Landmark in 1985 for its role in the Saturn V programme, but it was no longer in use, and on 10 January 2026 it was brought down with a carefully coordinated implosion.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "implosion.mp4",
+      "poster": "implosion.jpg",
+      "alt": "A tall grey tower stands against a cloudy sky. Flashes run up its side, dark smoke shoots from the top, and the tower folds down into a spreading cloud of grey dust and smoke.",
+      "caption": "Marshall Space Flight Center, 10 January 2026: charges fire up the Dynamic Test Stand and it collapses into a cloud of dust and smoke.",
+      "credit": "NASA/Marshall Television · Public domain · excerpt",
+      "href": "https://images.nasa.gov/details/MSFC_Demolition_T_Stand_Dynamic_Test_Stand_Broll_wsound",
+      "music": "“Hero Down” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "stat",
+      "value": "111 m",
+      "label": "the height of the Dynamic Test Stand",
+      "text": "It was 30 m square, with a central bay 23 m across, and an elevator served its 15 levels."
+    },
+    {
+      "type": "reveal",
+      "prompt": "Engineers shook a complete Saturn V test rocket, SA-500D, inside the stand. What did they find?",
+      "answer": "Major problems that could have made it fail",
+      "detail": "The faults were corrected. About a decade later it shook the full-size shuttle orbiter Enterprise too."
+    },
+    {
+      "type": "spectrum",
+      "heading": "Six decades of the Dynamic Test Stand",
+      "min": 1960,
+      "max": 2030,
+      "format": "year",
+      "ends": ["Apollo era", "Today"],
+      "marks": [
+        { "label": "Built", "value": 1964 },
+        { "label": "Shuttle mock-up arrives", "value": 1977 },
+        { "label": "Landmark", "value": 1985 },
+        { "label": "Imploded", "value": 2026, "emphasis": true }
+      ],
+      "note": "The shuttle Enterprise was shake-tested there around 1978"
+    },
+    {
+      "type": "quiz",
+      "question": "What were rockets put through in the Dynamic Test Stand?",
+      "options": [
+        "Shaking and bending tests",
+        "Full-power engine firings",
+        "Drops into a pool",
+        "Freezing in a vacuum"
+      ],
+      "answer": 0,
+      "explanation": "It was built for mechanical and vibration tests on fully assembled vehicles, to see how they responded to vibrating and bending stresses."
+    }
+  ],
+  "tags": ["nasa", "rockets", "testing", "demolition"],
+  "source": {
+    "label": "Wikipedia: Saturn V Dynamic Test Stand",
+    "url": "https://en.wikipedia.org/wiki/Saturn_V_Dynamic_Test_Stand"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

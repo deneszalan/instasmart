@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-saffire-fires-in-space",
+  "field": "chemistry",
+  "title": "NASA lit fires on purpose in empty space cargo ships to study flames",
+  "emoji": "🔥",
+  "cover": {
+    "src": "saffire.jpg",
+    "alt": "Bright yellow flames rise in two large clumps from a strip of burning material in a dark chamber, with a glowing wire stretched between them.",
+    "credit": "NASA Glenn Research Center · Public domain"
+  },
+  "body": "A fire is one of the worst things that can happen on a spacecraft, but lighting big ones on a crewed station is far too risky. So between 2016 and January 2024, NASA’s six **Saffire** experiments burned samples inside uncrewed Cygnus cargo ships after they had left the International Space Station, before each ship burned up on re-entry. In weightlessness hot gas doesn’t rise, so there is no buoyant draught to feed a flame: [a candle in orbit](https://www.nasa.gov/image-detail/candle-flames-3/) becomes a blue sphere. Saffire’s flow unit therefore worked like a small wind tunnel, pushing air past the burning sample while cameras and sensors recorded how the fire grew.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "saffire.mp4",
+      "poster": "saffire.jpg",
+      "alt": "In a dark chamber, yellow flames leap in two big clumps along a sheet of burning plastic, flickering upwards in the airflow, with thin glowing sensor wires across them. Suddenly they shrink to dim spots, turn faint blue and almost vanish.",
+      "caption": "Saffire-VI, inside an empty Cygnus cargo ship: flames spread over a sample of acrylic as air blows past. When the airflow is slowed, they shrink to a faint blue glow.",
+      "credit": "NASA Glenn Research Center · Public domain · excerpt",
+      "href": "https://images.nasa.gov/details/Saf-VI%20S8C3%2BC4%201-sided%20PMMA_unmapped_jpeg-20x%20no%20text",
+      "music": "“Lost Frontier” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Why flames need help in orbit",
+      "left": {
+        "label": "On Earth",
+        "text": "Hot gas rises and pulls fresh air in from below. That draught makes a candle flame a yellow teardrop."
+      },
+      "right": {
+        "label": "In orbit",
+        "text": "Nothing rises, so oxygen only creeps in slowly unless air is moved. Saffire blew air past its samples."
+      }
+    },
+    {
+      "type": "stat",
+      "value": "94 × 41 cm",
+      "label": "the cotton and fibreglass sheet burned by Saffire-I in June 2016",
+      "text": "It was the first large fire lit on purpose inside an orbiting spacecraft. Earlier fire tests in space had used much smaller samples."
+    },
+    {
+      "type": "spectrum",
+      "heading": "Eight years of fires in space",
+      "min": 2015,
+      "max": 2025,
+      "format": "year",
+      "marks": [
+        { "label": "Saffire-I", "value": 2016 },
+        { "label": "Saffire-IV", "value": 2020 },
+        { "label": "Saffire-VI, the last", "value": 2024, "emphasis": true }
+      ],
+      "note": "Six experiments in all, each in a Cygnus after it left the space station"
+    },
+    {
+      "type": "text",
+      "heading": "What the fires showed",
+      "text": "In the first three tests, flames spread fast but then held a steady size and burn rate; on Earth, similar fires tend to keep growing. The spacecraft’s size mattered more than expected. Saffire-VI, the last, ran 19 burns with more oxygen and lower pressure, to mimic crewed spacecraft."
+    },
+    {
+      "type": "quiz",
+      "question": "Why were the Saffire fires lit in Cygnus after it had left the space station?",
+      "options": [
+        "To keep the station and crew safe",
+        "Cygnus carries extra oxygen",
+        "Fire is easier to film there",
+        "The station has no electricity spare"
+      ],
+      "answer": 0,
+      "explanation": "Burning in a cargo ship that had already undocked kept the fires well away from the station, and the ship was due to burn up on re-entry anyway."
+    }
+  ],
+  "tags": ["fire", "combustion", "microgravity", "nasa"],
+  "source": {
+    "label": "NASA: Flame burns out on NASA’s long-running spacecraft fire experiment",
+    "url": "https://www.nasa.gov/humans-in-space/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

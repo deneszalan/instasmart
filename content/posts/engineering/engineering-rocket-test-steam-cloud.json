@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-rocket-test-steam-cloud",
+  "field": "engineering",
+  "title": "The giant white cloud at a NASA rocket engine test isn’t smoke: it’s steam",
+  "emoji": "🚀",
+  "cover": {
+    "src": "hot-fire.jpg",
+    "alt": "Seen from high up, a tall grey steel test stand beside a river and forest, with a stream of white vapour drifting from its base.",
+    "credit": "NASA Stennis Space Center · Public domain"
+  },
+  "body": "At NASA’s Stennis Space Center in Mississippi, RS-25 engines are bolted into the Fred Haise Test Stand (once called A-1) and fired straight down. Their exhaust, at over 6,000 °F (about 3,300 °C), hits a **flame deflector** that turns it sideways out of the stand. To stop the deflector being destroyed, a water plant floods it with cooling water, and the heat flashes that water into steam. The steam billows out as a cloud often mistaken for smoke, and it can even condense and fall again as light rain.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "hot-fire.mp4",
+      "poster": "hot-fire.jpg",
+      "alt": "Seen from high up, a tall steel test stand stands beside a river. An orange glow appears at its base and a huge cloud of white vapour bursts out sideways, rolling across the grass until it fills half the picture.",
+      "caption": "Stennis Space Center, 21 March 2023: an RS-25 engine lights up inside the Fred Haise Test Stand, and a wall of white steam rolls out across the site.",
+      "credit": "NASA Stennis Space Center · Public domain · excerpt",
+      "href": "https://images.nasa.gov/details/SSC_2023-03-21_RS-25_Engine_Test",
+      "music": "“At Launch” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "estimate",
+      "question": "During a test, up to how many US gallons of cooling water a minute does the stand get?",
+      "min": 0,
+      "max": 500000,
+      "step": 10000,
+      "answer": 170000,
+      "unit": "gallons",
+      "explanation": "Up to about 170,000 gallons a minute, roughly 640,000 litres, delivered at 225 psi. Most of it goes to keeping the flame deflector intact."
+    },
+    {
+      "type": "chart",
+      "heading": "Seconds of RS-25 firing",
+      "items": [
+        { "label": "Stand’s own tanks last", "value": 350 },
+        { "label": "Needed for a launch", "value": 500 },
+        { "label": "The March 2023 test", "value": 600, "emphasis": true }
+      ],
+      "unit": "s",
+      "note": "Tests longer than about 350 s need a barge that tops up the propellant tanks while the engine runs"
+    },
+    {
+      "type": "stat",
+      "value": "1,007",
+      "label": "Space Shuttle main engine tests on this one stand, 1975 to 2006",
+      "text": "Built between 1964 and 1967, it first tested Saturn V second stages for Apollo. Since 2015 it has tested RS-25s, the shuttle’s engine design, now used on NASA’s Space Launch System."
+    },
+    {
+      "type": "quiz",
+      "question": "Why is so much water poured into the stand during a firing?",
+      "options": [
+        "To cool the flame deflector",
+        "To feed the engine",
+        "To muffle the engine’s noise",
+        "To stop grass fires"
+      ],
+      "answer": 0,
+      "explanation": "The exhaust tops 6,000 °F. Water sprayed through the deflector’s 21 stacked water boxes keeps it from being damaged as it turns the blast sideways."
+    }
+  ],
+  "tags": ["rockets", "nasa", "engines", "testing"],
+  "source": {
+    "label": "NASA Stennis: A-1 Test Stand fact sheet",
+    "url": "https://www.nasa.gov/sites/default/files/atoms/files/a-1_test_stand_v1.pdf"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}
