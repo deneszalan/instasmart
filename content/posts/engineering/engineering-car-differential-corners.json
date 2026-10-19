@@ -1,0 +1,79 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-car-differential-corners",
+  "field": "engineering",
+  "title": "Without a differential, a car's driven wheels would slip in every turn",
+  "emoji": "⚙️",
+  "cover": {
+    "src": "differential-gears.jpg",
+    "alt": "Black-and-white close-up of a differential: a large ring gear with small pinion gears in a carrier, meshing with gears on a shaft.",
+    "credit": "Jam Handy Organization for Chevrolet, 1937 · Public domain"
+  },
+  "body": "In a corner, a car's outer wheels follow a bigger circle than the inner ones, so they must travel farther in the same time. Wheels that roll freely cope easily, but the driven wheels are both connected to the engine. A **differential** solves this: it is a set of gears in which the speed of one shaft is always the *average* of the other two. Small pinion gears let one half-axle speed up exactly as much as the other slows down, while the engine keeps pushing both. Some vehicles, such as go-karts and trams, skip it and simply let their wheels slip in the bends.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "differential-gears.mp4",
+      "poster": "differential-gears.jpg",
+      "alt": "Black-and-white film of gear models: small pinion gears on a carrier are fitted to a large ring gear, a finger turns them, a model axle with two wheels appears, and the assembly spins between two axle shafts.",
+      "caption": "From Chevrolet's 1937 film Around the Corner: small pinion gears ride in a carrier on the big ring gear and mesh with a gear on each half-axle.",
+      "credit": "Jam Handy Organization for Chevrolet · Public domain · excerpt",
+      "href": "https://archive.org/details/Aroundth1937",
+      "music": "“The Show Must Be Go” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "How the gears share out a turn",
+      "steps": [
+        { "icon": "🔩", "label": "The gearbox turns the big ring gear" },
+        { "icon": "⚙️", "label": "The ring gear carries small pinions round" },
+        { "icon": "↔️", "label": "On a straight road, both axles turn alike" },
+        { "icon": "↪️", "label": "In a bend, pinions spin: one side speeds up" }
+      ]
+    },
+    {
+      "type": "estimate",
+      "question": "The ring gear turns at 100 rpm. In a bend, the inner wheel slows to 90 rpm. How fast must the outer wheel turn?",
+      "min": 90,
+      "max": 130,
+      "step": 1,
+      "answer": 110,
+      "unit": "rpm",
+      "explanation": "The ring gear's speed is the average of the two wheels' speeds, so whatever one wheel loses, the other gains: 90 and 110 average 100."
+    },
+    {
+      "type": "text",
+      "heading": "The catch",
+      "text": "A plain, 'open' differential can send most of the power to the wheel with less grip. With one wheel on a slippery patch, that wheel spins while the one with grip gets very little power. Limited-slip and locking differentials are built to limit this."
+    },
+    {
+      "type": "timeline",
+      "heading": "Getting round the corner",
+      "events": [
+        { "when": "c. 250 AD", "text": "Ma Jun's south-pointing chariot, which may have used one" },
+        { "when": "1827", "text": "Onésiphore Pecqueur patents one for a steam wagon" },
+        { "when": "1876", "text": "James Starley patents one for a two-rider quadricycle" },
+        { "when": "1885", "text": "Carl Benz fits one to his Patent-Motorwagen" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Which vehicles are examples of ones built without a differential?",
+      "options": [
+        "Taxis",
+        "Go-karts and trams",
+        "Delivery vans",
+        "Rally cars"
+      ],
+      "answer": 1,
+      "explanation": "Some go-karts and trams use axles without a differential and rely on wheel slip when cornering. Cars use one so both driven wheels can roll."
+    }
+  ],
+  "tags": ["cars", "gears", "mechanics"],
+  "source": {
+    "label": "Wikipedia: Differential (mechanical device)",
+    "url": "https://en.wikipedia.org/wiki/Differential_(mechanical_device)"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

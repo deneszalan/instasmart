@@ -1,0 +1,74 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-jacquard-loom-punched-cards",
+  "field": "tech",
+  "title": "Punched cards ran looms in 1804, long before they ran computers",
+  "emoji": "🧵",
+  "cover": {
+    "src": "jacquard-weaving.jpg",
+    "alt": "A wooden loom in a museum, with a wide fan of yellow cords above it and a red cloth with a white patterned border being woven below.",
+    "credit": "Remko de Keijzer · CC BY-SA 4.0"
+  },
+  "body": "Before 1804, weaving a complex pattern such as damask needed a second worker, the *draw boy*, to pull up the right warp threads by hand for every row. Joseph Marie Jacquard patented a device that sits on top of a loom and does it automatically, building on ideas from Basile Bouchon, Jean-Baptiste Falcon and Jacques Vaucanson. It reads a chain of **punched cards**, one card for each row of the design: where a card has a hole, a hook lifts its threads; where it doesn't, the hook stays put. Charles Babbage later borrowed the idea of swappable punched cards for his Analytical Engine.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "jacquard-weaving.mp4",
+      "poster": "jacquard-weaving.jpg",
+      "alt": "A wooden loom works steadily: a wide fan of yellow cords above shifts as threads rise and fall, and a red cloth with a white patterned border grows below.",
+      "caption": "A Jacquard loom at work at De Museumfabriek in Enschede, Netherlands: the cords above lift threads for each row of a patterned red cloth.",
+      "credit": "Remko de Keijzer · CC BY-SA 4.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Jacquard_weefgetouw_in_actie.webm",
+      "music": "“Gaslamp Funworks” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "How a card picks the threads",
+      "cycle": true,
+      "steps": [
+        { "icon": "🃏", "label": "A new card presses against a row of rods" },
+        { "icon": "🕳️", "label": "Rods meeting holes stay; the rest are pushed" },
+        { "icon": "🪝", "label": "A beam lifts the hooks left in place" },
+        { "icon": "🧶", "label": "The shuttle passes through the gap" }
+      ]
+    },
+    {
+      "type": "estimate",
+      "question": "A loom head has 400 hooks, and each hook pulls 4 threads. How many warp threads can it control?",
+      "min": 100,
+      "max": 3000,
+      "step": 100,
+      "answer": 1600,
+      "explanation": "400 × 4 = 1,600 warp ends: a cloth 1,600 threads wide, with the design repeated four times across it."
+    },
+    {
+      "type": "timeline",
+      "heading": "From paper roll to computer",
+      "events": [
+        { "when": "1725", "text": "Basile Bouchon guides a loom with a punched paper roll" },
+        { "when": "1728", "text": "Jean-Baptiste Falcon uses separate pasteboard cards" },
+        { "when": "1804", "text": "Joseph Marie Jacquard patents his machine" },
+        { "when": "Today", "text": "Computers replace the cards, steering thousands of hooks" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What did each punched card stand for?",
+      "options": [
+        "One colour of thread",
+        "One row of the pattern",
+        "One finished piece of cloth",
+        "One loom in the factory"
+      ],
+      "answer": 1,
+      "explanation": "Each card held the holes for one row of the design, so the chain of cards was the pattern, row by row."
+    }
+  ],
+  "tags": ["weaving", "punchedcards", "inventions"],
+  "source": {
+    "label": "Wikipedia: Jacquard machine",
+    "url": "https://en.wikipedia.org/wiki/Jacquard_machine"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}

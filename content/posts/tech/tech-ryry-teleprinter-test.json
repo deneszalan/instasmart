@@ -1,0 +1,68 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-ryry-teleprinter-test",
+  "field": "tech",
+  "title": "Teleprinters were tested by typing RYRYRY, because R and Y are exact opposites",
+  "emoji": "📠",
+  "cover": {
+    "src": "ryry-printout.jpg",
+    "alt": "Close-up of an old black teleprinter with a white paper roll, on which short lines of test text have been printed.",
+    "credit": "Nightflyer · CC BY-SA 4.0"
+  },
+  "body": "Teleprinters sent each character as five on-or-off pulses, in the 5-bit code known as ITA2 or Baudot. In that code **R is 01010 and Y is 10101**: every pulse of one is the reverse of the other. Sending R and Y in turn therefore flips all five pulses with every character, which made RYRYRY a hard workout for an electromechanical teleprinter and a standard test for its line. Technicians used RY test tapes to align their equipment, and RYRYRY was often sent at the start of transmissions.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "ryry-printout.mp4",
+      "poster": "ryry-printout.jpg",
+      "alt": "A teleprinter's paper roll creeps up as its mechanism prints line after line of test text, with two ribbon spools in front.",
+      "caption": "A Lorenz Lo15 teleprinter in a former telecoms centre in Elmshorn, Germany, fed by a test generator, prints line after line ending in 'ryry'.",
+      "credit": "Nightflyer · CC BY-SA 4.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Fernschreiberpr%C3%BCfung.webm",
+      "music": "“Mighty Like Us” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Mirror images in five pulses",
+      "left": { "label": "R", "text": "01010: off, on, off, on, off" },
+      "right": { "label": "Y", "text": "10101: on, off, on, off, on" }
+    },
+    {
+      "type": "estimate",
+      "question": "With 5 on-or-off pulses per character, how many different codes can a teleprinter send?",
+      "min": 5,
+      "max": 100,
+      "step": 1,
+      "answer": 32,
+      "explanation": "2 × 2 × 2 × 2 × 2 = 32. Not enough for letters and numbers, so keyboards had LTRS and FIGS keys to switch between two sets."
+    },
+    {
+      "type": "flow",
+      "heading": "What RYRYRY checks",
+      "steps": [
+        { "icon": "📤", "label": "Send R, then Y, over and over" },
+        { "icon": "🔁", "label": "All five pulses flip every character" },
+        { "icon": "⚙️", "label": "Most moving parts work at maximum stress" },
+        { "icon": "🧾", "label": "Technicians use it to align the bias setting" }
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "If the signal's polarity was reversed, the RY test printed two other letters. Which?",
+      "answer": "SG",
+      "detail": "Seeing SG where RY should be told technicians the polarity was the wrong way round."
+    },
+    {
+      "type": "text",
+      "heading": "Built to save wear",
+      "text": "In 1901 Donald Murray reworked [Baudot's code](https://en.wikipedia.org/wiki/Baudot_code) so that the commonest letters had the fewest holes on punched tape: E and T have just one. In the 7-bit ASCII code that came later, the matching test pair is U and *."
+    }
+  ],
+  "tags": ["telegraphy", "codes", "binary"],
+  "source": {
+    "label": "Wikipedia: RY (test signal)",
+    "url": "https://en.wikipedia.org/wiki/RY_(test_signal)"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-18"
+}
