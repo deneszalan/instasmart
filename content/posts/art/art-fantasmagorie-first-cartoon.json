@@ -1,0 +1,88 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-fantasmagorie-first-cartoon",
+  "field": "art",
+  "title": "The 1908 ‘first cartoon’ looks chalked on a blackboard but was drawn on paper",
+  "emoji": "✏️",
+  "cover": {
+    "src": "bottle-flower-elephant.jpg",
+    "alt": "White line drawing on a black background: a stick-figure clown lying back along the long trunk of a cartoon elephant.",
+    "credit": "Émile Cohl · Public domain"
+  },
+  "body": "Émile Cohl’s *Fantasmagorie*, released on 17 August 1908, is considered by film historians to be the first animated cartoon. Cohl drew each frame on paper and then shot it onto **negative film**, which reverses light and dark, so his lines came out pale on black and gave the film its blackboard look. He made **700 drawings** and exposed each one twice, which animators call working ‘on twos’. He worked on it from February to May or June 1908.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "bottle-flower-elephant.mp4",
+      "poster": "bottle-flower-elephant.jpg",
+      "alt": "White-line animation on black: a stick-figure clown meets a bottle and climbs inside it, the bottle opens into a flower, and the flower’s stem turns into an elephant’s trunk.",
+      "caption": "In Fantasmagorie, a clown climbs into a bottle that opens into a flower, and the flower’s stem becomes an elephant’s trunk.",
+      "credit": "Émile Cohl · Public domain · excerpt",
+      "href": "https://archive.org/details/fantasmagorie_1908",
+      "music": "“Fig Leaf Rag” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "estimate",
+      "question": "How many drawings did Émile Cohl make for Fantasmagorie?",
+      "min": 50,
+      "max": 3000,
+      "step": 50,
+      "answer": 700,
+      "explanation": "700, each one exposed twice. The live-action hands of the animator also appear in the film, drawing the main character."
+    },
+    {
+      "type": "flow",
+      "heading": "How Cohl got the blackboard look",
+      "steps": [
+        {
+          "icon": "✏️",
+          "label": "Draw each frame on paper"
+        },
+        {
+          "icon": "🎞️",
+          "label": "Shoot it onto negative film"
+        },
+        {
+          "icon": "🔁",
+          "label": "Expose every drawing twice"
+        },
+        {
+          "icon": "⬛",
+          "label": "Lines appear pale on black"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "One copy left",
+      "text": "Fantasmagorie’s master negative is presumed lost, perhaps to nitrate decay, neglect or the recovery of silver from old film. The only surviving full-frame copy is a 16 mm print, tracked down for the film’s 100th anniversary in 2008 and now held by the Academy Film Archive."
+    },
+    {
+      "type": "quiz",
+      "question": "The title comes from a 19th-century show. What did a phantasmagoria show?",
+      "options": [
+        "Magic-lantern ghosts",
+        "Trained circus animals",
+        "Shadow puppets",
+        "Fireworks"
+      ],
+      "answer": 0,
+      "explanation": "A phantasmagoria was a magic lantern show with moving images of ghosts. Cohl’s ever-changing shapes were also a tribute to the Incoherents, a forgotten art movement."
+    }
+  ],
+  "tags": [
+    "animation",
+    "cartoons",
+    "film",
+    "france"
+  ],
+  "source": {
+    "label": "Wikipedia: Fantasmagorie (film)",
+    "url": "https://en.wikipedia.org/wiki/Fantasmagorie_(film)"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

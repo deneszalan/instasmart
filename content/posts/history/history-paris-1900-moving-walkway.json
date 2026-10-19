@@ -1,0 +1,101 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-paris-1900-moving-walkway",
+  "field": "history",
+  "title": "Paris in 1900 had a two-speed moving sidewalk, 7 metres above the street",
+  "emoji": "🚶",
+  "cover": {
+    "src": "moving-boardwalk.jpg",
+    "alt": "Black-and-white film still of men in hats standing on a raised moving walkway in 1900, one holding an upright post, with trees and buildings behind a railing.",
+    "credit": "Edison Manufacturing Co. · Public domain"
+  },
+  "body": "The 1900 Paris Exposition covered 216 hectares, so simply getting around it was a challenge. The **Rue de l’Avenir**, or ‘Street of the Future’, was a moving sidewalk that ran from the esplanade of Les Invalides to the Champ de Mars with nine stations. Passengers climbed to a platform 7 m above the ground, stepped onto a walkway moving at **4.2 km/h**, then across to a faster one at **8.5 km/h**. Posts with handles gave them something to hold, or they could keep walking.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "moving-boardwalk.mp4",
+      "poster": "moving-boardwalk.jpg",
+      "alt": "Black-and-white film of visitors in hats and long coats riding a raised moving walkway at the 1900 Paris Exposition, some holding upright posts, past a railing, trees and buildings.",
+      "caption": "Visitors ride the moving sidewalk at the 1900 Paris Exposition, some gripping its upright posts, in a film by Edison’s company.",
+      "credit": "Edison Manufacturing Co. · Public domain · excerpt",
+      "href": "https://archive.org/details/the-paris-e-xposition-universelle-1900-www.-etoile.-app",
+      "music": "“Mister Exposition” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "How to ride the Street of the Future",
+      "steps": [
+        {
+          "icon": "🪜",
+          "label": "Climb to a platform 7 m up"
+        },
+        {
+          "icon": "🚶",
+          "label": "Step onto the 4.2 km/h walkway"
+        },
+        {
+          "icon": "🏃",
+          "label": "Step across to the 8.5 km/h one"
+        },
+        {
+          "icon": "🧍",
+          "label": "Hold a post, or keep walking"
+        }
+      ]
+    },
+    {
+      "type": "higher",
+      "heading": "Getting around the 1900 fair: higher or lower?",
+      "items": [
+        {
+          "label": "Slow walkway",
+          "value": 4.2
+        },
+        {
+          "label": "Electric train (average)",
+          "value": 17
+        },
+        {
+          "label": "Fast walkway",
+          "value": 8.5,
+          "emphasis": true
+        }
+      ],
+      "unit": "km/h",
+      "explanation": "A Decauville electric train followed the same route at an average of 17 km/h, twice the speed of the fast walkway."
+    },
+    {
+      "type": "stat",
+      "value": "50 centimes",
+      "label": "the average fare for the moving sidewalk",
+      "text": "About an hour’s pay: Paris workers then earned 40 to 50 centimes an hour, and a ticket into the fair itself cost one franc."
+    },
+    {
+      "type": "quiz",
+      "question": "Which way did the exposition’s electric train run?",
+      "options": [
+        "Opposite to the walkway",
+        "The same way, but faster",
+        "Only to the Eiffel Tower",
+        "Only after dark"
+      ],
+      "answer": 0,
+      "explanation": "It followed the walkway’s route in the opposite direction, sometimes 7 m up like the walkway, sometimes at ground level and sometimes underground."
+    }
+  ],
+  "tags": [
+    "paris",
+    "worldsfair",
+    "transport",
+    "1900"
+  ],
+  "source": {
+    "label": "Wikipedia: Exposition Universelle (1900)",
+    "url": "https://en.wikipedia.org/wiki/Exposition_Universelle_(1900)"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

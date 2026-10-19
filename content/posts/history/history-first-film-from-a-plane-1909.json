@@ -1,0 +1,107 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-first-film-from-a-plane-1909",
+  "field": "history",
+  "title": "The first known film shot from an aeroplane was made in 1909, with Wilbur Wright flying",
+  "emoji": "✈️",
+  "cover": {
+    "src": "wright-onboard.jpg",
+    "alt": "Grainy black-and-white frame filmed from a 1909 Wright Flyer: a strut and a bar of the aircraft cross the view of dark ground just after take-off.",
+    "credit": "Société Générale des Cinématographes Eclipse · Public domain"
+  },
+  "body": "On 24 April 1909, at what is now Centocelle Airport near Rome, the French film company Eclipse filmed Wilbur Wright demonstrating his Flyer. For part of the film the camera rode on the aircraft itself, mounted on the lower left wing near Wright’s seat. The result, known in Germany as *Wilbur Wright und seine Flugmaschine*, is considered the first motion-picture aerial photography from a **heavier-than-air** aircraft: a plane, not a balloon. Not long before, some European papers had dismissed the Wrights’ claims of flight as a ‘bluff’.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "wright-onboard.mp4",
+      "poster": "wright-onboard.jpg",
+      "alt": "Grainy black-and-white film shot from a 1909 Wright Flyer: the ground drops away after take-off, then the horizon tilts and fields slide past below, framed by the aircraft’s struts and wires.",
+      "caption": "Near Rome, 24 April 1909: a camera on Wilbur Wright’s Flyer records the lift-off, then the horizon and fields sliding past, framed by the plane’s struts.",
+      "credit": "Société Générale des Cinématographes Eclipse · Public domain · excerpt",
+      "href": "https://archive.org/details/FirstInflightFilmFootageFromWrightFlightInItaly1909",
+      "music": "“Gymnopedie No. 1” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "timeline",
+      "heading": "From ‘bluff’ to the first aerial film",
+      "events": [
+        {
+          "when": "1908",
+          "text": "Wilbur’s flights in France answer claims of ‘bluff’"
+        },
+        {
+          "when": "1908",
+          "text": "Louis Blériot is among those watching him fly"
+        },
+        {
+          "when": "24 Apr 1909",
+          "text": "Eclipse films Wilbur at Centocelle, camera on board"
+        },
+        {
+          "when": "1909",
+          "text": "Blériot flies across the English Channel"
+        }
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "For the onboard shots, where was the camera?",
+      "answer": "On the lower left wing, near Wright’s seat",
+      "detail": "That is why the Flyer’s canard elevator and its control cord sit in the foreground as the countryside passes below."
+    },
+    {
+      "type": "spectrum",
+      "heading": "Where the aerial shots fall in the 3 min 28 s film",
+      "min": 0,
+      "max": 208,
+      "unit": "s",
+      "ends": [
+        "Start",
+        "End"
+      ],
+      "marks": [
+        {
+          "label": "Title: shots from the plane",
+          "value": 94
+        },
+        {
+          "label": "Lift-off, camera on board",
+          "value": 120,
+          "emphasis": true
+        },
+        {
+          "label": "Film ends",
+          "value": 208
+        }
+      ],
+      "note": "Times approximate. The rest is filmed from the ground: engine start, flybys, low passes."
+    },
+    {
+      "type": "quiz",
+      "question": "Which of these passes beneath the Flyer in the onboard shots?",
+      "options": [
+        "Ruins of a Roman aqueduct",
+        "The Colosseum",
+        "The dome of St Peter’s",
+        "The Leaning Tower of Pisa"
+      ],
+      "answer": 0,
+      "explanation": "The Italian countryside slides past below, complete with livestock, a man on horseback and the ruins of a Roman aqueduct."
+    }
+  ],
+  "tags": [
+    "aviation",
+    "film",
+    "wrightbrothers",
+    "italy"
+  ],
+  "source": {
+    "label": "Wikipedia: Wilbur Wright und seine Flugmaschine",
+    "url": "https://en.wikipedia.org/wiki/Wilbur_Wright_und_seine_Flugmaschine"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

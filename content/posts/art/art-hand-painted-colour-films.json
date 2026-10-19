@@ -1,0 +1,91 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-hand-painted-colour-films",
+  "field": "art",
+  "title": "Some of the first colour movies were painted by hand, straight onto the film",
+  "emoji": "🎨",
+  "cover": {
+    "src": "serpentine-dance.jpg",
+    "alt": "A hand-tinted frame from an 1890s film: a dancer on a small stage raises a huge pink skirt like wings against a dark backdrop.",
+    "credit": "Edison Manufacturing Co. (W. K. L. Dickson, William Heise) · Public domain"
+  },
+  "body": "Early films were shot in black and white, so any colour had to be added afterwards. Edison’s *Annabelle Serpentine Dance* films, among the earliest examples, were coloured by painting **aniline dyes** straight onto the emulsion. In Paris, Elisabeth Thuillier later ran a studio of **220 women** who hand-coloured films for Georges Méliès, painting directly on the film stock with brushes. Each worker was given one colour, assembly-line style, and a single film often used more than 20.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "serpentine-dance.mp4",
+      "poster": "serpentine-dance.jpg",
+      "alt": "A hand-tinted 1890s film of a dancer on a small stage swirling a huge skirt; its colour jumps between yellow, white and pink from moment to moment.",
+      "caption": "A dancer swirls a vast skirt in Annabelle Serpentine Dance, an 1895 Edison film. The print was tinted by hand, so its colours flicker from yellow to white to pink.",
+      "credit": "Edison Manufacturing Co. (W. K. L. Dickson, William Heise) · Public domain · excerpt",
+      "href": "https://archive.org/details/serpentine-dance-1895-yt",
+      "music": "“Dance of the Sugar Plum Fairies” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "estimate",
+      "question": "Elisabeth Thuillier’s Paris studio coloured films by hand. How many women painted there?",
+      "min": 10,
+      "max": 500,
+      "step": 10,
+      "answer": 220,
+      "explanation": "About 220 women, painting directly on the film stock with brushes in the colours Thuillier chose. Her lab coloured films for Georges Méliès."
+    },
+    {
+      "type": "pictogram",
+      "heading": "Of about 60 hand-coloured copies of A Trip to the Moon, one is known to survive",
+      "icon": "🎞️",
+      "total": 60,
+      "count": 1,
+      "note": "Coloured by the Thuillier lab for Georges Méliès’s 1902 film"
+    },
+    {
+      "type": "timeline",
+      "heading": "Colour before colour film",
+      "events": [
+        {
+          "when": "1890s",
+          "text": "Edison’s Annabelle films tinted with aniline dyes"
+        },
+        {
+          "when": "1902",
+          "text": "A Trip to the Moon; some prints are hand-coloured"
+        },
+        {
+          "when": "c. 1905",
+          "text": "Pathé cuts a stencil for each frame of film"
+        },
+        {
+          "when": "1912",
+          "text": "The Miracle: first hand-coloured feature film"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "How did Thuillier’s studio share out the work of colouring a film?",
+      "options": [
+        "Each painter applied one colour",
+        "Each painter took one whole reel",
+        "A machine sprayed on the dyes",
+        "Whole scenes were dipped in dye"
+      ],
+      "answer": 0,
+      "explanation": "Assembly-line style: each worker was assigned a different colour, and more than 20 separate colours were often used on a single film."
+    }
+  ],
+  "tags": [
+    "film",
+    "colour",
+    "cinema",
+    "melies"
+  ],
+  "source": {
+    "label": "Wikipedia: Film colorization",
+    "url": "https://en.wikipedia.org/wiki/Film_colorization"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
