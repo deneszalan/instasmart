@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-three-warmest-years-record",
+  "field": "earth",
+  "title": "2023, 2024 and 2025 were the three warmest years in NASA's 146-year record",
+  "emoji": "🌡️",
+  "body": "NASA's record of Earth's surface temperature goes back to 1880 and combines more than 25,000 weather stations on land with ship and buoy measurements at sea. Each year is compared with the average for 1951 to 1980. By that yardstick 2024 was the hottest year yet, about **1.28 °C** warmer, while 2025, about 1.2 °C warmer, was effectively tied with 2023 for second, the two within the margin of error. The warmest years are bunched at the end of the record: every one of the ten warmest [came after 2014](https://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.txt).",
+  "cover": {
+    "src": "temperature-map.jpg",
+    "alt": "World map from the early 1880s in pale blues and light oranges, showing temperatures close to the 1951 to 1980 average",
+    "credit": "NASA Scientific Visualization Studio · Public domain"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "temperature-map.mp4",
+      "poster": "temperature-map.jpg",
+      "alt": "World map with a timeline running from 1880 to 2025. Patches of blue and pale orange shift around for decades, then the map turns steadily deeper orange and red, strongest across the Arctic, until almost nothing is blue.",
+      "caption": "NASA's map of each year's surface temperature compared with the 1951–1980 average, from 1880 to 2025, sped up 3×. Blue is cooler than that average, orange and red warmer.",
+      "credit": "NASA Scientific Visualization Studio · Public domain · excerpt, sped up 3×",
+      "href": "https://svs.gsfc.nasa.gov/5603/",
+      "music": "“Rising” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "place",
+      "question": "How much warmer than the 1951–1980 average was 2024?",
+      "min": -0.6,
+      "max": 1.6,
+      "step": 0.01,
+      "answer": 1.28,
+      "unit": "°C",
+      "ends": ["Cooler", "Warmer"],
+      "hints": [
+        { "label": "1910", "value": -0.44 },
+        { "label": "1950", "value": -0.17 },
+        { "label": "1980", "value": 0.26 },
+        { "label": "2000", "value": 0.39 }
+      ],
+      "explanation": "About 1.28 °C warmer, the hottest year in NASA's record. The values are global averages for each whole year."
+    },
+    {
+      "type": "chart",
+      "heading": "The warmest years in NASA's record",
+      "items": [
+        { "label": "2024", "value": 1.28, "emphasis": true },
+        { "label": "2025", "value": 1.18 },
+        { "label": "2023", "value": 1.17 },
+        { "label": "2020", "value": 1.01 },
+        { "label": "2016", "value": 1.01 }
+      ],
+      "unit": "°C",
+      "note": "Warmer than the 1951–1980 average; NASA revises the figures slightly as new data arrive"
+    },
+    {
+      "type": "text",
+      "heading": "Built from thousands of thermometers",
+      "text": "On land, the record draws on more than 25,000 weather stations around the world, including research stations in Antarctica. At sea it uses temperatures measured by instruments on ships and buoys. Scientists at NASA's Goddard Institute for Space Studies combine them into one global average for every month since 1880."
+    },
+    {
+      "type": "quiz",
+      "question": "In the clip, which region turns the deepest red by the 2020s?",
+      "options": ["The Arctic", "The tropical Pacific", "The Sahara", "Antarctica"],
+      "answer": 0,
+      "explanation": "On NASA's map the far north turns the deepest red: the Arctic has warmed far more than the planet as a whole."
+    }
+  ],
+  "tags": ["climate", "temperature", "records", "nasa"],
+  "source": { "label": "NASA: Global temperature", "url": "https://science.nasa.gov/earth/explore/earth-indicators/global-temperature/" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

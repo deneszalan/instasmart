@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-africa-fire-continent",
+  "field": "earth",
+  "title": "About 70% of the land that burns on Earth each year is in Africa",
+  "emoji": "🔥",
+  "body": "More fires burn in Africa each year than anywhere else on Earth, and NASA satellite data put them at **70% of the area burned** worldwide. Most are set on purpose, by people burning land for farming and grazing: fire clears old vegetation, opens new ground to plant and returns nutrients to the soil. The burning follows the dry season, so a wave of fire sweeps across the savannas just south of the Sahara, then shifts to the south of the continent half a year later. Every year Africa's fires burn an area [about half the size of the continental United States](https://science.nasa.gov/earth/earth-observatory/researchers-detect-a-global-drop-in-fires-90493/).",
+  "cover": {
+    "src": "africa-fires.jpg",
+    "alt": "Globe centred on Africa, green forests and savannas below the pale Sahara, with a band of red fire dots stretched across the continent just south of the desert",
+    "credit": "NASA Goddard Space Flight Center · Public domain"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "africa-fires.mp4",
+      "poster": "africa-fires.jpg",
+      "alt": "Globe centred on Africa with fires marked as red dots. A red band burns across the continent just south of the Sahara, fades, and a new red patch spreads over southern Africa; then the northern band returns.",
+      "caption": "Fires seen by NASA satellites from November 2002 to September 2004, about seven weeks every second. Red dots are fires: south of the Sahara around the new year, south of the equator mid-year.",
+      "credit": "NASA Goddard Space Flight Center · Public domain · excerpt",
+      "href": "https://svs.gsfc.nasa.gov/10832/",
+      "music": "“Invariance” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "pictogram",
+      "heading": "Of all the area burned by fire worldwide, the share in Africa",
+      "icon": "🔥",
+      "total": 10,
+      "count": 7,
+      "note": "NASA estimate from satellite fire observations, 2002 to 2011"
+    },
+    {
+      "type": "text",
+      "heading": "Fire on purpose",
+      "text": "People set most of Africa's fires, a practice widespread and accepted by the continent's fire managers. Lightning starts far fewer, mostly at the start of the wet season, when it strikes vegetation that is still dry."
+    },
+    {
+      "type": "stat",
+      "value": "24%",
+      "label": "drop in the area burned worldwide between 1998 and 2015",
+      "text": "The fall was biggest in savannas and grasslands, as people moved to permanent fields and villages. Africa's savanna fires shrank by 700,000 km²."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does Africa's band of fires move from north to south of the equator and back?",
+      "options": ["It follows the dry season", "Winds carry embers south", "Farmers migrate each year", "Lightning moves with the Moon"],
+      "answer": 0,
+      "explanation": "Burning spreads as the dry season progresses, and the dry season comes at opposite times of year on either side of the equator."
+    }
+  ],
+  "tags": ["fire", "africa", "satellites", "seasons", "farming"],
+  "source": { "label": "NASA: The Fire Continent", "url": "https://svs.gsfc.nasa.gov/10832/" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

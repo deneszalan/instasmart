@@ -1,0 +1,58 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-deep-water-1000-years",
+  "field": "earth",
+  "title": "Some deep ocean water last touched the surface about 1,000 years ago",
+  "emoji": "🔄",
+  "body": "In a few places, such as the Norwegian Sea and the Weddell and Ross Seas off Antarctica, surface water becomes so cold and salty that it is dense enough to **sink to the ocean floor**. Freezing sea ice helps, because it leaves its salt behind in the water below. That sinking drives a slow, worldwide flow known as the thermohaline circulation, or the ocean's conveyor belt, a name coined by the climate scientist Wallace Broecker. The deep water creeps through the ocean basins and rises again mostly in the Indian and Pacific Oceans; the oldest of it, welling up in the North Pacific, has been on its way for about 1,000 years.",
+  "cover": {
+    "src": "conveyor.jpg",
+    "alt": "Globe centred on the North Atlantic with the ocean shaded in blues, darkest around Greenland and Iceland, and faint white arrows on the water",
+    "credit": "NASA Scientific Visualization Studio · Public domain"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "conveyor.mp4",
+      "poster": "conveyor.jpg",
+      "alt": "Animated globe zooming into the North Atlantic. The sea surface fades away to reveal the brown seafloor, and white arrows stream north through the water, then turn and plunge down towards the bottom near Greenland and Iceland.",
+      "caption": "Schematic animation of the North Atlantic with the depths exaggerated, not real speeds. The surface fades away; arrows show water flowing north, then sinking near Greenland and Iceland.",
+      "credit": "NASA Scientific Visualization Studio · Public domain · excerpt",
+      "href": "https://svs.gsfc.nasa.gov/3658/",
+      "music": "“Deep Relaxation” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "The ocean's conveyor belt",
+      "steps": [
+        { "icon": "🌊", "label": "Surface water flows north in the Atlantic" },
+        { "icon": "🧊", "label": "Near the poles it turns cold and salty" },
+        { "icon": "⬇️", "label": "The dense water sinks to the deep ocean" },
+        { "icon": "⬆️", "label": "It mostly rises in the Indian and Pacific" }
+      ],
+      "cycle": true
+    },
+    {
+      "type": "reveal",
+      "prompt": "Only one part of the ocean can flow all the way around the world without running into land. Where?",
+      "answer": "Around Antarctica, near 60° south",
+      "detail": "There the Antarctic Circumpolar Current links the Atlantic, Indian and Pacific Oceans, letting deep water from the Atlantic rise in the other two."
+    },
+    {
+      "type": "text",
+      "heading": "Why the seas off Iceland stay open",
+      "text": "The steady inflow of warm surface water into the far North Atlantic is what keeps the seas around Iceland and southern Greenland mostly free of sea ice all year."
+    },
+    {
+      "type": "quiz",
+      "question": "What makes surface water sink near Greenland and Antarctica?",
+      "options": ["Cold and salt make it dense", "Strong winds push it down", "Undersea volcanoes pull it", "The tide drags it under"],
+      "answer": 0,
+      "explanation": "Cold water is denser than warm water, and salty water denser than fresh. When freezing sea ice leaves extra salt behind, the surface water gets heavy enough to sink."
+    }
+  ],
+  "tags": ["ocean", "currents", "climate", "salt"],
+  "source": { "label": "Wikipedia: Thermohaline circulation", "url": "https://en.wikipedia.org/wiki/Thermohaline_circulation" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}
