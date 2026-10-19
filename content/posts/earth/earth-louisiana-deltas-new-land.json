@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-louisiana-deltas-new-land",
+  "field": "earth",
+  "title": "Since 1973, brand-new land has been rising out of a bay in Louisiana",
+  "emoji": "🏝️",
+  "body": "Most of the Mississippi River Delta’s plain is losing ground, but in Atchafalaya Bay, Louisiana, the opposite is happening. Geologists noticed mud building up in the bay in the 1950s, and after a severe flood in 1973 new land first rose above the water. River sediment has kept arriving ever since: by one Louisiana State University estimate, the Atchafalaya delta and its neighbour at the Wax Lake Outlet together grow by about **2.8 km² a year**, though floods add land in spurts and hurricanes carry some of it away offshore.",
+  "cover": {
+    "src": "atchafalaya-deltas.jpg",
+    "alt": "False-colour satellite view of a green coastline along a bay of grey, muddy water in 1973",
+    "credit": "NASA Goddard Space Flight Center · Public domain"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "atchafalaya-deltas.mp4",
+      "poster": "atchafalaya-deltas.jpg",
+      "alt": "Satellite images of a bay, one per year from 1973 to 2016: green land lines the shore and the water starts grey and murky; over the years branching fingers of new green land with channels between them grow out into the blue water.",
+      "caption": "Atchafalaya Bay, Louisiana, one Landsat image a year from 1973 to 2016, in false colour with plants in green: two deltas push branching fingers of new land into the bay.",
+      "credit": "NASA Goddard Space Flight Center · Public domain · excerpt",
+      "href": "https://images.nasa.gov/details/GSFC_20170721_Landsat_m11761_Atchafalaya",
+      "music": "“Dream Culture” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "chart",
+      "heading": "New land added each year",
+      "unit": "km²",
+      "items": [
+        { "label": "Atchafalaya delta", "value": 1.6, "emphasis": true },
+        { "label": "Wax Lake delta", "value": 1.2 }
+      ],
+      "note": "Estimate by Louisiana State University scientists; together about 2.8 km² a year"
+    },
+    {
+      "type": "text",
+      "heading": "Why one delta grows faster",
+      "text": "Regular dredging and widening of the lower Atchafalaya channel deliver extra sediment to its delta. Its neighbour is fed by the Wax Lake Outlet, which carries about 40% of the Atchafalaya’s water into the bay."
+    },
+    {
+      "type": "sort",
+      "heading": "Builds land, or takes it away?",
+      "bins": ["Builds land", "Takes it away"],
+      "items": [
+        { "text": "A flood loaded with extra sediment", "bin": 0 },
+        { "text": "A hurricane sweeping sediment offshore", "bin": 1 },
+        { "text": "Dredging the lower Atchafalaya", "bin": 0 },
+        { "text": "A hurricane destroying coastal plants", "bin": 1 }
+      ],
+      "explanation": "Floods bring the sediment that builds the deltas; hurricanes move it into deeper water and kill the plants that protect the land from erosion."
+    },
+    {
+      "type": "quiz",
+      "question": "When did geologists first notice mud building up in Atchafalaya Bay?",
+      "options": ["The 1850s", "The 1900s", "The 1950s", "The 1990s"],
+      "answer": 2,
+      "explanation": "Mud deposits were noticed in the 1950s, but new land only rose above the water line after a severe flood in 1973."
+    }
+  ],
+  "tags": ["deltas", "rivers", "louisiana", "landsat", "geology"],
+  "source": { "label": "NASA Earth Observatory: New Land on the Louisiana Coast", "url": "https://science.nasa.gov/earth/earth-observatory/new-land-on-the-louisiana-coast-85261/" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

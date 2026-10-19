@@ -1,0 +1,68 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-etna-lava-fountain-3-4-km",
+  "field": "earth",
+  "title": "In 2013, a fountain of lava on Etna shot 3.4 km above its crater",
+  "emoji": "🌋",
+  "body": "A lava fountain works like a shaken bottle of fizzy drink. Etna’s basalt magma carries about 3.4% dissolved water by weight; as it rises and the pressure falls, the water comes out as bubbles that expand violently and fling molten rock into the sky. On 23 November 2013 the fountain at Etna’s New South-East Crater averaged about 1 km tall and peaked about **3,400 m above the crater**, the most explosive episode of a long run in 2011–2013.",
+  "cover": {
+    "src": "etna-fountain.jpg",
+    "alt": "A glowing spray of molten lava bursting from the top of a dark volcanic cone at night",
+    "credit": "Boris Behncke · CC BY 3.0"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "etna-fountain.mp4",
+      "poster": "etna-fountain.jpg",
+      "alt": "Night view of a dark volcanic cone with a roaring jet of molten lava spraying up from its summit, showering red-hot fragments across the sky and onto the cone’s slopes.",
+      "caption": "Etna’s New South-East Crater on the night of 16–17 November 2013, filmed from the volcano’s upper south-west flank: a lava fountain at full power, a week before the 3.4 km episode.",
+      "credit": "Boris Behncke · CC BY 3.0 · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Paroxysm_at_Etna,_16-17_November_2013.webm",
+      "music": "“Strength of the Titans” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "What drives a lava fountain",
+      "steps": [
+        { "icon": "🔥", "label": "Water-rich magma rises up the conduit" },
+        { "icon": "🫧", "label": "As pressure falls, the water forms bubbles" },
+        { "icon": "💨", "label": "Bubbles expand fast and speed the magma up" },
+        { "icon": "⛲", "label": "Gas and molten rock jet out of the crater" }
+      ]
+    },
+    {
+      "type": "estimate",
+      "question": "From 2011 to 2013, how many lava-fountain episodes erupted from this one spot on Etna?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 44,
+      "explanation": "44 episodes erupted from a pit on the flank of Etna’s South-East Crater. Their debris piled up into a brand-new summit cone, the New South-East Crater."
+    },
+    {
+      "type": "chart",
+      "heading": "The fountain of 23 November 2013",
+      "unit": "m",
+      "items": [
+        { "label": "Average height", "value": 1075 },
+        { "label": "Peak height", "value": 3400, "emphasis": true }
+      ],
+      "note": "Height above the crater, measured with thermal cameras"
+    },
+    {
+      "type": "quiz",
+      "question": "Which gas makes up most of the gas that drives Etna’s lava fountains?",
+      "options": ["Water vapour", "Carbon dioxide", "Sulfur dioxide", "Methane"],
+      "answer": 0,
+      "explanation": "Water makes up about 92–96% of the gas released in Etna’s fountains. Fountain height depends mainly on how much gas comes out of the magma."
+    }
+  ],
+  "tags": ["volcanoes", "etna", "lava", "italy", "geology"],
+  "source": {
+    "label": "Calvari et al. (2018), Frontiers in Earth Science: Paroxysmal explosions, lava fountains and ash plumes at Etna",
+    "url": "https://www.frontiersin.org/journals/earth-science/articles/10.3389/feart.2018.00107/full"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

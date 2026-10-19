@@ -1,0 +1,62 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-bondo-debris-flow-2017",
+  "field": "earth",
+  "title": "Rivers of mud and boulders hit a Swiss village in 2017, yet no one there was hurt",
+  "emoji": "🪨",
+  "body": "On 23 August 2017 about 3.1 million m³ of rock crashed down from Pizzo Cengalo into Val Bondasca, in the Swiss canton of Grisons, burying eight hikers on the trail below. Rock and mud then kept pouring down the valley as **debris flows**, fast-moving slurries of water, mud and boulders. Around 500,000 m³ of debris reached the village of Bondo, filling the retention basin built to catch such debris and damaging many buildings and much of the village’s infrastructure. Yet there were no deaths or injuries where people lived.",
+  "cover": {
+    "src": "bondo-debris-flow.jpg",
+    "alt": "A village road beside a wall, with a wooden barn and a white house just beyond a bank of grey rubble under a blue sky",
+    "credit": "Swiss Force One · CC0"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "bondo-debris-flow.mp4",
+      "poster": "bondo-debris-flow.jpg",
+      "alt": "Filmed from a village road, a surge of grey rubble and boulders rolls in behind a wall: a wooden barn tips over and is swept away in a cloud of dust, and the flow keeps churning past the houses as dust drifts across the valley.",
+      "caption": "A debris flow surges into Bondo on 23 August 2017: a wooden barn is knocked over and carried off as rubble and dust pour past the houses.",
+      "credit": "Swiss Force One · CC0 · excerpt, cropped",
+      "href": "https://commons.wikimedia.org/wiki/File:Bondo_Aug_2017.webm",
+      "music": "“Gothamlicious” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "stat",
+      "value": "3.1 million m³",
+      "label": "of rock that fell from Pizzo Cengalo",
+      "text": "It crashed into Val Bondasca and buried eight hikers on their way down into the valley from the Sciora Hut."
+    },
+    {
+      "type": "scale",
+      "heading": "Rock that fell, and debris that reached Bondo",
+      "unit": "million m³",
+      "items": [
+        { "label": "Debris at Bondo", "value": 0.5 },
+        { "label": "Rock that fell", "value": 3.1 }
+      ],
+      "note": "Both figures are approximate"
+    },
+    {
+      "type": "flow",
+      "heading": "From rockfall to debris flow",
+      "steps": [
+        { "icon": "🏔️", "label": "Rock crashes down from the mountain" },
+        { "icon": "🌊", "label": "Mud and rubble surge down the valley" },
+        { "icon": "🕳️", "label": "A retention basin fills with debris" },
+        { "icon": "🏚️", "label": "Buildings and roads in the village are hit" }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "How did the debris that reached Bondo compare with the rock that fell from the peak?",
+      "options": ["About a sixth as much", "About half as much", "About the same", "About twice as much"],
+      "answer": 0,
+      "explanation": "About 500,000 m³ of debris flowed down to Bondo, roughly a sixth of the 3.1 million m³ of rock that crashed from the peak."
+    }
+  ],
+  "tags": ["landslides", "alps", "switzerland", "geology"],
+  "source": { "label": "WSL: Severe flood and landslide damage and eight deaths in 2017", "url": "https://www.wsl.ch/en/news/severe-flood-and-landslide-damage-and-eight-deaths-in-2017/" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}

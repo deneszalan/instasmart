@@ -1,0 +1,65 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-oklahoma-wastewater-earthquakes",
+  "field": "earth",
+  "title": "Pumping wastewater underground turned Oklahoma into an earthquake hotspot",
+  "emoji": "📈",
+  "body": "From 1978 to 2008, Oklahoma had about two earthquakes of magnitude 3 or more a year. Then the count soared: 20 in 2009, 109 in 2013 and well over 500 in 2014, when the state recorded more than twice as many earthquakes as California. Researchers link the surge to the water that comes up from oil and gas wells: more than 70% of it is pumped back down into a deep rock layer, the Arbuckle Group, which rests on ancient basement rock, and the rising water pressure in its pores can release the stress on faults. After the strongest quake ever recorded in the state, regulators shut or throttled disposal wells, and in 2017 the shaking dropped sharply.",
+  "cover": {
+    "src": "oklahoma-quakes.jpg",
+    "alt": "Map of central Oklahoma with a few scattered white dots marking earthquakes near Oklahoma City",
+    "credit": "USGS · Public domain"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "oklahoma-quakes.mp4",
+      "poster": "oklahoma-quakes.jpg",
+      "alt": "Animated map of central Oklahoma: at first only a few dots mark earthquakes east of Oklahoma City; then blue dots for new quakes flash up faster and faster until hundreds of dots fill a broad band running north-west towards the Kansas border.",
+      "caption": "USGS animation of earthquakes in central Oklahoma from mid-2011 to February 2017: each dot is a quake, the newest flash blue, and the yellow patch is Oklahoma City.",
+      "credit": "USGS · Public domain · excerpt, cropped",
+      "href": "https://commons.wikimedia.org/wiki/File:Oklahoma_seismicity_animation.ogv",
+      "music": "“The Escalation” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "chart",
+      "heading": "Oklahoma earthquakes of magnitude 3 or more",
+      "unit": "quakes",
+      "items": [
+        { "label": "Per year, 1978–2008", "value": 2 },
+        { "label": "2009", "value": 20 },
+        { "label": "2010", "value": 43 },
+        { "label": "2013", "value": 109 },
+        { "label": "2014", "value": 567, "emphasis": true }
+      ],
+      "note": "Another tally gives 585 for 2014"
+    },
+    {
+      "type": "flow",
+      "heading": "How disposal wells can trigger quakes",
+      "steps": [
+        { "icon": "🛢️", "label": "Oil and gas wells bring up lots of water" },
+        { "icon": "💧", "label": "It is pumped down into a deep rock layer" },
+        { "icon": "📈", "label": "Water pressure builds in the rock’s pores" },
+        { "icon": "💥", "label": "Stressed faults slip: an earthquake" }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "5.8",
+      "label": "magnitude of the Pawnee earthquake of 3 September 2016, the strongest recorded in Oklahoma",
+      "text": "Afterwards the state ordered 37 wastewater disposal wells shut down. As wells closed or cut the volumes they injected, earthquakes fell sharply in 2017."
+    },
+    {
+      "type": "quiz",
+      "question": "In 2014, how did Oklahoma’s earthquake count compare with California’s?",
+      "options": ["More than twice as many", "About half as many", "About the same", "About a tenth as many"],
+      "answer": 0,
+      "explanation": "Oklahoma recorded over twice as many earthquakes as California in 2014, and by August 2015 more than six times as many of magnitude 3 or more."
+    }
+  ],
+  "tags": ["earthquakes", "oklahoma", "geology", "energy"],
+  "source": { "label": "Wikipedia: Oklahoma earthquake swarms (2009–present)", "url": "https://en.wikipedia.org/wiki/Oklahoma_earthquake_swarms_(2009%E2%80%93present)" },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-19"
+}
