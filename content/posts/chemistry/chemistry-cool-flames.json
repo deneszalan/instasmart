@@ -1,0 +1,118 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-cool-flames",
+  "field": "chemistry",
+  "title": "Some flames burn at only about 400 °C and are almost too faint to see",
+  "emoji": "🔥",
+  "cover": {
+    "src": "iss-flame.jpg",
+    "alt": "A glowing white ball of flame burning in the dark inside an experiment chamber on the International Space Station.",
+    "credit": "NASA · Public domain"
+  },
+  "body": "In an ordinary flame, fuel molecules are smashed into small fragments that burn all the way to carbon dioxide, and the temperature climbs by around **1,000 °C**. In a **cool flame** the fuel only partly reacts: the fragments stay large and recombine, so little heat, light or CO₂ comes out and the temperature rises by just a few tens of degrees. Their faint pale-blue glow comes from excited formaldehyde molecules. Humphry Davy stumbled on them in the 1810s, and they can help set off knocking in car engines.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "iss-flame.mp4",
+      "poster": "iss-flame.jpg",
+      "alt": "Inside a dark experiment chamber on the International Space Station, a gas flame lights with a bright flash, settles into a glowing white ball and slowly dims.",
+      "caption": "A test flame on the space station lights, glows as a ball and dims. The cool flame that followed, once it seemed to go out, was too faint to see as it happened.",
+      "credit": "NASA · Public domain · excerpt",
+      "href": "https://images.nasa.gov/details/jsc2021m000185_Cool_Flames_Created_Aboard_International_Space_Station",
+      "music": "“Stay the Course” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Two ways to burn",
+      "left": {
+        "label": "Hot flame",
+        "text": "Fuel breaks into small pieces that burn fully to CO₂. The temperature rises by around 1,000 °C, with plenty of light."
+      },
+      "right": {
+        "label": "Cool flame",
+        "text": "Fuel breaks into large pieces that recombine. The temperature rises by a few tens of degrees, with a faint blue glow."
+      }
+    },
+    {
+      "type": "spectrum",
+      "heading": "How hot n-butyl acetate, a common solvent, must get to catch fire",
+      "min": 0,
+      "max": 500,
+      "unit": "°C",
+      "ends": [
+        "Cold",
+        "Hot"
+      ],
+      "marks": [
+        {
+          "label": "Water boils",
+          "value": 100
+        },
+        {
+          "label": "Cool flame",
+          "value": 225,
+          "emphasis": true
+        },
+        {
+          "label": "Ordinary flame",
+          "value": 420
+        }
+      ],
+      "colors": [
+        "#38bdf8",
+        "#f97316"
+      ],
+      "note": "Its cool-flame temperature and its auto-ignition temperature in air"
+    },
+    {
+      "type": "reveal",
+      "prompt": "Cool flames are rare in daily life, but they cause trouble in one everyday machine. Which one?",
+      "answer": "The car engine",
+      "detail": "Cool flames can help start engine knock, when the last pocket of fuel and air ignites on its own. Antiknock additives work mainly by removing the radicals involved."
+    },
+    {
+      "type": "timeline",
+      "heading": "Spotting the invisible flame",
+      "events": [
+        {
+          "when": "1810s",
+          "text": "Humphry Davy discovers cool flames by accident"
+        },
+        {
+          "when": "1929",
+          "text": "Harry Emeléus, who first recorded their light, coins the name “cold flame”"
+        },
+        {
+          "when": "2012",
+          "text": "A new kind, the cool diffusion flame, is first seen around fuel droplets on the space station"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What gives a cool flame its faint pale-blue glow?",
+      "options": [
+        "Glowing specks of soot",
+        "Excited formaldehyde molecules",
+        "Hot carbon dioxide",
+        "Sodium in the fuel"
+      ],
+      "answer": 1,
+      "explanation": "The blue light comes from formaldehyde molecules made in an excited state as the fuel partly reacts. Soot is what makes an ordinary candle flame yellow."
+    }
+  ],
+  "tags": [
+    "flames",
+    "combustion",
+    "space"
+  ],
+  "source": {
+    "label": "Wikipedia: Cool flame",
+    "url": "https://en.wikipedia.org/wiki/Cool_flame"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}

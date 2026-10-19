@@ -1,0 +1,105 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-hand-warmer-supersaturated",
+  "field": "chemistry",
+  "title": "A reusable hand warmer is a liquid waiting to turn solid, and one click sets it off",
+  "emoji": "🧤",
+  "cover": {
+    "src": "hand-warmer.jpg",
+    "alt": "A red, see-through reusable hand warmer on a wooden table, with a cloudy patch of crystals spreading across it from one side.",
+    "credit": "Captain-n00dle · Public domain"
+  },
+  "body": "Reusable hand warmers usually hold **sodium acetate** dissolved in its own water of crystallisation. Heated past its melting point of 58 °C and left to cool, the mixture stays liquid at room temperature as a **supersaturated** solution: it ought to crystallise, but nothing starts the first crystal. Flexing a small metal disc inside the pack creates those starting points. Crystals then race through the pack, and because crystallising gives off heat, the energy stored when it was melted comes back out. Boiling the pack for a few minutes dissolves the crystals and resets it.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "hand-warmer.mp4",
+      "poster": "hand-warmer.jpg",
+      "alt": "A finger presses the small metal disc inside a see-through red hand warmer. A cloudy circle of crystals appears at the disc and grows until the whole pack is opaque.",
+      "caption": "A finger flexes the metal disc inside the pack. Crystals spread out from it until the whole see-through hand warmer has turned opaque.",
+      "credit": "Captain-n00dle · Public domain · excerpt",
+      "href": "https://commons.wikimedia.org/wiki/File:Handwarmer-crystallisation.ogv",
+      "music": "“Aquarium” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
+      "type": "estimate",
+      "question": "The crystals in the pack are sodium acetate trihydrate. At what temperature do they melt?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 58,
+      "unit": "°C",
+      "explanation": "About 58 °C. Cooled below that without a starting crystal, the melted pack stays liquid, storing the heat it took to melt it."
+    },
+    {
+      "type": "flow",
+      "heading": "One pack, used again and again",
+      "steps": [
+        {
+          "icon": "♨️",
+          "label": "Boil it: the crystals dissolve"
+        },
+        {
+          "icon": "⏳",
+          "label": "Cool it slowly: it stays liquid"
+        },
+        {
+          "icon": "👆",
+          "label": "Click the disc: crystals start"
+        },
+        {
+          "icon": "🔥",
+          "label": "Crystals spread and give off heat"
+        }
+      ],
+      "cycle": true
+    },
+    {
+      "type": "stat",
+      "value": "264–289 kJ",
+      "label": "of heat stored in each kilogram of the pack’s contents",
+      "text": "It goes in when the crystals melt and comes back out when they form again ([Wikipedia: Hand warmer](https://en.wikipedia.org/wiki/Hand_warmer))."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "The pack burns a chemical fuel to make heat",
+          "bin": 1
+        },
+        {
+          "text": "The heat was stored when the pack was last boiled",
+          "bin": 0
+        },
+        {
+          "text": "The metal disc gives crystals a place to start",
+          "bin": 0
+        },
+        {
+          "text": "Once used, the pack has to be thrown away",
+          "bin": 1
+        }
+      ],
+      "explanation": "Nothing burns: the heat comes from the liquid turning back into crystals. Soaking the pack in boiling water melts them again, ready for the next click."
+    }
+  ],
+  "tags": [
+    "crystals",
+    "supersaturation",
+    "heat"
+  ],
+  "source": {
+    "label": "Wikipedia: Sodium acetate",
+    "url": "https://en.wikipedia.org/wiki/Sodium_acetate"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-18"
+}
