@@ -1,5 +1,5 @@
 import { useRef, useState, type CSSProperties } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
 import type { KnowledgeCard, Slide } from '../types';
 import type { WikiPost } from '../lib/wiki';
 import { FIELD_BY_ID } from '../data/fields';
@@ -8,6 +8,7 @@ import { InteractiveSlide } from './Interactive';
 import { VisualSlide } from './Visual';
 import { VideoSlideView } from './Video';
 import { challengeId } from '../lib/interactive';
+import { firstVideo } from '../lib/visual';
 
 function titleSize(title: string): string {
   if (title.length <= 36) return 'xl';
@@ -24,9 +25,10 @@ export function cardGradient(card: KnowledgeCard): [string, string] {
   return card.theme?.gradient ?? FIELD_BY_ID[card.field].gradient;
 }
 
-export function TitleSlide({ card, hasMore }: { card: KnowledgeCard; hasMore?: boolean }) {
+export function TitleSlide({ card, hasMore, onWatch }: { card: KnowledgeCard; hasMore?: boolean; onWatch?: () => void }) {
   const field = FIELD_BY_ID[card.field];
   const cover = card.cover;
+  const video = firstVideo(card);
   return (
     <div className={`slide slide--title${cover ? ' slide--cover' : ''}`} style={gradientStyle(cardGradient(card))}>
       {cover ? (
@@ -39,6 +41,11 @@ export function TitleSlide({ card, hasMore }: { card: KnowledgeCard; hasMore?: b
       <span className="slide__pill">
         {field.emoji} {field.name}
       </span>
+      {video >= 0 && (
+        <button className="slide__video" onClick={onWatch} aria-label="Watch the video in this post">
+          <Play size={13} fill="currentColor" /> Video
+        </button>
+      )}
       <div className="slide__center">
         {!cover && (
           <div className="slide__emoji" aria-hidden="true">
@@ -49,7 +56,7 @@ export function TitleSlide({ card, hasMore }: { card: KnowledgeCard; hasMore?: b
       </div>
       <div className="slide__foot">
         <span>{cover?.credit ? `📷 ${cover.credit}` : `@${field.handle}`}</span>
-        {hasMore && <span className="slide__swipe">Swipe for more →</span>}
+        {hasMore && <span className="slide__swipe">{video === 0 ? 'Swipe to watch →' : 'Swipe for more →'}</span>}
       </div>
     </div>
   );
@@ -238,7 +245,11 @@ export function CardMedia({ card, onIndexChange }: CardMediaProps) {
             aria-label={`${i + 1} of ${total}`}
             aria-hidden={i !== index}
           >
-            {i === 0 ? <TitleSlide card={card} hasMore /> : <DetailSlide card={card} index={i} total={total} />}
+            {i === 0 ? (
+              <TitleSlide card={card} hasMore onWatch={() => go(firstVideo(card) + 1)} />
+            ) : (
+              <DetailSlide card={card} index={i} total={total} />
+            )}
           </div>
         ))}
       </div>

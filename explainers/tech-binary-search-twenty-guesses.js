@@ -61,15 +61,14 @@ function background(t) {
   ctx.strokeStyle = 'rgba(226,85,59,0.22)'; ctx.lineWidth = 2;
   ctx.beginPath(); ctx.moveTo(56, 0); ctx.lineTo(56, H); ctx.stroke();
   font(800, 19); text('RECKON', 80, 74, { color: C.ink, spacing: '4px' });
-  font(600, 19); text('TECH · ALGORITHMS', W - 48, 74, { color: C.soft, align: 'right', spacing: '2px' });
 }
 
 function captions(t) {
-  k.captions(t, CUES, { x: W / 2, y: 900, maxW: 744, size: 44, lh: 58, family: SANS, ink: C.ink, marks: { '*': C.tomato, '~': C.teal } });
+  k.captions(t, CUES, { x: W / 2, y: 830, maxW: 744, size: 44, lh: 58, family: SANS, ink: C.ink, marks: { '*': C.tomato, '~': C.teal } });
 }
 
 // ---------- the number line ----------
-const BAR = { x0: 92, x1: 772, y: 440, h: 64 };
+const BAR = { x0: 92, x1: 772, y: 390, h: 64 };
 const BW = BAR.x1 - BAR.x0;
 
 function barShell(grow = 1) {
@@ -107,7 +106,7 @@ function sceneA(t) {
   const opts = [['1,000', 4.6], ['100', 4.8], ['20', 5.0]];
   const reveal = seg(t, 8.0, 8.5);
   opts.forEach(([label, at], i) => {
-    const w = 210, h = 128, gap = 27, x = (W - (3 * w + 2 * gap)) / 2 + i * (w + gap), y = 620;
+    const w = 210, h = 128, gap = 27, x = (W - (3 * w + 2 * gap)) / 2 + i * (w + gap), y = 570;
     const p = eout(seg(t, at, at + 0.45));
     const right = i === 2;
     withAlpha(p * (right ? 1 : 1 - 0.6 * reveal), () => {
@@ -128,7 +127,7 @@ function sceneA(t) {
   });
   // tick on the right answer
   withAlpha(seg(t, 8.35, 8.6), () => {
-    const cx = (W + 3 * 210 + 2 * 27) / 2 - 8, cy = 620 + 8;
+    const cx = (W + 3 * 210 + 2 * 27) / 2 - 8, cy = 570 + 8;
     ctx.beginPath(); ctx.arc(cx, cy, 24, 0, Math.PI * 2); ctx.fillStyle = C.mustard; ctx.fill();
     ctx.strokeStyle = C.ink; ctx.lineWidth = 5; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
     ctx.beginPath(); ctx.moveTo(cx - 10, cy + 1); ctx.lineTo(cx - 3, cy + 9); ctx.lineTo(cx + 11, cy - 8); ctx.stroke();
@@ -148,11 +147,11 @@ function sceneB(t) {
   const X = (u) => BAR.x0 + ((u - v0) / (v1 - v0)) * BW;
 
   // counters
-  font(700, 19); text('GUESS', BAR.x0, 276, { color: C.soft, spacing: '3px' });
-  font(800, 76, SERIF); text(String(k + 1), BAR.x0, 350, { color: C.ink });
+  font(700, 19); text('GUESS', BAR.x0, 226, { color: C.soft, spacing: '3px' });
+  font(800, 76, SERIF); text(String(k + 1), BAR.x0, 300, { color: C.ink });
   const left = found ? 1 : p < 0.62 ? st.hi - st.lo + 1 : STEPS[k + 1].hi - STEPS[k + 1].lo + 1;
-  font(700, 19); text('NUMBERS LEFT', BAR.x1, 276, { color: C.soft, align: 'right', spacing: '3px' });
-  font(800, 64, SERIF); text(fmt(left), BAR.x1, 346, { color: found ? C.teal : C.ink, align: 'right' });
+  font(700, 19); text('NUMBERS LEFT', BAR.x1, 226, { color: C.soft, align: 'right', spacing: '3px' });
+  font(800, 64, SERIF); text(fmt(left), BAR.x1, 296, { color: found ? C.teal : C.ink, align: 'right' });
 
   barShell(1);
   ctx.save(); rrect(BAR.x0, BAR.y, BW, BAR.h, 18); ctx.clip();
@@ -215,11 +214,11 @@ function sceneC(t) {
   const a = 28.4, step = 0.2;
   const n = clamp(Math.floor((t - a) / step) + 1, 0, 20);
   const value = Math.pow(2, n);
-  font(700, 19); text('1 DOUBLED ' + n + (n === 1 ? ' TIME' : ' TIMES'), W / 2, 260, { color: C.soft, align: 'center', spacing: '3px' });
-  font(800, value >= 100000 ? 112 : 128, SERIF); text(fmt(value), W / 2, 400, { color: n === 20 ? C.teal : C.ink, align: 'center', base: 'middle' });
+  font(700, 19); text('1 DOUBLED ' + n + (n === 1 ? ' TIME' : ' TIMES'), W / 2, 210, { color: C.soft, align: 'center', spacing: '3px' });
+  font(800, value >= 100000 ? 112 : 128, SERIF); text(fmt(value), W / 2, 350, { color: n === 20 ? C.teal : C.ink, align: 'center', base: 'middle' });
   const cw = 58, gap = 10, x0 = (W - (10 * cw + 9 * gap)) / 2;
   for (let i = 0; i < 20; i++) {
-    const r = Math.floor(i / 10), c = i % 10, x = x0 + c * (cw + gap), y = 520 + r * (cw + gap);
+    const r = Math.floor(i / 10), c = i % 10, x = x0 + c * (cw + gap), y = 470 + r * (cw + gap);
     const on = seg(t, a + i * step - 0.05, a + i * step + 0.1);
     rrect(x, y, cw, cw, 12); ctx.fillStyle = on > 0 ? `rgba(42,140,128,${0.15 + 0.85 * on})` : C.card; ctx.fill();
     ctx.lineWidth = 2.5; ctx.strokeStyle = on > 0.5 ? C.teal : C.faint; ctx.stroke();
@@ -228,7 +227,7 @@ function sceneC(t) {
   // compare with a million
   const cp = eout(seg(t, 32.6, 33.1));
   withAlpha(cp, () => {
-    const y = 720 + (1 - cp) * 16;
+    const y = 670 + (1 - cp) * 16;
     font(700, 28); const label = 'more than 1,000,000  ✓'; const w = ctx.measureText(label).width + 44;
     rrect(W / 2 - w / 2, y - 26, w, 52, 26); ctx.fillStyle = C.mustard; ctx.fill();
     text(label, W / 2, y + 1, { color: C.ink, align: 'center', base: 'middle' });
@@ -237,10 +236,10 @@ function sceneC(t) {
 
 function sceneD(t) {
   const rows = [['1 to 100', 7, 35.3], ['1 to 1,000', 10, 35.8], ['1 to a million', 20, 36.3], ['1 to a billion', 30, 36.8]];
-  font(700, 19); text('GUESSES YOU NEED', BAR.x0, 266, { color: C.soft, spacing: '3px' });
+  font(700, 19); text('GUESSES YOU NEED', BAR.x0, 216, { color: C.soft, spacing: '3px' });
   const lx = BAR.x0, bx = 330, maxW = 360;
   rows.forEach(([label, v, at], i) => {
-    const y = 320 + i * 100;
+    const y = 270 + i * 100;
     const p = eout(seg(t, at, at + 0.6));
     withAlpha(seg(t, at - 0.1, at + 0.2), () => {
       font(600, 28); text(label, lx, y + 30, { color: C.ink, base: 'middle' });
@@ -253,24 +252,24 @@ function sceneD(t) {
   const q = eout(seg(t, 38.0, 38.5));
   withAlpha(q, () => {
     ctx.strokeStyle = C.tomato; ctx.lineWidth = 3; ctx.lineCap = 'round';
-    const y1 = 320 + 2 * 100 + 30, y2 = 320 + 3 * 100 + 30, x = BAR.x0 - 18;
+    const y1 = 270 + 2 * 100 + 30, y2 = 270 + 3 * 100 + 30, x = BAR.x0 - 18;
     ctx.beginPath(); ctx.moveTo(x + 10, y1); ctx.lineTo(x, y1); ctx.lineTo(x, y2); ctx.lineTo(x + 10, y2); ctx.stroke();
     font(700, 24);
-    rrect(BAR.x0 + 40, 750, 300, 46, 23); ctx.fillStyle = C.tomato; ctx.fill();
-    text('×1,000 the numbers', BAR.x0 + 190, 774, { color: C.card, align: 'center', base: 'middle' });
-    rrect(BAR.x0 + 360, 750, 260, 46, 23); ctx.fillStyle = C.teal; ctx.fill();
-    text('+10 guesses', BAR.x0 + 490, 774, { color: C.card, align: 'center', base: 'middle' });
+    rrect(BAR.x0 + 40, 700, 300, 46, 23); ctx.fillStyle = C.tomato; ctx.fill();
+    text('×1,000 the numbers', BAR.x0 + 190, 724, { color: C.card, align: 'center', base: 'middle' });
+    rrect(BAR.x0 + 360, 700, 260, 46, 23); ctx.fillStyle = C.teal; ctx.fill();
+    text('+10 guesses', BAR.x0 + 490, 724, { color: C.card, align: 'center', base: 'middle' });
   });
 }
 
 function sceneE(t) {
   const vals = [42, 7, 93, 18, 61, 3, 77, 25];
   const sorted = [...vals].sort((a, b) => a - b);
-  const cw = 78, gap = 12, x0 = (W - (8 * cw + 7 * gap)) / 2, y = 470;
+  const cw = 78, gap = 12, x0 = (W - (8 * cw + 7 * gap)) / 2, y = 420;
   const sp = eio(seg(t, 43.4, 44.8));
   font(700, 19);
-  withAlpha(1 - seg(t, 43.2, 43.5), () => text('UNSORTED: CHECK ONE BY ONE', W / 2, 410, { color: C.tomato, align: 'center', spacing: '3px' }));
-  withAlpha(seg(t, 44.8, 45.1), () => text('SORTED: HALVE IT', W / 2, 410, { color: C.teal, align: 'center', spacing: '3px' }));
+  withAlpha(1 - seg(t, 43.2, 43.5), () => text('UNSORTED: CHECK ONE BY ONE', W / 2, 360, { color: C.tomato, align: 'center', spacing: '3px' }));
+  withAlpha(seg(t, 44.8, 45.1), () => text('SORTED: HALVE IT', W / 2, 360, { color: C.teal, align: 'center', spacing: '3px' }));
   vals.forEach((v, i) => {
     const j = sorted.indexOf(v);
     const xa = x0 + i * (cw + gap), xb = x0 + j * (cw + gap);
@@ -300,7 +299,7 @@ function sceneF(t) {
     font(800, 92, SERIF); text('Binary search', W / 2, 430 + (1 - p) * 20, { color: C.ink, align: 'center', base: 'middle' });
     ctx.fillStyle = C.mustard; rrect(W / 2 - 150, 490, 300 * eout(seg(t, 47.2, 47.8)), 10, 5); ctx.fill();
     font(600, 32); text('20 guesses for a million numbers', W / 2, 570, { color: C.soft, align: 'center', base: 'middle' });
-    font(500, 22); text('Source: Wikipedia, “Binary search”', W / 2, 960, { color: C.soft, align: 'center', base: 'middle' });
+    font(500, 22); text('Source: Wikipedia, “Binary search”', W / 2, 660, { color: C.soft, align: 'center', base: 'middle' });
   });
 }
 
