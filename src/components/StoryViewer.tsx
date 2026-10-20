@@ -15,6 +15,7 @@ import { inline } from '../lib/markdown';
 import { firstVideo } from '../lib/visual';
 import { useRoute } from '../lib/route';
 import { sound } from '../lib/sound';
+import { SPEEDS } from './Video';
 
 type VideoSlide = Extract<Slide, { type: 'video' }>;
 
@@ -25,10 +26,11 @@ const storySound = { on: true };
  * A story frame that plays a post's clip full-screen. The story bar follows the clip, holding
  * pauses it, and the next frame starts when it ends.
  */
-function StoryVideo({ slide, paused, muted, fill, onEnded, onForcedMute }: {
+function StoryVideo({ slide, paused, muted, rate, fill, onEnded, onForcedMute }: {
   slide: VideoSlide;
   paused: boolean;
   muted: boolean;
+  rate: number;
   fill: RefObject<HTMLSpanElement | null>;
   onEnded: () => void;
   onForcedMute: () => void;
@@ -50,6 +52,14 @@ function StoryVideo({ slide, paused, muted, fill, onEnded, onForcedMute }: {
       v.play().catch(() => {});
     });
   }, [paused, muted, slide.music, onForcedMute]);
+
+  useEffect(() => {
+    const v = video.current;
+    if (!v) return;
+    // The default rate survives the clip loading; the current one might not.
+    v.defaultPlaybackRate = rate;
+    v.playbackRate = rate;
+  }, [rate]);
 
   useEffect(() => {
     let frame = requestAnimationFrame(function tick() {
@@ -83,7 +93,8 @@ interface StoryViewerProps {
 
 /** Full-screen stories: tap right/left to move, hold to pause, finishes one story then moves to the next. */
 export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) {
-  const { markStory, markSeen } = useStore();
+  const { state, markStory, markSeen, updateSettings } = useStore();
+  const rate = state.settings.videoRate;
   const [storyIdx, setStoryIdx] = useState(startIndex);
   const [frame, setFrame] = useState(0);
   const [held, setHeld] = useState(false);
@@ -172,6 +183,8 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
     setMuted(!muted);
   };
   const forcedMute = useCallback(() => setMuted(true), []);
+  // One tap moves to the next speed, wrapping round; the reader's choice is shared with posts.
+  const nextSpeed = () => updateSettings({ videoRate: SPEEDS[(SPEEDS.indexOf(rate) + 1) % SPEEDS.length] });
 
   const openPost = () => {
     onClose();
@@ -207,6 +220,11 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
               {muted ? <VolumeX size={20} /> : <Volume2 size={20} />}
             </button>
           )}
+          {clip && (
+            <button className="story__speed" onClick={nextSpeed} aria-label={`Playback speed ${rate} times, tap to change`}>
+              {rate}×
+            </button>
+          )}
           {timed && (
             <button className="icon-btn icon-btn--light" onClick={() => setPaused((p) => !p)} aria-label={isPaused ? 'Play' : 'Pause'}>
               {isPaused ? <Play size={20} /> : <Pause size={20} />}
@@ -239,6 +257,7 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
                 slide={clip}
                 paused={isPaused}
                 muted={muted}
+                rate={rate}
                 fill={activeFill}
                 onEnded={next}
                 onForcedMute={forcedMute}

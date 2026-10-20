@@ -68,6 +68,8 @@
 
     /** Captions: cues are [start, end, text]; each rises into place and fades out. */
     const captions = (t, cues, { x, y, rise = 22, ...style }) => {
+      // Remembered so `npm run explainer` can turn the captions into the clip's steps.
+      (window.__cues ??= new Set()).add(cues);
       for (const [a, b, s] of cues) {
         if (t < a || t > b) continue;
         alpha(span(t, a, b, 0.25, 0.2), () => rich(s, x, y + (1 - ease.out(seg(t, a, a + 0.35))) * rise, style));

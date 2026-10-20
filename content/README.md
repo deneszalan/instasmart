@@ -176,6 +176,8 @@ It cuts the source between `--start` and `--end`, re-encodes it for phones, drop
 
 **Animated explainers: `npm run explainer`.** Instead of footage, a slide can show an animation drawn by code that walks through the post's idea, with captions and music. Each one is a scene file in `explainers/`; see `explainers/README.md`. Mark the slide `"animation": true`, so Explore lists the post under "Animation" rather than "Video", and credit it `"Reckon · original animation"`.
 
+**Steps.** A clip that explains in stages can list them as `"steps": [{ "start": 0.6, "end": 4.5 }, …]`, in seconds, in order (2 to 24 of them). The seek bar then shows a mark at each step, the reader gets previous and next step buttons, and can choose "Pause after each step" to read at their own pace. `npm run explainer` writes an explainer's steps from its captions, so you rarely type them; for footage, add them only when the clip has distinct stages.
+
 Contributors without ffmpeg can upload a finished MP4 through the MCP server's `media` list like an image (`base64`); the same checks apply.
 
 **Finding the moment.** Pick the seconds where the thing happens, and keep a little before and after. Extract a frame every second (or every quarter-second around the action) with timestamps, look at them, and check the finished clip the same way before you use it.
