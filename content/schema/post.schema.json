@@ -1425,6 +1425,12 @@
                     "end": {
                       "type": "number",
                       "exclusiveMinimum": 0
+                    },
+                    "hold": {
+                      "description": "Seconds the animation holds this step finished, just before its end, so its text can be read (the music plays on). It is rendered into the clip: `npm run explainer` measures the text and sets it.",
+                      "type": "number",
+                      "exclusiveMinimum": 0,
+                      "maximum": 10
                     }
                   },
                   "required": [

@@ -351,11 +351,11 @@ function machine(t) {
 
   // --- the lamp lights when 6174 maps to itself
   const fixed = seg(t, at(3, 4.2), at(3, 4.5));
-  lamp(726, ROW.out, 17, fixed * (0.85 + 0.15 * Math.sin(t * 6)));
+  lamp(726, ROW.out, 17, fixed * (0.85 + 0.15 * Math.sin(ambient * 6)));
   withAlpha(fixed, () => engraved('FIXED', 726, ROW.out + 52, { align: 'center', color: C.red }));
   withAlpha(fixed, () => engraved('POINT', 726, ROW.out + 76, { align: 'center', color: C.red }));
   if (fixed > 0) {
-    const pulse = 0.5 + 0.5 * Math.sin((t - at(3, 4.2)) * 5);
+    const pulse = 0.5 + 0.5 * Math.sin((ambient - at(3, 4.2)) * 5);
     withAlpha(fixed * 0.5 * pulse, () => { rrect(WIN.x - 3, rowY('in') - 3, WIN.w + 6, WIN.h + 6, 12); rrect(WIN.x - 3, rowY('out') - 3, WIN.w + 6, WIN.h + 6, 12); ctx.strokeStyle = C.amber; ctx.lineWidth = 2; ctx.stroke(); });
   }
 
@@ -488,7 +488,7 @@ function sceneF(t) {
   withAlpha(p, () => {
     windowBox(212, 190 + (1 - p) * 14, 440, 156, { r: 12, lit: 1 });
     seg7Row(432, 268 + (1 - p) * 14, 112, 104, 4, (i) => ON('6174'[i]), { color: C.hot });
-    lamp(726, 268, 18, 0.9 + 0.1 * Math.sin(t * 6));
+    lamp(726, 268, 18, 0.9 + 0.1 * Math.sin(ambient * 6));
     engraved('KAPREKAR’S CONSTANT', 432, 430, { size: 40, align: 'center', color: C.text, spacing: '3px' });
     engraved('named after Indian mathematician D. R. Kaprekar', 432, 474, { size: 22, weight: 400, align: 'center', spacing: '0px' });
     const q = eout(seg(t, F0 + 0.8, F0 + 1.4));
@@ -500,10 +500,15 @@ function sceneF(t) {
   });
 }
 
+// The clip's own time, from tools.clock: it runs on while a step holds for reading, so the decorative
+// motion below uses it; the story itself uses t.
+let ambient = 0;
+
 Kit.scene({
   width: W, height: H, duration: END,
   fonts: [{ family: MONO, file: 'SpaceMono-Regular.woff2', weight: '400' }, { family: MONO, file: 'SpaceMono-Bold.woff2', weight: '700' }],
   draw(t, tools) {
+    ambient = tools.clock;
     k = tools; ctx = tools.ctx;
     if (!BG) BG = makeBackground();
     ctx.drawImage(BG, 0, 0);

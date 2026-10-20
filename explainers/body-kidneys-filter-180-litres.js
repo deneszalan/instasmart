@@ -93,8 +93,8 @@ function background(t) {
   ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
   // drifting pools of light
   for (let i = 0; i < 5; i++) {
-    const x = W * (0.15 + 0.7 * hash(i)) + Math.sin(t * 0.21 + i * 1.7) * 60;
-    const y = H * (0.1 + 0.6 * hash(i + 9)) + Math.cos(t * 0.17 + i) * 40;
+    const x = W * (0.15 + 0.7 * hash(i)) + Math.sin(ambient * 0.21 + i * 1.7) * 60;
+    const y = H * (0.1 + 0.6 * hash(i + 9)) + Math.cos(ambient * 0.17 + i) * 40;
     const r = 220 + 90 * hash(i + 3);
     const rg = ctx.createRadialGradient(x, y, 0, x, y, r);
     rg.addColorStop(0, 'rgba(140,240,240,0.10)'); rg.addColorStop(1, 'rgba(140,240,240,0)');
@@ -106,7 +106,7 @@ function background(t) {
     ctx.strokeStyle = `rgba(190,250,250,${0.05 + 0.025 * (j % 3)})`;
     ctx.beginPath();
     for (let x = -20; x <= W + 20; x += 16) {
-      const y = 40 + j * 46 + Math.sin(x * 0.012 + t * 0.6 + j * 1.3) * 14 + Math.sin(x * 0.031 - t * 0.9 + j) * 6;
+      const y = 40 + j * 46 + Math.sin(x * 0.012 + ambient * 0.6 + j * 1.3) * 14 + Math.sin(x * 0.031 - ambient * 0.9 + j) * 6;
       x === -20 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
     }
     ctx.stroke();
@@ -114,8 +114,8 @@ function background(t) {
   // rising bubbles
   for (let i = 0; i < 26; i++) {
     const r = 3 + 7 * hash(i + 40), sp = 22 + 30 * hash(i + 80);
-    const y = H + 40 - ((t * sp + hash(i + 120) * (H + 80)) % (H + 80));
-    const x = 30 + (W - 60) * hash(i + 160) + Math.sin(t * 1.2 + i) * 8;
+    const y = H + 40 - ((ambient * sp + hash(i + 120) * (H + 80)) % (H + 80));
+    const x = 30 + (W - 60) * hash(i + 160) + Math.sin(ambient * 1.2 + i) * 8;
     A(0.22 + 0.2 * hash(i + 200), () => droplet(x, y, r, 'rgba(210,250,255,0.9)', true));
   }
 }
@@ -150,16 +150,16 @@ function tank(x, y, w, h, level, t, { top, bottom, ph = 0, amp = 5, a = 1 } = {}
       const sy = y + h * (1 - level);
       const g = ctx.createLinearGradient(0, sy, 0, y + h);
       g.addColorStop(0, top); g.addColorStop(1, bottom);
-      ctx.beginPath(); wavePath(x - 10, x + w + 10, sy, Math.min(amp, h * level * 0.5), t, ph);
+      ctx.beginPath(); wavePath(x - 10, x + w + 10, sy, Math.min(amp, h * level * 0.5), ambient, ph);
       ctx.lineTo(x + w + 10, y + h + 10); ctx.lineTo(x - 10, y + h + 10); ctx.closePath();
       ctx.fillStyle = g; ctx.fill();
-      ctx.beginPath(); wavePath(x - 10, x + w + 10, sy, Math.min(amp, h * level * 0.5), t, ph);
+      ctx.beginPath(); wavePath(x - 10, x + w + 10, sy, Math.min(amp, h * level * 0.5), ambient, ph);
       ctx.strokeStyle = 'rgba(255,255,255,0.55)'; ctx.lineWidth = 3; ctx.stroke();
       // bubbles inside the liquid
       for (let i = 0; i < 10; i++) {
         const span_ = h * level;
         if (span_ < 30) break;
-        const by = y + h - ((t * (20 + 20 * hash(i + ph * 7)) + hash(i + 3 + ph) * span_) % span_);
+        const by = y + h - ((ambient * (20 + 20 * hash(i + ph * 7)) + hash(i + 3 + ph) * span_) % span_);
         const bx = x + 20 + (w - 40) * hash(i + 11 + ph);
         A(0.6, () => droplet(bx, by, 2.5 + 4 * hash(i + 5), 'rgba(255,255,255,0.7)', true));
       }
@@ -191,7 +191,7 @@ function bottle(x, by, h, level, t, col = C.aqua, i = 0) {
   if (level > 0.002) {
     ctx.save(); bottlePath(x, by, h); ctx.clip();
     const sy = by - h * 0.86 * level;
-    ctx.beginPath(); wavePath(x - h, x + h, sy, level < 0.98 ? 1.6 : 0.8, t * 1.4, i);
+    ctx.beginPath(); wavePath(x - h, x + h, sy, level < 0.98 ? 1.6 : 0.8, ambient * 1.4, i);
     ctx.lineTo(x + h, by + 2); ctx.lineTo(x - h, by + 2); ctx.closePath();
     ctx.fillStyle = col; ctx.fill();
     ctx.fillStyle = 'rgba(255,255,255,0.18)'; ctx.fillRect(x - h * 0.15, sy, h * 0.06, by - sy);
@@ -245,7 +245,7 @@ function sceneA(t) {
   // the question
   const q = seg(t, 8.3, 8.9);
   A(q, () => {
-    const cx = TANK.xr + TANK.w / 2, cy = TANK.y + 150 + Math.sin(t * 2) * 6;
+    const cx = TANK.xr + TANK.w / 2, cy = TANK.y + 150 + Math.sin(ambient * 2) * 6;
     const s = 0.7 + 0.3 * back(q);
     ctx.save(); ctx.translate(cx, cy); ctx.scale(s, s);
     const rg = ctx.createRadialGradient(0, 0, 0, 0, 0, 110);
@@ -355,7 +355,7 @@ function drawGlomerulus(a, t) {
     ell(gx, gy, 72, 72); ctx.fillStyle = 'rgba(93,224,230,0.12)'; ctx.fill();
     const loops = [[-20, -18, 19], [16, -22, 18], [26, 8, 17], [4, 24, 18], [-24, 14, 17], [0, -2, 15]];
     for (const [dx, dy, r] of loops) {
-      const wob = Math.sin(t * 2 + dx) * 1.2;
+      const wob = Math.sin(ambient * 2 + dx) * 1.2;
       ell(gx + dx, gy + dy + wob, r, r); ctx.strokeStyle = C.bloodDeep; ctx.lineWidth = 11; ctx.stroke();
       ell(gx + dx, gy + dy + wob, r, r); ctx.strokeStyle = C.blood; ctx.lineWidth = 7; ctx.stroke();
     }
@@ -404,7 +404,7 @@ function diagram(t) {
   const cellsA = seg(t, C0 + 1.6, C0 + 2.2);
   if (cellsA > 0) A(cellsA, () => {
     for (let i = 0; i < 40; i++) {
-      const s = (t * 70 + i * (vessel.L / 40)) % vessel.L;
+      const s = (ambient * 70 + i * (vessel.L / 40)) % vessel.L;
       const [x, y] = vessel.at(s);
       ell(x, y, 6.5, 5); ctx.fillStyle = C.cell; ctx.fill();
       ell(x, y, 6.5, 5); ctx.strokeStyle = 'rgba(255,180,188,0.85)'; ctx.lineWidth = 2; ctx.stroke();
@@ -481,9 +481,9 @@ function beaker(t) {
     A(band, () => { ctx.fillStyle = 'rgba(255,200,87,0.32)'; ctx.fillRect(x, yOf(URINE_L[1]), w, yOf(URINE_L[0]) - yOf(URINE_L[1])); });
     const sy = yOf(URINE_L[0] * p);
     const g = ctx.createLinearGradient(0, sy, 0, y + h); g.addColorStop(0, '#FFD777'); g.addColorStop(1, C.amberDeep);
-    ctx.beginPath(); wavePath(x - 10, x + w + 10, sy, 3.5, t, 2); ctx.lineTo(x + w + 10, y + h + 10); ctx.lineTo(x - 10, y + h + 10); ctx.closePath();
+    ctx.beginPath(); wavePath(x - 10, x + w + 10, sy, 3.5, ambient, 2); ctx.lineTo(x + w + 10, y + h + 10); ctx.lineTo(x - 10, y + h + 10); ctx.closePath();
     ctx.fillStyle = g; ctx.fill();
-    ctx.beginPath(); wavePath(x - 10, x + w + 10, sy, 3.5, t, 2); ctx.strokeStyle = 'rgba(255,255,255,0.6)'; ctx.lineWidth = 2.5; ctx.stroke();
+    ctx.beginPath(); wavePath(x - 10, x + w + 10, sy, 3.5, ambient, 2); ctx.strokeStyle = 'rgba(255,255,255,0.6)'; ctx.lineWidth = 2.5; ctx.stroke();
     ctx.restore();
     rrect(x, y, w, h, 20); ctx.strokeStyle = C.glass; ctx.lineWidth = 3; ctx.stroke();
     rrect(x + 12, y + 16, 9, h - 32, 5); ctx.fillStyle = 'rgba(255,255,255,0.16)'; ctx.fill();
@@ -570,8 +570,8 @@ function finale(t) {
     font(700, 120); text(`${FILTRATE_L} L`, W / 2, y + 120, { color: C.mark, align: 'center', base: 'middle' });
     font(500, 26); text('filtered by your kidneys each day', W / 2, y + 196, { color: C.soft, align: 'center', base: 'middle' });
     // a falling drop between the two numbers
-    const dy = y + 248 + ((t * 40) % 40);
-    A(1 - ((t * 40) % 40) / 40, () => droplet(W / 2, dy, 9, C.aqua));
+    const dy = y + 248 + ((ambient * 40) % 40);
+    A(1 - ((ambient * 40) % 40) / 40, () => droplet(W / 2, dy, 9, C.aqua));
     font(700, 92); text(`${fmtL(URINE_L[0])}–${fmtL(URINE_L[1])} L`, W / 2, y + 340, { color: C.amber, align: 'center', base: 'middle' });
     font(500, 26); text('leave as urine', W / 2, y + 408, { color: C.soft, align: 'center', base: 'middle' });
     ctx.restore();
@@ -589,10 +589,15 @@ function captionPanel(t) {
     marks: { '*': C.mark, '^': C.amber, '~': C.bloodLight } });
 }
 
+// The clip's own time, from tools.clock: it runs on while a step holds for reading, so the decorative
+// motion below uses it; the story itself uses t.
+let ambient = 0;
+
 Kit.scene({
   width: W, height: H, duration: END,
   fonts: [{ family: FONT, file: 'Rubik.woff2', weight: '400 800' }],
   draw(t, tools) {
+    ambient = tools.clock;
     k = tools; ctx = tools.ctx;
     background(t);
     header();
