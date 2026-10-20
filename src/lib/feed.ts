@@ -79,26 +79,30 @@ export type FeedEntry =
   | { type: 'caught-up'; round: number };
 
 /**
- * An endless stream over the library. The first round shows unseen cards
- * before already-seen ones; every later round is a fresh shuffle.
+ * An endless stream over the library. Every round opens with the `first` cards
+ * in that order. After them, the first round shows unseen cards before
+ * already-seen ones, and every later round is a fresh shuffle.
  */
 export function* endlessFeed(
   cards: readonly KnowledgeCard[],
-  options: { seed: number; seen?: ReadonlySet<string> },
+  options: { seed: number; seen?: ReadonlySet<string>; first?: readonly string[] },
 ): Generator<FeedEntry, never, void> {
   if (cards.length === 0) throw new Error('endlessFeed needs at least one card');
   const rng = createRng(options.seed);
   const seen = options.seen ?? new Set<string>();
 
-  const unseen = cards.filter((c) => !seen.has(c.id));
-  const already = cards.filter((c) => seen.has(c.id));
-  let order = spreadByField(unseen, rng);
+  const byId = new Map(cards.map((c) => [c.id, c]));
+  const lead = (options.first ?? []).flatMap((id) => byId.get(id) ?? []);
+  const rest = cards.filter((c) => !lead.includes(c));
+  const unseen = rest.filter((c) => !seen.has(c.id));
+  const already = rest.filter((c) => seen.has(c.id));
+  let order = lead.concat(spreadByField(unseen, rng, lead.at(-1)?.field));
   order = order.concat(spreadByField(already, rng, order.at(-1)?.field));
 
   for (let round = 1; ; round++) {
     for (const card of order) yield { type: 'card', card, round };
     yield { type: 'caught-up', round };
-    order = spreadByField(cards, rng, order.at(-1)?.field);
+    order = lead.concat(spreadByField(rest, rng, (lead.at(-1) ?? order.at(-1))?.field));
   }
 }
 

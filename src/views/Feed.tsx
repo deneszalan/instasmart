@@ -23,10 +23,12 @@ interface CaughtUpProps {
   total: number;
   /** Set when the feed shows one writer's posts; that feed ends here instead of reshuffling. */
   writer?: string;
+  /** Every post has a set place, so the next round repeats the same order. */
+  inOrder: boolean;
   onShowAll: () => void;
 }
 
-function CaughtUp({ round, total, writer, onShowAll }: CaughtUpProps) {
+function CaughtUp({ round, total, writer, inOrder, onShowAll }: CaughtUpProps) {
   const pieces = t(total === 1 ? '{n} piece' : '{n} pieces', { n: total });
   if (writer) {
     return (
@@ -49,9 +51,13 @@ function CaughtUp({ round, total, writer, onShowAll }: CaughtUpProps) {
       </span>
       <p className="caught-up__title">{t('You’ve explored all {pieces}', { pieces })}</p>
       <p className="caught-up__sub">
-        {round === 1
-          ? t('Nice work. Keep scrolling for a fresh shuffle — repetition is how things stick.')
-          : t('That’s round {round}. Keep scrolling for a fresh shuffle — repetition is how things stick.', { round })}
+        {inOrder
+          ? round === 1
+            ? t('Nice work. Keep scrolling to start again from the top — repetition is how things stick.')
+            : t('That’s round {round}. Keep scrolling to start again from the top — repetition is how things stick.', { round })
+          : round === 1
+            ? t('Nice work. Keep scrolling for a fresh shuffle — repetition is how things stick.')
+            : t('That’s round {round}. Keep scrolling for a fresh shuffle — repetition is how things stick.', { round })}
       </p>
     </div>
   );
@@ -79,11 +85,11 @@ export function Feed({ by, onBy }: FeedProps) {
     [by],
   );
 
-  // The stream is created once per visit, putting pieces you haven't read yet first.
+  // The stream is created once per visit. It opens with the edition's set order, if any, then pieces you haven't read yet.
   const [session] = useState(() => {
     const cards: KnowledgeCard[] = by ? LIBRARY.filter((c) => authorGroup(c)?.id === by) : LIBRARY;
     if (cards.length === 0) return { cards, feed: null, firstPage: [], done: true };
-    const feed = endlessFeed(cards, { seed: Date.now(), seen: new Set(Object.keys(state.seen)) });
+    const feed = endlessFeed(cards, { seed: Date.now(), seen: new Set(Object.keys(state.seen)), first: EDITION.order });
     const first = takePage(feed);
     return { cards, feed, firstPage: first.entries, done: first.done };
   });
@@ -177,6 +183,7 @@ export function Feed({ by, onBy }: FeedProps) {
             round={item.round}
             total={session.cards.length}
             writer={by ? (writer ?? t('this writer')) : undefined}
+            inOrder={session.cards.every((c) => EDITION.order?.includes(c.id))}
             onShowAll={() => onBy('')}
           />
         ) : (

@@ -69,6 +69,26 @@ describe('endlessFeed', () => {
     expect(entries.at(-1)).toEqual({ type: 'caught-up', round: 1 });
   });
 
+  it('opens with the given cards in order, read or not', () => {
+    const first = [CARDS[5].id, CARDS[0].id, 'no-such-post', CARDS[9].id];
+    const seen = new Set([CARDS[0].id, CARDS[1].id]);
+    const entries = take(endlessFeed(CARDS, { seed: 4, seen, first }), CARDS.length + 1);
+    const ids = entries.flatMap((e) => (e.type === 'card' ? [e.card.id] : []));
+
+    expect(ids.slice(0, 3)).toEqual([CARDS[5].id, CARDS[0].id, CARDS[9].id]);
+    expect(new Set(ids).size).toBe(CARDS.length);
+    expect(ids.at(-1)).toBe(CARDS[1].id);
+  });
+
+  it('opens every round with the given cards, so a fully listed library repeats in the same order', () => {
+    const first = CARDS.map((c) => c.id).reverse();
+    const entries = take(endlessFeed(CARDS, { seed: 5, first }), (CARDS.length + 1) * 3);
+    for (const round of [1, 2, 3]) {
+      const ids = entries.flatMap((e) => (e.type === 'card' && e.round === round ? [e.card.id] : []));
+      expect(ids).toEqual(first);
+    }
+  });
+
   it('keeps going forever with full reshuffled rounds', () => {
     const entries = take(endlessFeed(CARDS, { seed: 9 }), (CARDS.length + 1) * 3);
     const cards = entries.filter((e) => e.type === 'card');
