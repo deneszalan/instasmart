@@ -105,7 +105,7 @@ export function readMp4(bytes: Uint8Array): VideoInfo {
 
 export const MAX_VIDEO_BYTES = 3_000_000;
 export const MIN_VIDEO_SECONDS = 2;
-export const MAX_VIDEO_SECONDS = 30;
+export const MAX_VIDEO_SECONDS = 60;
 export const MAX_VIDEO_WIDTH = 1080;
 
 /** Everything wrong with a clip, in words a contributor can act on. */
