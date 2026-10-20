@@ -225,7 +225,7 @@ export function PostView({ post, className }: PostViewProps) {
   const handle = field ? field.handle : 'wikipedia.featured';
   const slideCount = 1 + (card?.slides?.length ?? 0);
   const group = card ? authorGroup(card) : null;
-  const badge = group && badgeLabel(group);
+  const badge = EDITION.badges && group && badgeLabel(group);
 
   return (
     <article ref={ref} className={`post${className ? ` ${className}` : ''}`} aria-label={card?.title ?? wiki!.title}>

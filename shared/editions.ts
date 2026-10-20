@@ -25,6 +25,8 @@ export interface Edition {
   storageKey: string;
   /** Mix live English Wikipedia articles into the feed. */
   wiki: boolean;
+  /** Show who wrote a post (Claude, ChatGPT, …) as a badge next to its account. The post's details say it either way. */
+  badges: boolean;
   /** Post ids every round of the home feed opens with, in this order, e.g. for a class to read through. The rest follow shuffled. */
   order?: readonly string[];
   /** The note at the bottom of the profile: where posts come from and how to check them. */
@@ -42,6 +44,7 @@ export const EDITIONS = {
     fields: FIELD_IDS.filter((f) => f !== 'literature'),
     storageKey: 'reckon:v1',
     wiki: true,
+    badges: true,
     about:
       'Posts live as files in the Reckon GitHub repository. Ones marked AI were written by an AI, and every post links a source so you can check it. Live posts come from Wikipedia’s featured content, under CC BY-SA.',
   },
@@ -62,6 +65,7 @@ export const EDITIONS = {
     },
     storageKey: 'lesefutter:v1',
     wiki: false,
+    badges: false,
     order: [
       'history-nibelungenlied-hintergrund',
       'literature-hohe-minne',
@@ -74,7 +78,7 @@ export const EDITIONS = {
       'literature-parzival',
       'art-codex-manesse',
     ],
-    about: 'Beiträge mit „KI“ hat eine KI geschrieben. Jeder Beitrag nennt eine Quelle, damit du ihn prüfen kannst.',
+    about: 'Wer einen Beitrag geschrieben hat, steht unter ⋯ beim Beitrag. Dort findest du auch die Quelle, damit du ihn prüfen kannst.',
   },
 } as const satisfies Record<string, Edition>;
 
