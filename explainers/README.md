@@ -19,13 +19,13 @@ explainers/
    npm run explainer -- <post-id> --name <name> --music track.mp3 --still 6.5
    ```
    This writes `content/media/<post-id>/<name>.mp4` and `<name>.jpg`, checks both and prints the slide JSON. It needs ffmpeg and Chromium (set `CHROMIUM_PATH`, or run `npx playwright-core install chromium` once).
-4. Add the slide to the post with `"credit": "Reckon · original animation"` and the `music` credit, then run `npm run content`.
+4. Add the slide to the post with `"fit": "cover"`, `"credit": "Reckon · original animation"` and the `music` credit, then run `npm run content`.
 
 ## Rules
 
 - **Facts come from the post's source.** Compute numbers in the scene (the binary search really runs the search) so the picture, captions and source agree. Hedge where the source hedges.
 - **Captions carry the story**: clips start muted, so every step needs a short caption. Mark key words with `*…*` or `~…~` and give each mark a colour.
 - **Vary the look.** Each explainer gets its own palette, type and visual motif; don't reuse one scene's colours and layout for the next. Use only fonts you may bundle (SIL Open Font License or similar), and add the font's licence file next to it in `fonts/`.
-- **Format:** 864×1080 (4:5), up to 60 s and 3 MB. The app shows the clip inside the card with the credit lines below it, so keep text large: at least 40 px for captions and 19 px for small labels.
+- **Format:** 864×1080 (4:5), up to 60 s and 3 MB. Give the slide `"fit": "cover"`: the clip then fills the card, with the slide counter over the top-right corner and a slim control strip (sound, seek bar, credits) over the bottom. So keep every caption and important element above y = 930, with caption blocks around y = 820–840, and keep the top-right corner (x > 740, y < 120) empty. Keep text large: at least 40 px for captions and 22 px for labels.
 - **The still must not give the result away**: pick `--still` at the hook or the question.
 - **Music** follows the same rules as for clips: a reusable track (Kevin MacLeod's incompetech.com catalogue is CC BY 4.0), credited in `music`.

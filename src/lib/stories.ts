@@ -2,6 +2,7 @@ import type { KnowledgeCard } from '../types';
 import { FIELDS } from '../data/fields';
 import { createRng, shuffle, spreadByField } from './feed';
 import { firstInteractive } from './interactive';
+import { firstVideo } from './visual';
 
 export interface Story {
   id: string;
@@ -29,8 +30,8 @@ function pick(cards: readonly KnowledgeCard[], seen: ReadonlySet<string>, rng: (
 }
 
 /**
- * A "Daily 5" mix across fields, a "Daily quiz" of interactive slides, then one story per field.
- * Changes every day. `played` holds the ids of posts whose challenge the reader has already tried.
+ * A "Daily 5" mix across fields, a "Daily quiz" of interactive slides, then one story per field
+ * that leads with the field's video posts, like Shorts. Changes every day. `played` holds the ids of posts whose challenge the reader has already tried.
  */
 export function buildStories(
   library: readonly KnowledgeCard[],
@@ -64,12 +65,9 @@ export function buildStories(
     stories.push({ id: 'quiz', label: 'Daily quiz', emoji: '🎯', gradient: ['#0ea5e9', '#6366f1'], cards: quiz, interactive: true });
   }
   for (const field of FIELDS) {
-    const cards = pick(
-      library.filter((c) => c.field === field.id),
-      seen,
-      rng,
-      STORY_LENGTH,
-    );
+    const inField = library.filter((c) => c.field === field.id);
+    const videos = pick(inField.filter((c) => firstVideo(c) >= 0), seen, rng, STORY_LENGTH);
+    const cards = videos.concat(pick(inField.filter((c) => !videos.includes(c)), seen, rng, STORY_LENGTH - videos.length));
     if (cards.length) {
       stories.push({ id: field.id, label: field.name, emoji: field.emoji, gradient: field.gradient, cards });
     }

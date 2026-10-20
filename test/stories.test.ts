@@ -38,6 +38,18 @@ describe('buildStories', () => {
     expect(stories.find((s) => s.id === 'quiz')).toBeUndefined();
   });
 
+  it('leads each field story with the field\'s video posts, like Shorts', () => {
+    const clip = (n: number): KnowledgeCard => ({
+      ...card('earth', n),
+      slides: [{ type: 'video', src: `c${n}.mp4`, poster: `c${n}.jpg`, alt: 'A clip.', credit: 'NASA · Public domain · excerpt' }],
+    });
+    const earth = [card('earth', 1), clip(2), card('earth', 3), clip(4), card('earth', 5), card('earth', 6)];
+    const story = buildStories(earth, new Set(), '2026-10-18').find((s) => s.id === 'earth')!;
+    const ids = story.cards.map((c) => c.id);
+    expect(ids.slice(0, 2).sort()).toEqual(['earth-2', 'earth-4']);
+    expect(ids).toHaveLength(5);
+  });
+
   it('is the same for the same day', () => {
     const a = buildStories(library, new Set(), '2026-10-18').map((s) => s.cards.map((c) => c.id));
     const b = buildStories(library, new Set(), '2026-10-18').map((s) => s.cards.map((c) => c.id));
