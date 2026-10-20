@@ -1,0 +1,114 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "literature-parzival",
+  "field": "literature",
+  "title": "Weil er zu höflich ist, verpasst Parzival die wichtigste Frage",
+  "emoji": "🤐",
+  "body": "Wolfram von Eschenbach schrieb den **Parzival** zwischen etwa 1200 und 1210, in rund 25.000 Versen. Der Fürst Gurnemanz lehrt den jungen Parzival gutes Benehmen, auch diese Regel: nicht zu viel fragen. Auf der Gralsburg sieht Parzival einen kranken König und bleibt höflich still. Dabei hätte eine einzige Frage den König erlöst. Erst nach Jahren bekommt Parzival eine zweite Chance.",
+  "cover": {
+    "src": "wolfram.jpg",
+    "alt": "Buchmalerei aus dem Codex Manesse: Wolfram von Eschenbach als Ritter in Rüstung mit geschlossenem Helm, Schild und roter Fahne. Neben ihm hält ein junger Knappe ein Pferd mit roter Decke.",
+    "credit": "Codex Manesse, fol. 149v, Universitätsbibliothek Heidelberg · Public domain"
+  },
+  "slides": [
+    {
+      "type": "list",
+      "heading": "Die Geschichte in fünf Schritten",
+      "style": "steps",
+      "items": [
+        "Seine Mutter zieht ihn im Wald groß, weit weg von Rittern.",
+        "Er sieht Ritter und will selbst einer werden.",
+        "Der Fürst Gurnemanz lehrt ihn: Frag nicht zu viel!",
+        "Auf der Gralsburg schweigt er vor dem kranken König.",
+        "Nach Jahren fragt er: Der König wird gesund, Parzival wird Gralskönig."
+      ]
+    },
+    {
+      "type": "image",
+      "src": "soltane.jpg",
+      "alt": "Kolorierte Federzeichnung: Ein Junge in rotem Kittel und eine Frau in blauem Kleid stehen sich vor Bäumen und einem Haus gegenüber. Darüber eine rote Überschrift.",
+      "caption": "Herzeloyde und ihr Sohn Parzival im Wald von Soltane. Aus einer Parzival-Handschrift der Werkstatt von Diebold Lauber in Hagenau, um 1443–1446.",
+      "fit": "cover",
+      "credit": "Cod. Pal. germ. 339, fol. 87r, Universitätsbibliothek Heidelberg · Public domain"
+    },
+    {
+      "type": "compare",
+      "heading": "Der Rat von Gurnemanz (Parzival 171,17)",
+      "left": {
+        "label": "Mittelhochdeutsch",
+        "text": "irn sult niht vil gevrâgen"
+      },
+      "right": {
+        "label": "Heute",
+        "text": "Ihr sollt nicht viel fragen."
+      }
+    },
+    {
+      "type": "reveal",
+      "prompt": "Auf der Gralsburg leidet König Anfortas. Welche Frage hätte Parzival ihm stellen sollen?",
+      "answer": "„œheim, waz wirret dier?“ – Onkel, was quält dich?",
+      "detail": "So fragt Parzival erst am Ende (795,29). Anfortas ist der Bruder seiner Mutter. Die Frage zeigt Mitleid, und der König wird gesund."
+    },
+    {
+      "type": "compare",
+      "heading": "Der Gral ist ein Stein (469,3–7)",
+      "left": {
+        "label": "Mittelhochdeutsch",
+        "text": "si lebent von einem steine: des geslähte ist vil reine. […] er heizet lapsit exillîs."
+      },
+      "right": {
+        "label": "Heute",
+        "text": "Sie leben von einem Stein, der ist von ganz reiner Art. […] Er heißt lapsit exillis."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Was heißt „lapsit exillis“?",
+      "text": "Das klingt wie Latein, ist aber kein richtiges Latein. Was Wolfram damit meinte, weiß man nicht sicher. Eine Vermutung: *lapis ex coelis*, also „Stein aus dem Himmel“."
+    },
+    {
+      "type": "odd",
+      "heading": "Was passt nicht zu Wolframs Gral?",
+      "items": [
+        "Ein Stein",
+        "Gibt Essen und Trinken",
+        "Eine goldene Schale",
+        "Ungetaufte sehen ihn nicht"
+      ],
+      "answer": 2,
+      "explanation": "Die goldene Schale stammt aus Chrétiens französischem „Perceval“, Wolframs Vorbild. Bei Wolfram ist der Gral ein Stein, der Essen und Trinken gibt und für Ungetaufte unsichtbar ist."
+    },
+    {
+      "type": "text",
+      "heading": "Später auf der Opernbühne",
+      "text": "Richard Wagner machte aus dem Stoff sein letztes Bühnenwerk: „Parsifal“. Es wurde am 26. Juli 1882 in Bayreuth zum ersten Mal aufgeführt. Wagner änderte manche Namen, zum Beispiel Parsifal und Amfortas."
+    },
+    {
+      "type": "list",
+      "heading": "Wörter",
+      "items": [
+        "**der Gral** – ein heiliger Wundergegenstand, bei Wolfram ein Stein",
+        "**der Oheim** – altes Wort für Onkel",
+        "**höfisch** – passend für das Leben am Hof eines Fürsten",
+        "**erlösen** – von einem Leiden befreien",
+        "**der Vers** – eine Zeile in einem Gedicht"
+      ]
+    }
+  ],
+  "tags": [
+    "wolfram",
+    "gral",
+    "epos",
+    "mittelalter",
+    "wagner"
+  ],
+  "source": {
+    "label": "Wikipedia: Parzival",
+    "url": "https://de.wikipedia.org/wiki/Parzival"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-20"
+}

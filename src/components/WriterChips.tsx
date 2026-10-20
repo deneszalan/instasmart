@@ -12,6 +12,8 @@ interface WriterChipsProps {
 
 /** The "Written by" slicer shared by the feed and Explore. */
 export function WriterChips({ value, onChange }: WriterChipsProps) {
+  // A library by a single writer has nothing to filter (unless a filter is already set and needs clearing).
+  if (!value && WRITERS.filter((w) => w.count > 0).length < 2) return null;
   return (
     <div className="chips chips--authors" role="group" aria-label={t('Written by')}>
       <span className="chips__label">{t('Written by')}</span>
