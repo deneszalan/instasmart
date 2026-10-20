@@ -29,6 +29,8 @@ export function TitleSlide({ card, hasMore, onWatch }: { card: KnowledgeCard; ha
   const field = FIELD_BY_ID[card.field];
   const cover = card.cover;
   const video = firstVideo(card);
+  const clip = video >= 0 ? card.slides![video] : undefined;
+  const animated = clip?.type === 'video' && !!clip.animation;
   return (
     <div className={`slide slide--title${cover ? ' slide--cover' : ''}`} style={gradientStyle(cardGradient(card))}>
       {cover ? (
@@ -42,8 +44,8 @@ export function TitleSlide({ card, hasMore, onWatch }: { card: KnowledgeCard; ha
         {field.emoji} {field.name}
       </span>
       {video >= 0 && (
-        <button className="slide__video" onClick={onWatch} aria-label="Watch the video in this post">
-          <Play size={13} fill="currentColor" /> Video
+        <button className="slide__video" onClick={onWatch} aria-label={animated ? 'Watch the animation in this post' : 'Watch the video in this post'}>
+          <Play size={13} fill="currentColor" /> {animated ? 'Animation' : 'Video'}
         </button>
       )}
       <div className="slide__center">

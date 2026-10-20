@@ -94,6 +94,10 @@ export const VideoSlide = z
       .enum(['contain', 'cover'])
       .optional()
       .describe('"contain" shows the whole frame on the field colours (default, best for landscape footage); "cover" fills the slide.'),
+    animation: z
+      .boolean()
+      .optional()
+      .describe('true for an animated explainer drawn for this post (`npm run explainer`) rather than footage. Explore lists these under "Animation".'),
     credit: text(120).describe('Who made the footage and its licence, e.g. "NASA/JPL-Caltech · Public domain · excerpt".'),
     href: httpsUrl.optional().describe('The page the footage comes from, e.g. its NASA or Wikimedia Commons page.'),
     music: text(160)

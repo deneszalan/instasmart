@@ -19,7 +19,7 @@ explainers/
    npm run explainer -- <post-id> --name <name> --music track.mp3 --still 6.5
    ```
    This writes `content/media/<post-id>/<name>.mp4` and `<name>.jpg`, checks both and prints the slide JSON. It needs ffmpeg and Chromium (set `CHROMIUM_PATH`, or run `npx playwright-core install chromium` once).
-4. Add the slide to the post with `"fit": "cover"`, `"credit": "Reckon · original animation"` and the `music` credit, then run `npm run content`.
+4. Add the slide to the post with `"fit": "cover"`, `"animation": true` (Explore lists it under "Animation"), `"credit": "Reckon · original animation"` and the `music` credit, then run `npm run content`.
 
 ## Rules
 
