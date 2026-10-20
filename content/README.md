@@ -161,7 +161,7 @@ A slide is phone-sized, so `list` and `timeline` slides must stay short: about 1
 A `video` slide plays a short clip, muted and looping while the slide is on screen, with a sound button when it has music. Use one when motion shows something a photo can't: a launch, a collapse, a fluid, an animal's movement, a time-lapse.
 
 **The clip**
-- An MP4 file in `content/media/<id>/` with H.264 video, 2–30 seconds long (8–20 s is ideal), at most 1080 px wide (480–720 px is plenty) and at most 3 MB, with its index at the start ("fast start"). `npm run content` checks all of this by reading the file.
+- An MP4 file in `content/media/<id>/` with H.264 video, 2–60 seconds long (8–20 s is ideal for footage; animated explainers may run up to 60 s), at most 1080 px wide (480–720 px is plenty) and at most 3 MB, with its index at the start ("fast start"). `npm run content` checks all of this by reading the file.
 - A still from the clip as `poster`: a JPEG shown before it plays. It also makes a good `cover` for the post.
 - `"fit": "contain"` (the default) shows the whole frame on the field colours with the text below it; `"cover"` fills the slide, for portrait or square footage.
 
@@ -173,6 +173,8 @@ npm run clip -- source.mp4 --post <post-id> --name <name> --start 33 --end 44.5 
 ```
 
 It cuts the source between `--start` and `--end`, re-encodes it for phones, drops the original sound and lays in a music excerpt (normalised to a quiet background level, faded in and out), makes `<name>.jpg` from the first second (`--still <s>` picks another moment), checks both files and prints the slide JSON. `--music-start auto` skips silent or quiet passages; give seconds to choose the passage yourself. Leave out `--music` for a silent clip. `--crop 4:5` or `--crop 1:1` crops landscape footage to fill the slide.
+
+**Animated explainers: `npm run explainer`.** Instead of footage, a slide can show an animation drawn by code that walks through the post's idea, with captions and music. Each one is a scene file in `explainers/`; see `explainers/README.md`. Credit it `"Reckon · original animation"`.
 
 Contributors without ffmpeg can upload a finished MP4 through the MCP server's `media` list like an image (`base64`); the same checks apply.
 

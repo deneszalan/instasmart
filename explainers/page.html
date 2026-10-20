@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; background: #000; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<script src="kit.js"></script>
+<script>
+  // Loads the scene named in ?scene=<post-id>.
+  const scene = document.createElement('script');
+  scene.src = new URLSearchParams(location.search).get('scene') + '.js';
+  document.body.appendChild(scene);
+</script>
+</body>
+</html>

@@ -20,7 +20,7 @@ const MediaInput = z
   .object({
     name: z.string().describe('File name the post refers to, e.g. "orbit-diagram.svg" (lowercase, a-z 0-9 - _).'),
     svg: z.string().optional().describe('SVG markup, for diagrams and illustrations you draw yourself.'),
-    base64: z.string().optional().describe('Base64-encoded PNG, JPEG, WebP, GIF or AVIF bytes, or an MP4 clip (H.264, ≤30 s, ≤3 MB) for a video slide.'),
+    base64: z.string().optional().describe('Base64-encoded PNG, JPEG, WebP, GIF or AVIF bytes, or an MP4 clip (H.264, ≤60 s, ≤3 MB) for a video slide.'),
   })
   .describe('An image or video clip for the post. Give exactly one of `svg` or `base64`.');
 

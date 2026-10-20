@@ -1,0 +1,158 @@
+// Render an animated explainer (explainers/<post-id>.js) into a video slide for that post.
+//
+//   npm run explainer -- <post-id> [--name explainer] [--music <audio file> --music-start <s|auto>] [--still <s>]
+//   npm run explainer -- <post-id> --preview 2,9.5,20      PNG stills to check the layout
+//
+// Writes content/media/<post-id>/<name>.mp4 and <name>.jpg, checks both with the content validator
+// and prints the slide JSON. Needs ffmpeg and a Chromium: set CHROMIUM_PATH, or run
+// `npx playwright-core install chromium` once.
+import { spawn, spawnSync } from 'node:child_process';
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { dirname, join } from 'node:path';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+import { parseArgs } from 'node:util';
+import { chromium } from 'playwright-core';
+import { mediaPath, mediaProblems } from '../shared/validate.ts';
+import { MAX_VIDEO_BYTES, readMp4 } from '../shared/video.ts';
+import { bestMusicStart } from './clip.ts';
+
+const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+const FPS = 30;
+
+function browserPath(): string | undefined {
+  if (process.env.CHROMIUM_PATH) return process.env.CHROMIUM_PATH;
+  if (existsSync(chromium.executablePath())) return undefined;
+  const known = ['/opt/pw-browsers/chromium', '/usr/bin/chromium', '/usr/bin/chromium-browser', '/usr/bin/google-chrome',
+    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'];
+  const found = known.find((p) => existsSync(p));
+  if (!found) throw new Error('No Chromium found: set CHROMIUM_PATH, or run `npx playwright-core install chromium`.');
+  return found;
+}
+
+function ffmpeg(args: string[]): void {
+  const r = spawnSync('ffmpeg', ['-y', '-v', 'error', ...args], { encoding: 'utf8' });
+  if (r.error) throw new Error(`could not run ffmpeg: ${r.error.message}`);
+  if (r.status !== 0) throw new Error(`ffmpeg failed:\n${r.stderr}`);
+}
+
+async function main(): Promise<number> {
+  const { values, positionals } = parseArgs({
+    allowPositionals: true,
+    options: {
+      name: { type: 'string', default: 'explainer' },
+      music: { type: 'string' },
+      'music-start': { type: 'string', default: 'auto' },
+      still: { type: 'string', default: '1' },
+      preview: { type: 'string' },
+    },
+  });
+  const post = positionals[0];
+  const scene = join(root, 'explainers', `${post}.js`);
+  if (!post || !existsSync(scene)) {
+    console.error(`Usage: npm run explainer -- <post-id> [--name explainer] [--music <file> --music-start <s|auto>] [--still <s>] [--preview 1,5,12]\n` +
+      `The scene must be at explainers/<post-id>.js (see explainers/README.md).`);
+    return 1;
+  }
+  const name = values.name!;
+  if (!/^[a-z0-9][a-z0-9_-]*$/.test(name)) {
+    console.error('--name must be lowercase letters, digits, "-" or "_" (no extension)');
+    return 1;
+  }
+
+  const browser = await chromium.launch({ executablePath: browserPath() });
+  const work = mkdtempSync(join(tmpdir(), `explainer-${post}-`));
+  try {
+    const page = await browser.newPage();
+    const errors: string[] = [];
+    page.on('pageerror', (e) => errors.push(e.message));
+    await page.goto(`${pathToFileURL(join(root, 'explainers', 'page.html')).href}?scene=${post}`);
+    // The page code runs in the browser, so it is passed as strings (scripts/ has no DOM types).
+    await page.waitForFunction('"ready" in window');
+    await page.evaluate('window.ready');
+    const duration = Number(await page.evaluate('window.DURATION'));
+    const frame = async (t: number) => Buffer.from(String(await page.evaluate(
+      `window.render(${t}), document.getElementById('c').toDataURL('image/png').split(',')[1]`)), 'base64');
+    const fail = () => { if (errors.length) throw new Error(`the scene threw:\n${errors.join('\n')}`); };
+
+    if (values.preview) {
+      const dir = join(tmpdir(), 'explainer-preview', post);
+      mkdirSync(dir, { recursive: true });
+      for (const t of values.preview.split(',').map(Number)) writeFileSync(join(dir, `t${t}.png`), await frame(t));
+      fail();
+      console.log(`Stills written to ${dir}`);
+      return 0;
+    }
+
+    // Draw every frame into a near-lossless master, then encode the clip from it,
+    // compressing harder if the clip is over the size limit.
+    const master = join(work, 'master.mp4');
+    const enc = spawn('ffmpeg', ['-y', '-v', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'png', '-i', '-',
+      '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '8', '-pix_fmt', 'yuv420p', master], { stdio: ['pipe', 'inherit', 'inherit'] });
+    const n = Math.round(duration * FPS);
+    for (let i = 0; i < n; i++) {
+      if (!enc.stdin.write(await frame(i / FPS))) await new Promise((r) => enc.stdin.once('drain', r));
+    }
+    enc.stdin.end();
+    const status = await new Promise<number | null>((r) => enc.on('close', r));
+    if (status !== 0) throw new Error('ffmpeg could not encode the frames');
+    const still = await frame(Number(values.still));
+    fail();
+
+    const dir = join(root, 'content', 'media', post);
+    mkdirSync(dir, { recursive: true });
+    const clip = join(dir, `${name}.mp4`);
+    let musicStart = 0;
+    if (values.music) musicStart = values['music-start'] === 'auto' ? bestMusicStart(values.music, duration) : Number(values['music-start']);
+    for (const crf of [20, 24, 28, 32]) {
+      const args = ['-i', master];
+      if (values.music) args.push('-ss', String(musicStart), '-i', values.music);
+      args.push('-map', '0:v:0', '-c:v', 'libx264', '-preset', 'slow', '-crf', String(crf), '-pix_fmt', 'yuv420p', '-profile:v', 'high');
+      if (values.music) {
+        const fadeOut = Math.max(0, duration - 2.5).toFixed(2);
+        args.push('-map', '1:a:0', '-af', `loudnorm=I=-20:TP=-2:LRA=11,afade=t=in:st=0:d=0.6,afade=t=out:st=${fadeOut}:d=2.5`);
+        args.push('-c:a', 'aac', '-b:a', '96k', '-ac', '2', '-ar', '44100');
+      } else {
+        args.push('-an');
+      }
+      args.push('-t', String(duration), '-movflags', '+faststart', clip);
+      ffmpeg(args);
+      if (statSync(clip).size <= MAX_VIDEO_BYTES * 0.95) break;
+    }
+    const pngStill = join(work, 'still.png');
+    writeFileSync(pngStill, still);
+    const poster = join(dir, `${name}.jpg`);
+    ffmpeg(['-i', pngStill, '-q:v', '3', poster]);
+
+    const problems = [
+      ...mediaProblems(`${name}.mp4`, readFileSync(clip)).map((p) => `${name}.mp4: ${p}`),
+      ...mediaProblems(`${name}.jpg`, readFileSync(poster)).map((p) => `${name}.jpg: ${p}`),
+    ];
+    const info = readMp4(readFileSync(clip));
+    console.log(`Wrote ${mediaPath(post, `${name}.mp4`)} (${(statSync(clip).size / 1e6).toFixed(2)} MB, ${info.durationSeconds.toFixed(1)} s, ${info.width}×${info.height}${info.audioCodec ? `, music from ${musicStart} s` : ', silent'})`);
+    console.log(`Wrote ${mediaPath(post, `${name}.jpg`)} (still at ${values.still} s)`);
+    if (problems.length) {
+      console.error(`\n${problems.join('\n')}`);
+      return 1;
+    }
+    const slide = {
+      type: 'video',
+      src: `${name}.mp4`,
+      poster: `${name}.jpg`,
+      alt: '<what the animation shows>',
+      caption: '<optional, ≤200 characters>',
+      credit: 'Reckon · original animation',
+      ...(values.music ? { music: '<“Title” artist (source) · licence>' } : {}),
+    };
+    console.log(`\nSlide to add to the post:\n${JSON.stringify(slide, null, 2)}`);
+    return 0;
+  } finally {
+    await browser.close();
+    rmSync(work, { recursive: true, force: true });
+  }
+}
+
+main().then((code) => process.exit(code), (err: Error) => {
+  console.error(err.message);
+  process.exit(1);
+});

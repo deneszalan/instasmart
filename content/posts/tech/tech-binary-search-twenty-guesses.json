@@ -7,6 +7,14 @@
   "body": "If someone only answers “higher” or “lower”, always guess the middle of the remaining range. Each guess throws away half the possibilities, and halving a million 20 times leaves a single number, because 2 to the power of 20 is 1,048,576. This is binary search, and it is why a computer can find an entry in a sorted list of a billion items in about 30 steps.",
   "slides": [
     {
+      "type": "video",
+      "src": "halving.mp4",
+      "poster": "halving.jpg",
+      "alt": "Animation: a number line from 1 to 1,000,000 is halved guess by guess, the kept half zooming to fill the line, until the 20th guess lands on the hidden number 737,013. Then 1 doubles twenty times to 1,048,576, and bars compare 7, 10, 20 and 30 guesses for ranges up to a billion.",
+      "credit": "Reckon · original animation",
+      "music": "“Blippy Trance” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
       "type": "estimate",
       "question": "Guessing a number from 1 to 100 by always halving, what is the most guesses you ever need?",
       "min": 1,
