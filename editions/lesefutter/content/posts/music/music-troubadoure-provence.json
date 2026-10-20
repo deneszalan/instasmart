@@ -37,7 +37,7 @@
     {
       "type": "fill",
       "question": "Die Trobadors schufen geschätzt 2500 Melodien. Wie viele von 10 sind heute noch erhalten?",
-      "icon": "🎵",
+      "icon": "♫",
       "total": 10,
       "answer": 1,
       "explanation": "Nur etwa 1 von 10: Weniger als 300 Melodien sind erhalten. Von den Texten gibt es viel mehr, rund 2600 Gedichte von etwa 450 Trobadors."
