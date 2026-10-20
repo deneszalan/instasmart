@@ -109,7 +109,7 @@ export const VideoSlide = z
       .max(24)
       .optional()
       .describe(
-        'The clip\'s steps in order, in seconds: when each caption or stage appears and when it goes. The player marks them on the seek bar, jumps between them and can pause at the end of each. `npm run explainer` writes them.',
+        'The clip\'s steps in order, in seconds: when each caption or stage appears and when it goes. The player marks them on the seek bar, jumps between them and can pause at the end of each. The clip needs a keyframe as each step starts and keyframes at most 4 s apart; `npm run explainer` writes the steps and encodes the clip that way.',
       ),
   })
   .strict();

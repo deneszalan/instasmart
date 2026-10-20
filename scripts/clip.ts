@@ -121,6 +121,8 @@ function main(): number {
     args.push('-map', '0:v:0');
     args.push('-vf', [...filters, `scale='min(${width},iw)':-2`].join(','), '-fpsmax', '30');
     args.push('-c:v', 'libx264', '-preset', 'slow', '-crf', String(crf), '-pix_fmt', 'yuv420p', '-profile:v', 'high');
+    // A keyframe at least every 2 s, so the picture follows the seek bar quickly.
+    args.push('-force_key_frames', 'expr:gte(t,n_forced*2)');
     if (values.music) {
       const fadeOut = Math.max(0, length - 1.2).toFixed(2);
       args.push('-map', '1:a:0', '-af', `loudnorm=I=-20:TP=-2:LRA=11,afade=t=in:st=0:d=0.5,afade=t=out:st=${fadeOut}:d=1.2`);

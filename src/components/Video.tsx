@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { Play, SkipBack, SkipForward, Volume2, VolumeX } from 'lucide-react';
+import { Pause, Play, SkipBack, SkipForward, Volume2, VolumeX } from 'lucide-react';
 import type { KnowledgeCard, Slide } from '../types';
 import { inline } from '../lib/markdown';
 import { cardGradient, gradientStyle } from './Media';
@@ -13,6 +13,9 @@ export const SPEEDS = [0.75, 1, 1.25, 1.5, 2];
 
 /** In step mode the clip stops this long before a step's caption starts to fade out. */
 const STOP_BEFORE_END = 0.3;
+
+/** Taps this close to the left or right edge (as a share of the width) step back or forward. */
+const EDGE = 0.25;
 
 function autoplayAllowed(): boolean {
   if (typeof window === 'undefined') return false;
@@ -54,6 +57,8 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
   // The reader's own choice wins over autoplay: null until they tap.
   const [wantPlay, setWantPlay] = useState<boolean | null>(null);
   const [playing, setPlaying] = useState(false);
+  // The big play button is only for a clip that hasn't played yet; after that, pausing leaves the picture clear.
+  const [started, setStarted] = useState(false);
   const [muted, setMuted] = useState(!sound.wanted);
   const [creditsOpen, setCreditsOpen] = useState(false);
   const [duration, setDuration] = useState(0);
@@ -70,6 +75,10 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
   const [stoppedAtStep, setStoppedAtStep] = useState(false);
   const menu = useRef<HTMLDivElement>(null);
   const speedButton = useRef<HTMLButtonElement>(null);
+  // A seek asked for while the clip is still finding the last one; it waits its turn.
+  const pending = useRef<number | null>(null);
+  // The arrow that flashes on the side tapped; n restarts its animation.
+  const [flash, setFlash] = useState<{ back: boolean; n: number } | null>(null);
   // Read inside the frame loop, which is set up once.
   const live = useRef({ steps, stepMode, lastTime: 0 });
   live.current.steps = steps;
@@ -125,12 +134,21 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
     return () => document.removeEventListener('pointerdown', onDown);
   }, [menuOpen]);
 
-  // Move the progress bar and clock straight in the DOM, every frame while playing.
-  // In step mode, also stop once a step's caption has been on screen to its end.
-  const paint = useCallback(() => {
+  /** Put the progress bar and clock at `time`, straight in the DOM. */
+  const show = useCallback((time: number) => {
     const v = video.current;
     const bar = seek.current;
     if (!v || !bar || !v.duration) return;
+    if (!dragging.current) bar.value = String(time);
+    bar.style.setProperty('--p', `${((time / v.duration) * 100).toFixed(2)}%`);
+    bar.setAttribute('aria-valuetext', `${clock(time)} of ${clock(v.duration)}`);
+    if (elapsed.current) elapsed.current.textContent = clock(time);
+  }, []);
+
+  // Runs every frame while playing. In step mode, it also stops once a step's caption has been on screen to its end.
+  const paint = useCallback(() => {
+    const v = video.current;
+    if (!v || !v.duration) return;
     const now = live.current;
     if (now.stepMode && !v.paused) {
       for (const step of now.steps) {
@@ -147,11 +165,8 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
       }
     }
     now.lastTime = v.currentTime;
-    if (!dragging.current) bar.value = String(v.currentTime);
-    bar.style.setProperty('--p', `${((v.currentTime / v.duration) * 100).toFixed(2)}%`);
-    bar.setAttribute('aria-valuetext', `${clock(v.currentTime)} of ${clock(v.duration)}`);
-    if (elapsed.current) elapsed.current.textContent = clock(v.currentTime);
-  }, []);
+    show(pending.current ?? v.currentTime);
+  }, [show]);
 
   useEffect(() => {
     paint();
@@ -163,42 +178,81 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
     return () => cancelAnimationFrame(frame);
   }, [playing, paint]);
 
+  // A new seek would cancel one still in progress, so while dragging the picture would only catch up
+  // at the end. Instead the newest position waits until the current frame is shown.
   const jump = (time: number) => {
     const v = video.current;
     if (!v) return;
-    v.currentTime = time;
     live.current.lastTime = time;
     setStoppedAtStep(false);
+    if (v.seeking) pending.current = time;
+    else v.currentTime = time;
+    show(time);
+  };
+
+  const onSeeked = () => {
+    const v = video.current;
+    if (v && pending.current !== null) {
+      v.currentTime = pending.current;
+      pending.current = null;
+      return;
+    }
     paint();
   };
 
-  const onSeek = (e: React.ChangeEvent<HTMLInputElement>) => jump(Number(e.target.value));
+  const pause = () => {
+    setWantPlay(false);
+    video.current?.pause();
+  };
+
+  // Browsing with the seek bar pauses the clip, so it shows the picture there instead of playing on.
+  const onSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
+    pause();
+    jump(Number(e.target.value));
+  };
 
   // Playing again after a step stop doesn't change wantPlay, so start the clip directly too.
   const resume = () => {
     setWantPlay(true);
     video.current?.play().catch(() => {});
   };
-  const togglePlay = () => (playing ? setWantPlay(false) : resume());
+  const togglePlay = () => (playing ? pause() : resume());
 
   /** Index of the step under the playhead, or -1 before the first. */
   const stepAt = (time: number) => steps.reduce((at, step, i) => (step.start <= time + 0.05 ? i : at), -1);
 
+  // Both play the step they land on: its caption appears as it plays, so a still of its start shows little.
   const prevStep = () => {
     const v = video.current;
     if (!v) return;
-    const i = stepAt(v.currentTime);
+    const time = pending.current ?? v.currentTime;
+    const i = stepAt(time);
     // Back to the start of this step, or to the one before when already near its start.
-    if (i >= 0 && v.currentTime - steps[i].start > 1.2) jump(steps[i].start);
+    if (i >= 0 && time - steps[i].start > 1.2) jump(steps[i].start);
     else jump(i > 0 ? steps[i - 1].start : 0);
+    resume();
   };
 
   const nextStep = () => {
     const v = video.current;
     if (!v) return;
-    const next = steps[stepAt(v.currentTime) + 1];
+    const next = steps[stepAt(pending.current ?? v.currentTime) + 1];
     jump(next ? next.start : Math.max(0, v.duration - 0.1));
-    if (v.paused) resume();
+    resume();
+  };
+
+  // Taps near the edges flip through the steps, like a story; elsewhere they play or pause.
+  const onTap = (e: React.MouseEvent<HTMLVideoElement>) => {
+    const r = e.currentTarget.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width;
+    if (steps.length && (x < EDGE || x > 1 - EDGE)) {
+      const back = x < EDGE;
+      if (back) prevStep();
+      else nextStep();
+      setFlash((f) => ({ back, n: (f?.n ?? 0) + 1 }));
+      return;
+    }
+    togglePlay();
   };
 
   const toggleSound = () => {
@@ -226,6 +280,7 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
         aria-label={slide.alt}
         onPlay={() => {
           setPlaying(true);
+          setStarted(true);
           setStoppedAtStep(false);
         }}
         onPause={() => setPlaying(false)}
@@ -234,17 +289,25 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
           e.currentTarget.defaultPlaybackRate = rate;
           e.currentTarget.playbackRate = rate;
         }}
-        onSeeked={paint}
-        onClick={togglePlay}
+        onSeeked={onSeeked}
+        onClick={onTap}
       />
-      {!playing && !stepPaused && (
+      {!playing && !started && (
         <button className="video__play" onClick={resume} aria-label="Play clip">
           <Play size={30} fill="currentColor" />
         </button>
       )}
+      {flash && (
+        <span key={flash.n} className={`video__flash video__flash--${flash.back ? 'back' : 'next'}`} onAnimationEnd={() => setFlash(null)} aria-hidden="true">
+          {flash.back ? <SkipBack size={22} fill="currentColor" /> : <SkipForward size={22} fill="currentColor" />}
+        </span>
+      )}
       <div className="slide-image__text video__info">
         {slide.caption && <p className="slide-image__caption">{inline(slide.caption)}</p>}
         <div className="video__bar">
+          <button className="video__btn" onClick={togglePlay} aria-label={playing ? 'Pause' : 'Play'}>
+            {playing ? <Pause size={14} fill="currentColor" /> : <Play size={14} fill="currentColor" />}
+          </button>
           {hasSound && (
             <button className="video__sound" onClick={toggleSound} aria-label={muted ? 'Turn sound on' : 'Turn sound off'} aria-pressed={!muted}>
               {muted ? <VolumeX size={16} /> : <Volume2 size={16} />}
