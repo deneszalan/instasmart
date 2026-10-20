@@ -1,0 +1,154 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "literature-hohe-minne",
+  "field": "literature",
+  "title": "Minnesänger warben um eine Dame, die sie nie bekommen sollten",
+  "emoji": "🌹",
+  "body": "In der **hohen Minne** singt ein Mann für eine adlige Dame, die für ihn unerreichbar bleibt. Er lobt sie, nennt sich ihren Diener und hofft auf ein Zeichen ihrer Gunst (ihres Wohlwollens). Doch der Lohn bleibt aus, und er klagt. Genau das gehört zum Spiel: Der Dienst soll ihn zu einem besseren Menschen machen, treu, beständig und demütig.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Was heißt Minne?",
+      "text": "**Minne** ist ein mittelhochdeutsches Wort. Es bedeutet „liebevolles Gedenken“, also: liebevoll an jemanden denken. Im Minnesang singt ein Mann für eine Frau, die er verehrt. Meist ist sie adlig und steht über ihm."
+    },
+    {
+      "type": "video",
+      "src": "spiel-der-hohen-minne.mp4",
+      "poster": "spiel-der-hohen-minne.jpg",
+      "alt": "Animation im Stil einer Handschrift: Ein Sänger singt zu einer Dame im Turmfenster, seine Noten erreichen sie nicht. Der Hof hört zu, der Herr gibt Münzen. Dann ein Rad: loben, dienen, hoffen, kein Lohn, klagen, und von vorn. Zum Schluss Tugenden wie triuwe (Treue) und stæte (Beständigkeit).",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Lesefutter · eigene Animation",
+      "music": "“Suonatore di Liuto” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.5,
+          "end": 4.4
+        },
+        {
+          "start": 4.6,
+          "end": 8.6
+        },
+        {
+          "start": 8.8,
+          "end": 12.6
+        },
+        {
+          "start": 12.8,
+          "end": 16.6
+        },
+        {
+          "start": 16.8,
+          "end": 20.5
+        },
+        {
+          "start": 20.9,
+          "end": 24.9
+        },
+        {
+          "start": 25,
+          "end": 29
+        },
+        {
+          "start": 29.1,
+          "end": 33.1
+        },
+        {
+          "start": 33.2,
+          "end": 37.2
+        },
+        {
+          "start": 37.3,
+          "end": 41.3
+        },
+        {
+          "start": 41.4,
+          "end": 45.3
+        },
+        {
+          "start": 45.6,
+          "end": 50
+        },
+        {
+          "start": 50.1,
+          "end": 54.6
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "werner-von-teufen.jpg",
+      "alt": "Buchmalerei: Ein junger Mann im blauen Mantel und eine Dame mit weißem Schleier reiten nebeneinander auf zwei Pferden. Die Dame hält einen Falken.",
+      "caption": "Der Minnesänger Werner von Teufen reitet mit einer Dame aus.",
+      "fit": "contain",
+      "credit": "Codex Manesse, fol. 69r, UB Heidelberg · gemeinfrei"
+    },
+    {
+      "type": "text",
+      "heading": "Ein Auftritt vor allen",
+      "text": "Ein Minnelied war kein geheimer Liebesbrief. Man sang es vor dem ganzen Hof, nicht immer der Dichter selbst. Ein gutes Lied zeigte Können, so wie ein Sieg im Turnier (einem Kampfspiel der Ritter)."
+    },
+    {
+      "type": "reveal",
+      "prompt": "Sagten die Minnesänger selbst „hohe Minne“?",
+      "answer": "Kaum. Die Begriffe kommen aus der Forschung.",
+      "detail": "Im Mittelalter sind „hohe“ und „niedere Minne“ keine festen Begriffe. Nur Walther von der Vogelweide sagt einmal etwas Ähnliches. Forscher der Romantik (im 19. Jahrhundert) machten daraus Fachwörter."
+    },
+    {
+      "type": "compare",
+      "heading": "Nicht jedes Minnelied ist so",
+      "left": {
+        "label": "Hohe Minne",
+        "text": "Er dient einer Dame, die er nicht erreicht. Er lobt, hofft und klagt."
+      },
+      "right": {
+        "label": "Andere Minnelieder",
+        "text": "Im Tagelied trennt sich ein Liebespaar am Morgen. In Walthers „Under der linden“ („Unter der Linde“) wird die Liebe erwidert."
+      }
+    },
+    {
+      "type": "odd",
+      "heading": "Was passt nicht zur hohen Minne?",
+      "items": [
+        "Er lobt die Dame",
+        "Er nennt sich ihr Diener",
+        "Er klagt über seinen Schmerz",
+        "Am Ende heiratet sie ihn"
+      ],
+      "answer": 3,
+      "explanation": "In der hohen Minne erreicht der Sänger die Dame nie. Er lobt, dient, hofft und klagt. Gerade so zeigt er seine Treue und Beständigkeit."
+    },
+    {
+      "type": "list",
+      "heading": "Wörter",
+      "items": [
+        "**die Minne** – Liebe, liebevolles Denken an jemanden",
+        "**die frouwe** – die Herrin, eine adlige Dame",
+        "**der Dienst** – Arbeit für einen Herrn oder eine Herrin",
+        "**der Gönner** – jemand, der einen Künstler unterstützt",
+        "**die Tugend** – eine gute Eigenschaft, z. B. Treue"
+      ]
+    }
+  ],
+  "tags": [
+    "minnesang",
+    "minne",
+    "mittelalter",
+    "liebe"
+  ],
+  "source": {
+    "label": "Wikipedia: Hohe Minne",
+    "url": "https://de.wikipedia.org/wiki/Hohe_Minne"
+  },
+  "theme": {
+    "gradient": [
+      "#23412B",
+      "#6E2335"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-20"
+}

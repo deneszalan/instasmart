@@ -1,0 +1,108 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "literature-heinrich-von-morungen",
+  "field": "literature",
+  "title": "Heinrich von Morungen verglich seine Dame mit dem Mond über dem Land",
+  "emoji": "🌙",
+  "body": "**Heinrich von Morungen** war einer der wichtigsten Minnesänger um 1200. In einem Lied lobt er eine Dame: So wie der Mond nachts weit über das Land scheint, so ist sie ganz von Güte umgeben. Bilder von Licht und Glanz sind typisch für ihn: Sonne, Mond, Abendstern, Gold. Am Ende nennt er sie „aller wîbe ein krône“, die Krone aller Frauen.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "morungen.jpg",
+      "alt": "Buchmalerei: Ein junger Mann mit Locken liegt in einem Bett und stützt den Kopf in die Hand. Neben ihm steht eine Dame mit einem kleinen weißen Hund. Oben ein blaues Wappen mit Mondsicheln und Sternen.",
+      "caption": "Morungen im Codex Manesse. Auf seinem Wappen: Mondsicheln und Sterne.",
+      "fit": "contain",
+      "credit": "Codex Manesse, fol. 76v, UB Heidelberg · gemeinfrei"
+    },
+    {
+      "type": "compare",
+      "heading": "Lied I, Strophe 1: ihr Lob",
+      "left": {
+        "label": "Mittelhochdeutsch",
+        "text": "*Si ist ze allen êren ein wîp wol erkant, / schoener gebaerde, mit zühten gemeit, / sô daz ir lop in dem rîche umbe gêt.*"
+      },
+      "right": {
+        "label": "Heute",
+        "text": "Sie ist eine Frau, die man für ihre Ehre kennt, / schön im Benehmen, heiter und wohlerzogen, / so dass man sie im ganzen Reich lobt."
+      }
+    },
+    {
+      "type": "compare",
+      "heading": "Wie der Mond",
+      "left": {
+        "label": "Mittelhochdeutsch",
+        "text": "*alse der mân wol verre über lant / liuhtet des nahtes wol lieht unde breit, / sô daz sîn schîn al die welt umbevêt,*"
+      },
+      "right": {
+        "label": "Heute",
+        "text": "So wie der Mond weit über das Land / in der Nacht hell und breit leuchtet, / so dass sein Schein die ganze Welt umfängt,"
+      }
+    },
+    {
+      "type": "compare",
+      "heading": "Die Krone",
+      "left": {
+        "label": "Mittelhochdeutsch",
+        "text": "*Als ist mit güete umbevangen diu schône. / des man ir jêt, / si ist aller wîbe ein krône.*"
+      },
+      "right": {
+        "label": "Heute",
+        "text": "so ist die Schöne ganz von Güte umgeben. / Darum sagt man von ihr: / Sie ist die Krone aller Frauen."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Licht als Bild",
+      "text": "Der Mond macht die Nacht hell, und sein Schein reicht über die ganze Welt. So weit reicht auch das Lob der Dame, so hüllt ihre Güte sie ein. Solche Bilder von Glanz liebt Morungen: Sonne, Mond, Abendstern, Gold, Edelstein, Spiegel."
+    },
+    {
+      "type": "match",
+      "heading": "Alte Wörter, neue Bedeutung",
+      "pairs": [
+        { "left": "wîp", "right": "Frau" },
+        { "left": "êre", "right": "Ehre, Ansehen" },
+        { "left": "mân", "right": "Mond" },
+        { "left": "schîn", "right": "Schein, Licht" },
+        { "left": "zuht", "right": "Anstand" }
+      ],
+      "explanation": "*wîp* war ein normales Wort für eine erwachsene Frau. Unser heutiges „Weib“ klingt dagegen abwertend (unfreundlich, verächtlich)."
+    },
+    {
+      "type": "text",
+      "heading": "Wer war Morungen?",
+      "text": "Er kam wahrscheinlich von der Burg Altmorungen bei Sangerhausen (heute Sachsen-Anhalt). Er war ein Ritter. Sein Gönner, der Markgraf Dietrich von Meißen, zahlte ihm eine Rente (regelmäßiges Geld) für seine Verdienste."
+    },
+    {
+      "type": "timeline",
+      "heading": "Spuren in Leipzig",
+      "events": [
+        { "when": "1213", "text": "Er gibt seine Rente an das Thomaskloster." },
+        { "when": "1217", "text": "Er tritt selbst in das Kloster ein." },
+        { "when": "1218", "text": "Letzte Urkunde mit seinem Namen." },
+        { "when": "danach", "text": "Er stirbt in Leipzig." }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Was meint Morungen mit „si ist aller wîbe ein krône“?",
+      "options": [
+        "Sie ist die beste aller Frauen",
+        "Sie trägt eine goldene Krone",
+        "Sie ist eine Königin",
+        "Sie ist die älteste Frau am Hof"
+      ],
+      "answer": 0,
+      "explanation": "Die Krone ist hier ein Bild: Die Dame steht über allen anderen Frauen. Ob sie eine echte Krone trug, sagt das Lied nicht."
+    }
+  ],
+  "tags": ["minnesang", "morungen", "mittelhochdeutsch", "mond"],
+  "source": {
+    "label": "Wikipedia: Heinrich von Morungen",
+    "url": "https://de.wikipedia.org/wiki/Heinrich_von_Morungen"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-20"
+}
