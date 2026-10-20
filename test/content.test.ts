@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { EDITION_IDS, EDITIONS } from '../shared/editions.ts';
+import { EDITION_IDS, EDITIONS, type Edition } from '../shared/editions.ts';
 import { readContentFiles } from '../scripts/disk.ts';
 import { validateContent } from '../shared/validate.ts';
 import { schemaText, SCHEMA_PATH } from '../scripts/content.ts';
@@ -28,6 +28,16 @@ describe('every edition', () => {
       for (const f of edition.fields) expect(posts.filter((p) => p.field === f).length, f).toBeGreaterThanOrEqual(least);
     });
   }
+
+  it('lists only its own posts, each once, in a set order', () => {
+    for (const id of EDITION_IDS) {
+      const edition: Edition = EDITIONS[id];
+      const order = edition.order ?? [];
+      const ids = new Set(content[id].posts.map((p) => p.id));
+      expect(order.filter((p) => !ids.has(p)), id).toEqual([]);
+      expect(new Set(order).size, id).toBe(order.length);
+    }
+  });
 
   it('keeps post ids unique across editions, as explainers/ is shared', () => {
     const ids = EDITION_IDS.flatMap((id) => content[id].posts.map((p) => p.id));

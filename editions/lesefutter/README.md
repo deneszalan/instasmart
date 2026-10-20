@@ -12,6 +12,7 @@ editions/lesefutter/
 - Run it: `npm run dev -- --mode lesefutter`. Build it: `npm run build` builds both apps; Lesefutter goes to `dist/lesefutter/`.
 - New post: `npm run content -- new <field> <slug> --edition lesefutter`. Check: `npm run content` checks both apps.
 - Fields: `literature` (Literatur), `language` (Sprache), `history` (Geschichte), `music` (Musik), `art` (Kunst). The German names and accounts are in `shared/editions.ts`.
+- The home feed opens with the posts in `order` in `shared/editions.ts`, in that order, the same for everyone and in every round, so a class can read them in sequence. Posts not listed there follow shuffled, so add each new post's id where it belongs.
 - Animations work as in Reckon (`explainers/README.md`); the render finds the post in this folder. Credit them `"Lesefutter · eigene Animation"`.
 
 ## Who reads it
