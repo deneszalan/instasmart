@@ -104,20 +104,7 @@ export const VideoSlide = z
       .optional()
       .describe('Credit for the soundtrack, required when the clip has audio, e.g. "“Mesmerizing Galaxy” Kevin MacLeod (incompetech.com) · CC BY 4.0".'),
     steps: z
-      .array(
-        z
-          .object({
-            start: z.number().min(0),
-            end: z.number().positive(),
-            hold: z
-              .number()
-              .positive()
-              .max(10)
-              .optional()
-              .describe('Seconds the animation holds this step finished, just before its end, so its text can be read (the music plays on). It is rendered into the clip: `npm run explainer` measures the text and sets it.'),
-          })
-          .strict(),
-      )
+      .array(z.object({ start: z.number().min(0), end: z.number().positive() }).strict())
       .min(2)
       .max(24)
       .optional()

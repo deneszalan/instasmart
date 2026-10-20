@@ -28,61 +28,51 @@
       "steps": [
         {
           "start": 0.4,
-          "end": 4.9,
-          "hold": 0.6
+          "end": 4.3
         },
         {
-          "start": 5,
-          "end": 12.4,
-          "hold": 3.8
+          "start": 4.4,
+          "end": 8
         },
         {
-          "start": 12.5,
-          "end": 14.4
+          "start": 8.1,
+          "end": 10
         },
         {
-          "start": 14.5,
-          "end": 19,
-          "hold": 2.9
+          "start": 10.1,
+          "end": 11.7
+        },
+        {
+          "start": 11.8,
+          "end": 14.6
+        },
+        {
+          "start": 14.7,
+          "end": 19
         },
         {
           "start": 19.1,
-          "end": 23.5,
-          "hold": 1.6
+          "end": 24.4
         },
         {
-          "start": 23.6,
-          "end": 29.3,
-          "hold": 1.4
+          "start": 24.6,
+          "end": 27.6
         },
         {
-          "start": 29.4,
-          "end": 35.3,
-          "hold": 0.6
+          "start": 27.8,
+          "end": 31.2
         },
         {
-          "start": 35.5,
-          "end": 39.3,
-          "hold": 0.8
+          "start": 31.3,
+          "end": 35
         },
         {
-          "start": 39.5,
-          "end": 45.3,
-          "hold": 2.4
+          "start": 35.2,
+          "end": 41.3
         },
         {
-          "start": 45.4,
-          "end": 50.8,
-          "hold": 1.7
-        },
-        {
-          "start": 51,
-          "end": 57.1
-        },
-        {
-          "start": 57.3,
-          "end": 65.3,
-          "hold": 3
+          "start": 41.5,
+          "end": 46.5
         }
       ]
     },

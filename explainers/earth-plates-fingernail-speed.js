@@ -471,7 +471,7 @@ function sceneD(t) {
   ctx.strokeStyle = 'rgba(255,240,220,0.32)'; ctx.lineWidth = 2; ctx.lineCap = 'round';
   [500, 540, 580, 650, 690].forEach((y, i) => {
     ctx.beginPath();
-    for (let x = L; x <= R; x += 8) ctx.lineTo(x, y + 7 * Math.sin(x / 70 + i * 1.7) * Math.sin(ambient * 0.8 + i));
+    for (let x = L; x <= R; x += 8) ctx.lineTo(x, y + 7 * Math.sin(x / 70 + i * 1.7) * Math.sin(t * 0.8 + i));
     ctx.stroke();
   });
   // two rigid plates moving apart; the youngest floor, at the ridge, is warmest
@@ -490,7 +490,7 @@ function sceneD(t) {
     ctx.fillStyle = pg; ctx.fill();
     ctx.save(); ctx.clip();
     ctx.strokeStyle = 'rgba(74,52,36,0.14)'; ctx.lineWidth = 1.4;
-    const shift = (((ambient * 16) % 26) + 26) % 26;
+    const shift = (((t * 16) % 26) + 26) % 26;
     ctx.beginPath();
     for (let x = -60; x < W + 60; x += 26) {
       const xx = side < 0 ? x - shift : x + shift;
@@ -553,15 +553,10 @@ function sceneE(t) {
   });
 }
 
-// The clip's own time, from tools.clock: it runs on while a step holds for reading, so the decorative
-// motion below uses it; the story itself uses t.
-let ambient = 0;
-
 Kit.scene({
   width: W, height: H, duration: 53.2,
   fonts: [{ family: F, file: 'Bitter.woff2', weight: '400 800' }],
   draw(t, tools) {
-    ambient = tools.clock;
     k = tools; ctx = tools.ctx;
     background();
     const scenes = [[sceneA, T.A, 0], [sceneB, T.B], [sceneC, T.C], [sceneD, T.D], [sceneE, T.E, 0.35, 0]];
