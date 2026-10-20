@@ -1,6 +1,6 @@
 import { FIELD_IDS } from './fields.ts';
 import { formatIssues, localMedia, MEDIA_EXTENSIONS, Post, VIDEO_EXTENSIONS } from './schema.ts';
-import { readMp4, videoProblems } from './video.ts';
+import { readMp4, STEP_STILL_BEFORE_END, stepStill, videoProblems } from './video.ts';
 
 /** A file in the repository, addressed by its repo-relative path. */
 export interface ContentFile {
@@ -94,9 +94,17 @@ export function mediaProblems(name: string, bytes: Uint8Array): string[] {
 }
 
 /** A step may start up to this long after a keyframe: decoding that far is quick. */
-const STEP_KEYFRAME_SLACK = 0.5;
+const START_KEYFRAME_SLACK = 1;
+/** A step's still may come up to this long after a keyframe: three frames at 30 fps. */
+const STILL_KEYFRAME_SLACK = 0.1;
 /** Most seconds between keyframes in a clip with steps. */
 const MAX_KEYFRAME_GAP = 4;
+
+/** "the step at 4.5 s" or "3 steps (0.4 s, 4.5 s, 8.2 s, …)" */
+const stepList = (steps: { start: number }[]) =>
+  steps.length === 1
+    ? `the step at ${steps[0].start} s`
+    : `${steps.length} steps (${steps.slice(0, 3).map((step) => `${step.start} s`).join(', ')}${steps.length > 3 ? ', …' : ''})`;
 
 /** Checks that need the clip itself: its soundtrack against the music credit, the steps against its length and keyframes. */
 function clipProblems(post: Post, mediaBytes: Map<string, Uint8Array>): string[] {
@@ -123,12 +131,17 @@ function clipProblems(post: Post, mediaBytes: Map<string, Uint8Array>): string[]
     if (last && last.end > info.durationSeconds + 0.1) {
       problems.push(`slides[${i}]: the last step ends at ${last.end} s, after the ${info.durationSeconds.toFixed(1)} s clip`);
     }
-    // Readers jump to steps and drag through explainers, and a player can only start decoding at a keyframe.
+    // Readers jump between steps and drag through explainers, and a player can only start decoding at a
+    // keyframe. Playing, a jump lands on a step's start; paused, on its still.
     if (steps.length && info.keyframes.length) {
-      const slow = steps.filter((step) => !info.keyframes.some((k) => k <= step.start + 0.01 && k >= step.start - STEP_KEYFRAME_SLACK));
-      if (slow.length) {
-        const which = slow.length === 1 ? `the step at ${slow[0].start} s` : `${slow.length} steps (${slow.slice(0, 3).map((step) => `${step.start} s`).join(', ')}${slow.length > 3 ? ', …' : ''})`;
-        problems.push(`slides[${i}]: no keyframe as ${which} ${slow.length === 1 ? 'starts' : 'start'}, so jumping there is slow. \`npm run explainer\` puts one at each step; with ffmpeg, add \`-force_key_frames <the start times>\``);
+      const near = (t: number, slack: number) => info.keyframes.some((k) => k <= t + 0.01 && k >= t - slack);
+      const slowStart = steps.filter((step) => !near(step.start, START_KEYFRAME_SLACK));
+      if (slowStart.length) {
+        problems.push(`slides[${i}]: no keyframe within ${START_KEYFRAME_SLACK} s before ${stepList(slowStart)} ${slowStart.length === 1 ? 'starts' : 'start'}, so jumping there is slow. \`npm run explainer\` encodes the keyframes; with ffmpeg, use \`-force_key_frames <times>\``);
+      }
+      const slowStill = steps.filter((step) => !near(stepStill(step), STILL_KEYFRAME_SLACK));
+      if (slowStill.length) {
+        problems.push(`slides[${i}]: no keyframe ${STEP_STILL_BEFORE_END} s before ${stepList(slowStill)} ${slowStill.length === 1 ? 'ends, where a paused clip shows it' : 'end, where a paused clip shows them'}, so stepping while paused is slow. \`npm run explainer\` encodes the keyframes; with ffmpeg, use \`-force_key_frames <times>\``);
       }
       const gap = Math.max(...info.keyframes.concat(info.durationSeconds).map((k, j, all) => (j ? k - all[j - 1] : k)));
       if (gap > MAX_KEYFRAME_GAP + 0.05) {
