@@ -7,6 +7,12 @@
   "body": "After the Second World War, Hungary suffered the worst hyperinflation on record. At its peak, in July 1946, it took about 15 hours for prices to double. The central bank issued a 100 quintillion pengő note, its largest ever, before replacing the pengő with the forint in August 1946.",
   "slides": [
     {
+      "type": "reveal",
+      "prompt": "What was the face value of the biggest banknote Hungary issued?",
+      "answer": "100 quintillion pengő",
+      "detail": "Issued on 11 July 1946. Notes for ten times as much were printed but never issued, and the forint replaced the pengő in August 1946."
+    },
+    {
       "type": "video",
       "src": "pengo-clock.mp4",
       "poster": "pengo-clock.jpg",
@@ -44,12 +50,6 @@
       "unit": "days",
       "note": "Hours for Hungary (14.82) and Zimbabwe (24.35) turned into days; Wikipedia’s 2012 table",
       "explanation": "Hungary’s prices doubled every 15 hours and Zimbabwe’s about every day. Germany’s famous 1923 inflation was far slower at its peak: 3.65 days."
-    },
-    {
-      "type": "reveal",
-      "prompt": "What was the face value of the biggest banknote Hungary issued?",
-      "answer": "100 quintillion pengő",
-      "detail": "Issued on 11 July 1946. Notes for ten times as much were printed but never issued, and the forint replaced the pengő in August 1946."
     },
     {
       "type": "scramble",
