@@ -454,6 +454,19 @@ p {
   margin: 0;
 }
 
+/* The clip's speed, in the story header. */
+.story__speed {
+  min-width: 44px;
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
 .story__open {
   display: inline-flex;
   align-items: center;
@@ -3168,9 +3181,10 @@ p {
 
 /* Progress and seeking: a native range input, so it works with touch, mouse and keyboard. */
 .video__bar {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   font-size: 12px;
   font-variant-numeric: tabular-nums;
 }
@@ -3185,9 +3199,30 @@ p {
   text-align: right;
 }
 
+/* Holds the seek bar and the step marks over it. */
+.video__track {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+}
+
+.video__tick {
+  position: absolute;
+  top: 50%;
+  width: 2px;
+  height: 8px;
+  margin: -4px 0 0 -1px;
+  border-radius: 1px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
 .video__seek {
   --p: 0%;
   flex: 1;
+  min-width: 0;
   height: 28px;
   margin: 0;
   background: transparent;
@@ -3276,6 +3311,116 @@ p {
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.45);
   color: #fff;
+}
+
+/* Previous / next step. */
+.video__btn {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.video__btn--ready {
+  background: #fff;
+  color: #111;
+  animation: ready 1.4s ease-in-out infinite;
+}
+
+@keyframes ready {
+  50% {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.25);
+  }
+}
+
+.video__btn:active,
+.video__speed:active {
+  transform: scale(0.9);
+}
+
+.video__speed {
+  flex: none;
+  min-width: 38px;
+  height: 24px;
+  padding: 0 6px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.video__speed[aria-expanded='true'] {
+  background: #fff;
+  color: #111;
+}
+
+/* Speed and step mode, above the bar's right end. */
+.video__menu {
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  bottom: calc(100% + 8px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: min(250px, 100%);
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(18, 18, 18, 0.94);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 13px;
+}
+
+.video__menu-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.video__rates {
+  display: flex;
+  gap: 4px;
+}
+
+.video__rates button {
+  flex: 1;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.video__rates button[aria-pressed='true'] {
+  background: #fff;
+  color: #111;
+}
+
+.video__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+
+.video__toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: #fff;
+  cursor: pointer;
 }
 
 .video__credits {

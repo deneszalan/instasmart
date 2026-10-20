@@ -14,7 +14,57 @@
       "fit": "cover",
       "animation": true,
       "credit": "Reckon · original animation",
-      "music": "“Happy Happy Game Show” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Happy Happy Game Show” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.4,
+          "end": 4.5
+        },
+        {
+          "start": 4.6,
+          "end": 6.9
+        },
+        {
+          "start": 7,
+          "end": 11.7
+        },
+        {
+          "start": 11.8,
+          "end": 15.3
+        },
+        {
+          "start": 15.4,
+          "end": 18.5
+        },
+        {
+          "start": 18.7,
+          "end": 22
+        },
+        {
+          "start": 22.1,
+          "end": 26.5
+        },
+        {
+          "start": 26.6,
+          "end": 30.7
+        },
+        {
+          "start": 30.8,
+          "end": 34.5
+        },
+        {
+          "start": 34.6,
+          "end": 38.7
+        },
+        {
+          "start": 38.8,
+          "end": 43.7
+        },
+        {
+          "start": 43.8,
+          "end": 48.9
+        }
+      ]
     },
     {
       "type": "text",

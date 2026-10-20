@@ -55,7 +55,53 @@
       "fit": "cover",
       "animation": true,
       "credit": "Reckon · original animation",
-      "music": "“Mesmerize” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Mesmerize” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.6,
+          "end": 4.8
+        },
+        {
+          "start": 5,
+          "end": 9.4
+        },
+        {
+          "start": 9.8,
+          "end": 14.6
+        },
+        {
+          "start": 14.8,
+          "end": 20.2
+        },
+        {
+          "start": 20.8,
+          "end": 25.2
+        },
+        {
+          "start": 25.4,
+          "end": 30
+        },
+        {
+          "start": 30.4,
+          "end": 34.4
+        },
+        {
+          "start": 34.6,
+          "end": 39.6
+        },
+        {
+          "start": 39.9,
+          "end": 45.1
+        },
+        {
+          "start": 45.3,
+          "end": 49.8
+        },
+        {
+          "start": 50.2,
+          "end": 54.4
+        }
+      ]
     },
     {
       "type": "timeline",

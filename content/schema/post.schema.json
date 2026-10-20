@@ -1409,6 +1409,30 @@
                 "type": "string",
                 "minLength": 1,
                 "maxLength": 160
+              },
+              "steps": {
+                "description": "The clip's steps in order, in seconds: when each caption or stage appears and when it goes. The player marks them on the seek bar, jumps between them and can pause at the end of each. `npm run explainer` writes them.",
+                "minItems": 2,
+                "maxItems": 24,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "start": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "end": {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    }
+                  },
+                  "required": [
+                    "start",
+                    "end"
+                  ],
+                  "additionalProperties": false
+                }
               }
             },
             "required": [

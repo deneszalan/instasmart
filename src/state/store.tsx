@@ -17,7 +17,8 @@ export interface LearnState {
   storiesViewed: Record<string, string>;
   /** `${postId}#${slideIndex}` → result of a quiz, guess or ordering puzzle (null when it has no right answer). */
   challenges: Record<string, { correct: boolean | null; at: number }>;
-  settings: { wiki: boolean; theme: Theme };
+  /** videoRate: playback speed for clips; stepMode: pause explainers at the end of each step. */
+  settings: { wiki: boolean; theme: Theme; videoRate: number; stepMode: boolean };
 }
 
 type Action =
@@ -40,7 +41,7 @@ export const initialState: LearnState = {
   activeDays: [],
   storiesViewed: {},
   challenges: {},
-  settings: { wiki: true, theme: 'system' },
+  settings: { wiki: true, theme: 'system', videoRate: 1, stepMode: false },
 };
 
 export function localDay(date = new Date()): string {

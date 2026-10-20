@@ -93,6 +93,15 @@ describe('video slides', () => {
     ]);
   });
 
+  it('checks the steps against each other and the clip', () => {
+    const silent = mp4({ audio: null });
+    const steps = (...pairs: [number, number][]) => ({ ...slide, steps: pairs.map(([start, end]) => ({ start, end })) });
+    expect(check(steps([0.4, 4], [4.5, 11.9]), silent)).toEqual([]);
+    expect(check(steps([0.4, 4], [6, 5]), silent)).toEqual(['slides[0].steps[1]: "end" must be after "start"']);
+    expect(check(steps([5, 8], [1, 4]), silent)).toEqual(['slides[0].steps[1]: steps must be in order of "start"']);
+    expect(check(steps([0.4, 4], [5, 14]), silent)).toEqual(['slides[0]: the last step ends at 14 s, after the 12.0 s clip']);
+  });
+
   it('needs the clip and its still to be present', () => {
     const problems = validateContent([{ path: 'content/posts/space/space-test-post.json', bytes: new TextEncoder().encode(post(slide)) }]).problems;
     expect(problems.map((p) => p.message)).toEqual([

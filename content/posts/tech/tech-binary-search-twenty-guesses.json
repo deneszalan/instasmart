@@ -24,7 +24,57 @@
       "fit": "cover",
       "animation": true,
       "credit": "Reckon · original animation",
-      "music": "“Blippy Trance” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Blippy Trance” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.4,
+          "end": 4.3
+        },
+        {
+          "start": 4.4,
+          "end": 8
+        },
+        {
+          "start": 8.1,
+          "end": 10
+        },
+        {
+          "start": 10.1,
+          "end": 11.7
+        },
+        {
+          "start": 11.8,
+          "end": 14.6
+        },
+        {
+          "start": 14.7,
+          "end": 19
+        },
+        {
+          "start": 19.1,
+          "end": 24.4
+        },
+        {
+          "start": 24.6,
+          "end": 27.6
+        },
+        {
+          "start": 27.8,
+          "end": 31.2
+        },
+        {
+          "start": 31.3,
+          "end": 35
+        },
+        {
+          "start": 35.2,
+          "end": 41.3
+        },
+        {
+          "start": 41.5,
+          "end": 46.5
+        }
+      ]
     },
     {
       "type": "chart",

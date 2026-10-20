@@ -41,7 +41,61 @@
       "fit": "cover",
       "animation": true,
       "credit": "Reckon · original animation",
-      "music": "“Gymnopedie No. 1” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Gymnopedie No. 1” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.4,
+          "end": 4.8
+        },
+        {
+          "start": 4.9,
+          "end": 9.8
+        },
+        {
+          "start": 10,
+          "end": 13.6
+        },
+        {
+          "start": 13.8,
+          "end": 18.2
+        },
+        {
+          "start": 18.4,
+          "end": 21.4
+        },
+        {
+          "start": 21.6,
+          "end": 25.4
+        },
+        {
+          "start": 25.6,
+          "end": 29.4
+        },
+        {
+          "start": 29.6,
+          "end": 33.4
+        },
+        {
+          "start": 33.6,
+          "end": 38.2
+        },
+        {
+          "start": 38.5,
+          "end": 42
+        },
+        {
+          "start": 42.2,
+          "end": 46.4
+        },
+        {
+          "start": 46.6,
+          "end": 50.2
+        },
+        {
+          "start": 50.6,
+          "end": 54.4
+        }
+      ]
     },
     {
       "type": "stat",

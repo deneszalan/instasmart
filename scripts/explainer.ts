@@ -2,7 +2,9 @@
 //
 //   npm run explainer -- <post-id> [--name explainer] [--music <audio file> --music-start <s|auto>] [--still <s>]
 //   npm run explainer -- <post-id> --preview 2,9.5,20      PNG stills to check the layout
+//   npm run explainer -- <post-id> --steps                 only (re)write the steps of the post's animation slide
 //
+// The clip's steps are the scene's captions; they are written into the post's slide for this clip.
 // Writes content/media/<post-id>/<name>.mp4 and <name>.jpg, checks both with the content validator
 // and prints the slide JSON. Needs ffmpeg and a Chromium: set CHROMIUM_PATH, or run
 // `npx playwright-core install chromium` once.
@@ -36,6 +38,23 @@ function ffmpeg(args: string[]): void {
   if (r.status !== 0) throw new Error(`ffmpeg failed:\n${r.stderr}`);
 }
 
+interface Step {
+  start: number;
+  end: number;
+}
+
+/** Put the steps into the post's slide for this clip (or its animated slide); returns the file it changed. */
+function writeSteps(post: string, steps: Step[], src?: string): string {
+  if (steps.length < 2) throw new Error('the scene has fewer than two captions, so it has no steps');
+  const file = join(root, 'content', 'posts', post.split('-')[0], `${post}.json`);
+  const data = JSON.parse(readFileSync(file, 'utf8')) as { slides?: { type: string; src?: string; animation?: boolean; steps?: Step[] }[] };
+  const slide = data.slides?.find((s) => s.type === 'video' && (src ? s.src === src : s.animation));
+  if (!slide) throw new Error(`${file} has no ${src ? `slide for ${src}` : 'animated video slide'}`);
+  slide.steps = steps;
+  writeFileSync(file, `${JSON.stringify(data, null, 2)}\n`);
+  return file.slice(root.length + 1);
+}
+
 async function main(): Promise<number> {
   const { values, positionals } = parseArgs({
     allowPositionals: true,
@@ -45,6 +64,7 @@ async function main(): Promise<number> {
       'music-start': { type: 'string', default: 'auto' },
       still: { type: 'string', default: '1' },
       preview: { type: 'string' },
+      steps: { type: 'boolean' },
     },
   });
   const post = positionals[0];
@@ -74,6 +94,33 @@ async function main(): Promise<number> {
     const frame = async (t: number) => Buffer.from(String(await page.evaluate(
       `window.render(${t}), document.getElementById('c').toDataURL('image/png').split(',')[1]`)), 'base64');
     const fail = () => { if (errors.length) throw new Error(`the scene threw:\n${errors.join('\n')}`); };
+
+    // Steps are the scene's captions: the cue lists kit captions drew, or a top-level CUES list.
+    const readSteps = async (): Promise<Step[]> => {
+      const raw = (await page.evaluate(`(() => {
+        const out = [];
+        const add = (cues) => { for (const c of cues) if (Array.isArray(c) && typeof c[0] === 'number' && typeof c[1] === 'number') out.push([c[0], c[1]]); };
+        for (const cues of window.__cues ?? []) add(cues);
+        try { if (typeof CUES !== 'undefined') add(CUES); } catch {}
+        return out;
+      })()`)) as [number, number][];
+      const round = (x: number) => Math.round(x * 100) / 100;
+      const byStart = new Map<number, Step>();
+      for (const [a, b] of raw) {
+        const step = { start: round(a), end: round(Math.min(b, duration)) };
+        if (step.end > step.start && !byStart.has(step.start)) byStart.set(step.start, step);
+      }
+      return [...byStart.values()].sort((x, y) => x.start - y.start);
+    };
+
+    if (values.steps) {
+      for (let t = 0; t < duration; t += 0.25) await page.evaluate(`window.render(${t})`);
+      fail();
+      const steps = await readSteps();
+      const where = writeSteps(post, steps);
+      console.log(`${steps.length} steps written to ${where}`);
+      return 0;
+    }
 
     if (values.preview) {
       const dir = join(tmpdir(), 'explainer-preview', post);
@@ -135,6 +182,13 @@ async function main(): Promise<number> {
       console.error(`\n${problems.join('\n')}`);
       return 1;
     }
+    const steps = await readSteps();
+    try {
+      console.log(`${steps.length} steps written to ${writeSteps(post, steps, `${name}.mp4`)}`);
+      return 0;
+    } catch {
+      // The post has no slide for this clip yet.
+    }
     const slide = {
       type: 'video',
       src: `${name}.mp4`,
@@ -144,6 +198,7 @@ async function main(): Promise<number> {
       animation: true,
       credit: 'Reckon · original animation',
       ...(values.music ? { music: '<“Title” artist (source) · licence>' } : {}),
+      ...(steps.length >= 2 ? { steps } : {}),
     };
     console.log(`\nSlide to add to the post:\n${JSON.stringify(slide, null, 2)}`);
     return 0;

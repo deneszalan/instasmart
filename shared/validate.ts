@@ -94,20 +94,31 @@ export function mediaProblems(name: string, bytes: Uint8Array): string[] {
 }
 
 /** Every soundtrack must be credited, and every credited soundtrack must exist. */
-function soundtrackProblems(post: Post, mediaBytes: Map<string, Uint8Array>): string[] {
+/** Checks that need the clip itself: its soundtrack against the music credit, its length against the steps. */
+function clipProblems(post: Post, mediaBytes: Map<string, Uint8Array>): string[] {
   const problems: string[] = [];
   (post.slides ?? []).forEach((slide, i) => {
     if (slide.type !== 'video') return;
+    const steps = slide.steps ?? [];
+    steps.forEach((step, j) => {
+      if (step.end <= step.start) problems.push(`slides[${i}].steps[${j}]: "end" must be after "start"`);
+      if (j > 0 && step.start < steps[j - 1].start) problems.push(`slides[${i}].steps[${j}]: steps must be in order of "start"`);
+    });
     const bytes = mediaBytes.get(mediaPath(post.id, slide.src));
     if (!bytes) return;
-    let hasAudio: boolean;
+    let info: ReturnType<typeof readMp4>;
     try {
-      hasAudio = readMp4(bytes).audioCodec !== null;
+      info = readMp4(bytes);
     } catch {
       return; // The file's own problems are reported with the file.
     }
+    const hasAudio = info.audioCodec !== null;
     if (hasAudio && !slide.music) problems.push(`slides[${i}]: "${slide.src}" has a soundtrack, so credit it in "music" (or remove the audio)`);
     if (!hasAudio && slide.music) problems.push(`slides[${i}]: "music" is credited but "${slide.src}" has no audio track`);
+    const last = steps.at(-1);
+    if (last && last.end > info.durationSeconds + 0.1) {
+      problems.push(`slides[${i}]: the last step ends at ${last.end} s, after the ${info.durationSeconds.toFixed(1)} s clip`);
+    }
   });
   return problems;
 }
@@ -186,7 +197,7 @@ export function validateContent(files: ContentFile[]): { posts: Post[]; problems
         problems.push({ file: file.path, message: `file "${name}" is missing: add it at ${mediaPath(post.id, name)}` });
       }
     }
-    for (const message of soundtrackProblems(post, mediaBytes)) problems.push({ file: file.path, message });
+    for (const message of clipProblems(post, mediaBytes)) problems.push({ file: file.path, message });
     if (own.length === 0) posts.push(post);
   }
 

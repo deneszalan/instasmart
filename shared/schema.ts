@@ -103,6 +103,14 @@ export const VideoSlide = z
     music: text(160)
       .optional()
       .describe('Credit for the soundtrack, required when the clip has audio, e.g. "“Mesmerizing Galaxy” Kevin MacLeod (incompetech.com) · CC BY 4.0".'),
+    steps: z
+      .array(z.object({ start: z.number().min(0), end: z.number().positive() }).strict())
+      .min(2)
+      .max(24)
+      .optional()
+      .describe(
+        'The clip\'s steps in order, in seconds: when each caption or stage appears and when it goes. The player marks them on the seek bar, jumps between them and can pause at the end of each. `npm run explainer` writes them.',
+      ),
   })
   .strict();
 

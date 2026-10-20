@@ -14,7 +14,69 @@
       "fit": "cover",
       "animation": true,
       "credit": "Reckon · original animation",
-      "music": "“Digital Lemonade” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Digital Lemonade” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.4,
+          "end": 3.6
+        },
+        {
+          "start": 3.7,
+          "end": 7.2
+        },
+        {
+          "start": 7.4,
+          "end": 10.2
+        },
+        {
+          "start": 10.3,
+          "end": 12.9
+        },
+        {
+          "start": 13,
+          "end": 17
+        },
+        {
+          "start": 18.4,
+          "end": 20.4
+        },
+        {
+          "start": 20.5,
+          "end": 22.9
+        },
+        {
+          "start": 23,
+          "end": 26.2
+        },
+        {
+          "start": 26.4,
+          "end": 29.9
+        },
+        {
+          "start": 30,
+          "end": 34.3
+        },
+        {
+          "start": 34.6,
+          "end": 39
+        },
+        {
+          "start": 39.1,
+          "end": 42.4
+        },
+        {
+          "start": 42.6,
+          "end": 47
+        },
+        {
+          "start": 47.1,
+          "end": 50.8
+        },
+        {
+          "start": 51,
+          "end": 54.8
+        }
+      ]
     },
     {
       "type": "flow",
