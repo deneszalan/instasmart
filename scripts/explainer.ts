@@ -218,7 +218,7 @@ async function main(): Promise<number> {
       ...mediaProblems(`${name}.jpg`, readFileSync(poster)).map((p) => `${name}.jpg: ${p}`),
     ];
     const info = readMp4(readFileSync(clip));
-    console.log(`Wrote ${mediaPath(post, `${name}.mp4`)} (${(statSync(clip).size / 1e6).toFixed(2)} MB, ${info.durationSeconds.toFixed(1)} s, ${info.width}×${info.height}${info.audioCodec ? `, music from ${musicStart} s` : ', silent'})`);
+    console.log(`Wrote ${mediaPath(post, `${name}.mp4`)} (${(statSync(clip).size / 1e6).toFixed(2)} MB, ${info.durationSeconds.toFixed(1)} s, ${info.width}×${info.height}${values['keep-sound'] ? ', soundtrack kept' : info.audioCodec ? `, music from ${musicStart} s` : ', silent'})`);
     console.log(`Wrote ${mediaPath(post, `${name}.jpg`)} (still at ${values.still} s)`);
     if (problems.length) {
       console.error(`\n${problems.join('\n')}`);
