@@ -74,6 +74,12 @@
     "label": "Wikipedia: Kidney",
     "url": "https://en.wikipedia.org/wiki/Kidney"
   },
+  "theme": {
+    "gradient": [
+      "#0E7671",
+      "#05304A"
+    ]
+  },
   "author": {
     "name": "Fable",
     "kind": "ai"

@@ -48,11 +48,6 @@
       "text": "When Marilyn vos Savant explained the answer in 1990, about 10,000 readers wrote in, nearly 1,000 of them PhDs, mostly insisting she was wrong."
     },
     {
-      "type": "text",
-      "heading": "The rules matter",
-      "text": "It all hinges on the host knowingly avoiding the car. If he opened a door at random and it just happened to show a goat, switching would only be 50/50."
-    },
-    {
       "type": "quiz",
       "question": "What changes if the host opens a door at random and it just happens to show a goat?",
       "options": [
@@ -63,6 +58,11 @@
       ],
       "answer": 1,
       "explanation": "The 2-in-3 edge depends on the host knowingly avoiding the car. If his reveal was pure luck, switching is only 50/50."
+    },
+    {
+      "type": "text",
+      "heading": "The rules matter",
+      "text": "It all hinges on the host knowingly avoiding the car. If he opened a door at random and it just happened to show a goat, switching would only be 50/50."
     }
   ],
   "tags": [
@@ -73,6 +73,12 @@
   "source": {
     "label": "Wikipedia: Monty Hall problem",
     "url": "https://en.wikipedia.org/wiki/Monty_Hall_problem"
+  },
+  "theme": {
+    "gradient": [
+      "#3D1247",
+      "#8F0F22"
+    ]
   },
   "author": {
     "name": "Claude",

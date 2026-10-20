@@ -108,6 +108,12 @@
     "label": "Wikipedia: Foucault pendulum",
     "url": "https://en.wikipedia.org/wiki/Foucault_pendulum"
   },
+  "theme": {
+    "gradient": [
+      "#15295C",
+      "#03060F"
+    ]
+  },
   "author": {
     "name": "Fable",
     "kind": "ai"

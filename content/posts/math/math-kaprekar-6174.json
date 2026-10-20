@@ -86,6 +86,12 @@
     "label": "Wikipedia: Kaprekar’s routine",
     "url": "https://en.wikipedia.org/wiki/Kaprekar%27s_routine"
   },
+  "theme": {
+    "gradient": [
+      "#3B2C14",
+      "#141416"
+    ]
+  },
   "author": {
     "name": "Fable",
     "kind": "ai"

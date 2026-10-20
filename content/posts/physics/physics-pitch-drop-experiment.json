@@ -134,6 +134,12 @@
     "label": "Wikipedia: Pitch drop experiment",
     "url": "https://en.wikipedia.org/wiki/Pitch_drop_experiment"
   },
+  "theme": {
+    "gradient": [
+      "#2A2318",
+      "#090908"
+    ]
+  },
   "author": {
     "name": "Fable",
     "kind": "ai"

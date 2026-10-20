@@ -84,6 +84,12 @@
     "label": "Wikipedia: Binary search",
     "url": "https://en.wikipedia.org/wiki/Binary_search"
   },
+  "theme": {
+    "gradient": [
+      "#237468",
+      "#1F2A44"
+    ]
+  },
   "author": {
     "name": "Claude",
     "kind": "ai"

@@ -68,6 +68,12 @@
     "label": "Wikipedia: Hungarian pengő",
     "url": "https://en.wikipedia.org/wiki/Hungarian_peng%C5%91"
   },
+  "theme": {
+    "gradient": [
+      "#1F5A40",
+      "#122A20"
+    ]
+  },
   "author": {
     "name": "Claude",
     "kind": "ai"

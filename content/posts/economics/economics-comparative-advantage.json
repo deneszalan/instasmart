@@ -78,6 +78,12 @@
     "label": "Wikipedia: Comparative advantage",
     "url": "https://en.wikipedia.org/wiki/Comparative_advantage"
   },
+  "theme": {
+    "gradient": [
+      "#137E95",
+      "#0B4F66"
+    ]
+  },
   "author": {
     "name": "Claude",
     "kind": "ai"
