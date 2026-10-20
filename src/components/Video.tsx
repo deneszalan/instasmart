@@ -5,14 +5,19 @@ import { inline } from '../lib/markdown';
 import { cardGradient, gradientStyle } from './Media';
 import { sound } from '../lib/sound';
 import { useStore } from '../state/store';
-import { holdStart, stepStill } from '../../shared/video.ts';
+import { stepStill } from '../../shared/video.ts';
 import { clipSeconds } from '../data/library';
 
 type VideoSlide = Extract<Slide, { type: 'video' }>;
-type Step = NonNullable<VideoSlide['steps']>[number];
 
 /** Speeds the reader can pick. */
-export const SPEEDS = [0.75, 1, 1.25, 1.5, 2];
+export const SPEEDS = [0.75, 0.9, 1, 1.25, 1.5, 2];
+
+/** Animations carry captions to read, so unless the reader picks a speed they play a little slower. */
+export const ANIMATION_SPEED = 0.9;
+
+/** The speed a clip plays at: the one the reader picked, or the clip's own default. */
+export const clipSpeed = (picked: number | null, slide: { animation?: boolean }) => picked ?? (slide.animation ? ANIMATION_SPEED : 1);
 
 /** Taps this close to the left or right edge (as a share of the width) step back or forward. */
 const EDGE = 0.25;
@@ -75,7 +80,7 @@ export function VideoSlideView({ slide, card, start }: { slide: VideoSlide; card
   const hasSound = !!slide.music;
   const wantsSound = () => hasSound && (animation ? sound.wanted !== false : sound.wanted === true);
   const { state, updateSettings } = useStore();
-  const rate = state.settings.videoRate;
+  const rate = clipSpeed(state.settings.speed, slide);
   const steps = slide.steps ?? [];
   const stepMode = state.settings.stepMode && steps.length > 0;
   const [menuOpen, setMenuOpen] = useState(false);
@@ -83,8 +88,6 @@ export function VideoSlideView({ slide, card, start }: { slide: VideoSlide; card
   const [stoppedAtStep, setStoppedAtStep] = useState(false);
   const menu = useRef<HTMLDivElement>(null);
   const speedButton = useRef<HTMLButtonElement>(null);
-  // The step step mode stopped at; playing on skips the rest of its reading hold.
-  const stoppedStep = useRef<Step | null>(null);
   // A seek asked for while the clip is still finding the last one; it waits its turn.
   const pending = useRef<number | null>(null);
   // The arrow that flashes on the side tapped; n restarts its animation.
@@ -175,15 +178,14 @@ export function VideoSlideView({ slide, card, start }: { slide: VideoSlide; card
     if (elapsed.current) elapsed.current.textContent = clock(time);
   }, []);
 
-  // Runs every frame while playing. In step mode, it also stops once a step is finished: where its
-  // reading hold begins, or at its still.
+  // Runs every frame while playing. In step mode, it also stops once a step's caption has been on screen to its end.
   const paint = useCallback(() => {
     const v = video.current;
     if (!v || !v.duration) return;
     const now = live.current;
     if (now.stepMode && !v.paused) {
       for (const step of now.steps) {
-        const stop = holdStart(step);
+        const stop = stepStill(step);
         // A big jump means the reader seeked past it, which shouldn't count.
         if (now.lastTime < stop && v.currentTime >= stop && v.currentTime - now.lastTime < 1) {
           // Paused where it is, a frame past the stop, so playing on doesn't stop here again.
@@ -191,7 +193,6 @@ export function VideoSlideView({ slide, card, start }: { slide: VideoSlide; card
           // Counts as the reader's pause, so coming back to the tab or the slide doesn't play on.
           setWantPlay(false);
           setStoppedAtStep(true);
-          stoppedStep.current = step;
           break;
         }
       }
@@ -217,7 +218,6 @@ export function VideoSlideView({ slide, card, start }: { slide: VideoSlide; card
     if (!v) return;
     live.current.lastTime = time;
     setStoppedAtStep(false);
-    stoppedStep.current = null;
     setStarted(true);
     setEnded(false);
     setLeftAt(null);
@@ -255,10 +255,6 @@ export function VideoSlideView({ slide, card, start }: { slide: VideoSlide; card
     setWantPlay(true);
     const v = video.current;
     if (!v) return;
-    // After a step-mode stop the reader has had their time, so skip the rest of the step's hold.
-    const held = stoppedStep.current;
-    stoppedStep.current = null;
-    if (held?.hold) jump(stepStill(held));
     v.muted = !wantsSound();
     setMuted(v.muted);
     v.play().catch(() => {
@@ -473,7 +469,7 @@ export function VideoSlideView({ slide, card, start }: { slide: VideoSlide; card
               <span className="video__menu-label">Speed</span>
               <div className="video__rates">
                 {SPEEDS.map((speed) => (
-                  <button key={speed} aria-pressed={speed === rate} onClick={() => updateSettings({ videoRate: speed })}>
+                  <button key={speed} aria-pressed={speed === rate} onClick={() => updateSettings({ speed })}>
                     {speed}×
                   </button>
                 ))}

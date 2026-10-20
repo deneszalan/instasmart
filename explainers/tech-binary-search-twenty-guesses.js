@@ -100,7 +100,7 @@ function sceneA(t) {
   });
   const sx = BAR.x0 + (SECRET / 1e6) * BW;
   const pop = seg(t, 1.5, 2.0);
-  secretCard(sx, BAR.y - 8 + Math.sin(ambient * 3) * 3, '?', pop, 0.6 + 0.4 * back(pop));
+  secretCard(sx, BAR.y - 8 + Math.sin(t * 3) * 3, '?', pop, 0.6 + 0.4 * back(pop));
 
   // the quiz
   const opts = [['1,000', 4.6], ['100', 4.8], ['20', 5.0]];
@@ -183,7 +183,7 @@ function sceneB(t) {
   // the secret, still hidden: it is always inside the half we keep
   const us = (SECRET - st.lo + 0.5) / (st.hi - st.lo + 1);
   const foundP = found ? seg(p, 0.3, 0.5) : 0;
-  secretCard(X(us), BAR.y - 8 + Math.sin(ambient * 3) * 3 * (1 - foundP), found && foundP > 0.5 ? fmt(SECRET) : '?', 1, 1 + 0.12 * Math.sin(Math.PI * foundP), found && foundP > 0.5);
+  secretCard(X(us), BAR.y - 8 + Math.sin(t * 3) * 3 * (1 - foundP), found && foundP > 0.5 ? fmt(SECRET) : '?', 1, 1 + 0.12 * Math.sin(Math.PI * foundP), found && foundP > 0.5);
 
   // the guess: a pin up into the bar from below, with its number
   const drop = eout(seg(p, 0, 0.3));
@@ -303,15 +303,10 @@ function sceneF(t) {
   });
 }
 
-// The clip's own time, from tools.clock: it runs on while a step holds for reading, so the decorative
-// motion below uses it; the story itself uses t.
-let ambient = 0;
-
 Kit.scene({
   width: W, height: H, duration: 50,
   fonts: [{ family: SERIF, file: 'Fraunces.woff2' }, { family: SANS, file: 'Inter.woff2' }],
   draw(t, tools) {
-    ambient = tools.clock;
     k = tools; ctx = tools.ctx;
     background(t);
     const scenes = [[sceneA, T.A, 0], [sceneB, T.B], [sceneC, T.C], [sceneD, T.D], [sceneE, T.E], [sceneF, T.F, 0.35, 0]];

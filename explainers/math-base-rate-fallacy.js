@@ -183,7 +183,7 @@ function sceneA(t) {
     mono(600, 84);
     withAlpha(1 - hide, () => {
       text('??', x + 26, y + 164, { color: C.ink });
-      if (Math.sin(ambient * 7) > -0.2) { ctx.fillStyle = C.steel; ctx.fillRect(x + 26 + ctx.measureText('??').width + 10, y + 104, 6, 64); }
+      if (Math.sin(t * 7) > -0.2) { ctx.fillStyle = C.steel; ctx.fillRect(x + 26 + ctx.measureText('??').width + 10, y + 104, 6, 64); }
     });
     withAlpha(guess, () => text('99%?', x + 26, y + 164 + (1 - eout(guess)) * 10, { color: 'rgba(47,100,150,0.55)' }));
   });
@@ -203,7 +203,7 @@ function lamp(cx, cy, fire, t) {
   ctx.fillStyle = C.ink; rrect(cx - 62, cy + 30, 124, 26, 4); ctx.fill();
   ctx.fillStyle = C.slate; rrect(cx - 50, cy + 18, 100, 14, 3); ctx.fill();
   // dome
-  const on = fire * (0.75 + 0.25 * Math.sin(ambient * 12));
+  const on = fire * (0.75 + 0.25 * Math.sin(t * 12));
   ctx.beginPath(); ctx.moveTo(cx - 44, cy + 18); ctx.lineTo(cx - 44, cy - 20); ctx.arc(cx, cy - 20, 44, Math.PI, 0); ctx.lineTo(cx + 44, cy + 18); ctx.closePath();
   const dg = ctx.createLinearGradient(cx - 44, 0, cx + 44, 0);
   dg.addColorStop(0, `rgba(${Math.round(lerp(220, 211, fire))},${Math.round(lerp(228, 38, fire))},${Math.round(lerp(236, 59, fire))},1)`);
@@ -447,10 +447,6 @@ function captions(t) {
   }
 }
 
-// The clip's own time, from tools.clock: it runs on while a step holds for reading, so the decorative
-// motion below uses it; the story itself uses t.
-let ambient = 0;
-
 Kit.scene({
   width: W, height: H, duration: 53.5,
   fonts: [
@@ -459,7 +455,6 @@ Kit.scene({
     { family: MONO, file: 'IBMPlexMono-SemiBold.woff2', weight: '600' },
   ],
   draw(t, tools) {
-    ambient = tools.clock;
     k = tools; ctx = tools.ctx;
     background();
     const scenes = [[sceneA, T.A, 0], [sceneB, T.B, 0.35, 0], [sceneC, T.C, 0, 0], [sceneD, T.D, 0, 0.35], [sceneE, T.E, 0.35, 0]];

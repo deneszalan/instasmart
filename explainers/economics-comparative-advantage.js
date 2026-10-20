@@ -121,10 +121,10 @@ function sea(t) {
   ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.lineWidth = 3;
   for (let row = 0; row < 20; row++) {
     const y = 30 + row * 56;
-    const off = (ambient * 13 + (row % 2) * 64) % 128;
+    const off = (t * 13 + (row % 2) * 64) % 128;
     ctx.strokeStyle = `rgba(255,255,255,${0.17 + 0.07 * (row % 3)})`;
     for (let x = -128 + off; x < W + 64; x += 128) {
-      const yy = y + Math.sin(ambient * 1.1 + x * 0.021 + row) * 2.5;
+      const yy = y + Math.sin(t * 1.1 + x * 0.021 + row) * 2.5;
       ctx.beginPath(); ctx.moveTo(x, yy);
       ctx.quadraticCurveTo(x + 11, yy - 9, x + 22, yy); ctx.quadraticCurveTo(x + 33, yy + 9, x + 44, yy);
       ctx.stroke();
@@ -133,7 +133,7 @@ function sea(t) {
   // sparkles
   for (let i = 0; i < 9; i++) {
     const x = (i * 197 + 61) % (W - 80) + 40, y = (i * 311 + 140) % (H - 200) + 60;
-    const tw = Math.max(0, Math.sin(ambient * 1.7 + i * 2.1));
+    const tw = Math.max(0, Math.sin(t * 1.7 + i * 2.1));
     if (tw < 0.05) continue;
     A(tw * 0.7, () => {
       ctx.fillStyle = '#FFFFFF'; ctx.beginPath();
@@ -164,7 +164,7 @@ function frond(x, y, a, L, col) {
 }
 
 function palm(x, y, h, lean, t, ph) {
-  const sw = Math.sin(ambient * 1.3 + ph) * 0.06;
+  const sw = Math.sin(t * 1.3 + ph) * 0.06;
   const cx1 = x + lean * h * 0.04, cy1 = y - h * 0.6;
   const tx = x + lean * h * 0.32 + sw * h * 0.22, ty = y - h;
   ell(x + 10, y + 4, h * 0.22, h * 0.06); ctx.fillStyle = C.sandShade; ctx.fill();
@@ -181,7 +181,7 @@ function palm(x, y, h, lean, t, ph) {
   }
   const angs = [-2.8, -2.2, -1.57, -0.94, -0.34];
   angs.forEach((a0, i) => {
-    const a = a0 + sw * 1.4 + Math.sin(ambient * 1.8 + ph + i) * 0.03;
+    const a = a0 + sw * 1.4 + Math.sin(t * 1.8 + ph + i) * 0.03;
     frond(tx, ty, a, h * 0.6 * (i === 2 ? 0.8 : 1), i % 2 ? C.leafDark : C.leaf);
   });
   ctx.fillStyle = C.nut;
@@ -213,8 +213,8 @@ function island(id, t, s, a) {
     ctx.save(); ctx.translate(LAND[id].cx, ISLE_Y); ctx.scale(s, s);
     ell(12, 40, 184, 68); ctx.fillStyle = 'rgba(6,80,104,0.18)'; ctx.fill();
     ell(0, 24, 182, 74); ctx.fillStyle = C.shallow; ctx.fill();
-    ctx.save(); ctx.setLineDash([16, 12]); ctx.lineDashOffset = -ambient * 12;
-    ell(0, 18, 166 + 2.5 * Math.sin(ambient * 1.7 + ph), 64 + 2 * Math.sin(ambient * 1.7 + ph));
+    ctx.save(); ctx.setLineDash([16, 12]); ctx.lineDashOffset = -t * 12;
+    ell(0, 18, 166 + 2.5 * Math.sin(t * 1.7 + ph), 64 + 2 * Math.sin(t * 1.7 + ph));
     ctx.strokeStyle = C.foam; ctx.lineWidth = 3; ctx.stroke(); ctx.restore();
     coralBit(-150 * m, 72, 1, C.coral); coralBit(140 * m, 76, 0.85, C.coralSoft);
     coralBit(-100 * m, 92, 0.7, C.coralSoft); coralBit(104 * m, 93, 0.72, C.coral);
@@ -341,10 +341,10 @@ function boatState(t) {
   const go = eio(seg(t, E0 + 1.0, E0 + 2.2)), ret = eio(seg(t, E0 + 3.0, E0 + 4.2));
   const u = go - ret + 0.5 * eio(seg(t, F0 + 0.4, F0 + 3.6));
   const x = lerp(DOCK[clothMaker], DOCK[wineMaker], u);
-  const y = DOCK.y + 12 * Math.sin(Math.PI * u) + Math.sin(ambient * 2.6) * 3;
+  const y = DOCK.y + 12 * Math.sin(Math.PI * u) + Math.sin(t * 2.6) * 3;
   const dir = (clothMaker === 'E' ? 1 : -1) * (1 - 2 * eio(seg(t, E0 + 2.3, E0 + 2.9)) + 2 * eio(seg(t, E0 + 4.3, E0 + 4.9)));
   const moving = Math.max(seg(t, E0 + 1.0, E0 + 2.2) * (1 - seg(t, E0 + 2.0, E0 + 2.2)), seg(t, E0 + 3.0, E0 + 4.2) * (1 - seg(t, E0 + 4.0, E0 + 4.2)), seg(t, F0 + 0.4, F0 + 1) * (1 - seg(t, F0 + 3.0, F0 + 3.6)));
-  return { x, y, dir, tilt: Math.sin(ambient * 2.1) * 0.035, moving };
+  return { x, y, dir, tilt: Math.sin(t * 2.1) * 0.035, moving };
 }
 const deckOf = (b) => ({ x: b.x - 17 * b.dir, y: b.y - 12 });
 
@@ -547,10 +547,10 @@ function hookRoute(t) {
   A(a, () => {
     const x0 = DOCK.E, x1 = DOCK.P, y = DOCK.y;
     ctx.strokeStyle = 'rgba(255,255,255,0.95)'; ctx.lineWidth = 4; ctx.lineCap = 'round';
-    ctx.setLineDash([2, 12]); ctx.lineDashOffset = -ambient * 20;
+    ctx.setLineDash([2, 12]); ctx.lineDashOffset = -t * 20;
     ctx.beginPath(); ctx.moveTo(x0, y); ctx.quadraticCurveTo(W / 2, y + 30, x1, y); ctx.stroke(); ctx.setLineDash([]);
     const s = 0.7 + 0.3 * back(seg(t, A0 + 8.1, A0 + 8.6));
-    ctx.save(); ctx.translate(W / 2, y + 4 + Math.sin(ambient * 2.4) * 3); ctx.scale(s, s);
+    ctx.save(); ctx.translate(W / 2, y + 4 + Math.sin(t * 2.4) * 3); ctx.scale(s, s);
     shadowed(12, 4, () => { ell(0, 0, 32, 32); ctx.fillStyle = C.cream; ctx.fill(); });
     font(800, 42); text('?', 0, 2, { color: C.coralDark, align: 'center', base: 'middle' });
     ctx.restore();
@@ -629,15 +629,10 @@ function captionPanel(t) {
     marks: { '*': C.coralDark, '^': C.grapeDark, '~': C.leafDeep } });
 }
 
-// The clip's own time, from tools.clock: it runs on while a step holds for reading, so the decorative
-// motion below uses it; the story itself uses t.
-let ambient = 0;
-
 Kit.scene({
   width: W, height: H, duration: END,
   fonts: [{ family: FONT, file: 'Nunito.woff2', weight: '400 800' }],
   draw(t, tools) {
-    ambient = tools.clock;
     k = tools; ctx = tools.ctx;
     sea(t);
     header();

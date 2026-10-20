@@ -118,7 +118,7 @@ function background(t) {
   if (!sky) sky = buildSky();
   ctx.drawImage(sky, 0, 0);
   for (const s of TWINKLE) {
-    const a = 0.35 + 0.35 * Math.sin(ambient * s.sp + s.ph);
+    const a = 0.35 + 0.35 * Math.sin(t * s.sp + s.ph);
     ctx.fillStyle = `rgba(232,240,255,${a.toFixed(3)})`; circle(s.x, s.y, s.r * 1.6); ctx.fill();
   }
   font(700, 22); text('RECKON', 64, 72, { color: C.brass, spacing: '5px' });
@@ -448,15 +448,10 @@ function sceneE(t) {
   });
 }
 
-// The clip's own time, from tools.clock: it runs on while a step holds for reading, so the decorative
-// motion below uses it; the story itself uses t.
-let ambient = 0;
-
 Kit.scene({
   width: W, height: H, duration: 54.5,
   fonts: [{ family: 'Cormorant Garamond', file: 'CormorantGaramond.woff2', weight: '300 700' }, { family: 'Source Sans 3', file: 'SourceSans3.woff2', weight: '200 900' }],
   draw(t, tools) {
-    ambient = tools.clock;
     k = tools; ctx = tools.ctx;
     background(t);
     const scenes = [[sceneAB, [0, 25.4], 0, 0], [readoutsB, [11.2, 26.0], 0.6, 0.6], [sceneC, [25.4, 38.4], 0, 0.5], [sceneD, T.D, 0.5], [sceneE, T.E, 0.35, 0]];

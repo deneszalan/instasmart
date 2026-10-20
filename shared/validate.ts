@@ -1,6 +1,6 @@
 import { FIELD_IDS } from './fields.ts';
 import { formatIssues, localMedia, MEDIA_EXTENSIONS, Post, VIDEO_EXTENSIONS } from './schema.ts';
-import { MAX_FOOTAGE_BYTES, MAX_FOOTAGE_SECONDS, readMp4, STEP_STILL_BEFORE_END, stepStill, videoProblems } from './video.ts';
+import { readMp4, STEP_STILL_BEFORE_END, stepStill, videoProblems } from './video.ts';
 
 /** A file in the repository, addressed by its repo-relative path. */
 export interface ContentFile {
@@ -123,14 +123,6 @@ function clipProblems(post: Post, mediaBytes: Map<string, Uint8Array>): string[]
       info = readMp4(bytes);
     } catch {
       return; // The file's own problems are reported with the file.
-    }
-    if (!slide.animation) {
-      if (info.durationSeconds > MAX_FOOTAGE_SECONDS) {
-        problems.push(`slides[${i}]: "${slide.src}" is ${info.durationSeconds.toFixed(1)} s long; footage is at most ${MAX_FOOTAGE_SECONDS} s (only animations, which hold steps for reading, may run longer)`);
-      }
-      if (bytes.length > MAX_FOOTAGE_BYTES) {
-        problems.push(`slides[${i}]: "${slide.src}" is ${bytes.length} bytes; footage is at most ${MAX_FOOTAGE_BYTES}. Make it shorter, narrower (480 px is plenty) or more compressed`);
-      }
     }
     const hasAudio = info.audioCodec !== null;
     if (hasAudio && !slide.music) problems.push(`slides[${i}]: "${slide.src}" has a soundtrack, so credit it in "music" (or remove the audio)`);

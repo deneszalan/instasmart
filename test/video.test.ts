@@ -76,10 +76,10 @@ describe('videoProblems', () => {
   it('rejects clips that would not play well on a phone', () => {
     expect(videoProblems(mp4({ video: 'hvc1' })).join()).toContain('must be H.264');
     expect(videoProblems(mp4({ audio: 'opus' })).join()).toContain('must be AAC');
-    expect(videoProblems(mp4({ seconds: 95 })).join()).toContain('keep it between 2 and 90 s');
+    expect(videoProblems(mp4({ seconds: 75 })).join()).toContain('keep it between 2 and 60 s');
     expect(videoProblems(mp4({ width: 1920 })).join()).toContain('at most 1080 px');
     expect(videoProblems(mp4({ moovFirst: false })).join()).toContain('+faststart');
-    expect(videoProblems(mp4({ padding: 4_100_000 })).join()).toContain('the limit is 4000000');
+    expect(videoProblems(mp4({ padding: 3_100_000 })).join()).toContain('the limit is 3000000');
   });
 });
 
@@ -133,15 +133,6 @@ describe('video slides', () => {
     ]);
     // Clips without steps are left alone.
     expect(check(slide, mp4({ audio: null, keyframes: [0, 8.3] }))).toEqual([]);
-  });
-
-  it('keeps footage to 60 s and 3 MB; only animations may run longer', () => {
-    const silent = mp4({ audio: null, seconds: 75 });
-    expect(check(slide, silent)).toEqual([
-      'slides[0]: "launch.mp4" is 75.0 s long; footage is at most 60 s (only animations, which hold steps for reading, may run longer)',
-    ]);
-    expect(check({ ...slide, animation: true }, silent)).toEqual([]);
-    expect(check(slide, mp4({ audio: null, padding: 3_100_000 })).join()).toContain('footage is at most 3000000');
   });
 
   it('needs the clip and its still to be present', () => {

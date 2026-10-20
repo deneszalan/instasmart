@@ -17,8 +17,11 @@ export interface LearnState {
   storiesViewed: Record<string, string>;
   /** `${postId}#${slideIndex}` → result of a quiz, guess or ordering puzzle (null when it has no right answer). */
   challenges: Record<string, { correct: boolean | null; at: number }>;
-  /** videoRate: playback speed for clips; stepMode: pause explainers at the end of each step. */
-  settings: { wiki: boolean; theme: Theme; videoRate: number; stepMode: boolean };
+  /**
+   * speed: the playback speed the reader picked for clips, or null to play each at its own default
+   * (animations a little slower); stepMode: pause explainers at the end of each step.
+   */
+  settings: { wiki: boolean; theme: Theme; speed: number | null; stepMode: boolean };
 }
 
 type Action =
@@ -41,7 +44,7 @@ export const initialState: LearnState = {
   activeDays: [],
   storiesViewed: {},
   challenges: {},
-  settings: { wiki: true, theme: 'system', videoRate: 1, stepMode: false },
+  settings: { wiki: true, theme: 'system', speed: null, stepMode: false },
 };
 
 export function localDay(date = new Date()): string {
@@ -119,10 +122,13 @@ function load(): LearnState {
     const raw = localStorage.getItem(STORAGE_KEY) ?? localStorage.getItem(LEGACY_KEY);
     if (!raw) return initialState;
     const parsed = JSON.parse(raw) as Partial<LearnState>;
+    // The old videoRate setting saved 1 whether or not the reader chose it, so it is dropped and
+    // clips start from their own defaults.
+    const { videoRate: _dropped, ...settings } = (parsed.settings ?? {}) as Partial<LearnState['settings']> & { videoRate?: number };
     return {
       ...initialState,
       ...parsed,
-      settings: { ...initialState.settings, ...parsed.settings },
+      settings: { ...initialState.settings, ...settings },
     };
   } catch {
     return initialState;

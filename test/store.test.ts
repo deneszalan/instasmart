@@ -36,9 +36,9 @@ describe('reducer', () => {
   });
 
   it('reset keeps settings', () => {
-    const s = reducer({ ...initialState, settings: { wiki: false, theme: 'dark', videoRate: 1.5, stepMode: true }, liked: { a: 1 } }, { type: 'reset' });
+    const s = reducer({ ...initialState, settings: { wiki: false, theme: 'dark', speed: 1.5, stepMode: true }, liked: { a: 1 } }, { type: 'reset' });
     expect(s.liked).toEqual({});
-    expect(s.settings).toEqual({ wiki: false, theme: 'dark', videoRate: 1.5, stepMode: true });
+    expect(s.settings).toEqual({ wiki: false, theme: 'dark', speed: 1.5, stepMode: true });
   });
 });
 
