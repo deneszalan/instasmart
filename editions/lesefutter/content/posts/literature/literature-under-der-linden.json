@@ -1,0 +1,164 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "literature-under-der-linden",
+  "field": "literature",
+  "title": "In „Under der linden“ erzählt eine Frau – nur ein Vögelchen weiß davon",
+  "emoji": "🐦",
+  "body": "Walther von der Vogelweide (um 1170 – um 1230) lässt in diesem Lied eine Frau sprechen. Sie erinnert sich an ein Treffen mit ihrem Liebsten unter einer Linde. Man sieht noch die gebrochenen Blumen und das Gras, wo die beiden lagen. Anders als in der **Hohen Minne** liebt der Mann sie auch: Die Liebe wird erwidert (zurückgegeben).",
+  "cover": {
+    "src": "under-der-linden-explainer.jpg",
+    "alt": "Eine Seite aus Pergament mit der ersten Strophe von „Under der linden“ auf Mittelhochdeutsch, darüber der Titel in gotischer Schrift und am Rand eine Ranke mit Lindenblättern.",
+    "credit": "Lesefutter · eigene Animation"
+  },
+  "slides": [
+    {
+      "type": "video",
+      "src": "under-der-linden-explainer.mp4",
+      "poster": "under-der-linden-explainer.jpg",
+      "alt": "Animation auf einer Pergamentseite: Die erste Strophe von „Under der linden“ steht auf Mittelhochdeutsch da. Zeile für Zeile werden die alten Wörter durchgestrichen und durch die modernen ersetzt, zum Beispiel bluomen durch Blumen und nahtegal durch Nachtigall. Am Rand singt eine Nachtigall.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Lesefutter · eigene Animation",
+      "music": "“Teller of the Tales” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.5,
+          "end": 4.3
+        },
+        {
+          "start": 4.4,
+          "end": 8.6
+        },
+        {
+          "start": 8.7,
+          "end": 11.7
+        },
+        {
+          "start": 11.8,
+          "end": 15.6
+        },
+        {
+          "start": 15.7,
+          "end": 18.9
+        },
+        {
+          "start": 19,
+          "end": 22.9
+        },
+        {
+          "start": 23,
+          "end": 26.7
+        },
+        {
+          "start": 26.8,
+          "end": 30.8
+        },
+        {
+          "start": 30.9,
+          "end": 34.5
+        },
+        {
+          "start": 34.6,
+          "end": 38.4
+        },
+        {
+          "start": 38.5,
+          "end": 42.1
+        },
+        {
+          "start": 42.2,
+          "end": 46
+        },
+        {
+          "start": 46.1,
+          "end": 49.9
+        },
+        {
+          "start": 50,
+          "end": 53.6
+        },
+        {
+          "start": 53.7,
+          "end": 58.2
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Wer spricht hier?",
+      "text": "Das „Ich“ im Lied ist eine Frau. Sie kam zur Au (einer Wiese am Wasser), und ihr *friedel* (Liebster) war schon da. Ein Mann hat das Lied geschrieben, aber er lässt eine Frau erzählen."
+    },
+    {
+      "type": "text",
+      "heading": "Tausendmal geküsst",
+      "text": "*Kuster mich? Wol tûsentstunt: tandaradei, seht, wie rôt mir ist der munt.* – Ob er mich geküsst hat? Wohl tausendmal! Tandaradei, seht, wie rot mein Mund ist. So erzählt die Frau in der zweiten Strophe."
+    },
+    {
+      "type": "compare",
+      "heading": "Zwei Arten von Liebe",
+      "left": {
+        "label": "Hohe Minne",
+        "text": "Ein Sänger dient einer adligen Dame. Sie bleibt für ihn unerreichbar. Seine Liebe wird nicht erfüllt."
+      },
+      "right": {
+        "label": "Under der linden",
+        "text": "Die Frau ist wohl nicht adlig. Die beiden lieben sich und treffen sich wirklich, draußen in der Natur."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Tandaradei",
+      "text": "Das Wort steht in jeder der vier Strophen. Es ist kein normales Wort mit einer Bedeutung. Walther hat es erfunden: Es klingt wie der Gesang der Nachtigall."
+    },
+    {
+      "type": "reveal",
+      "prompt": "Das Treffen soll geheim bleiben. Wer weiß außer den beiden davon?",
+      "answer": "Ein kleines Vögelchen",
+      "detail": "*wan er und ich, und ein kleinez vogellîn* – außer ihm und mir und einem kleinen Vögelchen. Und das kann ein Geheimnis gut bewahren."
+    },
+    {
+      "type": "quiz",
+      "question": "Wovon handelt das Gedicht?",
+      "options": [
+        "Von einem heimlichen Liebestreffen",
+        "Vom Dienst für eine adlige Dame",
+        "Vom Abschied am Morgen",
+        "Von einem Fest unter der Linde"
+      ],
+      "answer": 0,
+      "explanation": "Eine Frau erinnert sich an das Treffen mit ihrem Liebsten. Blumen, Gras und Rosen zeigen noch, wo die beiden lagen."
+    },
+    {
+      "type": "list",
+      "heading": "Wörter",
+      "items": [
+        "**die Linde** – ein Baum mit Blättern in Herzform",
+        "**die Heide** – weites, offenes Land",
+        "**die Nachtigall** – ein Singvogel, der auch nachts singt",
+        "**der Liebste** – der Mann, den man liebt",
+        "**erwidern** – zurückgeben; hier: auch lieben"
+      ]
+    }
+  ],
+  "tags": [
+    "minnesang",
+    "walther",
+    "liebeslied",
+    "mittelhochdeutsch"
+  ],
+  "source": {
+    "label": "Wikipedia: Under der linden",
+    "url": "https://de.wikipedia.org/wiki/Under_der_linden"
+  },
+  "theme": {
+    "gradient": [
+      "#22396E",
+      "#5A2C18"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-20"
+}

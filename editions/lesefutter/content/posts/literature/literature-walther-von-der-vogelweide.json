@@ -1,0 +1,102 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "literature-walther-von-der-vogelweide",
+  "field": "literature",
+  "title": "Nur ein Dokument aus Walthers Zeit nennt ihn: eine Rechnung für einen Pelz",
+  "emoji": "🪶",
+  "body": "Walther von der Vogelweide (um 1170 – um 1230) gilt als der bedeutendste Liederdichter des deutschen Mittelalters. Er lebte vom Singen und zog von Hof zu Hof. Fast alles, was wir über ihn wissen, steht in seinen eigenen Liedern. Nur ein Dokument aus seiner Zeit nennt ihn: Am 12. November 1203 gab ihm Bischof Wolfger von Passau Geld für einen **Pelzmantel**.",
+  "cover": {
+    "src": "walther-weingartner.jpg",
+    "alt": "Schwarz-weiße Abbildung einer Buchmalerei: Walther sitzt nachdenklich auf einem Felsen, ein Bein über dem anderen, den Kopf in die Hand gestützt. Neben ihm lehnt ein Schwert.",
+    "credit": "Weingartner Liederhandschrift, um 1300, WLB Stuttgart · gemeinfrei"
+  },
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Ein Sänger auf Reisen",
+      "text": "Walther hatte kein festes Zuhause. Er sang an vielen Höfen, zum Beispiel in Wien, bei König Philipp und in Thüringen. Gönner (reiche Herren, die Künstler unterstützen) bezahlten ihn. Über geizige Herren spottete er in seinen Liedern."
+    },
+    {
+      "type": "image",
+      "src": "reiserechnung-1203.jpg",
+      "alt": "Eine Zeile in mittelalterlicher Handschrift auf grauem Papier: der lateinische Eintrag über Walther in den Reisekosten des Bischofs Wolfger.",
+      "caption": "*Walthero cantori de Vogelweide pro pellicio v solidos longos* – Für Walther, den Sänger von der Vogelweide, für einen Pelzmantel: fünf lange Schillinge.",
+      "fit": "contain",
+      "credit": "Reiserechnungen Wolfgers von Erla, 1203 · Wikimedia Commons · gemeinfrei"
+    },
+    {
+      "type": "text",
+      "heading": "Ein Pelz wie für einen Beamten",
+      "text": "Bischof Wolfger schrieb auf seiner Reise alle Kosten auf. Am 12. November 1203 war er in Zeiselmauer an der Donau, nicht weit von Wien. Seine Mitarbeiter bekamen in diesen Tagen ähnlich teure Pelze. Walther durfte sich also so gut kleiden wie ein Beamter des Bischofs."
+    },
+    {
+      "type": "text",
+      "heading": "„Ich hân mîn lêhen!“",
+      "text": "*Ich hân mîn lêhen, al die werlt, ich hân mîn lêhen!* – Ich habe mein Lehen, alle Welt, ich habe mein Lehen! So jubelt Walther um 1220. Friedrich II. hat ihm ein Lehen gegeben (Besitz oder Einkommen von einem Herrscher). Jetzt hat er keine Angst mehr vor dem kalten Februar. Wo das Lehen lag, weiß man nicht."
+    },
+    {
+      "type": "image",
+      "src": "walther-codex-manesse.jpg",
+      "alt": "Buchmalerei: Walther in blauem Gewand sitzt auf einem grünen Hügel. Er hat ein Bein über das andere gelegt und stützt den Kopf in die Hand. Neben ihm lehnt ein Schwert, oben sind Wappen und Helm mit einem Vogel im Käfig.",
+      "caption": "So malt ihn der Codex Manesse um 1300, wie in seinem Lied: *Ich saz ûf eime steine* – Ich saß auf einem Stein.",
+      "fit": "cover",
+      "credit": "Codex Manesse, fol. 124r, Universitätsbibliothek Heidelberg · gemeinfrei"
+    },
+    {
+      "type": "text",
+      "heading": "Lieder über Politik",
+      "text": "Walther sang auch über Politik, in *Sangsprüchen* (Liedern über Politik, Moral und Glauben). Ab 1198 stritten Philipp von Schwaben und Otto um die Krone. Walther sang für Philipp. Im Lied vom Stein klagt er: *fride unde reht sint sêre wunt* – Frieden und Recht sind schwer verletzt."
+    },
+    {
+      "type": "text",
+      "heading": "Lieder für einfache Mädchen",
+      "text": "In der Hohen Minne singt ein Mann für eine adlige Dame, die er nie bekommt. Walther schrieb auch Lieder über eine erfüllte Liebe zu einem Mädchen, das wohl nicht adlig ist. Man nennt sie *Mädchenlieder* oder *Niedere Minne*. Das bekannteste ist *Under der linden*."
+    },
+    {
+      "type": "order",
+      "heading": "Bring Walthers Leben in die richtige Reihenfolge",
+      "items": [
+        "Sänger am Hof in Wien",
+        "Lieder für König Philipp",
+        "Geld für einen Pelzmantel",
+        "Ein Lehen von Friedrich II.",
+        "Aufruf zum Kreuzzug"
+      ],
+      "explanation": "Bis 1198 sang er in Wien, dann für Philipp. 1203 kam der Pelz, um 1220 das Lehen. 1227 rief er in seinem letzten datierbaren Lied zum Kreuzzug auf."
+    },
+    {
+      "type": "quiz",
+      "question": "Warum freut sich Walther so über sein Lehen?",
+      "options": [
+        "Er muss nicht mehr von Hof zu Hof ziehen",
+        "Er wird endlich zum Ritter geschlagen",
+        "Er darf jetzt eine Königin besingen",
+        "Er bekommt einen neuen Pelzmantel"
+      ],
+      "answer": 0,
+      "explanation": "Das Lehen brachte ein festes Einkommen. Walther musste nicht mehr als fahrender Sänger leben und immer neue Gönner suchen."
+    }
+  ],
+  "tags": [
+    "walther",
+    "minnesang",
+    "mittelalter",
+    "dichter",
+    "sangspruch"
+  ],
+  "source": {
+    "label": "Wikipedia: Walther von der Vogelweide",
+    "url": "https://de.wikipedia.org/wiki/Walther_von_der_Vogelweide"
+  },
+  "theme": {
+    "gradient": [
+      "#2F5A33",
+      "#7A2418"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-20"
+}
