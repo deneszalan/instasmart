@@ -4,7 +4,7 @@
   "field": "earth",
   "title": "Continents drift about as fast as your fingernails grow",
   "emoji": "💅",
-  "body": "Earth’s rigid outer shell is broken into tectonic plates that glide over the hot, slowly deforming mantle beneath. At the Mid-Atlantic Ridge they spread apart by roughly 1 to 4 cm a year, about fingernail speed, while the Pacific’s Nazca Plate moves up to about 16 cm a year. Tiny as that sounds, over roughly 200 million years such motion tore apart the supercontinent Pangaea and opened the whole Atlantic Ocean.",
+  "body": "Earth’s rigid outer shell is broken into tectonic plates that glide over the hot, slowly deforming mantle beneath. At the Mid-Atlantic Ridge they spread apart by roughly 1 to 4 cm a year, about as fast as [fingernails grow](https://en.wikipedia.org/wiki/Nail_%28anatomy%29) (about 3.5 mm a month), while the Pacific’s Nazca Plate moves up to about 16 cm a year. Tiny as that sounds, over [roughly 200 million years](https://en.wikipedia.org/wiki/Pangaea) such motion tore apart the supercontinent Pangaea and opened the whole Atlantic Ocean.",
   "slides": [
     {
       "type": "estimate",
@@ -15,6 +15,15 @@
       "answer": 16,
       "unit": "cm",
       "explanation": "Up to about 16 cm a year, against roughly 1 to 4 cm at the Mid-Atlantic Ridge. Over about 200 million years, such motion tore Pangaea apart and opened the Atlantic."
+    },
+    {
+      "type": "video",
+      "src": "drift.mp4",
+      "poster": "drift.jpg",
+      "alt": "Animation on a survey map: a fingernail and the Mid-Atlantic Ridge creep along one ruler for a year (42 mm against 10 to 40 mm), the Nazca Plate reaches 160 mm, then a simplified Atlantic opens between two continent outlines and a cross-section shows the ridge.",
+      "fit": "cover",
+      "credit": "Reckon · original animation",
+      "music": "“Truth in the Stones” Kevin MacLeod (incompetech.com) · CC BY 4.0"
     },
     {
       "type": "chart",

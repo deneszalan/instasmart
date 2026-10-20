@@ -7,6 +7,15 @@
   "body": "Pick any four-digit number whose digits aren’t all the same. Arrange the digits from largest to smallest, then from smallest to largest, and subtract the second from the first. Repeat with the result. Within **seven rounds** you always reach 6174, and from there the step gives 6174 forever. Indian mathematician D. R. Kaprekar published this oddity in 1955, and 6174 has been called Kaprekar’s constant ever since.",
   "slides": [
     {
+      "type": "video",
+      "src": "kaprekar-routine.mp4",
+      "poster": "kaprekar-routine.jpg",
+      "alt": "Animated amber seven-segment display: 3524 is sorted into 5432 and 2345 and subtracted, giving 3087, then 8352, then 6174, which gives 6174 again. Six more starting numbers reach 6174 in 1 to 7 steps, and a bar graph of all 8,991 four-digit numbers shows none needs more than 7.",
+      "fit": "cover",
+      "credit": "Reckon · original animation",
+      "music": "“Digital Lemonade” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
       "type": "flow",
       "heading": "Kaprekar’s routine",
       "steps": [
@@ -47,7 +56,7 @@
     {
       "type": "text",
       "heading": "Why it works",
-      "text": "The result depends only on which digits you hold, not on their order, so there are only a few hundred possible outcomes after the first step. Those few hundred all funnel down into one fixed point. Three-digit numbers have their own: 495."
+      "text": "The result depends only on which digits you hold, not on their order, so after the first step only 54 different numbers can come up. All 54 funnel down into one fixed point. Three-digit numbers have their own: 495."
     },
     {
       "type": "text",

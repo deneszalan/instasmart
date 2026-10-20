@@ -7,6 +7,15 @@
   "body": "Imagine a city of a million, 100 of them terrorists, and a camera that spots 99% of terrorists and wrongly flags 1% of everyone else. About 99 of the 100 terrorists trigger the alarm, but so do about 9,999 of the 999,900 innocent people, so someone who sets it off is a terrorist in only about 99 of 10,098 cases, under 1%. Expecting 99% instead is the **base rate fallacy**: ignoring how rare the thing you are hunting is. Bayes’ theorem gives the right answer, though it isn’t how most people think; in court the same slip is the prosecutor’s fallacy.",
   "slides": [
     {
+      "type": "video",
+      "src": "base-rate-explainer.mp4",
+      "poster": "base-rate-explainer.jpg",
+      "alt": "Animation styled as a lab report: a city of 1,000,000 drawn as dots of 100 people, one dot holding all 100 terrorists, 99 of them flagged, and 9,999 innocent people flagged too. Keeping only the 10,098 flagged people shows just 99 are terrorists: 0.98%.",
+      "fit": "cover",
+      "credit": "Reckon · original animation",
+      "music": "“Secrets of the Schoolyard” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
       "type": "list",
       "heading": "Do the count",
       "style": "steps",

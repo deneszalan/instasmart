@@ -7,6 +7,27 @@
   "body": "In 1817 David Ricardo showed that what matters for trade is not who makes something best, but who gives up the least to make it. If Portugal is better than England at both wine and cloth but especially good at wine, both countries end up with more if Portugal specialises in wine and England in cloth. This idea, comparative advantage, is one of the least intuitive and most important in economics.",
   "slides": [
     {
+      "type": "quiz",
+      "question": "In Ricardo’s example, why should England make the cloth?",
+      "options": [
+        "It gives up less wine to make it",
+        "It has more workers",
+        "Its cloth is better quality",
+        "Portugal has no sheep"
+      ],
+      "answer": 0,
+      "explanation": "England’s cloth costs about 0.83 batches of wine in labour, against 1.125 in Portugal, so England is the cheaper cloth maker even though Portugal needs fewer men for both."
+    },
+    {
+      "type": "video",
+      "src": "islands-trade.mp4",
+      "poster": "islands-trade.jpg",
+      "alt": "Animation of Ricardo's example as two islands, England and Portugal, with the hours each needs per unit of cloth and wine. Each first makes one of each; then England makes only cloth and Portugal only wine, the world total grows to 2.2 cloth and 2.125 wine, and a boat swaps one cloth for one wine.",
+      "fit": "cover",
+      "credit": "Reckon · original animation",
+      "music": "“Island Meet and Greet” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
       "type": "text",
       "heading": "Ricardo’s numbers",
       "text": "England needed the labour of 100 men for a year to make a set amount of cloth and 120 for wine. Portugal needed 90 and 80, so it was better at both."
@@ -45,18 +66,6 @@
       "type": "text",
       "heading": "The everyday version",
       "text": "A lawyer who types faster than her assistant still hires one, because an hour of legal work earns far more than the hour of typing she would save."
-    },
-    {
-      "type": "quiz",
-      "question": "In Ricardo’s example, why should England make the cloth?",
-      "options": [
-        "It gives up less wine to make it",
-        "It has more workers",
-        "Its cloth is better quality",
-        "Portugal has no sheep"
-      ],
-      "answer": 0,
-      "explanation": "England’s cloth costs about 0.83 batches of wine in labour, against 1.125 in Portugal, so England is the cheaper cloth maker even though Portugal needs fewer men for both."
     }
   ],
   "tags": [

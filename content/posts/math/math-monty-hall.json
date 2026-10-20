@@ -7,6 +7,15 @@
   "body": "You pick one of three doors: one hides a car, two hide goats. The host, who knows where the car is, always opens a different door to show a goat, then offers you a switch. Your first pick was right only 1 time in 3, and the host’s reveal doesn’t change that, so the 2 in 3 chance that the car was elsewhere now rests entirely on the one remaining door. Switching wins two-thirds of the time.",
   "slides": [
     {
+      "type": "video",
+      "src": "monty-hall-explainer.mp4",
+      "poster": "monty-hall-explainer.jpg",
+      "alt": "Animation on a game-show stage: you pick door 1 and the host opens door 3 to show a goat. Then 300 simulated games fill two bars, switching winning 202 and staying 98, and a diagram shows the 2 in 3 chance of the other two doors moving onto door 2.",
+      "fit": "cover",
+      "credit": "Reckon · original animation",
+      "music": "“Happy Happy Game Show” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
       "type": "text",
       "heading": "Play it out",
       "text": "Say the car is behind door 1. Pick door 1 and switch: you lose. Pick door 2 or 3: the host must reveal the other goat, so switching wins. Two wins out of three."

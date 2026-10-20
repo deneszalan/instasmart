@@ -36,6 +36,27 @@
       "explanation": "April 2014. The drops came roughly every 8 years at first, but the last two took 12.3 and 13.4 years, partly because air conditioning cooled the room."
     },
     {
+      "type": "quiz",
+      "question": "Why did nobody see the seventh drop fall in 1988?",
+      "options": [
+        "The custodian went for a drink",
+        "The lab was closed for a holiday",
+        "A power cut turned the lights off",
+        "It fell in the middle of the night"
+      ],
+      "answer": 0,
+      "explanation": "John Mainstone, custodian from 1961 to 2013, had stepped out for a drink. In 2000 a webcam was watching, but technical problems stopped it recording the eighth drop."
+    },
+    {
+      "type": "video",
+      "src": "pitch-drop-explainer.mp4",
+      "poster": "pitch-drop-explainer.jpg",
+      "alt": "Animation: under a bell jar, a funnel of black pitch slowly grows a glossy drop that falls into a beaker. A timeline from 1927 to 2026 then gains a dot for each of the nine drops, arcs show the years between them, and museum labels mark the missed drops of 1988 and 2000.",
+      "fit": "cover",
+      "credit": "Reckon · original animation",
+      "music": "“Mesmerize” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
       "type": "timeline",
       "heading": "A very slow drip",
       "events": [
@@ -100,18 +121,6 @@
       "type": "text",
       "heading": "Solid or liquid?",
       "text": "Pitch can look like a rock, but it is a liquid with an enormous viscosity. Given years, it flows under its own weight into a drop. The room was never climate-controlled, so the flow rate drifted with the seasons until air conditioning was added."
-    },
-    {
-      "type": "quiz",
-      "question": "Why did nobody see the seventh drop fall in 1988?",
-      "options": [
-        "The custodian went for a drink",
-        "The lab was closed for a holiday",
-        "A power cut turned the lights off",
-        "It fell in the middle of the night"
-      ],
-      "answer": 0,
-      "explanation": "John Mainstone, custodian from 1961 to 2013, had stepped out for a drink. In 2000 a webcam was watching, but technical problems stopped it recording the eighth drop."
     }
   ],
   "tags": [

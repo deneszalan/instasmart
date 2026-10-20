@@ -22,6 +22,27 @@
       "explanation": "About 32 hours (the article gives 31.8 h). The rate depends on latitude: one day at the pole, slower towards the equator, where it stops altogether."
     },
     {
+      "type": "quiz",
+      "question": "Where would a Foucault pendulum’s swing plane never drift at all?",
+      "options": [
+        "At the North Pole",
+        "In Paris",
+        "On the equator",
+        "At the South Pole"
+      ],
+      "answer": 2,
+      "explanation": "On the equator Earth’s spin axis lies flat in the pendulum’s horizon, so there is no rotation about the vertical and the plane stays put. At the poles it turns once a day."
+    },
+    {
+      "type": "video",
+      "src": "pendulum-explainer.mp4",
+      "poster": "pendulum-explainer.jpg",
+      "alt": "Animation: a side view of Foucault’s pendulum under the Panthéon dome tips into a top view of a brass compass-rose floor dial. In time-lapse the swing line turns clockwise, 11.3° an hour, a full turn in 31.8 hours; then dials at the pole, Paris and the equator compare the rates.",
+      "fit": "cover",
+      "credit": "Reckon · original animation",
+      "music": "“Gymnopedie No. 1” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+    },
+    {
       "type": "stat",
       "value": "11.3°",
       "label": "an hour: the drift of the swing plane at the latitude of Paris",
@@ -33,7 +54,7 @@
       "items": [
         {
           "label": "North Pole",
-          "value": 24
+          "value": 23.9
         },
         {
           "label": "Paris (49° N)",
@@ -46,7 +67,7 @@
         }
       ],
       "unit": "h",
-      "note": "At the equator the plane never turns at all; south of it, the drift runs anticlockwise"
+      "note": "The pole takes one sidereal day, 23 h 56 min. At the equator the plane never turns"
     },
     {
       "type": "text",
@@ -74,18 +95,6 @@
           "text": "Museum cable snaps; the original bob is damaged"
         }
       ]
-    },
-    {
-      "type": "quiz",
-      "question": "Where would a Foucault pendulum’s swing plane never drift at all?",
-      "options": [
-        "At the North Pole",
-        "In Paris",
-        "On the equator",
-        "At the South Pole"
-      ],
-      "answer": 2,
-      "explanation": "On the equator Earth’s spin axis lies flat in the pendulum’s horizon, so there is no rotation about the vertical and the plane stays put. At the poles it turns once a day."
     }
   ],
   "tags": [
