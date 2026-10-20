@@ -5,7 +5,7 @@ import { FIELDS } from '../shared/fields.ts';
 import { readContentFiles } from '../scripts/disk.ts';
 import { validateContent } from '../shared/validate.ts';
 import { schemaText, SCHEMA_PATH } from '../scripts/content.ts';
-import { LIBRARY } from '../src/data/library';
+import { clipSeconds, LIBRARY } from '../src/data/library';
 
 const root = join(__dirname, '..');
 
@@ -23,6 +23,12 @@ describe('content/', () => {
 
   it('is what the app loads', () => {
     expect(LIBRARY.map((c) => c.id).sort()).toEqual(posts.map((p) => p.id).sort());
+  });
+
+  it('knows every clip\'s length before it loads', () => {
+    const clips = LIBRARY.flatMap((c) => c.slides ?? []).filter((s) => s.type === 'video');
+    expect(clips.length).toBeGreaterThan(200);
+    for (const clip of clips) expect(clipSeconds(clip.src), clip.src).toBeGreaterThanOrEqual(2);
   });
 
   it('has an up-to-date JSON Schema (run `npm run content -- schema`)', () => {

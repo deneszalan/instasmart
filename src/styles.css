@@ -768,6 +768,11 @@ p {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
 }
 
+.slide__video--watch {
+  padding: 8px 14px 8px 12px;
+  font-size: 13.5px;
+}
+
 .slide__center {
   position: relative;
   flex: 1;
@@ -3311,6 +3316,59 @@ p {
 
 .slide--video.slide--fit-cover .video__play {
   top: 50%;
+}
+
+/* An animation's start, end and come-back buttons: a labelled pill rather than a bare icon. */
+.video__play--pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: auto;
+  height: 52px;
+  margin: 0;
+  padding: 0 22px 0 18px;
+  border-radius: 26px;
+  background: rgba(0, 0, 0, 0.62);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+  font-size: 17px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+}
+
+.video__choices {
+  position: absolute;
+  z-index: 3;
+  top: 40%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.slide--video.slide--fit-cover .video__choices {
+  top: 50%;
+}
+
+.video__choices .video__play--pill {
+  position: static;
+  transform: none;
+}
+
+.video__choice {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .video__sound {
