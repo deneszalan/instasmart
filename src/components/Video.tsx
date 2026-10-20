@@ -11,7 +11,13 @@ import { clipSeconds } from '../data/library';
 type VideoSlide = Extract<Slide, { type: 'video' }>;
 
 /** Speeds the reader can pick. */
-export const SPEEDS = [0.75, 1, 1.25, 1.5, 2];
+export const SPEEDS = [0.75, 0.9, 1, 1.25, 1.5, 2];
+
+/** Animations carry captions to read, so unless the reader picks a speed they play a little slower. */
+export const ANIMATION_SPEED = 0.9;
+
+/** The speed a clip plays at: the one the reader picked, or the clip's own default. */
+export const clipSpeed = (picked: number | null, slide: { animation?: boolean }) => picked ?? (slide.animation ? ANIMATION_SPEED : 1);
 
 /** Taps this close to the left or right edge (as a share of the width) step back or forward. */
 const EDGE = 0.25;
@@ -74,7 +80,7 @@ export function VideoSlideView({ slide, card, start }: { slide: VideoSlide; card
   const hasSound = !!slide.music;
   const wantsSound = () => hasSound && (animation ? sound.wanted !== false : sound.wanted === true);
   const { state, updateSettings } = useStore();
-  const rate = state.settings.videoRate;
+  const rate = clipSpeed(state.settings.speed, slide);
   const steps = slide.steps ?? [];
   const stepMode = state.settings.stepMode && steps.length > 0;
   const [menuOpen, setMenuOpen] = useState(false);
@@ -463,7 +469,7 @@ export function VideoSlideView({ slide, card, start }: { slide: VideoSlide; card
               <span className="video__menu-label">Speed</span>
               <div className="video__rates">
                 {SPEEDS.map((speed) => (
-                  <button key={speed} aria-pressed={speed === rate} onClick={() => updateSettings({ videoRate: speed })}>
+                  <button key={speed} aria-pressed={speed === rate} onClick={() => updateSettings({ speed })}>
                     {speed}×
                   </button>
                 ))}

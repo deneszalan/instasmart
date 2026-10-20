@@ -15,7 +15,7 @@ import { inline } from '../lib/markdown';
 import { firstVideo } from '../lib/visual';
 import { useRoute } from '../lib/route';
 import { sound } from '../lib/sound';
-import { SPEEDS } from './Video';
+import { clipSpeed, SPEEDS } from './Video';
 
 type VideoSlide = Extract<Slide, { type: 'video' }>;
 
@@ -94,7 +94,6 @@ interface StoryViewerProps {
 /** Full-screen stories: tap right/left to move, hold to pause, finishes one story then moves to the next. */
 export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) {
   const { state, markStory, markSeen, updateSettings } = useStore();
-  const rate = state.settings.videoRate;
   const [storyIdx, setStoryIdx] = useState(startIndex);
   const [frame, setFrame] = useState(0);
   const [held, setHeld] = useState(false);
@@ -115,6 +114,7 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
   // Timed frames of posts with a clip play the clip instead of showing the text.
   const videoAt = timed ? firstVideo(card) : -1;
   const clip = videoAt >= 0 ? (card.slides![videoAt] as VideoSlide) : null;
+  const rate = clip ? clipSpeed(state.settings.speed, clip) : 1;
 
   const next = useCallback(() => {
     if (frame + 1 < story.cards.length) setFrame(frame + 1);
@@ -184,7 +184,7 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
   };
   const forcedMute = useCallback(() => setMuted(true), []);
   // One tap moves to the next speed, wrapping round; the reader's choice is shared with posts.
-  const nextSpeed = () => updateSettings({ videoRate: SPEEDS[(SPEEDS.indexOf(rate) + 1) % SPEEDS.length] });
+  const nextSpeed = () => updateSettings({ speed: SPEEDS[(SPEEDS.indexOf(rate) + 1) % SPEEDS.length] });
 
   const openPost = () => {
     onClose();
