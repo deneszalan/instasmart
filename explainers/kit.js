@@ -1,5 +1,7 @@
 // Shared helpers for explainer videos. A scene file (explainers/<post-id>.js) calls Kit.scene({ ... });
-// scripts/explainer.ts then calls window.render(t) for every frame. Frames depend only on t.
+// scripts/explainer.ts then calls window.render(t, clock) for every frame. t is story time: it stops
+// while the clip holds a step for reading. clock is the clip's own time and runs on through holds.
+// Frames depend only on t and clock.
 (() => {
   const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
   /** Progress from 0 to 1 as t goes from a to b. */
@@ -76,12 +78,14 @@
       }
     };
 
-    return { ctx, font, text, rrect, alpha, rich, captions };
+    return { ctx, font, text, rrect, alpha, rich, captions, clock: 0 };
   }
 
   /**
    * Set up a scene: canvas size, length in seconds, fonts from explainers/fonts/, and
-   * draw(t, k), where k holds the drawing tools above.
+   * draw(t, k), where k holds the drawing tools above and k.clock, the clip's own time. Tell the
+   * story with t; drive decorative motion that may go on while a step holds for reading (a glow,
+   * twinkling, drifting particles, an idle sway) with k.clock, so the picture stays alive.
    */
   function scene({ width = 864, height = 1080, duration, fonts = [], draw }) {
     const cv = document.getElementById('c');
@@ -90,7 +94,12 @@
     const ctx = cv.getContext('2d');
     const k = tools(ctx);
     window.DURATION = duration;
-    window.render = (t) => { ctx.save(); draw(t, k); ctx.restore(); };
+    window.render = (t, clock = t) => {
+      k.clock = clock;
+      ctx.save();
+      draw(t, k);
+      ctx.restore();
+    };
     const loads = fonts.map(({ family, file, weight = '100 900' }) =>
       new FontFace(family, `url(fonts/${file})`, { weight }).load().then((f) => document.fonts.add(f)));
     window.ready = Promise.all(loads).then(() => { window.render(0); return true; });

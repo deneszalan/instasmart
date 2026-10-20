@@ -290,7 +290,7 @@ function sceneClock(t) {
     // string
     ctx.strokeStyle = C.ink; ctx.lineWidth = 1.5;
     ctx.beginPath(); ctx.moveTo(tx, ty + 30); ctx.bezierCurveTo(tx - 30, ty - 20, tx + 40, ty - 60, tx + 6, ty - 90); ctx.stroke();
-    ctx.save(); ctx.translate(tx, ty + 150); ctx.rotate(Math.sin(t * 1.3) * 0.015 + pulse * 0.03); ctx.scale(1 + 0.05 * pulse, 1 + 0.05 * pulse); ctx.translate(-tx, -(ty + 150));
+    ctx.save(); ctx.translate(tx, ty + 150); ctx.rotate(Math.sin(ambient * 1.3) * 0.015 + pulse * 0.03); ctx.scale(1 + 0.05 * pulse, 1 + 0.05 * pulse); ctx.translate(-tx, -(ty + 150));
     const x0 = tx - 122, x1 = tx + 122, y0 = ty, y1 = ty + 300;
     const tag = () => { ctx.beginPath(); ctx.moveTo(tx - 50, y0); ctx.lineTo(tx + 50, y0); ctx.lineTo(x1, y0 + 56); ctx.lineTo(x1, y1 - 14); ctx.quadraticCurveTo(x1, y1, x1 - 14, y1); ctx.lineTo(x0 + 14, y1); ctx.quadraticCurveTo(x0, y1, x0, y1 - 14); ctx.lineTo(x0, y0 + 56); ctx.closePath(); };
     tag(); ctx.fillStyle = '#F7F1DE'; ctx.fill();
@@ -477,10 +477,15 @@ function sceneEnd(t) {
   });
 }
 
+// The clip's own time, from tools.clock: it runs on while a step holds for reading, so the decorative
+// motion below uses it; the story itself uses t.
+let ambient = 0;
+
 Kit.scene({
   width: W, height: H, duration: 54.5,
   fonts: [{ family: SERIF, file: 'PlayfairDisplay.woff2', weight: '400 900' }, { family: SANS, file: 'LibreFranklin.woff2', weight: '400 800' }],
   draw(t, tools) {
+    ambient = tools.clock;
     k = tools; ctx = tools.ctx;
     if (!BG) { BG = makeBackground(); DIAL = makeDial(); NOTE = makeNote(); }
     ctx.drawImage(BG, 0, 0);

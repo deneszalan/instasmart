@@ -122,8 +122,8 @@ function background(t) {
   // spotlight cones from the rig, breathing slowly
   const on = eout(seg(t, 0.1, 1.6));
   for (const [cx, sway] of [[214, 0], [432, 1.7], [650, 3.1]]) {
-    const a = on * (0.07 + 0.02 * Math.sin(t * 0.9 + sway));
-    const top = cx + Math.sin(t * 0.35 + sway) * 14;
+    const a = on * (0.07 + 0.02 * Math.sin(ambient * 0.9 + sway));
+    const top = cx + Math.sin(ambient * 0.35 + sway) * 14;
     const lg = ctx.createLinearGradient(0, 0, 0, 600);
     lg.addColorStop(0, `rgba(255,226,170,${a * 1.6})`); lg.addColorStop(1, 'rgba(255,226,170,0)');
     ctx.fillStyle = lg;
@@ -141,7 +141,7 @@ function bulbs(t, y, x0, x1, n, on = 1) {
   for (let i = 0; i < n; i++) {
     const x = lerp(x0, x1, i / (n - 1));
     const lit = on * seg(t, 0.15 + i * 0.03, 0.45 + i * 0.03);
-    const b = lit * (0.55 + 0.45 * (0.5 + 0.5 * Math.sin(t * 4.2 - i * 0.85)));
+    const b = lit * (0.55 + 0.45 * (0.5 + 0.5 * Math.sin(ambient * 4.2 - i * 0.85)));
     bulb(x, y, 7, b);
   }
 }
@@ -302,7 +302,7 @@ function sceneA(t) {
     const p = eout(seg(t, 0.3 + i * 0.18, 1.2 + i * 0.18));
     withAlpha(p, () => {
       ctx.save(); ctx.translate(0, (1 - p) * 50);
-      const glow = i === 0 ? [C.cherry, pickGlow * (0.75 + 0.25 * Math.sin(t * 3))] : i === 1 ? [C.gold, seg(t, 11.9, 12.4) * 0.8] : null;
+      const glow = i === 0 ? [C.cherry, pickGlow * (0.75 + 0.25 * Math.sin(ambient * 3))] : i === 1 ? [C.gold, seg(t, 11.9, 12.4) * 0.8] : null;
       door(bigX(i), BIG.y, BIG.w, BIG.h, { num: i + 1, open: i === 2 ? opened : 0, prize: i === 2 ? 'goat' : null, glow });
       ctx.restore();
     });
@@ -393,7 +393,7 @@ function sceneB(t) {
     font(400, 30, DISPLAY);
     const x = W / 2 - 8 - ctx.measureText(`GAME ${shown}`).width - 46, y = 193;
     ctx.fillStyle = C.gold;
-    withAlpha(0.6 + 0.4 * Math.sin(t * 10), () => {
+    withAlpha(0.6 + 0.4 * Math.sin(ambient * 10), () => {
       for (const ox of [0, 16]) { ctx.beginPath(); ctx.moveTo(x + ox, y - 11); ctx.lineTo(x + ox + 16, y); ctx.lineTo(x + ox, y + 11); ctx.closePath(); ctx.fill(); }
     });
   });
@@ -447,7 +447,7 @@ function sceneC(t) {
   const open3 = eio(seg(t, 44.0, 45.0));
   const slide = eio(seg(t, 45.3, 46.6));
   const otherGlow = seg(t, 39.0, 39.6) * (1 - 0.6 * seg(t, 45.3, 46.0));
-  const door2Glow = Math.max(otherGlow, seg(t, 46.2, 46.8) * (0.8 + 0.2 * Math.sin(t * 4)));
+  const door2Glow = Math.max(otherGlow, seg(t, 46.2, 46.8) * (0.8 + 0.2 * Math.sin(ambient * 4)));
   door(bigX(0), BIG.y, BIG.w, BIG.h, { num: 1, glow: [C.cherry, eout(seg(t, 34.8, 35.3)) * 0.7] });
   door(bigX(1), BIG.y, BIG.w, BIG.h, { num: 2, glow: [C.gold, door2Glow] });
   door(bigX(2), BIG.y, BIG.w, BIG.h, { num: 3, open: open3, prize: 'goat', glow: [C.gold, otherGlow * (1 - seg(t, 44.6, 45.4))], dim: 0.35 * seg(t, 45.6, 46.4) });
@@ -496,7 +496,7 @@ function sceneD(t) {
       else if ((d -= iw) < ih) { bx = bw / 2 - 22; by = -ih / 2 + d; }
       else if ((d -= ih) < iw) { bx = iw / 2 - d; by = bh / 2 - 22; }
       else { d -= iw; bx = -bw / 2 + 22; by = ih / 2 - d; }
-      bulb(bx, by, 6, 0.55 + 0.45 * (0.5 + 0.5 * Math.sin(t * 6 - i * 0.7)));
+      bulb(bx, by, 6, 0.55 + 0.45 * (0.5 + 0.5 * Math.sin(ambient * 6 - i * 0.7)));
     }
     font(400, 104, DISPLAY); text('SWITCH!', 0, -70, { color: C.gold, align: 'center', base: 'middle' });
     font(700, 44); text('You win the car', 0, 34, { color: C.cream, align: 'center', base: 'middle' });
@@ -532,6 +532,10 @@ function captions(t) {
   }
 }
 
+// The clip's own time, from tools.clock: it runs on while a step holds for reading, so the decorative
+// motion below uses it; the story itself uses t.
+let ambient = 0;
+
 Kit.scene({
   width: W, height: H, duration: 54,
   fonts: [
@@ -540,6 +544,7 @@ Kit.scene({
     { family: TEXT, file: 'Barlow-Bold.woff2', weight: '700' },
   ],
   draw(t, tools) {
+    ambient = tools.clock;
     k = tools; ctx = tools.ctx;
     background(t);
     const scenes = [[sceneA, T.A, 0], [sceneB, T.B], [sceneC, T.C], [sceneD, T.D, 0.4, 0]];

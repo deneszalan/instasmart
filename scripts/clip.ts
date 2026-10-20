@@ -11,7 +11,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
 import { mediaPath, mediaProblems } from '../shared/validate.ts';
-import { MAX_VIDEO_BYTES, MAX_VIDEO_SECONDS, MIN_VIDEO_SECONDS, readMp4 } from '../shared/video.ts';
+import { MAX_FOOTAGE_BYTES, MAX_FOOTAGE_SECONDS, MIN_VIDEO_SECONDS, readMp4 } from '../shared/video.ts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -22,7 +22,7 @@ function run(cmd: string, args: string[]): string {
   return `${result.stdout}${result.stderr}`;
 }
 
-function duration(file: string): number {
+export function duration(file: string): number {
   const out = run('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=nw=1:nk=1', file]);
   const seconds = Number.parseFloat(out.trim());
   if (!Number.isFinite(seconds)) throw new Error(`could not read the length of ${file}`);
@@ -84,8 +84,8 @@ function main(): number {
   const end = Number(values.end);
   const length = end - start;
   const sourceLength = duration(input);
-  if (!(start >= 0 && end <= sourceLength + 0.01 && length >= MIN_VIDEO_SECONDS && length <= MAX_VIDEO_SECONDS)) {
-    console.error(`Pick --start/--end inside the ${sourceLength.toFixed(1)} s source, ${MIN_VIDEO_SECONDS}–${MAX_VIDEO_SECONDS} s apart.`);
+  if (!(start >= 0 && end <= sourceLength + 0.01 && length >= MIN_VIDEO_SECONDS && length <= MAX_FOOTAGE_SECONDS)) {
+    console.error(`Pick --start/--end inside the ${sourceLength.toFixed(1)} s source, ${MIN_VIDEO_SECONDS}–${MAX_FOOTAGE_SECONDS} s apart.`);
     return 1;
   }
   const width = Number(values.width);
@@ -132,7 +132,7 @@ function main(): number {
     }
     args.push('-t', String(length), '-movflags', '+faststart', clip);
     run('ffmpeg', args);
-    if (statSync(clip).size <= MAX_VIDEO_BYTES * 0.95) break;
+    if (statSync(clip).size <= MAX_FOOTAGE_BYTES * 0.95) break;
   }
 
   const stillAt = start + (values.still === undefined ? Math.min(1, length / 2) : Number(values.still));

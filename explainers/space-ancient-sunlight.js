@@ -224,7 +224,7 @@ function drawSun(cx, cy, r, cut, t, glow = 1) {
   ctx.save();
   ctx.beginPath(); ctx.arc(cx, cy, r, 0, TAU); ctx.clip();
   const s = r / 300;
-  granPattern.setTransform(new DOMMatrix().translate(cx + t * 6 * s, cy + 0.5 * s).scale(s));
+  granPattern.setTransform(new DOMMatrix().translate(cx + ambient * 6 * s, cy + 0.5 * s).scale(s));
   ctx.fillStyle = granPattern; ctx.fillRect(cx - r, cy - r, 2 * r, 2 * r);
   const limb = ctx.createRadialGradient(cx - r * 0.12, cy - r * 0.12, 0, cx, cy, r);
   limb.addColorStop(0, 'rgba(255,244,200,0.22)'); limb.addColorStop(0.55, 'rgba(255,200,120,0)');
@@ -250,7 +250,7 @@ function drawCutaway(cx, cy, r, cut, t) {
     ctx.save(); ctx.translate(x, y); ctx.rotate(th);
     ctx.beginPath(); ctx.ellipse(0, 0, r * 0.11, r * 0.135, 0, 0, TAU);
     ctx.fillStyle = 'rgba(255,180,80,0.14)'; ctx.fill();
-    ctx.setLineDash([9, 7]); ctx.lineDashOffset = (i % 2 ? 1 : -1) * t * 16;
+    ctx.setLineDash([9, 7]); ctx.lineDashOffset = (i % 2 ? 1 : -1) * ambient * 16;
     ctx.strokeStyle = 'rgba(255,214,140,0.55)'; ctx.lineWidth = 2.2; ctx.stroke();
     ctx.setLineDash([]);
     ctx.restore();
@@ -381,7 +381,7 @@ function sunLayer(t) {
     // a glow deep inside while the question is asked
     withAlpha(span(t, 4.0, 9.0, 0.8, 0.8) * 0.8, () => {
       const g = ctx.createRadialGradient(cx, cy, 0, cx, cy, r * 0.42);
-      const p = 0.75 + 0.25 * Math.sin(t * 3.2);
+      const p = 0.75 + 0.25 * Math.sin(ambient * 3.2);
       g.addColorStop(0, `rgba(255,255,235,${0.7 * p})`); g.addColorStop(1, 'rgba(255,230,160,0)');
       ctx.fillStyle = g; ctx.beginPath(); ctx.arc(cx, cy, r * 0.42, 0, TAU); ctx.fill();
     });
@@ -628,10 +628,15 @@ function sceneG(t) {
   });
 }
 
+// The clip's own time, from tools.clock: it runs on while a step holds for reading, so the decorative
+// motion below uses it; the story itself uses t.
+let ambient = 0;
+
 Kit.scene({
   width: W, height: H, duration: 53.5,
   fonts: [{ family: F, file: 'Exo2.woff2', weight: '400 800' }],
   draw(t, tools) {
+    ambient = tools.clock;
     k = tools; ctx = tools.ctx;
     if (!granPattern) granPattern = ctx.createPattern(GRAN, 'repeat');
     background();

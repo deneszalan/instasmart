@@ -172,9 +172,19 @@ export const STEP_STILL_BEFORE_END = 0.3;
  */
 export const stepStill = (step: { start: number; end: number }) => Math.max(step.start, step.end - STEP_STILL_BEFORE_END);
 
-export const MAX_VIDEO_BYTES = 3_000_000;
+/**
+ * Where a step's reading hold begins. An animation holds a text-heavy step finished (the story stops,
+ * decorative motion and the music go on) for its `hold` seconds, ending at its still.
+ */
+export const holdStart = (step: { start: number; end: number; hold?: number }) => stepStill(step) - (step.hold ?? 0);
+
+/** Any clip. Animations, which hold steps for reading, may come close to these. */
+export const MAX_VIDEO_BYTES = 4_000_000;
 export const MIN_VIDEO_SECONDS = 2;
-export const MAX_VIDEO_SECONDS = 60;
+export const MAX_VIDEO_SECONDS = 90;
+/** Footage stays shorter and lighter. */
+export const MAX_FOOTAGE_BYTES = 3_000_000;
+export const MAX_FOOTAGE_SECONDS = 60;
 export const MAX_VIDEO_WIDTH = 1080;
 
 /** Everything wrong with a clip, in words a contributor can act on. */
