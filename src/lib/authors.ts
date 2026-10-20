@@ -1,4 +1,5 @@
 import type { KnowledgeCard } from '../types';
+import { t } from '../i18n';
 
 /** Who wrote a post, grouped for badges and the "Written by" filter. */
 export interface AuthorGroup {
@@ -15,8 +16,8 @@ const KNOWN_AI: (AuthorGroup & { match: RegExp })[] = [
   { id: 'fable', label: 'Fable', match: /\bfable\b/i },
 ];
 
-const OTHER_AI: AuthorGroup = { id: 'ai', label: 'Other AI' };
-const PEOPLE: AuthorGroup = { id: 'people', label: 'People' };
+const OTHER_AI: AuthorGroup = { id: 'ai', label: t('Other AI') };
+const PEOPLE: AuthorGroup = { id: 'people', label: t('People') };
 
 export function authorGroup(card: KnowledgeCard): AuthorGroup | null {
   const author = card.author;
@@ -29,7 +30,7 @@ export function authorGroup(card: KnowledgeCard): AuthorGroup | null {
 /** The badge text: a known AI by name, any other AI as plain "AI". People get no badge. */
 export function badgeLabel(group: AuthorGroup): string | null {
   if (group.id === PEOPLE.id) return null;
-  return group.id === OTHER_AI.id ? 'AI' : group.label;
+  return group.id === OTHER_AI.id ? t('AI') : group.label;
 }
 
 /** Filters to offer: every known AI writer (even before it has posts), then any other group in the library. */

@@ -22,4 +22,5 @@ jobs:
         run: npm run content
       - run: npm run typecheck
       - run: npm test
-      - run: npx vite build
+      - name: Build both apps
+        run: npx vite build && npx vite build --mode lesefutter

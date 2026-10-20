@@ -4,6 +4,7 @@ import { buildStories } from '../lib/stories';
 import { localDay, useStore } from '../state/store';
 import { Avatar } from './Avatar';
 import { StoryViewer } from './StoryViewer';
+import { t } from '../i18n';
 
 export function StoriesBar() {
   const { state } = useStore();
@@ -21,7 +22,7 @@ export function StoriesBar() {
 
   return (
     <>
-      <nav className="stories" aria-label="Stories">
+      <nav className="stories" aria-label={t('Stories')}>
         {stories.map((story, i) => {
           const watched = state.storiesViewed[story.id] === today;
           return (

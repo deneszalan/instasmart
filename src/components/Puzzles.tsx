@@ -4,6 +4,7 @@ import type { Slide } from '../types';
 import { stableShuffle } from '../lib/interactive';
 import { inline } from '../lib/markdown';
 import { useRecord } from './useRecord';
+import { t } from '../i18n';
 
 type Of<T extends Slide['type']> = Extract<Slide, { type: T }>;
 
@@ -68,10 +69,10 @@ export function MatchSlideView({ slide, challengeId }: Props<'match'>) {
 
   return (
     <div className="slide__center interactive" data-interactive>
-      <p className="slide__heading">Match the pairs</p>
+      <p className="slide__heading">{t('Match the pairs')}</p>
       <p className="interactive__question">{inline(slide.heading)}</p>
       <div className={`match${slide.pairs.length >= 5 ? ' match--5' : ''}`}>
-        <div className="match__col" role="group" aria-label="Left column">
+        <div className="match__col" role="group" aria-label={t('Left column')}>
           {slide.pairs.map((p, i) => (
             <button
               key={i}
@@ -84,7 +85,7 @@ export function MatchSlideView({ slide, challengeId }: Props<'match'>) {
             </button>
           ))}
         </div>
-        <div className="match__col" role="group" aria-label="Right column">
+        <div className="match__col" role="group" aria-label={t('Right column')}>
           {rights.map((i) => (
             <button
               key={i}
@@ -101,10 +102,10 @@ export function MatchSlideView({ slide, challengeId }: Props<'match'>) {
       <p className="interactive__result" role="status" aria-live="polite">
         {done && (
           <>
-            <strong>{misses === 0 ? 'Perfect match! ' : misses === 1 ? 'Done, with one slip. ' : `Done, with ${misses} slips. `}</strong>
+            <strong>{misses === 0 ? t('Perfect match! ') : misses === 1 ? t('Done, with one slip. ') : t('Done, with {n} slips. ', { n: misses })}</strong>
             {slide.explanation && inline(slide.explanation)}{' '}
             <button className="link-btn link-btn--light" onClick={reset}>
-              <RotateCcw size={13} /> Again
+              <RotateCcw size={13} /> {t('Again')}
             </button>
           </>
         )}
@@ -136,7 +137,7 @@ export function SortSlideView({ slide, challengeId }: Props<'sort'>) {
 
   return (
     <div className="slide__center interactive" data-interactive>
-      <p className="slide__heading">Sort them</p>
+      <p className="slide__heading">{t('Sort them')}</p>
       <p className="interactive__question">{inline(slide.heading)}</p>
       <div className="sort__dots" aria-hidden="true">
         {slide.items.map((item, i) => (
@@ -149,7 +150,7 @@ export function SortSlideView({ slide, challengeId }: Props<'sort'>) {
         ))}
       </div>
       {done ? (
-        <ul className="sort__review" aria-label="How you did">
+        <ul className="sort__review" aria-label={t('How you did')}>
           {slide.items.map((item, i) => {
             const ok = answers[i] === item.bin;
             return (
@@ -167,7 +168,7 @@ export function SortSlideView({ slide, challengeId }: Props<'sort'>) {
           <div className={`sort__card${flash === null ? '' : flash ? ' sort__card--right' : ' sort__card--wrong'}`} role="status" aria-live="polite">
             {inline(slide.items[index].text)}
           </div>
-          <div className="sort__bins" role="group" aria-label="Bins">
+          <div className="sort__bins" role="group" aria-label={t('Bins')}>
             {slide.bins.map((bin, i) => (
               <button key={i} className="choice sort__bin" onClick={() => choose(i)} disabled={flash !== null}>
                 {bin}
@@ -179,7 +180,7 @@ export function SortSlideView({ slide, challengeId }: Props<'sort'>) {
       <p className="interactive__result" role="status" aria-live="polite">
         {done && (
           <>
-            <strong>{right === slide.items.length ? 'All sorted! ' : `${right} of ${slide.items.length} right. `}</strong>
+            <strong>{right === slide.items.length ? t('All sorted! ') : t('{n} of {total} right. ', { n: right, total: slide.items.length })}</strong>
             {slide.explanation && inline(slide.explanation)}
           </>
         )}
@@ -232,12 +233,12 @@ export function ScrambleSlideView({ slide, challengeId }: Props<'scramble'>) {
 
   return (
     <div className="slide__center interactive" data-interactive>
-      <p className="slide__heading">Unscramble</p>
+      <p className="slide__heading">{t('Unscramble')}</p>
       <p className="interactive__question">{inline(slide.clue)}</p>
       <div
         className={`scramble__word${status === 'wrong' ? ' scramble__word--wrong' : over ? ' scramble__word--solved' : ''}`}
         role="group"
-        aria-label={`Your word so far: ${placed.map((i) => letters[i]).join('') || 'nothing'}`}
+        aria-label={t('Your word so far: {word}', { word: placed.map((i) => letters[i]).join('') || t('nothing') })}
       >
         {letters.map((_, pos) => (
           <button
@@ -245,13 +246,13 @@ export function ScrambleSlideView({ slide, challengeId }: Props<'scramble'>) {
             className="scramble__slot"
             onClick={() => remove(pos)}
             disabled={over || pos >= placed.length}
-            aria-label={pos < placed.length ? `Remove ${letters[placed[pos]]}` : 'Empty'}
+            aria-label={pos < placed.length ? t('Remove {letter}', { letter: letters[placed[pos]] }) : t('Empty')}
           >
             {pos < placed.length ? letters[placed[pos]] : ''}
           </button>
         ))}
       </div>
-      <div className="scramble__tiles" role="group" aria-label="Letters">
+      <div className="scramble__tiles" role="group" aria-label={t('Letters')}>
         {tiles.map((tile) => (
           <button key={tile} className="scramble__tile" onClick={() => add(tile)} disabled={over || placed.includes(tile)}>
             {letters[tile]}
@@ -264,37 +265,37 @@ export function ScrambleSlideView({ slide, challengeId }: Props<'scramble'>) {
             {placed.length > 0 && (
               <>
                 <button className="link-btn link-btn--light" onClick={clear}>
-                  <RotateCcw size={13} /> Clear
+                  <RotateCcw size={13} /> {t('Clear')}
                 </button>
                 {' · '}
               </>
             )}
             <button className="link-btn link-btn--light" onClick={reveal}>
-              <Eye size={13} /> Show answer
+              <Eye size={13} /> {t('Show answer')}
             </button>
           </>
         )}
         {status === 'solved' && (
           <>
-            <strong>Solved! </strong>
+            <strong>{t('Solved! ')}</strong>
             {slide.detail && inline(slide.detail)}
           </>
         )}
         {status === 'revealed' && (
           <>
-            <strong>It was {letters.join('')}. </strong>
+            <strong>{t('It was {word}. ', { word: letters.join('') })}</strong>
             {slide.detail && inline(slide.detail)}
           </>
         )}
         {status === 'wrong' && (
           <>
-            <strong>Not that. </strong>
+            <strong>{t('Not that. ')}</strong>
             <button className="link-btn link-btn--light" onClick={clear}>
-              <RotateCcw size={13} /> Clear
+              <RotateCcw size={13} /> {t('Clear')}
             </button>
             {' · '}
             <button className="link-btn link-btn--light" onClick={reveal}>
-              <Eye size={13} /> Show answer
+              <Eye size={13} /> {t('Show answer')}
             </button>
           </>
         )}
@@ -317,15 +318,15 @@ export function OddSlideView({ slide, challengeId }: Props<'odd'>) {
 
   return (
     <div className="slide__center interactive" data-interactive>
-      <p className="slide__heading">Odd one out</p>
-      <p className="interactive__question">{inline(slide.heading ?? 'Which one doesn’t belong?')}</p>
-      <div className="odd" role="group" aria-label="Options">
+      <p className="slide__heading">{t('Odd one out')}</p>
+      <p className="interactive__question">{inline(slide.heading ?? t('Which one doesn’t belong?'))}</p>
+      <div className="odd" role="group" aria-label={t('Options')}>
         {slide.items.map((item, i) => {
           const state = !done ? '' : i === slide.answer ? ' choice--right' : i === picked ? ' choice--wrong' : ' choice--dim';
           return (
             <button key={i} className={`choice odd__item${state}`} onClick={() => choose(i)} disabled={done} aria-pressed={picked === i}>
               <span>{item}</span>
-              {done && i === slide.answer && <Check size={18} aria-label="The odd one out" />}
+              {done && i === slide.answer && <Check size={18} aria-label={t('The odd one out')} />}
             </button>
           );
         })}
@@ -333,7 +334,7 @@ export function OddSlideView({ slide, challengeId }: Props<'odd'>) {
       <p className="interactive__result" role="status" aria-live="polite">
         {done && (
           <>
-            <strong>{picked === slide.answer ? 'Right! ' : 'Not that one. '}</strong>
+            <strong>{picked === slide.answer ? t('Right! ') : t('Not that one. ')}</strong>
             {inline(slide.explanation)}
           </>
         )}

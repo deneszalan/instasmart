@@ -1,4 +1,6 @@
 import { Component, type ErrorInfo, type ReactNode } from 'react';
+import { t } from '../i18n';
+import { EDITION } from '../edition';
 
 interface Props {
   children: ReactNode;
@@ -8,7 +10,8 @@ interface State {
   error: Error | null;
 }
 
-const STORAGE_KEYS = ['reckon:v1', 'instasmart:v1'];
+// Reckon also clears where it saved progress under its old name.
+const STORAGE_KEYS = EDITION.id === 'reckon' ? [EDITION.storageKey, 'instasmart:v1'] : [EDITION.storageKey];
 
 /**
  * Catches rendering errors so a bug shows a message and a way back,
@@ -22,7 +25,7 @@ export class ErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, info: ErrorInfo) {
-    console.error('Reckon crashed:', error, info.componentStack);
+    console.error(`${EDITION.name} crashed:`, error, info.componentStack);
   }
 
   render() {
@@ -42,22 +45,24 @@ export class ErrorBoundary extends Component<Props, State> {
 
     return (
       <div className="crash" role="alert">
-        <h1 className="crash__title">Something went wrong</h1>
-        <p className="crash__sub">The page hit an error it couldn’t recover from. Reloading usually fixes it.</p>
+        <h1 className="crash__title">{t('Something went wrong')}</h1>
+        <p className="crash__sub">{t('The page hit an error it couldn’t recover from. Reloading usually fixes it.')}</p>
         <pre className="crash__detail">
           {error.name}: {error.message}
         </pre>
         <div className="crash__actions">
           <button className="btn btn--primary" onClick={reload}>
-            Reload
+            {t('Reload')}
           </button>
           <button className="btn btn--danger" onClick={reset}>
-            Clear saved progress and reload
+            {t('Clear saved progress and reload')}
           </button>
         </div>
-        <p className="crash__hint">
-          If it keeps happening, copy the message above into an issue at github.com/deneszalan/instasmart.
-        </p>
+        {EDITION.id === 'reckon' && (
+          <p className="crash__hint">
+            If it keeps happening, copy the message above into an issue at github.com/deneszalan/instasmart.
+          </p>
+        )}
       </div>
     );
   }

@@ -2,6 +2,7 @@ import { useEffect, useRef, type ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 import { X } from 'lucide-react';
 import { lockScroll } from '../lib/scrollLock';
+import { t } from '../i18n';
 
 interface SheetProps {
   title: string;
@@ -48,7 +49,7 @@ export function Sheet({ title, onClose, children, variant = 'sheet' }: SheetProp
         <div className="panel__bar">
           {variant === 'sheet' && <span className="panel__grip" aria-hidden="true" />}
           <h2 className="panel__title">{title}</h2>
-          <button className="icon-btn panel__close" onClick={onClose} aria-label="Close">
+          <button className="icon-btn panel__close" onClick={onClose} aria-label={t('Close')}>
             <X size={22} />
           </button>
         </div>

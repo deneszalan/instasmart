@@ -6,6 +6,7 @@ import { stableShuffle } from '../lib/interactive';
 import { inline } from '../lib/markdown';
 import { useRecord } from './useRecord';
 import { ChartRows, PictogramGrid } from './Visual';
+import { t } from '../i18n';
 
 type Of<T extends Slide['type']> = Extract<Slide, { type: T }>;
 
@@ -38,22 +39,22 @@ export function RankSlideView({ slide, challengeId }: Props<'rank'>) {
 
   return (
     <div className="slide__center interactive" data-interactive>
-      <p className="slide__heading">Rank them</p>
+      <p className="slide__heading">{t('Rank them')}</p>
       <p className="interactive__question">{inline(slide.heading)}</p>
       {done ? (
         <ChartRows
           unit={slide.unit}
-          label="The real order"
+          label={t('The real order')}
           rows={truth.map((i, pos) => {
             const yours = picks.indexOf(i);
             const ok = yours === pos;
-            return { ...slide.items[i], state: ok ? 'right' : 'wrong', tag: <Tag ok={ok}>{`you: ${yours + 1}`}</Tag> };
+            return { ...slide.items[i], state: ok ? 'right' : 'wrong', tag: <Tag ok={ok}>{t('you: {n}', { n: yours + 1 })}</Tag> };
           })}
         />
       ) : (
         <>
-          <p className="rank__hint">Tap them from largest to smallest</p>
-          <ol className={`choices${slide.items.length >= 5 ? ' choices--5' : ''}`} aria-label="Items to rank">
+          <p className="rank__hint">{t('Tap them from largest to smallest')}</p>
+          <ol className={`choices${slide.items.length >= 5 ? ' choices--5' : ''}`} aria-label={t('Items to rank')}>
             {shuffled.map((i) => {
               const pos = picks.indexOf(i);
               return (
@@ -74,16 +75,16 @@ export function RankSlideView({ slide, challengeId }: Props<'rank'>) {
       <p className="interactive__result" role="status" aria-live="polite">
         {done ? (
           <>
-            <strong>{right === slide.items.length ? 'Perfect order! ' : `${right} of ${slide.items.length} in the right place. `}</strong>
+            <strong>{right === slide.items.length ? t('Perfect order! ') : t('{n} of {total} in the right place. ', { n: right, total: slide.items.length })}</strong>
             {slide.explanation && inline(slide.explanation)}{' '}
             <button className="link-btn link-btn--light" onClick={() => setPicks([])}>
-              <RotateCcw size={13} /> Try again
+              <RotateCcw size={13} /> {t('Try again')}
             </button>
           </>
         ) : (
           picks.length > 0 && (
             <button className="link-btn link-btn--light" onClick={() => setPicks([])}>
-              <RotateCcw size={13} /> Reset
+              <RotateCcw size={13} /> {t('Reset')}
             </button>
           )
         )}
@@ -117,28 +118,28 @@ export function HigherSlideView({ slide, challengeId }: Props<'higher'>) {
 
   return (
     <div className="slide__center interactive" data-interactive>
-      <p className="slide__heading">Higher or lower?</p>
+      <p className="slide__heading">{t('Higher or lower?')}</p>
       <p className="interactive__question">{inline(slide.heading)}</p>
-      <ChartRows rows={rows} unit={slide.unit} label="Bars so far" />
+      <ChartRows rows={rows} unit={slide.unit} label={t('Bars so far')} />
       {done ? (
         <>
           {slide.note && <p className="visual__note">{inline(slide.note)}</p>}
           <p className="interactive__result" role="status" aria-live="polite">
-            <strong>{right === guesses.length ? 'All right! ' : `${right} of ${guesses.length} right. `}</strong>
+            <strong>{right === guesses.length ? t('All right! ') : t('{n} of {total} right. ', { n: right, total: guesses.length })}</strong>
             {slide.explanation && inline(slide.explanation)}
           </p>
         </>
       ) : (
         <>
           <p className="higher__ask">
-            {slide.items[revealed].label}: higher or lower than {slide.items[revealed - 1].label}?
+            {t('{item}: higher or lower than {other}?', { item: slide.items[revealed].label, other: slide.items[revealed - 1].label })}
           </p>
-          <div className="higher__btns" role="group" aria-label="Your guess">
+          <div className="higher__btns" role="group" aria-label={t('Your guess')}>
             <button className="choice higher__btn" onClick={() => guess(true)}>
-              Higher ↑
+              {t('Higher')} ↑
             </button>
             <button className="choice higher__btn" onClick={() => guess(false)}>
-              Lower ↓
+              {t('Lower')} ↓
             </button>
           </div>
         </>
@@ -154,7 +155,7 @@ export function FillSlideView({ slide, challengeId }: Props<'fill'>) {
   const [locked, setLocked] = useState(false);
   const off = Math.abs(count - slide.answer);
   const tolerance = Math.max(1, Math.round(slide.total * 0.1));
-  const verdict = off === 0 ? 'Spot on!' : off <= tolerance ? 'Close!' : 'Not quite.';
+  const verdict = off === 0 ? t('Spot on!') : off <= tolerance ? t('Close!') : t('Not quite.');
   const share = (n: number) => `${(n / slide.total) * 100}%`;
 
   const lock = () => {
@@ -164,13 +165,13 @@ export function FillSlideView({ slide, challengeId }: Props<'fill'>) {
 
   return (
     <div className="slide__center interactive" data-interactive>
-      <p className="slide__heading">Fill it in</p>
+      <p className="slide__heading">{t('Fill it in')}</p>
       <p className="interactive__question">{inline(slide.question)}</p>
       <PictogramGrid
         icon={slide.icon}
         total={slide.total}
         count={locked ? slide.answer : count}
-        label={locked ? `Really ${slide.answer} of ${slide.total}` : `Your guess: ${count} of ${slide.total}`}
+        label={locked ? t('Really {n} of {total}', { n: slide.answer, total: slide.total }) : t('Your guess: {n} of {total}', { n: count, total: slide.total })}
         onTap={locked ? undefined : (i) => setCount(i + 1 === count ? i : i + 1)}
         revealed={locked}
       />
@@ -178,14 +179,14 @@ export function FillSlideView({ slide, challengeId }: Props<'fill'>) {
         <div role="status" aria-live="polite">
           <div className="estimate__bars fill__bars">
             <div className="estimate__row">
-              <span>You</span>
+              <span>{t('You')}</span>
               <span className="estimate__bar">
                 <span style={{ width: share(count) }} />
               </span>
               <strong>{count}</strong>
             </div>
             <div className="estimate__row estimate__row--answer">
-              <span>Real</span>
+              <span>{t('Real')}</span>
               <span className="estimate__bar">
                 <span style={{ width: share(slide.answer) }} />
               </span>
@@ -200,11 +201,11 @@ export function FillSlideView({ slide, challengeId }: Props<'fill'>) {
       ) : (
         <>
           <p className="fill__count" aria-live="polite">
-            <strong>{count}</strong> of {slide.total}
-            {count === 0 && <span className="fill__nudge"> · tap the icons</span>}
+            {t('{n} of {total}', { n: count, total: slide.total })}
+            {count === 0 && <span className="fill__nudge"> · {t('tap the icons')}</span>}
           </p>
           <button className="btn btn--light" onClick={lock}>
-            Lock in my guess
+            {t('Lock in my guess')}
           </button>
         </>
       )}
@@ -221,7 +222,7 @@ export function PlaceSlideView({ slide, challengeId }: Props<'place'>) {
   const [locked, setLocked] = useState(false);
   const pct = (v: number) => ((v - slide.min) / span) * 100;
   const off = Math.abs(value - slide.answer) / span;
-  const verdict = off <= 0.02 ? 'Spot on!' : off <= 0.1 ? 'Close!' : off <= 0.25 ? 'Not far off.' : 'Way off, but now you know.';
+  const verdict = off <= 0.02 ? t('Spot on!') : off <= 0.1 ? t('Close!') : off <= 0.25 ? t('Not far off.') : t('Way off, but now you know.');
   const [low, high] = slide.colors ?? ['#38bdf8', '#fbbf24'];
   const format = slide.format ?? guessFormat(slide.unit, [slide.min, slide.max, slide.answer, ...(slide.hints ?? []).map((h) => h.value)]);
   const show = (v: number) => withUnit(v, slide.unit, format);
@@ -235,7 +236,7 @@ export function PlaceSlideView({ slide, challengeId }: Props<'place'>) {
 
   return (
     <div className="slide__center interactive" data-interactive>
-      <p className="slide__heading">Place it</p>
+      <p className="slide__heading">{t('Place it')}</p>
       <p className="interactive__question">{inline(slide.question)}</p>
       <div className="place">
         {hints.length > 0 && (
@@ -275,10 +276,10 @@ export function PlaceSlideView({ slide, challengeId }: Props<'place'>) {
         <div role="status" aria-live="polite">
           <p className="place__legend">
             <span>
-              <i className="place__key place__key--you" /> You: {show(value)}
+              <i className="place__key place__key--you" /> {t('You: {value}', { value: show(value) })}
             </span>
             <span>
-              <i className="place__key place__key--real" /> Real: {show(slide.answer)}
+              <i className="place__key place__key--real" /> {t('Real: {value}', { value: show(slide.answer) })}
             </span>
           </p>
           <p className="interactive__result">
@@ -292,7 +293,7 @@ export function PlaceSlideView({ slide, challengeId }: Props<'place'>) {
             {show(value)}
           </p>
           <button className="btn btn--light" onClick={lock}>
-            Lock in my guess
+            {t('Lock in my guess')}
           </button>
         </>
       )}

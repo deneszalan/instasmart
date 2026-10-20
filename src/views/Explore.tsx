@@ -9,6 +9,7 @@ import { firstAnimation, firstFootage, firstVisual } from '../lib/visual';
 import { createRng, searchCards, shuffle } from '../lib/feed';
 import { Tile } from '../components/Tile';
 import { WRITERS, WriterChips } from '../components/WriterChips';
+import { t } from '../i18n';
 
 interface ExploreProps {
   query: string;
@@ -18,6 +19,14 @@ interface ExploreProps {
   onAuthor: (id: string) => void;
   onOpen: (id: string) => void;
 }
+
+/** The kind filters this library has posts for; a filter that finds nothing isn't offered. */
+const KINDS = {
+  interactive: LIBRARY.some((c) => firstInteractive(c) >= 0),
+  visual: LIBRARY.some((c) => firstVisual(c) >= 0),
+  video: LIBRARY.some((c) => firstFootage(c) >= 0),
+  animation: LIBRARY.some((c) => firstAnimation(c) >= 0),
+};
 
 /** Every 10 tiles, two are tall — the mosaic look of an explore grid. */
 const isTall = (i: number) => i % 10 === 2 || i % 10 === 5;
@@ -54,33 +63,41 @@ export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExplorePro
           <Search size={18} aria-hidden="true" />
           <input
             type="search"
-            placeholder="Search topics, ideas or #tags"
+            placeholder={t('Search topics, ideas or #tags')}
             value={query}
             onChange={(e) => onQuery(e.target.value)}
-            aria-label="Search knowledge"
+            aria-label={t('Search knowledge')}
           />
           {query && (
-            <button className="search__clear" onClick={() => onQuery('')} aria-label="Clear search">
+            <button className="search__clear" onClick={() => onQuery('')} aria-label={t('Clear search')}>
               <X size={16} />
             </button>
           )}
         </label>
-        <div className="chips" role="group" aria-label="Fields">
+        <div className="chips" role="group" aria-label={t('Fields')}>
           <button aria-pressed={field === 'all'} className="chip" onClick={() => setField('all')}>
-            All
+            {t('All')}
           </button>
-          <button aria-pressed={interactiveOnly} className="chip" onClick={() => setInteractiveOnly((v) => !v)}>
-            🎯 Interactive
-          </button>
-          <button aria-pressed={visualOnly} className="chip" onClick={() => setVisualOnly((v) => !v)}>
-            📊 Visual
-          </button>
-          <button aria-pressed={videoOnly} className="chip" onClick={() => setVideoOnly((v) => !v)}>
-            🎬 Video
-          </button>
-          <button aria-pressed={animationOnly} className="chip" onClick={() => setAnimationOnly((v) => !v)}>
-            ✨ Animation
-          </button>
+          {KINDS.interactive && (
+            <button aria-pressed={interactiveOnly} className="chip" onClick={() => setInteractiveOnly((v) => !v)}>
+              🎯 {t('Interactive')}
+            </button>
+          )}
+          {KINDS.visual && (
+            <button aria-pressed={visualOnly} className="chip" onClick={() => setVisualOnly((v) => !v)}>
+              📊 {t('Visual')}
+            </button>
+          )}
+          {KINDS.video && (
+            <button aria-pressed={videoOnly} className="chip" onClick={() => setVideoOnly((v) => !v)}>
+              🎬 {t('Video')}
+            </button>
+          )}
+          {KINDS.animation && (
+            <button aria-pressed={animationOnly} className="chip" onClick={() => setAnimationOnly((v) => !v)}>
+              ✨ {t('Animation')}
+            </button>
+          )}
           {FIELDS.map((f) => (
             <button key={f.id} aria-pressed={field === f.id} className="chip" onClick={() => setField(f.id)}>
               {f.emoji} {f.name}
@@ -91,7 +108,9 @@ export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExplorePro
       </div>
 
       <p className="explore__count">
-        {results.length === LIBRARY.length ? `${results.length} pieces to discover` : `${results.length} of ${LIBRARY.length} pieces`}
+        {results.length === LIBRARY.length
+          ? t('{n} pieces to discover', { n: results.length })
+          : t('{n} of {total} pieces', { n: results.length, total: LIBRARY.length })}
       </p>
 
       {results.length === 0 ? (
@@ -99,15 +118,16 @@ export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExplorePro
           {authorLabel && !query ? (
             <>
               <p className="empty__title">
-                No posts by {authorLabel}
-                {fieldName ? ` in ${fieldName}` : ''} yet
+                {fieldName
+                  ? t('No posts by {writer} in {field} yet', { writer: authorLabel, field: fieldName })
+                  : t('No posts by {writer} yet', { writer: authorLabel })}
               </p>
-              <p className="empty__sub">They’ll show up here as soon as they’re added to the library.</p>
+              <p className="empty__sub">{t('They’ll show up here as soon as they’re added to the library.')}</p>
             </>
           ) : (
             <>
-              <p className="empty__title">Nothing found</p>
-              <p className="empty__sub">Try another word, or change the filters.</p>
+              <p className="empty__title">{t('Nothing found')}</p>
+              <p className="empty__sub">{t('Try another word, or change the filters.')}</p>
             </>
           )}
         </div>

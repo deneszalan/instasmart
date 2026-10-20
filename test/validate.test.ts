@@ -154,7 +154,7 @@ describe('validateContent', () => {
     expect(check({ type: 'sort', heading: 'Fact or myth?', bins: ['Fact', 'Myth'], items: items([1, 1, 1]) })).toEqual(['slides[0].items: use both bins at least once']);
     expect(check({ type: 'scramble', clue: 'What plants do with light', answer: 'photosynthesis', detail: 'Greek roots.' })).toEqual([]);
     expect(check({ type: 'scramble', clue: 'Two words', answer: 'ice cream' })).toEqual([
-      'slides[0].answer: One word of 3–14 plain letters (A–Z), no spaces or accents',
+      'slides[0].answer: One word of 3–14 letters (A–Z, or Ä, Ö, Ü), no spaces, other accents or ß',
     ]);
     expect(check({ type: 'odd', items: ['Mercury', 'Venus', 'Jupiter'], answer: 2, explanation: 'A gas giant among rocky planets.' })).toEqual([]);
     expect(check({ type: 'odd', items: ['Mercury', 'Venus', 'Jupiter'], answer: 3, explanation: 'A gas giant.' })).toEqual([
@@ -184,7 +184,7 @@ describe('validateContent', () => {
     ]);
     expect(problems.map((p) => p.message)).toEqual([
       'slides[0].items: Too small: expected array to have >=2 items',
-      'tags[0]: Tags are lowercase letters and digits, without "#"',
+      'tags[0]: Tags are lowercase letters (ä, ö, ü and ß too) and digits, without "#"',
     ]);
   });
 });

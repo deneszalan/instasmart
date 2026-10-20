@@ -7,6 +7,8 @@ import { sound } from '../lib/sound';
 import { useStore } from '../state/store';
 import { stepStill } from '../../shared/video.ts';
 import { clipSeconds } from '../data/library';
+import { t } from '../i18n';
+import { formatNumber } from '../lib/format';
 
 type VideoSlide = Extract<Slide, { type: 'video' }>;
 
@@ -378,27 +380,28 @@ export function VideoSlideView({ slide, card, start }: { slide: VideoSlide; card
         onClick={onTap}
       />
       {!playing && !started && !animation && (
-        <button className="video__play" onClick={resume} aria-label="Play clip">
+        <button className="video__play" onClick={resume} aria-label={t('Play clip')}>
           <Play size={30} fill="currentColor" />
         </button>
       )}
       {!playing && !started && animation && (
-        <button className="video__play video__play--pill" onClick={() => playFrom()} aria-label={`Watch the animation${length ? `, ${clock(length)}` : ''}`}>
-          <Play size={20} fill="currentColor" /> Watch{length ? ` · ${clock(length)}` : ''}
+        <button className="video__play video__play--pill" onClick={() => playFrom()} aria-label={`${t('Watch the animation')}${length ? `, ${clock(length)}` : ''}`}>
+          <Play size={20} fill="currentColor" /> {t('Watch')}
+          {length ? ` · ${clock(length)}` : ''}
         </button>
       )}
       {!playing && ended && animation && (
         <button className="video__play video__play--pill" onClick={() => playFrom(0)}>
-          <RotateCcw size={20} /> Watch again
+          <RotateCcw size={20} /> {t('Watch again')}
         </button>
       )}
       {!playing && leftAt !== null && animation && (
         <div className="video__choices">
-          <button className="video__play video__play--pill" onClick={() => playFrom()} aria-label={`Resume from ${clock(leftAt)}`}>
-            <Play size={20} fill="currentColor" /> Resume {clock(leftAt)}
+          <button className="video__play video__play--pill" onClick={() => playFrom()} aria-label={t('Resume from {time}', { time: clock(leftAt) })}>
+            <Play size={20} fill="currentColor" /> {t('Resume {time}', { time: clock(leftAt) })}
           </button>
           <button className="video__choice" onClick={() => playFrom(0)}>
-            <RotateCcw size={16} /> Start over
+            <RotateCcw size={16} /> {t('Start over')}
           </button>
         </div>
       )}
@@ -410,16 +413,16 @@ export function VideoSlideView({ slide, card, start }: { slide: VideoSlide; card
       <div className="slide-image__text video__info">
         {slide.caption && <p className="slide-image__caption">{inline(slide.caption)}</p>}
         <div className="video__bar">
-          <button className={`video__btn${stepPaused ? ' video__btn--ready' : ''}`} onClick={togglePlay} aria-label={playing ? 'Pause' : 'Play'}>
+          <button className={`video__btn${stepPaused ? ' video__btn--ready' : ''}`} onClick={togglePlay} aria-label={playing ? t('Pause') : t('Play')}>
             {playing ? <Pause size={14} fill="currentColor" /> : <Play size={14} fill="currentColor" />}
           </button>
           {hasSound && (
-            <button className="video__sound" onClick={toggleSound} aria-label={muted ? 'Turn sound on' : 'Turn sound off'} aria-pressed={!muted}>
+            <button className="video__sound" onClick={toggleSound} aria-label={muted ? t('Turn sound on') : t('Turn sound off')} aria-pressed={!muted}>
               {muted ? <VolumeX size={16} /> : <Volume2 size={16} />}
             </button>
           )}
           {steps.length > 0 && (
-            <button className="video__btn" onClick={prevStep} aria-label="Previous step">
+            <button className="video__btn" onClick={prevStep} aria-label={t('Previous step')}>
               <SkipBack size={14} fill="currentColor" />
             </button>
           )}
@@ -440,7 +443,7 @@ export function VideoSlideView({ slide, card, start }: { slide: VideoSlide; card
               onPointerDown={() => (dragging.current = true)}
               onPointerUp={() => (dragging.current = false)}
               onPointerCancel={() => (dragging.current = false)}
-              aria-label="Position in the clip"
+              aria-label={t('Position in the clip')}
             />
             {duration > 0 &&
               steps
@@ -451,7 +454,7 @@ export function VideoSlideView({ slide, card, start }: { slide: VideoSlide; card
           </div>
           <span className="video__time video__time--total">{duration ? clock(duration) : ''}</span>
           {steps.length > 0 && (
-            <button className="video__btn" onClick={nextStep} aria-label="Next step">
+            <button className="video__btn" onClick={nextStep} aria-label={t('Next step')}>
               <SkipForward size={14} fill="currentColor" />
             </button>
           )}
@@ -459,24 +462,24 @@ export function VideoSlideView({ slide, card, start }: { slide: VideoSlide; card
             ref={speedButton}
             className="video__speed"
             onClick={() => setMenuOpen((o) => !o)}
-            aria-label={`Playback speed ${rate} times${steps.length ? ', and step mode' : ''}`}
+            aria-label={`${t('Playback speed {rate} times', { rate: formatNumber(rate) })}${steps.length ? t(', and step mode') : ''}`}
             aria-expanded={menuOpen}
           >
-            {rate}×
+            {formatNumber(rate)}×
           </button>
           {menuOpen && (
-            <div ref={menu} className="video__menu" role="dialog" aria-label="Playback">
-              <span className="video__menu-label">Speed</span>
+            <div ref={menu} className="video__menu" role="dialog" aria-label={t('Playback')}>
+              <span className="video__menu-label">{t('Speed')}</span>
               <div className="video__rates">
                 {SPEEDS.map((speed) => (
                   <button key={speed} aria-pressed={speed === rate} onClick={() => updateSettings({ speed })}>
-                    {speed}×
+                    {formatNumber(speed)}×
                   </button>
                 ))}
               </div>
               {steps.length > 0 && (
                 <label className="video__toggle">
-                  <span>Pause after each step</span>
+                  <span>{t('Pause after each step')}</span>
                   <input type="checkbox" checked={state.settings.stepMode} onChange={(e) => updateSettings({ stepMode: e.target.checked })} />
                 </label>
               )}

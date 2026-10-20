@@ -9,6 +9,8 @@ import { useStore } from '../state/store';
 import { PostView } from '../components/Post';
 import { StoriesBar } from '../components/StoriesBar';
 import { WRITERS, WriterChips } from '../components/WriterChips';
+import { t } from '../i18n';
+import { EDITION } from '../edition';
 
 type FeedItem = Post | { kind: 'caught-up'; key: string; round: number };
 
@@ -25,19 +27,17 @@ interface CaughtUpProps {
 }
 
 function CaughtUp({ round, total, writer, onShowAll }: CaughtUpProps) {
-  const pieces = `${total} ${total === 1 ? 'piece' : 'pieces'}`;
+  const pieces = t(total === 1 ? '{n} piece' : '{n} pieces', { n: total });
   if (writer) {
     return (
       <div className="caught-up" role="note">
         <span className="caught-up__icon">
           <Check size={30} strokeWidth={2.5} />
         </span>
-        <p className="caught-up__title">
-          That’s all {pieces} by {writer}
-        </p>
-        <p className="caught-up__sub">Switch back to everyone to keep scrolling.</p>
+        <p className="caught-up__title">{t('That’s all {pieces} by {writer}', { pieces, writer })}</p>
+        <p className="caught-up__sub">{t('Switch back to everyone to keep scrolling.')}</p>
         <button className="btn btn--primary" onClick={onShowAll}>
-          Show everyone’s posts
+          {t('Show everyone’s posts')}
         </button>
       </div>
     );
@@ -47,10 +47,11 @@ function CaughtUp({ round, total, writer, onShowAll }: CaughtUpProps) {
       <span className="caught-up__icon">
         <Check size={30} strokeWidth={2.5} />
       </span>
-      <p className="caught-up__title">You’ve explored all {pieces}</p>
+      <p className="caught-up__title">{t('You’ve explored all {pieces}', { pieces })}</p>
       <p className="caught-up__sub">
-        {round === 1 ? 'Nice work. ' : `That’s round ${round}. `}
-        Keep scrolling for a fresh shuffle — repetition is how things stick.
+        {round === 1
+          ? t('Nice work. Keep scrolling for a fresh shuffle — repetition is how things stick.')
+          : t('That’s round {round}. Keep scrolling for a fresh shuffle — repetition is how things stick.', { round })}
       </p>
     </div>
   );
@@ -65,7 +66,7 @@ interface FeedProps {
 export function Feed({ by, onBy }: FeedProps) {
   const { state } = useStore();
   // Wikipedia's posts aren't by any of the writers, so they only appear in the unfiltered feed.
-  const wikiEnabled = state.settings.wiki && !by;
+  const wikiEnabled = EDITION.wiki && state.settings.wiki && !by;
   const writer = WRITERS.find((w) => w.id === by)?.label;
 
   /** Next page of entries. A one-writer feed stops after its first full round. */
@@ -162,10 +163,10 @@ export function Feed({ by, onBy }: FeedProps) {
       </div>
       {!feed && (
         <div className="empty">
-          <p className="empty__title">No posts by {writer ?? 'this writer'} yet</p>
-          <p className="empty__sub">They’ll show up here as soon as they’re added to the library.</p>
+          <p className="empty__title">{t('No posts by {writer} yet', { writer: writer ?? t('this writer') })}</p>
+          <p className="empty__sub">{t('They’ll show up here as soon as they’re added to the library.')}</p>
           <button className="btn btn--primary" onClick={() => onBy('')}>
-            Show everyone’s posts
+            {t('Show everyone’s posts')}
           </button>
         </div>
       )}
@@ -175,7 +176,7 @@ export function Feed({ by, onBy }: FeedProps) {
             key={item.key}
             round={item.round}
             total={session.cards.length}
-            writer={by ? (writer ?? 'this writer') : undefined}
+            writer={by ? (writer ?? t('this writer')) : undefined}
             onShowAll={() => onBy('')}
           />
         ) : (

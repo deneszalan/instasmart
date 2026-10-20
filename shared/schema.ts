@@ -372,7 +372,7 @@ export const ScrambleSlide = z
     answer: z
       .string()
       .trim()
-      .regex(/^[A-Za-z]{3,14}$/, 'One word of 3–14 plain letters (A–Z), no spaces or accents')
+      .regex(/^[A-Za-zÄÖÜäöü]{3,14}$/, 'One word of 3–14 letters (A–Z, or Ä, Ö, Ü), no spaces, other accents or ß')
       .describe('The word, shown as shuffled letter tiles.'),
     detail: text(160).optional().describe('Shown after solving.'),
   })
@@ -536,7 +536,7 @@ export const Post = z
     body: text(1200).min(80).describe('The caption: 2–5 sentences explaining why or how. Supports **bold**, *italic*, [links](https://…).'),
     slides: z.array(Slide).max(9).optional().describe('Extra carousel slides after the title slide.'),
     tags: z
-      .array(z.string().regex(/^[a-z0-9]+$/, 'Tags are lowercase letters and digits, without "#"').max(30))
+      .array(z.string().regex(/^[a-z0-9äöüß]+$/, 'Tags are lowercase letters (ä, ö, ü and ß too) and digits, without "#"').max(30))
       .min(1)
       .max(6),
     source: Source.describe('Where a reader can check the claim. Prefer Wikipedia or a primary/academic source.'),

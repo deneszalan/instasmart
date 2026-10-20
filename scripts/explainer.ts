@@ -4,6 +4,7 @@
 //   npm run explainer -- <post-id> --name <name> --keep-sound   re-render the picture, keeping the clip's soundtrack
 //   npm run explainer -- <post-id> --preview 2,9.5,20      PNG stills to check the layout
 //   npm run explainer -- <post-id> --steps                 only (re)write the steps of the post's animation slide
+//   [--edition lesefutter]                                   for a post in another edition that isn't written yet
 //
 // The clip's steps are the scene's captions; they are written into the post's slide for this clip,
 // and keyframes sit where the player jumps to, so jumping is instant.
@@ -17,11 +18,14 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { parseArgs } from 'node:util';
 import { chromium } from 'playwright-core';
-import { mediaPath, mediaProblems } from '../shared/validate.ts';
+import { mediaProblems } from '../shared/validate.ts';
 import { MAX_VIDEO_BYTES, readMp4, stepStill } from '../shared/video.ts';
 import { bestMusicStart } from './clip.ts';
+import { postHome } from './disk.ts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+/** A path as shown in messages: relative to the repo. */
+const shown = (path: string) => path.slice(root.length + 1);
 const FPS = 30;
 /** Longest stretch without a keyframe, so dragging the seek bar shows the picture quickly. */
 const KEYFRAME_GAP = 4;
@@ -79,9 +83,8 @@ function keyframesFor(steps: Step[], duration: number): number[] {
 }
 
 /** Put the steps into the post's slide for this clip (or its animated slide); returns the file it changed. */
-function writeSteps(post: string, steps: Step[], src?: string): string {
+function writeSteps(file: string, steps: Step[], src?: string): string {
   if (steps.length < 2) throw new Error('the scene has fewer than two captions, so it has no steps');
-  const file = join(root, 'content', 'posts', post.split('-')[0], `${post}.json`);
   const data = JSON.parse(readFileSync(file, 'utf8')) as { slides?: { type: string; src?: string; animation?: boolean; steps?: Step[] }[] };
   const slide = data.slides?.find((s) => s.type === 'video' && (src ? s.src === src : s.animation));
   if (!slide) throw new Error(`${file} has no ${src ? `slide for ${src}` : 'animated video slide'}`);
@@ -101,6 +104,7 @@ async function main(): Promise<number> {
       preview: { type: 'string' },
       steps: { type: 'boolean' },
       'keep-sound': { type: 'boolean' },
+      edition: { type: 'string' },
     },
   });
   const post = positionals[0];
@@ -117,6 +121,7 @@ async function main(): Promise<number> {
     return 1;
   }
 
+  const home = postHome(root, post, values.edition);
   const browser = await chromium.launch({ executablePath: browserPath() });
   const work = mkdtempSync(join(tmpdir(), `explainer-${post}-`));
   try {
@@ -154,7 +159,7 @@ async function main(): Promise<number> {
       for (let t = 0; t < duration; t += 0.25) await page.evaluate(`window.render(${t})`);
       fail();
       const steps = await readSteps();
-      const where = writeSteps(post, steps);
+      const where = writeSteps(home.file, steps);
       console.log(`${steps.length} steps written to ${where}`);
       return 0;
     }
@@ -183,14 +188,14 @@ async function main(): Promise<number> {
     const still = await frame(Number(values.still));
     fail();
 
-    const dir = join(root, 'content', 'media', post);
+    const dir = home.media;
     mkdirSync(dir, { recursive: true });
     const clip = join(dir, `${name}.mp4`);
     // --keep-sound takes the soundtrack of the clip being replaced, untouched.
     const oldClip = join(work, 'old.mp4');
     if (values['keep-sound']) {
       if (values.music) throw new Error('use either --music or --keep-sound');
-      if (!existsSync(clip) || !readMp4(readFileSync(clip)).audioCodec) throw new Error(`--keep-sound: ${mediaPath(post, `${name}.mp4`)} has no soundtrack to keep`);
+      if (!existsSync(clip) || !readMp4(readFileSync(clip)).audioCodec) throw new Error(`--keep-sound: ${shown(clip)} has no soundtrack to keep`);
       writeFileSync(oldClip, readFileSync(clip));
     }
     let musicStart = 0;
@@ -226,14 +231,14 @@ async function main(): Promise<number> {
       ...mediaProblems(`${name}.jpg`, readFileSync(poster)).map((p) => `${name}.jpg: ${p}`),
     ];
     const info = readMp4(readFileSync(clip));
-    console.log(`Wrote ${mediaPath(post, `${name}.mp4`)} (${(statSync(clip).size / 1e6).toFixed(2)} MB, ${info.durationSeconds.toFixed(1)} s, ${info.width}×${info.height}${values['keep-sound'] ? ', soundtrack kept' : info.audioCodec ? `, music from ${musicStart} s` : ', silent'})`);
-    console.log(`Wrote ${mediaPath(post, `${name}.jpg`)} (still at ${values.still} s)`);
+    console.log(`Wrote ${shown(clip)} (${(statSync(clip).size / 1e6).toFixed(2)} MB, ${info.durationSeconds.toFixed(1)} s, ${info.width}×${info.height}${values['keep-sound'] ? ', soundtrack kept' : info.audioCodec ? `, music from ${musicStart} s` : ', silent'})`);
+    console.log(`Wrote ${shown(poster)} (still at ${values.still} s)`);
     if (problems.length) {
       console.error(`\n${problems.join('\n')}`);
       return 1;
     }
     try {
-      console.log(`${steps.length} steps written to ${writeSteps(post, steps, `${name}.mp4`)}`);
+      console.log(`${steps.length} steps written to ${writeSteps(home.file, steps, `${name}.mp4`)}`);
       return 0;
     } catch {
       // The post has no slide for this clip yet.

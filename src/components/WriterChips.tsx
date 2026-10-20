@@ -1,5 +1,6 @@
 import { LIBRARY } from '../data/library';
 import { authorFilters } from '../lib/authors';
+import { t } from '../i18n';
 
 export const WRITERS = authorFilters(LIBRARY);
 
@@ -12,10 +13,10 @@ interface WriterChipsProps {
 /** The "Written by" slicer shared by the feed and Explore. */
 export function WriterChips({ value, onChange }: WriterChipsProps) {
   return (
-    <div className="chips chips--authors" role="group" aria-label="Written by">
-      <span className="chips__label">Written by</span>
+    <div className="chips chips--authors" role="group" aria-label={t('Written by')}>
+      <span className="chips__label">{t('Written by')}</span>
       <button aria-pressed={!value} className="chip" onClick={() => onChange('')}>
-        Anyone
+        {t('Anyone')}
       </button>
       {WRITERS.map((w) => (
         <button key={w.id} aria-pressed={value === w.id} className="chip" onClick={() => onChange(w.id)}>

@@ -1,6 +1,7 @@
 import type { Post } from '../types';
 import { postLink } from './route';
 import { toast } from './toast';
+import { t } from '../i18n';
 
 export async function sharePost(post: Post): Promise<void> {
   const title = post.kind === 'card' ? post.card.title : post.title;
@@ -16,8 +17,8 @@ export async function sharePost(post: Post): Promise<void> {
   }
   try {
     await navigator.clipboard.writeText(`${title} — ${url}`);
-    toast('Link copied to clipboard');
+    toast(t('Link copied to clipboard'));
   } catch {
-    toast('Couldn’t copy the link');
+    toast(t('Couldn’t copy the link'));
   }
 }
