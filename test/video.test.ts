@@ -122,11 +122,13 @@ describe('video slides', () => {
     expect(check(steps([0.4, 4], [5, 14]), silent)).toEqual(['slides[0]: the last step ends at 14 s, after the 12.0 s clip']);
   });
 
-  it('needs a keyframe at each step and no long gaps between keyframes', () => {
+  it('needs keyframes where the player jumps to and no long gaps between them', () => {
+    // Stills (0.3 s before each step ends) at 3.7, 7.7 and 11.6 s; each start is under 1 s after a keyframe.
     const steps = { ...slide, steps: [{ start: 0.4, end: 4 }, { start: 4.5, end: 8 }, { start: 8.2, end: 11.9 }] };
-    expect(check(steps, mp4({ audio: null, keyframes: [0, 2.5, 4.5, 8.2] }))).toEqual([]);
+    expect(check(steps, mp4({ audio: null, keyframes: [0, 3.7, 7.7, 11.6] }))).toEqual([]);
     expect(check(steps, mp4({ audio: null, keyframes: [0, 4.5] }))).toEqual([
-      'slides[0]: no keyframe as the step at 8.2 s starts, so jumping there is slow. `npm run explainer` puts one at each step; with ffmpeg, add `-force_key_frames <the start times>`',
+      'slides[0]: no keyframe within 1 s before the step at 8.2 s starts, so jumping there is slow. `npm run explainer` encodes the keyframes; with ffmpeg, use `-force_key_frames <times>`',
+      'slides[0]: no keyframe 0.3 s before 3 steps (0.4 s, 4.5 s, 8.2 s) end, where a paused clip shows them, so stepping while paused is slow. `npm run explainer` encodes the keyframes; with ffmpeg, use `-force_key_frames <times>`',
       'slides[0]: keyframes are up to 7.5 s apart, so the picture lags behind the seek bar; keep them at most 4 s apart (`npm run explainer` does)',
     ]);
     // Clips without steps are left alone.

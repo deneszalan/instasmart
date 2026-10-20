@@ -6,7 +6,7 @@
 //   npm run explainer -- <post-id> --steps                 only (re)write the steps of the post's animation slide
 //
 // The clip's steps are the scene's captions; they are written into the post's slide for this clip,
-// and each one starts on a keyframe, so jumping to it is instant.
+// and keyframes sit where the player jumps to, so jumping is instant.
 // Writes content/media/<post-id>/<name>.mp4 and <name>.jpg, checks both with the content validator
 // and prints the slide JSON. Needs ffmpeg and a Chromium: set CHROMIUM_PATH, or run
 // `npx playwright-core install chromium` once.
@@ -18,15 +18,15 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { parseArgs } from 'node:util';
 import { chromium } from 'playwright-core';
 import { mediaPath, mediaProblems } from '../shared/validate.ts';
-import { MAX_VIDEO_BYTES, readMp4 } from '../shared/video.ts';
+import { MAX_VIDEO_BYTES, readMp4, stepStill } from '../shared/video.ts';
 import { bestMusicStart } from './clip.ts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const FPS = 30;
 /** Longest stretch without a keyframe, so dragging the seek bar shows the picture quickly. */
 const KEYFRAME_GAP = 4;
-/** A step this soon after a keyframe needs no keyframe of its own: decoding that far is quick. */
-const KEYFRAME_NEAR = 0.5;
+/** A step's start may come this long after a keyframe: jumping there while playing decodes that far. */
+const START_NEAR = 1;
 
 function browserPath(): string | undefined {
   if (process.env.CHROMIUM_PATH) return process.env.CHROMIUM_PATH;
@@ -50,22 +50,30 @@ interface Step {
 }
 
 /**
- * Keyframe times: the frame on screen as each step starts, and evenly spaced ones between them
- * so that no two are more than KEYFRAME_GAP apart. Keyframes cost a lot of bytes in busy scenes,
- * so there are no more than that. Each time sits a quarter frame before its frame, as ffmpeg makes
- * the first frame at or after it a keyframe.
+ * Keyframe times. Each step's still (where a paused clip shows it finished) is a keyframe, so paused
+ * jumps are instant; a step's start gets one too unless a keyframe comes less than START_NEAR before
+ * it; and evenly spaced ones fill any stretch longer than KEYFRAME_GAP. Keyframes cost a lot of bytes
+ * in busy scenes, so there are no more than that. Each time sits a quarter frame before its frame, as
+ * ffmpeg makes the first frame at or after it a keyframe.
  */
 function keyframesFor(steps: Step[], duration: number): number[] {
   const end = Math.round(duration * FPS);
-  const frames = [...new Set(steps.map((s) => Math.floor(s.start * FPS + 1e-6)))].sort((a, b) => a - b);
+  const frame = (t: number) => Math.floor(t * FPS + 1e-6);
+  const wanted = steps
+    .flatMap((step) => [
+      { at: frame(step.start), near: START_NEAR * FPS },
+      { at: frame(stepStill(step)), near: 0 },
+    ])
+    .sort((a, b) => a.at - b.at);
+  const keys = [0];
+  for (const { at, near } of wanted) if (at < end && at - keys[keys.length - 1] > near) keys.push(at);
   const out: number[] = [];
-  let last = 0;
-  for (const f of [...frames, end]) {
-    if (f < end && f - last < KEYFRAME_NEAR * FPS) continue;
-    const between = Math.ceil((f - last) / (KEYFRAME_GAP * FPS)) - 1;
-    for (let i = 1; i <= between; i++) out.push(Math.round(last + ((f - last) * i) / (between + 1)));
-    if (f < end) out.push(f);
-    last = f;
+  keys.push(end);
+  for (let i = 1; i < keys.length; i++) {
+    const [a, b] = [keys[i - 1], keys[i]];
+    const between = Math.ceil((b - a) / (KEYFRAME_GAP * FPS)) - 1;
+    for (let j = 1; j <= between; j++) out.push(Math.round(a + ((b - a) * j) / (between + 1)));
+    if (b < end) out.push(b);
   }
   return out.map((f) => (f - 0.25) / FPS);
 }

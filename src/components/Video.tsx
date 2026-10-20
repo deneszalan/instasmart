@@ -5,14 +5,12 @@ import { inline } from '../lib/markdown';
 import { cardGradient, gradientStyle } from './Media';
 import { sound } from '../lib/sound';
 import { useStore } from '../state/store';
+import { stepStill } from '../../shared/video.ts';
 
 type VideoSlide = Extract<Slide, { type: 'video' }>;
 
 /** Speeds the reader can pick. */
 export const SPEEDS = [0.75, 1, 1.25, 1.5, 2];
-
-/** In step mode the clip stops this long before a step's caption starts to fade out. */
-const STOP_BEFORE_END = 0.3;
 
 /** Taps this close to the left or right edge (as a share of the width) step back or forward. */
 const EDGE = 0.25;
@@ -57,7 +55,7 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
   // The reader's own choice wins over autoplay: null until they tap.
   const [wantPlay, setWantPlay] = useState<boolean | null>(null);
   const [playing, setPlaying] = useState(false);
-  // The big play button is only for a clip that hasn't played yet; after that, pausing leaves the picture clear.
+  // The big play button is only for a clip nobody has played or moved yet; after that, pausing leaves the picture clear.
   const [started, setStarted] = useState(false);
   const [muted, setMuted] = useState(!sound.wanted);
   const [creditsOpen, setCreditsOpen] = useState(false);
@@ -71,7 +69,7 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
   const steps = slide.steps ?? [];
   const stepMode = state.settings.stepMode && steps.length > 0;
   const [menuOpen, setMenuOpen] = useState(false);
-  // Stopped at the end of a step: the picture stays clear and the next-step button lights up.
+  // Stopped at the end of a step: the picture stays clear and the play button lights up.
   const [stoppedAtStep, setStoppedAtStep] = useState(false);
   const menu = useRef<HTMLDivElement>(null);
   const speedButton = useRef<HTMLButtonElement>(null);
@@ -152,7 +150,7 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
     const now = live.current;
     if (now.stepMode && !v.paused) {
       for (const step of now.steps) {
-        const stop = step.end - STOP_BEFORE_END;
+        const stop = stepStill(step);
         // A big jump means the reader seeked past it, which shouldn't count.
         if (now.lastTime < stop && v.currentTime >= stop && v.currentTime - now.lastTime < 1) {
           // Paused where it is, a frame past the stop, so playing on doesn't stop here again.
@@ -185,6 +183,9 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
     if (!v) return;
     live.current.lastTime = time;
     setStoppedAtStep(false);
+    setStarted(true);
+    // A clip that hasn't loaded yet (it loads when it first plays) starts loading to show this frame.
+    if (v.readyState === 0) v.preload = 'auto';
     if (v.seeking) pending.current = time;
     else v.currentTime = time;
     show(time);
@@ -221,24 +222,36 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
   /** Index of the step under the playhead, or -1 before the first. */
   const stepAt = (time: number) => steps.reduce((at, step, i) => (step.start <= time + 0.05 ? i : at), -1);
 
-  // Both play the step they land on: its caption appears as it plays, so a still of its start shows little.
+  // Playing, these go to a step's start and play on. Paused, they stay paused and show a step finished
+  // (its still), because a step's caption only appears as it plays.
   const prevStep = () => {
     const v = video.current;
     if (!v) return;
     const time = pending.current ?? v.currentTime;
+    if (v.paused) {
+      const before = steps.filter((step) => stepStill(step) < time - 0.05).at(-1);
+      jump(before ? stepStill(before) : 0);
+      return;
+    }
     const i = stepAt(time);
     // Back to the start of this step, or to the one before when already near its start.
     if (i >= 0 && time - steps[i].start > 1.2) jump(steps[i].start);
     else jump(i > 0 ? steps[i - 1].start : 0);
-    resume();
   };
 
   const nextStep = () => {
     const v = video.current;
     if (!v) return;
-    const next = steps[stepAt(pending.current ?? v.currentTime) + 1];
-    jump(next ? next.start : Math.max(0, v.duration - 0.1));
-    resume();
+    const time = pending.current ?? v.currentTime;
+    const end = Number.isFinite(v.duration) ? v.duration : 0;
+    if (v.paused) {
+      const after = steps.find((step) => stepStill(step) > time + 0.05);
+      if (after) jump(stepStill(after));
+      else if (end) jump(end - 0.05);
+      return;
+    }
+    const next = steps[stepAt(time) + 1];
+    jump(next ? next.start : Math.max(0, end - 0.1));
   };
 
   // Taps near the edges flip through the steps, like a story; elsewhere they play or pause.
@@ -305,7 +318,7 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
       <div className="slide-image__text video__info">
         {slide.caption && <p className="slide-image__caption">{inline(slide.caption)}</p>}
         <div className="video__bar">
-          <button className="video__btn" onClick={togglePlay} aria-label={playing ? 'Pause' : 'Play'}>
+          <button className={`video__btn${stepPaused ? ' video__btn--ready' : ''}`} onClick={togglePlay} aria-label={playing ? 'Pause' : 'Play'}>
             {playing ? <Pause size={14} fill="currentColor" /> : <Play size={14} fill="currentColor" />}
           </button>
           {hasSound && (
@@ -346,7 +359,7 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
           </div>
           <span className="video__time video__time--total">{duration ? clock(duration) : ''}</span>
           {steps.length > 0 && (
-            <button className={`video__btn${stepPaused ? ' video__btn--ready' : ''}`} onClick={nextStep} aria-label="Next step">
+            <button className="video__btn" onClick={nextStep} aria-label="Next step">
               <SkipForward size={14} fill="currentColor" />
             </button>
           )}

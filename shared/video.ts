@@ -163,6 +163,15 @@ export function readMp4(bytes: Uint8Array): VideoInfo {
   };
 }
 
+/** A paused step is shown this long before it ends, before its caption starts to fade out. */
+export const STEP_STILL_BEFORE_END = 0.3;
+
+/**
+ * The moment that shows a step finished: its picture complete and its caption still on screen.
+ * Step mode stops here, and jumping between steps while paused lands here.
+ */
+export const stepStill = (step: { start: number; end: number }) => Math.max(step.start, step.end - STEP_STILL_BEFORE_END);
+
 export const MAX_VIDEO_BYTES = 3_000_000;
 export const MIN_VIDEO_SECONDS = 2;
 export const MAX_VIDEO_SECONDS = 60;
