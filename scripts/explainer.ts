@@ -21,7 +21,7 @@ import { parseArgs } from 'node:util';
 import { chromium } from 'playwright-core';
 import { mediaPath, mediaProblems } from '../shared/validate.ts';
 import { MAX_VIDEO_BYTES, readMp4, stepStill } from '../shared/video.ts';
-import { bestMusicStart } from './clip.ts';
+import { bestMusicStart, duration as mediaLength } from './clip.ts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const FPS = 30;
@@ -299,7 +299,13 @@ async function main(): Promise<number> {
       writeFileSync(oldClip, readFileSync(clip));
     }
     let musicStart = 0;
-    if (values.music) musicStart = values['music-start'] === 'auto' ? bestMusicStart(values.music, time.length) : Number(values['music-start']);
+    if (values.music) {
+      musicStart = values['music-start'] === 'auto' ? bestMusicStart(values.music, time.length) : Number(values['music-start']);
+      const trackLength = mediaLength(values.music);
+      if (!(musicStart >= 0 && musicStart + time.length <= trackLength + 0.01)) {
+        throw new Error(`--music-start must leave ${time.length} s of the ${trackLength.toFixed(1)} s track (${holdNote}); start at ${Math.max(0, Math.floor(trackLength - time.length - 0.5))} s at the latest`);
+      }
+    }
     const keyframes = keyframesFor(steps, time.length).map((t) => t.toFixed(4)).join(',');
     for (const crf of [20, 24, 28, 32]) {
       const args = ['-i', master];

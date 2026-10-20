@@ -22,7 +22,7 @@ function run(cmd: string, args: string[]): string {
   return `${result.stdout}${result.stderr}`;
 }
 
-function duration(file: string): number {
+export function duration(file: string): number {
   const out = run('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=nw=1:nk=1', file]);
   const seconds = Number.parseFloat(out.trim());
   if (!Number.isFinite(seconds)) throw new Error(`could not read the length of ${file}`);
