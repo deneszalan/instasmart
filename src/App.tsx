@@ -13,12 +13,14 @@ import { Explore } from './views/Explore';
 import { Feed } from './views/Feed';
 import { Profile } from './views/Profile';
 import { Saved } from './views/Saved';
+import { t } from './i18n';
+import { EDITION } from './edition';
 
 const NAV: { tab: Tab; label: string; icon: typeof House }[] = [
-  { tab: 'home', label: 'Home', icon: House },
-  { tab: 'explore', label: 'Explore', icon: Compass },
-  { tab: 'saved', label: 'Saved', icon: Bookmark },
-  { tab: 'profile', label: 'Profile', icon: User },
+  { tab: 'home', label: t('Home'), icon: House },
+  { tab: 'explore', label: t('Explore'), icon: Compass },
+  { tab: 'saved', label: t('Saved'), icon: Bookmark },
+  { tab: 'profile', label: t('Profile'), icon: User },
 ];
 
 function useTheme() {
@@ -74,7 +76,7 @@ function Shell() {
 
   useEffect(() => {
     if (route.post && !openedPost) {
-      toast('That post isn’t available anymore');
+      toast(t('That post isn’t available anymore'));
       navigate({ post: null }, { replace: true });
     }
   }, [route.post, openedPost, navigate]);
@@ -82,10 +84,10 @@ function Shell() {
   return (
     <div className="app">
       <header className="topbar">
-        <button className="logo" onClick={() => goTab('home')} aria-label="Reckon home">
-          Reckon
+        <button className="logo" onClick={() => goTab('home')} aria-label={t('{name} home', { name: EDITION.name })}>
+          {EDITION.name}
         </button>
-        <button className="topbar__streak" onClick={() => goTab('profile')} aria-label={`${days}-day learning streak`}>
+        <button className="topbar__streak" onClick={() => goTab('profile')} aria-label={t(days === 1 ? '1-day learning streak' : '{n}-day learning streak', { n: days })}>
           <Flame size={22} className={days > 0 ? 'streak__flame--on' : undefined} />
           <span>{days}</span>
         </button>
@@ -108,7 +110,7 @@ function Shell() {
         {route.tab === 'profile' && <Profile />}
       </main>
 
-      <nav className="bottombar" aria-label="Main">
+      <nav className="bottombar" aria-label={t('Main')}>
         {NAV.map(({ tab, label, icon: Icon }) => (
           <button
             key={tab}
@@ -123,7 +125,7 @@ function Shell() {
       </nav>
 
       {openedPost && (
-        <Sheet title="Post" variant="dialog" onClose={() => navigate({ post: null })}>
+        <Sheet title={t('Post')} variant="dialog" onClose={() => navigate({ post: null })}>
           <PostView key={openedPost.key} post={openedPost} className="post--flat" />
         </Sheet>
       )}

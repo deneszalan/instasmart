@@ -1,0 +1,139 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-saengerkrieg-wartburg",
+  "field": "history",
+  "title": "Den berühmten Sängerkrieg auf der Wartburg hat es nie gegeben",
+  "emoji": "🏰",
+  "body": "Ein Gedicht aus dem 13. Jahrhundert, der **Wartburgkrieg**, erzählt von einem Wettstreit (Wettbewerb) zwischen Sängern. Sie streiten vor dem Landgrafen von Thüringen: Wer lobt den besten Fürsten am schönsten? Echt ist nur der Hintergrund: Landgraf **Hermann I.** förderte um 1200 Dichter wie Walther von der Vogelweide und Wolfram von Eschenbach. Erst spätere Chronisten (Geschichtsschreiber) machten aus dem Gedicht ein echtes Ereignis.",
+  "cover": {
+    "src": "wartburg.jpg",
+    "alt": "Die Wartburg bei Eisenach im Sommer: ein hoher Steinturm, ein langes Steingebäude mit Bogenfenstern und weiße Mauern mit Fachwerk über grünen Bäumen, dahinter blauer Himmel.",
+    "credit": "A.Savin, Wikipedia · Free Art License · Ausschnitt"
+  },
+  "slides": [
+    {
+      "type": "image",
+      "src": "saengerkrieg.jpg",
+      "alt": "Buchmalerei in zwei Teilen: Oben sitzen der Landgraf mit Krone und Schwert und die Landgräfin auf einer Bank. Unten sitzt eine Reihe von Sängern in bunten Gewändern, einer hebt die Hand.",
+      "caption": "Der Sängerkrieg im Codex Manesse, gemalt Anfang des 14. Jahrhunderts: oben Landgraf Hermann und die Landgräfin, unten die Sänger, unter ihnen Walther, Wolfram und Klingsor.",
+      "fit": "cover",
+      "credit": "Codex Manesse, fol. 219v, Universitätsbibliothek Heidelberg · Public domain"
+    },
+    {
+      "type": "list",
+      "heading": "Sechs Sänger im Gedicht",
+      "style": "bullets",
+      "items": [
+        "Walther von der Vogelweide",
+        "Wolfram von Eschenbach",
+        "Reinmar von Zweter",
+        "Biterolf",
+        "der tugendhafte Schreiber",
+        "Heinrich von Ofterdingen"
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Ein Zauberer kommt dazu",
+      "text": "Heinrich von Ofterdingen verliert den Wettstreit. Er darf aber Hilfe holen: den Zauberer Klingsor aus Ungarn. Dann stellen sich Klingsor und Wolfram schwere Rätsel. Lustig: Klingsor ist eine Figur aus Wolframs eigenem Roman „Parzival“."
+    },
+    {
+      "type": "sort",
+      "heading": "Geschichte oder Sage?",
+      "bins": [
+        "Geschichte",
+        "Sage"
+      ],
+      "items": [
+        {
+          "text": "Hermann I. förderte Dichter an seinem Hof",
+          "bin": 0
+        },
+        {
+          "text": "Am 7. Juli 1207 fand der Wettstreit statt",
+          "bin": 1
+        },
+        {
+          "text": "Wolfram schrieb große Teile seiner Romane für Hermann",
+          "bin": 0
+        },
+        {
+          "text": "Der Zauberer Klingsor kam aus Ungarn",
+          "bin": 1
+        },
+        {
+          "text": "Walther lebte eine Zeit am Hof in Thüringen",
+          "bin": 0
+        }
+      ],
+      "explanation": "Die Dichter Walther und Wolfram und ihr Förderer Hermann sind echt. Der Wettstreit, sein Datum und der Zauberer Klingsor gehören zur Sage."
+    },
+    {
+      "type": "text",
+      "heading": "Wie aus Dichtung Geschichte wurde",
+      "text": "Chronisten wie Dietrich von Apolda (nach 1298) und Johannes Rothe (15. Jahrhundert) erzählten das Gedicht wie ein echtes Ereignis. Die Sage nennt sogar ein Jahr: 1206 oder 1207."
+    },
+    {
+      "type": "quote",
+      "text": "In diesem Saale wurde der Sængerstreit gehalten den 7ten Juli 1207 dem Geburtstag der heil. Elisabeth.",
+      "attribution": "Inschrift auf Moritz von Schwinds Fresko im Sängersaal der Wartburg, um 1855"
+    },
+    {
+      "type": "timeline",
+      "heading": "Die Wartburg später",
+      "events": [
+        {
+          "when": "1521–1522",
+          "text": "Martin Luther versteckt sich auf der Burg und übersetzt das Neue Testament ins Deutsche."
+        },
+        {
+          "when": "1845",
+          "text": "Wagners Oper „Tannhäuser und der Sängerkrieg auf Wartburg“ wird in Dresden zum ersten Mal aufgeführt."
+        },
+        {
+          "when": "1999",
+          "text": "Die Wartburg wird UNESCO-Welterbe."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Welcher Sänger aus dem Gedicht ist historisch nicht belegt, also vielleicht erfunden?",
+      "options": [
+        "Walther von der Vogelweide",
+        "Wolfram von Eschenbach",
+        "Reinmar von Zweter",
+        "Heinrich von Ofterdingen"
+      ],
+      "answer": 3,
+      "explanation": "Für Heinrich von Ofterdingen gibt es keinen Beleg außerhalb der Sage. Von Walther, Wolfram und Reinmar von Zweter sind dagegen Lieder und Werke erhalten."
+    },
+    {
+      "type": "list",
+      "heading": "Wörter",
+      "items": [
+        "**der Landgraf** – ein Fürst, hier der Herrscher von Thüringen",
+        "**der Wettstreit** – ein Kampf darum, wer am besten ist",
+        "**die Sage** – eine alte Geschichte, oft mit erfundenen Teilen",
+        "**fördern** – jemandem helfen, zum Beispiel mit Geld",
+        "**der Chronist** – jemand, der Geschichte aufschreibt"
+      ]
+    }
+  ],
+  "tags": [
+    "wartburg",
+    "minnesang",
+    "sage",
+    "thüringen",
+    "mittelalter"
+  ],
+  "source": {
+    "label": "Wikipedia: Sängerkrieg auf der Wartburg",
+    "url": "https://de.wikipedia.org/wiki/S%C3%A4ngerkrieg_auf_der_Wartburg"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-20"
+}

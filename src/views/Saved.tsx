@@ -3,6 +3,7 @@ import type { Post } from '../types';
 import { CARD_BY_ID } from '../data/library';
 import { useStore, type LearnState } from '../state/store';
 import { Tile } from '../components/Tile';
+import { t } from '../i18n';
 
 export function savedPosts(saved: LearnState['saved']): Post[] {
   return Object.entries(saved)
@@ -20,14 +21,14 @@ export function Saved({ onOpen }: { onOpen: (id: string) => void }) {
 
   return (
     <div className="saved">
-      <h1 className="view-title">Saved</h1>
+      <h1 className="view-title">{t('Saved')}</h1>
       {posts.length === 0 ? (
         <div className="empty">
           <span className="empty__icon">
             <Bookmark size={34} />
           </span>
-          <p className="empty__title">Save what you want to remember</p>
-          <p className="empty__sub">Tap the bookmark on any post and it will be kept here.</p>
+          <p className="empty__title">{t('Save what you want to remember')}</p>
+          <p className="empty__sub">{t('Tap the bookmark on any post and it will be kept here.')}</p>
         </div>
       ) : (
         <div className="grid">

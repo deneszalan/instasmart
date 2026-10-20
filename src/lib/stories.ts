@@ -3,6 +3,7 @@ import { FIELDS } from '../data/fields';
 import { createRng, shuffle, spreadByField } from './feed';
 import { firstInteractive } from './interactive';
 import { firstVideo } from './visual';
+import { t } from '../i18n';
 
 export interface Story {
   id: string;
@@ -46,7 +47,7 @@ export function buildStories(
     .slice(0, STORY_LENGTH);
 
   const stories: Story[] = [
-    { id: 'daily', label: 'Daily 5', emoji: '✨', gradient: ['#f59e0b', '#db2777'], cards: daily },
+    { id: 'daily', label: t('Daily 5'), emoji: '✨', gradient: ['#f59e0b', '#db2777'], cards: daily },
   ];
 
   // One challenge per field, from posts the reader hasn't played; played ones only fill gaps.
@@ -62,7 +63,7 @@ export function buildStories(
     quiz = quiz.concat(onePerField(rest, STORY_LENGTH - quiz.length));
   }
   if (quiz.length) {
-    stories.push({ id: 'quiz', label: 'Daily quiz', emoji: '🎯', gradient: ['#0ea5e9', '#6366f1'], cards: quiz, interactive: true });
+    stories.push({ id: 'quiz', label: t('Daily quiz'), emoji: '🎯', gradient: ['#0ea5e9', '#6366f1'], cards: quiz, interactive: true });
   }
   for (const field of FIELDS) {
     const inField = library.filter((c) => c.field === field.id);

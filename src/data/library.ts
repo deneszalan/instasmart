@@ -2,12 +2,16 @@ import clipLengths from 'virtual:clip-lengths';
 import type { FieldId, KnowledgeCard } from '../types';
 
 // Every post is a JSON file in content/posts/<field>/<id>.json; images and clips live in content/media/<id>/.
-const postFiles = import.meta.glob<KnowledgeCard>('../../content/posts/*/*.json', { eager: true, import: 'default' });
-const mediaFiles = import.meta.glob<string>('../../content/media/*/*', { eager: true, query: '?url', import: 'default' });
+// @content is this edition's content/ folder (see vite.config.ts).
+const postFiles = import.meta.glob<KnowledgeCard>('@content/posts/*/*.json', { eager: true, import: 'default' });
+const mediaFiles = import.meta.glob<string>('@content/media/*/*', { eager: true, query: '?url', import: 'default' });
+
+/** Media URLs by "<post-id>/<file>". */
+const mediaUrls = new Map(Object.entries(mediaFiles).map(([path, url]) => [path.split('/').slice(-2).join('/'), url]));
 
 function resolveImage(postId: string, src: string): string {
   if (src.startsWith('https://')) return src;
-  return mediaFiles[`../../content/media/${postId}/${src}`] ?? src;
+  return mediaUrls.get(`${postId}/${src}`) ?? src;
 }
 
 function resolve(post: KnowledgeCard): KnowledgeCard {

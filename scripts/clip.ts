@@ -2,6 +2,7 @@
 //
 //   npm run clip -- <input video> --post <post-id> --name <name> --start <s> --end <s>
 //                   [--music <audio file> --music-start <s|auto>] [--width 480] [--crop 4:5] [--still <s>]
+//                   [--edition lesefutter]   for a post in another edition that isn't written yet
 //
 // Writes content/media/<post-id>/<name>.mp4 (H.264, AAC, fast start) and <name>.jpg, checks both
 // with the content validator, and prints the slide JSON to paste into the post. Needs ffmpeg.
@@ -10,7 +11,8 @@ import { mkdirSync, readFileSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
-import { mediaPath, mediaProblems } from '../shared/validate.ts';
+import { mediaProblems } from '../shared/validate.ts';
+import { postHome } from './disk.ts';
 import { MAX_VIDEO_BYTES, MAX_VIDEO_SECONDS, MIN_VIDEO_SECONDS, readMp4 } from '../shared/video.ts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -64,6 +66,7 @@ function main(): number {
       width: { type: 'string', default: '480' },
       crop: { type: 'string' },
       still: { type: 'string' },
+      edition: { type: 'string' },
     },
   });
   const input = positionals[0];
@@ -99,7 +102,7 @@ function main(): number {
     filters.push(`crop='min(iw,ih*${w}/${h})':'min(ih,iw*${h}/${w})'`);
   }
 
-  const dir = join(root, 'content', 'media', post);
+  const dir = postHome(root, post, values.edition).media;
   mkdirSync(dir, { recursive: true });
   const clip = join(dir, `${name}.mp4`);
   const still = join(dir, `${name}.jpg`);
@@ -143,8 +146,8 @@ function main(): number {
     ...mediaProblems(`${name}.jpg`, readFileSync(still)).map((p) => `${name}.jpg: ${p}`),
   ];
   const info = readMp4(readFileSync(clip));
-  console.log(`Wrote ${mediaPath(post, `${name}.mp4`)} (${(statSync(clip).size / 1e6).toFixed(2)} MB, ${info.durationSeconds.toFixed(1)} s, ${info.width}×${info.height}${info.audioCodec ? ', music from ' + musicStart + ' s' : ', silent'})`);
-  console.log(`Wrote ${mediaPath(post, `${name}.jpg`)} (still at ${stillAt.toFixed(1)} s of the source)`);
+  console.log(`Wrote ${clip.slice(root.length + 1)} (${(statSync(clip).size / 1e6).toFixed(2)} MB, ${info.durationSeconds.toFixed(1)} s, ${info.width}×${info.height}${info.audioCodec ? ', music from ' + musicStart + ' s' : ', silent'})`);
+  console.log(`Wrote ${still.slice(root.length + 1)} (still at ${stillAt.toFixed(1)} s of the source)`);
   if (problems.length) {
     console.error(`\n${problems.join('\n')}`);
     return 1;

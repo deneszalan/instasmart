@@ -1,0 +1,67 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-troubadoure-provence",
+  "field": "music",
+  "title": "Das Wort „Troubadour“ kommt von „finden“: Sie erfanden ihre Lieder",
+  "emoji": "🎻",
+  "body": "Der Minnesang hat Vorbilder in Südfrankreich. Dort dichteten und sangen im 12. und 13. Jahrhundert die **Trobadors** (auf Deutsch meist Troubadoure), in der Sprache **Okzitanisch**. Ihr Name kommt vom Verb *trobar*: finden, erfinden, ein Lied machen. Ab etwa 1170 lernten deutsche Dichter von ihnen und von den Trouvères in Nordfrankreich.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "wilhelm-ix.jpg",
+      "alt": "Buchmalerei in einem großen roten Anfangsbuchstaben: ein Mann mit dunkler Mütze und blauem Mantel steht auf goldenem Grund und hebt die Hand.",
+      "caption": "Wilhelm IX. (1071–1126), der erste bekannte Trobador",
+      "fit": "contain",
+      "credit": "Bibliothèque nationale de France, fr. 12473 · gemeinfrei"
+    },
+    {
+      "type": "text",
+      "heading": "Ein Herzog als Dichter",
+      "text": "Wilhelm IX. war Herzog von Aquitanien und Graf von Poitou. Elf Lieder von ihm sind erhalten. 1101 zog er auf einen Kreuzzug. Seine Enkelin war die berühmte Eleonore von Aquitanien, später Königin von Frankreich und dann von England."
+    },
+    {
+      "type": "text",
+      "heading": "„Oc“ heißt „ja“",
+      "text": "Im Süden Frankreichs sagte man für „ja“ *oc*, im Norden *oïl*. Darum heißt die Sprache des Südens *langue d’oc*, heute Okzitanisch. Die Dichter im Norden hießen Trouvères. Sie dichteten auf Altfranzösisch."
+    },
+    {
+      "type": "text",
+      "heading": "Der Weg nach Deutschland",
+      "text": "Ab etwa 1170 lernten deutsche Dichter von den Trobadors und den Trouvères. Ein wichtiger Vermittler war **Friedrich von Hausen**. Er diente Kaiser Friedrich Barbarossa und reiste nach Italien und Frankreich. Er starb 1190 auf einem Kreuzzug."
+    },
+    {
+      "type": "text",
+      "heading": "Neuer Text, fremde Melodie",
+      "text": "Manchmal schrieb ein deutscher Dichter einen neuen Text zu einer fremden Melodie. Das heißt **Kontrafaktur**. Hausens Lied „Ich denke underwîlen“ („Ich denke manchmal“) gilt als Kontrafaktur eines Liedes des Trouvère Guiot de Provins."
+    },
+    {
+      "type": "fill",
+      "question": "Die Trobadors schufen geschätzt 2500 Melodien. Wie viele von 10 sind heute noch erhalten?",
+      "icon": "🎵",
+      "total": 10,
+      "answer": 1,
+      "explanation": "Nur etwa 1 von 10: Weniger als 300 Melodien sind erhalten. Von den Texten gibt es viel mehr, rund 2600 Gedichte von etwa 450 Trobadors."
+    },
+    {
+      "type": "text",
+      "heading": "Und die deutschen Melodien?",
+      "text": "Gesungen wurde der Minnesang immer. Doch im berühmten Codex Manesse steht keine einzige Note. Melodien haben vor allem die Jenaer Liederhandschrift (14. Jahrhundert) und die Kolmarer (um 1460). Von Walther von der Vogelweide ist nur eine Melodie ganz erhalten: die des Palästinalieds."
+    },
+    {
+      "type": "scramble",
+      "clue": "So heißt die Sprache der Trobadors. Man spricht sie bis heute im Süden Frankreichs.",
+      "answer": "OKZITANISCH",
+      "detail": "Der Name kommt von *oc*, dem Wort für „ja“. Im Mittelalter war Okzitanisch eine der führenden Literatursprachen Europas."
+    }
+  ],
+  "tags": ["troubadoure", "okzitanisch", "minnesang", "frankreich", "melodien"],
+  "source": {
+    "label": "Wikipedia: Troubadour (Künstler)",
+    "url": "https://de.wikipedia.org/wiki/Troubadour_(K%C3%BCnstler)"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-20"
+}

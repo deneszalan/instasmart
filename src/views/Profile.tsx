@@ -3,11 +3,13 @@ import { FIELDS } from '../data/fields';
 import { LIBRARY } from '../data/library';
 import { streak, useStore, type Theme } from '../state/store';
 import { Avatar } from '../components/Avatar';
+import { t } from '../i18n';
+import { EDITION } from '../edition';
 
 const THEMES: { id: Theme; label: string; icon: typeof Sun }[] = [
-  { id: 'system', label: 'Auto', icon: Monitor },
-  { id: 'light', label: 'Light', icon: Sun },
-  { id: 'dark', label: 'Dark', icon: Moon },
+  { id: 'system', label: t('Auto'), icon: Monitor },
+  { id: 'light', label: t('Light'), icon: Sun },
+  { id: 'dark', label: t('Dark'), icon: Moon },
 ];
 
 export function Profile() {
@@ -34,45 +36,48 @@ export function Profile() {
         <div className="profile__stats">
           <div>
             <strong>{learned}</strong>
-            <span>learned</span>
+            <span>{t('learned')}</span>
           </div>
           <div>
             <strong>{Object.keys(state.liked).length}</strong>
-            <span>liked</span>
+            <span>{t('liked')}</span>
           </div>
           <div>
             <strong>{Object.keys(state.saved).length}</strong>
-            <span>saved</span>
+            <span>{t('saved')}</span>
           </div>
         </div>
       </section>
 
       <section className="profile__bio">
-        <h1>You</h1>
-        <p>Curious mind. Collecting ideas from {FIELDS.length} fields, one scroll at a time.</p>
+        <h1>{t('You')}</h1>
+        <p>{t('Curious mind. Collecting ideas from {n} fields, one scroll at a time.', { n: FIELDS.length })}</p>
       </section>
 
       <section className="card-box streak">
         <Flame size={28} className={days > 0 ? 'streak__flame streak__flame--on' : 'streak__flame'} />
         <div>
-          <p className="streak__title">{days > 0 ? `${days}-day learning streak` : 'Start a streak today'}</p>
-          <p className="streak__sub">Read at least one piece a day to keep it going.</p>
+          <p className="streak__title">
+            {days > 0 ? t(days === 1 ? '1-day learning streak' : '{n}-day learning streak', { n: days }) : t('Start a streak today')}
+          </p>
+          <p className="streak__sub">{t('Read at least one piece a day to keep it going.')}</p>
         </div>
       </section>
 
       <section className="card-box">
         <div className="progress-row">
-          <span>Challenges</span>
+          <span>{t('Challenges')}</span>
           <span>
-            {results.length} played{scored.length ? ` · ${right}/${scored.length} right` : ''}
+            {t('{n} played', { n: results.length })}
+            {scored.length ? t(' · {right}/{total} right', { right, total: scored.length }) : ''}
           </span>
         </div>
-        <p className="streak__sub">Quizzes, guesses and ordering puzzles inside posts.</p>
+        <p className="streak__sub">{t('Quizzes, guesses and ordering puzzles inside posts.')}</p>
       </section>
 
       <section className="card-box">
         <div className="progress-row">
-          <span>Library explored</span>
+          <span>{t('Library explored')}</span>
           <span>
             {learned}/{LIBRARY.length} · {pct}%
           </span>
@@ -83,7 +88,7 @@ export function Profile() {
       </section>
 
       <section className="card-box">
-        <h2 className="section-title">Fields</h2>
+        <h2 className="section-title">{t('Fields')}</h2>
         <ul className="fields">
           {perField.map(({ field, total, seen }) => (
             <li key={field.id} className="fields__row">
@@ -108,22 +113,24 @@ export function Profile() {
       </section>
 
       <section className="card-box">
-        <h2 className="section-title">Settings</h2>
-        <label className="setting">
-          <span>
-            <span className="setting__name">Live posts from Wikipedia</span>
-            <span className="setting__sub">Mix featured articles and pictures of the day into your feed.</span>
-          </span>
-          <input
-            type="checkbox"
-            className="switch"
-            checked={state.settings.wiki}
-            onChange={(e) => updateSettings({ wiki: e.target.checked })}
-          />
-        </label>
+        <h2 className="section-title">{t('Settings')}</h2>
+        {EDITION.wiki && (
+          <label className="setting">
+            <span>
+              <span className="setting__name">Live posts from Wikipedia</span>
+              <span className="setting__sub">Mix featured articles and pictures of the day into your feed.</span>
+            </span>
+            <input
+              type="checkbox"
+              className="switch"
+              checked={state.settings.wiki}
+              onChange={(e) => updateSettings({ wiki: e.target.checked })}
+            />
+          </label>
+        )}
         <div className="setting">
-          <span className="setting__name">Theme</span>
-          <div className="segmented" role="radiogroup" aria-label="Theme">
+          <span className="setting__name">{t('Theme')}</span>
+          <div className="segmented" role="radiogroup" aria-label={t('Theme')}>
             {THEMES.map(({ id, label, icon: Icon }) => (
               <button
                 key={id}
@@ -139,17 +146,14 @@ export function Profile() {
         <button
           className="btn btn--danger"
           onClick={() => {
-            if (confirm('Reset your likes, saved posts, streak and reading history?')) reset();
+            if (confirm(t('Reset your likes, saved posts, streak and reading history?'))) reset();
           }}
         >
-          Reset progress
+          {t('Reset progress')}
         </button>
       </section>
 
-      <p className="about">
-        Posts live as files in the Reckon GitHub repository. Ones marked AI were written by an AI, and every post links
-        a source so you can check it. Live posts come from Wikipedia’s featured content, under CC BY-SA.
-      </p>
+      <p className="about">{EDITION.about}</p>
     </div>
   );
 }

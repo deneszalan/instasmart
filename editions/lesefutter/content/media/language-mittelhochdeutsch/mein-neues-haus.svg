@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
+  <rect x="40" y="40" width="1000" height="1000" rx="48" fill="#000000" fill-opacity="0.2"/>
+  <text x="540" y="156" font-family="system-ui, sans-serif" font-size="46" font-weight="600" fill="#ffffff" fill-opacity="0.75" text-anchor="middle">um 1200</text>
+  <g font-family="system-ui, sans-serif" font-size="100" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <text x="215" y="292">m<tspan fill="#fcd34d">î</tspan>n</text>
+    <text x="540" y="292">n<tspan fill="#fcd34d">iu</tspan>wez</text>
+    <text x="865" y="292">h<tspan fill="#fcd34d">û</tspan>s</text>
+  </g>
+  <g stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M215 340 V610 M185 580 L215 612 L245 580"/>
+    <path d="M540 340 V610 M510 580 L540 612 L570 580"/>
+    <path d="M865 340 V610 M835 580 L865 612 L895 580"/>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="50" font-weight="700" text-anchor="middle">
+    <rect x="115" y="432" width="200" height="84" rx="42" fill="#fcd34d"/>
+    <text x="215" y="492" fill="#1f2937">î → ei</text>
+    <rect x="430" y="432" width="220" height="84" rx="42" fill="#fcd34d"/>
+    <text x="540" y="492" fill="#1f2937">iu → eu</text>
+    <rect x="765" y="432" width="200" height="84" rx="42" fill="#fcd34d"/>
+    <text x="865" y="492" fill="#1f2937">û → au</text>
+  </g>
+  <text x="540" y="704" font-family="system-ui, sans-serif" font-size="46" font-weight="600" fill="#ffffff" fill-opacity="0.75" text-anchor="middle">heute</text>
+  <g font-family="system-ui, sans-serif" font-size="100" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <text x="215" y="840">m<tspan fill="#fcd34d">ei</tspan>n</text>
+    <text x="540" y="840">n<tspan fill="#fcd34d">eu</tspan>es</text>
+    <text x="865" y="840">H<tspan fill="#fcd34d">au</tspan>s</text>
+  </g>
+  <text x="540" y="962" font-family="system-ui, sans-serif" font-size="44" fill="#ffffff" fill-opacity="0.85" text-anchor="middle">Aus einem langen Vokal wird ein Zwielaut.</text>
+</svg>

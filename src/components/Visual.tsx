@@ -2,6 +2,7 @@ import { useId, type CSSProperties, type ReactNode } from 'react';
 import type { Slide } from '../types';
 import { inline } from '../lib/markdown';
 import { guessFormat, withUnit } from '../lib/format';
+import { t } from '../i18n';
 
 type Of<T extends Slide['type']> = Extract<Slide, { type: T }>;
 
@@ -50,7 +51,7 @@ export interface ChartRow {
 export function ChartRows({ rows, unit, label }: { rows: ChartRow[]; unit?: string; label?: string }) {
   const max = Math.max(...rows.map((r) => r.value));
   return (
-    <ul className="chart" aria-label={label ?? 'Bar chart'}>
+    <ul className="chart" aria-label={label ?? t('Bar chart')}>
       {rows.map((r, i) => (
         <li
           key={i}
@@ -72,7 +73,7 @@ export function ChartRows({ rows, unit, label }: { rows: ChartRow[]; unit?: stri
 
 export function ChartSlideView({ slide }: { slide: Of<'chart'> }) {
   return (
-    <Frame kicker="In numbers" heading={slide.heading} note={slide.note}>
+    <Frame kicker={t('In numbers')} heading={slide.heading} note={slide.note}>
       <ChartRows rows={slide.items} unit={slide.unit} />
     </Frame>
   );
@@ -126,7 +127,7 @@ export function PictogramGrid({ icon, total, count, label, onTap, revealed }: Pi
 /** "3 in 10": a grid of icons with the first `count` lit up. */
 export function PictogramSlideView({ slide }: { slide: Of<'pictogram'> }) {
   return (
-    <Frame kicker="In proportion" heading={slide.heading} note={slide.note}>
+    <Frame kicker={t('In proportion')} heading={slide.heading} note={slide.note}>
       <PictogramGrid icon={slide.icon} total={slide.total} count={slide.count} label={`${slide.count} of ${slide.total} highlighted`} />
       <p className="pictogram__ratio">
         <strong>{slide.count}</strong> of {slide.total}
@@ -156,7 +157,7 @@ export function ScaleSlideView({ slide }: { slide: Of<'scale'> }) {
   });
   const describe = slide.items.map((d) => `${d.label}: ${withUnit(d.value, slide.unit)}`).join(', ');
   return (
-    <Frame kicker="To scale" heading={slide.heading} note={slide.note}>
+    <Frame kicker={t('To scale')} heading={slide.heading} note={slide.note}>
       <svg className="scale" viewBox={`0 0 ${W} ${base + 4}`} role="img" aria-label={describe}>
         <line className="scale__base" x1="4" x2={W - 4} y1={base} y2={base} />
         {circles.map(({ d, cx, r }, i) => (
@@ -200,7 +201,7 @@ export function SpectrumSlideView({ slide }: { slide: Of<'spectrum'> }) {
   const mid = barX + barW / 2;
   const describe = marks.map((m) => `${m.label}: ${withUnit(m.value, slide.unit, format)}`).join(', ');
   return (
-    <Frame kicker="On the scale" heading={slide.heading} note={slide.note}>
+    <Frame kicker={t('On the scale')} heading={slide.heading} note={slide.note}>
       <svg className="spectrum" viewBox={`0 0 ${W} 240`} role="img" aria-label={describe}>
         <defs>
           <linearGradient id={gradient} x1="0" y1="1" x2="0" y2="0">
@@ -239,7 +240,7 @@ export function SpectrumSlideView({ slide }: { slide: Of<'spectrum'> }) {
 /** Steps joined by arrows, optionally looping back to the start. */
 export function FlowSlideView({ slide }: { slide: Of<'flow'> }) {
   return (
-    <Frame kicker={slide.cycle ? 'The cycle' : 'Step by step'} heading={slide.heading}>
+    <Frame kicker={slide.cycle ? t('The cycle') : t('Step by step')} heading={slide.heading}>
       <ol className="flow">
         {slide.steps.map((s, i) => (
           <li key={i} className="flow__step">
@@ -250,7 +251,7 @@ export function FlowSlideView({ slide }: { slide: Of<'flow'> }) {
           </li>
         ))}
       </ol>
-      {slide.cycle && <p className="flow__again">↻ and round it goes again</p>}
+      {slide.cycle && <p className="flow__again">↻ {t('and round it goes again')}</p>}
     </Frame>
   );
 }

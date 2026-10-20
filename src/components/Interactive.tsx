@@ -8,6 +8,7 @@ import { inline } from '../lib/markdown';
 import { MatchSlideView, OddSlideView, ScrambleSlideView, SortSlideView } from './Puzzles';
 import { FillSlideView, HigherSlideView, PlaceSlideView, RankSlideView } from './VisualPuzzles';
 import { useRecord } from './useRecord';
+import { t } from '../i18n';
 
 type Of<T extends Slide['type']> = Extract<Slide, { type: T }>;
 
@@ -65,9 +66,9 @@ export function QuizSlideView({ slide, challengeId }: Props<'quiz'>) {
 
   return (
     <div className="slide__center interactive" data-interactive>
-      <p className="slide__heading">Quick quiz</p>
+      <p className="slide__heading">{t('Quick quiz')}</p>
       <p className="interactive__question">{inline(slide.question)}</p>
-      <div className="choices" role="group" aria-label="Answers">
+      <div className="choices" role="group" aria-label={t('Answers')}>
         {slide.options.map((option, i) => {
           const state = !done ? '' : i === slide.answer ? ' choice--right' : i === picked ? ' choice--wrong' : ' choice--dim';
           return (
@@ -76,8 +77,8 @@ export function QuizSlideView({ slide, challengeId }: Props<'quiz'>) {
                 {LETTERS[i]}
               </span>
               <span>{option}</span>
-              {done && i === slide.answer && <Check size={20} aria-label="Correct answer" />}
-              {done && i === picked && i !== slide.answer && <X size={20} aria-label="Your answer" />}
+              {done && i === slide.answer && <Check size={20} aria-label={t('Correct answer')} />}
+              {done && i === picked && i !== slide.answer && <X size={20} aria-label={t('Your answer')} />}
             </button>
           );
         })}
@@ -85,7 +86,7 @@ export function QuizSlideView({ slide, challengeId }: Props<'quiz'>) {
       <p className="interactive__result" role="status" aria-live="polite">
         {done && (
           <>
-            <strong>{picked === slide.answer ? 'Right! ' : 'Not quite. '}</strong>
+            <strong>{picked === slide.answer ? t('Right! ') : t('Not quite. ')}</strong>
             {inline(slide.explanation)}
           </>
         )}
@@ -101,7 +102,7 @@ export function RevealSlideView({ slide, challengeId }: Props<'reveal'>) {
 
   return (
     <div className="slide__center interactive" data-interactive>
-      <p className="slide__heading">Think first</p>
+      <p className="slide__heading">{t('Think first')}</p>
       <p className="interactive__question">{inline(slide.prompt)}</p>
       {open ? (
         <div className="reveal reveal--open" role="status" aria-live="polite">
@@ -116,7 +117,7 @@ export function RevealSlideView({ slide, challengeId }: Props<'reveal'>) {
             record(null);
           }}
         >
-          <span className="reveal__tap">Tap to reveal</span>
+          <span className="reveal__tap">{t('Tap to reveal')}</span>
         </button>
       )}
     </div>
@@ -134,7 +135,7 @@ export function EstimateSlideView({ slide, challengeId }: Props<'estimate'>) {
 
   // How far off, as a share of the slider's range.
   const off = Math.abs(value - slide.answer) / span;
-  const verdict = off <= 0.02 ? 'Spot on!' : off <= 0.1 ? 'Close!' : off <= 0.25 ? 'Not far off.' : 'Way off, but now you know.';
+  const verdict = off <= 0.02 ? t('Spot on!') : off <= 0.1 ? t('Close!') : off <= 0.25 ? t('Not far off.') : t('Way off, but now you know.');
   const width = (n: number) => `${((n - slide.min) / span) * 100}%`;
 
   const lock = () => {
@@ -144,20 +145,20 @@ export function EstimateSlideView({ slide, challengeId }: Props<'estimate'>) {
 
   return (
     <div className="slide__center interactive" data-interactive>
-      <p className="slide__heading">Take a guess</p>
+      <p className="slide__heading">{t('Take a guess')}</p>
       <p className="interactive__question">{inline(slide.question)}</p>
       {locked ? (
         <div role="status" aria-live="polite">
           <div className="estimate__bars">
             <div className="estimate__row">
-              <span>You</span>
+              <span>{t('You')}</span>
               <span className="estimate__bar">
                 <span style={{ width: width(value) }} />
               </span>
               <strong>{withUnit(value, slide.unit, slide.format)}</strong>
             </div>
             <div className="estimate__row estimate__row--answer">
-              <span>Real</span>
+              <span>{t('Real')}</span>
               <span className="estimate__bar">
                 <span style={{ width: width(slide.answer) }} />
               </span>
@@ -190,7 +191,7 @@ export function EstimateSlideView({ slide, challengeId }: Props<'estimate'>) {
             <span>{withUnit(slide.max, slide.unit, slide.format)}</span>
           </div>
           <button className="btn btn--light" onClick={lock}>
-            Lock in my guess
+            {t('Lock in my guess')}
           </button>
         </>
       )}
@@ -224,9 +225,9 @@ export function OrderSlideView({ slide, challengeId }: Props<'order'>) {
 
   return (
     <div className="slide__center interactive" data-interactive>
-      <p className="slide__heading">Tap in order</p>
+      <p className="slide__heading">{t('Tap in order')}</p>
       <p className="interactive__question">{inline(slide.heading)}</p>
-      <ol className={`choices${slide.items.length >= 5 ? ' choices--5' : ''}`} aria-label="Items to order">
+      <ol className={`choices${slide.items.length >= 5 ? ' choices--5' : ''}`} aria-label={t('Items to order')}>
         {shuffled.map((original) => {
           const pos = picks.indexOf(original);
           const state = !done ? (pos >= 0 ? ' choice--picked' : '') : pos === original ? ' choice--right' : ' choice--wrong';
@@ -245,17 +246,17 @@ export function OrderSlideView({ slide, challengeId }: Props<'order'>) {
       <p className="interactive__result" role="status" aria-live="polite">
         {done ? (
           <>
-            <strong>{allRight ? 'Perfect order! ' : 'Not quite. '}</strong>
-            {!allRight && <>The order is {slide.items.join(' → ')}. </>}
+            <strong>{allRight ? t('Perfect order! ') : t('Not quite. ')}</strong>
+            {!allRight && t('The order is {order}. ', { order: slide.items.join(' → ') })}
             {slide.explanation && inline(slide.explanation)}{' '}
             <button className="link-btn link-btn--light" onClick={() => setPicks([])}>
-              <RotateCcw size={13} /> Try again
+              <RotateCcw size={13} /> {t('Try again')}
             </button>
           </>
         ) : (
           picks.length > 0 && (
             <button className="link-btn link-btn--light" onClick={() => setPicks([])}>
-              <RotateCcw size={13} /> Reset
+              <RotateCcw size={13} /> {t('Reset')}
             </button>
           )
         )}

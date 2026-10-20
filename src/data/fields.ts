@@ -1,1 +1,7 @@
-export { FIELD_BY_ID, FIELD_IDS, FIELDS } from '../../shared/fields.ts';
+import { FIELD_BY_ID as ALL_FIELDS, type Field, type FieldId } from '../../shared/fields.ts';
+import { EDITION } from '../edition';
+
+/** This edition's fields, in its order and language. */
+export const FIELDS: Field[] = EDITION.fields.map((id) => ({ ...ALL_FIELDS[id], ...EDITION.fieldText?.[id] }));
+export const FIELD_IDS: readonly FieldId[] = EDITION.fields;
+export const FIELD_BY_ID = Object.fromEntries(FIELDS.map((f) => [f.id, f])) as Record<FieldId, Field>;

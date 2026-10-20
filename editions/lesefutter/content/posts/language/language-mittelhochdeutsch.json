@@ -1,0 +1,143 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "language-mittelhochdeutsch",
+  "field": "language",
+  "title": "Vor 800 Jahren klang „mein neues Haus“ ungefähr wie „miin nüwes huus“",
+  "emoji": "🏠",
+  "body": "Um 1200 waren *î*, *û* und *iu* lange, einfache Vokale: *mîn* klang wie „miin“. Später wurden daraus die **Zwielaute** (zwei Vokale in einer Silbe) *ei*, *au* und *eu*. Umgekehrt wurden alte Zwielaute einfach: Aus *guot* wurde *gut*. In vielen Schweizer Dialekten klingen diese Laute bis heute fast wie im Mittelalter.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "mein-neues-haus.svg",
+      "alt": "Schaubild: Oben stehen die mittelhochdeutschen Wörter mîn, niuwez und hûs, unten die heutigen Wörter mein, neues und Haus. Pfeile zeigen: î wird ei, iu wird eu, û wird au.",
+      "fit": "contain",
+      "credit": "Lesefutter · eigene Grafik"
+    },
+    {
+      "type": "list",
+      "heading": "Aus einem Laut werden zwei",
+      "items": [
+        "*î* wird *ei*: *mîn* → mein, *zît* → Zeit",
+        "*û* wird *au*: *hûs* → Haus, *mûs* → Maus",
+        "*iu* wird *eu*: *niuwe* → neu, *liute* → Leute",
+        "Das begann im 12. Jahrhundert im Südosten, etwa in Kärnten, und wanderte nach Norden."
+      ]
+    },
+    {
+      "type": "list",
+      "heading": "Aus zwei Lauten wird einer",
+      "items": [
+        "*ie* wird langes i: *liebe* → Liebe",
+        "*uo* wird *u*: *guot* → gut, *bluome* → Blume",
+        "*üe* wird *ü*: *grüezen* → grüßen, *müede* → müde",
+        "Bei *ie* blieb die Schrift: Wir schreiben *ie*, sprechen aber ein langes i."
+      ]
+    },
+    {
+      "type": "sort",
+      "heading": "Was wird aus dem alten Laut?",
+      "bins": [
+        "zu ei, au, eu",
+        "zu i, u, ü"
+      ],
+      "items": [
+        {
+          "text": "wîn",
+          "bin": 0
+        },
+        {
+          "text": "bruoder",
+          "bin": 1
+        },
+        {
+          "text": "hût",
+          "bin": 0
+        },
+        {
+          "text": "süeze",
+          "bin": 1
+        },
+        {
+          "text": "liep",
+          "bin": 1
+        }
+      ],
+      "explanation": "*wîn* wird Wein, *hût* wird Haut. Aber *bruoder* wird Bruder, *süeze* wird süß und *liep* wird lieb."
+    },
+    {
+      "type": "text",
+      "heading": "Die Schweiz hat nicht mitgemacht",
+      "text": "Die meisten [Schweizer Dialekte](https://de.wikipedia.org/wiki/Schweizerdeutsch) haben beide Änderungen nicht mitgemacht. Dort sagt man *Huus* (Haus), *wiit* (weit) und *Züüg* (Zeug) – fast wie im Mittelhochdeutschen. Auch die alten Zwielaute sind noch da: *lieb* klingt wie „li-eb“, und der Name *Ruedi* wie „Ru-edi“."
+    },
+    {
+      "type": "compare",
+      "heading": "Vorsicht beim Frühstück",
+      "left": {
+        "label": "Müesli",
+        "text": "So heißt das Frühstück aus Getreide in der Schweiz. Hier lebt der alte Zwielaut *üe* weiter."
+      },
+      "right": {
+        "label": "Müsli",
+        "text": "Das ist in der Schweiz eine kleine Maus. Es kommt von *Muus* (Maus) – wie mittelhochdeutsch *mûs*."
+      }
+    },
+    {
+      "type": "match",
+      "heading": "Was bedeutete das Wort um 1200?",
+      "pairs": [
+        {
+          "left": "wîp",
+          "right": "Frau oder Ehefrau"
+        },
+        {
+          "left": "frouwe",
+          "right": "Herrin, adlige Dame"
+        },
+        {
+          "left": "maget",
+          "right": "junge, unverheiratete Frau"
+        },
+        {
+          "left": "hôchgezît",
+          "right": "großes Fest, Feiertag"
+        },
+        {
+          "left": "tier",
+          "right": "wildes Tier"
+        }
+      ],
+      "explanation": "Heute klingt *Weib* abwertend, eine *Magd* arbeitet auf dem Hof, *Hochzeit* ist nur noch die Heirat, und *Tier* meint alle Tiere."
+    },
+    {
+      "type": "text",
+      "heading": "Walther über das Wort wîp",
+      "text": "*Wîp muoz iemer sîn der wîbe hôhste name, und tiuret baz dan frowe.* – „Wîp“ bleibt immer der höchste Name für Frauen und ehrt sie mehr als „frowe“. So singt Walther. Heute klingt *Weib* meist [abwertend](https://de.wikipedia.org/wiki/Bedeutungswandel), und *Frau* ist das normale Wort."
+    },
+    {
+      "type": "list",
+      "heading": "Wörter",
+      "items": [
+        "**der Laut** – ein Ton beim Sprechen, zum Beispiel a",
+        "**der Zwielaut** – zwei Vokale in einer Silbe: ei, au, eu",
+        "**der Dialekt** – die Sprache einer Region",
+        "**abwertend** – unfreundlich, negativ gemeint",
+        "**die Bedeutung** – was ein Wort sagen will"
+      ]
+    }
+  ],
+  "tags": [
+    "mittelhochdeutsch",
+    "aussprache",
+    "dialekt",
+    "wortgeschichte"
+  ],
+  "source": {
+    "label": "Wikipedia: Mittelhochdeutsche Sprache",
+    "url": "https://de.wikipedia.org/wiki/Mittelhochdeutsche_Sprache"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-20"
+}

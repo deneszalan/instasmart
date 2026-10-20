@@ -13,6 +13,8 @@ import { postId, useStore } from '../state/store';
 import { Avatar } from './Avatar';
 import { CardMedia, WikiMedia } from './Media';
 import { Sheet } from './Sheet';
+import { t } from '../i18n';
+import { EDITION } from '../edition';
 
 /** Mark a post as read once at least 60% of it has been on screen for 1.5 seconds. */
 function useSeen(id: string) {
@@ -73,7 +75,7 @@ function relatedCards(card: KnowledgeCard, count = 3): KnowledgeCard[] {
 }
 
 function formatDay(day: string): string {
-  return new Date(`${day}T12:00:00Z`).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+  return new Date(`${day}T12:00:00Z`).toLocaleDateString(EDITION.lang === 'de' ? 'de-DE' : undefined, { month: 'short', day: 'numeric', year: 'numeric' });
 }
 
 /** The "go deeper" sheet: the full explanation, every slide, tags, source and related pieces. */
@@ -114,10 +116,10 @@ export function LearnMore({ post, onClose }: { post: Post; onClose: () => void }
   const { card } = current;
   const field = FIELD_BY_ID[card.field];
   return (
-    <Sheet title="Go deeper" onClose={onClose}>
+    <Sheet title={t('Go deeper')} onClose={onClose}>
       <div ref={bodyRef} className="learn">
         <p className="learn__meta">
-          {field.emoji} {field.name} · {readSeconds(cardText(card))} s read
+          {field.emoji} {t('{field} · {n} s read', { field: field.name, n: readSeconds(cardText(card)) })}
         </p>
         <h3 className="learn__title">{card.title}</h3>
         <p className="learn__body">{inline(card.body)}</p>
@@ -142,7 +144,7 @@ export function LearnMore({ post, onClose }: { post: Post; onClose: () => void }
         )}
         {card.author && (
           <p className="learn__author">
-            {card.author.kind === 'ai' ? 'AI-written' : 'Written'} by {card.author.name}
+            {t(card.author.kind === 'ai' ? 'AI-written by {name}' : 'Written by {name}', { name: card.author.name })}
             {card.author.model ? ` (${card.author.model})` : ''}
             {card.createdAt ? ` · ${formatDay(card.createdAt)}` : ''}
           </p>
@@ -155,9 +157,9 @@ export function LearnMore({ post, onClose }: { post: Post; onClose: () => void }
           ))}
         </div>
         <a className="btn btn--primary" href={card.source.url} target="_blank" rel="noreferrer">
-          Source: {card.source.label} <ExternalLink size={16} />
+          {t('Source: {label}', { label: card.source.label })} <ExternalLink size={16} />
         </a>
-        <h4 className="learn__subhead">More from {field.name}</h4>
+        <h4 className="learn__subhead">{t('More from {field}', { field: field.name })}</h4>
         <ul className="learn__related">
           {relatedCards(card).map((c) => (
             <li key={c.id}>
@@ -184,11 +186,11 @@ function Caption({ handle, text, onMore }: { handle: string; text: string; onMor
       </p>
       {!expanded ? (
         <button className="link-btn" onClick={() => setExpanded(true)}>
-          more
+          {t('more')}
         </button>
       ) : (
         <button className="link-btn" onClick={onMore}>
-          Go deeper
+          {t('Go deeper')}
         </button>
       )}
     </div>
@@ -236,18 +238,18 @@ export function PostView({ post, className }: PostViewProps) {
               <button
                 className={`badge badge--${group.id}`}
                 onClick={() => navigate({ tab: 'explore', by: group.id, q: '', post: null })}
-                title={`Written by ${card!.author!.name}. Show all posts by ${group.label}`}
-                aria-label={`Written by ${group.label}. Show all their posts`}
+                title={t('Written by {name}. Show all posts by {group}', { name: card!.author!.name, group: group.label })}
+                aria-label={t('Written by {group}. Show all their posts', { group: group.label })}
               >
                 {badge}
               </button>
             )}
           </span>
           <span className="post__sub">
-            {field ? `${field.name} · ${readSeconds(cardText(card!))} s read` : `${wiki!.label} · ${formatDay(wiki!.date)}`}
+            {field ? t('{field} · {n} s read', { field: field.name, n: readSeconds(cardText(card!)) }) : `${wiki!.label} · ${formatDay(wiki!.date)}`}
           </span>
         </div>
-        <button className="icon-btn" onClick={() => setShowMore(true)} aria-label="More about this post">
+        <button className="icon-btn" onClick={() => setShowMore(true)} aria-label={t('More about this post')}>
           <Ellipsis size={22} />
         </button>
       </header>
@@ -266,15 +268,15 @@ export function PostView({ post, className }: PostViewProps) {
           <button
             className={`icon-btn${liked ? ' icon-btn--liked' : ''}`}
             onClick={() => toggleLike(id)}
-            aria-label={liked ? 'Unlike' : 'Like'}
+            aria-label={liked ? t('Unlike') : t('Like')}
             aria-pressed={liked}
           >
             <Heart size={26} fill={liked ? 'currentColor' : 'none'} />
           </button>
-          <button className="icon-btn" onClick={() => setShowMore(true)} aria-label="Go deeper">
+          <button className="icon-btn" onClick={() => setShowMore(true)} aria-label={t('Go deeper')}>
             <MessageCircle size={26} style={{ transform: 'scaleX(-1)' }} />
           </button>
-          <button className="icon-btn" onClick={() => sharePost(post)} aria-label="Share">
+          <button className="icon-btn" onClick={() => sharePost(post)} aria-label={t('Share')}>
             <Send size={24} />
           </button>
         </div>
@@ -288,7 +290,7 @@ export function PostView({ post, className }: PostViewProps) {
         <button
           className="icon-btn post__save"
           onClick={() => toggleSave(post)}
-          aria-label={saved ? 'Remove from saved' : 'Save'}
+          aria-label={saved ? t('Remove from saved') : t('Save')}
           aria-pressed={saved}
         >
           <Bookmark size={26} fill={saved ? 'currentColor' : 'none'} />
@@ -296,7 +298,7 @@ export function PostView({ post, className }: PostViewProps) {
       </div>
 
       <div className="post__text">
-        {liked && <p className="post__likes">Liked by you</p>}
+        {liked && <p className="post__likes">{t('Liked by you')}</p>}
         <Caption handle={handle} text={(card ?? wiki!).body} onMore={() => setShowMore(true)} />
         {card && (
           <p className="post__tags">

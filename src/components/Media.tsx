@@ -10,6 +10,7 @@ import { clock, VideoSlideView } from './Video';
 import { challengeId } from '../lib/interactive';
 import { firstVideo } from '../lib/visual';
 import { clipSeconds } from '../data/library';
+import { t } from '../i18n';
 
 function titleSize(title: string): string {
   if (title.length <= 36) return 'xl';
@@ -49,9 +50,9 @@ export function TitleSlide({ card, hasMore, onWatch }: { card: KnowledgeCard; ha
         <button
           className={`slide__video${animated ? ' slide__video--watch' : ''}`}
           onClick={onWatch}
-          aria-label={animated ? `Watch the animation in this post${length ? `, ${clock(length)}` : ''}` : 'Watch the video in this post'}
+          aria-label={animated ? `${t('Watch the animation in this post')}${length ? `, ${clock(length)}` : ''}` : t('Watch the video in this post')}
         >
-          <Play size={13} fill="currentColor" /> {animated ? `Watch${length ? ` · ${clock(length)}` : ''}` : 'Video'}
+          <Play size={13} fill="currentColor" /> {animated ? `${t('Watch')}${length ? ` · ${clock(length)}` : ''}` : t('Video')}
         </button>
       )}
       <div className="slide__center">
@@ -64,7 +65,7 @@ export function TitleSlide({ card, hasMore, onWatch }: { card: KnowledgeCard; ha
       </div>
       <div className="slide__foot">
         <span>{cover?.credit ? `📷 ${cover.credit}` : `@${field.handle}`}</span>
-        {hasMore && <span className="slide__swipe">{video === 0 ? 'Swipe to watch →' : 'Swipe for more →'}</span>}
+        {hasMore && <span className="slide__swipe">{video === 0 ? t('Swipe to watch →') : t('Swipe for more →')}</span>}
       </div>
     </div>
   );
@@ -246,14 +247,14 @@ export function CardMedia({ card, onIndexChange }: CardMediaProps) {
         className="carousel__track"
         onScroll={onScroll}
         aria-roledescription="carousel"
-        aria-label={`${total} slides`}
+        aria-label={t('{n} slides', { n: total })}
       >
         {Array.from({ length: total }, (_, i) => (
           <div
             key={i}
             className="carousel__item"
             aria-roledescription="slide"
-            aria-label={`${i + 1} of ${total}`}
+            aria-label={t('{n} of {total}', { n: i + 1, total })}
             aria-hidden={i !== index}
           >
             {i === 0 ? (
@@ -276,12 +277,12 @@ export function CardMedia({ card, onIndexChange }: CardMediaProps) {
         {index + 1}/{total}
       </span>
       {index > 0 && (
-        <button className="carousel__nav carousel__nav--prev" onClick={() => go(index - 1)} aria-label="Previous slide">
+        <button className="carousel__nav carousel__nav--prev" onClick={() => go(index - 1)} aria-label={t('Previous slide')}>
           <ChevronLeft size={18} />
         </button>
       )}
       {index < total - 1 && (
-        <button className="carousel__nav carousel__nav--next" onClick={() => go(index + 1)} aria-label="Next slide">
+        <button className="carousel__nav carousel__nav--next" onClick={() => go(index + 1)} aria-label={t('Next slide')}>
           <ChevronRight size={18} />
         </button>
       )}

@@ -1,0 +1,93 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-nibelungenlied-hintergrund",
+  "field": "history",
+  "title": "Das Nibelungenlied erinnert an einen echten Untergang im Jahr 436",
+  "emoji": "⚔️",
+  "body": "Das **Nibelungenlied** wurde um 1200 aufgeschrieben. Den Namen des Dichters kennen wir nicht. Sein historischer Kern (der wahre Teil der Sage) liegt viel früher: **436** zerstörten hunnische Krieger im Dienst Roms das Reich der Burgunder am Rhein. Aus König Gundahar wurde im Lied König Gunther, aus dem Hunnenkönig Attila wurde Etzel.",
+  "slides": [
+    {
+      "type": "text",
+      "heading": "Was das Lied erzählt",
+      "text": "Siegfried kommt an den Hof der Burgunder in Worms und heiratet Kriemhild. Bei einer Jagd tötet ihn Hagen. Seine Witwe Kriemhild heiratet später Etzel, den König der Hunnen. Sie lädt ihre Brüder an seinen Hof und rächt sich. Am Ende sterben alle Burgunder."
+    },
+    {
+      "type": "compare",
+      "heading": "Lied und Geschichte",
+      "left": {
+        "label": "Im Lied",
+        "text": "Die Burgunder sterben am Hof von Etzel, dem König der Hunnen."
+      },
+      "right": {
+        "label": "In der Geschichte",
+        "text": "436 zerstörten hunnische Hilfstruppen (Soldaten, die Rom halfen) das Reich der Burgunder am Rhein. König Gundahar fiel. Attila war nicht dabei."
+      }
+    },
+    {
+      "type": "timeline",
+      "heading": "Von der Geschichte zur Sage",
+      "events": [
+        { "when": "436", "text": "Das Burgunderreich am Rhein wird zerstört." },
+        { "when": "453", "text": "Attila stirbt in seiner Hochzeitsnacht." },
+        { "when": "um 1200", "text": "Das Nibelungenlied wird aufgeschrieben." },
+        { "when": "1876", "text": "Wagners „Ring“ wird ganz gespielt." }
+      ]
+    },
+    {
+      "type": "sort",
+      "heading": "Stimmt das?",
+      "bins": ["Stimmt", "Stimmt nicht"],
+      "items": [
+        { "text": "Im Lied steht Etzel für den Hunnenkönig Attila.", "bin": 0 },
+        { "text": "Attila selbst führte 436 den Angriff auf die Burgunder.", "bin": 1 },
+        { "text": "Der Dichter des Nibelungenliedes nennt seinen Namen.", "bin": 1 },
+        { "text": "Es ist bewiesen, dass Siegfried der Germane Arminius war.", "bin": 1 }
+      ],
+      "explanation": "Etzel ist Attila, doch 436 kämpften Hunnen im Dienst Roms ohne ihn. Der Dichter bleibt unbekannt. Für Siegfried als Arminius gibt es keinen Beleg."
+    },
+    {
+      "type": "text",
+      "heading": "Siegfried, ein Römerfeind?",
+      "text": "Seit etwa 1820 meinten manche Forscher: Siegfried ist eigentlich Arminius, der im Jahr 9 ein römisches Heer besiegte. Einen Beleg (Beweis) dafür gibt es nicht. Wer Siegfried war, wissen wir nicht."
+    },
+    {
+      "type": "quiz",
+      "question": "Richard Wagners „Ring des Nibelungen“: Woher stammt ein großer Teil der Handlung?",
+      "options": [
+        "Aus nordischen Sagen wie der Edda",
+        "Nur aus dem Nibelungenlied",
+        "Aus alten Urkunden aus Worms",
+        "Aus dem Codex Manesse"
+      ],
+      "answer": 0,
+      "explanation": "Wagner las die Edda und die isländische Völsunga saga. Daraus nahm er viel, etwa für die Walküre. Das Nibelungenlied war nur eine seiner Quellen."
+    },
+    {
+      "type": "stat",
+      "value": "15 Stunden",
+      "label": "dauert Wagners „Ring“ ungefähr: vier Opern an vier Abenden",
+      "text": "Wagner arbeitete von 1848 bis 1874 daran. Im August 1876 wurde der ganze „Ring“ zum ersten Mal in Bayreuth gespielt."
+    },
+    {
+      "type": "list",
+      "heading": "Wörter",
+      "items": [
+        "**die Sage** – eine alte Geschichte, lange mündlich erzählt",
+        "**der Kern** – das Wichtigste, die Mitte",
+        "**der Untergang** – das Ende, die Zerstörung",
+        "**der Beleg** – ein Beweis aus einer Quelle",
+        "**sich rächen** – jemandem Böses tun, weil er einem Böses tat"
+      ]
+    }
+  ],
+  "tags": ["nibelungenlied", "burgunder", "attila", "sage", "wagner"],
+  "source": {
+    "label": "Wikipedia: Nibelungenlied",
+    "url": "https://de.wikipedia.org/wiki/Nibelungenlied"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-20"
+}

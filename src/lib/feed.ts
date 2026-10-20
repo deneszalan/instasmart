@@ -1,5 +1,6 @@
 import type { FieldId, KnowledgeCard, Slide } from '../types';
 import { plain } from './markdown';
+import { t } from '../i18n';
 
 /** Small, fast seeded PRNG (mulberry32) so feed order is reproducible in tests. */
 export function createRng(seed: number): () => number {
@@ -151,11 +152,11 @@ function slideParts(slide: Slide): string[] {
     case 'higher':
       return [slide.items.map((d) => `${d.label} ${d.value}${slide.unit ? ` ${slide.unit}` : ''}`).join(', '), slide.note ?? '', slide.explanation ?? ''];
     case 'fill':
-      return [slide.question, `${slide.answer} of ${slide.total}`, slide.explanation];
+      return [slide.question, t('{n} of {total}', { n: slide.answer, total: slide.total }), slide.explanation];
     case 'place':
       return [slide.question, `${slide.answer}${slide.unit ? ` ${slide.unit}` : ''}`, slide.explanation];
     case 'pictogram':
-      return [`${slide.count} of ${slide.total}`, slide.note ?? ''];
+      return [t('{n} of {total}', { n: slide.count, total: slide.total }), slide.note ?? ''];
     case 'spectrum':
       return [slide.marks.map((m) => `${m.label} ${m.value}${slide.unit ? ` ${slide.unit}` : ''}`).join(', '), slide.note ?? ''];
     case 'flow':

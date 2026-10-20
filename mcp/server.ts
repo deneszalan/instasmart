@@ -3,7 +3,6 @@ import { join } from 'node:path';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import type { CallToolResult } from '@modelcontextprotocol/sdk/types.js';
 import { z } from 'zod';
-import { FIELD_IDS, FIELDS } from '../shared/fields.ts';
 import { formatIssues, localMedia, Post, postJsonSchema } from '../shared/schema.ts';
 import {
   type ContentFile,
@@ -14,6 +13,11 @@ import {
   serializePost,
   validateContent,
 } from '../shared/validate.ts';
+import { EDITIONS, editionFields } from '../shared/editions.ts';
+
+// The MCP server writes Reckon's posts (content/ at the repo root).
+const FIELDS = editionFields(EDITIONS.reckon);
+const FIELD_IDS = EDITIONS.reckon.fields;
 import type { ContentStore } from './stores.ts';
 
 const MediaInput = z
@@ -76,7 +80,7 @@ export function preparePost(input: unknown, media: MediaInput[] = [], author?: s
   }
   if (problems.length) return { post, files, problems };
 
-  for (const p of validateContent(files).problems) problems.push(`${p.file}: ${p.message}`);
+  for (const p of validateContent(files, EDITIONS.reckon.fields).problems) problems.push(`${p.file}: ${p.message}`);
   return { post, files, problems };
 }
 
@@ -112,7 +116,7 @@ export function createServer(store: ContentStore, root: string): McpServer {
     {
       title: 'List posts',
       description: 'Ids of the posts already in the app (ids describe the topic). Check this to avoid duplicates.',
-      inputSchema: { field: z.enum(FIELD_IDS).optional().describe('Only this field.') },
+      inputSchema: { field: z.enum(FIELD_IDS as unknown as [string, ...string[]]).optional().describe('Only this field.') },
       annotations: { readOnlyHint: true },
     },
     async ({ field }) => {

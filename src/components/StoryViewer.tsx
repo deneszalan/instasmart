@@ -16,6 +16,8 @@ import { firstVideo } from '../lib/visual';
 import { useRoute } from '../lib/route';
 import { sound } from '../lib/sound';
 import { clipSpeed, SPEEDS } from './Video';
+import { t } from '../i18n';
+import { formatNumber } from '../lib/format';
 
 type VideoSlide = Extract<Slide, { type: 'video' }>;
 
@@ -194,7 +196,7 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
   const own = { onPointerDown: (e: PointerEvent) => e.stopPropagation(), onPointerUp: (e: PointerEvent) => e.stopPropagation() };
 
   return createPortal(
-    <div className="story-overlay" role="dialog" aria-modal="true" aria-label={`${story.label} story`}>
+    <div className="story-overlay" role="dialog" aria-modal="true" aria-label={t('{label} story', { label: story.label })}>
       <div className="story" style={gradientStyle(cardGradient(card))}>
         <div className="story__bars">
           {story.cards.map((c, i) => (
@@ -216,21 +218,21 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
           {(story.id === 'daily' || story.interactive) && <span className="story__sub">{field.name}</span>}
           <span className="story__spacer" />
           {clip?.music && (
-            <button className="icon-btn icon-btn--light" onClick={toggleSound} aria-label={muted ? 'Turn sound on' : 'Turn sound off'} aria-pressed={!muted}>
+            <button className="icon-btn icon-btn--light" onClick={toggleSound} aria-label={muted ? t('Turn sound on') : t('Turn sound off')} aria-pressed={!muted}>
               {muted ? <VolumeX size={20} /> : <Volume2 size={20} />}
             </button>
           )}
           {clip && (
-            <button className="story__speed" onClick={nextSpeed} aria-label={`Playback speed ${rate} times, tap to change`}>
-              {rate}×
+            <button className="story__speed" onClick={nextSpeed} aria-label={t('Playback speed {rate} times, tap to change', { rate: formatNumber(rate) })}>
+              {formatNumber(rate)}×
             </button>
           )}
           {timed && (
-            <button className="icon-btn icon-btn--light" onClick={() => setPaused((p) => !p)} aria-label={isPaused ? 'Play' : 'Pause'}>
+            <button className="icon-btn icon-btn--light" onClick={() => setPaused((p) => !p)} aria-label={isPaused ? t('Play') : t('Pause')}>
               {isPaused ? <Play size={20} /> : <Pause size={20} />}
             </button>
           )}
-          <button className="icon-btn icon-btn--light" onClick={onClose} aria-label="Close stories">
+          <button className="icon-btn icon-btn--light" onClick={onClose} aria-label={t('Close stories')}>
             <X size={24} />
           </button>
         </div>
@@ -291,7 +293,7 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
                 onPointerUp={(e) => e.stopPropagation()}
                 onClick={next}
               >
-                {frame + 1 < story.cards.length ? 'Next' : 'Done'} <ArrowRight size={16} />
+                {frame + 1 < story.cards.length ? t('Next') : t('Done')} <ArrowRight size={16} />
               </button>
             </>
           )}
@@ -299,7 +301,7 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
 
         <div className="story__actions">
           <button className="btn btn--light story__open" {...own} onClick={openPost}>
-            Open post <ArrowRight size={16} />
+            {t('Open post')} <ArrowRight size={16} />
           </button>
           <a className="story__source" href={card.source.url} target="_blank" rel="noreferrer">
             {card.source.label} <ExternalLink size={14} />

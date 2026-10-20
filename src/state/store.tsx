@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useReducer, type ReactNode } from 'react';
 import type { Post } from '../types';
 import type { WikiPost } from '../lib/wiki';
+import { EDITION } from '../edition';
 
 export type Theme = 'system' | 'light' | 'dark';
 
@@ -33,9 +34,10 @@ type Action =
   | { type: 'settings'; patch: Partial<LearnState['settings']> }
   | { type: 'reset' };
 
-const STORAGE_KEY = 'reckon:v1';
-/** Where progress was saved before the app was renamed; read once, then carried over. */
-const LEGACY_KEY = 'instasmart:v1';
+/** Each edition keeps its own progress: they share the site's origin, and so its localStorage. */
+const STORAGE_KEY = EDITION.storageKey;
+/** Where Reckon saved progress before it was renamed; read once, then carried over. */
+const LEGACY_KEY = EDITION.id === 'reckon' ? 'instasmart:v1' : null;
 
 export const initialState: LearnState = {
   liked: {},
@@ -119,7 +121,7 @@ export function streak(activeDays: readonly string[], today = new Date()): numbe
 
 function load(): LearnState {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY) ?? localStorage.getItem(LEGACY_KEY);
+    const raw = localStorage.getItem(STORAGE_KEY) ?? (LEGACY_KEY && localStorage.getItem(LEGACY_KEY));
     if (!raw) return initialState;
     const parsed = JSON.parse(raw) as Partial<LearnState>;
     // The old videoRate setting saved 1 whether or not the reader chose it, so it is dropped and

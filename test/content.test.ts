@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { FIELDS } from '../shared/fields.ts';
+import { EDITION_IDS, EDITIONS } from '../shared/editions.ts';
 import { readContentFiles } from '../scripts/disk.ts';
 import { validateContent } from '../shared/validate.ts';
 import { schemaText, SCHEMA_PATH } from '../scripts/content.ts';
@@ -9,17 +9,35 @@ import { clipSeconds, LIBRARY } from '../src/data/library';
 
 const root = join(__dirname, '..');
 
+const content = Object.fromEntries(
+  EDITION_IDS.map((id) => [id, validateContent(readContentFiles(join(root, EDITIONS[id].dir)), EDITIONS[id].fields)]),
+);
+
+describe('every edition', () => {
+  for (const id of EDITION_IDS) {
+    const { posts, problems } = content[id];
+    const edition = EDITIONS[id];
+
+    it(`${edition.name} passes validation (run \`npm run content\` for details)`, () => {
+      expect(problems.map((p) => `${p.file}: ${p.message}`)).toEqual([]);
+    });
+
+    it(`${edition.name} has posts in each of its fields`, () => {
+      // Reckon is the big library; a new edition may start small.
+      const least = id === 'reckon' ? 8 : 1;
+      for (const f of edition.fields) expect(posts.filter((p) => p.field === f).length, f).toBeGreaterThanOrEqual(least);
+    });
+  }
+
+  it('keeps post ids unique across editions, as explainers/ is shared', () => {
+    const ids = EDITION_IDS.flatMap((id) => content[id].posts.map((p) => p.id));
+    expect(ids.length).toBe(new Set(ids).size);
+  });
+});
+
 describe('content/', () => {
-  const files = readContentFiles(root);
-  const { posts, problems } = validateContent(files);
-
-  it('passes validation (run `npm run content` for details)', () => {
-    expect(problems.map((p) => `${p.file}: ${p.message}`)).toEqual([]);
-  });
-
-  it('covers every field', () => {
-    for (const f of FIELDS) expect(posts.filter((p) => p.field === f.id).length, f.id).toBeGreaterThanOrEqual(8);
-  });
+  // Tests run in Vite's test mode, which builds Reckon.
+  const { posts } = content.reckon;
 
   it('is what the app loads', () => {
     expect(LIBRARY.map((c) => c.id).sort()).toEqual(posts.map((p) => p.id).sort());

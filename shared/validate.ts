@@ -178,7 +178,8 @@ export function checkPostFile(path: string, json: string): { post?: Post; proble
  * Validate a set of content files as a whole: every post, every image, unique ids,
  * every referenced image present and no stray media.
  */
-export function validateContent(files: ContentFile[]): { posts: Post[]; problems: Problem[] } {
+/** Check every post and media file of one edition; `fields` are the fields that edition uses. */
+export function validateContent(files: ContentFile[], fields: readonly string[] = FIELD_IDS): { posts: Post[]; problems: Problem[] } {
   const problems: Problem[] = [];
   const posts: Post[] = [];
   const media = new Map<string, Set<string>>();
@@ -207,8 +208,8 @@ export function validateContent(files: ContentFile[]): { posts: Post[]; problems
       continue;
     }
     const folder = file.path.slice(POSTS_DIR.length + 1).split('/')[0];
-    if (!(FIELD_IDS as readonly string[]).includes(folder)) {
-      problems.push({ file: file.path, message: `"${folder}" is not a field. Folders are: ${FIELD_IDS.join(', ')}` });
+    if (!fields.includes(folder)) {
+      problems.push({ file: file.path, message: `"${folder}" is not a field here. Folders are: ${fields.join(', ')}` });
       continue;
     }
 

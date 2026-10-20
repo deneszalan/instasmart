@@ -31,7 +31,8 @@
         "music",
         "earth",
         "body",
-        "engineering"
+        "engineering",
+        "literature"
       ]
     },
     "title": {
@@ -996,7 +997,7 @@
               },
               "answer": {
                 "type": "string",
-                "pattern": "^[A-Za-z]{3,14}$",
+                "pattern": "^[A-Za-zÄÖÜäöü]{3,14}$",
                 "description": "The word, shown as shuffled letter tiles."
               },
               "detail": {
@@ -1454,7 +1455,7 @@
       "items": {
         "type": "string",
         "maxLength": 30,
-        "pattern": "^[a-z0-9]+$"
+        "pattern": "^[a-z0-9äöüß]+$"
       }
     },
     "source": {
