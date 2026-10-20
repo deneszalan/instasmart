@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import type { KnowledgeCard, Slide } from '../src/types';
 import { slideText } from '../src/lib/feed';
 import { firstInteractive, isPuzzle, pickInteractive } from '../src/lib/interactive';
-import { firstVisual } from '../src/lib/visual';
+import { firstAnimation, firstFootage, firstVisual } from '../src/lib/visual';
 
 const card = (slides: Slide[]): KnowledgeCard => ({
   id: 'space-test',
@@ -60,5 +60,17 @@ describe('visual and puzzle slides', () => {
     expect(isPuzzle(fill)).toBe(true);
     expect(firstVisual(card([fill]))).toBe(0);
     expect(firstInteractive(card([fill]))).toBe(0);
+  });
+});
+
+describe('video slides', () => {
+  const clip = { type: 'video', src: 'a.mp4', poster: 'a.jpg', alt: 'A clip.', credit: 'NASA · Public domain · excerpt' } as const;
+  const animation = { ...clip, src: 'b.mp4', poster: 'b.jpg', animation: true, credit: 'Reckon · original animation' } as const;
+
+  it('tell footage from animated explainers', () => {
+    expect(firstFootage(card([clip]))).toBe(0);
+    expect(firstAnimation(card([clip]))).toBe(-1);
+    expect(firstFootage(card([{ type: 'text', text: 'Plain.' }, animation]))).toBe(-1);
+    expect(firstAnimation(card([{ type: 'text', text: 'Plain.' }, animation]))).toBe(1);
   });
 });

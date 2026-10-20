@@ -140,7 +140,8 @@ async function main(): Promise<number> {
       src: `${name}.mp4`,
       poster: `${name}.jpg`,
       alt: '<what the animation shows>',
-      caption: '<optional, ≤200 characters>',
+      fit: 'cover',
+      animation: true,
       credit: 'Reckon · original animation',
       ...(values.music ? { music: '<“Title” artist (source) · licence>' } : {}),
     };

@@ -1389,6 +1389,10 @@
                   "cover"
                 ]
               },
+              "animation": {
+                "description": "true for an animated explainer drawn for this post (`npm run explainer`) rather than footage. Explore lists these under \"Animation\".",
+                "type": "boolean"
+              },
               "credit": {
                 "type": "string",
                 "minLength": 1,

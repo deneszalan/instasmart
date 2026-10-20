@@ -174,7 +174,7 @@ npm run clip -- source.mp4 --post <post-id> --name <name> --start 33 --end 44.5 
 
 It cuts the source between `--start` and `--end`, re-encodes it for phones, drops the original sound and lays in a music excerpt (normalised to a quiet background level, faded in and out), makes `<name>.jpg` from the first second (`--still <s>` picks another moment), checks both files and prints the slide JSON. `--music-start auto` skips silent or quiet passages; give seconds to choose the passage yourself. Leave out `--music` for a silent clip. `--crop 4:5` or `--crop 1:1` crops landscape footage to fill the slide.
 
-**Animated explainers: `npm run explainer`.** Instead of footage, a slide can show an animation drawn by code that walks through the post's idea, with captions and music. Each one is a scene file in `explainers/`; see `explainers/README.md`. Credit it `"Reckon · original animation"`.
+**Animated explainers: `npm run explainer`.** Instead of footage, a slide can show an animation drawn by code that walks through the post's idea, with captions and music. Each one is a scene file in `explainers/`; see `explainers/README.md`. Mark the slide `"animation": true`, so Explore lists the post under "Animation" rather than "Video", and credit it `"Reckon · original animation"`.
 
 Contributors without ffmpeg can upload a finished MP4 through the MCP server's `media` list like an image (`base64`); the same checks apply.
 

@@ -18,6 +18,7 @@
       "poster": "pengo-clock.jpg",
       "alt": "Animated engraved banknote: a 24-hour clock runs while a price tag doubles every 15 hours, from 1 to 65,536 pengő in ten days. A 100 quintillion pengő note runs out of room, a dollar's black-market price grows to 31 digits, and 1 forint replaces 400 octillion pengő.",
       "fit": "cover",
+      "animation": true,
       "credit": "Reckon · original animation",
       "music": "“Magic Escape Room” Kevin MacLeod (incompetech.com) · CC BY 4.0"
     },

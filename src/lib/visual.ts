@@ -16,3 +16,13 @@ export function firstVisual(card: KnowledgeCard): number {
 export function firstVideo(card: KnowledgeCard): number {
   return card.slides?.findIndex((s) => s.type === 'video') ?? -1;
 }
+
+/** Index of the card's first clip of real footage (a video slide that isn't an animation), or -1. */
+export function firstFootage(card: KnowledgeCard): number {
+  return card.slides?.findIndex((s) => s.type === 'video' && !s.animation) ?? -1;
+}
+
+/** Index of the card's first animated explainer, or -1. */
+export function firstAnimation(card: KnowledgeCard): number {
+  return card.slides?.findIndex((s) => s.type === 'video' && !!s.animation) ?? -1;
+}
