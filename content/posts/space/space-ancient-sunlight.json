@@ -4,7 +4,7 @@
   "field": "space",
   "title": "The energy in sunlight spent millennia escaping the Sun",
   "emoji": "🔆",
-  "body": "Energy released by fusion in the Sun’s core doesn’t fly straight out. In the dense interior, light is absorbed and re-emitted in random directions over and over, a zigzag “random walk” that takes the energy somewhere between 10,000 and 170,000 years to reach the surface, depending on the estimate. After that long struggle, the final dash from the Sun’s surface to your skin takes only about 8 minutes and 20 seconds.",
+  "body": "Energy released by fusion in the Sun’s core doesn’t fly straight out. In the dense interior, light is absorbed and re-emitted in random directions over and over, a zigzag “random walk” that takes the energy somewhere between 10,000 and 170,000 years to reach the surface, depending on the estimate. After that long struggle, the final dash from the Sun’s surface to your skin takes only about 8 minutes and 19 seconds.",
   "slides": [
     {
       "type": "estimate",
@@ -14,7 +14,16 @@
       "step": 1,
       "answer": 500,
       "unit": "s",
-      "explanation": "About 8 minutes and 20 seconds, around 500 s. Getting from the core to the surface takes far longer: a random walk estimated at anywhere from 10,000 to 170,000 years."
+      "explanation": "About 8 minutes and 19 seconds, around 500 s. Getting from the core to the surface takes far longer: a random walk estimated at anywhere from 10,000 to 170,000 years."
+    },
+    {
+      "type": "video",
+      "src": "escape.mp4",
+      "poster": "escape.jpg",
+      "alt": "Animation: the Sun opens into a labelled cutaway of its core, radiative zone and convection zone. Zoomed in, light zigzags outward in a random walk; a gauge shows the 10,000 to 170,000 year estimate; light then crosses to Earth as a clock runs to 8:19.",
+      "fit": "cover",
+      "credit": "Reckon · original animation",
+      "music": "“Envision” Kevin MacLeod (incompetech.com) · CC BY 4.0"
     },
     {
       "type": "flow",
@@ -34,7 +43,7 @@
         },
         {
           "icon": "🌍",
-          "label": "Then 8 minutes 20 seconds to Earth"
+          "label": "Then 8 minutes 19 seconds to Earth"
         }
       ]
     }
