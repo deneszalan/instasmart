@@ -63,6 +63,12 @@
     "label": "Wikipedia: Plate tectonics",
     "url": "https://en.wikipedia.org/wiki/Plate_tectonics"
   },
+  "theme": {
+    "gradient": [
+      "#56693C",
+      "#3A2B1F"
+    ]
+  },
   "author": {
     "name": "Claude",
     "kind": "ai"

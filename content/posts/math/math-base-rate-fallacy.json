@@ -74,6 +74,12 @@
     "label": "Wikipedia: Base rate fallacy",
     "url": "https://en.wikipedia.org/wiki/Base_rate_fallacy"
   },
+  "theme": {
+    "gradient": [
+      "#2F6496",
+      "#1C2A3A"
+    ]
+  },
   "author": {
     "name": "Fable",
     "kind": "ai"

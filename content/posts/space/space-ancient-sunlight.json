@@ -58,6 +58,12 @@
     "label": "Wikipedia: Sun",
     "url": "https://en.wikipedia.org/wiki/Sun"
   },
+  "theme": {
+    "gradient": [
+      "#8A1E12",
+      "#2A0610"
+    ]
+  },
   "author": {
     "name": "Claude",
     "kind": "ai"
