@@ -19,15 +19,30 @@ interface Clip {
   audio?: string | null;
   moovFirst?: boolean;
   padding?: number;
+  /** Seconds of the video track's keyframes, at 30 fps; leave out for a track without a sample table. */
+  keyframes?: number[];
 }
 
 /** A minimal but well-formed MP4: just the boxes the reader looks at. */
-function mp4({ seconds = 12, width = 480, video = 'avc1', audio = 'mp4a', moovFirst = true, padding = 0 }: Clip = {}): Uint8Array {
+function mp4({ seconds = 12, width = 480, video = 'avc1', audio = 'mp4a', moovFirst = true, padding = 0, keyframes }: Clip = {}): Uint8Array {
+  // 30 frames a second, each 512 ticks of a 15360 timescale, as ffmpeg writes them.
+  const frames = seconds * 30;
+  const timing = keyframes
+    ? [
+        box('stts', zeros(4), u32(1), u32(frames), u32(512)),
+        box('stss', zeros(4), u32(keyframes.length), ...keyframes.map((k) => u32(Math.round(k * 30) + 1))),
+      ]
+    : [];
   const track = (handler: string, entry: string, w: number) =>
     box(
       'trak',
       box('tkhd', zeros(76), u32(w * 65536), u32(Math.round(w * 0.75) * 65536)),
-      box('mdia', box('hdlr', zeros(8), ascii(handler), zeros(13)), box('minf', box('stbl', box('stsd', zeros(4), u32(1), box(entry, zeros(16)))))),
+      box(
+        'mdia',
+        box('mdhd', zeros(12), u32(15360), u32(frames * 512), zeros(4)),
+        box('hdlr', zeros(8), ascii(handler), zeros(13)),
+        box('minf', box('stbl', box('stsd', zeros(4), u32(1), box(entry, zeros(16))), ...(handler === 'vide' ? timing : []))),
+      ),
     );
   const mvhd = box('mvhd', zeros(12), u32(1000), u32(seconds * 1000), zeros(80));
   const moov = box('moov', mvhd, track('vide', video, width), ...(audio ? [track('soun', audio, 0)] : []));
@@ -38,8 +53,13 @@ function mp4({ seconds = 12, width = 480, video = 'avc1', audio = 'mp4a', moovFi
 
 describe('readMp4', () => {
   it('reads length, size, codecs and box order', () => {
-    expect(readMp4(mp4())).toEqual({ durationSeconds: 12, width: 480, height: 360, videoCodec: 'avc1', audioCodec: 'mp4a', fastStart: true });
+    expect(readMp4(mp4())).toEqual({ durationSeconds: 12, width: 480, height: 360, videoCodec: 'avc1', audioCodec: 'mp4a', fastStart: true, keyframes: [] });
     expect(readMp4(mp4({ audio: null, moovFirst: false }))).toMatchObject({ audioCodec: null, fastStart: false });
+  });
+
+  it('lists the keyframes', () => {
+    expect(readMp4(mp4({ keyframes: [0, 2, 4.5] })).keyframes).toEqual([0, 2, 4.5]);
+    expect(readMp4(mp4()).keyframes).toEqual([]);
   });
 
   it('explains files that are not MP4s', () => {
@@ -100,6 +120,17 @@ describe('video slides', () => {
     expect(check(steps([0.4, 4], [6, 5]), silent)).toEqual(['slides[0].steps[1]: "end" must be after "start"']);
     expect(check(steps([5, 8], [1, 4]), silent)).toEqual(['slides[0].steps[1]: steps must be in order of "start"']);
     expect(check(steps([0.4, 4], [5, 14]), silent)).toEqual(['slides[0]: the last step ends at 14 s, after the 12.0 s clip']);
+  });
+
+  it('needs a keyframe at each step and no long gaps between keyframes', () => {
+    const steps = { ...slide, steps: [{ start: 0.4, end: 4 }, { start: 4.5, end: 8 }, { start: 8.2, end: 11.9 }] };
+    expect(check(steps, mp4({ audio: null, keyframes: [0, 2.5, 4.5, 8.2] }))).toEqual([]);
+    expect(check(steps, mp4({ audio: null, keyframes: [0, 4.5] }))).toEqual([
+      'slides[0]: no keyframe as the step at 8.2 s starts, so jumping there is slow. `npm run explainer` puts one at each step; with ffmpeg, add `-force_key_frames <the start times>`',
+      'slides[0]: keyframes are up to 7.5 s apart, so the picture lags behind the seek bar; keep them at most 4 s apart (`npm run explainer` does)',
+    ]);
+    // Clips without steps are left alone.
+    expect(check(slide, mp4({ audio: null, keyframes: [0, 8.3] }))).toEqual([]);
   });
 
   it('needs the clip and its still to be present', () => {

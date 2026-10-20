@@ -93,8 +93,12 @@ export function mediaProblems(name: string, bytes: Uint8Array): string[] {
   return [];
 }
 
-/** Every soundtrack must be credited, and every credited soundtrack must exist. */
-/** Checks that need the clip itself: its soundtrack against the music credit, its length against the steps. */
+/** A step may start up to this long after a keyframe: decoding that far is quick. */
+const STEP_KEYFRAME_SLACK = 0.5;
+/** Most seconds between keyframes in a clip with steps. */
+const MAX_KEYFRAME_GAP = 4;
+
+/** Checks that need the clip itself: its soundtrack against the music credit, the steps against its length and keyframes. */
 function clipProblems(post: Post, mediaBytes: Map<string, Uint8Array>): string[] {
   const problems: string[] = [];
   (post.slides ?? []).forEach((slide, i) => {
@@ -118,6 +122,18 @@ function clipProblems(post: Post, mediaBytes: Map<string, Uint8Array>): string[]
     const last = steps.at(-1);
     if (last && last.end > info.durationSeconds + 0.1) {
       problems.push(`slides[${i}]: the last step ends at ${last.end} s, after the ${info.durationSeconds.toFixed(1)} s clip`);
+    }
+    // Readers jump to steps and drag through explainers, and a player can only start decoding at a keyframe.
+    if (steps.length && info.keyframes.length) {
+      const slow = steps.filter((step) => !info.keyframes.some((k) => k <= step.start + 0.01 && k >= step.start - STEP_KEYFRAME_SLACK));
+      if (slow.length) {
+        const which = slow.length === 1 ? `the step at ${slow[0].start} s` : `${slow.length} steps (${slow.slice(0, 3).map((step) => `${step.start} s`).join(', ')}${slow.length > 3 ? ', …' : ''})`;
+        problems.push(`slides[${i}]: no keyframe as ${which} ${slow.length === 1 ? 'starts' : 'start'}, so jumping there is slow. \`npm run explainer\` puts one at each step; with ffmpeg, add \`-force_key_frames <the start times>\``);
+      }
+      const gap = Math.max(...info.keyframes.concat(info.durationSeconds).map((k, j, all) => (j ? k - all[j - 1] : k)));
+      if (gap > MAX_KEYFRAME_GAP + 0.05) {
+        problems.push(`slides[${i}]: keyframes are up to ${gap.toFixed(1)} s apart, so the picture lags behind the seek bar; keep them at most ${MAX_KEYFRAME_GAP} s apart (\`npm run explainer\` does)`);
+      }
     }
   });
   return problems;
