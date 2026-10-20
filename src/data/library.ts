@@ -1,3 +1,4 @@
+import clipLengths from 'virtual:clip-lengths';
 import type { FieldId, KnowledgeCard } from '../types';
 
 // Every post is a JSON file in content/posts/<field>/<id>.json; images and clips live in content/media/<id>/.
@@ -26,6 +27,14 @@ function resolve(post: KnowledgeCard): KnowledgeCard {
 export const LIBRARY: KnowledgeCard[] = Object.values(postFiles)
   .map(resolve)
   .sort((a, b) => a.id.localeCompare(b.id));
+
+// Clip lengths by the clip's URL, which is what slides carry once resolved.
+const lengthByUrl = new Map(Object.entries(clipLengths).map(([path, seconds]) => [resolveImage(path.split('/')[0], path.split('/')[1]), seconds]));
+
+/** A clip's length in seconds, known before it loads, or undefined. */
+export function clipSeconds(src: string): number | undefined {
+  return lengthByUrl.get(src);
+}
 
 export const CARD_BY_ID: ReadonlyMap<string, KnowledgeCard> = new Map(LIBRARY.map((c) => [c.id, c]));
 

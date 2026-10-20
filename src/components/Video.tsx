@@ -1,11 +1,12 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
-import { Pause, Play, SkipBack, SkipForward, Volume2, VolumeX } from 'lucide-react';
+import { useCallback, useEffect, useRef, useState, type RefObject } from 'react';
+import { Pause, Play, RotateCcw, SkipBack, SkipForward, Volume2, VolumeX } from 'lucide-react';
 import type { KnowledgeCard, Slide } from '../types';
 import { inline } from '../lib/markdown';
 import { cardGradient, gradientStyle } from './Media';
 import { sound } from '../lib/sound';
 import { useStore } from '../state/store';
 import { stepStill } from '../../shared/video.ts';
+import { clipSeconds } from '../data/library';
 
 type VideoSlide = Extract<Slide, { type: 'video' }>;
 
@@ -44,26 +45,34 @@ export function clock(seconds: number): string {
 }
 
 /**
- * A short looping clip. It plays muted while the slide is on screen and pauses when it isn't;
- * nothing is downloaded until then. Readers who prefer reduced motion or save data tap to play.
+ * A clip. Footage loops, playing muted while the slide is on screen and pausing when it isn't; readers
+ * who prefer reduced motion or save data tap to play. An animation is a short lesson with a beginning,
+ * so it waits for a tap (which can bring its music too) and stops at the end. Nothing is downloaded
+ * until a clip plays. `start`, when given, is set to a function that starts the clip from elsewhere
+ * (the title slide's Watch button); call it within the tap, so the clip may play with sound.
  */
-export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: KnowledgeCard }) {
+export function VideoSlideView({ slide, card, start }: { slide: VideoSlide; card: KnowledgeCard; start?: RefObject<(() => void) | null> }) {
   const box = useRef<HTMLDivElement>(null);
   const video = useRef<HTMLVideoElement>(null);
   const onScreen = useOnScreen(box, 0.6);
-  const [autoplay] = useState(autoplayAllowed);
+  const animation = !!slide.animation;
+  const [autoplay] = useState(() => !animation && autoplayAllowed());
   // The reader's own choice wins over autoplay: null until they tap.
   const [wantPlay, setWantPlay] = useState<boolean | null>(null);
   const [playing, setPlaying] = useState(false);
   // The big play button is only for a clip nobody has played or moved yet; after that, pausing leaves the picture clear.
   const [started, setStarted] = useState(false);
-  const [muted, setMuted] = useState(!sound.wanted);
+  const [muted, setMuted] = useState(true);
+  const [ended, setEnded] = useState(false);
+  // Where the reader left an animation part-way; when they come back it offers to resume or start over.
+  const [leftAt, setLeftAt] = useState<number | null>(null);
   const [creditsOpen, setCreditsOpen] = useState(false);
   const [duration, setDuration] = useState(0);
   const seek = useRef<HTMLInputElement>(null);
   const elapsed = useRef<HTMLSpanElement>(null);
   const dragging = useRef(false);
   const hasSound = !!slide.music;
+  const wantsSound = () => hasSound && (animation ? sound.wanted !== false : sound.wanted === true);
   const { state, updateSettings } = useStore();
   const rate = state.settings.videoRate;
   const steps = slide.steps ?? [];
@@ -92,7 +101,7 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
       v.pause();
       return;
     }
-    v.muted = !hasSound || !sound.wanted;
+    v.muted = !wantsSound();
     setMuted(v.muted);
     v.play().catch(() => {
       // Browsers may refuse sound without a fresh tap; fall back to a muted start.
@@ -101,6 +110,26 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
       v.play().catch(() => setPlaying(false));
     });
   }, [shouldPlay, hasSound]);
+
+  // An animation left part-way doesn't play on when it comes back: the reader chooses.
+  const seen = useRef(false);
+  useEffect(() => {
+    const v = video.current;
+    if (onScreen) {
+      seen.current = true;
+      return;
+    }
+    if (!animation || !v || !seen.current) return;
+    setWantPlay(null);
+    if (v.ended) return;
+    if (v.currentTime < 1) {
+      // Barely begun: next time it is new again.
+      v.currentTime = 0;
+      setStarted(false);
+    } else {
+      setLeftAt(v.currentTime);
+    }
+  }, [onScreen, animation]);
 
   // Pause when the tab is hidden, resume when it comes back.
   useEffect(() => {
@@ -184,6 +213,8 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
     live.current.lastTime = time;
     setStoppedAtStep(false);
     setStarted(true);
+    setEnded(false);
+    setLeftAt(null);
     // A clip that hasn't loaded yet (it loads when it first plays) starts loading to show this frame.
     if (v.readyState === 0) v.preload = 'auto';
     if (v.seeking) pending.current = time;
@@ -212,11 +243,42 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
     jump(Number(e.target.value));
   };
 
-  // Playing again after a step stop doesn't change wantPlay, so start the clip directly too.
+  // Playing again after a step stop doesn't change wantPlay, so start the clip directly too. Called
+  // within the reader's tap, so the browser lets it play with sound.
   const resume = () => {
     setWantPlay(true);
-    video.current?.play().catch(() => {});
+    const v = video.current;
+    if (!v) return;
+    v.muted = !wantsSound();
+    setMuted(v.muted);
+    v.play().catch(() => {
+      v.muted = true;
+      setMuted(true);
+      v.play().catch(() => {});
+    });
   };
+
+  /** Play from `from`, or from where the clip is. */
+  const playFrom = (from?: number) => {
+    if (from !== undefined) jump(from);
+    setLeftAt(null);
+    setEnded(false);
+    resume();
+  };
+
+  // The title slide's Watch button: from the start, unless the reader left it part-way (then it asks).
+  useEffect(() => {
+    if (!start) return;
+    start.current = () => {
+      if (leftAt === null) playFrom(ended ? 0 : undefined);
+    };
+  });
+  useEffect(
+    () => () => {
+      if (start) start.current = null;
+    },
+    [start],
+  );
   const togglePlay = () => (playing ? pause() : resume());
 
   /** Index of the step under the playhead, or -1 before the first. */
@@ -278,6 +340,7 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
   };
 
   const fit = slide.fit ?? 'contain';
+  const length = duration || clipSeconds(slide.src);
   return (
     <div ref={box} className={`slide slide--video slide--fit-${fit}`} style={gradientStyle(cardGradient(card))} data-interactive>
       <video
@@ -286,7 +349,7 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
         src={slide.src}
         poster={slide.poster}
         muted
-        loop={!stepMode}
+        loop={!stepMode && !animation}
         playsInline
         preload="none"
         disablePictureInPicture
@@ -295,8 +358,11 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
           setPlaying(true);
           setStarted(true);
           setStoppedAtStep(false);
+          setEnded(false);
+          setLeftAt(null);
         }}
         onPause={() => setPlaying(false)}
+        onEnded={() => setEnded(true)}
         onDurationChange={(e) => setDuration(Number.isFinite(e.currentTarget.duration) ? e.currentTarget.duration : 0)}
         onLoadedMetadata={(e) => {
           e.currentTarget.defaultPlaybackRate = rate;
@@ -305,10 +371,30 @@ export function VideoSlideView({ slide, card }: { slide: VideoSlide; card: Knowl
         onSeeked={onSeeked}
         onClick={onTap}
       />
-      {!playing && !started && (
+      {!playing && !started && !animation && (
         <button className="video__play" onClick={resume} aria-label="Play clip">
           <Play size={30} fill="currentColor" />
         </button>
+      )}
+      {!playing && !started && animation && (
+        <button className="video__play video__play--pill" onClick={() => playFrom()} aria-label={`Watch the animation${length ? `, ${clock(length)}` : ''}`}>
+          <Play size={20} fill="currentColor" /> Watch{length ? ` · ${clock(length)}` : ''}
+        </button>
+      )}
+      {!playing && ended && animation && (
+        <button className="video__play video__play--pill" onClick={() => playFrom(0)}>
+          <RotateCcw size={20} /> Watch again
+        </button>
+      )}
+      {!playing && leftAt !== null && animation && (
+        <div className="video__choices">
+          <button className="video__play video__play--pill" onClick={() => playFrom()} aria-label={`Resume from ${clock(leftAt)}`}>
+            <Play size={20} fill="currentColor" /> Resume {clock(leftAt)}
+          </button>
+          <button className="video__choice" onClick={() => playFrom(0)}>
+            <RotateCcw size={16} /> Start over
+          </button>
+        </div>
       )}
       {flash && (
         <span key={flash.n} className={`video__flash video__flash--${flash.back ? 'back' : 'next'}`} onAnimationEnd={() => setFlash(null)} aria-hidden="true">

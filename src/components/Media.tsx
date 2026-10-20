@@ -1,4 +1,4 @@
-import { useRef, useState, type CSSProperties } from 'react';
+import { useRef, useState, type CSSProperties, type RefObject } from 'react';
 import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
 import type { KnowledgeCard, Slide } from '../types';
 import type { WikiPost } from '../lib/wiki';
@@ -6,9 +6,10 @@ import { FIELD_BY_ID } from '../data/fields';
 import { inline } from '../lib/markdown';
 import { InteractiveSlide } from './Interactive';
 import { VisualSlide } from './Visual';
-import { VideoSlideView } from './Video';
+import { clock, VideoSlideView } from './Video';
 import { challengeId } from '../lib/interactive';
 import { firstVideo } from '../lib/visual';
+import { clipSeconds } from '../data/library';
 
 function titleSize(title: string): string {
   if (title.length <= 36) return 'xl';
@@ -31,6 +32,7 @@ export function TitleSlide({ card, hasMore, onWatch }: { card: KnowledgeCard; ha
   const video = firstVideo(card);
   const clip = video >= 0 ? card.slides![video] : undefined;
   const animated = clip?.type === 'video' && !!clip.animation;
+  const length = clip?.type === 'video' ? clipSeconds(clip.src) : undefined;
   return (
     <div className={`slide slide--title${cover ? ' slide--cover' : ''}`} style={gradientStyle(cardGradient(card))}>
       {cover ? (
@@ -44,8 +46,12 @@ export function TitleSlide({ card, hasMore, onWatch }: { card: KnowledgeCard; ha
         {field.emoji} {field.name}
       </span>
       {video >= 0 && (
-        <button className="slide__video" onClick={onWatch} aria-label={animated ? 'Watch the animation in this post' : 'Watch the video in this post'}>
-          <Play size={13} fill="currentColor" /> {animated ? 'Animation' : 'Video'}
+        <button
+          className={`slide__video${animated ? ' slide__video--watch' : ''}`}
+          onClick={onWatch}
+          aria-label={animated ? `Watch the animation in this post${length ? `, ${clock(length)}` : ''}` : 'Watch the video in this post'}
+        >
+          <Play size={13} fill="currentColor" /> {animated ? `Watch${length ? ` · ${clock(length)}` : ''}` : 'Video'}
         </button>
       )}
       <div className="slide__center">
@@ -184,11 +190,11 @@ function ImageSlideView({ slide, card }: { slide: Extract<Slide, { type: 'image'
   );
 }
 
-function DetailSlide({ card, index, total }: { card: KnowledgeCard; index: number; total: number }) {
+function DetailSlide({ card, index, total, start }: { card: KnowledgeCard; index: number; total: number; start?: RefObject<(() => void) | null> }) {
   const field = FIELD_BY_ID[card.field];
   const slide = card.slides![index - 1];
   if (slide.type === 'image') return <ImageSlideView slide={slide} card={card} />;
-  if (slide.type === 'video') return <VideoSlideView slide={slide} card={card} />;
+  if (slide.type === 'video') return <VideoSlideView slide={slide} card={card} start={start} />;
   return (
     <div className={`slide slide--detail slide--${slide.type}`} style={gradientStyle(cardGradient(card))}>
       <span className="slide__bg-emoji" aria-hidden="true">
@@ -213,6 +219,9 @@ export function CardMedia({ card, onIndexChange }: CardMediaProps) {
   const total = 1 + (card.slides?.length ?? 0);
   const trackRef = useRef<HTMLDivElement>(null);
   const [index, setIndex] = useState(0);
+  // Starts the post's first clip, for the title slide's Watch button.
+  const startVideo = useRef<(() => void) | null>(null);
+  const videoAt = firstVideo(card) + 1;
 
   if (total === 1) return <TitleSlide card={card} />;
 
@@ -248,9 +257,17 @@ export function CardMedia({ card, onIndexChange }: CardMediaProps) {
             aria-hidden={i !== index}
           >
             {i === 0 ? (
-              <TitleSlide card={card} hasMore onWatch={() => go(firstVideo(card) + 1)} />
+              <TitleSlide
+                card={card}
+                hasMore
+                onWatch={() => {
+                  go(videoAt);
+                  // Still within the tap, so an animation may start with its music.
+                  startVideo.current?.();
+                }}
+              />
             ) : (
-              <DetailSlide card={card} index={i} total={total} />
+              <DetailSlide card={card} index={i} total={total} start={i === videoAt ? startVideo : undefined} />
             )}
           </div>
         ))}

@@ -1,2 +1,6 @@
-/** Once the reader turns sound on, later clips (slides and stories) try to start with sound too, until they turn it off. */
-export const sound = { wanted: false };
+/**
+ * The reader's sound choice, shared by slides and stories: null until they turn sound on or off.
+ * Animations the reader starts play with sound unless they have turned it off; clips that start
+ * by themselves stay muted until they turn it on.
+ */
+export const sound: { wanted: boolean | null } = { wanted: null };
