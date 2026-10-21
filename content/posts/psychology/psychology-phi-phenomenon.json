@@ -1,0 +1,183 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "psychology-phi-phenomenon",
+  "field": "psychology",
+  "title": "Your brain invents the motion between two flashing dots",
+  "emoji": "🎞️",
+  "body": "Flash a dot, then a second dot a short distance away, and at the right timing you don’t see two dots: you see **one dot jump across**. Psychologists call this beta movement. Max Wertheimer’s experiments with flashing lines, published in 1912, also turned up an eerie motion with no object at all (“pure phi”) and launched Gestalt psychology. Flip-books, films and this clip’s 30 frames a second also turn stills into motion, though their small steps are processed much like real movement. The old explanation, “persistence of vision”, has been rejected by psychologists: the motion is built by your brain.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "two-dots.mp4",
+      "poster": "two-dots.jpg",
+      "alt": "Animation on a black screen: two neon dots flash in turn, first slowly, then at a timing where one dot seems to jump, then so fast both seem lit. A ring of discs blinks in sequence, twelve flip-book drawings of a bouncing ball are flipped into motion, and persistence of vision is crossed out.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Limit 70” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.4,
+          "end": 3.3
+        },
+        {
+          "start": 3.4,
+          "end": 6.6
+        },
+        {
+          "start": 6.7,
+          "end": 10.6
+        },
+        {
+          "start": 10.8,
+          "end": 14.6
+        },
+        {
+          "start": 14.7,
+          "end": 17.7
+        },
+        {
+          "start": 17.8,
+          "end": 21
+        },
+        {
+          "start": 21.1,
+          "end": 24.6
+        },
+        {
+          "start": 24.7,
+          "end": 29.1
+        },
+        {
+          "start": 29.2,
+          "end": 33.6
+        },
+        {
+          "start": 33.8,
+          "end": 37.9
+        },
+        {
+          "start": 38,
+          "end": 41.6
+        },
+        {
+          "start": 41.7,
+          "end": 45.5
+        },
+        {
+          "start": 45.6,
+          "end": 50
+        },
+        {
+          "start": 50.1,
+          "end": 53.9
+        }
+      ]
+    },
+    {
+      "type": "sort",
+      "heading": "Beta movement or pure phi?",
+      "bins": [
+        "Beta movement",
+        "Pure phi"
+      ],
+      "items": [
+        {
+          "text": "One dot seems to jump across",
+          "bin": 0
+        },
+        {
+          "text": "A shadowy something flits over both",
+          "bin": 1
+        },
+        {
+          "text": "Wertheimer’s “optimal motion”",
+          "bin": 0
+        },
+        {
+          "text": "Seen when both dots seem lit at once",
+          "bin": 1
+        }
+      ],
+      "explanation": "The term beta movement comes from Friedrich Kenkel (1913): an object seeming to move. Pure phi is motion with no object, seen at faster flashing."
+    },
+    {
+      "type": "compare",
+      "heading": "Why do films seem to move?",
+      "left": {
+        "label": "Myth",
+        "text": "Images linger on the retina and blend into motion: “persistence of vision”."
+      },
+      "right": {
+        "label": "Fact",
+        "text": "Psychologists rejected that idea. The brain builds the motion; lingering at most hides the gaps between frames."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Film is subtler",
+      "text": "Beta movement is a long jump between two places. Film frames move things only a little, so each position largely overlaps the last, and the visual system treats that like real motion. So neither beta nor phi fully explains film."
+    },
+    {
+      "type": "stat",
+      "value": "150 ms",
+      "label": "about the longest gap that still gives pure phi",
+      "text": "The gap on each side must also be under 40% of the flashing cycle. In the clip’s ring, each disc is off for 100 ms of every 800. ([Wikipedia: Phi phenomenon](https://en.wikipedia.org/wiki/Phi_phenomenon))"
+    },
+    {
+      "type": "timeline",
+      "heading": "Seeing motion in stills",
+      "events": [
+        {
+          "when": "1833",
+          "text": "Plateau’s spinning phenakistiscope disc animates drawings"
+        },
+        {
+          "when": "1868",
+          "text": "The flip-book is patented as the Kineograph"
+        },
+        {
+          "when": "1875",
+          "text": "Sigmund Exner shows two sparks can look like one moving light"
+        },
+        {
+          "when": "1912",
+          "text": "Wertheimer’s motion study launches Gestalt psychology"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "The test subjects in Wertheimer’s 1912 motion study went on to found Gestalt psychology with him. Who were they?",
+      "options": [
+        "Wolfgang Köhler and Kurt Koffka",
+        "Sigmund Freud and Carl Jung",
+        "Ivan Pavlov and B. F. Skinner",
+        "William James and Wilhelm Wundt"
+      ],
+      "answer": 0,
+      "explanation": "Köhler and Koffka were his colleagues. With Wertheimer, they are counted as the three founders of Gestalt psychology."
+    }
+  ],
+  "tags": [
+    "perception",
+    "illusions",
+    "gestalt",
+    "film"
+  ],
+  "source": {
+    "label": "Wikipedia: Beta movement",
+    "url": "https://en.wikipedia.org/wiki/Beta_movement"
+  },
+  "theme": {
+    "gradient": [
+      "#06222B",
+      "#4A0B3D"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}
