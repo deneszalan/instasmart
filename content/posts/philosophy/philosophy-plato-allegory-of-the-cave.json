@@ -1,0 +1,148 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "philosophy-plato-allegory-of-the-cave",
+  "field": "philosophy",
+  "title": "In Plato’s cave, the prisoners would fight whoever tried to free them",
+  "emoji": "🔥",
+  "body": "In Book VII of Plato’s *Republic*, Socrates asks Glaucon to imagine prisoners chained since childhood so that they can only face a cave wall. Behind them burns a fire, and people walking behind a low wall carry objects whose **shadows** fall on the wall the prisoners face: the shadows are all they know. One is freed and dragged up into the sunlight, where his eyes slowly adjust until he can look at the sun itself. Back in the dark he can’t see, so the others conclude that the journey harmed him, and Socrates says they would kill anyone who tried to drag them out, if they could. Plato uses the story to compare the effect of **education** and the lack of it on our nature.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "cave.mp4",
+      "poster": "cave.jpg",
+      "alt": "Animation in firelit umber: shadows of carried objects flicker on a cave wall, then a cutaway diagram shows the chained prisoners, the low wall, the objects and the fire. One prisoner is freed, climbs the steep path into sunlight, and comes back down, blind in the dark.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Temple of the Manes” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.5,
+          "end": 4.3
+        },
+        {
+          "start": 4.4,
+          "end": 10
+        },
+        {
+          "start": 10.1,
+          "end": 15.1
+        },
+        {
+          "start": 15.2,
+          "end": 20.4
+        },
+        {
+          "start": 20.5,
+          "end": 25.2
+        },
+        {
+          "start": 25.3,
+          "end": 29.7
+        },
+        {
+          "start": 29.8,
+          "end": 34.8
+        },
+        {
+          "start": 34.9,
+          "end": 40.5
+        },
+        {
+          "start": 40.6,
+          "end": 44.5
+        },
+        {
+          "start": 44.6,
+          "end": 49.6
+        },
+        {
+          "start": 49.7,
+          "end": 54.7
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Who tells the story?",
+      "text": "Not Plato himself. The allegory is part of a dialogue narrated by Socrates: in Book VII of the *Republic* he asks Glaucon, Plato’s brother, to picture the cave. The passage runs from 514a to 520a in the standard numbering of Plato’s works."
+    },
+    {
+      "type": "order",
+      "heading": "Outside, his eyes adjust in stages. First to last",
+      "items": [
+        "Shadows",
+        "Reflections in water",
+        "People and things themselves",
+        "The moon and stars at night",
+        "The sun itself"
+      ],
+      "explanation": "Only once he can look straight at the sun, Socrates says, can he reason about what it is."
+    },
+    {
+      "type": "flow",
+      "heading": "Plato’s divided line, from lowest to highest",
+      "steps": [
+        {
+          "icon": "🌑",
+          "label": "Shadows and reflections"
+        },
+        {
+          "icon": "🌳",
+          "label": "The physical things themselves"
+        },
+        {
+          "icon": "📐",
+          "label": "Mathematical reasoning"
+        },
+        {
+          "icon": "💡",
+          "label": "Philosophical understanding"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "The cave, the line and the sun",
+      "text": "Just before the cave, Socrates offers two other images: the divided line, and the sun, which lights what we see as *the Good* lights what we can know. He says to read all three together, and many readers see the prisoner’s climb as a walk up the line."
+    },
+    {
+      "type": "quiz",
+      "question": "Socrates says those who reach the highest study, the Good, must not stay outside. What must they do?",
+      "options": [
+        "Go back down to the prisoners",
+        "Keep studying in the sunlight",
+        "Seal the cave behind them",
+        "Never speak of what they saw"
+      ],
+      "answer": 0,
+      "explanation": "They must return to the cave and live among the prisoners, sharing in their labours and honours, Socrates tells Glaucon."
+    },
+    {
+      "type": "text",
+      "heading": "Two ways to read it",
+      "text": "Scholars still argue about what the cave is mainly about. Richard Nettleship read it as a story about knowledge and the limits of our understanding; A. S. Ferguson read it as political: the philosopher set against the corruption of the society around him."
+    }
+  ],
+  "tags": [
+    "plato",
+    "socrates",
+    "allegory",
+    "knowledge"
+  ],
+  "source": {
+    "label": "Wikipedia: Allegory of the cave",
+    "url": "https://en.wikipedia.org/wiki/Allegory_of_the_cave"
+  },
+  "theme": {
+    "gradient": [
+      "#5A3416",
+      "#140B06"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}
