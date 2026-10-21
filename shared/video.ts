@@ -172,21 +172,23 @@ export const STEP_STILL_BEFORE_END = 0.3;
  */
 export const stepStill = (step: { start: number; end: number }) => Math.max(step.start, step.end - STEP_STILL_BEFORE_END);
 
-export const MAX_VIDEO_BYTES = 3_000_000;
+/** A clip may use 3 MB, or 50 kB a second if it is longer than a minute: 4.5 MB at 90 s. */
+export const maxVideoBytes = (seconds: number) => Math.max(3_000_000, Math.round(seconds * 50_000));
 export const MIN_VIDEO_SECONDS = 2;
-export const MAX_VIDEO_SECONDS = 60;
+export const MAX_VIDEO_SECONDS = 90;
 export const MAX_VIDEO_WIDTH = 1080;
 
 /** Everything wrong with a clip, in words a contributor can act on. */
 export function videoProblems(bytes: Uint8Array): string[] {
-  if (bytes.length > MAX_VIDEO_BYTES) {
-    return [`clip is ${bytes.length} bytes; the limit is ${MAX_VIDEO_BYTES}. Make it shorter, narrower (480 px is plenty) or more compressed`];
-  }
   let info: VideoInfo;
   try {
     info = readMp4(bytes);
   } catch (err) {
     return [(err as Error).message];
+  }
+  const limit = maxVideoBytes(info.durationSeconds);
+  if (bytes.length > limit) {
+    return [`clip is ${bytes.length} bytes; the limit for a ${info.durationSeconds.toFixed(1)} s clip is ${limit}. Make it shorter, narrower (480 px is plenty) or more compressed`];
   }
   const problems: string[] = [];
   if (info.videoCodec !== 'avc1' && info.videoCodec !== 'avc3') {

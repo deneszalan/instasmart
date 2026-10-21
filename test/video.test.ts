@@ -76,10 +76,13 @@ describe('videoProblems', () => {
   it('rejects clips that would not play well on a phone', () => {
     expect(videoProblems(mp4({ video: 'hvc1' })).join()).toContain('must be H.264');
     expect(videoProblems(mp4({ audio: 'opus' })).join()).toContain('must be AAC');
-    expect(videoProblems(mp4({ seconds: 75 })).join()).toContain('keep it between 2 and 60 s');
+    expect(videoProblems(mp4({ seconds: 95 })).join()).toContain('keep it between 2 and 90 s');
     expect(videoProblems(mp4({ width: 1920 })).join()).toContain('at most 1080 px');
     expect(videoProblems(mp4({ moovFirst: false })).join()).toContain('+faststart');
-    expect(videoProblems(mp4({ padding: 3_100_000 })).join()).toContain('the limit is 3000000');
+    expect(videoProblems(mp4({ padding: 3_100_000 })).join()).toContain('the limit for a 12.0 s clip is 3000000');
+    // Clips over a minute may use 50 kB a second.
+    expect(videoProblems(mp4({ seconds: 80, padding: 3_500_000 }))).toEqual([]);
+    expect(videoProblems(mp4({ seconds: 80, padding: 4_100_000 })).join()).toContain('the limit for a 80.0 s clip is 4000000');
   });
 });
 

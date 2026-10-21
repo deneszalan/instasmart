@@ -7,7 +7,8 @@
 //   [--edition lesefutter]                                   for a post in another edition that isn't written yet
 //
 // The clip's steps are the scene's captions; they are written into the post's slide for this clip,
-// and keyframes sit where the player jumps to, so jumping is instant.
+// and keyframes sit where the player jumps to, so jumping is instant. --preview and --still take
+// scene seconds; the clip plays the scene at its pace (Kit.scene's `pace`), so it is longer.
 // Writes content/media/<post-id>/<name>.mp4 and <name>.jpg, checks both with the content validator
 // and prints the slide JSON. Needs ffmpeg and a Chromium: set CHROMIUM_PATH, or run
 // `npx playwright-core install chromium` once.
@@ -19,7 +20,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { parseArgs } from 'node:util';
 import { chromium } from 'playwright-core';
 import { mediaProblems } from '../shared/validate.ts';
-import { MAX_VIDEO_BYTES, readMp4, stepStill } from '../shared/video.ts';
+import { maxVideoBytes, readMp4, stepStill } from '../shared/video.ts';
 import { bestMusicStart } from './clip.ts';
 import { postHome } from './disk.ts';
 
@@ -132,7 +133,10 @@ async function main(): Promise<number> {
     // The page code runs in the browser, so it is passed as strings (scripts/ has no DOM types).
     await page.waitForFunction('"ready" in window');
     await page.evaluate('window.ready');
-    const duration = Number(await page.evaluate('window.DURATION'));
+    // The scene's own length, and the clip's: the clip plays the scene at its pace.
+    const sceneDuration = Number(await page.evaluate('window.DURATION'));
+    const pace = Number(await page.evaluate('window.PACE ?? 1'));
+    const duration = sceneDuration / pace;
     const frame = async (t: number) => Buffer.from(String(await page.evaluate(
       `window.render(${t}), document.getElementById('c').toDataURL('image/png').split(',')[1]`)), 'base64');
     const fail = () => { if (errors.length) throw new Error(`the scene threw:\n${errors.join('\n')}`); };
@@ -149,14 +153,14 @@ async function main(): Promise<number> {
       const round = (x: number) => Math.round(x * 100) / 100;
       const byStart = new Map<number, Step>();
       for (const [a, b] of raw) {
-        const step = { start: round(a), end: round(Math.min(b, duration)) };
+        const step = { start: round(a / pace), end: round(Math.min(b / pace, duration)) };
         if (step.end > step.start && !byStart.has(step.start)) byStart.set(step.start, step);
       }
       return [...byStart.values()].sort((x, y) => x.start - y.start);
     };
 
     if (values.steps) {
-      for (let t = 0; t < duration; t += 0.25) await page.evaluate(`window.render(${t})`);
+      for (let t = 0; t < sceneDuration; t += 0.25) await page.evaluate(`window.render(${t})`);
       fail();
       const steps = await readSteps();
       const where = writeSteps(home.file, steps);
@@ -180,7 +184,7 @@ async function main(): Promise<number> {
       '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '8', '-pix_fmt', 'yuv420p', master], { stdio: ['pipe', 'inherit', 'inherit'] });
     const n = Math.round(duration * FPS);
     for (let i = 0; i < n; i++) {
-      if (!enc.stdin.write(await frame(i / FPS))) await new Promise((r) => enc.stdin.once('drain', r));
+      if (!enc.stdin.write(await frame((i / FPS) * pace))) await new Promise((r) => enc.stdin.once('drain', r));
     }
     enc.stdin.end();
     const status = await new Promise<number | null>((r) => enc.on('close', r));
@@ -219,7 +223,7 @@ async function main(): Promise<number> {
       }
       args.push('-t', String(duration), '-movflags', '+faststart', clip);
       ffmpeg(args);
-      if (statSync(clip).size <= MAX_VIDEO_BYTES * 0.95) break;
+      if (statSync(clip).size <= maxVideoBytes(duration) * 0.95) break;
     }
     const pngStill = join(work, 'still.png');
     writeFileSync(pngStill, still);

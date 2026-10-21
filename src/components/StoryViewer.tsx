@@ -116,7 +116,7 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
   // Timed frames of posts with a clip play the clip instead of showing the text.
   const videoAt = timed ? firstVideo(card) : -1;
   const clip = videoAt >= 0 ? (card.slides![videoAt] as VideoSlide) : null;
-  const rate = clip ? clipSpeed(state.settings.speed, clip) : 1;
+  const rate = clip ? clipSpeed(state.settings.speed) : 1;
 
   const next = useCallback(() => {
     if (frame + 1 < story.cards.length) setFrame(frame + 1);

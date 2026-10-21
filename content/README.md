@@ -161,7 +161,7 @@ A slide is phone-sized, so `list` and `timeline` slides must stay short: about 1
 A `video` slide plays a short clip, muted and looping while the slide is on screen, with a sound button when it has music. An animated explainer (`"animation": true`) is a lesson with a beginning, so it waits for the reader to tap "Watch" (which can start its music too), stops at the end, and offers to resume or start over when the reader comes back to it. Use one when motion shows something a photo can't: a launch, a collapse, a fluid, an animal's movement, a time-lapse.
 
 **The clip**
-- An MP4 file in `content/media/<id>/` with H.264 video, 2–60 seconds long (8–20 s is ideal for footage; animated explainers may run up to 60 s), at most 1080 px wide (480–720 px is plenty) and at most 3 MB, with its index at the start ("fast start"). `npm run content` checks all of this by reading the file.
+- An MP4 file in `content/media/<id>/` with H.264 video, 2–90 seconds long (8–20 s is ideal for footage; animated explainers may run up to 90 s), at most 1080 px wide (480–720 px is plenty) and at most 3 MB (a clip longer than a minute may use 50 kB a second: 4.5 MB at 90 s), with its index at the start ("fast start"). `npm run content` checks all of this by reading the file.
 - A still from the clip as `poster`: a JPEG shown before it plays. It also makes a good `cover` for the post.
 - `"fit": "contain"` (the default) shows the whole frame on the field colours with the text below it; `"cover"` fills the slide, for portrait or square footage.
 
