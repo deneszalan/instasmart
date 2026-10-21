@@ -1,0 +1,144 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "language-a-napron-an-apron",
+  "field": "language",
+  "title": "The n in “an apron” once belonged to the apron",
+  "emoji": "🔤",
+  "body": "In Middle English the word was *napron*, borrowed from French and built on *nape*, “tablecloth”, the same root as napkin. Spoken aloud, “a napron” and “an apron” sound alike, so listeners began to split the phrase in the other place, and by the 15th century the word was **apron**. The same rebracketing turned “a nadder” into “an adder” and “a noumpere” into “an umpire”. It also ran the other way: “an ekename” became “a nickname”, and “an ewt” became “a newt”.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "movable-n.mp4",
+      "poster": "movable-n.jpg",
+      "alt": "Letterpress animation: metal type spells “a napron” on cream paper, and the n hops across the word space to make “an apron”. The same happens for adder and umpire, then the n hops the other way, making “a nekename” (nickname) and “a newt”. A printed proof lists all five with their centuries.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Thatched Villagers” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.4,
+          "end": 3.8
+        },
+        {
+          "start": 3.9,
+          "end": 8.3
+        },
+        {
+          "start": 8.4,
+          "end": 12.8
+        },
+        {
+          "start": 12.9,
+          "end": 16.6
+        },
+        {
+          "start": 16.7,
+          "end": 20.6
+        },
+        {
+          "start": 20.7,
+          "end": 24.6
+        },
+        {
+          "start": 24.7,
+          "end": 28.3
+        },
+        {
+          "start": 28.4,
+          "end": 32.4
+        },
+        {
+          "start": 32.5,
+          "end": 35.8
+        },
+        {
+          "start": 35.9,
+          "end": 40.1
+        },
+        {
+          "start": 40.2,
+          "end": 44
+        },
+        {
+          "start": 44.1,
+          "end": 48.6
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why the n slipped",
+      "text": "The article came in two forms, *a* and *an*, so an n between two words could belong to either one. Writing may not have helped: in medieval script, words often sat so close together that scholars today can struggle to tell where one ends and the next begins."
+    },
+    {
+      "type": "match",
+      "heading": "Match the old word to its meaning",
+      "pairs": [
+        {
+          "left": "nape (medieval French)",
+          "right": "tablecloth"
+        },
+        {
+          "left": "nonper (Old French)",
+          "right": "not equal"
+        },
+        {
+          "left": "nǣdre (Old English)",
+          "right": "snake"
+        },
+        {
+          "left": "eke (Middle English)",
+          "right": "addition"
+        }
+      ],
+      "explanation": "An umpire was the odd one out, a third person called in to settle a dispute between two. A nickname was an added name."
+    },
+    {
+      "type": "odd",
+      "heading": "Which word kept its n?",
+      "items": [
+        "apron",
+        "napkin",
+        "adder",
+        "auger"
+      ],
+      "answer": 1,
+      "explanation": "Apron, adder and auger each lost an n to “an”. Napkin kept it, though it shares apron’s root: the medieval French *nape*, “tablecloth”."
+    },
+    {
+      "type": "text",
+      "heading": "Orange lost its n abroad",
+      "text": "Orange arrived in English already without its n. Arabic *nāranj* and older Italian *narancia* had one, but in several languages it dropped off, perhaps heard as part of the article: French “une norenge” may have been heard as “une orenge”."
+    },
+    {
+      "type": "list",
+      "heading": "More words the n hopped",
+      "items": [
+        "auger: “a nauger” became “an auger”",
+        "eyas, a young hawk: “a neias” became “an eyas”",
+        "Today, “another” can split into “a whole nother”"
+      ]
+    }
+  ],
+  "tags": [
+    "etymology",
+    "english",
+    "words"
+  ],
+  "source": {
+    "label": "Wikipedia: Rebracketing",
+    "url": "https://en.wikipedia.org/wiki/Rebracketing"
+  },
+  "theme": {
+    "gradient": [
+      "#1F1A17",
+      "#8E2A17"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

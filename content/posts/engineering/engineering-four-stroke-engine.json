@@ -1,0 +1,161 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-four-stroke-engine",
+  "field": "engineering",
+  "title": "In most car engines, each cylinder burns fuel once every two turns",
+  "emoji": "⚙️",
+  "body": "A four-stroke engine’s piston makes four trips per cycle: down to draw in fuel and air (intake), up to squeeze it (compression), down again as it burns (power), and up to push the burnt gas out (exhaust). Each stroke is half a turn of the crankshaft, so one cycle takes two turns, and only the power stroke does work. The connecting rod and crank turn the piston’s up-and-down motion into rotation, while a camshaft turning at half the crankshaft’s speed opens each valve once per cycle. In a petrol engine a spark plug ignites the mixture; a diesel relies on the heat of compression instead.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "four-stroke.mp4",
+      "poster": "four-stroke.jpg",
+      "alt": "Animated blueprint, a simplified cutaway of one petrol-engine cylinder: crank and connecting rod drive the piston, cams open the valves. Over two crank turns the gas goes from fresh mixture to compressed, burning after the spark, then exhaust, as a counter tracks the four strokes.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Beauty Flow” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.4,
+          "end": 5.3
+        },
+        {
+          "start": 5.5,
+          "end": 9.7
+        },
+        {
+          "start": 9.8,
+          "end": 14.1
+        },
+        {
+          "start": 14.2,
+          "end": 19.4
+        },
+        {
+          "start": 19.6,
+          "end": 23.7
+        },
+        {
+          "start": 23.8,
+          "end": 27.5
+        },
+        {
+          "start": 27.6,
+          "end": 30.7
+        },
+        {
+          "start": 30.8,
+          "end": 35.3
+        },
+        {
+          "start": 35.4,
+          "end": 40.2
+        },
+        {
+          "start": 40.3,
+          "end": 44.6
+        },
+        {
+          "start": 44.7,
+          "end": 49.3
+        }
+      ]
+    },
+    {
+      "type": "reveal",
+      "prompt": "The valves are worked by a camshaft that turns at exactly half the crankshaft’s speed. Why half?",
+      "answer": "Each valve opens once per cycle, and a cycle takes two crank turns.",
+      "detail": "One turn of the camshaft per cycle lets each cam push its valve open once, during the right part of the intake or exhaust stroke."
+    },
+    {
+      "type": "text",
+      "heading": "Why squeeze it first?",
+      "text": "Étienne Lenoir’s gas engine of 1860 burned its fuel without compressing it and turned only about 4% of the fuel’s energy into work. Otto’s engine of 1876 compressed the mixture before igniting it, for far higher efficiency than any engine before it."
+    },
+    {
+      "type": "timeline",
+      "heading": "Who invented it?",
+      "events": [
+        {
+          "when": "1860",
+          "text": "Lenoir’s gas engine runs without compressing its fuel"
+        },
+        {
+          "when": "1862",
+          "text": "Beau de Rochas patents the four-stroke idea, but never builds one"
+        },
+        {
+          "when": "1876",
+          "text": "Otto’s compressed-charge four-stroke engine is an instant success"
+        },
+        {
+          "when": "1886",
+          "text": "Otto’s patent is voided over Beau de Rochas’s earlier one"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "The spark comes early",
+      "text": "At low engine speeds, the spark fires close to the top of the compression stroke. At higher revs it fires earlier: the flame doesn’t burn any faster, so it needs a head start before the power stroke begins."
+    },
+    {
+      "type": "text",
+      "heading": "Not quite on the dot",
+      "text": "In the animation the valves open and close exactly at the top and bottom of each stroke. Real valves open a little early and close a little late, and at the end of the exhaust stroke both are briefly open at once, which helps the outgoing gas draw in the fresh charge."
+    },
+    {
+      "type": "sort",
+      "heading": "Petrol engine or diesel?",
+      "bins": [
+        "Petrol",
+        "Diesel"
+      ],
+      "items": [
+        {
+          "text": "Lit by a spark plug",
+          "bin": 0
+        },
+        {
+          "text": "Lit by the heat of compression",
+          "bin": 1
+        },
+        {
+          "text": "Fuel rated by its octane number",
+          "bin": 0
+        },
+        {
+          "text": "Fuel rated by its cetane number",
+          "bin": 1
+        },
+        {
+          "text": "Often helped by a glow plug on cold starts",
+          "bin": 1
+        }
+      ],
+      "explanation": "A petrol engine ignites its mixture with a timed spark. A diesel squeezes air until it is hot enough to ignite the fuel, so it needs no spark plug."
+    }
+  ],
+  "tags": [
+    "engines",
+    "cars",
+    "mechanics",
+    "invention"
+  ],
+  "source": {
+    "label": "Wikipedia: Four-stroke engine",
+    "url": "https://en.wikipedia.org/wiki/Four-stroke_engine"
+  },
+  "theme": {
+    "gradient": [
+      "#0B2545",
+      "#1B4F86"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

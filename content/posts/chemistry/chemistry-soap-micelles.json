@@ -1,0 +1,165 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-soap-micelles",
+  "field": "chemistry",
+  "title": "Soap cleans by wrapping grease in tiny balls that water can rinse away",
+  "emoji": "🧼",
+  "body": "Water alone can't wash grease off a plate, because oil and water don't mix. A soap molecule has two ends: a charged **head** that is attracted to water, and a long **tail**, a chain of carbon and hydrogen, that is attracted to oil. The tails push into the grease while the heads stay in the water, and the molecules surround bits of it as **micelles**: tiny balls with the oil hidden inside and the water-loving heads on the outside. Wrapped like that, the grease can be carried away by running water.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Soap molecules have a water-loving head and an oil-loving tail. Which way do they point when they surround a speck of grease?",
+      "answer": "Tails in, heads out",
+      "detail": "The tails sit in the oil and the heads face the water. That coat lets the grease mix into the water and rinse away."
+    },
+    {
+      "type": "video",
+      "src": "soap-micelles.mp4",
+      "poster": "soap-micelles.jpg",
+      "alt": "Animation in cross-section: water flows over a blob of orange grease on a white plate without moving it. A soap molecule, a blue head with a zigzag tail of 17 carbons, is shown up close. Many dig their tails into the grease, which lifts off as coated balls, micelles, that water carries away.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Rainbows” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.5,
+          "end": 4.9
+        },
+        {
+          "start": 5,
+          "end": 9.5
+        },
+        {
+          "start": 9.7,
+          "end": 12.9
+        },
+        {
+          "start": 13,
+          "end": 16.3
+        },
+        {
+          "start": 16.4,
+          "end": 20.6
+        },
+        {
+          "start": 20.8,
+          "end": 25.4
+        },
+        {
+          "start": 25.5,
+          "end": 29.8
+        },
+        {
+          "start": 30.1,
+          "end": 34.8
+        },
+        {
+          "start": 34.9,
+          "end": 38.8
+        },
+        {
+          "start": 39.2,
+          "end": 42.9
+        },
+        {
+          "start": 43.1,
+          "end": 48.2
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "17 carbons",
+      "label": "in the tail of sodium stearate, the most common soap",
+      "text": "Its formula is C₁₇H₃₅COONa. The chain of 17 carbon and 35 hydrogen atoms is the oil-loving tail; the COO⁻ group is the water-loving head."
+    },
+    {
+      "type": "compare",
+      "heading": "Soap or detergent?",
+      "left": {
+        "label": "Soap",
+        "text": "A salt of a fatty acid, made by reacting fats or oils with a base such as lye."
+      },
+      "right": {
+        "label": "Detergent",
+        "text": "Usually means synthetic cleaners. Their soap-like molecules also form micelles, and cope better with hard water."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Why hard water leaves scum",
+      "text": "Hard water carries calcium and magnesium. They take the place of the sodium in soap and turn it into a white solid, soap scum, instead of a lather. The scum no longer works as soap. Synthetic detergents don't form such scum."
+    },
+    {
+      "type": "timeline",
+      "heading": "An ancient cleaner",
+      "events": [
+        {
+          "when": "c. 2800 BC",
+          "text": "Soap-like materials are made in ancient Babylon"
+        },
+        {
+          "when": "c. 2500 BC",
+          "text": "A Sumerian clay tablet records a soap-like mix of oil and wood ash"
+        },
+        {
+          "when": "1st century",
+          "text": "Pliny the Elder calls soap an invention of the Gauls"
+        }
+      ]
+    },
+    {
+      "type": "sort",
+      "heading": "Head or tail?",
+      "bins": [
+        "Head",
+        "Tail"
+      ],
+      "items": [
+        {
+          "text": "Attracted to water",
+          "bin": 0
+        },
+        {
+          "text": "A chain of carbon and hydrogen",
+          "bin": 1
+        },
+        {
+          "text": "Carries an electric charge",
+          "bin": 0
+        },
+        {
+          "text": "Hides inside the micelle",
+          "bin": 1
+        },
+        {
+          "text": "Faces outward, into the water",
+          "bin": 0
+        }
+      ],
+      "explanation": "The charged head stays in the water; the hydrocarbon tail tucks into the oil. That split personality is what lets soap carry grease away."
+    }
+  ],
+  "tags": [
+    "soap",
+    "molecules",
+    "cleaning",
+    "oil"
+  ],
+  "source": {
+    "label": "Wikipedia: Soap",
+    "url": "https://en.wikipedia.org/wiki/Soap"
+  },
+  "theme": {
+    "gradient": [
+      "#0E4A7E",
+      "#9A3A0A"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

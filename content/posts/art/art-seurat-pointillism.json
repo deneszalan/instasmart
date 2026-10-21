@@ -1,0 +1,164 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-seurat-pointillism",
+  "field": "art",
+  "title": "Seurat’s dots were meant to mix in your eye, not on his palette",
+  "emoji": "🎨",
+  "body": "In *A Sunday Afternoon on the Island of La Grande Jatte* (1884–86), Georges Seurat set small dots and strokes of separate colours side by side instead of blending his paints. From a distance your eye merges neighbouring dots into one shade, an effect called **optical mixing**, and Seurat believed it would make his colours more brilliant. In practice, dots of paint side by side only average their light, so they can’t outshine the paints themselves; they can still look brighter than paint mixed on a palette, and contrasting dots tend to shimmer. Critics coined the name *pointillism* in the late 1880s to mock the style; Seurat called his colour method chromoluminarism.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Seurat’s most famous painting is built from tiny dots. How wide is it?",
+      "min": 0.5,
+      "max": 6,
+      "step": 0.1,
+      "answer": 3.1,
+      "unit": "m",
+      "explanation": "About 3.1 m wide and 2.1 m tall (207.5 × 308.1 cm), and he spent two years on it, between May 1884 and May 1886."
+    },
+    {
+      "type": "video",
+      "src": "dots.mp4",
+      "poster": "dots.jpg",
+      "alt": "Animation on off-white linen: a close-up of big coloured dots zooms out until they merge into a riverside scene. Red and yellow dots shrink until they read as orange, a brightness scale shows the mix landing halfway, then the painting’s size and dates.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Evening” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.5,
+          "end": 4.3
+        },
+        {
+          "start": 4.4,
+          "end": 8.9
+        },
+        {
+          "start": 9,
+          "end": 14.4
+        },
+        {
+          "start": 14.5,
+          "end": 18.2
+        },
+        {
+          "start": 18.3,
+          "end": 22.4
+        },
+        {
+          "start": 22.5,
+          "end": 26.6
+        },
+        {
+          "start": 26.7,
+          "end": 32.2
+        },
+        {
+          "start": 32.3,
+          "end": 37
+        },
+        {
+          "start": 37.1,
+          "end": 42.2
+        },
+        {
+          "start": 42.3,
+          "end": 47.6
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/960px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg",
+      "alt": "Seurat’s A Sunday Afternoon on the Island of La Grande Jatte: Parisians relaxing on a grassy riverbank in sun and shade, a couple with a parasol on the right, boats on the river on the left, all built from small dots of colour.",
+      "caption": "The real thing, in the Art Institute of Chicago. Seen whole, the dots dissolve into sunlight and shade.",
+      "fit": "contain",
+      "credit": "Georges Seurat, 1884–86 · Public domain"
+    },
+    {
+      "type": "timeline",
+      "heading": "Two years of dots",
+      "events": [
+        {
+          "when": "1884",
+          "text": "Seurat starts the painting in May"
+        },
+        {
+          "when": "1885–86",
+          "text": "He reworks it in dots of almost uniform size"
+        },
+        {
+          "when": "May 1886",
+          "text": "First shown, at the last Impressionist exhibition"
+        },
+        {
+          "when": "1888–89",
+          "text": "He adds a border of painted dots"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "A name meant as an insult",
+      "text": "Critics coined *pointillism* in the late 1880s to ridicule the style; today it is a neutral word. Seurat called his colour method *chromoluminarism*, and the movement he started is known as Neo-Impressionism."
+    },
+    {
+      "type": "text",
+      "heading": "His yellow turned brown",
+      "text": "For the sunlit grass Seurat used zinc yellow, a pigment that was new at the time. It has darkened to brown, a change already showing in his lifetime, and researchers have used studies of the ageing paint to restore the painting’s colours digitally."
+    },
+    {
+      "type": "sort",
+      "heading": "True or false?",
+      "bins": [
+        "True",
+        "False"
+      ],
+      "items": [
+        {
+          "text": "Critics coined the word pointillism to mock it",
+          "bin": 0
+        },
+        {
+          "text": "Dots side by side add up to brighter light",
+          "bin": 1
+        },
+        {
+          "text": "Seurat finished La Grande Jatte in a few weeks",
+          "bin": 1
+        },
+        {
+          "text": "The painting is about 3 metres wide",
+          "bin": 0
+        },
+        {
+          "text": "Some of its yellow paint has turned brown",
+          "bin": 0
+        }
+      ],
+      "explanation": "Paint dots only average their light; the extra sparkle comes from contrast. And the painting took Seurat two years."
+    }
+  ],
+  "tags": [
+    "seurat",
+    "painting",
+    "colour",
+    "optics"
+  ],
+  "source": {
+    "label": "Wikipedia: A Sunday Afternoon on the Island of La Grande Jatte",
+    "url": "https://en.wikipedia.org/wiki/A_Sunday_Afternoon_on_the_Island_of_La_Grande_Jatte"
+  },
+  "theme": {
+    "gradient": [
+      "#2C3F6E",
+      "#3B2556"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

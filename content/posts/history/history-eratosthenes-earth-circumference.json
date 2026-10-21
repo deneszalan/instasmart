@@ -1,0 +1,133 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-eratosthenes-earth-circumference",
+  "field": "history",
+  "title": "Eratosthenes sized up the whole Earth from a stick’s shadow",
+  "emoji": "🌍",
+  "body": "At noon on the summer solstice, a vertical stick at Syene (today’s Aswan) cast no shadow, while at Alexandria, to the north, a stick’s shadow put the Sun about 7.2 degrees from overhead: one-fiftieth of a full circle. Because sunlight arrives in nearly parallel rays, the same angle separates the two cities at the Earth’s centre, so the roughly 5,000 stadia between them is 1/50 of the way round: 250,000 stadia in all. How close that comes is still debated, because nobody knows exactly how long his stadion was; depending on the length assumed, and on whether you take 250,000 or the 252,000 that Pliny reports, the result is within about 2.4% of the truth or 10 to 15% too big. His own book is lost, and the method reaches us through a simplified retelling by the later writer Cleomedes.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "eratosthenes.mp4",
+      "poster": "eratosthenes.jpg",
+      "alt": "Animation on papyrus: at noon a stick at Syene casts no shadow while one at Alexandria casts a 7.2° shadow. Parallel sun rays carry the angle to Earth’s centre, 50 copies of the 5,000-stadia arc make 250,000 stadia, and a scale compares the result with 40,008 km.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Desert City” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.4,
+          "end": 5.1
+        },
+        {
+          "start": 5.2,
+          "end": 9.1
+        },
+        {
+          "start": 9.2,
+          "end": 13.5
+        },
+        {
+          "start": 13.6,
+          "end": 18.3
+        },
+        {
+          "start": 18.4,
+          "end": 21.6
+        },
+        {
+          "start": 21.7,
+          "end": 26.5
+        },
+        {
+          "start": 26.6,
+          "end": 31.7
+        },
+        {
+          "start": 31.8,
+          "end": 36.6
+        },
+        {
+          "start": 36.7,
+          "end": 41
+        },
+        {
+          "start": 41.1,
+          "end": 45.4
+        },
+        {
+          "start": 45.5,
+          "end": 49.6
+        },
+        {
+          "start": 49.7,
+          "end": 53.7
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Known only second-hand",
+      "text": "Eratosthenes’ own book, *On the Measure of the Earth*, is lost. His method survives only through later writers, above all a simplified version by Cleomedes, and the famous detail of sunlight shining straight down a well at Syene also reaches us only through such later accounts."
+    },
+    {
+      "type": "compare",
+      "heading": "A simplified story",
+      "left": {
+        "label": "Cleomedes’ version",
+        "text": "Syene sits exactly on the Tropic of Cancer and due south of Alexandria, so the noon Sun on the solstice is straight overhead."
+      },
+      "right": {
+        "label": "In reality",
+        "text": "Syene lies a little north of the Tropic, by less than a degree, and about 3 degrees of longitude east of Alexandria."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "Why does the shadow angle at Alexandria match the angle between the two cities at the Earth’s centre?",
+      "options": [
+        "Sunlight arrives in near-parallel rays",
+        "The Sun was overhead at Alexandria",
+        "Alexandria lies on the equator",
+        "Shadows are longest at midsummer"
+      ],
+      "answer": 0,
+      "explanation": "With parallel rays, the ray at Alexandria and the vertical at Syene are parallel lines, so the line from Alexandria to the centre crosses both at the same angle."
+    },
+    {
+      "type": "stat",
+      "value": "252,000",
+      "label": "stadia: the figure Pliny gives for Eratosthenes’ Earth",
+      "text": "Unlike 250,000, it divides evenly by every whole number from 1 to 10, which may be no accident. Historians disagree about why the figure changed."
+    },
+    {
+      "type": "scramble",
+      "clue": "The Greek name for an upright rod whose shadow shows the Sun’s angle, as on a sundial",
+      "answer": "GNOMON",
+      "detail": "From a Greek word meaning “one that knows or examines”. It is also the name for the part of a sundial that casts the shadow."
+    }
+  ],
+  "tags": [
+    "eratosthenes",
+    "geometry",
+    "ancientgreece",
+    "egypt",
+    "earth"
+  ],
+  "source": {
+    "label": "Wikipedia: Earth’s circumference",
+    "url": "https://en.wikipedia.org/wiki/Earth%27s_circumference"
+  },
+  "theme": {
+    "gradient": [
+      "#1E3A6E",
+      "#8A3A1C"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}
