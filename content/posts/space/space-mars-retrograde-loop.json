@@ -1,0 +1,152 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-mars-retrograde-loop",
+  "field": "space",
+  "title": "Mars seems to loop backwards in the sky whenever Earth overtakes it",
+  "emoji": "🔴",
+  "body": "Earth circles the Sun on the inside track, once a year, while Mars takes 687 days. About every 780 days Earth catches up and passes Mars, and around that moment, called opposition, our line of sight to Mars swings backwards against the distant stars. For about 72 days Mars seems to drift west instead of east, tracing a loop across the sky. Ptolemy’s Earth-centred model explained the loops with epicycles, circles riding on circles; in Copernicus’s Sun-centred system they are simply Earth overtaking a slower planet.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "retrograde.mp4",
+      "poster": "retrograde.jpg",
+      "alt": "Animation in deep space: Mars traces a loop against the stars. A top-down diagram shows Earth on its inner orbit overtaking Mars while the line of sight swings back, a day counter runs, and the same loop is then drawn as Ptolemy’s epicycle in an Earth-centred view.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Odyssey” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.4,
+          "end": 5.4
+        },
+        {
+          "start": 5.5,
+          "end": 9.2
+        },
+        {
+          "start": 9.3,
+          "end": 14.3
+        },
+        {
+          "start": 14.4,
+          "end": 19.1
+        },
+        {
+          "start": 19.2,
+          "end": 23
+        },
+        {
+          "start": 23.1,
+          "end": 27.2
+        },
+        {
+          "start": 27.3,
+          "end": 30.9
+        },
+        {
+          "start": 31,
+          "end": 34.6
+        },
+        {
+          "start": 34.7,
+          "end": 39.4
+        },
+        {
+          "start": 39.5,
+          "end": 44.6
+        },
+        {
+          "start": 44.7,
+          "end": 49.7
+        },
+        {
+          "start": 49.8,
+          "end": 53.6
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "780 days",
+      "label": "on average from one opposition of Mars to the next",
+      "text": "Each backward loop is centred on an opposition, when Mars is opposite the Sun in our sky. The gap between oppositions can range from 764 to 812 days."
+    },
+    {
+      "type": "rank",
+      "heading": "Which planet spends longest going backwards each time?",
+      "items": [
+        {
+          "label": "Saturn",
+          "value": 138
+        },
+        {
+          "label": "Jupiter",
+          "value": 121
+        },
+        {
+          "label": "Mars",
+          "value": 72
+        },
+        {
+          "label": "Venus",
+          "value": 41
+        }
+      ],
+      "unit": "days",
+      "note": "Days in retrograde motion, per episode",
+      "explanation": "The farther out the planet, the longer its backward stretch. A planet so distant that it barely moved would spend half of every year going backwards."
+    },
+    {
+      "type": "text",
+      "heading": "Noticed long ago",
+      "text": "Egyptian astronomers were familiar with Mars’s backward motion by 1534 BCE. Babylonian astronomers knew that Mars comes back to opposition 37 times, while circling the zodiac 42 times, every 79 years."
+    },
+    {
+      "type": "compare",
+      "heading": "Two ways to explain the loop",
+      "left": {
+        "label": "Ptolemy, 2nd century AD",
+        "text": "Earth stands still. Mars rides a small circle, an epicycle, whose centre moves along a bigger circle; the two motions add up to loops."
+      },
+      "right": {
+        "label": "Copernicus, 1500s",
+        "text": "Earth circles the Sun inside Mars’s orbit, and faster. The loop is what we see as Earth overtakes Mars. His system still used small epicycles."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "When is Mars in the middle of its backward loop?",
+      "options": [
+        "At opposition, as Earth passes it",
+        "When Mars is farthest from the Sun",
+        "When Mars is behind the Sun",
+        "When Mars’s winter begins"
+      ],
+      "answer": 0,
+      "explanation": "The loop is centred on opposition, when Mars is opposite the Sun in our sky and Earth passes closest. That is also when Mars looks brightest."
+    }
+  ],
+  "tags": [
+    "mars",
+    "planets",
+    "orbits",
+    "copernicus",
+    "ptolemy"
+  ],
+  "source": {
+    "label": "Wikipedia: Apparent retrograde motion",
+    "url": "https://en.wikipedia.org/wiki/Apparent_retrograde_motion"
+  },
+  "theme": {
+    "gradient": [
+      "#0B1430",
+      "#7A2A12"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}
