@@ -1,0 +1,154 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-guitar-fret-spacing",
+  "field": "music",
+  "title": "Guitar frets crowd together because each cuts the same fraction",
+  "emoji": "🎸",
+  "body": "A string’s pitch depends on its vibrating length: halve the length and the frequency doubles, one octave up. Guitars split the octave into 12 semitones that each multiply the frequency by the same factor, the twelfth root of 2 (about 1.0595), so each fret must shorten the vibrating string by that same ratio. A fixed fraction of a shrinking length is a shrinking step, so the frets crowd together: in the ideal layout the 12th fret sits exactly halfway, and each gap is about 5.6% narrower than the one before.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "On an ideal 650 mm string, the 1st fret gap is 36.5 mm. How wide is the gap from the 11th to the 12th fret?",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "answer": 19,
+      "unit": "mm",
+      "explanation": "About 19.3 mm, barely more than half the first gap. Each gap is about 5.6% narrower than the one before, so after 11 steps it has shrunk to 53%."
+    },
+    {
+      "type": "video",
+      "src": "fret-spacing.mp4",
+      "poster": "fret-spacing.jpg",
+      "alt": "Animated guitar diagram: a plucked string vibrates, then is stopped halfway and its frequency doubles. Frets are placed one by one, each shortening the vibrating length by the same ratio, 1.0595, and bars under the neck show the gaps shrinking from 36.5 mm to 19.3 mm.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Clear Air” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.4,
+          "end": 4.7
+        },
+        {
+          "start": 4.9,
+          "end": 8.7
+        },
+        {
+          "start": 8.8,
+          "end": 12.8
+        },
+        {
+          "start": 12.9,
+          "end": 17.2
+        },
+        {
+          "start": 17.3,
+          "end": 21
+        },
+        {
+          "start": 21.2,
+          "end": 25.3
+        },
+        {
+          "start": 25.4,
+          "end": 30.1
+        },
+        {
+          "start": 30.2,
+          "end": 35.6
+        },
+        {
+          "start": 35.8,
+          "end": 39.8
+        },
+        {
+          "start": 40,
+          "end": 44.2
+        },
+        {
+          "start": 44.3,
+          "end": 48.4
+        },
+        {
+          "start": 48.6,
+          "end": 53.2
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "1.0595",
+      "label": "the ratio of two neighbouring frets’ distances from the bridge",
+      "text": "It is the twelfth root of 2. Multiply twelve of those steps together and you get exactly 2: one octave."
+    },
+    {
+      "type": "chart",
+      "heading": "Every 12 frets, the gaps halve",
+      "items": [
+        {
+          "label": "Gap to fret 1",
+          "value": 36.5
+        },
+        {
+          "label": "Gap to fret 12",
+          "value": 19.3
+        },
+        {
+          "label": "Gap to fret 13",
+          "value": 18.2,
+          "emphasis": true
+        },
+        {
+          "label": "Gap to fret 24",
+          "value": 9.7
+        }
+      ],
+      "unit": "mm",
+      "note": "Ideal positions on a 650 mm string, from the twelfth-root-of-2 rule."
+    },
+    {
+      "type": "text",
+      "heading": "Not quite where the maths says",
+      "text": "Pressing a string onto a fret raises its tension a little, and with it the pitch. So guitar makers shift the bridge slightly to make the 12th fret play exactly in tune. The positions in the animation are the ideal ones."
+    },
+    {
+      "type": "text",
+      "heading": "A lute player’s shortcut",
+      "text": "Vincenzo Galilei, Galileo’s father, placed lute frets with an 18:17 ratio, each fret cutting off 1/18 of the string left. The exact equal-tempered figure is about 1/17.817, so twelve of his steps fell just short of an octave and needed adjusting."
+    },
+    {
+      "type": "quiz",
+      "question": "On an ideal string, how far from the bridge is the 24th fret, two octaves up?",
+      "options": [
+        "A quarter of the string",
+        "A third of the string",
+        "Half the string",
+        "An eighth of the string"
+      ],
+      "answer": 0,
+      "explanation": "Each octave halves the vibrating length: half the string at the 12th fret, and half of that, a quarter, at the 24th."
+    }
+  ],
+  "tags": [
+    "guitar",
+    "tuning",
+    "acoustics",
+    "musictheory"
+  ],
+  "source": {
+    "label": "Wikipedia: Fret",
+    "url": "https://en.wikipedia.org/wiki/Fret"
+  },
+  "theme": {
+    "gradient": [
+      "#2A160D",
+      "#7A3A16"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}
