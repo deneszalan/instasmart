@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { readMp4, videoProblems } from '../shared/video.ts';
+import { maxVideoBytes, readMp4, videoProblems } from '../shared/video.ts';
 import { mediaProblems, validateContent, type ContentFile } from '../shared/validate.ts';
 
 const ascii = (s: string) => [...s].map((c) => c.charCodeAt(0));
@@ -80,9 +80,12 @@ describe('videoProblems', () => {
     expect(videoProblems(mp4({ width: 1920 })).join()).toContain('at most 1080 px');
     expect(videoProblems(mp4({ moovFirst: false })).join()).toContain('+faststart');
     expect(videoProblems(mp4({ padding: 3_100_000 })).join()).toContain('the limit for a 12.0 s clip is 3000000');
-    // Clips over a minute may use 50 kB a second.
-    expect(videoProblems(mp4({ seconds: 80, padding: 3_500_000 }))).toEqual([]);
-    expect(videoProblems(mp4({ seconds: 80, padding: 4_100_000 })).join()).toContain('the limit for a 80.0 s clip is 4000000');
+  });
+
+  it('lets longer clips use 60 kB a second', () => {
+    expect(maxVideoBytes(20)).toBe(3_000_000);
+    expect(maxVideoBytes(66)).toBe(3_960_000);
+    expect(maxVideoBytes(90)).toBe(5_400_000);
   });
 });
 

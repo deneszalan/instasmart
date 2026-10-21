@@ -172,8 +172,8 @@ export const STEP_STILL_BEFORE_END = 0.3;
  */
 export const stepStill = (step: { start: number; end: number }) => Math.max(step.start, step.end - STEP_STILL_BEFORE_END);
 
-/** A clip may use 3 MB, or 50 kB a second if it is longer than a minute: 4.5 MB at 90 s. */
-export const maxVideoBytes = (seconds: number) => Math.max(3_000_000, Math.round(seconds * 50_000));
+/** A clip may use 3 MB, or 60 kB a second if that is more: 5.4 MB at 90 s. */
+export const maxVideoBytes = (seconds: number) => Math.max(3_000_000, Math.round(seconds * 60_000));
 export const MIN_VIDEO_SECONDS = 2;
 export const MAX_VIDEO_SECONDS = 90;
 export const MAX_VIDEO_WIDTH = 1080;
