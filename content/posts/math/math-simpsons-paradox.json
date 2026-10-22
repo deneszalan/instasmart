@@ -4,17 +4,77 @@
   "field": "math",
   "title": "A treatment can do better in every group and still look worse overall",
   "emoji": "📉",
-  "body": "Simpson’s paradox happens when a trend that shows up in several groups of data disappears or reverses once the groups are combined. It isn’t an arithmetic mistake: it arises when the groups differ in size and in some hidden factor, a confounder, that also affects the outcome. The lesson is that pooled totals can mislead, and you have to ask what is driving the numbers before concluding anything about cause and effect.",
+  "body": "In a 1986 study of kidney stone treatments, treatment A (open surgery) beat treatment B (closed procedures) for small stones, 93% to 87%, and for large stones, 73% to 69%. Yet with all patients pooled, B looked better: 83% to 78%. Doctors tended to give A to large stones, the hard cases that fail more often, and B to small ones, so A's total was dragged down by its difficult cases. This is **Simpson's paradox**: a trend inside every group can vanish or reverse when the groups are combined, so ask what drives the numbers before concluding anything about cause and effect.",
   "slides": [
     {
-      "type": "text",
-      "heading": "A real example",
-      "text": "A 1986 study compared two kidney stone treatments. Treatment A had the higher success rate for small stones (93% vs 87%) and for large stones (73% vs 69%)."
+      "type": "estimate",
+      "question": "Treatment A cured 93% of small stones and 73% of large ones. What was its success rate over all its patients?",
+      "min": 60,
+      "max": 100,
+      "step": 1,
+      "answer": 78,
+      "unit": "%",
+      "explanation": "78%, or 273 of 350 patients. Not halfway between: 263 of A's 350 patients had large stones, so its overall rate sits close to the 73%."
     },
     {
-      "type": "text",
-      "heading": "The reversal",
-      "text": "Yet with all patients pooled, treatment B looked better: about 83% success versus 78% for A. How can A win both rounds and still lose overall?"
+      "type": "video",
+      "src": "simpsons-paradox-explainer.mp4",
+      "poster": "simpsons-paradox-explainer.jpg",
+      "alt": "Infographic animation: one dot per patient for two kidney stone treatments. Treatment A wins for small stones, 93% to 87%, and for large stones, 73% to 69%, but when the groups are pooled B wins, 83% to 78%. Balance beams show why: A treated mostly large stones.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Lobby Time” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.93
+        },
+        {
+          "start": 7.07,
+          "end": 13.73
+        },
+        {
+          "start": 13.87,
+          "end": 18.93
+        },
+        {
+          "start": 19.07,
+          "end": 23.2
+        },
+        {
+          "start": 23.33,
+          "end": 28.53
+        },
+        {
+          "start": 28.67,
+          "end": 33.87
+        },
+        {
+          "start": 34,
+          "end": 40
+        },
+        {
+          "start": 40.67,
+          "end": 46.67
+        },
+        {
+          "start": 46.8,
+          "end": 53.6
+        },
+        {
+          "start": 53.73,
+          "end": 60.27
+        },
+        {
+          "start": 60.4,
+          "end": 68
+        },
+        {
+          "start": 68.13,
+          "end": 74.93
+        }
+      ]
     },
     {
       "type": "chart",
@@ -49,12 +109,17 @@
         }
       ],
       "unit": "%",
-      "note": "From a 1986 study comparing two treatments for kidney stones."
+      "note": "From a 1986 study comparing two treatments for kidney stones, 350 patients each."
     },
     {
       "type": "text",
       "heading": "The hidden factor",
-      "text": "Treatment A was mostly used on large stones, the harder cases that fail more often, while B mostly got easy small stones. Stone size skewed the totals."
+      "text": "Stone size mattered more than the treatment: large stones failed more often whichever treatment was used. And 263 of A's 350 patients had large stones, against 80 of B's. A factor like this, which shapes both who gets a treatment and how it turns out, is called a confounder."
+    },
+    {
+      "type": "text",
+      "heading": "Berkeley, 1973",
+      "text": "That autumn, 44% of men who applied to Berkeley's graduate school were admitted, against 35% of women. But women had applied more often to competitive departments with low admission rates. Corrected for department, the pooled data showed a \"small but statistically significant bias in favor of women\"."
     },
     {
       "type": "quiz",
@@ -67,12 +132,6 @@
       ],
       "answer": 2,
       "explanation": "Treatment A was mostly given for large stones, the harder cases that fail more often, while B mostly got easy small stones. Stone size, the hidden factor, skewed the totals."
-    },
-    {
-      "type": "scramble",
-      "clue": "A hidden factor, like stone size, that affects both which treatment is chosen and how well it works",
-      "answer": "CONFOUNDER",
-      "detail": "Confounders are why pooled totals can mislead: ask what drives the numbers before judging cause and effect."
     }
   ],
   "tags": [
@@ -83,6 +142,12 @@
   "source": {
     "label": "Wikipedia: Simpson’s paradox",
     "url": "https://en.wikipedia.org/wiki/Simpson%27s_paradox"
+  },
+  "theme": {
+    "gradient": [
+      "#1C2430",
+      "#0B5A58"
+    ]
   },
   "author": {
     "name": "Claude",
