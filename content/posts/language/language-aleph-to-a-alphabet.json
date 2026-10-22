@@ -1,0 +1,160 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "language-aleph-to-a-alphabet",
+  "field": "language",
+  "title": "The letter A may have started out as a picture of an ox’s head",
+  "emoji": "🐂",
+  "body": "The earliest known ancestor of A is **aleph**, the first letter of the Phoenician alphabet, whose name comes from the West Semitic word for ox. Its shape goes back to a Proto-Sinaitic sign that *may* have pictured an ox’s head, borrowed from Egyptian hieroglyphs; the oldest examples of that script, scratched on rocks, date to about 1850 BC. Phoenician wrote only consonants, so aleph stood for a catch in the throat, a glottal stop. Greek had no such sound, so the Greeks used the sign for the vowel a and called it alpha; set upright, it passed through the Etruscans to the Romans, and on to us.",
+  "slides": [
+    {
+      "type": "match",
+      "heading": "Match each Phoenician letter to its meaning",
+      "pairs": [
+        {
+          "left": "Alp",
+          "right": "ox"
+        },
+        {
+          "left": "Bet",
+          "right": "house"
+        },
+        {
+          "left": "Mem",
+          "right": "water"
+        },
+        {
+          "left": "Kap",
+          "right": "palm of a hand"
+        }
+      ],
+      "explanation": "Each letter’s name was a word that began with its sound: bet for b, mem for m, kap for k. Alp began with a glottal stop."
+    },
+    {
+      "type": "video",
+      "src": "ox-to-a.mp4",
+      "poster": "ox-to-a.jpg",
+      "alt": "Animation: a capital A carved in sandstone turns upside down and grows horns, becoming an ox-head sign. It turns on its side as Phoenician aleph, becomes Greek alpha in ink on papyrus, stands upright and ends as a printed A beside a B that grew from a house sign.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“River Fire” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 5.07
+        },
+        {
+          "start": 5.33,
+          "end": 11.73
+        },
+        {
+          "start": 12,
+          "end": 19.2
+        },
+        {
+          "start": 19.47,
+          "end": 26.4
+        },
+        {
+          "start": 26.93,
+          "end": 33.33
+        },
+        {
+          "start": 33.6,
+          "end": 40.27
+        },
+        {
+          "start": 40.8,
+          "end": 47.73
+        },
+        {
+          "start": 48,
+          "end": 54.93
+        },
+        {
+          "start": 55.47,
+          "end": 62.4
+        },
+        {
+          "start": 62.93,
+          "end": 70.13
+        },
+        {
+          "start": 70.4,
+          "end": 79.2
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Named for its first sound",
+      "text": "The first alphabet’s signs probably stood for the first sound of the word for what they showed. The house sign, Semitic *bayt*, came to write b and became the ancestor of our B."
+    },
+    {
+      "type": "timeline",
+      "heading": "Ox to A",
+      "events": [
+        {
+          "when": "c. 1850 BC",
+          "text": "Oldest Proto-Sinaitic signs, scratched on rocks"
+        },
+        {
+          "when": "c. 1050 BC",
+          "text": "Phoenician aleph: 22 letters, all consonants"
+        },
+        {
+          "when": "8th c. BC",
+          "text": "Greek alpha, a vowel, at first on its side"
+        },
+        {
+          "when": "c. 7th c. BC",
+          "text": "The Latins take up writing, via the Etruscans"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why “may”?",
+      "text": "The ox’s head is a scholarly reconstruction. Proto-Sinaitic has not been fully deciphered, and the Egyptian models for its signs are hypotheses, with several possibilities proposed."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did the Greeks turn aleph into a vowel?",
+      "options": [
+        "Greek had no glottal stop",
+        "Phoenician aleph was already a vowel",
+        "Vowels were easier to carve",
+        "A Greek king ordered it"
+      ],
+      "answer": 0,
+      "explanation": "Phoenician wrote only consonants, and aleph was a glottal stop. Greek had no use for that sound, so the sign was used for the vowel a and named alpha."
+    },
+    {
+      "type": "text",
+      "heading": "The word itself",
+      "text": "*Alphabet* comes from Greek alpha and beta, whose names came from the first two Phoenician letters: aleph, the word for ox, and bet, the word for house."
+    }
+  ],
+  "tags": [
+    "alphabet",
+    "writing",
+    "letters",
+    "phoenician",
+    "etymology"
+  ],
+  "source": {
+    "label": "Wikipedia: A",
+    "url": "https://en.wikipedia.org/wiki/A"
+  },
+  "theme": {
+    "gradient": [
+      "#3A2312",
+      "#8A2B10"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

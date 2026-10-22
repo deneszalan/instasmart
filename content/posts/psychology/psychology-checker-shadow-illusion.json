@@ -4,30 +4,8 @@
   "field": "psychology",
   "title": "Two squares that look completely different can be the exact same grey",
   "emoji": "♟️",
-  "body": "In Edward Adelson’s 1995 checker shadow illusion, a square in the light looks dark and a square in a cylinder’s shadow looks light, yet on the page they are exactly the same shade. Your visual system isn’t measuring raw brightness: it estimates the true colour of surfaces by compensating for lighting and shadows. That usually helps you see the world accurately, but here it makes identical patches look strikingly different.",
+  "body": "In Edward Adelson’s 1995 checker shadow illusion, a square in the light looks dark and a square in a cylinder’s shadow looks light, yet on the page they are exactly the same shade. Your visual system isn’t measuring raw brightness: it estimates the light falling on each surface and discounts it, to judge the surface’s true shade. That usually helps you see the world accurately, but here it makes identical patches look strikingly different.",
   "slides": [
-    {
-      "type": "flow",
-      "heading": "How identical greys come to look different",
-      "steps": [
-        {
-          "icon": "💡",
-          "label": "A cylinder casts a shadow across the board"
-        },
-        {
-          "icon": "👁️",
-          "label": "Two squares send the same grey to your eye"
-        },
-        {
-          "icon": "🧠",
-          "label": "The brain corrects for the shadow it sees"
-        },
-        {
-          "icon": "✨",
-          "label": "So the shaded square looks lighter"
-        }
-      ]
-    },
     {
       "type": "place",
       "question": "When did Adelson publish the checker shadow illusion?",
@@ -57,6 +35,101 @@
       "explanation": "Edward H. Adelson, a vision scientist at MIT, published it in 1995: a modern classic, a century after Müller-Lyer’s arrows and two decades before the dress photo divided the internet."
     },
     {
+      "type": "video",
+      "src": "same-grey.mp4",
+      "poster": "same-grey.jpg",
+      "alt": "Animation of our own version of the illusion: a checkerboard in a grey studio with a terracotta cylinder casting a soft shadow. Square A, in the light, looks far darker than square B, in the shadow. A grey bar joins them and a card with two holes hides the rest: both are 120, 120, 120.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Almost New” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.67,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12.8
+        },
+        {
+          "start": 13.2,
+          "end": 19.73
+        },
+        {
+          "start": 20,
+          "end": 26.13
+        },
+        {
+          "start": 26.4,
+          "end": 32.8
+        },
+        {
+          "start": 33.07,
+          "end": 39.47
+        },
+        {
+          "start": 40,
+          "end": 46.93
+        },
+        {
+          "start": 47.2,
+          "end": 54.4
+        },
+        {
+          "start": 54.67,
+          "end": 61.87
+        },
+        {
+          "start": 62.13,
+          "end": 68.8
+        },
+        {
+          "start": 69.07,
+          "end": 75.47
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Same light, different surfaces",
+      "left": {
+        "label": "On the screen",
+        "text": "A and B send exactly the same light to your eye. In our drawing, every pixel of both is 120, 120, 120."
+      },
+      "right": {
+        "label": "In your mind",
+        "text": "B is a light square in shade, and A is a dark square in full light."
+      }
+    },
+    {
+      "type": "flow",
+      "heading": "How identical greys come to look different",
+      "steps": [
+        {
+          "icon": "💡",
+          "label": "A cylinder casts a shadow across the board"
+        },
+        {
+          "icon": "👁️",
+          "label": "Two squares send the same grey to your eye"
+        },
+        {
+          "icon": "🧠",
+          "label": "The brain allows for the shadow it sees"
+        },
+        {
+          "icon": "✨",
+          "label": "So the shaded square looks lighter"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "A feature, not a flaw",
+      "text": "This is colour constancy: a green apple looks green at midday and at sunset, when the light is red. The same correction that keeps colours steady makes A and B look different here."
+    },
+    {
       "type": "quiz",
       "question": "Why does the square in the shadow look lighter than it really is?",
       "options": [
@@ -65,7 +138,7 @@
         "The printed shades are slightly off"
       ],
       "answer": 0,
-      "explanation": "Your visual system isn’t measuring raw brightness: it estimates the true colour of surfaces by compensating for lighting and shadows, which usually helps you see accurately."
+      "explanation": "Your visual system isn’t measuring raw brightness: it estimates the light on each surface and discounts it, which usually helps you see accurately."
     }
   ],
   "tags": [
@@ -81,5 +154,11 @@
     "name": "Claude",
     "kind": "ai"
   },
-  "createdAt": "2026-10-18"
+  "createdAt": "2026-10-18",
+  "theme": {
+    "gradient": [
+      "#2E2E2E",
+      "#7A3F2B"
+    ]
+  }
 }
