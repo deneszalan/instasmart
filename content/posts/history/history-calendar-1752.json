@@ -4,8 +4,98 @@
   "field": "history",
   "title": "In 1752, Britain went to bed on 2 September and woke on the 14th",
   "emoji": "📅",
-  "body": "To switch from the Julian to the Gregorian calendar, which Catholic Europe had used since 1582, Britain and its colonies dropped eleven days: Wednesday 2 September 1752 was followed by Thursday 14 September. Rent and contract dates were shifted so nobody gained or lost, which is why the UK tax year still ends on 5 April. Tales of mobs demanding ‘give us our eleven days’ are very likely a myth.",
+  "body": "The old Julian calendar added a leap day every fourth year, so its average year of 365¼ days ran about **11 minutes** longer than the solar year. Over the centuries those minutes added up: in 1582 Pope Gregory XIII’s reform dropped 10 days and stopped leap days in century years not divisible by 400. Britain kept the old calendar until 1752, when the gap had grown to 11 days, so Wednesday 2 September was followed by Thursday 14 September. Tales of mobs demanding ‘give us our eleven days’ are very likely a myth.",
   "slides": [
+    {
+      "type": "estimate",
+      "question": "In the Gregorian calendar we use today, how many years in every 400 are leap years?",
+      "min": 80,
+      "max": 110,
+      "step": 1,
+      "answer": 97,
+      "explanation": "97. Years divisible by 4 are leap years, except century years that don’t divide by 400: 1600 and 2000 were leap years, 1700, 1800 and 1900 weren’t. That makes the average year 365.2425 days."
+    },
+    {
+      "type": "video",
+      "src": "calendar-1752.mp4",
+      "poster": "calendar-1752.jpg",
+      "alt": "Animation on a printed almanac page: September 1752 with only 19 days, a leap-year cycle averaging 365¼ days, the spring equinox sliding from 21 to 11 March by 1582, the century leap-year rule, and days 3 to 13 dropping out of the month.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Brandenburg Concerto No. 4 in G, Movement I (Allegro), BWV 1049” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 5.87
+        },
+        {
+          "start": 6.13,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 26.13
+        },
+        {
+          "start": 26.4,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 38.4
+        },
+        {
+          "start": 38.67,
+          "end": 45.33
+        },
+        {
+          "start": 45.6,
+          "end": 53.87
+        },
+        {
+          "start": 54.13,
+          "end": 61.33
+        },
+        {
+          "start": 61.6,
+          "end": 69.6
+        },
+        {
+          "start": 69.87,
+          "end": 76.8
+        },
+        {
+          "start": 77.07,
+          "end": 83.47
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Rent days moved too",
+      "text": "The Act moved rent days, salaries and contracts on by 11 days, so that nobody gained or lost. The quarter day of 25 March became 5 April, which is why the UK personal tax year still ends on 5 April."
+    },
+    {
+      "type": "text",
+      "heading": "New Year moved as well",
+      "text": "The same Act moved the start of the legal year in England from 25 March to 1 January. Scotland had already begun its year on 1 January since 1600."
+    },
+    {
+      "type": "quiz",
+      "question": "What do historians make of the tales of mobs shouting ‘give us our eleven days’?",
+      "options": [
+        "Very likely a myth",
+        "Well documented in several cities",
+        "True, but only in Scotland"
+      ],
+      "answer": 0,
+      "explanation": "Very likely a myth. It rests on just two sources, a satirical journal and a satirical painting by Hogarth, and the riot records of the time show no such events."
+    },
     {
       "type": "place",
       "question": "When did Russia switch to the Gregorian calendar?",
@@ -36,30 +126,7 @@
           "value": 1923
         }
       ],
-      "explanation": "1918, and by then 13 days had to go (10 in 1582, 11 in 1752). The Bolsheviks switched soon after the revolution, so the ‘October’ Revolution of 1917 fell on 7 November, new style."
-    },
-    {
-      "type": "quiz",
-      "question": "What do historians make of the tales of mobs shouting ‘give us our eleven days’?",
-      "options": [
-        "Very likely a myth",
-        "Well documented in several cities",
-        "True, but only in Scotland"
-      ],
-      "answer": 0,
-      "explanation": "Those tales are very likely a myth. Rent and contract dates were shifted so nobody gained or lost, which is why the UK tax year still ends on 5 April."
-    },
-    {
-      "type": "odd",
-      "heading": "Which country did not switch in 1582?",
-      "items": [
-        "Spain",
-        "Portugal",
-        "France",
-        "Britain"
-      ],
-      "answer": 3,
-      "explanation": "Spain, Portugal and France all adopted the Gregorian calendar in 1582, the year Pope Gregory XIII introduced it. Britain and its colonies held out until 1752."
+      "explanation": "1918. By then the jump was 13 days, because 1800 and 1900 had been leap years in the old calendar but not in the new one."
     }
   ],
   "tags": [
@@ -70,6 +137,12 @@
   "source": {
     "label": "Wikipedia: Calendar (New Style) Act 1750",
     "url": "https://en.wikipedia.org/wiki/Calendar_(New_Style)_Act_1750"
+  },
+  "theme": {
+    "gradient": [
+      "#3A2416",
+      "#8E1C17"
+    ]
   },
   "author": {
     "name": "Claude",

@@ -2,62 +2,20 @@
   "$schema": "../../schema/post.schema.json",
   "id": "language-grimms-law",
   "field": "language",
-  "title": "Why English says ‘father’ where Latin said ‘pater’",
+  "title": "English ‘foot’ and Latin ‘pēs’ grew from the same ancient word",
   "emoji": "🌳",
-  "body": "In 1786, William Jones suggested that Sanskrit, Greek and Latin sprang from a common source, now called Proto-Indo-European. Rasmus Rask and then Jacob Grimm, the elder of the fairy-tale Brothers Grimm, showed that the ancestor of the Germanic languages had shifted its consonants in regular ways. Their rule, Grimm’s law, explains why so many English words look like scrambled cousins of Latin ones.",
+  "body": "Latin and English both descend from Proto-Indo-European, a language nobody wrote down, so its words are rebuilt by comparison and marked with an asterisk: ∗pṓds, ‘foot’. In the first millennium BCE the ancestor of the Germanic languages shifted its stops in a chain: p, t, k became f, þ (th) and h; b, d, g became p, t, k; and the aspirated bʰ, dʰ, gʰ became b, d, g. Rasmus Rask found the pattern and Jacob Grimm set it out in 1822, which is why Latin pēs, trēs and decem line up with foot, three and ten.",
   "slides": [
-    {
-      "type": "text",
-      "heading": "p became f",
-      "text": "Latin pater, pes and piscis line up with English father, foot and fish. The old p sound, kept in Latin, turned into f in Germanic."
-    },
-    {
-      "type": "flow",
-      "heading": "How ‘pater’ became ‘father’",
-      "steps": [
-        {
-          "icon": "🌳",
-          "label": "Proto-Indo-European: *ph₂tḗr"
-        },
-        {
-          "icon": "🏛️",
-          "label": "Latin keeps the p: pater"
-        },
-        {
-          "icon": "🔀",
-          "label": "Germanic shifts p to f: *fadēr"
-        },
-        {
-          "icon": "🏴",
-          "label": "Old English fæder, modern English father"
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "heading": "t became th, k became h",
-      "text": "Latin tres matches English three, and centum, said with a hard k, matches hundred. Latin cornu and English horn follow the same pattern."
-    },
-    {
-      "type": "text",
-      "heading": "d became t, g became k",
-      "text": "Latin decem and dens line up with ten and tooth, while genu and granum match knee and corn. The k in knee was once pronounced."
-    },
-    {
-      "type": "text",
-      "heading": "Why it matters",
-      "text": "Regular sound laws let linguists rebuild lost ancestors like Proto-Indo-European and tell true cognates from words that only look alike by chance."
-    },
     {
       "type": "match",
       "heading": "Match the Latin word to its English cousin",
       "pairs": [
         {
-          "left": "pater",
-          "right": "father"
+          "left": "pēs",
+          "right": "foot"
         },
         {
-          "left": "tres",
+          "left": "trēs",
           "right": "three"
         },
         {
@@ -65,26 +23,113 @@
           "right": "ten"
         },
         {
-          "left": "genu",
-          "right": "knee"
+          "left": "gelū",
+          "right": "cold"
         },
         {
-          "left": "piscis",
-          "right": "fish"
+          "left": "canis",
+          "right": "hound"
         }
       ],
-      "explanation": "p became f, t became th, d became t and g became k: the regular shifts that Grimm’s law describes."
+      "explanation": "p became f, t became þ (th), d became t, g became k and k became h: the regular shifts of Grimm’s law."
+    },
+    {
+      "type": "video",
+      "src": "grimms-law-chain.mp4",
+      "poster": "grimms-law-chain.jpg",
+      "alt": "Animation in a philologist’s notebook: Latin pēs, trēs, canis, decem beside English foot, three, hound, ten; the starred ancestor *pṓds; a grid in which p, t, k slide to f, þ, h, then b, d, g to p, t, k, and bʰ, dʰ, gʰ to b, d, g, like links in a chain; then Rask, Grimm and Verner.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Prelude in C (BWV 846)” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 5.87
+        },
+        {
+          "start": 6.13,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 19.47
+        },
+        {
+          "start": 19.73,
+          "end": 25.87
+        },
+        {
+          "start": 26.13,
+          "end": 32.8
+        },
+        {
+          "start": 33.07,
+          "end": 39.73
+        },
+        {
+          "start": 40,
+          "end": 45.87
+        },
+        {
+          "start": 46.13,
+          "end": 52.27
+        },
+        {
+          "start": 52.53,
+          "end": 58.4
+        },
+        {
+          "start": 58.67,
+          "end": 65.33
+        },
+        {
+          "start": 65.6,
+          "end": 72
+        },
+        {
+          "start": 72.27,
+          "end": 78.67
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "heading": "One word, two branches",
+      "steps": [
+        {
+          "icon": "🌳",
+          "label": "Proto-Indo-European ∗pṓds, ‘foot’"
+        },
+        {
+          "icon": "🏛️",
+          "label": "Latin keeps the p: pēs"
+        },
+        {
+          "icon": "🔀",
+          "label": "Germanic shifts p to f: ∗fōts"
+        },
+        {
+          "icon": "🦶",
+          "label": "English foot"
+        }
+      ]
     },
     {
       "type": "quiz",
-      "question": "By Grimm’s law, which English word is the cousin of Latin ‘cornu’?",
+      "question": "Why did ∗ph₂tḗr, ‘father’, become Proto-Germanic ∗fadēr, with d rather than þ?",
       "options": [
-        "Horn",
-        "Corn",
-        "Crown"
+        "The stress fell after that consonant",
+        "It was borrowed from Latin",
+        "Old scribes misspelled it"
       ],
       "answer": 0,
-      "explanation": "Latin k became Germanic h, so cornu lines up with horn. ‘Corn’ is actually the cousin of Latin granum, where g became k."
+      "explanation": "Verner’s law: the fricative from Grimm’s law became voiced when the syllable before it was unstressed. In ∗bʰréh₂tēr the stress came first, so brother kept its þ."
+    },
+    {
+      "type": "text",
+      "heading": "Why it matters",
+      "text": "Grimm’s law was the first time scholars saw sound change as systematic rather than accidental. Regular laws let linguists rebuild lost words and tell true cousins from look-alikes."
     }
   ],
   "tags": [
@@ -96,6 +141,12 @@
   "source": {
     "label": "Wikipedia: Grimm’s law",
     "url": "https://en.wikipedia.org/wiki/Grimm%27s_law"
+  },
+  "theme": {
+    "gradient": [
+      "#3A2414",
+      "#2B3A55"
+    ]
   },
   "author": {
     "name": "Claude",

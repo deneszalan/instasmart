@@ -1,0 +1,140 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-magellan-lost-a-day",
+  "field": "history",
+  "title": "The first crew to sail around the world lost a day on the way",
+  "emoji": "⛵",
+  "body": "The Magellan–Elcano expedition left Spain in September 1519 and sailed **west** around the globe. Magellan was killed in the Philippines in 1521, and Juan Sebastián Elcano brought the *Victoria* home. When she called at Cape Verde in July 1522, the ship’s log said Wednesday 9 July, but ashore it was Thursday 10 July. Sailing west, the ship moved the same way the Sun crosses the sky, so each of its days ran slightly longer than 24 hours, and one full lap of the Earth added up to one whole day.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "The crew had logged every day of a three-year voyage, yet their date was one day behind. Where did the day go?",
+      "answer": "They sailed west, the same way the Sun moves",
+      "detail": "Chasing the Sun made each day at sea a little longer than 24 hours. Over one lap of the globe, the ship saw one sunrise fewer than people at home."
+    },
+    {
+      "type": "video",
+      "src": "magellan-lost-day.mp4",
+      "poster": "magellan-lost-day.jpg",
+      "alt": "Animation on a portolan chart: the Victoria reaches Cape Verde, its log saying Wednesday 9 July while ashore it is Thursday 10 July; the westward route on a polar diagram of the globe; a sped-up lap in which Spain counts five noons and the ship four; the date line today.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Tabuk” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 7.47
+        },
+        {
+          "start": 7.73,
+          "end": 13.6
+        },
+        {
+          "start": 13.87,
+          "end": 20
+        },
+        {
+          "start": 20.27,
+          "end": 27.73
+        },
+        {
+          "start": 28,
+          "end": 34.4
+        },
+        {
+          "start": 34.67,
+          "end": 40
+        },
+        {
+          "start": 40.27,
+          "end": 48
+        },
+        {
+          "start": 48.27,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 62.13
+        },
+        {
+          "start": 62.4,
+          "end": 68.8
+        },
+        {
+          "start": 69.07,
+          "end": 75.47
+        },
+        {
+          "start": 75.73,
+          "end": 82.93
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "The first voyage around the world",
+      "events": [
+        {
+          "when": "Sept 1519",
+          "text": "Five ships and about 270 men leave Spain"
+        },
+        {
+          "when": "April 1521",
+          "text": "Magellan is killed in battle in the Philippines"
+        },
+        {
+          "when": "July 1522",
+          "text": "The Victoria calls at Cape Verde, a day behind"
+        },
+        {
+          "when": "Sept 1522",
+          "text": "The Victoria reaches Spain with just 18 men aboard"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Predicted, then explained",
+      "text": "The 14th-century Arab geographer Abulfeda had predicted that travellers going round the world would end up a day off. After the voyage, Gasparo Contarini, the Venetian ambassador to Spain, was the first European to explain it correctly."
+    },
+    {
+      "type": "text",
+      "heading": "The date line keeps score",
+      "text": "Today the International Date Line does the bookkeeping. Crossing it westbound, the date jumps forward a day; eastbound, it goes back one, so travellers stay in step with the people at home."
+    },
+    {
+      "type": "quiz",
+      "question": "In Around the World in Eighty Days, Phileas Fogg travels east. What happens to his count of days?",
+      "options": [
+        "He gains a day",
+        "He loses a day",
+        "It stays the same"
+      ],
+      "answer": 0,
+      "explanation": "Going east, against the Sun, he saw it pass the meridian 80 times while his friends in London saw it only 79 times. Magellan’s crew, going west, lost a day instead."
+    }
+  ],
+  "tags": [
+    "history",
+    "exploration",
+    "magellan",
+    "time"
+  ],
+  "source": {
+    "label": "Wikipedia: Magellan expedition",
+    "url": "https://en.wikipedia.org/wiki/Magellan_expedition"
+  },
+  "theme": {
+    "gradient": [
+      "#1F3A3D",
+      "#7A2E1F"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

@@ -1,0 +1,150 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-gutenberg-printing-press",
+  "field": "history",
+  "title": "The Gutenberg Bible was printed from just 290 different characters",
+  "emoji": "🖨️",
+  "body": "In Mainz in the 1450s, Johannes Gutenberg put together a whole printing system: cast metal type, an **oil-based ink**, and a wooden press like the screw presses used on farms. In the standard method, traditionally credited to him, a letter carved back to front on a hard punch is struck into copper to make a matrix; in a hand mould, the matrix shapes molten lead, tin and antimony into a piece of type, again and again. His 42-line Bible, finished around 1454 or 1455, needed a set of just 290 master characters, counting capitals, punctuation and ligatures.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How many pages does a complete Gutenberg Bible have?",
+      "min": 200,
+      "max": 2000,
+      "step": 1,
+      "answer": 1288,
+      "explanation": "1,288 pages, usually bound in two volumes. With four pages to each folded sheet, a single copy took 322 sheets."
+    },
+    {
+      "type": "video",
+      "src": "gutenberg-press.mp4",
+      "poster": "gutenberg-press.jpg",
+      "alt": "Woodcut-style animation: a Bible’s pages fill to 1,288 and a type case of 290 characters appears; a punch is struck into copper to make a matrix, molten metal fills a hand mould, sorts are set into a page, inked and printed on a wooden screw press; a grid shows 160 to 185 copies.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Angevin” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.93
+        },
+        {
+          "start": 19.2,
+          "end": 24.8
+        },
+        {
+          "start": 25.33,
+          "end": 33.33
+        },
+        {
+          "start": 33.6,
+          "end": 40.27
+        },
+        {
+          "start": 40.53,
+          "end": 47.47
+        },
+        {
+          "start": 47.73,
+          "end": 54.13
+        },
+        {
+          "start": 54.4,
+          "end": 60.53
+        },
+        {
+          "start": 60.8,
+          "end": 68.53
+        },
+        {
+          "start": 69.07,
+          "end": 75.47
+        },
+        {
+          "start": 75.73,
+          "end": 82.93
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "heading": "The standard method, step by step",
+      "steps": [
+        {
+          "icon": "🔨",
+          "label": "A punch, cut back to front, hits copper"
+        },
+        {
+          "icon": "🟫",
+          "label": "The copper matrix goes into a hand mould"
+        },
+        {
+          "icon": "🔥",
+          "label": "Molten type metal casts a piece of type"
+        },
+        {
+          "icon": "📜",
+          "label": "Inked type is pressed onto paper"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Was it really punch and matrix?",
+      "text": "In 2001, researchers studying his type found variations that a single matrix could not explain, and suggested he cast each piece in a single-use mould, perhaps of sand. Others disagree, and the question remains open."
+    },
+    {
+      "type": "stat",
+      "value": "160–185",
+      "label": "copies of the 42-line Bible, as scholars estimate",
+      "text": "About three-quarters were on paper and the rest on vellum. A letter of 1455 cites sources for both 158 and 180 copies."
+    },
+    {
+      "type": "text",
+      "heading": "Not the first movable type",
+      "text": "Bi Sheng made movable type in China around 1040, and Korea’s Jikji of 1377 is the oldest surviving book printed with movable metal type. In Europe, the small number of letters in the alphabet worked in Gutenberg’s favour."
+    },
+    {
+      "type": "quiz",
+      "question": "In March 1455, the future Pope Pius II wrote that he had seen pages of the Bible on show. Where?",
+      "options": [
+        "Frankfurt",
+        "Rome",
+        "Paris",
+        "Venice"
+      ],
+      "answer": 0,
+      "explanation": "In Frankfurt, where pages were displayed to promote the edition. His letter is the most reliable evidence for when the Bible was printed."
+    }
+  ],
+  "tags": [
+    "history",
+    "printing",
+    "gutenberg",
+    "books"
+  ],
+  "source": {
+    "label": "Wikipedia: Johannes Gutenberg",
+    "url": "https://en.wikipedia.org/wiki/Johannes_Gutenberg"
+  },
+  "theme": {
+    "gradient": [
+      "#2A1A10",
+      "#6B3A1E"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

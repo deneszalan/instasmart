@@ -2,76 +2,101 @@
   "$schema": "../../schema/post.schema.json",
   "id": "language-great-vowel-shift",
   "field": "language",
-  "title": "English spelling froze just as its vowels went on the move",
+  "title": "‘Mite’ once sounded like ‘meet’: the vowels moved, the spelling didn’t",
   "emoji": "🔀",
-  "body": "Between roughly 1400 and 1700, the long vowels of English shifted in a chain, each moving to a new position in the mouth. Meanwhile, spelling was starting to settle into fixed forms. The result is a writing system that often records late medieval pronunciation: the letters in ‘bite’, ‘meet’ and ‘name’ once matched their sounds far better than they do today.",
+  "body": "Between roughly 1400 and 1700, every long vowel of English changed in the **Great Vowel Shift**, starting in southern England. The two highest, /iː/ in bite and /uː/ in out, broke into two-part vowels, while the others were raised a step, so Middle English mite sounded much like today’s meet. English spelling was starting to settle in the 15th and 16th centuries and did not follow the changes, which is the main reason English vowel letters no longer sound as they do in Italian or German.",
   "slides": [
     {
       "type": "reveal",
-      "prompt": "Around 1400, what did the English word ‘mouse’ sound like?",
-      "answer": "Much like today’s ‘moose’",
-      "detail": "And ‘bite’ sounded roughly like ‘beet’. Between about 1400 and 1700 the long vowels shifted in a chain, while the spelling stayed put."
+      "prompt": "Around 1400, the Middle English word ‘mite’ sounded similar to which modern English word?",
+      "answer": "‘meet’",
+      "detail": "Its long i was pronounced /iː/. Over the next three centuries the long vowels shifted, but the spelling stayed put."
     },
     {
-      "type": "text",
-      "heading": "Before the shift",
-      "text": "Around 1400, ‘bite’ sounded roughly like today’s ‘beet’, ‘meet’ like a drawn-out ‘met’, and ‘mouse’ much like ‘moose’."
-    },
-    {
-      "type": "text",
-      "heading": "A chain reaction",
-      "text": "The highest vowels became diphthongs: the ‘ee’ of ‘bite’ turned into ‘eye’ and the ‘oo’ of ‘mouse’ into ‘ow’. Other vowels moved up to fill the gaps."
-    },
-    {
-      "type": "flow",
-      "heading": "The chain, 1400 to 1700",
+      "type": "video",
+      "src": "vowel-shift-mouth.mp4",
+      "poster": "vowel-shift-mouth.jpg",
+      "alt": "Pastel diagram of the mouth with a vowel chart inside: seven words move from 1400 to 1900. Bite and out break into gliding vowels, meet and boot rise, then mate, meat and boat rise a step; the spelling b-i-t-e stays while its vowel goes from /iː/ to /aɪ/; German respells bīzen as beißen.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Sheep May Safely Graze - BWV 208” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "icon": "🗣️",
-          "label": "c. 1400: ‘bite’ sounds like ‘beet’"
+          "start": 0.53,
+          "end": 6.13
         },
         {
-          "icon": "🔀",
-          "label": "The highest vowels break into diphthongs"
+          "start": 6.4,
+          "end": 12.27
         },
         {
-          "icon": "⬆️",
-          "label": "Lower vowels move up to fill the gaps"
+          "start": 12.53,
+          "end": 18.93
         },
         {
-          "icon": "✍️",
-          "label": "Spelling settles, so the letters stay put"
+          "start": 19.2,
+          "end": 26.4
+        },
+        {
+          "start": 26.67,
+          "end": 33.07
+        },
+        {
+          "start": 33.33,
+          "end": 40.8
+        },
+        {
+          "start": 41.07,
+          "end": 47.2
+        },
+        {
+          "start": 47.73,
+          "end": 54.13
+        },
+        {
+          "start": 54.4,
+          "end": 61.33
+        },
+        {
+          "start": 61.6,
+          "end": 69.33
+        },
+        {
+          "start": 69.6,
+          "end": 76.8
+        },
+        {
+          "start": 77.07,
+          "end": 82.67
         }
       ]
     },
     {
       "type": "text",
-      "heading": "German respelled",
-      "text": "German went through a similar change but updated its spelling, so medieval ‘mūs’ became ‘Maus’. English kept its old letters, and they drifted out of step."
+      "heading": "Two phases",
+      "text": "By about 1500, /iː/ and /uː/ in bite and out had become diphthongs, and /eː/ and /oː/ in meet and boot had risen to /iː/ and /uː/. From around 1550, a second phase raised the vowels of mate, meat and boat."
     },
     {
       "type": "text",
-      "heading": "The North held out",
-      "text": "In Scots and older northern speech, the long ‘oo’ of ‘house’ never shifted, which is why Scots still says ‘hoose’ and ‘oot’."
+      "heading": "Push or pull?",
+      "text": "Scholars still argue about the order. Did meet and boot rise first and push the old /iː/ and /uː/ out of place, or did those break up first and leave gaps that pulled the others up?"
     },
     {
-      "type": "match",
-      "heading": "How did it sound around 1400?",
-      "pairs": [
-        {
-          "left": "bite",
-          "right": "‘beet’"
-        },
-        {
-          "left": "mouse",
-          "right": "‘moose’"
-        },
-        {
-          "left": "meet",
-          "right": "a drawn-out ‘met’"
-        }
+      "type": "quiz",
+      "question": "In Northern English, one long vowel never became a diphthong. Which one?",
+      "options": [
+        "/uː/ in house",
+        "/iː/ in bite",
+        "/eː/ in feet"
       ],
-      "explanation": "Before the shift the letters matched the sounds far better: ‘bite’ was ‘beet’, ‘mouse’ was ‘moose’ and ‘meet’ a long ‘met’."
+      "answer": 0,
+      "explanation": "The /uː/ of house stayed put in the North. One explanation: Northern English had no /oː/ to rise into its place, because its /oː/ had already moved to the front of the mouth."
+    },
+    {
+      "type": "text",
+      "heading": "German respelled",
+      "text": "German went through similar vowel changes slightly earlier, but changed its spelling to match: Middle High German bīzen became modern beißen, ‘to bite’."
     }
   ],
   "tags": [
@@ -83,6 +108,12 @@
   "source": {
     "label": "Wikipedia: Great Vowel Shift",
     "url": "https://en.wikipedia.org/wiki/Great_Vowel_Shift"
+  },
+  "theme": {
+    "gradient": [
+      "#3B2E4A",
+      "#6A4C7D"
+    ]
   },
   "author": {
     "name": "Claude",
