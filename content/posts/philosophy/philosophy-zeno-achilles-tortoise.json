@@ -4,8 +4,95 @@
   "field": "philosophy",
   "title": "Zeno ‘proved’ that the fastest runner can never catch a tortoise",
   "emoji": "🐢",
-  "body": "Zeno of Elea, in the 5th century BC, argued that if a tortoise has a head start, Achilles must first reach where it was, by which time it has moved on, and so on forever. He wanted to support his teacher Parmenides’ view that change is an illusion. Calculus shows that infinitely many shrinking steps can add up to a finite time, though philosophers still debate whether that fully dissolves the puzzle.",
+  "body": "Zeno of Elea, in the 5th century BC, argued that if a tortoise has a head start, Achilles must first reach where it was, by which time it has crept on, and so on forever. He meant to support his teacher Parmenides, who held that change is impossible. Yet the shrinking steps add up to a finite time: give the tortoise 100 m and let Achilles run 10 m/s, ten times its speed, and the steps take 10 + 1 + 0.1 + … seconds, about 11.1 in all. That kind of sum, made rigorous with limits, is one common answer to Zeno, though some philosophers say the maths doesn’t settle every question he raised.",
   "slides": [
+    {
+      "type": "estimate",
+      "question": "Achilles runs 10 m/s; a tortoise runs 1 m/s and starts 100 m ahead. How far does Achilles run to draw level?",
+      "min": 100,
+      "max": 200,
+      "step": 1,
+      "answer": 111,
+      "unit": "m",
+      "explanation": "About 111.1 m, after 11.1 seconds: 100 + 10 + 1 + 0.1 + … metres. Infinitely many catch-up steps, but they add up to a finite distance."
+    },
+    {
+      "type": "video",
+      "src": "achilles.mp4",
+      "poster": "achilles.jpg",
+      "alt": "Animation on white marble: Achilles chases a tortoise with a 100 m head start. Each time he reaches where it was, it has crept on, and the view zooms in tenfold. A ledger then adds the step times, 10 + 1 + 0.1 + … seconds, to 11.1 s, and he draws level at 111.1 m.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Gymnopedie No. 2” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 5.73
+        },
+        {
+          "start": 5.87,
+          "end": 10.4
+        },
+        {
+          "start": 10.53,
+          "end": 15.47
+        },
+        {
+          "start": 15.6,
+          "end": 20.8
+        },
+        {
+          "start": 20.93,
+          "end": 26.4
+        },
+        {
+          "start": 26.53,
+          "end": 31.47
+        },
+        {
+          "start": 31.6,
+          "end": 37.33
+        },
+        {
+          "start": 37.47,
+          "end": 43.2
+        },
+        {
+          "start": 43.33,
+          "end": 48
+        },
+        {
+          "start": 48.13,
+          "end": 53.87
+        },
+        {
+          "start": 54,
+          "end": 59.47
+        },
+        {
+          "start": 59.6,
+          "end": 64.8
+        },
+        {
+          "start": 64.93,
+          "end": 70.4
+        },
+        {
+          "start": 70.53,
+          "end": 76.27
+        },
+        {
+          "start": 76.4,
+          "end": 82.4
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "In a race, the quickest runner can never overtake the slowest, since the pursuer must first reach the point whence the pursued started, so that the slower must always hold a lead.",
+      "attribution": "Zeno’s argument, as told by Aristotle, Physics VI:9"
+    },
     {
       "type": "flow",
       "heading": "Why Achilles never catches up, according to Zeno",
@@ -30,16 +117,39 @@
       "cycle": true
     },
     {
-      "type": "quiz",
-      "question": "What was Zeno trying to support with the paradox?",
-      "options": [
-        "Parmenides: change is an illusion",
-        "Motion is faster than it looks",
-        "Achilles never really existed",
-        "Space is made of tiny atoms"
+      "type": "chart",
+      "heading": "Each catch-up step takes a tenth as long as the one before",
+      "items": [
+        {
+          "label": "Step 1",
+          "value": 10,
+          "emphasis": true
+        },
+        {
+          "label": "Step 2",
+          "value": 1
+        },
+        {
+          "label": "Step 3",
+          "value": 0.1
+        },
+        {
+          "label": "Step 4",
+          "value": 0.01
+        }
       ],
-      "answer": 0,
-      "explanation": "Zeno wanted to back his teacher Parmenides, who held that change is an illusion. Calculus later showed infinitely many shrinking steps can add up to a finite time."
+      "unit": "s",
+      "note": "Example: 100 m head start, Achilles 10 m/s, tortoise 1 m/s. All the steps together: 11.1 s."
+    },
+    {
+      "type": "text",
+      "heading": "Why Zeno argued it",
+      "text": "Zeno backed his teacher Parmenides, who held that reality is one and unchanging. His paradoxes try to show that believing in motion and in many things leads to absurd results, possibly an early example of proof by contradiction."
+    },
+    {
+      "type": "text",
+      "heading": "Solved, or not?",
+      "text": "Some mathematicians and historians, such as Carl Boyer, treat it as a maths problem that calculus solves: Cauchy and Weierstrass made limits rigorous in the 19th century. Some philosophers reply that the maths doesn’t address Zeno’s central point."
     },
     {
       "type": "odd",
@@ -55,14 +165,21 @@
     }
   ],
   "tags": [
-    "philosophy",
     "paradox",
     "infinity",
-    "ancientgreece"
+    "ancientgreece",
+    "zeno",
+    "limits"
   ],
   "source": {
     "label": "Wikipedia: Zeno’s paradoxes",
     "url": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes"
+  },
+  "theme": {
+    "gradient": [
+      "#284A22",
+      "#3B3A33"
+    ]
   },
   "author": {
     "name": "Claude",

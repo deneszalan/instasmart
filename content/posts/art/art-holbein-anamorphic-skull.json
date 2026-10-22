@@ -1,0 +1,145 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-holbein-anamorphic-skull",
+  "field": "art",
+  "title": "Holbein painted a skull you can only see from a sharp angle",
+  "emoji": "💀",
+  "body": "Across the floor of Hans Holbein the Younger’s *The Ambassadors* (1533), now in the National Gallery in London, lies a long grey smear. It is a skull painted in anamorphic perspective: stretched so far in one direction that it only looks right when you view the painting from high on the right or low on the left, where the sharp angle squeezes it back into shape. It is evidently a memento mori, a reminder of death, but why Holbein gave it such prominence is unclear.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "skull.mp4",
+      "poster": "skull.jpg",
+      "alt": "Animation on green damask: a diagram of The Ambassadors with a grey smear across the floor. A skull drawn in code is stretched five times into a smear, then the panel turns until it is seen at about 12 degrees and the skull reappears. Eyes high on the right and low on the left see it whole.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Sinfonia Number 5” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.67
+        },
+        {
+          "start": 6.8,
+          "end": 12.27
+        },
+        {
+          "start": 12.4,
+          "end": 17.73
+        },
+        {
+          "start": 17.87,
+          "end": 23.47
+        },
+        {
+          "start": 23.6,
+          "end": 28.8
+        },
+        {
+          "start": 28.93,
+          "end": 34.93
+        },
+        {
+          "start": 35.07,
+          "end": 40.8
+        },
+        {
+          "start": 40.93,
+          "end": 46.4
+        },
+        {
+          "start": 46.53,
+          "end": 54.27
+        },
+        {
+          "start": 54.4,
+          "end": 60.13
+        },
+        {
+          "start": 60.27,
+          "end": 65.07
+        },
+        {
+          "start": 65.2,
+          "end": 71.47
+        },
+        {
+          "start": 71.6,
+          "end": 78.67
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg/1280px-Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg",
+      "alt": "Holbein’s The Ambassadors: two richly dressed men stand either side of a two-shelf table of globes, instruments, books and a lute, in front of a green curtain; a long pale diagonal shape crosses the floor at their feet.",
+      "caption": "The Ambassadors, 1533: Jean de Dinteville (left) and Georges de Selve. Oil on oak, 207 × 209.5 cm.",
+      "fit": "contain",
+      "credit": "Hans Holbein the Younger · National Gallery, London · Public domain"
+    },
+    {
+      "type": "image",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Holbein_Skull.jpg/1280px-Holbein_Skull.jpg",
+      "alt": "The smear from The Ambassadors photographed from a sharp angle, where it resolves into a human skull.",
+      "caption": "Seen from a sharp angle, the smear becomes a skull.",
+      "fit": "contain",
+      "credit": "Hans Holbein the Younger, photo by Thomas Shahan · Public domain"
+    },
+    {
+      "type": "text",
+      "heading": "Why the trick works",
+      "text": "Stretching a picture in one direction is a simple geometric transformation. Looking at it from a grazing angle squashes that same direction, so the two cancel out. From the front, all you see is the stretch."
+    },
+    {
+      "type": "text",
+      "heading": "Two guesses",
+      "text": "It may have hung by a doorway or stairs, so that people passing would suddenly see the skull, but no such spot is known at Dinteville’s château. Edgar Samuel suggested viewing it through a glass tube: reasonable, but unproved."
+    },
+    {
+      "type": "text",
+      "heading": "More to find",
+      "text": "The shelves hold globes, a sundial and other instruments, a lute with a broken string, a symbol of discord, and a hymnal by Martin Luther. A crucifix is half hidden behind the curtain at top left."
+    },
+    {
+      "type": "scramble",
+      "clue": "A distorted image that looks right only from one particular viewpoint",
+      "answer": "ANAMORPHOSIS",
+      "detail": "From the Greek ana-, ‘back’ or ‘again’, and morphe, ‘shape’. Holbein’s skull is one of the best-known examples in painting."
+    },
+    {
+      "type": "quiz",
+      "question": "Where must you stand to see Holbein’s smear as a skull?",
+      "options": [
+        "High on the right or low on the left",
+        "Straight in front, far away",
+        "Directly below the painting",
+        "Only in a curved mirror"
+      ],
+      "answer": 0,
+      "explanation": "The viewer must approach the painting from high on the right side, or low on the left side. Some scholars think a glass tube was used instead."
+    }
+  ],
+  "tags": [
+    "painting",
+    "renaissance",
+    "anamorphosis",
+    "holbein",
+    "optics"
+  ],
+  "source": {
+    "label": "Wikipedia: The Ambassadors (Holbein)",
+    "url": "https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)"
+  },
+  "theme": {
+    "gradient": [
+      "#12301F",
+      "#5C4720"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}
