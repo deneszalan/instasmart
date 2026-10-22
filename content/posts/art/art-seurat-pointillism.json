@@ -27,44 +27,44 @@
       "music": "“Evening” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "start": 0.5,
-          "end": 4.3
+          "start": 0.67,
+          "end": 5.73
         },
         {
-          "start": 4.4,
-          "end": 8.9
+          "start": 5.87,
+          "end": 11.87
         },
         {
-          "start": 9,
-          "end": 14.4
+          "start": 12,
+          "end": 19.2
         },
         {
-          "start": 14.5,
-          "end": 18.2
+          "start": 19.33,
+          "end": 24.27
         },
         {
-          "start": 18.3,
-          "end": 22.4
+          "start": 24.4,
+          "end": 29.87
         },
         {
-          "start": 22.5,
-          "end": 26.6
+          "start": 30,
+          "end": 35.47
         },
         {
-          "start": 26.7,
-          "end": 32.2
+          "start": 35.6,
+          "end": 42.93
         },
         {
-          "start": 32.3,
-          "end": 37
+          "start": 43.07,
+          "end": 49.33
         },
         {
-          "start": 37.1,
-          "end": 42.2
+          "start": 49.47,
+          "end": 56.27
         },
         {
-          "start": 42.3,
-          "end": 47.6
+          "start": 56.4,
+          "end": 63.47
         }
       ]
     },
