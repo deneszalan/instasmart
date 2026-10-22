@@ -1237,7 +1237,7 @@ function partAttack(t) {
     });
     A(seg(t, mid('h8', 0.4), mid('h8', 0.6)), () => {
       font(500, 44); text('one particular', 700, 680, { color: C.inkSoft, align: 'right' }); text('fingerprint', 700, 732, { color: C.inkSoft, align: 'right' });
-      font(600, 60); text('≈ 9,223,372,036,854,775,808', 740, 704, { color: C.skyDeep });
+      font(600, 60); text('≈ 12,800,000,000,000,000,000', 740, 704, { color: C.skyDeep });
     });
     A(seg(t, s('h7', 0.4), s('h7', 0.9)), () => { font(500, 34); text('tries for an even chance, with 64-bit fingerprints', 960, 860, { color: C.inkFaint, align: 'center' }); });
   });

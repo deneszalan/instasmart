@@ -30,7 +30,7 @@
 //   the least common (other than February 29).
 // Computed here (numbers.mjs, sim.mjs): q(22) = 5.9%; 46 guests make 1,035 pairs; p passes 99% at 57; with
 // 181 equally likely days (January–June) 17 guests give 53.9%; with a million days, 1,178 people; √506 = 22.49;
-// 1.1774 × √365 = 22.49; 2^63 ≈ 9.2 × 10^18; 2^128 has 39 digits. Simulations (seeded mulberry32, see sim.mjs):
+// 1.1774 × √365 = 22.49; one particular 64-bit fingerprint: ln 2 × 2^64 ≈ 1.28 × 10^19 (as 253 = ln 2 × 365); 2^128 has 39 digits. Simulations (seeded mulberry32, see sim.mjs):
 // the demo party (seed 35: guest 20 matches guest 7 on November 19); 1,000 rooms (seed 2026: 511 matched by
 // guest 23, mean 24.68, min 3, 6 rooms past 60, first rooms 28, 33, 18); 253 birthdays (seed 253: 180 days).
 import { rooms, demo, crowd } from './sim.mjs';
@@ -136,7 +136,7 @@ export const LINES = [
   { key: 'h5', gap: 0.8, text: 'Fingerprints are like birthdays, in a year with an enormous number of days.' },
   { key: 'h6', text: 'So collisions show up after about the square root of that number: 2 to the power of half the bits.', say: 'So collisions show up after about the square root of that number. That’s 2 to the power of half the number of bits.' },
   { key: 'h7', text: 'For 64 bits, about *5 billion* tries give an even chance of a collision.' },
-  { key: 'h8', text: 'Matching one particular fingerprint, like matching your own birthday, takes about 9 billion billion tries.' },
+  { key: 'h8', text: 'Matching one particular fingerprint, like matching your own birthday, takes about 13 billion billion tries.' },
   { key: 'h9', gap: 0.8, text: 'That’s the idea behind the *birthday attack*. Imagine a forger with a fair contract and a fraudulent one.' },
   { key: 'h10', text: 'She makes many harmless variations of each: an extra comma, a double space, a synonym.' },
   { key: 'h11', text: 'When a fair version and a fraudulent version share a fingerprint, she has her collision.' },

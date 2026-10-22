@@ -124,7 +124,7 @@ export const LINES = [
   { key: 'h6', who: 'B', text: 'So collisions show up after about the square root of that number: 2 to the power of half the bits.', say: 'So collisions show up after about the square root of that number. That’s 2 to the power of half the number of bits.' },
   { key: 'h7', who: 'A', text: 'For 64 bits, about *5 billion* tries give an even chance of a collision.', say: 'For sixty-four bits, about five billion tries give an even chance of a collision.' },
   { key: 'x25', who: 'B', gap: 0.3, text: 'And to match one particular fingerprint?' },
-  { key: 'h8', who: 'A', text: 'That’s like matching your own birthday: it takes about 9 billion billion tries.', say: 'That’s like matching your own birthday: it takes about nine billion billion tries.' },
+  { key: 'h8', who: 'A', text: 'That’s like matching your own birthday: it takes about 13 billion billion tries.', say: 'That’s like matching your own birthday: it takes about thirteen billion billion tries.' },
   { key: 'h9', who: 'B', gap: 0.8, text: 'That’s the idea behind the *birthday attack*. Imagine a forger with a fair contract and a fraudulent one.' },
   { key: 'h10', who: 'A', text: 'She makes many harmless variations of each: an extra comma, a double space, a synonym.' },
   { key: 'h11', who: 'B', text: 'When a fair version and a fraudulent version share a fingerprint, she has her collision.' },

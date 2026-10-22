@@ -7,7 +7,7 @@ dialogue's timing changes, re-check a few stills, `bash render-video.sh <slug>`,
 
 | # | Slug | Short post | Voice | Dialogue cast | State |
 |---|---|---|---|---|---|
-| 1 | birthday | math-birthday-problem | af_bella | A=m2 B=af_bella | written (10:15, dialogue 12:24); rendering, dialogue m2 recording |
+| 1 | birthday | math-birthday-problem | af_bella | A=m2 B=af_bella | written (10:15, dialogue 12:24); finalize.sh running |
 | 2 | eratosthenes | history-eratosthenes-earth-circumference | m1 | A=m1 B=af_bella | writing |
 | 3 | four-stroke | engineering-four-stroke-engine | m2 | A=m2 B=af_heart | paused: scene drafted, recording |
 | 4 | sky-blue | physics-why-the-sky-is-blue | af_heart | A=m1 B=af_heart | paused: scene drafted |
@@ -17,3 +17,6 @@ dialogue's timing changes, re-check a few stills, `bash render-video.sh <slug>`,
 | 8 | enigma | tech-enigma-never-itself | m2 | A=m2 B=af_nicole | not started |
 | 9 | mendel | biology-mendel-pea-ratios | af_bella | A=m1 B=af_bella | not started |
 | 10 | zeno | philosophy-zeno-achilles-tortoise | af_heart | A=m2 B=af_heart | not started |
+
+`finalize.sh <slug> <voice> <A> <B>` does the central part for both versions (record, re-time music, check stills, render);
+run it detached and wait for `<slug>/finalize.done` (or `.failed`, see `finalize.log`).

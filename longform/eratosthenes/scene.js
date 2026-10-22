@@ -987,7 +987,7 @@ function txtSteps(t, X, steps) {
     A(a, () => {
       const y = 260 + i * 120;
       ctx.fillStyle = C.ink; ctx.beginPath(); ctx.arc(X + 30, y, 30, 0, TAU); ctx.fill();
-      txt(String(i + 1), X + 30, y + 2, { size: 36, family: DISPLAY, weight: 700, color: C.glazeText, align: 'center' });
+      txt(String(i + 1), X + 30, y + 1, { size: 36, weight: 800, color: C.glazeText, align: 'center' });
       txt(str, X + 84 + (1 - a) * 14, y, { size: 42, weight: 700 });
     });
   });
@@ -1152,7 +1152,7 @@ function twoNumbers(t) {
     txt('divides evenly by', 140, 480, { size: 40, weight: 700, color: C.inkSoft });
     for (let i = 0; i < 10; i++) {
       const x = 560 + i * 120;
-      txt(String(i + 1), x, 480, { size: 52, family: DISPLAY, weight: 700, align: 'center' });
+      txt(String(i + 1), x, 480, { size: 52, weight: 800, align: 'center' });
       const p = seg(t, mid('c10', 0.1 + i * 0.07), mid('c10', 0.1 + i * 0.07) + 0.4);
       mark(d2[i], x, 590, 52, p);
       const q = seg(t, mid('c10', 0.75 + i * 0.02), mid('c10', 0.75 + i * 0.02) + 0.4);
@@ -1167,10 +1167,10 @@ function twoNumbers(t) {
   });
   // two explanations
   const h1 = eout(seg(t, s('c12', 0.2), s('c12', 1.0))), h2 = eout(seg(t, s('c13', 0.2), s('c13', 1.0)));
-  A(h1, () => { panel(140, 470, 780, 330); txt('EASIER ARITHMETIC', 530, 560, { size: 46, family: DISPLAY, weight: 700, align: 'center', color: C.blueDeep }); txt('the figure adjusted', 530, 640, { size: 40, weight: 700, align: 'center' }); txt('so it divides neatly', 530, 700, { size: 40, weight: 700, align: 'center' }); });
-  A(h2, () => { panel(1000, 470, 780, 330); txt('A NEW STADION', 1390, 560, { size: 46, family: DISPLAY, weight: 700, align: 'center', color: C.blueDeep }); txt('a unit defined', 1390, 640, { size: 40, weight: 700, align: 'center' }); txt('from the Earth itself', 1390, 700, { size: 40, weight: 700, align: 'center' }); });
+  A(h1, () => { panel(140, 470, 780, 290); txt('EASIER ARITHMETIC', 530, 560, { size: 46, family: DISPLAY, weight: 700, align: 'center', color: C.blueDeep }); txt('the figure adjusted', 530, 640, { size: 40, weight: 700, align: 'center' }); txt('so it divides neatly', 530, 700, { size: 40, weight: 700, align: 'center' }); });
+  A(h2, () => { panel(1000, 470, 780, 290); txt('A NEW STADION', 1390, 560, { size: 46, family: DISPLAY, weight: 700, align: 'center', color: C.blueDeep }); txt('a unit defined', 1390, 640, { size: 40, weight: 700, align: 'center' }); txt('from the Earth itself', 1390, 700, { size: 40, weight: 700, align: 'center' }); });
   A(h2, () => txt('or', W / 2 + 0, 635, { size: 44, family: DISPLAY, weight: 700, align: 'center', color: C.inkSoft }));
-  A(span(t, s('c12', 0.2), DURATION, 0.5, 0.5), () => txt('HISTORIANS DISAGREE', W / 2, 880, { size: 40, weight: 800, align: 'center', color: C.inkSoft, spacing: '3px' }));
+  A(span(t, s('c12', 0.2), DURATION, 0.5, 0.5), () => txt('HISTORIANS DISAGREE', W / 2, 840, { size: 40, weight: 800, align: 'center', color: C.inkSoft, spacing: '3px' }));
 }
 
 // ---------- 7: how long is a stadion? ----------
@@ -1182,7 +1182,7 @@ function partStadion(t) {
     // a stadion: 600 feet
     const r1 = eout(seg(t, s('s1', 0.4), s('s1', 1.4)));
     A(r1, () => {
-      txt('1 STADION = 600 FEET', W / 2, 270, { size: 64, family: DISPLAY, weight: 700, align: 'center', spacing: '3px' });
+      txt('ONE STADION = 600 FEET', W / 2, 270, { size: 64, family: DISPLAY, weight: 700, align: 'center', spacing: '3px' });
       const x0 = 260, x1 = 1660, y = 380;
       for (let i = 0; i < 6; i++) { ctx.fillStyle = i % 2 ? C.ink : C.terra; ctx.fillRect(lerp(x0, x1, i / 6), y, (x1 - x0) / 6 * eout(clamp(r1 * 6 - i)), 30); }
       ctx.strokeStyle = C.ink; ctx.lineWidth = 3; ctx.strokeRect(x0, y, x1 - x0, 30);
@@ -1207,8 +1207,8 @@ function partStadion(t) {
   A(scale, () => {
     // the km axis
     line(KM.x0, KM.y, KM.x1, KM.y, 1, { width: 4 });
-    for (let v = 36000; v <= 54000; v += 2000) { const x = kmX(v); line(x, KM.y - 10, x, KM.y + 10, 1, { width: 3 }); txt(`${v / 1000}k`, x, KM.y + 44, { size: 34, weight: 700, align: 'center', color: C.inkSoft }); }
-    txt('km around the Earth', KM.x1, KM.y + 96, { size: 34, weight: 700, align: 'right', color: C.inkSoft });
+    for (let v = 36000; v <= 54000; v += 2000) { const x = kmX(v); line(x, KM.y - 10, x, KM.y + 10, 1, { width: 3 }); if (v % 4000 === 0) txt(fmt(v), x, KM.y + 44, { size: 34, weight: 700, align: 'center', color: C.inkSoft }); }
+    txt('km', KM.x1 + 34, KM.y, { size: 36, weight: 800, color: C.inkSoft });
     // the real Earth
     const re = eout(seg(t, s('s4', 0.4), s('s4', 1.2)));
     A(re, () => {
@@ -1220,14 +1220,14 @@ function partStadion(t) {
     A(band, () => {
       const x0 = kmX(km(TOTAL, STAD.lo)), x1 = lerp(x0, kmX(km(TOTAL, STAD.hi)), band);
       rrect(x0, KM.y - 70, x1 - x0, 44, 10); ctx.fillStyle = 'rgba(180,83,42,0.28)'; ctx.fill(); ctx.strokeStyle = C.terraDeep; ctx.lineWidth = 2.5; ctx.stroke();
-      txt(`250,000 stadia × ${STAD.lo}–${STAD.hi} m`, x0, KM.y - 106, { size: 36, weight: 800, color: C.terraDeep });
+      txt(`250,000 stadia × ${STAD.lo}–${STAD.hi} m`, kmX(km(TOTAL, STAD.hi)), KM.y - 104, { size: 36, weight: 800, color: C.terraDeep, align: 'right' });
     });
     const pin = (v, lab, sub, y, a, color = C.ink) => A(a, () => {
       const x = kmX(v);
       line(x, KM.y - 22, x, y + 26, 1, { color, width: 3 });
       ctx.fillStyle = color; ctx.beginPath(); ctx.arc(x, KM.y - 22, 8, 0, TAU); ctx.fill();
       chip(lab, x, y, { size: 40, family: DISPLAY, color });
-      txt(sub, x, y + 56, { size: 34, weight: 700, align: 'center', color: C.inkSoft });
+      txt(sub, x + textW(lab, { size: 40, family: DISPLAY }) / 2 + 30, y, { size: 36, weight: 700, color: C.inkSoft });
     });
     const k1 = km(TOTAL, STAD.olympic), k2 = km(TOTAL, STAD.italian);
     pin(k1, signed(pct(k1)), `${STAD.olympic} m · ${fmt(k1)} km`, 420, eout(seg(t, s('s6', 0.3), s('s6', 1.0))));
@@ -1467,7 +1467,7 @@ function recap(t) {
   });
   A(eout(seg(t, s('z6', 0.3), s('z6', 1.1))), () => txt('The idea was right.', X, 820, { size: 64, family: DISPLAY, weight: 700, color: C.terraDeep }));
   A(eout(seg(t, s('z7', 0.2), s('z7', 1.0))), () => {
-    ctx.fillStyle = 'rgba(235,217,175,0.86)'; ctx.fillRect(0, 160, W, 790);
+    ctx.fillStyle = 'rgba(236,219,178,0.96)'; ctx.fillRect(0, 150, W, 810);
     txt('Β', W / 2, 500, { size: 300, weight: 800, align: 'center', color: C.terraDeep });
     txt('NOT BAD FOR “BETA”', W / 2, 720, { size: 64, family: DISPLAY, weight: 700, align: 'center', spacing: '6px' });
   });
