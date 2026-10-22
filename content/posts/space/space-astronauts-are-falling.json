@@ -4,7 +4,7 @@
   "field": "space",
   "title": "Astronauts float because they’re falling, not because gravity is gone",
   "emoji": "🚀",
-  "body": "Gravity is everywhere in space; it is what keeps the Moon and every satellite in orbit. Astronauts on the International Space Station feel weightless because they and the station are falling together, all the time. With nothing pushing back on them, there is no sensation of weight. The trick is that the station also moves sideways so fast that, as it falls, Earth’s curved surface keeps dropping away beneath it.",
+  "body": "Gravity doesn’t switch off in orbit: at the height of the International Space Station it is still about **90%** as strong as on the ground. Astronauts feel weightless because they and the station are falling together, all the time, so nothing pushes back on them. The station also moves sideways at about 7.7 km per second, so fast that as it falls, Earth’s curved surface keeps dropping away beneath it. Isaac Newton described the idea with an imaginary cannon on a mountain.",
   "slides": [
     {
       "type": "estimate",
@@ -17,22 +17,86 @@
       "explanation": "Roughly 90%. Height alone barely weakens gravity. Astronauts float because they and the station are falling together, moving sideways so fast that Earth keeps curving away beneath them."
     },
     {
-      "type": "pictogram",
-      "heading": "400 km up, where the ISS flies, gravity is still roughly 90% as strong as on the ground",
-      "icon": "🧑‍🚀",
-      "total": 10,
-      "count": 9,
-      "note": "Height alone barely weakens gravity: the crew floats because station and crew fall together"
+      "type": "video",
+      "src": "falling-around.mp4",
+      "poster": "falling-around.jpg",
+      "alt": "A copperplate-style engraving: a cannon on a mountain fires balls ever faster, each landing farther around the Earth, until one circles the planet. It becomes a modern diagram of the ISS orbiting 400 km up, where gravity is still about 90%, with a crew falling along with the station.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Cello Suite #1 in G - Prelude” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.27,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.93
+        },
+        {
+          "start": 19.07,
+          "end": 25.33
+        },
+        {
+          "start": 25.47,
+          "end": 32.8
+        },
+        {
+          "start": 32.93,
+          "end": 39.2
+        },
+        {
+          "start": 40.53,
+          "end": 46.4
+        },
+        {
+          "start": 46.53,
+          "end": 52.8
+        },
+        {
+          "start": 52.93,
+          "end": 59.47
+        },
+        {
+          "start": 59.73,
+          "end": 67.2
+        },
+        {
+          "start": 67.33,
+          "end": 73.6
+        },
+        {
+          "start": 73.73,
+          "end": 80.8
+        }
+      ]
     },
     {
       "type": "text",
-      "heading": "Falling around Earth",
-      "text": "The ISS moves at about 7.7 km per second, roughly 27,000 km/h. That sideways speed turns endless falling into a circle around the planet."
+      "heading": "Newton’s cannon",
+      "text": "In an early draft of his *Principia*, published in 1728, Isaac Newton imagined firing a stone from a high mountain with no air in the way. Too slow, and it falls back to Earth. At just the right speed, it circles the planet and comes back to the mountain. [More](https://en.wikipedia.org/wiki/Newton%27s_cannonball)"
+    },
+    {
+      "type": "compare",
+      "heading": "Why the crew floats",
+      "left": {
+        "label": "Myth",
+        "text": "There’s no gravity in space, so astronauts drift around."
+      },
+      "right": {
+        "label": "Fact",
+        "text": "Gravity keeps the ISS in orbit. Crew and station fall together, so nothing presses on the crew."
+      }
     },
     {
       "type": "text",
-      "heading": "16 sunrises a day",
-      "text": "One lap takes about 93 minutes, or around 15.5 orbits a day, so the crew sees about 16 sunrises and 16 sunsets every 24 hours."
+      "heading": "Faster still",
+      "text": "Fire faster than the speed that makes a circle, and the path stretches into an ellipse. At escape velocity or above, the ball never comes back at all."
     },
     {
       "type": "match",
@@ -56,6 +120,11 @@
         }
       ],
       "explanation": "At 7.7 km/s the station laps Earth every 93 minutes, about 15.5 times a day, so the crew sees roughly 16 sunrises."
+    },
+    {
+      "type": "text",
+      "heading": "16 sunrises a day",
+      "text": "One lap takes about 93 minutes, or around 15.5 orbits a day, so the crew sees about 16 sunrises and 16 sunsets every 24 hours. They cover the windows when it is time to sleep."
     }
   ],
   "tags": [
@@ -65,8 +134,14 @@
     "mythbusting"
   ],
   "source": {
-    "label": "Wikipedia: Weightlessness",
-    "url": "https://en.wikipedia.org/wiki/Weightlessness"
+    "label": "Wikipedia: International Space Station",
+    "url": "https://en.wikipedia.org/wiki/International_Space_Station"
+  },
+  "theme": {
+    "gradient": [
+      "#3A2A14",
+      "#12345A"
+    ]
   },
   "author": {
     "name": "Claude",

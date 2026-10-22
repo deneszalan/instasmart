@@ -4,65 +4,120 @@
   "field": "art",
   "title": "A peephole and a mirror taught the Renaissance to paint depth",
   "emoji": "🪞",
-  "body": "Painters had long shown distant things smaller, but without a consistent system. Around 1415–1420, the Florentine architect Filippo Brunelleschi, later famous for the dome of Florence Cathedral, demonstrated geometric linear perspective, in which parallel lines receding from the viewer meet at a single vanishing point. Within a few years, artists across Florence, from Masaccio to Donatello, were using it.",
+  "body": "Painters had long shown distant things smaller, but without a consistent system. Between about 1415 and 1420, the Florentine architect Filippo Brunelleschi, later famous for the dome of Florence Cathedral, showed how to do it exactly: lines running straight away from the viewer all meet at one vanishing point on the horizon. He tested it with a painted panel, a peephole and a mirror, and soon artists such as Masaccio and Donatello were using his method.",
   "slides": [
+    {
+      "type": "video",
+      "src": "perspective.mp4",
+      "poster": "perspective.jpg",
+      "alt": "Animation in fresco colours: a side-view diagram shows an eye behind a painted panel, looking through a hole at the Florence Baptistery, then at the painting in a raised mirror. Then a tiled floor is built: a horizon, a vanishing point, lines running to it, rows crowding closer.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Village Consort” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.53,
+          "end": 11.73
+        },
+        {
+          "start": 11.87,
+          "end": 18.8
+        },
+        {
+          "start": 18.93,
+          "end": 24.67
+        },
+        {
+          "start": 24.8,
+          "end": 31.2
+        },
+        {
+          "start": 31.33,
+          "end": 37.6
+        },
+        {
+          "start": 37.73,
+          "end": 43.47
+        },
+        {
+          "start": 43.6,
+          "end": 49.07
+        },
+        {
+          "start": 49.2,
+          "end": 54.67
+        },
+        {
+          "start": 54.8,
+          "end": 60
+        },
+        {
+          "start": 60.13,
+          "end": 65.87
+        },
+        {
+          "start": 66,
+          "end": 71.73
+        },
+        {
+          "start": 71.87,
+          "end": 78.13
+        }
+      ]
+    },
     {
       "type": "text",
       "heading": "The painted panel",
-      "text": "Brunelleschi painted Florence’s Baptistery in perspective on a small panel, then made a hole through it at the vanishing point."
+      "text": "Brunelleschi painted the Baptistery as seen from the doorway of Florence Cathedral, then made a small hole through the panel. You looked through it from behind; a raised mirror swapped the real view for the painted one."
     },
     {
-      "type": "text",
-      "heading": "The mirror test",
-      "text": "Viewers looked through the hole from behind at a mirror reflecting the painting. Moving the mirror aside revealed the real building, so the two could be compared."
-    },
-    {
-      "type": "flow",
-      "heading": "Brunelleschi’s demonstration",
-      "steps": [
+      "type": "timeline",
+      "heading": "How perspective spread",
+      "events": [
         {
-          "icon": "🎨",
-          "label": "Paint the Baptistery in perspective"
+          "when": "1415–20",
+          "text": "Brunelleschi’s experiments in Florence"
         },
         {
-          "icon": "🕳️",
-          "label": "Pierce a hole at the vanishing point"
+          "when": "c. 1423",
+          "text": "Masolino: earliest surviving consistent vanishing point"
         },
         {
-          "icon": "👁️",
-          "label": "Look through the hole at a mirror"
+          "when": "c. 1427",
+          "text": "Masaccio’s Holy Trinity, at eye level"
         },
         {
-          "icon": "🪞",
-          "label": "The mirror shows the painted view"
-        },
-        {
-          "icon": "🏛️",
-          "label": "Slide the mirror away: the real building"
+          "when": "c. 1435",
+          "text": "Alberti explains it in De pictura"
         }
       ]
     },
     {
       "type": "text",
       "heading": "Writing the rules",
-      "text": "Masaccio’s Holy Trinity fresco of the 1420s set the vanishing point at the viewer’s eye level, and Leon Battista Alberti explained the method in 1435."
+      "text": "Brunelleschi probably understood the mathematics but never published it. His friend Leon Battista Alberti did, in De pictura: rays from the eye cross the picture, and similar triangles give how tall a distant thing should look."
     },
     {
       "type": "text",
       "heading": "The lost proof",
-      "text": "The panel itself is lost. We know the experiment mainly from his biographer Antonio Manetti, so exactly how it worked is still debated."
+      "text": "The panel itself is lost, and no other perspective painting by Brunelleschi is known. We know the experiment mainly from his biographer Antonio Manetti, so exactly how it worked is still debated."
     },
     {
-      "type": "quiz",
-      "question": "Where did Brunelleschi make the hole in his painted panel?",
-      "options": [
-        "At the vanishing point",
-        "At the top edge, for hanging",
-        "Where the Baptistery door was",
-        "At the viewer’s feet"
+      "type": "odd",
+      "heading": "Which of these did Brunelleschi not do?",
+      "items": [
+        "Design Florence Cathedral’s dome",
+        "Paint the Baptistery in perspective",
+        "Get a patent in 1421",
+        "Write the treatise De pictura"
       ],
-      "answer": 0,
-      "explanation": "He pierced the panel at the vanishing point. Viewers looked through the hole from behind at a mirror reflecting the painting, then moved the mirror aside to compare it with the real building."
+      "answer": 3,
+      "explanation": "Leon Battista Alberti wrote De pictura, about 1435, and credited the discovery to Brunelleschi. Brunelleschi designed the dome, received a patent in 1421 and made the perspective panels."
     },
     {
       "type": "match",
@@ -78,25 +133,32 @@
         },
         {
           "left": "Alberti",
-          "right": "Wrote the method down, 1435"
+          "right": "Wrote the method down"
         },
         {
           "left": "Manetti",
           "right": "Brunelleschi’s biographer"
         }
       ],
-      "explanation": "Brunelleschi demonstrated linear perspective around 1415–1420, Masaccio painted it in the 1420s, Alberti explained it in 1435, and Manetti told the story."
+      "explanation": "Brunelleschi demonstrated perspective around 1415–1420, Masaccio painted it in the 1420s, Alberti explained it about 1435, and Manetti told the story."
     }
   ],
   "tags": [
     "art",
     "renaissance",
     "perspective",
-    "painting"
+    "painting",
+    "florence"
   ],
   "source": {
     "label": "Wikipedia: Perspective (graphical)",
     "url": "https://en.wikipedia.org/wiki/Perspective_(graphical)"
+  },
+  "theme": {
+    "gradient": [
+      "#8E3A1C",
+      "#2F557D"
+    ]
   },
   "author": {
     "name": "Claude",

@@ -81,15 +81,17 @@
 
   /**
    * Set up a scene: canvas size, length in seconds, fonts from explainers/fonts/, and
-   * draw(t, k), where k holds the drawing tools above.
+   * draw(t, k), where k holds the drawing tools above. Times (duration, t, caption cues) are
+   * scene seconds; the clip plays them at `pace`, so at 0.75 each scene second lasts 1.33 s.
    */
-  function scene({ width = 864, height = 1080, duration, fonts = [], draw }) {
+  function scene({ width = 864, height = 1080, duration, pace = 0.75, fonts = [], draw }) {
     const cv = document.getElementById('c');
     cv.width = width;
     cv.height = height;
     const ctx = cv.getContext('2d');
     const k = tools(ctx);
     window.DURATION = duration;
+    window.PACE = pace;
     window.render = (t) => { ctx.save(); draw(t, k); ctx.restore(); };
     const loads = fonts.map(({ family, file, weight = '100 900' }) =>
       new FontFace(family, `url(fonts/${file})`, { weight }).load().then((f) => document.fonts.add(f)));

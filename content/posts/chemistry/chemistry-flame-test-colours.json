@@ -1,0 +1,155 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-flame-test-colours",
+  "field": "chemistry",
+  "title": "Many metals paint a flame their own colour, and fireworks use the trick",
+  "emoji": "🔥",
+  "body": "Hold a metal salt in a hot, almost colourless flame and the heat kicks electrons up to higher energy levels. When they fall back, each drop gives out light of one exact energy, and so one exact colour. Every element has its own levels, so its own colours: sodium glows bright yellow at about **589 nm**, lithium carmine red, strontium crimson to scarlet, copper blue-green and potassium lilac. Fireworks get their colours from the same kinds of metal salts.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "flame-test-explainer.mp4",
+      "poster": "flame-test-explainer.jpg",
+      "alt": "Animation in a dark lab: a wire dipped in table salt turns a blue Bunsen flame bright yellow. An energy-level diagram shows an electron kicked up by heat falling back and giving yellow light at 589 nm, a single line on a spectrum strip. Other metals colour the flame, then fireworks burst.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Silver Flame” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 5.87
+        },
+        {
+          "start": 6,
+          "end": 10.93
+        },
+        {
+          "start": 11.07,
+          "end": 16
+        },
+        {
+          "start": 16.4,
+          "end": 22.93
+        },
+        {
+          "start": 23.07,
+          "end": 30
+        },
+        {
+          "start": 30.13,
+          "end": 36.27
+        },
+        {
+          "start": 36.53,
+          "end": 42.67
+        },
+        {
+          "start": 42.8,
+          "end": 49.87
+        },
+        {
+          "start": 50.13,
+          "end": 55.47
+        },
+        {
+          "start": 55.6,
+          "end": 61.47
+        },
+        {
+          "start": 61.6,
+          "end": 67.47
+        },
+        {
+          "start": 67.87,
+          "end": 75.07
+        },
+        {
+          "start": 75.2,
+          "end": 81.6
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Colours as fingerprints",
+      "text": "A prism spreads white light into a full rainbow. The light of a heated element is different: a set of sharp lines, at wavelengths set by its energy levels. Every element's pattern is unique."
+    },
+    {
+      "type": "match",
+      "heading": "Match the metal to its flame",
+      "pairs": [
+        {
+          "left": "Sodium",
+          "right": "Bright yellow"
+        },
+        {
+          "left": "Copper",
+          "right": "Blue-green"
+        },
+        {
+          "left": "Potassium",
+          "right": "Lilac"
+        },
+        {
+          "left": "Strontium",
+          "right": "Crimson to scarlet"
+        }
+      ],
+      "explanation": "Lithium is red too, a carmine red. Shades shift with the flame's temperature, the oxygen it gets and the other chemicals present."
+    },
+    {
+      "type": "text",
+      "heading": "Two elements found by colour",
+      "text": "In 1860 Robert Bunsen and Gustav Kirchhoff saw unexpected sky-blue and dark red in the spectra of their samples. The colours led them to two new metals: caesium and rubidium."
+    },
+    {
+      "type": "odd",
+      "heading": "Which one gives a flame no colour of its own?",
+      "items": [
+        "Sodium",
+        "Copper",
+        "Gold",
+        "Strontium"
+      ],
+      "answer": 2,
+      "explanation": "Gold, like silver, platinum and palladium, gives no characteristic flame colour. Sodium, copper and strontium each colour a flame their own way."
+    },
+    {
+      "type": "text",
+      "heading": "Atoms and molecules",
+      "text": "Some flame colours, such as sodium's and lithium's, come straight from atoms. Others come from molecules the metal forms in the flame, which is why firework makers often add chlorine compounds to deepen a colour."
+    },
+    {
+      "type": "text",
+      "heading": "The hardest colour",
+      "text": "Blue is notoriously hard to make in fireworks: copper compounds must be heated to just the right temperature. A deep, rich blue is seen as the mark of an experienced fireworks maker."
+    },
+    {
+      "type": "text",
+      "heading": "A rough test",
+      "text": "Sodium turns up in many samples and its yellow drowns out other colours, so chemists look through cobalt blue glass to filter it out. The test is subjective, and today it's mostly a classroom demonstration."
+    }
+  ],
+  "tags": [
+    "flametest",
+    "spectroscopy",
+    "fireworks",
+    "elements"
+  ],
+  "source": {
+    "label": "Wikipedia: Flame test",
+    "url": "https://en.wikipedia.org/wiki/Flame_test"
+  },
+  "theme": {
+    "gradient": [
+      "#14151C",
+      "#4A3108"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

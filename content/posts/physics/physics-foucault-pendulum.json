@@ -44,56 +44,56 @@
       "music": "“Gymnopedie No. 1” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "start": 0.4,
-          "end": 4.8
+          "start": 0.53,
+          "end": 6.4
         },
         {
-          "start": 4.9,
-          "end": 9.8
+          "start": 6.53,
+          "end": 13.07
         },
         {
-          "start": 10,
-          "end": 13.6
-        },
-        {
-          "start": 13.8,
-          "end": 18.2
+          "start": 13.33,
+          "end": 18.13
         },
         {
           "start": 18.4,
-          "end": 21.4
+          "end": 24.27
         },
         {
-          "start": 21.6,
-          "end": 25.4
+          "start": 24.53,
+          "end": 28.53
         },
         {
-          "start": 25.6,
-          "end": 29.4
+          "start": 28.8,
+          "end": 33.87
         },
         {
-          "start": 29.6,
-          "end": 33.4
+          "start": 34.13,
+          "end": 39.2
         },
         {
-          "start": 33.6,
-          "end": 38.2
+          "start": 39.47,
+          "end": 44.53
         },
         {
-          "start": 38.5,
-          "end": 42
+          "start": 44.8,
+          "end": 50.93
         },
         {
-          "start": 42.2,
-          "end": 46.4
+          "start": 51.33,
+          "end": 56
         },
         {
-          "start": 46.6,
-          "end": 50.2
+          "start": 56.27,
+          "end": 61.87
         },
         {
-          "start": 50.6,
-          "end": 54.4
+          "start": 62.13,
+          "end": 66.93
+        },
+        {
+          "start": 67.47,
+          "end": 72.53
         }
       ]
     },

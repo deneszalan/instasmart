@@ -2,23 +2,89 @@
   "$schema": "../../schema/post.schema.json",
   "id": "psychology-spacing-effect",
   "field": "psychology",
-  "title": "Spacing out study sessions beats cramming, even for equal total time",
+  "title": "Spread over 3 days, 38 repetitions did the work of 68 crammed ones",
   "emoji": "📅",
-  "body": "The spacing effect, first documented by Hermann Ebbinghaus in 1885, is one of the most robust findings in memory research: material reviewed across several separate sessions is remembered much longer than the same amount of study packed into one. A likely reason is that each gap allows a little forgetting, and the effort of pulling the memory back up strengthens it more than an easy repeat would.",
+  "body": "In 1885 Hermann Ebbinghaus published experiments on his own memory: he learned lists of nonsense syllables and timed how fast he could relearn them later. He forgot fastest at first, about half within an hour and about two-thirds by the next day, and then the curve flattened out. He also found that **38 repetitions spread over three days** worked as well as **68 crammed into one day**. Today this is called the spacing effect: material studied in several separate sessions is remembered better than the same study massed together, one of memory research’s most robust findings.",
   "slides": [
     {
-      "type": "text",
-      "heading": "The forgetting curve",
-      "text": "Ebbinghaus memorised lists of nonsense syllables like ‘WID’ and ‘ZOF’ and retested himself. He forgot fastest soon after learning, then more slowly."
+      "type": "estimate",
+      "question": "Ebbinghaus crammed a list with 68 repetitions in one day. How many, spread over three days, worked just as well?",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "answer": 38,
+      "unit": "repetitions",
+      "explanation": "38 repetitions spread over the three preceding days had just as favourable an effect on relearning as 68 made the day before."
+    },
+    {
+      "type": "video",
+      "src": "spacing-notebook.mp4",
+      "poster": "spacing-notebook.jpg",
+      "alt": "Animation in a ruled notebook: a pencil draws Ebbinghaus’s forgetting curve, steep in the first hours and flat after a day. Then 68 tally marks crammed into one day sit beside 38 spread over three days, with the same result, and a sketch shows each review flattening the curve.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Wholesome” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 5.87
+        },
+        {
+          "start": 6.13,
+          "end": 13.6
+        },
+        {
+          "start": 13.87,
+          "end": 20.8
+        },
+        {
+          "start": 21.07,
+          "end": 28
+        },
+        {
+          "start": 28.27,
+          "end": 35.2
+        },
+        {
+          "start": 35.73,
+          "end": 42.4
+        },
+        {
+          "start": 42.67,
+          "end": 50.93
+        },
+        {
+          "start": 51.2,
+          "end": 58.13
+        },
+        {
+          "start": 58.4,
+          "end": 65.87
+        },
+        {
+          "start": 66.13,
+          "end": 73.33
+        },
+        {
+          "start": 73.6,
+          "end": 81.6
+        }
+      ]
     },
     {
       "type": "text",
-      "heading": "Each review buys time",
-      "text": "Every well-timed review makes the memory fade more slowly, so the next review can wait longer. Apps that schedule flashcards this way use spaced repetition."
+      "heading": "What “savings” means",
+      "text": "Ebbinghaus measured memory by relearning. If a list took a quarter as long to relearn as it first took to learn, his savings were 75%. Savings of 100% would mean nothing was forgotten."
+    },
+    {
+      "type": "quote",
+      "text": "With any considerable number of repetitions a suitable distribution of them over a space of time is decidedly more advantageous than the massing of them at a single time.",
+      "attribution": "Hermann Ebbinghaus, Memory (1885; English translation 1913)"
     },
     {
       "type": "flow",
-      "heading": "The spaced repetition loop",
+      "heading": "Why spaced reviews add up",
       "steps": [
         {
           "icon": "📖",
@@ -26,11 +92,11 @@
         },
         {
           "icon": "⏳",
-          "label": "Leave a gap: a little forgetting sets in"
+          "label": "Leave a gap: some of it fades"
         },
         {
           "icon": "🧠",
-          "label": "Review by pulling it back from memory"
+          "label": "Review it by recalling it"
         },
         {
           "icon": "📈",
@@ -44,36 +110,38 @@
       "cycle": true
     },
     {
-      "type": "text",
-      "heading": "Test, don’t reread",
-      "text": "Spacing works best with retrieval practice: trying to recall answers from memory, as with flashcards, beats simply rereading your notes."
-    },
-    {
       "type": "quiz",
-      "question": "Which review method works best with spacing?",
+      "question": "How did Ebbinghaus measure what he still remembered?",
       "options": [
-        "Trying to recall answers from memory",
-        "Rereading your notes",
-        "Copying notes out again"
+        "How much faster he could relearn",
+        "How many syllables he could write",
+        "How long he could recite them",
+        "How often he dreamed of them"
       ],
       "answer": 0,
-      "explanation": "Spacing works best with retrieval practice, as with flashcards: pulling the answer from memory beats rereading, and each well-timed review makes the memory fade more slowly."
+      "explanation": "He relearned each list and compared the time with the first learning. The time saved, his savings, showed how much of the list was still in memory."
     },
     {
-      "type": "scramble",
-      "clue": "Pulling an answer out of memory, as with flashcards: ___ practice, which beats rereading",
-      "answer": "RETRIEVAL",
-      "detail": "Spacing works best with retrieval practice: the effort of recalling strengthens the memory more than an easy repeat."
+      "type": "text",
+      "heading": "One man’s memory",
+      "text": "Ebbinghaus was the only subject in his own study, which limits how far it generalises. A 2015 attempt to replicate the forgetting curve, again with one subject, got results similar to his. [Read his chapter on repetition](https://psychclassics.yorku.ca/Ebbinghaus/memory8.htm)."
     }
   ],
   "tags": [
     "memory",
     "learning",
-    "studytips"
+    "studytips",
+    "ebbinghaus"
   ],
   "source": {
     "label": "Wikipedia: Spacing effect",
     "url": "https://en.wikipedia.org/wiki/Spacing_effect"
+  },
+  "theme": {
+    "gradient": [
+      "#1E2A44",
+      "#6B4A0E"
+    ]
   },
   "author": {
     "name": "Claude",

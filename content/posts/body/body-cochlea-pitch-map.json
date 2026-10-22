@@ -1,0 +1,155 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-cochlea-pitch-map",
+  "field": "body",
+  "title": "Inside your ear, each pitch shakes its own spot on a coiled membrane",
+  "emoji": "🐚",
+  "body": "The **cochlea**, the snail-shaped part of your inner ear, holds a long strip called the basilar membrane. It is narrow and stiff near its base, by the oval window where sound comes in, and wide and floppy at its far end, the apex. So high-pitched sounds shake it most near the base and low ones farther along, and the hair cells at each place excite their own nerve fibres. This place map is called tonotopy; Georg von Békésy won the 1961 Nobel Prize for his research on how the cochlea works.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Your cochlea is a coiled tube. Which part of it responds most to the highest-pitched sounds?",
+      "answer": "The base: the wide outer end, next to the middle ear",
+      "detail": "That is where the membrane inside is narrowest and stiffest. Lower pitches travel farther in, toward the tip of the coil."
+    },
+    {
+      "type": "video",
+      "src": "cochlea.mp4",
+      "poster": "cochlea.jpg",
+      "alt": "Animation on a pearly pink background: a seashell-like spiral, the cochlea, unrolls into a straight membrane. Waves roll along it; a high note peaks near the base, a low note near the far end, hair cells there light up, and a card names Georg von Békésy and his 1961 Nobel Prize.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Frost Waltz” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.67
+        },
+        {
+          "start": 6.8,
+          "end": 12.8
+        },
+        {
+          "start": 13.07,
+          "end": 19.2
+        },
+        {
+          "start": 19.33,
+          "end": 26.4
+        },
+        {
+          "start": 26.8,
+          "end": 33.73
+        },
+        {
+          "start": 33.87,
+          "end": 40.67
+        },
+        {
+          "start": 40.8,
+          "end": 47.73
+        },
+        {
+          "start": 48,
+          "end": 54.67
+        },
+        {
+          "start": 54.8,
+          "end": 61.87
+        },
+        {
+          "start": 62.4,
+          "end": 69.6
+        },
+        {
+          "start": 69.73,
+          "end": 75.73
+        },
+        {
+          "start": 75.87,
+          "end": 82.93
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "2¾ turns",
+      "label": "of coil in the human cochlea",
+      "text": "Its spiral canal is about 30 mm long. The basilar membrane inside is about 0.08–0.16 mm wide at the base and 0.42–0.65 mm at the apex."
+    },
+    {
+      "type": "rank",
+      "heading": "Who hears the highest pitches? Rank them, highest first",
+      "items": [
+        {
+          "label": "Some marine mammals",
+          "value": 200
+        },
+        {
+          "label": "Humans",
+          "value": 20
+        },
+        {
+          "label": "Barn owl",
+          "value": 11
+        },
+        {
+          "label": "Most birds",
+          "value": 5
+        }
+      ],
+      "unit": "kHz",
+      "note": "Upper limits: most birds top out at 4–5 kHz; the human range is commonly given as up to 20 kHz.",
+      "explanation": "Mammals’ long coiled cochleas have room for extra octaves, and their outer hair cells amplify sound, so their upper limit is often far above birds’."
+    },
+    {
+      "type": "text",
+      "heading": "Why a coil?",
+      "text": "Only mammals have a coiled cochlea, though the egg-laying monotremes don’t; birds have a short, straight tube. A long coil fits more membrane, and more octaves of hearing, into a small skull, and the coiling has been shown to boost low-frequency vibrations."
+    },
+    {
+      "type": "text",
+      "heading": "Living amplifiers",
+      "text": "Outer hair cells push back on the membrane and can boost the wave by up to 65 decibels in places. That lets you hear very faint sounds, and it means a healthy cochlea gives off faint sounds of its own, which hearing tests can pick up."
+    },
+    {
+      "type": "text",
+      "heading": "Still being worked out",
+      "text": "Békésy explained everything with passive mechanics: a wave rolling along the membrane. Later work showed that living hair cells actively shape the response, and researchers still debate exactly how much of the fine tuning comes from the membrane and how much from the cells."
+    },
+    {
+      "type": "quiz",
+      "question": "If hair cells near the base of the cochlea were damaged, which sounds would become hard to hear?",
+      "options": [
+        "High-pitched sounds",
+        "Low-pitched sounds",
+        "All sounds equally",
+        "Only very loud sounds"
+      ],
+      "answer": 0,
+      "explanation": "Each place on the membrane is tuned to its own pitch, and the base handles the highest ones. Very loud noise can kill hair cells, a common cause of partial hearing loss."
+    }
+  ],
+  "tags": [
+    "hearing",
+    "ears",
+    "sound",
+    "anatomy"
+  ],
+  "source": {
+    "label": "Wikipedia: Cochlea",
+    "url": "https://en.wikipedia.org/wiki/Cochlea"
+  },
+  "theme": {
+    "gradient": [
+      "#2A0F22",
+      "#8E3E62"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

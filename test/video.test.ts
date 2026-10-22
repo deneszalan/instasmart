@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { readMp4, videoProblems } from '../shared/video.ts';
+import { maxVideoBytes, readMp4, videoProblems } from '../shared/video.ts';
 import { mediaProblems, validateContent, type ContentFile } from '../shared/validate.ts';
 
 const ascii = (s: string) => [...s].map((c) => c.charCodeAt(0));
@@ -76,10 +76,16 @@ describe('videoProblems', () => {
   it('rejects clips that would not play well on a phone', () => {
     expect(videoProblems(mp4({ video: 'hvc1' })).join()).toContain('must be H.264');
     expect(videoProblems(mp4({ audio: 'opus' })).join()).toContain('must be AAC');
-    expect(videoProblems(mp4({ seconds: 75 })).join()).toContain('keep it between 2 and 60 s');
+    expect(videoProblems(mp4({ seconds: 95 })).join()).toContain('keep it between 2 and 90 s');
     expect(videoProblems(mp4({ width: 1920 })).join()).toContain('at most 1080 px');
     expect(videoProblems(mp4({ moovFirst: false })).join()).toContain('+faststart');
-    expect(videoProblems(mp4({ padding: 3_100_000 })).join()).toContain('the limit is 3000000');
+    expect(videoProblems(mp4({ padding: 3_100_000 })).join()).toContain('the limit for a 12.0 s clip is 3000000');
+  });
+
+  it('lets longer clips use 60 kB a second', () => {
+    expect(maxVideoBytes(20)).toBe(3_000_000);
+    expect(maxVideoBytes(66)).toBe(3_960_000);
+    expect(maxVideoBytes(90)).toBe(5_400_000);
   });
 });
 

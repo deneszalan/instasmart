@@ -4,8 +4,64 @@
   "field": "biology",
   "title": "The power plants inside your cells were once free-living bacteria",
   "emoji": "🔋",
-  "body": "Mitochondria, which generate most of a cell’s usable energy, are thought to descend from bacteria that were engulfed by another single-celled organism and ended up living inside it permanently, well over a billion years ago. This idea, known as symbiogenesis or endosymbiotic theory, was championed by Lynn Margulis in 1967 and is now the leading explanation for the origin of complex cells. Plant chloroplasts are thought to come from captured cyanobacteria in the same way.",
+  "body": "Mitochondria, which make ATP, the chemical fuel used throughout the cell, are thought to descend from bacteria that another single-celled organism took in but never digested. The guests lived on inside, and their descendants became a permanent part of the cell. When it happened is unresolved, though fossils of complex cells suggest it was more than 1.6 billion years ago. The idea, called symbiogenesis or endosymbiotic theory, was championed by Lynn Margulis in 1967 and is now the leading explanation for the origin of complex cells; plant chloroplasts are thought to come from captured cyanobacteria in the same way.",
   "slides": [
+    {
+      "type": "video",
+      "src": "mito-explainer.mp4",
+      "poster": "mito-explainer.jpg",
+      "alt": "Animation of a pastel cell interior with glowing membranes: a host cell wraps its membrane around a bacterium, which lives on inside, divides and becomes mitochondria. A bacterium and a mitochondrion then sit side by side, showing circular DNA, two membranes, splitting in two and ribosomes.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Organic Meditations One” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.67,
+          "end": 5.73
+        },
+        {
+          "start": 6,
+          "end": 11.07
+        },
+        {
+          "start": 11.47,
+          "end": 17.87
+        },
+        {
+          "start": 18.13,
+          "end": 24
+        },
+        {
+          "start": 24.53,
+          "end": 31.47
+        },
+        {
+          "start": 31.73,
+          "end": 37.87
+        },
+        {
+          "start": 38.13,
+          "end": 45.07
+        },
+        {
+          "start": 45.33,
+          "end": 49.6
+        },
+        {
+          "start": 49.87,
+          "end": 56.8
+        },
+        {
+          "start": 57.07,
+          "end": 63.47
+        },
+        {
+          "start": 63.73,
+          "end": 69.6
+        }
+      ]
+    },
     {
       "type": "flow",
       "heading": "How a cell got its power plants",
@@ -30,18 +86,13 @@
     },
     {
       "type": "text",
-      "heading": "Clue 1: their own DNA",
-      "text": "Mitochondria carry their own small chromosome, separate from the cell nucleus, and in many cases it is a single circular molecule like a bacterium’s."
+      "heading": "When did it happen?",
+      "text": "Nobody knows exactly. The oldest fossils that are surely complex cells are about 1.6 billion years old, so the bacteria must have moved in before then. Estimates from molecular clocks vary widely."
     },
     {
       "type": "text",
-      "heading": "Clue 2: they split in two",
-      "text": "New mitochondria only come from existing ones, which divide by a process resembling bacterial binary fission."
-    },
-    {
-      "type": "text",
-      "heading": "Clue 3: a bacterial wrapper",
-      "text": "Their inner membrane contains cardiolipin, a lipid otherwise found in bacterial membranes, and their outer membrane has bacteria-like porin proteins."
+      "heading": "Not a new idea",
+      "text": "The Russian botanist Konstantin Mereschkowski set out the theory in 1905 and 1910. Lynn Margulis took it up in 1967 and backed it with microbiological evidence, in a paper called “On the origin of mitosing cells”."
     },
     {
       "type": "quiz",
@@ -86,6 +137,12 @@
   "source": {
     "label": "Wikipedia: Symbiogenesis",
     "url": "https://en.wikipedia.org/wiki/Symbiogenesis"
+  },
+  "theme": {
+    "gradient": [
+      "#3B2547",
+      "#7A3E5E"
+    ]
   },
   "author": {
     "name": "Claude",

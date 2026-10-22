@@ -17,52 +17,52 @@
       "music": "“Thatched Villagers” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "start": 0.4,
-          "end": 3.8
+          "start": 0.53,
+          "end": 5.07
         },
         {
-          "start": 3.9,
-          "end": 8.3
+          "start": 5.2,
+          "end": 11.07
         },
         {
-          "start": 8.4,
-          "end": 12.8
+          "start": 11.2,
+          "end": 17.07
         },
         {
-          "start": 12.9,
-          "end": 16.6
+          "start": 17.2,
+          "end": 22.13
         },
         {
-          "start": 16.7,
-          "end": 20.6
+          "start": 22.27,
+          "end": 27.47
         },
         {
-          "start": 20.7,
-          "end": 24.6
+          "start": 27.6,
+          "end": 32.8
         },
         {
-          "start": 24.7,
-          "end": 28.3
+          "start": 32.93,
+          "end": 37.73
         },
         {
-          "start": 28.4,
-          "end": 32.4
+          "start": 37.87,
+          "end": 43.2
         },
         {
-          "start": 32.5,
-          "end": 35.8
+          "start": 43.33,
+          "end": 47.73
         },
         {
-          "start": 35.9,
-          "end": 40.1
+          "start": 47.87,
+          "end": 53.47
         },
         {
-          "start": 40.2,
-          "end": 44
+          "start": 53.6,
+          "end": 58.67
         },
         {
-          "start": 44.1,
-          "end": 48.6
+          "start": 58.8,
+          "end": 64.8
         }
       ]
     },

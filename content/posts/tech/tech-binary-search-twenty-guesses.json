@@ -27,52 +27,52 @@
       "music": "“Blippy Trance” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "start": 0.4,
-          "end": 4.3
+          "start": 0.53,
+          "end": 5.73
         },
         {
-          "start": 4.4,
-          "end": 8
+          "start": 5.87,
+          "end": 10.67
         },
         {
-          "start": 8.1,
-          "end": 10
+          "start": 10.8,
+          "end": 13.33
         },
         {
-          "start": 10.1,
-          "end": 11.7
+          "start": 13.47,
+          "end": 15.6
         },
         {
-          "start": 11.8,
-          "end": 14.6
+          "start": 15.73,
+          "end": 19.47
         },
         {
-          "start": 14.7,
-          "end": 19
+          "start": 19.6,
+          "end": 25.33
         },
         {
-          "start": 19.1,
-          "end": 24.4
+          "start": 25.47,
+          "end": 32.53
         },
         {
-          "start": 24.6,
-          "end": 27.6
+          "start": 32.8,
+          "end": 36.8
         },
         {
-          "start": 27.8,
-          "end": 31.2
+          "start": 37.07,
+          "end": 41.6
         },
         {
-          "start": 31.3,
-          "end": 35
+          "start": 41.73,
+          "end": 46.67
         },
         {
-          "start": 35.2,
-          "end": 41.3
+          "start": 46.93,
+          "end": 55.07
         },
         {
-          "start": 41.5,
-          "end": 46.5
+          "start": 55.33,
+          "end": 62
         }
       ]
     },

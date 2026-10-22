@@ -50,64 +50,64 @@
       "music": "“Lord of the Land” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "start": 0.4,
-          "end": 3.8
+          "start": 0.53,
+          "end": 5.07
         },
         {
-          "start": 3.9,
-          "end": 7.5
+          "start": 5.2,
+          "end": 10
         },
         {
-          "start": 7.6,
-          "end": 11.2
+          "start": 10.13,
+          "end": 14.93
         },
         {
-          "start": 11.3,
-          "end": 14.9
+          "start": 15.07,
+          "end": 19.87
         },
         {
-          "start": 15,
-          "end": 18.8
+          "start": 20,
+          "end": 25.07
         },
         {
-          "start": 18.9,
-          "end": 22.7
+          "start": 25.2,
+          "end": 30.27
         },
         {
-          "start": 22.8,
-          "end": 26.8
+          "start": 30.4,
+          "end": 35.73
         },
         {
-          "start": 26.9,
-          "end": 30.7
+          "start": 35.87,
+          "end": 40.93
         },
         {
-          "start": 30.8,
-          "end": 34.6
+          "start": 41.07,
+          "end": 46.13
         },
         {
-          "start": 34.7,
-          "end": 37.9
+          "start": 46.27,
+          "end": 50.53
         },
         {
-          "start": 38,
-          "end": 41.8
+          "start": 50.67,
+          "end": 55.73
         },
         {
-          "start": 41.9,
-          "end": 46.1
+          "start": 55.87,
+          "end": 61.47
         },
         {
-          "start": 46.2,
-          "end": 49.4
+          "start": 61.6,
+          "end": 65.87
         },
         {
-          "start": 49.5,
-          "end": 53.3
+          "start": 66,
+          "end": 71.07
         },
         {
-          "start": 53.4,
-          "end": 57.6
+          "start": 71.2,
+          "end": 76.8
         }
       ]
     },

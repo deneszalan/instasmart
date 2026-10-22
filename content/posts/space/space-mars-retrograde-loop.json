@@ -17,52 +17,52 @@
       "music": "“Odyssey” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "start": 0.4,
-          "end": 5.4
+          "start": 0.53,
+          "end": 7.2
         },
         {
-          "start": 5.5,
-          "end": 9.2
+          "start": 7.33,
+          "end": 12.27
         },
         {
-          "start": 9.3,
-          "end": 14.3
-        },
-        {
-          "start": 14.4,
-          "end": 19.1
+          "start": 12.4,
+          "end": 19.07
         },
         {
           "start": 19.2,
-          "end": 23
+          "end": 25.47
         },
         {
-          "start": 23.1,
-          "end": 27.2
+          "start": 25.6,
+          "end": 30.67
         },
         {
-          "start": 27.3,
-          "end": 30.9
+          "start": 30.8,
+          "end": 36.27
         },
         {
-          "start": 31,
-          "end": 34.6
+          "start": 36.4,
+          "end": 41.2
         },
         {
-          "start": 34.7,
-          "end": 39.4
+          "start": 41.33,
+          "end": 46.13
         },
         {
-          "start": 39.5,
-          "end": 44.6
+          "start": 46.27,
+          "end": 52.53
         },
         {
-          "start": 44.7,
-          "end": 49.7
+          "start": 52.67,
+          "end": 59.47
         },
         {
-          "start": 49.8,
-          "end": 53.6
+          "start": 59.6,
+          "end": 66.27
+        },
+        {
+          "start": 66.4,
+          "end": 71.47
         }
       ]
     },

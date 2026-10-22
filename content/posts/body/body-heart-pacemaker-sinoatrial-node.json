@@ -2,9 +2,9 @@
   "$schema": "../../schema/post.schema.json",
   "id": "body-heart-pacemaker-sinoatrial-node",
   "field": "body",
-  "title": "Every heartbeat starts in a 15 mm strip of muscle first spotted in a mole's heart",
+  "title": "Every heartbeat starts in a tiny strip of muscle that fires by itself",
   "emoji": "❤️",
-  "body": "Your heart sets its own rhythm. Each beat begins in the **sinoatrial node**, a strip of specialised muscle about 15 mm long, 3 mm wide and 1 mm thick in the wall of the right atrium. Its pacemaker cells never settle at rest: straight after each electrical pulse, their voltage starts creeping up again by itself until it sets off the next one. Nerves only speed this up or slow it down, which keeps a resting heart at about 60 to 100 beats a minute.",
+  "body": "Your heart sets its own rhythm. Each beat begins in the **sinoatrial node**, a strip of specialised muscle about 15 mm long in the wall of the right atrium, whose cells never settle at rest: their voltage creeps up by itself until it fires. The pulse spreads across the atria, waits briefly at the AV node so the ventricles can fill, then races down the bundle of His and the Purkinje fibres, and the ventricles squeeze from the bottom up. Nerves only speed the pacemaker up or slow it down.",
   "cover": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Dresden%2C_Deutsches_Hygiene-Museum%2C_anatomisches_Modell%2C_Herz.jpg/960px-Dresden%2C_Deutsches_Hygiene-Museum%2C_anatomisches_Modell%2C_Herz.jpg",
     "alt": "A large painted anatomical model of a human heart, cut open to show its thick muscle walls, valves and blood vessels",
@@ -12,21 +12,115 @@
   },
   "slides": [
     {
+      "type": "video",
+      "src": "heartbeat.mp4",
+      "poster": "heartbeat.jpg",
+      "alt": "Animated diagram of a heart on a dark background. A spark at the sinoatrial node spreads across the atria, pauses at the AV node, then glows down the bundle of His and the Purkinje fibres into the ventricles, while an ECG trace draws the P wave, the pause, the QRS spike and the T wave in step.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Hypnothis” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.67
+        },
+        {
+          "start": 6.8,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 19.2
+        },
+        {
+          "start": 19.33,
+          "end": 26.13
+        },
+        {
+          "start": 26.67,
+          "end": 33.73
+        },
+        {
+          "start": 33.87,
+          "end": 40.8
+        },
+        {
+          "start": 40.93,
+          "end": 48
+        },
+        {
+          "start": 48.13,
+          "end": 54.27
+        },
+        {
+          "start": 54.4,
+          "end": 60
+        },
+        {
+          "start": 60.53,
+          "end": 67.2
+        },
+        {
+          "start": 67.33,
+          "end": 73.33
+        },
+        {
+          "start": 74.13,
+          "end": 83.2
+        }
+      ]
+    },
+    {
       "type": "flow",
       "heading": "The pacemaker's endless loop",
       "cycle": true,
       "steps": [
-        { "icon": "⚡", "label": "Pacemaker cells fire an electrical pulse" },
-        { "icon": "❤️", "label": "The pulse spreads and the heart contracts" },
-        { "icon": "🔄", "label": "The cells' voltage resets" },
-        { "icon": "📈", "label": "It starts creeping up again on its own" }
+        {
+          "icon": "⚡",
+          "label": "Pacemaker cells fire an electrical pulse"
+        },
+        {
+          "icon": "❤️",
+          "label": "The pulse spreads and the heart contracts"
+        },
+        {
+          "icon": "🔄",
+          "label": "The cells' voltage resets"
+        },
+        {
+          "icon": "📈",
+          "label": "It starts creeping up again on its own"
+        }
       ]
     },
     {
-      "type": "reveal",
-      "prompt": "Where exactly does your heart keep its pacemaker?",
-      "answer": "High in the back wall of the right atrium",
-      "detail": "It sits beside the opening of the superior vena cava, the large vein that brings blood back from the upper body."
+      "type": "text",
+      "heading": "Why the pause?",
+      "text": "The atria and the ventricles are electrically insulated from each other everywhere except the AV node, which holds the signal back for a moment. That lets the atria empty into the ventricles first. If both squeezed at once, the ventricles would fill poorly and blood would be pushed backwards."
+    },
+    {
+      "type": "match",
+      "heading": "Match each part of the ECG",
+      "pairs": [
+        {
+          "left": "P wave",
+          "right": "Signal crosses the atria"
+        },
+        {
+          "left": "PR segment",
+          "right": "Pause at the AV node"
+        },
+        {
+          "left": "QRS complex",
+          "right": "Ventricles activate"
+        },
+        {
+          "left": "T wave",
+          "right": "Ventricles reset"
+        }
+      ],
+      "explanation": "An ECG records the heart's electrical activity. Each bump or flat stretch is one stage of the same beat, always in this order."
     },
     {
       "type": "image",
@@ -44,19 +138,47 @@
     {
       "type": "compare",
       "heading": "Nerves only adjust the pace",
-      "left": { "label": "Speeding up", "text": "Sympathetic nerves raise a signalling molecule called cAMP in the cells, which makes each slow voltage climb faster." },
-      "right": { "label": "Slowing down", "text": "The vagus nerve releases acetylcholine onto the node, slowing the pacemaker and lowering the heart rate." }
+      "left": {
+        "label": "Speeding up",
+        "text": "Sympathetic nerves raise a signalling molecule called cAMP in the cells, which makes each slow voltage climb faster."
+      },
+      "right": {
+        "label": "Slowing down",
+        "text": "The vagus nerve releases acetylcholine onto the node, slowing the pacemaker and lowering the heart rate."
+      }
     },
     {
       "type": "quiz",
       "question": "If the sinoatrial node stops working, what normally takes over?",
-      "options": ["Slower cells further down", "Nerves from the brain", "The left ventricle's valves", "Nothing: the heart stops"],
+      "options": [
+        "Slower cells further down",
+        "Nerves from the brain",
+        "The left ventricle's valves",
+        "Nothing: the heart stops"
+      ],
       "answer": 0,
       "explanation": "Other heart cells can also start beats, just at a slower rate. Normally the node outpaces them, but if it fails, a group of cells further down becomes the pacemaker."
     }
   ],
-  "tags": ["heart", "anatomy", "physiology", "electricity"],
-  "source": { "label": "Wikipedia: Sinoatrial node", "url": "https://en.wikipedia.org/wiki/Sinoatrial_node" },
-  "author": { "name": "Claude", "kind": "ai" },
+  "tags": [
+    "heart",
+    "anatomy",
+    "physiology",
+    "electricity"
+  ],
+  "source": {
+    "label": "Wikipedia: Sinoatrial node",
+    "url": "https://en.wikipedia.org/wiki/Sinoatrial_node"
+  },
+  "theme": {
+    "gradient": [
+      "#1A0508",
+      "#8E1A22"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
   "createdAt": "2026-10-18"
 }

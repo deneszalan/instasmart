@@ -1,0 +1,138 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-milankovitch-cycles",
+  "field": "earth",
+  "title": "Three slow wobbles in Earth’s orbit and spin help pace the ice ages",
+  "emoji": "🧊",
+  "body": "Earth’s path around the Sun changes in three slow ways: the orbit stretches from nearly round to slightly oval, the tilt of the axis nods between about **22.1° and 24.5°**, and the axis wobbles like a spinning top. Together they shift how much sunshine reaches northern summers, and when those summers are weak, winter snow survives and ice sheets can grow. Milutin Milanković worked out the numbers in the 1920s, but why recent ice ages follow a 100,000-year beat is still debated.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Earth’s axis slowly tilts more, then less, then more again. How many thousand years does one full cycle take?",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "answer": 41,
+      "unit": "thousand years",
+      "explanation": "About 41,000 years. The tilt swings between about 22.1° and 24.5°. Today it is about 23.4°, roughly halfway, and slowly shrinking."
+    },
+    {
+      "type": "video",
+      "src": "milankovitch.mp4",
+      "poster": "milankovitch.jpg",
+      "alt": "Animation on deep blue: an ice cap on Earth grows and shrinks, then diagrams show the orbit stretching, the axis nodding between 22.1° and 24.5° and wobbling like a top. Three wave strips add up to a curve of northern summer sunshine, and two cards compare 41,000 and 100,000 years.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Dreams Become Real” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.53,
+          "end": 12.8
+        },
+        {
+          "start": 13.2,
+          "end": 19.87
+        },
+        {
+          "start": 20,
+          "end": 27.47
+        },
+        {
+          "start": 27.87,
+          "end": 34.13
+        },
+        {
+          "start": 34.27,
+          "end": 41.33
+        },
+        {
+          "start": 41.73,
+          "end": 48.8
+        },
+        {
+          "start": 48.93,
+          "end": 56.53
+        },
+        {
+          "start": 56.93,
+          "end": 63.87
+        },
+        {
+          "start": 64,
+          "end": 70.93
+        },
+        {
+          "start": 71.33,
+          "end": 76.27
+        },
+        {
+          "start": 76.4,
+          "end": 83.73
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "heading": "Three slow rhythms",
+      "style": "bullets",
+      "items": [
+        "Orbit shape (eccentricity): about 100,000 years, plus a 405,000-year swing",
+        "Axis tilt (obliquity): 22.1° to 24.5°, about 41,000 years",
+        "Axis wobble (precession): about 25,700 years"
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why northern summers?",
+      "text": "Milanković focused on sunshine at 65° north, where there is a lot of land. Land warms and cools faster than ocean, so when summers there are cool, less of the winter’s snow and ice melts, and it can pile up year after year."
+    },
+    {
+      "type": "quiz",
+      "question": "Earth is now closest to the Sun around 3 January. Which hemisphere gets the more extreme seasons from that?",
+      "options": [
+        "The southern hemisphere",
+        "The northern hemisphere",
+        "Neither: they’re identical",
+        "Only the tropics"
+      ],
+      "answer": 0,
+      "explanation": "In January the south is tilted toward the Sun just as Earth is closest, so the two effects add up there. In the north they work against each other."
+    },
+    {
+      "type": "text",
+      "heading": "The 100,000-year puzzle",
+      "text": "Milanković thought tilt mattered most, which predicts ice ages every 41,000 years. That fits the climate of 1 to 3 million years ago, but since then ice ages have come about every 100,000 years. Proposed reasons include feedbacks from ocean currents, carbon dioxide and the ice sheets themselves; it is still debated."
+    },
+    {
+      "type": "text",
+      "heading": "No ice age due soon",
+      "text": "Earth’s orbit will keep getting rounder for about the next 100,000 years. Orbital models suggest northern summer sunshine won’t fall far enough for a new glacial period in the next 50,000 years, and the greenhouse gases people add push toward a warmer climate."
+    }
+  ],
+  "tags": [
+    "iceages",
+    "climate",
+    "orbits",
+    "milankovitch"
+  ],
+  "source": {
+    "label": "Wikipedia: Milankovitch cycles",
+    "url": "https://en.wikipedia.org/wiki/Milankovitch_cycles"
+  },
+  "theme": {
+    "gradient": [
+      "#0B1D45",
+      "#6E3C0C"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

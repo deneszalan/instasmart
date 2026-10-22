@@ -4,11 +4,75 @@
   "field": "earth",
   "title": "Toilets don’t flush the opposite way south of the equator",
   "emoji": "🚽",
-  "body": "The Coriolis effect, caused by Earth’s rotation, is real and steers huge weather systems: hurricanes spin anticlockwise in the Northern Hemisphere and clockwise in the Southern. But it only matters over large distances and long times. In a sink or toilet that drains in seconds, it is far weaker than the shape of the bowl and the way the water entered. Only carefully controlled experiments with very still water can detect it.",
+  "body": "Earth’s spin nudges anything moving across its surface: to the right in the Northern Hemisphere, to the left in the Southern. Over hundreds of kilometres and many hours, that steers whole weather systems, so lows spin anticlockwise in the north and clockwise in the south. In a toilet or sink the nudge is negligible: the bowl’s shape and the way the water came in matter far more. Only a carefully settled basin, like Ascher Shapiro’s in 1962, shows the effect.",
   "slides": [
     {
+      "type": "video",
+      "src": "coriolis-scale.mp4",
+      "poster": "coriolis-scale.jpg",
+      "alt": "Animation: on a weather-map globe, a northern storm spins anticlockwise and a southern one clockwise. Air flowing into a low bends right; circles show Earth’s spin needs 100 km for wind and 1 km for slow water, against a half-metre sink. Two toilets swirl alike, and a settled basin turns.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Equatorial Complex” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.67,
+          "end": 6.67
+        },
+        {
+          "start": 6.8,
+          "end": 13.2
+        },
+        {
+          "start": 13.73,
+          "end": 20.67
+        },
+        {
+          "start": 20.8,
+          "end": 27.2
+        },
+        {
+          "start": 27.73,
+          "end": 33.07
+        },
+        {
+          "start": 33.2,
+          "end": 40.53
+        },
+        {
+          "start": 40.67,
+          "end": 46.53
+        },
+        {
+          "start": 46.67,
+          "end": 51.47
+        },
+        {
+          "start": 52,
+          "end": 59.73
+        },
+        {
+          "start": 59.87,
+          "end": 65.33
+        },
+        {
+          "start": 66,
+          "end": 72.13
+        },
+        {
+          "start": 72.27,
+          "end": 77.87
+        },
+        {
+          "start": 78,
+          "end": 84.4
+        }
+      ]
+    },
+    {
       "type": "flow",
-      "heading": "How Earth’s spin sets a hurricane turning",
+      "heading": "How Earth’s spin sets a storm turning",
       "steps": [
         {
           "icon": "📉",
@@ -29,6 +93,17 @@
       ]
     },
     {
+      "type": "text",
+      "heading": "Shapiro’s basin",
+      "text": "In 1962 at MIT, Ascher Shapiro used a basin about 2 m across, with a small wooden cross over the plug, and let the water settle for at least 24 hours. Draining took 20 minutes; the cross began turning only after about 15, anticlockwise."
+    },
+    {
+      "type": "stat",
+      "value": "3 × 10⁻⁷",
+      "label": "the Coriolis acceleration, as a share of gravity",
+      "text": "That tiny push is why Shapiro’s test needed extreme precision. Tests in Sydney later saw clockwise turning."
+    },
+    {
       "type": "quiz",
       "question": "Why doesn’t the Coriolis effect decide which way your sink drains?",
       "options": [
@@ -38,7 +113,7 @@
         "Sinks drain too fast for any force"
       ],
       "answer": 2,
-      "explanation": "The Coriolis effect only matters over large distances and long times. In a bowl that empties in seconds, its shape and the way the water entered matter far more."
+      "explanation": "The Coriolis effect only matters over large distances and long times. In a bowl, its shape and the way the water entered are likely to be far stronger."
     },
     {
       "type": "odd",
@@ -50,7 +125,7 @@
         "Your bathtub drain"
       ],
       "answer": 3,
-      "explanation": "Hurricanes, ocean currents and shells flying for kilometres move far enough for Earth’s spin to bend their paths. A bathtub empties in seconds, where the effect is negligible."
+      "explanation": "Hurricanes, ocean currents and shells flying for kilometres move far enough for Earth’s spin to bend their paths. A bathtub is far too small for the effect to matter."
     }
   ],
   "tags": [
@@ -61,6 +136,12 @@
   "source": {
     "label": "Wikipedia: Coriolis force",
     "url": "https://en.wikipedia.org/wiki/Coriolis_force"
+  },
+  "theme": {
+    "gradient": [
+      "#0A1D36",
+      "#14505C"
+    ]
   },
   "author": {
     "name": "Claude",

@@ -1,0 +1,128 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "psychology-mental-rotation",
+  "field": "psychology",
+  "title": "The further a shape is turned, the longer you take to see it matches",
+  "emoji": "🔄",
+  "body": "In 1971 Roger Shepard and Jacqueline Metzler showed people pairs of three-dimensional block figures and asked: is this the same object, or its mirror image? The time people needed to decide grew in a **straight line** with the angle between the two figures: the further one was turned from the other, the longer the answer took. It is as if people turned one figure in their mind until it lined up with the other, an ability psychologists call mental rotation.",
+  "slides": [
+    {
+      "type": "image",
+      "src": "same-or-mirror.svg",
+      "alt": "Two figures made of ten cubes each, one coral and one teal. The teal one is turned to a different angle, so it is hard to tell at a glance whether it is the same shape or a mirror image.",
+      "caption": "Is the teal figure the coral one turned, or its mirror image? Answer on the next slide.",
+      "fit": "contain",
+      "credit": "Reckon · original diagram"
+    },
+    {
+      "type": "quiz",
+      "question": "On the previous slide, what is the teal figure?",
+      "options": [
+        "The coral figure, turned",
+        "A mirror image of the coral figure"
+      ],
+      "answer": 1,
+      "explanation": "It is the mirror image, turned 140°. No rotation can line it up with the coral one. If you turned one in your head to check, you did what Shepard and Metzler measured."
+    },
+    {
+      "type": "video",
+      "src": "turning-blocks.mp4",
+      "poster": "turning-blocks.jpg",
+      "alt": "Animation of isometric block figures in coral and teal on off-white paper. A teal figure turns back 120° to match the coral one; its mirror image never lines up. A graph of time to answer rises in a straight line with the angle, and a 180° turn at a steady pace takes three times as long as 60°.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Half Mystery” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.67,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 19.73
+        },
+        {
+          "start": 20,
+          "end": 26.93
+        },
+        {
+          "start": 27.2,
+          "end": 34.4
+        },
+        {
+          "start": 34.67,
+          "end": 41.33
+        },
+        {
+          "start": 41.6,
+          "end": 48.8
+        },
+        {
+          "start": 49.07,
+          "end": 56.53
+        },
+        {
+          "start": 56.8,
+          "end": 64
+        },
+        {
+          "start": 64.27,
+          "end": 72.27
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "The original experiment",
+      "text": "The figures were asymmetrical objects made of cubes. In some pairs the second figure was the first one turned; in others it was a mirror image, which no turn can match. The researchers timed how long each decision took."
+    },
+    {
+      "type": "order",
+      "heading": "Put the stages of mental rotation in order",
+      "items": [
+        "Picture the object",
+        "Turn it in your mind",
+        "Compare it with the other",
+        "Decide if they match",
+        "Give your answer"
+      ],
+      "explanation": "Psychologists split the task into these stages; the reaction time is recorded when the person pulls a lever or presses a button."
+    },
+    {
+      "type": "text",
+      "heading": "Bigger turns, busier brains",
+      "text": "Brain scans during mental rotation show more activity in the parietal lobe for larger angles, along with longer times and more errors, which suggests the task gets harder in step with the angle."
+    },
+    {
+      "type": "text",
+      "heading": "From experiment to test",
+      "text": "In 1978 Steven Vandenberg and Allan Kuse built the Mental Rotations Test on Shepard and Metzler’s work: in each of its 20 items, four figures are compared with a target figure, and two of them match."
+    }
+  ],
+  "tags": [
+    "perception",
+    "cognition",
+    "spatialthinking",
+    "experiments"
+  ],
+  "source": {
+    "label": "Wikipedia: Mental rotation",
+    "url": "https://en.wikipedia.org/wiki/Mental_rotation"
+  },
+  "theme": {
+    "gradient": [
+      "#0E5E59",
+      "#B23A2E"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

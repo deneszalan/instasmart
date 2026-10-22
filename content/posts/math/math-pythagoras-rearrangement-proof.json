@@ -1,0 +1,125 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-pythagoras-rearrangement-proof",
+  "field": "math",
+  "title": "Four sliding triangles prove a² + b² = c², no algebra needed",
+  "emoji": "📐",
+  "body": "Put four copies of a right triangle, with short sides a and b and long side c, inside a square with sides a + b. The gap left in the middle is a tilted square of area c². Slide the same four triangles into two rectangles and the gap becomes two squares, of areas a² and b². The big square and the triangles haven't changed, so neither has the empty area: **c² = a² + b²**. The rule was in use in Babylon more than a thousand years before Pythagoras was born, and nobody knows who first proved it.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "pythagoras-explainer.mp4",
+      "poster": "pythagoras-explainer.jpg",
+      "alt": "Chalkboard animation: a right triangle with squares on its sides, then four copies inside a square of side a + b leave a tilted square gap, c². Sliding the triangles turns the gap into two squares, a² and b². A timeline shows Babylon, Pythagoras and Euclid.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Almost Bliss” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.67
+        },
+        {
+          "start": 6.8,
+          "end": 14.67
+        },
+        {
+          "start": 14.8,
+          "end": 19.47
+        },
+        {
+          "start": 19.6,
+          "end": 25.07
+        },
+        {
+          "start": 25.2,
+          "end": 31.2
+        },
+        {
+          "start": 31.33,
+          "end": 37.87
+        },
+        {
+          "start": 38,
+          "end": 43.73
+        },
+        {
+          "start": 43.87,
+          "end": 51.47
+        },
+        {
+          "start": 51.6,
+          "end": 58.93
+        },
+        {
+          "start": 59.07,
+          "end": 63.47
+        },
+        {
+          "start": 63.6,
+          "end": 70.93
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "The same idea in algebra",
+      "text": "The big square has area (a + b)². The four triangles cover 2ab, since each is half of an a-by-b rectangle. So the gap is (a + b)² − 2ab in both pictures: c² in one and a² + b² in the other."
+    },
+    {
+      "type": "order",
+      "heading": "Oldest first",
+      "items": [
+        "Babylonian tablet Plimpton 322",
+        "Pythagoras is born",
+        "Euclid writes the Elements",
+        "Oldest surviving Zhoubi Suanjing texts"
+      ],
+      "explanation": "Plimpton 322: about 1800 BC. Pythagoras: born about 570 BC. Euclid: about 300 BC. The Chinese Zhoubi Suanjing: texts from roughly the 1st century BC."
+    },
+    {
+      "type": "text",
+      "heading": "Named, not necessarily found",
+      "text": "According to the historian Thomas Heath, no surviving Greek text from the five centuries after Pythagoras lived credits him with the theorem. Later writers such as Plutarch and Cicero did, as if it were common knowledge."
+    },
+    {
+      "type": "text",
+      "heading": "A record-breaker",
+      "text": "The theorem has been proved many times, in many different ways, possibly more than any other theorem in mathematics. Some proofs cut and rearrange shapes like this one; others use only algebra."
+    },
+    {
+      "type": "quiz",
+      "question": "In the sliding proof, why must the empty area be the same in both pictures?",
+      "options": [
+        "Same big square, same four triangles",
+        "The triangles shrink as they move",
+        "It only works when a equals b",
+        "The triangles are turned over"
+      ],
+      "answer": 0,
+      "explanation": "The triangles only slide, so they cover the same total area in both pictures, inside the same big square. Whatever is left over must be equal: c² = a² + b²."
+    }
+  ],
+  "tags": [
+    "geometry",
+    "proof",
+    "pythagoras",
+    "history"
+  ],
+  "source": {
+    "label": "Wikipedia: Pythagorean theorem",
+    "url": "https://en.wikipedia.org/wiki/Pythagorean_theorem"
+  },
+  "theme": {
+    "gradient": [
+      "#1A2522",
+      "#2E3F3A"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

@@ -2,36 +2,109 @@
   "$schema": "../../schema/post.schema.json",
   "id": "physics-double-slit",
   "field": "physics",
-  "title": "A single particle can interfere with itself",
+  "title": "Particles fired one at a time still build up wave stripes",
   "emoji": "🌊",
-  "body": "Shine light through two narrow slits and a pattern of bright and dark stripes appears, the signature of overlapping waves; Thomas Young showed this in 1801. The quantum shock is that electrons, atoms and even big molecules do the same, as if each one travels through both slits as a wave and only lands at a single spot when detected. Richard Feynman called the experiment the heart of quantum mechanics.",
+  "body": "Send electrons, photons or even molecules at two narrow slits one at a time, and each one lands on the screen as a single dot. Yet as thousands arrive, the dots pile up into bright and dark stripes: an interference pattern, the signature of overlapping waves. Quantum mechanics describes each particle with a wave that passes through both slits and sets the odds of where it lands. Detect which slit each particle takes, and the stripes disappear.",
   "slides": [
     {
-      "type": "flow",
-      "heading": "One electron at a time",
+      "type": "video",
+      "src": "phosphor-hits.mp4",
+      "poster": "phosphor-hits.jpg",
+      "alt": "Animation of a dark detector screen behind two slits. Particles arrive one at a time as green phosphor dots that look random at first, then build up into many bright stripes. Wave crests spread from both slits and an intensity curve matches the stripes; with which-slit detectors the stripes vanish.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Deliberate Thought” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "icon": "⚛️",
-          "label": "Fire electrons at two slits, one at a time"
+          "start": 0.67,
+          "end": 6.13
         },
         {
-          "icon": "🔘",
-          "label": "Each lands as a single dot"
+          "start": 6.27,
+          "end": 11.73
         },
         {
-          "icon": "🌊",
-          "label": "Thousands of dots build up stripes"
+          "start": 11.87,
+          "end": 17.33
         },
         {
-          "icon": "🤯",
-          "label": "As if each one went through both slits"
+          "start": 17.6,
+          "end": 23.2
+        },
+        {
+          "start": 23.33,
+          "end": 29.33
+        },
+        {
+          "start": 29.47,
+          "end": 36
+        },
+        {
+          "start": 36.13,
+          "end": 42.13
+        },
+        {
+          "start": 42.4,
+          "end": 48.53
+        },
+        {
+          "start": 48.67,
+          "end": 54.93
+        },
+        {
+          "start": 55.07,
+          "end": 60.8
+        },
+        {
+          "start": 61.07,
+          "end": 67.2
+        },
+        {
+          "start": 67.33,
+          "end": 73.33
+        },
+        {
+          "start": 73.6,
+          "end": 79.73
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "One spot each",
+      "text": "Every particle is detected at a single point, never smeared out. Quantum mechanics predicts only the odds: the squared size of the wave at each place on the screen. Physicists still disagree about how to picture what happens between source and screen."
+    },
+    {
+      "type": "timeline",
+      "heading": "From light to molecules",
+      "events": [
+        {
+          "when": "1801",
+          "text": "Thomas Young describes interference"
+        },
+        {
+          "when": "1909",
+          "text": "G. I. Taylor uses very dim light"
+        },
+        {
+          "when": "1961",
+          "text": "Claus Jönsson uses electron beams"
+        },
+        {
+          "when": "1974",
+          "text": "Single electrons, in Bologna"
+        },
+        {
+          "when": "2019",
+          "text": "Molecules of about 2,000 atoms"
         }
       ]
     },
     {
       "type": "text",
       "heading": "Look, and it vanishes",
-      "text": "Measure which slit each particle goes through and the stripes disappear, leaving two plain bands. Getting “which-path” information destroys the interference."
+      "text": "Detect which slit each particle goes through, and the pattern becomes the sum of two single-slit patterns, with no interference stripes. A 1987 experiment found that partial which-path information could be gathered without wiping the interference out completely."
     },
     {
       "type": "place",
@@ -51,24 +124,19 @@
           "value": 810
         }
       ],
-      "explanation": "About 2,000 atoms, in a 2019 experiment: each molecule still went through the slits as a wave and landed as a single dot. Buckyballs of 60 atoms did it in 1999, molecules of 810 atoms in 2013."
-    },
-    {
-      "type": "text",
-      "heading": "Not just tiny things",
-      "text": "The effect has been shown with molecules made of about 2,000 atoms, with a mass around 25,000 times that of a hydrogen atom."
+      "explanation": "About 2,000 atoms, with a mass of about 25,000 daltons, in 2019. Buckyballs of 60 carbon atoms interfered in 1999, molecules of 810 atoms in 2013."
     },
     {
       "type": "quiz",
-      "question": "What happens to the stripes if you measure which slit each particle goes through?",
+      "question": "What happens to the stripes if you detect which slit each particle goes through?",
       "options": [
         "They get brighter and sharper",
         "They shift to one side",
-        "They vanish, leaving two plain bands",
+        "They disappear",
         "Nothing changes"
       ],
       "answer": 2,
-      "explanation": "Getting ‘which-path’ information destroys the interference: the striped pattern disappears and only two plain bands remain."
+      "explanation": "With which-path information the interference is gone: the pattern becomes the sum of two single-slit patterns, without stripes."
     }
   ],
   "tags": [
@@ -79,6 +147,12 @@
   "source": {
     "label": "Wikipedia: Double-slit experiment",
     "url": "https://en.wikipedia.org/wiki/Double-slit_experiment"
+  },
+  "theme": {
+    "gradient": [
+      "#06121A",
+      "#0E4A38"
+    ]
   },
   "author": {
     "name": "Claude",

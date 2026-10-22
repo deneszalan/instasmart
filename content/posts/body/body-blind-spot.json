@@ -4,53 +4,128 @@
   "field": "body",
   "title": "Each of your eyes has a blind spot that your brain quietly fills in",
   "emoji": "🙈",
-  "body": "Where the optic nerve leaves the back of the eye, there are no light-detecting cells, so a patch of each eye’s field of view is completely blind. You don’t normally notice because the brain fills in the gap using surrounding detail and the view from your other eye, whose blind spot falls on a different part of the scene. The blind spot was first documented by the French scientist Edme Mariotte in the 1660s.",
+  "body": "At the back of each eye, the nerve fibres from the retina gather at the **optic disc** and leave as the optic nerve. There are no rods or cones on the disc, so the matching patch of each eye’s view is completely blind. You don’t normally notice, because the brain fills the gap from the surrounding detail and from the other eye, whose blind spot falls on a different part of the scene.",
   "slides": [
     {
-      "type": "estimate",
-      "question": "How many full moons, side by side, would fit across one of your blind spots?",
-      "min": 0,
-      "max": 30,
-      "step": 1,
-      "answer": 10,
-      "unit": "full moons",
-      "explanation": "About ten. Each blind spot is roughly 7.5° tall and 5.5° wide and sits some 12–15° to the side of where you look, yet your brain fills the gap so well you never notice."
+      "type": "video",
+      "src": "blind-spot.mp4",
+      "poster": "blind-spot.jpg",
+      "alt": "Animated diagram of an eye in cross-section: light focuses on the retina, its nerve fibres gather at the optic disc and leave as the optic nerve, and the disc has no light-sensing cells. Then a cross and a dot on a cream card for a blind spot test, with step-by-step instructions.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Unwritten Return” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.67
+        },
+        {
+          "start": 6.8,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 19.2
+        },
+        {
+          "start": 19.33,
+          "end": 26.13
+        },
+        {
+          "start": 26.27,
+          "end": 33.87
+        },
+        {
+          "start": 34.13,
+          "end": 41.2
+        },
+        {
+          "start": 41.33,
+          "end": 47.6
+        },
+        {
+          "start": 48,
+          "end": 53.6
+        },
+        {
+          "start": 53.73,
+          "end": 60.4
+        },
+        {
+          "start": 60.53,
+          "end": 67.2
+        },
+        {
+          "start": 67.33,
+          "end": 74.13
+        },
+        {
+          "start": 74.27,
+          "end": 81.73
+        }
+      ]
     },
     {
       "type": "text",
-      "heading": "Find yours",
-      "text": "Draw an X and a dot about 8 cm to its right. Close your left eye, stare at the X with your right, and slowly move the page closer: at some point the dot vanishes."
-    },
-    {
-      "type": "text",
-      "heading": "Bigger than you’d think",
-      "text": "Each blind spot is about 7.5° tall and 5.5° wide, sitting some 12–15° to the side of where you look. That’s room for about ten full moons in a row."
+      "heading": "Where it sits",
+      "text": "In your view, each blind spot is about 12–15° to the outer side of where you look, and about 1.5° below it. The two eyes’ gaps fall on different parts of the scene, so with both eyes open, each eye helps fill in for the other."
     },
     {
       "type": "chart",
-      "heading": "Across the sky, in degrees",
+      "heading": "Bigger than you’d think, in degrees of your view",
       "items": [
         {
           "label": "The full Moon",
           "value": 0.5
         },
         {
-          "label": "Your blind spot, wide",
+          "label": "Blind spot, wide",
           "value": 5.5
         },
         {
-          "label": "Your blind spot, tall",
+          "label": "Blind spot, tall",
           "value": 7.5,
           "emphasis": true
         }
       ],
       "unit": "°",
-      "note": "The Moon spans about half a degree; the blind spot sits 12–15° to the side of where you look"
+      "note": "The full Moon looks about half a degree wide, so about 11 full moons fit across a blind spot."
+    },
+    {
+      "type": "stat",
+      "value": "1–1.2 million",
+      "label": "nerve fibres leave each eye through the optic disc",
+      "text": "They come from the retina’s ganglion cells. The disc is also where the retina’s main blood vessels come in and go out."
+    },
+    {
+      "type": "odd",
+      "heading": "Whose eyes have no blind spot?",
+      "items": [
+        "Human",
+        "Cat",
+        "Eagle",
+        "Octopus"
+      ],
+      "answer": 3,
+      "explanation": "Every animal with a backbone has a blind spot. Octopus eyes evolved separately: the optic nerve meets the light sensors from behind, so it never makes a gap in the retina."
     },
     {
       "type": "text",
-      "heading": "Octopuses have none",
-      "text": "In octopus eyes, which evolved separately, the optic nerve approaches the light sensors from behind, so there is no gap in the retina and no blind spot."
+      "heading": "Found in the 1660s",
+      "text": "The French scientist Edme Mariotte noticed the blind spot around 1668. People had assumed the place where the optic nerve meets the eye would be the most sensitive part of the retina; Mariotte showed it is blind. He presented it at the court of Louis XIV and to the Royal Society in London."
+    },
+    {
+      "type": "quiz",
+      "question": "Why can’t the optic disc see anything?",
+      "options": [
+        "It has no rods or cones",
+        "The iris casts a shadow on it",
+        "Blood is too thick to see through",
+        "The lens can’t focus light there"
+      ],
+      "answer": 0,
+      "explanation": "The disc is where the nerve fibres bundle together and leave the eye. There are no light-sensing cells on it, so light landing there is never detected."
     }
   ],
   "tags": [
@@ -61,6 +136,12 @@
   "source": {
     "label": "Wikipedia: Blind spot (vision)",
     "url": "https://en.wikipedia.org/wiki/Blind_spot_(vision)"
+  },
+  "theme": {
+    "gradient": [
+      "#3A0A10",
+      "#9B2C22"
+    ]
   },
   "author": {
     "name": "Claude",

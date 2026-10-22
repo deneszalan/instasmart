@@ -1,0 +1,188 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "philosophy-barber-paradox",
+  "field": "philosophy",
+  "title": "A barber who shaves everyone who doesn’t shave himself can’t exist",
+  "emoji": "💈",
+  "body": "Picture a village barber who shaves all those, and only those, who do not shave themselves. Does he shave himself? If he does, he is someone the rule says he must not shave; if he doesn’t, the rule says he must. Every answer contradicts itself, so no such barber can exist. The puzzle is a homely version of Russell’s paradox about the set of all sets that are not members of themselves, though Russell, who had the barber suggested to him, called it an invalid form of his paradox.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "barber.mp4",
+      "poster": "barber.jpg",
+      "alt": "Animation in a barbershop with turning striped poles: villagers sort themselves into ‘shaves himself’ and ‘shaved by the barber’. The barber tries each side, the rule crosses both out, and he fades to a dashed outline. Jars for sets then show the same flip-flop in Russell’s paradox.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Fig Leaf Rag” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 4.8
+        },
+        {
+          "start": 4.93,
+          "end": 11.2
+        },
+        {
+          "start": 11.33,
+          "end": 15.47
+        },
+        {
+          "start": 15.6,
+          "end": 21.6
+        },
+        {
+          "start": 21.73,
+          "end": 25.87
+        },
+        {
+          "start": 26,
+          "end": 32.53
+        },
+        {
+          "start": 32.67,
+          "end": 38.93
+        },
+        {
+          "start": 39.07,
+          "end": 45.07
+        },
+        {
+          "start": 45.2,
+          "end": 50.4
+        },
+        {
+          "start": 50.53,
+          "end": 56.8
+        },
+        {
+          "start": 56.93,
+          "end": 64
+        },
+        {
+          "start": 64.13,
+          "end": 69.73
+        },
+        {
+          "start": 69.87,
+          "end": 76.8
+        },
+        {
+          "start": 76.93,
+          "end": 82.53
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why every answer fails",
+      "text": "If the barber shaves himself, he is one of those who shave themselves, and the barber shaves none of them. If he doesn’t, he is one of those the barber must shave. No barber can follow the rule, so the question has no answer."
+    },
+    {
+      "type": "sort",
+      "heading": "Does this collection include itself?",
+      "bins": [
+        "Includes itself",
+        "Doesn’t"
+      ],
+      "items": [
+        {
+          "text": "The set of all squares",
+          "bin": 1
+        },
+        {
+          "text": "The set of everything that isn’t a square",
+          "bin": 0
+        },
+        {
+          "text": "A library catalogue that lists itself",
+          "bin": 0
+        },
+        {
+          "text": "The set of all cats",
+          "bin": 1
+        }
+      ],
+      "explanation": "The set of squares isn’t a square, and the set of cats isn’t a cat. But the set of non-squares is itself not a square, so it is one of its own members."
+    },
+    {
+      "type": "compare",
+      "heading": "Barber or set?",
+      "left": {
+        "label": "The barber",
+        "text": "No such barber can exist, so the question simply has no answer. Nothing else breaks."
+      },
+      "right": {
+        "label": "Russell’s set",
+        "text": "Early set theory let any property define a set, so the set of all sets that aren’t members of themselves had to exist. Its rules broke."
+      }
+    },
+    {
+      "type": "timeline",
+      "heading": "From a letter to new rules",
+      "events": [
+        {
+          "when": "1901",
+          "text": "Russell finds the paradox"
+        },
+        {
+          "when": "1902",
+          "text": "He writes to Frege, whose logic it undermines"
+        },
+        {
+          "when": "1908",
+          "text": "Type theory and Zermelo’s set theory avoid it"
+        },
+        {
+          "when": "1919",
+          "text": "Russell calls the barber version not valid"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Hardly anything more unfortunate can befall a scientific writer than to have one of the foundations of his edifice shaken after the work is finished.",
+      "attribution": "Gottlob Frege, appendix to his Grundgesetze, vol. II (tr. Michael Beaney)"
+    },
+    {
+      "type": "text",
+      "heading": "Not Russell’s barber",
+      "text": "The barber is often credited to Russell, for example by Martin Gardner. But Russell said it was suggested to him, and that in this form the contradiction is not very difficult to solve."
+    },
+    {
+      "type": "quiz",
+      "question": "Russell found his paradox in 1901. In 1902 he wrote about it to which logician, whose system it undermined?",
+      "options": [
+        "Gottlob Frege",
+        "Kurt Gödel",
+        "Alan Turing",
+        "George Boole"
+      ],
+      "answer": 0,
+      "explanation": "Frege was preparing the second volume of his Grundgesetze der Arithmetik. He replied quickly and added an appendix admitting the problem."
+    }
+  ],
+  "tags": [
+    "paradox",
+    "logic",
+    "russell",
+    "settheory",
+    "selfreference"
+  ],
+  "source": {
+    "label": "Wikipedia: Barber paradox",
+    "url": "https://en.wikipedia.org/wiki/Barber_paradox"
+  },
+  "theme": {
+    "gradient": [
+      "#7E1520",
+      "#152B4A"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

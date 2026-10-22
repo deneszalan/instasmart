@@ -2,14 +2,87 @@
   "$schema": "../../schema/post.schema.json",
   "id": "economics-prisoners-dilemma",
   "field": "economics",
-  "title": "Two perfectly rational players can choose to both lose",
+  "title": "Logic tells both prisoners to betray, so both serve longer",
   "emoji": "🔒",
-  "body": "In the prisoner’s dilemma, two suspects held apart can each stay silent or betray the other. Whatever the partner does, betraying gives each a better personal result, so rational players both betray and both serve longer than if they had both kept quiet. First devised at the RAND Corporation in 1950, the game helps explain price wars, arms races and why climate deals are hard to reach.",
+  "body": "Two suspects held apart can each stay silent or betray the other. Whatever the partner does, betraying shortens your own sentence, so two rational players both betray and serve **2 years each** instead of the 1 they would get by both keeping quiet. Play the game over and over and the picture changes: in Robert Axelrod’s computer tournaments around 1980, the winner was Anatol Rapoport’s **tit for tat**, which stays silent first and then copies the other player’s last move.",
   "slides": [
     {
-      "type": "text",
-      "heading": "The classic payoffs",
-      "text": "Both stay silent: 1 year each. Both betray: 2 years each. If only one betrays, the betrayer walks free and the silent partner gets 3 years."
+      "type": "quiz",
+      "question": "Your partner is going to stay silent. Which choice gives you the shortest sentence?",
+      "options": [
+        "Stay silent too",
+        "Betray your partner"
+      ],
+      "answer": 1,
+      "explanation": "Betraying gets you 0 years instead of 1. And if your partner betrays, betraying gets you 2 years instead of 3. Either way, betrayal is better for you."
+    },
+    {
+      "type": "video",
+      "src": "interrogation.mp4",
+      "poster": "interrogation.jpg",
+      "alt": "Animation in a dark interrogation room: two hat-wearing silhouettes in separate rooms both choose to betray. A payoff board shows why betraying always cuts your own sentence. Then a simulated tournament of five strategies, 200 rounds a match, ends with tit for tat serving the fewest years.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Night on the Docks - Sax” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.67,
+          "end": 5.6
+        },
+        {
+          "start": 5.73,
+          "end": 10.93
+        },
+        {
+          "start": 11.07,
+          "end": 16.8
+        },
+        {
+          "start": 17.2,
+          "end": 21.87
+        },
+        {
+          "start": 22,
+          "end": 28.27
+        },
+        {
+          "start": 28.4,
+          "end": 32.8
+        },
+        {
+          "start": 32.93,
+          "end": 39.2
+        },
+        {
+          "start": 39.33,
+          "end": 45.2
+        },
+        {
+          "start": 45.33,
+          "end": 51.6
+        },
+        {
+          "start": 52,
+          "end": 59.07
+        },
+        {
+          "start": 59.2,
+          "end": 65.33
+        },
+        {
+          "start": 65.47,
+          "end": 71.6
+        },
+        {
+          "start": 71.73,
+          "end": 78.67
+        },
+        {
+          "start": 78.93,
+          "end": 84.8
+        }
+      ]
     },
     {
       "type": "chart",
@@ -37,25 +110,59 @@
     },
     {
       "type": "text",
-      "heading": "Play it again",
-      "text": "In Robert Axelrod’s 1980 computer tournaments of the repeated game, the winner was tit for tat: cooperate first, then copy whatever the other player did last."
+      "heading": "A trap made of logic",
+      "text": "Mutual betrayal is the game’s only strong Nash equilibrium: neither player can do better by changing just their own move. Merrill Flood and Melvin Dresher devised the puzzle at the RAND Corporation in 1950; Albert W. Tucker later framed it as prison sentences."
     },
     {
       "type": "text",
-      "heading": "The lesson",
-      "text": "When people expect to meet again, cooperation can pay. That is one reason reputation, repeat customers and long-term contracts matter so much."
+      "heading": "Play it again",
+      "text": "Robert Axelrod invited colleagues to send in computer strategies for the repeated game, with each pair playing 200 rounds. Tit for tat, the entry from Anatol Rapoport, was both the simplest strategy and the winner, in both of his tournaments."
     },
     {
-      "type": "quiz",
-      "question": "Which strategy won Axelrod’s repeated-game tournaments?",
-      "options": [
-        "Tit for tat: cooperate, then copy",
-        "Always betray",
-        "Always stay silent",
-        "Betray at random"
+      "type": "list",
+      "heading": "What the successful strategies shared",
+      "items": [
+        "Nice: never the first to betray",
+        "Retaliating: hits back after a betrayal",
+        "Forgiving: goes back to cooperating",
+        "Non-envious: doesn’t try to outscore the other"
+      ]
+    },
+    {
+      "type": "sort",
+      "heading": "Nice means never betraying first. Nice or not?",
+      "bins": [
+        "Nice",
+        "Not nice"
       ],
-      "answer": 0,
-      "explanation": "Tit for tat cooperates first, then copies whatever the other player did last. When people expect to meet again, cooperation can pay."
+      "items": [
+        {
+          "text": "Tit for tat",
+          "bin": 0
+        },
+        {
+          "text": "Always betray",
+          "bin": 1
+        },
+        {
+          "text": "Always stay silent",
+          "bin": 0
+        },
+        {
+          "text": "Flip a coin every round",
+          "bin": 1
+        },
+        {
+          "text": "Tit for two tats",
+          "bin": 0
+        }
+      ],
+      "explanation": "A coin flip may betray in round one. Tit for two tats is even more patient than tit for tat: it only hits back after two betrayals in a row."
+    },
+    {
+      "type": "text",
+      "heading": "Winning without beating anyone",
+      "text": "Tit for tat only betrays after being betrayed, so it can never finish a match with fewer years than its opponent. In the animation’s mini-tournament it still had the lowest total, by settling into long runs of silence with the strategies that cooperated."
     }
   ],
   "tags": [
@@ -66,6 +173,12 @@
   "source": {
     "label": "Wikipedia: Prisoner’s dilemma",
     "url": "https://en.wikipedia.org/wiki/Prisoner%27s_dilemma"
+  },
+  "theme": {
+    "gradient": [
+      "#191512",
+      "#7A2B22"
+    ]
   },
   "author": {
     "name": "Claude",

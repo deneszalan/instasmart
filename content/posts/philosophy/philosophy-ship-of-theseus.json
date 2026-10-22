@@ -2,10 +2,106 @@
   "$schema": "../../schema/post.schema.json",
   "id": "philosophy-ship-of-theseus",
   "field": "philosophy",
-  "title": "A ship rebuilt plank by plank has puzzled thinkers for two millennia",
+  "title": "Hobbes’s twist on the Ship of Theseus leaves you with two rival ships",
   "emoji": "⛵",
-  "body": "The Greek biographer Plutarch, writing around AD 100, says the Athenians preserved the ship of the hero Theseus by swapping each rotten plank for new timber, until philosophers argued over whether it was still the same ship. The puzzle is really about identity over time: what makes anything, including you, the same thing from one year to the next when its parts keep changing?",
+  "body": "The Greek biographer Plutarch tells how the Athenians preserved the thirty-oared ship of the mythical king Theseus, taking out the old planks as they decayed and putting in new, strong timber, until philosophers argued over whether it was still the same ship. In *De Corpore* (1655) Thomas Hobbes added a twist: suppose someone kept every old plank and put them back together in the same order. Now two ships have a claim to be the original, one with the same **form** and one with the same **matter**. The puzzle is about identity over time: what makes anything, including a person, the same thing when its parts change?",
   "slides": [
+    {
+      "type": "video",
+      "src": "two-ships.mp4",
+      "poster": "two-ships.jpg",
+      "alt": "Animation of a Greek galley in profile on blue sea. One by one its 38 weathered hull planks are swapped for fresh honey-coloured wood, and the old ones pile up on a stone quay. Then they fly back together into a second ship, labelled matter, while the repaired one is labelled form.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Ascending the Vale” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.67,
+          "end": 8
+        },
+        {
+          "start": 8.27,
+          "end": 14.67
+        },
+        {
+          "start": 14.93,
+          "end": 22.13
+        },
+        {
+          "start": 22.4,
+          "end": 29.6
+        },
+        {
+          "start": 29.87,
+          "end": 36.53
+        },
+        {
+          "start": 36.8,
+          "end": 44.27
+        },
+        {
+          "start": 44.53,
+          "end": 51.73
+        },
+        {
+          "start": 52,
+          "end": 59.2
+        },
+        {
+          "start": 59.47,
+          "end": 66.4
+        },
+        {
+          "start": 66.67,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 82.13
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "They took away the old planks as they decayed, putting in new and strong timber in their places, insomuch that this ship became a standing example among the philosophers, for the logical question of things that grow.",
+      "attribution": "Plutarch, Life of Theseus 23.1"
+    },
+    {
+      "type": "compare",
+      "heading": "Two ways to be the same ship",
+      "left": {
+        "label": "Form",
+        "text": "The repaired ship keeps the original’s form through a complete change of material: every plank is new."
+      },
+      "right": {
+        "label": "Matter",
+        "text": "The rebuilt ship is made of the original planks, put back together in the same order."
+      }
+    },
+    {
+      "type": "match",
+      "heading": "Match each to its part in the puzzle",
+      "pairs": [
+        {
+          "left": "Plutarch",
+          "right": "Tells the tale"
+        },
+        {
+          "left": "Thomas Hobbes",
+          "right": "Rebuilds the old planks"
+        },
+        {
+          "left": "David Lewis",
+          "right": "Objects as time slices"
+        },
+        {
+          "left": "Ise Shrine",
+          "right": "New wood every 20 years"
+        }
+      ],
+      "explanation": "Plutarch reports the repairs; Hobbes imagined a second ship of old planks; Lewis treated objects as time slices; Ise is rebuilt every 20 years."
+    },
     {
       "type": "estimate",
       "question": "Japan’s Ise Shrine is rebuilt with fresh timber on a fixed cycle. How many years?",
@@ -18,70 +114,13 @@
     },
     {
       "type": "text",
-      "heading": "Hobbes’s twist",
-      "text": "In 1655 Thomas Hobbes asked: what if someone kept every discarded plank and rebuilt the original ship? Now there are two ships, and both have a claim."
-    },
-    {
-      "type": "text",
-      "heading": "Form or matter?",
-      "text": "If identity follows the parts, the rebuilt ship is the original. If it follows shape, function and unbroken history, the repaired one is."
-    },
-    {
-      "type": "text",
-      "heading": "Real-world versions",
-      "text": "Japan’s Ise Shrine is rebuilt with fresh timber every 20 years, yet is treated as the same sacred place. Restored antiques and old bands raise the same question."
-    },
-    {
-      "type": "place",
-      "question": "When was Japan’s Ise Shrine first ceremonially rebuilt?",
-      "min": 1,
-      "max": 2050,
-      "step": 1,
-      "answer": 692,
-      "format": "year",
-      "ends": [
-        "AD 1",
-        "Today"
-      ],
-      "hints": [
-        {
-          "label": "Plutarch",
-          "value": 100
-        },
-        {
-          "label": "Hobbes",
-          "value": 1655
-        },
-        {
-          "label": "62nd rebuild",
-          "value": 2013
-        }
-      ],
-      "explanation": "Empress Jitō carried out the first ceremonial rebuilding in 692. Rebuilt roughly every 20 years since, with some wartime delays, the shrine reached its 62nd version in 2013; the next is due in 2033."
+      "heading": "Real ships of Theseus",
+      "text": "Only a small part of the frigate USS *Constitution*, launched in 1797, is thought to be original wood. The submersible *Alvin* is taken apart every few years, and every one of its components has been replaced at least once."
     },
     {
       "type": "text",
       "heading": "Why it matters",
-      "text": "Many of the molecules in your body are replaced over time. Whether a person is their matter, their pattern or their memories is still debated."
-    },
-    {
-      "type": "match",
-      "heading": "Match each to its part in the puzzle",
-      "pairs": [
-        {
-          "left": "Plutarch",
-          "right": "Tells the tale, c. AD 100"
-        },
-        {
-          "left": "Thomas Hobbes",
-          "right": "Rebuilds the old planks"
-        },
-        {
-          "left": "Ise Shrine",
-          "right": "New timber every 20 years"
-        }
-      ],
-      "explanation": "Plutarch reports the Athenians’ repairs; Hobbes imagined a second ship built from the discarded planks; Ise is rebuilt on a 20-year cycle."
+      "text": "In the philosophy of mind, the puzzle has inspired many proposed answers to what keeps a person the same person over time."
     }
   ],
   "tags": [
@@ -98,5 +137,11 @@
     "name": "Claude",
     "kind": "ai"
   },
-  "createdAt": "2026-10-18"
+  "createdAt": "2026-10-18",
+  "theme": {
+    "gradient": [
+      "#0F3E66",
+      "#7A4A1E"
+    ]
+  }
 }

@@ -460,7 +460,8 @@ function captions(t) {
 }
 
 Kit.scene({
-  width: W, height: H, duration: 54.2,
+  // Real time, unlike other scenes: the flash timings are the demonstration, and the readouts give them in ms.
+  width: W, height: H, duration: 54.2, pace: 1,
   fonts: [{ family: F, file: 'Jost.woff2', weight: '100 900' }],
   draw(t, tools) {
     k = tools; ctx = tools.ctx;

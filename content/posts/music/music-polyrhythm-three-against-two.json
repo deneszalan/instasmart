@@ -1,0 +1,130 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-polyrhythm-three-against-two",
+  "field": "music",
+  "title": "Three beats against two lock together on a hidden grid of six",
+  "emoji": "🥁",
+  "body": "A polyrhythm plays two rhythms at once that don’t simply grow out of each other. The classic is 3 against 2: three evenly spaced beats and two evenly spaced beats in the same stretch of time, also called a hemiola. To count it, cut the time into the lowest common multiple of 3 and 2, which is 6. The threes land on steps 1, 3 and 5, the twos on 1 and 4, and together they make the rhythm of the phrase “not difficult”.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "polyrhythm-drum.mp4",
+      "poster": "polyrhythm-drum.jpg",
+      "alt": "Animation of a drum head with two rotating rings: three coral markers and two cyan markers flash as they pass a strike point. A six-step grid shows the three on steps 1, 3 and 5 and the two on 1 and 4, the words “not difficult” land on the combined hits, and a 4-against-3 grid of 12 follows.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Journey To Ascend” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.67,
+          "end": 6.93
+        },
+        {
+          "start": 7.07,
+          "end": 13.47
+        },
+        {
+          "start": 13.73,
+          "end": 19.47
+        },
+        {
+          "start": 19.6,
+          "end": 24.8
+        },
+        {
+          "start": 24.93,
+          "end": 31.73
+        },
+        {
+          "start": 32,
+          "end": 38.27
+        },
+        {
+          "start": 38.4,
+          "end": 44.53
+        },
+        {
+          "start": 44.67,
+          "end": 50.93
+        },
+        {
+          "start": 51.2,
+          "end": 57.6
+        },
+        {
+          "start": 57.73,
+          "end": 64.53
+        },
+        {
+          "start": 64.8,
+          "end": 71.2
+        },
+        {
+          "start": 71.33,
+          "end": 77.87
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Try it on a table",
+      "text": "Count six quick steps: 1 2 3 4 5 6. Your right hand taps 1, 3 and 5; your left taps 1 and 4. Speed up and you are playing three against two, with hits on 1, 3, 4 and 5."
+    },
+    {
+      "type": "text",
+      "heading": "Written as a triplet",
+      "text": "In written music, the three can be shown as a triplet: three notes squeezed into the time of two ordinary ones, each two-thirds of its usual length, marked with a small 3."
+    },
+    {
+      "type": "text",
+      "heading": "Where it runs deep",
+      "text": "The 3:2 relationship and its variations are the foundation of most typical polyrhythmic textures in West African music, and 3:2 is also listed among the common polyrhythms of jazz."
+    },
+    {
+      "type": "odd",
+      "heading": "Which phrase doesn’t fit the 3-against-2 rhythm?",
+      "items": [
+        "not difficult",
+        "cold cup of tea",
+        "four funny frogs",
+        "happy birthday to you"
+      ],
+      "answer": 3,
+      "explanation": "The others have four syllables that fall on steps 1, 3, 4 and 5 of the six-step grid. “Happy birthday to you” has six syllables, too many for the four hits."
+    },
+    {
+      "type": "quiz",
+      "question": "Using the same trick, how many equal steps do you need to count 5 against 4?",
+      "options": [
+        "9",
+        "20",
+        "10",
+        "45"
+      ],
+      "answer": 1,
+      "explanation": "The grid is the lowest common multiple: 20 is the smallest number that both 5 and 4 divide evenly, so the fives land every 4 steps and the fours every 5."
+    }
+  ],
+  "tags": [
+    "rhythm",
+    "polyrhythm",
+    "drums",
+    "maths"
+  ],
+  "source": {
+    "label": "Wikipedia: Polyrhythm",
+    "url": "https://en.wikipedia.org/wiki/Polyrhythm"
+  },
+  "theme": {
+    "gradient": [
+      "#1A1036",
+      "#5B1A4A"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

@@ -4,7 +4,7 @@
   "field": "math",
   "title": "In a room of 23 people, a shared birthday is more likely than not",
   "emoji": "🎂",
-  "body": "The trick is that birthdays get compared between every pair of people, not just against yours. With 23 people there are 253 possible pairs, and each pair is another chance for a match, so the probability of at least one shared birthday passes 50%. With 70 people it tops 99.9%. The same maths, known as the birthday attack, tells cryptographers how quickly two different inputs to a hash function are likely to collide.",
+  "body": "The trick is that birthdays get compared between every pair of people, not just against yours. With 23 people there are **253 possible pairs**, and each one is another chance for a match, so the probability of at least one shared birthday passes 50%: it's 50.7%. With 70 people it tops 99.9%. The same maths, known as the birthday attack, tells cryptographers how quickly two different inputs to a hash function are likely to collide.",
   "slides": [
     {
       "type": "estimate",
@@ -14,31 +14,72 @@
       "step": 1,
       "answer": 253,
       "unit": "pairs",
-      "explanation": "253 pairs, and each pair is another chance for a match. That is why the odds of a shared birthday pass 50% with 23 people and top 99.9% with 70."
+      "explanation": "253 pairs: each of the 23 can pair with 22 others, and that counts every pair twice, so 23 × 22 ÷ 2 = 253."
     },
     {
-      "type": "place",
-      "question": "In a room of 50 people, how likely is it that at least two share a birthday?",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "answer": 97,
-      "unit": "%",
-      "ends": [
-        "Impossible",
-        "Certain"
-      ],
-      "hints": [
+      "type": "video",
+      "src": "birthday-explainer.mp4",
+      "poster": "birthday-explainer.jpg",
+      "alt": "Animation at a party: 23 guests drop onto a calendar of 365 days until two land on the same day, and 1,000 simulated parties fill a grid, about half with a match. Lines join every pair of guests, 253 in all, and a curve climbs to 50.7% at 23 people and 99.9% at 70.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Sunflower Dance Party” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
         {
-          "label": "10 people",
-          "value": 11.7
+          "start": 0.53,
+          "end": 7.07
         },
         {
-          "label": "23 people",
-          "value": 50.7
+          "start": 7.2,
+          "end": 12.93
+        },
+        {
+          "start": 13.2,
+          "end": 21.4
+        },
+        {
+          "start": 21.53,
+          "end": 27.87
+        },
+        {
+          "start": 28,
+          "end": 33.73
+        },
+        {
+          "start": 33.87,
+          "end": 39.6
+        },
+        {
+          "start": 39.73,
+          "end": 45.73
+        },
+        {
+          "start": 45.87,
+          "end": 52.4
+        },
+        {
+          "start": 52.53,
+          "end": 58.8
+        },
+        {
+          "start": 59.33,
+          "end": 64.8
+        },
+        {
+          "start": 64.93,
+          "end": 71.07
+        },
+        {
+          "start": 71.2,
+          "end": 78.13
         }
-      ],
-      "explanation": "97%. The odds climb fast: 70.6% with 30 people, 89.1% with 40, 97% with 50 and 99.9% with 70, assuming 365 equally likely birthdays and no leap days."
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why it feels wrong",
+      "text": "We tend to compare everyone's birthday with our own. With 22 other people, the chance that someone shares yours is only about 6%. But the others also get compared with each other, and those pairs are most of the 253."
     },
     {
       "type": "chart",
@@ -72,6 +113,23 @@
       ],
       "unit": "%",
       "note": "Assuming 365 equally likely birthdays and ignoring leap days."
+    },
+    {
+      "type": "quiz",
+      "question": "How many other people would it take for a better-than-even chance that one shares your own birthday?",
+      "options": [
+        "23",
+        "183",
+        "253",
+        "365"
+      ],
+      "answer": 2,
+      "explanation": "At least 253. Every comparison now has to involve you, so you need far more people. Curiously, it's the same number as the pairs among 23 people."
+    },
+    {
+      "type": "text",
+      "heading": "Real birthdays",
+      "text": "The maths assumes 365 equally likely birthdays and ignores leap days and twins. Real birthdays are a little uneven, which only makes a match more likely, but not by enough to matter: it still takes 23 people."
     }
   ],
   "tags": [
@@ -82,6 +140,12 @@
   "source": {
     "label": "Wikipedia: Birthday problem",
     "url": "https://en.wikipedia.org/wiki/Birthday_problem"
+  },
+  "theme": {
+    "gradient": [
+      "#24104A",
+      "#3A1A66"
+    ]
   },
   "author": {
     "name": "Claude",

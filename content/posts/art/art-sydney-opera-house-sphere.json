@@ -4,8 +4,92 @@
   "field": "art",
   "title": "Every shell of the Sydney Opera House is cut from the same sphere",
   "emoji": "🎭",
-  "body": "Jørn Utzon’s winning design of 1957 showed soaring shells with no defined geometry, and for years nobody could work out how to build them. The breakthrough was to make every shell a section of one imaginary sphere, so curved ribs could be cast from shared moulds. The roofs are clad in 1,056,006 tiles in two finishes, glossy white and matte cream, laid in a subtle chevron pattern.",
+  "body": "Jørn Utzon’s winning design of 1957 showed soaring shells with no defined geometry, and for years nobody could work out how to build them affordably. In mid-1961 the design team found the answer: make every shell a section of one imaginary sphere, 75.2 metres in radius. With the same curvature everywhere, ribs of different lengths could be cast in a common mould from segments of a common length. The roofs are clad in 1,056,006 tiles in two finishes, glossy white and matte cream, laid in a subtle chevron pattern.",
   "slides": [
+    {
+      "type": "video",
+      "src": "sphere.mp4",
+      "poster": "sphere.jpg",
+      "alt": "Animation at dusk over the harbour: the Opera House shells rise, tried curves morph, then three triangles are cut from a turning wireframe sphere of radius 75.2 m. One circle fits every shell’s ridge, ribs are built from identical segments, and chevron tiles are counted to 1,056,006.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Infinite Perspective” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.27,
+          "end": 11.87
+        },
+        {
+          "start": 12,
+          "end": 17.33
+        },
+        {
+          "start": 17.47,
+          "end": 23.87
+        },
+        {
+          "start": 24,
+          "end": 30.13
+        },
+        {
+          "start": 30.27,
+          "end": 36
+        },
+        {
+          "start": 36.13,
+          "end": 40.8
+        },
+        {
+          "start": 40.93,
+          "end": 46.67
+        },
+        {
+          "start": 46.8,
+          "end": 52.8
+        },
+        {
+          "start": 52.93,
+          "end": 59.47
+        },
+        {
+          "start": 59.6,
+          "end": 64.8
+        },
+        {
+          "start": 64.93,
+          "end": 70.13
+        },
+        {
+          "start": 70.27,
+          "end": 76.8
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "A sketch wins",
+      "text": "In 1957 Utzon, a Danish architect who had never seen one of his designs built, beat 232 other entries in Sydney’s international design competition."
+    },
+    {
+      "type": "text",
+      "heading": "Years of failed geometry",
+      "text": "From 1957 to 1963 the team tried at least 12 versions of the shells, from parabolas to ellipsoids. With no repeated curves, casting each piece separately would have been hugely expensive."
+    },
+    {
+      "type": "quote",
+      "text": "Utzon came up with an idea of making all the shells of uniform curvature throughout in both directions.",
+      "attribution": "Ove Arup, in a letter to a member of the Opera House committee"
+    },
+    {
+      "type": "text",
+      "heading": "Whose idea?",
+      "text": "The spherical solution was first credited to Utzon, but some of the engineers at Ove Arup & Partners remembered it differently. Who had it first is still disputed; Utzon, Arup and Ronald Jenkins all played a big part."
+    },
     {
       "type": "estimate",
       "question": "The Opera House was budgeted at $7 million. What did it finally cost?",
@@ -17,41 +101,10 @@
       "explanation": "Budgeted at $7 million for 1963, it opened in 1973 at $102 million. Utzon had resigned in 1966 and never returned, but won the Pritzker Prize in 2003."
     },
     {
-      "type": "text",
-      "heading": "A sketch wins",
-      "text": "In 1957 Utzon, a Danish architect who had never seen one of his designs built, beat 232 other entries in Sydney’s international design competition."
-    },
-    {
-      "type": "text",
-      "heading": "Years of failed geometry",
-      "text": "From 1957 to 1963 the team tried at least 12 versions of the shells, from parabolas to ellipsoids, hunting for a form that could be built affordably."
-    },
-    {
-      "type": "text",
-      "heading": "The spherical solution",
-      "text": "In mid-1961 they settled on taking every shell from the surface of a single sphere, so standard rib segments could be precast and assembled."
-    },
-    {
-      "type": "text",
-      "heading": "A bitter ending",
-      "text": "Budgeted at $7 million for 1963, it opened in 1973 at $102 million. Utzon resigned in 1966 and never returned, but won the Pritzker Prize in 2003."
-    },
-    {
-      "type": "scale",
-      "heading": "Budget against final cost",
-      "items": [
-        {
-          "label": "Budget, 1963",
-          "value": 7
-        },
-        {
-          "label": "Final cost, 1973",
-          "value": 102,
-          "emphasis": true
-        }
-      ],
-      "unit": "million dollars",
-      "note": "More than fourteen times the original estimate, and the building opened ten years late."
+      "type": "stat",
+      "value": "1,056,006",
+      "label": "tiles on the shells",
+      "text": "Made by Höganäs in Sweden: the Sydney Tile, 120 mm square, in glossy white or matte cream."
     },
     {
       "type": "match",
@@ -78,18 +131,25 @@
           "right": "Utzon wins the Pritzker"
         }
       ],
-      "explanation": "A 1957 sketch beat 232 rivals; the sphere idea came in mid-1961; Utzon quit in 1966 and never returned; it opened in 1973; the Pritzker came in 2003."
+      "explanation": "A 1957 design beat 232 rivals; the sphere idea came in mid-1961; Utzon quit in 1966 and never returned; it opened in 1973; the Pritzker came in 2003."
     }
   ],
   "tags": [
     "art",
     "architecture",
     "geometry",
-    "design"
+    "design",
+    "sydney"
   ],
   "source": {
     "label": "Wikipedia: Sydney Opera House",
     "url": "https://en.wikipedia.org/wiki/Sydney_Opera_House"
+  },
+  "theme": {
+    "gradient": [
+      "#0B2A4A",
+      "#1B4A78"
+    ]
   },
   "author": {
     "name": "Claude",

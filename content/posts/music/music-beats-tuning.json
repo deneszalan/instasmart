@@ -1,0 +1,128 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "music-beats-tuning",
+  "field": "music",
+  "title": "Play two notes 2 Hz apart and the sound throbs twice a second",
+  "emoji": "🎶",
+  "body": "When two tones of slightly different frequencies sound together, their waves drift in and out of step. In step they add up and the sound gets louder; half a cycle apart they cancel and it goes quiet. This pulsing is called **beating**, and it repeats at the difference between the two frequencies: 222 Hz and 220 Hz beat twice a second. Musicians use it to check their tuning, because the beats slow down as two notes approach unison.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "beats-forks.mp4",
+      "poster": "beats-forks.jpg",
+      "alt": "Animation on a wooden table: tuning forks at 220 Hz and 222 Hz ring together while a loudness strip pulses twice a second. Their waves drift from in step to opposite, one second of the summed wave swells twice, and a string tuned towards 220 Hz makes the beats slow down and stop.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“That Zen Moment” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.67,
+          "end": 6.4
+        },
+        {
+          "start": 6.53,
+          "end": 13.6
+        },
+        {
+          "start": 14.13,
+          "end": 20.27
+        },
+        {
+          "start": 20.4,
+          "end": 26.67
+        },
+        {
+          "start": 26.8,
+          "end": 32.93
+        },
+        {
+          "start": 33.33,
+          "end": 39.33
+        },
+        {
+          "start": 39.47,
+          "end": 45.73
+        },
+        {
+          "start": 45.87,
+          "end": 51.2
+        },
+        {
+          "start": 51.6,
+          "end": 58.13
+        },
+        {
+          "start": 58.27,
+          "end": 64.8
+        },
+        {
+          "start": 64.93,
+          "end": 71.2
+        },
+        {
+          "start": 71.73,
+          "end": 77.87
+        },
+        {
+          "start": 78,
+          "end": 83.87
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why the sound throbs",
+      "text": "Where the two waves peak together, they reinforce each other. Where one peaks as the other dips, they cancel. Because one vibrates slightly faster, the waves keep drifting from one state to the other and back, so the loudness rises and falls."
+    },
+    {
+      "type": "text",
+      "heading": "The maths in one line",
+      "text": "Adding two equal sine waves gives one wave at their average frequency, 221 Hz here, whose strength swells and fades. Its loudness peaks f₁ − f₂ times a second: that is the beat rate."
+    },
+    {
+      "type": "reveal",
+      "prompt": "Piano and organ tuners don’t only listen for beats to vanish. What else do they do with them?",
+      "answer": "They count them",
+      "detail": "Tuners count beats, aiming at a particular number for each interval. Beats also help musicians check unisons and fifths."
+    },
+    {
+      "type": "text",
+      "heading": "Beating on purpose",
+      "text": "Many pipe organs have a céleste stop: two sets of pipes tuned slightly apart, so the beats between them give the sound a gentle, undulating shimmer."
+    },
+    {
+      "type": "quiz",
+      "question": "A string at 443 Hz sounds together with a 440 Hz tuning fork. How many beats do you hear each second?",
+      "options": [
+        "3",
+        "1.5",
+        "440",
+        "883"
+      ],
+      "answer": 0,
+      "explanation": "The beat rate is the difference between the two frequencies: 443 − 440 = 3 beats per second. Tune the string down and the beats slow."
+    }
+  ],
+  "tags": [
+    "acoustics",
+    "tuning",
+    "waves",
+    "interference"
+  ],
+  "source": {
+    "label": "Wikipedia: Beat (acoustics)",
+    "url": "https://en.wikipedia.org/wiki/Beat_(acoustics)"
+  },
+  "theme": {
+    "gradient": [
+      "#24150B",
+      "#5A3A16"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

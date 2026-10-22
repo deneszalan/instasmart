@@ -17,48 +17,48 @@
       "music": "“Temple of the Manes” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "start": 0.5,
-          "end": 4.3
+          "start": 0.67,
+          "end": 5.73
         },
         {
-          "start": 4.4,
-          "end": 10
+          "start": 5.87,
+          "end": 13.33
         },
         {
-          "start": 10.1,
-          "end": 15.1
+          "start": 13.47,
+          "end": 20.13
         },
         {
-          "start": 15.2,
-          "end": 20.4
+          "start": 20.27,
+          "end": 27.2
         },
         {
-          "start": 20.5,
-          "end": 25.2
+          "start": 27.33,
+          "end": 33.6
         },
         {
-          "start": 25.3,
-          "end": 29.7
+          "start": 33.73,
+          "end": 39.6
         },
         {
-          "start": 29.8,
-          "end": 34.8
+          "start": 39.73,
+          "end": 46.4
         },
         {
-          "start": 34.9,
-          "end": 40.5
+          "start": 46.53,
+          "end": 54
         },
         {
-          "start": 40.6,
-          "end": 44.5
+          "start": 54.13,
+          "end": 59.33
         },
         {
-          "start": 44.6,
-          "end": 49.6
+          "start": 59.47,
+          "end": 66.13
         },
         {
-          "start": 49.7,
-          "end": 54.7
+          "start": 66.27,
+          "end": 72.93
         }
       ]
     },

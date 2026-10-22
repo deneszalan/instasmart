@@ -1,0 +1,145 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-binary-adder-logic-gates",
+  "field": "tech",
+  "title": "Two logic gates can add bits, and chained together they add numbers",
+  "emoji": "⚡",
+  "body": "A **half adder** adds two binary digits with just two logic gates: an XOR gate gives the sum bit, on when exactly one input is on, and an AND gate gives the carry, on when both are. A **full adder** also takes a carry in, and can be built from two half adders and an OR gate. Line full adders up side by side and each carry ripples into the next column, just like carrying digits when you add by hand. This ripple-carry adder is simple but relatively slow, because each stage has to wait for the carry from the one before.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "5 is 0101 in binary and 3 is 0011. What is 5 + 3 in binary?",
+      "answer": "1000",
+      "detail": "That's 8: one 8, no 4s, no 2s and no 1s. Every column produces a carry that moves one place left."
+    },
+    {
+      "type": "video",
+      "src": "ripple-adder.mp4",
+      "poster": "ripple-adder.jpg",
+      "alt": "Animation on a green circuit board: an XOR and an AND gate add 1 + 1 to give 10, two half adders and an OR gate form a full adder, and four full adders in a row add 0101 + 0011 as glowing carries ripple from right to left, giving 1000, or 8.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Voxel Revolution” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.67
+        },
+        {
+          "start": 6.8,
+          "end": 12.27
+        },
+        {
+          "start": 12.53,
+          "end": 18.53
+        },
+        {
+          "start": 18.67,
+          "end": 25.6
+        },
+        {
+          "start": 25.73,
+          "end": 31.87
+        },
+        {
+          "start": 32.13,
+          "end": 39.07
+        },
+        {
+          "start": 39.2,
+          "end": 44.53
+        },
+        {
+          "start": 44.8,
+          "end": 50.67
+        },
+        {
+          "start": 50.8,
+          "end": 56.4
+        },
+        {
+          "start": 56.53,
+          "end": 62.13
+        },
+        {
+          "start": 62.27,
+          "end": 67.73
+        },
+        {
+          "start": 67.87,
+          "end": 73.87
+        },
+        {
+          "start": 74,
+          "end": 80.67
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "In a half adder, when does the AND gate switch the carry on?",
+      "options": [
+        "When both input bits are 1",
+        "When either input bit is 1",
+        "When both input bits are 0",
+        "When exactly one bit is 1"
+      ],
+      "answer": 0,
+      "explanation": "Only 1 + 1 overflows a single bit, giving binary 10. Exactly one 1 is the XOR gate's job: that's when the sum bit is on."
+    },
+    {
+      "type": "flow",
+      "heading": "Inside a full adder",
+      "steps": [
+        {
+          "icon": "🔢",
+          "label": "A first half adder adds bits A and B"
+        },
+        {
+          "icon": "➕",
+          "label": "A second adds that sum to the carry in"
+        },
+        {
+          "icon": "🔀",
+          "label": "An OR gate joins the two carries"
+        },
+        {
+          "icon": "➡️",
+          "label": "Out come a sum bit and a carry out"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why rippling is slow",
+      "text": "Each full adder must wait for the carry from its neighbour, so a 32-bit ripple-carry adder waits on a chain of 32 of them. Faster designs, such as the carry-lookahead adder, work out the carries in advance."
+    },
+    {
+      "type": "text",
+      "heading": "An early adder",
+      "text": "In 1937, George Stibitz built a 2-bit binary adder, the Model K. In a ripple-carry adder, the first full adder can be swapped for a half adder, since nothing carries into the first column."
+    }
+  ],
+  "tags": [
+    "logic",
+    "binary",
+    "electronics",
+    "computing"
+  ],
+  "source": {
+    "label": "Wikipedia: Adder (electronics)",
+    "url": "https://en.wikipedia.org/wiki/Adder_(electronics)"
+  },
+  "theme": {
+    "gradient": [
+      "#08331D",
+      "#0F4B2C"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

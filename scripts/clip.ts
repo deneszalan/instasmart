@@ -13,7 +13,7 @@ import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
 import { mediaProblems } from '../shared/validate.ts';
 import { postHome } from './disk.ts';
-import { MAX_VIDEO_BYTES, MAX_VIDEO_SECONDS, MIN_VIDEO_SECONDS, readMp4 } from '../shared/video.ts';
+import { maxVideoBytes, MAX_VIDEO_SECONDS, MIN_VIDEO_SECONDS, readMp4 } from '../shared/video.ts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -135,7 +135,7 @@ function main(): number {
     }
     args.push('-t', String(length), '-movflags', '+faststart', clip);
     run('ffmpeg', args);
-    if (statSync(clip).size <= MAX_VIDEO_BYTES * 0.95) break;
+    if (statSync(clip).size <= maxVideoBytes(length) * 0.95) break;
   }
 
   const stillAt = start + (values.still === undefined ? Math.min(1, length / 2) : Number(values.still));

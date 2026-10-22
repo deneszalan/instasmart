@@ -2,24 +2,76 @@
   "$schema": "../../schema/post.schema.json",
   "id": "chemistry-ice-floats",
   "field": "chemistry",
-  "title": "Ice floats because water does something almost nothing else does",
+  "title": "Ice floats because freezing locks water molecules further apart",
   "emoji": "🧊",
-  "body": "Most substances shrink when they freeze, so their solid sinks in their own liquid. Water does the opposite. As it freezes, hydrogen bonds lock its V-shaped molecules into an open, hexagonal lattice with lots of empty space, making ice about 9% less dense than liquid water. That one quirk shapes our planet: ice forms a floating lid on lakes and oceans, insulating the water below and letting life survive the winter.",
+  "body": "When water freezes, hydrogen bonds lock its V-shaped molecules into an open, hexagonal lattice with more empty space than the jostling liquid. So a litre of water becomes about 1.09 litres of ice, and ice is about 8.3% less dense: 0.9167 g/cm³ against about 0.9998 g/cm³ for water at 0 °C. Liquid water is densest at about 4 °C, so in winter that water sinks to the bottom of a lake while colder water stays on top and freezes there. The floating ice then shelters the water beneath, where plants and animals live through the winter.",
   "slides": [
     {
       "type": "estimate",
-      "question": "How much less dense is ice than liquid water?",
-      "min": 0,
-      "max": 50,
-      "step": 1,
-      "answer": 9,
-      "unit": "%",
-      "explanation": "About 9%. As water freezes, hydrogen bonds lock its molecules into an open hexagonal lattice full of empty space, so ice floats as a lid on lakes and oceans."
+      "question": "Freeze exactly 1 litre of water. About how much ice do you get?",
+      "min": 900,
+      "max": 1300,
+      "step": 10,
+      "answer": 1090,
+      "unit": "mL",
+      "explanation": "About 1,090 mL. Water expands by about 9% as it freezes, because hydrogen bonds hold its molecules apart in an open lattice."
+    },
+    {
+      "type": "video",
+      "src": "ice-floats-explainer.mp4",
+      "poster": "ice-floats-explainer.jpg",
+      "alt": "Animation: an ice cube floats in a glass, and a litre of water freezes into 1.09 litres of ice. V-shaped water molecules tumble, then lock into a hexagonal lattice with dashed hydrogen bonds. A balance weighs water against ice, and a lake cools to 4 °C at the bottom while ice forms on top.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Winter Chimes” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 7.07
+        },
+        {
+          "start": 7.2,
+          "end": 13.6
+        },
+        {
+          "start": 13.87,
+          "end": 20.53
+        },
+        {
+          "start": 20.67,
+          "end": 25.87
+        },
+        {
+          "start": 26,
+          "end": 32
+        },
+        {
+          "start": 32.13,
+          "end": 38.93
+        },
+        {
+          "start": 39.2,
+          "end": 45.87
+        },
+        {
+          "start": 46.13,
+          "end": 53.6
+        },
+        {
+          "start": 53.73,
+          "end": 60.93
+        },
+        {
+          "start": 61.07,
+          "end": 67.73
+        }
+      ]
     },
     {
       "type": "text",
       "heading": "Densest at 4 °C",
-      "text": "Liquid water is densest at about 4 °C. In winter that water sinks to the bottom of lakes while colder water rises, so lakes freeze from the top down."
+      "text": "Most liquids get denser as they cool. Water does too, but only down to about 4 °C. Colder than that, the molecules start to line up as they will in ice, and the water gets lighter again."
     },
     {
       "type": "spectrum",
@@ -50,27 +102,46 @@
           "value": 999.97
         }
       ],
-      "note": "Ice is about 9% less dense than the water it floats on."
+      "note": "Ice is about 8.3% less dense than the water it floats on."
     },
     {
       "type": "text",
-      "heading": "Pipes and potholes",
-      "text": "Freezing water expands with enough force to burst pipes and split rocks. Repeated freeze–thaw cycles crack roads and help wear down mountains."
+      "heading": "Burst pipes and cracked rocks",
+      "text": "Freezing water expands with great force. It bursts water pipes, and repeated freezing and thawing splits rocks and lifts and cracks roads, a process called frost heaving."
     },
     {
       "type": "text",
       "heading": "A tiny club",
-      "text": "Only a handful of substances also expand when they solidify, including silicon, gallium and bismuth."
+      "text": "Only a handful of other substances also expand when they freeze, among them silicon, gallium, germanium and bismuth."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does the bottom of a deep, frozen lake stay at about 4 °C?",
+      "options": [
+        "Water is densest near 4 °C",
+        "The ice traps heat from the Sun",
+        "Mud on the lake bed gives off heat",
+        "Fish keep the water warm"
+      ],
+      "answer": 0,
+      "explanation": "Water near 4 °C is the densest, so it sinks and stays at the bottom. Colder, lighter water stays on top, where it freezes into a floating lid."
     }
   ],
   "tags": [
     "water",
     "ice",
-    "hydrogenbonds"
+    "hydrogenbonds",
+    "density"
   ],
   "source": {
-    "label": "Wikipedia: Properties of water",
-    "url": "https://en.wikipedia.org/wiki/Properties_of_water"
+    "label": "Wikipedia: Ice",
+    "url": "https://en.wikipedia.org/wiki/Ice"
+  },
+  "theme": {
+    "gradient": [
+      "#06203A",
+      "#0C3A5E"
+    ]
   },
   "author": {
     "name": "Claude",

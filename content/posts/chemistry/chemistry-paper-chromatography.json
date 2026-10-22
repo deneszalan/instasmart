@@ -1,0 +1,158 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-paper-chromatography",
+  "field": "chemistry",
+  "title": "Wet filter paper can split black ink into the colours it’s made of",
+  "emoji": "🖋️",
+  "body": "Put a dot of ink on filter paper and dip the edge in a solvent. The solvent creeps up the paper by capillary action and carries the ink with it, but each dye in the mix travels at its own speed: the more readily a dye dissolves in the solvent, the faster it moves, while dyes that cling to the paper fall behind. The mixture comes apart into bands, and a sample that shows more than one colour must contain more than one kind of molecule.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "ink-bloom.mp4",
+      "poster": "ink-bloom.jpg",
+      "alt": "Animation of a strip of white filter paper with a black ink dot, dipped in a beaker of solvent. As the wet front climbs, the dot splits into yellow, magenta and blue bands. A close-up diagram shows dye molecules sticking to paper fibres or moving with the solvent, then each band's Rf is measured.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Easy Lemon” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.67,
+          "end": 6.13
+        },
+        {
+          "start": 6.27,
+          "end": 11.47
+        },
+        {
+          "start": 11.6,
+          "end": 17.33
+        },
+        {
+          "start": 17.47,
+          "end": 23.47
+        },
+        {
+          "start": 23.6,
+          "end": 30.67
+        },
+        {
+          "start": 30.93,
+          "end": 37.6
+        },
+        {
+          "start": 37.73,
+          "end": 44.27
+        },
+        {
+          "start": 44.4,
+          "end": 50.67
+        },
+        {
+          "start": 50.8,
+          "end": 56.53
+        },
+        {
+          "start": 56.8,
+          "end": 64.27
+        },
+        {
+          "start": 64.53,
+          "end": 71.2
+        },
+        {
+          "start": 71.33,
+          "end": 77.87
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "One phase moves, one stays",
+      "text": "The solvent is the mobile phase: it flows up the paper. The stationary phase is the water trapped between the paper’s cellulose fibres. Each dye divides its time between the two, and that sets its speed."
+    },
+    {
+      "type": "quiz",
+      "question": "A dye moved 3 cm up the paper while the solvent front moved 12 cm. What is the dye’s Rf?",
+      "options": [
+        "0.25",
+        "4",
+        "0.75",
+        "9"
+      ],
+      "answer": 0,
+      "explanation": "Rf is the distance the dye travelled divided by the distance the solvent travelled: 3 ÷ 12 = 0.25. It always lies between 0 (stuck at the start) and 1 (moving with the solvent front)."
+    },
+    {
+      "type": "sort",
+      "heading": "Does this dye climb faster or lag behind?",
+      "bins": [
+        "Climbs faster",
+        "Lags behind"
+      ],
+      "items": [
+        {
+          "text": "Dissolves easily in the solvent",
+          "bin": 0
+        },
+        {
+          "text": "Clings to the wet paper",
+          "bin": 1
+        },
+        {
+          "text": "Has an Rf close to 1",
+          "bin": 0
+        },
+        {
+          "text": "Has an Rf close to 0",
+          "bin": 1
+        }
+      ],
+      "explanation": "The more soluble a dye is in the solvent, the faster it migrates up the paper. A dye with Rf near 0 barely leaves the starting line."
+    },
+    {
+      "type": "timeline",
+      "heading": "Colour writing",
+      "events": [
+        {
+          "when": "1901–05",
+          "text": "Mikhail Tsvet develops it to separate plant pigments"
+        },
+        {
+          "when": "1906",
+          "text": "He first uses the word chromatography in print"
+        },
+        {
+          "when": "1952",
+          "text": "Martin and Synge win the Nobel Prize in Chemistry"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "A fitting name",
+      "text": "Tsvet’s surname is Russian for “colour”. He used the method on chlorophylls and carotenoids from plants. Today paper chromatography is mostly a teaching tool, and it works on colourless chemicals too, if a stain makes the spots visible afterwards."
+    }
+  ],
+  "tags": [
+    "chromatography",
+    "solvents",
+    "experiment",
+    "ink"
+  ],
+  "source": {
+    "label": "Wikipedia: Paper chromatography",
+    "url": "https://en.wikipedia.org/wiki/Paper_chromatography"
+  },
+  "theme": {
+    "gradient": [
+      "#1E2638",
+      "#7A1A4A"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

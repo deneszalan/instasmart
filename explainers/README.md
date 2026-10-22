@@ -13,6 +13,7 @@ explainers/
 ## Make one
 
 1. Write `explainers/<post-id>.js`. It calls `Kit.scene({ width, height, duration, fonts, draw })`; `draw(t, k)` paints the frame at `t` seconds on a canvas, and must depend on nothing but `t`. Start from an existing scene.
+   **Pace:** the clip plays the scene at 75% speed (`pace: 0.75` is the default), so readers have time to read and watch: a 60 s scene becomes an 80 s clip. Write all times (the duration, `t`, caption cues, `--preview` and `--still`) in scene seconds. Clips may last up to 90 s, so keep scenes to 67.5 s.
 2. Check the layout with stills: `npm run explainer -- <post-id> --preview 2,9.5,20`.
 3. Render it with music:
    ```
@@ -30,7 +31,7 @@ explainers/
 - **Facts come from the post's source.** Compute numbers in the scene (the binary search really runs the search) so the picture, captions and source agree. Hedge where the source hedges.
 - **Captions carry the story**: clips start muted, so every step needs a short caption, shown long enough to read. Mark key words with `*…*` or `~…~` and give each mark a colour.
 - **Vary the look.** Each explainer gets its own palette, type and visual motif; don't reuse one scene's colours and layout for the next. Use only fonts you may bundle (SIL Open Font License or similar), and add the font's licence file next to it in `fonts/`.
-- **Format:** 864×1080 (4:5), up to 60 s and 3 MB. Give the slide `"fit": "cover"`: the clip then fills the card, with the slide counter over the top-right corner and a slim control strip (sound, seek bar, credits) over the bottom. So keep every caption and important element above y = 930, with caption blocks around y = 820–840, and keep the top-right corner (x > 740, y < 120) empty. Keep text large: at least 40 px for captions and 22 px for labels.
+- **Format:** 864×1080 (4:5), a clip of up to 90 s and 5.4 MB (3 MB, or 60 kB a second if that is more). Give the slide `"fit": "cover"`: the clip then fills the card, with the slide counter over the top-right corner and a slim control strip (sound, seek bar, credits) over the bottom. So keep every caption and important element above y = 930, with caption blocks around y = 820–840, and keep the top-right corner (x > 740, y < 120) empty. Keep text large: at least 40 px for captions and 22 px for labels.
 - **Match the post to the animation.** Give the post a `"theme": { "gradient": [c1, c2] }` taken from the animation's palette, so its other slides share the look. The slides draw white text on the gradient, so for a light animation (paper, parchment) use its darker ink and accent colours, and keep white text at a contrast of at least 4.5:1.
 - **Guess before you watch.** If the video gives away the answer to a guessing slide in the same post, put that slide before the video.
 - **The still must not give the result away**: pick `--still` at the hook or the question.
