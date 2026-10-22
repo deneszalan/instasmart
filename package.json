@@ -14,7 +14,8 @@
     "mcp": "node mcp/index.ts",
     "mcp:http": "node mcp/index.ts --http",
     "clip": "node scripts/clip.ts",
-    "explainer": "node scripts/explainer.ts"
+    "explainer": "node scripts/explainer.ts",
+    "fonts": "node scripts/fonts.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.1",
