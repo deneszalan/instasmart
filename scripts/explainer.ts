@@ -137,7 +137,7 @@ function narrate(clip: string, speech: string, musicGap: number): number {
     const musicGain = VOICE_LUFS - musicGap - loudness(old);
     const mix = `[1:a]aresample=44100,aformat=channel_layouts=stereo,volume=${voiceGain.toFixed(2)}dB,apad,asplit=2[voice][key];` +
       `[0:a]volume=${musicGain.toFixed(2)}dB[music];[music][key]sidechaincompress=threshold=0.05:ratio=3:attack=30:release=600[bed];` +
-      `[bed][voice]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.84:level=false[a]`;
+      `[bed][voice]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.7:level=false,apad[a]`;
     ffmpeg(['-i', old, '-i', speech, '-filter_complex', mix, '-map', '0:v:0', '-map', '[a]', '-c:v', 'copy',
       '-c:a', 'aac', '-b:a', '96k', '-ac', '2', '-ar', '44100', '-t', info.durationSeconds.toFixed(3), '-movflags', '+faststart', clip]);
   } finally {
