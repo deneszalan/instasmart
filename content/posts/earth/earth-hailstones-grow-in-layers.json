@@ -4,10 +4,10 @@
   "field": "earth",
   "title": "Slice a big hailstone in half and you find rings inside, like an onion",
   "emoji": "🧊",
-  "body": "A hailstone starts as a tiny frozen droplet inside a thunderstorm, carried upward by winds that can blow at up to **180 km/h**. As it moves through the cloud it keeps collecting ice. Where it passes through lots of supercooled water droplets it gains a layer of clear ice; where there is mostly water vapour, it gains a layer of cloudy white ice. A strong updraft can hold it aloft for at least 30 minutes, so a large stone can build up many alternating shells.",
+  "body": "A hailstone begins as a water droplet in a thunderstorm, carried upward by updrafts that can blow at up to **180 km/h**. Above the freezing level, droplets stay liquid even below 0 °C, and they freeze onto the rising stone. Where droplets are plentiful it gains a thick layer of clear ice; where there is mostly water vapour, a thin layer of white ice full of tiny air bubbles. Passing through zones like these on the way up builds the rings, and newer research says a single trip through the storm can be enough.",
   "cover": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Record_hailstone_Vivian%2C_SD.jpg/960px-Record_hailstone_Vivian%2C_SD.jpg",
-    "alt": "A huge lumpy white hailstone lying on a towel next to a tape measure that shows it is about 20 cm across",
+    "alt": "A huge lumpy white hailstone lying on a towel next to a tape measure",
     "credit": "NWS Aberdeen, SD · Public domain"
   },
   "slides": [
@@ -19,7 +19,108 @@
       "step": 1,
       "answer": 20,
       "unit": "cm",
-      "explanation": "About 20 cm across, with a circumference of 47.3 cm. It fell on Vivian, South Dakota, on 23 July 2010, and it is the stone on the cover."
+      "explanation": "About 20 cm (7.9 in) across, with a circumference of 47.3 cm. It fell at Vivian, South Dakota, on 23 July 2010, and it is the stone on the cover."
+    },
+    {
+      "type": "video",
+      "src": "hail-layers.mp4",
+      "poster": "hail-layers.jpg",
+      "alt": "Animation: a hailstone is sliced to show clear and white rings. In a diagram of a storm cloud, a droplet rides the updraft above the freezing level and rises through bands of droplets and vapour, gaining a clear or a white layer in each; an old up-and-down path is struck out, and the stone falls.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Stay the Course” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.67,
+          "end": 6.4
+        },
+        {
+          "start": 6.53,
+          "end": 12.53
+        },
+        {
+          "start": 12.93,
+          "end": 18.93
+        },
+        {
+          "start": 19.07,
+          "end": 24.8
+        },
+        {
+          "start": 24.93,
+          "end": 31.47
+        },
+        {
+          "start": 32,
+          "end": 38.13
+        },
+        {
+          "start": 38.27,
+          "end": 44.27
+        },
+        {
+          "start": 44.4,
+          "end": 50.53
+        },
+        {
+          "start": 50.67,
+          "end": 58.13
+        },
+        {
+          "start": 58.53,
+          "end": 64.53
+        },
+        {
+          "start": 64.67,
+          "end": 70.93
+        },
+        {
+          "start": 71.47,
+          "end": 77.6
+        },
+        {
+          "start": 78.13,
+          "end": 85.07
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Hagelkorn_mit_Anlagerungsschichten.jpg/960px-Hagelkorn_mit_Anlagerungsschichten.jpg",
+      "alt": "A hailstone cut in half on a wooden board, showing rings of clear and milky white ice around a white core",
+      "caption": "A real hailstone cut open. Each ring is a layer of ice it picked up on its way through the storm cloud.",
+      "fit": "cover",
+      "credit": "ERZ · CC BY-SA 3.0"
+    },
+    {
+      "type": "compare",
+      "heading": "How many trips does it take?",
+      "left": {
+        "label": "Old idea",
+        "text": "A hailstone falls and is carried up again many times, adding a layer on each trip through the cloud."
+      },
+      "right": {
+        "label": "Newer research",
+        "text": "One trip through zones with more or less supercooled water can build the layers. Repeated trips aren’t needed to explain them."
+      }
+    },
+    {
+      "type": "chart",
+      "heading": "How fast hailstones fall",
+      "unit": "m/s",
+      "items": [
+        {
+          "label": "1 cm hailstone",
+          "value": 9
+        },
+        {
+          "label": "8 cm hailstone",
+          "value": 48,
+          "emphasis": true
+        }
+      ],
+      "note": "Estimates: real speeds vary with shape, wind, collisions and melting"
     },
     {
       "type": "stat",
@@ -28,33 +129,37 @@
       "text": "It fell in Gopalganj District, Bangladesh, on 14 April 1986."
     },
     {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Hagelkorn_mit_Anlagerungsschichten.jpg/960px-Hagelkorn_mit_Anlagerungsschichten.jpg",
-      "alt": "A hailstone cut in half on a wooden board, showing rings of clear and milky white ice around a white core",
-      "caption": "A hailstone cut open. Each ring is a layer of ice it picked up on its way through the storm cloud.",
-      "fit": "cover",
-      "credit": "ERZ · CC BY-SA 3.0"
-    },
-    {
-      "type": "chart",
-      "heading": "How fast hailstones fall",
-      "unit": "m/s",
-      "items": [
-        { "label": "1 cm hailstone", "value": 9 },
-        { "label": "8 cm hailstone", "value": 48, "emphasis": true }
-      ],
-      "note": "Estimates: real speeds vary with shape, wind, collisions and melting"
-    },
-    {
       "type": "quiz",
-      "question": "What gives a growing hailstone a layer of clear ice?",
-      "options": ["Lots of water droplets", "Mostly water vapour", "A lightning strike", "Dust in the cloud"],
+      "question": "What makes a hailstone’s white layers cloudy instead of clear?",
+      "options": [
+        "Tiny trapped air bubbles",
+        "Dust from the ground",
+        "Salt from sea spray",
+        "Frozen lightning"
+      ],
       "answer": 0,
-      "explanation": "Water droplets freeze onto the stone as clear ice. Where there is mostly water vapour instead, the new layer is opaque and white."
+      "explanation": "White ice freezes fast and traps small air bubbles, which make it opaque. When the stone grows wetter, the bubbles join up and escape, so that ice is clear."
     }
   ],
-  "tags": ["hail", "weather", "storms", "ice"],
-  "source": { "label": "Wikipedia: Hail", "url": "https://en.wikipedia.org/wiki/Hail" },
-  "author": { "name": "Claude", "kind": "ai" },
+  "tags": [
+    "hail",
+    "weather",
+    "storms",
+    "ice"
+  ],
+  "source": {
+    "label": "Wikipedia: Hail",
+    "url": "https://en.wikipedia.org/wiki/Hail"
+  },
+  "theme": {
+    "gradient": [
+      "#0E1D38",
+      "#2D3E5C"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
   "createdAt": "2026-10-18"
 }

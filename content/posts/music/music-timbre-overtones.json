@@ -4,18 +4,78 @@
   "field": "music",
   "title": "Same note, different sound: the secret is in the overtones",
   "emoji": "🎷",
-  "body": "When a violin and a flute both play the A at 440 Hz, they share a pitch but sound completely different. That quality, called timbre, comes largely from overtones: quieter vibrations at higher frequencies that sound along with the main note. Each instrument’s shape and material strengthens different overtones, and the way a note starts and fades away shapes the sound too.",
+  "body": "A guitar and a piano can play the same note at the same volume and still sound different. That quality is called **timbre**, or tone colour. Most notes are not one pure frequency: they are the main note plus harmonics at 2, 3, 4… times its frequency, and the balance of their strengths is a major factor in each instrument’s sound. How a note starts and fades matters too.",
   "slides": [
+    {
+      "type": "video",
+      "src": "timbre-scope.mp4",
+      "poster": "timbre-scope.jpg",
+      "alt": "Animation on a green oscilloscope: two waves with the same 440 Hz period but different shapes. Sine waves at 440, 880, 1320 Hz and up are added one by one as spectrum bars grow, two different mixes of the same harmonics make two shapes, and two notes with different envelopes follow.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Late Night Radio” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.67,
+          "end": 6.13
+        },
+        {
+          "start": 6.27,
+          "end": 12.53
+        },
+        {
+          "start": 13.07,
+          "end": 18.4
+        },
+        {
+          "start": 18.53,
+          "end": 24.8
+        },
+        {
+          "start": 24.93,
+          "end": 31.33
+        },
+        {
+          "start": 31.73,
+          "end": 37.87
+        },
+        {
+          "start": 38,
+          "end": 44
+        },
+        {
+          "start": 44.13,
+          "end": 50.67
+        },
+        {
+          "start": 51.07,
+          "end": 57.07
+        },
+        {
+          "start": 57.2,
+          "end": 64.27
+        },
+        {
+          "start": 64.8,
+          "end": 71.2
+        },
+        {
+          "start": 71.33,
+          "end": 78.4
+        }
+      ]
+    },
     {
       "type": "text",
       "heading": "The harmonic series",
-      "text": "A string vibrating at 110 Hz also vibrates in halves, thirds and quarters, adding 220, 330 and 440 Hz. Together these blend into what we hear as one note."
+      "text": "Harmonics are whole-number multiples of the main note, the fundamental. An A at 440 Hz is really a combination of 440, 880, 1320, 1760 Hz and so on, heard as one note."
     },
     {
       "type": "spectrum",
-      "heading": "The harmonic series of a string tuned to 110 Hz",
+      "heading": "The first harmonics of an A at 440 Hz",
       "min": 0,
-      "max": 500,
+      "max": 2000,
       "unit": "Hz",
       "ends": [
         "Low",
@@ -23,56 +83,64 @@
       ],
       "marks": [
         {
-          "label": "Fundamental: whole string",
-          "value": 110,
+          "label": "Fundamental (1×)",
+          "value": 440,
           "emphasis": true
         },
         {
-          "label": "2nd harmonic: halves",
-          "value": 220
+          "label": "2nd harmonic",
+          "value": 880
         },
         {
-          "label": "3rd harmonic: thirds",
-          "value": 330
+          "label": "3rd harmonic",
+          "value": 1320
         },
         {
-          "label": "4th harmonic: quarters",
-          "value": 440
+          "label": "4th harmonic",
+          "value": 1760
         }
       ],
-      "note": "Evenly spaced overtones blend into one note; each instrument strengthens different ones."
+      "note": "Evenly spaced harmonics blend into one note; their strengths shape its colour."
+    },
+    {
+      "type": "quiz",
+      "question": "In the sound of a transverse flute, which frequency is heard most strongly?",
+      "options": [
+        "The fundamental itself",
+        "Double the fundamental",
+        "Ten times the fundamental",
+        "Half the fundamental"
+      ],
+      "answer": 1,
+      "explanation": "A flute’s dominant frequency is double the fundamental: the 2nd harmonic. The dominant frequency is always a multiple of the fundamental, even when it isn’t the fundamental."
     },
     {
       "type": "reveal",
-      "prompt": "Cut the first fraction of a second off a recorded note. What happens?",
-      "answer": "Instruments become hard to tell apart",
-      "detail": "A note’s attack carries much of an instrument’s character, alongside the mix of overtones its shape and material strengthen."
+      "prompt": "Cut the first moment off a recorded piano or trumpet note. What happens?",
+      "answer": "It gets harder to tell which instrument it is",
+      "detail": "That start, the attack, is highly characteristic: the hammer hitting the strings, or the first blast of the player’s lips."
     },
     {
       "type": "text",
-      "heading": "The start matters",
-      "text": "The first fraction of a second of a note, its attack, carries much of an instrument’s character. Cut it from a recording and instruments can become hard to tell apart."
-    },
-    {
-      "type": "text",
-      "heading": "The clarinet clue",
-      "text": "A clarinet’s cylindrical tube acts like a pipe closed at one end, so its low notes are dominated by odd harmonics, giving its hollow, woody tone."
-    },
-    {
-      "type": "scramble",
-      "clue": "The quality that makes a violin and a flute sound different on the same note",
-      "answer": "TIMBRE",
-      "detail": "The mix of overtones an instrument strengthens, and the way its notes start and fade, give it its timbre."
+      "heading": "Same family, still different",
+      "text": "Timbre is also what lets you tell apart two instruments from the same family, like an oboe and a clarinet, even when they play the same note."
     }
   ],
   "tags": [
     "acoustics",
     "timbre",
+    "harmonics",
     "instruments"
   ],
   "source": {
     "label": "Wikipedia: Timbre",
     "url": "https://en.wikipedia.org/wiki/Timbre"
+  },
+  "theme": {
+    "gradient": [
+      "#06261A",
+      "#11402B"
+    ]
   },
   "author": {
     "name": "Claude",
