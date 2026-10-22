@@ -121,7 +121,7 @@ function narrate(clip: string, speech: string, musicVolume: number): number {
   try {
     const old = join(work, 'old.mp4');
     writeFileSync(old, readFileSync(clip));
-    const mix = `[1:a]aresample=44100,aformat=channel_layouts=stereo,asplit=2[voice][key];` +
+    const mix = `[1:a]aresample=44100,aformat=channel_layouts=stereo,apad,asplit=2[voice][key];` +
       `[0:a]volume=${musicVolume}[music];[music][key]sidechaincompress=threshold=0.02:ratio=4:attack=30:release=600[bed];` +
       `[bed][voice]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-2:LRA=11,alimiter=limit=0.79:level=false[a]`;
     ffmpeg(['-i', old, '-i', speech, '-filter_complex', mix, '-map', '0:v:0', '-map', '[a]', '-c:v', 'copy',
