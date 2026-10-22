@@ -151,4 +151,4 @@ export const LINES = [
   { key: 'z5', gap: 0.8, text: 'So next time you’re in a room of 23 people or more, ask around.' },
   { key: 'z6', text: 'More often than not, two of you will share a birthday.' },
 ];
-export const HOLD = { o5: 0.6, a3: 1.0, a5: 1.2, b5: 1.0, b7: 0.6, c5: 0.6, c11: 0.6, c12: 0.8, d1: 0.4, d4: 1.4, d9: 0.4, y6: 0.8, h11: 0.6, h12: 0.6, z6: 9 };
+export const HOLD = { o5: 0.6, o6: 2.5, a3: 1.0, a5: 1.2, b5: 1.0, b7: 0.6, c5: 0.6, c11: 0.6, c12: 0.8, d1: 0.4, d4: 1.4, d9: 0.4, d10: 1.0, y6: 0.8, y10: 1.5, h11: 0.6, h12: 0.6, h14: 1.8, z6: 9 };
