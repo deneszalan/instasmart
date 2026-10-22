@@ -1,0 +1,154 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-mendel-pea-ratios",
+  "field": "biology",
+  "title": "Wrinkled peas skipped a generation, then came back 1 seed in 4",
+  "emoji": "🌱",
+  "body": "Gregor Mendel, a friar in Brno, crossed pea plants that had round seeds with plants that had wrinkled ones, and every seed of the next generation was round. When those hybrids fertilised themselves, wrinkled seeds reappeared: he counted **5,474 round and 1,850 wrinkled**, close to 3 to 1. The explanation is that each plant carries two copies of the gene, one from each parent. Round is dominant, so only a plant with two wrinkled copies shows the hidden trait, and two hybrids produce one of those about a quarter of the time.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Mendel counted 7,324 seeds from his round × wrinkled hybrids. How many were wrinkled?",
+      "min": 0,
+      "max": 4000,
+      "step": 10,
+      "answer": 1850,
+      "unit": "seeds",
+      "explanation": "1,850 wrinkled and 5,474 round: a ratio of 2.96 to 1, close to the 3 to 1 his explanation predicts."
+    },
+    {
+      "type": "video",
+      "src": "pea-plate.mp4",
+      "poster": "pea-plate.jpg",
+      "alt": "Animation styled as a botanical plate: round and wrinkled peas in open pods are crossed, the first generation is all round, then the next generation pours into two trays counting 5,474 round and 1,850 wrinkled. An animated Punnett square of R and r shows why three in four seeds are round.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Enchanted Journey” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.67,
+          "end": 7.73
+        },
+        {
+          "start": 7.87,
+          "end": 13.73
+        },
+        {
+          "start": 13.87,
+          "end": 18.93
+        },
+        {
+          "start": 19.07,
+          "end": 24.8
+        },
+        {
+          "start": 24.93,
+          "end": 31.2
+        },
+        {
+          "start": 31.33,
+          "end": 36.8
+        },
+        {
+          "start": 37.33,
+          "end": 44
+        },
+        {
+          "start": 44.13,
+          "end": 50.53
+        },
+        {
+          "start": 50.67,
+          "end": 57.73
+        },
+        {
+          "start": 57.87,
+          "end": 64.53
+        },
+        {
+          "start": 64.67,
+          "end": 70.67
+        },
+        {
+          "start": 71.07,
+          "end": 77.2
+        },
+        {
+          "start": 77.33,
+          "end": 83.2
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "His own numbers",
+      "text": "In [Mendel’s paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC5068836/), 253 hybrid plants gave 7,324 seeds in the second year: 5,474 round and 1,850 wrinkled, a ratio of 2.96 to 1. Averaged over all his experiments, the ratio was 2.98 to 1."
+    },
+    {
+      "type": "text",
+      "heading": "Seven traits",
+      "text": "Mendel followed seven traits, each in two forms: seed shape, flower colour, seed coat tint, pod shape, unripe pod colour, flower position and plant height. Between 1856 and 1863 he grew and tested some 28,000 plants, most of them peas."
+    },
+    {
+      "type": "timeline",
+      "heading": "Ignored, then famous",
+      "events": [
+        {
+          "when": "1856–63",
+          "text": "Mendel grows and crosses his peas"
+        },
+        {
+          "when": "1865",
+          "text": "He presents the results in Brno"
+        },
+        {
+          "when": "1866",
+          "text": "His paper is published, then ignored"
+        },
+        {
+          "when": "1900",
+          "text": "De Vries and Correns rediscover it"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Too good to be true?",
+      "text": "In 1936 the statistician Ronald Fisher argued that Mendel’s ratios were too close to 3 to 1 to be true. The argument went on for decades; a 2008 book, *Ending the Mendel–Fisher Controversy*, concluded there was no reason to think he made up his results."
+    },
+    {
+      "type": "quiz",
+      "question": "Two round-seeded Rr plants are crossed. What share of their seeds do you expect to be wrinkled?",
+      "options": [
+        "About 1 in 4",
+        "About 1 in 2",
+        "About 3 in 4",
+        "None of them"
+      ],
+      "answer": 0,
+      "explanation": "Each parent passes on R or r, half the time each. Only an r from both, rr, makes a wrinkled seed: one of the four equally likely pairs."
+    }
+  ],
+  "tags": [
+    "genetics",
+    "heredity",
+    "peas",
+    "mendel"
+  ],
+  "source": {
+    "label": "Wikipedia: Gregor Mendel",
+    "url": "https://en.wikipedia.org/wiki/Gregor_Mendel"
+  },
+  "theme": {
+    "gradient": [
+      "#26461A",
+      "#7A3A1E"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}

@@ -2,7 +2,7 @@
   "$schema": "../../schema/post.schema.json",
   "id": "physics-chladni-figures-sand",
   "field": "physics",
-  "title": "Bow a sand-covered metal plate like a violin and the sand draws the sound",
+  "title": "Bow a sandy metal plate like a violin and the sand draws the sound",
   "emoji": "🎻",
   "cover": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Chladni_plate_02.jpg/960px-Chladni_plate_02.jpg",
@@ -18,24 +18,62 @@
       "detail": "In 1680 Hooke drew a violin bow along a glass plate covered with flour. Chladni’s version used sand on metal."
     },
     {
-      "type": "flow",
-      "heading": "How sand draws a sound",
+      "type": "video",
+      "src": "sand-figures.mp4",
+      "poster": "sand-figures.jpg",
+      "alt": "Animation of a brass plate on a wooden post in warm light. Sand falls evenly on it, a violin bow strokes its edge, and the grains drift onto curving still lines. Higher notes give busier figures, computed from a simple square-plate approximation; the story ends with a violin outline.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“String Impromptu Number 1” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "icon": "🎻",
-          "label": "A bow sets the plate vibrating"
+          "start": 0.67,
+          "end": 7.2
         },
         {
-          "icon": "〰️",
-          "label": "Patches shake while lines between stay still"
+          "start": 7.33,
+          "end": 12.53
         },
         {
-          "icon": "💨",
-          "label": "Sand is flung off the shaking patches"
+          "start": 12.8,
+          "end": 19.73
         },
         {
-          "icon": "✳️",
-          "label": "It settles on the still lines as a figure"
+          "start": 19.87,
+          "end": 25.33
+        },
+        {
+          "start": 25.47,
+          "end": 32.4
+        },
+        {
+          "start": 32.53,
+          "end": 38.13
+        },
+        {
+          "start": 38.27,
+          "end": 44
+        },
+        {
+          "start": 44.13,
+          "end": 50.13
+        },
+        {
+          "start": 50.4,
+          "end": 56.27
+        },
+        {
+          "start": 56.4,
+          "end": 62.67
+        },
+        {
+          "start": 62.8,
+          "end": 69.07
+        },
+        {
+          "start": 69.2,
+          "end": 75.2
         }
       ]
     },
@@ -106,5 +144,11 @@
     "name": "Claude",
     "kind": "ai"
   },
-  "createdAt": "2026-10-18"
+  "createdAt": "2026-10-18",
+  "theme": {
+    "gradient": [
+      "#24160D",
+      "#7A511C"
+    ]
+  }
 }
