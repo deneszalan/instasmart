@@ -4,53 +4,128 @@
   "field": "tech",
   "title": "A term paper, written instead of an exam, gave us Huffman coding",
   "emoji": "🗜️",
-  "body": "In 1951, MIT professor Robert Fano gave his information theory students a choice: sit the final exam or write a paper on finding the most efficient binary code. David Huffman was about to give up when he hit on building the code from the bottom up, repeatedly pairing the two rarest symbols. Common symbols get short codes and rare ones long codes, and the result is provably the most efficient code of its kind. Variants still help compress ZIP files, JPEGs and MP3s.",
+  "body": "In 1951, MIT professor Robert Fano gave his information theory students a choice: sit the final exam or write a term paper on finding the most efficient binary code. David Huffman was about to give up when he hit on building the code from the bottom up: count each symbol, then keep tying the two rarest together into one branch until a single tree remains. Common symbols end up with short codes and rare ones with long codes, and no method that encodes symbols one at a time does better. Prefix codes like his, often called Huffman codes, still help compress ZIP files, JPEGs and MP3s.",
   "slides": [
     {
-      "type": "flow",
-      "heading": "Building a Huffman code, bottom up",
+      "type": "estimate",
+      "question": "A fixed 3-bit code stores ABRACADABRA in 33 bits. How many bits will Huffman's code need?",
+      "min": 11,
+      "max": 33,
+      "step": 1,
+      "answer": 23,
+      "unit": " bits",
+      "explanation": "23 bits. A appears 5 times and gets a 1-bit code; B, R, C and D, 6 letters in all, get 3 bits each: 5 + 18 = 23."
+    },
+    {
+      "type": "video",
+      "src": "huffman-tree.mp4",
+      "poster": "huffman-tree.jpg",
+      "alt": "Animation on a cork board: index cards for the letters of ABRACADABRA, counted 5, 2, 2, 1 and 1, are tied together with red string two rarest at a time into a tree. Left strings read 0 and right ones 1, giving A the code 0 and the word 23 bits instead of 33.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Investigations” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "icon": "📊",
-          "label": "Count how often each symbol appears"
+          "start": 0.53,
+          "end": 5.87
         },
         {
-          "icon": "🔗",
-          "label": "Join the two rarest into one branch"
+          "start": 6,
+          "end": 12
         },
         {
-          "icon": "🌳",
-          "label": "Repeat until a single tree remains"
+          "start": 12.13,
+          "end": 16.8
         },
         {
-          "icon": "🔡",
-          "label": "Read codes off the branches: common = short"
+          "start": 16.93,
+          "end": 22.13
+        },
+        {
+          "start": 22.27,
+          "end": 27.87
+        },
+        {
+          "start": 28,
+          "end": 33.33
+        },
+        {
+          "start": 33.47,
+          "end": 39.2
+        },
+        {
+          "start": 39.47,
+          "end": 46.13
+        },
+        {
+          "start": 46.27,
+          "end": 51.73
+        },
+        {
+          "start": 51.87,
+          "end": 56.53
+        },
+        {
+          "start": 56.67,
+          "end": 61.6
+        },
+        {
+          "start": 61.73,
+          "end": 68.53
+        },
+        {
+          "start": 68.67,
+          "end": 75.73
+        },
+        {
+          "start": 75.87,
+          "end": 82.13
         }
       ]
     },
     {
-      "type": "quiz",
-      "question": "What was Huffman’s key insight?",
-      "options": [
-        "Pair the two rarest symbols, bottom up",
-        "Give every symbol the same length",
-        "Start from the most common symbol",
-        "Encode whole words, not letters"
+      "type": "chart",
+      "heading": "Bits to store ABRACADABRA",
+      "items": [
+        {
+          "label": "One byte per letter",
+          "value": 88
+        },
+        {
+          "label": "Fixed 3-bit code",
+          "value": 33
+        },
+        {
+          "label": "Huffman code",
+          "value": 23,
+          "emphasis": true
+        }
       ],
-      "answer": 0,
-      "explanation": "Huffman built the code from the bottom up, repeatedly pairing the two rarest symbols. Common symbols get short codes, rare ones long, and the result is provably the most efficient of its kind."
+      "unit": " bits",
+      "note": "11 letters; plain text often spends 8 bits on each."
     },
     {
-      "type": "odd",
-      "heading": "Which doesn’t rely on Huffman-style coding?",
-      "items": [
-        "ZIP archives",
-        "JPEG images",
-        "MP3 audio",
-        "Plain text files"
+      "type": "text",
+      "heading": "No gaps needed",
+      "text": "In a Huffman code, no letter's code is the start of another's. So a decoder reading 0110111… always knows where each letter ends: 0 is A, 110 is B, 111 is R. Nothing has to separate them."
+    },
+    {
+      "type": "text",
+      "heading": "The student beat the teacher",
+      "text": "Fano had worked with Claude Shannon on a similar code, built from the top down. Huffman's bottom-up tree is guaranteed to give the shortest code of its kind; their Shannon–Fano coding isn't."
+    },
+    {
+      "type": "quiz",
+      "question": "Two cards tie for rarest, and you could tie either pair first. What happens?",
+      "options": [
+        "Either way works just as well",
+        "Only one choice gives the best code",
+        "The tree can't be finished",
+        "You must start again from the top"
       ],
-      "answer": 3,
-      "explanation": "ZIP, JPEG and MP3 all use Huffman-style codes to squeeze their data. A plain text file stores every character at full size, uncompressed."
+      "answer": 0,
+      "explanation": "A Huffman code need not be unique: different choices can give different codes, but each is a Huffman code and none uses more bits in total."
     }
   ],
   "tags": [
@@ -61,6 +136,12 @@
   "source": {
     "label": "Wikipedia: Huffman coding",
     "url": "https://en.wikipedia.org/wiki/Huffman_coding"
+  },
+  "theme": {
+    "gradient": [
+      "#4A3019",
+      "#8E2A1E"
+    ]
   },
   "author": {
     "name": "Claude",

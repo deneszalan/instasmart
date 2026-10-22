@@ -4,34 +4,106 @@
   "field": "tech",
   "title": "Two strangers can agree on a secret while everyone listens in",
   "emoji": "🔐",
-  "body": "Before the 1970s, encrypting a message meant both sides first had to share a secret key. Public-key cryptography broke that rule: you publish a key anyone can use to lock a message, while only your private key can unlock it. It relies on maths that is easy one way and very hard to reverse, such as multiplying two huge primes versus factoring the result. Every HTTPS connection depends on it.",
+  "body": "In **Diffie–Hellman key exchange**, two people agree on a public starting value, each mixes in a secret of their own, and they swap the results in the open. Each then mixes their own secret into what they received, and both end up with the same key. An eavesdropper sees everything sent but never the secrets, and with numbers hundreds of digits long, working backwards is far too hard. Whitfield Diffie and Martin Hellman published the method in 1976; Britain's GCHQ had found it earlier but kept it secret.",
   "slides": [
     {
-      "type": "flow",
-      "heading": "Locking a message with a public key",
+      "type": "video",
+      "src": "key-exchange.mp4",
+      "poster": "key-exchange.jpg",
+      "alt": "Watercolour animation: Alice and Bob each mix a secret colour into public yellow, swap the jars while Eve's eye watches, and add their secret again to get the same brown. Then the same with numbers: they send 10 and 17 and both reach 14.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Spy Glass” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "icon": "🔑",
-          "label": "Bob publishes his public key for anyone"
+          "start": 0.53,
+          "end": 6.4
         },
         {
-          "icon": "🔒",
-          "label": "Alice locks her message with it"
+          "start": 6.53,
+          "end": 10.8
         },
         {
-          "icon": "👀",
-          "label": "Eavesdroppers see only scrambled text"
+          "start": 11.07,
+          "end": 16.53
         },
         {
-          "icon": "🔓",
-          "label": "Only Bob’s private key can unlock it"
+          "start": 16.67,
+          "end": 21.33
+        },
+        {
+          "start": 21.47,
+          "end": 25.73
+        },
+        {
+          "start": 25.87,
+          "end": 30.93
+        },
+        {
+          "start": 31.07,
+          "end": 36.53
+        },
+        {
+          "start": 36.8,
+          "end": 41.47
+        },
+        {
+          "start": 41.6,
+          "end": 46.67
+        },
+        {
+          "start": 46.8,
+          "end": 52.27
+        },
+        {
+          "start": 52.4,
+          "end": 58.27
+        },
+        {
+          "start": 58.4,
+          "end": 65.07
+        },
+        {
+          "start": 65.2,
+          "end": 71.07
+        },
+        {
+          "start": 71.33,
+          "end": 77.2
+        },
+        {
+          "start": 77.33,
+          "end": 81.6
+        },
+        {
+          "start": 81.73,
+          "end": 86.4
         }
       ]
     },
     {
+      "type": "quiz",
+      "question": "Eve heard 23, 5, 10 and 17. What does she still need to work out the shared key, 14?",
+      "options": [
+        "One of the secrets, 3 or 7",
+        "A bigger prime than 23",
+        "The order they were sent in",
+        "Nothing: she can read it off"
+      ],
+      "answer": 0,
+      "explanation": "Everything else is public. With either secret she could repeat that person's last step; with tiny numbers she could also just try them all, which is why real keys are enormous."
+    },
+    {
       "type": "text",
-      "heading": "The paint analogy",
-      "text": "Both sides start with a public colour and each mixes in a secret one. They swap mixes and add their own secret again, ending with the same colour no onlooker can unmix."
+      "heading": "Easy one way, hard the other",
+      "text": "Like mixing paint, raising 5 to a power and keeping the remainder is quick. Going back, from the remainder to the secret power, is the discrete logarithm problem: for a large enough prime, no known method on ordinary computers can solve it in practice."
+    },
+    {
+      "type": "stat",
+      "value": "2,048 bits",
+      "label": "the recommended minimum size of the public prime",
+      "text": "That is a number about 617 digits long. With 23, as in the animation, there are only 23 possible remainders to try."
     },
     {
       "type": "order",
@@ -46,29 +118,30 @@
     },
     {
       "type": "text",
-      "heading": "Published in 1976",
-      "text": "Whitfield Diffie and Martin Hellman published their key exchange in 1976. In 1977, Rivest, Shamir and Adleman invented RSA, which also handles digital signatures."
+      "heading": "Found twice",
+      "text": "At Britain's GCHQ, James Ellis imagined “non-secret encryption” in 1970, Clifford Cocks found a way to do it in 1973, and Malcolm Williamson developed this very key exchange in 1974. The British government declassified their work in 1997."
     },
     {
       "type": "text",
-      "heading": "The secret twist",
-      "text": "At Britain’s GCHQ, James Ellis, Clifford Cocks and Malcolm Williamson had found the same ideas in the early 1970s, but their work stayed classified until 1997."
-    },
-    {
-      "type": "scramble",
-      "clue": "The hard-to-reverse step: splitting a huge number back into the two primes that were multiplied to make it",
-      "answer": "FACTORING",
-      "detail": "Multiplying two huge primes takes a computer an instant; recovering them from the product is what keeps the lock shut."
+      "heading": "Still everywhere",
+      "text": "Diffie–Hellman helps secure many internet services. In the ephemeral modes of TLS, the protocol that protects secure websites, a fresh exchange gives every session its own key, so a key stolen later can't unlock past conversations."
     }
   ],
   "tags": [
     "cryptography",
     "security",
-    "encryption"
+    "encryption",
+    "maths"
   ],
   "source": {
-    "label": "Wikipedia: Public-key cryptography",
-    "url": "https://en.wikipedia.org/wiki/Public-key_cryptography"
+    "label": "Wikipedia: Diffie–Hellman key exchange",
+    "url": "https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange"
+  },
+  "theme": {
+    "gradient": [
+      "#2B2533",
+      "#8A2A3C"
+    ]
   },
   "author": {
     "name": "Claude",

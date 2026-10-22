@@ -2,55 +2,98 @@
   "$schema": "../../schema/post.schema.json",
   "id": "math-slide-rule-adds-logarithms",
   "field": "math",
-  "title": "Slide rules multiply by adding lengths, and one flew to the Moon on Apollo 11",
+  "title": "A slide rule multiplies numbers by adding two lengths",
   "emoji": "📏",
   "cover": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Keuffel_%26_Esser_4083-3_4.jpg/960px-Keuffel_%26_Esser_4083-3_4.jpg",
-    "alt": "Close-up of a Keuffel & Esser slide rule's finely engraved logarithmic scales, seen through its glass cursor.",
+    "alt": "Close-up of the finely engraved scales on the slide of a Keuffel & Esser slide rule.",
     "credit": "Slashme · CC BY 4.0"
   },
-  "body": "A slide rule's scales are spaced by **logarithms**, and the logarithm of a product is the sum of the logarithms: log(x × y) = log x + log y. So sliding one scale along another adds two lengths, and the number you read off is the product. William Oughtred combined two of Edmund Gunter's logarithmic rules into a recognisable slide rule around 1622, shortly after John Napier published the idea of logarithms. For roughly three and a half centuries it was the everyday calculating tool of science and engineering, accurate to about three significant figures, until cheap pocket calculators made it obsolete in the mid-1970s.",
+  "body": "On a slide rule's C and D scales, each number sits at a distance from 1 that is proportional to its **logarithm**, and the logarithm of a product is the sum of the logarithms: log(x × y) = log x + log y. So sliding one scale along the other adds two lengths, and the number you read off is the product. William Oughtred combined two of Edmund Gunter's logarithmic rules into a recognisable slide rule around 1622, shortly after John Napier published the idea of logarithms. It stayed the everyday calculator of science and engineering, good to about three significant figures, until cheap pocket calculators arrived in the mid-1970s.",
   "slides": [
     {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Buzz_and_his_pipe.jpg/960px-Buzz_and_his_pipe.jpg",
-      "alt": "Buzz Aldrin in a spacesuit inside the dark, cramped Gemini capsule, with a pipe in his mouth and a slide rule floating near him.",
-      "caption": "Buzz Aldrin on the Gemini 12 mission, with a slide rule floating beside him. Pickett aluminium slide rules flew on Apollo too, including Aldrin's own to the Moon.",
+      "type": "video",
+      "src": "slide-rule.mp4",
+      "poster": "slide-rule.jpg",
+      "alt": "Animation of an ivory and bamboo slide rule with a glass cursor. The numbers on its scales crowd together as they grow, every doubling takes the same step, and sliding the C scale works out 2 × 3 = 6 and 1.5 × 5 = 7.5 by adding two lengths.",
       "fit": "cover",
-      "credit": "Jim Lovell, NASA · Public domain"
-    },
-    {
-      "type": "text",
-      "heading": "Try 2 × 3",
-      "text": "Slide the 1 on the moving scale until it sits over 2 on the fixed scale. Then look along the moving scale to 3: the number underneath it on the fixed scale is 6. You have added the length for log 2 to the length for log 3."
-    },
-    {
-      "type": "flow",
-      "heading": "How a slide rule multiplies",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Study And Relax” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "icon": "📏",
-          "label": "Each scale is marked at logarithmic spacing"
+          "start": 0.67,
+          "end": 6.13
         },
         {
-          "icon": "↔️",
-          "label": "Sliding adds the length of log x to log y"
+          "start": 6.27,
+          "end": 12
         },
         {
-          "icon": "🔎",
-          "label": "The scale at that point reads x × y"
+          "start": 12.4,
+          "end": 18
+        },
+        {
+          "start": 18.13,
+          "end": 24.4
+        },
+        {
+          "start": 24.53,
+          "end": 30.27
+        },
+        {
+          "start": 30.67,
+          "end": 37.07
+        },
+        {
+          "start": 37.2,
+          "end": 42.13
+        },
+        {
+          "start": 42.27,
+          "end": 46.53
+        },
+        {
+          "start": 46.67,
+          "end": 53.6
+        },
+        {
+          "start": 53.87,
+          "end": 60
+        },
+        {
+          "start": 60.13,
+          "end": 64.13
+        },
+        {
+          "start": 64.4,
+          "end": 70.67
+        },
+        {
+          "start": 70.8,
+          "end": 77.87
         }
       ]
     },
     {
-      "type": "estimate",
-      "question": "The HP-35 of 1972 was the first handheld scientific calculator. What did it cost, in US dollars of the day?",
-      "min": 0,
-      "max": 1000,
-      "step": 5,
-      "answer": 395,
-      "unit": "$",
-      "explanation": "$395: fine for some engineers, too much for most students. By 1976 the TI-30 sold for under $25, and the slide rule's days were over."
+      "type": "image",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Buzz_and_his_pipe.jpg/960px-Buzz_and_his_pipe.jpg",
+      "alt": "Buzz Aldrin in a spacesuit inside the dark, cramped Gemini capsule, with a pipe in his mouth and a slide rule floating near him.",
+      "caption": "Buzz Aldrin on Gemini 12 in 1966, with a slide rule floating beside him. His own Pickett slide rule later flew with him to the Moon on Apollo 11.",
+      "fit": "cover",
+      "credit": "Jim Lovell, NASA · Public domain"
+    },
+    {
+      "type": "quiz",
+      "question": "A slide rule shows 6 for 2 × 3, and also for 20 × 30. How do you tell which answer is which?",
+      "options": [
+        "You track the decimal point yourself",
+        "A dial counts the zeros",
+        "Use the back of the rule",
+        "The cursor changes colour"
+      ],
+      "answer": 0,
+      "explanation": "The rule only gives the digits. Users worked out the size of the answer separately, in their heads or with scientific notation, to place the decimal point."
     },
     {
       "type": "timeline",
@@ -66,30 +109,28 @@
         },
         {
           "when": "1859",
-          "text": "Mannheim's layout, with a cursor"
+          "text": "Mannheim's more modern layout"
         },
         {
-          "when": "c. 1974",
-          "text": "Cheaper calculators take over"
+          "when": "Mid-1970s",
+          "text": "Cheap pocket calculators take over"
         }
       ]
     },
     {
-      "type": "text",
-      "heading": "Still in some cockpits",
-      "text": "One slide rule is still in daily use around the world: the E6-B, a circular slide rule made in the 1930s to help pilots with dead reckoning. Many sailors also keep a slide rule as a backup for navigation in case the electrics or batteries fail."
+      "type": "estimate",
+      "question": "The HP-35 of 1972 was the first handheld scientific calculator. What did it cost, in US dollars of the day?",
+      "min": 0,
+      "max": 1000,
+      "step": 5,
+      "answer": 395,
+      "unit": "$",
+      "explanation": "$395: fine for some engineers, too much for most students. By 1976 the TI-30 sold for less than $25, and the slide rule's days were numbered."
     },
     {
-      "type": "quiz",
-      "question": "A slide rule shows 6 for 2 × 3, and also for 20 × 30. How do you tell which answer is which?",
-      "options": [
-        "You track the decimal point yourself",
-        "A dial counts the zeros",
-        "Use the back of the rule",
-        "The cursor changes colour"
-      ],
-      "answer": 0,
-      "explanation": "The rule only gives the digits. Users kept track of the decimal point in their heads or with scientific notation, which made them less likely to trust false precision."
+      "type": "text",
+      "heading": "Still in some cockpits",
+      "text": "One slide rule is still in daily use around the world: the E6-B flight computer, a circular slide rule for aircraft navigation. Many sailors also keep a slide rule as a backup for navigation in case the electrics fail."
     }
   ],
   "tags": [
@@ -101,6 +142,12 @@
   "source": {
     "label": "Wikipedia: Slide rule",
     "url": "https://en.wikipedia.org/wiki/Slide_rule"
+  },
+  "theme": {
+    "gradient": [
+      "#123B31",
+      "#6A3F12"
+    ]
   },
   "author": {
     "name": "Claude",

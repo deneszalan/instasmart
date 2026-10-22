@@ -4,15 +4,91 @@
   "field": "tech",
   "title": "Enigma’s fatal flaw: no letter could ever be encrypted as itself",
   "emoji": "🗝️",
-  "body": "Enigma’s rotors scrambled letters in an astronomical number of ways, but a part called the reflector meant a letter could never come out as itself. That sounds harmless, yet it helped Allied codebreakers at Bletchley Park, building on Polish breakthroughs, test guessed phrases such as weather reports. Any alignment where a guessed letter matched the ciphertext letter was impossible and could be discarded at once.",
+  "body": "Every key press stepped Enigma's rotors, so the scrambling changed with each letter. The current ran through the rotors to a **reflector**, which sent it back by a different route; that made the cipher reciprocal, so the same setting that turned A into B also turned B back into A. But it also meant a letter could never come out as itself. Allied codebreakers, building on Polish breakthroughs, used that to test guessed words called cribs: any position where a guessed letter lined up with the same letter in the ciphertext could be ruled out at once.",
   "slides": [
     {
+      "type": "video",
+      "src": "enigma-reflector.mp4",
+      "poster": "enigma-reflector.jpg",
+      "alt": "Animation of a simplified Enigma in a walnut box: pressing A five times lights B, D, Z, G and O as the right rotor steps. A diagram traces the current through three rotors to the reflector and back to a different letter, then the crib WETTER slides along a ciphertext, ruling out positions.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Invariance” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 7.07
+        },
+        {
+          "start": 7.2,
+          "end": 12.93
+        },
+        {
+          "start": 13.07,
+          "end": 19.73
+        },
+        {
+          "start": 19.87,
+          "end": 24.53
+        },
+        {
+          "start": 24.8,
+          "end": 30.93
+        },
+        {
+          "start": 31.07,
+          "end": 36.53
+        },
+        {
+          "start": 36.67,
+          "end": 42.93
+        },
+        {
+          "start": 43.07,
+          "end": 49.87
+        },
+        {
+          "start": 50,
+          "end": 56
+        },
+        {
+          "start": 56.13,
+          "end": 60.8
+        },
+        {
+          "start": 61.2,
+          "end": 67.2
+        },
+        {
+          "start": 67.6,
+          "end": 74.13
+        },
+        {
+          "start": 74.27,
+          "end": 80.67
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Under the crib WETTER, one stretch of ciphertext reads XEPQAB. Could the crib sit there?",
+      "options": [
+        "No: an E lines up with an E",
+        "Yes, nothing rules it out",
+        "Only without the plugboard",
+        "Only if the rotors were reset"
+      ],
+      "answer": 0,
+      "explanation": "The second letters match: E above E. Enigma never turned a letter into itself, so the crib can't sit there, plugboard or not."
+    },
+    {
       "type": "flow",
-      "heading": "One keypress through Enigma",
+      "heading": "One key press through Enigma",
       "steps": [
         {
           "icon": "⌨️",
-          "label": "A key closes a circuit"
+          "label": "A key press steps the rotors first"
         },
         {
           "icon": "🔌",
@@ -20,7 +96,7 @@
         },
         {
           "icon": "⚙️",
-          "label": "The rotors scramble it; one steps each key"
+          "label": "Three rotors scramble it"
         },
         {
           "icon": "↩️",
@@ -31,18 +107,6 @@
           "label": "A lamp lights: never the key you pressed"
         }
       ]
-    },
-    {
-      "type": "quiz",
-      "question": "Which part of Enigma made it impossible for a letter to encrypt as itself?",
-      "options": [
-        "The reflector",
-        "The plugboard",
-        "The rotors",
-        "The keyboard"
-      ],
-      "answer": 0,
-      "explanation": "The reflector meant a letter could never come out as itself, so codebreakers could discard any alignment where a guessed letter matched the ciphertext."
     },
     {
       "type": "match",
@@ -66,6 +130,29 @@
         }
       ],
       "explanation": "Operators normally plugged ten cables, swapping ten pairs; the reflector’s U-turn is what stops any letter encrypting as itself."
+    },
+    {
+      "type": "timeline",
+      "heading": "Breaking Enigma",
+      "events": [
+        {
+          "when": "c. Dec 1932",
+          "text": "Poland's Marian Rejewski breaks message keys"
+        },
+        {
+          "when": "July 1939",
+          "text": "The Poles share their methods with Britain and France"
+        },
+        {
+          "when": "Sept 1939",
+          "text": "Alan Turing arrives at Bletchley Park, designs the bombe"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "A simplified machine",
+      "text": "The animation leaves out the plugboard, which could swap up to 13 pairs of letters (10 were normal), and the rotors' ring settings. Neither fixes the flaw: the plugboard swaps the letter on the way in and back on the way out, so the reflector's rule still holds."
     }
   ],
   "tags": [
@@ -76,6 +163,12 @@
   "source": {
     "label": "Wikipedia: Enigma machine",
     "url": "https://en.wikipedia.org/wiki/Enigma_machine"
+  },
+  "theme": {
+    "gradient": [
+      "#22120A",
+      "#5A3420"
+    ]
   },
   "author": {
     "name": "Claude",
