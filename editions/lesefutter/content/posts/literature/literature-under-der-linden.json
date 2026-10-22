@@ -22,64 +22,64 @@
       "music": "“Teller of the Tales” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "start": 0.5,
-          "end": 4.3
+          "start": 0.67,
+          "end": 5.73
         },
         {
-          "start": 4.4,
-          "end": 8.6
+          "start": 5.87,
+          "end": 11.47
         },
         {
-          "start": 8.7,
-          "end": 11.7
-        },
-        {
-          "start": 11.8,
+          "start": 11.6,
           "end": 15.6
         },
         {
-          "start": 15.7,
-          "end": 18.9
+          "start": 15.73,
+          "end": 20.8
         },
         {
-          "start": 19,
-          "end": 22.9
+          "start": 20.93,
+          "end": 25.2
         },
         {
-          "start": 23,
-          "end": 26.7
+          "start": 25.33,
+          "end": 30.53
         },
         {
-          "start": 26.8,
-          "end": 30.8
+          "start": 30.67,
+          "end": 35.6
         },
         {
-          "start": 30.9,
-          "end": 34.5
+          "start": 35.73,
+          "end": 41.07
         },
         {
-          "start": 34.6,
-          "end": 38.4
-        },
-        {
-          "start": 38.5,
-          "end": 42.1
-        },
-        {
-          "start": 42.2,
+          "start": 41.2,
           "end": 46
         },
         {
-          "start": 46.1,
-          "end": 49.9
+          "start": 46.13,
+          "end": 51.2
         },
         {
-          "start": 50,
-          "end": 53.6
+          "start": 51.33,
+          "end": 56.13
         },
         {
-          "start": 53.7,
-          "end": 58.2
+          "start": 56.27,
+          "end": 61.33
+        },
+        {
+          "start": 61.47,
+          "end": 66.53
+        },
+        {
+          "start": 66.67,
+          "end": 71.47
+        },
+        {
+          "start": 71.6,
+          "end": 77.6
         }
       ]
     },

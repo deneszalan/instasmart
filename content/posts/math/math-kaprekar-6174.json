@@ -17,64 +17,64 @@
       "music": "“Digital Lemonade” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "start": 0.4,
-          "end": 3.6
+          "start": 0.53,
+          "end": 4.8
         },
         {
-          "start": 3.7,
-          "end": 7.2
+          "start": 4.93,
+          "end": 9.6
         },
         {
-          "start": 7.4,
-          "end": 10.2
+          "start": 9.87,
+          "end": 13.6
         },
         {
-          "start": 10.3,
-          "end": 12.9
+          "start": 13.73,
+          "end": 17.2
         },
         {
-          "start": 13,
-          "end": 17
+          "start": 17.33,
+          "end": 22.67
         },
         {
-          "start": 18.4,
-          "end": 20.4
+          "start": 24.53,
+          "end": 27.2
         },
         {
-          "start": 20.5,
-          "end": 22.9
+          "start": 27.33,
+          "end": 30.53
         },
         {
-          "start": 23,
-          "end": 26.2
+          "start": 30.67,
+          "end": 34.93
         },
         {
-          "start": 26.4,
-          "end": 29.9
+          "start": 35.2,
+          "end": 39.87
         },
         {
-          "start": 30,
-          "end": 34.3
+          "start": 40,
+          "end": 45.73
         },
         {
-          "start": 34.6,
-          "end": 39
+          "start": 46.13,
+          "end": 52
         },
         {
-          "start": 39.1,
-          "end": 42.4
+          "start": 52.13,
+          "end": 56.53
         },
         {
-          "start": 42.6,
-          "end": 47
+          "start": 56.8,
+          "end": 62.67
         },
         {
-          "start": 47.1,
-          "end": 50.8
+          "start": 62.8,
+          "end": 67.73
         },
         {
-          "start": 51,
-          "end": 54.8
+          "start": 68,
+          "end": 73.07
         }
       ]
     },

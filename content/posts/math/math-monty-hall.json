@@ -17,52 +17,52 @@
       "music": "“Happy Happy Game Show” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "start": 0.4,
-          "end": 4.5
+          "start": 0.53,
+          "end": 6
         },
         {
-          "start": 4.6,
-          "end": 6.9
+          "start": 6.13,
+          "end": 9.2
         },
         {
-          "start": 7,
-          "end": 11.7
+          "start": 9.33,
+          "end": 15.6
         },
         {
-          "start": 11.8,
-          "end": 15.3
+          "start": 15.73,
+          "end": 20.4
         },
         {
-          "start": 15.4,
-          "end": 18.5
+          "start": 20.53,
+          "end": 24.67
         },
         {
-          "start": 18.7,
-          "end": 22
+          "start": 24.93,
+          "end": 29.33
         },
         {
-          "start": 22.1,
-          "end": 26.5
+          "start": 29.47,
+          "end": 35.33
         },
         {
-          "start": 26.6,
-          "end": 30.7
+          "start": 35.47,
+          "end": 40.93
         },
         {
-          "start": 30.8,
-          "end": 34.5
+          "start": 41.07,
+          "end": 46
         },
         {
-          "start": 34.6,
-          "end": 38.7
+          "start": 46.13,
+          "end": 51.6
         },
         {
-          "start": 38.8,
-          "end": 43.7
+          "start": 51.73,
+          "end": 58.27
         },
         {
-          "start": 43.8,
-          "end": 48.9
+          "start": 58.4,
+          "end": 65.2
         }
       ]
     },

@@ -58,48 +58,48 @@
       "music": "“Mesmerize” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {
-          "start": 0.6,
-          "end": 4.8
+          "start": 0.8,
+          "end": 6.4
         },
         {
-          "start": 5,
-          "end": 9.4
+          "start": 6.67,
+          "end": 12.53
         },
         {
-          "start": 9.8,
-          "end": 14.6
+          "start": 13.07,
+          "end": 19.47
         },
         {
-          "start": 14.8,
-          "end": 20.2
+          "start": 19.73,
+          "end": 26.93
         },
         {
-          "start": 20.8,
-          "end": 25.2
+          "start": 27.73,
+          "end": 33.6
         },
         {
-          "start": 25.4,
-          "end": 30
+          "start": 33.87,
+          "end": 40
         },
         {
-          "start": 30.4,
-          "end": 34.4
+          "start": 40.53,
+          "end": 45.87
         },
         {
-          "start": 34.6,
-          "end": 39.6
+          "start": 46.13,
+          "end": 52.8
         },
         {
-          "start": 39.9,
-          "end": 45.1
+          "start": 53.2,
+          "end": 60.13
         },
         {
-          "start": 45.3,
-          "end": 49.8
+          "start": 60.4,
+          "end": 66.4
         },
         {
-          "start": 50.2,
-          "end": 54.4
+          "start": 66.93,
+          "end": 72.53
         }
       ]
     },
