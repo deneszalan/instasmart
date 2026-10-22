@@ -5,7 +5,7 @@
 //   npm run explainer -- <post-id> --preview 2,9.5,20      PNG stills to check the layout
 //   npm run explainer -- <post-id> --steps                 only (re)write the steps of the post's animation slide
 //   npm run explainer -- <post-id> --srt captions.srt      the captions as subtitles, timed as in the clip
-//   npm run explainer -- <post-id> --name <name> --narration speech.wav [--music-volume 0.35]
+//   npm run explainer -- <post-id> --name <name> --narration speech.wav [--music-gap 12]
 //                                                          mix a spoken track over the clip's music
 //   [--edition lesefutter]                                   for a post in another edition that isn't written yet
 //
@@ -107,12 +107,24 @@ function srt(cues: { start: number; end: number; text: string }[]): string {
   return cues.map((c, i) => `${i + 1}\n${time(c.start)} --> ${time(c.end)}\n${c.text}\n`).join('\n');
 }
 
+/** A narrated clip's voice loudness, in LUFS: the music is set relative to it. */
+const VOICE_LUFS = -16;
+
+/** Integrated loudness (EBU R128) of a file's first audio track, in LUFS. */
+function loudness(file: string): number {
+  const r = spawnSync('ffmpeg', ['-nostats', '-i', file, '-map', '0:a:0', '-af', 'ebur128', '-f', 'null', '-'], { encoding: 'utf8' });
+  const m = /Summary:[\s\S]*?I:\s+(-?[\d.]+) LUFS/.exec(r.stderr ?? '');
+  if (r.error || r.status !== 0 || !m) throw new Error(`could not measure the loudness of ${file}`);
+  return Number(m[1]);
+}
+
 /**
  * Mix a spoken track (e.g. from srt2speech, made from the --srt captions) over a rendered clip's
- * music. The picture is copied as it is, so its keyframes and the post's steps still match; the
- * music dips under the voice, and the mix is normalised like the music alone.
+ * music. The picture is copied as it is, so its keyframes and the post's steps still match. Both
+ * tracks are measured first, so every voice comes out equally loud whatever its own level: the
+ * voice at VOICE_LUFS, the music `musicGap` LU below it, dipping further while the voice speaks.
  */
-function narrate(clip: string, speech: string, musicVolume: number): number {
+function narrate(clip: string, speech: string, musicGap: number): number {
   if (!existsSync(clip)) throw new Error(`there is no clip at ${shown(clip)}; render it first`);
   if (!existsSync(speech)) throw new Error(`there is no narration at ${speech}`);
   const info = readMp4(readFileSync(clip));
@@ -121,9 +133,11 @@ function narrate(clip: string, speech: string, musicVolume: number): number {
   try {
     const old = join(work, 'old.mp4');
     writeFileSync(old, readFileSync(clip));
-    const mix = `[1:a]aresample=44100,aformat=channel_layouts=stereo,apad,asplit=2[voice][key];` +
-      `[0:a]volume=${musicVolume}[music];[music][key]sidechaincompress=threshold=0.02:ratio=4:attack=30:release=600[bed];` +
-      `[bed][voice]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-2:LRA=11,alimiter=limit=0.79:level=false[a]`;
+    const voiceGain = VOICE_LUFS - loudness(speech);
+    const musicGain = VOICE_LUFS - musicGap - loudness(old);
+    const mix = `[1:a]aresample=44100,aformat=channel_layouts=stereo,volume=${voiceGain.toFixed(2)}dB,apad,asplit=2[voice][key];` +
+      `[0:a]volume=${musicGain.toFixed(2)}dB[music];[music][key]sidechaincompress=threshold=0.05:ratio=3:attack=30:release=600[bed];` +
+      `[bed][voice]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.7:level=false,apad[a]`;
     ffmpeg(['-i', old, '-i', speech, '-filter_complex', mix, '-map', '0:v:0', '-map', '[a]', '-c:v', 'copy',
       '-c:a', 'aac', '-b:a', '96k', '-ac', '2', '-ar', '44100', '-t', info.durationSeconds.toFixed(3), '-movflags', '+faststart', clip]);
   } finally {
@@ -151,7 +165,7 @@ async function main(): Promise<number> {
       'keep-sound': { type: 'boolean' },
       srt: { type: 'string' },
       narration: { type: 'string' },
-      'music-volume': { type: 'string', default: '0.35' },
+      'music-gap': { type: 'string', default: '12' },
       edition: { type: 'string' },
     },
   });
@@ -160,7 +174,7 @@ async function main(): Promise<number> {
   if (!post || !existsSync(scene)) {
     console.error(`Usage: npm run explainer -- <post-id> [--name explainer] [--music <file> --music-start <s|auto> | --keep-sound] [--still <s>]\n` +
       `       npm run explainer -- <post-id> --preview 1,5,12 | --steps | --srt <file>\n` +
-      `       npm run explainer -- <post-id> --name <name> --narration <speech.wav> [--music-volume 0.35]\n` +
+      `       npm run explainer -- <post-id> --name <name> --narration <speech.wav> [--music-gap 12]\n` +
       `The scene must be at explainers/<post-id>.js (see explainers/README.md).`);
     return 1;
   }
@@ -171,7 +185,7 @@ async function main(): Promise<number> {
   }
 
   const home = postHome(root, post, values.edition);
-  if (values.narration) return narrate(join(home.media, `${name}.mp4`), values.narration, Number(values['music-volume']));
+  if (values.narration) return narrate(join(home.media, `${name}.mp4`), values.narration, Number(values['music-gap']));
   const browser = await chromium.launch({ executablePath: browserPath() });
   const work = mkdtempSync(join(tmpdir(), `explainer-${post}-`));
   try {
