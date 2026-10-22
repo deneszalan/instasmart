@@ -4,59 +4,130 @@
   "field": "engineering",
   "title": "The Panama Canal lifts ships 26 metres without a single pump",
   "emoji": "🚢",
-  "body": "Ships crossing Panama are raised about 26 metres to Gatun Lake, an artificial lake made by damming the Chagres River, then lowered again on the other side. The original locks need no pumps: valves open and lake water flows downhill through large tunnels into each chamber, lifting the ship. The catch is that each transit sends roughly 200 million litres of fresh water out to sea, so droughts can force limits on traffic.",
+  "body": "Ships crossing Panama are raised about 26 metres to Gatun Lake, an artificial lake made by damming the Chagres River, then lowered again on the other side. The locks need no pumps: when a valve opens, lake water falls through huge tunnels in the lock walls and wells up into the chamber, lifting the ship, and lowering a ship lets the water run on downhill towards the sea. The catch is that each ship uses roughly 200 million litres of fresh water, so droughts can force limits on traffic.",
   "slides": [
     {
-      "type": "scale",
-      "heading": "Fresh water one transit sends to sea, next to an Olympic pool",
-      "items": [
+      "type": "estimate",
+      "question": "Filling one of the canal’s original lock chambers takes how many million litres of water?",
+      "min": 1,
+      "max": 300,
+      "step": 1,
+      "answer": 101,
+      "unit": "million litres",
+      "explanation": "About 101 million litres (26.7 million US gallons) for each chamber, and a chamber can fill in as little as ten minutes."
+    },
+    {
+      "type": "video",
+      "src": "panama-locks.mp4",
+      "poster": "panama-locks.jpg",
+      "alt": "Animated cutaway diagram of a three-step lock flight. A ship enters the bottom chamber; a valve opens and lake water flows down a tunnel and up through the floor, lifting it step by step to Gatun Lake, 26 m above the sea. Then a chamber drains to sea, and side basins save 3 of 5 slices.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Paradise Found” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
         {
-          "label": "Olympic pool",
-          "value": 2.5
+          "start": 0.53,
+          "end": 6.13
         },
         {
-          "label": "One transit",
-          "value": 200,
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.93
+        },
+        {
+          "start": 19.2,
+          "end": 25.87
+        },
+        {
+          "start": 26.13,
+          "end": 32
+        },
+        {
+          "start": 32.27,
+          "end": 39.2
+        },
+        {
+          "start": 39.47,
+          "end": 46.93
+        },
+        {
+          "start": 47.2,
+          "end": 53.87
+        },
+        {
+          "start": 54.13,
+          "end": 60.8
+        },
+        {
+          "start": 61.07,
+          "end": 68.27
+        },
+        {
+          "start": 68.53,
+          "end": 74.93
+        },
+        {
+          "start": 75.2,
+          "end": 83.2
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Tunnels big enough for a train",
+      "text": "Three huge culverts run inside the lock walls, up to about 6.7 metres across. Side tunnels branch off under each chamber to openings in its floor, so the water rises evenly from below."
+    },
+    {
+      "type": "text",
+      "heading": "Gates that only open when level",
+      "text": "Each pair of gates closes in a V that points upstream, so the push of the higher water holds them shut. They can only be opened once the water is level on both sides."
+    },
+    {
+      "type": "chart",
+      "heading": "Lift at each set of original locks",
+      "items": [
+        {
+          "label": "Gatun (3 steps)",
+          "value": 25.9,
           "emphasis": true
+        },
+        {
+          "label": "Miraflores (2 steps)",
+          "value": 16.5
+        },
+        {
+          "label": "Pedro Miguel (1 step)",
+          "value": 9.4
         }
       ],
-      "unit": "million litres",
-      "note": "An Olympic pool holds about 2.5 million litres; each transit uses roughly 200 million"
+      "unit": "m",
+      "note": "Gatun climbs from the Atlantic; Miraflores and Pedro Miguel from the Pacific, where tides vary."
+    },
+    {
+      "type": "text",
+      "heading": "The 2016 locks save water",
+      "text": "The larger locks opened in 2016 climb from sea level to the lake in three steps. Each chamber has three side basins that store part of its water for the next filling, so about 60% is reused. Like the old locks, they work by gravity alone."
+    },
+    {
+      "type": "text",
+      "heading": "When the lake runs low",
+      "text": "Gatun Lake is filled by rain. In dry spells the canal has had to cut traffic: in December 2023, low water limited it to 22 ships a day instead of the usual 36."
     },
     {
       "type": "quiz",
-      "question": "What is the catch with the canal’s gravity-fed locks?",
+      "question": "Why do the canal’s locks need no pumps?",
       "options": [
-        "Each transit drains lake water to sea",
-        "Ships can only travel downhill",
-        "The locks work only at high tide",
-        "Pumps must refill the lake at night"
+        "The lake sits above the chambers",
+        "Ocean tides push the water in",
+        "The ships’ engines pump it",
+        "Rain falls straight into them"
       ],
       "answer": 0,
-      "explanation": "Every transit sends roughly 200 million litres of fresh water from Gatun Lake out to sea, so droughts can force limits on traffic."
-    },
-    {
-      "type": "match",
-      "heading": "Match the part to its role",
-      "pairs": [
-        {
-          "left": "Gatun Lake",
-          "right": "Artificial lake, 26 m up"
-        },
-        {
-          "left": "Chagres River",
-          "right": "Dammed to make the lake"
-        },
-        {
-          "left": "Lock valves",
-          "right": "Let lake water flow downhill"
-        },
-        {
-          "left": "Each transit",
-          "right": "Costs 200 million litres"
-        }
-      ],
-      "explanation": "Valves open and lake water pours into each chamber by gravity, so no pumps are needed, but every transit sends fresh water out to sea."
+      "explanation": "Gatun Lake is about 26 m above the sea, so opening a valve lets its water run downhill into the chambers. Gravity does the lifting."
     }
   ],
   "tags": [
@@ -67,6 +138,12 @@
   "source": {
     "label": "Wikipedia: Panama Canal locks",
     "url": "https://en.wikipedia.org/wiki/Panama_Canal_locks"
+  },
+  "theme": {
+    "gradient": [
+      "#123526",
+      "#145377"
+    ]
   },
   "author": {
     "name": "Claude",

@@ -4,7 +4,7 @@
   "field": "engineering",
   "title": "A 660-tonne steel ball hangs inside Taipei 101 to calm its sway",
   "emoji": "🏙️",
-  "body": "Tall buildings sway in strong winds and earthquakes. Between the 88th and 92nd floors of Taipei 101, a steel sphere weighing about 660 tonnes hangs from cables as a tuned mass damper. When the tower moves one way, the heavy pendulum lags behind and pulls against the motion, while hydraulic dampers turn its swinging into heat. It can cut the tower’s movement by up to 40%, and the giant ball is now a tourist attraction.",
+  "body": "Tall buildings sway in strong winds. Near the top of Taipei 101, hanging from the 92nd floor down to the 88th, a steel ball weighing about 660 tonnes works as a tuned mass damper: a pendulum tuned to the tower’s own sway. When the tower moves one way, the heavy ball lags behind and pulls against the motion, and dampers turn the energy of the swinging into heat. It can cut the tower’s movement by up to 40%, and the giant ball has become a tourist attraction.",
   "slides": [
     {
       "type": "fill",
@@ -12,13 +12,99 @@
       "icon": "🏢",
       "total": 10,
       "answer": 4,
-      "explanation": "Up to 4 in 10, or 40%. The pendulum lags behind the tower and pulls against its motion, and hydraulic dampers turn its swinging into heat. The 660-tonne ball hangs between floors 88 and 92."
+      "explanation": "Up to 4 in 10, or 40%. The pendulum lags behind the tower and pulls against its motion, and dampers turn the energy into heat."
+    },
+    {
+      "type": "video",
+      "src": "taipei-damper.mp4",
+      "poster": "taipei-damper.jpg",
+      "alt": "Animated diagram at night: Taipei 101 with a gold ball hanging between floors 88 and 92. Wind makes a tower sway; a close-up shows the ball lagging behind the building’s motion; then two towers sway in the same gusts, the one with the damper less than the one without.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Vibing Over Venus” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.4
+        },
+        {
+          "start": 18.67,
+          "end": 26.13
+        },
+        {
+          "start": 26.4,
+          "end": 32.27
+        },
+        {
+          "start": 32.53,
+          "end": 40
+        },
+        {
+          "start": 40.27,
+          "end": 46.4
+        },
+        {
+          "start": 46.67,
+          "end": 53.07
+        },
+        {
+          "start": 53.33,
+          "end": 59.73
+        },
+        {
+          "start": 60,
+          "end": 65.87
+        },
+        {
+          "start": 66.13,
+          "end": 72.8
+        },
+        {
+          "start": 73.07,
+          "end": 80.27
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "5.5 m",
+      "label": "across: the damper’s ball, the largest in the world",
+      "text": "It is made of 41 circular steel plates, each 125 mm thick, welded together into a sphere."
+    },
+    {
+      "type": "text",
+      "heading": "Why it has to be tuned",
+      "text": "A pendulum swings at a rhythm set by its length. Hung so that its rhythm matches the tower’s own, the ball moves out of step with the building and pulls against each sway instead of adding to it."
+    },
+    {
+      "type": "text",
+      "heading": "Its biggest swing",
+      "text": "On 8 August 2015, the winds of Typhoon Soudelor swung the main damper by about 1 metre, the largest movement it has recorded."
+    },
+    {
+      "type": "text",
+      "heading": "Two more on the spire",
+      "text": "Two smaller tuned mass dampers, of about 6 tonnes each, sit at the tip of the spire and help protect it from strong winds."
+    },
+    {
+      "type": "text",
+      "heading": "A tourist attraction",
+      "text": "Visitors can see the damper from the 88th floor up. It became so popular that the city had Sanrio create a mascot for it: the Damper Baby."
     },
     {
       "type": "scramble",
       "clue": "What the 660-tonne ball becomes when it hangs from cables and swings against the tower’s motion",
       "answer": "PENDULUM",
-      "detail": "A tuned mass damper is a pendulum sized so that its swing matches the tower’s own, lagging behind and pulling against each sway."
+      "detail": "A tuned mass damper here is a pendulum sized so that its swing matches the tower’s own, lagging behind and pulling against each sway."
     }
   ],
   "tags": [
@@ -29,6 +115,12 @@
   "source": {
     "label": "Wikipedia: Taipei 101",
     "url": "https://en.wikipedia.org/wiki/Taipei_101"
+  },
+  "theme": {
+    "gradient": [
+      "#141a46",
+      "#6b4a0c"
+    ]
   },
   "author": {
     "name": "Claude",

@@ -4,8 +4,72 @@
   "field": "economics",
   "title": "The ‘tragedy of the commons’ often isn’t a tragedy at all",
   "emoji": "🐄",
-  "body": "In 1968 ecologist Garrett Hardin argued that when a resource like a pasture is open to all, each user gains by taking a little more while the damage is shared, so the resource gets ruined. The logic fits overfishing and pollution well. But Elinor Ostrom studied real fisheries, forests and irrigation systems and found many communities had managed shared resources sustainably for centuries. That work made her the first woman to win the economics Nobel, in 2009.",
+  "body": "In 1968 ecologist Garrett Hardin argued that when a pasture is open to every herder, each one gains by adding another cow, keeping all of its milk while the lost grass is shared by everyone, so the pasture gets ruined. The idea has been applied to overfishing and pollution. But Elinor Ostrom and others found the tragedy less common and easier to solve than Hardin claimed: the users of real pastures, forests, fisheries and irrigation systems have often made rules of their own that kept them going. In 2009 that work made her the first woman to win the economics Nobel.",
   "slides": [
+    {
+      "type": "video",
+      "src": "commons-pasture.mp4",
+      "poster": "commons-pasture.jpg",
+      "alt": "Flat illustrated animation of a fenced common pasture with four farms. In a simple model, every herder adds a cow each season until the grass turns to bare earth; then the herders follow their own rules, three cows per farm, and the pasture stays green.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Cattails” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 5.87
+        },
+        {
+          "start": 6.13,
+          "end": 11.2
+        },
+        {
+          "start": 11.47,
+          "end": 17.87
+        },
+        {
+          "start": 18.13,
+          "end": 25.07
+        },
+        {
+          "start": 25.33,
+          "end": 31.2
+        },
+        {
+          "start": 31.47,
+          "end": 37.87
+        },
+        {
+          "start": 38.13,
+          "end": 44.8
+        },
+        {
+          "start": 45.07,
+          "end": 50.93
+        },
+        {
+          "start": 51.2,
+          "end": 57.6
+        },
+        {
+          "start": 57.87,
+          "end": 64.8
+        },
+        {
+          "start": 65.07,
+          "end": 71.47
+        },
+        {
+          "start": 71.73,
+          "end": 78.13
+        },
+        {
+          "start": 78.4,
+          "end": 84.53
+        }
+      ]
+    },
     {
       "type": "flow",
       "heading": "Hardin’s logic",
@@ -31,29 +95,29 @@
     {
       "type": "text",
       "heading": "Where the idea began",
-      "text": "Hardin built on an 1833 pamphlet by economist William Forster Lloyd, who imagined herders overgrazing a shared village pasture."
+      "text": "Hardin built on an 1833 pamphlet by the English economist William Forster Lloyd, who imagined herders overgrazing a shared village pasture. Aristotle had made a similar point."
     },
     {
       "type": "text",
-      "heading": "Ostrom’s design rules",
-      "text": "Lasting commons tend to have clear boundaries, rules made by the users themselves, monitoring, graduated penalties and cheap ways to settle disputes."
+      "heading": "Ostrom’s design principles",
+      "text": "The long-lasting commons she studied tended to share features: clear boundaries, rules fitted to local conditions that users can help change, monitors answerable to the users, graduated penalties and cheap ways to settle disputes."
     },
     {
       "type": "text",
       "heading": "Real examples",
-      "text": "Alpine pastures in Switzerland and village forests in Japan were run as commons for centuries, as were irrigation systems in Spain and the Philippines."
+      "text": "Her book Governing the Commons drew on irrigation systems in Spain and the Philippines, mountain villages in Switzerland and Japan, and fisheries in Nova Scotia and Indonesia. One Swiss alpine commons has been run by its farmers since 1517."
     },
     {
       "type": "quiz",
-      "question": "Which is one of Ostrom’s rules for a lasting commons?",
+      "question": "Which is one of the features Ostrom found in lasting commons?",
       "options": [
-        "Rules made by the users themselves",
+        "Users help make the rules",
         "A single owner for the resource",
         "No penalties for rule breakers",
         "Decisions made by distant officials"
       ],
       "answer": 0,
-      "explanation": "Lasting commons tend to have clear boundaries, rules made by the users, monitoring, graduated penalties and cheap ways to settle disputes."
+      "explanation": "Lasting commons tend to have clear boundaries, rules the users can help change, monitoring, graduated penalties and cheap ways to settle disputes."
     },
     {
       "type": "match",
@@ -72,7 +136,12 @@
           "right": "2009 economics Nobel"
         }
       ],
-      "explanation": "Hardin built on Lloyd’s pamphlet; Ostrom’s fieldwork on real commons made her the first woman to win the economics Nobel."
+      "explanation": "Hardin built on Lloyd’s pamphlet; Ostrom’s studies of real commons made her the first woman to win the economics Nobel."
+    },
+    {
+      "type": "text",
+      "heading": "Hardin’s second thoughts",
+      "text": "Because his use of “commons” was so often misunderstood, Hardin later remarked that he should have called his essay “The Tragedy of the Unregulated Commons”."
     }
   ],
   "tags": [
@@ -83,6 +152,12 @@
   "source": {
     "label": "Wikipedia: Tragedy of the commons",
     "url": "https://en.wikipedia.org/wiki/Tragedy_of_the_commons"
+  },
+  "theme": {
+    "gradient": [
+      "#244b29",
+      "#7a4a2a"
+    ]
   },
   "author": {
     "name": "Claude",

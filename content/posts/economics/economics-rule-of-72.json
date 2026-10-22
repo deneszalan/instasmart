@@ -1,0 +1,161 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "economics-rule-of-72",
+  "field": "economics",
+  "title": "Divide 72 by the interest rate to see roughly when money doubles",
+  "emoji": "🪙",
+  "body": "Money earning compound interest doubles in roughly 72 ÷ (the yearly rate in %) years: at 6% that is 12 years, at 9% about 8. It works because each year’s interest earns interest too, so the money is multiplied by the same factor every year, and the exact doubling time, ln 2 ÷ ln(1 + rate), comes out close to 72 ÷ rate for everyday rates. The rule appears in Luca Pacioli’s *Summa de arithmetica* of 1494, given without explanation, so it is thought to be even older.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "At 8% interest a year, added once a year, roughly how many years does it take money to double?",
+      "min": 1,
+      "max": 30,
+      "step": 1,
+      "answer": 9,
+      "unit": "years",
+      "explanation": "About 9. The rule of 72 gives 72 ÷ 8 = 9, and the exact answer for yearly compounding is 9.01 years."
+    },
+    {
+      "type": "video",
+      "src": "rule-of-72.mp4",
+      "poster": "rule-of-72.jpg",
+      "alt": "Animation on green ledger paper: a stack of gold coins grows as a 6% ledger adds interest year by year until it doubles in year 12. Curves for 3%, 6% and 9% cross the doubling line near 72 ÷ rate, 72 coins regroup into 8 × 9, 6 × 12, 4 × 18, 3 × 24 and 2 × 36, and Pacioli’s 1494 book appears.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Onion Capers” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 5.6
+        },
+        {
+          "start": 5.87,
+          "end": 11.2
+        },
+        {
+          "start": 11.47,
+          "end": 17.33
+        },
+        {
+          "start": 17.6,
+          "end": 24
+        },
+        {
+          "start": 24.27,
+          "end": 30.4
+        },
+        {
+          "start": 30.67,
+          "end": 36.53
+        },
+        {
+          "start": 36.8,
+          "end": 42.67
+        },
+        {
+          "start": 42.93,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 57.33
+        },
+        {
+          "start": 57.6,
+          "end": 63.73
+        },
+        {
+          "start": 64,
+          "end": 70.4
+        },
+        {
+          "start": 70.67,
+          "end": 76.8
+        },
+        {
+          "start": 77.07,
+          "end": 82.93
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why it works",
+      "text": "With compound interest, each year’s interest joins the balance, so next year’s interest is a little bigger. The money is multiplied by (1 + rate) every year, and doubling takes ln 2 ÷ ln(1 + rate) years, which is close to 72 divided by the rate in percent."
+    },
+    {
+      "type": "chart",
+      "heading": "Exact years to double, at yearly compounding",
+      "items": [
+        {
+          "label": "3% a year",
+          "value": 23.45
+        },
+        {
+          "label": "6% a year",
+          "value": 11.9,
+          "emphasis": true
+        },
+        {
+          "label": "9% a year",
+          "value": 8.04
+        },
+        {
+          "label": "12% a year",
+          "value": 6.12
+        }
+      ],
+      "unit": "years",
+      "note": "The rule of 72 says 24, 12, 8 and 6 years."
+    },
+    {
+      "type": "text",
+      "heading": "Why 72 and not 69?",
+      "text": "When interest is added continuously, 69.3 is more accurate, because ln 2 is about 0.693. But 72 is close for everyday yearly rates, and it divides evenly by 2, 3, 4, 6, 8, 9 and 12, so it is easy to use in your head."
+    },
+    {
+      "type": "quote",
+      "text": "Keep as a rule [the number] 72 in mind, which you will always divide by the interest, and what results, in that many years it will be doubled.",
+      "attribution": "Luca Pacioli, Summa de arithmetica (1494), English translation"
+    },
+    {
+      "type": "text",
+      "heading": "It works for halving too",
+      "text": "Divide by the inflation rate instead, and you get roughly how long money takes to lose half its buying power: at 3.5% inflation, about 20 years."
+    },
+    {
+      "type": "quiz",
+      "question": "Why is the rule usually 72, when 69.3 is more exact for continuous interest?",
+      "options": [
+        "72 divides evenly by many numbers",
+        "Pacioli invented 72 in 1494",
+        "72 is exact at every rate",
+        "Banks are required to use 72"
+      ],
+      "answer": 0,
+      "explanation": "72 is close to the exact answer for everyday yearly rates and splits evenly by 2, 3, 4, 6, 8, 9 and 12. Pacioli did not invent it: the rule is thought to be older than his book."
+    }
+  ],
+  "tags": [
+    "compoundinterest",
+    "mentalmath",
+    "finance"
+  ],
+  "source": {
+    "label": "Wikipedia: Rule of 72",
+    "url": "https://en.wikipedia.org/wiki/Rule_of_72"
+  },
+  "theme": {
+    "gradient": [
+      "#1d3a28",
+      "#7a2a20"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}
