@@ -3,16 +3,9 @@
   "id": "space-kepler-equal-areas",
   "field": "space",
   "title": "Planets speed up when they swing closest to the Sun",
-  "emoji": "🌍",
-  "body": "Kepler’s second law says the line from the Sun to a planet sweeps out **equal areas in equal times**. Near the Sun that line is short, so the planet has to move faster to cover the same area; far away it moves slower. Newton later showed this follows from gravity pulling straight toward the Sun.",
+  "emoji": "🪐",
+  "body": "Kepler’s second law says the line from the Sun to a planet sweeps out **equal areas in equal times**. Near the Sun that line is short, so the planet has to move faster to cover the same area; far away it moves slower. Even Earth’s nearly circular orbit shows it: we travel about 30.3 km/s in early January, when closest to the Sun, and about 29.3 km/s in early July. Newton later showed the law follows from gravity pulling straight toward the Sun.",
   "slides": [
-    {
-      "type": "image",
-      "src": "kepler-equal-areas.svg",
-      "alt": "An elliptical orbit with the Sun near one end. Two shaded wedges have equal area: a short, wide one near the Sun and a long, thin one far away.",
-      "caption": "Both shaded wedges take the same time to sweep.",
-      "fit": "contain"
-    },
     {
       "type": "reveal",
       "prompt": "In which month is Earth moving fastest along its orbit?",
@@ -20,10 +13,64 @@
       "detail": "Earth is nearest the Sun around 3 January, moving about 30.3 km/s, and farthest around 4 July, at about 29.3 km/s."
     },
     {
-      "type": "stat",
-      "value": "≈1 km/s",
-      "label": "faster in early January than in early July",
-      "text": "Earth is closest to the Sun around 3 January (about 30.3 km/s) and farthest around 4 July (about 29.3 km/s)."
+      "type": "video",
+      "src": "kepler-explainer.mp4",
+      "poster": "kepler-explainer.jpg",
+      "alt": "Animation of a brass orrery: a planet on a stretched elliptical orbit is joined to the Sun by an arm that sweeps twelve wedges in equal times, short and fat near the Sun, long and thin far away. The orbit then relaxes to Earth's almost circular one.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Canon in D for Two Renaissance Harps” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.67,
+          "end": 7.47
+        },
+        {
+          "start": 7.73,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18
+        },
+        {
+          "start": 18.27,
+          "end": 23.2
+        },
+        {
+          "start": 23.47,
+          "end": 30.13
+        },
+        {
+          "start": 30.4,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 48.8
+        },
+        {
+          "start": 49.07,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 68.27
+        },
+        {
+          "start": 68.53,
+          "end": 74.13
+        }
+      ]
     },
     {
       "type": "chart",
@@ -40,7 +87,12 @@
         }
       ],
       "unit": "km/s",
-      "note": "Closest to the Sun around 3 January, farthest around 4 July: a difference of about 3%"
+      "note": "NASA’s Earth fact sheet: 30.29 km/s at most, 29.29 km/s at least"
+    },
+    {
+      "type": "text",
+      "heading": "Why it works",
+      "text": "Gravity pulls a planet straight toward the Sun, along the line joining them. A pull along that line can’t change how fast the line sweeps out area, which is why the law holds for every orbit; physicists call it conservation of angular momentum."
     },
     {
       "type": "timeline",
@@ -48,15 +100,19 @@
       "events": [
         {
           "when": "1609",
-          "text": "Kepler publishes his first two laws in *Astronomia nova*, using Tycho Brahe’s observations of Mars."
+          "text": "*Astronomia nova*: the first two laws, from Tycho Brahe’s Mars data."
         },
         {
           "when": "1619",
-          "text": "His third law, linking orbit size and period, appears in *Harmonices Mundi*."
+          "text": "The third law appears in *Harmonice Mundi*."
+        },
+        {
+          "when": "1621",
+          "text": "His *Epitome* restates the area law for any planet."
         },
         {
           "when": "1687",
-          "text": "Newton’s *Principia* shows all three laws follow from gravity."
+          "text": "Newton’s gravity explains all three laws."
         }
       ]
     },
@@ -88,6 +144,12 @@
   "source": {
     "label": "Wikipedia: Kepler’s laws of planetary motion",
     "url": "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion"
+  },
+  "theme": {
+    "gradient": [
+      "#0E1C44",
+      "#6E4C14"
+    ]
   },
   "author": {
     "name": "Claude",

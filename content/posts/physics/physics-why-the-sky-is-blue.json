@@ -4,12 +4,85 @@
   "field": "physics",
   "title": "The sky is blue, not violet, partly because of your eyes",
   "emoji": "🌅",
-  "body": "Sunlight contains every colour, but air molecules scatter short wavelengths far more strongly than long ones. This Rayleigh scattering sends blue and violet light bouncing across the sky from every direction, while redder light mostly carries straight on. Violet is scattered even more than blue, yet the sky doesn’t look violet: sunlight contains less of it, and our eyes are much less sensitive to it.",
+  "body": "Sunlight contains every colour, but the nitrogen and oxygen molecules in air scatter short wavelengths far more strongly than long ones: the effect grows as one over the wavelength to the fourth power, so blue light at 450 nm scatters about **6 times** more than red at 700 nm. That scattered light reaches us from every direction, so the whole sky glows blue. Violet scatters even more, yet the sky doesn’t look violet; part of the answer is that sunlight holds less violet and our eyes are less sensitive to it. At sunset the light crosses much more air, so most of the blue is scattered away before it reaches us.",
   "slides": [
     {
-      "type": "text",
-      "heading": "The fourth-power rule",
-      "text": "Scattering grows with 1 divided by wavelength to the fourth power. Blue light at 450 nm scatters roughly five to six times more than red light at 700 nm."
+      "type": "estimate",
+      "question": "Air scatters blue light (450 nm) more than red (700 nm). About how many times more?",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "answer": 6,
+      "unit": "×",
+      "explanation": "About 6 times: scattering grows as one over the wavelength to the fourth power, and (700 ÷ 450) to the fourth power is about 5.9."
+    },
+    {
+      "type": "video",
+      "src": "sky-blue-explainer.mp4",
+      "poster": "sky-blue-explainer.jpg",
+      "alt": "Animation over dark hills from dawn to sunset: coloured light waves stream from the Sun, and air molecules bounce blue and violet waves around far more than red, turning the sky blue. Bars show the fourth-power rule, then a diagram shows the long sunset path through the air.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Silver Blue Light” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.67,
+          "end": 5.73
+        },
+        {
+          "start": 6,
+          "end": 11.47
+        },
+        {
+          "start": 11.87,
+          "end": 17.47
+        },
+        {
+          "start": 17.73,
+          "end": 23.33
+        },
+        {
+          "start": 23.6,
+          "end": 29.47
+        },
+        {
+          "start": 30,
+          "end": 36.13
+        },
+        {
+          "start": 36.4,
+          "end": 42.8
+        },
+        {
+          "start": 43.07,
+          "end": 48.8
+        },
+        {
+          "start": 49.07,
+          "end": 54.4
+        },
+        {
+          "start": 54.67,
+          "end": 60.53
+        },
+        {
+          "start": 60.8,
+          "end": 66.93
+        },
+        {
+          "start": 67.47,
+          "end": 73.07
+        },
+        {
+          "start": 73.33,
+          "end": 80.27
+        },
+        {
+          "start": 80.8,
+          "end": 86.13
+        }
+      ]
     },
     {
       "type": "chart",
@@ -20,8 +93,12 @@
           "value": 1
         },
         {
-          "label": "Green, 550 nm",
-          "value": 2.6
+          "label": "Yellow, 580 nm",
+          "value": 2.1
+        },
+        {
+          "label": "Green, 530 nm",
+          "value": 3
         },
         {
           "label": "Blue, 450 nm",
@@ -33,12 +110,13 @@
           "value": 9.4
         }
       ],
-      "note": "Relative to red, from the fourth-power rule. Sunlight has less violet and our eyes barely see it"
+      "unit": "×",
+      "note": "Relative to red, from the fourth-power rule"
     },
     {
       "type": "text",
-      "heading": "Why it looks pale",
-      "text": "The scattered mix of violet, blue and some green stimulates our colour receptors much like blue light blended with white, so we see a soft sky blue."
+      "heading": "So why not violet?",
+      "text": "Violet scatters most of all. Part of the answer, says the [Physics FAQ](https://math.ucr.edu/home/baez/physics/General/BlueSky/blue_sky.html), is that sunlight holds less violet and our eyes are less sensitive to it. Our eyes take the scattered mix as blue blended with white: a soft sky blue."
     },
     {
       "type": "text",
@@ -58,10 +136,9 @@
       "explanation": "Near the horizon, sunlight crosses far more air, so most of the blue is scattered out along the way, leaving the oranges and reds."
     },
     {
-      "type": "scramble",
-      "clue": "The scattering, named after a British physicist, that fills the sky with blue",
-      "answer": "RAYLEIGH",
-      "detail": "Named after Lord Rayleigh (John William Strutt), who showed that scattering grows as one over wavelength to the fourth power."
+      "type": "text",
+      "heading": "Named after Lord Rayleigh",
+      "text": "The effect is called Rayleigh scattering, after the British physicist Lord Rayleigh (John William Strutt), who published papers on the colour and polarisation of skylight in 1871."
     }
   ],
   "tags": [
@@ -73,6 +150,12 @@
   "source": {
     "label": "Wikipedia: Rayleigh scattering",
     "url": "https://en.wikipedia.org/wiki/Rayleigh_scattering"
+  },
+  "theme": {
+    "gradient": [
+      "#163672",
+      "#7E2F45"
+    ]
   },
   "author": {
     "name": "Claude",

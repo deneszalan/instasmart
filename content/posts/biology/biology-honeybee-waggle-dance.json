@@ -2,9 +2,9 @@
   "$schema": "../../schema/post.schema.json",
   "id": "biology-honeybee-waggle-dance",
   "field": "biology",
-  "title": "Honeybees give directions by dancing, with straight up standing for the Sun",
+  "title": "Honeybees dance directions, with straight up standing for the Sun",
   "emoji": "🐝",
-  "body": "A forager that finds good flowers comes home and performs a **waggle dance** on the vertical comb, in the dark of the hive. The angle of her waggling run, measured from straight up, matches the angle between the food and the Sun outside. The longer the waggle phase lasts, the farther away the food is. Bees that have been inside for a while even shift the angle of their dance as the Sun moves across the sky, so the directions stay correct.",
+  "body": "A forager that finds good flowers comes home and performs a **waggle dance** on the vertical comb, in the dark of the hive. The angle of her waggling run, measured from straight up, matches the angle between the food and the Sun outside. The longer the waggle lasts, the farther away the food is: in Karl von Frisch’s account, each second stands for roughly a kilometre. Bees that have been inside for a long time even shift the angle of their dance as the Sun moves across the sky.",
   "cover": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Apis_mellifera_carnica_worker_honeycomb_3.jpg/960px-Apis_mellifera_carnica_worker_honeycomb_3.jpg",
     "alt": "Close-up of honeybee workers walking over golden honeycomb cells filled with honey",
@@ -12,13 +12,81 @@
   },
   "slides": [
     {
+      "type": "video",
+      "src": "waggle-explainer.mp4",
+      "poster": "waggle-explainer.jpg",
+      "alt": "Animation on amber honeycomb: a map card shows flowers 40 degrees right of the Sun, then a stylised bee dances on the comb, her waggle run tilted 40 degrees from straight up. A stopwatch times the waggle for near and far food, and the angle turns as the Sun moves.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Daily Beetle” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.67,
+          "end": 5.73
+        },
+        {
+          "start": 6,
+          "end": 12.4
+        },
+        {
+          "start": 12.8,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 22.93
+        },
+        {
+          "start": 23.2,
+          "end": 28
+        },
+        {
+          "start": 28.27,
+          "end": 35.2
+        },
+        {
+          "start": 35.47,
+          "end": 41.33
+        },
+        {
+          "start": 41.6,
+          "end": 48.53
+        },
+        {
+          "start": 48.8,
+          "end": 56
+        },
+        {
+          "start": 56.27,
+          "end": 62.8
+        },
+        {
+          "start": 63.07,
+          "end": 68.8
+        }
+      ]
+    },
+    {
       "type": "flow",
       "heading": "Reading a waggle dance",
       "steps": [
-        { "icon": "🌼", "label": "A forager finds a rich patch of flowers" },
-        { "icon": "🐝", "label": "Back home, she dances on the vertical comb" },
-        { "icon": "🧭", "label": "Angle from 'up' shows angle from the Sun" },
-        { "icon": "⏱️", "label": "A longer waggle means food farther away" }
+        {
+          "icon": "🌼",
+          "label": "A forager finds a rich patch of flowers"
+        },
+        {
+          "icon": "🐝",
+          "label": "Back home, she dances on the vertical comb"
+        },
+        {
+          "icon": "🧭",
+          "label": "Angle from 'up' shows angle from the Sun"
+        },
+        {
+          "icon": "⏱️",
+          "label": "A longer waggle means food farther away"
+        }
       ]
     },
     {
@@ -29,8 +97,16 @@
       "step": 5,
       "answer": 40,
       "unit": "m",
-      "ends": ["At the hive", "100 m away"],
-      "hints": [{ "label": "Round dance", "value": 10 }],
+      "ends": [
+        "At the hive",
+        "100 m away"
+      ],
+      "hints": [
+        {
+          "label": "Round dance",
+          "value": 10
+        }
+      ],
       "explanation": "Up to about 10 m she does a simple round dance, at 20 to 30 m a transitional dance, and beyond about 40 m the waggle dance."
     },
     {
@@ -40,15 +116,42 @@
       "text": "They flew back to places they already knew. Researchers still debate how much foragers rely on the dance itself rather than on smells or their own memories."
     },
     {
+      "type": "text",
+      "heading": "Doubted at first",
+      "text": "Karl von Frisch explained the dance in a 1927 book, but many scientists doubted him, and his work was appreciated only decades later. In 1973 he shared the Nobel Prize in Physiology or Medicine with Konrad Lorenz and Nikolaas Tinbergen."
+    },
+    {
       "type": "quiz",
       "question": "A dancer's waggle run points 45° to the right of straight up. Where is the food?",
-      "options": ["45° to the right of the Sun", "45° to the left of the Sun", "45 m from the hive", "Directly below the Sun"],
+      "options": [
+        "45° to the right of the Sun",
+        "45° to the left of the Sun",
+        "45 m from the hive",
+        "Directly below the Sun"
+      ],
       "answer": 0,
       "explanation": "On the comb, 'up' stands for the Sun's direction, so the angle of the run from vertical is the angle of the food from the Sun."
     }
   ],
-  "tags": ["bees", "insects", "communication", "navigation"],
-  "source": { "label": "Wikipedia: Waggle dance", "url": "https://en.wikipedia.org/wiki/Waggle_dance" },
-  "author": { "name": "Claude", "kind": "ai" },
+  "tags": [
+    "bees",
+    "insects",
+    "communication",
+    "navigation"
+  ],
+  "source": {
+    "label": "Wikipedia: Waggle dance",
+    "url": "https://en.wikipedia.org/wiki/Waggle_dance"
+  },
+  "theme": {
+    "gradient": [
+      "#4A2706",
+      "#7A4410"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
   "createdAt": "2026-10-18"
 }

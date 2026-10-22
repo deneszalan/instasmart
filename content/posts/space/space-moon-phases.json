@@ -1,0 +1,168 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-moon-phases",
+  "field": "space",
+  "title": "The Moon’s phases have nothing to do with Earth’s shadow",
+  "emoji": "🌓",
+  "body": "Sunlight always lights half of the Moon, just as it lights half of Earth. As the Moon circles us over about **29.5 days**, we see that sunlit half from a changing angle: none of it at new moon, half of it at first and last quarter, all of it at full moon. Earth’s shadow plays no part. When it does fall on the Moon, which can happen only at a full moon, we see a lunar eclipse. That doesn’t happen every month, because the Moon’s orbit is tilted about 5° to Earth’s, so a full moon usually passes north or south of the shadow.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "On average, how many days does the Moon take to go from one new moon to the next?",
+      "min": 20,
+      "max": 40,
+      "step": 0.5,
+      "answer": 29.5,
+      "unit": "days",
+      "explanation": "About 29.5 days. The exact mean, the synodic month, is 29.53059 days, and single months vary by a few hours."
+    },
+    {
+      "type": "video",
+      "src": "moon-phases-explainer.mp4",
+      "poster": "moon-phases-explainer.jpg",
+      "alt": "Animation on charcoal paper: a top-view diagram with sunlight from the left shows the Moon always half lit as it circles Earth, while an inset shows the phase we see. Earth’s shadow then points away from the Sun and dims a full moon in a lunar eclipse.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation",
+      "music": "“Moonstone” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "steps": [
+        {
+          "start": 0.67,
+          "end": 5.6
+        },
+        {
+          "start": 5.87,
+          "end": 11.2
+        },
+        {
+          "start": 11.47,
+          "end": 16.8
+        },
+        {
+          "start": 17.07,
+          "end": 22.4
+        },
+        {
+          "start": 22.67,
+          "end": 28.8
+        },
+        {
+          "start": 29.07,
+          "end": 34.13
+        },
+        {
+          "start": 34.4,
+          "end": 39.73
+        },
+        {
+          "start": 40,
+          "end": 45.33
+        },
+        {
+          "start": 45.6,
+          "end": 51.2
+        },
+        {
+          "start": 51.47,
+          "end": 56.53
+        },
+        {
+          "start": 56.8,
+          "end": 62.93
+        },
+        {
+          "start": 63.2,
+          "end": 69.07
+        },
+        {
+          "start": 69.33,
+          "end": 74.4
+        },
+        {
+          "start": 74.93,
+          "end": 80.27
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "heading": "One lunar month",
+      "steps": [
+        {
+          "icon": "🌑",
+          "label": "New moon: the lit half faces away"
+        },
+        {
+          "icon": "🌓",
+          "label": "First quarter: half of the lit half"
+        },
+        {
+          "icon": "🌕",
+          "label": "Full moon: the lit half faces us"
+        },
+        {
+          "icon": "🌗",
+          "label": "Last quarter: half again, other side"
+        }
+      ],
+      "cycle": true
+    },
+    {
+      "type": "text",
+      "heading": "Why 29.5 days, not 27.3?",
+      "text": "The Moon circles Earth once every 27.3 days, measured against the stars. But Earth moves along its own orbit meanwhile, so the Moon needs about two more days to line up with the Sun again and complete its phases."
+    },
+    {
+      "type": "sort",
+      "heading": "Fact or myth?",
+      "bins": [
+        "Fact",
+        "Myth"
+      ],
+      "items": [
+        {
+          "text": "Earth’s shadow causes the phases",
+          "bin": 1
+        },
+        {
+          "text": "Half the Moon is always in sunlight",
+          "bin": 0
+        },
+        {
+          "text": "Every full moon brings a lunar eclipse",
+          "bin": 1
+        },
+        {
+          "text": "A lunar eclipse can only happen at full moon",
+          "bin": 0
+        }
+      ],
+      "explanation": "Phases come from how much of the sunlit half faces us. Earth’s shadow reaches the Moon only in a lunar eclipse, at some full moons."
+    },
+    {
+      "type": "text",
+      "heading": "Flipped in the south",
+      "text": "In the northern hemisphere a waxing Moon is lit on the right. Seen from the southern hemisphere the picture is the other way round, so the waxing Moon is lit on the left."
+    }
+  ],
+  "tags": [
+    "moon",
+    "phases",
+    "eclipses"
+  ],
+  "source": {
+    "label": "Wikipedia: Lunar phase",
+    "url": "https://en.wikipedia.org/wiki/Lunar_phase"
+  },
+  "theme": {
+    "gradient": [
+      "#1E1E24",
+      "#3E3F4B"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-21"
+}
