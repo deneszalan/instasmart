@@ -21,10 +21,11 @@ import { tmpdir } from 'node:os';
 import { basename, dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { parseArgs } from 'node:util';
-import { chromium } from 'playwright-core';
+import { chromium, type Page } from 'playwright-core';
 import { mediaProblems } from '../shared/validate.ts';
 import { maxVideoBytes, readMp4, stepStill } from '../shared/video.ts';
 import { bestMusicStart } from './clip.ts';
+import { covers } from './fonts.ts';
 import { postHome } from './disk.ts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -50,6 +51,39 @@ function ffmpeg(args: string[]): void {
   const r = spawnSync('ffmpeg', ['-y', '-v', 'error', ...args], { encoding: 'utf8' });
   if (r.error) throw new Error(`could not run ffmpeg: ${r.error.message}`);
   if (r.status !== 0) throw new Error(`ffmpeg failed:\n${r.stderr}`);
+}
+
+/** The font library (explainers/fonts/catalog.json, written by `npm run fonts`). */
+type Catalog = Record<string, { fallback?: boolean; files: { file: string; weight: string; style: string; covers: string }[] }>;
+const catalog = JSON.parse(readFileSync(join(root, 'explainers', 'fonts', 'catalog.json'), 'utf8')) as Catalog;
+
+/**
+ * Characters the scene drew that its own fonts lack, from what Kit recorded while drawing: `fallback`
+ * ones came from the Noto fallback fonts, `missing` ones from no font at all (the browser made them up).
+ */
+async function glyphCheck(page: Page): Promise<{ fallback: string[]; missing: string[] }> {
+  const drawn = (await page.evaluate('window.__drawn?.() ?? {}')) as Record<string, string>;
+  const loaded = (await page.evaluate('window.__fontFiles ?? []')) as { family: string; file: string }[];
+  const byFile = new Map(Object.values(catalog).flatMap((f) => f.files.map((x) => [x.file, covers(x.covers)] as const)));
+  const fallbackHas = Object.values(catalog).filter((f) => f.fallback).flatMap((f) => f.files.map((x) => covers(x.covers)));
+  const fallback: string[] = [], missing: string[] = [];
+  for (const [stack, chars] of Object.entries(drawn)) {
+    const names = stack.split(',').map((n) => n.trim().replace(/^["']|["']$/g, ''));
+    const has = loaded.filter((f) => names.includes(f.family)).map((f) => byFile.get(f.file)).filter((h) => h !== undefined);
+    if (!has.length) continue; // a browser default or a font outside the library: nothing to check against
+    const lack = [...chars].filter((c) => c.codePointAt(0)! > 0x20 && !has.some((h) => h(c.codePointAt(0)!)));
+    const fromFallback = lack.filter((c) => fallbackHas.some((h) => h(c.codePointAt(0)!)));
+    if (fromFallback.length) fallback.push(`${stack}: ${fromFallback.join(' ')}`);
+    const none = lack.filter((c) => !fromFallback.includes(c));
+    if (none.length) missing.push(`${stack}: ${none.join(' ')}`);
+  }
+  return { fallback, missing };
+}
+/** Prints the check; true when every character has a font. */
+function reportGlyphs({ fallback, missing }: { fallback: string[]; missing: string[] }): boolean {
+  if (fallback.length) console.log(`Drawn in a fallback font, since the scene's fonts lack them:\n  ${fallback.join('\n  ')}`);
+  if (missing.length) console.error(`No font has these characters; use others or a font that has them (explainers/fonts/README.md):\n  ${missing.join('\n  ')}`);
+  return missing.length === 0;
 }
 
 interface Step {
@@ -192,6 +226,9 @@ async function main(): Promise<number> {
     const page = await browser.newPage();
     const errors: string[] = [];
     page.on('pageerror', (e) => errors.push(e.message));
+    // Kit loads a font named in the scene from the library's files.
+    const fonts = Object.fromEntries(Object.entries(catalog).map(([name, f]) => [name, { files: f.files.map(({ file, weight, style }) => ({ file, weight, style })) }]));
+    await page.addInitScript({ content: `window.FONTS = ${JSON.stringify(fonts)};` });
     await page.goto(`${pathToFileURL(join(root, 'explainers', 'page.html')).href}?scene=${post}`);
     // The page code runs in the browser, so it is passed as strings (scripts/ has no DOM types).
     await page.waitForFunction('"ready" in window');
@@ -257,7 +294,7 @@ async function main(): Promise<number> {
       for (const t of values.preview.split(',').map(Number)) writeFileSync(join(dir, `t${t}.png`), await frame(t));
       fail();
       console.log(`Stills written to ${dir}`);
-      return 0;
+      return reportGlyphs(await glyphCheck(page)) ? 0 : 1;
     }
 
     // Draw every frame into a near-lossless master, then encode the clip from it,
@@ -274,6 +311,8 @@ async function main(): Promise<number> {
     if (status !== 0) throw new Error('ffmpeg could not encode the frames');
     const still = await frame(Number(values.still));
     fail();
+    // Every frame has been drawn, so every character is known: none may be missing from all fonts.
+    if (!reportGlyphs(await glyphCheck(page))) return 1;
 
     const dir = home.media;
     mkdirSync(dir, { recursive: true });

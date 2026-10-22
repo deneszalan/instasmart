@@ -23,4 +23,5 @@ The code builds two separate apps that don't link to each other. **Reckon** (Eng
 - `npm run dev`: the app. `npm test`: unit tests. `npm run typecheck` and `npm run build` should both pass before you push.
 - `shared/` holds the content schema and validator, used by the app, `scripts/content.ts` and the MCP server in `mcp/`. Imports in `shared/`, `scripts/` and `mcp/` use explicit `.ts` extensions, because Node runs them without a build step.
 - After changing `shared/schema.ts`, run `npm run content -- schema` to regenerate `content/schema/post.schema.json`. A test fails if it's stale.
+- After adding or changing a font in `explainers/fonts/`, run `npm run fonts` to regenerate its catalogue and list. A test fails if they're stale.
 - App text goes through `t('English text')` (`src/i18n/`). Add the German for every new string to `src/i18n/de.ts`; a test checks that none is missing.
