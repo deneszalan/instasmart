@@ -360,7 +360,7 @@ Kit.scene({
   fonts: [
     { family: 'Fredoka', file: 'Fredoka.woff2', weight: '300 700' },
     { family: 'SS', file: 'SourceSans3.woff2', weight: '200 900' },
-    { family: 'SSX', file: 'SourceSans3-LatinExt.woff2', weight: '200 900' },
+    { family: 'SSX', file: 'SourceSans3.woff2', weight: '200 900' },
   ],
   draw(t, tools) {
     k = tools; ctx = tools.ctx;

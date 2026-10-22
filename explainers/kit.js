@@ -14,6 +14,49 @@
   /** Opacity of something shown from a to b, fading in over fi seconds and out over fo. */
   const span = (t, a, b, fi = 0.35, fo = 0.35) => Math.min(fi ? seg(t, a, a + fi) : 1, fo ? 1 - seg(t, b - fo, b) : 1);
 
+  // ---------- fonts ----------
+  // Every scene also gets these behind its own fonts, so a character its fonts lack is still drawn in a designed face.
+  const FALLBACK = [
+    { family: 'Noto Sans', file: 'NotoSans.woff2', weight: '100 900' },
+    { family: 'Noto Sans Math', file: 'NotoSansMath.woff2', weight: '400' },
+    { family: 'Noto Sans Symbols 2', file: 'NotoSansSymbols2.woff2', weight: '400' },
+  ];
+  const FALLBACK_NAMES = FALLBACK.map((f) => f.family);
+  const GENERIC = /^(serif|sans-serif|monospace|cursive|fantasy|system-ui|math|emoji|ui-[a-z-]+)$/i;
+  /** A canvas font string's leading part (style, weight, size) and its list of families. */
+  const splitFont = (font) => { const m = /^(.*?\d(?:\.\d+)?(?:px|pt|em|rem|%)(?:\s*\/\s*\S+)?\s+)(.+)$/.exec(font); return m ? [m[1], m[2]] : null; };
+  const familyList = (list) => list.split(',').map((f) => f.trim().replace(/^["']|["']$/g, ''));
+  const proto = CanvasRenderingContext2D.prototype;
+  const fontProp = Object.getOwnPropertyDescriptor(proto, 'font');
+  Object.defineProperty(proto, 'font', {
+    configurable: true,
+    get() { return fontProp.get.call(this); },
+    set(value) {
+      const parts = splitFont(String(value));
+      if (parts) {
+        const fams = familyList(parts[1]).filter((f) => !FALLBACK_NAMES.includes(f));
+        const at = fams.findIndex((f) => GENERIC.test(f));
+        const list = at < 0 ? [...fams, ...FALLBACK_NAMES] : [...fams.slice(0, at), ...FALLBACK_NAMES, ...fams.slice(at)];
+        value = parts[0] + list.map((f) => (GENERIC.test(f) ? f : `"${f}"`)).join(', ');
+      }
+      fontProp.set.call(this, value);
+    },
+  });
+  // Every character drawn, by the scene's own font list, so `npm run explainer` can list any its fonts lack.
+  const drawn = new Map();
+  for (const name of ['fillText', 'strokeText']) {
+    const draw = proto[name];
+    proto[name] = function (text, ...rest) {
+      const parts = splitFont(this.font);
+      const key = parts ? familyList(parts[1]).filter((f) => !FALLBACK_NAMES.includes(f)).join(', ') : this.font;
+      let chars = drawn.get(key);
+      if (!chars) drawn.set(key, (chars = new Set()));
+      for (const ch of String(text)) chars.add(ch);
+      return draw.call(this, text, ...rest);
+    };
+  }
+  window.__drawn = () => Object.fromEntries([...drawn].map(([key, chars]) => [key, [...chars].join('')]));
+
   function tools(ctx) {
     const font = (weight, size, family) => { ctx.font = `${weight} ${size}px ${family}`; };
     const text = (s, x, y, { color, align = 'left', base = 'alphabetic', spacing = '0px' } = {}) => {
@@ -82,8 +125,9 @@
   }
 
   /**
-   * Set up a scene: canvas size, length in seconds, fonts from explainers/fonts/, and
-   * draw(t, k), where k holds the drawing tools above. Times (duration, t, caption cues) are
+   * Set up a scene: canvas size, length in seconds, fonts, and draw(t, k), where k holds the drawing tools
+   * above. A font is a family name from the library (explainers/fonts/README.md), which loads all its weights
+   * and styles, or { family, file, weight, style? } for one file in explainers/fonts/. Times (duration, t, caption cues) are
    * scene seconds; the clip plays them at `pace`, so at 0.75 each scene second lasts 1.33 s.
    */
   function scene({ width = 864, height = 1080, duration, pace = 0.75, fonts = [], draw }) {
@@ -95,8 +139,17 @@
     window.DURATION = duration;
     window.PACE = pace;
     window.render = (t) => { ctx.save(); draw(t, k); ctx.restore(); };
-    const loads = fonts.map(({ family, file, weight = '100 900' }) =>
-      new FontFace(family, `url(fonts/${file})`, { weight }).load().then((f) => document.fonts.add(f)));
+    const faces = [];
+    for (const f of fonts) {
+      if (typeof f !== 'string') { faces.push(f); continue; }
+      const family = window.FONTS?.[f];
+      if (!family) { window.ready = Promise.reject(new Error(`unknown font "${f}": choose one from explainers/fonts/README.md`)); return; }
+      for (const x of family.files) faces.push({ family: f, file: x.file, weight: x.weight, style: x.style });
+    }
+    faces.push(...FALLBACK);
+    window.__fontFiles = faces.map(({ family, file }) => ({ family, file }));
+    const loads = faces.map(({ family, file, weight = '100 900', style = 'normal' }) =>
+      new FontFace(family, `url(fonts/${file})`, { weight, style }).load().then((f) => document.fonts.add(f)));
     window.ready = Promise.all(loads).then(() => { window.render(0); return true; });
   }
 

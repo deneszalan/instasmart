@@ -407,13 +407,13 @@ Kit.scene({
   width: W, height: H, duration: 59.2,
   fonts: [
     { family: 'Gent', file: 'GentiumBookPlus-Regular.woff2', weight: '400' },
-    { family: 'GentX', file: 'GentiumBookPlus-Regular-LatinExt.woff2', weight: '400' },
-    { family: 'GentG', file: 'GentiumBookPlus-Regular-Greek.woff2', weight: '400' },
+    { family: 'GentX', file: 'GentiumBookPlus-Regular.woff2', weight: '400' },
+    { family: 'GentG', file: 'GentiumBookPlus-Regular.woff2', weight: '400' },
     { family: 'GentI', file: 'GentiumBookPlus-Italic.woff2', weight: '400' },
-    { family: 'GentIX', file: 'GentiumBookPlus-Italic-LatinExt.woff2', weight: '400' },
+    { family: 'GentIX', file: 'GentiumBookPlus-Italic.woff2', weight: '400' },
     { family: 'GentB', file: 'GentiumBookPlus-Bold.woff2', weight: '700' },
-    { family: 'GentBX', file: 'GentiumBookPlus-Bold-LatinExt.woff2', weight: '700' },
-    { family: 'SSX', file: 'SourceSans3-LatinExt.woff2', weight: '200 900' },
+    { family: 'GentBX', file: 'GentiumBookPlus-Bold.woff2', weight: '700' },
+    { family: 'SSX', file: 'SourceSans3.woff2', weight: '200 900' },
     { family: FRAK, file: 'UnifrakturCook-Bold.ttf', weight: '700' },
   ],
   draw(t, tools) {
