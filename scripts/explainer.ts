@@ -4,6 +4,9 @@
 //   npm run explainer -- <post-id> --name <name> --keep-sound   re-render the picture, keeping the clip's soundtrack
 //   npm run explainer -- <post-id> --preview 2,9.5,20      PNG stills to check the layout
 //   npm run explainer -- <post-id> --steps                 only (re)write the steps of the post's animation slide
+//   npm run explainer -- <post-id> --srt captions.srt      the captions as subtitles, timed as in the clip
+//   npm run explainer -- <post-id> --name <name> --narration speech.wav [--music-volume 0.35]
+//                                                          mix a spoken track over the clip's music
 //   [--edition lesefutter]                                   for a post in another edition that isn't written yet
 //
 // The clip's steps are the scene's captions; they are written into the post's slide for this clip,
@@ -15,7 +18,7 @@
 import { spawn, spawnSync } from 'node:child_process';
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
-import { dirname, join } from 'node:path';
+import { basename, dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { parseArgs } from 'node:util';
 import { chromium } from 'playwright-core';
@@ -94,6 +97,47 @@ function writeSteps(file: string, steps: Step[], src?: string): string {
   return file.slice(root.length + 1);
 }
 
+/** Captions as an SRT file: numbered cues, `HH:MM:SS,mmm --> HH:MM:SS,mmm`, a blank line between. */
+function srt(cues: { start: number; end: number; text: string }[]): string {
+  const time = (s: number) => {
+    const ms = Math.round(s * 1000);
+    const pad = (n: number, w = 2) => String(n).padStart(w, '0');
+    return `${pad(Math.floor(ms / 3_600_000))}:${pad(Math.floor(ms / 60_000) % 60)}:${pad(Math.floor(ms / 1000) % 60)},${pad(ms % 1000, 3)}`;
+  };
+  return cues.map((c, i) => `${i + 1}\n${time(c.start)} --> ${time(c.end)}\n${c.text}\n`).join('\n');
+}
+
+/**
+ * Mix a spoken track (e.g. from srt2speech, made from the --srt captions) over a rendered clip's
+ * music. The picture is copied as it is, so its keyframes and the post's steps still match; the
+ * music dips under the voice, and the mix is normalised like the music alone.
+ */
+function narrate(clip: string, speech: string, musicVolume: number): number {
+  if (!existsSync(clip)) throw new Error(`there is no clip at ${shown(clip)}; render it first`);
+  if (!existsSync(speech)) throw new Error(`there is no narration at ${speech}`);
+  const info = readMp4(readFileSync(clip));
+  if (!info.audioCodec) throw new Error(`${shown(clip)} has no music to mix the narration over`);
+  const work = mkdtempSync(join(tmpdir(), 'narrate-'));
+  try {
+    const old = join(work, 'old.mp4');
+    writeFileSync(old, readFileSync(clip));
+    const mix = `[1:a]aresample=44100,aformat=channel_layouts=stereo,asplit=2[voice][key];` +
+      `[0:a]volume=${musicVolume}[music];[music][key]sidechaincompress=threshold=0.02:ratio=4:attack=30:release=600[bed];` +
+      `[bed][voice]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-2:LRA=11,alimiter=limit=0.79:level=false[a]`;
+    ffmpeg(['-i', old, '-i', speech, '-filter_complex', mix, '-map', '0:v:0', '-map', '[a]', '-c:v', 'copy',
+      '-c:a', 'aac', '-b:a', '96k', '-ac', '2', '-ar', '44100', '-t', info.durationSeconds.toFixed(3), '-movflags', '+faststart', clip]);
+  } finally {
+    rmSync(work, { recursive: true, force: true });
+  }
+  const problems = mediaProblems(basename(clip), readFileSync(clip));
+  console.log(`Wrote ${shown(clip)} with narration (${(statSync(clip).size / 1e6).toFixed(2)} MB)`);
+  if (problems.length) {
+    console.error(problems.join('\n'));
+    return 1;
+  }
+  return 0;
+}
+
 async function main(): Promise<number> {
   const { values, positionals } = parseArgs({
     allowPositionals: true,
@@ -105,6 +149,9 @@ async function main(): Promise<number> {
       preview: { type: 'string' },
       steps: { type: 'boolean' },
       'keep-sound': { type: 'boolean' },
+      srt: { type: 'string' },
+      narration: { type: 'string' },
+      'music-volume': { type: 'string', default: '0.35' },
       edition: { type: 'string' },
     },
   });
@@ -112,7 +159,8 @@ async function main(): Promise<number> {
   const scene = join(root, 'explainers', `${post}.js`);
   if (!post || !existsSync(scene)) {
     console.error(`Usage: npm run explainer -- <post-id> [--name explainer] [--music <file> --music-start <s|auto> | --keep-sound] [--still <s>]\n` +
-      `       npm run explainer -- <post-id> --preview 1,5,12 | --steps\n` +
+      `       npm run explainer -- <post-id> --preview 1,5,12 | --steps | --srt <file>\n` +
+      `       npm run explainer -- <post-id> --name <name> --narration <speech.wav> [--music-volume 0.35]\n` +
       `The scene must be at explainers/<post-id>.js (see explainers/README.md).`);
     return 1;
   }
@@ -123,6 +171,7 @@ async function main(): Promise<number> {
   }
 
   const home = postHome(root, post, values.edition);
+  if (values.narration) return narrate(join(home.media, `${name}.mp4`), values.narration, Number(values['music-volume']));
   const browser = await chromium.launch({ executablePath: browserPath() });
   const work = mkdtempSync(join(tmpdir(), `explainer-${post}-`));
   try {
@@ -142,22 +191,42 @@ async function main(): Promise<number> {
     const fail = () => { if (errors.length) throw new Error(`the scene threw:\n${errors.join('\n')}`); };
 
     // Steps are the scene's captions: the cue lists kit captions drew, or a top-level CUES list.
-    const readSteps = async (): Promise<Step[]> => {
+    // Their text comes without the colour marks (*word*), read the way Kit's rich() reads them.
+    const readCues = async (): Promise<(Step & { text: string })[]> => {
       const raw = (await page.evaluate(`(() => {
+        const marks = window.__marks ?? new Set(['*', '~']);
+        const plain = (s) => {
+          let mode = null;
+          return String(s ?? '').split(' ').map((w) => {
+            if (!mode && marks.has(w[0])) { mode = w[0]; w = w.slice(1); }
+            if (mode) { const at = w.lastIndexOf(mode); if (at >= 0) { w = w.slice(0, at) + w.slice(at + 1); mode = null; } }
+            return w;
+          }).join(' ');
+        };
         const out = [];
-        const add = (cues) => { for (const c of cues) if (Array.isArray(c) && typeof c[0] === 'number' && typeof c[1] === 'number') out.push([c[0], c[1]]); };
+        const add = (cues) => { for (const c of cues) if (Array.isArray(c) && typeof c[0] === 'number' && typeof c[1] === 'number') out.push([c[0], c[1], plain(c[2])]); };
         for (const cues of window.__cues ?? []) add(cues);
         try { if (typeof CUES !== 'undefined') add(CUES); } catch {}
         return out;
-      })()`)) as [number, number][];
+      })()`)) as [number, number, string][];
       const round = (x: number) => Math.round(x * 100) / 100;
-      const byStart = new Map<number, Step>();
-      for (const [a, b] of raw) {
-        const step = { start: round(a / pace), end: round(Math.min(b / pace, duration)) };
-        if (step.end > step.start && !byStart.has(step.start)) byStart.set(step.start, step);
+      const byStart = new Map<number, Step & { text: string }>();
+      for (const [a, b, text] of raw) {
+        const cue = { start: round(a / pace), end: round(Math.min(b / pace, duration)), text };
+        if (cue.end > cue.start && !byStart.has(cue.start)) byStart.set(cue.start, cue);
       }
       return [...byStart.values()].sort((x, y) => x.start - y.start);
     };
+    const readSteps = async (): Promise<Step[]> => (await readCues()).map(({ start, end }) => ({ start, end }));
+
+    if (values.srt) {
+      for (let t = 0; t < sceneDuration; t += 0.25) await page.evaluate(`window.render(${t})`);
+      fail();
+      const cues = await readCues();
+      writeFileSync(values.srt, srt(cues));
+      console.log(`${cues.length} captions written to ${values.srt}`);
+      return 0;
+    }
 
     if (values.steps) {
       for (let t = 0; t < sceneDuration; t += 0.25) await page.evaluate(`window.render(${t})`);

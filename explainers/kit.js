@@ -30,6 +30,8 @@
      * marks { '*': red, '~': green }: "a *big* idea, ~twice as fast~".
      */
     const rich = (s, cx, cy, { maxW, size, lh = size * 1.3, weight = 700, family, ink, marks = {} }) => {
+      // Remembered so `npm run explainer -- <id> --srt` can strip the marks from the captions.
+      for (const m in marks) (window.__marks ??= new Set()).add(m);
       font(weight, size, family);
       let mode = null;
       const toks = [];

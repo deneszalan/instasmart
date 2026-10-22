@@ -23,7 +23,7 @@
       "alt": "Animation: a number line from 1 to 1,000,000 is halved guess by guess, the kept half zooming to fill the line, until the 20th guess lands on the hidden number 737,013. Then 1 doubles twenty times to 1,048,576, and bars compare 7, 10, 20 and 30 guesses for ranges up to a billion.",
       "fit": "cover",
       "animation": true,
-      "credit": "Reckon · original animation",
+      "credit": "Reckon · original animation · AI narration",
       "music": "“Blippy Trance” Kevin MacLeod (incompetech.com) · CC BY 4.0",
       "steps": [
         {

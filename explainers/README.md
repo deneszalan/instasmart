@@ -26,6 +26,8 @@ explainers/
 
 **Fixing a scene later.** `npm run explainer -- <post-id> --name <name> --keep-sound --still <s>` renders the picture again and keeps the clip's soundtrack exactly as it is. Give the same `--still` as before, or the poster changes.
 
+**Narration.** A voice can read the captions over the music. `npm run explainer -- <post-id> --srt captions.srt` writes the scene's captions as subtitles timed to the clip, without the marks. Edit them into words a voice reads well (spell out "50/50", "km/s", "°" and years), then make a speech track that says each line at its time, e.g. with srt2speech. `npm run explainer -- <post-id> --name <name> --narration speech.wav` mixes it into the clip: the music drops to 35% (`--music-volume`) and dips further while the voice speaks, and the picture stays exactly as it is. It adds to whatever sound the clip has, so run it once, on the clip with music only. Credit a synthetic voice in the slide: `"Reckon · original animation · AI narration"`.
+
 ## Rules
 
 - **Facts come from the post's source.** Compute numbers in the scene (the binary search really runs the search) so the picture, captions and source agree. Hedge where the source hedges.
