@@ -585,7 +585,7 @@ function titleCards(t) {
   }
 }
 function coldTitle(t) {
-  const a = span(t, s('o4', -0.2), at(1) + 0.6, 0.7, 0.7);
+  const a = span(t, s('o4', -0.2), at(1) + 0.3, 0.7, 0.8);
   if (a <= 0) return;
   A(a * 0.72, () => { ctx.fillStyle = '#050B13'; ctx.fillRect(0, 0, W, H); });
   A(a, () => {
@@ -1289,13 +1289,13 @@ function miniCylinder(x, th, n, flashOn) {
   return { c, burning };
 }
 function partCylinders(t, th) {
-  const fourA = span(t, s('n2', -0.4), at(8) + 1.2, 0.8, 0.6);
+  const fourA = span(t, s('n1', 0.1), at(8) + 1.2, 0.8, 0.6);
   A(fourA, () => {
     const xs = [210, 380, 550, 720];
     stroke(10, C.steel); line(150, 800, 790, 800);
     let firing = null;
-    xs.forEach((x, i) => { const st = miniCylinder(x, th, i + 1, true); if (st.burning) firing = i + 1; });
-    label('A STRAIGHT FOUR', 136, 400, { size: 36, color: C.soft, weight: 500, spacing: '2px' });
+    xs.forEach((x, i) => A(i ? seg(t, s('n2', 0.1), s('n2', 0.9)) : 1, () => { const st = miniCylinder(x, th, i + 1, true); if (st.burning) firing = i + 1; }));
+    A(seg(t, s('n2', 0.1), s('n2', 0.9)), () => label('A STRAIGHT FOUR', 136, 400, { size: 36, color: C.soft, weight: 500, spacing: '2px' }));
     A(seg(t, s('n5', 0.2), s('n5', 0.9)), () => {
       label('FIRING ORDER', 150, 930, { size: 34, color: C.soft });
       ORDER.forEach((n, i) => {
@@ -1304,6 +1304,12 @@ function partCylinders(t, th) {
         label(String(n), x, 936, { size: 40, weight: 600, align: 'center', color: on ? C.paper : C.ink });
       });
     });
+  });
+  // one cylinder alone
+  A(span(t, s('n1', 0.3), s('n3', 0.1), 0.5, 0.5), () => {
+    label('ONE CYLINDER', 1000, 330, { size: 40, color: C.dim, weight: 500, spacing: '3px' });
+    mono('1 PUSH PER 720°', 1000, 430, { size: 64, weight: 700 });
+    A(seg(t, s('n2', 0.3), s('n2', 0.9)), () => label('SO: SEVERAL CYLINDERS ON ONE CRANKSHAFT', 1004, 510, { size: 36, color: C.soft, weight: 400 }));
   });
   // the spacing rule
   A(span(t, s('n3', 0.1), s('n6', 0.2), 0.5, 0.5), () => {

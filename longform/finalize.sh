@@ -2,10 +2,13 @@
 # Finish a written video, both versions: record the final voices, move the music onto the new timings, render.
 #   bash finalize.sh <slug> <voice> <A voice> <B voice>     e.g. bash finalize.sh kepler m1 m1 af_nicole
 # Stops before rendering if a music track runs short or a still shows a missing character.
+# ONLY=dialogue (or ONLY=monologue) does just that version.
 set -e
 S=$(cd "$(dirname "$0")" && pwd); slug=$1
 for v in "$slug:$2" "$slug-dialogue:A=$3 B=$4"; do
   dir=${v%%:*}; d=$S/$dir
+  [ "$ONLY" = dialogue ] && [ $dir = $slug ] && continue
+  [ "$ONLY" = monologue ] && [ $dir != $slug ] && continue
   echo "${v#*:}" > $d/voice.txt
   cp $d/timeline.js $d/timeline.prev.js
   bash $S/tts.sh $dir
