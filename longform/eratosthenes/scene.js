@@ -50,7 +50,6 @@ const ANGLE = 360 / 50;                         // degrees: one fiftieth of a ci
 const DIST = 5000, TOTAL = 50 * DIST;           // stadia
 const PLINY = 252000, PTOLEMY = 180000, ARISTOTLE = 400000;
 const POLAR = 40007.863;                        // km through the poles
-const REPEAT2012 = 40074;                       // km, a 2012 repeat with modern data
 const pct = (km) => (km / POLAR - 1) * 100;
 const km = (stadia, m) => (stadia * m) / 1000;
 const signed = (v, d = 0) => `${v < 0 ? '−' : '+'}${Math.abs(v).toFixed(d)}%`;
@@ -497,6 +496,8 @@ function emblem(kind, x, y, a, t) {
 function partOpen(t) {
   const { cx, cy, r } = OPEN;
   const draw = eio(seg(t, s('o1', 0.3), s('o1', 3.6)));
+  const earthA = 1 - seg(t, s('o5', 0.2), mid('o5', 0.5));
+  A(earthA, () => {
   earth(cx, cy, r, draw);
   A(span(t, s('o1', 0.2), s('o1', 4.1), 0.3, 0.5), () => compass(cx, cy, r, -Math.PI / 2 + draw * TAU));
   // the 50 arcs of the answer, laid round the Earth
@@ -508,6 +509,7 @@ function partOpen(t) {
     ctx.strokeStyle = i % 2 ? C.ink : C.terra; ctx.lineWidth = 16; ctx.lineCap = 'butt';
     ctx.beginPath(); ctx.arc(cx, cy, r + 14, a0 - ANGLE * DEG * p, a0); ctx.stroke();
   }
+  });
   // right column
   const X = 1060;
   A(span(t, s('o1', 0.6), s('o3', 0.1), 0.5, 0.5), () => {
@@ -600,7 +602,7 @@ function partLibrarian(t) {
   A(ecl, () => eclipse(t, eout(seg(t, s('l9', 0.2), mid('l9', 0.8)))));
   const stars = span(t, s('l10', -0.1), s('l12', 0.4), 0.6, 0.6);
   A(stars, () => southernStar(t, eout(seg(t, s('l10', 0.3), mid('l10', 0.8)))));
-  A(span(t, s('l8', 0.9), e('l12', 2), 0.6, 0.6), () => {
+  A(span(t, s('l8', 0.9), DURATION, 0.6, 0.6), () => {
     txt('THE EARTH IS ROUND', 1060, 250, { size: 56, family: DISPLAY, weight: 700, spacing: '3px' });
     txt('known before Eratosthenes', 1064, 312, { size: 40, weight: 500, color: C.inkSoft });
     const r1 = eout(seg(t, s('l9', 0.3), s('l9', 1.0)));
@@ -639,9 +641,9 @@ function southernStar(t, p) {
   const cx = 430, cy = 540, r = 220;
   earth(cx, cy, r, 1);
   // two observers, further north (40 degrees) and in Egypt (25 degrees); a star lies low in the southern sky
-  const dir = [Math.cos(50 * DEG), Math.sin(50 * DEG)];               // towards the star, screen coordinates
-  const starPos = [cx + dir[0] * 560, cy + dir[1] * 300];
-  for (const [phi, name, sees] of [[58, 'further north', false], [14, 'Egypt', true]]) {
+  const dir = [Math.cos(35 * DEG), Math.sin(35 * DEG)];               // towards the star, screen coordinates
+  const starPos = [cx + dir[0] * 560, cy + dir[1] * 560];
+  for (const [phi, name, sees] of [[64, 'further north', false], [14, 'Egypt', true]]) {
     const n = [Math.cos(phi * DEG), -Math.sin(phi * DEG)], P = [cx + r * n[0], cy + r * n[1]];
     const tg = [-n[1], n[0]];
     line(P[0] - tg[0] * 130, P[1] - tg[1] * 130, P[0] + tg[0] * 130, P[1] + tg[1] * 130, 1, { color: C.inkSoft, width: 3 });
@@ -669,7 +671,7 @@ function sceneBox(x, y, w, h, title, fn) {
 }
 /** A ground scene: stick, sunlight at angle th (degrees from overhead), a shadow, optionally a well. */
 function groundScene(t, x, y, w, h, th, o = {}) {
-  const ground = y + h - (o.well ? 200 : 140), sx = x + w * (o.well ? 0.36 : 0.55), sh = Math.min(240, h * 0.42);
+  const ground = y + h - (o.well ? 200 : 140), sx = x + w * (o.well ? 0.36 : 0.55), sh = Math.min(240, h * (o.well ? 0.36 : 0.42));
   ctx.fillStyle = 'rgba(180,83,42,0.18)'; ctx.fillRect(x, ground, w, h);
   const dx = Math.sin(th * DEG), dy = Math.cos(th * DEG);
   const ra = o.rays ?? 1;
@@ -705,11 +707,9 @@ function groundScene(t, x, y, w, h, th, o = {}) {
 function partSyene(t) {
   const zoom = eio(seg(t, s('m1', 0.0), s('m1', 2.6)));
   const v = viewLerp(MED, EGYPT, zoom);
-  const flat = span(t, s('m8', -0.3), e('m10', 3), 0.7, 0.6);
+  const flat = span(t, s('m8', -0.3), DURATION, 0.7, 0.6);
   A(1 - flat, () => {
     drawMap(v, () => {
-      city(v, 'syene', 'Syene (Aswan)', { a: eout(seg(t, mid('m1', 0.45), mid('m1', 0.45) + 0.7)), side: 'left', pulse: span(t, mid('m1', 0.5), e('m6'), 0.4, 0.6) * (0.5 + 0.5 * Math.sin(t * 4)) });
-      city(v, 'alexandria', 'Alexandria', { a: eout(seg(t, s('m7', 0.2), s('m7', 0.9))), side: 'left', pulse: span(t, s('m7', 0.4), e('m7', 0.6), 0.4, 0.6) * (0.5 + 0.5 * Math.sin(t * 4)) });
       // the tropic as Cleomedes takes it: through Syene
       const tr = eout(seg(t, s('m6', 0.3), s('m6', 1.4)));
       if (tr > 0) {
@@ -717,6 +717,8 @@ function partSyene(t) {
         line(x0, y0, lerp(x0, x1, tr), y0, 1, { color: C.terraDeep, width: 4, dash: [16, 10] });
         A(seg(tr, 0.5, 1), () => chip('Tropic of Cancer, as assumed', MAPF.x + 40, y0 + 46, { size: 32, color: C.terraDeep, align: 'left' }));
       }
+      city(v, 'syene', 'Syene (Aswan)', { a: eout(seg(t, mid('m1', 0.45), mid('m1', 0.45) + 0.7)), side: 'left', dy: -34, pulse: span(t, mid('m1', 0.5), e('m6'), 0.4, 0.6) * (0.5 + 0.5 * Math.sin(t * 4)) });
+      city(v, 'alexandria', 'Alexandria', { a: eout(seg(t, s('m7', 0.2), s('m7', 0.9))), side: 'left', pulse: span(t, s('m7', 0.4), e('m7', 0.6), 0.4, 0.6) * (0.5 + 0.5 * Math.sin(t * 4)) });
       const d = eout(seg(t, s('m7', 0.8), mid('m7', 0.75)));
       if (d > 0) {
         const [ax, ay] = proj(v, ...CITY.alexandria), [sx, sy] = proj(v, ...CITY.syene);
@@ -731,7 +733,7 @@ function partSyene(t) {
   A(span(t, s('m2', 0.1), s('m6', 0.2), 0.6, 0.6) * (1 - flat), () => {
     sceneBox(X, 176, Wd, 560, 'SYENE · MIDSUMMER NOON', () => {
       const sun = eout(seg(t, s('m3', 0.2), s('m3', 1.0)));
-      sunDisc(X + Wd * 0.36, 272, 30, sun, t * 0.1);
+      sunDisc(X + Wd * 0.36, 292, 24, sun, t * 0.1);
       groundScene(t, X, 176, Wd, 560, 0, { well: true, rays: eout(seg(t, s('m3', 0.5), s('m3', 1.6))), lit: eout(seg(t, mid('m4', 0.4), mid('m4', 0.9))) });
     });
     A(eout(seg(t, mid('m3', 0.55), mid('m3', 0.55) + 0.6)), () => chip('no shadow', X + Wd * 0.36, 600, { size: 40, color: C.terraDeep }));
@@ -904,7 +906,7 @@ function partBowl(t) {
     });
   });
   // a stick and its noon shadow, to scale
-  const sb = span(t, s('b8', 0.0), e('b9', 2), 0.6, 0.6);
+  const sb = span(t, s('b8', 0.0), DURATION, 0.6, 0.6);
   A(sb, () => {
     const g = 800, x0 = 520, hgt = 520, sh = hgt * SHADOW * eout(seg(t, s('b8', 0.4), mid('b8', 0.6)));
     ctx.fillStyle = 'rgba(180,83,42,0.18)'; ctx.fillRect(140, g, 760, 120);
@@ -953,7 +955,6 @@ function partRays(t) {
     A(eout(seg(t, mid('p3', 0.8), e('p3', 0.4))), () => chip('centre', GEO.cx + 22, GEO.cy + 30, { size: 34, align: 'left' }));
     A(eout(seg(t, s('p5', 0.6), s('p5', 1.3))), () => chip(`${ANGLE.toFixed(1)}°`, g.AA[0] - 60, g.AA[1] - 130, { size: 44, family: DISPLAY, color: C.blueDeep }));
     A(eout(seg(t, s('p8', 0.8), s('p8', 1.5))), () => chip(`${ANGLE.toFixed(1)}°`, GEO.cx - 50, GEO.cy - 145, { size: 44, family: DISPLAY, color: C.blueDeep }));
-    A(eout(seg(t, s('p9', 0.8), s('p9', 1.6))), () => chip('1/50 of the way round', GEO.cx - GEO.r * 0.2, GEO.cy - GEO.r * 0.45, { size: 36, color: C.terraDeep }));
     A(eout(seg(t, s('p2', 0.4), s('p2', 1.2))), () => chip('angle enlarged · not to scale', 120, 930, { size: 32, weight: 500, color: C.inkSoft, align: 'left' }));
     // the steps, on the right
     const X = 1060;
@@ -1167,8 +1168,8 @@ function twoNumbers(t) {
   });
   // two explanations
   const h1 = eout(seg(t, s('c12', 0.2), s('c12', 1.0))), h2 = eout(seg(t, s('c13', 0.2), s('c13', 1.0)));
-  A(h1, () => { panel(140, 470, 780, 290); txt('EASIER ARITHMETIC', 530, 560, { size: 46, family: DISPLAY, weight: 700, align: 'center', color: C.blueDeep }); txt('the figure adjusted', 530, 640, { size: 40, weight: 700, align: 'center' }); txt('so it divides neatly', 530, 700, { size: 40, weight: 700, align: 'center' }); });
-  A(h2, () => { panel(1000, 470, 780, 290); txt('A NEW STADION', 1390, 560, { size: 46, family: DISPLAY, weight: 700, align: 'center', color: C.blueDeep }); txt('a unit defined', 1390, 640, { size: 40, weight: 700, align: 'center' }); txt('from the Earth itself', 1390, 700, { size: 40, weight: 700, align: 'center' }); });
+  A(h1, () => { panel(140, 470, 750, 290); txt('EASIER ARITHMETIC', 515, 560, { size: 46, family: DISPLAY, weight: 700, align: 'center', color: C.blueDeep }); txt('the figure adjusted', 515, 640, { size: 40, weight: 700, align: 'center' }); txt('so it divides neatly', 515, 700, { size: 40, weight: 700, align: 'center' }); });
+  A(h2, () => { panel(1030, 470, 750, 290); txt('A NEW STADION', 1405, 560, { size: 46, family: DISPLAY, weight: 700, align: 'center', color: C.blueDeep }); txt('a unit defined', 1405, 640, { size: 40, weight: 700, align: 'center' }); txt('from the Earth itself', 1405, 700, { size: 40, weight: 700, align: 'center' }); });
   A(h2, () => txt('or', W / 2 + 0, 635, { size: 44, family: DISPLAY, weight: 700, align: 'center', color: C.inkSoft }));
   A(span(t, s('c12', 0.2), DURATION, 0.5, 0.5), () => txt('HISTORIANS DISAGREE', W / 2, 840, { size: 40, weight: 800, align: 'center', color: C.inkSoft, spacing: '3px' }));
 }
@@ -1213,7 +1214,7 @@ function partStadion(t) {
     const re = eout(seg(t, s('s4', 0.4), s('s4', 1.2)));
     A(re, () => {
       line(kmX(POLAR), KM.y + 20, kmX(POLAR), lerp(KM.y, 230, re), 1, { color: C.blue, width: 6 });
-      txt(`${fmt(POLAR)} km: the real Earth`, kmX(POLAR) - 16, 216, { size: 42, weight: 800, color: C.blueDeep, align: 'left' });
+      txt(`${fmt(POLAR)} km: the real Earth`, kmX(POLAR) + 16, 216, { size: 42, weight: 800, color: C.blueDeep, align: 'left' });
     });
     // 250,000 stadia at every proposed stadion
     const band = eout(seg(t, s('s5', 0.3), e('s5', 0.4)));
@@ -1249,9 +1250,9 @@ function partStadion(t) {
       chip('“within 2%”: only with a short stadion', 1380, 760, { size: 38, color: C.red });
     });
     A(eout(seg(t, mid('s11', 0.6), mid('s11', 0.6) + 0.7)), () => {
-      const x = kmX(REPEAT2012);
+      const x = kmX(POLAR);
       ctx.fillStyle = C.green; ctx.beginPath(); ctx.moveTo(x, KM.y - 4); ctx.lineTo(x - 12, KM.y - 28); ctx.lineTo(x + 12, KM.y - 28); ctx.closePath(); ctx.fill();
-      chip(`2012 repeat: ${fmt(REPEAT2012)} km`, x - 30, 400, { size: 36, color: C.green, align: 'right' });
+      chip('the method holds up', x - 30, 400, { size: 36, color: C.green, align: 'right' });
       line(x - 6, KM.y - 30, x - 40, 424, 1, { color: C.green, width: 3 });
     });
   });
@@ -1445,6 +1446,8 @@ function smallerEarths(t) {
 }
 function recap(t) {
   const g = { cx: 540, cy: 630, r: 270, th: 24 };
+  const out = 1 - seg(t, s('z7', -0.1), s('z7', 0.6));
+  A(out, () => {
   const z2 = eout(seg(t, s('z2', 0.1), s('z2', 1.0))), z3 = eout(seg(t, s('z3', 0.1), s('z3', 1.0))), z4 = eout(seg(t, s('z4', 0.1), s('z4', 1.4)));
   earth(g.cx, g.cy, g.r, eio(seg(t, s('z1', 0.1), s('z1', 1.4))));
   geometry(t, g.cx, g.cy, g.r, g.th, { rays: eout(seg(t, s('z1', 0.6), s('z1', 2.0))), syene: z2, alex: z2, extS: z3, extA: z3, angA: z2, z: 0, angC: z3, arc: z4 });
@@ -1466,8 +1469,8 @@ function recap(t) {
     });
   });
   A(eout(seg(t, s('z6', 0.3), s('z6', 1.1))), () => txt('The idea was right.', X, 820, { size: 64, family: DISPLAY, weight: 700, color: C.terraDeep }));
+  });
   A(eout(seg(t, s('z7', 0.2), s('z7', 1.0))), () => {
-    ctx.fillStyle = 'rgba(236,219,178,0.96)'; ctx.fillRect(0, 150, W, 810);
     txt('Β', W / 2, 500, { size: 300, weight: 800, align: 'center', color: C.terraDeep });
     txt('NOT BAD FOR “BETA”', W / 2, 720, { size: 64, family: DISPLAY, weight: 700, align: 'center', spacing: '6px' });
   });

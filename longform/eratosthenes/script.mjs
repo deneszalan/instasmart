@@ -11,7 +11,7 @@
 //    ratio"); bematists surveyed Egypt for agriculture and taxation (Russo); Martianus Capella VI.598 on royal
 //    surveyors (mensores regii); Olympic stade 176.4 m -> +10%, Italian 184.8 m -> +15% (Walkup); 155-160 m with
 //    252,000 -> -2.4% to +0.8% (Russo); Firsov's 157.7 m "plagued by calculation errors and false assumptions"
-//    (Engels 1985); 2012 repeat with modern data: 40,074 km; polar circumference 40,007.863 km; flattening ~0.3%;
+//    (Engels 1985); polar circumference 40,007.863 km; flattening ~0.3%;
 //    Posidonius' 180,000 (Strabo) used by Ptolemy; Columbus chose to believe in an Earth 25% smaller.
 //  - "Eratosthenes": born c. 276 BC in Cyrene; Athens; summoned by Ptolemy III to head the Library; the post made
 //    him royal tutor to the future Ptolemy IV; nicknames Pentathlos and Beta (Suda); coined "geography";
@@ -127,7 +127,7 @@ export const LINES = [
   { key: 's8', text: 'But take Pliny’s 252,000 and a short stadion, 155 to 160 metres, and he’s within *2.4%*.', say: 'But take Pliny’s two hundred and fifty-two thousand and a short stadion, a hundred and fifty-five to a hundred and sixty metres, and he’s within two point four percent.' },
   { key: 's9', text: 'One study found about 157.7 metres from ancient distances, but critics say it’s full of errors.', say: 'One study found about a hundred and fifty-seven point seven metres from ancient distances, but critics say it’s full of errors.' },
   { key: 's10', text: 'So the famous claim that he was within 2% depends on choosing a short stadion.', say: 'So the famous claim that he was within two percent depends on choosing a short stadion.' },
-  { key: 's11', gap: 0.8, text: 'The method itself holds up. Repeated in 2012 with modern data, it gave *40,074 kilometres*.', say: 'The method itself holds up. Repeated in twenty twelve with modern data, it gave forty thousand and seventy-four kilometres.' },
+  { key: 's11', gap: 0.8, text: 'The method itself is sound: measure the angle and the distance accurately, and it gives Earth’s true size.' },
 
   // ---- 8 the simplifications
   { key: 'a1', gap: 4.2, chapter: 'The simplifications', text: 'Cleomedes’ version also rests on simplifications. Let’s check them.' },
