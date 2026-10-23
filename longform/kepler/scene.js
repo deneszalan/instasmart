@@ -710,9 +710,9 @@ function partAreas(t) {
   });
   A(span(t, s('a3'), s('a4'), 0.5, 0.45), () => {
     heading(RX, 230, 'TO FIND THE PLANET', 'Add up every distance', null, { size: 76 });
-    const str = 'r₁ + r₂ + r₃ + r₄ + r₅ + r₆ + …';
+    const str = 'r₁ + r₂ + r₃ + r₄ + r₅ + …';
     const n = Math.ceil(str.length * clamp(seg(t, s('a3', 0.5), e('a3'))));
-    mono(str.slice(0, n), RX, 520, { size: 52, color: C.steel });
+    mono(str.slice(0, n), RX, 520, { size: 44, color: C.steel });
     para('hopeless by hand', RX, 640, RW, { size: 48, italic: true, color: C.ivorySoft });
   });
   A(span(t, s('a4'), s('a5'), 0.5, 0.45), () => heading(RX, 230, 'LATE 1602 · A SHORTCUT', 'Measure the area', 'swept by the line from the Sun', { size: 88 }));
