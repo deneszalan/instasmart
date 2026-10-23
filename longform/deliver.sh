@@ -4,6 +4,8 @@
 # and copies the mp4 and its captions to ../out/<name>.mp4 and .srt.
 set -e
 S=$(cd "$(dirname "$0")" && pwd); d=$S/$1; m=$d/$1.mp4; out=$S/../out
+# Already delivered (and cleaned up) by an earlier run: nothing to do.
+if [ ! -e $m ] && [ -e $out/$2.mp4 ]; then echo "$2: already delivered"; exit 0; fi
 D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 $m)
 echo "$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height,r_frame_rate,duration -of csv=p=0 $m) | audio $(ffprobe -v error -select_streams a:0 -show_entries stream=duration -of csv=p=0 $m) | $(du -h $m | cut -f1)"
 ffmpeg -nostdin -v info -i $m -af ebur128=peak=true -f null - 2>&1 | grep -E "^\s+(I|Peak):" | tail -2 | tr -s ' ' | tr '\n' ' '; echo

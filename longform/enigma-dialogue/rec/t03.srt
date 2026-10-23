@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: Five weeks later, Germany invaded Poland.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERA: At Bletchley Park, Alan Turing and Gordon Welchman reported for work the day after Britain declared war.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: So Bletchley leaned on cribs, which were stretches of a message they could guess, like set phrases.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERA: One outpost in North Africa regularly sent a phrase meaning nothing special to report.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: Slide the crib along the ciphertext, one place at a time.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERA: Enigma never enciphers a letter as itself, so wherever a crib letter sits on the same letter, the crib can't be there.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: Slide on, and cross out every clash.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERA: The guess says what the message holds. The flaw says where it can't be.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: No. For that, Turing designed the bombe.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERA: Line the crib up with the ciphertext, and each pair of letters is a link.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: At each rotor position, the bombe guesses one letter's plug partner and follows the consequences.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERA: Gordon Welchman added the diagonal board, which uses the rule that if A is plugged to B, B is plugged to A.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: We ran our menu through every position. Without the diagonal board, it stopped six hundred and sixty-two times.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERA: The first bombe, Victory, arrived in March nineteen forty, built by Harold Keen's engineers.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: The hardest Enigma was the navy's, with three rotors from eight and stricter procedures.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERA: Turing took it on, he said, because no one else was doing anything about it, and he could have it to himself.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: It also took captured papers. In May nineteen forty-one, sailors seized codebooks and keys from U one-ten.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERA: For ten months, Bletchley couldn't read them, and the wolf packs ravaged convoys.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERA: In October nineteen forty-two, off Port Said, sailors from H M S Petard climbed into the sinking U five-five-nine for its papers.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERA: By December nineteen forty-two, U-boat messages were being read again.

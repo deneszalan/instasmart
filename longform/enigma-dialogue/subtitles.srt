@@ -1,479 +1,479 @@
 1
-00:00:01,000 --> 00:00:05,520
+00:00:01,000 --> 00:00:04,490
 >> Press a key on this machine, and a lamp lights up another letter.
 
 2
-00:00:05,600 --> 00:00:12,240
+00:00:04,570 --> 00:00:11,210
 >> Press the same key again, and a different lamp lights, and then another.
 
 3
-00:00:12,320 --> 00:00:19,080
+00:00:11,290 --> 00:00:16,860
 >> In the war, the army's version could be set up in nearly 159 quintillion ways.
 
 4
-00:00:19,160 --> 00:00:25,730
+00:00:16,940 --> 00:00:23,510
 >> 159 quintillion? That sounds unbreakable.
 
 5
-00:00:25,810 --> 00:00:30,870
+00:00:23,590 --> 00:00:27,620
 >> But it had one odd habit. It never turned a letter into itself.
 
 6
-00:00:30,950 --> 00:00:39,270
+00:00:27,700 --> 00:00:36,020
 >> That small rule, and the people who saw what it meant, helped break Enigma.
 
 7
-00:00:41,870 --> 00:00:50,060
+00:00:38,620 --> 00:00:45,570
 >> Enigma has 26 keys and 26 lamps. One operator types; another writes down the lamps that light.
 
 8
-00:00:50,140 --> 00:00:58,880
+00:00:45,650 --> 00:00:54,390
 >> So let's follow one key press. First, the key turns the right-hand rotor one step.
 
 9
-00:00:58,960 --> 00:01:04,330
+00:00:54,470 --> 00:00:58,400
 >> Then the current runs to the plugboard, where a cable can swap it for another letter.
 
 10
-00:01:04,410 --> 00:01:06,800
+00:00:58,480 --> 00:01:00,870
 >> And here, A is plugged to Q.
 
 11
-00:01:06,880 --> 00:01:12,490
+00:01:00,950 --> 00:01:05,040
 >> Next come three rotors, each wired inside to turn one letter into another.
 
 12
-00:01:12,570 --> 00:01:18,410
+00:01:05,120 --> 00:01:10,960
 >> At the far end, the reflector sends the current back another way.
 
 13
-00:01:18,490 --> 00:01:25,290
+00:01:11,040 --> 00:01:17,150
 >> Back through the plugboard, and one lamp lights. Here, A became C.
 
 14
-00:01:25,490 --> 00:01:33,880
+00:01:17,350 --> 00:01:25,740
 >> Now press A again. The rotor has moved, so every wire has shifted. A becomes N.
 
 15
-00:01:33,960 --> 00:01:40,300
+00:01:25,820 --> 00:01:30,840
 >> So the same key gives a new letter, because every press uses a fresh scrambled alphabet.
 
 16
-00:01:40,380 --> 00:01:44,120
+00:01:30,920 --> 00:01:34,660
 >> Do the other two rotors ever move?
 
 17
-00:01:44,200 --> 00:01:50,940
+00:01:34,740 --> 00:01:40,230
 >> Once per turn, a notch lets the right rotor push the middle one along, like a car's odometer.
 
 18
-00:01:51,020 --> 00:01:57,110
+00:01:40,310 --> 00:01:45,130
 Almost. The middle rotor sometimes steps twice in a row, which is called the double step.
 
 19
-00:01:57,190 --> 00:02:00,160
+00:01:45,210 --> 00:01:48,180
 >> So it's not quite an odometer.
 
 20
-00:02:00,240 --> 00:02:08,160
+00:01:48,260 --> 00:01:55,110
 >> No. The rotors come back to where they started only after 16,900 key presses.
 
 21
-00:02:11,360 --> 00:02:19,950
+00:01:58,310 --> 00:02:06,900
 >> The reflector joins the 26 letters in 13 pairs, and turns the current round.
 
 22
-00:02:20,030 --> 00:02:27,640
+00:02:06,980 --> 00:02:12,350
 >> So the machine works both ways. At the same setting, press C, and the current runs backwards to A.
 
 23
-00:02:27,720 --> 00:02:36,560
+00:02:12,430 --> 00:02:21,270
 >> Set a second machine the same way, type in the ciphertext, and out comes the message.
 
 24
-00:02:36,640 --> 00:02:40,650
+00:02:21,350 --> 00:02:24,740
 >> There's no switch between coding and decoding at all.
 
 25
-00:02:40,730 --> 00:02:45,870
+00:02:24,820 --> 00:02:29,960
 >> But there's a catch. Could a key ever light its own lamp?
 
 26
-00:02:45,950 --> 00:02:50,660
+00:02:30,040 --> 00:02:33,340
 >> Only if the current came back along the very wire it went in on.
 
 27
-00:02:50,740 --> 00:02:55,950
+00:02:33,420 --> 00:02:37,180
 That would mean the reflector joining a letter to itself, and it never does.
 
 28
-00:02:56,030 --> 00:03:04,350
+00:02:37,260 --> 00:02:45,580
 >> So no letter is ever enciphered as itself. Press A, and you get anything but A.
 
 29
-00:03:04,430 --> 00:03:10,440
+00:02:45,660 --> 00:02:51,010
 >> We tried every key at every rotor position. Not one lit its own lamp.
 
 30
-00:03:10,520 --> 00:03:13,360
+00:02:51,090 --> 00:02:53,930
 >> Couldn't the plugboard fix that?
 
 31
-00:03:13,440 --> 00:03:19,510
+00:02:54,010 --> 00:02:59,970
 >> No. It swaps a letter on the way in, and swaps it back on the way out.
 
 32
-00:03:22,110 --> 00:03:27,930
+00:03:02,570 --> 00:03:08,390
 >> So how many ways could the army's Enigma actually be set up?
 
 33
-00:03:28,010 --> 00:03:33,830
+00:03:08,470 --> 00:03:13,860
 >> Let's count. There are three rotors from a box of five, and ten plugboard cables.
 
 34
-00:03:33,910 --> 00:03:42,870
+00:03:13,940 --> 00:03:22,900
 >> Choosing the rotors and their order gives 5 × 4 × 3, which is 60 ways.
 
 35
-00:03:42,950 --> 00:03:52,290
+00:03:22,980 --> 00:03:30,340
 >> Their starting positions give 26 × 26 × 26, which is 17,576.
 
 36
-00:03:52,370 --> 00:03:59,160
+00:03:30,420 --> 00:03:36,770
 And ten cables pairing up letters on the plugboard give about 151 trillion ways.
 
 37
-00:03:59,240 --> 00:04:11,030
+00:03:36,850 --> 00:03:48,640
 >> Multiply them: nearly 159 quintillion settings, even before the rotors' ring settings.
 
 38
-00:04:11,110 --> 00:04:16,600
+00:03:48,720 --> 00:03:53,330
 >> At a million settings a second, trying them all would take about five million years.
 
 39
-00:04:16,680 --> 00:04:20,470
+00:03:53,410 --> 00:03:57,200
 >> No wonder its users felt safe.
 
 40
-00:04:20,550 --> 00:04:29,050
+00:03:57,280 --> 00:04:05,080
 >> But nobody broke Enigma by trying every setting. They found shortcuts, and the first came from Poland.
 
 41
-00:04:31,650 --> 00:04:39,610
+00:04:07,680 --> 00:04:14,280
 In 1929, Poland's Cipher Bureau trained German-speaking mathematics students in Poznań, in secret.
 
 42
-00:04:39,690 --> 00:04:43,010
+00:04:14,360 --> 00:04:17,680
 >> Why did they want German speakers?
 
 43
-00:04:43,090 --> 00:04:47,080
+00:04:17,760 --> 00:04:20,550
 >> Poznań had been German before the First World War.
 
 44
-00:04:47,160 --> 00:04:59,330
+00:04:20,630 --> 00:04:32,800
 >> In September 1932, the Bureau took on three of them, Marian Rejewski, Jerzy Różycki and Henryk Zygalski.
 
 45
-00:04:59,410 --> 00:05:08,600
+00:04:32,880 --> 00:04:40,240
 >> Rejewski spotted a German habit. Each message began with its own rotor setting, typed twice, from a start shared that day.
 
 46
-00:05:08,680 --> 00:05:15,620
+00:04:40,320 --> 00:04:45,840
 So the 1st and 4th letters hide the same letter. So do the 2nd and 5th, and the 3rd and 6th.
 
 47
-00:05:15,700 --> 00:05:21,970
+00:04:45,920 --> 00:04:51,910
 From a day's messages, those links join up into loops, which come in pairs of the same length.
 
 48
-00:05:22,050 --> 00:05:30,390
+00:04:51,990 --> 00:05:00,330
 >> And the plugboard changes which letters sit in each loop, but never how long the loops are.
 
 49
-00:05:30,470 --> 00:05:35,760
+00:05:00,410 --> 00:05:04,830
 >> So the lengths of the loops point to the rotor settings, whatever the plugboard does.
 
 50
-00:05:35,840 --> 00:05:43,260
+00:05:04,910 --> 00:05:12,330
 >> A cryptology scholar later called this "the theorem that won World War Two."
 
 51
-00:05:43,340 --> 00:05:48,080
+00:05:12,410 --> 00:05:16,340
 >> Rejewski still needed the rotors' wiring. Help came from a spy.
 
 52
-00:05:48,160 --> 00:05:57,450
+00:05:16,420 --> 00:05:24,550
 Hans-Thilo Schmidt, at Germany's Cipher Office, sold secrets to the French, including two months of keys from 1932.
 
 53
-00:05:57,530 --> 00:06:02,270
+00:05:24,630 --> 00:05:29,370
 >> And in December, the French shared them with Poland.
 
 54
-00:06:02,350 --> 00:06:10,040
+00:05:29,450 --> 00:05:35,090
 >> Another puzzle was the keys' wiring. Rejewski guessed plain order, A to A and B to B, and was right.
 
 55
-00:06:10,120 --> 00:06:13,810
+00:05:35,170 --> 00:05:38,860
 >> So it was just the alphabet, in order.
 
 56
-00:06:13,890 --> 00:06:22,640
+00:05:38,940 --> 00:05:46,630
 >> By the end of 1932, he had all three rotors and the reflector, without ever seeing the machine.
 
 57
-00:06:25,840 --> 00:06:34,930
+00:05:49,830 --> 00:05:57,070
 From January 1933, the Poles read Enigma. As the Germans tightened their rules, they kept finding new ways in.
 
 58
-00:06:35,010 --> 00:06:44,650
+00:05:57,150 --> 00:06:06,790
 >> From September 1938, each operator picked his own start, but still typed the key twice.
 
 59
-00:06:44,730 --> 00:06:52,550
+00:06:06,870 --> 00:06:12,330
 >> Sometimes a repeated letter came out the same twice. Zygalski punched sheets with holes wherever that could happen.
 
 60
-00:06:52,630 --> 00:07:00,950
+00:06:12,410 --> 00:06:20,730
 >> Stack the sheets for a day's messages, line them up, and fewer and fewer holes shine through.
 
 61
-00:07:01,030 --> 00:07:08,420
+00:06:20,810 --> 00:06:27,500
 >> Here are seven, from a simulated day. The one hole left gives away the ring settings.
 
 62
-00:07:08,520 --> 00:07:11,910
+00:06:27,600 --> 00:06:30,990
 >> And they cut all those holes by hand?
 
 63
-00:07:11,990 --> 00:07:15,950
+00:06:31,070 --> 00:06:34,780
 >> Yes, they cut them by hand, with razor blades.
 
 64
-00:07:16,030 --> 00:07:23,470
+00:06:34,860 --> 00:06:41,180
 Rejewski also designed the bomba, which was in effect six Enigmas wired together and driven by a motor.
 
 65
-00:07:23,550 --> 00:07:32,420
+00:06:41,260 --> 00:06:50,130
 >> Six were built, one for each order of the rotors. A day's key took about two hours.
 
 66
-00:07:32,500 --> 00:07:40,960
+00:06:50,210 --> 00:06:57,380
 >> Then, in December 1938, the Germans added two more rotors. Three from five made 60 orders, not six.
 
 67
-00:07:41,040 --> 00:07:47,380
+00:06:57,460 --> 00:07:02,510
 Sixty bombas would have cost fifteen times the Bureau's yearly budget for equipment.
 
 68
-00:07:47,460 --> 00:07:56,650
+00:07:02,590 --> 00:07:10,870
 So in late July 1939, at a secret site outside Warsaw, the Poles showed French and British codebreakers everything.
 
 69
-00:07:56,730 --> 00:08:03,770
+00:07:10,950 --> 00:07:17,990
 >> They shared their Enigma copies, the sheets, the bomba and their methods.
 
 70
-00:08:03,850 --> 00:08:07,840
+00:07:18,070 --> 00:07:21,610
 >> Five weeks later, Germany invaded Poland.
 
 71
-00:08:07,920 --> 00:08:12,340
+00:07:21,690 --> 00:07:26,110
 >> They passed it on just in time.
 
 72
-00:08:14,940 --> 00:08:22,600
+00:07:28,710 --> 00:07:34,650
 >> At Bletchley Park, Alan Turing and Gordon Welchman reported for work the day after Britain declared war.
 
 73
-00:08:22,680 --> 00:08:32,100
+00:07:34,730 --> 00:07:44,150
 >> Turing expected the Germans to stop typing the key twice. In May 1940, they did.
 
 74
-00:08:32,180 --> 00:08:38,740
+00:07:44,230 --> 00:07:49,600
 >> So Bletchley leaned on cribs, which were stretches of a message they could guess, like set phrases.
 
 75
-00:08:38,820 --> 00:08:40,560
+00:07:49,680 --> 00:07:51,420
 >> Such as?
 
 76
-00:08:40,640 --> 00:08:47,330
+00:07:51,500 --> 00:07:56,640
 >> One outpost in North Africa regularly sent a phrase meaning nothing special to report.
 
 77
-00:08:47,410 --> 00:08:50,450
+00:07:56,720 --> 00:07:59,760
 >> But where in the message would it be?
 
 78
-00:08:50,530 --> 00:08:54,900
+00:07:59,840 --> 00:08:03,310
 >> Slide the crib along the ciphertext, one place at a time.
 
 79
-00:08:54,980 --> 00:09:03,170
+00:08:03,390 --> 00:08:09,420
 Enigma never enciphers a letter as itself, so wherever a crib letter sits on the same letter, the crib can't be there.
 
 80
-00:09:03,250 --> 00:09:10,740
+00:08:09,500 --> 00:08:16,990
 >> Like here, in the second place, where an R sits on an R. That one's crossed out.
 
 81
-00:09:10,820 --> 00:09:15,020
+00:08:17,070 --> 00:08:21,260
 >> Slide on, and cross out every clash.
 
 82
-00:09:16,270 --> 00:09:24,560
+00:08:22,510 --> 00:08:30,800
 >> Of these 16 places, 9 are ruled out, without any machine at all.
 
 83
-00:09:24,640 --> 00:09:30,580
+00:08:30,880 --> 00:08:36,260
 >> The guess says what the message holds. The flaw says where it can't be.
 
 84
-00:09:33,180 --> 00:09:38,440
+00:08:38,860 --> 00:08:44,120
 >> But a crib in the right place still doesn't give you the key.
 
 85
-00:09:38,520 --> 00:09:41,510
+00:08:44,200 --> 00:08:47,870
 >> No. For that, Turing designed the bombe.
 
 86
-00:09:41,590 --> 00:09:46,480
+00:08:47,950 --> 00:08:51,330
 Line the crib up with the ciphertext, and each pair of letters is a link.
 
 87
-00:09:46,560 --> 00:09:54,950
+00:08:51,410 --> 00:08:59,800
 >> Draw all the links, and you get a menu. Where links close into loops, it gets powerful.
 
 88
-00:09:55,030 --> 00:10:01,970
+00:08:59,880 --> 00:09:04,830
 >> At each rotor position, the bombe guesses one letter's plug partner and follows the consequences.
 
 89
-00:10:02,050 --> 00:10:10,020
+00:09:04,910 --> 00:09:12,880
 >> And a contradiction means that position is impossible, so the drums turn on.
 
 90
-00:10:10,100 --> 00:10:17,740
+00:09:12,960 --> 00:09:19,790
 >> Gordon Welchman added the diagonal board, which uses the rule that if A is plugged to B, B is plugged to A.
 
 91
-00:10:17,820 --> 00:10:20,860
+00:09:19,870 --> 00:09:22,910
 >> Does that really make a difference?
 
 92
-00:10:20,940 --> 00:10:28,900
+00:09:22,990 --> 00:09:28,710
 >> We ran our menu through every position. Without the diagonal board, it stopped 662 times.
 
 93
-00:10:28,980 --> 00:10:36,870
+00:09:28,790 --> 00:09:36,680
 >> With it, it stopped just twice, and the true stop showed E plugged to J.
 
 94
-00:10:36,950 --> 00:10:43,990
+00:09:36,760 --> 00:09:42,810
 >> The first bombe, Victory, arrived in March 1940, built by Harold Keen's engineers.
 
 95
-00:10:44,070 --> 00:10:55,260
+00:09:42,890 --> 00:09:54,080
 >> By 1945 there were about 200, run by some 2,000 Wrens of the Royal Navy.
 
 96
-00:10:57,860 --> 00:11:03,900
+00:09:56,680 --> 00:10:01,840
 >> The hardest Enigma was the navy's, with three rotors from eight and stricter procedures.
 
 97
-00:11:03,980 --> 00:11:11,220
+00:10:01,920 --> 00:10:07,840
 Turing took it on, he said, because no one else was doing anything about it, and he could have it to himself.
 
 98
-00:11:11,300 --> 00:11:19,120
+00:10:07,920 --> 00:10:14,380
 It also took captured papers. In May 1941, sailors seized codebooks and keys from U-110.
 
 99
-00:11:19,200 --> 00:11:27,520
+00:10:14,460 --> 00:10:22,780
 >> Through late 1941, decrypts helped steer convoys around the waiting U-boats.
 
 100
-00:11:27,600 --> 00:11:36,810
+00:10:22,860 --> 00:10:32,070
 Then, on 1 February 1942, the U-boats got a new Enigma with four rotors.
 
 101
-00:11:36,890 --> 00:11:43,380
+00:10:32,150 --> 00:10:37,770
 >> For ten months, Bletchley couldn't read them, and the wolf packs ravaged convoys.
 
 102
-00:11:43,460 --> 00:11:46,120
+00:10:37,850 --> 00:10:40,510
 >> So how did they get back in?
 
 103
-00:11:46,200 --> 00:11:56,070
+00:10:40,590 --> 00:10:49,890
 >> In October 1942, off Port Said, sailors from HMS Petard climbed into the sinking U-559 for its papers.
 
 104
-00:11:56,150 --> 00:12:04,820
+00:10:49,970 --> 00:10:58,640
 >> Two of them, Tony Fasson and Colin Grazier, were still inside when it sank, and drowned.
 
 105
-00:12:04,900 --> 00:12:10,170
+00:10:58,720 --> 00:11:03,040
 >> By December 1942, U-boat messages were being read again.
 
 106
-00:12:10,250 --> 00:12:14,090
+00:11:03,120 --> 00:11:06,960
 >> So how much did that decide the Atlantic?
 
 107
-00:12:14,170 --> 00:12:19,410
+00:11:07,040 --> 00:11:11,540
 >> That's still argued. Radar and much else mattered too.
 
 108
-00:12:22,010 --> 00:12:31,380
+00:11:14,140 --> 00:11:23,510
 >> In the film The Imitation Game, Turing builds one machine almost alone, and calls it Christopher.
 
 109
-00:12:31,460 --> 00:12:37,050
+00:11:23,590 --> 00:11:28,530
 >> In fact, the first bombe was Victory, and breaking Enigma took thousands of people.
 
 110
-00:12:37,130 --> 00:12:38,850
+00:11:28,610 --> 00:11:30,330
 >> Thousands?
 
 111
-00:12:38,930 --> 00:12:48,490
+00:11:30,410 --> 00:11:37,900
 >> By January 1945, Bletchley Park and its outstations had almost 9,000 staff. About three quarters were women.
 
 112
-00:12:48,570 --> 00:12:51,540
+00:11:37,980 --> 00:11:40,950
 >> And what was all that work worth?
 
 113
-00:12:51,620 --> 00:12:59,940
+00:11:41,030 --> 00:11:47,980
 >> Harry Hinsley, a veteran and later Bletchley's official historian, judged their work shortened the war by at least two years.
 
 114
-00:13:00,020 --> 00:13:07,780
+00:11:48,060 --> 00:11:55,820
 >> Others find any such number too precise. No one can run a war twice.
 
 115
-00:13:07,860 --> 00:13:18,170
+00:11:55,900 --> 00:12:04,050
 >> One of the last messages Bletchley decoded was sent from Cuxhaven on 7 May 1945. British troops had entered the town.
 
 116
-00:13:18,250 --> 00:13:27,470
+00:12:04,130 --> 00:12:13,350
 >> And the operator signed off: "Closing down forever. All the best. Goodbye."
 
 117
-00:13:28,270 --> 00:13:34,510
+00:12:14,150 --> 00:12:19,550
 >> The reflector made Enigma convenient. It also meant no letter could ever be itself.
 
 118
-00:13:34,590 --> 00:13:38,410
+00:12:19,630 --> 00:12:23,450
 >> On its own, that flaw wasn't enough.
 
 119
-00:13:38,490 --> 00:13:45,010
+00:12:23,530 --> 00:12:29,630
 >> No. But add German habits, captured papers and thousands of patient people, and it was.
 
 120
-00:13:45,090 --> 00:13:52,010
+00:12:29,710 --> 00:12:36,630
 >> Press A, and you could get any letter at all, except A.
