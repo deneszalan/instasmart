@@ -681,11 +681,13 @@ function partNew(t) {
   // the paper and its first line
   A(span(t, s('n3', 0.1), s('n5', 0.1), 0.6, 0.5), () => {
     panel(360, 230, 1200, 640, 'IEEE TRANS. INFORMATION THEORY · NOV 1976', C.green, 1);
-    txt('New Directions in Cryptography', 960, 400, { size: 76, weight: 600, color: C.ink, align: 'center', g: 6 });
+    txt('New Directions in Cryptography', 960, 400, { size: 70, weight: 600, color: C.ink, align: 'center', g: 6 });
     mono('Whitfield Diffie and Martin E. Hellman', 960, 490, { size: 36, color: C.soft, align: 'center' });
     const n4 = s('n4', 1.0), l1 = '“We stand today on the brink', l2 = 'of a revolution in cryptography.”';
     txt(typed(l1, t, n4, 20), 460, 640, { size: 56, weight: 500, color: C.green, g: 8 });
     txt(typed(l2, t, n4 + l1.length / 20, 20), 460, 720, { size: 56, weight: 500, color: C.green, g: 8 });
+    // the dialogue version adds a line about the award (Wikipedia, "Martin Hellman"): shown only when that line exists
+    if (T.x6) A(ap(t, mid('x6', 0.45)), () => chip(960, 818, '2015 · TURING AWARD', C.gold, { size: 34 }));
     const done = t > n4 + (l1.length + l2.length) / 20;
     if (t > n4 && Math.floor(t * 2.4) % 2 === 0) { const w = tw(done ? l2 : t > n4 + l1.length / 20 ? typed(l2, t, n4 + l1.length / 20, 20) : typed(l1, t, n4, 20), 56, 500); ctx.fillStyle = C.green; ctx.fillRect(464 + w, t > n4 + l1.length / 20 ? 694 : 614, 16, 52); }
   });
