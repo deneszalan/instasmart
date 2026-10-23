@@ -1,0 +1,602 @@
+[
+ {
+  "key": "o1",
+  "who": "A",
+  "spoken": "Press a key on this machine, and a lamp lights up another letter."
+ },
+ {
+  "key": "o2",
+  "who": "B",
+  "spoken": "Press the same key again, and a different lamp lights, and then another."
+ },
+ {
+  "key": "o3",
+  "who": "A",
+  "spoken": "In the war, the army's version could be set up in nearly a hundred and fifty-nine quintillion ways."
+ },
+ {
+  "key": "x1",
+  "who": "B",
+  "spoken": "A hundred and fifty-nine quintillion? That sounds unbreakable."
+ },
+ {
+  "key": "o4",
+  "who": "A",
+  "spoken": "But it had one odd habit. It never turned a letter into itself."
+ },
+ {
+  "key": "o5",
+  "who": "B",
+  "spoken": "That small rule, and the people who saw what it meant, helped break Enigma."
+ },
+ {
+  "key": "k1",
+  "who": "A",
+  "spoken": "Enigma has twenty-six keys and twenty-six lamps. One operator types; another writes down the lamps that light."
+ },
+ {
+  "key": "k3",
+  "who": "B",
+  "spoken": "So let's follow one key press. First, the key turns the right-hand rotor one step."
+ },
+ {
+  "key": "k4",
+  "who": "A",
+  "spoken": "Then the current runs to the plugboard, where a cable can swap it for another letter."
+ },
+ {
+  "key": "x2",
+  "who": "B",
+  "spoken": "And here, A is plugged to Q."
+ },
+ {
+  "key": "k5",
+  "who": "A",
+  "spoken": "Next come three rotors, each wired inside to turn one letter into another."
+ },
+ {
+  "key": "k6",
+  "who": "B",
+  "spoken": "At the far end, the reflector sends the current back another way."
+ },
+ {
+  "key": "k7",
+  "who": "A",
+  "spoken": "Back through the plugboard, and one lamp lights. Here, the letter A became C."
+ },
+ {
+  "key": "k8",
+  "who": "B",
+  "spoken": "Now press A again. The rotor has moved, so every wire has shifted. A becomes N."
+ },
+ {
+  "key": "x3",
+  "who": "A",
+  "spoken": "So the same key gives a new letter, because every press uses a fresh scrambled alphabet."
+ },
+ {
+  "key": "x4",
+  "who": "B",
+  "spoken": "Do the other two rotors ever move?"
+ },
+ {
+  "key": "k9",
+  "who": "A",
+  "spoken": "Once per turn, a notch lets the right rotor push the middle one along, like a car's odometer."
+ },
+ {
+  "key": "k10",
+  "who": "A",
+  "spoken": "Almost. The middle rotor sometimes steps twice in a row, which is called the double step."
+ },
+ {
+  "key": "x5",
+  "who": "B",
+  "spoken": "So it's not quite an odometer."
+ },
+ {
+  "key": "k11",
+  "who": "A",
+  "spoken": "No. The rotors come back to where they started only after sixteen thousand nine hundred key presses."
+ },
+ {
+  "key": "r1",
+  "who": "B",
+  "spoken": "The reflector joins the 26 letters in 13 pairs, and turns the current round."
+ },
+ {
+  "key": "r2",
+  "who": "A",
+  "spoken": "So the machine works both ways. At the same setting, press the letter C, and the current runs backwards to A."
+ },
+ {
+  "key": "r3",
+  "who": "B",
+  "spoken": "Set a second machine the same way, type in the ciphertext, and out comes the message."
+ },
+ {
+  "key": "x7",
+  "who": "A",
+  "spoken": "There's no switch between coding and decoding at all."
+ },
+ {
+  "key": "r4",
+  "who": "B",
+  "spoken": "But there's a catch. Could a key ever light its own lamp?"
+ },
+ {
+  "key": "r5",
+  "who": "A",
+  "spoken": "Only if the current came back along the very wire it went in on."
+ },
+ {
+  "key": "r6",
+  "who": "A",
+  "spoken": "That would mean the reflector joining a letter to itself, and it never does."
+ },
+ {
+  "key": "r7",
+  "who": "B",
+  "spoken": "So no letter is ever enciphered as itself. Press A, and you get anything but A."
+ },
+ {
+  "key": "r8",
+  "who": "A",
+  "spoken": "We tried every key at every rotor position. Not one lit its own lamp."
+ },
+ {
+  "key": "x8",
+  "who": "B",
+  "spoken": "Couldn't the plugboard fix that?"
+ },
+ {
+  "key": "r9",
+  "who": "A",
+  "spoken": "No. It swaps a letter on the way in, and swaps it back on the way out."
+ },
+ {
+  "key": "n1",
+  "who": "B",
+  "spoken": "So how many ways could the army's Enigma actually be set up?"
+ },
+ {
+  "key": "x9",
+  "who": "A",
+  "spoken": "Let's count. There are three rotors from a box of five, and ten plugboard cables."
+ },
+ {
+  "key": "n2",
+  "who": "B",
+  "spoken": "Choosing the rotors and their order gives 5 times 4 times 3, which is 60 ways."
+ },
+ {
+  "key": "n3",
+  "who": "A",
+  "spoken": "Their starting positions give twenty-six times twenty-six times twenty-six, which is seventeen thousand five hundred and seventy-six."
+ },
+ {
+  "key": "n4",
+  "who": "A",
+  "spoken": "And ten cables pairing up letters on the plugboard give about a hundred and fifty-one trillion ways."
+ },
+ {
+  "key": "n5",
+  "who": "B",
+  "spoken": "Multiply them, and that's nearly 159 quintillion settings, even before the rotors' ring settings."
+ },
+ {
+  "key": "n6",
+  "who": "A",
+  "spoken": "At a million settings a second, trying them all would take about five million years."
+ },
+ {
+  "key": "x11",
+  "who": "B",
+  "spoken": "No wonder its users felt safe."
+ },
+ {
+  "key": "n7",
+  "who": "A",
+  "spoken": "But nobody broke Enigma by trying every setting. They found shortcuts, and the first came from Poland."
+ },
+ {
+  "key": "p1",
+  "who": "A",
+  "spoken": "In nineteen twenty-nine, Poland's Cipher Bureau trained German-speaking mathematics students in Poznan, in secret."
+ },
+ {
+  "key": "x12",
+  "who": "B",
+  "spoken": "Why did they want German speakers?"
+ },
+ {
+  "key": "x13",
+  "who": "A",
+  "spoken": "Poznan had been German before the First World War."
+ },
+ {
+  "key": "p2",
+  "who": "B",
+  "spoken": "In September 1932, the Bureau took on three of them, Marian Rayefski, Yerzy Roozhitski, and Henrik Zigalski."
+ },
+ {
+  "key": "p3",
+  "who": "A",
+  "spoken": "Rayefski spotted a German habit. Each message began with its own rotor setting, typed twice, from a start shared that day."
+ },
+ {
+  "key": "p4",
+  "who": "A",
+  "spoken": "So the first and fourth letters hide the same letter. So do the second and fifth, and the third and sixth."
+ },
+ {
+  "key": "p5",
+  "who": "A",
+  "spoken": "From a day's messages, those links join up into loops, which come in pairs of the same length."
+ },
+ {
+  "key": "p6",
+  "who": "B",
+  "spoken": "And the plugboard changes which letters sit in each loop, but never how long the loops are."
+ },
+ {
+  "key": "x14",
+  "who": "A",
+  "spoken": "So the lengths of the loops point to the rotor settings, whatever the plugboard does."
+ },
+ {
+  "key": "p7",
+  "who": "B",
+  "spoken": "A cryptology scholar later called this the theorem that won World War Two."
+ },
+ {
+  "key": "p8",
+  "who": "A",
+  "spoken": "Rayefski still needed the rotors' wiring. Help came from a spy."
+ },
+ {
+  "key": "p9",
+  "who": "A",
+  "spoken": "Hans-Thilo Schmidt, at Germany's Cipher Office, sold secrets to the French, including two months of keys from nineteen thirty-two."
+ },
+ {
+  "key": "p10",
+  "who": "B",
+  "spoken": "And in December, the French shared them with Poland."
+ },
+ {
+  "key": "p11",
+  "who": "A",
+  "spoken": "Another puzzle was the keys' wiring. Rayefski guessed plain order, A to A and B to B, and he was right."
+ },
+ {
+  "key": "x15",
+  "who": "B",
+  "spoken": "So it was just the alphabet, in order."
+ },
+ {
+  "key": "p12",
+  "who": "A",
+  "spoken": "By the end of nineteen thirty-two, he had all three rotors and the reflector, without ever seeing the machine."
+ },
+ {
+  "key": "z1",
+  "who": "A",
+  "spoken": "From January nineteen thirty-three, the Poles read Enigma. As the Germans tightened their rules, they kept finding new ways in."
+ },
+ {
+  "key": "z2",
+  "who": "B",
+  "spoken": "From September 1938, each operator picked his own start, but still typed the key twice."
+ },
+ {
+  "key": "z3",
+  "who": "A",
+  "spoken": "Sometimes a repeated letter came out the same twice. Zigalski punched sheets with holes wherever that could happen."
+ },
+ {
+  "key": "z4",
+  "who": "B",
+  "spoken": "Stack the sheets for a day's messages, line them up, and fewer and fewer holes shine through."
+ },
+ {
+  "key": "z5",
+  "who": "A",
+  "spoken": "Here are seven, from a simulated day. The one hole left gives away the ring settings."
+ },
+ {
+  "key": "x17",
+  "who": "B",
+  "spoken": "And they cut all those holes by hand?"
+ },
+ {
+  "key": "x18",
+  "who": "A",
+  "spoken": "Yes, they cut them by hand, with razor blades."
+ },
+ {
+  "key": "z6",
+  "who": "A",
+  "spoken": "Rayefski also designed the bomba, which was in effect six Enigmas wired together and driven by a motor."
+ },
+ {
+  "key": "z7",
+  "who": "B",
+  "spoken": "Six were built, one for each order of the rotors. A day's key took about two hours."
+ },
+ {
+  "key": "z8",
+  "who": "A",
+  "spoken": "Then, in December nineteen thirty-eight, the Germans added two more rotors. Three from five made sixty orders, not six."
+ },
+ {
+  "key": "z9",
+  "who": "A",
+  "spoken": "Sixty bombas would have cost fifteen times the Bureau's yearly budget for equipment."
+ },
+ {
+  "key": "z10",
+  "who": "A",
+  "spoken": "So in late July nineteen thirty-nine, at a secret site outside Warsaw, the Poles showed French and British codebreakers everything."
+ },
+ {
+  "key": "x20",
+  "who": "B",
+  "spoken": "They shared their Enigma copies, the sheets, the bomba and their methods."
+ },
+ {
+  "key": "z12",
+  "who": "A",
+  "spoken": "Five weeks later, Germany invaded Poland."
+ },
+ {
+  "key": "x21",
+  "who": "B",
+  "spoken": "They passed it on just in time."
+ },
+ {
+  "key": "c1",
+  "who": "A",
+  "spoken": "At Bletchley Park, Alan Turing and Gordon Welchman reported for work the day after Britain declared war."
+ },
+ {
+  "key": "c2",
+  "who": "B",
+  "spoken": "Turing expected the Germans to stop typing the key twice. In May 1940, they did."
+ },
+ {
+  "key": "c3",
+  "who": "A",
+  "spoken": "So Bletchley leaned on cribs, which were stretches of a message they could guess, like set phrases."
+ },
+ {
+  "key": "x22",
+  "who": "B",
+  "spoken": "Such as?"
+ },
+ {
+  "key": "c4",
+  "who": "A",
+  "spoken": "One outpost in North Africa regularly sent a phrase meaning nothing special to report."
+ },
+ {
+  "key": "c5",
+  "who": "B",
+  "spoken": "But where in the message would it be?"
+ },
+ {
+  "key": "x23",
+  "who": "A",
+  "spoken": "Slide the crib along the ciphertext, one place at a time."
+ },
+ {
+  "key": "c6",
+  "who": "A",
+  "spoken": "Enigma never enciphers a letter as itself, so wherever a crib letter sits on the same letter, the crib can't be there."
+ },
+ {
+  "key": "c7",
+  "who": "B",
+  "spoken": "Like here, in the second place, where an R sits on an R. That one's crossed out."
+ },
+ {
+  "key": "c8",
+  "who": "A",
+  "spoken": "Slide on, and cross out every clash."
+ },
+ {
+  "key": "c9",
+  "who": "B",
+  "spoken": "Of these 16 places, 9 are ruled out, without any machine at all."
+ },
+ {
+  "key": "x24",
+  "who": "A",
+  "spoken": "The guess says what the message holds. The flaw says where it can't be."
+ },
+ {
+  "key": "b1",
+  "who": "B",
+  "spoken": "But a crib in the right place still doesn't give you the key."
+ },
+ {
+  "key": "x25",
+  "who": "A",
+  "spoken": "No. For that, Turing designed the bombe."
+ },
+ {
+  "key": "b2",
+  "who": "A",
+  "spoken": "Line the crib up with the ciphertext, and each pair of letters is a link."
+ },
+ {
+  "key": "b3",
+  "who": "B",
+  "spoken": "Draw all the links, and you get a menu. Where links close into loops, it gets powerful."
+ },
+ {
+  "key": "b4",
+  "who": "A",
+  "spoken": "At each rotor position, the bombe guesses one letter's plug partner and follows the consequences."
+ },
+ {
+  "key": "b5",
+  "who": "B",
+  "spoken": "And a contradiction means that position is impossible, so the drums turn on."
+ },
+ {
+  "key": "b6",
+  "who": "A",
+  "spoken": "Gordon Welchman added the diagonal board, which uses the rule that if A is plugged to B, B is plugged to A."
+ },
+ {
+  "key": "x26",
+  "who": "B",
+  "spoken": "Does that really make a difference?"
+ },
+ {
+  "key": "b7",
+  "who": "A",
+  "spoken": "We ran our menu through every position. Without the diagonal board, it stopped six hundred and sixty-two times."
+ },
+ {
+  "key": "b8",
+  "who": "B",
+  "spoken": "With it, it stopped just twice, and the true stop showed E plugged to J."
+ },
+ {
+  "key": "b9",
+  "who": "A",
+  "spoken": "The first bombe, Victory, arrived in March nineteen forty, built by Harold Keen's engineers."
+ },
+ {
+  "key": "b10",
+  "who": "B",
+  "spoken": "By 1945 there were about 200, run by some 2,000 Wrens of the Royal Navy."
+ },
+ {
+  "key": "u1",
+  "who": "A",
+  "spoken": "The hardest Enigma was the navy's, with three rotors from eight and stricter procedures."
+ },
+ {
+  "key": "u2",
+  "who": "A",
+  "spoken": "Turing took it on, he said, because no one else was doing anything about it, and he could have it to himself."
+ },
+ {
+  "key": "u3",
+  "who": "A",
+  "spoken": "It also took captured papers. In May nineteen forty-one, sailors seized codebooks and keys from U one-ten."
+ },
+ {
+  "key": "u4",
+  "who": "B",
+  "spoken": "Through late 1941, decrypts helped steer convoys around the waiting U-boats."
+ },
+ {
+  "key": "u5",
+  "who": "B",
+  "spoken": "Then, on the 1st of February 1942, the U-boats got a new Enigma with four rotors."
+ },
+ {
+  "key": "u6",
+  "who": "A",
+  "spoken": "For ten months, Bletchley couldn't read them, and the wolf packs ravaged convoys."
+ },
+ {
+  "key": "x27",
+  "who": "B",
+  "spoken": "So how did they get back in?"
+ },
+ {
+  "key": "u7",
+  "who": "A",
+  "spoken": "In October nineteen forty-two, off Port Said, sailors from H M S Petard climbed into the sinking U five-five-nine for its papers."
+ },
+ {
+  "key": "u8",
+  "who": "B",
+  "spoken": "Two of them, Tony Fasson and Colin Grazier, were still inside when it sank, and drowned."
+ },
+ {
+  "key": "u9",
+  "who": "A",
+  "spoken": "By December nineteen forty-two, U-boat messages were being read again."
+ },
+ {
+  "key": "x28",
+  "who": "B",
+  "spoken": "So how much did that decide the Atlantic?"
+ },
+ {
+  "key": "u10",
+  "who": "A",
+  "spoken": "That's still argued. Radar and much else mattered too."
+ },
+ {
+  "key": "f1",
+  "who": "B",
+  "spoken": "In the film The Imitation Game, Turing builds one machine almost alone, and calls it Christopher."
+ },
+ {
+  "key": "f2",
+  "who": "A",
+  "spoken": "In fact, the first bombe was Victory, and breaking Enigma took thousands of people."
+ },
+ {
+  "key": "x29",
+  "who": "B",
+  "spoken": "Thousands?"
+ },
+ {
+  "key": "f3",
+  "who": "A",
+  "spoken": "By January nineteen forty-five, Bletchley Park and its outstations had almost nine thousand staff. About three quarters were women."
+ },
+ {
+  "key": "x30",
+  "who": "B",
+  "spoken": "And what was all that work worth?"
+ },
+ {
+  "key": "f4",
+  "who": "A",
+  "spoken": "Harry Hinsley, a veteran and later Bletchley's official historian, judged their work shortened the war by at least two years."
+ },
+ {
+  "key": "f5",
+  "who": "B",
+  "spoken": "Others find any such number too precise. No one can run a war twice."
+ },
+ {
+  "key": "f6",
+  "who": "A",
+  "spoken": "One of the last messages Bletchley decoded was sent from Cuxhaven, on the seventh of May, nineteen forty-five. British troops had entered the town."
+ },
+ {
+  "key": "f7",
+  "who": "B",
+  "spoken": "And the operator signed off. Closing down forever. All the best. Goodbye."
+ },
+ {
+  "key": "f8",
+  "who": "A",
+  "spoken": "The reflector made Enigma convenient. It also meant no letter could ever be itself."
+ },
+ {
+  "key": "x31",
+  "who": "B",
+  "spoken": "On its own, that flaw wasn't enough."
+ },
+ {
+  "key": "f9",
+  "who": "A",
+  "spoken": "No. But add German habits, captured papers and thousands of patient people, and it was."
+ },
+ {
+  "key": "f10",
+  "who": "B",
+  "spoken": "Press A, and you could get any letter at all, except A."
+ }
+]

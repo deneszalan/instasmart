@@ -1,0 +1,19 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERB: Choosing the rotors and their order gives 5 times 4 times 3, which is 60 ways.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERA: Their starting positions give twenty-six times twenty-six times twenty-six, which is seventeen thousand five hundred and seventy-six.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERB: With it, it stopped just twice, and the true stop showed E plugged to J.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERA: It also took captured papers. In May nineteen forty-one, sailors seized codebooks and keys from U one-ten.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERB: Through late 1941, decrypts helped steer convoys around the waiting U-boats.

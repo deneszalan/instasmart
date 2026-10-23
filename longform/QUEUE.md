@@ -14,8 +14,8 @@ dialogue's timing changes, re-check a few stills, `bash render-video.sh <slug>`,
 | 5 | kepler | space-kepler-equal-areas | m1 | A=m1 B=af_nicole | written (10:58, dialogue 14:16 with stand-ins: check it stays under 15:00); queued |
 | 6 | double-slit | physics-double-slit | af_bella | A=m2 B=af_bella | written (10:49, dialogue 13:28); queued (job double-slit) |
 | 7 | public-key | tech-public-key-cryptography | af_heart | A=m1 B=af_heart | written (11:57, dialogue 14:06 with stand-ins: check it stays under 15:00); queued (job public-key) |
-| 8 | enigma | tech-enigma-never-itself | m2 | A=m2 B=af_nicole | writing (nearly done; needs the spoken-language rules) |
-| 9 | mendel | biology-mendel-pea-ratios | af_bella | A=m1 B=af_bella | not started |
+| 8 | enigma | tech-enigma-never-itself | m2 | A=m2 B=af_nicole | written (10:25, dialogue 13:59 with stand-ins: check it stays under 15:00); queued (job enigma) |
+| 9 | mendel | biology-mendel-pea-ratios | af_bella | A=m1 B=af_bella | writing |
 | 10 | zeno | philosophy-zeno-achilles-tortoise | af_heart | A=m2 B=af_heart | not started |
 
 ## Central work: the runner

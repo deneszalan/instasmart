@@ -1,0 +1,63 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERB: Now look at that number again. 253 is exactly the number of pairs among 23 guests.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: It's like half of a square grid, with every guest against every other guest.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: With a million equally likely days, just one thousand one hundred and seventy-eight people would give an even chance.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERA: The real surprise is that the people needed grow only like the square root of the days.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: Of course, our party made some simplifications. It had three hundred and sixty-five equally likely days, no February the twenty-ninth, and no twins.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERB: And real birthdays aren't spread evenly. In the United States, more babies tend to be born in September and October.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: From nineteen seventy-three to nineteen ninety-nine, September the sixteenth was the most common birthday in the United States, and Christmas Day the rarest, apart from February the twenty-ninth.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERB: So does that break the maths? No, any unevenness only makes a shared birthday more likely.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERB: Take an extreme case, and imagine everyone was born in the first half of the year.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERB: There are fewer days to go round, so more people crowd onto the same ones.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: That's like matching your own birthday, and it takes about thirteen billion billion tries.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERA: She makes many harmless variations of each, such as an extra comma, a double space or a synonym.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: You use longer fingerprints, with about twice as many bits as brute force alone would demand.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERA: So, let's go back to the party.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERB: That's enough for a better-than-even chance of 50.7 percent.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: That's what makes it a paradox. It seems wrong at first, but it's true.

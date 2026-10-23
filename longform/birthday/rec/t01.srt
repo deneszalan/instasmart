@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+In fact, it's more likely than not. The chance is 50.7 percent.
+
+2
+00:00:31,000 --> 00:00:56,000
+With 70 guests, it's 99.9 percent, which is almost certain.
+
+3
+00:01:01,000 --> 00:01:26,000
+First, here are the rules of our party.
+
+4
+00:01:31,000 --> 00:01:56,000
+Guest 20 lands on a day that's already taken. It's November the nineteenth, the birthday of guest 7.
+
+5
+00:02:01,000 --> 00:02:26,000
+511 of them have a shared birthday. That's about half, just as the maths says.
+
+6
+00:02:31,000 --> 00:02:56,000
+He didn't publish it, or claim it as his own, because he couldn't believe nobody had stated it before.
+
+7
+00:03:01,000 --> 00:03:26,000
+That's 23 times 22, divided by 2, which makes 253 pairs.
+
+8
+00:03:31,000 --> 00:03:56,000
+And pairs grow fast. Double the guests to 46, and there are 1,035 pairs, which is about four times as many.
+
+9
+00:04:01,000 --> 00:04:26,000
+For the exact chance, it's easier to work out the opposite, which is that no two guests share a birthday.
+
+10
+00:04:31,000 --> 00:04:56,000
+The first guest can have any birthday, so that's 365 days out of 365.
+
+11
+00:05:01,000 --> 00:05:26,000
+The second must miss the first, so it's 364 out of 365.
+
+12
+00:05:31,000 --> 00:05:56,000
+The third must miss both, which leaves 363 out of 365, and so on.
+
+13
+00:06:01,000 --> 00:06:26,000
+Guest 23 must miss all 22 before, which leaves 343 out of 365.
+
+14
+00:06:31,000 --> 00:06:56,000
+With 10 guests, the chance is 11.7 percent; with 30, it's 70.6 percent; with 50, it's 97 percent.
+
+15
+00:07:01,000 --> 00:07:26,000
+In this one, it came with guest 33, and in this one, with guest 18.
+
+16
+00:07:31,000 --> 00:07:56,000
+Now let's try a thousand rooms. Each dot is one room, placed at the guest who brought its first match.
+
+17
+00:08:01,000 --> 00:08:26,000
+An analysis of the squad lists suggested that 16 of them had a shared birthday, which is exactly half.
+
+18
+00:08:31,000 --> 00:08:56,000
+Now change the question. How many people do you need for an even chance that someone shares your birthday?
+
+19
+00:09:01,000 --> 00:09:26,000
+Now look at that number again. 253 is exactly the number of pairs among 23 guests.
+
+20
+00:09:31,000 --> 00:09:56,000
+The real surprise is that the people needed grow only like the square root of the days.
