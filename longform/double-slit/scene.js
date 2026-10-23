@@ -457,7 +457,7 @@ function part1(t) {
   // the question
   A(span(t, CH[0].at + 3.6, s('w2', 0.3), 0.6, 0.5), () => heading('What is light?', W / 2, 540, { size: 104, align: 'center' }));
   // two books
-  const cardsOut = 1 - seg(t, s('w6') - 0.2, s('w6', 0.5));
+  const cardsOut = 1 - seg(t, s('w6') - 0.4, s('w6', 0.2));
   const hp = eout(seg(t, s('w2'), s('w2', 0.8))), np = eout(seg(t, s('w3'), s('w3', 0.8)));
   const lead = eio(seg(t, s('w5', 0.2), s('w5', 2.2)));
   A(hp * cardsOut * lerp(1, 0.55, lead), () => {
@@ -502,7 +502,7 @@ function part1(t) {
     A(seg(t, s('w5', 1.0), s('w5', 1.6)), () => label('THE PARTICLE VIEW LEADS', yr(1752), y - 44, { align: 'center', color: C.red, weight: 600 }));
   });
   // how to tell: the apparatus, with particles
-  const ap = eout(seg(t, s('w6', 0.2), s('w6', 1.0)));
+  const ap = eout(seg(t, s('w6', -0.05), s('w6', 0.7)));
   const n = SP.N(t);
   A(ap, () => {
     panel(1); screenLine(1); seenFromAbove(1);
@@ -636,7 +636,7 @@ function sunlightSetup(t, a, { blockP = 0, disc = false, both = 0 } = {}) {
 }
 function partYoung(t) {
   // Thomas Young
-  const ya = span(t, CH[1].at + 3.4, s('y2', 0.2), 0.6, 0.6);
+  const ya = span(t, CH[1].at + 3.4, s('y2'), 0.6, 0.6);
   A(ya, () => {
     heading('Thomas Young', 160, 440, { size: 104 });
     label('1773–1829', 164, 530, { size: 44, color: C.green });
@@ -645,13 +645,13 @@ function partYoung(t) {
     A(rp, () => { rosetta(1380, 540 + (1 - rp) * 20, 1.0); label('THE ROSETTA STONE', 1380, 800, { align: 'center' }); });
   });
   // 24 November 1803
-  A(span(t, s('y2'), s('y3', 0.4), 0.5, 0.5), () => {
+  A(span(t, s('y2', -0.25), s('y3', 0.15), 0.5, 0.5), () => {
     label('24 NOVEMBER 1803', W / 2, 400, { size: 52, color: C.green, align: 'center', spacing: '4px', weight: 600 });
     font(400, 80, SANS, 'italic '); text('“whenever the sun shines”', W / 2, 530, { align: 'center' });
     label('TO THE ROYAL SOCIETY OF LONDON', W / 2, 640, { align: 'center', color: C.textSoft });
   });
   // the card in a sunbeam
-  const st = span(t, s('y3', 0.1), s('y7', 0.3), 0.6, 0.6);
+  const st = span(t, s('y3', -0.05), s('y7', 0.3), 0.6, 0.6);
   const blockP = eio(seg(t, s('y5', 0.1), s('y5', 0.9))) * (1 - eio(seg(t, s('y6', 0.1), s('y6', 0.8))));
   const both = span(t, s('y6', 0.6), e('y6', 0.3), 0.4, 0.4);
   sunlightSetup(t, st, { blockP, both });
@@ -686,7 +686,7 @@ function partYoung(t) {
     });
   });
   // Fresnel, Poisson and Arago's spot
-  const ar = span(t, s('y9', 0.1), s('y14', 0.3), 0.6, 0.6);
+  const ar = span(t, s('y9', 0.1), s('y14', 0.05), 0.6, 0.6);
   const spot = eout(seg(t, mid('y12', 0.55), mid('y12', 0.8)));
   sunlightSetup(t, ar * (1 - 0.7 * seg(t, s('y13'), s('y13', 0.6))), { disc: true });
   A(ar, () => {
@@ -708,12 +708,12 @@ function partYoung(t) {
       ctx.setLineDash([]);
     });
   });
-  A(span(t, s('y13', 0.1), s('y14', 0.3), 0.5, 0.5), () => {
+  A(span(t, s('y13', 0.1), s('y14', 0.05), 0.5, 0.5), () => {
     ctx.fillStyle = 'rgba(2,6,7,0.72)'; rr(110, 430, 820, 260, 20); ctx.fill();
     heading('Light is a wave', 520, 560, { size: 92, align: 'center', color: C.warm });
   });
   // Maxwell
-  const mx = span(t, s('y14', 0.1), CH[2].at + 1.2, 0.6, 0.6);
+  const mx = span(t, s('y14', -0.2), CH[2].at + 1.2, 0.6, 0.6);
   A(mx, () => {
     label('1865 · JAMES CLERK MAXWELL', 160, 250, { size: 40, color: C.green, weight: 600 });
     heading('Light: an electromagnetic wave', 160, 330, { size: 64 });
@@ -842,7 +842,7 @@ function part3(t) {
 }
 
 // ---------- 4: one at a time ----------
-const S4 = schedule([[s('p12', 0.2), 0], [e('p12'), 12], [e('p13'), 300, 1.5], [e('p14', -0.3), 10000, 2.2], [s('p15', 0.2), 10000], [e('p15', 0.3), 60000, 1.3]]);
+const S4 = schedule([[s('p12', 0.7), 0], [e('p12'), 12], [e('p13'), 300, 1.5], [e('p14', -0.3), 10000, 2.2], [s('p15', 0.2), 10000], [e('p15', 0.3), 60000, 1.3]]);
 function gasFlame(x, y, a = 1) {
   A(a, () => {
     blob(glowW, x, y, 46, 0.7);
@@ -882,7 +882,7 @@ function machZehnder(t, a, sch) {
 }
 function part4(t) {
   // the crack
-  const cr = span(t, CH[3].at + 3.3, s('p2', 0.3), 0.5, 0.5);
+  const cr = span(t, CH[3].at + 3.3, s('p2', 0.05), 0.5, 0.5);
   A(cr, () => {
     heading('Light is a wave', W / 2, 540, { size: 112, align: 'center', color: C.warm });
     const ink = eio(seg(t, s('p1', 0.3), e('p1')));
@@ -892,7 +892,7 @@ function part4(t) {
     ctx.stroke(); ctx.restore();
   });
   // lumps of light
-  const lp = span(t, s('p2', 0.1), s('p4', 0.3), 0.6, 0.6);
+  const lp = span(t, s('p2', -0.2), s('p4', 0.2), 0.6, 0.6);
   const dim = eio(seg(t, s('p3', 0.3), e('p3')));
   A(lp, () => {
     seenFromAbove(1);
@@ -922,7 +922,7 @@ function part4(t) {
     });
   });
   // Taylor, 1909
-  const ty = span(t, s('p4', 0.1), s('p10', 0.3), 0.6, 0.6);
+  const ty = span(t, s('p4', -0.05), s('p10', 0.1), 0.6, 0.6);
   const expo = seg(t, s('p6', 0.2), e('p6', -0.2));
   A(ty * (1 - 0.75 * seg(t, s('p9'), s('p9', 0.6))), () => {
     seenFromAbove(1, 'SEEN FROM ABOVE · A DIAGRAM');
@@ -944,14 +944,14 @@ function part4(t) {
     A(span(t, s('p7', 0.1), s('p9', 0.3), 0.4, 0.4), () => chip('THE FRINGES ARE STILL THERE', P.x0 + P.w / 2, P.y1 - 50, { color: C.warm, align: 'center' }));
   });
   // the caution
-  A(span(t, s('p9', 0.2), s('p10', 0.3), 0.5, 0.5), () => {
+  A(span(t, s('p9', 0.2), s('p10', 0.1), 0.5, 0.5), () => {
     card(120, 360, 800, 360, { edge: 'rgba(255,79,79,0.5)' });
     chip('A CAUTION', 170, 430, { color: C.red });
     const nl = para('Taylor’s paper never mentions photons.', 170, 520, 700, { size: 40 });
     para('His dim lamp was not a true single-photon source.', 170, 520 + nl * 52 + 30, 700, { size: 40 });
   });
   // 1986
-  const mz = span(t, s('p10', 0.1), s('p12', 0.3), 0.6, 0.6);
+  const mz = span(t, s('p10', -0.15), s('p12', 0.15), 0.6, 0.6);
   const SMZ = schedule([[s('p10', 1.4), 0], [e('p11', 0.3), 9, 1]]);
   machZehnder(t, mz, SMZ);
   A(mz, () => {
@@ -970,7 +970,7 @@ function part4(t) {
     });
   });
   // the build-up
-  const bu = span(t, s('p12', -0.3), CH[4].at + 1.0, 0.6, 0.6);
+  const bu = span(t, s('p12', -0.1), CH[4].at + 1.0, 0.6, 0.6);
   const n = S4.N(t), bright = seg(t, s('p15', 0.2), s('p15', 1.0));
   A(bu, () => {
     panel(1); screenLine(1); seenFromAbove(1);
@@ -1012,7 +1012,7 @@ const S5 = schedule([[s('e8', 0.6), 0], [e('e8'), 8], [e('e9', 0.2), 600, 1.8]])
 const S5b = schedule([[s('e11', 0.2), 0], [e('e11'), 6]]);
 function part5(t) {
   // particle, wave, diffraction: a timeline
-  const tl = span(t, CH[4].at + 3.2, s('e4', 0.3), 0.6, 0.6);
+  const tl = span(t, CH[4].at + 3.2, s('e4', 0.05), 0.6, 0.6);
   A(tl, () => {
     const y = 640, xs = [400, 960, 1520], at = [s('e1'), s('e2'), s('e3')];
     ctx.strokeStyle = C.steelDim; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(200, y); ctx.lineTo(1720, y); ctx.stroke();
@@ -1040,7 +1040,7 @@ function part5(t) {
     });
   });
   // a thought experiment
-  A(span(t, s('e4', 0.1), s('e5', 0.3), 0.5, 0.5), () => {
+  A(span(t, s('e4', -0.2), s('e5', 0.05), 0.5, 0.5), () => {
     gun(TV.src, TV.cy, 1, { dashed: true });
     barrier(TV.bx, slitYs(), TV.a, { dashed: true });
     ctx.setLineDash([10, 10]); ctx.strokeStyle = C.steel; ctx.lineWidth = 2.5; ctx.beginPath(); ctx.moveTo(TV.sx, TV.y0); ctx.lineTo(TV.sx, TV.y1); ctx.stroke(); rr(P.x0, P.y0, P.w, P.h, 14); ctx.stroke(); ctx.setLineDash([]);
@@ -1048,12 +1048,12 @@ function part5(t) {
     ctx.save(); ctx.translate(W / 2, 540); ctx.rotate(-0.05); chip('ONLY A THOUGHT EXPERIMENT', 0, 0, { color: C.amber, align: 'center', size: 40 }); ctx.restore();
   });
   // Feynman's line, and the date
-  A(span(t, s('e5', 0.1), s('e6', 0.4), 0.5, 0.5), () => {
+  A(span(t, s('e5', -0.2), s('e6', 0.1), 0.5, 0.5), () => {
     card(260, 330, 1400, 420);
     para('“This experiment has never been done in just this way.”', W / 2, 470, 1260, { size: 64, style: 'italic ', align: 'center' });
     label('RICHARD FEYNMAN · THE FEYNMAN LECTURES ON PHYSICS', W / 2, 660, { align: 'center', color: C.textSoft });
   });
-  A(span(t, s('e6', 0.2), s('e7', 0.4), 0.5, 0.5), () => {
+  A(span(t, s('e6', -0.15), s('e7', 0.05), 0.5, 0.5), () => {
     const yr = (v) => lerp(300, 1620, (v - 1955) / 15), y = 560;
     ctx.strokeStyle = C.steelDim; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(yr(1955), y); ctx.lineTo(yr(1970), y); ctx.stroke();
     for (const v of [1955, 1960, 1965, 1970]) { ctx.fillStyle = C.textDim; ctx.fillRect(yr(v) - 1, y - 12, 2, 24); label(String(v), yr(v), y + 150, { align: 'center', color: C.textDim }); }
@@ -1063,7 +1063,7 @@ function part5(t) {
     A(p, () => { blob(glowG, yr(1961), y, 26); label('ELECTRONS THROUGH SLITS, 1961', yr(1961), y + 70, { align: 'center', color: C.green, weight: 600 }); });
   });
   // Jönsson: one to five slits
-  const jn = span(t, s('e7', 0.1), s('e8', 0.3), 0.6, 0.6);
+  const jn = span(t, s('e7', -0.2), s('e8', 0.05), 0.6, 0.6);
   const N = 1 + Math.min(4, Math.floor(5 * seg(t, s('e7', 0.4), e('e7', -0.3))));
   A(jn, () => {
     seenFromAbove(1);
@@ -1081,7 +1081,7 @@ function part5(t) {
     label('SLITS', P.x0 + P.w / 2, P.y0 + 34, { align: 'center' });
   });
   // the biprism, Bologna and Hitachi
-  const bp = span(t, s('e8', 0.1), s('e14', 0.3), 0.6, 0.6);
+  const bp = span(t, s('e8', -0.2), s('e14', 0.3), 0.6, 0.6);
   const tono = seg(t, s('e10'), s('e10', 0.6));
   A(bp, () => {
     seenFromAbove(1);
@@ -1182,32 +1182,32 @@ function part6(t) {
     A(seg(t, s('m8', 0.2), s('m8', 0.8)), () => chip('EVERY TEST PASSED SO FAR', CHART.x1, CHART.y1 + 118, { color: C.green, align: 'right' }));
     // the left side
     A(span(t, s('m1'), s('m3', 0.2), 0.4, 0.5), () => heading('How big?', 520, 540, { size: 112, align: 'center' }));
-    A(span(t, s('m2', 0.2), s('m3', 0.3), 0.4, 0.4), () => { blob(glowG, 520, 700, 50); label('A HELIUM ATOM', 520, 790, { align: 'center', color: C.text }); label('THROUGH SLITS IN GOLD FOIL', 520, 840, { align: 'center' }); });
-    const bk = span(t, s('m3', 0.2), s('m5', 0.4), 0.6, 0.6);
+    A(span(t, s('m2', 0.2), s('m3', 0.1), 0.4, 0.4), () => { blob(glowG, 520, 700, 50); label('A HELIUM ATOM', 520, 790, { align: 'center', color: C.text }); label('THROUGH SLITS IN GOLD FOIL', 520, 840, { align: 'center' }); });
+    const bk = span(t, s('m3', -0.15), s('m5', 0.1), 0.6, 0.6);
     A(bk, () => {
       buckyball(520, 500, 190, t * 0.35, 1);
       label('A BUCKYBALL: 60 CARBON ATOMS', 520, 236, { align: 'center', color: C.text, weight: 600 });
       label('VIENNA, 1999 · THROUGH A GRATING', 520, 284, { align: 'center' });
     });
-    A(span(t, s('m4', 0.1), s('m5', 0.4), 0.5, 0.5), () => {
+    A(span(t, s('m4', 0.1), s('m5', 0.1), 0.5, 0.5), () => {
       const L0 = 560, x0 = 240, y = 760, ratio = 0.7e-9 / 2.5e-12;
       ctx.fillStyle = C.green; ctx.fillRect(x0, y - 6, L0, 12); label('MOLECULE · 0.7 nm', x0, y - 36, { color: C.text });
       ctx.fillStyle = C.amber; ctx.fillRect(x0, y + 54, Math.max(2, L0 / ratio), 12);
       label(`ITS WAVE · 2.5 pm · ${Math.round(ratio)} TIMES SMALLER`, x0, y + 100, { color: C.amber });
     });
-    A(span(t, s('m5', 0.2), s('m6', 0.3), 0.5, 0.5), () => {
+    A(span(t, s('m5', -0.15), s('m6', 0.1), 0.5, 0.5), () => {
       const r = mulberry32(2019);
       ctx.save(); ctx.globalCompositeOperation = 'lighter';
       for (let i = 0; i < 2000; i++) { const a = r() * 6.283, rad = 200 * Math.sqrt(r()) * (0.75 + 0.25 * Math.sin(a * 3)); ctx.fillStyle = 'rgba(61,255,138,0.35)'; ctx.fillRect(520 + rad * Math.cos(a) - 1.5, 520 + rad * Math.sin(a) * 0.8 - 1.5, 3, 3); }
       ctx.restore();
       label('MOLECULES OF 810, THEN 2,000 ATOMS', 520, 800, { align: 'center', color: C.text });
     });
-    A(span(t, s('m6', 0.2), s('m7', 0.3), 0.5, 0.5), () => {
+    A(span(t, s('m6', -0.15), s('m7', 0.05), 0.5, 0.5), () => {
       sodiumCluster(520, 500, 220, 1, t);
       label('SODIUM CLUSTERS · 7,000+ ATOMS', 520, 800, { align: 'center', color: C.amber, weight: 600 });
       label('ABOUT 8 nm ACROSS · VIENNA, 2026', 520, 850, { align: 'center' });
     });
-    A(span(t, s('m7', 0.1), CH[6].at + 1.0, 0.5, 0.5), () => {
+    A(span(t, s('m7', -0.2), CH[6].at + 1.0, 0.5, 0.5), () => {
       font(600, 96); text('λ = h ÷ (m × v)', 520, 480, { align: 'center', color: C.text });
       label('h: PLANCK’S CONSTANT · m: MASS · v: SPEED', 520, 570, { align: 'center' });
       label('HEAVIER → SHORTER WAVE → FINER STRIPES', 520, 680, { align: 'center', color: C.green, weight: 600 });
@@ -1230,7 +1230,7 @@ function detectors(t, a, sch, n) {
   });
 }
 function part7(t) {
-  const on = span(t, CH[6].at + 3.0, s('k8', 0.3), 0.6, 0.6);
+  const on = span(t, CH[6].at + 3.0, s('k8', 0.1), 0.6, 0.6);
   const det = eout(seg(t, s('k2', 0.3), s('k2', 1.0)));
   const n = S7.N(t), oldA = 1 - seg(t, s('k3', 0.3), e('k4', -0.4));
   A(on, () => {
@@ -1266,14 +1266,14 @@ function part7(t) {
     });
   });
   // not a mind
-  const mind = span(t, s('k8', 0.1), s('k10', 0.3), 0.6, 0.6);
+  const mind = span(t, s('k8', -0.15), s('k10', 0.1), 0.6, 0.6);
   A(mind, () => {
     heading('A record, not a mind', W / 2, 450, { size: 96, align: 'center' });
     A(seg(t, s('k8', 1.2), s('k8', 1.9)), () => label('THE STANDARD ACCOUNT NEEDS NO OBSERVER', W / 2, 560, { align: 'center', color: C.textSoft, size: 36 }));
     A(seg(t, s('k9', 0.2), s('k9', 0.9)), () => label('WHAT COUNTS: COULD THE PATH BE KNOWN, IN PRINCIPLE?', W / 2, 660, { align: 'center', color: C.green, size: 36, weight: 600 }));
   });
   // hot molecules
-  const hot = span(t, s('k10', 0.1), s('k13', 0.3), 0.6, 0.6);
+  const hot = span(t, s('k10', -0.15), s('k13', 0.1), 0.6, 0.6);
   const heat = eio(seg(t, s('k10', 1.0), e('k11', -0.4)));
   A(hot, () => {
     chip('2004 · VIENNA · CARBON-70', 120, 250, { color: C.amber });
@@ -1305,7 +1305,7 @@ function part7(t) {
     A(seg(t, s('k12', 0.2), s('k12', 0.8)), () => chip('NOBODY LOOKED AT THAT LIGHT', 120, 330, { color: C.text }));
   });
   // partial information: the trade-off
-  const pt = span(t, s('k13', 0.1), CH[7].at + 1.0, 0.6, 0.6);
+  const pt = span(t, s('k13', -0.15), CH[7].at + 1.0, 0.6, 0.6);
   let D = lerp(0, 0.6, eio(seg(t, s('k13', 0.6), e('k13'))));
   D = lerp(D, 0.95, eio(seg(t, s('k14', 0.2), mid('k14', 0.6))));
   D = lerp(D, 0.8, eio(seg(t, mid('k14', 0.6), e('k14'))));
@@ -1335,14 +1335,14 @@ const S8 = schedule([[s('h6', 0.1), 0], [e('h6', 0.2), 26000, 1.8]]);
 const MILESTONES = [[1690, 'HUYGENS'], [1704, 'NEWTON'], [1803, 'YOUNG'], [1819, 'ARAGO'], [1905, 'EINSTEIN'], [1909, 'TAYLOR'], [1961, 'JÖNSSON'], [1974, 'BOLOGNA'], [1986, 'SINGLE PHOTONS'], [1989, 'HITACHI'], [1999, 'BUCKYBALLS'], [2026, '7,000 ATOMS']];
 function part8(t) {
   // Feynman
-  A(span(t, CH[7].at + 3.2, s('h4', 0.3), 0.6, 0.6), () => {
+  A(span(t, CH[7].at + 3.2, s('h4', 0.1), 0.6, 0.6), () => {
     label('RICHARD FEYNMAN', W / 2, 260, { align: 'center', color: C.green, size: 40, weight: 600, spacing: '4px' });
     A(seg(t, s('h2'), s('h2', 0.7)), () => para('“…impossible, absolutely impossible, to explain in any classical way…”', W / 2, 400, 1500, { size: 60, style: 'italic ', align: 'center' }));
     A(seg(t, s('h3'), s('h3', 0.7)), () => para('“…has in it the heart of quantum mechanics. In reality, it contains the only mystery.”', W / 2, 620, 1500, { size: 60, style: 'italic ', align: 'center', color: C.greenHi }));
     label('THE FEYNMAN LECTURES ON PHYSICS, VOL. III', W / 2, 860, { align: 'center', color: C.textDim });
   });
   // the wave and the dots
-  const ap = span(t, s('h4', 0.1), s('h10', 0.4), 0.6, 0.6);
+  const ap = span(t, s('h4', -0.15), s('h10', 0.1), 0.6, 0.6);
   const n = S8.N(t), interp = seg(t, s('h7', 0.1), s('h7', 0.8));
   A(ap, () => {
     panel(1); screenLine(1);
@@ -1376,7 +1376,7 @@ function part8(t) {
     });
   });
   // the story so far
-  A(span(t, s('h10', 0.1), s('h12', 0.2), 0.6, 0.6), () => {
+  A(span(t, s('h10', -0.15), s('h12', 0.1), 0.6, 0.6), () => {
     const y = 560, x0 = 170, x1 = 1750;
     ctx.strokeStyle = C.steelDim; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(x0 - 30, y); ctx.lineTo(x1 + 30, y); ctx.stroke();
     MILESTONES.forEach(([yr, nm], i) => {
@@ -1393,7 +1393,7 @@ function part8(t) {
     A(seg(t, s('h11', 0.2), s('h11', 0.8)), () => chip('A RECORD OF THE PATH WIPES THE STRIPES AWAY', W / 2, 860, { color: C.red, align: 'center' }));
   });
   // the last picture
-  const fin = span(t, s('h12', -0.2), DURATION + 1, 0.8, 0.1);
+  const fin = span(t, s('h12', -0.15), DURATION + 1, 0.8, 0.1);
   A(fin * (1 - seg(t, e('h12', 0.6), e('h12', 1.6))), () => {
     panel(1); screenLine(1); seenFromAbove(1);
     laser(TV.src, TV.cy, 1); beam(TV.src + 50, TV.bx, TV.cy, 0.5);
