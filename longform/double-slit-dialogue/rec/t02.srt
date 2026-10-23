@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERB: And particles, as far as anyone could see, shouldn't be able to do that.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: Enter Thomas Young, a British doctor and polymath, who later helped decipher the Rosetta Stone.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: From light waves to the Rosetta Stone, that's quite a range.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERB: On the 24th of November, 1803, he described an experiment anyone could repeat, whenever the sun shines.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: He let sunlight in through a small hole, and held a card a thirtieth of an inch wide in the beam.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERB: In the card's shadow appeared coloured fringes, which were stripes of light and dark.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: That's in the shadow, where you'd expect plain darkness.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERB: And when he blocked the light on one side of the card, the fringes vanished.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: So the fringes needed light from both sides, meeting and interfering.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERB: So it's really a two-path experiment, just with a card instead of slits.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: And his lectures, published in eighteen oh seven, describe the version we know, with light through two narrow slits.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERB: Though whether he ever actually did it with two slits isn't clear.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: So the famous version may have been partly a thought experiment.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERB: Either way, the turn came in 1818, when Augustin Fray-nel entered a French prize contest with a wave theory.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: One judge, Simeon Pwasson, spotted what looked like an absurd prediction.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: What was it?
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: In the middle of a small round disc's shadow, the theory said, there should be a bright spot.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERB: So the head of the judges, Fran-swah Arago, tried it, and there was the spot.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERA: The absurd prediction came true.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERB: After that, most scientists accepted that light is a wave.
