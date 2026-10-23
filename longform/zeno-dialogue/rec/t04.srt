@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: In that instant, it fills a space exactly its own size, so it isn't moving.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: But the whole flight is made of instants like this one. So when does the arrow ever move?
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: That one is slippery.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERB: Aristotle's reply was that time is not made of indivisible nows, any more than a line is made of points.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: The modern answer treats speed at an instant as a limit.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERB: Say it flies at 50 metres a second. In a tenth of a second, it goes 5 metres.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: And in a hundredth, half a metre. Distance over time stays at fifty metres a second, however short the interval.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERB: But in a single instant it goes nowhere, and zero divided by zero isn't a number at all.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: So the speed at an instant is defined as that limit.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERB: On this view, motion doesn't happen inside an instant. It is being in different places at different times.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: It sounds almost too simple.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERB: The last of the four, the stadium, has rows of equal blocks passing each other in opposite directions.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: The front block of one row passes every oncoming block, but only half of the still ones.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERB: And from this, Zeno concluded that half a given time is equal to double that time.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: Half equals double? That can't be right.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: The usual verdict is that he ignored relative speed, since the oncoming blocks approach twice as fast.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERB: One famous reply to Zeno wasn't an argument at all.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERA: Simplishius tells a story. When Diogenes the Cynic heard Zeno's arguments, he said nothing, stood up, and walked.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERB: That kind of answer even has a Latin name, solvitur ambulando, which means it is solved by walking.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERA: Honestly, it's tempting.

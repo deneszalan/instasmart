@@ -240,7 +240,7 @@ const TSUMS = Array.from({ length: 12 }, (_, n) => T_N(n));
 /** The first stage from which every running total stays within `tol` metres of the limit. */
 const stageWithin = (tol) => { let n = 0; while (MEET - A_N(n) >= tol) n++; return n; };
 const MM_STAGE = stageWithin(0.001), UM_STAGE = stageWithin(1e-6);  // 6 and 9
-const fixedTotal = (x, n) => x.toFixed(Math.max(0, n - 2));            // 100, 110, 111, 111.1, 111.11, …
+const fixedTotal = (x, n) => x.toFixed(Math.max(0, n - 3));            // 100, 110, 111, 111.1, 111.11, …
 
 // ---------- the track: a long ruled line, zoomed about the meeting point ----------
 const TR = { y: 560, x0: 110, x1: 1810, o: 200, s0: 12 };                  // 0 m at x = 200, 12 px per metre
@@ -413,11 +413,11 @@ function titleCard(t) {
     });
   }
 }
-const MUSIC = ['“Enchanted Journey” Kevin MacLeod (incompetech.com) · CC BY 4.0', '“Fresh Air” Kevin MacLeod (incompetech.com) · CC BY 4.0', '“Promises to Keep” Kevin MacLeod (incompetech.com) · CC BY 4.0'];
+const MUSIC = ['“Promises to Keep” Kevin MacLeod (incompetech.com) · CC BY 4.0', '“Enchanted Journey” Kevin MacLeod (incompetech.com) · CC BY 4.0', '“Fresh Air” Kevin MacLeod (incompetech.com) · CC BY 4.0'];
 function credits(t) {
   const a = seg(t, e('z6', 1.2), e('z6', 2.4));
   if (a <= 0) return;
-  veil(a * 0.96);
+  veil(a);
   A(a, () => {
     serif('Achilles and the Tortoise', W / 2, 170, { size: 84, weight: 700, align: 'center' });
     hand('Reckon · original animation', W / 2, 240, { size: 44, color: C.red, align: 'center' });
@@ -431,19 +431,19 @@ function credits(t) {
         'B. Dowden, “Zeno’s Paradoxes”, Internet Encyclopedia of Philosophy',
       ]],
     ];
-    let y = 330;
+    let y = 316;
     for (const [hd, lines] of blocks) {
       serif(hd, W / 2, y, { size: 32, weight: 700, color: C.ink, align: 'center', spacing: '6px' });
-      lines.forEach((ln, j) => hand(ln, W / 2, y + 50 + j * 46, { size: 36, color: C.soft, align: 'center' }));
-      y += 50 + lines.length * 46 + 44;
+      lines.forEach((ln, j) => hand(ln, W / 2, y + 50 + j * 43, { size: 36, color: C.soft, align: 'center' }));
+      y += 50 + lines.length * 43 + 36;
     }
     hand('All distances, times and sums are computed from the race: a 100 m head start, 10 m/s and 1 m/s.', W / 2, y + 6, { size: 34, color: C.faint, align: 'center' });
     // a last little race across the foot of the card
     const q = seg(t, e('z6', 2.0), e('z6', 9.5));
     const ax = lerp(360, 1640, eio(q)), tt = lerp(1380, 1508, eio(q));
     cline(300, 950, 1620, 950, { w: 3, a: 0.6 });
-    tortoise(tt, 948, t * 5, 0.4, 0.9, 1.0);
-    achilles(ax, 948, t * 9, q > 0 && q < 1 ? 1 : 0, 0.9, 0.95);
+    tortoise(tt, 948, t * 5, 0.4, 0.9, 0.85);
+    achilles(ax, 948, t * 9, q > 0 && q < 1 ? 1 : 0, 0.9, 0.75);
   });
 }
 
@@ -513,12 +513,13 @@ function partOpen(t) {
 // ---------- 1: the man from Elea ----------
 const TL1 = { y: 860, x0: 200, x1: 1720, y0: -600, y1: 600 };
 const yrx = (Y) => lerp(TL1.x0, TL1.x1, (Y - TL1.y0) / (TL1.y1 - TL1.y0));
-function lifeBar(y0, y1, label, a, { col = C.ink, row = 0, size = 34 } = {}) {
+function lifeBar(y0, y1, label, a, { col = C.ink, row = 0, size = 34, side = 'right' } = {}) {
   if (a <= 0) return;
   A(a, () => {
-    const yy = TL1.y - 34 - row * 64;
+    const yy = TL1.y - 36 - row * 50;
     ctx.save(); k.rrect(yrx(y0), yy - 9, Math.max(6, (yrx(y1) - yrx(y0)) * eout(a)), 18, 9); fillGrain(col, 0.9); ctx.restore();
-    hand(label, (yrx(y0) + yrx(y1)) / 2, yy - 20, { size, color: col, align: 'center' });
+    if (side === 'right') hand(label, yrx(y1) + 16, yy + 11, { size, color: col });
+    else hand(label, yrx(y0) - 16, yy + 11, { size, color: col, align: 'right' });
   });
 }
 function medallion(cx, cy, r, name, sub, a, { col = C.ink } = {}) {
@@ -527,7 +528,7 @@ function medallion(cx, cy, r, name, sub, a, { col = C.ink } = {}) {
     const pts = []; for (let i = 0; i <= 64; i++) { const th = (i / 64) * TAU; pts.push([cx + Math.cos(th) * r, cy + Math.sin(th) * r]); }
     ctx.beginPath(); ctx.arc(cx, cy, r, 0, TAU); fillGrain(C.paper, 0.5);
     cpath(pts, { w: 4, col, p: eio(a) });
-    serif(name, cx, cy + 4, { size: 38, weight: 700, color: col, align: 'center', base: 'middle', spacing: '2px' });
+    serif(name, cx, cy + 4, { size: name.length > 6 ? 28 : 38, weight: 700, color: col, align: 'center', base: 'middle', spacing: '2px' });
     if (sub) hand(sub, cx, cy + r + 46, { size: 34, color: C.soft, align: 'center' });
   });
 }
@@ -546,8 +547,8 @@ function part1(t) {
   lifeBar(-490, -430, 'Zeno, c. 490–430 BC', ap(t, s('e1', 1.4), 0.8), { col: C.red });
   lifeBar(-427, -347, 'Plato', ap(t, s('e7', 0.2), 0.7), { row: 1 });
   lifeBar(-384, -322, 'Aristotle', ap(t, mid('e7', 0.25), 0.7), { row: 2 });
-  lifeBar(480, 540, 'Simplicius, c. 480–540', ap(t, mid('e7', 0.6), 0.7), { row: 0 });
-  A(ap(t, mid('e7', 0.8)), () => bracket(yrx(-460), yrx(510), TL1.y - 200, 'about 1,000 years', 1, { size: 36, col: C.soft }));
+  lifeBar(480, 540, 'Simplicius, c. 480–540', ap(t, mid('e7', 0.6), 0.7), { row: 0, side: 'left' });
+  A(ap(t, mid('e7', 0.8)), () => bracket(yrx(-460), yrx(510), TL1.y - 210, 'about 1,000 years', 1, { size: 36, col: C.soft }));
   // left: the name
   const nameOut = seg(t, s('e6', -0.2), s('e6', 0.4));
   A(ap(t, s('e1', 0.3), 0.9) * (1 - nameOut), () => {
@@ -573,7 +574,7 @@ function part1(t) {
   const RX = 1380;
   const r2out = seg(t, s('e4', -0.2), s('e4', 0.4));
   A(1 - r2out, () => {
-    medallion(RX - 200, 330, 110, 'PARMENIDES', 'the older philosopher', ap(t, s('e2', 0.2), 1.0));
+    medallion(RX - 210, 330, 124, 'PARMENIDES', 'the older philosopher', ap(t, s('e2', 0.2), 1.0));
     medallion(RX + 200, 330, 92, 'ZENO', 'student and friend', ap(t, s('e2', 0.9), 0.9), { col: C.red });
     A(ap(t, s('e2', 1.4)), () => { cline(RX - 80, 330, RX + 96, 330, { w: 3 }); cpath([[RX + 82, 318], [RX + 102, 330], [RX + 82, 342]], { w: 3 }); });
     // e3: one unchanging whole
@@ -625,8 +626,6 @@ function part1(t) {
 }
 
 // ---------- 2: the race ----------
-const SUP = '⁰¹²³⁴⁵⁶⁷⁸⁹';
-const pow10 = (n) => `10${String(n).split('').map((c) => SUP[+c]).join('')}`;
 let STEPS2 = null;
 /** Stage schedule: [run start, run end, zoom start, zoom end] for stage n = 1, 2, …, keyed to the lines. */
 function steps2() {
@@ -673,10 +672,8 @@ function part2(t) {
   // r1–r4: Aristotle's words
   const qOut = seg(t, s('r5', -0.3), s('r5', 0.5));
   A(1 - qOut, () => {
-    const Q1 = 'In a race, the quickest runner can never overtake the slowest, since the pursuer must first reach the point whence the pursued started,';
-    const Q2 = 'so that the slower must always hold a lead.';
-    const size = 60, lh = size * 1.3, maxW = 1480;
-    const l1 = wrap(Q1, maxW, size, SERIF, 400, true), l2 = wrap(Q2, maxW, size, SERIF, 400, true);
+    const size = 62, lh = size * 1.3, maxW = 1480;
+    const l1 = ['In a race, the quickest runner can never overtake the slowest,', 'since the pursuer must first reach the point', 'whence the pursued started,'], l2 = ['so that the slower must always hold a lead.'];
     const lines = [...l1.map((x) => [x, 1]), ...l2.map((x) => [x, 2])];
     const top = 330 - ((lines.length - 1) * lh) / 2;
     lines.forEach(([ln, part], i) => {
@@ -696,6 +693,7 @@ function part2(t) {
       });
     });
   });
+  A(ap(t, s('r1', 0.2)) * (1 - seg(t, s('r2', -0.3), s('r2', 0.3))), () => serif('the Achilles', W / 2, 330, { size: 96, italic: true, align: 'center', base: 'middle' }));
   // r5 on: the race, zoomed about the point where they will meet
   const on = ap(t, s('r5', 0.1), 0.8);
   if (on <= 0) return;
@@ -727,11 +725,15 @@ function part2(t) {
       serif(`Stage ${Math.max(1, st.n)}`, 140, 190, { size: 72, weight: 700 });
       const tr = (MEET + st.off) / VA, digits = Math.min(6, Math.max(0, st.n - 1));
       hand(`clock: ${tr.toFixed(digits)} s`, 140, 256, { size: 44, color: C.soft });
-      const label = z < 0.02 ? 'actual size' : z < 3.5 ? `magnified ×${fmt(Math.pow(10, Math.round(z * 100) / 100))}` : `magnified ×${pow10(Math.round(z))}`;
-      hand(label, 1790, 190, { size: 44, color: C.soft, align: 'right' });
+      if (z < 3.5) hand(z < 0.02 ? 'actual size' : `magnified ×${fmt(Math.pow(10, Math.round(z * 100) / 100))}`, 1790, 190, { size: 44, color: C.soft, align: 'right' });
+      else {
+        const ex = String(Math.round(z)), w2 = measure(ex, 30);
+        hand(ex, 1790, 168, { size: 30, color: C.soft, align: 'right' });
+        hand('magnified ×10', 1790 - w2 - 2, 190, { size: 44, color: C.soft, align: 'right' });
+      }
     });
     // the ledger
-    const LX = [180, 560, 860, 1160], LY = 780;
+    const LX = [180, 560, 860, 1160], LY = 730;
     A(seg(t, S[0][1], S[0][1] + 0.5), () => {
       ['stage', 'Achilles runs', 'taking', 'gap left'].forEach((h, i) => hand(h, LX[i], LY, { size: 34, color: C.faint, align: i ? 'right' : 'left' }));
       cline(150, LY + 14, 1200, LY + 14, { w: 2, a: 0.5 });
@@ -753,8 +755,8 @@ function part2(t) {
     });
     // the live gap
     A(seg(t, s('r7', 0.3), s('r7', 0.8)), () => {
-      hand('gap', 1600, 790, { size: 40, color: C.soft, align: 'center' });
-      gapLabel((1 - R) * -st.off, 1600, 880, 84);
+      hand('gap', 1600, 760, { size: 40, color: C.soft, align: 'center' });
+      gapLabel((1 - R) * -st.off, 1600, 850, 84);
     });
     // r12: always one more stage
     A(ap(t, s('r12', 0.4)), () => {
@@ -808,14 +810,14 @@ function part3(t) {
       cline(160, 668, 720, 668, { w: 2, a: 0.4 });
       hand('they close in on', 160, 726, { size: 38, color: C.soft });
       serif('111.111… m', 700, 728, { size: 52, weight: 700, color: C.red, align: 'right' });
-      A(ap(t, mid('a4', 0.5)), () => { hand('= 111', 770, 728, { size: 46, color: C.red }); frac(1, 9, 900, 712, { size: 34, col: C.red }); hand('m', 930, 728, { size: 46, color: C.red }); });
+      A(ap(t, mid('a4', 0.5)), () => { hand('= 111', 740, 728, { size: 50, color: C.red }); frac(1, 9, 868, 708, { size: 38, col: C.red }); hand('m', 900, 728, { size: 50, color: C.red }); });
     });
     A(ap(t, s('a5', 0.2)), () => {
-      hand('times: 10 + 1 + 0.1 + … =', 160, 830, { size: 46 });
+      hand('times: 10 + 1 + 0.1 + … =', 160, 816, { size: 46 });
       const x2 = 160 + measure('times: 10 + 1 + 0.1 + … =', 46) + 18;
-      hand('11', x2, 830, { size: 46, color: C.red }); frac(1, 9, x2 + measure('11', 46) + 22, 814, { size: 32, col: C.red }); hand('s', x2 + measure('11', 46) + 46, 830, { size: 46, color: C.red });
+      hand('11', x2, 816, { size: 50, color: C.red }); frac(1, 9, x2 + measure('11', 50) + 24, 796, { size: 38, col: C.red }); hand('s', x2 + measure('11', 50) + 50, 816, { size: 50, color: C.red });
     });
-    A(ap(t, s('a6', 0.2)), () => serif('infinitely many stages, a finite distance, a finite time', 140, 940, { size: 46, italic: true }));
+    A(ap(t, s('a6', 0.2)), () => { serif('infinitely many stages,', 140, 900, { size: 50, italic: true }); serif('a finite distance, a finite time', 140, 960, { size: 50, italic: true, color: C.red }); });
   });
   // right: the totals as a chart, then distance against time
   const gx0 = 1080, gx1 = 1760, gy0 = 880, gy1 = 230;
@@ -851,7 +853,7 @@ function part3(t) {
     const lp = eio(seg(t, s('a7', 0.6), mid('a7', 0.6)));
     cline(sx(0), sy(0), sx(14 * lp), sy(140 * lp), { w: 4, col: C.ink });
     cline(sx(0), sy(100), sx(14 * lp), sy(100 + 14 * lp), { w: 4, col: C.red });
-    A(ap(t, mid('a7', 0.4)), () => { hand('Achilles', sx(7.2), sy(80), { size: 36, align: 'left' }); hand('tortoise', sx(2), sy(104) - 18, { size: 36, color: C.red }); });
+    A(ap(t, mid('a7', 0.4)), () => { hand('Achilles', sx(7.2), sy(80), { size: 36, align: 'left' }); hand('tortoise', sx(4.2), sy(104.2) + 44, { size: 36, color: C.red }); });
     A(ap(t, mid('a7', 0.7)), () => {
       dot(sx(T_MEET), sy(MEET), 11, C.red);
       ctx.save(); ctx.setLineDash([8, 8]);
@@ -867,7 +869,7 @@ function part3(t) {
     cpath(stair, { w: 3, col: C.ink, p: sp, a: 0.85 });
     // an inset, magnified 20 times about the crossing
     A(ap(t, mid('a8', 0.5)), () => {
-      const bx = 1100, by = 250, bw = 330, bh = 210, mg = 20;
+      const bx = 1420, by = 620, bw = 330, bh = 210, mg = 20;
       const ix = (tt) => bx + bw * 0.78 + (tt - T_MEET) * (bw / 14) * mg, iy = (m) => by + bh * 0.3 - (m - MEET) * ((gy0 - gy1) / 150) * mg;
       ctx.save(); ctx.beginPath(); ctx.rect(bx, by, bw, bh); fillGrain(C.paper, 0.85); ctx.clip();
       cline(ix(T_MEET - 2), iy(MEET - 20), ix(T_MEET + 1), iy(MEET + 10), { w: 3 });
@@ -893,12 +895,11 @@ function part3(t) {
     });
     quote('it is impossible to traverse an infinite number of things in a finite time', W / 2, 560, 1300, ap(t, s('a12', 0.2), 0.8), { size: 58, src: 'Zeno, as reported by Simplicius', reveal: seg(t, s('a12', 0.2), mid('a12', 0.9)) });
     A(ap(t, s('a13', 0.2)), () => {
-      const y2 = 850;
-      hand('the total:', 560, y2, { size: 46, color: C.soft, align: 'right' });
-      hand('finite', 590, y2, { size: 50 });
-      tick(740, y2 - 16, 46, eio(seg(t, s('a13', 0.4), s('a13', 0.9))));
-      hand('finishing endless steps, with no last one:', 1420, y2, { size: 46, color: C.soft, align: 'right' });
-      serif('?', 1480, y2 + 4, { size: 90, weight: 700, color: C.red, align: 'center' });
+      hand('the total:', 1100, 820, { size: 46, color: C.soft, align: 'right' });
+      hand('finite', 1130, 820, { size: 50 });
+      tick(1290, 804, 46, eio(seg(t, s('a13', 0.4), s('a13', 0.9))));
+      hand('finishing endless steps, with no last one:', 1100, 910, { size: 46, color: C.soft, align: 'right' });
+      serif('?', 1150, 916, { size: 90, weight: 700, color: C.red, align: 'center' });
     });
   });
 }
@@ -911,7 +912,7 @@ function part4(t) {
   A(ap(t, s('d1', 0.2)) * (1 - seg(t, s('d2', -0.4), s('d2', 0.2))), () => serif('the dichotomy', W / 2, 250, { size: 96, italic: true, align: 'center' }));
   const forward = 1 - seg(t, s('d7', -0.2), s('d7', 0.5));
   // the track: 100 m
-  const on = ap(t, s('d1', 0.3), 0.9);
+  const on = ap(t, s('d1', 0.3), 0.9) * (1 - seg(t, s('d9', -0.2), s('d9', 0.4)));
   A(on, () => {
     cline(D4.x0, D4.y, D4.x1, D4.y, { w: 4, p: eio(seg(t, s('d1', 0.3), s('d1', 1.6))) });
     cline(D4.x0, D4.y - 26, D4.x0, D4.y + 26, { w: 4 });
@@ -1086,7 +1087,7 @@ function part5(t) {
   // w12–w15: the stadium
   const stA = seg(t, s('w12', 0.1), s('w12', 0.8));
   A(stA, () => {
-    const bw = 150, bh = 84, X0 = 660, rows = { B: 330, A: 480, C: 630 };
+    const bw = 150, bh = 84, X0 = 800, rows = { B: 330, A: 480, C: 630 };
     const q = eio(seg(t, s('w13', 0.3), e('w13', -0.3)));
     const posB = (i) => i - 2 + 2 * q, posC = (i) => i + 2 - 2 * q;
     const bx = (p) => X0 + p * bw;
@@ -1098,17 +1099,17 @@ function part5(t) {
       cpath([[x, y - bh / 2], [x + w, y - bh / 2], [x + w, y + bh / 2], [x, y + bh / 2]], { w: 3, close: true, col: kind === 'C' ? C.red : C.ink });
     };
     for (let i = 0; i < 4; i++) { block(i, rows.A, 'A'); block(posB(i), rows.B, 'B'); block(posC(i), rows.C, 'C'); }
-    hand('still', 260, rows.A + 14, { size: 40, color: C.soft });
-    hand('moving right', 260, rows.B + 14, { size: 40 });
-    hand('moving left', 260, rows.C + 14, { size: 40, color: C.red });
+    hand('still', 140, rows.A + 14, { size: 40, color: C.soft });
+    hand('moving right', 140, rows.B + 14, { size: 40 });
+    hand('moving left', 140, rows.C + 14, { size: 40, color: C.red });
     // the front block of the top row, and what it has passed
     const lead = posB(3) + 0.5;
     dot(bx(lead) - 4, rows.B, 9, C.red, ap(t, s('w13', 0.1)));
     const passedC = [0, 1, 2, 3].filter((j) => lead >= posC(j) + 0.5 - 1e-6).length, passedA = [0, 1, 2, 3].filter((i) => lead >= i + 0.5 - 1e-6 && i >= 2).length;
     A(ap(t, s('w13', 0.2)), () => {
-      hand('front block has passed', 1440, 300, { size: 38, color: C.soft });
-      hand(`${passedC} oncoming blocks`, 1440, 360, { size: 46, color: C.red });
-      hand(`${passedA} still blocks`, 1440, 420, { size: 46 });
+      hand('the dotted block has passed', 1440, 300, { size: 38, color: C.soft });
+      hand(`${passedC} oncoming block${passedC === 1 ? '' : 's'}`, 1440, 360, { size: 46, color: C.red });
+      hand(`${passedA} still block${passedA === 1 ? '' : 's'}`, 1440, 420, { size: 46 });
     });
     A(ap(t, s('w14', 0.2)), () => serif('half the time = double the time ?', W / 2, 820, { size: 64, italic: true, align: 'center' }));
     A(ap(t, s('w15', 0.2)), () => {
@@ -1133,7 +1134,7 @@ function part6(t) {
     const gy = 760;
     cline(160, gy, 1760, gy, { w: 3, a: 0.6 });
     const q = seg(t, s('p2', 0.4), e('p3', 0.4));
-    const x = lerp(260, 1500, q);
+    const x = lerp(260, 2020, q);
     walker(x, gy - 2, q * 26, ap(t, s('p1', 0.6)));
     A(ap(t, s('p2', 0.1)), () => { hand('a story told by Simplicius', W / 2, 200, { size: 44, color: C.red, align: 'center' }); hand('Diogenes the Cynic hears Zeno’s arguments, says nothing, and walks', W / 2, 262, { size: 40, color: C.soft, align: 'center' }); });
     A(ap(t, s('p3', 0.2)), () => { serif('solvitur ambulando', W / 2, 420, { size: 96, italic: true, align: 'center' }); hand('it is solved by walking', W / 2, 500, { size: 48, color: C.soft, align: 'center' }); });
@@ -1145,7 +1146,7 @@ function part6(t) {
         if (i < 2) hand('→', x2 + 290, y2, { size: 40, family: SERIF, color: C.soft, align: 'center' });
         if (i < 2) A(ap(t, mid('p4', 0.6)), () => serif('?', x2, y2 - 50, { size: 60, weight: 700, color: C.red, align: 'center' }));
       });
-      cline(1160 - 170, 620 - 14, 1160 + 170, 620 - 18, { w: 5, col: C.red, p: eio(seg(t, s('p4', 0.4), s('p4', 1.1))) });
+      cline(1540 - 175, 620 - 14, 1540 + 175, 620 - 18, { w: 5, col: C.red, p: eio(seg(t, s('p4', 0.4), s('p4', 1.1))) });
     });
   });
   // p5: shorter distances, shorter times
@@ -1182,18 +1183,18 @@ function part6(t) {
     const x0 = 300, x1 = 1620, q = seg(t, s('p9', 0.4), e('p9', -0.3));
     const marks = Array.from({ length: 10 }, (_, i) => 1 - Math.pow(0.5, i + 1));
     // a continuous run: the halves stay faint
-    const y1 = 740, y2 = 900;
+    const y1 = 700, y2 = 860;
     cline(x0, y1, x1, y1, { w: 3 });
     marks.forEach((f) => dot(lerp(x0, x1, f), y1, 5, C.ink, 0.25));
     achilles(lerp(x0, x1, eio(q)), y1 - 3, q * 30, q > 0 && q < 1 ? 0.9 : 0, 1, 0.9);
-    hand('runs on: halves only potential', x0, y1 - 150, { size: 38, color: C.soft });
+    hand('runs on: the halves stay potential', x0, y1 + 52, { size: 38, color: C.soft });
     // stopping at each half: the halves become actual
     cline(x0, y2, x1, y2, { w: 3 });
     let f = 0; const stops = 6;
     for (let i = 0; i < stops; i++) { const a0 = i / stops, a1 = (i + 0.7) / stops; const g = seg(q, a0, a1); if (g > 0) f = lerp(i ? marks[i - 1] : 0, marks[i], eio(g)); }
     marks.forEach((m, i) => dot(lerp(x0, x1, m), y2, 7, C.red, f >= m - 1e-6 ? 1 : 0.25));
     walker(lerp(x0, x1, f), y2 - 3, f * 40, 1, 0.85);
-    hand('stops at each: halves made actual', x0, y2 - 140, { size: 38, color: C.red });
+    hand('stops at each: the halves become actual', x0, y2 + 52, { size: 38, color: C.red });
   });
   quote('If the units are actual, it is not possible: if they are potential, it is possible.', W / 2, 400, 1400, span(t, s('p10', 0.1), s('p11', 0.6) + 99, 0.6, 0.5), { size: 60, src: 'Aristotle, Physics VIII.8' });
   A(ap(t, s('p11', 0.2)), () => {
@@ -1224,6 +1225,10 @@ function miniChart(vals, x0, x1, y0, y1, vmax, p, { col = C.ink, limit = null, n
   if (k2 > 0) { cpath(pts, { w: 2.5, a: 0.6, col }); pts.forEach(([x, y]) => dot(x, y, 7, col)); }
 }
 function part7(t) {
+  A(ap(t, s('m1', 0.2)) * (1 - seg(t, s('m2', -0.3), s('m2', 0.3))), () => {
+    serif('taming infinite sums', W / 2, 420, { size: 96, italic: true, align: 'center', base: 'middle' });
+    hand('1 + 1/2 + 1/4 + 1/8 + … = ?', W / 2, 560, { size: 56, color: C.red, align: 'center' });
+  });
   // m2–m5: Archimedes' triangles
   const arA = span(t, s('m2', 0.1), s('m6', 0.4), 0.6, 0.6);
   A(arA, () => {
@@ -1245,14 +1250,14 @@ function part7(t) {
     }
     A(ap(t, s('m3', 0.6)), () => {
       hand('area of each row:', 1000, 290, { size: 40, color: C.soft });
-      const rows = ['1', '¼', '1/16', '1/64', '1/256'];
+      const rows = ['1', '1/4', '1/16', '1/64', '1/256'];
       rows.forEach((r, i) => A(ap(t, lerp(s('m3', 0.6), e('m4', -0.3), i / 4), 0.4), () => {
         hand(`row ${i + 1}`, 1000, 360 + i * 56, { size: 40, color: C.soft });
         hand(r, 1200, 360 + i * 56, { size: 44, align: 'center', color: i ? C.ink : C.red });
         hand(`total ${ARCH[i].toFixed(i ? Math.min(6, 2 * i) : 0)}`, 1300, 360 + i * 56, { size: 40 });
       }));
     });
-    A(ap(t, s('m4', 0.3)), () => hand('1 + ¼ + 1/16 + 1/64 + …', 1000, 690, { size: 50 }));
+    A(ap(t, s('m4', 0.3)), () => hand('1 + 1/4 + 1/16 + 1/64 + …', 1000, 690, { size: 50 }));
     A(ap(t, s('m5', 0.2)), () => {
       hand('= ', 1000, 790, { size: 54 });
       frac(4, 3, 1060, 772, { size: 52, col: C.red });
@@ -1284,7 +1289,7 @@ function part7(t) {
       hand('if they settle at all', 700, 370, { size: 44, color: C.red });
     });
     A(ap(t, s('m10', 0.1)), () => {
-      hand('½ + ¼ + ⅛ + …', 300, 640, { size: 48, align: 'center' });
+      hand('1/2 + 1/4 + 1/8 + …', 330, 640, { size: 48, align: 'center' });
       miniChart(HALVES, 160, 900, 940, 700, 1.2, seg(t, s('m10', 0.2), mid('m10', 0.6)), { limit: 1 });
       A(ap(t, mid('m10', 0.45)), () => { hand('= 1', 560, 640, { size: 52, color: C.red }); tick(680, 624, 44, eio(seg(t, mid('m10', 0.5), mid('m10', 0.7)))); });
       hand('1 − 1 + 1 − …', 1180, 640, { size: 48, align: 'center', color: C.red });
@@ -1403,13 +1408,13 @@ function part8(t) {
       const on = i % 2 === 0, xa = sx(edges[i]), xb = sx(edges[i + 1]);
       ctx.save(); ctx.beginPath(); ctx.rect(xa, on ? sy - 50 : sy + 10, Math.max(1, xb - xa), 40); fillGrain(on ? C.red : C.ink, on ? 0.8 : 0.25); ctx.restore();
     }
-    A(ap(t, s('q5', 0.3)), () => hand('waits: 1 + ½ + ¼ + ⅛ + … = 2 minutes', x0, 300, { size: 44 }));
+    A(ap(t, s('q5', 0.3)), () => hand('waits: 1 + 1/2 + 1/4 + 1/8 + … = 2 minutes', x0, 300, { size: 44 }));
     A(ap(t, s('q6', 0.1)), () => {
       dot(x1, sy - 10, 26, C.paper, 1); ctx.beginPath(); ctx.arc(x1, sy - 10, 26, 0, TAU); ctx.strokeStyle = grainRed; ctx.lineWidth = 4; ctx.stroke();
       serif('?', x1, sy + 6, { size: 50, weight: 700, color: C.red, align: 'center' });
-      serif('on or off?', 1260, 760, { size: 72, italic: true, align: 'center' });
+      A(1 - seg(t, s('q8', -0.2), s('q8', 0.3)), () => serif('on or off?', 1260, 760, { size: 72, italic: true, align: 'center' }));
     });
-    A(ap(t, s('q7', 0.2)), () => {
+    A(ap(t, s('q7', 0.2)) * (1 - seg(t, s('q8', -0.2), s('q8', 0.3))), () => {
       hand('not on: every “on” was followed by an “off”', 1260, 850, { size: 40, align: 'center' });
       A(ap(t, mid('q7', 0.55)), () => hand('not off: every “off” was followed by an “on”', 1260, 910, { size: 40, align: 'center' }));
     });
@@ -1446,7 +1451,7 @@ function part8(t) {
       hand('a diagram, not to scale: some theories of quantum gravity suggest the second', W / 2, 880, { size: 34, color: C.soft, align: 'center' });
     });
   });
-  quote('it’s probably foolhardy to think we’ve reached the end', W / 2, 460, 1300, span(t, s('q14', 0.1), e('q14', 1.6) + 99, 0.6, 0.5), { size: 64, src: 'Kevin Brown, on Zeno’s arguments' });
+  quote('it’s probably foolhardy to think we’ve reached the end', W / 2, 460, 1600, span(t, s('q14', 0.1), e('q14', 1.6) + 99, 0.6, 0.5), { size: 64, src: 'Kevin Brown, on Zeno’s arguments' });
 }
 
 // ---------- 9: the finish line ----------
@@ -1459,8 +1464,8 @@ function part9(t) {
   for (let j = 1; j <= 3; j++) flag(tx(A_N(j)), TR.y - 2, a >= A_N(j) ? 0.9 : 0);
   achilles(tx(a), TR.y - 3, t * 9, run, ap(t, s('z1', 0.2)));
   tortoise(tx(tm), TR.y - 3, t * 5, 0.3 + 0.7 * run, ap(t, s('z1', 0.2)));
-  A(ap(t, s('z1', 0.4)), () => hand(`clock: ${tr.toFixed(1)} s`, 140, 200, { size: 48, color: C.soft }));
-  A(a >= MEET ? ap(t, s('z1', 0.4) + (T_MEET / 12) * (e('z2', -0.3) - s('z1', 0.4))) : 0, () => {
+  A(ap(t, s('z1', 0.4)) * (1 - seg(t, s('z4', -0.2), s('z4', 0.4))), () => hand(`clock: ${tr.toFixed(1)} s`, 140, 200, { size: 48, color: C.soft }));
+  A((a >= MEET ? ap(t, s('z1', 0.4) + (T_MEET / 12) * (e('z2', -0.3) - s('z1', 0.4))) : 0) * (1 - seg(t, s('z4', -0.2), s('z4', 0.4))), () => {
     const x = tx(MEET);
     cline(x, TR.y - 260, x, TR.y + 30, { w: 3, col: C.red });
     hand('level: 111.1 m, after 11.1 s', x, TR.y - 280, { size: 42, color: C.red, align: 'center' });

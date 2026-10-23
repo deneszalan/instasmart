@@ -1,0 +1,10 @@
+{
+ "SPEAKERA": {
+  "engine": "kokoro",
+  "voice": "am_michael"
+ },
+ "SPEAKERB": {
+  "engine": "kokoro",
+  "voice": "af_heart"
+ }
+}

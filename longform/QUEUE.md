@@ -1,6 +1,6 @@
 # Queue
 
-One writer at a time (to spare weekly credits); save after every step with `bash save.sh "<step>"`.
+All ten are written. One writer at a time (to spare weekly credits); save after every step with `bash save.sh "<step>"`.
 Each video: the writer makes `<slug>` and `<slug>-dialogue` (BRIEF.md, DIALOGUE.md). Then centrally: record m1/m2 lines
 (`voice.txt` m1/m2, and `A=m1`/`A=m2` in the dialogue's cast), `bash tts.sh <slug>`, `node music-remap.mjs <slug>` after the
 dialogue's timing changes, re-check a few stills, `bash render-video.sh <slug>`, verify, deliver mp4 + subtitles.srt.
@@ -16,7 +16,7 @@ dialogue's timing changes, re-check a few stills, `bash render-video.sh <slug>`,
 | 7 | public-key | tech-public-key-cryptography | af_heart | A=m1 B=af_heart | written (11:57, dialogue 14:06 with stand-ins: check it stays under 15:00); queued (job public-key) |
 | 8 | enigma | tech-enigma-never-itself | m2 | A=m2 B=af_nicole | written (10:25, dialogue 13:59 with stand-ins: check it stays under 15:00); queued (job enigma) |
 | 9 | mendel | biology-mendel-pea-ratios | af_bella | A=m1 B=af_bella | written (11:38, dialogue 13:49 with stand-ins); queued (job mendel) |
-| 10 | zeno | philosophy-zeno-achilles-tortoise | af_heart | A=m2 B=af_heart | writing |
+| 10 | zeno | philosophy-zeno-achilles-tortoise | af_heart | A=m2 B=af_heart | written (11:48, dialogue 13:30 with stand-ins; its first music track has ~10 s spare in the dialogue); queued (job zeno) |
 
 ## Central work: the runner
 

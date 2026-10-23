@@ -1,0 +1,35 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERB: And some theories of quantum gravity suggest that space and time may not divide endlessly at all.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERA: As the philosopher Kevin Brown put it, it's probably foolhardy to think we've reached the end.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERB: So, back to the race.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERA: Achilles reaches the tortoise's start after ten seconds, and draws level after eleven point one seconds, at a hundred and eleven point one metres.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERB: Before that moment come infinitely many of Zeno's stages, and every one of them fits inside those 11.1 seconds.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERA: Zeno was wrong that motion is impossible. But he made us say what we mean by infinity, a sum, and an instant.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERB: Not bad, for a puzzle about a tortoise.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERA: Bertrand Russell wrote that Zeno's arguments have afforded grounds for almost all theories of space, time and infinity since.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERB: Achilles wins the race. But Zeno's argument, it seems, is still running.

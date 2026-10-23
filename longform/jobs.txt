@@ -13,3 +13,4 @@ double-slit bash finalize.sh double-slit af_bella m2 af_bella && bash deliver.sh
 public-key bash finalize.sh public-key af_heart m1 af_heart && bash deliver.sh public-key public-key-cryptography && bash deliver.sh public-key-dialogue public-key-cryptography-dialogue
 enigma bash finalize.sh enigma m2 m2 af_nicole && bash deliver.sh enigma enigma-never-itself && bash deliver.sh enigma-dialogue enigma-never-itself-dialogue
 mendel bash finalize.sh mendel af_bella m1 af_bella && bash deliver.sh mendel mendels-peas && bash deliver.sh mendel-dialogue mendels-peas-dialogue
+zeno bash finalize.sh zeno af_heart m2 af_heart && bash deliver.sh zeno zeno-achilles-and-the-tortoise && bash deliver.sh zeno-dialogue zeno-achilles-and-the-tortoise-dialogue
