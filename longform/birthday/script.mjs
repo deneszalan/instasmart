@@ -110,7 +110,7 @@ export const LINES = [
   { key: 'y7', text: 'So your birthday has only about an even chance of being one of them.' },
   { key: 'y8', gap: 0.8, text: 'Now look at that number again. 253 is exactly the number of pairs among 23 guests.' },
   { key: 'y9', text: 'That’s no coincidence. Both questions need about 253 chances, each of 1 in 365.', say: 'That’s no coincidence. Both questions need about 253 chances, each of one in 365.' },
-  { key: 'y10', text: 'A 1-in-365 chance becomes an even bet after about 253 tries: *365 × ln 2*.', say: 'A one-in-365 chance becomes an even bet after about 253 tries. That’s 365 times the natural log of 2.' },
+  { key: 'y10', text: 'A 1-in-365 chance becomes an even bet after about 253 tries. That’s *365 × ln 2*.', say: 'A one-in-365 chance becomes an even bet after about 253 tries. That’s 365 times the natural log of 2.' },
   // ---- 6 a rule of thumb
   { key: 'r1', gap: 4.2, chapter: 'A rule of thumb', text: 'That gives a quick rule for any number of days, not just 365.' },
   { key: 'r2', text: 'With *n* guests, there are about *n² ÷ 2* pairs.', say: 'With n guests, there are about n squared over 2 pairs.' },
@@ -134,7 +134,7 @@ export const LINES = [
   { key: 'h3', text: 'A 64-bit fingerprint has about *18 billion billion* possible values.' },
   { key: 'h4', text: 'Two different files with the same fingerprint make a *collision*.' },
   { key: 'h5', gap: 0.8, text: 'Fingerprints are like birthdays, in a year with an enormous number of days.' },
-  { key: 'h6', text: 'So collisions show up after about the square root of that number: 2 to the power of half the bits.', say: 'So collisions show up after about the square root of that number. That’s 2 to the power of half the number of bits.' },
+  { key: 'h6', text: 'So collisions show up after about the square root of that number. That’s 2 to the power of half the bits.', say: 'So collisions show up after about the square root of that number. That’s 2 to the power of half the number of bits.' },
   { key: 'h7', text: 'For 64 bits, about *5 billion* tries give an even chance of a collision.' },
   { key: 'h8', text: 'Matching one particular fingerprint, like matching your own birthday, takes about 13 billion billion tries.' },
   { key: 'h9', gap: 0.8, text: 'That’s the idea behind the *birthday attack*. Imagine a forger with a fair contract and a fraudulent one.' },
@@ -142,7 +142,7 @@ export const LINES = [
   { key: 'h11', text: 'When a fair version and a fraudulent version share a fingerprint, she has her collision.' },
   { key: 'h12', text: 'Her victim signs the fair version, and the signature fits the fraudulent one just as well.' },
   { key: 'h13', gap: 0.8, text: 'The defence is longer fingerprints, with about twice as many bits as brute force alone would demand.' },
-  { key: 'h14', text: 'SHA-256 has 256 bits, so a collision takes around 2 to the 128 tries: a 39-digit number.', say: 'S H A 256 has 256 bits, so a collision takes around 2 to the power of 128 tries. That’s a number with 39 digits.' },
+  { key: 'h14', text: 'SHA-256 has 256 bits, so a collision takes around 2 to the 128 tries. That’s a 39-digit number.', say: 'S H A 256 has 256 bits, so a collision takes around 2 to the power of 128 tries. That’s a number with 39 digits.' },
   // ---- 9 the answer
   { key: 'z1', gap: 4.2, chapter: 'The answer', text: 'So, let’s go back to the party.' },
   { key: 'z2', text: '23 guests sound like too few, because we picture matches with ourselves.' },

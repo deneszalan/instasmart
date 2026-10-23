@@ -90,7 +90,7 @@ export const LINES = [
   { key: 'y8', who: 'B', gap: 0.8, text: 'Now look at that number again. 253 is exactly the number of pairs among 23 guests.' },
   { key: 'x17', who: 'A', gap: 0.3, text: 'Is that a coincidence?' },
   { key: 'y9', who: 'B', text: 'Not really. Both questions need about 253 chances, each of 1 in 365.', say: 'Not really. Both questions need about 253 chances, each of one in 365.' },
-  { key: 'y10', who: 'A', text: 'A 1-in-365 chance becomes an even bet after about 253 tries: *365 × ln 2*.', say: 'A one-in-three-hundred-and-sixty-five chance becomes an even bet after about two hundred and fifty-three tries. That’s three hundred and sixty-five times the natural log of two.' },
+  { key: 'y10', who: 'A', text: 'A 1-in-365 chance becomes an even bet after about 253 tries. That’s *365 × ln 2*.', say: 'A one-in-three-hundred-and-sixty-five chance becomes an even bet after about two hundred and fifty-three tries. That’s three hundred and sixty-five times the natural log of two.' },
   { key: 'x18', who: 'B', gap: 0.8, text: 'So the room of 23 and the crowd of 253 are really the same sum.' },
   // ---- 6 a rule of thumb
   { key: 'r1', who: 'B', gap: 4.2, chapter: 'A rule of thumb', text: 'And that gives us a quick rule for any number of days, not just 365.' },
@@ -100,7 +100,7 @@ export const LINES = [
   { key: 'r4', who: 'B', text: 'The square root of 506 is about 22.5. Round up, and you get ~23~.' },
   { key: 'r5', who: 'A', gap: 0.8, text: 'In general, you need about *1.18 × √days*.', say: 'In general, you need about one point one eight times the square root of the number of days.' },
   { key: 'x20', who: 'B', gap: 0.3, text: 'So what about a year with a million days?' },
-  { key: 'r6', who: 'A', text: 'With a million equally likely days, just 1,178 people would give an even chance.', say: 'With a million equally likely days, just one thousand, one hundred and seventy-eight people would give an even chance.' },
+  { key: 'r6', who: 'A', text: 'With a million equally likely days, just 1,178 people would give an even chance.', say: 'With a million equally likely days, just one thousand one hundred and seventy-eight people would give an even chance.' },
   { key: 'x21', who: 'B', gap: 0.3, text: 'Out of a million days? That’s about a tenth of a percent.' },
   { key: 'r7', who: 'A', text: 'The real surprise is that the people needed grow only like the square root of the days.' },
   // ---- 7 real birthdays
@@ -121,7 +121,7 @@ export const LINES = [
   { key: 'x24', who: 'A', gap: 0.3, text: 'That sounds like plenty.' },
   { key: 'h4', who: 'B', text: 'Still, two different files with the same fingerprint make a *collision*.' },
   { key: 'h5', who: 'A', gap: 0.8, text: 'And fingerprints are like birthdays, in a year with an enormous number of days.' },
-  { key: 'h6', who: 'B', text: 'So collisions show up after about the square root of that number: 2 to the power of half the bits.', say: 'So collisions show up after about the square root of that number. That’s 2 to the power of half the number of bits.' },
+  { key: 'h6', who: 'B', text: 'So collisions show up after about the square root of that number. That’s 2 to the power of half the bits.', say: 'So collisions show up after about the square root of that number. That’s 2 to the power of half the number of bits.' },
   { key: 'h7', who: 'A', text: 'For 64 bits, about *5 billion* tries give an even chance of a collision.', say: 'For sixty-four bits, about five billion tries give an even chance of a collision.' },
   { key: 'x25', who: 'B', gap: 0.3, text: 'And to match one particular fingerprint?' },
   { key: 'h8', who: 'A', text: 'That’s like matching your own birthday, and it takes about 13 billion billion tries.', say: 'That’s like matching your own birthday, and it takes about thirteen billion billion tries.' },
@@ -131,7 +131,7 @@ export const LINES = [
   { key: 'h12', who: 'A', text: 'Her victim signs the fair version, and the signature fits the fraudulent one just as well.' },
   { key: 'x26', who: 'B', gap: 0.3, text: 'That’s sneaky. So how do you defend against it?' },
   { key: 'h13', who: 'A', text: 'You use longer fingerprints, with about twice as many bits as brute force alone would demand.' },
-  { key: 'h14', who: 'B', text: 'SHA-256 has 256 bits, so a collision takes around 2 to the 128 tries: a 39-digit number.', say: 'S H A 256 has 256 bits, so a collision takes around 2 to the power of 128 tries. That’s a number with 39 digits.' },
+  { key: 'h14', who: 'B', text: 'SHA-256 has 256 bits, so a collision takes around 2 to the 128 tries. That’s a 39-digit number.', say: 'S H A 256 has 256 bits, so a collision takes around 2 to the power of 128 tries. That’s a number with 39 digits.' },
   { key: 'x27', who: 'A', text: 'So a party puzzle tells engineers how long their fingerprints need to be.' },
   // ---- 9 the answer
   { key: 'z1', who: 'A', gap: 4.2, chapter: 'The answer', text: 'So, let’s go back to the party.' },
