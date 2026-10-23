@@ -670,7 +670,7 @@ function partYoung(t) {
     ctx.save(); rr(140, 230, 760, 620, 16); ctx.clip();
     for (const sy of [470, 610]) for (let r = 24; r < 760; r += 26) {
       ctx.strokeStyle = `rgba(61,255,138,${0.6 * (1 - r / 760)})`; ctx.lineWidth = 2.5;
-      ctx.beginPath(); ctx.arc(200, sy, r - ((t * 40) % 26), -1.35, 1.35); ctx.stroke();
+      ctx.beginPath(); ctx.arc(200, sy, Math.max(0, r - ((t * 40) % 26)), -1.35, 1.35); ctx.stroke();
     }
     ctx.restore();
     ctx.fillStyle = C.metal; ctx.fillRect(196, 240, 8, 222); ctx.fillRect(196, 478, 8, 124); ctx.fillRect(196, 618, 8, 232);
