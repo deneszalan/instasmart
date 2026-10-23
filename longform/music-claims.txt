@@ -13,3 +13,6 @@ birthday | On My Way.mp3
 sky-blue | Ever Mindful.mp3
 sky-blue | Equatorial Complex.mp3
 sky-blue | Almost Bliss.mp3
+double-slit | Ambiment.mp3
+double-slit | Dreams Become Real.mp3
+double-slit | Soaring.mp3
