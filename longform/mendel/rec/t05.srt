@@ -1,0 +1,67 @@
+1
+00:00:01,000 --> 00:00:26,000
+A 2019 reanalysis included the extreme plants Mendel himself reported, and found the scatter close to what chance predicts.
+
+2
+00:00:31,000 --> 00:00:56,000
+Mendel also said he left out some small experiments that strayed, which may explain some of the tidiness.
+
+3
+00:01:01,000 --> 00:01:26,000
+The open question is how he chose, counted and reported his peas, not whether he grew them.
+
+4
+00:01:31,000 --> 00:01:56,000
+Mendel never knew what his factors were made of. For the wrinkled seed, the answer came in 1990.
+
+5
+00:02:01,000 --> 00:02:26,000
+Wrinkled seeds lack one form of an enzyme that builds starch, called starch-branching enzyme one.
+
+6
+00:02:31,000 --> 00:02:56,000
+In wrinkled peas, its gene is interrupted by an extra stretch of DNA, about 800 letters long.
+
+7
+00:03:01,000 --> 00:03:26,000
+The intruder resembles a jumping gene known from maize.
+
+8
+00:03:31,000 --> 00:03:56,000
+Without the enzyme, the young seed makes less starch and keeps more sugar, which draws in extra water.
+
+9
+00:04:01,000 --> 00:04:26,000
+Then, as the ripe seed dries out, it ends up wrinkled.
+
+10
+00:04:31,000 --> 00:04:56,000
+One working copy of the gene makes the enzyme, so the seed stays round. That's dominance, in chemistry.
+
+11
+00:05:01,000 --> 00:05:26,000
+It was the first of Mendel's seven genes to be found, and by 2025, all seven had been identified.
+
+12
+00:05:31,000 --> 00:05:56,000
+So here is what the peas were saying. Every plant carries two copies of each gene, one from each parent.
+
+13
+00:06:01,000 --> 00:06:26,000
+Each pollen grain and each egg cell gets one of them, by chance.
+
+14
+00:06:31,000 --> 00:06:56,000
+A recessive copy can hide for a generation, and shows again when two hidden copies meet, one time in four.
+
+15
+00:07:01,000 --> 00:07:26,000
+None of this shows in a single pod. It appears only when someone counts thousands.
+
+16
+00:07:31,000 --> 00:07:56,000
+Mendel's counts waited 34 years to be understood, and then they became the first rules of genetics.
+
+17
+00:08:01,000 --> 00:08:26,000
+All from a friar, a garden, and a careful count of peas.

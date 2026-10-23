@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+Cross a pea plant that has round seeds with one that has wrinkled seeds, and every seed you get is round.
+
+2
+00:00:31,000 --> 00:00:56,000
+But grow those round seeds into plants, and wrinkled seeds come back, about one in four.
+
+3
+00:01:01,000 --> 00:01:26,000
+A friar counted thousands of them in a monastery garden, and found the first rules of genetics.
+
+4
+00:01:31,000 --> 00:01:56,000
+This is the story of Gregor Mendel's peas, and of numbers that some called too good to be true.
+
+5
+00:02:01,000 --> 00:02:26,000
+Mendel was a friar at Saint Thomas's Abbey in Brno, then called Brünn, in the Austrian Empire.
+
+6
+00:02:31,000 --> 00:02:56,000
+From 1856 to 1863, he used the abbey's garden to cross pea plants and follow their offspring.
+
+7
+00:03:01,000 --> 00:03:26,000
+Pea flowers fertilise themselves in the bud, so to cross two plants, Mendel opened a young bud and pulled out its stamens.
+
+8
+00:03:31,000 --> 00:03:56,000
+Then he dusted it with pollen from another plant.
+
+9
+00:04:01,000 --> 00:04:26,000
+He tested 34 varieties, kept 22 that bred true, and chose seven traits, each with two clear forms.
+
+10
+00:04:31,000 --> 00:04:56,000
+Seeds were round or wrinkled, and yellow or green. Seed coats were grey or white, with violet or white flowers.
+
+11
+00:05:01,000 --> 00:05:26,000
+Pods were inflated or pinched, green or yellow. Flowers grew along the stem or at its tip, and stems were tall or short.
+
+12
+00:05:31,000 --> 00:05:56,000
+Over those years, he grew and tested some 28,000 plants, most of them peas, and he counted their offspring.
+
+13
+00:06:01,000 --> 00:06:26,000
+Take seed shape. Mendel crossed plants with round seeds and plants with wrinkled ones.
+
+14
+00:06:31,000 --> 00:06:56,000
+The shape shows in the seed itself, and that same year, every seed was round.
+
+15
+00:07:01,000 --> 00:07:26,000
+Mendel called round dominant, and wrinkled, which had vanished, recessive.
+
+16
+00:07:31,000 --> 00:07:56,000
+The next year, he sowed them and let the plants fertilise themselves.
+
+17
+00:08:01,000 --> 00:08:26,000
+Wrinkled seeds were back in their pods, often beside round ones, with nothing in between.
+
+18
+00:08:31,000 --> 00:08:56,000
+From 253 hybrid plants, he counted 7,324 seeds. Of those, 5,474 were round and 1,850 were wrinkled.
+
+19
+00:09:01,000 --> 00:09:26,000
+That makes 2.96 round seeds for every wrinkled one, close to three to one.
+
+20
+00:09:31,000 --> 00:09:56,000
+He did the same for all seven traits, and each one landed near three to one, from 2.82 to 3.15.

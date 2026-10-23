@@ -7,7 +7,7 @@ dialogue's timing changes, re-check a few stills, `bash render-video.sh <slug>`,
 
 | # | Slug | Short post | Voice | Dialogue cast | State |
 |---|---|---|---|---|---|
-| 1 | birthday | math-birthday-problem | af_bella | A=m2 B=af_bella | monologue rendered and delivered (10:16); dialogue sent with lines cut off (timing bug, fixed); spoken-language pass done; re-record of reworded lines + render queued (birthday-v2) |
+| 1 | birthday | math-birthday-problem | af_bella | A=m2 B=af_bella | both versions reworded, re-recorded and delivered (10:27, dialogue 11:27). Done |
 | 2 | eratosthenes | history-eratosthenes-earth-circumference | m1 | A=m1 B=af_bella | monologue delivered (9:46); dialogue sent with lines cut off (timing bug, fixed); spoken-language pass done; queued (eratosthenes-v2) |
 | 3 | four-stroke | engineering-four-stroke-engine | m2 | A=m2 B=af_heart | written (10:08, dialogue 12:32); queued |
 | 4 | sky-blue | physics-why-the-sky-is-blue | af_heart | A=m1 B=af_heart | monologue rendered and delivered (9:46); spoken-language pass done; both re-queued (sky-blue-v2) |

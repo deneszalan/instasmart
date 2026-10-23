@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+All seven together gave 14,949 dominant to 5,010 recessive, which is 2.98 to one.
+
+2
+00:00:31,000 --> 00:00:56,000
+So why three to one? And how can a trait vanish for a generation, then come back unchanged?
+
+3
+00:01:01,000 --> 00:01:26,000
+Mendel's answer, in today's words, is that each plant carries two copies of a factor for seed shape, one from each parent.
+
+4
+00:01:31,000 --> 00:01:56,000
+We call these factors genes. Write round as a capital R, and wrinkled as a small r.
+
+5
+00:02:01,000 --> 00:02:26,000
+A hybrid gets a capital R from one parent and a small r from the other, and one capital R is enough to make a seed round.
+
+6
+00:02:31,000 --> 00:02:56,000
+That's dominance. The small r stays hidden, and it can be passed on.
+
+7
+00:03:01,000 --> 00:03:26,000
+Each pollen grain and each egg cell gets just one copy, so a hybrid's are half capital R and half small r.
+
+8
+00:03:31,000 --> 00:03:56,000
+Which pollen meets which egg, Mendel wrote, is a matter of chance.
+
+9
+00:04:01,000 --> 00:04:26,000
+He wrote the four equally likely meetings as fractions, the pollen over the egg cell.
+
+10
+00:04:31,000 --> 00:04:56,000
+Only small r over small r, one meeting in four, makes a wrinkled seed. The other three make round ones.
+
+11
+00:05:01,000 --> 00:05:26,000
+Today this is drawn as a square, devised decades later by Reginald Punnett.
+
+12
+00:05:31,000 --> 00:05:56,000
+It predicts one pure round, two hybrids and one pure wrinkled, in every four.
+
+13
+00:06:01,000 --> 00:06:26,000
+So two round seeds in three should be hybrids, still hiding a small r. Mendel tested that.
+
+14
+00:06:31,000 --> 00:06:56,000
+Of 565 plants grown from round seeds, 372 made both kinds of seed, and 193 made only round ones.
+
+15
+00:07:01,000 --> 00:07:26,000
+That's 1.93 hybrids for every pure plant, close to the two to one his idea predicted.
+
+16
+00:07:31,000 --> 00:07:56,000
+Next, Mendel crossed plants that differed in two traits, round yellow seeds with wrinkled green ones.
+
+17
+00:08:01,000 --> 00:08:26,000
+The hybrids were all round and yellow. From 15 of them, he harvested 556 seeds, in four kinds.
+
+18
+00:08:31,000 --> 00:08:56,000
+There were 315 round yellow seeds, 101 wrinkled yellow, 108 round green, and 32 wrinkled green.
+
+19
+00:09:01,000 --> 00:09:26,000
+If the traits are inherited separately, three quarters of the seeds are round, and three quarters of those are yellow.
+
+20
+00:09:31,000 --> 00:09:56,000
+That makes nine sixteenths round and yellow, and the four kinds come in nine, three, three and one.
