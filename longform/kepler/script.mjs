@@ -42,6 +42,8 @@
 //   26.50 / 21.97 km/s. NASA planetary fact sheet: eccentricities of the planets.
 // - Wikipedia, "Halley's Comet": perihelion 0.59 AU, aphelion 35 AU, period about 75 years; on 9 December 2023,
 //   at aphelion, 0.91 km/s; next perihelion 2061.
+// - Wikipedia, "Galilean moons": the four moons' distances and periods (drawn to scale in part 7).
+// - NASA planetary fact sheet: Neptune about 4,515 million km (30 AU) from the Sun (used in the dialogue).
 // Computed in the scene (and in research/check.mjs, research/halley.mjs): wedge areas (each 1/12), 4× speed on
 // the e = 0.6 diagram, Earth's halves of 186.4 and 178.8 days, Halley ≈ 54 km/s at perihelion (r·v is the
 // same at both ends) and only about 2 of its 75 years inside Jupiter's orbit, Kepler's iteration for Mars,

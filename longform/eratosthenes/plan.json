@@ -1,640 +1,640 @@
 {
- "duration": 616.61,
+ "duration": 586.29,
  "lines": [
   {
    "key": "o1",
    "start": 1,
-   "natural": 5.33,
+   "natural": 4.7,
    "measured": 1
   },
   {
    "key": "o2",
-   "start": 6.9,
-   "natural": 5.17,
+   "start": 6.27,
+   "natural": 4.86,
    "measured": 31
   },
   {
    "key": "o3",
-   "start": 12.64,
-   "natural": 3.62,
+   "start": 11.7,
+   "natural": 3.12,
    "measured": 61
   },
   {
    "key": "o4",
-   "start": 17.08,
-   "natural": 3.35,
+   "start": 15.64,
+   "natural": 2.74,
    "measured": 91
   },
   {
    "key": "o5",
-   "start": 21,
-   "natural": 4.38,
+   "start": 18.95,
+   "natural": 3.6,
    "measured": 121
   },
   {
    "key": "l1",
-   "start": 33.1,
-   "natural": 7.28,
+   "start": 30.27,
+   "natural": 5.71,
    "measured": 151
   },
   {
    "key": "l2",
-   "start": 40.95,
-   "natural": 6.38,
+   "start": 36.55,
+   "natural": 5.85,
    "measured": 181
   },
   {
    "key": "l3",
-   "start": 47.9,
-   "natural": 6.1,
+   "start": 42.97,
+   "natural": 5.69,
    "measured": 211
   },
   {
    "key": "l4",
-   "start": 54.57,
-   "natural": 2.77,
+   "start": 49.23,
+   "natural": 2.45,
    "measured": 241
   },
   {
    "key": "l5",
-   "start": 57.91,
-   "natural": 4.22,
+   "start": 52.25,
+   "natural": 4.42,
    "measured": 271
   },
   {
    "key": "l6",
-   "start": 62.7,
-   "natural": 4.78,
+   "start": 57.24,
+   "natural": 4.36,
    "measured": 301
   },
   {
    "key": "l7",
-   "start": 68.05,
-   "natural": 3.02,
+   "start": 62.17,
+   "natural": 2.52,
    "measured": 331
   },
   {
    "key": "l8",
-   "start": 71.99,
-   "natural": 3.33,
+   "start": 65.61,
+   "natural": 3.26,
    "measured": 361
   },
   {
    "key": "l9",
-   "start": 75.89,
-   "natural": 5.95,
+   "start": 69.44,
+   "natural": 5.4,
    "measured": 391
   },
   {
    "key": "l10",
-   "start": 82.41,
-   "natural": 4.3,
+   "start": 75.41,
+   "natural": 3.81,
    "measured": 421
   },
   {
    "key": "l11",
-   "start": 87.28,
-   "natural": 4.7,
+   "start": 79.79,
+   "natural": 4.09,
    "measured": 451
   },
   {
    "key": "l12",
-   "start": 92.55,
-   "natural": 2.35,
+   "start": 84.45,
+   "natural": 1.94,
    "measured": 481
   },
   {
    "key": "m1",
-   "start": 99.22,
-   "natural": 5.1,
+   "start": 90.71,
+   "natural": 5.53,
    "measured": 511
   },
   {
    "key": "m2",
-   "start": 104.89,
-   "natural": 2.9,
+   "start": 96.81,
+   "natural": 2.89,
    "measured": 541
   },
   {
    "key": "m3",
-   "start": 108.36,
-   "natural": 5.42,
+   "start": 100.27,
+   "natural": 5.03,
    "measured": 571
   },
   {
    "key": "m4",
-   "start": 115.35,
-   "natural": 5.92,
+   "start": 106.87,
+   "natural": 5.03,
    "measured": 601
   },
   {
    "key": "m5",
-   "start": 121.84,
-   "natural": 1.93,
+   "start": 112.47,
+   "natural": 2.02,
    "measured": 631
   },
   {
    "key": "m6",
-   "start": 124.34,
-   "natural": 5.53,
+   "start": 115.06,
+   "natural": 5.35,
    "measured": 661
   },
   {
    "key": "m7",
-   "start": 130.79,
-   "natural": 6.72,
+   "start": 121.33,
+   "natural": 7.63,
    "measured": 691
   },
   {
    "key": "m8",
-   "start": 138.08,
-   "natural": 5.55,
+   "start": 129.53,
+   "natural": 5.47,
    "measured": 721
   },
   {
    "key": "m9",
-   "start": 144.2,
-   "natural": 2.6,
+   "start": 135.57,
+   "natural": 2.93,
    "measured": 751
   },
   {
    "key": "m10",
-   "start": 147.37,
-   "natural": 4.15,
+   "start": 139.07,
+   "natural": 3.84,
    "measured": 781
   },
   {
    "key": "b1",
-   "start": 155.84,
-   "natural": 2.45,
+   "start": 147.23,
+   "natural": 2.47,
    "measured": 811
   },
   {
    "key": "b2",
-   "start": 158.86,
-   "natural": 5.05,
+   "start": 150.27,
+   "natural": 4.72,
    "measured": 841
   },
   {
    "key": "b3",
-   "start": 164.48,
-   "natural": 4.55,
+   "start": 155.56,
+   "natural": 4.41,
    "measured": 871
   },
   {
    "key": "b4",
-   "start": 169.6,
-   "natural": 3.2,
+   "start": 160.54,
+   "natural": 3.03,
    "measured": 901
   },
   {
    "key": "b5",
-   "start": 173.37,
-   "natural": 5.75,
+   "start": 164.14,
+   "natural": 5.19,
    "measured": 931
   },
   {
    "key": "b6",
-   "start": 180.04,
-   "natural": 3.75,
+   "start": 170.25,
+   "natural": 3.6,
    "measured": 961
   },
   {
    "key": "b7",
-   "start": 184.36,
-   "natural": 1.98,
+   "start": 174.42,
+   "natural": 2.16,
    "measured": 991
   },
   {
    "key": "b8",
-   "start": 187.51,
-   "natural": 5.42,
+   "start": 177.75,
+   "natural": 5.23,
    "measured": 1021
   },
   {
    "key": "b9",
-   "start": 193.5,
-   "natural": 3.35,
+   "start": 183.55,
+   "natural": 3.43,
    "measured": 1051
   },
   {
    "key": "p1",
-   "start": 201.17,
-   "natural": 5.08,
+   "start": 191.3,
+   "natural": 4.99,
    "measured": 1081
   },
   {
    "key": "p2",
-   "start": 206.82,
-   "natural": 4.05,
+   "start": 196.86,
+   "natural": 4.45,
    "measured": 1111
   },
   {
    "key": "p3",
-   "start": 211.44,
-   "natural": 6.3,
+   "start": 201.88,
+   "natural": 6.23,
    "measured": 1141
   },
   {
    "key": "p4",
-   "start": 218.31,
-   "natural": 4.17,
+   "start": 208.68,
+   "natural": 4.15,
    "measured": 1171
   },
   {
    "key": "p5",
-   "start": 223.05,
-   "natural": 3.12,
+   "start": 213.4,
+   "natural": 3.26,
    "measured": 1201
   },
   {
    "key": "p6",
-   "start": 226.74,
-   "natural": 7.05,
+   "start": 217.23,
+   "natural": 6.46,
    "measured": 1231
   },
   {
    "key": "p7",
-   "start": 234.36,
-   "natural": 4.2,
+   "start": 224.26,
+   "natural": 4.46,
    "measured": 1261
   },
   {
    "key": "p8",
-   "start": 239.13,
-   "natural": 5.53,
+   "start": 229.29,
+   "natural": 4.87,
    "measured": 1291
   },
   {
    "key": "p9",
-   "start": 245.23,
-   "natural": 3.8,
+   "start": 234.73,
+   "natural": 3.97,
    "measured": 1321
   },
   {
    "key": "p10",
-   "start": 251.15,
-   "natural": 5.7,
+   "start": 240.82,
+   "natural": 5.37,
    "measured": 1351
   },
   {
    "key": "f1",
-   "start": 261.17,
-   "natural": 2.65,
+   "start": 250.51,
+   "natural": 2.84,
    "measured": 1381
   },
   {
    "key": "f2",
-   "start": 264.39,
-   "natural": 2.5,
+   "start": 253.92,
+   "natural": 2.54,
    "measured": 1411
   },
   {
    "key": "f3",
-   "start": 267.46,
-   "natural": 2.23,
+   "start": 257.03,
+   "natural": 2.27,
    "measured": 1441
   },
   {
    "key": "f4",
-   "start": 270.26,
-   "natural": 5.47,
+   "start": 259.87,
+   "natural": 5.15,
    "measured": 1471
   },
   {
    "key": "f5",
-   "start": 276.3,
-   "natural": 3.23,
+   "start": 265.59,
+   "natural": 3.1,
    "measured": 1501
   },
   {
    "key": "f6",
-   "start": 280.1,
-   "natural": 5.15,
+   "start": 269.26,
+   "natural": 4.96,
    "measured": 1531
   },
   {
    "key": "f7",
-   "start": 286.17,
-   "natural": 6.85,
+   "start": 275.14,
+   "natural": 6.81,
    "measured": 1561
   },
   {
    "key": "f8",
-   "start": 293.59,
-   "natural": 4.17,
+   "start": 282.52,
+   "natural": 3.23,
    "measured": 1591
   },
   {
    "key": "f9",
-   "start": 300.53,
-   "natural": 2.98,
+   "start": 288.52,
+   "natural": 3.13,
    "measured": 1621
   },
   {
    "key": "c1",
-   "start": 307.83,
-   "natural": 3.52,
+   "start": 295.97,
+   "natural": 4.05,
    "measured": 1651
   },
   {
    "key": "c2",
-   "start": 311.92,
-   "natural": 4.6,
+   "start": 300.59,
+   "natural": 4.7,
    "measured": 1681
   },
   {
    "key": "c3",
-   "start": 317.09,
-   "natural": 4.45,
+   "start": 305.86,
+   "natural": 4.18,
    "measured": 1711
   },
   {
    "key": "c4",
-   "start": 322.11,
-   "natural": 5.92,
+   "start": 310.61,
+   "natural": 4.93,
    "measured": 1741
   },
   {
    "key": "c5",
-   "start": 328.6,
-   "natural": 3.23,
+   "start": 316.11,
+   "natural": 3.1,
    "measured": 1771
   },
   {
    "key": "c6",
-   "start": 332.4,
-   "natural": 6.42,
+   "start": 319.78,
+   "natural": 6.41,
    "measured": 1801
   },
   {
    "key": "c7",
-   "start": 339.74,
-   "natural": 1.52,
+   "start": 327.11,
+   "natural": 1.28,
    "measured": 1831
   },
   {
    "key": "c8",
-   "start": 341.83,
-   "natural": 6.7,
+   "start": 328.96,
+   "natural": 5.65,
    "measured": 1861
   },
   {
    "key": "c9",
-   "start": 349.1,
-   "natural": 3.12,
+   "start": 335.18,
+   "natural": 2.93,
    "measured": 1891
   },
   {
    "key": "c10",
-   "start": 352.79,
-   "natural": 7.92,
+   "start": 338.68,
+   "natural": 7.79,
    "measured": 1921
   },
   {
    "key": "c11",
-   "start": 362.28,
-   "natural": 5.35,
+   "start": 348.04,
+   "natural": 4.63,
    "measured": 1951
   },
   {
    "key": "c12",
-   "start": 368.2,
-   "natural": 3.85,
+   "start": 353.24,
+   "natural": 3.17,
    "measured": 1981
   },
   {
    "key": "c13",
-   "start": 372.62,
-   "natural": 5.92,
+   "start": 356.98,
+   "natural": 5.5,
    "measured": 2011
   },
   {
    "key": "s1",
-   "start": 382.86,
-   "natural": 4.33,
+   "start": 366.8,
+   "natural": 4.48,
    "measured": 2041
   },
   {
    "key": "s2",
-   "start": 387.76,
-   "natural": 5.1,
+   "start": 371.85,
+   "natural": 5.28,
    "measured": 2071
   },
   {
    "key": "s3",
-   "start": 393.43,
-   "natural": 6.2,
+   "start": 377.7,
+   "natural": 5.1,
    "measured": 2101
   },
   {
    "key": "s4",
-   "start": 400.2,
-   "natural": 5.53,
+   "start": 383.37,
+   "natural": 5.1,
    "measured": 2131
   },
   {
    "key": "s5",
-   "start": 406.65,
-   "natural": 4.22,
+   "start": 389.39,
+   "natural": 3.59,
    "measured": 2161
   },
   {
    "key": "s6",
-   "start": 411.44,
-   "natural": 5.2,
+   "start": 393.55,
+   "natural": 4.59,
    "measured": 2191
   },
   {
    "key": "s7",
-   "start": 417.21,
-   "natural": 4.47,
+   "start": 398.71,
+   "natural": 3.71,
    "measured": 2221
   },
   {
    "key": "s8",
-   "start": 422.25,
-   "natural": 9.95,
+   "start": 402.99,
+   "natural": 8.75,
    "measured": 2251
   },
   {
    "key": "s9",
-   "start": 433.57,
-   "natural": 7.5,
+   "start": 413.11,
+   "natural": 6.95,
    "measured": 2281
   },
   {
    "key": "s10",
-   "start": 441.64,
-   "natural": 5.05,
+   "start": 420.63,
+   "natural": 4.46,
    "measured": 2311
   },
   {
    "key": "s11",
-   "start": 447.61,
-   "natural": 7.6,
+   "start": 426.01,
+   "natural": 5.98,
    "measured": 2341
   },
   {
    "key": "a1",
-   "start": 459.53,
-   "natural": 4.12,
+   "start": 436.31,
+   "natural": 3.92,
    "measured": 2371
   },
   {
    "key": "a2",
-   "start": 464.22,
-   "natural": 3.83,
+   "start": 440.8,
+   "natural": 3.84,
    "measured": 2401
   },
   {
    "key": "a3",
-   "start": 468.62,
-   "natural": 3.4,
+   "start": 445.21,
+   "natural": 3.33,
    "measured": 2431
   },
   {
    "key": "a4",
-   "start": 472.59,
-   "natural": 5.72,
+   "start": 449.11,
+   "natural": 6.04,
    "measured": 2461
   },
   {
    "key": "a5",
-   "start": 478.88,
-   "natural": 6.67,
+   "start": 455.72,
+   "natural": 6.63,
    "measured": 2491
   },
   {
    "key": "a6",
-   "start": 486.47,
-   "natural": 4.22,
+   "start": 463.27,
+   "natural": 4.44,
    "measured": 2521
   },
   {
    "key": "a7",
-   "start": 491.26,
-   "natural": 3.35,
+   "start": 468.28,
+   "natural": 3.05,
    "measured": 2551
   },
   {
    "key": "a8",
-   "start": 495.18,
-   "natural": 5.35,
+   "start": 471.9,
+   "natural": 5.21,
    "measured": 2581
   },
   {
    "key": "a9",
-   "start": 501.45,
-   "natural": 6.35,
+   "start": 478.03,
+   "natural": 5.97,
    "measured": 2611
   },
   {
    "key": "a10",
-   "start": 508.37,
-   "natural": 3.67,
+   "start": 484.57,
+   "natural": 3.57,
    "measured": 2641
   },
   {
    "key": "w1",
-   "start": 516.36,
-   "natural": 2.67,
+   "start": 492.46,
+   "natural": 2.17,
    "measured": 2671
   },
   {
    "key": "w2",
-   "start": 519.6,
-   "natural": 4.8,
+   "start": 495.2,
+   "natural": 4.68,
    "measured": 2701
   },
   {
    "key": "w3",
-   "start": 524.97,
-   "natural": 5.3,
+   "start": 500.45,
+   "natural": 4.9,
    "measured": 2731
   },
   {
    "key": "w4",
-   "start": 530.84,
-   "natural": 5.62,
+   "start": 505.92,
+   "natural": 5.01,
    "measured": 2761
   },
   {
    "key": "w5",
-   "start": 537.38,
-   "natural": 4.22,
+   "start": 511.85,
+   "natural": 4.02,
    "measured": 2791
   },
   {
    "key": "w6",
-   "start": 542.17,
-   "natural": 5.58,
+   "start": 516.44,
+   "natural": 5.37,
    "measured": 2821
   },
   {
    "key": "w7",
-   "start": 548.32,
-   "natural": 1.85,
+   "start": 522.38,
+   "natural": 1.77,
    "measured": 2851
   },
   {
    "key": "w8",
-   "start": 552.34,
-   "natural": 6.1,
+   "start": 526.32,
+   "natural": 5.61,
    "measured": 2881
   },
   {
    "key": "w9",
-   "start": 559.36,
-   "natural": 7.92,
+   "start": 532.85,
+   "natural": 6.88,
    "measured": 2911
   },
   {
    "key": "w10",
-   "start": 567.85,
-   "natural": 7.65,
+   "start": 540.3,
+   "natural": 6.45,
    "measured": 2941
   },
   {
    "key": "z1",
-   "start": 577.22,
-   "natural": 2.48,
+   "start": 548.47,
+   "natural": 2.66,
    "measured": 2971
   },
   {
    "key": "z2",
-   "start": 580.27,
-   "natural": 4.85,
+   "start": 551.7,
+   "natural": 4.66,
    "measured": 3001
   },
   {
    "key": "z3",
-   "start": 585.69,
-   "natural": 3.38,
+   "start": 556.93,
+   "natural": 3.08,
    "measured": 3031
   },
   {
    "key": "z4",
-   "start": 589.64,
-   "natural": 4.97,
+   "start": 560.58,
+   "natural": 4.36,
    "measured": 3061
   },
   {
    "key": "z5",
-   "start": 595.18,
-   "natural": 3.92,
+   "start": 565.51,
+   "natural": 3.57,
    "measured": 3091
   },
   {
    "key": "z6",
-   "start": 599.67,
-   "natural": 4.45,
+   "start": 569.65,
+   "natural": 4.3,
    "measured": 3121
   },
   {
    "key": "z7",
-   "start": 605.04,
-   "natural": 2.45,
+   "start": 574.87,
+   "natural": 2.3,
    "measured": 3151
   }
  ]

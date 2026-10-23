@@ -1,0 +1,391 @@
+1
+00:00:01,000 --> 00:00:05,890
+Right now, you are moving around the Sun at about 30 km/s.
+
+2
+00:00:05,970 --> 00:00:13,990
+But not at a steady speed: in early January, Earth moves about 1 km/s faster than in early July.
+
+3
+00:00:14,070 --> 00:00:20,440
+The rule behind that was found more than 400 years ago, in old records of the planet Mars.
+
+4
+00:00:20,520 --> 00:00:26,390
+It began with an error of eight arcminutes: about a quarter of the width of the Moon.
+
+5
+00:00:26,470 --> 00:00:32,540
+This is the story of Kepler's second law: equal areas in equal times.
+
+6
+00:00:37,340 --> 00:00:43,730
+In the late 1500s, the best measurements of the sky came from a Danish nobleman, Tycho Brahe.
+
+7
+00:00:43,810 --> 00:00:50,720
+From 1576, on the island of Hven, he built Uraniborg, an observatory funded by the king.
+
+8
+00:00:50,800 --> 00:00:56,570
+There were no telescopes yet. Tycho measured by eye, with large quadrants and sextants.
+
+9
+00:00:56,650 --> 00:01:01,290
+His positions came close to one arcminute: a sixtieth of a degree.
+
+10
+00:01:01,370 --> 00:01:06,010
+For scale, the full Moon is about 31 arcminutes across.
+
+11
+00:01:06,090 --> 00:01:12,140
+Year after year, he recorded where the planets were. Mars was among them.
+
+12
+00:01:12,640 --> 00:01:18,410
+In 1597 he left Denmark, and soon he was working for the emperor, in Prague.
+
+13
+00:01:18,490 --> 00:01:24,810
+In February 1600, a 28-year-old mathematician joined him: Johannes Kepler.
+
+14
+00:01:24,890 --> 00:01:30,280
+Tycho guarded his data closely. He set Kepler to work on one planet: Mars.
+
+15
+00:01:30,360 --> 00:01:39,050
+In October 1601, Tycho died after a short illness. Two days later, Kepler took over as imperial mathematician.
+
+16
+00:01:39,130 --> 00:01:47,300
+Tycho's heirs owned the observations, which would delay Kepler's book for years. But he had the Mars data.
+
+17
+00:01:49,900 --> 00:01:57,690
+Astronomers had long modelled the planets with circles. Even Copernicus, who put the Sun near the middle, used circles.
+
+18
+00:01:57,770 --> 00:02:04,430
+So Kepler began with a circle too, with the Sun off-centre, and a point from which the motion looks steady.
+
+19
+00:02:04,510 --> 00:02:09,780
+Fitting it to Tycho's numbers meant one long calculation, over and over again.
+
+20
+00:02:09,860 --> 00:02:15,220
+"Take pity on me," he wrote, "who had to go through with at least seventy repetitions of it."
+
+21
+00:02:15,300 --> 00:02:19,820
+The model matched Tycho's positions of Mars to within two arcminutes.
+
+22
+00:02:19,900 --> 00:02:24,470
+But at other points in the orbit, it missed by up to eight.
+
+23
+00:02:24,550 --> 00:02:29,390
+Tycho's data was far too accurate for an error that size to be ignored.
+
+24
+00:02:29,470 --> 00:02:36,860
+"These eight minutes alone," Kepler wrote, "will lead us along a path to the reform of the whole of Astronomy."
+
+25
+00:02:36,940 --> 00:02:43,490
+Something in his model was wrong: the circle, or the way the planet moved along it.
+
+26
+00:02:46,090 --> 00:02:53,380
+Kepler wanted a physical cause. He imagined a force from the Sun, pushing the planets round, weaker with distance.
+
+27
+00:02:53,460 --> 00:02:59,700
+So, he reasoned, a planet's speed falls as its distance grows: twice as far, half as fast.
+
+28
+00:02:59,780 --> 00:03:05,470
+To find where the planet would be, he'd have to add up its distance from the Sun all along the way.
+
+29
+00:03:05,550 --> 00:03:11,540
+By late 1602 he had a shortcut: measure the area swept by the line from the Sun.
+
+30
+00:03:11,620 --> 00:03:19,410
+Picture each day's motion as a thin triangle: its height is the distance from the Sun, its base the distance travelled.
+
+31
+00:03:19,490 --> 00:03:25,860
+If speed falls as distance grows, every day's triangle has the same area.
+
+32
+00:03:25,960 --> 00:03:32,050
+Equal areas in equal times. Oddly, Kepler found this, the second law, before the first.
+
+33
+00:03:32,130 --> 00:03:39,800
+His speed rule only works for orbits that are nearly circles. The area rule works for every orbit.
+
+34
+00:03:42,400 --> 00:03:46,940
+Now he needed the shape. He tried egg-shaped ovals, again and again.
+
+35
+00:03:47,020 --> 00:03:53,060
+After about forty failed attempts, in late 1604, he tried an ellipse.
+
+36
+00:03:53,140 --> 00:03:57,800
+He had thought it too simple: surely earlier astronomers wouldn't have missed it.
+
+37
+00:03:57,880 --> 00:04:04,620
+It fitted. He'd even had the formula earlier, without seeing it. "Ah, what a foolish bird I have been!"
+
+38
+00:04:04,700 --> 00:04:11,990
+An ellipse has two special points, its foci. The Sun sits at one. The other is empty.
+
+39
+00:04:12,070 --> 00:04:17,730
+That's Kepler's first law: a planet's orbit is an ellipse, with the Sun at one focus.
+
+40
+00:04:17,810 --> 00:04:23,580
+Mars's ellipse is barely squashed: it's less than half a percent narrower than it is long.
+
+41
+00:04:23,660 --> 00:04:29,200
+But the Sun is well off-centre: more than 9% of the way from the middle to the end.
+
+42
+00:04:29,280 --> 00:04:35,820
+Of the planets, only Mercury's orbit is more stretched. Kepler was lucky that his planet was Mars.
+
+43
+00:04:35,900 --> 00:04:42,670
+In 1609 he published it in a book: Astronomia nova, the New Astronomy.
+
+44
+00:04:45,270 --> 00:04:50,590
+So where is a planet on a given day? Kepler turned the area rule into an equation.
+
+45
+00:04:50,670 --> 00:04:55,990
+Time gives an angle, M, that ticks round steadily, like the hand of a clock.
+
+46
+00:04:56,070 --> 00:05:03,260
+The planet's real place is set by another angle, E. And the little e says how stretched the ellipse is.
+
+47
+00:05:03,340 --> 00:05:09,130
+Kepler's equation: M equals E, minus e times the sine of E.
+
+48
+00:05:09,210 --> 00:05:16,420
+No algebra can solve it for E. So in 1621 Kepler suggested guessing, then improving the guess.
+
+49
+00:05:16,500 --> 00:05:24,390
+For Mars, start with E equal to M, put each answer back in, and in four rounds the digits stop changing.
+
+50
+00:05:24,690 --> 00:05:31,100
+This animation solves it for every frame. Here's a stretched orbit, so the effect is easy to see.
+
+51
+00:05:31,180 --> 00:05:38,480
+Split one trip around into twelve equal stretches of time, and shade the area each one sweeps.
+
+52
+00:05:39,930 --> 00:05:44,840
+Near the Sun, the wedges are short and fat. Far away, they're long and thin.
+
+53
+00:05:44,920 --> 00:05:50,560
+Measure them, and each one is a twelfth of the ellipse: 8.3%.
+
+54
+00:05:50,640 --> 00:05:54,480
+But the distance travelled in each stretch is wildly different.
+
+55
+00:05:54,560 --> 00:06:03,480
+On this orbit, the planet moves four times faster at its closest point, perihelion, than at aphelion, its farthest.
+
+56
+00:06:06,880 --> 00:06:10,640
+Earth's orbit is much rounder. But the rule still holds.
+
+57
+00:06:10,720 --> 00:06:18,860
+Earth passes perihelion around 3 January, 147.1 million km from the Sun
+
+58
+00:06:18,940 --> 00:06:25,030
+and aphelion around 4 July, at 152.1 million km.
+
+59
+00:06:25,110 --> 00:06:34,480
+So it's fastest in January, about 30.3 km/s, and slowest in July, about 29.3.
+
+60
+00:06:34,560 --> 00:06:41,720
+You can see it on the calendar. From the March equinox to the September one takes about 186 days.
+
+61
+00:06:41,800 --> 00:06:49,570
+The other half of the year takes only about 179, because Earth passes perihelion then, moving faster.
+
+62
+00:06:49,650 --> 00:06:56,020
+So in the north, spring and summer together last about a week longer than autumn and winter.
+
+63
+00:06:56,100 --> 00:07:03,760
+Mars swings more: about 26.5 km/s near the Sun, and about 22 at the far end.
+
+64
+00:07:03,840 --> 00:07:12,800
+Comets show it best. Halley's Comet dips to about 0.6 AU from the Sun, then swings out to about 35.
+
+65
+00:07:12,880 --> 00:07:17,200
+One AU is Earth's average distance from the Sun.
+
+66
+00:07:17,280 --> 00:07:24,940
+At the far end, in December 2023, it was crawling along at just 0.91 km/s.
+
+67
+00:07:25,020 --> 00:07:34,580
+At the two ends, speed times distance is the same. So near the Sun, it races along at about 54 km/s.
+
+68
+00:07:34,660 --> 00:07:44,630
+Of its roughly 75-year orbit, it spends only about two years closer to the Sun than Jupiter. It's due back in 2061.
+
+69
+00:07:47,830 --> 00:07:52,940
+Kepler wasn't done. He wanted a rule that linked all the planets, not just one.
+
+70
+00:07:53,020 --> 00:07:58,110
+By his own account, the answer came to him on 8 March 1618.
+
+71
+00:07:58,190 --> 00:08:05,330
+Square a planet's time to go round. Cube its distance from the Sun. The ratio is the same for every planet.
+
+72
+00:08:05,410 --> 00:08:12,120
+Jupiter takes 11.86 years to go round. Squared, that's about 141.
+
+73
+00:08:12,200 --> 00:08:19,540
+It's 5.2 AU from the Sun. Cubed, that's about 141 again.
+
+74
+00:08:19,620 --> 00:08:25,010
+With Kepler's own numbers, all six known planets agree to within about two percent.
+
+75
+00:08:25,090 --> 00:08:28,130
+"I first believed I was dreaming," he wrote.
+
+76
+00:08:28,210 --> 00:08:33,150
+This third law appeared in 1619, in his book The Harmony of the World.
+
+77
+00:08:33,230 --> 00:08:40,340
+There, Kepler heard music in the orbits. Earth's turning speed, seen from the Sun, varies by about a semitone.
+
+78
+00:08:40,420 --> 00:08:46,390
+"The Earth sings Mi, Fa, Mi," he wrote: you may hear "misery" and "famine" in the syllables.
+
+79
+00:08:46,470 --> 00:08:51,460
+In 1621, his Epitome gave the area law its modern form.
+
+80
+00:08:51,540 --> 00:08:57,640
+That year he also noted that the third law fits Jupiter's four bright moons.
+
+81
+00:09:00,240 --> 00:09:05,280
+But why should planets obey these rules at all? The answer came from Isaac Newton.
+
+82
+00:09:05,360 --> 00:09:12,770
+In 1684 he proved that anything pulled toward a fixed centre sweeps out equal areas in equal times.
+
+83
+00:09:12,850 --> 00:09:20,640
+His proof, in the Principia of 1687, is beautifully simple. Imagine the pull comes in short, sharp tugs.
+
+84
+00:09:20,720 --> 00:09:26,110
+With no pull, the planet goes straight, covering equal distances in equal times.
+
+85
+00:09:26,190 --> 00:09:32,080
+Each step makes a triangle with the Sun. Same base, same height: same area.
+
+86
+00:09:32,160 --> 00:09:37,570
+Now a tug toward the Sun bends the path. But it pulls only along the line to the Sun.
+
+87
+00:09:37,650 --> 00:09:44,640
+So the new triangle keeps the same base and the same height as before. Same area again.
+
+88
+00:09:44,720 --> 00:09:52,290
+Make the tugs smaller and more frequent, and the path becomes a smooth orbit. The areas stay equal.
+
+89
+00:09:52,990 --> 00:09:58,730
+Notice what the proof never needed: how strong the pull is. Any pull toward a centre will do.
+
+90
+00:09:58,810 --> 00:10:02,680
+Today we call this conservation of angular momentum.
+
+91
+00:10:02,760 --> 00:10:10,630
+The ellipse and the third law need more: a pull that weakens with the square of the distance, as gravity does.
+
+92
+00:10:13,830 --> 00:10:21,040
+Kepler never called these laws. That word first appeared in print in 1738, in a book by Voltaire.
+
+93
+00:10:21,120 --> 00:10:24,940
+The tidy set of three came later still, in 1804.
+
+94
+00:10:25,020 --> 00:10:29,490
+One: a planet's orbit is an ellipse, with the Sun at one focus.
+
+95
+00:10:29,570 --> 00:10:34,010
+Two: the line from the Sun sweeps equal areas in equal times.
+
+96
+00:10:34,090 --> 00:10:38,580
+Three: the period squared goes with the distance cubed.
+
+97
+00:10:38,660 --> 00:10:42,270
+All because Kepler refused to ignore eight arcminutes.
+
+98
+00:10:42,350 --> 00:10:51,040
+So this January, when it's coldest in the north, remember: Earth is at its closest to the Sun, and moving fastest.
