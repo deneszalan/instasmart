@@ -37,7 +37,7 @@ export const LINES = [
   // ---- cold open
   { key: 'o1', gap: 1.0, text: 'Around 240 BC, a scholar in Egypt worked out the size of the *whole Earth*.', say: 'Around two hundred and forty BC, a scholar in Egypt worked out the size of the whole Earth.' },
   { key: 'o2', text: 'He didn’t travel round it. He used a ~shadow~, a ~distance~ and one idea from geometry.' },
-  { key: 'o3', text: 'His answer: about *250,000 stadia*.', say: 'His answer was about two hundred and fifty thousand stadia.' },
+  { key: 'o3', text: 'His answer was about *250,000 stadia*.', say: 'His answer was about two hundred and fifty thousand stadia.' },
   { key: 'o4', gap: 0.7, text: 'And even today, we can’t say exactly how close he came.' },
   { key: 'o5', text: 'This is the story of *Eratosthenes*, and of a number we still argue about.' },
 
@@ -48,11 +48,11 @@ export const LINES = [
   { key: 'l4', text: 'The post also made him tutor to the future king.' },
   { key: 'l5', text: 'He wrote about mathematics, geography, poetry, history and the stars.' },
   { key: 'l6', text: 'Admirers called him *Pentathlos*, like an athlete who competes in five events.' },
-  { key: 'l7', text: 'Critics called him ~Beta~: second best at everything.' },
+  { key: 'l7', text: 'Critics called him ~Beta~, meaning second best at everything.' },
   { key: 'l8', gap: 0.8, text: 'One thing he didn’t need to prove was that the Earth is round.' },
   { key: 'l9', text: 'About a century earlier, Aristotle had pointed to the Earth’s round shadow on the Moon during an eclipse.' },
   { key: 'l10', text: 'And he noted that some stars seen in Egypt can’t be seen from further north.' },
-  { key: 'l11', text: 'Aristotle even reported a size for the Earth: *400,000 stadia*.', say: 'Aristotle even reported a size for the Earth: four hundred thousand stadia.' },
+  { key: 'l11', text: 'Aristotle even reported a size for the Earth, which was *400,000 stadia*.', say: 'Aristotle even reported a size for the Earth, which was four hundred thousand stadia.' },
   { key: 'l12', text: 'Eratosthenes found a way to measure it.' },
 
   // ---- 2 noon at Syene
@@ -69,22 +69,22 @@ export const LINES = [
 
   // ---- 3 the bowl at Alexandria
   { key: 'b1', gap: 4.2, chapter: 'The bowl at Alexandria', text: 'So how big was the shadow at Alexandria?' },
-  { key: 'b2', text: 'According to Cleomedes, the shadow was read on a *scaphe*: a sundial shaped like a bowl.', say: 'According to Cleomedes, the shadow was read on a scaphe: a sundial shaped like a bowl.' },
+  { key: 'b2', text: 'According to Cleomedes, the shadow was read on a *scaphe*, which is a sundial shaped like a bowl.', say: 'According to Cleomedes, the shadow was read on a scaphe, which is a sundial shaped like a bowl.' },
   { key: 'b3', text: 'A pointer stands at the bottom, and its tip sits at the centre of the bowl’s curve.' },
   { key: 'b4', text: 'At noon, the tip’s shadow falls on the inside of the bowl.' },
   { key: 'b5', text: 'The arc from the foot of the pointer to the end of the shadow measures how far the Sun is from overhead.' },
   { key: 'b6', gap: 0.8, text: 'At Alexandria, that arc was *one fiftieth* of a full circle.' },
   { key: 'b7', text: 'In degrees, that’s ~7.2°~.', say: 'In degrees, that’s seven point two.' },
-  { key: 'b8', text: 'It’s a small angle: a stick casts a noon shadow only about one eighth as long as itself.' },
+  { key: 'b8', text: 'It’s a small angle, so a stick casts a noon shadow only about one eighth as long as itself.' },
   { key: 'b9', text: 'At Syene, at the same noon, the shadow was nothing at all.' },
 
   // ---- 4 parallel rays
-  { key: 'p1', gap: 4.2, chapter: 'Parallel rays', text: 'Now the key idea. The Sun is so far away that its rays arrive almost *parallel*.' },
+  { key: 'p1', gap: 4.2, chapter: 'Parallel rays', text: 'Now here’s the key idea. The Sun is so far away that its rays arrive almost *parallel*.' },
   { key: 'p2', text: 'Draw the Earth, with Syene at the top and Alexandria a little way round.' },
   { key: 'p3', text: 'At Syene, a ray comes straight down the stick. Extend that stick downwards, and it reaches the Earth’s centre.' },
   { key: 'p4', text: 'At Alexandria, extend the stick too. It also points to the centre.' },
   { key: 'p5', text: 'There, the ray meets the stick at *7.2°*.', say: 'There, the ray meets the stick at seven point two degrees.' },
-  { key: 'p6', text: 'The Alexandria stick line crosses two parallel lines: the ray at Alexandria, and the ray down the stick at Syene.' },
+  { key: 'p6', text: 'The Alexandria stick line crosses two parallel lines, which are the ray at Alexandria and the ray down the stick at Syene.' },
   { key: 'p7', text: 'When a line crosses two parallel lines, the ~alternate angles~ are equal.' },
   { key: 'p8', text: 'So the angle at the centre of the Earth, between the two cities, is also *7.2°*.', say: 'So the angle at the centre of the Earth, between the two cities, is also seven point two degrees.' },
   { key: 'p9', text: 'Syene and Alexandria are *one fiftieth* of the way round the Earth.' },
@@ -94,24 +94,24 @@ export const LINES = [
   { key: 'f1', gap: 4.2, chapter: 'Five thousand stadia', text: 'Now he needed the distance between the two cities.' },
   { key: 'f2', text: 'Cleomedes gives it as *5,000 stadia*.', say: 'Cleomedes gives it as five thousand stadia.' },
   { key: 'f3', text: 'How was it measured? We don’t really know.' },
-  { key: 'f4', text: 'Egypt had *bematists*: professional pacers who measured land for farming and for taxes.', say: 'Egypt had bematists: professional pacers who measured land for farming and for taxes.' },
+  { key: 'f4', text: 'Egypt had *bematists*. These were professional pacers who measured land for farming and for taxes.', say: 'Egypt had bematists. These were professional pacers who measured land for farming and for taxes.' },
   { key: 'f5', text: 'Some historians think his distance came from their surveys.' },
   { key: 'f6', text: 'A Latin writer, some 650 years later, says royal surveyors measured it.', say: 'A Latin writer, some six hundred and fifty years later, says royal surveyors measured it.' },
-  { key: 'f7', gap: 0.8, text: 'Either way: if 5,000 stadia is one fiftieth of the way round, the whole way round is fifty times as far.', say: 'Either way: if five thousand stadia is one fiftieth of the way round, the whole way round is fifty times as far.' },
-  { key: 'f8', text: 'Fifty times 5,000: *250,000 stadia*.', say: 'Fifty times five thousand is two hundred and fifty thousand stadia.' },
-  { key: 'f9', text: 'A shadow, a distance, and the size of the whole Earth.' },
+  { key: 'f7', gap: 0.8, text: 'Either way, if 5,000 stadia is one fiftieth of the way round, the whole way round is fifty times as far.', say: 'Either way, if five thousand stadia is one fiftieth of the way round, the whole way round is fifty times as far.' },
+  { key: 'f8', text: 'Fifty times 5,000 is *250,000 stadia*.', say: 'Fifty times five thousand is two hundred and fifty thousand stadia.' },
+  { key: 'f9', text: 'From a shadow and a distance, he had the size of the whole Earth.' },
 
   // ---- 6 second-hand
   { key: 'c1', gap: 4.2, chapter: 'Second-hand', text: 'That’s the story as it’s usually told. But where does it come from?' },
   { key: 'c2', text: 'Eratosthenes wrote it up in a book, *On the Measure of the Earth*. The book is lost.' },
   { key: 'c3', text: 'Our main account comes from *Cleomedes*, who wrote a basic astronomy textbook.' },
-  { key: 'c4', text: 'Nobody knows when he wrote it: somewhere between the first century BC and about AD 400.', say: 'Nobody knows when he wrote it: somewhere between the first century BC and about four hundred AD.' },
+  { key: 'c4', text: 'Nobody knows when he wrote it, but it was somewhere between the first century BC and about AD 400.', say: 'Nobody knows when he wrote it, but it was somewhere between the first century BC and about four hundred AD.' },
   { key: 'c5', text: 'And Cleomedes says himself that his version is ~simplified~.' },
   { key: 'c6', text: 'His account talks about sundials, not the well. The well comes from other writers, like the geographer Strabo.' },
   { key: 'c7', gap: 0.8, text: 'There’s even a second number.' },
   { key: 'c8', text: 'The Roman writer Pliny the Elder gives Eratosthenes’ result as *252,000 stadia*.', say: 'The Roman writer Pliny the Elder gives Eratosthenes’ result as two hundred and fifty-two thousand stadia.' },
   { key: 'c9', text: 'Why the extra 2,000? Historians disagree.', say: 'Why the extra two thousand? Historians disagree.' },
-  { key: 'c10', text: '252,000 divides evenly by every whole number from one to ten. 250,000 doesn’t.', say: 'Two hundred and fifty-two thousand divides evenly by every whole number from one to ten. Two hundred and fifty thousand doesn’t.' },
+  { key: 'c10', text: '252,000 divides evenly by every whole number from one to ten, but 250,000 doesn’t.', say: 'Two hundred and fifty-two thousand divides evenly by every whole number from one to ten, but two hundred and fifty thousand doesn’t.' },
   { key: 'c11', text: 'Split into 360 degrees, it gives a neat *700 stadia* for each one.', say: 'Split into three hundred and sixty degrees, it gives a neat seven hundred stadia for each one.' },
   { key: 'c12', text: 'Some think he adjusted his figure to make calculations easier.' },
   { key: 'c13', text: 'Others think he defined a stadion of his own, from the size of the Earth, as Pliny’s wording suggests.' },
@@ -127,17 +127,17 @@ export const LINES = [
   { key: 's8', text: 'But take Pliny’s 252,000 and a short stadion, 155 to 160 metres, and he’s within *2.4%*.', say: 'But take Pliny’s two hundred and fifty-two thousand and a short stadion, a hundred and fifty-five to a hundred and sixty metres, and he’s within two point four percent.' },
   { key: 's9', text: 'One study found about 157.7 metres from ancient distances, but critics say it’s full of errors.', say: 'One study found about a hundred and fifty-seven point seven metres from ancient distances, but critics say it’s full of errors.' },
   { key: 's10', text: 'So the famous claim that he was within 2% depends on choosing a short stadion.', say: 'So the famous claim that he was within two percent depends on choosing a short stadion.' },
-  { key: 's11', gap: 0.8, text: 'The method itself is sound: measure the angle and the distance accurately, and it gives Earth’s true size.' },
+  { key: 's11', gap: 0.8, text: 'The method itself is sound. If you measure the angle and the distance accurately, it gives Earth’s true size.' },
 
   // ---- 8 the simplifications
   { key: 'a1', gap: 4.2, chapter: 'The simplifications', text: 'Cleomedes’ version also rests on simplifications. Let’s check them.' },
-  { key: 'a2', text: 'First, parallel rays. That one holds very well, as we’ve seen.' },
-  { key: 'a3', text: 'Second, that Syene sits exactly on the *Tropic of Cancer*.' },
+  { key: 'a2', text: 'First, take the parallel rays. That one holds very well, as we’ve seen.' },
+  { key: 'a3', text: 'Second, it assumes that Syene sits exactly on the *Tropic of Cancer*.' },
   { key: 'a4', text: 'In fact it’s a little north of it, by less than a degree. Even there, the noon Sun wasn’t quite overhead.' },
   { key: 'a5', text: 'The tropic drifts, too. In Eratosthenes’ time it lay about 0.3 degrees further north than today.', say: 'The tropic drifts, too. In Eratosthenes’ time it lay about three tenths of a degree further north than today.' },
-  { key: 'a6', gap: 0.8, text: 'Third, that Syene lies due south of Alexandria, on the same *meridian*.' },
+  { key: 'a6', gap: 0.8, text: 'Third, it assumes that Syene lies due south of Alexandria, on the same *meridian*.' },
   { key: 'a7', text: 'In fact it’s about ~3 degrees~ of longitude further east.', say: 'In fact it’s about three degrees of longitude further east.' },
-  { key: 'a8', text: 'And the Earth isn’t a perfect sphere: it’s slightly flattened, by about 0.3%.', say: 'And the Earth isn’t a perfect sphere: it’s slightly flattened, by about three tenths of a percent.' },
+  { key: 'a8', text: 'And the Earth isn’t a perfect sphere, but slightly flattened, by about 0.3%.', say: 'And the Earth isn’t a perfect sphere, but slightly flattened, by about three tenths of a percent.' },
   { key: 'a9', gap: 0.8, text: 'Still, the angle came out well. The two cities’ latitudes really differ by about *7.1°*.', say: 'Still, the angle came out well. The two cities’ latitudes really differ by about seven point one degrees.' },
   { key: 'a10', text: 'What we can’t check is the distance, because we don’t know his stadion.' },
 
@@ -155,12 +155,12 @@ export const LINES = [
 
   // ---- the whole idea
   { key: 'z1', gap: 1.6, text: 'So here’s the whole idea, in one picture.' },
-  { key: 'z2', text: 'No shadow at Syene. A shadow of *one fiftieth* of a circle at Alexandria.' },
+  { key: 'z2', text: 'There’s no shadow at Syene, and a shadow of *one fiftieth* of a circle at Alexandria.' },
   { key: 'z3', text: 'Parallel rays carry that angle to the centre of the Earth.' },
-  { key: 'z4', text: 'Fifty times *5,000 stadia*: *250,000 stadia* round.', say: 'Fifty times five thousand stadia: two hundred and fifty thousand stadia round.' },
+  { key: 'z4', text: 'Fifty times *5,000 stadia* gives *250,000 stadia* round.', say: 'Fifty times five thousand stadia gives two hundred and fifty thousand stadia round.' },
   { key: 'z5', text: 'How close was he? That depends on a unit we still can’t pin down.' },
   { key: 'z6', text: 'But the idea was right, and it measured the whole Earth from two cities in Egypt.' },
-  { key: 'z7', gap: 0.8, text: 'Not bad for a man his critics called ~Beta~.' },
+  { key: 'z7', gap: 0.8, text: 'That’s not bad for a man his critics called ~Beta~.' },
 ];
 
 export const HOLD = { o5: 3.4, m3: 1.0, b7: 0.6, p9: 1.2, f8: 2.2, c10: 1.0, s8: 0.8, w7: 1.6, z7: 9.0 };
