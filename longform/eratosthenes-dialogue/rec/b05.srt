@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: The Roman writer Pliny the Elder gives Eratosthenes' result as two hundred and fifty-two thousand stadia.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: Why the extra 2,000? Historians disagree.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: Two hundred and fifty-two thousand divides evenly by every whole number from one to ten. Two hundred and fifty thousand doesn't.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERB: And split into 360 degrees, it gives a neat 700 stadia for each one.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: So some think he adjusted his figure, to make calculations easier.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERB: Others think he defined a stadion of his own, from the size of the Earth, as Pliny's wording suggests.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: Which would make the unit itself part of the puzzle.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERA: So how good was his answer? To check, we need his stadia in kilometres.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERB: A stadion was 600 feet. But a foot wasn't the same everywhere in the Greek world.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERA: Historians' estimates for the stadion run from about a hundred and fifty to two hundred and ten metres.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERB: That's a spread of 40%.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERB: And the real distance round the Earth, through the poles, is about 40,008 kilometres.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: So here's what that range of stadia does to his two hundred and fifty thousand.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERB: With a stadion of about 176 metres, he's about 10% too big.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: With about a hundred and eighty-five metres, he's about fifteen percent too big.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: But take Pliny's 252,000 and a short stadion, 155 to 160 metres, and he's within 2.4%.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: So is the short stadion the right one?
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERB: One study found about 157.7 metres from ancient distances, but critics say it's full of errors.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERA: So the famous claim that he was within two percent depends on choosing a short stadion.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERB: That's a lot to hang on one unit.

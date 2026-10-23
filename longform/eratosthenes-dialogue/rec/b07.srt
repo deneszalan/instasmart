@@ -1,0 +1,51 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: And what's left are the prime numbers.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: Though our earliest record of the sieve was written centuries later, and he may have named it rather than invented it.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: Later writers used smaller figures for the Earth. Ptolemy's Geography used just a hundred and eighty thousand stadia.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERB: And some seventeen centuries after Eratosthenes, Columbus read his work, but chose to believe in an Earth about a quarter smaller.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: And a smaller Earth made the voyage west to Asia look shorter.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERB: So let's put the whole idea in one picture.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: No shadow at Syene. A shadow of one fiftieth of a circle at Alexandria.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERB: Parallel rays carry that angle to the centre of the Earth.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: Fifty times five thousand stadia: two hundred and fifty thousand stadia round.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERB: How close was he? That depends on a unit we still can't pin down.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: But the idea was right, and it measured the whole Earth from two cities in Egypt.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERB: With a stick, a bowl and a good argument.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: Not bad for a man his critics called Beta.

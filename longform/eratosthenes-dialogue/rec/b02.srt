@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: Aristotle even reported a size for the Earth: four hundred thousand stadia.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: Eratosthenes found a way to actually measure it.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: Far up the Nile, on Egypt's southern frontier, lay the town of Syene. Today it's Aswan.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERB: And Syene was known for something that happened there once a year.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: At noon on the summer solstice, the longest day of the year, upright sticks there cast no shadow.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERB: None at all?
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: None. Later writers also tell of a well there, where the noon sunlight reached all the way down to the water.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERB: Because the Sun was standing straight overhead.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: Syene was taken to lie on the Tropic of Cancer, the furthest north the Sun can ever be overhead.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERB: But at Alexandria, on the coast, about 5,000 stadia further north, sticks still cast shadows at that noon.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: And that difference is the whole clue.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERA: If the Earth were flat, and the Sun far away, sticks in both places would cast the same shadow.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERB: They don't. So the ground between them has to curve.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERA: And how much it curves over that distance tells you the size of the whole Earth.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERB: So he needs two numbers: how different the shadows are, and how far apart the cities are.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: So how big was the shadow at Alexandria?
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: According to Cleomedes, it was read on a scaphe: a sundial shaped like a bowl.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERB: A bowl, not just a stick in the ground?
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERA: A bowl. A pointer stands at the bottom, and its tip sits right at the centre of the bowl's curve.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERB: So at noon, the tip's shadow falls on the inside of the bowl.

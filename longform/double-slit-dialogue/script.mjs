@@ -27,7 +27,6 @@ export const LINES = [
 
   // ---- 1 waves or particles
   { key: 'w1', who: 'B', gap: 4.2, chapter: 'Waves or particles?', text: 'People argued for centuries about what light actually is.' },
-  { key: 'x3', who: 'A', text: 'And the two sides of that argument go back more than three hundred years.' },
   { key: 'w2', who: 'A', text: 'In his *Treatise on Light* of 1690, Christiaan Huygens described light as a ~wave~.', say: 'In his Treatise on Light, of sixteen ninety, Christiaan Huygens described light as a wave.' },
   { key: 'w3', who: 'B', text: 'And Isaac Newton’s *Opticks*, from 1704, leaned toward *particles*.', say: 'And Isaac Newton’s Opticks, from 1704, leaned toward particles.' },
   { key: 'w4', who: 'A', text: 'In later editions he asked: “Are not the Rays of Light very small Bodies emitted from shining Substances?”', say: 'In later editions he asked: are not the rays of light very small bodies, emitted from shining substances?' },
@@ -35,7 +34,6 @@ export const LINES = [
   { key: 'w5', who: 'A', text: 'And Newton’s reputation was so great that, through the 18th century, the particle view held a wide lead.', say: 'And Newton’s reputation was so great that, through the eighteenth century, the particle view held a wide lead.' },
   { key: 'w6', who: 'B', gap: 0.8, text: 'So how would you even tell a wave from a stream of particles?' },
   { key: 'w7', who: 'A', text: 'Send particles through two slits, and you’d expect two bright bands, one behind each slit.' },
-  { key: 'x5', who: 'B', text: 'Like spray paint through a stencil.' },
   { key: 'w8', who: 'A', text: 'But waves can do something particles can’t: when two meet, they can *add up*, or ~cancel out~.' },
   { key: 'x6', who: 'B', gap: 0.3, text: 'Cancel out? Two waves can add up to nothing?' },
   { key: 'w9', who: 'A', text: 'Crest on crest makes a bigger wave; crest on trough makes nothing at all. That’s *interference*.', say: 'Crest on crest makes a bigger wave; crest on trough makes nothing at all. That’s interference.' },
@@ -65,8 +63,7 @@ export const LINES = [
   { key: 'x14', who: 'B', gap: 0.3, text: 'Seemed.' },
 
   // ---- 3 reading the stripes
-  { key: 'r1', who: 'A', gap: 4.2, chapter: 'Reading the stripes', text: 'Let’s look at how two slits make so many stripes.' },
-  { key: 'x15', who: 'B', text: 'Not just two bright bands, but a whole row of them.' },
+  { key: 'r1', who: 'A', gap: 4.2, chapter: 'Reading the stripes', text: 'So how do two slits make a whole row of stripes, not just two bands?' },
   { key: 'r2', who: 'A', text: 'Each slit acts as a new source, sending out waves that spread in circles.' },
   { key: 'r3', who: 'B', text: 'And to reach a point on the screen, one wave usually travels a little farther than the other.' },
   { key: 'r4', who: 'A', text: 'If that extra distance is a whole number of wavelengths, crests arrive together, and the spot is *bright*.' },
@@ -149,11 +146,11 @@ export const LINES = [
   { key: 'k5', who: 'B', text: 'The screen now shows two single-slit patterns, simply added together, with no interference.' },
   { key: 'k6', who: 'A', gap: 0.8, text: 'Why? To learn the path, the detector has to interact with the particle.' },
   { key: 'k7', who: 'B', text: 'And that leaves a record of which way it went, so the two paths can no longer interfere.' },
-  { key: 'x35', who: 'A', text: 'Which is where the popular version of the story goes wrong.' },
+  { key: 'x35', who: 'A', text: 'Which is where the popular story goes wrong.' },
   { key: 'k8', who: 'A', text: 'It’s often told as if a conscious observer changes the outcome, but the standard account needs no mind at all.' },
   { key: 'x36', who: 'B', gap: 0.3, text: 'So no one has to be watching?' },
   { key: 'k9', who: 'A', text: 'No: what matters is whether the path could be known, in principle, from anything left behind.' },
-  { key: 'k10', who: 'B', text: 'Here’s a lovely example: in 2004, a Vienna team laser-heated carbon-70 molecules, so they gave off heat radiation in flight.' },
+  { key: 'k10', who: 'B', text: 'In 2004, for example, a Vienna team laser-heated carbon-70 molecules, so they gave off heat radiation in flight.' },
   { key: 'k11', who: 'A', text: 'That radiation carried traces of each molecule’s path, and the hotter the molecules, the fainter the stripes.' },
   { key: 'k12', who: 'B', text: 'And nobody looked at that light; it only had to exist.' },
   { key: 'x37', who: 'A', gap: 0.3, text: 'The molecules gave themselves away.' },

@@ -1,15 +1,16 @@
 // Narration timing for a long-form video. The voice sets the pace: each line plays at its natural length.
 //   node timing.mjs measure <slug>   -> <slug>/measure.srt: one line every 30 s, so tts.sh records each line whole
+//                                       (and rec/b01.srt, …: the same in batches of 20, recorded one at a time)
 //   node timing.mjs build <slug>     -> <slug>/timeline.js (for the scene), subtitles.srt (YouTube captions), plan.json (for assemble.py)
 // <slug>/script.mjs exports LINES: [{ key, text, say?, gap?, chapter?, who? }] and optionally HOLD: { key: seconds after that line }.
 // A dialogue gives every line who: 'A' or 'B' (voice.txt then casts both: "A=m1 B=af_bella"); its captions mark each change of speaker with ">>".
-import { readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 const [mode, slug] = process.argv.slice(2);
 const dir = join(import.meta.dirname, slug);
 const { LINES, HOLD = {} } = await import(pathToFileURL(join(dir, 'script.mjs')).href);
-const GAP = 0.45, SPACING = 30;
+const GAP = 0.45, SPACING = 30, BATCH = 20;   // BATCH: keep in step with combine.py
 const plain = (s) => s.replace(/[*~^]/g, '').replace(/[“”]/g, '"').replace(/[‘’]/g, "'").replace(/…/g, '').replace(/\s+/g, ' ').trim();
 const spoken = (l) => plain(l.say ?? l.text).replace(/"/g, '');
 const stamp = (s) => { const ms = Math.round(s * 1000), p = (n, w = 2) => String(n).padStart(w, '0'); return `${p(Math.floor(ms / 3600000))}:${p(Math.floor(ms / 60000) % 60)}:${p(Math.floor(ms / 1000) % 60)},${p(ms % 1000, 3)}`; };
@@ -21,6 +22,13 @@ if (dialogue && LINES.some((l) => l.who !== 'A' && l.who !== 'B')) throw new Err
 const label = (l) => (dialogue ? `SPEAKER${l.who}: ` : '');
 if (mode === 'measure') {
   writeFileSync(join(dir, 'measure.srt'), srt(LINES.map((l, i) => [1 + i * SPACING, SPACING - 4 + i * SPACING, label(l) + spoken(l)])));
+  // The same lines in batches of BATCH (rec/b01.srt, …), each starting from 0, so tts.sh can record them one batch at a time.
+  mkdirSync(join(dir, 'rec'), { recursive: true });
+  for (const f of readdirSync(join(dir, 'rec'))) if (/^b\d+\.srt$/.test(f)) rmSync(join(dir, 'rec', f));
+  for (let b = 0; b * BATCH < LINES.length; b++) {
+    const part = LINES.slice(b * BATCH, (b + 1) * BATCH);
+    writeFileSync(join(dir, 'rec', `b${String(b + 1).padStart(2, '0')}.srt`), srt(part.map((l, j) => [1 + j * SPACING, SPACING - 4 + j * SPACING, label(l) + spoken(l)])));
+  }
   console.log(`${LINES.length} lines, about ${LINES.reduce((n, l) => n + spoken(l).split(' ').length, 0)} words`);
 } else if (mode === 'build') {
   const natural = [...readFileSync(join(dir, 'measure.log'), 'utf8').matchAll(/^#(\d+)(?:\s+SPEAKER\w+)?\s+\S+\s+([\d.]+)s ->/gm)].map((m) => Number(m[2]));
