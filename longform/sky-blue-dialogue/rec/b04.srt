@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: So why isn't the sky violet?
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: There isn't one single reason. It takes a few things together.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERB: Part of it is that sunlight holds less violet than blue to begin with.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERA: And some of the violet is absorbed high in the atmosphere, before it reaches us.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERB: Still, a rainbow shows that plenty of violet gets through. So the rest of the answer is in our eyes.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERA: For one thing, our eyes are less sensitive to violet.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERB: And we see colour with three kinds of cone cells, which respond most strongly to red, green and blue light.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERA: Skylight stimulates the red and green cones about equally, and the blue cones more strongly.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERB: And our vision reads that combination as a pale blue.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERA: So the colour isn't only out there in the sky.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERB: No. The blue of the sky is partly physics, and partly the way we see.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERB: Here's another one: if air turns sunlight blue, why are clouds white?
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: Clouds are made of water droplets, typically a few micrometres, or thousandths of a millimetre, across.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERB: That still sounds tiny.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: It is, but it's thousands of times bigger than an air molecule, and bigger than a wave of light.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: And particles that big don't follow Rayleigh's rule. They scatter all colours about equally.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: That's called Mee scattering, after the German physicist Gustav Mee.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERB: And if you scatter every colour alike, white light stays white.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERA: A thick cloud reflects seventy to ninety-five percent of the light that falls on it, across all colours.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERB: Which is why the tops of big clouds look so bright.

@@ -1,531 +1,531 @@
 1
-00:00:01,000 --> 00:00:07,460
+00:00:01,000 --> 00:00:06,040
 >> Around 240 BC, a scholar in Egypt worked out the size of the whole Earth.
 
 2
-00:00:07,540 --> 00:00:09,730
+00:00:06,120 --> 00:00:11,280
 >> Without ever going round it?
 
 3
-00:00:09,810 --> 00:00:15,600
+00:00:11,360 --> 00:00:16,350
 >> He didn't need to. He used a shadow, a distance and one idea from geometry.
 
 4
-00:00:15,680 --> 00:00:20,120
+00:00:16,430 --> 00:00:23,020
 >> And his answer was about 250,000 stadia.
 
 5
-00:00:20,200 --> 00:00:26,020
+00:00:23,100 --> 00:00:24,580
 >> Which sounds precise. But even today, we can't say exactly how close he came.
 
 6
-00:00:26,100 --> 00:00:32,540
+00:00:24,660 --> 00:00:29,580
 >> So this is the story of Eratosthenes, and of a number we still argue about.
 
 7
-00:00:38,540 --> 00:00:45,830
+00:00:35,580 --> 00:00:40,480
 Eratosthenes was born around 276 BC in Cyrene, a Greek city in what's now Libya.
 
 8
-00:00:45,910 --> 00:00:53,300
+00:00:40,560 --> 00:00:43,890
 >> He studied in Athens for years. Then the king of Egypt, Ptolemy the Third, called him to Alexandria.
 
 9
-00:00:53,380 --> 00:00:59,070
+00:00:43,970 --> 00:00:45,320
 >> To run the Library of Alexandria, one of the largest libraries of the ancient world.
 
 10
-00:00:59,150 --> 00:01:01,120
+00:00:45,400 --> 00:00:49,700
 >> Quite a job offer.
 
 11
-00:01:01,200 --> 00:01:05,590
+00:00:49,780 --> 00:00:51,970
 And the post came with another duty: tutor to the future king.
 
 12
-00:01:05,670 --> 00:01:10,740
+00:00:52,050 --> 00:00:56,240
 >> He wrote about mathematics, geography, poetry, history and the stars.
 
 13
-00:01:10,820 --> 00:01:16,780
+00:00:56,320 --> 00:01:01,530
 >> His admirers called him Pentathlos, like an athlete who competes in five events.
 
 14
-00:01:16,860 --> 00:01:20,780
+00:01:01,610 --> 00:01:08,750
 >> And his critics called him Beta: second best at everything.
 
 15
-00:01:20,860 --> 00:01:24,850
+00:01:08,830 --> 00:01:15,020
 >> Second best at everything is still quite something.
 
 16
-00:01:24,930 --> 00:01:28,870
+00:01:15,100 --> 00:01:20,020
 >> One thing he didn't have to prove was that the Earth is round.
 
 17
-00:01:28,950 --> 00:01:30,870
+00:01:20,100 --> 00:01:24,170
 >> They already knew that?
 
 18
-00:01:30,950 --> 00:01:37,520
+00:01:24,250 --> 00:01:28,340
 >> For a century or so. Aristotle had pointed to the Earth's round shadow on the Moon during an eclipse.
 
 19
-00:01:37,600 --> 00:01:42,840
+00:01:28,420 --> 00:01:34,990
 >> And he noted that some stars seen in Egypt can't be seen from further north.
 
 20
-00:01:42,920 --> 00:01:46,890
+00:01:35,070 --> 00:01:39,040
 >> Which only works if the ground curves between the two places.
 
 21
-00:01:46,970 --> 00:01:52,610
+00:01:39,120 --> 00:01:43,700
 >> Aristotle even reported a size for the Earth: 400,000 stadia.
 
 22
-00:01:52,690 --> 00:01:57,530
+00:01:43,780 --> 00:01:51,030
 >> Eratosthenes found a way to actually measure it.
 
 23
-00:02:00,130 --> 00:02:06,370
+00:01:53,630 --> 00:01:59,320
 >> Far up the Nile, on Egypt's southern frontier, lay the town of Syene. Today it's Aswan.
 
 24
-00:02:06,450 --> 00:02:10,440
+00:01:59,400 --> 00:02:05,900
 >> And Syene was known for something that happened there once a year.
 
 25
-00:02:10,520 --> 00:02:18,260
+00:02:05,980 --> 00:02:12,670
 >> At noon on the summer solstice, the longest day of the year, upright sticks there cast no shadow.
 
 26
-00:02:18,340 --> 00:02:19,680
+00:02:12,750 --> 00:02:14,820
 >> None at all?
 
 27
-00:02:19,760 --> 00:02:27,080
+00:02:14,900 --> 00:02:20,860
 >> None. Later writers also tell of a well there, where the noon sunlight reached all the way down to the water.
 
 28
-00:02:27,160 --> 00:02:29,950
+00:02:20,940 --> 00:02:25,270
 >> Because the Sun was standing straight overhead.
 
 29
-00:02:30,030 --> 00:02:37,120
+00:02:25,350 --> 00:02:30,470
 >> Syene was taken to lie on the Tropic of Cancer, the furthest north the Sun can ever be overhead.
 
 30
-00:02:37,200 --> 00:02:44,860
+00:02:30,550 --> 00:02:36,700
 >> But at Alexandria, on the coast, about 5,000 stadia further north, sticks still cast shadows at that noon.
 
 31
-00:02:44,940 --> 00:02:47,760
+00:02:36,780 --> 00:02:40,390
 >> And that difference is the whole clue.
 
 32
-00:02:47,840 --> 00:02:54,580
+00:02:40,470 --> 00:02:44,460
 If the Earth were flat, and the Sun far away, sticks in both places would cast the same shadow.
 
 33
-00:02:54,660 --> 00:02:58,300
+00:02:44,540 --> 00:02:45,880
 >> They don't. So the ground between them has to curve.
 
 34
-00:02:58,380 --> 00:03:03,590
+00:02:45,960 --> 00:02:48,750
 >> And how much it curves over that distance tells you the size of the whole Earth.
 
 35
-00:03:03,670 --> 00:03:10,590
+00:02:48,830 --> 00:02:57,720
 >> So he needs two numbers: how different the shadows are, and how far apart the cities are.
 
 36
-00:03:13,190 --> 00:03:16,100
+00:03:00,320 --> 00:03:03,960
 So how big was the shadow at Alexandria?
 
 37
-00:03:16,180 --> 00:03:21,570
+00:03:04,040 --> 00:03:09,580
 >> According to Cleomedes, it was read on a scaphe: a sundial shaped like a bowl.
 
 38
-00:03:21,650 --> 00:03:24,490
+00:03:09,660 --> 00:03:12,570
 >> A bowl, not just a stick in the ground?
 
 39
-00:03:24,570 --> 00:03:30,960
+00:03:12,650 --> 00:03:15,490
 >> A bowl. A pointer stands at the bottom, and its tip sits right at the centre of the bowl's curve.
 
 40
-00:03:31,040 --> 00:03:35,180
+00:03:15,570 --> 00:03:19,710
 >> So at noon, the tip's shadow falls on the inside of the bowl.
 
 41
-00:03:35,260 --> 00:03:42,280
+00:03:19,790 --> 00:03:25,470
 >> The arc from the foot of the pointer to the end of the shadow measures how far the Sun is from overhead.
 
 42
-00:03:42,360 --> 00:03:47,350
+00:03:25,550 --> 00:03:28,550
 >> That's neat. The bowl turns the shadow straight into a piece of a circle.
 
 43
-00:03:47,430 --> 00:03:52,040
+00:03:28,630 --> 00:03:32,890
 And at Alexandria, that arc was one fiftieth of a full circle.
 
 44
-00:03:52,120 --> 00:03:55,510
+00:03:32,970 --> 00:03:39,810
 >> In degrees, that's 7.2°.
 
 45
-00:03:55,590 --> 00:04:01,500
+00:03:39,890 --> 00:03:46,610
 >> That's small. A stick would cast a noon shadow only about one eighth as long as itself.
 
 46
-00:04:01,580 --> 00:04:07,150
+00:03:46,690 --> 00:03:51,950
 >> And at Syene, at the same noon, the shadow was nothing at all.
 
 47
-00:04:09,750 --> 00:04:16,160
+00:03:54,550 --> 00:03:56,180
 Now for the key idea. The Sun is so far away that its rays arrive almost parallel.
 
 48
-00:04:16,240 --> 00:04:21,380
+00:03:56,260 --> 00:04:01,210
 >> Let's draw the Earth, with Syene at the top and Alexandria a little way round.
 
 49
-00:04:21,460 --> 00:04:28,870
+00:04:01,290 --> 00:04:05,380
 >> At Syene, a ray comes straight down the stick. Extend that stick downwards, and it reaches the Earth's centre.
 
 50
-00:04:28,950 --> 00:04:33,840
+00:04:05,460 --> 00:04:09,920
 >> At Alexandria, extend the stick too. It also points to the centre.
 
 51
-00:04:33,920 --> 00:04:38,160
+00:04:10,000 --> 00:04:15,620
 >> And there, the ray meets the stick at 7.2°.
 
 52
-00:04:38,240 --> 00:04:46,160
+00:04:15,700 --> 00:04:20,190
 >> Now the Alexandria stick line crosses two parallel lines: the ray at Alexandria, and the ray down the Syene stick.
 
 53
-00:04:46,240 --> 00:04:48,050
+00:04:20,270 --> 00:04:24,880
 >> That's the Z shape.
 
 54
-00:04:48,130 --> 00:04:53,420
+00:04:24,960 --> 00:04:30,870
 When a line crosses two parallel lines, the alternate angles are equal.
 
 55
-00:04:53,500 --> 00:04:59,740
+00:04:30,950 --> 00:04:35,940
 >> So the angle at the centre of the Earth, between the two cities, is also 7.2°.
 
 56
-00:04:59,820 --> 00:05:05,110
+00:04:36,020 --> 00:04:40,910
 >> So the shadow in Alexandria is really measuring the curve of the Earth.
 
 57
-00:05:05,190 --> 00:05:11,310
+00:04:40,990 --> 00:04:50,290
 Syene and Alexandria are one fiftieth of the way round the Earth.
 
 58
-00:05:11,710 --> 00:05:15,050
+00:04:50,690 --> 00:04:57,080
 >> But is the Sun really far enough away for that?
 
 59
-00:05:15,130 --> 00:05:22,550
+00:04:57,160 --> 00:05:01,730
 >> Easily. Between those two cities, the rays differ by less than a thousandth of a degree.
 
 60
-00:05:25,150 --> 00:05:28,440
+00:05:04,330 --> 00:05:07,620
 >> Now he needed the distance between the two cities.
 
 61
-00:05:28,520 --> 00:05:31,810
+00:05:07,700 --> 00:05:10,730
 >> Cleomedes gives it as 5,000 stadia.
 
 62
-00:05:31,890 --> 00:05:33,730
+00:05:10,810 --> 00:05:13,080
 >> And how was that measured?
 
 63
-00:05:33,810 --> 00:05:36,300
+00:05:13,160 --> 00:05:16,780
 >> Honestly, we don't really know.
 
 64
-00:05:36,380 --> 00:05:42,750
+00:05:16,860 --> 00:05:21,740
 >> Egypt did have bematists: professional pacers who measured land for farming and for taxes.
 
 65
-00:05:42,830 --> 00:05:46,940
+00:05:21,820 --> 00:05:29,120
 >> And some historians think his distance came from their surveys.
 
 66
-00:05:47,020 --> 00:05:52,710
+00:05:29,200 --> 00:05:32,670
 >> A Latin writer, some 650 years later, says royal surveyors measured it.
 
 67
-00:05:52,790 --> 00:05:58,730
+00:05:32,750 --> 00:05:38,640
 >> Six hundred and fifty years later. That's a long way from a first-hand account.
 
 68
-00:05:58,810 --> 00:06:07,020
+00:05:38,720 --> 00:05:42,480
 Either way: if 5,000 stadia is one fiftieth of the way round, the whole way round is fifty times as far.
 
 69
-00:06:07,100 --> 00:06:12,920
+00:05:42,560 --> 00:05:46,470
 >> Fifty times 5,000: 250,000 stadia.
 
 70
-00:06:13,970 --> 00:06:19,020
+00:05:47,520 --> 00:05:52,340
 >> A shadow, a distance, and the size of the whole Earth.
 
 71
-00:06:21,620 --> 00:06:26,490
+00:05:54,940 --> 00:05:58,500
 >> That's the story as it's usually told. But where does it actually come from?
 
 72
-00:06:26,570 --> 00:06:32,260
+00:05:58,580 --> 00:06:00,420
 >> Eratosthenes wrote it up in a book, On the Measure of the Earth. And the book is lost.
 
 73
-00:06:32,340 --> 00:06:35,080
+00:06:00,500 --> 00:06:06,870
 >> So we're relying on someone else's account.
 
 74
-00:06:35,160 --> 00:06:39,750
+00:06:06,950 --> 00:06:12,790
 >> Mostly on Cleomedes, who wrote a basic astronomy textbook.
 
 75
-00:06:39,830 --> 00:06:46,670
+00:06:12,870 --> 00:06:17,310
 >> And nobody knows when he wrote it: somewhere between the first century BC and about AD 400.
 
 76
-00:06:46,750 --> 00:06:49,970
+00:06:17,390 --> 00:06:22,260
 >> That's a window of more than four centuries.
 
 77
-00:06:50,050 --> 00:06:54,140
+00:06:22,340 --> 00:06:25,080
 And Cleomedes says himself that his version is simplified.
 
 78
-00:06:54,220 --> 00:07:01,380
+00:06:25,160 --> 00:06:32,150
 >> His account talks about sundials, not a well. The well comes from other writers, like the geographer Strabo.
 
 79
-00:07:01,460 --> 00:07:05,800
+00:06:32,230 --> 00:06:39,740
 >> So the most famous detail isn't even in our main source.
 
 80
-00:07:05,880 --> 00:07:07,820
+00:06:39,820 --> 00:06:41,760
 >> And there's a second number.
 
 81
-00:07:07,900 --> 00:07:15,390
+00:06:41,840 --> 00:06:47,980
 >> The Roman writer Pliny the Elder gives Eratosthenes' result as 252,000 stadia.
 
 82
-00:07:15,470 --> 00:07:19,310
+00:06:48,060 --> 00:06:56,340
 >> Why the extra 2,000? Historians disagree.
 
 83
-00:07:19,390 --> 00:07:29,760
+00:06:56,420 --> 00:07:01,750
 >> 252,000 divides evenly by every whole number from one to ten. 250,000 doesn't.
 
 84
-00:07:29,840 --> 00:07:35,950
+00:07:01,830 --> 00:07:04,680
 >> And split into 360 degrees, it gives a neat 700 stadia for each one.
 
 85
-00:07:36,030 --> 00:07:41,020
+00:07:04,760 --> 00:07:09,730
 >> So some think he adjusted his figure, to make calculations easier.
 
 86
-00:07:41,100 --> 00:07:47,810
+00:07:09,810 --> 00:07:15,400
 >> Others think he defined a stadion of his own, from the size of the Earth, as Pliny's wording suggests.
 
 87
-00:07:47,890 --> 00:07:52,560
+00:07:15,480 --> 00:07:20,950
 >> Which would make the unit itself part of the puzzle.
 
 88
-00:07:55,160 --> 00:08:00,530
+00:07:23,550 --> 00:07:27,750
 So how good was his answer? To check, we need his stadia in kilometres.
 
 89
-00:08:00,610 --> 00:08:06,450
+00:07:27,830 --> 00:07:30,390
 >> A stadion was 600 feet. But a foot wasn't the same everywhere in the Greek world.
 
 90
-00:08:06,530 --> 00:08:13,320
+00:07:30,470 --> 00:07:35,270
 >> Historians' estimates for the stadion run from about 150 to 210 metres.
 
 91
-00:08:13,400 --> 00:08:15,640
+00:07:35,350 --> 00:07:39,190
 >> That's a spread of 40%.
 
 92
-00:08:15,720 --> 00:08:22,310
+00:07:39,270 --> 00:07:45,730
 And the real distance round the Earth, through the poles, is about 40,008 kilometres.
 
 93
-00:08:22,390 --> 00:08:27,880
+00:07:45,810 --> 00:07:52,520
 >> So here's what that range of stadia does to his 250,000.
 
 94
-00:08:27,960 --> 00:08:33,570
+00:07:52,600 --> 00:07:58,440
 >> With a stadion of about 176 metres, he's about 10% too big.
 
 95
-00:08:33,650 --> 00:08:39,240
+00:07:58,520 --> 00:08:00,760
 >> With about 185 metres, he's about 15% too big.
 
 96
-00:08:39,320 --> 00:08:50,180
+00:08:00,840 --> 00:08:07,730
 >> But take Pliny's 252,000 and a short stadion, 155 to 160 metres, and he's within 2.4%.
 
 97
-00:08:50,260 --> 00:08:53,050
+00:08:07,810 --> 00:08:13,420
 >> So is the short stadion the right one?
 
 98
-00:08:53,130 --> 00:09:01,120
+00:08:13,500 --> 00:08:23,710
 >> One study found about 157.7 metres from ancient distances, but critics say it's full of errors.
 
 99
-00:09:01,200 --> 00:09:07,240
+00:08:23,790 --> 00:08:31,780
 >> So the famous claim that he was within 2% depends on choosing a short stadion.
 
 100
-00:09:07,320 --> 00:09:10,090
+00:08:31,860 --> 00:08:34,630
 >> That's a lot to hang on one unit.
 
 101
-00:09:10,170 --> 00:09:20,390
->> But the method itself holds up. Repeated in 2012 with modern data, it gave 40,074 kilometres.
+00:08:34,710 --> 00:08:42,380
+>> But the method itself is sound: measure the angle and the distance accurately, and it gives Earth's true size.
 
 102
-00:09:22,990 --> 00:09:28,080
+00:08:44,980 --> 00:08:49,310
 >> Cleomedes' version also rests on a few simplifications. Let's check them.
 
 103
-00:09:28,160 --> 00:09:32,930
+00:08:49,390 --> 00:08:55,920
 >> First, parallel rays. That one holds very well, as we've seen.
 
 104
-00:09:33,010 --> 00:09:37,100
+00:08:56,000 --> 00:09:00,930
 >> Second, that Syene sits exactly on the Tropic of Cancer.
 
 105
-00:09:37,180 --> 00:09:43,870
+00:09:01,010 --> 00:09:06,560
 >> In fact it's a little north of it, by less than a degree. Even there, the noon Sun wasn't quite overhead.
 
 106
-00:09:43,950 --> 00:09:46,560
+00:09:06,640 --> 00:09:09,740
 >> So "no shadow" was only nearly true.
 
 107
-00:09:46,640 --> 00:09:54,480
+00:09:09,820 --> 00:09:14,230
 And the tropic drifts, too. In Eratosthenes' time it lay about 0.3 degrees further north than today.
 
 108
-00:09:54,560 --> 00:09:59,770
+00:09:14,310 --> 00:09:19,480
 >> Third, that Syene lies due south of Alexandria, on the same meridian.
 
 109
-00:09:59,850 --> 00:10:03,840
+00:09:19,560 --> 00:09:25,430
 >> In fact it's about 3 degrees of longitude further east.
 
 110
-00:10:03,920 --> 00:10:10,560
+00:09:25,510 --> 00:09:27,980
 >> And the Earth isn't a perfect sphere: it's slightly flattened, by about 0.3%.
 
 111
-00:10:10,640 --> 00:10:17,400
+00:09:28,060 --> 00:09:33,000
 >> Still, the angle came out well. The two cities' latitudes really differ by about 7.1°.
 
 112
-00:10:17,480 --> 00:10:20,800
+00:09:33,080 --> 00:09:37,170
 >> Against his 7.2. That's close.
 
 113
-00:10:20,880 --> 00:10:26,800
+00:09:37,250 --> 00:09:41,090
 What we can't check is the distance, because we don't know his stadion.
 
 114
-00:10:29,400 --> 00:10:32,740
+00:09:43,690 --> 00:09:51,180
 >> Measuring the Earth was only part of what he did.
 
 115
-00:10:32,820 --> 00:10:38,810
+00:09:51,260 --> 00:09:55,250
 >> In his Geographica, he mapped the known world on a grid of parallels and meridians.
 
 116
-00:10:38,890 --> 00:10:44,850
+00:09:55,330 --> 00:10:02,240
 >> It named more than 400 cities with their locations, and it gave us the word geography.
 
 117
-00:10:44,930 --> 00:10:52,470
+00:10:02,320 --> 00:10:06,010
 >> He also measured the tilt of the Earth's axis, and worked out dates in history back to the fall of Troy.
 
 118
-00:10:52,550 --> 00:10:57,420
+00:10:06,090 --> 00:10:11,900
 >> And his name lives on in mathematics, in the sieve of Eratosthenes.
 
 119
-00:10:57,500 --> 00:11:00,090
+00:10:11,980 --> 00:10:17,000
 >> The way of finding prime numbers?
 
 120
-00:11:00,170 --> 00:11:06,560
+00:10:17,080 --> 00:10:23,470
 >> Write out the numbers. Cross out the multiples of 2, then of 3, then of 5, then of 7.
 
 121
-00:11:06,640 --> 00:11:10,590
+00:10:23,550 --> 00:10:26,990
 >> And what's left are the prime numbers.
 
 122
-00:11:11,040 --> 00:11:18,480
+00:10:27,440 --> 00:10:34,360
 >> Though our earliest record of the sieve was written centuries later, and he may have named it rather than invented it.
 
 123
-00:11:18,560 --> 00:11:27,020
+00:10:34,440 --> 00:10:38,110
 >> Later writers used smaller figures for the Earth. Ptolemy's Geography used just 180,000 stadia.
 
 124
-00:11:27,100 --> 00:11:35,870
+00:10:38,190 --> 00:10:43,340
 >> And some seventeen centuries after Eratosthenes, Columbus read his work, but chose to believe in an Earth about a quarter smaller.
 
 125
-00:11:35,950 --> 00:11:41,170
+00:10:43,420 --> 00:10:49,420
 >> And a smaller Earth made the voyage west to Asia look shorter.
 
 126
-00:11:41,250 --> 00:11:44,120
+00:10:49,500 --> 00:10:54,290
 >> So let's put the whole idea in one picture.
 
 127
-00:11:44,200 --> 00:11:50,070
+00:10:54,370 --> 00:10:57,160
 >> No shadow at Syene. A shadow of one fiftieth of a circle at Alexandria.
 
 128
-00:11:50,150 --> 00:11:54,020
+00:10:57,240 --> 00:11:04,330
 >> Parallel rays carry that angle to the centre of the Earth.
 
 129
-00:11:54,100 --> 00:11:59,990
+00:11:04,410 --> 00:11:13,180
 >> Fifty times 5,000 stadia: 250,000 stadia round.
 
 130
-00:12:00,070 --> 00:12:04,710
+00:11:13,260 --> 00:11:16,130
 >> How close was he? That depends on a unit we still can't pin down.
 
 131
-00:12:04,790 --> 00:12:10,380
+00:11:16,210 --> 00:11:20,230
 >> But the idea was right, and it measured the whole Earth from two cities in Egypt.
 
 132
-00:12:10,460 --> 00:12:13,850
+00:11:20,310 --> 00:11:25,300
 >> With a stick, a bowl and a good argument.
 
 133
-00:12:13,930 --> 00:12:18,420
+00:11:25,380 --> 00:11:29,650
 >> Not bad for a man his critics called Beta.

@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+Both get 14, because both have really taken 3 times 7, or 21, steps from the start.
+
+2
+00:00:31,000 --> 00:00:56,000
+Eve heard 23, 5, 10 and 17. To reach 14, she needs 3 or 7.
+
+3
+00:01:01,000 --> 00:01:26,000
+With 23 hours she could try them all, so real exchanges use a prime of at least 2,048 bits: 617 digits.
+
+4
+00:01:31,000 --> 00:01:56,000
+But a true public lock, one that anyone could close, was still missing.
+
+5
+00:02:01,000 --> 00:02:26,000
+At M I T, Ron Rivest, Adi Shamir and Leonard Adleman spent about a year hunting for one.
+
+6
+00:02:31,000 --> 00:02:56,000
+Rivest and Shamir proposed ideas, and Adleman, the mathematician, kept breaking them.
+
+7
+00:03:01,000 --> 00:03:26,000
+In April 1977, after a Passover evening at a student's house, Rivest couldn't sleep.
+
+8
+00:03:31,000 --> 00:03:56,000
+By daybreak, the story goes, he had much of the paper written.
+
+9
+00:04:01,000 --> 00:04:26,000
+The method, named R S A after their initials, starts with two primes.
+
+10
+00:04:31,000 --> 00:04:56,000
+Let's build a tiny key. Take the primes 61 and 53, and multiply them: 3,233.
+
+11
+00:05:01,000 --> 00:05:26,000
+Pick 17 as the power that locks. From the primes, we can work out the power that unlocks: 413.
+
+12
+00:05:31,000 --> 00:05:56,000
+The public key is just 3,233 and 17. Anyone can have it.
+
+13
+00:06:01,000 --> 00:06:26,000
+To send Bob 65, raise it to the power of 17 and keep the remainder after dividing by 3,233.
+
+14
+00:06:31,000 --> 00:06:56,000
+That power has 31 digits, but only the remainder, 2,790, travels.
+
+15
+00:07:01,000 --> 00:07:26,000
+Bob raises that to the power of 413, divides by 3,233 again, and out comes 65.
+
+16
+00:07:31,000 --> 00:07:56,000
+Finding 413 needs the two primes, and the public key shows only their product.
+
+17
+00:08:01,000 --> 00:08:26,000
+Real systems also add random padding. Bare R S A like this is just a demonstration.
+
+18
+00:08:31,000 --> 00:08:56,000
+It all rests on a lopsided pair of jobs: multiplying is easy, and factoring is hard.
+
+19
+00:09:01,000 --> 00:09:26,000
+To factor 3,233, try dividing by each prime in turn. The 16th, 53, works.
+
+20
+00:09:31,000 --> 00:09:56,000
+Jevons's number needs thousands of tries. It's 89,681 times 96,079.

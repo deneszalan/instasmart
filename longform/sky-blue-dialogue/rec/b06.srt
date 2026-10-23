@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: That's like crossing more than three hundred kilometres of air at sea level.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: And along that path, the blue and green are scattered out almost completely.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: So what's left to reach you is orange and red.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERB: That reddened light falls on clouds, and they scatter it back to us: red and orange on white.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: So the clouds are still white. They're just lit by reddened light.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERB: In very clear air, a setting Sun looks yellow.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: Fine particles of smoke or dust make it redder, and sea salt can turn it orange.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERB: And after sunset, ozone high in the atmosphere helps keep the sky overhead blue.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: On other worlds, the physics is the same, but the air is different.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERB: At the surface of Mars, the air is only 1 to 2 percent as dense as ours, and full of fine dust.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: By day, the Martian sky is a butterscotch colour.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERB: And at sunset?
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: Near the setting Sun, the Martian sky turns blue.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERB: Blue sunsets, on the red planet?
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: Really. NASA's Curiosity rover photographed one in twenty fifteen, from Gale Crater.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: According to NASA, the fine dust lets blue light through more efficiently than redder colours.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: So the blue stays close to the Sun, while yellow and red light spreads across the sky.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERB: It's the opposite of what happens on Earth.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERA: So, why is the sky blue?
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERB: Sunlight holds every colour, and the molecules of the air scatter short waves far more than long ones.

@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERB: Look up on a clear day, and the whole sky glows blue.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERA: Which is strange, when you think about it: sunlight is white, and the air looks perfectly clear.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERB: So where does all that blue come from?
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERA: And once you know, there's a second puzzle: why isn't the sky violet?
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERB: Violet? Nobody expects a violet sky.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERA: No, but the physics of scattering points that way, and that's the fun part.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERB: To get there, we need a tube of smoke, a fourth power, the sunsets of Mars, and your own eyes.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERA: This is why the sky is blue.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: Let's start with sunlight. It looks white, but it's a mixture of every colour of the rainbow.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERB: Isaac Newton showed that with a prism, which spreads white light out into a spectrum.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: So the colours were in there all along. The prism just sorts them out.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERB: And light is a wave, so each colour has its own wavelength: the distance from one crest to the next.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: How long are we talking?
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERB: Tiny. Red light has waves about 720 nanometres long, and violet about 380.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: A nanometre being a millionth of a millimetre.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: Right. And in between come orange, yellow, green and blue.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: We'll keep comparing two of them: blue at four hundred and fifty nanometres, and red at seven hundred.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERB: Blue waves are shorter, and the whole story turns on that one difference.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERB: People have wondered about the colour of the sky for centuries.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERA: In the early fifteen-hundreds, Leonardo da Vinci guessed that sunlight scattered by tiny particles in the air makes the sky blue.
