@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+Pair the terms one way and you get zero. Pair them another way and you get one.
+
+2
+00:00:31,000 --> 00:00:56,000
+In 1821, the French mathematician Augustin Louis Koh-shee insisted on strict tests of when an infinite sum makes sense.
+
+3
+00:01:01,000 --> 00:01:26,000
+Its value is the number its running totals settle down to, if they settle at all.
+
+4
+00:01:31,000 --> 00:01:56,000
+Then a half, plus a quarter, plus an eighth, is exactly one, while one minus one plus one has no sum.
+
+5
+00:02:01,000 --> 00:02:26,000
+In 1861, Karl Weierstrass gave the definition of a limit in the precise form used today.
+
+6
+00:02:31,000 --> 00:02:56,000
+Pick any margin, however small. From some stage on, every running total stays within it.
+
+7
+00:03:01,000 --> 00:03:26,000
+For a margin of a millimetre, Achilles' totals stay inside it from stage 6 on. For a micrometre, it's from stage 9.
+
+8
+00:03:31,000 --> 00:03:56,000
+So 111.1 metres is the limit of Zeno's stages. Some historians, such as Carl Boyer, say calculus solves the paradox.
+
+9
+00:04:01,000 --> 00:04:26,000
+Some philosophers disagree. The maths says where and when Achilles draws level, but how does he finish infinitely many tasks?
+
+10
+00:04:31,000 --> 00:04:56,000
+Bertrand Russell argued that Achilles really does complete infinitely many tasks, in a finite time.
+
+11
+00:05:01,000 --> 00:05:26,000
+In 1954, the philosopher James Thomson replied with a lamp.
+
+12
+00:05:31,000 --> 00:05:56,000
+Switch it on. After a minute, switch it off. After half a minute, on again, then off after a quarter.
+
+13
+00:06:01,000 --> 00:06:26,000
+Each wait is half the last, and the waits add up to exactly 2 minutes.
+
+14
+00:06:31,000 --> 00:06:56,000
+At 2 minutes, is the lamp on or off?
+
+15
+00:07:01,000 --> 00:07:26,000
+It can't be on, because every time it went on, it was switched off again. And off fails for the same reason.
+
+16
+00:07:31,000 --> 00:07:56,000
+Thomson concluded that a supertask, infinitely many tasks in a finite time, is impossible.
+
+17
+00:08:01,000 --> 00:08:26,000
+Its switch flips like the running totals of one minus one plus one, which never settle.
+
+18
+00:08:31,000 --> 00:08:56,000
+In 1962, Paul Benacerraf objected that the story fixes the lamp before 2 minutes, but says nothing about that moment itself.
+
+19
+00:09:01,000 --> 00:09:26,000
+So there's no contradiction, just a question the story leaves open.
+
+20
+00:09:31,000 --> 00:09:56,000
+Philosophers still disagree about what counts as a task, and whether a supertask is possible.

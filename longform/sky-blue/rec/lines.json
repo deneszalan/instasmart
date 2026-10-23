@@ -1,0 +1,406 @@
+[
+ {
+  "key": "o1",
+  "spoken": "Look up on a clear day, and the whole sky glows blue."
+ },
+ {
+  "key": "o2",
+  "spoken": "But sunlight is white, and the air around you looks perfectly clear."
+ },
+ {
+  "key": "o3",
+  "spoken": "So where does all that blue come from?"
+ },
+ {
+  "key": "o4",
+  "spoken": "And once you know, a second puzzle appears. Why isn't the sky violet?"
+ },
+ {
+  "key": "o5",
+  "spoken": "The answer takes in a tube of smoke, a fourth power, the sunsets of Mars, and your own eyes."
+ },
+ {
+  "key": "o6",
+  "spoken": "This is why the sky is blue."
+ },
+ {
+  "key": "w1",
+  "spoken": "Start with sunlight. It looks white, but it's a mixture of every colour of the rainbow."
+ },
+ {
+  "key": "w2",
+  "spoken": "Isaac Newton showed this with a prism, which spreads white light out into a spectrum."
+ },
+ {
+  "key": "w3",
+  "spoken": "Light is a wave, and its colour is set by its wavelength, which is the distance from one crest to the next."
+ },
+ {
+  "key": "w4",
+  "spoken": "Visible light runs from red, with waves about 720 nanometres long, to violet, at about 380."
+ },
+ {
+  "key": "w5",
+  "spoken": "A nanometre is a millionth of a millimetre."
+ },
+ {
+  "key": "w6",
+  "spoken": "In between come orange, yellow, green and blue."
+ },
+ {
+  "key": "w7",
+  "spoken": "We'll compare blue light at 450 nanometres with red light at 700."
+ },
+ {
+  "key": "w8",
+  "spoken": "Blue waves are shorter, and the whole story turns on that difference."
+ },
+ {
+  "key": "t1",
+  "spoken": "People have wondered about the colour of the sky for centuries."
+ },
+ {
+  "key": "t2",
+  "spoken": "In the early fifteen-hundreds, Leonardo da Vinci guessed that sunlight scattered by tiny particles in the air makes the sky blue."
+ },
+ {
+  "key": "t3",
+  "spoken": "In 1869, the Irish physicist John Tyndall took the first steps toward a real explanation."
+ },
+ {
+  "key": "t4",
+  "spoken": "He needed perfectly clean air for his work on heat, and he hunted for dust by shining bright light through it."
+ },
+ {
+  "key": "t5",
+  "spoken": "When he slowly filled a tube with smoke and shone a beam along it, he saw something striking."
+ },
+ {
+  "key": "t6",
+  "spoken": "From the side, the beam looked blue. From the far end, it looked red."
+ },
+ {
+  "key": "t7",
+  "spoken": "The tiny particles were scattering blue light out sideways, and letting redder light carry on."
+ },
+ {
+  "key": "t8",
+  "spoken": "Tyndall suggested that this is why the sky is blue."
+ },
+ {
+  "key": "t9",
+  "spoken": "But he couldn't explain why blue light scatters more, and dust alone couldn't explain how blue the sky is."
+ },
+ {
+  "key": "r1",
+  "spoken": "The explanation began in 1871, with a young British physicist, John William Strutt."
+ },
+ {
+  "key": "r2",
+  "spoken": "Two years later he became Lord Rayleigh, and the effect now carries his name. It's called Rayleigh scattering."
+ },
+ {
+  "key": "r3",
+  "spoken": "Light is an electric and magnetic wave. As it passes a tiny particle, its electric field shakes the charges inside."
+ },
+ {
+  "key": "r4",
+  "spoken": "The shaken particle becomes a tiny antenna, and sends out light of its own in new directions."
+ },
+ {
+  "key": "r5",
+  "spoken": "This works for particles far smaller than the wavelength, meaning less than about a tenth of it."
+ },
+ {
+  "key": "r6",
+  "spoken": "And it follows a simple rule, that scattering goes as one over the wavelength to the fourth power."
+ },
+ {
+  "key": "r7",
+  "spoken": "Halve the wavelength, and the scattering gets 16 times stronger."
+ },
+ {
+  "key": "r8",
+  "spoken": "So compare blue at 450 nanometres with red at 700. The ratio of 700 to 450, raised to the fourth power, is about 5.9."
+ },
+ {
+  "key": "r9",
+  "spoken": "Air scatters blue light nearly 6 times more strongly than red."
+ },
+ {
+  "key": "r10",
+  "spoken": "In 1899, Rayleigh showed that the same rule applies to single molecules."
+ },
+ {
+  "key": "r11",
+  "spoken": "Molecules of nitrogen and oxygen are less than a nanometre across, which is hundreds of times smaller than a wave of light."
+ },
+ {
+  "key": "r12",
+  "spoken": "So the air itself scatters the light. No dust is needed."
+ },
+ {
+  "key": "r13",
+  "spoken": "Later, Albert Einstein worked out the scattering by molecules in detail, and his result agreed with experiment."
+ },
+ {
+  "key": "b1",
+  "spoken": "Now picture sunlight streaming down through the air."
+ },
+ {
+  "key": "b2",
+  "spoken": "Most of it comes straight through, but some is scattered by molecules on the way."
+ },
+ {
+  "key": "b3",
+  "spoken": "Because short waves scatter most, it's mostly blue light that gets knocked off in new directions."
+ },
+ {
+  "key": "b4",
+  "spoken": "That scattered blue reaches your eyes from every part of the sky, so the whole dome glows."
+ },
+ {
+  "key": "b5",
+  "spoken": "The sunlight that comes straight through has lost a little blue, so the Sun itself looks slightly yellow."
+ },
+ {
+  "key": "b6",
+  "spoken": "When it's measured, the light of a blue sky holds every colour, with a broad peak between 450 and 485 nanometres."
+ },
+ {
+  "key": "b7",
+  "spoken": "Our eyes take that mix as blue blended with white, which gives the soft colour we call sky blue."
+ },
+ {
+  "key": "b8",
+  "spoken": "And no, the sky isn't blue because it reflects the sea. If anything, it's the other way round."
+ },
+ {
+  "key": "b9",
+  "spoken": "Seen from the beach, the sea looks blue partly because it reflects the sky."
+ },
+ {
+  "key": "v1",
+  "spoken": "But here's the puzzle. Violet light has even shorter waves than blue."
+ },
+ {
+  "key": "v2",
+  "spoken": "At 400 nanometres, violet scatters more than 9 times as strongly as red."
+ },
+ {
+  "key": "v3",
+  "spoken": "So why isn't the sky violet?"
+ },
+ {
+  "key": "v4",
+  "spoken": "Part of the answer is that sunlight holds less violet than blue to begin with."
+ },
+ {
+  "key": "v5",
+  "spoken": "And some violet is absorbed high in the atmosphere, before it reaches us."
+ },
+ {
+  "key": "v6",
+  "spoken": "Still, a rainbow shows that plenty of violet gets through. The rest of the answer is in your eyes."
+ },
+ {
+  "key": "v7",
+  "spoken": "For one thing, our eyes are less sensitive to violet."
+ },
+ {
+  "key": "v8",
+  "spoken": "We see colour with three kinds of cone cells, which respond most strongly to red, green and blue light."
+ },
+ {
+  "key": "v9",
+  "spoken": "Skylight stimulates the red and green cones about equally, and the blue cones more strongly."
+ },
+ {
+  "key": "v10",
+  "spoken": "Our vision reads that combination as a pale blue."
+ },
+ {
+  "key": "v11",
+  "spoken": "So the blue of the sky is partly physics, and partly the way we see."
+ },
+ {
+  "key": "c1",
+  "spoken": "If air turns sunlight blue, why are clouds white?"
+ },
+ {
+  "key": "c2",
+  "spoken": "Clouds are made of water droplets, typically a few micrometres, or thousandths of a millimetre, across."
+ },
+ {
+  "key": "c3",
+  "spoken": "That's thousands of times bigger than an air molecule, and bigger than a wave of light."
+ },
+ {
+  "key": "c4",
+  "spoken": "Particles that big don't follow Rayleigh's rule. They scatter all colours about equally."
+ },
+ {
+  "key": "c5",
+  "spoken": "This is called Mee scattering, after the German physicist Gustav Mee."
+ },
+ {
+  "key": "c6",
+  "spoken": "Scatter every colour alike, and white light stays white."
+ },
+ {
+  "key": "c7",
+  "spoken": "A thick cloud reflects 70 to 95 percent of the light that falls on it, across all colours."
+ },
+ {
+  "key": "c8",
+  "spoken": "Its base can look grey, simply because less light makes it through."
+ },
+ {
+  "key": "c9",
+  "spoken": "The same kind of scattering makes haze look whitish, and puts a bright white glow around the Sun."
+ },
+ {
+  "key": "p1",
+  "spoken": "Scattered skylight has another property that our eyes can't see. It's polarised."
+ },
+ {
+  "key": "p2",
+  "spoken": "Light waves can vibrate in any direction across their path. In polarised light, one direction wins out."
+ },
+ {
+  "key": "p3",
+  "spoken": "Skylight is most strongly polarised in a band 90 degrees away from the Sun."
+ },
+ {
+  "key": "p4",
+  "spoken": "There, in a clear sky, the polarisation can reach about 80 percent."
+ },
+ {
+  "key": "p5",
+  "spoken": "Polarising sunglasses can make that part of the sky look a deeper blue."
+ },
+ {
+  "key": "p6",
+  "spoken": "Rayleigh's first papers on the sky, in 1871, were titled On the light from the sky, its polarization and colour."
+ },
+ {
+  "key": "p7",
+  "spoken": "Many insects can sense this pattern and use it as a compass."
+ },
+ {
+  "key": "p8",
+  "spoken": "The idea goes back to Karl von Frisch's studies of honeybees."
+ },
+ {
+  "key": "p9",
+  "spoken": "From the pattern alone, an animal can work out where the Sun is, even when it's out of sight."
+ },
+ {
+  "key": "p10",
+  "spoken": "It has even been suggested that Viking sailors did something similar, with a crystal called a sunstone."
+ },
+ {
+  "key": "s1",
+  "spoken": "As the day ends, the same rule paints the sky in different colours."
+ },
+ {
+  "key": "s2",
+  "spoken": "When the Sun is high, its light takes the shortest route through the air."
+ },
+ {
+  "key": "s3",
+  "spoken": "Squeeze all the air above you to sea-level density, and it would be only about 8 kilometres deep."
+ },
+ {
+  "key": "s4",
+  "spoken": "Near the horizon, sunlight has to slant through far more air, about 38 times as much."
+ },
+ {
+  "key": "s5",
+  "spoken": "That's like crossing more than 300 kilometres of air at sea level."
+ },
+ {
+  "key": "s6",
+  "spoken": "Along that path, the blue and green are scattered out almost completely."
+ },
+ {
+  "key": "s7",
+  "spoken": "What's left to reach you is orange and red."
+ },
+ {
+  "key": "s8",
+  "spoken": "That reddened light falls on clouds, and they scatter it back to us, painting red and orange on white."
+ },
+ {
+  "key": "s9",
+  "spoken": "In very clear air, a setting Sun looks yellow."
+ },
+ {
+  "key": "s10",
+  "spoken": "Fine particles of smoke or dust make it redder, and sea salt can turn it orange."
+ },
+ {
+  "key": "s11",
+  "spoken": "And after sunset, ozone high in the atmosphere helps keep the sky overhead blue."
+ },
+ {
+  "key": "m1",
+  "spoken": "On other worlds, the physics is the same, but the air is different."
+ },
+ {
+  "key": "m2",
+  "spoken": "At the surface of Mars, the air is only 1 to 2 percent as dense as ours, and full of fine dust."
+ },
+ {
+  "key": "m3",
+  "spoken": "By day, the Martian sky is a butterscotch colour."
+ },
+ {
+  "key": "m4",
+  "spoken": "But near the setting Sun, the Martian sky turns blue."
+ },
+ {
+  "key": "m5",
+  "spoken": "NASA's Curiosity rover photographed a sunset like this in 2015, from Gale Crater."
+ },
+ {
+  "key": "m6",
+  "spoken": "According to NASA, the fine dust lets blue light through more efficiently than redder colours."
+ },
+ {
+  "key": "m7",
+  "spoken": "So the blue stays close to the Sun, while yellow and red light spreads across the sky."
+ },
+ {
+  "key": "m8",
+  "spoken": "It's the opposite of what happens on Earth."
+ },
+ {
+  "key": "z1",
+  "spoken": "So, why is the sky blue?"
+ },
+ {
+  "key": "z2",
+  "spoken": "Sunlight holds every colour, and the molecules of the air scatter short waves far more than long ones."
+ },
+ {
+  "key": "z3",
+  "spoken": "Blue scatters nearly 6 times more than red, so scattered blue reaches us from all over the sky."
+ },
+ {
+  "key": "z4",
+  "spoken": "Violet scatters even more, but sunlight holds less of it, and our eyes are less sensitive to it."
+ },
+ {
+  "key": "z5",
+  "spoken": "At sunset, the light crosses so much air that the blue is scattered away, leaving orange and red."
+ },
+ {
+  "key": "z6",
+  "spoken": "And clouds, made of far bigger droplets, scatter every colour alike, so they stay white."
+ },
+ {
+  "key": "z7",
+  "spoken": "Every patch of blue you see is sunlight that the air itself has turned toward your eyes."
+ }
+]
