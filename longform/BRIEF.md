@@ -18,9 +18,15 @@ The studio is `/tmp/claude-0/-home-user/597d1c62-e00b-59e9-a6a1-fbf35da32d35/scr
   - `gap` is the pause before a line (default 0.45 s); give each chapter's first line `chapter: 'Title'` and `gap: 4.2` (its title card plays in that gap). The first line: `gap: 1.0`.
   - Shape: a cold open (a surprising claim or question, under 40 s), a title, **5–9 chapters**, a payoff/recap, and a final line; then the credits card (give the last line a `HOLD` of about 9 s). About 140–160 spoken words per minute of video.
 - Comment the facts and their sources at the top of the file, as in the model.
+- **Write for the ear.** The voice reads exactly what `say` (else `text`) says, and it does not pause for a full stop or a colon between numbers. So:
+  - Give every result its connecting words: "23 times 22, divided by 2, **is** 253", "**that gives** 253 pairs", "**which makes** 7.2 degrees". Never "…divided by 2. 253 pairs." or "…stadia: 250,000 stadia".
+  - No caption-style colons in what is spoken. Say "the chance is 50.7 percent", not "more likely than not: 50.7 percent"; "With 10 guests, the chance is 11.7 percent; with 30, it's 70.6 percent", not "10 guests: 11.7 percent. 30 guests: 70.6 percent."
+  - Every spoken sentence has a verb (short replies such as "Exactly." are fine). Two numbers never meet across a full stop or a comma.
+  - `text` (the captions) should match the speech closely; it may keep digits and symbols.
+  - Check with `node $S/speak-lint.mjs <slug>` (`VERBOSE=1` lists the lines); fix every flag or be sure it reads naturally aloud.
 
 ## 2. Timing: `$S/tts.sh <slug>`
-Put the voice in `$S/<slug>/voice.txt` (your task says which; if it says `m1`/`m2`, use the stand-in voice it names for now: the cloned voice is recorded later, centrally, and the timeline then shifts automatically because your scene is keyed to lines). `tts.sh` records every line once (waiting for a lock if another writer is recording) and writes `timeline.js` (`window.TL = { duration, T: { key: [start, end] }, chapters: [{ n, title, at }], CUES }`), `subtitles.srt` and `plan.json`. **Finish and fact-check the script before you run it**; re-run it after any change to the lines.
+Put the voice in `$S/<slug>/voice.txt` (your task says which; if it says `m1`/`m2`, use the stand-in voice it names for now: the cloned voice is recorded later, centrally, and the timeline then shifts automatically because your scene is keyed to lines). `tts.sh` records every line once (waiting for a lock if another writer is recording; it keeps every line it has recorded, so a re-run records only new or reworded lines) and writes `timeline.js` (`window.TL = { duration, T: { key: [start, end] }, chapters: [{ n, title, at }], CUES }`), `subtitles.srt` and `plan.json`. **Finish and fact-check the script before you run it**; re-run it after any change to the lines.
 
 ## 3. The scene: `$S/<slug>/scene.js`
 ```js
