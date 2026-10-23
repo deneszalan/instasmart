@@ -131,7 +131,7 @@ export const LINES = [
   { key: 'x30', who: 'B', gap: 0.3, text: 'A wave far smaller than the molecule, and it still interfered?' },
   { key: 'x31', who: 'A', gap: 0.3, text: 'It did.' },
   { key: 'm5', who: 'B', text: 'And the record kept growing: molecules of 810 atoms in 2013, and about 2,000 atoms in 2019.' },
-  { key: 'm6', who: 'A', text: 'Then in 2026, a team in Vienna showed interference with sodium clusters of more than 7,000 atoms each.', say: 'Then in twenty twenty-six, a team in Vienna showed interference with sodium clusters of more than seven thousand atoms each.' },
+  { key: 'm6', who: 'A', text: 'Then in 2026, a team in Vienna showed interference with sodium clusters, some of more than 7,000 atoms.', say: 'Then in twenty twenty-six, a team in Vienna showed interference with sodium clusters, some of more than seven thousand atoms.' },
   { key: 'x32', who: 'B', gap: 0.3, text: 'Seven thousand atoms, behaving like a wave.' },
   { key: 'm7', who: 'A', text: 'The heavier the object, the shorter its wave, and the harder its stripes are to see.' },
   { key: 'x33', who: 'B', text: 'So is there a size where it simply stops?' },

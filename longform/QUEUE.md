@@ -12,8 +12,8 @@ dialogue's timing changes, re-check a few stills, `bash render-video.sh <slug>`,
 | 3 | four-stroke | engineering-four-stroke-engine | m2 | A=m2 B=af_heart | written (10:08, dialogue 12:32); queued |
 | 4 | sky-blue | physics-why-the-sky-is-blue | af_heart | A=m1 B=af_heart | monologue rendered and delivered (9:46); dialogue queued |
 | 5 | kepler | space-kepler-equal-areas | m1 | A=m1 B=af_nicole | written (10:58, dialogue 14:16 with stand-ins: check it stays under 15:00); queued |
-| 6 | double-slit | physics-double-slit | af_bella | A=m2 B=af_bella | writing |
-| 7 | public-key | tech-public-key-cryptography | af_heart | A=m1 B=af_heart | not started |
+| 6 | double-slit | physics-double-slit | af_bella | A=m2 B=af_bella | written (10:49, dialogue 13:28); queued (job double-slit) |
+| 7 | public-key | tech-public-key-cryptography | af_heart | A=m1 B=af_heart | writing |
 | 8 | enigma | tech-enigma-never-itself | m2 | A=m2 B=af_nicole | not started |
 | 9 | mendel | biology-mendel-pea-ratios | af_bella | A=m1 B=af_bella | not started |
 | 10 | zeno | philosophy-zeno-achilles-tortoise | af_heart | A=m2 B=af_heart | not started |

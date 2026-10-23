@@ -1254,7 +1254,7 @@ function part7(t) {
       const q = (t - s('k6', 0.4)) % 1.6 / 1.6, sy = slitYs()[0];
       const pa = q < 0.5 ? [lerp(TV.bx + 190, TV.bx + 6, q / 0.5), lerp(sy + 190, sy, q / 0.5)] : [lerp(TV.bx + 6, TV.bx + 26, (q - 0.5) / 0.5), sy];
       blob(glowW, pa[0], pa[1], 13);
-      label('SOMETHING MUST INTERACT', 120, 840, { color: C.text, weight: 600 });
+      label('SOMETHING MUST INTERACT', 120, 918, { color: C.text, weight: 600 });
     });
     // the record
     A(span(t, s('k7', 0.2), s('k8', 0.3), 0.4, 0.4), () => {

@@ -150,7 +150,7 @@ export const LINES = [
   { key: 'm3', text: 'In 1999, a team in Vienna sent *buckyballs*, molecules of 60 carbon atoms, through a grating of many slits.' },
   { key: 'm4', text: 'A buckyball is 0.7 nanometres across; its wave was some 280 times smaller, and still it interfered.', say: 'A buckyball is zero point seven nanometres across; its wave was some 280 times smaller, and still it interfered.' },
   { key: 'm5', text: 'The record grew to molecules of 810 atoms in 2013, and about 2,000 atoms in 2019.' },
-  { key: 'm6', text: 'In 2026, a team in Vienna showed interference with sodium clusters of more than 7,000 atoms each.' },
+  { key: 'm6', text: 'In 2026, a team in Vienna showed interference with sodium clusters, some of more than 7,000 atoms.' },
   { key: 'm7', text: 'The heavier the object, the shorter its wave, and the harder its stripes are to see.' },
   { key: 'm8', text: 'So far, quantum theory has passed every one of these tests.' },
 
