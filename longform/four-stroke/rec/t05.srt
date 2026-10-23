@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+Here is the twisting force that the gas puts on the crank, in an idealised model.
+
+2
+00:00:31,000 --> 00:00:56,000
+One cylinder gives one big shove, then a long wait, with a drag while it compresses.
+
+3
+00:01:01,000 --> 00:01:26,000
+Four cylinders give one shove after another.
+
+4
+00:01:31,000 --> 00:01:56,000
+With six cylinders, the power strokes overlap, and the push is smoother still.
+
+5
+00:02:01,000 --> 00:02:26,000
+Even spacing means less vibration and a smoother sound.
+
+6
+00:02:31,000 --> 00:02:56,000
+There is another way to light the fire, with no spark at all.
+
+7
+00:03:01,000 --> 00:03:26,000
+A diesel draws in only air, and squeezes it much harder, typically fifteen to twenty-three to one.
+
+8
+00:03:31,000 --> 00:03:56,000
+Squeezing air that hard heats it by hundreds of degrees.
+
+9
+00:04:01,000 --> 00:04:26,000
+Near the top, fuel is sprayed in, and it ignites in the hot air by itself.
+
+10
+00:04:31,000 --> 00:04:56,000
+With no fuel in the cylinder during the squeeze, nothing can ignite early, so a diesel can squeeze harder.
+
+11
+00:05:01,000 --> 00:05:26,000
+That's one reason diesels are efficient. Big, slow ship diesels reach up to fifty-five percent.
+
+12
+00:05:31,000 --> 00:05:56,000
+And instead of throttling its air, a diesel sets its power by how much fuel it injects.
+
+13
+00:06:01,000 --> 00:06:26,000
+Rudolf Diesel's first prototype fired in eighteen ninety-three, and his third, tested in eighteen ninety-seven, turned about twenty-six percent of its fuel into work.
+
+14
+00:06:31,000 --> 00:06:56,000
+And it runs the same four strokes of intake, compression, power and exhaust.
+
+15
+00:07:01,000 --> 00:07:26,000
+So here is the whole idea.
+
+16
+00:07:31,000 --> 00:07:56,000
+Draw in, squeeze, burn and push out. That's four strokes, in two turns of the crank.
+
+17
+00:08:01,000 --> 00:08:26,000
+The squeeze makes it efficient, and knock sets the limit on the squeeze.
+
+18
+00:08:31,000 --> 00:08:56,000
+Patented in eighteen sixty-two by a man who never built one, and made to work by Otto in eighteen seventy-six,
+
+19
+00:09:01,000 --> 00:09:26,000
+it is still the cycle inside most car engines.
+
+20
+00:09:31,000 --> 00:09:56,000
+At three thousand revolutions a minute, that's two turns and one push, twenty-five times every second.

@@ -9,8 +9,8 @@ dialogue's timing changes, re-check a few stills, `bash render-video.sh <slug>`,
 |---|---|---|---|---|---|
 | 1 | birthday | math-birthday-problem | af_bella | A=m2 B=af_bella | both versions reworded, re-recorded and delivered (10:27, dialogue 11:27). Done |
 | 2 | eratosthenes | history-eratosthenes-earth-circumference | m1 | A=m1 B=af_bella | both versions reworded, re-recorded and delivered (9:52, dialogue 11:43). Done |
-| 3 | four-stroke | engineering-four-stroke-engine | m2 | A=m2 B=af_heart | written (10:08, dialogue 12:32); queued |
-| 4 | sky-blue | physics-why-the-sky-is-blue | af_heart | A=m1 B=af_heart | monologue rendered and delivered (9:46); spoken-language pass done; both re-queued (sky-blue-v2) |
+| 3 | four-stroke | engineering-four-stroke-engine | m2 | A=m2 B=af_heart | written (10:08, dialogue 12:32); recording (job four-stroke) |
+| 4 | sky-blue | physics-why-the-sky-is-blue | af_heart | A=m1 B=af_heart | both versions reworded and delivered (9:49, dialogue 10:59). Done |
 | 5 | kepler | space-kepler-equal-areas | m1 | A=m1 B=af_nicole | written (10:58, dialogue 14:16 with stand-ins: check it stays under 15:00); queued |
 | 6 | double-slit | physics-double-slit | af_bella | A=m2 B=af_bella | written (10:49, dialogue 13:28); queued (job double-slit) |
 | 7 | public-key | tech-public-key-cryptography | af_heart | A=m1 B=af_heart | written (11:57, dialogue 14:06 with stand-ins: check it stays under 15:00); queued (job public-key) |
