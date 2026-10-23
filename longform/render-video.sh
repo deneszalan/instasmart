@@ -1,9 +1,10 @@
 #!/bin/bash
 # Final render of <slug>: the picture in 3 parallel chunks, then the narration and music (mix.py).
-# One video at a time (render.lock): the machine has 4 cores.
+# One video at a time (render.lock), never while the cloned voice records (chatterbox.lock): the machine has 4 cores.
 set -e
 S=$(cd "$(dirname "$0")" && pwd); slug=$1; d=$S/$slug
 exec 9>$S/render.lock; flock 9
+exec 8>$S/chatterbox.lock; flock 8
 D=$(node -e "console.log(require('$d/plan.json').duration)")
 c=$(echo "$D / 3 + 1" | bc)
 rm -f $d/part*.mp4

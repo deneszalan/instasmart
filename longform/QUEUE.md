@@ -19,4 +19,5 @@ dialogue's timing changes, re-check a few stills, `bash render-video.sh <slug>`,
 | 10 | zeno | philosophy-zeno-achilles-tortoise | af_heart | A=m2 B=af_heart | not started |
 
 `finalize.sh <slug> <voice> <A> <B>` does the central part for both versions (record, re-time music, check stills, render);
-run it detached and wait for `<slug>/finalize.done` (or `.failed`, see `finalize.log`).
+start it with `bash run-finalize.sh <slug> <voice> <A> <B>` (detached) and wait for `<slug>/finalize.done` (or `.failed`, see
+`finalize.log`). Kokoro runs on 1 thread, the cloned voice on 3; cloned-voice recording and final renders take turns.

@@ -94,9 +94,9 @@ export const LINES = [
   { key: 'h8', text: 'Their atmospheric engine, at about *12%* efficiency, won a gold medal at the Paris World’s Fair of 1867.', say: 'Their atmospheric engine, at about twelve percent efficiency, won a gold medal at the Paris World’s Fair of eighteen sixty-seven.' },
   { key: 'h9', gap: 0.7, text: 'Then, in 1876, Otto’s company built an engine that compressed its charge in four strokes.', say: 'Then, in eighteen seventy-six, Otto’s company built an engine that compressed its charge in four strokes.' },
   { key: 'h10', text: 'It was an immediate success: the first commercially successful engine to compress its charge in the cylinder.' },
-  { key: 'h11', gap: 0.7, text: 'But in 1886 the patent was cancelled in Germany, because Beau de Rochas had patented the cycle first.', say: 'But in eighteen eighty-six the patent was cancelled in Germany, because Beau de Rochas had patented the cycle first.' },
-  { key: 'h12', text: 'By 1889, more than 50 companies were building Otto-type engines.', say: 'By eighteen eighty-nine, more than fifty companies were building Otto-type engines.' },
-  { key: 'h13', text: 'Two of Otto’s former engineers, Gottlieb Daimler and Wilhelm Maybach, made it small and fast enough for vehicles.' },
+  { key: 'h11', gap: 0.7, text: 'Two of Otto’s former engineers, Gottlieb Daimler and Wilhelm Maybach, made it small and fast enough for vehicles.' },
+  { key: 'h12', gap: 0.7, text: 'But in 1886 the patent was cancelled in Germany, because Beau de Rochas had patented the cycle first.', say: 'But in eighteen eighty-six the patent was cancelled in Germany, because Beau de Rochas had patented the cycle first.' },
+  { key: 'h13', text: 'By 1889, more than 50 companies were building Otto-type engines.', say: 'By eighteen eighty-nine, more than fifty companies were building Otto-type engines.' },
   { key: 'h14', text: 'And the cycle still carries his name: the *Otto cycle*.' },
   // ---- 4 pressure and volume
   { key: 'p1', gap: 4.2, chapter: 'Pressure and volume', text: 'Why does squeezing first help so much? Engineers answer with a graph of pressure against volume.' },
