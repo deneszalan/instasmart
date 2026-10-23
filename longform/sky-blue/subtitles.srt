@@ -1,0 +1,403 @@
+1
+00:00:01,000 --> 00:00:04,490
+Look up on a clear day, and the whole sky glows blue.
+
+2
+00:00:04,570 --> 00:00:08,810
+But sunlight is white, and the air around you looks perfectly clear.
+
+3
+00:00:08,890 --> 00:00:11,060
+So where does all that blue come from?
+
+4
+00:00:11,140 --> 00:00:15,750
+And once you know, a second puzzle appears: why isn't the sky violet?
+
+5
+00:00:15,830 --> 00:00:21,870
+The answer takes in a tube of smoke, a fourth power, the sunsets of Mars, and your own eyes.
+
+6
+00:00:21,950 --> 00:00:25,270
+This is why the sky is blue.
+
+7
+00:00:29,070 --> 00:00:34,210
+Start with sunlight. It looks white, but it's a mixture of every colour of the rainbow.
+
+8
+00:00:34,290 --> 00:00:39,400
+Isaac Newton showed this with a prism, which spreads white light out into a spectrum.
+
+9
+00:00:39,480 --> 00:00:45,820
+Light is a wave, and its colour is set by its wavelength: the distance from one crest to the next.
+
+10
+00:00:45,900 --> 00:00:54,040
+Visible light runs from red, with waves about 720 nanometres long, to violet, at about 380.
+
+11
+00:00:54,120 --> 00:00:57,280
+A nanometre is a millionth of a millimetre.
+
+12
+00:00:57,360 --> 00:01:00,730
+In between come orange, yellow, green and blue.
+
+13
+00:01:00,810 --> 00:01:06,400
+We'll compare blue light at 450 nanometres with red light at 700.
+
+14
+00:01:06,480 --> 00:01:11,820
+Blue waves are shorter, and the whole story turns on that difference.
+
+15
+00:01:14,420 --> 00:01:18,140
+People have wondered about the colour of the sky for centuries.
+
+16
+00:01:18,220 --> 00:01:26,290
+In the early 1500s, Leonardo da Vinci guessed that sunlight scattered by tiny particles in the air makes the sky blue.
+
+17
+00:01:26,370 --> 00:01:33,210
+In 1869, the Irish physicist John Tyndall took the first steps toward a real explanation.
+
+18
+00:01:33,290 --> 00:01:39,930
+He needed perfectly clean air for his work on heat, and he hunted for dust by shining bright light through it.
+
+19
+00:01:40,010 --> 00:01:45,470
+When he slowly filled a tube with smoke and shone a beam along it, he saw something striking.
+
+20
+00:01:45,550 --> 00:01:50,710
+From the side, the beam looked blue. From the far end, it looked red.
+
+21
+00:01:50,790 --> 00:01:56,610
+The tiny particles were scattering blue light out sideways, and letting redder light carry on.
+
+22
+00:01:56,690 --> 00:01:59,980
+Tyndall suggested that this is why the sky is blue.
+
+23
+00:02:00,060 --> 00:02:07,500
+But he couldn't explain why blue light scatters more, and dust alone couldn't explain how blue the sky is.
+
+24
+00:02:10,100 --> 00:02:16,510
+The explanation began in 1871, with a young British physicist, John William Strutt.
+
+25
+00:02:16,590 --> 00:02:23,380
+Two years later he became Lord Rayleigh, and the effect now carries his name: Rayleigh scattering.
+
+26
+00:02:23,460 --> 00:02:31,530
+Light is an electric and magnetic wave. As it passes a tiny particle, its electric field shakes the charges inside.
+
+27
+00:02:31,610 --> 00:02:37,720
+The shaken particle becomes a tiny antenna, and sends out light of its own in new directions.
+
+28
+00:02:37,800 --> 00:02:43,090
+This works for particles far smaller than the wavelength: less than about a tenth of it.
+
+29
+00:02:43,170 --> 00:02:48,940
+And it follows a simple rule: scattering goes as one over the wavelength to the fourth power.
+
+30
+00:02:49,020 --> 00:02:53,130
+Halve the wavelength, and the scattering gets 16 times stronger.
+
+31
+00:02:53,210 --> 00:03:04,550
+So compare blue at 450 nanometres with red at 700. 700 divided by 450, to the fourth power, is about 5.9.
+
+32
+00:03:04,630 --> 00:03:10,070
+Air scatters blue light nearly 6 times more strongly than red.
+
+33
+00:03:10,150 --> 00:03:15,560
+In 1899, Rayleigh showed that the same rule applies to single molecules.
+
+34
+00:03:15,640 --> 00:03:23,550
+Molecules of nitrogen and oxygen are less than a nanometre across: hundreds of times smaller than a wave of light.
+
+35
+00:03:23,630 --> 00:03:27,600
+So the air itself scatters the light. No dust is needed.
+
+36
+00:03:27,680 --> 00:03:36,120
+Later, Albert Einstein worked out the scattering by molecules in detail, and his result agreed with experiment.
+
+37
+00:03:38,720 --> 00:03:41,760
+Now picture sunlight streaming down through the air.
+
+38
+00:03:41,840 --> 00:03:46,550
+Most of it comes straight through, but some is scattered by molecules on the way.
+
+39
+00:03:46,630 --> 00:03:52,790
+Because short waves scatter most, it's mostly blue light that gets knocked off in new directions.
+
+40
+00:03:52,870 --> 00:03:59,510
+That scattered blue reaches your eyes from every part of the sky, so the whole dome glows.
+
+41
+00:03:59,590 --> 00:04:05,300
+The sunlight that comes straight through has lost a little blue, so the Sun itself looks slightly yellow.
+
+42
+00:04:05,380 --> 00:04:14,250
+Measured, the light of a blue sky holds every colour, with a broad peak between 450 and 485 nanometres.
+
+43
+00:04:14,330 --> 00:04:20,000
+Our eyes take that mix as blue blended with white: the soft colour we call sky blue.
+
+44
+00:04:20,080 --> 00:04:26,290
+And no, the sky isn't blue because it reflects the sea. If anything, it's the other way round.
+
+45
+00:04:26,370 --> 00:04:32,170
+Seen from the beach, the sea looks blue partly because it reflects the sky.
+
+46
+00:04:34,770 --> 00:04:39,380
+But here's the puzzle. Violet light has even shorter waves than blue.
+
+47
+00:04:39,460 --> 00:04:45,120
+At 400 nanometres, violet scatters more than 9 times as strongly as red.
+
+48
+00:04:45,200 --> 00:04:47,370
+So why isn't the sky violet?
+
+49
+00:04:47,450 --> 00:04:52,270
+Part of the answer is that sunlight holds less violet than blue to begin with.
+
+50
+00:04:52,350 --> 00:04:57,040
+And some violet is absorbed high in the atmosphere, before it reaches us.
+
+51
+00:04:57,120 --> 00:05:03,160
+Still, a rainbow shows that plenty of violet gets through. The rest of the answer is in your eyes.
+
+52
+00:05:03,240 --> 00:05:06,810
+For one thing, our eyes are less sensitive to violet.
+
+53
+00:05:06,890 --> 00:05:13,280
+We see colour with three kinds of cone cells, which respond most strongly to red, green and blue light.
+
+54
+00:05:13,360 --> 00:05:19,130
+Skylight stimulates the red and green cones about equally, and the blue cones more strongly.
+
+55
+00:05:19,210 --> 00:05:22,680
+Our vision reads that combination as a pale blue.
+
+56
+00:05:22,760 --> 00:05:28,230
+So the blue of the sky is partly physics, and partly the way we see.
+
+57
+00:05:30,830 --> 00:05:34,170
+If air turns sunlight blue, why are clouds white?
+
+58
+00:05:34,250 --> 00:05:40,990
+Clouds are made of water droplets, typically a few micrometres, or thousandths of a millimetre, across.
+
+59
+00:05:41,070 --> 00:05:46,180
+That's thousands of times bigger than an air molecule, and bigger than a wave of light.
+
+60
+00:05:46,260 --> 00:05:51,900
+Particles that big don't follow Rayleigh's rule. They scatter all colours about equally.
+
+61
+00:05:51,980 --> 00:05:56,640
+This is Mie scattering, after the German physicist Gustav Mie.
+
+62
+00:05:56,720 --> 00:06:00,410
+Scatter every colour alike, and white light stays white.
+
+63
+00:06:00,490 --> 00:06:06,860
+A thick cloud reflects 70 to 95 percent of the light that falls on it, across all colours.
+
+64
+00:06:06,940 --> 00:06:11,030
+Its base can look grey, simply because less light makes it through.
+
+65
+00:06:11,110 --> 00:06:18,250
+The same kind of scattering makes haze look whitish, and puts a bright white glow around the Sun.
+
+66
+00:06:20,850 --> 00:06:25,840
+Scattered skylight has another property that our eyes can't see: it's polarised.
+
+67
+00:06:25,920 --> 00:06:32,960
+Light waves can vibrate in any direction across their path. In polarised light, one direction wins out.
+
+68
+00:06:33,040 --> 00:06:38,200
+Skylight is most strongly polarised in a band 90 degrees away from the Sun.
+
+69
+00:06:38,280 --> 00:06:43,440
+There, in a clear sky, the polarisation typically reaches about 80 percent.
+
+70
+00:06:43,520 --> 00:06:48,310
+Polarising sunglasses can make that part of the sky look a deeper blue.
+
+71
+00:06:48,390 --> 00:06:56,330
+Rayleigh's first papers on the sky, in 1871, were titled "On the light from the sky, its polarization and colour".
+
+72
+00:06:56,410 --> 00:07:00,520
+Many insects can sense this pattern and use it as a compass.
+
+73
+00:07:00,600 --> 00:07:04,790
+The idea goes back to Karl von Frisch's studies of honeybees.
+
+74
+00:07:04,870 --> 00:07:10,390
+From the pattern alone, an animal can work out where the Sun is, even when it's out of sight.
+
+75
+00:07:10,470 --> 00:07:18,410
+It has even been suggested that Viking sailors did something similar, with a crystal called a sunstone.
+
+76
+00:07:21,010 --> 00:07:25,350
+As the day ends, the same rule paints the sky in different colours.
+
+77
+00:07:25,430 --> 00:07:29,540
+When the Sun is high, its light takes the shortest route through the air.
+
+78
+00:07:29,620 --> 00:07:35,730
+Squeeze all the air above you to sea-level density, and it would be only about 8 kilometres deep.
+
+79
+00:07:35,810 --> 00:07:41,520
+Near the horizon, sunlight slants through far more air: about 38 times as much.
+
+80
+00:07:41,600 --> 00:07:46,090
+That's like crossing more than 300 kilometres of air at sea level.
+
+81
+00:07:46,170 --> 00:07:50,490
+Along that path, the blue and green are scattered out almost completely.
+
+82
+00:07:50,570 --> 00:07:54,210
+What's left to reach you is orange and red.
+
+83
+00:07:54,290 --> 00:08:00,430
+That reddened light falls on clouds, and they scatter it back to us: red and orange on white.
+
+84
+00:08:00,510 --> 00:08:03,750
+In very clear air, a setting Sun looks yellow.
+
+85
+00:08:03,830 --> 00:08:08,990
+Fine particles of smoke or dust make it redder, and sea salt can turn it orange.
+
+86
+00:08:09,070 --> 00:08:15,670
+And after sunset, ozone high in the atmosphere helps keep the sky overhead blue.
+
+87
+00:08:18,270 --> 00:08:22,560
+On other worlds, the physics is the same, but the air is different.
+
+88
+00:08:22,640 --> 00:08:29,510
+At the surface of Mars, the air is only 1 to 2 percent as dense as ours, and full of fine dust.
+
+89
+00:08:29,590 --> 00:08:33,060
+By day, the Martian sky is a butterscotch colour.
+
+90
+00:08:33,140 --> 00:08:37,480
+But near the setting Sun, the Martian sky turns blue.
+
+91
+00:08:37,560 --> 00:08:43,770
+NASA's Curiosity rover photographed a sunset like this in 2015, from Gale Crater.
+
+92
+00:08:43,850 --> 00:08:49,590
+According to NASA, the fine dust lets blue light through more efficiently than redder colours.
+
+93
+00:08:49,670 --> 00:08:54,860
+So the blue stays close to the Sun, while yellow and red light spreads across the sky.
+
+94
+00:08:54,940 --> 00:08:58,850
+It's the opposite of what happens on Earth.
+
+95
+00:08:58,930 --> 00:09:00,900
+So, why is the sky blue?
+
+96
+00:09:00,980 --> 00:09:07,300
+Sunlight holds every colour, and the molecules of the air scatter short waves far more than long ones.
+
+97
+00:09:07,380 --> 00:09:13,670
+Blue scatters nearly 6 times more than red, so scattered blue reaches us from all over the sky.
+
+98
+00:09:13,750 --> 00:09:19,890
+Violet scatters even more, but sunlight holds less of it, and our eyes are less sensitive to it.
+
+99
+00:09:19,970 --> 00:09:26,060
+At sunset, the light crosses so much air that the blue is scattered away, leaving orange and red.
+
+100
+00:09:26,140 --> 00:09:32,280
+And clouds, made of far bigger droplets, scatter every colour alike, so they stay white.
+
+101
+00:09:32,360 --> 00:09:38,980
+Every patch of blue you see is sunlight that the air itself has turned toward your eyes.

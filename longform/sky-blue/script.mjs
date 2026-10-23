@@ -129,7 +129,7 @@ export const LINES = [
   { key: 'p1', gap: 4.2, chapter: 'A hidden pattern', text: 'Scattered skylight has another property that our eyes can’t see: it’s *polarised*.' },
   { key: 'p2', text: 'Light waves can vibrate in any direction across their path. In polarised light, one direction wins out.' },
   { key: 'p3', text: 'Skylight is most strongly polarised in a band 90 degrees away from the Sun.' },
-  { key: 'p4', text: 'There, in a clear sky, the polarisation typically reaches about 80 percent.' },
+  { key: 'p4', text: 'There, in a clear sky, the polarisation can reach about 80 percent.' },
   { key: 'p5', text: 'Polarising sunglasses can make that part of the sky look a deeper blue.' },
   { key: 'p6', text: 'Rayleigh’s first papers on the sky, in 1871, were titled “On the light from the sky, its polarization and colour”.', say: 'Rayleigh’s first papers on the sky, in 1871, were titled: On the light from the sky, its polarization and colour.' },
   { key: 'p7', text: 'Many insects can sense this pattern and use it as a compass.' },

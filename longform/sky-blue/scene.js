@@ -127,21 +127,32 @@ function ridge(g, top, fill, a, rnd, pool = 0.35) {
   g.globalAlpha = 1;
 }
 function hillTop(base, amp, f1, f2, p) { return (x) => base + amp * Math.sin(x / f1 + p) + amp * 0.5 * Math.sin(x / f2 + p * 2.3) + amp * 0.18 * Math.sin(x / 23 + p); }
-/** A cumulus cloud: lobes of white lifted out of the wash, with grey shading underneath. */
-function paintCloud(g, cx, cy, w, rnd, { lit = '#FFFFFF', shade = '#8E9BB3', a = 1 } = {}) {
-  g.save(); g.globalAlpha = a;
-  const lobes = [];
-  for (let i = 0; i < 9; i++) { const u = i / 8 - 0.5; lobes.push([cx + u * w * 0.9 + (rnd() - 0.5) * 30, cy - Math.cos(u * Math.PI) * w * 0.16 + (rnd() - 0.5) * 16, w * (0.13 + rnd() * 0.08)]); }
-  g.globalCompositeOperation = 'source-over';
-  for (const [x, y, r] of lobes) { g.fillStyle = mixHex(lit, '#FFFFFF', 0.4); g.globalAlpha = a * 0.92; wobble(g, x, y, r, r * 0.9, rnd, 0.1); g.fill(); }
-  g.globalCompositeOperation = 'multiply';
-  const sg = g.createLinearGradient(0, cy - w * 0.05, 0, cy + w * 0.2);
-  sg.addColorStop(0, rgba(hex(shade), 0)); sg.addColorStop(1, rgba(hex(shade), 0.75));
-  g.fillStyle = sg; g.globalAlpha = a;
-  for (const [x, y, r] of lobes) { wobble(g, x, y + r * 0.15, r, r * 0.85, rnd, 0.1); g.fill(); }
-  g.globalAlpha = a * 0.25; g.strokeStyle = shade; g.lineWidth = 2;
-  for (const [x, y, r] of lobes) { wobble(g, x, y, r * 0.98, r * 0.88, rnd, 0.1); g.stroke(); }
-  g.restore();
+/** A cumulus cloud, painted on its own sheet: soft lobes of white, a flat base, shading laid over the underside. */
+function paintCloud(g, cx, cy, w, rnd, { lit = '#FFFFFF', shade = '#8E9BB3', warm = null, a = 1 } = {}) {
+  const cw = Math.ceil(w * 1.5), ch = Math.ceil(w * 0.75), c = mk(cw, ch), q = c.getContext('2d'), ox = cw / 2, oy = ch * 0.62;
+  const lc = hex(lit), lobe = (x, y, r, al) => {
+    const rg = q.createRadialGradient(x, y, r * 0.1, x, y, r);
+    rg.addColorStop(0, rgba(lc, al)); rg.addColorStop(0.62, rgba(lc, al * 0.92)); rg.addColorStop(1, rgba(lc, 0));
+    q.fillStyle = rg; q.beginPath(); q.arc(x, y, r, 0, Math.PI * 2); q.fill();
+  };
+  for (let i = 0; i < 22; i++) {
+    const u = rnd() * 2 - 1, hgt = 1 - u * u;
+    lobe(ox + u * w * 0.46, oy - hgt * w * 0.16 - rnd() * w * 0.05, w * (0.07 + 0.08 * hgt + rnd() * 0.03), 0.9);
+  }
+  for (let i = 0; i < 18; i++) { const u = i / 17 * 2 - 1; lobe(ox + u * w * 0.42, oy - w * 0.005, w * (0.075 - 0.02 * u * u), 0.9); }
+  // a solid core, so no gaps open between the lobes
+  q.save(); q.translate(ox, oy - w * 0.06); q.scale(1, 0.26);
+  const core = q.createRadialGradient(0, 0, 0, 0, 0, w * 0.44);
+  core.addColorStop(0, rgba(lc, 0.95)); core.addColorStop(0.75, rgba(lc, 0.9)); core.addColorStop(1, rgba(lc, 0));
+  q.fillStyle = core; q.beginPath(); q.arc(0, 0, w * 0.44, 0, Math.PI * 2); q.fill(); q.restore();
+  q.globalCompositeOperation = 'source-atop';
+  const sc = hex(shade), sg = q.createLinearGradient(0, oy - w * 0.2, 0, oy + w * 0.08);
+  sg.addColorStop(0, rgba(sc, 0)); sg.addColorStop(0.5, rgba(sc, 0.25)); sg.addColorStop(1, rgba(sc, 0.8));
+  q.fillStyle = sg; q.fillRect(0, 0, cw, ch);
+  if (warm) { const wc = hex(warm), wg = q.createLinearGradient(0, oy - w * 0.1, 0, oy + w * 0.08); wg.addColorStop(0, rgba(wc, 0)); wg.addColorStop(1, rgba(wc, 0.55)); q.fillStyle = wg; q.fillRect(0, 0, cw, ch); }
+  // the clean sky edge on top: a faint lift
+  q.globalCompositeOperation = 'source-over';
+  g.save(); g.globalAlpha = a; g.globalCompositeOperation = 'source-over'; g.drawImage(c, cx - ox, cy - oy); g.restore();
 }
 const PLATES = {
   noon: { seed: 3, top: '#2B66B0', mid: '#7AAEDF', hor: '#DDEBF2', horizon: 880, hills: ['#7E9DBB', '#4E6E92', '#2E4766'] },
@@ -153,6 +164,9 @@ const PLATES = {
   mars: { seed: 17, top: '#6E5038', mid: '#B98F62', hor: '#E2BF8F', horizon: 800, mars: true },
 };
 const plateCache = {};
+const FAR = { hills: hillTop(880 - 70, 26, 230, 97, 0.8), mars: hillTop(800 - 40, 34, 300, 120, 1.3) };
+/** Clip to the sky above a far ridge, so a low Sun sets behind the hills. */
+function clipAbove(top) { ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(W, 0); for (let x = W; x >= 0; x -= 8) ctx.lineTo(x, top(x)); ctx.closePath(); ctx.clip(); }
 function plate(name) {
   if (plateCache[name]) return plateCache[name];
   const p = PLATES[name], c = mk(W, H), g = c.getContext('2d'), rnd = mulberry32(p.seed);
@@ -184,11 +198,11 @@ function plate(name) {
     g.fillStyle = rg; wobble(g, x, y, r * 1.6, r * 0.5, rnd, 0.2); g.fill();
   }
   if (p.clouds) {
-    const lit = p.clouds === 'sunset' ? '#FFD2A6' : '#FFFFFF', shade = p.clouds === 'sunset' ? '#7A4A6E' : '#8B99B2';
-    paintCloud(g, 560, 470, 520, rnd, { lit, shade });
-    paintCloud(g, 180, 640, 300, rnd, { lit, shade, a: 0.9 });
-    paintCloud(g, 860, 290, 280, rnd, { lit, shade, a: 0.85 });
-    if (p.clouds === 'sunset') paintCloud(g, 1500, 360, 420, rnd, { lit, shade, a: 0.7 });
+    const sunset = p.clouds === 'sunset', lit = sunset ? '#F6C6B0' : '#FFFFFF', shade = sunset ? '#6E3E66' : '#7F8EAA', warm = sunset ? '#FF8A3D' : null;
+    paintCloud(g, 560, 480, 560, rnd, { lit, shade, warm });
+    paintCloud(g, 170, 650, 320, rnd, { lit, shade, warm, a: 0.92 });
+    paintCloud(g, 870, 290, 300, rnd, { lit, shade, warm, a: 0.88 });
+    if (sunset) paintCloud(g, 1500, 360, 440, rnd, { lit, shade, warm, a: 0.75 });
   }
   g.globalCompositeOperation = 'multiply';
   if (p.hills) {
@@ -668,15 +682,15 @@ function partRayleigh(t) {
     const sc = seg(t, s('r11'), s('r11', 0.8));
     A(sc, () => {
       // one wave of blue light, 450 nm, drawn 760 px long: a molecule under 1 nm is under 1.7 px
-      const x0 = 140, x1 = 900, y = 560, wl = x1 - x0;
+      const x0 = 140, x1 = 900, y = 610, wl = x1 - x0;
       wave(x0, y, x1, y, wl, 60, -Math.PI / 2 + Math.PI / 2, 'rgba(150,195,255,0.95)', 5);
       bracket(x0, x1, y + 100, C.cream, false);
       sky('one wave of blue light: 450 nm', (x0 + x1) / 2, y + 148, { size: 34, align: 'center' });
-      const mx = 760, my = y - 110;
+      const mx = 790, my = y - 130;
       ctx.fillStyle = C.cream; ctx.beginPath(); ctx.arc(mx, my, 1.4, 0, Math.PI * 2); ctx.fill();
       ctx.strokeStyle = 'rgba(255,253,246,0.8)'; ctx.lineWidth = 2.5; ctx.beginPath(); ctx.arc(mx, my, 22, 0, Math.PI * 2); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo(mx - 18, my - 12); ctx.lineTo(mx - 60, my - 34); ctx.stroke();
-      sky('a molecule: under 1 nm', mx - 70, my - 40, { size: 34, weight: 600, align: 'right' });
+      ctx.beginPath(); ctx.moveTo(mx - 24, my); ctx.lineTo(mx - 60, my); ctx.stroke();
+      sky('a molecule: under 1 nm', mx - 72, my, { size: 34, weight: 600, align: 'right' });
     });
     A(seg(t, s('r12'), s('r12', 0.6)), () => sky('the air itself does it: no dust needed', 520, 860, { size: 40, weight: 600, fam: SERIF, align: 'center' }));
     A(seg(t, s('r13'), s('r13', 0.6)), () => sky('later: Einstein’s theory matches experiment', 520, 920, { size: 32, weight: 300, align: 'center' }));
@@ -922,7 +936,6 @@ function partViolet(t) {
 function partClouds(t) {
   const halo = seg(t, s('c9'), s('c9', 1.2));
   sun(240, 200, 44, { halo: 4.4 + halo * 2.5, glowA: 0.6 + halo * 0.3, glow: [255, 252, 245] });
-  A(halo, () => sky('a white glow around the Sun', 120, 330, { size: 34, weight: 400 }));
   // white light in, white light out
   const wi = span(t, s('c6'), s('c8', 0.2), 0.6, 0.6);
   A(wi, () => {
@@ -935,13 +948,13 @@ function partClouds(t) {
     }
     sky('white in, white out', 560, 700, { size: 38, weight: 600, align: 'center' });
   });
-  A(span(t, s('c8'), s('c9', 0.3), 0.6, 0.6), () => { arrow(760, 760, 640, 590, 'rgba(255,253,246,0.9)', 3, 14); sky('less light gets through: a grey base', 780, 790, { size: 34, weight: 400 }); });
+  A(span(t, s('c8'), s('c9', 0.3), 0.6, 0.6), () => { arrow(560, 766, 545, 500, 'rgba(255,253,246,0.9)', 3, 14); sky('less light gets through: a grey base', 560, 800, { size: 34, weight: 400, align: 'center' }); });
   card(seg(t, s('c2', -0.4), s('c2', 0.3)), () => {
     const stA = 1 - seg(t, s('c4') - 0.3, s('c4', 0.3)), stB = span(t, s('c4', 0.1), s('c7', 0.3), 0.6, 0.6), stC = seg(t, s('c7'), s('c7', 0.6));
     A(stA, () => {
       cardTitle('How big?');
       txt('sizes on a scale of tens', CX, CARD.y + 122, { size: 32, weight: 300, align: 'center', color: C.inkSoft });
-      const x0 = CARD.x + 70, x1 = CARD.x + CARD.w - 70, y = CARD.y + 430, lg = (nm) => lerp(x0, x1, (Math.log10(nm) + 1) / 6); // 0.1 nm .. 100,000 nm
+      const x0 = CARD.x + 70, x1 = CARD.x + CARD.w - 70, y = CARD.y + 400, lg = (nm) => lerp(x0, x1, (Math.log10(nm) + 1) / 6); // 0.1 nm .. 100,000 nm
       ctx.strokeStyle = C.ink; ctx.lineWidth = 2.5; ctx.beginPath(); ctx.moveTo(x0, y); ctx.lineTo(x1, y); ctx.stroke();
       [[0.1, '0.1 nm'], [1, '1 nm'], [10, '10 nm'], [100, '100 nm'], [1000, '1 µm'], [10000, '10 µm']].forEach(([v, l]) => {
         ctx.beginPath(); ctx.moveTo(lg(v), y - 10); ctx.lineTo(lg(v), y + 10); ctx.stroke();
@@ -1032,7 +1045,7 @@ function partPolar(t) {
       for (let i = 0; i < 6; i++) { wobble(ctx, sp.x - 40 + i * 16, sp.y + Math.sin(i) * 10, 38, 28, rnd, 0.1); ctx.fill(); }
       txt('Sun hidden', sp.x, sp.y + 72, { size: 32, weight: 600, align: 'center' });
     });
-    A(1 - hidden, () => sky('Sun', sp.x + 34, sp.y - 26, { size: 34, weight: 600, shadow: 'rgba(12,22,48,0.4)' }));
+    A(1 - hidden, () => txt('Sun', sp.x + 34, sp.y - 26, { size: 34, weight: 600 }));
     sky('looking straight up (diagram)', DISC.x, DISC.y + DISC.r + 48, { size: 32, weight: 300, align: 'center' });
     A(seg(t, s('p3', 0.8), s('p3', 1.5)), () => sky('most polarised: 90° from the Sun', DISC.x, DISC.y - DISC.r - 34, { size: 34, weight: 600, align: 'center' }));
     // sunglasses over the band
@@ -1044,7 +1057,7 @@ function partPolar(t) {
       sky('a deeper blue', gx, gy + 66, { size: 34, weight: 600, align: 'center' });
     });
   });
-  card(seg(t, s('p2', -0.4), s('p2', 0.3)), () => {
+  card(seg(t, s('p1', 0.6), s('p1', 1.3)), () => {
     const stA = 1 - seg(t, s('p4') - 0.3, s('p4', 0.3)), stB = span(t, s('p4', 0.1), s('p6', 0.3), 0.6, 0.6), stC = span(t, s('p6', 0.1), s('p7', 0.3), 0.6, 0.6), stD = seg(t, s('p7'), s('p7', 0.6));
     A(stA, () => {
       cardTitle('Polarised light');
@@ -1117,22 +1130,22 @@ function partPolar(t) {
 // ---------- 8: sunset ----------
 /** The colour of sunlight after crossing m air masses (for drawing). */
 function sunColour(m) {
-  let r = 0, g = 0, b = 0, n = 0;
-  for (let nm = 400; nm <= 700; nm += 10) { const c = nmRGB(nm, 0), tr = Math.exp(-tau(nm) * m); r += c[0] * tr; g += c[1] * tr; b += c[2] * tr; n++; }
-  const mx = Math.max(r, g, b);
-  return [r, g, b].map((v) => Math.round(255 * Math.pow(v / mx, 0.75)));
+  // the sum over the spectrum, white-balanced so that light with nothing removed comes out white
+  const sum = (mm) => { let r = 0, g = 0, b = 0; for (let nm = 400; nm <= 700; nm += 5) { const c = nmRGB(nm, 0), tr = Math.exp(-tau(nm) * mm); r += c[0] * tr; g += c[1] * tr; b += c[2] * tr; } return [r, g, b]; };
+  const w = sum(0), v = sum(m).map((x, i) => x / w[i]), mx = Math.max(...v);
+  return v.map((x) => Math.round(255 * Math.pow(x / mx, 0.6)));
 }
 function partSunset(t) {
   // the Sun goes down on the left: its height in degrees, from 60 to 0
   const dn = eio(seg(t, s('s2'), s('s7', 0.6))), alt = lerp(60, 0.5, dn), m = airMass(90 - alt);
   const sx = lerp(330, 560, dn), sy = lerp(300, 836, dn), col = sunColour(m);
   const fadeOut = 1 - seg(t, s('s11'), s('s11', 1.5));
-  A(fadeOut, () => sun(sx, sy, lerp(44, 58, dn), { core: rgba(mixRGB(col, [255, 255, 255], 0.25 * (1 - dn))), glow: col, glowA: lerp(0.55, 0.75, dn), halo: lerp(4.4, 6, dn) }));
+  A(fadeOut, () => { ctx.save(); clipAbove(FAR.hills); sun(sx, sy, lerp(44, 58, dn), { core: rgba(mixRGB(col, [255, 255, 255], 0.25 * (1 - dn))), glow: col, glowA: lerp(0.55, 0.75, dn), halo: lerp(4.4, 6, dn) }); ctx.restore(); });
   // clouds lit by the reddened light
   A(seg(t, s('s8'), s('s8', 1.0)) * fadeOut, () => {
     ctx.save(); ctx.globalCompositeOperation = 'soft-light';
     const g = ctx.createRadialGradient(560, 820, 40, 560, 820, 900); g.addColorStop(0, 'rgba(255,140,60,0.9)'); g.addColorStop(1, 'rgba(255,140,60,0)');
-    ctx.fillStyle = g; ctx.fillRect(0, 0, 1020, H); ctx.restore();
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); ctx.restore();
     sky('red and orange on white clouds', 560, 160, { size: 34, weight: 400, align: 'center' });
   });
   // after sunset, ozone helps keep the sky blue
@@ -1141,27 +1154,28 @@ function partSunset(t) {
     const stA = 1 - seg(t, s('s6') - 0.3, s('s6', 0.3)), stB = span(t, s('s6', 0.1), s('s9', 0.2), 0.6, 0.6), stC = seg(t, s('s9'), s('s9', 0.6));
     A(stA, () => {
       cardTitle('The long way through');
-      // a slice of the Earth with its (exaggerated) air
-      const ex = CX, R = 1500, ey = CARD.y + 520 + R, air = 70, top = ey - R;
-      ctx.save(); k.rrect(CARD.x + 20, CARD.y + 110, CARD.w - 40, 470, 12); ctx.clip();
-      ctx.fillStyle = 'rgba(120,170,225,0.35)'; ctx.beginPath(); ctx.arc(ex, ey, R + air, 0, Math.PI * 2); ctx.fill();
-      ctx.fillStyle = '#5E7F62'; ctx.beginPath(); ctx.arc(ex, ey, R, 0, Math.PI * 2); ctx.fill();
+      // a slice of the Earth with its air, the air drawn far thicker than to scale
+      const R = 470, air = 96, ox = CX + 90, oy = CARD.y + 430, ex = ox, ey = oy + R, L = Math.sqrt((R + air) ** 2 - R ** 2);
+      ctx.save(); ctx.beginPath(); ctx.rect(CARD.x + 30, CARD.y + 120, CARD.w - 60, 450); ctx.clip();
+      ctx.fillStyle = 'rgba(120,170,225,0.38)'; ctx.beginPath(); ctx.arc(ex, ey, R + air, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = '#6F8F6E'; ctx.beginPath(); ctx.arc(ex, ey, R, 0, Math.PI * 2); ctx.fill();
+      ctx.strokeStyle = 'rgba(30,42,68,0.35)'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(ex, ey, R + air, 0, Math.PI * 2); ctx.stroke();
       ctx.restore();
-      txt('air (much thicker than to scale)', CX, top - air - 26, { size: 32, weight: 300, align: 'center', color: C.inkSoft });
-      const ox = ex, oy = top;
-      ctx.fillStyle = C.ink; ctx.beginPath(); ctx.arc(ox, oy - 6, 8, 0, Math.PI * 2); ctx.fill();
-      // overhead: straight down
+      txt('Earth', ox, oy + 90, { size: 34, weight: 600, align: 'center', color: '#F4F1E6' });
+      txt('air (diagram, far thicker than to scale)', CX, CARD.y + 600, { size: 32, weight: 300, align: 'center', color: C.inkSoft });
+      ctx.fillStyle = C.ink; ctx.beginPath(); ctx.arc(ox, oy - 4, 9, 0, Math.PI * 2); ctx.fill();
+      // overhead: straight down through the air
       A(seg(t, s('s2', 0.3), s('s2', 1.0)), () => {
-        arrow(ox, oy - air - 60, ox, oy - 18, '#C99A1A', 5, 16);
-        txt('Sun high', ox + 14, oy - air - 56, { size: 32, weight: 600, color: C.yellow });
+        arrow(ox, oy - air - 70, ox, oy - 18, '#B88A10', 6, 18);
+        txt('Sun high', ox + 18, oy - air - 60, { size: 34, weight: 600, color: C.yellow });
       });
-      A(seg(t, s('s3'), s('s3', 0.6)), () => txt('≈ 8 km of sea-level air', ox + 20, oy - 34, { size: 32, weight: 600 }));
+      A(seg(t, s('s3'), s('s3', 0.6)), () => { txt('≈ 8 km of', ox + 22, oy - 58, { size: 32, weight: 600 }); txt('sea-level air', ox + 22, oy - 22, { size: 32, weight: 400 }); });
       // near the horizon: a long slant through the air
       A(seg(t, s('s4'), s('s4', 0.8)), () => {
-        const L = Math.sqrt((R + air) ** 2 - R ** 2);
-        arrow(ox - L - 40, oy - 4, ox - 16, oy - 6, C.orange, 5, 16);
-        txt('Sun on the horizon', ox - 300, oy + 40, { size: 32, weight: 600, color: C.orange, align: 'center' });
-        txt(`≈ ${Math.round(HORIZON_X)}× as much air`, ox - 300, oy + 80, { size: 34, weight: 600, align: 'center' });
+        ctx.strokeStyle = 'rgba(196,106,30,0.25)'; ctx.lineWidth = 16; ctx.beginPath(); ctx.moveTo(ox - L, oy - 4); ctx.lineTo(ox - 12, oy - 4); ctx.stroke();
+        arrow(ox - L - 70, oy - 4, ox - 16, oy - 4, C.orange, 6, 18);
+        txt('Sun on the horizon', ox - L - 60, oy - 44, { size: 34, weight: 600, color: C.orange });
+        txt(`≈ ${Math.round(HORIZON_X)}× as much air`, ox - L - 60, oy + 40, { size: 34, weight: 600 });
       });
       // the two paths as bars, to scale
       A(seg(t, s('s5'), s('s5', 0.6)), () => {
@@ -1214,13 +1228,13 @@ function partOther(t) {
     // the Martian Sun: about two-thirds the size; it sets at m4
     const dn = eio(seg(t, s('m4'), s('m4', 2.4))), sx = lerp(420, 600, dn), sy = lerp(250, 740, dn);
     const glow = seg(t, s('m4', 0.8), s('m4', 2.6));
+    ctx.save(); clipAbove(FAR.mars);
     A(glow, () => {
       const g = ctx.createRadialGradient(sx, sy, 10, sx, sy, 380); g.addColorStop(0, 'rgba(150,190,235,0.95)'); g.addColorStop(0.45, 'rgba(130,170,220,0.45)'); g.addColorStop(1, 'rgba(130,170,220,0)');
       ctx.fillStyle = g; ctx.beginPath(); ctx.arc(sx, sy, 380, 0, Math.PI * 2); ctx.fill();
     });
     sun(sx, sy, 30, { core: '#FBF8F0', glow: glow > 0.5 ? [200, 220, 245] : [255, 240, 215], glowA: 0.45, halo: 3 });
-    // hills in front of the setting Sun
-    ctx.fillStyle = 'rgba(122,72,44,0.0)';
+    ctx.restore();
     rover(820, 930, 1.2);
     A(seg(t, s('m3'), s('m3', 0.6)) * (1 - seg(t, s('m4'), s('m4', 0.6))), () => sky('Mars by day: butterscotch', 520, 150, { size: 40, weight: 600, fam: SERIF, align: 'center' }));
     A(seg(t, s('m4', 1.2), s('m4', 2.0)), () => sky('Mars at sunset: blue near the Sun', 520, 150, { size: 40, weight: 600, fam: SERIF, align: 'center' }));
@@ -1281,11 +1295,13 @@ function partOther(t) {
       const a = eout(seg(t, s(key), s(key, 0.8))), x = 330 + i * 315, y = 520;
       A(a, () => {
         swatch(x, y, 122, ['#FBF6EA', '#CFE2F5', '#E4D8F5', '#F6C99A', '#FFFFFF'][i], 0.95, 60 + i);
+        ctx.save(); ctx.beginPath(); ctx.arc(x, y, 112, 0, Math.PI * 2); ctx.clip();
         if (i === 0) { for (let j = 0; j < 30; j++) { ctx.fillStyle = rgba(nmRGB(lerp(700, 400, j / 30), 0.05), 0.75); ctx.beginPath(); ctx.moveTo(x - 70, y); ctx.lineTo(x + 70, y - 60 + j * 4); ctx.lineTo(x + 70, y - 56 + j * 4); ctx.closePath(); ctx.fill(); } }
         if (i === 1) txt('≈ 6×', x, y, { size: 74, weight: 600, fam: SERIF, align: 'center', color: C.blue });
         if (i === 2) eye(x, y, 1.3, '#6D45B8');
         if (i === 3) { sun(x, y + 30, 30, { core: '#FFD9A0', glow: [255, 150, 70], halo: 3 }); ctx.fillStyle = '#553D61'; ctx.fillRect(x - 100, y + 40, 200, 30); }
         if (i === 4) { const rnd = mulberry32(8); ctx.fillStyle = '#FFFFFF'; ctx.strokeStyle = 'rgba(120,135,165,0.6)'; ctx.lineWidth = 2; for (let j = 0; j < 5; j++) { wobble(ctx, x - 50 + j * 25, y + Math.sin(j * 1.7) * 14, 34, 28, rnd, 0.1); ctx.fill(); ctx.stroke(); } }
+        ctx.restore();
         sky(labels[i][0], x, y + 176, { size: 34, weight: 600, align: 'center' });
         sky(labels[i][1], x, y + 218, { size: 32, weight: 300, align: 'center' });
       });
@@ -1294,7 +1310,7 @@ function partOther(t) {
 }
 // the credits
 const CREDITS = {
-  music: ['“Ever Mindful”, “Equatorial Complex” and “Evening”', 'Kevin MacLeod (incompetech.com) · CC BY 4.0'],
+  music: ['“Ever Mindful” Kevin MacLeod (incompetech.com) · CC BY 4.0', '“Equatorial Complex” Kevin MacLeod (incompetech.com) · CC BY 4.0', '“Almost Bliss” Kevin MacLeod (incompetech.com) · CC BY 4.0'],
   sources: ['Wikipedia: Rayleigh scattering · Diffuse sky radiation · Tyndall effect · Mie scattering', 'Rayleigh sky model · Air mass (astronomy) · Sunset · Cloud · Extraterrestrial sky',
     'Physics FAQ: “Why is the sky blue?” (P. Gibbs) · NASA: Sunset at Mars’ Gale Crater'],
 };
