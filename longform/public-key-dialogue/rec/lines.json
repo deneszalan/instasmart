@@ -1,0 +1,672 @@
+[
+ {
+  "key": "o1",
+  "who": "A",
+  "spoken": "In eighteen seventy-four, the English economist William Stanley Jevons printed a puzzle in a book."
+ },
+ {
+  "key": "o2",
+  "who": "B",
+  "spoken": "He asked which two numbers, multiplied together, make 8,616,460,799."
+ },
+ {
+  "key": "o3",
+  "who": "A",
+  "spoken": "I think it unlikely, he added, that anyone but myself will ever know."
+ },
+ {
+  "key": "x1",
+  "who": "B",
+  "spoken": "Confident."
+ },
+ {
+  "key": "o4",
+  "who": "A",
+  "spoken": "Well, multiplying two numbers is easy. Finding them again from the answer can be very hard."
+ },
+ {
+  "key": "o5",
+  "who": "B",
+  "spoken": "And lopsided problems like his now guard every secure web page you open."
+ },
+ {
+  "key": "o6",
+  "who": "A",
+  "spoken": "They're what let two strangers agree on a secret while everyone listens."
+ },
+ {
+  "key": "o7",
+  "who": "A",
+  "spoken": "This is the story of public-key cryptography, and it was invented twice."
+ },
+ {
+  "key": "k1",
+  "who": "B",
+  "spoken": "For most of history, sending a secret message meant sharing a secret key first."
+ },
+ {
+  "key": "k2",
+  "who": "A",
+  "spoken": "And the same key locks the message and unlocks it, so whoever has it can read everything."
+ },
+ {
+  "key": "x3",
+  "who": "B",
+  "spoken": "So the key is the weak point."
+ },
+ {
+  "key": "k3",
+  "who": "A",
+  "spoken": "Exactly. It had to travel safely, by trusted courier or at a face-to-face meeting."
+ },
+ {
+  "key": "k4",
+  "who": "B",
+  "spoken": "And every pair of people who want to talk privately needs a key of their own."
+ },
+ {
+  "key": "k5",
+  "who": "A",
+  "spoken": "Ten people need forty-five keys."
+ },
+ {
+  "key": "k6",
+  "who": "B",
+  "spoken": "A thousand people need 499,500."
+ },
+ {
+  "key": "x4",
+  "who": "A",
+  "spoken": "That's half a million keys to deliver."
+ },
+ {
+  "key": "k7",
+  "who": "B",
+  "spoken": "Two researchers at Stanford called this the key distribution problem in 1976."
+ },
+ {
+  "key": "k8",
+  "who": "A",
+  "spoken": "And their answer sounds impossible. It lets strangers agree on a key in full view of everyone."
+ },
+ {
+  "key": "n1",
+  "who": "B",
+  "spoken": "In 1974, Whitfield Diffie, an independent researcher, was advised to meet a young Stanford professor, Martin Hellman."
+ },
+ {
+  "key": "n2",
+  "who": "A",
+  "spoken": "They'd planned a half-hour meeting. It lasted many hours."
+ },
+ {
+  "key": "n3",
+  "who": "B",
+  "spoken": "In November 1976, they published New Directions in Cryptography."
+ },
+ {
+  "key": "n4",
+  "who": "A",
+  "spoken": "It opens with the line, We stand today on the brink of a revolution in cryptography."
+ },
+ {
+  "key": "x5",
+  "who": "B",
+  "spoken": "That's quite a first line."
+ },
+ {
+  "key": "x6",
+  "who": "A",
+  "spoken": "It held up, and they won the twenty fifteen Turing Award for it."
+ },
+ {
+  "key": "n5",
+  "who": "B",
+  "spoken": "So what was the revolution? It was splitting the key in two."
+ },
+ {
+  "key": "n6",
+  "who": "A",
+  "spoken": "One key locks, a different key unlocks, and knowing the first doesn't give you the second."
+ },
+ {
+  "key": "n7",
+  "who": "B",
+  "spoken": "So you could publish your locking key like a phone number, and anyone could send you messages only you can read."
+ },
+ {
+  "key": "x7",
+  "who": "A",
+  "spoken": "Anyone can close the lock. Only you can open it."
+ },
+ {
+  "key": "n8",
+  "who": "B",
+  "spoken": "But for that they needed a trapdoor one-way function, which is easy to compute but hard to undo, unless you hold a secret."
+ },
+ {
+  "key": "n9",
+  "who": "A",
+  "spoken": "And they didn't have one. The problem, they wrote, was still largely open."
+ },
+ {
+  "key": "x8",
+  "who": "B",
+  "spoken": "So the revolution came with a hole in the middle."
+ },
+ {
+  "key": "n10",
+  "who": "A",
+  "spoken": "A hole, yes. But they did have a way to agree on a key in public, building on ideas from Ralph Merkle."
+ },
+ {
+  "key": "x9",
+  "who": "B",
+  "spoken": "And Hellman later said the method should carry Merkle's name too."
+ },
+ {
+  "key": "m1",
+  "who": "A",
+  "spoken": "Let's try it in paint first. Alice and Bob agree, in public, on yellow as their starting colour."
+ },
+ {
+  "key": "m2",
+  "who": "B",
+  "spoken": "Each mixes in a secret colour of their own, red for Alice and blue for Bob."
+ },
+ {
+  "key": "m3",
+  "who": "A",
+  "spoken": "They swap the mixtures in the open, where Eve, listening in, sees them too."
+ },
+ {
+  "key": "m4",
+  "who": "B",
+  "spoken": "Then each stirs in their own secret again, and they both end up with the same brown."
+ },
+ {
+  "key": "m5",
+  "who": "B",
+  "spoken": "And Eve has the yellow and both mixtures, but she can't pull the secret colours back out."
+ },
+ {
+  "key": "x11",
+  "who": "A",
+  "spoken": "Is the paint picture fair, though? It seems a little too perfect."
+ },
+ {
+  "key": "m6",
+  "who": "B",
+  "spoken": "It's fair up to this point. Paint can never be unmixed, but the maths can, by trying every secret."
+ },
+ {
+  "key": "m7",
+  "who": "A",
+  "spoken": "So the defence is sheer numbers, with far too many secrets to try."
+ },
+ {
+  "key": "m8",
+  "who": "B",
+  "spoken": "Right. The real version uses clock arithmetic. Picture a clock with 23 hours."
+ },
+ {
+  "key": "m9",
+  "who": "A",
+  "spoken": "Start at one and keep multiplying by five, keeping only the remainder after dividing by twenty-three."
+ },
+ {
+  "key": "m10",
+  "who": "B",
+  "spoken": "The hand jumps to 5, then 2, then 10, then 4, then 20, with no pattern you can easily see."
+ },
+ {
+  "key": "x12",
+  "who": "A",
+  "spoken": "It looks almost random."
+ },
+ {
+  "key": "m11",
+  "who": "B",
+  "spoken": "Stepping forward is easy. Working back to how many steps it took is the discrete logarithm problem, and it's hard."
+ },
+ {
+  "key": "m12",
+  "who": "A",
+  "spoken": "Now comes the exchange. Everyone, Eve included, knows twenty-three and five."
+ },
+ {
+  "key": "m13",
+  "who": "B",
+  "spoken": "Alice secretly picks 3. After 3 steps, the hand is on 10, and she sends 10."
+ },
+ {
+  "key": "m14",
+  "who": "A",
+  "spoken": "Bob secretly picks seven. After seven steps, the hand is on seventeen, and he sends seventeen."
+ },
+ {
+  "key": "m15",
+  "who": "B",
+  "spoken": "Alice raises Bob's 17 to the power of her secret 3, and Bob raises Alice's 10 to the power of his 7."
+ },
+ {
+  "key": "m16",
+  "who": "A",
+  "spoken": "And both get fourteen, because both have really taken three times seven steps from the start, which is twenty-one."
+ },
+ {
+  "key": "x13",
+  "who": "B",
+  "spoken": "It's the same steps in a different order, just like the paint."
+ },
+ {
+  "key": "m17",
+  "who": "A",
+  "spoken": "Meanwhile Eve heard the numbers twenty-three and five, then ten and seventeen. To reach fourteen, she needs three or seven."
+ },
+ {
+  "key": "m18",
+  "who": "B",
+  "spoken": "With 23 hours she could try them all, so real exchanges use a prime of at least 2,048 bits, which is 617 digits."
+ },
+ {
+  "key": "r1",
+  "who": "B",
+  "spoken": "Key exchange was a breakthrough. But a true public lock, one that anyone could close, was still missing."
+ },
+ {
+  "key": "r2",
+  "who": "A",
+  "spoken": "At M I T, Ron Rivest, Adi Shamir and Leonard Adleman spent about a year hunting for one."
+ },
+ {
+  "key": "r3",
+  "who": "B",
+  "spoken": "Rivest and Shamir proposed ideas, and Adleman, the mathematician, kept breaking them."
+ },
+ {
+  "key": "x15",
+  "who": "A",
+  "spoken": "Somebody has to."
+ },
+ {
+  "key": "r4",
+  "who": "A",
+  "spoken": "Then, in April nineteen seventy-seven, after a Passover evening at a student's house, Rivest couldn't sleep."
+ },
+ {
+  "key": "r5",
+  "who": "B",
+  "spoken": "By daybreak, the story goes, he had much of the paper written."
+ },
+ {
+  "key": "r6",
+  "who": "A",
+  "spoken": "It's named R S A after their initials, and it starts with two prime numbers."
+ },
+ {
+  "key": "r7",
+  "who": "B",
+  "spoken": "Let's build a tiny one. Take the primes 61 and 53, and multiply them to get 3,233."
+ },
+ {
+  "key": "r8",
+  "who": "A",
+  "spoken": "Pick seventeen as the power that locks. From the primes, we can work out that the power that unlocks is four hundred and thirteen."
+ },
+ {
+  "key": "r10",
+  "who": "B",
+  "spoken": "And the public key is just 3,233 and 17. Anyone can have it."
+ },
+ {
+  "key": "r11",
+  "who": "B",
+  "spoken": "Right. To send Bob 65, raise it to the power of 17 and keep the remainder after dividing by 3,233."
+ },
+ {
+  "key": "r12",
+  "who": "A",
+  "spoken": "That power has thirty-one digits, but only the remainder, two thousand seven hundred and ninety, travels."
+ },
+ {
+  "key": "r13",
+  "who": "B",
+  "spoken": "Bob raises that to the power of 413, divides by 3,233 again, and out comes 65."
+ },
+ {
+  "key": "x17",
+  "who": "A",
+  "spoken": "Wait, straight back to sixty-five?"
+ },
+ {
+  "key": "x18",
+  "who": "B",
+  "spoken": "Exactly. The two powers undo each other, if you know both."
+ },
+ {
+  "key": "r15",
+  "who": "A",
+  "spoken": "And finding four hundred and thirteen needs the two primes. The public key shows only their product."
+ },
+ {
+  "key": "r16",
+  "who": "B",
+  "spoken": "Real systems also add random padding. Bare R S A like this is just a demonstration."
+ },
+ {
+  "key": "e1",
+  "who": "A",
+  "spoken": "So it all rests on a lopsided pair of jobs. Multiplying is easy, and factoring is hard."
+ },
+ {
+  "key": "x19",
+  "who": "B",
+  "spoken": "How hard, though? A number like 3,233 doesn't look so scary."
+ },
+ {
+  "key": "e2",
+  "who": "A",
+  "spoken": "It isn't. Try dividing by each prime in turn, and the sixteenth prime, which is fifty-three, works."
+ },
+ {
+  "key": "e3",
+  "who": "B",
+  "spoken": "Jevons's number needs thousands of tries. It's 89,681 times 96,079."
+ },
+ {
+  "key": "e4",
+  "who": "A",
+  "spoken": "Charles Busk found that in eighteen eighty-nine."
+ },
+ {
+  "key": "x20",
+  "who": "B",
+  "spoken": "So much for anyone but myself."
+ },
+ {
+  "key": "e5",
+  "who": "A",
+  "spoken": "Then, in August nineteen seventy-seven, Martin Gardner described R S A in Scientific American, along with a challenge message locked with a hundred and twenty-nine digit number."
+ },
+ {
+  "key": "x21",
+  "who": "B",
+  "spoken": "And there was a 100 dollar prize for unlocking it."
+ },
+ {
+  "key": "e7",
+  "who": "A",
+  "spoken": "Rivest estimated that, with the best methods of the day, a hundred and twenty-five digit number would take forty quadrillion years."
+ },
+ {
+  "key": "x22",
+  "who": "B",
+  "spoken": "Forty quadrillion. That sounds safe."
+ },
+ {
+  "key": "e8",
+  "who": "A",
+  "spoken": "It wasn't. Better methods came, and about six hundred volunteers, with some sixteen hundred computers, cracked it in nineteen ninety-four."
+ },
+ {
+  "key": "e9",
+  "who": "B",
+  "spoken": "The message read, the magic words are squeamish ossifrage."
+ },
+ {
+  "key": "x23",
+  "who": "A",
+  "spoken": "An ossifrage is a vulture, by the way. The name means bone-breaker."
+ },
+ {
+  "key": "e10",
+  "who": "B",
+  "spoken": "So keys grew. Public factoring records are under 300 digits. A 2,048 bit key has 617."
+ },
+ {
+  "key": "e11",
+  "who": "A",
+  "spoken": "And no one has proved that factoring is hard. There's just no fast way known on ordinary computers."
+ },
+ {
+  "key": "s1",
+  "who": "B",
+  "spoken": "Now run the same maths the other way, and you get something just as useful, which is a signature."
+ },
+ {
+  "key": "s2",
+  "who": "A",
+  "spoken": "Diffie and Hellman proposed digital signatures in nineteen seventy-six, and R S A made them work."
+ },
+ {
+  "key": "s3",
+  "who": "B",
+  "spoken": "Bob locks a message with his private 413. Anyone can open it with his public 17."
+ },
+ {
+  "key": "x25",
+  "who": "A",
+  "spoken": "But if anyone can open it, what's the point?"
+ },
+ {
+  "key": "s4",
+  "who": "B",
+  "spoken": "The point is who could have locked it. Signing 1977 gives 788, and raising 788 to the power of 17 gives back 1977."
+ },
+ {
+  "key": "s5",
+  "who": "A",
+  "spoken": "Only the holder of four hundred and thirteen could have made seven hundred and eighty-eight, so it proves who signed."
+ },
+ {
+  "key": "s6",
+  "who": "B",
+  "spoken": "In practice you sign a short fingerprint of the message, called a hash."
+ },
+ {
+  "key": "s7",
+  "who": "A",
+  "spoken": "And signatures close a gap we skipped over in key exchange, one that lets an attacker sit in the middle."
+ },
+ {
+  "key": "s8",
+  "who": "B",
+  "spoken": "Mallory sits between Alice and Bob and runs one exchange with each, posing as the other."
+ },
+ {
+  "key": "s9",
+  "who": "A",
+  "spoken": "Each thinks they share a key with the other. Both actually share one with Mallory, who reads everything."
+ },
+ {
+  "key": "x26",
+  "who": "B",
+  "spoken": "And neither of them would notice."
+ },
+ {
+  "key": "s10",
+  "who": "A",
+  "spoken": "No. Plain Diffie–Hellman can't tell who is really on the other end."
+ },
+ {
+  "key": "s11",
+  "who": "B",
+  "spoken": "On the web, the proof is a certificate, which is the site's public key, signed by an authority your browser trusts."
+ },
+ {
+  "key": "g1",
+  "who": "A",
+  "spoken": "Now comes the twist, kept secret for more than twenty years."
+ },
+ {
+  "key": "g2",
+  "who": "B",
+  "spoken": "In January 1970, at Britain's G C H Q, James Ellis wrote a secret report on non-secret encryption."
+ },
+ {
+  "key": "g3",
+  "who": "A",
+  "spoken": "The idea came from a wartime Bell Labs paper, in which the receiver adds noise to a call, then removes it."
+ },
+ {
+  "key": "x27",
+  "who": "B",
+  "spoken": "So the receiver helps lock the message."
+ },
+ {
+  "key": "g4",
+  "who": "A",
+  "spoken": "Right. Ellis argued that it was possible, but he couldn't see a way to build it."
+ },
+ {
+  "key": "g5",
+  "who": "B",
+  "spoken": "Then, in September 1973, a young mathematician, Clifford Cocks, joined and heard about the idea."
+ },
+ {
+  "key": "g6",
+  "who": "A",
+  "spoken": "Cocks knew number theory. He chose prime factoring, and quickly found what we now call R S A."
+ },
+ {
+  "key": "g7",
+  "who": "B",
+  "spoken": "He didn't even write it down at the time."
+ },
+ {
+  "key": "x28",
+  "who": "A",
+  "spoken": "That's four years before M I T."
+ },
+ {
+  "key": "g8",
+  "who": "B",
+  "spoken": "And in 1974, his colleague Malcolm Williamson found what we now call Diffie–Hellman key exchange."
+ },
+ {
+  "key": "g9",
+  "who": "A",
+  "spoken": "With a military focus and little computing power, G C H Q found no use for it, and it stayed secret."
+ },
+ {
+  "key": "g10",
+  "who": "A",
+  "spoken": "It was made public in nineteen ninety-seven, when Cocks gave a talk on the eighteenth of December."
+ },
+ {
+  "key": "g11",
+  "who": "B",
+  "spoken": "James Ellis had died on the 25th of November, a month too soon."
+ },
+ {
+  "key": "g12",
+  "who": "A",
+  "spoken": "And as far as anyone knows, the Stanford and M I T teams found it all on their own."
+ },
+ {
+  "key": "p1",
+  "who": "B",
+  "spoken": "So what actually happens when you open a secure web page today?"
+ },
+ {
+  "key": "p2",
+  "who": "A",
+  "spoken": "Your browser and the server run a fresh key exchange, often on elliptic curves rather than a clock."
+ },
+ {
+  "key": "p3",
+  "who": "B",
+  "spoken": "The server signs the exchange, and its certificate shows that the signature really is the site's."
+ },
+ {
+  "key": "x30",
+  "who": "A",
+  "spoken": "That's the answer to Mallory."
+ },
+ {
+  "key": "p4",
+  "who": "B",
+  "spoken": "Public-key maths is slow, so it only sets up a key; a fast ordinary cipher carries the page."
+ },
+ {
+  "key": "p5",
+  "who": "A",
+  "spoken": "And the exchange keys are thrown away afterwards, so a key stolen later can't unlock today's traffic."
+ },
+ {
+  "key": "p6",
+  "who": "B",
+  "spoken": "R S A keys usually have 2,048 bits or more. On elliptic curves, 256 bits does as well as 3,072."
+ },
+ {
+  "key": "q1",
+  "who": "B",
+  "spoken": "In 1994, Peter Shor showed how a quantum computer could factor huge numbers quickly."
+ },
+ {
+  "key": "q2",
+  "who": "A",
+  "spoken": "And his method solves discrete logarithms too, so it would break R S A and Diffie–Hellman alike."
+ },
+ {
+  "key": "x32",
+  "who": "B",
+  "spoken": "Both of them? Should we be worried?"
+ },
+ {
+  "key": "q3",
+  "who": "A",
+  "spoken": "Not yet. No such machine exists, and demonstrations have factored only fifteen and twenty-one, helped by knowing the answer."
+ },
+ {
+  "key": "q4",
+  "who": "B",
+  "spoken": "Breaking real keys might take millions of qubits, because of error correction."
+ },
+ {
+  "key": "q5",
+  "who": "A",
+  "spoken": "The worry is that a message recorded today could be decrypted later. This is called harvest now, decrypt later."
+ },
+ {
+  "key": "q6",
+  "who": "B",
+  "spoken": "So in August 2024, N I S T, the U S standards institute, published three post-quantum standards, one for keys and two for signatures."
+ },
+ {
+  "key": "q7",
+  "who": "A",
+  "spoken": "The key one, M L Kem, rests on lattice problems, which are thought to resist quantum attacks."
+ },
+ {
+  "key": "q9",
+  "who": "B",
+  "spoken": "And Chrome and Firefox already mix it into their key exchange, alongside a classic elliptic curve."
+ },
+ {
+  "key": "z1",
+  "who": "A",
+  "spoken": "So strangers can agree on a key in public, because some sums are easy one way and hard the other."
+ },
+ {
+  "key": "z2",
+  "who": "B",
+  "spoken": "A lock can be public, if only its owner knows the trapdoor."
+ },
+ {
+  "key": "z3",
+  "who": "A",
+  "spoken": "And run backwards, the same maths signs."
+ },
+ {
+  "key": "z4",
+  "who": "B",
+  "spoken": "Jevons was wrong about his number, but right that some sums are far easier done than undone."
+ },
+ {
+  "key": "z5",
+  "who": "A",
+  "spoken": "And every secure connection begins that way, with two strangers, in public, agreeing on a secret only they know."
+ }
+]
