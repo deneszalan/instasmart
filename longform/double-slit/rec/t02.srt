@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+When he blocked the light on one side of the card, the fringes vanished.
+
+2
+00:00:31,000 --> 00:00:56,000
+So the fringes needed light from both sides, meeting and interfering.
+
+3
+00:01:01,000 --> 00:01:26,000
+His lectures, published in 1807, describe the version we know, with light through two narrow slits.
+
+4
+00:01:31,000 --> 00:01:56,000
+Whether he ever actually did it with two slits is not clear.
+
+5
+00:02:01,000 --> 00:02:26,000
+The turn came in 1818, when Augustin Fray-nel entered a French prize contest with a wave theory of light.
+
+6
+00:02:31,000 --> 00:02:56,000
+One judge, Simeon Pwasson, spotted what looked like an absurd prediction.
+
+7
+00:03:01,000 --> 00:03:26,000
+In the middle of a small round disc's shadow, it said, there should be a bright spot.
+
+8
+00:03:31,000 --> 00:03:56,000
+The head of the judges, Fran-swah Arago, tried it, and there was the spot.
+
+9
+00:04:01,000 --> 00:04:26,000
+After that, most scientists accepted that light is a wave.
+
+10
+00:04:31,000 --> 00:04:56,000
+In 1865, James Clark Maxwell predicted it is an electromagnetic wave, and the particle idea seemed finished.
+
+11
+00:05:01,000 --> 00:05:26,000
+So how do two slits make so many stripes?
+
+12
+00:05:31,000 --> 00:05:56,000
+Each slit acts as a new source, sending out waves that spread in circles.
+
+13
+00:06:01,000 --> 00:06:26,000
+To reach a point on the screen, one wave usually travels a little farther than the other.
+
+14
+00:06:31,000 --> 00:06:56,000
+If the extra distance is a whole number of wavelengths, crests arrive together, and that spot is bright.
+
+15
+00:07:01,000 --> 00:07:26,000
+If it's half a wavelength, crest meets trough, and the spot is dark.
+
+16
+00:07:31,000 --> 00:07:56,000
+Move along the screen and the extra distance grows steadily, so the stripes go bright, dark, bright, dark.
+
+17
+00:08:01,000 --> 00:08:26,000
+The spacing of the stripes is the wavelength, times the distance to the screen, divided by the gap between the slits.
+
+18
+00:08:31,000 --> 00:08:56,000
+Take slits half a millimetre apart, light with a wavelength of zero point six micrometres, and a screen one metre away.
+
+19
+00:09:01,000 --> 00:09:26,000
+The stripes come out one point two millimetres apart.
+
+20
+00:09:31,000 --> 00:09:56,000
+Move the screen twice as far away, and they spread twice as wide.

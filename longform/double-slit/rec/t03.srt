@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+Young had described this too, with stripes wider also in the same proportion as the apertures are closer to each other.
+
+2
+00:00:31,000 --> 00:00:56,000
+He used fringes like these to estimate the wavelengths of different colours, close to modern values.
+
+3
+00:01:01,000 --> 00:01:26,000
+But the wave picture had a crack in it.
+
+4
+00:01:31,000 --> 00:01:56,000
+In 1905, Albert Einstein proposed that light's energy comes in separate lumps, now called photons.
+
+5
+00:02:01,000 --> 00:02:26,000
+So what happens to the stripes when light is so dim that it arrives a little at a time?
+
+6
+00:02:31,000 --> 00:02:56,000
+In 1909, a young Cambridge physicist, Geoffrey Ingram Taylor, tried it.
+
+7
+00:03:01,000 --> 00:03:26,000
+He dimmed a gas light with dark glass, until it was like a candle more than a mile away.
+
+8
+00:03:31,000 --> 00:03:56,000
+The light passed a sewing needle onto a photographic plate, which took three months to expose.
+
+9
+00:04:01,000 --> 00:04:26,000
+The fringes were still there.
+
+10
+00:04:31,000 --> 00:04:56,000
+As Paul Dirac later put it, each photon then interferes only with itself.
+
+11
+00:05:01,000 --> 00:05:26,000
+One caution is that Taylor's paper never mentions photons, and his dim lamp wasn't a true single-photon source.
+
+12
+00:05:31,000 --> 00:05:56,000
+That test came in 1986, when a French team including Alain Aspect used a genuine single-photon source and an interferometer.
+
+13
+00:06:01,000 --> 00:06:26,000
+The interference was still there, one photon at a time.
+
+14
+00:06:31,000 --> 00:06:56,000
+Each photon is detected at one single point.
+
+15
+00:07:01,000 --> 00:07:26,000
+A few hundred look like noise.
+
+16
+00:07:31,000 --> 00:07:56,000
+By ten thousand, the stripes are unmistakable.
+
+17
+00:08:01,000 --> 00:08:26,000
+Brighter light just makes the dots pile up faster, giving the same pattern, sooner.
+
+18
+00:08:31,000 --> 00:08:56,000
+Electrons came the other way round. From 1897, experiments showed them behaving as particles.
+
+19
+00:09:01,000 --> 00:09:26,000
+Then, in 1924, Louis de Broy proposed that all matter has a wave side too.
+
+20
+00:09:31,000 --> 00:09:56,000
+Experiments in 1927 confirmed it, bouncing electrons off crystals and through thin films.
