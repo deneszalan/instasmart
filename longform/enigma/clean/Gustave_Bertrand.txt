@@ -1,0 +1,48 @@
+{{Short description|French military intelligence officer}}
+{{Infobox person
+| name = Gustave Bertrand
+| image = GustaveBertrand.jpg
+| birth_date = 1896
+| death_date = 1976
+| occupation = Military intelligence officer
+}}
+'''Gustave Bertrand''' (1896&ndash;1976) was a French [[military intelligence]] officer who made a vital contribution to the [[decryption]], by [[Poland]]'s [[Biuro Szyfrów|Cipher Bureau]], of German [[Enigma machine|Enigma]] [[cipher]]s, beginning in December 1932. This achievement would in turn lead to [[Great Britain|Britain's]] celebrated [[World War II]] [[Ultra (cryptography)|Ultra]] operation.
+
+==Life==
+Bertrand joined the French military as a private in 1914 and was wounded in 1915 at the [[Dardanelles]].  From 1926, he worked in [[SIGINT|radio intelligence]].
+
+In the 1920s, French radio intelligence was decentralized. Decryption of foreign, chiefly German and Italian, ciphers and codes was the responsibility of a General Staff cryptology department, while radio monitoring was conducted by the intelligence service, ''Service de Renseignement'' or ''S.R.'' At the end of 1930, decryption was turned over to the ''S.R.'', which created a Section ''D'' (for ''Decryptement''), of which Bertrand became chief. He later took over all of French radio intelligence.
+
+Bertrand's [[military intelligence|intelligence]] associates had purchased documents pertaining to the [[Enigma machine]] from [[Hans-Thilo Schmidt]] (codenamed "Asché" by the French), an employee at the German Armed Forces' Cryptographic Agency.  In December 1932, then-Captain (later, General) Bertrand turned these documents over to the [[Biuro Szyfrów|Polish Cipher Bureau]]'s chief, Major [[Gwido Langer]]. Asché's documents, according to cryptologist [[Marian Rejewski]]'s testimony, proved in practice crucial to his mathematical solution of the military [[Enigma machine]]'s wiring.  During his work with the Poles, Bertrand used the code name ''Bolek'', given him by the Poles.
+
+Bertrand was to learn of the Poles' success against Enigma only six and a half years later, at a trilateral Polish-French-British conference held in the [[Kabaty|Kabaty Woods]], south of [[Warsaw]], on 25 July 1939, just five weeks before the outbreak of [[World War II]].
+<!-- Deleted image removed: [[Image:Gwido Langer Gustave Bertrand Kenneth McFarlan.jpg|thumb|right|150px|''[[PC Bruno]]'':  Bertrand (center) with Polish [[Biuro Szyfrów|Cipher Bureau]] chief Lt. Col. [[Gwido Langer]] (left) and British liaison officer Capt. Kenneth ("Pinky") McFarlan]] -->
+After Germany's invasion of Poland in September 1939, then-Major Bertrand from October 1939 to November 1942 sponsored the continued work of prewar Cipher Bureau personnel: first at ''[[PC Bruno]]'', outside [[Paris]]; then, after Germany's invasion of France (May–June 1940), at the [[Cadix]] center in southern France's [[Vichy France|Vichy]] "Free Zone."
+
+Over a year after the Cadix center had been scattered to avert capture by the Germans, on 5 January 1944, Bertrand was captured by the Germans as he waited at the famous Church of [[Basilica of the Sacré Cœur|Sacré Cœur]], in Paris' [[Montmartre]] district, for a courier from London. The Germans suggested that he work for them. Pretending to agree, Bertrand was allowed to return with his wife Mary to [[Vichy]] to contact British intelligence. There he sent his underground comrades into hiding and went into hiding himself. On 2 June 1944, four days before the [[D-Day]] [[Normandy landings]], at an improvised airstrip in France's [[Massif Central]], Bertrand, his wife and a Jesuit priest who served as a courier of the Polish Resistance climbed into a small, unarmed [[Westland Lysander|Lysander]] III aircraft that flew them to southern England. Bertrand and his wife moved into a house in the [[Hertfordshire]] village of [[Boxmoor]] just a short walk from the Polish radio-intercept station and cipher office at the nearby village of [[Felden]] where [[Marian Rejewski]] and [[Henryk Zygalski]] were working.
+
+Bertrand retired from the French Secret Service in 1950 and went on to become mayor of [[Théoule-sur-Mer]] in southern France.
+
+In 1973, the Paris publishing house Plon published his book, ''Enigma ou la plus grande énigme de la guerre 1939-1945'' (Enigma, or the Greatest Enigma of the War of 1939-1945). The book, one of the principal primary sources on the history of [[Enigma machine|Enigma]] [[decryption]], for the first time gave a detailed account of the some eleven years of Franco-Polish collaboration in breaking and reading Enigma before and during [[World War II]].
+
+==See also==
+*[[Cryptanalysis of the Enigma]]
+*[[Wilfred Dunderdale]]
+*[[Ultra (cryptography)]]
+
+==Notes==
+{{reflist}}
+
+==References==
+*Gustave Bertrand, ''Enigma ou la plus grande énigme de la guerre 1939&ndash;1945'' (Enigma:  the Greatest Enigma of the War of 1939&ndash;1945), Paris, Librairie Plon, 1973. {{ASIN| B003TTLLMU }}
+*[[Władysław Kozaczuk]], ''Enigma:  How the German Machine Cipher Was Broken, and How It Was Read by the Allies in World War Two'', edited and translated by Christopher Kasparek, Frederick, MD, University Publications of America, 1984. {{ ISBN|978-0890935477 }}
+*Jacek Tebinka, "Account [by] the former Chief of Polish intelligence [dated 31 May 1974] on [the] cracking [of] the Enigma code," in Jan Stanislaw Ciechanowski, ed., ''Marian Rejewski 1905–1980: Living with the Enigma secret'', 1st ed., Bydgoszcz City Council, 2005, {{ISBN|83-7208-117-4}}, p.&nbsp;210, footnote 19.
+* {{cite book | last=Turing | first=Dermot |author1-link=Dermot Turing| title=[[X, Y & Z: The Real Story of How Enigma Was Broken]] | publisher=History Press | publication-place=Gloucestershire England | year=2018 | isbn=978-0-7509-8782-0 | oclc=1029570490 }}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Bertand, Gustave}}
+[[Category:1896 births]]
+[[Category:1976 deaths]]
+[[Category:French military personnel of World War I]]
+[[Category:French military personnel of World War II]]

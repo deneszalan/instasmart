@@ -1,0 +1,86 @@
+{{Short description|Polish mathematician and cryptologist (1909–1942)}}
+{{Infobox person
+| name        = Jerzy Różycki
+| image       = Jerzy Rozycki.jpg
+| image_size  = 150px
+| caption     = Jerzy Różycki ca. 1928, some 4 years before joining the [[Biuro Szyfrów|Cipher Bureau]]
+| birth_name  =
+| birth_date  = {{birth date|df=yes|1909|07|24}}
+| birth_place = Olszana, [[Russian Empire]] (now [[Vilshana, Cherkasy Oblast]], [[Ukraine]])
+| death_date  = {{death date and age|df=yes|1942|01|09|1909|07|24}}
+| death_place = [[Mediterranean Sea]]
+| known_for   = Solving the [[Enigma machine|Enigma-machine]] cipher
+| occupation  = Mathematician, cryptologist
+| awards      = [[Order of Polonia Restituta#Classes|Order of ''Polonia Restituta'', Grand Cross]] (2000)<br />[[IEEE]] Milestone Award (2014) 
+}}
+[[File:Fot. ES ławeczka Jerzego Różyckiego w Wyszkowie.jpg|thumb|260px|Jerzy Różycki memorial bench in [[Wyszków]], near [[Warsaw]]]]
+
+'''Jerzy Witold Różycki''' ({{IPA|pl|ˈjɛʒɨ ruˈʒɨt͡ski|pron|Pl-Jerzy_Różycki.ogg}}; 24 July 1909 – 9 January 1942) was a Polish [[mathematician]] and [[cryptologist]] who worked at breaking German [[Enigma machine|Enigma-machine]] [[cipher]]s before and during [[World War II]].
+
+==Life==
+Różycki was born in what is now [[Ukraine]], the fourth and youngest child of Zygmunt Różycki, a pharmacist and graduate of [[Saint Petersburg University]], and Wanda, née Benita.  He attended a Polish school in [[Kyiv]] before moving with his family to Poland in 1918.  In 1926 he completed secondary school at [[Wyszków]] on eastern Poland's [[Bug River]].
+
+Różycki studied mathematics from 1927 to 1932 in western Poland, at [[Poznań University]]'s Mathematics Institute, graduating with a master's degree on February 19, 1932.  He would later earn a second master's degree from Poznań University, in [[geography]], on December 13, 1937.
+
+In 1929, while still a student, Różycki, proficient in [[German language|German]], was one of twenty-odd Poznań University mathematics students who accepted an invitation to attend a secret [[cryptology]] course organized at a nearby military installation by the Polish [[General Staff]]'s [[Biuro Szyfrów|Cipher Bureau]], headquartered in [[Warsaw]].
+
+From September 1932, Różycki served as a civilian cryptologist with the [[Poland|Polish]] [[General Staff]]'s [[Biuro Szyfrów|Cipher Bureau]], housed till 1937 in [[Warsaw]]'s [[Pałac Saski|Saxon Palace]]. He worked there together with fellow [[Poznań University]] mathematics alumni and Cipher Bureau cryptology-course graduates [[Marian Rejewski]] and [[Henryk Zygalski]].
+
+After Rejewski had reconstructed the German military [[Enigma machine]] in December 1932, Różycki and Zygalski likewise worked at ongoing development of methods and equipment to exploit Enigma [[decryption]] as a source of [[military espionage|intelligence]].  Różycki invented the "clock" method, which sometimes made it possible to determine which of the machine's [[Rotor machine|rotor]]s was at the far right, that is, in the position where the rotor always revolved at every depression of a key.
+<!-- Deleted image removed: [[Image:Gralinski, Rozycki and Smolenski.jpg|thumb|300px|right|From left: [[Jan Graliński]], Jerzy Różycki and [[Piotr Smoleński]] at "[[Cadix]]" in southern France. All three perished in the 1942 ''Lamoricière'' disaster.]] -->
+
+On 9 January 1942, Różycki perished in the [[Mediterranean Sea]] while returning to the [[Cadix]] center, near [[Uzès]] in [[Vichy France]], from a stint at Cadix's branch office at the Château Couba on the outskirts of [[Algiers]]. His passenger ship, the ''[[SS Lamoricière]]'', sank in unclear circumstances near the [[Balearic Islands]]. Fellow victims of the disaster, among the 222 passengers killed, included [[Piotr Smoleński]] and Captain [[Jan Graliński]], of the prewar [[Cipher Bureau (Poland)|Polish Cipher Bureau]]'s Russian section, and a French officer accompanying the three Poles, Captain François Lane.
+
+Różycki has a [[cenotaph]] (symbolic grave) in the National Pantheon at the [[Saints Peter and Paul Church, Kraków|Saints Peter and Paul Church]] in [[Kraków]], Poland.
+
+==Family==
+In 1938, aged 29, Różycki married Maria Barbara Mayka. Their son, [[Janusz Różycki]], born May 10, 1939, completed his studies at the [[Academy of Fine Arts in Warsaw]] and went on to be a member of the Polish [[fencing (sport)|fencing]] team that won a silver medal at the [[1964 Summer Olympics|1964 Tokyo Olympics]].
+
+==Recognition==
+[[File:2023-06-15 Cryptologist Monument Różycki.JPG|thumb|2007 monument to cryptologists [[Marian Rejewski|Rejewski]], Różycki, and [[Henryk Zygalski|Zygalski]] in front of the [[Imperial Castle in Poznań]]]]
+In 1980 Różycki and his two mathematician colleagues were among the heroes of ''Sekret Enigmy'' (The Enigma Secret), a Polish [[Thriller (genre)|thriller film]] about their solution of the German Enigma cipher. Late 1980 also saw a similarly-themed Polish [[TV series]], ''Tajemnice Enigmy'' (The Secrets of Enigma).
+
+On 21 February 2000, [[President of the Republic of Poland|Polish President]] [[Aleksander Kwaśniewski]] posthumously awarded Różycki the Grand Cross of the [[Order of Polonia Restituta]] for outstanding contributions to his homeland.
+
+In 2007 a three-sided memorial was unveiled before the [[Imperial Castle, Poznań|Imperial Castle]] in [[Poznań]], commemorating the three mathematician-cryptologists (Rejewski, Różycki and Zygalski), alumni of the [[University of Poznań]], who reconstructed the German [[Enigma machine]] and developed methods of breaking Enigma ciphers, thus contributing to subsequent Allied victory in [[World War II]].
+
+In 2009 the [[Polish Post]] issued a series of four commemorative stamps, one of which pictured Różycki and fellow mathematician-cryptologists [[Marian Rejewski]] and [[Henryk Zygalski]].
+
+On 5 August 2014 the [[Institute of Electrical and Electronics Engineers]] (IEEE) posthumously honored Rejewski, Różycki, and Zygalski with its Milestone Award, given for "First Breaking of Enigma Code by the Team of Polish Cipher Bureau, 1932-1939". The three had built the '[[Bomba (cryptography)|bomba]]' – the first cryptanalytic machine to break codes. Their work was a foundation of British code breaking efforts which, with later American assistance, helped end World War II.
+In 2014 a commemorative plaque in Polish and English, dedicated to Różycki and his two colleagues, was unveiled before the [[Polish Academy of Sciences]] Mathematics Institute in [[Warsaw]].
+
+In 2018 a bench commemorating Różycki was unveiled in a park in the town of [[Wyszków]], where Różycki had attended secondary school.
+
+In 2021 the [[Enigma Cipher Centre]], an educational and scientific institution dedicated to the Polish mathematicians who broke the Enigma cipher, including Jerzy Różycki, opened in Poznań.
+
+==See also==
+* [[Bomba (cryptography)]]
+* [[Enigma machine]]
+* [[List of cryptographers]]
+* [[List of Polish mathematicians]]
+* [[List of Poles#Mathematics|List of Poles]]
+* [[Marian Rejewski]]
+
+==Notes==
+{{reflist}}
+
+==References==
+* Zdzisław Jan Kapera, "People of the Enigma: Jerzy Witold Różycki (1904-42)", translated by Tomasz Laczewski, Appendix A in Kozaczuk and Straszak,  ''Enigma: How the Poles Broke the Nazi Code'', 2004, pp.&nbsp;81–86.
+* {{Citation |last1=Kasparek |first1=Christopher |author1-link=Christopher Kasparek |last2=Woytak |first2=Richard |author2-link=Richard Woytak |title=In Memoriam Marian Rejewski |journal=Cryptologia |volume=6 |issue=1 |date=January 1982 |pages=19–25 |doi=10.1080/0161-118291856740}}
+* [[Władysław Kozaczuk]], ''Enigma:  How the German Machine Cipher Was Broken, and How It Was Read by the Allies in World War II'', edited and translated by [[Christopher Kasparek]], Frederick, MD, University Publications of America, 1984.
+* Zdzisław Jan Kapera, "Różycki, Jerzy Witold," ''Polski słownik biograficzny'' (Polish Biographical Dictionary), vol. XXXII, Wrocław, Wydawnictwo Polskiej Akademii Nauk ([[Polish Academy of Sciences]]), 1989–1991, pp.&nbsp;523–25.
+
+==External links==
+{{commons category-inline}}
+
+{{authority control}}
+
+{{DEFAULTSORT:Rozycki, Jerzy}}
+[[Category:1909 births]]
+[[Category:1942 deaths]]
+[[Category:20th-century cryptographers]]
+[[Category:20th-century Polish mathematicians]]
+[[Category:Polish cryptographers]]
+[[Category:Cipher Bureau (Poland)]]
+[[Category:People from Cherkasy Oblast]]
+[[Category:Adam Mickiewicz University in Poznań alumni]]

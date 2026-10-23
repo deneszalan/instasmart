@@ -1,0 +1,60 @@
+[[File:Gwido Langer.jpg|thumb|upright=0.55|Gwido Langer ([[interbellum]] photo)]]
+
+Lt. Col. '''Karol Gwido Langer''' (2 September 1894 in [[Žilina|Zsolna]], [[Austria-Hungary]] – 30 March 1948 in [[Kinross]], [[Scotland]]) was, from at least mid-1931, chief of the [[Polish General Staff]]'s [[Biuro Szyfrów|Cipher Bureau]], which from December 1932 [[decryption|decrypted]] Germany's military [[Enigma machine|Enigma-machine]] [[cipher]]s.  
+
+[[Poland]]'s prewar achievements paved the way for [[Great Britain|Britain's]] [[World War II]] [[Ultra (cryptography)|Ultra secret]].
+
+==Life==
+<!-- Deleted image removed: [[File:Gwido Langer Gustave Bertrand Kenneth McFarlan.jpg|thumb|223px|Gwido Langer (left) with French Major [[Gustave Bertrand]] and British Capt. Kenneth McFarlan at [[PC Bruno]] during [[Phony War]] (October 1939 – May 1940)]] -->
+{{Cipher Bureau}}
+Langer was born in [[Žilina|Zsolna]], [[Upper Hungary]] (today Žilina in [[Slovakia]]) but spent his childhood in [[Cieszyn]] in Silesian voivodship, Poland where his family came from.
+
+By mid-1931, according to Polish military historian [[Władysław Kozaczuk]], the Bureau had been formed by merger of the Radio Intelligence Office and the Polish-Cryptography Office.  Langer remained at the head of the Cipher Bureau and its successor field agency until the latter was effectively disbanded in November 1942 upon the German occupation of southern France's [[Vichy France|Vichy]] "Free Zone."
+
+Major Langer had on 15 January 1929, after a tour of duty as chief of staff of the [[Polish 1st Legions Infantry Division|First Infantry Division]], become chief of the General Staff's Radio Intelligence Office, and subsequently of the Cipher Bureau.
+
+As the Cipher Bureau's chief, Langer was ultimately responsible for Polish [[cryptography]]; Polish [[military intelligence|military-intelligence]] [[radio|radio communication]]s; radio intelligence and [[direction finding|tracking down of clandestine enemy intelligence radio transmitters]] operating in Poland; Russian-cryptogram [[interception]] and [[decryption]]; and German-cryptogram interception and decryption.
+
+Langer's [[Biuro Szyfrów|Cipher Bureau]] has become famous for having in December 1932 broken the German [[Enigma machine|Enigma]] [[cipher]] and read it through the German invasion of France in May–June 1940, and perhaps after that.
+
+In March 1943, as Lt. Col. Langer, his deputy, Major [[Maksymilian Ciężki]], head of the prewar ''B.S.-4'' (the Bureau's German section), Lt. [[Antoni Palluth]] and civilians [[Edward Fokczyński]] and [[Kazimierz Gaca]] were attempting to cross from German-occupied France into [[Spain]], they were betrayed by their French guide and captured by the Germans.
+
+[[Interrogation|Interrogated]] about work on [[Enigma machine|Enigma]], Langer "decided [to] mix truth with lies, and [...] present my lies in such a way that they had the veneer of truth."  He told the Germans that before the war the Bureau had sporadically solved Enigma ciphers, but that during the war they had no longer been able to.  Langer advised the panel of his interrogators that, since Major [[Maksymilian Ciężki|Ciężki]] knew more about the subject than he, they should summon Ciężki.  "They agreed, and Ciężki managed to convince them that the changes [that the Germans had] made [to the machine and its operating procedures] before the war made decryption during the war impossible."  The two Polish officers thus succeeded in protecting the secret of Allied Enigma decryption, thereby enabling [[Ultra (cryptography)|Ultra]] to continue doing its vital work for Allied victory.
+
+After Langer and Ciężki had been liberated by the Allies and had reached Britain, Langer was crushed to find himself blamed for his men's capture in France by the Germans. He died at the Polish Army signals camp at [[Kinross]], [[Scotland]], on 30 March 1948 and was buried in  [[Wellshill Cemetery]] in [[Perth, Scotland]], specifically to be next to the 381 Polish pilots buried in that cemetery. His grave was marked by a standard [[Commonwealth War Graves Commission]] headstone.
+
+On 1 December 2010 his remains were exhumed, following a request by his daughter Hanna Kublicka-Piottuch. On 10 December Langer's remains received a funeral with full military honors and were interred at the communal cemetery in [[Cieszyn]], [[Poland]]. His new gravestone is of black granite and describes his role in the breaking of the German Enigma ciphers.
+
+==Honors==
+* Grand Cross of the [[Order of Polonia Restituta]] (conferred [[posthumous award|posthumously]], 2010)
+* [[Cross of Valour (Poland)|Cross of Valour]] – twice
+* Gold [[Cross of Merit (Poland)|Cross of Merit]]
+* [[Cross of Independence]]
+* ''Medal Międzysojuszniczy'' (in [[Polish language|Polish]]) = ''Medaille Interalliée'' (in [[French language|French]])
+
+==See also==
+*[[List of Poles#Intelligence|List of Poles]]
+
+==References==
+{{reflist}}
+
+==Bibliography==
+* [[Władysław Kozaczuk]], ''[[Enigma machine|Enigma]]:  How the German Machine Cipher Was Broken, and How It Was Read by the Allies in World War Two'', edited and translated by Christopher Kasparek, Frederick, MD, University Publications of America, 1984, {{ISBN|0-89093-547-5}}.
+* [[Hugh Sebag-Montefiore]], ''Enigma:  the Battle for the Code'', London, Weidenfeld & Nicolson, 2000, {{ISBN|0-297-84251-X}}.
+
+{{Authority control}}
+
+{{DEFAULTSORT:Langer, Gwido}}
+[[Category:Polish Army officers]]
+[[Category:Polish cryptographers]]
+[[Category:20th-century cryptographers]]
+[[Category:Cipher Bureau (Poland)]]
+[[Category:Polish prisoners of war]]
+[[Category:1894 births]]
+[[Category:1948 deaths]]
+[[Category:People from Žilina]]
+[[Category:People from Cieszyn]]
+[[Category:Grand Crosses of the Order of Polonia Restituta]]
+[[Category:Recipients of the Cross of Valour (Poland)]]
+[[Category:Recipients of the Gold Cross of Merit (Poland)]]
+[[Category:Recipients of the Cross of Independence]]

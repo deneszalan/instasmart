@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: Turing took it on, he said, because no one else was doing anything about it, and he could have it to himself.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: It also took captured papers: in May 1941, codebooks and keys from U one-ten.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: Through late nineteen forty-one, decrypts helped steer convoys around the waiting U-boats.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERB: Then, on the 1st of February 1942, the U-boats got a new Enigma with four rotors.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: For ten months, Bletchley couldn't read them, and the wolf packs ravaged convoys.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERB: So how did they get back in?
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: In October nineteen forty-two, off Port Said, sailors from H M S Petard climbed into the sinking U five-five-nine for its papers.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERB: Two of them, Tony Fasson and Colin Grazier, were still inside when it sank, and drowned.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: By December nineteen forty-two, U-boat messages were being read again.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERB: So how much did that decide the Atlantic?
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: That's still argued. Radar and much else mattered too.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERB: In the film The Imitation Game, Turing builds one machine almost alone, and calls it Christopher.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: In fact, the first bombe was Victory, and breaking Enigma took thousands of people.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERB: Thousands?
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: By January nineteen forty-five, almost nine thousand people worked at Bletchley Park and its outstations. About three quarters were women.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: And what was all that work worth?
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: Harry Hinsley, a veteran and later Bletchley's official historian, judged their work shortened the war by at least two years.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERB: Others find any such number too precise. No one can run a war twice.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERA: One of the last messages Bletchley decoded was sent from Cuxhaven, on the seventh of May, nineteen forty-five. British troops had entered the town.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERB: And the operator signed off. Closing down forever. All the best. Goodbye.

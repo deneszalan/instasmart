@@ -3,6 +3,9 @@ erat-mix python3 -I mix.py eratosthenes && echo "decode errors: $(ffmpeg -nostdi
 bday-dlg-render bash render-video.sh birthday-dialogue && bash deliver.sh birthday-dialogue the-birthday-problem-dialogue
 erat-dlg ONLY=dialogue bash finalize.sh eratosthenes m1 m1 af_bella && bash deliver.sh eratosthenes-dialogue eratosthenes-measures-the-earth-dialogue
 sky-dlg ONLY=dialogue bash finalize.sh sky-blue af_heart m1 af_heart && bash deliver.sh sky-blue-dialogue why-the-sky-is-blue-dialogue
+bday-dlg-fix bash render-video.sh birthday-dialogue && bash deliver.sh birthday-dialogue the-birthday-problem-dialogue
+erat-dlg-fix bash render-video.sh eratosthenes-dialogue && bash deliver.sh eratosthenes-dialogue eratosthenes-measures-the-earth-dialogue
+sky-dlg-fix bash retime.sh sky-blue-dialogue && bash render-video.sh sky-blue-dialogue && bash deliver.sh sky-blue-dialogue why-the-sky-is-blue-dialogue
 four-stroke bash finalize.sh four-stroke m2 m2 af_heart && bash deliver.sh four-stroke the-four-stroke-engine && bash deliver.sh four-stroke-dialogue the-four-stroke-engine-dialogue
 kepler bash finalize.sh kepler m1 m1 af_nicole && bash deliver.sh kepler kepler-equal-areas && bash deliver.sh kepler-dialogue kepler-equal-areas-dialogue
 double-slit bash finalize.sh double-slit af_bella m2 af_bella && bash deliver.sh double-slit the-double-slit-experiment && bash deliver.sh double-slit-dialogue the-double-slit-experiment-dialogue

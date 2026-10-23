@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: Press a key on this machine, and a lamp lights up another letter.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: Press the same key again, and a different lamp lights. And again.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: In the war, the army's version could be set up in nearly a hundred and fifty-nine quintillion ways.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERB: A hundred and fifty-nine quintillion? That sounds unbreakable.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: But it had one odd habit: it never turned a letter into itself.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERB: That small rule, and the people who saw what it meant, helped break Enigma.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: Enigma has twenty-six keys and twenty-six lamps. One operator types; another writes down the lamps that light.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERB: So let's follow one key press. First, the key turns the right-hand rotor one step.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: Then the current runs to the plugboard, where a cable can swap it for another letter.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERB: And here, A is plugged to Q.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: Next come three rotors, each wired inside to turn one letter into another.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERB: At the far end, the reflector sends the current back another way.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: Back through the plugboard, and one lamp lights. Here, the letter A became C.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERB: Now press A again. The rotor has moved, so every wire has shifted. A becomes N.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: Same key, new letter. Every press uses a fresh scrambled alphabet.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: Do the other two rotors ever move?
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: Once per turn, a notch lets the right rotor push the middle one along, like a car's odometer.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERA: Almost. The middle rotor sometimes steps twice in a row: the double step.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERB: So not quite an odometer.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERA: No. The rotors come back to where they started only after sixteen thousand, nine hundred key presses.

@@ -1,0 +1,106 @@
+{{Short description|Neighbourhood of Warsaw, Poland}}
+{{About|a neighbourhood of Warsaw, Poland|other uses|Pyry (disambiguation){{!}}Pyry}}
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                   = Pyry
+| official_name          = 
+| native_name_lang       = 
+| type                   = [[List of districts and neighbourhoods of Warsaw|City Information System area]]<br>(neighbourhood)
+| image                  = File:Jezioro Wingerta Warsaw aerial 2022.jpg
+| alt                    = 
+| caption                = Houses around the [[Wingert Lake]] in Pyry.
+| image_shield           = 
+| shield_alt             = 
+| image_map1             = File:PL warsaw pyry location.svg
+| map_caption1           = Location of the City Information System area of Pyry, within the district of [[Ursynów]] in Warsaw.
+| image_map2             = 
+| map_caption2           = 
+| coordinates            = {{Coord|52|07|46|N|21|01|04|E|region:PL_type:city(1,800,000)|display=inline,title}}
+| coordinates_footnotes  = 
+| subdivision_type       = Country
+| subdivision_name       = {{flag|Poland}}
+| subdivision_type1      = [[Voivodeships of Poland|Voivodeship]]
+| subdivision_name1      = [[Masovian Voivodeship|Masovian]]
+| subdivision_type2      = [[City with powiat rights|City and county]]
+| subdivision_name2      = [[Warsaw]]
+| subdivision_type3      = [[Districts and neighbourhoods of Warsaw|District]]
+| subdivision_name3      = [[Ursynów]]
+| subdivision_type4      = 
+| subdivision_name4      = 
+| established_title      = 
+| established_date       = 
+| parts_type             = 
+| parts_style            = 
+| p1                     = 
+| government_footnotes   = 
+| leader_party           = 
+| leader_title           = 
+| leader_name            = 
+| unit_pref              = Metric<!-- or US or UK -->
+| area_footnotes         = 
+| area_total_km2         = 1.98
+| area_note              = 
+| elevation_footnotes    = 
+| elevation_m            = 
+| population_footnotes   = 
+| population_total       = 
+| population_as_of       = 
+| population_density_km2 = 
+| population_note        = 
+| time_zone              = [[Central European Time|CET]]
+| utc_offset             = +1
+| time_zone_DST          = [[Central European Summer Time|CEST]]
+| utc_offset_DST         = +2
+| postal_code_type       = 
+| postal_code            = 
+| area_code              = +48 22
+| custom_label_sec1      = 
+| custom_data_sec1       = 
+| website                = 
+| footnotes              = 
+}}
+'''Pyry''' ({{IPA|pl|ˈpɘ̟.rɘ̟|audio=Pl-Pyry.ogg|lang}}) is a [[List of districts and neighbourhoods of Warsaw|neighbourhood]], and a [[List of districts and neighbourhoods of Warsaw|City Information System area]], in [[Warsaw]], Poland, within the [[Ursynów]] district. It is a residential area with single-family housing. The neighbourhood is governed by an elected council, and has an area of 1.98&nbsp;km<sup>2</sup> (0.76 sq mi). It features the [[Sts. Apostles Peter and Paul Church (Ursynów)|Sts. Apostles Peter and Paul Church]], which was built between 1946 and 1973, and is a seat of a [[Latin Church|Roman Catholic]] parish.
+
+Pyry was founded in the 18th century as a farming community. In the late 1930s, a military complex of the [[Cipher Bureau (Poland)|Cipher Bureau]] was construed, were from 1937 to 1939, [[Marian Rejewski]], [[Jerzy Różycki]], and [[Henryk Zygalski]] have worked on developing the [[Cryptanalysis of the Enigma|decryption techniques]] of the [[Enigma machine]] used by the [[Nazi Germany]]. The village was incorporated into Warsaw in 1951.
+
+== History ==
+[[File:Kościół Świętych Apostołów Piotra i Pawła Pyry Warszawa.jpg|thumb|250px|left|The [[Sts. Apostles Peter and Paul Church (Ursynów)|Sts. Apostles Peter and Paul Church]], built between 1946 and 1973.]]
+Pyry, historically known as Pery, was founded in the 18th century, originally being a southern extension of the village of [[Imielin, Warsaw|Imielin]]. It was a farming community with a few households.
+
+On 30 November 1898, the Pyry [[narrow-gauge railway]] station was opened at the current intersection of [[Puławska Street, Warsaw|Puławska]], Akustyczna, and Leśna Streets. It was operated by the [[Piaseczno Narrow-gauge Railway|Grójec Commuter Railway]], as part of the line between [[Warszawa Mokotów railway station|Warszawa Mokotów]] and [[Nowe Miasto nad Pilicą]] stations. It was closed on 1 December 1969. The presence the railway station had greatly increased development of the village. In 1921, it was inhabited by 421 people in 60 households.
+
+During the [[interwar period]], Pyry was a [[holiday village]]. In the 1930s, a military complex of the [[Polish General Staff|General Staff of the Polish Armed Forces]] was constructed in Pyry, at 8 Kajakowa Street, and in the nearby Kabaty Woods. From 1937 to 1939, it housed a branch of the [[Cipher Bureau (Poland)|Cipher Bureau]], responsible for deciphering [[Nazi Germany|German]] codes and messages. A team of mathematicians employed by it, consisting of [[Marian Rejewski]], [[Jerzy Różycki]], and [[Henryk Zygalski]], was the first to decipher coding of the [[Enigma machine]] in 1932. They continued their work and shared their [[Cryptanalysis of the Enigma|decryption techniques]] there with British and French intelligence agencies in June 1939. Currently, since 2002, it houses the Air Operations Centre and Air Component Command of the [[Polish Air Force]].
+
+On 8 September 1939, Pyry was captured by the [[Nazi Germany|German]] forces during their [[Invasion of Poland|invasion into Poland]] in first days of the [[World War II|Second World War]].
+
+Between 1946 and 1973, the [[Sts. Apostles Peter and Paul Church (Ursynów)|Sts. Apostles Peter and Paul Church]] was built at 434 Puławska Street, belonging to the [[Catholic Church|Catholic]] denomination. The Pyry Cemetery was also opened nearby at Łagiewnicka Street in 1946. Currently, it is located within the nearby neighbourhood of [[Jeziorki, Warsaw|Jeziorki]].
+
+Pyry was incorporated into the city of [[Warsaw]] on 14 May 1951. In 1996, the neighbourhood of Pyry was established as an administrative unit governed locally by an elected council. It was a subdivision of the [[gmina|municipality]] of [[Gmina Warsaw-Ursynów|Warsaw-Ursynów]], which was replaced by the city district of Ursynów in 2002. Its status was reconfirmed in 2013. In 1998, the district of Ursynów was subdivided into thirteen areas of the City Information System, with Pyry becoming one of them.
+
+In 1998, the Rodan Systems Building was opened at 465 Puławska Street. It was awarded the First Degree Award of the [[Ministry of the Interior and Administration|Minister of the Interior and Administration]] in 1999, and is regarded as a prime example of the 1990s and [[Culture in post-communist Poland|post-communist]] architecture in Poland.
+
+== Characteristics ==
+[[File:Biurowiec Rodan Warsaw 2023 aerial2.jpg|thumb|250px|The Rodan Systems Building, regarded as a prime example of the 1990s and [[Culture in post-communist Poland|post-communist]] architecture in Poland.]]
+Pyry is a neighbourhood, and an area of the City Information System, located in the south-central portion of the [[Ursynów]] district. It has a total area of 1.98&nbsp;km<sup>2</sup> (0.76 sq mi), and is governed by a [[neighbourhood council]], consisting of 15 elected officials. Pyry is a residential area with of single-family housing. It features the [[Sts. Apostles Peter and Paul Church (Ursynów)|Sts. Apostles Peter and Paul Church]] at 434 [[Puławska Street, Warsaw|Puławska Street]], which belongs to the [[Catholic Church|Catholic]] denomination, and Rodan Systems Building, an office building at 465 Puławska Street, which is regarded as a prime example of 1990s and [[Culture in post-communist Poland|post-communist]] architecture in Poland. Additionally, the neighbourhood also includes the military complex of the [[Air Operations Centre – Air Component Command]] of the [[Polish Air Force]], located at 8 Kajakowa Street, and in the nearby [[Kabaty Woods]]. Pyry also feature the [[Wingert Lake]] with an area of 0.3486 ha, located near Farbiarska and Głusza Streets.
+
+== Location and boundaries ==
+Pyry is a neighbourhood, and a City Information System area in Warsaw, located within the south-central portion of the [[Ursynów]] district. To the north, its boundary is determined by the [[Warsaw Metro]] [[branch line]]; to the east, by the [[Kabaty Woods|Kabaty Woods Nature Reserve]]; to the south, by Baletowa Street, [[Puławska Street, Warsaw|Puławskska Street]], and the parcels adjusted to the southern part of Tukana Street; and to the west, by Farbiarska Street.
+
+The City Information System area borders [[Grabów, Warsaw|Grabów]], and [[Old Imielin]] to the north, [[Kabaty Woods|Kabaty Woods Nature Reserve]] to the east, [[Dąbrówka, Warsaw|Dąbrówka]] to the south, [[Jeziorki, Warsaw|Jeziorki Południowe]] to the southwest, and [[Jeziorki, Warsaw|Jeziorki Północne]] to the west. The administrative neighbourhood of Pyry borders [[Dąbrówka, Warsaw|Dąbrówka]] to the north, and [[Jeziorki, Warsaw|Jeziorki]] to the west.
+
+== References ==
+{{Reflist}}
+
+==External links==
+* {{commons category-inline}}
+{{Neighbourhoods of Ursynów}}
+
+{{Authority control}}
+
+[[Category:Neighbourhoods of Ursynów]]
+[[Category:Former villages in Poland]]
+[[Category:Populated places established in the 18th century]]
+[[Category:Cipher Bureau (Poland)]]
+[[Category:Enigma machine]]
+[[Category:Suburbs in Poland]]
+[[Category:18th-century establishments in Poland]]

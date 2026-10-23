@@ -1,0 +1,168 @@
+{{Short description|English cryptographer (1884–1943)}}
+{{Use British English|date=April 2014}}
+{{Use dmy dates|date=April 2026}}
+{{Infobox person
+| name        = Alfred Dillwyn Knox
+| honorific_suffix = [[Order of St Michael and St George|CMG]]
+| image       = <!-- just the filename, without the File: or Image: prefix or enclosing [[brackets]] -->
+| alt         =
+| caption     =
+| birth_name  = Alfred Dillwyn Knox
+| birth_date  = {{Birth date|1884|7|23|df=yes}}
+| birth_place = [[Headington]], [[Oxford]], England
+| death_date  = {{Death date and age|1943|2|27|1884|7|23|df=yes}}
+| death_place = [[High Wycombe|Wycombe]], [[Buckinghamshire]], England
+| citizenship = British
+| other_names = Dilly
+| education   = [[King's College, Cambridge]]
+| occupation  = {{Plainlist |
+* [[cryptanalysis|Codebreaker]]
+* [[Papyrologist]] }}
+| employer = {{Plainlist |
+* [[Room 40]]
+* [[Government Code and Cypher School|GC&CS]]}}
+| known_for   =
+| relatives = {{Plainlist |
+* [[E. V. Knox]]
+* [[Wilfred Knox]]
+* [[Ronald Knox]]
+* [[Winifred Peck]]
+* [[Penelope Fitzgerald]]}}
+| parents = [[Edmund Arbuthnott Knox]]
+| spouse = {{marriage|Olive Rodman|1920}}
+| children = 2
+| title = {{Plainlist|
+* Fellow of King's College, Cambridge
+* Companion of the [[Order of St Michael and St George]]}}
+}}
+
+'''Alfred Dillwyn''' "'''Dilly'''" '''Knox''', [[Order of St Michael and St George|CMG]] (23 July 1884 – 27 February 1943) was an English [[classics]] scholar and [[papyrologist]] at [[King's College, Cambridge]] and a [[cryptanalysis|codebreaker]]. As a member of the [[Room 40]] codebreaking unit he helped decrypt the [[Zimmermann Telegram]] which brought the USA into the [[First World War]].{{page needed|date=September 2026}} He then joined the [[Government Code and Cypher School]] (GC&CS).
+
+As chief cryptographer, Knox played an important role in the Polish–French–British meetings on the eve of the [[Second World War]] which disclosed [[Cryptanalysis of the Enigma#Polish disclosures|Polish cryptanalysis]] of the [[Axis powers|Axis]] Enigma to the [[Allies of World War II|Allies]].
+
+At [[Bletchley Park]], he worked on the cryptanalysis of [[Enigma machine|Enigma ciphers]] until his death in 1943. He built the team and discovered the method that broke the Italian Naval Enigma, producing the intelligence credited with Allied victory at the [[Battle of Cape Matapan]]. In 1941, Knox broke the [[Abwehr]] Enigma. By the end of the war, '''Intelligence Service Knox''' had disseminated 140,800 [[Abwehr]] decrypts, including intelligence important for [[D-Day]].
+
+==Personal life and family==
+Dillwyn Knox, the fourth of six children, was the son of [[Edmund Knox (Bishop of Manchester)|Edmund Knox]], tutor at [[Merton College]] and later [[Bishop of Manchester]]; he was the brother of [[E. V. Knox]], [[Wilfred Knox]], [[Ronald Knox]], Ethel Knox, and [[Winifred Peck]], and uncle of the novelist [[Penelope Fitzgerald]].{{page needed|date=September 2026}} His father was a descendant of [[John Arbuthnott, 8th Viscount of Arbuthnott]].
+
+Dillwyn—known as "Dilly"—Knox was educated at [[Summer Fields School]], Oxford, and then [[Eton College]]. He studied classics at [[King's College, Cambridge]] from 1903, and in 1909 was elected a Fellow following the death of [[Walter Headlam]], from whom he inherited extensive research into the works of [[Herodas]]. While an [[undergraduate]] he was friends with [[Lytton Strachey]] and [[John Maynard Keynes]]. He and Keynes were lovers at Eton. Knox privately coached [[Harold Macmillan]], the future [[Prime Minister of the United Kingdom|Prime Minister]], at King's for a few weeks in 1910, but Macmillan found him "austere and uncongenial".
+
+He married Olive Rodman in 1920, forgetting to invite two of his three brothers to his wedding. The couple had two sons, Oliver and Christopher.{{citation needed|date=June 2021}}
+
+He was an [[atheist]].
+
+==Academic scholarship==
+Between the two World Wars Knox worked on the great commentary on [[Herodas]] that had been started by [[Walter Headlam]], damaging his eyesight while studying the [[British Museum]]'s collection of [[papyrus]] fragments, but finally managing to decipher the text of the Herodas papyri. The Knox-Headlam edition of Herodas finally appeared in 1922.
+
+==Codebreaking==
+=== First World War ===
+{{Rquote|right|
+The sailor in Room 53<br />
+Has never, it's true, been to sea.<br />But though not in a boat,<br />He has yet served afloat—<br />In a bath in the Admiralty.|Knox about himself in ''Alice in ID25''}}
+
+Soon after war broke out in 1914, Knox was recruited to the [[Royal Navy]]'s [[Cryptography|cryptological]] effort in [[Room 40]] of the Admiralty Old Building, where some of his work was done in the bath. He persuaded his superiors to have a bathtub installed in his office in the cryptanalysis section of the British Admiralty (in Room 53). In 1917, Knox followed Room 40 with its expansion into [[ID25]].
+
+Among other tasks, he was involved in breaking:
+* the [[Zimmermann Telegram]], which contributed to bringing the USA into the war.{{page needed|date=September 2026}}
+* much of the German admiral's flag code by exploiting an operator's love of romantic poetry.
+
+===Between the wars===
+====Government Code and Cypher School====
+{{Rquote|right|Oh, if a time should ever come when we're demobilized
+How we shall miss the interests which once life comprised!|Dilly the Dodo|Alice in ID25 by [[Francis Birch (cryptographer)|Frank Birch]]}}
+During the First World War he had been elected Librarian at King's College, but never took up the appointment. After the war Knox intended to resume his research at King's, but was persuaded by his wife to remain at his secret work; indeed, so secret was this work that his own children had no idea, until many years after his death, what he did for a living, and his contribution to the war effort.
+
+====Commercial Enigma====
+The [[Enigma machine]] became available commercially in the 1920s. In [[Vienna]] in 1925, Knox bought the Enigma 'C' machine evaluated by [[Hugh Foss]] in 1927 on behalf of GC&CS. Foss found "a high degree of security" but wrote a secret paper describing how to attack the machine if ''cribs'' – short sections of plain text – could be guessed. When – a decade later – Knox picked up this work, he developed a more effective algebraic system (''rodding'') based on the principles described by Foss.
+
+====Spanish Enigma====
+The Germany Navy ({{lang|de|[[Kriegsmarine]]}}) adopted Enigma in 1926, adding a plug-board ({{lang|de|stecker}}) to improve security. [[Nazi Germany]] supplied non-{{lang|de|stecker}}ed machines to [[Francisco Franco|Franco's]] [[Nationalist faction (Spanish Civil War)|Nationalists]] in the [[Spanish Civil War]].  On 24 April 1937, Knox broke the Spanish Enigma but knowledge of this breakthrough was not shared with the [[Republican faction (Spanish Civil War)|Republicans]].{{efn|{{Harvnb|Keeley|2008}} States "Professor Denis Smyth, of the University of Toronto, an expert on Second World War intelligence operations, said that the British codebreaker Alfred Dilwyn Knox cracked the code of Franco's machine in 1937, but 'this information was not passed on to the Republicans.{{'"}}}} Soon afterwards, Knox began to attack signals between Spain and Germany encrypted using {{lang|de|stecker}}ed Enigma machines.
+
+====On the eve of the Second World War====
+=====Polish–French–British meetings=====
+GC&CS began to discuss Enigma with the [[France|French]] {{lang|fr|[[Deuxième Bureau]]}} in 1938, obtaining from the Bureau details of [[Wehrmacht]] Enigma supplied by [[Asché]] and signal intercepts, some of which must have been made in [[Eastern Europe]]. This led the French to disclose their links with the {{lang|pl|[[Biuro Szyfrów]]}} (Polish cryptographers).  Knox, [[Hugh Foss]] and [[Alastair Denniston]] represented the GC&CS at the first Polish–French–British meeting at Paris in January 1939. The Poles were under order to disclose nothing of importance, leaving the British codebreakers disappointed. Knox's description of his system of rodding impressed the Polish codebreakers and they requested his presence at a second meeting.
+
+{{Blockquote| Knox grasped everything very quickly, almost quick as lightning. It was evident that the British had been really working on Enigma ... So they didn't require explanations. They were specialists of a different kind, of a different class.|[[Marian Rejewski]]}}
+
+Knox attended the second [[Biuro Szyfrów#Gift to allies|Polish–French–British conference]], held on 25–26 July 1939 at the Polish Cipher Bureau (at [[Pyry (neighborhood)|Pyry]], south of [[Warsaw]], [[Poland]]). The Poles began to disclose to their French and British allies their achievements in solving [[Enigma machine|Enigma]] [[decryption]].
+
+Although [[Marian Rejewski]], the Polish [[cryptographer]] and [[mathematician]] who solved the plugboard-equipped [[Enigma machine|Enigma]] used by [[Nazi Germany]], approached the problem through [[Group theory|permutation theory]] (whereas Knox applied [[linguistics]]), a good personal relationship was quickly established at the conference. The good impression made by Rejewski on Knox played an important role in increasing recruitment of mathematicians to [[Bletchley Park]]. Knox was chagrined — but grateful — to learn how simple was the solution of the Enigma's entry ring (standard [[alphabetical order]]).
+
+{{Blockquote| It was such an obvious thing to do, really a silly thing to do, that nobody, not Dilly Knox or Tony Kendrick or Alan Turing, ever thought it worthwhile trying it.|[[Peter Twinn]]}}
+
+After the meeting, he sent the Polish cryptologists a very gracious note in Polish, on official British government stationery, thanking them for their assistance and sending "sincere thanks for your cooperation and patience". Enclosed were a beautiful scarf featuring a picture of a [[Derby (horse race)|Derby]] winner and a set of paper 'batons'.
+
+{{Blockquote|I don't know how Knox's method was supposed to work, most likely he had hoped to vanquish Enigma with the batons. Unfortunately we beat him to it.|[[Marian Rejewski]]}}
+
+These 'batons' were known as rods to the British and had been used to solve the Spanish Enigma. Knox's rodding method was later used to break the Italian Naval Enigma.
+
+====Turing's bombe====
+[[Alan Turing]] worked on Enigma during the months leading to the outbreak of the [[Second World War]] in September 1939, and occasionally visited GC&CS's London HQ to discuss this problem with Knox. In the [[1939 Register]] Turing was recorded as staying/ living in [[Naphill]], staying with Knox and his wife.
+By November 1939 Turing had completed the design of the [[bombe]] — a radical improvement of the Polish [[Bomba (cryptography)|bomba]].
+
+===Second World War===
+====<span class="anchor" id="Rodding"></span>Knox's rodding method====
+To break non-{{lang|de|stecker}}ed [[Enigma machine]]s (those without a plugboard), Knox (building on earlier research by [[Hugh Foss]]) developed a system known as 'rodding', a linguistic as opposed to mathematical way of breaking codes. This technique worked on the Enigma used by the {{lang|it|[[Regia Marina]]}} (Italian Navy) and the German {{lang|de|[[Abwehr]]}}. Knox worked in 'the Cottage', next door to the [[Bletchley Park]] mansion, as head of a research section, which contributed significantly to [[cryptanalysis of the Enigma]].
+
+Knox's team at ''The Cottage'' used rodding to [[decrypt intercepted Italian naval signals]] describing the sailing of an Italian battle fleet, leading to the [[Battle of Cape Matapan]] in March 1941. Admiral [[John Henry Godfrey|John Godfrey]], [[Naval Intelligence Division (UK)|Director of Naval Intelligence]] credited the [[Allied (World War II)|Allied]] victory at Matapan to this intelligence; Admiral Sir [[Andrew Cunningham, 1st Viscount Cunningham of Hyndhope|Andrew Cunningham]], who had commanded the victorious fleet at Matapan, went to Bletchley to congratulate 'Dilly and his girls'.
+
+====Intelligence Services Knox====
+In October 1941, Knox solved the {{lang|de|Abwehr}} Enigma, although nothing was known about the machine itself. Intelligence Services Knox (ISK) was established to decrypt {{lang|de|Abwehr}} communications. In early 1942, with Knox seriously ill, [[Peter Twinn]] took charge of running ISK and was appointed head after Knox's death. By the end of the war, ISK had decrypted and disseminated 140,800 messages. Intelligence gained from these {{lang|de|Abwehr}} decrypts played an important part in ensuring the success of the [[Double-Cross System]] of MI5 and MI6, and in [[Operation Fortitude]], the Allied campaign to deceive the Germans about [[D-Day]].
+
+====Death====
+Knox's work was cut short when he fell ill with [[lymphoma]]. When he became unable to travel to Bletchley Park, he continued his cryptographic work from his home in [[Hughenden Valley|Hughenden, Buckinghamshire]], where he received the [[Order of St Michael and St George|CMG]]. He died on 27 February 1943. A biography of Knox, written by [[Mavis Batey]], one of 'Dilly's girls', the female codebreakers who worked with him, was published in September 2009.
+
+==Classified poetry==
+{{Centered pull quote|<poem>These have knelled your fall and ruin, but your ears were far away
+English lassies rustling papers through the sodden Bletchley day.</poem>|author=Dilly Knox|source=Epitaph on Matapan to Mussolini}}
+
+Knox celebrated the victory at [[Battle of Cape Matapan]] with poetry, which remained classified until 1978.
+
+==References==
+===Notes===
+{{notelist}}
+
+===Citations===
+{{reflist|25em}}
+
+===Works cited===
+* {{cite book |last=Andrew |first=Christopher |author-link=Christopher Andrew (historian) |editor-first=Ralph |editor-last=Erskine | editor2-last = Smith |editor2-first = Michael |editor2-link = Michael Smith (newspaper reporter) |title=The Bletchley Park Codebreakers|publisher=Biteback Publishing |year=2011|pages=1–12|chapter=Chapter 1: Bletchley Park in Pre-War Perspective|isbn=978-1849540780}} (Updated and extended version of ''Action This Day: From Breaking of the Enigma Code to the Birth of the Modern Computer'' Bantam Press 2001)
+* {{Cite ODNB |last=Batey |first=Mavis |author-link=Mavis Batey |title = Knox, (Alfred) Dillwyn (1884–1943) |year=2004 |doi=10.1093/ref:odnb/37641 }}
+* {{Citation |last=Batey |first=Mavis |author-link=Mavis Batey |year=2005 |contribution=Marian and Dilly |editor-last=Rejewski |editor-first=Marian |editor-link=Marian Rejewski |title=Marian Rejewski, 1905–1980: Living with the Enigma Secret |pages=67–74 }}
+* {{Cite book |last=Batey |first=Mavis |author-link=Mavis Batey |title=Dilly: The Man Who Broke Enigmas |publisher=Dialogue |year=2009 |isbn=978-1-906447-01-4 }}
+* {{cite book |last=Batey |first=Mavis |author-link=Mavis Batey |editor-first=Ralph |editor-last=Erskine |editor2-last=Smith |editor2-first=Michael |editor2-link=Michael Smith (newspaper reporter) |title=The Bletchley Park Codebreakers |publisher=Biteback Publishing |year=2011 |pages=79–92 |chapter=Chapter 6: Breaking Italian Naval Enigma |isbn=978-1849540780 }} (Updated and extended version of ''Action This Day: From Breaking of the Enigma Code to the Birth of the Modern Computer'' Bantam Press 2001)
+* {{Citation|last=Budiansky|first=Stephen|author-link=Stephen Budiansky|year=2000|title=Battle of wits: The Complete Story of Codebreaking in World War II|publisher=Free Press|isbn=978-0-684-85932-3|url-access=registration|url=https://archive.org/details/battleofwitscomp00budi}}
+* {{Citation |last=Carter |first=Frank |title=Bletchley Park Technical Articles: Rodding |url=http://www.bletchleypark.org.uk/content/rodding.pdf |access-date=14 February 2015 |url-status=dead |archive-url=https://web.archive.org/web/20070411064026/http://www.bletchleypark.org.uk/content/rodding.pdf |archive-date=11 April 2007 |df=dmy }}
+* {{cite book|last=Copeland|first=Jack|author-link=Jack Copeland|editor-first=Ralph|editor-last=Erskine|editor2-last=Smith|editor2-first=Michael|editor2-link=Michael Smith (newspaper reporter)|title=The Bletchley Park Codebreakers|publisher=Biteback Publishing|year=2011|pages=305–327|chapter=Chapter 19: Colossus and the Dawning of the Computer Age|isbn=978-1849540780}} (Updated and extended version of ''Action This Day: From Breaking of the Enigma Code to the Birth of the Modern Computer'' Bantam Press 2001)
+* {{cite book|last=Foss|first=Hugh|author-link=Hugh Foss|editor-first=Ralph|editor-last=Erskine|editor2-last=Smith|editor2-first=Michael|editor2-link=Michael Smith (newspaper reporter)|title=The Bletchley Park Codebreakers|publisher=Biteback Publishing|year=2011|pages=35–39|chapter=Chapter 3: Reminiscences on the Enigma |isbn=978-1849540780}} (Updated and extended version of ''Action This Day: From Breaking of the Enigma Code to the Birth of the Modern Computer'' Bantam Press 2001)
+* {{Cite book|last=Fitzgerald|first=Penelope|author-link=Penelope Fitzgerald|title=The Knox Brothers|publisher=Flamingo|year=2002|isbn=978-0-00-711830-4}}
+* {{Citation|last=Gannon|first=Paul|year=2011|title=Inside Room 40: The Codebreakers of World War I|location=London, UK|publisher=Ian Allan Publishing|isbn=978-0-7110-3408-2 }}
+* {{Cite web|last=Goebel|first=Greg|title=Codes, Ciphers, & Codebreaking|work=[4.1] Room 40 & the Zimmermann telegram/German codebreakers|url=http://www.vectorsite.net/ttcode_04.html|archive-url=https://web.archive.org/web/20051205014258/http://www.vectorsite.net/ttcode_04.html|url-status=usurped|archive-date=5 December 2005|access-date=14 February 2015}}
+* {{Citation|last=Keeley|first=Graham|title=Nazi Enigma machines helped General Franco in Spanish Civil War|newspaper=[[The Times]]|page=27|date=24 October 2008|url=https://www.thetimes.com/article/nazi-enigma-machines-helped-general-franco-in-spanish-civil-war-llttpl6qbx0|access-date=15 May 2020}}
+* {{Citation|last=Sebag-Montefiore|first=Hugh|author-link=Hugh Sebag-Montefiore|year=2000|title=Enigma: The Battle for the Code|location=London, UK|publisher=Weidenfeld & Nicolson|isbn=0-7538-1130-8}}
+* {{cite book|last=Smith|first=Michael|author-link=Michael Smith (newspaper reporter)|title=Colossus: The Secrets of Bletchley Park's Codebreaking Computers|publisher=Oxford University Press|year=2010|pages=18–35|chapter=How It Began: Bletchley Park Goes to War|isbn=978-0-19-957814-6}}
+* {{Citation |author=Staff writer |title=Peter Twinn|newspaper=The Telegraph|location=London, UK|date=17 November 2004|url=https://www.telegraph.co.uk/news/main.jhtml?xml=/news/2004/11/17/db1701.xml|archive-url=https://web.archive.org/web/20070302025416/http://www.telegraph.co.uk/news/main.jhtml?xml=%2Fnews%2F2004%2F11%2F17%2Fdb1701.xml|archive-date=2 March 2007|access-date=14 February 2015|url-status=dead|df=dmy-all}}
+* {{cite book|title=Supermac: The Life of Harold Macmillan|last=Thorpe|first=D.R.|publisher=[[Chatto & Windus]]|year=2010}}
+
+==External links==
+* [https://cryptocellar.org/enigma/files/rodding.pdf Description of rodding] at Frode Weierud’s CryptoCellar
+
+{{Authority control}}
+
+{{DEFAULTSORT:Knox, Dilly}}
+[[Category:1884 births]]
+[[Category:1943 deaths]]
+[[Category:20th-century cryptographers]]
+[[Category:20th-century English LGBTQ people]]
+[[Category:Alumni of King's College, Cambridge]]
+[[Category:Bletchley Park people]]
+[[Category:British cryptographers]]
+[[Category:British papyrologists]]
+[[Category:Companions of the Order of St Michael and St George]]
+[[Category:Deaths from lymphoma in England]]
+[[Category:English atheists]]
+[[Category:Fellows of King's College, Cambridge]]
+[[Category:Foreign Office personnel of World War II]]
+[[Category:People educated at Eton College]]
+[[Category:People educated at Summer Fields School]]
+[[Category:People from Headington]]

@@ -19,3 +19,6 @@ double-slit | Soaring.mp3
 public-key | Unwritten Return.mp3
 public-key | Dream Catcher.mp3
 public-key | Sincerely.mp3
+enigma | Mesmerize.mp3
+enigma | Ghost Story.mp3
+enigma | Noble Race.mp3

@@ -1,0 +1,31 @@
+{{italic title}}
+{{short description|Code system used by the German Navy during World War II}}
+The '''Short Signal Code''', also known as the '''Short Signal Book''' ({{langx|de|Kurzsignalbuch}}), was a short code system used by the [[Kriegsmarine]] (German Navy) during [[World War II]] to minimize the transmission duration of messages.
+
+==Description==
+[[File:Kenngruppenheft.jpg|thumb|right|The short signal booklet was printed with water-soluble red ink on pink [[blotting paper]], in order to be able to destroy it quickly in case of danger.]]
+The transmission of radio messages had the potential risks of revealing the submarine's presence and direction; if decoded the content was also revealed. Submarines need to provide information, mostly in standard form (position of convoy to attack and of submarine, weather information), to their bases. Initially Morse code transmissions could be used. To inhibit detection (both to reduce the odds of messages being intercepted and to prevent adversaries from triangulating the location of the sender), the duration of messages needed to be minimised; for this, ''Kurzsignale'' short-coding was used. To prevent interception, messages needed to be encrypted by the [[Enigma machine]]. To shorten transmission even further, the message could be sent by a fast machine instead of a human radio operator. For example, the [[Kurier system]] – not implemented in time – decreased the time to send a Morse dot from around 50&nbsp;milliseconds for a human to 1&nbsp;millisecond.
+
+==Short Signal book==
+The ''Kurzsignale'' code was intended to shorten transmission time to below the time required to get a directional fix. It was not primarily intended to hide signal contents; protection was intended to be achieved by encoding with the Enigma machine. A copy of the ''Kurzsignale'' code book was captured from {{GS|U-110|1940|6}} on 9 May 1941. In August 1941, Dönitz began addressing U-boats by the names of their commanders, instead of boat numbers. The method of defining U-boat meeting points in the Short Signal Book was regarded as compromised, so a method was defined by [[B-Dienst]] [[cryptanalyst|cryptanalysts]] to disguise their positions on the Kriegsmarine [[German Naval Grid System]] (German:Gradnetzmeldeverfahren) was introduced and used until the end of the war
+
+==Radio direction finding==
+Aware of the danger presented by [[radio direction finding]] (RDF), the [[Kriegsmarine]] developed various systems to speed up broadcast. The ''Kurzsignale'' code system condensed messages into short codes consisting of short sequences for common terms such as "convoy location" so that additional descriptions would not be needed in the message. The resulting ''Kurzsignal'' was then encoded with the Enigma machine and subsequently transmitted as rapidly as possible, typically taking about 20 seconds. Typical length of an information or weather signal was about 25 characters.
+
+Conventional RDF needed about a minute to fix the bearing of a radio signal, and the Kurzsignale protected against this. However, the [[huff-duff]] system which was in use by the Allies could cope with these short transmissions.
+
+The fully automated [[burst transmission]] ''Kurier system'', in testing from August 1944, could send a ''Kurzsignal'' in not more than 460&nbsp;milliseconds; this was short enough to prevent location even by [[High-frequency direction finding|huff-duff]] and, if deployed, would have been a serious setback for Allied anti-submarine and code-breaking activities. By late 1944 the ''Kurier'' program was a top priority, but the war ended before the system was operational.
+
+==Short Weather cipher==
+A similar coding system was used for weather reports from U-boats, the ''[[Short Weather Cipher|Wetterkurzschlüssel]]'' (Short Weather Cipher). Code books were captured from {{GS|U-559||2}} on 30 October 1942.
+
+==References==
+{{reflist|30em}}
+
+[[Category:Kriegsmarine]]
+[[Category:Cryptography]]
+[[Category:History of telecommunications in Germany]]
+[[Category:Signals intelligence of World War II]]
+[[Category:Military communications of Germany]]
+[[Category:Military history of Germany during World War II]]
+[[Category:World War II military equipment of Germany]]

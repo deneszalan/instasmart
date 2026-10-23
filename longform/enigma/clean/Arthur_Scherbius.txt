@@ -1,0 +1,89 @@
+{{Short description|German electrical engineer (1878–1929)}}
+{{Infobox engineer
+| image = Arthur Scherbius 1.jpg
+| caption = Arthur Scherbius, inventor of the Enigma cipher.
+| name = Arthur Scherbius
+| birth_date = {{birth date|df=yes|1878|10|30}}
+| birth_place = [[Frankfurt]], [[German Empire]]
+| death_date = {{death date and age|df=yes|1929|05|13|1878|10|30}}
+| death_place = [[Berlin]], [[Weimar Republic|Germany]]
+| education = [[Technical University of Munich]] & [[Leibniz University Hannover]], [[Doktoringenieur|Dr.-Ing.]]
+| significant_design = [[Enigma machine]]<br>[[Rotor machine]]<br>[[Scherbius Drive]]
+}}
+
+[[Image:Scherbius-1928-patent.png|right|thumbnail|320px|Scherbius' Enigma patent &ndash; {{US patent|1657411}}, which was granted in 1928]]
+'''Jacob Ludolf Arthur Scherbius''' (30 October 1878 &ndash; 13 May 1929) was a German [[electrical engineer]] who is best known for inventing the mechanical rotor cipher [[Enigma machine]]. He patented the invention and later sold the machine under the brand name Enigma. Starting in 1923 the Enigma was used by the [[Reichswehr]] who began to encrypt their communications in 1930 and subsequently from March 1935, the [[Wehrmacht]] onwards to encrypt its secret communications
+
+==Life==
+Scherbius was born in [[Frankfurt (Main)|Frankfurt am Main]], Germany. He was the son of the Frankfurt merchant Gustav Scherbius (1836–1907) and his wife Hedwig, née Nacken (1854–1954). He attended primary and secondary school in his hometown and studied mechanical engineering and electrical engineering—disciplines not yet separated at the time—at the [[Leibniz University Hannover]] from 1899 to 1903, a period interrupted by two semesters (1901–1902) at the [[Technical University of Munich]]. In 1903, he obtained the academic degree of [[Engineer's_degree#Germany_and_Austria|Diplom-Ingenieur]] in Hanover and subsequently worked as a project engineer for the company Felten & Guilleaume-Lahmayer. At the same time, he wrote his dissertation, titled "Vorschläge zum Bau eines indirekt wirkenden Wasser-Turbinen-Reglers" ("Proposal for the Construction of an Indirect Water Turbine Governor"), and was awarded the degree of [[Doktoringenieur]] by the Technical University of Hanover on 14 July 1904.
+
+==Career==
+After a brief stint working at [[Siemens-Schuckert|Siemens Schuckert]] GmbH, he set up his own business in 1905 and invented circuits for regulating induction motors. He sold the rights to use his patents to [[Brown, Boveri & Cie]] in [[Baden]] in Switzerland, [[General Electric]], and other companies. From 1906 to 1912, he worked at the [[BBC]] within a close-knit group comprising the owners—Brown and Boveri—and development engineers such as electrical engineers Karl Schnetzler, Heinrich Meyer-Delius, {{ill|Fritz Marguerre|de}}, H. A. W. Klinkhamer, and {{ill|Leo Pungs|de}}.[2] His inventions were also manufactured there. He became famous for the [[Scherbius Drive|Scherbius circuit]] —a cascade arrangement of [[three-phase electric power|three-phase]] and AC [[Commutator (electric)|commutator]] motors that enabled low-loss speed control. This system saw widespread use in Europe and the USA for [[Rolling (metalworking)|rolling]] mill drives, as well as in the mining and metallurgical industries for pumping systems, waterworks, compressors, and fans. Scherbius also worked on [[Mercury-arc valve|mercury-arc rectifiers]] and served as a consultant for Siemens-Schuckertwerke. In a 1933 dissertation at the Swiss Federal Institute of Technology in Zurich, Max Leumann described both Brown Boveri and Scherbius patents.
+
+During [[World War I]], Scherbius was initially employed as an instructor of [[wireless telegraphy]], then from 1917 as an assistant operations manager, i.e., deputy head of a department, in the {{ill|Weapons and Munitions Procurement Office|de|Waffen- und Munitionsbeschaffungsamt}} (WuMBA). Scherbius applied for a [[patent]] that was filed 23 February 1918, for a cipher machine based on rotating wired wheels that is now known as a [[rotor machine]]. After the [[armistice of 11 November 1918|armistice]], at the end of 1918, he joined the technical department of the Reich Exploitation Office as a consultant and was also active in the Armistice Commission and the Army Peace Treaty Commission. At the same time, he worked on energy transmission using high-voltage direct current, but was unable to complete the development of a high-voltage direct current machine. 
+
+In Sweden, he had purchased patents from Birka Regulator AB, based on whose principles he developed a small and inexpensive thermostat, which he considered a key component for electrical household appliances. In 1918, he and {{ill|Ernst Richard Ritter|de}} founded the company "Scherbius & Ritter" in Berlin-Wannsee. The company operated an electrotechnical factory on Königstrasse in [[Wannsee]], where a thermoregulated heating pad and thermostats were manufactured in large quantities. They called it the "Scherip" (Sharp) heating pad. Ritter's company, "Dipl.-Ing. E. Richard Ritter & Co.", had represented a number of manufacturers of electrotechnical devices in Berlin since 1911. It was also involved in the development of the Enigma machine.
+
+In 1923–24, Scherbius and Ritter each built a house on a plot of land in Wannsee (Lindenstraße 5 and 6) owned by their joint company. Ritter’s house was larger and equipped with the latest advancements in applied electricity. Scherbius’s house was designed by the same architect, Otto Streu from Nowawes. In September 1924, the Ritter family and Scherbius—along with his wife, Elisabeth (1896–1945)—moved into their respective homes.
+
+==The Enigma machine==
+[[File:Enigma by Arthur Scherbius in ETZ 1923.jpg|right|thumb|Illustrations of the commercial machine in an article by Scherbius in the ETZ from 1923.]]
+During World War I, Scherbius became familiar with the challenges of encrypting radio transmissions, a field that became a new area of ​​activity for him. As early as 23 February 1918, he filed his first patent for an encryption machine based on the rotor principle. In April 1918, the firm "Dipl.-Ing. E. Richard Ritter & Co."—which had taken on commercial representation—offered the encryption machine to the {{ill|Great General Headquarters|de|Großes Hauptquartier}} and the [[German Imperial Naval Office|Imperial Naval Office]]. This prototype demonstrated the [[rotor machine]] principle and, in accordance with the patent, displayed the output via incandescent lamps. Two units were tested by the military while the war was still ongoing; although the machine's fundamental suitability was acknowledged, there were no plans to introduce it into service at that time. Scherbius was referred to the Foreign Office. After they, too, showed little interest, plans were made to market a version for the general public through the company Scherbius & Ritter, founded in 1920.
+
+The first civilian model—the commercial machine (pictured)—was very large, weighed approximately 50 kg, and resembled a cash register. The subsequent models A, B, and C continued the line of lamp-based machines established by the prototypes. Weighing 12 kg, these were portable and resembled a typewriter housed in a wooden case measuring 34 × 28 × 15 centimeters. In November 1921, Scherbius transferred his rights to the Berlin-based firm Gewerkschaft Securitas, which was subsequently granted patent DRP 416219 for a "cipher apparatus" in 1925.
+
+On 9 July 1923, the company—together with several investors—founded Chiffriermaschinen-Aktiengesellschaft ({{ill|Chiffriermaschinen AG|de|Chiffriermaschinen AG}}) in Berlin (W 35, Steglitzer Str. 2; today Pohlstraße, Berlin-Tiergarten). {{ill|Paul Bernstein|de|Paul Bernstein (Kryptologe)}} served as a development engineer at the firm until 1925. Scherbius also served on the board of ChiMaAG for a time after 1925.
+
+[[File:Enigma-logo.jpg|thumb|right|Brand label of arguably his most famous invention]]
+The distinctive brand name "Enigma" also emerged during the second half of 1923; it was evidently chosen based on the Greek word  "[[wikt:αίνιγμα|ainigma]]" (enigma), which carries the fitting meaning of "riddle" or "mystery." The first known publication featuring the new name "Enigma" dates to 1 September 1923.
+
+In his book "Historische Notizen zur Informatik" (Historical Notes on Computer Science), the German cryptology academic [[Friedrich L. Bauer]] expressed the view that:
+
+{{Blockquote|text=...it speaks to Arthur Scherbius's broad education that he chose this word to give a fitting name to his invention—a ciphering and deciphering machine.".}}
+
+However, there are no known sources that unequivocally identify Scherbius as the person who chose the name. An argument against his authorship is the fact that the name did not appear until 1923—a time when Scherbius no longer had control over his own invention.
+
+In 1923 and 1924, the machine was presented to the public at several congresses and postal exhibitions in [[Bern]], [[Stockholm]], and [[Leipzig]]. It was promoted and marketed as a "device for the transmission of business communications and telegrams." Because telegrams transmitted via postal services could easily be intercepted by unauthorized parties, Chiffriermaschinen AG recommended the "Enigma" encryption system. In the {{ill|Elektrotechnische Zeitschrift|de}} (ETZ) journal of November 1923, Scherbius described the machine's operation in detail and noted:
+
+{{Blockquote|text="In addition to security, radiotelegraphy must meet the most rigorous requirements regarding operational utility, speed, ease of use—to minimize sources of error—and the ability to easily rectify transmission errors."}}
+
+The article concludes with the following sentence: 
+
+{{Blockquote|text="The machine was developed by the firm Scherbius & Ritter in Wannsee in Berlin. The latest model shown here, however, was built by Gewerkschaft Securitas —which acquired all the patents for production purposes—with the collaboration of the former firm".}}
+
+==Death==
+Scherbius however did not live to see the widespread use of his machine. In 1929, Scherbius died from internal injuries sustained in a horse [[carriage]] accident in [[Wannsee]], where he had lived since 1924.
+
+==References==
+
+===Citations===
+{{Reflist}}
+
+=== Bibliography ===
+*{{cite book |authorlink=David Kahn (writer) |first=David |last=Kahn |title=Seizing the Enigma: The Race to Break the German U-Boats Codes, 1939–1943 |publisher=Houghton Mifflin |year=1991 |isbn=978-0-395-42739-2 }}
+
+==Further reading==
+* {{cite book |last1=Bauer |first1=Friedrich L. |title=Entzifferte Geheimnisse: Methoden und Maximen der Kryptologie; mit ... 26 Tabellen |trans-title=Deciphered Secrets: Methods and Maxims of Cryptology; with ... 26 tables
+ |date=2000 |publisher=Springer |location=Berlin Heidelberg |isbn=3-540-67931-6 |edition=3rd revised |language=de}}
+* {{cite book |last1=Bauer |first1=Friedrich L. |title=Historische Notizen zur Informatik |trans-title=Historical Notes on Computer Science |date=2009 |publisher=Springer Berlin Heidelberg |location=Berlin, Heidelberg |isbn=978-3-540-85789-1 |language=de}}
+* {{cite book |last1=Kippenhahn |first1=Rudolf |title=Verschlüsselte Botschaften: Geheimschrift, Enigma und Chipkarte |trans-title=Encrypted Messages: Secret Writing, Enigma, and Smart Cards |date=2005 |publisher=Rowohlt-Taschenbuch-Verl |location=Reinbek bei Hamburg |isbn=3-499-60807-3 |edition=4th |language=de}}
+* {{cite book |last1=Pröse |first1=Michael |title=Chiffriermaschinen und Entzifferungsgeräte im Zweiten Weltkrieg: Technikgeschichte und informatikhistorische Aspekte |trans-title=Cipher Machines and Deciphering Devices in World War II: Aspects of the History of Technology and Computing |date=2006 |publisher=M Press ; Meidenbauer |location=München |isbn=978-3-89975-548-0 |language=de}}
+* {{cite book |last1=Singh |first1=Simon |title=Geheime Botschaften: die Kunst der Verschlüsselung von der Antike bis in die Zeiten des Internet |trans-title=Secret Messages: The Art of Encryption from Antiquity to the Internet Age |date=2026 |publisher=dtv |location=München |isbn=978-3-423-33071-8 |edition=19th |language=de}}
+
+==External links==
+* [https://www.cryptomuseum.com/crypto/enigma/patents/index.htm List of Enigma Patents]
+* [https://www.cryptomuseum.com/crypto/enigma/tree.htm Enigma family tree]
+
+{{Authority control}}
+
+{{DEFAULTSORT:Scherbius, Arthur}}
+[[Category:1878 births]]
+[[Category:1929 deaths]]
+[[Category:Technical University of Munich alumni]]
+[[Category:Leibniz University Hannover alumni]]
+[[Category:Cipher-machine cryptographers]]
+[[Category:German information theorists]]
+[[Category:German logicians]]
+[[Category:20th-century German inventors]]
+[[Category:20th-century German mathematicians]]
+[[Category:Businesspeople from Frankfurt]]
