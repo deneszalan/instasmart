@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+The model matched Tycho's positions of Mars to within two arcminutes.
+
+2
+00:00:31,000 --> 00:00:56,000
+But at other points in the orbit, it missed by up to eight.
+
+3
+00:01:01,000 --> 00:01:26,000
+Tycho's data was far too accurate for an error that size to be ignored.
+
+4
+00:01:31,000 --> 00:01:56,000
+These eight minutes alone, Kepler wrote, will lead us along a path to the reform of the whole of astronomy.
+
+5
+00:02:01,000 --> 00:02:26,000
+Something in his model was wrong, either the circle or the way the planet moved along it.
+
+6
+00:02:31,000 --> 00:02:56,000
+Kepler wanted a physical cause. He imagined a force from the Sun, pushing the planets round, weaker with distance.
+
+7
+00:03:01,000 --> 00:03:26,000
+So, he reasoned, a planet's speed falls as its distance grows. Twice as far means half as fast.
+
+8
+00:03:31,000 --> 00:03:56,000
+To find where the planet would be, he'd have to add up its distance from the Sun all along the way.
+
+9
+00:04:01,000 --> 00:04:26,000
+By late sixteen oh two he had a shortcut, which was to measure the area swept by the line from the Sun.
+
+10
+00:04:31,000 --> 00:04:56,000
+Picture each day's motion as a thin triangle, whose height is the distance from the Sun, and whose base is the distance travelled.
+
+11
+00:05:01,000 --> 00:05:26,000
+If speed falls as distance grows, every day's triangle has the same area.
+
+12
+00:05:31,000 --> 00:05:56,000
+That's equal areas in equal times. Oddly, Kepler found this, the second law, before the first.
+
+13
+00:06:01,000 --> 00:06:26,000
+His speed rule only works for orbits that are nearly circles. The area rule works for every orbit.
+
+14
+00:06:31,000 --> 00:06:56,000
+Now he needed the shape. He tried egg-shaped ovals, again and again.
+
+15
+00:07:01,000 --> 00:07:26,000
+After about forty failed attempts, in late sixteen oh four, he tried an ellipse.
+
+16
+00:07:31,000 --> 00:07:56,000
+He had thought it too simple, because surely earlier astronomers wouldn't have missed it.
+
+17
+00:08:01,000 --> 00:08:26,000
+It fitted. He had even had the formula earlier, without seeing it. Ah, what a foolish bird I have been!
+
+18
+00:08:31,000 --> 00:08:56,000
+An ellipse has two special points, its foci. The Sun sits at one. The other is empty.
+
+19
+00:09:01,000 --> 00:09:26,000
+That's Kepler's first law, that a planet's orbit is an ellipse, with the Sun at one focus.
+
+20
+00:09:31,000 --> 00:09:56,000
+Mars's ellipse is barely squashed. It's less than half a percent narrower than it is long.

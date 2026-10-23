@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERB: But if the unburnt mixture ahead of the flame gets too hot, pockets of it explode all at once.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERA: That's called knock. It causes a metallic pinging, and pressure spikes that can damage the engine.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERB: So it's knock, not the formula, that sets the limit.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERA: Right. A fuel's octane rating measures how well it resists igniting by itself. Higher octane allows more squeeze.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERB: And modern engines listen for knock with sensors, and fire the spark later when they hear it.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERB: So far, everything has happened exactly at the top or bottom of a stroke. Real engines don't wait.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: The spark fires early, at some ten to forty degrees of crank rotation before the top.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERB: Before the piston has even finished squeezing?
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: Yes. The flame takes time to burn, and the peak pressure should come just after the top.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERB: And the flame doesn't speed up with the engine, so at higher revs the spark needs a longer head start.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: The valves are early, too. They open before the end of a stroke, and close after it.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERB: So at the end of the exhaust stroke, both valves are briefly open at once.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: That's valve overlap, and it's designed in on purpose.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERB: Why would you want both open?
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: The outgoing exhaust is moving fast, and it helps draw the fresh charge in behind it.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: So the trick is to close the exhaust valve just as the fresh charge reaches it.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: Exactly. Racing engines use lots of overlap. Road engines, which must idle smoothly below a thousand revolutions a minute, use less.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERB: And many now shift their camshafts as they run, to get both power at high revs and a smooth idle.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERA: One cylinder gives one push every two turns. That's a lumpy way to drive a car.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERB: So most car engines have several cylinders on one crankshaft, firing in turn.

@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: At three thousand revolutions a minute, a car engine's crankshaft turns fifty times a second.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: And yet each cylinder only burns fuel 25 times a second, which is once every two turns.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERB: Its piston makes four trips for every burn, and only one of those trips actually pushes.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERA: That's four trips for one push. It sounds wasteful.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERB: It does. And it's still the design inside most car engines.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERA: It's the four-stroke cycle. It was first patented by a man who never built one,
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERB: and made to work by a former grocery salesman, who later lost his patent.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERA: Let's open one up. This is a simplified diagram of a single cylinder.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERB: So inside the cylinder there's a piston, sliding up and down.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERA: And a connecting rod links that piston to the crankshaft, which turns.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERB: So up-and-down becomes round-and-round.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERA: Exactly. Up top there are two valves. One lets air and fuel in, and the other lets burnt gas out.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERB: And cams on a camshaft push them open, then springs close them again.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERA: Between them sits the spark plug.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERB: The piston's highest point is called top dead centre, and its lowest is called bottom dead centre.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERA: At each of them the piston is momentarily at rest, before it turns around.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERB: And one trip between them, up or down, is a stroke.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERA: Now watch the piston as the crank turns. It follows along, but not in a perfectly even rhythm.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERB: It looks like a smooth wave to me.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERA: Nearly. But after a quarter turn, the piston has already covered more than half its stroke.

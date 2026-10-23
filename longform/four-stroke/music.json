@@ -1,4 +1,14 @@
 [
- { "file": "/tmp/claude-0/-home-user-instasmart/597d1c62-e00b-59e9-a6a1-fbf35da32d35/scratchpad/video-posts/music-cache/Beauty Flow.mp3", "at": 0, "until": 387.7, "offset": 0 },
- { "file": "/tmp/claude-0/-home-user-instasmart/597d1c62-e00b-59e9-a6a1-fbf35da32d35/scratchpad/video-posts/music-cache/Limit 70.mp3", "at": 384.2, "until": 607.98, "offset": 0 }
+ {
+  "file": "/tmp/claude-0/-home-user-instasmart/597d1c62-e00b-59e9-a6a1-fbf35da32d35/scratchpad/video-posts/music-cache/Beauty Flow.mp3",
+  "at": 0,
+  "until": 360.94,
+  "offset": 0
+ },
+ {
+  "file": "/tmp/claude-0/-home-user-instasmart/597d1c62-e00b-59e9-a6a1-fbf35da32d35/scratchpad/video-posts/music-cache/Limit 70.mp3",
+  "at": 357.44,
+  "until": 567.46,
+  "offset": 0
+ }
 ]

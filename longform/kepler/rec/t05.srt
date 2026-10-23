@@ -1,0 +1,71 @@
+1
+00:00:01,000 --> 00:00:26,000
+But why should planets obey these rules at all? The answer came from Isaac Newton.
+
+2
+00:00:31,000 --> 00:00:56,000
+In sixteen eighty-four he proved that anything pulled toward a fixed centre sweeps out equal areas in equal times.
+
+3
+00:01:01,000 --> 00:01:26,000
+His proof, in the Principia of sixteen eighty-seven, is beautifully simple. Imagine the pull comes in short, sharp tugs.
+
+4
+00:01:31,000 --> 00:01:56,000
+With no pull, the planet goes straight, covering equal distances in equal times.
+
+5
+00:02:01,000 --> 00:02:26,000
+Each step makes a triangle with the Sun. The same base and the same height give the same area.
+
+6
+00:02:31,000 --> 00:02:56,000
+Now a tug toward the Sun bends the path. But it pulls only along the line to the Sun.
+
+7
+00:03:01,000 --> 00:03:26,000
+So the new triangle keeps the same base and the same height as before. So it has the same area again.
+
+8
+00:03:31,000 --> 00:03:56,000
+Make the tugs smaller and more frequent, and the path becomes a smooth orbit. The areas stay equal.
+
+9
+00:04:01,000 --> 00:04:26,000
+Notice that the proof never needed to know how strong the pull is. Any pull toward a centre will do.
+
+10
+00:04:31,000 --> 00:04:56,000
+Today we call this conservation of angular momentum.
+
+11
+00:05:01,000 --> 00:05:26,000
+The ellipse and the third law need more. They need a pull that weakens with the square of the distance, as gravity does.
+
+12
+00:05:31,000 --> 00:05:56,000
+Kepler never called these laws. That word first appeared in print in seventeen thirty-eight, in a book by Voltaire.
+
+13
+00:06:01,000 --> 00:06:26,000
+The tidy set of three came later still, in eighteen oh four.
+
+14
+00:06:31,000 --> 00:06:56,000
+First, a planet's orbit is an ellipse, with the Sun at one focus.
+
+15
+00:07:01,000 --> 00:07:26,000
+Second, the line from the Sun sweeps equal areas in equal times.
+
+16
+00:07:31,000 --> 00:07:56,000
+Third, the period squared goes with the distance cubed.
+
+17
+00:08:01,000 --> 00:08:26,000
+And it's all because Kepler refused to ignore eight arcminutes.
+
+18
+00:08:31,000 --> 00:08:56,000
+So this January, when it's coldest in the north, remember that Earth is at its closest to the Sun, and moving fastest.

@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: Spaced evenly, the power strokes come every seven hundred and twenty degrees, divided by the number of cylinders.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: With four cylinders, that's every 180 degrees, which gives a push every half turn.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: And a straight four usually fires its cylinders in the order one, three, four, two.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERB: Not one-two-three-four?
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: One, three, four, two is the usual order. Some British engines used one, two, four, three.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERB: Here's the twisting force that the gas puts on the crank, in an idealised model.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: One cylinder gives one big shove, then a long wait, with a drag while it compresses.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERB: Four cylinders give one shove after another.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: With six cylinders, the power strokes overlap, and the push is smoother still.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERB: And even spacing means less vibration, and a smoother sound.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERB: There's another way to light the fire, with no spark at all.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERA: A diesel draws in only air, and squeezes it much harder, typically fifteen to twenty-three to one.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERB: And squeezing air that hard heats it by hundreds of degrees.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERA: Near the top, fuel is sprayed in, and it ignites in the hot air by itself.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERB: So the squeeze itself does the spark plug's job.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERA: In a way. With no fuel in the cylinder during the squeeze, nothing can ignite early, so it can squeeze harder.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERB: That's one reason diesels are efficient. Big, slow ship diesels reach up to 55 percent.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERA: And instead of throttling its air, a diesel sets its power by how much fuel it injects.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERB: Rudolf Diesel's first prototype fired in 1893, and his third, tested in 1897, turned about 26 percent of its fuel into work.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERA: And it runs the same four strokes of intake, compression, power and exhaust.
