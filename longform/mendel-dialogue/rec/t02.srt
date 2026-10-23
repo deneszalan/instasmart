@@ -1,79 +1,79 @@
 1
 00:00:01,000 --> 00:00:26,000
-SPEAKERA: And in their pods, wrinkled seeds were back, often right next to round ones, with nothing in between.
+SPEAKERA: Today the same bookkeeping is drawn as a square, which Reginald Punnett devised decades later.
 
 2
 00:00:31,000 --> 00:00:56,000
-SPEAKERB: So the wrinkle skipped a generation. Where was it hiding?
+SPEAKERA: Which means two round seeds in three should be hybrids, still hiding a small r. And Mendel tested that.
 
 3
 00:01:01,000 --> 00:01:26,000
-SPEAKERA: First, he counted. From two hundred and fifty-three hybrid plants, he got seven thousand, three hundred and twenty-four seeds.
+SPEAKERA: You grow the seed, and look at the seeds its plant makes.
 
 4
 00:01:31,000 --> 00:01:56,000
-SPEAKERB: And 5,474 of them were round, and 1,850 wrinkled.
+SPEAKERA: That's one point nine three to one, close to the two to one he predicted.
 
 5
 00:02:01,000 --> 00:02:26,000
-SPEAKERA: That's two point nine six round seeds for every wrinkled one, which is close to three to one.
+SPEAKERA: Next, Mendel crossed plants that differed in two traits, round yellow seeds with wrinkled green ones.
 
 6
 00:02:31,000 --> 00:02:56,000
-SPEAKERB: He did the same for all seven traits, and each one landed near three to one, from 2.82 to 3.15.
+SPEAKERA: The hybrids were all round and yellow. From fifteen of them, he harvested five hundred and fifty-six seeds, in four kinds.
 
 7
 00:03:01,000 --> 00:03:26,000
-SPEAKERA: Seven different traits, and the same ratio every time?
+SPEAKERA: And two of those kinds are new. Round green and wrinkled yellow don't look like either original parent.
 
 8
 00:03:31,000 --> 00:03:56,000
-SPEAKERB: Near enough. All seven together gave 14,949 dominant to 5,010 recessive, which is 2.98 to one.
+SPEAKERA: That makes nine sixteenths round and yellow, and the four kinds come in nine, three, three and one.
 
 9
 00:04:01,000 --> 00:04:26,000
-SPEAKERA: So why three to one? And how can a trait vanish for a generation, then come back unchanged?
+SPEAKERA: And he got three hundred and fifteen, and thirty-two. That's close.
 
 10
 00:04:31,000 --> 00:04:56,000
-SPEAKERB: Mendel's answer, in today's words, is that each plant carries two copies of a gene for seed shape, one from each parent.
+SPEAKERA: With three traits, he found twenty-seven kinds, and he bred all one hundred and twenty-eight pure combinations of the seven.
 
 11
 00:05:01,000 --> 00:05:26,000
-SPEAKERA: Let's write the round version as a capital R, and the wrinkled one as a small r.
+SPEAKERA: About forty people listened, and his paper came out in the society's journal in eighteen sixty-six.
 
 12
 00:05:31,000 --> 00:05:56,000
-SPEAKERB: A hybrid gets a capital R from one parent and a small r from the other, and one capital R is enough to make the seed round.
+SPEAKERA: Not total silence. But it was read as a paper on hybrids, and cited only about three times in thirty-five years.
 
 13
 00:06:01,000 --> 00:06:26,000
-SPEAKERA: And the small r? Is it gone?
+SPEAKERA: His hawkweed crosses didn't fit, since many hawkweeds, it turned out, make most of their seeds without fertilisation.
 
 14
 00:06:31,000 --> 00:06:56,000
-SPEAKERB: Not at all. That's dominance. The small r stays hidden, and it can still be passed on.
+SPEAKERA: In the spring of nineteen hundred, three plant scientists in three countries published within about two months, all pointing back to Mendel.
 
 15
 00:07:01,000 --> 00:07:26,000
-SPEAKERA: Each pollen grain and egg cell gets just one copy, so a hybrid's are half capital R and half small r.
+SPEAKERA: Three at once, after thirty-four years. Was that a coincidence?
 
 16
 00:07:31,000 --> 00:07:56,000
-SPEAKERB: And which pollen meets which egg is, in Mendel's own words, a matter of chance.
+SPEAKERA: Historians now doubt that Chermak understood Mendel's laws, and how much de Vries owed to Mendel is still debated.
 
 17
 00:08:01,000 --> 00:08:26,000
-SPEAKERA: Like tossing two coins, one for the pollen and one for the egg.
+SPEAKERA: Three to one is an average, though. Plant by plant, Mendel's counts wandered.
 
 18
 00:08:31,000 --> 00:08:56,000
-SPEAKERB: Mendel wrote out the four equally likely meetings as fractions, the pollen over the egg cell.
+SPEAKERA: One gave nineteen to ten, under two to one. And another, he noted, gave forty-three to two.
 
 19
 00:09:01,000 --> 00:09:26,000
-SPEAKERA: And only small r over small r, one in four, makes a wrinkled seed.
+SPEAKERA: Small counts swing widely, because chance decides which pollen meets which egg.
 
 20
 00:09:31,000 --> 00:09:56,000
-SPEAKERB: The other three hold a capital R, so they're round.
+SPEAKERA: And they scatter just like his, from twenty-one to eleven on one plant, to twenty-nine to five on another.

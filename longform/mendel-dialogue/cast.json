@@ -1,7 +1,8 @@
 {
  "SPEAKERA": {
-  "engine": "kokoro",
-  "voice": "am_michael"
+  "engine": "chatterbox",
+  "ref-audio": "/home/user/text2speech/voices/narrator_male_1.wav",
+  "seed": 1
  },
  "SPEAKERB": {
   "engine": "kokoro",

@@ -4,76 +4,76 @@ SPEAKERA: Cross a pea plant that has round seeds with one that has wrinkled seed
 
 2
 00:00:31,000 --> 00:00:56,000
-SPEAKERB: So the wrinkles just disappear?
+SPEAKERA: That's how it looks. But grow those round seeds into plants, and wrinkled seeds come back, about one in four.
 
 3
 00:01:01,000 --> 00:01:26,000
-SPEAKERA: That's how it looks. But grow those round seeds into plants, and wrinkled seeds come back, about one in four.
+SPEAKERA: This is the story of Gregor Mendel's peas, and of numbers that some called too good to be true.
 
 4
 00:01:31,000 --> 00:01:56,000
-SPEAKERB: A friar counted thousands of them in a monastery garden, and out of his counts came the first rules of genetics.
+SPEAKERA: From eighteen fifty-six to eighteen sixty-three, he used the abbey's garden to cross pea plants and follow their offspring.
 
 5
 00:02:01,000 --> 00:02:26,000
-SPEAKERA: This is the story of Gregor Mendel's peas, and of numbers that some called too good to be true.
+SPEAKERA: Pea flowers fertilise themselves in the bud, so to cross two plants, Mendel opened a young bud and pulled out its stamens.
 
 6
 00:02:31,000 --> 00:02:56,000
-SPEAKERB: Mendel was a friar at Saint Thomas's Abbey in Brno, which was called Brünn back then, in the Austrian Empire.
+SPEAKERA: He called that somewhat laborious, but almost always successful.
 
 7
 00:03:01,000 --> 00:03:26,000
-SPEAKERA: From eighteen fifty-six to eighteen sixty-three, he used the abbey's garden to cross pea plants and follow their offspring.
+SPEAKERA: Seeds were round or wrinkled, and yellow or green. Seed coats were grey or white, with violet or white flowers.
 
 8
 00:03:31,000 --> 00:03:56,000
-SPEAKERB: Why peas, of all plants?
+SPEAKERA: He chose them that way on purpose. Traits that came in degrees, more or less, he left out.
 
 9
 00:04:01,000 --> 00:04:26,000
-SPEAKERA: Pea flowers fertilise themselves in the bud, so to cross two plants, Mendel opened a young bud and pulled out its stamens.
+SPEAKERA: The shape shows in the seed itself, so he saw the answer that same year. Every seed was round.
 
 10
 00:04:31,000 --> 00:04:56,000
-SPEAKERB: And then he dusted it with pollen from another plant.
+SPEAKERA: He coined the words for it. Round was dominant, and wrinkled, which had vanished, was recessive.
 
 11
 00:05:01,000 --> 00:05:26,000
-SPEAKERA: He called that somewhat laborious, but almost always successful.
+SPEAKERA: And in their pods, wrinkled seeds were back, often right next to round ones, with nothing in between.
 
 12
 00:05:31,000 --> 00:05:56,000
-SPEAKERB: He tested 34 varieties, kept 22 that bred true, and picked seven traits, each with two clear forms.
+SPEAKERA: First, he counted. From two hundred and fifty-three hybrid plants, he got seven thousand, three hundred and twenty-four seeds.
 
 13
 00:06:01,000 --> 00:06:26,000
-SPEAKERA: Seeds were round or wrinkled, and yellow or green. Seed coats were grey or white, with violet or white flowers.
+SPEAKERA: That's two point nine six round seeds for every wrinkled one, which is close to three to one.
 
 14
 00:06:31,000 --> 00:06:56,000
-SPEAKERB: Pods were inflated or pinched, green or yellow. Flowers grew along the stem or at the tip, and stems were tall or short.
+SPEAKERA: Seven different traits, and the same ratio every time?
 
 15
 00:07:01,000 --> 00:07:26,000
-SPEAKERA: He chose them that way on purpose. Traits that came in degrees, more or less, he left out.
+SPEAKERA: So why three to one? And how can a trait vanish for a generation, then come back unchanged?
 
 16
 00:07:31,000 --> 00:07:56,000
-SPEAKERB: And he counted. Over those years, he grew and tested some 28,000 plants, most of them peas.
+SPEAKERA: Let's write the round version as a capital R, and the wrinkled one as a small r.
 
 17
 00:08:01,000 --> 00:08:26,000
-SPEAKERB: Take seed shape. Mendel crossed plants with round seeds and plants with wrinkled ones.
+SPEAKERA: And the small r? Is it gone?
 
 18
 00:08:31,000 --> 00:08:56,000
-SPEAKERA: The shape shows in the seed itself, so he saw the answer that same year. Every seed was round.
+SPEAKERA: Each pollen grain and egg cell gets just one copy, so a hybrid's are half capital R and half small r.
 
 19
 00:09:01,000 --> 00:09:26,000
-SPEAKERA: He coined the words for it. Round was dominant, and wrinkled, which had vanished, was recessive.
+SPEAKERA: Like tossing two coins, one for the pollen and one for the egg.
 
 20
 00:09:31,000 --> 00:09:56,000
-SPEAKERB: The next year, he sowed those hybrid seeds and let the plants fertilise themselves.
+SPEAKERA: And only small r over small r, one in four, makes a wrinkled seed.
