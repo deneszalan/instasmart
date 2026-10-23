@@ -1,0 +1,379 @@
+1
+00:00:01,000 --> 00:00:07,820
+Cross a pea plant that has round seeds with one that has wrinkled seeds, and every seed you get is round.
+
+2
+00:00:07,900 --> 00:00:14,060
+But grow those round seeds into plants, and wrinkled seeds come back, about one in four.
+
+3
+00:00:14,140 --> 00:00:20,750
+A friar counted thousands of them in a monastery garden, and found the first rules of genetics.
+
+4
+00:00:20,830 --> 00:00:28,170
+This is the story of Gregor Mendel's peas, and of numbers that some called too good to be true.
+
+5
+00:00:32,170 --> 00:00:38,940
+Mendel was a friar at St Thomas's Abbey in Brno, then called Brünn, in the Austrian Empire.
+
+6
+00:00:39,020 --> 00:00:46,680
+From 1856 to 1863, he used the abbey's garden to cross pea plants and follow their offspring.
+
+7
+00:00:46,760 --> 00:00:54,550
+Pea flowers fertilise themselves in the bud, so to cross two plants, Mendel opened a young bud and pulled out its stamens.
+
+8
+00:00:54,630 --> 00:00:58,070
+Then he dusted it with pollen from another plant.
+
+9
+00:00:58,150 --> 00:01:06,220
+He tested 34 varieties, kept 22 that bred true, and chose seven traits, each with two clear forms.
+
+10
+00:01:06,300 --> 00:01:14,320
+Seeds were round or wrinkled, and yellow or green. Seed coats were grey or white, with violet or white flowers.
+
+11
+00:01:14,400 --> 00:01:22,810
+Pods were inflated or pinched, green or yellow. Flowers grew along the stem or at its tip, and stems were tall or short.
+
+12
+00:01:22,890 --> 00:01:32,190
+Over those years, he grew and tested some 28,000 plants, most of them peas, and he counted their offspring.
+
+13
+00:01:35,390 --> 00:01:41,230
+Take seed shape. Mendel crossed plants with round seeds and plants with wrinkled ones.
+
+14
+00:01:41,310 --> 00:01:46,650
+The shape shows in the seed itself, and that same year, every seed was round.
+
+15
+00:01:46,730 --> 00:01:51,640
+Mendel called round dominant, and wrinkled, which had vanished, recessive.
+
+16
+00:01:51,720 --> 00:01:56,210
+The next year, he sowed them and let the plants fertilise themselves.
+
+17
+00:01:56,290 --> 00:02:02,400
+Wrinkled seeds were back in their pods, often beside round ones, with nothing in between.
+
+18
+00:02:02,480 --> 00:02:15,790
+From 253 hybrid plants, he counted 7,324 seeds. Of those, 5,474 were round and 1,850 were wrinkled.
+
+19
+00:02:15,870 --> 00:02:21,690
+That makes 2.96 round seeds for every wrinkled one, close to three to one.
+
+20
+00:02:21,770 --> 00:02:29,810
+He did the same for all seven traits, and each one landed near three to one, from 2.82 to 3.15.
+
+21
+00:02:29,890 --> 00:02:40,480
+All seven together gave 14,949 dominant to 5,010 recessive, which is 2.98 to 1.
+
+22
+00:02:40,560 --> 00:02:47,900
+So why three to one? And how can a trait vanish for a generation, then come back unchanged?
+
+23
+00:02:50,500 --> 00:02:58,490
+Mendel's answer, in today's words, is that each plant carries two copies of a gene for seed shape, one from each parent.
+
+24
+00:02:58,570 --> 00:03:03,680
+Write the round version as R, and the wrinkled one as r.
+
+25
+00:03:03,760 --> 00:03:11,850
+A hybrid gets R from one parent and r from the other, and one R is enough to make a seed round.
+
+26
+00:03:11,930 --> 00:03:16,840
+That's dominance. The r stays hidden, and it can be passed on.
+
+27
+00:03:16,920 --> 00:03:24,460
+Each pollen grain and each egg cell gets just one copy, so a hybrid's are half R and half r.
+
+28
+00:03:24,540 --> 00:03:28,980
+Which pollen meets which egg, Mendel wrote, "is a matter of chance".
+
+29
+00:03:29,060 --> 00:03:34,500
+He wrote the four equally likely meetings as fractions, the pollen over the egg cell.
+
+30
+00:03:34,580 --> 00:03:39,490
+Only r over r, one in four, makes a wrinkled seed.
+
+31
+00:03:39,570 --> 00:03:44,980
+Today this is drawn as a square, devised decades later by Reginald Punnett.
+
+32
+00:03:45,060 --> 00:03:51,650
+It predicts one pure round, two hybrids and one pure wrinkled, in every four.
+
+33
+00:03:51,730 --> 00:03:58,050
+So two round seeds in three should be hybrids, still hiding an r. Mendel tested that.
+
+34
+00:03:58,130 --> 00:04:08,300
+Of 565 plants grown from round seeds, 372 made both kinds of seed, and 193 made only round ones.
+
+35
+00:04:08,380 --> 00:04:14,270
+That's 1.93 to 1, close to the two to one he predicted.
+
+36
+00:04:17,270 --> 00:04:24,040
+Next, Mendel crossed plants that differed in two traits, round yellow seeds with wrinkled green ones.
+
+37
+00:04:24,120 --> 00:04:32,230
+The hybrids were all round and yellow. From 15 of them, he harvested 556 seeds, in four kinds.
+
+38
+00:04:32,310 --> 00:04:41,180
+There were 315 round yellow seeds, 101 wrinkled yellow, 108 round green, and 32 wrinkled green.
+
+39
+00:04:41,260 --> 00:04:48,500
+If the traits are inherited separately, three quarters of the seeds are round, and three quarters of those are yellow.
+
+40
+00:04:48,580 --> 00:04:55,170
+That makes nine sixteenths round and yellow, and the four kinds come in nine, three, three and one.
+
+41
+00:04:55,250 --> 00:05:06,190
+For 556 seeds, that predicts about 313 round yellow and 35 wrinkled green, with 104 of each mixed kind.
+
+42
+00:05:06,270 --> 00:05:10,140
+Seed shape and seed colour had sorted independently.
+
+43
+00:05:10,220 --> 00:05:21,410
+With three traits, he found 27 kinds of offspring. In the end, he bred all 128 true-breeding combinations of his seven traits.
+
+44
+00:05:24,610 --> 00:05:33,500
+Mendel presented all this to the Natural History Society of Brno, at two meetings in February and March 1865.
+
+45
+00:05:33,580 --> 00:05:40,020
+About forty people listened, and his paper appeared in the society's journal in 1866.
+
+46
+00:05:40,100 --> 00:05:48,090
+It wasn't unknown, but it was read as a paper on hybrids, and cited only about three times in 35 years.
+
+47
+00:05:48,170 --> 00:05:53,540
+Even Mendel seems to have thought his rules held only for some kinds of plants.
+
+48
+00:05:53,620 --> 00:06:01,230
+His hawkweed crosses didn't fit, since many hawkweeds, it turned out, make most of their seeds without fertilisation.
+
+49
+00:06:01,310 --> 00:06:08,830
+When Mendel became abbot, his duties largely ended his science. He died in 1884.
+
+50
+00:06:08,910 --> 00:06:17,950
+Then, in the spring of 1900, three plant scientists in three countries published within about two months, and pointed back to Mendel.
+
+51
+00:06:18,030 --> 00:06:25,070
+They were Hugo de Vries in the Netherlands, Carl Correns in Germany, and Erich von Tschermak in Austria.
+
+52
+00:06:25,150 --> 00:06:32,920
+Historians now doubt that Tschermak understood Mendel's laws, and how much de Vries owed to Mendel is still debated.
+
+53
+00:06:33,000 --> 00:06:41,520
+In England, William Bateson, nicknamed Mendel's bulldog, championed it and named the new science genetics.
+
+54
+00:06:44,120 --> 00:06:49,190
+Three to one is an average. Plant by plant, Mendel's counts wandered.
+
+55
+00:06:49,270 --> 00:06:57,210
+His first ten plants for seed shape gave 45 to 12, then 27 to 8, then 24 to 7.
+
+56
+00:06:57,290 --> 00:07:03,750
+One gave 19 to 10, under two to one, and another, he noted, gave 43 to 2.
+
+57
+00:07:03,830 --> 00:07:09,370
+Small counts swing widely, because chance decides which pollen meets which egg.
+
+58
+00:07:09,450 --> 00:07:17,020
+Let's have chance do the same. For every seed, we pick R or r for the pollen, and again for the egg.
+
+59
+00:07:17,100 --> 00:07:23,040
+Here are ten imaginary plants, with the same numbers of seeds as Mendel's first ten.
+
+60
+00:07:23,120 --> 00:07:30,430
+They scatter just like his, from 21 to 11 on one plant to 29 to 5 on another.
+
+61
+00:07:30,510 --> 00:07:33,230
+Now keep going, seed after seed.
+
+62
+00:07:33,310 --> 00:07:41,380
+After 40 seeds, the ratio stands at 7 to 1. After 400, it has fallen to 3.30 to 1.
+
+63
+00:07:41,460 --> 00:07:50,530
+By 7,324 seeds, as many as Mendel counted, it has settled at 3.10 to 1.
+
+64
+00:07:50,780 --> 00:07:57,880
+In Mendel's words, "the larger their number is, the more mere chance effects are eliminated".
+
+65
+00:08:00,480 --> 00:08:07,140
+In 1936, the statistician Ronald Fisher tested how well Mendel's numbers fit.
+
+66
+00:08:07,220 --> 00:08:13,460
+Real counts miss a prediction by chance. Mendel's, Fisher argued, missed by too little.
+
+67
+00:08:13,540 --> 00:08:22,230
+Against 1,000 gardens run by chance alone, only 50 come as close to three to one as Mendel's seven totals.
+
+68
+00:08:22,310 --> 00:08:26,630
+That's about one garden in twenty. Lucky, but not shocking.
+
+69
+00:08:26,710 --> 00:08:29,900
+Fisher's point was that the luck kept repeating.
+
+70
+00:08:29,980 --> 00:08:35,320
+His sharpest point was a test in which Mendel grew ten offspring of each plant.
+
+71
+00:08:35,400 --> 00:08:44,570
+Sometimes all ten offspring of a hybrid look dominant, so Mendel should have found about 1.7 hybrids per pure plant, not 2.
+
+72
+00:08:44,650 --> 00:08:52,090
+He reported 399 hybrids to 201 pure, almost exactly two to one.
+
+73
+00:08:52,170 --> 00:09:00,160
+Fisher concluded that most of the data had been falsified, perhaps by an assistant "who knew too well what was expected".
+
+74
+00:09:00,240 --> 00:09:08,560
+Daniel Hartl and Daniel Fairbanks replied that Mendel probably grew more than ten, and that the fraud charge could be put to rest.
+
+75
+00:09:08,640 --> 00:09:16,880
+Their 2008 book with others, "Ending the Mendel–Fisher Controversy", found no reason to think he made up results.
+
+76
+00:09:16,960 --> 00:09:24,370
+Yet one of its authors, A. W. F. Edwards, still found too little scatter in 84 of Mendel's ratios.
+
+77
+00:09:24,450 --> 00:09:31,770
+"One can applaud the lucky gambler," he wrote, "but when he is lucky again tomorrow, and the next day, and the following day,
+
+78
+00:09:31,850 --> 00:09:35,320
+one is entitled to become a little suspicious."
+
+79
+00:09:35,400 --> 00:09:43,890
+A 2019 reanalysis, adding the extreme plants Mendel himself reported, found about as much scatter as chance predicts.
+
+80
+00:09:43,970 --> 00:09:48,690
+Mendel also said he left out some small experiments that strayed.
+
+81
+00:09:48,770 --> 00:09:56,190
+The open question is how he chose, counted and reported his peas, not whether he grew them.
+
+82
+00:09:58,790 --> 00:10:05,750
+Mendel never knew what his factors were made of. For the wrinkled seed, the answer came in 1990.
+
+83
+00:10:05,830 --> 00:10:12,670
+Wrinkled seeds lack one form of an enzyme that builds starch, starch-branching enzyme 1.
+
+84
+00:10:12,750 --> 00:10:20,120
+In wrinkled peas, its gene is interrupted by an extra stretch of DNA, about 800 letters long.
+
+85
+00:10:20,200 --> 00:10:24,110
+The intruder resembles a jumping gene known from maize.
+
+86
+00:10:24,190 --> 00:10:30,980
+Without the enzyme, the young seed makes less starch and keeps more sugar, which draws in extra water.
+
+87
+00:10:31,060 --> 00:10:35,570
+Then, as the ripe seed dries out, it ends up wrinkled.
+
+88
+00:10:35,650 --> 00:10:42,860
+One working copy of the gene makes the enzyme, so the seed stays round. That's dominance, in chemistry.
+
+89
+00:10:42,940 --> 00:10:51,810
+It was the first of Mendel's seven genes to be found, and by 2025, all seven had been identified.
+
+90
+00:10:54,410 --> 00:11:01,280
+So here is what the peas were saying. Every plant carries two copies of each gene, one from each parent.
+
+91
+00:11:01,360 --> 00:11:05,550
+Each pollen grain and each egg cell gets one of them, by chance.
+
+92
+00:11:05,630 --> 00:11:12,720
+A recessive copy can hide for a generation, and shows again when two hidden copies meet, one time in four.
+
+93
+00:11:12,800 --> 00:11:18,140
+None of this shows in a single pod. It appears only when someone counts thousands.
+
+94
+00:11:18,220 --> 00:11:25,460
+Mendel's counts waited 34 years to be understood, and then they became the first rules of genetics.
+
+95
+00:11:25,540 --> 00:11:30,860
+All from a friar, a garden, and a careful count of peas.

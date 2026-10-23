@@ -1,0 +1,667 @@
+[
+ {
+  "key": "o1",
+  "who": "A",
+  "spoken": "Around two hundred and forty BC, a scholar in Egypt worked out the size of the whole Earth."
+ },
+ {
+  "key": "x1",
+  "who": "B",
+  "spoken": "Without ever going round it?"
+ },
+ {
+  "key": "o2",
+  "who": "A",
+  "spoken": "He didn't need to. He used a shadow, a distance and one idea from geometry."
+ },
+ {
+  "key": "o3",
+  "who": "B",
+  "spoken": "And his answer was about 250,000 stadia."
+ },
+ {
+  "key": "o4",
+  "who": "A",
+  "spoken": "That sounds precise. But even today, we can't say exactly how close he came."
+ },
+ {
+  "key": "o5",
+  "who": "B",
+  "spoken": "So this is the story of Eratosthenes, and of a number we still argue about."
+ },
+ {
+  "key": "l1",
+  "who": "B",
+  "spoken": "Eratosthenes was born around 276 BC in Cyrene, a Greek city in what's now Libya."
+ },
+ {
+  "key": "l2",
+  "who": "A",
+  "spoken": "He studied in Athens for years. Then the king of Egypt, Ptolemy the Third, called him to Alexandria."
+ },
+ {
+  "key": "l3",
+  "who": "B",
+  "spoken": "To run the Library of Alexandria, one of the largest libraries of the ancient world."
+ },
+ {
+  "key": "x2",
+  "who": "A",
+  "spoken": "That's quite a job offer."
+ },
+ {
+  "key": "l4",
+  "who": "A",
+  "spoken": "And the post also made him tutor to the future king."
+ },
+ {
+  "key": "l5",
+  "who": "B",
+  "spoken": "He wrote about mathematics, geography, poetry, history and the stars."
+ },
+ {
+  "key": "l6",
+  "who": "A",
+  "spoken": "His admirers called him Pentathlos, like an athlete who competes in five events."
+ },
+ {
+  "key": "l7",
+  "who": "B",
+  "spoken": "And his critics called him Beta, meaning second best at everything."
+ },
+ {
+  "key": "x3",
+  "who": "A",
+  "spoken": "Second best at everything is still quite something."
+ },
+ {
+  "key": "l8",
+  "who": "B",
+  "spoken": "One thing he didn't have to prove was that the Earth is round."
+ },
+ {
+  "key": "x4",
+  "who": "A",
+  "spoken": "They already knew that?"
+ },
+ {
+  "key": "l9",
+  "who": "B",
+  "spoken": "They had, for a century or so. Aristotle had pointed to the Earth's round shadow on the Moon during an eclipse."
+ },
+ {
+  "key": "l10",
+  "who": "A",
+  "spoken": "And he noted that some stars seen in Egypt can't be seen from further north."
+ },
+ {
+  "key": "x5",
+  "who": "B",
+  "spoken": "That only works if the ground curves between the two places."
+ },
+ {
+  "key": "l11",
+  "who": "A",
+  "spoken": "Aristotle even reported a size for the Earth, which was four hundred thousand stadia."
+ },
+ {
+  "key": "l12",
+  "who": "B",
+  "spoken": "Eratosthenes found a way to actually measure it."
+ },
+ {
+  "key": "m1",
+  "who": "A",
+  "spoken": "Far up the Nile, on Egypt's southern frontier, lay the town of Syene. Today it's Aswan."
+ },
+ {
+  "key": "m2",
+  "who": "B",
+  "spoken": "And Syene was known for something that happened there once a year."
+ },
+ {
+  "key": "m3",
+  "who": "A",
+  "spoken": "At noon on the summer solstice, the longest day of the year, upright sticks there cast no shadow."
+ },
+ {
+  "key": "x6",
+  "who": "B",
+  "spoken": "None at all?"
+ },
+ {
+  "key": "m4",
+  "who": "A",
+  "spoken": "None. Later writers also tell of a well there, where the noon sunlight reached all the way down to the water."
+ },
+ {
+  "key": "m5",
+  "who": "B",
+  "spoken": "Because the Sun was standing straight overhead."
+ },
+ {
+  "key": "m6",
+  "who": "A",
+  "spoken": "Syene was taken to lie on the Tropic of Cancer, the furthest north the Sun can ever be overhead."
+ },
+ {
+  "key": "m7",
+  "who": "B",
+  "spoken": "But at Alexandria, on the coast, about 5,000 stadia further north, sticks still cast shadows at that noon."
+ },
+ {
+  "key": "x7",
+  "who": "A",
+  "spoken": "And that difference is the whole clue."
+ },
+ {
+  "key": "m8",
+  "who": "A",
+  "spoken": "If the Earth were flat, and the Sun far away, sticks in both places would cast the same shadow."
+ },
+ {
+  "key": "m9",
+  "who": "B",
+  "spoken": "They don't. So the ground between them has to curve."
+ },
+ {
+  "key": "m10",
+  "who": "A",
+  "spoken": "And how much it curves over that distance tells you the size of the whole Earth."
+ },
+ {
+  "key": "x8",
+  "who": "B",
+  "spoken": "So he needs to measure how different the shadows are, and how far apart the cities are."
+ },
+ {
+  "key": "b1",
+  "who": "B",
+  "spoken": "So how big was the shadow at Alexandria?"
+ },
+ {
+  "key": "b2",
+  "who": "A",
+  "spoken": "According to Cleomedes, it was read on a scaphe, which is a sundial shaped like a bowl."
+ },
+ {
+  "key": "x9",
+  "who": "B",
+  "spoken": "A bowl, not just a stick in the ground?"
+ },
+ {
+  "key": "b3",
+  "who": "A",
+  "spoken": "A bowl. A pointer stands at the bottom, and its tip sits right at the centre of the bowl's curve."
+ },
+ {
+  "key": "b4",
+  "who": "B",
+  "spoken": "So at noon, the tip's shadow falls on the inside of the bowl."
+ },
+ {
+  "key": "b5",
+  "who": "A",
+  "spoken": "The arc from the foot of the pointer to the end of the shadow measures how far the Sun is from overhead."
+ },
+ {
+  "key": "x10",
+  "who": "B",
+  "spoken": "That's neat. The bowl turns the shadow straight into a piece of a circle."
+ },
+ {
+  "key": "b6",
+  "who": "B",
+  "spoken": "And at Alexandria, that arc was one fiftieth of a full circle."
+ },
+ {
+  "key": "b7",
+  "who": "A",
+  "spoken": "In degrees, that's seven point two."
+ },
+ {
+  "key": "b8",
+  "who": "B",
+  "spoken": "That's small. A stick would cast a noon shadow only about one eighth as long as itself."
+ },
+ {
+  "key": "b9",
+  "who": "A",
+  "spoken": "And at Syene, at the same noon, the shadow was nothing at all."
+ },
+ {
+  "key": "p1",
+  "who": "A",
+  "spoken": "Now comes the key idea. The Sun is so far away that its rays arrive almost parallel."
+ },
+ {
+  "key": "p2",
+  "who": "B",
+  "spoken": "Let's draw the Earth, with Syene at the top and Alexandria a little way round."
+ },
+ {
+  "key": "p3",
+  "who": "A",
+  "spoken": "At Syene, a ray comes straight down the stick. Extend that stick downwards, and it reaches the Earth's centre."
+ },
+ {
+  "key": "p4",
+  "who": "B",
+  "spoken": "At Alexandria, extend the stick too. It also points to the centre."
+ },
+ {
+  "key": "p5",
+  "who": "A",
+  "spoken": "And there, the ray meets the stick at seven point two degrees."
+ },
+ {
+  "key": "p6",
+  "who": "B",
+  "spoken": "Now the Alexandria stick line crosses two parallel lines, which are the ray at Alexandria and the ray down the Syene stick."
+ },
+ {
+  "key": "x11",
+  "who": "A",
+  "spoken": "That's the Z shape."
+ },
+ {
+  "key": "p7",
+  "who": "A",
+  "spoken": "When a line crosses two parallel lines, the alternate angles are equal."
+ },
+ {
+  "key": "p8",
+  "who": "B",
+  "spoken": "So the angle at the centre of the Earth, between the two cities, is also 7.2 degrees."
+ },
+ {
+  "key": "x12",
+  "who": "A",
+  "spoken": "So the shadow in Alexandria is really measuring the curve of the Earth."
+ },
+ {
+  "key": "p9",
+  "who": "A",
+  "spoken": "Syene and Alexandria are one fiftieth of the way round the Earth."
+ },
+ {
+  "key": "x13",
+  "who": "B",
+  "spoken": "But is the Sun really far enough away for that?"
+ },
+ {
+  "key": "p10",
+  "who": "A",
+  "spoken": "Easily. Between those two cities, the rays differ by less than a thousandth of a degree."
+ },
+ {
+  "key": "f1",
+  "who": "B",
+  "spoken": "Now he needed the distance between the two cities."
+ },
+ {
+  "key": "f2",
+  "who": "A",
+  "spoken": "Cleomedes gives it as five thousand stadia."
+ },
+ {
+  "key": "f3",
+  "who": "B",
+  "spoken": "And how was that measured?"
+ },
+ {
+  "key": "x14",
+  "who": "A",
+  "spoken": "Honestly, we don't really know."
+ },
+ {
+  "key": "f4",
+  "who": "B",
+  "spoken": "Egypt did have bematists. These were professional pacers who measured land for farming and for taxes."
+ },
+ {
+  "key": "f5",
+  "who": "A",
+  "spoken": "And some historians think his distance came from their surveys."
+ },
+ {
+  "key": "f6",
+  "who": "B",
+  "spoken": "A Latin writer, some 650 years later, says royal surveyors measured it."
+ },
+ {
+  "key": "x15",
+  "who": "A",
+  "spoken": "Six hundred and fifty years later. That's a long way from a first-hand account."
+ },
+ {
+  "key": "f7",
+  "who": "A",
+  "spoken": "Either way, if five thousand stadia is one fiftieth of the way round, the whole way round is fifty times as far."
+ },
+ {
+  "key": "f8",
+  "who": "B",
+  "spoken": "Fifty times 5,000 is 250,000 stadia."
+ },
+ {
+  "key": "f9",
+  "who": "A",
+  "spoken": "From a shadow and a distance, he had the size of the whole Earth."
+ },
+ {
+  "key": "c1",
+  "who": "B",
+  "spoken": "That's the story as it's usually told. But where does it actually come from?"
+ },
+ {
+  "key": "c2",
+  "who": "A",
+  "spoken": "Eratosthenes wrote it up in a book, On the Measure of the Earth. And the book is lost."
+ },
+ {
+  "key": "x16",
+  "who": "B",
+  "spoken": "So we're relying on someone else's account."
+ },
+ {
+  "key": "c3",
+  "who": "A",
+  "spoken": "Mostly on Cleomedes, who wrote a basic astronomy textbook."
+ },
+ {
+  "key": "c4",
+  "who": "B",
+  "spoken": "And nobody knows when he wrote it, but it was somewhere between the first century BC and about AD 400."
+ },
+ {
+  "key": "x17",
+  "who": "A",
+  "spoken": "That's a window of more than four centuries."
+ },
+ {
+  "key": "c5",
+  "who": "A",
+  "spoken": "And Cleomedes says himself that his version is simplified."
+ },
+ {
+  "key": "c6",
+  "who": "B",
+  "spoken": "His account talks about sundials, not a well. The well comes from other writers, like the geographer Strabo."
+ },
+ {
+  "key": "x18",
+  "who": "A",
+  "spoken": "So the most famous detail isn't even in our main source."
+ },
+ {
+  "key": "c7",
+  "who": "B",
+  "spoken": "And there's a second number."
+ },
+ {
+  "key": "c8",
+  "who": "A",
+  "spoken": "The Roman writer Pliny the Elder gives Eratosthenes' result as two hundred and fifty-two thousand stadia."
+ },
+ {
+  "key": "c9",
+  "who": "B",
+  "spoken": "Why the extra 2,000? Historians disagree."
+ },
+ {
+  "key": "c10",
+  "who": "A",
+  "spoken": "Two hundred and fifty-two thousand divides evenly by every whole number from one to ten, but two hundred and fifty thousand doesn't."
+ },
+ {
+  "key": "c11",
+  "who": "B",
+  "spoken": "And split into 360 degrees, it gives a neat 700 stadia for each one."
+ },
+ {
+  "key": "c12",
+  "who": "A",
+  "spoken": "So some think he adjusted his figure, to make calculations easier."
+ },
+ {
+  "key": "c13",
+  "who": "B",
+  "spoken": "Others think he defined a stadion of his own, from the size of the Earth, as Pliny's wording suggests."
+ },
+ {
+  "key": "x19",
+  "who": "A",
+  "spoken": "That would make the unit itself part of the puzzle."
+ },
+ {
+  "key": "s1",
+  "who": "A",
+  "spoken": "So how good was his answer? To check, we need his stadia in kilometres."
+ },
+ {
+  "key": "s2",
+  "who": "B",
+  "spoken": "A stadion was 600 feet. But a foot wasn't the same everywhere in the Greek world."
+ },
+ {
+  "key": "s3",
+  "who": "A",
+  "spoken": "Historians' estimates for the stadion run from about a hundred and fifty to two hundred and ten metres."
+ },
+ {
+  "key": "x20",
+  "who": "B",
+  "spoken": "That's a spread of 40 percent."
+ },
+ {
+  "key": "s4",
+  "who": "B",
+  "spoken": "And the real distance round the Earth, through the poles, is about 40,008 kilometres."
+ },
+ {
+  "key": "s5",
+  "who": "A",
+  "spoken": "So here's what that range of stadia does to his two hundred and fifty thousand."
+ },
+ {
+  "key": "s6",
+  "who": "B",
+  "spoken": "With a stadion of about 176 metres, he's about 10 percent too big."
+ },
+ {
+  "key": "s7",
+  "who": "A",
+  "spoken": "With about a hundred and eighty-five metres, he's about fifteen percent too big."
+ },
+ {
+  "key": "s8",
+  "who": "B",
+  "spoken": "But take Pliny's 252,000 and a short stadion, 155 to 160 metres, and he's within 2.4 percent."
+ },
+ {
+  "key": "x21",
+  "who": "A",
+  "spoken": "So is the short stadion the right one?"
+ },
+ {
+  "key": "s9",
+  "who": "B",
+  "spoken": "One study found about 157.7 metres from ancient distances, but critics say it's full of errors."
+ },
+ {
+  "key": "s10",
+  "who": "A",
+  "spoken": "So the famous claim that he was within two percent depends on choosing a short stadion."
+ },
+ {
+  "key": "x22",
+  "who": "B",
+  "spoken": "That's a lot to hang on one unit."
+ },
+ {
+  "key": "s11",
+  "who": "A",
+  "spoken": "But the method itself is sound. If you measure the angle and the distance accurately, it gives Earth's true size."
+ },
+ {
+  "key": "a1",
+  "who": "B",
+  "spoken": "Cleomedes' version also rests on a few simplifications. Let's check them."
+ },
+ {
+  "key": "a2",
+  "who": "A",
+  "spoken": "First, take the parallel rays. That one holds very well, as we've seen."
+ },
+ {
+  "key": "a3",
+  "who": "B",
+  "spoken": "Second, it assumes that Syene sits exactly on the Tropic of Cancer."
+ },
+ {
+  "key": "a4",
+  "who": "A",
+  "spoken": "In fact it's a little north of it, by less than a degree. Even there, the noon Sun wasn't quite overhead."
+ },
+ {
+  "key": "x23",
+  "who": "B",
+  "spoken": "So no shadow was only nearly true."
+ },
+ {
+  "key": "a5",
+  "who": "B",
+  "spoken": "And the tropic drifts, too. In Eratosthenes' time it lay about 0.3 degrees further north than today."
+ },
+ {
+  "key": "a6",
+  "who": "A",
+  "spoken": "Third, it assumes that Syene lies due south of Alexandria, on the same meridian."
+ },
+ {
+  "key": "a7",
+  "who": "B",
+  "spoken": "In fact it's about 3 degrees of longitude further east."
+ },
+ {
+  "key": "a8",
+  "who": "A",
+  "spoken": "And the Earth isn't a perfect sphere, but slightly flattened, by about three tenths of a percent."
+ },
+ {
+  "key": "a9",
+  "who": "B",
+  "spoken": "Still, the angle came out well. The two cities' latitudes really differ by about 7.1 degrees."
+ },
+ {
+  "key": "x24",
+  "who": "A",
+  "spoken": "And he had seven point two. That's close."
+ },
+ {
+  "key": "a10",
+  "who": "A",
+  "spoken": "What we can't check is the distance, because we don't know his stadion."
+ },
+ {
+  "key": "w1",
+  "who": "B",
+  "spoken": "Measuring the Earth was only part of what he did."
+ },
+ {
+  "key": "w2",
+  "who": "A",
+  "spoken": "In his Geographica, he mapped the known world on a grid of parallels and meridians."
+ },
+ {
+  "key": "w3",
+  "who": "B",
+  "spoken": "It named more than 400 cities with their locations, and it gave us the word geography."
+ },
+ {
+  "key": "w4",
+  "who": "A",
+  "spoken": "He also measured the tilt of the Earth's axis, and worked out dates in history back to the fall of Troy."
+ },
+ {
+  "key": "w5",
+  "who": "B",
+  "spoken": "And his name lives on in mathematics, in the sieve of Eratosthenes."
+ },
+ {
+  "key": "x25",
+  "who": "A",
+  "spoken": "The way of finding prime numbers?"
+ },
+ {
+  "key": "w6",
+  "who": "B",
+  "spoken": "Write out the numbers. Cross out the multiples of 2, then of 3, then of 5, then of 7."
+ },
+ {
+  "key": "w7",
+  "who": "A",
+  "spoken": "And what's left are the prime numbers."
+ },
+ {
+  "key": "w8",
+  "who": "B",
+  "spoken": "Though our earliest record of the sieve was written centuries later, and he may have named it rather than invented it."
+ },
+ {
+  "key": "w9",
+  "who": "A",
+  "spoken": "Later writers used smaller figures for the Earth. Ptolemy's Geography used just a hundred and eighty thousand stadia."
+ },
+ {
+  "key": "w10",
+  "who": "B",
+  "spoken": "And some seventeen centuries after Eratosthenes, Columbus read his work, but chose to believe in an Earth about a quarter smaller."
+ },
+ {
+  "key": "x26",
+  "who": "A",
+  "spoken": "And a smaller Earth made the voyage west to Asia look shorter."
+ },
+ {
+  "key": "z1",
+  "who": "B",
+  "spoken": "So let's put the whole idea in one picture."
+ },
+ {
+  "key": "z2",
+  "who": "A",
+  "spoken": "There's no shadow at Syene, and a shadow of one fiftieth of a circle at Alexandria."
+ },
+ {
+  "key": "z3",
+  "who": "B",
+  "spoken": "Parallel rays carry that angle to the centre of the Earth."
+ },
+ {
+  "key": "z4",
+  "who": "A",
+  "spoken": "Fifty times five thousand stadia gives two hundred and fifty thousand stadia round."
+ },
+ {
+  "key": "z5",
+  "who": "B",
+  "spoken": "How close was he? That depends on a unit we still can't pin down."
+ },
+ {
+  "key": "z6",
+  "who": "A",
+  "spoken": "But the idea was right, and it measured the whole Earth from two cities in Egypt."
+ },
+ {
+  "key": "x27",
+  "who": "B",
+  "spoken": "And it only took a stick, a bowl and a good argument."
+ },
+ {
+  "key": "z7",
+  "who": "A",
+  "spoken": "That's not bad for a man his critics called Beta."
+ }
+]

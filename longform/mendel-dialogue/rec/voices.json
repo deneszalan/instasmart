@@ -1,0 +1,10 @@
+{
+ "A": {
+  "engine": "kokoro",
+  "voice": "am_michael"
+ },
+ "B": {
+  "engine": "kokoro",
+  "voice": "af_bella"
+ }
+}

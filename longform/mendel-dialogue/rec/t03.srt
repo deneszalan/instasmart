@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: Today the same bookkeeping is drawn as a square, which Reginald Punnett devised decades later.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: It predicts one pure round, two hybrids and one pure wrinkled, in every four.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: Which means two round seeds in three should be hybrids, still hiding a small r. And Mendel tested that.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERB: How do you test for something you can't see?
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: You grow the seed, and look at the seeds its plant makes.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERB: Of 565 plants grown from round seeds, 372 made both kinds of seed, and 193 made only round ones.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: That's one point nine three to one, close to the two to one he predicted.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERA: Next, Mendel crossed plants that differed in two traits, round yellow seeds with wrinkled green ones.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: The hybrids were all round and yellow. From fifteen of them, he harvested five hundred and fifty-six seeds, in four kinds.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERB: There were 315 round yellow seeds, 101 wrinkled yellow, 108 round green, and 32 wrinkled green.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: And two of those kinds are new. Round green and wrinkled yellow don't look like either original parent.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERB: If the two traits are inherited separately, three quarters of the seeds are round, and three quarters of those are yellow.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: That makes nine sixteenths round and yellow, and the four kinds come in nine, three, three and one.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERB: For 556 seeds, that predicts about 313 round yellow and 35 wrinkled green, with 104 of each mixed kind.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: And he got three hundred and fifteen, and thirty-two. That's close.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: So seed shape and seed colour had sorted independently.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: With three traits, he found twenty-seven kinds, and he bred all one hundred and twenty-eight pure combinations of the seven.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERB: Mendel presented all of this to the Natural History Society of Brno, at two meetings in February and March 1865.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERA: About forty people listened, and his paper came out in the society's journal in eighteen sixty-six.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERB: And then, the famous silence?

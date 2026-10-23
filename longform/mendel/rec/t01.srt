@@ -1,79 +1,55 @@
 1
 00:00:01,000 --> 00:00:26,000
-Cross a pea plant that has round seeds with one that has wrinkled seeds, and every seed you get is round.
+Mendel's answer, in today's words, is that each plant carries two copies of a gene for seed shape, one from each parent.
 
 2
 00:00:31,000 --> 00:00:56,000
-But grow those round seeds into plants, and wrinkled seeds come back, about one in four.
+Write the round version as a capital R, and the wrinkled one as a small r.
 
 3
 00:01:01,000 --> 00:01:26,000
-A friar counted thousands of them in a monastery garden, and found the first rules of genetics.
+Only small r over small r, one in four, makes a wrinkled seed.
 
 4
 00:01:31,000 --> 00:01:56,000
-This is the story of Gregor Mendel's peas, and of numbers that some called too good to be true.
+That's 1.93 to one, close to the two to one he predicted.
 
 5
 00:02:01,000 --> 00:02:26,000
-Mendel was a friar at Saint Thomas's Abbey in Brno, then called Brünn, in the Austrian Empire.
+It wasn't unknown, but it was read as a paper on hybrids, and cited only about three times in 35 years.
 
 6
 00:02:31,000 --> 00:02:56,000
-From 1856 to 1863, he used the abbey's garden to cross pea plants and follow their offspring.
+His hawkweed crosses didn't fit, since many hawkweeds, it turned out, make most of their seeds without fertilisation.
 
 7
 00:03:01,000 --> 00:03:26,000
-Pea flowers fertilise themselves in the bud, so to cross two plants, Mendel opened a young bud and pulled out its stamens.
+Small counts swing widely, because chance decides which pollen meets which egg.
 
 8
 00:03:31,000 --> 00:03:56,000
-Then he dusted it with pollen from another plant.
+In 1936, the statistician Ronald Fisher tested how well Mendel's numbers fit.
 
 9
 00:04:01,000 --> 00:04:26,000
-He tested 34 varieties, kept 22 that bred true, and chose seven traits, each with two clear forms.
+Against 1,000 gardens run by chance alone, only 50 come as close to three to one as Mendel's seven totals.
 
 10
 00:04:31,000 --> 00:04:56,000
-Seeds were round or wrinkled, and yellow or green. Seed coats were grey or white, with violet or white flowers.
+That's about one garden in twenty. Lucky, but not shocking.
 
 11
 00:05:01,000 --> 00:05:26,000
-Pods were inflated or pinched, green or yellow. Flowers grew along the stem or at its tip, and stems were tall or short.
+Fisher's point was that the luck kept repeating.
 
 12
 00:05:31,000 --> 00:05:56,000
-Over those years, he grew and tested some 28,000 plants, most of them peas, and he counted their offspring.
+Yet one of its authors, A W F Edwards, still found too little scatter in 84 of Mendel's ratios.
 
 13
 00:06:01,000 --> 00:06:26,000
-Take seed shape. Mendel crossed plants with round seeds and plants with wrinkled ones.
+A 2019 reanalysis, adding the extreme plants Mendel himself reported, found about as much scatter as chance predicts.
 
 14
 00:06:31,000 --> 00:06:56,000
-The shape shows in the seed itself, and that same year, every seed was round.
-
-15
-00:07:01,000 --> 00:07:26,000
-Mendel called round dominant, and wrinkled, which had vanished, recessive.
-
-16
-00:07:31,000 --> 00:07:56,000
-The next year, he sowed them and let the plants fertilise themselves.
-
-17
-00:08:01,000 --> 00:08:26,000
-Wrinkled seeds were back in their pods, often beside round ones, with nothing in between.
-
-18
-00:08:31,000 --> 00:08:56,000
-From 253 hybrid plants, he counted 7,324 seeds. Of those, 5,474 were round and 1,850 were wrinkled.
-
-19
-00:09:01,000 --> 00:09:26,000
-That makes 2.96 round seeds for every wrinkled one, close to three to one.
-
-20
-00:09:31,000 --> 00:09:56,000
-He did the same for all seven traits, and each one landed near three to one, from 2.82 to 3.15.
+Mendel also said he left out some small experiments that strayed.
