@@ -8,9 +8,9 @@ dialogue's timing changes, re-check a few stills, `bash render-video.sh <slug>`,
 | # | Slug | Short post | Voice | Dialogue cast | State |
 |---|---|---|---|---|---|
 | 1 | birthday | math-birthday-problem | af_bella | A=m2 B=af_bella | monologue rendered and delivered (10:16); dialogue finalizing |
-| 2 | eratosthenes | history-eratosthenes-earth-circumference | m1 | A=m1 B=af_bella | written (10:17, dialogue 12:26); 2012 repeat replaced; finalize.sh queued |
-| 3 | four-stroke | engineering-four-stroke-engine | m2 | A=m2 B=af_heart | writing |
-| 4 | sky-blue | physics-why-the-sky-is-blue | af_heart | A=m1 B=af_heart | paused: scene drafted |
+| 2 | eratosthenes | history-eratosthenes-earth-circumference | m1 | A=m1 B=af_bella | written (10:17, dialogue 12:26); 2012 repeat replaced; finalizing |
+| 3 | four-stroke | engineering-four-stroke-engine | m2 | A=m2 B=af_heart | written (10:08, dialogue 12:32); finalize queued |
+| 4 | sky-blue | physics-why-the-sky-is-blue | af_heart | A=m1 B=af_heart | writing |
 | 5 | kepler | space-kepler-equal-areas | m1 | A=m1 B=af_nicole | paused: scene drafted, not yet recorded |
 | 6 | double-slit | physics-double-slit | af_bella | A=m2 B=af_bella | not started |
 | 7 | public-key | tech-public-key-cryptography | af_heart | A=m1 B=af_heart | not started |
