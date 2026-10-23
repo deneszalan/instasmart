@@ -1,0 +1,419 @@
+1
+00:00:01,000 --> 00:00:06,140
+Fire tiny particles, one at a time, at a wall with two narrow slits in it.
+
+2
+00:00:06,220 --> 00:00:10,440
+Each one lands on the screen behind as a single dot.
+
+3
+00:00:10,520 --> 00:00:14,030
+At first, the dots seem to land almost anywhere.
+
+4
+00:00:14,110 --> 00:00:17,680
+But keep going, and they sort themselves into stripes.
+
+5
+00:00:17,760 --> 00:00:21,500
+Stripes like these are what waves make when they overlap.
+
+6
+00:00:21,580 --> 00:00:25,340
+So what went through the slits: a particle, or a wave?
+
+7
+00:00:25,420 --> 00:00:29,470
+This is the double-slit experiment.
+
+8
+00:00:33,670 --> 00:00:37,610
+For centuries, people argued about what light actually is.
+
+9
+00:00:37,690 --> 00:00:43,800
+In his Treatise on Light of 1690, Christiaan Huygens described it as a wave.
+
+10
+00:00:43,880 --> 00:00:49,620
+Isaac Newton's Opticks, published in 1704, leaned toward particles.
+
+11
+00:00:49,700 --> 00:00:57,110
+In later editions he asked: "Are not the Rays of Light very small Bodies emitted from shining Substances?"
+
+12
+00:00:57,190 --> 00:01:04,680
+Newton's reputation was so great that, through the 18th century, the particle view held a wide lead.
+
+13
+00:01:04,760 --> 00:01:08,230
+So how could you tell a wave from a stream of particles?
+
+14
+00:01:08,310 --> 00:01:15,070
+Send particles through two slits, and you'd expect two bright bands, one behind each slit.
+
+15
+00:01:15,150 --> 00:01:21,190
+But waves can do something particles can't: when they meet, they can add up, or cancel out.
+
+16
+00:01:21,270 --> 00:01:28,910
+Crest on crest makes a bigger wave; crest on trough makes nothing at all. That's interference.
+
+17
+00:01:31,510 --> 00:01:37,720
+Thomas Young was a British doctor and polymath, who later helped decipher the Rosetta Stone.
+
+18
+00:01:37,800 --> 00:01:45,940
+On 24 November 1803, he described an experiment anyone could repeat "whenever the sun shines".
+
+19
+00:01:46,020 --> 00:01:52,310
+He let sunlight in through a small hole, and held a card a thirtieth of an inch wide in the beam.
+
+20
+00:01:52,390 --> 00:01:56,930
+In its shadow appeared coloured fringes: stripes of light and dark.
+
+21
+00:01:57,010 --> 00:02:02,020
+When he blocked the light on one side of the card, the fringes vanished.
+
+22
+00:02:02,100 --> 00:02:06,710
+So the fringes needed light from both sides, meeting and interfering.
+
+23
+00:02:06,790 --> 00:02:13,700
+His lectures, published in 1807, describe the version we know: light through two narrow slits.
+
+24
+00:02:13,780 --> 00:02:17,890
+Whether he ever actually did it with two slits is not clear.
+
+25
+00:02:17,970 --> 00:02:25,560
+The turn came in 1818, when Augustin-Jean Fresnel entered a French prize contest with a wave theory of light.
+
+26
+00:02:25,640 --> 00:02:31,080
+One judge, Siméon Poisson, spotted what looked like an absurd prediction.
+
+27
+00:02:31,160 --> 00:02:36,400
+In the middle of a small round disc's shadow, it said, there should be a bright spot.
+
+28
+00:02:36,480 --> 00:02:41,190
+The head of the judges, François Arago, tried it, and there was the spot.
+
+29
+00:02:41,270 --> 00:02:45,530
+After that, most scientists accepted that light is a wave.
+
+30
+00:02:45,610 --> 00:02:55,760
+In 1865, James Clerk Maxwell predicted it is an electromagnetic wave, and the particle idea seemed finished.
+
+31
+00:02:58,360 --> 00:03:01,200
+So how do two slits make so many stripes?
+
+32
+00:03:01,280 --> 00:03:06,270
+Each slit acts as a new source, sending out waves that spread in circles.
+
+33
+00:03:06,350 --> 00:03:11,920
+To reach a point on the screen, one wave usually travels a little farther than the other.
+
+34
+00:03:12,000 --> 00:03:18,910
+If the extra distance is a whole number of wavelengths, crests arrive together, and that spot is bright.
+
+35
+00:03:18,990 --> 00:03:23,480
+If it's half a wavelength, crest meets trough, and the spot is dark.
+
+36
+00:03:23,560 --> 00:03:30,050
+Move along the screen and the extra distance grows steadily: bright, dark, bright, dark.
+
+37
+00:03:30,130 --> 00:03:37,650
+The spacing of the stripes is the wavelength, times the distance to the screen, divided by the gap between the slits.
+
+38
+00:03:37,730 --> 00:03:45,840
+Take slits half a millimetre apart, light with a wavelength of 0.6 micrometres, and a screen 1 metre away.
+
+39
+00:03:45,920 --> 00:03:50,060
+The stripes come out 1.2 millimetres apart.
+
+40
+00:03:50,140 --> 00:03:54,630
+Move the screen twice as far away, and they spread twice as wide.
+
+41
+00:03:54,710 --> 00:04:02,200
+Young had described this too: stripes "wider also in the same proportion as the apertures are closer to each other."
+
+42
+00:04:02,280 --> 00:04:10,050
+He used fringes like these to estimate the wavelengths of different colours, close to modern values.
+
+43
+00:04:12,650 --> 00:04:15,220
+But the wave picture had a crack in it.
+
+44
+00:04:15,300 --> 00:04:22,960
+In 1905, Albert Einstein proposed that light's energy comes in separate lumps, now called photons.
+
+45
+00:04:23,040 --> 00:04:28,280
+So what happens to the stripes when light is so dim that it arrives a little at a time?
+
+46
+00:04:28,360 --> 00:04:34,150
+In 1909, a young Cambridge physicist, Geoffrey Ingram Taylor, tried it.
+
+47
+00:04:34,230 --> 00:04:39,770
+He dimmed a gas light with dark glass, until it was like a candle more than a mile away.
+
+48
+00:04:39,850 --> 00:04:45,760
+The light passed a sewing needle onto a photographic plate, which took three months to expose.
+
+49
+00:04:45,840 --> 00:04:47,880
+The fringes were still there.
+
+50
+00:04:47,960 --> 00:04:53,880
+Paul Dirac later put it this way: "each photon then interferes only with itself."
+
+51
+00:04:53,960 --> 00:05:01,530
+One caution: Taylor's paper never mentions photons, and his dim lamp wasn't a true single-photon source.
+
+52
+00:05:01,610 --> 00:05:11,280
+That test came in 1986: a French team including Alain Aspect used a genuine single-photon source and an interferometer.
+
+53
+00:05:11,360 --> 00:05:15,620
+The interference was still there, one photon at a time.
+
+54
+00:05:15,700 --> 00:05:19,140
+Each photon is detected at one single point.
+
+55
+00:05:19,220 --> 00:05:21,560
+A few hundred look like noise.
+
+56
+00:05:21,640 --> 00:05:26,310
+By ten thousand, the stripes are unmistakable.
+
+57
+00:05:26,560 --> 00:05:32,780
+Brighter light just makes the dots pile up faster: the same pattern, sooner.
+
+58
+00:05:35,380 --> 00:05:42,720
+Electrons came the other way round: from 1897, experiments showed them behaving as particles.
+
+59
+00:05:42,800 --> 00:05:48,960
+Then, in 1924, Louis de Broglie proposed that all matter has a wave side too.
+
+60
+00:05:49,040 --> 00:05:56,360
+Experiments in 1927 confirmed it, bouncing electrons off crystals and through thin films.
+
+61
+00:05:56,440 --> 00:06:02,480
+But for decades, the two-slit version with electrons was taught only as a thought experiment.
+
+62
+00:06:02,560 --> 00:06:09,300
+In his famous lectures, Richard Feynman wrote: "This experiment has never been done in just this way."
+
+63
+00:06:09,380 --> 00:06:14,490
+In fact it had, in 1961, the year those lectures began.
+
+64
+00:06:14,570 --> 00:06:21,760
+Claus Jönsson, in Tübingen, made slits for electrons and saw the fringes, with up to five slits.
+
+65
+00:06:21,840 --> 00:06:29,300
+In 1974, in Bologna, Merli, Missiroli and Pozzi sent electrons through one at a time.
+
+66
+00:06:29,380 --> 00:06:35,670
+Instead of slits they used an electron biprism: a fine wire that splits the beam in two.
+
+67
+00:06:35,750 --> 00:06:41,520
+In 1989, Akira Tonomura and colleagues at Hitachi made it cleaner still.
+
+68
+00:06:41,600 --> 00:06:48,260
+Fewer than 1,000 electrons arrived each second, so two were never in the apparatus at once.
+
+69
+00:06:48,340 --> 00:06:55,330
+Each one arrived as a single flash: 8 electrons, then 270, then 2,000.
+
+70
+00:06:55,410 --> 00:07:01,430
+Over a 20-minute exposure, 60,000 electrons drew the stripes.
+
+71
+00:07:01,510 --> 00:07:10,680
+In 2002, Physics World readers voted the single-electron version the most beautiful experiment in physics.
+
+72
+00:07:13,280 --> 00:07:16,070
+How big can a thing be and still do this?
+
+73
+00:07:16,150 --> 00:07:22,390
+In 1991, helium atoms interfered after passing through slits in gold foil.
+
+74
+00:07:22,470 --> 00:07:31,080
+In 1999, a team in Vienna sent buckyballs, molecules of 60 carbon atoms, through a grating of many slits.
+
+75
+00:07:31,160 --> 00:07:39,900
+A buckyball is 0.7 nanometres across; its wave was some 280 times smaller, and still it interfered.
+
+76
+00:07:39,980 --> 00:07:47,970
+The record grew to molecules of 810 atoms in 2013, and about 2,000 atoms in 2019.
+
+77
+00:07:48,050 --> 00:07:56,160
+In 2026, a team in Vienna showed interference with sodium clusters of more than 7,000 atoms each.
+
+78
+00:07:56,240 --> 00:08:01,650
+The heavier the object, the shorter its wave, and the harder its stripes are to see.
+
+79
+00:08:01,730 --> 00:08:07,030
+So far, quantum theory has passed every one of these tests.
+
+80
+00:08:09,630 --> 00:08:11,820
+Now for the most famous twist.
+
+81
+00:08:11,900 --> 00:08:16,920
+Put a detector at each slit, to find out which one each particle goes through.
+
+82
+00:08:17,000 --> 00:08:21,990
+Every particle is found at one slit or the other, never split between them.
+
+83
+00:08:22,070 --> 00:08:24,710
+And the stripes vanish.
+
+84
+00:08:24,790 --> 00:08:31,210
+The screen shows two single-slit patterns, simply added together, with no interference.
+
+85
+00:08:31,290 --> 00:08:36,130
+Why? To learn the path, the detector has to interact with the particle.
+
+86
+00:08:36,210 --> 00:08:41,620
+That leaves a record of which way it went, and the two paths can no longer interfere.
+
+87
+00:08:41,700 --> 00:08:48,910
+It's often told as if a conscious observer changes the outcome, but the standard account needs no mind at all.
+
+88
+00:08:48,990 --> 00:08:54,650
+What matters is whether the path could be known, in principle, from anything left behind.
+
+89
+00:08:54,730 --> 00:09:02,800
+In 2004, a Vienna team laser-heated carbon-70 molecules, so they gave off heat radiation in flight.
+
+90
+00:09:02,880 --> 00:09:10,090
+That radiation carried traces of each molecule's path, and the hotter the molecules, the fainter the stripes.
+
+91
+00:09:10,170 --> 00:09:14,030
+Nobody looked at that light; it only had to exist.
+
+92
+00:09:14,110 --> 00:09:22,070
+And it isn't all or nothing: a 1987 experiment gathered some path information and kept fainter stripes.
+
+93
+00:09:22,150 --> 00:09:28,400
+The better the two paths can be told apart, the fainter the stripes have to be.
+
+94
+00:09:31,000 --> 00:09:35,640
+Richard Feynman put this experiment at the centre of quantum physics.
+
+95
+00:09:35,720 --> 00:09:41,760
+He called it "impossible, absolutely impossible, to explain in any classical way."
+
+96
+00:09:41,840 --> 00:09:48,850
+It "has in it the heart of quantum mechanics," he said. "In reality, it contains the only mystery."
+
+97
+00:09:48,930 --> 00:09:54,620
+Quantum mechanics describes each particle with a wave that passes through both slits.
+
+98
+00:09:54,700 --> 00:10:00,890
+The wave only sets the odds of where each particle lands: the square of the wave at each spot.
+
+99
+00:10:00,970 --> 00:10:06,580
+Each detection is still a single dot, and only the pile of dots reveals the wave.
+
+100
+00:10:06,660 --> 00:10:12,150
+What happens in between is where interpretations of quantum mechanics part ways.
+
+101
+00:10:12,230 --> 00:10:19,670
+Some say "which slit?" means nothing without a detector; others picture many worlds, or a guiding wave.
+
+102
+00:10:19,750 --> 00:10:23,570
+But they all predict the same stripes, dot for dot.
+
+103
+00:10:23,650 --> 00:10:28,890
+Young's stripes showed light is a wave; single dots showed it arrives in lumps.
+
+104
+00:10:28,970 --> 00:10:33,510
+And a record of the path, of any kind, wipes the stripes away.
+
+105
+00:10:33,590 --> 00:10:41,760
+Two slits, a screen, and one dot at a time: it's still the clearest view we have of the quantum world.

@@ -12,10 +12,11 @@ for v in "$slug:$2" "$slug-dialogue:A=$3 B=$4"; do
   [ "$ONLY" = dialogue ] && [ $dir = $slug ] && continue
   [ "$ONLY" = monologue ] && [ $dir != $slug ] && continue
   echo "${v#*:}" > $d/voice.txt
-  cp $d/timeline.js $d/timeline.prev.js
+  [ -e $d/timeline.prev.js ] || cp $d/timeline.js $d/timeline.prev.js   # the writer's timing, kept until the music is moved
   if [ "$SKIP_TTS" = 1 ]; then node $S/timing.mjs build $dir; else bash $S/tts.sh $dir; fi
   grep -E "past cue end|faster than" $d/measure.log || true
   node $S/music-remap.mjs $dir --since $d/timeline.prev.js
+  rm $d/timeline.prev.js
   D=$(node -e "console.log(require('$d/plan.json').duration)")
   node $S/render.mjs preview $dir $(node -e "const D=$D;console.log([0.05,0.3,0.5,0.7,0.97].map(f=>(f*D).toFixed(2)).join(','))") | tee $d/final-check.txt
   grep -q "NO FONT" $d/final-check.txt && { echo "$dir: a character has no font"; exit 1; }
