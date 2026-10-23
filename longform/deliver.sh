@@ -13,3 +13,7 @@ ffmpeg -nostdin -v error -y -ss $(echo "$D - 3" | bc) -i $m -frames:v 1 $d/final
 montage $d/final/f*.jpg -tile 3x -geometry 640x360+4+4 $d/final/sheet.jpg
 mkdir -p $out; cp $m $out/$2.mp4; cp $d/subtitles.srt $out/$2.srt
 echo "sheet: $d/final/sheet.jpg  ->  $out/$2.mp4"
+# Free the disk: everything below can be made again (measure.wav from the line cache, the rest by rendering).
+rm -f "${d:?}"/part*.mp4 "${d:?}/picture.mp4" "${d:?}/bed.wav" "${d:?}/speech.wav" "${d:?}/$1.mp4"
+[ -d "${d:?}/rec/cache" ] && rm -f "${d:?}/measure.wav"
+rm -rf "${d:?}/prev"

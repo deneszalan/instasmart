@@ -23,6 +23,7 @@ for srt in $d/rec/t[0-9][0-9].srt; do
   flock $S/$lock.lock env OMP_NUM_THREADS=$threads MKL_NUM_THREADS=$threads srt2speech $srt -o $n.wav $args > $n.log 2>&1
   grep -E "^wrote|past cue end|faster than" $n.log | sed "s|$d/||"
   $PY $S/linecache.py absorb $d $(basename $n)
+  rm -f $n.wav   # its lines are in the cache now
 done
 $PY $S/linecache.py build $d
 node $S/timing.mjs build $slug

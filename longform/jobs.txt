@@ -8,7 +8,7 @@ birthday-v2 bash finalize.sh birthday af_bella m2 af_bella && bash deliver.sh bi
 eratosthenes-v2 bash finalize.sh eratosthenes m1 m1 af_bella && bash deliver.sh eratosthenes eratosthenes-measures-the-earth && bash deliver.sh eratosthenes-dialogue eratosthenes-measures-the-earth-dialogue
 sky-blue-v2 bash finalize.sh sky-blue af_heart m1 af_heart && bash deliver.sh sky-blue why-the-sky-is-blue && bash deliver.sh sky-blue-dialogue why-the-sky-is-blue-dialogue
 four-stroke bash finalize.sh four-stroke m2 m2 af_heart && bash deliver.sh four-stroke the-four-stroke-engine && bash deliver.sh four-stroke-dialogue the-four-stroke-engine-dialogue
-kepler bash finalize.sh kepler m1 m1 af_nicole && bash deliver.sh kepler kepler-equal-areas && bash deliver.sh kepler-dialogue kepler-equal-areas-dialogue
+kepler-dlg ONLY=dialogue bash finalize.sh kepler m1 m1 af_nicole && bash deliver.sh kepler-dialogue kepler-equal-areas-dialogue
 double-slit bash finalize.sh double-slit af_bella m2 af_bella && bash deliver.sh double-slit the-double-slit-experiment && bash deliver.sh double-slit-dialogue the-double-slit-experiment-dialogue
 public-key bash finalize.sh public-key af_heart m1 af_heart && bash deliver.sh public-key public-key-cryptography && bash deliver.sh public-key-dialogue public-key-cryptography-dialogue
 enigma bash finalize.sh enigma m2 m2 af_nicole && bash deliver.sh enigma enigma-never-itself && bash deliver.sh enigma-dialogue enigma-never-itself-dialogue

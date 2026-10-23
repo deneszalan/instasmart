@@ -1,0 +1,422 @@
+[
+ {
+  "key": "o1",
+  "spoken": "Fire tiny particles, one at a time, at a wall with two narrow slits in it."
+ },
+ {
+  "key": "o2",
+  "spoken": "Each one lands on the screen behind as a single dot."
+ },
+ {
+  "key": "o3",
+  "spoken": "At first, the dots seem to land almost anywhere."
+ },
+ {
+  "key": "o4",
+  "spoken": "But keep going, and they sort themselves into stripes."
+ },
+ {
+  "key": "o5",
+  "spoken": "Stripes like these are what waves make when they overlap."
+ },
+ {
+  "key": "o6",
+  "spoken": "So what went through the slits? Was it a particle, or a wave?"
+ },
+ {
+  "key": "o7",
+  "spoken": "This is the double-slit experiment."
+ },
+ {
+  "key": "w1",
+  "spoken": "For centuries, people argued about what light actually is."
+ },
+ {
+  "key": "w2",
+  "spoken": "In his Treatise on Light, of 1690, Christiaan Huygens described it as a wave."
+ },
+ {
+  "key": "w3",
+  "spoken": "Isaac Newton's Opticks, published in 1704, leaned toward particles."
+ },
+ {
+  "key": "w4",
+  "spoken": "In later editions he asked, are not the rays of light very small bodies, emitted from shining substances?"
+ },
+ {
+  "key": "w5",
+  "spoken": "Newton's reputation was so great that, through the eighteenth century, the particle view held a wide lead."
+ },
+ {
+  "key": "w6",
+  "spoken": "So how could you tell a wave from a stream of particles?"
+ },
+ {
+  "key": "w7",
+  "spoken": "Send particles through two slits, and you'd expect two bright bands, one behind each slit."
+ },
+ {
+  "key": "w8",
+  "spoken": "But waves can do something particles can't. When they meet, they can add up, or cancel out."
+ },
+ {
+  "key": "w9",
+  "spoken": "Crest on crest makes a bigger wave; crest on trough makes nothing at all. That's interference."
+ },
+ {
+  "key": "y1",
+  "spoken": "Thomas Young was a British doctor and polymath, who later helped decipher the Rosetta Stone."
+ },
+ {
+  "key": "y2",
+  "spoken": "On the 24th of November, 1803, he described an experiment anyone could repeat, whenever the sun shines."
+ },
+ {
+  "key": "y3",
+  "spoken": "He let sunlight in through a small hole, and held a card a thirtieth of an inch wide in the beam."
+ },
+ {
+  "key": "y4",
+  "spoken": "In its shadow appeared coloured fringes, which were stripes of light and dark."
+ },
+ {
+  "key": "y5",
+  "spoken": "When he blocked the light on one side of the card, the fringes vanished."
+ },
+ {
+  "key": "y6",
+  "spoken": "So the fringes needed light from both sides, meeting and interfering."
+ },
+ {
+  "key": "y7",
+  "spoken": "His lectures, published in 1807, describe the version we know, with light through two narrow slits."
+ },
+ {
+  "key": "y8",
+  "spoken": "Whether he ever actually did it with two slits is not clear."
+ },
+ {
+  "key": "y9",
+  "spoken": "The turn came in 1818, when Augustin Fray-nel entered a French prize contest with a wave theory of light."
+ },
+ {
+  "key": "y10",
+  "spoken": "One judge, Simeon Pwasson, spotted what looked like an absurd prediction."
+ },
+ {
+  "key": "y11",
+  "spoken": "In the middle of a small round disc's shadow, it said, there should be a bright spot."
+ },
+ {
+  "key": "y12",
+  "spoken": "The head of the judges, Fran-swah Arago, tried it, and there was the spot."
+ },
+ {
+  "key": "y13",
+  "spoken": "After that, most scientists accepted that light is a wave."
+ },
+ {
+  "key": "y14",
+  "spoken": "In 1865, James Clark Maxwell predicted it is an electromagnetic wave, and the particle idea seemed finished."
+ },
+ {
+  "key": "r1",
+  "spoken": "So how do two slits make so many stripes?"
+ },
+ {
+  "key": "r2",
+  "spoken": "Each slit acts as a new source, sending out waves that spread in circles."
+ },
+ {
+  "key": "r3",
+  "spoken": "To reach a point on the screen, one wave usually travels a little farther than the other."
+ },
+ {
+  "key": "r4",
+  "spoken": "If the extra distance is a whole number of wavelengths, crests arrive together, and that spot is bright."
+ },
+ {
+  "key": "r5",
+  "spoken": "If it's half a wavelength, crest meets trough, and the spot is dark."
+ },
+ {
+  "key": "r6",
+  "spoken": "Move along the screen and the extra distance grows steadily, so the stripes go bright, dark, bright, dark."
+ },
+ {
+  "key": "r7",
+  "spoken": "The spacing of the stripes is the wavelength, times the distance to the screen, divided by the gap between the slits."
+ },
+ {
+  "key": "r8",
+  "spoken": "Take slits half a millimetre apart, light with a wavelength of zero point six micrometres, and a screen one metre away."
+ },
+ {
+  "key": "r9",
+  "spoken": "The stripes come out one point two millimetres apart."
+ },
+ {
+  "key": "r10",
+  "spoken": "Move the screen twice as far away, and they spread twice as wide."
+ },
+ {
+  "key": "r11",
+  "spoken": "Young had described this too, with stripes wider also in the same proportion as the apertures are closer to each other."
+ },
+ {
+  "key": "r12",
+  "spoken": "He used fringes like these to estimate the wavelengths of different colours, close to modern values."
+ },
+ {
+  "key": "p1",
+  "spoken": "But the wave picture had a crack in it."
+ },
+ {
+  "key": "p2",
+  "spoken": "In 1905, Albert Einstein proposed that light's energy comes in separate lumps, now called photons."
+ },
+ {
+  "key": "p3",
+  "spoken": "So what happens to the stripes when light is so dim that it arrives a little at a time?"
+ },
+ {
+  "key": "p4",
+  "spoken": "In 1909, a young Cambridge physicist, Geoffrey Ingram Taylor, tried it."
+ },
+ {
+  "key": "p5",
+  "spoken": "He dimmed a gas light with dark glass, until it was like a candle more than a mile away."
+ },
+ {
+  "key": "p6",
+  "spoken": "The light passed a sewing needle onto a photographic plate, which took three months to expose."
+ },
+ {
+  "key": "p7",
+  "spoken": "The fringes were still there."
+ },
+ {
+  "key": "p8",
+  "spoken": "As Paul Dirac later put it, each photon then interferes only with itself."
+ },
+ {
+  "key": "p9",
+  "spoken": "One caution is that Taylor's paper never mentions photons, and his dim lamp wasn't a true single-photon source."
+ },
+ {
+  "key": "p10",
+  "spoken": "That test came in 1986, when a French team including Alain Aspect used a genuine single-photon source and an interferometer."
+ },
+ {
+  "key": "p11",
+  "spoken": "The interference was still there, one photon at a time."
+ },
+ {
+  "key": "p12",
+  "spoken": "Each photon is detected at one single point."
+ },
+ {
+  "key": "p13",
+  "spoken": "A few hundred look like noise."
+ },
+ {
+  "key": "p14",
+  "spoken": "By ten thousand, the stripes are unmistakable."
+ },
+ {
+  "key": "p15",
+  "spoken": "Brighter light just makes the dots pile up faster, giving the same pattern, sooner."
+ },
+ {
+  "key": "e1",
+  "spoken": "Electrons came the other way round. From 1897, experiments showed them behaving as particles."
+ },
+ {
+  "key": "e2",
+  "spoken": "Then, in 1924, Louis de Broy proposed that all matter has a wave side too."
+ },
+ {
+  "key": "e3",
+  "spoken": "Experiments in 1927 confirmed it, bouncing electrons off crystals and through thin films."
+ },
+ {
+  "key": "e4",
+  "spoken": "But for decades, the two-slit version with electrons was taught only as a thought experiment."
+ },
+ {
+  "key": "e5",
+  "spoken": "This experiment, Richard Feynman wrote in his famous lectures, has never been done in just this way."
+ },
+ {
+  "key": "e6",
+  "spoken": "In fact it had, in 1961, the year those lectures began."
+ },
+ {
+  "key": "e7",
+  "spoken": "Klaus Yernsson, in Tubingen, made slits for electrons and saw the fringes, with up to five slits."
+ },
+ {
+  "key": "e8",
+  "spoken": "In 1974, in Bologna, Merli, Missiroli and Pozzi sent electrons through one at a time."
+ },
+ {
+  "key": "e9",
+  "spoken": "Instead of slits they used an electron biprism, which is a fine wire that splits the beam in two."
+ },
+ {
+  "key": "e10",
+  "spoken": "In 1989, Akira Tonomura and colleagues at Hitachi made it cleaner still."
+ },
+ {
+  "key": "e11",
+  "spoken": "Fewer than 1,000 electrons arrived each second, so two were never in the apparatus at once."
+ },
+ {
+  "key": "e12",
+  "spoken": "Each one arrived as a single flash. Here are 8 electrons, then 270, then 2,000."
+ },
+ {
+  "key": "e13",
+  "spoken": "Over a twenty-minute exposure, 60,000 electrons drew the stripes."
+ },
+ {
+  "key": "e14",
+  "spoken": "In 2002, Physics World readers voted the single-electron version the most beautiful experiment in physics."
+ },
+ {
+  "key": "m1",
+  "spoken": "How big can a thing be and still do this?"
+ },
+ {
+  "key": "m2",
+  "spoken": "In 1991, helium atoms interfered after passing through slits in gold foil."
+ },
+ {
+  "key": "m3",
+  "spoken": "In 1999, a team in Vienna sent buckyballs, molecules of 60 carbon atoms, through a grating of many slits."
+ },
+ {
+  "key": "m4",
+  "spoken": "A buckyball is zero point seven nanometres across; its wave was some 280 times smaller, and still it interfered."
+ },
+ {
+  "key": "m5",
+  "spoken": "The record grew to molecules of 810 atoms in 2013, and about 2,000 atoms in 2019."
+ },
+ {
+  "key": "m6",
+  "spoken": "In 2026, a team in Vienna showed interference with sodium clusters, some of more than 7,000 atoms."
+ },
+ {
+  "key": "m7",
+  "spoken": "The heavier the object, the shorter its wave, and the harder its stripes are to see."
+ },
+ {
+  "key": "m8",
+  "spoken": "So far, quantum theory has passed every one of these tests."
+ },
+ {
+  "key": "k1",
+  "spoken": "Now comes the most famous twist."
+ },
+ {
+  "key": "k2",
+  "spoken": "Put a detector at each slit, to find out which one each particle goes through."
+ },
+ {
+  "key": "k3",
+  "spoken": "Every particle is found at one slit or the other, never split between them."
+ },
+ {
+  "key": "k4",
+  "spoken": "And the stripes vanish."
+ },
+ {
+  "key": "k5",
+  "spoken": "The screen shows two single-slit patterns, simply added together, with no interference."
+ },
+ {
+  "key": "k6",
+  "spoken": "Why? To learn the path, the detector has to interact with the particle."
+ },
+ {
+  "key": "k7",
+  "spoken": "That leaves a record of which way it went, and the two paths can no longer interfere."
+ },
+ {
+  "key": "k8",
+  "spoken": "It's often told as if a conscious observer changes the outcome, but the standard account needs no mind at all."
+ },
+ {
+  "key": "k9",
+  "spoken": "What matters is whether the path could be known, in principle, from anything left behind."
+ },
+ {
+  "key": "k10",
+  "spoken": "In 2004, a Vienna team laser-heated carbon-70 molecules, so they gave off heat radiation in flight."
+ },
+ {
+  "key": "k11",
+  "spoken": "That radiation carried traces of each molecule's path, and the hotter the molecules, the fainter the stripes."
+ },
+ {
+  "key": "k12",
+  "spoken": "Nobody looked at that light; it only had to exist."
+ },
+ {
+  "key": "k13",
+  "spoken": "And it isn't all or nothing. A 1987 experiment gathered some path information and kept fainter stripes."
+ },
+ {
+  "key": "k14",
+  "spoken": "The better the two paths can be told apart, the fainter the stripes have to be."
+ },
+ {
+  "key": "h1",
+  "spoken": "Richard Feynman put this experiment at the centre of quantum physics."
+ },
+ {
+  "key": "h2",
+  "spoken": "He called it impossible, absolutely impossible, to explain in any classical way."
+ },
+ {
+  "key": "h3",
+  "spoken": "It has in it the heart of quantum mechanics, he said. In reality, it contains the only mystery."
+ },
+ {
+  "key": "h4",
+  "spoken": "Quantum mechanics describes each particle with a wave that passes through both slits."
+ },
+ {
+  "key": "h5",
+  "spoken": "The wave only sets the odds of where each particle lands, and those odds are the square of the wave at each spot."
+ },
+ {
+  "key": "h6",
+  "spoken": "Each detection is still a single dot, and only the pile of dots reveals the wave."
+ },
+ {
+  "key": "h7",
+  "spoken": "What happens in between is where interpretations of quantum mechanics part ways."
+ },
+ {
+  "key": "h8",
+  "spoken": "Some say the question of which slit means nothing without a detector; others picture many worlds, or a guiding wave."
+ },
+ {
+  "key": "h9",
+  "spoken": "But they all predict the same stripes, dot for dot."
+ },
+ {
+  "key": "h10",
+  "spoken": "Young's stripes showed light is a wave; single dots showed it arrives in lumps."
+ },
+ {
+  "key": "h11",
+  "spoken": "And a record of the path, of any kind, wipes the stripes away."
+ },
+ {
+  "key": "h12",
+  "spoken": "With two slits, a screen, and one dot at a time, it's still the clearest view we have of the quantum world."
+ }
+]

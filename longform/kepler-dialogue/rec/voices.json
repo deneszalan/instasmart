@@ -1,0 +1,11 @@
+{
+ "A": {
+  "engine": "chatterbox",
+  "ref-audio": "/home/user/text2speech/voices/narrator_male_1.wav",
+  "seed": 1
+ },
+ "B": {
+  "engine": "kokoro",
+  "voice": "af_nicole"
+ }
+}

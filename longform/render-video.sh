@@ -20,6 +20,7 @@ for i in 0 1 2; do
 done
 wait
 for i in 1 2 3; do [ -e $d/render$i.log ] && grep -q -i error $d/render$i.log && { cat $d/render$i.log; exit 1; }; done
+[ -e $d/measure.wav ] || ~/.local/share/uv/tools/text2speech/bin/python -I $S/linecache.py build $d   # deliver.sh frees it
 ~/.local/share/uv/tools/text2speech/bin/python -I $S/assemble.py $d
 python3 -I $S/mix.py $slug
 echo "decode errors: $(ffmpeg -nostdin -v error -i $d/$slug.mp4 -f null - 2>&1 | wc -l)"
