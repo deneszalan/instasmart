@@ -15,6 +15,7 @@ git add longform
 if git diff --cached --quiet; then echo "nothing new to save"; exit 0; fi
 git commit -q -m "Long-form videos: $1
 
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
 Claude-Session: https://claude.ai/code/session_01YHAbKxQJsWorYmpbzym5Hr" -- longform
 for i in 1 2 3 4 5; do git push -q -u origin $B && break; sleep $((2 ** i)); done
 echo "saved: $(git log --oneline -1) ($(du -sh longform | cut -f1))"
