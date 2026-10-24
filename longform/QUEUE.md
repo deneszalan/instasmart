@@ -16,7 +16,7 @@ dialogue's timing changes, re-check a few stills, `bash render-video.sh <slug>`,
 | 7 | public-key | tech-public-key-cryptography | af_heart | A=m1 B=af_heart | both versions delivered (12:10, dialogue 13:18). Done |
 | 8 | enigma | tech-enigma-never-itself | m2 | A=m2 B=af_nicole | both versions delivered (9:34, dialogue 12:44). Done |
 | 9 | mendel | biology-mendel-pea-ratios | af_bella | A=m1 B=af_bella | both versions delivered (11:38, dialogue 12:45). Done |
-| 10 | zeno | philosophy-zeno-achilles-tortoise | af_heart | A=m2 B=af_heart | written (11:48, dialogue 13:30 with stand-ins; its first music track has ~10 s spare in the dialogue); queued (job zeno) |
+| 10 | zeno | philosophy-zeno-achilles-tortoise | af_heart | A=m2 B=af_heart | both versions delivered (11:48, dialogue 12:25). Done |
 
 ## Central work: the runner
 

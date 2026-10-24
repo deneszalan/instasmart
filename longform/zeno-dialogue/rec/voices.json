@@ -1,7 +1,8 @@
 {
  "A": {
-  "engine": "kokoro",
-  "voice": "am_michael"
+  "engine": "chatterbox",
+  "ref-audio": "/home/user/text2speech/voices/narrator_male_2.wav",
+  "seed": 1
  },
  "B": {
   "engine": "kokoro",

@@ -4,76 +4,76 @@ SPEAKERA: Swift-footed Achilles, the greatest of the Greek heroes, is racing a t
 
 2
 00:00:31,000 --> 00:00:56,000
-SPEAKERB: That hardly seems fair. On the tortoise, I mean.
+SPEAKERA: Ah, but listen. Each time Achilles reaches the spot where the tortoise was, it has crept a little further on.
 
 3
 00:01:01,000 --> 00:01:26,000
-SPEAKERA: Ah, but listen. Each time Achilles reaches the spot where the tortoise was, it has crept a little further on.
+SPEAKERA: Which is plainly wrong. Of course he catches it.
 
 4
 00:01:31,000 --> 00:01:56,000
-SPEAKERB: So, says an argument nearly 2,500 years old, he can never catch it.
+SPEAKERA: This is Zeno's paradox of Achilles and the tortoise.
 
 5
 00:02:01,000 --> 00:02:26,000
-SPEAKERA: Which is plainly wrong. Of course he catches it.
+SPEAKERA: And he was a student and friend of an older philosopher, Parmenides.
 
 6
 00:02:31,000 --> 00:02:56,000
-SPEAKERB: Sure. But saying exactly what's wrong with the argument took more than 2,000 years, and some philosophers say it still isn't settled.
+SPEAKERA: Illusions? Motion itself?
 
 7
 00:03:01,000 --> 00:03:26,000
-SPEAKERA: This is Zeno's paradox of Achilles and the tortoise.
+SPEAKERA: Critics found it absurd. So Zeno turned the tables, showing that their views, followed through, led to worse absurdities.
 
 8
 00:03:31,000 --> 00:03:56,000
-SPEAKERB: Zeno was born around 490 BC in Ellia, a Greek city on the west coast of southern Italy.
+SPEAKERA: Sadly, Zeno's book is lost. Fewer than two hundred of his own words survive.
 
 9
 00:04:01,000 --> 00:04:26,000
-SPEAKERA: And he was a student and friend of an older philosopher, Parmenides.
+SPEAKERA: Plato even has the two visit Athens to meet a young Socrates, though he probably invented that meeting.
 
 10
 00:04:31,000 --> 00:04:56,000
-SPEAKERB: Parmenides taught that reality is one unchanging whole, and that change and motion are illusions.
+SPEAKERA: The most famous argument is a race. Aristotle gives it in his Physics, like this.
 
 11
 00:05:01,000 --> 00:05:26,000
-SPEAKERA: Illusions? Motion itself?
+SPEAKERA: Hang on. There's no tortoise in that, just the slowest runner.
 
 12
 00:05:31,000 --> 00:05:56,000
-SPEAKERB: Motion itself. You can imagine how that went down.
+SPEAKERA: Then let's race. Achilles runs ten metres a second, and the tortoise one metre a second.
 
 13
 00:06:01,000 --> 00:06:26,000
-SPEAKERA: Critics found it absurd. So Zeno turned the tables, showing that their views, followed through, led to worse absurdities.
+SPEAKERA: In stage one, Achilles runs those hundred metres, which takes him ten seconds.
 
 14
 00:06:31,000 --> 00:06:56,000
-SPEAKERB: That style of argument is called reductio ad absurdum, and Aristotle called Zeno the inventor of dialectic.
+SPEAKERA: In stage two, he covers those ten metres in one second, and the tortoise crawls another metre.
 
 15
 00:07:01,000 --> 00:07:26,000
-SPEAKERA: Sadly, Zeno's book is lost. Fewer than two hundred of his own words survive.
+SPEAKERA: And each time we zoom in ten times, the picture looks exactly the same.
 
 16
 00:07:31,000 --> 00:07:56,000
-SPEAKERB: So we know his arguments from others, such as Plato, Aristotle, and Simplishius, writing a thousand years later.
+SPEAKERA: So there's always one more stage, and Zeno concludes that Achilles never catches up.
 
 17
 00:08:01,000 --> 00:08:26,000
-SPEAKERA: Plato even has the two visit Athens to meet a young Socrates, though he probably invented that meeting.
+SPEAKERA: It's a hundred metres, plus ten, plus one, plus a tenth, plus a hundredth, and so on.
 
 18
 00:08:31,000 --> 00:08:56,000
-SPEAKERB: A good scene, then, but probably not history.
+SPEAKERA: They close in on one hundred and eleven and one ninth metres, with the ones repeating forever.
 
 19
 00:09:01,000 --> 00:09:26,000
-SPEAKERA: The most famous argument is a race. Aristotle gives it in his Physics, like this.
+SPEAKERA: No. And the times add up the same way, to eleven and one ninth seconds.
 
 20
 00:09:31,000 --> 00:09:56,000
-SPEAKERB: In a race, the quickest runner can never overtake the slowest, since the pursuer must first reach the point whence the pursued started,
+SPEAKERA: Plot distance against time, and each runner is a straight line. They cross at eleven point one seconds, and a hundred and eleven point one metres.
