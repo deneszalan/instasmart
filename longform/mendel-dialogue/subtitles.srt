@@ -1,483 +1,483 @@
 1
-00:00:01,000 --> 00:00:08,190
+00:00:01,000 --> 00:00:06,560
 >> Cross a pea plant that has round seeds with one that has wrinkled seeds, and every seed you get is round.
 
 2
-00:00:08,270 --> 00:00:10,460
+00:00:06,640 --> 00:00:08,830
 >> So the wrinkles just disappear?
 
 3
-00:00:10,540 --> 00:00:18,110
+00:00:08,910 --> 00:00:16,090
 >> That's how it looks. But grow those round seeds into plants, and wrinkled seeds come back, about one in four.
 
 4
-00:00:18,190 --> 00:00:25,630
+00:00:16,170 --> 00:00:23,610
 >> A friar counted thousands of them in a monastery garden, and out of his counts came the first rules of genetics.
 
 5
-00:00:25,710 --> 00:00:33,530
+00:00:23,690 --> 00:00:30,290
 >> This is the story of Gregor Mendel's peas, and of numbers that some called too good to be true.
 
 6
-00:00:37,530 --> 00:00:45,070
+00:00:34,290 --> 00:00:41,830
 >> Mendel was a friar at St Thomas's Abbey in Brno, which was called Brünn back then, in the Austrian Empire.
 
 7
-00:00:45,150 --> 00:00:53,210
+00:00:41,910 --> 00:00:48,690
 >> From 1856 to 1863, he used the abbey's garden to cross pea plants and follow their offspring.
 
 8
-00:00:53,290 --> 00:00:55,330
+00:00:48,770 --> 00:00:50,810
 >> Why peas, of all plants?
 
 9
-00:00:55,410 --> 00:01:03,930
+00:00:50,890 --> 00:00:58,210
 >> Pea flowers fertilise themselves in the bud, so to cross two plants, Mendel opened a young bud and pulled out its stamens.
 
 10
-00:01:04,010 --> 00:01:07,700
+00:00:58,290 --> 00:01:01,980
 >> And then he dusted it with pollen from another plant.
 
 11
-00:01:07,780 --> 00:01:12,550
+00:01:02,060 --> 00:01:05,910
 >> He called that somewhat laborious, but almost always successful.
 
 12
-00:01:12,630 --> 00:01:20,590
+00:01:05,990 --> 00:01:13,950
 >> He tested 34 varieties, kept 22 that bred true, and picked seven traits, each with two clear forms.
 
 13
-00:01:20,670 --> 00:01:28,690
+00:01:14,030 --> 00:01:21,170
 >> Seeds were round or wrinkled, and yellow or green. Seed coats were grey or white, with violet or white flowers.
 
 14
-00:01:28,770 --> 00:01:37,060
+00:01:21,250 --> 00:01:29,540
 >> Pods were inflated or pinched, green or yellow. Flowers grew along the stem or at the tip, and stems were tall or short.
 
 15
-00:01:37,140 --> 00:01:43,630
+00:01:29,620 --> 00:01:34,930
 >> He chose them that way on purpose. Traits that came in degrees, more or less, he left out.
 
 16
-00:01:43,710 --> 00:01:52,100
+00:01:35,010 --> 00:01:43,400
 >> And he counted. Over those years, he grew and tested some 28,000 plants, most of them peas.
 
 17
-00:01:55,300 --> 00:02:01,140
+00:01:46,600 --> 00:01:52,440
 Take seed shape. Mendel crossed plants with round seeds and plants with wrinkled ones.
 
 18
-00:02:01,220 --> 00:02:07,860
+00:01:52,520 --> 00:01:58,910
 >> The shape shows in the seed itself, so he saw the answer that same year. Every seed was round.
 
 19
-00:02:07,940 --> 00:02:14,310
+00:01:58,990 --> 00:02:04,900
 He coined the words for it. Round was dominant, and wrinkled, which had vanished, was recessive.
 
 20
-00:02:14,390 --> 00:02:20,030
+00:02:04,980 --> 00:02:10,620
 >> The next year, he sowed those hybrid seeds and let the plants fertilise themselves.
 
 21
-00:02:20,110 --> 00:02:26,830
+00:02:10,700 --> 00:02:16,480
 >> And in their pods, wrinkled seeds were back, often right next to round ones, with nothing in between.
 
 22
-00:02:26,910 --> 00:02:30,520
+00:02:16,560 --> 00:02:20,170
 >> So the wrinkle skipped a generation. Where was it hiding?
 
 23
-00:02:30,600 --> 00:02:39,140
+00:02:20,250 --> 00:02:27,250
 >> First, he counted. From 253 hybrid plants, he got 7,324 seeds.
 
 24
-00:02:39,220 --> 00:02:45,590
+00:02:27,330 --> 00:02:33,700
 >> And 5,474 of them were round, and 1,850 wrinkled.
 
 25
-00:02:45,670 --> 00:02:52,130
+00:02:33,780 --> 00:02:39,030
 >> That's 2.96 round seeds for every wrinkled one, which is close to three to one.
 
 26
-00:02:52,210 --> 00:03:00,100
+00:02:39,110 --> 00:02:47,000
 >> He did the same for all seven traits, and each one landed near three to one, from 2.82 to 3.15.
 
 27
-00:03:00,180 --> 00:03:04,320
+00:02:47,080 --> 00:02:50,410
 >> Seven different traits, and the same ratio every time?
 
 28
-00:03:04,400 --> 00:03:15,720
+00:02:50,490 --> 00:03:01,810
 >> Near enough. All seven together gave 14,949 dominant to 5,010 recessive, which is 2.98 to 1.
 
 29
-00:03:15,800 --> 00:03:23,440
+00:03:01,890 --> 00:03:08,750
 >> So why three to one? And how can a trait vanish for a generation, then come back unchanged?
 
 30
-00:03:26,040 --> 00:03:34,030
+00:03:11,350 --> 00:03:19,340
 >> Mendel's answer, in today's words, is that each plant carries two copies of a gene for seed shape, one from each parent.
 
 31
-00:03:34,110 --> 00:03:39,350
+00:03:19,420 --> 00:03:24,250
 >> Let's write the round version as R, and the wrinkled one as r.
 
 32
-00:03:39,430 --> 00:03:47,470
+00:03:24,330 --> 00:03:32,370
 >> A hybrid gets R from one parent and r from the other, and one R is enough to make the seed round.
 
 33
-00:03:47,550 --> 00:03:50,160
+00:03:32,450 --> 00:03:35,110
 >> And the r? Is it gone?
 
 34
-00:03:50,240 --> 00:03:56,260
+00:03:35,190 --> 00:03:41,210
 >> Not at all. That's dominance. The r stays hidden, and it can still be passed on.
 
 35
-00:03:56,340 --> 00:04:03,550
+00:03:41,290 --> 00:03:48,240
 >> Each pollen grain and egg cell gets just one copy, so a hybrid's are half R and half r.
 
 36
-00:04:03,630 --> 00:04:08,970
+00:03:48,320 --> 00:03:53,660
 >> And which pollen meets which egg is, in Mendel's own words, "a matter of chance".
 
 37
-00:04:09,050 --> 00:04:13,570
+00:03:53,740 --> 00:03:57,520
 >> Like tossing two coins, one for the pollen and one for the egg.
 
 38
-00:04:13,650 --> 00:04:19,540
+00:03:57,600 --> 00:04:03,490
 >> Mendel wrote out the four equally likely meetings as fractions, the pollen over the egg cell.
 
 39
-00:04:19,620 --> 00:04:24,880
+00:04:03,570 --> 00:04:08,000
 >> And only r over r, one in four, makes a wrinkled seed.
 
 40
-00:04:24,960 --> 00:04:28,500
+00:04:08,080 --> 00:04:11,620
 >> The other three hold an R, so they're round.
 
 41
-00:04:28,580 --> 00:04:35,400
+00:04:11,700 --> 00:04:17,040
 >> Today the same bookkeeping is drawn as a square, which Reginald Punnett devised decades later.
 
 42
-00:04:35,480 --> 00:04:42,070
+00:04:17,120 --> 00:04:23,710
 >> It predicts one pure round, two hybrids and one pure wrinkled, in every four.
 
 43
-00:04:42,150 --> 00:04:49,090
+00:04:23,790 --> 00:04:30,080
 >> Which means two round seeds in three should be hybrids, still hiding an r. And Mendel tested that.
 
 44
-00:04:49,170 --> 00:04:51,710
+00:04:30,160 --> 00:04:32,700
 >> How do you test for something you can't see?
 
 45
-00:04:51,790 --> 00:04:55,700
+00:04:32,780 --> 00:04:36,060
 >> You grow the seed, and look at the seeds its plant makes.
 
 46
-00:04:55,780 --> 00:05:05,950
+00:04:36,140 --> 00:04:46,310
 >> Of 565 plants grown from round seeds, 372 made both kinds of seed, and 193 made only round ones.
 
 47
-00:05:06,030 --> 00:05:12,370
+00:04:46,390 --> 00:04:51,400
 >> That's 1.93 to 1, close to the two to one he predicted.
 
 48
-00:05:15,370 --> 00:05:22,460
+00:04:54,400 --> 00:05:00,360
 Next, Mendel crossed plants that differed in two traits, round yellow seeds with wrinkled green ones.
 
 49
-00:05:22,540 --> 00:05:31,380
+00:05:00,440 --> 00:05:07,980
 The hybrids were all round and yellow. From 15 of them, he harvested 556 seeds, in four kinds.
 
 50
-00:05:31,460 --> 00:05:40,330
+00:05:08,060 --> 00:05:16,930
 >> There were 315 round yellow seeds, 101 wrinkled yellow, 108 round green, and 32 wrinkled green.
 
 51
-00:05:40,410 --> 00:05:47,520
+00:05:17,010 --> 00:05:23,010
 >> And two of those kinds are new. Round green and wrinkled yellow don't look like either original parent.
 
 52
-00:05:47,600 --> 00:05:55,060
+00:05:23,090 --> 00:05:30,550
 >> If the two traits are inherited separately, three quarters of the seeds are round, and three quarters of those are yellow.
 
 53
-00:05:55,140 --> 00:06:01,910
+00:05:30,630 --> 00:05:36,340
 >> That makes nine sixteenths round and yellow, and the four kinds come in nine, three, three and one.
 
 54
-00:06:01,990 --> 00:06:12,780
+00:05:36,420 --> 00:05:47,210
 >> For 556 seeds, that predicts about 313 round yellow and 35 wrinkled green, with 104 of each mixed kind.
 
 55
-00:06:12,860 --> 00:06:17,400
+00:05:47,290 --> 00:05:50,960
 >> And he got 315 and 32. That's close.
 
 56
-00:06:17,480 --> 00:06:21,550
+00:05:51,040 --> 00:05:55,110
 >> So seed shape and seed colour had sorted independently.
 
 57
-00:06:21,630 --> 00:06:31,300
+00:05:55,190 --> 00:06:03,160
 >> With three traits, he found 27 kinds, and he bred all 128 pure combinations of the seven.
 
 58
-00:06:34,500 --> 00:06:43,590
+00:06:06,360 --> 00:06:15,450
 >> Mendel presented all of this to the Natural History Society of Brno, at two meetings in February and March 1865.
 
 59
-00:06:43,670 --> 00:06:50,480
+00:06:15,530 --> 00:06:20,580
 >> About forty people listened, and his paper came out in the society's journal in 1866.
 
 60
-00:06:50,560 --> 00:06:52,850
+00:06:20,660 --> 00:06:22,950
 >> And then, the famous silence?
 
 61
-00:06:52,930 --> 00:07:01,420
+00:06:23,030 --> 00:06:30,160
 >> Not total silence. But it was read as a paper on hybrids, and cited only about three times in 35 years.
 
 62
-00:07:01,500 --> 00:07:06,870
+00:06:30,240 --> 00:06:35,610
 >> Even Mendel seems to have thought his rules held only for some kinds of plants.
 
 63
-00:07:06,950 --> 00:07:15,020
+00:06:35,690 --> 00:06:41,810
 >> His hawkweed crosses didn't fit, since many hawkweeds, it turned out, make most of their seeds without fertilisation.
 
 64
-00:07:15,100 --> 00:07:22,320
+00:06:41,890 --> 00:06:49,110
 >> Then he became abbot, and his duties largely ended his science. He died in 1884.
 
 65
-00:07:22,400 --> 00:07:31,490
+00:06:49,190 --> 00:06:56,130
 >> In the spring of 1900, three plant scientists in three countries published within about two months, all pointing back to Mendel.
 
 66
-00:07:31,570 --> 00:07:38,460
+00:06:56,210 --> 00:07:03,100
 >> They were Hugo de Vries in the Netherlands, Carl Correns in Germany, and Erich von Tschermak in Austria.
 
 67
-00:07:38,540 --> 00:07:43,110
+00:07:03,180 --> 00:07:07,380
 >> Three at once, after 34 years. Was that a coincidence?
 
 68
-00:07:43,190 --> 00:07:49,280
+00:07:07,460 --> 00:07:13,550
 >> Not entirely. Botanists were already hunting for a theory of inheritance without blending.
 
 69
-00:07:49,360 --> 00:07:57,570
+00:07:13,630 --> 00:07:20,420
 >> Historians now doubt that Tschermak understood Mendel's laws, and how much de Vries owed to Mendel is still debated.
 
 70
-00:07:57,650 --> 00:08:07,340
+00:07:20,500 --> 00:07:30,190
 >> And in England, William Bateson championed the work so hard he was called Mendel's bulldog. He named the new science genetics.
 
 71
-00:08:09,940 --> 00:08:15,600
+00:07:32,790 --> 00:07:36,960
 >> Three to one is an average, though. Plant by plant, Mendel's counts wandered.
 
 72
-00:08:15,680 --> 00:08:23,620
+00:07:37,040 --> 00:07:44,980
 >> His first ten plants for seed shape gave 45 to 12, then 27 to 8, then 24 to 7.
 
 73
-00:08:23,700 --> 00:08:30,090
+00:07:45,060 --> 00:07:50,880
 >> One gave 19 to 10, under two to one. And another, he noted, gave 43 to 2.
 
 74
-00:08:30,170 --> 00:08:33,990
+00:07:50,960 --> 00:07:54,780
 >> If that were your only plant, you'd never guess three to one.
 
 75
-00:08:34,070 --> 00:08:39,860
+00:07:54,860 --> 00:08:00,090
 >> Small counts swing widely, because chance decides which pollen meets which egg.
 
 76
-00:08:39,940 --> 00:08:47,710
+00:08:00,170 --> 00:08:07,940
 >> So let's have chance do the same. For every seed, we pick R or r for the pollen, and again for the egg.
 
 77
-00:08:47,790 --> 00:08:53,730
+00:08:08,020 --> 00:08:13,960
 Here are ten imaginary plants, with the same numbers of seeds as Mendel's first ten.
 
 78
-00:08:53,810 --> 00:09:01,850
+00:08:14,040 --> 00:08:20,910
 >> And they scatter just like his, from 21 to 11 on one plant to 29 to 5 on another.
 
 79
-00:09:01,930 --> 00:09:04,900
+00:08:20,990 --> 00:08:23,960
 >> Now let's keep going, seed after seed.
 
 80
-00:09:04,980 --> 00:09:13,050
+00:08:24,040 --> 00:08:32,110
 After 40 seeds, the ratio stands at 7 to 1. After 400, it has fallen to 3.30 to 1.
 
 81
-00:09:13,130 --> 00:09:23,550
+00:08:32,190 --> 00:08:39,720
 >> And by 7,324 seeds, as many as Mendel counted, it has settled at 3.10 to 1.
 
 82
-00:09:23,800 --> 00:09:31,270
+00:08:39,970 --> 00:08:47,440
 >> Mendel put it this way. "The larger their number is, the more mere chance effects are eliminated."
 
 83
-00:09:33,870 --> 00:09:40,530
+00:08:50,040 --> 00:08:56,700
 In 1936, the statistician Ronald Fisher tested how well Mendel's numbers fit.
 
 84
-00:09:40,610 --> 00:09:46,650
+00:08:56,780 --> 00:09:01,530
 >> Real counts miss a prediction by chance. Mendel's, Fisher argued, missed by too little.
 
 85
-00:09:46,730 --> 00:09:49,600
+00:09:01,610 --> 00:09:04,480
 >> Too little? How can data be too good?
 
 86
-00:09:49,680 --> 00:09:56,720
+00:09:04,560 --> 00:09:10,680
 >> Chance always leaves some scatter. Counts that hug the prediction every time are strange in their own way.
 
 87
-00:09:56,800 --> 00:10:05,490
+00:09:10,760 --> 00:09:19,450
 >> Against 1,000 gardens run by chance alone, only 50 come as close to three to one as Mendel's seven totals.
 
 88
-00:10:05,570 --> 00:10:10,140
+00:09:19,530 --> 00:09:23,490
 >> That's about one garden in twenty. Lucky, but not shocking.
 
 89
-00:10:10,220 --> 00:10:13,410
+00:09:23,570 --> 00:09:26,760
 >> Fisher's point was that the luck kept repeating.
 
 90
-00:10:13,490 --> 00:10:19,050
+00:09:26,840 --> 00:09:31,320
 >> His sharpest point was a test in which Mendel grew ten offspring of each plant.
 
 91
-00:10:19,130 --> 00:10:22,670
+00:09:31,400 --> 00:09:34,940
 >> That was to tell the pure plants from the hybrids, right?
 
 92
-00:10:22,750 --> 00:10:30,410
+00:09:35,020 --> 00:09:41,990
 >> Yes, but a hybrid's ten can all look dominant by chance, so he should have found about 1.7, not 2.
 
 93
-00:10:30,490 --> 00:10:38,160
+00:09:42,070 --> 00:09:49,740
 >> And he reported 399 hybrids to 201 pure, almost exactly two to one.
 
 94
-00:10:38,240 --> 00:10:46,230
+00:09:49,820 --> 00:09:56,580
 >> Fisher concluded that most of the data had been falsified, perhaps by an assistant "who knew too well what was expected".
 
 95
-00:10:46,310 --> 00:10:51,150
+00:09:56,660 --> 00:10:01,500
 >> That's a heavy charge, made more than fifty years after Mendel died.
 
 96
-00:10:51,230 --> 00:11:00,040
+00:10:01,580 --> 00:10:08,230
 >> Daniel Hartl and Daniel Fairbanks replied that Mendel probably grew more than ten, and that the fraud charge could be put to rest.
 
 97
-00:11:00,120 --> 00:11:08,360
+00:10:08,310 --> 00:10:16,550
 >> Their 2008 book with others, "Ending the Mendel–Fisher Controversy", found no reason to think he made up results.
 
 98
-00:11:08,440 --> 00:11:16,210
+00:10:16,630 --> 00:10:24,400
 Yet one of its own authors, A. W. F. Edwards, still found too little scatter in 84 of Mendel's ratios.
 
 99
-00:11:16,290 --> 00:11:23,830
+00:10:24,480 --> 00:10:31,100
 >> "One can applaud the lucky gambler," he wrote, "but when he is lucky again tomorrow, and the next day, and the following day,
 
 100
-00:11:23,910 --> 00:11:27,450
+00:10:31,180 --> 00:10:33,920
 one is entitled to become a little suspicious."
 
 101
-00:11:27,530 --> 00:11:31,270
+00:10:34,000 --> 00:10:37,740
 >> So the book meant to end the controversy didn't quite end it.
 
 102
-00:11:31,350 --> 00:11:40,640
+00:10:37,820 --> 00:10:45,540
 >> Then a 2019 reanalysis, adding the extreme plants Mendel himself reported, found about as much scatter as chance predicts.
 
 103
-00:11:40,720 --> 00:11:45,680
+00:10:45,620 --> 00:10:50,580
 >> And Mendel also said he left out some small experiments that strayed.
 
 104
-00:11:45,760 --> 00:11:53,360
+00:10:50,660 --> 00:10:58,260
 So the open question is how he chose, counted and reported his peas, not whether he grew them.
 
 105
-00:11:55,960 --> 00:12:03,250
+00:11:00,860 --> 00:11:06,640
 >> Mendel never knew what his factors were made of. For the wrinkled seed, the answer came in 1990.
 
 106
-00:12:03,330 --> 00:12:10,170
+00:11:06,720 --> 00:11:13,560
 >> Wrinkled seeds lack one form of an enzyme that builds starch, starch-branching enzyme 1.
 
 107
-00:12:10,250 --> 00:12:18,090
+00:11:13,640 --> 00:11:20,130
 >> In wrinkled peas, its gene is interrupted by an extra stretch of DNA, about 800 letters long.
 
 108
-00:12:18,170 --> 00:12:22,060
+00:11:20,210 --> 00:11:24,100
 >> And the intruder looks like a jumping gene known from maize.
 
 109
-00:12:22,140 --> 00:12:28,780
+00:11:24,180 --> 00:11:30,820
 Without the enzyme, the young seed makes less starch and keeps more sugar, which draws in extra water.
 
 110
-00:12:28,860 --> 00:12:31,770
+00:11:30,900 --> 00:11:33,330
 >> So a wrinkled seed starts out swollen?
 
 111
-00:12:31,850 --> 00:12:36,940
+00:11:33,410 --> 00:11:38,500
 >> Yes, and then, as the ripe seed dries out, it ends up wrinkled.
 
 112
-00:12:37,020 --> 00:12:44,410
+00:11:38,580 --> 00:11:45,400
 >> One working copy of the gene makes the enzyme, so the seed stays round. That's dominance, in chemistry.
 
 113
-00:12:44,490 --> 00:12:47,980
+00:11:45,480 --> 00:11:48,970
 >> So dominant just means one good copy is enough.
 
 114
-00:12:48,060 --> 00:12:57,380
+00:11:49,050 --> 00:11:56,830
 >> It was the first of Mendel's seven genes to be found, and by 2025, all seven had been identified.
 
 115
-00:12:59,980 --> 00:13:07,420
+00:11:59,430 --> 00:12:05,930
 So here is what the peas were saying. Every plant carries two copies of each gene, one from each parent.
 
 116
-00:13:07,500 --> 00:13:11,690
+00:12:06,010 --> 00:12:10,200
 >> Each pollen grain and each egg cell gets one of them, by chance.
 
 117
-00:13:11,770 --> 00:13:19,310
+00:12:10,280 --> 00:12:17,100
 >> A recessive copy can hide for a generation, and shows again when two hidden copies meet, one time in four.
 
 118
-00:13:19,390 --> 00:13:24,730
+00:12:17,180 --> 00:12:22,520
 >> None of this shows in a single pod. It appears only when someone counts thousands.
 
 119
-00:13:24,810 --> 00:13:28,820
+00:12:22,600 --> 00:12:25,950
 >> Which is why the counting mattered as much as the crossing.
 
 120
-00:13:28,900 --> 00:13:35,860
+00:12:26,030 --> 00:12:32,990
 >> His counts waited 34 years to be understood, and then they became the first rules of genetics.
 
 121
-00:13:35,940 --> 00:13:41,330
+00:12:33,070 --> 00:12:37,890
 >> All from a friar, a garden, and a careful count of peas.
