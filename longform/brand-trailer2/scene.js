@@ -1,9 +1,10 @@
 // Reckon trailer, the fast cut: brand direction E (Margin note), cut to the beat of "Rynos Theme" (128 bpm, from 26.11 s).
 //   0–3.75      the build: questions scrawled on the page, one a beat
 //   3.75–11.25  the music lands: four frames, a bar each, punching in on the key number as the pencil slashes round it
-//   11.25–13.1  "Ten questions." / "Worked out." slammed on the page
+//   11.25–13.1  "Big questions." / "Worked out." slammed on the page
 //   13.1–18.75  six more frames, two beats each, whipping from one to the next
-//   18.75–20.6  the ten drop into a contact sheet
+//   18.75–20.6  the camera pulls back: the last frame is one card on a heap that runs off every edge, the examples
+//               scattered on top of it, more cards landing
 //   20.6–       the music cuts out: "Reckon." … "look closer." in near silence, the credit, the page clears
 const { seg, ease, lerp, clamp } = Kit;
 const W = 1920, H = 1080;
@@ -17,7 +18,7 @@ const END = VO2 + VO2_LEN + 2.4, DURATION = END + 0.6;
 const CARDS = [
   { id: '01', loop: [1410, 595, 190, 95], q: 'Only 23 people?' },
   { id: '02', loop: [1318, 600, 105, 62], q: 'Why is the sky blue?' },
-  { id: '03', loop: [1258, 446, 192, 86], q: 'Measure the Earth with a shadow?' },
+  { id: '03', loop: [1236, 452, 305, 96], q: 'Measure the Earth with a shadow?' },
   { id: '04', loop: [1394, 586, 122, 50], q: 'Why does squeezing save fuel?' },
   { id: '05', loop: [1670, 556, 152, 56], q: 'Why faster near the Sun?' },
   { id: '06', loop: [1148, 334, 142, 66], q: 'Wave or particle?' },
@@ -121,21 +122,43 @@ function pageShake(ctx, t, hits, px = 12, amount = 0.035) {
   ctx.translate(W / 2 + sx, H / 2 + sy); ctx.scale(z, z); ctx.translate(-W / 2, -H / 2);
 }
 
-const GRID = { s: 0.172, gap: 26 };
-const gridPos = (j) => {
-  const w = 1920 * GRID.s, h = 1080 * GRID.s, x0 = (W - (5 * w + 4 * GRID.gap)) / 2 + w / 2;
-  return { x: x0 + (j % 5) * (w + GRID.gap), y: 400 + Math.floor(j / 5) * (h + GRID.gap + 6) };
-};
 const TILT = [-1.8, 1.4, -0.9, 2.1, -1.5, 1.0, -2.2, 1.7, -1.1, 0.8].map((d) => (d * Math.PI) / 180);
-function miniCard(ctx, c, x, y, s, rot, alpha) {
-  if (alpha <= 0) return;
-  ctx.save(); ctx.globalAlpha *= alpha; ctx.translate(x, y); ctx.rotate(rot); ctx.scale(s, s); ctx.translate(-960, -540);
-  const b = 14 / s;
-  ctx.save(); ctx.shadowColor = 'rgba(30,25,15,0.22)'; ctx.shadowBlur = 30; ctx.shadowOffsetY = 8;
-  ctx.fillStyle = '#FFFFFF'; ctx.fillRect(-b, -b, 1920 + 2 * b, 1080 + 2 * b); ctx.restore();
-  ctx.drawImage(images[c.id], 0, 0, 1920, 1080);
-  doubleLoop(ctx, c.loop, 15 / Math.max(s, 0.4), 1);
+// The pile (brand/pile.js): where each example lies on it (world units, 0,0 is the last frame), and three more cards
+// landing on top [x, y, tilt, seconds after SHEET].
+const HERO_AT = { '01': [-780, -340], '02': [-270, -400], '03': [260, -330], '04': [790, -370], '05': [-590, 30],
+  '06': [600, 10], '07': [-780, 380], '08': [-220, 400], '09': [380, 380], '10': [0, 0] };
+const DROPS = [[-420, -170, 0.07, 0.95], [440, -180, -0.1, 1.15], [130, 230, 0.05, 1.35]];
+let heap = null;
+// The camera on the pile: it starts exactly where the last shot ended and pulls back until the heap fills the screen.
+function pileView(t) {
+  const last = SHOTS[SHOTS.length - 1], c0 = camera(last, last.len), e = ease.inOut(seg(t, SHEET, SHEET + 1.25));
+  const Z = Math.exp(lerp(Math.log(c0.z / Pile.S), Math.log(0.86), e)) * lerp(1, 0.95, ease.inOut(seg(t, SHEET + 1.25, CUT)));
+  return { Z, cx: lerp((c0.cx - 960) * Pile.S, 0, e), cy: lerp((c0.cy - 540) * Pile.S, 30, e), e };
+}
+function pile(k, t) {
+  const { ctx } = k, v = pileView(t);
+  if (!heap) heap = Pile.heap();
+  ctx.save(); ctx.translate(W / 2, H / 2); ctx.scale(v.Z, v.Z); ctx.translate(-v.cx, -v.cy);
+  Pile.drawHeap(ctx, heap, v);
+  const loopW = lerp(19, 9, v.e), drawLoop = (c, l, w) => doubleLoop(c, l, w, 1);
+  CARDS.forEach((c, j) => { const [x, y] = HERO_AT[c.id]; Pile.card(ctx, images[c.id], x, y, c.id === '10' ? 0 : TILT[j], { zoom: v.Z, loop: c.loop, loopW, drawLoop }); });
+  const ids = Object.keys(Pile.images);
+  DROPS.forEach(([x, y, rot, at], i) => {
+    const a = SHEET + at, p = ease.out(seg(t, a, a + 0.16)); if (t < a) return;
+    Pile.card(ctx, Pile.images[ids[(i * 23 + 5) % ids.length]], x, y - (1 - p) * 30, rot * lerp(2, 1, p), { scale: lerp(1.5, 1, p), alpha: clamp((t - a) / 0.05), zoom: v.Z });
+  });
   ctx.restore();
+  note(k, 'science · history · maths · engineering', W / 2, 985, t - (SHEET + 1.2));
+}
+// A note on a scrap of paper, centred on (cx, y), slapped down u seconds ago.
+function note(k, s, cx, y, u) {
+  const p = ease.out(seg(u, 0, 0.12)); if (p <= 0) return;
+  const { ctx } = k; k.font(400, 54, '"Patrick Hand"');
+  const w = ctx.measureText(s).width + 60;
+  ctx.save(); ctx.globalAlpha *= clamp(u / 0.04); ctx.translate(cx, y); ctx.rotate(0.012); ctx.scale(lerp(1.25, 1, p), lerp(1.25, 1, p));
+  ctx.shadowColor = 'rgba(0,0,0,0.35)'; ctx.shadowBlur = 24; ctx.shadowOffsetY = 6;
+  ctx.fillStyle = E.paper; ctx.fillRect(-w / 2, -50, w, 100); ctx.shadowColor = 'transparent';
+  k.text(s, 0, 18, { color: E.graphite, align: 'center' }); ctx.restore();
 }
 
 // The logo lockup, revealed by its progress values.
@@ -185,20 +208,16 @@ Kit.scene({
       // 3. the slams
       ctx.save(); pageShake(ctx, t, [SLAM, SLAM + 2 * B]);
       ctx.translate(W / 2, H / 2); ctx.scale(lerp(1, 1.05, (t - SLAM) / (4 * B)), lerp(1, 1.05, (t - SLAM) / (4 * B))); ctx.translate(-W / 2, -H / 2);
-      slam(k, 'Ten questions.', W / 2, 430, 190, t, SLAM);
+      slam(k, 'Big questions.', W / 2, 430, 190, t, SLAM);
       slam(k, 'Worked out.', W / 2, 660, 190, t, SLAM + 2 * B);
       k.font(600, 190, 'Lora'); const w = ctx.measureText('Worked out.').width, p = ease.out(seg(t, SLAM + 3 * B, SLAM + 3 * B + 0.22));
       if (p > 0) { ctx.strokeStyle = E.yellow; ctx.lineWidth = 16; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(W / 2 - w / 2, 772); ctx.quadraticCurveTo(W / 2, 760, W / 2 - w / 2 + w * p, 766 - 6 * p); ctx.stroke(); }
       ctx.restore();
     } else if (t < CUT) {
-      // 5. the contact sheet: the ten drop in one after another
-      ctx.save(); ctx.translate(W / 2, H / 2); const z = 1 + 0.05 * ease.inOut(seg(t, SHEET + 1.3, CUT)); ctx.scale(z, z); ctx.translate(-W / 2, -H / 2);
-      CARDS.forEach((c, j) => {
-        const a = SHEET + j * 0.12, p = ease.out(seg(t, a, a + 0.16)), g = gridPos(j);
-        miniCard(ctx, c, g.x, g.y - (1 - p) * 40, GRID.s * lerp(1.5, 1, p), TILT[j] * lerp(3, 1, p), clamp((t - a) / 0.05));
-      });
-      writeOn(k, 'science · history · maths · engineering', W / 2, 860, 56, ease.inOut(seg(t, SHEET + 1.2, SHEET + 1.6)), { color: E.soft, align: 'center' });
-      ctx.restore();
+      // 5. the pile; the last frame's question lifts off as the camera pulls back
+      pile(k, t);
+      const last = SHOTS[SHOTS.length - 1];
+      k.alpha(1 - seg(t, SHEET, SHEET + 0.15), () => tag(k, last.c.q, 1));
     } else {
       // 6. the music stops: the wordmark lands, the pencil goes round its R, and a slow push in to the end
       const out = 1 - ease.inOut(seg(t, END, DURATION));
@@ -221,4 +240,8 @@ Kit.scene({
 });
 window.TIMES = { B, ENTRY, SLAM, FAST, SHEET, CUT, VO1, VO2, END, DURATION, SHOTS: SHOTS.map((s) => [s.t0, s.len, s.whip]) };
 const fontsReady = window.ready;
-window.ready = Promise.all([fontsReady, imagesReady]).then(() => { window.render(0); return true; });
+const pileReady = new Promise((ok, fail) => {
+  const s = document.createElement('script'); s.src = 'brand/pile.js';
+  s.onload = () => window.Pile.ready.then(ok, fail); s.onerror = () => fail(new Error('brand/pile.js')); document.body.appendChild(s);
+});
+window.ready = Promise.all([fontsReady, imagesReady, pileReady]).then(() => { window.render(0); return true; });

@@ -1,7 +1,8 @@
 // Reckon channel trailer, 33 s, brand direction E (Margin note).
 //   0.25–22.75  ten moments from the long videos, pasted onto the page one after another; a pencil loop circles
 //               the key number and a handwritten question appears under each
-//   22.75–27    the ten gather into a contact sheet: "Ten questions, worked out."
+//   22.75–27    the camera pulls back from the stack: it lies on a heap of frames running off the page, and the examples
+//               spread out on top of it: "Big questions, worked out."
 //   27–30.5     the logo sting: "Reckon" is written, the loop goes round its R, "look closer"
 //   30.5–33     end card with the music credit, then the page clears
 const { seg, ease, lerp, clamp } = Kit;
@@ -13,7 +14,7 @@ const E = { paper: '#FAFAF7', graphite: '#2E2E33', yellow: '#F4C430', grey: '#8D
 const CARDS = [
   { id: '01', loop: [1410, 595, 190, 95], q: 'Only 23 people?' },
   { id: '02', loop: [1318, 600, 105, 62], q: 'Why is the sky blue?' },
-  { id: '03', loop: [1258, 446, 192, 86], q: 'Measure the Earth with a shadow?' },
+  { id: '03', loop: [1236, 452, 305, 96], q: 'Measure the Earth with a shadow?' },
   { id: '04', loop: [1394, 586, 122, 50], q: 'Why does squeezing save fuel?' },
   { id: '05', loop: [1670, 556, 152, 56], q: 'Why faster near the Sun?' },
   { id: '06', loop: [1148, 334, 142, 66], q: 'Wave or particle?' },
@@ -25,11 +26,35 @@ const CARDS = [
 const START = 0.25, STEP = 2.25, GATHER = START + CARDS.length * STEP;   // 22.75
 const TILT = [-1.8, 1.4, -0.9, 2.1, -1.5, 1.0, -2.2, 1.7, -1.1, 0.8].map((d) => (d * Math.PI) / 180);
 const PILE = { x: 960, y: 455, s: 0.74 };
-const GRID = { s: 0.172, gap: 26 };
-const gridPos = (j) => {
-  const w = 1920 * GRID.s, h = 1080 * GRID.s, x0 = (W - (5 * w + 4 * GRID.gap)) / 2 + w / 2;
-  return { x: x0 + (j % 5) * (w + GRID.gap), y: 330 + Math.floor(j / 5) * (h + GRID.gap + 6) };
-};
+// The heap (brand/pile.js) the stack turns out to lie on: where each example ends up on it (world units), leaving the
+// foot of the screen clear for the note, and where the camera starts (on the stack) and ends.
+const HERO_AT = { '01': [-780, -370], '02': [-260, -390], '03': [260, -360], '04': [780, -380], '05': [-540, -40],
+  '06': [540, -50], '07': [-720, 250], '08': [0, 270], '09': [720, 250], '10': [0, -40] };
+const Z0 = PILE.s / 0.172, Z1 = 0.86;
+let heap = null;
+function heapScene(k, t) {
+  const { ctx } = k, e = ease.inOut(seg(t, GATHER, GATHER + 1.6)), S = Pile.S;
+  const Z = Math.exp(lerp(Math.log(Z0), Math.log(Z1), e)) * lerp(1, 0.96, ease.inOut(seg(t, GATHER + 1.6, 27)));
+  const at = HERO_AT['10'], cx = lerp(at[0] - (PILE.x - W / 2) / Z0, 0, e), cy = lerp(at[1] - (PILE.y - H / 2) / Z0, 40, e);
+  if (!heap) heap = Pile.heap(5);
+  ctx.save(); ctx.translate(W / 2, H / 2); ctx.scale(Z, Z); ctx.translate(-cx, -cy);
+  k.alpha(seg(t, GATHER, GATHER + 0.45), () => Pile.drawHeap(ctx, heap, { Z, cx, cy }));
+  const drawLoop = (c, l, w) => doubleLoop(c, l, w, 1), border = lerp(14 / Z0, 13, e), loopW = lerp(15, 9, e);
+  CARDS.forEach((c, j) => {
+    const p = ease.inOut(seg(t, GATHER + 0.2 + (9 - j) * 0.05, GATHER + 1.5 + (9 - j) * 0.05)), [hx, hy] = HERO_AT[c.id];
+    Pile.card(ctx, images[c.id], lerp(at[0], hx, p), lerp(at[1], hy, p), TILT[j], { zoom: Z, loop: c.loop, loopW, drawLoop, border });
+  });
+  ctx.restore();
+  // the note, on a sheet of paper at the foot of the screen
+  const n = ease.out(seg(t, 23.45, 23.75));
+  if (n > 0) k.alpha(n, () => {
+    ctx.save(); ctx.translate(W / 2, 905 + (1 - n) * 30); ctx.rotate(-0.008);
+    ctx.shadowColor = 'rgba(0,0,0,0.32)'; ctx.shadowBlur = 30; ctx.shadowOffsetY = 8;
+    ctx.fillStyle = E.paper; ctx.fillRect(-620, -125, 1240, 250); ctx.restore();
+  });
+  writeOn(k, 'Big questions, worked out.', W / 2, 890, 78, ease.inOut(seg(t, 23.6, 24.7)), { family: 'Lora', weight: 600, align: 'center' });
+  k.alpha(ease.out(seg(t, 24.5, 25.1)), () => { k.font(400, 48, '"Patrick Hand"'); k.text('science · history · maths · engineering', W / 2, 975, { color: E.grey, align: 'center' }); });
+}
 
 const images = {};
 const imagesReady = new Promise((ok, fail) => {
@@ -113,16 +138,8 @@ Kit.scene({
           k.alpha(fade, () => writeOn(k, CARDS[i].q, 270, 965, 68, ease.inOut(seg(t, cs + 0.55, cs + 1.2))));
         }
       } else if (t < 27) {
-        // 2. the contact sheet
-        const sheet = 1 - ease.inOut(seg(t, 26.3, 27));
-        k.alpha(sheet, () => {
-          CARDS.forEach((c, j) => {
-            const p = ease.inOut(seg(t, GATHER + j * 0.045, GATHER + 1.1 + j * 0.045)), g = gridPos(j);
-            card(ctx, c, lerp(PILE.x, g.x, p), lerp(PILE.y, g.y, p), lerp(PILE.s, GRID.s, p), lerp(TILT[j], TILT[j] * 0.6, p), 1, 1);
-          });
-          writeOn(k, 'Ten questions, worked out.', W / 2, 820, 78, ease.inOut(seg(t, 23.6, 24.7)), { family: 'Lora', weight: 600, align: 'center' });
-          k.alpha(ease.out(seg(t, 24.5, 25.1)), () => { k.font(400, 48, '"Patrick Hand"'); k.text('science · history · maths · engineering', W / 2, 905, { color: E.grey, align: 'center' }); });
-        });
+        // 2. the heap
+        k.alpha(1 - ease.inOut(seg(t, 26.3, 27)), () => heapScene(k, t));
       } else {
         // 3. the sting, then 4. the end card
         const st = t - 27;
@@ -138,4 +155,8 @@ Kit.scene({
   },
 });
 const fontsReady = window.ready;
-window.ready = Promise.all([fontsReady, imagesReady]).then(() => { window.render(0); return true; });
+const pileReady = new Promise((ok, fail) => {
+  const s = document.createElement('script'); s.src = 'brand/pile.js';
+  s.onload = () => window.Pile.ready.then(ok, fail); s.onerror = () => fail(new Error('brand/pile.js')); document.body.appendChild(s);
+});
+window.ready = Promise.all([fontsReady, imagesReady, pileReady]).then(() => { window.render(0); return true; });

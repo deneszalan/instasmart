@@ -44,7 +44,7 @@ vo_src, vsr = sf.read(sys.argv[2], always_2d=True)
 assert vsr == 24000
 vo_src = np.interp(np.arange(int(len(vo_src) * SR / vsr)) / SR, np.arange(len(vo_src)) / vsr, vo_src[:, 0])
 voice = np.zeros(N)
-for (src, length), at in [((1.0, 2.83), 23.3), ((31.0, 1.46), 29.45)]:
+for (src, length), at in [((1.0, 2.85), 23.3), ((31.0, 1.46), 29.45)]:
     a = int(src * SR); clip = vo_src[a:a + int(length * SR)].copy()
     fade = np.clip(np.arange(len(clip)) / (0.01 * SR), 0, 1) * np.clip((len(clip) - np.arange(len(clip))) / (0.03 * SR), 0, 1)
     voice[int(at * SR):int(at * SR) + len(clip)] += clip * fade

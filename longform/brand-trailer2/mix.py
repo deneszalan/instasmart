@@ -48,9 +48,10 @@ for t0, ln, whip in SHOTS:
     fx += 0.5 * slap(t0 + (WHIP if whip else 0) + (0.34 if ln > 1 else 0.2))
 # 3. the slams
 fx += hit(SLAM, 1.0) + hit(SLAM + 2 * B, 1.0); pencil += win(SLAM + 3 * B, SLAM + 3 * B + 0.22)
-# 5. the contact sheet: cards dropping, the subtitle written, a swell into the cut, and the cut itself
-for j in range(10): fx += 0.35 * slap(SHEET + j * 0.12 + 0.1)
-pencil += 0.6 * win(SHEET + 1.2, SHEET + 1.6)
+# 5. the pile: a long whoosh as the camera pulls back, three cards landing, the note slapped down, a swell into the cut
+fx += 0.9 * whoosh(SHEET - 0.03, SHEET + 1.25)
+for at in (0.95, 1.15, 1.35): fx += 0.45 * slap(SHEET + at + 0.14)
+fx += 0.5 * slap(SHEET + 1.2)
 p = np.clip((t - (SHEET + 0.9)) / (CUT - SHEET - 0.9), 0, 1) * (t < CUT)
 fx += 0.45 * p ** 3 * hiss
 fx += boom(CUT, 1.0, 1.4)
