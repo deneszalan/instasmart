@@ -1,0 +1,231 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-mary-toft-rabbits",
+  "field": "body",
+  "title": "In 1726 a woman claimed to give birth to rabbits, and the king's surgeon believed her",
+  "emoji": "🐇",
+  "cover": {
+    "src": "cover.jpg",
+    "alt": "Mary Toft, in a white cap, sits up in a cottage bed under a patchwork quilt with a sly half-smile, while rabbits sit on the floor and a surgeon in a wig and plum coat stares in shock."
+  },
+  "body": "In the autumn of 1726 **Mary Toft**, a poor woman from Godalming in Surrey, appeared to give birth to pieces of animals, most of them parts of rabbits. Her man-midwife, John Howard, believed her and wrote to important people. **Nathaniel St André**, surgeon-anatomist to King George I, came to see, delivered part of a rabbit himself and published a pamphlet in support. Others were less sure: the king's German surgeon, Cyriacus Ahlers, suspected fraud, and in London, where crowds came to see her, a porter told magistrates he had been paid to smuggle in a rabbit. Threatened with a painful operation by Sir Richard Manningham, Toft confessed on 7 December. She was jailed for four months and released without trial. The doctors who had vouched for her became a national joke, and Hogarth drew them in his print *Cunicularii*.",
+  "slides": [
+    {
+      "type": "comic",
+      "src": "panel-1.jpg",
+      "alt": "A low cottage bedroom with dark beams. Mary Toft, in a white cap, sits up in bed under a patchwork quilt. An old surgeon in a white wig holds up a rabbit in astonishment; another rabbit sits on the floor.",
+      "caption": "Godalming, 1726. Mary Toft is 'giving birth' to bits of animals. Her man-midwife, John Howard, believes it.",
+      "bubbles": [
+        {
+          "text": "As soon as the eleventh rabbit was taken away, up leapt the twelfth!",
+          "speaker": "John Howard",
+          "x": 62,
+          "y": 34,
+          "width": 48,
+          "tail": {
+            "x": 70.8,
+            "y": 51.2
+          },
+          "kind": "shout"
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-2.jpg",
+      "alt": "John Howard grins in front of a shelf of glass jars, each holding a rabbit, and holds up a letter.",
+      "caption": "He keeps each 'rabbit' in its own pot of spirits, in order of arrival, and writes to everyone important.",
+      "bubbles": [
+        {
+          "text": "The king will want to hear about this.",
+          "speaker": "John Howard",
+          "x": 40,
+          "y": 34,
+          "width": 44,
+          "tail": {
+            "x": 35.7,
+            "y": 51.9
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-3.jpg",
+      "alt": "A dashing surgeon in a white wig, a plum coat and a lace jabot bursts into the bedroom with his arms flung wide. Mary lies calmly in bed; Howard follows him in.",
+      "caption": "15 November. The king's surgeon-anatomist, Nathaniel St André, arrives. She is in labour with rabbit fifteen.",
+      "bubbles": [
+        {
+          "text": "Magnificent!",
+          "speaker": "Nathaniel St André",
+          "x": 50,
+          "y": 32,
+          "width": 32,
+          "tail": {
+            "x": 70.7,
+            "y": 49.7
+          },
+          "kind": "shout"
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-4.jpg",
+      "alt": "By the bed, St André points eagerly at a glass of water in which a scrap of rabbit lung floats. A gentleman in a blue coat stares, astonished.",
+      "caption": "He delivers a piece of rabbit himself, drops a scrap of its lung in water and watches it float. Convinced.",
+      "bubbles": [
+        {
+          "text": "It floats. Science has spoken.",
+          "speaker": "Nathaniel St André",
+          "x": 50,
+          "y": 34,
+          "width": 36,
+          "tail": {
+            "x": 67.0,
+            "y": 49.7
+          }
+        },
+        {
+          "text": "Remarkable.",
+          "speaker": "Samuel Molyneux",
+          "x": 84,
+          "y": 42,
+          "width": 30,
+          "tail": {
+            "x": 87.4,
+            "y": 58.1
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-5.jpg",
+      "alt": "A Georgian London street. A crowd of gentlemen in wigs and tricorne hats and ladies in caps queues at a lit doorway, where St André welcomes them in.",
+      "caption": "29 November: she is moved to Lacy's Bagnio in London. 'Every creature in town' comes to see and feel her.",
+      "bubbles": [
+        {
+          "text": "Do you think she'll do one while we're here?",
+          "speaker": "A visitor",
+          "x": 30,
+          "y": 42,
+          "width": 40,
+          "tail": {
+            "x": 41.4,
+            "y": 58.1
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-6.jpg",
+      "alt": "Outside the bagnio, a porter in a tricorne hat stands with a rabbit's ears poking out of his coat, facing a stern gentleman who points at it.",
+      "caption": "4 December. The bagnio's porter tells the magistrates that her sister-in-law paid him to smuggle in a rabbit.",
+      "bubbles": [
+        {
+          "text": "Her sister-in-law gave me money for this. Thought you should know.",
+          "speaker": "The porter",
+          "x": 30,
+          "y": 32,
+          "width": 44,
+          "tail": {
+            "x": 45.2,
+            "y": 50.0
+          }
+        },
+        {
+          "text": "Thank you. That's... very helpful.",
+          "speaker": "A magistrate",
+          "x": 76,
+          "y": 42,
+          "width": 34,
+          "tail": {
+            "x": 74.5,
+            "y": 51.9
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-7.jpg",
+      "alt": "Mary Toft, sweating, cowers in bed as a stern elderly surgeon in black holds up a large saw.",
+      "caption": "7 December. Sir Richard Manningham proposes a very painful operation to get to the bottom of it. She confesses.",
+      "bubbles": [
+        {
+          "text": "It won't hurt a bit. Well, it will hurt a lot.",
+          "speaker": "Sir Richard Manningham",
+          "x": 80,
+          "y": 34,
+          "width": 36,
+          "tail": {
+            "x": 67.0,
+            "y": 49.7
+          }
+        },
+        {
+          "text": "All right! I'll tell you everything!",
+          "speaker": "Mary Toft",
+          "x": 24,
+          "y": 43,
+          "width": 40,
+          "tail": {
+            "x": 22.8,
+            "y": 58.8
+          },
+          "kind": "shout"
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-8.jpg",
+      "alt": "On a London street, a crowd laughs at a satirical print pasted on the wall, showing three wigged doctors and a rabbit. St André stands among them, crestfallen.",
+      "caption": "She is jailed for four months and freed without trial. The doctors become a national joke, drawn by Hogarth.",
+      "bubbles": [
+        {
+          "text": "In my defence, it floated.",
+          "speaker": "Nathaniel St André",
+          "x": 76,
+          "y": 38,
+          "width": 32,
+          "tail": {
+            "x": 54.7,
+            "y": 54.3
+          }
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What finally broke the hoax?",
+      "options": [
+        "An X-ray",
+        "A bribed porter and a threat of surgery",
+        "A rabbit refused to come out",
+        "Hogarth's print"
+      ],
+      "answer": 1,
+      "explanation": "The bagnio's porter testified that he had been paid to smuggle in a rabbit, and when Sir Richard Manningham threatened a painful operation, Toft confessed."
+    }
+  ],
+  "tags": [
+    "hoax",
+    "medicine",
+    "georgian",
+    "rabbits",
+    "hogarth",
+    "comic"
+  ],
+  "source": {
+    "label": "Wikipedia: Mary Toft",
+    "url": "https://en.wikipedia.org/wiki/Mary_Toft"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-25"
+}

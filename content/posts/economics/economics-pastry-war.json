@@ -1,0 +1,205 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "economics-pastry-war",
+  "field": "economics",
+  "title": "A French pastry cook's bill helped start a war between France and Mexico",
+  "emoji": "🧁",
+  "cover": {
+    "src": "cover.jpg",
+    "alt": "A French sailing warship fires its cannon at an enormous cake with a cherry on top, standing on a sandy shore."
+  },
+  "body": "Around 1830 a French pastry cook named Remontel said that Mexican army officers had looted his shop at Tacubaya, near Mexico City, and claimed 60,000 pesos. His became the best-known of many claims that French citizens made against Mexico, and in 1838 King Louis-Philippe's government demanded 600,000 pesos. When Mexico refused, French ships blockaded Veracruz and, on 27 November, bombarded the island fortress of San Juan de Ulúa, which surrendered the next day. In a counter-attack on 5 December, **General Antonio López de Santa Anna** lost his left leg to French cannon fire. With Britain mediating, Mexico agreed in March 1839 to pay the 600,000 pesos. In 1842 the leg was dug up and reburied in Mexico City with ceremony and speeches; in 1844, when Santa Anna fell from power, a mob dug it up again.",
+  "slides": [
+    {
+      "type": "comic",
+      "src": "panel-1.jpg",
+      "alt": "A French pastry shop with shelves of cakes. Two Mexican soldiers in blue coats and tall black shakos with red plumes help themselves; one bites into a cake and laughs.",
+      "caption": "Tacubaya, near Mexico City, around 1830. A French pastry cook, Monsieur Remontel, has visitors.",
+      "bubbles": [
+        {
+          "text": "These are excellent.",
+          "speaker": "A soldier",
+          "x": 26,
+          "y": 40,
+          "width": 32,
+          "tail": {
+            "x": 28.1,
+            "y": 54.6
+          }
+        },
+        {
+          "text": "Put it on our tab.",
+          "speaker": "A soldier",
+          "x": 72,
+          "y": 36,
+          "width": 32,
+          "tail": {
+            "x": 69.2,
+            "y": 55.7
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-2.jpg",
+      "alt": "The pastry cook, in a white jacket, apron and tall chef's hat, shouts, sweating, among squashed cakes on the floor, unrolling a very long bill.",
+      "caption": "He says army officers looted his shop. His bill: 60,000 pesos. The shop was reportedly worth under 1,000.",
+      "bubbles": [
+        {
+          "text": "Plus emotional damages!",
+          "speaker": "Monsieur Remontel",
+          "x": 72,
+          "y": 34,
+          "width": 40,
+          "tail": {
+            "x": 44.3,
+            "y": 51.5
+          },
+          "kind": "shout"
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-3.jpg",
+      "alt": "A grand Paris office in lilac and gilt. A bald official in a dark coat points at a row of papers on a long table.",
+      "caption": "Paris adds it to a pile of French claims. In 1838 King Louis-Philippe's government asks Mexico for 600,000 pesos.",
+      "bubbles": [
+        {
+          "text": "And the pastry. Don't forget the pastry.",
+          "speaker": "A French official",
+          "x": 40,
+          "y": 36,
+          "width": 40,
+          "tail": {
+            "x": 21.8,
+            "y": 51.9
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-4.jpg",
+      "alt": "Under an orange sky, a French warship fires at a stone island fortress flying the Mexican flag; explosions burst on its walls.",
+      "caption": "Mexico says no. France blockades Veracruz, and on 27 November 1838 its ships bombard the fortress of San Juan de Ulúa."
+    },
+    {
+      "type": "comic",
+      "src": "panel-5.jpg",
+      "alt": "Dawn in a street of Veracruz. General Santa Anna, in a white nightshirt and drawers, sprints away, while two French sailors with muskets shout behind him.",
+      "caption": "5 December, dawn. French sailors land to seize the generals. Santa Anna escapes in his nightclothes.",
+      "bubbles": [
+        {
+          "text": "My trousers! Somebody bring my trousers!",
+          "speaker": "Antonio López de Santa Anna",
+          "x": 26,
+          "y": 36,
+          "width": 40,
+          "tail": {
+            "x": 17.5,
+            "y": 52.9
+          },
+          "kind": "shout"
+        },
+        {
+          "text": "Was that the general?",
+          "speaker": "A French sailor",
+          "x": 72,
+          "y": 44,
+          "width": 34,
+          "tail": {
+            "x": 63.6,
+            "y": 62.2
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-6.jpg",
+      "alt": "Santa Anna, in a blue uniform with gold epaulettes and a bicorne hat, recoils with a shocked face as a cannonball whizzes in through the smoke.",
+      "caption": "He leads a counter-attack. A French cannon shot kills his horse and shatters his left leg."
+    },
+    {
+      "type": "comic",
+      "src": "panel-7.jpg",
+      "alt": "A ship's cabin with brass portholes. A one-armed French admiral in a bicorne beams, a British diplomat in a top hat smiles, and a glum Mexican official holds a quill over a cake on the table.",
+      "caption": "March 1839, aboard a British frigate. With Britain mediating, Mexico agrees to pay the 600,000 pesos.",
+      "bubbles": [
+        {
+          "text": "Splendid. Cake, anyone?",
+          "speaker": "A British diplomat",
+          "x": 48,
+          "y": 44,
+          "width": 30,
+          "tail": {
+            "x": 54.3,
+            "y": 61.1
+          }
+        },
+        {
+          "text": "In instalments.",
+          "speaker": "A Mexican minister",
+          "x": 82,
+          "y": 40,
+          "width": 34,
+          "tail": {
+            "x": 76.7,
+            "y": 55.8
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-8.jpg",
+      "alt": "Before a cathedral, two soldiers carry an urn on a bier while an orator in black raises his arm in full flow.",
+      "caption": "1842: the general's leg is dug up and reburied in Mexico City, with ceremony and speeches. In 1844 a mob digs it up.",
+      "bubbles": [
+        {
+          "text": "A leg that never once retreated!",
+          "speaker": "An orator",
+          "x": 72,
+          "y": 36,
+          "width": 40,
+          "tail": {
+            "x": 71.1,
+            "y": 55.7
+          },
+          "kind": "shout"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What was the 'Pastry War' really about?",
+      "options": [
+        "One stolen cake",
+        "600,000 pesos of French claims",
+        "Taxes on butter",
+        "A baking contest"
+      ],
+      "answer": 1,
+      "explanation": "France bundled many claims by its citizens, the pastry cook's 60,000 pesos among them, into a 600,000-peso demand, and backed it with warships."
+    }
+  ],
+  "tags": [
+    "mexico",
+    "france",
+    "santaanna",
+    "war",
+    "1830s",
+    "comic"
+  ],
+  "source": {
+    "label": "INEHRM: La Guerra de los Pasteles (in Spanish)",
+    "url": "https://www.inehrm.gob.mx/work/models/inehrm/Resource/4875/Guerra_de_Pasteles1.pdf"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-25"
+}

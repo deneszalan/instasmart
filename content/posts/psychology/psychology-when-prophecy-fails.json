@@ -1,0 +1,240 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "psychology-when-prophecy-fails",
+  "field": "psychology",
+  "title": "In 1954 a group waited for a flying saucer to save them from the end of the world",
+  "emoji": "🛸",
+  "cover": {
+    "src": "cover.jpg",
+    "alt": "In a 1950s living room at night, four people sit on a sofa staring hopefully at two wall clocks just before midnight, while a flying saucer glows in the window behind them."
+  },
+  "body": "In 1954 **Dorothy Martin**, of Oak Park near Chicago, said that beings from the planet Clarion were sending her messages through automatic writing: a great flood would come before dawn on 21 December, and a flying saucer would rescue the believers at midnight. The psychologists **Leon Festinger**, **Henry Riecken** and **Stanley Schachter** and their hired observers joined the group without saying who they were. When midnight passed and nothing came, a new message arrived at about 4.45 a.m.: the group's faith had saved the world. In their 1956 book *When Prophecy Fails*, which gives everyone false names, the authors reported that the believers then turned to the press to spread the word, and the case fed Festinger's theory of cognitive dissonance. A recent study of the researchers' own archives questions parts of their account, arguing that the observers influenced the group and that it was seeking converts before the failure.",
+  "slides": [
+    {
+      "type": "comic",
+      "src": "panel-1.jpg",
+      "alt": "A 1950s living room with spotted wallpaper and a floor lamp. Dorothy Martin, a grey-haired woman in a blue dress, writes on a pad at a table with her eyes closed while blue signal waves ripple above her.",
+      "caption": "Oak Park, near Chicago, 1954. Dorothy Martin takes dictation, by automatic writing, from the planet Clarion.",
+      "bubbles": [
+        {
+          "text": "They say a great flood is coming. Before dawn on 21 December.",
+          "speaker": "Dorothy Martin",
+          "x": 60,
+          "y": 34,
+          "width": 44,
+          "tail": {
+            "x": 40.1,
+            "y": 54.6
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-2.jpg",
+      "alt": "A flying saucer with glowing portholes hovers in a starry sky, beaming green light down on four people who gaze up at it.",
+      "caption": "The good news: a flying saucer will collect the faithful at midnight on the 20th. Everyone else can swim.",
+      "bubbles": [
+        {
+          "text": "Do we bring coats?",
+          "speaker": "A believer",
+          "x": 20,
+          "y": 60,
+          "width": 32,
+          "tail": {
+            "x": 40.3,
+            "y": 70.6
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-3.jpg",
+      "alt": "Three men in dark suits, one in a fedora, stand in the living room smiling politely, each holding a little notepad.",
+      "caption": "Three psychologists from Minnesota join the group, pretending to believe. They want to see what happens when it fails.",
+      "bubbles": [
+        {
+          "text": "We believe! Totally.",
+          "speaker": "A psychologist",
+          "x": 22,
+          "y": 36,
+          "width": 34,
+          "tail": {
+            "x": 21.4,
+            "y": 56.5
+          }
+        },
+        {
+          "text": "Just taking a few... spiritual notes.",
+          "speaker": "A psychologist",
+          "x": 62,
+          "y": 40,
+          "width": 36,
+          "tail": {
+            "x": 43.4,
+            "y": 56.5
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-4.jpg",
+      "alt": "Night. A bald man holding wire-cutters steps towards a startled younger man in a suit; a few metal buttons and clasps lie on the floor. The clock reads 11.35.",
+      "caption": "11.35 p.m. on the 20th. All metal must come off before the flight. A psychologist admits his trousers have a zip.",
+      "bubbles": [
+        {
+          "text": "Is a razor really necessary?",
+          "speaker": "A psychologist",
+          "x": 72,
+          "y": 36,
+          "width": 40,
+          "tail": {
+            "x": 54.3,
+            "y": 54.6
+          }
+        },
+        {
+          "text": "Hold still. It's nearly midnight.",
+          "speaker": "Dr Charles Laughead",
+          "x": 26,
+          "y": 45,
+          "width": 40,
+          "tail": {
+            "x": 32.5,
+            "y": 56.5
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-5.jpg",
+      "alt": "Four people sit in a row on a sofa, coats ready, smiling expectantly. Two wall clocks above them disagree: one says 11.59, the other 12.09.",
+      "caption": "Midnight approaches. There are two clocks, about ten minutes apart. The group goes with the slow one.",
+      "bubbles": [
+        {
+          "text": "And not a plan has gone astray!",
+          "speaker": "Dorothy Martin",
+          "x": 64,
+          "y": 40,
+          "width": 40,
+          "tail": {
+            "x": 53.1,
+            "y": 62.8
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-6.jpg",
+      "alt": "The same four on the sofa, now drooping and worried. The slow clock says 12.05. Nothing is in the window.",
+      "caption": "12.05 by the slow clock. No spaceman, no saucer. At 12.30 there's a knock: just some boys.",
+      "bubbles": [
+        {
+          "text": "Perhaps they're stuck in traffic.",
+          "speaker": "A believer",
+          "x": 72,
+          "y": 42,
+          "width": 40,
+          "tail": {
+            "x": 63.6,
+            "y": 62.8
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-7.jpg",
+      "alt": "Dorothy Martin writes at the table, eyes shut, grinning. A man throws his arms up in joy and a woman laughs. The clock reads 4.45.",
+      "caption": "4.45 a.m. A new message: the little group has spread so much light that God has saved the world.",
+      "bubbles": [
+        {
+          "text": "You're welcome, everybody.",
+          "speaker": "Dorothy Martin",
+          "x": 52,
+          "y": 40,
+          "width": 36,
+          "tail": {
+            "x": 56.8,
+            "y": 54.6
+          }
+        },
+        {
+          "text": "We did it!",
+          "speaker": "A believer",
+          "x": 85,
+          "y": 48,
+          "width": 26,
+          "tail": {
+            "x": 86.2,
+            "y": 58.4
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-8.jpg",
+      "alt": "Daylight. Dorothy Martin shouts into a black telephone. Behind a bathroom door left ajar, a man in a suit scribbles in a notepad.",
+      "caption": "Then they ring the newspapers. In the bathroom, the observers take turns writing it all down.",
+      "bubbles": [
+        {
+          "text": "It's the first time I've ever called them. I've never had anything to tell them before!",
+          "speaker": "Dorothy Martin",
+          "x": 34,
+          "y": 34,
+          "width": 56,
+          "tail": {
+            "x": 32.7,
+            "y": 54.6
+          }
+        },
+        {
+          "text": "She's calling the papers.",
+          "speaker": "An observer",
+          "x": 78,
+          "y": 46,
+          "width": 30,
+          "tail": {
+            "x": 73.2,
+            "y": 58.4
+          },
+          "kind": "thought"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "According to the 1956 book, how did the group explain the failed flood?",
+      "options": [
+        "They had the date wrong",
+        "Their faith had saved the world",
+        "The saucer broke down",
+        "The flood hit Clarion instead"
+      ],
+      "answer": 1,
+      "explanation": "At about 4.45 a.m. Dorothy Martin received a message that the group had spread so much light that God had saved the world from destruction."
+    }
+  ],
+  "tags": [
+    "cognitivedissonance",
+    "festinger",
+    "cults",
+    "ufo",
+    "1950s",
+    "comic"
+  ],
+  "source": {
+    "label": "Festinger, Riecken and Schachter, When Prophecy Fails (1956)",
+    "url": "https://archive.org/details/when.prophecy.fails"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-25"
+}
