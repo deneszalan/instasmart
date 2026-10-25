@@ -68,6 +68,12 @@
       "ratings": { "complexity": 5, "shock": 6 }
     },
     {
+      "type": "explore",
+      "lab": "eratosthenes-earth-circumference",
+      "prompt": "Line your angle up with the noon shadow of Alexandria’s stick, while the Sun stands overhead at Syene. How big is the Earth?",
+      "takeaway": "The shadow’s 7.2° is a fiftieth of a circle, so the Earth is 50 times the 5,000 stadia to Syene: 250,000 stadia, about 39,000 to 46,000 km by the stadion, against 40,008 km."
+    },
+    {
       "type": "text",
       "heading": "Known only second-hand",
       "text": "Eratosthenes’ own book, *On the Measure of the Earth*, is lost. His method survives only through later writers, above all a simplified version by Cleomedes, and the famous detail of sunlight shining straight down a well at Syene also reaches us only through such later accounts."

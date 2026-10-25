@@ -76,6 +76,12 @@
       "ratings": { "complexity": 6, "shock": 5 }
     },
     {
+      "type": "explore",
+      "lab": "taipei-101-damper",
+      "prompt": "The ball is badly tuned. Change its swing rhythm and its dampers until the tower’s worst sway is at least 30% less.",
+      "takeaway": "Tuned to the tower’s own rhythm, with a little damping, the ball swings out of step and cuts the worst sway by up to about 40%. Mistuned by a few per cent, it barely helps."
+    },
+    {
       "type": "stat",
       "value": "5.5 m",
       "label": "across: the damper’s ball, the largest in the world",

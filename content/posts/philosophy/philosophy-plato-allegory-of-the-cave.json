@@ -64,6 +64,12 @@
       "ratings": { "complexity": 5, "shock": 4 }
     },
     {
+      "type": "explore",
+      "lab": "plato-allegory-of-the-cave",
+      "prompt": "You can only see the wall. Name what casts each shadow, then turn round. Try carrying it nearer the fire too.",
+      "takeaway": "A shadow keeps only an outline: a ball, a can seen end-on and a cone point first all cast the same circle. Plato’s prisoners, who see nothing else, take the shadows for the things themselves."
+    },
+    {
       "type": "text",
       "heading": "Who tells the story?",
       "text": "Not Plato himself. The allegory is part of a dialogue narrated by Socrates: in Book VII of the *Republic* he asks Glaucon, Plato’s brother, to picture the cave. The passage runs from 514a to 520a in the standard numbering of Plato’s works."

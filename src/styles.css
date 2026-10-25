@@ -3736,8 +3736,9 @@ p {
 
 .lab__choice {
   display: inline-flex;
+  flex-wrap: wrap;
   padding: 3px;
-  border-radius: 999px;
+  border-radius: 18px;
   background: rgba(0, 0, 0, 0.22);
 }
 

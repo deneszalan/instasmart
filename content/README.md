@@ -226,7 +226,7 @@ An `explore` slide puts a small working experiment in the post: the reader drags
 - **`takeaway`** replaces the prompt once the goal is reached: what the reader has just discovered and why it works. Like every slide, it must be accurate; don't claim more than the lab shows.
 - **`heading`** is optional; it defaults to "Try it yourself".
 
-**Adding a lab** takes code: a component in `src/labs/<field>/<lab>.tsx` (built from `src/labs/kit.tsx`: a canvas `Stage`, `Range` sliders, `Choice` buttons, `Readouts` and `useGoal`), a line in `shared/labs.ts` and in `src/labs/index.ts`, German for its texts in `src/i18n/de.ts`, and a test of its maths in `test/labs.test.ts`. Keep the model honest and say on screen when it is simplified. A lab fits on a phone-sized 4:5 slide under its prompt and takes about a minute to explore.
+**Adding a lab** takes code: a component in `src/labs/<field>/<lab>.tsx` (built from `src/labs/kit.tsx`: a canvas `Stage`, `Range` sliders, `Choice` buttons, `Readouts`, `useGoal`, and `useAudio` and `pluck` for sound), a line in `shared/labs.ts` and in `src/labs/index.ts`, German for its texts in `src/i18n/de.ts`, and a test of its maths in `test/labs.test.ts`. Keep the model honest and say on screen when it is simplified. Each lab belongs to one post, and a test checks that every animation post has one. A lab fits on a phone-sized 4:5 slide under its prompt and takes about a minute to explore.
 
 ### Drawing SVG diagrams (great for LLMs)
 

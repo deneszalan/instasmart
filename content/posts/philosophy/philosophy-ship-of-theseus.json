@@ -64,6 +64,12 @@
       "ratings": { "complexity": 5, "shock": 5 }
     },
     {
+      "type": "explore",
+      "lab": "ship-of-theseus",
+      "prompt": "Replace all 38 planks, then rebuild a second ship from the old ones. Which one is the ship of Theseus?",
+      "takeaway": "The repaired ship keeps the form, the rebuilt one the matter: two good answers to one question. Plutarch told of the repairs; Hobbes added the ship rebuilt from the old planks."
+    },
+    {
       "type": "quote",
       "text": "They took away the old planks as they decayed, putting in new and strong timber in their places, insomuch that this ship became a standing example among the philosophers, for the logical question of things that grow.",
       "attribution": "Plutarch, Life of Theseus 23.1"

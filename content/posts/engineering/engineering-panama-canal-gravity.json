@@ -78,6 +78,12 @@
       "ratings": { "complexity": 5, "shock": 6 }
     },
     {
+      "type": "explore",
+      "lab": "panama-canal-gravity",
+      "prompt": "Bring the ship up from the sea to Gatun Lake. Open each valve to fill its chamber, then open the gates once the water is level.",
+      "takeaway": "Water from above runs down into each chamber and lifts the ship, 26 m in three steps, with no pumps. Each filling takes about 101 million litres of the lake’s water."
+    },
+    {
       "type": "text",
       "heading": "Tunnels big enough for a train",
       "text": "Three huge culverts run inside the lock walls, up to about 6.7 metres across. Side tunnels branch off under each chamber to openings in its floor, so the water rises evenly from below."

@@ -68,6 +68,12 @@
       "ratings": { "complexity": 3, "shock": 7 }
     },
     {
+      "type": "explore",
+      "lab": "a-napron-an-apron",
+      "prompt": "Tap each phrase to hop its n across the space. Which words lost an n, and which gained one?",
+      "takeaway": "Apron, adder and umpire lost their n to the article an; nickname and newt gained one from it. Said aloud, “a napron” and “an apron” sound the same."
+    },
+    {
       "type": "text",
       "heading": "Why the n slipped",
       "text": "The article came in two forms, *a* and *an*, so an n between two words could belong to either one. Writing may not have helped: in medieval script, words often sat so close together that scholars today can struggle to tell where one ends and the next begins."

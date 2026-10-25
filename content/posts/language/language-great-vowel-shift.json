@@ -74,6 +74,12 @@
       "ratings": { "complexity": 6, "shock": 6 }
     },
     {
+      "type": "explore",
+      "lab": "great-vowel-shift",
+      "prompt": "Slide from 1400 to 1900 and watch seven long vowels move up the mouth, while their spellings stay the same.",
+      "takeaway": "The high vowels of bite and out became glides; meet and boot rose into their place, and later mate, meat and boat rose a step. The spellings stayed put, so they still show the old vowels."
+    },
+    {
       "type": "text",
       "heading": "Two phases",
       "text": "By about 1500, /iː/ and /uː/ in bite and out had become diphthongs, and /eː/ and /oː/ in meet and boot had risen to /iː/ and /uː/. From around 1550, a second phase raised the vowels of mate, meat and boat."

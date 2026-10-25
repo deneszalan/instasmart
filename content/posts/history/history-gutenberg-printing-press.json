@@ -77,6 +77,12 @@
       "ratings": { "complexity": 4, "shock": 5 }
     },
     {
+      "type": "explore",
+      "lab": "gutenberg-printing-press",
+      "prompt": "Type a word, ink the type and print it. Then try type cut the way it reads, and print again.",
+      "takeaway": "The print is the type’s mirror image, so each letter is cut back to front and the word set in reverse. Type cut the way it reads prints backwards."
+    },
+    {
       "type": "flow",
       "heading": "The standard method, step by step",
       "steps": [

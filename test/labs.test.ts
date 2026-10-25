@@ -49,6 +49,27 @@ import { front, RF, spot } from '../src/labs/chemistry/paper-chromatography';
 import { coated, PER_DROP, SCUM } from '../src/labs/chemistry/soap-micelles';
 import { fallSpeed, water } from '../src/labs/earth/hailstones-grow-in-layers';
 import { distance, RATES, yearsAt } from '../src/labs/earth/plates-fingernail-speed';
+import { clothCost, output } from '../src/labs/economics/comparative-advantage';
+import { priceFactor } from '../src/labs/economics/hungary-hyperinflation';
+import { play, tournament, YEARS } from '../src/labs/economics/prisoners-dilemma';
+import { doublingYears, ruleOf72 } from '../src/labs/economics/rule-of-72';
+import { season } from '../src/labs/economics/tragedy-of-the-commons';
+import { peakAfterTop, push, stroke } from '../src/labs/engineering/four-stroke-engine';
+import { tick } from '../src/labs/engineering/fridge-moves-heat';
+import { fillStep, LIFT, STEP } from '../src/labs/engineering/panama-canal-gravity';
+import { worst } from '../src/labs/engineering/taipei-101-damper';
+import { equinox, leap } from '../src/labs/history/calendar-1752';
+import { circumference, SHADOW } from '../src/labs/history/eratosthenes-earth-circumference';
+import { forme } from '../src/labs/history/gutenberg-printing-press';
+import { noonsAboard } from '../src/labs/history/magellan-lost-a-day';
+import { hop, HOPS } from '../src/labs/language/a-napron-an-apron';
+import { STAGES } from '../src/labs/language/aleph-to-a-alphabet';
+import { placeIn, WORDS } from '../src/labs/language/great-vowel-shift';
+import { CHAIN, PAIRS } from '../src/labs/language/grimms-law';
+import { ruleHolds } from '../src/labs/philosophy/barber-paradox';
+import { SHADOWS, shadowScale } from '../src/labs/philosophy/plato-allegory-of-the-cave';
+import { PLANKS } from '../src/labs/philosophy/ship-of-theseus';
+import { catchUp, steps } from '../src/labs/philosophy/zeno-achilles-tortoise';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -378,5 +399,131 @@ describe('lab maths', () => {
     expect(yearsAt(100)).toBeCloseTo(2e8, -3);
     expect(RATES.nail).toBeCloseTo(3.5 * 12, 9);
     expect(distance(RATES.ridge * 2e8)).toBe('5,000 km');
+  });
+
+  it('Ricardo: England on cloth and Portugal on wine make 2.2 cloth and 2.125 wine', () => {
+    expect(output('england', 1).cloth + output('portugal', 0).cloth).toBeCloseTo(2.2, 9);
+    expect(output('england', 1).wine + output('portugal', 0).wine).toBeCloseTo(2.125, 9);
+    expect(output('england', 100 / 220).cloth).toBeCloseTo(1, 9);
+    expect([clothCost('england'), clothCost('portugal')]).toEqual([100 / 120, 1.125]);
+  });
+
+  it('hyperinflation: doubling every 15 hours makes prices 65,536 times higher in ten days', () => {
+    expect(priceFactor(240, 15)).toBe(65536);
+  });
+
+  it('prisoner’s dilemma: betraying always cuts your own years; tit for tat wins the tournament', () => {
+    for (const other of ['C', 'D']) expect(YEARS['D' + other][0]).toBeLessThan(YEARS['C' + other][0]);
+    expect(play('tft', [], Math.random)).toBe('C');
+    expect(play('tft', ['D'], Math.random)).toBe('D');
+    const total = tournament();
+    expect(Math.min(...Object.values(total))).toBe(total.tft);
+  });
+
+  it('rule of 72: 9.01 years at 8%, spot on near 7.8%, and 69.3 exact for continuous interest', () => {
+    expect(doublingYears(8)).toBeCloseTo(9.01, 2);
+    expect(Math.abs(ruleOf72(7.8) - doublingYears(7.8))).toBeLessThan(0.01);
+    expect(doublingYears(6) * 6).toBeLessThan(72);
+    expect(doublingYears(6, true) * 6).toBeCloseTo(69.3, 1);
+  });
+
+  it('commons: 12 cows leave the pasture green; 60 strip it bare', () => {
+    let a = 80, b = 80;
+    for (let k = 0; k < 100; k++) {
+      a = season(a, 12).grass;
+      b = season(b, 60).grass;
+    }
+    expect(a).toBeGreaterThan(70);
+    expect(b).toBeLessThan(1);
+  });
+
+  it('engine: four strokes in two turns; the spark comes earlier at higher speed', () => {
+    expect([0, 200, 400, 600].map(stroke)).toEqual(['intake', 'compression', 'power', 'exhaust']);
+    expect(push(peakAfterTop(2, 1000))).toBeCloseTo(1, 9);
+    expect(push(peakAfterTop(26, 3000))).toBeCloseTo(1, 9);
+    expect(push(peakAfterTop(2, 3000))).toBeLessThan(0.9);
+  });
+
+  it('fridge: with the door open in a closed kitchen, the kitchen only gets warmer', () => {
+    let s = { kitchen: 20, box: 4, on: true, moved: 0, used: 0 };
+    for (let k = 0; k < 2000; k++) s = tick(s, true, 0.05);
+    expect(s.kitchen).toBeGreaterThan(20);
+    expect(s.moved + s.used).toBeGreaterThan(s.moved);
+  });
+
+  it('locks: three steps of about 8.7 m lift a ship 26 m, and water only runs downhill', () => {
+    expect(STEP * 3).toBeCloseTo(LIFT, 9);
+    expect(fillStep(0, STEP, 0.1)).toBeGreaterThan(0);
+    expect(fillStep(STEP, STEP, 0.1)).toBe(STEP);
+  });
+
+  it('tuned damper: well tuned, it cuts the worst sway by about 40%; badly tuned, hardly at all', () => {
+    const none = worst(1, null);
+    expect(1 - worst(1, 0.015) / none).toBeCloseTo(0.4, 1);
+    expect(1 - worst(1.15, 0.01) / none).toBeLessThan(0.1);
+  });
+
+  it('calendar: 97 leap years in 400; the Julian equinox drifts to 11 March by 1582', () => {
+    let n = 0;
+    for (let y = 2000; y < 2400; y++) if (leap(y, true)) n++;
+    expect(n).toBe(97);
+    expect(Math.round(equinox(1582, false))).toBe(11);
+    expect(Math.round(equinox(2000, true))).toBe(21);
+  });
+
+  it('Eratosthenes: 7.2° and 5,000 stadia make 250,000 stadia', () => {
+    expect(circumference(SHADOW)).toBeCloseTo(250000, 6);
+  });
+
+  it('Gutenberg: the type is the page’s mirror image, letters in reverse order', () => {
+    expect(forme('MAINZ').join('')).toBe('ZNIAM');
+  });
+
+  it('Magellan: one noon fewer sailing west, one more sailing east', () => {
+    expect([noonsAboard(5, true), noonsAboard(5, false)]).toEqual([4, 6]);
+  });
+
+  it('a napron: hopping the n gives an apron, and back again', () => {
+    for (const h of HOPS) {
+      expect(hop(h.from)).toEqual(h.to);
+      expect(hop(h.to)).toEqual(h.from);
+    }
+  });
+
+  it('alphabet: five stages from about 1850 BC to today', () => {
+    expect(STAGES[0]).toContain('1850');
+    expect(STAGES).toHaveLength(5);
+  });
+
+  it('vowel shift: each word starts at its Middle English vowel and ends at today’s', () => {
+    const bite = WORDS.find((w) => w.word === 'bite')!, meet = WORDS.find((w) => w.word === 'meet')!;
+    expect(placeIn(bite, 1400).to).toBeNull();
+    expect(placeIn(bite, 1900).to).not.toBeNull();
+    expect(placeIn(meet, 1900).at).toEqual(placeIn(WORDS.find((w) => w.word === 'meat')!, 1900).at);
+  });
+
+  it('Grimm: every example follows a step in the chain', () => {
+    const steps = new Map(CHAIN.flat());
+    for (const p of PAIRS) expect(steps.get(p.from)).toBe(p.to);
+  });
+
+  it('barber: the rule fails whether he shaves himself or not', () => {
+    expect([ruleHolds(true), ruleHolds(false)]).toEqual([false, false]);
+  });
+
+  it('cave: three different things cast the same circle; nearer the fire, a bigger shadow', () => {
+    expect(new Set(SHADOWS.filter((s) => s.shadow === 'circle').map((s) => s.thing)).size).toBe(3);
+    expect(shadowScale(2, 10)).toBeGreaterThan(shadowScale(8, 10));
+  });
+
+  it('Theseus: 38 planks', () => {
+    expect(PLANKS).toBe(38);
+  });
+
+  it('Zeno: 10 + 1 + 0.1 + … seconds add up to 11.1 s', () => {
+    const t = steps(100, 10, 1, 30);
+    expect(t.slice(0, 3)).toEqual([10, 1, 0.1].map((x) => expect.closeTo(x, 9)));
+    expect(t.reduce((a, b) => a + b, 0)).toBeCloseTo(catchUp(100, 10, 1), 9);
+    expect(catchUp(100, 10, 1)).toBeCloseTo(11.11, 2);
   });
 });

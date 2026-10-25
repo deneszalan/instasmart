@@ -90,6 +90,12 @@
       "ratings": { "complexity": 6, "shock": 6 }
     },
     {
+      "type": "explore",
+      "lab": "zeno-achilles-tortoise",
+      "prompt": "Step through the chase: each time Achilles reaches where the tortoise was, it has crept on. Watch the total time.",
+      "takeaway": "The steps never end, but each takes a tenth as long as the last, so they add up to a finite time: 11.1 s at the start. Whatever the speeds, the sum is the head start ÷ the difference in speed."
+    },
+    {
       "type": "quote",
       "text": "In a race, the quickest runner can never overtake the slowest, since the pursuer must first reach the point whence the pursued started, so that the slower must always hold a lead.",
       "attribution": "Zeno’s argument, as told by Aristotle, Physics VI:9"

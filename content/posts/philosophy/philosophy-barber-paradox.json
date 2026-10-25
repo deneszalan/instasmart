@@ -76,6 +76,12 @@
       "ratings": { "complexity": 6, "shock": 6 }
     },
     {
+      "type": "explore",
+      "lab": "barber-paradox",
+      "prompt": "The barber shaves exactly those who don’t shave themselves. Put him on each side in turn; then try Russell’s set.",
+      "takeaway": "Both sides break the rule, so no such barber can exist, and nothing else is lost. Russell’s set fails the same way, but early set theory said it must exist, so its rules had to change."
+    },
+    {
       "type": "text",
       "heading": "Why every answer fails",
       "text": "If the barber shaves himself, he is one of those who shave themselves, and the barber shaves none of them. If he doesn’t, he is one of those the barber must shave. No barber can follow the rule, so the question has no answer."

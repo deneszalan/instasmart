@@ -68,6 +68,12 @@
       "ratings": { "complexity": 5, "shock": 6 }
     },
     {
+      "type": "explore",
+      "lab": "fridge-moves-heat",
+      "prompt": "Let the fridge cool down, then leave its door open in the closed kitchen. Does the kitchen get colder or warmer?",
+      "takeaway": "Warmer. A fridge only moves heat: everything it takes from inside comes out at the back, plus the electricity it uses. With the door open, that extra keeps warming the kitchen."
+    },
+    {
       "type": "text",
       "heading": "Why squeezing makes it hot",
       "text": "Compressing a gas raises its pressure and its temperature. Now hotter than the kitchen air, the gas sheds heat as it flows through the coils, cooling until it condenses back into a liquid."

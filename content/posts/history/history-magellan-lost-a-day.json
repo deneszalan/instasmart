@@ -74,6 +74,12 @@
       "ratings": { "complexity": 5, "shock": 6 }
     },
     {
+      "type": "explore",
+      "lab": "magellan-lost-a-day",
+      "prompt": "Sail round the world westward, like Magellan’s crew, and count the noons on board and in Spain. Then sail east.",
+      "takeaway": "Sailing west, with the Sun, makes each day aboard a little longer, so one lap gives one noon fewer than at home; sailing east gives one more. That is the day the crew lost."
+    },
+    {
       "type": "timeline",
       "heading": "The first voyage around the world",
       "events": [

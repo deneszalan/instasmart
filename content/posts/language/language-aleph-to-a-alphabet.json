@@ -87,6 +87,12 @@
       "ratings": { "complexity": 3, "shock": 6 }
     },
     {
+      "type": "explore",
+      "lab": "aleph-to-a-alphabet",
+      "prompt": "Slide through time and watch the ox-head sign become A. Then follow the house sign to B.",
+      "takeaway": "A is an ox head turned on its side by the Phoenicians and set upright later; B grew from a house sign. Each sign stood for the first sound of its word: alp, ox; bet, house."
+    },
+    {
       "type": "text",
       "heading": "Named for its first sound",
       "text": "The first alphabet’s signs probably stood for the first sound of the word for what they showed. The house sign, Semitic *bayt*, came to write b and became the ancestor of our B."

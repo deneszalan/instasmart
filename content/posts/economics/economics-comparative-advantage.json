@@ -88,6 +88,12 @@
       "ratings": { "complexity": 7, "shock": 7 }
     },
     {
+      "type": "explore",
+      "lab": "comparative-advantage",
+      "prompt": "England and Portugal each make one cloth and one wine. Move their workers between the two until the world gets more of both.",
+      "takeaway": "Let England make only cloth and Portugal only wine: 2.2 cloth and 2.125 wine. Portugal is better at both, but England gives up less wine for its cloth, so each does what costs it least."
+    },
+    {
       "type": "text",
       "heading": "Ricardo’s numbers",
       "text": "England needed the labour of 100 men for a year to make a set amount of cloth and 120 for wine. Portugal needed 90 and 80, so it was better at both."

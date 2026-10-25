@@ -82,6 +82,12 @@
       "ratings": { "complexity": 4, "shock": 8 }
     },
     {
+      "type": "explore",
+      "lab": "hungary-hyperinflation",
+      "prompt": "You’re paid at the start of the day. Slide time on and watch what your pay buys; compare Hungary with Zimbabwe and Germany.",
+      "takeaway": "Doubling every 15 hours, prices rose 65,536 times in ten days, so pay was spent at once. Hungary’s peak was the fastest: Zimbabwe’s prices took about a day to double, Germany’s 3.65 days."
+    },
+    {
       "type": "rank",
       "heading": "How many days prices took to double, at each hyperinflation’s peak",
       "items": [
