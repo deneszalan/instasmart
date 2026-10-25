@@ -1,0 +1,130 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-nightingale-rose-diagram",
+  "field": "math",
+  "title": "Florence Nightingale's diagram showed disease killed far more soldiers than wounds",
+  "emoji": "🌹",
+  "cover": {
+    "src": "cover.jpg",
+    "alt": "Florence Nightingale, in a dark dress and white cap, carries a glowing lantern through a dark hospital ward lined with beds."
+  },
+  "body": "In the Crimean War, far more British soldiers died of disease than of their wounds. **Florence Nightingale** reached the Barrack Hospital at Scutari in November 1854, and after a government Sanitary Commission cleaned out its sewers and improved its ventilation in spring 1855, the share of patients dying there fell from 42.7% to 2.2% within months. Back in London she worked through the army's figures with the statistician William Farr and in 1858 drew her \"rose\" diagram, in which the area of each wedge shows a month's death rate. That year she joined the Statistical Society, with Farr's backing.",
+  "slides": [
+    {
+      "type": "comic",
+      "src": "panel-1.jpg",
+      "alt": "A long arched corridor of the Barrack Hospital, crowded with sick men on low beds and on the floor, close together, in dim, dirty light.",
+      "caption": "Scutari, across the Bosphorus from Constantinople, 1854: the British army's Barrack Hospital is crammed with sick and wounded men."
+    },
+    {
+      "type": "comic",
+      "src": "panel-2.jpg",
+      "alt": "Before the great square barracks with corner towers, Florence Nightingale, carrying a bag, arrives with three nurses in grey and is met by a stiff army officer.",
+      "caption": "4 November 1854: Florence Nightingale, aged 34, arrives with 38 nurses.",
+      "bubbles": [
+        {
+          "text": "Where are the sick? Show me the wards.",
+          "speaker": "Florence Nightingale",
+          "x": 40,
+          "y": 42,
+          "width": 40,
+          "tail": {
+            "x": 56,
+            "y": 65
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-3.jpg",
+      "alt": "Night in the ward: Nightingale walks between the beds holding up a folding Turkish lantern that throws a warm circle of light.",
+      "caption": "The Times reports how at night “she may be observed alone, with a little lamp in her hand, making her solitary rounds.”"
+    },
+    {
+      "type": "comic",
+      "src": "panel-4.jpg",
+      "alt": "By candlelight Nightingale bends over a ledger of figures at a table.",
+      "caption": "Most deaths that winter are not from wounds but from disease. In January 1855 the army's hospitals lose 2,761 men to disease and 83 to wounds."
+    },
+    {
+      "type": "comic",
+      "src": "panel-5.jpg",
+      "alt": "In the corridor, workmen flush an open drain with water and limewash the walls with a long brush, while a commissioner in a top hat points at the drain.",
+      "caption": "6 March 1855: the government's Sanitary Commission arrives. Work starts on cleaning the sewers and letting fresh air into the wards.",
+      "bubbles": [
+        {
+          "text": "Flush every drain and open those windows.",
+          "speaker": "A commissioner",
+          "x": 30,
+          "y": 48,
+          "width": 42,
+          "tail": {
+            "x": 32,
+            "y": 69
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-6.jpg",
+      "alt": "The ward, clean and light, with men resting in their beds; Nightingale walks among them.",
+      "caption": "Deaths fall fast. In the Scutari hospitals, 42.7% of patients died in February 1855. In June it was 2.2%."
+    },
+    {
+      "type": "comic",
+      "src": "panel-7.jpg",
+      "alt": "In a London study lined with books, Nightingale and the grey-whiskered statistician William Farr sit over papers of figures.",
+      "caption": "Back in London, she works through the army's figures with the statistician William Farr.",
+      "bubbles": [
+        {
+          "text": "Most of these men died of diseases we could have prevented.",
+          "speaker": "Florence Nightingale",
+          "x": 34,
+          "y": 47,
+          "width": 50,
+          "tail": {
+            "x": 33,
+            "y": 70
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-8.jpg",
+      "alt": "Nightingale points at her diagram: two \"roses\" of coloured wedges, one per month. In the larger, right-hand rose, huge blue wedges of disease deaths dwarf the red wedges for wounds; the left-hand rose for the following year is much smaller.",
+      "caption": "1858: her “rose” diagram. Each wedge is a month, its area the death rate: blue for preventable disease, red for wounds, black for the rest."
+    },
+    {
+      "type": "quiz",
+      "question": "What did the big blue wedges in Nightingale's rose show?",
+      "options": [
+        "Deaths from battle wounds",
+        "Deaths from preventable disease",
+        "The number of nurses",
+        "Soldiers who recovered"
+      ],
+      "answer": 1,
+      "explanation": "Blue was deaths from preventable diseases such as cholera and typhus. They dwarfed the red wedges for wounds."
+    }
+  ],
+  "tags": [
+    "nightingale",
+    "statistics",
+    "crimeanwar",
+    "diagrams",
+    "victorian",
+    "comic"
+  ],
+  "source": {
+    "label": "Florence Nightingale, Notes on Matters Affecting the Health of the British Army (1858)",
+    "url": "https://archive.org/details/b20387118"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-25"
+}

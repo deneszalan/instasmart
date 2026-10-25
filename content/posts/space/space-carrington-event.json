@@ -1,0 +1,169 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-carrington-event",
+  "field": "space",
+  "title": "In 1859 a solar storm lit the sky so brightly that campers made breakfast at midnight",
+  "emoji": "☀️",
+  "cover": {
+    "src": "cover.jpg",
+    "alt": "In a dark wooden observatory a bearded astronomer looks at the Sun's image projected on a white screen, where a bright white flare bursts inside a sunspot group."
+  },
+  "body": "On 1 September 1859 the astronomer **Richard Carrington** saw a white-light flare burst out of a group of sunspots, the first solar flare ever recorded. About 17 hours later the most intense geomagnetic storm on record struck Earth. Aurorae were seen as far south as the Caribbean, and telegraph lines across Europe and North America sparked and failed; some operators even sent messages on the storm's own current. A storm like it today could damage satellites and power grids, which is why spacecraft now watch the Sun around the clock.",
+  "slides": [
+    {
+      "type": "comic",
+      "src": "panel-1.jpg",
+      "alt": "In a dark wooden observatory, Richard Carrington stands with a sheet of paper beside a brass telescope that projects the Sun's image, with a group of sunspots, onto a white screen.",
+      "caption": "Redhill, Surrey, 1 September 1859. Richard Carrington projects the Sun's image onto a screen and draws its sunspots."
+    },
+    {
+      "type": "comic",
+      "src": "panel-2.jpg",
+      "alt": "Close up on the projected Sun: two dazzling white beads of light burst out inside the dark sunspot group.",
+      "caption": "At 11:18, “two patches of intensely bright and white light broke out” inside a huge group of sunspots."
+    },
+    {
+      "type": "comic",
+      "src": "panel-3.jpg",
+      "alt": "Carrington hurries towards the bright open door of the observatory, pointing back; behind him the projected Sun still shows the bright spots.",
+      "caption": "He runs to call a witness. Back within 60 seconds, he finds it already fading. By 11:23 it is gone.",
+      "bubbles": [
+        {
+          "text": "Quick! Come and see this!",
+          "speaker": "Richard Carrington",
+          "x": 32,
+          "y": 48,
+          "width": 36,
+          "tail": {
+            "x": 22,
+            "y": 69
+          },
+          "kind": "shout"
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-4.jpg",
+      "alt": "In a green-walled room in Highgate, a grey-bearded man stands by his telescope, its projected image of the Sun showing the same bright spots.",
+      "caption": "In Highgate, Richard Hodgson sees it too: “a very brilliant star of light”.",
+      "bubbles": [
+        {
+          "text": "Look at that!",
+          "speaker": "Richard Hodgson",
+          "x": 30,
+          "y": 52,
+          "width": 28,
+          "tail": {
+            "x": 30,
+            "y": 74
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-5.jpg",
+      "alt": "Night in the Rocky Mountains: curtains of green and red aurora fill the sky over the peaks. Two bearded campers stand by a fire with a frying pan; their bedrolls lie on the ground.",
+      "caption": "About 17 hours later a vast magnetic storm strikes. High in the Rocky Mountains, campers wake to an aurora so bright they make breakfast.",
+      "bubbles": [
+        {
+          "text": "It's morning already! Get breakfast on!",
+          "speaker": "A camper",
+          "x": 30,
+          "y": 48,
+          "width": 40,
+          "tail": {
+            "x": 36,
+            "y": 68
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-6.jpg",
+      "alt": "In a telegraph office, sparks burst from a telegraph key as the operator recoils.",
+      "caption": "Telegraph lines go haywire. Operators get shocks, and sparks fly from their equipment.",
+      "bubbles": [
+        {
+          "text": "Ow!",
+          "speaker": "An operator",
+          "x": 60,
+          "y": 50,
+          "width": 26,
+          "tail": {
+            "x": 66,
+            "y": 70
+          },
+          "kind": "shout"
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-7.jpg",
+      "alt": "Two telegraph offices side by side, Boston and Portland, joined by a wire. In each, an operator taps a key, his batteries disconnected on the shelf.",
+      "caption": "2 September, morning: on the Boston–Portland line, the operators unhook their batteries and work for over two hours on the storm's current alone.",
+      "bubbles": [
+        {
+          "text": "Please cut off your battery entirely from the line for fifteen minutes.",
+          "speaker": "Boston operator",
+          "x": 26,
+          "y": 40,
+          "width": 46,
+          "tail": {
+            "x": 22,
+            "y": 74
+          }
+        },
+        {
+          "text": "Better than with our batteries on.",
+          "speaker": "Portland operator",
+          "x": 74,
+          "y": 57,
+          "width": 44,
+          "tail": {
+            "x": 82,
+            "y": 74
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-8.jpg",
+      "alt": "In space, a spacecraft with gold foil and blue solar panels watches the Sun, which throws out a glowing cloud of gas; Earth hangs small in the distance.",
+      "caption": "Carrington would not link his flare to the storm. Today we know such eruptions can hurl clouds of solar gas at Earth, so spacecraft keep watch."
+    },
+    {
+      "type": "quiz",
+      "question": "How could Boston and Portland operators send messages with their batteries off?",
+      "options": [
+        "The batteries had exploded",
+        "The storm made currents in the wires",
+        "Lightning charged the lines",
+        "They used sunlight"
+      ],
+      "answer": 1,
+      "explanation": "The geomagnetic storm induced electric currents in the long telegraph wires, strong enough to carry their signals."
+    }
+  ],
+  "tags": [
+    "sun",
+    "solarflare",
+    "aurora",
+    "telegraph",
+    "spaceweather",
+    "comic"
+  ],
+  "source": {
+    "label": "R. C. Carrington, Description of a Singular Appearance seen in the Sun (MNRAS, 1859)",
+    "url": "https://doi.org/10.1093/mnras/20.1.13"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-25"
+}
