@@ -269,6 +269,127 @@
             "properties": {
               "type": {
                 "type": "string",
+                "const": "comic"
+              },
+              "src": {
+                "type": "string",
+                "description": "The panel art: a 4:5 picture (1080 × 1350) with no words in it. The app letters the caption and bubbles on top."
+              },
+              "alt": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300,
+                "description": "What the panel shows, for screen readers. The caption and bubbles are read out after it."
+              },
+              "caption": {
+                "description": "The narrator's box: where and when, and the facts. Dates and numbers belong here, not in a bubble.",
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 150
+              },
+              "captionAt": {
+                "description": "Where the caption box sits. Default top.",
+                "type": "string",
+                "enum": [
+                  "top",
+                  "bottom"
+                ]
+              },
+              "bubbles": {
+                "description": "Speech, thought or shout bubbles, in reading order (left to right, top to bottom).",
+                "maxItems": 3,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 110,
+                      "description": "The words, lettered in capitals. Real people only say what the record says they said, wrote or did."
+                    },
+                    "speaker": {
+                      "description": "Who speaks, read out by screen readers, e.g. \"John Snow\".",
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 40
+                    },
+                    "x": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 100,
+                      "description": "Centre of the bubble across the panel, 0 (left edge) to 100 (right edge)."
+                    },
+                    "y": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 100,
+                      "description": "Centre of the bubble down the panel, 0 (top) to 100 (bottom)."
+                    },
+                    "width": {
+                      "description": "Bubble width in percent of the panel's width. Default 46.",
+                      "type": "number",
+                      "minimum": 24,
+                      "maximum": 90
+                    },
+                    "tail": {
+                      "description": "Where the tail points: the speaker's mouth (or head, for a thought), in the same units. Leave it out for a voice from off the panel.",
+                      "type": "object",
+                      "properties": {
+                        "x": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 100
+                        },
+                        "y": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 100
+                        }
+                      },
+                      "required": [
+                        "x",
+                        "y"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "kind": {
+                      "description": "Default \"speech\". \"thought\" is a cloud with bubbles for a tail; \"shout\" a jagged burst.",
+                      "type": "string",
+                      "enum": [
+                        "speech",
+                        "thought",
+                        "shout"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "text",
+                    "x",
+                    "y"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "credit": {
+                "description": "Who drew the art and its licence, if not the post's author.",
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120
+              }
+            },
+            "required": [
+              "type",
+              "src",
+              "alt"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
                 "const": "stat"
               },
               "value": {

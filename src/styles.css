@@ -966,6 +966,153 @@ p {
   opacity: 0.8;
 }
 
+/* Comic panels: the art with the caption box and bubbles lettered on top. Sizes come from shared/comic.ts as
+   unitless numbers (--font, --pad-x, …) in percent of the panel's width. */
+@font-face {
+  font-family: 'Patrick Hand';
+  src: url('./assets/fonts/PatrickHand.woff2') format('woff2');
+  font-display: swap;
+}
+
+.slide--comic {
+  padding: 0;
+  color: #141414;
+  background:
+    radial-gradient(circle, rgba(20, 20, 20, 0.08) 1px, transparent 1.5px) 0 0 / 7px 7px,
+    #f3ead6;
+}
+
+.comic {
+  position: absolute;
+  inset: 2% 2.5%;
+  margin: 0;
+  overflow: hidden;
+  border: 3px solid #141414;
+  background: #e8dfcb;
+  container-type: inline-size;
+}
+
+.comic__art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comic__shapes,
+.comic__words {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+}
+
+/* One outline round every bubble and its tail together, so each tail flows out of its bubble. */
+.comic__shapes {
+  filter: drop-shadow(0.4cqw 0 0 #141414) drop-shadow(-0.4cqw 0 0 #141414) drop-shadow(0 0.4cqw 0 #141414) drop-shadow(0 -0.4cqw 0 #141414);
+}
+
+.comic__tails {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  fill: #fff;
+}
+
+.comic__bubble,
+.comic__caption {
+  margin: 0;
+  font-family: 'Patrick Hand', 'Comic Sans MS', 'Chalkboard SE', cursive;
+  font-size: calc(var(--font) * 1cqw);
+  font-weight: 400;
+  line-height: var(--lh);
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+  color: #141414;
+}
+
+.comic__bubble {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: calc(var(--pad-y) * 1cqw) calc(var(--pad-x) * 1cqw);
+  text-align: center;
+}
+
+.comic__shapes .comic__bubble {
+  color: transparent;
+}
+
+.comic__shapes .comic__bubble::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #fff;
+  border-radius: 1.8em;
+}
+
+.comic__shapes .comic__bubble--thought::before {
+  inset: -14% -7%;
+  border-radius: 50%;
+}
+
+.comic__shapes .comic__bubble--shout::before {
+  inset: -18% -9%;
+  border-radius: 0;
+  clip-path: polygon(50.0% 0.0%, 60.6% 10.4%, 75.0% 6.7%, 79.0% 21.0%, 93.3% 25.0%, 89.6% 39.4%, 100.0% 50.0%, 89.6% 60.6%, 93.3% 75.0%, 79.0% 79.0%, 75.0% 93.3%, 60.6% 89.6%, 50.0% 100.0%, 39.4% 89.6%, 25.0% 93.3%, 21.0% 79.0%, 6.7% 75.0%, 10.4% 60.6%, 0.0% 50.0%, 10.4% 39.4%, 6.7% 25.0%, 21.0% 21.0%, 25.0% 6.7%, 39.4% 10.4%);
+}
+
+.comic__words .comic__bubble--shout {
+  letter-spacing: 0.03em;
+}
+
+.comic__caption {
+  position: absolute;
+  left: calc(var(--cap-inset) * 1cqw);
+  max-width: calc(var(--cap-width) * 1cqw);
+  padding: calc(var(--cap-pad-y) * 1cqw) calc(var(--cap-pad-x) * 1cqw);
+  border: 0.45cqw solid #141414;
+  background: #ffe27a;
+  text-align: left;
+}
+
+.comic__caption--top {
+  top: calc(var(--cap-inset) * 1cqw);
+}
+
+.comic__caption--bottom {
+  bottom: calc(var(--cap-inset) * 1cqw);
+}
+
+.comic__credit {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0.9cqw 1.8cqw;
+  border-top-right-radius: 1.6cqw;
+  background: rgba(243, 234, 214, 0.88);
+  font-size: 2.5cqw;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+
+.comic__next {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 1.3cqw 2.6cqw 1.1cqw 3cqw;
+  border-top-left-radius: 2cqw;
+  background: #141414;
+  color: #fff;
+  font-family: 'Patrick Hand', 'Comic Sans MS', 'Chalkboard SE', cursive;
+  font-size: calc(var(--font) * 0.95cqw);
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 /* Detail slides start below the carousel badge */
 .slide--detail {
   padding-top: 56px;
@@ -4268,4 +4415,14 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   vertical-align: -1px;
+}
+
+/* Read out by screen readers, not shown */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }

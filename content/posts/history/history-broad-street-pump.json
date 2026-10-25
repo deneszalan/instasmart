@@ -1,0 +1,100 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-broad-street-pump",
+  "field": "history",
+  "title": "In 1854 a doctor traced a deadly cholera outbreak to one water pump",
+  "emoji": "🚰",
+  "cover": {
+    "src": "cover.jpg",
+    "alt": "A cast-iron street pump at dusk on a London street of brick houses, with a man in a black frock coat holding a sheet of paper beside it."
+  },
+  "body": "In ten days in 1854, cholera killed more than 500 people within a few streets of Broad Street in Soho, London. Most doctors blamed miasma, a poison in foul air, but **John Snow** tracked the deaths to the water of one street pump, and on his evidence the parish took off its handle on 8 September, though the outbreak was already falling away. The General Board of Health rejected his explanation. Then the curate **Henry Whitehead**, who had expected to disprove Snow, traced the probable first case to a house whose cesspool lay beside the well. Snow’s map of the deaths, drawn that December, became a classic of epidemiology.",
+  "slides": [
+    {
+      "type": "comic",
+      "src": "panel-1.jpg",
+      "alt": "A busy street of brick terraces. A woman works the long handle of a cast-iron street pump while water runs into a pail; a girl waits with a jug, a woman in a bonnet brings another, and a man carries two full pails away.",
+      "caption": "Soho, London, the summer of 1854. Families on Broad Street draw their drinking water from the street pump."
+    },
+    {
+      "type": "comic",
+      "src": "panel-2.jpg",
+      "alt": "Night. A handcart carries two coffins down the street. In a doorway hung with black crepe a woman in a white cap looks out, frightened, at a grey-whiskered doctor in a top hat who holds a handkerchief to his face.",
+      "caption": "From the night of 31 August, cholera tears through the streets. In ten days, over 500 people die within 250 yards.",
+      "bubbles": [
+        { "text": "What is killing them all?", "speaker": "A neighbour", "x": 22, "y": 31, "width": 36, "tail": { "x": 23, "y": 55 } },
+        { "text": "It is miasma, madam: a poison in the foul air.", "speaker": "A doctor", "x": 64, "y": 33, "width": 42, "tail": { "x": 66, "y": 53 } }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-3.jpg",
+      "alt": "John Snow, a clean-shaven man in a black frock coat, stands in the foreground holding a list. Behind him is the pump, a half-empty street and doors hung with black crepe.",
+      "caption": "Dr John Snow has argued since 1849 that cholera spreads through dirty water. He takes a list of the dead and goes to the spot.",
+      "bubbles": [
+        { "text": "Nearly all the deaths are within a short distance of the pump.", "speaker": "John Snow", "x": 66, "y": 32, "width": 48, "tail": { "x": 38, "y": 45 } }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-4.jpg",
+      "alt": "Inside a brick brewery with a great vat and barrels, Snow talks to Mr Huggins, an older man with grey side-whiskers in a brown coat. Behind them two workmen in aprons drink from tankards.",
+      "caption": "Near the pump is a brewery with above seventy workmen. None is on the list of the dead, so Snow calls on its owner.",
+      "bubbles": [
+        { "text": "Have your men suffered from the cholera?", "speaker": "John Snow", "x": 22, "y": 30, "width": 36, "tail": { "x": 34, "y": 52 } },
+        { "text": "None has had it badly, sir. They have their malt liquor and never take water from the pump.", "speaker": "Mr Huggins", "x": 70, "y": 34, "width": 54, "tail": { "x": 69, "y": 52 } }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-5.jpg",
+      "alt": "In a parlour with green wallpaper, an elderly widow in black and a white cap pours water from a large green bottle into a glass. Through the window are green hills and trees.",
+      "caption": "In Hampstead, where there is no cholera, a widow has a bottle of Broad Street water brought by cart every day. She prefers it.",
+      "bubbles": [
+        { "text": "She drank it on the Thursday and the Friday. She died on the Saturday.", "speaker": "Her son", "x": 26, "y": 81, "width": 46, "tail": { "x": 1, "y": 90 } }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-6.jpg",
+      "alt": "A panelled room lit by gas. Four stern gentlemen sit behind a table covered in green baize and papers. Snow stands at the end of the table with his papers, his other hand held out to them.",
+      "caption": "Thursday 7 September, evening. Snow puts the facts to the Board of Guardians of St James’s parish.",
+      "bubbles": [
+        { "text": "There is no outbreak here except among those who drink from that pump-well.", "speaker": "John Snow", "x": 30, "y": 37, "width": 50, "tail": { "x": 29, "y": 56 } }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-7.jpg",
+      "alt": "Daylight on Broad Street. A workman in an apron and cap holds the pump handle he has just taken off; the pump stands without it. A parish officer in a top hat holds an order, and three neighbours watch.",
+      "caption": "Friday 8 September: the handle comes off. But new fatal cases had already fallen, from 143 on 1 September to 12.",
+      "bubbles": [
+        { "text": "Where will we get our water now?", "speaker": "A boy", "x": 34, "y": 33, "width": 36, "tail": { "x": 44, "y": 53 } }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-8.jpg",
+      "alt": "A cutaway below the street. Under the front area of No. 40 lies a brick cesspool of foul water; its drain leaks through the soil into the brick shaft of the pump’s well beside it. The curate Henry Whitehead stands on the pavement above, pointing down.",
+      "caption": "Months later, the curate Henry Whitehead traced the probable first case.",
+      "captionAt": "bottom",
+      "bubbles": [
+        { "text": "A baby at No. 40 fell ill on 28 August. Some of the water from her nappies went into this cesspool.", "speaker": "Henry Whitehead", "x": 40, "y": 23, "width": 56, "tail": { "x": 81, "y": 14 } }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why did the brewery’s workmen escape the cholera?",
+      "options": ["They drank beer, not pump water", "Brewing fumes cleaned the air", "They lived outside Soho", "They had caught it before"],
+      "answer": 0,
+      "explanation": "The men had an allowance of malt liquor and never drank from the pump. Their luck pointed to the water, not the air."
+    }
+  ],
+  "tags": ["cholera", "epidemiology", "london", "johnsnow", "victorian", "comic"],
+  "source": {
+    "label": "John Snow, On the Mode of Communication of Cholera (1855)",
+    "url": "https://www.gutenberg.org/ebooks/72894"
+  },
+  "author": { "name": "Claude", "kind": "ai" },
+  "createdAt": "2026-10-25"
+}

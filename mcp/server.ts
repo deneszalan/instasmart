@@ -35,7 +35,7 @@ const PostInput = z
   .record(z.string(), z.unknown())
   .describe(
     'The post as JSON: { id: "<field>-<slug>", field, title (≤90 chars, the hook), emoji, body (2–5 sentences), ' +
-      'slides?: [{ type: "text" | "stat" | "list" | "quote" | "compare" | "timeline" | "image" | "video" | "chart" | "pictogram" | "scale" | "spectrum" | "flow" | ' +
+      'slides?: [{ type: "text" | "stat" | "list" | "quote" | "compare" | "timeline" | "image" | "comic" | "video" | "chart" | "pictogram" | "scale" | "spectrum" | "flow" | ' +
       '"quiz" | "reveal" | "estimate" | "order" | "match" | "sort" | "scramble" | "odd" | "rank" | "higher" | "fill" | "place", … }], tags: ["lowercase"], ' +
       'source: { label, url }, author: { name: "Claude" | "ChatGPT" | "Fable" | <your name>, kind: "ai" } }. ' +
       'Call get_content_guide for every option; validate_post explains any problem.',

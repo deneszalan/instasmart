@@ -19,7 +19,7 @@ function resolve(post: KnowledgeCard): KnowledgeCard {
     ...post,
     cover: post.cover && { ...post.cover, src: resolveImage(post.id, post.cover.src) },
     slides: post.slides?.map((s) =>
-      s.type === 'image'
+      s.type === 'image' || s.type === 'comic'
         ? { ...s, src: resolveImage(post.id, s.src) }
         : s.type === 'video'
           ? { ...s, src: resolveImage(post.id, s.src), poster: resolveImage(post.id, s.poster) }

@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import { FIELD_IDS } from './fields.ts';
 import { LAB_IDS } from './labs.ts';
+import { bubbleBox, bubbleLines, captionBox, COMIC, COVERED, overlaps } from './comic.ts';
 
 /**
  * The content format for every post in content/posts/. Shared by the app,
@@ -74,6 +75,64 @@ export const ImageSlide = z
     credit: text(120).optional().describe('Photographer / licence, e.g. "NASA · Public domain".'),
   })
   .strict();
+
+const percent = z.number().min(0).max(100);
+
+export const ComicBubble = z
+  .object({
+    text: text(110).describe('The words, lettered in capitals. Real people only say what the record says they said, wrote or did.'),
+    speaker: text(40).optional().describe('Who speaks, read out by screen readers, e.g. "John Snow".'),
+    x: percent.describe('Centre of the bubble across the panel, 0 (left edge) to 100 (right edge).'),
+    y: percent.describe('Centre of the bubble down the panel, 0 (top) to 100 (bottom).'),
+    width: z.number().min(24).max(90).optional().describe(`Bubble width in percent of the panel's width. Default ${COMIC.bubbleWidth}.`),
+    tail: z
+      .object({ x: percent, y: percent })
+      .strict()
+      .optional()
+      .describe("Where the tail points: the speaker's mouth (or head, for a thought), in the same units. Leave it out for a voice from off the panel."),
+    kind: z.enum(['speech', 'thought', 'shout']).optional().describe('Default "speech". "thought" is a cloud with bubbles for a tail; "shout" a jagged burst.'),
+  })
+  .strict();
+
+export const ComicSlide = z
+  .object({
+    type: z.literal('comic'),
+    src: ImageSrc.describe('The panel art: a 4:5 picture (1080 × 1350) with no words in it. The app letters the caption and bubbles on top.'),
+    alt: text(300).describe('What the panel shows, for screen readers. The caption and bubbles are read out after it.'),
+    caption: text(150).optional().describe("The narrator's box: where and when, and the facts. Dates and numbers belong here, not in a bubble."),
+    captionAt: z.enum(['top', 'bottom']).optional().describe('Where the caption box sits. Default top.'),
+    bubbles: z.array(ComicBubble).max(3).optional().describe('Speech, thought or shout bubbles, in reading order (left to right, top to bottom).'),
+    credit: text(120).optional().describe('Who drew the art and its licence, if not the post\'s author.'),
+  })
+  .strict()
+  .superRefine((slide, ctx) => {
+    const caption = slide.caption && captionBox(slide.caption, slide.captionAt ?? 'top');
+    const boxes = (slide.bubbles ?? []).map((b, i) => {
+      const width = b.width ?? COMIC.bubbleWidth;
+      const box = bubbleBox(b.text, b.x, b.y, width);
+      const path = ['bubbles', i];
+      if (bubbleLines(b.text, width) > COMIC.maxLines) {
+        ctx.addIssue({ code: 'custom', path: [...path, 'text'], message: `takes more than ${COMIC.maxLines} lines at width ${width}: shorten it or widen the bubble` });
+      }
+      if (box.left < 1 || box.right > 99 || box.top < 1 || box.bottom > 99) {
+        ctx.addIssue({ code: 'custom', path, message: 'runs off the panel: move it in from the edge, narrow it or shorten the text' });
+      }
+      if (overlaps(box, COVERED.counter)) {
+        ctx.addIssue({ code: 'custom', path, message: 'sits under the slide counter in the top right corner: move it down or left' });
+      } else if (overlaps(box, COVERED.next)) {
+        ctx.addIssue({ code: 'custom', path, message: 'runs under the "Read on" tab in the bottom right corner: move it up or left' });
+      }
+      if (caption && overlaps(box, caption)) {
+        ctx.addIssue({ code: 'custom', path, message: 'covers the caption box: move it, or put the caption at the other end' });
+      }
+      return box;
+    });
+    boxes.forEach((a, i) =>
+      boxes.slice(i + 1).forEach((b, j) => {
+        if (overlaps(a, b)) ctx.addIssue({ code: 'custom', path: ['bubbles', i + 1 + j], message: `overlaps bubble ${i + 1}` });
+      }),
+    );
+  });
 
 export const StatSlide = z
   .object({
@@ -509,6 +568,7 @@ export const Slide = z.discriminatedUnion('type', [
   ExploreSlide,
   TextSlide,
   ImageSlide,
+  ComicSlide,
   StatSlide,
   ListSlide,
   QuoteSlide,
@@ -593,7 +653,7 @@ export type Source = z.infer<typeof Source>;
 export function localMedia(post: Post): string[] {
   const srcs = [
     post.cover?.src,
-    ...(post.slides ?? []).flatMap((s) => (s.type === 'image' ? [s.src] : s.type === 'video' ? [s.src, s.poster] : [])),
+    ...(post.slides ?? []).flatMap((s) => (s.type === 'image' || s.type === 'comic' ? [s.src] : s.type === 'video' ? [s.src, s.poster] : [])),
   ];
   return [...new Set(srcs.filter((s): s is string => !!s && !s.startsWith('https://')))];
 }

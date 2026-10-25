@@ -135,6 +135,15 @@ export function LearnMore({ post, onClose }: { post: Post; onClose: () => void }
                       <figcaption>{[s.caption, s.credit && `📷 ${s.credit}`].filter(Boolean).join(' · ')}</figcaption>
                     )}
                   </figure>
+                ) : s.type === 'comic' ? (
+                  <figure className="learn__figure">
+                    <img src={s.src} alt={s.alt} loading="lazy" />
+                    {(s.caption || s.bubbles) && (
+                      <figcaption>
+                        {[s.caption, ...(s.bubbles ?? []).map((b) => (b.speaker ? t('{name}: “{text}”', { name: b.speaker, text: b.text }) : t('“{text}”', { text: b.text })))].filter(Boolean).join(' ')}
+                      </figcaption>
+                    )}
+                  </figure>
                 ) : (
                   <span>{slideDetail(s)}</span>
                 )}
