@@ -5,7 +5,7 @@ import { FIELDS } from '../data/fields';
 import { LIBRARY } from '../data/library';
 import { authorGroup } from '../lib/authors';
 import { firstInteractive } from '../lib/interactive';
-import { firstAnimation, firstFootage, firstVisual } from '../lib/visual';
+import { firstAnimation, firstComic, firstFootage, firstVisual } from '../lib/visual';
 import { createRng, searchCards, shuffle } from '../lib/feed';
 import { Tile } from '../components/Tile';
 import { WRITERS, WriterChips } from '../components/WriterChips';
@@ -26,6 +26,7 @@ const KINDS = {
   visual: LIBRARY.some((c) => firstVisual(c) >= 0),
   video: LIBRARY.some((c) => firstFootage(c) >= 0),
   animation: LIBRARY.some((c) => firstAnimation(c) >= 0),
+  comic: LIBRARY.some((c) => firstComic(c) >= 0),
 };
 
 /** Every 10 tiles, two are tall — the mosaic look of an explore grid. */
@@ -37,6 +38,7 @@ export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExplorePro
   const [visualOnly, setVisualOnly] = useState(false);
   const [videoOnly, setVideoOnly] = useState(false);
   const [animationOnly, setAnimationOnly] = useState(false);
+  const [comicOnly, setComicOnly] = useState(false);
   // A per-visit shuffle so the grid isn't grouped by field.
   const [order] = useState(() => shuffle(LIBRARY, createRng(Date.now())));
 
@@ -48,10 +50,11 @@ export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExplorePro
         (!interactiveOnly || firstInteractive(c) >= 0) &&
         (!visualOnly || firstVisual(c) >= 0) &&
         (!videoOnly || firstFootage(c) >= 0) &&
-        (!animationOnly || firstAnimation(c) >= 0),
+        (!animationOnly || firstAnimation(c) >= 0) &&
+        (!comicOnly || firstComic(c) >= 0),
     );
     return searchCards(filtered, query);
-  }, [order, field, author, query, interactiveOnly, visualOnly, videoOnly, animationOnly]);
+  }, [order, field, author, query, interactiveOnly, visualOnly, videoOnly, animationOnly, comicOnly]);
 
   const authorLabel = WRITERS.find((w) => w.id === author)?.label;
   const fieldName = FIELDS.find((f) => f.id === field)?.name;
@@ -96,6 +99,11 @@ export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExplorePro
           {KINDS.animation && (
             <button aria-pressed={animationOnly} className="chip" onClick={() => setAnimationOnly((v) => !v)}>
               ✨ {t('Animation')}
+            </button>
+          )}
+          {KINDS.comic && (
+            <button aria-pressed={comicOnly} className="chip" onClick={() => setComicOnly((v) => !v)}>
+              💬 {t('Comics')}
             </button>
           )}
           {FIELDS.map((f) => (

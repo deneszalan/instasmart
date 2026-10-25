@@ -38,6 +38,8 @@ export function Tile({ post, onOpen, tall }: TileProps) {
       </span>
       {card.slides?.some((sl) => sl.type === 'video') ? (
         <span className="tile__video" aria-hidden="true" />
+      ) : card.slides?.some((sl) => sl.type === 'comic') ? (
+        <span className="tile__comic" aria-hidden="true" />
       ) : card.slides?.length ? (
         <span className="tile__multi" aria-hidden="true" />
       ) : null}

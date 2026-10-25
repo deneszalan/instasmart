@@ -11,6 +11,7 @@ export const de: Record<string, string> = {
   'All sorted! ': 'Alles richtig sortiert! ',
   'and round it goes again': 'und alles beginnt von vorn',
   'Animation': 'Animation',
+  'Comics': 'Comics',
   'Answers': 'Antworten',
   'Anyone': 'Alle',
   'Auto': 'Auto',
