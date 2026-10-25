@@ -19,12 +19,12 @@
         {
           "text": "What a stench!",
           "speaker": "A boatman",
-          "x": 22,
-          "y": 31,
+          "x": 22.0,
+          "y": 29.0,
           "width": 30,
           "tail": {
-            "x": 34,
-            "y": 41
+            "x": 28.0,
+            "y": 36.3
           }
         }
       ]
@@ -50,12 +50,12 @@
         {
           "text": "A Stygian pool, reeking with ineffable and intolerable horrors.",
           "speaker": "Benjamin Disraeli",
-          "x": 66,
-          "y": 37,
+          "x": 37.5,
+          "y": 39.5,
           "width": 48,
           "tail": {
-            "x": 51,
-            "y": 63
+            "x": 42.3,
+            "y": 54.0
           }
         }
       ]
@@ -73,8 +73,8 @@
           "y": 79,
           "width": 46,
           "tail": {
-            "x": 36,
-            "y": 67
+            "x": 35.9,
+            "y": 71.2
           }
         }
       ]

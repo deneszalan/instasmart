@@ -29,8 +29,8 @@
           "y": 42,
           "width": 40,
           "tail": {
-            "x": 56,
-            "y": 65
+            "x": 47.4,
+            "y": 57.8
           }
         }
       ]
@@ -56,12 +56,12 @@
         {
           "text": "Flush every drain and open those windows.",
           "speaker": "A commissioner",
-          "x": 30,
-          "y": 48,
+          "x": 30.0,
+          "y": 45.0,
           "width": 42,
           "tail": {
-            "x": 32,
-            "y": 69
+            "x": 29.1,
+            "y": 55.1
           }
         }
       ]
@@ -85,8 +85,8 @@
           "y": 47,
           "width": 50,
           "tail": {
-            "x": 33,
-            "y": 70
+            "x": 31.2,
+            "y": 61.3
           }
         }
       ]

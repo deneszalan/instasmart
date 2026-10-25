@@ -23,8 +23,8 @@
           "y": 34,
           "width": 44,
           "tail": {
-            "x": 40.1,
-            "y": 54.6
+            "x": 42.5,
+            "y": 51.0
           }
         }
       ]
@@ -38,12 +38,12 @@
         {
           "text": "Do we bring coats?",
           "speaker": "A believer",
-          "x": 20,
-          "y": 60,
+          "x": 24.5,
+          "y": 58.5,
           "width": 32,
           "tail": {
-            "x": 40.3,
-            "y": 70.6
+            "x": 33.5,
+            "y": 65.5
           }
         }
       ]
@@ -61,19 +61,19 @@
           "y": 36,
           "width": 34,
           "tail": {
-            "x": 21.4,
-            "y": 56.5
+            "x": 20.9,
+            "y": 48.1
           }
         },
         {
           "text": "Just taking a few... spiritual notes.",
           "speaker": "A psychologist",
-          "x": 62,
-          "y": 40,
+          "x": 73.0,
+          "y": 38.5,
           "width": 36,
           "tail": {
-            "x": 43.4,
-            "y": 56.5
+            "x": 55.3,
+            "y": 49.7
           }
         }
       ]
@@ -91,19 +91,19 @@
           "y": 36,
           "width": 40,
           "tail": {
-            "x": 54.3,
-            "y": 54.6
+            "x": 63.1,
+            "y": 46.0
           }
         },
         {
           "text": "Hold still. It's nearly midnight.",
           "speaker": "Dr Charles Laughead",
-          "x": 26,
-          "y": 45,
+          "x": 26.5,
+          "y": 40.0,
           "width": 40,
           "tail": {
-            "x": 32.5,
-            "y": 56.5
+            "x": 28.9,
+            "y": 48.1
           }
         }
       ]
@@ -121,8 +121,8 @@
           "y": 40,
           "width": 40,
           "tail": {
-            "x": 53.1,
-            "y": 62.8
+            "x": 55.5,
+            "y": 55.9
           }
         }
       ]
@@ -140,8 +140,8 @@
           "y": 42,
           "width": 40,
           "tail": {
-            "x": 63.6,
-            "y": 62.8
+            "x": 67.8,
+            "y": 54.0
           }
         }
       ]
@@ -155,23 +155,23 @@
         {
           "text": "You're welcome, everybody.",
           "speaker": "Dorothy Martin",
-          "x": 52,
-          "y": 40,
+          "x": 50.5,
+          "y": 36.0,
           "width": 36,
           "tail": {
-            "x": 56.8,
-            "y": 54.6
+            "x": 53.2,
+            "y": 45.9
           }
         },
         {
           "text": "We did it!",
           "speaker": "A believer",
-          "x": 85,
-          "y": 48,
+          "x": 85.5,
+          "y": 42.0,
           "width": 26,
           "tail": {
-            "x": 86.2,
-            "y": 58.4
+            "x": 86.5,
+            "y": 50.3
           }
         }
       ]
@@ -185,23 +185,23 @@
         {
           "text": "It's the first time I've ever called them. I've never had anything to tell them before!",
           "speaker": "Dorothy Martin",
-          "x": 34,
-          "y": 34,
+          "x": 34.0,
+          "y": 33.5,
           "width": 56,
           "tail": {
-            "x": 32.7,
-            "y": 54.6
+            "x": 32.5,
+            "y": 45.9
           }
         },
         {
           "text": "She's calling the papers.",
           "speaker": "An observer",
-          "x": 78,
-          "y": 46,
+          "x": 80.0,
+          "y": 40.5,
           "width": 30,
           "tail": {
-            "x": 73.2,
-            "y": 58.4
+            "x": 76.9,
+            "y": 50.4
           },
           "kind": "thought"
         }

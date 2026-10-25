@@ -19,12 +19,12 @@
         {
           "text": "How hard can it be? You just whirl them round your head.",
           "speaker": "Charles Darwin",
-          "x": 24,
-          "y": 38,
+          "x": 25.5,
+          "y": 33.0,
           "width": 40,
           "tail": {
-            "x": 46.4,
-            "y": 54.8
+            "x": 35.8,
+            "y": 44.4
           }
         }
       ]
@@ -38,23 +38,23 @@
         {
           "text": "I meant to do that.",
           "speaker": "Charles Darwin",
-          "x": 22,
-          "y": 40,
+          "x": 22.5,
+          "y": 36.5,
           "width": 30,
           "tail": {
-            "x": 39.0,
-            "y": 54.8
+            "x": 28.5,
+            "y": 43.9
           }
         },
         {
           "text": "We've seen every sort of animal caught, but never a man caught by himself!",
           "speaker": "A gaucho",
-          "x": 70,
-          "y": 38,
+          "x": 70.5,
+          "y": 35.5,
           "width": 50,
           "tail": {
-            "x": 78.8,
-            "y": 58.4
+            "x": 75.4,
+            "y": 47.5
           },
           "kind": "shout"
         }
@@ -69,23 +69,23 @@
         {
           "text": "Smaller than the common one, dark and mottled, with shorter legs. Easier to catch with bolas, too.",
           "speaker": "A gaucho",
-          "x": 66,
-          "y": 36,
+          "x": 63.5,
+          "y": 31.0,
           "width": 54,
           "tail": {
-            "x": 69.2,
-            "y": 55.7
+            "x": 67.4,
+            "y": 44.9
           }
         },
         {
           "text": "I must have one!",
           "speaker": "Charles Darwin",
-          "x": 18,
-          "y": 46,
+          "x": 19.5,
+          "y": 35.5,
           "width": 30,
           "tail": {
-            "x": 29.0,
-            "y": 54.6
+            "x": 22.9,
+            "y": 43.4
           },
           "kind": "shout"
         }
@@ -100,12 +100,12 @@
         {
           "text": "Dinner!",
           "speaker": "Conrad Martens",
-          "x": 30,
-          "y": 40,
+          "x": 30.0,
+          "y": 39.5,
           "width": 26,
           "tail": {
-            "x": 32.7,
-            "y": 54.6
+            "x": 30.6,
+            "y": 45.6
           },
           "kind": "shout"
         }
@@ -124,19 +124,19 @@
           "y": 38,
           "width": 36,
           "tail": {
-            "x": 74.9,
-            "y": 56.5
+            "x": 74.2,
+            "y": 47.8
           }
         },
         {
           "text": "Don't mind if I do.",
           "speaker": "Charles Darwin",
-          "x": 26,
-          "y": 44,
+          "x": 25.5,
+          "y": 40.0,
           "width": 34,
           "tail": {
-            "x": 23.3,
-            "y": 56.5
+            "x": 23.8,
+            "y": 48.1
           }
         }
       ]
@@ -150,12 +150,12 @@
         {
           "text": "Wait. Short legs. Dark. Mottled. Oh no.",
           "speaker": "Charles Darwin",
-          "x": 32,
-          "y": 33,
+          "x": 32.0,
+          "y": 32.0,
           "width": 44,
           "tail": {
-            "x": 35.9,
-            "y": 51.5
+            "x": 33.3,
+            "y": 42.2
           },
           "kind": "shout"
         }
@@ -170,12 +170,12 @@
         {
           "text": "Pack it carefully. It's a new species, mostly.",
           "speaker": "Charles Darwin",
-          "x": 32,
-          "y": 38,
+          "x": 45.5,
+          "y": 32.5,
           "width": 42,
           "tail": {
-            "x": 32.7,
-            "y": 54.6
+            "x": 38.1,
+            "y": 44.1
           }
         }
       ]
@@ -189,12 +189,12 @@
         {
           "text": "Named in your honour, Mr Darwin. Delicious, I'm told.",
           "speaker": "John Gould",
-          "x": 30,
-          "y": 38,
+          "x": 30.0,
+          "y": 33.5,
           "width": 44,
           "tail": {
-            "x": 32.7,
-            "y": 54.6
+            "x": 30.9,
+            "y": 45.9
           }
         }
       ]

@@ -19,23 +19,23 @@
         {
           "text": "These are excellent.",
           "speaker": "A soldier",
-          "x": 26,
-          "y": 40,
+          "x": 26.0,
+          "y": 31.5,
           "width": 32,
           "tail": {
-            "x": 28.1,
-            "y": 54.6
+            "x": 26.3,
+            "y": 39.6
           }
         },
         {
           "text": "Put it on our tab.",
           "speaker": "A soldier",
-          "x": 72,
-          "y": 36,
+          "x": 72.0,
+          "y": 33.0,
           "width": 32,
           "tail": {
-            "x": 69.2,
-            "y": 55.7
+            "x": 71.5,
+            "y": 41.0
           }
         }
       ]
@@ -53,8 +53,8 @@
           "y": 34,
           "width": 40,
           "tail": {
-            "x": 44.3,
-            "y": 51.5
+            "x": 47.2,
+            "y": 48.9
           },
           "kind": "shout"
         }
@@ -69,12 +69,12 @@
         {
           "text": "And the pastry. Don't forget the pastry.",
           "speaker": "A French official",
-          "x": 40,
-          "y": 36,
+          "x": 44.0,
+          "y": 41.5,
           "width": 40,
           "tail": {
-            "x": 21.8,
-            "y": 51.9
+            "x": 24.3,
+            "y": 50.2
           }
         }
       ]
@@ -110,8 +110,8 @@
           "y": 44,
           "width": 34,
           "tail": {
-            "x": 63.6,
-            "y": 62.2
+            "x": 66.9,
+            "y": 56.1
           }
         }
       ]
@@ -131,23 +131,23 @@
         {
           "text": "Splendid. Cake, anyone?",
           "speaker": "A British diplomat",
-          "x": 48,
-          "y": 44,
+          "x": 48.5,
+          "y": 38.0,
           "width": 30,
           "tail": {
-            "x": 54.3,
-            "y": 61.1
+            "x": 50.6,
+            "y": 48.2
           }
         },
         {
           "text": "In instalments.",
           "speaker": "A Mexican minister",
-          "x": 82,
-          "y": 40,
+          "x": 81.5,
+          "y": 39.0,
           "width": 34,
           "tail": {
-            "x": 76.7,
-            "y": 55.8
+            "x": 79.7,
+            "y": 47.4
           }
         }
       ]
@@ -165,8 +165,8 @@
           "y": 36,
           "width": 40,
           "tail": {
-            "x": 71.1,
-            "y": 55.7
+            "x": 72.2,
+            "y": 47.2
           },
           "kind": "shout"
         }
