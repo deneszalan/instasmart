@@ -1,5 +1,5 @@
 import { useRef, useState, type CSSProperties, type RefObject } from 'react';
-import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
+import { BookOpen, ChevronLeft, ChevronRight, Play } from 'lucide-react';
 import type { KnowledgeCard, Slide } from '../types';
 import type { WikiPost } from '../lib/wiki';
 import { FIELD_BY_ID } from '../data/fields';
@@ -9,8 +9,9 @@ import { VisualSlide } from './Visual';
 import { clock, VideoSlideView } from './Video';
 import { Ratings } from './Ratings';
 import { ExploreSlideView } from './Explore';
+import { ComicSlideView } from './Comic';
 import { challengeId } from '../lib/interactive';
-import { firstVideo } from '../lib/visual';
+import { comicPanels, firstComic, firstVideo } from '../lib/visual';
 import { clipSeconds } from '../data/library';
 import { t } from '../i18n';
 
@@ -29,10 +30,12 @@ export function cardGradient(card: KnowledgeCard): [string, string] {
   return card.theme?.gradient ?? FIELD_BY_ID[card.field].gradient;
 }
 
-export function TitleSlide({ card, hasMore, onWatch }: { card: KnowledgeCard; hasMore?: boolean; onWatch?: () => void }) {
+export function TitleSlide({ card, hasMore, onWatch, onRead }: { card: KnowledgeCard; hasMore?: boolean; onWatch?: () => void; onRead?: () => void }) {
   const field = FIELD_BY_ID[card.field];
   const cover = card.cover;
   const video = firstVideo(card);
+  const comic = firstComic(card);
+  const panels = comicPanels(card);
   const clip = video >= 0 ? card.slides![video] : undefined;
   const animated = clip?.type === 'video' && !!clip.animation;
   const length = clip?.type === 'video' ? clipSeconds(clip.src) : undefined;
@@ -57,6 +60,15 @@ export function TitleSlide({ card, hasMore, onWatch }: { card: KnowledgeCard; ha
           <Play size={13} fill="currentColor" /> {animated ? `${t('Watch')}${length ? ` · ${clock(length)}` : ''}` : t('Video')}
         </button>
       )}
+      {comic >= 0 && (
+        <button
+          className="slide__video slide__video--comic"
+          onClick={onRead}
+          aria-label={t(panels === 1 ? 'Read the comic in this post, 1 panel' : 'Read the comic in this post, {n} panels', { n: panels })}
+        >
+          <BookOpen size={14} /> {t(panels === 1 ? 'Comic · 1 panel' : 'Comic · {n} panels', { n: panels })}
+        </button>
+      )}
       <div className="slide__center">
         {!cover && (
           <div className="slide__emoji" aria-hidden="true">
@@ -68,7 +80,9 @@ export function TitleSlide({ card, hasMore, onWatch }: { card: KnowledgeCard; ha
       </div>
       <div className="slide__foot">
         <span>{cover?.credit ? `📷 ${cover.credit}` : `@${field.handle}`}</span>
-        {hasMore && <span className="slide__swipe">{video === 0 ? t('Swipe to watch →') : t('Swipe for more →')}</span>}
+        {hasMore && (
+          <span className="slide__swipe">{video === 0 ? t('Swipe to watch →') : comic === 0 ? t('Swipe to read →') : t('Swipe for more →')}</span>
+        )}
       </div>
     </div>
   );
@@ -175,9 +189,10 @@ function SlideBody({ slide, challengeId }: { slide: Slide; challengeId: string }
     case 'flow':
       return <VisualSlide slide={slide} />;
     case 'image':
+    case 'comic':
     case 'video':
     case 'explore':
-      // Rendered by ImageSlideView, VideoSlideView and ExploreSlideView.
+      // Rendered by ImageSlideView, ComicSlideView, VideoSlideView and ExploreSlideView.
       return null;
   }
 }
@@ -199,6 +214,10 @@ function DetailSlide({ card, index, total, start }: { card: KnowledgeCard; index
   const field = FIELD_BY_ID[card.field];
   const slide = card.slides![index - 1];
   if (slide.type === 'image') return <ImageSlideView slide={slide} card={card} />;
+  if (slide.type === 'comic') {
+    const after = card.slides![index];
+    return <ComicSlideView slide={slide} next={index + 1 < total ? (after.type === 'comic' ? 'comic' : 'other') : null} />;
+  }
   if (slide.type === 'video') return <VideoSlideView slide={slide} card={card} start={start} />;
   if (slide.type === 'explore') return <ExploreSlideView slide={slide} card={card} />;
   return (
@@ -228,6 +247,7 @@ export function CardMedia({ card, onIndexChange }: CardMediaProps) {
   // Starts the post's first clip, for the title slide's Watch button.
   const startVideo = useRef<(() => void) | null>(null);
   const videoAt = firstVideo(card) + 1;
+  const comicAt = firstComic(card) + 1;
 
   if (total === 1) return <TitleSlide card={card} />;
 
@@ -273,6 +293,7 @@ export function CardMedia({ card, onIndexChange }: CardMediaProps) {
                   // Still within the tap, so an animation may start with its music.
                   startVideo.current?.();
                 }}
+                onRead={() => go(comicAt)}
               />
             ) : (
               <DetailSlide card={card} index={i} total={total} start={i === videoAt ? startVideo : undefined} />

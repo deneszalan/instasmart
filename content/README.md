@@ -76,7 +76,7 @@ You can add the exact model as `"model"`, e.g. `{ "name": "ChatGPT", "kind": "ai
 
 ## Slide types
 
-Each slide is a 4:5 card on the post's gradient. Pick the type that fits the idea, and keep one idea per slide. There are three kinds: text slides, **visual** slides the app draws from numbers (`chart`, `pictogram`, `scale`, `spectrum`, `flow`), and **interactive** slides the reader plays (`quiz`, `reveal`, `estimate`, the puzzles `order`, `match`, `sort`, `scramble`, `odd`, and the visual puzzles `rank`, `higher`, `fill`, `place`, which reveal a graphic once the reader has guessed).
+Each slide is a 4:5 card on the post's gradient. Pick the type that fits the idea, and keep one idea per slide. There are three kinds: text slides, **visual** slides the app draws from numbers (`chart`, `pictogram`, `scale`, `spectrum`, `flow`), and **interactive** slides the reader plays (`quiz`, `reveal`, `estimate`, the puzzles `order`, `match`, `sort`, `scramble`, `odd`, and the visual puzzles `rank`, `higher`, `fill`, `place`, which reveal a graphic once the reader has guessed). A post can also tell its story as a comic, in `comic` panels (see "Comics" below).
 
 | Type | Use it for | Shape |
 | --- | --- | --- |
@@ -105,6 +105,7 @@ Each slide is a 4:5 card on the post's gradient. Pick the type that fits the ide
 | `place` | Put a value on a spectrum, with known points as clues | `{ "type": "place", "question": "≤120", "min": 0, "max": 140, "step"?: 1, "answer": 110, "unit"?: "dB", "ends"?: ["Silence", "Pain"], "hints"?: [{ "label": "≤14", "value": 30 }, … ≤4], "format"?: "year", "colors"?, "explanation": "≤200" }` |
 | `video` | A short clip of something moving: a launch, a collapse, an animal | `{ "type": "video", "src": "launch.mp4", "poster": "launch.jpg", "alt": "…", "caption"?: "≤200", "fit"?: "contain" \| "cover", "credit": "≤120", "href"?: "https://…", "music"?: "≤160", "ratings": { "complexity": 1–10, "shock": 1–10 } }` |
 | `image` | A photo or a diagram | `{ "type": "image", "src": "orbit.svg", "alt": "…", "caption"?: "≤200", "fit"?: "cover" \| "contain", "credit"?: "≤120" }` |
+| `comic` | One panel of a comic the reader swipes through: see "Comics" below | `{ "type": "comic", "src": "panel-1.jpg", "alt": "…", "caption"?: "≤150", "captionAt"?: "top" \| "bottom", "bubbles"?: [{ "text": "≤110", "speaker"?: "≤40", "x": 0–100, "y": 0–100, "width"?: 24–90, "tail"?: { "x": 0–100, "y": 0–100 }, "kind"?: "speech" \| "thought" \| "shout" }, … ≤3], "credit"?: "≤120" }` |
 | `explore` | A hands-on lab: the reader changes something and watches what happens | `{ "type": "explore", "lab": "monty-hall", "heading"?: "≤40", "prompt": "≤160", "takeaway": "≤220" }` |
 
 Use `"fit": "cover"` for photos (they fill the card) and `"fit": "contain"` for diagrams (the whole image shows on the gradient).
@@ -148,6 +149,17 @@ They count as interactive slides, so the limits below apply to them too.
 - Two interactive slides per post is plenty, three at most and only when one of them is a visual puzzle standing in for a chart, pictogram or spectrum; a visual slide beside them gives readers something to look at between plays.
 
 A slide is phone-sized, so `list` and `timeline` slides must stay short: about 12 lines in total, where a timeline date counts as a line and a line holds roughly 34 characters (30 in a list). `npm run content` checks this and tells you by how much to cut.
+
+### Comics
+
+A post can tell its story as a comic: a run of `comic` slides, one panel each, that the reader swipes through. The title slide shows a "Comic · 8 panels" chip and every panel but the last has a "Read on →" tab. The app letters the words on top of the art, so they stay sharp, searchable, translatable and readable by screen readers.
+
+- **Art.** One picture per panel, 4:5 (1080 × 1350), JPEG or PNG under 1.5 MB, with no words in it: no captions, balloons, labels or legible signs. Leave room for the lettering: the caption box takes up to the top (or bottom) fifth of the panel, and the slide counter covers the top right corner. Keep the cast looking the same from panel to panel, frame faces large enough to read on a phone, and give the post a `cover` as well.
+- **Caption.** The narrator's box: where and when, and the facts. Dates, numbers and claims belong here, sourced like every other sentence in the post. Keep it under about 120 characters so it takes three lines or fewer.
+- **Bubbles.** Up to three per panel, listed in reading order (left to right, top to bottom). `x` and `y` place the bubble's centre in percent of the panel's width and height; `width` is in percent of the width (default 46). `tail` points at the speaker's mouth: put the point just in front of the mouth, not on the face. For a voice from off the panel, point the tail at the panel's edge. `"kind": "thought"` draws a cloud with a trail of puffs, `"shout"` a jagged burst. Name the speaker in `speaker`; screen readers read it out.
+- **Check it.** `npm run content` estimates where the lettering lands. It reports a bubble that overlaps another bubble, covers the caption, runs off the panel, holds more than six lines, or sits under the counter or the "Read on" tab. It can't see the art, so open the post in the app (`npm run dev`, then `#/p/<id>`) and check that no bubble hides a face and every tail reaches its speaker.
+- **Who says what.** Dialogue follows the accuracy rules like any other text. A real person says only what the record shows they said, wrote or did, in a close paraphrase: John Snow wrote that "nearly all the deaths had taken place within a short distance of the pump", so his bubble may say so. Never put a new claim, opinion or feeling into a real person's mouth. Unnamed people (a neighbour, a doctor) may voice the common view of their time, but nothing the post relies on as fact. When in doubt, put it in the caption.
+- Eight panels and a quiz fill a post's nine slides. Write each panel's `alt` as you would for an image: what the picture shows, not the words on it. `credit` names the artist and licence when the art isn't the post author's own.
 
 ## Images
 
@@ -250,5 +262,5 @@ This is a learning app. A wrong fact is worse than no post.
 6. **One topic per post.** Check existing ids (`list_posts`, or `content/posts/<field>/`) and don't duplicate a topic.
 7. **No medical, legal or financial advice**, nothing hateful, and no gratuitous violence.
 8. **Write for a curious 16-year-old**: short sentences, concrete examples, no jargon without a quick explanation.
-9. **Never invent quotes, studies, statistics or images of real people.**
+9. **Never invent quotes, studies, statistics or images of real people.** A comic may draw a historical person as a character, as long as it's clearly a drawing and their bubbles follow "Who says what" under "Comics".
 10. Plain text in the right fields: no markdown headings, no emoji inside the text, no hashtags in the body.

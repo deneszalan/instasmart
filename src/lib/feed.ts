@@ -131,6 +131,8 @@ function slideParts(slide: Slide): string[] {
       return [slide.caption ?? slide.alt];
     case 'video':
       return [slide.caption ?? slide.alt];
+    case 'comic':
+      return slide.caption || slide.bubbles?.length ? [slide.caption ?? '', ...(slide.bubbles ?? []).map((b) => b.text)] : [slide.alt];
     case 'explore':
       return [slide.prompt, slide.takeaway];
     case 'stat':
