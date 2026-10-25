@@ -1,0 +1,66 @@
+{{Short description|Polish mathematician and cryptologist (1908–1978)}}
+{{Infobox person
+|name        =Henryk Zygalski
+|image       =Henryk Zygalski.jpg
+|image_size  =135px
+|alt         =
+|caption     =Henryk Zygalski about 1930
+|birth_name  =
+|birth_date  ={{Birth date|1908|07|15|df=y}}
+|birth_place = Posen, [[German Empire]] (now [[Poznań]], [[Poland]])
+|death_date  ={{Death date and age|1978|08|30|1908|07|15|df=y}}
+|death_place = [[Liss (England)|Liss]], [[England]]
+|other_names =
+|occupation  = [[Mathematician]], [[cryptologist]]
+|known_for   = Solving [[Enigma-machine]] ciphers<br/>[[Zygalski sheets]]
+|awards      = [[Order of Polonia Restituta#Classes|Order of ''Polonia Restituta'', Grand Cross]] (2000)<br />[[IEEE]] Milestone Award (2014)
+}}
+'''Henryk Zygalski''' ({{IPA|pl|ˈxɛnrɨk zɨˈɡalski|-|Zygalski.ogg}}; 15 July 1908 – 30 August 1978) was a Polish [[mathematician]] and [[cryptologist]] who worked at breaking German [[Enigma machine|Enigma-machine]] [[cipher]]s before and during [[World War II]]. 
+
+==Life==
+[[Image:Płachta Zygalskiego - decrypting Enigma.jpg|left|thumb|Zygalski sheet]]
+Zygalski was born on 15 July 1908 in [[Poznań|Posen]], [[German Empire]] (now Poznań, [[Poland]]). He was, from September 1932, a civilian [[cryptology|cryptologist]] with the [[Poland|Polish]] [[General Staff]]'s ''[[Biuro Szyfrów]]'' (Cipher Bureau), housed in the [[Pałac Saski|Saxon Palace]] in [[Warsaw]].  He worked there with fellow [[Poznan University|Poznań University]] alumni and Cipher Bureau cryptology-course graduates [[Marian Rejewski]] and [[Jerzy Różycki]]. Together they developed methods and equipment for breaking Enigma messages.
+
+In late 1938, in response to growing complexities in German encryption procedures, Zygalski designed the "[[Zygalski sheets|perforated sheets]]," also known as "[[Zygalski sheets]]," a manual device for finding Enigma settings. This scheme, like the earlier "[[card catalog]]," was independent of the number of connections being used in the Enigma's plugboard, or commutator.
+
+After the war, he remained in exile in the [[United Kingdom]] and worked, until his retirement, as a lecturer in mathematical statistics at the [[University of Surrey]]. During this period he was prevented by the [[Official Secrets Act]] from speaking of his achievements in [[cryptology]].
+
+He died on 30 August 1978 in [[Liss (England)|Liss]], [[England]]. He was cremated and his ashes taken to [[London]]. 
+[[Image:Henryk Zygalski2.jpg|thumb|140px|Zygalski in later life]]
+
+==Recognition==
+Shortly before his death, Zygalski was honored by the [[Polish University in Exile]] with an honorary doctorate for his role in breaking Enigma.
+
+In 2000 he was posthumously awarded by President [[Aleksander Kwaśniewski]] the Grand Cross of the [[Order of Polonia Restituta]] for his "outstanding contributions to the Republic of Poland".
+
+In 2009 the [[Polish Post]] issued a commemorative stamp featuring Henryk Zygalski alongside fellow cryptologists Marian Rejewski and Jerzy Różycki.{{fv|date=January 2024|reason=I don't see any mention of a Zygalski stamp at this link}}
+	
+On 5 August 2014 the [[Institute of Electrical and Electronics Engineers]] (IEEE) honored Rejewski, Różycki, and Zygalski with its prestigious Milestone Award, which recognizes achievements that have changed the world. Milestones was given for "First Breaking of Enigma Code by the Team of Polish Cipher Bureau, 1932-1939", they built the [[Bomba (cryptography)|bomba]] which was the first cryptanalytic machine to break codes. Their work was a foundation of British code breaking efforts which, with later American assistance, helped end World War II.{{Self-published inline|certain=yes |date=January 2024|reason=This reference is to wiki}}
+
+In 2021 the [[Enigma Cipher Centre]], an educational and scientific institution dedicated to the Polish mathematicians who broke the Enigma cipher, including Henryk Zygalski, opened in Poznań.
+
+==See also==
+* [[Cryptanalysis of the Enigma#Enigma with a plugboard|Cryptanalysis of the Enigma]]
+* [[List of cryptographers]]
+* [[List of Poles#Mathematics|List of Polish mathematicians]]
+
+==References==
+{{Reflist}}
+[[Image:Zygalski sheets (perforated sheets).jpg|right|thumb|Demonstration of [[Perforated sheets|Zygalski sheets]] at [[Bletchley Park]]]]
+* [[Władysław Kozaczuk]], ''Enigma:  How the German Machine Cipher Was Broken, and How It Was Read by the Allies in World War II'', edited and translated by Christopher Kasparek, Frederick, MD, University Publications of America, 1984, {{ISBN|0-89093-547-5}}.
+{{Cipher Bureau}}
+{{Authority control}}
+
+{{DEFAULTSORT:Zygalski, Henryk}}
+[[Category:Scientists from Poznań]]
+[[Category:Polish Army officers]]
+[[Category:20th-century Polish mathematicians]]
+[[Category:20th-century cryptographers]]
+[[Category:Polish cryptographers]]
+[[Category:Cipher Bureau (Poland)]]
+[[Category:Polish emigrants to the United Kingdom]]
+[[Category:20th-century Polish inventors]]
+[[Category:Academics of the University of Surrey]]
+[[Category:1908 births]]
+[[Category:1978 deaths]]
+[[Category:Adam Mickiewicz University in Poznań alumni]]

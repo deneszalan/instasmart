@@ -74,7 +74,14 @@
           "start": 73.73,
           "end": 80.8
         }
-      ]
+      ],
+      "ratings": { "complexity": 5, "shock": 7 }
+    },
+    {
+      "type": "explore",
+      "lab": "astronauts-are-falling",
+      "prompt": "Fire the cannon sideways at the space station’s height. Find the speed at which the ball falls all the way round Earth.",
+      "takeaway": "Around 7.7 km/s, the station’s own speed. The ball never stops falling; it just moves sideways fast enough that the ground curves away beneath it."
     },
     {
       "type": "text",

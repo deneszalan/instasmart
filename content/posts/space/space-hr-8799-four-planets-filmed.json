@@ -19,7 +19,8 @@
       "caption": "A movie made from ten Keck Observatory images of HR 8799 taken from 2009 to 2021, slowed to half speed: the four planets inch around the masked star.",
       "credit": "J. Wang/W. Thompson/C. Marois/Q. Konopacky · CC BY 4.0 · excerpt, slowed to half speed",
       "href": "https://jasonwang.space/orbits.html",
-      "music": "“Jellyfish in Space” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Jellyfish in Space” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 3, "shock": 6 }
     },
     {
       "type": "reveal",

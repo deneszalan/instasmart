@@ -64,7 +64,14 @@
           "start": 74.27,
           "end": 81.73
         }
-      ]
+      ],
+      "ratings": { "complexity": 5, "shock": 7 }
+    },
+    {
+      "type": "explore",
+      "lab": "blind-spot",
+      "prompt": "Close one eye, stare at the cross with the other and move the phone slowly closer until the red dot disappears.",
+      "takeaway": "That gap is where the optic nerve leaves your eye. Try the broken line and the grid too: your brain paints the hole with whatever surrounds it."
     },
     {
       "type": "text",

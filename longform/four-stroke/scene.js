@@ -546,7 +546,7 @@ function engine(th, t, alpha) {
 // Header, diagram caption, title cards
 // =====================================================================================================
 function header(t) {
-  A(seg(t, 0.2, 1.2), () => {
+  A(seg(t, 0.2, 1.2) * (1 - seg(t, e('z6', 0.6), e('z6', 1.6))), () => {
     const rw = width('ENGINEERING', 32, DISPLAY, 400, '3px');
     label('ENGINEERING', 1824, 100, { color: C.soft, align: 'right', weight: 400, spacing: '3px' });
     label('RECKON', 1824 - rw - 22, 100, { color: C.dim, align: 'right', weight: 600, spacing: '3px' });
@@ -585,7 +585,7 @@ function titleCards(t) {
   }
 }
 function coldTitle(t) {
-  const a = span(t, s('o4', -0.2), at(1) + 0.6, 0.7, 0.7);
+  const a = span(t, s('o4', -0.2), at(1) + 0.3, 0.7, 0.8);
   if (a <= 0) return;
   A(a * 0.72, () => { ctx.fillStyle = '#050B13'; ctx.fillRect(0, 0, W, H); });
   A(a, () => {
@@ -698,11 +698,11 @@ function partMachine(t, th) {
   leader('PISTON', 850, 420, CX + 126, 380, L('m2'));
   leader('CONNECTING ROD', 850, 610, CX + 18, 600, L('m3', 0.3));
   leader('CRANKSHAFT', 850, 852, CX + 70, CY + 18, L('m3', 1.6));
-  leader('INTAKE VALVE', 850, 330, IV + 30, ROOF + 6, L('m4', 0.6));
-  leader('EXHAUST VALVE', 850, 280, EV + 40, ROOF + 2, L('m4', 1.8));
-  leader('CAMSHAFT', 850, 128, EV + 52, CAM_Y - 6, L('m5', 0.2));
-  leader('VALVE SPRING', 850, 200, EV + 18, 206, L('m5', 1.8));
-  leader('SPARK PLUG', 1180, 128, CX + 12, 196, L('m6', 0.1));
+  leader('INTAKE VALVE', 850, 356, IV + 36, ROOF + 8, L('m4', 0.6));
+  leader('EXHAUST VALVE', 850, 300, EV + 44, ROOF, L('m4', 1.8));
+  leader('CAMSHAFT', 850, 140, EV + 50, CAM_Y, L('m5', 0.2));
+  leader('VALVE SPRING', 850, 196, EV + 17, 196, L('m5', 1.8));
+  leader('SPARK PLUG', 850, 246, CX + 17, 230, L('m6', 0.1));
   // TDC, BDC and the stroke, to the left of the cylinder
   const dA = span(t, s('m7'), at(2) + 1.0, 0.5, 0.6);
   A(dA, () => {
@@ -748,7 +748,7 @@ function partMachine(t, th) {
       stroke(2.4, C.dim); ctx.setLineDash([6, 7]);
       line(gx(90), gy(travel(90)), X0, gy(travel(90))); ctx.setLineDash([]);
       A(1 - seg(t, s('m11', 0.1), s('m11', 0.5)), () => {
-        chip(`QUARTER TURN → ${pct(QUARTER)} OF THE STROKE`, 1000, 840, { size: 34 });
+        chip(`QUARTER TURN: ${pct(QUARTER)} OF THE STROKE`, 1000, 840, { size: 34 });
         A(seg(t, e('m10', -0.2), e('m10', 0.5)), () => label('DASHED: A PURE WAVE, 50%', 1004, 910, { size: 32, color: C.faint, weight: 400 }));
       });
     });
@@ -833,9 +833,9 @@ const EVENTS = [
   { k: 'h7', until: 'h8', year: 1864, head: '1864 · N. A. OTTO & CIE', lines: ['OTTO AND EUGEN LANGEN FOUND', 'THE FIRST COMPANY DEVOTED TO ENGINES'], icon: 'factory' },
   { k: 'h8', until: 'h9', year: 1867, head: '1867 · PARIS WORLD’S FAIR', lines: ['THEIR ATMOSPHERIC ENGINE', 'WINS A GOLD MEDAL'], icon: 'medal' },
   { k: 'h9', until: 'h11', year: 1876, head: '1876 · OTTO’S FOUR-STROKE ENGINE', lines: ['COMPRESSES ITS CHARGE IN THE CYLINDER', 'AN IMMEDIATE SUCCESS'], icon: 'otto' },
-  { k: 'h11', until: 'h12', year: 1886, head: '1886 · PATENT CANCELLED IN GERMANY', lines: ['BEAU DE ROCHAS HAD PATENTED', 'THE CYCLE FIRST'], icon: 'cancel' },
-  { k: 'h12', until: 'h13', year: 1889, head: '1889 · MORE THAN 50 COMPANIES', lines: ['BUILD OTTO-TYPE ENGINES'], icon: 'many' },
-  { k: 'h13', until: 'h14', year: 1883, head: 'GOTTLIEB DAIMLER & WILHELM MAYBACH', lines: ['SMALL, FAST ENGINES FOR VEHICLES', 'FIRST HIGH-SPEED OTTO ENGINE, 1883'], icon: 'fast' },
+  { k: 'h11', until: 'h12', year: 1883, head: 'GOTTLIEB DAIMLER & WILHELM MAYBACH', lines: ['SMALL, FAST ENGINES FOR VEHICLES', 'FIRST HIGH-SPEED OTTO ENGINE, 1883'], icon: 'fast' },
+  { k: 'h12', until: 'h13', year: 1886, head: '1886 · PATENT CANCELLED IN GERMANY', lines: ['BEAU DE ROCHAS HAD PATENTED', 'THE CYCLE FIRST'], icon: 'cancel' },
+  { k: 'h13', until: 'h14', year: 1889, head: '1889 · MORE THAN 50 COMPANIES', lines: ['BUILD OTTO-TYPE ENGINES'], icon: 'many' },
 ];
 function iconLenoir(cx, cy, p) {
   // a horizontal cylinder, burning on both sides of the piston, and a flywheel
@@ -912,7 +912,7 @@ function iconOtto(cx, cy, p) {
 function iconMany(cx, cy, n) {
   stroke(2, C.line);
   for (let i = 0; i < n; i++) {
-    const x = cx - 270 + (i % 10) * 60, y = cy - 120 + Math.floor(i / 10) * 56;
+    const x = cx - 250 + (i % 10) * 50, y = cy - 120 + Math.floor(i / 10) * 56;
     ctx.beginPath(); ctx.moveTo(x, y + 34); ctx.lineTo(x, y + 12); ctx.lineTo(x + 14, y + 4); ctx.lineTo(x + 14, y + 12); ctx.lineTo(x + 28, y + 4); ctx.lineTo(x + 28, y + 12); ctx.lineTo(x + 40, y + 12); ctx.lineTo(x + 40, y - 6); ctx.lineTo(x + 46, y - 6); ctx.lineTo(x + 46, y + 34); ctx.closePath(); ctx.stroke();
   }
 }
@@ -943,8 +943,6 @@ function partHistory(t) {
   A(seg(t, s('h1', -0.4), s('h1', 0.6)), () => {
     stroke(3, C.soft); line(AX0 - 20, AXY, AX1 + 20, AXY);
     for (let y = 1860; y <= 1890; y += 5) { stroke(2, C.faint); line(yx(y), AXY - 10, yx(y), AXY + 10); }
-    mono('1860', yx(1860), AXY + 96, { align: 'center', color: C.ghost, size: 32 });
-    mono('1890', yx(1890), AXY + 96, { align: 'center', color: C.ghost, size: 32 });
   });
   let curX = null;
   for (const ev of EVENTS) {
@@ -959,24 +957,26 @@ function partHistory(t) {
     const a = span(t, a0, a1 + 0.5, 0.5, 0.5);
     if (a <= 0) continue;
     A(a, () => {
-      const p = t - a0, ix = 520, iy = 440;
+      const p = t - a0, ix = 0, iy = 0;
+      ctx.save(); ctx.translate(500, 450); ctx.scale(1.3, 1.3);
       ({
         lenoir: () => iconLenoir(ix, iy, p), case: () => iconCase(ix, iy), burst: () => iconBurst(ix, iy, p),
         patent: () => iconPatent(ix, iy, seg(t, mid('h6', 0.6), mid('h6', 0.8))),
         factory: () => iconFactory(ix, iy), medal: () => iconMedal(ix, iy), otto: () => iconOtto(ix, iy, p),
-        cancel: () => iconPatent(ix, iy, 0, seg(t, s('h11', 0.8), s('h11', 1.2))),
-        many: () => iconMany(ix, iy, Math.round(50 * eio(seg(t, s('h12', 0.2), e('h12', -0.3))))),
+        cancel: () => iconPatent(ix, iy, 0, seg(t, s('h12', 0.8), s('h12', 1.2))),
+        many: () => iconMany(ix, iy, Math.round(50 * eio(seg(t, s('h13', 0.2), e('h13', -0.3))))),
         fast: () => iconFast(ix, iy, p),
       })[ev.icon]();
-      const ty = 330;
-      label(ev.head, 860, ty, { size: ev.head.length > 30 ? 46 : 52, weight: 600, spacing: '2px' });
-      ev.lines.forEach((l, i) => label(l, 862, ty + 64 + i * 50, { size: 36, color: C.soft, weight: 400 }));
+      ctx.restore();
+      const ty = 350;
+      label(ev.head, 880, ty, { size: ev.head.length > 30 ? 52 : 60, weight: 600, spacing: '2px' });
+      ev.lines.forEach((l, i) => label(l, 882, ty + 70 + i * 54, { size: 40, color: C.soft, weight: 400 }));
     });
   }
   // a marker on the axis for the current event
   if (curX != null) A(seg(t, s('h2', -0.3), s('h2', 0.3)) * (1 - seg(t, s('h14', -0.3), s('h14', 0.3))), () => { stroke(3, C.dim); line(curX, AXY - 40, curX, AXY - 16); });
   // efficiency bars for Lenoir and the atmospheric engine
-  bars(862, 520, [['LENOIR, 1860', 4, C.line, seg(t, s('h3', 0.2), s('h3', 0.8))], ['OTTO & LANGEN, 1867', 12, C.dim, seg(t, s('h8', 1.0), s('h8', 1.6))]],
+  bars(882, 560, [['LENOIR, 1860', 4, C.line, seg(t, s('h3', 0.2), s('h3', 0.8))], ['OTTO & LANGEN, 1867', 12, C.dim, seg(t, s('h8', 1.0), s('h8', 1.6))]],
     Math.max(span(t, s('h3'), s('h4', -0.1), 0.4, 0.4), span(t, s('h8', 0.8), s('h9', -0.1), 0.4, 0.4)));
   // the name that stuck
   A(span(t, s('h14', -0.2), at(4) + 1.0, 0.6, 0.6), () => {
@@ -1010,7 +1010,7 @@ function partPV(t, th) {
     label('IDEALISED OTTO CYCLE · DIAGRAM', 1000, 232, { size: 34, color: C.soft, weight: 500, spacing: '2px' });
     axes(PV.x0, PV.y0, PV.w, PV.h);
     ctx.save(); ctx.translate(PV.x0 - 30, PV.y0 - PV.h / 2); ctx.rotate(-Math.PI / 2); label('PRESSURE', 0, 0, { size: 34, align: 'center', color: C.soft, spacing: '4px' }); ctx.restore();
-    label('VOLUME', PV.x0 + PV.w, PV.y0 + 52, { size: 34, align: 'right', color: C.soft, spacing: '4px' });
+    label('VOLUME', PV.x0 + PV.w * 0.55, PV.y0 + 52, { size: 34, align: 'center', color: C.soft, spacing: '4px' });
     stroke(2, C.ghost); ctx.setLineDash([6, 8]); line(pvx(1), PV.y0, pvx(1), PV.y0 - PV.h); line(pvx(10), PV.y0, pvx(10), PV.y0 - PV.h); ctx.setLineDash([]);
     mono('TDC', pvx(1), PV.y0 + 44, { align: 'center', color: C.dim });
     mono('BDC', pvx(10), PV.y0 + 44, { align: 'center', color: C.dim });
@@ -1025,7 +1025,8 @@ function partPV(t, th) {
         ctx.beginPath();
         for (let c = 180; c <= 540; c += 2) { const V = vol(c), p = pressure(c); c === 180 ? ctx.moveTo(pvx(V), pvy(p)) : ctx.lineTo(pvx(V), pvy(p)); }
         ctx.closePath(); ctx.fillStyle = rgba(C.flame, 0.28); ctx.fill();
-        label('NET WORK', pvx(3.1), pvy(14), { size: 44, color: C.flame, weight: 600, spacing: '3px' });
+        stroke(2.4, C.flame); line(pvx(1.45), pvy(22), pvx(1.95), pvy(50));
+        label('NET WORK', pvx(1.98), pvy(52), { size: 44, color: C.flame, weight: 600, spacing: '3px' });
       });
       for (const [a0, a1, col] of seg4) {
         const hi = Math.min(a1, done), lo = a0;
@@ -1049,26 +1050,27 @@ function partPV(t, th) {
       dot(pvx(st.V), pvy(st.p), 12, C.ink); dot(pvx(st.V), pvy(st.p), 6, C.paper);
       // point numbers
       const num = (n, V, p, dx, dy, a) => A(a, () => mono(String(n), pvx(V) + dx, pvy(p) + dy, { size: 34, weight: 700, color: C.ink, align: 'center' }));
-      num(1, 10, 1, 26, -18, seg(done, 175, 180));
+      num(1, 10, 1, 26, -14, seg(done, 175, 180));
       num(2, 1, P2, 30, 14, seg(done, 355, 360));
       num(3, 1, P3, 30, 10, seg(t, e('p5', -0.6), e('p5')));
-      num(4, 10, P4, 28, -12, seg(done, 535, 540));
+      num(4, 10, P4, 26, -32, seg(done, 535, 540));
     });
-    // stroke labels
-    const tag = (str, col, key, x, y, until) => A(span(t, s(key, 0.2), until, 0.4, 0.4), () => chip(str, x, y, { bg: col, size: 32 }));
-    tag('INTAKE', C.air, 'p3', pvx(5.5), pvy(1) - 40, e('p9'));
-    tag('COMPRESSION', C.warm, 'p4', pvx(3.2), pvy(5.8), e('p9'));
-    tag('COMBUSTION', C.hot, 'p5', pvx(1) + 40, pvy(P3 * 0.62), e('p9'));
-    tag('POWER', C.flame, 'p6', pvx(4.2), pvy(26), e('p9'));
-    tag('EXHAUST VALVE OPENS', C.exhaust, 'p7', pvx(10) - 380, pvy(P4) - 60, e('p8'));
-    tag('EXHAUST', C.exhaust, 'p8', pvx(7.0), pvy(1) - 40, e('p9'));
+    // a legend, filled in as each process is narrated; the current one is lit
+    const items = [['0–1', 'INTAKE', C.air, 'p3'], ['1–2', 'COMPRESSION', C.warm, 'p4'], ['2–3', 'COMBUSTION', C.hot, 'p5'], ['3–4', 'POWER', C.flame, 'p6'], ['4–1', 'VALVE OPENS', C.exhaust, 'p7'], ['1–0', 'EXHAUST', C.exhaust, 'p8']];
+    let nowK = null; for (const it of items) if (t >= s(it[3], 0.1)) nowK = it[3];
+    items.forEach(([nums, name, col, kk], i) => A(seg(t, s(kk, 0.1), s(kk, 0.6)), () => {
+      const y = 360 + i * 58, on = nowK === kk && t < s('p9');
+      k.rrect(1430, y - 32, 350, 48, 8); ctx.fillStyle = on ? rgba(col, 0.9) : 'rgba(234,242,248,0.06)'; ctx.fill();
+      mono(nums, 1446, y + 2, { size: 32, weight: 700, color: on ? C.paper : col });
+      label(name, 1560, y + 2, { size: 32, weight: 500, color: on ? C.paper : C.soft });
+    }));
   }
 }
 
 // =====================================================================================================
 // 5 Squeeze harder: the efficiency curve, then knock
 // =====================================================================================================
-const EF = { x0: 1080, y0: 860, w: 680, h: 520, rmax: 20, emax: 0.8 };
+const EF = { x0: 1080, y0: 860, w: 680, h: 440, rmax: 20, emax: 0.8 };
 const efx = (r) => EF.x0 + ((r - 1) / (EF.rmax - 1)) * EF.w;
 const efy = (v) => EF.y0 - (v / EF.emax) * EF.h;
 function formula(x, y, size, col = C.ink) {
@@ -1095,31 +1097,31 @@ function partSqueeze(t, th) {
   // the curve
   const chartA = span(t, s('c2', 0.2), s('c9', 0.2), 0.6, 0.6);
   A(chartA, () => {
-    formula(1000, 300, 64);
-    A(seg(t, s('c3', 0.2), s('c3', 0.8)), () => mono('γ = 1.4 FOR AIR', 1520, 296, { size: 34, color: C.dim }));
+    A(seg(t, s('c3', 0.1), s('c3', 0.7)), () => { formula(1000, 300, 64); mono('γ = 1.4 FOR AIR', 1500, 296, { size: 34, color: C.dim }); });
     axes(EF.x0, EF.y0, EF.w, EF.h);
     for (const v of [0.2, 0.4, 0.6]) { stroke(1.4, C.ghost); line(EF.x0, efy(v), EF.x0 + EF.w, efy(v)); mono(`${v * 100}%`, EF.x0 - 14, efy(v) + 11, { align: 'right', color: C.faint }); }
     for (const r of [1, 5, 10, 15, 20]) mono(`${r}`, efx(r), EF.y0 + 42, { align: 'center', color: C.faint });
     label('COMPRESSION RATIO', EF.x0 + EF.w, EF.y0 + 92, { size: 32, align: 'right', color: C.soft });
-    label('IDEAL EFFICIENCY', EF.x0 + 10, EF.y0 - EF.h - 6, { size: 32, color: C.soft });
+    label('IDEAL EFFICIENCY', EF.x0 + 16, EF.y0 - EF.h + 4, { size: 32, color: C.soft });
     A(seg(t, s('c8', 0.3), s('c8', 1.0)), () => {
       ctx.fillStyle = rgba(C.dim, 0.16); ctx.fillRect(efx(8), EF.y0 - EF.h, efx(12) - efx(8), EF.h);
       label('MOST PETROL CARS', (efx(8) + efx(12)) / 2, EF.y0 - EF.h + 40, { size: 32, align: 'center', color: C.dim });
     });
     stroke(5, C.ink); plot((r) => [efx(r), efy(eta(r))], 1, 20, 120, eout(seg(t, s('c2', 0.3), e('c2'))));
-    const pt = (r, key, d, dx = 0) => A(seg(t, s(key, d), s(key, d + 0.4)), () => {
+    const pt = (r, key, d, dx, dy, align) => A(seg(t, s(key, d), s(key, d + 0.4)), () => {
       dot(efx(r), efy(eta(r)), 11, C.flame);
-      chip(`${r} : 1 → ${pct(eta(r))}`, efx(r) + dx, efy(eta(r)) - 50, { bg: C.flame, size: 32, align: 'center' });
+      chip(`${r} : 1  ${pct(eta(r))}`, efx(r) + dx, efy(eta(r)) + dy, { bg: C.flame, size: 32, align });
     });
-    pt(4, 'c4', 0.4, 40); pt(10, 'c5', 0.2); pt(16, 'c5', 1.6, -20);
+    pt(4, 'c4', 0.4, 22, 44, 'left'); pt(10, 'c5', 0.2, 0, 60, 'center'); pt(16, 'c5', 1.6, 0, 60, 'center');
     A(seg(t, s('c6', 0.3), s('c6', 1.0)), () => {
       ctx.setLineDash([12, 9]); stroke(3, C.line); line(EF.x0, efy(0.3), EF.x0 + EF.w, efy(0.3)); ctx.setLineDash([]);
       label('A REAL PETROL ENGINE ≈ 30%', efx(10.6), efy(0.3) + 46, { size: 32, color: C.line });
     });
     A(seg(t, s('c7', 0.3), s('c7', 1.0)), () => {
-      stroke(4, C.dim); ctx.beginPath(); ctx.moveTo(efx(4), efy(0.16)); ctx.lineTo(efx(13), efy(0.16)); ctx.stroke();
-      ctx.fillStyle = C.dim; ctx.beginPath(); ctx.moveTo(efx(13) + 18, efy(0.16)); ctx.lineTo(efx(13), efy(0.16) - 10); ctx.lineTo(efx(13), efy(0.16) + 10); ctx.closePath(); ctx.fill();
-      label('SQUEEZE HARDER, MORE WORK', efx(4), efy(0.16) - 18, { size: 32, color: C.dim });
+      const ay = efy(0.07);
+      stroke(4, C.dim); ctx.beginPath(); ctx.moveTo(efx(4), ay); ctx.lineTo(efx(13), ay); ctx.stroke();
+      ctx.fillStyle = C.dim; ctx.beginPath(); ctx.moveTo(efx(13) + 18, ay); ctx.lineTo(efx(13), ay - 10); ctx.lineTo(efx(13), ay + 10); ctx.closePath(); ctx.fill();
+      label('SQUEEZE HARDER: MORE WORK', efx(4), ay - 18, { size: 32, color: C.dim });
     });
   });
   // knock: the chamber seen from above, and its pressure
@@ -1176,7 +1178,7 @@ function partSqueeze(t, th) {
       label('NORMAL', x0 + w - 4, y0 - h * 0.25, { size: 32, color: C.line, align: 'right' });
       label('KNOCK', x0 + w * 0.62, y0 - h + 20, { size: 32, color: C.hot });
     });
-    A(span(t, s('c13', 0.2), at(6) + 1, 0.5, 0.5), () => chip('OCTANE RATING = RESISTANCE TO SELF-IGNITION', 1000, 920, { bg: C.dim, size: 32 }));
+    A(span(t, s('c13', 0.2), s('c14', 0.3), 0.5, 0.5), () => chip('OCTANE RATING = RESISTANCE TO SELF-IGNITION', 1000, 930, { bg: C.dim, size: 32 }));
   });
   // a knock sensor on the block
   A(span(t, s('c14', 0.2), at(6) + 1, 0.5, 0.5) * engineAlpha(t), () => {
@@ -1184,7 +1186,7 @@ function partSqueeze(t, th) {
     k.rrect(x - 24, y - 24, 48, 48, 8); ctx.fillStyle = C.steelMid; ctx.fill(); stroke(2, C.steelHi); ctx.stroke();
     stroke(2.4, C.dim); for (let i = 1; i <= 3; i++) { ctx.beginPath(); ctx.arc(x, y, 30 + i * 16, Math.PI * 0.75, Math.PI * 1.25); ctx.stroke(); }
     label('KNOCK SENSOR', x - 20, y + 74, { size: 32, color: C.dim, align: 'center' });
-    chip('KNOCK HEARD → SPARK LATER', 1480, 860, { bg: C.dim, size: 32 });
+    A(seg(t, s('c14', 0.4), s('c14', 0.9)), () => chip('KNOCK HEARD: FIRE THE SPARK LATER', 1000, 930, { bg: C.dim, size: 32 }));
   });
 }
 
@@ -1255,7 +1257,7 @@ function partTiming(t, th) {
     A(span(t, s('v10', 0.2), at(7) + 1, 0.4, 0.4), () => label('VARIABLE VALVE TIMING SHIFTS THE CAM', 1000, 372, { size: 34, color: C.dim }));
   });
   // the overlap, at the head
-  A(span(t, s('v6', 0.4), e('v8', 0.5), 0.5, 0.5) * engineAlpha(t), () => chip('BOTH VALVES OPEN', CX, 96, { align: 'center', size: 32 }));
+  A(span(t, s('v6', 0.4), e('v8', 0.5), 0.5, 0.5) * engineAlpha(t), () => chip('BOTH VALVES OPEN', CX + 330, 330, { size: 32 }));
 }
 
 // =====================================================================================================
@@ -1287,13 +1289,13 @@ function miniCylinder(x, th, n, flashOn) {
   return { c, burning };
 }
 function partCylinders(t, th) {
-  const fourA = span(t, s('n2', -0.4), at(8) + 1.2, 0.8, 0.6);
+  const fourA = span(t, s('n1', 0.1), at(8) + 1.2, 0.8, 0.6);
   A(fourA, () => {
     const xs = [210, 380, 550, 720];
     stroke(10, C.steel); line(150, 800, 790, 800);
     let firing = null;
-    xs.forEach((x, i) => { const st = miniCylinder(x, th, i + 1, true); if (st.burning) firing = i + 1; });
-    label('A STRAIGHT FOUR', 136, 400, { size: 36, color: C.soft, weight: 500, spacing: '2px' });
+    xs.forEach((x, i) => A(i ? seg(t, s('n2', 0.1), s('n2', 0.9)) : 1, () => { const st = miniCylinder(x, th, i + 1, true); if (st.burning) firing = i + 1; }));
+    A(seg(t, s('n2', 0.1), s('n2', 0.9)), () => label('A STRAIGHT FOUR', 136, 400, { size: 36, color: C.soft, weight: 500, spacing: '2px' }));
     A(seg(t, s('n5', 0.2), s('n5', 0.9)), () => {
       label('FIRING ORDER', 150, 930, { size: 34, color: C.soft });
       ORDER.forEach((n, i) => {
@@ -1302,6 +1304,12 @@ function partCylinders(t, th) {
         label(String(n), x, 936, { size: 40, weight: 600, align: 'center', color: on ? C.paper : C.ink });
       });
     });
+  });
+  // one cylinder alone
+  A(span(t, s('n1', 0.3), s('n3', 0.1), 0.5, 0.5), () => {
+    label('ONE CYLINDER', 1000, 330, { size: 40, color: C.dim, weight: 500, spacing: '3px' });
+    mono('1 PUSH PER 720°', 1000, 430, { size: 64, weight: 700 });
+    A(seg(t, s('n2', 0.3), s('n2', 0.9)), () => label('SO: SEVERAL CYLINDERS ON ONE CRANKSHAFT', 1004, 510, { size: 36, color: C.soft, weight: 400 }));
   });
   // the spacing rule
   A(span(t, s('n3', 0.1), s('n6', 0.2), 0.5, 0.5), () => {
@@ -1331,9 +1339,8 @@ function partCylinders(t, th) {
         const v = torqueN(n, cc) * scale; dot(x0 + (cc / 720) * w, y0 - v, 8, C.ink);
       });
     });
-    A(seg(t, s('n9', 0.4), s('n9', 1.0)), () => label('ZERO LINE', 1800, 440 + 2 * 210 + 36, { size: 32, color: C.faint, align: 'right' }));
   });
-  A(span(t, s('n10', 0.2), at(8) + 1, 0.5, 0.5), () => chip('EVEN SPACING → LESS VIBRATION', 1000, 960, { bg: C.dim, size: 32 }));
+  A(span(t, s('n10', 0.2), at(8) + 1, 0.5, 0.5), () => chip('EVEN SPACING: LESS VIBRATION', 1000, 955, { bg: C.dim, size: 32 }));
 }
 
 // =====================================================================================================
@@ -1381,6 +1388,7 @@ function partDiesel(t, th) {
 // =====================================================================================================
 function partRecap(t, th) {
   const c = cyc(th);
+  A(seg(t, s('z1', 0.1), s('z1', 0.7)), () => label('THE WHOLE IDEA', 1000, 200, { size: 40, color: C.dim, weight: 500, spacing: '4px' }));
   A(seg(t, s('z2', 0.1), s('z2', 0.7)), () => {
     STROKES.forEach(([name, , col], i) => {
       const x = 1000 + i * 205, y = 300, live = strokeIdx(c) === i;
@@ -1391,7 +1399,7 @@ function partRecap(t, th) {
   });
   A(seg(t, s('z3', 0.2), s('z3', 0.8)), () => {
     formula(1000, 530, 52);
-    label('SQUEEZE HARDER → MORE WORK, UNTIL IT KNOCKS', 1000, 590, { size: 34, color: C.dim });
+    label('SQUEEZE HARDER FOR MORE WORK, UNTIL IT KNOCKS', 1000, 590, { size: 34, color: C.dim });
   });
   A(seg(t, s('z4', 0.2), s('z4', 0.8)), () => {
     chip('1862 · PATENTED', 1000, 690, { bg: C.line, size: 34 });
@@ -1404,12 +1412,12 @@ function partRecap(t, th) {
 // =====================================================================================================
 // Credits
 // =====================================================================================================
-const MUSIC = ['“Beauty Flow” and “Limit 70”', 'Kevin MacLeod (incompetech.com) · CC BY 4.0'];
+const MUSIC = ['“Beauty Flow” Kevin MacLeod (incompetech.com) · CC BY 4.0', '“Limit 70” Kevin MacLeod (incompetech.com) · CC BY 4.0'];
 function credits(t) {
   const a = seg(t, e('z6', 0.8), e('z6', 2.0));
   if (a <= 0) return;
   A(a, () => {
-    ctx.fillStyle = 'rgba(5,11,19,0.82)'; ctx.fillRect(0, 0, W, H);
+    ctx.fillStyle = 'rgba(5,11,19,0.94)'; ctx.fillRect(0, 0, W, H);
     const bx = 210, by = 110, bw = 1500, bh = 820;
     ctx.fillStyle = 'rgba(8,16,26,0.94)'; ctx.fillRect(bx, by, bw, bh);
     stroke(3, C.line); ctx.strokeRect(bx, by, bw, bh); stroke(1.4, rgba(C.line, 0.6)); ctx.strokeRect(bx + 10, by + 10, bw - 20, bh - 20);
@@ -1442,7 +1450,7 @@ Kit.scene({
     const th = theta(t);
     A(seg(t, 0, 1.0), () => engine(th, t, engineAlpha(t)));
     header(t);
-    const parts = [partOpen, partMachine, partStrokes, partHistory, partPV, partSqueeze, partTiming, partCylinders, partDiesel, partRecap];
+    const parts = [partOpen, partMachine, partStrokes, partHistory, partPV, partSqueeze, partTiming, partCylinders, partDiesel, (tt, h) => A(1 - seg(tt, e('z6', 0.6), e('z6', 1.6)), () => partRecap(tt, h))];
     const bounds = [0, ...CH.map((c) => c.at), DURATION + 1];
     parts.forEach((fn, i) => {
       const a = i === 0 ? 0 : bounds[i] + 2.8, b = i + 1 < bounds.length - 1 ? bounds[i + 1] + 1.2 : DURATION + 1;

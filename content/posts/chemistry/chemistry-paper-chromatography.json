@@ -64,7 +64,14 @@
           "start": 71.33,
           "end": 77.87
         }
-      ]
+      ],
+      "ratings": { "complexity": 4, "shock": 5 }
+    },
+    {
+      "type": "explore",
+      "lab": "paper-chromatography",
+      "prompt": "Dip the paper and let the solvent climb. Tap bands to measure their Rf, then work out which dyes are in the mystery ink.",
+      "takeaway": "Each dye climbs its own share of the solvent’s distance, its Rf, whatever ink it is in: here 0.8 for the yellow, 0.5 for the magenta, 0.2 for the blue. Matching Rfs unmasks the mystery ink."
     },
     {
       "type": "text",

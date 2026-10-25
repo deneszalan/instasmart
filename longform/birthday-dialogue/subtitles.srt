@@ -1,0 +1,483 @@
+1
+00:00:01,000 --> 00:00:03,690
+>> Imagine a party with 23 guests.
+
+2
+00:00:03,770 --> 00:00:06,340
+>> What are the chances that two of them share a birthday?
+
+3
+00:00:06,420 --> 00:00:11,860
+>> With 365 days to choose from, a match sounds pretty unlikely.
+
+4
+00:00:11,940 --> 00:00:15,750
+>> And yet it's more likely than not. The chance is 50.7%.
+
+5
+00:00:15,830 --> 00:00:19,590
+>> That's better than a coin toss, with just 23 people?
+
+6
+00:00:19,670 --> 00:00:25,730
+>> Yes. And with 70 guests, it's 99.9%, which is almost certain.
+
+7
+00:00:25,810 --> 00:00:31,030
+>> This is the birthday problem. Let's find out why it works.
+
+8
+00:00:36,130 --> 00:00:38,570
+>> Let's set some rules for our party first.
+
+9
+00:00:38,650 --> 00:00:46,520
+>> Each birthday is one of 365 days, all equally likely, and we'll leave out February 29.
+
+10
+00:00:46,600 --> 00:00:51,950
+>> Now the guests arrive one at a time, and we mark each birthday on the calendar.
+
+11
+00:00:52,030 --> 00:00:55,750
+>> So far, every guest has a day to themselves.
+
+12
+00:00:55,830 --> 00:01:03,220
+Until guest 20 lands on a day that's already taken. It's November 19, the birthday of guest 7.
+
+13
+00:01:03,300 --> 00:01:05,930
+>> Twenty guests, and we already have a match.
+
+14
+00:01:06,010 --> 00:01:12,270
+That's just one party, though. So here are 1,000 more, each with 23 random guests.
+
+15
+00:01:12,350 --> 00:01:18,910
+>> 511 of them have a shared birthday. That's about half, just as the maths says.
+
+16
+00:01:18,990 --> 00:01:26,220
+>> That's far fewer guests than our instincts suggest. In one study, most people markedly overestimated the number needed.
+
+17
+00:01:26,300 --> 00:01:28,290
+>> So who first noticed this?
+
+18
+00:01:28,370 --> 00:01:33,110
+>> It's usually credited to the mathematician Harold Davenport, around 1927.
+
+19
+00:01:33,190 --> 00:01:39,650
+>> But he didn't publish it, or claim it as his own, because he couldn't believe nobody had stated it before.
+
+20
+00:01:39,730 --> 00:01:44,900
+>> The first published version came from Richard von Mises, in 1939.
+
+21
+00:01:47,500 --> 00:01:50,290
+>> So why does our intuition get this so wrong?
+
+22
+00:01:50,370 --> 00:01:53,920
+>> It's natural to think about your own birthday, and whether anyone matches it.
+
+23
+00:01:54,000 --> 00:02:00,420
+>> Right, and with 22 other guests, the chance that someone shares yours is only about 6%.
+
+24
+00:02:00,500 --> 00:02:04,220
+>> Six percent? That's tiny.
+
+25
+00:02:04,300 --> 00:02:08,520
+>> But any two guests can make a match, not just you and someone else.
+
+26
+00:02:08,600 --> 00:02:12,680
+>> So let's draw a line between every pair of guests.
+
+27
+00:02:12,760 --> 00:02:18,270
+>> The first guest pairs with 22 others, the next with 21 more, and so on.
+
+28
+00:02:18,350 --> 00:02:20,080
+>> The lines just keep coming.
+
+29
+00:02:20,160 --> 00:02:25,830
+That's 23 × 22 ÷ 2, which makes 253 pairs.
+
+30
+00:02:25,910 --> 00:02:30,780
+>> So that's 253 chances for a match, not 22.
+
+31
+00:02:30,860 --> 00:02:37,340
+>> Exactly. Only 22 of those pairs include you. The other 231 are matches you weren't counting.
+
+32
+00:02:37,420 --> 00:02:46,380
+>> And pairs grow fast. Double the guests to 46, and there are 1,035 pairs, which is about four times as many.
+
+33
+00:02:46,460 --> 00:02:51,290
+>> So pairs grow like the square of the guests. That will matter later.
+
+34
+00:02:53,890 --> 00:02:59,790
+For the exact chance, it's easier to work out the opposite, which is that no two guests share a birthday.
+
+35
+00:02:59,870 --> 00:03:05,110
+>> That's the chance that everyone is different. Then the rest is the chance of a match.
+
+36
+00:03:05,190 --> 00:03:12,560
+So, the first guest can have any birthday, which gives 365 days out of 365.
+
+37
+00:03:12,640 --> 00:03:17,660
+>> The second must miss the first, so it's 364 out of 365.
+
+38
+00:03:17,740 --> 00:03:24,900
+>> The third must miss both, which leaves 363 out of 365, and so on.
+
+39
+00:03:24,980 --> 00:03:32,860
+>> And guest 23 must miss all 22 before, which leaves 343 out of 365.
+
+40
+00:03:32,940 --> 00:03:40,260
+>> Multiply all 23 fractions, and the chance that every birthday differs is 49.3%.
+
+41
+00:03:40,340 --> 00:03:44,100
+>> So the chance of at least one shared birthday is 50.7%.
+
+42
+00:03:44,180 --> 00:03:47,590
+>> Every one of those fractions looks so harmless, though.
+
+43
+00:03:47,670 --> 00:03:52,760
+>> Each one is close to 1, but there are many, and each new guest has more birthdays to avoid.
+
+44
+00:03:52,840 --> 00:03:57,730
+>> Let's do the same sum for every size of party, and watch the chance climb.
+
+45
+00:03:57,810 --> 00:04:06,530
+>> With 10 guests, the chance is 11.7%; with 30, it's 70.6%; with 50, it's 97%.
+
+46
+00:04:06,610 --> 00:04:13,880
+>> It passes 99% at 57 guests, and 99.9% at 70.
+
+47
+00:04:13,960 --> 00:04:16,360
+>> So when is a match actually guaranteed?
+
+48
+00:04:16,440 --> 00:04:22,760
+>> It's only at 366 guests, when there are more guests than days.
+
+49
+00:04:26,160 --> 00:04:32,900
+Let's watch it happen. Guests enter a room one by one, and we stop at the first shared birthday.
+
+50
+00:04:32,980 --> 00:04:36,260
+>> In this room, the first match came with guest 28.
+
+51
+00:04:36,340 --> 00:04:41,400
+>> In this one, it came with guest 33, and in this one, with guest 18.
+
+52
+00:04:41,480 --> 00:04:44,140
+>> It really does vary from room to room.
+
+53
+00:04:44,220 --> 00:04:52,090
+>> So let's run a thousand rooms. Each dot is one room, placed at the guest who brought its first match.
+
+54
+00:04:52,340 --> 00:04:57,330
+>> A few rooms matched very early, with just 3 guests. A few went past 60.
+
+55
+00:04:57,410 --> 00:05:03,550
+>> In 511 of the 1,000 rooms, the first match came by guest 23.
+
+56
+00:05:03,630 --> 00:05:05,020
+>> Just over half, then.
+
+57
+00:05:05,100 --> 00:05:12,840
+>> And on average, the first match took 24.7 guests. The theory says about 24.6.
+
+58
+00:05:12,920 --> 00:05:19,360
+>> Real groups behave the same way. At the 2014 World Cup, each of the 32 squads had 23 players.
+
+59
+00:05:19,440 --> 00:05:23,030
+>> So every squad was one of our rooms of 23.
+
+60
+00:05:23,110 --> 00:05:30,500
+>> And an analysis of the squad lists suggested that 16 of them had a shared birthday, which is exactly half.
+
+61
+00:05:30,580 --> 00:05:34,650
+>> Five of those squads even had two pairs.
+
+62
+00:05:38,250 --> 00:05:43,060
+>> Now let's change the question. How many people do you need for an even chance that someone shares your birthday?
+
+63
+00:05:43,140 --> 00:05:48,280
+>> Surely it's half of 365, so about 183?
+
+64
+00:05:48,360 --> 00:05:53,140
+>> Let's see. Each person matches you with a chance of 1 in 365.
+
+65
+00:05:53,220 --> 00:06:01,710
+>> So the chance that nobody does is 364 out of 365, multiplied once for every person.
+
+66
+00:06:01,790 --> 00:06:07,960
+>> That shrinks slowly. It takes 253 people to reach an even chance.
+
+67
+00:06:08,040 --> 00:06:13,730
+>> That's far more than half of 365. Where do all the extra people go?
+
+68
+00:06:13,810 --> 00:06:17,660
+>> Many of them share birthdays with each other, so they don't cover any new days.
+
+69
+00:06:17,740 --> 00:06:26,380
+>> Drop 253 random birthdays on the calendar, and they land on only 180 different days.
+
+70
+00:06:26,460 --> 00:06:30,620
+>> So your birthday has only about an even chance of being one of them.
+
+71
+00:06:30,700 --> 00:06:37,690
+>> Now look at that number again. 253 is exactly the number of pairs among 23 guests.
+
+72
+00:06:37,770 --> 00:06:39,080
+>> Is that a coincidence?
+
+73
+00:06:39,160 --> 00:06:46,600
+>> Not really. Both questions need about 253 chances, each of 1 in 365.
+
+74
+00:06:46,680 --> 00:06:57,810
+>> A 1-in-365 chance becomes an even bet after about 253 tries. That's 365 × ln 2.
+
+75
+00:06:58,510 --> 00:07:05,830
+>> So the room of 23 and the crowd of 253 are really the same sum.
+
+76
+00:07:08,430 --> 00:07:14,120
+And that gives us a quick rule for any number of days, not just 365.
+
+77
+00:07:14,200 --> 00:07:17,470
+>> With n guests, there are about n² ÷ 2 pairs.
+
+78
+00:07:17,550 --> 00:07:22,320
+>> It's like half of a square grid, with every guest against every other guest.
+
+79
+00:07:22,400 --> 00:07:28,090
+>> For an even chance we need about 253 pairs, so n² should be about 506.
+
+80
+00:07:28,170 --> 00:07:35,180
+>> The square root of 506 is about 22.5. Round up, and you get 23.
+
+81
+00:07:35,260 --> 00:07:40,560
+>> In general, you need about 1.18 × √days.
+
+82
+00:07:40,640 --> 00:07:43,360
+>> So what about a year with a million days?
+
+83
+00:07:43,440 --> 00:07:49,290
+>> With a million equally likely days, just 1,178 people would give an even chance.
+
+84
+00:07:49,370 --> 00:07:53,260
+>> Out of a million days? That's about a tenth of a percent.
+
+85
+00:07:53,340 --> 00:07:58,910
+>> The real surprise is that the people needed grow only like the square root of the days.
+
+86
+00:08:01,510 --> 00:08:10,710
+Of course, our party made some simplifications. It had 365 equally likely days, no February 29, and no twins.
+
+87
+00:08:10,790 --> 00:08:18,730
+>> And real birthdays aren't spread evenly. In the US, more babies tend to be born in September and October.
+
+88
+00:08:18,810 --> 00:08:29,790
+>> From 1973 to 1999, September 16 was the most common US birthday, and Christmas Day the rarest, apart from February 29.
+
+89
+00:08:29,870 --> 00:08:35,830
+>> So does that break the maths? No, any unevenness only makes a shared birthday more likely.
+
+90
+00:08:35,910 --> 00:08:38,250
+>> More likely? Why's that?
+
+91
+00:08:38,330 --> 00:08:43,650
+>> Take an extreme case, and imagine everyone was born in the first half of the year.
+
+92
+00:08:43,730 --> 00:08:46,890
+>> Then just 17 guests would give a better-than-even chance.
+
+93
+00:08:46,970 --> 00:08:51,880
+>> There are fewer days to go round, so more people crowd onto the same ones.
+
+94
+00:08:51,960 --> 00:08:56,300
+>> Real birthdays are only slightly uneven, though, so the real-world answer is still 23.
+
+95
+00:08:56,380 --> 00:09:02,680
+>> And twins nearly always share a birthday, which can only raise the chance.
+
+96
+00:09:05,280 --> 00:09:09,000
+The same maths matters in computer security, too.
+
+97
+00:09:09,080 --> 00:09:14,090
+>> A hash function turns any file into a short digital fingerprint of fixed length.
+
+98
+00:09:14,170 --> 00:09:19,680
+>> A 64-bit fingerprint has about 18 billion billion possible values.
+
+99
+00:09:19,760 --> 00:09:21,480
+>> That sounds like plenty.
+
+100
+00:09:21,560 --> 00:09:26,250
+>> Still, two different files with the same fingerprint make a collision.
+
+101
+00:09:26,330 --> 00:09:31,100
+>> And fingerprints are like birthdays, in a year with an enormous number of days.
+
+102
+00:09:31,180 --> 00:09:38,370
+>> So collisions show up after about the square root of that number. That's 2 to the power of half the bits.
+
+103
+00:09:38,450 --> 00:09:43,030
+>> For 64 bits, about 5 billion tries give an even chance of a collision.
+
+104
+00:09:43,110 --> 00:09:46,080
+>> And to match one particular fingerprint?
+
+105
+00:09:46,160 --> 00:09:50,650
+>> That's like matching your own birthday, and it takes about 13 billion billion tries.
+
+106
+00:09:50,730 --> 00:09:57,750
+>> That's the idea behind the birthday attack. Imagine a forger with a fair contract and a fraudulent one.
+
+107
+00:09:57,830 --> 00:10:03,700
+>> She makes many harmless variations of each, such as an extra comma, a double space or a synonym.
+
+108
+00:10:03,780 --> 00:10:09,900
+>> When a fair version and a fraudulent version share a fingerprint, she has her collision.
+
+109
+00:10:09,980 --> 00:10:15,190
+>> Her victim signs the fair version, and the signature fits the fraudulent one just as well.
+
+110
+00:10:15,270 --> 00:10:18,380
+>> That's sneaky. So how do you defend against it?
+
+111
+00:10:18,460 --> 00:10:23,120
+>> You use longer fingerprints, with about twice as many bits as brute force alone would demand.
+
+112
+00:10:23,200 --> 00:10:36,070
+>> SHA-256 has 256 bits, so a collision takes around 2 to the 128 tries. That's a 39-digit number.
+
+113
+00:10:36,720 --> 00:10:42,050
+>> So a party puzzle tells engineers how long their fingerprints need to be.
+
+114
+00:10:44,650 --> 00:10:47,010
+So, let's go back to the party.
+
+115
+00:10:47,090 --> 00:10:52,580
+>> 23 guests sound like too few, because we picture matches with ourselves.
+
+116
+00:10:52,660 --> 00:10:56,900
+>> But every pair is a chance, and 23 guests make 253 pairs.
+
+117
+00:10:56,980 --> 00:11:01,990
+>> That's enough for a better-than-even chance of 50.7%.
+
+118
+00:11:02,070 --> 00:11:05,590
+>> It still feels wrong, doesn't it? Even when you can see every pair.
+
+119
+00:11:05,670 --> 00:11:10,460
+>> That's what makes it a paradox. It seems wrong at first, but it's true.
+
+120
+00:11:10,540 --> 00:11:14,800
+>> So next time you're in a room of 23 people or more, ask around.
+
+121
+00:11:14,880 --> 00:11:19,600
+>> More often than not, two of you will share a birthday.

@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: And in eighteen sixty-five, James Clark Maxwell predicted it's an electromagnetic wave, so the particle idea seemed finished.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: Seemed.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: So how do two slits make a whole row of stripes, not just two bands?
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERA: Each slit acts as a new source, sending out waves that spread in circles.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERB: And to reach a point on the screen, one wave usually travels a little farther than the other.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERA: If that extra distance is a whole number of wavelengths, crests arrive together, and the spot is bright.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERB: And if it's half a wavelength, crest meets trough, and the spot is dark.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERA: Slide along the screen and the extra distance grows steadily, so the stripes go bright, dark, bright, dark.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERB: So the spacing of the stripes should follow from the geometry.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERA: It does. It's the wavelength, times the distance to the screen, divided by the gap between the slits.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERB: Take slits half a millimetre apart, light with a wavelength of zero point six micrometres, and a screen one metre away.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERA: Then the stripes come out one point two millimetres apart.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: Move the screen twice as far away, and they spread twice as wide.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERB: And if the slits move closer together?
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: They spread out too. Young described stripes wider also in the same proportion as the apertures are closer to each other.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: And it works backwards too. Young used fringes like these to estimate the wavelengths of colours, close to modern values.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: So he measured a wave far too small to see, just from the stripes.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERB: But the wave picture had a crack in it.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERB: In 1905, Albert Einstein proposed that light's energy comes in separate lumps, now called photons.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERA: Lumps of light? After Young and Maxwell?

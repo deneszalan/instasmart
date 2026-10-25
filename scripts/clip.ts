@@ -161,6 +161,7 @@ function main(): number {
     credit: '<footage author · licence · excerpt>',
     href: '<https:// page of the footage>',
     ...(values.music ? { music: '<“Title” artist (source) · licence>' } : {}),
+    ratings: { complexity: '<1–10, see "Rating a short" in content/README.md>', shock: '<1–10>' },
   };
   console.log(`\nSlide to add to the post:\n${JSON.stringify(slide, null, 2)}`);
   return 0;

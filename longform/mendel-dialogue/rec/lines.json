@@ -1,0 +1,607 @@
+[
+ {
+  "key": "o1",
+  "who": "A",
+  "spoken": "Cross a pea plant that has round seeds with one that has wrinkled seeds, and every seed you get is round."
+ },
+ {
+  "key": "x1",
+  "who": "B",
+  "spoken": "So the wrinkles just disappear?"
+ },
+ {
+  "key": "o2",
+  "who": "A",
+  "spoken": "That's how it looks. But grow those round seeds into plants, and wrinkled seeds come back, about one in four."
+ },
+ {
+  "key": "o3",
+  "who": "B",
+  "spoken": "A friar counted thousands of them in a monastery garden, and out of his counts came the first rules of genetics."
+ },
+ {
+  "key": "o4",
+  "who": "A",
+  "spoken": "This is the story of Gregor Mendel's peas, and of numbers that some called too good to be true."
+ },
+ {
+  "key": "g1",
+  "who": "B",
+  "spoken": "Mendel was a friar at Saint Thomas's Abbey in Brno, which was called Brünn back then, in the Austrian Empire."
+ },
+ {
+  "key": "g2",
+  "who": "A",
+  "spoken": "From eighteen fifty-six to eighteen sixty-three, he used the abbey's garden to cross pea plants and follow their offspring."
+ },
+ {
+  "key": "x3",
+  "who": "B",
+  "spoken": "Why peas, of all plants?"
+ },
+ {
+  "key": "g3",
+  "who": "A",
+  "spoken": "Pea flowers fertilise themselves in the bud, so to cross two plants, Mendel opened a young bud and pulled out its stamens."
+ },
+ {
+  "key": "g4",
+  "who": "B",
+  "spoken": "And then he dusted it with pollen from another plant."
+ },
+ {
+  "key": "x4",
+  "who": "A",
+  "spoken": "He called that somewhat laborious, but almost always successful."
+ },
+ {
+  "key": "g5",
+  "who": "B",
+  "spoken": "He tested 34 varieties, kept 22 that bred true, and picked seven traits, each with two clear forms."
+ },
+ {
+  "key": "g6",
+  "who": "A",
+  "spoken": "Seeds were round or wrinkled, and yellow or green. Seed coats were grey or white, with violet or white flowers."
+ },
+ {
+  "key": "g7",
+  "who": "B",
+  "spoken": "Pods were inflated or pinched, green or yellow. Flowers grew along the stem or at the tip, and stems were tall or short."
+ },
+ {
+  "key": "x5",
+  "who": "A",
+  "spoken": "He chose them that way on purpose. Traits that came in degrees, more or less, he left out."
+ },
+ {
+  "key": "g9",
+  "who": "B",
+  "spoken": "And he counted. Over those years, he grew and tested some 28,000 plants, most of them peas."
+ },
+ {
+  "key": "r1",
+  "who": "B",
+  "spoken": "Take seed shape. Mendel crossed plants with round seeds and plants with wrinkled ones."
+ },
+ {
+  "key": "r2",
+  "who": "A",
+  "spoken": "The shape shows in the seed itself, so he saw the answer that same year. Every seed was round."
+ },
+ {
+  "key": "r3",
+  "who": "A",
+  "spoken": "He coined the words for it. Round was dominant, and wrinkled, which had vanished, was recessive."
+ },
+ {
+  "key": "r4",
+  "who": "B",
+  "spoken": "The next year, he sowed those hybrid seeds and let the plants fertilise themselves."
+ },
+ {
+  "key": "r5",
+  "who": "A",
+  "spoken": "And in their pods, wrinkled seeds were back, often right next to round ones, with nothing in between."
+ },
+ {
+  "key": "x8",
+  "who": "B",
+  "spoken": "So the wrinkle skipped a generation. Where was it hiding?"
+ },
+ {
+  "key": "r6",
+  "who": "A",
+  "spoken": "First, he counted. From two hundred and fifty-three hybrid plants, he got seven thousand, three hundred and twenty-four seeds."
+ },
+ {
+  "key": "x40",
+  "who": "B",
+  "spoken": "And 5,474 of them were round, and 1,850 wrinkled."
+ },
+ {
+  "key": "r7",
+  "who": "A",
+  "spoken": "That's two point nine six round seeds for every wrinkled one, which is close to three to one."
+ },
+ {
+  "key": "r8",
+  "who": "B",
+  "spoken": "He did the same for all seven traits, and each one landed near three to one, from 2.82 to 3.15."
+ },
+ {
+  "key": "x9",
+  "who": "A",
+  "spoken": "Seven different traits, and the same ratio every time?"
+ },
+ {
+  "key": "r9",
+  "who": "B",
+  "spoken": "Near enough. All seven together gave 14,949 dominant to 5,010 recessive, which is 2.98 to one."
+ },
+ {
+  "key": "r10",
+  "who": "A",
+  "spoken": "So why three to one? And how can a trait vanish for a generation, then come back unchanged?"
+ },
+ {
+  "key": "c1",
+  "who": "B",
+  "spoken": "Mendel's answer, in today's words, is that each plant carries two copies of a gene for seed shape, one from each parent."
+ },
+ {
+  "key": "c2",
+  "who": "A",
+  "spoken": "Let's write the round version as a capital R, and the wrinkled one as a small r."
+ },
+ {
+  "key": "c4",
+  "who": "B",
+  "spoken": "A hybrid gets a capital R from one parent and a small r from the other, and one capital R is enough to make the seed round."
+ },
+ {
+  "key": "x11",
+  "who": "A",
+  "spoken": "And the small r? Is it gone?"
+ },
+ {
+  "key": "c5",
+  "who": "B",
+  "spoken": "Not at all. That's dominance. The small r stays hidden, and it can still be passed on."
+ },
+ {
+  "key": "c6",
+  "who": "A",
+  "spoken": "Each pollen grain and egg cell gets just one copy, so a hybrid's are half capital R and half small r."
+ },
+ {
+  "key": "c7",
+  "who": "B",
+  "spoken": "And which pollen meets which egg is, in Mendel's own words, a matter of chance."
+ },
+ {
+  "key": "x12",
+  "who": "A",
+  "spoken": "Like tossing two coins, one for the pollen and one for the egg."
+ },
+ {
+  "key": "c8",
+  "who": "B",
+  "spoken": "Mendel wrote out the four equally likely meetings as fractions, the pollen over the egg cell."
+ },
+ {
+  "key": "c9",
+  "who": "A",
+  "spoken": "And only small r over small r, one in four, makes a wrinkled seed."
+ },
+ {
+  "key": "x13",
+  "who": "B",
+  "spoken": "The other three hold a capital R, so they're round."
+ },
+ {
+  "key": "c10",
+  "who": "A",
+  "spoken": "Today the same bookkeeping is drawn as a square, which Reginald Punnett devised decades later."
+ },
+ {
+  "key": "c11",
+  "who": "B",
+  "spoken": "It predicts one pure round, two hybrids and one pure wrinkled, in every four."
+ },
+ {
+  "key": "c12",
+  "who": "A",
+  "spoken": "Which means two round seeds in three should be hybrids, still hiding a small r. And Mendel tested that."
+ },
+ {
+  "key": "x14",
+  "who": "B",
+  "spoken": "How do you test for something you can't see?"
+ },
+ {
+  "key": "x15",
+  "who": "A",
+  "spoken": "You grow the seed, and look at the seeds its plant makes."
+ },
+ {
+  "key": "c13",
+  "who": "B",
+  "spoken": "Of 565 plants grown from round seeds, 372 made both kinds of seed, and 193 made only round ones."
+ },
+ {
+  "key": "c14",
+  "who": "A",
+  "spoken": "That's one point nine three to one, close to the two to one he predicted."
+ },
+ {
+  "key": "d1",
+  "who": "A",
+  "spoken": "Next, Mendel crossed plants that differed in two traits, round yellow seeds with wrinkled green ones."
+ },
+ {
+  "key": "d2",
+  "who": "A",
+  "spoken": "The hybrids were all round and yellow. From fifteen of them, he harvested five hundred and fifty-six seeds, in four kinds."
+ },
+ {
+  "key": "d3",
+  "who": "B",
+  "spoken": "There were 315 round yellow seeds, 101 wrinkled yellow, 108 round green, and 32 wrinkled green."
+ },
+ {
+  "key": "x17",
+  "who": "A",
+  "spoken": "And two of those kinds are new. Round green and wrinkled yellow don't look like either original parent."
+ },
+ {
+  "key": "d4",
+  "who": "B",
+  "spoken": "If the two traits are inherited separately, three quarters of the seeds are round, and three quarters of those are yellow."
+ },
+ {
+  "key": "d5",
+  "who": "A",
+  "spoken": "That makes nine sixteenths round and yellow, and the four kinds come in nine, three, three and one."
+ },
+ {
+  "key": "d6",
+  "who": "B",
+  "spoken": "For 556 seeds, that predicts about 313 round yellow and 35 wrinkled green, with 104 of each mixed kind."
+ },
+ {
+  "key": "x18",
+  "who": "A",
+  "spoken": "And he got three hundred and fifteen, and thirty-two. That's close."
+ },
+ {
+  "key": "d7",
+  "who": "B",
+  "spoken": "So seed shape and seed colour had sorted independently."
+ },
+ {
+  "key": "d8",
+  "who": "A",
+  "spoken": "With three traits, he found twenty-seven kinds, and he bred all one hundred and twenty-eight pure combinations of the seven."
+ },
+ {
+  "key": "h1",
+  "who": "B",
+  "spoken": "Mendel presented all of this to the Natural History Society of Brno, at two meetings in February and March 1865."
+ },
+ {
+  "key": "h2",
+  "who": "A",
+  "spoken": "About forty people listened, and his paper came out in the society's journal in eighteen sixty-six."
+ },
+ {
+  "key": "x20",
+  "who": "B",
+  "spoken": "And then, the famous silence?"
+ },
+ {
+  "key": "h3",
+  "who": "A",
+  "spoken": "Not total silence. But it was read as a paper on hybrids, and cited only about three times in thirty-five years."
+ },
+ {
+  "key": "h5",
+  "who": "B",
+  "spoken": "Even Mendel seems to have thought his rules held only for some kinds of plants."
+ },
+ {
+  "key": "h6",
+  "who": "A",
+  "spoken": "His hawkweed crosses didn't fit, since many hawkweeds, it turned out, make most of their seeds without fertilisation."
+ },
+ {
+  "key": "h7",
+  "who": "B",
+  "spoken": "Then he became abbot, and his duties largely ended his science. He died in 1884."
+ },
+ {
+  "key": "h8",
+  "who": "A",
+  "spoken": "In the spring of nineteen hundred, three plant scientists in three countries published within about two months, all pointing back to Mendel."
+ },
+ {
+  "key": "h9",
+  "who": "B",
+  "spoken": "They were Hugo de Vries in the Netherlands, Carl Correns in Germany, and Erich von Chermak in Austria."
+ },
+ {
+  "key": "x22",
+  "who": "A",
+  "spoken": "Three at once, after thirty-four years. Was that a coincidence?"
+ },
+ {
+  "key": "x23",
+  "who": "B",
+  "spoken": "Not entirely. Botanists were already hunting for a theory of inheritance without blending."
+ },
+ {
+  "key": "h10",
+  "who": "A",
+  "spoken": "Historians now doubt that Chermak understood Mendel's laws, and how much de Vries owed to Mendel is still debated."
+ },
+ {
+  "key": "h11",
+  "who": "B",
+  "spoken": "And in England, William Bateson championed the work so hard he was called Mendel's bulldog. He named the new science genetics."
+ },
+ {
+  "key": "p1",
+  "who": "A",
+  "spoken": "Three to one is an average, though. Plant by plant, Mendel's counts wandered."
+ },
+ {
+  "key": "p2",
+  "who": "B",
+  "spoken": "His first ten plants for seed shape gave 45 to 12, then 27 to 8, then 24 to 7."
+ },
+ {
+  "key": "p3",
+  "who": "A",
+  "spoken": "One gave nineteen to ten, under two to one. And another, he noted, gave forty-three to two."
+ },
+ {
+  "key": "x24",
+  "who": "B",
+  "spoken": "If that were your only plant, you'd never guess three to one."
+ },
+ {
+  "key": "p4",
+  "who": "A",
+  "spoken": "Small counts swing widely, because chance decides which pollen meets which egg."
+ },
+ {
+  "key": "p5",
+  "who": "B",
+  "spoken": "So let's have chance do the same. For every seed, we pick capital R or small r for the pollen, and again for the egg."
+ },
+ {
+  "key": "p6",
+  "who": "B",
+  "spoken": "Here are ten imaginary plants, with the same numbers of seeds as Mendel's first ten."
+ },
+ {
+  "key": "p7",
+  "who": "A",
+  "spoken": "And they scatter just like his, from twenty-one to eleven on one plant, to twenty-nine to five on another."
+ },
+ {
+  "key": "p8",
+  "who": "B",
+  "spoken": "Now let's keep going, seed after seed."
+ },
+ {
+  "key": "p9",
+  "who": "B",
+  "spoken": "After 40 seeds, the ratio stands at 7 to one. After 400, it has fallen to 3.30 to one."
+ },
+ {
+  "key": "p10",
+  "who": "A",
+  "spoken": "And by seven thousand, three hundred and twenty-four seeds, as many as Mendel counted, it has settled at three point one to one."
+ },
+ {
+  "key": "p11",
+  "who": "B",
+  "spoken": "Mendel put it this way. The larger their number is, the more mere chance effects are eliminated."
+ },
+ {
+  "key": "f1",
+  "who": "B",
+  "spoken": "In 1936, the statistician Ronald Fisher tested how well Mendel's numbers fit."
+ },
+ {
+  "key": "f2",
+  "who": "A",
+  "spoken": "Real counts miss a prediction by chance. Mendel's, Fisher argued, missed by too little."
+ },
+ {
+  "key": "x29",
+  "who": "B",
+  "spoken": "Too little? How can data be too good?"
+ },
+ {
+  "key": "x30",
+  "who": "A",
+  "spoken": "Chance always leaves some scatter. Counts that hug the prediction every time are strange in their own way."
+ },
+ {
+  "key": "f3",
+  "who": "B",
+  "spoken": "Against 1,000 gardens run by chance alone, only 50 come as close to three to one as Mendel's seven totals."
+ },
+ {
+  "key": "f4",
+  "who": "A",
+  "spoken": "That's about one garden in twenty. Lucky, but not shocking."
+ },
+ {
+  "key": "f5",
+  "who": "B",
+  "spoken": "Fisher's point was that the luck kept repeating."
+ },
+ {
+  "key": "f6",
+  "who": "A",
+  "spoken": "His sharpest point was a test in which Mendel grew ten offspring of each plant."
+ },
+ {
+  "key": "x31",
+  "who": "B",
+  "spoken": "That was to tell the pure plants from the hybrids, right?"
+ },
+ {
+  "key": "f7",
+  "who": "A",
+  "spoken": "Yes, but a hybrid's ten can all look dominant by chance, so he should have found about one point seven, not two."
+ },
+ {
+  "key": "f8",
+  "who": "B",
+  "spoken": "And he reported 399 hybrids to 201 pure, almost exactly two to one."
+ },
+ {
+  "key": "f9",
+  "who": "A",
+  "spoken": "Fisher concluded that most of the data had been falsified, perhaps by an assistant who knew too well what was expected."
+ },
+ {
+  "key": "x32",
+  "who": "B",
+  "spoken": "That's a heavy charge, made more than fifty years after Mendel died."
+ },
+ {
+  "key": "f10",
+  "who": "A",
+  "spoken": "Daniel Hartl and Daniel Fairbanks replied that Mendel probably grew more than ten, and that the fraud charge could be put to rest."
+ },
+ {
+  "key": "f11",
+  "who": "B",
+  "spoken": "Their 2008 book with others, called Ending the Mendel Fisher Controversy, found no reason to think he made up results."
+ },
+ {
+  "key": "f12",
+  "who": "B",
+  "spoken": "Yet one of its own authors, A W F Edwards, still found too little scatter in 84 of Mendel's ratios."
+ },
+ {
+  "key": "f13",
+  "who": "A",
+  "spoken": "One can applaud the lucky gambler, he wrote, but when he is lucky again tomorrow, and the next day, and the following day,"
+ },
+ {
+  "key": "f14",
+  "who": "A",
+  "spoken": "one is entitled to become a little suspicious."
+ },
+ {
+  "key": "x33",
+  "who": "B",
+  "spoken": "So the book meant to end the controversy didn't quite end it."
+ },
+ {
+  "key": "f15",
+  "who": "A",
+  "spoken": "Then a twenty nineteen reanalysis, adding the extreme plants Mendel himself reported, found about as much scatter as chance predicts."
+ },
+ {
+  "key": "f16",
+  "who": "B",
+  "spoken": "And Mendel also said he left out some small experiments that strayed."
+ },
+ {
+  "key": "f17",
+  "who": "B",
+  "spoken": "So the open question is how he chose, counted and reported his peas, not whether he grew them."
+ },
+ {
+  "key": "w1",
+  "who": "A",
+  "spoken": "Mendel never knew what his factors were made of. For the wrinkled seed, the answer came in nineteen ninety."
+ },
+ {
+  "key": "w2",
+  "who": "B",
+  "spoken": "Wrinkled seeds lack one form of an enzyme that builds starch, called starch-branching enzyme one."
+ },
+ {
+  "key": "w3",
+  "who": "A",
+  "spoken": "In wrinkled peas, its gene is interrupted by an extra stretch of DNA, about eight hundred letters long."
+ },
+ {
+  "key": "w4",
+  "who": "B",
+  "spoken": "And the intruder looks like a jumping gene known from maize."
+ },
+ {
+  "key": "w5",
+  "who": "B",
+  "spoken": "Without the enzyme, the young seed makes less starch and keeps more sugar, which draws in extra water."
+ },
+ {
+  "key": "x36",
+  "who": "A",
+  "spoken": "So a wrinkled seed starts out swollen?"
+ },
+ {
+  "key": "w6",
+  "who": "B",
+  "spoken": "Yes, and then, as the ripe seed dries out, it ends up wrinkled."
+ },
+ {
+  "key": "w7",
+  "who": "A",
+  "spoken": "One working copy of the gene makes the enzyme, so the seed stays round. That's dominance, in chemistry."
+ },
+ {
+  "key": "x37",
+  "who": "B",
+  "spoken": "So dominant just means one good copy is enough."
+ },
+ {
+  "key": "w8",
+  "who": "A",
+  "spoken": "It was the first of Mendel's seven genes to be found, and by twenty twenty-five, all seven had been identified."
+ },
+ {
+  "key": "z1",
+  "who": "A",
+  "spoken": "So here is what the peas were saying. Every plant carries two copies of each gene, one from each parent."
+ },
+ {
+  "key": "z2",
+  "who": "B",
+  "spoken": "Each pollen grain and each egg cell gets one of them, by chance."
+ },
+ {
+  "key": "z3",
+  "who": "A",
+  "spoken": "A recessive copy can hide for a generation, and shows again when two hidden copies meet, one time in four."
+ },
+ {
+  "key": "z4",
+  "who": "B",
+  "spoken": "None of this shows in a single pod. It appears only when someone counts thousands."
+ },
+ {
+  "key": "x38",
+  "who": "A",
+  "spoken": "Which is why the counting mattered as much as the crossing."
+ },
+ {
+  "key": "z5",
+  "who": "B",
+  "spoken": "His counts waited 34 years to be understood, and then they became the first rules of genetics."
+ },
+ {
+  "key": "z6",
+  "who": "A",
+  "spoken": "All from a friar, a garden, and a careful count of peas."
+ }
+]

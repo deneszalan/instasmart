@@ -91,7 +91,14 @@
           "start": 72.27,
           "end": 78.67
         }
-      ]
+      ],
+      "ratings": { "complexity": 7, "shock": 6 }
+    },
+    {
+      "type": "explore",
+      "lab": "grimms-law",
+      "prompt": "Pick each pair of cousins and watch the sound that moved. Can you see the chain?",
+      "takeaway": "In early Germanic p, t and k became f, þ and h; b, d and g became p, t and k; bʰ, dʰ and gʰ became b, d and g. Latin kept the older sounds, so pēs and foot, decem and ten are cousins."
     },
     {
       "type": "flow",

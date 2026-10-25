@@ -65,7 +65,14 @@
           "start": 63.07,
           "end": 68.8
         }
-      ]
+      ],
+      "ratings": { "complexity": 5, "shock": 7 }
+    },
+    {
+      "type": "explore",
+      "lab": "honeybee-waggle-dance",
+      "prompt": "Drag the flowers around the map and move the Sun, watching the dance change. Then switch to reading a dance and tap where the food is.",
+      "takeaway": "The waggle run’s angle from straight up is the food’s angle from the Sun, and the waggling lasts longer the farther away it is. Here a second means a kilometre; real bees vary."
     },
     {
       "type": "flow",

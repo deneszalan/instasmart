@@ -85,6 +85,8 @@ const blockXY = (m) => [SHEET.x + CAL.mx + (m % 4) * (CAL.bw + CAL.gx), CAL.y0 +
 const slotXY = (m, dd) => { const idx = ((JAN1 + START[m]) % 7) + dd, [bx, by] = blockXY(m); return [bx + (idx % 7) * CAL.pitch, by + CAL.label + Math.floor(idx / 7) * CAL.pitch]; };
 const CELL = Array.from({ length: 365 }, (_, d) => { const m = monthOf(d); return slotXY(m, d - START[m]); });
 const cellC = (d) => [CELL[d][0] + CAL.cs / 2, CELL[d][1] + CAL.cs / 2];
+/** Where a label for day d goes: above its square, or below it when the square is in a month's top two rows. */
+const labelY = (d, off = 50) => { const [bx, by] = blockXY(monthOf(d)), row = Math.round((CELL[d][1] - by - CAL.label) / CAL.pitch); return cellC(d)[1] + (row <= 1 ? off : -off); };
 const dayName = (d) => { const m = monthOf(d); return `${MONTH[m]} ${d - START[m] + 1}`; };
 // "your birthday": the first day from April 11 on that the 253 random birthdays miss
 const YOUR = (() => { let d = 100; while (CROWD.includes(d)) d++; return d; })();
@@ -261,7 +263,7 @@ function header(t) {
 const at = (n) => CH[n - 1].at; // when part n's title card starts
 function calendarVis(t) {
   const wins = [
-    [s('o3'), s('o6', 0.3)], [at(1) + 2.6, at(2) + 1.0], [at(3) + 2.6, s('c9', 0.2)], [s('c12', -0.4), at(4) + 1.0],
+    [s('o3'), s('o6', 0.3)], [at(1) + 2.6, at(2) + 1.0], [at(3) + 2.6, s('c9', 0.2)], [s('c12', -0.2), at(4) + 1.0],
     [at(4) + 2.6, s('d8', 0.4)], [at(5) + 2.6, s('y8', 0.3)], [at(7) + 2.6, at(8) + 1.0], [at(9) + 2.6, e('z6', 2.2)],
   ];
   let v = 0;
@@ -481,7 +483,7 @@ function partRoom(t) {
         pill(`guest ${i + 1}`, x, y - 62, { fg: C.coralDeep, border: C.coral, size: 32, h: 44 });
       }
       const sc = back(seg(t, match, match + 0.5));
-      ctx.save(); ctx.translate(cx, cy - 56); ctx.scale(sc, sc);
+      ctx.save(); ctx.translate(cx, labelY(DEMO.days[DEMO.first], 56)); ctx.scale(sc, sc);
       pill(`MATCH · ${dayName(DEMO.days[DEMO.first])}`, 0, 0, { bg: C.coral, fg: C.sheet, size: 34, h: 52, family: DISPLAY });
       ctx.restore();
     });
@@ -489,7 +491,7 @@ function partRoom(t) {
   // 1,000 parties of 23
   A(span(t, mid('a5', 0.35), s('a7', 0.2), 0.5, 0.5), () => {
     const cols = 40, pitch = 18, sz = 14, x0 = 1412 - (cols * pitch) / 2, y0 = 336;
-    const shown = Math.floor(1000 * eio(seg(t, mid('a5', 0.55), mid('a6', 0.4))));
+    const shown = Math.floor(1000 * eio(seg(t, mid('a5', 0.42), mid('a6', 0.4))));
     let hits = 0;
     for (let i = 0; i < 1000; i++) {
       const x = x0 + (i % cols) * pitch, y = y0 + Math.floor(i / cols) * pitch, hit = FIRST[i] <= 23;
@@ -497,7 +499,7 @@ function partRoom(t) {
       ctx.fillRect(x, y, sz, sz);
     }
     font(600, 44, DISPLAY);
-    text(`${fmt(shown)} parties`, x0, 282, { color: C.ink });
+    text(`${fmt(shown)} ${shown === 1 ? 'party' : 'parties'}`, x0, 282, { color: C.ink });
     text(`${hits} with a match`, x0 + cols * pitch - 4, 282, { color: C.coralDeep, align: 'right' });
     font(500, 32);
     ctx.fillStyle = C.coral; ctx.fillRect(x0, 822, 26, 26); text('shared birthday', x0 + 40, 836, { color: C.inkSoft });
@@ -509,9 +511,10 @@ function partRoom(t) {
     ctx.fillStyle = C.tealSoft; rrect(x0, y - 12, (x1 - x0) * g, 24, 12); ctx.fill();
     ctx.fillStyle = C.coral; rrect(x0, y - 16, x23 - x0, 32, 12); ctx.fill();
     font(600, 64, DISPLAY); text('23', x0, y - 84, { color: C.coralDeep });
-    A(g, () => text('365', x1, y - 84, { color: C.ink, align: 'right' }));
-    font(500, 36); text('guests', x0 + 86, y - 80, { color: C.inkSoft });
-    A(g, () => text('days', x1 - 132, y - 80, { color: C.inkSoft, align: 'right' }));
+    const w23 = tw('23');
+    font(500, 40); text('guests', x0 + w23 + 14, y - 80, { color: C.inkSoft });
+    const wd = tw('days');
+    A(g, () => { text('days', x1, y - 80, { color: C.inkSoft, align: 'right' }); font(600, 64, DISPLAY); text('365', x1 - wd - 14, y - 84, { color: C.ink, align: 'right' }); });
     A(seg(t, s('a7', 1.0), s('a7', 1.6)), () => { font(500, 40); text('fewer than 1 guest for every 15 days', 1420, y + 96, { color: C.inkSoft, align: 'center' }); });
   });
   // the history
@@ -724,22 +727,22 @@ function partMisses(t) {
     for (let n = 1; n <= N; n += 0.25) n === 1 ? ctx.moveTo(cx(n), cy(Pc(n))) : ctx.lineTo(cx(n), cy(Pc(n)));
     ctx.lineTo(cx(N), cy(Pc(N))); ctx.stroke();
     ctx.fillStyle = C.ink; ctx.beginPath(); ctx.arc(cx(N), cy(Pc(N)), 9, 0, TAU); ctx.fill();
-    const marks = [[23, e('c9', -0.2), 22, 16, 'left'], [10, mid('c10', 0.05), 18, 8, 'left'], [30, mid('c10', 0.38), 18, 40, 'left'], [50, mid('c10', 0.72), 0, 56, 'center'], [57, mid('c11', 0.3), 0, -44, 'center'], [70, mid('c11', 0.72), 10, 56, 'center']];
-    for (const [n, t0, dx, dy, al] of marks) A(seg(t, t0, t0 + 0.3), () => {
+    const marks = [[23, e('c9', -0.2), 22, 16, 'left'], [10, mid('c10', 0.05), 18, 8, 'left'], [30, mid('c10', 0.38), 18, 40, 'left'], [50, mid('c10', 0.72), -12, 50, 'right'], [57, mid('c11', 0.3), 12, 50, 'left'], [70, mid('c11', 0.72), 22, -40, 'left']];
+    for (const [n, t0, dx, dy, al] of marks) A(seg(t, t0, t0 + 0.3) * (n >= 50 ? 1 - seg(t, s('c12', 0.6), s('c12', 1.0)) : 1), () => {
       const x = cx(n), y = cy(P(n)), pop = back(seg(t, t0, t0 + 0.35));
       ctx.fillStyle = C.marigold; ctx.beginPath(); ctx.arc(x, y, 11 * pop, 0, TAU); ctx.fill();
       const v = P(n) > 0.995 ? pct(P(n), 1) : P(n) > 0.985 ? '99%' : P(n) > 0.95 ? '97%' : pct(P(n));
       font(600, 34); text(v, x + dx, y + dy, { color: n === 23 ? C.coralDeep : C.ink, align: al });
     });
     // the readout
-    A(span(t, s('c9', 0.2), s('c12', 0.1), 0.5, 0.5), () => {
+    A(span(t, s('c9', 0.2), s('c12', -0.2), 0.5, 0.4), () => {
       const n = Math.round(N);
       font(500, 40); text('guests', 516, 330, { color: C.inkSoft, align: 'center' });
       font(600, 170, DISPLAY); text(String(n), 516, 450, { color: C.ink, align: 'center' });
       font(500, 40); text('chance of a match', 516, 610, { color: C.inkSoft, align: 'center' });
-      font(600, 130, DISPLAY); text(pct(P(n)), 516, 720, { color: C.coral, align: 'center' });
+      const pn = P(n); font(600, 130, DISPLAY); text(pct(pn, pn > 0.99999 ? 5 : pn > 0.9995 ? 3 : 1), 516, 720, { color: C.coral, align: 'center' });
     });
-    A(seg(t, s('c12', 1.0), s('c12', 1.6)), () => pill('certain at 366 guests', CHART.x1, CHART.y1 - 50, { bg: C.coral, fg: C.sheet, size: 34, align: 'right' }));
+    A(seg(t, s('c12', 1.0), s('c12', 1.6)), () => pill('certain at 366 guests', CHART.x1, cy(1) + 58, { bg: C.coral, fg: C.sheet, size: 34, align: 'right' }));
   });
   // 366 guests: every day taken
   A(span(t, s('c12', -0.3), at(4) + 1.0, 0.5, 0.6) * calendarVis(t), () => {
@@ -803,7 +806,7 @@ function partRooms(t) {
           ring(days[n - 1], C.ink, t, M, 3.5);
           const [x, y] = cellC(days[n - 1]); burst(x, y, t, M, { n: 18, spread: 70, seed: 20 + r });
           const sc = back(seg(t, M, M + 0.4));
-          ctx.save(); ctx.translate(x, y - 50); ctx.scale(sc, sc); pill(`guest ${n}`, 0, 0, { bg: C.coral, fg: C.sheet, size: 34, h: 50 }); ctx.restore();
+          ctx.save(); ctx.translate(x, labelY(days[n - 1])); ctx.scale(sc, sc); pill(`guest ${n}`, 0, 0, { bg: C.coral, fg: C.sheet, size: 34, h: 50 }); ctx.restore();
         }
         const shown = Math.min(n, Math.max(0, Math.floor((t - S0) / step) + 1));
         font(500, 34); text(`room ${r + 1} · ${shown} ${shown === 1 ? 'guest' : 'guests'}`, SHEET.x + 44, 905, { color: C.inkSoft });
@@ -954,7 +957,7 @@ function partYou(t) {
       ctx.strokeStyle = C.ink; ctx.lineWidth = 3; ctx.setLineDash([8, 8]); ctx.beginPath(); ctx.moveTo(x, CH5.y0); ctx.lineTo(x, Y(Q(182.5)) - 30); ctx.stroke(); ctx.setLineDash([]);
       ctx.fillStyle = C.ink; ctx.beginPath(); ctx.arc(x, Y(Q(182.5)), 8, 0, TAU); ctx.fill();
       font(600, 32); text('half of 365', x - 14, Y(Q(182.5)) - 44, { color: C.ink, align: 'right' });
-      text(pct(Q(182.5), 0), x - 14, Y(Q(182.5)) + 4, { color: C.skyDeep, align: 'right' });
+      text(pct(Q(182.5), 0), x + 16, Y(Q(182.5)) + 34, { color: C.skyDeep });
     });
   });
   // the tally
@@ -987,6 +990,17 @@ function partYou(t) {
 
 // ---------- 6: a rule of thumb ----------
 function partRule(t) {
+  // the question: from 365 days to any number of days
+  A(span(t, at(6) + 2.6, s('r2', 0.2), 0.6, 0.5), () => {
+    font(600, 64, DISPLAY); text('Any number of days?', 960, 330, { color: C.ink, align: 'center' });
+    const row = (y, l, r, col, t0) => A(eout(seg(t, t0, t0 + 0.5)), () => {
+      font(600, 72, DISPLAY); text(l, 900, y, { color: C.ink, align: 'right' });
+      arrow(940, y, 1060, y, col, 6, 22);
+      text(r, 1100, y, { color: col });
+    });
+    row(520, '365 days', '23 guests', C.coralDeep, s('r1', 0.2));
+    row(680, '1,000,000 days', '?', C.tealDeep, mid('r1', 0.6));
+  });
   const L = (t0, y, draw) => A(span(t, t0, s('r6', 0.2), 0.5, 0.5), () => { const p = eout(seg(t, t0, t0 + 0.5)); ctx.save(); ctx.translate((1 - p) * 20, 0); draw(y); ctx.restore(); });
   L(s('r2', 0.2), 320, (y) => { font(500, 60); text('pairs ≈ n² ÷ 2', 140, y, { color: C.ink }); });
   L(s('r3', 0.4), 440, (y) => { font(500, 60); text('n² ≈ 2 × 253 = 506', 140, y, { color: C.ink }); });
@@ -1145,10 +1159,10 @@ const FORGE = (() => {
   const pick = (list, m, avoid) => {
     const rows = [], used = new Set([b, ...avoid]);
     for (let i = 0; i < 32 && rows.length < 5; i++) if (i !== m && !used.has(byte(list[i]))) { rows.push(i); used.add(byte(list[i])); }
-    rows.splice(4, 0, m); return rows;
+    rows.push(m); return rows;
   };
   const fair = pick(FAIR, mi, []), fraud = pick(FRAUD, mj, fair.map((i) => byte(FAIR[i])));
-  return { fair, fraud, row: 4, b };
+  return { fair, fraud, row: 5, b };
 })();
 const TWO128 = (2n ** 128n).toLocaleString('en-US');
 function fileCard(x, y, w, h, col, a = 1) {
@@ -1175,7 +1189,7 @@ function partAttack(t) {
   // the diagram: file -> hash function -> fingerprint
   A(span(t, at(8) + 2.6, s('h5', 0.3), 0.6, 0.5), () => {
     fileCard(150, 360, 260, 290, C.teal, eout(seg(t, s('h1', 0.2), s('h1', 0.7))));
-    A(seg(t, s('h1', 0.2), s('h1', 0.7)), () => { font(500, 40); text('a file', 280, 700, { color: C.inkSoft, align: 'center' }); });
+    A(seg(t, s('h1', 0.2), s('h1', 0.7)) * (1 - seg(t, s('h4', 0.0), s('h4', 0.3))), () => { font(500, 40); text('a file', 280, 700, { color: C.inkSoft, align: 'center' }); });
     A(seg(t, s('h2', 0.0), s('h2', 0.5)), () => {
       arrow(440, 505, 640, 505, C.inkSoft, 5, 20);
       ctx.fillStyle = C.ink; rrect(660, 400, 360, 210, 30); ctx.fill();
@@ -1189,7 +1203,7 @@ function partAttack(t) {
       A(1 - seg(t, s('h3', 0.0), s('h3', 0.4)), () => { font(500, 40); text('fingerprint: 64 bits', 1506, 640, { color: C.inkSoft, align: 'center' }); });
     });
     A(span(t, s('h3', 0.2), s('h4', 0.3), 0.4, 0.4), () => {
-      supText([['2', false], ['64', true], [' possible fingerprints', false]], 1506, 640, 40, C.ink, { align: 'center' });
+      supText([['2', false], ['64', true], [' possible fingerprints', false]], 1506, 640, 48, C.ink, { align: 'center' });
       font(500, 40); text('≈ 18,446,744,073,709,551,616', 1506, 700, { color: C.coralDeep, align: 'center' });
     });
     // a second file, the same fingerprint
@@ -1207,7 +1221,7 @@ function partAttack(t) {
     ctx.fillStyle = 'rgba(90,60,30,0.12)'; rrect(-250 + 8, -200 + 10, 500, 400, 18); ctx.fill();
     ctx.fillStyle = C.sheet; rrect(-250, -200, 500, 400, 18); ctx.fill();
     ctx.save(); rrect(-250, -200, 500, 400, 18); ctx.clip(); ctx.fillStyle = C.coral; ctx.fillRect(-250, -200, 500, 70); ctx.restore();
-    supText([['2', false], ['64', true], [' DAYS', false]], 0, -162, 44, C.sheet, { weight: 600, family: DISPLAY, align: 'center' });
+    supText([['2', false], ['64', true], [' DAYS', false]], 0, -160, 54, C.sheet, { weight: 600, family: DISPLAY, align: 'center' });
     const r = mulberry32(64);
     for (let i = 0; i < 14; i++) for (let j = 0; j < 22; j++) { ctx.fillStyle = r() < 0.04 ? GCOL(i + j) : C.cellEmpty; ctx.fillRect(-228 + j * 21, -110 + i * 21, 16, 16); }
     ctx.restore();
@@ -1223,18 +1237,24 @@ function partAttack(t) {
     });
     A(seg(t, mid('h8', 0.4), mid('h8', 0.6)), () => {
       font(500, 44); text('one particular', 700, 680, { color: C.inkSoft, align: 'right' }); text('fingerprint', 700, 732, { color: C.inkSoft, align: 'right' });
-      font(600, 60); text('≈ 9,223,372,036,854,775,808', 740, 704, { color: C.skyDeep });
+      font(600, 60); text('≈ 12,800,000,000,000,000,000', 740, 704, { color: C.skyDeep });
     });
     A(seg(t, s('h7', 0.4), s('h7', 0.9)), () => { font(500, 34); text('tries for an even chance, with 64-bit fingerprints', 960, 860, { color: C.inkFaint, align: 'center' }); });
   });
-  // the forger
-  A(span(t, s('h9', 0.0), s('h13', 0.3), 0.5, 0.5), () => {
+  // the birthday attack: a title, then the forger
+  A(span(t, s('h9', 0.0), mid('h9', 0.66), 0.4, 0.4), () => {
+    const p = back(seg(t, s('h9', 0.0), s('h9', 0.5)));
+    ctx.save(); ctx.translate(960, 540); ctx.scale(p, p);
+    font(600, 96, DISPLAY); text('The birthday attack', 0, 0, { color: C.coralDeep, align: 'center' });
+    ctx.restore();
+  });
+  A(span(t, mid('h9', 0.4), s('h13', 0.3), 0.5, 0.5), () => {
     const cols = [[FAIR, FORGE.fair, 110, 'fair contract', C.teal, C.tealDeep], [FRAUD, FORGE.fraud, 1030, 'fraudulent contract', C.coral, C.coralDeep]];
     const glow = seg(t, s('h11', 0.4), s('h11', 1.0));
     cols.forEach(([list, rows, x0, head, col, deep], c) => {
-      A(seg(t, mid('h9', 0.55 + c * 0.15), mid('h9', 0.65 + c * 0.15)), () => { font(600, 48, DISPLAY); text(head, x0 + 10, 250, { color: deep }); });
+      A(seg(t, mid('h9', 0.42 + c * 0.1), mid('h9', 0.52 + c * 0.1)), () => { font(600, 48, DISPLAY); text(head, x0 + 10, 250, { color: deep }); });
       rows.forEach((vi, r) => {
-        const t0 = r === 0 ? mid('h9', 0.6 + c * 0.15) : lerp(s('h10', 0.3), e('h10', -0.2), (r - 1 + c * 0.5) / 5);
+        const t0 = r === 0 ? mid('h9', 0.5 + c * 0.12) : lerp(s('h10', 0.3), e('h10', -0.2), (r - 1 + c * 0.5) / 5);
         const a = eout(seg(t, t0, t0 + 0.4));
         if (a <= 0) return;
         const y = 340 + r * 92, match = r === FORGE.row;
@@ -1274,10 +1294,10 @@ function partAttack(t) {
       font(500, 44); text('a collision takes about', 760, 500, { color: C.ink });
       supText([['2', false], ['128', true], [' tries', false]], 760, 580, 72, C.coralDeep, { weight: 600 });
     });
-    const typed = Math.floor(TWO128.length * seg(t, mid('h14', 0.55), e('h14', 0.2)));
+    const typed = Math.floor(TWO128.length * seg(t, mid('h14', 0.5), e('h14', -0.2)));
     A(seg(t, mid('h14', 0.55), mid('h14', 0.6)), () => {
       font(600, 46); text(TWO128.slice(0, typed), 960 - tw(TWO128) / 2, 790, { color: C.coralDeep });
-      A(seg(t, e('h14', -0.3), e('h14', 0.3)), () => { font(500, 36); text('a 39-digit number', 960, 860, { color: C.inkSoft, align: 'center' }); });
+      A(seg(t, e('h14', -0.4), e('h14', 0.1)), () => { font(500, 36); text('a 39-digit number', 960, 860, { color: C.inkSoft, align: 'center' }); });
     });
   });
 }

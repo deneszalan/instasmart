@@ -1,0 +1,402 @@
+[
+ {
+  "key": "o1",
+  "spoken": "At three thousand revolutions a minute, a car engine's crankshaft turns fifty times a second."
+ },
+ {
+  "key": "o2",
+  "spoken": "Yet each cylinder burns its fuel only twenty-five times a second, which is once every two turns."
+ },
+ {
+  "key": "o3",
+  "spoken": "Its piston makes four trips for every burn, and only one of them pushes."
+ },
+ {
+  "key": "o4",
+  "spoken": "This is the four-stroke cycle. It was first patented by a man who never built one,"
+ },
+ {
+  "key": "o5",
+  "spoken": "and made to work by a former grocery salesman, who later lost his patent."
+ },
+ {
+  "key": "m1",
+  "spoken": "Let's open one up. This is a simplified diagram of a single cylinder."
+ },
+ {
+  "key": "m2",
+  "spoken": "Inside the cylinder, a piston slides up and down."
+ },
+ {
+  "key": "m3",
+  "spoken": "A connecting rod links the piston to the crankshaft, which turns."
+ },
+ {
+  "key": "m4",
+  "spoken": "At the top, there are two valves. One lets air and fuel in, and the other lets burnt gas out."
+ },
+ {
+  "key": "m5",
+  "spoken": "Cams on a camshaft push them open, and springs close them again."
+ },
+ {
+  "key": "m6",
+  "spoken": "Between them sits the spark plug."
+ },
+ {
+  "key": "m7",
+  "spoken": "The piston's highest point is top dead centre, and its lowest is bottom dead centre."
+ },
+ {
+  "key": "m8",
+  "spoken": "One trip between them, up or down, is a stroke."
+ },
+ {
+  "key": "m9",
+  "spoken": "As the crank turns, the piston follows, but not in a perfectly even rhythm."
+ },
+ {
+  "key": "m10",
+  "spoken": "After a quarter turn, the piston has already covered more than half its stroke."
+ },
+ {
+  "key": "m11",
+  "spoken": "The tilting rod makes it hurry through the top half of the stroke, and dawdle through the bottom."
+ },
+ {
+  "key": "f1",
+  "spoken": "Now let's run one cycle, slowly, from the top."
+ },
+ {
+  "key": "f2",
+  "spoken": "Stroke one is intake. The intake valve opens, and the falling piston draws in air and fuel."
+ },
+ {
+  "key": "f3",
+  "spoken": "Stroke two is compression. Both valves close, and the rising piston squeezes the mixture into about a tenth of the space."
+ },
+ {
+  "key": "f4",
+  "spoken": "By now the crankshaft has turned once, all the way round."
+ },
+ {
+  "key": "f5",
+  "spoken": "Near the top, the spark plug fires, and the mixture starts to burn."
+ },
+ {
+  "key": "f6",
+  "spoken": "Stroke three is power. The hot, high-pressure gas drives the piston down."
+ },
+ {
+  "key": "f7",
+  "spoken": "This is the only stroke that pushes on the crank."
+ },
+ {
+  "key": "f8",
+  "spoken": "Stroke four is exhaust. The exhaust valve opens, and the rising piston pushes the burnt gas out."
+ },
+ {
+  "key": "f9",
+  "spoken": "Then it all starts again. That's four strokes, two turns of the crank, and one push."
+ },
+ {
+  "key": "f10",
+  "spoken": "The camshaft turns at half the crankshaft's speed, so each valve opens once per cycle."
+ },
+ {
+  "key": "f11",
+  "spoken": "What carries the piston through the three strokes that don't push? It's a heavy flywheel."
+ },
+ {
+  "key": "f12",
+  "spoken": "It soaks up energy from each power stroke, and gives some back to squeeze the next charge."
+ },
+ {
+  "key": "h1",
+  "spoken": "The idea is older than the engine that made it famous."
+ },
+ {
+  "key": "h2",
+  "spoken": "In eighteen sixty, Étienne Lenoir, in Paris, built a gas engine that burned its fuel without compressing it first."
+ },
+ {
+  "key": "h3",
+  "spoken": "It turned only about four percent of the fuel's energy into work."
+ },
+ {
+  "key": "h4",
+  "spoken": "A travelling salesman in Germany, Nicolaus Otto, learned of it, and started building engines himself."
+ },
+ {
+  "key": "h5",
+  "spoken": "In eighteen sixty-two he tried one that compressed its charge first. It ran for a few minutes, then destroyed itself."
+ },
+ {
+  "key": "h6",
+  "spoken": "That same year, in France, Alphonse Beau de Rochas patented the four-stroke cycle. But he never built an engine."
+ },
+ {
+  "key": "h7",
+  "spoken": "In eighteen sixty-four, Otto and Eugen Langen founded the first company devoted to making engines."
+ },
+ {
+  "key": "h8",
+  "spoken": "Their atmospheric engine, at about twelve percent efficiency, won a gold medal at the Paris World's Fair of eighteen sixty-seven."
+ },
+ {
+  "key": "h9",
+  "spoken": "Then, in eighteen seventy-six, Otto's company built an engine that compressed its charge in four strokes."
+ },
+ {
+  "key": "h10",
+  "spoken": "It was an immediate success, and the first commercially successful engine to compress its charge in the cylinder."
+ },
+ {
+  "key": "h11",
+  "spoken": "Two of Otto's former engineers, Gottlieb Daimler and Wilhelm Maybach, made it small and fast enough for vehicles."
+ },
+ {
+  "key": "h12",
+  "spoken": "But in eighteen eighty-six the patent was cancelled in Germany, because Beau de Rochas had patented the cycle first."
+ },
+ {
+  "key": "h13",
+  "spoken": "By eighteen eighty-nine, more than fifty companies were building Otto-type engines."
+ },
+ {
+  "key": "h14",
+  "spoken": "And the cycle still carries his name. It's called the Otto cycle."
+ },
+ {
+  "key": "p1",
+  "spoken": "Why does squeezing first help so much? Engineers answer with a graph of pressure against volume."
+ },
+ {
+  "key": "p2",
+  "spoken": "This is the idealised version, the Otto cycle, traced as our engine turns."
+ },
+ {
+  "key": "p3",
+  "spoken": "During intake, the volume grows, at about the pressure outside."
+ },
+ {
+  "key": "p4",
+  "spoken": "During compression, the volume shrinks tenfold, and the pressure climbs steeply."
+ },
+ {
+  "key": "p5",
+  "spoken": "Combustion is treated as instant, at the top, so the pressure leaps while the volume stays the same."
+ },
+ {
+  "key": "p6",
+  "spoken": "During the power stroke, the hot gas expands and pushes, and its pressure falls."
+ },
+ {
+  "key": "p7",
+  "spoken": "At the bottom, the exhaust valve opens and the pressure drops back."
+ },
+ {
+  "key": "p8",
+  "spoken": "During exhaust, the piston sweeps the gas out, and the loop closes."
+ },
+ {
+  "key": "p9",
+  "spoken": "The area inside the loop is the net work, which is what the power stroke gave, minus what the compression cost."
+ },
+ {
+  "key": "c1",
+  "spoken": "The compression ratio is the cylinder's largest volume divided by its smallest."
+ },
+ {
+  "key": "c2",
+  "spoken": "In the ideal cycle, the efficiency depends on that ratio alone."
+ },
+ {
+  "key": "c3",
+  "spoken": "The efficiency is one, minus the ratio to the power of one minus gamma, where gamma is one point four for air."
+ },
+ {
+  "key": "c4",
+  "spoken": "Squeeze four to one, and the ideal engine turns forty-three percent of its heat into work."
+ },
+ {
+  "key": "c5",
+  "spoken": "At ten to one, it's sixty percent, and at sixteen to one, it's sixty-seven percent."
+ },
+ {
+  "key": "c6",
+  "spoken": "Real engines lose energy to heat and friction along the way. A petrol engine turns about thirty percent into useful work."
+ },
+ {
+  "key": "c7",
+  "spoken": "But the lesson holds. If you squeeze harder, you get more work from the same fuel."
+ },
+ {
+  "key": "c8",
+  "spoken": "So why do most petrol car engines stop at around eight to twelve to one?"
+ },
+ {
+  "key": "c9",
+  "spoken": "Squeezing a gas heats it, and a hot enough mixture can ignite by itself."
+ },
+ {
+  "key": "c10",
+  "spoken": "Normally, the spark starts a flame front that sweeps across the chamber."
+ },
+ {
+  "key": "c11",
+  "spoken": "But if the unburnt mixture ahead of the flame gets too hot, pockets of it explode all at once."
+ },
+ {
+  "key": "c12",
+  "spoken": "That's called knock. It causes a metallic pinging, and pressure spikes that can damage the engine."
+ },
+ {
+  "key": "c13",
+  "spoken": "A fuel's octane rating measures how well it resists igniting by itself. Higher octane allows more squeeze."
+ },
+ {
+  "key": "c14",
+  "spoken": "And modern engines listen for knock with sensors, and fire the spark later when they hear it."
+ },
+ {
+  "key": "v1",
+  "spoken": "So far, everything happened exactly at the top or bottom of a stroke. Real engines don't wait."
+ },
+ {
+  "key": "v2",
+  "spoken": "The spark fires early, at some ten to forty degrees of crank rotation before the top."
+ },
+ {
+  "key": "v3",
+  "spoken": "The flame takes time to burn, and the peak pressure should come just after the top."
+ },
+ {
+  "key": "v4",
+  "spoken": "The flame doesn't speed up with the engine, so at higher revs the spark needs a longer head start."
+ },
+ {
+  "key": "v5",
+  "spoken": "The valves are early, too. They open before the end of a stroke, and close after it."
+ },
+ {
+  "key": "v6",
+  "spoken": "At the end of the exhaust stroke, both valves are briefly open at once. This is called valve overlap."
+ },
+ {
+  "key": "v7",
+  "spoken": "The outgoing exhaust is moving fast, and it helps draw the fresh charge in behind it."
+ },
+ {
+  "key": "v8",
+  "spoken": "Designers aim to close the exhaust valve just as the fresh charge reaches it."
+ },
+ {
+  "key": "v9",
+  "spoken": "Racing engines use lots of overlap. Road engines, which must idle smoothly below a thousand revolutions a minute, use less."
+ },
+ {
+  "key": "v10",
+  "spoken": "Many now shift their camshafts as they run, to get both power at high revs and a smooth idle."
+ },
+ {
+  "key": "n1",
+  "spoken": "One cylinder gives one push every two turns. That's a lumpy way to drive a car."
+ },
+ {
+  "key": "n2",
+  "spoken": "So most car engines have several cylinders on one crankshaft, firing in turn."
+ },
+ {
+  "key": "n3",
+  "spoken": "Spaced evenly, the power strokes come every seven hundred and twenty degrees, divided by the number of cylinders."
+ },
+ {
+  "key": "n4",
+  "spoken": "With four cylinders, that's every hundred and eighty degrees, which gives a push every half turn."
+ },
+ {
+  "key": "n5",
+  "spoken": "A straight four usually fires its cylinders in the order one, three, four, two."
+ },
+ {
+  "key": "n6",
+  "spoken": "Here is the twisting force that the gas puts on the crank, in an idealised model."
+ },
+ {
+  "key": "n7",
+  "spoken": "One cylinder gives one big shove, then a long wait, with a drag while it compresses."
+ },
+ {
+  "key": "n8",
+  "spoken": "Four cylinders give one shove after another."
+ },
+ {
+  "key": "n9",
+  "spoken": "With six cylinders, the power strokes overlap, and the push is smoother still."
+ },
+ {
+  "key": "n10",
+  "spoken": "Even spacing means less vibration and a smoother sound."
+ },
+ {
+  "key": "d1",
+  "spoken": "There is another way to light the fire, with no spark at all."
+ },
+ {
+  "key": "d2",
+  "spoken": "A diesel draws in only air, and squeezes it much harder, typically fifteen to twenty-three to one."
+ },
+ {
+  "key": "d3",
+  "spoken": "Squeezing air that hard heats it by hundreds of degrees."
+ },
+ {
+  "key": "d4",
+  "spoken": "Near the top, fuel is sprayed in, and it ignites in the hot air by itself."
+ },
+ {
+  "key": "d5",
+  "spoken": "With no fuel in the cylinder during the squeeze, nothing can ignite early, so a diesel can squeeze harder."
+ },
+ {
+  "key": "d6",
+  "spoken": "That's one reason diesels are efficient. Big, slow ship diesels reach up to fifty-five percent."
+ },
+ {
+  "key": "d7",
+  "spoken": "And instead of throttling its air, a diesel sets its power by how much fuel it injects."
+ },
+ {
+  "key": "d8",
+  "spoken": "Rudolf Diesel's first prototype fired in eighteen ninety-three, and his third, tested in eighteen ninety-seven, turned about twenty-six percent of its fuel into work."
+ },
+ {
+  "key": "d9",
+  "spoken": "And it runs the same four strokes of intake, compression, power and exhaust."
+ },
+ {
+  "key": "z1",
+  "spoken": "So here is the whole idea."
+ },
+ {
+  "key": "z2",
+  "spoken": "Draw in, squeeze, burn and push out. That's four strokes, in two turns of the crank."
+ },
+ {
+  "key": "z3",
+  "spoken": "The squeeze makes it efficient, and knock sets the limit on the squeeze."
+ },
+ {
+  "key": "z4",
+  "spoken": "Patented in eighteen sixty-two by a man who never built one, and made to work by Otto in eighteen seventy-six,"
+ },
+ {
+  "key": "z5",
+  "spoken": "it is still the cycle inside most car engines."
+ },
+ {
+  "key": "z6",
+  "spoken": "At three thousand revolutions a minute, that's two turns and one push, twenty-five times every second."
+ }
+]

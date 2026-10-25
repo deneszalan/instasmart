@@ -1,0 +1,845 @@
+{
+ "duration": 764.03,
+ "lines": [
+  {
+   "key": "o1",
+   "start": 1,
+   "natural": 3,
+   "measured": 1,
+   "who": "A"
+  },
+  {
+   "key": "o2",
+   "start": 4.57,
+   "natural": 6.15,
+   "measured": 31,
+   "who": "B"
+  },
+  {
+   "key": "o3",
+   "start": 11.29,
+   "natural": 5.23,
+   "measured": 61,
+   "who": "A"
+  },
+  {
+   "key": "x1",
+   "start": 16.94,
+   "natural": 6.08,
+   "measured": 91,
+   "who": "B"
+  },
+  {
+   "key": "o4",
+   "start": 23.59,
+   "natural": 3.39,
+   "measured": 121,
+   "who": "A"
+  },
+  {
+   "key": "o5",
+   "start": 27.7,
+   "natural": 6.6,
+   "measured": 151,
+   "who": "B"
+  },
+  {
+   "key": "k1",
+   "start": 38.62,
+   "natural": 6.46,
+   "measured": 181,
+   "who": "A"
+  },
+  {
+   "key": "k3",
+   "start": 45.65,
+   "natural": 8.25,
+   "measured": 211,
+   "who": "B"
+  },
+  {
+   "key": "k4",
+   "start": 54.47,
+   "natural": 3.59,
+   "measured": 241,
+   "who": "A"
+  },
+  {
+   "key": "x2",
+   "start": 58.48,
+   "natural": 1.9,
+   "measured": 271,
+   "who": "B"
+  },
+  {
+   "key": "k5",
+   "start": 60.95,
+   "natural": 3.6,
+   "measured": 301,
+   "who": "A"
+  },
+  {
+   "key": "k6",
+   "start": 65.12,
+   "natural": 5.35,
+   "measured": 331,
+   "who": "B"
+  },
+  {
+   "key": "k7",
+   "start": 71.04,
+   "natural": 4.39,
+   "measured": 361,
+   "who": "A"
+  },
+  {
+   "key": "k8",
+   "start": 77.35,
+   "natural": 8.05,
+   "measured": 391,
+   "who": "B"
+  },
+  {
+   "key": "x3",
+   "start": 85.82,
+   "natural": 4.53,
+   "measured": 421,
+   "who": "A"
+  },
+  {
+   "key": "x4",
+   "start": 90.92,
+   "natural": 3.25,
+   "measured": 451,
+   "who": "B"
+  },
+  {
+   "key": "k9",
+   "start": 94.74,
+   "natural": 5,
+   "measured": 481,
+   "who": "A"
+  },
+  {
+   "key": "k10",
+   "start": 100.31,
+   "natural": 4.48,
+   "measured": 511,
+   "who": "A"
+  },
+  {
+   "key": "x5",
+   "start": 105.21,
+   "natural": 2.48,
+   "measured": 541,
+   "who": "B"
+  },
+  {
+   "key": "k11",
+   "start": 108.26,
+   "natural": 5.13,
+   "measured": 571,
+   "who": "A"
+  },
+  {
+   "key": "r1",
+   "start": 118.31,
+   "natural": 8.1,
+   "measured": 601,
+   "who": "B"
+  },
+  {
+   "key": "r2",
+   "start": 126.98,
+   "natural": 4.88,
+   "measured": 631,
+   "who": "A"
+  },
+  {
+   "key": "r3",
+   "start": 132.43,
+   "natural": 7.7,
+   "measured": 661,
+   "who": "B"
+  },
+  {
+   "key": "x7",
+   "start": 141.35,
+   "natural": 2.55,
+   "measured": 691,
+   "who": "A"
+  },
+  {
+   "key": "r4",
+   "start": 144.82,
+   "natural": 4.65,
+   "measured": 721,
+   "who": "B"
+  },
+  {
+   "key": "r5",
+   "start": 150.04,
+   "natural": 2.81,
+   "measured": 751,
+   "who": "A"
+  },
+  {
+   "key": "r6",
+   "start": 153.42,
+   "natural": 3.27,
+   "measured": 781,
+   "who": "A"
+  },
+  {
+   "key": "r7",
+   "start": 157.26,
+   "natural": 7.83,
+   "measured": 811,
+   "who": "B"
+  },
+  {
+   "key": "r8",
+   "start": 165.66,
+   "natural": 4.06,
+   "measured": 841,
+   "who": "A"
+  },
+  {
+   "key": "x8",
+   "start": 171.09,
+   "natural": 2.35,
+   "measured": 871,
+   "who": "B"
+  },
+  {
+   "key": "r9",
+   "start": 174.01,
+   "natural": 4.24,
+   "measured": 901,
+   "who": "A"
+  },
+  {
+   "key": "n1",
+   "start": 182.57,
+   "natural": 5.33,
+   "measured": 931,
+   "who": "B"
+  },
+  {
+   "key": "x9",
+   "start": 188.47,
+   "natural": 4.9,
+   "measured": 961,
+   "who": "A"
+  },
+  {
+   "key": "n2",
+   "start": 193.94,
+   "natural": 8.47,
+   "measured": 991,
+   "who": "B"
+  },
+  {
+   "key": "n3",
+   "start": 202.98,
+   "natural": 6.87,
+   "measured": 1021,
+   "who": "A"
+  },
+  {
+   "key": "n4",
+   "start": 210.42,
+   "natural": 5.86,
+   "measured": 1051,
+   "who": "A"
+  },
+  {
+   "key": "n5",
+   "start": 216.85,
+   "natural": 10.1,
+   "measured": 1081,
+   "who": "B"
+  },
+  {
+   "key": "n6",
+   "start": 228.72,
+   "natural": 4.27,
+   "measured": 1111,
+   "who": "A"
+  },
+  {
+   "key": "x11",
+   "start": 233.41,
+   "natural": 2.95,
+   "measured": 1141,
+   "who": "B"
+  },
+  {
+   "key": "n7",
+   "start": 237.28,
+   "natural": 6.08,
+   "measured": 1171,
+   "who": "A"
+  },
+  {
+   "key": "p1",
+   "start": 247.68,
+   "natural": 6.26,
+   "measured": 1201,
+   "who": "A"
+  },
+  {
+   "key": "x12",
+   "start": 254.36,
+   "natural": 2.83,
+   "measured": 1231,
+   "who": "B"
+  },
+  {
+   "key": "x13",
+   "start": 257.76,
+   "natural": 2.3,
+   "measured": 1261,
+   "who": "A"
+  },
+  {
+   "key": "p2",
+   "start": 260.63,
+   "natural": 11.68,
+   "measured": 1291,
+   "who": "B"
+  },
+  {
+   "key": "p3",
+   "start": 272.88,
+   "natural": 6.87,
+   "measured": 1321,
+   "who": "A"
+  },
+  {
+   "key": "p4",
+   "start": 280.32,
+   "natural": 5.03,
+   "measured": 1351,
+   "who": "A"
+  },
+  {
+   "key": "p5",
+   "start": 285.92,
+   "natural": 5.5,
+   "measured": 1381,
+   "who": "A"
+  },
+  {
+   "key": "p6",
+   "start": 291.99,
+   "natural": 7.4,
+   "measured": 1411,
+   "who": "B"
+  },
+  {
+   "key": "x14",
+   "start": 300.41,
+   "natural": 3.93,
+   "measured": 1441,
+   "who": "A"
+  },
+  {
+   "key": "p7",
+   "start": 304.91,
+   "natural": 6.58,
+   "measured": 1471,
+   "who": "B"
+  },
+  {
+   "key": "p8",
+   "start": 312.41,
+   "natural": 3.44,
+   "measured": 1501,
+   "who": "A"
+  },
+  {
+   "key": "p9",
+   "start": 316.42,
+   "natural": 7.64,
+   "measured": 1531,
+   "who": "A"
+  },
+  {
+   "key": "p10",
+   "start": 324.63,
+   "natural": 4.25,
+   "measured": 1561,
+   "who": "B"
+  },
+  {
+   "key": "p11",
+   "start": 329.45,
+   "natural": 5.3,
+   "measured": 1591,
+   "who": "A"
+  },
+  {
+   "key": "x15",
+   "start": 335.17,
+   "natural": 3.2,
+   "measured": 1621,
+   "who": "B"
+  },
+  {
+   "key": "p12",
+   "start": 338.94,
+   "natural": 5.97,
+   "measured": 1651,
+   "who": "A"
+  },
+  {
+   "key": "z1",
+   "start": 349.83,
+   "natural": 6.75,
+   "measured": 1681,
+   "who": "A"
+  },
+  {
+   "key": "z2",
+   "start": 357.15,
+   "natural": 9.15,
+   "measured": 1711,
+   "who": "B"
+  },
+  {
+   "key": "z3",
+   "start": 366.87,
+   "natural": 4.97,
+   "measured": 1741,
+   "who": "A"
+  },
+  {
+   "key": "z4",
+   "start": 372.41,
+   "natural": 7.83,
+   "measured": 1771,
+   "who": "B"
+  },
+  {
+   "key": "z5",
+   "start": 380.81,
+   "natural": 4.97,
+   "measured": 1801,
+   "who": "A"
+  },
+  {
+   "key": "x17",
+   "start": 387.6,
+   "natural": 3.05,
+   "measured": 1831,
+   "who": "B"
+  },
+  {
+   "key": "x18",
+   "start": 391.07,
+   "natural": 2.87,
+   "measured": 1861,
+   "who": "A"
+  },
+  {
+   "key": "z6",
+   "start": 394.86,
+   "natural": 5.83,
+   "measured": 1891,
+   "who": "A"
+  },
+  {
+   "key": "z7",
+   "start": 401.26,
+   "natural": 8.38,
+   "measured": 1921,
+   "who": "B"
+  },
+  {
+   "key": "z8",
+   "start": 410.21,
+   "natural": 6.68,
+   "measured": 1951,
+   "who": "A"
+  },
+  {
+   "key": "z9",
+   "start": 417.46,
+   "natural": 4.21,
+   "measured": 1981,
+   "who": "A"
+  },
+  {
+   "key": "z10",
+   "start": 422.59,
+   "natural": 7.79,
+   "measured": 2011,
+   "who": "A"
+  },
+  {
+   "key": "x20",
+   "start": 430.95,
+   "natural": 6.55,
+   "measured": 2041,
+   "who": "B"
+  },
+  {
+   "key": "z12",
+   "start": 438.07,
+   "natural": 2.7,
+   "measured": 2071,
+   "who": "A"
+  },
+  {
+   "key": "x21",
+   "start": 441.69,
+   "natural": 2.7,
+   "measured": 2101,
+   "who": "B"
+  },
+  {
+   "key": "c1",
+   "start": 448.71,
+   "natural": 5.45,
+   "measured": 2131,
+   "who": "A"
+  },
+  {
+   "key": "c2",
+   "start": 454.73,
+   "natural": 8.93,
+   "measured": 2161,
+   "who": "B"
+  },
+  {
+   "key": "c3",
+   "start": 464.23,
+   "natural": 5.03,
+   "measured": 2191,
+   "who": "A"
+  },
+  {
+   "key": "x22",
+   "start": 469.68,
+   "natural": 1.25,
+   "measured": 2221,
+   "who": "B"
+  },
+  {
+   "key": "c4",
+   "start": 471.5,
+   "natural": 4.65,
+   "measured": 2251,
+   "who": "A"
+  },
+  {
+   "key": "c5",
+   "start": 476.72,
+   "natural": 2.55,
+   "measured": 2281,
+   "who": "B"
+  },
+  {
+   "key": "x23",
+   "start": 479.84,
+   "natural": 2.98,
+   "measured": 2311,
+   "who": "A"
+  },
+  {
+   "key": "c6",
+   "start": 483.39,
+   "natural": 5.54,
+   "measured": 2341,
+   "who": "A"
+  },
+  {
+   "key": "c7",
+   "start": 489.5,
+   "natural": 7,
+   "measured": 2371,
+   "who": "B"
+  },
+  {
+   "key": "c8",
+   "start": 497.07,
+   "natural": 2.47,
+   "measured": 2401,
+   "who": "A"
+  },
+  {
+   "key": "c9",
+   "start": 502.51,
+   "natural": 6.85,
+   "measured": 2431,
+   "who": "B"
+  },
+  {
+   "key": "x24",
+   "start": 510.88,
+   "natural": 3.66,
+   "measured": 2461,
+   "who": "A"
+  },
+  {
+   "key": "b1",
+   "start": 518.86,
+   "natural": 4.92,
+   "measured": 2491,
+   "who": "B"
+  },
+  {
+   "key": "x25",
+   "start": 524.2,
+   "natural": 3.18,
+   "measured": 2521,
+   "who": "A"
+  },
+  {
+   "key": "b2",
+   "start": 527.95,
+   "natural": 2.89,
+   "measured": 2551,
+   "who": "A"
+  },
+  {
+   "key": "b3",
+   "start": 531.41,
+   "natural": 7.9,
+   "measured": 2581,
+   "who": "B"
+  },
+  {
+   "key": "b4",
+   "start": 539.88,
+   "natural": 4.46,
+   "measured": 2611,
+   "who": "A"
+  },
+  {
+   "key": "b5",
+   "start": 544.91,
+   "natural": 6.88,
+   "measured": 2641,
+   "who": "B"
+  },
+  {
+   "key": "b6",
+   "start": 552.96,
+   "natural": 6.49,
+   "measured": 2671,
+   "who": "A"
+  },
+  {
+   "key": "x26",
+   "start": 559.87,
+   "natural": 2.55,
+   "measured": 2701,
+   "who": "B"
+  },
+  {
+   "key": "b7",
+   "start": 562.99,
+   "natural": 5.23,
+   "measured": 2731,
+   "who": "A"
+  },
+  {
+   "key": "b8",
+   "start": 568.79,
+   "natural": 6.45,
+   "measured": 2761,
+   "who": "B"
+  },
+  {
+   "key": "b9",
+   "start": 576.76,
+   "natural": 5.56,
+   "measured": 2791,
+   "who": "A"
+  },
+  {
+   "key": "b10",
+   "start": 582.89,
+   "natural": 9.47,
+   "measured": 2821,
+   "who": "B"
+  },
+  {
+   "key": "u1",
+   "start": 596.68,
+   "natural": 4.67,
+   "measured": 2851,
+   "who": "A"
+  },
+  {
+   "key": "u2",
+   "start": 601.92,
+   "natural": 5.43,
+   "measured": 2881,
+   "who": "A"
+  },
+  {
+   "key": "u3",
+   "start": 607.92,
+   "natural": 5.97,
+   "measured": 2911,
+   "who": "A"
+  },
+  {
+   "key": "u4",
+   "start": 614.46,
+   "natural": 7.83,
+   "measured": 2941,
+   "who": "B"
+  },
+  {
+   "key": "u5",
+   "start": 622.86,
+   "natural": 8.72,
+   "measured": 2971,
+   "who": "B"
+  },
+  {
+   "key": "u6",
+   "start": 632.15,
+   "natural": 4.18,
+   "measured": 3001,
+   "who": "A"
+  },
+  {
+   "key": "x27",
+   "start": 637.85,
+   "natural": 2.17,
+   "measured": 3031,
+   "who": "B"
+  },
+  {
+   "key": "u7",
+   "start": 640.59,
+   "natural": 8.81,
+   "measured": 3061,
+   "who": "A"
+  },
+  {
+   "key": "u8",
+   "start": 649.97,
+   "natural": 8.18,
+   "measured": 3091,
+   "who": "B"
+  },
+  {
+   "key": "u9",
+   "start": 658.72,
+   "natural": 3.83,
+   "measured": 3121,
+   "who": "A"
+  },
+  {
+   "key": "x28",
+   "start": 663.12,
+   "natural": 3.35,
+   "measured": 3151,
+   "who": "B"
+  },
+  {
+   "key": "u10",
+   "start": 667.04,
+   "natural": 2.78,
+   "measured": 3181,
+   "who": "A"
+  },
+  {
+   "key": "f1",
+   "start": 674.14,
+   "natural": 8.88,
+   "measured": 3211,
+   "who": "B"
+  },
+  {
+   "key": "f2",
+   "start": 683.59,
+   "natural": 4.6,
+   "measured": 3241,
+   "who": "A"
+  },
+  {
+   "key": "x29",
+   "start": 688.61,
+   "natural": 1.23,
+   "measured": 3271,
+   "who": "B"
+  },
+  {
+   "key": "f3",
+   "start": 690.41,
+   "natural": 7,
+   "measured": 3301,
+   "who": "A"
+  },
+  {
+   "key": "x30",
+   "start": 697.98,
+   "natural": 2.48,
+   "measured": 3331,
+   "who": "B"
+  },
+  {
+   "key": "f4",
+   "start": 701.03,
+   "natural": 6.46,
+   "measured": 3361,
+   "who": "A"
+  },
+  {
+   "key": "f5",
+   "start": 708.06,
+   "natural": 6.92,
+   "measured": 3391,
+   "who": "B"
+  },
+  {
+   "key": "f6",
+   "start": 715.9,
+   "natural": 7.66,
+   "measured": 3421,
+   "who": "A"
+  },
+  {
+   "key": "f7",
+   "start": 724.13,
+   "natural": 7.5,
+   "measured": 3451,
+   "who": "B"
+  },
+  {
+   "key": "f8",
+   "start": 734.15,
+   "natural": 4.91,
+   "measured": 3481,
+   "who": "A"
+  },
+  {
+   "key": "x31",
+   "start": 739.63,
+   "natural": 3.33,
+   "measured": 3511,
+   "who": "B"
+  },
+  {
+   "key": "f9",
+   "start": 743.53,
+   "natural": 5.61,
+   "measured": 3541,
+   "who": "A"
+  },
+  {
+   "key": "f10",
+   "start": 749.71,
+   "natural": 5.2,
+   "measured": 3571,
+   "who": "B"
+  }
+ ]
+}

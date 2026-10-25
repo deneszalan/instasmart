@@ -19,7 +19,8 @@
       "caption": "Computer model based on Hubble measurements: stars in the core of Omega Centauri moving over the next 10,000 years, projected from how far each shifted between 2002 and 2006.",
       "credit": "NASA, ESA, J. Anderson and R. van der Marel (STScI) · CC BY 4.0 · excerpt",
       "href": "https://esahubble.org/videos/heic1017a/",
-      "music": "“Mesmerizing Galaxy” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Mesmerizing Galaxy” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 5, "shock": 6 }
     },
     {
       "type": "stat",

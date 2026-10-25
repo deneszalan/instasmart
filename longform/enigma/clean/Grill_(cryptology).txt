@@ -1,0 +1,728 @@
+{{Short description|Cryptology method}}
+{{distinguish|Grille (cryptography)}}
+{{Cipher Bureau}}
+{{EnigmaSeries}}
+The '''grill method''' ({{langx|pl|metoda rusztu}}), in [[cryptology]], was a method used chiefly early on, before the advent of the [[cyclometer]], by the mathematician-cryptologists of the [[Polish Cipher Bureau]] in [[decryption|decrypting]] German [[Enigma machine]] [[cipher]]s. The Enigma [[Rotor machine|rotor cipher machine]] changes [[plaintext]] characters into [[Ciphertext|cipher text]] using a different [[permutation]] for each character, and so implements a [[polyalphabetic cipher|polyalphabetic]] [[substitution cipher]].
+
+==Background==
+The German navy started using Enigma machines in 1926; it was called ''Funkschlüssel C'' ("Radio cipher C"). By 15 July 1928, the German Army (''[[Reichswehr]]'') had introduced their own version of the Enigma—the ''Enigma G''; a revised ''Enigma I'' (with [[Enigma machine#Plugboard|plugboard]]) appeared in June 1930. The Enigma I used by the German military in the 1930s was a 3-rotor machine. Initially, there were only three [[Enigma rotor details|rotors]] labelled ''I'', ''II'', and ''III'', but they could be arranged in any order when placed in the machine. Polish cryptologist [[Marian Rejewski]] identified the rotor permutations by {{mvar|L}}, {{mvar|M}}, and {{mvar|N}}; the encipherment produced by the rotors altered as each character was encrypted. The rightmost permutation ({{mvar|N}}) changed with each character. In addition, there was a plugboard that did some additional scrambling.
+
+The number of possible different rotor wirings is:
+:<math> 26^3 = 17,536 </math>
+
+The number of possible different [[Enigma machine#Reflector|reflector]] wirings is:
+:<math>\frac{26!}{2^{13} \, 13!} = 7,905,853,580,625</math>
+
+A perhaps more intuitive way of arriving at this figure is to consider that 1 letter can be wired to any of 25 others, leaving 24 further letters to connect. The next chosen letter can connect to any of 23 others, leaving 22 further letters to connect. Repeating this process yields:
+
+<math>25 * 23 * 21 * 19  ... * 3 * 1 = 7,905,853,580,625</math>
+
+The number of possible different plugboard wirings (for six cables) is:
+:<math>\frac{26!}{2^6 \, 6! \, 14!} = 100,391,791,500</math>
+
+To encrypt or decrypt, the operator made the following machine key settings:
+* the rotor order (''Walzenlage'')
+* the [[Enigma machine#Turnover|ring]] settings (''Ringstellung'')
+* the plugboard connections (''Steckerverbindung'')
+* an initial rotor position (''Grundstellung'')
+
+In the early 1930s, the Germans distributed a secret monthly list of all the daily machine settings. The Germans knew that it would be foolish to encrypt the day's traffic using the same key, so each message had its own "message key". This message key was the sender-chosen initial rotor positions (e.g., YEK). The message key had to be conveyed to the recipient operator, so the Germans decided to encrypt it using the day's pre-specified daily ground setting (''Grundstellung''). The recipient would use the daily machine settings for all messages. He would set the Enigma's initial rotor position to the ground setting and decrypt the message key. The recipient would then set the initial rotor position to the message key and decrypt the body of the message.
+
+The Enigma was used with radio communications, so letters were occasionally corrupted during transmission or reception. If the recipient did not have the correct message key, then the recipient could not decipher the message. The Germans decided to send the three-letter message key twice to guard against transmission errors. Instead of encrypting the message key "YEK" once and sending the encrypted key twice, the Germans doubled the message key to "YEKYEK" ("doubled key"), encrypted the doubled key with the ground setting, and sent the encrypted doubled key. The recipient could then recognize a garbled message key and still decrypt the message. For example, if the recipient received and decrypted the doubled key as "YEKYEN", then the recipient could try both message keys "YEK" and "YEN"; one would produce the desired message and the other would produce gibberish.
+
+The encrypted doubled key was a huge cryptographic mistake because it allowed cryptanalysts to know two encipherments of the same letter, three places apart, for each of the three letters. The Polish codebreakers exploited this mistake in many ways. [[Marian Rejewski]] used the doubled key and some known daily keys obtained by a spy, to determine the wiring of the three rotors and the reflector. In addition, code clerks often did not choose secure random keys, but instead chose weak keys such as "AAA", "ABC", and "SSS". The Poles later used the doubled weak keys to find the unknown daily keys. The grill method was an early exploitation of the doubled key to recover part of the daily settings. The [[cyclometer]] and the [[Bomba (cryptography)|''bomba kryptologiczna'']] were later exploitations of the doubled key.
+
+===Example message===
+[[File:EnigmaMachineLabeled.jpg|thumb|The [[Enigma machine]] was an electro-mechanical [[rotor machine]] with a scrambler consisting of (from right to left) an entry drum, three rotors and a reflector. It was available commercially from the early 1920s and was modified for use by the German military who adopted it later in the decade.]]
+
+Frode Weierud provides the procedure, secret settings, and results that were used in a 1930 German technical manual.
+
+<pre>
+Daily settings (shared secret):
+  Wheel Order  : II  I  III
+  Ringstellung : 24  13  22 (XMV)
+  Reflector    : A
+  Plugboard    : A-M, F-I, N-V, P-S, T-U, W-Z
+  Grundstellung: 06  15  12 (FOL)
+
+Operator chosen message key : ABL
+Enciphered starting with FOL: PKPJXI
+
+Message to send and resulting 5-letter groups of clear text:
+  Feindliche Infanteriekolonne beobachtet.
+  Anfang Südausgang Bärwalde.
+  Ende 3 km ostwärts Neustadt.
+
+  FEIND LIQEI NFANT ERIEK 
+  OLONN EBEOB AQTET XANFA 
+  NGSUE DAUSG ANGBA ERWAL 
+  DEXEN DEDRE IKMOS TWAER 
+  TSNEU STADT
+
+Resulting message:
+  1035 – 90 – 341 – 
+  PKPJX IGCDS EAHUG WTQGR
+  KVLFG XUCAL XVYMI GMMNM
+  FDXTG NVHVR MMEVO UYFZS
+  LRHDR RXFJW CFHUH MUNZE
+  FRDIS IKBGP MYVXU Z
+</pre>
+
+The first line of the message is not encrypted. The "1035" is the time, "90" is number of characters encrypted under the message key, and "341" is a system indicator that tells the recipient how the message was encrypted (i.e., using Enigma with a certain daily key). The first six letters in the body ("PKPJXI") are the doubled key ("ABLABL") encrypted using the daily key settings and starting the encryption at the ground setting/Grundstellung "FOL". The recipient would decipher the first six letters to recover the message key ("ABL"); he would then set the machine's rotors to "ABL" and decipher the remaining 90 characters. Notice that the Enigma does not have numerals, punctuation, or [[Germanic umlaut|umlauts]]. Numbers were spelled out. Most spaces were ignored; an "X" was used for a period. Umlauts used their alternative spelling with a trailing "e". Some abbreviations were used: a "Q" was used for "CH".
+
+When Rejewski started his attack in 1932, he found it obvious that the first six letters were the enciphered doubled key.
+
+===Key encryption===
+The daily key settings and ground setting will permute the message key characters in different ways. That can be shown by encrypting six of the same letter for all 26 letters:
+<pre>
+AAAAAA -> PUUJJN
+BBBBBB -> TKYWXV
+CCCCCC -> KZMVVY
+DDDDDD -> XMSRQK
+EEEEEE -> RYZOLZ
+FFFFFF -> ZXNSTU
+GGGGGG -> QRQUNT
+HHHHHH -> SSWYYS
+IIIIII -> WNOZPL
+JJJJJJ -> MQVAAX
+KKKKKK -> CBTTSD
+LLLLLL -> OWPQEI
+MMMMMM -> JDCXUO
+NNNNNN -> YIFPGA
+OOOOOO -> LPIEZM
+PPPPPP -> AOLNIW
+QQQQQQ -> GJGLDR
+RRRRRR -> EGXDWQ
+SSSSSS -> HHDFKH
+TTTTTT -> BVKKFG
+UUUUUU -> VAAGMF
+VVVVVV -> UTJCCB
+WWWWWW -> ILHBRP
+XXXXXX -> DFRMBJ
+YYYYYY -> NEBHHC
+ZZZZZZ -> FCEIOE
+</pre>
+From this information, the permutations for each of the six message keys can be found. Label each permutation ''A B C D E F''. These permutations are secret: the enemy should not know them.
+:<math>\begin{align}
+A = &\binom\texttt{abcdefghijklmnopqrstuvwxyz}
+           \texttt{ptkxrzqswmcojylagehbvuidnf} &= \texttt{(ap)(bt)(ck)(dx)(er)(fz)(gq)(hs)(iw)(jm)(lo)(ny)(uv)} \\
+B = &\binom\texttt{abcdefghijklmnopqrstuvwxyz}
+           \texttt{ukzmyxrsnqbwdipojghvatlfec} &= \texttt{(au)(bk)(cz)(dm)(ey)(fx)(gr)(hs)(in)(jq)(lw)(op)(tv)} \\
+C = &\binom\texttt{abcdefghijklmnopqrstuvwxyz}
+           \texttt{uymsznqwovtpcfilgxdkajhrbe} &= \texttt{(au)(by)(cm)(ds)(ez)(fn)(gq)(hw)(io)(jv)(kt)(lp)(rx)} \\
+D = &\binom\texttt{abcdefghijklmnopqrstuvwxyz}
+           \texttt{jwvrosuyzatqxpenldfkgcbmhi} &= \texttt{(aj)(bw)(cv)(dr)(eo)(fs)(gu)(hy)(iz)(kt)(lq)(mx)(np)} \\
+E = &\binom\texttt{abcdefghijklmnopqrstuvwxyz}
+           \texttt{jxvqltnypaseugzidwkfmcrbho} &= \texttt{(aj)(bx)(cv)(dq)(el)(ft)(gn)(hy)(ip)(ks)(mu)(oz)(rw)} \\
+F = &\binom\texttt{abcdefghijklmnopqrstuvwxyz}
+           \texttt{nvykzutslxdioamwrqhgfbpjce} &= \texttt{(an)(bv)(cy)(dk)(ez)(fu)(gt)(hs)(il)(jx)(mo)(pw)(qr)} \\
+\end{align}</math>
+Notice the permutations are products of 13 disjoint [[Transposition (mathematics)|transpositions]].{{Elucidate|date=September 2014}} For the ''A'' permutation, it not only changes "A" into "P" but it also changes "P" into "A". That allows the machine to both encrypt and decrypt messages.
+
+[[Augustin-Louis Cauchy]] introduced ''[[Permutation#Two-line notation|two-line notation]]'' in 1815 and ''[[Permutation#Cycle notation|cycle notation]]'' in 1844.
+
+==Rejewski's characteristic==
+Rejewski made a discovery. Without knowing the plugboard settings, the rotor positions, the ring settings, or the ground setting, he could solve for all the daily message keys. All he needed were enough messages and some code clerks using non-random message keys.
+
+The message key is three characters long, so the doubled key is six characters long. Rejewski labeled the permutations for the successive message-key characters ''A B C D E F''. He did not know what those permutations were, but he did know that ''A'' and ''D'' permutations encrypted the same message key letter, that ''B'' and ''E'' encrypted the same letter, and that ''C'' and ''F'' encrypted the same letter. If {{mvar|p<sub>i</sub>}} are the (unknown) plaintext letters of the message key and {{mvar|c<sub>i</sub>}} are the corresponding (known) ciphertext letters, then
+:<math>\begin{align}
+p_1 &= c_1 A^{-1}&= p_4 &= c_4 D^{-1} \\
+p_2 &= c_2 B^{-1}&= p_5 &= c_5 E^{-1} \\
+p_3 &= c_3 C^{-1}&= p_6 &= c_6 F^{-1} \\
+\end{align}</math>
+
+The equations can be post multiplied by ''D'', ''E'', and ''F'' respectively to simplify the right hand sides:
+:<math>\begin{align}
+p_1 D &= c_1 A^{-1}D &= p_4 D &= c_4 \\
+p_2 E &= c_2 B^{-1}E &= p_5 E &= c_5 \\
+p_3 F &= c_3 C^{-1}F &= p_6 F &= c_6 \\
+\end{align}</math>
+
+The plaintext values are unknown, so those terms are just dropped to leave:
+:<math>\begin{align}
+c_1 A^{-1}D&= c_4 \\
+c_2 B^{-1}E&= c_5 \\
+c_3 C^{-1}F&= c_6 \\
+\end{align}</math>
+
+The above equations describe a path through the permutations. If {{mvar|c<sub>1</sub>}} is passed through the inverse of {{mvar|A}}, then it produces {{mvar|p<sub>1</sub>}}. If that character passes through {{mvar|D}}, then the result is {{mvar|c<sub>4</sub>}}.
+
+Rejewski also knew that the Enigma permutations were self inverses: Enigma encryption and decryption were identical. That means that {{math|A A {{=}} I}} where {{mvar|I}} is the identity permutation. Consequently, {{math|''A''{{=}}''A''<sup>&minus;1</sup>}}. Thus:
+:<math>\begin{align}
+c_1 AD &= c_4 \\
+c_2 BE &= c_5 \\
+c_3 CF &= c_6 \\
+\end{align}</math>
+
+The above equations show the relationship between the doubled key characters. Although Rejewski did not know the individual permutations ''A B C D E F'', a single message told him how specific characters were permuted by the composed permutations ''AD'', ''BE'', and ''CF''.
+
+From many messages, Rejewski could determine the composed permutations completely. In practice, about 60 messages were needed to determine the permutations.
+
+Rejewski recorded the three permutations with a cyclic notation he called the characteristic. {{Harvtxt|Rejewski|1981|p=217}} gives an example:
+:<math>\begin{align}
+AD &= \texttt{(dvpfkxgzyo)(eijmunglht)(bc)(rw)(a)(s)} \\
+BE &= \texttt{(blfqveoum)(hjpswizrn)(axt)(cgy)(d)(k)} \\
+CF &= \texttt{(abviktjgfcqny)(duzrehlxwpsmo)} \\
+\end{align}</math>
+
+In this notation, the first cycle of permutation {{mvar|AD}} would map d to v, v to p, p to f, ..., y to o, and o would wrap around to d.
+
+Marks and Weierud give an example from [[Alan Turing]] that shows these cycles can be completed when some information is incomplete.
+
+Furthermore, Enigma permutations were simple transpositions, which meant that each permutation ''A B C D E F'' only transposed pairs of characters. Those character pairs had to come from different cycles of the same length. Moreover, any one pairing between two cycles determined all the other pairs in those cycles. Consequently, permutations ''A'' and ''D'' both had to transpose a and s because (a) and (s) are the only cycles of length one and there is only one way to pair them. There are two ways to match (bc) and (rw) because b must pair with either r or w. Similarly, there are ten ways to match the remaining ten-character cycles. In other words, Rejewski now knew that there were only twenty possibilities for the permutations ''A'' and ''D''. Similarly, there were 27 candidates for ''B'' and ''E'', and 13 candidates for ''C'' and ''F''.
+
+===Weak keys===
+At this point, the Poles would exploit weaknesses in the code clerks' selection of message keys to determine which candidates were the correct ones. If the Poles could correctly guess the key for a particular message, then that guess would anchor two cycles in each of the three characteristics.
+
+The Poles intercepted many messages; they would need about 60 messages in the same daily key to determine the characteristic, but they may have many more. Early on, Rejewski had identified the six characters that made up the message key. If the code clerks were choosing random message keys, then one would not expect to see much correlation in the encrypted six characters. However, some code clerks were lazy. What if, out of a hundred messages, there were five messages from five different stations (meaning five different code clerks) that all used the same message key "PUUJJN"? That they all came up with the same key suggests they used a very simple or very common key. The Poles kept track of different stations and how those stations would choose message keys. Early on, clerks often used simple keys such as "AAA" or "BBB".
+
+The end result was that without knowing the Enigma's plugboard settings, the rotor positions, or the ring settings, Rejewski determined each of the permutations ''A B C D E F'', and hence all of the day's message keys.
+
+Initially, Rejewski used the knowledge of permutations ''A B C D E F'' (and a manual obtained by a French spy) to determine the rotor wirings. After learning the rotor wirings, the Poles used the permutations to determine the rotor order, plugboard connections, and ring settings through further steps of the grill method.
+
+===Continuing the 1930 example===
+Using the daily key in the 1930 technical manual above, then (with enough messages) Rejewski could find the following characteristics:
+:<math>\begin{align}
+AD &= \texttt{(pjxroquctwzsy)(kvgledmanhfib)} \\
+BE &= \texttt{(kxtcoigweh)(zvfbsylrnp)(ujd)(mqa)} \\
+CF &= \texttt{(yvxqtdhpim)(skgrjbcolw)(un)(fa)(e)(z)} \\
+\end{align}</math>
+
+Although there are theoretically 7 trillion possibilities for each of the ''A B C D E F'' permutations, the characteristics above have narrowed the ''A'' and ''D'' permutations to just 13 possibilities, ''B'' and ''E'' to just 30 possibilities, and ''C'' and ''F'' to just 20 possibilities. The characteristic for ''CF'' has two singleton cycles, {{mono|(e)}} and {{mono|(z)}}. Those singleton cycles must pair in the individual permutations, so the characteristic for ''CF'' implies that the "E" and "Z" exchange in both the ''C'' and ''F'' permutations.
+:<math>\begin{align}
+C &= \texttt{(ez)...} \\
+F &= \texttt{(ez)...} \\
+\end{align}</math>
+The pairing of "E" and "Z" can be checked in the original (secret) permutations given above.
+
+Rejewski would now know that indicators with the pattern "..E..E" were from a message key of "..Z"; similarly an indicator of "..Z..Z" were from a message key of "..E". In the day's traffic, he might find indicators such as "PKZJXZ"<!--ABEABE--> or "RYZOLZ"<!--EEEEEE-->; might one of these indicators be the common (lazy) message key "EEE"? The characteristic limits the number of possible permutations to a small number, and that allows some simple checks. "PKZJXZ" cannot be "EEE" because it requires "K" and "E" to interchange in ''B'', but both "K" and "E" are part of the same cycle in ''BE'': {{mono|(kxtcoigweh)}}. Interchanging letters must come from distinct cycles of the same length. The repeating key could also be confirmed because it could uncover other repeating keys.
+
+The indicator "RYZOLZ" is a good candidate for the message key "EEE", and it would immediately determine both permutations ''A'' and ''D''. For example, in ''AD'', the assumed message key "EEE" requires that "E" and "R" interchange in ''A'' and that "E" and "O" interchange in ''D''.
+:<math>\begin{align}
+A &= \texttt{(er)...} \\
+D &= \texttt{(eo)...} \\
+\end{align}</math>
+
+If "E" interchanges with "R" in ''A'' (notice one character came from the first cycle in ''AD'' and the other character came from the second cycle), then the letter following "E" (i.e. "D") will interchange with the letter preceding "R" (i.e. "X") .
+:<math>\begin{align}
+A &= \texttt{(er)(dx)...} \\
+D &= \texttt{(eo)...} \\
+\end{align}</math>
+
+That can be continued to get all the characters for both permutations.
+:<math>\begin{align}
+A &= \texttt{(er)(dx)(jm)(ap)(ny)(hs)(fz)(iw)(bt)(ck)(uv)(gq)(lo)} \\
+D &= \texttt{(eo)(lq)(gu)(cv)(kt)(bw)(iz)(fs)(hy)(np)(ag)(mx)(dr)} \\
+\end{align}</math>
+
+This characteristic notation is equivalent to the expressions given for the 1930 permutations ''A'' and ''D'' given above by sorting the cycles so that the earliest letter is first.
+:<math>\begin{align}
+A &= \texttt{(ap)(bt)(ck)(dx)(er)(fz)(gq)(hs)(iw)(jm)(lo)(ny)(uv)} \\
+D &= \texttt{(aj)(bw)(cv)(dr)(eo)(fs)(gu)(hy)(iz)(kt)(lq)(mx)(np)} \\
+\end{align}</math>
+
+The guessed message key of "EEE" producing indicator "RYZOLZ" would also determine the pairing of the 10-long cycles in permutation ''BE''.
+:<math>\begin{align}
+B &= \texttt{(ey)(hs)(kb)(xf)(tv)(cz)(op)(in)(gr)(wl)...} \\
+E &= \texttt{(le)(rw)(ng)(pi)(zo)(vc)(ft)(bx)(sk)(yh)...} \\
+\end{align}</math>
+
+That determines most of ''B'' and ''E'', and there would only be three possible variations left that pair {{mono|(ujd)}} and {{mono|(mqa)}}. There are still 20 possible variations for ''C'' and ''F''. At this point, the Poles could decrypt all of the first and fourth letters of the daily keys; they could also decrypt 20 out 26 of the second and fifth letters. The Poles' belief in these permutations could be checked by looking at other keys and seeing if they were typical keys used by code clerks.<!--They could confirm a ZZZ key-->
+
+With that information, they could go looking for and find other likely weak message keys that would determine the rest of the ''A B C D E F'' permutations. For example, if the Poles had an indicator "TKYWXV", they could decrypt it as "BB.BB."; checking the cycles for ''CF'' would reveal that the indicator is consistent with message key "BBB".
+
+==Rejewski's model==
+Rejewski modeled the machine as permutation made from permutations of plugboard ({{mvar|S}}), the wiring from the keyboard/lamps to the rotors ({{mvar|H}}), the three rotors ({{mvar|LMN}}), and the reflector ({{mvar|R}}). The permutation for each position of the doubled key was different, but they were related by a permutation {{mvar|P}} that represented a single step of a rotor ({{mvar|P}} is known). Rejewski assumed that the left and middle rotors did not move while encrypting the doubled key. The six letters of the doubled key consequently see the permutations A B C D E F:
+:<math>\begin{align}
+A &= S H (P^{1}NP^{-1}) L M R M^{-1} L^{-1} (P^{1}N^{-1}P^{-1}) H^{-1} S^{-1} \\
+B &= S H (P^{2}NP^{-2}) L M R M^{-1} L^{-1} (P^{2}N^{-1}P^{-2}) H^{-1} S^{-1} \\
+C &= S H (P^{3}NP^{-3}) L M R M^{-1} L^{-1} (P^{3}N^{-1}P^{-3}) H^{-1} S^{-1} \\
+D &= S H (P^{4}NP^{-4}) L M R M^{-1} L^{-1} (P^{4}N^{-1}P^{-4}) H^{-1} S^{-1} \\
+E &= S H (P^{5}NP^{-5}) L M R M^{-1} L^{-1} (P^{5}N^{-1}P^{-5}) H^{-1} S^{-1} \\
+F &= S H (P^{6}NP^{-6}) L M R M^{-1} L^{-1} (P^{6}N^{-1}P^{-6}) H^{-1} S^{-1} \\
+\end{align}
+</math>
+
+Rejewski simplified<!-- explain why the simplication is important--> these equations by creating {{mvar|Q}} as a composite reflector made from the real reflector and two leftmost rotors:
+:<math>Q = L M R M^{-1} L^{-1}</math>
+
+Substitution produces:
+
+:<math>\begin{align}
+A &= S H (P^{1}NP^{-1}) Q (P^{1}N^{-1}P^{-1}) H^{-1} S^{-1} \\
+B &= S H (P^{2}NP^{-2}) Q (P^{2}N^{-1}P^{-2}) H^{-1} S^{-1} \\
+C &= S H (P^{3}NP^{-3}) Q (P^{3}N^{-1}P^{-3}) H^{-1} S^{-1} \\
+D &= S H (P^{4}NP^{-4}) Q (P^{4}N^{-1}P^{-4}) H^{-1} S^{-1} \\
+E &= S H (P^{5}NP^{-5}) Q (P^{5}N^{-1}P^{-5}) H^{-1} S^{-1} \\
+F &= S H (P^{6}NP^{-6}) Q (P^{6}N^{-1}P^{-6}) H^{-1} S^{-1} \\
+\end{align}
+</math>
+
+The result is six equations in four unknowns (''S H N Q''). Rejewski had a commercial Enigma machine, and he initially thought that {{mvar|H}} would be the same. In other words, Rejewski guessed that
+:<math> H = \binom{qwertzuioasdfghjkpyxcvbnml}{abcdefghijklmnopqrstuvwxyz}</math>
+Later, Rejewski realized that guess was wrong. Rejewski then guessed (correctly) that {{mvar|H}} was just the identity permutation:
+:<math> H = \binom{abcdefghijklmnopqrstuvwxyz}{abcdefghijklmnopqrstuvwxyz}</math>
+That still left three unknowns. Rejewski comments:
+: So I had a set of six equations in three unknowns, S, N, and Q. While I puzzled over how to solve that set of equations, on December 9, 1932, completely unexpectedly and at the most opportune moment, a photocopy of two tables of daily keys for September and October 1932 was delivered to me.
+
+Having the daily keys meant that {{mvar|S}} was now known. The known permutations were moved to the left side in the equations by premultiplying and post multiplying.
+:<math>\begin{align}
+H^{-1} S^{-1} A  S H &= (P^{1}NP^{-1}) Q (P^{1}N^{-1}P^{-1}) \\
+H^{-1} S^{-1} B  S H &= (P^{2}NP^{-2}) Q (P^{2}N^{-1}P^{-2}) \\
+H^{-1} S^{-1} C  S H &= (P^{3}NP^{-3}) Q (P^{3}N^{-1}P^{-3}) \\
+H^{-1} S^{-1} D  S H &= (P^{4}NP^{-4}) Q (P^{4}N^{-1}P^{-4}) \\
+H^{-1} S^{-1} E  S H &= (P^{5}NP^{-5}) Q (P^{5}N^{-1}P^{-5}) \\
+H^{-1} S^{-1} F  S H &= (P^{6}NP^{-6}) Q (P^{6}N^{-1}P^{-6}) \\
+\end{align}
+</math>
+
+The leftmost and rightmost {{mvar|P}} permutations on the right-hand side (which were also known) were moved to the left; the results were given the variable names ''U V W X Y Z'':
+:<math>\begin{align}
+U &= P^{-1} H^{-1} S^{-1} A  S H P^{1} &= (NP^{-1}) Q (P^{1}N^{-1}) \\
+V &= P^{-2} H^{-1} S^{-1} B  S H P^{2} &= (NP^{-2}) Q (P^{2}N^{-1}) \\
+W &= P^{-3} H^{-1} S^{-1} C  S H P^{3} &= (NP^{-3}) Q (P^{3}N^{-1}) \\
+X &= P^{-4} H^{-1} S^{-1} D  S H P^{4} &= (NP^{-4}) Q (P^{4}N^{-1}) \\
+Y &= P^{-5} H^{-1} S^{-1} E  S H P^{5} &= (NP^{-5}) Q (P^{5}N^{-1}) \\
+Z &= P^{-6} H^{-1} S^{-1} F  S H P^{6} &= (NP^{-6}) Q (P^{6}N^{-1}) \\
+\end{align}
+</math>
+
+Rejewski then multiplied each equation with the next:
+:<math>\begin{align}
+U V &= (NP^{-1}) Q (P^{1}N^{-1}) (NP^{-2}) Q (P^{2}N^{-1}) &= NP^{-1} (Q P^{-1} Q P) P^{1}N^{-1} \\
+V W &= (NP^{-2}) Q (P^{2}N^{-1}) (NP^{-3}) Q (P^{3}N^{-1}) &= NP^{-2} (Q P^{-1} Q P) P^{2}N^{-1} \\
+W X &= (NP^{-3}) Q (P^{3}N^{-1}) (NP^{-4}) Q (P^{4}N^{-1}) &= NP^{-3} (Q P^{-1} Q P) P^{3}N^{-1} \\
+X Y &= (NP^{-4}) Q (P^{4}N^{-1}) (NP^{-5}) Q (P^{5}N^{-1}) &= NP^{-4} (Q P^{-1} Q P) P^{4}N^{-1} \\
+Y Z &= (NP^{-5}) Q (P^{5}N^{-1}) (NP^{-6}) Q (P^{6}N^{-1}) &= NP^{-5} (Q P^{-1} Q P) P^{5}N^{-1} \\
+\end{align}
+</math>
+Next, Rejewski eliminated the common subexpression {{math|(''Q'' ''P''<sup>&minus;1</sup> ''Q'' ''P'')}} by substituting its value obtained from the previous product.
+:<math>\begin{align}
+V W &= NP^{-1}N^{-1} (UV) NP^{1}N^{-1} \\
+W X &= NP^{-1}N^{-1} (VW) NP^{1}N^{-1} \\
+X Y &= NP^{-1}N^{-1} (WX) NP^{1}N^{-1} \\
+Y Z &= NP^{-1}N^{-1} (XY) NP^{1}N^{-1} \\
+\end{align}
+</math>
+The result is a set of four equations in just one unknown: {{math|''NPN''<sup>&minus;1</sup>}}.
+
+===Back to 1930 example===
+For the 1930 example above,
+
+<pre>
+     ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  A  ptkxrzqswmcojylagehbvuidnf
+  B  ukzmyxrsnqbwdipojghvatlfec
+  C  uymsznqwovtpcfilgxdkajhrbe
+  D  jwvrosuyzatqxpenldfkgcbmhi
+  E  jxvqltnypaseugzidwkfmcrbho
+  F  nvykzutslxdioamwrqhgfbpjce
+</pre>
+are transformed to the {{mvar|U V W X Y Z}} permutations:
+<pre>
+     ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  U  gkvlysarqxbdptumihfnoczjew
+  V  gnfmycaxtrzsdbvwujliqophek
+  W  uekfbdszrtcyqxvwmigjaopnlh
+  X  jelfbdrvsaxctqyungimphzkow
+  Y  ltgmwycsvqxadzrujohbpiekfn
+  Z  mskpiyuteqcravzdjlbhgnxwfo
+</pre>
+and then multiplied to produce the five successive products:
+
+<pre>
+       ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  UV = azoselgjuhnmwiqdtxcbvfkryp = (a)(e)(g)(y)(hj)(rx)(bzpdscoqt)(flmwkniuv)
+  VW = sxdqlkunjihgfeopatyrmvwzbc = (o)(p)(v)(w)(ij)(rt)(asybxzcdq)(elgumfkhn)
+  WX = pbxdefiwgmlonkhztsrajyuqcv = (b)(d)(e)(f)(gi)(rs)(apzvycxqt)(hwujmnklo)
+  XY = qwaytmoihlkgbjfpzcvdusnxre = (k)(p)(u)(x)(hi)(sv)(aqzetdyrc)(bwnjlgofm)
+  YZ = rhuaxfkbnjwmpolgqztsdeicyv = (f)(j)(q)(y)(bh)(st)(arzvexcud)(gkwinolmp)
+</pre>
+Now the goal is to find the single structure preserving map that transforms UV to VW, VW to WX, WX to XY, and XY to YZ. Found by subscription of cycle notation.{{clarify|date=July 2015}} When {{mvar|UV}} maps to {{mvar|VW}}, the map must mate cycles of the same length.  That means that <code>(a)</code> in {{mvar|UV}} must map to one of <code>(o)(p)(v)(w)</code> in {{mvar|VW}}. In other words, <code>a</code> must map to one of <code>opvw</code>. These can be tried in turn.
+
+<pre>
+  UV = (a)(e)(g)(y)(hj)(rx)(bzpdscoqt)(flmwkniuv)
+  VW = (o)                                        (p)(v)(w)(ij)(rt)(asybxzcdq)(elgumfkhn)
+ 
+  VW = (o)(p)(v)(w)(ij)(rt)(asybxzcdq)(elgumfkhn)
+  WX =                                            (b)(d)(e)(f)(gi)(rs)(apzvycxqt)(hwujmnklo)
+ 
+  WX = (b)(d)(e)(f)(gi)(rs)(apzvycxqt)(hwujmnklo)
+  XY =                                            (k)(p)(u)(x)(hi)(sv)(aqzetdyrc)(bwnjlgofm)
+ 
+  XY = (k)(p)(u)(x)(hi)(sv)(aqzetdyrc)(bwnjlgofm)
+  YZ =                                            (f)(j)(q)(y)(bh)(st)(arzvexcud)(gkwinolmp)
+</pre>
+
+But <code>a</code> must map the same to <code>o</code> in each pairing, so other character mappings are also determined:
+
+<pre>
+  UV = (a)(e)(g)(y)(hj)(rx)(bzpdscoqt)(flmwkniuv)
+  VW = (o)                                        (p)(v)(w)(ij)(rt)(asybxzcdq)(elgumfkhn)
+ 
+  VW = (o)(p)(v)(w)(ij)(rt)(asybxzcdq)(elgumfkhn)
+  WX =                     (ohwujmnkl)            (b)(d)(e)(f)(gi)(rs)(apzvycxqt)
+ 
+  WX = (b)(d)(e)(f)(gi)(rs)(apzvycxqt)(hwujmnklo)
+  XY =                     (ofmbwnjlg)            (k)(p)(u)(x)(hi)(sv)(aqzetdyrc)
+ 
+  XY = (k)(p)(u)(x)(hi)(sv)(aqzetdyrc)(bwnjlgofm)
+  YZ =                     (olmpgkwin)            (f)(j)(q)(y)(bh)(st)(arzvexcud)
+</pre>
+
+Consequently, the character maps for <code>sybxzcdq</code>, <code>pzvycxqt</code>, and <code>qzetdyrc</code> are discovered and consistent. Those mappings can be exploited:
+<pre>
+  UV = (a)(e)(g)(y)(hj)(rx)(bzpdscoqt)(flmwkniuv)
+  VW = (o)(p)   (w)    (ij)(umfkhnelg)(xzcdqasyb) (v)(rt)
+ 
+  VW = (o)(p)(v)(w)(ij)(rt)(asybxzcdq)(elgumfkhn)
+  WX =    (f)(b)       (ig)(ohwujmnkl)(pzvycxqta) (d)(e)(rs)
+ 
+  WX = (b)(d)(e)(f)(gi)(rs)(apzvycxqt)(hwujmnklo)
+  XY = (u)(k)(p)       (ih)(ofmbwnjlg)            (x)(sv)(aqzetdyrc)
+ 
+  XY = (k)(p)(u)(x)(hi)(sv)(aqzetdyrc)(bwnjlgofm)
+  YZ =    (f)   (j)    (hb)(olmpgkwin)(udarzvexc) (q)(y)(st)
+</pre>
+
+Which determines the rest of the map and consistently subscribes:
+<pre>
+  UV = (a)(e)(g)(y)(hj)(rx)(bzpdscoqt)(flmwkniuv)
+  VW = (o)(p)(v)(w)(tr)(ij)(umfkhnelg)(xzcdqasyb)
+ 
+  VW = (o)(p)(v)(w)(ij)(rt)(asybxzcdq)(elgumfkhn)
+  WX = (e)(f)(b)(d)(sr)(ig)(ohwujmnkl)(pzvycxqta)
+ 
+  WX = (b)(d)(e)(f)(gi)(rs)(apzvycxqt)(hwujmnklo)
+  XY = (u)(k)(p)(x)(vs)(ih)(ofmbwnjlg)(tdyrcaqze)
+ 
+  XY = (k)(p)(u)(x)(hi)(sv)(aqzetdyrc)(bwnjlgofm)
+  YZ = (q)(f)(y)(j)(ts)(hb)(olmpgkwin)(udarzvexc)
+</pre>
+
+The resulting map with successive subscriptions:
+<pre>
+ resulting map: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                ounkpxvtsrqzcaeflihgybdjwm = (aoepfxjrishtgvbuywdkqlzmcn)
+  UV = (a)(e)(g)(y)(hj)(rx)(bzpdscoqt)(flmwkniuv)
+  VW = (o)(p)(v)(w)(tr)(ij)(umfkhnelg)(xzcdqasyb)
+  WX = (e)(f)(b)(d)(gi)(sr)(ycxqtapzv)(jmnklohwu)
+  XY = (p)(x)(u)(k)(vs)(hi)(wnjlgofmb)(rcaqzetdy)
+  YZ = (f)(j)(y)(q)(bh)(ts)(darzvexcu)(inolmpgkw)
+</pre>
+The map gives us {{math|''NPN''<sup>&minus;1</sup>}}, but that is also congugate (structure preserving). Consequently, the 26 possible values for {{mvar|N}} are found by subscribing {{mvar|P}} in 26 possible ways.<!-- describe 26! taken down to just 26. The 26 possible are because the left side of N can be rotated in all possible 26 positions -->
+
+The model above ignored the right rotor's ring setting (22) and ground setting (12), both of which were known because Rejewski had the daily keys. The ring setting has the effect of counterrotating the drum by 21; the ground setting advances it by 11. Consequently, the rotor rotation is -10, which is also 16.
+<pre>
+         ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Straight ounkpxvtsrqzcaeflihgybdjwm
+Shifted  gpsquvbyxwortzmcekdafnljih = (agbpcsdqeufvnzhyixjwlrkomt)
+subscribe P in different ways:        (abcdefghijklmnopqrstuvwxyz)
+                                      (bcdefghijklmnopqrstuvwxyza) * actual rotor wiring
+                                      (cdefghijklmnopqrstuvwxyzab)
+                                      ...
+                                      (zabcdefghijklmnopqrstuvwxy)
+
+rotor *   ABCDEFGHIJKLMNOPQRSTUVWXYZ
+          bdfhjlcprtxvznyeiwgakmusqo
+</pre>
+
+==Grill==
+The physical grill{{clarify|date=September 2014}} was used to determine both the rightmost rotor, its initial position, and the plugboard settings.
+
+===Bottom sheet===
+Rejewsky observed that {{mvar|S}} is close to the identity permutation (in the early 1930s, only 12 of 26 letters were affected by the plugboard). He moved everything but {{mvar|Q}} to the left side of the equations by premultiplying or postmultiplying. The resulting system of equations is:
+:<math>\begin{align}
+(P^{1}N^{-1}P^{-1}) S^{-1} A S (P^{1}NP^{-1}) &= Q \\
+(P^{2}N^{-1}P^{-2}) S^{-1} B S (P^{2}NP^{-2}) &= Q \\
+(P^{3}N^{-1}P^{-3}) S^{-1} C S (P^{3}NP^{-3}) &= Q \\
+(P^{4}N^{-1}P^{-4}) S^{-1} D S (P^{4}NP^{-4}) &= Q \\
+(P^{5}N^{-1}P^{-5}) S^{-1} E S (P^{5}NP^{-5}) &= Q \\
+(P^{6}N^{-1}P^{-6}) S^{-1} F S (P^{6}NP^{-6}) &= Q \\
+\end{align}
+</math>
+
+At his point, {{mvar|Q}} is unknown, but it is the same for each equation. Rejewski does not know {{mvar|N}}, but he knows it is one of the rotors (I, II, and III), and he knows the wiring for each of those rotors. There were only three rotors and 26 possible initial rotations. Consequently, there are only 84 possible values for {{mvar|N}}. Rejewski can look at each possible value to see if the {{mvar|Q}} permutation is consistent. If there were no steckers ({{mvar|S}} were the identity), then each equation would produce the same {{mvar|Q}}.
+
+Consequently, he made one bottom sheet for each possible rotor (three sheets). Each bottom sheet consisted of 31 lines (26 + 5 to make six lines contiguous). Each line contained the stepped permutation of a known rotor. For example, a suitable bottom sheet for rotor III is,
+
+:<math>\begin{align}
+P^{0}&NP^{-0}   &\ \texttt{bdfhjlcprtxvznyeiwgakmusqo} \\
+P^{1}&NP^{-1}   &\ \texttt{cegikboqswuymxdhvfzjltrpna} \\
+P^{2}&NP^{-2}   &\ \texttt{dfhjanprvtxlwcgueyiksqomzb} \\
+&... &... \\
+P^{25}&NP^{-25} &\ \texttt{pcegikmdqsuywaozfjxhblnvtr} \\
+P^{0}&NP^{-0}   &\ \texttt{bdfhjlcprtxvznyeiwgakmusqo} \\
+P^{1}&NP^{-1}   &\ \texttt{cegikboqswuymxdhvfzjltrpna} \\
+P^{2}&NP^{-2}   &\ \texttt{dfhjanprvtxlwcgueyiksqomzb} \\
+P^{3}&NP^{-3}   &\ \texttt{egizmoquswkvbftdxhjrpnlyac} \\
+P^{4}&NP^{-4}   &\ \texttt{fhylnptrvjuaescwgiqomkxzbd} \\
+\end{align}
+</math>
+
+In the early 1930s, the rotor order was the same for a month or more, so the Poles usually knew which rotor was in the rightmost position and only needed to use one bottom sheet. After 1 November 1936, the rotor order changed every day. The Poles could use the [[Clock (cryptography)|clock method]] to determine the rightmost rotor, so the grill would only need to examine that rotor's bottom sheet.
+
+===Top sheet===
+<!-- the extraction of the permutations A through F from messages -->
+
+For the top sheet, Rejewski wrote the six permutations {{mvar|A}} through {{mvar|F}}.
+
+<pre>
+A: abcdefghijklmnopqrstuvwxyz
+   srwivhnfdolkygjtxbapzecqmu
+(..slit......................)
+...
+
+F: abcdefghijklmnopqrstuvwxyz
+   wxofkduihzevqscymtnrglabpj
+(..slit......................)
+</pre>
+There were six slits so the permutations on the bottom sheet would show through at the proper place.
+
+The top sheet would then be slid through all possible positions of rotor {{mvar|N}}, and the cryptanalyst would look for consistency with some unknown but constant permutation {{mvar|Q}}.  If there is not a consistent {{mvar|Q}}, then the next position is tried.
+
+Here's what the grill would show for the above permutations at its consistent alignment:
+<pre>
+A: abcdefghijklmnopqrstuvwxyz
+   ptkxrzqswmcojylagehbvuidnf
+17 fpjtvdbzxkmoqsulyacgeiwhnr (visible through slit)
+
+B: abcdefghijklmnopqrstuvwxyz
+   ukzmyxrsnqbwdipojghvatlfec
+18 oisucaywjlnprtkxzbfdhvgmqe (visible through slit)
+
+C: abcdefghijklmnopqrstuvwxyz
+   uymsznqwovtpcfilgxdkajhrbe
+19 hrtbzxvikmoqsjwyaecguflpdn (visible through slit)
+
+D: abcdefghijklmnopqrstuvwxyz
+   jwvrosuyzatqxpenldfkgcbmhi
+20 qsaywuhjlnprivxzdbftekocmg (visible through slit)
+
+E: abcdefghijklmnopqrstuvwxyz
+   jxvqltnypaseugzidwkfmcrbho
+21 rzxvtgikmoqhuwycaesdjnblfp (visible through slit)
+
+F: abcdefghijklmnopqrstuvwxyz
+   nvykzutslxdioamwrqhgfbpjce
+22 ywusfhjlnpgtvxbzdrcimakeoq (visible through slit)
+</pre>
+
+In permutation {{mvar|A}}, the cryptanalyst knows that <code>(c k)</code> interchange. He can see how rotor III would scramble those letters by looking at the first line (the alphabet in order) and the line visible through the slit.  The rotor maps <code>c</code> into <code>j</code> and it maps <code>k</code> into <code>m</code>. If we ignore steckers for the moment, that means permutation {{mvar|Q}} would interchange <code>(j m)</code>.  For {{mvar|Q}} to be consistent, it must be the same for all six {{mvar|A B C D E F}} permutations.
+
+Look at the grill near permutation {{mvar|D}} to check if its {{mvar|Q}} also interchanges <code>(j m)</code>. Through the slit, find the letter <code>j</code> and look in the same column two lines above it to find <code>h</code>.  That tells us the rotor, when it has advanced three positions, now maps <code>h</code> into <code>j</code>.  Similarly, the advanced rotor will map <code>y</code> into <code>m</code>.  Looking at permutation {{mvar|D}}, it interchanges <code>(h y)</code>, so the two tests are consistent.
+
+Similarly, in permutation {{mvar|A}}, the <code>(d x)</code> interchange and imply that <code>(t h)</code> interchange in {{mvar|Q}}.  Looking at permutation {{mvar|E}}, <code>(e l)</code> interchange and also imply that <code>(t h)</code> interchange in {{mvar|Q}}.
+
+All such tests would be consistent if there were no steckers, but the steckers confuse the issue by hiding such matches. If any of the letters involved in the test is steckered, then it will not look like a match.<!-- Rejewski characterized the search as tedious; see quote below. -->
+
+The effect of the rotor permutation can be removed to leave the {{mvar|Q}} implied by the {{mvar|A B C D E F}} permutations.  The result (along with the actual value of {{mvar|Q}}) is:
+<pre>
+   -: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Q(A): vyzrilptemqfjsugkdnhoaxwbc
+Q(B): myqvswpontxzaihgcuejrdfkbl
+Q(C): vcbrpmoulxwifzgeydtshakjqn
+Q(D): kyirhulecmagjqstndopfzxwbv
+Q(E): vemgbkdtwufzcxrysoqhjainpl
+Q(F): wvlrpqsmjizchtuefdgnobayxk
+
+Q   : vyqrpkstnmfzjiuecdghoaxwbl (this actual Q is unknown to the cryptanalyst)
+</pre>
+Most of the letters in an implied permutation are incorrect. An exchange in an implied permutation is correct if two letters are not steckered. About one half the letters are steckered, so the expectation is only one fourth of the letters in an implied permutation are correct. Several columns show correlations; column <code>A</code> has three <code>v</code> characters, and <code>(a v)</code> interchange in the actual {{mvar|Q}}; column <code>D</code> has four <code>r</code> characters, and <code>(d r)</code> interchange in {{mvar|Q}}.
+
+{{harvtxt|Rejewski|1981|p=222}} describes the possibility of writing down the six implied {{mvar|Q}}s for all 26 possible rotor positions. Rejewski states, "If permutation {{mvar|S}} actually were the identity, then ... for a particular [initial position] we would obtain the same value for all expressions {{mvar|Q}} and in this way we would find the setting of drum {{mvar|N}}.  Permutation {{mvar|S}} does exist, however, so for no [initial position] will the expression {{mvar|Q}} be equal to each other, but among them will be a certain similarity for a particular [initial position], since permutation {{mvar|S}} does not change all the letters."
+
+Rejewski states that writing down all the possible {{mvar|Q}} "would be too laborious", so he developed the grill (grid) method.  "Next, the grid is moved along the paper on which the drum connections are written until it hits upon a position where some similarities show up among the several expression {{mvar|Q}}. ... In this way the setting of drum {{mvar|N}} and the changes resulting from permutation {{mvar|S}} are found simultaneously.  This process requires considerable concentration since the similarities I mentioned do not always manifest themselves distinctly and can be very easily overlooked." The reference does not describe what techniques were used. Rejewski did state that the grill method required unsteckered pairs of letters.
+
+Permutation {{mvar|A}} has the exchanges <code>(ap)(bt)(ck)...</code>. If we assume the exchange <code>(ap)</code> is unsteckered, that implies {{mvar|Q}} exchanges <code>(fl)</code>. The other five permutations {{mvar|B C D E F}} can be quickly checked for an unsteckered pair that is consistent with {{mvar|Q}} interchanging <code>(fl)</code> — essentially checking column <code>F</code> for other rows with <code>l</code> without computing the entire table. None are found, so <code>(ap)</code> would have at least one stecker so the assumption it is unsteckered is abandoned. The next pair can be guessed as unsteckered. The exchange <code>(bt)</code> implies {{mvar|Q}} exchanges <code>(pg)</code>; that is consistent with <code>(lw)</code> in {{mvar|B}}, but that guess fails to pan out because <code>t</code> and <code>w</code> are steckered.
+<pre>
+A: b↔t   B: l↔w   C: k←t   D: x→m   E: m→u   F: j←x
+   ↓ ↓      ↓ ↓      * ↑      ↑ *      ↑ *      * ↑
+   b t      l w      x t      k z      z f      j k
+   ↓ ↓      ↑ ↑      ↑ ↑      ↑ ↑      ↑ ↑      ↑ ↑
+Q: p↔g      p↔g      p↔g      p↔g      p↔g      p↔g
+guessing (b)(t) unsteckered in S leads to the guess (l)(w) unsteckered in S
+ C finds stecker (k x)
+ D finds stecker (z m)
+ E finds stecker (f u)
+ F finds (j)
+</pre>
+Following those guesses ultimately leads to a contradiction:
+<pre>
+A: f↔z   B: m→d   C: p←l   D: f→s   E: p!x   F:
+   ↓ ↓      ↑ *      * ↑      ↑ *      ↑ ↑
+   u m      z y      r l      u a      r k      
+   ↓ ↓      ↑ ↑      ↑ ↑      ↑ ↑      ↑ ↑      ↑ ↑
+Q: e↔q      e↔q      e↔q      e↔q      e↔q      e↔q
+exploit (f z) in A leads to (e q) exchange in Q
+ B finds (d y) steckered
+ C finds (p r) steckered
+ D finds (a s) steckered
+ E finds (p x) steckered - but p is already steckered to r! failure
+</pre>
+
+The third exchange <code>(ck)</code> implies {{mvar|Q}} exchanges <code>(jm)</code>; this time permutation {{mvar|D}} with an unsteckered <code>(hy)</code> would be consistent with {{mvar|Q}} exchanging <code>(jm)</code>.
+<pre>
+A: c↔k   B:       C:       D: h↔y   E:       F:
+   ↓ ↓                        ↑ ↑
+   c k      i x      n j      h y      u i      g u
+   ↓ ↓      ↑ ↑      ↑ ↑      ↑ ↑      ↑ ↑      ↑ ↑
+Q: j↔m      j↔m      j↔m      j↔m      j↔m      j↔m
+guessing (c)(y) unsteckered in S leads to the guess (h)(y) unsteckered in S
+</pre>
+At this point, the guess is that the letters <code>chky</code> are unsteckered.  From that guess, all the steckers can be solved for this particular problem. The known (assumed) exchanges in {{mvar|S}} are used to find exchanges in {{mvar|Q}}, and those exchanges are used to extend what is known about {{mvar|S}}.
+
+Using those unsteckered letters as seeds finds <code>(hy)</code> interchange in {{mvar|E}} and implies <code>(kf)</code> is in {{mvar|Q}}; similarly <code>(cy)</code> interchange in {{mvar|F}} and implies <code>(uo)</code> is in {{mvar|Q}}. Examining <code>(uo)</code> in the other permutations finds <code>(tu)</code> is a stecker.<!-- Q:(uo) inverted in perm C -->
+
+<pre>
+A:       B:       C:       D:       E: h↔y   F:
+                                       ↓ ↓
+   j a      o s      i v      v s      h y      w e
+   ↑ ↑      ↑ ↑      ↑ ↑      ↑ ↑      ↓ ↓      ↑ ↑
+Q: k↔f      k↔f      k↔f      k↔f      k↔f      k↔f
+exploit (hy) in E
+
+A:       B:       C: t←k   D:       E:       F: c↔y
+                     * ↑                        ↓ ↓
+   o l      d a      u k      f w      m j      c y
+   ↑ ↑      ↑ ↑      ↑ ↑      ↑ ↑      ↓ ↓      ↑ ↑
+Q: u↔o      u↔o      u↔o      u↔o      u↔o      u↔o
+exploit (cy) in F shows (tu) are in S
+</pre>
+
+That adds letters <code>tu</code> to the seeds. Those letters were also unknown above, so further information can be gleaned by revisiting: {{mvar|S}} also has <code>(g)(if)(x)</code>.
+<pre>
+A: c↔k   B: f→x   C:       D: h↔y   E: t→f   F: g←t
+   ↓ ↓      ↑ *               ↑ ↑      ↑ *      * ↑
+   c k      i x      n j      h y      u i      g u
+   ↓ ↓      ↑ ↑      ↑ ↑      ↑ ↑      ↑ ↑      ↑ ↑
+Q: j↔m      j↔m      j↔m      j↔m      j↔m      j↔m
+knowing (tu) in S leads to (g)(if) in S
+then (if) in S can be used to find (x) in S
+</pre>
+
+Revisit <code>(kf)(uo)</code> in {{mvar|Q}} gives more information:
+<pre>
+A:       B: o←p   C: f→n   D: n→p   E: h↔y   F: z→e
+            * ↑      ↑ *      ↑ *      ↓ ↓      ↑ *
+   j a      o s      i v      v s      h y      w e
+   ↑ ↑      ↑ ↑      ↑ ↑      ↑ ↑      ↓ ↓      ↑ ↑
+Q: k↔f      k↔f      k↔f      k↔f      k↔f      k↔f
+exploit (if) in S leads to (nv) in S
+ (nv) in S leads to stecker (ps)
+ (ps) in S leads to (o)
+ (wz) in S leads to (e)
+
+A: o→l   B:       C: t←k   D: i→z   E:       F: c↔y
+   ↑ *               * ↑      ↑ *               ↓ ↓
+   o l      d a      u k      f w      m j      c y
+   ↑ ↑      ↑ ↑      ↑ ↑      ↑ ↑      ↓ ↓      ↑ ↑
+Q: u↔o      u↔o      u↔o      u↔o      u↔o      u↔o
+exploit (if) in S leads to stecker (wz) in S
+ (o) in S leads to (l) in S
+</pre>
+
+Another revisit fully exploits <code>(jm)</code>:
+<pre>
+A: c↔k   B: f x   C: v→j   D: h↔y   E: t→f   F: g←t
+   ↓ ↓      ↑ *      ↑ *      ↑ ↑      ↑ *      * ↑
+   c k      i x      n j      h y      u i      g u
+   ↓ ↓      ↑ ↑      ↑ ↑      ↑ ↑      ↑ ↑      ↑ ↑
+Q: j↔m      j↔m      j↔m      j↔m      j↔m      j↔m
+knowing (nv) in S leads to (j) in S
+</pre>
+
+That addition fills out even more:
+<pre>
+A: j→m   B: o←p   C: f→n   D: n→p   E: h↔y   F: z→e
+   ↑ *      * ↑      ↑ *      ↑ *      ↓ ↓      ↑ *
+   j a      o s      i v      v s      h y      w e
+   ↑ ↑      ↑ ↑      ↑ ↑      ↑ ↑      ↓ ↓      ↑ ↑
+Q: k↔f      k↔f      k↔f      k↔f      k↔f      k↔f
+exploit (j) in S leads to (am) in S
+
+A: o→l   B: d←m   C: t←k   D: i→z   E: a↔j   F: c↔y
+   ↑ *      * ↑      * ↑      ↑ *      ↑ ↑      ↓ ↓
+   o l      d a      u k      f w      m j      c y
+   ↑ ↑      ↑ ↑      ↑ ↑      ↑ ↑      ↓ ↓      ↑ ↑
+Q: u↔o      u↔o      u↔o      u↔o      u↔o      u↔o
+exploit (j)(am) in S leads to (d) in S
+
+Q = ( (fk)(jm)(ou)... )
+ missing 10 pairings
+S = ( (am)(c)(d)(fi)(g)(h)(j)(k)(l)(nv)(o)(ps)(tu)(wz)(x)(y)... )
+ 22 characters so far: missing beqr
+ have found all 6 steckers, so (b)(e)(q)(r)
+</pre>
+
+All of {{mvar|S}} is now known after examining 3 exchanges in {{mvar|Q}}. The rest of {{mvar|Q}} can be found easily.
+
+When a match is found, then the cryptanalyst would learn both the initial rotation of {{mvar|N}} and the plugboard (''Stecker'') permutation {{mvar|S}}.
+
+==Recovering absolute rotor positions for the message key==
+At this point, the rotor positions for the {{mvar|Q}} permutation is not known. That is, the initial positions (and possibly the order) of rotors {{mvar|L}} and {{mvar|M}} are not known. The Poles applied brute force by trying all possible initial positions ({{math|26<sup>2</sup> {{=}} 676}}) of the two rotors. With three rotors, knowing which rotor was at position {{mvar|N}} meant there were only two possible ways to load the other two rotors.
+
+<!-- There may have been a quick way to do this check. Load the rotors into the machine. We know that (ap)(bt)(ck) interchange, so press the a key and keep it depressed. While keeping a depressed, rotate the middle rotor until the p lamp lights. While still pressing a, press b (this keeps the right rotor from advancing) and then release a. If the t lamp lights, continue checking other interchanges. If that fails, go back to pressing a and advance the left rotor by one position.(this may be explained in Kozaczuk appendix.-->
+Later, the Poles developed a catalog of all the {{mvar|Q}} permutations. The catalog was not large: there were six possible [[combination]]s of two left rotors with {{math|26<sup>2</sup>{{=}}676}} initial settings, so the catalog had 4,056 entries. After using the grill, the Poles would look up {{mvar|Q}} in the catalog to learn the order and initial positions of the other two rotors.
+
+Initially, the Germans changed the rotor order infrequently, so the Poles would often know the rotor order before they began working. The rotor order changed every quarter until 1 February 1936. Then it changed every month until 1 November 1936, when it was changed daily.
+
+==Recovering the ring setting==
+The cryptanalyst now knew the plugboard, the rotor order, and the absolute setting of the rotors for the doubled key, but he did not know the ring setting. He also knew what the message key setting should be, but that setting was useless without knowing the ring setting. The ring setting could be anything, and that meant the Poles did not know how to position the rotors for the message body.  All the work up to this point had focussed on exploiting the doubled key. To determine the ring setting, the attention now shifted to the actual message.
+
+Here, the Germans had made another mistake. Each message usually started with the text "ANX", which was German ''an'' meaning "to:" with the "X" meaning space. The Poles applied brute force here, too. They would go through up to {{math|26<sup>3</sup> {{=}} 17,576}} settings to find settings that produced "ANX". Once found, the cryptanalyst would use the absolute setting of the rotors to determine the ring setting. The entire daily key was thus recovered.
+
+Later, the Poles refined the brute force search technique. By examining some messages, they could determine the position of the rightmost rotor; consequently, only 676 rotor positions would have to be tried. Rejewski no longer remembers how this trick worked.
+
+==Decline==
+The grill method is described by [[Marian Rejewski]] as being "manual and tedious" and, like the later cryptologic bomb, as being "based... on the fact that the plug connections [in the Enigma's commutator, or "plugboard"] did not change all the letters." Unlike the bomb, however, "the grill method required unchanged ''pairs'' of letters [rather than] only unchanged letters."
+
+Initially, the plugboard only swapped six pairs of letters. That left more than half of the alphabet unaffected by permutation {{mvar|S}}. The number of steckers changed 1 August 1936; then it could be from five to eight pairs of letters were swapped. The extra swapped characters reduced the effectiveness of the grid method, so the Poles started looking for other methods. The result was the cyclometer and corresponding card catalog; that method was immune to steckers.
+
+The grill method found application as late as December 1938 in working out the wiring in two Enigma rotors newly introduced by the Germans. (This was made possible by the fact that a ''[[Sicherheitsdienst]]'' net, while it had introduced the new drums IV and V, continued using the old system for enciphering the individual message keys.)
+
+On 15 September 1938, most German nets stopped encrypting the doubled key with a common setting (the ground setting). The Poles had been able to take advantage of all messages in a net using the same machine settings to encrypt the doubled key. Now most nets stopped doing that; instead, the operator would choose his own ground setting and send it in the clear to the recipient. This change frustrated the grill method and the cyclometer card catalog. One net, the ''[[Sicherheitsdienst]]'' (SD) net, continued to use a common ground setting, and that net was used to reverse engineer new rotors (IV and V) that were introduced. The SD net traffic was doubly encoded, so the ANX method would not work. The grill method would sometimes fail after the Germans increased the number of plugboard connections to ten on 1 January 1939. When the SD net switched to the new message-key protocol on 1 July 1939, the grill method (and the cyclometer method) were no longer useful.
+
+Here's an example of the new message procedure for a message on 21 September 1938.
+
+<pre>
+2109 -1750 - 3 TLE - FRX FRX - 1TL -172=
+HCALN UQKRQ AXPWT WUQTZ KFXZO MJFOY RHYZW VBXYS IWMMV WBLEB
+DMWUW BTVHM RFLKS DCCEX IYPAH RMPZI OVBBR VLNHZ UPOSY EIPWJ
+TUGYO SLAOX RHKVC HQOSV DTRBP DJEUK SBBXH TYGVH GFICA CVGUV
+OQFAQ WBKXZ JSQJF ZPEVJ RO -
+</pre>
+
+The "3 TLE" (German ''Teile'', parts) says it is a 3-part message; the "1TL" (German ''Teil'', part) says this is the first part; the "172" says there are 172 characters in the message (including the message key). For this message, the ground setting "FRX" is transmitted twice in the clear; the ground setting would/should be different for every message on net. Consequently, the Poles could not find the needed sixty message keys encrypted under the same ground setting. Without the same-key message volume, they could not determine the characteristic, so they could not determine the permutations ''A B C D E F'' or use the grill. For this message, the daily settings (rotor order, plugboard, and ring settings) were used with "FRX" to decrypt the first six characters ("HCALN U") to obtain the doubled message key ("AGIAGI").
+
+To decrypt these messages, the Poles used other techniques to exploit the doubled message key.
+
+==See also==
+*[[Permutation matrix]]
+
+==Notes==
+{{reflist|30em}}
+
+==References==
+{{refbegin|30em}}
+* {{cite book |last=Kahn |first=David |author-link=David Kahn (writer) |year=1991 |title=Seizing the Enigma: The Race to Break the German U-Boats Codes, 1939–1943 |isbn=978-0-395-42739-2 }}
+* {{ Citation | last = Kozaczuk | first = Władysław | author-link = Władysław Kozaczuk | year = 1984 | title = Enigma: How the German Machine Cipher was Broken, and how it was Read by the Allies in World War Two, ''edited and translated by Christopher Kasparek [a revised and augmented translation of ''W kręgu enigmy'', Warsaw, Książka i Wiedza, 1979, supplemented with appendices by Marian Rejewski], Frederick, MD'' | publisher = University Publications of America | isbn = 978-0-89093-547-7}}.
+* {{Cite journal | last1 = Kruh | first1 = L. | last2 = Deavours | first2 = C. | doi = 10.1080/0161-110291890731 | title = The Commercial Enigma: Beginnings of Machine Cryptography | journal = Cryptologia | volume = 26 | pages = 1–16 | year = 2002 | s2cid = 41446859 }}
+* {{citation |first=Tadeusz |last=Lisicki |chapter=Die Leistung des polnischen Entzifferungsdienstes bei der Lösung des Verfahrens der deutschen »Enigma«-Funkschlüsselmachine |trans-chapter=The Methods the Polish Cipher Bureau used to solve the German Enigma Cipher Machine |language=de |title=Die Funkaufklärung und ihre Rolle im Zweiten Weltkrieg |trans-title=Radio Intelligence and its Role in World War II |editor1-first=J. |editor1-last=Rohwer |editor2-first=E. |editor2-last=Jäkel |publisher=Motorbuch Verlag |location=Stuttgart |year=1979 |pages=66–81 |chapter-url=http://chc60.fgcu.edu/images/articles/Tadeusz%20Lisicki.pdf |access-date=2014-10-12 |archive-date=2014-10-19 |archive-url=https://web.archive.org/web/20141019130954/http://chc60.fgcu.edu/images/articles/Tadeusz%20Lisicki.pdf }}
+* {{citation |last=Rejewski |first=Marian |author-link=Marian Rejewski |title=How Polish Mathematicians Deciphered the Enigma |journal=Annals of the History of Computing |volume=3 |issue=3 |date=July 1981 |pages=213–234 |doi=10.1109/MAHC.1981.10033 |s2cid=15748167 |url=http://chc60.fgcu.edu/Images/articles/Rejewski.pdf}}<!-- title has "Deciphered" but doi says title has "Broke" -->
+* {{ Citation | last = Rejewski | first = Marian | author-link = Marian Rejewski | year = 1984c | title = Summary of Our Methods for Reconstructing ENIGMA and Reconstructing Daily Keys, and of German Efforts to Frustrate Those Methods: Appendix C}} of {{Harvnb|Kozaczuk |1984|pp=241–45}}
+* {{Citation | last = Rejewski | first = Marian | author-link = Marian Rejewski | year = 1984d | title = How the Polish Mathematicians Broke Enigma: Appendix D}} of {{Harvnb|Kozaczuk|1984|pp=246–71}}
+* {{ Citation | last = Rejewski | first = Marian | author-link = Marian Rejewski | year = 1984e | title = The Mathematical Solution of the Enigma Cipher: Appendix E}} of {{Harvnb|Kozaczuk|1984|pp=272–291}}
+{{refend}}
+
+==External links==
+* Polish Contributions to Computing, http://chc60.fgcu.edu/EN/HistoryDetail.aspx?c=1 {{Webarchive|url=https://web.archive.org/web/20140713004556/http://chc60.fgcu.edu/EN/HistoryDetail.aspx?c=1 |date=2014-07-13 }}
+* {{citation |contribution=Facts and Myths of Enigma: Breaking Stereotypes |last1=Gaj |first1=Kris |last2=Orlowski |first2=Arkadiusz |editor-first=Eli |pages=106–122 |editor-last=Biham |title=Advances in Cryptology — EUROCRYPT 2003: International Conference on the Theory and Applications of Cryptographic Techniques |location=Warsaw, Poland |date=May 2003 |id=LNCS 2656 |publisher=Springer-Verlag |isbn=978-3-540-14039-9 |url=https://books.google.com/books?id=Z6go9itkilcC&pg=PA111 |ref=none}} Also https://www.iacr.org/archive/eurocrypt2003/26560106/26560106.doc
+* {{citation |first=Bill |last=Casselman |title=Marian Rejewski and the First Break into Enigma |date=November 2009 |series=Feature Column |publisher=American Mathematical Society |url=http://www.ams.org/samplings/feature-column/fcarc-enigma |access-date=2014-11-15 |ref=none}}
+* {{citation |first=Bill |last=Casselman |title=The Polish Attack on Enigma II: Zygalski sheets |date=December 2013 |series=Feature Column |publisher=American Mathematical Society |url=http://www.ams.org/samplings/feature-column/fc-2013-12 |access-date=2014-11-15 |ref=none}}
+* [https://web.archive.org/web/20141023120544/https://www.nsa.gov/public_info/_files/european_axis_sigint/volume_2_notes_on_german.pdf European Axis Signal Intelligence in World War II as Revealed by "TICOM" Investigations and by other Prisoner of War Interrogations and Captured Material, Principally German: Volume 2 — Notes on German High Level Cryptography and Cryptanalysis]; see page 76: Swiss changed rotor wirings every 3 months, but Germans figured out the wirings because some messages were sent twice during the tri-monthly changeover. Germans were told new Croat rotor wirings by the company that manufactured the rotors.
+*[https://books.google.com/books?id=pQBrsonDp6cC&pg=PA419 Bauer p 419]
+
+[[Category:History of cryptography]]
+[[Category:Science and technology in Poland]]
+[[Category:Cipher Bureau (Poland)]]

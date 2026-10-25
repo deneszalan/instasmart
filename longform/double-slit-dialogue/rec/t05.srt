@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: All matter? Electrons, atoms, everything?
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: In principle, yes.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: And in nineteen twenty-seven, experiments confirmed it for electrons, bouncing them off crystals and through thin films.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERB: But for decades, the two-slit version with electrons was taught only as a thought experiment.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: This experiment, Richard Feynman even wrote in his famous lectures, has never been done in just this way.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERB: Except it had, in 1961, the year those lectures began.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: So who did it?
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERB: Klaus Yernsson, in Tubingen, made slits for electrons and saw the fringes, with up to five slits.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: His paper was in German, and didn't appear in English until nineteen seventy-four.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERA: That same year, in Bologna, Merli, Missiroli and Pozzi sent electrons through one at a time.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERB: They didn't use slits, though. They used an electron biprism, which is a fine wire that splits the beam in two.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERB: Then in 1989, Akira Tonomura and colleagues at Hitachi made it cleaner still.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: Fewer than a thousand electrons arrived each second, so two were never in the apparatus at once.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERB: So there was nothing for an electron to interfere with, except itself.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: Each one arrived as a single flash. Here are eight electrons, then two hundred and seventy, then two thousand.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: And over a twenty-minute exposure, 60,000 electrons drew the stripes.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: In two thousand and two, Physics World readers voted the single-electron version the most beautiful experiment in physics.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERB: So how big can a thing be and still do this?
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERA: In nineteen ninety-one, helium atoms interfered after passing through slits in gold foil.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERB: In 1999, a team in Vienna sent buckyballs, molecules of 60 carbon atoms, through a grating of many slits.

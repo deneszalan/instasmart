@@ -78,7 +78,14 @@
           "start": 77.07,
           "end": 82.93
         }
-      ]
+      ],
+      "ratings": { "complexity": 6, "shock": 5 }
+    },
+    {
+      "type": "explore",
+      "lab": "rule-of-72",
+      "prompt": "Change the interest rate and compare the rule of 72 with the exact doubling time. At which rate is the rule spot on?",
+      "takeaway": "The exact time is ln 2 ÷ ln(1 + rate). The rule of 72 is spot on at about 7.8%, a little long at lower rates and a little short at higher ones. With interest added all the time, 69.3 would be exact."
     },
     {
       "type": "text",

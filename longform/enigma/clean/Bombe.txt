@@ -1,0 +1,356 @@
+{{short description|Codebreaking device created at Bletchley Park (United Kingdom)}}
+{{Use dmy dates|date=April 2018}}
+{{Use British English|date=April 2018}}
+{{about|the decryption device used at Bletchley Park|the earlier Polish decryption device|Bomba (cryptography)|the European dessert of the same name|Bombe glacée|other uses}}
+
+[[File:Wartime_picture_of_a_Bletchley_Park_Bombe.jpg|thumb|220px|A wartime picture of a [[Bletchley Park]] Bombe]]
+
+The '''Bombe''' ({{IPAc-en|UK|b|ɒ|m|b}}) was an [[Electromechanics|electro-mechanical]] device used by British [[cryptologist]]s to help decipher German [[Enigma machine|Enigma-machine]]-encrypted secret messages during [[World War II]]. The British Bombe was developed from the Polish [[Bomba (cryptography)|bomba]], which had been designed at the [[Cipher Bureau (Poland)|Cipher Bureau]] by cryptologist [[Marian Rejewski]], who had been breaking German [[Enigma machine|Enigma]] messages for the previous seven years, using it and earlier machines.
+
+The initial design of the British bombe was produced in 1939 at the UK [[Government Code and Cypher School]] (GC&CS) at [[Bletchley Park]] by [[Alan Turing]], with an important refinement devised in 1940 by [[Gordon Welchman]]. The engineering design and construction was the work of [[Harold Keen]] of the [[British Tabulating Machine Company]]. The first bombe, code-named ''Victory'', was installed in March 1940 while the second version, ''Agnus Dei'' or ''Agnes'', incorporating Welchman's new design, was working by August 1940. The [[United States Navy|US Navy]] and [[United States Army|US Army]] later produced their own machines to the same [[functional specification]], albeit engineered differently both from each other and from Polish and British bombes.
+
+The bombe was designed to discover some of the daily settings of the Enigma machines on the various German military [[Telecommunications network|networks]]: specifically, the set of [[Enigma machine#Rotors|rotors]] in use and their positions in the machine; the rotor core start positions for the message—the message [[Key (cryptography)|key]]—and one of the wirings of the [[Steckerbrett|plugboard]].
+
+==The Enigma machine==
+{{Main|Enigma machine}}
+{{EnigmaSeries}}
+[[File:EnigmaMachineLabeled.jpg|left|thumbnail|A three-rotor Enigma with plugboard (''Steckerbrett'')]][[File:Enigma rotor set.png|thumbnail|left|Depiction of a series of three rotors from an Enigma machine]]
+The Enigma is an [[Electromechanics|electro-mechanical]] [[rotor machine]] used for the [[encryption]] and decryption of coded communications. It was developed in Germany in the 1920s. The repeated changes of the electrical pathway from the keyboard to the lampboard implement a [[polyalphabetic cipher|polyalphabetic substitution]] cipher, which turns [[plaintext]] into [[ciphertext]] and back again. The Enigma's scrambler contains rotors with 26 electrical contacts on each side, whose wiring diverts the current to a different position on the two sides. When a key is pressed on the keyboard, an electric current flows through an entry drum at the right-hand end of the scrambler, then through the set of rotors to a [[Enigma machine#Reflector|reflecting drum]] (or reflector) which turns it back through the rotors and entry drum, and out to illuminate one of the lamps on the lampboard.
+
+At each key depression, the right-hand or "fast" rotor advances one position, which causes the encipherment to change. In addition, once per rotation, the right-hand rotor causes the middle rotor to advance; the middle rotor similarly causes the left-hand (or "slow") rotor to advance. Each rotor's position is indicated by a letter of the alphabet showing through a window. The Enigma operator rotates the wheels by hand to set the start position for enciphering or deciphering a message. The three-letter sequence indicating the start position of the rotors is the "message key". There are 26<sup>3</sup> {{=}} 17,576 different message keys and different positions of the set of three rotors. By opening the lid of the machine and releasing a compression bar, the set of three rotors on their spindle can be removed from the machine and their sequence (called the "wheel order" at Bletchley Park) altered. Multiplying 17,576 by the six possible wheel orders gives 105,456 different ways that the scrambler can be set up.
+
+[[File:Enigma-plugboard.jpg|right|thumbnail|The plugboard of an Enigma machine, showing two pairs of letters swapped: S–O and A–J. During [[World War II]], ten plugboard connections were made.]]
+
+Although 105,456 is a large number, it does not guarantee security. A [[brute-force attack]] is possible: one could imagine using 100 code clerks who each tried to decode a message using 1000 distinct rotor settings. The Poles developed card catalogs so they could easily find rotor positions; Britain built "<code>''EINS''</code>" (the German word for one) catalogs. Less intensive methods were also possible. If all message traffic for a day used the same rotor starting position, then [[frequency analysis]] for each position could recover the polyalphabetic substitutions. If different rotor starting positions were used, then overlapping portions of a message could be found using the [[index of coincidence]]. Many major powers (including the Germans) could break Enigma traffic if they knew the rotor wiring.<!-- The manufacturer informed Germany of the rotor wirings it made for other national clients. --> The German military knew the Enigma was weak.
+
+In 1930, the German army introduced an additional security feature, a plugboard (''Steckerbrett'' in German; each plug is a ''Stecker'', and the British cryptologists also used the word) that further scrambled the letters, both before and after they passed through the rotor-reflector system. The Enigma encryption is a [[self-inverse function]], meaning that it substitutes letters reciprocally: if <code>'''A'''</code> is transformed into <code>'''R'''</code>, then <code>'''R'''</code> is transformed into <code>'''A'''</code>. The plugboard transformation maintained the self-inverse quality, but the plugboard wiring, unlike the rotor positions, does not change during the encryption. This regularity was exploited by Welchman's "diagonal board" enhancement to the bombe, which vastly increased its efficiency. With six plug leads in use (leaving 14 letters "unsteckered"), there were 100,391,791,500 possible ways of setting up the plugboard.
+
+An important feature of the machine from a cryptanalyst's point of view, and indeed Enigma's [[Achilles' heel]], was that the reflector in the scrambler prevented a letter from being enciphered as itself. Any putative solution that gave, for any location, the same letter in the proposed plaintext and the ciphertext could therefore be eliminated.
+
+In the lead-up to [[World War II]], the Germans made successive improvements to their military Enigma machines. By January 1939, additional rotors had been introduced so that three rotors were chosen from a set of five (hence there were now 60 possible wheel orders) for the army and air force Enigmas, and three out of eight (making 336 possible wheel orders) for the navy machines. In addition, ten leads were used on the plugboard, leaving only six letters unsteckered. This meant that the air force and army Enigmas could be set up in 1.5×10<sup>19</sup> ways. In 1941 the German navy introduced a version of Enigma with a rotatable reflector (the [[Enigma-M4|M4]] or Four-rotor Enigma) for communicating with its [[U-boat]]s. This could be set up in 1.8×10<sup>20</sup> different ways.
+
+===Four-rotor Enigma===
+By late 1941 a change in German Navy fortunes in the [[Battle of the Atlantic]], combined with intelligence reports, convinced Admiral [[Karl Dönitz]] that the Allies were able to read the German Navy's coded communications, and a fourth rotor with unknown wiring was added to German Navy Enigmas used for U-boat communications, producing the ''Triton'' system,{{dubious|reason=Triton was a network; the machine was the M4|date=January 2015}} known at Bletchley Park as ''Shark''. This was coupled with a thinner reflector design to make room for the extra rotor. The Triton was designed in such a way that it remained compatible with three-rotor machines when necessary: one of the extra 'fourth' rotors, the 'beta', was designed so that when it was paired with the thin 'B' reflector, and the rotor and ring were set to 'A', the pair acted as a 'B' reflector coupled with three rotors. Fortunately for the Allies, in December 1941, before the machine went into official service, a submarine accidentally sent a message with the fourth rotor in the wrong position, and then retransmitted the message with the rotor in the correct position to emulate the three-rotor machine. In February 1942 the change in the number of rotors used became official, and the Allies' ability to read German submarines' messages ceased until a snatch from a captured U-boat revealed not only the four-rotor machine's ability to emulate a three-rotor machine, but also that the fourth rotor did not move during a message. This along with the aforementioned retransmission eventually allowed the code breakers to figure out the wiring of both the 'beta' and 'gamma' fourth rotors.{{cn|date=August 2018}}
+
+The first half of 1942 was the "[[Second Happy Time]]" for the German U-boats, with renewed success in attacking Allied shipping, as the US had just entered war unprepared for the onslaught, lacking in anti-submarine warfare (ASW) aircraft, ships, personnel, doctrine and organization. Also, the security of the new Enigma and the Germans' ability to read Allied convoy messages sent in Naval Cipher No. 3 contributed to their success. Between January and March 1942, German submarines sank 216 ships off the US east coast. In May 1942 the US began using the convoy system and requiring a blackout of coastal cities so that ships would not be silhouetted against their lights, but this yielded only slightly improved security for Allied shipping. The Allies' failure to change their cipher for three months, together with the fact that Allied messages never contained any raw Enigma decrypts (or even mentioned that they were decrypting messages), helped convince the Germans that their messages were secure. Conversely, the Allies learned that the Germans had broken the naval cipher almost immediately from Enigma decrypts, but lost many ships due to the delay in changing the cipher.{{citation needed|date=July 2015}}
+
+==The principle of the bombe==
+[[File:Enigma keylist 3 rotor.jpg|thumb|left|A German Enigma key list with machine settings for each day of one month]]
+[[File:Bletchley Park Bombe4.jpg|thumb|upright=1.4|The working rebuilt bombe now at [[The National Museum of Computing]] on [[Bletchley Park]]. Each of the rotating drums simulates the action of an Enigma rotor. There are 36 Enigma-equivalents and, on the right-hand end of the middle row, three ''indicator'' drums. [[John Harper (computer engineer)|John Harper]] led the "Phoenix" team that rebuilt this Bombe. It was officially switched on by [[Prince Edward, Duke of Kent|the Duke of Kent]], patron of the [[British Computer Society]] on 17 July 2008.]]
+
+The following settings of the Enigma machine must be discovered to decipher German military Enigma messages. Once these are known, all the messages for that network for that day (or pair of days in the case of the German navy) could be decrypted.
+
+'''Internal settings''' (that required the lid of the Enigma machine to be opened)
+* The selection of rotors in use in the Enigma's scrambler, and their positions on the spindle (''Walzenlage'' or "rotor order"). Possible rotor orders numbered 60 (three rotors from a choice of five) for army and air force networks and 336 (three rotors from a choice of eight) for the naval networks.
+* The positions of the alphabet rings' turnover notch in relation to the core of each rotor in use (''Ringstellung'' or "ring settings"). There are 26 possible ring settings for each rotor.
+
+'''External settings''' (that could be changed without opening the Enigma machine)
+* The plugboard connections (''Steckerverbindungen'' or "plug connections"). The ten leads could be arranged in <math>\frac{{26 \choose 2} \cdot {24 \choose 2}  \cdot {22 \choose 2} \cdot \dots \cdot {8 \choose 2}}{10!} = 150\,738\,274\,937\,250</math> different combinations (approximately 151&nbsp;trillion).
+* The scrambler rotor positions at the start of enciphering the message key (the ''Grundstellung'' or "base position")—up to May 1940; or thereafter the initial positions of each rotor at the start of enciphering the message (the "message key") from which the base position could be derived. There are {{val|17,576}} possible three-letter keys.
+The bombe identified possible initial positions of the rotor cores and the ''Stecker (plug) partner'' of a specified letter for a set of wheel orders. Manual techniques were then used to complete the decryption process.  In the words of [[Gordon Welchman]], "the task of the bombe was simply to reduce the assumptions of wheel (rotor) order and scrambler positions that required 'further analysis' to a manageable number".
+
+===Structure===
+[[File:Rotating upper bombe drum.jpg|thumbnail|Drums on the rebuilt Bombe in action. The upper drums all rotate continuously and in synchrony.]]
+[[File:Bombe Drums and Mounting Plate.jpg|thumb|left|upright=1.0|The three drums of one of the 36 Enigma-equivalents, and the mounting plates for another, showing the 104 contacts for the wire brushes on the back of the drums. The top drum corresponds to the left-hand Enigma rotor, the middle drum to the middle rotor and the bottom drum to the right-hand rotor.]]
+[[File:WireBrushesOnBombeDrum.jpg|thumb|left|Wire brushes on the back of a drum from the rebuilt Bombe]]
+
+The bombe was an electro-mechanical device that replicated the action of several [[Enigma machine]]s wired together. A standard German Enigma employed, at any one time, a set of three [[rotor machine|rotors]], each of which could be set in any of 26 positions. The standard British bombe contained 36 Enigma equivalents, each with three drums wired to produce the same scrambling effect as the Enigma rotors. A bombe could run two or three jobs simultaneously.
+Each job would have a '[[#Bombe menu|menu]]' that had to be run against a number of different rotor orders. If the menu contained 12 or fewer letters, three different rotor orders could be run on one bombe; if more than 12 letters, only two.
+
+In order to simulate Enigma rotors, each rotor drum of the bombe had two complete sets of contacts, one for input towards the reflector and the other for output from the reflector, so that the reflected signal could pass back through a separate set of contacts. Each drum had 104 wire brushes, which made contact with the plate onto which they were loaded. The brushes and the corresponding set of contacts on the plate were arranged in four concentric circles of 26. The outer pair of circles (input and output) were equivalent to the current in an Enigma passing in one direction through the scrambler, and the inner pair equivalent to the current flowing in the opposite direction.
+
+The interconnections within the drums between the two sets of input and output contacts were both identical to those of the relevant Enigma rotor. There was permanent wiring between the inner two sets of contacts of the three input/output plates. From there, the circuit continued to a plugboard located on the left-hand end panel, which was wired to imitate an Enigma reflector and then back through the outer pair of contacts. At each end of the "double-ended Enigma", there were sockets on the back of the machine, into which 26-way cables could be plugged.
+
+The bombe drums were arranged with the top one of the three simulating the left-hand rotor of the Enigma scrambler, the middle one the middle rotor, and the bottom one the right-hand rotor. The top drums were all driven in synchrony by an electric motor. For each full rotation of the top drums, the middle drums were incremented by one position, and likewise for the middle and bottom drums, giving the total of 26 × 26 × 26 = {{val|17,576}} positions of the 3-rotor Enigma scrambler.
+
+The drums were colour-coded according to which Enigma rotor they emulated: I red; II maroon; III green; IV yellow; V brown; VI cobalt (blue); VII jet (black); VIII silver.
+
+At each position of the rotors, an electric current would or would not flow in each of the 26 wires, and this would be tested in the bombe's comparator unit. For a large number of positions, the test would lead to a [[Contradiction|logical contradiction]], ruling out that setting. If the test did not lead to a contradiction, the machine would stop.
+
+The operator would then find the point at which the test passed, record the candidate solution by reading the positions of the indicator drums and the indicator unit on the Bombe's right-hand end panel. The operator then restarted the run. The candidate solutions, ''stops'' as they were called, were processed further to eliminate as many false stops as possible. Typically, there were many false bombe stops before the correct one was found.
+
+The candidate solutions for the set of wheel orders were subject to extensive further cryptanalytical work. This progressively eliminated the false stops, built up the set of plugboard connections and established the positions of the rotor alphabet rings. Eventually, the result would be tested on a [[Typex]] machine that had been modified to replicate an Enigma, to see whether that [[decryption]] produced [[German language]].
+
+===Bombe menu===
+[[File:Bombe-menu.svg|thumbnail|right|The letters of a crib and ciphertext expressed as a graph to provide a ''menu'' which specifies how to set up a bombe run. This example is somewhat unusual in that it contains as many as three loops.]]
+[[File:Bombe Weather Menu.png|thumbnail|right|Bombe menu based on Bletchley Park display board which gives credit to Peggy Erskine-Tulloch as the originator]]
+A bombe run involved a cryptanalyst first obtaining a ''[[crib (cryptanalysis)|crib]]''—a section of [[plaintext]] that was thought to correspond to the [[ciphertext]]. Finding cribs was not at all straightforward; it required considerable familiarity with German military jargon and the communication habits of the operators. However, the codebreakers were aided by the fact that the Enigma would never encrypt a letter to itself. This helped in testing a possible crib against the ciphertext, as it could rule out a number of cribs and positions, where the same letter occurred in the same position in both the plaintext and the ciphertext. This was termed a ''crash'' at Bletchley Park.
+
+Once a suitable crib had been decided upon, the cryptanalyst would produce a ''menu'' for wiring up the bombe to test the crib against the ciphertext. The following is a simplified explanation of the process of constructing a menu. Suppose that the crib is '''ATTACKATDAWN''' to be tested against a certain stretch of ciphertext, say, '''WSNPNLKLSTCS'''. The letters of the crib and the ciphertext were compared to establish pairings between the ciphertext and the crib plaintext. These were then graphed as in the diagram. It should be borne in mind that the relationships are reciprocal so that '''A''' in the plaintext associated with '''W''' in the ciphertext is the same as '''W''' in the plaintext associated with '''A''' in the ciphertext. At position 1 of the plaintext-ciphertext comparison, the letter '''A''' is associated with '''W''', but '''A''' is also associated with '''P''' at position 4, '''K''' at position 7 and '''T''' at position 10. Building up these relationships into such a diagram provided the menu from which the bombe connections and drum start positions would be set up. 
+{| border="0"
+|- align=center
+! align=left | Ciphertext
+|width="20"|W
+|width="20"|S
+|width="20"|N
+|width="20"|P
+|width="20"|N
+|width="20"|L
+|width="20"|K
+|width="20"|L
+|width="20"|S
+|width="20"|T
+|width="20"|C
+|width="20"|S
+|- align=center
+! align=left | Plaintext "crib"
+| |A||T||T||A||C||K||A||T||D||A||W||N
+|- align=center
+! align=left | Message position
+| |1||2||3||4||5||6||7||8||9||10||11||12
+|- align=center
+! align=left | Upper drum setting 
+| |Z||Z||Z||Z||Z||Z||Z||Z||Z||Z||Z||Z
+|- align=center
+! align=left | Middle drum setting 
+| |Z||Z||Z||Z||Z||Z||Z||Z||Z||Z||Z||Z
+|- align=center
+! align=left | Lower drum setting 
+| |A||B||C||D||E||F||G||H||I||J||K||L
+|}
+
+In the illustration, there are three sequences of letters which form loops (or ''cycles'' or ''closures''), '''ATLK''', '''TNS''' and '''TAWCN'''. The more loops in the menu, the more candidate rotor settings the bombe could reject, and hence the fewer false stops.
+
+Alan Turing conducted a very substantial analysis (without any electronic aids) to estimate how many bombe stops would be expected according to the number of letters in the menu and the number of loops. Some of his results are given in the following table. Recent bombe simulations have shown similar results.
+
+{| class="wikitable" style="text-align:center"
+|+ Estimated number of bombe stops per rotor order
+!
+! colspan=9 | Number of letters on the menu
+|-
+! Loops || 8 || 9 || 10 || 11 || 12 || 13 || 14 || 15 || 16
+|-
+|| 3 || 2.2 ||  1.1 || 0.42 || 0.14 || 0.04 || <0.01 || <0.01 || <0.01 || <0.01
+|-
+|| 2 || 58 || 28 || 11 || 3.8 || 1.2 || 0.30 || 0.06 || <0.01 || <0.01
+|-
+|| 1 || 1500 || 720 || 280 || 100 || 31 || 7.7 || 1.6 || 0.28 || 0.04
+|-
+|| 0 || {{val|40,000}} || {{val|19,000}} || 7300 || 2700 || 820 || 200 || 43 || 7.3 || 1.0
+|}
+
+===Stecker values===
+
+[[File:Bombe-deduction.svg|thumb|A deduction step used by the bombe; while the actual intermediate values after the plugboard ''P''—the "steckered" values—are unknown, if one is guessed then it is possible to use the crib to deduce other steckered values. Here, a guess that {{math|size=100%|''P''({{mono|A}})}} = {{mono|Y}} can be used to deduce that {{math|size=100%|''P''({{mono|T}})}} = {{mono|Q}} because {{mono|A}} and {{mono|T}} are linked at the 10th position in the crib.]]
+
+The German military Enigma included a plugboard (''Steckerbrett'' in German) which swapped letters (indicated here by {{math|size=100%|''P''}}) before and after the main scrambler's change (indicated by {{math|size=100%|''S''}}). The plugboard connections were known to the cryptanalysts as Stecker values. If there had been no plugboard, it would have been relatively straightforward to test a rotor setting; a [[Typex]] machine modified to replicate Enigma could be set up and the crib letter {{mono|A}} encrypted on it, and compared with the ciphertext, {{mono|W}}. If they matched, the next letter would be tried, checking that {{mono|T}} encrypted to {{mono|S}} and so on for the entire length of the crib. If at any point the letters failed to match, the initial rotor setting would be rejected; most incorrect settings would be ruled out after testing just two letters. This test could be readily mechanised and applied to all {{val|17,576}} settings of the rotors.
+
+However, with the plugboard, it was much harder to perform trial encryptions because it was unknown what the crib and ciphertext letters were transformed to by the plugboard. For example, in the first position, {{math|size=100%|''P''({{mono|A}})}} and {{math|size=100%|''P''({{mono|W}})}} were unknown because the plugboard settings were unknown.
+
+Turing's solution to working out the stecker values (plugboard connections) was to note that, even though the values for, say, {{math|size=100%|''P''({{mono|A}})}} or {{math|size=100%|''P''({{mono|W}})}}, were unknown, the crib still provided known relationships amongst these values; that is, the values after the plugboard transformation. Using these relationships, a cryptanalyst could reason from one to another and, potentially, derive a logical contradiction, in which case the rotor setting under consideration could be ruled out.
+
+A worked example of such reasoning might go as follows: a cryptanalyst might suppose that {{math|size=100%|''P''({{mono|A}}) {{=}} {{mono|Y}}}}. Looking at position 10 of the crib:ciphertext comparison, we observe that {{mono|A}} encrypts to {{mono|T}}, or, expressed as a formula:
+
+: {{mono|T}} = {{math|size=100%|''P''(''S''<sub>10</sub>(''P''({{mono|A}})))}}
+
+Due to the function {{math|size=100%|''P''}} being its own inverse, we can apply it to both sides of the equation and obtain the following:
+
+: {{math|size=100%|''P''({{mono|T}}) {{=}} ''S''<sub>10</sub>(''P''({{mono|A}}))}}
+
+This gives us a relationship between {{math|size=100%|''P''({{mono|A}})}} and {{math|size=100%|''P''({{mono|T}})}}. If {{math|size=100%|''P''({{mono|A}})}} = {{mono|Y}}, and for the rotor setting under consideration {{math|size=100%|''S''<sub>10</sub>({{mono|Y}})}} = {{mono|Q}} (say), we can deduce that
+
+: {{math|size=100%|''P''({{mono|T}})}} = {{math|size=100%|''S''<sub>10</sub>(''P''({{mono|A}})) {{=}} ''S''<sub>10</sub>({{mono|Y}})}} = {{mono|Q}}
+
+While the crib does not allow us to determine what the values after the plugboard are, it does provide a constraint between them. In this case, it shows how {{math|size=100%|''P''({{mono|T}})}} is completely determined if {{math|size=100%|''P''({{mono|A}})}} is known.
+
+Likewise, we can also observe that {{mono|T}} encrypts to {{mono|L}} at position 8. Using {{math|size=100%|''S''<sub>8</sub>}}, we can deduce the steckered value for {{mono|L}} as well using a similar argument, to get, say,
+
+: {{math|size=100%|''P''({{mono|L}})}} = {{math|size=100%|''S''<sub>8</sub>(''P''({{mono|T}})) {{=}} ''S''<sub>8</sub>({{mono|Q}})}} = {{mono|G}}
+
+Similarly, in position 6, {{mono|K}} encrypts to {{mono|L}}. As the Enigma machine is self-reciprocal, this means that at the same position {{mono|L}} would also encrypt to {{mono|K}}. Knowing this, we can apply the argument once more to deduce a value for {{math|''P''({{mono|K}})}}, which might be:
+
+: {{math|size=100%|''P''({{mono|K}}) {{=}} ''S''<sub>6</sub>(''P''({{mono|L}})) {{=}} ''S''<sub>6</sub>({{mono|G}})}} = {{mono|F}}
+
+And again, the same sort of reasoning applies at position 7 to get:
+
+: {{math|size=100%|''P''({{mono|A}}) {{=}} ''S''<sub>7</sub>(''P''({{mono|K}})) {{=}} ''S''<sub>7</sub>({{mono|F}})}} = {{mono|N}}
+
+However, in this case, we have derived a [[contradiction]], since, by hypothesis, we assumed that {{math|size=100%|''P''({{mono|A}})}} = {{mono|Y}} at the outset. This means that the initial assumption must have been incorrect, and so that (for this rotor setting) {{math|size=100%|''P''({{mono|A}})}} ≠ {{mono|Y}} (this type of argument is termed ''[[reductio ad absurdum]]'' or "proof by contradiction").
+
+The cryptanalyst hypothesised one plugboard interconnection for the bombe to test. The other stecker values and the ring settings were worked out by hand methods.
+
+===Automated deduction===
+To automate these logical deductions, the bombe took the form of an electrical circuit. Current flowed around the circuit near-instantaneously, and represented all the possible logical deductions which could be made at that position. To form this circuit, the bombe used several sets of Enigma rotor stacks wired up together according to the instructions given on a menu, derived from a crib. Because each Enigma machine had 26 inputs and outputs, the replica Enigma stacks are connected to each other using 26-way cables. In addition, each Enigma stack rotor setting is offset a number of places as determined by its position in the crib; for example, an Enigma stack corresponding to the fifth letter in the crib would be four places further on than that corresponding to the first letter.
+<!--A guess that the steckered value of <code>'''A'''</code> is <code>'''Y'''</code> (''P(''<code>A</code>'')''=<code>'''Y'''</code>) would be implemented by energising the <code>'''Y'''</code> wire -->
+
+===In practice===
+Practical bombes used several stacks of rotors spinning together to test multiple hypotheses about possible setups of the Enigma machine, such as the order of the rotors in the stack.
+
+While Turing's bombe worked in theory, it required impractically long cribs to rule out sufficiently large numbers of settings. [[Gordon Welchman]] came up with a way of using the symmetry of the Enigma stecker to increase the power of the bombe. His suggestion was an attachment called the ''diagonal board'' that further improved the bombe's effectiveness.
+
+==The British Bombe==
+The Polish cryptologic ''[[bomba (cryptography)|bomba]]'' (Polish: ''bomba kryptologiczna''; plural ''bomby'') had been useful only as long as three conditions were met. First, the form of the indicator had to include the repetition of the message key; second, the number of rotors available had to be limited to three, giving six different "wheel orders" (the order of the three rotors within the machine); and third, the number of plug-board leads had to remain relatively small so that the majority of letters were ''unsteckered''.{{dubious|date=May 2013}}<!-- bomba ignored the plugboard and found rotor order/settings; plugboard was just a simple substitution cipher after that; with few stecker wires, the substitution would be trivial to solve, but even with many steckered, it would fall to frequency analysis --> Six machines were built, one for each possible rotor order. The ''bomby'' were delivered in November 1938, but barely a month later the Germans introduced two additional rotors for loading into the Enigma scrambler, increasing the number of wheel orders by a factor of ten. Building another 54 ''bomby'' was beyond the Poles' resources. Also, on 1 January 1939, the number of plug-board leads was increased to ten. The Poles therefore had to return to manual methods, the [[Zygalski sheets]].
+
+[[Alan Turing]] designed the British bombe on a more general principle, the assumption of the presence of text, called a ''crib'',  that cryptanalysts could predict was likely to be present at a defined point in the message. This technique is termed a ''[[known plaintext attack]]'' and had been used to a limited extent by the Poles, e.g., the Germans' use of "ANX" — "AN",  German for "To", followed by "X" as a spacer.
+
+[[File:Bletchley Park Bombe8.jpg|right|thumbnail|245px|Rear view of the rebuilt Bombe. This shows the patch panels and 26-way cables used to wire up the 'menus'. It includes the 'diagonal boards' which, despite their name, are physically rectangular.]]
+
+A £100,000 budget for the construction of Turing's machine was acquired and the contract to build the bombes was awarded to the [[British Tabulating Machine Company]] (BTM) at [[Letchworth]]. BTM placed the project under the direction of [[Harold Keen|Harold 'Doc' Keen]]. Each machine was about {{convert|7|ft|m}} wide, {{convert|6|ft|6|in|m}} tall, {{convert|2|ft|m}} deep and weighed about a ton. On the front of each bombe were 108 places where drums could be mounted. The drums were in three groups of 12 triplets. Each triplet, arranged vertically, corresponded to the three rotors of an Enigma scrambler. The bombe drums' input and output contacts went to cable connectors, allowing the bombe to be wired up according to the menu. The 'fast' drum rotated at a speed of 50.4 [[Revolutions per minute|rpm]] in the first models and 120 rpm in later ones, when the time to set up and run through all 17,576 possible positions for one rotor order was about 20 minutes.
+
+The first bombe was named "Victory". It was installed in "Hut 1" at Bletchley Park on 18 March 1940. It was based on Turing's original design and so lacked a diagonal board. On 26 April 1940, {{HMS|Griffin|H31|6}} captured a German trawler (''Schiff 26'', the ''Polares'') flying a Dutch flag; included in the capture were some Enigma keys for 23 to 26 April. Bletchley retrospectively attacked some messages sent during this period using the captured material and an ingenious Bombe menu where the Enigma fast rotors were all in the same position. In May and June 1940, Bletchley succeeded in breaking six days of naval traffic, 22–27 April 1940. Those messages were the first breaks of ''[[Kriegsmarine]]'' messages of the war, "[b]ut though this success expanded Naval Section's knowledge of the Kriegsmarines's signals organization, it neither affected naval operations nor made further naval Enigma solutions possible." The second bombe, named "''Agnus dei''", later shortened to "Agnes", or "Aggie", was equipped with Welchman's diagonal board, and was installed on 8 August 1940; "Victory" was later returned to Letchworth to have a diagonal board fitted. The bombes were later moved from "Hut 1" to "Hut 11". The bombe was referred to by Group Captain [[Frederick Winterbotham|Winterbotham]] as a "Bronze Goddess" because of its colour. The devices were more prosaically described by operators as being "like great big metal bookcases".
+
+During 1940, 178 messages were broken on the two machines, nearly all successfully. Because of the danger of bombes at Bletchley Park being lost if there were to be a bombing raid, bombe outstations were established, at [[Adstock]], [[Gayhurst]] and [[Wavendon]], all in [[Buckinghamshire]]. In June–August 1941 there were 4 to 6 bombes at Bletchley Park, and when Wavendon was completed, Bletchley, Adstock and Wavenden had a total of 24 to 30 bombes. When Gayhurst became operational there were a total of 40 to 46 bombes, and it was expected that the total would increase to about 70 bombes run by some 700 [[Women's Royal Naval Service|Wrens (Women's Royal Naval Service)]]. But in 1942 with the introduction of the naval four-rotor Enigma, "far more than seventy bombes" would be needed. New outstations were established at [[Stanmore]] and [[Eastcote]], and the Wavendon and Adstock bombes were moved to them, though the Gayhurst site was retained. The few bombes left at Bletchley Park were used for demonstration and training purposes only.
+
+{| class="wikitable"
+|+ Main British ([[British Tabulating Machine Company|BTM]]) bombe types
+|-
+! Type
+! Number of<br/> Enigma<br/> equivalents
+! Mechanism
+! Number built
+|-
+|| Original standard || 36 (30 in pre-production) || 3-rotor Enigma equivalents  ||  73
+|-
+| Jumbo || 36 || 3-rotor Enigma equivalents plus an additional mechanism to check each stop and print the results (dubbed the "machine gun" because of the noise its [[Stepping switch|uniselectors]] made)
+| 14
+|-
+|| Mammoth || 36 || 4-rotor Enigma equivalents with high-speed relays to sense stops || 57
+|-
+| Cobra || 36 || 4-rotor Enigma equivalents with an electronic sensing unit designed by [[C. E. Wynn-Williams]] and [[Tommy Flowers]]' team at the [[Post Office Research Station|GPO Research Station]] (this machine was unreliable)
+| 12
+|-
+| 'New' standard || 36 || 3-rotor Enigma equivalents (with high-speed Siemens-type sense relays) ||  68
+|}
+
+Production of bombes by BTM at Letchworth in wartime conditions was nowhere near as rapid as the Americans later achieved at [[NCR Corporation|NCR]] in Dayton, Ohio.
+
+{| class="wikitable"
+|+ Number of 3-rotor bombes available
+|-
+! Year
+! Month
+! Number
+|-
+|| 1941 || December || 12
+|-
+|| 1942 || December|| 40
+|-
+|| 1943 || June|| 72
+|-
+|| 1943 || December || 87
+|-
+|| 1944 || December || 152
+|-
+|| 1945 || May|| 155
+|}
+
+Sergeant Jones was given the overall responsibility for Bombe maintenance by [[Edward Travis]]. Later Squadron Leader and not to be confused with [[Eric Malcolm Jones|Eric Jones]], he was one of the original bombe maintenance engineers, and experienced in [[British Tabulating Machine Company|BTM]] techniques. Welchman said that later in the war when other people tried to maintain them, they realised how lucky they were to have him. About 15 million delicate wire brushes on the drums had to make reliable contact with the terminals on the template. There were 104 brushes per drum, 720 drums per bombe, and ultimately around 200 bombes.
+
+After World War II, some fifty bombes were retained at [[RAF Eastcote]], while the rest were destroyed. The surviving bombes were put to work, possibly on [[Eastern bloc]] ciphers. Smith cites the official history of the bombe as saying that "some of these machines were to be stored away but others were required to run new jobs and sixteen machines were kept comparatively busy on menus." and "It is interesting to note that most of the jobs came up and the operating, checking and other times maintained were faster than the best times during the war periods."
+
+==Response to the four-rotor Enigma==
+A program was initiated by Bletchley Park to design much faster bombes that could decrypt the four-rotor system in a reasonable time. There were two streams of development. One, code-named Cobra, with an electronic sensing unit, was produced by [[Charles Wynn-Williams]] of the [[Telecommunications Research Establishment]] (TRE) at Malvern and [[Tommy Flowers]] of the [[General Post Office]] (GPO). The other, code-named Mammoth, was designed by [[Harold Keen]] at [[British Tabulating Machine Company|BTM]], Letchworth. Initial delivery was scheduled for August or September 1942. The dual development projects created considerable tension between the two teams, both of which cast doubts on the viability of the opposing team's machine. After considerable internal rivalry and dispute, [[Gordon Welchman]] (by then, Bletchley Park's Assistant Director for mechanisation) was forced to step in to resolve the situation. Ultimately, Cobra proved unreliable and Mammoth went into full-scale production.{{sfn|Smith|2014|pp=213{{ndash}}214}}
+
+Unlike the situation at Bletchley Park, the United States armed services did not share a combined cryptanalytical service. Indeed, there was considerable rivalry between the [[United States Army|US Army's]] facility, the [[Signals Intelligence Service|Signals Intelligence Service (SIS)]], and that of the [[United States Navy|US Navy]] known as [[OP-20-G]]. Before the US joined the war, there was collaboration with Britain, albeit with a considerable amount of caution on Britain's side because of the extreme importance of Germany and her allies not learning that its codes were being broken. Despite some worthwhile collaboration amongst the cryptanalysts, their superiors took some time to achieve a trusting relationship in which both British and American bombes were used to mutual benefit.
+
+In February 1941, Captain Abe Sinkov and Lieutenant [[Leo Rosen]] of the US Army, and US Naval Lieutenants Robert Weeks and [[Prescott Currier]], arrived at Bletchley Park bringing, amongst other things, a replica of the [[Purple (cipher machine)|"Purple" cipher machine]] for Bletchley Park's Japanese section in [[Hut 7]]. The four returned to America after ten weeks, with a naval radio [[direction finding|direction-finding]] unit and many documents including a "paper Enigma".
+
+Currier later wrote:{{quote|There was complete cooperation. We went everywhere, including Hut 6. We watched the entire operation and had all the techniques explained in great detail. We were thoroughly briefed on the latest techniques in the solution of Enigma and the operations of the bombes. We had ample opportunity to take as many notes as we wanted and to watch first hand all operations involved.}}
+
+The main response to the Four-rotor Enigma was the US Navy bombe, which was manufactured in much less constrained facilities than were available in wartime Britain.
+
+{| class="wikitable"
+|+ Number of 4-rotor bombes available (UK and US)
+|-
+! Year
+! Month
+! Number
+|-
+| 1943 || June || 4
+|-
+| 1943 || December || 95
+|-
+| 1944 || December || 160
+|-
+| 1945 || May || 180
+|}
+
+===US Navy Bombe===
+Colonel [[John Tiltman]], who later became Deputy Director at Bletchley Park, visited the US Navy cryptanalysis office ([[OP-20-G]]) in April 1942 and recognised America's vital interest in deciphering U-boat traffic. The urgent need, doubts about the British engineering workload and slow progress, prompted the US to start investigating designs for a Navy bombe, based on the full [[blueprint]]s and wiring diagrams received by US Naval Lieutenants Robert Ely and Joseph Eachus at Bletchley Park in July 1942. Funding for a full, $2 million, Navy development effort was requested on 3 September 1942 and approved the following day.
+
+[[File:'bombe'.jpg|thumb|The US Navy Bombe contained 16 four-rotor Enigma-analogues and was much faster than the British three-rotor Bombes. ]]
+Commander [[Edward Travis]], Deputy Director and [[Francis Birch (cryptographer)|Frank Birch]], Head of the German Naval Section travelled from Bletchley Park to Washington in September 1942. With [[Carl Frederick Holden]], US [[Director of Naval Communications]] they established, on 2 October 1942, a UK:US accord which may have "a stronger claim than [[1943 BRUSA Agreement|BRUSA]] to being the forerunner of the [[UK–USA Security Agreement|UKUSA Agreement]]," being the first agreement "to establish the special [[Signals intelligence|Sigint]] relationship between the two countries," and "it set the pattern for UKUSA, in that the United States was very much the senior partner in the alliance." It established a relationship of "full collaboration" between Bletchley Park and OP-20-G.
+
+An all electronic solution to the problem of a fast bombe was considered, but rejected for pragmatic reasons, and a contract was let with the [[NCR Corporation|National Cash Register Corporation]] (NCR) in [[Dayton, Ohio]]. This established the [[United States Naval Computing Machine Laboratory]]. Engineering development was led by NCR's [[Joseph Desch]].
+
+[[Alan Turing]], who had written a memorandum to OP-20-G (probably in 1941), was seconded to the British Joint Staff Mission in Washington in December 1942, because of his exceptionally wide knowledge about the bombes and the methods of their use. He was asked to look at the bombes that were being built by NCR and at the security of certain [[SIGSALY|speech cipher equipment]] under development at Bell Labs. He visited OP-20-G, and went to NCR in Dayton on 21 December. He was able to show that it was not necessary to build 336 Bombes, one for each possible rotor order, by utilising techniques such as [[Banburismus]]. The initial order was scaled down to 96 machines.
+
+The US Navy bombes used drums for the Enigma rotors in much the same way as the British bombes. They had eight Enigma-equivalents on the front and eight on the back. The fast drum rotated at 1,725 [[Revolutions per minute|rpm]], 34 times the speed of the early British bombes.  'Stops' were detected electronically using [[Vacuum tube|thermionic valves]] (vacuum tubes)&mdash;mostly [[thyratron]]s&mdash;for the high-speed circuits. When a 'stop' was found the machine over-ran as it slowed, reversed to the position found and printed it out before restarting. The running time for a 4-rotor run was about 20 minutes, and for a 3-rotor run, about 50 seconds. Each machine was {{convert|10|ft|m}} wide, {{convert|7|ft|m}} high, {{convert|2|ft|m}} deep and weighed 2.5 tons.
+
+The first machine was completed and tested on 3 May 1943. By 22 June, the first two machines, called 'Adam' and 'Eve' broke a particularly difficult German naval cipher, the ''Offizier'' settings for 9 and 10 June. A P Mahon, who had joined the Naval Section in [[Hut 8]] in 1941, reported in his official 1945 "History of Hut Eight 1939-1945":{{blockquote|The American bombe was in its essentials the same as the English bombe though it functioned rather better as they were not handicapped by having to make it, as Keen was forced to do owing to production difficulties, on the framework of a 3 wheel machine. By late autumn [1943] new American machines were coming into action at the rate of about 2 a week, the ultimate total being in the region of 125.}}
+
+These bombes were faster, and soon more available, than the British bombes at Bletchley Park and its outstations. Consequently, they were put to use for [[Hut 6]] as well as Hut 8 work. In Alexander's "Cryptographic History of Work on German Naval Enigma", he wrote as follows.
+{{blockquote|When the Americans began to turn out bombes in large numbers there was a constant interchange of signal - cribs, keys, message texts, cryptographic chat and so on. This all went by cable being first encyphered on the combined Anglo-American cypher machine, [[Combined Cipher Machine|C.C.M.]] Most of the cribs being of operational urgency rapid and efficient communication was essential and a high standard was reached on this; an emergency priority signal consisting of a long crib with crib and message text repeated as a safeguard against corruption would take under an hour from the time we began to write the signal out in Hut 8 to the completion of its decyphering in Op. 20 G. As a result of this we were able to use the Op. 20 G bombes almost as conveniently as if they had been at one of our outstations 20 or 30 miles away. Ch. VIII para. 11 }}
+
+Production was stopped in September 1944 after 121 bombes had been made. The last-manufactured US Navy bombe is on display at the US [[National Cryptologic Museum]]. Jack Ingram, former Curator of the museum, describes being told of the existence of a second bombe and searching for it but not finding it whole. Whether it remains in storage in pieces, waiting to be discovered, or no longer exists, is unknown.
+
+===US Army Bombe===
+The US Army Bombe was physically very different from the British and US Navy bombes. The contract for its creation was signed with [[Bell Labs]] on 30 September 1942. The machine was designed to analyse 3-rotor, not 4-rotor traffic. It was known as "003" or "Madame X". It did not use drums to represent the Enigma rotors, using instead telephone-type relays. It could, however, handle one problem that the bombes with drums could not. The set of ten bombes consisted of a total of 144 Enigma-equivalents, each mounted on a rack approximately {{convert|7|ft|m}}  long {{convert|8|ft|m}} high and {{convert|6|in|mm}} wide. There were 12 control stations which could allocate any of the Enigma-equivalents into the desired configuration by means of plugboards. Rotor order changes did not require the mechanical process of changing drums, but was achieved in about half a minute by means of push buttons. A 3-rotor run took about 10 minutes.
+
+==Bombe rebuild==
+In 1994 a group led by [[John Harper (computer engineer)|John Harper]] of the BCS Computer Conservation Society started a project to build a working replica of a bombe. The project required detailed research, and took thirteen years of effort before the replica was completed, which was then put on display at the [[Bletchley Park museum]]. In March 2009 it won an Engineering Heritage Award. The Bombe rebuild was relocated to [[The National Museum of Computing]] on Bletchley Park in May 2018, the new gallery officially re-opening on 23 June 2018.
+
+==Simulators==
+* [https://bombe.virtualcolossus.co.uk Virtual Bombe - Online 3D simulation of a Turing-Welchman Bombe]
+* [https://www.lysator.liu.se/~koma/turingbombe/ Turing Bombe and US Navy Bombe simulator]
+
+==See also==
+* [[Cryptanalysis of the Enigma]]
+* [[Colossus computer]]
+* [[Heath Robinson (codebreaking machine)|Heath Robinson]]
+* [[Jean Valentine (bombe operator)]]
+* [[Wrens at Bletchley Park]]
+
+==Notes==
+{{Reflist}}
+
+==References==
+{{refbegin|30em}}
+* {{Citation | last = Alexander | first = C. Hugh O'D. | author-link = Conel Hugh O'Donel Alexander | year = c. 1945 | title = Cryptographic History of Work on the German Naval Enigma | url = http://www.ellsbury.com/gne/gne-000.htm | publisher=The National Archives, Kew, Reference HW 25/1}}
+* {{Citation | last = Budiansky | first = Stephen | author-link = Stephen Budiansky | year = 2000 | title = Battle of wits: The Complete Story of Codebreaking in World War II | publisher = Free Press | isbn = 978-0-684-85932-3 | url-access = registration | url = https://archive.org/details/battleofwitscomp00budi }}
+* {{Citation | last = Burke | first = Colin B. | title = It Wasn't All Magic: The Early Struggle to Automate Cryptanalysis, 1930s-1960s | url = https://www.nsa.gov/public_info/_files/cryptologic_histories/magic.pdf | place = Fort Meade | publisher = Center for Cryptologic History, National Security Agency | orig-year = 1994 | year = 2002 | url-status = dead | archive-url = https://web.archive.org/web/20160305212149/https://www.nsa.gov/public_info/_files/cryptologic_histories/magic.pdf | archive-date = 2016-03-05 }}
+* {{Citation |last=Carter |first=Frank |title=From Bombe 'stops' to Enigma keys |place=Milton Keynes |publisher=Bletchley Park Trust |series=Technical Papers |url=http://www.bletchleypark.org.uk/content/bombestops.pdf |url-status=dead |archive-url=https://web.archive.org/web/20100108030414/http://www.bletchleypark.org.uk/content/bombestops.pdf |archive-date=2010-01-08 }}
+* {{Citation | last = Carter | first = Frank | title = The Turing Bombe | journal = The Rutherford Journal |volume= 3 |year= 2010 | url = http://www.rutherfordjournal.org/article030108.html | issn = 1177-1380 }}
+* {{Citation | last = Davies | first = Donald | author-link = Donald Davies | title = The Bombe — a Remarkable Logic Machine | journal = Cryptologia | volume = 23 | issue = 2 | pages = 108–138 |date=April 1999 | issn = 0161-1194 | doi = 10.1080/0161-119991887793 }}
+* {{Citation | last = Davies | first = Donald | author-link = Donald Davies | title = Effectiveness of the Diagonal Board | journal = Cryptologia | volume = 23 | issue = 3 | pages = 229–239 |date=July 1999 | issn = 0161-1194 | doi = 10.1080/0161-119991887865 }}
+* {{Citation | last1 = DeBrosse | first1 = Jim | last2 = Burke | first2 = Colin | year = 2004 | title = The Secret in Building 26: The Untold Story of America's Ultra War Against the U-Boat Enigma Codes | publisher = Random House | isbn = 978-0375508073 | url-access = registration | url = https://archive.org/details/secretinbuilding00debr }}
+* {{Citation | last = Ellsbury | first = Graham | title = The Turing Bombe: what it was and how it worked | year = 1988 | url = http://www.ellsbury.com/bombe1.htm | access-date = 1 May 2010 }}
+* {{Citation | last = Farley | first = Robert D. | title = Oral History Interview NSA-OH-14-83 Campaigne, Howard, Dr. 29 June 1983 | publisher = US National Security Agency | year = 1990 | url = http://www.nsa.gov/public_info/_files/oral_history_interviews/nsa_oh_14_83_campaigne.pdf | access-date = 3 January 2014 | url-status = dead | archive-url = https://web.archive.org/web/20130918021804/http://www.nsa.gov/public_info/_files/oral_history_interviews/nsa_oh_14_83_campaigne.pdf | archive-date = 18 September 2013 }}
+* {{Citation | last = Harper | first = John | author-link = John Harper (computer engineer) | title = The British Bombe: CANTAB The Rebuild Project | year = 2007 | url = http://www.bombe.org.uk/rebuild-top-page }}
+* {{Citation | last1 = Hinsley | first1 = F.H. | author-link = Harry Hinsley | last2 = Ransom | first2 = C.F.G. | last3 = Knight | first3 = R.C.C. | title = British Intelligence in the Second World War: Volume 3, Part 2: v. 3 | place = Cambridge | publisher = Cambridge University Press | year = 1988 | isbn = 978-0-521-35196-6 }}
+* {{Citation |last=Kahn |first=David |author-link=David Kahn (writer) |title=Seizing the Enigma: The Race to Break the German U-Boat Codes, 1939&ndash;1943 |date=1991 |publisher=Houghton-Mifflin |isbn=0-395-42739-8}}
+* {{Citation | last = Keen | first = John | title = Harold 'Doc' Keen and the Bletchley Park bombe | place = Cleobury Mortimer, England | publisher = M & M Baldwin | year = 2003 | isbn = 978-0-947712-42-6 }}
+* {{Citation | last = Mahon | first = A.P. | title = The History of Hut Eight 1939 - 1945 | publisher = UK National Archives Reference HW 25/2 | year = 1945 | url = http://www.ellsbury.com/hut8/hut8-000.htm | access-date = 10 December 2009 }}
+* {{Citation | last = Sale | first = Tony | author-link = Anthony Sale | title = Virtual Wartime Bletchley Park | chapter = Alan Turing, the Enigma and the Bombe | chapter-url = http://www.codesandciphers.org.uk/virtualbp/tbombe/tbombe.htm | access-date = 1 May 2010 }}
+* {{Citation | last = Sebag-Montefiore | first = Hugh | author-link = Hugh Sebag-Montefiore | edition = Cassell Military Paperbacks | year = 2004 | orig-year = 2000 | title = Enigma: The Battle for the Code | location = London | publisher = Weidenfeld & Nicolson | isbn = 978-0-297-84251-4 | url-access = registration | url = https://archive.org/details/enigmabattleforc0000seba }}
+* {{Citation | last = Smith | first = Christopher | title = How I learned to stop worrying and love the Bombe: Machine Research and Development and Bletchley Park | journal = History of Science | volume = 52 | issue = 2 | pages = 200{{ndash}}222 | date=2014 | doi = 10.1177/0073275314529861 | s2cid = 145181963 | url = https://pureportal.coventry.ac.uk/en/publications/how-i-learned-to-stop-worrying-and-love-the-bombe(22dbdd7e-6888-4693-9198-659f11fa9f3b).html }}
+* {{Citation | last = Smith | first = Michael | author-link = Michael Smith (newspaper reporter) | title = Station X: The Codebreakers of Bletchley Park | edition = Pan Books, Revised and Extended | series = Pan Grand Strategy Series | year = 2007 | orig-year = 1998 | publisher = Pan MacMillan Ltd | location = London   | isbn = 978-0-330-41929-1 }}
+* {{Citation |last=US Army |title=Tony Sale's Codes and Ciphers |chapter=The US 6812 Division Bombe Report Eastcote 1944 |year=1945 |chapter-url=http://www.codesandciphers.org.uk/documents/bmbrpt/bmbpg001.HTM |access-date=1 May 2010 |url-status=dead |archive-url=https://web.archive.org/web/20090722155542/http://www.codesandciphers.org.uk/documents/bmbrpt/bmbpg001.HTM |archive-date=22 July 2009 }}
+* {{Citation | last = Welchman | first = Gordon | author-link = Gordon Welchman | orig-year = 1997 | year = 2005 | title = The Hut Six story: Breaking the Enigma codes | location = Cleobury Mortimer, England | publisher = M&M Baldwin | isbn = 9780947712341 }} New updated edition of '{{Citation |last=Welchman |first=Gordon |author-link=Gordon Welchman |title=The Hut Six Story: Breaking the Enigma Codes |year=1982 |publisher=Allen Lane |location=London |isbn=0-7139-1294-4}}' with an ''addendum'' consisting of a 1986 paper written by Welchman that corrects his misapprehensions in the 1982 edition.
+* {{Citation | last1 = Wenger | first1 = J. N. | last2 = Engstrom | first2 = H. T. | last3 = Meader | first3 = R. I. | date = 30 May 1944 | publication-date = 1998 | title = History of The Bombe Project: Memorandum for the Director of Naval Communications | publisher = The Mariner's Museum | url = http://www.daytoncodebreakers.org/docs/bombe_history.htm | url-status = dead | archive-url = https://web.archive.org/web/20100616230244/http://www.daytoncodebreakers.org/docs/bombe_history.htm | archive-date = 16 June 2010 }}
+* {{Citation | last = Wenger | first = J. N. | title = Solving the Enigma: History of the Cryptanalytic Bombe, a NSA phamphlet | chapter = Appendix II: U. S. Army Cryptanalytic Bombe | date = 12 February 1945 | chapter-url = http://ed-thelen.org/comp-hist/NSA-Enigma.html | archive-url = https://web.archive.org/web/20141002211707/http://ed-thelen.org/comp-hist/NSA-Enigma.html | url-status = dead | archive-date = 2 October 2014 | access-date = 24 Jan 2017 }} (also National Archives and Records Administration Record Group 457, File 35701.)
+* {{Citation | last = Wilcox | first = Jennifer E | year = 2001 | title = Solving the Enigma: History of the Cryptanalytic Bombe, a NSA phamphlet | chapter = About the Enigma | publisher = Center for Cryptologic History, National Security Agency | chapter-url = http://ed-thelen.org/comp-hist/NSA-Enigma.html | access-date = 9 April 2010 | asin = B0006RLRA4 | url-status = dead | archive-url = https://web.archive.org/web/20100317234354/http://ed-thelen.org/comp-hist/NSA-Enigma.html | archive-date = 17 March 2010 }}
+* {{Citation | last = Winterbotham | first = F.W. | author-link = F. W. Winterbotham | year = 2001 | orig-year = 1974 | title = The ULTRA Secret | publisher = Orion Books Ltd | isbn=0-7528-3751-6 }}
+* {{Citation | last = Wright | first = John | year = 2016 | title = The Turing Bombe Victory and the first naval Enigma decrypts | journal = Cryptologia | volume = 41 | issue = 4 | pages = 295–328 | doi = 10.1080/01611194.2016.1219786 | s2cid = 205488462 }}
+{{refend}}
+
+==External links==
+{{Commons category|Bombe}}
+* [http://www.codesandciphers.org.uk/virtualbp/tbombe/bombesc.htm A bombe simulator (in Javascript)]
+* [http://www.museumstuff.com/learn/topics/Bombe::sub::The_Challenge_Of_The_Four_Rotor_Enigma_Machine Museum of Learning - Bombe: The Challenge Of The Four Rotor Enigma Machine]
+* [https://web.archive.org/web/20041011005338/http://frode.home.cern.ch/frode/crypto/Shaylor/bombe.html Enigma and the Turing Bombe] by N. Shaylor, 17 April 1997. Includes a simulator (a [[Java applet]] and [[C (programming language)|C]])
+* [http://www.daytoncodebreakers.org/ Dayton Codebreakers] — documentary on the US Navy's Bombe; information on Desch, personnel of the US Naval Computing Machine Laboratory.
+* [http://www.lysator.liu.se/~koma/turingbombe/ A simulator for both Turing and US Navy Bombes]
+* [http://www.enigma.hoerenberg.com Breaking German Navy Ciphers - The U534 Enigma M4 messages: Cracked with a Turing Bombe software]
+* [https://www.cryptomuseum.com/crypto/enigma/index.htm Enigma Cipher Machines] at Crypto Museum. 
+* [https://www.youtube.com/watch?v=GFPm_UWopu0 Video — Breaking the Enigma code with the Turing-Welchman Bombe] (Step-by-step example)
+[[Category:1930s computers]]
+[[Category:Computer-related introductions in 1939]]
+[[Category:Cryptanalytic devices]]
+[[Category:Electro-mechanical computers]]
+[[Category:Early British computers]]
+[[Category:English inventions]]
+[[Category:World War II military equipment of the United Kingdom]]
+[[Category:Bletchley Park]]
+[[Category:Alan Turing]]
+[[Category:NCR Corporation]]

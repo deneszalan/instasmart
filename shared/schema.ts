@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { FIELD_IDS } from './fields.ts';
+import { LAB_IDS } from './labs.ts';
 
 /**
  * The content format for every post in content/posts/. Shared by the app,
@@ -111,6 +112,23 @@ export const VideoSlide = z
       .describe(
         'The clip\'s steps in order, in seconds: when each caption or stage appears and when it goes. The player marks them on the seek bar, jumps between them and can pause at the end of each. The clip needs a keyframe 0.3 s before each step ends (where a paused clip shows it), one within 1 s before each start, and keyframes at most 4 s apart; `npm run explainer` writes the steps and encodes the clip that way.',
       ),
+    ratings: z
+      .object({
+        complexity: z.number().int().min(1).max(10).describe('How much a viewer must know and keep in mind to follow it, 1–10.'),
+        shock: z.number().int().min(1).max(10).describe('Shock factor: how far the result is from what most people expect beforehand, 1–10.'),
+      })
+      .strict()
+      .describe('The short\'s ratings, shown with it in the app. Score them with the scales in "Rating a short" in content/README.md.'),
+  })
+  .strict();
+
+export const ExploreSlide = z
+  .object({
+    type: z.literal('explore'),
+    lab: z.enum(LAB_IDS).describe('Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them.'),
+    heading: text(40).optional().describe('Defaults to "Try it yourself".'),
+    prompt: text(160).describe('What to try: the goal, in one or two short sentences.'),
+    takeaway: text(220).describe('What the reader has found out, shown in place of the prompt once they reach the goal.'),
   })
   .strict();
 
@@ -488,6 +506,7 @@ export const PlaceSlide = z
   });
 
 export const Slide = z.discriminatedUnion('type', [
+  ExploreSlide,
   TextSlide,
   ImageSlide,
   StatSlide,

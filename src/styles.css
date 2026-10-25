@@ -488,14 +488,17 @@ p {
   pointer-events: none;
 }
 
-.story__video-title {
+.story__video-foot {
   position: relative;
-  margin: 0;
   padding: 48px 20px 14px;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.55));
+}
+
+.story__video-title {
+  margin: 0;
   font-size: 17px;
   font-weight: 800;
   line-height: 1.25;
-  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.55));
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
 }
 
@@ -800,6 +803,49 @@ p {
   letter-spacing: -0.015em;
   text-wrap: balance;
   text-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
+}
+
+/* A short's ratings: a label, a ten-step meter and the score, for each scale. */
+.ratings {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 6px 8px;
+  margin-top: 12px;
+}
+
+/* Each rating spans the three columns, so the meters line up whatever the labels' length. */
+.rating {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+  align-items: center;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+.rating__bar {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.rating__step {
+  width: 5px;
+  height: 11px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.rating__step--on {
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.rating__value {
+  min-width: 1.4em;
+  font-variant-numeric: tabular-nums;
 }
 
 .slide__title--xl {
@@ -1476,6 +1522,14 @@ p {
 .carousel:hover .carousel__nav,
 .carousel__nav:focus-visible {
   opacity: 1;
+}
+
+.carousel--lab .carousel__nav {
+  top: 31px;
+}
+
+.carousel--lab .carousel__nav--next {
+  right: 68px;
 }
 
 @media (hover: none) {
@@ -3552,4 +3606,666 @@ p {
 .slide--video.slide--fit-cover .video__info {
   padding: 26px 14px 10px;
   gap: 2px;
+}
+
+/* Explore slides: a lab the reader experiments with, under a prompt that turns into the takeaway. */
+.slide--explore {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 14px;
+}
+
+.explore__heading {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+  padding-left: 4px;
+}
+
+.explore__prompt {
+  margin: 0 0 8px;
+  padding: 0 4px;
+  min-height: 2.7em;
+  font-size: 14.5px;
+  font-weight: 650;
+  line-height: 1.35;
+  text-wrap: pretty;
+}
+
+.explore__prompt--done {
+  font-weight: 700;
+}
+
+.explore__check {
+  vertical-align: -3px;
+  margin-right: 5px;
+  padding: 2px;
+  border-radius: 50%;
+  background: #fff;
+  color: #15803d;
+}
+
+.lab {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.lab--failed {
+  justify-content: center;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.lab__stage {
+  position: relative;
+  flex: 1;
+  min-height: 110px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+}
+
+.lab__stage canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* A stage the reader drags on keeps the gesture instead of swiping the carousel. */
+.lab__stage--drag {
+  touch-action: none;
+  cursor: grab;
+}
+
+.lab__range {
+  display: grid;
+  grid-template-columns: minmax(64px, auto) 1fr minmax(38px, auto);
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  font-weight: 750;
+}
+
+.lab__range input {
+  width: 100%;
+  height: 26px;
+  margin: 0;
+  accent-color: #fff;
+  /* Horizontal drags move the thumb; vertical ones still scroll the page. */
+  touch-action: pan-y;
+}
+
+.lab__range output {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.lab__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.lab__btn {
+  padding: 7px 13px;
+  border: 0;
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.lab__btn--ghost {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.lab__btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.lab__choice {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 3px;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.lab__choice button {
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: #fff;
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.lab__choice button[aria-pressed='true'] {
+  background: #fff;
+  color: #111;
+}
+
+.lab__readouts {
+  display: flex;
+  gap: 6px;
+}
+
+.lab__readout {
+  flex: 1;
+  min-width: 0;
+  padding: 5px 8px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.18);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.lab__readout span {
+  display: block;
+  opacity: 0.8;
+}
+
+.lab__readout strong {
+  display: block;
+  font-size: 17px;
+  font-weight: 850;
+  font-variant-numeric: tabular-nums;
+}
+
+.lab__readout--accent strong {
+  color: #fde047;
+}
+
+.lab__readout--good strong {
+  color: #86efac;
+}
+
+.lab__readout--bad strong {
+  color: #fca5a5;
+}
+
+.lab__note {
+  margin: 0;
+  font-size: 12.5px;
+  font-weight: 650;
+  line-height: 1.3;
+}
+
+/* Monty Hall */
+.lab__stage--doors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.monty__doors {
+  flex: 1;
+  min-height: 0;
+  max-height: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.monty__door {
+  position: relative;
+  flex: 1;
+  max-width: 88px;
+  height: 100%;
+  border: 3px solid #fde68a;
+  border-radius: 10px 10px 4px 4px;
+  background: linear-gradient(180deg, #b45309, #78350f);
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.monty__door:disabled {
+  cursor: default;
+}
+
+.monty__door--open {
+  background: #fef3c7;
+}
+
+.monty__door--picked {
+  transform: translateY(-4px);
+  box-shadow: 0 0 0 3px #fff;
+}
+
+.monty__door--final {
+  box-shadow: 0 0 0 4px #86efac;
+}
+
+.monty__face {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.monty__tag {
+  position: absolute;
+  left: 50%;
+  bottom: -9px;
+  transform: translateX(-50%);
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  font-size: 10px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.monty__say {
+  margin: 0;
+  min-height: 2.6em;
+  text-align: center;
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.monty__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.monty__table th,
+.monty__table td {
+  padding: 3px 4px;
+  text-align: left;
+}
+
+.monty__table thead th {
+  opacity: 0.75;
+}
+
+.monty__bar {
+  display: inline-block;
+  height: 8px;
+  max-width: 60%;
+  border-radius: 4px;
+  background: #fca5a5;
+  vertical-align: 0;
+}
+
+.monty__bar--good {
+  background: #86efac;
+}
+
+.lab__stage--short {
+  flex: 0 0 auto;
+  height: 34%;
+  min-height: 90px;
+}
+
+/* Kaprekar */
+.lab__digits {
+  width: 5.2ch;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.28);
+  color: #fde047;
+  font: inherit;
+  font-size: 22px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+}
+
+.kaprekar__path {
+  flex: 1;
+  min-height: 0;
+  margin: 0;
+  padding: 6px 10px;
+  overflow-y: auto;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.18);
+  list-style: none;
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1.45;
+  font-variant-numeric: tabular-nums;
+}
+
+.kaprekar__hit {
+  color: #fde047;
+}
+
+.kaprekar__hint,
+.kaprekar__done {
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.kaprekar__done {
+  margin-top: 4px;
+  color: #86efac;
+}
+
+.lab__number,
+.lab__text {
+  min-width: 0;
+  flex: 1;
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.28);
+  color: #fff;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 750;
+}
+
+.lab__number::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.lab__text {
+  letter-spacing: 0.06em;
+}
+
+/* Binary adder */
+.adder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+}
+
+.adder__grid {
+  display: grid;
+  grid-template-columns: 44px repeat(4, 1fr) 54px;
+  gap: 6px;
+  align-items: center;
+  justify-items: center;
+  font-weight: 800;
+}
+
+.adder__label {
+  justify-self: start;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.adder__worth {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.adder__dec {
+  justify-self: end;
+  font-size: 18px;
+  font-variant-numeric: tabular-nums;
+}
+
+.adder__dec--sum {
+  color: #fde047;
+}
+
+.adder__bit {
+  width: 44px;
+  height: 38px;
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font: inherit;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.adder__bit--on {
+  border-color: #fde047;
+  background: #fde047;
+  color: #111;
+}
+
+.adder__carry {
+  width: 26px;
+  height: 22px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #111;
+  font-size: 13px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.adder__carry--on {
+  background: #fca5a5;
+  box-shadow: 0 0 12px #fca5a5;
+}
+
+.adder__sum {
+  font-size: 22px;
+  opacity: 0.5;
+}
+
+.adder__sum--on {
+  color: #86efac;
+  opacity: 1;
+}
+
+.adder__out {
+  margin: 0;
+  text-align: center;
+  font-size: 13.5px;
+  font-weight: 750;
+}
+
+/* Enigma */
+.enigma__top {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.enigma__rotors {
+  display: flex;
+  gap: 4px;
+}
+
+.enigma__window {
+  width: 30px;
+  height: 36px;
+  border: 2px solid #a8a29e;
+  border-radius: 6px;
+  background: #f5f5f4;
+  color: #111;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.enigma__tape {
+  display: grid;
+  min-width: 0;
+  font-size: 12.5px;
+  font-weight: 700;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.enigma__tape strong {
+  letter-spacing: 0.08em;
+}
+
+.enigma__out {
+  color: #fde047;
+}
+
+.enigma__board {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 7px 4px;
+  background: #1c1917;
+}
+
+.enigma__row {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.enigma__lamp {
+  width: 24px;
+  height: 19px;
+  border-radius: 50%;
+  background: #292524;
+  color: #78716c;
+  font-size: 10.5px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 19px;
+}
+
+.enigma__lamp--lit {
+  background: #fde047;
+  color: #111;
+  box-shadow: 0 0 14px #fde047;
+}
+
+.enigma__keys {
+  display: grid;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.enigma__key {
+  width: 29px;
+  height: 29px;
+  border: 2px solid #a8a29e;
+  border-radius: 50%;
+  background: #0c0a09;
+  color: #f5f5f4;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.enigma__key:active {
+  transform: translateY(1px);
+  background: #292524;
+}
+
+/* Huffman */
+.huffman__codes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 0;
+  font-size: 12.5px;
+  font-weight: 700;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.huffman__codes b {
+  color: #fde047;
+}
+
+/* Diffie–Hellman */
+.dh {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.dh__public {
+  margin: 0;
+  text-align: center;
+  font-weight: 800;
+}
+
+.dh__people {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.dh__person {
+  display: grid;
+  gap: 1px;
+  padding: 6px 8px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dh__person > b {
+  font-size: 18px;
+}
+
+.dh__secret {
+  color: #fca5a5;
+}
+
+.dh__sent {
+  color: #7dd3fc;
+}
+
+.dh__key {
+  color: #86efac;
+}
+
+.dh__eve {
+  margin: 0;
+  text-align: center;
+  font-weight: 750;
+}
+
+.dh__eve--won {
+  color: #fca5a5;
+}
+
+.lab__row .lab__range {
+  flex: 1;
+  min-width: 160px;
+}
+
+/* A big target for tapping in time */
+.lab__pad {
+  flex: 1;
+  padding: 12px;
+  font-size: 15px;
+  touch-action: manipulation;
+}
+
+/* A sample of a measured colour, before its numbers */
+.lab__swatch {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  vertical-align: -1px;
 }

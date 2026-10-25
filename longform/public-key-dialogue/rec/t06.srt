@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERB: In January 1970, at Britain's G C H Q, James Ellis wrote a secret report on non-secret encryption.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERA: The idea came from a wartime Bell Labs paper, in which the receiver adds noise to a call, then removes it.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERB: So the receiver helps lock the message.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERA: Right. Ellis argued that it was possible, but he couldn't see a way to build it.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERB: Then, in September 1973, a young mathematician, Clifford Cocks, joined and heard about the idea.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERA: Cocks knew number theory. He chose prime factoring, and quickly found what we now call R S A.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERB: He didn't even write it down at the time.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERA: That's four years before M I T.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERB: And in 1974, his colleague Malcolm Williamson found what we now call Diffie–Hellman key exchange.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERA: With a military focus and little computing power, G C H Q found no use for it, and it stayed secret.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: It was made public in nineteen ninety-seven, when Cocks gave a talk on the eighteenth of December.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERB: James Ellis had died on the 25th of November, a month too soon.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: And as far as anyone knows, the Stanford and M I T teams found it all on their own.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERB: So what actually happens when you open a secure web page today?
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: Your browser and the server run a fresh key exchange, often on elliptic curves rather than a clock.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: The server signs the exchange, and its certificate shows that the signature really is the site's.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: That's the answer to Mallory.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERB: Public-key maths is slow, so it only sets up a key; a fast ordinary cipher carries the page.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERA: And the exchange keys are thrown away afterwards, so a key stolen later can't unlock today's traffic.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERB: R S A keys usually have 2,048 bits or more. On elliptic curves, 256 bits does as well as 3,072.

@@ -1,6 +1,7 @@
 // Render a long-form video's scene (studio/<slug>/scene.js). Frames depend only on t.
 //   node render.mjs preview <slug> t1,t2,...       PNG stills in <slug>/prev/, then the font check
 //   node render.mjs video <slug> <out.mp4> <from> <to>   one chunk of the picture (run several in parallel)
+//   node render.mjs scan <slug>                     draw every frame, list any that throw
 import { spawn } from 'node:child_process';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -45,6 +46,11 @@ if (mode === 'preview') {
   for (const t of a.split(',').map(Number)) writeFileSync(join(dir, `t${t.toFixed(2).padStart(7, '0')}.png`), await png(t));
   const g = await glyphs();
   console.log(`${W}×${H}: stills in ${dir}${g.length ? `\nfallback font used for: ${g.join(' | ')}` : ''}`);
+} else if (mode === 'scan') {
+  // Draw every frame without encoding and list the times where drawing throws (a stills check can miss them).
+  const bad = await page.evaluate(`(() => { const out = []; for (let i = 0; i <= window.DURATION * ${FPS}; i++) { try { window.render(i / ${FPS}); } catch (e) { if (out.length < 8) out.push((i / ${FPS}).toFixed(2) + ' s: ' + e.message); else if (out.length === 8) out.push('…'); } } return out; })()`);
+  console.log(`${slug}: ${bad.length ? 'ERRORS\n  ' + bad.join('\n  ') : 'every frame draws'}`);
+  if (bad.length) process.exitCode = 1;
 } else if (mode === 'video') {
   const out = a, from = Number(b), to = Math.min(Number(c), Number(await page.evaluate('window.DURATION')));
   const enc = spawn('ffmpeg', ['-y', '-v', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-',

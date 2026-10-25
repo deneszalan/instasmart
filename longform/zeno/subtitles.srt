@@ -1,0 +1,431 @@
+1
+00:00:01,000 --> 00:00:07,660
+Swift-footed Achilles, the greatest of the Greek heroes, is racing a tortoise, and the tortoise has a head start.
+
+2
+00:00:07,740 --> 00:00:13,200
+Each time Achilles reaches the spot where the tortoise was, it has crept a little further on.
+
+3
+00:00:13,280 --> 00:00:19,120
+So, says an argument nearly 2,500 years old, he can never catch it.
+
+4
+00:00:19,200 --> 00:00:21,310
+Of course, he does catch it.
+
+5
+00:00:21,390 --> 00:00:29,780
+But saying exactly what's wrong with the argument took more than 2,000 years, and some philosophers say it still isn't settled.
+
+6
+00:00:29,860 --> 00:00:34,580
+This is Zeno's paradox of Achilles and the tortoise.
+
+7
+00:00:38,780 --> 00:00:45,670
+Zeno was born around 490 BC in Elea, a Greek city on the west coast of southern Italy.
+
+8
+00:00:45,750 --> 00:00:50,010
+He was a student and friend of an older philosopher, Parmenides.
+
+9
+00:00:50,090 --> 00:00:56,360
+Parmenides taught that reality is one unchanging whole, and that change and motion are illusions.
+
+10
+00:00:56,440 --> 00:01:02,830
+Critics found that absurd. Zeno replied that their views, followed through, led to worse absurdities.
+
+11
+00:01:02,910 --> 00:01:10,720
+This kind of argument is called reductio ad absurdum, and Aristotle called Zeno the inventor of dialectic.
+
+12
+00:01:10,800 --> 00:01:15,370
+Zeno's book is lost. Fewer than 200 of his own words survive.
+
+13
+00:01:15,450 --> 00:01:22,640
+We know his arguments from others, such as Plato, Aristotle, and Simplicius, writing a thousand years later.
+
+14
+00:01:22,720 --> 00:01:30,590
+Plato even has the two visit Athens to meet a young Socrates, though he probably invented that meeting.
+
+15
+00:01:33,190 --> 00:01:38,030
+The most famous argument is a race, as Aristotle gives it in his Physics.
+
+16
+00:01:38,110 --> 00:01:46,130
+"In a race, the quickest runner can never overtake the slowest, since the pursuer must first reach the point whence the pursued started,"
+
+17
+00:01:46,210 --> 00:01:48,970
+"so that the slower must always hold a lead."
+
+18
+00:01:49,050 --> 00:01:55,610
+There's no tortoise in that version, just the slowest runner. The tortoise comes from later retellings.
+
+19
+00:01:55,690 --> 00:02:01,430
+So let's race. Achilles runs 10 metres a second, and the tortoise 1 metre a second.
+
+20
+00:02:01,510 --> 00:02:04,600
+And the tortoise starts 100 metres ahead.
+
+21
+00:02:04,680 --> 00:02:10,140
+In stage one, Achilles runs those 100 metres, which takes him 10 seconds.
+
+22
+00:02:10,220 --> 00:02:14,590
+But in those 10 seconds, the tortoise has crawled 10 metres further.
+
+23
+00:02:14,670 --> 00:02:21,280
+In stage two, Achilles covers those 10 metres in 1 second, and the tortoise crawls another metre.
+
+24
+00:02:21,360 --> 00:02:27,000
+Stage three leaves a gap of 10 centimetres, and stage four leaves just 1 centimetre.
+
+25
+00:02:27,080 --> 00:02:33,090
+Each gap is a tenth of the one before. It shrinks forever, but it never reaches zero.
+
+26
+00:02:33,170 --> 00:02:39,670
+So there is always one more stage. Achilles, Zeno concludes, never catches up.
+
+27
+00:02:43,470 --> 00:02:48,510
+So how far does Achilles run before he draws level? Let's add up the stages.
+
+28
+00:02:48,590 --> 00:02:54,280
+It's 100 metres, plus 10, plus 1, plus a tenth, plus a hundredth, and so on.
+
+29
+00:02:54,360 --> 00:03:04,230
+The running totals are 100, then 110, then 111, then 111.1, then 111.11.
+
+30
+00:03:04,310 --> 00:03:09,880
+They close in on 111 and one ninth metres, with the ones repeating forever.
+
+31
+00:03:09,960 --> 00:03:14,500
+The times add up the same way, to 11 and one ninth seconds.
+
+32
+00:03:14,580 --> 00:03:20,350
+Infinitely many stages, but a finite distance and a finite time.
+
+33
+00:03:20,430 --> 00:03:29,920
+Plot distance against time, and each runner is a straight line. The lines cross at 11.1 seconds and 111.1 metres.
+
+34
+00:03:30,000 --> 00:03:36,040
+Zeno's stages are a staircase closing in on that crossing, and every one of them comes before it.
+
+35
+00:03:36,120 --> 00:03:42,920
+The moment Achilles catches up isn't one of the stages. It comes just after all of them.
+
+36
+00:03:43,120 --> 00:03:49,140
+It's often said that Zeno thought infinitely many pieces must add up to something infinite.
+
+37
+00:03:49,220 --> 00:03:53,610
+But no ancient source has Zeno discussing an infinite sum at all.
+
+38
+00:03:53,690 --> 00:04:01,230
+In Simplicius's report, his worry is that it is impossible "to traverse an infinite number of things in a finite time."
+
+39
+00:04:01,310 --> 00:04:08,860
+So the puzzle isn't the total. It's how anyone can finish infinitely many steps, with no last one.
+
+40
+00:04:11,460 --> 00:04:15,280
+Zeno's dichotomy makes the same point without a tortoise.
+
+41
+00:04:15,360 --> 00:04:22,880
+In Aristotle's words, "that which is in locomotion must arrive at the half-way stage before it arrives at the goal."
+
+42
+00:04:22,960 --> 00:04:29,070
+So to run 100 metres, first run half of it. Then half of what's left, then half of that.
+
+43
+00:04:29,150 --> 00:04:35,970
+The running totals are one half, three quarters, seven eighths, fifteen sixteenths, creeping towards the whole.
+
+44
+00:04:36,050 --> 00:04:44,290
+After 10 halvings, you've run 1,023 parts in 1,024, and less than 10 centimetres is left.
+
+45
+00:04:44,370 --> 00:04:51,540
+After 20, less than a tenth of a millimetre is left. But there is always a half still to run.
+
+46
+00:04:51,620 --> 00:04:58,010
+There's a nastier version. Before the half-way mark, you must reach the quarter mark, and before that, the eighth.
+
+47
+00:04:58,090 --> 00:05:02,180
+Then the run has no first step at all. So how does it ever begin?
+
+48
+00:05:02,260 --> 00:05:10,860
+Aristotle noted that the Achilles is much the same argument. In our race, the gaps shrink by tenths, not halves.
+
+49
+00:05:13,460 --> 00:05:18,620
+Zeno's arrow attacks motion from the other side, by cutting time into instants.
+
+50
+00:05:18,700 --> 00:05:22,170
+Take an arrow in flight, and freeze a single instant.
+
+51
+00:05:22,250 --> 00:05:27,570
+In that instant, it fills a space exactly its own size, so it isn't moving.
+
+52
+00:05:27,650 --> 00:05:33,040
+But the whole flight is made of instants like this one. So when does the arrow move?
+
+53
+00:05:33,120 --> 00:05:39,810
+Aristotle replied that time is not made of indivisible nows, any more than a line is made of points.
+
+54
+00:05:39,890 --> 00:05:43,760
+The modern answer treats speed at an instant as a limit.
+
+55
+00:05:43,840 --> 00:05:49,360
+Say it flies at 50 metres a second. In a tenth of a second, it goes 5 metres.
+
+56
+00:05:49,440 --> 00:05:56,930
+In a hundredth, it goes half a metre. Distance over time stays at 50 metres a second, however short the interval.
+
+57
+00:05:57,010 --> 00:06:03,000
+In a single instant it goes nowhere, and zero divided by zero isn't a number at all.
+
+58
+00:06:03,080 --> 00:06:06,820
+So the speed at an instant is defined as that limit.
+
+59
+00:06:06,900 --> 00:06:14,070
+On this view, motion doesn't happen inside an instant. It is being in different places at different times.
+
+60
+00:06:14,150 --> 00:06:20,740
+The last of the four, the stadium, has rows of equal blocks passing each other in opposite directions.
+
+61
+00:06:20,820 --> 00:06:26,640
+The front block of one row passes every oncoming block, but only half of the still ones.
+
+62
+00:06:26,720 --> 00:06:31,910
+From this, Zeno concluded that half a given time is equal to double that time.
+
+63
+00:06:31,990 --> 00:06:39,880
+The usual verdict is that he ignored relative speed: the oncoming blocks approach twice as fast.
+
+64
+00:06:43,480 --> 00:06:47,450
+One famous reply to Zeno wasn't an argument at all.
+
+65
+00:06:47,530 --> 00:06:54,970
+Simplicius tells a story: when Diogenes the Cynic heard Zeno's arguments, he said nothing, stood up, and walked.
+
+66
+00:06:55,050 --> 00:07:01,420
+That kind of answer has a Latin name, solvitur ambulando: it is solved by walking.
+
+67
+00:07:01,500 --> 00:07:08,190
+But walking shows only that the conclusion is false. It doesn't show which step of the argument fails.
+
+68
+00:07:08,270 --> 00:07:16,360
+Aristotle noted that shorter distances take shorter times. But then the time, too, is made of infinitely many pieces.
+
+69
+00:07:16,440 --> 00:07:19,550
+So his deeper answer splits infinity in two.
+
+70
+00:07:19,630 --> 00:07:25,790
+An actual infinity would be a completed collection of infinitely many things, all there at once.
+
+71
+00:07:25,870 --> 00:07:31,310
+A potential infinity is a process that can always go on, but is never completed.
+
+72
+00:07:31,390 --> 00:07:38,930
+A path, he said, holds infinitely many halves only potentially. They'd be actual only if the runner stopped at each one.
+
+73
+00:07:39,010 --> 00:07:45,350
+In his words, "if the units are actual, it is not possible: if they are potential, it is possible."
+
+74
+00:07:45,430 --> 00:07:52,200
+That answer satisfied nearly all scholars for about 1,500 years.
+
+75
+00:07:54,800 --> 00:07:58,960
+Meanwhile, mathematicians were learning to tame infinite sums.
+
+76
+00:07:59,040 --> 00:08:04,700
+In the 3rd century BC, Archimedes found the area of a slice cut from a parabola.
+
+77
+00:08:04,780 --> 00:08:10,970
+He filled it with triangles, and each new row of triangles has a quarter of the area of the row before.
+
+78
+00:08:11,050 --> 00:08:17,040
+So the slice is the big triangle, times 1 plus a quarter plus a sixteenth, and so on.
+
+79
+00:08:17,120 --> 00:08:22,430
+Archimedes showed that this comes to exactly four thirds of the big triangle.
+
+80
+00:08:22,510 --> 00:08:28,720
+But infinite sums can be slippery. Take 1, minus 1, plus 1, minus 1, and so on.
+
+81
+00:08:28,800 --> 00:08:33,890
+Pair the terms one way and you get 0. Pair them another way and you get 1.
+
+82
+00:08:33,970 --> 00:08:42,740
+In 1821, the French mathematician Augustin-Louis Cauchy insisted on strict tests of when an infinite sum makes sense.
+
+83
+00:08:42,820 --> 00:08:48,140
+Its value is the number its running totals settle down to, if they settle at all.
+
+84
+00:08:48,220 --> 00:08:55,060
+Then a half plus a quarter plus an eighth is exactly 1, while 1 minus 1 plus 1 has no sum.
+
+85
+00:08:55,140 --> 00:09:02,630
+In 1861, Karl Weierstrass gave the definition of a limit in the precise form used today.
+
+86
+00:09:02,710 --> 00:09:08,670
+Pick any margin, however small. From some stage on, every running total stays within it.
+
+87
+00:09:08,750 --> 00:09:16,570
+For a margin of a millimetre, Achilles' totals stay inside from stage 6 on. For a micrometre, from stage 9.
+
+88
+00:09:16,650 --> 00:09:27,620
+So 111.1 metres is the limit of Zeno's stages. Some historians, such as Carl Boyer, say calculus solves the paradox.
+
+89
+00:09:30,220 --> 00:09:38,180
+Some philosophers disagree. The maths says where and when Achilles draws level, but how does he finish infinitely many tasks?
+
+90
+00:09:38,260 --> 00:09:45,180
+Bertrand Russell argued that Achilles really does complete infinitely many tasks, in a finite time.
+
+91
+00:09:45,260 --> 00:09:50,200
+In 1954, the philosopher James Thomson replied with a lamp.
+
+92
+00:09:50,280 --> 00:09:56,350
+Switch it on. After a minute, switch it off. After half a minute, on again, then off after a quarter.
+
+93
+00:09:56,430 --> 00:10:01,250
+Each wait is half the last, and the waits add up to exactly 2 minutes.
+
+94
+00:10:01,330 --> 00:10:03,990
+At 2 minutes, is the lamp on or off?
+
+95
+00:10:04,070 --> 00:10:11,080
+It can't be on: every time it went on, it was switched off again. And off fails for the same reason.
+
+96
+00:10:11,160 --> 00:10:17,600
+Thomson concluded that a supertask, infinitely many tasks in a finite time, is impossible.
+
+97
+00:10:17,680 --> 00:10:23,670
+Its switch flips like the running totals of 1 minus 1 plus 1, which never settle.
+
+98
+00:10:23,750 --> 00:10:32,560
+In 1962, Paul Benacerraf objected that the story fixes the lamp before 2 minutes, but says nothing about that moment itself.
+
+99
+00:10:32,640 --> 00:10:36,860
+So there's no contradiction, just a question the story leaves open.
+
+100
+00:10:36,940 --> 00:10:42,980
+Philosophers still disagree about what counts as a task, and whether a supertask is possible.
+
+101
+00:10:43,060 --> 00:10:50,050
+And some theories of quantum gravity suggest that space and time may not divide endlessly at all.
+
+102
+00:10:50,130 --> 00:10:57,070
+As the philosopher Kevin Brown put it, "it's probably foolhardy to think we've reached the end."
+
+103
+00:10:59,670 --> 00:11:01,430
+So, back to the race.
+
+104
+00:11:01,510 --> 00:11:10,530
+Achilles reaches the tortoise's start after 10 seconds, and draws level after 11.1 seconds, at 111.1 metres.
+
+105
+00:11:10,610 --> 00:11:18,770
+Before that moment come infinitely many of Zeno's stages, and every one of them fits inside those 11.1 seconds.
+
+106
+00:11:18,850 --> 00:11:26,220
+Zeno was wrong that motion is impossible. But he made us say what we mean by infinity, a sum, and an instant.
+
+107
+00:11:26,300 --> 00:11:34,760
+Bertrand Russell wrote that Zeno's arguments have afforded grounds for almost all theories of space, time and infinity since.
+
+108
+00:11:34,840 --> 00:11:40,810
+Achilles wins the race. Zeno's argument, it seems, is still running.

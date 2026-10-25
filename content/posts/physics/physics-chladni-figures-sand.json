@@ -75,7 +75,14 @@
           "start": 69.2,
           "end": 75.2
         }
-      ]
+      ],
+      "ratings": { "complexity": 6, "shock": 5 }
+    },
+    {
+      "type": "explore",
+      "lab": "chladni-figures-sand",
+      "prompt": "Bow the plate and watch the sand settle. Try at least three different notes.",
+      "takeaway": "The sand is thrown off the parts that shake and comes to rest on the lines that stay still. Higher notes split the plate into more pieces, so the figures get busier."
     },
     {
       "type": "image",

@@ -1,9 +1,10 @@
 // Narration timing for a long-form video. The voice sets the pace: each line plays at its natural length.
 //   node timing.mjs measure <slug>   -> <slug>/measure.srt: one line every 30 s, so tts.sh records each line whole
+//                                       (and rec/lines.json, what each line says, for the line cache)
 //   node timing.mjs build <slug>     -> <slug>/timeline.js (for the scene), subtitles.srt (YouTube captions), plan.json (for assemble.py)
 // <slug>/script.mjs exports LINES: [{ key, text, say?, gap?, chapter?, who? }] and optionally HOLD: { key: seconds after that line }.
 // A dialogue gives every line who: 'A' or 'B' (voice.txt then casts both: "A=m1 B=af_bella"); its captions mark each change of speaker with ">>".
-import { readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 const [mode, slug] = process.argv.slice(2);
@@ -21,10 +22,16 @@ if (dialogue && LINES.some((l) => l.who !== 'A' && l.who !== 'B')) throw new Err
 const label = (l) => (dialogue ? `SPEAKER${l.who}: ` : '');
 if (mode === 'measure') {
   writeFileSync(join(dir, 'measure.srt'), srt(LINES.map((l, i) => [1 + i * SPACING, SPACING - 4 + i * SPACING, label(l) + spoken(l)])));
+  // What each line says, for tts.sh's line cache (linecache.py): only lines not recorded before are recorded.
+  mkdirSync(join(dir, 'rec'), { recursive: true });
+  writeFileSync(join(dir, 'rec', 'lines.json'), JSON.stringify(LINES.map((l) => ({ key: l.key, ...(l.who ? { who: l.who } : {}), spoken: spoken(l) })), null, 1));
   console.log(`${LINES.length} lines, about ${LINES.reduce((n, l) => n + spoken(l).split(' ').length, 0)} words`);
 } else if (mode === 'build') {
-  const natural = [...readFileSync(join(dir, 'measure.log'), 'utf8').matchAll(/^#(\d+)(?:\s+SPEAKER\w+)?\s+\S+\s+([\d.]+)s ->/gm)].map((m) => Number(m[2]));
-  if (natural.length !== LINES.length) throw new Error(`measured ${natural.length} lines, the script has ${LINES.length}: run tts.sh again`);
+  // By cue number, not log order: with two engines, srt2speech logs one engine's lines first, then the other's.
+  const natural = [];
+  for (const m of readFileSync(join(dir, 'measure.log'), 'utf8').matchAll(/^#(\d+)(?:\s+SPEAKER\w+)?\s+\S+\s+([\d.]+)s ->/gm)) natural[Number(m[1]) - 1] = Number(m[2]);
+  const missing = LINES.map((l, i) => (natural[i] === undefined ? i + 1 : 0)).filter(Boolean);
+  if (missing.length || natural.length !== LINES.length) throw new Error(`measure.log lacks lines ${missing.join(', ') || '?'} (script has ${LINES.length}): run tts.sh again`);
   let t = 0;
   const tl = LINES.map((l, i) => { t += l.gap ?? GAP; const start = t, end = start + natural[i] + 0.12; t = end + (HOLD[l.key] ?? 0); return { ...l, start: +start.toFixed(2), end: +end.toFixed(2), natural: natural[i], measured: 1 + i * SPACING }; });
   const duration = +t.toFixed(2);

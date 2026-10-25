@@ -70,7 +70,14 @@
           "start": 73.6,
           "end": 81.6
         }
-      ]
+      ],
+      "ratings": { "complexity": 4, "shock": 6 }
+    },
+    {
+      "type": "explore",
+      "lab": "spacing-effect",
+      "prompt": "Cramming the day before gets you through the test, but what about a month later? Drag the four reviews to keep at least 30% a month on.",
+      "takeaway": "Spread out, the same four reviews do far more: each comes after a little forgetting and slows the fading. Cramming the day before scores well on the test and leaves almost nothing a month later."
     },
     {
       "type": "text",

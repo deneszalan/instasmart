@@ -74,7 +74,14 @@
           "start": 76.4,
           "end": 83.73
         }
-      ]
+      ],
+      "ratings": { "complexity": 7, "shock": 4 }
+    },
+    {
+      "type": "explore",
+      "lab": "milankovitch-cycles",
+      "prompt": "Change the tilt, the stretch of the orbit and when Earth passes closest to the Sun. Make northern summers weak enough for an ice age.",
+      "takeaway": "Less tilt, or meeting the Sun at its farthest in June, weakens northern summers. When summers can’t melt the winter snow, ice sheets grow."
     },
     {
       "type": "list",

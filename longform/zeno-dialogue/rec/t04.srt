@@ -1,0 +1,15 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: As the philosopher Kevin Brown put it, it's probably foolhardy to think we've reached the end.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERA: Achilles reaches the tortoise's start after ten seconds, and draws level after eleven point one seconds, at a hundred and eleven point one metres.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: Zeno was wrong that motion is impossible. But he made us say what we mean by infinity, a sum, and an instant.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERA: Bertrand Russell wrote that Zeno's arguments have afforded grounds for almost all theories of space, time and infinity since.

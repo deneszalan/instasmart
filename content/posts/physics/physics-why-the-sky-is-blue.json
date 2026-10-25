@@ -82,7 +82,14 @@
           "start": 80.8,
           "end": 86.13
         }
-      ]
+      ],
+      "ratings": { "complexity": 7, "shock": 6 }
+    },
+    {
+      "type": "explore",
+      "lab": "why-the-sky-is-blue",
+      "prompt": "Lower the Sun to the horizon and watch the sky and the sunlight change. Then look at the sky’s light colour by colour.",
+      "takeaway": "At sunset light crosses dozens of times more air, so the blue is scattered away first. And the sky’s light peaks in violet: it looks blue partly because of how your eye responds."
     },
     {
       "type": "chart",

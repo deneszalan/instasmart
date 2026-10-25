@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+But the Sun is well off centre, sitting more than nine percent of the way from the middle to the end.
+
+2
+00:00:31,000 --> 00:00:56,000
+Of the planets, only Mercury's orbit is more stretched. Kepler was lucky that his planet was Mars.
+
+3
+00:01:01,000 --> 00:01:26,000
+In sixteen oh nine he published it in a book called Astronomia nova, the New Astronomy.
+
+4
+00:01:31,000 --> 00:01:56,000
+So where is a planet on a given day? Kepler turned the area rule into an equation.
+
+5
+00:02:01,000 --> 00:02:26,000
+Time gives an angle, called M, that ticks round steadily, like the hand of a clock.
+
+6
+00:02:31,000 --> 00:02:56,000
+The planet's real place is set by another angle, called E. And a small letter e says how stretched the ellipse is.
+
+7
+00:03:01,000 --> 00:03:26,000
+Kepler's equation says that M equals big E, minus small e times the sine of big E.
+
+8
+00:03:31,000 --> 00:03:56,000
+No algebra can solve it for E. So in sixteen twenty-one, Kepler suggested guessing, then improving the guess.
+
+9
+00:04:01,000 --> 00:04:26,000
+For Mars, start with E equal to M, put each answer back in, and in four rounds the digits stop changing.
+
+10
+00:04:31,000 --> 00:04:56,000
+This animation solves it for every frame. Here's a stretched orbit, so the effect is easy to see.
+
+11
+00:05:01,000 --> 00:05:26,000
+Split one trip around into twelve equal stretches of time, and shade the area each one sweeps.
+
+12
+00:05:31,000 --> 00:05:56,000
+Near the Sun, the wedges are short and fat. Far away, they're long and thin.
+
+13
+00:06:01,000 --> 00:06:26,000
+Measure them, and each one is a twelfth of the ellipse, or eight point three percent.
+
+14
+00:06:31,000 --> 00:06:56,000
+But the distance travelled in each stretch is wildly different.
+
+15
+00:07:01,000 --> 00:07:26,000
+On this orbit, the planet moves four times faster at its closest point, perihelion, than at aphelion, its farthest.
+
+16
+00:07:31,000 --> 00:07:56,000
+Earth's orbit is much rounder. But the rule still holds.
+
+17
+00:08:01,000 --> 00:08:26,000
+Earth passes perihelion around the third of January, at a hundred and forty-seven point one million kilometres from the Sun,
+
+18
+00:08:31,000 --> 00:08:56,000
+and aphelion around the fourth of July, at a hundred and fifty-two point one million kilometres.
+
+19
+00:09:01,000 --> 00:09:26,000
+So it's fastest in January, at about thirty point three kilometres a second, and slowest in July, at about twenty-nine point three.
+
+20
+00:09:31,000 --> 00:09:56,000
+You can see it on the calendar. From the March equinox to the September one takes about a hundred and eighty-six days.

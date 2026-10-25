@@ -1,0 +1,394 @@
+[
+ {
+  "key": "o1",
+  "spoken": "Right now, you are moving around the Sun at about thirty kilometres a second."
+ },
+ {
+  "key": "o2",
+  "spoken": "But the speed isn't steady. In early January, Earth moves about one kilometre a second faster than in early July."
+ },
+ {
+  "key": "o3",
+  "spoken": "The rule behind that was found more than four hundred years ago, in old records of the planet Mars."
+ },
+ {
+  "key": "o4",
+  "spoken": "It began with an error of eight arcminutes, which is about a quarter of the width of the Moon."
+ },
+ {
+  "key": "o5",
+  "spoken": "This is the story of Kepler's second law, the rule of equal areas in equal times."
+ },
+ {
+  "key": "t1",
+  "spoken": "In the late fifteen hundreds, the best measurements of the sky came from a Danish nobleman, Tycho Brahe."
+ },
+ {
+  "key": "t2",
+  "spoken": "From fifteen seventy-six, on the island of Ven, he built Uraniborg, an observatory funded by the king."
+ },
+ {
+  "key": "t3",
+  "spoken": "There were no telescopes yet. Tycho measured by eye, with large quadrants and sextants."
+ },
+ {
+  "key": "t4",
+  "spoken": "His positions came close to one arcminute, which is a sixtieth of a degree."
+ },
+ {
+  "key": "t5",
+  "spoken": "For scale, the full Moon is about thirty-one arcminutes across."
+ },
+ {
+  "key": "t6",
+  "spoken": "Year after year, he recorded where the planets were. Mars was among them."
+ },
+ {
+  "key": "t7",
+  "spoken": "In fifteen ninety-seven he left Denmark, and soon he was working for the emperor, in Prague."
+ },
+ {
+  "key": "t8",
+  "spoken": "In February sixteen hundred, he was joined by a twenty-eight-year-old mathematician, Johannes Kepler."
+ },
+ {
+  "key": "t9",
+  "spoken": "Tycho guarded his data closely. He set Kepler to work on a single planet, Mars."
+ },
+ {
+  "key": "t10",
+  "spoken": "In October sixteen oh one, Tycho died after a short illness. Two days later, Kepler took over as imperial mathematician."
+ },
+ {
+  "key": "t11",
+  "spoken": "Tycho's heirs owned the observations, which would delay Kepler's book for years. But he had the Mars data."
+ },
+ {
+  "key": "m1",
+  "spoken": "Astronomers had long modelled the planets with circles. Even Copernicus, who put the Sun near the middle, used circles."
+ },
+ {
+  "key": "m2",
+  "spoken": "So Kepler began with a circle too, with the Sun off centre, and a point from which the motion looks steady."
+ },
+ {
+  "key": "m3",
+  "spoken": "Fitting it to Tycho's numbers meant one long calculation, over and over again."
+ },
+ {
+  "key": "m4",
+  "spoken": "Take pity on me, he wrote, who had to go through with at least seventy repetitions of it."
+ },
+ {
+  "key": "m5",
+  "spoken": "The model matched Tycho's positions of Mars to within two arcminutes."
+ },
+ {
+  "key": "m6",
+  "spoken": "But at other points in the orbit, it missed by up to eight."
+ },
+ {
+  "key": "m7",
+  "spoken": "Tycho's data was far too accurate for an error that size to be ignored."
+ },
+ {
+  "key": "m8",
+  "spoken": "These eight minutes alone, Kepler wrote, will lead us along a path to the reform of the whole of astronomy."
+ },
+ {
+  "key": "m9",
+  "spoken": "Something in his model was wrong, either the circle or the way the planet moved along it."
+ },
+ {
+  "key": "a1",
+  "spoken": "Kepler wanted a physical cause. He imagined a force from the Sun, pushing the planets round, weaker with distance."
+ },
+ {
+  "key": "a2",
+  "spoken": "So, he reasoned, a planet's speed falls as its distance grows. Twice as far means half as fast."
+ },
+ {
+  "key": "a3",
+  "spoken": "To find where the planet would be, he'd have to add up its distance from the Sun all along the way."
+ },
+ {
+  "key": "a4",
+  "spoken": "By late sixteen oh two he had a shortcut, which was to measure the area swept by the line from the Sun."
+ },
+ {
+  "key": "a5",
+  "spoken": "Picture each day's motion as a thin triangle, whose height is the distance from the Sun, and whose base is the distance travelled."
+ },
+ {
+  "key": "a6",
+  "spoken": "If speed falls as distance grows, every day's triangle has the same area."
+ },
+ {
+  "key": "a7",
+  "spoken": "That's equal areas in equal times. Oddly, Kepler found this, the second law, before the first."
+ },
+ {
+  "key": "a8",
+  "spoken": "His speed rule only works for orbits that are nearly circles. The area rule works for every orbit."
+ },
+ {
+  "key": "l1",
+  "spoken": "Now he needed the shape. He tried egg-shaped ovals, again and again."
+ },
+ {
+  "key": "l2",
+  "spoken": "After about forty failed attempts, in late sixteen oh four, he tried an ellipse."
+ },
+ {
+  "key": "l3",
+  "spoken": "He had thought it too simple, because surely earlier astronomers wouldn't have missed it."
+ },
+ {
+  "key": "l4",
+  "spoken": "It fitted. He had even had the formula earlier, without seeing it. Ah, what a foolish bird I have been!"
+ },
+ {
+  "key": "l5",
+  "spoken": "An ellipse has two special points, its foci. The Sun sits at one. The other is empty."
+ },
+ {
+  "key": "l6",
+  "spoken": "That's Kepler's first law, that a planet's orbit is an ellipse, with the Sun at one focus."
+ },
+ {
+  "key": "l7",
+  "spoken": "Mars's ellipse is barely squashed. It's less than half a percent narrower than it is long."
+ },
+ {
+  "key": "l8",
+  "spoken": "But the Sun is well off centre, sitting more than nine percent of the way from the middle to the end."
+ },
+ {
+  "key": "l9",
+  "spoken": "Of the planets, only Mercury's orbit is more stretched. Kepler was lucky that his planet was Mars."
+ },
+ {
+  "key": "l10",
+  "spoken": "In sixteen oh nine he published it in a book called Astronomia nova, the New Astronomy."
+ },
+ {
+  "key": "k1",
+  "spoken": "So where is a planet on a given day? Kepler turned the area rule into an equation."
+ },
+ {
+  "key": "k2",
+  "spoken": "Time gives an angle, called M, that ticks round steadily, like the hand of a clock."
+ },
+ {
+  "key": "k3",
+  "spoken": "The planet's real place is set by another angle, called E. And a small letter e says how stretched the ellipse is."
+ },
+ {
+  "key": "k4",
+  "spoken": "Kepler's equation says that M equals big E, minus small e times the sine of big E."
+ },
+ {
+  "key": "k5",
+  "spoken": "No algebra can solve it for E. So in sixteen twenty-one, Kepler suggested guessing, then improving the guess."
+ },
+ {
+  "key": "k6",
+  "spoken": "For Mars, start with E equal to M, put each answer back in, and in four rounds the digits stop changing."
+ },
+ {
+  "key": "k7",
+  "spoken": "This animation solves it for every frame. Here's a stretched orbit, so the effect is easy to see."
+ },
+ {
+  "key": "k8",
+  "spoken": "Split one trip around into twelve equal stretches of time, and shade the area each one sweeps."
+ },
+ {
+  "key": "k9",
+  "spoken": "Near the Sun, the wedges are short and fat. Far away, they're long and thin."
+ },
+ {
+  "key": "k10",
+  "spoken": "Measure them, and each one is a twelfth of the ellipse, or eight point three percent."
+ },
+ {
+  "key": "k11",
+  "spoken": "But the distance travelled in each stretch is wildly different."
+ },
+ {
+  "key": "k12",
+  "spoken": "On this orbit, the planet moves four times faster at its closest point, perihelion, than at aphelion, its farthest."
+ },
+ {
+  "key": "f1",
+  "spoken": "Earth's orbit is much rounder. But the rule still holds."
+ },
+ {
+  "key": "f2",
+  "spoken": "Earth passes perihelion around the third of January, at a hundred and forty-seven point one million kilometres from the Sun,"
+ },
+ {
+  "key": "f3",
+  "spoken": "and aphelion around the fourth of July, at a hundred and fifty-two point one million kilometres."
+ },
+ {
+  "key": "f4",
+  "spoken": "So it's fastest in January, at about thirty point three kilometres a second, and slowest in July, at about twenty-nine point three."
+ },
+ {
+  "key": "f5",
+  "spoken": "You can see it on the calendar. From the March equinox to the September one takes about a hundred and eighty-six days."
+ },
+ {
+  "key": "f6",
+  "spoken": "The other half of the year takes only about a hundred and seventy-nine, because Earth passes perihelion then, moving faster."
+ },
+ {
+  "key": "f7",
+  "spoken": "So in the north, spring and summer together last about a week longer than autumn and winter."
+ },
+ {
+  "key": "f8",
+  "spoken": "Mars swings more, from about twenty-six and a half kilometres a second near the Sun to about twenty-two at the far end."
+ },
+ {
+  "key": "f9",
+  "spoken": "Comets show it best. Halley's Comet dips to about zero point six astronomical units from the Sun, then swings out to about thirty-five."
+ },
+ {
+  "key": "f10",
+  "spoken": "One astronomical unit is Earth's average distance from the Sun."
+ },
+ {
+  "key": "f11",
+  "spoken": "At the far end, in December twenty twenty-three, it was crawling along at just zero point nine one kilometres a second."
+ },
+ {
+  "key": "f12",
+  "spoken": "At the two ends, speed times distance is the same. So near the Sun, it races along at about fifty-four kilometres a second."
+ },
+ {
+  "key": "f13",
+  "spoken": "Of its roughly seventy-five-year orbit, it spends only about two years closer to the Sun than Jupiter. It's due back in twenty sixty-one."
+ },
+ {
+  "key": "h1",
+  "spoken": "Kepler wasn't done. He wanted a rule that linked all the planets, not just one."
+ },
+ {
+  "key": "h2",
+  "spoken": "By his own account, the answer came to him on the eighth of March, sixteen eighteen."
+ },
+ {
+  "key": "h3",
+  "spoken": "Square a planet's time to go round. Cube its distance from the Sun. The ratio is the same for every planet."
+ },
+ {
+  "key": "h4",
+  "spoken": "Jupiter takes eleven point eight six years to go round. Squared, that's about a hundred and forty-one."
+ },
+ {
+  "key": "h5",
+  "spoken": "It's five point two astronomical units from the Sun. Cubed, that's about a hundred and forty-one again."
+ },
+ {
+  "key": "h6",
+  "spoken": "With Kepler's own numbers, all six known planets agree to within about two percent."
+ },
+ {
+  "key": "h7",
+  "spoken": "I first believed I was dreaming, he wrote."
+ },
+ {
+  "key": "h8",
+  "spoken": "This third law appeared in sixteen nineteen, in his book The Harmony of the World."
+ },
+ {
+  "key": "h9",
+  "spoken": "There, Kepler heard music in the orbits. Earth's turning speed, seen from the Sun, varies by about a semitone."
+ },
+ {
+  "key": "h10",
+  "spoken": "The Earth sings mee, fah, mee, he wrote, and you may hear misery and famine in the syllables."
+ },
+ {
+  "key": "h11",
+  "spoken": "In sixteen twenty-one, his Epitome gave the area law its modern form."
+ },
+ {
+  "key": "h12",
+  "spoken": "That year he also noted that the third law fits Jupiter's four bright moons."
+ },
+ {
+  "key": "n1",
+  "spoken": "But why should planets obey these rules at all? The answer came from Isaac Newton."
+ },
+ {
+  "key": "n2",
+  "spoken": "In sixteen eighty-four he proved that anything pulled toward a fixed centre sweeps out equal areas in equal times."
+ },
+ {
+  "key": "n3",
+  "spoken": "His proof, in the Principia of sixteen eighty-seven, is beautifully simple. Imagine the pull comes in short, sharp tugs."
+ },
+ {
+  "key": "n4",
+  "spoken": "With no pull, the planet goes straight, covering equal distances in equal times."
+ },
+ {
+  "key": "n5",
+  "spoken": "Each step makes a triangle with the Sun. The same base and the same height give the same area."
+ },
+ {
+  "key": "n6",
+  "spoken": "Now a tug toward the Sun bends the path. But it pulls only along the line to the Sun."
+ },
+ {
+  "key": "n7",
+  "spoken": "So the new triangle keeps the same base and the same height as before. So it has the same area again."
+ },
+ {
+  "key": "n8",
+  "spoken": "Make the tugs smaller and more frequent, and the path becomes a smooth orbit. The areas stay equal."
+ },
+ {
+  "key": "n9",
+  "spoken": "Notice that the proof never needed to know how strong the pull is. Any pull toward a centre will do."
+ },
+ {
+  "key": "n10",
+  "spoken": "Today we call this conservation of angular momentum."
+ },
+ {
+  "key": "n11",
+  "spoken": "The ellipse and the third law need more. They need a pull that weakens with the square of the distance, as gravity does."
+ },
+ {
+  "key": "z1",
+  "spoken": "Kepler never called these laws. That word first appeared in print in seventeen thirty-eight, in a book by Voltaire."
+ },
+ {
+  "key": "z2",
+  "spoken": "The tidy set of three came later still, in eighteen oh four."
+ },
+ {
+  "key": "z3",
+  "spoken": "First, a planet's orbit is an ellipse, with the Sun at one focus."
+ },
+ {
+  "key": "z4",
+  "spoken": "Second, the line from the Sun sweeps equal areas in equal times."
+ },
+ {
+  "key": "z5",
+  "spoken": "Third, the period squared goes with the distance cubed."
+ },
+ {
+  "key": "z6",
+  "spoken": "And it's all because Kepler refused to ignore eight arcminutes."
+ },
+ {
+  "key": "z7",
+  "spoken": "So this January, when it's coldest in the north, remember that Earth is at its closest to the Sun, and moving fastest."
+ }
+]

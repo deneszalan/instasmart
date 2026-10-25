@@ -68,7 +68,14 @@
           "start": 71.6,
           "end": 78.67
         }
-      ]
+      ],
+      "ratings": { "complexity": 4, "shock": 6 }
+    },
+    {
+      "type": "explore",
+      "lab": "holbein-anamorphic-skull",
+      "prompt": "The skull is painted five times too wide. Change where you stand until it looks right, then try other stretches.",
+      "takeaway": "Seen at a grazing angle, the panel looks squashed by the sine of that angle, about 0.2 at 12°. Holbein’s 5× stretch and that squash cancel out, and the smear becomes a skull."
     },
     {
       "type": "image",

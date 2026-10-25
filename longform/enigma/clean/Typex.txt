@@ -1,0 +1,114 @@
+{{Short description|British cipher machine}}
+{{For|the correction fluid|Tipp-Ex}}
+{{Use dmy dates|date=September 2020}}
+[[File:Typex 22.jpg|thumbnail|right|upright=1.2|Typex was based on the commercial Enigma machine, but incorporated a number of additional features to improve the security. This model, a Typex 22, was a late variant, incorporating two plugboards.]]
+
+'''Typex''' (also spelled '''''Type X''''' or '''''TypeX''''') was the primary [[cipher machine]] used by the British military during World War II, and into the early Cold War. Based on the commercial [[Enigma machine|Enigma]], it was significantly enhanced to increase its security, providing robust [[history of cryptography|encrypted]] military and government communications from 1937 throughout the late 1950s. New Zealand and other Commonwealth countries continued to use Typex well until early 1970s.
+
+== Description ==
+Like Enigma, Typex was a [[rotor machine]]. Typex came in a number of variations, but all contained five rotors, as opposed to three or four in the Enigma. Like the Enigma, the signal was sent through the rotors twice, using a "[[Reflector (cipher machine)|reflector]]" at the end of the rotor stack. On a Typex rotor, each electrical contact was doubled to improve reliability.
+
+Of the five rotors, typically the first two were stationary. These provided additional enciphering without adding complexity to the rotor turning mechanisms. Their purpose was similar to the plugboard in the Enigmas, offering additional randomization that could be easily changed. Unlike Enigma's plugboard, however, the wiring of those two rotors could not be easily changed day-to-day. Plugboards were added to later versions of Typex.
+
+The major improvement the Typex had over the standard Enigma was that the rotors in the machine contained multiple notches that would turn the neighbouring rotor. This eliminated an entire class of attacks on the system, whereas Enigma's fixed notches resulted in certain patterns appearing in the cyphertext that could be seen under certain circumstances.
+
+[[File:Typex nocase.jpg|right|thumbnail|upright=1.2|The Typex 23, pictured, was similar to the Mark 22, but modified for use with the Combined Cypher Machine (CCM).]]
+
+Some Typex rotors came in two parts, where a ''slug'' containing the wiring was inserted into a metal casing. Different casings contained different numbers of notches around the rim, such as 5, 7 or 9 notches. Each slug could be inserted into a casing in two different ways by turning it over. In use, all the rotors of the machine would use casings with the same number of notches. Normally five slugs were chosen from a set of ten.
+
+On some models, operators could achieve a speed of 20 words a minute, and the output ciphertext or plaintext was printed on paper tape. For some portable versions, such as the Mark III, a message was typed with the left hand while the right hand turned a handle.
+
+Several Internet Typex articles say that only [[Vaseline]] was used to lubricate Typex machines and that no other lubricant was used. Vaseline was used to lubricate the rotor disc contacts. Without this there was a risk of arcing which would burn the insulation between the contacts. For the rest of the machine two grades of oil (Spindle Oils 1 and 2) were used. Regular cleaning and maintenance was essential. In particular, the letters/figures cam-cluster [[Balata (latex)|balata]] discs had to be kept lubricated.{{citation needed|date=December 2012}}
+
+== History and development ==
+By the 1920s, the British Government was seeking a replacement for its [[book cipher]] systems, which had been shown to be insecure and which proved to be slow and awkward to use. In 1926, an inter-departmental committee was formed to consider whether they could be replaced with cipher machines. Over a period of several years and at large expense, the committee investigated a number of options but no proposal was decided upon. One suggestion was put forward by Wing Commander [[Oswyn G. W. G. Lywood]] to adapt the commercial Enigma by adding a printing unit but the committee decided against pursuing Lywood's proposal.
+
+[[File:Typex-Mk-III.jpg|thumb|Typex Mk III was a portable version powered by a handle.]]
+
+In August 1934, Lywood began work on a machine authorised by the [[Royal Air Force|RAF]]. Lywood worked with J. C. Coulson, Albert P. Lemmon, and Ernest W. Smith at [[Kidbrooke]] in [[Greenwich]], with the printing unit provided by [[Creed & Company]]. The first prototype was delivered to the [[Air Ministry]] on 30 April 1935. In early 1937, around 30 Typex Mark I machines were supplied to the RAF. The machine was initially termed the "RAF Enigma with Type X attachments".
+
+The Typex Mark II and the more compact Mark III and VI are the most widely described but several distinct Typex models were developed over its operational lifespan.
+
+The development of Typex Mark II, the successor to the original Typex cipher machine, began in February 1937. By June 1938, the '''Typex Mark II''' was demonstrated to the cipher-machine committee, who approved an order for 350 units. The Mark II was significantly larger than the Enigma, weighing approximately {{cvt|120|lb|kg}} and measuring {{cvt|30|in|mm}} × {{cvt|22|in|mm}} × {{cvt|14|in|mm}} due to the incorporation of two printers: one for plaintext and one for [[ciphertext]]. Following successful trials, After trials, the machine was adopted by the RAF, Army and other government departments. During [[World War II]], a large number of Typex machines were manufactured by the tabulating machine manufacturer [[Powers-Samas]].
+
+'''Typex Mark III''' was a more portable variant, using the same drums as the Mark II machines powered by turning a handle (it was also possible to attach a motor drive). The maximum operating speed is around 60 letters a minute, significantly slower than the 300 achievable with the Mark II.
+
+'''Typex Mark VI''' was another handle-operated variant, measuring {{cvt|20|in|mm}} × {{cvt|12|in|mm}} × {{cvt|9|in|mm}}, weighing {{cvt|30|lb|kg}} and consisting of over 700 components.
+
+Plugboards for the reflector were added to the machine from November 1941.
+
+For inter-Allied communications during [[World War II]], the [[Combined Cipher Machine]] (CCM) was developed, used in the [[Royal Navy]] from November 1943. The CCM was implemented by making modifications to Typex and the United States [[ECM Mark II]] machine so that they would be compatible.
+
+'''Typex Mark VIII''' was a Mark II fitted with a morse perforator.
+
+'''Typex 22''' (BID/08/2) and '''Typex 23''' (BID/08/3) were late models, that incorporated plugboards for improved security. Mark 23 was a Mark 22 modified for use with the CCM. In [[New Zealand]], Typex Mark II and Mark III were superseded by Mark 22 and Mark 23 on 1 January 1950. The Royal Air Force used a combination of the Creed Teleprinter and Typex until 1960. This amalgamation allowed a single operator to use punch tape and printouts for both sending and receiving encrypted material.
+
+Typex machines were modified to have the same inner wirings as the Enigma machine to routinely decipher Enigma messages at [[Bletchley Park|Bletchey Park]].
+
+[[Ralph Erskine (historian)|Ralph Erskine]] estimates that around 12,000 Typex machines were built by the end of World War II.
+
+== Security and use ==
+Less than a year into the war, the Germans could read all British military encryption other than Typex, which was used by the British armed forces and by Commonwealth countries including Australia, Canada and New Zealand. The [[Royal Navy]] decided to adopt the RAF Type X Mark II in 1940 after trials; eight stations already had Type X machines. Eventually over 600 machines were required. New Zealand initially got two machines at a cost of £115 (GBP) each for Auckland and Wellington.
+
+From 1943 the Americans and the British agreed upon a [[Combined Cipher Machine]] (CCM). The British Typex and American [[ECM Mark II]] could be adapted to become interoperable. While the British showed Typex to the Americans, the Americans never permitted the British to see the ECM, which was a more complex design. Instead, attachments were built for both that allowed them to read messages created on the other.
+
+In 1944 the Admiralty decided to supply 2 CCM Mark III machines (the Typex Mark II with adaptors for the American ECM) for each "major" war vessel down to and including corvettes but not submarines; RNZN vessels were the ''[[HMNZS Achilles (70)|Achilles]]'', ''[[HMNZS Arabis (K385)|Arabis]]'' (then out of action), ''[[HMNZS Arbutus (K403)|Arbutus]]'', ''[[HMS Gambia (48)|Gambia]]'' and ''Matua''.
+
+Although a British test cryptanalytic attack made considerable progress, the results were not as significant as against the Enigma, due to the increased complexity of the system and the low levels of traffic.
+
+A Typex machine without rotors was captured by German forces at [[Dunkirk]] during the [[Battle of France]] and more than one German cryptanalytic section proposed attempting to crack Typex; however, the ''[[B-Dienst]]'' codebreaking organisation gave up on it after six weeks, when further time and personnel for such attempts were refused.
+
+One German cryptanalyst stated that the Typex was more secure than the Enigma since it had seven rotors, therefore no major effort was made to crack Typex messages as they believed that even the Enigma's messages were unbreakable.
+
+Although the Typex has been attributed as having good security, the historic record is much less clear. There was an ongoing investigation into Typex security that arose out of German POWs in North Africa claiming that Typex traffic was decipherable.
+
+A brief excerpt from the report
+<blockquote>TOP SECRET U [ZIP/SAC/G.34]
+THE POSSIBLE EXPLOITATION OF TYPEX BY THE GERMAN SIGINT SERVICES
+
+The following is a summary of information so far received on German attempts to break into the British Typex machine, based on P/W interrogations carried out during and subsequent to the war. It is divided into (a) the North African interrogations, (b) information gathered after the end of the war, and (c) an attempt to sum up the evidence for and against the possibility of German successes.
+
+Apart from an unconfirmed report from an agent in France on 19 July 1942 to the effect that the GAF were using two British machines captured at DUNKIRK for passing their own traffic between BERLIN and GOLDAP, our evidence during the war was based on reports that OKH was exploiting Typex material left behind in TOBRUK in 1942.</blockquote>
+
+Typex machines continued in use long after World War II. The [[New Zealand]] military used TypeX machines until the early 1970s, disposing of its last machine in about 1973.
+
+== Advantages over Enigma ==
+All the versions of the Typex had advantages over the German military versions of the Enigma machine. The German equivalent teleprinter machines in World War II (used by higher-level but not field units) were the [[Lorenz SZ 40/42]] and [[Siemens and Halske T52]] using [[Fish cyphers]].
+
+* Most versions of the Enigma required two operators to operate effectively—one operator to input text into the Enigma and the other to copy down the enciphered or deciphered characters—Typex required just one operator.
+* Typex avoided operator copying errors, as the enciphered or deciphered text was automatically printed on paper tape.
+* Unlike Enigma, Typex I machines were linked to teleprinters while Typex II machines could be if required.
+* Enigma messages had to be written, enciphered, transmitted (by Morse), received, deciphered, and written again, while Typex messages were typed and automatically enciphered and transmitted all in one step, with the reverse also true.
+
+== See also ==
+* [[Cryptanalysis of the Enigma]]
+* [[Cryptanalysis of the Lorenz cipher]]
+*[[Mercury (cipher machine)|Mercury]] (Typex Mark X)—a Typex descendant used for on-line traffic.
+
+== Citations ==
+{{reflist}}
+
+== General and cited references ==
+* {{cite book |last=Campbell-Kelly |first=Martin |title=ICL: A Business and Technical History |publisher=Oxford University Press |year=1990 |isbn=978-0-19-853918-6}}
+* {{cite journal |last=Clarkson |first=Dorothy |title=Cypher Machines: Maintenance and Restoration Spanning Sixty Years |journal=Cryptologia |volume=27 |issue=3 |date=July 2003 |pages=209–212 |doi=10.1080/0161-110391891883}}
+* {{cite book |last1=Deavours |first1=Cipher A. |last2=Kruh |first2=Louis |title=Machine Cryptography and Modern Cryptanalysis |publisher=Artech House |year=1985 |pages=144–145, 148–150 |isbn=978-0-89006-161-9}}
+* {{cite journal |last=Erskine |first=Ralph |title=The Admiralty and Cipher Machines During the Second World War: Not So Stupid after All |journal=Journal of Intelligence History |volume=2 |issue=2 |date=Winter 2002|pages=49–68 |doi=10.1080/16161262.2002.10555069 }}
+* {{cite journal |last=Erskine |first=Ralph |title=The Development of Typex |journal=The Enigma Bulletin |volume=2 |year=1997 |pages=69–86}}
+* {{cite book |last=Ferris |first=John Robert |title=Intelligence and Strategy |publisher=Routledge |year=2005 |pages=153–165 |chapter=The British "Enigma": Britain, signals security and cipher machines, 1906-1953 |isbn=978-0-415-36195-8 |chapter-url=https://archive.org/details/intelligencestra00ferr/page/n161 |chapter-url-access=limited}}
+* {{cite journal |last1=Kruh |first1=Louis |last2=Deavours |first2=C. A. |title=The Typex Cryptograph |journal=Cryptologia |volume=7 |issue=2 |year=1983 |pages=145–167 |doi=10.1080/0161-118391857874}}
+* {{cite web |last=Mogon |first=Eric |title=The History of Communications Security in New Zealand, Part 1 |url=http://www.gcsb.govt.nz/infosec/infos_hist.pdf |archive-url=https://web.archive.org/web/20061004041222/http://www.gcsb.govt.nz/infosec/infos_hist.pdf |archive-date=4 October 2006 |access-date=5 July 2025}}
+* {{cite book |last=Ratcliff |first=Rebecca Ann |title=Delusions of Intelligence |publisher=Cambridge University Press |year=2006 |isbn=0-521-85522-5}}
+
+== External links ==
+{{Commons}}
+* {{cite web |url=https://www.scienceandsociety.co.uk/results.asp?txtkeys1=Creed |title=A series of photographs of a Typex Mk III |website=Science and Society Picture Library |access-date=2025-07-07 |archive-url=https://web.archive.org/web/20250224075537/https://www.scienceandsociety.co.uk/results.asp?txtkeys1=Creed |archive-date=2025-02-24}}
+* {{cite web |url=http://www.jproc.ca/crypto/typex.html |title=Typex |last=Proc |first=Jerry |website=Jerry Proc's Crypto Pages |access-date=2025-07-07 |archive-url=https://web.archive.org/web/20220426074743/http://www.jproc.ca/crypto/typex.html |archive-date=2022-04-26}}
+* {{cite web |url=http://www.hut-six.co.uk/typex/ |title=Typex graphical simulator |website=Hut Six |quote=Graphical simulator for Microsoft Windows |access-date=2025-07-07 |archive-url=https://web.archive.org/web/20180922175345/http://www.hut-six.co.uk/typex/ |archive-date=2018-09-22}}
+* {{cite web |url=https://typex.virtualcolossus.co.uk/ |title=Virtual Typex online simulator |website=Virtual Colossus |quote=Online simulator |access-date=2025-07-07 |archive-url=https://web.archive.org/web/20220519184219/https://typex.virtualcolossus.co.uk/typex.html |archive-date=2022-05-19}}
+* {{cite web |url=https://www.cryptomuseum.com/crypto/uk/typex/index.htm |title=Typex |website=Crypto Museum |access-date=2025-07-07 |archive-url=https://web.archive.org/web/20250616161003/https://cryptomuseum.com/crypto/uk/typex/index.htm |archive-date=2025-06-16}}
+
+{{Cryptography navbox | machines}}
+
+[[Category:Cryptographic hardware]]
+[[Category:Rotor machines]]
+[[Category:World War II military equipment of the United Kingdom]]

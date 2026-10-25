@@ -101,7 +101,7 @@ describe('video slides', () => {
       source: { label: 'Wikipedia: Venus', url: 'https://en.wikipedia.org/wiki/Venus' },
       slides: [slide],
     });
-  const slide = { type: 'video', src: 'launch.mp4', poster: 'launch.jpg', alt: 'A rocket lifts off.', credit: 'NASA · Public domain · excerpt' };
+  const slide = { type: 'video', src: 'launch.mp4', poster: 'launch.jpg', alt: 'A rocket lifts off.', credit: 'NASA · Public domain · excerpt', ratings: { complexity: 3, shock: 5 } };
   const JPG = new Uint8Array([0xff, 0xd8, 0xff, 0xe0, 0, 0, 0, 0]);
   const check = (s: object, clip: Uint8Array) =>
     validateContent([
@@ -109,6 +109,14 @@ describe('video slides', () => {
       { path: 'content/media/space-test-post/launch.mp4', bytes: clip },
       { path: 'content/media/space-test-post/launch.jpg', bytes: JPG },
     ] satisfies ContentFile[]).problems.map((p) => p.message);
+
+  it('needs whole-number ratings from 1 to 10', () => {
+    const { ratings: _, ...unrated } = slide;
+    expect(check(unrated, mp4({ audio: null })).join()).toMatch(/ratings/);
+    expect(check({ ...slide, ratings: { complexity: 0, shock: 5 } }, mp4({ audio: null })).join()).toMatch(/complexity/);
+    expect(check({ ...slide, ratings: { complexity: 3, shock: 11 } }, mp4({ audio: null })).join()).toMatch(/shock/);
+    expect(check({ ...slide, ratings: { complexity: 3.5, shock: 5 } }, mp4({ audio: null })).join()).toMatch(/complexity/);
+  });
 
   it('needs a music credit exactly when the clip has sound', () => {
     expect(check({ ...slide, music: '“Track” Artist (example.org) · CC BY 4.0' }, mp4())).toEqual([]);

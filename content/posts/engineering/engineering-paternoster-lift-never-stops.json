@@ -20,7 +20,8 @@
       "fit": "cover",
       "credit": "Stefan.lefnaer · CC BY-SA 4.0 · excerpt",
       "href": "https://commons.wikimedia.org/wiki/File:Paternoster_im_Wiener_Rathaus_sl1.webm",
-      "music": "“Balloon Game” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Balloon Game” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 2, "shock": 5 }
     },
     {
       "type": "reveal",

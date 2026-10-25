@@ -78,7 +78,14 @@
           "start": 77.33,
           "end": 83.2
         }
-      ]
+      ],
+      "ratings": { "complexity": 6, "shock": 5 }
+    },
+    {
+      "type": "explore",
+      "lab": "mendel-pea-ratios",
+      "prompt": "Cross a round RR pea with a wrinkled rr one, then cross two of their Rr children. Grow 1,000 seeds: how close to 3 to 1 do you get?",
+      "takeaway": "RR × rr gives only round Rr seeds. Rr × Rr gives rr one time in four, so about 3 round to 1 wrinkled; small harvests wander, big ones settle near it, as Mendel’s 2.96 to 1 did."
     },
     {
       "type": "text",

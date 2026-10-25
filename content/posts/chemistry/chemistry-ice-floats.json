@@ -66,7 +66,14 @@
           "start": 61.07,
           "end": 67.73
         }
-      ]
+      ],
+      "ratings": { "complexity": 5, "shock": 3 }
+    },
+    {
+      "type": "explore",
+      "lab": "ice-floats",
+      "prompt": "Start the winter and watch the lake turn over, then freeze on top. Check the bottom water, then see what would happen if ice sank.",
+      "takeaway": "Water is densest at 4 °C, so the whole lake cools to 4 °C before the top gets colder, lighter and freezes. Floating ice shields the water below; if it sank, the lake would freeze from the bottom up."
     },
     {
       "type": "text",

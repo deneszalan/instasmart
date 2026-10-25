@@ -1,0 +1,15 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: Then electrons, atoms and molecules turned out to do exactly the same.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: And a record of the path, of any kind, wipes the stripes away.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: And it all comes from a wall with two slits in it.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERB: With two slits, a screen, and one dot at a time, it's still the clearest view we have of the quantum world.

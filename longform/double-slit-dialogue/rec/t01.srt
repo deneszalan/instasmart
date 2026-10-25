@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: Imagine we fire tiny particles, one at a time, at a wall with two narrow slits in it.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: And each one that gets through lands on the screen behind as a single dot.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: At first, the dots seem to land almost anywhere.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERB: Just random, then?
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: Keep going, though, and they sort themselves into stripes.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERB: Stripes like these are what waves make when they overlap.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: But we sent particles.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERB: So what actually went through the slits? Was it a particle, or a wave?
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: That's the puzzle at the centre of the double-slit experiment.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERB: People argued for centuries about what light actually is.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: In his Treatise on Light, of sixteen ninety, Christiaan Huygens described light as a wave.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERB: And Isaac Newton's Opticks, from 1704, leaned toward particles.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: In later editions he asked, are not the rays of light very small bodies, emitted from shining substances?
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERB: So tiny bodies fly out of anything that shines.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: And Newton's reputation was so great that, through the eighteenth century, the particle view held a wide lead.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: So how would you even tell a wave from a stream of particles?
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: Send particles through two slits, and you'd expect two bright bands, one behind each slit.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERA: But waves can do something particles can't. When two meet, they can add up, or cancel out.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERB: Cancel out? Two waves can add up to nothing?
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERA: Crest on crest makes a bigger wave; crest on trough makes nothing at all. That's interference.

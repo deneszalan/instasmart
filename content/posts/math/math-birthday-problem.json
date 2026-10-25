@@ -74,7 +74,14 @@
           "start": 71.2,
           "end": 78.13
         }
-      ]
+      ],
+      "ratings": { "complexity": 7, "shock": 9 }
+    },
+    {
+      "type": "explore",
+      "lab": "birthday-problem",
+      "prompt": "Drag the number of people and find the smallest room where a shared birthday is more likely than not. Then fill a few rooms to test it.",
+      "takeaway": "23 people: 50.7%. Your own birthday is rarely the one shared (only 5.9% at 23); the match comes from the 253 pairs among everyone else."
     },
     {
       "type": "text",

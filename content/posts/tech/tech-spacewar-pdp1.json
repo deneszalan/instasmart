@@ -19,7 +19,8 @@
       "caption": "A restored PDP-1 at the Computer History Museum runs Spacewar!: two ships swing around the central star, trailing green streaks, against a field of stars.",
       "credit": "Kenneth Lu · CC BY 3.0 · excerpt",
       "href": "https://commons.wikimedia.org/wiki/File:Restored_PDP-1_Demonstration.webm",
-      "music": "“Bit Shift” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Bit Shift” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 2, "shock": 4 }
     },
     {
       "type": "stat",

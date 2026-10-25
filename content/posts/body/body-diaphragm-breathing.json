@@ -19,7 +19,8 @@
       "caption": "Real-time MRI of a chest: the heart beats in the middle. During one deep breath the dark lungs expand as the diaphragm, and the liver under it, move down.",
       "credit": "Biomedizinische NMR Forschungs GmbH · CC BY-SA 3.0 · excerpt",
       "href": "https://commons.wikimedia.org/wiki/File:Real-time_MRI_-_Thorax.ogv",
-      "music": "“Sincerely” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Sincerely” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 4, "shock": 3 }
     },
     {
       "type": "flow",

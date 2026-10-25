@@ -69,7 +69,14 @@
           "start": 74.13,
           "end": 83.2
         }
-      ]
+      ],
+      "ratings": { "complexity": 6, "shock": 5 }
+    },
+    {
+      "type": "explore",
+      "lab": "heart-pacemaker-sinoatrial-node",
+      "prompt": "Speed the pacemaker up and slow it down, watching the spark, the pause at the AV node and the ECG. Then stop the SA node.",
+      "takeaway": "Each beat starts at the SA node and pauses at the AV node before the ventricles fire: the P wave, then the QRS. When the node stops, slower cells further down take over, here at 45 a minute, with no P waves."
     },
     {
       "type": "flow",

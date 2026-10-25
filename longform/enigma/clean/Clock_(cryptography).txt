@@ -1,0 +1,144 @@
+{{Short description|Method for decrypting German Enigma ciphers}}
+{{Cipher Bureau}}
+{{EnigmaSeries}}
+In [[cryptography]], the '''clock''' was a method devised by [[Poland|Polish]] mathematician-cryptologist [[Jerzy Różycki]], at the [[Polish General Staff]]'s [[Biuro Szyfrów|Cipher Bureau]], to facilitate [[decryption|decrypting]] German [[Enigma machine|Enigma]] [[cipher]]s. 
+
+The method determined the rightmost rotor in the German Enigma by exploiting the different turnover positions. For the Poles, learning the rightmost rotor reduced the rotor-order search space by a factor of 3 (the number of rotors). 
+
+The British subsequently improved the method, allowing them to use their limited number of bombes more effectively (the British confronted 5 to 8 rotors).
+
+==Method==
+This method sometimes made it possible to determine which of the [[Enigma machine's rotors]] was at the far right, that is, in the position where the rotor always revolved at every depression of a key. The clock method was developed by Jerzy Różycki during 1933&ndash;1935.
+
+[[Marian Rejewski]]'s [[Grill (cryptology)|grill method]] could determine the right-hand rotor, but that involved trying each possible rotor permutation (there were three rotors at the time) at each of its 26 possible starting rotations. The grill method tests were also complicated by the plugboard settings. In contrast, the clock method involved simple tests that were unaffected by the plugboard.
+
+In the early 1930s, determining the rotor order was not a significant burden because the Germans used the same rotor order for three months at a time. The rotor order could be determined once, and then that order could be used for the next three months. On 1 February 1936, the Germans changed the rotor order every month. On 1 November 1936, the Germans changed the rotor order every day.
+
+Różycki's "clock" method was later elaborated by the British cryptologist [[Alan Turing]] at [[Bletchley Park]] in the development of a cryptological technique called "[[Banburismus]]."
+
+===Background===
+The Cipher Bureau received German radio intercepts enciphered by the Enigma machine. With about 60 messages, the Bureau could determine [[Marian Rejewski]]'s ''characteristic structure'' for the message key encoding. By exploiting poor message keys, the Bureau could determine the message key encoding. At that point, the cryptanalysts may know only the message keys and their ciphertext. They may not know the other secrets of the daily key such as the plugboard setting, the ring settings, the rotor order, or the initial setting. With such little information and some luck, the Poles could still determine which rotor was the rightmost.
+
+In the daily traffic, there might be about a dozen message pairs whose message key starts with the same two letters. That means the left and middle rotors are in the same position.
+
+There are two ways to align the ciphertexts of the message pair. Both alignments are tried; one of the alignments will use an identical polyalphabetic substitution. From that, the cryptanalyst can determine the rotor turnover happened within a particular range of letters.
+
+The rotors had different turnover positions. The British used the mnemonic "Royal Flags Wave Kings Above", which meant Rotor I turned over at R, Rotor II turned over at F, Rotor III turned over at W, Rotor IV turned over at K, and all other rotors turned over at A.
+
+If the message pairs cooperated, the Poles could narrow the window where the turnover happens to include only one rotor. One message pair might say the turnover happened in the window B to U; that meant rotors I (R), II (F), and IV (K) were viable. A second message pair might produce a window of M to C; that meant rotors I (R), III (W), V+ (A) were viable. Only Rotor I satisfies both message pairs, so Rotor I is the right-hand rotor.
+
+===Machine settings===
+The Enigma cipher machine relied on the users having some shared secrets.  Here are the secret daily settings from a 1930 Enigma manual:
+<pre>
+Daily settings (shared secret):
+  Rotor Order  : II  I  III
+  Ringstellung : 24  13  22 (XMV)
+  Reflector    : A
+  Plugboard    : A-M, F-I, N-V, P-S, T-U, W-Z
+  Grundstellung: 06  15  12 (FOL)
+</pre>
+
+The daily settings told the code clerks how to configure the machine so message could be exchanged.  Initially, the machine had three rotors that could be arranged in any order (the wheel order or rotor order).  Each rotor had a ring with numbers or letters on it, and that ring could be in any of 26 positions.  A plugboard interchanged additional characters.
+
+For each message, the operator would choose a three-letter message key to encrypt the body of the message.  The intention was for this key to be random, and using a random key for each message was a good security practice.  The message key needed to be communicated to the recipient so the recipient could decrypt the message.
+
+Instead of sending the message keys in the clear, the message keys would be encrypted with the ''Grundstellung'' (ground setting).  In a grave procedural mistake, the Germans encrypted the message key twice.  If the message key were "ABL", then the Germans would encrypt the doubled key "ABLABL" and send the result ("PKPJXI"). Sending the message key twice allowed keys garbled in transmission to be recovered, but the cryptographic mistake was encrypting the doubled key rather than sending the encrypted key twice (e.g., "PKPPKP").  The doubled key gave the Poles an attack.  If there were sufficient message traffic using the same daily key (about 70 messages) and the code clerks used weak keys (such as "CCC" or "WER"), then the Poles could use Rejewski's method of characteristics to determine all the day's message keys. Surprisingly, the Poles cracked the message keys without learning the substantial secrets of the daily machine settings: the plugboard settings, the rotor order, the rotor positions, or the ring settings.
+
+The Poles had to use other techniques to get those remaining secrets; the clock method helped determine the rotor order.
+
+[[File:Enigma rotor.jpg|thumb|upright=2|Enigma rotors. Turnover notch can be seen in left rotor near 13. Right rotor marking near center shows it is rotor II.]]
+
+===Different rotors have different turnover positions===
+{{main|Enigma rotor details}}
+
+The clock method exploited the three rotors (I, II, III) having different [[Enigma machine#Turnover|turnover positions]].  The rightmost rotor moved as each character was enciphered.  At a certain position on the ring, enciphering the character would also cause the next rotor to the left to move one position (a turnover).  The ring position that caused the next rotor to move was different for each rotor:  rotor I advanced at the Q-R transition ("royal"); rotor II advanced at E-F ("flags"); rotor III advanced at V-W ("wave").  If the turnover could be detected, then the rightmost rotor might be identified.
+
+The Poles, because they cracked the message key, knew the ring positions for each message because the ring positions were the message key.
+
+With sufficient traffic, the Poles would find message keys that started with the same two characters. Say the Poles received messages with keys "AAA" and "AAT".
+<pre>
+Message Key AAA: BQWBOCKUQFPQDJTMFTYSRDDQEQJWLPTNMHJENUTPYULNPRTCKG
+Message Key AAT: SRDDQEQJWLPTNMHJENUTPYULNPRTCKGFHWQJTVQROVULGDMNMX
+</pre>
+
+===Index of coincidence===
+Using the [[index of coincidence]] on a long enough message, the Poles could determine where the rotor settings coincide. That determination is statistical, but it is also subtle. It exploits the [[discrete uniform distribution|nonuniform]] [[letter frequency]] in a language. Consider two sentences with their letters aligned. If letters had the same frequency, then a letter in the first sentence would match the letter in the same position of the second sentence with probability 1/26 (0.038).  For natural languages, characters such as "e" are much more likely, so the chance of coincidence much higher. Here's a case where there are six coincidences in the first 28 characters (much more than the expected 1.73 matches per 26 characters):
+
+<pre>
+WEHOLDTHESETRUTHSTOBESELFEVIDENT
+WHENINTHECOURSEOFHUMANEVENTS
+*     ***   *         *
+</pre>
+
+The index of coincidence also holds true if the two strings being compared are encrypted under the same polyalphabetic key; if the characters are equal, then their encryptions are also equal.  Conversely, if the strings are encrypted under a different polyalphabetic key, the strings will be randomized and the index of coincidence will show only random matches (1 out of 26 characters will match).
+
+If the two strings are long enough (say 260 characters), then the index of coincidence will give an indication whether the strings were encrypted under the same polyalphabetic key (i.e., the same rotor configuration).
+
+===Rotor position and coincidence===
+To emphasize the index of coincidence to an absurd level, the two example messages above consist entirely of the letter "A", so the coincidences occur at every position that shares the same rotor positions (something that would not happen for normal messages). That allows the coincidence to be starkly obvious even in a short message. In practice, long messages are needed to get a good statistical indication.
+
+The Poles searched the daily traffic to find a pair of messages whose keys started the same two letters. Example key pairs would be ("UIB", "UIW") or ("GCE", "GCX"). The chance that first two letters of a message key match another message's key is small ({{math|1=1/(26×26)=1/676}}), but finding such a pair in a set of messages can be likely; finding such a match is an example of the [[birthday problem]].
+
+The Poles wanted the first two letters to match because that meant the left and middle rotors were at identical rotations and would produce the same permutation. The Poles could also align the two messages to account for the differing third letter of the key. Given the ("AAA", "AAT") example pair from above, the Poles knew there were two possible ways the messages could be aligned so that the messages shared a common key (common rotor rotations). The two cases reflect whether the turnover (movement of the middle rotor) happens between "A" and "T" or between "T" and "A".
+
+<pre>
+                 A                  T
+right rotor pos: ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ
+Message Key AAA:  BQWBOCKUQFPQDJTMFTYSRDDQEQJWLPTNMHJENUTPYULNPRTCKG
+Message Key AAT:                     SRDDQEQJWLPTNMHJENUTPYULNPRTCKGFHWQJTVQROVULGDMNMX
+Coincidence:                         ===============================
+Conclusion: same key, so no turnover in A-T.
+</pre>
+
+<pre>
+                 T      A
+right rotor pos: TUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRS
+Message Key AAT:  SRDDQEQJWLPTNMHJENUTPYULNPRTCKGFHWQJTVQROVULGDMNMX
+Message Key AAA:         BQWBOCKUQFPQDJTMFTYSRDDQEQJWLPTNMHJENUTPYULNPRTCKG
+Coincidence:   
+Conclusion: different key, so turnover in T-A                                                    
+</pre>
+
+The middle rotor will turnover at different positions depending upon which rotor is in the rightmost (fast) position.  The change points for rotors I, II, and III are indicated by 1, 2, and 3. The position of the middle rotor is given assuming the right rotor is I, II, or III.
+<pre>
+Message Key AAA: BQWBOCKUQFPQDJTMFTYSRDDQEQJWLPTNMHJENUTPYULNPRTCKG
+turnover             2           1    3        2           1    3
+Right           ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXY
+Middle(I)       AAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCC
+Middle(II)      AAAAABBBBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCC
+Middle(III)     AAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBCCC
+
+Message Key AAT:                    SRDDQEQJWLPTNMHJENUTPYULNPRTCKGFHWQJTVQROVULGDMNMX
+turnover                              3        2           1    3
+Right                              TUVWXYZABCDEFGHIJKLMNOPQRSTUVWXY
+Middle(I)                          AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+Middle(II)                         AAAAAAAAAAAABBBBBBBBBBBBBBBBBBBB
+Middle(III)                        AAABBBBBBBBBBBBBBBBBBBBBBBBBBCCC
+</pre>
+For the language-based coincidences to occur, all three rotors must be in sync. If they are not, then the plaintext would be randomly scrambled and the language properties would not show through. Looking at the region where the coincidence occurs, some observations can be made. If rotor I was on the right, then the middle rotor never matches and the index of coincidence would not indicate a coincidence.  If rotor II was on the right, then the middle rotor would also never match.  Rotor III shows complete agreement.  Consequently, the rightmost rotor would be rotor III.
+
+At this point, the Poles would know the right rotor is III and the rotor order is either (I, II, III) or (II, I, III). Although they knew the message key, they did not know the ring settings, so they did not know the absolute positions of the rotors. They also did not know the plugboard settings. The Poles could use other methods to learn that information, but those methods would be simplified by knowing the right rotor.
+
+==Utility==
+Early on, the clock method was not very important.  In 1932, the Germans kept the same rotor order for three months at a time.  On 1 February 1936, the Germans changed the rotor order every month. Daily wheel order changes started 1 November 1936.
+
+In October 1936, the Germans increased the number of plugs from six to eight, and that complicated the grill method.  The Poles developed the cyclometer and card catalog.  Although the new method was not ready for a year, it identified the entire rotor order (not just the right rotor) with little work.  Unfortunately, the catalog was rendered useless on 2 November 1937 when the Germans changed the reflector; a new catalog needed to be made.
+
+On 15 September 1938, the Germans changed their procedures so that the messages on a network did not use the same ''Grundstellung''. The change would complicate the clock method because the message key was no longer easily known. <!-- It is not clear if the Poles extended the method; Rejewski only mentioned specific offsets; originator did not survive the war.-->
+
+The British codebreakers extended the clock method; see [[Banburismus]]. German naval Enigma messages used the same ''Grundstellung'', and the British codebreakers could determine the encrypted message keys. If all but the final letter of the encrypted keys matched, then they would have the same rotor positions except for the right rotor. The problem was the British were not matching plaintext message keys (as the Poles) but rather encrypted message keys, so the last letter of the encrypted message key did not have a natural "ABCDE...WXYZ" ordering but rather an arbitrary order. Rather than looking at just two offset, the British had to look at all the possible offsets and infer enough of the third wheel order before they could determine the right rotor. Correctly guessing the last rotor could save the British a lot of valuable Bombe time.
+
+==Notes==
+{{reflist|2}}
+
+==References==
+* {{Citation |last=Kozaczuk |first=Władysław |author-link=Władysław Kozaczuk |year=1984 |title=Enigma: How the German Machine Cipher Was Broken, and How It Was Read by the Allies in World War Two |editor-last=Kasparek |editor-first=Christopher |editor1-link=Christopher Kasparek |place=Frederick, Maryland |publisher=University Publications of America |isbn=978-0-89093-547-7}} A  revised and augmented translation of ''W kręgu enigmy'', [[Warsaw]], Książka i Wiedza, 1979, supplemented with appendices by [[Marian Rejewski]] 
+* {{citation |last=Rejewski |first=Marian |author-link=Marian Rejewski |title=How Polish Mathematicians Deciphered the Enigma |journal=Annals of the History of Computing |volume=3 |issue=3 |date=July 1981 |pages=213–234 |publisher=IEEE |doi=10.1109/MAHC.1981.10033|s2cid=15748167 }}<!-- title has "Deciphered" but doi says title has "Broke" -->
+* {{Citation |last=Rejewski |first=Marian |author-link=Marian Rejewski |year=1984 |contribution=The Mathematical Solution of the Enigma Cipher |title=Enigma: How the German Machine Cipher Was Broken, and How It Was Read by the Allies in World War Two |pages=Appendix E: 272–291 |editor-last=Kasparek |editor-first=Christopher |isbn=978-0-89093-547-7 }}
+* {{Citation  |last=Good |first=Jack |author-link=I. J. Good |year=1993 |contribution=Enigma and Fish |editor-last=Hinsley |editor-first=F. H. |editor-link=Harry Hinsley |editor2-last=Stripp |editor2-first=Alan |title=Codebreakers: The inside story of Bletchley Park |publication-place=Oxford |publisher=Oxford University Press |pages=149–166 |isbn=978-0-19-280132-6 }}
+
+{{Cryptography navbox}}
+
+[[Category:Cryptanalytic devices]]
+[[Category:Science and technology in Poland]]
+[[Category:Cipher Bureau (Poland)]]

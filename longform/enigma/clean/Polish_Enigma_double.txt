@@ -1,0 +1,51 @@
+{{Short description|Replication of the Enigma machine}}
+[[File:Polish copy of Enigma made by Biuro Szyfrow.jpg|thumb|upright=1.1|Prewar Polish ''Enigma'' double]]
+<!-- Unsourced image removed: [[File:Polish copy of Enigma made by Biuro Szyfrow .jpg|left|thumb|250px|"Double" of German [[Enigma machine]], built by the Poles in France in 1940.  1:  [[Typewriter keyboard|Keyboard]].  2:  [[Incandescent light bulb|Glowlamps]].  3:  Two alternate [[Rotor machine|rotor]]s.  4:  Entry ring.  5:  Three operational [[Rotor machine|rotor]]s.  6:  [[Reflector (cipher machine)|Reflector]].  7:  [[Plugboard]] (at opposite end from its location in German military Enigmas).]] -->
+A '''Polish Enigma "double"''' was a machine produced by the Polish [[Biuro Szyfrów]] that replicated the German [[Enigma machine]]. The Enigma double was one result of [[Marian Rejewski]]'s remarkable achievement of determining the wirings of the Enigma's rotors and reflectors.
+
+==First Polish double==
+The Polish Cipher Bureau realized that the Germans were using a new cipher. The Germans had mistakenly shipped a cipher machine to Poland; their attempts to recover the shipment raised the suspicions of Polish customs, and the Cipher Bureau learned that the Germans were using Enigma machines.  The Bureau purchased a commercial Enigma and  attempted, but failed, to break the cipher.
+
+In December 1932 the Cipher Bureau tasked [[Marian Rejewski]] with reconstructing the Enigma machine.  A French spy had obtained some material about the Enigma, and the French had provided the material to the Polish Cipher Bureau.  By then, for the purposes of the German military, the original commercial Enigma had been equipped with a plugboard.  Rejewski made rapid progress and was able to determine the wirings of the military Enigma.  The Bureau modified its commercial Enigma rotors, reflector, and internal wiring to match the military Enigma's.  
+
+The Cipher Bureau's commercial Enigma did not have a plugboard, but the plugboard could be simulated by relabeling the keys and  lamps. The result was the first Polish Enigma double.
+
+==AVA-made doubles==
+In February 1933, the Polish [[Biuro Szyfrów|Cipher Bureau]] ordered fifteen "doubles" of the military [[Enigma machine]] from the AVA Radio Manufacturing Company, in Warsaw. Ultimately, about seventy such functional replicas were produced.
+
+==Gift to Poland's Allies==
+In August 1939, following a tripartite meeting of Polish, French, and British cryptologists at Warsaw on 25–26 July 1939 – during which the Poles had explained all their Enigma-decryption methods and equipment – two Enigma replicas were passed to Poland's allies, one sent to Paris and one to London. 
+
+Earlier, German military Enigma traffic had totally defeated the French and British, and they had faced the prospect of being unable to read German communications during the coming war.
+
+==Polish doubles assembled in France==
+[[File:Polish Enigma double.jpg|thumb|upright=1.6|One of four Enigma doubles assembled in France in 1940, featuring ''ABCD'' keyboard layout.  In [[Józef Piłsudski Institute, London]].]]
+After [[Invasion of Poland (1939)|Germany invaded Poland]] in September 1939 and key Polish [[Polish Cipher Bureau]] personnel had been evacuated to [[France]], the Cipher Bureau resumed its interrupted work at ''[[PC Bruno]]'' outside [[Paris]]. The Poles had only three replica Enigmas to work with, two secretly taken out of Poland during the evacuation, and the one that had been sent to France after the July 1939 Warsaw conference, and these were wearing out from round-the-clock use.  
+
+[[French Army]] [[intelligence officer]] [[Gustave Bertrand]] ordered parts for forty machines from a French precision-mechanics firm.  Manufacture proceeded sluggishly, however, and it was only after the fall of France and the opening of underground work in southern France's [[Zone libre|Free Zone]] in October 1940 that four machines were finally assembled.
+
+==See also==
+{{Cipher Bureau}}
+{{Enigma series}}
+* [[Saxon Palace]] (in Polish, ''Pałac Saski''), in Warsaw, where German Enigma ciphers were first broken in December 1932.
+
+==Notes==
+{{reflist|30em}}
+
+==References==
+* {{cite book |title=Marian Rejewski, 1905-1980: Living with the Enigma Secret|last=Brzezinski |first=Zbigniew|author-link= Zbigniew Brzezinski|year= 2005|chapter=The Unknown Victors|publisher= Bydgoszcz City Council|location= Bydgoszcz|isbn=83-7208-117-4|pages=15–18|oclc=62701914}}
+* {{cite book |title= Enigma: How the German Machine Cipher Was Broken, and How It Was Read by the Allies in World War Two|last=Kozaczuk |first= Władysław|author-link=Władysław Kozaczuk |others=edited and translated by Christopher Kasparek |year= 1984|publisher= University Publications of America|location= Frederick, Maryland|isbn=0-89093-547-5 |oclc= 9826775|series=Foreign intelligence book series }}
+* {{cite journal |last=Woytak|first=Richard A.|author-link=Richard Woytak|others=transcribed and translated by Christopher Kasparek|date=January 1982 |title= A Conversation with Marian Rejewski|journal=[[Cryptologia]]|volume=6 |issue=1|pages=50–60|doi=10.1080/0161-118291856830}}
+
+==External links==
+* Slawo Wesolkowski, "[http://www.ieeeghn.org/wiki/images/b/bb/Wesolkowski.pdf The Invention of Enigma and How the Polish Broke It Before the Start of WWII]"<!-- overview; some errors-->
+* http://www.cryptomuseum.com/crypto/enigma/hist.htm has picture of Enigma double (http://www.cryptomuseum.com/crypto/enigma/polish/img/polish_enigma_1.jpg)
+* http://www.codesandciphers.org.uk/virtualbp/poles/poles.htm has picture of Enigma double
+
+{{Use dmy dates|date=March 2019}}
+{{Authority control}}
+
+[[Category:Cipher Bureau (Poland)]]
+[[Category:Enigma machine]]
+[[Category:History of cryptography]]
+[[Category:Science and technology in Poland]]

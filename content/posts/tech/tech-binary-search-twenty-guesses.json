@@ -74,7 +74,14 @@
           "start": 55.33,
           "end": 62
         }
-      ]
+      ],
+      "ratings": { "complexity": 5, "shock": 7 }
+    },
+    {
+      "type": "explore",
+      "lab": "binary-search-twenty-guesses",
+      "prompt": "Find my number from 1 to a million in 20 guesses or fewer. Tap Middle to guess the middle of what’s left.",
+      "takeaway": "Every middle guess throws away half of what’s left, and 2²⁰ is more than a million, so 20 guesses always reach a single number."
     },
     {
       "type": "chart",

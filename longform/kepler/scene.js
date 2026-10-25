@@ -221,12 +221,12 @@ function speedGraph(x0, y0, w, h, day, { alpha = 1, cursor = 1, marks = 0 } = {}
     const pts = [];
     for (let d = 0; d <= 365; d += 3) pts.push({ x: vx(d), y: vy(earthState(d).v) });
     poly(pts, false); ctx.strokeStyle = C.brassLight; ctx.lineWidth = 3; ctx.stroke();
-    label('KM/S', x0, y0 - 24, { color: C.ivoryFaint });
+    label('KM/S', x0 + w, y0 - 24, { color: C.ivoryFaint, align: 'right' });
     A(marks, () => {
       const pj = { x: vx(3), y: vy(V_MAX) }, pl = { x: vx(185), y: vy(V_MIN) };
       dot(pj.x, pj.y, 8, C.gold); dot(pl.x, pl.y, 8, C.steel);
       mono(fix(V_MAX, 1), pj.x + 20, pj.y - 18, { size: 40, w: 600, color: C.gold });
-      mono(fix(V_MIN, 1), pl.x, pl.y + 58, { size: 40, w: 600, color: C.steel, align: 'center' });
+      mono(fix(V_MIN, 1), pl.x, pl.y - 30, { size: 40, w: 600, color: C.steel, align: 'center' });
     });
     if (cursor > 0) A(cursor, () => {
       const d = ((day % 365) + 365) % 365, p = { x: vx(d), y: vy(earthState(d).v) };
@@ -378,28 +378,28 @@ const MARS_LOOP = (() => {
   let best = 0, bd = 1e9;
   for (let d = 400; d < 1200; d += 0.5) { const g = geoMars(d); const diff = Math.abs(((g.lon - g.sunLon - 180) % 360 + 540) % 360 - 180); if (diff < bd) { bd = diff; best = d; } }
   const pts = [];
-  for (let d = best - 150; d <= best + 150; d += 5) pts.push(geoMars(d));
+  for (let d = best - 110; d <= best + 110; d += 5) pts.push(geoMars(d));
   const l0 = geoMars(best).lon;
   return pts.map((g) => ({ dl: ((g.lon - l0 + 540) % 360) - 180, lat: g.lat }));
 })();
 function marsSky(t, a) {
   A(a, () => {
-    const cx = 560, cy = 470, px = 15; // pixels per degree
+    const cx = 560, cy = 470, px = 22, lat0 = -1.6; // pixels per degree, no stretch
     // a frame of sky
     k.rrect(110, 170, 900, 600, 18); ctx.fillStyle = 'rgba(3,6,15,0.55)'; ctx.fill(); ctx.strokeStyle = 'rgba(201,162,78,0.55)'; ctx.lineWidth = 1.5; ctx.stroke();
     ctx.save(); k.rrect(110, 170, 900, 600, 18); ctx.clip();
     const rnd = mulberry32(7);
     for (let i = 0; i < 90; i++) dot(110 + rnd() * 900, 170 + rnd() * 600, 0.6 + rnd() * 1.6, `rgba(246,236,214,${0.25 + rnd() * 0.5})`);
-    line(110, cy, 1010, cy, 'rgba(201,162,78,0.3)', 1.5, [8, 10]);
-    const n = Math.floor(MARS_LOOP.length * clamp(seg(t, s('t6', 0.2), e('t6', 1.2))));
+    line(110, cy + lat0 * px, 1010, cy + lat0 * px, 'rgba(201,162,78,0.35)', 1.5, [8, 10]);
+    const n = Math.floor(MARS_LOOP.length * clamp(seg(t, s('t6', 0.2), e('t6', 1.0))));
     for (let i = 0; i < n; i++) {
-      const p = MARS_LOOP[i], x = cx - p.dl * px, y = cy - p.lat * px * 2.2;
+      const p = MARS_LOOP[i], x = cx - p.dl * px, y = cy - (p.lat - lat0) * px;
       dot(x, y, i === n - 1 ? 9 : 5.5, i === n - 1 ? C.copper : 'rgba(232,135,90,0.75)');
     }
     ctx.restore();
     label('DIAGRAM · MARS’S PATH, COMPUTED', RX, 836, { color: C.ivoryFaint, size: 32, spacing: '1px' });
     label('ONE DOT EVERY 5 DAYS', RX, 880, { color: C.ivoryFaint, size: 32, spacing: '1px' });
-    mono('ecliptic', 1000, cy - 14, { size: 32, color: 'rgba(201,162,78,0.6)', align: 'right' });
+    mono('ecliptic', 136, cy + lat0 * px - 14, { size: 32, color: 'rgba(201,162,78,0.7)', align: 'left' });
   });
 }
 const PLACES = { hven: [55.91, 12.70], prague: [50.09, 14.42] };
@@ -520,7 +520,7 @@ function epicycles(t, a) {
     label('DIAGRAM · A CIRCLE CARRYING A CIRCLE', DC.x, 1000 - 36, { align: 'center', color: C.ivoryFaint, size: 32, spacing: '1px' });
   });
 }
-const VIC = { R: 320, sun: -0.11, eq: 0.09 }; // the vicarious hypothesis, drawn as a diagram
+const VIC = { R: 320, sun: -0.17, eq: 0.13 }; // the vicarious hypothesis, drawn as a diagram
 function vicPoint(theta) {
   // the planet on the circle, in direction theta as seen from the equant
   const qx = DC.x + VIC.eq * VIC.R, qy = DC.y, dx = Math.cos(theta), dy = -Math.sin(theta);
@@ -542,8 +542,8 @@ function vicarious(t, a, { wobble = 0, missing = 0 } = {}) {
     planet(p.x, p.y, 14, 'mars');
     const lb = eout(seg(t, s('m2', 1.0), s('m2', 2.0)));
     A(lb, () => {
-      mono('SUN', sun.x - 10, sun.y + 66, { size: 32, color: C.brassLight, align: 'center' });
-      mono('CENTRE', DC.x + 4, DC.y - 26, { size: 32, color: C.ivorySoft, align: 'center' });
+      mono('SUN', sun.x - 16, sun.y + 70, { size: 32, color: C.brassLight, align: 'center' });
+      mono('CENTRE', DC.x + 4, DC.y - 30, { size: 32, color: C.ivorySoft, align: 'center' });
       mono('EQUANT', eq.x + 12, eq.y + 50, { size: 32, color: C.steel, align: 'left' });
     });
     A(missing, () => {
@@ -564,7 +564,7 @@ function reticle(t, a, sepArcmin) {
     ctx.restore();
     ctx.strokeStyle = C.brass; ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(DC.x, DC.y, R, 0, TAU); ctx.stroke();
     for (let i = 0; i < 72; i++) { const an = (i / 72) * TAU, l = i % 6 === 0 ? 18 : 8; line(DC.x + Math.cos(an) * R, DC.y + Math.sin(an) * R, DC.x + Math.cos(an) * (R - l), DC.y + Math.sin(an) * (R - l), C.brass, i % 6 === 0 ? 2 : 1); }
-    mono('MOON’S SIZE, FOR SCALE', DC.x - 60, DC.y + 40 + 15.5 * px - 24, { size: 32, color: 'rgba(243,238,223,0.5)', align: 'center' });
+    mono('THE MOON, FOR SCALE', DC.x - 60, DC.y + 40 + 15.5 * px - 34, { size: 32, color: 'rgba(243,238,223,0.55)', align: 'center' });
     const obs = { x: DC.x - 50, y: DC.y - 40 };
     const sep = sepArcmin * px, model = { x: obs.x + sep, y: obs.y };
     dot(obs.x, obs.y, 9, C.copper);
@@ -698,7 +698,7 @@ function partAreas(t) {
     line(x0, y0 + h, x0 + w, y0 + h, C.brass, 2); line(x0, y0, x0, y0 + h, C.brass, 2);
     const pts = []; for (let d = 0.55; d <= 2.5; d += 0.02) pts.push({ x: X(d), y: Y(1 / d) });
     poly(pts, false); ctx.strokeStyle = C.brassLight; ctx.lineWidth = 3; ctx.stroke();
-    mono('distance', x0 + w, y0 + h + 44, { size: 32, color: C.ivoryFaint, align: 'right' });
+    mono('distance', x0 + w, y0 + h + 92, { size: 32, color: C.ivoryFaint, align: 'right' });
     mono('speed', x0 - 16, y0 - 14, { size: 32, color: C.ivoryFaint, align: 'left' });
     const p = eout(seg(t, s('a2', 1.2), s('a2', 2.2)));
     A(p, () => {
@@ -710,9 +710,9 @@ function partAreas(t) {
   });
   A(span(t, s('a3'), s('a4'), 0.5, 0.45), () => {
     heading(RX, 230, 'TO FIND THE PLANET', 'Add up every distance', null, { size: 76 });
-    const str = 'r₁ + r₂ + r₃ + r₄ + r₅ + r₆ + …';
+    const str = 'r₁ + r₂ + r₃ + r₄ + r₅ + …';
     const n = Math.ceil(str.length * clamp(seg(t, s('a3', 0.5), e('a3'))));
-    mono(str.slice(0, n), RX, 520, { size: 52, color: C.steel });
+    mono(str.slice(0, n), RX, 520, { size: 44, color: C.steel });
     para('hopeless by hand', RX, 640, RW, { size: 48, italic: true, color: C.ivorySoft });
   });
   A(span(t, s('a4'), s('a5'), 0.5, 0.45), () => heading(RX, 230, 'LATE 1602 · A SHORTCUT', 'Measure the area', 'swept by the line from the Sun', { size: 88 }));
@@ -729,10 +729,14 @@ function partAreas(t) {
     };
     tri(RX + 40, 1, 2, C.gold, 'NEAR');
     tri(RX + 420, 2, 1, C.steel, 'FAR');
-    A(eout(seg(t, s('a6'), s('a6', 0.7))), () => { mono('½ × base × height', RX, 330, { size: 40, color: C.ivory }); mono('= 1   and   = 1', RX, 395, { size: 40, w: 600, color: C.gold }); });
+    A(eout(seg(t, s('a6'), s('a6', 0.7))), () => {
+      mono('area = ½ × base × height', RX, 330, { size: 40, color: C.ivory });
+      mono('½ × 2 × 1 = 1', RX + 160, 880, { size: 36, w: 600, color: C.gold, align: 'center' });
+      mono('½ × 1 × 2 = 1', RX + 480, 880, { size: 36, w: 600, color: C.steel, align: 'center' });
+    });
   });
   A(span(t, s('a7'), s('a8'), 0.5, 0.45), () => {
-    heading(RX, 230, 'KEPLER’S SECOND LAW', 'Equal areas in equal times', 'found before the first', { size: 84 });
+    heading(RX, 230, 'KEPLER’S SECOND LAW', 'Equal areas', 'in equal times · found before the first law', { size: 100, subSize: 44 });
   });
   A(span(t, s('a8'), DURATION, 0.5, 0), () => {
     label('TWO RULES', RX, 230);
@@ -740,7 +744,7 @@ function partAreas(t) {
     mono('speed ∝ 1 / distance', RX + 36, 350, { size: 44, w: 600, color: C.steel });
     para('only for orbits that are nearly circles', RX + 36, 420, RW - 70, { size: 44, italic: true, color: C.ivorySoft, lh: 52 });
     mono('equal areas', RX + 36, 640, { size: 44, w: 600, color: C.gold });
-    para('works for every orbit ✓', RX + 36, 710, RW - 70, { size: 44, italic: true, color: C.ivory });
+    para('works for every orbit', RX + 36, 710, RW - 70, { size: 44, italic: true, color: C.ivory });
   });
 }
 
@@ -844,7 +848,7 @@ function partEllipse(t) {
   });
   A(span(t, s('l10'), DURATION, 0.5, 0), () => {
     plate(RX + 40, 250, RW - 80, 560, { r: 20 });
-    label('PRAGUE · 1609', RX + RW / 2, 330, { align: 'center' });
+    label('PUBLISHED 1609', RX + RW / 2, 330, { align: 'center' });
     txt('Astronomia', RX + RW / 2, 470, { size: 104, w: 600, color: C.gold, align: 'center' });
     txt('nova', RX + RW / 2, 580, { size: 104, w: 600, italic: true, color: C.gold, align: 'center' });
     rule(RX + 200, RX + RW - 200, 630, 0.7);
@@ -1033,7 +1037,7 @@ function partFast(t) {
     A(eout(seg(t, s('f7'), s('f7', 0.7))), () => {
       plate(RX, 690, RW, 200, { r: 16 });
       txt('Northern spring and summer', RX + 34, 770, { size: 48, w: 600 });
-      txt(`about ${fix(HALF.summer - HALF.winter, 0)} days longer`, RX + 34, 836, { size: 46, italic: true, color: C.gold });
+      txt(`${fix(HALF.summer - HALF.winter, 1)} days longer: about a week`, RX + 34, 836, { size: 46, italic: true, color: C.gold });
     });
   });
   // f8: Mars
@@ -1084,15 +1088,15 @@ function partFast(t) {
     tg.addColorStop(0, 'rgba(220,235,255,0.7)'); tg.addColorStop(1, 'rgba(220,235,255,0)');
     line(cp.x, cp.y, cp.x + (tail.x / tl) * 90, cp.y + (tail.y / tl) * 90, tg, 6);
     planet(cp.x, cp.y, 9, 'comet');
-    label('HALLEY’S COMET · ORBITS TO SCALE, DRAWN FLAT', 1000, 1000 - 36, { align: 'center', color: C.ivoryFaint, size: 32, spacing: '1px' });
+    label('HALLEY’S COMET · ORBITS TO SCALE, DRAWN FLAT', 140, 1000 - 36, { color: C.ivoryFaint, size: 32, spacing: '1px' });
     // readouts, top left
     A(seg(t, s('f9', 0.6), s('f9', 1.4)), () => {
       label('DISTANCE FROM THE SUN', 140, 200, { color: C.ivoryFaint });
       mono(`${fix(r, r < 2 ? 2 : 1)} AU`, 140, 290, { size: 72, w: 600, color: C.ivory });
-      label('SPEED', 640, 200, { color: C.ivoryFaint });
-      mono(`${fix(v, v < 2 ? 2 : 1)} km/s`, 640, 290, { size: 72, w: 600, color: r > 20 ? C.steel : C.gold });
-      label('YEARS SINCE PERIHELION', 1140, 200, { color: C.ivoryFaint });
-      mono(fix(((tau % 1) + 1) % 1 * HAL.P, 1), 1140, 290, { size: 72, w: 600, color: C.ivory });
+      label('SPEED', 720, 200, { color: C.ivoryFaint });
+      mono(`${fix(v, v < 2 ? 2 : 1)} km/s`, 720, 290, { size: 72, w: 600, color: r > 20 ? C.steel : C.gold });
+      label('YEARS SINCE PERIHELION', 1200, 200, { color: C.ivoryFaint });
+      mono(fix(((tau % 1) + 1) % 1 * HAL.P, 1), 1200, 290, { size: 72, w: 600, color: C.ivory });
     });
     A(span(t, s('f9', 1.0), s('f11'), 0.5, 0.5), () => {
       mono('0.6 AU', sun.x - 20, sun.y + bpx * 0.15 + 120, { size: 32, color: C.gold, align: 'right' });
@@ -1133,7 +1137,7 @@ function partFast(t) {
     });
     A(span(t, s('f13', 0.4), DURATION, 0.5, 0), () => {
       plate(1040, 770, 760, 170, { r: 16 });
-      txt(`only about ${fix(HAL_IN_JUP, 0)} of its ${fix(HAL.P, 0)} years`, 1076, 840, { size: 48, w: 600, color: C.gold });
+      txt(`only about ${fix(HAL_IN_JUP, 0)} of its roughly 75 years`, 1076, 840, { size: 48, w: 600, color: C.gold });
       txt('inside Jupiter’s orbit · back in 2061', 1076, 900, { size: 42, italic: true, color: C.ivory });
     });
   });
@@ -1165,7 +1169,7 @@ function partHarmony(t) {
   A(span(t, s('h1'), s('h2'), 0.5, 0.45), () => heading(RX, 280, 'ONE RULE FOR ALL', 'All the planets', 'not just one', { size: 100 }));
   A(span(t, s('h2'), s('h3'), 0.5, 0.45), () => heading(RX, 280, 'BY HIS OWN ACCOUNT', '8 March 1618', null, { size: 100 }));
   // the table, from Kepler's own numbers
-  const tabA = span(t, s('h3'), s('h8'), 0.5, 0.45) * (1 - 0.75 * span(t, s('h7'), s('h8'), 0.4, 0.4));
+  const tabA = span(t, s('h3'), s('h7', 0.3), 0.5, 0.45);
   A(tabA, () => {
     const cols = [RX, RX + 320, RX + 460, RX + 600, RX + 730], y0 = 250, rh = 62;
     label('KEPLER’S NUMBERS, 1618', RX, y0 - 20);
@@ -1199,7 +1203,7 @@ function partHarmony(t) {
   });
   A(span(t, s('h8'), s('h9'), 0.5, 0.45), () => {
     plate(RX + 40, 250, RW - 80, 560, { r: 20 });
-    label('LINZ · 1619', RX + RW / 2, 330, { align: 'center' });
+    label('PUBLISHED 1619', RX + RW / 2, 330, { align: 'center' });
     txt('Harmonice', RX + RW / 2, 470, { size: 100, w: 600, color: C.gold, align: 'center' });
     txt('Mundi', RX + RW / 2, 580, { size: 100, w: 600, italic: true, color: C.gold, align: 'center' });
     rule(RX + 200, RX + RW - 200, 630, 0.7);
@@ -1228,7 +1232,7 @@ function partHarmony(t) {
   });
   A(span(t, s('h11'), s('h12'), 0.5, 0.45), () => {
     plate(RX + 40, 250, RW - 80, 560, { r: 20 });
-    label('LINZ · 1621', RX + RW / 2, 330, { align: 'center' });
+    label('PUBLISHED 1621', RX + RW / 2, 330, { align: 'center' });
     txt('Epitome', RX + RW / 2, 470, { size: 100, w: 600, color: C.gold, align: 'center' });
     txt('Astronomiae Copernicanae', RX + RW / 2, 560, { size: 52, italic: true, color: C.gold, align: 'center' });
     rule(RX + 200, RX + RW - 200, 620, 0.7);
@@ -1242,7 +1246,7 @@ function partHarmony(t) {
       ctx.strokeStyle = 'rgba(201,162,78,0.5)'; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.arc(DC.x, DC.y, a * px, 0, TAU); ctx.stroke();
       const an = 1.3 * i + ((t - s('h12')) / P) * TAU * 0.9, p = { x: DC.x + Math.cos(an) * a * px, y: DC.y - Math.sin(an) * a * px };
       planet(p.x, p.y, 8, 'steel');
-      mono(n, DC.x + a * px * Math.cos(-0.9 - i * 0.18) + 8, DC.y - a * px * Math.sin(-0.9 - i * 0.18) + 40, { size: 32, color: C.ivorySoft, align: 'left' });
+      mono(n, DC.x + a * px * Math.cos(-0.5 - i * 0.12) + 10, DC.y - a * px * Math.sin(-0.5 - i * 0.12) + 40, { size: 32, color: C.ivorySoft, align: 'left' });
     });
     label('JUPITER’S FOUR BRIGHT MOONS · DISTANCES TO SCALE', DC.x, 1000 - 36, { align: 'center', color: C.ivoryFaint, size: 32, spacing: '1px' });
     A(span(t, s('h12'), DURATION, 0.5, 0), () => heading(RX, 280, 'THE SAME YEAR', 'Jupiter’s moons too', 'the third law fits them', { size: 96 }));
@@ -1277,7 +1281,7 @@ function newtonPath(nCirc, law) {
   const areas = pts.slice(0, -1).map((p, i) => shoelace([S, p, pts[i + 1]]));
   return { S, pts, would: wd, areas };
 }
-const NP12 = newtonPath(18, 'inv2'), NP48 = newtonPath(70, 'inv2'), NPS = newtonPath(16, 'spring');
+const NP12 = newtonPath(12, 'inv2'), NP48 = newtonPath(70, 'inv2'), NPS = newtonPath(16, 'spring');
 function newtonDraw(path, upto, { tri = true, alpha = 1, showWould = -1 } = {}) {
   const { S, pts } = path;
   A(alpha, () => {
@@ -1312,11 +1316,14 @@ function partNewton(t) {
     mono('SUN', S.x, S.y + 74, { size: 32, color: C.brassLight, align: 'center' });
     // n4: two straight steps, A→B→c
     const st1 = eio(seg(t, s('n4', 0.3), s('n4', 1.3))), st2 = eio(seg(t, s('n4', 1.4), s('n4', 2.4)));
+    const early = 1 - seg(t, s('n8'), s('n8', 0.6));
+    A(early, () => {
     line(A0.x, A0.y, lerp(A0.x, B0.x, st1), lerp(A0.y, B0.y, st1), C.ivory, 3);
     A(seg(t, s('n4', 1.4), s('n4', 1.8)) * (1 - seg(t, s('n6', 0.8), s('n7', 0.2)) * 0.6), () => line(B0.x, B0.y, lerp(B0.x, c0.x, st2), lerp(B0.y, c0.y, st2), C.ivory, 3, [10, 8]));
     dot(A0.x, A0.y, 7, C.ivory); mono('A', A0.x - 10, A0.y - 22, { size: 36, w: 600, color: C.ivory, align: 'center' });
     A(st1, () => { dot(B0.x, B0.y, 7, C.ivory); mono('B', B0.x - 4, B0.y - 24, { size: 36, w: 600, color: C.ivory, align: 'center' }); });
     A(st2, () => { dot(c0.x, c0.y, 7, C.ivory); mono('c', c0.x - 28, c0.y - 6, { size: 36, w: 600, color: C.ivory, align: 'center' }); });
+    });
     // n5: the two triangles, SAB and SBc
     const tr = eout(seg(t, s('n5'), s('n5', 0.8)));
     A(tr * (1 - seg(t, s('n8'), s('n8', 0.6))), () => {
@@ -1372,10 +1379,12 @@ function partNewton(t) {
   A(span(t, s('n9'), s('n10'), 0.5, 0.45), () => {
     heading(RX, 250, 'ANY PULL TOWARD A CENTRE', 'Equal areas, always', null, { size: 84 });
     const a0 = NPS.areas[0], spread = Math.max(...NPS.areas.map((a) => Math.abs(a / a0 - 1)));
+    const range = (P2) => { const r = P2.areas.map((a) => a / P2.areas[0]); return `${fix(Math.min(...r), 3)} to ${fix(Math.max(...r), 3)}`; };
     mono('pull ∝ 1 / distance²', RX, 520, { size: 40, color: C.ivorySoft });
-    mono(`areas equal to ${fix(Math.max(...NP12.areas.map((a) => Math.abs(a / NP12.areas[0] - 1))) * 100, 2)}%`, RX, 575, { size: 40, w: 600, color: C.gold });
-    mono('pull ∝ distance', RX, 670, { size: 40, color: C.ivorySoft });
-    mono(`areas equal to ${fix(spread * 100, 2)}%`, RX, 725, { size: 40, w: 600, color: C.gold });
+    mono(`every area: ${range(NP12)}`, RX, 575, { size: 40, w: 600, color: C.gold });
+    mono('pull ∝ distance (this one)', RX, 670, { size: 40, color: C.ivorySoft });
+    mono(`every area: ${range(NPS)}`, RX, 725, { size: 40, w: 600, color: C.gold });
+    void spread;
   });
   A(span(t, s('n10'), DURATION, 0.6, 0), () => {
     const o = Orbit(DC.x + 40, DC.y, 330, 0.5);
@@ -1390,7 +1399,8 @@ function partNewton(t) {
     mono('distance × sideways speed = constant', RX, 640, { size: 34, color: C.gold });
   });
   A(span(t, s('n11'), DURATION, 0.5, 0), () => {
-    heading(RX, 250, 'THE OTHER TWO LAWS NEED', 'Pull ∝ 1 / distance²', 'the ellipse and the third law: gravity', { size: 84 });
+    heading(RX, 250, 'THE OTHER TWO LAWS NEED', 'One over distance squared', 'a pull that weakens like that: gravity', { size: 84 });
+    mono('pull ∝ 1 / distance²', RX, 640, { size: 44, w: 600, color: C.gold });
   });
 }
 
@@ -1407,6 +1417,13 @@ function partLaws(t) {
       const at = key === 's' ? s('z1', 0.2 + i * 0.25) : key === 'z1' ? mid('z1', 0.6) : s('z2', 0.6);
       A(eout(seg(t, at, at + 0.6)), () => {
         const hgt = side < 0 ? (row === 2 ? 170 : 80) : 100, col = key === 's' ? C.ivorySoft : C.gold, al = Y > 1790 ? 'right' : 'center';
+        if (row === 2) {
+          // the Epitome sits between two others: a bent leader out to the right
+          line(X(Y), y, X(Y), y - 60, col, 1.5); line(X(Y), y - 60, X(Y) + 130, y - 170, col, 1.5); dot(X(Y), y, 8, col);
+          mono(String(Y), X(Y) + 142, y - 160, { size: 32, w: 600, color: col });
+          txt(n, X(Y) + 142, y - 200, { size: 40, italic: true, w: 600, color: col });
+          return;
+        }
         line(X(Y), y, X(Y), y + side * hgt, col, 1.5); dot(X(Y), y, 8, col);
         if (side < 0) { mono(String(Y), X(Y), y - hgt - 16, { size: 32, w: 600, color: col, align: al }); txt(n, X(Y), y - hgt - 56, { size: key === 's' ? 40 : 48, italic: true, w: 600, color: col, align: al }); }
         else { mono(String(Y), X(Y), y + hgt + 40, { size: 32, w: 600, color: col, align: al }); txt(n, X(Y), y + hgt + 86, { size: key === 's' ? 40 : 48, italic: true, w: 600, color: col, align: al }); }
@@ -1459,7 +1476,7 @@ function credits() {
   const blocks = [
     ['ANIMATION AND SCRIPT', ['Reckon · original animation']],
     ['MUSIC', ['“Infinite Perspective” Kevin MacLeod (incompetech.com) · CC BY 4.0', '“Perspectives” Kevin MacLeod (incompetech.com) · CC BY 4.0']],
-    ['SOURCES', ['Wikipedia: Kepler’s laws of planetary motion · Johannes Kepler · Astronomia nova · Tycho Brahe', 'Kepler’s equation · Harmonice Mundi · Areal velocity · Principia · Earth’s orbit · Halley’s Comet', 'NASA planetary fact sheets (Earth, Mars, the planets)']],
+    ['SOURCES', ['Wikipedia: Kepler’s laws of planetary motion · Johannes Kepler · Astronomia nova · Tycho Brahe', 'Kepler’s equation · Harmonice Mundi · Areal velocity · Principia · Earth’s orbit · Halley’s Comet · Galilean moons', 'NASA planetary fact sheets (Earth, Mars, the planets)']],
     ['COMPUTED', ['Orbits from Kepler’s equation; areas, speeds and times calculated in the animation']],
   ];
   let y = 400;
@@ -1473,7 +1490,8 @@ function credits() {
 // ---------- title cards and header ----------
 function chapterAt(t) { let c = null; for (const ch of CH) if (t >= ch.at + 2.2) c = ch; return c; }
 function header(t) {
-  A(eout(seg(t, 0.2, 1.4)) * (1 - seg(t, e('z7', 1.0), e('z7', 1.6))), () => {
+  const card = Math.max(0, ...CH.map((ch) => span(t, ch.at, ch.at + 3.9, 0.5, 0.6)));
+  A(eout(seg(t, 0.2, 1.4)) * (1 - seg(t, e('z7', 1.0), e('z7', 1.6))) * (1 - 0.85 * card), () => {
     label('RECKON', 96, 104, { color: C.brass, spacing: '5px', w: 600 });
     const ch = chapterAt(t);
     if (ch) A(seg(t, ch.at + 2.2, ch.at + 3.2), () => { k.font('600', 32, MONO); ctx.letterSpacing = '5px'; const w0 = ctx.measureText('RECKON').width; ctx.letterSpacing = '0px'; label(`${ROMAN[ch.n - 1]} · ${ch.title.toUpperCase()}`, 96 + w0 + 36, 104, { color: C.ivoryFaint, spacing: '2px' }); });

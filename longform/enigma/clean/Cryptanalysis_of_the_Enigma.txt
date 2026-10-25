@@ -1,0 +1,629 @@
+{{short description|Decryption of World War II cipher}}
+{{Use British English|date=August 2024}}
+{{Use dmy dates|date=October 2019}}
+
+{{Enigma series}}
+[[File:EnigmaMachineLabeled.jpg|thumb|The [[Enigma machine]] was used commercially from the early 1920s and was adopted by the militaries and governments of various countries—most famously, [[Nazi Germany]].]]
+'''Cryptanalysis of the Enigma ciphering system''' enabled the western [[Allies of World War II|Allies]] in [[World War II]] to read substantial amounts of [[Morse code|Morse-coded]] radio communications of the [[Axis powers]] that had been enciphered using [[Enigma machine]]s. This yielded [[military intelligence]] which, along with that from other decrypted Axis radio and [[teleprinter]] transmissions, was given the codename ''[[Ultra (cryptography)|Ultra]]''.
+
+The Enigma machines were a family of portable [[cipher]] machines with [[rotor machine|rotor]] [[scrambler]]s. Good operating procedures, properly enforced, would have made the plugboard Enigma machine unbreakable to the Allies at that time.
+
+The German plugboard-equipped Enigma became the principal [[cryptography|crypto-system]] of the [[Third Reich|German Reich]] and later of other Axis powers. In December 1932 it was broken by mathematician [[Marian Rejewski]] at the [[Polish General Staff]]'s [[Cipher Bureau (Poland)|Cipher Bureau]], using mathematical [[permutation group]] theory combined with French-supplied intelligence material obtained from German spy [[Hans-Thilo Schmidt]]. By 1938 Rejewski had invented a device, the [[Bomba (cryptography)|cryptologic bomb]], and [[Henryk Zygalski]] had devised his [[Zygalski sheets|sheets]], to make the cipher-breaking more efficient. Five weeks before the outbreak of World War II, in late July 1939 at a conference just south of [[Warsaw]], the Polish Cipher Bureau shared its Enigma-breaking techniques and technology with the French and British.
+
+During the German [[invasion of Poland]], core Polish Cipher Bureau personnel were evacuated via Romania to France, where they established the ''[[PC Bruno]]'' signals intelligence station with French facilities support. Successful cooperation among the Poles, French, and British continued until June 1940, when [[Second Armistice at Compiègne|France surrendered]] to the Germans.
+
+From this beginning, the British [[GCHQ#World War I|Government Code and Cypher School]] at [[Bletchley Park]] built up an extensive cryptanalytic capability. Initially the decryption was mainly of ''[[Luftwaffe]]'' (German air force) and a few ''[[German Army (Wehrmacht)|Heer]]'' (German army) messages, as the ''[[Kriegsmarine]]'' (German navy) employed much more secure procedures for using Enigma. [[Alan Turing]], a [[University of Cambridge|Cambridge University]] mathematician and logician, provided much of the original thinking that led to upgrading of the Polish [[Bomba (cryptography)|cryptologic bomb]] used in decrypting German Enigma ciphers. However, the ''Kriegsmarine'' introduced an Enigma version with a fourth rotor for its [[U-boat]]s, resulting in a prolonged period when these messages could not be decrypted. With the capture of cipher keys and the use of much faster [[Bombe#US Navy Bombe|US Navy bombes]], regular, rapid reading of U-boat messages resumed. Many commentators say the flow of [[Ultra (cryptography)|Ultra]] [[communications intelligence]] from the decrypting of Enigma, [[Lorenz cipher|Lorenz]], and other ciphers shortened the war substantially and may even have altered its outcome.
+
+==General principles==
+{{Main|Cryptanalysis}}
+The Enigma machines combined multiple levels of movable rotors and plug cables to produce a particularly complex [[Polyalphabetic cipher|polyalphabetic substitution cipher]].
+
+During [[World War I]], inventors in several countries realised that a purely random key sequence, containing no repetitive pattern, would, in principle, make a polyalphabetic substitution cipher unbreakable. This led to the development of [[rotor machine]]s which alter each character in the [[plaintext]] to produce the [[ciphertext]], by means of a scrambler comprising a set of ''rotors'' that alter the electrical path from character to character, between the [[input device]] and the [[output device]]. This constant altering of the electrical pathway produces a very long period before the pattern—the [[key (cryptography)|key sequence]] or [[substitution alphabet]]—repeats.
+
+Decrypting enciphered messages involves three stages, defined somewhat differently in that era than in modern cryptography. First, there is the ''identification'' of the system in use, in this case Enigma; second, ''breaking'' the system by establishing exactly how encryption takes place, and third, ''solving'', which involves finding the way that the machine was set up for an individual message, ''i.e.'' the ''message key''. Today, it is often assumed that an attacker knows how the encipherment process works (see [[Kerckhoffs's principle]]) and ''breaking'' is often used for ''solving'' a key. Enigma machines, however, had so many potential internal wiring states that reconstructing the machine, independent of particular settings, was a very difficult task.
+
+==The Enigma machine==
+{{Main|Enigma machine|Enigma rotor details}}
+[[File:Enigma rotor set.png|thumbnail|right|A series of three rotors from an Enigma machine scrambler. When loaded in the machine, these rotors connect with the entry plate on the right and the reflector drum on the left.]]
+
+The Enigma rotor machine was potentially an excellent system. It generated a polyalphabetic [[substitution cipher]], with a period before repetition of the substitution alphabet that was much longer than any message, or set of messages, sent with the same key.
+
+A major weakness of the system, however, was that no letter could be enciphered to itself. This meant that some possible solutions could quickly be eliminated because of the same letter appearing in the same place in both the ciphertext and the putative piece of plaintext. Comparing the possible plaintext {{lang|de|Keine besonderen Ereignisse}} (literally, {{gloss|no special occurrences}}, but used with the meaning {{gloss|nothing to report}}), a phrase regularly used by one German outpost in North Africa, with a section of ciphertext, might produce the following:
+{| class="wikitable" | border=1 style="margin: 1em auto 1em auto"
+|+ Exclusion of some positions for the possible plaintext {{lang|de|Keine besonderen Ereignisse}}
+|- align=center
+! align=left | Ciphertext
+|O||H||J||Y||P||D||O||M||Q||N||J||C||O||S||G||A||W||H||L||E||I||H||Y||S||O||P||J||S||M||N||U
+|- align=center
+! align=left | Position 1
+| || ||K||E||I||N||E||B||E||S||O||N||D||E||R||E||N||E||R||style="background:red"|E||style="background:red"|I||G||N||I||S||S||E|| || || ||
+|- align=center
+! align=left | Position 2
+| || || ||K||E||I||N||E||B||E||S||O||N||D||E||R||E||N||E||R||E||I||G||N||I||S||S||E|| || ||
+|- align=center
+! align=left | Position 3
+| || || || ||K||E||I||N||E||B||E||S||style="background:red"|O||N||D||E||R||E||N||style="background:red"|E||R||E||I||G||N||I||S||style="background:red"|S||E|| ||
+|-
+!
+| colspan="31" align="center" | Positions 1 and 3 for the possible plaintext are impossible because of matching letters.
+The red cells represent these ''clashes''.
+Position 2 is a possibility.
+|-
+|}
+
+===Structure===
+The mechanism of the Enigma consisted of a [[keyboard (computing)|keyboard]] connected to a [[battery (electricity)|battery]] and a [[Enigma machine#Entry wheel|current entry plate]] or wheel ({{lang|de|Eintrittswalze}}), at the right hand end of the scrambler (usually via a [[plugboard]] in the military versions). This contained a set of 26 contacts that made electrical connection with the set of 26 spring-loaded pins on the right hand rotor. The internal wiring of the core of each rotor provided an electrical pathway from the pins on one side to different connection points on the other. The left hand side of each rotor made electrical connection with the rotor to its left. The leftmost rotor then made contact with the [[Enigma machine#Reflector|reflector]] ({{lang|de|Umkehrwalze}}). The reflector provided a set of thirteen paired connections to return the current back through the scrambler rotors, and eventually to the lampboard where a lamp under a letter was illuminated.
+
+Whenever a key on the keyboard was pressed, the [[Enigma machine#Stepping|stepping motion]] was actuated, advancing the rightmost rotor one position. Because it moved with each key pressed it is sometimes called the ''fast rotor''. When a notch on that rotor engaged with a [[Enigma machine#Stepping|pawl]] on the middle rotor, that too moved; and similarly with the leftmost ('slow') rotor.
+
+There are a huge number of ways that the connections within each scrambler rotor—and between the entry plate and the keyboard or plugboard or lampboard—could be arranged. For the reflector plate there are fewer, but still a large number of options to its possible wirings.
+
+Each scrambler rotor could be set to any one of its 26 starting positions (any letter of the alphabet). For the Enigma machines with only three rotors, their sequence in the scrambler—which was known as the ''wheel order (WO)'' to [[Allies of World War II|Allied]] cryptanalysts—could be selected from the six that are possible.
+
+{| class="wikitable" | border=1 style="margin: 1em auto 1em auto"
+|+ Possible rotor sequences—also known as ''Wheel Order (WO)''
+|-
+! width="70pt"| Left
+! width="70pt"| Middle
+! width="70pt"| Right
+|-
+| align="center" | I ||align="center" | II ||align="center" | III
+|-
+| align="center" | I || align="center" | III || align="center" | II
+|-
+| align="center" | II || align="center" | I || align="center" | III
+|-
+| align="center" | II || align="center" | III || align="center" | I
+|-
+| align="center" | III || align="center" | I || align="center" | II
+|-
+| align="center" | III || align="center" | II || align="center" | I
+|}
+
+[[File:Enigma-plugboard.jpg|right|thumbnail|The plugboard ({{lang|de|Steckerbrett}}) was positioned at the front of the machine, below the keys. In the above photograph, two pairs of letters have been swapped (A↔J and S↔O). During World War II, ten leads were used, leaving only six letters 'unsteckered'.]]
+
+Later Enigma models included an ''alphabet ring'' like a tyre around the core of each rotor. This could be set in any one of 26 positions in relation to the rotor's core. The ring contained one or more notches that engaged with a pawl that advanced the next rotor to the left.
+
+Later still, the three rotors for the scrambler were selected from a set of five or, in the case of the German Navy, eight rotors. The alphabet rings of rotors VI, VII, and VIII contained two notches which, despite shortening the period of the substitution alphabet, made decryption more difficult.
+
+Most military Enigmas also featured a [[plugboard]] ({{lang|de|Steckerbrett}}). This altered the electrical pathway between the keyboard and the entry wheel of the scrambler and, in the opposite direction, between the scrambler and the lampboard. It did this by exchanging letters reciprocally, so that if ''A'' was plugged to ''G'' then pressing key ''A'' would lead to current entering the scrambler at the ''G'' position, and if ''G'' was pressed the current would enter at ''A''. The same connections applied for the current on the way out to the lamp panel.
+
+To decipher German military Enigma messages, the following information would need to be known.
+
+'''Logical structure of the machine''' (unchanging)
+*The wiring between the keyboard (and lampboard) and the entry plate.
+*The wiring of each rotor.
+*The number and position(s) of turnover notches on the rings of the rotors.
+*The wiring of the reflectors.
+'''Internal settings''' (usually changed less frequently than external settings)
+*The selection of rotors in use and their ordering on the spindle ({{lang|de|Walzenlage}}, {{gloss|wheel order}}).
+*The positions of the alphabet ring in relation to the core of each rotor in use ({{lang|de|Ringstellung}}, {{gloss|ring settings}}).
+'''External settings''' (usually changed more frequently than internal settings)
+*The plugboard connections ({{lang|de|Steckerverbindungen}}, {{gloss|stecker values}}).
+*The rotor positions at the start of enciphering the text of the message.
+
+Discovering the logical structure of the machine may be called "breaking" it, a one-off process except when changes or additions were made to the machines. Finding the internal and external settings for one or more messages may be called "solving" – although breaking is often used for this process as well.
+
+===Security properties===
+The various Enigma models provided different levels of security. The presence of a plugboard ({{lang|de|Steckerbrett}}) substantially increased the security of the encipherment. Each pair of letters that were connected together by a plugboard lead were referred to as ''stecker partners'', and the letters that remained unconnected were said to be ''self-steckered''. In general, the unsteckered Enigma was used for commercial and diplomatic traffic and could be broken relatively easily using hand methods, while attacking versions with a plugboard was much more difficult. The British read unsteckered Enigma messages sent during the [[Spanish Civil War]], and also some [[#Italian naval Enigma|Italian naval traffic]] enciphered early in World War II.
+
+The strength of the security of the ciphers that were produced by the Enigma machine was a product of the large numbers associated with the scrambling process.
+#It produced a polyalphabetic substitution cipher with a period ({{thinspace|16|900}}) that was many times the length of the longest message.
+#The 3-rotor scrambler could be set in 26 × 26 × 26 = {{thinspace|17|576}} ways, and the 4-rotor scrambler in 26 × {{thinspace|17|576}} = {{thinspace|456|976}} ways.
+#With ''L'' leads on the plugboard, the number of ways that pairs of letters could be interchanged was <math>\tfrac{26!}{(26-2L)! \cdot L! \cdot 2^L}</math>
+#*With ''L''=6, the number of combinations was {{thinspace|100|391|791|500}} (100 billion) and with ten leads, it was {{thinspace|150|738|274|937|250}} (151 trillion).
+
+However, the way that Enigma was used by the Germans meant that, if the settings for one day (or whatever period was represented by each row of the setting sheet) were established, the rest of the messages for that network on that day could quickly be deciphered.
+
+The security of Enigma ciphers did have fundamental weaknesses that proved helpful to cryptanalysts.
+#A letter could never be [[encrypt]]ed to itself, a consequence of the reflector. This property was of great help in using ''[[known-plaintext attack|cribs]]''—short sections of plaintext thought to be somewhere in the ciphertext—and could be used to eliminate a crib in a particular position. For a possible location, if any letter in the crib matched a letter in the ciphertext at the same position, the location could be ruled out. It was this feature that the British [[mathematician]] and [[logic]]ian [[Alan Turing]] exploited in designing the British [[bombe]].
+#The plugboard connections were reciprocal, so that if A was plugged to N, then N likewise became A. It was this property that led mathematician [[Gordon Welchman]] at Bletchley Park to propose that a ''diagonal board'' be introduced into the bombe, substantially reducing the number of incorrect rotor settings that the bombes found.
+#The notches in the ''alphabet rings'' of rotors I to V were in different positions, which helped cryptanalysts to work out the ''wheel order'' by observing when the middle rotor was turned over by the right-hand rotor.
+#There were weaknesses, in both policies and practice, in the way some Enigma versions were used.{{Clarify|date=July 2023}}
+#Critical material was disclosed without notice.{{Clarify|date=July 2023}}
+
+===Key setting===
+Enigma featured the major operational convenience of being [[involution (mathematics)|symmetrical]] (or [[inverse function|self-inverse]]). This meant that [[decipherment]] worked in the same way as [[encryption|encipherment]], so that when the [[ciphertext]] was typed in, the sequence of lamps that lit yielded the [[plaintext]].
+
+Identical setting of the machines at the transmitting and receiving ends was achieved by key setting procedures. These varied from time to time and across different [[telecommunications network|networks]]. They consisted of ''setting sheets'' in a ''[[codebook]]'' which were distributed to all users of a network, and were changed regularly. The message key was transmitted in an ''[[Enigma machine#Indicator|indicator]]'' as part of the message preamble. The word ''key'' was also used at Bletchley Park to describe the network that used the same Enigma setting sheets. Initially these were recorded using coloured pencils and were given the names ''red'', ''light blue'' etc., and later the names of birds such as ''kestrel''. During World War II the settings for most networks lasted for 24 hours, although some were changed more often towards the end of the war. The sheets had columns specifying, for each day of the month, the rotors to be used and their positions, the ring positions and the plugboard connections. For security, the dates were in reverse chronological order down the page, so that each row could be cut off and destroyed when it was finished with.
+
+{| class="wikitable" style="margin: auto; border: none; text-align:center"
+|+The top part of an early setting sheet looked something like this
+|-
+! {{lang|de|Datum}}<br><small>Date</small>
+! {{lang|de|Walzenlage}}<br><small>Rotors</small>
+! {{lang|de|Ringstellung}}<br><small>Ring settings</small>
+! {{lang|de|Steckerverbindungen}}<br><small>Plugboard settings</small>
+! {{lang|de|Grundstellung}}<br><small>Initial settings</small>
+|-
+| style="text-align: center; font-family: monospace;" | 31 || style="text-align: center; font-family: monospace;" | I II III || style="text-align: center; font-family: monospace;" | W N M || style="text-align: center; font-family: monospace;" | HK CN IO FY JM LW || style="text-align: center; font-family: monospace;" | RAO
+|-
+| style="text-align: center; font-family: monospace;" | 30 || style="text-align: center; font-family: monospace;" | III I II || style="text-align: center; font-family: monospace;" | C K U || style="text-align: center; font-family: monospace;" | CK IZ QT NP JY GW || style="text-align: center; font-family: monospace;" | VQN
+|-
+| style="text-align: center; font-family: monospace;" | 29 || style="text-align: center; font-family: monospace;" | II III I || style="text-align: center; font-family: monospace;" | B H N || style="text-align: center; font-family: monospace;" | FR LY OX IT BM GJ || style="text-align: center; font-family: monospace;" | XIO
+|}
+
+Until 15 September 1938, the transmitting operator indicated to the receiving operator(s) how to set their rotors, by choosing a three-letter ''message key'' (the key specific to that message) and enciphering it twice using the specified initial ring positions (the {{lang|de|Grundstellung}}). The resultant six-letter indicator was then transmitted before the enciphered text of the message. Suppose that the specified {{lang|de|Grundstellung}} was ''RAO'', and the chosen three-letter message key was ''IHL'', the operator would set the rotors to ''RAO'' and encipher ''IHL'' twice. The resultant ciphertext, ''DQYQQT'', would be transmitted, at which point the rotors would be changed to the message key (''IHL'') and then the message itself enciphered. The receiving operator would use the specified {{lang|de|Grundstellung}} ''RAO'' to decipher the first six letters, yielding ''IHLIHL''. On seeing the repeated message key, they would know there had been no corruption and use ''IHL'' to decipher the message.
+
+The weakness in this [[Enigma machine#Indicator|indicator procedure]] came from two factors. First, use of a global {{lang|de|Grundstellung}}; this was changed in September 1938 so that the operator selected his initial position to encrypt the message key, and sent the initial position [[Plaintext|in clear]] followed by the enciphered message key. The second problem was the repetition of the message key within the indicator, which was a serious security flaw. The message setting was encoded twice, resulting in a relation between the first and fourth, second and fifth, and third and sixth characters. This weakness enabled the [[Cipher Bureau (Poland)|Polish Cipher Bureau]] to break the pre-war Enigma system as early as 1932. On 1 May 1940 the Germans changed the procedures to encipher the message key only once.
+
+==British efforts==
+In 1927, the UK openly purchased a commercial Enigma. Its operation was analysed and reported. Although a leading British cryptographer, [[Dilly Knox]] (a veteran of [[World War I]] and the cryptanalytical activities of the Royal Navy's [[Room 40]]), worked on decipherment he had only the messages he generated himself to practice with. After Germany supplied modified commercial machines to the [[Spanish Civil War#Nationalists|Nationalist]] side in the [[Spanish Civil War]], and with the [[Regia Marina|Italian Navy]] (who were also aiding the Nationalists) using a version of the commercial Enigma that did not have a plugboard, Britain could intercept the radio broadcast messages. In April 1937 Knox made his first decryption of an Enigma encryption using a technique that he called ''buttoning up'' to discover the rotor wirings and another that he called ''rodding'' to solve messages. This relied heavily on [[crib (cryptanalysis)|cribs]] and on a crossword-solver's expertise in Italian, as it yielded a limited number of spaced-out letters at a time.
+
+Britain had no ability to read the messages broadcast by Germany, which used the military Enigma machine.
+
+==Polish breakthroughs==
+{{Main|Cipher Bureau (Poland)}}
+{{Tone|date=November 2023|section}}
+[[File:Marian Rejewski 1932 small.jpg|thumb|160px|[[Marian Rejewski]] {{Circa|1932}}, when he first broke [[Enigma machine|Enigma]]]]
+
+In the 1920s the German military began using a 3-rotor Enigma, whose security was increased in 1930 by the addition of a plugboard. The [[Polish Cipher Bureau]] sought to break it because of the threat that Poland faced from Germany, but the early attempts did not succeed. Mathematicians having earlier rendered great services in breaking Russian ciphers and codes, in early 1929 the Polish Cipher Bureau invited mathematics students at Poznań University – who had a good knowledge of the German language due to the area having belonged to Germany before being awarded to Poland after World War I – to take a course in cryptology.
+
+After the course, the Bureau recruited some students to work part-time at a Bureau branch set up in Poznań. On 1 September 1932, 27-year-old mathematician [[Marian Rejewski]] and two fellow [[Poznań University]] mathematics graduates, [[Henryk Zygalski]] and [[Jerzy Różycki]], were hired by the Bureau in Warsaw. Their first task was reconstructing a four-letter German naval code.
+
+Near the end of 1932 Rejewski was asked to work a couple of hours a day at breaking the Enigma cipher. His work on it may have begun in late October or early November 1932.
+
+===Rejewski's characteristics method===
+Marian Rejewski quickly spotted the Germans' major procedural weaknesses of specifying a single indicator setting (''Grundstellung'') for all messages on a network for a day, and repeating the operator's chosen ''message key'' in the enciphered 6-letter indicator. Those procedural mistakes allowed Rejewski to decipher the message keys without knowing any of the machine's wirings. In the above example of ''DQYQQT'' being the enciphered indicator, it is known that the first letter ''D'' and the fourth letter ''Q'' represent the same letter, enciphered three positions apart in the scrambler sequence. Similarly with ''Q'' and ''Q'' in the second and fifth positions, and ''Y'' and ''T'' in the third and sixth. Rejewski exploited this fact by collecting a sufficient set of messages enciphered with the same indicator setting, and assembling three tables for the 1,4, the 2,5, and the 3,6 pairings. Each of these tables might look something like the following:
+{| class="wikitable" | border=1 style="margin: 1em auto 1em auto"
+|-
+! First letter
+| A||B||C||D||E||F||G||H||I||J||K||L||M||N||O||P||Q||R||S||T||U||V||W||X||Y||Z
+|-
+! Fourth letter
+| N||S||Y||Q||T||I||C||H||A||F||E||X||J||P||U||L||W||R||Z||K||G||O||V||M||D||B
+|}
+A path from one first letter to the corresponding fourth letter, then from that letter as the first letter to its corresponding fourth letter, and so on until the first letter recurs, traces out a [[cycle graph (algebra)|cycle group]]. The following table contains six cycle groups.<!-- (ydqwvougc)(ket)(nplxmjfia)(zbs)(r)(h) -->
+{| class="wikitable" style="margin: 1em auto 1em auto"
+|-
+! Cycle group starting at A (9 links)
+| (A, N, P, L, X, M, J, F, I, A)
+|-
+! Cycle group starting at B (3 links)
+| (B, S, Z, B)
+|-
+! Cycle group starting at C (9 links)
+| (C, Y, D, Q, W, V, O, U, G, C)
+|-
+! Cycle group starting at E (3 links)
+| (E, T, K, E)
+|-
+! Cycle group starting at H (1 link)
+| (H, H)
+|-
+! Cycle group starting at R (1 link)
+| (R, R)
+|-
+|}
+
+Rejewski recognised that a cycle group must pair with another group of the same length. Even though Rejewski did not know the rotor wirings or the plugboard permutation, the German mistake allowed him to reduce the number of possible substitution ciphers to a small number. For the 1,4 pairing above, there are only {{math|1=1×3×9=27}} possibilities for the substitution ciphers at positions 1 and 4.
+
+Rejewski also exploited cipher clerk laziness. Scores of messages would be enciphered by several cipher clerks, but some of those messages would have the same encrypted indicator. That meant that both clerks happened to choose the same three letter starting position. Such a collision should be rare with randomly selected starting positions, but lazy cipher clerks often chose starting positions such as "AAA", "BBB", or "CCC". Those security mistakes allowed Rejewski to solve each of the six permutations used to encipher the indicator.
+
+That solution was an extraordinary feat. Rejewski did it without knowing the plugboard permutation or the rotor wirings. Even after solving for the six permutations, Rejewski did not know how the plugboard was set or the positions of the rotors. Knowing the six permutations also did not allow Rejewski to read any messages.
+
+===The spy and the rotor wiring===
+Before Rejewski started work on the Enigma, the French had a spy, [[Hans-Thilo Schmidt]], who worked at Germany's Cipher Office in Berlin and had access to some Enigma documents. Even with the help of those documents, the French did not make progress on breaking the Enigma. The French decided to share the material with their British and Polish allies. In a December 1931 meeting, the French provided [[Gwido Langer]], head of the Polish Cipher Bureau, with copies of some Enigma material. Langer asked the French for more material, and [[Gustave Bertrand]] of French Military Intelligence quickly obliged; Bertrand provided additional material in May and September 1932. The documents included two German manuals and two pages of Enigma daily keys.
+
+In December 1932, the Bureau provided Rejewski with some German manuals and monthly keys. The material enabled Rejewski to achieve "one of the most important breakthroughs in [[cryptology|cryptologic]] history" by using the [[permutation group|theory of permutations and groups]] to work out the Enigma scrambler wiring.
+
+Rejewski could look at a day's cipher traffic and solve for the permutations at the six sequential positions used to encipher the indicator. Since Rejewski had the cipher key for the day, he knew and could factor out the plugboard permutation. He assumed the keyboard permutation was the same as the commercial Enigma, so he factored that out. He knew the rotor order, the ring settings, and the starting position. He developed a set of equations that would allow him to solve for the rightmost rotor wiring assuming the two rotors to the left did not move.
+
+He attempted to solve the equations, but failed with inconsistent results. After some thought, he realised one of his assumptions must be wrong.
+
+Rejewski found that the connections between the military Enigma's keyboard and the entry ring were not, as in the commercial Enigma, in the order of the keys on a German typewriter. He made an inspired correct guess that it was in alphabetical order. Britain's [[Dilly Knox]] was astonished when he learned, in July 1939, that the arrangement was so simple.
+
+With the new assumption, Rejewski succeeded in solving the wiring of the rightmost rotor. The next month's cipher traffic used a different rotor in the rightmost position, so Rejewski used the same equations to solve for its wiring. With those rotors known, the remaining third rotor and the reflector wiring were determined. Without capturing a single rotor to reverse engineer, Rejewski had determined the logical structure of the machine.
+
+The Polish Cipher Bureau then had some Enigma machine replicas made; the replicas were called [[Polish Enigma double|"Enigma doubles"]].
+
+===The grill method===
+The Poles now had the machine's wiring secrets, but they still needed to determine the daily keys for the cipher traffic. The Poles would examine the Enigma traffic and use the [[method of characteristics]] to determine the six permutations used for the indicator. The Poles would then use the [[grill (cryptology)|grill method]] to determine the rightmost rotor and its position. That search would be complicated by the plugboard permutation, but that permutation only swapped six pairs of letters{{snd}}not enough to disrupt the search. The grill method also determined the plugboard wiring. The grill method could also be used to determine the middle and left rotors and their setting (and those tasks were simpler because there was no plugboard), but the Poles eventually compiled a catalogue of the {{math|1=3×2×26×26={{#expr:3*2*26*26}}}} possible {{mvar|Q}} permutations (reflector and 2 leftmost rotor permutations), so they could just look up the answer.
+
+The only remaining secret of the daily key would be the ring settings, and the Poles would attack that problem with [[brute-force attack|brute force]]. Most messages would start with the three letters "ANX" (''an'' is German for "to" and the "X" character was used as a space). It may take almost {{math|1=26×26×26={{#expr:26*26*26}}}} trials, but that was doable. Once the ring settings were found, the Poles could read the day's traffic.
+
+The Germans made it easy for the Poles in the beginning. The rotor order only changed every quarter, so the Poles would not have to search for the rotor order. Later the Germans changed it every month, but that would not cause much trouble, either. Eventually, the Germans would change the rotor order every day, and late in the war (after Poland had been overrun) the rotor order might be changed during the day.
+
+The Poles kept improving their techniques as the Germans kept improving their security measures.
+
+===Invariant cycle lengths and the card catalogue===
+[[File:Cyclometer4.png|thumb|175px|[[Cyclometer]], devised in the mid-1930s by Rejewski to catalogue the [[cyclic permutation|cycle]] structure of [[Enigma machine|Enigma]] [[permutation]]s. 1: Rotor lid closed, 2: Rotor lid open, 3: Rheostat, 4: Glowlamps, 5: Switches, 6: Letters.]]
+
+Rejewski realised that, although the letters in the cycle groups were changed by the plugboard, the number and lengths of the cycles were unaffected—in the example above, six cycle groups with lengths of 9, 9, 3, 3, 1, and 1. He described this invariant structure as the ''characteristic'' of the indicator setting.{{dubious|Characteristic|reason=see following dubious. Confuses characteristic with catalogue hash code.|date=May 2015}} There were only 105,456 possible rotor settings. The Poles therefore set about creating a [[card catalog (cryptology)|''card catalogue'']] of these cycle patterns.
+
+The cycle-length method would avoid using the grill. The card catalogue would index the cycle-length for all starting positions (except for turnovers that occurred while enciphering an indicator). The day's traffic would be examined to discover the cycles in the permutations. The card catalogue would be consulted to find the possible starting positions. There are roughly 1 million possible cycle-length combinations and only 105,456 starting positions.<!-- expect 1, but some structures had thousands. A turnover indicator would not be found. --> Having found a starting position, the Poles would use an Enigma double to determine the cycles at that starting position without a plugboard. The Poles would then compare those cycles to the cycles with the (unknown) plugboard and solve for the plugboard permutation (a simple substitution cipher).<!-- No solution implies not the right starting position. --> Then the Poles could find the remaining secret of the ring settings with the ANX method.<!-- Rejewski claims they developed a faster method, but could not remember it. -->
+
+The problem was compiling the large card catalogue.
+
+Rejewski, in 1934 or 1935, devised a machine to facilitate making the catalogue and called it a ''[[cyclometer]]''. This "comprised two sets of rotors... connected by wires through which electric current could run. Rotor N in the second set was three letters out of phase with respect to rotor N in the first set, whereas rotors L and M in the second set were always set the same way as rotors L and M in the first set". Preparation of this catalogue, using the cyclometer, was, said Rejewski, "laborious and took over a year, but when it was ready, obtaining daily keys was a question of [some fifteen] minutes".
+
+However, on 1 November 1937, the Germans changed the Enigma [[reflector (cipher machine)|reflector]], necessitating the production of a new catalogue&mdash;"a task which [says Rejewski] consumed, on account of our greater experience, probably somewhat less than a year's time".
+
+This characteristics method stopped working for German naval Enigma messages on 1 May 1937, when the indicator procedure was changed to one involving special codebooks (see [[#German Navy 3-rotor Enigma|German Navy 3-rotor Enigma]] below). Worse still, on 15 September 1938 it stopped working for German Army and Luftwaffe messages because operators were then required to choose their own ''Grundstellung'' (initial rotor setting) for each message. Although German army message keys would still be double-enciphered, the day's keys would not be double-enciphered at the same initial setting, so the characteristic could no longer be found or exploited.
+
+===Perforated sheets===
+[[File:Płachta Zygalskiego - decrypting Enigma.jpg|right|thumb|175px|[[Perforated sheets|Zygalski sheet]]]]
+{{Main|Zygalski sheets}}
+Although the characteristics method no longer worked, the inclusion of the enciphered message key twice gave rise to a phenomenon that the cryptanalyst Henryk Zygalski was able to exploit. Sometimes (about one message in eight) one of the repeated letters in the message key enciphered to the same letter on both occasions. These occurrences were called ''samiczki'' (in English, ''females''—a term later used at Bletchley Park).
+
+Only a limited number of scrambler settings would give rise to females, and these would have been identifiable from the card catalogue. If the first six letters of the ciphertext were '''''S'''ZV'''S'''IK'', this would be termed a 1–4 female; if ''W'''H'''OE'''H'''S'', a 2–5 female; and if ''AS'''W'''CR'''W''''', a 3–6 female. The method was called ''Netz'' (from ''Netzverfahren'', "net method"), or the [[Zygalski sheets|Zygalski sheet method]] as it used perforated sheets that he devised, although at Bletchley Park Zygalski's name was not used for security reasons. About ten females from a day's messages were required for success.
+
+There was a set of 26 of these sheets for each of the six possible sequences ''wheel orders''. Each sheet was for the left (slowest-moving) rotor. The 51×51 matrices on the sheets represented the 676 possible starting positions of the middle and right rotors. The sheets contained about 1000 holes in the positions in which a female could occur. The set of sheets for that day's messages would be appropriately positioned on top of each other in the perforated sheets apparatus. Rejewski wrote about how the device was operated:
+
+{{blockquote|When the sheets were superposed and moved in the proper sequence and the proper manner with respect to each other, in accordance with a strictly defined program, the number of visible apertures gradually decreased. And, if a sufficient quantity of data was available, there finally remained a single aperture, probably corresponding to the right case, that is, to the solution. From the position of the aperture one could calculate the order of the rotors, the setting of their rings, and, by comparing the letters of the cipher keys with the letters in the machine, likewise permutation S; in other words, the entire cipher key.}}
+
+The holes in the sheets were painstakingly cut with razor blades and in the three months before the next major setback, the sets of sheets for only two of the possible six wheel orders had been produced.
+
+===Polish ''bomba''===
+{{Main|Bomba (cryptography)}}
+After [[Marian Rejewski|Rejewski's]] characteristics method became useless, he invented an electro-mechanical device that was dubbed the [[bomba (cryptography)|''bomba kryptologiczna'']], 'cryptologic bomb'. Each machine contained six sets of Enigma rotors for the six positions of the repeated three-letter key. Like the Zygalski sheet method, the ''bomba'' relied on the occurrence of ''females'', but required only three instead of about ten for the sheet method. Six ''bomby'' were constructed, one for each of the then possible ''wheel orders''. Each ''bomba'' conducted an exhaustive (brute-force) analysis of the 17,576 possible message keys.
+
+Rejewski has written about the device: {{blockquote|The bomb method, invented in the autumn of 1938, consisted largely in the automation and acceleration of the process of reconstructing daily keys. Each cryptologic bomb (six were built in Warsaw for the Biuro Szyfrów Cipher Bureau before September 1939) essentially constituted an electrically powered aggregate of six Enigmas. It took the place of about one hundred workers and shortened the time for obtaining a key to about two hours.}}
+
+The cipher message transmitted the ''Grundstellung'' in the clear, so when a ''bomba'' found a match, it revealed the rotor order, the rotor positions, and the ring settings. The only remaining secret was the plugboard permutation.<!-- apparently easy to solve, but who said so? Alexander? -->
+
+===Major setback===
+On 15 December 1938, the German Army increased the complexity of Enigma enciphering by introducing two additional rotors (IV and V). This increased the number of possible ''wheel orders'' from 6 to 60. The Poles could then read only the small minority of messages that used neither of the two new rotors. They did not have the resources to commission 54 more bombs or produce 58 sets<!-- They had 2; they needed 58 other sets. --> of Zygalski sheets. Other Enigma users received the two new rotors at the same time. However, until 1 July 1939 the ''[[Sicherheitsdienst]]'' (SD)—the intelligence agency of the [[Schutzstaffel|SS]] and the [[Nazi Party]]—continued to use its machines in the old way with the same indicator setting for all messages. This allowed Rejewski to reuse his previous method, and by about the turn of the year he had worked out the wirings of the two new rotors. On 1 January 1939, the Germans increased the number of plugboard connections from between five and eight to between seven and ten, which made other methods of decryption even more difficult.
+
+Rejewski wrote, in a 1979 critique of appendix 1, volume 1 (1979), of the official history of British Intelligence in the Second World War: {{blockquote|we quickly found the [wirings] within the [new rotors], but [their] introduction ... raised the number of possible sequences of [rotors] from 6 to 60 ... and hence also raised tenfold the work of finding the keys. Thus the change was not qualitative but quantitative. We would have had to markedly increase the personnel to operate the bombs, to produce the perforated sheets ... and to manipulate the sheets.}}
+
+==World War II==
+===Polish disclosures===
+As the likelihood of war increased in 1939, Britain and France pledged support for Poland in the event of action that threatened its independence. In April, Germany withdrew from the [[German–Polish Non-Aggression Pact]] of January 1934. The Polish General Staff, realising what was likely to happen, decided to share their work on Enigma decryption with their western allies. Marian Rejewski later wrote:
+
+{{blockquote|[I]t was not [as Harry Hinsley suggested, cryptological] difficulties of ours that prompted us to work with the British and French, but only the deteriorating political situation. If we had had no difficulties at all we would still, or even the more so, have shared our achievements with our allies as our contribution to the struggle against Germany.}}
+
+At a conference near Warsaw on 26 and 27 July 1939, the Poles revealed to the French and British that they had broken Enigma and pledged to give each a [[Polish Enigma double|Polish-reconstructed Enigma]], along with details of their Enigma-solving techniques and equipment, including Zygalski's perforated sheets and Rejewski's [[bomba (cryptography)|cryptologic bomb]]. In return, the British pledged to prepare two full sets of [[Zygalski sheets]] for all 60 possible wheel orders. Dilly Knox was a member of the British delegation. He commented on the fragility of the Polish system's reliance on the repetition in the indicator, because it might "at any moment be cancelled". In August, two Polish Enigma doubles were sent to Paris, whence [[Gustave Bertrand]] took one to London, handing it to [[Stewart Menzies]] of Britain's [[Secret Intelligence Service]] at [[London Victoria station|Victoria Station]].
+
+Gordon Welchman, who became head of [[Hut 6]] at Bletchley Park, wrote:
+
+{{blockquote|Hut 6 Ultra would never have got off the ground if we had not learned from the Poles, in the nick of time, the details both of the German military version of the commercial Enigma machine, and of the operating procedures that were in use.|title=The secret history of the Enigma machine|source=https://explorethearchive.com/the-enigma-machine|character=Gordon Welchman}}
+
+[[Peter Calvocoressi]], who became head of the Luftwaffe section in Hut 3, wrote of the Polish contribution:
+
+{{blockquote|The one moot point is—how valuable? According to the best qualified judges it accelerated the breaking of Enigma by perhaps a year. The British did not adopt Polish techniques but they were enlightened by them.}}
+
+===''PC Bruno''===
+{{Main|PC Bruno}}
+On 5 September 1939 the Cipher Bureau began preparations to evacuate key personnel and equipment from Warsaw. Soon a special evacuation train, the Echelon F, transported them eastward, then south. By the time the Cipher Bureau was ordered to cross the border into allied Romania on 17 September, they had destroyed all sensitive documents and equipment and were down to a single very crowded truck. The vehicle was confiscated at the border by a Romanian officer, who separated the military from the civilian personnel. Taking advantage of the confusion, the three mathematicians ignored the Romanian's instructions. They anticipated that in an internment camp they might be identified by the Romanian security police, in which the German [[Abwehr]] and [[Sicherheitsdienst|SD]] had informers.
+
+The mathematicians went to the nearest railway station, exchanged money, bought tickets, and boarded the first train headed south. After a dozen or so hours, they reached Bucharest, at the other end of Romania, where they went to the British embassy. Told by the British to "come back in a few days", they next tried the French embassy, introducing themselves as "friends of Bolek" (Bertrand's Polish code name) and asking to speak with a French military officer. A French Army colonel telephoned Paris and then issued instructions for the three Poles to be assisted in evacuating to Paris.
+
+On 20 October 1939, at the ''[[PC Bruno]]'' signals intelligence station outside Paris, the Polish cryptologists resumed work on German Enigma ciphers, in collaboration with Bletchley Park.
+
+''PC Bruno'' and Bletchley Park worked together closely, communicating via a [[telegraph]] line secured by the use of Enigma doubles. In January 1940 [[Alan Turing]] spent several days at ''PC Bruno'' conferring with his Polish colleagues. He had brought the Poles a full set of Zygalski sheets that had been punched at Bletchley Park by [[John R. F. Jeffreys|John Jeffreys]] using Polish-supplied information, and on 17 January 1940, the Poles made the first break into wartime Enigma traffic—that from 28 October 1939. From that time, until the [[Battle of France|Fall of France]] in June 1940, 17 per cent of the Enigma keys that were found by the allies were solved at ''PC Bruno''.
+
+Just before opening their 10 May 1940 offensive against the Low Countries and France, the Germans made the feared change in the indicator procedure, discontinuing the duplication of the enciphered message key. This meant that the Zygalski sheet method no longer worked. Instead, the cryptanalysts had to rely on exploiting the [[#Operating shortcomings|operator weaknesses]] described below, particularly the cillies and the [[Herivel tip]].
+
+After the June Franco-German armistice, the Polish cryptological team resumed work in France's southern "free zone", although probably not on Enigma. Marian Rejewski and Henryk Zygalski, after many travails, perilous journeys, and Spanish imprisonment, eventually reached Britain, where they were inducted into the Polish Army and put to work breaking German ''[[SS]]'' and ''[[Sicherheitsdienst|SD]]'' hand ciphers at a Polish signals facility in [[Boxmoor]], Hertfordshire. Due to their having been in occupied France, it was thought too risky to invite them to work at Bletchley Park.
+
+After the German occupation of [[Vichy France]], several of those who had worked at ''PC Bruno'' were captured by the Germans. Despite the dire circumstances in which some of them were held, none betrayed the secret of Enigma's decryption.
+
+===Operating shortcomings===
+Apart from some less-than-ideal inherent characteristics of the Enigma, in practice the system's weaknesses were the large numbers of messages and some of the ways that Enigma was used. The basic principle of this sort of enciphering machine is that it should deliver a stream of transformations that are difficult for a cryptanalyst to predict. Some of the instructions to operators, and operator sloppiness, had the opposite effect. Without these operating shortcomings, Enigma would almost certainly not have been broken.
+
+The shortcomings that Allied cryptanalysts exploited included:
+
+* The production of an early Enigma training manual containing an example of plaintext and its genuine ciphertext, together with the relevant message key. When Rejewski was given this in December 1932, it "made [his reconstruction of the Enigma machine] somewhat easier".
+* Repetition of the message key as described in [[#Rejewski's characteristics method|Rejewski's characteristics method]], above. (This helped in Rejewski's [[Marian Rejewski#Solving the wiring|solving Enigma's wiring]] in 1932, and was continued until May 1940.)
+* Repeatedly using the same stereotypical expressions in messages, an early example of what Bletchley Park would later term [[crib (cryptanalysis)|cribs]]. Rejewski wrote that "... we relied on the fact that the greater number of messages began with the letters ''ANX''—German for "to", followed by ''X'' as a spacer".
+* The use of easily guessed keys such as ''AAA'' or ''BBB'', or sequences that reflected the layout of the Enigma keyboard, such as "three [typing] keys that stand next to each other [o]r diagonally [from each other]..." At Bletchley Park such occurrences were called ''cillies''. Cillies in the operation of the four-rotor ''Abwehr'' Enigma included four-letter names and German obscenities. Sometimes, with multi-part messages, the operator would not enter a key for a subsequent part of a message, merely leaving the rotors as they were at the end of the previous part, to become the message key for the next part.
+* Having only three different rotors for the three positions in the scrambler. (This continued until December 1938, when it was increased to five and then eight for naval traffic in 1940.)
+* Using only six plugboard leads, leaving 14 letters ''unsteckered''. (This continued until January 1939 when the number of leads was increased, leaving only a small number of letters unsteckered.)
+
+Other useful shortcomings that were discovered by the British and later the American cryptanalysts included the following, many of which depended on frequent solving of a particular network:
+
+* The practice of re-transmitting a message in an identical, or near-identical, form on different cipher networks. If a message was transmitted using both a low-level cipher that Bletchley Park broke by hand, and using Enigma, the decrypt provided an excellent crib for Enigma decipherment.
+* For machines where there was a choice of more rotors than there were slots for them, a rule on some networks stipulated that no rotor should be in the same slot in the scrambler as it had been for the immediately preceding configuration. This reduced the number of wheel orders that had to be tried.
+* Not allowing a wheel order to be repeated on a monthly setting sheet. This meant that when the keys were being found on a regular basis, economies in excluding possible wheel orders could be made.
+* The stipulation, for Air Force operators, that no letter should be connected on the plugboard to its neighbour in the alphabet. This reduced the problem of identifying the plugboard connections and was automated in some Bombes with a Consecutive Stecker Knock-Out (CSKO) device.
+* The sloppy practice that [[John Herivel]] anticipated soon after his arrival at Bletchley Park in January 1940. He thought about the practical actions that an Enigma operator would have to make, and the short-cuts he might employ. He thought that, after setting the alphabet rings to the prescribed setting, and closing the lid, the operator might not turn the rotors by more than a few places in selecting the first part of the indicator. Initially this did not seem to be the case, but after the changes of May 1940, what became known as the [[Herivel tip]] proved to be most useful.
+* The practice of re-using some of the columns of wheel orders, ring settings, or plugboard connections from previous months. The resulting analytical short-cut was christened at Bletchley Park ''Parkerismus'' after Reg Parker, who had, through his meticulous record-keeping, spotted this phenomenon.
+* The re-use of a permutation in the German Air Force METEO code as the Enigma ''stecker'' permutation for the day.
+
+[[Mavis Lever]], a member of [[Dilly Knox]]'s team, recalled an occasion when there was an unusual message from the Italian Navy, whose exploitation led to the British victory at the [[Battle of Cape Matapan]]. {{blockquote|The one snag with Enigma of course is the fact that if you press ''A'', you can get every other letter but ''A''. I picked up this message and—one was so used to looking at things and making instant decisions&mdash;I thought: 'Something's gone. What has this chap done? There is not a single ''L'' in this message.'
+
+My chap had been told to send out a dummy message and he had just had a fag [cigarette] and pressed the last key on the keyboard, the ''L''. So that was the only letter that didn't come out. We had got the biggest crib we ever had, the encypherment was ''LLLL'', right through the message and that gave us the new wiring for the wheel [rotor]. That's the sort of thing we were trained to do. Instinctively look for something that had gone wrong or someone who had done something silly and torn up the rule book.}}
+
+Postwar debriefings of [[German code breaking in World War II|German cryptographic specialists]], conducted as part of project [[TICOM]], tend to support the view that the Germans were well aware that the un-steckered Enigma was theoretically solvable, but thought that the steckered Enigma had not been solved.
+
+===Crib-based decryption===
+The term ''[[known-plaintext attack|crib]]'' was used at Bletchley Park to denote any ''[[known plaintext]]'' or ''suspected plaintext'' at some point in an enciphered message.
+
+Britain's Government Code and Cipher School (GC&CS), before its move to Bletchley Park, had realised the value of recruiting mathematicians and logicians to work in codebreaking teams. [[Alan Turing]] had started to work for GC&CS on a part-time basis from about the time of the [[Munich Agreement|Munich Crisis]] in 1938. Gordon Welchman, another Cambridge mathematician, had also received initial training in 1938, and they both reported to Bletchley Park on 4 September 1939, the day after Britain declared war on Germany.
+
+Most of the Polish success had relied on the repetition within the indicator. But as soon as Turing moved to Bletchley Park—where he initially joined Dilly Knox in the research section—he set about seeking methods that did not rely on this weakness, as they correctly anticipated that the German Army and Air Force might follow the German Navy in improving their indicator system.
+
+The Poles had used an early form of crib-based decryption in the days when only six leads were used on the plugboard. The technique became known as the ''Forty Weepy Weepy'' method for the following reason. When a message was a continuation of a previous one, the plaintext would start with ''FORT'' (from ''Fortsetzung'', meaning "continuation") followed by the time of the first message given twice bracketed by the letter ''Y''. At this time numerals were represented by the letters on the top row of the Enigma keyboard. So, "continuation of message sent at 2330" was represented as ''FORTYWEEPYYWEEPY''.
+
+{| class="wikitable" | border=1 style="margin: 1em auto 1em auto; width:30%"
+|+ Top row of the Enigma keyboard and the numerals they represented
+|-
+|align="center" |Q||align="center" |W||align="center" |E||align="center" |R||align="center" |T||align="center" |Z||align="center" |U||align="center" |I||align="center" |O||align="center"|P
+|-
+|align="center" |1||align="center" |2||align="center" |3||align="center" |4||align="center" |5||align="center" |6||align="center" |7||align="center" |8||align="center" |9||align="center"|0
+|-
+|}
+
+Cribs were fundamental to the British approach to solving Enigma keys, but guessing the plaintext for a message was a highly skilled business. So in 1940 [[Stuart Milner-Barry]] set up a special ''Crib Room'' in Hut 8.
+
+Foremost among the knowledge needed for identifying cribs was the text of previous decrypts. Bletchley Park maintained detailed indexes of message preambles, of every person, of every ship, of every unit, of every weapon, of every technical term, and of repeated phrases such as forms of address and other German military jargon. For each message the [[traffic analysis]] recorded the radio frequency, the date and time of intercept, and the preamble—which contained the network-identifying discriminant, the time of origin of the message, the callsign of the originating and receiving stations, and the indicator setting. This allowed cross referencing of a new message with a previous one. Thus, as [[Derek Taunt]], another Cambridge mathematician-cryptanalyst wrote, the truism that "nothing succeeds like success" is particularly apposite here.
+
+Stereotypical messages included ''Keine besonderen Ereignisse'' ({{lit}} "no special occurrences", meaning "nothing to report"), ''An die Gruppe'' ("to the group") and a number that came from weather stations such as ''weub null seqs null null'' ("weather survey 0600"). This was actually rendered as ''WEUBYYNULLSEQSNULLNULL''. The word ''WEUB'' being short for ''Wetterübersicht'', ''YY'' was used as a separator, and ''SEQS'' was common abbreviation of ''sechs'' (German for "six"). As another example, Field Marshal [[Erwin Rommel]]'s Quartermaster started all of his messages to his commander with the same formal introduction.
+
+With a combination of probable plaintext fragment and the fact that no letter could be enciphered as itself, a corresponding ciphertext fragment could often be tested by trying every possible alignment of the crib against the ciphertext, a procedure known as ''crib-dragging''. This, however, was only one aspect of the processes of solving a key. Derek Taunt has written that the three cardinal personal qualities that were in demand for cryptanalysis were (1) a creative imagination, (2) a well-developed critical faculty, and (3) a habit of meticulousness. Skill at solving crossword puzzles was famously tested in recruiting some cryptanalysts. This was useful in working out plugboard settings when a possible solution was being examined. For example, if the crib was the word ''WETTER'' (German for "weather") and a possible decrypt before the plugboard settings had been discovered, was ''TEWWER'', it is easy to see that ''T'' with ''W'' are ''stecker partners''. These examples, although illustrative of the principles, greatly over-simplify the cryptanalysts' tasks.
+
+A fruitful source of cribs was re-encipherments of messages that had previously been decrypted either from a lower-level manual cipher or from another Enigma network. This was called a ''[[kiss (cryptanalysis)|kiss]]'' and happened particularly with German naval messages being sent in the ''dockyard cipher'' and repeated ''verbatim'' in an Enigma cipher. One German agent in Britain, [[Nathalie Sergueiew]], code-named ''Treasure'', who had been [[Double Cross System|'turned']] to work for the Allies, was very verbose in her messages back to Germany, which were then re-transmitted on the ''Abwehr'' Enigma network. She was kept going by [[MI5]] because this provided long cribs, not because of her usefulness as an agent to feed incorrect information to the ''Abwehr''.
+
+Occasionally, when there was a particularly urgent need to solve German naval Enigma keys, such as when an [[Arctic convoys of World War II|Arctic convoy]] was about to depart, mines would be laid by the [[Royal Air Force|RAF]] in a defined position, whose grid reference in the German naval system did not contain any of the words (such as ''sechs'' or ''sieben'') for which abbreviations or alternatives were sometimes used. The warning message about the mines and then the "all clear" message, would be transmitted both using the ''dockyard cipher'' and the [[U-boat]] Enigma network. This process of ''planting'' a crib was called ''[[gardening (cryptanalysis)|gardening]]''.
+
+Although ''cillies'' were not actually cribs, the ''chit-chat'' in clear that Enigma operators indulged in among themselves often gave a clue as to the cillies that they might generate.
+
+When captured German Enigma operators revealed that they had been instructed to encipher numbers by spelling them out rather than using the top row of the keyboard, Alan Turing reviewed decrypted messages and determined that the word ''eins'' ("one") appeared in 90% of messages.{{citation needed|date=February 2015}} Turing automated the crib process, creating the ''Eins Catalogue'', which assumed that ''eins'' was encoded at all positions in the plaintext. The catalogue included every possible rotor position for ''EINS'' with that day's ''wheel order'' and plugboard connections.
+
+===British ''bombe''===
+{{Main|Bombe}}
+The British bombe was an electromechanical device designed by Alan Turing soon after he arrived at Bletchley Park in September 1939. [[Harold Keen|Harold "Doc" Keen]] of the [[British Tabulating Machine Company]] (BTM) in [[Letchworth]] ({{convert|35|km|mi}} from Bletchley) was the engineer who turned Turing's ideas into a working machine—under the codename CANTAB. Turing's specification developed the ideas of the Poles' [[Bomba (cryptography)|''bomba kryptologiczna'']] but was designed for the much more general crib-based decryption.
+
+The bombe helped to identify the ''wheel order'', the initial positions of the rotor cores, and the ''stecker partner'' of a specified letter. This was achieved by examining all 17,576 possible scrambler positions for a set of ''wheel orders'' on a comparison between a crib and the ciphertext, so as to eliminate possibilities that [[contradiction|contradicted]] the Enigma's known characteristics. In the words of Gordon Welchman "the task of the bombe was simply to reduce the assumptions of ''wheel order'' and scrambler positions that required 'further analysis' to a manageable number".
+
+[[File:RebuiltBombeFrontView.jpg|thumb|300px|right|The working rebuilt bombe now at [[The National Museum of Computing]] on Bletchley Park. Each of the rotating drums simulates the action of an Enigma rotor. There are 36 Enigma-equivalents and, on the right end of the middle row, three ''indicator'' drums.]]
+
+The demountable drums on the front of the bombe were wired identically to the connections made by Enigma's different rotors. Unlike them, however, the input and output contacts for the left-hand and the right-hand sides were separate, making 104 contacts between each drum and the rest of the machine. This allowed a set of scramblers to be connected [[series and parallel circuits#Series circuits|in series]] by means of 26-way cables. Electrical connections between the rotating drums' wiring and the rear plugboard were by means of metal brushes. When the bombe detected a scrambler position with no contradictions, it stopped and the operator would note the position before restarting it.
+
+Although Welchman had been given the task of studying Enigma traffic [[call sign]]s and discriminants, he knew from Turing about the bombe design and early in 1940, before the first pre-production bombe was delivered, he showed him an idea to increase its effectiveness. It exploited the reciprocity in plugboard connections, to reduce considerably the number of scrambler settings that needed to be considered further. This became known as the ''diagonal board'' and was subsequently incorporated to great effect in all the bombes.
+
+A cryptanalyst would prepare a crib for comparison with the ciphertext. This was a complicated and sophisticated task, which later took the Americans some time to master. As well as the crib, a decision as to which of the many possible ''wheel orders'' could be omitted had to be made. Turing's [[Banburismus]] was used in making this major economy. The cryptanalyst would then compile a [[Bombe#Bombe menu|''menu'']] which specified the connections of the cables of the patch panels on the back of the machine, and a particular letter whose ''stecker partner'' was sought. The menu reflected the relationships between the letters of the crib and those of the ciphertext. Some of these formed loops (or ''closures'' as Turing called them) in a similar way to the ''cycles'' that the Poles had exploited.
+
+The reciprocal nature of the plugboard meant that no letter could be connected to more than one other letter. When there was a contradiction of two different letters apparently being ''stecker partners'' with the letter in the menu, the bombe would detect this, and move on. If, however, this happened with a letter that was not part of the menu, a false stop could occur. In refining down the set of stops for further examination, the cryptanalyst would eliminate stops that contained such a contradiction. The other plugboard connections and the settings of the alphabet rings would then be worked out before the scrambler positions at the possible true stops were tried out on [[Typex]] machines that had been adapted to mimic Enigmas. All the remaining stops would correctly decrypt the crib, but only the true stop would produce the correct plaintext of the whole message.
+
+To avoid wasting scarce bombe time on menus that were likely to yield an excessive number of false stops, Turing performed a lengthy probability analysis (without any electronic aids) of the estimated number of stops per rotor order. It was adopted as standard practice only to use menus that were estimated to produce no more than four stops per ''wheel order''. This allowed an 8-letter crib for a 3-closure menu, an 11-letter crib for a 2-closure menu, and a 14-letter crib for a menu with only one closure. If there was no closure, at least 16 letters were required in the crib. The longer the crib, however, the more likely it was that ''turn-over'' of the middle rotor would have occurred.
+
+The production model 3-rotor bombes contained 36 scramblers arranged in three banks of twelve. Each bank was used for a different ''wheel order'' by fitting it with the drums that corresponded to the Enigma rotors being tested. The first bombe was named ''Victory'' and was delivered to Bletchley Park on 18 March 1940. The next one, which included the diagonal board, was delivered on 8 August 1940. It was referred to as a ''spider bombe'' and was named ''Agnus Dei'' which soon became ''Agnes'' and then ''Aggie''. The production of British bombes was relatively slow at first, with only five bombes being in use in June 1941, 15 by the year end, 30 by September 1942, 49 by January 1943 but eventually 210 at the end of the war.
+
+A refinement that was developed for use on messages from those networks that disallowed the plugboard (''Stecker'') connection of adjacent letters, was the ''Consecutive Stecker Knock Out''. This was fitted to 40 bombes and produced a useful reduction in false stops.
+
+Initially the bombes were operated by ex-BTM servicemen, but in March 1941 the first detachment of members of the [[Women's Royal Naval Service]] (known as ''Wrens'') arrived at Bletchley Park to become bombe operators. By 1945 there were some 2,000 Wrens operating the bombes. Because of the risk of bombing, relatively few of the bombes were located at Bletchley Park. The largest two outstations were at [[Eastcote]] (some 110 bombes and 800 Wrens) and Stanmore (some 50 bombes and 500 Wrens). There were also bombe outstations at Wavendon, Adstock, and Gayhurst. Communication with Bletchley Park was by [[teleprinter]] links.
+
+When the German Navy started using 4-rotor Enigmas, about sixty 4-rotor bombes were produced at Letchworth, some with the assistance of the [[General Post Office]]. The [[NCR Corporation|NCR]]-manufactured [[Bombe#US Navy Bombe|US Navy 4-rotor bombes]] were, however, very fast and the most successful. They were extensively used by Bletchley Park over teleprinter links (using the [[Combined Cipher Machine]]) to [[OP-20-G]] for both 3-rotor and 4-rotor jobs.
+
+===''Luftwaffe'' Enigma===
+Although the German army, SS, police, and railway all used Enigma with similar procedures, it was the ''Luftwaffe'' (Air Force) that was the first and most fruitful source of Ultra intelligence during the war. The messages were decrypted in [[Hut 6]] at Bletchley Park and turned into intelligence reports in [[Hut 3]]. The network code-named 'Red' at Bletchley Park was broken regularly and quickly from 22 May 1940 until the end of hostilities. Indeed, the Air Force section of Hut 3 expected the new day's Enigma settings to have been established in Hut 6 by breakfast time. The relative ease of solving this network's settings was a product of plentiful cribs and frequent German operating mistakes. Luftwaffe chief [[Hermann Göring]] was known to use it for trivial communications, including informing squadron commanders to make sure the pilots he was going to decorate had been properly deloused. Such messages became known as "Göring funnies" to the staff at Bletchley Park.{{citation needed|date=June 2013}}
+
+===''Abwehr'' Enigma===
+[[File:Enigma-G.jpg|thumb|Enigma Model G, used by the ''[[Abwehr]]''. It had three ordinary rotors and a rotating reflector, multiple notches on the rotor rings, but no plugboard.]]
+
+[[Dilly Knox]]'s last great cryptanalytical success, before his untimely death in February 1943, was the solving of the ''[[Abwehr]]'' Enigma in 1941. Intercepts of traffic which had an 8-letter indicator sequence before the usual 5-letter groups led to the suspicion that a 4-rotor machine was being used. The assumption was correctly made that the indicator consisted of a 4-letter message key enciphered twice. The machine itself was similar to a [[Enigma machine#Military Enigma|Model G Enigma]], with three conventional rotors, though it did not have a plug board. The principal difference to the model G was that it was equipped with a reflector that was advanced by the stepping mechanism once it had been set by hand to its starting position (in all other variants, the reflector was fixed). Collecting a set of enciphered message keys for a particular day allowed ''cycles'' (or ''boxes'' as Knox called them) to be assembled in a similar way to the method used by the Poles in the 1930s.
+
+Knox was able to derive, using his ''buttoning up'' procedure, some of the wiring of the rotor that had been loaded in the fast position on that day. Progressively he was able to derive the wiring of all three rotors. Once that had been done, he was able to work out the wiring of the reflector. Deriving the indicator setting for that day was achieved using Knox's time-consuming ''rodding'' procedure. This involved a great deal of trial and error, imagination, and crossword puzzle-solving skills, but was helped by ''cillies''.
+
+The ''Abwehr'' was the [[military intelligence|intelligence]] and [[espionage|counter-espionage]] service of the German High Command. The spies that it placed in enemy countries used a lower level cipher (which was broken by [[Oliver Strachey]]'s section at Bletchley Park) for their transmissions. However, the messages were often then re-transmitted word-for-word on the ''Abwehr's'' internal Enigma networks, which gave the best possible crib for deciphering that day's indicator setting. Interception and analysis of ''Abwehr'' transmissions led to the remarkable state of affairs that allowed MI5 to give a categorical assurance that all the German spies in Britain were controlled as [[double agents]] working for the Allies under the [[Double Cross System]].
+
+===German Army Enigma===
+In the summer of 1940 following the [[Armistice of 22 June 1940|Franco-German armistice]], most Army Enigma traffic was travelling by land lines rather than radio and so was not available to Bletchley Park. The air [[Battle of Britain]] was crucial, so it was not surprising that the concentration of scarce resources was on ''Luftwaffe'' and ''Abwehr'' traffic. It was not until early in 1941 that the first breaks were made into German Army Enigma traffic, and it was the spring of 1942 before it was broken reliably, albeit often with some delay. It is unclear whether the German Army Enigma operators made deciphering more difficult by making fewer operating mistakes.
+
+===German Naval Enigma===
+The German Navy used Enigma in the same way as the German Army and Air Force until 1 May 1937, when they changed to a substantially different system. This used the same sort of setting sheet but, importantly, it included the ground key for a period of two, sometimes three days. The message setting was concealed in the indicator by selecting a trigram from a book (the ''[[Discriminant Book|Kenngruppenbuch]]'', or K-Book) and performing a bigram substitution on it. This defeated the Poles, although they suspected some sort of bigram substitution.
+
+The procedure for the naval sending operator was as follows. First they selected a trigram from the K-Book, say YLA. They then looked in the appropriate columns of the K-Book and selected another trigram, say YVT, and wrote it in the boxes at the top of the message form:
+{| class="wikitable" | border="1" style="margin: 1em auto 1em auto"
+|-
+| align="center" | . ||align="center" | Y ||align="center" | V || align="center" | T
+|-
+| align="center" | Y || align="center" | L || align="center" | A || align="center" | .
+|}
+They then filled in the "dots" with any letters, giving say:
+{| class="wikitable" | border="1" style="margin: 1em auto 1em auto"
+|-
+| align="center" | Q ||align="center" | Y ||align="center" | V || align="center" | T
+|-
+| align="center" | Y || align="center" | L || align="center" | A || align="center" | G
+|}
+Finally they looked up the vertical pairs of letters in the Bigram Tables
+{{center|QY→UB YL→LK VA→RS TG→PW}}
+and wrote down the resultant pairs, UB, LK, RS, and PW which were transmitted as two four letter groups at the start and end of the enciphered message. The receiving operator performed the converse procedure to obtain the message key for setting his Enigma rotors.
+
+As well as these ''Kriegsmarine'' procedures being much more secure than those of the German Army and Air Force, the German Navy Enigma introduced three more rotors (VI, VII, and VIII), early in 1940. The choice of three rotors from eight meant that there were a total of 336 possible permutations of rotors and their positions.
+
+Alan Turing decided to take responsibility for German naval Enigma because "no one else was doing anything about it and I could have it to myself". He established [[Hut 8]] with [[Peter Twinn]] and two "girls". Turing used the indicators and message settings for traffic from 1–8 May 1937 that the Poles had worked out, and some very elegant deductions to diagnose the complete indicator system. After the messages were deciphered they were translated for transmission to the Admiralty in [[Hut 4]].
+
+====German Navy 3-rotor Enigma====
+The first break of wartime traffic was in December 1939, into signals that had been intercepted in November 1938, when only three rotors and six plugboard leads had been in use. It used "Forty Weepy Weepy" cribs.
+
+A captured German ''Funkmaat'' ("radio operator") named Meyer had revealed that numerals were now spelt out as words. EINS, the German for "one", was present in about 90% of genuine German Navy messages. An EINS catalogue was compiled consisting of the encipherment of EINS at all 105,456 rotor settings. These were compared with the ciphertext, and when matches were found, about a quarter of them yielded the correct plaintext. Later this process was automated in Mr Freeborn's section using [[Unit record equipment|Hollerith equipment]]. When the ground key was known, this EINS-ing procedure could yield three bigrams for the tables that were then gradually assembled.
+
+Further progress required more information from German Enigma users. This was achieved through a succession of ''pinches'', the capture of Enigma parts and codebooks. The first of these was on 12 February 1940, when rotors VI and VII, whose wiring was at that time unknown, were captured from the {{GS|U-33|1936|6}}, by minesweeper {{HMS|Gleaner|J83|6}}.
+
+On 26 April 1940, the Narvik-bound German patrol boat ''VP2623'', disguised as a Dutch trawler named ''Polares'', was captured by {{HMS|Griffin|H31|6}}. This yielded an instruction manual, codebook sheets, and a record of some transmissions, which provided complete cribs. This confirmed that Turing's deductions about the trigram/bigram process were correct and allowed a total of six days' messages to be broken, the last of these using the first of the bombes. However, the numerous possible rotor sequences, together with a paucity of usable cribs, made the methods used against the Army and Air Force Enigma messages of very limited value with respect to the Navy messages.
+
+At the end of 1939, Turing extended the [[Clock (cryptography)|clock method]] invented by the Polish cryptanalyst [[Jerzy Różycki]]. Turing's method became known as "[[Banburismus]]". Turing said that at that stage "I was not sure that it would work in practice, and was not in fact sure until some days had actually broken". Banburismus used large cards printed in Banbury (hence the Banburismus name) to discover correlations and a statistical scoring system to determine likely rotor orders (''Walzenlage'') to be tried on the bombes. The practice conserved scarce bombe time and allowed more messages to be attacked. In practice, the 336 possible rotor orders could be reduced to perhaps 18 to be run on the bombes. Knowledge of the bigrams was essential for Banburismus, and building up the tables took a long time. This lack of visible progress led to [[Francis Birch (cryptographer)|Frank Birch]], head of the Naval Section, to write on 21 August 1940 to [[Edward Travis]], Deputy Director of Bletchley Park: {{blockquote|"I'm worried about Naval Enigma. I've been worried for a long time, but haven't liked to say as much... Turing and Twinn are like people waiting for a miracle, without believing in miracles..."}}
+
+Schemes for capturing Enigma material were conceived including, in September 1940, [[Operation Ruthless]] by Lieutenant Commander [[Ian Fleming]] (author of the [[James Bond]] novels). When this was cancelled, Birch told Fleming that "Turing and Twinn came to me like undertakers cheated of a nice corpse..."
+
+A major advance came through [[Operation Claymore]], a [[British Commandos|commando]] raid on the [[Lofoten Islands]] on 4 March 1941. The German [[naval trawler|armed trawler]] ''Krebs'' was captured, including the complete Enigma keys for February, but no bigram tables or K-book. However, the material was sufficient to reconstruct the bigram tables by "EINS-ing", and by late March they were almost complete.
+
+Banburismus then started to become extremely useful. Hut 8 was expanded and moved to 24-hour working, and a crib room was established. The story of Banburismus for the next two years was one of improving methods, of struggling to get sufficient staff, and of a steady growth in the relative and absolute importance of cribbing as the increasing numbers of bombes made the running of cribs ever faster. Of value in this period were further "pinches" such as those from the [[German weather ship Lauenburg#The weather ships and Enigma|German weather ships]] ''München'' and ''Lauenburg'' and the submarines {{GS|U-110|1940|2}} and {{GS|U-559||2}}.
+
+Despite the introduction of the 4-rotor Enigma for Atlantic U-boats, the analysis of traffic enciphered with the 3-rotor Enigma proved of immense value to the Allied navies. Banburismus was used until July 1943, when it became more efficient to use the many more bombes that had become available.
+
+====M4 (German Navy 4-rotor Enigma)====
+[[File:Bletchley Park Naval Enigma IMG 3604.JPG|thumb|The German Navy 4-rotor Enigma machine (M4) which was introduced for U-boat traffic on 1 February 1942]]
+On 1 February 1942, the Enigma messages to and from Atlantic U-boats, which Bletchley Park called "Shark", became significantly different from the rest of the traffic, which they called "Dolphin".
+
+This was because a new Enigma version had been brought into use. It was a development of the [[3-rotor Enigma]] with the reflector replaced by a thin rotor and a thin reflector. Eventually, there were two fourth-position rotors that were called Beta and Gamma and two thin reflectors, Bruno and Caesar, which could be used in any combination. These rotors were not advanced by the rotor to their right, in the way that rotors I through VIII were.
+
+The introduction of the [[fourth rotor]] did not catch Bletchley Park by surprise, because captured material dated January 1941 had made reference to its development as an adaptation of the 3-rotor machine, with the fourth rotor wheel to be a reflector wheel. Indeed, because of operator errors, the wiring of the new fourth rotor had already been worked out.
+
+This major challenge could not be met by using existing methods and resources for a number of reasons.
+# The work on the Shark cipher would have to be independent of the continuing work on messages in the Dolphin cipher.
+# Solving Shark keys on 3-rotor bombes would have taken 50 to 100 times as long as an average Air Force or Army job.
+# U-boat cribs at this time were extremely poor.
+
+It seemed, therefore, that effective, fast, 4-rotor bombes were the only way forward. This was an immense problem and it gave a great deal of trouble. Work on a high speed machine had been started by [[C. E. Wynn-Williams|Wynn-Williams]] of the [[Telecommunications Research Establishment|TRE]] late in 1941 and some nine months later [[Harold Keen]] of BTM started work independently. Early in 1942, Bletchley Park were a long way from possessing a high speed machine of any sort.
+
+Eventually, after a long period of being unable to decipher U-boat messages, a source of cribs was found. This was the [[Kurzsignale|Kurzsignale (short signals)]], a code which the German navy used to minimise the duration of transmissions, thereby reducing the risk of being located by [[high-frequency direction finding]] techniques. The messages were only 22 characters long and were used to report sightings of possible Allied targets. A copy of the code book had been captured from {{GS|U-110|1940|2}} on 9 May 1941. A similar coding system was used for weather reports from U-boats, the ''Wetterkurzschlüssel'', (Weather Short Code Book). A copy of this had been captured from {{GS|U-559||2}} on 29 or 30 October 1942. These short signals had been used for deciphering 3-rotor Enigma messages and it was discovered that the new rotor had a neutral position at which it, and its matching reflector, behaved just like a 3-rotor Enigma reflector. This allowed messages enciphered at this neutral position to be deciphered by a 3-rotor machine, and hence deciphered by a standard bombe. Deciphered Short Signals provided good material for bombe menus for Shark. Regular deciphering of U-boat traffic restarted in December 1942.
+
+===Italian naval Enigma===
+{{see also|Cryptanalysis of Italian naval codes}}
+In 1940 Dilly Knox wanted to establish whether the Italian Navy were still using the same system that he had cracked during the Spanish Civil War; he instructed his assistants to use rodding to see whether the crib ''PERX'' (''per'' being Italian for "for" and ''X'' being used to indicate a space between words) worked for the first part of the message. After three months there was no success, but [[Mavis Batey|Mavis Lever]], a 19-year-old student, found that rodding produced ''PERS'' for the first four letters of one message. She then (against orders) tried beyond this and obtained ''PERSONALE'' (Italian for "personal"). This confirmed that the Italians were indeed using the same machines and procedures.
+
+The subsequent breaking of Italian naval Enigma ciphers led to substantial Allied successes. The cipher-breaking was disguised by sending a [[aerial reconnaissance|reconnaissance aircraft]] to the known location of a warship before attacking it, so that the Italians assumed that this was how they had been discovered. The Royal Navy's victory at the [[Battle of Cape Matapan]] in March 1941 was considerably helped by Ultra intelligence obtained from Italian naval Enigma signals.
+
+===American ''bombes''===
+{{Further-text|[[Bombe#US Navy Bombe|US Navy Bombe]] and [[Bombe#US Army Bombe|US Army Bombe]]}}
+Unlike the situation at Bletchley Park, the United States armed services did not share a combined cryptanalytical service. Before the US joined the war, there was collaboration with Britain, albeit with a considerable amount of caution on Britain's side because of the extreme importance of Germany and her allies not learning that its codes were being broken. Despite some worthwhile collaboration among the cryptanalysts, their superiors took some time to achieve a trusting relationship in which both British and American bombes were used to mutual benefit.
+
+In February 1941, Captain [[Abraham Sinkov]] and Lieutenant [[Leo Rosen]] of the US Army, and Lieutenants Robert Weeks and [[Prescott Currier]] of the US Navy, arrived at Bletchley Park, bringing, among other things, a replica of the [[Type B Cipher Machine|"Purple" cipher machine]] for Bletchley Park's Japanese section in [[Hut 7]]. The four returned to America after ten weeks, with a naval radio direction-finding unit and many documents, including a "paper Enigma".
+
+The main American response to the 4-rotor Enigma was the US Navy bombe, which was manufactured in much less constrained facilities than were available in wartime Britain. Colonel [[John Tiltman]], who later became Deputy Director at Bletchley Park, visited the US Navy cryptanalysis office (OP-20-G) in April 1942 and recognised America's vital interest in deciphering U-boat traffic. The urgent need, doubts about the British engineering workload, and slow progress prompted the US to start investigating designs for a Navy bombe, based on the full [[blueprint]]s and wiring diagrams received by US Navy Lieutenants Robert Ely and Joseph Eachus at Bletchley Park in July 1942. Funding for a full, $2 million, Navy development effort was requested on 3 September 1942 and approved the following day.
+
+[[File:US-bombe.jpg|thumb|US Navy bombe. It contained 16 four-rotor Enigma-equivalents and was much faster than the British bombe.]]
+Commander Edward Travis, Deputy Director and [[Francis Birch (cryptographer)|Frank Birch]], Head of the German Naval Section travelled from Bletchley Park to Washington in September 1942. With [[Carl Frederick Holden]], US [[Director of Naval Communications]] they established, on 2 October 1942, a UK:US accord which may have "a stronger claim than [[1943 BRUSA Agreement|BRUSA]] to being the forerunner of the [[UK–USA Security Agreement|UKUSA Agreement]]", being the first agreement "to establish the special [[signals intelligence|Sigint]] relationship between the two countries", and "it set the pattern for UKUSA, in that the United States was very much the senior partner in the alliance". It established a relationship of "full collaboration" between Bletchley Park and OP-20-G.
+
+An all electronic solution to the problem of a fast bombe was considered, but rejected for pragmatic reasons, and a contract was let with the [[NCR Corporation|National Cash Register Corporation]] (NCR) in [[Dayton, Ohio]]. This established the [[United States Naval Computing Machine Laboratory]]. Engineering development was led by NCR's [[Joseph Desch]], a brilliant inventor and engineer. He had already been working on electronic counting devices.
+
+Alan Turing, who had written a memorandum to OP-20-G (probably in 1941), was seconded to the British Joint Staff Mission in Washington in December 1942, because of his exceptionally wide knowledge about the bombes and the methods of their use. He was asked to look at the bombes that were being built by NCR and at the security of certain speech cipher equipment under development at Bell Labs. He visited OP-20-G, and went to NCR in Dayton on 21 December. He was able to show that it was not necessary to build 336 Bombes, one for each possible rotor order, by utilising techniques such as [[Banburismus]]. The initial order was scaled down to 96 machines.
+
+The US Navy bombes used drums for the Enigma rotors in much the same way as the British bombes, but were very much faster. The first machine was completed and tested on 3 May 1943. Soon these bombes were more available than the British bombes at Bletchley Park and its outstations, and as a consequence they were put to use for Hut 6 as well as Hut 8 work. A total of 121 Navy bombes were produced.
+
+The US Army also produced a version of a bombe. It was physically very different from the British and US Navy bombes. A contract was signed with [[Bell Labs]] on 30 September 1942. The machine was designed to analyse 3-rotor, not 4-rotor traffic. It did not use drums to represent the Enigma rotors, using instead telephone-type relays. It could, however, handle one problem that the bombes with drums could not. The set of ten bombes consisted of a total of 144 Enigma-equivalents, each mounted on a rack approximately {{convert|7|ft|m}} long {{convert|8|ft|m}} high and {{convert|6|in|mm}} wide. There were 12 control stations which could allocate any of the Enigma-equivalents into the desired configuration by means of plugboards. Rotor order changes did not require the mechanical process of changing drums, but was achieved in about half a minute by means of push buttons. A 3-rotor run took about 10 minutes.
+
+===German suspicions===
+The German navy was concerned that Enigma could be compromised. They printed key schedules in water-soluble inks so that they could not be salvaged. They policed their operators and disciplined them when they made errors that could compromise the cipher. The navy minimised its exposure. For example, ships that might be captured or run aground did not carry Enigma machines. When ships were lost in circumstances where the enemy might salvage them, the Germans investigated. After investigating some losses in 1940, Germany changed some message indicators.
+
+In April 1940, at the [[Battles of Narvik]] the British sank eight German destroyers in Norway. The Germans concluded that it was unlikely that the British were reading Enigma.
+
+In May 1941, the British deciphered some messages that gave the location of some supply ships for the {{ship|German battleship|Bismarck}} and the {{ship|German cruiser|Prinz Eugen}}. As part of the ''[[Operation Rheinübung]]'' commerce raid, the Germans had assigned five tankers, two supply ships, and two scouts to support the warships. After the ''Bismarck'' was sunk, the British directed its forces to sink the supporting ships ''Belchen'', ''Esso Hamburg'', ''Egerland'', and some others. The Admiralty avoided the tanker ''Gedania'' and the scout ''Gonzenheim'', because sinking so many ships within one week would arouse suspicion that the British were reading Enigma. By chance, British forces found those two ships and sank them. The Germans investigated, but concluded Enigma had not been breached by either seizures or brute-force cryptanalysis. The Germans took steps to make Enigma more secure. Grid locations (an encoded latitude and longitude) were further disguised using digraph tables and a numeric offset. The U-boats were given their own network, ''Triton'', to minimise the chance of a cryptanalytic attack.
+
+In August 1941, the British captured {{GS|U-570||2}}. The Germans concluded the crew would have destroyed the important documents, so the cipher was safe. Even if the British had captured the materials intact and could read Enigma, the British would lose that ability when the keys changed on 1 November.
+
+Although Germany realised that convoys were avoiding its [[wolfpack (naval tactic)|wolfpacks]], it did not attribute that ability to reading Enigma traffic. Instead, [[Karl Dönitz]] thought that Britain was using radar and direction finding. The ''Kriegsmarine'' continued to increase the number of networks to avoid superimposition attacks on Enigma. At the beginning of 1943, the ''Kriegsmarine'' had 13 networks.
+
+The ''Kriegsmarine'' also improved the Enigma. On 1 February 1942, it started using a four-rotor version. The improved security meant that convoys no longer had as much information about the whereabouts of wolfpacks, and were therefore less able to avoid areas where they would be attacked. The increased success of wolfpack attacks following the strengthening of the encryption might have given the Germans a clue that the previous Enigma codes had been broken. This was not noticed because other things changed at the same time: the United States had entered the war, and Dönitz had sent U-boats to raid the US East Coast, where there were many easy targets.
+
+In early 1943, Dönitz was suspicious that the Allies were reading Enigma. German cryptanalysis of Allied communications showed surprising accuracy in its estimates of wolfpack sizes. It was concluded that Allied direction finding was the source. The Germans also recovered a [[cavity magnetron]], used to generate radar waves, from a British bomber. The conclusion was that the Enigma was secure. The Germans were still suspicious and each submarine got a key net in June 1944.
+
+By 1945, almost all German Enigma traffic (Wehrmacht military; comprising the [[German Army (Wehrmacht)|Heer]], Kriegsmarine, and Luftwaffe; and German intelligence and security services like the Abwehr, SD, etc.) could be decrypted within a day or two, yet the Germans remained confident of its security. They openly discussed their plans and movements, handing the Allies huge amounts of information, not all of which was used effectively. The [[Battle of Kasserine Pass]] was foreshadowed in decrypted Enigma traffic, but the Americans did not properly appreciate the information.{{citation needed|date=August 2012}}
+
+After the war, Allied [[TICOM]] project teams found and detained a considerable number of German cryptographic personnel. Among the things learned was that German cryptographers, at least, understood very well that Enigma messages might be read; they knew Enigma was not unbreakable. They found it impossible to imagine anyone going to the immense effort required. When Abwehr personnel who had worked on [[Fish (cryptography)|Fish cryptography]] and Russian traffic were interned at [[Rosenheim]] around May 1945, they were not at all surprised that Enigma had been broken,{{citation needed|date=January 2025}}{{dubious|date=January 2025}}<!--The revelation about the existence of Enigma was not made until 1973--> only that someone had mustered all the resources in time to do it. Dönitz had been advised that a cryptanalytic attack was the least likely of all security problems.{{citation needed|date=January 2020}}
+
+==After World War II==
+
+The break into Enigma had been kept a secret until 1974. The machines were used well into the 1960s in Switzerland, Norway ([[Norenigma]]), and in some British colonies.
+
+In 1995, an algorithm was published that would solve the rotor configuration of 100% of all Enigma messages of 500 characters or more using an [[Index of coincidence|Index of Coincidence]]. However, it could not reliably solve plugboard settings.
+
+Modern computers can be used to solve Enigma, using a variety of techniques. There have been projects to decrypt some remaining messages using [[distributed computing]].
+
+On 8 May 2020, to mark the 75th anniversary of [[Victory in Europe Day|VE Day]], [[GCHQ]] released the last Enigma message to be decrypted by codebreakers at Bletchley Park. The message was sent at 07:35 on 7 May 1945 by a German radio operator in [[Cuxhaven]] and read: "British troops entered Cuxhaven at 14:00 on 6 May 1945 – all radio broadcast will cease with immediate effect – I wish you all again the best of luck". It was immediately followed by another message: "Closing down forever – all the best – goodbye".
+
+==See also==
+<!---♦♦♦ Please keep the list in alphabetical order by LAST NAME ♦♦♦--->
+*[[Cryptanalysis of the Lorenz cipher]]
+*[[I. J. Good]]&nbsp;– cryptologist at Bletchley Park
+*[[Good–Turing frequency estimation]]
+*[[Gisbert Hasenjaeger]]&nbsp;– responsible for Enigma security
+*[[Erhard Maertens]]&nbsp;– investigated Enigma security
+*[[Tadeusz Pełczyński#Enigma|Tadeusz Pełczyński]]&nbsp;– Polish Army major general
+*''[[The Imitation Game]]''
+*[[SIGABA]], U.S. WWII rotor machine designed to overcome Enigma's weaknesses
+*[[Typex]], British WWII rotor machine with increased security
+
+==References and notes==
+{{Reflist|30em}}
+
+==Bibliography==
+{{Refbegin|30em}}
+* {{citation |last=Alexander |first=C. Hugh O'D. |author-link=Conel Hugh O'Donel Alexander |year=c. 1945 |title=Cryptographic History of Work on the German Naval Enigma |publisher=The National Archives, Kew, Reference HW 25/1 |url=http://www.ellsbury.com/gne/gne-000.htm}}
+*{{citation |last=Bamford |first=James |author-link=James Bamford |year=2001 |title=Body Of Secrets: How America's NSA & Britain's GCHQ Eavesdrop on the World |publisher=Century |isbn=978-0-7126-7598-7}}
+* {{citation |last=Batey |first=Mavis |author-link=Mavis Batey |year=2008 |title=From Bletchley with Love |location=Milton Keynes |publisher=Bletchley Park Trust |isbn=978-1-906723-04-0}}
+* {{citation |last=Bauer |first=Friedrich Ludwig |author-link=Friedrich L. Bauer |title=Decrypted secrets: methods and maxims of cryptology |place=New York |publisher=Springer |year=2002 |edition=3rd rev. and updated |isbn=978-3-540-42674-5}}
+* {{citation |last=Bauer |first=F.L. |author-link=Friedrich L. Bauer |title=The history of information security: a comprehensive handbook |publisher=Elsevier |year=2007 |editor-last=de Leeuw |editor-first=Karl |editor2-last=Bergstra |editor2-first=J. A. |chapter=British and US cryptanalysis of the Wehrmacht Enigma |isbn=978-0-444-51608-4}}
+* {{citation |last=Bertrand |first=Gustave |author-link=Gustave Bertrand |year=1973 |title=Enigma ou la plus grand énigme de la guerre 1939–1945 (Enigma: The Greatest Enigma of the War of 1939–1945) |location=Paris |publisher=Librairie Plon}}
+* {{citation |last=Bloch |first=Gilbert |publication-date=July 1987 |year=1987 |title=Enigma before Ultra: Polish Work and the French Contribution – Translated by C.A. Deavours |periodical=[[Cryptologia]] |volume=11 |pages=142–155 |doi=10.1080/0161-118791861947}}
+* {{citation |last=Brown |first=Brandi Dawn |title=Enigma- German Machine Cipher- "Broken" by Polish Cryptologists |year=1998 |url=https://mathweb.ucsd.edu/~crypto/students/enigma.html#pt4 |access-date=9 June 2010}}
+* {{citation |last=Brzezinski |first=Zbigniew |author-link=Zbigniew Brzezinski |title=Marian Rejewski, 1905–1980: living with the Enigma secret |place=Bydgoszcz, Poland |publisher=Bydgoszcz City Council |year=2005 |contribution=The Unknown Victors |editor-last=Ciechanowski |editor-first=Stanisław |pages=15–18 |isbn=83-7208-117-4}}
+* {{citation |last=Budiansky |first=Stephen |year=2000 |title=Battle of wits: The Complete Story of Codebreaking in World War II |publisher=Free Press |isbn=978-0-684-85932-3 |url=https://archive.org/details/battleofwitscomp00budi}}
+* {{citation |last=Calvocoressi |first=Peter |author-link=Peter Calvocoressi |title=Top Secret Ultra |place=Kidderminster, England |publisher=M & MBaldwin |orig-year=1980 |year=2001 |isbn=0-947712-41-0}}
+* {{citation |last=Churchhouse |first=Robert |title=Codes and Ciphers: Julius Caesar, the Enigma and the Internet |place=Cambridge |publisher=Cambridge University Press |year=2002 |isbn=978-0-521-00890-7 |url=https://archive.org/details/codesciphersjuli0000chur |url-access=registration}}
+* {{citation |last=Comer |first=Tony |title=Commentary: Poland's Decisive Role in Cracking Enigma and Transforming the UK's SIGINT Operations |publisher=[[Royal United Services Institute]] |year=2021 |url=https://rusi.org/explore-our-research/publications/commentary/polands-decisive-role-cracking-enigma-and-transforming-uks-sigint-operations}}
+* {{citation |last=Copeland |first=Jack |author-link=Jack Copeland |year=2004 |contribution=Enigma |editor-last=Copeland |editor-first=B. Jack |editor-link=Jack Copeland |title=The Essential Turing: Seminal Writings in Computing, Logic, Philosophy, Artificial Intelligence, and Artificial Life ''plus'' The Secrets of Enigma |location=Oxford |publisher=Oxford University Press |isbn=0-19-825080-0}}
+* {{citation |last1=DeBrosse |first1=Jim |last2=Burke |first2=Colin |year=2004 |title=The Secret in Building 26: The Untold Story of America's Ultra War Against the U-Boat Enigma Codes |publisher=Random House |isbn=978-0-375-50807-3 |url=https://archive.org/details/secretinbuilding00debr |url-access=registration}}
+* {{citation |last=Ellsbury |first=Graham |publication-date=1998 |year=1998a |title=Description of the Enigma Machine |series=The Enigma Machine: Its Construction, Operation and Complexity |url=http://www.ellsbury.com/enigma2.htm |access-date=21 January 2009}}
+* {{citation |last=Ellsbury |first=Graham |year=1998b |contribution=The Turing Bombe: What it was and how it worked |contribution-url=http://www.ellsbury.com/bombe3.htm |editor-last=Ellsbury |editor-first=Graham |title=The Enigma and the Bombe |url=http://www.ellsbury.com/enigmabombe.htm}}
+* {{citation |last=Erskine |first=Ralph | author-link = Ralph Erskine (historian) |title=The Holden Agreement on Naval Sigint: The First BRUSA? |journal=Intelligence and National Security |volume=14 |issue=2 |year=1999 |pages=187–189 |doi=10.1080/02684529908432545 |url=http://intellit.muskingum.edu/alpha_folder/E_folder/erskine_a-o.html}}
+* {{citation |last=Erskine |first=Ralph |publication-date=December 2006 |year=2006 |title=The Poles Reveal their Secrets: Alastair Denniston's Account of the July 1939 Meeting at Pyry |periodical=[[Cryptologia]] |volume=30 |issue=4 |pages=294–305 |doi=10.1080/01611190600920944 |s2cid=13410460}}
+* {{Citation | editor-last = Erskine | editor-first = Ralph | editor-link = Ralph Erskine (historian) | editor2-last = Smith | editor2-first = Michael | editor2-link = Michael Smith (newspaper reporter) |title=The Bletchley Park Codebreakers |publisher=Biteback Publishing Ltd |year=2011 |isbn=978-1-84954-078-0}}
+* {{citation |last=Ferris |first=John Robert |title=Intelligence and strategy: selected essays |publisher=Routledge |year=2005 |edition=illustrated |isbn=978-0-415-36194-1}}
+* {{citation |contribution=Facts and Myths of Enigma: Breaking Stereotypes |last1=Gaj |first1=Kris |last2=Orlowski |first2=Arkadiusz |editor-first=Eli |pages=106–122 |editor-last=Biham |title=Advances in Cryptology — EUROCRYPT 2003: International Conference on the Theory and Applications of Cryptographic Techniques |location=Warsaw, Poland |date=May 2003 |id=LNCS 2656 |publisher=Springer-Verlag |isbn=3-540-14039-5 |url=https://books.google.com/books?}}
+* {{citation |last=Gannon |first=James |author-link=James Gannon (author) |year=2002 |title=Stealing Secrets, Telling Lies: How Spies and Codebreakers Helped Shape the Twentieth Century |location=Washington, D.C. |publisher=Brassey's |isbn=978-1-57488-367-1 |url=https://archive.org/details/stealingsecretst00gann}}
+* {{citation |last=Gillogly |first=James J. |author-link=James J. Gillogly |publication-date=October 1995 |year=1995 |title=Ciphertext-only Cryptanalysis of Enigma |periodical=[[Cryptologia]] |volume=19 |issue=4 |pages=405–412 |doi=10.1080/0161-119591884060 |url=http://members.fortunecity.com/jpeschel/gillog1.htm |access-date=1 February 2009 |url-status=dead |archive-url=https://web.archive.org/web/20090207192848/http://members.fortunecity.com/jpeschel/gillog1.htm |archive-date=7 February 2009}}
+*{{citation |last=Harper |first=John |publication-date=Spring 2009 |periodical=Resurrection: The Bulletin of the Computer Conservation Society |publisher=British Computer Society |issue=46 |pages=7–8 |title=Bombe Rebuild Project |url=https://www.computerconservationsociety.org/resurrection.htm |access-date=22 May 2009}}
+* {{citation |last=Herivel |first=John |author-link=John Herivel |year=2008 |title=Herivelismus and the German Military Enigma |publisher=M.& M.Baldwin |isbn=978-0-947712-46-4}}
+* {{citation |last=Hinsley |first=F.H. |author-link=Harry Hinsley |orig-year=1992 |year=1993 |contribution=Introduction: The influence of Ultra in the Second World War |editor-last=Hinsley |editor-first=F.H. |editor-link=Harry Hinsley |editor2-last=Stripp |editor2-first=Alan |title=Codebreakers: The inside story of Bletchley Park |location=Oxford |publisher=Oxford University Press |isbn=978-0-19-280132-6}}
+* {{citation |last=Hodges |first=Andrew |author-link=Andrew Hodges |year=1983 |edition=1992 |title=[[Alan Turing: The Enigma]] |location=London |publisher=[[Vintage Books|Vintage]] |isbn=978-0-09-911641-7}}
+* {{citation |last=Hodges |first=Andrew |author-link=Andrew Hodges |year=1995 |title=Alan Turing: a short biography: Part 4 The Second World War |url=https://www.turing.org.uk/publications/dnb.html |access-date=23 October 2008}}
+* {{citation |last1=Huttenhain |first1=Orr |last2=Fricke |title=OKW/Chi Cryptanalytic Research on Enigma, Hagelin and Cipher Teleprinter Messages |publisher=TICOM |year=1945 |url=https://drive.google.com/file/d/0B7sNVKDp-yiJOWYxZWFmNDgtODUyMS00Y2FiLThkNWItYmQ5N2JmMzEyMzIz/view}} This paper was written at the request of [[TICOM]] to show how the various German cipher machines could be solved. The authors assume [[Kerckhoffs's principle]] and do not address the breaking of the machines, only the solving of keys.
+* {{citation |last=Jacobsen |first=Philip H. |title=British provision of German naval Enigma information |year=2000 |url=http://lists101.his.com/pipermail/intelforum/2000-August/002580.html |access-date=26 March 2010 |url-status=dead |archive-url=https://web.archive.org/web/20110711171026/http://lists101.his.com/pipermail/intelforum/2000-August/002580.html |archive-date=2011-07-11}}
+* {{citation |last=Jones |first=R. V. |author-link=Reginald Victor Jones |title=Most Secret War |place=London |publisher=Book Club Associates |year=1978 |isbn=978-0-241-89746-1 |url=https://archive.org/details/mostsecretwar0000jone}}
+* {{citation |last=Kahn |first=David |author-link=David Kahn (writer) |year=1991 |title=Seizing the Enigma: The Race to Break the German U-boat Codes, 1939–1943 |publisher=Houghton Mifflin Co. |isbn=978-0-395-42739-2}}
+* {{citation |last=Kahn |first=David |author-link=David Kahn (writer) |title=The Codebreakers: The Comprehenisve History of Secret Communication from Ancient Times to the Internet |place=New York |publisher=Scribner |year=1966 |isbn=0-684-83130-9}}
+* {{citation |last=Kozaczuk |first=Władysław |author-link=Władysław Kozaczuk |year=1984 |title=Enigma: How the German Machine Cipher was Broken, and how it was Read by the Allies in World War Two, edited and translated by Christopher Kasparek |edition=2 |place=Frederick, Maryland |publisher=University Publications of America |isbn=978-0-89093-547-7}} A revised and augmented translation of ''W kręgu enigmy'', [[Warsaw]], Książka i Wiedza, 1979, supplemented with appendices by [[Marian Rejewski]]
+* {{citation |last1=Kozaczuk |first1=Władysław |author-link=Władysław Kozaczuk |last2=Straszak |first2=Jerzy |year=2004 |title=Enigma: How the Poles Broke the Nazi Code |place=New York |publisher=Hippocrene Books |isbn=978-0-7818-0941-2}} Largely an abridgment of {{Harvnb|Kozaczuk|1984}}, minus Rejewski's appendices, which have been replaced with appendices of varying quality by other authors
+* {{citation |last=Lewin |first=Ronald |title=Ultra Goes to War: The Secret Story |edition=Classic Penguin |series=Classic Military History |orig-year=1978 |year=2001 |publication-date=2001 |publisher=Hutchinson & Co |location=London, England |isbn=978-1-56649-231-7}}
+* {{citation |last=Mahon |first=A.P. |title=The History of Hut Eight 1939–1945 |publisher=UK National Archives Reference HW 25/2 |year=1945 |url=http://www.ellsbury.com/hut8/hut8-000.htm |access-date=10 December 2009}}
+* {{citation |last=Miller |first=A. Ray |year=2001 |title=The Cryptographic Mathematics of Enigma |publisher=Center for Crypologic History |url=http://ed-thelen.org/comp-hist/NSA-Comb.html |access-date=1 February 2009 |url-status=dead |archive-url=https://web.archive.org/web/20081202112306/http://www.ed-thelen.org/comp-hist/NSA-Comb.html |archive-date=2 December 2008}}
+* {{citation |last=Milner-Barry |first=Stuart |author-link=Stuart Milner-Barry |year=1993 |contribution=Navy Hut 6: Early days |editor-last=Hinsley |editor-first=F.H. |editor-link=Harry Hinsley |editor2-last=Stripp |editor2-first=Alan |title=Codebreakers: The inside story of Bletchley Park |location=Oxford |publisher=Oxford University Press |isbn=978-0-19-280132-6}}
+* {{citation |last=Morris |first=Christopher |year=1993 |contribution=Navy Ultra's Poor Relations |editor-last=Hinsley |editor-first=F.H. |editor-link=Harry Hinsley |editor2-last=Stripp |editor2-first=Alan |title=Codebreakers: The inside story of Bletchley Park |location=Oxford |publisher=Oxford University Press |isbn=978-0-19-280132-6}}
+* {{citation |last=Murray |first=Joan |year=1993 |contribution=Hut 8 and naval Enigma, Part 1 |editor-last=Hinsley |editor-first=F.H. |editor-link=Harry Hinsley |editor2-last=Stripp |editor2-first=Alan |title=Codebreakers: The inside story of Bletchley Park |location=Oxford |publisher=Oxford University Press |isbn=978-0-19-280132-6}}
+* {{citation |last=Rejewski |first=Marian |author-link=Marian Rejewski |title=Sprawozdanie z prac kryptologicznych nad niemieckim szyfrem maszynowym Enigma |trans-title=Report of Cryptologic Work on the German Enigma Machine Cipher |language=pl |year=1942}} Manuscript written at [[Uzès]], France
+* {{citation |last=Rejewski |first=Marian |author-link=Marian Rejewski |title=Wspomnienia z mej pracy w Biurze Szyfrów Oddziału II Sztabu Głównego 1932–1945 |trans-title=Memoirs of My Work in the Cipher Bureau of Section II of the [Polish] General Staff |language=pl |year=1967}} Manuscript
+* {{citation |last=Rejewski |first=Marian |author-link=Marian Rejewski |title=An Application of the Theory of Permutations in Breaking the Enigma Cipher |journal=Applicationes Mathematicae |volume=16 |issue=4 |year=1980 |pages=543–559 |issn=1730-6280 |doi=10.4064/am-16-4-543-559 |doi-access=free |url=https://cryptocellar.org/}}
+* {{citation |last=Rejewski |first=Marian |author-link=Marian Rejewski |publication-date=January 1982 |year=1982 |title=Remarks on Appendix 1 to ''British Intelligence in the Second World War'' by F.H. Hinsley", translated by Christopher Kasparek |periodical=Cryptologia |volume=6 |issue=1 |pages=75–83 |doi=10.1080/0161-118291856867}}
+* {{citation |last1=Rejewski |first1=Marian |author-link=Marian Rejewski |last2=Woytak |first2=Richard |author2-link=Richard Woytak |year=1984b |title=A Conversation with Marian Rejewski}} Appendix B of {{Harvnb|Kozaczuk|1984|pp=229–40}}
+* {{citation |last=Rejewski |first=Marian |author-link=Marian Rejewski |year=1984c |title=Summary of Our Methods for Reconstructing ENIGMA and Reconstructing Daily Keys, and of German Efforts to Frustrate Those Methods}} Appendix C of {{Harvnb|Kozaczuk|1984|pp=241–245}}
+* {{citation |last=Rejewski |first=Marian |author-link=Marian Rejewski |year=1984d |title=How the Polish Mathematicians Broke Enigma}} Appendix D of {{Harvnb|Kozaczuk|1984|pp=246–271}}
+* {{citation |last=Rejewski |first=Marian |author-link=Marian Rejewski |year=1984e |title=The Mathematical Solution of the Enigma Cipher}} Appendix E of {{Harvnb|Kozaczuk|1984|pp=272–291}}
+* {{citation |last=Rezabek |first=Randy |title=TICOM: the Hunt for Hitler's Codebreakers |publisher=Independently published |year=2017 |isbn=978-1521969021 |url=http://www.ticomarchive.com/home |access-date=18 February 2018 |url-status=usurped |archive-url=https://web.archive.org/web/20220526090410/http://www.ticomarchive.com/home |archive-date=26 May 2022}}
+* {{citation |last=Sale |first=Tony |author-link=Anthony Sale |title=The difficulties in breaking German Naval Enigma: Turing's Work |work=Bigrams, Trigrams and Naval Enigma |url=https://www.codesandciphers.org.uk/lectures/naval1.htm |access-date=26 November 2009}}
+* {{citation |last=Sebag-Montefiore |first=Hugh |author-link=Hugh Sebag-Montefiore |year=2000 |title=Enigma: The Battle for the Code |location=New York |publisher=John Wiley |isbn=0-471-40738-0 |url=https://books.google.com/books?id=AUnmwrKa1XcC&pg=PA21}}
+* {{citation |last=Sebag-Montefiore |first=Hugh |author-link=Hugh Sebag-Montefiore |edition=Cassell Military Paperbacks |year=2004 |orig-year=2000 |title=Enigma: The Battle for the Code |location=London |publisher=Weidenfeld & Nicolson |isbn=978-0-297-84251-4 |url=https://archive.org/details/enigmabattleforc0000seba |url-access=registration}}
+* {{citation |last=Singh |first=Simon |author-link=Simon Singh |year=1999 |title=[[The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography]] |location=London |publisher=Fourth Estate |isbn=1-85702-879-1}}
+* {{citation |last=Smith |first=Michael |author-link=Michael Smith (newspaper reporter) |title=Station X: The Codebreakers of Bletchley Park |edition=Pan Books |series=Pan Grand Strategy Series |year=2007 |orig-year=1998 |publisher=Pan MacMillan Ltd |location=London |isbn=978-0-330-41929-1}}
+* {{citation |last=Smith |first=Michael |author-link=Michael Smith (newspaper reporter) |year=2006 |contribution=How it began: Bletchley Park Goes to War |editor-last=Copeland |editor-first=B Jack |editor-link=Jack Copeland |title=Colossus: The Secrets of Bletchley Park's Codebreaking Computers |location=Oxford |publisher=Oxford University Press |isbn=978-0-19-284055-4}}
+* {{citation |title=Spymistress: The Life of Vera Atkins, the Greatest Female Secret Agent of World War II |last=Stevenson |first=William |publisher=[[Arcade Publishing]] |via=[[Internet Archive]] |date=November 2006 |isbn=978-1-55970-763-3 |url=https://archive.org/details/spymistresslifeo00will |url-access=registration}}
+* {{citation |last1=Sullivan |first1=Geoff |last2=Weierud |first2=Frode |year=2005 |title=Breaking German Army Ciphers |periodical=Cryptologia |volume=24 |issue=3 |pages=193–232 |doi=10.1080/01611190508951299 |s2cid=23474156 |url=https://cryptocellar.org/pubs/bgac.pdf |access-date=16 October 2008 |url-status=dead |archive-url=https://web.archive.org/web/20170929044802/http://cryptocellar.org/pubs/bgac.pdf |archive-date=29 September 2017}}
+* {{citation |last=Taunt |first=Derek |author-link=Derek Taunt |year=1993 |contribution=Hut 6: 1941-1945 |editor-last=Hinsley |editor-first=F.H. |editor-link=Harry Hinsley |editor2-last=Stripp |editor2-first=Alan |title=Codebreakers: The inside story of Bletchley Park |location=Oxford |publisher=Oxford University Press |isbn=978-0-19-280132-6}}
+* {{citation |last=Turing |first=Alan |author-link=Alan Turing |year=1940 |editor-first=Ralph |editor-last=Erskine |editor2-last=Marks |editor2-first=Philip |editor3-last=Weierud |editor3-first=Frode |title=Turing's Treatise on Enigma (The Prof's Book) |url=http://cryptocellar.org/Turing/ |access-date=1 February 2009 |url-status=dead |archive-url=https://web.archive.org/web/20110910054444/http://www.cryptocellar.org/Turing/ |archive-date=10 September 2011}}
+* {{citation |last=Turing |first=Alan |author-link=Alan Turing |year=c. 1941 |contribution=Memorandum to OP-20-G on Naval Enigma |editor-last=Copeland |editor-first=B. Jack |editor-link=Jack Copeland |title=The Essential Turing: Seminal Writings in Computing, Logic, Philosophy, Artificial Intelligence, and Artificial Life ''plus'' The Secrets of Enigma |location=Oxford |publisher=Oxford University Press |pages=341–352 |isbn=0-19-825080-0}}
+* {{citation |last=Twinn |first=Peter |author-link=Peter Twinn |year=1993 |contribution=The ''Abwehr'' Enigma |editor-last=Hinsley |editor-first=F.H. |editor-link=Harry Hinsley |editor2-last=Stripp |editor2-first=Alan |title=Codebreakers: The inside story of Bletchley Park |location=Oxford |publisher=Oxford University Press |isbn=978-0-19-280132-6}}
+* {{citation |last=US Army |title=The US 6812 Division Bombe Report Eastcote 1944 |year=1945 |url=https://www.codesandciphers.org.uk/documents/bmbrpt/bmbpg001.htm |access-date=1 May 2010 |url-status=live |archive-url=https://web.archive.org/web/20090722155542/http://www.codesandciphers.org.uk/documents/bmbrpt/bmbpg001.HTM |archive-date=22 July 2009}}
+* {{citation |last=Welchman |first=Gordon |author-link=Gordon Welchman |orig-year=1982 |year=1984 |title=The Hut Six story: Breaking the Enigma codes |location=Harmondsworth, England |publisher=Penguin Books |isbn=9780140053050 |url=https://archive.org/details/hutsixstorybreak00welc}} An early publication containing several misapprehensions that are corrected in an ''addendum'' in the 1997 edition.
+* {{citation |last=Welchman |first=Gordon |author-link=Gordon Welchman |orig-year=1982 |year=1997 |title=The Hut Six story: Breaking the Enigma codes |location=Cleobury Mortimer, England |publisher=M&M Baldwin |isbn=978-0-947712-34-1}} New edition updated with an ''addendum'' consisting of a 1986 paper written by Welchman that corrects his misapprehensions in the 1982 edition.
+* {{citation |last=Welchman |first=Gordon |author-link=Gordon Welchman |title=From Polish Bomba to British Bombe: the Birth of Ultra |journal=Intelligence and National Security |volume=1 |issue=1 |year=1986 |place=Ilford, England |publisher=Frank Cass & Company |pages=71–110 |doi=10.1080/02684528608431842}} This is reproduced as an ''addendum'' in the 1997 edition of Welchman's 'The Hut Six Story'.
+* {{citation |last1=Wenger |first1=J. N. |last2=Engstrom |first2=H. T. |last3=Meader |first3=R. I. |orig-year=1944 |year=1998 |title=History of The Bombe Project: Memorandum for the Director of Naval Communications |publisher=The Mariner's Museum |url=http://www.daytoncodebreakers.org/docs/bombe_history.htm |url-status=dead |archive-url=https://web.archive.org/web/20100616230244/http://www.daytoncodebreakers.org/docs/bombe_history.htm |archive-date=2010-06-16}}
+* {{citation |last=Wenger |first=J. N. |title=Solving the Enigma: History of the Cryptanalytic Bombe, a NSA phamphlet |chapter=Appendix II: U. S. Army Cryptanalytic Bombe |year=1945 |chapter-url=http://ed-thelen.org/comp-hist/NSA-Enigma.html |access-date=9 April 2010 |url-status=dead |archive-url=https://web.archive.org/web/20100317234354/http://ed-thelen.org/comp-hist/NSA-Enigma.html |archive-date=17 March 2010}} (also National Archives and Records Administration Record Group 457, File 35701.)
+* {{citation |last=Wilcox |first=Jennifer E. |year=2001 |title=Solving the Enigma: History of the Cryptanalytic Bombe, a NSA phamphlet |chapter=About the Enigma |publisher=Center for Cryptologic History, National Security Agency |chapter-url=http://ed-thelen.org/comp-hist/NSA-Enigma.html |access-date=9 April 2010 |url-status=dead |archive-url=https://web.archive.org/web/20100317234354/http://ed-thelen.org/comp-hist/NSA-Enigma.html |archive-date=17 March 2010}} ASIN: B0006RLRA4
+* {{citation |last=Winterbotham |first=F. W. |author-link=F. W. Winterbotham |title=The Ultra secret: the inside story of Operation Ultra, Bletchley Park and Enigma |place=London |publisher=Orion Books Ltd |orig-year=1974 |year=2000 |oclc=222735270 |isbn=978-0-7528-3751-2}}
+{{Refend}}
+
+==External links==
+* Dayton Daily News, [http://www.daytondailynews.com/project/content/project/enigma/enigma_index.html Dayton's Code Breakers] {{Webarchive|url=https://web.archive.org/web/20120402224629/http://www.daytondailynews.com/project/content/project/enigma/enigma_index.html |date=2 April 2012}}.
+* Dayton Codebreakers Web site, [https://daytoncodebreakers.org/ DaytonCodebreakers.org]
+* [https://media.defense.gov/2022/Sep/29/2003087366/-1/-1/0/SOLVING%20THE%20ENIGMA%20-%20HISTORY%20OF%20THE%20CRYPTANALYTIC%20BOMBE.PDF Solving the Enigma – History of the Cryptanalytic Bombe] (National Security Agency)]
+* [https://web.archive.org/web/20050923124533/http://www.armyradio.com/publish/Articles/The_Enigma_Code_Breach/The_Enigma_Code_Breach.htm "The Enigma Code Breach" by Jan Bury]
+* [http://www.ww2.pl/The,%E2%80%9EEnigma,and,the,Intelligence,26.html "Enigma" and Intelligence]
+* [https://www.amazon.com/Cybertwists-Cyberattacks-Richard-Paul-Hudson-ebook/dp/B0798694GN "The Enigma machine and Bletchley Park"], ''Cybertwists''
+* {{cite web |title=The German Enigma Cipher Machine – History of Solving|url=http://www.enigmahistory.org/enigma.html |access-date=20 November 2008 |url-status=usurped |archive-url=https://web.archive.org/web/20090307230722/http://www.enigmahistory.org/enigma.html |archive-date=7 March 2009}}
+* [https://www.youtube.com/watch?v=GFPm_UWopu0 Video "Breaking the Enigma code with the Turing-Welchman Bombe"] ''(Step-by-step example)''
+* [https://www.soler7.com/IFAQ/Enigma.htm A Riddle Called ENIGMA], a capsule account of how the Poles and British broke the Army Enigma
+* [https://www.matematiksider.dk/enigma_eng.html "The German cipher machine Enigma"], ''Matematik Sider'', 20 September 2014
+* [https://www.dw.com/en/the-polish-enigma-crackers/audio-18261262 "The Polish Enigma crackers"], ''Deutsche Welle'', 17 February 2015 (an audio report for general audiences)
+* [https://www.codesandciphers.org.uk/virtualbp/poles/poles.htm The Breaking of Enigma by the Polish Mathematicians]
+* [https://www.thetimes.com/world/europe/article/turing-cult-has-obscured-role-of-polish-codebreakers-kdcgsg6h9 Turing cult has obscured role of Polish codebreakers] (The Times)
+* [https://www.tandfonline.com/doi/full/10.1080/01611194.2023.2261121 Jean-Charles Foucrier, "Why the French military cryptanalysis failed to break Enigma"]
+
+[[Category:Bletchley Park]]
+[[Category:Enigma machine]]
+[[Category:History of cryptography]]
+[[Category:Signals intelligence of World War II]]

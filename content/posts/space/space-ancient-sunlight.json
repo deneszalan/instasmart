@@ -78,7 +78,14 @@
           "start": 66.4,
           "end": 70.93
         }
-      ]
+      ],
+      "ratings": { "complexity": 6, "shock": 7 }
+    },
+    {
+      "type": "explore",
+      "lab": "ancient-sunlight",
+      "prompt": "Watch the photon zigzag until it escapes the model Sun. How many steps does it need to get 20 steps from the centre?",
+      "takeaway": "About 400: a random walk needs roughly the square of the distance in steps. Across the real Sun, that squaring turns a dash light could make in two seconds into many thousands of years."
     },
     {
       "type": "flow",

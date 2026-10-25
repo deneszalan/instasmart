@@ -60,7 +60,14 @@
           "start": 63.6,
           "end": 70.93
         }
-      ]
+      ],
+      "ratings": { "complexity": 5, "shock": 4 }
+    },
+    {
+      "type": "explore",
+      "lab": "pythagoras-rearrangement-proof",
+      "prompt": "Slide the four triangles all the way across, then change the triangle’s shape and slide again. Watch the empty area.",
+      "takeaway": "The triangles only move, so the empty area can’t change: the tilted square c² and the two squares a² + b² are the same area, for every right triangle."
     },
     {
       "type": "text",

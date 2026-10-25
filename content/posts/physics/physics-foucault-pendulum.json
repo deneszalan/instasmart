@@ -95,7 +95,14 @@
           "start": 67.47,
           "end": 72.53
         }
-      ]
+      ],
+      "ratings": { "complexity": 7, "shock": 5 }
+    },
+    {
+      "type": "explore",
+      "lab": "foucault-pendulum",
+      "prompt": "Watch the swing line creep round in Paris. Then move the pendulum to the pole, the south, and find the place where it never turns.",
+      "takeaway": "At the equator the swing never turns; at the poles it turns once a day, and in between at 15° an hour times the sine of the latitude, clockwise in the north."
     },
     {
       "type": "stat",

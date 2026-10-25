@@ -1,0 +1,507 @@
+1
+00:00:01,000 --> 00:00:06,610
+>> At 3,000 rpm, a car engine's crankshaft turns 50 times a second.
+
+2
+00:00:06,690 --> 00:00:13,010
+>> And yet each cylinder only burns fuel 25 times a second, which is once every two turns.
+
+3
+00:00:13,090 --> 00:00:19,530
+Its piston makes four trips for every burn, and only one of those trips actually pushes.
+
+4
+00:00:19,610 --> 00:00:22,470
+>> That's four trips for one push. It sounds wasteful.
+
+5
+00:00:22,550 --> 00:00:26,840
+>> It does. And it's still the design inside most car engines.
+
+6
+00:00:26,920 --> 00:00:31,520
+>> It's the four-stroke cycle. It was first patented by a man who never built one
+
+7
+00:00:31,600 --> 00:00:37,720
+>> and made to work by a former grocery salesman, who later lost his patent.
+
+8
+00:00:40,320 --> 00:00:44,490
+>> Let's open one up. This is a simplified diagram of a single cylinder.
+
+9
+00:00:44,570 --> 00:00:48,580
+>> So inside the cylinder there's a piston, sliding up and down.
+
+10
+00:00:48,660 --> 00:00:52,790
+>> And a connecting rod links that piston to the crankshaft, which turns.
+
+11
+00:00:52,870 --> 00:00:55,480
+>> So up-and-down becomes round-and-round.
+
+12
+00:00:55,560 --> 00:01:02,290
+>> Exactly. Up top there are two valves. One lets air and fuel in, and the other lets burnt gas out.
+
+13
+00:01:02,370 --> 00:01:06,980
+>> And cams on a camshaft push them open, then springs close them again.
+
+14
+00:01:07,060 --> 00:01:09,170
+>> Between them sits the spark plug.
+
+15
+00:01:09,250 --> 00:01:15,440
+>> The piston's highest point is called top dead centre, and its lowest is called bottom dead centre.
+
+16
+00:01:15,520 --> 00:01:19,840
+>> At each of them the piston is momentarily at rest, before it turns around.
+
+17
+00:01:19,920 --> 00:01:23,510
+>> And one trip between them, up or down, is a stroke.
+
+18
+00:01:23,590 --> 00:01:29,320
+>> Now watch the piston as the crank turns. It follows along, but not in a perfectly even rhythm.
+
+19
+00:01:29,400 --> 00:01:31,710
+>> It looks like a smooth wave to me.
+
+20
+00:01:31,790 --> 00:01:39,020
+>> Nearly. But after a quarter turn, the piston has already covered more than half its stroke.
+
+21
+00:01:39,100 --> 00:01:41,920
+>> How can a quarter turn give you more than half?
+
+22
+00:01:42,000 --> 00:01:49,010
+>> The rod tilts. That makes the piston hurry through the top half of the stroke, and dawdle through the bottom.
+
+23
+00:01:52,810 --> 00:01:56,530
+>> Okay. Let's run one whole cycle, slowly, from the top.
+
+24
+00:01:56,610 --> 00:02:02,620
+>> Stroke 1 is intake. The intake valve opens, and the falling piston draws in air and fuel.
+
+25
+00:02:02,700 --> 00:02:06,210
+>> It's pulled in by the partial vacuum it leaves behind.
+
+26
+00:02:06,290 --> 00:02:13,930
+Stroke 2 is compression. Both valves shut, and the rising piston squeezes the mixture into about a tenth of the space.
+
+27
+00:02:14,010 --> 00:02:17,340
+>> And by now the crankshaft has turned once, all the way round.
+
+28
+00:02:17,420 --> 00:02:21,860
+>> Near the top, the spark plug fires, and the mixture starts to burn.
+
+29
+00:02:21,940 --> 00:02:26,590
+>> Stroke 3 is power. The hot, high-pressure gas drives the piston down.
+
+30
+00:02:26,670 --> 00:02:29,830
+>> And that's the only stroke that pushes on the crank.
+
+31
+00:02:29,910 --> 00:02:33,070
+>> The other three just get the gas in, ready, and out again.
+
+32
+00:02:33,150 --> 00:02:40,520
+>> Stroke 4 is exhaust. The exhaust valve opens, and the rising piston pushes the burnt gas out.
+
+33
+00:02:40,600 --> 00:02:45,950
+>> Then it all starts again. That's four strokes, two turns of the crank, and one push.
+
+34
+00:02:46,030 --> 00:02:52,220
+>> That's why the camshaft turns at half the crankshaft's speed, so that each valve opens once per cycle.
+
+35
+00:02:52,300 --> 00:02:55,170
+>> So it's two turns of the crank for one turn of the cam.
+
+36
+00:02:55,250 --> 00:02:59,090
+>> But what carries the piston through the three strokes that don't push?
+
+37
+00:02:59,170 --> 00:03:06,840
+>> It's a heavy flywheel. It soaks up energy from each power stroke, and gives some back to squeeze the next charge.
+
+38
+00:03:10,440 --> 00:03:15,110
+So who came up with all this? The idea is older than the engine that made it famous.
+
+39
+00:03:15,190 --> 00:03:22,760
+>> In 1860, Étienne Lenoir in Paris built a gas engine that burned its fuel without compressing it first.
+
+40
+00:03:22,840 --> 00:03:26,070
+>> And it turned only about 4% of the fuel's energy into work.
+
+41
+00:03:26,150 --> 00:03:29,470
+>> Four percent. So almost all of it went to waste.
+
+42
+00:03:29,550 --> 00:03:36,490
+>> Almost all. Then a travelling salesman in Germany, Nicolaus Otto, learned of it, and started building engines himself.
+
+43
+00:03:36,570 --> 00:03:44,260
+>> In 1862 he tried one that compressed its charge first. It ran for a few minutes, then destroyed itself.
+
+44
+00:03:44,340 --> 00:03:52,490
+>> That same year, in France, Alphonse Beau de Rochas patented the four-stroke cycle. But he never built an engine.
+
+45
+00:03:52,570 --> 00:03:56,860
+>> So the idea existed on paper before anyone made it run.
+
+46
+00:03:56,940 --> 00:04:03,010
+>> Meanwhile, in 1864, Otto and Eugen Langen founded the first company devoted to making engines.
+
+47
+00:04:03,090 --> 00:04:10,980
+>> Their atmospheric engine won a gold medal at the 1867 Paris World's Fair, at about 12% efficiency.
+
+48
+00:04:11,060 --> 00:04:12,930
+>> That's three times Lenoir's.
+
+49
+00:04:13,010 --> 00:04:19,780
+>> Then, in 1876, Otto's company built an engine that compressed its charge in four strokes.
+
+50
+00:04:19,860 --> 00:04:25,910
+>> It was an immediate success, and the first commercially successful engine to compress its charge in the cylinder.
+
+51
+00:04:25,990 --> 00:04:33,760
+>> And two of Otto's former engineers, Gottlieb Daimler and Wilhelm Maybach, made it small and fast enough for vehicles.
+
+52
+00:04:33,840 --> 00:04:40,130
+>> But in 1886 the patent was cancelled in Germany, because Beau de Rochas had patented the cycle first.
+
+53
+00:04:40,210 --> 00:04:44,650
+>> So a patent for an engine nobody had built ended Otto's monopoly.
+
+54
+00:04:44,730 --> 00:04:48,240
+>> And neither Otto nor Daimler had even known that patent existed.
+
+55
+00:04:48,320 --> 00:04:55,280
+>> Still, the engines spread. By 1889, more than 50 companies were building Otto-type engines.
+
+56
+00:04:55,360 --> 00:05:00,820
+>> And the cycle still carries Otto's name. It's called the Otto cycle.
+
+57
+00:05:04,420 --> 00:05:10,660
+>> So why does squeezing first help so much? Engineers answer with a graph of pressure against volume.
+
+58
+00:05:10,740 --> 00:05:16,000
+>> This is the idealised version, the Otto cycle, traced as our engine turns.
+
+59
+00:05:16,080 --> 00:05:20,270
+>> During intake, the volume grows, at about the pressure outside.
+
+60
+00:05:20,350 --> 00:05:24,200
+>> During compression, the volume shrinks tenfold, and the pressure climbs steeply.
+
+61
+00:05:24,280 --> 00:05:30,850
+>> Combustion is treated as instant, right at the top, so the pressure leaps while the volume stays the same.
+
+62
+00:05:30,930 --> 00:05:35,010
+>> In a real engine the burn takes a little time, but this shape is the point.
+
+63
+00:05:35,090 --> 00:05:39,900
+During the power stroke, the hot gas expands and pushes, and its pressure falls.
+
+64
+00:05:39,980 --> 00:05:44,390
+>> At the bottom, the exhaust valve opens, and the pressure drops back.
+
+65
+00:05:44,470 --> 00:05:49,380
+>> During exhaust, the piston sweeps the gas out, and the loop closes.
+
+66
+00:05:49,460 --> 00:05:51,700
+>> And what does the loop tell us?
+
+67
+00:05:51,780 --> 00:05:59,320
+>> The area inside it is the net work, which is what the power stroke gave, minus what the compression cost.
+
+68
+00:05:59,400 --> 00:06:05,900
+>> So squeezing costs some work, but the hot gas pays back much more on the way down.
+
+69
+00:06:08,500 --> 00:06:14,000
+>> That brings us to the compression ratio, which is the cylinder's largest volume divided by its smallest.
+
+70
+00:06:14,080 --> 00:06:18,770
+>> And in the ideal cycle, the efficiency depends on that ratio alone.
+
+71
+00:06:18,850 --> 00:06:26,000
+>> Efficiency is 1 minus the ratio to the power 1 minus γ, where γ, gamma, is 1.4 for air.
+
+72
+00:06:26,080 --> 00:06:27,900
+>> Let's put some numbers in.
+
+73
+00:06:27,980 --> 00:06:33,550
+Squeeze four to one, and the ideal engine turns 43% of its heat into work.
+
+74
+00:06:33,630 --> 00:06:38,020
+>> At ten to one, it's 60%, and at sixteen to one, it's 67%.
+
+75
+00:06:38,100 --> 00:06:41,670
+>> Sixty percent? Car engines don't get anywhere near that.
+
+76
+00:06:41,750 --> 00:06:49,290
+>> No. Real engines lose energy to heat and friction along the way. A petrol engine turns about 30% into useful work.
+
+77
+00:06:49,370 --> 00:06:54,580
+>> But the lesson holds. If you squeeze harder, you get more work from the same fuel.
+
+78
+00:06:54,660 --> 00:06:58,310
+>> So why do most petrol car engines stop at around 8 to 12 to one?
+
+79
+00:06:58,390 --> 00:07:03,330
+>> Because squeezing a gas heats it, and a hot enough mixture can ignite by itself.
+
+80
+00:07:03,410 --> 00:07:07,910
+>> Normally, the spark starts a flame front that sweeps across the chamber.
+
+81
+00:07:07,990 --> 00:07:13,880
+>> But if the unburnt mixture ahead of the flame gets too hot, pockets of it explode all at once.
+
+82
+00:07:13,960 --> 00:07:19,670
+>> That's called knock. It causes a metallic pinging, and pressure spikes that can damage the engine.
+
+83
+00:07:19,750 --> 00:07:23,040
+>> So it's knock, not the formula, that sets the limit.
+
+84
+00:07:23,120 --> 00:07:30,240
+>> Right. A fuel's octane rating measures how well it resists igniting by itself. Higher octane allows more squeeze.
+
+85
+00:07:30,320 --> 00:07:37,420
+>> And modern engines listen for knock with sensors, and fire the spark later when they hear it.
+
+86
+00:07:41,020 --> 00:07:47,390
+So far, everything has happened exactly at the top or bottom of a stroke. Real engines don't wait.
+
+87
+00:07:47,470 --> 00:07:52,410
+>> The spark fires early, at some 10 to 40 degrees of crank rotation before the top.
+
+88
+00:07:52,490 --> 00:07:55,430
+>> Before the piston has even finished squeezing?
+
+89
+00:07:55,510 --> 00:08:00,550
+>> Yes. The flame takes time to burn, and the peak pressure should come just after the top.
+
+90
+00:08:00,630 --> 00:08:07,090
+>> And the flame doesn't speed up with the engine, so at higher revs the spark needs a longer head start.
+
+91
+00:08:07,170 --> 00:08:11,480
+>> The valves are early, too. They open before the end of a stroke, and close after it.
+
+92
+00:08:11,560 --> 00:08:16,400
+>> So at the end of the exhaust stroke, both valves are briefly open at once.
+
+93
+00:08:16,480 --> 00:08:19,970
+>> That's valve overlap, and it's designed in on purpose.
+
+94
+00:08:20,050 --> 00:08:22,040
+>> Why would you want both open?
+
+95
+00:08:22,120 --> 00:08:26,790
+>> The outgoing exhaust is moving fast, and it helps draw the fresh charge in behind it.
+
+96
+00:08:26,870 --> 00:08:32,230
+>> So the trick is to close the exhaust valve just as the fresh charge reaches it.
+
+97
+00:08:32,310 --> 00:08:40,190
+>> Exactly. Racing engines use lots of overlap. Road engines, which must idle smoothly below 1,000 rpm, use less.
+
+98
+00:08:40,270 --> 00:08:47,690
+>> And many now shift their camshafts as they run, to get both power at high revs and a smooth idle.
+
+99
+00:08:51,290 --> 00:08:56,080
+>> One cylinder gives one push every two turns. That's a lumpy way to drive a car.
+
+100
+00:08:56,160 --> 00:09:01,450
+>> So most car engines have several cylinders on one crankshaft, firing in turn.
+
+101
+00:09:01,530 --> 00:09:07,640
+>> Spaced evenly, the power strokes come every 720 degrees divided by the number of cylinders.
+
+102
+00:09:07,720 --> 00:09:13,860
+>> With four cylinders, that's every 180 degrees, which gives a push every half turn.
+
+103
+00:09:13,940 --> 00:09:19,390
+>> And a straight four usually fires its cylinders in the order 1-3-4-2.
+
+104
+00:09:19,470 --> 00:09:21,280
+>> Not one-two-three-four?
+
+105
+00:09:21,360 --> 00:09:29,380
+>> 1-3-4-2 is the usual order. Some British engines used 1-2-4-3.
+
+106
+00:09:29,460 --> 00:09:34,500
+>> Here's the twisting force that the gas puts on the crank, in an idealised model.
+
+107
+00:09:34,580 --> 00:09:39,560
+>> One cylinder gives one big shove, then a long wait, with a drag while it compresses.
+
+108
+00:09:39,640 --> 00:09:42,750
+>> Four cylinders give one shove after another.
+
+109
+00:09:42,830 --> 00:09:48,330
+>> With six cylinders, the power strokes overlap, and the push is smoother still.
+
+110
+00:09:48,410 --> 00:09:53,730
+>> And even spacing means less vibration, and a smoother sound.
+
+111
+00:09:57,330 --> 00:10:01,070
+There's another way to light the fire, with no spark at all.
+
+112
+00:10:01,150 --> 00:10:07,650
+>> A diesel draws in only air, and squeezes it much harder, typically 15 to 23 to one.
+
+113
+00:10:07,730 --> 00:10:11,420
+>> And squeezing air that hard heats it by hundreds of degrees.
+
+114
+00:10:11,500 --> 00:10:16,450
+>> Near the top, fuel is sprayed in, and it ignites in the hot air by itself.
+
+115
+00:10:16,530 --> 00:10:19,640
+>> So the squeeze itself does the spark plug's job.
+
+116
+00:10:19,720 --> 00:10:27,700
+>> In a way. With no fuel in the cylinder during the squeeze, nothing can ignite early, so it can squeeze harder.
+
+117
+00:10:27,780 --> 00:10:34,370
+>> That's one reason diesels are efficient. Big, slow ship diesels reach up to 55%.
+
+118
+00:10:34,450 --> 00:10:40,020
+>> And instead of throttling its air, a diesel sets its power by how much fuel it injects.
+
+119
+00:10:40,100 --> 00:10:50,910
+>> Rudolf Diesel's first prototype fired in 1893, and his third, tested in 1897, turned about 26% of its fuel into work.
+
+120
+00:10:50,990 --> 00:10:57,200
+>> And it runs the same four strokes of intake, compression, power and exhaust.
+
+121
+00:11:00,800 --> 00:11:03,220
+>> So let's put the whole idea together.
+
+122
+00:11:03,300 --> 00:11:10,790
+>> Draw in, squeeze, burn and push out. That's four strokes, in two turns of the crank.
+
+123
+00:11:10,870 --> 00:11:15,060
+>> The squeeze makes it efficient, and knock sets the limit on the squeeze.
+
+124
+00:11:15,140 --> 00:11:21,280
+>> Patented in 1862 by a man who never built one, made to work by Otto in 1876
+
+125
+00:11:21,360 --> 00:11:24,870
+>> it's still the cycle inside most car engines.
+
+126
+00:11:24,950 --> 00:11:30,620
+It's strange to think all of that is happening under the bonnet, every time a car idles.
+
+127
+00:11:30,700 --> 00:11:38,100
+>> At 3,000 rpm, that's two turns and one push, 25 times every second.

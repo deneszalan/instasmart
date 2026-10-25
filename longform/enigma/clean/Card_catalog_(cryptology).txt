@@ -1,0 +1,46 @@
+{{Cipher Bureau}}
+{{EnigmaSeries}}
+The '''card catalog''', or "catalog of characteristics," in [[cryptography]], was a system designed by [[Poland|Polish]] [[Biuro Szyfrów|Cipher Bureau]] mathematician-cryptologist [[Marian Rejewski]], and first completed about 1935 or 1936, to facilitate [[decryption|decrypting]] German [[Enigma machine|Enigma]] [[cipher]]s.
+  
+==History==
+The Polish Cipher Bureau used the theory of [[permutation]]s to start breaking the Enigma cipher in late 1932. The Bureau recognized that the Enigma machine's doubled-key (see [[Grill (cryptology)]]) permutations formed cycles, and those cycles could be used to break the cipher. With German cipher keys provided by a French spy, the Bureau was able to reverse engineer the Enigma and start reading German messages. At the time, the Germans were using only 6 ''steckers'', and the Polish [[Grill (cryptology)|grill method]] was feasible. On 1 August 1936, the Germans started using 8 ''steckers'', and that change made the grill method less feasible. The Bureau needed an improved method to break the German cipher.
+
+Although the ''steckers'' would change which letters were in a doubled-key's cycle, the ''steckers'' would not change the number of cycles or the length of those cycles. Steckers could be ignored. Ignoring the mid-key turnovers, the Enigma machine had only {{math|26<sup>3</sup>}} distinct settings of the three rotors, and the three rotors could only be arranged in the machine {{math|1=3!=6}} ways. That meant there were only {{#expr:26*26*26*6}} likely doubled-key permutations. The Bureau set about determining and cataloging the characteristic of each of those likely permutations. Each letter of the key could be one of [[partition number]] 13 = 101 possible values, and the 3 letters of the key meant there were {{#expr:101*101*101}} possible keys. On average, a key would find one setting of the rotors, but it might find several possible settings.
+
+The Polish cryptanalyst could then collect enough traffic to determine all the cycles in a daily key. That usually took about 60 messages. The result might be:
+:<math>\begin{align}
+AD &= \texttt{(pjxroquctwzsy)(kvgledmanhfib)} \\
+BE &= \texttt{(kxtcoigweh)(zvfbsylrnp)(ujd)(mqa)} \\
+CF &= \texttt{(yvxqtdhpim)(skgrjbcolw)(un)(fa)(e)(z)} \\
+\end{align}</math>
+He would use the lengths of the cycles (13<sup>2</sup>;10<sup>2</sup>-3<sup>2</sup>;10<sup>2</sup>-2<sup>2</sup>-1<sup>2</sup>) to look up the wheel order (II I III) and starting rotor positions in the card catalog. He would then use an Enigma to compute the un-''steckered'' cycles:
+:<math>\begin{align}
+AD &= \texttt{(sjxroqtcuzwpy)(kngledamvhifb)} \\
+BE &= \texttt{(kxucofgzeh)(wnibpylrvs)(tjd)(aqm)} \\
+CF &= \texttt{(ynxqudhsfa)(pkgrjbcolz)(tv)(im)(e)(w)} \\
+\end{align}</math>
+By comparing the ''steckered'' cycles from the German traffic and the un-''steckered'' cycles, the cryptanalyst can determine the ''steckers''. In the example, the ''CF'' permutation has <code>(e)(z)</code> and <code>(e)(w)</code>. That requires that <code>e</code> is un''stecker''ed and a W-Z ''stecker''. The cycles can then be aligned on <code>e</code> and W-Z to determine other ''steckered'' and un-''steckered'' letters.
+:<code>(pjxroquctwzsy)(kvgledmanhfib)/(kxtcoigweh)...</code>
+:<code>(sjxroqtcuzwpy)(kngledamvhifb)/(kxucofgzeh)...</code>
+:<code>(!_____!_!**!_)(_!__=_!!!_!!_)/(__!__!_*=_)...</code>
+Where <code>=</code> is a known un-''steckered'' letter, <code>*</code> is a known ''steckered'' letter, and <code>!</code> is a newly discovered ''stecker''.
+Repetition produces the ''steckers'' A-M, F-I, N-V, P-S, T-U, W-Z.
+
+Preparation of the card catalog, using the [[cyclometer]] that Rejewski had invented about 1934 or 1935, was a laborious task that took over a year's time.  But once the catalog was complete, obtaining Enigma daily keys was a matter of some fifteen minutes.<!-- Have wheel order, steckers, and message key but not the ring setting -->
+ 
+When the Germans changed the Enigma machine's "[[reflector (cipher machine)|reflector]]," or "reversing drum," on 1 November 1937, the Cipher Bureau was forced to start over again with a new card catalog:  "a task," writes Rejewski, "which consumed, on account of our greater experience, probably somewhat less than a year's time."
+
+On 15 September 1938 the Germans completely changed the procedure for enciphering message keys, rendering the card-catalog method useless. This spurred the invention of Rejewski's [[Bomba (cryptography)|cryptologic bomb]] and [[Henryk Zygalski]]'s "[[perforated sheets]]."
+
+==Notes==
+{{Reflist|2}}
+
+==References==
+* [[Władysław Kozaczuk]], ''Enigma:  How the German Machine Cipher Was Broken, and How It Was Read by the Allies in World War Two'', edited and translated by Christopher Kasparek, Frederick, MD, University Publications of America, 1984, {{ISBN|0-89093-547-5}}.       
+* [[Marian Rejewski]], "Summary of Our Methods for Reconstructing ENIGMA and Reconstructing Daily Keys, and of German Efforts to Frustrate Those Methods," Appendix C to [[Władysław Kozaczuk]], ''Enigma'', 1984, pp.&nbsp;241–45.
+* [[Marian Rejewski]], "How the Polish Mathematicians Broke Enigma," Appendix D to [[Władysław Kozaczuk]], ''Enigma'', 1984, pp.&nbsp;246–71.
+* [[Marian Rejewski]], "The Mathematical Solution of the Enigma Cipher," Appendix E to [[Władysław Kozaczuk]], ''Enigma'', 1984, pp.&nbsp;272–91.
+
+[[Category:History of cryptography]]
+[[Category:Science and technology in Poland]]
+[[Category:Cipher Bureau (Poland)]]

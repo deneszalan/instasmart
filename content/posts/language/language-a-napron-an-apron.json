@@ -64,7 +64,14 @@
           "start": 58.8,
           "end": 64.8
         }
-      ]
+      ],
+      "ratings": { "complexity": 3, "shock": 7 }
+    },
+    {
+      "type": "explore",
+      "lab": "a-napron-an-apron",
+      "prompt": "Tap each phrase to hop its n across the space. Which words lost an n, and which gained one?",
+      "takeaway": "Apron, adder and umpire lost their n to the article an; nickname and newt gained one from it. Said aloud, “a napron” and “an apron” sound the same."
     },
     {
       "type": "text",

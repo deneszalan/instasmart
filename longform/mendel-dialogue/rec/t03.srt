@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: And by seven thousand, three hundred and twenty-four seeds, as many as Mendel counted, it has settled at three point one to one.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERA: Real counts miss a prediction by chance. Mendel's, Fisher argued, missed by too little.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: Chance always leaves some scatter. Counts that hug the prediction every time are strange in their own way.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERA: That's about one garden in twenty. Lucky, but not shocking.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: His sharpest point was a test in which Mendel grew ten offspring of each plant.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERA: Yes, but a hybrid's ten can all look dominant by chance, so he should have found about one point seven, not two.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: Fisher concluded that most of the data had been falsified, perhaps by an assistant who knew too well what was expected.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERA: Daniel Hartl and Daniel Fairbanks replied that Mendel probably grew more than ten, and that the fraud charge could be put to rest.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: One can applaud the lucky gambler, he wrote, but when he is lucky again tomorrow, and the next day, and the following day,
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERA: one is entitled to become a little suspicious.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: Then a twenty nineteen reanalysis, adding the extreme plants Mendel himself reported, found about as much scatter as chance predicts.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERA: Mendel never knew what his factors were made of. For the wrinkled seed, the answer came in nineteen ninety.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: In wrinkled peas, its gene is interrupted by an extra stretch of DNA, about eight hundred letters long.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERA: So a wrinkled seed starts out swollen?
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: One working copy of the gene makes the enzyme, so the seed stays round. That's dominance, in chemistry.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERA: It was the first of Mendel's seven genes to be found, and by twenty twenty-five, all seven had been identified.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: So here is what the peas were saying. Every plant carries two copies of each gene, one from each parent.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERA: A recessive copy can hide for a generation, and shows again when two hidden copies meet, one time in four.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERA: Which is why the counting mattered as much as the crossing.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERA: All from a friar, a garden, and a careful count of peas.

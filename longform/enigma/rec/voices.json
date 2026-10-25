@@ -1,0 +1,7 @@
+{
+ "": {
+  "engine": "chatterbox",
+  "ref-audio": "/home/user/text2speech/voices/narrator_male_2.wav",
+  "seed": 1
+ }
+}

@@ -82,7 +82,14 @@
           "start": 78.93,
           "end": 84.8
         }
-      ]
+      ],
+      "ratings": { "complexity": 6, "shock": 6 }
+    },
+    {
+      "type": "explore",
+      "lab": "prisoners-dilemma",
+      "prompt": "Play a few rounds against each partner, silent or betraying. Then run the tournament: which strategy serves the fewest years?",
+      "takeaway": "Betraying wins any single round, but over 200 rounds tit for tat serves the fewest years: it starts silent, hits back once after a betrayal, and then forgives."
     },
     {
       "type": "chart",

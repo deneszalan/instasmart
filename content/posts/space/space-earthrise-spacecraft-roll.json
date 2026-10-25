@@ -19,7 +19,8 @@
       "caption": "Computer model, sped up 3×: Apollo 8 turns as it orbits the Moon on 24 December 1968, and Earth rises over the lunar horizon beyond it.",
       "credit": "NASA/GSFC Scientific Visualization Studio · Public domain · excerpt, cropped, sped up 3×",
       "href": "https://svs.gsfc.nasa.gov/4129/",
-      "music": "“Reawakening” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Reawakening” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 3, "shock": 6 }
     },
     {
       "type": "reveal",

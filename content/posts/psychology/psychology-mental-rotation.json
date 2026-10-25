@@ -74,7 +74,14 @@
           "start": 64.27,
           "end": 72.27
         }
-      ]
+      ],
+      "ratings": { "complexity": 5, "shock": 5 }
+    },
+    {
+      "type": "explore",
+      "lab": "mental-rotation",
+      "prompt": "Is the teal figure the coral one turned, or its mirror image? Answer 12 as fast as you can, then see your times at each angle.",
+      "takeaway": "For most people the bars climb with the angle, as Shepard and Metzler found in 1971: the time to answer grows with the turn, as if the figure were turned in the mind at a steady pace."
     },
     {
       "type": "text",

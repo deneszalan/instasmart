@@ -19,7 +19,8 @@
       "caption": "Hubble images from 1994 to 2016, blended in sequence: as the supernova’s debris hits the ring of gas, bright spots appear one by one until the whole ring glows.",
       "credit": "NASA, ESA, R. Kirshner and P. Challis · CC BY 4.0 · excerpt",
       "href": "https://esahubble.org/videos/heic1704a/",
-      "music": "“Thunder Dreams” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Thunder Dreams” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 5, "shock": 5 }
     },
     {
       "type": "reveal",

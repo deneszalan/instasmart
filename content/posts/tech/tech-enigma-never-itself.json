@@ -68,7 +68,14 @@
           "start": 74.27,
           "end": 80.67
         }
-      ]
+      ],
+      "ratings": { "complexity": 6, "shock": 6 }
+    },
+    {
+      "type": "explore",
+      "lab": "enigma-never-itself",
+      "prompt": "Type a word, then the same letter over and over. Watch the lamps: can any letter come out as itself?",
+      "takeaway": "Never: the reflector always sends the current back by a different wire. Codebreakers used exactly that to rule out positions for a guessed word."
     },
     {
       "type": "quiz",

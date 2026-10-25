@@ -19,7 +19,8 @@
       "caption": "Computer model of the ocean tides over about a day and a half, sped up so 2.5 hours pass every second (see the clock). Patches of high and low water, in shades of blue, wheel around each ocean basin.",
       "credit": "NASA Scientific Visualization Studio · Public domain · excerpt",
       "href": "https://svs.gsfc.nasa.gov/4821/",
-      "music": "“On the Shore” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“On the Shore” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 7, "shock": 7 }
     },
     {
       "type": "compare",

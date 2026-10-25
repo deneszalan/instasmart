@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: In eighteen seventy-four, the English economist William Stanley Jevons printed a puzzle in a book.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: He asked which two numbers, multiplied together, make 8,616,460,799.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: I think it unlikely, he added, that anyone but myself will ever know.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERB: Confident.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: Well, multiplying two numbers is easy. Finding them again from the answer can be very hard.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERB: And lopsided problems like his now guard every secure web page you open.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: They're what let two strangers agree on a secret while everyone listens.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERA: This is the story of public-key cryptography, and it was invented twice.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERB: For most of history, sending a secret message meant sharing a secret key first.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERA: And the same key locks the message and unlocks it, so whoever has it can read everything.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERB: So the key is the weak point.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERA: Exactly. It had to travel safely, by trusted courier or at a face-to-face meeting.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERB: And every pair of people who want to talk privately needs a key of their own.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERA: Ten people need forty-five keys.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERB: A thousand people need 499,500.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERA: That's half a million keys to deliver.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERB: Two researchers at Stanford called this the key distribution problem in 1976.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERA: And their answer sounds impossible. It lets strangers agree on a key in full view of everyone.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERB: In 1974, Whitfield Diffie, an independent researcher, was advised to meet a young Stanford professor, Martin Hellman.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERA: They'd planned a half-hour meeting. It lasted many hours.

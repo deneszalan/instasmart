@@ -73,7 +73,14 @@
           "start": 77.07,
           "end": 83.47
         }
-      ]
+      ],
+      "ratings": { "complexity": 5, "shock": 6 }
+    },
+    {
+      "type": "explore",
+      "lab": "calendar-1752",
+      "prompt": "Run the Julian calendar on from AD 325 and watch the spring equinox drift; then switch to the Gregorian rule.",
+      "takeaway": "A Julian year is 11 minutes too long, so by 1582 the equinox had slid from 21 to 11 March. Dropping 3 leap days every 400 years slows the drift to about a day in 3,000 years."
     },
     {
       "type": "text",

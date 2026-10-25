@@ -1,0 +1,55 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERB: In 1994, Peter Shor showed how a quantum computer could factor huge numbers quickly.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERA: And his method solves discrete logarithms too, so it would break R S A and Diffie–Hellman alike.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERB: Both of them? Should we be worried?
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERA: Not yet. No such machine exists, and demonstrations have factored only fifteen and twenty-one, helped by knowing the answer.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERB: Breaking real keys might take millions of qubits, because of error correction.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERA: The worry is that a message recorded today could be decrypted later. This is called harvest now, decrypt later.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERB: So in August 2024, N I S T, the U S standards institute, published three post-quantum standards, one for keys and two for signatures.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERA: The key one, M L Kem, rests on lattice problems, which are thought to resist quantum attacks.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERB: And Chrome and Firefox already mix it into their key exchange, alongside a classic elliptic curve.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERA: So strangers can agree on a key in public, because some sums are easy one way and hard the other.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERB: A lock can be public, if only its owner knows the trapdoor.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERA: And run backwards, the same maths signs.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERB: Jevons was wrong about his number, but right that some sums are far easier done than undone.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERA: And every secure connection begins that way, with two strangers, in public, agreeing on a secret only they know.

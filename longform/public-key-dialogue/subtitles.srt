@@ -1,0 +1,535 @@
+1
+00:00:01,000 --> 00:00:06,730
+>> In 1874, the English economist William Stanley Jevons printed a puzzle in a book.
+
+2
+00:00:06,810 --> 00:00:16,270
+>> He asked which two numbers, multiplied together, make 8,616,460,799.
+
+3
+00:00:16,350 --> 00:00:20,850
+>> "I think it unlikely," he added, "that anyone but myself will ever know."
+
+4
+00:00:20,930 --> 00:00:22,320
+>> Confident.
+
+5
+00:00:22,400 --> 00:00:28,230
+>> Well, multiplying two numbers is easy. Finding them again from the answer can be very hard.
+
+6
+00:00:28,310 --> 00:00:33,380
+>> And lopsided problems like his now guard every secure web page you open.
+
+7
+00:00:33,460 --> 00:00:37,750
+>> They're what let two strangers agree on a secret while everyone listens.
+
+8
+00:00:37,830 --> 00:00:43,240
+This is the story of public-key cryptography, and it was invented twice.
+
+9
+00:00:46,440 --> 00:00:51,760
+>> For most of history, sending a secret message meant sharing a secret key first.
+
+10
+00:00:51,840 --> 00:00:57,270
+>> And the same key locks the message and unlocks it, so whoever has it can read everything.
+
+11
+00:00:57,350 --> 00:00:59,390
+>> So the key is the weak point.
+
+12
+00:00:59,470 --> 00:01:05,130
+>> Exactly. It had to travel safely, by trusted courier or at a face-to-face meeting.
+
+13
+00:01:05,210 --> 00:01:09,750
+>> And every pair of people who want to talk privately needs a key of their own.
+
+14
+00:01:09,830 --> 00:01:12,380
+>> Ten people need 45 keys.
+
+15
+00:01:12,460 --> 00:01:17,520
+>> A thousand people need 499,500.
+
+16
+00:01:17,600 --> 00:01:20,210
+>> That's half a million keys to deliver.
+
+17
+00:01:20,290 --> 00:01:26,580
+>> Two researchers at Stanford called this the key distribution problem in 1976.
+
+18
+00:01:26,660 --> 00:01:33,260
+>> And their answer sounds impossible. It lets strangers agree on a key in full view of everyone.
+
+19
+00:01:35,860 --> 00:01:44,550
+>> In 1974, Whitfield Diffie, an independent researcher, was advised to meet a young Stanford professor, Martin Hellman.
+
+20
+00:01:44,630 --> 00:01:48,410
+>> They'd planned a half-hour meeting. It lasted many hours.
+
+21
+00:01:48,490 --> 00:01:53,780
+>> In November 1976, they published New Directions in Cryptography.
+
+22
+00:01:53,860 --> 00:01:58,970
+>> It opens with the line, "We stand today on the brink of a revolution in cryptography."
+
+23
+00:01:59,050 --> 00:02:01,020
+>> That's quite a first line.
+
+24
+00:02:01,100 --> 00:02:05,380
+>> It held up, and they won the 2015 Turing Award for it.
+
+25
+00:02:05,460 --> 00:02:09,150
+>> So what was the revolution? It was splitting the key in two.
+
+26
+00:02:09,230 --> 00:02:14,340
+>> One key locks, a different key unlocks, and knowing the first doesn't give you the second.
+
+27
+00:02:14,420 --> 00:02:20,840
+>> So you could publish your locking key like a phone number, and anyone could send you messages only you can read.
+
+28
+00:02:20,920 --> 00:02:24,310
+>> Anyone can close the lock. Only you can open it.
+
+29
+00:02:24,390 --> 00:02:32,180
+>> But for that they needed a trapdoor one-way function, which is easy to compute but hard to undo, unless you hold a secret.
+
+30
+00:02:32,260 --> 00:02:36,120
+>> And they didn't have one. The problem, they wrote, was "still largely open".
+
+31
+00:02:36,200 --> 00:02:39,420
+>> So the revolution came with a hole in the middle.
+
+32
+00:02:39,500 --> 00:02:45,930
+>> A hole, yes. But they did have a way to agree on a key in public, building on ideas from Ralph Merkle.
+
+33
+00:02:46,010 --> 00:02:51,130
+>> And Hellman later said the method should carry Merkle's name too.
+
+34
+00:02:53,730 --> 00:02:59,740
+>> Let's try it in paint first. Alice and Bob agree, in public, on yellow as their starting colour.
+
+35
+00:02:59,820 --> 00:03:04,890
+>> Each mixes in a secret colour of their own, red for Alice and blue for Bob.
+
+36
+00:03:04,970 --> 00:03:09,640
+>> They swap the mixtures in the open, where Eve, listening in, sees them too.
+
+37
+00:03:09,720 --> 00:03:15,540
+>> Then each stirs in their own secret again, and they both end up with the same brown.
+
+38
+00:03:15,620 --> 00:03:21,330
+And Eve has the yellow and both mixtures, but she can't pull the secret colours back out.
+
+39
+00:03:21,410 --> 00:03:25,700
+>> Is the paint picture fair, though? It seems a little too perfect.
+
+40
+00:03:25,780 --> 00:03:32,370
+>> It's fair up to this point. Paint can never be unmixed, but the maths can, by trying every secret.
+
+41
+00:03:32,450 --> 00:03:37,180
+>> So the defence is sheer numbers, with far too many secrets to try.
+
+42
+00:03:37,260 --> 00:03:42,830
+>> Right. The real version uses clock arithmetic. Picture a clock with 23 hours.
+
+43
+00:03:42,910 --> 00:03:48,700
+>> Start at 1 and keep multiplying by 5, keeping only the remainder after dividing by 23.
+
+44
+00:03:48,780 --> 00:03:56,170
+>> The hand jumps 5, 2, 10, 4, 20 with no pattern you can easily see.
+
+45
+00:03:56,250 --> 00:03:58,090
+>> It looks almost random.
+
+46
+00:03:58,170 --> 00:04:05,710
+>> Stepping forward is easy. Working back to how many steps it took is the discrete logarithm problem, and it's hard.
+
+47
+00:04:05,790 --> 00:04:11,080
+>> Now comes the exchange. Everyone, Eve included, knows 23 and 5.
+
+48
+00:04:11,160 --> 00:04:17,000
+>> Alice secretly picks 3. After 3 steps, the hand is on 10, and she sends 10.
+
+49
+00:04:17,080 --> 00:04:22,630
+>> Bob secretly picks 7. After 7 steps, the hand is on 17, and he sends 17.
+
+50
+00:04:22,710 --> 00:04:30,580
+>> Alice raises Bob's 17 to the power of her secret 3, and Bob raises Alice's 10 to the power of his 7.
+
+51
+00:04:30,660 --> 00:04:37,230
+>> And both get 14, because both have really taken 3 times 7 steps from the start, which is 21.
+
+52
+00:04:37,310 --> 00:04:41,030
+>> It's the same steps in a different order, just like the paint.
+
+53
+00:04:41,110 --> 00:04:48,530
+>> Meanwhile Eve heard the numbers 23 and 5, then 10 and 17. To reach 14, she needs 3 or 7.
+
+54
+00:04:48,610 --> 00:04:59,400
+>> With 23 hours she could try them all, so real exchanges use a prime of at least 2,048 bits, which is 617 digits.
+
+55
+00:05:02,000 --> 00:05:08,340
+Key exchange was a breakthrough. But a true public lock, one that anyone could close, was still missing.
+
+56
+00:05:08,420 --> 00:05:14,210
+>> At MIT, Ron Rivest, Adi Shamir and Leonard Adleman spent about a year hunting for one.
+
+57
+00:05:14,290 --> 00:05:20,030
+>> Rivest and Shamir proposed ideas, and Adleman, the mathematician, kept breaking them.
+
+58
+00:05:20,110 --> 00:05:21,510
+>> Somebody has to.
+
+59
+00:05:21,590 --> 00:05:27,730
+Then, in April 1977, after a Passover evening at a student's house, Rivest couldn't sleep.
+
+60
+00:05:27,810 --> 00:05:31,900
+>> By daybreak, the story goes, he had much of the paper written.
+
+61
+00:05:31,980 --> 00:05:37,290
+>> It's named RSA after their initials, and it starts with two prime numbers.
+
+62
+00:05:37,370 --> 00:05:45,480
+>> Let's build a tiny one. Take the primes 61 and 53, and multiply them to get 3,233.
+
+63
+00:05:45,560 --> 00:05:52,530
+>> Pick 17 as the power that locks. From the primes, we can work out that the power that unlocks is 413.
+
+64
+00:05:52,610 --> 00:05:59,120
+>> And the public key is just 3,233 and 17. Anyone can have it.
+
+65
+00:05:59,200 --> 00:06:08,910
+Right. To send Bob 65, raise it to the power of 17 and keep the remainder after dividing by 3,233.
+
+66
+00:06:08,990 --> 00:06:15,160
+>> That power has 31 digits, but only the remainder, 2,790, travels.
+
+67
+00:06:15,240 --> 00:06:24,250
+>> Bob raises that to the power of 413, divides by 3,233 again, and out comes 65.
+
+68
+00:06:24,330 --> 00:06:26,700
+>> Wait, straight back to 65?
+
+69
+00:06:26,780 --> 00:06:30,540
+>> Exactly. The two powers undo each other, if you know both.
+
+70
+00:06:30,620 --> 00:06:36,340
+>> And finding 413 needs the two primes. The public key shows only their product.
+
+71
+00:06:36,420 --> 00:06:44,090
+>> Real systems also add random padding. Bare RSA like this is just a demonstration.
+
+72
+00:06:46,690 --> 00:06:52,260
+>> So it all rests on a lopsided pair of jobs. Multiplying is easy, and factoring is hard.
+
+73
+00:06:52,340 --> 00:06:58,050
+>> How hard, though? A number like 3,233 doesn't look so scary.
+
+74
+00:06:58,130 --> 00:07:04,410
+>> It isn't. Try dividing by each prime in turn, and the 16th prime, which is 53, works.
+
+75
+00:07:04,490 --> 00:07:13,600
+>> Jevons's number needs thousands of tries. It's 89,681 times 96,079.
+
+76
+00:07:13,680 --> 00:07:16,510
+>> Charles Busk found that in 1889.
+
+77
+00:07:16,590 --> 00:07:19,250
+>> So much for "anyone but myself".
+
+78
+00:07:19,330 --> 00:07:29,220
+>> Then, in August 1977, Martin Gardner described RSA in Scientific American, along with a challenge message locked with a 129-digit number.
+
+79
+00:07:29,300 --> 00:07:32,910
+>> And there was a $100 prize for unlocking it.
+
+80
+00:07:32,990 --> 00:07:40,300
+>> Rivest estimated that, with the best methods of the day, a 125-digit number would take 40 quadrillion years.
+
+81
+00:07:40,380 --> 00:07:43,170
+>> Forty quadrillion. That sounds safe.
+
+82
+00:07:43,250 --> 00:07:51,170
+>> It wasn't. Better methods came, and about 600 volunteers, with some 1,600 computers, cracked it in 1994.
+
+83
+00:07:51,250 --> 00:07:55,890
+>> The message read, "The magic words are squeamish ossifrage."
+
+84
+00:07:55,970 --> 00:08:01,080
+>> An ossifrage is a vulture, by the way. The name means bone-breaker.
+
+85
+00:08:01,160 --> 00:08:10,050
+>> So keys grew. Public factoring records are under 300 digits; a 2,048-bit key has 617.
+
+86
+00:08:10,130 --> 00:08:17,260
+>> And no one has proved that factoring is hard. There's just no fast way known on ordinary computers.
+
+87
+00:08:19,860 --> 00:08:25,970
+>> Now run the same maths the other way, and you get something just as useful, which is a signature.
+
+88
+00:08:26,050 --> 00:08:32,060
+>> Diffie and Hellman proposed digital signatures in 1976, and RSA made them work.
+
+89
+00:08:32,140 --> 00:08:38,730
+>> Bob locks a message with his private 413. Anyone can open it with his public 17.
+
+90
+00:08:38,810 --> 00:08:41,650
+>> But if anyone can open it, what's the point?
+
+91
+00:08:41,730 --> 00:08:54,040
+>> The point is who could have locked it. Signing 1977 gives 788, and raising 788 to the power of 17 gives back 1977.
+
+92
+00:08:54,120 --> 00:08:59,540
+>> Only the holder of 413 could have made 788, so it proves who signed.
+
+93
+00:08:59,620 --> 00:09:04,340
+>> In practice you sign a short fingerprint of the message, called a hash.
+
+94
+00:09:04,420 --> 00:09:10,040
+>> And signatures close a gap we skipped over in key exchange, one that lets an attacker sit in the middle.
+
+95
+00:09:10,120 --> 00:09:16,060
+>> Mallory sits between Alice and Bob and runs one exchange with each, posing as the other.
+
+96
+00:09:16,140 --> 00:09:22,510
+>> Each thinks they share a key with the other. Both actually share one with Mallory, who reads everything.
+
+97
+00:09:22,590 --> 00:09:24,780
+>> And neither of them would notice.
+
+98
+00:09:24,860 --> 00:09:29,410
+>> No. Plain Diffie–Hellman can't tell who is really on the other end.
+
+99
+00:09:29,490 --> 00:09:37,930
+>> On the web, the proof is a certificate, which is the site's public key, signed by an authority your browser trusts.
+
+100
+00:09:40,530 --> 00:09:44,630
+>> Now comes the twist, kept secret for more than twenty years.
+
+101
+00:09:44,710 --> 00:09:53,120
+>> In January 1970, at Britain's GCHQ, James Ellis wrote a secret report on "non-secret encryption".
+
+102
+00:09:53,200 --> 00:09:59,980
+>> The idea came from a wartime Bell Labs paper, in which the receiver adds noise to a call, then removes it.
+
+103
+00:10:00,060 --> 00:10:02,600
+>> So the receiver helps lock the message.
+
+104
+00:10:02,680 --> 00:10:06,900
+>> Right. Ellis argued that it was possible, but he couldn't see a way to build it.
+
+105
+00:10:06,980 --> 00:10:14,550
+>> Then, in September 1973, a young mathematician, Clifford Cocks, joined and heard about the idea.
+
+106
+00:10:14,630 --> 00:10:20,620
+>> Cocks knew number theory. He chose prime factoring, and quickly found what we now call RSA.
+
+107
+00:10:20,700 --> 00:10:23,020
+>> He didn't even write it down at the time.
+
+108
+00:10:23,100 --> 00:10:25,620
+>> That's four years before MIT.
+
+109
+00:10:25,700 --> 00:10:32,840
+>> And in 1974, his colleague Malcolm Williamson found what we now call Diffie–Hellman key exchange.
+
+110
+00:10:32,920 --> 00:10:39,620
+>> With a military focus and little computing power, GCHQ found no use for it, and it stayed secret.
+
+111
+00:10:39,700 --> 00:10:44,690
+It was made public in 1997, when Cocks gave a talk on 18 December.
+
+112
+00:10:44,770 --> 00:10:50,010
+>> James Ellis had died on 25 November, a month too soon.
+
+113
+00:10:50,090 --> 00:10:56,650
+>> And as far as anyone knows, the Stanford and MIT teams found it all on their own.
+
+114
+00:10:59,250 --> 00:11:03,340
+>> So what actually happens when you open a secure web page today?
+
+115
+00:11:03,420 --> 00:11:09,170
+>> Your browser and the server run a fresh key exchange, often on elliptic curves rather than a clock.
+
+116
+00:11:09,250 --> 00:11:15,120
+>> The server signs the exchange, and its certificate shows that the signature really is the site's.
+
+117
+00:11:15,200 --> 00:11:17,060
+>> That's the answer to Mallory.
+
+118
+00:11:17,140 --> 00:11:23,780
+>> Public-key maths is slow, so it only sets up a key; a fast ordinary cipher carries the page.
+
+119
+00:11:23,860 --> 00:11:29,950
+>> And the exchange keys are thrown away afterwards, so a key stolen later can't unlock today's traffic.
+
+120
+00:11:30,030 --> 00:11:41,200
+>> RSA keys usually have 2,048 bits or more. On elliptic curves, 256 bits does as well as 3,072.
+
+121
+00:11:43,800 --> 00:11:50,040
+In 1994, Peter Shor showed how a quantum computer could factor huge numbers quickly.
+
+122
+00:11:50,120 --> 00:11:56,150
+>> And his method solves discrete logarithms too, so it would break RSA and Diffie–Hellman alike.
+
+123
+00:11:56,230 --> 00:11:58,570
+>> Both of them? Should we be worried?
+
+124
+00:11:58,650 --> 00:12:05,630
+>> Not yet. No such machine exists, and demonstrations have factored only 15 and 21, helped by knowing the answer.
+
+125
+00:12:05,710 --> 00:12:10,950
+>> Breaking real keys might take millions of qubits, because of error correction.
+
+126
+00:12:11,030 --> 00:12:18,600
+>> The worry is that a message recorded today could be decrypted later. This is called harvest now, decrypt later.
+
+127
+00:12:18,680 --> 00:12:28,950
+>> So in August 2024, NIST, the US standards institute, published three post-quantum standards, one for keys and two for signatures.
+
+128
+00:12:29,030 --> 00:12:35,070
+>> The key one, ML-KEM, rests on lattice problems, which are thought to resist quantum attacks.
+
+129
+00:12:35,150 --> 00:12:42,900
+>> And Chrome and Firefox already mix it into their key exchange, alongside a classic elliptic curve.
+
+130
+00:12:43,500 --> 00:12:49,190
+>> So strangers can agree on a key in public, because some sums are easy one way and hard the other.
+
+131
+00:12:49,270 --> 00:12:53,180
+>> A lock can be public, if only its owner knows the trapdoor.
+
+132
+00:12:53,260 --> 00:12:56,390
+>> And run backwards, the same maths signs.
+
+133
+00:12:56,470 --> 00:13:02,360
+>> Jevons was wrong about his number, but right that some sums are far easier done than undone.
+
+134
+00:13:02,440 --> 00:13:10,200
+>> And every secure connection begins that way, with two strangers, in public, agreeing on a secret only they know.

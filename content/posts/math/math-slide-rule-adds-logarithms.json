@@ -73,7 +73,14 @@
           "start": 70.8,
           "end": 77.87
         }
-      ]
+      ],
+      "ratings": { "complexity": 8, "shock": 5 }
+    },
+    {
+      "type": "explore",
+      "lab": "slide-rule-adds-logarithms",
+      "prompt": "Work out 2 × 3: drag the slide so its 1 sits over 2 on the D scale, then move the cursor to 3 on the slide.",
+      "takeaway": "The cursor reads 6 on D. Distances on the scales are logarithms, so putting two lengths end to end adds log 2 and log 3, which is log 6."
     },
     {
       "type": "image",

@@ -64,7 +64,14 @@
           "start": 71.33,
           "end": 77.87
         }
-      ]
+      ],
+      "ratings": { "complexity": 5, "shock": 4 }
+    },
+    {
+      "type": "explore",
+      "lab": "polyrhythm-three-against-two",
+      "prompt": "Play 3 against 2 and watch where the beats fall on the six steps. Then try 4 against 3, or switch to tapping the slower rhythm yourself.",
+      "takeaway": "Two even rhythms fit on a grid of their lowest common multiple: 6 steps for 3 against 2, 12 for 4 against 3, 20 for 5 against 4. Count the grid and each hand taps its own steps."
     },
     {
       "type": "text",

@@ -70,7 +70,14 @@
           "start": 68.53,
           "end": 74.13
         }
-      ]
+      ],
+      "ratings": { "complexity": 6, "shock": 4 }
+    },
+    {
+      "type": "explore",
+      "lab": "kepler-equal-areas",
+      "prompt": "Stretch the orbit until the planet’s fastest speed is three times its slowest. Watch the equal-time wedges as you go.",
+      "takeaway": "That takes an eccentricity of 0.5. Each wedge covers the same area in the same time, so close to the Sun the planet has to move faster."
     },
     {
       "type": "chart",

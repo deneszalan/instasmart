@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERB: It explained the photoelectric effect, and later won him a Nobel Prize.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERA: That raises a question. What happens to the stripes when light is so dim that it arrives a little at a time?
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERB: In 1909, a young Cambridge physicist, Geoffrey Ingram Taylor, tried it.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERB: He dimmed a gas light with dark glass, until it was like a candle more than a mile away.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: A candle more than a mile off? That's faint.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERB: It was so faint that his photographic plate, behind a sewing needle, took three months to expose.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: And the fringes were still there.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERB: As Paul Dirac later put it, each photon then interferes only with itself.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: Interferes with itself. That's a strange sentence.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERB: It is. And one caution is that Taylor's paper never mentions photons, and his dim lamp wasn't a true single-photon source.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: So it was very faint light, not strictly one photon at a time.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERA: The real test came in nineteen eighty-six, when a French team including Alain Aspect used a genuine single-photon source and an interferometer.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERB: And the interference was still there, one photon at a time.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERB: Here, each photon is detected at one single point.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: A few hundred look like noise.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERB: But by ten thousand, the stripes are unmistakable.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: And with brighter light?
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERB: The dots just pile up faster, giving the same pattern, sooner.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERA: Electrons came the other way round. From eighteen ninety-seven, experiments showed them behaving as particles.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERB: Then, in 1924, Louis de Broy proposed that all matter has a wave side too.

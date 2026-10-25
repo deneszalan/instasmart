@@ -1,0 +1,7 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERB: But near the horizon, sunlight has to slant through far more air, about 38 times as much.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERB: That reddened light falls on clouds, and they scatter it back to us, painting red and orange on white.

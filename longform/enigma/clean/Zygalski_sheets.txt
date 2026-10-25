@@ -1,0 +1,69 @@
+{{Short description|Cryptologic technique used in World War II}}
+[[Image:Płachta Zygalskiego - decrypting Enigma.jpg|right|thumb|A Zygalski sheet]]
+The method of '''Zygalski sheets''' was a [[cryptology|cryptologic]] technique used by the [[Poland|Polish]] [[Biuro Szyfrów|Cipher Bureau]] before and during [[World War II]], and during the war also by British cryptologists at [[Bletchley Park]], to [[decryption|decrypt]] messages [[cipher|enciphered]] on German [[Enigma machine]]s.
+
+The Zygalski-sheet apparatus takes its name from Polish Cipher Bureau [[mathematician]]–[[cryptologist]] [[Henryk Zygalski]], who invented it about October 1938.
+
+==Method==
+
+Zygalski's device comprised a set of 26 perforated sheets for each of the, initially, six possible sequences for inserting the three rotors into the [[Enigma machine]]'s scrambler.  Each sheet related to the starting position of the left (slowest-moving) rotor.
+
+The 26 × 26 matrix represented the 676 possible starting positions of the middle and right rotors and was duplicated horizontally and vertically: ''a–'''z''', a–'''y'''''. The sheets were punched with holes in the positions that would allow a "[[Cryptanalysis of the Enigma#Perforated sheets|female]]" to occur.
+
+Polish mathematician–cryptologist [[Marian Rejewski]] writes about how the perforated-sheets device was operated:
+
+{{blockquote|When the sheets were superposed and moved in the proper sequence and the proper manner with respect to each other, in accordance with a strictly defined program, the number of visible apertures gradually decreased.  And, if a sufficient quantity of data was available, there finally remained a single aperture, probably corresponding to the right case, that is, to the solution. From the position of the aperture one could calculate the order of the rotors, the setting of their rings, and, by comparing the letters of the cipher keys with the letters in the machine, likewise permutation S; in other words, the entire cipher key.}}
+
+Like [[Marian Rejewski|Rejewski]]'s "[[card catalog (cryptology)|card-catalog]]" method, developed using his "[[cyclometer]]", the Zygalski-sheet procedure was independent of the number of [[plugboard]] plug connections in the Enigma machine.
+
+==Manufacture==
+[[Image:Zygalski sheets (perforated sheets).jpg|right|thumb|Demonstration of two perforated sheets at [[Bletchley Park|Bletchley Park Museum]]]]
+The Cipher Bureau's manual manufacture of the sheets, which for security reasons was done by the mathematician-cryptologists themselves, using [[razor blade]]s, was very time-consuming. By 15 December 1938 only a third of the job had been finished.
+
+On that date, the Germans introduced rotors IV and V, thus increasing the labor of making the sheets tenfold, since ten times as many sheets were now needed (for the now 60 possible combinations of sequences, in an Enigma machine, of 3 rotors selected from among the now 5).   
+   
+On 25 July 1939, five weeks before the outbreak of World War II, the [[Polish General Staff]]'s Cipher Bureau disclosed to their [[France|French]] and [[Great Britain|British]] allies, at [[Warsaw]], their cryptologic achievements in breaking Enigma ciphers.  Part of the disclosures involved Zygalski's "perforated-sheet" method.
+
+The British, at [[Bletchley Park]], near [[London]], England, undertook the production of two complete sets of perforated sheets. The work was done, with the aid of perforators, by a section headed by [[John R.&nbsp;F. Jeffreys]]. The sheets were known at Bletchley as '''Netz''' (from ''Netzverfahren'', "net method"), though they were later remembered by [[Gordon Welchman]] as "Jeffreys sheets"; the latter term, however, referred to another catalog produced by Jeffreys' section.
+
+The first set was completed in late December 1939. On 28 December part of the second set was delivered to the Polish cryptologists, who had by then escaped from German-overrun Poland to ''[[PC Bruno]]'' outside Paris, France. The remaining sheets were completed on 7 January 1940, and were couriered by [[Alan Turing]] to France shortly thereafter. "With their help," writes [[Marian Rejewski|Rejewski]], "we continued solving Enigma daily keys." The sheets were used by the Poles to make the first wartime decryption of an Enigma message, on 17 January 1940.
+
+In May 1940, the Germans once again completely changed the procedure for enciphering message keys (with the exception of a Norwegian network).  As a result, Zygalski's sheets were of no use, though the [[Herivel tip]] could still be used.
+
+== See also ==
+* [[Cryptanalysis of the Enigma]]
+* [[Bomba (cryptography)|''Bomba'' ("cryptologic bomb")]]: machine designed about October 1938 by [[Marian Rejewski]] to facilitate the retrieval of Enigma keys
+* [[Bombe]]:  a machine, inspired by Rejewski's "cryptologic bomb", that was used by British and American cryptologists during World War II
+* [[Grille (cryptography)]]
+* [[Punched card]]
+* [[Jacquard loom]]
+
+==Notes==
+{{EnigmaSeries}}
+{{Cipher Bureau}}
+
+
+==References==
+* {{Citation | last = Herivel | first = John | author-link = John Herivel | year = 2008 | title = Herivelismus and the German Military Enigma | place = Cleobury Mortimer, Shropshire | publisher = M & M Baldwin | isbn = 978-0947712464 }}
+* {{Citation | last = Kozaczuk | first = Władysław | author-link = Władysław Kozaczuk | year = 1984 | title = Enigma: How the German Machine Cipher was Broken, and how it was Read by the Allies in World War Two, edited and translated by Christopher Kasparek | edition = 2 | place = Frederick, Maryland | publisher = University Publications of America | isbn = 978-0890935477 }} A  revised and augmented translation of ''W kręgu enigmy'', [[Warsaw]], Książka i Wiedza, 1979, supplemented with appendices by [[Marian Rejewski]] and others.
+* {{Citation | last = Rejewski | first = Marian | author-link = Marian Rejewski | publication-date = January 1982 | year = 1982 | title = Remarks on Appendix 1 to ''British Intelligence in the Second World War'' by F.H. Hinsley," translated by Christopher Kasparek | periodical = Cryptologia | volume = 6 | issue = 1 | pages = 75–83 | doi = 10.1080/0161-118291856867 }}
+* {{Citation | last = Rejewski | first = Marian  | author-link = Marian Rejewski | year = 1984 | title = Summary of Our Methods for Reconstructing ENIGMA and Reconstructing Daily Keys, and of German Efforts to Frustrate Those Methods }} Appendix C of {{Harvnb|Kozaczuk|1984|pp=241–245}}
+* {{Citation | last = Rejewski | first = Marian | author-link = Marian Rejewski | year = 1984  | title = The Mathematical Solution of the Enigma Cipher }} Appendix E of {{Harvnb|Kozaczuk|1984|pp=272–291}}
+
+==External links==
+* [http://www.codesandciphers.org.uk/anoraks/tools/zygalsha.htm Javascript demonstration of Zygalski sheets]
+* [http://www.hut-six.co.uk/poland/ "Polish Enigma Double"] {{Webarchive|url=https://web.archive.org/web/20070312044208/http://www.hut-six.co.uk/poland/ |date=2007-03-12 }}
+* [http://www.nsa.gov/publications/publi00016.cfm About the Enigma (National Security Agency)] {{Webarchive|url=https://web.archive.org/web/20040414231238/http://www.nsa.gov/publications/publi00016.cfm |date=2004-04-14 }}
+* [https://web.archive.org/web/20050923124533/http://www.armyradio.com/publish/Articles/The_Enigma_Code_Breach/The_Enigma_Code_Breach.htm "The Enigma Code Breach"] by [[Jan Bury]] 
+* [http://www.ww2.pl/ The "Enigma" and the Intelligence] {{Webarchive|url=https://web.archive.org/web/20070711191748/http://www.ww2.pl/ |date=2007-07-11 }}
+* [https://web.archive.org/web/20130913071626/http://home.earthlink.net/~nbrass1/1enigma.htm "Codebreaking and Secret Weapons in World War II" By Bill Momsen ]
+*[https://web.archive.org/web/20060418205857/http://www.smithsrisca.demon.co.uk/STMsubtypes-pt3.html A Brief History of Computing Technology, 1930 to 1939]
+* {{citation |first=Bill |last=Casselman |title=Marian Rejewski and the First Break into Enigma |series=Feature Column |publisher=American Mathematical Society |url=http://www.ams.org/samplings/feature-column/fc-2013-12 |access-date=2014-11-15 |archive-date=2014-11-29 |archive-url=https://web.archive.org/web/20141129015738/http://www.ams.org/samplings/feature-column/fc-2013-12 |url-status=dead }}
+* {{citation |first=Bill |last=Casselman |title=The Polish Attack on Enigma II: Zygalski sheets |series=Feature Column |publisher=American Mathematical Society |url=http://www.ams.org/samplings/feature-column/fcarc-enigma |access-date=2014-11-15 |archive-date=2014-11-29 |archive-url=https://web.archive.org/web/20141129015925/http://www.ams.org/samplings/feature-column/fcarc-enigma |url-status=dead }}
+* The Daily Telegraph obituary of Mavis Batey https://www.telegraph.co.uk/news/obituaries/military-obituaries/special-forces-obituaries/10447712/Mavis-Batey-obituary.html
+
+[[Category:Cryptographic attacks]]
+[[Category:Science and technology in Poland]]
+[[Category:Cipher Bureau (Poland)]]
+[[Category:Polish inventions]]
+[[Category:Perforation-based computational tools]]

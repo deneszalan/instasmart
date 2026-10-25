@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERA: So where on the staircase does he catch up?
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERA: People often say Zeno thought infinitely many pieces must add up to something infinite.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERA: In Simplishius's report, his worry is that it is impossible to traverse an infinite number of things in a finite time.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERA: And that's a much harder question.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERA: Zeno's dichotomy makes the same point, without any tortoise.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERA: So to run a hundred metres, first run half of it. Then half of what's left, then half of that.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERA: After ten halvings, you've run all but one part in a thousand and twenty-four, and less than ten centimetres is left.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERA: Like a to-do list that grows exactly as fast as you work through it.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERA: Then the run has no first step at all. So how does it ever begin?
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERA: Zeno's arrow attacks motion from the other side, by cutting time into instants.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERA: In that instant, it fills a space exactly its own size, so it isn't moving.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERA: That one is slippery.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERA: The modern answer treats speed at an instant as a limit.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERA: And in a hundredth, half a metre. Distance over time stays at fifty metres a second, however short the interval.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERA: So the speed at an instant is defined as that limit.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERA: It sounds almost too simple.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERA: The front block of one row passes every oncoming block, but only half of the still ones.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERA: Half equals double? That can't be right.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERA: Simplishius tells a story. When Diogenes the Cynic heard Zeno's arguments, he said nothing, stood up, and walked.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERA: Honestly, it's tempting.

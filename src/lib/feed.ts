@@ -131,6 +131,8 @@ function slideParts(slide: Slide): string[] {
       return [slide.caption ?? slide.alt];
     case 'video':
       return [slide.caption ?? slide.alt];
+    case 'explore':
+      return [slide.prompt, slide.takeaway];
     case 'stat':
       return [`${slide.value} ${slide.label}`, slide.text ?? ''];
     case 'list':

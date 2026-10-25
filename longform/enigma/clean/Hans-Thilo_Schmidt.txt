@@ -1,0 +1,80 @@
+{{Short description|German spy (1888–1943)}}
+{{Infobox spy
+| honorific_prefix = 
+| name             = Hans-Thilo Schmidt
+| honorific_suffix = 
+| nickname         = 
+| image            = Hans thilo schmidt.jpg
+| caption          = 
+| allegiance       = [[French Third Republic|France]]
+| service_branch   = 
+| service_years    = 
+| rank             = 
+| operation        = 
+| award            = 
+| code_name1       = Asché
+| code_name2       = Source D
+| code_name3       = 
+| code_name4       = 
+| code_name5       = 
+| codename6        = 
+| codename7        = 
+| codename8        = 
+| codename9        = 
+| other            = 
+| birth_name       = 
+| birth_date       = {{birth date |1888|5|13|df=y}}
+| birth_place      = 
+| death_date       = {{death date and age |1943|9|19|1888|5|13|df=y}}
+| death_place      = [[Berlin]], Germany
+| death_cause      = Execution or Suicide
+| burial_place     = 
+| height           = 
+| religion         = 
+| residence        = 
+| parents          = 
+| spouse           = 
+| children         = 
+| occupation       = Civil servant
+| alma_mater       = 
+| signature        = 
+}}
+
+'''Hans-Thilo Schmidt''' (13 May 1888 – 19 September 1943) codenamed '''Asché''' or '''Source D''', was a German [[spy]] who sold secrets about the [[Enigma machine]] to the French during [[World War II]]. The materials he provided facilitated Polish mathematician [[Marian Rejewski]]'s reconstruction of the [[wiring]] in the Enigma's [[Rotor machine|rotors]] and [[reflector (cipher machine)|reflector]]; thereafter the Poles were able to read a large proportion of Enigma-enciphered traffic. He was the younger brother of [[Wehrmacht]] general [[Rudolf Schmidt]].
+
+==Selling Enigma secrets==
+[[File:RodolpheLemoine.jpg|thumb|left|{{Interlanguage link|Rodolphe Lemoine|fr}}, born Rudolf Stallmann (1871–1946), served as his French point of contact as "Rex".]]
+A former officer, Schmidt had been forced to leave the army having suffered from gas during the [[First World War]]. His brother, [[Rudolf Schmidt]], secured him a civilian post at the German Armed Forces' [[cryptographic]] headquarters, the Cipher Office. Shortly after the military version of the [[Enigma machine]] was introduced, he contacted [[France|French]] [[intelligence (information gathering)|intelligence]] and offered to supply information about the new machine. His offer was accepted by Captain [[Gustave Bertrand]] of French Intelligence, and he received from the French the [[codename]] ''Asché'', and was assigned a contact, the French agent codenamed ''Rex''.
+
+For the next several years, until he left his position in Germany, he met with French agents at various European cities and supplied them copies of the Enigma machine's instruction manual, operating procedures, and lists of key settings. Even with this information, however, French Intelligence was unable to break messages [[encrypt]]ed on the Enigma. Nor were the [[United Kingdom|British]] [[cryptologist]]s whom Bertrand contacted able to make any headway.
+
+In December 1932, Bertrand shared intelligence obtained from Asché with the Polish [[General Staff]]'s Cipher Bureau ([[Biuro Szyfrów]]). Mathematician-cryptologist [[Marian Rejewski]] had already set up a system of [[equation]]s describing the operation of the then new German Army Enigma rotor-wirings. The [[key (cryptography)|key]]-settings lists provided by Schmidt helped fill in enough of the unknowns in Rejewski's [[formula]]e, allowing him to speedily solve the equations and recover the wirings. That accomplished, the Poles were henceforth able to read Enigma traffic for nearly seven years to the outbreak of [[World War II]] as well as for a time into the War, while operating in conjunction with French intelligence [[PC Bruno|in France]]. In a two-week January 1938 trial, they solved and read about three-quarters of all [[Wehrmacht]] (German Armed Forces) Enigma [[Signals intelligence|intercept]]s:  a remarkable result, considering that parts of the raw intercepts were garbled or incomplete due to interference [Kozaczuk, ''Enigma'' 1984, p.&nbsp;45].
+
+After the [[Battle of France]], the French agent who had been Schmidt's case officer, a German citizen named Stallmann who went by the name "[[Rodolphe Lemoine]]" ([[:fr:Rodolphe Lemoine|fr]]) and used the codename "Rex," was arrested by the [[Gestapo]] and betrayed Schmidt as a French spy. Schmidt was arrested on 1 April 1943, and in September 1943 his daughter Giselle was called on to identify his body; her account (as recounted in [[Hugh Sebag-Montefiore]]'s book) suggests that Schmidt had committed suicide.
+
+== See also ==
+* [[Ultra (cryptography)]]
+
+== References ==
+{{Reflist}}
+* [[Gustave Bertrand]], ''Enigma ou la plus grande enigme de la guerre 1939-1945'' (Enigma:  the Greatest Enigma of the War of 1939-1945), Paris, Librairie Plon, 1973.
+* [[Paul Paillole]], ''The Spy in Hitler's Inner Circle'' (English translation of ''Notre Espion chez Hitler''), Oxford, Casemate UK, 2016.
+* [[Paul Paillole]], ''Notre espion chez Hitler'', Paris, Editions Robert Laffont, 1985.
+* [[Władysław Kozaczuk]], ''Enigma:  How the German Machine Cipher Was Broken, and How It Was Read by the Allies in World War Two'', edited and translated by Christopher Kasparek, Frederick, MD, University Publications of America, 1984.
+* [[Hugh Sebag-Montefiore]], ''Enigma:  the Battle for the Code'', London, Weidenfeld & Nicolson, 2000. (Provides information on Schmidt obtained from his daughter.)
+* [[Fred B. Wrixon]], ''Codes, Ciphers & Other Clandestine Communication: Making and Breaking Secret Messages from Hieroglyphics to the Internet'', 1998, Black Dog & Leventhal Publishers, Inc., {{ISBN|1-57912-040-7}}, p.&nbsp;84.
+
+== Further reading ==
+*[[Mavis Batey]], ''Dilly: The Man Who Broke Enigmas''. London: Dialogue, 2009, {{isbn|978-1-90644-701-4}}
+* German manual Wehrmacht, H.Dv.g. 13, L.Dv.g. 13 Gebrauchsanleitung für die Chiffriermaschine Enigma - Geheim 1937, {{ISBN|978-3-75266-833-9}}
+* German manual Wehrmacht, H.Dv.g. 14, M.Dv.Nr. 168, L.Dv.g. 14 Schluesselanleitung zur Schluesselmaschine Enigma 1940 with attachemend H.Dv.g. 11, M.Dv.Nr. 390, L.Dv.g. 11 Die Wehrmachtschlüssel 1940 Geheim, {{ISBN|978-3-75042-559-0}}
+* Paul Paillole, ''The Spy in Hitlers Inner Circle.'' {{ISBN|978-1-61200-371-9}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Schmidt, Hans-Thilo}}
+[[Category:1888 births]]
+[[Category:1943 deaths]]
+[[Category:German cryptographers]]
+[[Category:French spies]]
+[[Category:Interwar-period spies]]

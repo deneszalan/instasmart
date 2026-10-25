@@ -1,0 +1,607 @@
+[
+ {
+  "key": "o1",
+  "who": "B",
+  "spoken": "Imagine a party with 23 guests."
+ },
+ {
+  "key": "o2",
+  "who": "A",
+  "spoken": "What are the chances that two of them share a birthday?"
+ },
+ {
+  "key": "o3",
+  "who": "B",
+  "spoken": "With 365 days to choose from, a match sounds pretty unlikely."
+ },
+ {
+  "key": "o4",
+  "who": "A",
+  "spoken": "And yet it's more likely than not. The chance is fifty point seven percent."
+ },
+ {
+  "key": "x1",
+  "who": "B",
+  "spoken": "That's better than a coin toss, with just 23 people?"
+ },
+ {
+  "key": "o5",
+  "who": "A",
+  "spoken": "Yes. And with seventy guests, it's ninety-nine point nine percent, which is almost certain."
+ },
+ {
+  "key": "o6",
+  "who": "B",
+  "spoken": "This is the birthday problem. Let's find out why it works."
+ },
+ {
+  "key": "a1",
+  "who": "A",
+  "spoken": "Let's set some rules for our party first."
+ },
+ {
+  "key": "a2",
+  "who": "B",
+  "spoken": "Each birthday is one of 365 days, all equally likely, and we'll leave out February the twenty-ninth."
+ },
+ {
+  "key": "a3",
+  "who": "A",
+  "spoken": "Now the guests arrive one at a time, and we mark each birthday on the calendar."
+ },
+ {
+  "key": "x2",
+  "who": "B",
+  "spoken": "So far, every guest has a day to themselves."
+ },
+ {
+  "key": "a4",
+  "who": "B",
+  "spoken": "Until guest 20 lands on a day that's already taken. It's November the nineteenth, the birthday of guest 7."
+ },
+ {
+  "key": "x3",
+  "who": "A",
+  "spoken": "Twenty guests, and we already have a match."
+ },
+ {
+  "key": "a5",
+  "who": "A",
+  "spoken": "That's just one party, though. So here are a thousand more, each with twenty-three random guests."
+ },
+ {
+  "key": "a6",
+  "who": "B",
+  "spoken": "511 of them have a shared birthday. That's about half, just as the maths says."
+ },
+ {
+  "key": "a7",
+  "who": "A",
+  "spoken": "That's far fewer guests than our instincts suggest. In one study, most people markedly overestimated the number needed."
+ },
+ {
+  "key": "x4",
+  "who": "B",
+  "spoken": "So who first noticed this?"
+ },
+ {
+  "key": "a8",
+  "who": "A",
+  "spoken": "It's usually credited to the mathematician Harold Davenport, around nineteen twenty-seven."
+ },
+ {
+  "key": "a9",
+  "who": "B",
+  "spoken": "But he didn't publish it, or claim it as his own, because he couldn't believe nobody had stated it before."
+ },
+ {
+  "key": "a10",
+  "who": "A",
+  "spoken": "The first published version came from Richard von Meezes, in nineteen thirty-nine."
+ },
+ {
+  "key": "b1",
+  "who": "B",
+  "spoken": "So why does our intuition get this so wrong?"
+ },
+ {
+  "key": "b2",
+  "who": "A",
+  "spoken": "It's natural to think about your own birthday, and whether anyone matches it."
+ },
+ {
+  "key": "b3",
+  "who": "B",
+  "spoken": "Right, and with 22 other guests, the chance that someone shares yours is only about 6 percent."
+ },
+ {
+  "key": "x5",
+  "who": "A",
+  "spoken": "Six percent? That's tiny."
+ },
+ {
+  "key": "b4",
+  "who": "B",
+  "spoken": "But any two guests can make a match, not just you and someone else."
+ },
+ {
+  "key": "b5",
+  "who": "A",
+  "spoken": "So let's draw a line between every pair of guests."
+ },
+ {
+  "key": "b6",
+  "who": "B",
+  "spoken": "The first guest pairs with 22 others, the next with 21 more, and so on."
+ },
+ {
+  "key": "x6",
+  "who": "A",
+  "spoken": "The lines just keep coming."
+ },
+ {
+  "key": "b7",
+  "who": "A",
+  "spoken": "That's twenty-three times twenty-two, divided by two, which makes two hundred and fifty-three pairs."
+ },
+ {
+  "key": "x7",
+  "who": "B",
+  "spoken": "So that's 253 chances for a match, not 22."
+ },
+ {
+  "key": "b8",
+  "who": "A",
+  "spoken": "Exactly. Only twenty-two of those pairs include you. The other two hundred and thirty-one are matches you weren't counting."
+ },
+ {
+  "key": "b9",
+  "who": "B",
+  "spoken": "And pairs grow fast. Double the guests to 46, and there are 1,035 pairs, which is about four times as many."
+ },
+ {
+  "key": "x8",
+  "who": "A",
+  "spoken": "So pairs grow like the square of the guests. That will matter later."
+ },
+ {
+  "key": "c1",
+  "who": "A",
+  "spoken": "For the exact chance, it's easier to work out the opposite, which is that no two guests share a birthday."
+ },
+ {
+  "key": "x9",
+  "who": "B",
+  "spoken": "That's the chance that everyone is different. Then the rest is the chance of a match."
+ },
+ {
+  "key": "c2",
+  "who": "B",
+  "spoken": "So, the first guest can have any birthday, which gives 365 days out of 365."
+ },
+ {
+  "key": "c3",
+  "who": "A",
+  "spoken": "The second must miss the first, so it's three hundred and sixty-four out of three hundred and sixty-five."
+ },
+ {
+  "key": "c4",
+  "who": "B",
+  "spoken": "The third must miss both, which leaves 363 out of 365, and so on."
+ },
+ {
+  "key": "c5",
+  "who": "A",
+  "spoken": "And guest twenty-three must miss all twenty-two before, which leaves three hundred and forty-three out of three hundred and sixty-five."
+ },
+ {
+  "key": "c6",
+  "who": "B",
+  "spoken": "Multiply all 23 fractions, and the chance that every birthday differs is 49.3 percent."
+ },
+ {
+  "key": "c7",
+  "who": "A",
+  "spoken": "So the chance of at least one shared birthday is fifty point seven percent."
+ },
+ {
+  "key": "x10",
+  "who": "B",
+  "spoken": "Every one of those fractions looks so harmless, though."
+ },
+ {
+  "key": "c8",
+  "who": "A",
+  "spoken": "Each one is close to one, but there are many, and each new guest has more birthdays to avoid."
+ },
+ {
+  "key": "c9",
+  "who": "B",
+  "spoken": "Let's do the same sum for every size of party, and watch the chance climb."
+ },
+ {
+  "key": "c10",
+  "who": "A",
+  "spoken": "With ten guests, the chance is eleven point seven percent; with thirty, it's seventy point six percent; with fifty, it's ninety-seven percent."
+ },
+ {
+  "key": "c11",
+  "who": "B",
+  "spoken": "It passes 99 percent at 57 guests, and 99.9 percent at 70."
+ },
+ {
+  "key": "x11",
+  "who": "A",
+  "spoken": "So when is a match actually guaranteed?"
+ },
+ {
+  "key": "c12",
+  "who": "B",
+  "spoken": "It's only at 366 guests, when there are more guests than days."
+ },
+ {
+  "key": "d1",
+  "who": "B",
+  "spoken": "Let's watch it happen. Guests enter a room one by one, and we stop at the first shared birthday."
+ },
+ {
+  "key": "d2",
+  "who": "A",
+  "spoken": "In this room, the first match came with guest twenty-eight."
+ },
+ {
+  "key": "d3",
+  "who": "B",
+  "spoken": "In this one, it came with guest 33, and in this one, with guest 18."
+ },
+ {
+  "key": "x12",
+  "who": "A",
+  "spoken": "It really does vary from room to room."
+ },
+ {
+  "key": "d4",
+  "who": "B",
+  "spoken": "So let's run a thousand rooms. Each dot is one room, placed at the guest who brought its first match."
+ },
+ {
+  "key": "d5",
+  "who": "A",
+  "spoken": "A few rooms matched very early, with just three guests. A few went past sixty."
+ },
+ {
+  "key": "d6",
+  "who": "B",
+  "spoken": "In 511 of the 1,000 rooms, the first match came by guest 23."
+ },
+ {
+  "key": "x13",
+  "who": "A",
+  "spoken": "Just over half, then."
+ },
+ {
+  "key": "d7",
+  "who": "B",
+  "spoken": "And on average, the first match took 24.7 guests. The theory says about 24.6."
+ },
+ {
+  "key": "d8",
+  "who": "A",
+  "spoken": "Real groups behave the same way. At the twenty fourteen World Cup, each of the thirty-two squads had twenty-three players."
+ },
+ {
+  "key": "x14",
+  "who": "B",
+  "spoken": "So every squad was one of our rooms of 23."
+ },
+ {
+  "key": "d9",
+  "who": "A",
+  "spoken": "And an analysis of the squad lists suggested that sixteen of them had a shared birthday, which is exactly half."
+ },
+ {
+  "key": "d10",
+  "who": "B",
+  "spoken": "Five of those squads even had two pairs."
+ },
+ {
+  "key": "y1",
+  "who": "A",
+  "spoken": "Now let's change the question. How many people do you need for an even chance that someone shares your birthday?"
+ },
+ {
+  "key": "x15",
+  "who": "B",
+  "spoken": "Surely it's half of 365, so about 183?"
+ },
+ {
+  "key": "y2",
+  "who": "A",
+  "spoken": "Let's see. Each person matches you with a chance of one in three hundred and sixty-five."
+ },
+ {
+  "key": "y3",
+  "who": "B",
+  "spoken": "So the chance that nobody does is 364 out of 365, multiplied once for every person."
+ },
+ {
+  "key": "y4",
+  "who": "A",
+  "spoken": "That shrinks slowly. It takes two hundred and fifty-three people to reach an even chance."
+ },
+ {
+  "key": "y5",
+  "who": "B",
+  "spoken": "That's far more than half of 365. Where do all the extra people go?"
+ },
+ {
+  "key": "x16",
+  "who": "A",
+  "spoken": "Many of them share birthdays with each other, so they don't cover any new days."
+ },
+ {
+  "key": "y6",
+  "who": "B",
+  "spoken": "Drop 253 random birthdays on the calendar, and they land on only 180 different days."
+ },
+ {
+  "key": "y7",
+  "who": "A",
+  "spoken": "So your birthday has only about an even chance of being one of them."
+ },
+ {
+  "key": "y8",
+  "who": "B",
+  "spoken": "Now look at that number again. 253 is exactly the number of pairs among 23 guests."
+ },
+ {
+  "key": "x17",
+  "who": "A",
+  "spoken": "Is that a coincidence?"
+ },
+ {
+  "key": "y9",
+  "who": "B",
+  "spoken": "Not really. Both questions need about 253 chances, each of one in 365."
+ },
+ {
+  "key": "y10",
+  "who": "A",
+  "spoken": "A one-in-three-hundred-and-sixty-five chance becomes an even bet after about two hundred and fifty-three tries. That's three hundred and sixty-five times the natural log of two."
+ },
+ {
+  "key": "x18",
+  "who": "B",
+  "spoken": "So the room of 23 and the crowd of 253 are really the same sum."
+ },
+ {
+  "key": "r1",
+  "who": "B",
+  "spoken": "And that gives us a quick rule for any number of days, not just 365."
+ },
+ {
+  "key": "r2",
+  "who": "A",
+  "spoken": "With n guests, there are about n squared over two pairs."
+ },
+ {
+  "key": "x19",
+  "who": "B",
+  "spoken": "It's like half of a square grid, with every guest against every other guest."
+ },
+ {
+  "key": "r3",
+  "who": "A",
+  "spoken": "For an even chance we need about two hundred and fifty-three pairs, so n squared should be about five hundred and six."
+ },
+ {
+  "key": "r4",
+  "who": "B",
+  "spoken": "The square root of 506 is about 22.5. Round up, and you get 23."
+ },
+ {
+  "key": "r5",
+  "who": "A",
+  "spoken": "In general, you need about one point one eight times the square root of the number of days."
+ },
+ {
+  "key": "x20",
+  "who": "B",
+  "spoken": "So what about a year with a million days?"
+ },
+ {
+  "key": "r6",
+  "who": "A",
+  "spoken": "With a million equally likely days, just one thousand one hundred and seventy-eight people would give an even chance."
+ },
+ {
+  "key": "x21",
+  "who": "B",
+  "spoken": "Out of a million days? That's about a tenth of a percent."
+ },
+ {
+  "key": "r7",
+  "who": "A",
+  "spoken": "The real surprise is that the people needed grow only like the square root of the days."
+ },
+ {
+  "key": "u1",
+  "who": "A",
+  "spoken": "Of course, our party made some simplifications. It had three hundred and sixty-five equally likely days, no February the twenty-ninth, and no twins."
+ },
+ {
+  "key": "u2",
+  "who": "B",
+  "spoken": "And real birthdays aren't spread evenly. In the United States, more babies tend to be born in September and October."
+ },
+ {
+  "key": "u3",
+  "who": "A",
+  "spoken": "From nineteen seventy-three to nineteen ninety-nine, September the sixteenth was the most common birthday in the United States, and Christmas Day the rarest, apart from February the twenty-ninth."
+ },
+ {
+  "key": "u4",
+  "who": "B",
+  "spoken": "So does that break the maths? No, any unevenness only makes a shared birthday more likely."
+ },
+ {
+  "key": "x22",
+  "who": "A",
+  "spoken": "More likely? Why's that?"
+ },
+ {
+  "key": "u5",
+  "who": "B",
+  "spoken": "Take an extreme case, and imagine everyone was born in the first half of the year."
+ },
+ {
+  "key": "u6",
+  "who": "A",
+  "spoken": "Then just seventeen guests would give a better-than-even chance."
+ },
+ {
+  "key": "x23",
+  "who": "B",
+  "spoken": "There are fewer days to go round, so more people crowd onto the same ones."
+ },
+ {
+  "key": "u7",
+  "who": "A",
+  "spoken": "Real birthdays are only slightly uneven, though, so the real-world answer is still twenty-three."
+ },
+ {
+  "key": "u8",
+  "who": "B",
+  "spoken": "And twins nearly always share a birthday, which can only raise the chance."
+ },
+ {
+  "key": "h1",
+  "who": "B",
+  "spoken": "The same maths matters in computer security, too."
+ },
+ {
+  "key": "h2",
+  "who": "A",
+  "spoken": "A hash function turns any file into a short digital fingerprint of fixed length."
+ },
+ {
+  "key": "h3",
+  "who": "B",
+  "spoken": "A 64-bit fingerprint has about 18 billion billion possible values."
+ },
+ {
+  "key": "x24",
+  "who": "A",
+  "spoken": "That sounds like plenty."
+ },
+ {
+  "key": "h4",
+  "who": "B",
+  "spoken": "Still, two different files with the same fingerprint make a collision."
+ },
+ {
+  "key": "h5",
+  "who": "A",
+  "spoken": "And fingerprints are like birthdays, in a year with an enormous number of days."
+ },
+ {
+  "key": "h6",
+  "who": "B",
+  "spoken": "So collisions show up after about the square root of that number. That's 2 to the power of half the number of bits."
+ },
+ {
+  "key": "h7",
+  "who": "A",
+  "spoken": "For sixty-four bits, about five billion tries give an even chance of a collision."
+ },
+ {
+  "key": "x25",
+  "who": "B",
+  "spoken": "And to match one particular fingerprint?"
+ },
+ {
+  "key": "h8",
+  "who": "A",
+  "spoken": "That's like matching your own birthday, and it takes about thirteen billion billion tries."
+ },
+ {
+  "key": "h9",
+  "who": "B",
+  "spoken": "That's the idea behind the birthday attack. Imagine a forger with a fair contract and a fraudulent one."
+ },
+ {
+  "key": "h10",
+  "who": "A",
+  "spoken": "She makes many harmless variations of each, such as an extra comma, a double space or a synonym."
+ },
+ {
+  "key": "h11",
+  "who": "B",
+  "spoken": "When a fair version and a fraudulent version share a fingerprint, she has her collision."
+ },
+ {
+  "key": "h12",
+  "who": "A",
+  "spoken": "Her victim signs the fair version, and the signature fits the fraudulent one just as well."
+ },
+ {
+  "key": "x26",
+  "who": "B",
+  "spoken": "That's sneaky. So how do you defend against it?"
+ },
+ {
+  "key": "h13",
+  "who": "A",
+  "spoken": "You use longer fingerprints, with about twice as many bits as brute force alone would demand."
+ },
+ {
+  "key": "h14",
+  "who": "B",
+  "spoken": "S H A 256 has 256 bits, so a collision takes around 2 to the power of 128 tries. That's a number with 39 digits."
+ },
+ {
+  "key": "x27",
+  "who": "A",
+  "spoken": "So a party puzzle tells engineers how long their fingerprints need to be."
+ },
+ {
+  "key": "z1",
+  "who": "A",
+  "spoken": "So, let's go back to the party."
+ },
+ {
+  "key": "z2",
+  "who": "B",
+  "spoken": "23 guests sound like too few, because we picture matches with ourselves."
+ },
+ {
+  "key": "z3",
+  "who": "A",
+  "spoken": "But every pair is a chance, and twenty-three guests make two hundred and fifty-three pairs."
+ },
+ {
+  "key": "z4",
+  "who": "B",
+  "spoken": "That's enough for a better-than-even chance of 50.7 percent."
+ },
+ {
+  "key": "x28",
+  "who": "A",
+  "spoken": "It still feels wrong, doesn't it? Even when you can see every pair."
+ },
+ {
+  "key": "x29",
+  "who": "B",
+  "spoken": "That's what makes it a paradox. It seems wrong at first, but it's true."
+ },
+ {
+  "key": "z5",
+  "who": "A",
+  "spoken": "So next time you're in a room of twenty-three people or more, ask around."
+ },
+ {
+  "key": "z6",
+  "who": "B",
+  "spoken": "More often than not, two of you will share a birthday."
+ }
+]

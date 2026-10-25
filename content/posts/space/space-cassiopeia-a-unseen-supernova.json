@@ -19,7 +19,8 @@
       "caption": "Chandra X-ray images of Cassiopeia A from 2000 to 2019, shown in a repeating loop: the debris shifts and the outer blast wave keeps pushing outwards.",
       "credit": "NASA/CXC/SAO; NASA/STScI; J. Major, A. Jubett, K. Arcand · Public domain · excerpt",
       "href": "https://chandra.harvard.edu/photo/2024/timelapse/animations.html",
-      "music": "“Myst on the Moor” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Myst on the Moor” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 4, "shock": 6 }
     },
     {
       "type": "reveal",

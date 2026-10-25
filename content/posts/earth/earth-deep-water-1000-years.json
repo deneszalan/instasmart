@@ -19,7 +19,8 @@
       "caption": "Schematic animation of the North Atlantic with the depths exaggerated, not real speeds. The surface fades away; arrows show water flowing north, then sinking near Greenland and Iceland.",
       "credit": "NASA Scientific Visualization Studio · Public domain · excerpt",
       "href": "https://svs.gsfc.nasa.gov/3658/",
-      "music": "“Deep Relaxation” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Deep Relaxation” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 4, "shock": 6 }
     },
     {
       "type": "flow",

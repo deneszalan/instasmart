@@ -68,7 +68,14 @@
           "start": 71.87,
           "end": 78.13
         }
-      ]
+      ],
+      "ratings": { "complexity": 5, "shock": 4 }
+    },
+    {
+      "type": "explore",
+      "lab": "brunelleschi-perspective",
+      "prompt": "You are looking down from 3 m. Drag the people around the floor, then lower your eye until all their heads touch the horizon.",
+      "takeaway": "Every floor line runs to one vanishing point on the horizon, and anything as tall as your eye reaches the horizon however far away: Alberti’s similar triangles, size divided by distance."
     },
     {
       "type": "text",

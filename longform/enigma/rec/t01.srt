@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+Press a key on this machine, and a lamp lights up another letter.
+
+2
+00:00:31,000 --> 00:00:56,000
+Press the same key again, and a different lamp lights.
+
+3
+00:01:01,000 --> 00:01:26,000
+In the war, the army's version could be set up in nearly a hundred and fifty-nine quintillion ways.
+
+4
+00:01:31,000 --> 00:01:56,000
+But it had one odd habit. It never turned a letter into itself.
+
+5
+00:02:01,000 --> 00:02:26,000
+That small rule, and the people who saw what it meant, helped break Enigma.
+
+6
+00:02:31,000 --> 00:02:56,000
+Enigma has twenty-six keys and twenty-six lamps. One operator types; another writes down the lamps that light.
+
+7
+00:03:01,000 --> 00:03:26,000
+Let's follow one key press. First, the key turns the right-hand rotor one step, before any current flows.
+
+8
+00:03:31,000 --> 00:03:56,000
+Then the current runs to the plugboard, where a cable can swap it for another letter.
+
+9
+00:04:01,000 --> 00:04:26,000
+Next come three rotors, each wired inside to turn one letter into another.
+
+10
+00:04:31,000 --> 00:04:56,000
+At the far end, the reflector sends the current back through the rotors by another route.
+
+11
+00:05:01,000 --> 00:05:26,000
+Back through the plugboard, and one lamp lights. Here, the letter A became C.
+
+12
+00:05:31,000 --> 00:05:56,000
+Press A again. The rotor has moved, so every wire has shifted, and A becomes the letter N.
+
+13
+00:06:01,000 --> 00:06:26,000
+Once per turn, a notch lets the right rotor push the middle one along, like a car's odometer.
+
+14
+00:06:31,000 --> 00:06:56,000
+Almost. The middle rotor sometimes steps twice in a row, which is called the double step.
+
+15
+00:07:01,000 --> 00:07:26,000
+The rotors come back to where they started only after sixteen thousand nine hundred key presses.
+
+16
+00:07:31,000 --> 00:07:56,000
+The reflector joins the twenty-six letters in thirteen pairs, and turns the current round.
+
+17
+00:08:01,000 --> 00:08:26,000
+So the machine works both ways. At the same setting, press the letter C, and the current runs backwards to A.
+
+18
+00:08:31,000 --> 00:08:56,000
+The receiver sets up a machine the same way, types in the ciphertext, and out comes the message.
+
+19
+00:09:01,000 --> 00:09:26,000
+But there's a price. Could a key ever light its own lamp?
+
+20
+00:09:31,000 --> 00:09:56,000
+Only if the current came back along the very wire it went in on.

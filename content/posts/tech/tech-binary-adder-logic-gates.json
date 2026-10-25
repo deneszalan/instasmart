@@ -74,7 +74,14 @@
           "start": 74,
           "end": 80.67
         }
-      ]
+      ],
+      "ratings": { "complexity": 7, "shock": 4 }
+    },
+    {
+      "type": "explore",
+      "lab": "binary-adder-logic-gates",
+      "prompt": "Tap the bits to set two numbers and watch the carries. Find a sum where a carry ripples all the way across, like 5 + 3.",
+      "takeaway": "Each column waits for the carry from its right before it can settle, so in a ripple-carry adder the slowest sums are the ones that carry the whole way."
     },
     {
       "type": "quiz",

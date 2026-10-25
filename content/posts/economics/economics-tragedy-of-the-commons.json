@@ -68,7 +68,14 @@
           "start": 78.4,
           "end": 84.53
         }
-      ]
+      ],
+      "ratings": { "complexity": 6, "shock": 7 }
+    },
+    {
+      "type": "explore",
+      "lab": "tragedy-of-the-commons",
+      "prompt": "Play your farm on an open pasture while the others keep adding cows. Then try the herders’ own rule of three cows each.",
+      "takeaway": "Open to all, each herder gains by adding a cow while the damage is shared, until the grass is gone. With a rule of their own, as Ostrom found in lasting commons, the pasture stays green."
     },
     {
       "type": "flow",

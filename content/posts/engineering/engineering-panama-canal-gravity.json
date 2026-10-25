@@ -74,7 +74,14 @@
           "start": 75.2,
           "end": 83.2
         }
-      ]
+      ],
+      "ratings": { "complexity": 5, "shock": 6 }
+    },
+    {
+      "type": "explore",
+      "lab": "panama-canal-gravity",
+      "prompt": "Bring the ship up from the sea to Gatun Lake. Open each valve to fill its chamber, then open the gates once the water is level.",
+      "takeaway": "Water from above runs down into each chamber and lifts the ship, 26 m in three steps, with no pumps. Each filling takes about 101 million litres of the lake’s water."
     },
     {
       "type": "text",

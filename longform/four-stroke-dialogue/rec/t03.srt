@@ -1,0 +1,79 @@
+1
+00:00:01,000 --> 00:00:26,000
+SPEAKERB: Four percent. So almost all of it went to waste.
+
+2
+00:00:31,000 --> 00:00:56,000
+SPEAKERA: Almost all. Then a travelling salesman in Germany, Nicolaus Otto, learned of it, and started building engines himself.
+
+3
+00:01:01,000 --> 00:01:26,000
+SPEAKERB: In 1862 he tried one that compressed its charge first. It ran for a few minutes, then destroyed itself.
+
+4
+00:01:31,000 --> 00:01:56,000
+SPEAKERA: That same year, in France, Alphonse Beau de Rochas patented the four-stroke cycle. But he never built an engine.
+
+5
+00:02:01,000 --> 00:02:26,000
+SPEAKERB: So the idea existed on paper before anyone made it run.
+
+6
+00:02:31,000 --> 00:02:56,000
+SPEAKERA: Meanwhile, in eighteen sixty-four, Otto and Eugen Langen founded the first company devoted to making engines.
+
+7
+00:03:01,000 --> 00:03:26,000
+SPEAKERB: Their atmospheric engine won a gold medal at the 1867 Paris World's Fair, at about 12 percent efficiency.
+
+8
+00:03:31,000 --> 00:03:56,000
+SPEAKERA: That's three times Lenoir's.
+
+9
+00:04:01,000 --> 00:04:26,000
+SPEAKERB: Then, in 1876, Otto's company built an engine that compressed its charge in four strokes.
+
+10
+00:04:31,000 --> 00:04:56,000
+SPEAKERA: It was an immediate success, and the first commercially successful engine to compress its charge in the cylinder.
+
+11
+00:05:01,000 --> 00:05:26,000
+SPEAKERB: And two of Otto's former engineers, Gottlieb Daimler and Wilhelm Maybach, made it small and fast enough for vehicles.
+
+12
+00:05:31,000 --> 00:05:56,000
+SPEAKERA: But in eighteen eighty-six the patent was cancelled in Germany, because Beau de Rochas had patented the cycle first.
+
+13
+00:06:01,000 --> 00:06:26,000
+SPEAKERB: So a patent for an engine nobody had built ended Otto's monopoly.
+
+14
+00:06:31,000 --> 00:06:56,000
+SPEAKERA: And neither Otto nor Daimler had even known that patent existed.
+
+15
+00:07:01,000 --> 00:07:26,000
+SPEAKERB: Still, the engines spread. By 1889, more than 50 companies were building Otto-type engines.
+
+16
+00:07:31,000 --> 00:07:56,000
+SPEAKERA: And the cycle still carries Otto's name. It's called the Otto cycle.
+
+17
+00:08:01,000 --> 00:08:26,000
+SPEAKERB: So why does squeezing first help so much? Engineers answer with a graph of pressure against volume.
+
+18
+00:08:31,000 --> 00:08:56,000
+SPEAKERA: This is the idealised version, the Otto cycle, traced as our engine turns.
+
+19
+00:09:01,000 --> 00:09:26,000
+SPEAKERB: During intake, the volume grows, at about the pressure outside.
+
+20
+00:09:31,000 --> 00:09:56,000
+SPEAKERA: During compression, the volume shrinks tenfold, and the pressure climbs steeply.

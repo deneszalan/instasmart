@@ -1,29 +1,29 @@
 #!/bin/bash
-# Record every narration line once, in the video's voice (<slug>/voice.txt: af_heart, af_bella, af_nicole, m1 or m2).
-# A dialogue casts two voices in voice.txt, e.g. "A=m1 B=af_bella" (while writing, am_michael stands in for m1/m2): lines with
-# who: 'A' or 'B' are spoken by them.
-# One engine run at a time per engine, so parallel writers don't swamp the CPU.
+# Record the narration of <slug> in its voice (<slug>/voice.txt: af_heart, af_bella, af_nicole, m1 or m2), or for a
+# dialogue a cast, e.g. "A=m1 B=af_bella" (while writing, am_michael stands in for m1/m2): lines with who: 'A' or 'B'.
+# Only lines not recorded before are recorded: linecache.py keeps every recorded line by its voice and exact words, so a
+# reworded line is the only one re-recorded, and an interrupted run loses at most one batch of 20.
+# Threads are capped (two torch processes each taking every core slow each other down many times over):
+# Kokoro 1 thread; the cloned voice 3 threads, and it takes turns with final renders (chatterbox.lock).
+# Edit this file only by writing a new one and renaming it over this: bash reads a running script as it goes.
 set -e
 S=$(cd "$(dirname "$0")" && pwd); slug=$1; d=$S/$slug
 export PATH="$HOME/.local/bin:$PATH"
+export OMP_WAIT_POLICY=PASSIVE
+PY="$HOME/.local/share/uv/tools/text2speech/bin/python -I"
+# The cloned voice lets a waiting final render go first (a render holds render.lock while it waits for chatterbox.lock).
+yield() { until flock -n $S/render.lock true; do sleep 20; done; }
 node $S/timing.mjs measure $slug
-v=$(cat $d/voice.txt)
-entry() { case $1 in
-  af_heart|af_bella|af_nicole|am_michael) echo "{\"engine\": \"kokoro\", \"voice\": \"$1\"}" ;;
-  m1|m2) echo "{\"engine\": \"chatterbox\", \"ref-audio\": \"/home/user/text2speech/voices/narrator_male_${1#m}.wav\", \"seed\": 1}" ;;
-  *) echo "voice.txt: unknown voice $1 (use af_heart, af_bella, af_nicole, m1 or m2)" >&2; exit 1 ;;
-esac; }
-case $v in
-  A=*" B="*)
-    a=${v#A=}; a=${a%% *}; b=${v##*B=}; b=${b%% *}
-    [ "$a" != "$b" ] || { echo "voice.txt: the two speakers need different voices"; exit 1; }
-    ea=$(entry $a); eb=$(entry $b)
-    printf '{\n "SPEAKERA": %s,\n "SPEAKERB": %s\n}\n' "$ea" "$eb" > $d/cast.json
-    lock=kokoro; [[ "$a$b" == *m[12]* ]] && lock=chatterbox
-    flock $S/$lock.lock srt2speech $d/measure.srt -o $d/measure.wav --voices $d/cast.json > $d/measure.log 2>&1 ;;
-  af_heart|af_bella|af_nicole) flock $S/kokoro.lock srt2speech $d/measure.srt -o $d/measure.wav --voice $v > $d/measure.log 2>&1 ;;
-  m1|m2) flock $S/chatterbox.lock srt2speech $d/measure.srt -o $d/measure.wav --engine chatterbox --ref-audio /home/user/text2speech/voices/narrator_male_${v#m}.wav --seed 1 > $d/measure.log 2>&1 ;;
-  *) echo "voice.txt must be af_heart, af_bella, af_nicole, m1 or m2, or a cast: A=<voice> B=<voice>"; exit 1 ;;
-esac
-grep '^wrote' $d/measure.log
+eval "$($PY $S/linecache.py voices $d)"     # sets lock, threads, args
+$PY $S/linecache.py plan $d
+for srt in $d/rec/t[0-9][0-9].srt; do
+  [ -e "$srt" ] || continue
+  n=${srt%.srt}
+  [ $lock = chatterbox ] && yield
+  flock $S/$lock.lock env OMP_NUM_THREADS=$threads MKL_NUM_THREADS=$threads srt2speech $srt -o $n.wav $args > $n.log 2>&1
+  grep -E "^wrote|past cue end|faster than" $n.log | sed "s|$d/||"
+  $PY $S/linecache.py absorb $d $(basename $n)
+  rm -f $n.wav   # its lines are in the cache now
+done
+$PY $S/linecache.py build $d
 node $S/timing.mjs build $slug

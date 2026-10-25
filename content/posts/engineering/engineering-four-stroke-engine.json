@@ -60,7 +60,14 @@
           "start": 59.6,
           "end": 65.73
         }
-      ]
+      ],
+      "ratings": { "complexity": 6, "shock": 4 }
+    },
+    {
+      "type": "explore",
+      "lab": "four-stroke-engine",
+      "prompt": "Watch the four strokes, then time the spark so the pressure peaks just after the top, at 1,000 rpm and at 3,000 rpm.",
+      "takeaway": "The burn takes the same time at any speed, so at higher revs the crank turns further meanwhile: the spark must come earlier, here about 2° before the top at 1,000 rpm and 26° at 3,000."
     },
     {
       "type": "reveal",

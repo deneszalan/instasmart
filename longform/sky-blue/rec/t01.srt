@@ -1,0 +1,47 @@
+1
+00:00:01,000 --> 00:00:26,000
+And once you know, a second puzzle appears. Why isn't the sky violet?
+
+2
+00:00:31,000 --> 00:00:56,000
+Light is a wave, and its colour is set by its wavelength, which is the distance from one crest to the next.
+
+3
+00:01:01,000 --> 00:01:26,000
+This works for particles far smaller than the wavelength, meaning less than about a tenth of it.
+
+4
+00:01:31,000 --> 00:01:56,000
+And it follows a simple rule, that scattering goes as one over the wavelength to the fourth power.
+
+5
+00:02:01,000 --> 00:02:26,000
+So compare blue at 450 nanometres with red at 700. The ratio of 700 to 450, raised to the fourth power, is about 5.9.
+
+6
+00:02:31,000 --> 00:02:56,000
+Molecules of nitrogen and oxygen are less than a nanometre across, which is hundreds of times smaller than a wave of light.
+
+7
+00:03:01,000 --> 00:03:26,000
+When it's measured, the light of a blue sky holds every colour, with a broad peak between 450 and 485 nanometres.
+
+8
+00:03:31,000 --> 00:03:56,000
+Our eyes take that mix as blue blended with white, which gives the soft colour we call sky blue.
+
+9
+00:04:01,000 --> 00:04:26,000
+Scattered skylight has another property that our eyes can't see. It's polarised.
+
+10
+00:04:31,000 --> 00:04:56,000
+Rayleigh's first papers on the sky, in 1871, were titled On the light from the sky, its polarization and colour.
+
+11
+00:05:01,000 --> 00:05:26,000
+Near the horizon, sunlight has to slant through far more air, about 38 times as much.
+
+12
+00:05:31,000 --> 00:05:56,000
+That reddened light falls on clouds, and they scatter it back to us, painting red and orange on white.

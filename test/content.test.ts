@@ -29,6 +29,14 @@ describe('every edition', () => {
     });
   }
 
+  it('gives every Reckon animation post a hands-on lab, each lab used once', () => {
+    const slides = (p: (typeof content.reckon.posts)[number]) => p.slides ?? [];
+    const animated = content.reckon.posts.filter((p) => slides(p).some((s) => s.type === 'video' && s.animation));
+    expect(animated.filter((p) => !slides(p).some((s) => s.type === 'explore')).map((p) => p.id)).toEqual([]);
+    const labs = content.reckon.posts.flatMap((p) => slides(p).flatMap((s) => (s.type === 'explore' ? [s.lab] : [])));
+    expect(new Set(labs).size).toBe(labs.length);
+  });
+
   it('lists only its own posts, each once, in a set order', () => {
     for (const id of EDITION_IDS) {
       const edition: Edition = EDITIONS[id];

@@ -10,7 +10,7 @@ cd $R
 rm -rf longform; mkdir longform
 tar -C $S -cf - --exclude './kit.js' --exclude './fonts' --exclude './_*' --exclude '*.lock' --exclude '*.bak' \
   --exclude 'research' --exclude 'prev' --exclude 'dev' --exclude '*.wav' --exclude '*.mp4' --exclude '*.mp3' \
-  --exclude '*.png' --exclude '*.jpg' --exclude '*.log' --exclude 'tts.out' --exclude 'parts.txt' --exclude 'measure.srt' . | tar -C longform -xf -
+  --exclude '*.png' --exclude '*.jpg' --exclude '*.log' --exclude 'tts.out' --exclude 'parts.txt' --exclude 'measure.srt' --exclude '__pycache__' . | tar -C longform -xf -
 git add longform
 if git diff --cached --quiet; then echo "nothing new to save"; exit 0; fi
 git commit -q -m "Long-form videos: $1

@@ -80,7 +80,14 @@
           "start": 63.87,
           "end": 69.47
         }
-      ]
+      ],
+      "ratings": { "complexity": 5, "shock": 7 }
+    },
+    {
+      "type": "explore",
+      "lab": "kidneys-filter-180-litres",
+      "prompt": "Your kidneys filter 180 litres a day. Set how much they take back into the blood so that a normal day’s 0.8 to 2 litres is left as urine.",
+      "takeaway": "It takes about 99%: at 99% you are left with 1.8 litres, at 98% already 3.6. Each 0.1% taken back more or less changes the urine by 180 mL a day."
     },
     {
       "type": "stat",

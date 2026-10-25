@@ -89,6 +89,117 @@
             "properties": {
               "type": {
                 "type": "string",
+                "const": "explore"
+              },
+              "lab": {
+                "type": "string",
+                "enum": [
+                  "monty-hall",
+                  "birthday-problem",
+                  "blind-spot",
+                  "base-rate-fallacy",
+                  "kaprekar-6174",
+                  "pythagoras-rearrangement-proof",
+                  "simpsons-paradox",
+                  "slide-rule-adds-logarithms",
+                  "binary-adder-logic-gates",
+                  "binary-search-twenty-guesses",
+                  "enigma-never-itself",
+                  "huffman-coding-term-paper",
+                  "public-key-cryptography",
+                  "double-slit",
+                  "foucault-pendulum",
+                  "pitch-drop-experiment",
+                  "why-the-sky-is-blue",
+                  "chladni-figures-sand",
+                  "ancient-sunlight",
+                  "astronauts-are-falling",
+                  "kepler-equal-areas",
+                  "mars-retrograde-loop",
+                  "moon-phases",
+                  "milankovitch-cycles",
+                  "coriolis-toilet-myth",
+                  "beats-tuning",
+                  "guitar-fret-spacing",
+                  "polyrhythm-three-against-two",
+                  "timbre-overtones",
+                  "cochlea-pitch-map",
+                  "heart-pacemaker-sinoatrial-node",
+                  "kidneys-filter-180-litres",
+                  "checker-shadow-illusion",
+                  "mental-rotation",
+                  "phi-phenomenon",
+                  "spacing-effect",
+                  "brunelleschi-perspective",
+                  "holbein-anamorphic-skull",
+                  "seurat-pointillism",
+                  "sydney-opera-house-sphere",
+                  "honeybee-waggle-dance",
+                  "mega-plate-evolution",
+                  "mendel-pea-ratios",
+                  "mitochondria-were-bacteria",
+                  "flame-test-colours",
+                  "ice-floats",
+                  "paper-chromatography",
+                  "soap-micelles",
+                  "hailstones-grow-in-layers",
+                  "plates-fingernail-speed",
+                  "comparative-advantage",
+                  "hungary-hyperinflation",
+                  "prisoners-dilemma",
+                  "rule-of-72",
+                  "tragedy-of-the-commons",
+                  "four-stroke-engine",
+                  "fridge-moves-heat",
+                  "panama-canal-gravity",
+                  "taipei-101-damper",
+                  "calendar-1752",
+                  "eratosthenes-earth-circumference",
+                  "gutenberg-printing-press",
+                  "magellan-lost-a-day",
+                  "a-napron-an-apron",
+                  "aleph-to-a-alphabet",
+                  "great-vowel-shift",
+                  "grimms-law",
+                  "barber-paradox",
+                  "plato-allegory-of-the-cave",
+                  "ship-of-theseus",
+                  "zeno-achilles-tortoise"
+                ],
+                "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
+              },
+              "heading": {
+                "description": "Defaults to \"Try it yourself\".",
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 40
+              },
+              "prompt": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160,
+                "description": "What to try: the goal, in one or two short sentences."
+              },
+              "takeaway": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 220,
+                "description": "What the reader has found out, shown in place of the prompt once they reach the goal."
+              }
+            },
+            "required": [
+              "type",
+              "lab",
+              "prompt",
+              "takeaway"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
                 "const": "text"
               },
               "heading": {
@@ -1434,6 +1545,29 @@
                   ],
                   "additionalProperties": false
                 }
+              },
+              "ratings": {
+                "type": "object",
+                "properties": {
+                  "complexity": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 10,
+                    "description": "How much a viewer must know and keep in mind to follow it, 1–10."
+                  },
+                  "shock": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 10,
+                    "description": "Shock factor: how far the result is from what most people expect beforehand, 1–10."
+                  }
+                },
+                "required": [
+                  "complexity",
+                  "shock"
+                ],
+                "additionalProperties": false,
+                "description": "The short's ratings, shown with it in the app. Score them with the scales in \"Rating a short\" in content/README.md."
               }
             },
             "required": [
@@ -1441,7 +1575,8 @@
               "src",
               "poster",
               "alt",
-              "credit"
+              "credit",
+              "ratings"
             ],
             "additionalProperties": false
           }

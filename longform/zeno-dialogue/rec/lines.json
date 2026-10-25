@@ -1,0 +1,647 @@
+[
+ {
+  "key": "o1",
+  "who": "A",
+  "spoken": "Swift-footed Achilles, the greatest of the Greek heroes, is racing a tortoise. And the tortoise has a head start."
+ },
+ {
+  "key": "x1",
+  "who": "B",
+  "spoken": "That hardly seems fair. On the tortoise, I mean."
+ },
+ {
+  "key": "o2",
+  "who": "A",
+  "spoken": "Ah, but listen. Each time Achilles reaches the spot where the tortoise was, it has crept a little further on."
+ },
+ {
+  "key": "o3",
+  "who": "B",
+  "spoken": "So, says an argument nearly 2,500 years old, he can never catch it."
+ },
+ {
+  "key": "o4",
+  "who": "A",
+  "spoken": "Which is plainly wrong. Of course he catches it."
+ },
+ {
+  "key": "o5",
+  "who": "B",
+  "spoken": "Sure. But saying exactly what's wrong with the argument took more than 2,000 years, and some philosophers say it still isn't settled."
+ },
+ {
+  "key": "o6",
+  "who": "A",
+  "spoken": "This is Zeno's paradox of Achilles and the tortoise."
+ },
+ {
+  "key": "e1",
+  "who": "B",
+  "spoken": "Zeno was born around 490 BC in Ellia, a Greek city on the west coast of southern Italy."
+ },
+ {
+  "key": "e2",
+  "who": "A",
+  "spoken": "And he was a student and friend of an older philosopher, Parmenides."
+ },
+ {
+  "key": "e3",
+  "who": "B",
+  "spoken": "Parmenides taught that reality is one unchanging whole, and that change and motion are illusions."
+ },
+ {
+  "key": "x2",
+  "who": "A",
+  "spoken": "Illusions? Motion itself?"
+ },
+ {
+  "key": "x3",
+  "who": "B",
+  "spoken": "Motion itself. You can imagine how that went down."
+ },
+ {
+  "key": "e4",
+  "who": "A",
+  "spoken": "Critics found it absurd. So Zeno turned the tables, showing that their views, followed through, led to worse absurdities."
+ },
+ {
+  "key": "e5",
+  "who": "B",
+  "spoken": "That style of argument is called reductio ad absurdum, and Aristotle called Zeno the inventor of dialectic."
+ },
+ {
+  "key": "e6",
+  "who": "A",
+  "spoken": "Sadly, Zeno's book is lost. Fewer than two hundred of his own words survive."
+ },
+ {
+  "key": "e7",
+  "who": "B",
+  "spoken": "So we know his arguments from others, such as Plato, Aristotle, and Simplishius, writing a thousand years later."
+ },
+ {
+  "key": "e8",
+  "who": "A",
+  "spoken": "Plato even has the two visit Athens to meet a young Socrates, though he probably invented that meeting."
+ },
+ {
+  "key": "x4",
+  "who": "B",
+  "spoken": "A good scene, then, but probably not history."
+ },
+ {
+  "key": "r1",
+  "who": "A",
+  "spoken": "The most famous argument is a race. Aristotle gives it in his Physics, like this."
+ },
+ {
+  "key": "r2",
+  "who": "B",
+  "spoken": "In a race, the quickest runner can never overtake the slowest, since the pursuer must first reach the point whence the pursued started,"
+ },
+ {
+  "key": "r3",
+  "who": "B",
+  "spoken": "so that the slower must always hold a lead."
+ },
+ {
+  "key": "r4",
+  "who": "A",
+  "spoken": "Hang on. There's no tortoise in that, just the slowest runner."
+ },
+ {
+  "key": "x5",
+  "who": "B",
+  "spoken": "Right. The tortoise comes from later retellings."
+ },
+ {
+  "key": "r5",
+  "who": "A",
+  "spoken": "Then let's race. Achilles runs ten metres a second, and the tortoise one metre a second."
+ },
+ {
+  "key": "r6",
+  "who": "B",
+  "spoken": "And the tortoise starts 100 metres ahead."
+ },
+ {
+  "key": "r7",
+  "who": "A",
+  "spoken": "In stage one, Achilles runs those hundred metres, which takes him ten seconds."
+ },
+ {
+  "key": "r8",
+  "who": "B",
+  "spoken": "But in those 10 seconds, the tortoise has crawled 10 metres further."
+ },
+ {
+  "key": "r9",
+  "who": "A",
+  "spoken": "In stage two, he covers those ten metres in one second, and the tortoise crawls another metre."
+ },
+ {
+  "key": "r10",
+  "who": "B",
+  "spoken": "Stage three leaves a gap of 10 centimetres, and stage four leaves just 1 centimetre."
+ },
+ {
+  "key": "x6",
+  "who": "A",
+  "spoken": "And each time we zoom in ten times, the picture looks exactly the same."
+ },
+ {
+  "key": "r11",
+  "who": "B",
+  "spoken": "Each gap is a tenth of the one before. It shrinks forever, but it never reaches zero."
+ },
+ {
+  "key": "r12",
+  "who": "A",
+  "spoken": "So there's always one more stage, and Zeno concludes that Achilles never catches up."
+ },
+ {
+  "key": "a1",
+  "who": "B",
+  "spoken": "So how far does Achilles actually run before he draws level? Let's add up the stages."
+ },
+ {
+  "key": "a2",
+  "who": "A",
+  "spoken": "It's a hundred metres, plus ten, plus one, plus a tenth, plus a hundredth, and so on."
+ },
+ {
+  "key": "a3",
+  "who": "B",
+  "spoken": "The running totals are 100, then 110, then 111, then 111.1, then 111.11."
+ },
+ {
+  "key": "a4",
+  "who": "A",
+  "spoken": "They close in on one hundred and eleven and one ninth metres, with the ones repeating forever."
+ },
+ {
+  "key": "x7",
+  "who": "B",
+  "spoken": "So the total doesn't run away to infinity."
+ },
+ {
+  "key": "a5",
+  "who": "A",
+  "spoken": "No. And the times add up the same way, to eleven and one ninth seconds."
+ },
+ {
+  "key": "a6",
+  "who": "B",
+  "spoken": "That's infinitely many stages, but they add up to a finite distance, and a finite time."
+ },
+ {
+  "key": "a7",
+  "who": "A",
+  "spoken": "Plot distance against time, and each runner is a straight line. They cross at eleven point one seconds, and a hundred and eleven point one metres."
+ },
+ {
+  "key": "a8",
+  "who": "B",
+  "spoken": "And Zeno's stages are a staircase closing in on that crossing, every one of them before it."
+ },
+ {
+  "key": "x8",
+  "who": "A",
+  "spoken": "So where on the staircase does he catch up?"
+ },
+ {
+  "key": "a9",
+  "who": "B",
+  "spoken": "Nowhere. The moment he catches up isn't one of the stages. It comes just after all of them."
+ },
+ {
+  "key": "a10",
+  "who": "A",
+  "spoken": "People often say Zeno thought infinitely many pieces must add up to something infinite."
+ },
+ {
+  "key": "a11",
+  "who": "B",
+  "spoken": "But no ancient source has him discussing an infinite sum at all."
+ },
+ {
+  "key": "a12",
+  "who": "A",
+  "spoken": "In Simplishius's report, his worry is that it is impossible to traverse an infinite number of things in a finite time."
+ },
+ {
+  "key": "a13",
+  "who": "B",
+  "spoken": "So the puzzle isn't the total. It's how anyone can finish infinitely many steps, with no last one."
+ },
+ {
+  "key": "x9",
+  "who": "A",
+  "spoken": "And that's a much harder question."
+ },
+ {
+  "key": "d1",
+  "who": "A",
+  "spoken": "Zeno's dichotomy makes the same point, without any tortoise."
+ },
+ {
+  "key": "d2",
+  "who": "B",
+  "spoken": "In Aristotle's words, that which is in locomotion must arrive at the half-way stage before it arrives at the goal."
+ },
+ {
+  "key": "d3",
+  "who": "A",
+  "spoken": "So to run a hundred metres, first run half of it. Then half of what's left, then half of that."
+ },
+ {
+  "key": "d4",
+  "who": "B",
+  "spoken": "The running totals are one half, three quarters, seven eighths, fifteen sixteenths, creeping towards the whole."
+ },
+ {
+  "key": "d5",
+  "who": "A",
+  "spoken": "After ten halvings, you've run all but one part in a thousand and twenty-four, and less than ten centimetres is left."
+ },
+ {
+  "key": "d6",
+  "who": "B",
+  "spoken": "After 20, less than a tenth of a millimetre is left. But there's always a half still to run."
+ },
+ {
+  "key": "x10",
+  "who": "A",
+  "spoken": "Like a to-do list that grows exactly as fast as you work through it."
+ },
+ {
+  "key": "d7",
+  "who": "B",
+  "spoken": "And there's a nastier version. Before the half-way mark, you must reach the quarter mark, and before that, the eighth."
+ },
+ {
+  "key": "d8",
+  "who": "A",
+  "spoken": "Then the run has no first step at all. So how does it ever begin?"
+ },
+ {
+  "key": "d9",
+  "who": "B",
+  "spoken": "Aristotle noted that the Achilles is much the same argument. In our race, the gaps shrink by tenths, not halves."
+ },
+ {
+  "key": "w1",
+  "who": "A",
+  "spoken": "Zeno's arrow attacks motion from the other side, by cutting time into instants."
+ },
+ {
+  "key": "w2",
+  "who": "B",
+  "spoken": "Take an arrow in flight, and freeze a single instant."
+ },
+ {
+  "key": "w3",
+  "who": "A",
+  "spoken": "In that instant, it fills a space exactly its own size, so it isn't moving."
+ },
+ {
+  "key": "w4",
+  "who": "B",
+  "spoken": "But the whole flight is made of instants like this one. So when does the arrow ever move?"
+ },
+ {
+  "key": "x11",
+  "who": "A",
+  "spoken": "That one is slippery."
+ },
+ {
+  "key": "w5",
+  "who": "B",
+  "spoken": "Aristotle's reply was that time is not made of indivisible nows, any more than a line is made of points."
+ },
+ {
+  "key": "w6",
+  "who": "A",
+  "spoken": "The modern answer treats speed at an instant as a limit."
+ },
+ {
+  "key": "w7",
+  "who": "B",
+  "spoken": "Say it flies at 50 metres a second. In a tenth of a second, it goes 5 metres."
+ },
+ {
+  "key": "w8",
+  "who": "A",
+  "spoken": "And in a hundredth, half a metre. Distance over time stays at fifty metres a second, however short the interval."
+ },
+ {
+  "key": "w9",
+  "who": "B",
+  "spoken": "But in a single instant it goes nowhere, and zero divided by zero isn't a number at all."
+ },
+ {
+  "key": "w10",
+  "who": "A",
+  "spoken": "So the speed at an instant is defined as that limit."
+ },
+ {
+  "key": "w11",
+  "who": "B",
+  "spoken": "On this view, motion doesn't happen inside an instant. It is being in different places at different times."
+ },
+ {
+  "key": "x12",
+  "who": "A",
+  "spoken": "It sounds almost too simple."
+ },
+ {
+  "key": "w12",
+  "who": "B",
+  "spoken": "The last of the four, the stadium, has rows of equal blocks passing each other in opposite directions."
+ },
+ {
+  "key": "w13",
+  "who": "A",
+  "spoken": "The front block of one row passes every oncoming block, but only half of the still ones."
+ },
+ {
+  "key": "w14",
+  "who": "B",
+  "spoken": "And from this, Zeno concluded that half a given time is equal to double that time."
+ },
+ {
+  "key": "x13",
+  "who": "A",
+  "spoken": "Half equals double? That can't be right."
+ },
+ {
+  "key": "w15",
+  "who": "B",
+  "spoken": "The usual verdict is that he ignored relative speed, since the oncoming blocks approach twice as fast."
+ },
+ {
+  "key": "p1",
+  "who": "B",
+  "spoken": "One famous reply to Zeno wasn't an argument at all."
+ },
+ {
+  "key": "p2",
+  "who": "A",
+  "spoken": "Simplishius tells a story. When Diogenes the Cynic heard Zeno's arguments, he said nothing, stood up, and walked."
+ },
+ {
+  "key": "p3",
+  "who": "B",
+  "spoken": "That kind of answer even has a Latin name, solvitur ambulando, which means it is solved by walking."
+ },
+ {
+  "key": "x14",
+  "who": "A",
+  "spoken": "Honestly, it's tempting."
+ },
+ {
+  "key": "p4",
+  "who": "B",
+  "spoken": "It is. But walking only shows that the conclusion is false. It doesn't show which step of the argument fails."
+ },
+ {
+  "key": "p5",
+  "who": "A",
+  "spoken": "Aristotle noted that shorter distances take shorter times. But then the time, too, is made of infinitely many pieces."
+ },
+ {
+  "key": "p6",
+  "who": "B",
+  "spoken": "So his deeper answer splits infinity in two."
+ },
+ {
+  "key": "p7",
+  "who": "A",
+  "spoken": "An actual infinity would be a completed collection of infinitely many things, all there at once."
+ },
+ {
+  "key": "p8",
+  "who": "B",
+  "spoken": "And a potential infinity is a process that can always go on, but is never completed."
+ },
+ {
+  "key": "p9",
+  "who": "A",
+  "spoken": "A path, he said, holds infinitely many halves only potentially. They'd be actual only if the runner stopped at each one."
+ },
+ {
+  "key": "x15",
+  "who": "B",
+  "spoken": "So a smooth run never has to tick the halves off one by one."
+ },
+ {
+  "key": "p10",
+  "who": "A",
+  "spoken": "In his words, if the units are actual, it is not possible; if they are potential, it is possible."
+ },
+ {
+  "key": "p11",
+  "who": "B",
+  "spoken": "And that answer satisfied nearly all scholars for about 1,500 years."
+ },
+ {
+  "key": "m1",
+  "who": "A",
+  "spoken": "Meanwhile, mathematicians were learning to tame infinite sums."
+ },
+ {
+  "key": "m2",
+  "who": "B",
+  "spoken": "In the third century BC, Archimedes found the area of a slice cut from a parabola."
+ },
+ {
+  "key": "m3",
+  "who": "A",
+  "spoken": "He filled it with triangles, and each new row of triangles has a quarter of the area of the row before."
+ },
+ {
+  "key": "m4",
+  "who": "B",
+  "spoken": "So the slice is the big triangle, times one, plus a quarter, plus a sixteenth, and so on."
+ },
+ {
+  "key": "m5",
+  "who": "A",
+  "spoken": "And Archimedes showed that this comes to exactly four thirds of the big triangle."
+ },
+ {
+  "key": "x16",
+  "who": "B",
+  "spoken": "An infinite sum with a tidy answer, long before calculus."
+ },
+ {
+  "key": "m6",
+  "who": "A",
+  "spoken": "But infinite sums can be slippery. Take one, minus one, plus one, minus one, and so on."
+ },
+ {
+  "key": "m7",
+  "who": "B",
+  "spoken": "Pair the terms one way and you get zero. Pair them another way and you get one."
+ },
+ {
+  "key": "x17",
+  "who": "A",
+  "spoken": "Zero and one, from the same sum?"
+ },
+ {
+  "key": "m8",
+  "who": "B",
+  "spoken": "That's the trouble. In 1821, the French mathematician Augustin Louis Koh-shee insisted on strict tests of when a sum makes sense."
+ },
+ {
+  "key": "m9",
+  "who": "A",
+  "spoken": "Its value is the number its running totals settle down to, if they settle at all."
+ },
+ {
+  "key": "m10",
+  "who": "B",
+  "spoken": "Then a half, plus a quarter, plus an eighth, is exactly one, while one minus one plus one has no sum."
+ },
+ {
+  "key": "m11",
+  "who": "A",
+  "spoken": "In eighteen sixty-one, Karl Weierstrass gave the definition of a limit in the precise form used today."
+ },
+ {
+  "key": "m12",
+  "who": "B",
+  "spoken": "Pick any margin, however small. From some stage on, every running total stays within it."
+ },
+ {
+  "key": "m13",
+  "who": "A",
+  "spoken": "For a margin of a millimetre, Achilles' totals stay inside it from stage six on. For a micrometre, it's from stage nine."
+ },
+ {
+  "key": "m14",
+  "who": "B",
+  "spoken": "So 111.1 metres is the limit of Zeno's stages. Some historians, such as Carl Boyer, say calculus solves the paradox."
+ },
+ {
+  "key": "x18",
+  "who": "A",
+  "spoken": "Case closed, then?"
+ },
+ {
+  "key": "q1",
+  "who": "B",
+  "spoken": "Not for everyone. The maths says where and when he draws level, but how does he finish infinitely many tasks?"
+ },
+ {
+  "key": "q2",
+  "who": "A",
+  "spoken": "Bertrand Russell argued that Achilles really does complete infinitely many tasks, in a finite time."
+ },
+ {
+  "key": "q3",
+  "who": "B",
+  "spoken": "And in 1954, the philosopher James Thomson replied with a lamp."
+ },
+ {
+  "key": "q4",
+  "who": "A",
+  "spoken": "Switch it on. After a minute, switch it off. After half a minute, on again, then off after a quarter."
+ },
+ {
+  "key": "q5",
+  "who": "B",
+  "spoken": "Each wait is half the last, and the waits add up to exactly 2 minutes."
+ },
+ {
+  "key": "q6",
+  "who": "A",
+  "spoken": "So at two minutes, is the lamp on or off?"
+ },
+ {
+  "key": "x19",
+  "who": "B",
+  "spoken": "Well, it has to be one or the other."
+ },
+ {
+  "key": "q7",
+  "who": "A",
+  "spoken": "But it can't be on, because every time it went on, it was switched off again. And off fails for the same reason."
+ },
+ {
+  "key": "q8",
+  "who": "B",
+  "spoken": "So Thomson concluded that a supertask, infinitely many tasks in a finite time, is impossible."
+ },
+ {
+  "key": "q9",
+  "who": "A",
+  "spoken": "Its switch flips like the running totals of one minus one plus one, which never settle."
+ },
+ {
+  "key": "q10",
+  "who": "B",
+  "spoken": "In 1962, Paul Benacerraf objected that the story fixes the lamp before 2 minutes, but says nothing about that moment itself."
+ },
+ {
+  "key": "q11",
+  "who": "A",
+  "spoken": "So there's no contradiction, just a question the story leaves open."
+ },
+ {
+  "key": "x20",
+  "who": "B",
+  "spoken": "Which is somehow satisfying and unsatisfying at the same time."
+ },
+ {
+  "key": "q12",
+  "who": "A",
+  "spoken": "Philosophers still disagree about what counts as a task, and whether a supertask is possible."
+ },
+ {
+  "key": "q13",
+  "who": "B",
+  "spoken": "And some theories of quantum gravity suggest that space and time may not divide endlessly at all."
+ },
+ {
+  "key": "q14",
+  "who": "A",
+  "spoken": "As the philosopher Kevin Brown put it, it's probably foolhardy to think we've reached the end."
+ },
+ {
+  "key": "z1",
+  "who": "B",
+  "spoken": "So, back to the race."
+ },
+ {
+  "key": "z2",
+  "who": "A",
+  "spoken": "Achilles reaches the tortoise's start after ten seconds, and draws level after eleven point one seconds, at a hundred and eleven point one metres."
+ },
+ {
+  "key": "z3",
+  "who": "B",
+  "spoken": "Before that moment come infinitely many of Zeno's stages, and every one of them fits inside those 11.1 seconds."
+ },
+ {
+  "key": "z4",
+  "who": "A",
+  "spoken": "Zeno was wrong that motion is impossible. But he made us say what we mean by infinity, a sum, and an instant."
+ },
+ {
+  "key": "x21",
+  "who": "B",
+  "spoken": "Not bad, for a puzzle about a tortoise."
+ },
+ {
+  "key": "z5",
+  "who": "A",
+  "spoken": "Bertrand Russell wrote that Zeno's arguments have afforded grounds for almost all theories of space, time and infinity since."
+ },
+ {
+  "key": "z6",
+  "who": "B",
+  "spoken": "Achilles wins the race. But Zeno's argument, it seems, is still running."
+ }
+]

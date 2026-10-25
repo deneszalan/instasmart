@@ -19,7 +19,8 @@
       "caption": "Three simulated double pendulums start from almost exactly the same position and swing as one. After about ten seconds they split apart and never move together again.",
       "credit": "Zvika · CC0 · excerpt",
       "href": "https://commons.wikimedia.org/wiki/File:3-double-pendulums.webm",
-      "music": "“Master Disorder” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Master Disorder” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 6, "shock": 6 }
     },
     {
       "type": "compare",
