@@ -86,6 +86,12 @@
       "ratings": { "complexity": 5, "shock": 7 }
     },
     {
+      "type": "explore",
+      "lab": "moon-phases",
+      "prompt": "Drag the Moon round Earth and find new moon, first quarter, full moon and last quarter.",
+      "takeaway": "The Moon is always half lit by the Sun. Its phase is how much of that lit half faces us; Earth’s shadow only touches it at full moon, during an eclipse."
+    },
+    {
       "type": "flow",
       "heading": "One lunar month",
       "steps": [

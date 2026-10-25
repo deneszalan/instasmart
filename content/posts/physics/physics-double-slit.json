@@ -72,6 +72,12 @@
       "ratings": { "complexity": 8, "shock": 10 }
     },
     {
+      "type": "explore",
+      "lab": "double-slit",
+      "prompt": "Fire particles one at a time until stripes appear. Then change the colour or the gap, or watch which slit each one takes.",
+      "takeaway": "Each particle lands as a single dot, yet together they draw interference stripes. Watch the slits and the stripes vanish: only the blurred single-slit glow is left."
+    },
+    {
       "type": "text",
       "heading": "One spot each",
       "text": "Every particle is detected at a single point, never smeared out. Quantum mechanics predicts only the odds: the squared size of the wave at each place on the screen. Physicists still disagree about how to picture what happens between source and screen."

@@ -77,6 +77,12 @@
       "ratings": { "complexity": 8, "shock": 5 }
     },
     {
+      "type": "explore",
+      "lab": "slide-rule-adds-logarithms",
+      "prompt": "Work out 2 × 3: drag the slide so its 1 sits over 2 on the D scale, then move the cursor to 3 on the slide.",
+      "takeaway": "The cursor reads 6 on D. Distances on the scales are logarithms, so putting two lengths end to end adds log 2 and log 3, which is log 6."
+    },
+    {
       "type": "image",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Buzz_and_his_pipe.jpg/960px-Buzz_and_his_pipe.jpg",
       "alt": "Buzz Aldrin in a spacesuit inside the dark, cramped Gemini capsule, with a pipe in his mouth and a slide rule floating near him.",

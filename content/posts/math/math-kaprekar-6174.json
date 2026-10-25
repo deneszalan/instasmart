@@ -80,6 +80,12 @@
       "ratings": { "complexity": 4, "shock": 8 }
     },
     {
+      "type": "explore",
+      "lab": "kaprekar-6174",
+      "prompt": "Type any four digits, not all the same, and tap through the rounds. Then look for a number that needs the full seven.",
+      "takeaway": "Every start lands on 6174, never in more than seven rounds. The bars show how the 8,991 starting numbers split up by the number of rounds they need."
+    },
+    {
       "type": "flow",
       "heading": "Kaprekar’s routine",
       "steps": [

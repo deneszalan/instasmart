@@ -72,6 +72,12 @@
       "ratings": { "complexity": 7, "shock": 9 }
     },
     {
+      "type": "explore",
+      "lab": "base-rate-fallacy",
+      "prompt": "The camera catches 99% and wrongly flags 1%, yet fewer than 1 alarm in 100 is real. Change the settings until an alarm is right more often than not.",
+      "takeaway": "An alarm becomes trustworthy only when false alarms are rarer than the targets themselves. With 1 target in 10,000, even a 1% error rate buries the real cases."
+    },
+    {
       "type": "list",
       "heading": "Do the count",
       "style": "steps",

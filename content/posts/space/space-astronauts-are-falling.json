@@ -78,6 +78,12 @@
       "ratings": { "complexity": 5, "shock": 7 }
     },
     {
+      "type": "explore",
+      "lab": "astronauts-are-falling",
+      "prompt": "Fire the cannon sideways at the space station’s height. Find the speed at which the ball falls all the way round Earth.",
+      "takeaway": "Around 7.7 km/s, the station’s own speed. The ball never stops falling; it just moves sideways fast enough that the ground curves away beneath it."
+    },
+    {
       "type": "text",
       "heading": "Newton’s cannon",
       "text": "In an early draft of his *Principia*, published in 1728, Isaac Newton imagined firing a stone from a high mountain with no air in the way. Too slow, and it falls back to Earth. At just the right speed, it circles the planet and comes back to the mountain. [More](https://en.wikipedia.org/wiki/Newton%27s_cannonball)"

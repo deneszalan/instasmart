@@ -84,6 +84,12 @@
       "ratings": { "complexity": 7, "shock": 8 }
     },
     {
+      "type": "explore",
+      "lab": "public-key-cryptography",
+      "prompt": "Pick secrets for Alice and Bob: their keys always match. Then play Eve, who sees only the public numbers, and find Alice’s secret.",
+      "takeaway": "With a small prime Eve just tries every power. Real exchanges use primes over 600 digits long, where trying them all would take longer than the age of the universe."
+    },
+    {
       "type": "quiz",
       "question": "Eve heard 23, 5, 10 and 17. What does she still need to work out the shared key, 14?",
       "options": [

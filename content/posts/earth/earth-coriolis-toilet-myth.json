@@ -72,6 +72,12 @@
       "ratings": { "complexity": 5, "shock": 7 }
     },
     {
+      "type": "explore",
+      "lab": "coriolis-toilet-myth",
+      "prompt": "Grow the swirl from a toilet bowl to a hurricane. At what size does Earth’s spin take over?",
+      "takeaway": "Only for swirls hundreds of kilometres across, like hurricanes. In a bowl, its shape and the flush outweigh Earth’s spin thousands of times over, so toilets drain either way anywhere."
+    },
+    {
       "type": "flow",
       "heading": "How Earth’s spin sets a storm turning",
       "steps": [

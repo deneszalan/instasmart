@@ -68,6 +68,12 @@
       "ratings": { "complexity": 5, "shock": 7 }
     },
     {
+      "type": "explore",
+      "lab": "blind-spot",
+      "prompt": "Close one eye, stare at the cross with the other and move the phone slowly closer until the red dot disappears.",
+      "takeaway": "That gap is where the optic nerve leaves your eye. Try the broken line and the grid too: your brain paints the hole with whatever surrounds it."
+    },
+    {
       "type": "text",
       "heading": "Where it sits",
       "text": "In your view, each blind spot is about 12–15° to the outer side of where you look, and about 1.5° below it. The two eyes’ gaps fall on different parts of the scene, so with both eyes open, each eye helps fill in for the other."

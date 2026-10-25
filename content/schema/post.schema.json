@@ -89,6 +89,71 @@
             "properties": {
               "type": {
                 "type": "string",
+                "const": "explore"
+              },
+              "lab": {
+                "type": "string",
+                "enum": [
+                  "monty-hall",
+                  "birthday-problem",
+                  "blind-spot",
+                  "base-rate-fallacy",
+                  "kaprekar-6174",
+                  "pythagoras-rearrangement-proof",
+                  "simpsons-paradox",
+                  "slide-rule-adds-logarithms",
+                  "binary-adder-logic-gates",
+                  "binary-search-twenty-guesses",
+                  "enigma-never-itself",
+                  "huffman-coding-term-paper",
+                  "public-key-cryptography",
+                  "double-slit",
+                  "foucault-pendulum",
+                  "pitch-drop-experiment",
+                  "why-the-sky-is-blue",
+                  "chladni-figures-sand",
+                  "ancient-sunlight",
+                  "astronauts-are-falling",
+                  "kepler-equal-areas",
+                  "mars-retrograde-loop",
+                  "moon-phases",
+                  "milankovitch-cycles",
+                  "coriolis-toilet-myth"
+                ],
+                "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
+              },
+              "heading": {
+                "description": "Defaults to \"Try it yourself\".",
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 40
+              },
+              "prompt": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160,
+                "description": "What to try: the goal, in one or two short sentences."
+              },
+              "takeaway": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 220,
+                "description": "What the reader has found out, shown in place of the prompt once they reach the goal."
+              }
+            },
+            "required": [
+              "type",
+              "lab",
+              "prompt",
+              "takeaway"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
                 "const": "text"
               },
               "heading": {

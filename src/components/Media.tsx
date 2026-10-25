@@ -8,6 +8,7 @@ import { InteractiveSlide } from './Interactive';
 import { VisualSlide } from './Visual';
 import { clock, VideoSlideView } from './Video';
 import { Ratings } from './Ratings';
+import { ExploreSlideView } from './Explore';
 import { challengeId } from '../lib/interactive';
 import { firstVideo } from '../lib/visual';
 import { clipSeconds } from '../data/library';
@@ -175,7 +176,8 @@ function SlideBody({ slide, challengeId }: { slide: Slide; challengeId: string }
       return <VisualSlide slide={slide} />;
     case 'image':
     case 'video':
-      // Rendered by ImageSlideView and VideoSlideView.
+    case 'explore':
+      // Rendered by ImageSlideView, VideoSlideView and ExploreSlideView.
       return null;
   }
 }
@@ -198,6 +200,7 @@ function DetailSlide({ card, index, total, start }: { card: KnowledgeCard; index
   const slide = card.slides![index - 1];
   if (slide.type === 'image') return <ImageSlideView slide={slide} card={card} />;
   if (slide.type === 'video') return <VideoSlideView slide={slide} card={card} start={start} />;
+  if (slide.type === 'explore') return <ExploreSlideView slide={slide} card={card} />;
   return (
     <div className={`slide slide--detail slide--${slide.type}`} style={gradientStyle(cardGradient(card))}>
       <span className="slide__bg-emoji" aria-hidden="true">
@@ -242,8 +245,10 @@ export function CardMedia({ card, onIndexChange }: CardMediaProps) {
     track.scrollTo({ left: to * track.clientWidth, behavior: 'smooth' });
   };
 
+  // On a lab, the arrows move up beside the counter so they don't cover the experiment.
+  const lab = index > 0 && card.slides![index - 1].type === 'explore';
   return (
-    <div className="carousel">
+    <div className={`carousel${lab ? ' carousel--lab' : ''}`}>
       <div
         ref={trackRef}
         className="carousel__track"

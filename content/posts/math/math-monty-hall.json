@@ -68,6 +68,12 @@
       "ratings": { "complexity": 6, "shock": 10 }
     },
     {
+      "type": "explore",
+      "lab": "monty-hall",
+      "prompt": "Play a few games, staying sometimes and switching sometimes. Then let the lab play 1,000 games each way, and try a host who only guesses.",
+      "takeaway": "With a host who knows, switching wins about 2 games in 3. With a host who guesses, the games that still count come out 50/50: his knowledge is what moves the odds."
+    },
+    {
       "type": "text",
       "heading": "Play it out",
       "text": "Say the car is behind door 1. Pick door 1 and switch: you lose. Pick door 2 or 3: the host must reveal the other goat, so switching wins. Two wins out of three."

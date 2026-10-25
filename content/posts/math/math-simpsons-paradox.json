@@ -78,6 +78,12 @@
       "ratings": { "complexity": 7, "shock": 9 }
     },
     {
+      "type": "explore",
+      "lab": "simpsons-paradox",
+      "prompt": "A wins with small stones and with large ones, yet loses overall. Change how many hard cases each treatment gets until A wins overall too.",
+      "takeaway": "With the same mix of cases, A wins overall as well. The reversal came from A being given the hard cases, not from A being worse."
+    },
+    {
       "type": "chart",
       "heading": "Kidney stone success rates: A wins both rounds, B wins overall",
       "items": [

@@ -68,6 +68,12 @@
       "ratings": { "complexity": 6, "shock": 5 }
     },
     {
+      "type": "explore",
+      "lab": "mars-retrograde-loop",
+      "prompt": "Play the orbits or drag the date until Mars’s path across the sky turns back on itself.",
+      "takeaway": "Mars never really reverses. Earth, on the faster inside track, overtakes it about every 26 months, and while we pass it Mars seems to drift backwards against the stars."
+    },
+    {
       "type": "stat",
       "value": "780 days",
       "label": "on average from one opposition of Mars to the next",

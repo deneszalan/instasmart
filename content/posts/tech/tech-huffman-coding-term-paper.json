@@ -86,6 +86,12 @@
       "ratings": { "complexity": 7, "shock": 5 }
     },
     {
+      "type": "explore",
+      "lab": "huffman-coding-term-paper",
+      "prompt": "Tap ‘Tie the two rarest’ until one tree is left. Then type your own word and build its code.",
+      "takeaway": "Common letters sit near the top with short codes, rare ones deep down with long codes, and no code starts another, so the bits need no separators."
+    },
+    {
       "type": "chart",
       "heading": "Bits to store ABRACADABRA",
       "items": [

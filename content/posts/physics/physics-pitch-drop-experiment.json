@@ -105,6 +105,12 @@
       "ratings": { "complexity": 3, "shock": 7 }
     },
     {
+      "type": "explore",
+      "lab": "pitch-drop-experiment",
+      "prompt": "Fast-forward the experiment and tap ‘Catch the drop!’ at the moment a drop falls. Two of the real custodians missed theirs.",
+      "takeaway": "Years of slow stretching, then a fall that’s over in a moment. Pitch is a liquid about 230 billion times as viscous as water, so it drips about once a decade."
+    },
+    {
       "type": "timeline",
       "heading": "A very slow drip",
       "events": [

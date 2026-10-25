@@ -79,6 +79,12 @@
       "ratings": { "complexity": 6, "shock": 5 }
     },
     {
+      "type": "explore",
+      "lab": "chladni-figures-sand",
+      "prompt": "Bow the plate and watch the sand settle. Try at least three different notes.",
+      "takeaway": "The sand is thrown off the parts that shake and comes to rest on the lines that stay still. Higher notes split the plate into more pieces, so the figures get busier."
+    },
+    {
       "type": "image",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Chladni_plate_10.jpg/960px-Chladni_plate_10.jpg",
       "alt": "Four brass plates of different shapes, including a star and two hexagons, on turned wooden posts, each covered in its own pattern of sand lines.",

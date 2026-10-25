@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { FIELD_IDS } from './fields.ts';
+import { LAB_IDS } from './labs.ts';
 
 /**
  * The content format for every post in content/posts/. Shared by the app,
@@ -118,6 +119,16 @@ export const VideoSlide = z
       })
       .strict()
       .describe('The short\'s ratings, shown with it in the app. Score them with the scales in "Rating a short" in content/README.md.'),
+  })
+  .strict();
+
+export const ExploreSlide = z
+  .object({
+    type: z.literal('explore'),
+    lab: z.enum(LAB_IDS).describe('Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them.'),
+    heading: text(40).optional().describe('Defaults to "Try it yourself".'),
+    prompt: text(160).describe('What to try: the goal, in one or two short sentences.'),
+    takeaway: text(220).describe('What the reader has found out, shown in place of the prompt once they reach the goal.'),
   })
   .strict();
 
@@ -495,6 +506,7 @@ export const PlaceSlide = z
   });
 
 export const Slide = z.discriminatedUnion('type', [
+  ExploreSlide,
   TextSlide,
   ImageSlide,
   StatSlide,

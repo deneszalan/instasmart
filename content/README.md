@@ -105,6 +105,7 @@ Each slide is a 4:5 card on the post's gradient. Pick the type that fits the ide
 | `place` | Put a value on a spectrum, with known points as clues | `{ "type": "place", "question": "≤120", "min": 0, "max": 140, "step"?: 1, "answer": 110, "unit"?: "dB", "ends"?: ["Silence", "Pain"], "hints"?: [{ "label": "≤14", "value": 30 }, … ≤4], "format"?: "year", "colors"?, "explanation": "≤200" }` |
 | `video` | A short clip of something moving: a launch, a collapse, an animal | `{ "type": "video", "src": "launch.mp4", "poster": "launch.jpg", "alt": "…", "caption"?: "≤200", "fit"?: "contain" \| "cover", "credit": "≤120", "href"?: "https://…", "music"?: "≤160", "ratings": { "complexity": 1–10, "shock": 1–10 } }` |
 | `image` | A photo or a diagram | `{ "type": "image", "src": "orbit.svg", "alt": "…", "caption"?: "≤200", "fit"?: "cover" \| "contain", "credit"?: "≤120" }` |
+| `explore` | A hands-on lab: the reader changes something and watches what happens | `{ "type": "explore", "lab": "monty-hall", "heading"?: "≤40", "prompt": "≤160", "takeaway": "≤220" }` |
 
 Use `"fit": "cover"` for photos (they fill the card) and `"fit": "contain"` for diagrams (the whole image shows on the gradient).
 
@@ -207,6 +208,25 @@ Contributors without ffmpeg can upload a finished MP4 through the MCP server's `
 - Choose a track whose mood fits the clip: calm and spacious for orbits and nebulae, tense for storms and collapses, playful for animals, period music for old film.
 - Use music you may reuse: Kevin MacLeod's catalogue at incompetech.com (CC BY 4.0) has mood tags and tempos; public-domain recordings work too.
 - Credit it in `music`, e.g. `"“Mesmerizing Galaxy” Kevin MacLeod (incompetech.com) · CC BY 4.0"`. The validator requires a `music` credit whenever the clip has a sound track, and rejects one when it hasn't.
+
+## Explore labs
+
+An `explore` slide puts a small working experiment in the post: the reader drags, taps and types, and finds the answer out for themselves. Every animated explainer has one, right after its video slide, so the reader can watch the idea and then try it. The experiments are built into the app; `lab` picks one by name, and `shared/labs.ts` lists them all with what each lets the reader do.
+
+```json
+{
+  "type": "explore",
+  "lab": "birthday-problem",
+  "prompt": "Drag the number of people and find the smallest room where a shared birthday is more likely than not.",
+  "takeaway": "23 people: 50.7%. The match comes from the 253 pairs among everyone, not from your own birthday."
+}
+```
+
+- **`prompt`** sets a goal the reader can reach in the lab: something to find, beat or try, in one or two short sentences. Each lab knows when its goal is reached (found 23, put the ball in orbit, caught a drop).
+- **`takeaway`** replaces the prompt once the goal is reached: what the reader has just discovered and why it works. Like every slide, it must be accurate; don't claim more than the lab shows.
+- **`heading`** is optional; it defaults to "Try it yourself".
+
+**Adding a lab** takes code: a component in `src/labs/<field>/<lab>.tsx` (built from `src/labs/kit.tsx`: a canvas `Stage`, `Range` sliders, `Choice` buttons, `Readouts` and `useGoal`), a line in `shared/labs.ts` and in `src/labs/index.ts`, German for its texts in `src/i18n/de.ts`, and a test of its maths in `test/labs.test.ts`. Keep the model honest and say on screen when it is simplified. A lab fits on a phone-sized 4:5 slide under its prompt and takes about a minute to explore.
 
 ### Drawing SVG diagrams (great for LLMs)
 
