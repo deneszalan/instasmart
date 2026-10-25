@@ -74,6 +74,12 @@
       "ratings": { "complexity": 4, "shock": 6 }
     },
     {
+      "type": "explore",
+      "lab": "spacing-effect",
+      "prompt": "Cramming the day before gets you through the test, but what about a month later? Drag the four reviews to keep at least 30% a month on.",
+      "takeaway": "Spread out, the same four reviews do far more: each comes after a little forgetting and slows the fading. Cramming the day before scores well on the test and leaves almost nothing a month later."
+    },
+    {
       "type": "text",
       "heading": "What “savings” means",
       "text": "Ebbinghaus measured memory by relearning. If a list took a quarter as long to relearn as it first took to learn, his savings were 75%. Savings of 100% would mean nothing was forgotten."

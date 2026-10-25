@@ -76,6 +76,12 @@
       "ratings": { "complexity": 4, "shock": 5 }
     },
     {
+      "type": "explore",
+      "lab": "phi-phenomenon",
+      "prompt": "Slide the timing and tell the lab what you see: two lights taking turns, one light moving, or both on at once. Then try the ring of discs.",
+      "takeaway": "The screen only ever showed still dots; the motion in between was made by your brain. Too slow and you see two lights taking turns, too fast and both seem to be on at once."
+    },
+    {
       "type": "sort",
       "heading": "Beta movement or pure phi?",
       "bins": [

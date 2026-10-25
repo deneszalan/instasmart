@@ -24,6 +24,17 @@ import { retrograde } from '../src/labs/space/mars-retrograde-loop';
 import { litShare, phaseIndex } from '../src/labs/space/moon-phases';
 import { summerSunshine, TODAY } from '../src/labs/earth/milankovitch-cycles';
 import { rossby } from '../src/labs/earth/coriolis-toilet-myth';
+import { beats, loudness } from '../src/labs/music/beats-tuning';
+import { fretGap, fretPosition, fretUnder } from '../src/labs/music/guitar-fret-spacing';
+import { grid } from '../src/labs/music/polyrhythm-three-against-two';
+import { waveAt } from '../src/labs/music/timbre-overtones';
+import { greenwood, place } from '../src/labs/body/cochlea-pitch-map';
+import { ecg, ESCAPE, qt } from '../src/labs/body/heart-pacemaker-sinoatrial-node';
+import { urine } from '../src/labs/body/kidneys-filter-180-litres';
+import { greyAt } from '../src/labs/psychology/checker-shadow-illusion';
+import { makeTrials, SHAPES } from '../src/labs/psychology/mental-rotation';
+import { darkDisc, litDot, msAt } from '../src/labs/psychology/phi-phenomenon';
+import { recall } from '../src/labs/psychology/spacing-effect';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -170,5 +181,93 @@ describe('lab maths', () => {
   it('Coriolis: a toilet’s own swirl beats Earth’s spin thousands of times over; a hurricane’s doesn’t', () => {
     expect(rossby(1, 0.5, 45)).toBeGreaterThan(1000);
     expect(rossby(30, 5e5, 45)).toBeLessThan(1);
+  });
+
+  it('beats: 222 and 220 Hz beat twice a second; silent halfway between beats', () => {
+    expect(beats(222, 220)).toBe(2);
+    expect(loudness(0, 220, 224)).toBeCloseTo(2, 9);
+    expect(loudness(1 / 8, 220, 224)).toBeCloseTo(0, 9);
+  });
+
+  it('frets: the 12th halfway along a 650 mm string, gaps from 36.5 mm to 19.3 mm', () => {
+    expect(fretPosition(12)).toBeCloseTo(325, 6);
+    expect(fretGap(1)).toBeCloseTo(36.5, 1);
+    expect(fretGap(12)).toBeCloseTo(19.3, 1);
+    expect(fretGap(2) / fretGap(1)).toBeCloseTo(1 / 1.0595, 4);
+    expect([0, fretPosition(12) - 1, fretPosition(12) + 1].map(fretUnder)).toEqual([0, 12, 13]);
+  });
+
+  it('polyrhythm: 3 against 2 on six steps hits 1, 3, 4 and 5; 4:3 needs 12 and 5:4 needs 20', () => {
+    const g = grid(3, 2);
+    expect(g).toEqual({ steps: 6, a: [0, 2, 4], b: [0, 3] });
+    expect([...new Set([...g.a, ...g.b])].sort().map((s) => s + 1)).toEqual([1, 3, 4, 5]);
+    expect([grid(4, 3).steps, grid(5, 4).steps]).toEqual([12, 20]);
+  });
+
+  it('timbre: 2× and 3× without the fundamental still repeat once per cycle, not twice', () => {
+    const amps = [0, 1, 1];
+    expect(waveAt(0.3 + 1, amps)).toBeCloseTo(waveAt(0.3, amps), 9);
+    expect(waveAt(0.25, amps)).not.toBeCloseTo(waveAt(0.75, amps), 3);
+  });
+
+  it('cochlea: Greenwood’s map runs from about 20 Hz at the tip to 20 kHz at the base', () => {
+    expect(greenwood(0)).toBeCloseTo(19.8, 0);
+    expect(greenwood(1)).toBeGreaterThan(20000);
+    expect(greenwood(1)).toBeLessThan(21000);
+    expect(place(10000)).toBeLessThan(place(1000));
+    expect(place(greenwood(0.4))).toBeCloseTo(0.6, 9);
+  });
+
+  it('heart: a P wave only when the SA node starts the beat; backup at 40 to 60 a minute', () => {
+    expect(qt(1)).toBeCloseTo(0.4, 9);
+    expect(ecg(0.89, [{ at: 0.84, sinus: true }], 1)).toBeCloseTo(0.15, 2);
+    expect(Math.abs(ecg(0.89, [{ at: 1, sinus: false }], 1))).toBeLessThan(0.01);
+    expect(ecg(0.84 + 0.16, [{ at: 0.84, sinus: true }], 1)).toBeGreaterThan(0.9);
+    expect(ESCAPE).toBeGreaterThanOrEqual(40);
+    expect(ESCAPE).toBeLessThanOrEqual(60);
+  });
+
+  it('kidneys: taking back 99% of 180 litres leaves 1.8, 98% leaves 3.6', () => {
+    expect(urine(0.99)).toBeCloseTo(1.8, 9);
+    expect(urine(0.98)).toBeCloseTo(3.6, 9);
+  });
+
+  it('checker shadow: A in the light and B in the shadow are both 120', () => {
+    expect([greyAt(1.5, 4.5, 0.6), greyAt(2.5, 2.5, 0.6)]).toEqual([120, 120]);
+    expect(greyAt(2.5, 2.5, 1)).toBe(200);
+    // every point of each square has the same grey, so a tap anywhere on it reads the same
+    for (const d of [0.1, 0.5, 0.9]) expect([greyAt(1 + d, 4 + d, 0.6), greyAt(2 + d, 2 + 1 - d, 0.6)]).toEqual([120, 120]);
+  });
+
+  it('mental rotation: no figure matches its mirror image; 12 trials, 3 at each angle, half mirrored', () => {
+    const norm = (cells: number[][]) => {
+      const mx = Math.min(...cells.map((c) => c[0])), my = Math.min(...cells.map((c) => c[1]));
+      return cells.map(([x, y]) => `${x - mx},${y - my}`).sort().join(' ');
+    };
+    for (const shape of SHAPES) {
+      let r = shape.map(([x, y]) => [-x, y]);
+      for (let k = 0; k < 4; k++) {
+        expect(norm(r)).not.toBe(norm(shape));
+        r = r.map(([x, y]) => [-y, x]);
+      }
+    }
+    const trials = makeTrials(rng(3));
+    expect(trials).toHaveLength(12);
+    expect(trials.filter((x) => x.mirror)).toHaveLength(6);
+    for (const a of [0, 60, 120, 180]) expect(trials.filter((x) => x.angle === a)).toHaveLength(3);
+  });
+
+  it('phi: timings from one screen refresh to a second; dots and discs take turns', () => {
+    expect([msAt(0), msAt(100)]).toEqual([17, 1000]);
+    expect([litDot(50, 100), litDot(150, 100)]).toEqual([0, 1]);
+    expect([darkDisc(50, 100), darkDisc(750, 100), darkDisc(850, 100)]).toEqual([0, 7, 0]);
+  });
+
+  it('spacing model: cramming the day before passes the test and fades; spread reviews last', () => {
+    expect(recall([], 0)).toBe(1);
+    expect(recall([29, 29, 29, 29], 30)).toBeGreaterThan(0.8);
+    expect(recall([29, 29, 29, 29], 60)).toBeLessThan(0.05);
+    expect(recall([6, 12, 18, 24], 60)).toBeGreaterThan(0.3);
+    expect(recall([1, 3, 7, 15], 60)).toBeGreaterThan(0.3);
   });
 });

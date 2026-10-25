@@ -118,7 +118,18 @@
                   "mars-retrograde-loop",
                   "moon-phases",
                   "milankovitch-cycles",
-                  "coriolis-toilet-myth"
+                  "coriolis-toilet-myth",
+                  "beats-tuning",
+                  "guitar-fret-spacing",
+                  "polyrhythm-three-against-two",
+                  "timbre-overtones",
+                  "cochlea-pitch-map",
+                  "heart-pacemaker-sinoatrial-node",
+                  "kidneys-filter-180-litres",
+                  "checker-shadow-illusion",
+                  "mental-rotation",
+                  "phi-phenomenon",
+                  "spacing-effect"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

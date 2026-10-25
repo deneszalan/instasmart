@@ -68,6 +68,12 @@
       "ratings": { "complexity": 7, "shock": 5 }
     },
     {
+      "type": "explore",
+      "lab": "timbre-overtones",
+      "prompt": "Play the pure tone. Then drag the harmonic bars or pick a recipe and play again. Try a mix with the 1× bar at zero.",
+      "takeaway": "Mixes of the same harmonics repeat 440 times a second, so they share one pitch; the harmonics’ strengths give each its colour. Without the 1× bar, 2× and 3× together still repeat 440 times a second."
+    },
+    {
       "type": "text",
       "heading": "The harmonic series",
       "text": "Harmonics are whole-number multiples of the main note, the fundamental. An A at 440 Hz is really a combination of 440, 880, 1320, 1760 Hz and so on, heard as one note."

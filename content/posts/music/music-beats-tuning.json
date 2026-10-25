@@ -72,6 +72,12 @@
       "ratings": { "complexity": 6, "shock": 4 }
     },
     {
+      "type": "explore",
+      "lab": "beats-tuning",
+      "prompt": "The second string is out of tune. Play both and slide it until the beats slow down and stop, watching the two waves drift in and out of step.",
+      "takeaway": "The beat rate is the difference of the frequencies: 224 Hz against 220 Hz beats 4 times a second. When the beats stop, both strings vibrate at the same rate: they are in tune."
+    },
+    {
       "type": "text",
       "heading": "Why the sound throbs",
       "text": "Where the two waves peak together, they reinforce each other. Where one peaks as the other dips, they cancel. Because one vibrates slightly faster, the waves keep drifting from one state to the other and back, so the loudness rises and falls."

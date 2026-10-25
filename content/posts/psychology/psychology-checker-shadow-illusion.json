@@ -92,6 +92,12 @@
       "ratings": { "complexity": 4, "shock": 8 }
     },
     {
+      "type": "explore",
+      "lab": "checker-shadow-illusion",
+      "prompt": "Which square looks darker, A or B? Tap each to measure its grey, then cover the rest of the board or change the shadow.",
+      "takeaway": "A and B are both 120, the same grey. Your brain reads B as a light square in shade and makes it look lighter: the same correction that keeps colours steady when the light changes."
+    },
+    {
       "type": "compare",
       "heading": "Same light, different surfaces",
       "left": {

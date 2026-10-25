@@ -74,6 +74,12 @@
       "ratings": { "complexity": 6, "shock": 5 }
     },
     {
+      "type": "explore",
+      "lab": "cochlea-pitch-map",
+      "prompt": "Sweep the pitch from low to high and watch where the wave peaks. Then damage the hair cells at the base and find the tones you lose.",
+      "takeaway": "High notes peak near the base, low ones near the tip: each tone has its own place. Damage at the base takes the highest pitches first, here everything above about 7.8 kHz."
+    },
+    {
       "type": "stat",
       "value": "2¾ turns",
       "label": "of coil in the human cochlea",

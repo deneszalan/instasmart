@@ -78,6 +78,12 @@
       "ratings": { "complexity": 7, "shock": 5 }
     },
     {
+      "type": "explore",
+      "lab": "guitar-fret-spacing",
+      "prompt": "Drag your finger along the string and let go to pluck. Find the note with twice the open string’s pitch, then try a neck without frets.",
+      "takeaway": "The octave is at the 12th fret, halfway along: half the string vibrates twice as fast. Each fret takes 5.6% off the string that is left, so the gaps shrink, from 36.5 mm to 19.3 mm by the 12th."
+    },
+    {
       "type": "stat",
       "value": "1.0595",
       "label": "the ratio of two neighbouring frets’ distances from the bridge",

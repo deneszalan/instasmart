@@ -29,6 +29,17 @@ export const LABS = {
   'moon-phases': 'Drag the Moon round Earth, with sunlight from one side, and see its phase from Earth.',
   'milankovitch-cycles': 'Change Earth’s tilt, the stretch of its orbit and when it passes closest to the Sun; see summer sunshine at 65° N.',
   'coriolis-toilet-myth': 'Grow a swirl from a toilet bowl to a hurricane and find the size at which Earth’s spin decides its direction.',
+  'beats-tuning': 'Tune a second string against a 220 Hz one, by ear and by eye, until the beats between them slow to a stop.',
+  'guitar-fret-spacing': 'Press a guitar string anywhere along its frets, or on a neck without frets, and pluck it; find the octave.',
+  'polyrhythm-three-against-two': 'Play 3 against 2, 4 against 3 or 5 against 4 on a circle and a grid of equal steps, then tap one rhythm yourself.',
+  'timbre-overtones': 'Drag the strengths of a note’s first eight harmonics and hear the same pitch change colour; change how it starts.',
+  'cochlea-pitch-map': 'Sweep a tone from 20 Hz to 20 kHz and see where it peaks along the cochlea; then damage the hair cells at its base.',
+  'heart-pacemaker-sinoatrial-node': 'Set the heart’s pacemaker rate and watch each beat spread, pause and show on the ECG; then stop the SA node.',
+  'kidneys-filter-180-litres': 'Choose how much of a day’s 180 litres of filtrate the kidneys take back, and see how much is left as urine.',
+  'checker-shadow-illusion': 'Measure the greys of Adelson-style squares in and out of a shadow, change the shadow, or cover the rest.',
+  'mental-rotation': 'A real mental rotation test: is the second figure the first one turned, or its mirror image? See your times by angle.',
+  'phi-phenomenon': 'Flash two dots or a ring of discs at any speed and record when you see motion that isn’t there.',
+  'spacing-effect': 'Drag four reviews along a timeline and see, in a simple model of forgetting, how much is left on the test and a month on.',
 } as const;
 
 export type LabId = keyof typeof LABS;

@@ -4249,3 +4249,22 @@ p {
   flex: 1;
   min-width: 160px;
 }
+
+/* A big target for tapping in time */
+.lab__pad {
+  flex: 1;
+  padding: 12px;
+  font-size: 15px;
+  touch-action: manipulation;
+}
+
+/* A sample of a measured colour, before its numbers */
+.lab__swatch {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  vertical-align: -1px;
+}

@@ -273,3 +273,38 @@ export function rng(seed: number) {
 
 export const clamp = (x: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, x));
 export const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
+
+/**
+ * Sound for a lab. Returns a getter for a Web Audio context, made on first use (browsers allow sound only after
+ * a tap) and closed when the lab goes away; null where the device has none. The context is suspended while the
+ * slide is off screen.
+ */
+export function useAudio(active: boolean) {
+  const ref = useRef<AudioContext | null>(null);
+  useEffect(() => () => void ref.current?.close(), []);
+  useEffect(() => {
+    if (!active) void ref.current?.suspend();
+  }, [active]);
+  return () => {
+    try {
+      ref.current ??= new AudioContext();
+      void ref.current.resume();
+      return ref.current;
+    } catch {
+      return null;
+    }
+  };
+}
+
+/** A short plucked or struck note at `when` (audio time), fading out over `length` seconds. */
+export function pluck(ac: AudioContext, freq: number, when: number, { length = 0.6, type = 'triangle', gain = 0.12 }: { length?: number; type?: OscillatorType; gain?: number } = {}) {
+  const osc = ac.createOscillator(), env = ac.createGain();
+  osc.type = type;
+  osc.frequency.value = freq;
+  env.gain.setValueAtTime(0, when);
+  env.gain.linearRampToValueAtTime(gain, when + 0.005);
+  env.gain.exponentialRampToValueAtTime(0.0001, when + length);
+  osc.connect(env).connect(ac.destination);
+  osc.start(when);
+  osc.stop(when + length + 0.05);
+}
