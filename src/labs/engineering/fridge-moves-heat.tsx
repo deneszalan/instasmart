@@ -4,7 +4,7 @@ import { t } from '../../i18n';
 import { formatNumber } from '../../lib/format';
 
 export const COP = 2; // in this lab, the fridge moves 2 units of heat for every unit of electricity
-const KITCHEN = 600, BOX = 6; // how much heat it takes to warm each by 1 °C (the kitchen is far bigger)
+const KITCHEN = 300, BOX = 3; // how much heat it takes to warm each by 1 °C (the kitchen is far bigger)
 
 interface State {
   kitchen: number;
@@ -41,7 +41,7 @@ export default function Fridge({ onDone, active }: LabProps) {
   const since = openedAt ? s.kitchen - openedAt.kitchen : 0;
   useGoal(open && openedAt !== null && time - openedAt.time >= 3 && since > 0.05, onDone);
   useFrame((dt) => {
-    for (let k = 0; k < 8; k++) sim.current = tick(sim.current, open, dt);
+    for (let k = 0; k < 16; k++) sim.current = tick(sim.current, open, dt);
     setTime((x) => x + dt);
   }, active);
   const toggle = () => {
