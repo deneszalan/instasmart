@@ -82,6 +82,12 @@
       "ratings": { "complexity": 6, "shock": 5 }
     },
     {
+      "type": "explore",
+      "lab": "mendel-pea-ratios",
+      "prompt": "Cross a round RR pea with a wrinkled rr one, then cross two of their Rr children. Grow 1,000 seeds: how close to 3 to 1 do you get?",
+      "takeaway": "RR × rr gives only round Rr seeds. Rr × Rr gives rr one time in four, so about 3 round to 1 wrinkled; small harvests wander, big ones settle near it, as Mendel’s 2.96 to 1 did."
+    },
+    {
       "type": "text",
       "heading": "His own numbers",
       "text": "In [Mendel’s paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC5068836/), 253 hybrid plants gave 7,324 seeds in the second year: 5,474 round and 1,850 wrinkled, a ratio of 2.96 to 1. Averaged over all his experiments, the ratio was 2.98 to 1."

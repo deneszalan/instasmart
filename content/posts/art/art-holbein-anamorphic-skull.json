@@ -72,6 +72,12 @@
       "ratings": { "complexity": 4, "shock": 6 }
     },
     {
+      "type": "explore",
+      "lab": "holbein-anamorphic-skull",
+      "prompt": "The skull is painted five times too wide. Change where you stand until it looks right, then try other stretches.",
+      "takeaway": "Seen at a grazing angle, the panel looks squashed by the sine of that angle, about 0.2 at 12°. Holbein’s 5× stretch and that squash cancel out, and the smear becomes a skull."
+    },
+    {
       "type": "image",
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg/1280px-Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg",
       "alt": "Holbein’s The Ambassadors: two richly dressed men stand either side of a two-shelf table of globes, instruments, books and a lute, in front of a green curtain; a long pale diagonal shape crosses the floor at their feet.",

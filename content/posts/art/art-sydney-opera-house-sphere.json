@@ -72,6 +72,12 @@
       "ratings": { "complexity": 5, "shock": 6 }
     },
     {
+      "type": "explore",
+      "lab": "sydney-opera-house-sphere",
+      "prompt": "Build a shell rib from precast pieces; each colour needs its own mould. Compare a parabola and an ellipse with a rib cut from a sphere.",
+      "takeaway": "On a sphere the curve is the same everywhere, so every piece of the rib fits one mould, with a radius of 75.2 m. On a parabola or an ellipse each piece bends differently and needs its own."
+    },
+    {
       "type": "text",
       "heading": "A sketch wins",
       "text": "In 1957 Utzon, a Danish architect who had never seen one of his designs built, beat 232 other entries in Sydney’s international design competition."

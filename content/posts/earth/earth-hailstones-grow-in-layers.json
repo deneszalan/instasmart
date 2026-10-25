@@ -87,6 +87,12 @@
       "ratings": { "complexity": 5, "shock": 4 }
     },
     {
+      "type": "explore",
+      "lab": "hailstones-grow-in-layers",
+      "prompt": "Watch a hailstone ride the updraft through wet and drier zones, and see it cut open. Try a weaker and a stronger updraft.",
+      "takeaway": "Wet zones add clear ice and drier ones white, so one trip through the cloud can build several rings. A stronger updraft holds the stone up longer, so it grows bigger before it falls."
+    },
+    {
       "type": "image",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Hagelkorn_mit_Anlagerungsschichten.jpg/960px-Hagelkorn_mit_Anlagerungsschichten.jpg",
       "alt": "A hailstone cut in half on a wooden board, showing rings of clear and milky white ice around a white core",

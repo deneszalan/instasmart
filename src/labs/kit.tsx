@@ -271,6 +271,12 @@ export function rng(seed: number) {
   };
 }
 
+/** The colour of light of wavelength `nm`, roughly as the eye sees it; red beyond 700 nm. */
+export function wavelengthColour(nm: number, light = 60, alpha = 1): string {
+  const hue = nm < 440 ? 270 - ((nm - 400) / 40) * 30 : nm < 490 ? 240 - ((nm - 440) / 50) * 60 : nm < 580 ? 180 - ((nm - 490) / 90) * 120 : 60 - ((nm - 580) / 120) * 60;
+  return `hsla(${Math.max(0, hue)}, 95%, ${light}%, ${alpha})`;
+}
+
 export const clamp = (x: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, x));
 export const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 

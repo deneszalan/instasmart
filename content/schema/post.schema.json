@@ -129,7 +129,21 @@
                   "checker-shadow-illusion",
                   "mental-rotation",
                   "phi-phenomenon",
-                  "spacing-effect"
+                  "spacing-effect",
+                  "brunelleschi-perspective",
+                  "holbein-anamorphic-skull",
+                  "seurat-pointillism",
+                  "sydney-opera-house-sphere",
+                  "honeybee-waggle-dance",
+                  "mega-plate-evolution",
+                  "mendel-pea-ratios",
+                  "mitochondria-were-bacteria",
+                  "flame-test-colours",
+                  "ice-floats",
+                  "paper-chromatography",
+                  "soap-micelles",
+                  "hailstones-grow-in-layers",
+                  "plates-fingernail-speed"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

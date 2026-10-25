@@ -82,6 +82,12 @@
       "ratings": { "complexity": 3, "shock": 5 }
     },
     {
+      "type": "explore",
+      "lab": "plates-fingernail-speed",
+      "prompt": "Race a fingernail against two plates for a year, then speed up time to millions of years and watch an ocean open.",
+      "takeaway": "At 25 mm a year, mid-range for the Mid-Atlantic Ridge, an ocean opens 2,500 km in 100 million years and 5,000 km in 200 million: a fingernail’s pace, kept up for ages."
+    },
+    {
       "type": "chart",
       "heading": "How far they move in a year",
       "unit": "mm",

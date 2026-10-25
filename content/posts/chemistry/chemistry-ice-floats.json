@@ -70,6 +70,12 @@
       "ratings": { "complexity": 5, "shock": 3 }
     },
     {
+      "type": "explore",
+      "lab": "ice-floats",
+      "prompt": "Start the winter and watch the lake turn over, then freeze on top. Check the bottom water, then see what would happen if ice sank.",
+      "takeaway": "Water is densest at 4 °C, so the whole lake cools to 4 °C before the top gets colder, lighter and freezes. Floating ice shields the water below; if it sank, the lake would freeze from the bottom up."
+    },
+    {
       "type": "text",
       "heading": "Densest at 4 °C",
       "text": "Most liquids get denser as they cool. Water does too, but only down to about 4 °C. Colder than that, the molecules start to line up as they will in ice, and the water gets lighter again."

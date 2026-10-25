@@ -70,6 +70,12 @@
       "ratings": { "complexity": 4, "shock": 3 }
     },
     {
+      "type": "explore",
+      "lab": "seurat-pointillism",
+      "prompt": "Step back from the dots until they merge. Try all three pairs: what do blue and yellow dots make?",
+      "takeaway": "Tiny dots merge into the average of their light: red and yellow into orange, red and green into a dull yellow-brown, blue and yellow into grey, not green. The mix is never brighter than its dots."
+    },
+    {
       "type": "image",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/960px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg",
       "alt": "Seurat’s A Sunday Afternoon on the Island of La Grande Jatte: Parisians relaxing on a grassy riverbank in sun and shade, a couple with a parasol on the right, boats on the river on the left, all built from small dots of colour.",

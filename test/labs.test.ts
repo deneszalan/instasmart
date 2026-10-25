@@ -35,6 +35,20 @@ import { greyAt } from '../src/labs/psychology/checker-shadow-illusion';
 import { makeTrials, SHAPES } from '../src/labs/psychology/mental-rotation';
 import { darkDisc, litDot, msAt } from '../src/labs/psychology/phi-phenomenon';
 import { recall } from '../src/labs/psychology/spacing-effect';
+import { project } from '../src/labs/art/brunelleschi-perspective';
+import { apparentWidth, rightAngle } from '../src/labs/art/holbein-anamorphic-skull';
+import { brightness, mixLight } from '../src/labs/art/seurat-pointillism';
+import { bendRadius, moulds, RADIUS } from '../src/labs/art/sydney-opera-house-sphere';
+import { danceAngle, foodBearing } from '../src/labs/biology/honeybee-waggle-dance';
+import { bandOf, COLS, freshPlate, ROWS, step } from '../src/labs/biology/mega-plate-evolution';
+import { grow, wrinkledShare } from '../src/labs/biology/mendel-pea-ratios';
+import { RESULTS, TESTS } from '../src/labs/biology/mitochondria-were-bacteria';
+import { cobaltPasses, FLAMES } from '../src/labs/chemistry/flame-test-colours';
+import { advance, density, ICE } from '../src/labs/chemistry/ice-floats';
+import { front, RF, spot } from '../src/labs/chemistry/paper-chromatography';
+import { coated, PER_DROP, SCUM } from '../src/labs/chemistry/soap-micelles';
+import { fallSpeed, water } from '../src/labs/earth/hailstones-grow-in-layers';
+import { distance, RATES, yearsAt } from '../src/labs/earth/plates-fingernail-speed';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -269,5 +283,100 @@ describe('lab maths', () => {
     expect(recall([29, 29, 29, 29], 60)).toBeLessThan(0.05);
     expect(recall([6, 12, 18, 24], 60)).toBeGreaterThan(0.3);
     expect(recall([1, 3, 7, 15], 60)).toBeGreaterThan(0.3);
+  });
+
+  it('perspective: anything as tall as your eye reaches the horizon, however far away', () => {
+    for (const Z of [5, 10, 40]) expect(project(1, 1.7, Z, 1.7)[1]).toBeCloseTo(0, 12);
+    expect(project(0, 0, 10, 1.7)[1]).toBeCloseTo(2 * project(0, 0, 20, 1.7)[1], 12);
+  });
+
+  it('anamorphosis: a 5× stretch looks right from about 12°', () => {
+    expect(rightAngle(5)).toBeCloseTo(11.5, 1);
+    expect(apparentWidth(5, rightAngle(5))).toBeCloseTo(1, 9);
+  });
+
+  it('pointillism: red and yellow dots average to orange, no brighter than the dots', () => {
+    const red = [255, 0, 0] as [number, number, number], yellow = [255, 255, 0] as [number, number, number];
+    expect(mixLight(red, yellow)).toEqual([255, 188, 0]);
+    expect(brightness(mixLight(red, yellow))).toBeCloseTo((brightness(red) + brightness(yellow)) / 2, 2);
+  });
+
+  it('Opera House: a rib cut from the sphere needs one mould; a parabola needs one per piece', () => {
+    expect(bendRadius('sphere', 0.3)).toBeCloseTo(RADIUS, 1);
+    expect(moulds('sphere', 12).count).toBe(1);
+    expect(moulds('parabola', 12).count).toBe(12);
+    expect(moulds('ellipse', 12).count).toBe(12);
+  });
+
+  it('waggle dance: food 40° right of the Sun is danced 40° right of up, and reads back the same', () => {
+    expect(danceAngle(175, 135)).toBe(40);
+    expect(danceAngle(100, 135)).toBe(325);
+    expect(foodBearing(danceAngle(20, 300), 300)).toBe(20);
+  });
+
+  it('mega-plate: without mutations the bacteria never leave the drug-free edge; with them they reach the middle', () => {
+    const run = (mu: number, gens: number) => {
+      let cells = freshPlate();
+      const rand = rng(5);
+      for (let g = 0; g < gens; g++) cells = step(cells, mu, rand);
+      let far = 0;
+      cells.forEach((v, i) => v >= 0 && (far = Math.max(far, bandOf(i % COLS))));
+      return far;
+    };
+    expect(run(0, 400)).toBe(0);
+    expect(run(0.02, 1500)).toBe(4);
+    expect(freshPlate().filter((v) => v === 0)).toHaveLength(ROWS);
+  });
+
+  it('Mendel: RR × rr gives no wrinkled seeds; Rr × Rr about one in four', () => {
+    expect(wrinkledShare('RR', 'rr')).toBe(0);
+    expect(wrinkledShare('Rr', 'Rr')).toBe(0.25);
+    expect(grow('Rr', 'Rr', 20000, rng(9)) / 20000).toBeCloseTo(0.25, 1);
+  });
+
+  it('mitochondria: every test puts the mitochondrion with the bacterium, not the cell', () => {
+    for (const test of TESTS) expect(RESULTS[test]).toEqual([true, true, false]);
+  });
+
+  it('flame test: sodium at 589 nm, held back by cobalt glass; potassium’s violet and deep red pass', () => {
+    expect(FLAMES.Na.lines[0][0]).toBeCloseTo(589, 0);
+    expect(cobaltPasses(589)).toBe(false);
+    expect(FLAMES.K.lines.map(([nm]) => cobaltPasses(nm))).toEqual([true, true, true]);
+  });
+
+  it('ice: water is densest at 4 °C and ice floats; a cooling lake keeps 4 °C water at the bottom under its ice', () => {
+    expect(density(4)).toBeGreaterThan(density(0));
+    expect(density(4)).toBeGreaterThan(density(8));
+    expect(density(0)).toBeCloseTo(999.84, 0);
+    expect(ICE / density(0)).toBeCloseTo(0.917, 3);
+    let lake = { temps: Array(20).fill(10), ice: 0, day: 0 };
+    for (let k = 0; k < 4000; k++) lake = advance(lake, -8, 0.05);
+    expect(lake.ice).toBeGreaterThan(0.1);
+    expect(lake.temps[19]).toBeCloseTo(4, 0);
+  });
+
+  it('chromatography: a dye’s share of the solvent’s climb is its Rf, wherever the front is', () => {
+    const f = front(30);
+    expect((spot('M', f) - 1.5) / (f - 1.5)).toBeCloseTo(RF.M, 9);
+    expect(front(1000)).toBe(11);
+  });
+
+  it('soap: 10 molecules coat a speck; hard water spends 30 on scum first', () => {
+    expect(coated(90, 9, false)).toBe(9);
+    expect(coated(90, 9, true)).toBe((90 - SCUM) / PER_DROP);
+    expect(coated(5, 9, false)).toBe(0);
+  });
+
+  it('hail: 1 cm stones fall at about 9 m/s and 8 cm ones at about 48', () => {
+    expect(fallSpeed(1)).toBe(9);
+    expect(fallSpeed(8)).toBeCloseTo(48, -0.5);
+    expect(water(3)).toBe(0);
+  });
+
+  it('plates: 42 mm of fingernail a year; 25 mm a year opens 5,000 km in 200 million years', () => {
+    expect(yearsAt(0)).toBeCloseTo(1, 9);
+    expect(yearsAt(100)).toBeCloseTo(2e8, -3);
+    expect(RATES.nail).toBeCloseTo(3.5 * 12, 9);
+    expect(distance(RATES.ridge * 2e8)).toBe('5,000 km');
   });
 });

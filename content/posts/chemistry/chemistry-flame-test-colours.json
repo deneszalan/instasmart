@@ -72,6 +72,12 @@
       "ratings": { "complexity": 7, "shock": 3 }
     },
     {
+      "type": "explore",
+      "lab": "flame-test-colours",
+      "prompt": "Put each metal in the flame and look at its light. Then add a speck of salt to potassium and find a way to see its lilac again.",
+      "takeaway": "Each metal gives its own lines or bands; sodium’s yellow, at 589 nm, drowns out the rest. Cobalt glass holds that yellow back, and potassium’s violet and deep red show through."
+    },
+    {
       "type": "text",
       "heading": "Colours as fingerprints",
       "text": "A prism spreads white light into a full rainbow. The light of a heated element is different: a set of sharp lines, at wavelengths set by its energy levels. Every element's pattern is unique."

@@ -72,6 +72,12 @@
       "ratings": { "complexity": 5, "shock": 4 }
     },
     {
+      "type": "explore",
+      "lab": "brunelleschi-perspective",
+      "prompt": "You are looking down from 3 m. Drag the people around the floor, then lower your eye until all their heads touch the horizon.",
+      "takeaway": "Every floor line runs to one vanishing point on the horizon, and anything as tall as your eye reaches the horizon however far away: Alberti’s similar triangles, size divided by distance."
+    },
+    {
       "type": "text",
       "heading": "The painted panel",
       "text": "Brunelleschi painted the Baptistery as seen from the doorway of Florence Cathedral, then made a small hole through the panel. You looked through it from behind; a raised mirror swapped the real view for the painted one."

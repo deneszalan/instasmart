@@ -64,6 +64,12 @@
       "ratings": { "complexity": 5, "shock": 7 }
     },
     {
+      "type": "explore",
+      "lab": "mitochondria-were-bacteria",
+      "prompt": "Run the four tests on a bacterium, a mitochondrion and the cell’s own nucleus and ribosomes. Which two keep matching?",
+      "takeaway": "Circular DNA, splitting in two, cardiolipin, ribosomes jammed by an antibiotic for bacteria: each time the mitochondrion matches the bacterium, not the cell it lives in."
+    },
+    {
       "type": "flow",
       "heading": "How a cell got its power plants",
       "steps": [

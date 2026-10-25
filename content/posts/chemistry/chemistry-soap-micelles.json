@@ -70,6 +70,12 @@
       "ratings": { "complexity": 4, "shock": 3 }
     },
     {
+      "type": "explore",
+      "lab": "soap-micelles",
+      "prompt": "Rinse the grease with water alone. Then add soap and rinse again, and try hard water.",
+      "takeaway": "Water alone slides over the grease. Soap tails dig into each speck with their heads facing the water, so a rinse carries the coated specks away. Hard water turns some of the soap into scum first."
+    },
+    {
       "type": "stat",
       "value": "17 carbons",
       "label": "in the tail of sodium stearate, the most common soap",

@@ -78,6 +78,12 @@
       "ratings": { "complexity": 5, "shock": 7 }
     },
     {
+      "type": "explore",
+      "lab": "mega-plate-evolution",
+      "prompt": "Let the bacteria grow across the plate and watch them stall at each band of drug until a mutant breaks through. Then try a lower mutation chance.",
+      "takeaway": "Each band waits for a new mutation, and its mutants fan out ahead. With no mutations the bacteria never leave the drug-free edge; with more, they reach the 3,000× middle sooner."
+    },
+    {
       "type": "chart",
       "heading": "Trimethoprim in each band, in multiples of the dose that stops E. coli",
       "items": [

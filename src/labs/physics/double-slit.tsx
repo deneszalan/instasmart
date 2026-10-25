@@ -1,14 +1,9 @@
 import { useRef, useState } from 'react';
-import { Btn, C, Choice, label, Range, Stage, useGoal, type LabProps } from '../kit';
+import { Btn, C, Choice, label, Range, Stage, useGoal, wavelengthColour, type LabProps } from '../kit';
 import { t } from '../../i18n';
 import { formatNumber } from '../../lib/format';
 
 /** A wavelength in nanometres as a screen colour (an approximation good enough to tell the colours apart). */
-export function wavelengthColour(nm: number): string {
-  const hue = nm < 440 ? 270 - ((nm - 400) / 40) * 30 : nm < 490 ? 240 - ((nm - 440) / 50) * 60 : nm < 580 ? 180 - ((nm - 490) / 90) * 120 : 60 - ((nm - 580) / 120) * 60;
-  return `hsl(${Math.max(0, hue)}, 95%, 60%)`;
-}
-
 /**
  * Brightness on the screen at height y (−1 … 1), for slits `gap` apart and light of wavelength `nm`: the
  * two-slit cos² fringes inside the single-slit envelope. With a which-slit detector there are no fringes.

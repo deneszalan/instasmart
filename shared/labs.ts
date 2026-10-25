@@ -40,6 +40,20 @@ export const LABS = {
   'mental-rotation': 'A real mental rotation test: is the second figure the first one turned, or its mirror image? See your times by angle.',
   'phi-phenomenon': 'Flash two dots or a ring of discs at any speed and record when you see motion that isn’t there.',
   'spacing-effect': 'Drag four reviews along a timeline and see, in a simple model of forgetting, how much is left on the test and a month on.',
+  'brunelleschi-perspective': 'Drag people around a tiled floor in one-point perspective and change your eye height; watch where their heads meet the horizon.',
+  'holbein-anamorphic-skull': 'Change how far a skull is stretched and the angle you see it from, until Holbein’s smear turns back into a skull.',
+  'seurat-pointillism': 'Step back from a patch of two-colour dots until they merge, and compare the mix with the dots’ own brightness.',
+  'sydney-opera-house-sphere': 'Build a shell rib from precast pieces as a parabola, an ellipse or a cut from a sphere, and count the moulds it needs.',
+  'honeybee-waggle-dance': 'Place flowers and the Sun on a map and watch a bee dance it on the comb; then read a dance and find the food.',
+  'mega-plate-evolution': 'Grow bacteria across a plate with bands of antibiotic rising tenfold, and watch mutants break through band by band.',
+  'mendel-pea-ratios': 'Choose two pea parents, see the Punnett square, and grow 10, 100 or 1,000 seeds to count round and wrinkled.',
+  'mitochondria-were-bacteria': 'Run four tests on a bacterium, a mitochondrion and the cell’s own nucleus and ribosomes, and compare the results.',
+  'flame-test-colours': 'Hold six metals in a flame and see their colours and spectral lines; add a speck of salt and look through cobalt glass.',
+  'ice-floats': 'Cool a lake through the winter and watch it turn over, settle at 4 °C and freeze on top; or see what would happen if ice sank.',
+  'paper-chromatography': 'Run three dyes and a mystery ink up paper, measure the bands’ Rf values, and name the dyes in the mystery.',
+  'soap-micelles': 'Rinse grease off a plate with water, then with more and more soap, in soft or hard water.',
+  'hailstones-grow-in-layers': 'Set a storm’s updraft and follow a hailstone through wet and drier zones, then cut it open to count its layers.',
+  'plates-fingernail-speed': 'Race a fingernail against two tectonic plates over 1 year to 200 million years, and watch an ocean open.',
 } as const;
 
 export type LabId = keyof typeof LABS;
