@@ -1,0 +1,263 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-franklin-turkey-shock",
+  "field": "physics",
+  "title": "Benjamin Franklin tried to kill a turkey with electricity and shocked himself instead",
+  "emoji": "🦃",
+  "cover": {
+    "src": "cover.jpg",
+    "alt": "In a candlelit panelled room, Benjamin Franklin in a white wig recoils with a shocked face as a spark flies from two big glass jars on a table beside an alarmed turkey."
+  },
+  "body": "In the 1740s **Benjamin Franklin** experimented with electricity, storing charge in large glass jars (Leyden jars). In 1749 he planned a party on the Schuylkill River at which a turkey would be killed by an electric shock and roasted on an electrical spit. Two nights before Christmas 1750, about to kill a turkey with the charge of two large jars, he held a chain joined to the outsides of the jars in one hand and touched their top wires with the other, so the whole charge went through his own body. He blamed the guests' chatter for distracting him. He felt 'an universal Blow' from head to foot and a violent shaking, and his breastbone was still sore two days later, but he did not fall. In a letter, probably to his brother John, he asked that the story not be made public, because he was ashamed. Later experiments with five jars did kill turkeys, and a report of his work says he thought birds killed this way 'eat uncommonly tender'.",
+  "slides": [
+    {
+      "type": "comic",
+      "src": "panel-1.jpg",
+      "alt": "A panelled parlour with a sash window. Franklin, in a white wig and brown coat, looks glumly at a row of glass jars on a table while a friend in a blue coat shrugs.",
+      "caption": "Philadelphia, 1749. Benjamin Franklin has a problem: electricity is thrilling, and completely useless.",
+      "bubbles": [
+        {
+          "text": "We have hitherto been able to produce nothing in this way of use to mankind.",
+          "speaker": "Benjamin Franklin",
+          "x": 30,
+          "y": 34,
+          "width": 50,
+          "tail": {
+            "x": 23.7,
+            "y": 50.5
+          }
+        },
+        {
+          "text": "So... a party?",
+          "speaker": "A friend",
+          "x": 78,
+          "y": 42,
+          "width": 30,
+          "tail": {
+            "x": 78.4,
+            "y": 52.4
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-2.jpg",
+      "alt": "On a grassy riverbank, Franklin raises a glass beside a cloth laid with charged jars throwing a spark and glasses of wine. A turkey stares at him in alarm.",
+      "caption": "His plan to end the season: a party on the Schuylkill River, where dinner is killed, cooked and toasted by electricity.",
+      "bubbles": [
+        {
+          "text": "A turkey is to be killed for our dinner by the electrical shock!",
+          "speaker": "Benjamin Franklin",
+          "x": 40,
+          "y": 36,
+          "width": 50,
+          "tail": {
+            "x": 53.1,
+            "y": 61.3
+          }
+        },
+        {
+          "text": "Excuse me?",
+          "speaker": "The turkey",
+          "x": 80,
+          "y": 62,
+          "width": 28,
+          "tail": {
+            "x": 75,
+            "y": 76
+          },
+          "kind": "thought"
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-3.jpg",
+      "alt": "Night, by a fire. Two big glass jars stand on a table, a chain trailing from them, with a nervous turkey at the end. Franklin grins at two guests, a man in blue and a woman in a cap.",
+      "caption": "Two nights before Christmas, 1750: a turkey, two big glass jars full of electric charge, and an audience.",
+      "bubbles": [
+        {
+          "text": "As much electrical fire as forty common bottles. Watch closely!",
+          "speaker": "Benjamin Franklin",
+          "x": 30,
+          "y": 34,
+          "width": 44,
+          "tail": {
+            "x": 38.5,
+            "y": 50.5
+          }
+        },
+        {
+          "text": "How thrilling!",
+          "speaker": "A guest",
+          "x": 82,
+          "y": 42,
+          "width": 28,
+          "tail": {
+            "x": 84.6,
+            "y": 58.1
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-4.jpg",
+      "alt": "Franklin turns towards the jars, one hand reaching up to their top wires and the other holding the chain, while chatting over his shoulder to his guests.",
+      "caption": "He chats away to the company, holding a chain to the jars in one hand and reaching for the top wires with the other.",
+      "bubbles": [
+        {
+          "text": "Ha! Quite right. Now, just one moment...",
+          "speaker": "Benjamin Franklin",
+          "x": 24,
+          "y": 32,
+          "width": 40,
+          "tail": {
+            "x": 33.7,
+            "y": 49.7
+          }
+        },
+        {
+          "text": "...and then my aunt said...",
+          "speaker": "A guest",
+          "x": 74,
+          "y": 38,
+          "width": 40,
+          "tail": {
+            "x": 69.3,
+            "y": 54.3
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-5.jpg",
+      "alt": "A blinding flash: a spark jumps from the jars' wires through Franklin's arm and body. He jerks back, wide-eyed. The turkey's tail fans out; the guests gape.",
+      "caption": "He has made himself part of the circuit. The guests say the flash was very great, and the crack as loud as a pistol.",
+      "bubbles": [
+        {
+          "text": "Ben?!",
+          "speaker": "A guest",
+          "x": 72,
+          "y": 38,
+          "width": 24,
+          "tail": {
+            "x": 71.2,
+            "y": 54.3
+          },
+          "kind": "shout"
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-6.jpg",
+      "alt": "Franklin stands shaking all over, a ghostly double outline around him and little stars circling his head. The guests stare at him.",
+      "caption": "He neither saw the flash nor heard the bang. Then came 'an universal Blow' from head to foot, and a violent shaking.",
+      "bubbles": [
+        {
+          "text": "I did not fall.",
+          "speaker": "Benjamin Franklin",
+          "x": 40,
+          "y": 33,
+          "width": 28,
+          "tail": {
+            "x": 44.1,
+            "y": 49.7
+          }
+        },
+        {
+          "text": "Are you quite well, sir?",
+          "speaker": "A guest",
+          "x": 76,
+          "y": 40,
+          "width": 34,
+          "tail": {
+            "x": 71.2,
+            "y": 54.3
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-7.jpg",
+      "alt": "Daylight. Franklin, sweating, stands at a writing table with a sheet of paper, an inkpot and a quill.",
+      "caption": "Christmas Day. He writes to his brother, probably John, and asks him to keep it quiet. Sorry, Ben.",
+      "bubbles": [
+        {
+          "text": "I am ashamed to have been guilty of so notorious a blunder.",
+          "speaker": "Benjamin Franklin",
+          "x": 58,
+          "y": 36,
+          "width": 46,
+          "tail": {
+            "x": 35.8,
+            "y": 51.2
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-8.jpg",
+      "alt": "Evening. A roast turkey steams on a platter on the dining table. Franklin, beaming, holds a fork; a guest smiles across the table.",
+      "caption": "Later, five jars kill a ten-pound turkey. A report of his work says such birds 'eat uncommonly tender'.",
+      "bubbles": [
+        {
+          "text": "Electricity: finally of use to mankind.",
+          "speaker": "Benjamin Franklin",
+          "x": 32,
+          "y": 36,
+          "width": 40,
+          "tail": {
+            "x": 20.0,
+            "y": 51.9
+          }
+        },
+        {
+          "text": "Uncommonly tender!",
+          "speaker": "A guest",
+          "x": 76,
+          "y": 42,
+          "width": 30,
+          "tail": {
+            "x": 81.1,
+            "y": 53.9
+          }
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why did the shock go through Franklin instead of the turkey?",
+      "options": [
+        "Lightning struck the house",
+        "He completed the circuit himself",
+        "The turkey kicked a jar",
+        "He drank from a charged glass"
+      ],
+      "answer": 1,
+      "explanation": "He held the chain joined to the outsides of the jars while touching their charged top wires, so the charge ran through his arms and body."
+    }
+  ],
+  "tags": [
+    "franklin",
+    "electricity",
+    "leydenjar",
+    "experiments",
+    "colonial",
+    "comic"
+  ],
+  "source": {
+    "label": "Benjamin Franklin to [John Franklin], 25 December 1750 (Massachusetts Historical Society)",
+    "url": "https://www.masshist.org/database/1839"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-25"
+}

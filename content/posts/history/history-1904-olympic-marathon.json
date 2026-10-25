@@ -1,0 +1,245 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-1904-olympic-marathon",
+  "field": "history",
+  "title": "The 1904 Olympic marathon had a car, rat poison, apples and a dog",
+  "emoji": "🏃",
+  "cover": {
+    "src": "cover.jpg",
+    "alt": "On a hot, dusty country road a tired runner in a white vest staggers on, chased by a scruffy dog, while a man waves from a red motor car speeding off behind him."
+  },
+  "body": "The marathon at the 1904 Olympics in St Louis started at 3 p.m. on 30 August, in heat of about 90°F (32°C), on dusty roads with a single official water stop. Fewer than half of the 32 starters finished. **Fred Lorz** dropped out with cramps after nine miles, rode in a car for about eleven, then ran into the stadium first and was cheered as the winner until the truth came out. His lifetime ban was soon cut to six months, and he won the Boston Marathon in 1905. The real winner, **Thomas Hicks**, was kept going by his handlers with strychnine, egg whites and brandy, and was half carried over the line in 3:28:53, the slowest winning time in Olympic history. **Félix Carvajal**, a Cuban postman who had lost his money at dice on the way and ran in trousers cut off at the knee, stopped to eat apples, lay down for a nap and still came fourth. **Len Taunyane** was chased about a mile off the course by a dog.",
+  "slides": [
+    {
+      "type": "comic",
+      "src": "panel-1.jpg",
+      "alt": "A hot, hazy country road. An officials' motor car drives ahead in a huge cloud of dust, and a runner in a white vest coughs his way through it.",
+      "caption": "St Louis, 30 August 1904, 3 p.m., about 90°F. The Olympic marathon sets off behind the officials' cars.",
+      "bubbles": [
+        {
+          "text": "Who invited the cars?!",
+          "speaker": "A runner",
+          "x": 28,
+          "y": 38,
+          "width": 36,
+          "tail": {
+            "x": 35.5,
+            "y": 56.9
+          },
+          "kind": "shout"
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-2.jpg",
+      "alt": "Fred Lorz, in a running vest, waves from the passenger seat of a red open motor car speeding down the road, past an astonished grey-haired runner.",
+      "caption": "Fred Lorz drops out with cramps after nine miles, and accepts a lift. He waves to the runners he passes.",
+      "bubbles": [
+        {
+          "text": "Keep it up, boys!",
+          "speaker": "Fred Lorz",
+          "x": 56,
+          "y": 36,
+          "width": 32,
+          "tail": {
+            "x": 37.4,
+            "y": 57.1
+          }
+        },
+        {
+          "text": "Hey!",
+          "speaker": "A runner",
+          "x": 16,
+          "y": 54,
+          "width": 24,
+          "tail": {
+            "x": 18.5,
+            "y": 68.2
+          },
+          "kind": "shout"
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-3.jpg",
+      "alt": "Under an apple tree by the road, Félix Carvajal, in a white shirt and cut-off trousers, lies fast asleep, half-eaten apples on the ground beside him.",
+      "caption": "Félix Carvajal, a Cuban postman, eats apples from an orchard, gets cramps and lies down for a nap.",
+      "bubbles": [
+        {
+          "text": "Five more minutes.",
+          "speaker": "Félix Carvajal",
+          "x": 26,
+          "y": 72,
+          "width": 30,
+          "tail": {
+            "x": 6,
+            "y": 86
+          },
+          "kind": "thought"
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-4.jpg",
+      "alt": "Len Taunyane runs flat out down the road, looking back in alarm at a barking dog chasing him.",
+      "caption": "Len Taunyane, a Tswana runner from the World's Fair, is chased about a mile off the course by a dog.",
+      "bubbles": [
+        {
+          "text": "Not now, dog!",
+          "speaker": "Len Taunyane",
+          "x": 26,
+          "y": 34,
+          "width": 30,
+          "tail": {
+            "x": 28.0,
+            "y": 50.6
+          },
+          "kind": "shout"
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-5.jpg",
+      "alt": "Thomas Hicks, dazed, little stars around his head, stands between his two handlers: one holds up a brown bottle, the other an egg.",
+      "caption": "Thomas Hicks is fading. His handlers give him strychnine, a common rat poison, with egg white. Later, brandy.",
+      "bubbles": [
+        {
+          "text": "Water...?",
+          "speaker": "Thomas Hicks",
+          "x": 42,
+          "y": 34,
+          "width": 26,
+          "tail": {
+            "x": 53.1,
+            "y": 56.8
+          }
+        },
+        {
+          "text": "Egg white. It's good for you.",
+          "speaker": "A handler",
+          "x": 78,
+          "y": 44,
+          "width": 36,
+          "tail": {
+            "x": 78.8,
+            "y": 60.6
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-6.jpg",
+      "alt": "In the stadium, before a packed grandstand, Fred Lorz raises both fists in triumph.",
+      "caption": "His car having broken down, Lorz jogs into the stadium first, to huge cheers.",
+      "bubbles": [
+        {
+          "text": "Thank you! It was nothing!",
+          "speaker": "Fred Lorz",
+          "x": 76,
+          "y": 36,
+          "width": 36,
+          "tail": {
+            "x": 52.9,
+            "y": 55.8
+          },
+          "kind": "shout"
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-7.jpg",
+      "alt": "Fred Lorz smirks and sweats as an official in a boater hat points at him, shouting.",
+      "caption": "Then someone mentions the car. He's banned for life. The ban lasts six months, and he wins Boston in 1905.",
+      "bubbles": [
+        {
+          "text": "You came by car!",
+          "speaker": "An official",
+          "x": 70,
+          "y": 36,
+          "width": 34,
+          "tail": {
+            "x": 69.1,
+            "y": 53.9
+          },
+          "kind": "shout"
+        },
+        {
+          "text": "Did I say I ran all of it?",
+          "speaker": "Fred Lorz",
+          "x": 28,
+          "y": 42,
+          "width": 36,
+          "tail": {
+            "x": 32.7,
+            "y": 53.9
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-8.jpg",
+      "alt": "Thomas Hicks, glassy-eyed with stars around his head, is held up under both arms by his handlers as they cross the finish line.",
+      "caption": "Hicks, hallucinating, is half carried over the line in 3:28:53, the slowest winning time in Olympic history.",
+      "bubbles": [
+        {
+          "text": "Running like a well-oiled machine.",
+          "speaker": "A handler",
+          "x": 24,
+          "y": 36,
+          "width": 36,
+          "tail": {
+            "x": 32.5,
+            "y": 56.5
+          }
+        },
+        {
+          "text": "Nearly there. Lift your feet. Or don't.",
+          "speaker": "A handler",
+          "x": 78,
+          "y": 40,
+          "width": 36,
+          "tail": {
+            "x": 67.5,
+            "y": 56.5
+          }
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why was Fred Lorz, first across the line, disqualified?",
+      "options": [
+        "He wore the wrong shoes",
+        "He rode part of the way in a car",
+        "He took strychnine",
+        "He started early"
+      ],
+      "answer": 1,
+      "explanation": "He dropped out after nine miles and rode about eleven in a car until it broke down. The man who did take strychnine, Thomas Hicks, was the winner."
+    }
+  ],
+  "tags": [
+    "olympics",
+    "marathon",
+    "running",
+    "stlouis",
+    "1900s",
+    "comic"
+  ],
+  "source": {
+    "label": "Olympedia: 1904 men's marathon",
+    "url": "https://www.olympedia.org/results/56131"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-25"
+}

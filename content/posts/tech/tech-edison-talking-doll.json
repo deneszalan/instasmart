@@ -1,0 +1,252 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-edison-talking-doll",
+  "field": "tech",
+  "title": "Edison's talking doll of 1890 was such a flop it was off the market within weeks",
+  "emoji": "🧸",
+  "cover": {
+    "src": "cover.jpg",
+    "alt": "A stiff doll with a porcelain face, staring blue glass eyes, an open mouth, a pink dress and a tin chest full of sound holes stands in a dark room, giving off sound waves."
+  },
+  "body": "In 1890 **Thomas Edison**'s company put a tiny phonograph inside a doll. At the Edison Phonograph Works in West Orange, New Jersey, girls in rows of stalls recited nursery rhymes such as 'Twinkle, Twinkle, Little Star' onto little wax records, one record at a time, so every doll had its own performance of about 20 seconds. The dolls went on sale in April 1890 at $10 undressed and $12 to $20 dressed. The mechanism broke easily, the records wore out, and the voices came out in what one paper called 'a flat, uninflected whine'. Returned dolls piled up, and production stopped in May, a few weeks after the launch; the National Park Service estimates that no more than 2,560 were sold. In 2015 the Park Service published recordings from surviving dolls, recovered with an optical scanner developed at Lawrence Berkeley National Laboratory, without touching the fragile wax.",
+  "slides": [
+    {
+      "type": "comic",
+      "src": "panel-1.jpg",
+      "alt": "A brick factory with tall windows. Thomas Edison, in a dark suit, proudly presents a doll in a pink dress with a tin chest, standing on a work table.",
+      "caption": "West Orange, New Jersey, 1890. Thomas Edison's company has put a phonograph inside a doll. What could go wrong?",
+      "bubbles": [
+        {
+          "text": "Every child will want one that talks.",
+          "speaker": "Thomas Edison",
+          "x": 34,
+          "y": 36,
+          "width": 40,
+          "tail": {
+            "x": 32.7,
+            "y": 54.6
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-2.jpg",
+      "alt": "Three girls in long dresses stand in wooden stalls along a bench, each speaking into a tiny phonograph with a horn.",
+      "caption": "Each record is recited live by a girl in a stall to herself, so every doll gets its own performance.",
+      "bubbles": [
+        {
+          "text": "Twinkle, twinkle, little star…",
+          "speaker": "A girl",
+          "x": 18,
+          "y": 48,
+          "width": 28,
+          "tail": {
+            "x": 17.8,
+            "y": 62.9
+          }
+        },
+        {
+          "text": "Mary had a little lamb…",
+          "speaker": "A girl",
+          "x": 52,
+          "y": 48,
+          "width": 28,
+          "tail": {
+            "x": 51.1,
+            "y": 62.9
+          }
+        },
+        {
+          "text": "Hickory, dickory, dock…",
+          "speaker": "A girl",
+          "x": 84,
+          "y": 48,
+          "width": 28,
+          "tail": {
+            "x": 84.5,
+            "y": 62.9
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-3.jpg",
+      "alt": "A longer row of stalls with four girls, all reciting at once, sound waves rising from each little phonograph.",
+      "caption": "Each wax ring holds about 20 seconds: one verse of 'Jack and Jill', 'Little Bo-Peep' or 'Little Jack Horner'.",
+      "bubbles": [
+        {
+          "text": "Jack and Jill went up the hill…",
+          "speaker": "A girl",
+          "x": 14,
+          "y": 52,
+          "width": 24,
+          "tail": {
+            "x": 11.7,
+            "y": 66.7
+          }
+        },
+        {
+          "text": "Little Bo-Peep has lost her sheep…",
+          "speaker": "A girl",
+          "x": 59,
+          "y": 52,
+          "width": 24,
+          "tail": {
+            "x": 58.0,
+            "y": 66.7
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-4.jpg",
+      "alt": "A shop with a counter, a talking doll on show beside its box. A gentleman in a top hat stares at it, aghast.",
+      "caption": "April 1890: on sale at $10 undressed, or $12 to $20 with clothes. A lot of money for 20 seconds of rhyme.",
+      "bubbles": [
+        {
+          "text": "Twenty dollars! For a nursery rhyme?",
+          "speaker": "A customer",
+          "x": 66,
+          "y": 38,
+          "width": 40,
+          "tail": {
+            "x": 74.9,
+            "y": 57.2
+          },
+          "kind": "shout"
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-5.jpg",
+      "alt": "A girl in a pink dress recoils in shock from a doll standing on a small table, its mouth open, sound waves pouring out of it.",
+      "caption": "The voice comes out in what one newspaper called 'a flat, uninflected whine'.",
+      "bubbles": [
+        {
+          "text": "Twinkle... twinkle... little... star...",
+          "speaker": "The doll",
+          "x": 72,
+          "y": 34,
+          "width": 36,
+          "tail": {
+            "x": 70.4,
+            "y": 51
+          }
+        },
+        {
+          "text": "Mother!",
+          "speaker": "A girl",
+          "x": 20,
+          "y": 40,
+          "width": 24,
+          "tail": {
+            "x": 29.8,
+            "y": 62.2
+          },
+          "kind": "shout"
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-6.jpg",
+      "alt": "Edison, sweating, gestures at a big pile of returned doll boxes on the factory floor; one doll stands on top with its mouth open.",
+      "caption": "The works shake loose, the records wear out and the dolls 'won't talk'. Back they come.",
+      "bubbles": [
+        {
+          "text": "The little monsters.",
+          "speaker": "Thomas Edison",
+          "x": 30,
+          "y": 38,
+          "width": 32,
+          "tail": {
+            "x": 23.4,
+            "y": 55.7
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-7.jpg",
+      "alt": "A lone talking doll stands in the gloom of the empty, darkened factory.",
+      "caption": "Production stops in May, a few weeks after the launch. Thousands of unsold dolls end up in storage.",
+      "bubbles": [
+        {
+          "text": "Now I lay me down to sleep…",
+          "speaker": "The doll",
+          "x": 50,
+          "y": 34,
+          "width": 44,
+          "tail": {
+            "x": 50,
+            "y": 61
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-8.jpg",
+      "alt": "A bright modern laboratory. A scientist in a white coat looks startled at a scanner with a red laser over a small ring, and a screen showing a sound wave.",
+      "caption": "2015: the recordings are played again, read by an optical scanner so the fragile wax is never touched.",
+      "bubbles": [
+        {
+          "text": "It's... still a bit creepy.",
+          "speaker": "A scientist",
+          "x": 28,
+          "y": 40,
+          "width": 36,
+          "tail": {
+            "x": 25.1,
+            "y": 56.5
+          }
+        },
+        {
+          "text": "There was a little girl, who had a little curl…",
+          "speaker": "The doll",
+          "x": 76,
+          "y": 40,
+          "width": 40,
+          "tail": {
+            "x": 82,
+            "y": 58
+          }
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why did Edison's talking doll flop within weeks?",
+      "options": [
+        "It was given away free",
+        "It broke easily and was hard to hear",
+        "It only sang opera",
+        "It was banned"
+      ],
+      "answer": 1,
+      "explanation": "The fragile mechanism and wax records broke or wore out, the voices were hard to understand, and the dolls cost $10 to $20. Production stopped in May 1890."
+    }
+  ],
+  "tags": [
+    "edison",
+    "phonograph",
+    "toys",
+    "inventions",
+    "1890s",
+    "comic"
+  ],
+  "source": {
+    "label": "National Park Service: Edison's talking doll",
+    "url": "https://www.nps.gov/edis/learn/photosmultimedia/talking-doll-faq-industrial-production.htm"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-25"
+}
