@@ -19,7 +19,8 @@
       "caption": "Hubble images of the Crab Nebula taken 25 years apart, in 1999 and 2024, shown in turn: the filaments of the exploded star have moved outwards at about 5.5 million km/h.",
       "credit": "NASA, ESA, STScI, W. Blair (JHU); video: J. DePasquale (STScI) · CC BY 4.0 · excerpt",
       "href": "https://esahubble.org/videos/heic2607a/",
-      "music": "“Infinite Perspective” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Infinite Perspective” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 3, "shock": 5 }
     },
     {
       "type": "reveal",

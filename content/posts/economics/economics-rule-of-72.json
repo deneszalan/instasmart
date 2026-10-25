@@ -78,7 +78,8 @@
           "start": 77.07,
           "end": 82.93
         }
-      ]
+      ],
+      "ratings": { "complexity": 6, "shock": 5 }
     },
     {
       "type": "text",

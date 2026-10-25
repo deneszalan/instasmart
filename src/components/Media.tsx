@@ -7,6 +7,7 @@ import { inline } from '../lib/markdown';
 import { InteractiveSlide } from './Interactive';
 import { VisualSlide } from './Visual';
 import { clock, VideoSlideView } from './Video';
+import { Ratings } from './Ratings';
 import { challengeId } from '../lib/interactive';
 import { firstVideo } from '../lib/visual';
 import { clipSeconds } from '../data/library';
@@ -62,6 +63,7 @@ export function TitleSlide({ card, hasMore, onWatch }: { card: KnowledgeCard; ha
           </div>
         )}
         <h3 className={`slide__title slide__title--${titleSize(card.title)}`}>{card.title}</h3>
+        {clip?.type === 'video' && <Ratings ratings={clip.ratings} />}
       </div>
       <div className="slide__foot">
         <span>{cover?.credit ? `📷 ${cover.credit}` : `@${field.handle}`}</span>

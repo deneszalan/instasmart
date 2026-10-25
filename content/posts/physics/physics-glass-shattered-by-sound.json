@@ -19,7 +19,8 @@
       "caption": "Two high-speed camera views of the same wine glass: as a loudspeaker plays at it, the glass trembles for a few seconds, then bursts apart.",
       "credit": "Trevor Cox · CC BY 3.0 · excerpt",
       "href": "https://commons.wikimedia.org/wiki/File:Breaking_glass_with_sound.webm",
-      "music": "“Evening of Chaos” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Evening of Chaos” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 5, "shock": 5 }
     },
     {
       "type": "reveal",

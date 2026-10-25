@@ -19,7 +19,8 @@
       "caption": "A cat, a horse and a triple spiral drawn with more and more Fourier terms: rough blobs at first, then sharper and sharper outlines as circles are added.",
       "credit": "Gpeyre · CC BY-SA 4.0 · excerpt",
       "href": "https://commons.wikimedia.org/wiki/File:Fourier_Approximation_of_Curves.webm",
-      "music": "“Envision” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Envision” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 8, "shock": 7 }
     },
     {
       "type": "flow",

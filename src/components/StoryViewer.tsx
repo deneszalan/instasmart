@@ -10,6 +10,7 @@ import { lockScroll } from '../lib/scrollLock';
 import { localDay, useStore } from '../state/store';
 import { Avatar } from './Avatar';
 import { InteractiveSlide } from './Interactive';
+import { Ratings } from './Ratings';
 import { cardGradient, gradientStyle } from './Media';
 import { inline } from '../lib/markdown';
 import { firstVideo } from '../lib/visual';
@@ -264,7 +265,10 @@ export function StoryViewer({ stories, startIndex, onClose }: StoryViewerProps) 
                 onEnded={next}
                 onForcedMute={forcedMute}
               />
-              <p className="story__video-title">{card.title}</p>
+              <div className="story__video-foot">
+                <p className="story__video-title">{card.title}</p>
+                <Ratings ratings={clip.ratings} />
+              </div>
             </>
           ) : timed ? (
             <>

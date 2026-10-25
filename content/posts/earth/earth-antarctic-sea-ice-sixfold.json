@@ -19,7 +19,8 @@
       "caption": "Satellite data from 20 February to 19 September 2024, sped up 2×, so about 11 days pass every second. Sea ice spreads out from the coast until it rings the continent.",
       "credit": "NASA Scientific Visualization Studio · Public domain · excerpt, sped up 2×",
       "href": "https://svs.gsfc.nasa.gov/5391/",
-      "music": "“The Snow Queen” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“The Snow Queen” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 2, "shock": 5 }
     },
     {
       "type": "scale",

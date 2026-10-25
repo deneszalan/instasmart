@@ -19,7 +19,8 @@
       "caption": "Ocean surface currents computed from a model of 2005: the Gulf Stream is the bright ribbon pouring past Florida and up the coast before snaking out into the Atlantic.",
       "credit": "NASA Scientific Visualization Studio · Public domain · excerpt",
       "href": "https://svs.gsfc.nasa.gov/3827/",
-      "music": "“Ebbs and Flows” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Ebbs and Flows” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 3, "shock": 6 }
     },
     {
       "type": "scale",

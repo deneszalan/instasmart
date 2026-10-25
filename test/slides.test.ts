@@ -64,7 +64,7 @@ describe('visual and puzzle slides', () => {
 });
 
 describe('video slides', () => {
-  const clip = { type: 'video', src: 'a.mp4', poster: 'a.jpg', alt: 'A clip.', credit: 'NASA · Public domain · excerpt' } as const;
+  const clip = { type: 'video', src: 'a.mp4', poster: 'a.jpg', alt: 'A clip.', credit: 'NASA · Public domain · excerpt', ratings: { complexity: 2, shock: 4 } } as const;
   const animation = { ...clip, src: 'b.mp4', poster: 'b.jpg', animation: true, credit: 'Reckon · original animation' } as const;
 
   it('tell footage from animated explainers', () => {

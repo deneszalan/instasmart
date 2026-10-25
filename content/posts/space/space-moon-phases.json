@@ -82,7 +82,8 @@
           "start": 74.93,
           "end": 80.27
         }
-      ]
+      ],
+      "ratings": { "complexity": 5, "shock": 7 }
     },
     {
       "type": "flow",

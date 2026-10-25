@@ -19,7 +19,8 @@
       "caption": "Hubble images of supernova SN 2018gv in the galaxy NGC 2525, February 2018 to February 2019, at half speed: it outshines the galaxy’s brightest stars, then fades away.",
       "credit": "ESA/Hubble & NASA, M. Kornmesser, M. Zamani, A. Riess and the SH0ES team · CC BY 4.0 · excerpt, slowed to half speed",
       "href": "https://esahubble.org/videos/heic2018a/",
-      "music": "“Spellbound” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Spellbound” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 7, "shock": 5 }
     },
     {
       "type": "flow",

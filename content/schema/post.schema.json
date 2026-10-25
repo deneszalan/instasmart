@@ -1434,6 +1434,29 @@
                   ],
                   "additionalProperties": false
                 }
+              },
+              "ratings": {
+                "type": "object",
+                "properties": {
+                  "complexity": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 10,
+                    "description": "How much a viewer must know and keep in mind to follow it, 1–10."
+                  },
+                  "shock": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 10,
+                    "description": "Shock factor: how far the result is from what most people expect beforehand, 1–10."
+                  }
+                },
+                "required": [
+                  "complexity",
+                  "shock"
+                ],
+                "additionalProperties": false,
+                "description": "The short's ratings, shown with it in the app. Score them with the scales in \"Rating a short\" in content/README.md."
               }
             },
             "required": [
@@ -1441,7 +1464,8 @@
               "src",
               "poster",
               "alt",
-              "credit"
+              "credit",
+              "ratings"
             ],
             "additionalProperties": false
           }

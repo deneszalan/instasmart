@@ -19,7 +19,8 @@
       "caption": "A USGS computer model of the 1989 Loma Prieta earthquake: colours show how hard the ground shakes as seismic waves spread from the Santa Cruz Mountains, reaching San Francisco in about 20 seconds.",
       "credit": "USGS · Public domain · excerpt",
       "href": "https://commons.wikimedia.org/wiki/File:Lp1989plan_hires.webm",
-      "music": "“Drums of the Deep” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Drums of the Deep” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 4, "shock": 5 }
     },
     {
       "type": "spectrum",

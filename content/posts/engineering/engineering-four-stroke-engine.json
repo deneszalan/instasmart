@@ -60,7 +60,8 @@
           "start": 59.6,
           "end": 65.73
         }
-      ]
+      ],
+      "ratings": { "complexity": 6, "shock": 4 }
     },
     {
       "type": "reveal",

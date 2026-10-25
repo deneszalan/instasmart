@@ -379,6 +379,7 @@ async function main(): Promise<number> {
       credit: 'Reckon · original animation',
       ...(values.music ? { music: '<“Title” artist (source) · licence>' } : {}),
       ...(steps.length >= 2 ? { steps } : {}),
+      ratings: { complexity: '<1–10, see "Rating a short" in content/README.md>', shock: '<1–10>' },
     };
     console.log(`\nSlide to add to the post:\n${JSON.stringify(slide, null, 2)}`);
     return 0;

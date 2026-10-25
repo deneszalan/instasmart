@@ -19,7 +19,8 @@
       "caption": "Each bead bounces at random off the pegs, yet the columns build the same bell shape every time: tall in the middle, short at the edges.",
       "credit": "Rodrigo.Argenton (video), Estes Objethos Atelier (exhibit), Matemateca IME-USP · CC BY-SA 4.0 · excerpt",
       "href": "https://commons.wikimedia.org/wiki/File:Galton_box.webm",
-      "music": "“Goblin Tinker Soldier Spy” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Goblin Tinker Soldier Spy” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 5, "shock": 4 }
     },
     {
       "type": "estimate",

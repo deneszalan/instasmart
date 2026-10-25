@@ -19,7 +19,8 @@
       "caption": "A harmonograph in Matemateca, the maths collection of the University of São Paulo. Paper on a board hung from chains swings under a pen, and as the swings die away the loops close in on the centre.",
       "credit": "Matemateca (IME/USP), Rodrigo Tetsuo Argenton · CC BY-SA 4.0 · excerpt",
       "href": "https://commons.wikimedia.org/wiki/File:Harmon%C3%B3grafo_02.webm",
-      "music": "“Canon in D for Two Harps” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Canon in D for Two Harps” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 5, "shock": 3 }
     },
     {
       "type": "reveal",

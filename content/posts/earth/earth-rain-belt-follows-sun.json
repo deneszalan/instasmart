@@ -19,7 +19,8 @@
       "caption": "Average rain for each day of the year from satellite data, 2001 to 2022, sped up 2× so a year takes 17 seconds, starting in January. Yellow and red mark the heaviest rain.",
       "credit": "NASA Scientific Visualization Studio · Public domain · excerpt, sped up 2×",
       "href": "https://svs.gsfc.nasa.gov/5254/",
-      "music": "“Wind of the Rainforest” Kevin MacLeod (incompetech.com) · CC BY 4.0"
+      "music": "“Wind of the Rainforest” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": { "complexity": 5, "shock": 3 }
     },
     {
       "type": "reveal",

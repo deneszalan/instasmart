@@ -103,7 +103,7 @@ Each slide is a 4:5 card on the post's gradient. Pick the type that fits the ide
 | `higher` | Higher or lower, one bar at a time | `{ "type": "higher", "heading": "≤80", "items": [{ "label": "≤28", "value": 2 }, … 3–5 in play order], "unit"?, "note"?, "explanation"?: "≤160" }` |
 | `fill` | Guess a share by lighting up icons | `{ "type": "fill", "question": "≤120", "icon": "🧍", "total": 10, "answer": 3, "explanation": "≤200" }` |
 | `place` | Put a value on a spectrum, with known points as clues | `{ "type": "place", "question": "≤120", "min": 0, "max": 140, "step"?: 1, "answer": 110, "unit"?: "dB", "ends"?: ["Silence", "Pain"], "hints"?: [{ "label": "≤14", "value": 30 }, … ≤4], "format"?: "year", "colors"?, "explanation": "≤200" }` |
-| `video` | A short clip of something moving: a launch, a collapse, an animal | `{ "type": "video", "src": "launch.mp4", "poster": "launch.jpg", "alt": "…", "caption"?: "≤200", "fit"?: "contain" \| "cover", "credit": "≤120", "href"?: "https://…", "music"?: "≤160" }` |
+| `video` | A short clip of something moving: a launch, a collapse, an animal | `{ "type": "video", "src": "launch.mp4", "poster": "launch.jpg", "alt": "…", "caption"?: "≤200", "fit"?: "contain" \| "cover", "credit": "≤120", "href"?: "https://…", "music"?: "≤160", "ratings": { "complexity": 1–10, "shock": 1–10 } }` |
 | `image` | A photo or a diagram | `{ "type": "image", "src": "orbit.svg", "alt": "…", "caption"?: "≤200", "fit"?: "cover" \| "contain", "credit"?: "≤120" }` |
 
 Use `"fit": "cover"` for photos (they fill the card) and `"fit": "contain"` for diagrams (the whole image shows on the gradient).
@@ -177,6 +177,18 @@ It cuts the source between `--start` and `--end`, re-encodes it for phones (with
 **Animated explainers: `npm run explainer`.** Instead of footage, a slide can show an animation drawn by code that walks through the post's idea, with captions and music. Each one is a scene file in `explainers/`; see `explainers/README.md`. Mark the slide `"animation": true`, so Explore lists the post under "Animation" rather than "Video", and credit it `"Reckon · original animation"`.
 
 **Steps.** A clip that explains in stages can list them as `"steps": [{ "start": 0.6, "end": 4.5 }, …]`, in seconds, in order (2 to 24 of them). The seek bar then shows a mark at each step, the reader gets previous and next step buttons, and can choose "Pause after each step" to read at their own pace. `npm run explainer` writes an explainer's steps from its captions, so you rarely type them; for footage, add them only when the clip has distinct stages. Readers can tap the left or right edge of the clip to go back or forward a step. While the clip plays, a jump goes to the step's start and plays on; while it's paused, it stays paused and shows the step finished, 0.3 s before its end (a step's caption only appears as it plays). So that jumping and dragging show the picture straight away, a clip with steps needs a keyframe 0.3 s before each step ends, one within 1 s before each step starts, and keyframes at most 4 s apart; `npm run explainer` encodes it that way, and `npm run content` checks it.
+
+**Rating a short.** Every `video` slide carries `"ratings": { "complexity": 5, "shock": 7 }`, two whole numbers from 1 to 10 that the app shows with the short. Score the post as a whole, as a viewer meets it, and use the scales below, so that the same post would get the same scores from anyone.
+
+| Score | Complexity: how much the viewer must know and keep in mind | Shock factor: how far the result is from what most people expect |
+| --- | --- | --- |
+| 1–2 | Nothing to follow: you watch it happen (a rover driving on the Moon) | What anyone would expect; good to watch, not surprising |
+| 3–4 | One everyday idea with a simple cause, or one term or number to keep in mind (sound travels about 343 m a second) | A neat fact or an unexpected detail that is easy to accept (a geyser named every geyser) |
+| 5–6 | A few linked steps or a mechanism with parts, arithmetic at most (how locks lift ships; Moon phases) | Changes how you see something familiar, the kind of fact people repeat (a fridge pumps heat out rather than making cold) |
+| 7–8 | School maths or physics needed: probability, waves, energy levels, a formula to follow (the birthday problem; eddy currents) | Contradicts a common belief or a strong intuition (a magnet falling slowly through a non-magnetic tube) |
+| 9–10 | Advanced: abstract reasoning beyond school (the Mandelbrot set's complex numbers) | Seems impossible at first, and 10 still feels wrong after the explanation (Monty Hall; single particles building wave stripes) |
+
+Rate the idea, not the production: a beautiful clip of something expected is still a low shock factor. Most posts are chosen for surprise, so shock scores of 1–2 are rare; save 9 and 10 for the few results most people would bet against.
 
 Contributors without ffmpeg can upload a finished MP4 through the MCP server's `media` list like an image (`base64`); the same checks apply.
 

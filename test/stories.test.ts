@@ -41,7 +41,7 @@ describe('buildStories', () => {
   it('leads each field story with the field\'s video posts, like Shorts', () => {
     const clip = (n: number): KnowledgeCard => ({
       ...card('earth', n),
-      slides: [{ type: 'video', src: `c${n}.mp4`, poster: `c${n}.jpg`, alt: 'A clip.', credit: 'NASA · Public domain · excerpt' }],
+      slides: [{ type: 'video', src: `c${n}.mp4`, poster: `c${n}.jpg`, alt: 'A clip.', credit: 'NASA · Public domain · excerpt', ratings: { complexity: 2, shock: 4 } }],
     });
     const earth = [card('earth', 1), clip(2), card('earth', 3), clip(4), card('earth', 5), card('earth', 6)];
     const story = buildStories(earth, new Set(), '2026-10-18').find((s) => s.id === 'earth')!;

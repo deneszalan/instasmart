@@ -74,7 +74,8 @@
           "start": 74,
           "end": 80.67
         }
-      ]
+      ],
+      "ratings": { "complexity": 7, "shock": 4 }
     },
     {
       "type": "quiz",
