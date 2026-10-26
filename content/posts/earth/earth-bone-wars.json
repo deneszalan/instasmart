@@ -184,26 +184,27 @@
       "caption": "Final score: Marsh 80 new dinosaurs, Cope 56. Both spend their fortunes. Marsh dies with $186 in the bank.",
       "bubbles": [
         {
-          "text": "Mine had more papers.",
+          "text": "I wrote fourteen hundred papers!",
           "speaker": "Edward Drinker Cope",
-          "x": 30.0,
-          "y": 38.5,
-          "width": 32,
+          "x": 34,
+          "y": 36,
+          "width": 40,
           "tail": {
-            "x": 30.7,
+            "x": 32.6,
             "y": 46.6
           }
         },
         {
-          "text": "Eighty.",
+          "text": "I named eighty dinosaurs!",
           "speaker": "Othniel Charles Marsh",
-          "x": 72,
-          "y": 36,
-          "width": 24,
+          "x": 68.5,
+          "y": 37.0,
+          "width": 38,
           "tail": {
-            "x": 70.7,
+            "x": 68.9,
             "y": 45.3
-          }
+          },
+          "timing": "together"
         }
       ]
     },

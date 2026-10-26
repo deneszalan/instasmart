@@ -136,13 +136,29 @@
       "caption": "In Parliament, one MP asks whether medals will be struck. Another says they should go to the emus: they've won every round.",
       "bubbles": [
         {
+          "text": "HA HA HA!",
+          "speaker": "Members of Parliament",
+          "x": 30,
+          "y": 44,
+          "width": 30,
+          "kind": "laugh"
+        },
+        {
+          "text": "HO HO HO!",
+          "speaker": "Members of Parliament",
+          "x": 70,
+          "y": 44,
+          "width": 30,
+          "kind": "laugh"
+        },
+        {
           "text": "Order, please. This is a serious matter.",
           "speaker": "A minister",
           "x": 76,
           "y": 64,
           "width": 44,
           "tail": {
-            "x": 55.5,
+            "x": 55.4,
             "y": 80.0
           }
         }

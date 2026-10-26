@@ -129,26 +129,27 @@
       "caption": "March 1839, aboard a British frigate. With Britain mediating, Mexico agrees to pay the 600,000 pesos.",
       "bubbles": [
         {
-          "text": "Splendid. Cake, anyone?",
+          "text": "So Mexico pays the full six hundred thousand—",
           "speaker": "A British diplomat",
-          "x": 48.5,
-          "y": 38.0,
-          "width": 30,
+          "x": 50,
+          "y": 36,
+          "width": 44,
           "tail": {
-            "x": 50.6,
+            "x": 51.6,
             "y": 48.2
           }
         },
         {
           "text": "In instalments.",
           "speaker": "A Mexican minister",
-          "x": 81.5,
-          "y": 39.0,
-          "width": 34,
+          "x": 82.5,
+          "y": 36,
+          "width": 30,
           "tail": {
-            "x": 79.7,
+            "x": 79.9,
             "y": 47.4
-          }
+          },
+          "timing": "interrupts"
         }
       ]
     },

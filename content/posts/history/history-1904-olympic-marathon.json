@@ -158,13 +158,13 @@
       "caption": "Then someone mentions the car. He's banned for life. The ban lasts six months, and he wins Boston in 1905.",
       "bubbles": [
         {
-          "text": "You came by car!",
+          "text": "You rode eleven miles in a—",
           "speaker": "An official",
-          "x": 69.0,
-          "y": 36.0,
-          "width": 34,
+          "x": 70,
+          "y": 34,
+          "width": 40,
           "tail": {
-            "x": 69.6,
+            "x": 70.2,
             "y": 44.0
           },
           "kind": "shout"
@@ -172,13 +172,14 @@
         {
           "text": "Did I say I ran all of it?",
           "speaker": "Fred Lorz",
-          "x": 28.5,
+          "x": 36.5,
           "y": 37.0,
           "width": 36,
           "tail": {
-            "x": 29.9,
+            "x": 34.1,
             "y": 45.1
-          }
+          },
+          "timing": "interrupts"
         }
       ]
     },

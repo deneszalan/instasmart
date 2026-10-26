@@ -56,6 +56,24 @@ describe('comic panels', () => {
     expect(problems({ bubbles: [{ text, x: 50, y: 50, width: 26 }] })[0]).toMatch(/more than 6 lines/);
   });
 
+  it('let a bubble interrupt or talk over the one before it, overlapping only its edge', () => {
+    const cut = { text: 'Have your men suffered from the—', x: 30, y: 40, width: 40 };
+    const cutIn = { text: 'Never!', x: 56, y: 49, width: 26, timing: 'interrupts' };
+    expect(problems({ bubbles: [cut, cutIn] })).toEqual([]);
+    expect(problems({ bubbles: [{ ...cut, text: 'Have your men suffered' }, cutIn] })).toEqual(['slides[0].bubbles[0].text: end this line with a dash (—), where bubble 2 cuts it off']);
+    expect(problems({ bubbles: [cut, { ...cutIn, timing: 'together' }] })).toEqual([]);
+    expect(problems({ bubbles: [cut, { ...cutIn, x: 80, y: 80 }].map((b, i) => (i ? { ...b, timing: 'together' } : b)) })[0]).toMatch(/should overlap bubble 1/);
+    expect(problems({ bubbles: [cut, { ...cutIn, x: 40, y: 44 }] })[0]).toMatch(/covers words in bubble 1/);
+    expect(problems({ bubbles: [{ ...cutIn, timing: 'together' }] })[0]).toMatch(/needs a bubble before it/);
+    // without timing, the same overlap is still an error
+    expect(problems({ bubbles: [cut, { ...cutIn, timing: undefined }] })).toEqual(['slides[0].bubbles[1]: overlaps bubble 1']);
+  });
+
+  it('letter laughter without a tail', () => {
+    expect(problems({ bubbles: [{ text: 'Ha! Ha! Ha!', x: 50, y: 50, width: 30, kind: 'laugh' }] })).toEqual([]);
+    expect(problems({ bubbles: [{ text: 'Ha! Ha!', x: 50, y: 50, width: 30, kind: 'laugh', tail: { x: 50, y: 70 } }] })[0]).toMatch(/laughter has no tail/);
+  });
+
   it('estimate boxes that grow with the words', () => {
     const short = bubbleBox('Hi', 50, 50, 40), long = bubbleBox('A much longer line that has to wrap at least once', 50, 50, 40);
     expect(long.bottom - long.top).toBeGreaterThan(short.bottom - short.top);

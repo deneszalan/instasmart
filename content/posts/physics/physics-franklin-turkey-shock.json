@@ -108,26 +108,27 @@
       "caption": "He chats away to the company, holding a chain to the jars in one hand and reaching for the top wires with the other.",
       "bubbles": [
         {
-          "text": "Ha! Quite right. Now, just one moment...",
-          "speaker": "Benjamin Franklin",
-          "x": 24,
-          "y": 32,
-          "width": 40,
+          "text": "...and then my aunt said the vicar had—",
+          "speaker": "A guest",
+          "x": 66,
+          "y": 30,
+          "width": 44,
           "tail": {
-            "x": 31.3,
-            "y": 43.7
+            "x": 69.0,
+            "y": 45.9
           }
         },
         {
-          "text": "...and then my aunt said...",
-          "speaker": "A guest",
-          "x": 75.0,
-          "y": 38.0,
+          "text": "Ha! Quite right!",
+          "speaker": "Benjamin Franklin",
+          "x": 26.5,
+          "y": 34.0,
           "width": 40,
           "tail": {
-            "x": 72.8,
-            "y": 45.9
-          }
+            "x": 31.3,
+            "y": 42.8
+          },
+          "timing": "interrupts"
         }
       ]
     },

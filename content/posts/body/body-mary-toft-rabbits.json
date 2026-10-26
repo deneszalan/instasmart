@@ -195,6 +195,14 @@
             "x": 57.1,
             "y": 51.7
           }
+        },
+        {
+          "text": "HA! HA! HA!",
+          "speaker": "The crowd",
+          "x": 20,
+          "y": 47,
+          "width": 34,
+          "kind": "laugh"
         }
       ]
     },

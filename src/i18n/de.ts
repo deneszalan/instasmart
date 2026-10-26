@@ -143,6 +143,8 @@ export const de: Record<string, string> = {
   'Swipe to watch →': 'Wischen zum Ansehen →',
   'Swipe to read →': 'Wischen zum Lesen →',
   'Read on →': 'Weiterlesen →',
+  interrupting: 'unterbricht',
+  'at the same time': 'gleichzeitig',
   'Comic · 1 panel': 'Comic · 1 Bild',
   '{name}: “{text}”': '{name}: „{text}“',
   '“{text}”': '„{text}“',

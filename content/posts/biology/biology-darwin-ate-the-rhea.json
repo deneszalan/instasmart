@@ -49,14 +49,23 @@
         {
           "text": "We've seen every sort of animal caught, but never a man caught by himself!",
           "speaker": "A gaucho",
-          "x": 70.5,
-          "y": 35.5,
-          "width": 50,
+          "x": 64,
+          "y": 33.5,
+          "width": 52,
           "tail": {
-            "x": 75.4,
-            "y": 47.5
+            "x": 73.3,
+            "y": 48.1
           },
           "kind": "shout"
+        },
+        {
+          "text": "HA HA HA!",
+          "speaker": "The gauchos",
+          "x": 61.0,
+          "y": 47.5,
+          "width": 26,
+          "kind": "laugh",
+          "timing": "together"
         }
       ]
     },

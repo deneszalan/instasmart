@@ -156,7 +156,7 @@
           "text": "You're welcome, everybody.",
           "speaker": "Dorothy Martin",
           "x": 50.5,
-          "y": 36.0,
+          "y": 36,
           "width": 36,
           "tail": {
             "x": 53.2,
@@ -166,13 +166,14 @@
         {
           "text": "We did it!",
           "speaker": "A believer",
-          "x": 85.5,
+          "x": 77.0,
           "y": 42.0,
           "width": 26,
           "tail": {
-            "x": 86.5,
-            "y": 50.3
-          }
+            "x": 83.9,
+            "y": 52.9
+          },
+          "timing": "together"
         }
       ]
     },

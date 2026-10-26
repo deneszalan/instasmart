@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react';
 import type { Slide } from '../types';
-import { COMIC } from '../../shared/comic.ts';
+import { COMIC, LAUGH_SCALE } from '../../shared/comic.ts';
 import { t } from '../i18n';
 
 type ComicSlide = Extract<Slide, { type: 'comic' }>;
@@ -45,38 +45,71 @@ const LETTERING = {
   '--cap-pad-y': COMIC.captionPadY,
   '--cap-inset': COMIC.captionInset,
   '--cap-width': COMIC.captionWidth,
+  '--laugh': LAUGH_SCALE,
 } as CSSProperties;
 
-const place = (b: Bubble): CSSProperties => ({ left: `${b.x}%`, top: `${b.y}%`, width: `${b.width ?? COMIC.bubbleWidth}%` });
+/** An interrupting bubble leans into the line it cuts off. */
+function tilt(b: Bubble, before: Bubble | undefined): number {
+  if (b.timing !== 'interrupts' || !before) return 0;
+  return b.x >= before.x ? 3 : -3;
+}
+
+const place = (b: Bubble, deg = 0): CSSProperties =>
+  ({ left: `${b.x}%`, top: `${b.y}%`, width: `${b.width ?? COMIC.bubbleWidth}%`, ...(deg ? { '--tilt': `${deg}deg` } : {}) }) as CSSProperties;
+
+/** What a screen reader says before a bubble's words: who, and whether they cut in or talk over the line before. */
+function voice(b: Bubble): string | null {
+  const when = b.timing === 'interrupts' ? t('interrupting') : b.timing === 'together' ? t('at the same time') : null;
+  if (!b.speaker && !when) return null;
+  return `${[b.speaker, when && `(${when})`].filter(Boolean).join(' ')}: `;
+}
+
+/** Laughter bounces: every word sits at its own angle. */
+const Laugh = ({ text }: { text: string }) => (
+  <>
+    {text
+      .split(/\s+/)
+      .filter(Boolean)
+      .map((w, i) => (
+        <span key={i} className="comic__laugh-word">
+          {w}
+        </span>
+      ))}
+  </>
+);
 
 /**
- * One panel of a comic: the art, the narrator's caption box and the bubbles lettered on top. The bubbles are drawn
- * twice, as one white outlined shape with their tails (hidden from screen readers) and as the words above it.
+ * One panel of a comic: the art, the narrator's caption box and the bubbles lettered on top. Each bubble is drawn
+ * twice, as a white outlined shape with its tail (hidden from screen readers) and as the words above it. Later
+ * bubbles sit on top of earlier ones, so a bubble that interrupts or talks over another covers its edge.
  */
 export function ComicSlideView({ slide, next }: { slide: ComicSlide; next: 'comic' | 'other' | null }) {
   const bubbles = slide.bubbles ?? [];
+  const tilts = bubbles.map((b, i) => tilt(b, bubbles[i - 1]));
   return (
     <div className="slide slide--comic">
       <figure className="comic" style={LETTERING}>
         <img className="comic__art" src={slide.src} alt={slide.alt} loading="lazy" decoding="async" />
         <div className="comic__shapes" aria-hidden="true">
-          <svg className="comic__tails" viewBox="0 0 100 100" preserveAspectRatio="none">
-            {bubbles.map((b, i) => (
-              <Tail key={i} bubble={b} />
-            ))}
-          </svg>
-          {bubbles.map((b, i) => (
-            <div key={i} className={`comic__bubble comic__bubble--${b.kind ?? 'speech'}`} style={place(b)}>
-              {b.text}
-            </div>
-          ))}
+          {bubbles.map((b, i) =>
+            b.kind === 'laugh' ? null : (
+              <div key={i} className="comic__shape" style={{ zIndex: 2 * i + 1 }}>
+                <svg className="comic__tails" viewBox="0 0 100 100" preserveAspectRatio="none">
+                  <Tail bubble={b} />
+                </svg>
+                <div className={`comic__bubble comic__bubble--${b.kind ?? 'speech'}`} style={place(b, tilts[i])}>
+                  {b.text}
+                </div>
+              </div>
+            ),
+          )}
         </div>
         <figcaption className="comic__words">
           {slide.caption && <p className={`comic__caption comic__caption--${slide.captionAt ?? 'top'}`}>{slide.caption}</p>}
           {bubbles.map((b, i) => (
-            <p key={i} className={`comic__bubble comic__bubble--${b.kind ?? 'speech'}`} style={place(b)}>
-              {b.speaker && <span className="sr-only">{b.speaker}: </span>}
-              {b.text}
+            <p key={i} className={`comic__bubble comic__bubble--${b.kind ?? 'speech'}`} style={{ ...place(b, tilts[i]), zIndex: 2 * i + 2 }}>
+              {voice(b) && <span className="sr-only">{voice(b)}</span>}
+              {b.kind === 'laugh' ? <Laugh text={b.text} /> : b.text}
             </p>
           ))}
         </figcaption>
