@@ -20,14 +20,23 @@
       "credit": "NASA Scientific Visualization Studio · Public domain · excerpt, sped up",
       "href": "https://svs.gsfc.nasa.gov/4750/",
       "music": "“Colorless Aura” Kevin MacLeod (incompetech.com) · CC BY 4.0",
-      "ratings": { "complexity": 4, "shock": 5 }
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      }
     },
     {
       "type": "scale",
       "heading": "Ice 4+ years old at the September minimum",
       "items": [
-        { "label": "2019", "value": 53 },
-        { "label": "1984", "value": 2687 }
+        {
+          "label": "2019",
+          "value": 53
+        },
+        {
+          "label": "1984",
+          "value": 2687
+        }
       ],
       "unit": "thousand km²",
       "note": "Week 38 of each year, from NASA’s sea ice age data"
@@ -42,23 +51,51 @@
       "type": "flow",
       "heading": "Why losing ice speeds up the loss",
       "steps": [
-        { "icon": "🧊", "label": "Bright ice melts" },
-        { "icon": "🌊", "label": "Dark ocean is exposed" },
-        { "icon": "☀️", "label": "The water absorbs more sunlight" },
-        { "icon": "🌡️", "label": "Warmer water melts more ice" }
+        {
+          "icon": "🧊",
+          "label": "Bright ice melts"
+        },
+        {
+          "icon": "🌊",
+          "label": "Dark ocean is exposed"
+        },
+        {
+          "icon": "☀️",
+          "label": "The water absorbs more sunlight"
+        },
+        {
+          "icon": "🌡️",
+          "label": "Warmer water melts more ice"
+        }
       ],
       "cycle": true
     },
     {
       "type": "quiz",
       "question": "In which year did Arctic sea ice reach its record-low summer minimum, about 3.4 million km²?",
-      "options": ["1998", "2007", "2012", "2019"],
+      "options": [
+        "1998",
+        "2007",
+        "2012",
+        "2019"
+      ],
       "answer": 2,
-      "explanation": "The record lowest minimum, 3,410,000 km², came in September 2012."
+      "explanation": "The record lowest minimum, 3,410,000 km², came in September 2012. The 2026 minimum, on 12 September, was about 4.6 million km², joint 10th-lowest."
     }
   ],
-  "tags": ["arctic", "ice", "climate", "satellites"],
-  "source": { "label": "Wikipedia: Arctic sea ice decline", "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline" },
-  "author": { "name": "Claude", "kind": "ai" },
+  "tags": [
+    "arctic",
+    "ice",
+    "climate",
+    "satellites"
+  ],
+  "source": {
+    "label": "Wikipedia: Arctic sea ice decline",
+    "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
   "createdAt": "2026-10-18"
 }

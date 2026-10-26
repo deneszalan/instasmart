@@ -70,6 +70,11 @@ import { ruleHolds } from '../src/labs/philosophy/barber-paradox';
 import { SHADOWS, shadowScale } from '../src/labs/philosophy/plato-allegory-of-the-cave';
 import { PLANKS } from '../src/labs/philosophy/ship-of-theseus';
 import { catchUp, steps } from '../src/labs/philosophy/zeno-achilles-tortoise';
+import { doublingTime, formula, realPopulation } from '../src/labs/math/doomsday-13-november-2026';
+import { MIDTERMS, record } from '../src/labs/politics/us-midterm-penalty';
+import { problems, ROWS_MAP, seats } from '../src/labs/politics/redistricting-gerrymander';
+import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold';
+import { LAYERS as PARTY_LAYERS, membersPerSeat } from '../src/labs/politics/china-party-pyramid';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -525,5 +530,47 @@ describe('lab maths', () => {
     expect(t.slice(0, 3)).toEqual([10, 1, 0.1].map((x) => expect.closeTo(x, 9)));
     expect(t.reduce((a, b) => a + b, 0)).toBeCloseTo(catchUp(100, 10, 1), 9);
     expect(catchUp(100, 10, 1)).toBeCloseTo(11.11, 2);
+  });
+
+  it('doomsday: the 1960 formula fits 1950, says 27 billion for 2020, and doubles in under a year from late 2024', () => {
+    expect(formula(1950)).toBeCloseTo(2.4, 1);
+    expect(Math.round(formula(2020))).toBe(27);
+    expect(realPopulation(2020)).toBe(7.9);
+    expect(doublingTime(1960)).toBeCloseTo(33.7, 1);
+    expect(doublingTime(2024.8)).toBeGreaterThan(1);
+    expect(doublingTime(2024.9)).toBeLessThan(1);
+  });
+
+  it('midterms: since 1946 the president’s party lost House seats in 18 of 20, about 26 on average, and Senate seats in 13', () => {
+    expect(MIDTERMS).toHaveLength(20);
+    expect(record('house').losses).toBe(18);
+    expect(record('house').average).toBeCloseTo(-25.65, 2);
+    expect(record('senate').losses).toBe(13);
+    expect(MIDTERMS.filter((m) => m.house > 0).map((m) => m.year)).toEqual([1998, 2002]);
+  });
+
+  it('gerrymander: rows give purple 5–0; column pairs, a valid map, give orange 3 of 5 with 40% of the votes', () => {
+    expect(problems(ROWS_MAP)).toEqual([]);
+    expect(seats(ROWS_MAP).purple).toBe(5);
+    const pairs = ROWS_MAP.map((_, i) => Math.floor((i % 10) / 2));
+    expect(problems(pairs)).toEqual([]);
+    expect(seats(pairs).orange).toBe(3);
+    const broken = ROWS_MAP.map((d, i) => (i === 0 ? 4 : d));
+    expect(problems(broken)).toEqual([0, 4]);
+  });
+
+  it('threshold: at 3.25% the bloc with fewer votes wins 63 seats; at 2.5% it loses its majority; at 2% the other bloc has 61', () => {
+    expect(LISTS.reduce((n, l) => n + l.share, 0)).toBeCloseTo(100, 6);
+    for (const th of [1, 2, 3.25, 5]) expect(allocate(th).blue + allocate(th).gold).toBe(120);
+    expect(allocate(3.25)).toMatchObject({ blue: 63, gold: 57 });
+    expect(allocate(3.25).wasted).toBeCloseTo(8, 6);
+    expect(allocate(2.5).blue).toBeLessThan(61);
+    expect(allocate(2).gold).toBeGreaterThanOrEqual(61);
+  });
+
+  it('party pyramid: six layers; about 14 million members per Standing Committee seat', () => {
+    expect(PARTY_LAYERS.map((l) => l.people)).toEqual([96_000_000, 2296, 205, 24, 7, 1]);
+    expect(membersPerSeat(4) / 1e6).toBeCloseTo(13.7, 1);
+    expect(membersPerSeat(5)).toBe(96_000_000);
   });
 });

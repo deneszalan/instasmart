@@ -75,6 +75,11 @@ export const LABS = {
   'plato-allegory-of-the-cave': 'Name the things behind you from their shadows on the cave wall, then turn round to see what they were.',
   'ship-of-theseus': 'Replace all 38 planks of Theseus’s ship, rebuild the old ones into a second ship, and choose which is the original.',
   'zeno-achilles-tortoise': 'Step through Achilles’ catch-up steps, zooming in tenfold each time, and watch their times add up.',
+  'doomsday-13-november-2026': 'Slide the year towards 2026 and compare the 1960 doomsday formula with the real count; see how fast the formula doubles.',
+  'us-midterm-penalty': 'Tap through every US midterm since 1946, for the House or the Senate, and find when the president’s party gained seats.',
+  'redistricting-gerrymander': 'Paint five districts of ten voters on a grid of 30 purple and 20 orange voters, and try to make the minority win.',
+  'israel-electoral-threshold': 'Move the vote threshold for example party lists and watch seats move between two blocs, without a single vote changing.',
+  'china-party-pyramid': 'Climb the layers of China’s Communist Party, from 96 million members to one General Secretary, and see how many members each seat stands for.',
 } as const;
 
 export type LabId = keyof typeof LABS;

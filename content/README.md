@@ -266,3 +266,4 @@ This is a learning app. A wrong fact is worse than no post.
 8. **Write for a curious 16-year-old**: short sentences, concrete examples, no jargon without a quick explanation.
 9. **Never invent quotes, studies, statistics or images of real people.** Comics are the exception for quotes and images: see "Who says what" under "Comics".
 10. Plain text in the right fields: no markdown headings, no emoji inside the text, no hashtags in the body.
+11. **Politics posts explain how a system works, not who is right.** Use official figures (electoral commissions, parliaments, the UN), put contested claims in the mouth of whoever makes them, make no forecasts, avoid loaded labels, and date the news hook ("On 25 October 2026…"). No jokes about living politicians outside comics.
