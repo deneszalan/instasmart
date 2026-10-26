@@ -75,6 +75,7 @@ import { MIDTERMS, record } from '../src/labs/politics/us-midterm-penalty';
 import { problems, ROWS_MAP, seats } from '../src/labs/politics/redistricting-gerrymander';
 import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold';
 import { angleGap, fitAt, hitsOf, newEvent, SENSORS, THETA } from '../src/labs/physics/icecube-neutrino-nobel';
+import { simulate as optoRun } from '../src/labs/body/optogenetics-nobel';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -581,5 +582,14 @@ describe('lab maths', () => {
       expect(fitAt(hits, tr.angle + 180).rms).toBeGreaterThan(1000);
     }
     expect(angleGap(359, 2)).toBe(3);
+  });
+
+  it('optogenetics: 1 ms flashes are too short, 5 ms flashes fire once each, 20 ms fire repeatedly, and no gene means no signal', () => {
+    expect(optoRun(true, 1, 10).spikes).toHaveLength(0);
+    expect(optoRun(true, 5, 10).spikes).toHaveLength(10);
+    expect(optoRun(true, 5, 40).spikes).toHaveLength(40);
+    expect(optoRun(true, 20, 10).spikes.length).toBeGreaterThan(10);
+    expect(optoRun(false, 5, 10).spikes).toHaveLength(0);
+    expect(optoRun(false, 5, 10).flashes).toBe(10);
   });
 });

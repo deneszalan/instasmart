@@ -80,4 +80,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'redistricting-gerrymander': lazy(() => import('./politics/redistricting-gerrymander')),
   'israel-electoral-threshold': lazy(() => import('./politics/israel-electoral-threshold')),
   'icecube-neutrino-nobel': lazy(() => import('./physics/icecube-neutrino-nobel')),
+  'optogenetics-nobel': lazy(() => import('./body/optogenetics-nobel')),
 };

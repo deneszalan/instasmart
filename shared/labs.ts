@@ -80,6 +80,7 @@ export const LABS = {
   'redistricting-gerrymander': 'Paint five districts of ten voters on a grid of 30 purple and 20 orange voters, and try to make the minority win.',
   'israel-electoral-threshold': 'Move the vote threshold for example party lists and watch seats move between two blocs, without a single vote changing.',
   'icecube-neutrino-nobel': 'Read the hit times of a neutrino’s muon in a slice of IceCube and turn your track until it points the way the muon went.',
+  'optogenetics-nobel': 'Flash blue light at a nerve cell with and without the channelrhodopsin gene, and tune the flashes until it fires once for each.',
 } as const;
 
 export type LabId = keyof typeof LABS;
