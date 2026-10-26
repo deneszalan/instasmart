@@ -14,7 +14,20 @@
       "type": "comic",
       "src": "panel-1.jpg",
       "alt": "In a dark wooden observatory, Richard Carrington stands with a sheet of paper beside a brass telescope that projects the Sun's image, with a group of sunspots, onto a white screen.",
-      "caption": "Redhill, Surrey, 1 September 1859. Richard Carrington projects the Sun's image onto a screen and draws its sunspots."
+      "caption": "Redhill, Surrey, 1 September 1859. Richard Carrington projects the Sun's image onto a screen and draws its sunspots.",
+      "bubbles": [
+        {
+          "text": "Spot. Spot. Another spot.",
+          "speaker": "Richard Carrington",
+          "x": 30,
+          "y": 52,
+          "width": 32,
+          "tail": {
+            "x": 52.4,
+            "y": 66.8
+          }
+        }
+      ]
     },
     {
       "type": "comic",
@@ -26,7 +39,7 @@
       "type": "comic",
       "src": "panel-3.jpg",
       "alt": "Carrington hurries towards the bright open door of the observatory, pointing back; behind him the projected Sun still shows the bright spots.",
-      "caption": "He runs to call a witness. Back within 60 seconds, he finds it already fading. By 11:23 it is gone.",
+      "caption": "He runs to call someone to witness it. Back within 60 seconds, he is “mortified” to find it already fading. By 11:23 it is gone.",
       "bubbles": [
         {
           "text": "Quick! Come and see this!",
@@ -46,10 +59,10 @@
       "type": "comic",
       "src": "panel-4.jpg",
       "alt": "In a green-walled room in Highgate, a grey-bearded man stands by his telescope, its projected image of the Sun showing the same bright spots.",
-      "caption": "In Highgate, Richard Hodgson sees it too: “a very brilliant star of light”.",
+      "caption": "Luckily, in Highgate, Richard Hodgson sees it too: “a very brilliant star of light”. Carrington has a witness after all.",
       "bubbles": [
         {
-          "text": "Look at that!",
+          "text": "I say! Look at that!",
           "speaker": "Richard Hodgson",
           "x": 30,
           "y": 52,
@@ -71,11 +84,22 @@
           "text": "It's morning already! Get breakfast on!",
           "speaker": "A camper",
           "x": 30,
-          "y": 48,
+          "y": 40,
           "width": 40,
           "tail": {
-            "x": 31.8,
-            "y": 58.2
+            "x": 32.4,
+            "y": 58.1
+          }
+        },
+        {
+          "text": "Funny colour for a sunrise.",
+          "speaker": "Another camper",
+          "x": 76.0,
+          "y": 43.5,
+          "width": 32,
+          "tail": {
+            "x": 74.4,
+            "y": 53.8
           }
         }
       ]
@@ -87,7 +111,7 @@
       "caption": "Telegraph lines go haywire. Operators get shocks, and sparks fly from their equipment.",
       "bubbles": [
         {
-          "text": "Ow!",
+          "text": "Ow! Who is sending this?",
           "speaker": "An operator",
           "x": 60,
           "y": 50,
@@ -134,7 +158,7 @@
       "type": "comic",
       "src": "panel-8.jpg",
       "alt": "In space, a spacecraft with gold foil and blue solar panels watches the Sun, which throws out a glowing cloud of gas; Earth hangs small in the distance.",
-      "caption": "Carrington would not link his flare to the storm. Today we know such eruptions can hurl clouds of solar gas at Earth, so spacecraft keep watch."
+      "caption": "Carrington, a careful man, would not link his flare to the storm. It was linked, of course. Today spacecraft watch the Sun for eruptions like it."
     },
     {
       "type": "quiz",

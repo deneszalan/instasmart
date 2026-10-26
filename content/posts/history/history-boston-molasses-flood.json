@@ -84,10 +84,10 @@
       "type": "comic",
       "src": "panel-6.jpg",
       "alt": "A courtroom with tall windows. Behind the bench sits the auditor; a witness points at a torn steel plate from the tank.",
-      "caption": "The company blames a bomb. After years of hearings, the court's auditor rules in 1925: the tank was unsafe and the company is liable.",
+      "caption": "The company blames anarchists with a bomb. After years of hearings, the court's auditor rules in 1925: the tank was unsafe and the company is liable.",
       "bubbles": [
         {
-          "text": "It leaked from the start. They painted it brown to hide the leaks.",
+          "text": "It leaked from the start. Their fix? Paint it brown.",
           "speaker": "A witness",
           "x": 26,
           "y": 40,
@@ -103,10 +103,10 @@
       "type": "comic",
       "src": "panel-7.jpg",
       "alt": "An engineer points at a blueprint of a tank with dimension lines and a red stamp of approval.",
-      "caption": "The man in charge had no engineering training, and it was tested with only 6 inches of water. Later rules made engineers sign off on such plans.",
+      "caption": "The man in charge had no engineering training. The 50-foot tank was tested with 6 inches of water. Later rules made engineers sign off on such plans.",
       "bubbles": [
         {
-          "text": "From now on, an engineer signs off on the plans.",
+          "text": "From now on, a qualified engineer signs the plans. Novel idea.",
           "speaker": "An engineer",
           "x": 66,
           "y": 82,
@@ -122,7 +122,7 @@
       "type": "comic",
       "src": "panel-8.jpg",
       "alt": "A sunny park by the harbour with trees, and close up, a bronze plaque on a post.",
-      "caption": "Today the site is a park by the harbour, marked by a small plaque."
+      "caption": "Today the site is a park by the harbour, marked by a small plaque. No anarchist was ever found."
     },
     {
       "type": "quiz",
