@@ -15,6 +15,7 @@ export const FIELD_IDS = [
   'earth',
   'body',
   'engineering',
+  'politics',
   'literature',
 ] as const;
 
@@ -49,6 +50,7 @@ export const FIELDS: Field[] = [
   { id: 'earth', name: 'Earth', handle: 'planet.notes', emoji: '🌋', gradient: ['#155e75', '#15803d'], scope: 'Geology, geography, oceans, weather and climate' },
   { id: 'body', name: 'Human Body', handle: 'body.facts', emoji: '🫀', gradient: ['#991b1b', '#be123c'], scope: 'Anatomy, physiology and medicine (no medical advice)' },
   { id: 'engineering', name: 'Engineering', handle: 'how.it.works', emoji: '⚙️', gradient: ['#334155', '#b45309'], scope: 'How things work, inventions, structures, feats and failures' },
+  { id: 'politics', name: 'Politics', handle: 'civics.explained', emoji: '🗳️', gradient: ['#1e3a8a', '#9f1239'], scope: 'How elections, governments and international bodies work, explained neutrally' },
   { id: 'literature', name: 'Literature', handle: 'story.lines', emoji: '📜', gradient: ['#4c1d95', '#9f1239'], scope: 'Poems, stories, epics and the people who wrote them' },
 ];
 

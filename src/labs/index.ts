@@ -75,4 +75,6 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'plato-allegory-of-the-cave': lazy(() => import('./philosophy/plato-allegory-of-the-cave')),
   'ship-of-theseus': lazy(() => import('./philosophy/ship-of-theseus')),
   'zeno-achilles-tortoise': lazy(() => import('./philosophy/zeno-achilles-tortoise')),
+  'doomsday-13-november-2026': lazy(() => import('./math/doomsday-13-november-2026')),
+  'us-midterm-penalty': lazy(() => import('./politics/us-midterm-penalty')),
 };

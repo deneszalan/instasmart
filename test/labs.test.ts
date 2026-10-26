@@ -70,6 +70,8 @@ import { ruleHolds } from '../src/labs/philosophy/barber-paradox';
 import { SHADOWS, shadowScale } from '../src/labs/philosophy/plato-allegory-of-the-cave';
 import { PLANKS } from '../src/labs/philosophy/ship-of-theseus';
 import { catchUp, steps } from '../src/labs/philosophy/zeno-achilles-tortoise';
+import { doublingTime, formula, realPopulation } from '../src/labs/math/doomsday-13-november-2026';
+import { MIDTERMS, record } from '../src/labs/politics/us-midterm-penalty';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -525,5 +527,22 @@ describe('lab maths', () => {
     expect(t.slice(0, 3)).toEqual([10, 1, 0.1].map((x) => expect.closeTo(x, 9)));
     expect(t.reduce((a, b) => a + b, 0)).toBeCloseTo(catchUp(100, 10, 1), 9);
     expect(catchUp(100, 10, 1)).toBeCloseTo(11.11, 2);
+  });
+
+  it('doomsday: the 1960 formula fits 1950, says 27 billion for 2020, and doubles in under a year from late 2024', () => {
+    expect(formula(1950)).toBeCloseTo(2.4, 1);
+    expect(Math.round(formula(2020))).toBe(27);
+    expect(realPopulation(2020)).toBe(7.9);
+    expect(doublingTime(1960)).toBeCloseTo(33.7, 1);
+    expect(doublingTime(2024.8)).toBeGreaterThan(1);
+    expect(doublingTime(2024.9)).toBeLessThan(1);
+  });
+
+  it('midterms: since 1946 the president’s party lost House seats in 18 of 20, about 26 on average, and Senate seats in 13', () => {
+    expect(MIDTERMS).toHaveLength(20);
+    expect(record('house').losses).toBe(18);
+    expect(record('house').average).toBeCloseTo(-25.65, 2);
+    expect(record('senate').losses).toBe(13);
+    expect(MIDTERMS.filter((m) => m.house > 0).map((m) => m.year)).toEqual([1998, 2002]);
   });
 });

@@ -1,0 +1,173 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-doomsday-13-november-2026",
+  "field": "math",
+  "title": "A 1960 formula said world population would become infinite on Friday 13 November 2026",
+  "emoji": "♾️",
+  "body": "In November 1960 Heinz von Foerster, Patricia Mora and Lawrence Amiot of the University of Illinois published “Doomsday: Friday, 13 November, A.D. 2026” in *Science*. They fitted 24 estimates of world population, going back about 2,000 years, with a curve that grows faster than exponentially: roughly a constant divided by the time left until a fixed date, 2026.87, give or take 5.5 years. On such a curve population doubles every time the time left halves, so it reaches infinity on that date. It matched the past well, and real population kept pace until the early 1990s, but the growth rate had already peaked in the early 1960s as families got smaller. There are now about 8.3 billion people, and the [UN expects](https://www.un.org/en/global-issues/population) a peak of about 10.3 billion in the mid-2080s.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "In 2020 the world had about 7.9 billion people. How many did the 1960 formula predict for 2020?",
+      "min": 5,
+      "max": 50,
+      "step": 1,
+      "answer": 27,
+      "unit": "billion",
+      "explanation": "About 27 billion: 1.79 × 10¹¹ ÷ (2026.87 − 2020)^0.99. By then the curve was shooting towards its wall, while real growth had slowed for 60 years."
+    },
+    {
+      "type": "video",
+      "src": "doomsday.mp4",
+      "poster": "doomsday.jpg",
+      "alt": "Animation on a night-blue chart: a calendar shows Friday 13 November 2026. A 1960 curve runs through real population points, then races up a wall at late 2026, doubling ever faster. Real population keeps pace until 1993, then falls behind, and a UN projection levels off near 10.3 billion.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Phantom from Space” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 6,
+        "shock": 7
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 5.6
+        },
+        {
+          "start": 5.87,
+          "end": 11.2
+        },
+        {
+          "start": 11.47,
+          "end": 17.33
+        },
+        {
+          "start": 17.6,
+          "end": 23.47
+        },
+        {
+          "start": 23.73,
+          "end": 29.33
+        },
+        {
+          "start": 29.6,
+          "end": 35.73
+        },
+        {
+          "start": 36,
+          "end": 42.13
+        },
+        {
+          "start": 42.4,
+          "end": 48
+        },
+        {
+          "start": 48.27,
+          "end": 54.13
+        },
+        {
+          "start": 54.4,
+          "end": 60.27
+        },
+        {
+          "start": 60.53,
+          "end": 66.4
+        },
+        {
+          "start": 66.67,
+          "end": 72.8
+        },
+        {
+          "start": 73.07,
+          "end": 78.93
+        },
+        {
+          "start": 79.2,
+          "end": 85.07
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "doomsday-13-november-2026",
+      "prompt": "Slide the year towards 2026. When does the 1960 formula have world population doubling in less than a year?",
+      "takeaway": "From late 2024 the formula doubles in under a year, and by its final weeks in days and then hours. Real population was by then growing so slowly that it would take decades to double."
+    },
+    {
+      "type": "text",
+      "heading": "Faster than exponential",
+      "text": "Exponential growth doubles in a fixed time. The 1960 curve doubles faster and faster: the time left to its date halves with each doubling, from about 33 years after 1960 to 17, 8, 4 and on, so infinitely many doublings fit before November 2026. Mathematicians call this a *finite-time singularity*."
+    },
+    {
+      "type": "chart",
+      "heading": "World population, billions: the 1960 formula and reality",
+      "items": [
+        {
+          "label": "2000, the formula",
+          "value": 6.9
+        },
+        {
+          "label": "2000, real",
+          "value": 6.1
+        },
+        {
+          "label": "2020, the formula",
+          "value": 26.6,
+          "emphasis": true
+        },
+        {
+          "label": "2020, real",
+          "value": 7.9
+        }
+      ],
+      "unit": "bn",
+      "note": "Real figures: UN World Population Prospects 2024, rounded"
+    },
+    {
+      "type": "quote",
+      "text": "Our great-great-grandchildren will not starve to death. They will be squeezed to death.",
+      "attribution": "von Foerster, Mora and Amiot, Science, 1960"
+    },
+    {
+      "type": "text",
+      "heading": "Why it broke",
+      "text": "The curve assumed growth would keep speeding up as people got better at working together. Instead, as death rates fell, birth rates followed. Today more than two-thirds of people live in countries where women average fewer than 2.1 children, the level that keeps a population steady."
+    },
+    {
+      "type": "quiz",
+      "question": "On the 1960 curve, what happens each time world population doubles?",
+      "options": [
+        "The next doubling takes half as long",
+        "The next doubling takes as long",
+        "The next doubling takes twice as long",
+        "Growth stops for a generation"
+      ],
+      "answer": 0,
+      "explanation": "The curve is close to a constant divided by the time left to 2026.87, so it doubles every time the time left halves: each doubling takes half as long as the one before."
+    }
+  ],
+  "tags": [
+    "population",
+    "doomsday",
+    "demography",
+    "prediction",
+    "1960s",
+    "curves"
+  ],
+  "source": {
+    "label": "von Foerster, Mora and Amiot, “Doomsday: Friday, 13 November, A.D. 2026”, Science (1960)",
+    "url": "https://doi.org/10.1126/science.132.3436.1291"
+  },
+  "theme": {
+    "gradient": [
+      "#14172e",
+      "#8c2a24"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-26"
+}

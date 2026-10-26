@@ -32,6 +32,7 @@
         "earth",
         "body",
         "engineering",
+        "politics",
         "literature"
       ]
     },
@@ -164,7 +165,9 @@
                   "barber-paradox",
                   "plato-allegory-of-the-cave",
                   "ship-of-theseus",
-                  "zeno-achilles-tortoise"
+                  "zeno-achilles-tortoise",
+                  "doomsday-13-november-2026",
+                  "us-midterm-penalty"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

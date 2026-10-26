@@ -75,6 +75,8 @@ export const LABS = {
   'plato-allegory-of-the-cave': 'Name the things behind you from their shadows on the cave wall, then turn round to see what they were.',
   'ship-of-theseus': 'Replace all 38 planks of Theseus’s ship, rebuild the old ones into a second ship, and choose which is the original.',
   'zeno-achilles-tortoise': 'Step through Achilles’ catch-up steps, zooming in tenfold each time, and watch their times add up.',
+  'doomsday-13-november-2026': 'Slide the year towards 2026 and compare the 1960 doomsday formula with the real count; see how fast the formula doubles.',
+  'us-midterm-penalty': 'Tap through every US midterm since 1946, for the House or the Senate, and find when the president’s party gained seats.',
 } as const;
 
 export type LabId = keyof typeof LABS;
