@@ -78,6 +78,7 @@ export const LABS = {
   'doomsday-13-november-2026': 'Slide the year towards 2026 and compare the 1960 doomsday formula with the real count; see how fast the formula doubles.',
   'us-midterm-penalty': 'Tap through every US midterm since 1946, for the House or the Senate, and find when the president’s party gained seats.',
   'redistricting-gerrymander': 'Paint five districts of ten voters on a grid of 30 purple and 20 orange voters, and try to make the minority win.',
+  'israel-electoral-threshold': 'Move the vote threshold for example party lists and watch seats move between two blocs, without a single vote changing.',
 } as const;
 
 export type LabId = keyof typeof LABS;

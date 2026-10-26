@@ -1101,4 +1101,10 @@ export const de: Record<string, string> = {
   'Map': 'Karte',
   'valid': 'gültig',
   'needs 10 joined voters per district': 'je Wahlkreis 10 zusammenhängende Wähler nötig',
+  'Example lists and their seats with a {p}% threshold': 'Beispiellisten und ihre Sitze bei einer {p}-%-Hürde',
+  'Threshold': 'Sperrklausel',
+  'Blue bloc · 48.6% of votes': 'Blauer Block · 48,6 % der Stimmen',
+  'Gold bloc · 51.4% of votes': 'Goldener Block · 51,4 % der Stimmen',
+  '{n} seats': '{n} Sitze',
+  'Votes wasted': 'Verlorene Stimmen',
 };

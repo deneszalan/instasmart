@@ -73,6 +73,7 @@ import { catchUp, steps } from '../src/labs/philosophy/zeno-achilles-tortoise';
 import { doublingTime, formula, realPopulation } from '../src/labs/math/doomsday-13-november-2026';
 import { MIDTERMS, record } from '../src/labs/politics/us-midterm-penalty';
 import { problems, ROWS_MAP, seats } from '../src/labs/politics/redistricting-gerrymander';
+import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -555,5 +556,14 @@ describe('lab maths', () => {
     expect(seats(pairs).orange).toBe(3);
     const broken = ROWS_MAP.map((d, i) => (i === 0 ? 4 : d));
     expect(problems(broken)).toEqual([0, 4]);
+  });
+
+  it('threshold: at 3.25% the bloc with fewer votes wins 63 seats; at 2.5% it loses its majority; at 2% the other bloc has 61', () => {
+    expect(LISTS.reduce((n, l) => n + l.share, 0)).toBeCloseTo(100, 6);
+    for (const th of [1, 2, 3.25, 5]) expect(allocate(th).blue + allocate(th).gold).toBe(120);
+    expect(allocate(3.25)).toMatchObject({ blue: 63, gold: 57 });
+    expect(allocate(3.25).wasted).toBeCloseTo(8, 6);
+    expect(allocate(2.5).blue).toBeLessThan(61);
+    expect(allocate(2).gold).toBeGreaterThanOrEqual(61);
   });
 });
