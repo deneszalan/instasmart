@@ -74,6 +74,7 @@ import { doublingTime, formula, realPopulation } from '../src/labs/math/doomsday
 import { MIDTERMS, record } from '../src/labs/politics/us-midterm-penalty';
 import { problems, ROWS_MAP, seats } from '../src/labs/politics/redistricting-gerrymander';
 import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold';
+import { angleGap, fitAt, hitsOf, newEvent, SENSORS, THETA } from '../src/labs/physics/icecube-neutrino-nobel';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -565,5 +566,20 @@ describe('lab maths', () => {
     expect(allocate(3.25).wasted).toBeCloseTo(8, 6);
     expect(allocate(2.5).blue).toBeLessThan(61);
     expect(allocate(2).gold).toBeGreaterThanOrEqual(61);
+  });
+
+  it('icecube: 540 sensors in the slice, a 40° Cherenkov angle, and hit times that match only the true direction', () => {
+    expect(SENSORS).toHaveLength(9 * 60);
+    expect((THETA * 180) / Math.PI).toBeCloseTo(40.2, 1);
+    for (const seed of [2026, 2027, 2028]) {
+      const tr = newEvent(seed), hits = hitsOf(tr);
+      expect(tr.angle).toBeGreaterThan(0);
+      expect(tr.angle).toBeLessThan(180);
+      expect(fitAt(hits, tr.angle).rms).toBeLessThan(6);
+      expect(fitAt(hits, tr.angle + 4).rms).toBeGreaterThan(40);
+      expect(fitAt(hits, tr.angle - 4).rms).toBeGreaterThan(40);
+      expect(fitAt(hits, tr.angle + 180).rms).toBeGreaterThan(1000);
+    }
+    expect(angleGap(359, 2)).toBe(3);
   });
 });

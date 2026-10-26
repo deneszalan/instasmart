@@ -1107,4 +1107,13 @@ export const de: Record<string, string> = {
   'Gold bloc · 51.4% of votes': 'Goldener Block · 51,4 % der Stimmen',
   '{n} seats': '{n} Sitze',
   'Votes wasted': 'Verlorene Stimmen',
+  'early': 'früh',
+  'late': 'spät',
+  'A slice of IceCube: {n} sensors lit, coloured from early (red) to late (purple), and your track': 'Ein Schnitt durch IceCube: {n} Sensoren leuchten, von früh (rot) bis spät (violett), und deine Spur',
+  'Your track’s direction': 'Richtung deiner Spur',
+  'New neutrino': 'Neues Neutrino',
+  'Sensors hit': 'Getroffene Sensoren',
+  'Timing mismatch': 'Zeitabweichung',
+  '{n} ns': '{n} ns',
+  'Simplified: a straight track, and light that goes straight to sensors within 110 m.': 'Vereinfacht: eine gerade Spur und Licht, das geradlinig zu Sensoren im Umkreis von 110 m läuft.',
 };
