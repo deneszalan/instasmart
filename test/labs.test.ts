@@ -77,6 +77,7 @@ import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold
 import { autonav, shortest, straight, GOAL } from '../src/labs/space/perseverance-driving-record';
 import { heliumAt, heliumShare, MEASURED, MEASURED_ERR, neutronsPerProton } from '../src/labs/space/primordial-helium-big-bang';
 import { outbreak, perCase, possibleTree, GENERATIONS } from '../src/labs/body/ebola-21-day-quarantine';
+import { CHLORINE, DU_LINE, lowestOzone } from '../src/labs/earth/ozone-hole-2026';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -602,5 +603,14 @@ describe('lab maths', () => {
     expect(most.perGen[GENERATIONS]).toBeLessThan(none.perGen[GENERATIONS]);
     expect(all.perGen.slice(2).every((n) => n === 0)).toBe(true);
     expect(all.perGen[1]).toBe(none.perGen[1]);
+  });
+
+  it('ozone toy model: a hole needs cold, sunlight and chlorine together; peak chlorine gives about 120 DU', () => {
+    expect(lowestOzone(-92, CHLORINE[2000], true)).toBeCloseTo(120, 6);
+    expect(lowestOzone(-92, CHLORINE[2024], true)).toBeLessThan(DU_LINE);
+    expect(lowestOzone(-92, CHLORINE[2024], false)).toBe(350);
+    expect(lowestOzone(-92, CHLORINE[1980], true)).toBe(350);
+    expect(lowestOzone(-75, CHLORINE[2024], true)).toBe(350);
+    expect(lowestOzone(-80, CHLORINE[2024], true)).toBeGreaterThan(DU_LINE);
   });
 });

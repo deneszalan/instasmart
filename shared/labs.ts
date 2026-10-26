@@ -82,6 +82,7 @@ export const LABS = {
   'perseverance-driving-record': 'Drive a rover to a waypoint across a rocky patch of Mars, with or without AutoNav, and see how far ahead it needs to look.',
   'primordial-helium-big-bang': 'Choose when the first nuclei could form after the Big Bang and see how much helium the universe ends up with, against the 2026 measurement.',
   'ebola-21-day-quarantine': 'Trace a share of the contacts of Ebola cases, isolating each at the first fever, and see when chains of infection shrink instead of grow.',
+  'ozone-hole-2026': 'Change the cold, the sunlight and the chlorine over Antarctica in a toy model, and find what it takes to open the ozone hole or keep it shut.',
 } as const;
 
 export type LabId = keyof typeof LABS;
