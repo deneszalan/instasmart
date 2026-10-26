@@ -85,6 +85,11 @@ import { heliumAt, heliumShare, MEASURED, MEASURED_ERR, neutronsPerProton } from
 import { outbreak, perCase, possibleTree, GENERATIONS } from '../src/labs/body/ebola-21-day-quarantine';
 import { CHLORINE, DU_LINE, lowestOzone } from '../src/labs/earth/ozone-hole-2026';
 import { EAST_2026, pacific } from '../src/labs/earth/el-nino-record-seas';
+import { angleGap, fitAt, hitsOf, newEvent, SENSORS, THETA } from '../src/labs/physics/icecube-neutrino-nobel';
+import { simulate as optoRun } from '../src/labs/body/optogenetics-nobel';
+import { round as chiralRound, rounds as chiralRounds } from '../src/labs/chemistry/mirror-molecules-nobel';
+import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
+import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -684,5 +689,54 @@ describe('lab maths', () => {
     expect(pacific(0.55).eastAnomaly).toBeLessThan(EAST_2026);
     expect(pacific(0).rainAt).toBeGreaterThan(pacific(1).rainAt);
     expect(pacific(1.5).eastAnomaly).toBeLessThan(0);
+  it('icecube: 540 sensors in the slice, a 40° Cherenkov angle, and hit times that match only the true direction', () => {
+    expect(SENSORS).toHaveLength(9 * 60);
+    expect((THETA * 180) / Math.PI).toBeCloseTo(40.2, 1);
+    for (const seed of [2026, 2027, 2028]) {
+      const tr = newEvent(seed), hits = hitsOf(tr);
+      expect(tr.angle).toBeGreaterThan(0);
+      expect(tr.angle).toBeLessThan(180);
+      expect(fitAt(hits, tr.angle).rms).toBeLessThan(6);
+      expect(fitAt(hits, tr.angle + 4).rms).toBeGreaterThan(40);
+      expect(fitAt(hits, tr.angle - 4).rms).toBeGreaterThan(40);
+      expect(fitAt(hits, tr.angle + 180).rms).toBeGreaterThan(1000);
+    }
+    expect(angleGap(359, 2)).toBe(3);
+  });
+
+  it('optogenetics: 1 ms flashes are too short, 5 ms flashes fire once each, 20 ms fire repeatedly, and no gene means no signal', () => {
+    expect(optoRun(true, 1, 10).spikes).toHaveLength(0);
+    expect(optoRun(true, 5, 10).spikes).toHaveLength(10);
+    expect(optoRun(true, 5, 40).spikes).toHaveLength(40);
+    expect(optoRun(true, 20, 10).spikes.length).toBeGreaterThan(10);
+    expect(optoRun(false, 5, 10).spikes).toHaveLength(0);
+    expect(optoRun(false, 5, 10).flashes).toBe(10);
+  });
+
+  it('mirror molecules: 75% right acts like 90%; from 50.5% one hand passes 99% in 8 rounds; with working mixed pairs nothing changes', () => {
+    expect(chiralRound(0.75, false)).toBeCloseTo(0.9, 9);
+    expect(chiralRound(0.5, false)).toBe(0.5);
+    const r = chiralRounds(0.505, 8, false);
+    expect(r[7]).toBeLessThan(0.99);
+    expect(r[8]).toBeGreaterThan(0.99);
+    for (const s of chiralRounds(0.505, 12, true)) expect(s).toBeCloseTo(0.505, 9);
+  });
+
+  it('forward guidance: a one-quarter cut of a point adds 0.25%, a believed two-year promise adds 2%, half belief half that', () => {
+    expect(spendingToday(3, 3, 1)).toBeCloseTo(0, 9);
+    expect(spendingToday(2, 3, 1)).toBeCloseTo(0.25, 9);
+    expect(spendingToday(3, 2, 1)).toBeCloseTo(2, 9);
+    expect(spendingToday(3, 2, 0.5)).toBeCloseTo(1, 9);
+    expect(spendingToday(3, 2, 0)).toBeCloseTo(0, 9);
+    expect(spendingToday(4, 4, 1)).toBeCloseTo(-2.25, 9);
+  });
+
+  it('power grid: 10 MW at 10 kV loses half; ten times the voltage loses a hundredth as much; under 1% from about 71 kV', () => {
+    expect(lineLoss(10).amps).toBeCloseTo(1000, 9);
+    expect(lineLoss(10).share).toBeCloseTo(0.5, 9);
+    expect(lineLoss(100).share).toBeCloseTo(0.005, 9);
+    expect(lineLoss(10).lossMW / lineLoss(100).lossMW).toBeCloseTo(100, 9);
+    expect(lineLoss(70).share).toBeGreaterThan(0.01);
+    expect(lineLoss(75).share).toBeLessThan(0.01);
   });
 });

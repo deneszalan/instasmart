@@ -181,6 +181,11 @@
                   "ebola-21-day-quarantine",
                   "ozone-hole-2026",
                   "el-nino-record-seas"
+                  "icecube-neutrino-nobel",
+                  "optogenetics-nobel",
+                  "mirror-molecules-nobel",
+                  "nobel-hall-woodford",
+                  "power-grid-transformers"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

@@ -90,4 +90,9 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'ebola-21-day-quarantine': lazy(() => import('./body/ebola-21-day-quarantine')),
   'ozone-hole-2026': lazy(() => import('./earth/ozone-hole-2026')),
   'el-nino-record-seas': lazy(() => import('./earth/el-nino-record-seas')),
+  'icecube-neutrino-nobel': lazy(() => import('./physics/icecube-neutrino-nobel')),
+  'optogenetics-nobel': lazy(() => import('./body/optogenetics-nobel')),
+  'mirror-molecules-nobel': lazy(() => import('./chemistry/mirror-molecules-nobel')),
+  'nobel-hall-woodford': lazy(() => import('./economics/nobel-hall-woodford')),
+  'power-grid-transformers': lazy(() => import('./engineering/power-grid-transformers')),
 };

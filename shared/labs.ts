@@ -90,6 +90,11 @@ export const LABS = {
   'ebola-21-day-quarantine': 'Trace a share of the contacts of Ebola cases, isolating each at the first fever, and see when chains of infection shrink instead of grow.',
   'ozone-hole-2026': 'Change the cold, the sunlight and the chlorine over Antarctica in a toy model, and find what it takes to open the ozone hole or keep it shut.',
   'el-nino-record-seas': 'Weaken or strengthen the Pacific trade winds in a toy model and watch the warm water, the rain and the sea’s slope move.',
+  'icecube-neutrino-nobel': 'Read the hit times of a neutrino’s muon in a slice of IceCube and turn your track until it points the way the muon went.',
+  'optogenetics-nobel': 'Flash blue light at a nerve cell with and without the channelrhodopsin gene, and tune the flashes until it fires once for each.',
+  'mirror-molecules-nobel': 'Start a flask a little more right-handed than left and run rounds of autocatalysis, with mixed pairs idle or working, until one hand takes over.',
+  'nobel-hall-woodford': 'Set today’s interest rate and promise a path for the next two years, then see how spending today responds when people look ahead.',
+  'power-grid-transformers': 'Step up the voltage of a power line carrying 10 MW and watch the current, and the power lost as heat, fall.',
 } as const;
 
 export type LabId = keyof typeof LABS;
