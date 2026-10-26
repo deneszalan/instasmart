@@ -80,4 +80,9 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'redistricting-gerrymander': lazy(() => import('./politics/redistricting-gerrymander')),
   'israel-electoral-threshold': lazy(() => import('./politics/israel-electoral-threshold')),
   'china-party-pyramid': lazy(() => import('./politics/china-party-pyramid')),
+  'brazil-runoff-comeback': lazy(() => import('./politics/brazil-runoff-comeback')),
+  'un-secretary-general-straw-polls': lazy(() => import('./politics/un-secretary-general-straw-polls')),
+  'bosnia-three-presidents': lazy(() => import('./politics/bosnia-three-presidents')),
+  'strait-of-hormuz-oil': lazy(() => import('./politics/strait-of-hormuz-oil')),
+  'nobel-peace-prize-norway': lazy(() => import('./politics/nobel-peace-prize-norway')),
 };

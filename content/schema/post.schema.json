@@ -171,6 +171,11 @@
                   "redistricting-gerrymander",
                   "israel-electoral-threshold",
                   "china-party-pyramid"
+                  "brazil-runoff-comeback",
+                  "un-secretary-general-straw-polls",
+                  "bosnia-three-presidents",
+                  "strait-of-hormuz-oil",
+                  "nobel-peace-prize-norway"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

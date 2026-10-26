@@ -80,6 +80,11 @@ export const LABS = {
   'redistricting-gerrymander': 'Paint five districts of ten voters on a grid of 30 purple and 20 orange voters, and try to make the minority win.',
   'israel-electoral-threshold': 'Move the vote threshold for example party lists and watch seats move between two blocs, without a single vote changing.',
   'china-party-pyramid': 'Climb the layers of China’s Communist Party, from 96 million members to one General Secretary, and see how many members each seat stands for.',
+  'brazil-runoff-comeback': 'Split the other candidates’ votes and new voters between Lula and Flávio Bolsonaro, and see when second place wins Brazil’s runoff.',
+  'un-secretary-general-straw-polls': 'Change the 15 ballots of a UN Secretary-General straw poll, red for the permanent members, and see what it takes to pass.',
+  'bosnia-three-presidents': 'Choose where a Bosnian citizen lives and which group they declare, and see which presidency seats they may vote for or stand for.',
+  'strait-of-hormuz-oil': 'Take a share of the world’s oil off the market, set how much buyers respond to price, and watch the price of a barrel.',
+  'nobel-peace-prize-norway': 'Match each Nobel prize to the institution that chooses its winner, in Stockholm or in Oslo.',
 } as const;
 
 export type LabId = keyof typeof LABS;

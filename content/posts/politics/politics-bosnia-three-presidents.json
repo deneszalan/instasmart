@@ -1,0 +1,171 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-bosnia-three-presidents",
+  "field": "politics",
+  "title": "Bosnia and Herzegovina has three presidents at once, and the chair rotates every 8 months",
+  "emoji": "🪑",
+  "body": "Bosnia and Herzegovina’s presidency was designed by the Dayton Agreement, which ended the war in 1995. It has three members elected for four years: a Bosniak and a Croat chosen by voters in the Federation, who may vote in only one of those two races, and a Serb chosen by voters in Republika Srpska. In each race the most votes wins, and the three take turns as chair every eight months. For the election of 4 October 2026, the Central Election Commission [set out the results](https://n1info.ba/vijesti/cik-bih-utvrdio-rezultate-opcih-izbora-hdz-ova-koalicija-osvojila-mandat-za-koji-nema-kandidata-slijedi-rok-za-zalbe/) on 24 October, not yet final: Denis Bećirović, Darijana Filipović and Željka Cvijanović. Only citizens who declare themselves Bosniak, Croat or Serb may stand, and only in the matching entity. In 2009 the European Court of Human Rights ruled in Sejdić and Finci that excluding Jews, Roma and other citizens is discriminatory, and later rulings said the same for a citizen who declared no group and for a Bosniak living in Republika Srpska. The constitution has not been changed to match.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Turnout in Bosnia’s presidential vote on 4 October 2026 was the lowest ever. What share of voters took part?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 43,
+      "unit": "%",
+      "explanation": "42.98%, according to the Central Election Commission’s figures: the lowest turnout ever for a Bosnian general election."
+    },
+    {
+      "type": "video",
+      "src": "presidency.mp4",
+      "poster": "presidency.jpg",
+      "alt": "Animation on woven linen: three chairs at one table, the Dayton Agreement of 1995, then the Federation and Republika Srpska as panels with ballots for the Bosniak, Croat and Serb seats. Bars show the 2026 races, a dial splits a 48-month term into six chair turns, and a grid shows who may run.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Teller of the Tales” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 24.27
+        },
+        {
+          "start": 24.53,
+          "end": 31.47
+        },
+        {
+          "start": 31.73,
+          "end": 37.6
+        },
+        {
+          "start": 37.87,
+          "end": 44
+        },
+        {
+          "start": 44.27,
+          "end": 50.13
+        },
+        {
+          "start": 50.4,
+          "end": 56.27
+        },
+        {
+          "start": 56.53,
+          "end": 62.4
+        },
+        {
+          "start": 62.67,
+          "end": 68.53
+        },
+        {
+          "start": 68.8,
+          "end": 74.4
+        },
+        {
+          "start": 74.67,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "bosnia-three-presidents",
+      "prompt": "Pick where a citizen lives and the group they declare. Try all eight combinations and see who may vote for which seat, and who may stand.",
+      "takeaway": "Only three of the eight may stand: Bosniaks and Croats in the Federation, Serbs in Republika Srpska. Federation voters choose the Bosniak or the Croat ballot, whatever their own group."
+    },
+    {
+      "type": "chart",
+      "heading": "Each 2026 winner’s share of the votes in their race",
+      "items": [
+        {
+          "label": "Bećirović, Bosniak seat",
+          "value": 38.1
+        },
+        {
+          "label": "Filipović, Croat seat",
+          "value": 47.3
+        },
+        {
+          "label": "Cvijanović, Serb seat",
+          "value": 55.6
+        }
+      ],
+      "unit": "%",
+      "note": "Central Election Commission results of 24 October 2026, not yet final"
+    },
+    {
+      "type": "timeline",
+      "heading": "Who may stand",
+      "events": [
+        {
+          "when": "1995",
+          "text": "The Dayton Agreement sets up a three-member presidency."
+        },
+        {
+          "when": "2009",
+          "text": "Sejdić and Finci: barring Roma, Jews and others is discrimination."
+        },
+        {
+          "when": "2014",
+          "text": "Zornić: the same for a citizen who declared no group."
+        },
+        {
+          "when": "2016",
+          "text": "Pilav: the same for a Bosniak in Republika Srpska."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "A Serb who lives in the Federation votes for Bosnia’s presidency. Who can they vote for?",
+      "options": [
+        "The Bosniak or the Croat member",
+        "Only the Serb member",
+        "All three members",
+        "Nobody at all"
+      ],
+      "answer": 0,
+      "explanation": "Federation voters pick one of two ballots, for the Bosniak or the Croat member, whatever their own group. Only voters in Republika Srpska elect the Serb member."
+    }
+  ],
+  "tags": [
+    "bosnia",
+    "elections",
+    "dayton",
+    "presidency",
+    "humanrights",
+    "balkans"
+  ],
+  "source": {
+    "label": "Wikipedia: Presidency of Bosnia and Herzegovina",
+    "url": "https://en.wikipedia.org/wiki/Presidency_of_Bosnia_and_Herzegovina"
+  },
+  "theme": {
+    "gradient": [
+      "#1d2550",
+      "#8a3a28"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-26"
+}

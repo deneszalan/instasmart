@@ -75,6 +75,11 @@ import { MIDTERMS, record } from '../src/labs/politics/us-midterm-penalty';
 import { problems, ROWS_MAP, seats } from '../src/labs/politics/redistricting-gerrymander';
 import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold';
 import { LAYERS as PARTY_LAYERS, membersPerSeat } from '../src/labs/politics/china-party-pyramid';
+import { OTHERS, ROUND1, ROUND2, runoff, tieShare } from '../src/labs/politics/brazil-runoff-comeback';
+import { OCT_16, OCT_2016, verdict } from '../src/labs/politics/un-secretary-general-straw-polls';
+import { rights, type People, type Place } from '../src/labs/politics/bosnia-three-presidents';
+import { doublingCut, PEAK, PREWAR, price } from '../src/labs/politics/strait-of-hormuz-oil';
+import { CHOSEN_BY, inOslo, PRIZES, score } from '../src/labs/politics/nobel-peace-prize-norway';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -572,5 +577,54 @@ describe('lab maths', () => {
     expect(PARTY_LAYERS.map((l) => l.people)).toEqual([96_000_000, 2296, 205, 24, 7, 1]);
     expect(membersPerSeat(4) / 1e6).toBeCloseTo(13.7, 1);
     expect(membersPerSeat(5)).toBe(96_000_000);
+  it('brazil runoff: an even split keeps Flávio ahead; Lula needs 61.9% of the 9.3 million; the real gains reproduce the result', () => {
+    expect(OTHERS).toBe(9316747);
+    expect(runoff(0.5).flavio).toBeGreaterThan(runoff(0.5).lula);
+    expect(tieShare()).toBeCloseTo(0.6194, 4);
+    expect(runoff(0.62).lula).toBeGreaterThan(runoff(0.62).flavio);
+    const extra = ROUND2.lula + ROUND2.flavio - ROUND1.valid;
+    expect(extra).toBe(4781485);
+    const real = runoff((ROUND2.lula - ROUND1.lula) / (OTHERS + extra), extra);
+    expect(real.lula).toBeCloseTo(ROUND2.lula, 0);
+    expect(real.flavio).toBeCloseTo(ROUND2.flavio, 0);
+    expect(real.lulaShare * 100).toBeCloseTo(51.79, 2);
+  });
+
+  it('straw polls: Grynspan had 9 encourages but 2 red discourages on 16 October; flipping those two passes; Guterres 2016 passed', () => {
+    expect(OCT_16).toHaveLength(15);
+    expect(verdict(OCT_16)).toEqual({ encourage: 9, redDiscourage: 2, passes: false });
+    expect(OCT_16.filter((v) => v === 'D')).toHaveLength(5);
+    const whiteOnly = OCT_16.map((v, i) => (i >= 5 ? 'E' : v));
+    expect(verdict(whiteOnly).passes).toBe(false);
+    const flipped = OCT_16.map((v, i) => (i < 5 && v === 'D' ? 'N' : v));
+    expect(verdict(flipped).passes).toBe(true);
+    expect(verdict(OCT_2016)).toEqual({ encourage: 13, redDiscourage: 0, passes: true });
+  });
+
+  it('bosnia: Federation voters pick the Bosniak or Croat ballot, Srpska voters the Serb one; only 3 of 8 citizens may stand', () => {
+    expect(rights('serb', 'federation')).toEqual({ vote: ['bosniak', 'croat'], run: null });
+    expect(rights('bosniak', 'srpska')).toEqual({ vote: ['serb'], run: null });
+    expect(rights('croat', 'federation').run).toBe('croat');
+    expect(rights('serb', 'srpska').run).toBe('serb');
+    const people: People[] = ['bosniak', 'croat', 'serb', 'other'], places: Place[] = ['federation', 'srpska'];
+    expect(people.flatMap((p) => places.map((w) => rights(p, w).run)).filter(Boolean)).toHaveLength(3);
+    expect(places.map((w) => rights('other', w).run)).toEqual([null, null]);
+  });
+
+  it('hormuz: at elasticity 0.05, 1% less oil means +22%, the price doubles at a 3.4% shortfall, and about 3.3% reaches the April high', () => {
+    expect(price(0, 0.05)).toBeCloseTo(PREWAR, 9);
+    expect(price(0.01, 0.05) / PREWAR).toBeCloseTo(1.2226, 3);
+    expect(doublingCut(0.05)).toBeCloseTo(0.0341, 4);
+    expect(price(doublingCut(0.05), 0.05)).toBeCloseTo(2 * PREWAR, 6);
+    expect(price(0.032, 0.05)).toBeLessThan(PEAK);
+    expect(price(0.033, 0.05)).toBeGreaterThan(PEAK);
+    expect(price(0.033, 0.3) / PREWAR).toBeCloseTo(1.118, 2);
+  });
+
+  it('nobel: five prizes are chosen in Stockholm, three by the Academy of Sciences; only peace in Oslo', () => {
+    expect(PRIZES.filter((p) => inOslo(CHOSEN_BY[p]))).toEqual(['peace']);
+    expect(PRIZES.filter((p) => CHOSEN_BY[p] === 'academy')).toEqual(['physics', 'chemistry', 'economics']);
+    expect(score(CHOSEN_BY)).toBe(6);
+    expect(score({ peace: 'swedish', literature: 'swedish' })).toBe(1);
   });
 });
