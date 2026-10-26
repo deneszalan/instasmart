@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "60% of 50 voters are purple, 40% orange. With five districts of ten voters, how many seats can a map hand orange at most?",
+      "question": "Of 50 voters, 30 are purple and 20 orange. With five districts of ten, how many seats can a map give orange?",
       "min": 0,
       "max": 5,
       "step": 1,
@@ -104,9 +104,9 @@
       "type": "quiz",
       "question": "What does “cracking” mean in redistricting?",
       "options": [
-        "Spreading a group’s voters thinly across districts",
+        "Spreading a group thinly",
         "Packing a group into one district",
-        "Splitting a state into two",
+        "Splitting a state in two",
         "Counting votes twice"
       ],
       "answer": 0,
