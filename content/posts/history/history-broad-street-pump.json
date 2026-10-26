@@ -34,14 +34,14 @@
           }
         },
         {
-          "text": "It is miasma, madam: a poison in the foul air.",
+          "text": "It is miasma, madam: poison in the foul air. The science is settled.",
           "speaker": "A doctor",
-          "x": 64.0,
-          "y": 31.5,
+          "x": 63.5,
+          "y": 74.0,
           "width": 42,
           "tail": {
-            "x": 66.8,
-            "y": 41.4
+            "x": 69.8,
+            "y": 60.3
           }
         }
       ]
@@ -50,17 +50,17 @@
       "type": "comic",
       "src": "panel-3.jpg",
       "alt": "John Snow, a clean-shaven man in a black frock coat, stands in the foreground holding a list. Behind him is the pump, a half-empty street and doors hung with black crepe.",
-      "caption": "Dr John Snow has argued since 1849 that cholera spreads through dirty water. He takes a list of the dead and goes to the spot.",
+      "caption": "Dr John Snow has argued since 1849 that cholera spreads in dirty water. Most doctors disagree. He takes a list of the dead to the spot.",
       "bubbles": [
         {
-          "text": "Nearly all the deaths are within a short distance of the pump.",
+          "text": "Nearly all the deaths are near the pump. Funny sort of air.",
           "speaker": "John Snow",
-          "x": 66,
-          "y": 32,
+          "x": 66.5,
+          "y": 36.0,
           "width": 48,
           "tail": {
             "x": 40.5,
-            "y": 44.8
+            "y": 45.6
           }
         }
       ]
@@ -69,7 +69,7 @@
       "type": "comic",
       "src": "panel-4.jpg",
       "alt": "Inside a brick brewery with a great vat and barrels, Snow talks to Mr Huggins, an older man with grey side-whiskers in a brown coat. Behind them two workmen in aprons drink from tankards.",
-      "caption": "Near the pump is a brewery with above seventy workmen. None is on the list of the dead, so Snow calls on its owner.",
+      "caption": "Near the pump is a brewery with more than seventy workmen. Not one is on the list of the dead. Snow goes to ask why.",
       "bubbles": [
         {
           "text": "Have your men suffered from the cholera?",
@@ -83,7 +83,7 @@
           }
         },
         {
-          "text": "None has had it badly, sir. They have their malt liquor and never take water from the pump.",
+          "text": "Not badly, sir. They get a beer allowance. I don't believe they drink water at all.",
           "speaker": "Mr Huggins",
           "x": 65.5,
           "y": 72.5,
@@ -130,6 +130,17 @@
             "x": 27.1,
             "y": 48.6
           }
+        },
+        {
+          "text": "Fine. Take the handle off. Just in case.",
+          "speaker": "A guardian",
+          "x": 73.5,
+          "y": 65.5,
+          "width": 50,
+          "tail": {
+            "x": 74.3,
+            "y": 57.3
+          }
         }
       ]
     },
@@ -137,7 +148,7 @@
       "type": "comic",
       "src": "panel-7.jpg",
       "alt": "Daylight on Broad Street. A workman in an apron and cap holds the pump handle he has just taken off; the pump stands without it. A parish officer in a top hat holds an order, and three neighbours watch.",
-      "caption": "Friday 8 September: the handle comes off. But new fatal cases had already fallen, from 143 on 1 September to 12.",
+      "caption": "Friday 8 September: the handle comes off, the famous moment. But new fatal cases had already fallen, from 143 on 1 September to 12.",
       "bubbles": [
         {
           "text": "Where will we get our water now?",
@@ -156,11 +167,11 @@
       "type": "comic",
       "src": "panel-8.jpg",
       "alt": "A cutaway below the street. Under the front area of No. 40 lies a brick cesspool of foul water; its drain leaks through the soil into the brick shaft of the pump’s well beside it. The curate Henry Whitehead stands on the pavement above, pointing down.",
-      "caption": "Months later, the curate Henry Whitehead traced the probable first case.",
+      "caption": "Most experts reject Snow's idea, including the curate Henry Whitehead. He sets out to disprove it, and finds the probable first case.",
       "captionAt": "bottom",
       "bubbles": [
         {
-          "text": "A baby at No. 40 fell ill on 28 August. Some of the water from her nappies went into this cesspool.",
+          "text": "A baby at No. 40 fell ill on 28 August. Water from her nappies went into this cesspool. Dr Snow was right.",
           "speaker": "Henry Whitehead",
           "x": 40,
           "y": 23,

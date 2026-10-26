@@ -14,17 +14,28 @@
       "type": "comic",
       "src": "panel-1.jpg",
       "alt": "Below towering grey layered cliffs, a boy in a cap points up at a long-snouted fossil skull with a huge eye socket set in the rock. A girl in a bonnet with a basket looks on.",
-      "caption": "Lyme Regis, autumn 1811. Below the cliffs, Mary Anning's brother Joseph finds a strange skull about 4 feet long. Mary is 12.",
+      "caption": "Lyme Regis, autumn 1811. Mary Anning's brother Joseph finds a skull about 4 feet long in the cliffs. Mary is 12. Scientists say: crocodile.",
       "bubbles": [
         {
-          "text": "Mary, look at this head! And all those teeth!",
+          "text": "Mary! It's a crocodile!",
           "speaker": "Joseph Anning",
-          "x": 52.0,
-          "y": 72.0,
-          "width": 40,
+          "x": 38,
+          "y": 62,
+          "width": 34,
           "tail": {
             "x": 32.3,
-            "y": 80.5
+            "y": 72.0
+          }
+        },
+        {
+          "text": "Where's the rest of him?",
+          "speaker": "Mary Anning",
+          "x": 78,
+          "y": 66,
+          "width": 36,
+          "tail": {
+            "x": 78.4,
+            "y": 75.1
           }
         }
       ]
@@ -33,10 +44,21 @@
       "type": "comic",
       "src": "panel-2.jpg",
       "alt": "On the beach a long skeleton lies exposed on a slab: a long snout, a spine, ribs and paddles. A workman with a pick helps; Mary points at it.",
-      "caption": "About a year later Mary, now around 13, uncovers the rest of the animal: a skeleton about 5 metres long.",
+      "caption": "About a year later Mary, now around 13, digs out the rest: a skeleton about 5 metres long. It is not a crocodile.",
       "bubbles": [
         {
-          "text": "Look, it has paddles, like a fish!",
+          "text": "Still a crocodile, miss?",
+          "speaker": "A workman",
+          "x": 60,
+          "y": 30,
+          "width": 34,
+          "tail": {
+            "x": 76.2,
+            "y": 44.6
+          }
+        },
+        {
+          "text": "With paddles? Funny sort of crocodile.",
           "speaker": "Mary Anning",
           "x": 66,
           "y": 84,
@@ -52,21 +74,10 @@
       "type": "comic",
       "src": "panel-3.jpg",
       "alt": "Outside a small cottage, Mary stands behind a table of fossils: coiled ammonites, belemnites and bones. A lady in a bonnet points at one; her husband in a top hat waits.",
-      "caption": "Fossils feed the family. They sell “curiosities” to visitors from a table by their home, and the skeleton fetches £23.",
+      "caption": "Fossils pay the rent. The Annings sell “curiosities” to visitors from a table by their home, and the big skeleton fetches £23.",
       "bubbles": [
         {
-          "text": "And what is this one?",
-          "speaker": "A visitor",
-          "x": 74,
-          "y": 29,
-          "width": 36,
-          "tail": {
-            "x": 78.9,
-            "y": 54.1
-          }
-        },
-        {
-          "text": "An ammonite, ma'am. We call them snakestones.",
+          "text": "Snakestones, ma'am. Every home should have one.",
           "speaker": "Mary Anning",
           "x": 30.5,
           "y": 38.5,
@@ -74,6 +85,17 @@
           "tail": {
             "x": 32.8,
             "y": 48.5
+          }
+        },
+        {
+          "text": "Was it really a snake?",
+          "speaker": "A visitor",
+          "x": 74,
+          "y": 29,
+          "width": 36,
+          "tail": {
+            "x": 78.9,
+            "y": 54.1
           }
         }
       ]
@@ -85,7 +107,7 @@
       "caption": "10 December 1823: Mary, 24, finds a stranger beast still: a tiny head on an immensely long neck. It is a plesiosaur.",
       "bubbles": [
         {
-          "text": "What a neck!",
+          "text": "Well. Nobody is going to believe this.",
           "speaker": "Mary Anning",
           "x": 30,
           "y": 37,
@@ -101,10 +123,10 @@
       "type": "comic",
       "src": "panel-5.jpg",
       "alt": "In a study with shelves of skulls, the grey-haired anatomist Georges Cuvier studies a drawing of the long-necked skeleton.",
-      "caption": "In Paris, Georges Cuvier, the greatest anatomist of the day, sees a drawing and suspects a fake made from two animals.",
+      "caption": "In Paris, Georges Cuvier, the greatest anatomist of the day, sees a drawing. He has a theory: a fake, made from two animals.",
       "bubbles": [
         {
-          "text": "Such a neck? It must be two animals joined together.",
+          "text": "Such a neck? Clearly two animals stuck together.",
           "speaker": "Georges Cuvier",
           "x": 36,
           "y": 86,
@@ -120,7 +142,31 @@
       "type": "comic",
       "src": "panel-6.jpg",
       "alt": "In a dark panelled room, gentlemen in black coats gather round the plesiosaur fossil on a board, one pointing at it.",
-      "caption": "Letters and drawings from British geologists convince Cuvier it is real. But the Geological Society will not admit a woman until 1919."
+      "caption": "Letters and drawings from British geologists convince Cuvier it is real. The gentlemen discuss it at length. The finder is not invited.",
+      "bubbles": [
+        {
+          "text": "A splendid specimen. Who found it?",
+          "speaker": "A geologist",
+          "x": 26,
+          "y": 48,
+          "width": 36,
+          "tail": {
+            "x": 27.3,
+            "y": 68.8
+          }
+        },
+        {
+          "text": "Oh, some woman in Lyme.",
+          "speaker": "Another geologist",
+          "x": 74.0,
+          "y": 50.5,
+          "width": 34,
+          "tail": {
+            "x": 72.1,
+            "y": 71.0
+          }
+        }
+      ]
     },
     {
       "type": "comic",
@@ -146,7 +192,7 @@
       "type": "comic",
       "src": "panel-8.jpg",
       "alt": "Mary, older, stands on the beach at sunset with her hammer and basket below the cliffs.",
-      "caption": "Years later, in 1844, she tells a visiting German doctor about her fame. She dies three years later, aged 47.",
+      "caption": "In 1844 she tells a visiting German doctor about her fame. She dies three years later, aged 47. The Geological Society admits women in 1919.",
       "bubbles": [
         {
           "text": "I am well known throughout the whole of Europe.",

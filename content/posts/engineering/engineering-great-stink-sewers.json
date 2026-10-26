@@ -26,6 +26,17 @@
             "x": 28.0,
             "y": 36.3
           }
+        },
+        {
+          "text": "Parliament's right there. They'll have noticed.",
+          "speaker": "A gentleman",
+          "x": 62,
+          "y": 38,
+          "width": 40,
+          "tail": {
+            "x": 70.0,
+            "y": 57.0
+          }
         }
       ]
     },
@@ -33,19 +44,43 @@
       "type": "comic",
       "src": "panel-2.jpg",
       "alt": "Inside Parliament, a workman on a ladder hangs wet canvas over a tall Gothic window onto the river, a pail at its foot. Two members cover their noses with handkerchiefs.",
-      "caption": "At Parliament, canvas soaked in chloride of zinc and lime is hung over the windows that face the river."
+      "caption": "At Parliament, curtains soaked in chloride of lime are hung at the windows that face the river.",
+      "bubbles": [
+        {
+          "text": "Chloride of lime, sir. Kills any smell.",
+          "speaker": "A workman",
+          "x": 60.5,
+          "y": 28.0,
+          "width": 38,
+          "tail": {
+            "x": 81.3,
+            "y": 32.9
+          }
+        },
+        {
+          "text": "It's losing.",
+          "speaker": "A member",
+          "x": 24,
+          "y": 52,
+          "width": 26,
+          "tail": {
+            "x": 23.8,
+            "y": 60.6
+          }
+        }
+      ]
     },
     {
       "type": "comic",
       "src": "panel-3.jpg",
       "alt": "A cut-away drawing of the city: drains run from each house down into a sewer, which slopes under the street and pours into the Thames. Arrows show the tide washing back and forth.",
-      "caption": "Why it stinks: London's sewers empty straight into the Thames, and the tide washes the filth up and down past the city."
+      "caption": "Why it stinks: London's sewers empty straight into the Thames, and the tide washes the filth up and down past the city, twice a day."
     },
     {
       "type": "comic",
       "src": "panel-4.jpg",
       "alt": "The House of Commons: rows of members on green benches. Benjamin Disraeli, with black curls and a tuft of beard on his chin, stands at the table speaking.",
-      "caption": "15 July: the Chancellor, Benjamin Disraeli, brings in a bill to clean up the river. It becomes law on 2 August, 18 days later.",
+      "caption": "Years of argument over the sewers have got nowhere. Now Parliament can smell them. On 15 July Disraeli brings in a bill, and it is law in 18 days.",
       "bubbles": [
         {
           "text": "A Stygian pool, reeking with ineffable and intolerable horrors.",
@@ -67,7 +102,7 @@
       "caption": "The engineer Joseph Bazalgette has a plan: 82 miles of intercepting sewers to catch the old ones and carry it all east.",
       "bubbles": [
         {
-          "text": "We catch it before it reaches the river and send it far downstream.",
+          "text": "We catch it before it reaches the river and send it far downstream. Not our problem after that.",
           "speaker": "Joseph Bazalgette",
           "x": 66,
           "y": 79,
@@ -83,19 +118,56 @@
       "type": "comic",
       "src": "panel-6.jpg",
       "alt": "In a deep timber-shored trench, bricklayers turn a brick arch over wooden centring. In the foreground Bazalgette, in a top hat, holds up a lantern.",
-      "caption": "Work starts in 1859. The system takes some 318 million bricks, and he builds it big enough for a growing city."
+      "caption": "Work starts in 1859. The system takes some 318 million bricks, and he builds it big enough for a growing city.",
+      "bubbles": [
+        {
+          "text": "Make it bigger. London will grow.",
+          "speaker": "Joseph Bazalgette",
+          "x": 42,
+          "y": 46,
+          "width": 34,
+          "tail": {
+            "x": 29.1,
+            "y": 67.6
+          }
+        }
+      ]
     },
     {
       "type": "comic",
       "src": "panel-7.jpg",
       "alt": "Inside the Crossness pumping station: painted iron columns in red, green and gold, a huge beam engine with its flywheel, and guests in top hats and bonnets.",
-      "caption": "4 April 1865: the Prince of Wales opens the Crossness pumping station, whose great beam engines lift the sewage on its way out."
+      "caption": "4 April 1865: the Prince of Wales opens the Crossness pumping station, whose great beam engines lift the sewage on its way out.",
+      "bubbles": [
+        {
+          "text": "What a magnificent building!",
+          "speaker": "A guest",
+          "x": 26,
+          "y": 46,
+          "width": 36,
+          "tail": {
+            "x": 22.4,
+            "y": 63.0
+          }
+        },
+        {
+          "text": "It's for sewage, dear.",
+          "speaker": "A lady",
+          "x": 72.0,
+          "y": 59.5,
+          "width": 32,
+          "tail": {
+            "x": 75.9,
+            "y": 69.5
+          }
+        }
+      ]
     },
     {
       "type": "comic",
       "src": "panel-8.jpg",
       "alt": "A cut-away of the Victoria Embankment: people stroll along the road on top; inside lie a round brick sewer and an underground railway with a train; a granite wall faces the river.",
-      "caption": "1870: the Victoria Embankment opens, with a main sewer and an underground railway built inside it."
+      "caption": "1870: the Victoria Embankment opens, with a main sewer and an underground railway built inside it. His sewers still serve London today."
     },
     {
       "type": "quiz",
