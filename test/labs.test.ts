@@ -74,6 +74,7 @@ import { doublingTime, formula, realPopulation } from '../src/labs/math/doomsday
 import { MIDTERMS, record } from '../src/labs/politics/us-midterm-penalty';
 import { problems, ROWS_MAP, seats } from '../src/labs/politics/redistricting-gerrymander';
 import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold';
+import { LAYERS as PARTY_LAYERS, membersPerSeat } from '../src/labs/politics/china-party-pyramid';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -565,5 +566,11 @@ describe('lab maths', () => {
     expect(allocate(3.25).wasted).toBeCloseTo(8, 6);
     expect(allocate(2.5).blue).toBeLessThan(61);
     expect(allocate(2).gold).toBeGreaterThanOrEqual(61);
+  });
+
+  it('party pyramid: six layers; about 14 million members per Standing Committee seat', () => {
+    expect(PARTY_LAYERS.map((l) => l.people)).toEqual([96_000_000, 2296, 205, 24, 7, 1]);
+    expect(membersPerSeat(4) / 1e6).toBeCloseTo(13.7, 1);
+    expect(membersPerSeat(5)).toBe(96_000_000);
   });
 });
