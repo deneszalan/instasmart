@@ -354,12 +354,21 @@
                       "additionalProperties": false
                     },
                     "kind": {
-                      "description": "Default \"speech\". \"thought\" is a cloud with bubbles for a tail; \"shout\" a jagged burst.",
+                      "description": "Default \"speech\". \"thought\" is a cloud with bubbles for a tail; \"shout\" a jagged burst; \"laugh\" laughter (HA HA!) lettered with shake marks and no balloon, beside the laugher and without a tail.",
                       "type": "string",
                       "enum": [
                         "speech",
                         "thought",
-                        "shout"
+                        "shout",
+                        "laugh"
+                      ]
+                    },
+                    "timing": {
+                      "description": "How this bubble meets the one before it. \"interrupts\": it cuts that line off, so the line before ends with a dash (—) and this bubble overlaps its edge, drawn on top. \"together\": both are said at once, so the two bubbles overlap.",
+                      "type": "string",
+                      "enum": [
+                        "interrupts",
+                        "together"
                       ]
                     }
                   },

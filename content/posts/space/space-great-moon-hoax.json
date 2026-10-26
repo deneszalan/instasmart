@@ -23,20 +23,20 @@
           "y": 38,
           "width": 48,
           "tail": {
-            "x": 52.7,
-            "y": 63.9
+            "x": 52.0,
+            "y": 55.5
           },
           "kind": "shout"
         },
         {
           "text": "On the Moon?",
           "speaker": "A reader",
-          "x": 14,
-          "y": 36,
+          "x": 14.5,
+          "y": 37.5,
           "width": 26,
           "tail": {
-            "x": 21.2,
-            "y": 59.2
+            "x": 16.6,
+            "y": 45.8
           }
         }
       ]
@@ -74,23 +74,23 @@
         {
           "text": "Do you get the feeling we're being watched?",
           "speaker": "A man-bat",
-          "x": 30,
-          "y": 44,
+          "x": 30.0,
+          "y": 43.5,
           "width": 44,
           "tail": {
-            "x": 32,
-            "y": 62
+            "x": 29.0,
+            "y": 53.9
           }
         },
         {
           "text": "Act natural.",
           "speaker": "A man-bat",
-          "x": 66,
-          "y": 50,
+          "x": 66.5,
+          "y": 48.0,
           "width": 26,
           "tail": {
-            "x": 55,
-            "y": 63
+            "x": 62.8,
+            "y": 55.7
           }
         }
       ]
@@ -108,8 +108,8 @@
           "y": 30,
           "width": 30,
           "tail": {
-            "x": 27.2,
-            "y": 54.6
+            "x": 22.4,
+            "y": 40.1
           },
           "kind": "shout"
         },
@@ -120,8 +120,8 @@
           "y": 30,
           "width": 28,
           "tail": {
-            "x": 71.2,
-            "y": 56.5
+            "x": 72.3,
+            "y": 47.3
           }
         }
       ]
@@ -135,12 +135,12 @@
         {
           "text": "I have been pestered from all quarters with that ridiculous hoax. In English, French, Italian and German!",
           "speaker": "Sir John Herschel",
-          "x": 58,
-          "y": 36,
+          "x": 52.5,
+          "y": 32.5,
           "width": 60,
           "tail": {
-            "x": 42.2,
-            "y": 52.7
+            "x": 44.6,
+            "y": 46.1
           }
         }
       ]

@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { FIELD_IDS } from './fields.ts';
 import { LAB_IDS } from './labs.ts';
-import { bubbleBox, bubbleLines, captionBox, COMIC, COVERED, overlaps } from './comic.ts';
+import { bubbleBox, bubbleLines, captionBox, COMIC, COVERED, edgeOnly, overlaps } from './comic.ts';
 
 /**
  * The content format for every post in content/posts/. Shared by the app,
@@ -90,9 +90,19 @@ export const ComicBubble = z
       .strict()
       .optional()
       .describe("Where the tail points: the speaker's mouth (or head, for a thought), in the same units. Leave it out for a voice from off the panel."),
-    kind: z.enum(['speech', 'thought', 'shout']).optional().describe('Default "speech". "thought" is a cloud with bubbles for a tail; "shout" a jagged burst.'),
+    kind: z
+      .enum(['speech', 'thought', 'shout', 'laugh'])
+      .optional()
+      .describe('Default "speech". "thought" is a cloud with bubbles for a tail; "shout" a jagged burst; "laugh" laughter (HA HA!) lettered with shake marks and no balloon, beside the laugher and without a tail.'),
+    timing: z
+      .enum(['interrupts', 'together'])
+      .optional()
+      .describe('How this bubble meets the one before it. "interrupts": it cuts that line off, so the line before ends with a dash (—) and this bubble overlaps its edge, drawn on top. "together": both are said at once, so the two bubbles overlap.'),
   })
-  .strict();
+  .strict()
+  .superRefine((b, ctx) => {
+    if (b.kind === 'laugh' && b.tail) ctx.addIssue({ code: 'custom', path: ['tail'], message: 'laughter has no tail: letter it right beside the laugher' });
+  });
 
 export const ComicSlide = z
   .object({
@@ -109,9 +119,9 @@ export const ComicSlide = z
     const caption = slide.caption && captionBox(slide.caption, slide.captionAt ?? 'top');
     const boxes = (slide.bubbles ?? []).map((b, i) => {
       const width = b.width ?? COMIC.bubbleWidth;
-      const box = bubbleBox(b.text, b.x, b.y, width);
+      const box = bubbleBox(b.text, b.x, b.y, width, b.kind);
       const path = ['bubbles', i];
-      if (bubbleLines(b.text, width) > COMIC.maxLines) {
+      if (bubbleLines(b.text, width, b.kind) > COMIC.maxLines) {
         ctx.addIssue({ code: 'custom', path: [...path, 'text'], message: `takes more than ${COMIC.maxLines} lines at width ${width}: shorten it or widen the bubble` });
       }
       if (box.left < 1 || box.right > 99 || box.top < 1 || box.bottom > 99) {
@@ -127,11 +137,29 @@ export const ComicSlide = z
       }
       return box;
     });
+    const bubbles = slide.bubbles ?? [];
     boxes.forEach((a, i) =>
       boxes.slice(i + 1).forEach((b, j) => {
-        if (overlaps(a, b)) ctx.addIssue({ code: 'custom', path: ['bubbles', i + 1 + j], message: `overlaps bubble ${i + 1}` });
+        const k = i + 1 + j;
+        // A bubble that interrupts or talks over the one just before it overlaps it on purpose.
+        if (k === i + 1 && bubbles[k].timing) return;
+        if (overlaps(a, b)) ctx.addIssue({ code: 'custom', path: ['bubbles', k], message: `overlaps bubble ${i + 1}` });
       }),
     );
+    bubbles.forEach((b, i) => {
+      if (!b.timing) return;
+      const path = ['bubbles', i, 'timing'];
+      if (i === 0) return ctx.addIssue({ code: 'custom', path, message: 'needs a bubble before it to interrupt or talk over' });
+      const before = boxes[i - 1], box = boxes[i];
+      if (b.timing === 'interrupts' && !/[—–-]$/.test(bubbles[i - 1].text.trim())) {
+        ctx.addIssue({ code: 'custom', path: ['bubbles', i - 1, 'text'], message: `end this line with a dash (—), where bubble ${i + 1} cuts it off` });
+      }
+      if (!overlaps(before, box)) {
+        ctx.addIssue({ code: 'custom', path, message: `should overlap bubble ${i}, so readers see the two lines collide` });
+      } else if (!edgeOnly(before, box)) {
+        ctx.addIssue({ code: 'custom', path, message: `covers words in bubble ${i}: let it overlap only that bubble's edge, so both stay readable` });
+      }
+    });
   });
 
 export const StatSlide = z

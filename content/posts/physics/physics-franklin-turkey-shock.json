@@ -19,23 +19,23 @@
         {
           "text": "We have hitherto been able to produce nothing in this way of use to mankind.",
           "speaker": "Benjamin Franklin",
-          "x": 30,
-          "y": 34,
+          "x": 34.0,
+          "y": 32.0,
           "width": 50,
           "tail": {
-            "x": 23.7,
-            "y": 50.5
+            "x": 26.4,
+            "y": 43.8
           }
         },
         {
           "text": "So... a party?",
           "speaker": "A friend",
-          "x": 78,
-          "y": 42,
+          "x": 78.0,
+          "y": 35.5,
           "width": 30,
           "tail": {
-            "x": 78.4,
-            "y": 52.4
+            "x": 78.8,
+            "y": 43.7
           }
         }
       ]
@@ -53,8 +53,8 @@
           "y": 36,
           "width": 50,
           "tail": {
-            "x": 53.1,
-            "y": 61.3
+            "x": 47.8,
+            "y": 52.6
           }
         },
         {
@@ -64,8 +64,8 @@
           "y": 62,
           "width": 28,
           "tail": {
-            "x": 75,
-            "y": 76
+            "x": 76.7,
+            "y": 74.1
           },
           "kind": "thought"
         }
@@ -80,23 +80,23 @@
         {
           "text": "As much electrical fire as forty common bottles. Watch closely!",
           "speaker": "Benjamin Franklin",
-          "x": 30,
-          "y": 34,
+          "x": 47.5,
+          "y": 32.0,
           "width": 44,
           "tail": {
-            "x": 38.5,
-            "y": 50.5
+            "x": 40.9,
+            "y": 43.7
           }
         },
         {
           "text": "How thrilling!",
           "speaker": "A guest",
-          "x": 82,
-          "y": 42,
+          "x": 84.5,
+          "y": 40.5,
           "width": 28,
           "tail": {
-            "x": 84.6,
-            "y": 58.1
+            "x": 85.1,
+            "y": 49.8
           }
         }
       ]
@@ -108,26 +108,27 @@
       "caption": "He chats away to the company, holding a chain to the jars in one hand and reaching for the top wires with the other.",
       "bubbles": [
         {
-          "text": "Ha! Quite right. Now, just one moment...",
-          "speaker": "Benjamin Franklin",
-          "x": 24,
-          "y": 32,
-          "width": 40,
+          "text": "...and then my aunt said the vicar had—",
+          "speaker": "A guest",
+          "x": 66,
+          "y": 30,
+          "width": 44,
           "tail": {
-            "x": 33.7,
-            "y": 49.7
+            "x": 69.0,
+            "y": 45.9
           }
         },
         {
-          "text": "...and then my aunt said...",
-          "speaker": "A guest",
-          "x": 74,
-          "y": 38,
+          "text": "Ha! Quite right!",
+          "speaker": "Benjamin Franklin",
+          "x": 26.5,
+          "y": 34.0,
           "width": 40,
           "tail": {
-            "x": 69.3,
-            "y": 54.3
-          }
+            "x": 31.3,
+            "y": 42.8
+          },
+          "timing": "interrupts"
         }
       ]
     },
@@ -144,8 +145,8 @@
           "y": 38,
           "width": 24,
           "tail": {
-            "x": 71.2,
-            "y": 54.3
+            "x": 72.2,
+            "y": 45.9
           },
           "kind": "shout"
         }
@@ -160,23 +161,23 @@
         {
           "text": "I did not fall.",
           "speaker": "Benjamin Franklin",
-          "x": 40,
-          "y": 33,
+          "x": 40.0,
+          "y": 32.5,
           "width": 28,
           "tail": {
-            "x": 44.1,
-            "y": 49.7
+            "x": 41.1,
+            "y": 40.5
           }
         },
         {
           "text": "Are you quite well, sir?",
           "speaker": "A guest",
-          "x": 76,
-          "y": 40,
+          "x": 77.0,
+          "y": 38.0,
           "width": 34,
           "tail": {
-            "x": 71.2,
-            "y": 54.3
+            "x": 74.8,
+            "y": 45.9
           }
         }
       ]
@@ -190,12 +191,12 @@
         {
           "text": "I am ashamed to have been guilty of so notorious a blunder.",
           "speaker": "Benjamin Franklin",
-          "x": 58,
-          "y": 36,
+          "x": 61.0,
+          "y": 38.5,
           "width": 46,
           "tail": {
-            "x": 35.8,
-            "y": 51.2
+            "x": 38.2,
+            "y": 49.3
           }
         }
       ]
@@ -209,23 +210,23 @@
         {
           "text": "Electricity: finally of use to mankind.",
           "speaker": "Benjamin Franklin",
-          "x": 32,
-          "y": 36,
+          "x": 28.0,
+          "y": 35.5,
           "width": 40,
           "tail": {
-            "x": 20.0,
-            "y": 51.9
+            "x": 22.4,
+            "y": 45.3
           }
         },
         {
           "text": "Uncommonly tender!",
           "speaker": "A guest",
-          "x": 76,
-          "y": 42,
+          "x": 74.5,
+          "y": 39.5,
           "width": 30,
           "tail": {
-            "x": 81.1,
-            "y": 53.9
+            "x": 78.8,
+            "y": 47.2
           }
         }
       ]

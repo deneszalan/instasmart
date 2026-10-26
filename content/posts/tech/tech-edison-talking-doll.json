@@ -19,12 +19,12 @@
         {
           "text": "Every child will want one that talks.",
           "speaker": "Thomas Edison",
-          "x": 34,
-          "y": 36,
+          "x": 34.0,
+          "y": 35.5,
           "width": 40,
           "tail": {
-            "x": 32.7,
-            "y": 54.6
+            "x": 32.6,
+            "y": 45.9
           }
         }
       ]
@@ -38,34 +38,34 @@
         {
           "text": "Twinkle, twinkle, little star…",
           "speaker": "A girl",
-          "x": 18,
-          "y": 48,
+          "x": 18.0,
+          "y": 42.0,
           "width": 28,
           "tail": {
-            "x": 17.8,
-            "y": 62.9
+            "x": 16.9,
+            "y": 54.3
           }
         },
         {
           "text": "Mary had a little lamb…",
           "speaker": "A girl",
-          "x": 52,
-          "y": 48,
+          "x": 52.0,
+          "y": 44.0,
           "width": 28,
           "tail": {
-            "x": 51.1,
-            "y": 62.9
+            "x": 50.6,
+            "y": 54.3
           }
         },
         {
           "text": "Hickory, dickory, dock…",
           "speaker": "A girl",
-          "x": 84,
-          "y": 48,
+          "x": 84.0,
+          "y": 44.0,
           "width": 28,
           "tail": {
-            "x": 84.5,
-            "y": 62.9
+            "x": 83.3,
+            "y": 54.3
           }
         }
       ]
@@ -79,23 +79,23 @@
         {
           "text": "Jack and Jill went up the hill…",
           "speaker": "A girl",
-          "x": 14,
-          "y": 52,
+          "x": 13.5,
+          "y": 44.5,
           "width": 24,
           "tail": {
-            "x": 11.7,
-            "y": 66.7
+            "x": 11.4,
+            "y": 58.8
           }
         },
         {
           "text": "Little Bo-Peep has lost her sheep…",
           "speaker": "A girl",
-          "x": 59,
-          "y": 52,
+          "x": 59.0,
+          "y": 44.5,
           "width": 24,
           "tail": {
-            "x": 58.0,
-            "y": 66.7
+            "x": 57.4,
+            "y": 58.8
           }
         }
       ]
@@ -109,12 +109,12 @@
         {
           "text": "Twenty dollars! For a nursery rhyme?",
           "speaker": "A customer",
-          "x": 66,
-          "y": 38,
+          "x": 69.0,
+          "y": 36.0,
           "width": 40,
           "tail": {
-            "x": 74.9,
-            "y": 57.2
+            "x": 72.4,
+            "y": 46.1
           },
           "kind": "shout"
         }
@@ -129,12 +129,12 @@
         {
           "text": "Twinkle... twinkle... little... star...",
           "speaker": "The doll",
-          "x": 72,
-          "y": 34,
+          "x": 72.0,
+          "y": 32.5,
           "width": 36,
           "tail": {
-            "x": 70.4,
-            "y": 51
+            "x": 71.0,
+            "y": 44.5
           }
         },
         {
@@ -144,8 +144,8 @@
           "y": 40,
           "width": 24,
           "tail": {
-            "x": 29.8,
-            "y": 62.2
+            "x": 25.0,
+            "y": 53.6
           },
           "kind": "shout"
         }
@@ -164,8 +164,8 @@
           "y": 38,
           "width": 32,
           "tail": {
-            "x": 23.4,
-            "y": 55.7
+            "x": 25.7,
+            "y": 47.7
           }
         }
       ]
@@ -183,8 +183,8 @@
           "y": 34,
           "width": 44,
           "tail": {
-            "x": 50,
-            "y": 61
+            "x": 50.0,
+            "y": 51.0
           }
         }
       ]
@@ -202,8 +202,8 @@
           "y": 40,
           "width": 36,
           "tail": {
-            "x": 25.1,
-            "y": 56.5
+            "x": 26.0,
+            "y": 48.1
           }
         },
         {

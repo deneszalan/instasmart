@@ -1007,8 +1007,11 @@ p {
   margin: 0;
 }
 
-/* One outline round every bubble and its tail together, so each tail flows out of its bubble. */
-.comic__shapes {
+/* One outline round each bubble and its tail together, so the tail flows out of its bubble. Each bubble is its own
+   layer, so one that interrupts or talks over another covers its edge, outline and all. */
+.comic__shape {
+  position: absolute;
+  inset: 0;
   filter: drop-shadow(0.4cqw 0 0 #141414) drop-shadow(-0.4cqw 0 0 #141414) drop-shadow(0 0.4cqw 0 #141414) drop-shadow(0 -0.4cqw 0 #141414);
 }
 
@@ -1035,7 +1038,7 @@ p {
 
 .comic__bubble {
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(var(--tilt, 0deg));
   padding: calc(var(--pad-y) * 1cqw) calc(var(--pad-x) * 1cqw);
   text-align: center;
 }
@@ -1068,8 +1071,54 @@ p {
   letter-spacing: 0.03em;
 }
 
+/* Laughter: no balloon, just bouncing words with a white halo and shake marks either side. Its size is
+   LAUGH_SCALE in shared/comic.ts. */
+.comic__words .comic__bubble--laugh {
+  font-size: calc(var(--font) * var(--laugh) * 1cqw);
+  letter-spacing: 0.04em;
+  text-shadow:
+    0 0 0.6cqw #fff,
+    0.3cqw 0.3cqw 0 #fff,
+    -0.3cqw -0.3cqw 0 #fff,
+    0.3cqw -0.3cqw 0 #fff,
+    -0.3cqw 0.3cqw 0 #fff;
+}
+
+.comic__laugh-word {
+  display: inline-block;
+  margin: 0 0.12em;
+  transform: rotate(-7deg) translateY(-8%);
+}
+
+.comic__laugh-word:nth-child(even) {
+  transform: rotate(6deg) translateY(8%);
+}
+
+.comic__words .comic__bubble--laugh::before,
+.comic__words .comic__bubble--laugh::after {
+  content: '';
+  position: absolute;
+  top: 28%;
+  height: 44%;
+  width: 1.6cqw;
+  border-left: 0.5cqw solid #141414;
+  border-right: 0.5cqw solid #141414;
+  filter: drop-shadow(0 0 0.3cqw #fff);
+}
+
+.comic__words .comic__bubble--laugh::before {
+  left: 0;
+  transform: rotate(-14deg);
+}
+
+.comic__words .comic__bubble--laugh::after {
+  right: 0;
+  transform: rotate(14deg);
+}
+
 .comic__caption {
   position: absolute;
+  z-index: 9;
   left: calc(var(--cap-inset) * 1cqw);
   max-width: calc(var(--cap-width) * 1cqw);
   padding: calc(var(--cap-pad-y) * 1cqw) calc(var(--cap-pad-x) * 1cqw);
@@ -1088,6 +1137,7 @@ p {
 
 .comic__credit {
   position: absolute;
+  z-index: 10;
   left: 0;
   bottom: 0;
   padding: 0.9cqw 1.8cqw;
@@ -1100,6 +1150,7 @@ p {
 
 .comic__next {
   position: absolute;
+  z-index: 10;
   right: 0;
   bottom: 0;
   padding: 1.3cqw 2.6cqw 1.1cqw 3cqw;

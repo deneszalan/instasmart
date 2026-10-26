@@ -32,8 +32,11 @@ export interface Box {
   bottom: number;
 }
 
-function wrap(text: string, inner: number): number {
-  const perLine = Math.max(1, Math.floor(inner / (COMIC.font * COMIC.charWidth)));
+/** Laughter is lettered this much bigger than speech. */
+export const LAUGH_SCALE = 1.2;
+
+function wrap(text: string, inner: number, scale = 1): number {
+  const perLine = Math.max(1, Math.floor(inner / (COMIC.font * scale * COMIC.charWidth)));
   let lines = 1;
   let used = 0;
   for (const word of text.split(/\s+/).filter(Boolean)) {
@@ -46,14 +49,16 @@ function wrap(text: string, inner: number): number {
   return lines;
 }
 
+const scaleOf = (kind?: string) => (kind === 'laugh' ? LAUGH_SCALE : 1);
+
 /** How many lines a bubble's words take at a width (percent of the panel's width). */
-export function bubbleLines(text: string, width: number): number {
-  return wrap(text, width - COMIC.padX * 2);
+export function bubbleLines(text: string, width: number, kind?: string): number {
+  return wrap(text, width - COMIC.padX * 2, scaleOf(kind));
 }
 
 /** Where a bubble centred on (x, y) lands, roughly, in percent of the panel's width (left, right) and height (top, bottom). */
-export function bubbleBox(text: string, x: number, y: number, width: number): Box {
-  const height = (bubbleLines(text, width) * COMIC.font * COMIC.lineHeight + COMIC.padY * 2) * COMIC.aspect;
+export function bubbleBox(text: string, x: number, y: number, width: number, kind?: string): Box {
+  const height = (bubbleLines(text, width, kind) * COMIC.font * scaleOf(kind) * COMIC.lineHeight + COMIC.padY * 2) * COMIC.aspect;
   return { left: x - width / 2, right: x + width / 2, top: y - height / 2, bottom: y + height / 2 };
 }
 
@@ -76,4 +81,14 @@ export const COVERED: Record<'counter' | 'next', Box> = {
 
 export function overlaps(a: Box, b: Box): boolean {
   return a.left < b.right && b.left < a.right && a.top < b.bottom && b.top < a.bottom;
+}
+
+/**
+ * Whether a bubble that interrupts or talks over another (box over before) only nicks its edge: the overlap stays
+ * within the earlier bubble's padding on one side, so none of its words are covered.
+ */
+export function edgeOnly(before: Box, box: Box): boolean {
+  const across = Math.min(before.right, box.right) - Math.max(before.left, box.left);
+  const down = Math.min(before.bottom, box.bottom) - Math.max(before.top, box.top);
+  return across <= COMIC.padX + 1.5 || down <= (COMIC.padY + 1.5) * COMIC.aspect;
 }
