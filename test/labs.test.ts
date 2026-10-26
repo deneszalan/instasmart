@@ -77,6 +77,7 @@ import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold
 import { angleGap, fitAt, hitsOf, newEvent, SENSORS, THETA } from '../src/labs/physics/icecube-neutrino-nobel';
 import { simulate as optoRun } from '../src/labs/body/optogenetics-nobel';
 import { round as chiralRound, rounds as chiralRounds } from '../src/labs/chemistry/mirror-molecules-nobel';
+import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -601,5 +602,14 @@ describe('lab maths', () => {
     expect(r[7]).toBeLessThan(0.99);
     expect(r[8]).toBeGreaterThan(0.99);
     for (const s of chiralRounds(0.505, 12, true)) expect(s).toBeCloseTo(0.505, 9);
+  });
+
+  it('forward guidance: a one-quarter cut of a point adds 0.25%, a believed two-year promise adds 2%, half belief half that', () => {
+    expect(spendingToday(3, 3, 1)).toBeCloseTo(0, 9);
+    expect(spendingToday(2, 3, 1)).toBeCloseTo(0.25, 9);
+    expect(spendingToday(3, 2, 1)).toBeCloseTo(2, 9);
+    expect(spendingToday(3, 2, 0.5)).toBeCloseTo(1, 9);
+    expect(spendingToday(3, 2, 0)).toBeCloseTo(0, 9);
+    expect(spendingToday(4, 4, 1)).toBeCloseTo(-2.25, 9);
   });
 });

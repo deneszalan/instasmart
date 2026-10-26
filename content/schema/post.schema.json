@@ -172,7 +172,8 @@
                   "israel-electoral-threshold",
                   "icecube-neutrino-nobel",
                   "optogenetics-nobel",
-                  "mirror-molecules-nobel"
+                  "mirror-molecules-nobel",
+                  "nobel-hall-woodford"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

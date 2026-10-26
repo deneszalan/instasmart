@@ -82,4 +82,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'icecube-neutrino-nobel': lazy(() => import('./physics/icecube-neutrino-nobel')),
   'optogenetics-nobel': lazy(() => import('./body/optogenetics-nobel')),
   'mirror-molecules-nobel': lazy(() => import('./chemistry/mirror-molecules-nobel')),
+  'nobel-hall-woodford': lazy(() => import('./economics/nobel-hall-woodford')),
 };

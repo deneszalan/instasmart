@@ -82,6 +82,7 @@ export const LABS = {
   'icecube-neutrino-nobel': 'Read the hit times of a neutrino’s muon in a slice of IceCube and turn your track until it points the way the muon went.',
   'optogenetics-nobel': 'Flash blue light at a nerve cell with and without the channelrhodopsin gene, and tune the flashes until it fires once for each.',
   'mirror-molecules-nobel': 'Start a flask a little more right-handed than left and run rounds of autocatalysis, with mixed pairs idle or working, until one hand takes over.',
+  'nobel-hall-woodford': 'Set today’s interest rate and promise a path for the next two years, then see how spending today responds when people look ahead.',
 } as const;
 
 export type LabId = keyof typeof LABS;
