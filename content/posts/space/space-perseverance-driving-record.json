@@ -1,0 +1,171 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-perseverance-driving-record",
+  "field": "space",
+  "title": "Perseverance now holds the record for driving on another world, mostly steering itself",
+  "emoji": "🧭",
+  "body": "On 11 October 2026, its 2,006th Martian day, NASA's Perseverance rover made a 91.31 m drive that took its odometer to **45.22 km**, past the 45.16 km Opportunity drove between 2004 and 2018, the record for any vehicle on another world. Opportunity needed almost 15 years; Perseverance, about five and a half. It mostly steers itself. Commands take [3 to 22 minutes](https://science.nasa.gov/blog/speaking-percys-language-how-to-talk-so-perseverance-will-listen/) to reach Mars, so planners on Earth choose waypoints, and the rover's AutoNav photographs the ground while rolling, builds a 3D map of hazards and plots a path between them. More than 90% of its driving was done that way, against about 5% for the first autonav on Spirit and Opportunity, and it can cover up to 412 m in a single sol.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Opportunity took almost 15 years to drive its record 45.16 km on Mars. How long did Perseverance take to pass it?",
+      "min": 1,
+      "max": 15,
+      "step": 0.5,
+      "answer": 5.5,
+      "unit": "years",
+      "explanation": "About five and a half years, by NASA's count. It passed the record on 11 October 2026, its 2,006th sol on Mars."
+    },
+    {
+      "type": "video",
+      "src": "drive.mp4",
+      "poster": "drive.jpg",
+      "alt": "Animation of Mars at dusk: an odometer rolls past Opportunity's 45.16 km to 45.22 km, and bars compare drives on Mars and the Moon. Then a top-down hazard map: the rover sees nearby rocks, plots a path to a waypoint and re-plans as it rolls. 20 points against 600,000; 5% against over 90%.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Space Jazz” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 24.27
+        },
+        {
+          "start": 24.53,
+          "end": 30.13
+        },
+        {
+          "start": 30.4,
+          "end": 36.27
+        },
+        {
+          "start": 36.53,
+          "end": 42.4
+        },
+        {
+          "start": 42.67,
+          "end": 48.53
+        },
+        {
+          "start": 48.8,
+          "end": 54.67
+        },
+        {
+          "start": 54.93,
+          "end": 60.8
+        },
+        {
+          "start": 61.07,
+          "end": 66.93
+        },
+        {
+          "start": 67.2,
+          "end": 73.07
+        },
+        {
+          "start": 73.33,
+          "end": 79.2
+        },
+        {
+          "start": 79.47,
+          "end": 85.33
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "perseverance-driving-record",
+      "prompt": "Drive the rover to the waypoint. How far ahead must AutoNav look to take the shortest route rather than a detour?",
+      "takeaway": "About 70 m. Looking 10 m ahead, it drives into the dead end and backs out: 341 m instead of 239. Without AutoNav it stops at the first rock and waits for Earth. A simplified map, but the same idea."
+    },
+    {
+      "type": "chart",
+      "heading": "Farthest drives on other worlds",
+      "items": [
+        {
+          "label": "Perseverance (Mars)",
+          "value": 45.22,
+          "emphasis": true
+        },
+        {
+          "label": "Opportunity (Mars)",
+          "value": 45.16
+        },
+        {
+          "label": "Lunokhod 2 (Moon)",
+          "value": 39
+        },
+        {
+          "label": "Curiosity (Mars)",
+          "value": 38.07
+        },
+        {
+          "label": "Apollo 17 rover (Moon)",
+          "value": 35.7
+        },
+        {
+          "label": "Spirit (Mars)",
+          "value": 7.7
+        }
+      ],
+      "unit": "km",
+      "note": "NASA/JPL, October 2026. Curiosity and Perseverance are still driving."
+    },
+    {
+      "type": "text",
+      "heading": "Thinking while driving",
+      "text": "Perseverance can't be steered live from Earth. Its AutoNav takes pictures of the ground as it rolls, turns them into a 3D map of hazards and plots its course between waypoints chosen by the planners. Sojourner, in 1997, judged the path ahead from 20 measurement points; Perseverance processes 600,000 with every look."
+    },
+    {
+      "type": "quiz",
+      "question": "What do the planners on Earth give Perseverance for an AutoNav drive?",
+      "options": [
+        "Waypoints to reach",
+        "Live joystick steering",
+        "Every turn of the wheels",
+        "Nothing at all"
+      ],
+      "answer": 0,
+      "explanation": "They choose waypoints; the rover maps the hazards from its own pictures and plots the route between them. More than 90% of its 45 km was driven that way."
+    }
+  ],
+  "tags": [
+    "mars",
+    "rovers",
+    "perseverance",
+    "records",
+    "autonomy",
+    "nasa"
+  ],
+  "source": {
+    "label": "NASA/JPL: NASA's Perseverance Sets Off-World Record for Total Distance Driven (12 October 2026)",
+    "url": "https://www.jpl.nasa.gov/news/nasas-perseverance-sets-off-world-record-for-total-distance-driven/"
+  },
+  "theme": {
+    "gradient": [
+      "#2a1410",
+      "#7a3a22"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-26"
+}

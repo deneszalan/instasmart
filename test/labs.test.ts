@@ -74,6 +74,7 @@ import { doublingTime, formula, realPopulation } from '../src/labs/math/doomsday
 import { MIDTERMS, record } from '../src/labs/politics/us-midterm-penalty';
 import { problems, ROWS_MAP, seats } from '../src/labs/politics/redistricting-gerrymander';
 import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold';
+import { autonav, shortest, straight, GOAL } from '../src/labs/space/perseverance-driving-record';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -565,5 +566,17 @@ describe('lab maths', () => {
     expect(allocate(3.25).wasted).toBeCloseTo(8, 6);
     expect(allocate(2.5).blue).toBeLessThan(61);
     expect(allocate(2).gold).toBeGreaterThanOrEqual(61);
+  });
+
+  it('perseverance: looking 10 m ahead it drives into a dead end; 70 m gives nearly the shortest route; a straight line hits a rock', () => {
+    const best = shortest();
+    expect(best).toBeGreaterThan(200);
+    expect(autonav(10).reached).toBe(true);
+    expect(autonav(10).metres).toBeGreaterThan(best * 1.3);
+    expect(autonav(60).metres).toBeGreaterThan(best * 1.05);
+    expect(autonav(70).metres).toBeLessThanOrEqual(best * 1.05);
+    expect(autonav(80).metres).toBeCloseTo(best, 6);
+    for (const v of [10, 20, 30, 40, 50, 60, 70, 80]) expect(autonav(v).path.at(-1)).toEqual(GOAL);
+    expect(straight().reached).toBe(false);
   });
 });

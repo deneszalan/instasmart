@@ -79,6 +79,7 @@ export const LABS = {
   'us-midterm-penalty': 'Tap through every US midterm since 1946, for the House or the Senate, and find when the president’s party gained seats.',
   'redistricting-gerrymander': 'Paint five districts of ten voters on a grid of 30 purple and 20 orange voters, and try to make the minority win.',
   'israel-electoral-threshold': 'Move the vote threshold for example party lists and watch seats move between two blocs, without a single vote changing.',
+  'perseverance-driving-record': 'Drive a rover to a waypoint across a rocky patch of Mars, with or without AutoNav, and see how far ahead it needs to look.',
 } as const;
 
 export type LabId = keyof typeof LABS;
