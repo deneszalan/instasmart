@@ -74,6 +74,7 @@ import { doublingTime, formula, realPopulation } from '../src/labs/math/doomsday
 import { MIDTERMS, record } from '../src/labs/politics/us-midterm-penalty';
 import { problems, ROWS_MAP, seats } from '../src/labs/politics/redistricting-gerrymander';
 import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold';
+import { OTHERS, ROUND1, ROUND2, runoff, tieShare } from '../src/labs/politics/brazil-runoff-comeback';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -565,5 +566,18 @@ describe('lab maths', () => {
     expect(allocate(3.25).wasted).toBeCloseTo(8, 6);
     expect(allocate(2.5).blue).toBeLessThan(61);
     expect(allocate(2).gold).toBeGreaterThanOrEqual(61);
+  });
+
+  it('brazil runoff: an even split keeps Flávio ahead; Lula needs 61.9% of the 9.3 million; the real gains reproduce the result', () => {
+    expect(OTHERS).toBe(9316747);
+    expect(runoff(0.5).flavio).toBeGreaterThan(runoff(0.5).lula);
+    expect(tieShare()).toBeCloseTo(0.6194, 4);
+    expect(runoff(0.62).lula).toBeGreaterThan(runoff(0.62).flavio);
+    const extra = ROUND2.lula + ROUND2.flavio - ROUND1.valid;
+    expect(extra).toBe(4781485);
+    const real = runoff((ROUND2.lula - ROUND1.lula) / (OTHERS + extra), extra);
+    expect(real.lula).toBeCloseTo(ROUND2.lula, 0);
+    expect(real.flavio).toBeCloseTo(ROUND2.flavio, 0);
+    expect(real.lulaShare * 100).toBeCloseTo(51.79, 2);
   });
 });

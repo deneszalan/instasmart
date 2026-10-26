@@ -79,4 +79,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'us-midterm-penalty': lazy(() => import('./politics/us-midterm-penalty')),
   'redistricting-gerrymander': lazy(() => import('./politics/redistricting-gerrymander')),
   'israel-electoral-threshold': lazy(() => import('./politics/israel-electoral-threshold')),
+  'brazil-runoff-comeback': lazy(() => import('./politics/brazil-runoff-comeback')),
 };
