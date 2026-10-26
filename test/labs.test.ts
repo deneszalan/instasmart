@@ -633,6 +633,8 @@ describe('lab maths', () => {
     expect(PRIZES.filter((p) => CHOSEN_BY[p] === 'academy')).toEqual(['physics', 'chemistry', 'economics']);
     expect(score(CHOSEN_BY)).toBe(6);
     expect(score({ peace: 'swedish', literature: 'swedish' })).toBe(1);
+  });
+
   it('perseverance: looking 10 m ahead it drives into a dead end; 70 m gives nearly the shortest route; a straight line hits a rock', () => {
     const best = shortest();
     expect(best).toBeGreaterThan(200);

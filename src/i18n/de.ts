@@ -1192,7 +1192,6 @@ export const de: Record<string, string> = {
   'Looks ahead': 'Blickweite',
   'Driven': 'Gefahren',
   'Shortest route': 'Kürzester Weg',
-  'Result': 'Ergebnis',
   'Driving…': 'Fährt …',
   'At the waypoint': 'Am Wegpunkt',
   'Simplified model: 10 m squares; the rover plans on what it has seen and treats unseen ground as clear.': 'Vereinfachtes Modell: Felder von 10 m; der Rover plant mit dem, was er gesehen hat, und hält ungesehenen Boden für frei.',
