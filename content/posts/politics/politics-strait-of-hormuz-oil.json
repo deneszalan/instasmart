@@ -1,0 +1,158 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-strait-of-hormuz-oil",
+  "field": "politics",
+  "title": "About a fifth of the world’s oil passed through a strait 39 km wide",
+  "emoji": "🛢️",
+  "body": "Before 2026 some 20 million barrels of oil a day, about 20% of world consumption, went through the Strait of Hormuz between Iran and Oman, according to the [US Energy Information Administration](https://www.eia.gov/todayinenergy/detail.php?id=65504); pipelines could carry only about 2.6 million barrels a day around it. After war began on 28 February 2026 and flows through the strait were sharply cut, the Brent price went from $71 a barrel to over $100 within two weeks and reached $138 on 7 April, in the EIA’s [daily data](https://www.eia.gov/dnav/pet/hist/RBRTED.htm), despite a record release of 400 million barrels from emergency stocks agreed by IEA countries on 11 March. Prices leap because in the short run demand hardly bends: economists estimate that a 10% higher price cuts oil use by only about half a percent at first, so buyers give up even a little oil only at a much higher price. In late October Brent was still above $110.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Before 2026, what share of all the oil the world uses passed through the Strait of Hormuz?",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "answer": 20,
+      "unit": "%",
+      "explanation": "About 20%: some 20 million barrels a day in 2024, according to the US Energy Information Administration, through a strait 39 km wide at its narrowest."
+    },
+    {
+      "type": "video",
+      "src": "strait.mp4",
+      "poster": "strait.jpg",
+      "alt": "Animation on a night-sea chart: a schematic Strait of Hormuz with tankers in two lanes, 20 million barrels a day and a bypass pipeline. Then the daily 2026 Brent price climbs from $71 to $138, and a steep demand curve shows how 1% less oil lifts the price 22% and 3.4% less doubles it.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Exit the Premises” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 6,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 24.27
+        },
+        {
+          "start": 24.53,
+          "end": 31.47
+        },
+        {
+          "start": 31.73,
+          "end": 37.6
+        },
+        {
+          "start": 37.87,
+          "end": 44
+        },
+        {
+          "start": 44.27,
+          "end": 50.13
+        },
+        {
+          "start": 50.4,
+          "end": 56.27
+        },
+        {
+          "start": 56.53,
+          "end": 62.4
+        },
+        {
+          "start": 62.67,
+          "end": 68.53
+        },
+        {
+          "start": 68.8,
+          "end": 74.4
+        },
+        {
+          "start": 74.67,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "strait-of-hormuz-oil",
+      "prompt": "Take oil off the market and set how strongly buyers respond. Find a cut that pushes the price from $71 to the April high of $138.",
+      "takeaway": "At an elasticity of 0.05, about 3.3% less oil is enough to nearly double the price. At 0.3, when buyers bend more, the same cut adds only about 12%."
+    },
+    {
+      "type": "chart",
+      "heading": "Brent crude, dollars a barrel, 2026",
+      "items": [
+        {
+          "label": "27 February, before the war",
+          "value": 71.32
+        },
+        {
+          "label": "12 March",
+          "value": 102.38
+        },
+        {
+          "label": "7 April, the high",
+          "value": 138.21,
+          "emphasis": true
+        },
+        {
+          "label": "20 October",
+          "value": 115.22
+        }
+      ],
+      "note": "EIA, Europe Brent spot price, daily"
+    },
+    {
+      "type": "text",
+      "heading": "Why such a jump?",
+      "text": "In the short run, people and firms can’t quickly drive less, switch fuels or change how they heat and make things, so demand hardly bends. With an elasticity of 0.05, buyers use 1% less oil only if the price rises by about 22%. Given more time, buyers adapt more, and stocks and other routes soften the blow."
+    },
+    {
+      "type": "quiz",
+      "question": "Why can a small cut in oil supply raise the price so much?",
+      "options": [
+        "Short-run demand barely responds",
+        "Tankers are paid per kilometre",
+        "Oil is priced in gold",
+        "Refineries all close at once"
+      ],
+      "answer": 0,
+      "explanation": "In the short run buyers can hardly use less oil, so the price has to rise a long way before demand shrinks to match the smaller supply."
+    }
+  ],
+  "tags": [
+    "oil",
+    "shipping",
+    "prices",
+    "energy",
+    "economics",
+    "hormuz"
+  ],
+  "source": {
+    "label": "US EIA: The Strait of Hormuz remains a critical oil chokepoint",
+    "url": "https://www.eia.gov/todayinenergy/detail.php?id=65504"
+  },
+  "theme": {
+    "gradient": [
+      "#06202b",
+      "#7a4a12"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-26"
+}

@@ -82,4 +82,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'brazil-runoff-comeback': lazy(() => import('./politics/brazil-runoff-comeback')),
   'un-secretary-general-straw-polls': lazy(() => import('./politics/un-secretary-general-straw-polls')),
   'bosnia-three-presidents': lazy(() => import('./politics/bosnia-three-presidents')),
+  'strait-of-hormuz-oil': lazy(() => import('./politics/strait-of-hormuz-oil')),
 };

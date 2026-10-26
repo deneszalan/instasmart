@@ -82,6 +82,7 @@ export const LABS = {
   'brazil-runoff-comeback': 'Split the other candidates’ votes and new voters between Lula and Flávio Bolsonaro, and see when second place wins Brazil’s runoff.',
   'un-secretary-general-straw-polls': 'Change the 15 ballots of a UN Secretary-General straw poll, red for the permanent members, and see what it takes to pass.',
   'bosnia-three-presidents': 'Choose where a Bosnian citizen lives and which group they declare, and see which presidency seats they may vote for or stand for.',
+  'strait-of-hormuz-oil': 'Take a share of the world’s oil off the market, set how much buyers respond to price, and watch the price of a barrel.',
 } as const;
 
 export type LabId = keyof typeof LABS;

@@ -1148,4 +1148,13 @@ export const de: Record<string, string> = {
   'May vote for': 'Darf wählen',
   'May stand for': 'Darf kandidieren für',
   'Tried': 'Ausprobiert',
+  '7 April high': 'Höchststand am 7. April',
+  'off the chart': 'außerhalb des Diagramms',
+  'oil used, % of normal': 'verbrauchtes Öl, % des Normalen',
+  'A demand curve for oil: with {c}% less oil the price is ${p}': 'Eine Nachfragekurve für Öl: Mit {c} % weniger Öl liegt der Preis bei {p} $',
+  'Oil missing': 'Fehlendes Öl',
+  'Elasticity': 'Elastizität',
+  'Price, from $71': 'Preis, von 71 $',
+  'Change': 'Änderung',
+  'Doubles at': 'Verdoppelt bei',
 };

@@ -77,6 +77,7 @@ import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold
 import { OTHERS, ROUND1, ROUND2, runoff, tieShare } from '../src/labs/politics/brazil-runoff-comeback';
 import { OCT_16, OCT_2016, verdict } from '../src/labs/politics/un-secretary-general-straw-polls';
 import { rights, type People, type Place } from '../src/labs/politics/bosnia-three-presidents';
+import { doublingCut, PEAK, PREWAR, price } from '../src/labs/politics/strait-of-hormuz-oil';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -602,5 +603,15 @@ describe('lab maths', () => {
     const people: People[] = ['bosniak', 'croat', 'serb', 'other'], places: Place[] = ['federation', 'srpska'];
     expect(people.flatMap((p) => places.map((w) => rights(p, w).run)).filter(Boolean)).toHaveLength(3);
     expect(places.map((w) => rights('other', w).run)).toEqual([null, null]);
+  });
+
+  it('hormuz: at elasticity 0.05, 1% less oil means +22%, the price doubles at a 3.4% shortfall, and about 3.3% reaches the April high', () => {
+    expect(price(0, 0.05)).toBeCloseTo(PREWAR, 9);
+    expect(price(0.01, 0.05) / PREWAR).toBeCloseTo(1.2226, 3);
+    expect(doublingCut(0.05)).toBeCloseTo(0.0341, 4);
+    expect(price(doublingCut(0.05), 0.05)).toBeCloseTo(2 * PREWAR, 6);
+    expect(price(0.032, 0.05)).toBeLessThan(PEAK);
+    expect(price(0.033, 0.05)).toBeGreaterThan(PEAK);
+    expect(price(0.033, 0.3) / PREWAR).toBeCloseTo(1.118, 2);
   });
 });
