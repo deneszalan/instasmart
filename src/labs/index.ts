@@ -83,4 +83,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'un-secretary-general-straw-polls': lazy(() => import('./politics/un-secretary-general-straw-polls')),
   'bosnia-three-presidents': lazy(() => import('./politics/bosnia-three-presidents')),
   'strait-of-hormuz-oil': lazy(() => import('./politics/strait-of-hormuz-oil')),
+  'nobel-peace-prize-norway': lazy(() => import('./politics/nobel-peace-prize-norway')),
 };

@@ -78,6 +78,7 @@ import { OTHERS, ROUND1, ROUND2, runoff, tieShare } from '../src/labs/politics/b
 import { OCT_16, OCT_2016, verdict } from '../src/labs/politics/un-secretary-general-straw-polls';
 import { rights, type People, type Place } from '../src/labs/politics/bosnia-three-presidents';
 import { doublingCut, PEAK, PREWAR, price } from '../src/labs/politics/strait-of-hormuz-oil';
+import { CHOSEN_BY, inOslo, PRIZES, score } from '../src/labs/politics/nobel-peace-prize-norway';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -613,5 +614,12 @@ describe('lab maths', () => {
     expect(price(0.032, 0.05)).toBeLessThan(PEAK);
     expect(price(0.033, 0.05)).toBeGreaterThan(PEAK);
     expect(price(0.033, 0.3) / PREWAR).toBeCloseTo(1.118, 2);
+  });
+
+  it('nobel: five prizes are chosen in Stockholm, three by the Academy of Sciences; only peace in Oslo', () => {
+    expect(PRIZES.filter((p) => inOslo(CHOSEN_BY[p]))).toEqual(['peace']);
+    expect(PRIZES.filter((p) => CHOSEN_BY[p] === 'academy')).toEqual(['physics', 'chemistry', 'economics']);
+    expect(score(CHOSEN_BY)).toBe(6);
+    expect(score({ peace: 'swedish', literature: 'swedish' })).toBe(1);
   });
 });
