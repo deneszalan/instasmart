@@ -16,6 +16,10 @@ export const LAYERS = [
 /** How many party members there are for each seat on a layer. */
 export const membersPerSeat = (level: number) => LAYERS[0].people / LAYERS[level].people;
 
+/** Each layer's name, translated (written out so the translation check can see every string). */
+const layerName = (i: number) =>
+  [t('Party members'), t('National Congress'), t('Central Committee'), t('Politburo'), t('Standing Committee'), t('General Secretary')][i];
+
 /** A big count in words: 13.7 million, 41,812, 7. */
 function count(n: number): string {
   return n >= 1e6 ? t('{n} million', { n: formatNumber(Math.round(n / 1e5) / 10) }) : formatNumber(Math.round(n));
@@ -31,7 +35,7 @@ export default function PartyPyramid({ onDone }: LabProps) {
       const bw = (w - 20) * (1 - (i / (n - 1)) * 0.82), y = h - 4 - (i + 1) * band, on = i === level, passed = i < level;
       ctx.fillStyle = on ? C.accent : passed ? 'rgba(253,224,71,0.25)' : 'rgba(255,255,255,0.12)';
       ctx.fillRect((w - bw) / 2, y + 3, bw, band - 6);
-      label(ctx, t(layer.name), w / 2, y + band / 2 - 7, { size: 12, color: on ? '#1f1b0a' : C.ink });
+      label(ctx, layerName(i), w / 2, y + band / 2 - 7, { size: 12, color: on ? '#1f1b0a' : C.ink });
       label(ctx, formatNumber(layer.people), w / 2, y + band / 2 + 9, { size: 11, weight: 600, color: on ? '#1f1b0a' : C.soft });
     });
   };
@@ -39,8 +43,8 @@ export default function PartyPyramid({ onDone }: LabProps) {
   const layer = LAYERS[level];
   return (
     <div className="lab">
-      <Stage draw={draw} label={t('The party pyramid, at the {name}', { name: t(layer.name) })} />
-      <Range label={t('Step up')} value={level} min={0} max={LAYERS.length - 1} step={1} onChange={setLevel} format={(v) => t(LAYERS[v].name)} />
+      <Stage draw={draw} label={t('The party pyramid, at the {name}', { name: layerName(level) })} />
+      <Range label={t('Step up')} value={level} min={0} max={LAYERS.length - 1} step={1} onChange={setLevel} format={(v) => layerName(v)} />
       <Readouts
         items={[
           { label: t('People'), value: formatNumber(layer.people) },
