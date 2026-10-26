@@ -1148,4 +1148,12 @@ export const de: Record<string, string> = {
   'Believed by': 'Geglaubt von',
   'Spending today': 'Ausgaben heute',
   'Simplified: fixed prices, a neutral rate of 3% and perfect planners. Real economies respond less.': 'Vereinfacht: feste Preise, ein neutraler Zins von 3 % und perfekte Planer. Echte Volkswirtschaften reagieren schwächer.',
+  'delivered': 'geliefert',
+  'lost as heat': 'als Wärme verloren',
+  '{p} MW sent at {v} kV: {a} amps, and {l}% lost as heat': '{p} MW bei {v} kV: {a} Ampere, und {l} % gehen als Wärme verloren',
+  'Line voltage': 'Leitungsspannung',
+  'Current': 'Strom',
+  'Lost as heat': 'Als Wärme verloren',
+  'Delivered': 'Geliefert',
+  'Simplified: 10 MW from a 10 kV generator, sent through one line with 5 ohms of resistance.': 'Vereinfacht: 10 MW von einem 10-kV-Generator, durch eine Leitung mit 5 Ohm Widerstand geschickt.',
 };

@@ -78,6 +78,7 @@ import { angleGap, fitAt, hitsOf, newEvent, SENSORS, THETA } from '../src/labs/p
 import { simulate as optoRun } from '../src/labs/body/optogenetics-nobel';
 import { round as chiralRound, rounds as chiralRounds } from '../src/labs/chemistry/mirror-molecules-nobel';
 import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
+import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -611,5 +612,14 @@ describe('lab maths', () => {
     expect(spendingToday(3, 2, 0.5)).toBeCloseTo(1, 9);
     expect(spendingToday(3, 2, 0)).toBeCloseTo(0, 9);
     expect(spendingToday(4, 4, 1)).toBeCloseTo(-2.25, 9);
+  });
+
+  it('power grid: 10 MW at 10 kV loses half; ten times the voltage loses a hundredth as much; under 1% from about 71 kV', () => {
+    expect(lineLoss(10).amps).toBeCloseTo(1000, 9);
+    expect(lineLoss(10).share).toBeCloseTo(0.5, 9);
+    expect(lineLoss(100).share).toBeCloseTo(0.005, 9);
+    expect(lineLoss(10).lossMW / lineLoss(100).lossMW).toBeCloseTo(100, 9);
+    expect(lineLoss(70).share).toBeGreaterThan(0.01);
+    expect(lineLoss(75).share).toBeLessThan(0.01);
   });
 });

@@ -173,7 +173,8 @@
                   "icecube-neutrino-nobel",
                   "optogenetics-nobel",
                   "mirror-molecules-nobel",
-                  "nobel-hall-woodford"
+                  "nobel-hall-woodford",
+                  "power-grid-transformers"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },
