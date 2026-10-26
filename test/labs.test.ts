@@ -689,6 +689,8 @@ describe('lab maths', () => {
     expect(pacific(0.55).eastAnomaly).toBeLessThan(EAST_2026);
     expect(pacific(0).rainAt).toBeGreaterThan(pacific(1).rainAt);
     expect(pacific(1.5).eastAnomaly).toBeLessThan(0);
+  });
+
   it('icecube: 540 sensors in the slice, a 40° Cherenkov angle, and hit times that match only the true direction', () => {
     expect(SENSORS).toHaveLength(9 * 60);
     expect((THETA * 180) / Math.PI).toBeCloseTo(40.2, 1);
