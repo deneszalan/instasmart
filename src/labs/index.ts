@@ -80,4 +80,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'redistricting-gerrymander': lazy(() => import('./politics/redistricting-gerrymander')),
   'israel-electoral-threshold': lazy(() => import('./politics/israel-electoral-threshold')),
   'perseverance-driving-record': lazy(() => import('./space/perseverance-driving-record')),
+  'primordial-helium-big-bang': lazy(() => import('./space/primordial-helium-big-bang')),
 };

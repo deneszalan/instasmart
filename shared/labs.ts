@@ -80,6 +80,7 @@ export const LABS = {
   'redistricting-gerrymander': 'Paint five districts of ten voters on a grid of 30 purple and 20 orange voters, and try to make the minority win.',
   'israel-electoral-threshold': 'Move the vote threshold for example party lists and watch seats move between two blocs, without a single vote changing.',
   'perseverance-driving-record': 'Drive a rover to a waypoint across a rocky patch of Mars, with or without AutoNav, and see how far ahead it needs to look.',
+  'primordial-helium-big-bang': 'Choose when the first nuclei could form after the Big Bang and see how much helium the universe ends up with, against the 2026 measurement.',
 } as const;
 
 export type LabId = keyof typeof LABS;

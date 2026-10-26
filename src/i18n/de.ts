@@ -1119,4 +1119,12 @@ export const de: Record<string, string> = {
   'Driving…': 'Fährt …',
   'At the waypoint': 'Am Wegpunkt',
   'Simplified model: 10 m squares; the rover plans on what it has seen and treats unseen ground as clear.': 'Vereinfachtes Modell: Felder von 10 m; der Rover plant mit dem, was er gesehen hat, und hält ungesehenen Boden für frei.',
+  'Helium made if nuclei start forming {m} minutes after the Big Bang: {p} of the mass': 'Helium, das entsteht, wenn sich Atomkerne {m} Minuten nach dem Urknall bilden: {p} der Masse',
+  'Nuclei start forming after': 'Kerne bilden sich nach',
+  '{n} min': '{n} Min.',
+  'measured in 2026': '2026 gemessen',
+  'Neutrons : protons': 'Neutronen : Protonen',
+  'Helium share': 'Heliumanteil',
+  'Measured': 'Gemessen',
+  'Simplest model: one neutron per six protons at one second, then only neutron decay; every neutron left ends up in helium.': 'Einfachstes Modell: ein Neutron auf sechs Protonen nach einer Sekunde, danach nur Neutronenzerfall; jedes übrige Neutron landet im Helium.',
 };

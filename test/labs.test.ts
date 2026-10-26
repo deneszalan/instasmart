@@ -75,6 +75,7 @@ import { MIDTERMS, record } from '../src/labs/politics/us-midterm-penalty';
 import { problems, ROWS_MAP, seats } from '../src/labs/politics/redistricting-gerrymander';
 import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold';
 import { autonav, shortest, straight, GOAL } from '../src/labs/space/perseverance-driving-record';
+import { heliumAt, heliumShare, MEASURED, MEASURED_ERR, neutronsPerProton } from '../src/labs/space/primordial-helium-big-bang';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -578,5 +579,14 @@ describe('lab maths', () => {
     expect(autonav(80).metres).toBeCloseTo(best, 6);
     for (const v of [10, 20, 30, 40, 50, 60, 70, 80]) expect(autonav(v).path.at(-1)).toEqual(GOAL);
     expect(straight().reached).toBe(false);
+  });
+
+  it('helium: n/p 1/7 gives 25%; decay alone from 1/6 at one second reaches the measured 24.6% after about 2.2 minutes', () => {
+    expect(heliumShare(1 / 7)).toBeCloseTo(0.25, 10);
+    expect(neutronsPerProton(1)).toBeCloseTo(1 / 6, 10);
+    expect(Math.abs(heliumAt(132) - MEASURED)).toBeLessThanOrEqual(MEASURED_ERR);
+    expect(Math.abs(heliumAt(126) - MEASURED)).toBeGreaterThan(MEASURED_ERR);
+    expect(heliumAt(600)).toBeCloseTo(0.145, 3);
+    expect(heliumAt(20 * 60)).toBeLessThan(heliumAt(10 * 60));
   });
 });
