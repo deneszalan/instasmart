@@ -75,6 +75,7 @@ import { MIDTERMS, record } from '../src/labs/politics/us-midterm-penalty';
 import { problems, ROWS_MAP, seats } from '../src/labs/politics/redistricting-gerrymander';
 import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold';
 import { OTHERS, ROUND1, ROUND2, runoff, tieShare } from '../src/labs/politics/brazil-runoff-comeback';
+import { OCT_16, OCT_2016, verdict } from '../src/labs/politics/un-secretary-general-straw-polls';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -579,5 +580,16 @@ describe('lab maths', () => {
     expect(real.lula).toBeCloseTo(ROUND2.lula, 0);
     expect(real.flavio).toBeCloseTo(ROUND2.flavio, 0);
     expect(real.lulaShare * 100).toBeCloseTo(51.79, 2);
+  });
+
+  it('straw polls: Grynspan had 9 encourages but 2 red discourages on 16 October; flipping those two passes; Guterres 2016 passed', () => {
+    expect(OCT_16).toHaveLength(15);
+    expect(verdict(OCT_16)).toEqual({ encourage: 9, redDiscourage: 2, passes: false });
+    expect(OCT_16.filter((v) => v === 'D')).toHaveLength(5);
+    const whiteOnly = OCT_16.map((v, i) => (i >= 5 ? 'E' : v));
+    expect(verdict(whiteOnly).passes).toBe(false);
+    const flipped = OCT_16.map((v, i) => (i < 5 && v === 'D' ? 'N' : v));
+    expect(verdict(flipped).passes).toBe(true);
+    expect(verdict(OCT_2016)).toEqual({ encourage: 13, redDiscourage: 0, passes: true });
   });
 });

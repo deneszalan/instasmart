@@ -80,6 +80,7 @@ export const LABS = {
   'redistricting-gerrymander': 'Paint five districts of ten voters on a grid of 30 purple and 20 orange voters, and try to make the minority win.',
   'israel-electoral-threshold': 'Move the vote threshold for example party lists and watch seats move between two blocs, without a single vote changing.',
   'brazil-runoff-comeback': 'Split the other candidates’ votes and new voters between Lula and Flávio Bolsonaro, and see when second place wins Brazil’s runoff.',
+  'un-secretary-general-straw-polls': 'Change the 15 ballots of a UN Secretary-General straw poll, red for the permanent members, and see what it takes to pass.',
 } as const;
 
 export type LabId = keyof typeof LABS;

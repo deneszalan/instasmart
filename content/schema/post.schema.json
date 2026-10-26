@@ -170,7 +170,8 @@
                   "us-midterm-penalty",
                   "redistricting-gerrymander",
                   "israel-electoral-threshold",
-                  "brazil-runoff-comeback"
+                  "brazil-runoff-comeback",
+                  "un-secretary-general-straw-polls"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },
