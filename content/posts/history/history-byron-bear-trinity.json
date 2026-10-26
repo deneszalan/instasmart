@@ -1,0 +1,135 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-byron-bear-trinity",
+  "field": "history",
+  "title": "Lord Byron kept a bear at Cambridge because students weren't allowed dogs",
+  "emoji": "🐻",
+  "cover": {
+    "src": "cover.jpg",
+    "alt": "Lord Byron, a young man in a blue tailcoat, holds the chain of a tame brown bear in front of a college gateway."
+  },
+  "body": "Trinity College, Cambridge, had long banned undergraduates from keeping dogs in college. In the autumn of 1807 the 19-year-old **Lord Byron** came back with a tame bear instead. 'When I brought him here,' he wrote to his friend Elizabeth Pigot on 26 October, 'they asked me what I meant to do with him, and my reply was, \"he should sit for a fellowship.\" … This answer delighted them not.' The bear probably lived in a stable in the town rather than in college, and Byron left Cambridge for good within a few months. In 1809 he joked in print that jealous rivals had kept the bear from its fellowship. By 1811 the bear was dead.",
+  "slides": [
+    {
+      "type": "comic",
+      "src": "panel-1.jpg",
+      "alt": "A college court of pale stone with a gateway. Young Lord Byron stands beside his big black dog while a stern don in a black gown and mortarboard points at it.",
+      "caption": "Trinity College, Cambridge, 1807. The rules are clear: no dogs in college.",
+      "bubbles": [
+        {
+          "text": "He's practically a gentleman.",
+          "speaker": "Lord Byron",
+          "x": 23.5,
+          "y": 30,
+          "width": 40,
+          "tail": {
+            "x": 27.5,
+            "y": 46.4
+          }
+        },
+        {
+          "text": "No dogs, my lord. Statutes are statutes.",
+          "speaker": "A college fellow",
+          "x": 71,
+          "y": 34,
+          "width": 52,
+          "tail": {
+            "x": 69.1,
+            "y": 42.9
+          }
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-2.jpg",
+      "alt": "Byron, grinning, leads a big brown bear on a chain through the college gateway. The don stares, appalled.",
+      "caption": "Autumn term, 1807. Byron, 19, comes back with a tame bear.",
+      "bubbles": [
+        {
+          "text": "You did say no dogs.",
+          "speaker": "Lord Byron",
+          "x": 24,
+          "y": 31,
+          "width": 38,
+          "tail": {
+            "x": 25.2,
+            "y": 46.5
+          }
+        },
+        {
+          "text": "And what do you mean to do with him?",
+          "speaker": "A college fellow",
+          "x": 70,
+          "y": 36,
+          "width": 44,
+          "tail": {
+            "x": 74.9,
+            "y": 45.9
+          },
+          "kind": "shout"
+        }
+      ]
+    },
+    {
+      "type": "comic",
+      "src": "panel-3.jpg",
+      "alt": "In a panelled college room the bear sits up wearing a mortarboard, between a smirking Byron and a grim don.",
+      "caption": "His answer 'delighted them not', Byron told a friend. Later he claimed jealous rivals had blocked the bear's fellowship.",
+      "bubbles": [
+        {
+          "text": "He should sit for a fellowship.",
+          "speaker": "Lord Byron",
+          "x": 26,
+          "y": 36,
+          "width": 44,
+          "tail": {
+            "x": 22.2,
+            "y": 49.6
+          }
+        },
+        {
+          "text": "Absolutely not.",
+          "speaker": "A college fellow",
+          "x": 82,
+          "y": 38,
+          "width": 30,
+          "tail": {
+            "x": 81.9,
+            "y": 47.6
+          },
+          "kind": "shout"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What did Byron say his bear would do at Trinity?",
+      "options": [
+        "Sit for a fellowship",
+        "Guard his rooms from creditors",
+        "Pull his carriage to London",
+        "Win a bet with the Master"
+      ],
+      "answer": 0,
+      "explanation": "'He should sit for a fellowship,' he told the college, as he reported in a letter of 26 October 1807. 'This answer delighted them not.'"
+    }
+  ],
+  "tags": [
+    "byron",
+    "cambridge",
+    "bears",
+    "poets",
+    "1800s",
+    "comic"
+  ],
+  "source": {
+    "label": "Anne Barton, 'Lord Byron and Trinity' (Open Book Publishers, 2024)",
+    "url": "https://doi.org/10.11647/OBP.0399.01"
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-26"
+}
