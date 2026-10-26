@@ -80,6 +80,11 @@ import { OCT_16, OCT_2016, verdict } from '../src/labs/politics/un-secretary-gen
 import { rights, type People, type Place } from '../src/labs/politics/bosnia-three-presidents';
 import { doublingCut, PEAK, PREWAR, price } from '../src/labs/politics/strait-of-hormuz-oil';
 import { CHOSEN_BY, inOslo, PRIZES, score } from '../src/labs/politics/nobel-peace-prize-norway';
+import { autonav, shortest, straight, GOAL } from '../src/labs/space/perseverance-driving-record';
+import { heliumAt, heliumShare, MEASURED, MEASURED_ERR, neutronsPerProton } from '../src/labs/space/primordial-helium-big-bang';
+import { outbreak, perCase, possibleTree, GENERATIONS } from '../src/labs/body/ebola-21-day-quarantine';
+import { CHLORINE, DU_LINE, lowestOzone } from '../src/labs/earth/ozone-hole-2026';
+import { EAST_2026, pacific } from '../src/labs/earth/el-nino-record-seas';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -628,5 +633,54 @@ describe('lab maths', () => {
     expect(PRIZES.filter((p) => CHOSEN_BY[p] === 'academy')).toEqual(['physics', 'chemistry', 'economics']);
     expect(score(CHOSEN_BY)).toBe(6);
     expect(score({ peace: 'swedish', literature: 'swedish' })).toBe(1);
+  it('perseverance: looking 10 m ahead it drives into a dead end; 70 m gives nearly the shortest route; a straight line hits a rock', () => {
+    const best = shortest();
+    expect(best).toBeGreaterThan(200);
+    expect(autonav(10).reached).toBe(true);
+    expect(autonav(10).metres).toBeGreaterThan(best * 1.3);
+    expect(autonav(60).metres).toBeGreaterThan(best * 1.05);
+    expect(autonav(70).metres).toBeLessThanOrEqual(best * 1.05);
+    expect(autonav(80).metres).toBeCloseTo(best, 6);
+    for (const v of [10, 20, 30, 40, 50, 60, 70, 80]) expect(autonav(v).path.at(-1)).toEqual(GOAL);
+    expect(straight().reached).toBe(false);
+  });
+
+  it('helium: n/p 1/7 gives 25%; decay alone from 1/6 at one second reaches the measured 24.6% after about 2.2 minutes', () => {
+    expect(heliumShare(1 / 7)).toBeCloseTo(0.25, 10);
+    expect(neutronsPerProton(1)).toBeCloseTo(1 / 6, 10);
+    expect(Math.abs(heliumAt(132) - MEASURED)).toBeLessThanOrEqual(MEASURED_ERR);
+    expect(Math.abs(heliumAt(126) - MEASURED)).toBeGreaterThan(MEASURED_ERR);
+    expect(heliumAt(600)).toBeCloseTo(0.145, 3);
+    expect(heliumAt(20 * 60)).toBeLessThan(heliumAt(10 * 60));
+  });
+
+
+  it('ebola tracing: with 2 infections per missed case, chains shrink once more than half of contacts are found', () => {
+    expect(perCase(2, 0.5)).toBe(1);
+    expect(perCase(2, 0.55)).toBeLessThan(1);
+    expect(perCase(3, 0.65)).toBeGreaterThan(1);
+    const tree = possibleTree(2);
+    const none = outbreak(tree, 0), most = outbreak(tree, 0.9), all = outbreak(tree, 1);
+    expect(none.perGen[GENERATIONS]).toBeGreaterThan(8);
+    expect(most.perGen[GENERATIONS]).toBeLessThan(none.perGen[GENERATIONS]);
+    expect(all.perGen.slice(2).every((n) => n === 0)).toBe(true);
+    expect(all.perGen[1]).toBe(none.perGen[1]);
+  });
+
+  it('ozone toy model: a hole needs cold, sunlight and chlorine together; peak chlorine gives about 120 DU', () => {
+    expect(lowestOzone(-92, CHLORINE[2000], true)).toBeCloseTo(120, 6);
+    expect(lowestOzone(-92, CHLORINE[2024], true)).toBeLessThan(DU_LINE);
+    expect(lowestOzone(-92, CHLORINE[2024], false)).toBe(350);
+    expect(lowestOzone(-92, CHLORINE[1980], true)).toBe(350);
+    expect(lowestOzone(-75, CHLORINE[2024], true)).toBe(350);
+    expect(lowestOzone(-80, CHLORINE[2024], true)).toBeGreaterThan(DU_LINE);
+  });
+
+  it('el niño toy model: normal winds give NOAA’s half-metre slope and 8 °C contrast; half-strength winds warm the east by 4 °C', () => {
+    expect(pacific(1)).toMatchObject({ slope: 0.5, contrast: 8, eastAnomaly: 0 });
+    expect(pacific(0.5).eastAnomaly).toBeGreaterThanOrEqual(EAST_2026);
+    expect(pacific(0.55).eastAnomaly).toBeLessThan(EAST_2026);
+    expect(pacific(0).rainAt).toBeGreaterThan(pacific(1).rainAt);
+    expect(pacific(1.5).eastAnomaly).toBeLessThan(0);
   });
 });

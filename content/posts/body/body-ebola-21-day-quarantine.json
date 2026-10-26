@@ -1,0 +1,150 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-ebola-21-day-quarantine",
+  "field": "body",
+  "title": "Ebola contacts are watched for 21 days: the virus can take that long to cause symptoms",
+  "emoji": "📅",
+  "body": "By 24 October 2026, CDC had counted 9,995 confirmed cases and 4,845 confirmed deaths in an outbreak of Ebola disease caused by Bundibugyo virus and centred on the Democratic Republic of the Congo, the second-largest Ebola outbreak on record. The virus spreads through direct contact with the blood or body fluids of someone who is sick or has died, or with things they have soiled; it doesn't spread like flu, and people [cannot pass it on before their symptoms start](https://www.cdc.gov/ebola/causes/index.html). Symptoms appear 2 to 21 days after infection, so health workers list each patient's contacts, check on them every day for 21 days and isolate anyone at the first symptoms. That works when the lists are complete: in Kenya, every case after the first, a traveller reported on 6 October, was already in quarantine when diagnosed, while in the DR Congo in July only 15–20% of new cases had been known contacts. The [WHO](https://www.who.int/news-room/fact-sheets/detail/ebola-disease) lists approved vaccines and treatments only for Ebola virus, none for Bundibugyo virus.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "At most, how many days after infection can Ebola take to cause its first symptoms?",
+      "min": 1,
+      "max": 60,
+      "step": 1,
+      "answer": 21,
+      "unit": "days",
+      "explanation": "Up to 21 days, according to WHO and CDC, and most often 8 to 10. That is why the contacts of a case are followed for 21 days."
+    },
+    {
+      "type": "video",
+      "src": "watch.mp4",
+      "poster": "watch.jpg",
+      "alt": "Animation in slate and sand: 9,995 squares, one per confirmed case. Ebola spreads by direct contact, not through the air. A 21-day calendar marks the incubation; a patient's contacts are checked daily, one is isolated at a fever, a missed one starts a new chain. Then Kenya and DR Congo.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“At Rest” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 24.27
+        },
+        {
+          "start": 24.53,
+          "end": 30.4
+        },
+        {
+          "start": 30.67,
+          "end": 36.53
+        },
+        {
+          "start": 36.8,
+          "end": 42.67
+        },
+        {
+          "start": 42.93,
+          "end": 48.8
+        },
+        {
+          "start": 49.07,
+          "end": 54.93
+        },
+        {
+          "start": 55.2,
+          "end": 61.07
+        },
+        {
+          "start": 61.33,
+          "end": 67.2
+        },
+        {
+          "start": 67.47,
+          "end": 73.33
+        },
+        {
+          "start": 73.6,
+          "end": 79.47
+        },
+        {
+          "start": 79.73,
+          "end": 85.6
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "ebola-21-day-quarantine",
+      "prompt": "Slide how many contacts the tracers find. What share must they reach before chains of infection start to shrink?",
+      "takeaway": "Over half, if each missed case infects two others: then each case leads to fewer than one new one. With three it takes over two-thirds. Real tracing is harder; the response target is over 90%."
+    },
+    {
+      "type": "compare",
+      "heading": "When the contact lists are complete",
+      "left": {
+        "label": "Kenya, October 2026",
+        "text": "Of 9 cases, every one after the first, a traveller from the DR Congo, was already in quarantine when diagnosed. No community spread was reported."
+      },
+      "right": {
+        "label": "DR Congo, July 2026",
+        "text": "Only 15–20% of new cases had been on a contact list, against a target of over 90%, so most came from chains nobody knew about."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Why 21 days?",
+      "text": "In the West Africa epidemic of 2014 to 2016, caused by Ebola virus, a relative of Bundibugyo virus, about 95% of patients fell ill within 21 days of their exposure, according to the WHO Ebola Response Team. Watching contacts for 21 days covers almost everyone who will fall ill."
+    },
+    {
+      "type": "quiz",
+      "question": "Why is a contact isolated as soon as they have a fever or other first symptoms?",
+      "options": [
+        "That is when they become infectious",
+        "A fever means they are recovering",
+        "It stops the virus spreading in air",
+        "Only then can they get a vaccine"
+      ],
+      "answer": 0,
+      "explanation": "People with Ebola can't pass it on before symptoms start. Isolating them at the first symptoms stops the chain before it can continue."
+    }
+  ],
+  "tags": [
+    "ebola",
+    "epidemics",
+    "viruses",
+    "quarantine",
+    "publichealth",
+    "congo"
+  ],
+  "source": {
+    "label": "CDC: Ebola Outbreak, Current Situation (updated 24 October 2026)",
+    "url": "https://www.cdc.gov/ebola/situation-summary/index.html"
+  },
+  "theme": {
+    "gradient": [
+      "#12262b",
+      "#2f4d52"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-26"
+}

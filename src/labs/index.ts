@@ -85,4 +85,9 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'bosnia-three-presidents': lazy(() => import('./politics/bosnia-three-presidents')),
   'strait-of-hormuz-oil': lazy(() => import('./politics/strait-of-hormuz-oil')),
   'nobel-peace-prize-norway': lazy(() => import('./politics/nobel-peace-prize-norway')),
+  'perseverance-driving-record': lazy(() => import('./space/perseverance-driving-record')),
+  'primordial-helium-big-bang': lazy(() => import('./space/primordial-helium-big-bang')),
+  'ebola-21-day-quarantine': lazy(() => import('./body/ebola-21-day-quarantine')),
+  'ozone-hole-2026': lazy(() => import('./earth/ozone-hole-2026')),
+  'el-nino-record-seas': lazy(() => import('./earth/el-nino-record-seas')),
 };

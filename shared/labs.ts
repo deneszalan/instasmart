@@ -85,6 +85,11 @@ export const LABS = {
   'bosnia-three-presidents': 'Choose where a Bosnian citizen lives and which group they declare, and see which presidency seats they may vote for or stand for.',
   'strait-of-hormuz-oil': 'Take a share of the world’s oil off the market, set how much buyers respond to price, and watch the price of a barrel.',
   'nobel-peace-prize-norway': 'Match each Nobel prize to the institution that chooses its winner, in Stockholm or in Oslo.',
+  'perseverance-driving-record': 'Drive a rover to a waypoint across a rocky patch of Mars, with or without AutoNav, and see how far ahead it needs to look.',
+  'primordial-helium-big-bang': 'Choose when the first nuclei could form after the Big Bang and see how much helium the universe ends up with, against the 2026 measurement.',
+  'ebola-21-day-quarantine': 'Trace a share of the contacts of Ebola cases, isolating each at the first fever, and see when chains of infection shrink instead of grow.',
+  'ozone-hole-2026': 'Change the cold, the sunlight and the chlorine over Antarctica in a toy model, and find what it takes to open the ozone hole or keep it shut.',
+  'el-nino-record-seas': 'Weaken or strengthen the Pacific trade winds in a toy model and watch the warm water, the rain and the sea’s slope move.',
 } as const;
 
 export type LabId = keyof typeof LABS;
