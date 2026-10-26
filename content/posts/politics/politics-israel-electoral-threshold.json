@@ -1,0 +1,159 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-israel-electoral-threshold",
+  "field": "politics",
+  "title": "In Israel’s elections, a list with under 3.25% of the votes wins no seats at all",
+  "emoji": "🏛️",
+  "body": "Israel elects its 120-member Knesset by nationwide proportional representation: voters choose a party list, and seats follow each list’s share of the votes, roughly 0.83% per seat. Since 2014 a list needs at least **3.25%** to get in (the bar was 1% until 1988, then 1.5%, and 2% from 2003), and votes for lists below it are discarded. In 2022 some 300,000 votes went to lists that fell short, mainly Meretz and Balad, and the bloc behind Benjamin Netanyahu won 64 seats with only about 30,000 more votes than the other side, according to the [Israel Democracy Institute](https://en.idi.org.il/articles/46229). No party has ever won a majority alone, so governments are coalitions of at least 61 members. 38 lists stood in the election of 27 October 2026.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "What share of the national vote does a list need to win any seats in Israel’s Knesset?",
+      "min": 0,
+      "max": 10,
+      "step": 0.05,
+      "answer": 3.25,
+      "unit": "%",
+      "explanation": "3.25%, since 2014. Below that a list gets no seats at all, however close it comes, and its votes don’t count towards any seat."
+    },
+    {
+      "type": "video",
+      "src": "threshold.mp4",
+      "poster": "threshold.jpg",
+      "alt": "Animation on stone-coloured paper: the Knesset's 120 seats as a hemicycle. Bars for example party lists meet a red 3.25% line, and those below turn grey. Then the 2022 result, 64 seats to 56 with about 300,000 votes wasted, a coalition filling up to 61 seats, and 38 ballot slips for 2026.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Deliberate Thought” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 24.27
+        },
+        {
+          "start": 24.53,
+          "end": 31.47
+        },
+        {
+          "start": 31.73,
+          "end": 37.6
+        },
+        {
+          "start": 37.87,
+          "end": 44
+        },
+        {
+          "start": 44.27,
+          "end": 50.13
+        },
+        {
+          "start": 50.4,
+          "end": 56.27
+        },
+        {
+          "start": 56.53,
+          "end": 62.4
+        },
+        {
+          "start": 62.67,
+          "end": 68.53
+        },
+        {
+          "start": 68.8,
+          "end": 74.4
+        },
+        {
+          "start": 74.67,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "israel-electoral-threshold",
+      "prompt": "Move the threshold. Find a level at which the blue bloc, with fewer votes, no longer wins a majority of 61.",
+      "takeaway": "Lower it and small gold lists get in: at 2.5% it is a 60–60 tie, and at 2.2% gold, which had more votes all along, wins 61. Not a single vote changed, only the line."
+    },
+    {
+      "type": "chart",
+      "heading": "Israel’s electoral threshold, % of the votes",
+      "items": [
+        {
+          "label": "Until 1988",
+          "value": 1
+        },
+        {
+          "label": "From 1988",
+          "value": 1.5
+        },
+        {
+          "label": "From 2003",
+          "value": 2
+        },
+        {
+          "label": "From 2014",
+          "value": 3.25,
+          "emphasis": true
+        }
+      ],
+      "unit": "%",
+      "note": "Wikipedia: Elections in Israel"
+    },
+    {
+      "type": "text",
+      "heading": "Why have a threshold?",
+      "text": "A threshold keeps very small lists out, so fewer parties bargain over each coalition. The price is that votes for a list just under the line elect no one, and the seats they would have won go to everyone else."
+    },
+    {
+      "type": "quiz",
+      "question": "How many seats does a governing coalition need in the 120-seat Knesset?",
+      "options": [
+        "50",
+        "60",
+        "61",
+        "80"
+      ],
+      "answer": 2,
+      "explanation": "61, a majority of the 120 members. The prime minister’s government must win a confidence vote of at least 61."
+    }
+  ],
+  "tags": [
+    "israel",
+    "elections",
+    "knesset",
+    "voting",
+    "coalitions",
+    "parliament"
+  ],
+  "source": {
+    "label": "Wikipedia: Elections in Israel",
+    "url": "https://en.wikipedia.org/wiki/Elections_in_Israel"
+  },
+  "theme": {
+    "gradient": [
+      "#1d3557",
+      "#8a6514"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-26"
+}
