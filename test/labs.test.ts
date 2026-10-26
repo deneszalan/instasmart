@@ -76,6 +76,7 @@ import { problems, ROWS_MAP, seats } from '../src/labs/politics/redistricting-ge
 import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold';
 import { angleGap, fitAt, hitsOf, newEvent, SENSORS, THETA } from '../src/labs/physics/icecube-neutrino-nobel';
 import { simulate as optoRun } from '../src/labs/body/optogenetics-nobel';
+import { round as chiralRound, rounds as chiralRounds } from '../src/labs/chemistry/mirror-molecules-nobel';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -591,5 +592,14 @@ describe('lab maths', () => {
     expect(optoRun(true, 20, 10).spikes.length).toBeGreaterThan(10);
     expect(optoRun(false, 5, 10).spikes).toHaveLength(0);
     expect(optoRun(false, 5, 10).flashes).toBe(10);
+  });
+
+  it('mirror molecules: 75% right acts like 90%; from 50.5% one hand passes 99% in 8 rounds; with working mixed pairs nothing changes', () => {
+    expect(chiralRound(0.75, false)).toBeCloseTo(0.9, 9);
+    expect(chiralRound(0.5, false)).toBe(0.5);
+    const r = chiralRounds(0.505, 8, false);
+    expect(r[7]).toBeLessThan(0.99);
+    expect(r[8]).toBeGreaterThan(0.99);
+    for (const s of chiralRounds(0.505, 12, true)) expect(s).toBeCloseTo(0.505, 9);
   });
 });
