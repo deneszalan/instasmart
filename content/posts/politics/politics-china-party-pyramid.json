@@ -1,0 +1,160 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-china-party-pyramid",
+  "field": "politics",
+  "title": "China’s Communist Party has more than 96 million members, and seven sit at the very top",
+  "emoji": "🏯",
+  "body": "From 26 to 29 October 2026 the Central Committee of China’s Communist Party meets in Beijing for its fifth plenum, on “full and rigorous party self-governance”. It is one layer of a pyramid. More than 96 million members choose 2,296 delegates to a National Congress held every five years; the Congress elects a Central Committee of 205 members and 171 alternates; that committee elects a Politburo of 24, its Standing Committee of 7, and the General Secretary, Xi Jinping since 2012. Formally each layer elects the next, but in practice the choices are made privately, usually through consultation in the Politburo. Between congresses the Central Committee meets about once a year in plenums. This one has now met five times since 2022, and its term ends at the 21st National Congress, due in 2027.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How many people sit on the Politburo Standing Committee, the top of China’s Communist Party?",
+      "min": 1,
+      "max": 30,
+      "step": 1,
+      "answer": 7,
+      "unit": "people",
+      "explanation": "Seven, elected by the Central Committee in October 2022. The wider Politburo has 24 members."
+    },
+    {
+      "type": "video",
+      "src": "pyramid.mp4",
+      "poster": "pyramid.jpg",
+      "alt": "Animation on rice paper with a red seal: a pyramid builds up layer by layer, from more than 96 million party members to 2,296 congress delegates, 205 Central Committee members, a 24-member Politburo, 7 Standing Committee members and one General Secretary, then a timeline of five plenums to 2027.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Ever Mindful” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 4
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 5.87
+        },
+        {
+          "start": 6.13,
+          "end": 11.47
+        },
+        {
+          "start": 11.73,
+          "end": 17.6
+        },
+        {
+          "start": 17.87,
+          "end": 23.47
+        },
+        {
+          "start": 23.73,
+          "end": 29.33
+        },
+        {
+          "start": 29.6,
+          "end": 35.2
+        },
+        {
+          "start": 35.47,
+          "end": 41.07
+        },
+        {
+          "start": 41.33,
+          "end": 47.2
+        },
+        {
+          "start": 47.47,
+          "end": 53.33
+        },
+        {
+          "start": 53.6,
+          "end": 59.47
+        },
+        {
+          "start": 59.73,
+          "end": 65.6
+        },
+        {
+          "start": 65.87,
+          "end": 71.47
+        },
+        {
+          "start": 71.73,
+          "end": 77.07
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "china-party-pyramid",
+      "prompt": "Climb the pyramid from the party’s members to the top. How many members does each Standing Committee seat stand for?",
+      "takeaway": "About 14 million party members for each of the seven Standing Committee seats, and all 96 million for the one General Secretary."
+    },
+    {
+      "type": "timeline",
+      "heading": "Plenums of the 20th Central Committee",
+      "events": [
+        {
+          "when": "Oct 2022",
+          "text": "1st: elects the leadership"
+        },
+        {
+          "when": "Feb 2023",
+          "text": "2nd: state posts, ministries"
+        },
+        {
+          "when": "Jul 2024",
+          "text": "3rd: deepening reform"
+        },
+        {
+          "when": "Oct 2025",
+          "text": "4th: the 15th five-year plan"
+        },
+        {
+          "when": "Oct 2026",
+          "text": "5th: party discipline"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Elections on paper",
+      "text": "The party’s rules have each layer elected by the one below. In practice the selection is made privately, usually through consultation in the Politburo, before the formal votes take place."
+    },
+    {
+      "type": "quiz",
+      "question": "How often does the Communist Party hold its National Congress?",
+      "options": [
+        "Every year",
+        "Every two years",
+        "Every five years",
+        "Every ten years"
+      ],
+      "answer": 2,
+      "explanation": "Every five years: the 20th met in October 2022, and the 21st is due in 2027, when it will choose a new Central Committee."
+    }
+  ],
+  "tags": [
+    "china",
+    "communistparty",
+    "politburo",
+    "government",
+    "beijing",
+    "power"
+  ],
+  "source": {
+    "label": "Wikipedia: 20th Central Committee of the Chinese Communist Party",
+    "url": "https://en.wikipedia.org/wiki/20th_Central_Committee_of_the_Chinese_Communist_Party"
+  },
+  "theme": {
+    "gradient": [
+      "#1c1a17",
+      "#9c2f1b"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-26"
+}

@@ -80,6 +80,21 @@ export const LABS = {
   'redistricting-gerrymander': 'Paint five districts of ten voters on a grid of 30 purple and 20 orange voters, and try to make the minority win.',
   'israel-electoral-threshold': 'Move the vote threshold for example party lists and watch seats move between two blocs, without a single vote changing.',
   'china-party-pyramid': 'Climb the layers of China’s Communist Party, from 96 million members to one General Secretary, and see how many members each seat stands for.',
+  'brazil-runoff-comeback': 'Split the other candidates’ votes and new voters between Lula and Flávio Bolsonaro, and see when second place wins Brazil’s runoff.',
+  'un-secretary-general-straw-polls': 'Change the 15 ballots of a UN Secretary-General straw poll, red for the permanent members, and see what it takes to pass.',
+  'bosnia-three-presidents': 'Choose where a Bosnian citizen lives and which group they declare, and see which presidency seats they may vote for or stand for.',
+  'strait-of-hormuz-oil': 'Take a share of the world’s oil off the market, set how much buyers respond to price, and watch the price of a barrel.',
+  'nobel-peace-prize-norway': 'Match each Nobel prize to the institution that chooses its winner, in Stockholm or in Oslo.',
+  'perseverance-driving-record': 'Drive a rover to a waypoint across a rocky patch of Mars, with or without AutoNav, and see how far ahead it needs to look.',
+  'primordial-helium-big-bang': 'Choose when the first nuclei could form after the Big Bang and see how much helium the universe ends up with, against the 2026 measurement.',
+  'ebola-21-day-quarantine': 'Trace a share of the contacts of Ebola cases, isolating each at the first fever, and see when chains of infection shrink instead of grow.',
+  'ozone-hole-2026': 'Change the cold, the sunlight and the chlorine over Antarctica in a toy model, and find what it takes to open the ozone hole or keep it shut.',
+  'el-nino-record-seas': 'Weaken or strengthen the Pacific trade winds in a toy model and watch the warm water, the rain and the sea’s slope move.',
+  'icecube-neutrino-nobel': 'Read the hit times of a neutrino’s muon in a slice of IceCube and turn your track until it points the way the muon went.',
+  'optogenetics-nobel': 'Flash blue light at a nerve cell with and without the channelrhodopsin gene, and tune the flashes until it fires once for each.',
+  'mirror-molecules-nobel': 'Start a flask a little more right-handed than left and run rounds of autocatalysis, with mixed pairs idle or working, until one hand takes over.',
+  'nobel-hall-woodford': 'Set today’s interest rate and promise a path for the next two years, then see how spending today responds when people look ahead.',
+  'power-grid-transformers': 'Step up the voltage of a power line carrying 10 MW and watch the current, and the power lost as heat, fall.',
 } as const;
 
 export type LabId = keyof typeof LABS;

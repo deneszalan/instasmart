@@ -75,6 +75,21 @@ import { MIDTERMS, record } from '../src/labs/politics/us-midterm-penalty';
 import { problems, ROWS_MAP, seats } from '../src/labs/politics/redistricting-gerrymander';
 import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold';
 import { LAYERS as PARTY_LAYERS, membersPerSeat } from '../src/labs/politics/china-party-pyramid';
+import { OTHERS, ROUND1, ROUND2, runoff, tieShare } from '../src/labs/politics/brazil-runoff-comeback';
+import { OCT_16, OCT_2016, verdict } from '../src/labs/politics/un-secretary-general-straw-polls';
+import { rights, type People, type Place } from '../src/labs/politics/bosnia-three-presidents';
+import { doublingCut, PEAK, PREWAR, price } from '../src/labs/politics/strait-of-hormuz-oil';
+import { CHOSEN_BY, inOslo, PRIZES, score } from '../src/labs/politics/nobel-peace-prize-norway';
+import { autonav, shortest, straight, GOAL } from '../src/labs/space/perseverance-driving-record';
+import { heliumAt, heliumShare, MEASURED, MEASURED_ERR, neutronsPerProton } from '../src/labs/space/primordial-helium-big-bang';
+import { outbreak, perCase, possibleTree, GENERATIONS } from '../src/labs/body/ebola-21-day-quarantine';
+import { CHLORINE, DU_LINE, lowestOzone } from '../src/labs/earth/ozone-hole-2026';
+import { EAST_2026, pacific } from '../src/labs/earth/el-nino-record-seas';
+import { angleGap, fitAt, hitsOf, newEvent, SENSORS, THETA } from '../src/labs/physics/icecube-neutrino-nobel';
+import { simulate as optoRun } from '../src/labs/body/optogenetics-nobel';
+import { round as chiralRound, rounds as chiralRounds } from '../src/labs/chemistry/mirror-molecules-nobel';
+import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
+import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -572,5 +587,158 @@ describe('lab maths', () => {
     expect(PARTY_LAYERS.map((l) => l.people)).toEqual([96_000_000, 2296, 205, 24, 7, 1]);
     expect(membersPerSeat(4) / 1e6).toBeCloseTo(13.7, 1);
     expect(membersPerSeat(5)).toBe(96_000_000);
+  });
+
+  it('brazil runoff: an even split keeps Flávio ahead; Lula needs 61.9% of the 9.3 million; the real gains reproduce the result', () => {
+    expect(OTHERS).toBe(9316747);
+    expect(runoff(0.5).flavio).toBeGreaterThan(runoff(0.5).lula);
+    expect(tieShare()).toBeCloseTo(0.6194, 4);
+    expect(runoff(0.62).lula).toBeGreaterThan(runoff(0.62).flavio);
+    const extra = ROUND2.lula + ROUND2.flavio - ROUND1.valid;
+    expect(extra).toBe(4781485);
+    const real = runoff((ROUND2.lula - ROUND1.lula) / (OTHERS + extra), extra);
+    expect(real.lula).toBeCloseTo(ROUND2.lula, 0);
+    expect(real.flavio).toBeCloseTo(ROUND2.flavio, 0);
+    expect(real.lulaShare * 100).toBeCloseTo(51.79, 2);
+  });
+
+  it('straw polls: Grynspan had 9 encourages but 2 red discourages on 16 October; flipping those two passes; Guterres 2016 passed', () => {
+    expect(OCT_16).toHaveLength(15);
+    expect(verdict(OCT_16)).toEqual({ encourage: 9, redDiscourage: 2, passes: false });
+    expect(OCT_16.filter((v) => v === 'D')).toHaveLength(5);
+    const whiteOnly = OCT_16.map((v, i) => (i >= 5 ? 'E' : v));
+    expect(verdict(whiteOnly).passes).toBe(false);
+    const flipped = OCT_16.map((v, i) => (i < 5 && v === 'D' ? 'N' : v));
+    expect(verdict(flipped).passes).toBe(true);
+    expect(verdict(OCT_2016)).toEqual({ encourage: 13, redDiscourage: 0, passes: true });
+  });
+
+  it('bosnia: Federation voters pick the Bosniak or Croat ballot, Srpska voters the Serb one; only 3 of 8 citizens may stand', () => {
+    expect(rights('serb', 'federation')).toEqual({ vote: ['bosniak', 'croat'], run: null });
+    expect(rights('bosniak', 'srpska')).toEqual({ vote: ['serb'], run: null });
+    expect(rights('croat', 'federation').run).toBe('croat');
+    expect(rights('serb', 'srpska').run).toBe('serb');
+    const people: People[] = ['bosniak', 'croat', 'serb', 'other'], places: Place[] = ['federation', 'srpska'];
+    expect(people.flatMap((p) => places.map((w) => rights(p, w).run)).filter(Boolean)).toHaveLength(3);
+    expect(places.map((w) => rights('other', w).run)).toEqual([null, null]);
+  });
+
+  it('hormuz: at elasticity 0.05, 1% less oil means +22%, the price doubles at a 3.4% shortfall, and about 3.3% reaches the April high', () => {
+    expect(price(0, 0.05)).toBeCloseTo(PREWAR, 9);
+    expect(price(0.01, 0.05) / PREWAR).toBeCloseTo(1.2226, 3);
+    expect(doublingCut(0.05)).toBeCloseTo(0.0341, 4);
+    expect(price(doublingCut(0.05), 0.05)).toBeCloseTo(2 * PREWAR, 6);
+    expect(price(0.032, 0.05)).toBeLessThan(PEAK);
+    expect(price(0.033, 0.05)).toBeGreaterThan(PEAK);
+    expect(price(0.033, 0.3) / PREWAR).toBeCloseTo(1.118, 2);
+  });
+
+  it('nobel: five prizes are chosen in Stockholm, three by the Academy of Sciences; only peace in Oslo', () => {
+    expect(PRIZES.filter((p) => inOslo(CHOSEN_BY[p]))).toEqual(['peace']);
+    expect(PRIZES.filter((p) => CHOSEN_BY[p] === 'academy')).toEqual(['physics', 'chemistry', 'economics']);
+    expect(score(CHOSEN_BY)).toBe(6);
+    expect(score({ peace: 'swedish', literature: 'swedish' })).toBe(1);
+  });
+
+  it('perseverance: looking 10 m ahead it drives into a dead end; 70 m gives nearly the shortest route; a straight line hits a rock', () => {
+    const best = shortest();
+    expect(best).toBeGreaterThan(200);
+    expect(autonav(10).reached).toBe(true);
+    expect(autonav(10).metres).toBeGreaterThan(best * 1.3);
+    expect(autonav(60).metres).toBeGreaterThan(best * 1.05);
+    expect(autonav(70).metres).toBeLessThanOrEqual(best * 1.05);
+    expect(autonav(80).metres).toBeCloseTo(best, 6);
+    for (const v of [10, 20, 30, 40, 50, 60, 70, 80]) expect(autonav(v).path.at(-1)).toEqual(GOAL);
+    expect(straight().reached).toBe(false);
+  });
+
+  it('helium: n/p 1/7 gives 25%; decay alone from 1/6 at one second reaches the measured 24.6% after about 2.2 minutes', () => {
+    expect(heliumShare(1 / 7)).toBeCloseTo(0.25, 10);
+    expect(neutronsPerProton(1)).toBeCloseTo(1 / 6, 10);
+    expect(Math.abs(heliumAt(132) - MEASURED)).toBeLessThanOrEqual(MEASURED_ERR);
+    expect(Math.abs(heliumAt(126) - MEASURED)).toBeGreaterThan(MEASURED_ERR);
+    expect(heliumAt(600)).toBeCloseTo(0.145, 3);
+    expect(heliumAt(20 * 60)).toBeLessThan(heliumAt(10 * 60));
+  });
+
+
+  it('ebola tracing: with 2 infections per missed case, chains shrink once more than half of contacts are found', () => {
+    expect(perCase(2, 0.5)).toBe(1);
+    expect(perCase(2, 0.55)).toBeLessThan(1);
+    expect(perCase(3, 0.65)).toBeGreaterThan(1);
+    const tree = possibleTree(2);
+    const none = outbreak(tree, 0), most = outbreak(tree, 0.9), all = outbreak(tree, 1);
+    expect(none.perGen[GENERATIONS]).toBeGreaterThan(8);
+    expect(most.perGen[GENERATIONS]).toBeLessThan(none.perGen[GENERATIONS]);
+    expect(all.perGen.slice(2).every((n) => n === 0)).toBe(true);
+    expect(all.perGen[1]).toBe(none.perGen[1]);
+  });
+
+  it('ozone toy model: a hole needs cold, sunlight and chlorine together; peak chlorine gives about 120 DU', () => {
+    expect(lowestOzone(-92, CHLORINE[2000], true)).toBeCloseTo(120, 6);
+    expect(lowestOzone(-92, CHLORINE[2024], true)).toBeLessThan(DU_LINE);
+    expect(lowestOzone(-92, CHLORINE[2024], false)).toBe(350);
+    expect(lowestOzone(-92, CHLORINE[1980], true)).toBe(350);
+    expect(lowestOzone(-75, CHLORINE[2024], true)).toBe(350);
+    expect(lowestOzone(-80, CHLORINE[2024], true)).toBeGreaterThan(DU_LINE);
+  });
+
+  it('el niño toy model: normal winds give NOAA’s half-metre slope and 8 °C contrast; half-strength winds warm the east by 4 °C', () => {
+    expect(pacific(1)).toMatchObject({ slope: 0.5, contrast: 8, eastAnomaly: 0 });
+    expect(pacific(0.5).eastAnomaly).toBeGreaterThanOrEqual(EAST_2026);
+    expect(pacific(0.55).eastAnomaly).toBeLessThan(EAST_2026);
+    expect(pacific(0).rainAt).toBeGreaterThan(pacific(1).rainAt);
+    expect(pacific(1.5).eastAnomaly).toBeLessThan(0);
+  });
+
+  it('icecube: 540 sensors in the slice, a 40° Cherenkov angle, and hit times that match only the true direction', () => {
+    expect(SENSORS).toHaveLength(9 * 60);
+    expect((THETA * 180) / Math.PI).toBeCloseTo(40.2, 1);
+    for (const seed of [2026, 2027, 2028]) {
+      const tr = newEvent(seed), hits = hitsOf(tr);
+      expect(tr.angle).toBeGreaterThan(0);
+      expect(tr.angle).toBeLessThan(180);
+      expect(fitAt(hits, tr.angle).rms).toBeLessThan(6);
+      expect(fitAt(hits, tr.angle + 4).rms).toBeGreaterThan(40);
+      expect(fitAt(hits, tr.angle - 4).rms).toBeGreaterThan(40);
+      expect(fitAt(hits, tr.angle + 180).rms).toBeGreaterThan(1000);
+    }
+    expect(angleGap(359, 2)).toBe(3);
+  });
+
+  it('optogenetics: 1 ms flashes are too short, 5 ms flashes fire once each, 20 ms fire repeatedly, and no gene means no signal', () => {
+    expect(optoRun(true, 1, 10).spikes).toHaveLength(0);
+    expect(optoRun(true, 5, 10).spikes).toHaveLength(10);
+    expect(optoRun(true, 5, 40).spikes).toHaveLength(40);
+    expect(optoRun(true, 20, 10).spikes.length).toBeGreaterThan(10);
+    expect(optoRun(false, 5, 10).spikes).toHaveLength(0);
+    expect(optoRun(false, 5, 10).flashes).toBe(10);
+  });
+
+  it('mirror molecules: 75% right acts like 90%; from 50.5% one hand passes 99% in 8 rounds; with working mixed pairs nothing changes', () => {
+    expect(chiralRound(0.75, false)).toBeCloseTo(0.9, 9);
+    expect(chiralRound(0.5, false)).toBe(0.5);
+    const r = chiralRounds(0.505, 8, false);
+    expect(r[7]).toBeLessThan(0.99);
+    expect(r[8]).toBeGreaterThan(0.99);
+    for (const s of chiralRounds(0.505, 12, true)) expect(s).toBeCloseTo(0.505, 9);
+  });
+
+  it('forward guidance: a one-quarter cut of a point adds 0.25%, a believed two-year promise adds 2%, half belief half that', () => {
+    expect(spendingToday(3, 3, 1)).toBeCloseTo(0, 9);
+    expect(spendingToday(2, 3, 1)).toBeCloseTo(0.25, 9);
+    expect(spendingToday(3, 2, 1)).toBeCloseTo(2, 9);
+    expect(spendingToday(3, 2, 0.5)).toBeCloseTo(1, 9);
+    expect(spendingToday(3, 2, 0)).toBeCloseTo(0, 9);
+    expect(spendingToday(4, 4, 1)).toBeCloseTo(-2.25, 9);
+  });
+
+  it('power grid: 10 MW at 10 kV loses half; ten times the voltage loses a hundredth as much; under 1% from about 71 kV', () => {
+    expect(lineLoss(10).amps).toBeCloseTo(1000, 9);
+    expect(lineLoss(10).share).toBeCloseTo(0.5, 9);
+    expect(lineLoss(100).share).toBeCloseTo(0.005, 9);
+    expect(lineLoss(10).lossMW / lineLoss(100).lossMW).toBeCloseTo(100, 9);
+    expect(lineLoss(70).share).toBeGreaterThan(0.01);
+    expect(lineLoss(75).share).toBeLessThan(0.01);
   });
 });

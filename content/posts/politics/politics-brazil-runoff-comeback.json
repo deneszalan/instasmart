@@ -1,0 +1,159 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-brazil-runoff-comeback",
+  "field": "politics",
+  "title": "Lula trailed after round one in Brazil, then won the runoff by 4.4 million votes",
+  "emoji": "🗳️",
+  "body": "Brazil elects its president in two rounds. A candidate with more than half of the valid votes (blank and null ballots don’t count) wins outright; otherwise the top two meet again on the last Sunday of October. On 4 October 2026, with 12 candidates, Flávio Bolsonaro led with 47.03% and Lula had 45.16%. On 25 October Lula won the runoff with 51.79%, by [64,256,232 votes to 59,826,041](https://ndmais.com.br/politica/quantos-votos-lula-e-flavio-bolsonaro-tiveram-em-2026/), according to the electoral court (TSE). Between the rounds he gained 10.4 million votes and his rival 3.7 million: more than the 9.3 million won by the ten other candidates, because the runoff also had 4.8 million more valid votes. [Reuters](https://www.yahoo.com/news/world/articles/brazil-heads-polls-runoff-between-070736480.html) reported that he is the first candidate since Brazil’s return to democracy to be elected after finishing second in round one; Flávio Bolsonaro said he would seek to have the result annulled over a court ruling that extended voting by two hours. Voting is compulsory for literate citizens aged 18 to 69, and the new four-year term starts on 5 January 2027.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Lula trailed by 2.2 million votes after round one. What share of the other candidates’ 9.3 million votes did he need?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 62,
+      "unit": "%",
+      "explanation": "About 62%, if everyone else voted as before: he needed 2.2 million more of those votes than his rival. In the end the runoff also brought 4.8 million more valid votes."
+    },
+    {
+      "type": "video",
+      "src": "runoff.mp4",
+      "poster": "runoff.jpg",
+      "alt": "Animation on white with sweeping curves: an electronic voting machine, then round-one bars, Flávio Bolsonaro 47.0% and Lula 45.2%, under a 50% line. The others’ 9.3 million votes become squares split between the two, then runoff bars grow to 51.79% for Lula, and a calendar shows 5 January 2027.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Fresh Air” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 24.27
+        },
+        {
+          "start": 24.53,
+          "end": 31.47
+        },
+        {
+          "start": 31.73,
+          "end": 37.6
+        },
+        {
+          "start": 37.87,
+          "end": 44
+        },
+        {
+          "start": 44.27,
+          "end": 50.13
+        },
+        {
+          "start": 50.4,
+          "end": 56.27
+        },
+        {
+          "start": 56.53,
+          "end": 62.4
+        },
+        {
+          "start": 62.67,
+          "end": 68.53
+        },
+        {
+          "start": 68.8,
+          "end": 74.4
+        },
+        {
+          "start": 74.67,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "brazil-runoff-comeback",
+      "prompt": "Split the free votes between Lula and Flávio Bolsonaro. Find a split, with or without new voters, that lets the second-placed candidate win.",
+      "takeaway": "With no new voters Lula needs 62% of the others’ votes. In the real runoff he gained 10.4 of the 14.1 million votes added between the rounds, about 74%, and won with 51.79%."
+    },
+    {
+      "type": "chart",
+      "heading": "Votes for the two finalists, in millions",
+      "items": [
+        {
+          "label": "Flávio Bolsonaro, 4 Oct",
+          "value": 56.1
+        },
+        {
+          "label": "Flávio Bolsonaro, 25 Oct",
+          "value": 59.8
+        },
+        {
+          "label": "Lula, 4 Oct",
+          "value": 53.9
+        },
+        {
+          "label": "Lula, 25 Oct",
+          "value": 64.3,
+          "emphasis": true
+        }
+      ],
+      "unit": "million",
+      "note": "Valid votes, electoral court (TSE) totals"
+    },
+    {
+      "type": "text",
+      "heading": "Why two rounds?",
+      "text": "A runoff makes sure the president is backed by a majority of the valid votes, not just the largest minority. With 12 names on the ballot in round one, the leader had 47%. In the runoff only two are left, so one of them must pass 50%, and voters whose candidate is out get a second say."
+    },
+    {
+      "type": "quiz",
+      "question": "Which ballots are left out when Brazil checks whether a candidate has more than half of the votes?",
+      "options": [
+        "Blank and null ballots",
+        "Votes cast abroad",
+        "Votes of 16- and 17-year-olds",
+        "Votes of people over 70"
+      ],
+      "answer": 0,
+      "explanation": "Brazil’s constitution counts only valid votes: a candidate needs an absolute majority of them, not counting blank and null ballots."
+    }
+  ],
+  "tags": [
+    "brazil",
+    "elections",
+    "runoff",
+    "voting",
+    "president",
+    "democracy"
+  ],
+  "source": {
+    "label": "Wikipedia: Elections in Brazil",
+    "url": "https://en.wikipedia.org/wiki/Elections_in_Brazil"
+  },
+  "theme": {
+    "gradient": [
+      "#14302c",
+      "#6e2a52"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-26"
+}

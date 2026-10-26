@@ -1,0 +1,155 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-nobel-peace-prize-norway",
+  "field": "politics",
+  "title": "The Nobel Peace Prize is chosen in Norway because Nobel’s 1895 will said so",
+  "emoji": "🕊️",
+  "body": "Alfred Nobel’s will, signed in Paris on 27 November 1895, gave the prizes for physics, chemistry, medicine and literature to institutions in Stockholm, but the Peace Prize to a committee of five people elected by Norway’s parliament, the Storting. Sweden and Norway were then in a union, which lasted until 1905. Nobel never explained the choice; the committee has suggested that Norway lacked Sweden’s military traditions and that its parliament was active in settling disputes by arbitration. The five serve six-year terms and choose from nominations that stay secret for 50 years: 287 for 2026. On 9 October 2026 the committee [awarded the prize](https://www.nobelpeaceprize.org/press/press-releases/nobel-peace-prize-for-2026) to Navi Pillay “for her efforts to promote peace and international law”. Born in Durban in 1941, she defended opponents of apartheid as a lawyer, was a judge at the Rwanda tribunal, which ruled in 1998 that rape can be an act of genocide, and was UN High Commissioner for Human Rights from 2008 to 2014.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How many nominations did the Norwegian Nobel Committee receive for the 2026 Peace Prize?",
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "answer": 287,
+      "explanation": "287: 208 people and 79 organisations, sent in by the deadline of 31 January. Who nominated whom stays secret for 50 years."
+    },
+    {
+      "type": "video",
+      "src": "peaceprize.mp4",
+      "poster": "peaceprize.jpg",
+      "alt": "Animation in oxblood and gold: a medal for 2026, then six Nobel medals sorted, five to Stockholm and one to Oslo. Nobel’s will of 1895 lists who awards each prize, a timeline shows the Sweden–Norway union ending in 1905, 287 nominations funnel to one, and Navi Pillay’s career unfolds year by year.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Suonatore di Liuto” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 24.27
+        },
+        {
+          "start": 24.53,
+          "end": 31.47
+        },
+        {
+          "start": 31.73,
+          "end": 37.6
+        },
+        {
+          "start": 37.87,
+          "end": 44
+        },
+        {
+          "start": 44.27,
+          "end": 50.13
+        },
+        {
+          "start": 50.4,
+          "end": 56.27
+        },
+        {
+          "start": 56.53,
+          "end": 62.4
+        },
+        {
+          "start": 62.67,
+          "end": 68.53
+        },
+        {
+          "start": 68.8,
+          "end": 74.4
+        },
+        {
+          "start": 74.67,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "nobel-peace-prize-norway",
+      "prompt": "Pick each Nobel prize and say who chooses its winner. Get all six right.",
+      "takeaway": "Five are chosen in Stockholm, three of them by the Royal Swedish Academy of Sciences. Only the Peace Prize is chosen in Oslo, by five people the Storting elects, as Nobel’s will of 1895 asked."
+    },
+    {
+      "type": "quote",
+      "text": "for her efforts to promote peace and international law",
+      "attribution": "Norwegian Nobel Committee, 9 October 2026, on Navi Pillay"
+    },
+    {
+      "type": "timeline",
+      "heading": "A Swedish fortune, a Norwegian prize",
+      "events": [
+        {
+          "when": "1895",
+          "text": "Nobel signs his will at the Swedish–Norwegian Club in Paris."
+        },
+        {
+          "when": "1896",
+          "text": "Nobel dies on 10 December, the day the prizes are now presented."
+        },
+        {
+          "when": "1901",
+          "text": "The first Nobel prizes are awarded."
+        },
+        {
+          "when": "1905",
+          "text": "The union of Sweden and Norway ends."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Who chooses the winner of the Nobel Prize in Literature?",
+      "options": [
+        "The Swedish Academy",
+        "The Norwegian Nobel Committee",
+        "Karolinska Institutet",
+        "The Storting"
+      ],
+      "answer": 0,
+      "explanation": "The Swedish Academy in Stockholm. Of all the Nobel prizes, only the Peace Prize is chosen in Norway, by the committee of five."
+    }
+  ],
+  "tags": [
+    "nobel",
+    "peaceprize",
+    "norway",
+    "sweden",
+    "humanrights",
+    "history"
+  ],
+  "source": {
+    "label": "Wikipedia: Norwegian Nobel Committee",
+    "url": "https://en.wikipedia.org/wiki/Norwegian_Nobel_Committee"
+  },
+  "theme": {
+    "gradient": [
+      "#2a0d12",
+      "#7a5a1c"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-26"
+}
