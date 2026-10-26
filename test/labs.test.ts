@@ -72,6 +72,7 @@ import { PLANKS } from '../src/labs/philosophy/ship-of-theseus';
 import { catchUp, steps } from '../src/labs/philosophy/zeno-achilles-tortoise';
 import { doublingTime, formula, realPopulation } from '../src/labs/math/doomsday-13-november-2026';
 import { MIDTERMS, record } from '../src/labs/politics/us-midterm-penalty';
+import { problems, ROWS_MAP, seats } from '../src/labs/politics/redistricting-gerrymander';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -544,5 +545,15 @@ describe('lab maths', () => {
     expect(record('house').average).toBeCloseTo(-25.65, 2);
     expect(record('senate').losses).toBe(13);
     expect(MIDTERMS.filter((m) => m.house > 0).map((m) => m.year)).toEqual([1998, 2002]);
+  });
+
+  it('gerrymander: rows give purple 5–0; column pairs, a valid map, give orange 3 of 5 with 40% of the votes', () => {
+    expect(problems(ROWS_MAP)).toEqual([]);
+    expect(seats(ROWS_MAP).purple).toBe(5);
+    const pairs = ROWS_MAP.map((_, i) => Math.floor((i % 10) / 2));
+    expect(problems(pairs)).toEqual([]);
+    expect(seats(pairs).orange).toBe(3);
+    const broken = ROWS_MAP.map((d, i) => (i === 0 ? 4 : d));
+    expect(problems(broken)).toEqual([0, 4]);
   });
 });

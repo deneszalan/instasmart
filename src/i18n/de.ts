@@ -1094,4 +1094,11 @@ export const de: Record<string, string> = {
   'Seats': 'Sitze',
   'Losses since 1946': 'Verluste seit 1946',
   '{n} of {all}': '{n} von {all}',
+  'Paint district': 'Wahlkreis malen',
+  'Fifty voters in five districts; purple wins {p} seats and orange {o}': 'Fünfzig Wähler in fünf Wahlkreisen; Lila gewinnt {p} Sitze und Orange {o}',
+  'Purple seats': 'Sitze Lila',
+  'Orange seats': 'Sitze Orange',
+  'Map': 'Karte',
+  'valid': 'gültig',
+  'needs 10 joined voters per district': 'je Wahlkreis 10 zusammenhängende Wähler nötig',
 };
