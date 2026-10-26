@@ -76,6 +76,7 @@ import { problems, ROWS_MAP, seats } from '../src/labs/politics/redistricting-ge
 import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold';
 import { OTHERS, ROUND1, ROUND2, runoff, tieShare } from '../src/labs/politics/brazil-runoff-comeback';
 import { OCT_16, OCT_2016, verdict } from '../src/labs/politics/un-secretary-general-straw-polls';
+import { rights, type People, type Place } from '../src/labs/politics/bosnia-three-presidents';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -591,5 +592,15 @@ describe('lab maths', () => {
     const flipped = OCT_16.map((v, i) => (i < 5 && v === 'D' ? 'N' : v));
     expect(verdict(flipped).passes).toBe(true);
     expect(verdict(OCT_2016)).toEqual({ encourage: 13, redDiscourage: 0, passes: true });
+  });
+
+  it('bosnia: Federation voters pick the Bosniak or Croat ballot, Srpska voters the Serb one; only 3 of 8 citizens may stand', () => {
+    expect(rights('serb', 'federation')).toEqual({ vote: ['bosniak', 'croat'], run: null });
+    expect(rights('bosniak', 'srpska')).toEqual({ vote: ['serb'], run: null });
+    expect(rights('croat', 'federation').run).toBe('croat');
+    expect(rights('serb', 'srpska').run).toBe('serb');
+    const people: People[] = ['bosniak', 'croat', 'serb', 'other'], places: Place[] = ['federation', 'srpska'];
+    expect(people.flatMap((p) => places.map((w) => rights(p, w).run)).filter(Boolean)).toHaveLength(3);
+    expect(places.map((w) => rights('other', w).run)).toEqual([null, null]);
   });
 });
