@@ -577,6 +577,8 @@ describe('lab maths', () => {
     expect(PARTY_LAYERS.map((l) => l.people)).toEqual([96_000_000, 2296, 205, 24, 7, 1]);
     expect(membersPerSeat(4) / 1e6).toBeCloseTo(13.7, 1);
     expect(membersPerSeat(5)).toBe(96_000_000);
+  });
+
   it('brazil runoff: an even split keeps Flávio ahead; Lula needs 61.9% of the 9.3 million; the real gains reproduce the result', () => {
     expect(OTHERS).toBe(9316747);
     expect(runoff(0.5).flavio).toBeGreaterThan(runoff(0.5).lula);

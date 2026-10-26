@@ -1128,7 +1128,6 @@ export const de: Record<string, string> = {
   'Runoff votes in millions: Lula {l}, Flávio Bolsonaro {f}': 'Stimmen in der Stichwahl in Millionen: Lula {l}, Flávio Bolsonaro {f}',
   'Free votes to Lula': 'Freie Stimmen für Lula',
   'New valid votes': 'Neue gültige Stimmen',
-  '{n} million': '{n} Millionen',
   'Result': 'Ergebnis',
   'Permanent members': 'Ständige Mitglieder',
   'Elected members': 'Gewählte Mitglieder',
