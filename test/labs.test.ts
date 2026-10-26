@@ -76,6 +76,7 @@ import { problems, ROWS_MAP, seats } from '../src/labs/politics/redistricting-ge
 import { allocate, LISTS } from '../src/labs/politics/israel-electoral-threshold';
 import { autonav, shortest, straight, GOAL } from '../src/labs/space/perseverance-driving-record';
 import { heliumAt, heliumShare, MEASURED, MEASURED_ERR, neutronsPerProton } from '../src/labs/space/primordial-helium-big-bang';
+import { outbreak, perCase, possibleTree, GENERATIONS } from '../src/labs/body/ebola-21-day-quarantine';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -588,5 +589,18 @@ describe('lab maths', () => {
     expect(Math.abs(heliumAt(126) - MEASURED)).toBeGreaterThan(MEASURED_ERR);
     expect(heliumAt(600)).toBeCloseTo(0.145, 3);
     expect(heliumAt(20 * 60)).toBeLessThan(heliumAt(10 * 60));
+  });
+
+
+  it('ebola tracing: with 2 infections per missed case, chains shrink once more than half of contacts are found', () => {
+    expect(perCase(2, 0.5)).toBe(1);
+    expect(perCase(2, 0.55)).toBeLessThan(1);
+    expect(perCase(3, 0.65)).toBeGreaterThan(1);
+    const tree = possibleTree(2);
+    const none = outbreak(tree, 0), most = outbreak(tree, 0.9), all = outbreak(tree, 1);
+    expect(none.perGen[GENERATIONS]).toBeGreaterThan(8);
+    expect(most.perGen[GENERATIONS]).toBeLessThan(none.perGen[GENERATIONS]);
+    expect(all.perGen.slice(2).every((n) => n === 0)).toBe(true);
+    expect(all.perGen[1]).toBe(none.perGen[1]);
   });
 });

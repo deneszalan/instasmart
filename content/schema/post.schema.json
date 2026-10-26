@@ -171,7 +171,8 @@
                   "redistricting-gerrymander",
                   "israel-electoral-threshold",
                   "perseverance-driving-record",
-                  "primordial-helium-big-bang"
+                  "primordial-helium-big-bang",
+                  "ebola-21-day-quarantine"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

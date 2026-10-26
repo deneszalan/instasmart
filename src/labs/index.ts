@@ -81,4 +81,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'israel-electoral-threshold': lazy(() => import('./politics/israel-electoral-threshold')),
   'perseverance-driving-record': lazy(() => import('./space/perseverance-driving-record')),
   'primordial-helium-big-bang': lazy(() => import('./space/primordial-helium-big-bang')),
+  'ebola-21-day-quarantine': lazy(() => import('./body/ebola-21-day-quarantine')),
 };
