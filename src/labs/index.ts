@@ -83,4 +83,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'primordial-helium-big-bang': lazy(() => import('./space/primordial-helium-big-bang')),
   'ebola-21-day-quarantine': lazy(() => import('./body/ebola-21-day-quarantine')),
   'ozone-hole-2026': lazy(() => import('./earth/ozone-hole-2026')),
+  'el-nino-record-seas': lazy(() => import('./earth/el-nino-record-seas')),
 };

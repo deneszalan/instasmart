@@ -83,6 +83,7 @@ export const LABS = {
   'primordial-helium-big-bang': 'Choose when the first nuclei could form after the Big Bang and see how much helium the universe ends up with, against the 2026 measurement.',
   'ebola-21-day-quarantine': 'Trace a share of the contacts of Ebola cases, isolating each at the first fever, and see when chains of infection shrink instead of grow.',
   'ozone-hole-2026': 'Change the cold, the sunlight and the chlorine over Antarctica in a toy model, and find what it takes to open the ozone hole or keep it shut.',
+  'el-nino-record-seas': 'Weaken or strengthen the Pacific trade winds in a toy model and watch the warm water, the rain and the sea’s slope move.',
 } as const;
 
 export type LabId = keyof typeof LABS;

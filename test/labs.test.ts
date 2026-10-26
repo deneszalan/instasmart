@@ -78,6 +78,7 @@ import { autonav, shortest, straight, GOAL } from '../src/labs/space/perseveranc
 import { heliumAt, heliumShare, MEASURED, MEASURED_ERR, neutronsPerProton } from '../src/labs/space/primordial-helium-big-bang';
 import { outbreak, perCase, possibleTree, GENERATIONS } from '../src/labs/body/ebola-21-day-quarantine';
 import { CHLORINE, DU_LINE, lowestOzone } from '../src/labs/earth/ozone-hole-2026';
+import { EAST_2026, pacific } from '../src/labs/earth/el-nino-record-seas';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -612,5 +613,13 @@ describe('lab maths', () => {
     expect(lowestOzone(-92, CHLORINE[1980], true)).toBe(350);
     expect(lowestOzone(-75, CHLORINE[2024], true)).toBe(350);
     expect(lowestOzone(-80, CHLORINE[2024], true)).toBeGreaterThan(DU_LINE);
+  });
+
+  it('el niño toy model: normal winds give NOAA’s half-metre slope and 8 °C contrast; half-strength winds warm the east by 4 °C', () => {
+    expect(pacific(1)).toMatchObject({ slope: 0.5, contrast: 8, eastAnomaly: 0 });
+    expect(pacific(0.5).eastAnomaly).toBeGreaterThanOrEqual(EAST_2026);
+    expect(pacific(0.55).eastAnomaly).toBeLessThan(EAST_2026);
+    expect(pacific(0).rainAt).toBeGreaterThan(pacific(1).rainAt);
+    expect(pacific(1.5).eastAnomaly).toBeLessThan(0);
   });
 });

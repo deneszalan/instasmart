@@ -173,7 +173,8 @@
                   "perseverance-driving-record",
                   "primordial-helium-big-bang",
                   "ebola-21-day-quarantine",
-                  "ozone-hole-2026"
+                  "ozone-hole-2026",
+                  "el-nino-record-seas"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },
