@@ -90,6 +90,7 @@ import { simulate as optoRun } from '../src/labs/body/optogenetics-nobel';
 import { round as chiralRound, rounds as chiralRounds } from '../src/labs/chemistry/mirror-molecules-nobel';
 import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
 import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
+import { bruteForce, G as curveG, multiply as curveMultiply, ORDER as curveOrder, samePoint, searchSeconds, UNIVERSE_SECONDS } from '../src/labs/tech/certificate-key-number-four';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -740,5 +741,19 @@ describe('lab maths', () => {
     expect(lineLoss(10).lossMW / lineLoss(100).lossMW).toBeCloseTo(100, 9);
     expect(lineLoss(70).share).toBeGreaterThan(0.01);
     expect(lineLoss(75).share).toBeLessThan(0.01);
+  });
+
+  it('certificate keys: the toy curve has 257 points, k·G repeats only after 257, brute force finds key 4 in 4 tries, and 99 bits outlast the universe', () => {
+    expect(curveOrder).toBe(257);
+    expect(curveMultiply(curveOrder)).toBeNull();
+    expect(samePoint(curveMultiply(1), curveG)).toBe(true);
+    const seen = new Set<string>();
+    for (let k = 1; k < curveOrder; k++) seen.add(String(curveMultiply(k)));
+    expect(seen.size).toBe(256);
+    for (const key of [4, 56, 66, 115, 155, 156, 230, 237]) expect(bruteForce(curveMultiply(key))).toBe(key);
+    expect(searchSeconds(8)).toBeLessThan(1e-9);
+    expect(searchSeconds(98)).toBeLessThan(UNIVERSE_SECONDS);
+    expect(searchSeconds(99)).toBeGreaterThan(UNIVERSE_SECONDS);
+    expect(Math.floor(Math.log10(searchSeconds(384) / (365.25 * 86400))) + 1).toBe(97);
   });
 });

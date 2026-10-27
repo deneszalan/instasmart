@@ -95,6 +95,7 @@ export const LABS = {
   'mirror-molecules-nobel': 'Start a flask a little more right-handed than left and run rounds of autocatalysis, with mixed pairs idle or working, until one hand takes over.',
   'nobel-hall-woodford': 'Set today’s interest rate and promise a path for the next two years, then see how spending today responds when people look ahead.',
   'power-grid-transformers': 'Step up the voltage of a power line carrying 10 MW and watch the current, and the power lost as heat, fall.',
+  'certificate-key-number-four': 'Watch a brute-force search find a small secret key on a toy elliptic curve, then lengthen the key until trying every one would outlast the universe.',
 } as const;
 
 export type LabId = keyof typeof LABS;
