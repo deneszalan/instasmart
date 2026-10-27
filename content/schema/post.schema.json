@@ -239,6 +239,9 @@
                   "vatican-city-1929",
                   "pieta-michelangelo",
                   "rome-ghetto-1555"
+                  "santa-maria-maggiore-sixtus-arch",
+                  "nasoni-finger-fountain",
+                  "carbonara-paper-trail"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

@@ -148,6 +148,9 @@ export const LABS = {
   'vatican-city-1929': 'Tap places on a map of Rome and see what each is under the Lateran Treaty of 1929: Vatican City, St Peter’s Square policed by Italy, Holy See property with an embassy’s immunities, or Italy.',
   'pieta-michelangelo': 'Drag the tip of a triangle standing on the base of Michelangelo’s Pietà until it fits the outline of the whole group, and see where the best tip lies.',
   'rome-ghetto-1555': 'Pick a year in Rome’s ghetto, from 2,000 people in 1555 to 4,000 in 1656, and add floors to its houses to see how much room each person could have on the same 3 hectares.',
+  'santa-maria-maggiore-sixtus-arch': 'Turn on clues from Santa Maria Maggiore’s triumphal arch, its Latin line naming a bishop Sixtus, the Council of Ephesus and the later apse, until one window of years is left for the mosaic.',
+  'nasoni-finger-fountain': 'Cover the end of a Roman nasone’s spout with a finger and choose the size of the hole on top, and see how high the jet rises as the flow and the pressure lost in the pipes fall.',
+  'carbonara-paper-trail': 'Drag through the years of carbonara’s paper trail, from an 1839 egg-and-cheese pasta to today’s recipe websites, and find when the name, the first recipe and guanciale first appear in print.',
 } as const;
 
 export type LabId = keyof typeof LABS;

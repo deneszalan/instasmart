@@ -148,4 +148,7 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'vatican-city-1929': lazy(() => import('./politics/vatican-city-1929')),
   'pieta-michelangelo': lazy(() => import('./art/pieta-michelangelo')),
   'rome-ghetto-1555': lazy(() => import('./history/rome-ghetto-1555')),
+  'santa-maria-maggiore-sixtus-arch': lazy(() => import('./art/santa-maria-maggiore-sixtus-arch')),
+  'nasoni-finger-fountain': lazy(() => import('./engineering/nasoni-finger-fountain')),
+  'carbonara-paper-trail': lazy(() => import('./history/carbonara-paper-trail')),
 };

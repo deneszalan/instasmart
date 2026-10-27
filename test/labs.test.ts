@@ -143,6 +143,9 @@ import { move as obeliskMove, NEED as OBELISK_NEED, ROPES as OBELISK_ROPES, slac
 import { classify as vaticanClassify, insideBorder as vaticanInside, PLACES as VATICAN_PLACES } from '../src/labs/politics/vatican-city-1929';
 import { BEST as PIETA_BEST, fit as pietaFit, MARY_HEAD_X } from '../src/labs/art/pieta-michelangelo';
 import { floorPerPerson as ghettoFloor, groundPerPerson as ghettoGround, PEOPLE as GHETTO_PEOPLE, perHectare as ghettoPerHa, ROME_PER_HA, TARGET as GHETTO_TARGET } from '../src/labs/history/rome-ghetto-1555';
+import { fits as smmFits, LIBERIUS as SMM_LIBERIUS, windows as smmWindows, yearsLeft as smmYears } from '../src/labs/art/santa-maria-maggiore-sixtus-arch';
+import { flowShare as nasoniFlow, GOAL as NASONI_GOAL, HOLES as NASONI_HOLES, spoutPressure as nasoniPressure } from '../src/labs/engineering/nasoni-finger-fountain';
+import { DOCS as CARB_DOCS, firstName as carbFirstName, firstWith as carbFirstWith, known as carbKnown } from '../src/labs/history/carbonara-paper-trail';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1339,5 +1342,33 @@ describe('lab maths', () => {
     expect(GHETTO_TARGET).toBe(15);
     expect(ghettoFloor(GHETTO_PEOPLE[1656], 1)).toBeLessThan(GHETTO_TARGET);
     expect(ghettoFloor(GHETTO_PEOPLE[1656], 2)).toBe(GHETTO_TARGET);
+  it('Santa Maria Maggiore: a bishop Sixtus, after Ephesus and before the 1295 apse leaves only Sixtus III, 432–440', () => {
+    expect(smmWindows([])).toEqual([[100, 1600]]);
+    expect(smmWindows(['sixtus'])).toHaveLength(5);
+    expect(smmWindows(['sixtus', 'legal'])).toEqual([[432, 440], [1471, 1484], [1585, 1590]]);
+    const solved = smmWindows(['sixtus', 'ephesus', 'apse']);
+    expect(solved).toEqual([[432, 440]]);
+    expect(smmYears(solved)).toBe(8);
+    expect(smmFits(solved, SMM_LIBERIUS)).toBe(false);
+    expect(smmFits(smmWindows(['legal', 'apse']), SMM_LIBERIUS)).toBe(true);
+  });
+  it('Nasoni: blocking the spout cuts the flow, so the pressure at the spout climbs from about 9% to about 93% of the main', () => {
+    const hole = NASONI_HOLES.medium;
+    expect(nasoniPressure(0, hole)).toBeCloseTo(0.0936, 3);
+    expect(nasoniPressure(1, hole)).toBeCloseTo(0.9259, 3);
+    expect(nasoniFlow(0, hole)).toBe(1);
+    expect(nasoniFlow(1, hole)).toBeCloseTo(0.286, 3);
+    expect(nasoniPressure(1, NASONI_HOLES.small)).toBeGreaterThan(NASONI_GOAL);
+    expect(nasoniPressure(1, NASONI_HOLES.large)).toBeLessThan(NASONI_GOAL);
+    expect(nasoniPressure(0.9, hole)).toBeLessThan(NASONI_GOAL);
+  });
+  it('Carbonara: the name is in print by 1939, the first recipes in 1952, guanciale first in 1957', () => {
+    expect(carbFirstName(1938)).toBeNull();
+    expect(carbFirstName(2026)).toBe(1939);
+    expect(carbFirstWith('guanciale')).toBe(1957);
+    expect(carbFirstWith('gruyere')).toBe(1954);
+    expect(carbFirstWith('cream')).toBe(1960);
+    expect(carbKnown(1952).filter((d) => d.kind === 'recipe')).toHaveLength(2);
+    expect(CARB_DOCS.map((d) => d.year)).toEqual([...CARB_DOCS.map((d) => d.year)].sort((a, b) => a - b));
   });
 });
