@@ -1,0 +1,179 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-caesar-ides-pompey-curia",
+  "field": "history",
+  "title": "Julius Caesar was killed in Pompey’s hall, now in Largo Argentina; the accounts disagree",
+  "emoji": "📜",
+  "body": "On 15 March 44 BC, the Ides of March, Julius Caesar, who had won a civil war and in early 44 BC been named dictator for life, was stabbed at a meeting of the Senate. It met in the Curia of Pompey, a hall at the far end of the gardens behind Pompey’s theatre, Rome’s first permanent one, because the Senate’s own house had burned in 52 BC. The hall’s tufa base lies behind two of the temples of [Largo di Torre Argentina](https://turismoroma.it/it/luoghi/area-sacra-di-largo-di-torre-argentina), a few minutes’ walk from the Pantheon. What happened inside comes from later writers. Nicolaus of Damascus, alive at the time, wrote before AD 14 of 35 wounds and more than 80 plotters; Plutarch and [Suetonius](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Julius%2A.html), some 150 years later, count 23. Suetonius adds that a doctor judged only the second wound fatal, and that Caesar said nothing, though some wrote of Greek words to Brutus: ‘You too, child?’ ‘Et tu, Brute?’ is famous from Shakespeare’s play of 1599. The hall was walled up, and the plotters, who meant to save the Republic, set off new civil wars that ended with Augustus as Rome’s first emperor.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Suetonius, writing in AD 121, counted Julius Caesar’s wounds on the Ides of March. How many did he count?",
+      "min": 1,
+      "max": 60,
+      "step": 1,
+      "answer": 23,
+      "unit": "wounds",
+      "explanation": "23, as Plutarch also says. Nicolaus of Damascus, writing earlier, gives 35. A doctor, Antistius, judged only the second fatal, says Suetonius."
+    },
+    {
+      "type": "video",
+      "src": "ides.mp4",
+      "poster": "ides.jpg",
+      "alt": "Animation in night blue: a plan of Pompey's theatre, gardens and the hall at their end, beside the temples of Largo Argentina; a coin naming Caesar dictator for life; the plotters gathering; parchment cards of the ancient accounts on a time line; 23 tally marks; the hall walled up; years to 27 BC.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Clenched Teeth” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "caesar-ides-pompey-curia",
+      "prompt": "Drag through the years after the Ides of March and watch the accounts of Caesar’s murder appear. When does the line “Et tu, Brute?” turn up?",
+      "takeaway": "In Shakespeare’s Julius Caesar of 1599, 1,642 years on. The ancient accounts, the first within 57 years, give 23 or 35 wounds, and at most Greek words to Brutus: “You too, child?”"
+    },
+    {
+      "type": "image",
+      "src": "largo-argentina.jpg",
+      "alt": "Photo of a sunken area of Roman ruins in a city square: low brick and rubble walls, a broken white column and grass below street level, a tall umbrella pine, a railing where people look down, and apartment buildings behind.",
+      "caption": "Largo di Torre Argentina today: Republican temples below the street, beside the base of the hall where Caesar was killed.",
+      "fit": "cover",
+      "credit": "Nicholas Gemini · CC BY-SA 3.0"
+    },
+    {
+      "type": "compare",
+      "heading": "The famous last words",
+      "left": {
+        "label": "Myth",
+        "text": "Julius Caesar’s last words were “Et tu, Brute?”"
+      },
+      "right": {
+        "label": "Sources",
+        "text": "Suetonius and Plutarch: he said nothing. Some told of Greek words to Brutus, “You too, child?” The Latin line is famous from Shakespeare (1599)."
+      }
+    },
+    {
+      "type": "timeline",
+      "heading": "From the Ides to an emperor",
+      "events": [
+        {
+          "when": "44 BC",
+          "text": "Caesar killed on the Ides of March"
+        },
+        {
+          "when": "43 BC",
+          "text": "Antony, Octavian, Lepidus join forces"
+        },
+        {
+          "when": "42 BC",
+          "text": "Brutus and Cassius defeated at Philippi"
+        },
+        {
+          "when": "31 BC",
+          "text": "Octavian beats Antony at Actium"
+        },
+        {
+          "when": "27 BC",
+          "text": "Octavian takes the name Augustus"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why did Rome’s Senate meet in a hall built by Pompey on the Ides of March, 44 BC?",
+      "options": [
+        "Its own house had burned down",
+        "Caesar wished to honour Pompey",
+        "Pompey had invited the Senate",
+        "It was the largest hall in Rome"
+      ],
+      "answer": 0,
+      "explanation": "The Senate’s house, the Curia Hostilia, burned in 52 BC, so it met in other halls, like the one at the end of Pompey’s gardens."
+    }
+  ],
+  "tags": [
+    "rome",
+    "caesar",
+    "ides",
+    "assassination",
+    "sources",
+    "republic"
+  ],
+  "source": {
+    "label": "Wikipedia: Assassination of Julius Caesar",
+    "url": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar"
+  },
+  "theme": {
+    "gradient": [
+      "#0d1119",
+      "#2b3a52"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T18:43:11Z"
+}

@@ -1,0 +1,172 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-augustus-offices-counted",
+  "field": "history",
+  "title": "Augustus ruled Rome through the Republic’s old offices, and his monuments count them",
+  "emoji": "🦅",
+  "body": "In 27 BC Octavian, Julius Caesar’s heir and winner of the civil wars, said he gave the state back to the Senate and people; the Senate named him Augustus. He kept the Republic’s offices but held them himself: consul every year from 31 to 23 BC, then a tribune’s powers for life, renewed each year, chief priest from 12 BC and ‘Father of the Country’ from 2 BC. In his own record, the [Res Gestae](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/6%2A.html), he says he had no more power than his colleagues in each office. Because the counts grew year by year, his inscriptions date themselves: the obelisk he brought from Egypt, now in Piazza del Popolo, calls him consul for the 11th time in the 14th year of his tribune’s power, which puts it in 10 or 9 BC. He rebuilt the city too: 82 temples in 28 BC alone, he says, and his forum with the Temple of Mars the Avenger, opened in 2 BC. Suetonius says he boasted of finding Rome brick and leaving it marble, much of it from the new quarries at Luna; [Cassius Dio](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/56%2A.html) thought he meant the empire’s strength.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "In his own record of his deeds, how many temples does Augustus say he rebuilt in Rome in a single year, 28 BC?",
+      "min": 5,
+      "max": 150,
+      "step": 1,
+      "answer": 82,
+      "unit": "temples",
+      "explanation": "82, he says, “omitting none which at that time stood in need of repair”. It was the year before the Senate named him Augustus."
+    },
+    {
+      "type": "video",
+      "src": "augustus.mp4",
+      "poster": "augustus.jpg",
+      "alt": "Animation in verde-antico green and white marble: an inscription gains the name AVGVSTVS in 27 BC; his offices as bars on a time line, the tribune's power counted to XXXVII; the obelisk's inscription with COS XI and TRIB POT XIV; 82 temples; brick turning to marble; Luna marble shipped to Rome.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Heroic Age” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "augustus-offices-counted",
+      "prompt": "Move through Augustus’s life and read his titles as an inscription gives them. Find a date that matches the obelisk: consul XI times, tribune’s power year XIV.",
+      "takeaway": "Only from mid-10 BC to mid-9 BC: his tribune’s power was renewed each year from 23 BC, and his 12th consulship came only in 5 BC. The titles kept the Republic’s names while dating his rule."
+    },
+    {
+      "type": "image",
+      "src": "forum-of-augustus.jpg",
+      "alt": "Night photo of the floodlit ruins of the Forum of Augustus in Rome: three tall fluted columns of a temple in front of a high grey stone wall, with steps, scattered marble blocks and city buildings around.",
+      "caption": "The Forum of Augustus today: three columns of the Temple of Mars the Avenger before the forum’s high stone wall.",
+      "fit": "cover",
+      "credit": "Sergio D’Afflitto (Blackcat) · CC BY-SA 4.0"
+    },
+    {
+      "type": "quote",
+      "text": "After that time I took precedence of all in rank, but of power I possessed no more than those who were my colleagues in any magistracy.",
+      "attribution": "Augustus, Res Gestae 34 (Loeb translation, 1924)"
+    },
+    {
+      "type": "timeline",
+      "heading": "Augustus’s titles, one by one",
+      "events": [
+        {
+          "when": "27 BC",
+          "text": "Named Augustus by the Senate"
+        },
+        {
+          "when": "23 BC",
+          "text": "Tribune’s powers for life, counted yearly"
+        },
+        {
+          "when": "12 BC",
+          "text": "Becomes chief priest, pontifex maximus"
+        },
+        {
+          "when": "2 BC",
+          "text": "Named Father of the Country"
+        },
+        {
+          "when": "AD 14",
+          "text": "Dies at 75, after 13 consulships"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "On the obelisk Augustus set up in Rome, what does “TRIB POT XIV” tell a reader?",
+      "options": [
+        "His 14th year of tribune’s power",
+        "He had rebuilt 14 temples",
+        "His 14th victory in war",
+        "The 14th day of the month"
+      ],
+      "answer": 0,
+      "explanation": "His tribune’s power was renewed every year from 23 BC, so the count dates the stone: year 14 ran from mid-10 BC to mid-9 BC."
+    }
+  ],
+  "tags": [
+    "rome",
+    "augustus",
+    "emperor",
+    "inscriptions",
+    "marble",
+    "republic"
+  ],
+  "source": {
+    "label": "Wikipedia: Augustus",
+    "url": "https://en.wikipedia.org/wiki/Augustus"
+  },
+  "theme": {
+    "gradient": [
+      "#0c1310",
+      "#2e4438"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T18:53:26Z"
+}
