@@ -99,6 +99,7 @@ export const LABS = {
   'swift-solar-drag-reentry': 'Let the air brake a satellite in a 600 km orbit, and watch it sink, and speed up by as much as it was braked.',
   'one-positron-quantum-cyclotron': 'Set the magnet and the end-cap voltage of a Penning trap and see whether a positron stays clear of every wall.',
   'uranocenium-sandwich': 'Choose the oxidant, the salt and the solvent, and find the mix in which uranocenium survives instead of falling apart.',
+  'condorcet-cycle-klein-bottle': 'Set the sizes of three groups of voters with different rankings, and find when majority voting goes round in a circle.',
 } as const;
 
 export type LabId = keyof typeof LABS;

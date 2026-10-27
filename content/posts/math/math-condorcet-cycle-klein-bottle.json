@@ -1,0 +1,145 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-condorcet-cycle-klein-bottle",
+  "field": "math",
+  "title": "Mathematicians have drawn a 240-year-old voting paradox as a Klein bottle",
+  "emoji": "🗳️",
+  "body": "On 26 October 2026 Quanta Magazine reported work by Ori Livson and Mikhail Prokopenko of the University of Sydney and Siddharth Pritam of the Chennai Mathematical Institute ([Quanta](https://www.quantamagazine.org/how-voting-is-like-a-klein-bottle-20261026/)). It starts from Condorcet’s paradox of 1785: if three equal groups rank Alice > Bob > Carol, Bob > Carol > Alice and Carol > Alice > Bob, then Alice beats Bob, Bob beats Carol and Carol beats Alice, each by two groups to one, so majority voting goes round in a **circle** although every voter is consistent. In 1993 Yuliy Baryshnikov drew each of the six possible rankings as a triangle whose corners are the head-to-head results it implies. Rankings that agree on two results share an edge, and the six close into a tube whose two rims are exactly the circular orders. The new work glues those rims together: glued straight they make a doughnut whose labels don’t match, but glued with a twist they match, and the surface becomes a Klein bottle, which has one side and no edge ([preprint](https://arxiv.org/abs/2601.07283)).",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Group 1 ranks Alice > Bob > Carol, group 2 Bob > Carol > Alice, group 3 Carol > Alice > Bob. Who wins every head-to-head?",
+      "answer": "Nobody: each candidate loses one race",
+      "detail": "Alice beats Bob, Bob beats Carol and Carol beats Alice, each by two groups to one. This is Condorcet’s paradox, from 1785."
+    },
+    {
+      "type": "video",
+      "src": "klein.mp4",
+      "poster": "klein.jpg",
+      "alt": "Animation on cream paper. Three ballots rank Alice, Bob and Carol; head-to-head counts make a circle of arrows. One ranking becomes a triangle of comparisons; six triangles form a strip that closes into a tube with two coloured rims. Then a wireframe torus, and a Klein bottle.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Arcadia” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 7,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "condorcet-cycle-klein-bottle",
+      "prompt": "Set how many voters are in each of the three groups. Find sizes where majority voting goes round in a circle, with no winner.",
+      "takeaway": "A circle appears exactly when no group outnumbers the other two together, the rule for the sides of a triangle. Then every candidate loses one head-to-head, and majority rule picks no winner."
+    },
+    {
+      "type": "text",
+      "heading": "Six rankings, six triangles",
+      "text": "There are 6 ways to rank three candidates. In 1993 mathematician Yuliy Baryshnikov drew each as a triangle whose corners are the head-to-head results it implies, like Alice over Bob. Rankings one swap apart share two results, so their triangles share an edge; the six close into a tube. Its rims are the circular orders."
+    },
+    {
+      "type": "compare",
+      "heading": "Gluing the rims",
+      "left": {
+        "label": "Straight",
+        "text": "The tube closes into a doughnut, a torus, but rankings end up glued to the wrong partners."
+      },
+      "right": {
+        "label": "With a twist",
+        "text": "Every label matches, and the surface becomes a Klein bottle: one side and no edge."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "With three groups ranked as in Condorcet’s example, when do majorities go round in a circle?",
+      "options": [
+        "When no group outnumbers the other two",
+        "Only when the groups are equal",
+        "Whenever there are three candidates",
+        "Never with real voters"
+      ],
+      "answer": 0,
+      "explanation": "Alice beats Bob if groups 1 and 3 outnumber group 2, and so on. All three races go round in a circle exactly when no group is bigger than the other two together."
+    }
+  ],
+  "tags": [
+    "voting",
+    "paradox",
+    "topology",
+    "condorcet",
+    "surfaces"
+  ],
+  "source": {
+    "label": "Quanta Magazine: How Voting Is Like a Klein Bottle (26 October 2026)",
+    "url": "https://www.quantamagazine.org/how-voting-is-like-a-klein-bottle-20261026/"
+  },
+  "theme": {
+    "gradient": [
+      "#1d2440",
+      "#4a3590"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-26"
+}

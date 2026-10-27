@@ -99,4 +99,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'swift-solar-drag-reentry': lazy(() => import('./space/swift-solar-drag-reentry')),
   'one-positron-quantum-cyclotron': lazy(() => import('./physics/one-positron-quantum-cyclotron')),
   'uranocenium-sandwich': lazy(() => import('./chemistry/uranocenium-sandwich')),
+  'condorcet-cycle-klein-bottle': lazy(() => import('./math/condorcet-cycle-klein-bottle')),
 };

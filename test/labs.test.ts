@@ -94,6 +94,7 @@ import { flyby as juiceFlyby, turnAngle as juiceTurn, VINF as JUICE_VINF } from 
 import { heightAfter as swiftHeight, periodAt as swiftPeriod, speedAt as swiftSpeed } from '../src/labs/space/swift-solar-drag-reentry';
 import { holds as positronHolds, REAL_RATIO as POSITRON_RATIO, simulate as positronRun } from '../src/labs/physics/one-positron-quantum-cyclotron';
 import { outcome as uranOutcome } from '../src/labs/chemistry/uranocenium-sandwich';
+import { duels as condorcetDuels, isCycle as condorcetCycle, winner as condorcetWinner } from '../src/labs/math/condorcet-cycle-klein-bottle';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -786,5 +787,16 @@ describe('lab maths', () => {
     expect(uranOutcome('trityl', 'borate', 'thf')).toBe('solvent');
     expect(uranOutcome('silver', 'borate', 'difluorobenzene')).toBe('rings');
     expect(uranOutcome('silver', 'pf6', 'thf')).toBe('rings');
+  });
+
+  it('Condorcet: majorities run in a circle exactly when no group outnumbers the other two; otherwise the biggest group’s favourite wins', () => {
+    expect(condorcetDuels(1, 1, 1)).toEqual({ aliceBob: [2, 1], bobCarol: [2, 1], carolAlice: [2, 1] });
+    expect(condorcetCycle(1, 1, 1)).toBe(true);
+    expect(condorcetCycle(20, 15, 10)).toBe(true);
+    expect(condorcetCycle(30, 10, 10)).toBe(false);
+    expect(condorcetWinner(30, 10, 10)).toBe('Alice');
+    expect(condorcetWinner(5, 30, 10)).toBe('Bob');
+    expect(condorcetCycle(20, 10, 10)).toBe(false);
+    expect(condorcetWinner(20, 10, 10)).toBe(null);
   });
 });

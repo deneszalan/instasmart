@@ -1334,4 +1334,9 @@ export const de: Record<string, string> = {
   'Solvent': 'Lösungsmittel',
   'Difluorobenzene': 'Difluorbenzol',
   'From the 2026 paper; mixes it did not try are inferred.': 'Nach der Studie von 2026; nicht getestete Mischungen sind abgeleitet.',
+  'none: a circle': 'keiner: ein Kreis',
+  'a tie somewhere': 'irgendwo ein Gleichstand',
+  'Head-to-head results between Alice, Bob and Carol; majority winner: {w}': 'Direkte Duelle zwischen Alice, Bob und Carol; Mehrheitssieger: {w}',
+  'Majority winner': 'Mehrheitssieger',
+  'Each slider: a group of voters with that ranking.': 'Jeder Regler: eine Wählergruppe mit dieser Reihenfolge.',
 };
