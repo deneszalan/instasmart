@@ -1,0 +1,157 @@
+{
+  "id": "art-aventine-keyhole-view",
+  "field": "art",
+  "title": "A keyhole on Rome’s Aventine frames St Peter’s dome, 3 km away, beyond a garden path",
+  "emoji": "🗝️",
+  "body": "On the Aventine Hill, in the Piazza dei Cavalieri di Malta that the etcher and architect Giovanni Battista Piranesi designed in the 1760s, visitors queue to look through the keyhole of the gate to the Priory of the Knights of Malta. Through it they see a garden path between clipped hedges and, at its end, the dome of St Peter’s. On OpenStreetMap the path runs about 90 m straight towards the dome, which is 2,976 m from the keyhole. The keyhole doesn’t magnify: the dome, about 42 m wide, fills an angle of only 0.8 degrees, about one and a half times the width of the full Moon, just as it would from anywhere else that far away. What the keyhole does is frame it: the near hedges fill most of your view and hide the city in between. The villa belongs to the Sovereign Military Order of Malta, a Catholic order known for medical and aid work; it is not a country, but Italy recognises the villa as the Order’s [extraterritorial property](https://www.orderofmalta.int/government/magistral-villa/).",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "From the keyhole on the Aventine, St Peter’s dome is about 3 km away. How many full Moons wide does it look?",
+      "min": 0,
+      "max": 10,
+      "step": 0.05,
+      "answer": 1.55,
+      "unit": "Moons",
+      "explanation": "About 1.55. The dome, 42 m wide, spans 0.81° from 2,976 m, and the full Moon spans about 0.52°."
+    },
+    {
+      "type": "video",
+      "src": "keyhole.mp4",
+      "poster": "keyhole.jpg",
+      "alt": "Animation at dusk: Piranesi's wall of obelisks and the green door on the Aventine; the view through the keyhole of a hedge tunnel to St Peter's dome; a map line of 2,976 m; the dome's 0.8° beside the full Moon; and the frame of near hedges hiding the city.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Paradise Found” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 17.87
+        },
+        {
+          "start": 18.13,
+          "end": 23.73
+        },
+        {
+          "start": 24,
+          "end": 29.6
+        },
+        {
+          "start": 29.87,
+          "end": 35.47
+        },
+        {
+          "start": 35.73,
+          "end": 41.33
+        },
+        {
+          "start": 41.6,
+          "end": 47.2
+        },
+        {
+          "start": 47.47,
+          "end": 53.07
+        },
+        {
+          "start": 53.33,
+          "end": 58.93
+        },
+        {
+          "start": 59.2,
+          "end": 64.8
+        },
+        {
+          "start": 65.07,
+          "end": 70.67
+        },
+        {
+          "start": 70.93,
+          "end": 76.53
+        },
+        {
+          "start": 76.8,
+          "end": 82.4
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "aventine-keyhole-view",
+      "prompt": "Move St Peter’s dome nearer or farther. At what distance would it look exactly as wide as the full Moon?",
+      "takeaway": "At about 4.6 km. From the keyhole, 2,976 m away, it spans 0.81°, one and a half Moons: the angle is size ÷ distance, and the keyhole only frames it."
+    },
+    {
+      "type": "image",
+      "src": "keyhole-photo.jpg",
+      "alt": "Photograph of a dark tunnel of tall clipped hedges over a gravel path; at its far end, framed by an arch of leaves, the pale grey ribbed dome of St Peter’s stands against a hazy sky above trees.",
+      "caption": "The view through the keyhole of the Priory of the Knights of Malta: the hedge-lined path and, beyond it, the dome of St Peter’s.",
+      "fit": "cover",
+      "credit": "Espegro · CC BY-SA 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "What the keyhole does",
+      "left": {
+        "label": "Myth",
+        "text": "The keyhole works like a lens and makes the dome look bigger than it is."
+      },
+      "right": {
+        "label": "Fact",
+        "text": "The dome looks as small as from anywhere 3 km away, 0.8°; the hole and the hedges only frame it."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Piranesi’s only building",
+      "text": "Giovanni Battista Piranesi (1720–1778) was famous for his etchings of Rome. Behind this gate, the church of Santa Maria del Priorato was rebuilt to his designs in 1764–66: it is his only architectural work, and his ashes lie in a niche inside."
+    },
+    {
+      "type": "quiz",
+      "question": "If St Peter’s dome were twice as far from the keyhole, how wide would it look?",
+      "options": [
+        "Half as wide",
+        "Just as wide",
+        "A quarter as wide",
+        "Twice as wide"
+      ],
+      "answer": 0,
+      "explanation": "The angle goes as size ÷ distance: twice as far, half the angle. About 0.4°, smaller than the full Moon."
+    }
+  ],
+  "tags": [
+    "rome",
+    "perspective",
+    "angles",
+    "piranesi",
+    "gardens",
+    "orderofmalta"
+  ],
+  "source": {
+    "label": "Wikipedia: Villa del Priorato di Malta",
+    "url": "https://en.wikipedia.org/wiki/Villa_del_Priorato_di_Malta"
+  },
+  "theme": {
+    "gradient": [
+      "#0e1c24",
+      "#2f5d3a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T12:22:46Z"
+}

@@ -209,7 +209,8 @@
                   "caesar-445-day-year",
                   "trastevere-gold-tesserae",
                   "san-clemente-three-levels",
-                  "campidoglio-trapezoid"
+                  "campidoglio-trapezoid",
+                  "aventine-keyhole-view"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

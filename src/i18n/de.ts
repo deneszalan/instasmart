@@ -1570,4 +1570,12 @@ export const de: Record<string, string> = {
   'The far palace fills': 'Der hintere Palast füllt',
   'Compared with a rectangle': 'Verglichen mit einem Rechteck',
   'Model: the square as measured on OpenStreetMap, 44 m wide at the entrance and 54 m deep; you stand 8 m down the Cordonata. Façade heights are schematic.': 'Modell: der Platz nach OpenStreetMap, am Eingang 44 m breit und 54 m tief; du stehst 8 m weiter unten auf der Cordonata. Fassadenhöhen schematisch.',
+  'the full Moon, to scale': 'der Vollmond, maßstäblich',
+  'St Peter’s dome': 'die Kuppel des Petersdoms',
+  'The dome of St Peter’s seen through a keyhole from {km} km, beside the full Moon': 'Die Kuppel des Petersdoms durch ein Schlüsselloch aus {km} km gesehen, neben dem Vollmond',
+  'Distance to the dome': 'Entfernung zur Kuppel',
+  'The dome looks': 'Die Kuppel wirkt',
+  'Full Moons wide': 'Vollmonde breit',
+  'From the keyhole': 'Vom Schlüsselloch',
+  'The keyhole’s view is drawn 3° across; the Moon and the dome are drawn to the same scale. The dome is about 42 m wide.': 'Der Blick durchs Schlüsselloch ist 3° breit gezeichnet; Mond und Kuppel im selben Maßstab. Die Kuppel ist etwa 42 m breit.',
 };

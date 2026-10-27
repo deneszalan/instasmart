@@ -119,6 +119,7 @@ export const LABS = {
   'trastevere-gold-tesserae': 'Tilt the gold tiles of an apse mosaic and walk down the nave, to see from how much of it the Sun’s reflection flashes at you.',
   'san-clemente-three-levels': 'Step through San Clemente’s history, rebuilding on the ruins or clearing them away, and see how many older levels stay buried under the floor.',
   'campidoglio-trapezoid': 'Turn the side palaces of Rome’s Piazza del Campidoglio outwards and see, from the top of the Cordonata, how much more of your view the far palace fills.',
+  'aventine-keyhole-view': 'Move St Peter’s dome nearer or farther from the Aventine keyhole and compare how wide it looks with the full Moon.',
 } as const;
 
 export type LabId = keyof typeof LABS;

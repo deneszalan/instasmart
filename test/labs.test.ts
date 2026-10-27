@@ -114,6 +114,7 @@ import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '
 import { coverage as goldCoverage, flashing as goldFlashing, GOAL as GOLD_GOAL, reflectedAngle as goldReflected, tiltsFor as goldTilts } from '../src/labs/art/trastevere-gold-tesserae';
 import { buried as scBuried, site as scSite, STEPS as SC_STEPS } from '../src/labs/earth/san-clemente-three-levels';
 import { farWidth as cpFar, viewAngle as cpView, widerThanRectangle as cpWider } from '../src/labs/art/campidoglio-trapezoid';
+import { angularSize as akAngle, distanceFor as akDistance, DOME as AK_DOME, KEYHOLE_DISTANCE as AK_DIST, MOON as AK_MOON } from '../src/labs/art/aventine-keyhole-view';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1026,5 +1027,12 @@ describe('lab maths', () => {
     expect(cpView(44)).toBeCloseTo(39.1, 1);
     expect(cpView(58)).toBeCloseTo(50.1, 1);
     expect(cpWider(-5)).toBeLessThan(1);
+  });
+
+  it('Aventine keyhole: the 42 m dome spans 0.81° from 2,976 m, 1.55 full Moons; it would match the Moon from about 4.6 km, and twice as far it looks half as wide', () => {
+    expect(akAngle(AK_DOME, AK_DIST)).toBeCloseTo(0.81, 2);
+    expect(akAngle(AK_DOME, AK_DIST) / AK_MOON).toBeCloseTo(1.55, 2);
+    expect(akDistance(AK_DOME, AK_MOON)).toBeCloseTo(4628, -1);
+    expect(akAngle(AK_DOME, 2 * AK_DIST) / akAngle(AK_DOME, AK_DIST)).toBeCloseTo(0.5, 3);
   });
 });
