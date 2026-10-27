@@ -1,6 +1,7 @@
 import { FIELD_IDS } from './fields.ts';
 import { formatIssues, localMedia, MEDIA_EXTENSIONS, Post, VIDEO_EXTENSIONS } from './schema.ts';
 import { readMp4, STEP_STILL_BEFORE_END, stepStill, videoProblems } from './video.ts';
+import { applyTranslation, TRANSLATIONS_DIR, translationPath } from './translate.ts';
 
 /** A file in the repository, addressed by its repo-relative path. */
 export interface ContentFile {
@@ -178,8 +179,11 @@ export function checkPostFile(path: string, json: string): { post?: Post; proble
  * Validate a set of content files as a whole: every post, every image, unique ids,
  * every referenced image present and no stray media.
  */
-/** Check every post and media file of one edition; `fields` are the fields that edition uses. */
-export function validateContent(files: ContentFile[], fields: readonly string[] = FIELD_IDS): { posts: Post[]; problems: Problem[] } {
+/**
+ * Check every post, translation and media file of one edition; `fields` are the fields that edition uses,
+ * `langs` the languages its posts may be translated into (content/i18n/<lang>/<field>/<id>.json).
+ */
+export function validateContent(files: ContentFile[], fields: readonly string[] = FIELD_IDS, langs: readonly string[] = []): { posts: Post[]; problems: Problem[] } {
   const problems: Problem[] = [];
   const posts: Post[] = [];
   const media = new Map<string, Set<string>>();
@@ -231,6 +235,41 @@ export function validateContent(files: ContentFile[], fields: readonly string[] 
     if (own.length === 0) posts.push(post);
   }
 
+  // Translations: each is checked as the post it makes, so the same limits apply in every language.
+  const translatedMedia = new Map<string, Set<string>>();
+  for (const file of files) {
+    if (!file.path.startsWith(`${TRANSLATIONS_DIR}/`)) continue;
+    const [lang, , name] = file.path.slice(TRANSLATIONS_DIR.length + 1).split('/');
+    const id = name?.replace(/\.json$/, '');
+    if (!langs.includes(lang)) {
+      problems.push({ file: file.path, message: langs.length ? `"${lang}" is not a language here. Languages are: ${langs.join(', ')}` : 'this app has no other languages; see "langs" in shared/editions.ts' });
+      continue;
+    }
+    const post = posts.find((p) => p.id === id);
+    if (!post || file.path !== translationPath(lang, post)) {
+      problems.push({ file: file.path, message: post ? `the translation of "${id}" must live at ${translationPath(lang, post)}` : `no post has the id "${id}"` });
+      continue;
+    }
+    let data: unknown;
+    try {
+      data = JSON.parse(new TextDecoder().decode(file.bytes));
+    } catch (err) {
+      problems.push({ file: file.path, message: `not valid JSON: ${(err as Error).message}` });
+      continue;
+    }
+    const { post: translated, problems: own } = applyTranslation(post, data);
+    for (const message of own) problems.push({ file: file.path, message });
+    const result = Post.safeParse(translated);
+    if (!result.success) for (const message of formatIssues(result.error)) problems.push({ file: file.path, message });
+    const available = media.get(post.id) ?? new Set<string>();
+    for (const name of localMedia(translated)) {
+      if (!available.has(name)) problems.push({ file: file.path, message: `file "${name}" is missing: add it at ${mediaPath(post.id, name)}` });
+      if (!translatedMedia.has(post.id)) translatedMedia.set(post.id, new Set());
+      translatedMedia.get(post.id)!.add(name);
+    }
+    for (const message of clipProblems(translated, mediaBytes)) problems.push({ file: file.path, message });
+  }
+
   for (const [postId, names] of media) {
     const owner = posts.find((p) => p.id === postId);
     if (!owner && !seenIds.has(postId)) {
@@ -238,7 +277,7 @@ export function validateContent(files: ContentFile[], fields: readonly string[] 
       continue;
     }
     if (!owner) continue;
-    const used = new Set(localMedia(owner));
+    const used = new Set([...localMedia(owner), ...(translatedMedia.get(postId) ?? [])]);
     for (const name of names) {
       if (!used.has(name)) problems.push({ file: mediaPath(postId, name), message: 'this file is not used by its post; remove it or reference it' });
     }

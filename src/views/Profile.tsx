@@ -3,7 +3,7 @@ import { FIELDS } from '../data/fields';
 import { LIBRARY } from '../data/library';
 import { streak, useStore, type Theme } from '../state/store';
 import { Avatar } from '../components/Avatar';
-import { t } from '../i18n';
+import { LANG, LANG_NAMES, LANGS, setLang, t } from '../i18n';
 import { EDITION } from '../edition';
 
 const THEMES: { id: Theme; label: string; icon: typeof Sun }[] = [
@@ -128,6 +128,18 @@ export function Profile() {
             />
           </label>
         )}
+        {LANGS.length > 1 && (
+          <div className="setting">
+            <span className="setting__name">{t('Language')}</span>
+            <div className="segmented" role="radiogroup" aria-label={t('Language')}>
+              {LANGS.map((lang) => (
+                <button key={lang} role="radio" lang={lang} aria-checked={LANG === lang} onClick={() => lang !== LANG && setLang(lang)}>
+                  {LANG_NAMES[lang]}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
         <div className="setting">
           <span className="setting__name">{t('Theme')}</span>
           <div className="segmented" role="radiogroup" aria-label={t('Theme')}>
@@ -153,7 +165,7 @@ export function Profile() {
         </button>
       </section>
 
-      <p className="about">{EDITION.about}</p>
+      <p className="about">{EDITION.langs?.[LANG]?.about ?? EDITION.about}</p>
     </div>
   );
 }

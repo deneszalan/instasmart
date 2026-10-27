@@ -13,6 +13,7 @@ editions/roma/
 - New post: `npm run content -- new <field> <slug> --edition roma`. Check: `npm run content` checks every app.
 - Fields: `history`, `engineering`, `art`, `politics`, `economics`, `math` and `earth`, each with a Rome-flavoured name and account in `fieldText` in `shared/editions.ts`. Every field an app lists needs at least one post, so add a new field (good next ones: `language` for Latin, `body` for Roman medicine) together with its first post.
 - Animations work as in Reckon (`explainers/README.md`); the render finds the post in this folder. Credit them `"Roma · original animation"` (`· AI narration` when narrated), and give each animation post an explore lab, as in Reckon.
+- German: Roma can be switched to German under Settings. Each post has its German text in `content/i18n/de/<field>/<id>.json` (see "Translations" in `content/README.md`); a new post should get one too. The German captions for each animation are kept in `explainers/i18n/de/<id>.json`, ready for a German-subtitled render.
 - Post ids must be unique across all apps, because `explainers/` and the labs are shared. Reckon already has posts on the Pantheon's dome, Roman concrete and Pompeii's food counters: Roma can cover them too, but with its own ids and its own take.
 
 ## Facts

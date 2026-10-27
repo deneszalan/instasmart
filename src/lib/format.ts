@@ -1,9 +1,13 @@
-import { EDITION } from '../edition';
+import { LANG } from '../i18n';
 export type NumberFormat = 'number' | 'year' | undefined;
 
 /** 1,582 (or 1582 for a year), with at most two decimals. */
 export const formatNumber = (n: number, format?: NumberFormat): string =>
-  new Intl.NumberFormat(EDITION.lang === 'de' ? 'de-DE' : undefined, { maximumFractionDigits: 2, useGrouping: format !== 'year' }).format(n);
+  new Intl.NumberFormat(LANG === 'de' ? 'de-DE' : undefined, { maximumFractionDigits: 2, useGrouping: format !== 'year' }).format(n);
+
+/** A number with exactly `digits` decimals, written the reader's way: 365.2500, or 365,2500 in German. */
+export const formatFixed = (n: number, digits: number): string =>
+  new Intl.NumberFormat(LANG === 'de' ? 'de-DE' : undefined, { minimumFractionDigits: digits, maximumFractionDigits: digits }).format(n);
 
 /** A number with its unit: "34 km", "12%", "464 °C". */
 export function withUnit(n: number, unit?: string, format?: NumberFormat): string {
