@@ -90,6 +90,7 @@ import { simulate as optoRun } from '../src/labs/body/optogenetics-nobel';
 import { round as chiralRound, rounds as chiralRounds } from '../src/labs/chemistry/mirror-molecules-nobel';
 import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
 import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
+import { flyby as juiceFlyby, turnAngle as juiceTurn, VINF as JUICE_VINF } from '../src/labs/space/juice-earth-gravity-assist';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -740,5 +741,17 @@ describe('lab maths', () => {
     expect(lineLoss(10).lossMW / lineLoss(100).lossMW).toBeCloseTo(100, 9);
     expect(lineLoss(70).share).toBeGreaterThan(0.01);
     expect(lineLoss(75).share).toBeLessThan(0.01);
+  });
+
+  it('gravity assist: Juice’s 8,640 km flyby turns it by 20°; passing behind Earth adds 3.5 km/s, in front it brakes, closer turns more', () => {
+    expect(JUICE_VINF).toBeCloseTo(11.24, 1);
+    expect(juiceTurn(8640, JUICE_VINF)).toBeCloseTo(20, 6);
+    expect(juiceFlyby(8640, 'behind').gain).toBeCloseTo(3.5, 2);
+    expect(juiceFlyby(8640, 'front').gain).toBeLessThan(0);
+    expect(juiceFlyby(300, 'behind').turn).toBeGreaterThan(juiceFlyby(8640, 'behind').turn);
+    expect(juiceFlyby(300, 'behind').gain).toBeGreaterThan(5);
+    expect(juiceFlyby(40000, 'behind').gain).toBeLessThan(2);
+    expect(Math.abs(juiceFlyby(8100, 'behind').gain - 3.5)).toBeLessThanOrEqual(0.1);
+    expect(Math.abs(juiceFlyby(9300, 'behind').gain - 3.5)).toBeGreaterThan(0.1);
   });
 });

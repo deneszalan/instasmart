@@ -95,6 +95,7 @@ export const LABS = {
   'mirror-molecules-nobel': 'Start a flask a little more right-handed than left and run rounds of autocatalysis, with mixed pairs idle or working, until one hand takes over.',
   'nobel-hall-woodford': 'Set today’s interest rate and promise a path for the next two years, then see how spending today responds when people look ahead.',
   'power-grid-transformers': 'Step up the voltage of a power line carrying 10 MW and watch the current, and the power lost as heat, fall.',
+  'juice-earth-gravity-assist': 'Choose which side of Earth a probe passes and how close, and see the turn and the speed it gains or loses round the Sun.',
 } as const;
 
 export type LabId = keyof typeof LABS;
