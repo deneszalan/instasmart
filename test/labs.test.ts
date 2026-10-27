@@ -113,6 +113,7 @@ import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgme
 import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '../src/labs/history/caesar-445-day-year';
 import { canLay, PATCHES as GIORNATE_PATCHES, relief, seams as giornateSeams, under as lapsOver } from '../src/labs/art/sistine-ceiling-giornate';
 import { DIAGONALS as ATHENS_DIAGONALS, DIST as ATHENS_DIST, EDGES as ATHENS_EDGES, EYE as ATHENS_EYE, offLine, project as athensProject } from '../src/labs/math/school-of-athens-vanishing-point';
+import { bestLine, fits as thrustFits, PIECES as DOME_PIECES, SLICE_WEIGHT, THICK, thrustLine } from '../src/labs/engineering/st-peters-dome-chains';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1016,5 +1017,15 @@ describe('lab maths', () => {
     expect(athensProject(1, 2, 0)).toEqual([1, 2]);
     expect(athensProject(0, 2, ATHENS_DIST)[1]).toBeCloseTo((2 + ATHENS_EYE) / 2, 9);
     expect(offLine([0, 0], [1, 0], [0.5, 2])).toBe(2);
+  });
+  it('st peters dome: a line of thrust fits inside the slice only for a middling outward push; the chain ends on the springing line; pieces weigh less towards the top', () => {
+    expect(thrustFits(0.25, 0.1)).toBe(true);
+    expect(thrustFits(0.08, 0.1)).toBe(false);
+    expect(thrustFits(0.9, 0.1)).toBe(false);
+    expect(bestLine(0.25, 0.1).off).toBeLessThan(THICK / 2);
+    const pts = thrustLine(0.25, 0.1, 27);
+    expect(pts.at(-1)![1]).toBeCloseTo(0, 9);
+    expect(DOME_PIECES[0].w).toBeGreaterThan(DOME_PIECES.at(-1)!.w);
+    expect(DOME_PIECES.reduce((s, p) => s + p.w, 0)).toBeCloseTo(SLICE_WEIGHT, 9);
   });
 });

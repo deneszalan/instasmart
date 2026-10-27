@@ -118,6 +118,7 @@ export const LABS = {
   'caesar-445-day-year': 'Pick a leap-day rule, from none to Caesar’s and the Gregorian, and let the centuries pass to see how far the equinox drifts in the calendar.',
   'sistine-ceiling-giornate': 'Light a fresco panel from the side until the seams between its day-patches show, and number the patches in the order they were laid.',
   'school-of-athens-vanishing-point': 'Drag a point until it lies on every receding edge of a schematic School of Athens, then find where the floor tiles’ diagonals meet the horizon, and read off the painter’s eye height and distance.',
+  'st-peters-dome-chains': 'Set the outward push and the lantern’s load on one slice of a cracked dome, and find a line of thrust, Poleni’s hanging chain turned over, that stays inside the masonry.',
 } as const;
 
 export type LabId = keyof typeof LABS;
