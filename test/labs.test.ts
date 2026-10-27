@@ -121,6 +121,11 @@ import { buried as scBuried, site as scSite, STEPS as SC_STEPS } from '../src/la
 import { farWidth as cpFar, viewAngle as cpView, widerThanRectangle as cpWider } from '../src/labs/art/campidoglio-trapezoid';
 import { angularSize as akAngle, distanceFor as akDistance, DOME as AK_DOME, KEYHOLE_DISTANCE as AK_DIST, MOON as AK_MOON } from '../src/labs/art/aventine-keyhole-view';
 import { carbonLeft as wfLeft, ETRUSCAN_YEAR as WF_ETRUSCAN, radiocarbonAge as wfAge, roughYear as wfYear, WOLF_BP as WF_BP } from '../src/labs/history/capitoline-wolf-dating';
+import { canLay, PATCHES as GIORNATE_PATCHES, relief, seams as giornateSeams, under as lapsOver } from '../src/labs/art/sistine-ceiling-giornate';
+import { DIAGONALS as ATHENS_DIAGONALS, DIST as ATHENS_DIST, EDGES as ATHENS_EDGES, EYE as ATHENS_EYE, offLine, project as athensProject } from '../src/labs/math/school-of-athens-vanishing-point';
+import { bestLine, fits as thrustFits, PIECES as DOME_PIECES, SLICE_WEIGHT, THICK, thrustLine } from '../src/labs/engineering/st-peters-dome-chains';
+import { apennineSide, REGIONS as MAP_REGIONS } from '../src/labs/earth/gallery-of-maps-danti';
+import { LAYERS as CASTLE_LAYERS, newest as newestLayer } from '../src/labs/history/castel-sant-angelo-tomb-fortress';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1096,5 +1101,56 @@ describe('lab maths', () => {
     expect(wfLeft(1950 - WF_ETRUSCAN)).toBeCloseTo(0.739, 3);
     expect(wfYear(0.739)).toBeCloseTo(-480, -1);
     expect(wfYear(1)).toBe(1950);
+  it('sistine giornate: a patch can be numbered only after every older neighbour it laps over; the days in order always work; raking light shows the seams', () => {
+    const byDay = GIORNATE_PATCHES.map((_, i) => i).sort((a, b) => GIORNATE_PATCHES[a].day - GIORNATE_PATCHES[b].day);
+    const laid: number[] = [];
+    for (const i of byDay) {
+      expect(canLay(i, laid)).toBe(true);
+      laid.push(i);
+    }
+    const first = byDay[0];
+    expect(lapsOver(first)).toEqual([]);
+    for (const i of byDay.slice(1)) expect(canLay(i, [])).toBe(lapsOver(i).length === 0);
+    expect(giornateSeams().length).toBeGreaterThanOrEqual(GIORNATE_PATCHES.length);
+    expect(relief(90)).toBeCloseTo(0, 6);
+    expect(relief(0)).toBe(1);
+    expect(relief(10)).toBeGreaterThan(relief(45));
+  });
+  it('school of athens: every receding edge runs through the vanishing point at the eye height; tile diagonals meet the horizon at the viewing distance', () => {
+    for (const [a, b] of ATHENS_EDGES) expect(offLine(a, b, [0, ATHENS_EYE])).toBeLessThan(1e-9);
+    for (const [a, b] of ATHENS_DIAGONALS) expect(offLine(a, b, [Math.sign(b[0] - a[0]) * ATHENS_DIST, ATHENS_EYE])).toBeLessThan(1e-9);
+    expect(athensProject(1, 2, 0)).toEqual([1, 2]);
+    expect(athensProject(0, 2, ATHENS_DIST)[1]).toBeCloseTo((2 + ATHENS_EYE) / 2, 9);
+    expect(offLine([0, 0], [1, 0], [0.5, 2])).toBe(2);
+  });
+  it('st peters dome: a line of thrust fits inside the slice only for a middling outward push; the chain ends on the springing line; pieces weigh less towards the top', () => {
+    expect(thrustFits(0.25, 0.1)).toBe(true);
+    expect(thrustFits(0.08, 0.1)).toBe(false);
+    expect(thrustFits(0.9, 0.1)).toBe(false);
+    expect(bestLine(0.25, 0.1).off).toBeLessThan(THICK / 2);
+    const pts = thrustLine(0.25, 0.1, 27);
+    expect(pts.at(-1)![1]).toBeCloseTo(0, 9);
+    expect(DOME_PIECES[0].w).toBeGreaterThan(DOME_PIECES.at(-1)!.w);
+    expect(DOME_PIECES.reduce((s, p) => s + p.w, 0)).toBeCloseTo(SLICE_WEIGHT, 9);
+  });
+  it('gallery of maps: every region lies on the side of the Apennines that matches its wall; Rome is west, Milan and Turin drain to the Adriatic side', () => {
+    for (const r of MAP_REGIONS) expect([r.name, apennineSide(r.lon, r.lat)]).toEqual([r.name, r.wall]);
+    expect(apennineSide(12.5, 41.9)).toBe('tyrrhenian');
+    expect(apennineSide(9.19, 45.46)).toBe('adriatic');
+    expect(apennineSide(7.69, 45.07)).toBe('adriatic');
+    expect(apennineSide(13.36, 38.12)).toBe('tyrrhenian');
+    expect(apennineSide(18.17, 40.35)).toBe('adriatic');
+  });
+  it('castel sant angelo: peeling the newest layer each time ends at Hadrian’s tomb, the oldest', () => {
+    let standing = CASTLE_LAYERS.map((l) => l.id);
+    const order: string[] = [];
+    while (standing.length > 1) {
+      const top = newestLayer(standing)!;
+      order.push(top);
+      standing = standing.filter((s) => s !== top);
+    }
+    expect(order).toEqual(['bastions', 'towers', 'door', 'chapel', 'walls']);
+    expect(standing).toEqual(['tomb']);
+    expect(newestLayer(['tomb', 'walls', 'chapel'])).toBe('chapel');
   });
 });

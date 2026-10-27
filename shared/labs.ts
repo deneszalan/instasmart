@@ -126,6 +126,11 @@ export const LABS = {
   'campidoglio-trapezoid': 'Turn the side palaces of Rome’s Piazza del Campidoglio outwards and see, from the top of the Cordonata, how much more of your view the far palace fills.',
   'aventine-keyhole-view': 'Move St Peter’s dome nearer or farther from the Aventine keyhole and compare how wide it looks with the full Moon.',
   'capitoline-wolf-dating': 'Set how much carbon-14 is left in a sample and read its radiocarbon age, then find what a core cast in Etruscan times would hold, against the she-wolf’s.',
+  'sistine-ceiling-giornate': 'Light a fresco panel from the side until the seams between its day-patches show, and number the patches in the order they were laid.',
+  'school-of-athens-vanishing-point': 'Drag a point until it lies on every receding edge of a schematic School of Athens, then find where the floor tiles’ diagonals meet the horizon, and read off the painter’s eye height and distance.',
+  'st-peters-dome-chains': 'Set the outward push and the lantern’s load on one slice of a cracked dome, and find a line of thrust, Poleni’s hanging chain turned over, that stays inside the masonry.',
+  'gallery-of-maps-danti': 'Place regions of Italy on the two walls of the Vatican’s Gallery of Maps by which side of the Apennines they lie, and watch the corridor fill from north to south.',
+  'castel-sant-angelo-tomb-fortress': 'Peel Castel Sant’Angelo back layer by layer, from Alexander VI’s bastions to the corner towers, the raised door, the chapel and the city walls, down to Hadrian’s tomb.',
 } as const;
 
 export type LabId = keyof typeof LABS;

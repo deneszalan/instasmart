@@ -126,4 +126,9 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'campidoglio-trapezoid': lazy(() => import('./art/campidoglio-trapezoid')),
   'aventine-keyhole-view': lazy(() => import('./art/aventine-keyhole-view')),
   'capitoline-wolf-dating': lazy(() => import('./history/capitoline-wolf-dating')),
+  'sistine-ceiling-giornate': lazy(() => import('./art/sistine-ceiling-giornate')),
+  'school-of-athens-vanishing-point': lazy(() => import('./math/school-of-athens-vanishing-point')),
+  'st-peters-dome-chains': lazy(() => import('./engineering/st-peters-dome-chains')),
+  'gallery-of-maps-danti': lazy(() => import('./earth/gallery-of-maps-danti')),
+  'castel-sant-angelo-tomb-fortress': lazy(() => import('./history/castel-sant-angelo-tomb-fortress')),
 };
