@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { C, Choice, dot, label, line, Range, Readouts, Stage, useGoal, type LabProps } from '../kit';
+import { C, Choice, dot, font, label, line, Range, Readouts, Stage, useGoal, type LabProps } from '../kit';
 import { t } from '../../i18n';
 import { formatNumber } from '../../lib/format';
 
@@ -27,7 +27,14 @@ export const drift = (rule: Rule, years: number) => years * (AVERAGE[rule] - SUN
 export const yearsPerDay = (rule: Rule) => 1 / Math.abs(AVERAGE[rule] - SUN_YEAR);
 
 const GOAL_YEARS = 1000;
-const MAX_YEARS = 2000, MAX_DAYS = 16;
+export const MAX_YEARS = 2000, MAX_DAYS = 16;
+
+/** Where a rule's line leaves the chart: at its right edge, or earlier at the top or bottom if it drifts off. */
+export function chartEnd(rule: Rule): { years: number; days: number } {
+  const rate = AVERAGE[rule] - SUN_YEAR;
+  const years = Math.min(MAX_YEARS, MAX_DAYS / Math.abs(rate));
+  return { years, days: years * rate };
+}
 
 export default function CaesarYear({ onDone }: LabProps) {
   const [rule, setRule] = useState<Rule>('none');
@@ -49,18 +56,38 @@ export default function CaesarYear({ onDone }: LabProps) {
     line(ctx, L, mid, R, mid, C.soft, 1.2);
     label(ctx, '0', L - 4, mid, { size: 9, align: 'right', color: C.soft });
     for (const y of [0, 500, 1000, 1500, 2000]) label(ctx, formatNumber(y, 'year'), X(y), bot + 11, { size: 9, color: C.faint, align: y === MAX_YEARS ? 'right' : 'center' });
-    label(ctx, t('equinox earlier'), R, top + 6, { size: 9.5, align: 'right', color: C.soft });
-    label(ctx, t('equinox later'), R, bot - 8, { size: 9.5, align: 'right', color: C.soft });
-    // this rule over 2,000 years
-    ctx.strokeStyle = C.cool;
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    ctx.moveTo(X(0), Y(0));
-    ctx.lineTo(X(MAX_YEARS), Y(drift(rule, MAX_YEARS)));
-    ctx.stroke();
+    // this rule over 2,000 years, until it leaves the chart
+    const end = chartEnd(rule);
+    line(ctx, X(0), Y(0), X(end.years), Y(end.days), C.cool, 2);
+    // labels on a dark backing, so a line passing under them doesn't hide them
+    const tag = (s: string, y: number) => {
+      font(ctx, 9.5);
+      const w = ctx.measureText(s).width;
+      ctx.fillStyle = 'rgba(0,0,0,0.45)';
+      ctx.fillRect(R - w - 6, y - 8, w + 6, 16);
+      label(ctx, s, R - 3, y, { size: 9.5, align: 'right', color: C.soft });
+    };
+    tag(t('equinox earlier'), top + 8);
+    tag(t('equinox later'), bot - 8);
     const ok = Math.abs(d) < 1;
-    line(ctx, X(years), bot, X(years), Y(d), C.faint, 1, [3, 3]);
-    dot(ctx, X(years), Y(d), 5, ok ? C.good : C.bad);
+    const x = X(years);
+    if (Math.abs(d) <= MAX_DAYS) {
+      line(ctx, x, bot, x, Y(d), C.faint, 1, [3, 3]);
+      dot(ctx, x, Y(d), 5, ok ? C.good : C.bad);
+    } else {
+      // off the chart: an arrow at the edge, pointing the way the equinox has gone
+      const edge = d > 0 ? top : bot, out = d > 0 ? -1 : 1;
+      line(ctx, x, top, x, bot, C.faint, 1, [3, 3]);
+      ctx.fillStyle = C.bad;
+      ctx.beginPath();
+      ctx.moveTo(x, edge + out * 2);
+      ctx.lineTo(x - 7, edge - out * 10);
+      ctx.lineTo(x + 7, edge - out * 10);
+      ctx.closePath();
+      ctx.fill();
+      const right = x < (L + R) / 2;
+      label(ctx, t('off the chart'), x + (right ? 11 : -11), edge - out * 22, { size: 9.5, align: right ? 'left' : 'right', color: C.bad });
+    }
   };
 
   const days = Math.abs(d);

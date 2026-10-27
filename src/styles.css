@@ -3843,6 +3843,13 @@ p {
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 14px;
+  /* On small phones a lab with many controls is taller than the card: let it scroll rather than cut off its last lines. */
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.slide--explore::-webkit-scrollbar {
+  display: none;
 }
 
 .explore__heading {

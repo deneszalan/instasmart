@@ -110,7 +110,7 @@ import { ridings as qcRidings, seatsWon as qcSeats } from '../src/labs/politics/
 import { canJoin, canSuspend, ELECT_AT as HRC_ELECT, UN_MEMBERS } from '../src/labs/politics/un-human-rights-council-election';
 import { banned as infBanned, kmAt, rangeClass } from '../src/labs/history/reykjavik-summit-inf-treaty';
 import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgment-three-votes';
-import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '../src/labs/history/caesar-445-day-year';
+import { AVERAGE as JULIAN_AVERAGE, chartEnd as calendarEnd, drift as calendarDrift, MAX_DAYS as CALENDAR_MAX_DAYS, yearsPerDay } from '../src/labs/history/caesar-445-day-year';
 import { busiestQueue, minutesToEmpty, openArches, PUBLIC_ARCHES } from '../src/labs/engineering/colosseum-numbered-arches';
 import { GATE_Y as CIRCUS_GATES, runs as circusRuns, unfairness as circusUnfairness } from '../src/labs/math/circus-maximus-staggered-gates';
 import { plinysCase, verdict as curiaVerdict } from '../src/labs/politics/curia-vote-by-walking';
@@ -1011,6 +1011,11 @@ describe('lab maths', () => {
     expect(calendarDrift('three', 36)).toBeCloseTo(3.28, 2);
     expect(Math.abs(calendarDrift('gregorian', 1000))).toBeLessThan(1);
     expect(Math.abs(calendarDrift('four', 100))).toBeLessThan(1);
+    // the drawn line follows the drift until it leaves the chart: no leap days runs off the bottom after about 66 years
+    expect(calendarEnd('none').years).toBeCloseTo(66, 0);
+    expect(calendarEnd('none').days).toBeCloseTo(-CALENDAR_MAX_DAYS, 6);
+    expect(calendarEnd('three').days).toBeCloseTo(CALENDAR_MAX_DAYS, 6);
+    expect(calendarEnd('four')).toEqual({ years: 2000, days: calendarDrift('four', 2000) });
   });
 
   it('colosseum arches: 50,000 people through 4 arches at 3 a second take over an hour; spread evenly over all 76 they take under 4 minutes', () => {
