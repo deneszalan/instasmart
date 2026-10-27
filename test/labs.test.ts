@@ -1051,6 +1051,7 @@ describe('lab maths', () => {
     expect(forumState(3, 9, true)).toBe('dry');
     expect(forumState(2.5, 9, true)).toBe('flooded');
     expect(forumState(0, 5, true)).toBe('dry');
+  });
   it('Trastevere gold: a tile tipped by 1° turns its reflection by 2°; flat tiles flash only about 12 to 15 m from the wall; tilts up to 8° light up most of the nave', () => {
     expect(goldReflected(0)).toBe(35);
     expect(goldReflected(1)).toBe(37);
