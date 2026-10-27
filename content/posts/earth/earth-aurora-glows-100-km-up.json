@@ -36,7 +36,7 @@
         { "label": "Space station", "value": 400 }
       ],
       "colors": ["#22c55e", "#ef4444"],
-      "note": "From Størmer’s survey of more than 12,000 auroras; the station orbits at about 400 km"
+      "note": "From Carl Størmer’s survey of more than 12,000 auroras; the station orbits at about 400 km"
     },
     {
       "type": "text",

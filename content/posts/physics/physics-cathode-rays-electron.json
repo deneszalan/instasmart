@@ -36,7 +36,7 @@
         }
       ],
       "unit": "electron masses",
-      "note": "Thomson's 1897 result: around 1,800 times lighter than hydrogen"
+      "note": "J. J. Thomson's 1897 result: around 1,800 times lighter than hydrogen"
     },
     {
       "type": "timeline",
@@ -44,7 +44,7 @@
       "events": [
         {
           "when": "1859",
-          "text": "Plücker and Hittorf first see the rays"
+          "text": "Julius Plücker and Johann Hittorf first see the rays"
         },
         {
           "when": "1869",
@@ -52,7 +52,7 @@
         },
         {
           "when": "1876",
-          "text": "Goldstein names them cathode rays"
+          "text": "Eugen Goldstein names them cathode rays"
         },
         {
           "when": "1897",

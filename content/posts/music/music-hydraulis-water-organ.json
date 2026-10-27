@@ -42,7 +42,7 @@
     },
     {
       "type": "estimate",
-      "question": "The first 19 of the Dion organ’s 24 pipes step down in height. How tall is the longest?",
+      "question": "The organ found at Dion, Greece, has 24 pipes; the first 19 step down in height. How tall is the longest?",
       "min": 10,
       "max": 300,
       "step": 1,

@@ -10,7 +10,7 @@
       "type": "stat",
       "value": "74%",
       "label": "of participants sided with the wrong majority at least once",
-      "text": "26% never did. With no group pressure, the error rate was under 1%."
+      "text": "In Solomon Asch’s 1951 test, students matched a line to one of three others after actors in their group all gave the same wrong answer. 26% never went along. Alone, people erred under 1% of the time."
     },
     {
       "type": "pictogram",
@@ -18,7 +18,7 @@
       "icon": "🧍",
       "total": 100,
       "count": 74,
-      "note": "Asch, 1951: 74% conformed on at least one of the 12 critical trials; 26% never did."
+      "note": "Asch, 1951: 74% conformed on at least one of the 12 rigged trials; 26% never did."
     },
     {
       "type": "list",

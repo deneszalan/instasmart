@@ -2,7 +2,7 @@
   "$schema": "../../schema/post.schema.json",
   "id": "engineering-hyatt-regency-walkways",
   "field": "engineering",
-  "title": "A small design change made two hotel walkways collapse",
+  "title": "A small design change made two walkways collapse in a Kansas City hotel in 1981",
   "emoji": "🏨",
   "body": "On 17 July 1981, two suspended walkways crashed into a crowded hotel atrium in Kansas City, killing 114 people. The original design hung both walkways from shared long rods. During construction this was changed so the lower walkway hung from the upper one. The change, approved without proper checking, doubled the load on the upper walkway’s connections, which were already weaker than the building code required.",
   "slides": [

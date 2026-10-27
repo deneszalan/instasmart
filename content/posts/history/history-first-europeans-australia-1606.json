@@ -11,7 +11,7 @@
       "events": [
         {
           "when": "18 Nov 1605",
-          "text": "The Duyfken sails from Bantam, on Java"
+          "text": "The Dutch ship Duyfken sails from Bantam, on Java"
         },
         {
           "when": "26 Feb 1606",
@@ -27,7 +27,7 @@
       "type": "stat",
       "value": "1606",
       "label": "the year of the first recorded European landfall in Australia",
-      "text": "Janszoon’s crew went ashore on the Gulf of Carpentaria side of Cape York, near where Weipa stands today."
+      "text": "The crew of Willem Janszoon, the Duyfken’s captain, went ashore on the Gulf of Carpentaria side of Cape York, near where Weipa stands today."
     },
     {
       "type": "place",

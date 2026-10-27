@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "scale",
-      "heading": "The three planets of PSR B1257+12, by mass",
+      "heading": "The three planets of the pulsar PSR B1257+12, by mass",
       "items": [
         {
           "label": "Draugr",
@@ -36,7 +36,7 @@
         "Wobbles seen in its visible light"
       ],
       "answer": 2,
-      "explanation": "Wolszczan and Frail found them in 1992 through tiny, regular shifts in the timing of the pulsar’s radio pulses, which arrive about 161 times a second."
+      "explanation": "Astronomers Aleksander Wolszczan and Dale Frail found them in 1992 through tiny, regular shifts in the timing of the pulsar’s radio pulses, which arrive about 161 times a second."
     },
     {
       "type": "scramble",

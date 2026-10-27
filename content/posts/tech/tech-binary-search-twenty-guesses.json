@@ -111,7 +111,7 @@
     {
       "type": "text",
       "heading": "Try it yourself",
-      "text": "Picking from 1 to 100? Guess 50, then 25 or 75, and keep halving. You never need more than 7 guesses, because 2 to the power of 7 is 128."
+      "text": "Picking from 1 to 100? Guess 50, then 25 or 75, and keep halving. You never need more than 7 guesses, because 2 to the power of 7 is 128. This halving method is called binary search."
     },
     {
       "type": "text",
@@ -120,7 +120,7 @@
     },
     {
       "type": "fill",
-      "question": "Jon Bentley asked professional programmers to write a binary search. Out of 10, how many got it wrong?",
+      "question": "Computer scientist Jon Bentley set professional programmers a binary search. Out of 10, how many got it wrong?",
       "icon": "🧑‍💻",
       "total": 10,
       "answer": 9,

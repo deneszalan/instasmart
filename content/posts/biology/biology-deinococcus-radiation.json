@@ -10,7 +10,7 @@
       "type": "stat",
       "value": "5,000 Gy",
       "label": "of ionising radiation, survived with almost no loss of viability",
-      "text": "About 5 Gy kills a human. Even at 12,000 Gy, roughly 10% of the bacteria pull through."
+      "text": "About 5 Gy kills a human. Even at 12,000 Gy, roughly 10% of these bacteria, Deinococcus radiodurans, pull through."
     },
     {
       "type": "scale",
@@ -45,7 +45,7 @@
     },
     {
       "type": "timeline",
-      "heading": "Conan the Bacterium",
+      "heading": "Nicknamed Conan the Bacterium",
       "events": [
         {
           "when": "1956",

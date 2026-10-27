@@ -13,7 +13,7 @@
   "slides": [
     {
       "type": "compare",
-      "heading": "Barbier’s code vs Braille’s",
+      "heading": "Charles Barbier’s code vs Braille’s",
       "left": { "label": "Night writing", "text": "12-dot symbols for 36 sounds. Too big for one fingertip, and no numbers or punctuation." },
       "right": { "label": "Braille, 1824", "text": "6-dot cells, one pattern per letter, plus numerals and punctuation. One cell fits under the finger." }
     },

@@ -15,14 +15,14 @@
       "type": "reveal",
       "prompt": "The contest had five rounds. Which was the only one the electric calculator won?",
       "answer": "Multiplication",
-      "detail": "The soroban took both addition heats, won subtraction and division two heats to one, and won the composite problem. The calculator won only multiplication, two heats to one."
+      "detail": "The abacus took both addition heats, won subtraction and division two heats to one, and won the composite problem. The calculator won only multiplication, two heats to one."
     },
     {
       "type": "chart",
       "heading": "Rounds won in the 1946 Tokyo contest",
       "items": [
         {
-          "label": "Soroban",
+          "label": "Soroban (Japanese abacus)",
           "value": 4,
           "emphasis": true
         },

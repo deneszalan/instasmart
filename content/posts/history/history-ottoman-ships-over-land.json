@@ -10,13 +10,13 @@
       "type": "image",
       "src": "golden-horn.svg",
       "alt": "Sketch map: the triangular city of Constantinople, the Golden Horn inlet to its north closed by a chain at its mouth, Galata on the far shore, and a dashed arrow showing ships hauled over the hill from the Bosporus into the inlet.",
-      "caption": "The chain closed the harbour mouth, so the fleet went round it: over the hill behind Galata.",
+      "caption": "The defenders’ chain closed the mouth of the Golden Horn harbour, so the Ottoman fleet went round it: over the hill behind Galata.",
       "fit": "contain"
     },
     {
       "type": "compare",
       "heading": "Who faced whom",
-      "left": { "label": "Ottomans", "text": "Some 50,000 to 80,000 soldiers by modern estimates, a fleet, and Orban’s 8.2-metre bombard, dragged from Edirne by 60 oxen." },
+      "left": { "label": "Ottomans", "text": "Some 50,000 to 80,000 soldiers by modern estimates, a fleet, and the cannon-maker Orban’s 8.2-metre bombard, dragged from Edirne by 60 oxen." },
       "right": { "label": "Defenders", "text": "About 7,000 men, 2,000 of them foreigners, spread along the city’s walls." }
     },
     {

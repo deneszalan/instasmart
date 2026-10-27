@@ -14,7 +14,7 @@
       "step": 0.5,
       "answer": 0.5,
       "unit": "ms",
-      "explanation": "Half a millisecond, Hegemann measured. In our eyes it takes at least 10 ms, because the signal passes through a chain of chemical steps first."
+      "explanation": "Half a millisecond, as Peter Hegemann measured. In our eyes it takes at least 10 ms, because the signal passes through a chain of chemical steps first."
     },
     {
       "type": "video",

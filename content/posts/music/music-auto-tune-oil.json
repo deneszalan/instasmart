@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "place",
-      "question": "Auto-Tune’s maths came from oil prospecting. When did Antares release it?",
+      "question": "Auto-Tune’s maths came from oil prospecting. When did its maker, Antares, release it?",
       "min": 1970,
       "max": 2010,
       "step": 1,
@@ -54,7 +54,7 @@
     },
     {
       "type": "quiz",
-      "question": "Which technique did Hildebrand carry from oil exploration to pitch correction?",
+      "question": "Which technique did engineer Andy Hildebrand carry from oil exploration to pitch correction?",
       "options": [
         "Autocorrelation",
         "Fourier transforms",

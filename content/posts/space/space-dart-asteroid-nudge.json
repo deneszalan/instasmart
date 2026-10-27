@@ -16,7 +16,7 @@
       "src": "dart-impact.mp4",
       "poster": "dart-impact.jpg",
       "alt": "Sped-up view from DART’s camera: the large asteroid Didymos drifts out of frame while a small dot, Dimorphos, grows into a boulder-strewn surface that fills the picture, until the last image is cut off and the screen turns red.",
-      "caption": "Speeded up: DART’s camera passes Didymos and closes in on its moonlet Dimorphos. The last picture is cut off as the spacecraft hits, and the signal ends.",
+      "caption": "Speeded up: the camera of NASA’s Double Asteroid Redirection Test (DART) passes Didymos and closes in on its moonlet Dimorphos. The last picture is cut off as it hits, and the signal ends.",
       "credit": "NASA/Johns Hopkins APL · Public domain · excerpt",
       "href": "https://svs.gsfc.nasa.gov/31194/",
       "music": "“Stormfront” Kevin MacLeod (incompetech.com) · CC BY 4.0",
@@ -65,7 +65,7 @@
         "Over 10 million km"
       ],
       "answer": 2,
-      "explanation": "The SOAR telescope measured a trail over 10,000 km long; later estimates put the tail at 30,000 km or more. DART had turned Dimorphos into an active asteroid."
+      "explanation": "The Southern Astrophysical Research (SOAR) telescope measured a trail over 10,000 km long; later estimates put the tail at 30,000 km or more. DART had turned Dimorphos into an active asteroid."
     }
   ],
   "tags": [

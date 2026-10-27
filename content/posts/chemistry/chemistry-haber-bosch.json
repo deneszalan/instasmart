@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "In a classic Haber–Bosch plant, what share of the gas turns into ammonia in a single pass?",
+      "question": "Haber–Bosch plants turn nitrogen and hydrogen into ammonia. What share of the gas reacts in a single pass?",
       "min": 0,
       "max": 100,
       "step": 1,

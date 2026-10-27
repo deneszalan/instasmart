@@ -26,7 +26,7 @@
       "type": "reveal",
       "prompt": "Stand at a mirror and look from one of your eyes to the other. What do you see?",
       "answer": "Your eyes never seem to move",
-      "detail": "A friend watching would see them jump. During each saccade your brain hides the movement, an effect called saccadic masking, and even hides that anything was hidden."
+      "detail": "A friend watching would see them jump. During each jump, or saccade, your brain hides the movement, an effect called saccadic masking, and even hides that anything was hidden."
     },
     {
       "type": "stat",

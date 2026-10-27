@@ -25,7 +25,7 @@
     {
       "type": "compare",
       "heading": "Which way the tide turns",
-      "left": { "label": "Northern Hemisphere", "text": "High water circles an amphidromic point anticlockwise" },
+      "left": { "label": "Northern Hemisphere", "text": "High water circles an amphidromic point, a spot with almost no tide, anticlockwise" },
       "right": { "label": "Southern Hemisphere", "text": "High water circles clockwise, in the direction Earth's spin deflects moving water" }
     },
     {

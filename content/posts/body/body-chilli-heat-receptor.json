@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "Above what temperature does the TRPV1 channel start to open?",
+      "question": "Heat and chilli both open TRPV1, a channel on pain-sensing nerves. Above what temperature does heat open it?",
       "min": 20,
       "max": 80,
       "step": 1,

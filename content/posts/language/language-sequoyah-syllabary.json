@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "place",
-      "question": "An alphabet spells sounds; Sequoyah’s syllabary spells syllables. How many symbols did it need?",
+      "question": "An alphabet spells sounds; Sequoyah’s Cherokee syllabary spells syllables. How many symbols did it need?",
       "min": 0,
       "max": 200,
       "step": 1,

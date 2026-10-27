@@ -4,7 +4,7 @@
   "field": "politics",
   "title": "About a fifth of the world’s oil passed through a strait 39 km wide",
   "emoji": "🛢️",
-  "body": "Before 2026 some 20 million barrels of oil a day, about 20% of world consumption, went through the Strait of Hormuz between Iran and Oman, according to the [US Energy Information Administration](https://www.eia.gov/todayinenergy/detail.php?id=65504); pipelines could carry only about 2.6 million barrels a day around it. After war began on 28 February 2026 and flows through the strait were sharply cut, the Brent price went from $71 a barrel to over $100 within two weeks and reached $138 on 7 April, in the EIA’s [daily data](https://www.eia.gov/dnav/pet/hist/RBRTED.htm), despite a record release of 400 million barrels from emergency stocks agreed by IEA countries on 11 March. Prices leap because in the short run demand hardly bends: economists estimate that a 10% higher price cuts oil use by only about half a percent at first, so buyers give up even a little oil only at a much higher price. In late October Brent was still above $110.",
+  "body": "Before 2026 some 20 million barrels of oil a day, about 20% of world consumption, went through the Strait of Hormuz between Iran and Oman, according to the [US Energy Information Administration](https://www.eia.gov/todayinenergy/detail.php?id=65504); pipelines could carry only about 2.6 million barrels a day around it. After war broke out between Iran and the US and Israel on 28 February 2026 and flows through the strait were sharply cut, the Brent price went from $71 a barrel to over $100 within two weeks and reached $138 on 7 April, in the EIA’s [daily data](https://www.eia.gov/dnav/pet/hist/RBRTED.htm), despite a record release of 400 million barrels from emergency stocks agreed by IEA countries on 11 March. Prices leap because in the short run demand hardly bends: economists estimate that a 10% higher price cuts oil use by only about half a percent at first, so buyers give up even a little oil only at a much higher price. In late October Brent was still above $110.",
   "slides": [
     {
       "type": "estimate",
@@ -88,7 +88,7 @@
       "type": "explore",
       "lab": "strait-of-hormuz-oil",
       "prompt": "Take oil off the market and set how strongly buyers respond. Find a cut that pushes the price from $71 to the April high of $138.",
-      "takeaway": "At an elasticity of 0.05, about 3.3% less oil is enough to nearly double the price. At 0.3, when buyers bend more, the same cut adds only about 12%."
+      "takeaway": "At an elasticity of 0.05, where 10% dearer oil cuts use by 0.5%, about 3.3% less oil is enough to nearly double the price. At 0.3, when buyers bend more, the same cut adds only about 12%."
     },
     {
       "type": "chart",

@@ -36,7 +36,7 @@
     },
     {
       "type": "estimate",
-      "question": "How much did Phillips spend building the first machine, in 1949 pounds?",
+      "question": "How much did New Zealand economist Bill Phillips spend building the first machine, in 1949 pounds?",
       "min": 0,
       "max": 5000,
       "step": 10,
@@ -47,7 +47,7 @@
     {
       "type": "text",
       "heading": "Why plumbing?",
-      "text": "The name is a pun on money and ENIAC, an early electronic computer. Instead of equations on paper, the machine shows money building up as savings, leaving the country as imports or arriving as exports, and what a change at one tap does to every other tank."
+      "text": "The name MONIAC is a pun on money and ENIAC, an early electronic computer. Instead of equations on paper, the machine shows money building up as savings, leaving the country as imports or arriving as exports, and what a change at one tap does to every other tank."
     },
     {
       "type": "text",

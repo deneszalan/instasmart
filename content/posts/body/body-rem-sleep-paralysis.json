@@ -9,7 +9,7 @@
     {
       "type": "stat",
       "value": "20–25%",
-      "label": "of an adult’s sleep is REM: about 90 to 120 minutes a night"
+      "label": "of an adult’s sleep is REM (rapid eye movement) sleep: about 90 to 120 minutes a night"
     },
     {
       "type": "pictogram",
@@ -45,7 +45,7 @@
         "Sleep never reaches REM"
       ],
       "answer": 2,
-      "explanation": "Without REM atonia the body is free to move, and people physically act out their dreams."
+      "explanation": "Without REM atonia, the paralysis of dreaming sleep, the body is free to move, and people physically act out their dreams."
     },
     {
       "type": "sort",

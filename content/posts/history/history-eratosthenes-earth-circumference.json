@@ -70,7 +70,7 @@
     {
       "type": "explore",
       "lab": "eratosthenes-earth-circumference",
-      "prompt": "Line your angle up with the noon shadow of Alexandria’s stick, while the Sun stands overhead at Syene. How big is the Earth?",
+      "prompt": "Line your angle up with the noon shadow of Alexandria’s stick, while the Sun stands overhead at Syene (today’s Aswan). How big is the Earth?",
       "takeaway": "The shadow’s 7.2° is a fiftieth of a circle, so the Earth is 50 times the 5,000 stadia to Syene: 250,000 stadia, about 39,000 to 46,000 km by the stadion, against 40,008 km."
     },
     {
@@ -105,7 +105,7 @@
     {
       "type": "stat",
       "value": "252,000",
-      "label": "stadia: the figure Pliny gives for Eratosthenes’ Earth",
+      "label": "stadia: the figure the Roman writer Pliny gives for Eratosthenes’ Earth",
       "text": "Unlike 250,000, it divides evenly by every whole number from 1 to 10, which may be no accident. Historians disagree about why the figure changed."
     },
     {

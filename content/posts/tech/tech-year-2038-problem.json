@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "reveal",
-      "prompt": "When the 32-bit counter wraps, what date do affected systems think it is?",
+      "prompt": "Much software counts time as seconds since 1970 in a 32-bit number. When that counter wraps, what date do systems think it is?",
       "answer": "December 1901",
       "detail": "One second after 03:14:07 UTC the signed count flips to a negative number, which reads as a date in 1901. Most modern systems already use 64-bit time."
     },

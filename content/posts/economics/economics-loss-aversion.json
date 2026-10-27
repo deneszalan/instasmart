@@ -26,7 +26,7 @@
     {
       "type": "reveal",
       "prompt": "Loss aversion is a key part of a famous 1979 theory. Which one?",
-      "answer": "Prospect theory, by Kahneman and Tversky",
+      "answer": "Prospect theory, by Daniel Kahneman and Amos Tversky",
       "detail": "It helps explain why people hate fees and cling to things they own, though estimates of how strong the effect is vary by study and context."
     }
   ],

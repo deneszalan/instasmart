@@ -24,7 +24,7 @@
     },
     {
       "type": "estimate",
-      "question": "How much forest did the sideways blast knock down?",
+      "question": "After the collapse, the volcano exploded sideways. How much forest did the blast knock down?",
       "min": 0,
       "max": 2000,
       "step": 10,

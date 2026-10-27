@@ -66,7 +66,7 @@
           "value": 300000
         },
         {
-          "label": "SLS at pad 39B",
+          "label": "Space Launch System, pad 39B",
           "value": 400000,
           "emphasis": true
         }
@@ -78,7 +78,7 @@
       "type": "stat",
       "value": "164",
       "label": "heat-shield tiles lost or damaged on the first Shuttle launch",
-      "text": "In 1981 the pressure wave from STS-1’s ignition contributed to the loss of 16 tiles and damage to 148 more. The water system at both pads was then modified."
+      "text": "In 1981 the pressure wave from its ignition contributed to the loss of 16 tiles and damage to 148 more. The water system at both pads was then modified."
     },
     {
       "type": "quiz",

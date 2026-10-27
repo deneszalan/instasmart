@@ -52,7 +52,7 @@
     },
     {
       "type": "reveal",
-      "prompt": "SDO saw the rain in ultraviolet light of wavelength 304 ångströms. What temperature does that light pick out?",
+      "prompt": "The Solar Dynamics Observatory saw the rain in ultraviolet light of wavelength 304 ångströms. What temperature does that light pick out?",
       "answer": "About 50,000 kelvin",
       "detail": "Cool, by the standards of the corona: the plasma started out at around a million degrees before it condensed."
     },

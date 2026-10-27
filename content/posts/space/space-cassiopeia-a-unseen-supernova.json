@@ -44,7 +44,7 @@
       "heading": "Uncovering a hidden supernova",
       "events": [
         { "when": "1600s", "text": "Light from the explosion reaches Earth" },
-        { "when": "1680", "text": "Flamsteed may have logged it as a faint star" },
+        { "when": "1680", "text": "John Flamsteed may have logged it as a faint star" },
         { "when": "1948", "text": "Ryle and Graham-Smith report it as a radio source" },
         { "when": "1999", "text": "Chandra’s first image reveals the neutron star left behind" }
       ]

@@ -13,7 +13,7 @@
   "slides": [
     {
       "type": "reveal",
-      "prompt": "Varro recorded the claim in 36 BC. In which year was it finally proven in full?",
+      "prompt": "The Roman scholar Marcus Terentius Varro recorded the hexagon claim in 36 BC. In which year was it finally proven in full?",
       "answer": "1999",
       "detail": "Thomas Hales proved the honeycomb conjecture in 1999, more than 2,000 years after Varro. The paper appeared in Discrete and Computational Geometry in 2001."
     },

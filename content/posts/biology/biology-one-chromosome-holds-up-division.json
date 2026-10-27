@@ -26,7 +26,7 @@
       "type": "order",
       "heading": "Put the stages of mitosis in order",
       "items": ["Prophase", "Prometaphase", "Metaphase", "Anaphase", "Telophase"],
-      "explanation": "The checkpoint guards the step from metaphase, when the chromosomes are lined up, to anaphase, when the sisters are pulled apart."
+      "explanation": "A safety system, the spindle checkpoint, guards the step from metaphase, when chromosomes line up, to anaphase, when each one’s two copies are pulled apart."
     },
     {
       "type": "compare",

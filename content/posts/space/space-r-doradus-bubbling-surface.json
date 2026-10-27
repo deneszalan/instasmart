@@ -16,7 +16,7 @@
       "src": "r-doradus-surface.mp4",
       "poster": "r-doradus-surface.jpg",
       "alt": "A fuzzy golden disc with dates below it running from 2023-07-05 to 2023-08-02; bright blobs on its surface shift, appear and fade from one image to the next.",
-      "caption": "Real ALMA images of the red giant R Doradus taken between 5 July and 2 August 2023, blended one into the next: bright bubbles of hot gas rise and sink across its surface.",
+      "caption": "Real images of the red giant R Doradus from the Atacama Large Millimeter/submillimeter Array, 5 July to 2 August 2023, blended in turn: bright bubbles of hot gas rise and sink across its surface.",
       "credit": "ALMA (ESO/NAOJ/NRAO)/W. Vlemmings et al. · CC BY 4.0 · excerpt",
       "href": "https://www.eso.org/public/videos/eso2412a/",
       "music": "“Ossuary 5 - Rest” Kevin MacLeod (incompetech.com) · CC BY 4.0",
@@ -31,7 +31,7 @@
         { "label": "R Doradus itself", "value": 350 }
       ],
       "unit": "Suns",
-      "note": "Rough figures from ESO; other estimates put R Doradus nearer 300 Suns wide"
+      "note": "Rough figures from the European Southern Observatory; others put R Doradus nearer 300 Suns wide"
     },
     {
       "type": "quote",

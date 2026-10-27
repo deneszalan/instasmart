@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "flow",
-      "heading": "The loop that earns its nickname",
+      "heading": "The loop behind the name ‘immortal jellyfish’",
       "steps": [
         {
           "icon": "🪼",
@@ -31,7 +31,7 @@
     },
     {
       "type": "quiz",
-      "question": "How does Turritopsis dohrnii turn itself back into a polyp?",
+      "question": "How does this jellyfish, Turritopsis dohrnii, turn itself back into a polyp?",
       "options": [
         "Its cells change into other cell types",
         "It regrows from a fertilised egg",

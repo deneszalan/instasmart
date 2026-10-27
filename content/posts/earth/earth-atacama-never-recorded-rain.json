@@ -44,7 +44,7 @@
       "question": "Why does NASA send instruments to the Atacama?",
       "options": ["Its soil resembles Martian soil", "It is the highest desert on Earth", "Nothing at all lives in it"],
       "answer": 0,
-      "explanation": "Atacama soils are compared with Martian soil, so NASA tests instruments for future Mars missions there. Viking-style life-detection tests once missed the microbes that do live in it."
+      "explanation": "Atacama soils are compared with Martian soil, so NASA tests instruments for future Mars missions there. Life tests like the Viking Mars landers’ once missed the microbes that do live in it."
     },
     {
       "type": "stat",

@@ -24,7 +24,7 @@
     },
     {
       "type": "estimate",
-      "question": "The 17 locks took a whole day. How many minutes does the inclined plane take, from going in to coming out?",
+      "question": "It replaced 17 locks that took a whole day. How many minutes does the inclined plane take, from going in to coming out?",
       "min": 0,
       "max": 120,
       "step": 1,

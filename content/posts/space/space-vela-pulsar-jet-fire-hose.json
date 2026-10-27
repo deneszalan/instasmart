@@ -34,7 +34,7 @@
     },
     {
       "type": "scale",
-      "heading": "How big the supernova’s leftovers look in our sky",
+      "heading": "How big the cloud left by the star’s explosion looks in our sky",
       "items": [
         { "label": "Full Moon", "value": 1 },
         { "label": "Vela remnant", "value": 16 }

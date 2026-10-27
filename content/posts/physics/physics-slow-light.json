@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "In the 1998 experiment, how fast did the light pulse travel, in metres per second?",
+      "question": "Danish physicist Lene Hau’s team sent a light pulse through ultra-cold atoms. How fast did it go, in metres per second?",
       "min": 0,
       "max": 100,
       "step": 1,

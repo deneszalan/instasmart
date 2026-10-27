@@ -13,7 +13,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "How far away did the iron bar land after passing through Gage’s head?",
+      "question": "How far away did the iron bar land after passing through Phineas Gage’s head?",
       "min": 0,
       "max": 100,
       "step": 1,
@@ -31,7 +31,7 @@
       "type": "flow",
       "heading": "The bar’s path",
       "steps": [
-        { "icon": "💥", "label": "The charge explodes in the drill hole" },
+        { "icon": "💥", "label": "A rock-blasting charge goes off early" },
         { "icon": "⬆️", "label": "The bar enters under the left cheekbone" },
         { "icon": "🧠", "label": "Passes behind the eye, through the brain" },
         { "icon": "🪨", "label": "Exits through the top of the skull" },

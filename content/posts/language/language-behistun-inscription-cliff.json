@@ -36,7 +36,7 @@
       "type": "stat",
       "value": "100 m",
       "label": "up the cliff: the inscription’s height above the ancient road below",
-      "text": "The relief and panels together are about 15 m high and 25 m wide. In the text Darius says he fought nineteen battles in a single year to put down revolts."
+      "text": "The relief and panels together are about 15 m high and 25 m wide. In the text the Persian king Darius I says he fought nineteen battles in a single year to put down revolts."
     },
     {
       "type": "flow",
@@ -70,11 +70,11 @@
         },
         {
           "when": "1802",
-          "text": "Grotefend has deciphered 10 of the 37 Old Persian signs"
+          "text": "German scholar Georg Grotefend reads 10 of the 37 Old Persian signs"
         },
         {
           "when": "1835",
-          "text": "Rawlinson begins studying and copying it"
+          "text": "British officer Henry Rawlinson begins copying it"
         },
         {
           "when": "1847",
@@ -91,7 +91,7 @@
     {
       "type": "text",
       "heading": "Why it mattered",
-      "text": "Three versions of one text, side by side, made Behistun important to the decipherment of cuneiform. Old Persian, with only 37 signs, could be worked on first; Grotefend had read 10 of them by 1802. In 1904 a British Museum expedition led by King and Thompson added photographs, casts and better transcriptions."
+      "text": "Three versions of one text, side by side, made Behistun important to the decipherment of cuneiform. Old Persian, with only 37 signs, could be worked on first; Grotefend read 10 of them by 1802. In 1904 the British Museum’s Leonard King and Reginald Campbell Thompson added photographs, casts and better transcriptions."
     },
     {
       "type": "image",

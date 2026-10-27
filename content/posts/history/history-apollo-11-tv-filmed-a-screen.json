@@ -49,7 +49,7 @@
         "The camera’s battery was low"
       ],
       "answer": 0,
-      "explanation": "The scan converter at Goldstone was set wrongly at first. Every analogue link afterwards, through Houston and New York, added more noise."
+      "explanation": "The scan converter at the Goldstone receiving station, in California, was set wrongly at first. Every analogue link afterwards, through Houston and New York, added more noise."
     },
     {
       "type": "reveal",

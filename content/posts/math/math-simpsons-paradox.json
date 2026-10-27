@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "Treatment A cured 93% of small stones and 73% of large ones. What was its success rate over all its patients?",
+      "question": "Treatment A cured 93% of small kidney stones and 73% of large ones. What was its success rate over all its patients?",
       "min": 60,
       "max": 100,
       "step": 1,

@@ -27,7 +27,7 @@
         },
         {
           "icon": "🧮",
-          "label": "Le Verrier works out where a planet must be"
+          "label": "Urbain Le Verrier predicts an unseen planet"
         },
         {
           "icon": "✉️",
@@ -48,7 +48,7 @@
       "type": "image",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Deutsches_Museum_M%C3%BCnchen_-_15803973590.jpg/960px-Deutsches_Museum_M%C3%BCnchen_-_15803973590.jpg",
       "alt": "A long brass refracting telescope on a tall wooden mount in a museum gallery.",
-      "caption": "The refractor Galle used at the Berlin Observatory to find Neptune, now in the Deutsches Museum in Munich.",
+      "caption": "The refractor Johann Galle used at the Berlin Observatory to find Neptune, now in the Deutsches Museum in Munich.",
       "fit": "cover",
       "credit": "tm-md · CC BY-SA 2.0"
     },
@@ -62,7 +62,7 @@
           "emphasis": true
         },
         {
-          "label": "Adams (final)",
+          "label": "John Couch Adams (final)",
           "value": 12
         }
       ],

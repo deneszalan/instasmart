@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "In a 1982 study by Hall and Frederic Mishkin, what share of households planned spending on their expected income?",
+      "question": "In a 1982 study by Robert Hall and Frederic Mishkin, what share of households planned spending on expected income?",
       "min": 0,
       "max": 100,
       "step": 5,

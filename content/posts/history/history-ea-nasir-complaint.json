@@ -13,7 +13,7 @@
   "slides": [
     {
       "type": "reveal",
-      "prompt": "What did Nanni say he would do about future deliveries?",
+      "prompt": "Nanni wrote the tablet to complain about copper from the merchant Ea-nasir. What did he say he would do about future deliveries?",
       "answer": "Inspect every ingot himself",
       "detail": "He also demanded his money back, after his messengers had been sent away empty-handed and, he says, treated with contempt."
     },
@@ -49,7 +49,7 @@
       "question": "Where was the tablet found?",
       "options": ["In Ea-nasir’s house at Ur", "In a temple archive at Babylon", "In a shipwreck in the Gulf", "In Nanni’s tomb"],
       "answer": 0,
-      "explanation": "Woolley’s expedition found it in ruins thought to be Ea-nasir’s home, alongside other letters grumbling about his copper and undelivered orders."
+      "explanation": "Leonard Woolley’s expedition found it in ruins thought to be Ea-nasir’s home, alongside other letters grumbling about his copper and undelivered orders."
     },
     {
       "type": "text",

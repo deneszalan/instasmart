@@ -15,7 +15,7 @@
       "type": "image",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Computer_mouse_prototype_bottom.jpg/960px-Computer_mouse_prototype_bottom.jpg",
       "alt": "The underside of a replica of Engelbart's mouse, showing two metal wheels mounted at right angles to each other.",
-      "caption": "The underside of a replica of Engelbart's mouse: two wheels at right angles, one for each direction of movement.",
+      "caption": "The underside of a replica of the mouse Douglas Engelbart's team built at the Stanford Research Institute (SRI): two wheels at right angles, one for each direction of movement.",
       "fit": "cover",
       "credit": "Science Museum Group · CC BY 4.0"
     },
@@ -56,7 +56,7 @@
       },
       "right": {
         "label": "Fact",
-        "text": "Engelbart and English built it at SRI in the 1960s. Xerox's Alto used one in 1973; the Macintosh of 1984 helped make it ordinary."
+        "text": "Engelbart and engineer Bill English built it at SRI in the 1960s. Xerox's Alto used one in 1973; the Macintosh of 1984 helped make it ordinary."
       }
     },
     {

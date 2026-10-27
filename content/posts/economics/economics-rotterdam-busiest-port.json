@@ -32,7 +32,7 @@
       "format": "year",
       "hints": [
         {
-          "label": "Waterweg",
+          "label": "Sea canal",
           "value": 1872
         },
         {
@@ -40,7 +40,7 @@
           "value": 2004
         }
       ],
-      "explanation": "1962. Rotterdam then led the world for 42 years, until Singapore overtook it in 2004."
+      "explanation": "1962. Rotterdam then led the world for 42 years, until Singapore overtook it in 2004. Its canal to the sea, the Nieuwe Waterweg, was ready in 1872."
     },
     {
       "type": "stat",

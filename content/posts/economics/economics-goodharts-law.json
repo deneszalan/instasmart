@@ -30,7 +30,7 @@
     },
     {
       "type": "place",
-      "question": "In what year did Charles Goodhart first state his law?",
+      "question": "In what year did economist Charles Goodhart first state his law?",
       "min": 1900,
       "max": 2000,
       "step": 1,

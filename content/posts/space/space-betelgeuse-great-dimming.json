@@ -16,7 +16,7 @@
       "src": "betelgeuse-dimming.mp4",
       "poster": "betelgeuse-dimming.jpg",
       "alt": "Blurry images of a reddish-orange star cross-fade above a timeline of 2019 and 2020: the lower half of the disc darkens in late 2019 and early 2020, and the star looks bright again by March 2020.",
-      "caption": "Four real images of Betelgeuse’s surface from ESO’s Very Large Telescope, from January 2019, December 2019, January 2020 and March 2020, shown in turn as dust veils its southern part.",
+      "caption": "Four real images of Betelgeuse’s surface from the European Southern Observatory’s Very Large Telescope, January 2019 to March 2020, shown in turn as dust veils its southern part.",
       "credit": "ESO/M. Montargès et al./L. Calçada · CC BY 4.0 · excerpt",
       "href": "https://www.eso.org/public/videos/eso2109b/",
       "music": "“Bittersweet” Kevin MacLeod (incompetech.com) · CC BY 4.0",
@@ -42,7 +42,7 @@
       "type": "timeline",
       "heading": "The Great Dimming",
       "events": [
-        { "when": "Jan 2019", "text": "The VLT images Betelgeuse at normal brightness" },
+        { "when": "Jan 2019", "text": "The Very Large Telescope images Betelgeuse at normal brightness" },
         { "when": "Late 2019", "text": "The star visibly darkens" },
         { "when": "Apr 2020", "text": "It is back to its normal brightness" },
         { "when": "Jun 2021", "text": "A study in Nature blames a dusty veil" }

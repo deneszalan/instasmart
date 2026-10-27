@@ -19,11 +19,11 @@
       "step": 1,
       "answer": 32,
       "unit": "hours",
-      "explanation": "About 32 hours (the article gives 31.8 h). The rate depends on latitude: one day at the pole, slower towards the equator, where it stops altogether."
+      "explanation": "About 32 hours (31.8 h, more precisely). The rate depends on latitude: one day at the pole, slower towards the equator, where it stops altogether."
     },
     {
       "type": "quiz",
-      "question": "Where would a Foucault pendulum’s swing plane never drift at all?",
+      "question": "Where would the swing plane of a pendulum like the one in Paris never drift?",
       "options": [
         "At the North Pole",
         "In Paris",

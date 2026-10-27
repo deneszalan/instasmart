@@ -36,7 +36,7 @@
     },
     {
       "type": "scale",
-      "heading": "How stiff were the balls?",
+      "heading": "How stiff were the balls researchers fired at water in 2016?",
       "items": [
         { "label": "Soft silicone ball", "value": 12.3 },
         { "label": "Nylon ball", "value": 566000 }

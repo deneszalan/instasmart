@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "Of the 97 studies with significant results, what percentage gave significant results again?",
+      "question": "Of the 97 original studies that had reported significant results, what percentage did so again?",
       "min": 0,
       "max": 100,
       "step": 1,

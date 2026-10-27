@@ -2,7 +2,7 @@
   "$schema": "../../schema/post.schema.json",
   "id": "tech-hosts-txt-before-dns",
   "field": "tech",
-  "title": "Before DNS, the internet’s entire address book was one text file",
+  "title": "Before the Domain Name System (DNS), the internet’s entire address book was one text file",
   "emoji": "📇",
   "body": "Every web address you type is looked up through the Domain Name System, but the ARPANET, the internet’s predecessor, had no such system. The Stanford Research Institute kept a single text file, **HOSTS.TXT**, mapping every computer’s name to its numerical address, and shared it with member sites. To add a machine, you contacted Elizabeth Feinler’s Network Information Center by telephone during business hours. By the early 1980s the method had become slow and unwieldy, and in 1983 Paul Mockapetris created the Domain Name System, which spreads the job across a tree of domains instead.",
   "slides": [
@@ -11,14 +11,14 @@
       "heading": "Joining the network, 1970s style",
       "style": "steps",
       "items": [
-        "Phone the Network Information Center at SRI, in business hours",
+        "Phone the Network Information Center at the Stanford Research Institute, in business hours",
         "Your computer’s name and address go into HOSTS.TXT",
         "Member sites pick up the updated file by file sharing"
       ]
     },
     {
       "type": "reveal",
-      "prompt": "Feinler’s team also came up with something you still type every day. What was it?",
+      "prompt": "Elizabeth Feinler, who ran the Network Information Center, and her team came up with something you type every day. What?",
       "answer": "Domains: her team developed the concept, such as edu for universities",
       "detail": "Feinler suggested basing domains on where a computer physically was, so educational institutions would get edu."
     },
@@ -28,7 +28,7 @@
       "events": [
         {
           "when": "1971",
-          "text": "RFC 226 lists standard host names"
+          "text": "Request for Comments (RFC) 226 lists host names"
         },
         {
           "when": "1972",
@@ -36,7 +36,7 @@
         },
         {
           "when": "1983",
-          "text": "Mockapetris creates DNS (RFC 882, 883)"
+          "text": "Paul Mockapetris creates DNS (RFC 882, 883)"
         },
         {
           "when": "1987",

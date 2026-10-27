@@ -21,7 +21,7 @@
       "step": 1,
       "answer": 987,
       "unit": "km",
-      "explanation": "Portugal said 987 km, Spain 1,214 km. Richardson realised the two had measured with rulers of different lengths."
+      "explanation": "Portugal said 987 km, Spain 1,214 km. Lewis Fry Richardson realised the two had measured with rulers of different lengths."
     },
     {
       "type": "place",
@@ -40,12 +40,12 @@
           "value": 1.02
         }
       ],
-      "explanation": "About 1.25, Mandelbrot found; South Africa’s coast scores about 1.02 and a typical lake shore 1.28. He stressed that the fractal is a model, not a claim about real coastlines."
+      "explanation": "About 1.25, Benoit Mandelbrot found; South Africa’s coast scores about 1.02 and a typical lake shore 1.28. He stressed that the fractal is a model, not a claim about real coastlines."
     },
     {
       "type": "text",
       "heading": "Fractal dimension",
-      "text": "A smooth curve has dimension 1; a curve so wiggly that it nearly fills a surface approaches 2. Mandelbrot put the west coast of Great Britain at about 1.25 and South Africa’s coast at about 1.02. He was careful to note that the paper did not claim real coastlines truly have fractional dimension: the fractal is a model."
+      "text": "A smooth curve has dimension 1; one so wiggly it nearly fills a surface approaches 2. In his 1967 paper How Long Is the Coast of Britain?, Mandelbrot put Britain’s west coast at about 1.25 and South Africa’s at about 1.02. He did not claim real coastlines truly have fractional dimension: the fractal is a model."
     },
     {
       "type": "text",

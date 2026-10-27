@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "By the 2016 recount, how many trillion bacteria does a typical adult carry?",
+      "question": "By a 2016 recount, how many trillion bacteria does a typical adult carry?",
       "min": 1,
       "max": 100,
       "step": 1,

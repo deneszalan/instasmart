@@ -42,7 +42,7 @@
     },
     {
       "type": "place",
-      "question": "The lab pointed a camera at the pot in 1991. When did the picture go on the web?",
+      "question": "Cambridge University’s computer lab pointed a camera at its coffee pot in 1991. When did the picture go on the web?",
       "min": 1985,
       "max": 2005,
       "step": 1,
