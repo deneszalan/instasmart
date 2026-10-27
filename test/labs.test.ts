@@ -95,6 +95,11 @@ import { heightAfter as swiftHeight, periodAt as swiftPeriod, speedAt as swiftSp
 import { holds as positronHolds, REAL_RATIO as POSITRON_RATIO, simulate as positronRun } from '../src/labs/physics/one-positron-quantum-cyclotron';
 import { outcome as uranOutcome } from '../src/labs/chemistry/uranocenium-sandwich';
 import { duels as condorcetDuels, isCycle as condorcetCycle, winner as condorcetWinner } from '../src/labs/math/condorcet-cycle-klein-bottle';
+import { energyRatio, magnitude, moment as quakeMoment, PANAMA_MOMENT, shown as shownMag } from '../src/labs/earth/panama-quake-magnitude-scale';
+import { indexChange, meanChange, totalChange } from '../src/labs/biology/living-planet-index-average';
+import { paired as asoPaired, RNA as HBV_RNA, TARGET_AT as ASO_AT } from '../src/labs/body/bepirovirsen-antisense-hepatitis-b';
+import { bandBalance, glacier, ICE_FACTOR } from '../src/labs/earth/swiss-glaciers-snowline-2026';
+import { inside as coneInside, misses as coneMisses, MISSES as CONE_N, NHC_RADIUS_KM } from '../src/labs/psychology/hurricane-cone-not-storm-size';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -798,5 +803,49 @@ describe('lab maths', () => {
     expect(condorcetWinner(5, 30, 10)).toBe('Bob');
     expect(condorcetCycle(20, 10, 10)).toBe(false);
     expect(condorcetWinner(20, 10, 10)).toBe(null);
+  it('quake magnitude: the USGS moment gives 7.7; 32 times the moment adds about one step; 100 km × 20 km × 6.4 m makes a 7.7', () => {
+    expect(shownMag(magnitude(PANAMA_MOMENT))).toBe(7.7);
+    expect(magnitude(quakeMoment(40, 20, 4)) - magnitude(quakeMoment(10, 5, 2))).toBeCloseTo(1.0, 1);
+    expect(energyRatio(8, 7.7)).toBeCloseTo(2.82, 2);
+    expect(energyRatio(7.7, 6.6)).toBeCloseTo(44.7, 1);
+    expect(shownMag(magnitude(quakeMoment(100, 20, 6.4)))).toBe(7.7);
+    expect(shownMag(magnitude(quakeMoment(20, 10, 1)))).toBeLessThan(7);
+  });
+
+  it('living planet index: the report’s example averages −18% but loses 2% of animals; a doubling and a halving cancel', () => {
+    expect(meanChange([5, -60, 0])).toBeCloseTo(-18.33, 1);
+    expect(totalChange([5, -60, 0])).toBeCloseTo((-10 / 483) * 100, 6);
+    expect(indexChange([100, -50, 0])).toBeCloseTo(0, 9);
+    expect(indexChange([5, -60, 0])).toBeCloseTo(-25.1, 1);
+    expect(indexChange([20, -90, -90])).toBeLessThan(-50);
+    expect(totalChange([20, -90, -90])).toBeGreaterThan(0);
+  });
+
+  it('antisense: bepirovirsen pairs all 20 letters only at its target in the 70-letter stretch, at most 11 elsewhere', () => {
+    expect(HBV_RNA.length).toBe(70);
+    expect(asoPaired(ASO_AT)).toBe(20);
+    for (let at = 0; at <= HBV_RNA.length - 20; at++) if (at !== ASO_AT) expect(asoPaired(at)).toBeLessThanOrEqual(11);
+  });
+
+  it('glacier budget: a thin snowy winter and a high freezing level lose everywhere; more snow or a cooler summer balances it', () => {
+    expect(glacier(0.75, 4400).allLose).toBe(true);
+    expect(glacier(0.75, 4000).mean).toBeLessThan(-2);
+    expect(glacier(1, 3100).mean).toBeGreaterThan(0);
+    const even = glacier(1, 3300).even!;
+    expect(even).toBeGreaterThan(2700);
+    expect(even).toBeLessThan(2900);
+    // once the snow is gone, the ice melts faster
+    expect(bandBalance(2000, 0, 3000)).toBeCloseTo(-ICE_FACTOR * 0.0028 * 1000, 9);
+  });
+
+  it('hurricane cone: each NHC 2026 circle holds exactly two-thirds of the simulated misses', () => {
+    expect(NHC_RADIUS_KM[24]).toBeCloseTo(72.2, 1);
+    expect(NHC_RADIUS_KM[120]).toBeCloseTo(370.4, 1);
+    for (const h of [24, 72, 120]) {
+      const pts = coneMisses(h);
+      expect(pts.length).toBe(CONE_N);
+      expect(coneInside(pts, NHC_RADIUS_KM[h])).toBe((2 * CONE_N) / 3);
+      expect(coneInside(pts, NHC_RADIUS_KM[h] / 2)).toBeLessThan(CONE_N / 2);
+    }
   });
 });

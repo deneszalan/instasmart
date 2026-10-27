@@ -100,4 +100,9 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'one-positron-quantum-cyclotron': lazy(() => import('./physics/one-positron-quantum-cyclotron')),
   'uranocenium-sandwich': lazy(() => import('./chemistry/uranocenium-sandwich')),
   'condorcet-cycle-klein-bottle': lazy(() => import('./math/condorcet-cycle-klein-bottle')),
+  'panama-quake-magnitude-scale': lazy(() => import('./earth/panama-quake-magnitude-scale')),
+  'living-planet-index-average': lazy(() => import('./biology/living-planet-index-average')),
+  'bepirovirsen-antisense-hepatitis-b': lazy(() => import('./body/bepirovirsen-antisense-hepatitis-b')),
+  'swiss-glaciers-snowline-2026': lazy(() => import('./earth/swiss-glaciers-snowline-2026')),
+  'hurricane-cone-not-storm-size': lazy(() => import('./psychology/hurricane-cone-not-storm-size')),
 };

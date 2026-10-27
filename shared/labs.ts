@@ -100,6 +100,11 @@ export const LABS = {
   'one-positron-quantum-cyclotron': 'Set the magnet and the end-cap voltage of a Penning trap and see whether a positron stays clear of every wall.',
   'uranocenium-sandwich': 'Choose the oxidant, the salt and the solvent, and find the mix in which uranocenium survives instead of falling apart.',
   'condorcet-cycle-klein-bottle': 'Set the sizes of three groups of voters with different rankings, and find when majority voting goes round in a circle.',
+  'panama-quake-magnitude-scale': 'Set a fault’s length, depth and slip, and see its magnitude and energy against the Panama quake of 9 October 2026.',
+  'living-planet-index-average': 'Change three wildlife populations of 400, 50 and 33 animals and compare the Living Planet Index’s average change with the number of animals.',
+  'bepirovirsen-antisense-hepatitis-b': 'Slide the 20 letters of the hepatitis B drug bepirovirsen along the virus’s RNA and find where every letter pairs.',
+  'swiss-glaciers-snowline-2026': 'Set the winter snow and the summer freezing level on a toy glacier and watch its break-even line and yearly balance move.',
+  'hurricane-cone-not-storm-size': 'Size a hurricane forecast circle for 1, 3 or 5 days ahead until it holds two-thirds of simulated forecast misses, as the cone’s circles do.',
 } as const;
 
 export type LabId = keyof typeof LABS;
