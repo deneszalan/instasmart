@@ -1,0 +1,154 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-two-consuls-one-year",
+  "field": "politics",
+  "title": "After the kings, Rome put two consuls in charge for one year, each able to block the other",
+  "emoji": "🏛️",
+  "body": "By Roman tradition, Rome drove out its last king, Tarquin the Proud, in 509 BC, and [Livy](https://www.thelatinlibrary.com/livy/liv.1.shtml), writing nearly 500 years later, says two consuls were elected in his place. The Republic split that power two ways. In two: each consul could veto, that is forbid, what the other did, and in Rome they took turns, a month each, with the fasces, the rods carried by their 12 lictors. In time: a consul served one year, and usually about ten years passed before a second term. Consuls were elected by the **Centuriate Assembly** on the Campus Martius, where citizens voted in 193 groups, called centuries, ranked by wealth, one vote each. In Livy’s account the horsemen and the first class held 98 of them and voted first, so when they agreed the vote was already decided, though Cicero says one century of the poorest held more citizens than almost the whole first class. Romans named each year after its two consuls, so the marble list of them, the [Fasti Capitolini](https://en.wikipedia.org/wiki/Fasti_Capitolini) in the Capitoline Museums, is also a calendar.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Rome’s consuls were elected by 193 voting groups ranked by wealth. How many did the two richest classes hold?",
+      "min": 20,
+      "max": 150,
+      "step": 1,
+      "answer": 98,
+      "unit": "groups",
+      "explanation": "98 in Livy’s account: 18 centuries of horsemen and 80 of the first class, more than half of 193. They voted first, so when they agreed, the vote was over."
+    },
+    {
+      "type": "video",
+      "src": "consuls.mp4",
+      "poster": "consuls.jpg",
+      "alt": "Animation on pale marble: a slab reading REX cracks and two consuls stand in its place; one vetoes the other; twelve lictors each and the fasces passing month by month; a row of one-year terms; 193 voting groups filling richest first until a STOP stamp; a marble list of consuls; SPQR.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Noble Race” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "two-consuls-one-year",
+      "prompt": "Set how the 98 richest centuries and the 95 others vote for two candidates, and find a vote that is over before the second class is ever called.",
+      "takeaway": "When the horsemen and the first class agree, their 98 votes already beat half of 193, and 95 centuries never vote, though Cicero says one of them held more citizens than almost the whole first class."
+    },
+    {
+      "type": "image",
+      "src": "fasti-capitolini.jpg",
+      "alt": "Photo of a white marble wall in a museum hall, set with grey fragments of ancient stone carved with rows of small Roman capital letters; a modern inscription runs across the top and a carved block stands on a pedestal in front.",
+      "caption": "The Fasti Capitolini in the Capitoline Museums: fragments of the marble list of consuls, set into a wall.",
+      "fit": "cover",
+      "credit": "José Luiz Bernardes Ribeiro · CC BY-SA 4.0"
+    },
+    {
+      "type": "quote",
+      "text": "Ne plurimum valeant plurimi: so that the greatest number should not have the greatest power.",
+      "attribution": "Cicero, On the Republic 2.39, on how the centuries were arranged"
+    },
+    {
+      "type": "image",
+      "src": "spqr-manhole.jpg",
+      "alt": "Close-up photo of a grey iron drain cover in a street, with rows of rounded slots and a raised plate in the middle bearing the letters SPQR.",
+      "caption": "SPQR, the Senate and the People of Rome, on a drain cover in Rome today.",
+      "fit": "contain",
+      "credit": "Quentin Lowagie / Klow · CC BY 4.0"
+    },
+    {
+      "type": "quiz",
+      "question": "How did Romans of the Republic usually say which year something happened in?",
+      "options": [
+        "By naming that year’s two consuls",
+        "By counting from Romulus’s birth",
+        "By the number of the king",
+        "By the Senate’s meeting count"
+      ],
+      "answer": 0,
+      "explanation": "They named the year after its two consuls: “in the consulship of…”. So a list of consuls, like the Fasti Capitolini, works as a calendar."
+    }
+  ],
+  "tags": [
+    "rome",
+    "republic",
+    "consuls",
+    "elections",
+    "spqr",
+    "fasti"
+  ],
+  "source": {
+    "label": "Wikipedia: Roman consul",
+    "url": "https://en.wikipedia.org/wiki/Roman_consul"
+  },
+  "theme": {
+    "gradient": [
+      "#27231f",
+      "#7a2a1c"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T18:04:25Z"
+}

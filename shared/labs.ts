@@ -137,6 +137,7 @@ export const LABS = {
   'caravaggio-calling-light': 'Light a face as Caravaggio did: choose the studio’s walls and windows and see how dark the shadows get.',
   'monte-testaccio-amphorae': 'Set how many olive-oil jars Monte Testaccio holds and over how many years they came, and see how much oil Rome took in.',
   'palatine-huts-romulus': 'Set how long Rome’s seven legendary kings reigned on average, count back from the first consuls of 509 BC, and see which ancient founding date you reach, beside the Palatine hut village dated by digging.',
+  'two-consuls-one-year': 'Run a vote of the Roman Republic’s Centuriate Assembly, which elected the consuls: set how the 98 richest and the 95 other centuries vote, and see when the count stops.',
 } as const;
 
 export type LabId = keyof typeof LABS;

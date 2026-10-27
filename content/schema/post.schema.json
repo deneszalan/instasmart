@@ -227,7 +227,8 @@
                   "aqua-virgo-low-fountains",
                   "caravaggio-calling-light",
                   "monte-testaccio-amphorae",
-                  "palatine-huts-romulus"
+                  "palatine-huts-romulus",
+                  "two-consuls-one-year"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

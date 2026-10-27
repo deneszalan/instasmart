@@ -132,6 +132,7 @@ import { jetHeight as virgoJet, jetTop as virgoTop, nozzleSpeed as virgoSpeed } 
 import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggio-calling-light';
 import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } from '../src/labs/economics/monte-testaccio-amphorae';
 import { foundingYear as palatineFounding, nearest as palatineNearest, reignFor as palatineReign, VARRO_BC as PALATINE_VARRO } from '../src/labs/history/palatine-huts-romulus';
+import { MAJORITY as CENTURIATE_MAJORITY, RICH as CENTURIATE_RICH, runVote as centuriateVote, shareOut as centuriateShare, TOTAL as CENTURIATE_TOTAL } from '../src/labs/politics/two-consuls-one-year';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1209,5 +1210,17 @@ describe('lab maths', () => {
     expect(palatineReign(814)).toBeCloseTo(43.57, 2);
     expect(palatineNearest(palatineFounding(20)).who).toBe('Cincius');
     expect(palatineNearest(753).who).toBe('Varro');
+  });
+  it('Consuls: in the Centuriate Assembly the 98 richest of 193 centuries are a majority, so if they agree 95 are never called', () => {
+    expect(CENTURIATE_TOTAL).toBe(193);
+    expect(CENTURIATE_MAJORITY).toBe(97);
+    expect(CENTURIATE_RICH).toBe(98);
+    expect(centuriateVote(98, 0)).toEqual({ a: 98, b: 0, called: 98, winner: 'A', blocks: 1 });
+    expect(centuriateVote(97, 95).called).toBe(98);
+    expect(centuriateVote(1, 95)).toMatchObject({ winner: 'B', called: 98 });
+    expect(centuriateVote(80, 30)).toMatchObject({ winner: 'A', blocks: 4, called: 158 });
+    expect(centuriateVote(60, 30)).toMatchObject({ winner: 'B', called: 188 });
+    expect(centuriateVote(49, 48).called).toBe(193);
+    for (const n of [0, 7, 48, 95]) expect(centuriateShare(n).reduce((s, x) => s + x, 0)).toBe(n);
   });
 });
