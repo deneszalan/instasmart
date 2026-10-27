@@ -95,6 +95,7 @@ export const LABS = {
   'mirror-molecules-nobel': 'Start a flask a little more right-handed than left and run rounds of autocatalysis, with mixed pairs idle or working, until one hand takes over.',
   'nobel-hall-woodford': 'Set today’s interest rate and promise a path for the next two years, then see how spending today responds when people look ahead.',
   'power-grid-transformers': 'Step up the voltage of a power line carrying 10 MW and watch the current, and the power lost as heat, fall.',
+  'sweden-negative-parliamentarism': 'Set how each party in Sweden’s Riksdag votes on a prime minister, and see that only 175 no votes can stop one, however few vote yes.',
 } as const;
 
 export type LabId = keyof typeof LABS;

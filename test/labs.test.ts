@@ -90,6 +90,7 @@ import { simulate as optoRun } from '../src/labs/body/optogenetics-nobel';
 import { round as chiralRound, rounds as chiralRounds } from '../src/labs/chemistry/mirror-molecules-nobel';
 import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
 import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
+import { MPS as SWE_MPS, OCT_15 as SWE_OCT_15, REJECT_AT as SWE_REJECT, tally as sweTally } from '../src/labs/politics/sweden-negative-parliamentarism';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -740,5 +741,17 @@ describe('lab maths', () => {
     expect(lineLoss(10).lossMW / lineLoss(100).lossMW).toBeCloseTo(100, 9);
     expect(lineLoss(70).share).toBeGreaterThan(0.01);
     expect(lineLoss(75).share).toBeLessThan(0.01);
+  });
+
+  it('sweden pm vote: 349 seats and 175 no votes reject; 15 October rejected; with V, C and MP abstaining she passes on 99 yes to 173 no', () => {
+    expect(SWE_MPS).toBe(349);
+    expect(SWE_REJECT).toBe(175);
+    const oct = sweTally(SWE_OCT_15);
+    expect(oct).toEqual({ yes: 99, no: 250, abstain: 0, approved: false });
+    const abst = sweTally(['yes', 'no', 'no', 'abstain', 'abstain', 'no', 'abstain', 'no']);
+    expect(abst).toEqual({ yes: 99, no: 173, abstain: 77, approved: true });
+    expect(abst.no).toBeGreaterThan(abst.yes);
+    expect(sweTally(['yes', 'no', 'no', 'abstain', 'abstain', 'no', 'no', 'no']).approved).toBe(false);
+    expect(sweTally(['no', 'yes', 'yes', 'no', 'no', 'yes', 'no', 'yes'])).toEqual({ yes: 173, no: 176, abstain: 0, approved: false });
   });
 });

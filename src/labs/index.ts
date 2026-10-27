@@ -95,4 +95,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'mirror-molecules-nobel': lazy(() => import('./chemistry/mirror-molecules-nobel')),
   'nobel-hall-woodford': lazy(() => import('./economics/nobel-hall-woodford')),
   'power-grid-transformers': lazy(() => import('./engineering/power-grid-transformers')),
+  'sweden-negative-parliamentarism': lazy(() => import('./politics/sweden-negative-parliamentarism')),
 };
