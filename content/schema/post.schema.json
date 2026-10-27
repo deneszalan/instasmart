@@ -188,7 +188,8 @@
                   "power-grid-transformers",
                   "certificate-key-number-four",
                   "leap-seconds-abolished",
-                  "onkalo-nuclear-waste-licence"
+                  "onkalo-nuclear-waste-licence",
+                  "anne-carson-sappho-brackets"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

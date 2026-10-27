@@ -93,6 +93,7 @@ import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
 import { bruteForce, G as curveG, multiply as curveMultiply, ORDER as curveOrder, samePoint, searchSeconds, UNIVERSE_SECONDS } from '../src/labs/tech/certificate-key-number-four';
 import { clockCount, measured as leapMeasured } from '../src/labs/tech/leap-seconds-abolished';
 import { NUCLIDES, remaining as nuclideLeft, yearsAt as repositoryYears, yearsUntil } from '../src/labs/engineering/onkalo-nuclear-waste-licence';
+import { agreeing as sapphicAgreeing, fits as sapphicFits, SAPPHIC, SYLLABLES as SAPPHO_SYLLABLES } from '../src/labs/language/anne-carson-sappho-brackets';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -784,5 +785,17 @@ describe('lab maths', () => {
     expect(repositoryYears(100)).toBeCloseTo(1e6, 3);
     expect(nuclideLeft(cs.half, repositoryYears(41))).toBeGreaterThan(1 / 1000);
     expect(nuclideLeft(cs.half, repositoryYears(42))).toBeLessThan(1 / 1000);
+  });
+
+  it('Sapphic line: fragment 31 line 1 scans – u – – – u u – u – –; the 4th and last places may be either', () => {
+    expect(SAPPHO_SYLLABLES).toHaveLength(11);
+    expect(SAPPHIC).toHaveLength(11);
+    const L = 'long' as const, S = 'short' as const;
+    const line = [L, S, L, L, L, S, S, L, S, L, L];
+    expect(sapphicFits(line)).toBe(true);
+    expect(sapphicFits([L, S, L, S, L, S, S, L, S, L, S])).toBe(true);
+    expect(sapphicFits(line.map(() => S))).toBe(false);
+    expect(sapphicAgreeing(line.map(() => S))).toBe(6);
+    expect(sapphicFits([S, ...line.slice(1)])).toBe(false);
   });
 });

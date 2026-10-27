@@ -98,4 +98,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'certificate-key-number-four': lazy(() => import('./tech/certificate-key-number-four')),
   'leap-seconds-abolished': lazy(() => import('./tech/leap-seconds-abolished')),
   'onkalo-nuclear-waste-licence': lazy(() => import('./engineering/onkalo-nuclear-waste-licence')),
+  'anne-carson-sappho-brackets': lazy(() => import('./language/anne-carson-sappho-brackets')),
 };

@@ -1331,4 +1331,12 @@ export const de: Record<string, string> = {
   'Its half-lives so far': 'Seine Halbwertszeiten bisher',
   'Plutonium-239 left': 'Übriges Plutonium-239',
   'Simplified: each nuclide on its own, as a share of what it started with. Real spent fuel is a changing mix, and some nuclides turn into others.': 'Vereinfacht: jedes Nuklid für sich, als Anteil seiner Anfangsmenge. Echter abgebrannter Brennstoff ist eine wechselnde Mischung, und manche Nuklide werden zu anderen.',
+  'Sappho, fragment 31, line 1: tap each syllable to mark it long or short': 'Sappho, Fragment 31, Vers 1: Tippe auf jede Silbe, um sie lang oder kurz zu markieren',
+  'the Sapphic line': 'der sapphische Vers',
+  'The first line of Sappho’s fragment 31 in 11 syllables, each marked long or short': 'Der erste Vers von Sapphos Fragment 31 in 11 Silben, jede als lang oder kurz markiert',
+  'Hear your rhythm': 'Deinen Rhythmus hören',
+  'Clear the marks': 'Markierungen löschen',
+  'Long syllables': 'Lange Silben',
+  'Fit the metre': 'Passen zum Versmaß',
+  'Long: a vowel with a line (ē), a pair like ai or oi, or a vowel with two consonants after it, even across a word gap (th is one). The last syllable may be either. Simplified rules.': 'Lang: ein Vokal mit Strich (ē), ein Paar wie ai oder oi oder ein Vokal mit zwei Konsonanten danach, auch über eine Wortgrenze (th zählt als einer). Die letzte Silbe darf beides sein. Vereinfachte Regeln.',
 };
