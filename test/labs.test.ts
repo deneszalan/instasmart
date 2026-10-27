@@ -94,6 +94,7 @@ import { MPS as SWE_MPS, OCT_15 as SWE_OCT_15, REJECT_AT as SWE_REJECT, tally as
 import { ridings as qcRidings, seatsWon as qcSeats } from '../src/labs/politics/quebec-first-past-the-post';
 import { canJoin, canSuspend, ELECT_AT as HRC_ELECT, UN_MEMBERS } from '../src/labs/politics/un-human-rights-council-election';
 import { banned as infBanned, kmAt, rangeClass } from '../src/labs/history/reykjavik-summit-inf-treaty';
+import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgment-three-votes';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -793,5 +794,14 @@ describe('lab maths', () => {
     expect(kmAt(0)).toBe(100);
     expect(kmAt(100)).toBe(10000);
     expect(kmAt(50)).toBe(1000);
+  });
+
+  it('Nuremberg: three of four judges convict; a 2–2 split never does, though a tie-break by the President would', () => {
+    expect(convicts([true, true, true, false])).toBe(true);
+    expect(convicts([true, true, false, false])).toBe(false);
+    expect(convicts([true, true, true, true])).toBe(true);
+    expect(ordinaryDecision([true, true, false, false])).toBe(true);
+    expect(ordinaryDecision([true, false, true, false])).toBe(false);
+    expect(ordinaryDecision([false, false, false, true])).toBe(false);
   });
 });

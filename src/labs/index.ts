@@ -99,4 +99,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'quebec-first-past-the-post': lazy(() => import('./politics/quebec-first-past-the-post')),
   'un-human-rights-council-election': lazy(() => import('./politics/un-human-rights-council-election')),
   'reykjavik-summit-inf-treaty': lazy(() => import('./history/reykjavik-summit-inf-treaty')),
+  'nuremberg-judgment-three-votes': lazy(() => import('./history/nuremberg-judgment-three-votes')),
 };
