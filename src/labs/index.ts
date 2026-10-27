@@ -118,4 +118,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'caesar-445-day-year': lazy(() => import('./history/caesar-445-day-year')),
   'pantheon-noon-sunbeam': lazy(() => import('./engineering/pantheon-noon-sunbeam')),
   'navona-domitian-stadium': lazy(() => import('./history/navona-domitian-stadium')),
+  'aqua-virgo-low-fountains': lazy(() => import('./engineering/aqua-virgo-low-fountains')),
 };

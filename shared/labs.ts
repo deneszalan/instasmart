@@ -118,6 +118,7 @@ export const LABS = {
   'caesar-445-day-year': 'Pick a leap-day rule, from none to Caesar’s and the Gregorian, and let the centuries pass to see how far the equinox drifts in the calendar.',
   'pantheon-noon-sunbeam': 'Pick a day of the year and see where the noon sunlight from the Pantheon’s oculus falls: on the dome, the wall, the doorway or the floor.',
   'navona-domitian-stadium': 'Wrap rows of benches round the track of the Stadium of Domitian, under today’s Piazza Navona, and see how many spectators fit.',
+  'aqua-virgo-low-fountains': 'Set how high the Aqua Virgo’s water stands at its end and how deep a fountain is sunk, and see how high its jet can rise.',
 } as const;
 
 export type LabId = keyof typeof LABS;

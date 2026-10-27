@@ -113,6 +113,7 @@ import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgme
 import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '../src/labs/history/caesar-445-day-year';
 import { doorwayLit, litStretch, noonAltitude, placeOf, R as PANTHEON_R } from '../src/labs/engineering/pantheon-noon-sunbeam';
 import { MAX_ROWS as NAVONA_MAX_ROWS, nearEstimate as navonaNear, rowLength as navonaRow, seats as navonaSeats, STANDS as NAVONA_STANDS } from '../src/labs/history/navona-domitian-stadium';
+import { jetHeight as virgoJet, jetTop as virgoTop, nozzleSpeed as virgoSpeed } from '../src/labs/engineering/aqua-virgo-low-fountains';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1016,5 +1017,11 @@ describe('lab maths', () => {
     expect(navonaNear(navonaSeats(24, 0.45))).toBe(true);
     expect(navonaSeats(12, 0.6)).toBeLessThan(15000);
     expect(navonaSeats(37, 0.35)).toBeGreaterThan(50000);
+  });
+  it('Aqua Virgo: a jet climbs only to its source level, so sinking the nozzle 1.5 m gives a 2 m jet from water half a metre above the street', () => {
+    expect(virgoJet(0.5, 0)).toBe(0.5);
+    expect(virgoJet(0.5, 1.5)).toBe(2);
+    expect(virgoTop(0.5, 1.5)).toBeCloseTo(0.5, 9);
+    expect(virgoSpeed(0.5, 1.5)).toBeCloseTo(6.26, 2);
   });
 });
