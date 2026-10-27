@@ -115,6 +115,7 @@ import { coverage as goldCoverage, flashing as goldFlashing, GOAL as GOLD_GOAL, 
 import { buried as scBuried, site as scSite, STEPS as SC_STEPS } from '../src/labs/earth/san-clemente-three-levels';
 import { farWidth as cpFar, viewAngle as cpView, widerThanRectangle as cpWider } from '../src/labs/art/campidoglio-trapezoid';
 import { angularSize as akAngle, distanceFor as akDistance, DOME as AK_DOME, KEYHOLE_DISTANCE as AK_DIST, MOON as AK_MOON } from '../src/labs/art/aventine-keyhole-view';
+import { carbonLeft as wfLeft, ETRUSCAN_YEAR as WF_ETRUSCAN, radiocarbonAge as wfAge, roughYear as wfYear, WOLF_BP as WF_BP } from '../src/labs/history/capitoline-wolf-dating';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1034,5 +1035,13 @@ describe('lab maths', () => {
     expect(akAngle(AK_DOME, AK_DIST) / AK_MOON).toBeCloseTo(1.55, 2);
     expect(akDistance(AK_DOME, AK_MOON)).toBeCloseTo(4628, -1);
     expect(akAngle(AK_DOME, 2 * AK_DIST) / akAngle(AK_DOME, AK_DIST)).toBeCloseTo(0.5, 3);
+  });
+
+  it('Capitoline wolf: 963 radiocarbon years leave 88.7% of the carbon-14; a core from about 480 BC would hold about 74%', () => {
+    expect(wfLeft(WF_BP)).toBeCloseTo(0.887, 3);
+    expect(wfAge(wfLeft(WF_BP))).toBeCloseTo(963, 6);
+    expect(wfLeft(1950 - WF_ETRUSCAN)).toBeCloseTo(0.739, 3);
+    expect(wfYear(0.739)).toBeCloseTo(-480, -1);
+    expect(wfYear(1)).toBe(1950);
   });
 });

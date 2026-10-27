@@ -120,4 +120,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'san-clemente-three-levels': lazy(() => import('./earth/san-clemente-three-levels')),
   'campidoglio-trapezoid': lazy(() => import('./art/campidoglio-trapezoid')),
   'aventine-keyhole-view': lazy(() => import('./art/aventine-keyhole-view')),
+  'capitoline-wolf-dating': lazy(() => import('./history/capitoline-wolf-dating')),
 };

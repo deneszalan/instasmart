@@ -1578,4 +1578,13 @@ export const de: Record<string, string> = {
   'Full Moons wide': 'Vollmonde breit',
   'From the keyhole': 'Vom Schlüsselloch',
   'The keyhole’s view is drawn 3° across; the Moon and the dome are drawn to the same scale. The dome is about 42 m wide.': 'Der Blick durchs Schlüsselloch ist 3° breit gezeichnet; Mond und Kuppel im selben Maßstab. Die Kuppel ist etwa 42 m breit.',
+  'about {n} BC': 'etwa {n} v. Chr.',
+  'about AD {n}': 'etwa {n} n. Chr.',
+  'The wolf’s cores': 'Die Gusskerne der Wölfin',
+  'years since 1950 (radiocarbon years)': 'Jahre vor 1950 (Radiokarbonjahre)',
+  'Carbon-14 left against radiocarbon age, with a sample holding {p} percent': 'Verbliebenes Kohlenstoff-14 gegen Radiokarbonalter, Probe mit {p} Prozent',
+  'Carbon-14 left in the sample': 'Verbliebenes Kohlenstoff-14 in der Probe',
+  'Radiocarbon age': 'Radiokarbonalter',
+  'Rough date, uncalibrated': 'Grobe Datierung, unkalibriert',
+  'Simplified: real dates are calibrated against tree rings, which turned the wolf’s 963 radiocarbon years into AD 1021–1153.': 'Vereinfacht: Echte Daten werden an Baumringen kalibriert; so wurden aus den 963 Radiokarbonjahren der Wölfin 1021–1153 n. Chr.',
 };
