@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "How many basic tile shapes did Lu and Steinhardt find behind these intricate patterns?",
+      "question": "How many basic tile shapes did physicists Peter Lu and Paul Steinhardt find behind these intricate patterns?",
       "min": 1,
       "max": 30,
       "step": 1,

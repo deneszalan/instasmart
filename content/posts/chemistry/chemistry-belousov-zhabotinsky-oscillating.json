@@ -41,9 +41,9 @@
       "max": 1970,
       "format": "year",
       "marks": [
-        { "label": "Belousov sees it", "value": 1951, "emphasis": true },
+        { "label": "Boris Belousov sees it", "value": 1951, "emphasis": true },
         { "label": "Finally published", "value": 1959 },
-        { "label": "Zhabotinsky joins", "value": 1961 },
+        { "label": "Anatol Zhabotinsky joins", "value": 1961 },
         { "label": "Prague conference", "value": 1968 }
       ],
       "note": "Belousov saw a cerium catalyst oscillate; the 1968 meeting brought the reaction to the West"

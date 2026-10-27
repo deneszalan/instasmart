@@ -27,7 +27,7 @@
       "step": 1,
       "answer": 8,
       "unit": "years",
-      "explanation": "Eight years. For 1890, clerks punched about 100 million cards and Hollerith's [tabulating machines](https://en.wikipedia.org/wiki/Tabulating_machine) finished the count months ahead of schedule."
+      "explanation": "Eight years. For 1890, clerks punched about 100 million cards and Herman Hollerith's [tabulating machines](https://en.wikipedia.org/wiki/Tabulating_machine) finished the count months early."
     },
     {
       "type": "stat",
@@ -71,7 +71,7 @@
         },
         {
           "when": "1924",
-          "text": "Its successor CTR is renamed IBM"
+          "text": "Its successor company is renamed IBM"
         },
         {
           "when": "1928",

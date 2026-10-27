@@ -16,7 +16,7 @@
       "src": "spacewar-screen.mp4",
       "poster": "spacewar-screen.jpg",
       "alt": "Two glowing ships leave green trails as they swing around a bright central star on a round screen, with dim background stars appearing and fading.",
-      "caption": "A restored PDP-1 at the Computer History Museum runs Spacewar!: two ships swing around the central star, trailing green streaks, against a field of stars.",
+      "caption": "A restored PDP-1 computer at the Computer History Museum runs Spacewar!: two ships swing around the central star, trailing green streaks, against a field of stars.",
       "credit": "Kenneth Lu · CC BY 3.0 · excerpt",
       "href": "https://commons.wikimedia.org/wiki/File:Restored_PDP-1_Demonstration.webm",
       "music": "“Bit Shift” Kevin MacLeod (incompetech.com) · CC BY 4.0",
@@ -56,7 +56,7 @@
     },
     {
       "type": "reveal",
-      "prompt": "DEC technicians reportedly ran Spacewar! on new PDP-1s before shipping them. Why?",
+      "prompt": "Technicians at DEC, the PDP-1’s maker, reportedly ran Spacewar! on new machines before shipping them. Why?",
       "answer": "It exercised every part of the hardware",
       "detail": "So the story goes, second-hand: it was the only program around that tested the whole machine at once."
     },

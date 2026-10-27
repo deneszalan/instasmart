@@ -1,0 +1,170 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-uranocenium-sandwich",
+  "field": "chemistry",
+  "title": "Chemists finally took one electron off a uranium ‘sandwich’ molecule, and it barely shrank",
+  "emoji": "🥪",
+  "body": "In October 2026 chemists at the University of Manchester and Lancaster University reported uranocenium in Nature Communications ([paper](https://www.nature.com/articles/s41467-026-77066-2)). It comes from uranocene, first made in 1968: a sandwich molecule with one uranium atom between two flat rings of eight carbon atoms, each ring sharing 10 electrons all the way round it. Its iron cousin ferrocene, iron between two five-carbon rings, easily gives up an electron, but attempts since the late 1970s to do the same to uranocene gave only a mess. The team found why: those tests used a salt, hexafluorophosphate, and the newly made cation tore fluoride off it and fell apart. With a different salt and solvent it formed crystals that are stable at room temperature. The uranium’s charge goes from +4 to +5, which would usually make the atom much smaller, yet the bonds got only about **0.02 ångström** shorter, because uranium now shares more of the bonding electrons: from about 30% to over 40%.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Uranocene holds uranium between two rings of eight carbons. How many electrons does each ring share all the way round?",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "answer": 10,
+      "unit": "electrons",
+      "explanation": "10: one from each of the 8 carbons, plus 2 more, because each ring carries a charge of −2. The five-carbon rings of ferrocene share 6."
+    },
+    {
+      "type": "video",
+      "src": "uranocenium.mp4",
+      "poster": "uranocenium.jpg",
+      "alt": "Animation on dark plum. Ball-and-stick sandwiches: iron between two five-carbon rings, uranium between two eight-carbon rings, electrons circling. A salt of phosphorus and six fluorines; the uranium sandwich grabs a fluorine and falls apart. Then uranocenium, its +5 charge, and bars for size.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Volatile Reaction” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 7,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "uranocenium-sandwich",
+      "prompt": "Make uranocenium, uranocene minus one electron. Choose the oxidant that takes the electron, the salt and the solvent, and find a mix in which it survives.",
+      "takeaway": "It lasts only with a gentle oxidant, a borate salt and a calm solvent. The old tests used hexafluorophosphate, which it tears fluoride from."
+    },
+    {
+      "type": "timeline",
+      "heading": "Sandwich molecules",
+      "events": [
+        {
+          "when": "1951",
+          "text": "Ferrocene, iron between two rings"
+        },
+        {
+          "when": "1952",
+          "text": "Its sandwich shape is worked out"
+        },
+        {
+          "when": "1968",
+          "text": "Uranocene is made"
+        },
+        {
+          "when": "1973",
+          "text": "A Nobel Prize for sandwiches"
+        },
+        {
+          "when": "2026",
+          "text": "Uranocenium, at last"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "From +4 to +5",
+      "left": {
+        "label": "Expected",
+        "text": "In typical compounds a uranium ion with a charge of +5 is about 0.13 ångström smaller than one with +4."
+      },
+      "right": {
+        "label": "Measured",
+        "text": "The uranium–carbon bonds got only about 0.02 ångström shorter, because uranium shares more of the bonding electrons."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "What had wrecked the earlier attempts to take an electron off uranocene?",
+      "options": [
+        "A fluorine-containing salt",
+        "Too much heat",
+        "Air leaking in",
+        "Uranium’s radioactivity"
+      ],
+      "answer": 0,
+      "explanation": "The tests used hexafluorophosphate. The new cation tore fluoride off it and fell apart. With a borate salt and an unreactive solvent, uranocenium lasts."
+    }
+  ],
+  "tags": [
+    "uranium",
+    "molecules",
+    "bonding",
+    "electrons",
+    "elements"
+  ],
+  "source": {
+    "label": "Nature Communications: Isolation of uranocenium, the bis-[8]annulene uranium cation (2026)",
+    "url": "https://www.nature.com/articles/s41467-026-77066-2"
+  },
+  "theme": {
+    "gradient": [
+      "#0b0a14",
+      "#2b1d4f"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-26"
+}

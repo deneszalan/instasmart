@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "How much did IBM charge per month to lease a RAMAC system in 1956?",
+      "question": "How much did IBM charge per month in 1956 to lease a RAMAC, the computer with the first hard drive?",
       "min": 100,
       "max": 10000,
       "step": 100,

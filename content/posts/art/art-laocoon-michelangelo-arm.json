@@ -15,7 +15,7 @@
       "type": "image",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Laocoon_by_Baccio_Bandinelli-Uffizi.jpg/960px-Laocoon_by_Baccio_Bandinelli-Uffizi.jpg",
       "alt": "Baccio Bandinelli’s marble copy of the Laocoön in the Uffizi, the priest’s right arm raised up and outstretched as he grips a serpent.",
-      "caption": "The arm that might have been: Baccio Bandinelli’s copy of about 1525, now in the Uffizi in Florence, reaches up and out.",
+      "caption": "The arm that might have been: Baccio Bandinelli’s copy of the ancient Laocoön statue, about 1525, now in the Uffizi in Florence, reaches up and out.",
       "fit": "cover",
       "credit": "Yair Haklai · CC BY-SA 4.0"
     },
@@ -28,7 +28,7 @@
       },
       "right": {
         "label": "The restorers",
-        "text": "An arm stretched outwards was more appropriate. Montorsoli fixed a straight one to the statue in 1532."
+        "text": "An arm stretched outwards was more appropriate. The sculptor Montorsoli fixed a straight one to the statue in 1532."
       }
     },
     {
@@ -43,14 +43,14 @@
         { "label": "Bent arm found", "value": 1905, "emphasis": true },
         { "label": "Accepted as original", "value": 1957 }
       ],
-      "note": "In the 1980s the group was taken apart and rebuilt with Pollak’s arm."
+      "note": "In the 1980s the group was taken apart and rebuilt with the arm Ludwig Pollak found."
     },
     {
       "type": "odd",
       "heading": "Three belong to the 1506 story. Which doesn’t?",
       "items": ["Michelangelo", "Giuliano da Sangallo", "Felice De Fredis", "Ludwig Pollak"],
       "answer": 3,
-      "explanation": "Pollak found the arm in 1905. The statue came up in De Fredis’s vineyard, and Julius II sent Sangallo and Michelangelo to see it."
+      "explanation": "Pollak found the arm in 1905. The statue came up in De Fredis’s vineyard, and Pope Julius II sent Sangallo and Michelangelo to see it."
     },
     {
       "type": "stat",

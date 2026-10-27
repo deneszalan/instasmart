@@ -8,11 +8,11 @@
   "slides": [
     {
       "type": "flow",
-      "heading": "How a flawed story became a textbook case",
+      "heading": "How the attack on Kitty Genovese became a textbook case",
       "steps": [
         {
           "icon": "📰",
-          "label": "1964: the Times reports 37 silent witnesses"
+          "label": "1964: NY Times reports 37 silent witnesses"
         },
         {
           "icon": "🔬",

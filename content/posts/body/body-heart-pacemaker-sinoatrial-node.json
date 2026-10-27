@@ -104,7 +104,7 @@
     {
       "type": "text",
       "heading": "Why the pause?",
-      "text": "The atria and the ventricles are electrically insulated from each other everywhere except the AV node, which holds the signal back for a moment. That lets the atria empty into the ventricles first. If both squeezed at once, the ventricles would fill poorly and blood would be pushed backwards."
+      "text": "The atria and the ventricles are electrically insulated from each other everywhere except the atrioventricular (AV) node, which holds the signal back for a moment. That lets the atria empty into the ventricles first. If both squeezed at once, the ventricles would fill poorly and blood would be pushed backwards."
     },
     {
       "type": "match",

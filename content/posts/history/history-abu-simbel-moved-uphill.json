@@ -44,8 +44,8 @@
       "type": "timeline",
       "heading": "Lost, found and moved",
       "events": [
-        { "when": "1813", "text": "Burckhardt sees the top of the Great Temple poking out of the sand" },
-        { "when": "1817", "text": "Belzoni clears sand for 22 days and walks in" },
+        { "when": "1813", "text": "Explorer Johann Burckhardt sees the Great Temple’s top in the sand" },
+        { "when": "1817", "text": "Explorer Giovanni Belzoni clears sand for 22 days and walks in" },
         { "when": "1965", "text": "The first block is lifted out on 21 May" },
         { "when": "1968", "text": "The rebuilt temples are inaugurated on 22 September" }
       ]

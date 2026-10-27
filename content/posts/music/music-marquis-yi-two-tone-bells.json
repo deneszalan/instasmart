@@ -13,7 +13,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "How many bells are in the Marquis Yi set?",
+      "question": "The set comes from the tomb of Marquis Yi, ruler of the state of Zeng. How many bells are in it?",
       "min": 5,
       "max": 150,
       "step": 1,

@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "place",
-      "question": "On 20 April 2020, where did the expiring May contract for WTI crude close, in dollars a barrel?",
+      "question": "On 20 April 2020, where did the May contract for West Texas Intermediate (WTI) crude close, in dollars a barrel?",
       "min": -50,
       "max": 50,
       "step": 1,

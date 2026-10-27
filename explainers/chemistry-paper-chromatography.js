@@ -93,7 +93,7 @@ const CUES = [
   [38.1, 42.4, 'Different grip, different speed: the mixture *separates*.'],
   [42.6, 48.2, 'Chemists compare dyes by their *Rf*: dye distance ÷ solvent distance.'],
   [48.4, 53.4, 'Botanist Mikhail Tsvet coined the name in the *early 1900s*.'],
-  [53.5, 58.4, 'Martin and Synge won the *1952 Nobel Prize* for partition chromatography.'],
+  [53.5, 58.4, 'Archer Martin and Richard Synge won the *1952 Nobel Prize* for partition chromatography.'],
 ];
 
 // ---------- background ----------

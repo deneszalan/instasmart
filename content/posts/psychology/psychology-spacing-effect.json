@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "Ebbinghaus crammed a list with 68 repetitions in one day. How many, spread over three days, worked just as well?",
+      "question": "Hermann Ebbinghaus crammed a list with 68 repetitions in one day. How many, spread over three days, worked just as well?",
       "min": 10,
       "max": 100,
       "step": 1,

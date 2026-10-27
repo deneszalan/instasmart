@@ -94,7 +94,7 @@ const N_OK = SLOTS.filter((s) => s.ok).length;
 
 // ---------- timeline ----------
 const CUES = [
-  [0.4, 5.3, 'Press a key on an *Enigma* machine and a lamp lights another letter.'],
+  [0.4, 5.3, 'Press a key on a German WWII *Enigma* cipher machine and a lamp lights another letter.'],
   [5.4, 9.7, 'Its fatal flaw: a letter could ~never~ light up as itself.'],
   [9.8, 14.8, `Keep pressing A: *${OUT.split('').join(', ')}*. The right rotor steps.`],
   [14.9, 18.4, 'So the wiring shifts with every key press.'],
@@ -106,7 +106,7 @@ const CUES = [
   [42.1, 45.6, 'So one machine both encrypts and decrypts.'],
   [45.9, 50.4, 'Codebreakers guessed likely words, called *cribs*, like ~WETTER~.'],
   [50.7, 55.6, 'Slide it along: where a letter meets itself, that spot is impossible.'],
-  [55.7, 60.5, 'Fewer spots to try: cribs were key to Bletchley Park’s *bombes*.'],
+  [55.7, 60.5, 'Fewer spots to try: cribs fed the *bombes*, the codebreaking machines at Bletchley Park.'],
 ];
 const DUR = 60.8;
 const c = (i) => CUES[i][0];

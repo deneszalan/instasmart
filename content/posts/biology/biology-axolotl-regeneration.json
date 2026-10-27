@@ -13,7 +13,7 @@
   "slides": [
     {
       "type": "reveal",
-      "prompt": "Surveys counted about 6,000 axolotls per km² in Lake Xochimilco in 1998. How many per km² did they find in 2008?",
+      "prompt": "Surveys counted about 6,000 axolotls per km² in Lake Xochimilco, near Mexico City, in 1998. How many per km² did they find in 2008?",
       "answer": "About 100 per km²",
       "detail": "The density fell from about 6,000 per km² in 1998 to 1,000 in 2003 and 100 in 2008. A four-month search in 2013 found none at all, then two turned up a month later."
     },

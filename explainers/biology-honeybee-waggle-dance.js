@@ -40,9 +40,9 @@ const CUES = [
   [17.4, 21.0, 'Straight up stands for the *Sun’s direction*.'],
   [21.2, 26.4, 'The run’s angle from vertical is the food’s ~angle from the Sun~.'],
   [26.6, 31.0, 'And the *longer* the waggle lasts, the farther the food.'],
-  [31.2, 36.4, 'By von Frisch’s estimate, each second of waggling means roughly *a kilometre*.'],
+  [31.2, 36.4, 'Biologist Karl von Frisch estimated each second of waggling means roughly *a kilometre*.'],
   [36.6, 42.0, 'Bees inside for a long time even shift the angle as the ~Sun moves~.'],
-  [42.2, 47.1, 'Karl von Frisch helped decode the dance and shared the *1973 Nobel Prize*.'],
+  [42.2, 47.1, 'Von Frisch helped decode the dance and shared the *1973 Nobel Prize*.'],
   [47.3, 51.6, 'Up means the Sun, angle means direction, duration means distance.'],
 ];
 const T = { A: [0, 9.8], B: [9.6, 26.6], C: [26.4, 36.6], D: [36.4, 42.2], E: [42.0, 52] };

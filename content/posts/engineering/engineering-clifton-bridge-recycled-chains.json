@@ -13,7 +13,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "How long is the bridge's main span, in metres?",
+      "question": "How long is the main span of the Clifton bridge over Bristol's Avon Gorge, in metres?",
       "min": 0,
       "max": 500,
       "step": 1,
@@ -35,7 +35,7 @@
       "events": [
         {
           "when": "1753",
-          "text": "Vick leaves £1,000 for a bridge"
+          "text": "Merchant William Vick leaves £1,000 for a bridge"
         },
         {
           "when": "1831",

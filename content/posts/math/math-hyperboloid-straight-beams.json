@@ -18,7 +18,7 @@
     },
     {
       "type": "estimate",
-      "question": "How tall was Shukhov's first design for the Moscow radio tower, in metres?",
+      "question": "How tall was engineer Vladimir Shukhov's first design for the Moscow radio tower, in metres?",
       "min": 0,
       "max": 600,
       "step": 10,

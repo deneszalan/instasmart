@@ -8,13 +8,13 @@
   "slides": [
     {
       "type": "spectrum",
-      "heading": "358 years from a margin note to a proof",
+      "heading": "358 years to prove aⁿ + bⁿ = cⁿ has no positive whole-number solutions for n > 2",
       "min": 1600,
       "max": 2000,
       "format": "year",
       "marks": [
         {
-          "label": "Fermat’s margin note",
+          "label": "Pierre de Fermat’s note",
           "value": 1637,
           "emphasis": true
         },
@@ -40,7 +40,7 @@
     },
     {
       "type": "quiz",
-      "question": "Why do most experts doubt that Fermat really had a proof?",
+      "question": "Fermat wrote that he had a marvellous proof, too big for the margin. Why do most experts doubt he really had one?",
       "options": [
         "Fermat never studied number theory",
         "Wiles’s proof needed 20th-century tools",

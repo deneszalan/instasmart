@@ -10,7 +10,7 @@
       "type": "image",
       "src": "wing.svg",
       "alt": "A wing cross-section with one streamline passing over it and one under it. A marked parcel of air on the upper streamline is far ahead of the parcel on the lower one. An arrow behind the wing shows the flow turned downward and an arrow above the wing points up, labelled lift.",
-      "caption": "The upper parcel wins the race, and the air leaves heading down.",
+      "caption": "Two parcels of air split at the wing’s front edge. The upper one wins the race to the back, and the air leaves heading down.",
       "fit": "contain"
     },
     {

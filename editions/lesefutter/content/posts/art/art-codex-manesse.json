@@ -32,7 +32,7 @@
     },
     {
       "type": "estimate",
-      "question": "1888 bekam Paris für den Codex alte Handschriften zurück, die Diebe gestohlen hatten. Wie viele?",
+      "question": "1888 bekam Paris für den Codex Manesse alte Handschriften zurück, die Diebe gestohlen hatten. Wie viele?",
       "min": 0,
       "max": 300,
       "step": 1,

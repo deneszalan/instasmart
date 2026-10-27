@@ -30,7 +30,7 @@
     },
     {
       "type": "place",
-      "question": "When did Banach and Tarski publish the proof that one ball can become two?",
+      "question": "When did mathematicians Stefan Banach and Alfred Tarski publish the proof that one ball can become two?",
       "min": 1890,
       "max": 1960,
       "step": 1,

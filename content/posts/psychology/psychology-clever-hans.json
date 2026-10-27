@@ -36,7 +36,7 @@
         }
       ],
       "unit": "%",
-      "note": "Pfungst, 1907: 50 of 56 trials vs 2 of 35, with a questioner who knew the answer"
+      "note": "Psychologist Oskar Pfungst, 1907: 50 of 56 trials vs 2 of 35, with a questioner who knew the answer"
     },
     {
       "type": "flow",
@@ -83,7 +83,7 @@
         },
         {
           "when": "1909",
-          "text": "Von Osten, who never accepted the findings, dies; Hans is sold on"
+          "text": "Hans’s owner, Wilhelm von Osten, who never accepted the findings, dies; Hans is sold on"
         }
       ]
     },

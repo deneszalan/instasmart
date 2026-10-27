@@ -13,9 +13,9 @@
   "slides": [
     {
       "type": "reveal",
-      "prompt": "Crookes stumbled on the effect while doing ordinary lab work. What was he doing?",
+      "prompt": "William Crookes, who invented the light mill in 1873, stumbled on its effect while doing ordinary lab work. What was he doing?",
       "answer": "Weighing samples in a partial vacuum",
-      "detail": "He worked in a partly evacuated chamber to cut out air currents, and noticed that sunlight falling on his balance upset the weighings. Chasing that led him to the radiometer."
+      "detail": "He worked in a partly evacuated chamber to cut out air currents, and noticed that sunlight falling on his balance upset the weighings. Chasing that led him to the light mill."
     },
     {
       "type": "compare",

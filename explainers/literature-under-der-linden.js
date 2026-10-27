@@ -62,7 +62,7 @@ const LINES = [
 // ---------- captions: each one is a step of the clip ----------
 // *…* = an old form (italic, sepia), ~…~ = a modern word (lapis blue).
 const CUES = [
-  [0.5, 4.3, 'Ein Liebeslied, rund ~800 Jahre~ alt.'],
+  [0.5, 4.3, 'Ein Liebeslied von Walther von der Vogelweide, rund ~800 Jahre~ alt.'],
   [4.4, 8.6, 'Das ist *Mittelhochdeutsch.* | Wie viel verstehst du schon?'],
   [8.7, 11.7, 'Wir übersetzen die Strophe ~Zeile für Zeile.~'],
   [11.8, 15.6, '*under* wird ~unter.~ Nomen schreibt man heute groß: ~Linde.~'],

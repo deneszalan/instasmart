@@ -13,7 +13,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "How hot are the gases when they emerge from the cracks?",
+      "question": "Java’s Kawah Ijen volcano burns sulfur-rich gas. How hot is the gas as it emerges from cracks in its crater?",
       "min": 0,
       "max": 1500,
       "step": 10,

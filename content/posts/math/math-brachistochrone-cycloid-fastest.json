@@ -67,7 +67,7 @@
         "It depends on its size"
       ],
       "answer": 2,
-      "explanation": "The brachistochrone doesn’t depend on the ball’s mass or on the strength of gravity. Stronger gravity makes every ball faster, but the same curve still wins."
+      "explanation": "The fastest curve, the brachistochrone, doesn’t depend on the ball’s mass or on the strength of gravity. Stronger gravity makes every ball faster, but the same curve still wins."
     }
   ],
   "tags": [

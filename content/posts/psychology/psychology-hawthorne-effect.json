@@ -23,9 +23,9 @@
       "type": "timeline",
       "heading": "From factory floor to textbook",
       "events": [
-        { "when": "1924", "text": "Lighting experiments begin; output rises in both rooms" },
+        { "when": "1924", "text": "Lighting experiments begin; output rises in both test and control rooms" },
         { "when": "1927", "text": "Six women assemble relays under changing breaks and hours" },
-        { "when": "2011", "text": "Levitt and List re-analyse the lighting data: only slight evidence" }
+        { "when": "2011", "text": "Economists Steven Levitt and John List re-analyse the lighting data: only slight evidence" }
       ]
     },
     {

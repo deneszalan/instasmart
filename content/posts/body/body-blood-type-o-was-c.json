@@ -13,7 +13,7 @@
   "slides": [
     {
       "type": "reveal",
-      "prompt": "Landsteiner was not sure why one person's serum clumped another person's red cells. What did he wonder?",
+      "prompt": "Austrian doctor Karl Landsteiner was not sure why one person's serum clumped another person's red cells. What did he wonder?",
       "answer": "Inborn differences, or damage from bacteria?",
       "detail": "He wrote that it 'remains to be seen' which was true. The answer turned out to be inborn differences: the blood groups."
     },
@@ -25,7 +25,7 @@
       "format": "year",
       "marks": [
         { "label": "A, B and C", "value": 1901, "emphasis": true },
-        { "label": "Janský's I to IV", "value": 1907 },
+        { "label": "Jan Janský's I to IV", "value": 1907 },
         { "label": "0 and AB", "value": 1910 },
         { "label": "Landsteiner adopts O", "value": 1927 }
       ],

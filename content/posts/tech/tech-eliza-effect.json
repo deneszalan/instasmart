@@ -44,7 +44,7 @@
     },
     {
       "type": "place",
-      "question": "When did Weizenbaum publish the paper describing ELIZA?",
+      "question": "When did MIT’s Joseph Weizenbaum publish the paper describing ELIZA, his chatbot?",
       "min": 1940,
       "max": 2000,
       "step": 1,

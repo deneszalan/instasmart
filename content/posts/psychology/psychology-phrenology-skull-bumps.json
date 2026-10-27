@@ -13,7 +13,7 @@
   "slides": [
     {
       "type": "flow",
-      "heading": "Gall’s chain of reasoning",
+      "heading": "German physician Franz Joseph Gall’s reasoning",
       "steps": [
         { "icon": "🧠", "label": "The brain is the organ of the mind" },
         { "icon": "🧩", "label": "It is made of separate mental organs" },

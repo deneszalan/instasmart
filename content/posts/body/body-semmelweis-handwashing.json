@@ -2,13 +2,13 @@
   "$schema": "../../schema/post.schema.json",
   "id": "body-semmelweis-handwashing",
   "field": "body",
-  "title": "In 1847, hand-washing cut maternity ward deaths from 18% to under 2%",
+  "title": "In 1847, hand-washing cut deaths in a Vienna maternity ward from 18% to under 2%",
   "emoji": "🧼",
   "body": "In Vienna, Ignaz Semmelweis noticed that the maternity clinic run by doctors and medical students lost about 10% of mothers to childbed fever; the midwives’ clinic lost under 4%. In 1847 his friend Jakob Kolletschka died after a scalpel nick during an autopsy. Semmelweis reasoned that **cadaverous particles** travelled from the autopsy room on doctors’ hands, and in mid-May ordered hand-washing in chlorinated lime. The death rate fell from 18.3% in April to 2.2% in June and 1.2% in July. Colleagues rejected the idea; he died in an asylum in 1865.",
   "slides": [
     {
       "type": "estimate",
-      "question": "In April 1847, before hand-washing began, what share of mothers in the First Clinic died?",
+      "question": "In April 1847, before Ignaz Semmelweis ordered hand-washing, what share of mothers died in Vienna’s doctors’ clinic?",
       "min": 0,
       "max": 40,
       "step": 0.1,
@@ -28,7 +28,7 @@
       "type": "image",
       "src": "semmelweis.svg",
       "alt": "Bar chart of maternal deaths in Vienna’s First Clinic in 1847: 18.3% in April, then after chlorinated-lime hand-washing began in mid-May, 2.2% in June, 1.2% in July and 1.9% in August.",
-      "caption": "Deaths of mothers in the First Clinic in 1847, before and after hand-washing began.",
+      "caption": "Deaths of mothers in the First Clinic, the doctors’ clinic of Vienna General Hospital, in 1847, before and after hand-washing began.",
       "fit": "contain"
     },
     {
@@ -49,15 +49,15 @@
       "events": [
         {
           "when": "May 1847",
-          "text": "Chlorinated lime hand-washing begins; deaths plunge"
+          "text": "Doctor Ignaz Semmelweis orders hand-washing in chlorinated lime; deaths plunge"
         },
         {
           "when": "1861",
-          "text": "Publishes his book on childbed fever; the profession stays unconvinced"
+          "text": "Semmelweis publishes his book on childbed fever; the profession stays unconvinced"
         },
         {
           "when": "1865",
-          "text": "Committed to an asylum by colleagues; dies 14 days later"
+          "text": "Colleagues commit him to an asylum; he dies 14 days later"
         }
       ]
     }

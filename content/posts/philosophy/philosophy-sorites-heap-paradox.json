@@ -51,7 +51,7 @@
     },
     {
       "type": "quiz",
-      "question": "What is the root of the sorites paradox?",
+      "question": "What is the root of the sorites, or heap, paradox?",
       "options": [
         "Infinite sets",
         "Vague words with no sharp edge",

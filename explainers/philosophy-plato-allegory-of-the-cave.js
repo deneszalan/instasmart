@@ -63,7 +63,7 @@ function rng(seed) {
 const T = { A: [0, 7.4], B: [6.3, 55] };
 const CUES = [
   [0.5, 4.3, 'What if *shadows* were all you had ever seen?'],
-  [4.4, 10.0, 'In Plato’s ~Republic~, Socrates asks Glaucon to picture prisoners chained since childhood, facing a wall.'],
+  [4.4, 10.0, 'In Plato’s ~Republic~, Socrates asks Plato’s brother Glaucon to picture chained prisoners facing a wall.'],
   [10.1, 15.1, 'Behind them burns a *fire*. People walk behind a low wall, carrying objects.'],
   [15.2, 20.4, 'Only the objects’ *shadows* reach the wall, and the prisoners take them for reality.'],
   [20.5, 25.2, 'Then one is freed. He turns, and the *firelight* hurts his eyes.'],

@@ -9,12 +9,12 @@
     {
       "type": "stat",
       "value": "~50 μg",
-      "label": "by which the prototype seems to have drifted from its copies in a century",
+      "label": "by which the cylinder seems to have drifted from its copies in a century",
       "text": "A tiny amount, but with the kilogram tied to one object there was no way to tell which cylinder had changed."
     },
     {
       "type": "fill",
-      "question": "Le Grand K is a platinum–iridium alloy. Out of 10 parts, how many are platinum?",
+      "question": "The cylinder, nicknamed Le Grand K, is a platinum–iridium alloy. Out of 10 parts, how many are platinum?",
       "icon": "⚪",
       "total": 10,
       "answer": 9,
@@ -26,7 +26,7 @@
       "style": "bullets",
       "items": [
         "90% platinum, 10% iridium, about 39 mm tall and wide",
-        "Kept under nested bell jars in a basement vault at the BIPM in Saint-Cloud",
+        "Kept under nested bell jars in a vault of the International Bureau of Weights and Measures, Saint-Cloud",
         "Three keys, held separately, to open the vault",
         "Compared with its copies only in 1889, 1948 and 1989"
       ]

@@ -16,7 +16,7 @@
       "src": "hook-on.mp4",
       "poster": "hook-on.jpg",
       "alt": "Black-and-white film from a camera on the airship looking down: a biplane flies just below, edges up until a hook frame above its wing meets the airship’s trapeze, and then hangs from it.",
-      "caption": "US Navy film, early 1930s, shot from the airship: a biplane edges up beneath the trapeze until its hook catches, and then it hangs from it.",
+      "caption": "US Navy film, early 1930s, shot from the airship: a biplane edges up beneath the airship’s hanging trapeze until its hook catches, and then it hangs from it.",
       "credit": "US Navy · Public domain · excerpt",
       "href": "https://archive.org/details/NPC-1984",
       "music": "“Royal Coupling” Kevin MacLeod (incompetech.com) · CC BY 4.0",
@@ -35,7 +35,7 @@
     },
     {
       "type": "chart",
-      "heading": "Planes the airships could carry",
+      "heading": "Planes the airships Akron and Macon could carry",
       "items": [
         { "label": "Hangar’s design maximum", "value": 5 },
         { "label": "Akron, limited by girders", "value": 3 },
@@ -45,7 +45,7 @@
     },
     {
       "type": "reveal",
-      "prompt": "For long flights over the sea, the Sparrowhawks gave up something most planes can’t do without. What?",
+      "prompt": "For long flights over the sea, the airships’ Sparrowhawk biplanes gave up something most planes can’t do without. What?",
       "answer": "Their landing wheels",
       "detail": "Their landing gear was removed and replaced with a 30-gallon fuel tank, to stretch their range on long scouting flights over the sea."
     },

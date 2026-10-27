@@ -64,7 +64,7 @@ const CUES = [
   [9.2, 13.6, 'The country has two parts: the ~Federation~ and ^Republika Srpska^.'],
   [13.8, 18.2, 'The ~Federation~ elects a *Bosniak* and a *Croat* member: each voter picks one ballot.'],
   [18.4, 23.6, '^Republika Srpska^ elects the *Serb* member. In each race, the most votes wins.'],
-  [23.8, 28.2, 'The winners on 24 October, not yet final: Bećirović, Filipović and Cvijanović.'],
+  [23.8, 28.2, 'Winners on 24 October, not yet final: Denis Bećirović, Darijana Filipović, Željka Cvijanović.'],
   [28.4, 33.0, `Turnout was *${Math.round(TURNOUT)}%*, the lowest ever for a Bosnian general election.`],
   [33.2, 37.6, 'The three share one presidency, and the chair *rotates every eight months*.'],
   [37.8, 42.2, `In a four-year term that’s *${TURNS} turns*: each member chairs ${TURNS / 3 === 2 ? 'twice' : TURNS / 3 + ' times'}.`],

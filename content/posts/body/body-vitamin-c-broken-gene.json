@@ -16,7 +16,7 @@
       "heading": "How our vitamin C factory broke",
       "steps": [
         { "icon": "🐒", "label": "Early primates split into two groups" },
-        { "icon": "🧬", "label": "In one group, the GULO gene mutates" },
+        { "icon": "🧬", "label": "One group’s gene for the GULO enzyme mutates" },
         { "icon": "🚫", "label": "Vitamin C's final production step fails" },
         { "icon": "🍊", "label": "Monkeys, apes and humans need it in food" }
       ]

@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "Asked how fast the cars were going when they ‘smashed into’ each other, what did people estimate?",
+      "question": "After a film of a car crash, how fast did people say the cars went when they ‘smashed into’ each other?",
       "min": 10,
       "max": 80,
       "step": 1,

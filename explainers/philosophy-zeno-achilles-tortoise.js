@@ -67,7 +67,7 @@ const CUES = [
   [0.4, 4.3, '*Achilles*, the fastest runner, races a ~tortoise~.'],
   [4.4, 7.8, 'The ~tortoise~ gets a 100 metre head start.'],
   [7.9, 11.6, 'Say Achilles runs *10 times* as fast as it.'],
-  [11.7, 15.6, 'Zeno argued that he can *never* catch it. Why?'],
+  [11.7, 15.6, 'The Greek philosopher Zeno argued that he can *never* catch it. Why?'],
   [15.7, 19.8, 'First, Achilles must reach the spot where the tortoise *was*.'],
   [19.9, 23.6, 'By then, it has crept ~10 metres~ further on.'],
   [23.7, 28.0, 'He runs those 10 metres. It has moved ~1 metre~ on.'],

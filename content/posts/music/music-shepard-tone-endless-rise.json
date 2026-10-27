@@ -43,7 +43,7 @@
     },
     {
       "type": "reveal",
-      "prompt": "A 1996 video game used a Shepard scale to make a staircase feel endless. Which one?",
+      "prompt": "A 1996 video game used this illusion, a Shepard scale, to make a staircase feel endless. Which one?",
       "answer": "Super Mario 64: the never-ending stairs in Peach’s Castle",
       "detail": "The looping music matches the looping stairs, which go on for ever until the player has collected 70 stars."
     },
@@ -51,8 +51,8 @@
       "type": "order",
       "heading": "Oldest first",
       "items": [
-        "Shepard describes the illusion",
-        "Risset makes a gliding version",
+        "Roger Shepard describes the illusion",
+        "Jean-Claude Risset’s gliding version",
         "Super Mario 64’s endless stairs",
         "Dunkirk’s ever-rising score"
       ],

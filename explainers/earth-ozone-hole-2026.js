@@ -74,7 +74,7 @@ const CUES = [
   [9.2, 13.6, 'High in the stratosphere, ozone absorbs much of the Sun’s harmful *ultraviolet* light.'],
   [13.8, 18.2, 'Each winter a ring of strong winds, the *polar vortex*, walls off the air over Antarctica.'],
   [18.4, 22.8, 'In the dark it gets colder than ~−78 °C~, and thin *polar stratospheric clouds* form.'],
-  [23.0, 27.4, 'On those clouds, chlorine from *CFCs* breaks out of harmless compounds, ready to react.'],
+  [23.0, 27.4, 'On those clouds, chlorine from *CFCs*, old fridge and spray-can gases, breaks free to react.'],
   [27.6, 32.0, 'When the *Sun* returns in spring, its light sets the chlorine to work on the ozone.'],
   [32.2, 36.6, 'One chlorine atom can destroy *many thousands* of ozone molecules.'],
   [36.8, 41.2, 'Inside the hole, ozone can fall to about ~a third~ of its level in the early 1970s.'],

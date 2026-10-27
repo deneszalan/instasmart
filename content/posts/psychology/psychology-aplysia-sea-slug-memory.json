@@ -14,7 +14,7 @@
     {
       "type": "stat",
       "value": "20,000",
-      "label": "neurons in a sea hare’s nervous system",
+      "label": "neurons in the nervous system of a sea hare, the sea slug Aplysia",
       "text": "Some cell bodies reach about 1 mm across, large enough to identify the same neuron in every animal."
     },
     {
@@ -50,7 +50,7 @@
     {
       "type": "text",
       "heading": "Why a slug?",
-      "text": "Kandel wanted an animal simple enough to watch learning happen synapse by synapse, and bet that what he found would apply to humans too. [Eric Kandel](https://en.wikipedia.org/wiki/Eric_Kandel) was born in Vienna in 1929 and shared the 2000 Nobel Prize with Arvid Carlsson and Paul Greengard."
+      "text": "[Eric Kandel](https://en.wikipedia.org/wiki/Eric_Kandel) wanted an animal simple enough to watch learning happen synapse by synapse, and bet that what he found would apply to humans too. Born in Vienna in 1929, he shared the 2000 Nobel Prize with Arvid Carlsson and Paul Greengard."
     },
     {
       "type": "quiz",

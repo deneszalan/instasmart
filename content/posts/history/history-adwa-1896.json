@@ -8,10 +8,10 @@
   "slides": [
     {
       "type": "compare",
-      "heading": "One treaty, two texts",
+      "heading": "The 1889 Treaty of Wuchale: two texts",
       "left": {
         "label": "Amharic version",
-        "text": "The Emperor could use the good offices of the Kingdom of Italy in dealing with other powers, if he wished."
+        "text": "Ethiopia’s Emperor could use the good offices of the Kingdom of Italy in dealing with other powers, if he wished."
       },
       "right": {
         "label": "Italian version",
@@ -22,7 +22,7 @@
       "type": "stat",
       "value": "5 to 1",
       "label": "the Ethiopian army’s estimated advantage in numbers at Adwa",
-      "text": "Estimates for Menelik’s force range from 73,000 to over 100,000. Empress Taytu Betul marched with it and urged the 25,000-strong reserve into the fight."
+      "text": "Estimates for Emperor Menelik II’s force range from 73,000 to over 100,000. Empress Taytu Betul marched with it and urged the 25,000-strong reserve into the fight."
     },
     {
       "type": "chart",

@@ -26,11 +26,11 @@
     {
       "type": "text",
       "heading": "Impossible in two dimensions",
-      "text": "A flat convex curve always has at least four points where its curvature peaks or dips, so a 2D version can't exist. Most people expected solid shapes to need four balance points too. Arnold suspected that in 3D the number could be smaller."
+      "text": "A flat convex curve always has at least four points where its curvature peaks or dips, so a 2D version can't exist. Most people expected solid shapes to need four balance points too. Mathematician Vladimir Arnold suspected that in 3D the number could be smaller."
     },
     {
       "type": "reveal",
-      "prompt": "On their honeymoon, Domokos and his wife tested 2,000 pebbles from beaches on Rhodes. How many behaved like a gömböc?",
+      "prompt": "On their honeymoon, gömböc co-discoverer Gábor Domokos and his wife tested 2,000 pebbles on Rhodes. How many behaved like one?",
       "answer": "Not a single one",
       "detail": "The shape is extremely rare and delicate: change it even slightly and it stops working."
     },
@@ -70,7 +70,7 @@
         },
         {
           "when": "2006",
-          "text": "Domokos and Várkonyi prove gömböcs exist"
+          "text": "Domokos and Péter Várkonyi prove gömböcs exist"
         },
         {
           "when": "2007",

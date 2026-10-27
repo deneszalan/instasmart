@@ -50,7 +50,7 @@
     },
     {
       "type": "quiz",
-      "question": "Where does the species name cupido come from?",
+      "question": "The prairie chicken’s species name is cupido. Where does it come from?",
       "options": ["Feathers like Cupid's wings", "Its heart-shaped air sacs", "Its loud, love-song call", "The month it breeds in"],
       "answer": 0,
       "explanation": "The long feathers the male raises during his display were thought to look like the wings of Cupid, the Roman god of love."

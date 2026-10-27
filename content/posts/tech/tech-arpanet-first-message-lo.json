@@ -12,7 +12,7 @@
       "steps": [
         {
           "icon": "⌨️",
-          "label": "Kline at UCLA types L: it gets through"
+          "label": "UCLA student Charley Kline types L"
         },
         {
           "icon": "📡",
@@ -20,7 +20,7 @@
         },
         {
           "icon": "💥",
-          "label": "The SRI computer crashes"
+          "label": "Stanford Research Institute computer crashes"
         },
         {
           "icon": "⏱️",
@@ -30,7 +30,7 @@
     },
     {
       "type": "estimate",
-      "question": "How many sites did ARPANET connect by the end of 1969?",
+      "question": "How many sites did ARPANET, the network that grew into the internet, connect by the end of 1969?",
       "min": 2,
       "max": 50,
       "step": 1,

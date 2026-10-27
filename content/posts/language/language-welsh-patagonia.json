@@ -13,9 +13,9 @@
   "slides": [
     {
       "type": "flow",
-      "heading": "How Y Wladfa began",
+      "heading": "How Y Wladfa, the Welsh colony in Patagonia, began",
       "steps": [
-        { "icon": "💡", "label": "Jones plans a colony beyond English reach" },
+        { "icon": "💡", "label": "Michael D. Jones plans a Welsh colony" },
         { "icon": "⛵", "label": "153 settlers sail on the Mimosa, 1865" },
         { "icon": "🏜️", "label": "A hard start on the dry Patagonian coast" },
         { "icon": "🤝", "label": "Tehuelche trade meat for Welsh bread" },

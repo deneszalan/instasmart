@@ -13,7 +13,7 @@
   "slides": [
     {
       "type": "reveal",
-      "prompt": "When Abbott woke up after the operation, what did he reportedly say?",
+      "prompt": "In Boston in 1846, dentist William Morton gave printer Edward Gilbert Abbott ether before surgery. What did Abbott say on waking?",
       "answer": "\"Feels as if my neck's been scratched\"",
       "detail": "The operation to remove part of a tumour from his neck had been painless."
     },
@@ -26,7 +26,7 @@
       "type": "image",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Ether_Day%2C_or_The_First_Operation_with_Ether_by_Robert_C._Hinckley.jpg/960px-Ether_Day%2C_or_The_First_Operation_with_Ether_by_Robert_C._Hinckley.jpg",
       "alt": "A painting of a crowd of men in dark 19th-century suits gathered around a patient lying unconscious in a chair in an operating theatre",
-      "caption": "Robert C. Hinckley's painting Ether Day, or The First Operation with Ether, recreating the scene in the dome.",
+      "caption": "Robert C. Hinckley's painting Ether Day, or The First Operation with Ether, recreating the scene in the operating theatre now called the Ether Dome.",
       "fit": "cover",
       "credit": "Robert C. Hinckley · Public domain"
     },

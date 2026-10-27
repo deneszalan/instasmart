@@ -2,7 +2,7 @@
   "$schema": "../../schema/post.schema.json",
   "id": "engineering-smeaton-oak-tree-lighthouse",
   "field": "engineering",
-  "title": "Smeaton's lighthouse copied the shape of an oak tree and lit its reef for 122 years",
+  "title": "John Smeaton's lighthouse copied the shape of an oak tree and lit its reef for 122 years",
   "emoji": "🗼",
   "cover": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Smeaton%27s_Tower%2C_Plymouth_Hoe_-_geograph.org.uk_-_7529420.jpg/960px-Smeaton%27s_Tower%2C_Plymouth_Hoe_-_geograph.org.uk_-_7529420.jpg",
@@ -15,7 +15,7 @@
       "type": "image",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Phare-d-Eddystone-Rocks.jpg/960px-Phare-d-Eddystone-Rocks.jpg",
       "alt": "A tall grey granite lighthouse rising from the sea, with a short, dark stone stump topped by a thin mast beside it.",
-      "caption": "Today's Eddystone lighthouse, with the stump of Smeaton's tower beside it. Its upper part was taken down and rebuilt on Plymouth Hoe.",
+      "caption": "Today's Eddystone lighthouse, on a reef off Plymouth, with the stump of Smeaton's tower beside it. Its upper part was taken down and rebuilt on Plymouth Hoe.",
       "fit": "cover",
       "credit": "Pline · Public domain"
     },

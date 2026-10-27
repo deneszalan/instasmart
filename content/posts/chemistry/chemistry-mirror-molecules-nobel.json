@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "A catalyst is 75% right-handed and 25% left. In Kagan’s example, how right-handed does the reaction behave?",
+      "question": "A catalyst is 75% right-handed and 25% left. In Henri Kagan’s example, how right-handed does the reaction behave?",
       "min": 50,
       "max": 100,
       "step": 1,

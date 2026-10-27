@@ -40,7 +40,7 @@
     },
     {
       "type": "quiz",
-      "question": "How does the brain work out a pitch whose fundamental is missing?",
+      "question": "A note’s lowest frequency is its fundamental. How does the brain work out a pitch whose fundamental is missing?",
       "options": [
         "From the spacing of the harmonics",
         "By remembering the singer’s voice",

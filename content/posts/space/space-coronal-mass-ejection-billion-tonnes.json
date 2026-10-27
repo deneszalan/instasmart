@@ -24,7 +24,7 @@
     },
     {
       "type": "estimate",
-      "question": "Near the peak of its 11-year cycle, about how many CMEs does the Sun launch per day?",
+      "question": "Near the peak of its 11-year cycle, about how many coronal mass ejections (CMEs) does the Sun launch a day?",
       "min": 0,
       "max": 10,
       "step": 0.5,

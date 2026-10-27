@@ -68,9 +68,9 @@ const signed = (s) => (s.startsWith('-') ? `−${s.slice(1)}` : `+${s}`);
 
 // ---------- captions; each lasts 0.3 s per word + 1 s at least ----------
 const LINES = [
-  ['Around 240 BC, Eratosthenes worked out the size of the *whole Earth*.', 0.1],
+  ['Around 240 BC, the Greek scholar Eratosthenes worked out the size of the *whole Earth*.', -0.8],
   ['He needed only ~shadows~, a distance and some geometry.', 0.2],
-  ['At midsummer noon, a stick at *Syene* cast ~no shadow~.', 0.3],
+  ['At midsummer noon, a stick at *Syene*, today’s Aswan in Egypt, cast ~no shadow~.', -0.9],
   ['At *Alexandria*, to the north, the Sun stood about ~7.2°~ from overhead.', 0.1],
   ['That’s ~1/50~ of a full circle.', 0.4],
   ['The Sun is so far away that its rays arrive almost *parallel*.', 0.2],

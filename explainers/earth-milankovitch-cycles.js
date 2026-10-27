@@ -55,7 +55,7 @@ const CUES = [
   [36.7, 42.4, 'With the orbit turning too, closest approach drifts through the seasons in about *21,000 years*.'],
   [42.7, 47.9, 'Add them up, and *summer sunshine* in the far north rises and falls.'],
   [48.0, 53.2, 'When northern summers are weak, winter snow survives and ~ice~ can build up.'],
-  [53.5, 57.2, 'Milanković expected ice ages every *41,000 years*.'],
+  [53.5, 57.2, 'Serbian scientist Milutin Milanković expected ice ages every *41,000 years*.'],
   [57.3, 62.8, 'For the last million years: about every ~100,000~. Why is still debated.'],
 ];
 

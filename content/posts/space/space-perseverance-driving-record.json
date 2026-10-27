@@ -91,7 +91,7 @@
     {
       "type": "explore",
       "lab": "perseverance-driving-record",
-      "prompt": "Drive the rover to the waypoint. How far ahead must AutoNav look to take the shortest route rather than a detour?",
+      "prompt": "Drive the rover to the waypoint. How far ahead must its self-driving AutoNav look to take the shortest route rather than a detour?",
       "takeaway": "About 70 m. Looking 10 m ahead, it drives into the dead end and backs out: 341 m instead of 239. Without AutoNav it stops at the first rock and waits for Earth. A simplified map, but the same idea."
     },
     {

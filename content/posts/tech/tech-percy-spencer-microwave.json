@@ -14,7 +14,7 @@
       "type": "comic",
       "src": "panel-1.jpg",
       "alt": "A 1940s laboratory with a copper magnetron on the bench. Percy Spencer, bald, in round glasses and a suit, stares in shock at the brown goo dripping from his jacket pocket.",
-      "caption": "Raytheon, Massachusetts, 1945. Percy Spencer is testing magnetrons, the tubes that power radar, when his snack bar melts.",
+      "caption": "Waltham, Massachusetts, 1945. Raytheon engineer Percy Spencer is testing magnetrons, the tubes that power radar, when his snack bar melts.",
       "bubbles": [
         {
           "text": "My peanut bar!",
@@ -95,7 +95,7 @@
     },
     {
       "type": "quiz",
-      "question": "About how much did the first Radarange weigh?",
+      "question": "In 1947 Raytheon sold its first microwave oven, the Radarange. About how much did it weigh?",
       "options": [
         "About 7.5 lb (3.4 kg)",
         "About 75 lb (34 kg)",

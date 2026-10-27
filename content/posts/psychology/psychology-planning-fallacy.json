@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "The students predicted 33.9 days on average. How long did finishing actually take?",
+      "question": "Students in a 1994 study predicted 33.9 days on average to finish their thesis. How long did it actually take?",
       "min": 20,
       "max": 100,
       "step": 0.5,

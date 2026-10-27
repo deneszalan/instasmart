@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "Mendel counted 7,324 seeds from his round × wrinkled hybrids. How many were wrinkled?",
+      "question": "Friar Gregor Mendel counted 7,324 seeds from his round × wrinkled pea hybrids. How many were wrinkled?",
       "min": 0,
       "max": 4000,
       "step": 10,
@@ -115,7 +115,7 @@
         },
         {
           "when": "1900",
-          "text": "De Vries and Correns rediscover it"
+          "text": "Hugo de Vries and Carl Correns rediscover it"
         }
       ]
     },

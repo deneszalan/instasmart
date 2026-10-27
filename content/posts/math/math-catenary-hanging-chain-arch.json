@@ -28,7 +28,7 @@
       },
       "right": {
         "label": "Catenary",
-        "text": "The curve of a chain carrying only its own weight. Its equation uses the hyperbolic cosine: y = a cosh(x/a). Jungius proved it is a different curve."
+        "text": "The curve of a chain carrying only its own weight. Its equation uses the hyperbolic cosine: y = a cosh(x/a). Joachim Jungius proved it is a different curve."
       }
     },
     {
@@ -72,7 +72,7 @@
         },
         {
           "when": "1675",
-          "text": "Hooke hides the arch principle in an anagram"
+          "text": "Robert Hooke hides the arch principle in an anagram"
         },
         {
           "when": "1691",

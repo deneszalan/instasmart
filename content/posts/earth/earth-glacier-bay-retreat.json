@@ -26,7 +26,7 @@
       "type": "timeline",
       "heading": "The vanishing glacier",
       "events": [
-        { "when": "1794", "text": "Vancouver’s expedition finds Icy Strait choked with ice" },
+        { "when": "1794", "text": "George Vancouver’s expedition finds Icy Strait, at the bay’s mouth, choked with ice" },
         { "when": "1879", "text": "John Muir finds the ice about 77 km up the bay" },
         { "when": "1916", "text": "The Grand Pacific Glacier is about 105 km from the bay’s mouth" }
       ]

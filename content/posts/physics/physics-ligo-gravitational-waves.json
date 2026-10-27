@@ -13,7 +13,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "The detectors are 3,002 km apart. How many milliseconds after Livingston did Hanford see the wave?",
+      "question": "The wave reached LIGO’s two US detectors, 3,002 km apart. How many milliseconds after Livingston did Hanford see it?",
       "min": 0,
       "max": 50,
       "step": 1,
@@ -72,7 +72,7 @@
       "type": "image",
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Northern_leg_of_LIGO_interferometer_on_Hanford_Reservation.JPG/960px-Northern_leg_of_LIGO_interferometer_on_Hanford_Reservation.JPG",
       "alt": "The northern arm of LIGO Hanford: a long, low, pale tunnel running straight to the horizon beside a road across dry grassland.",
-      "caption": "The northern arm of the Hanford detector. Each LIGO observatory is an L-shaped vacuum system 4 km long on each side.",
+      "caption": "The northern arm of the Hanford detector. Each LIGO (Laser Interferometer Gravitational-Wave Observatory) site is an L-shaped vacuum system 4 km long on each side.",
       "fit": "cover",
       "credit": "Umptanum · CC BY-SA 3.0"
     },
@@ -99,7 +99,7 @@
         },
         {
           "when": "2017",
-          "text": "Nobel Prize: Weiss, Barish and Thorne"
+          "text": "Nobel Prize: Rainer Weiss, Barry Barish and Kip Thorne"
         }
       ]
     },

@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "place",
-      "question": "How far down does the water plunge in the Denmark Strait cataract?",
+      "question": "How far down does the water plunge in the Denmark Strait cataract, between Greenland and Iceland?",
       "min": 0,
       "max": 4000,
       "step": 50,

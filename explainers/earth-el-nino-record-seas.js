@@ -66,10 +66,10 @@ const CUES = [
   [32.2, 36.6, 'The cold layer sinks deeper in the east, so less cold water reaches the surface.'],
   [36.8, 41.2, 'Rain moves east with it, which can bring floods to Peru and ~drought~ to Indonesia and Australia.'],
   [41.4, 45.8, `This September, the Niño 3.4 patch of ocean averaged *${NINO34.toFixed(2)} °C*, its highest ever.`],
-  [46.0, 50.4, `NOAA found parts of the eastern Pacific more than ~${EAST_ANOM.toFixed(0)} °C~ warmer than normal.`],
+  [46.0, 50.4, `US weather agency NOAA found parts of the eastern Pacific more than ~${EAST_ANOM.toFixed(0)} °C~ warmer than normal.`],
   [50.6, 55.0, 'And El Niño *typically raises* global temperatures.'],
   [55.2, 59.6, 'NOAA expects a *strong to very strong* El Niño to last into early 2027.'],
-  [59.8, 64.2, 'Copernicus expects the run of months above ~1.5 °C~ to continue into 2027 as well.'],
+  [59.8, 64.2, 'Europe’s Copernicus climate service expects months above ~1.5 °C~ to go on into 2027.'],
 ];
 
 // ---------- background ----------

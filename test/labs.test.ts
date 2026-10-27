@@ -90,6 +90,26 @@ import { simulate as optoRun } from '../src/labs/body/optogenetics-nobel';
 import { round as chiralRound, rounds as chiralRounds } from '../src/labs/chemistry/mirror-molecules-nobel';
 import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
 import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
+import { flyby as juiceFlyby, turnAngle as juiceTurn, VINF as JUICE_VINF } from '../src/labs/space/juice-earth-gravity-assist';
+import { heightAfter as swiftHeight, periodAt as swiftPeriod, speedAt as swiftSpeed } from '../src/labs/space/swift-solar-drag-reentry';
+import { holds as positronHolds, REAL_RATIO as POSITRON_RATIO, simulate as positronRun } from '../src/labs/physics/one-positron-quantum-cyclotron';
+import { outcome as uranOutcome } from '../src/labs/chemistry/uranocenium-sandwich';
+import { duels as condorcetDuels, isCycle as condorcetCycle, winner as condorcetWinner } from '../src/labs/math/condorcet-cycle-klein-bottle';
+import { energyRatio, magnitude, moment as quakeMoment, PANAMA_MOMENT, shown as shownMag } from '../src/labs/earth/panama-quake-magnitude-scale';
+import { indexChange, meanChange, totalChange } from '../src/labs/biology/living-planet-index-average';
+import { paired as asoPaired, RNA as HBV_RNA, TARGET_AT as ASO_AT } from '../src/labs/body/bepirovirsen-antisense-hepatitis-b';
+import { bandBalance, glacier, ICE_FACTOR } from '../src/labs/earth/swiss-glaciers-snowline-2026';
+import { inside as coneInside, misses as coneMisses, MISSES as CONE_N, NHC_RADIUS_KM } from '../src/labs/psychology/hurricane-cone-not-storm-size';
+import { bruteForce, G as curveG, multiply as curveMultiply, ORDER as curveOrder, samePoint, searchSeconds, UNIVERSE_SECONDS } from '../src/labs/tech/certificate-key-number-four';
+import { clockCount, measured as leapMeasured } from '../src/labs/tech/leap-seconds-abolished';
+import { NUCLIDES, remaining as nuclideLeft, yearsAt as repositoryYears, yearsUntil } from '../src/labs/engineering/onkalo-nuclear-waste-licence';
+import { agreeing as sapphicAgreeing, fits as sapphicFits, SAPPHIC, SYLLABLES as SAPPHO_SYLLABLES } from '../src/labs/language/anne-carson-sappho-brackets';
+import { AVERAGE as AVERAGE_BASKET, inflationFor } from '../src/labs/economics/us-inflation-basket-weights';
+import { MPS as SWE_MPS, OCT_15 as SWE_OCT_15, REJECT_AT as SWE_REJECT, tally as sweTally } from '../src/labs/politics/sweden-negative-parliamentarism';
+import { ridings as qcRidings, seatsWon as qcSeats } from '../src/labs/politics/quebec-first-past-the-post';
+import { canJoin, canSuspend, ELECT_AT as HRC_ELECT, UN_MEMBERS } from '../src/labs/politics/un-human-rights-council-election';
+import { banned as infBanned, kmAt, rangeClass } from '../src/labs/history/reykjavik-summit-inf-treaty';
+import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgment-three-votes';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -740,5 +760,226 @@ describe('lab maths', () => {
     expect(lineLoss(10).lossMW / lineLoss(100).lossMW).toBeCloseTo(100, 9);
     expect(lineLoss(70).share).toBeGreaterThan(0.01);
     expect(lineLoss(75).share).toBeLessThan(0.01);
+  });
+
+  it('gravity assist: Juice’s 8,640 km flyby turns it by 20°; passing behind Earth adds 3.5 km/s, in front it brakes, closer turns more', () => {
+    expect(JUICE_VINF).toBeCloseTo(11.24, 1);
+    expect(juiceTurn(8640, JUICE_VINF)).toBeCloseTo(20, 6);
+    expect(juiceFlyby(8640, 'behind').gain).toBeCloseTo(3.5, 2);
+    expect(juiceFlyby(8640, 'front').gain).toBeLessThan(0);
+    expect(juiceFlyby(300, 'behind').turn).toBeGreaterThan(juiceFlyby(8640, 'behind').turn);
+    expect(juiceFlyby(300, 'behind').gain).toBeGreaterThan(5);
+    expect(juiceFlyby(40000, 'behind').gain).toBeLessThan(2);
+    expect(Math.abs(juiceFlyby(8100, 'behind').gain - 3.5)).toBeLessThanOrEqual(0.1);
+    expect(Math.abs(juiceFlyby(9300, 'behind').gain - 3.5)).toBeGreaterThan(0.1);
+  });
+
+  it('satellite drag: about 183 m/s of braking takes a 600 km orbit down to 275 km and leaves it 183 m/s faster', () => {
+    expect(swiftSpeed(600)).toBeCloseTo(7.562, 3);
+    expect(swiftPeriod(600)).toBeCloseTo(96.5, 1);
+    expect(swiftHeight(0)).toBeCloseTo(600, 6);
+    expect(swiftHeight(182)).toBeGreaterThan(275);
+    expect(swiftHeight(183)).toBeLessThan(275);
+    expect((swiftSpeed(swiftHeight(150)) - swiftSpeed(600)) * 1000).toBeCloseTo(150, 6);
+  });
+
+  it('Penning trap: with no voltage the positron slides out, too much voltage beats the magnet, and it holds only if ωc² > 2ωz²', () => {
+    expect(positronRun(4, 0).fate).toBe('cap');
+    expect(positronRun(4, 2).fate).toBe('trapped');
+    expect(positronRun(3, 6).fate).toBe('ring');
+    expect(positronRun(0, 2).fate).toBe('ring');
+    expect(positronHolds(4, 2)).toBe(true);
+    expect(positronHolds(3, 6)).toBe(false);
+    for (let wc = 0; wc <= 8; wc += 1) for (let v = 0; v <= 8; v += 1) if (positronRun(wc, v).fate === 'trapped') expect(positronHolds(wc, v)).toBe(true);
+    expect(POSITRON_RATIO).toBeCloseTo(757.3, 1);
+  });
+
+  it('uranocenium: only a borate salt in a calm solvent keeps it; fluoride salts, silver and THF each destroy it', () => {
+    expect(uranOutcome('trityl', 'borate', 'difluorobenzene')).toBe('stable');
+    expect(uranOutcome('ferrocenium', 'borate', 'bromobenzene')).toBe('stable');
+    expect(uranOutcome('trityl', 'pf6', 'difluorobenzene')).toBe('fluoride');
+    expect(uranOutcome('trityl', 'sbf6', 'bromobenzene')).toBe('sbf6');
+    expect(uranOutcome('trityl', 'borate', 'thf')).toBe('solvent');
+    expect(uranOutcome('silver', 'borate', 'difluorobenzene')).toBe('rings');
+    expect(uranOutcome('silver', 'pf6', 'thf')).toBe('rings');
+  });
+
+  it('Condorcet: majorities run in a circle exactly when no group outnumbers the other two; otherwise the biggest group’s favourite wins', () => {
+    expect(condorcetDuels(1, 1, 1)).toEqual({ aliceBob: [2, 1], bobCarol: [2, 1], carolAlice: [2, 1] });
+    expect(condorcetCycle(1, 1, 1)).toBe(true);
+    expect(condorcetCycle(20, 15, 10)).toBe(true);
+    expect(condorcetCycle(30, 10, 10)).toBe(false);
+    expect(condorcetWinner(30, 10, 10)).toBe('Alice');
+    expect(condorcetWinner(5, 30, 10)).toBe('Bob');
+    expect(condorcetCycle(20, 10, 10)).toBe(false);
+    expect(condorcetWinner(20, 10, 10)).toBe(null);
+  });
+
+  it('quake magnitude: the USGS moment gives 7.7; 32 times the moment adds about one step; 100 km × 20 km × 6.4 m makes a 7.7', () => {
+    expect(shownMag(magnitude(PANAMA_MOMENT))).toBe(7.7);
+    expect(magnitude(quakeMoment(40, 20, 4)) - magnitude(quakeMoment(10, 5, 2))).toBeCloseTo(1.0, 1);
+    expect(energyRatio(8, 7.7)).toBeCloseTo(2.82, 2);
+    expect(energyRatio(7.7, 6.6)).toBeCloseTo(44.7, 1);
+    expect(shownMag(magnitude(quakeMoment(100, 20, 6.4)))).toBe(7.7);
+    expect(shownMag(magnitude(quakeMoment(20, 10, 1)))).toBeLessThan(7);
+  });
+
+  it('living planet index: the report’s example averages −18% but loses 2% of animals; a doubling and a halving cancel', () => {
+    expect(meanChange([5, -60, 0])).toBeCloseTo(-18.33, 1);
+    expect(totalChange([5, -60, 0])).toBeCloseTo((-10 / 483) * 100, 6);
+    expect(indexChange([100, -50, 0])).toBeCloseTo(0, 9);
+    expect(indexChange([5, -60, 0])).toBeCloseTo(-25.1, 1);
+    expect(indexChange([20, -90, -90])).toBeLessThan(-50);
+    expect(totalChange([20, -90, -90])).toBeGreaterThan(0);
+  });
+
+  it('antisense: bepirovirsen pairs all 20 letters only at its target in the 70-letter stretch, at most 11 elsewhere', () => {
+    expect(HBV_RNA.length).toBe(70);
+    expect(asoPaired(ASO_AT)).toBe(20);
+    for (let at = 0; at <= HBV_RNA.length - 20; at++) if (at !== ASO_AT) expect(asoPaired(at)).toBeLessThanOrEqual(11);
+  });
+
+  it('glacier budget: a thin snowy winter and a high freezing level lose everywhere; more snow or a cooler summer balances it', () => {
+    expect(glacier(0.75, 4400).allLose).toBe(true);
+    expect(glacier(0.75, 4000).mean).toBeLessThan(-2);
+    expect(glacier(1, 3100).mean).toBeGreaterThan(0);
+    const even = glacier(1, 3300).even!;
+    expect(even).toBeGreaterThan(2700);
+    expect(even).toBeLessThan(2900);
+    // once the snow is gone, the ice melts faster
+    expect(bandBalance(2000, 0, 3000)).toBeCloseTo(-ICE_FACTOR * 0.0028 * 1000, 9);
+  });
+
+  it('hurricane cone: each NHC 2026 circle holds exactly two-thirds of the simulated misses', () => {
+    expect(NHC_RADIUS_KM[24]).toBeCloseTo(72.2, 1);
+    expect(NHC_RADIUS_KM[120]).toBeCloseTo(370.4, 1);
+    for (const h of [24, 72, 120]) {
+      const pts = coneMisses(h);
+      expect(pts.length).toBe(CONE_N);
+      expect(coneInside(pts, NHC_RADIUS_KM[h])).toBe((2 * CONE_N) / 3);
+      expect(coneInside(pts, NHC_RADIUS_KM[h] / 2)).toBeLessThan(CONE_N / 2);
+    }
+  });
+  it('certificate keys: the toy curve has 257 points, k·G repeats only after 257, brute force finds key 4 in 4 tries, and 99 bits outlast the universe', () => {
+    expect(curveOrder).toBe(257);
+    expect(curveMultiply(curveOrder)).toBeNull();
+    expect(samePoint(curveMultiply(1), curveG)).toBe(true);
+    const seen = new Set<string>();
+    for (let k = 1; k < curveOrder; k++) seen.add(String(curveMultiply(k)));
+    expect(seen.size).toBe(256);
+    for (const key of [4, 56, 66, 115, 155, 156, 230, 237]) expect(bruteForce(curveMultiply(key))).toBe(key);
+    expect(searchSeconds(8)).toBeLessThan(1e-9);
+    expect(searchSeconds(98)).toBeLessThan(UNIVERSE_SECONDS);
+    expect(searchSeconds(99)).toBeGreaterThan(UNIVERSE_SECONDS);
+    expect(Math.floor(Math.log10(searchSeconds(384) / (365.25 * 86400))) + 1).toBe(97);
+  });
+
+  it('leap seconds: a clock that repeats 23:59:59 steps back, so a half-second timer across it reads −0.5 s; a smear or no leap second never goes negative', () => {
+    expect(clockCount('repeat', 1.99)).toBeCloseTo(86399.99, 9);
+    expect(clockCount('repeat', 2)).toBeCloseTo(86399, 9);
+    expect(clockCount('repeat', 3)).toBeCloseTo(86400, 9);
+    expect(leapMeasured('repeat', 1.8, 0.5)).toBeCloseTo(-0.5, 9);
+    expect(leapMeasured('repeat', 0.5, 1)).toBeCloseTo(1, 9);
+    expect(leapMeasured('repeat', 1.5, 2)).toBeCloseTo(1, 9);
+    expect(leapMeasured('none', 1.8, 0.5)).toBeCloseTo(0.5, 9);
+    expect(leapMeasured('smear', 1.8, 0.5)).toBeCloseTo((0.5 * 86400) / 86401, 9);
+    for (let s = 0; s <= 3; s += 0.1) for (let l = 0.1; l <= 1.5; l += 0.1) {
+      expect(leapMeasured('smear', s, l)).toBeGreaterThan(0);
+      expect(leapMeasured('none', s, l)).toBeGreaterThan(0);
+    }
+  });
+
+  it('spent fuel: caesium-137 falls below a thousandth after about 300 years (ten half-lives), while 99% of plutonium-239 is still there', () => {
+    const cs = NUCLIDES.find((n) => n.id === 'cs137')!, pu = NUCLIDES.find((n) => n.id === 'pu239')!;
+    expect(nuclideLeft(cs.half, cs.half)).toBeCloseTo(0.5, 9);
+    expect(yearsUntil(cs.half, 1 / 1000)).toBeCloseTo(299.4, 1);
+    expect(nuclideLeft(cs.half, 300)).toBeLessThan(1 / 1000);
+    expect(nuclideLeft(pu.half, 300)).toBeGreaterThan(0.99);
+    expect(repositoryYears(0)).toBeCloseTo(1, 9);
+    expect(repositoryYears(100)).toBeCloseTo(1e6, 3);
+    expect(nuclideLeft(cs.half, repositoryYears(41))).toBeGreaterThan(1 / 1000);
+    expect(nuclideLeft(cs.half, repositoryYears(42))).toBeLessThan(1 / 1000);
+  });
+
+  it('Sapphic line: fragment 31 line 1 scans – u – – – u u – u – –; the 4th and last places may be either', () => {
+    expect(SAPPHO_SYLLABLES).toHaveLength(11);
+    expect(SAPPHIC).toHaveLength(11);
+    const L = 'long' as const, S = 'short' as const;
+    const line = [L, S, L, L, L, S, S, L, S, L, L];
+    expect(sapphicFits(line)).toBe(true);
+    expect(sapphicFits([L, S, L, S, L, S, S, L, S, L, S])).toBe(true);
+    expect(sapphicFits(line.map(() => S))).toBe(false);
+    expect(sapphicAgreeing(line.map(() => S))).toBe(6);
+    expect(sapphicFits([S, ...line.slice(1)])).toBe(false);
+  });
+
+  it('inflation basket: the average basket gives 3.7%, energy adds about 1.3 points, and from about 13.6% spent on energy inflation reaches 5%', () => {
+    expect(AVERAGE_BASKET.energy).toBeCloseTo(6.39, 1);
+    expect(AVERAGE_BASKET.food).toBeCloseTo(13.67, 1);
+    const avg = inflationFor(AVERAGE_BASKET.energy, AVERAGE_BASKET.food);
+    expect(avg.total).toBeCloseTo(3.7, 1);
+    expect(avg.energy).toBeCloseTo(1.3, 1);
+    expect(inflationFor(15, AVERAGE_BASKET.food).total).toBeCloseTo(5.26, 1);
+    expect(inflationFor(13.5, 13.5).total).toBeLessThan(5);
+    expect(inflationFor(14, 13.5).total).toBeGreaterThan(5);
+    expect(inflationFor(0, 13.5).total).toBeCloseTo(2.6 - 0.135 * 0.1, 6);
+  });
+
+  it('sweden pm vote: 349 seats and 175 no votes reject; 15 October rejected; with V, C and MP abstaining she passes on 99 yes to 173 no', () => {
+    expect(SWE_MPS).toBe(349);
+    expect(SWE_REJECT).toBe(175);
+    const oct = sweTally(SWE_OCT_15);
+    expect(oct).toEqual({ yes: 99, no: 250, abstain: 0, approved: false });
+    const abst = sweTally(['yes', 'no', 'no', 'abstain', 'abstain', 'no', 'abstain', 'no']);
+    expect(abst).toEqual({ yes: 99, no: 173, abstain: 77, approved: true });
+    expect(abst.no).toBeGreaterThan(abst.yes);
+    expect(sweTally(['yes', 'no', 'no', 'abstain', 'abstain', 'no', 'no', 'no']).approved).toBe(false);
+    expect(sweTally(['no', 'yes', 'yes', 'no', 'no', 'yes', 'no', 'yes'])).toEqual({ yes: 173, no: 176, abstain: 0, approved: false });
+  });
+
+  it('first past the post: 13% spread over all ten ridings wins nothing; packed into three it wins three; into two, two; over four, none', () => {
+    expect(qcSeats(10)).toBe(0);
+    expect(qcSeats(3)).toBe(3);
+    expect(qcSeats(2)).toBe(2);
+    expect(qcSeats(4)).toBe(0);
+    const total = qcRidings(3).reduce((n, r) => n + r.ours, 0);
+    expect(total).toBeCloseTo(130, 9);
+    for (const r of qcRidings(5)) expect(r.ours + r.a + r.b).toBeCloseTo(100, 9);
+  });
+
+  it('rights council: 97 of 193 to join; Russia 2022 suspended by 93 to 24 with 58 abstaining; Russia 2023 not elected with 83', () => {
+    expect(UN_MEMBERS).toBe(193);
+    expect(HRC_ELECT).toBe(97);
+    expect(canJoin(97)).toBe(true);
+    expect(canJoin(96)).toBe(false);
+    expect(canJoin(83)).toBe(false);
+    expect(canSuspend(93, 24)).toBe(true);
+    expect(canJoin(93)).toBe(false);
+    expect(canSuspend(120, 70)).toBe(false);
+    expect(canSuspend(2, 1)).toBe(true);
+    expect(canSuspend(0, 0)).toBe(false);
+  });
+
+  it('INF treaty: ground-launched 500 to 5,500 km banned; the same range from a ship or plane allowed; the slider spans 100 to 10,000 km', () => {
+    expect(infBanned('ground', 500)).toBe(true);
+    expect(infBanned('ground', 5500)).toBe(true);
+    expect(infBanned('ground', 450)).toBe(false);
+    expect(infBanned('ground', 6000)).toBe(false);
+    expect(infBanned('ship', 2500)).toBe(false);
+    expect(infBanned('plane', 2500)).toBe(false);
+    expect(rangeClass(800)).toBe('shorter');
+    expect(rangeClass(2500)).toBe('intermediate');
+    expect(kmAt(0)).toBe(100);
+    expect(kmAt(100)).toBe(10000);
+    expect(kmAt(50)).toBe(1000);
+  });
+
+  it('Nuremberg: three of four judges convict; a 2–2 split never does, though a tie-break by the President would', () => {
+    expect(convicts([true, true, true, false])).toBe(true);
+    expect(convicts([true, true, false, false])).toBe(false);
+    expect(convicts([true, true, true, true])).toBe(true);
+    expect(ordinaryDecision([true, true, false, false])).toBe(true);
+    expect(ordinaryDecision([true, false, true, false])).toBe(false);
+    expect(ordinaryDecision([false, false, false, true])).toBe(false);
   });
 });

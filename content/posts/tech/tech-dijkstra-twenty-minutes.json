@@ -24,7 +24,7 @@
     },
     {
       "type": "estimate",
-      "question": "How many Dutch cities were on the map Dijkstra used to show it off on ARMAC?",
+      "question": "How many Dutch cities were on the map Dijkstra used to show it off on the ARMAC computer?",
       "min": 10,
       "max": 200,
       "step": 1,

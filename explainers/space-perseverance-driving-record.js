@@ -124,9 +124,9 @@ const CUES = [
   [32.0, 36.4, 'Its cameras photograph the ground ahead, and it builds a *3D map of hazards*.'],
   [36.6, 41.0, 'Rocks and other hazards are ~off-limits~. It plots a path between them.'],
   [41.2, 45.6, 'It keeps looking and re-planning as it rolls: *thinking while driving*.'],
-  [45.8, 50.2, 'Sojourner judged its path from ~20~ points. Perseverance uses *600,000* per look.'],
+  [45.8, 50.2, 'The 1997 rover Sojourner planned from ~20~ points a look; Perseverance uses *600,000*.'],
   [50.4, 54.8, 'That lets it drive up to *412 m* in a single Martian day, or sol.'],
-  [55.0, 59.4, 'Spirit and Opportunity drove about ~5%~ of their way on autonav. Perseverance: *over 90%*.'],
+  [55.0, 59.4, 'Older rovers Spirit and Opportunity self-drove about ~5%~ of the way. Perseverance: *over 90%*.'],
   [59.6, 64.0, 'On sol 2,006 a *91 m* drive set the record, and the odometer keeps rolling.'],
 ];
 

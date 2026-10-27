@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "list",
-      "heading": "The rule",
+      "heading": "Lothar Collatz’s rule, 1937",
       "style": "steps",
       "items": [
         "Start with any positive whole number",
@@ -64,7 +64,7 @@
       "type": "stat",
       "value": "2⁷¹",
       "label": "starting values checked by computer, about 2.36 × 10²¹, every one of which reaches 1",
-      "text": "A check is not a proof. Jeffrey Lagarias has called the problem extraordinarily difficult and completely out of reach of present-day mathematics."
+      "text": "A check is not a proof. Mathematician Jeffrey Lagarias has called the problem extraordinarily difficult and completely out of reach of present-day mathematics."
     },
     {
       "type": "quote",

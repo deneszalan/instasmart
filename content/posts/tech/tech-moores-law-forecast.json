@@ -28,7 +28,7 @@
     },
     {
       "type": "place",
-      "question": "When did Gordon Moore publish his doubling forecast?",
+      "question": "When did Gordon Moore, later a co-founder of Intel, publish his doubling forecast?",
       "min": 1940,
       "max": 1990,
       "step": 1,

@@ -13,7 +13,7 @@
   "slides": [
     {
       "type": "reveal",
-      "prompt": "Playing in the Bayreuth pit comes with an unusual problem. What is it?",
+      "prompt": "Playing in the pit of Wagner’s opera house in Bayreuth, Germany, comes with an unusual problem. What is it?",
       "answer": "Most can’t see or hear the singers",
       "detail": "The reverberation also makes it hard to keep orchestra and singers together, so conductors must train themselves to ignore cues from the singers."
     },
@@ -45,7 +45,7 @@
     },
     {
       "type": "quiz",
-      "question": "Who provided most of the money to build the Festspielhaus?",
+      "question": "Who provided most of the money to build the Festspielhaus, Wagner’s Bayreuth opera house?",
       "options": [
         "King Ludwig II of Bavaria",
         "Emperor Wilhelm I",
