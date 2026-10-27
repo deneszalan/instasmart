@@ -117,4 +117,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'nuremberg-judgment-three-votes': lazy(() => import('./history/nuremberg-judgment-three-votes')),
   'caesar-445-day-year': lazy(() => import('./history/caesar-445-day-year')),
   'colosseum-numbered-arches': lazy(() => import('./engineering/colosseum-numbered-arches')),
+  'circus-maximus-staggered-gates': lazy(() => import('./math/circus-maximus-staggered-gates')),
 };

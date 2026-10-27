@@ -117,6 +117,7 @@ export const LABS = {
   'nuremberg-judgment-three-votes': 'Cast the four Nuremberg judges’ votes and compare the Charter’s three-of-four rule for a conviction with a simple majority where the President breaks ties.',
   'caesar-445-day-year': 'Pick a leap-day rule, from none to Caesar’s and the Gregorian, and let the centuries pass to see how far the equinox drifts in the calendar.',
   'colosseum-numbered-arches': 'Open more of the Colosseum’s 76 numbered arches and spread the crowd between them, and see how long the busiest queue takes to get through.',
+  'circus-maximus-staggered-gates': 'Bend the Circus Maximus’s row of 12 starting gates into a curve and choose its centre, until every chariot has the same run to the break line.',
 } as const;
 
 export type LabId = keyof typeof LABS;

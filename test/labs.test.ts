@@ -112,6 +112,7 @@ import { banned as infBanned, kmAt, rangeClass } from '../src/labs/history/reykj
 import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgment-three-votes';
 import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '../src/labs/history/caesar-445-day-year';
 import { busiestQueue, minutesToEmpty, openArches, PUBLIC_ARCHES } from '../src/labs/engineering/colosseum-numbered-arches';
+import { GATE_Y as CIRCUS_GATES, runs as circusRuns, unfairness as circusUnfairness } from '../src/labs/math/circus-maximus-staggered-gates';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1004,5 +1005,14 @@ describe('lab maths', () => {
     expect(minutesToEmpty(50000, 76, 0.35, 3)).toBeGreaterThan(5);
     for (const n of [4, 8, 36, 76]) expect(openArches(n).size).toBe(n);
     expect(Math.max(...openArches(76))).toBe(75);
+  });
+
+  it('circus gates: a straight row gives the outer chariot a longer run; an arc round the break point makes all 12 equal, an arc round the track’s middle does not', () => {
+    expect(CIRCUS_GATES).toHaveLength(12);
+    expect(circusUnfairness(0, 'straight')).toBeGreaterThan(0.15);
+    expect(circusUnfairness(1, 'straight')).toBeLessThan(1e-9);
+    expect(circusUnfairness(1, 'track')).toBeGreaterThan(0.01);
+    const r = circusRuns(1, 'straight');
+    expect(Math.max(...r) - Math.min(...r)).toBeLessThan(1e-9);
   });
 });
