@@ -923,6 +923,8 @@ describe('lab maths', () => {
     expect(inflationFor(13.5, 13.5).total).toBeLessThan(5);
     expect(inflationFor(14, 13.5).total).toBeGreaterThan(5);
     expect(inflationFor(0, 13.5).total).toBeCloseTo(2.6 - 0.135 * 0.1, 6);
+  });
+
   it('sweden pm vote: 349 seats and 175 no votes reject; 15 October rejected; with V, C and MP abstaining she passes on 99 yes to 173 no', () => {
     expect(SWE_MPS).toBe(349);
     expect(SWE_REJECT).toBe(175);
