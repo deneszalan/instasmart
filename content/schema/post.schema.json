@@ -188,7 +188,8 @@
                   "power-grid-transformers",
                   "juice-earth-gravity-assist",
                   "swift-solar-drag-reentry",
-                  "one-positron-quantum-cyclotron"
+                  "one-positron-quantum-cyclotron",
+                  "uranocenium-sandwich"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

@@ -98,4 +98,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'juice-earth-gravity-assist': lazy(() => import('./space/juice-earth-gravity-assist')),
   'swift-solar-drag-reentry': lazy(() => import('./space/swift-solar-drag-reentry')),
   'one-positron-quantum-cyclotron': lazy(() => import('./physics/one-positron-quantum-cyclotron')),
+  'uranocenium-sandwich': lazy(() => import('./chemistry/uranocenium-sandwich')),
 };

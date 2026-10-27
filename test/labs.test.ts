@@ -93,6 +93,7 @@ import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
 import { flyby as juiceFlyby, turnAngle as juiceTurn, VINF as JUICE_VINF } from '../src/labs/space/juice-earth-gravity-assist';
 import { heightAfter as swiftHeight, periodAt as swiftPeriod, speedAt as swiftSpeed } from '../src/labs/space/swift-solar-drag-reentry';
 import { holds as positronHolds, REAL_RATIO as POSITRON_RATIO, simulate as positronRun } from '../src/labs/physics/one-positron-quantum-cyclotron';
+import { outcome as uranOutcome } from '../src/labs/chemistry/uranocenium-sandwich';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -775,5 +776,15 @@ describe('lab maths', () => {
     expect(positronHolds(3, 6)).toBe(false);
     for (let wc = 0; wc <= 8; wc += 1) for (let v = 0; v <= 8; v += 1) if (positronRun(wc, v).fate === 'trapped') expect(positronHolds(wc, v)).toBe(true);
     expect(POSITRON_RATIO).toBeCloseTo(757.3, 1);
+  });
+
+  it('uranocenium: only a borate salt in a calm solvent keeps it; fluoride salts, silver and THF each destroy it', () => {
+    expect(uranOutcome('trityl', 'borate', 'difluorobenzene')).toBe('stable');
+    expect(uranOutcome('ferrocenium', 'borate', 'bromobenzene')).toBe('stable');
+    expect(uranOutcome('trityl', 'pf6', 'difluorobenzene')).toBe('fluoride');
+    expect(uranOutcome('trityl', 'sbf6', 'bromobenzene')).toBe('sbf6');
+    expect(uranOutcome('trityl', 'borate', 'thf')).toBe('solvent');
+    expect(uranOutcome('silver', 'borate', 'difluorobenzene')).toBe('rings');
+    expect(uranOutcome('silver', 'pf6', 'thf')).toBe('rings');
   });
 });
