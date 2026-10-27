@@ -133,6 +133,7 @@ import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggi
 import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } from '../src/labs/economics/monte-testaccio-amphorae';
 import { fits as smmFits, LIBERIUS as SMM_LIBERIUS, windows as smmWindows, yearsLeft as smmYears } from '../src/labs/art/santa-maria-maggiore-sixtus-arch';
 import { flowShare as nasoniFlow, GOAL as NASONI_GOAL, HOLES as NASONI_HOLES, spoutPressure as nasoniPressure } from '../src/labs/engineering/nasoni-finger-fountain';
+import { DOCS as CARB_DOCS, firstName as carbFirstName, firstWith as carbFirstWith, known as carbKnown } from '../src/labs/history/carbonara-paper-trail';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1220,5 +1221,14 @@ describe('lab maths', () => {
     expect(nasoniPressure(1, NASONI_HOLES.small)).toBeGreaterThan(NASONI_GOAL);
     expect(nasoniPressure(1, NASONI_HOLES.large)).toBeLessThan(NASONI_GOAL);
     expect(nasoniPressure(0.9, hole)).toBeLessThan(NASONI_GOAL);
+  });
+  it('Carbonara: the name is in print by 1939, the first recipes in 1952, guanciale first in 1957', () => {
+    expect(carbFirstName(1938)).toBeNull();
+    expect(carbFirstName(2026)).toBe(1939);
+    expect(carbFirstWith('guanciale')).toBe(1957);
+    expect(carbFirstWith('gruyere')).toBe(1954);
+    expect(carbFirstWith('cream')).toBe(1960);
+    expect(carbKnown(1952).filter((d) => d.kind === 'recipe')).toHaveLength(2);
+    expect(CARB_DOCS.map((d) => d.year)).toEqual([...CARB_DOCS.map((d) => d.year)].sort((a, b) => a - b));
   });
 });

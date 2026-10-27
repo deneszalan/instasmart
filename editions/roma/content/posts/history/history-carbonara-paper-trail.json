@@ -1,0 +1,177 @@
+{
+  "id": "history-carbonara-paper-trail",
+  "field": "history",
+  "title": "Carbonara isn’t ancient: its name first turns up in 1939, its first known recipe in 1952",
+  "emoji": "🍝",
+  "body": "Carbonara, pasta with egg, pecorino, cured pork and black pepper, is one of Rome’s signature dishes, but its paper trail is short. The name first turns up on 23 August 1939 in *De Koerier*, a Dutch-language paper in the Dutch East Indies, which mentions spaghetti alla carbonara at a trattoria in Trastevere; the article, [reported in 2026](https://www.ilpost.it/2026/02/16/carbonara-attestazione-americani/), gives no recipe. That makes it hard to keep the favourite story that American soldiers invented the dish with their bacon and egg rations after Rome’s liberation in 1944, though the food historian Alberto Grandi thinks they still played a central part. The first known recipe is the actor Aldo Fabrizi’s, printed in a French newspaper in April 1952, with lard, eggs, pecorino and parmesan; Italy’s first, in La Cucina Italiana in 1954, used pancetta, garlic and Gruyère. As the food historian [Luca Cesari](https://www.ricettestoriche.it/2018/03/04/storia-della-carbonara-capitolo-4-gli-ultimi-esiti-il-purismo-e-la-scienza/) found, cream came and went, and the strict version of guanciale, pecorino and egg won out only in the 2000s and 2010s.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "In what year does the name carbonara first turn up in print, as far as food historians know today?",
+      "min": 1800,
+      "max": 2000,
+      "step": 1,
+      "answer": 1939,
+      "format": "year",
+      "explanation": "1939: a Dutch-language paper in the Dutch East Indies mentions spaghetti alla carbonara at a trattoria in Rome’s Trastevere. The article was found only in 2026."
+    },
+    {
+      "type": "video",
+      "src": "carbonara-trail.mp4",
+      "poster": "carbonara-trail.jpg",
+      "alt": "Animation on a dark wooden table: a plate of carbonara, cards for a newspaper, menu and recipe, a time strip searched with a magnifier, a 1939 De Koerier clipping, a 1944 ration box, recipe cards from 1952 to 1957 with ingredient labels, ingredient lanes over time, and an 1839 egg-and-cheese pasta.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Suonatore di Liuto” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "carbonara-paper-trail",
+      "prompt": "Drag through the years and stop at the first year a carbonara in print uses guanciale, cured pork cheek.",
+      "takeaway": "1957, in an English-language guidebook. The first recipes, in 1952, used lard or pancetta, Italy’s first in 1954 used Gruyère, and guanciale with pecorino became the strict rule only in the 2000s and 2010s."
+    },
+    {
+      "type": "image",
+      "src": "piazza-photo.jpg",
+      "alt": "Photograph of the Piazza di Santa Maria in Trastevere on an overcast day: a stone fountain on wide steps in the middle of a cobbled square, the basilica’s bell tower with a clock on the left, and pale yellow buildings with restaurant awnings and potted plants on the right.",
+      "caption": "Piazza di Santa Maria in Trastevere, where the 1939 article put two rival trattorias, one serving spaghetti alla carbonara.",
+      "fit": "cover",
+      "credit": "Palickap · CC BY-SA 4.0"
+    },
+    {
+      "type": "timeline",
+      "heading": "Carbonara’s paper trail",
+      "events": [
+        {
+          "when": "1939",
+          "text": "The name in print: De Koerier"
+        },
+        {
+          "when": "1944",
+          "text": "Allied troops reach Rome"
+        },
+        {
+          "when": "1952",
+          "text": "First known recipe: Aldo Fabrizi"
+        },
+        {
+          "when": "1954",
+          "text": "Italy’s first printed recipe"
+        },
+        {
+          "when": "2000s–2010s",
+          "text": "Guanciale, pecorino, egg only"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Story and record",
+      "left": {
+        "label": "The story",
+        "text": "American soldiers invented carbonara in Rome after 1944, from their bacon and egg rations."
+      },
+      "right": {
+        "label": "The record",
+        "text": "The name was in print by 1939, five years earlier. How the recipe took shape is still argued."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "Which cheese did Italy’s first printed carbonara recipe, in the magazine La Cucina Italiana in 1954, use?",
+      "options": [
+        "Gruyère",
+        "Pecorino romano",
+        "Mozzarella",
+        "Gorgonzola"
+      ],
+      "answer": 0,
+      "explanation": "Gruyère, with pancetta and garlic. Pecorino and guanciale became the strict rule only decades later."
+    }
+  ],
+  "tags": [
+    "rome",
+    "food",
+    "pasta",
+    "myths",
+    "trastevere"
+  ],
+  "source": {
+    "label": "Il Post: Forse la carbonara non la portarono gli americani",
+    "url": "https://www.ilpost.it/2026/02/16/carbonara-attestazione-americani/"
+  },
+  "theme": {
+    "gradient": [
+      "#1d1712",
+      "#5c3a24"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T18:26:49Z"
+}

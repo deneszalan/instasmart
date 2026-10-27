@@ -138,6 +138,7 @@ export const LABS = {
   'monte-testaccio-amphorae': 'Set how many olive-oil jars Monte Testaccio holds and over how many years they came, and see how much oil Rome took in.',
   'santa-maria-maggiore-sixtus-arch': 'Turn on clues from Santa Maria Maggiore’s triumphal arch, its Latin line naming a bishop Sixtus, the Council of Ephesus and the later apse, until one window of years is left for the mosaic.',
   'nasoni-finger-fountain': 'Cover the end of a Roman nasone’s spout with a finger and choose the size of the hole on top, and see how high the jet rises as the flow and the pressure lost in the pipes fall.',
+  'carbonara-paper-trail': 'Drag through the years of carbonara’s paper trail, from an 1839 egg-and-cheese pasta to today’s recipe websites, and find when the name, the first recipe and guanciale first appear in print.',
 } as const;
 
 export type LabId = keyof typeof LABS;
