@@ -113,6 +113,7 @@ import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgme
 import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '../src/labs/history/caesar-445-day-year';
 import { busiestQueue, minutesToEmpty, openArches, PUBLIC_ARCHES } from '../src/labs/engineering/colosseum-numbered-arches';
 import { GATE_Y as CIRCUS_GATES, runs as circusRuns, unfairness as circusUnfairness } from '../src/labs/math/circus-maximus-staggered-gates';
+import { plinysCase, verdict as curiaVerdict } from '../src/labs/politics/curia-vote-by-walking';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -684,7 +685,6 @@ describe('lab maths', () => {
     expect(heliumAt(20 * 60)).toBeLessThan(heliumAt(10 * 60));
   });
 
-
   it('ebola tracing: with 2 infections per missed case, chains shrink once more than half of contacts are found', () => {
     expect(perCase(2, 0.5)).toBe(1);
     expect(perCase(2, 0.55)).toBeLessThan(1);
@@ -1014,5 +1014,16 @@ describe('lab maths', () => {
     expect(circusUnfairness(1, 'track')).toBeGreaterThan(0.01);
     const r = circusRuns(1, 'straight');
     expect(Math.max(...r) - Math.min(...r)).toBeLessThan(1e-9);
+  });
+
+  it('curia vote: with acquittal ahead of each rival alone but not of both, three groups acquit and the death party crossing over banishes', () => {
+    expect(curiaVerdict(110, 80, 60, 'three')).toBe('acquit');
+    expect(curiaVerdict(110, 80, 60, 'cross')).toBe('banish');
+    expect(curiaVerdict(110, 80, 60, 'together')).toBe('banish');
+    expect(curiaVerdict(110, 40, 90, 'together')).toBe('death');
+    expect(curiaVerdict(150, 50, 50, 'cross')).toBe('acquit');
+    expect(curiaVerdict(100, 100, 50, 'three')).toBe('tie');
+    expect(plinysCase(110, 80, 60)).toBe(true);
+    expect(plinysCase(150, 50, 50)).toBe(false);
   });
 });

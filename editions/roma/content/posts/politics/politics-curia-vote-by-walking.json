@@ -1,0 +1,173 @@
+{
+  "id": "politics-curia-vote-by-walking",
+  "field": "politics",
+  "title": "In the Curia, Rome’s Senate house, senators voted by walking to one side of the hall",
+  "emoji": "🏛️",
+  "body": "The Curia Julia in the Roman Forum was begun by Julius Caesar and finished by Augustus in 29 BC; the brick hall standing today is Emperor Diocletian’s rebuilding after a fire in AD 283, and it survived because it became a church in AD 630. Inside, three broad steps along each side held about 300 senators, with a dais for the presiding magistrate at the far end. Small matters went by voice or a show of hands. On important ones the Senate held a *discessio*, a separation: the rule, quoted by the senator [Pliny the Younger](https://www.thelatinlibrary.com/pliny.ep8.html), sent those who backed a proposal to the side where its proposer sat, and everyone who thought anything else to the other. So every vote was **a choice between two sides**. In about AD 105 Pliny faced three proposals on the freedmen of the dead consul Afranius Dexter: acquittal (his own), banishment and death. The backers of death and banishment sat together against acquittal. Pliny demanded three groups, as acquittal had more backers than either rival alone; the proposer of death then crossed over to banishment, and his followers went with him.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Julius Caesar enlarged the Roman Senate. How many members did it have under him?",
+      "min": 100,
+      "max": 1500,
+      "step": 50,
+      "answer": 900,
+      "unit": "senators",
+      "explanation": "900. The Republic’s Senate had long had 300; after Sulla it had some 500 to 600, and Augustus later cut it back to 600."
+    },
+    {
+      "type": "video",
+      "src": "curia-vote.mp4",
+      "poster": "curia-vote.jpg",
+      "alt": "Animation in porphyry red and marble: the brick Curia Julia in the Forum, its hall from above with steps for about 300 senators, bars of the Senate's size, senators walking to one side to vote, and Pliny's case with three coloured groups that become two.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Interloper” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "curia-vote-by-walking",
+      "prompt": "Set how many senators back each proposal. Find numbers where acquittal wins in three groups but loses when the death party crosses over.",
+      "takeaway": "When acquittal leads each rival alone but not both together, merging the two harsher groups beats it. That is the fear Pliny says drove the proposer of death across the floor."
+    },
+    {
+      "type": "image",
+      "src": "curia-today.jpg",
+      "alt": "Photo of the Curia Julia in the Roman Forum: a tall, plain brick building with a triangular gable, three arched windows and a green bronze door at the top of a short flight of steps.",
+      "caption": "The Curia Julia today: Diocletian’s brick Senate house in the Roman Forum.",
+      "fit": "cover",
+      "credit": "Jensens · Public domain"
+    },
+    {
+      "type": "chart",
+      "heading": "Senators against the Curia’s places",
+      "items": [
+        {
+          "label": "Republic",
+          "value": 300
+        },
+        {
+          "label": "After Sulla",
+          "value": 600
+        },
+        {
+          "label": "Julius Caesar",
+          "value": 900
+        },
+        {
+          "label": "Augustus",
+          "value": 600
+        },
+        {
+          "label": "Places in the Curia",
+          "value": 300,
+          "emphasis": true
+        }
+      ],
+      "unit": "senators",
+      "note": "After Sulla, between 500 and 600. The Curia’s places are a modern estimate."
+    },
+    {
+      "type": "quote",
+      "text": "You who think this, to this side; you who think anything else at all, go to the side you agree with.",
+      "attribution": "Senate rule quoted by Pliny the Younger, Letters 8.14, in translation"
+    },
+    {
+      "type": "quiz",
+      "question": "In the vote Pliny the Younger describes, why did the senator who proposed death cross over to banishment?",
+      "options": [
+        "He feared acquittal would win",
+        "The emperor told him to",
+        "Banishment was harsher",
+        "He thought them innocent"
+      ],
+      "answer": 0,
+      "explanation": "Counted alone, acquittal had more backers than either rival. So the death party joined banishment: it chose, as Pliny puts it, by which side it would be beaten."
+    }
+  ],
+  "tags": [
+    "rome",
+    "senate",
+    "voting",
+    "curia",
+    "pliny"
+  ],
+  "source": {
+    "label": "Pliny the Younger, Letters 8.14 (Latin)",
+    "url": "https://www.thelatinlibrary.com/pliny.ep8.html"
+  },
+  "theme": {
+    "gradient": [
+      "#2a1218",
+      "#5a2530"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T11:50:40Z"
+}
