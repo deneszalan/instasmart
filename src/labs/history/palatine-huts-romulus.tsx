@@ -41,11 +41,11 @@ export default function PalatineKings({ onDone }: LabProps) {
 
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
     const L = 10, R = w - 10, X = (bc: number) => L + ((R - L) * (OLD - bc)) / (OLD - NEW);
-    const top = 40, barH = Math.max(40, h * 0.34), axisY = top + barH + 16;
+    const top = Math.max(22, h * 0.17), barH = h * 0.26, axisY = top + barH + h * 0.17;
     // the Republic from 509 BC
     ctx.fillStyle = SKY;
     ctx.fillRect(X(REPUBLIC_BC), top, R - X(REPUBLIC_BC), barH);
-    label(ctx, t('Republic, from 509 BC'), (X(REPUBLIC_BC) + R) / 2, top + barH / 2, { size: 9, color: '#0f0d0a' });
+    label(ctx, t('Republic, from 509 BC'), R, top + barH + h * 0.07, { size: 9, color: SKY, align: 'right' });
     // seven reigns counted back from it
     for (let i = 0; i < KINGS; i++) {
       const b = REPUBLIC_BC + i * reign, a = Math.min(OLD, b + reign);
@@ -55,17 +55,17 @@ export default function PalatineKings({ onDone }: LabProps) {
     }
     // the founding year that gives
     const fx = X(Math.min(OLD, year));
-    line(ctx, fx, top - 8, fx, axisY + 4, hit ? C.good : C.ink, 2);
-    label(ctx, formatNumber(year, 'year'), Math.max(30, fx), top - 16, { size: 12, color: hit ? C.good : C.ink });
+    line(ctx, fx, top - 4, fx, axisY + 4, hit ? C.good : C.ink, 2);
+    label(ctx, formatNumber(year, 'year'), Math.max(30, fx), top - 10, { size: 12, color: hit ? C.good : C.ink });
     // the axis, with the ancient writers' dates
     line(ctx, L, axisY, R, axisY, C.faint, 1.5);
-    for (const bc of [900, 800, 700, 600, 500]) label(ctx, formatNumber(bc, 'year'), X(bc), axisY + 12, { size: 9, color: C.faint });
+    for (const bc of [900, 800, 700, 600, 500]) label(ctx, formatNumber(bc, 'year'), X(bc), axisY + h * 0.08, { size: 9, color: C.faint });
     for (const d of ANCIENT) dot(ctx, X(d.bc), axisY, d.bc === VARRO_BC ? 4 : 2.5, d.bc === VARRO_BC ? GOLD : C.soft);
     // the hut village, dated by digging
-    const vy = axisY + 30;
+    const vy = axisY + h * 0.16;
     ctx.fillStyle = DIG;
-    ctx.fillRect(X(VILLAGE_BC[0]), vy, X(VILLAGE_BC[1]) - X(VILLAGE_BC[0]), 10);
-    label(ctx, t('Palatine hut village, dated by digging'), (X(VILLAGE_BC[0]) + X(VILLAGE_BC[1])) / 2, vy + 22, { size: 10, color: DIG });
+    ctx.fillRect(X(VILLAGE_BC[0]), vy, X(VILLAGE_BC[1]) - X(VILLAGE_BC[0]), 7);
+    label(ctx, t('Palatine hut village, dated by digging'), (X(VILLAGE_BC[0]) + X(VILLAGE_BC[1])) / 2, vy + 6 + h * 0.08, { size: 9.5, color: DIG });
   };
 
   return (
