@@ -1,0 +1,72 @@
+{
+  "id": "art-pieta-michelangelo",
+  "title": "In Michelangelos Pietà ist Maria viel größer als ihr Sohn: Ihr Gewand verbirgt es",
+  "body": "Michelangelo Buonarroti schloss den Vertrag für die Pietà am 26. August 1498, mit 23 Jahren, mit dem französischen Kardinal Jean de Bilhères, der sie für seine Grabkapelle in Alt-St. Peter wollte. Er brauchte etwa zwei Jahre, und seit 1749 steht sie in der ersten Kapelle rechts im Petersdom. Das Thema, Maria mit dem toten Sohn auf den Knien, birgt ein Problem: ein erwachsener Mann, ausgestreckt auf dem Schoß einer Sitzenden. Michelangelos Lösung: Marias Körper ist viel größer als der Jesu, bei gleich großen Köpfen; stehend würde sie ihn weit überragen. Ihr riesiges Gewand, ein Meer aus Falten, verbirgt den Unterschied, und die Gruppe bildet eine **Pyramide** mit ihrem Kopf an der Spitze, 174 cm hoch und 195 cm breit. Es ist sein einziges signiertes Werk, auf dem Band über ihrer Brust. Der Biograf Giorgio Vasari erzählt, er habe sie nachts hinzugefügt, als er Besucher einen anderen Bildhauer nennen hörte, doch [Historiker zweifeln daran](https://hyperallergic.com/781165/michelangelos-signature-and-the-myth-of-genius/). Am 21. Mai 1972 schlug ein Mann 15-mal mit einem Hammer auf die Statue ein; Restauratoren klebten über 100 Bruchstücke wieder an, heute steht sie hinter Panzerglas.",
+  "slides": [
+    {
+      "question": "Michelangelo unterschrieb im August 1498 den Vertrag für die Pietà, die heute im Petersdom steht. Wie alt war er?",
+      "unit": "Jahre alt",
+      "explanation": "23: Geboren im März 1475, unterschrieb er am 26. August 1498 mit einem französischen Kardinal, Jean de Bilhères, und vollendete sie in etwa zwei Jahren."
+    },
+    {
+      "alt": "Animation: Michelangelos Pietà aus weißem Marmor in einer dunklen Kapelle: die Vertragsdaten; Marias und Jesu Kopf, gleich groß umkreist; zwei stehende Figuren, Maria weit größer; das Gewand verbirgt ihre Größe; eine goldene Pyramide darüber; die Signatur auf dem Band; die Statue hinter Glas.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Zieh die Spitze des Dreiecks oder nutze die Regler, bis es den Umriss der ganzen Gruppe so genau wie möglich trifft.",
+      "takeaway": "Am besten passt es auf dem Felsen, mit der Spitze genau über Marias Kopf: Die ganze Gruppe wirkt wie eine Pyramide, und so beschreiben Kunsthistoriker Michelangelos Komposition."
+    },
+    {
+      "alt": "Foto von Michelangelos Pietà aus weißem Marmor: Eine junge, verschleierte Maria sitzt und hält den toten Jesus quer über dem Schoß, sein Kopf links nach hinten gesunken, seine Beine rechts über ihr Knie hängend; ihre linke Hand ist geöffnet, und tiefe Falten ihres Gewands fallen bis auf den Felsen."
+    },
+    {
+      "heading": "Die Geschichte der Signatur",
+      "left": {
+        "label": "Vasaris Geschichte",
+        "text": "Michelangelo hörte, wie Besucher die Statue „unserem Gobbo aus Mailand“ zuschrieben, dem Bildhauer Cristoforo Solari, und meißelte nachts seinen Namen hinein."
+      },
+      "right": {
+        "label": "Der Zweifel",
+        "text": "Das Band scheint von Anfang an für den Namen gemacht, und ein junger Künstler hätte kaum heimlich an der Statue arbeiten können."
+      }
+    },
+    {
+      "heading": "Die Pietà",
+      "events": [
+        {
+          "when": "Aug. 1498",
+          "text": "Michelangelo, 23, unterschreibt den Vertrag."
+        },
+        {
+          "when": "1749",
+          "text": "Umzug in die erste Kapelle rechts."
+        },
+        {
+          "when": "21. Mai 1972",
+          "text": "Ein Mann greift sie mit einem Hammer an."
+        },
+        {
+          "when": "1973",
+          "text": "Restauriert und wieder zu sehen."
+        },
+        {
+          "when": "Nov. 2024",
+          "text": "Neues Panzerglas wird eingebaut."
+        }
+      ]
+    },
+    {
+      "question": "Wie brachte Michelangelo in der Pietà im Petersdom einen erwachsenen Mann auf Marias Schoß unter?",
+      "options": [
+        "Er machte Marias Körper viel größer",
+        "Er meißelte Jesus als Kind",
+        "Er setzte Maria auf einen hohen Thron",
+        "Er klappte Jesus in der Mitte zusammen"
+      ],
+      "explanation": "Marias Körper ist viel größer als seiner, obwohl die Köpfe gleich groß sind; ihr Gewand verbirgt den Unterschied, sodass beide zusammen natürlich wirken."
+    }
+  ],
+  "source": {
+    "label": "Vatikanische Museen: die Abgüsse der drei Pietà"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "art-caravaggio-calling-light",
+  "title": "Caravaggios „Berufung des Matthäus“ in Rom: Ein einziger Lichtstrahl übernimmt das Zeigen",
+  "body": "Caravaggio (Michelangelo Merisi) malte *Die Berufung des heiligen Matthäus* 1599–1600 für die Contarelli-Kapelle in San Luigi dei Francesi, der französischen Kirche nahe der Piazza Navona, wo es noch heute hängt; es war sein erster großer öffentlicher Auftrag. Es zeigt die Szene aus dem Matthäusevangelium (9,9), in der Jesus den Zöllner an seinem Tisch sieht und sagt: „Folge mir!“ Der Arzt und Kunstschriftsteller Giulio Mancini beschrieb um 1620 seine Methode: „ein starkes Licht von oben, mit einem einzigen Fenster und schwarz gestrichenen Wänden“. Da nichts Licht in die Schatten zurückwirft, leuchten Gesichter hell vor fast Schwarzem, ein Stil namens **Tenebrismus**. Hier fällt der Strahl von rechts oben, über Jesus und dem heiligen Petrus, läuft an Jesu ausgestreckter Hand entlang, die an Adams in Michelangelos Erschaffung Adams erinnert, und trifft die Gesichter am Tisch; das gemalte Fenster ist nicht seine Quelle. Die meisten Kunsthistoriker sehen Matthäus im bärtigen Mann, der auf sich zeigt, manche im Jüngling am Tischende. Wie die [Web Gallery of Art bemerkt](https://www.wga.hu/html_m/c/caravagg/04/23conta.html), überbrückt die Hand eine stehende und eine sitzende Gruppe.",
+  "slides": [
+    {
+      "question": "Woher kommt in Caravaggios „Die Berufung des heiligen Matthäus“ der Hauptstrahl des Lichts?",
+      "options": [
+        "Von rechts oben, über Jesus",
+        "Aus dem gemalten Fenster an der Wand",
+        "Von einer Kerze auf dem Tisch",
+        "Vom Boden, nach oben reflektiert"
+      ],
+      "explanation": "Der Strahl fällt von rechts oben, über Jesus und dem heiligen Petrus, auf die Gesichter am Tisch. Das gemalte Fenster ist nicht seine Quelle."
+    },
+    {
+      "alt": "Animation, schematisch nach Caravaggios „Berufung des Matthäus“: ein dunkler Raum, Männer an einem Tisch, rechts Jesus und der heilige Petrus; ein Atelier mit einem hohen Fenster, die Wände werden schwarz; der Strahl von rechts oben an Jesu Hand entlang zu einem Bärtigen; der Grundriss der Kapelle.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Leuchte ein Gesicht aus wie Caravaggio, laut dem Autor Giulio Mancini. Finde ein Atelier, das die Lichtseite mindestens 20-mal so hell macht wie den Schatten.",
+      "takeaway": "Nur schwarze Wände und ein einziges Fenster schaffen das: Nichts wirft Licht in die Schatten zurück. Helle Wände oder ein zweites Fenster hellen sie auf und machen das Gesicht flach."
+    },
+    {
+      "alt": "Caravaggios Gemälde: Männer in Kleidung um 1600 sitzen in einem dunklen Raum an einem Tisch; rechts stehen Jesus und der heilige Petrus im Schatten, Jesus zeigt; ein schräges Lichtband fällt über die Wand über ihnen auf die Gesichter am Tisch."
+    },
+    {
+      "text": "Ein starkes Licht von oben, mit einem einzigen Fenster und schwarz gestrichenen Wänden.",
+      "attribution": "Giulio Mancini zu Caravaggio, Considerazioni sulla pittura, um 1620 (übersetzt)"
+    },
+    {
+      "heading": "Worauf du achten kannst",
+      "items": [
+        "Der Strahl fällt von rechts oben, über Jesus.",
+        "Jesu Hand zeigt in seine Richtung, wie Adams Hand in Michelangelos Erschaffung Adams.",
+        "Der bärtige Mann berührt seine Brust, als fragte er: „Ich?“",
+        "Zwei Männer links zählen weiter Geld."
+      ]
+    },
+    {
+      "heading": "Caravaggios Contarelli-Kapelle",
+      "events": [
+        {
+          "when": "23. Juli 1599",
+          "text": "Caravaggio unterschreibt den Vertrag"
+        },
+        {
+          "when": "Juli 1600",
+          "text": "Berufung und Martyrium hängen an ihrem Platz"
+        },
+        {
+          "when": "1602",
+          "text": "Die Inspiration des heiligen Matthäus, über dem Altar"
+        }
+      ]
+    },
+    {
+      "question": "Laut Giulio Mancini malte Caravaggio in einem Raum mit schwarzen Wänden. Was bewirkte das in seinen Bildern?",
+      "options": [
+        "Die Schatten blieben tief und dunkel",
+        "Die Farben verblassten schneller",
+        "Er konnte nachts malen",
+        "Es verbarg die Modelle vor der Straße"
+      ],
+      "explanation": "Helle Wände werfen Licht in die Schatten, schwarze kaum; so bleibt die Schattenseite eines Gesichts fast schwarz. Das ist Tenebrismus."
+    }
+  ]
+}

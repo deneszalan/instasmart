@@ -1,0 +1,42 @@
+{
+  "id": "engineering-pantheon-noon-sunbeam",
+  "title": "Das Mittagslicht im Pantheon fällt im Winter hoch an die Kuppel und im April in die Tür",
+  "body": "Das Pantheon in Rom, unter Kaiser Hadrian neu gebaut und wohl um 126 n. Chr. geweiht, erhält sein ganzes direktes Sonnenlicht durch den **Oculus**, die etwa 9 Meter weite Öffnung im Scheitel der Kuppel. Seine Tür zeigt nach Norden, also fällt der Lichtfleck mittags, wenn die Sonne genau im Süden steht, immer auf die Nordseite: an die Kuppel oder die Wand über der Tür oder auf den Boden davor. Wo er landet, hängt vom Sonnenstand ab, in Rom mittags etwa 25° im Dezember und etwa 72° im Juni. Im Herbst und Winter bleibt der Fleck oben auf der Kassettenkuppel; zu den Tagundnachtgleichen erreicht er den Fuß der Kuppel; um den 21. April, Roms traditionellen Geburtstag, füllt er die Tür; von Ende April bis Ende August liegt er auf dem Boden. Im Lauf jedes Tages wandert er zudem von West nach Ost. Der Architekturhistoriker Mark Wilson Jones nennt das eine umgekehrte Sonnenuhr, die die Zeit mit Licht statt Schatten anzeigt. Robert Hannah und Giulio Magli vertreten in [ihrem Aufsatz](https://arxiv.org/abs/0910.0128) die These, der Bau sei um diesen Sonnenweg herum entworfen: eine Deutung, keine überlieferte Tatsache.",
+  "slides": [
+    {
+      "question": "Rom liegt etwa 42° nördlich des Äquators. Wie viele Grad über dem Horizont steht die Sonne Ende Juni mittags?",
+      "explanation": "Etwa 72°: 90° minus Roms Breite von 41,9°, plus die 23,4° Neigung der Erdachse. Ende Dezember sind es etwa 25°, darum landet der Mittagsfleck im Pantheon viel höher."
+    },
+    {
+      "alt": "Animation im Schnitt durch das Pantheon, warmer Beton vor Abendhimmel: Das Mittagslicht aus dem Oculus trifft im Dezember hoch die Kassettenkuppel, gleitet im März zum Kuppelfuß, füllt um den 21. April die Nordtür und liegt im Sommer auf dem Boden; dann ein Wintertag von oben gesehen.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Zieh durch das Jahr und finde einen Tag, an dem das Mittagslicht die ganze Tür bedeckt, vom Boden bis zum oberen Rand.",
+      "takeaway": "Nur an wenigen Tagen um den 21. April und wieder Ende August. Im Winter wirft die tiefe Sonne den Fleck hoch an die Kuppel, im Sommer legt die hohe Sonne ihn auf den Boden vor der Tür."
+    },
+    {
+      "alt": "Nahaufnahme im Pantheon: Ein runder Fleck Sonnenlicht aus dem Oculus beleuchtet vier Kassetten der sonst dunklen Kuppel."
+    },
+    {
+      "heading": "Wo das Mittagslicht im Pantheon hinfällt",
+      "events": [
+        { "when": "Dezember", "text": "Hoch an den Kassetten der Kuppel" },
+        { "when": "März", "text": "Am Fuß der Kuppel" },
+        { "when": "Um den 21. April", "text": "Füllt die Tür bis zum Boden" },
+        { "when": "Mai bis August", "text": "Auf dem Boden vor der Tür" },
+        { "when": "September", "text": "Wieder am Fuß der Kuppel" }
+      ]
+    },
+    {
+      "heading": "Eine Sonnenuhr, umgestülpt",
+      "left": { "label": "Eine Sonnenuhr", "text": "Ein Schatten wandert über markierte Linien und zeigt Stunde und Jahreszeit." },
+      "right": { "label": "Das Pantheon", "text": "Ein Lichtfleck wandert über Kuppel, Wand und Boden, ohne Linien, an denen man ihn ablesen könnte." }
+    },
+    {
+      "question": "Warum fällt das Mittagslicht im Pantheon immer auf die Seite mit der Tür?",
+      "options": ["Die Tür zeigt nach Norden", "Der Boden fällt zur Tür hin ab", "Der Oculus sitzt nicht mittig", "Spiegel in der Kuppel lenken es um"],
+      "explanation": "Mittags steht die Sonne genau im Süden, also fällt das Licht durch den Oculus nach Norden, zur Tür hin, die nach Norden zeigt. Durch die Tür selbst fällt kein Sonnenlicht herein."
+    }
+  ]
+}

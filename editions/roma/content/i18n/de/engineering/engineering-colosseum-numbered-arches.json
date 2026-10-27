@@ -1,0 +1,49 @@
+{
+  "id": "engineering-colosseum-numbered-arches",
+  "title": "Die 76 Publikumsbögen des Kolosseums trugen Nummern, und eine Marke führte dich zu deinem",
+  "body": "Das Kolosseum in Rom, 80 n. Chr. vollendet, hatte im Erdgeschoss 80 Bögen. Über jedem der 76 Bögen für das Publikum war eine Zahl eingemeißelt und rot bemalt; 29 sind auf der Nordseite noch lesbar, etwa **LII**, 52. Die vier auf den Achsen des Baus trugen keine Zahl und waren wohl für den Kaiser und die Elite bestimmt. Die Zuschauer folgten Wegweisern an den inneren Bögen und auf ihren Marken, *tesserae*, schreibt [der Archäologische Park](https://colosseo.it/en/marvels/the-cavea-of-the-colosseum-and-the-belvedere-terrace/). Jeder Bogen führte zu einer eigenen Treppe und dann zu einem *vomitorium*, einem Gang zu den Sitzen, benannt nach dem lateinischen Wort für Ausspeien. Man saß nach Rang, Senatoren vorn, die Ärmsten ganz oben, und jede Reihe jedes Keils war nummeriert. Laut einer Liste von 354 n. Chr. fasste der Bau 87.000 Menschen; moderne Schätzungen liegen bei etwa 50.000. So eine Menge auf 76 Tore mit eigenen Treppen zu verteilen, das tun auch moderne Stadien: Eine [Computersimulation von 2021](https://unistroy.spbstu.ru/article/2021.95.4/) mit 48.000 Zuschauern ergab, dass die Treppen die Last gleichmäßig trugen, ohne dass man jemanden zurückhalten musste.",
+  "slides": [
+    {
+      "question": "Das Kolosseum hatte im Erdgeschoss 80 Bögen. Wie viele davon waren für das Publikum nummeriert?",
+      "unit": "Bögen",
+      "explanation": "76. Die vier auf den Achsen des Baus trugen keine Zahl: Es waren Prunkeingänge, wohl für den Kaiser und die Elite."
+    },
+    {
+      "alt": "Animation in Travertin und Rot vor Abendhimmel: der ovale Grundriss des Kolosseums mit 80 Bögen, eine Fassade mit rot nummerierten Bögen L bis LIII, eine Marke mit LII, Schlangen an 4 Bögen gegen 76, ein Schnitt mit Treppen und Vomitorien, Sitze nach Rang und Balken für 87.000 und etwa 50.000.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Öffne mehr der nummerierten Bögen des Kolosseums und verteile die Menge auf sie. Bring 50.000 Menschen in unter 5 Minuten hinaus.",
+      "takeaway": "Durch 4 Bögen braucht das Modell über eine Stunde, durch alle 76, gleichmäßig verteilt, unter 4 Minuten. Drängt sich die Menge in einem Viertel des Baus, bestimmen dessen Schlangen die Zeit: Das verhinderten die Marken."
+    },
+    {
+      "alt": "Nahaufnahme eines Erdgeschossbogens des Kolosseums in warmem Sonnenlicht: Über dem Bogen sind die eingemeißelten römischen Ziffern L, I, I von Eingang 52 im verwitterten Travertin schwach zu erkennen.",
+      "caption": "Eingang LII des Kolosseums: Die Ziffern sind direkt über dem Bogen eingemeißelt."
+    },
+    {
+      "heading": "Von der Marke zum Sitzplatz im Kolosseum",
+      "steps": [
+        { "label": "Eine Marke, eine tessera, weist den Weg" },
+        { "label": "Einer von 76 nummerierten Bögen" },
+        { "label": "Die eigene Treppe dieses Bogens" },
+        { "label": "Ein Vomitorium öffnet sich zum Rang" },
+        { "label": "Keil, nummerierte Reihe, Sitz" }
+      ]
+    },
+    {
+      "heading": "Wie viele Menschen fasste das Kolosseum?",
+      "items": [
+        { "label": "Liste von 354 n. Chr." },
+        { "label": "Moderne Schätzung" }
+      ],
+      "unit": "Menschen",
+      "note": "Schätzungen für verschiedene Zeiten reichen von etwa 50.000 bis 80.000."
+    },
+    {
+      "question": "Die Treppen des Kolosseums endeten in Vomitorien, Gängen zu den Sitzen. Woher kommt der Name?",
+      "options": ["Latein für „ausspeien“", "Ein Raum zum Erbrechen", "Der Name des Architekten", "Griechisch für „Tür“"],
+      "explanation": "Vom lateinischen Wort für schnelles Ausstoßen, der Wurzel des englischen „vomit“: Die Gänge spien die Menschen in ihren Rang und wieder hinaus."
+    }
+  ],
+  "source": { "label": "Parco archeologico del Colosseo: Die Cavea" }
+}

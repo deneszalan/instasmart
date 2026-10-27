@@ -1,0 +1,41 @@
+{
+  "id": "history-caesar-445-day-year",
+  "title": "Julius Caesar ließ das Jahr 46 v. Chr. 445 Tage dauern, damit Roms Kalender wieder stimmte",
+  "body": "Roms alter Kalender hatte 12 Monate und nur 355 Tage, etwa zehn weniger als das Sonnenjahr. Damit er Schritt hielt, durfte der oberste Priester, der *pontifex maximus*, einen Zusatzmonat von 22 oder 23 Tagen einschieben, im Schnitt jedes zweite Jahr. Doch Priester waren auch Politiker: Sie konnten einem Verbündeten das Amtsjahr verlängern, und Zusatzmonate fielen aus. 46 v. Chr. fügte Julius Caesar, selbst pontifex maximus und beraten vom Astronomen Sosigenes von Alexandria, den üblichen Zusatzmonat und zwei weitere Monate mit zusammen 67 Tagen ein: Das Jahr dauerte **445 Tage**. Ab dem 1. Januar 45 v. Chr. hatte Rom 365 Tage im Jahr und alle vier Jahre einen Schalttag, den [Julianischen Kalender](https://en.wikipedia.org/wiki/Julian_calendar). Sein Durchschnitt von 365,25 Tagen ist etwa 11 Minuten länger als das Sonnenjahr, ein Tag in 128 Jahren; deshalb strich die Gregorianische Reform 1582 zehn Tage. Aus Quintilis wurde 44 v. Chr. der Juli, aus Sextilis 8 v. Chr. der August.",
+  "slides": [
+    {
+      "question": "Um Roms Kalender zu reparieren, dehnte Julius Caesar das Jahr 46 v. Chr. Wie viele Tage dauerte es?",
+      "unit": "Tage",
+      "explanation": "445 Tage: die üblichen 355, ein Zusatzmonat von 23 Tagen und zwei weitere Monate mit 67 Tagen, um die Jahreszeiten einzuholen."
+    },
+    {
+      "alt": "Animation auf bemaltem Putz: Eine Steintafel zeigt CDXLV, 445 Tage, 46 v. Chr. Zwölf Monatssäulen ergeben 355 Tage, zehn weniger als das Sonnenjahr. Ein Zusatzmonat wird eingeschoben oder ausgelassen, die Monate verrutschen gegen die Jahreszeiten, und 355 + 23 + 67 Tage ergeben 445.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Wähle eine Schalttagsregel und lass die Jahrhunderte vergehen. Finde eine, die die Frühlings-Tagundnachtgleiche 1.000 Jahre lang auf einen Tag genau hält.",
+      "takeaway": "Caesars Schalttag in jedem vierten Jahr verschiebt sich etwa alle 128 Jahre um einen Tag, rund 8 Tage in 1.000 Jahren. Nur die Gregorianische Regel, die in 400 Jahren drei Schalttage auslässt, bleibt auf einen Tag genau."
+    },
+    {
+      "heading": "Von Caesar zum heutigen Kalender",
+      "events": [
+        { "when": "46 v. Chr.", "text": "Caesar lässt das Jahr 445 Tage dauern." },
+        { "when": "45 v. Chr.", "text": "365 Tage, Schalttag alle 4 Jahre." },
+        { "when": "44 v. Chr.", "text": "Quintilis wird Juli, nach Caesar." },
+        { "when": "8 v. Chr.", "text": "Sextilis wird August." },
+        { "when": "1582", "text": "Gregorianische Reform streicht 10 Tage." }
+      ]
+    },
+    {
+      "heading": "Roms Kalender, vorher und nachher",
+      "left": { "label": "Vor Caesar", "text": "355 Tage, dazu ein Zusatzmonat von 22 oder 23 Tagen, wann immer der pontifex maximus einen einschob." },
+      "right": { "label": "Julianischer Kalender", "text": "365 Tage, dazu ein Schalttag in jedem vierten Jahr, nach einer festen Regel, die jeder prüfen konnte." }
+    },
+    {
+      "question": "Roms Jahr begann einst im März. Welcher Monatsname bedeutet „der siebte“?",
+      "options": ["September", "Juli", "Oktober", "Dezember"],
+      "explanation": "September kommt von septem, sieben. Oktober, November und Dezember waren der achte, neunte und zehnte Monat."
+    }
+  ],
+  "source": { "label": "Wikipedia: Julian calendar" }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "art-sistine-ceiling-giornate",
+  "title": "Michelangelo malte die Decke der Sixtinischen Kapelle in Tagesfeldern aus nassem Putz",
+  "body": "Von 1508 bis 1512 malte Michelangelo für Papst Julius II. die Decke der Sixtinischen Kapelle im Vatikan: ein Gewölbe von etwa 35 m Länge und 14 m Breite, 20 m über dem Boden. Er arbeitete in [Buon fresco](https://en.wikipedia.org/wiki/Fresco), echtem Fresko. Jeden Morgen kam eine dünne Schicht nassen Kalkputzes, das *Intonaco*, nur dorthin, wo er an diesem Tag malen konnte, und in Wasser angerührtes Pigment zog hinein. Beim Abbinden nahm der gelöschte Kalk **Kohlendioxid** aus der Luft auf und wurde zu **Calciumcarbonat**, das die Farbe in der Wand einschloss. Putz trocknet in etwa 10 bis 12 Stunden, daher wurde der unbemalte Rand weggeschnitten, und das Feld des nächsten Tages, eine *Giornata* (Tagwerk), überlappte seine Kante. Restauratoren kartierten diese Nähte bei der Reinigung 1980–1994: etwa 570 Giornate an der Decke, während ein großes Wandfresko 10 bis 20 brauchen kann. Da ein neueres Feld stets ein älteres überlappt, verraten die Nähte auch die Reihenfolge der Tage: Michelangelo begann am Eingang und arbeitete sich durch die Genesis rückwärts zum Altar vor.",
+  "slides": [
+    {
+      "question": "Michelangelo ließ für jeden Maltag frisch verputzen. Etwa wie viele Tagesfelder hat die Decke der Sixtinischen Kapelle?",
+      "unit": "Felder",
+      "explanation": "Etwa 570 Giornate, von Restauratoren an den Nähten gezählt: rund 300 für die erste Hälfte der Decke und 270 für die zweite. Ein großes Wandfresko kann 10 bis 20 brauchen."
+    },
+    {
+      "alt": "Animation in Freskofarben auf dunklem Grund: ein Plan der Sixtinischen Decke, 35 mal 14 m. Ein Tagesfeld nassen Putzes wird aufgetragen und bemalt; unter der Lupe wird Kalk mit Kohlendioxid zu Calciumcarbonat um das Pigment; 570 Felder füllen das Gewölbe; Überlappungen zeigen ihre Reihenfolge.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Senke das Licht, bis die Nähte zwischen den Putzfeldern sichtbar werden, und tippe die Felder dann in der Reihenfolge an, in der sie aufgetragen wurden.",
+      "takeaway": "Jedes neuere Feld überlappt den Rand eines älteren, und Streiflicht zeigt, welche Seite oben liegt. So lasen Restauratoren die Nähte der Sixtinischen Decke: etwa 570 Arbeitstage."
+    },
+    {
+      "alt": "Blick hinauf zum Altarende der Decke der Sixtinischen Kapelle: Gemalte Architektur rahmt Gott, der Sonne und Mond erschafft, der Prophet Jona sitzt über der Altarwand, und darunter ist der obere Teil des Jüngsten Gerichts zu sehen.",
+      "caption": "Das Altarende der Decke, mit der Erschaffung von Sonne und Mond in der Mitte und dem Propheten Jona über der Altarwand."
+    },
+    {
+      "heading": "Wie echtes Fresko die Farbe einschließt",
+      "steps": [
+        {
+          "label": "Ein Tagesfeld nassen Kalkputz auftragen"
+        },
+        {
+          "label": "Nur mit Wasser angerührtes Pigment auftragen"
+        },
+        {
+          "label": "Der Kalk nimmt Kohlendioxid aus der Luft auf"
+        },
+        {
+          "label": "Calciumcarbonat schließt die Farbe ein"
+        },
+        {
+          "label": "Den unbemalten Rest wegschneiden"
+        }
+      ]
+    },
+    {
+      "heading": "Malen auf nassem oder trockenem Putz",
+      "left": {
+        "label": "Buon fresco",
+        "text": "Pigment in Wasser auf nassem Kalkputz. Kein Leim nötig: Beim Abbinden des Kalks wird die Farbe Teil der Wand."
+      },
+      "right": {
+        "label": "A secco",
+        "text": "Farbe auf trockenem Putz braucht ein Bindemittel wie Ei oder Leim und liegt auf der Oberfläche, daher hält sie schlechter."
+      }
+    },
+    {
+      "question": "Warum ließ Michelangelo jeden Tag frischen Putz auftragen, statt die ganze Decke der Sixtinischen Kapelle auf einmal zu verputzen?",
+      "options": [
+        "Putz trocknet in etwa 10–12 Stunden",
+        "Der Papst zahlte ihn pro Feld",
+        "Frischer Putz machte die Decke leichter",
+        "Das Gerüst trug nur eine Tageslast"
+      ],
+      "explanation": "Echtes Fresko gelingt nur, solange der Kalk nass ist. Ist eine Schicht nach etwa 10 bis 12 Stunden trocken, bindet das Pigment nicht mehr, also fasste jedes Feld einen Tag Malerei."
+    }
+  ]
+}

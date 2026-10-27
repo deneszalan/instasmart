@@ -1,0 +1,70 @@
+{
+  "id": "history-caesar-ides-pompey-curia",
+  "title": "Julius Caesar starb in Pompeius’ Saal, heute am Largo Argentina; die Berichte sind uneins",
+  "body": "Am 15. März 44 v. Chr., den Iden des März, wurde Julius Caesar, Sieger eines Bürgerkriegs und seit Anfang 44 v. Chr. Diktator auf Lebenszeit, bei einer Senatssitzung erstochen. Der Senat tagte in der Kurie des Pompeius, einem Saal am Ende der Gärten hinter Pompeius’ Theater, Roms erstem festen Theater, denn das Senatsgebäude war 52 v. Chr. abgebrannt. Der Tuffsockel des Saals liegt hinter zwei Tempeln des [Largo di Torre Argentina](https://turismoroma.it/it/luoghi/area-sacra-di-largo-di-torre-argentina), ein paar Minuten vom Pantheon. Was drinnen geschah, wissen wir von späteren Autoren. Der Zeitgenosse Nikolaos von Damaskus schrieb vor 14 n. Chr. von 35 Wunden und über 80 Verschwörern; Plutarch und [Sueton](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Julius%2A.html), rund 150 Jahre später, zählen 23. Laut Sueton hielt ein Arzt nur die zweite Wunde für tödlich; Caesar schwieg, doch manche schrieben von griechischen Worten an Brutus: „Auch du, Kind?“ „Et tu, Brute?“ ist aus Shakespeares Stück von 1599 berühmt. Der Saal wurde zugemauert; die Verschwörer wollten die Republik retten und lösten neue Bürgerkriege aus, die mit Augustus als erstem Kaiser endeten.",
+  "slides": [
+    {
+      "question": "Sueton, der 121 n. Chr. schrieb, zählte Julius Caesars Wunden an den Iden des März. Auf wie viele kam er?",
+      "unit": "Wunden",
+      "explanation": "23, wie auch Plutarch sagt. Nikolaos von Damaskus, der früher schrieb, nennt 35. Ein Arzt, Antistius, hielt nur die zweite für tödlich, so Sueton."
+    },
+    {
+      "alt": "Animation in Nachtblau: Plan von Pompeius’ Theater, Gärten und dem Saal an ihrem Ende, neben den Tempeln am Largo Argentina; eine Münze nennt Caesar Diktator auf Lebenszeit; die Verschwörer; die antiken Berichte als Karten auf einer Zeitleiste; 23 Striche; der Saal zugemauert; Jahre bis 27 v. Chr.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Geh durch die Jahre nach den Iden des März und sieh, wie die Berichte über Caesars Ermordung auftauchen. Wann erscheint der Satz „Et tu, Brute?“?",
+      "takeaway": "In Shakespeares „Julius Caesar“ von 1599, 1.642 Jahre später. Die antiken Berichte, der erste binnen 57 Jahren, nennen 23 oder 35 Wunden und höchstens griechische Worte an Brutus: „Auch du, Kind?“"
+    },
+    {
+      "alt": "Foto eines abgesenkten Bereichs mit römischen Ruinen auf einem Stadtplatz: niedrige Mauern aus Ziegel und Bruchstein, eine abgebrochene weiße Säule und Gras unter Straßenniveau, eine hohe Schirmpinie, ein Geländer, an dem Leute hinunterschauen, und Wohnhäuser dahinter.",
+      "caption": "Der Largo di Torre Argentina heute: Tempel der Republik unter Straßenniveau, neben dem Sockel des Saals, in dem Caesar getötet wurde."
+    },
+    {
+      "heading": "Die berühmten letzten Worte",
+      "left": {
+        "label": "Mythos",
+        "text": "Julius Caesars letzte Worte waren „Et tu, Brute?“"
+      },
+      "right": {
+        "label": "Quellen",
+        "text": "Sueton: kein Wort, nur ein Stöhnen; manche schrieben von griechischen Worten an Brutus. Plutarch: Er rief Casca an. Der lateinische Satz ist Shakespeares."
+      }
+    },
+    {
+      "heading": "Von den Iden zum Kaiser",
+      "events": [
+        {
+          "when": "44 v. Chr.",
+          "text": "Caesars Tod an den Iden des März"
+        },
+        {
+          "when": "43 v. Chr.",
+          "text": "Antonius, Octavian, Lepidus verbünden sich"
+        },
+        {
+          "when": "42 v. Chr.",
+          "text": "Philippi: Brutus, Cassius besiegt"
+        },
+        {
+          "when": "31 v. Chr.",
+          "text": "Actium: Octavian schlägt Antonius"
+        },
+        {
+          "when": "27 v. Chr.",
+          "text": "Octavian wird Augustus"
+        }
+      ]
+    },
+    {
+      "question": "Warum tagte Roms Senat an den Iden des März 44 v. Chr. in einem Saal, den Pompeius gebaut hatte?",
+      "options": [
+        "Sein eigenes Haus war abgebrannt",
+        "Caesar wollte Pompeius ehren",
+        "Pompeius hatte den Senat eingeladen",
+        "Es war der größte Saal Roms"
+      ],
+      "explanation": "Das Senatsgebäude, die Curia Hostilia, war 52 v. Chr. abgebrannt; daher tagte der Senat in anderen Sälen, etwa dem am Ende von Pompeius’ Gärten."
+    }
+  ]
+}

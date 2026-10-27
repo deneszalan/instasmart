@@ -1,0 +1,68 @@
+{
+  "id": "history-castel-sant-angelo-tomb-fortress",
+  "title": "Die Engelsburg begann als Grab Kaiser Hadrians; Päpste machten daraus eine Festung",
+  "body": "Kaiser Hadrian begann sein Grabmal am Tiber 135 n. Chr.; sein Nachfolger Antoninus Pius vollendete es 139 und setzte ihn dort bei, und bis Caracalla 217 wurden hier Kaiser bestattet. Nach der Rekonstruktion des Museums war es etwa 47,5 m hoch: ein quadratischer Sockel von etwa 85 m Breite und eine runde Trommel mit einem Erdhügel darauf, innen eine Rampe, die sich eine volle Runde hinauf zur Grabkammer windet. Die massiven Mauern waren eine fertige Festung, und Anfang des 5. Jahrhunderts wurde der Bau Teil der Stadtmauer Roms. Der Legende nach erschien 590 der Erzengel Michael auf der Spitze und zeigte das Ende einer Pest an: daher der Name Engelsburg, Castel Sant’Angelo, Burg des heiligen Engels. In den 1390er-Jahren wurde der römische Eingang vermauert, und eine Tür in 15 m Höhe erreichte man über eine Zugbrücke; 1494–95 baute Papst Alexander VI. vier Bastionen und einen Graben. Der [Passetto](https://www.turismoroma.it/en/places/passetto-di-borgo), ein ummauerter Gang von etwa 800 m, verbindet sie mit dem Vatikan; 1527 floh Papst Clemens VII. durch ihn beim Sacco di Roma. Seit 1925 Museum, birgt sie im Kern noch Hadrians Mauern, bis zu 44 m hoch.",
+  "slides": [
+    {
+      "question": "In welchem Jahr floh Papst Clemens VII. durch einen ummauerten Gang vom Vatikan in die Engelsburg?",
+      "explanation": "1527, als die Truppen Kaiser Karls V. Rom plünderten. Der Gang, der Passetto, ist etwa 800 m lang."
+    },
+    {
+      "alt": "Animation im Schnitt auf dunklem Tibergrün: Hadrians Grab wächst, quadratischer Sockel, runde Trommel, Erdhügel, mit Wendelrampe zur Grabkammer. Stadtmauer, Engel der Legende und Kapelle kommen hinzu, der Eingang wird vermauert, Bastionen und Graben folgen, der Papst eilt durch den Passetto.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Schäl die Engelsburg bis auf Hadrians Grab zurück: Tippe jedes Mal auf die Schicht, die zuletzt hinzukam.",
+      "takeaway": "Jede Epoche baute auf und um die vorige: die Bastionen von Papst Alexander VI., die Ecktürme von Papst Nikolaus V., die erhöhte Tür, die Kapelle, die Stadtmauer und im Kern das 139 n. Chr. vollendete Grab."
+    },
+    {
+      "alt": "Die Engelsburg vom anderen Tiberufer: die massive runde Trommel von Hadrians Grab mit aufgesetzten Ziegelgeschossen und einer Engelsstatue darüber, hinter zinnenbewehrten Außenmauern und der Uferbefestigung."
+    },
+    {
+      "heading": "Vom Grab zum Museum",
+      "events": [
+        {
+          "when": "139 n. Chr.",
+          "text": "Hadrians Grab ist vollendet."
+        },
+        {
+          "when": "5. Jahrhundert",
+          "text": "Es wird Teil von Roms Stadtmauer."
+        },
+        {
+          "when": "590",
+          "text": "Legende: Erzengel Michael erscheint."
+        },
+        {
+          "when": "1494",
+          "text": "Papst Alexander VI. baut Bastionen und Graben."
+        },
+        {
+          "when": "1925",
+          "text": "Sie wird Nationalmuseum."
+        }
+      ]
+    },
+    {
+      "heading": "Derselbe Bau, 1.900 Jahre später",
+      "left": {
+        "label": "Hadrians Grab",
+        "text": "Ein quadratischer Sockel von etwa 85 m Breite und eine runde Trommel mit Erdhügel, etwa 47,5 m hoch, vollendet 139 n. Chr."
+      },
+      "right": {
+        "label": "Engelsburg",
+        "text": "Derselbe römische Kern, vermauert und erhöht, in vier Bastionen, mit päpstlichen Räumen und einem Engel obenauf."
+      }
+    },
+    {
+      "question": "Die Engelsburg, Castel Sant’Angelo, „Burg des heiligen Engels“, ist nach einer Legende benannt. Wer erscheint darin?",
+      "options": [
+        "Der Erzengel Michael",
+        "Kaiser Hadrian",
+        "Papst Clemens VII.",
+        "Der heilige Petrus"
+      ],
+      "explanation": "Der Legende nach erschien Michael 590 auf Hadrians Grab und steckte sein Schwert ein, als Zeichen, dass eine Pest vorbei war. Später krönte eine Michaelskapelle die Burg."
+    }
+  ]
+}

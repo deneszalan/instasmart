@@ -1,0 +1,61 @@
+{
+  "id": "art-trastevere-gold-tesserae",
+  "title": "Das Gold von Santa Maria in Trastevere glitzert beim Gehen: Die Steinchen sitzen schräg",
+  "body": "Das Apsismosaik von Santa Maria in Trastevere in Rom entstand für Papst Innozenz II., der die Kirche ab 1140 neu bauen ließ: Er steht ganz links mit ihrem Modell, neben Christus und Maria, die vor einem [Goldgrund](https://medievalmosaics.com/mosaics/118) thronen. Jedes Stück dieses Goldes ist Glas: Blattgold, dünner als ein halber Mikrometer, auf einer Glasbasis und unter einer dünnen Glasschicht versiegelt, sodass ein Quadratmeter Goldgrund unter 10 Gramm Gold enthält. Die Mosaizisten drückten die Steinchen, Tesserae genannt, einzeln in feuchten Mörtel und setzten die goldenen in [leicht verschiedenen Winkeln](https://flore.unifi.it/retrieve/083b1696-9046-409a-b5ea-9e1d5c9f9389/GuerraNeriRadtke_EurPhysJPlus_2023.pdf), um ihren Glanz bestmöglich zu nutzen. Ein flacher Spiegel wirft Sonnenlicht nur in eine Richtung zurück, man sähe sein Gleißen also nur von einer Stelle; um ein paar Grad hin und her gekippte Steinchen werfen es in viele Richtungen, sodass einige fast von überall aufblitzen, und andere, wenn man geht oder die Sonne wandert. Unter der Apsis fügte der Künstler Pietro Cavallini 1291 Mosaiken zum Leben Marias hinzu.",
+  "slides": [
+    {
+      "question": "Ein Quadratmeter des Goldgrunds in der Apsis ist mit goldenen Glassteinchen bedeckt. Wie viel Gold enthält er höchstens?",
+      "explanation": "Unter 10 g. Das Gold in jedem Steinchen ist ein Blatt von weniger als einem halben Mikrometer Dicke, und Gold wiegt 19,3 g pro Kubikzentimeter."
+    },
+    {
+      "alt": "Animation in Lapisblau und Gold: die Apsis von Santa Maria in Trastevere mit Christus und Maria auf dem Thron, eine Lupe auf den Tesserae, Steinchen werden in Mörtel gedrückt, eine zerlegte Goldtessera und Sonnenlicht von flachen und gekippten Steinchen zu einem gehenden Betrachter im Mittelschiff.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Kipp die Goldsteinchen und geh durchs Mittelschiff. Finde eine Neigung, bei der du auf über zwei Dritteln des Mittelschiffs die Sonne aufblitzen siehst.",
+      "takeaway": "Flach blitzt das Gold nur aus etwa 12 bis 15 m Entfernung auf. Bis zu etwa 8° in beide Richtungen gekippt, blitzt fast überall irgendein Steinchen auf, und beim Gehen immer andere: Das Gold glitzert."
+    },
+    {
+      "alt": "Foto des Apsismosaiks von Santa Maria in Trastevere: Die gekrönte Maria und Christus, der den Arm um sie legt, sitzen auf einem Thron vor glitzerndem Goldgrund, zwischen Heiligen in weißen und blauen Gewändern; darunter ein Band mit lateinischer Inschrift und ein Fries weißer Schafe auf Blau.",
+      "caption": "Christus und Maria thronen in der Apsis von Santa Maria in Trastevere zwischen Heiligen, darunter das Lamm Gottes und die Schafe."
+    },
+    {
+      "heading": "Wie eine Goldtessera entsteht und gesetzt wird",
+      "steps": [
+        {
+          "label": "Gold zu einem Blatt unter 0,5 µm schlagen"
+        },
+        {
+          "label": "Das Blatt auf eine Glasbasis legen"
+        },
+        {
+          "label": "Es unter dünnem Deckglas versiegeln"
+        },
+        {
+          "label": "Leicht gekippt in feuchten Mörtel drücken"
+        }
+      ]
+    },
+    {
+      "heading": "Warum die Neigung zählt",
+      "left": {
+        "label": "Alle Steinchen flach",
+        "text": "Wie ein großer Spiegel: Das Sonnenlicht prallt in eine Richtung zurück, also siehst du das Gleißen nur von einer Stelle."
+      },
+      "right": {
+        "label": "Verschieden geneigt",
+        "text": "Jedes Steinchen schickt das Licht in seine eigene Richtung, also blitzen einige fast von überall auf und andere, wenn du dich bewegst."
+      }
+    },
+    {
+      "question": "Ein Spiegel wirft Licht im selben Winkel zurück, in dem es auftrifft. Kipp ein Goldsteinchen um 2 Grad: Wie weit schwenkt der Reflex?",
+      "options": [
+        "4 Grad",
+        "2 Grad",
+        "1 Grad",
+        "Gar nicht"
+      ],
+      "explanation": "Doppelt so weit wie die Neigung. Das Kippen ändert den Einfallswinkel des Lichts um 2° und den Ausfallswinkel um weitere 2°."
+    }
+  ]
+}

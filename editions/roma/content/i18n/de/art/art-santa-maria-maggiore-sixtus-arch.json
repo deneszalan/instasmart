@@ -1,0 +1,69 @@
+{
+  "id": "art-santa-maria-maggiore-sixtus-arch",
+  "title": "Santa Maria Maggiore: Die Legende nennt Augustschnee, die Mosaiken einen späteren Papst",
+  "body": "Santa Maria Maggiore auf dem Esquilin ist eine der vier Papstbasiliken Roms. Eine [Legende](https://en.wikipedia.org/wiki/Dedication_of_the_Basilica_of_Saint_Mary_Major) erzählt, in der Nacht des 5. August sei dort Schnee gefallen und Papst Liberius (352–366) habe die Kirche darin vorgezeichnet, doch kein Text kennt sie vor dem Jahr 1000; zur Erinnerung fallen noch jeden 5. August weiße Blütenblätter von der Decke. Bessere Zeugen sind die Mosaiken der Kirche selbst. Hoch an den Wänden des Mittelschiffs erzählen Bildfelder vom Alten Testament, viele in eine obere und eine untere Szene geteilt, und lesen sich wie ein Bildstreifen; 27 der 42 sind erhalten. Über dem Altar zeigt der Triumphbogen die Kindheit Christi in vier Bändern, und ganz oben steht auf Latein *Xystus episcopus plebi Dei*, „Sixtus, Bischof, dem Volk Gottes“: Papst Sixtus III., Bischof von Rom von 432 bis 440. Das Thema passt zu diesen Jahren, kurz nachdem das Konzil von Ephesos 431 Maria Gottesmutter genannt hatte, und Sixtus’ eigene Weiheinschrift erwähnt keinen Schnee. Später kamen das Apsismosaik von 1295 hinzu, eine Decke, angeblich mit frühem Gold aus Amerika vergoldet, und 2025 das Grab von Papst Franziskus.",
+  "slides": [
+    {
+      "question": "Das Bogenmosaik von Santa Maria Maggiore nennt Papst Sixtus III. In welchem Jahr wurde er Bischof von Rom?",
+      "explanation": "432 n. Chr. Er leitete die Kirche in Rom bis 440, also entstand der Bogen in diesen acht Jahren, kurz nach dem Konzil von Ephesos 431."
+    },
+    {
+      "alt": "Animation in verschneiter violetter Nacht: Papst Liberius zeichnet den Grundriss von Santa Maria Maggiore in den Schnee; ein Zeitstrahl; die Felder mit dem Alten Testament; ein Feld mit zwei Szenen; 27 von 42 Feldern; der Bogen mit XYSTVS EPISCOPVS PLEBI DEI; Blüten fallen von goldener Decke.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Schalte Hinweise vom Bogen in Santa Maria Maggiore zu, bis für sein Mosaik nur noch ein Zeitfenster bleibt.",
+      "takeaway": "Nur Papst Sixtus III., Bischof von Rom 432–440, passt zu einem Bischof namens Sixtus, nach Ephesos und vor der Apsis von 1295. Papst Liberius aus der Legende, 352–366, scheidet aus."
+    },
+    {
+      "alt": "Foto der rechten Seite des Triumphbogens in Santa Maria Maggiore: Bänder aus Mosaikfiguren in weißen und farbigen Gewändern auf Gold und Blau, ein König auf einem Thron mit der Aufschrift HERODES und unten eine ummauerte Stadt mit der Aufschrift BETHLEEM, darunter weiße Schafe.",
+      "caption": "Die rechte Seite des Triumphbogens aus den 430er-Jahren: Szenen aus der Kindheit Christi, König Herodes und die Stadt Bethlehem mit ihren Schafen."
+    },
+    {
+      "heading": "Zwei Geschichten eines Anfangs",
+      "left": {
+        "label": "Die Legende",
+        "text": "Schnee am 5. August, zur Zeit von Papst Liberius (352–366), zeichnete den Grundriss vor. Kein Text erzählt das vor dem Jahr 1000."
+      },
+      "right": {
+        "label": "Die Mosaiken",
+        "text": "Der Bogen nennt Sixtus, Bischof von Rom 432–440, und ehrt Maria kurz nach dem Konzil von Ephesos 431."
+      }
+    },
+    {
+      "heading": "Santa Maria Maggiore in fünf Daten",
+      "events": [
+        {
+          "when": "352–366",
+          "text": "Liberius, der Papst der Legende"
+        },
+        {
+          "when": "431",
+          "text": "Ephesos nennt Maria Gottesmutter"
+        },
+        {
+          "when": "432–440",
+          "text": "Papst Sixtus III.; das Bogenmosaik"
+        },
+        {
+          "when": "nach 1000",
+          "text": "Die Schneelegende wird aufgeschrieben"
+        },
+        {
+          "when": "2025",
+          "text": "Papst Franziskus wird hier begraben"
+        }
+      ]
+    },
+    {
+      "question": "Was am Triumphbogen von Santa Maria Maggiore zeigt, wann sein Mosaik entstand?",
+      "options": [
+        "Eine lateinische Zeile, die Sixtus nennt",
+        "Gemalter Schnee für den 5. August",
+        "Gold aus Amerika",
+        "Ein Bildnis von Papst Liberius"
+      ],
+      "explanation": "„Xystus episcopus plebi Dei“ nennt Sixtus III., Bischof von Rom 432–440. Die Schneelegende wird erst nach dem Jahr 1000 aufgeschrieben."
+    }
+  ]
+}

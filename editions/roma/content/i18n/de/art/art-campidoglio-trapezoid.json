@@ -1,0 +1,69 @@
+{
+  "id": "art-campidoglio-trapezoid",
+  "title": "Michelangelo baute Roms Kapitolsplatz um eine schiefe Ecke, nicht um einen rechten Winkel",
+  "body": "Als Papst Paul III. 1536 den Florentiner Bildhauer, Maler und Architekten Michelangelo Buonarroti beauftragte, die Kuppe des Kapitols neu zu gestalten, standen dort zwei alte Paläste im Winkel von etwa 80 Grad. Michelangelo behielt den Winkel und spiegelte ihn mit einem neuen Palast, dem Palazzo Nuovo, sodass der [Platz ein Trapez ist](https://museicapitolini.org/en/node/2494): laut OpenStreetMap etwa 44 m breit, an der Rampe Cordonata, und 58 m am Palazzo Senatorio. In der Perspektive wirkt eine Breite umso kleiner, je ferner sie ist, so scheint das ferne Ende eines Rechtecks zu schrumpfen; hier öffnen sich die Seiten, und oben von der Rampe wirkt der ferne Palast etwa ein Drittel breiter als am Ende eines Rechtecks. In die Mitte plante er ein Oval mit zwölfzackigem Stern, auf der abschüssigen Kuppe durch flache Stufen eben gehalten; verlegt wurde es erst 1940. In seiner Mitte steht eine Kopie des bronzenen Mark Aurel von etwa 175 n. Chr.: Die meisten römischen Bronzen wurden eingeschmolzen, diese blieb erhalten, weil man den Reiter für Konstantin hielt, den ersten christlichen Kaiser. Das Original kam 1981 zur Restaurierung ins Innere und ist heute in den Kapitolinischen Museen.",
+  "slides": [
+    {
+      "question": "Der Kapitolsplatz wird von 44 auf 58 m breiter. Wie viel breiter wirkt der ferne Palast als am Ende eines Rechtecks?",
+      "explanation": "Etwa 32 %. In der Perspektive wirkt eine Breite proportional zu Breite ÷ Entfernung, und bei gleicher Entfernung ist 58 ÷ 44 = 1,32."
+    },
+    {
+      "alt": "Animation des Kapitolsplatzes im Grundriss: zwei alte Paläste im Winkel von 80°, ein gespiegelter neuer Palast, ein Trapez von 44 bis 58 m Breite; dann zwei perspektivische Ansichten von der Cordonata, Rechteck und Trapez; das ebene Oval mit seinem Stern; und der bronzene Mark Aurel.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Dreh die seitlichen Paläste nach außen, bis das ferne Ende des Platzes so breit ist wie das echte, etwa 58 m, und beobachte den Blick von der Rampe.",
+      "takeaway": "Um je etwa 7° nach außen gedreht, weitet sich der Platz von 44 auf 58 m, und vom oberen Ende der Cordonata füllt der ferne Palast etwa ein Drittel mehr des Blickfelds als am Ende eines Rechtecks."
+    },
+    {
+      "alt": "Foto des Kapitolsplatzes vom Palazzo Senatorio aus im frühen Morgenlicht: ein dunkles Pflaster mit einem Muster aus weißen, geschwungenen Linien, der bronzene Reiter auf einem Sockel, Marmorstatuen oben an der Rampe und rechts ein Palast mit Arkaden.",
+      "caption": "Der Platz vom Palazzo Senatorio aus: das Sternpflaster von 1940, die Kopie des Mark Aurel und rechts der Palazzo Nuovo."
+    },
+    {
+      "heading": "Der Blick vom oberen Ende der Cordonata",
+      "left": {
+        "label": "Ein Rechteck",
+        "text": "Die Seiten scheinen mit der Entfernung zusammenzulaufen, und der ferne Palast würde etwa 39° des Blickfelds füllen."
+      },
+      "right": {
+        "label": "Michelangelos Trapez",
+        "text": "Die Seiten öffnen sich gegen die Perspektive, und der ferne Palast füllt etwa 50° des Blickfelds."
+      }
+    },
+    {
+      "heading": "Ein Plan, Jahrhunderte später vollendet",
+      "events": [
+        {
+          "when": "1536",
+          "text": "Paul III. beauftragt Michelangelo"
+        },
+        {
+          "when": "1538",
+          "text": "Mark Aurel kommt aufs Kapitol"
+        },
+        {
+          "when": "1603",
+          "text": "Bau des Palazzo Nuovo beginnt"
+        },
+        {
+          "when": "1940",
+          "text": "Das Sternpflaster wird verlegt"
+        },
+        {
+          "when": "1981",
+          "text": "Das Original kommt ins Innere"
+        }
+      ]
+    },
+    {
+      "question": "Die meisten römischen Bronzestatuen wurden eingeschmolzen. Warum blieb der bronzene Mark Aurel erhalten?",
+      "options": [
+        "Man hielt ihn für Konstantin",
+        "Er lag bis 1538 vergraben",
+        "Er war zu schwer zum Bewegen",
+        "Er war in einer Kirche versteckt"
+      ],
+      "explanation": "Im Mittelalter hielt man den Reiter für Konstantin, den ersten christlichen Kaiser; so wurde die Statue verschont und blieb beim Lateranpalast zu sehen."
+    }
+  ]
+}

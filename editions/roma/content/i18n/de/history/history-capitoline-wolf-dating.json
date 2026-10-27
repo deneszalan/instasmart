@@ -1,0 +1,70 @@
+{
+  "id": "history-capitoline-wolf-dating",
+  "title": "Roms Bronzewölfin, lange für etruskisch gehalten, wurde vielleicht im Mittelalter gegossen",
+  "body": "Die Wölfin in den Kapitolinischen Museen, die der Legende nach Romulus und Remus säugte, galt lange als etruskisches Werk des 5. Jahrhunderts v. Chr.; die Zwillinge unter ihr kamen im späten 15. Jahrhundert hinzu, wahrscheinlich vom Bildhauer Antonio del Pollaiuolo. Bei ihrer Restaurierung 1997–2000 stellte Anna Maria Carruba fest, dass sie in einem Stück im Wachsausschmelzverfahren gegossen war, wie im Mittelalter Glocken, während man große antike Bronzen in Teilen goss und zusammenfügte. Der Tonkern in ihrem Inneren barg zwei Uhren. Die Radiokarbondatierung von 34 organischen Proben daraus an der Universität des Salento ergab 1021–1153 n. Chr.; die [Thermolumineszenz](https://boa.unimib.it/retrieve/9f5fadfe-d0e4-4728-9b55-7f1c12863cb0/10281-324556_VoR.pdf) des Tons, die die seit dem Erhitzen beim Guss gespeicherte Strahlendosis misst, ist ungenauer, setzt den Guss aber zwischen das 8. und 14. Jahrhundert. Viele Fachleute widersprechen weiterhin: Auf einer Konferenz in Rom 2008 sprach sich die Mehrheit für eine etruskische Wölfin aus, und auch eine Metallstudie von 2025, die auf mittelalterliche Quellen weist, ist umstritten.",
+  "slides": [
+    {
+      "prompt": "Die Bronzewölfin Roms wurde lange auf etwa 480 v. Chr. datiert. Was ergab die Radiokarbondatierung des Tons in ihrem Inneren?",
+      "answer": "Sie wurde zwischen 1021 und 1153 n. Chr. gegossen",
+      "detail": "34 organische Proben aus ihrem Tonkern, gemessen an der Universität des Salento, weisen ins 11. oder 12. Jahrhundert, rund 1.500 Jahre später."
+    },
+    {
+      "alt": "Animation in Bronze und Lampenlicht: die Kapitolinische Wölfin, eine Gussform im Schnitt mit Tonkern, eine antike Statue in Teilen neben der Wölfin aus einem Stück und einer Glocke, eine C-14-Zerfallskurve, Kristallfallen, die sich füllen und leuchten, und eine Zeitleiste von 600 v. Chr. bis heute.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Verschieb den Anteil an Kohlenstoff-14, der in einer Probe übrig ist. Wie viel enthielte ein Tonkern, gegossen zur Zeit der Etrusker um 480 v. Chr., noch?",
+      "takeaway": "Etwa 74 %. Die Kerne der Wölfin enthalten etwa 89 %, 963 Radiokarbonjahre; an Baumringen kalibriert heißt das 1021–1153 n. Chr., rund fünfzehn Jahrhunderte nach den Etruskern."
+    },
+    {
+      "alt": "Foto der dunklen Bronzewölfin auf einem Steinsockel, den Kopf gewandt, die Ohren aufgestellt, das Maul offen, Felllocken am Hals; zwei kleine Bronzeknaben knien unter ihr und blicken nach oben, um zu trinken.",
+      "caption": "Die Kapitolinische Wölfin, 75 cm hoch, mit den im 15. Jahrhundert hinzugefügten Zwillingen Romulus und Remus."
+    },
+    {
+      "heading": "Fünf Jahrhunderte Streit ums Alter",
+      "events": [
+        {
+          "when": "1471",
+          "text": "Papst Sixtus IV. bringt sie aufs Kapitol"
+        },
+        {
+          "when": "1997–2000",
+          "text": "Restauriert, Guss in einem Stück"
+        },
+        {
+          "when": "2006",
+          "text": "Restauratorin Anna Maria Carruba: mittelalterlich"
+        },
+        {
+          "when": "2008",
+          "text": "Tagung in Rom: weiter etruskisch"
+        },
+        {
+          "when": "2019",
+          "text": "Radiokarbon: 1021–1153 n. Chr."
+        }
+      ]
+    },
+    {
+      "heading": "Zwei Uhren im Tonkern",
+      "left": {
+        "label": "Radiokarbon",
+        "text": "Datiert die in den Kern gemischten organischen Reste über ihr restliches Kohlenstoff-14: 1021–1153 n. Chr."
+      },
+      "right": {
+        "label": "Thermolumineszenz",
+        "text": "Datiert das letzte Erhitzen des Tons, den Guss, über die seither gespeicherte Strahlendosis: 8.–14. Jahrhundert."
+      }
+    },
+    {
+      "question": "Warum deutete der Guss aus einem Stück darauf hin, dass die Wölfin mittelalterlich ist?",
+      "options": [
+        "Große antike Bronzen waren mehrteilig",
+        "Bronze war vor 1000 n. Chr. unbekannt",
+        "Die Etrusker hatten kein Wachs",
+        "Mittelalterliche Bronze ist dunkler"
+      ],
+      "explanation": "Griechische und römische Bronzen wurden meist in mehreren Teilen gegossen und zusammengefügt. Guss in einem Stück war im Mittelalter üblich, etwa bei Glocken."
+    }
+  ]
+}

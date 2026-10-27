@@ -1,0 +1,67 @@
+{
+  "id": "art-arch-of-titus-menorah",
+  "title": "2012 entdeckte Spuren zeigen: Die Menora am Titusbogen in Rom war einst gelb bemalt",
+  "body": "Kaiser Domitian errichtete den [Titusbogen](https://en.wikipedia.org/wiki/Arch_of_Titus) an der Via Sacra am Forum Romanum bald nach 81 n. Chr. für seinen vergöttlichten Bruder Titus. Als Feldherr schlug Titus den jüdischen Aufstand nieder: 70 n. Chr. zerstörte sein Heer Jerusalem und den Tempel, Zentrum des jüdischen Kults; 71 feierte er mit seinem Vater Vespasian in Rom einen Triumph. Ein Relief im Bogen zeigt die dabei getragenen Tempelschätze, in der Mitte die siebenarmige Menora. Im Juni 2012 scannte ein Team um Steven Fine (Yeshiva University) sie in 3D und nutzte **UV-VIS-Spektrometrie**: Sie misst berührungslos, welche Lichtfarben eine Oberfläche zurückwirft. Gelbes Pigment schluckt blaues Licht, und die Messung fand [Spuren von gelbem Ocker](https://www.yu.edu/node/22505) an Armen und Fuß der Menora, passend zur goldenen Menora beim Historiker und Augenzeugen Josephus. Die Menora des Reliefs wurde Vorbild für das Emblem des Staates Israel, und Roms Juden mieden lange den Weg unter dem Bogen. In eine mittelalterliche Festung verbaut, wurde er in den 1820er-Jahren von Giuseppe Valadier wiederhergestellt, die fehlenden Teile in Travertin, damit man Alt und Neu unterscheidet.",
+  "slides": [
+    {
+      "question": "2012 fanden Forscher Farbspuren an der Menora, die im Titusbogen in Rom in Stein gehauen ist. Welche Farbe hatte sie?",
+      "options": [
+        "Gelb",
+        "Rot",
+        "Blau",
+        "Grün"
+      ],
+      "explanation": "Gelber Ocker, ein Erdpigment, an Armen und Fuß der Menora. Das passt zu antiken Beschreibungen der Menora des Tempels als golden."
+    },
+    {
+      "alt": "Animation: der Titusbogen an der Via Sacra, Jahre 66 bis 81 n. Chr., dann das Relief der Tempelbeute mit der Menora. Eine cyanfarbene Linie scannt es in 3D; Lichtsonde und Kurve zeigen, wie gelber Ocker blaues Licht schluckt; Arme und Fuß der Menora werden ockergelb. Dann füllt Travertin die Lücken.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Ändere die Farbe des Lichts auf dem Relief. Finde eine Farbe, in der die Stelle mit Ockerspuren deutlich dunkler wirkt als blanker Marmor.",
+      "takeaway": "Blaues oder violettes Licht: Gelber Ocker schluckt es, daher zeigen sich die Spuren als dunklere Flecken, während sie in rotem Licht fast verschwinden. Ein Spektrometer misst alle Farben auf einmal."
+    },
+    {
+      "alt": "Foto des verwitterten Marmorreliefs im Titusbogen in Rom: Ein Zug von Männern in Tuniken trägt eine große siebenarmige Menora auf einem gestuften Sockel, dahinter Schilder an Stangen und lange Trompeten.",
+      "caption": "Das Beuterelief an der Südwand des Durchgangs, mit der hoch getragenen Menora."
+    },
+    {
+      "heading": "Wie man die Farbe der Menora fand",
+      "steps": [
+        {
+          "label": "Das Relief in 3D scannen, unter 1 mm genau"
+        },
+        {
+          "label": "Licht darauf richten, ohne es zu berühren"
+        },
+        {
+          "label": "Zurückgeworfene Farben messen (UV-VIS)"
+        },
+        {
+          "label": "Gelber Ocker an Armen und Fuß"
+        }
+      ]
+    },
+    {
+      "heading": "Alt und Neu am Titusbogen",
+      "left": {
+        "label": "Römischer Marmor",
+        "text": "Der feine weiße Stein des bald nach 81 n. Chr. erbauten Bogens, mit seinen gemeißelten Reliefs."
+      },
+      "right": {
+        "label": "Travertin der 1820er",
+        "text": "Der schlichtere, porösere Stein, mit dem Giuseppe Valadier die fehlenden Teile ergänzte."
+      }
+    },
+    {
+      "question": "Warum nahm Giuseppe Valadier für die Teile des Titusbogens, die er in den 1820er-Jahren neu baute, Travertin statt Marmor?",
+      "options": [
+        "Damit man Alt und Neu unterscheidet",
+        "Travertin ist fester",
+        "Marmor war verboten",
+        "Passend zum Kolosseum"
+      ],
+      "explanation": "Der schlichtere Stein hebt seine Arbeit auf einen Blick vom Marmor ab. Der Archäologische Park, der die Stätte verwaltet, nennt die Restaurierung einen Meilenstein der Denkmalpflege."
+    }
+  ]
+}

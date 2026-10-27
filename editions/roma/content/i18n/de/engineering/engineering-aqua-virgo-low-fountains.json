@@ -1,0 +1,47 @@
+{
+  "id": "engineering-aqua-virgo-low-fountains",
+  "title": "Der Trevi-Brunnen liegt tief, weil sein römischer Aquädukt von 19 v. Chr. so tief verläuft",
+  "body": "Der Trevi-Brunnen ist der prächtige Endpunkt der **Aqua Virgo**, der Wasserleitung, die Marcus Agrippa, Feldherr des Kaisers Augustus, laut dem römischen Autor Frontinus am 9. Juni 19 v. Chr. nach Rom führte. Ihre Quellen bei Salone, etwa 10 km vor der Stadt, liegen nur rund 24 m über dem Meer, und ihr fast ganz unterirdischer Kanal fällt auf etwa 21 km nur wenige Meter. So konnte sie, wie [David Karmon erklärt](https://waters.iath.virginia.edu/Journal3KarmonNew.pdf), nur die tiefen Teile Roms erreichen. Wasser in einer Leitung steigt nicht höher als sein Ursprung, also können Brunnen an diesem Aquädukt keine hohen Fontänen werfen. Pietro Berninis Barcaccia-Brunnen am Fuß der Spanischen Treppe (1626–29) liegt unter Straßenniveau, und der Architekt Nicola Salvi senkte den Trevi-Brunnen (1732–62) in den Boden: Sein Wasser stürzt über gemeißelte Felsen in ein tiefes Becken. Dasselbe Wasser speist bis heute die Barcaccia und Gian Lorenzo Berninis Vierströmebrunnen auf der Piazza Navona. Die Münzen aus dem Trevi-Brunnen gehen an die katholische Hilfsorganisation Caritas: 2022 über 1,4 Millionen Euro.",
+  "slides": [
+    {
+      "question": "Die Barcaccia, ein bootsförmiger Brunnen an Roms Spanischer Treppe, liegt unter Straßenniveau. Warum?",
+      "options": ["Sein Aquäduktwasser hatte wenig Druck", "Zum Schutz vor Tiberhochwasser", "Um ihn vor dem Papstpalast zu verbergen", "Sein Stein war zu schwer zum Anheben"],
+      "explanation": "Sein Wasser kommt aus der Aqua Virgo, deren tief liegende Quellen zu wenig Druck für Fontänen oder Kaskaden lassen; darum setzte der Bildhauer Pietro Bernini den Brunnen unter die Straße."
+    },
+    {
+      "alt": "Animation in Nachttürkis und Travertin: der Trevi-Brunnen, sein Becken unter der Straße; das lange Profil der Aqua Virgo ab tiefen Quellen, 21 km, zu 91 % unterirdisch; ein Rohr, dessen Wasser auf Quellhöhe stoppt; die versenkte Barcaccia; das stürzende Wasser des Trevi; Münzen für die Caritas.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Das Wasser des Aquädukts steht nur einen halben Meter über der Straße. Senke den Brunnen ab, bis seine Fontäne mindestens 2 m hoch ist.",
+      "takeaway": "Senkst du die Düse um 1,5 m, steigt die Fontäne 2 m hoch, doch ihre Spitze reicht nur bis zum Wasserspiegel selbst. Darum liegen Barcaccia und Trevi-Brunnen unter der Straße."
+    },
+    {
+      "alt": "Der Trevi-Brunnen bei Tag: die Statue des Oceanus im mittleren Bogen der Palastfassade, Wasser fließt über gemeißelte Felsen in ein blassgrünes Becken."
+    },
+    {
+      "value": "91 %",
+      "label": "der Aqua Virgo verliefen unterirdisch",
+      "text": "12.865 ihrer 14.105 Doppelschritte, etwa 21 km, nach den Zahlen des römischen Autors Frontinus. Nur das letzte Stück, in der Stadt, verlief oberirdisch, teils auf Bögen."
+    },
+    {
+      "heading": "Wie eine tiefe Quelle einen Brunnen formt",
+      "steps": [
+        { "label": "Quellen nur etwa 24 m über dem Meer" },
+        { "label": "Ein Kanal, der auf 21 km wenige Meter fällt" },
+        { "label": "Wasser im Rohr steigt nicht über die Quelle" },
+        { "label": "Versenkte Brunnen mit Überlauf und Kaskaden" }
+      ]
+    },
+    {
+      "value": "1,4 Millionen €",
+      "label": "an Münzen aus dem Trevi-Brunnen gingen 2022 an die Caritas",
+      "text": "Über 33 Tonnen Münzen, aus dem Becken gesammelt und gezählt von der Caritas di Roma, dem katholischen Hilfswerk, für ihre Arbeit mit Menschen in Armut."
+    },
+    {
+      "question": "Was bestimmt ohne Pumpe den höchsten Punkt, den das Wasser eines Brunnens erreichen kann?",
+      "options": ["Die Höhe, von der sein Wasser kommt", "Die Breite der Leitung", "Die Länge des Aquädukts", "Die Größe des Beckens"],
+      "explanation": "Wasser in einer Leitung steigt nicht höher als seine Quelle, abzüglich etwas Reibung. Die tiefen Quellen der Aqua Virgo lassen wenig Höhe, darum liegen ihre Brunnen tief."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "history-arch-of-constantine-spolia",
+  "title": "Roms Konstantinsbogen nutzt Skulpturen älterer Kaiser, deren Köpfe nun Konstantin zeigen",
+  "body": "Roms Senat weihte den [Konstantinsbogen](https://en.wikipedia.org/wiki/Arch_of_Constantine) neben dem Kolosseum 315 n. Chr., nachdem Kaiser Konstantin seinen Rivalen Maxentius am 28. Oktober 312 an der Milvischen Brücke besiegt hatte. Viele seiner Skulpturen sind älter als der Bogen: acht gefangene Daker und vier Platten eines Schlachtfrieses aus der Zeit Kaiser Trajans (98–117), acht Rundreliefs mit Jagden und Opfern aus Hadrians Zeit (117–138) und acht Reliefs Mark Aurels, wahrscheinlich von einem Bogen um 176. Die Kaiserköpfe wurden umgemeißelt oder ersetzt, sodass in einigen Rundreliefs Hadrians bärtiger Kopf zu einem jungen Konstantin wurde. Neu waren der schmale Fries von Konstantins Feldzug, die Säulensockel und andere Rahmenteile. Warum die Wiederverwendung? Der Bogen entstand in weniger als drei Jahren, und der Archäologe C. Brian Rose [meint](https://archaeology.org/issues/458-2203/features/10335-rome-constantine-arch), man wollte ihn schnell und billig; andere sehen eine Botschaft: Konstantin als Erbe der „guten Kaiser“. Seine Inschrift schreibt den Sieg einer ungenannten Gottheit zu, vage genug für Heiden wie Christen; 313 wurde das Christentum eine geduldete Religion.",
+  "slides": [
+    {
+      "question": "Roms Konstantinsbogen wurde 315 n. Chr. geweiht. Wie alt waren seine ältesten wiederverwendeten Skulpturen damals etwa?",
+      "unit": "Jahre",
+      "explanation": "Etwa 200 Jahre: Sie stammen aus der Zeit Kaiser Trajans (98–117 n. Chr.). Hadrians Rundreliefs waren fast so alt, die Reliefs Mark Aurels etwa 139 Jahre."
+    },
+    {
+      "alt": "Animation in der Dämmerung: der Konstantinsbogen am Kolosseum, flach gezeichnet. Seine Skulpturen leuchten nach Alter: Trajans blau, Hadrians Rundreliefs grün, Mark Aurels Reliefs violett, Konstantins Fries gold. Ein Kopf wird umgemeißelt; dann eine Zeitleiste 312–315 und ein Christusmonogramm.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Geh von 315 n. Chr. zurück. Finde das früheste Jahr, in dem alle 28 wiederverwendeten Skulpturen des Bogens schon gemeißelt waren.",
+      "takeaway": "176 n. Chr., als Mark Aurels Reliefs entstanden: 139 Jahre vor dem Bogen. Trajans Stücke waren 315 etwa 200 Jahre alt; der Bogen versammelt also anderthalb Jahrhunderte Bildhauerei."
+    },
+    {
+      "alt": "Foto des Konstantinsbogens in Rom bei Sonne: ein marmorner Triumphbogen mit hohem Mitteldurchgang, davorstehenden Säulen, paarweisen Rundreliefs über den Seitendurchgängen, einer Attika mit Inschrift und Reliefplatten und Statuen von Gefangenen auf den Säulen.",
+      "caption": "Die Südseite heute: Die Rundreliefs über den Seitenbögen sind Hadrians, die Attikareliefs Mark Aurels, die stehenden Gefangenen Trajans."
+    },
+    {
+      "heading": "Vier Epochen an einem Bogen",
+      "items": [
+        "Trajan, 98–117 n. Chr.: acht gefangene Daker und vier Platten eines Schlachtfrieses",
+        "Hadrian, 117–138 n. Chr.: acht Rundreliefs mit Jagden und Opfern",
+        "Mark Aurel, um 176 n. Chr.: acht Reliefs in der Attika",
+        "Konstantin, 312–315: der schmale Fries seines Feldzugs, die Säulensockel und mehr"
+      ]
+    },
+    {
+      "heading": "Warum alte Skulpturen wiederverwenden?",
+      "left": {
+        "label": "Tempo und Kosten",
+        "text": "Gebaut zwischen Ende 312 und 315. Der Archäologe C. Brian Rose meint, man wollte ihn schnell und billig fertig haben."
+      },
+      "right": {
+        "label": "Eine Botschaft",
+        "text": "Stücke von Trajan, Hadrian und Mark Aurel, die als gute Kaiser galten, zeigen Konstantin als ihren Erben."
+      }
+    },
+    {
+      "question": "Am Konstantinsbogen in Rom wurde in einigen Rundreliefs ein Kopf zu einem Bildnis Konstantins umgemeißelt. Wen zeigte er vorher?",
+      "options": [
+        "Hadrian",
+        "Julius Caesar",
+        "Augustus",
+        "Nero"
+      ],
+      "explanation": "Hadrian. Die Rundreliefs entstanden unter ihm, fast 200 Jahre früher; in einigen wurde sein bärtiger Kopf zu einem jungen Konstantin umgemeißelt."
+    }
+  ]
+}

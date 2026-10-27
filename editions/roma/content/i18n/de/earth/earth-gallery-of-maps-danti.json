@@ -1,0 +1,51 @@
+{
+  "id": "earth-gallery-of-maps-danti",
+  "title": "Die Galerie der Landkarten im Vatikan breitet Italien über 120 m aus, geteilt am Apennin",
+  "body": "Die Galerie der Landkarten in den Vatikanischen Museen ist ein 120 m langer und 6 m breiter Gang, 1578–1580 für Papst Gregor XIII. gebaut und in unter zwei Jahren ausgemalt. Ihr Bildprogramm entwarf [Egnazio Danti](https://en.wikipedia.org/wiki/Ignazio_Danti), Dominikaner, Mathematiker und Astronom: 40 Karten, 32 davon mit Italiens Regionen von Norden nach Süden, dazu acht schmalere an den Enden. Danti nutzte den **Apennin**, Italiens Gebirgsrückgrat, als Trennlinie: Regionen am Ligurischen und Tyrrhenischen Meer hängen an der Wand zum Belvedere-Hof, die von Alpen und Adria begrenzten an der zu den Vatikanischen Gärten. Durch die Galerie wandert man also Italien entlang seines Kamms hinauf. Jede Regionalkarte zeigt ihre Hauptstadt aus der Vogelschau, und 51 Deckenfelder erzählen Geschichten der Kirche aus den Regionen darunter. Danti saß auch in der Kalenderkommission Gregors XIII.; 1574 fand er die Tagundnachtgleiche am 11. März, weit vor dem 21. März des Kalenders. Die [Vatikanischen Museen](https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/galleria-carte-geografiche.html) nennen sie das erste Bild des damals in viele Staaten geteilten Italiens als ein Land.",
+  "slides": [
+    {
+      "prompt": "In der Galerie der Landkarten im Vatikan hängte der Mathematiker Egnazio Danti das Binnenland Umbrien zur tyrrhenischen Küste. Warum?",
+      "answer": "Umbrien liegt westlich des Apennins, des Kamms, der die Wände teilt",
+      "detail": "Danti teilte Italien entlang seines Gebirgsrückgrats: eine Wand für die Regionen westlich und südlich davon, die andere für die von Alpen und Adria begrenzten."
+    },
+    {
+      "alt": "Animation auf Pergament: die Galerie der Landkarten in Perspektive, dann Italien mit dem Apennin als Rückgrat. Daran zerfällt es in eine tyrrhenische und eine adriatische Hälfte, die zu den Wänden eines Kartengangs werden, von Süden nach Norden begangen; dann Dantis Tagundnachtgleiche von 1574.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Wähle für jede Region die Wand der Galerie der Landkarten, an der ihre Karte hängt, je nachdem, auf welcher Seite des Apennins sie liegt.",
+      "takeaway": "Danti ordnete Italien nach seinem Gebirgskamm, nicht nach den Küsten: Das binnenländische Umbrien kommt an die tyrrhenische Wand, Piemont, Mailand und Bologna nördlich des Kamms an die adriatische."
+    },
+    {
+      "alt": "Die Galerie der Landkarten in den Vatikanischen Museen: ein langes, vergoldetes Tonnengewölbe mit bemalten Feldern, und an beiden Wänden die gemalten Karten der Regionen Italiens bis in die Ferne."
+    },
+    {
+      "heading": "Die zwei Längswände der Galerie",
+      "left": {
+        "label": "Tyrrhenische Wand",
+        "text": "Zum Belvedere-Hof: Ligurien, Toskana, Umbrien, Latium mit Rom, Kampanien, Kalabrien, dann Sizilien, Sardinien und Korsika."
+      },
+      "right": {
+        "label": "Adriatische Wand",
+        "text": "Zu den Vatikanischen Gärten: Piemont, Mailand, die venezianischen Gebiete, Bologna, die Marken, Abruzzen und Apulien, bis zum Stiefelabsatz."
+      }
+    },
+    {
+      "label": "gemalte Karten in der Galerie der Landkarten",
+      "text": "32 Regionen Italiens, von Norden nach Süden geordnet, und 8 schmalere Karten an den Enden: Inseln, vier Häfen und zwei Schlachten."
+    },
+    {
+      "question": "Welche Wand der Galerie der Landkarten trägt die Karte des Herzogtums Mailand?",
+      "options": [
+        "Die Wand der adriatischen Seite",
+        "Die Wand der tyrrhenischen Seite",
+        "Die Stirnwand, mit den Häfen",
+        "Die Decke, mit den Geschichten"
+      ],
+      "explanation": "Mailand liegt nördlich des Apennins, also hängt seine Karte bei den von Alpen und Adria begrenzten Regionen, an der Wand zu den Vatikanischen Gärten."
+    }
+  ],
+  "source": {
+    "label": "Vatikanische Museen: Galerie der Landkarten"
+  }
+}
