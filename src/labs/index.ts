@@ -144,4 +144,8 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'arch-of-constantine-spolia': lazy(() => import('./history/arch-of-constantine-spolia')),
   'rome-after-the-sacks': lazy(() => import('./history/rome-after-the-sacks')),
   'arch-of-titus-menorah': lazy(() => import('./art/arch-of-titus-menorah')),
+  'vatican-obelisk-1586': lazy(() => import('./engineering/vatican-obelisk-1586')),
+  'vatican-city-1929': lazy(() => import('./politics/vatican-city-1929')),
+  'pieta-michelangelo': lazy(() => import('./art/pieta-michelangelo')),
+  'rome-ghetto-1555': lazy(() => import('./history/rome-ghetto-1555')),
 };

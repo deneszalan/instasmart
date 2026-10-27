@@ -144,6 +144,10 @@ export const LABS = {
   'arch-of-constantine-spolia': "Slide back through the years and watch the Arch of Constantine’s reused sculptures being carved, from Trajan’s time to Marcus Aurelius’s, long before AD 315.",
   'rome-after-the-sacks': "Move through the years from AD 100 to 600 and see how scholars’ estimates of Rome’s people fall, from up to a million to some tens of thousands, as dots and as people per km².",
   'arch-of-titus-menorah': "Light the menorah relief on the Arch of Titus with one colour at a time and find the light in which traces of yellow ochre stand out from bare marble.",
+  'vatican-obelisk-1586': 'Make the 40 ropes of Fontana’s capstans start unevenly tight and sound the trumpet: see overloaded ropes snap, as his critics feared, or their capstans stop while the others catch up.',
+  'vatican-city-1929': 'Tap places on a map of Rome and see what each is under the Lateran Treaty of 1929: Vatican City, St Peter’s Square policed by Italy, Holy See property with an embassy’s immunities, or Italy.',
+  'pieta-michelangelo': 'Drag the tip of a triangle standing on the base of Michelangelo’s Pietà until it fits the outline of the whole group, and see where the best tip lies.',
+  'rome-ghetto-1555': 'Pick a year in Rome’s ghetto, from 2,000 people in 1555 to 4,000 in 1656, and add floors to its houses to see how much room each person could have on the same 3 hectares.',
 } as const;
 
 export type LabId = keyof typeof LABS;

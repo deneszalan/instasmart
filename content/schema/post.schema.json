@@ -235,6 +235,10 @@
                   "arch-of-constantine-spolia",
                   "rome-after-the-sacks",
                   "arch-of-titus-menorah"
+                  "vatican-obelisk-1586",
+                  "vatican-city-1929",
+                  "pieta-michelangelo",
+                  "rome-ghetto-1555"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

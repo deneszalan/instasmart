@@ -139,6 +139,10 @@ import { backFor as trajanBack, COLUMN as TRAJAN_COLUMN, earthPerMetre as trajan
 import { carvedBy as archCarvedBy, DEDICATED as ARCH_DEDICATED, REUSED_TOTAL as ARCH_REUSED } from '../src/labs/history/arch-of-constantine-spolia';
 import { density as sackDensity, estimateAt as sackAt, TENTH as SACK_TENTH } from '../src/labs/history/rome-after-the-sacks';
 import { contrast as titusContrast, ochreReflects as titusOchre, spotReflects as titusSpot, STANDS_OUT as TITUS_STANDS } from '../src/labs/art/arch-of-titus-menorah';
+import { move as obeliskMove, NEED as OBELISK_NEED, ROPES as OBELISK_ROPES, slacks as obeliskSlacks, start as obeliskStart, TARGET as OBELISK_TARGET } from '../src/labs/engineering/vatican-obelisk-1586';
+import { classify as vaticanClassify, insideBorder as vaticanInside, PLACES as VATICAN_PLACES } from '../src/labs/politics/vatican-city-1929';
+import { BEST as PIETA_BEST, fit as pietaFit, MARY_HEAD_X } from '../src/labs/art/pieta-michelangelo';
+import { floorPerPerson as ghettoFloor, groundPerPerson as ghettoGround, PEOPLE as GHETTO_PEOPLE, perHectare as ghettoPerHa, ROME_PER_HA, TARGET as GHETTO_TARGET } from '../src/labs/history/rome-ghetto-1555';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1291,5 +1295,49 @@ describe('lab maths', () => {
     expect(titusContrast(450)).toBeGreaterThan(TITUS_STANDS);
     expect(titusContrast(500)).toBeLessThan(TITUS_STANDS);
     expect(titusContrast(620)).toBeLessThan(1.1);
+  it('Vatican obelisk: with uneven ropes, overloaded capstans that stop let all 40 share the load and lift it 2¾ palms; ropes that snap fail', () => {
+    const slack = obeliskSlacks(0.5);
+    let s = obeliskStart(slack);
+    let moves = 0;
+    while (s.h < OBELISK_TARGET && moves < 30) { s = obeliskMove(s, slack, 'stop'); moves++; }
+    expect(s.h).toBeGreaterThanOrEqual(OBELISK_TARGET);
+    expect(s.broken.some(Boolean)).toBe(false);
+    expect(Math.max(...s.pull)).toBeLessThanOrEqual(1 + 1e-9);
+    expect(s.pull.reduce((a, b) => a + b, 0)).toBeCloseTo(OBELISK_NEED, 6);
+    let f = obeliskStart(slack);
+    for (let i = 0; i < 30; i++) f = obeliskMove(f, slack, 'snap');
+    expect(f.broken.filter(Boolean).length).toBeGreaterThan(OBELISK_ROPES - OBELISK_NEED);
+    expect(f.h).toBe(0);
+    const even = obeliskSlacks(0);
+    let g = obeliskStart(even);
+    for (let i = 0; i < 14; i++) g = obeliskMove(g, even, 'snap');
+    expect(g.broken.some(Boolean)).toBe(false);
+  });
+  it('Vatican City: the basilica and gardens are inside the border, the square is Vatican City policed by Italy, the Lateran is Holy See property in Italy', () => {
+    expect(vaticanInside(41.9022, 12.4536)).toBe(true);
+    expect(vaticanInside(41.902, 12.4615)).toBe(false);
+    expect(vaticanClassify(41.9022, 12.4536).kind).toBe('vatican');
+    expect(vaticanClassify(41.904, 12.45).kind).toBe('vatican');
+    expect(vaticanClassify(41.90222, 12.45727).kind).toBe('square');
+    expect(vaticanClassify(41.88585, 12.50559)).toEqual({ kind: 'embassy', place: 'lateran' });
+    expect(vaticanClassify(41.89094, 12.4919).kind).toBe('italy');
+    expect(vaticanClassify(41.88, 12.52).kind).toBe('italy');
+    for (const p of VATICAN_PLACES) expect(vaticanClassify(p.lat, p.lon, 0.05).kind).toBe(p.kind);
+  });
+  it('Pietà: the triangle that best fits the outline of the group has its tip right above Mary’s head', () => {
+    expect(Math.abs(PIETA_BEST.ax - MARY_HEAD_X)).toBeLessThanOrEqual(4);
+    expect(PIETA_BEST.f).toBeGreaterThan(0.8);
+    expect(pietaFit(MARY_HEAD_X, 180)).toBeGreaterThan(PIETA_BEST.f - 0.03);
+    expect(pietaFit(40, 240)).toBeLessThan(PIETA_BEST.f - 0.1);
+    expect(pietaFit(170, 140)).toBeLessThan(PIETA_BEST.f - 0.1);
+  });
+  it('Rome ghetto: 4,000 people on 3 hectares in 1656 is over 1,300 a hectare, about 60 times Rome today, and needs two floors for the room one floor gave in 1555', () => {
+    expect(ghettoPerHa(GHETTO_PEOPLE[1656])).toBeCloseTo(1333.3, 1);
+    expect(Math.round(ROME_PER_HA)).toBe(21);
+    expect(ghettoPerHa(GHETTO_PEOPLE[1656]) / ROME_PER_HA).toBeGreaterThan(60);
+    expect(ghettoGround(GHETTO_PEOPLE[1555])).toBe(15);
+    expect(GHETTO_TARGET).toBe(15);
+    expect(ghettoFloor(GHETTO_PEOPLE[1656], 1)).toBeLessThan(GHETTO_TARGET);
+    expect(ghettoFloor(GHETTO_PEOPLE[1656], 2)).toBe(GHETTO_TARGET);
   });
 });

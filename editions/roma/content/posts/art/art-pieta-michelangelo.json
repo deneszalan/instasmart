@@ -1,0 +1,178 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-pieta-michelangelo",
+  "field": "art",
+  "title": "In Michelangelo’s Pietà, Mary’s body is far bigger than her son’s: her robe hides it",
+  "emoji": "🕊️",
+  "body": "Michelangelo Buonarroti signed the contract for the Pietà on 26 August 1498, aged 23, with the French cardinal Jean de Bilhères, who wanted it for his tomb chapel in Old St Peter’s. It took him about two years, and since 1749 it has stood in the first chapel on the right in St Peter’s Basilica. Its subject, Mary holding her dead son on her knees, poses a problem: a grown man laid full length across a seated woman’s lap. Michelangelo’s answer is that Mary’s body is much bigger than Jesus’s, though their heads are the same size; standing, she would tower over him. Her huge robe, a sea of folds, hides the difference, and the group forms a **pyramid** with her head at the top, 174 cm high and 195 cm wide. It is the only work he signed, on the sash across her chest. The biographer Giorgio Vasari tells that he added it at night after hearing visitors credit another sculptor, but [historians doubt it](https://hyperallergic.com/781165/michelangelos-signature-and-the-myth-of-genius/). On 21 May 1972 a man struck the statue 15 times with a hammer; restorers glued back over 100 fragments, and it now stands behind bulletproof glass.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Michelangelo signed the contract for the Pietà, now in St Peter’s Basilica, in August 1498. How old was he?",
+      "min": 15,
+      "max": 60,
+      "step": 1,
+      "answer": 23,
+      "unit": "years old",
+      "explanation": "23: born in March 1475, he signed on 26 August 1498 with a French cardinal, Jean de Bilhères, and finished it in about two years."
+    },
+    {
+      "type": "video",
+      "src": "pieta.mp4",
+      "poster": "pieta.jpg",
+      "alt": "Animation of Michelangelo's Pietà in white marble in a dark chapel: the dates of the contract; Mary's and Jesus's heads ringed as the same size; two standing figures, Mary far taller; the robe hiding her size; a gold pyramid over the group; the signature on the sash; the statue behind glass.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Cello Suite 1 in G - Prelude” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "pieta-michelangelo",
+      "prompt": "Drag the tip of the triangle, or use the sliders, until it fits the outline of the whole group as closely as it can.",
+      "takeaway": "The best fit stands on the rock with its tip right above Mary’s head: the whole group reads as one pyramid, which is how art historians describe Michelangelo’s composition."
+    },
+    {
+      "type": "image",
+      "src": "pieta-photo.jpg",
+      "alt": "Photo of Michelangelo’s Pietà in white marble: a young, veiled Mary sits holding the dead Jesus across her lap, his head fallen back at the left and his legs hanging over her knee at the right; her left hand is open, and deep folds of her robe spread down to the rock.",
+      "fit": "cover",
+      "credit": "Stanislav Traykov · CC BY 2.5"
+    },
+    {
+      "type": "compare",
+      "heading": "The story of the signature",
+      "left": {
+        "label": "Vasari’s story",
+        "text": "Michelangelo heard visitors credit the statue to ‘our Gobbo from Milan’, the sculptor Cristoforo Solari, and carved his name on it one night."
+      },
+      "right": {
+        "label": "The doubt",
+        "text": "The sash seems made to carry the name from the start, and a young artist could hardly have worked on the statue in secret."
+      }
+    },
+    {
+      "type": "timeline",
+      "heading": "The Pietà",
+      "events": [
+        {
+          "when": "Aug 1498",
+          "text": "Michelangelo, 23, signs the contract."
+        },
+        {
+          "when": "1749",
+          "text": "Moved to the first chapel on the right."
+        },
+        {
+          "when": "21 May 1972",
+          "text": "A man attacks it with a hammer."
+        },
+        {
+          "when": "1973",
+          "text": "Restored and back on show."
+        },
+        {
+          "when": "Nov 2024",
+          "text": "New bulletproof glass is fitted."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "How did Michelangelo fit a grown man across Mary’s lap in the Pietà in St Peter’s Basilica?",
+      "options": [
+        "He made Mary’s body much bigger",
+        "He carved Jesus as a child",
+        "He seated Mary on a high throne",
+        "He folded Jesus in half"
+      ],
+      "answer": 0,
+      "explanation": "Mary’s body is much bigger than his, though their heads are the same size; her robe hides the difference, so the two look natural together."
+    }
+  ],
+  "tags": [
+    "rome",
+    "vatican",
+    "stpeters",
+    "michelangelo",
+    "sculpture",
+    "renaissance"
+  ],
+  "source": {
+    "label": "Vatican Museums: the casts of the three Pietà",
+    "url": "https://m.museivaticani.va/content/dam/museivaticani/pdf/eventi_novita/iniziative/eventi/2023/139_scheda_opere_tre_pieta_en.pdf"
+  },
+  "createdAt": "2026-10-27T18:44:32Z",
+  "theme": {
+    "gradient": [
+      "#1d1a1f",
+      "#5a4a3a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}
