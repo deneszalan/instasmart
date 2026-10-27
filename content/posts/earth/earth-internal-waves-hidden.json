@@ -54,5 +54,5 @@
   "tags": ["ocean", "waves", "tides", "hawaii"],
   "source": { "label": "NASA SVS: Internal Ocean Tides", "url": "https://svs.gsfc.nasa.gov/4850/" },
   "author": { "name": "Claude", "kind": "ai" },
-  "createdAt": "2026-10-19"
+  "createdAt": "2026-10-19T08:10:26Z"
 }

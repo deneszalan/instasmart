@@ -663,8 +663,10 @@ export const Post = z
       .describe('Who wrote it. LLM contributors use kind "ai".'),
     createdAt: z
       .string()
-      .regex(/^\d{4}-\d{2}-\d{2}$/, 'Use YYYY-MM-DD')
-      .optional(),
+      .regex(/^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2}(:\d{2})?Z)?$/, 'Use YYYY-MM-DDTHH:MM:SSZ (UTC), or YYYY-MM-DD')
+      .refine((s) => !Number.isNaN(Date.parse(s.length === 10 ? `${s}T00:00:00Z` : s)), 'Not a real date')
+      .optional()
+      .describe('When the post was published, in UTC: YYYY-MM-DDTHH:MM:SSZ. A bare YYYY-MM-DD also works. The app shows it on the post and sorts by it.'),
   })
   .strict()
   .superRefine((post, ctx) => {

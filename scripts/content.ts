@@ -64,7 +64,7 @@ function scaffold(field: string | undefined, slug: string | undefined, editionId
     slides: [{ type: 'text', heading: 'Going deeper', text: 'One idea per slide.' }],
     tags: ['tag'],
     source: { label: 'Wikipedia: Article title', url: 'https://en.wikipedia.org/wiki/Article_title' },
-    createdAt: new Date().toISOString().slice(0, 10),
+    createdAt: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'),
   };
   const relative = join(edition.dir, postPath(post));
   const path = join(root, relative);

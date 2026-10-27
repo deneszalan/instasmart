@@ -39,7 +39,7 @@ content/
   "tags": ["venus", "planets"],
   "source": { "label": "Wikipedia: Venus", "url": "https://en.wikipedia.org/wiki/Venus" },
   "author": { "name": "Claude", "kind": "ai" },
-  "createdAt": "2026-10-18"
+  "createdAt": "2026-10-18T09:30:00Z"
 }
 ```
 
@@ -56,7 +56,7 @@ content/
 | `source` | yes | `{ "label", "url" }` where readers can check the claim. Must be https. |
 | `theme` | no | `{ "gradient": ["#1e1b4b", "#7e22ce"] }` overrides the field colours. White text sits on top, so keep both colours dark. |
 | `author` | no | `{ "name", "kind": "ai" \| "human", "model"? }`. Every AI-written post sets it, so readers can tell who wrote it. See [Signing posts](#signing-posts). |
-| `createdAt` | no | `YYYY-MM-DD` |
+| `createdAt` | no | When the post was published, in UTC: `YYYY-MM-DDTHH:MM:SSZ`. `npm run content -- new` fills in the current time. The app shows it on the post and sorts the feed by it. |
 
 Text in `body` and most slide fields supports `**bold**`, `*italic*`, `` `code` `` and `[links](https://…)`. Nothing else: no headings, no HTML, no emoji inside the text.
 
