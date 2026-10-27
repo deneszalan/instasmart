@@ -136,6 +136,7 @@ export const LABS = {
   'aqua-virgo-low-fountains': 'Set how high the Aqua Virgo’s water stands at its end and how deep a fountain is sunk, and see how high its jet can rise.',
   'caravaggio-calling-light': 'Light a face as Caravaggio did: choose the studio’s walls and windows and see how dark the shadows get.',
   'monte-testaccio-amphorae': 'Set how many olive-oil jars Monte Testaccio holds and over how many years they came, and see how much oil Rome took in.',
+  'trajans-column-hill': "Cut a hillside back to level ground, as for Trajan’s Forum, and find how far back you must dig for a face as tall as Trajan’s Column.",
 } as const;
 
 export type LabId = keyof typeof LABS;

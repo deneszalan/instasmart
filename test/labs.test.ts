@@ -131,6 +131,7 @@ import { MAX_ROWS as NAVONA_MAX_ROWS, nearEstimate as navonaNear, rowLength as n
 import { jetHeight as virgoJet, jetTop as virgoTop, nozzleSpeed as virgoSpeed } from '../src/labs/engineering/aqua-virgo-low-fountains';
 import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggio-calling-light';
 import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } from '../src/labs/economics/monte-testaccio-amphorae';
+import { backFor as trajanBack, COLUMN as TRAJAN_COLUMN, earthPerMetre as trajanEarth, faceHeight as trajanFace } from '../src/labs/engineering/trajans-column-hill';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1198,5 +1199,12 @@ describe('lab maths', () => {
     expect(testaccioLitres(25e6)).toBe(1.75e9);
     expect(testaccioLitres(53e6)).toBe(3.71e9);
     expect(testaccioPerYear(25e6, 250)).toBe(7e6);
+  });
+  it('Trajan’s Column: a 30° hillside cut back about 51.6 m leaves a face of 100 Roman feet (29.77 m) and about 767 m³ of earth per metre', () => {
+    expect(TRAJAN_COLUMN).toBeCloseTo(29.77, 9);
+    expect(trajanBack(30, TRAJAN_COLUMN)).toBeCloseTo(51.56, 2);
+    expect(trajanFace(30, trajanBack(30, TRAJAN_COLUMN))).toBeCloseTo(29.77, 9);
+    expect(trajanEarth(30, 51.56)).toBeCloseTo(767.4, 0);
+    expect(trajanEarth(45, 20) / trajanEarth(45, 10)).toBeCloseTo(4, 9);
   });
 });
