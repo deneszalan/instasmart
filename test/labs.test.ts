@@ -112,6 +112,7 @@ import { banned as infBanned, kmAt, rangeClass } from '../src/labs/history/reykj
 import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgment-three-votes';
 import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '../src/labs/history/caesar-445-day-year';
 import { coverage as goldCoverage, flashing as goldFlashing, GOAL as GOLD_GOAL, reflectedAngle as goldReflected, tiltsFor as goldTilts } from '../src/labs/art/trastevere-gold-tesserae';
+import { buried as scBuried, site as scSite, STEPS as SC_STEPS } from '../src/labs/earth/san-clemente-three-levels';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1005,5 +1006,15 @@ describe('lab maths', () => {
     expect(goldCoverage(flat)).toBeLessThan(0.15);
     expect(goldCoverage(goldTilts(8))).toBeGreaterThan(GOLD_GOAL);
     expect(goldCoverage(goldTilts(2))).toBeLessThan(GOLD_GOAL);
+  });
+
+  it('San Clemente: building on the ruins leaves three levels under today’s church, the deepest the ruins of AD 64; clearing them away leaves none', () => {
+    expect(scSite(4, 'build')).toEqual(['ruins', 'roman', 'church4', 'church12']);
+    expect(scBuried(4, 'build')).toBe(3);
+    expect(scSite(4, 'clear')).toEqual(['church12']);
+    expect(scBuried(4, 'clear')).toBe(0);
+    expect(scSite(2, 'build')).toEqual(['ruins', 'roman']);
+    expect(scBuried(2, 'build')).toBe(1);
+    expect(SC_STEPS.map((s) => s.year)).toEqual([64, 90, 200, 392, 1100]);
   });
 });

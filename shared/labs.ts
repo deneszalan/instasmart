@@ -117,6 +117,7 @@ export const LABS = {
   'nuremberg-judgment-three-votes': 'Cast the four Nuremberg judges’ votes and compare the Charter’s three-of-four rule for a conviction with a simple majority where the President breaks ties.',
   'caesar-445-day-year': 'Pick a leap-day rule, from none to Caesar’s and the Gregorian, and let the centuries pass to see how far the equinox drifts in the calendar.',
   'trastevere-gold-tesserae': 'Tilt the gold tiles of an apse mosaic and walk down the nave, to see from how much of it the Sun’s reflection flashes at you.',
+  'san-clemente-three-levels': 'Step through San Clemente’s history, rebuilding on the ruins or clearing them away, and see how many older levels stay buried under the floor.',
 } as const;
 
 export type LabId = keyof typeof LABS;
