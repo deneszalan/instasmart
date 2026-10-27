@@ -138,4 +138,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'monte-testaccio-amphorae': lazy(() => import('./economics/monte-testaccio-amphorae')),
   'trajans-column-hill': lazy(() => import('./engineering/trajans-column-hill')),
   'arch-of-constantine-spolia': lazy(() => import('./history/arch-of-constantine-spolia')),
+  'rome-after-the-sacks': lazy(() => import('./history/rome-after-the-sacks')),
 };

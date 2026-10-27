@@ -138,6 +138,7 @@ export const LABS = {
   'monte-testaccio-amphorae': 'Set how many olive-oil jars Monte Testaccio holds and over how many years they came, and see how much oil Rome took in.',
   'trajans-column-hill': "Cut a hillside back to level ground, as for Trajan’s Forum, and find how far back you must dig for a face as tall as Trajan’s Column.",
   'arch-of-constantine-spolia': "Slide back through the years and watch the Arch of Constantine’s reused sculptures being carved, from Trajan’s time to Marcus Aurelius’s, long before AD 315.",
+  'rome-after-the-sacks': "Move through the years from AD 100 to 600 and see how scholars’ estimates of Rome’s people fall, from up to a million to some tens of thousands, as dots and as people per km².",
 } as const;
 
 export type LabId = keyof typeof LABS;

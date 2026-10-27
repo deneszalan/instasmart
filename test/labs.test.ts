@@ -133,6 +133,7 @@ import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggi
 import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } from '../src/labs/economics/monte-testaccio-amphorae';
 import { backFor as trajanBack, COLUMN as TRAJAN_COLUMN, earthPerMetre as trajanEarth, faceHeight as trajanFace } from '../src/labs/engineering/trajans-column-hill';
 import { carvedBy as archCarvedBy, DEDICATED as ARCH_DEDICATED, REUSED_TOTAL as ARCH_REUSED } from '../src/labs/history/arch-of-constantine-spolia';
+import { density as sackDensity, estimateAt as sackAt, TENTH as SACK_TENTH } from '../src/labs/history/rome-after-the-sacks';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1215,5 +1216,13 @@ describe('lab maths', () => {
     expect(archCarvedBy(175)).toBe(20);
     expect(archCarvedBy(176)).toBe(28);
     expect(ARCH_DEDICATED - 176).toBe(139);
+  });
+  it('Rome after the sacks: from up to a million to at most 60,000 by about 550; a million inside the walls is 72,150 per km²', () => {
+    expect(Math.round(sackDensity(1e6))).toBe(72150);
+    expect(sackAt(100).high).toBe(1e6);
+    expect(sackAt(454).high).toBe(500000);
+    expect(sackAt(549).high).toBeGreaterThanOrEqual(SACK_TENTH);
+    expect(sackAt(550).high).toBeLessThan(SACK_TENTH);
+    expect(sackAt(600).high).toBe(90000);
   });
 });

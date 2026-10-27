@@ -228,7 +228,8 @@
                   "caravaggio-calling-light",
                   "monte-testaccio-amphorae",
                   "trajans-column-hill",
-                  "arch-of-constantine-spolia"
+                  "arch-of-constantine-spolia",
+                  "rome-after-the-sacks"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },
