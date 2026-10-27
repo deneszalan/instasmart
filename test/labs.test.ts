@@ -111,6 +111,7 @@ import { canJoin, canSuspend, ELECT_AT as HRC_ELECT, UN_MEMBERS } from '../src/l
 import { banned as infBanned, kmAt, rangeClass } from '../src/labs/history/reykjavik-summit-inf-treaty';
 import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgment-three-votes';
 import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '../src/labs/history/caesar-445-day-year';
+import { canLay, PATCHES as GIORNATE_PATCHES, relief, seams as giornateSeams, under as lapsOver } from '../src/labs/art/sistine-ceiling-giornate';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -992,5 +993,20 @@ describe('lab maths', () => {
     expect(calendarDrift('three', 36)).toBeCloseTo(3.28, 2);
     expect(Math.abs(calendarDrift('gregorian', 1000))).toBeLessThan(1);
     expect(Math.abs(calendarDrift('four', 100))).toBeLessThan(1);
+  });
+  it('sistine giornate: a patch can be numbered only after every older neighbour it laps over; the days in order always work; raking light shows the seams', () => {
+    const byDay = GIORNATE_PATCHES.map((_, i) => i).sort((a, b) => GIORNATE_PATCHES[a].day - GIORNATE_PATCHES[b].day);
+    const laid: number[] = [];
+    for (const i of byDay) {
+      expect(canLay(i, laid)).toBe(true);
+      laid.push(i);
+    }
+    const first = byDay[0];
+    expect(lapsOver(first)).toEqual([]);
+    for (const i of byDay.slice(1)) expect(canLay(i, [])).toBe(lapsOver(i).length === 0);
+    expect(giornateSeams().length).toBeGreaterThanOrEqual(GIORNATE_PATCHES.length);
+    expect(relief(90)).toBeCloseTo(0, 6);
+    expect(relief(0)).toBe(1);
+    expect(relief(10)).toBeGreaterThan(relief(45));
   });
 });

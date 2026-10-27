@@ -1,0 +1,179 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-sistine-ceiling-giornate",
+  "field": "art",
+  "title": "Michelangelo painted the Sistine Chapel ceiling in day-sized patches of wet plaster",
+  "emoji": "🎨",
+  "body": "From 1508 to 1512 Michelangelo painted the ceiling of the Sistine Chapel in the Vatican for Pope Julius II: a vault about 35 m long and 14 m wide, 20 m above the floor. He worked in [buon fresco](https://en.wikipedia.org/wiki/Fresco), true fresco. Each morning a thin coat of wet lime plaster, the *intonaco*, went on only where he could paint that day, and pigment mixed with water soaked into it. As the slaked lime set, it took **carbon dioxide** from the air and turned into **calcium carbonate**, locking the colour into the wall. Plaster dries in about 10 to 12 hours, so the unpainted rim was cut away and the next day's patch, a *giornata*, lapped over its edge. Restorers mapped these seams during the 1980–1994 cleaning: about 570 giornate on the ceiling, where a big wall fresco may need 10 to 20. Because a newer patch always overlaps an older one, the seams also give the order of the days: Michelangelo began at the entrance end and worked back through the Genesis story towards the altar.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Michelangelo laid fresh plaster for each day’s painting. About how many day-patches cover the Sistine Chapel ceiling?",
+      "min": 0,
+      "max": 1000,
+      "step": 10,
+      "answer": 570,
+      "unit": "patches",
+      "explanation": "About 570 giornate, counted by restorers from the seams: some 300 for the first half of the ceiling and 270 for the second. A big wall fresco may need 10 to 20."
+    },
+    {
+      "type": "video",
+      "src": "giornate.mp4",
+      "poster": "giornate.jpg",
+      "alt": "Animation in fresco colours on a dim ground: a plan of the Sistine Chapel ceiling, 35 by 14 m. A day's patch of wet plaster is laid and painted; under a lens, lime takes up carbon dioxide and turns to calcium carbonate around the pigment; 570 patches fill the vault; overlaps give their order.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Jesu, Joy of Man's Desiring” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 24.27
+        },
+        {
+          "start": 24.53,
+          "end": 30.4
+        },
+        {
+          "start": 30.67,
+          "end": 36.53
+        },
+        {
+          "start": 36.8,
+          "end": 42.67
+        },
+        {
+          "start": 42.93,
+          "end": 48.8
+        },
+        {
+          "start": 49.07,
+          "end": 54.93
+        },
+        {
+          "start": 55.2,
+          "end": 61.07
+        },
+        {
+          "start": 61.33,
+          "end": 67.2
+        },
+        {
+          "start": 67.47,
+          "end": 73.33
+        },
+        {
+          "start": 73.6,
+          "end": 79.47
+        },
+        {
+          "start": 79.73,
+          "end": 85.6
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "sistine-ceiling-giornate",
+      "prompt": "Lower the light until the seams between the plaster patches show, then tap the patches in the order they were laid.",
+      "takeaway": "Each newer patch laps over the edge of an older one, and light grazing the wall shows which side is on top. Restorers read the seams of the Sistine ceiling this way: about 570 days of work."
+    },
+    {
+      "type": "image",
+      "src": "ceiling-photo.jpg",
+      "alt": "Looking up at the altar end of the Sistine Chapel ceiling: painted architecture frames God creating the Sun and Moon, the prophet Jonah sits above the altar wall, and the top of the Last Judgment shows below.",
+      "fit": "cover",
+      "caption": "The altar end of the ceiling, with the Creation of the Sun and Moon at the centre and the prophet Jonah above the altar wall.",
+      "credit": "Gary Todd · Public domain"
+    },
+    {
+      "type": "flow",
+      "heading": "How true fresco locks in the colour",
+      "steps": [
+        {
+          "icon": "🧱",
+          "label": "Lay a day’s patch of wet lime plaster"
+        },
+        {
+          "icon": "🖌️",
+          "label": "Brush on pigment mixed only with water"
+        },
+        {
+          "icon": "💨",
+          "label": "The lime takes carbon dioxide from the air"
+        },
+        {
+          "icon": "🪨",
+          "label": "Calcium carbonate forms, locking in colour"
+        },
+        {
+          "icon": "✂️",
+          "label": "Cut away what is left unpainted"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Painting on wet or dry plaster",
+      "left": {
+        "label": "Buon fresco",
+        "text": "Pigment in water on wet lime plaster. No glue is needed: as the lime sets, the colour becomes part of the wall."
+      },
+      "right": {
+        "label": "A secco",
+        "text": "Paint on dry plaster needs a binder such as egg or glue, and sits on the surface, so it lasts less well."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "Why did Michelangelo have fresh plaster laid every day, instead of plastering the whole Sistine Chapel ceiling at once?",
+      "options": [
+        "Plaster dries in about 10–12 hours",
+        "The pope paid him by the patch",
+        "Fresh plaster made the vault lighter",
+        "The scaffold held only a day’s load"
+      ],
+      "answer": 0,
+      "explanation": "True fresco works only while the lime is wet. Once a coat dries, in about 10 to 12 hours, pigment no longer binds to it, so each patch could hold one day’s painting."
+    }
+  ],
+  "tags": [
+    "rome",
+    "vatican",
+    "michelangelo",
+    "fresco",
+    "sistinechapel",
+    "chemistry"
+  ],
+  "source": {
+    "label": "Wikipedia: Sistine Chapel ceiling",
+    "url": "https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling"
+  },
+  "createdAt": "2026-10-27T10:32:08Z",
+  "theme": {
+    "gradient": [
+      "#3a2a1e",
+      "#6e4a2e"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}

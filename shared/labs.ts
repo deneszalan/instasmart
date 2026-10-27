@@ -116,6 +116,7 @@ export const LABS = {
   'reykjavik-summit-inf-treaty': 'Pick how a missile is launched and how far it flies, and see whether the 1987 INF Treaty banned it.',
   'nuremberg-judgment-three-votes': 'Cast the four Nuremberg judges’ votes and compare the Charter’s three-of-four rule for a conviction with a simple majority where the President breaks ties.',
   'caesar-445-day-year': 'Pick a leap-day rule, from none to Caesar’s and the Gregorian, and let the centuries pass to see how far the equinox drifts in the calendar.',
+  'sistine-ceiling-giornate': 'Light a fresco panel from the side until the seams between its day-patches show, and number the patches in the order they were laid.',
 } as const;
 
 export type LabId = keyof typeof LABS;

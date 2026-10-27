@@ -116,4 +116,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'reykjavik-summit-inf-treaty': lazy(() => import('./history/reykjavik-summit-inf-treaty')),
   'nuremberg-judgment-three-votes': lazy(() => import('./history/nuremberg-judgment-three-votes')),
   'caesar-445-day-year': lazy(() => import('./history/caesar-445-day-year')),
+  'sistine-ceiling-giornate': lazy(() => import('./art/sistine-ceiling-giornate')),
 };
