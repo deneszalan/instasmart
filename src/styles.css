@@ -3893,7 +3893,13 @@ p {
 
 .lab--failed {
   justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
   font-size: 14px;
+}
+
+.lab--failed p {
+  margin: 0;
   opacity: 0.85;
 }
 
