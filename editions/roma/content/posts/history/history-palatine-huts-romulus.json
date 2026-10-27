@@ -1,0 +1,175 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-palatine-huts-romulus",
+  "field": "history",
+  "title": "Rome’s founding year, 753 BC, came from counting kings; huts on the Palatine are older",
+  "emoji": "🛖",
+  "body": "Legend says Romulus founded Rome on the Palatine Hill on 21 April, the day of the shepherds’ festival, the Parilia. The year, 753 BC, was fixed by the scholar Varro in the 1st century BC, some 700 years later, and it comes from counting: [Livy](https://www.thelatinlibrary.com/livy/liv.1.shtml) gives Rome’s seven kings **244 years**, and 244 years back from the first consuls of 509 BC is 753 BC. That is almost 35 years per king, a scheme historians have doubted since the 1800s; other ancient writers counted 814, 751, 748 or 728 BC. Archaeology dates the hill another way. In 1948 Salvatore Puglisi found the floors of three huts cut into the soft tuff of the Cermalus, the Palatine’s western top, with holes for the posts of walls of woven branches and clay, and a hearth in the middle; [the archaeological park](https://colosseo.it/en/itineraries/palatium-living-on-the-palatine-from-the-foundation-of-rome-to-the-modern-age/) dates the village from at least the 9th to the 7th century BC by its pottery. Romans kept a ‘hut of Romulus’ there, repaired after fires and storms. Most historians think Rome grew from such hill villages, merged into one city by about 600 BC.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Livy gives Rome’s seven legendary kings 244 years in all. On average, how many years did each one reign?",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "answer": 35,
+      "unit": "years",
+      "explanation": "About 35: 244 ÷ 7 = 34.9 years each. Since the 1800s, historians have doubted such long reigns, and the founding date built on them."
+    },
+    {
+      "type": "video",
+      "src": "palatinehuts.mp4",
+      "poster": "palatinehuts.jpg",
+      "alt": "Animation at dusk over the Palatine Hill: the date 21 April 753 BC, five ancient founding dates on a time line, seven kings' reigns stacked back from 509 BC, a dig through the ground to hut floors and post-holes in the rock, a thatched hut rising, its plan, and villages merging.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Ancient Rite” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "palatine-huts-romulus",
+      "prompt": "Set how long Rome’s seven legendary kings reigned on average, and find the founding year that Varro gave: 753 BC.",
+      "takeaway": "753 BC needs seven reigns of almost 35 years, 244 years in all, as Livy gives them; Timaeus’s 814 BC would need nearly 44. The Palatine’s huts are dated by digging instead."
+    },
+    {
+      "type": "image",
+      "src": "hut-floor.jpg",
+      "alt": "Photo of a shallow oval floor cut into pale grey rock, with several round dark holes near its edge, under a modern shelter held up by a metal pole in the middle; old stone blocks lie around it.",
+      "caption": "A hut floor cut into the tuff of the Palatine: the dark holes held the posts of its walls.",
+      "fit": "cover",
+      "credit": "Ursus · Public domain"
+    },
+    {
+      "type": "compare",
+      "heading": "Two ways to date Rome’s start",
+      "left": {
+        "label": "Counted",
+        "text": "21 April 753 BC: fixed by the scholar Varro some 700 years later, by counting back 244 years of kings from 509 BC."
+      },
+      "right": {
+        "label": "Dug",
+        "text": "Hut floors and post-holes in the Palatine’s rock, from a village of at least the 9th to the 7th century BC, dated by its pottery."
+      }
+    },
+    {
+      "type": "timeline",
+      "heading": "Rome’s beginnings",
+      "events": [
+        {
+          "when": "9th–7th c. BC",
+          "text": "Huts on the Palatine’s Cermalus"
+        },
+        {
+          "when": "c. 600 BC",
+          "text": "Hill villages have merged into one city"
+        },
+        {
+          "when": "1st c. BC",
+          "text": "Varro fixes the founding at 753 BC"
+        },
+        {
+          "when": "1948",
+          "text": "Salvatore Puglisi digs up three huts"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "How do archaeologists know where the walls of the huts on the Palatine Hill stood?",
+      "options": [
+        "Post-holes cut in the rock",
+        "Stone foundations",
+        "Bricks stamped with dates",
+        "Painted outlines on the floor"
+      ],
+      "answer": 0,
+      "explanation": "The walls were woven branches and clay on wooden posts. They rotted away, but the holes the posts stood in, cut into the soft tuff, survive."
+    }
+  ],
+  "tags": [
+    "rome",
+    "founding",
+    "romulus",
+    "palatine",
+    "archaeology",
+    "dating"
+  ],
+  "source": {
+    "label": "Wikipedia: Founding of Rome",
+    "url": "https://en.wikipedia.org/wiki/Founding_of_Rome"
+  },
+  "theme": {
+    "gradient": [
+      "#1a150e",
+      "#5c4628"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T17:32:51Z"
+}

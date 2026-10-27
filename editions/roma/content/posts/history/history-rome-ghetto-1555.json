@@ -1,0 +1,172 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-rome-ghetto-1555",
+  "field": "history",
+  "title": "From 1555 to 1870, Rome’s Jews were walled into 3 hectares by the Tiber",
+  "emoji": "🕍",
+  "body": "Jews have lived in Rome since at least 161 BC, one of the oldest communities in Europe. In July 1555 Pope Paul IV’s bull *Cum nimis absurdum* forced them into a walled quarter of about 3 hectares on the low bank of the Tiber, beside the ruins of the [Portico of Octavia](https://www.turismoroma.it/en/node/1113), which Emperor Augustus had rebuilt in 27–23 BC for his sister. Its gates were locked at night; outside, men had to wear a yellow hat and women a yellow kerchief, and Jews could not own property. The walls did not move, but the people grew in number, from about 2,000 in 1555 to 4,000 by 1656, **over 1,300 a hectare**, so houses rose floor on floor over dark lanes, and the river flooded them. The ghetto ended when Italy took Rome in 1870; its walls came down in 1888, and the Great Synagogue opened on the cleared riverbank in 1904. On 16 October 1943 German police seized 1,259 people in Rome; more than 1,000 were deported to Auschwitz, and only 16 came back. Brass stumbling stones, *pietre d’inciampo*, now mark the last homes of the deported.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Rome’s ghetto, walled in by Pope Paul IV in 1555, covered about 3 hectares. About how many people lived in it by 1656?",
+      "min": 500,
+      "max": 10000,
+      "step": 100,
+      "answer": 4000,
+      "unit": "people",
+      "explanation": "About 4,000, twice the 2,000 of 1555: over 1,300 a hectare. Rome today has about 21 people a hectare."
+    },
+    {
+      "type": "video",
+      "src": "ghetto.mp4",
+      "poster": "ghetto.jpg",
+      "alt": "Animation on an evening plan of Rome's ghetto by the Tiber: its walls of 1555 beside the Portico of Octavia; dots for its people filling 3 hectares; houses growing floor by floor; a flood; the walls gone and the Great Synagogue built; a quiet street at dawn with brass stumbling stones.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Lost Time” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "rome-ghetto-1555",
+      "prompt": "In 1555, one floor over the whole quarter would have given each person 15 m². Pick 1656 and add floors until everyone has that much room again.",
+      "takeaway": "4,000 people on the same 3 hectares need two floors for the room 2,000 had on one. With walls that never moved, the ghetto could only grow upward."
+    },
+    {
+      "type": "image",
+      "src": "portico-photo.jpg",
+      "alt": "Photo of the ruined entrance porch of the Portico of Octavia in Rome: a brick arch inside a stone front with two fluted marble columns and a broken triangular pediment, with apartment houses around it and part of a dome at the right edge.",
+      "caption": "The Portico of Octavia today: mostly Emperor Septimius Severus’s rebuilding of AD 203; the brick arch replaced two columns after an earthquake in AD 442.",
+      "fit": "cover",
+      "credit": "Jensens, retouched by Ptyx · Public domain"
+    },
+    {
+      "type": "text",
+      "heading": "16 October 1943",
+      "text": "German police seized 1,259 people in Rome, 207 of them children, many in and around the old ghetto. After some were released, 1,023 were deported to Auschwitz on 18 October; 15 men and one woman came back. Many others escaped arrest by hiding, often in Catholic institutions."
+    },
+    {
+      "type": "timeline",
+      "heading": "Rome’s Jewish quarter",
+      "events": [
+        {
+          "when": "161 BC",
+          "text": "First record of Jews in Rome."
+        },
+        {
+          "when": "1555",
+          "text": "Pope Paul IV creates the ghetto."
+        },
+        {
+          "when": "1870",
+          "text": "The ghetto ends as Italy takes Rome."
+        },
+        {
+          "when": "1904",
+          "text": "The Great Synagogue opens."
+        },
+        {
+          "when": "16 Oct 1943",
+          "text": "The German round-up."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why did the houses of Rome’s ghetto, walled in by Pope Paul IV in 1555, grow so tall?",
+      "options": [
+        "Its walls stopped it spreading out",
+        "Tall houses kept out the floods",
+        "The pope demanded towers",
+        "Land outside was cheaper"
+      ],
+      "answer": 0,
+      "explanation": "The quarter stayed at about 3 hectares while its people doubled, from about 2,000 in 1555 to 4,000 by 1656, so new room could only be added on top."
+    }
+  ],
+  "tags": [
+    "rome",
+    "history",
+    "jewish",
+    "ghetto",
+    "holocaust",
+    "papacy"
+  ],
+  "source": {
+    "label": "Wikipedia: Roman Ghetto",
+    "url": "https://en.wikipedia.org/wiki/Roman_Ghetto"
+  },
+  "createdAt": "2026-10-27T18:57:47Z",
+  "theme": {
+    "gradient": [
+      "#1e2226",
+      "#6b3e2a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}

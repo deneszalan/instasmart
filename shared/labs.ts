@@ -136,6 +136,21 @@ export const LABS = {
   'aqua-virgo-low-fountains': 'Set how high the Aqua Virgo’s water stands at its end and how deep a fountain is sunk, and see how high its jet can rise.',
   'caravaggio-calling-light': 'Light a face as Caravaggio did: choose the studio’s walls and windows and see how dark the shadows get.',
   'monte-testaccio-amphorae': 'Set how many olive-oil jars Monte Testaccio holds and over how many years they came, and see how much oil Rome took in.',
+  'palatine-huts-romulus': 'Set how long Rome’s seven legendary kings reigned on average, count back from the first consuls of 509 BC, and see which ancient founding date you reach, beside the Palatine hut village dated by digging.',
+  'two-consuls-one-year': 'Run a vote of the Roman Republic’s Centuriate Assembly, which elected the consuls: set how the 98 richest and the 95 other centuries vote, and see when the count stops.',
+  'caesar-ides-pompey-curia': 'Drag through the centuries after Julius Caesar’s murder on the Ides of March, 44 BC, and see each account appear when it was written, with its count of wounds and his last words.',
+  'augustus-offices-counted': 'Move through the life of Augustus, Rome’s first emperor, and read his titles as his inscriptions give them: consulships, the yearly count of his tribune’s power, chief priest, Father of the Country.',
+  'trajans-column-hill': 'Cut a hillside back to level ground, as for Trajan’s Forum, and find how far back you must dig for a face as tall as Trajan’s Column.',
+  'arch-of-constantine-spolia': 'Slide back through the years and watch the Arch of Constantine’s reused sculptures being carved, from Trajan’s time to Marcus Aurelius’s, long before AD 315.',
+  'rome-after-the-sacks': 'Move through the years from AD 100 to 600 and see how scholars’ estimates of Rome’s people fall, from up to a million to some tens of thousands, as dots and as people per km².',
+  'arch-of-titus-menorah': 'Light the menorah relief on the Arch of Titus with one colour at a time and find the light in which traces of yellow ochre stand out from bare marble.',
+  'vatican-obelisk-1586': 'Make the 40 ropes of Fontana’s capstans start unevenly tight and sound the trumpet: see overloaded ropes snap, as his critics feared, or their capstans stop while the others catch up.',
+  'vatican-city-1929': 'Tap places on a map of Rome and see what each is under the Lateran Treaty of 1929: Vatican City, St Peter’s Square policed by Italy, Holy See property with an embassy’s immunities, or Italy.',
+  'pieta-michelangelo': 'Drag the tip of a triangle standing on the base of Michelangelo’s Pietà until it fits the outline of the whole group, and see where the best tip lies.',
+  'rome-ghetto-1555': 'Pick a year in Rome’s ghetto, from 2,000 people in 1555 to 4,000 in 1656, and add floors to its houses to see how much room each person could have on the same 3 hectares.',
+  'santa-maria-maggiore-sixtus-arch': 'Turn on clues from Santa Maria Maggiore’s triumphal arch, its Latin line naming a bishop Sixtus, the Council of Ephesus and the later apse, until one window of years is left for the mosaic.',
+  'nasoni-finger-fountain': 'Cover the end of a Roman nasone’s spout with a finger and choose the size of the hole on top, and see how high the jet rises as the flow and the pressure lost in the pipes fall.',
+  'carbonara-paper-trail': 'Drag through the years of carbonara’s paper trail, from an 1839 egg-and-cheese pasta to today’s recipe websites, and find when the name, the first recipe and guanciale first appear in print.',
 } as const;
 
 export type LabId = keyof typeof LABS;

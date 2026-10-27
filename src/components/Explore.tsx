@@ -5,10 +5,20 @@ import { LAB_COMPONENTS } from '../labs';
 import { inline } from '../lib/markdown';
 import { cardGradient, gradientStyle } from './Media';
 import { t } from '../i18n';
+import { EDITION } from '../edition';
 
 type ExploreSlide = Extract<Slide, { type: 'explore' }>;
 
-/** A lab that fails (or can't load offline) says so on its slide instead of taking the page down. */
+/** The browser couldn't fetch a lab's code: offline, or the app was updated and its old files are gone. */
+export const isLoadError = (error: Error) =>
+  error.name === 'ChunkLoadError' || /dynamically imported module|importing a module script failed|failed to fetch/i.test(error.message);
+
+const RELOADED = `${EDITION.storageKey}:reloaded-for-lab`;
+
+/**
+ * A lab that fails (or can't load offline) says so on its slide instead of taking the page down. A page opened
+ * before an update asks for lab files the update replaced, so when online it reloads once to get the new ones.
+ */
 class LabBoundary extends Component<{ children: ReactNode }, { failed: boolean }> {
   state = { failed: false };
   static getDerivedStateFromError() {
@@ -16,9 +26,26 @@ class LabBoundary extends Component<{ children: ReactNode }, { failed: boolean }
   }
   componentDidCatch(error: Error) {
     console.error('Lab failed:', error);
+    if (!isLoadError(error) || !navigator.onLine) return;
+    try {
+      const last = Number(sessionStorage.getItem(RELOADED) ?? 0);
+      if (Date.now() - last < 60_000) return;
+      sessionStorage.setItem(RELOADED, String(Date.now()));
+    } catch {
+      return;
+    }
+    location.reload();
   }
   render() {
-    return this.state.failed ? <p className="lab lab--failed">{t('This experiment couldn’t load. Check your connection and try again later.')}</p> : this.props.children;
+    if (!this.state.failed) return this.props.children;
+    return (
+      <div className="lab lab--failed">
+        <p>{t('This experiment couldn’t load. Check your connection and try again later.')}</p>
+        <button className="lab__btn" onClick={() => location.reload()}>
+          {t('Reload')}
+        </button>
+      </div>
+    );
   }
 }
 

@@ -1,0 +1,184 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-trajans-column-hill",
+  "field": "engineering",
+  "title": "Trajan’s Column is 100 Roman feet tall, said to be the height of a hill dug away for it",
+  "emoji": "⛏️",
+  "body": "Trajan’s Column was dedicated in AD 113 in the new forum of Emperor Trajan, who ruled from 98 to 117; by his death the Roman Empire had reached its greatest extent. The column is 100 Roman feet (29.8 m) tall on a 5.4 m base, a hollow shaft with a spiral stair inside. The inscription over its door says it was set up *ad declarandum quantae altitudinis mons et locus tantis operibus sit egestus*: to show how high a hill and site were dug away for such great works. The historian Cassius Dio, writing about a century later, says the site had been hilly and Trajan cut it down by the column’s height. But geology, and digs of the early 1900s that found a street and houses of the early empire under the column’s foundation, showed that no such ridge stood there. The least unsatisfactory explanation, wrote [Platner and Ashby’s dictionary](https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Forum_Trajani.html) in 1929, is Christian Hülsen’s: the slope of the Quirinal Hill was cut back until the cut stood about 100 feet high, and **Trajan’s Markets** were built against it to hold it up. When Trajan died in 117, his ashes were laid in the base.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Trajan’s Column in Rome is 100 Roman feet tall, not counting its base. About how many metres is that?",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "answer": 30,
+      "unit": "m",
+      "explanation": "About 29.8 m: a Roman foot was just under 30 cm. On its 5.4 m base the column stands about 35 m high."
+    },
+    {
+      "type": "video",
+      "src": "trajan-hill.mp4",
+      "poster": "trajan-hill.jpg",
+      "alt": "Animation in cross-section at dusk: Trajan's Column with a gold ruler of 100 Roman feet, its base inscription, a ridge of earth dug away, a trench showing a Roman street under the column, then the Quirinal slope cut back to a face as tall as the column, with Trajan's Markets built against it.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Crusade - Heavy Industry” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "trajans-column-hill",
+      "prompt": "Cut the hillside back to level ground. On a 30° slope, how far back must you dig for a face as tall as Trajan’s Column, 100 Roman feet?",
+      "takeaway": "About 52 m back, removing some 770 m³ of earth for every metre along the hill. Twice as high a face means four times the earth: a 100-foot cut was a vast job."
+    },
+    {
+      "type": "image",
+      "src": "column-today.jpg",
+      "alt": "Photo of the lower half of Trajan’s Column in Rome: a marble shaft wrapped in a spiral band of carved figures, on a square base carved with weapons, with a small door and the inscription panel above it; broken grey granite columns of Trajan’s Forum stand in front.",
+      "caption": "Trajan’s Column today, behind granite columns of Trajan’s Forum. The inscription is the panel over the door in its base.",
+      "fit": "cover",
+      "credit": "Alvesgaspar · CC BY-SA 4.0"
+    },
+    {
+      "type": "quote",
+      "text": "For that entire section had been hilly and he had cut it down for a distance equal to the height of the column",
+      "attribution": "Cassius Dio, Roman History 68.16, early 200s AD (tr. Earnest Cary)"
+    },
+    {
+      "type": "compare",
+      "heading": "Which hill?",
+      "left": {
+        "label": "The old reading",
+        "text": "A ridge 100 Roman feet high once filled the whole site, and the column marks how tall it was."
+      },
+      "right": {
+        "label": "The likely reading",
+        "text": "The slope of the Quirinal Hill beside the forum was cut back about 100 feet high, and Trajan’s Markets hold up the cut."
+      }
+    },
+    {
+      "type": "timeline",
+      "heading": "Trajan’s forum and column",
+      "events": [
+        {
+          "when": "AD 98",
+          "text": "Trajan becomes emperor."
+        },
+        {
+          "when": "AD 112",
+          "text": "His forum is inaugurated."
+        },
+        {
+          "when": "AD 113",
+          "text": "The column is dedicated, 12 May."
+        },
+        {
+          "when": "AD 117",
+          "text": "Trajan dies; ashes in the base."
+        },
+        {
+          "when": "1587",
+          "text": "A bronze St Peter replaces Trajan’s lost statue."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What did digs in the early 1900s find under the foundation of Trajan’s Column in Rome?",
+      "options": [
+        "A Roman street and houses",
+        "The rock of a hill",
+        "Trajan’s golden urn",
+        "A buried temple"
+      ],
+      "answer": 0,
+      "explanation": "A street and houses of the early empire, so no hill stood on that spot. The ‘hill’ was most likely the cut-back slope of the Quirinal."
+    }
+  ],
+  "tags": [
+    "rome",
+    "trajan",
+    "forum",
+    "column",
+    "inscription",
+    "archaeology"
+  ],
+  "source": {
+    "label": "Platner & Ashby (1929): Forum Traiani",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Forum_Trajani.html"
+  },
+  "theme": {
+    "gradient": [
+      "#141c2b",
+      "#6f4128"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T17:22:23Z"
+}

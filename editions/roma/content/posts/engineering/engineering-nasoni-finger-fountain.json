@@ -1,0 +1,178 @@
+{
+  "id": "engineering-nasoni-finger-fountain",
+  "field": "engineering",
+  "title": "Block a Roman nasone’s spout with a finger and water shoots up through a hole on top",
+  "emoji": "⛲",
+  "body": "Rome’s *nasoni*, the cast-iron street fountains named for their curved spout like a big nose, were first put up in 1874 under Mayor Luigi Pianciani (some sources say 1872); the first had three dragon-shaped spouts. [Rome’s tourist office](https://turismoroma.it/it/node/57844) counts about 2,800 today. They have no tap: the water runs day and night into a drain, which keeps it fresh instead of letting it stand in the pipes, and the open spouts also let off pressure in the network, [says Fabrizio Di Mauro](https://www.internazionale.it/bloc-notes/annalisa-camilli/2017/07/06/chiudere-fontanelle-nasoni-roma), author of a book on them. On top of the spout’s bend is a small hole. While the water pours freely, most of the main’s pressure is spent pushing the flow through the pipes, since friction grows with the square of the speed, so little is left at the spout. Block the end with a finger and much less water flows, the losses shrink, and the pressure at the spout climbs back towards the main’s: squeezed through the hole, it becomes a jet. It is the same water that Acea, Rome’s water company, pipes to Roman homes.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "About how many nasoni, Rome’s cast-iron drinking fountains, stand in the city today, by its tourist office’s count?",
+      "min": 0,
+      "max": 10000,
+      "step": 100,
+      "answer": 2800,
+      "explanation": "About 2,800, by Turismo Roma’s count in 2024; Wikipedia gives 2,500 to 2,800. The first went up in 1874."
+    },
+    {
+      "type": "video",
+      "src": "nasoni-jet.mp4",
+      "poster": "nasoni-jet.jpg",
+      "alt": "Animation on dark green: a cast-iron nasone on cobbles, its three dragon spouts and then one curved spout, 2,800 dots, a cutaway with the city main and drain, open spouts letting off pressure, a finger blocking the spout so a jet leaps from the top hole, and a pressure line along a pipe.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Fig Leaf Rag” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 6,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "nasoni-finger-fountain",
+      "prompt": "Cover the end of the nasone’s spout with your finger and pick the size of the top hole. Make the jet rise to at least 85% of the main’s pressure.",
+      "takeaway": "Fully blocked, with a small hole, little water flows, so little pressure is lost in the pipes and the jet rises almost to the main’s pressure. A bigger hole lets more water through and weakens it."
+    },
+    {
+      "type": "image",
+      "src": "nasone-photo.jpg",
+      "alt": "Photograph of a nasone at night: a weathered grey cast-iron column with a domed cap and one curved spout pouring a thin stream of water, standing in a low stone surround on wet cobblestones, with a brick wall behind.",
+      "caption": "A nasone on Rome’s cobbles: one curved spout, the “big nose”, and water that never stops.",
+      "fit": "cover",
+      "credit": "Wilfredor · CC0"
+    },
+    {
+      "type": "flow",
+      "heading": "How the finger trick works",
+      "steps": [
+        {
+          "icon": "🚰",
+          "label": "Open spout: pipe friction eats the pressure"
+        },
+        {
+          "icon": "👆",
+          "label": "A finger blocks the end: far less flow"
+        },
+        {
+          "icon": "📈",
+          "label": "Less flow, less friction: pressure climbs"
+        },
+        {
+          "icon": "⛲",
+          "label": "The hole on top turns it into a jet"
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "Rome’s nasoni",
+      "events": [
+        {
+          "when": "1874",
+          "text": "First nasoni, with three dragon spouts"
+        },
+        {
+          "when": "2017",
+          "text": "In a drought, Acea shuts some off"
+        },
+        {
+          "when": "2024",
+          "text": "About 2,800; three new by the Forum"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why does blocking a nasone’s spout make the water shoot up out of the small hole on top?",
+      "options": [
+        "Less flow loses less pressure",
+        "The finger warms the water",
+        "A pump inside switches on",
+        "The hole opens wider"
+      ],
+      "answer": 0,
+      "explanation": "With less water moving, far less pressure is lost to friction in the pipes, so more is left at the spout to push a jet out of the hole."
+    }
+  ],
+  "tags": [
+    "rome",
+    "fountains",
+    "water",
+    "pressure",
+    "nasoni"
+  ],
+  "source": {
+    "label": "Turismo Roma: I Nasoni, le fontanelle di Roma",
+    "url": "https://turismoroma.it/it/node/57844"
+  },
+  "theme": {
+    "gradient": [
+      "#0f1c1a",
+      "#2f4a43"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T17:51:18Z"
+}

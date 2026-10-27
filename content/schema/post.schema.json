@@ -226,7 +226,22 @@
                   "navona-domitian-stadium",
                   "aqua-virgo-low-fountains",
                   "caravaggio-calling-light",
-                  "monte-testaccio-amphorae"
+                  "monte-testaccio-amphorae",
+                  "palatine-huts-romulus",
+                  "two-consuls-one-year",
+                  "caesar-ides-pompey-curia",
+                  "augustus-offices-counted",
+                  "trajans-column-hill",
+                  "arch-of-constantine-spolia",
+                  "rome-after-the-sacks",
+                  "arch-of-titus-menorah",
+                  "vatican-obelisk-1586",
+                  "vatican-city-1929",
+                  "pieta-michelangelo",
+                  "rome-ghetto-1555",
+                  "santa-maria-maggiore-sixtus-arch",
+                  "nasoni-finger-fountain",
+                  "carbonara-paper-trail"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

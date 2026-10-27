@@ -1,0 +1,196 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-rome-after-the-sacks",
+  "field": "history",
+  "title": "Rome may once have held a million people; by AD 550, perhaps only tens of thousands",
+  "emoji": "🏚️",
+  "body": "In the 1st and 2nd centuries AD, Rome may have held up to a million people, the figure in standard accounts; the archaeologist Glenn Storey argued for about 450,000. Then the city emptied. The emperors of the West ruled from Milan from 286 and from Ravenna from 402. In 410 King Alaric’s Visigoths looted Rome for three days, its first fall to a foreign enemy in almost 800 years, and in 455 the Vandals plundered it for two weeks; one estimate leaves 300,000 to 500,000 people by 455. In the [siege of 537–538](https://en.wikipedia.org/wiki/Siege_of_Rome_%28537%E2%80%93538%29) the Goths cut the aqueducts that also drove the mills, and for about 550 to 600 estimates run from about 30,000 to at most 90,000. The few who stayed gathered in the Campus Martius by the Tiber, though the archaeologist Robert Coates-Stephens warns that this picture rests on thin evidence; popes later repaired aqueducts such as the Aqua Virgo. Floods, earth washed off the hills and rubble paved over raised the ground: by the late 1500s the imperial forums lay 3 to 4 metres down, and under San Clemente, near the Colosseum, three levels are stacked.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Ancient Rome may once have held a million people. By one estimate, how many still lived there around AD 550?",
+      "min": 0,
+      "max": 1000000,
+      "step": 10000,
+      "answer": 30000,
+      "unit": "people",
+      "explanation": "About 30,000 by one estimate; others say 60,000, or at most 90,000 around 600. Either way, the great majority of Romans were gone."
+    },
+    {
+      "type": "video",
+      "src": "city-shrinks.mp4",
+      "poster": "city-shrinks.jpg",
+      "alt": "Animation on a night map of Rome inside the Aurelian Walls, the Tiber in blue, each dot 10,000 people. The dots thin out through the sacks of 410 and 455 and the cutting of the aqueducts in 537; the last few gather in the river's bend. Then layers of silt, earth and rubble bury a Roman column.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Peaceful Desolation” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 7
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "rome-after-the-sacks",
+      "prompt": "Move through the years. Find the first estimate in which even the highest figure for Rome is under a tenth of a million.",
+      "takeaway": "Around AD 550: 30,000 to 60,000 people, where up to a million may have lived. Even the city’s walls, 13.86 km², now held only a few thousand people per km²."
+    },
+    {
+      "type": "image",
+      "src": "forum-below.jpg",
+      "alt": "Photo of the ‘Colonnacce’ in the Forum of Nerva in Rome: the top of an ancient stone wall with a carved frieze of figures and a richly moulded cornice, a relief of the goddess Minerva above, and Corinthian column capitals at the sides.",
+      "caption": "The ‘Colonnacce’ of the Forum of Nerva, one of the imperial forums that lay 3 to 4 m underground by the late 1500s.",
+      "fit": "cover",
+      "credit": "MM · CC BY-SA 3.0"
+    },
+    {
+      "type": "chart",
+      "heading": "Estimates of how many lived in Rome",
+      "items": [
+        {
+          "label": "1st–2nd c., high",
+          "value": 1000000
+        },
+        {
+          "label": "AD 408 (Lançon)",
+          "value": 800000
+        },
+        {
+          "label": "AD 419 (Lançon)",
+          "value": 500000
+        },
+        {
+          "label": "AD 455, high",
+          "value": 500000
+        },
+        {
+          "label": "c. AD 550, one estimate",
+          "value": 30000,
+          "emphasis": true
+        }
+      ],
+      "unit": "people",
+      "note": "Estimates differ widely: Glenn Storey puts the peak near 450,000."
+    },
+    {
+      "type": "timeline",
+      "heading": "How the city shrank and sank",
+      "events": [
+        {
+          "when": "286",
+          "text": "The West’s rulers move to Milan."
+        },
+        {
+          "when": "410",
+          "text": "Visigoths loot Rome for 3 days."
+        },
+        {
+          "when": "455",
+          "text": "Vandals plunder it for two weeks."
+        },
+        {
+          "when": "537",
+          "text": "Besieging Goths cut the aqueducts."
+        },
+        {
+          "when": "Late 1500s",
+          "text": "Imperial forums lie 3–4 m down."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "After the Goths cut Rome’s aqueducts in 537, where did most of the people left in Rome live, in the usual account?",
+      "options": [
+        "In the Campus Martius, by the Tiber",
+        "On the Palatine Hill",
+        "Inside the Colosseum",
+        "Outside the city walls"
+      ],
+      "answer": 0,
+      "explanation": "Near the river’s water, in the Campus Martius, while the hills emptied. Some scholars think the evidence is thin, and popes later repaired some aqueducts."
+    }
+  ],
+  "tags": [
+    "rome",
+    "lateantiquity",
+    "population",
+    "sacks",
+    "aqueducts",
+    "middleages"
+  ],
+  "source": {
+    "label": "Wikipedia: Sack of Rome (455)",
+    "url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(455)"
+  },
+  "theme": {
+    "gradient": [
+      "#0f1b1d",
+      "#3a4a3a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T18:20:23Z"
+}

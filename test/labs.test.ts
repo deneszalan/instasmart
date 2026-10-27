@@ -131,6 +131,21 @@ import { MAX_ROWS as NAVONA_MAX_ROWS, nearEstimate as navonaNear, rowLength as n
 import { jetHeight as virgoJet, jetTop as virgoTop, nozzleSpeed as virgoSpeed } from '../src/labs/engineering/aqua-virgo-low-fountains';
 import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggio-calling-light';
 import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } from '../src/labs/economics/monte-testaccio-amphorae';
+import { foundingYear as palatineFounding, nearest as palatineNearest, reignFor as palatineReign, VARRO_BC as PALATINE_VARRO } from '../src/labs/history/palatine-huts-romulus';
+import { MAJORITY as CENTURIATE_MAJORITY, RICH as CENTURIATE_RICH, runVote as centuriateVote, shareOut as centuriateShare, TOTAL as CENTURIATE_TOTAL } from '../src/labs/politics/two-consuls-one-year';
+import { latest as caesarLatest, posOf as caesarPos, yearOf as caesarYear, yearsAfter as caesarAfter, yearsAt as caesarYearsAt } from '../src/labs/history/caesar-ides-pompey-curia';
+import { astro as augAstro, inscription as augInscription, matchesObelisk as augObelisk, roman as augRoman, STEPS as AUG_STEPS, tauAt as augTau, titlesAt as augTitles } from '../src/labs/history/augustus-offices-counted';
+import { backFor as trajanBack, COLUMN as TRAJAN_COLUMN, earthPerMetre as trajanEarth, faceHeight as trajanFace } from '../src/labs/engineering/trajans-column-hill';
+import { carvedBy as archCarvedBy, DEDICATED as ARCH_DEDICATED, REUSED_TOTAL as ARCH_REUSED } from '../src/labs/history/arch-of-constantine-spolia';
+import { density as sackDensity, estimateAt as sackAt, TENTH as SACK_TENTH } from '../src/labs/history/rome-after-the-sacks';
+import { contrast as titusContrast, ochreReflects as titusOchre, spotReflects as titusSpot, STANDS_OUT as TITUS_STANDS } from '../src/labs/art/arch-of-titus-menorah';
+import { move as obeliskMove, NEED as OBELISK_NEED, ROPES as OBELISK_ROPES, slacks as obeliskSlacks, start as obeliskStart, TARGET as OBELISK_TARGET } from '../src/labs/engineering/vatican-obelisk-1586';
+import { classify as vaticanClassify, insideBorder as vaticanInside, PLACES as VATICAN_PLACES } from '../src/labs/politics/vatican-city-1929';
+import { BEST as PIETA_BEST, fit as pietaFit, MARY_HEAD_X } from '../src/labs/art/pieta-michelangelo';
+import { floorPerPerson as ghettoFloor, groundPerPerson as ghettoGround, PEOPLE as GHETTO_PEOPLE, perHectare as ghettoPerHa, ROME_PER_HA, TARGET as GHETTO_TARGET } from '../src/labs/history/rome-ghetto-1555';
+import { fits as smmFits, LIBERIUS as SMM_LIBERIUS, windows as smmWindows, yearsLeft as smmYears } from '../src/labs/art/santa-maria-maggiore-sixtus-arch';
+import { flowShare as nasoniFlow, GOAL as NASONI_GOAL, HOLES as NASONI_HOLES, spoutPressure as nasoniPressure } from '../src/labs/engineering/nasoni-finger-fountain';
+import { DOCS as CARB_DOCS, firstName as carbFirstName, firstWith as carbFirstWith, known as carbKnown } from '../src/labs/history/carbonara-paper-trail';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1203,5 +1218,160 @@ describe('lab maths', () => {
     expect(testaccioLitres(25e6)).toBe(1.75e9);
     expect(testaccioLitres(53e6)).toBe(3.71e9);
     expect(testaccioPerYear(25e6, 250)).toBe(7e6);
+  });
+  it('Palatine: 244 years of seven kings back from 509 BC is Varro’s 753 BC, almost 35 years a reign; Timaeus’s 814 BC would need nearly 44', () => {
+    expect(palatineFounding(244 / 7)).toBe(PALATINE_VARRO);
+    expect(palatineFounding(34.8)).toBe(753);
+    expect(palatineFounding(34.9)).toBe(753);
+    expect(palatineFounding(35)).toBe(754);
+    expect(palatineReign(753)).toBeCloseTo(34.86, 2);
+    expect(palatineReign(814)).toBeCloseTo(43.57, 2);
+    expect(palatineNearest(palatineFounding(20)).who).toBe('Cincius');
+    expect(palatineNearest(753).who).toBe('Varro');
+  });
+  it('Consuls: in the Centuriate Assembly the 98 richest of 193 centuries are a majority, so if they agree 95 are never called', () => {
+    expect(CENTURIATE_TOTAL).toBe(193);
+    expect(CENTURIATE_MAJORITY).toBe(97);
+    expect(CENTURIATE_RICH).toBe(98);
+    expect(centuriateVote(98, 0)).toEqual({ a: 98, b: 0, called: 98, winner: 'A', blocks: 1 });
+    expect(centuriateVote(97, 95).called).toBe(98);
+    expect(centuriateVote(1, 95)).toMatchObject({ winner: 'B', called: 98 });
+    expect(centuriateVote(80, 30)).toMatchObject({ winner: 'A', blocks: 4, called: 158 });
+    expect(centuriateVote(60, 30)).toMatchObject({ winner: 'B', called: 188 });
+    expect(centuriateVote(49, 48).called).toBe(193);
+    for (const n of [0, 7, 48, 95]) expect(centuriateShare(n).reduce((s, x) => s + x, 0)).toBe(n);
+  });
+  it('Caesar: Suetonius wrote 164 years after the Ides of 44 BC, Shakespeare 1,642; the slider reaches every account', () => {
+    expect(caesarAfter(121)).toBe(164);
+    expect(caesarAfter(1599)).toBe(1642);
+    expect(caesarAfter(14)).toBe(57);
+    expect(caesarYear(0)).toBe(-44);
+    expect(caesarYear(44)).toBe(1);
+    expect(caesarYear(164)).toBe(121);
+    expect(caesarLatest(30)).toBeUndefined();
+    expect(caesarLatest(60)?.id).toBe('nicolaus');
+    expect(caesarLatest(160)?.id).toBe('plutarch');
+    expect(caesarLatest(caesarYearsAt(100))?.id).toBe('shakespeare');
+    for (const n of [0, 100, 270, 900, 1700]) expect(caesarYearsAt(caesarPos(n))).toBeCloseTo(n, 6);
+  });
+  it('Augustus: consul XI and tribune’s power XIV only from mid-10 to mid-9 BC, the obelisk’s date; XXXVII by AD 14', () => {
+    expect(augRoman(14)).toBe('XIV');
+    expect(augRoman(37)).toBe('XXXVII');
+    expect(augTitles(augAstro(-10) + 0.75)).toMatchObject({ cos: 11, trib: 14, pontifex: true, pater: false, augustus: true });
+    expect(augObelisk(augTitles(augAstro(-10) + 0.25))).toBe(false);
+    expect(augObelisk(augTitles(augAstro(-9) + 0.25))).toBe(true);
+    expect(augObelisk(augTitles(augAstro(-9) + 0.75))).toBe(false);
+    expect(augTitles(augAstro(11) + 0.6).trib).toBe(34);
+    const last = augTitles(augTau(AUG_STEPS));
+    expect(last).toMatchObject({ cos: 13, trib: 37, pater: true });
+    expect(augInscription(last).join(' ')).toContain('TRIB · POT · XXXVII');
+    expect(augTitles(augTau(0))).toMatchObject({ augustus: false, cos: 4, trib: 0 });
+    const hits = Array.from({ length: AUG_STEPS + 1 }, (_, i) => i).filter((i) => augObelisk(augTitles(augTau(i))));
+    expect(hits).toEqual([41, 42]);
+  });
+  it('Trajan’s Column: a 30° hillside cut back about 51.6 m leaves a face of 100 Roman feet (29.77 m) and about 767 m³ of earth per metre', () => {
+    expect(TRAJAN_COLUMN).toBeCloseTo(29.77, 9);
+    expect(trajanBack(30, TRAJAN_COLUMN)).toBeCloseTo(51.56, 2);
+    expect(trajanFace(30, trajanBack(30, TRAJAN_COLUMN))).toBeCloseTo(29.77, 9);
+    expect(trajanEarth(30, 51.56)).toBeCloseTo(767.4, 0);
+    expect(trajanEarth(45, 20) / trajanEarth(45, 10)).toBeCloseTo(4, 9);
+  });
+  it('Arch of Constantine: all 28 reused sculptures existed by AD 176, 139 years before the dedication; none for certain before 117', () => {
+    expect(ARCH_REUSED).toBe(28);
+    expect(archCarvedBy(116)).toBe(0);
+    expect(archCarvedBy(117)).toBe(12);
+    expect(archCarvedBy(175)).toBe(20);
+    expect(archCarvedBy(176)).toBe(28);
+    expect(ARCH_DEDICATED - 176).toBe(139);
+  });
+  it('Rome after the sacks: from up to a million to at most 60,000 by about 550; a million inside the walls is 72,150 per km²', () => {
+    expect(Math.round(sackDensity(1e6))).toBe(72150);
+    expect(sackAt(100).high).toBe(1e6);
+    expect(sackAt(454).high).toBe(500000);
+    expect(sackAt(549).high).toBeGreaterThanOrEqual(SACK_TENTH);
+    expect(sackAt(550).high).toBeLessThan(SACK_TENTH);
+    expect(sackAt(600).high).toBe(90000);
+  });
+  it('Arch of Titus: in the model, ochre traces stand out in blue light but hardly in red, because yellow ochre absorbs blue', () => {
+    expect(titusOchre(450)).toBeLessThan(0.15);
+    expect(titusOchre(650)).toBeGreaterThan(0.6);
+    expect(titusSpot(500, 0)).toBeCloseTo(0.85, 9);
+    expect(titusContrast(450)).toBeGreaterThan(TITUS_STANDS);
+    expect(titusContrast(500)).toBeLessThan(TITUS_STANDS);
+    expect(titusContrast(620)).toBeLessThan(1.1);
+  });
+  it('Vatican obelisk: with uneven ropes, overloaded capstans that stop let all 40 share the load and lift it 2¾ palms; ropes that snap fail', () => {
+    const slack = obeliskSlacks(0.5);
+    let s = obeliskStart(slack);
+    let moves = 0;
+    while (s.h < OBELISK_TARGET && moves < 30) { s = obeliskMove(s, slack, 'stop'); moves++; }
+    expect(s.h).toBeGreaterThanOrEqual(OBELISK_TARGET);
+    expect(s.broken.some(Boolean)).toBe(false);
+    expect(Math.max(...s.pull)).toBeLessThanOrEqual(1 + 1e-9);
+    expect(s.pull.reduce((a, b) => a + b, 0)).toBeCloseTo(OBELISK_NEED, 6);
+    let f = obeliskStart(slack);
+    for (let i = 0; i < 30; i++) f = obeliskMove(f, slack, 'snap');
+    expect(f.broken.filter(Boolean).length).toBeGreaterThan(OBELISK_ROPES - OBELISK_NEED);
+    expect(f.h).toBe(0);
+    const even = obeliskSlacks(0);
+    let g = obeliskStart(even);
+    for (let i = 0; i < 14; i++) g = obeliskMove(g, even, 'snap');
+    expect(g.broken.some(Boolean)).toBe(false);
+  });
+  it('Vatican City: the basilica and gardens are inside the border, the square is Vatican City policed by Italy, the Lateran is Holy See property in Italy', () => {
+    expect(vaticanInside(41.9022, 12.4536)).toBe(true);
+    expect(vaticanInside(41.902, 12.4615)).toBe(false);
+    expect(vaticanClassify(41.9022, 12.4536).kind).toBe('vatican');
+    expect(vaticanClassify(41.904, 12.45).kind).toBe('vatican');
+    expect(vaticanClassify(41.90222, 12.45727).kind).toBe('square');
+    expect(vaticanClassify(41.88585, 12.50559)).toEqual({ kind: 'embassy', place: 'lateran' });
+    expect(vaticanClassify(41.89094, 12.4919).kind).toBe('italy');
+    expect(vaticanClassify(41.88, 12.52).kind).toBe('italy');
+    for (const p of VATICAN_PLACES) expect(vaticanClassify(p.lat, p.lon, 0.05).kind).toBe(p.kind);
+  });
+  it('Pietà: the triangle that best fits the outline of the group has its tip right above Mary’s head', () => {
+    expect(Math.abs(PIETA_BEST.ax - MARY_HEAD_X)).toBeLessThanOrEqual(4);
+    expect(PIETA_BEST.f).toBeGreaterThan(0.8);
+    expect(pietaFit(MARY_HEAD_X, 180)).toBeGreaterThan(PIETA_BEST.f - 0.03);
+    expect(pietaFit(40, 240)).toBeLessThan(PIETA_BEST.f - 0.1);
+    expect(pietaFit(170, 140)).toBeLessThan(PIETA_BEST.f - 0.1);
+  });
+  it('Rome ghetto: 4,000 people on 3 hectares in 1656 is over 1,300 a hectare, about 60 times Rome today, and needs two floors for the room one floor gave in 1555', () => {
+    expect(ghettoPerHa(GHETTO_PEOPLE[1656])).toBeCloseTo(1333.3, 1);
+    expect(Math.round(ROME_PER_HA)).toBe(21);
+    expect(ghettoPerHa(GHETTO_PEOPLE[1656]) / ROME_PER_HA).toBeGreaterThan(60);
+    expect(ghettoGround(GHETTO_PEOPLE[1555])).toBe(15);
+    expect(GHETTO_TARGET).toBe(15);
+    expect(ghettoFloor(GHETTO_PEOPLE[1656], 1)).toBeLessThan(GHETTO_TARGET);
+    expect(ghettoFloor(GHETTO_PEOPLE[1656], 2)).toBe(GHETTO_TARGET);
+  });
+  it('Santa Maria Maggiore: a bishop Sixtus, after Ephesus and before the 1295 apse leaves only Sixtus III, 432–440', () => {
+    expect(smmWindows([])).toEqual([[100, 1600]]);
+    expect(smmWindows(['sixtus'])).toHaveLength(5);
+    expect(smmWindows(['sixtus', 'legal'])).toEqual([[432, 440], [1471, 1484], [1585, 1590]]);
+    const solved = smmWindows(['sixtus', 'ephesus', 'apse']);
+    expect(solved).toEqual([[432, 440]]);
+    expect(smmYears(solved)).toBe(8);
+    expect(smmFits(solved, SMM_LIBERIUS)).toBe(false);
+    expect(smmFits(smmWindows(['legal', 'apse']), SMM_LIBERIUS)).toBe(true);
+  });
+  it('Nasoni: blocking the spout cuts the flow, so the pressure at the spout climbs from about 9% to about 93% of the main', () => {
+    const hole = NASONI_HOLES.medium;
+    expect(nasoniPressure(0, hole)).toBeCloseTo(0.0936, 3);
+    expect(nasoniPressure(1, hole)).toBeCloseTo(0.9259, 3);
+    expect(nasoniFlow(0, hole)).toBe(1);
+    expect(nasoniFlow(1, hole)).toBeCloseTo(0.286, 3);
+    expect(nasoniPressure(1, NASONI_HOLES.small)).toBeGreaterThan(NASONI_GOAL);
+    expect(nasoniPressure(1, NASONI_HOLES.large)).toBeLessThan(NASONI_GOAL);
+    expect(nasoniPressure(0.9, hole)).toBeLessThan(NASONI_GOAL);
+  });
+  it('Carbonara: the name is in print by 1939, the first recipes in 1952, guanciale first in 1957', () => {
+    expect(carbFirstName(1938)).toBeNull();
+    expect(carbFirstName(2026)).toBe(1939);
+    expect(carbFirstWith('guanciale')).toBe(1957);
+    expect(carbFirstWith('gruyere')).toBe(1954);
+    expect(carbFirstWith('cream')).toBe(1960);
+    expect(carbKnown(1952).filter((d) => d.kind === 'recipe')).toHaveLength(2);
+    expect(CARB_DOCS.map((d) => d.year)).toEqual([...CARB_DOCS.map((d) => d.year)].sort((a, b) => a - b));
   });
 });

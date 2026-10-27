@@ -1,0 +1,164 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-arch-of-constantine-spolia",
+  "field": "history",
+  "title": "Rome’s Arch of Constantine reuses older emperors’ sculptures, their faces recut as his",
+  "emoji": "🏛️",
+  "body": "Rome’s Senate dedicated the [Arch of Constantine](https://en.wikipedia.org/wiki/Arch_of_Constantine), beside the Colosseum, in AD 315, after Emperor Constantine defeated his rival Maxentius at the Milvian Bridge on 28 October 312. Much of its sculpture is older than the arch: eight captive Dacians and four slabs of a battle frieze from Emperor Trajan’s time (98–117), eight roundels of hunts and sacrifices from Hadrian’s (117–138), and eight panels of Marcus Aurelius, probably from an arch of about 176. The emperors’ heads were recut or replaced, so in some roundels Hadrian’s bearded head became a young Constantine. New were the narrow frieze of Constantine’s campaign, the column bases and other framing parts. Why reuse? The arch went up in under three years, and the archaeologist C. Brian Rose [thinks](https://archaeology.org/issues/458-2203/features/10335-rome-constantine-arch) they wanted it quick and cheap; others see a message, presenting Constantine as heir of the ‘good emperors’. Its inscription credits his victory to an unnamed divinity, vague enough for pagans and Christians alike; in 313 Christianity became a tolerated religion.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Rome’s Arch of Constantine was dedicated in AD 315. About how old were its oldest reused sculptures then?",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "answer": 200,
+      "unit": "years",
+      "explanation": "About 200 years: they date from Emperor Trajan’s time (AD 98–117). Hadrian’s roundels were nearly as old, Marcus Aurelius’s panels about 139 years."
+    },
+    {
+      "type": "video",
+      "src": "constantine-arch.mp4",
+      "poster": "constantine-arch.jpg",
+      "alt": "Animation at dusk: the Arch of Constantine by the Colosseum, drawn flat. Its sculptures light up by age: Trajan's in blue, Hadrian's roundels in green, Marcus Aurelius's panels in violet, Constantine's frieze in gold. A roundel head is recut; then a timeline of 312 to 315 and a chi-rho.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Egmont Overture Finale” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "arch-of-constantine-spolia",
+      "prompt": "Slide back from AD 315. Find the earliest year by which all 28 of the arch’s reused sculptures had been carved.",
+      "takeaway": "AD 176, when Marcus Aurelius’s panels were made: 139 years before the arch. Trajan’s pieces were about 200 years old in 315, so the arch gathered a century and a half of sculpture."
+    },
+    {
+      "type": "image",
+      "src": "arch-today.jpg",
+      "alt": "Photo of the Arch of Constantine in Rome in sunshine: a marble triumphal arch with a tall central opening, columns standing in front of it, pairs of round reliefs above the side openings, an attic with an inscription and carved panels, and statues of captives on top of the columns.",
+      "caption": "The arch’s south side today: the roundels above the side arches are Hadrian’s, the attic panels Marcus Aurelius’s, the standing captives Trajan’s.",
+      "fit": "cover",
+      "credit": "NikonZ7II (Paris Orlando) · CC BY-SA 4.0"
+    },
+    {
+      "type": "list",
+      "heading": "Four eras on one arch",
+      "style": "bullets",
+      "items": [
+        "Trajan, AD 98–117: eight Dacian captives and four slabs of a battle frieze",
+        "Hadrian, AD 117–138: eight roundels of hunts and sacrifices",
+        "Marcus Aurelius, about AD 176: eight panels in the attic",
+        "Constantine, 312–315: the narrow frieze of his campaign, the column bases and more"
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Why reuse old sculpture?",
+      "left": {
+        "label": "Speed and cost",
+        "text": "Built between late 312 and 315. The archaeologist C. Brian Rose thinks they wanted it done quickly and cheaply."
+      },
+      "right": {
+        "label": "A message",
+        "text": "Pieces of Trajan, Hadrian and Marcus Aurelius, remembered as good emperors, show Constantine as their heir."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "On the Arch of Constantine in Rome, whose head was recut into Constantine’s in some of the round reliefs?",
+      "options": [
+        "Hadrian’s",
+        "Julius Caesar’s",
+        "Augustus’s",
+        "Nero’s"
+      ],
+      "answer": 0,
+      "explanation": "Hadrian’s. The roundels were carved in his reign, nearly 200 years earlier; in some, his bearded head was recut into a young Constantine."
+    }
+  ],
+  "tags": [
+    "rome",
+    "constantine",
+    "arch",
+    "spolia",
+    "sculpture",
+    "colosseum"
+  ],
+  "source": {
+    "label": "Wikipedia: Arch of Constantine",
+    "url": "https://en.wikipedia.org/wiki/Arch_of_Constantine"
+  },
+  "theme": {
+    "gradient": [
+      "#1d1830",
+      "#5a3c58"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T17:39:05Z"
+}
