@@ -119,6 +119,7 @@ export const LABS = {
   'pantheon-noon-sunbeam': 'Pick a day of the year and see where the noon sunlight from the Pantheon’s oculus falls: on the dome, the wall, the doorway or the floor.',
   'navona-domitian-stadium': 'Wrap rows of benches round the track of the Stadium of Domitian, under today’s Piazza Navona, and see how many spectators fit.',
   'aqua-virgo-low-fountains': 'Set how high the Aqua Virgo’s water stands at its end and how deep a fountain is sunk, and see how high its jet can rise.',
+  'caravaggio-calling-light': 'Light a face as Caravaggio did: choose the studio’s walls and windows and see how dark the shadows get.',
 } as const;
 
 export type LabId = keyof typeof LABS;

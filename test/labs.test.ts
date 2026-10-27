@@ -114,6 +114,7 @@ import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '
 import { doorwayLit, litStretch, noonAltitude, placeOf, R as PANTHEON_R } from '../src/labs/engineering/pantheon-noon-sunbeam';
 import { MAX_ROWS as NAVONA_MAX_ROWS, nearEstimate as navonaNear, rowLength as navonaRow, seats as navonaSeats, STANDS as NAVONA_STANDS } from '../src/labs/history/navona-domitian-stadium';
 import { jetHeight as virgoJet, jetTop as virgoTop, nozzleSpeed as virgoSpeed } from '../src/labs/engineering/aqua-virgo-low-fountains';
+import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggio-calling-light';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1023,5 +1024,12 @@ describe('lab maths', () => {
     expect(virgoJet(0.5, 1.5)).toBe(2);
     expect(virgoTop(0.5, 1.5)).toBeCloseTo(0.5, 9);
     expect(virgoSpeed(0.5, 1.5)).toBeCloseTo(6.26, 2);
+  });
+  it('Caravaggio: only black walls and a single window make the lit side 20 times as bright as the shadow side', () => {
+    expect(studioContrast('black', 'one')).toBeGreaterThan(TENEBRIST);
+    expect(studioContrast('black', 'one')).toBeCloseTo(34.33, 1);
+    expect(studioContrast('grey', 'one')).toBeLessThan(TENEBRIST);
+    expect(studioContrast('white', 'one')).toBeLessThan(4);
+    expect(studioContrast('black', 'two')).toBeLessThan(2);
   });
 });
