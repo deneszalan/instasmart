@@ -92,6 +92,7 @@ import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
 import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
 import { MPS as SWE_MPS, OCT_15 as SWE_OCT_15, REJECT_AT as SWE_REJECT, tally as sweTally } from '../src/labs/politics/sweden-negative-parliamentarism';
 import { ridings as qcRidings, seatsWon as qcSeats } from '../src/labs/politics/quebec-first-past-the-post';
+import { canJoin, canSuspend, ELECT_AT as HRC_ELECT, UN_MEMBERS } from '../src/labs/politics/un-human-rights-council-election';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -764,5 +765,18 @@ describe('lab maths', () => {
     const total = qcRidings(3).reduce((n, r) => n + r.ours, 0);
     expect(total).toBeCloseTo(130, 9);
     for (const r of qcRidings(5)) expect(r.ours + r.a + r.b).toBeCloseTo(100, 9);
+  });
+
+  it('rights council: 97 of 193 to join; Russia 2022 suspended by 93 to 24 with 58 abstaining; Russia 2023 not elected with 83', () => {
+    expect(UN_MEMBERS).toBe(193);
+    expect(HRC_ELECT).toBe(97);
+    expect(canJoin(97)).toBe(true);
+    expect(canJoin(96)).toBe(false);
+    expect(canJoin(83)).toBe(false);
+    expect(canSuspend(93, 24)).toBe(true);
+    expect(canJoin(93)).toBe(false);
+    expect(canSuspend(120, 70)).toBe(false);
+    expect(canSuspend(2, 1)).toBe(true);
+    expect(canSuspend(0, 0)).toBe(false);
   });
 });

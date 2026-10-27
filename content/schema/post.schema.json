@@ -187,7 +187,8 @@
                   "nobel-hall-woodford",
                   "power-grid-transformers",
                   "sweden-negative-parliamentarism",
-                  "quebec-first-past-the-post"
+                  "quebec-first-past-the-post",
+                  "un-human-rights-council-election"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

@@ -97,4 +97,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'power-grid-transformers': lazy(() => import('./engineering/power-grid-transformers')),
   'sweden-negative-parliamentarism': lazy(() => import('./politics/sweden-negative-parliamentarism')),
   'quebec-first-past-the-post': lazy(() => import('./politics/quebec-first-past-the-post')),
+  'un-human-rights-council-election': lazy(() => import('./politics/un-human-rights-council-election')),
 };
