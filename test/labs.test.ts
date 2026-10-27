@@ -111,6 +111,26 @@ import { canJoin, canSuspend, ELECT_AT as HRC_ELECT, UN_MEMBERS } from '../src/l
 import { banned as infBanned, kmAt, rangeClass } from '../src/labs/history/reykjavik-summit-inf-treaty';
 import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgment-three-votes';
 import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '../src/labs/history/caesar-445-day-year';
+import { busiestQueue, minutesToEmpty, openArches, PUBLIC_ARCHES } from '../src/labs/engineering/colosseum-numbered-arches';
+import { GATE_Y as CIRCUS_GATES, runs as circusRuns, unfairness as circusUnfairness } from '../src/labs/math/circus-maximus-staggered-gates';
+import { plinysCase, verdict as curiaVerdict } from '../src/labs/politics/curia-vote-by-walking';
+import { interval as vestalInterval, stages as vestalStages } from '../src/labs/history/vestals-thirty-years';
+import { forum as forumState, FLOOR as FORUM_FLOOR, YEARLY_FLOOD } from '../src/labs/engineering/mouth-of-truth-drain';
+import { coverage as goldCoverage, flashing as goldFlashing, GOAL as GOLD_GOAL, reflectedAngle as goldReflected, tiltsFor as goldTilts } from '../src/labs/art/trastevere-gold-tesserae';
+import { buried as scBuried, site as scSite, STEPS as SC_STEPS } from '../src/labs/earth/san-clemente-three-levels';
+import { farWidth as cpFar, viewAngle as cpView, widerThanRectangle as cpWider } from '../src/labs/art/campidoglio-trapezoid';
+import { angularSize as akAngle, distanceFor as akDistance, DOME as AK_DOME, KEYHOLE_DISTANCE as AK_DIST, MOON as AK_MOON } from '../src/labs/art/aventine-keyhole-view';
+import { carbonLeft as wfLeft, ETRUSCAN_YEAR as WF_ETRUSCAN, radiocarbonAge as wfAge, roughYear as wfYear, WOLF_BP as WF_BP } from '../src/labs/history/capitoline-wolf-dating';
+import { canLay, PATCHES as GIORNATE_PATCHES, relief, seams as giornateSeams, under as lapsOver } from '../src/labs/art/sistine-ceiling-giornate';
+import { DIAGONALS as ATHENS_DIAGONALS, DIST as ATHENS_DIST, EDGES as ATHENS_EDGES, EYE as ATHENS_EYE, offLine, project as athensProject } from '../src/labs/math/school-of-athens-vanishing-point';
+import { bestLine, fits as thrustFits, PIECES as DOME_PIECES, SLICE_WEIGHT, THICK, thrustLine } from '../src/labs/engineering/st-peters-dome-chains';
+import { apennineSide, REGIONS as MAP_REGIONS } from '../src/labs/earth/gallery-of-maps-danti';
+import { LAYERS as CASTLE_LAYERS, newest as newestLayer } from '../src/labs/history/castel-sant-angelo-tomb-fortress';
+import { doorwayLit, litStretch, noonAltitude, placeOf, R as PANTHEON_R } from '../src/labs/engineering/pantheon-noon-sunbeam';
+import { MAX_ROWS as NAVONA_MAX_ROWS, nearEstimate as navonaNear, rowLength as navonaRow, seats as navonaSeats, STANDS as NAVONA_STANDS } from '../src/labs/history/navona-domitian-stadium';
+import { jetHeight as virgoJet, jetTop as virgoTop, nozzleSpeed as virgoSpeed } from '../src/labs/engineering/aqua-virgo-low-fountains';
+import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggio-calling-light';
+import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } from '../src/labs/economics/monte-testaccio-amphorae';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -682,7 +702,6 @@ describe('lab maths', () => {
     expect(heliumAt(20 * 60)).toBeLessThan(heliumAt(10 * 60));
   });
 
-
   it('ebola tracing: with 2 infections per missed case, chains shrink once more than half of contacts are found', () => {
     expect(perCase(2, 0.5)).toBe(1);
     expect(perCase(2, 0.55)).toBeLessThan(1);
@@ -992,5 +1011,192 @@ describe('lab maths', () => {
     expect(calendarDrift('three', 36)).toBeCloseTo(3.28, 2);
     expect(Math.abs(calendarDrift('gregorian', 1000))).toBeLessThan(1);
     expect(Math.abs(calendarDrift('four', 100))).toBeLessThan(1);
+  });
+
+  it('colosseum arches: 50,000 people through 4 arches at 3 a second take over an hour; spread evenly over all 76 they take under 4 minutes', () => {
+    expect(PUBLIC_ARCHES).toBe(76);
+    expect(minutesToEmpty(50000, 4, 0.25, 3)).toBeCloseTo(69.4, 1);
+    expect(minutesToEmpty(50000, 76, 0.25, 3)).toBeCloseTo(3.65, 2);
+    expect(busiestQueue(50000, 76, 0.25)).toBeCloseTo(50000 / 76, 6);
+    expect(minutesToEmpty(50000, 76, 0.5, 3)).toBeCloseTo(2 * minutesToEmpty(50000, 76, 0.25, 3), 6);
+    expect(minutesToEmpty(50000, 76, 0.35, 3)).toBeGreaterThan(5);
+    for (const n of [4, 8, 36, 76]) expect(openArches(n).size).toBe(n);
+    expect(Math.max(...openArches(76))).toBe(75);
+  });
+
+  it('circus gates: a straight row gives the outer chariot a longer run; an arc round the break point makes all 12 equal, an arc round the track’s middle does not', () => {
+    expect(CIRCUS_GATES).toHaveLength(12);
+    expect(circusUnfairness(0, 'straight')).toBeGreaterThan(0.15);
+    expect(circusUnfairness(1, 'straight')).toBeLessThan(1e-9);
+    expect(circusUnfairness(1, 'track')).toBeGreaterThan(0.01);
+    const r = circusRuns(1, 'straight');
+    expect(Math.max(...r) - Math.min(...r)).toBeLessThan(1e-9);
+  });
+
+  it('curia vote: with acquittal ahead of each rival alone but not of both, three groups acquit and the death party crossing over banishes', () => {
+    expect(curiaVerdict(110, 80, 60, 'three')).toBe('acquit');
+    expect(curiaVerdict(110, 80, 60, 'cross')).toBe('banish');
+    expect(curiaVerdict(110, 80, 60, 'together')).toBe('banish');
+    expect(curiaVerdict(110, 40, 90, 'together')).toBe('death');
+    expect(curiaVerdict(150, 50, 50, 'cross')).toBe('acquit');
+    expect(curiaVerdict(100, 100, 50, 'three')).toBe('tie');
+    expect(plinysCase(110, 80, 60)).toBe(true);
+    expect(plinysCase(150, 50, 50)).toBe(false);
+  });
+
+  it('vestals: six places and 30-year terms need a new girl every 5 years, two in each decade; 57-year terms only every 9.5', () => {
+    expect(vestalInterval(30)).toBe(5);
+    expect(vestalInterval(57)).toBeCloseTo(9.5, 6);
+    for (const y of [0, 7, 33, 61]) expect(vestalStages(30, y)).toEqual({ learning: 2, performing: 2, teaching: 2, staying: 0 });
+    const s = vestalStages(60, 12);
+    expect(s.learning + s.performing + s.teaching + s.staying).toBe(6);
+    expect(s.staying).toBe(3);
+  });
+
+  it('mouth of truth drain: the yearly flood swamps the old 6 m floor; raised to 9 m and given a canal, it stays dry', () => {
+    expect(FORUM_FLOOR).toBe(6);
+    expect(YEARLY_FLOOD).toBe(9);
+    expect(forumState(0, 9, true)).toBe('flooded');
+    expect(forumState(3, 9, false)).toBe('marsh');
+    expect(forumState(3, 9, true)).toBe('dry');
+    expect(forumState(2.5, 9, true)).toBe('flooded');
+    expect(forumState(0, 5, true)).toBe('dry');
+  });
+  it('Trastevere gold: a tile tipped by 1° turns its reflection by 2°; flat tiles flash only about 12 to 15 m from the wall; tilts up to 8° light up most of the nave', () => {
+    expect(goldReflected(0)).toBe(35);
+    expect(goldReflected(1)).toBe(37);
+    const flat = goldTilts(0);
+    expect(goldFlashing(flat, 13).length).toBeGreaterThan(0);
+    expect(goldFlashing(flat, 8).length).toBe(0);
+    expect(goldFlashing(flat, 20).length).toBe(0);
+    expect(goldCoverage(flat)).toBeLessThan(0.15);
+    expect(goldCoverage(goldTilts(8))).toBeGreaterThan(GOLD_GOAL);
+    expect(goldCoverage(goldTilts(2))).toBeLessThan(GOLD_GOAL);
+  });
+
+  it('San Clemente: building on the ruins leaves three levels under today’s church, the deepest the ruins of AD 64; clearing them away leaves none', () => {
+    expect(scSite(4, 'build')).toEqual(['ruins', 'roman', 'church4', 'church12']);
+    expect(scBuried(4, 'build')).toBe(3);
+    expect(scSite(4, 'clear')).toEqual(['church12']);
+    expect(scBuried(4, 'clear')).toBe(0);
+    expect(scSite(2, 'build')).toEqual(['ruins', 'roman']);
+    expect(scBuried(2, 'build')).toBe(1);
+    expect(SC_STEPS.map((s) => s.year)).toEqual([64, 90, 200, 392, 1100]);
+  });
+
+  it('Campidoglio: turning each side palace out by about 7.4° widens the square from 44 to 58 m, and from the ramp the far palace looks 1.32 times as wide as at the end of a rectangle', () => {
+    expect(cpFar(0)).toBe(44);
+    expect(cpFar(7.4)).toBeCloseTo(58, 0);
+    expect(cpWider(7.4)).toBeCloseTo(1.32, 2);
+    expect(cpView(44)).toBeCloseTo(39.1, 1);
+    expect(cpView(58)).toBeCloseTo(50.1, 1);
+    expect(cpWider(-5)).toBeLessThan(1);
+  });
+
+  it('Aventine keyhole: the 42 m dome spans 0.81° from 2,976 m, 1.55 full Moons; it would match the Moon from about 4.6 km, and twice as far it looks half as wide', () => {
+    expect(akAngle(AK_DOME, AK_DIST)).toBeCloseTo(0.81, 2);
+    expect(akAngle(AK_DOME, AK_DIST) / AK_MOON).toBeCloseTo(1.55, 2);
+    expect(akDistance(AK_DOME, AK_MOON)).toBeCloseTo(4628, -1);
+    expect(akAngle(AK_DOME, 2 * AK_DIST) / akAngle(AK_DOME, AK_DIST)).toBeCloseTo(0.5, 3);
+  });
+
+  it('Capitoline wolf: 963 radiocarbon years leave 88.7% of the carbon-14; a core from about 480 BC would hold about 74%', () => {
+    expect(wfLeft(WF_BP)).toBeCloseTo(0.887, 3);
+    expect(wfAge(wfLeft(WF_BP))).toBeCloseTo(963, 6);
+    expect(wfLeft(1950 - WF_ETRUSCAN)).toBeCloseTo(0.739, 3);
+    expect(wfYear(0.739)).toBeCloseTo(-480, -1);
+    expect(wfYear(1)).toBe(1950);
+  });
+  it('sistine giornate: a patch can be numbered only after every older neighbour it laps over; the days in order always work; raking light shows the seams', () => {
+    const byDay = GIORNATE_PATCHES.map((_, i) => i).sort((a, b) => GIORNATE_PATCHES[a].day - GIORNATE_PATCHES[b].day);
+    const laid: number[] = [];
+    for (const i of byDay) {
+      expect(canLay(i, laid)).toBe(true);
+      laid.push(i);
+    }
+    const first = byDay[0];
+    expect(lapsOver(first)).toEqual([]);
+    for (const i of byDay.slice(1)) expect(canLay(i, [])).toBe(lapsOver(i).length === 0);
+    expect(giornateSeams().length).toBeGreaterThanOrEqual(GIORNATE_PATCHES.length);
+    expect(relief(90)).toBeCloseTo(0, 6);
+    expect(relief(0)).toBe(1);
+    expect(relief(10)).toBeGreaterThan(relief(45));
+  });
+  it('school of athens: every receding edge runs through the vanishing point at the eye height; tile diagonals meet the horizon at the viewing distance', () => {
+    for (const [a, b] of ATHENS_EDGES) expect(offLine(a, b, [0, ATHENS_EYE])).toBeLessThan(1e-9);
+    for (const [a, b] of ATHENS_DIAGONALS) expect(offLine(a, b, [Math.sign(b[0] - a[0]) * ATHENS_DIST, ATHENS_EYE])).toBeLessThan(1e-9);
+    expect(athensProject(1, 2, 0)).toEqual([1, 2]);
+    expect(athensProject(0, 2, ATHENS_DIST)[1]).toBeCloseTo((2 + ATHENS_EYE) / 2, 9);
+    expect(offLine([0, 0], [1, 0], [0.5, 2])).toBe(2);
+  });
+  it('st peters dome: a line of thrust fits inside the slice only for a middling outward push; the chain ends on the springing line; pieces weigh less towards the top', () => {
+    expect(thrustFits(0.25, 0.1)).toBe(true);
+    expect(thrustFits(0.08, 0.1)).toBe(false);
+    expect(thrustFits(0.9, 0.1)).toBe(false);
+    expect(bestLine(0.25, 0.1).off).toBeLessThan(THICK / 2);
+    const pts = thrustLine(0.25, 0.1, 27);
+    expect(pts.at(-1)![1]).toBeCloseTo(0, 9);
+    expect(DOME_PIECES[0].w).toBeGreaterThan(DOME_PIECES.at(-1)!.w);
+    expect(DOME_PIECES.reduce((s, p) => s + p.w, 0)).toBeCloseTo(SLICE_WEIGHT, 9);
+  });
+  it('gallery of maps: every region lies on the side of the Apennines that matches its wall; Rome is west, Milan and Turin drain to the Adriatic side', () => {
+    for (const r of MAP_REGIONS) expect([r.name, apennineSide(r.lon, r.lat)]).toEqual([r.name, r.wall]);
+    expect(apennineSide(12.5, 41.9)).toBe('tyrrhenian');
+    expect(apennineSide(9.19, 45.46)).toBe('adriatic');
+    expect(apennineSide(7.69, 45.07)).toBe('adriatic');
+    expect(apennineSide(13.36, 38.12)).toBe('tyrrhenian');
+    expect(apennineSide(18.17, 40.35)).toBe('adriatic');
+  });
+  it('castel sant angelo: peeling the newest layer each time ends at Hadrian’s tomb, the oldest', () => {
+    let standing = CASTLE_LAYERS.map((l) => l.id);
+    const order: string[] = [];
+    while (standing.length > 1) {
+      const top = newestLayer(standing)!;
+      order.push(top);
+      standing = standing.filter((s) => s !== top);
+    }
+    expect(order).toEqual(['bastions', 'towers', 'door', 'chapel', 'walls']);
+    expect(standing).toEqual(['tomb']);
+    expect(newestLayer(['tomb', 'walls', 'chapel'])).toBe('chapel');
+  });
+  it('Pantheon: the noon light is on the dome in December, at the dome’s base at the equinox, fills the doorway around 21 April and lies on the floor in June', () => {
+    expect(Math.round(noonAltitude(355))).toBe(25);
+    expect(Math.round(noonAltitude(172))).toBe(72);
+    expect(placeOf(noonAltitude(355))).toBe('dome');
+    const [e0, e1] = litStretch(noonAltitude(80));
+    expect(e0).toBeLessThan(2 * PANTHEON_R);
+    expect(e1).toBeGreaterThan(2 * PANTHEON_R);
+    expect(doorwayLit(noonAltitude(111))).toBe(true);
+    expect(doorwayLit(noonAltitude(233))).toBe(true);
+    expect(doorwayLit(noonAltitude(80))).toBe(false);
+    expect(doorwayLit(noonAltitude(140))).toBe(false);
+    expect(placeOf(noonAltitude(172))).toBe('floor');
+  });
+  it('Navona stadium: the stands are about 26.5 m deep; some 27 rows at 50 cm a person seat about 30,000', () => {
+    expect(NAVONA_STANDS).toBeCloseTo(26.55, 2);
+    expect(NAVONA_MAX_ROWS).toBe(37);
+    expect(navonaRow(0)).toBeCloseTo(2 * 222 + Math.PI * 26.8, 1);
+    expect(navonaNear(navonaSeats(27, 0.5))).toBe(true);
+    expect(navonaNear(navonaSeats(24, 0.45))).toBe(true);
+    expect(navonaSeats(12, 0.6)).toBeLessThan(15000);
+    expect(navonaSeats(37, 0.35)).toBeGreaterThan(50000);
+  });
+  it('Aqua Virgo: a jet climbs only to its source level, so sinking the nozzle 1.5 m gives a 2 m jet from water half a metre above the street', () => {
+    expect(virgoJet(0.5, 0)).toBe(0.5);
+    expect(virgoJet(0.5, 1.5)).toBe(2);
+    expect(virgoTop(0.5, 1.5)).toBeCloseTo(0.5, 9);
+    expect(virgoSpeed(0.5, 1.5)).toBeCloseTo(6.26, 2);
+  });
+  it('Caravaggio: only black walls and a single window make the lit side 20 times as bright as the shadow side', () => {
+    expect(studioContrast('black', 'one')).toBeGreaterThan(TENEBRIST);
+    expect(studioContrast('black', 'one')).toBeCloseTo(34.33, 1);
+    expect(studioContrast('grey', 'one')).toBeLessThan(TENEBRIST);
+    expect(studioContrast('white', 'one')).toBeLessThan(4);
+    expect(studioContrast('black', 'two')).toBeLessThan(2);
+  });
+  it('Monte Testaccio: 25 to 53 million jars of 70 litres hold about 1.75 to 3.7 billion litres; 25 million over 250 years is 7 million litres a year', () => {
+    expect(testaccioLitres(25e6)).toBe(1.75e9);
+    expect(testaccioLitres(53e6)).toBe(3.71e9);
+    expect(testaccioPerYear(25e6, 250)).toBe(7e6);
   });
 });

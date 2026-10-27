@@ -1,0 +1,171 @@
+{
+  "id": "earth-san-clemente-three-levels",
+  "field": "earth",
+  "title": "Rome’s San Clemente stands on a buried church, which stands on a temple of Mithras",
+  "emoji": "🕳️",
+  "body": "The Basilica of San Clemente, a short walk from the Colosseum, was built around 1100 on top of an older church. That church, known by AD 392, had itself been built over Roman buildings of the late 1st century, which stood on the ruins of buildings burned in the great fire of AD 64. Each time, the builders didn't clear the site: they [filled the old buildings with earth or rubble](https://basilicasanclemente.com/eng/history/) and used their walls as foundations. So the floor rose with every rebuilding, by about 4 metres the last time, and the older levels survived underneath, the deepest the oldest. Around AD 200 a room in one of the Roman buildings became a Mithraeum, a cave-like temple where followers of the god Mithras met; its altar shows Mithras killing a bull. The prior, Father Joseph Mullooly, began digging out the buried church in 1857. Water flooded the lowest level until a drainage tunnel to the Colosseum was dug in 1912–14, and at the deepest point you can still hear an underground stream.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Around 1100, San Clemente’s old church was filled with rubble and a new one built on top. How much higher is its floor?",
+      "min": 0,
+      "max": 20,
+      "step": 0.5,
+      "answer": 4,
+      "unit": "m",
+      "explanation": "About 4 m. The old church was filled with rubble up to the tops of its columns, and its walls became the new church’s foundations."
+    },
+    {
+      "type": "video",
+      "src": "threelevels.mp4",
+      "poster": "threelevels.jpg",
+      "alt": "Animation of a cutaway through the ground under the Basilica of San Clemente: buildings burn in AD 64 and are buried, Roman buildings with a Mithraeum rise on top, then a 4th-century church, then today's church about 4 m higher; then digging, a flood and a tunnel.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Dark Fog” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 17.87
+        },
+        {
+          "start": 18.13,
+          "end": 23.73
+        },
+        {
+          "start": 24,
+          "end": 29.6
+        },
+        {
+          "start": 29.87,
+          "end": 35.47
+        },
+        {
+          "start": 35.73,
+          "end": 41.33
+        },
+        {
+          "start": 41.6,
+          "end": 47.2
+        },
+        {
+          "start": 47.47,
+          "end": 53.07
+        },
+        {
+          "start": 53.33,
+          "end": 58.93
+        },
+        {
+          "start": 59.2,
+          "end": 64.8
+        },
+        {
+          "start": 65.07,
+          "end": 70.67
+        },
+        {
+          "start": 70.93,
+          "end": 76.53
+        },
+        {
+          "start": 76.8,
+          "end": 82.4
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "san-clemente-three-levels",
+      "prompt": "Step through San Clemente’s history twice: once building on the ruins, once clearing them away. Compare what is left to dig up.",
+      "takeaway": "Building on the ruins left three levels under today’s floor, the deepest the oldest. Clearing them away would have left nothing older than today’s church to find."
+    },
+    {
+      "type": "image",
+      "src": "mithraeum-photo.jpg",
+      "alt": "Photograph of a carved marble altar in a dim underground room with a rough vaulted ceiling: on its front, a figure in a cap with a flying cloak kneels on a bull; stone benches run along the walls on both sides.",
+      "caption": "The altar of San Clemente’s Mithraeum, on the lowest level: Mithras kills a bull. Followers sat on the benches along the walls.",
+      "fit": "cover",
+      "credit": "Dnalor 01 · CC BY-SA 3.0"
+    },
+    {
+      "type": "timeline",
+      "heading": "Three levels, oldest first",
+      "events": [
+        {
+          "when": "AD 64",
+          "text": "Fire; the ruins are filled in"
+        },
+        {
+          "when": "c. 200",
+          "text": "A Mithraeum in a Roman house"
+        },
+        {
+          "when": "by 392",
+          "text": "A church stands on the Roman level"
+        },
+        {
+          "when": "c. 1100",
+          "text": "It is filled; today’s church on top"
+        },
+        {
+          "when": "1857",
+          "text": "Father Mullooly starts digging"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why the floors are stacked",
+      "text": "Rebuilding here never started from the bottom. The builders filled each old building with earth or rubble, levelled it and used its walls as foundations. So the floor rose with every rebuilding, about 4 m the last time, and each older level survived under the next: the deeper, the older."
+    },
+    {
+      "type": "quiz",
+      "question": "San Clemente’s Mithraeum was found in 1867. Why could it not be studied until 1914?",
+      "options": [
+        "Water flooded it",
+        "The church had walled it up",
+        "It lay under a public road",
+        "The Pope forbade it"
+      ],
+      "answer": 0,
+      "explanation": "Underground water flooded the lowest level. A drainage tunnel to the Colosseum, dug in 1912–14, carried it away."
+    }
+  ],
+  "tags": [
+    "rome",
+    "archaeology",
+    "churches",
+    "mithras",
+    "underground",
+    "layers"
+  ],
+  "source": {
+    "label": "Basilica di San Clemente: History",
+    "url": "https://basilicasanclemente.com/eng/history/"
+  },
+  "theme": {
+    "gradient": [
+      "#1f1813",
+      "#6b3a26"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T11:44:51Z"
+}

@@ -1,0 +1,178 @@
+{
+  "id": "art-campidoglio-trapezoid",
+  "field": "art",
+  "title": "Michelangelo built Rome’s Campidoglio square around a crooked corner, not a right angle",
+  "emoji": "📐",
+  "body": "When Pope Paul III asked Michelangelo Buonarroti, the Florentine sculptor, painter and architect, to rebuild the top of the Capitoline Hill in 1536, two old palaces stood there at an angle of about 80 degrees. Michelangelo kept the angle and mirrored it with a new palace, the Palazzo Nuovo, so the [square is a trapezoid](https://museicapitolini.org/en/node/2494): about 44 m wide where the Cordonata ramp arrives and 58 m at the Palazzo Senatorio, measured on OpenStreetMap. In perspective a width looks smaller the farther away it is, so the far end of a rectangle seems to shrink; here the sides open out, and from the top of the ramp the far palace looks about a third wider than it would at the end of a rectangle. In the middle he planned an oval with a twelve-pointed star, kept level on the sloping hilltop by low steps; it was laid only in 1940. At its centre stands a copy of the bronze Marcus Aurelius of about AD 175: most Roman bronzes were melted down, but this one survived because people took the rider for Constantine, the first Christian emperor. The original was taken indoors for restoration in 1981 and is now in the Capitoline Museums.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The Campidoglio widens from 44 m to 58 m. How much wider does its far palace look than at a rectangle’s end?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 32,
+      "unit": "%",
+      "explanation": "About 32%. In perspective a width looks in proportion to width ÷ distance, and at the same distance 58 ÷ 44 = 1.32."
+    },
+    {
+      "type": "video",
+      "src": "trapezoid.mp4",
+      "poster": "trapezoid.jpg",
+      "alt": "Animation of the Piazza del Campidoglio in plan: two old palaces at 80°, a mirrored new palace, a trapezoid 44 to 58 m wide; then two perspective views from the Cordonata, a rectangle and the trapezoid; the level oval with its star; and the bronze Marcus Aurelius.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Gymnopedie No 2” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 17.87
+        },
+        {
+          "start": 18.13,
+          "end": 23.73
+        },
+        {
+          "start": 24,
+          "end": 29.6
+        },
+        {
+          "start": 29.87,
+          "end": 35.47
+        },
+        {
+          "start": 35.73,
+          "end": 41.33
+        },
+        {
+          "start": 41.6,
+          "end": 47.2
+        },
+        {
+          "start": 47.47,
+          "end": 53.07
+        },
+        {
+          "start": 53.33,
+          "end": 58.93
+        },
+        {
+          "start": 59.2,
+          "end": 64.8
+        },
+        {
+          "start": 65.07,
+          "end": 70.67
+        },
+        {
+          "start": 70.93,
+          "end": 76.53
+        },
+        {
+          "start": 76.8,
+          "end": 82.4
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "campidoglio-trapezoid",
+      "prompt": "Turn the side palaces outwards until the far end of the square is as wide as the real one, about 58 m, and watch the view from the ramp.",
+      "takeaway": "Turned out by about 7° each, the square widens from 44 to 58 m, and from the top of the Cordonata the far palace fills about a third more of your view than at the end of a rectangle."
+    },
+    {
+      "type": "image",
+      "src": "square-photo.jpg",
+      "alt": "Photograph of the Piazza del Campidoglio seen from the Palazzo Senatorio in early morning light: a dark pavement with a pattern of white curving lines, the bronze horseman on a pedestal, marble statues at the top of the ramp and an arcaded palace on the right.",
+      "caption": "The square seen from the Palazzo Senatorio: the star pavement of 1940, the copy of Marcus Aurelius, and the Palazzo Nuovo on the right.",
+      "fit": "cover",
+      "credit": "Kameister · CC BY-SA 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "The view from the top of the Cordonata",
+      "left": {
+        "label": "A rectangle",
+        "text": "The sides seem to close in with distance, and the far palace would fill about 39° of your view."
+      },
+      "right": {
+        "label": "Michelangelo’s trapezoid",
+        "text": "The sides open out against the perspective, and the far palace fills about 50° of your view."
+      }
+    },
+    {
+      "type": "timeline",
+      "heading": "A plan finished centuries later",
+      "events": [
+        {
+          "when": "1536",
+          "text": "Paul III commissions Michelangelo"
+        },
+        {
+          "when": "1538",
+          "text": "Marcus Aurelius moved to the hill"
+        },
+        {
+          "when": "1603",
+          "text": "Work starts on the Palazzo Nuovo"
+        },
+        {
+          "when": "1940",
+          "text": "The star pavement is laid"
+        },
+        {
+          "when": "1981",
+          "text": "The original statue goes indoors"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Most Roman bronze statues were melted down. Why did the bronze Marcus Aurelius survive?",
+      "options": [
+        "It was taken for Constantine",
+        "It was buried until 1538",
+        "It was too heavy to move",
+        "It was hidden in a church"
+      ],
+      "answer": 0,
+      "explanation": "People in the Middle Ages took the rider for Constantine, the first Christian emperor, so the statue was spared and stayed on show near the Lateran Palace."
+    }
+  ],
+  "tags": [
+    "rome",
+    "michelangelo",
+    "architecture",
+    "perspective",
+    "squares",
+    "statues"
+  ],
+  "source": {
+    "label": "Wikipedia: Piazza del Campidoglio",
+    "url": "https://en.wikipedia.org/wiki/Piazza_del_Campidoglio"
+  },
+  "theme": {
+    "gradient": [
+      "#131c33",
+      "#7a3b2a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T11:58:25Z"
+}

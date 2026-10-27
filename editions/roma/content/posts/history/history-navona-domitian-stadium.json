@@ -1,0 +1,195 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-navona-domitian-stadium",
+  "field": "history",
+  "title": "Piazza Navona keeps the shape of a Roman stadium: Rome built its houses on the stands",
+  "emoji": "🏟️",
+  "body": "Rome’s Piazza Navona lies over the track of the **Stadium of Domitian**, which Emperor Domitian opened in AD 86 for Greek-style athletic games. It was about 275 m long and 106 m wide, curved at the north end and straight at the south, with seats for some 30,000 people on stands carried by a network of walls. After the empire, the poor lived in its arcades and its stone was quarried; houses and palaces rose on the stands, while the track in the middle stayed open. In the late 1400s the city market moved there and the track became a square, now about 4.5 m above the ancient floor, as [Turismo Roma](https://turismoroma.it/it/node/1103) notes; remains survive under the north end. Even the name comes from the games: *in agone*, ‘at the contests’, slowly became ‘Navona’. In 1651 the sculptor Gian Lorenzo Bernini unveiled his Fountain of the Four Rivers there. A popular legend says its Nile covers its eyes so as not to see Sant’Agnese in Agone, the church of his rival Francesco Borromini, but the church was begun in 1652 and Borromini took over in 1653. The veil means that no one then knew where the Nile began.",
+  "slides": [
+    {
+      "type": "sort",
+      "heading": "Piazza Navona: fact or legend?",
+      "bins": [
+        "Fact",
+        "Legend"
+      ],
+      "items": [
+        {
+          "text": "The square follows the outline of a Roman stadium",
+          "bin": 0
+        },
+        {
+          "text": "Bernini’s Nile hides its eyes from Borromini’s church",
+          "bin": 1
+        },
+        {
+          "text": "Houses stand on the stadium’s old stands",
+          "bin": 0
+        },
+        {
+          "text": "Bernini’s fountain is older than the church behind it",
+          "bin": 0
+        }
+      ],
+      "explanation": "Only the Nile story is a legend: the fountain was unveiled in 1651, and the church was begun in 1652."
+    },
+    {
+      "type": "video",
+      "src": "navona.mp4",
+      "poster": "navona.jpg",
+      "alt": "Animation like an engraved city map: Piazza Navona’s long shape, then Domitian’s stadium of AD 86 over it, its stands filling with 30,000 people; houses grow on the stands while the track stays open; a section shows the arena 4.5 m down; then Bernini’s fountain and Borromini’s church.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Brandenburg No4-1 BWV1049” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 24.27
+        },
+        {
+          "start": 24.53,
+          "end": 30.4
+        },
+        {
+          "start": 30.67,
+          "end": 36.53
+        },
+        {
+          "start": 36.8,
+          "end": 42.67
+        },
+        {
+          "start": 42.93,
+          "end": 48.8
+        },
+        {
+          "start": 49.07,
+          "end": 54.93
+        },
+        {
+          "start": 55.2,
+          "end": 61.07
+        },
+        {
+          "start": 61.33,
+          "end": 67.2
+        },
+        {
+          "start": 67.47,
+          "end": 73.33
+        },
+        {
+          "start": 73.6,
+          "end": 79.47
+        },
+        {
+          "start": 79.73,
+          "end": 85.6
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "navona-domitian-stadium",
+      "prompt": "Wrap rows of benches round the track and choose how much bench each spectator gets. Find a seating that holds about 30,000 people.",
+      "takeaway": "About 25 to 30 rows at 45 to 50 cm a person do it, filling most of the 26.5 m between track and outer wall. Small changes in the assumptions move the total by thousands."
+    },
+    {
+      "type": "image",
+      "src": "navona-night.jpg",
+      "alt": "Piazza Navona at night, looking south: the obelisk above Bernini’s floodlit Fountain of the Four Rivers, the towers of Sant’Agnese in Agone on the right, and a curving row of houses on the left.",
+      "fit": "cover",
+      "credit": "NikonZ7II · CC BY-SA 4.0"
+    },
+    {
+      "type": "timeline",
+      "heading": "From stadium to square",
+      "events": [
+        {
+          "when": "AD 86",
+          "text": "Domitian opens the stadium"
+        },
+        {
+          "when": "Late 1400s",
+          "text": "The city market moves onto the track"
+        },
+        {
+          "when": "1651",
+          "text": "Bernini unveils the Four Rivers"
+        },
+        {
+          "when": "1652",
+          "text": "Sant’Agnese in Agone is begun"
+        },
+        {
+          "when": "1653",
+          "text": "Borromini takes over the church"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "The Nile’s veil",
+      "left": {
+        "label": "Legend",
+        "text": "Bernini’s Nile covers its eyes so as not to see the church front by his rival Francesco Borromini."
+      },
+      "right": {
+        "label": "Fact",
+        "text": "The fountain was unveiled in 1651, before the church was begun. The veil shows that the Nile’s source was unknown."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "Why did Piazza Navona keep the shape of Emperor Domitian’s stadium?",
+      "options": [
+        "Houses were built on its old stands",
+        "Pope Innocent X had it copied in 1651",
+        "Floods of the Tiber carved it out",
+        "Its walls were rebuilt in the 1800s"
+      ],
+      "answer": 0,
+      "explanation": "Homes and palaces rose on the stands and their walls, while the open track became a market and then the square."
+    }
+  ],
+  "tags": [
+    "rome",
+    "navona",
+    "stadium",
+    "bernini",
+    "borromini",
+    "domitian"
+  ],
+  "source": {
+    "label": "Bernard & Ciancio Rossetto: Le stade de Domitien (MEFRM, 2014)",
+    "url": "https://journals.openedition.org/mefrm/1862"
+  },
+  "theme": {
+    "gradient": [
+      "#2f2721",
+      "#7a2a22"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T11:26:14Z"
+}

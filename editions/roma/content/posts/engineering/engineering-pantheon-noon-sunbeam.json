@@ -1,0 +1,177 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-pantheon-noon-sunbeam",
+  "field": "engineering",
+  "title": "The Pantheon’s noon sunbeam sits high on the dome in winter and reaches the door in April",
+  "emoji": "☀️",
+  "body": "The Pantheon in Rome, rebuilt under Emperor Hadrian and probably dedicated around AD 126, gets all its direct sunlight through the **oculus**, the open hole about 9 metres across at the top of its dome. Its door faces north, so at noon, when the Sun stands due south, the disc of light always falls on the north side, on the dome or wall above the door or on the floor in front of it. Where it lands depends on how high the Sun stands, in Rome about 25° at noon in December and about 72° in June. In autumn and winter the disc stays up on the coffered dome; at the equinoxes it reaches the base of the dome; around 21 April, Rome’s traditional birthday, it fills the doorway; from late April to late August it lies on the floor. Through each day it also sweeps from west to east. The architectural historian Mark Wilson Jones calls this a reverse sundial, telling time with light instead of shadow. Robert Hannah and Giulio Magli argue in [their paper](https://arxiv.org/abs/0910.0128) that the building was designed around this path of the Sun, an interpretation rather than a recorded fact.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Rome lies about 42° north of the equator. How many degrees above the horizon does the Sun stand at noon in late June?",
+      "min": 0,
+      "max": 90,
+      "step": 1,
+      "answer": 72,
+      "unit": "°",
+      "explanation": "About 72°: 90° minus Rome’s latitude of 41.9°, plus the 23.4° tilt of Earth’s axis. In late December it is about 25°, so the Pantheon’s noon sunbeam lands much higher."
+    },
+    {
+      "type": "video",
+      "src": "pantheon.mp4",
+      "poster": "pantheon.jpg",
+      "alt": "Animation in a section through the Pantheon, warm concrete against a dusk sky: noon sunlight from the oculus lands high on the coffered dome in December, slides to the dome’s base in March, fills the north doorway around 21 April and lies on the floor in summer; then one winter day seen from above.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Inspired” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 24.27
+        },
+        {
+          "start": 24.53,
+          "end": 30.4
+        },
+        {
+          "start": 30.67,
+          "end": 36.53
+        },
+        {
+          "start": 36.8,
+          "end": 42.67
+        },
+        {
+          "start": 42.93,
+          "end": 48.8
+        },
+        {
+          "start": 49.07,
+          "end": 54.93
+        },
+        {
+          "start": 55.2,
+          "end": 61.07
+        },
+        {
+          "start": 61.33,
+          "end": 67.2
+        },
+        {
+          "start": 67.47,
+          "end": 73.33
+        },
+        {
+          "start": 73.6,
+          "end": 79.47
+        },
+        {
+          "start": 79.73,
+          "end": 85.6
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "pantheon-noon-sunbeam",
+      "prompt": "Drag through the year and find a day when the noon sunlight covers the whole doorway, from the floor to the top of the door.",
+      "takeaway": "Only a few days around 21 April, and again in late August. In winter the low Sun puts the disc high on the dome; in summer the high Sun puts it on the floor in front of the door."
+    },
+    {
+      "type": "image",
+      "src": "pantheon-sunbeam.jpg",
+      "alt": "Close-up inside the Pantheon: a round disc of sunlight from the oculus lights four coffers of the otherwise dark dome.",
+      "fit": "cover",
+      "credit": "NormanB · CC BY-SA 3.0"
+    },
+    {
+      "type": "timeline",
+      "heading": "Where the Pantheon’s noon light falls",
+      "events": [
+        {
+          "when": "December",
+          "text": "High on the dome’s coffers"
+        },
+        {
+          "when": "March",
+          "text": "At the base of the dome"
+        },
+        {
+          "when": "Around 21 April",
+          "text": "Fills the doorway to the floor"
+        },
+        {
+          "when": "May to August",
+          "text": "On the floor in front of the door"
+        },
+        {
+          "when": "September",
+          "text": "Back at the base of the dome"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "A sundial, turned inside out",
+      "left": {
+        "label": "A sundial",
+        "text": "A shadow moves across marked lines to tell the hour and the season."
+      },
+      "right": {
+        "label": "The Pantheon",
+        "text": "A disc of sunlight moves across the dome, the wall and the floor, with no lines to read it by."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "Why does the Pantheon’s noon sunlight always land on the side with the door?",
+      "options": [
+        "The door faces north, away from the Sun",
+        "The floor slopes toward the door",
+        "The oculus is off-centre",
+        "Mirrors in the dome reflect it"
+      ],
+      "answer": 0,
+      "explanation": "At noon the Sun is due south, so light through the oculus travels north, toward the north-facing door. No sunlight enters by the door itself."
+    }
+  ],
+  "tags": [
+    "rome",
+    "pantheon",
+    "sun",
+    "architecture",
+    "calendar"
+  ],
+  "source": {
+    "label": "Hannah & Magli: The role of the sun in the Pantheon’s design and meaning",
+    "url": "https://arxiv.org/abs/0910.0128"
+  },
+  "theme": {
+    "gradient": [
+      "#17130f",
+      "#6b4a12"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T10:30:04Z"
+}
