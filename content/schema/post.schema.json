@@ -186,7 +186,8 @@
                   "mirror-molecules-nobel",
                   "nobel-hall-woodford",
                   "power-grid-transformers",
-                  "certificate-key-number-four"
+                  "certificate-key-number-four",
+                  "leap-seconds-abolished"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

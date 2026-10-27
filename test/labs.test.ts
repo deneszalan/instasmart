@@ -91,6 +91,7 @@ import { round as chiralRound, rounds as chiralRounds } from '../src/labs/chemis
 import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
 import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
 import { bruteForce, G as curveG, multiply as curveMultiply, ORDER as curveOrder, samePoint, searchSeconds, UNIVERSE_SECONDS } from '../src/labs/tech/certificate-key-number-four';
+import { clockCount, measured as leapMeasured } from '../src/labs/tech/leap-seconds-abolished';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -755,5 +756,20 @@ describe('lab maths', () => {
     expect(searchSeconds(98)).toBeLessThan(UNIVERSE_SECONDS);
     expect(searchSeconds(99)).toBeGreaterThan(UNIVERSE_SECONDS);
     expect(Math.floor(Math.log10(searchSeconds(384) / (365.25 * 86400))) + 1).toBe(97);
+  });
+
+  it('leap seconds: a clock that repeats 23:59:59 steps back, so a half-second timer across it reads −0.5 s; a smear or no leap second never goes negative', () => {
+    expect(clockCount('repeat', 1.99)).toBeCloseTo(86399.99, 9);
+    expect(clockCount('repeat', 2)).toBeCloseTo(86399, 9);
+    expect(clockCount('repeat', 3)).toBeCloseTo(86400, 9);
+    expect(leapMeasured('repeat', 1.8, 0.5)).toBeCloseTo(-0.5, 9);
+    expect(leapMeasured('repeat', 0.5, 1)).toBeCloseTo(1, 9);
+    expect(leapMeasured('repeat', 1.5, 2)).toBeCloseTo(1, 9);
+    expect(leapMeasured('none', 1.8, 0.5)).toBeCloseTo(0.5, 9);
+    expect(leapMeasured('smear', 1.8, 0.5)).toBeCloseTo((0.5 * 86400) / 86401, 9);
+    for (let s = 0; s <= 3; s += 0.1) for (let l = 0.1; l <= 1.5; l += 0.1) {
+      expect(leapMeasured('smear', s, l)).toBeGreaterThan(0);
+      expect(leapMeasured('none', s, l)).toBeGreaterThan(0);
+    }
   });
 });

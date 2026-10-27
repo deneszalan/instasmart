@@ -96,4 +96,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'nobel-hall-woodford': lazy(() => import('./economics/nobel-hall-woodford')),
   'power-grid-transformers': lazy(() => import('./engineering/power-grid-transformers')),
   'certificate-key-number-four': lazy(() => import('./tech/certificate-key-number-four')),
+  'leap-seconds-abolished': lazy(() => import('./tech/leap-seconds-abolished')),
 };
