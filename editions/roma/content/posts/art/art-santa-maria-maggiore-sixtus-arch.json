@@ -1,0 +1,177 @@
+{
+  "id": "art-santa-maria-maggiore-sixtus-arch",
+  "field": "art",
+  "title": "Legend says August snow marked out Santa Maria Maggiore; its mosaics name a later pope",
+  "emoji": "❄️",
+  "body": "Santa Maria Maggiore, on Rome’s Esquiline Hill, is one of the city’s four major basilicas. A [legend](https://en.wikipedia.org/wiki/Dedication_of_the_Basilica_of_Saint_Mary_Major) says that snow fell there on the night of 5 August and that Pope Liberius (352–366) traced the church in it, but no text tells the story before the year 1000; white petals still fall from the ceiling each 5 August in its memory. The church’s own mosaics are better witnesses. High on the nave walls, panels of Old Testament stories, many split into an upper and a lower scene, read like a picture strip; 27 of the 42 survive. Over the altar, the triumphal arch shows the childhood of Christ in four bands, and at its top a Latin line reads *Xystus episcopus plebi Dei*, ‘Sixtus, bishop, to the people of God’: Pope Sixtus III, bishop of Rome from 432 to 440. Its theme suits those years, just after the Council of Ephesus of 431 called Mary Mother of God, and Sixtus’s own dedication never mentions snow. Later came the apse mosaic of 1295, a ceiling said to be gilded with early gold from the Americas and, in 2025, the tomb of Pope Francis.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The arch mosaic of Santa Maria Maggiore names Pope Sixtus III. In which year did he become bishop of Rome?",
+      "min": 300,
+      "max": 1300,
+      "step": 1,
+      "answer": 432,
+      "format": "year",
+      "explanation": "In AD 432. He led the Church in Rome until 440, so the arch was made in those eight years, just after the Council of Ephesus of 431."
+    },
+    {
+      "type": "video",
+      "src": "sixtus-arch.mp4",
+      "poster": "sixtus-arch.jpg",
+      "alt": "Animation on a snowy violet night: Santa Maria Maggiore's plan filling with snow as Pope Liberius traces it, a time ruler, the nave's Old Testament panels, a two-scene panel, 27 of 42 panels, the arch with XYSTVS EPISCOPVS PLEBI DEI, and petals falling from a gilded ceiling.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Sheep May Safely Graze - BWV 208” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "santa-maria-maggiore-sixtus-arch",
+      "prompt": "Turn on clues from the arch of Santa Maria Maggiore until only one window of years is left for its mosaic.",
+      "takeaway": "Only Pope Sixtus III, bishop of Rome 432–440, fits a bishop named Sixtus, after Ephesus and before the 1295 apse. The legend’s Pope Liberius, 352–366, is ruled out."
+    },
+    {
+      "type": "image",
+      "src": "arch-photo.jpg",
+      "alt": "Photograph of the right side of the triumphal arch in Santa Maria Maggiore: bands of mosaic figures in white and coloured robes on gold and blue, a king on a throne labelled HERODES, and at the bottom a walled city labelled BETHLEEM with white sheep below it.",
+      "caption": "The right side of the triumphal arch, from the 430s: scenes of Christ’s childhood, King Herod, and the city of Bethlehem with its sheep.",
+      "fit": "cover",
+      "credit": "Hugo DK · CC BY-SA 4.0"
+    },
+    {
+      "type": "compare",
+      "heading": "Two stories of a beginning",
+      "left": {
+        "label": "The legend",
+        "text": "Snow on 5 August, in the time of Pope Liberius (352–366), marked out the plan. No text tells it before the year 1000."
+      },
+      "right": {
+        "label": "The mosaics",
+        "text": "The arch names Sixtus, bishop of Rome 432–440, and honours Mary just after the Council of Ephesus of 431."
+      }
+    },
+    {
+      "type": "timeline",
+      "heading": "Santa Maria Maggiore in five dates",
+      "events": [
+        {
+          "when": "352–366",
+          "text": "Pope Liberius, the legend’s pope"
+        },
+        {
+          "when": "431",
+          "text": "Ephesus calls Mary Mother of God"
+        },
+        {
+          "when": "432–440",
+          "text": "Pope Sixtus III; the arch mosaic"
+        },
+        {
+          "when": "after 1000",
+          "text": "The snow legend is written down"
+        },
+        {
+          "when": "2025",
+          "text": "Pope Francis is buried here"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "On the triumphal arch of Santa Maria Maggiore, what shows when its mosaic was made?",
+      "options": [
+        "A Latin line naming Sixtus",
+        "Snow painted for 5 August",
+        "Gold from the Americas",
+        "A portrait of Pope Liberius"
+      ],
+      "answer": 0,
+      "explanation": "‘Xystus episcopus plebi Dei’ names Sixtus III, bishop of Rome 432–440. The snow legend is first written down only after the year 1000."
+    }
+  ],
+  "tags": [
+    "rome",
+    "mosaics",
+    "basilicas",
+    "legends",
+    "popes"
+  ],
+  "source": {
+    "label": "Wikipedia: Santa Maria Maggiore",
+    "url": "https://en.wikipedia.org/wiki/Santa_Maria_Maggiore"
+  },
+  "theme": {
+    "gradient": [
+      "#14142b",
+      "#5a3f72"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T17:36:00Z"
+}

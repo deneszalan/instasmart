@@ -131,6 +131,7 @@ import { MAX_ROWS as NAVONA_MAX_ROWS, nearEstimate as navonaNear, rowLength as n
 import { jetHeight as virgoJet, jetTop as virgoTop, nozzleSpeed as virgoSpeed } from '../src/labs/engineering/aqua-virgo-low-fountains';
 import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggio-calling-light';
 import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } from '../src/labs/economics/monte-testaccio-amphorae';
+import { fits as smmFits, LIBERIUS as SMM_LIBERIUS, windows as smmWindows, yearsLeft as smmYears } from '../src/labs/art/santa-maria-maggiore-sixtus-arch';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1198,5 +1199,15 @@ describe('lab maths', () => {
     expect(testaccioLitres(25e6)).toBe(1.75e9);
     expect(testaccioLitres(53e6)).toBe(3.71e9);
     expect(testaccioPerYear(25e6, 250)).toBe(7e6);
+  });
+  it('Santa Maria Maggiore: a bishop Sixtus, after Ephesus and before the 1295 apse leaves only Sixtus III, 432–440', () => {
+    expect(smmWindows([])).toEqual([[100, 1600]]);
+    expect(smmWindows(['sixtus'])).toHaveLength(5);
+    expect(smmWindows(['sixtus', 'legal'])).toEqual([[432, 440], [1471, 1484], [1585, 1590]]);
+    const solved = smmWindows(['sixtus', 'ephesus', 'apse']);
+    expect(solved).toEqual([[432, 440]]);
+    expect(smmYears(solved)).toBe(8);
+    expect(smmFits(solved, SMM_LIBERIUS)).toBe(false);
+    expect(smmFits(smmWindows(['legal', 'apse']), SMM_LIBERIUS)).toBe(true);
   });
 });
