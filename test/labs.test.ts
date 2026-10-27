@@ -131,6 +131,7 @@ import { MAX_ROWS as NAVONA_MAX_ROWS, nearEstimate as navonaNear, rowLength as n
 import { jetHeight as virgoJet, jetTop as virgoTop, nozzleSpeed as virgoSpeed } from '../src/labs/engineering/aqua-virgo-low-fountains';
 import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggio-calling-light';
 import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } from '../src/labs/economics/monte-testaccio-amphorae';
+import { move as obeliskMove, NEED as OBELISK_NEED, ROPES as OBELISK_ROPES, slacks as obeliskSlacks, start as obeliskStart, TARGET as OBELISK_TARGET } from '../src/labs/engineering/vatican-obelisk-1586';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1198,5 +1199,23 @@ describe('lab maths', () => {
     expect(testaccioLitres(25e6)).toBe(1.75e9);
     expect(testaccioLitres(53e6)).toBe(3.71e9);
     expect(testaccioPerYear(25e6, 250)).toBe(7e6);
+  });
+  it('Vatican obelisk: with uneven ropes, overloaded capstans that stop let all 40 share the load and lift it 2¾ palms; ropes that snap fail', () => {
+    const slack = obeliskSlacks(0.5);
+    let s = obeliskStart(slack);
+    let moves = 0;
+    while (s.h < OBELISK_TARGET && moves < 30) { s = obeliskMove(s, slack, 'stop'); moves++; }
+    expect(s.h).toBeGreaterThanOrEqual(OBELISK_TARGET);
+    expect(s.broken.some(Boolean)).toBe(false);
+    expect(Math.max(...s.pull)).toBeLessThanOrEqual(1 + 1e-9);
+    expect(s.pull.reduce((a, b) => a + b, 0)).toBeCloseTo(OBELISK_NEED, 6);
+    let f = obeliskStart(slack);
+    for (let i = 0; i < 30; i++) f = obeliskMove(f, slack, 'snap');
+    expect(f.broken.filter(Boolean).length).toBeGreaterThan(OBELISK_ROPES - OBELISK_NEED);
+    expect(f.h).toBe(0);
+    const even = obeliskSlacks(0);
+    let g = obeliskStart(even);
+    for (let i = 0; i < 14; i++) g = obeliskMove(g, even, 'snap');
+    expect(g.broken.some(Boolean)).toBe(false);
   });
 });
