@@ -111,6 +111,7 @@ import { canJoin, canSuspend, ELECT_AT as HRC_ELECT, UN_MEMBERS } from '../src/l
 import { banned as infBanned, kmAt, rangeClass } from '../src/labs/history/reykjavik-summit-inf-treaty';
 import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgment-three-votes';
 import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '../src/labs/history/caesar-445-day-year';
+import { coverage as goldCoverage, flashing as goldFlashing, GOAL as GOLD_GOAL, reflectedAngle as goldReflected, tiltsFor as goldTilts } from '../src/labs/art/trastevere-gold-tesserae';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -992,5 +993,17 @@ describe('lab maths', () => {
     expect(calendarDrift('three', 36)).toBeCloseTo(3.28, 2);
     expect(Math.abs(calendarDrift('gregorian', 1000))).toBeLessThan(1);
     expect(Math.abs(calendarDrift('four', 100))).toBeLessThan(1);
+  });
+
+  it('Trastevere gold: a tile tipped by 1° turns its reflection by 2°; flat tiles flash only about 12 to 15 m from the wall; tilts up to 8° light up most of the nave', () => {
+    expect(goldReflected(0)).toBe(35);
+    expect(goldReflected(1)).toBe(37);
+    const flat = goldTilts(0);
+    expect(goldFlashing(flat, 13).length).toBeGreaterThan(0);
+    expect(goldFlashing(flat, 8).length).toBe(0);
+    expect(goldFlashing(flat, 20).length).toBe(0);
+    expect(goldCoverage(flat)).toBeLessThan(0.15);
+    expect(goldCoverage(goldTilts(8))).toBeGreaterThan(GOLD_GOAL);
+    expect(goldCoverage(goldTilts(2))).toBeLessThan(GOLD_GOAL);
   });
 });

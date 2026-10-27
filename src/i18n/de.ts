@@ -1533,4 +1533,12 @@ export const de: Record<string, string> = {
   'Simplified: the Sun’s year is held at 365.2422 days.': 'Vereinfacht: Das Sonnenjahr ist fest auf 365,2422 Tage gesetzt.',
   'equinox earlier': 'Tagundnachtgleiche früher',
   'equinox later': 'Tagundnachtgleiche später',
+  'eye height, 1.6 m': 'Augenhöhe, 1,6 m',
+  'Gold tiles tilted up to': 'Goldsteinchen gekippt bis',
+  'You stand in the nave': 'Du stehst im Kirchenschiff',
+  '{n} m from the apse': '{n} m von der Apsis',
+  'Gold tiles flashing at you': 'Goldsteinchen, die dich anblitzen',
+  'Places in the nave with a flash': 'Stellen im Schiff mit Aufblitzen',
+  'A slice of the apse wall with gold tiles tilted up to {s} degrees, and you {x} m away': 'Ein Schnitt durch die Apsiswand mit Goldsteinchen, gekippt bis {s} Grad, und du {x} m entfernt',
+  'Simplified: one slice of wall, 200 gold tiles 1 cm tall between 10 and 12 m up, and sunlight from one direction, 35° above the horizon. Yellow ticks: where you would see a flash.': 'Vereinfacht: ein Schnitt durch die Wand, 200 Goldsteinchen von 1 cm Höhe zwischen 10 und 12 m über dem Boden, und Sonnenlicht aus einer Richtung, 35° über dem Horizont. Gelbe Striche: wo du ein Aufblitzen sehen würdest.',
 };
