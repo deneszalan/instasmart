@@ -119,4 +119,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'colosseum-numbered-arches': lazy(() => import('./engineering/colosseum-numbered-arches')),
   'circus-maximus-staggered-gates': lazy(() => import('./math/circus-maximus-staggered-gates')),
   'curia-vote-by-walking': lazy(() => import('./politics/curia-vote-by-walking')),
+  'vestals-thirty-years': lazy(() => import('./history/vestals-thirty-years')),
 };

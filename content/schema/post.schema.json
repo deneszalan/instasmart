@@ -209,7 +209,8 @@
                   "caesar-445-day-year",
                   "colosseum-numbered-arches",
                   "circus-maximus-staggered-gates",
-                  "curia-vote-by-walking"
+                  "curia-vote-by-walking",
+                  "vestals-thirty-years"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

@@ -114,6 +114,7 @@ import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '
 import { busiestQueue, minutesToEmpty, openArches, PUBLIC_ARCHES } from '../src/labs/engineering/colosseum-numbered-arches';
 import { GATE_Y as CIRCUS_GATES, runs as circusRuns, unfairness as circusUnfairness } from '../src/labs/math/circus-maximus-staggered-gates';
 import { plinysCase, verdict as curiaVerdict } from '../src/labs/politics/curia-vote-by-walking';
+import { interval as vestalInterval, stages as vestalStages } from '../src/labs/history/vestals-thirty-years';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1025,5 +1026,14 @@ describe('lab maths', () => {
     expect(curiaVerdict(100, 100, 50, 'three')).toBe('tie');
     expect(plinysCase(110, 80, 60)).toBe(true);
     expect(plinysCase(150, 50, 50)).toBe(false);
+  });
+
+  it('vestals: six places and 30-year terms need a new girl every 5 years, two in each decade; 57-year terms only every 9.5', () => {
+    expect(vestalInterval(30)).toBe(5);
+    expect(vestalInterval(57)).toBeCloseTo(9.5, 6);
+    for (const y of [0, 7, 33, 61]) expect(vestalStages(30, y)).toEqual({ learning: 2, performing: 2, teaching: 2, staying: 0 });
+    const s = vestalStages(60, 12);
+    expect(s.learning + s.performing + s.teaching + s.staying).toBe(6);
+    expect(s.staying).toBe(3);
   });
 });

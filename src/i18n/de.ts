@@ -1572,4 +1572,13 @@ export const de: Record<string, string> = {
   'For banishment': 'Für Verbannung',
   'For death': 'Für den Tod',
   'Pliny gives no numbers: the senators here are yours to set.': 'Plinius nennt keine Zahlen: Die Senatoren hier stellst du selbst ein.',
+  'Six Vestals’ terms of service over {n} years': 'Die Dienstzeiten der sechs Vestalinnen über {n} Jahre',
+  'Years each Vestal serves': 'Dienstjahre jeder Vestalin',
+  'Year in the model': 'Jahr im Modell',
+  'A new Vestal every': 'Eine neue Vestalin alle',
+  'Learning (years 0–10)': 'Lernen (Jahre 0–10)',
+  'Performing the rites (10–20)': 'Riten ausführen (10–20)',
+  'Teaching (20–30)': 'Lehren (20–30)',
+  'Staying on (30+)': 'Bleiben (30+)',
+  'Model: every Vestal serves the same term, and the six are chosen at even intervals.': 'Modell: Jede Vestalin dient gleich lange, und die sechs werden in gleichen Abständen gewählt.',
 };
