@@ -1,0 +1,168 @@
+{
+  "id": "history-caesar-445-day-year",
+  "field": "history",
+  "title": "Julius Caesar made 46 BC last 445 days to put Rome’s calendar back in step",
+  "emoji": "🗓️",
+  "body": "Rome’s old calendar had 12 months and only 355 days, about ten days short of the Sun’s year. To keep up, the chief priest, the *pontifex maximus*, could add an extra month of 22 or 23 days, on average every other year. But priests were also politicians: they could lengthen a year for an ally, and extra months were missed. In 46 BC Julius Caesar, himself pontifex maximus and advised by the astronomer Sosigenes of Alexandria, added the usual extra month and two more months of 67 days, making that year **445 days** long. From 1 January 45 BC Rome had 365 days a year and a leap day every fourth year, the [Julian calendar](https://en.wikipedia.org/wiki/Julian_calendar). Its average of 365.25 days is about 11 minutes longer than the Sun’s year, a day every 128 years, so in 1582 the Gregorian reform dropped ten days. Quintilis became July in 44 BC, and Sextilis became August in 8 BC.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "To fix Rome’s calendar, Julius Caesar stretched the year 46 BC. How many days did it last?",
+      "min": 300,
+      "max": 500,
+      "step": 1,
+      "answer": 445,
+      "unit": "days",
+      "explanation": "445 days: the usual 355, an extra month of 23 days, and two more months of 67 days, to catch up with the seasons."
+    },
+    {
+      "type": "video",
+      "src": "caesar-year.mp4",
+      "poster": "caesar-year.jpg",
+      "alt": "Animation on painted plaster, like a Roman calendar: a stone tablet reads CDXLV, 445 days, in 46 BC. Twelve month columns add up to 355 days, ten short of the Sun's year. An extra month is slotted in or skipped, a ring of months slips against the seasons, and 355 + 23 + 67 day squares make 445.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Impact Lento” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 24.27
+        },
+        {
+          "start": 24.53,
+          "end": 30.4
+        },
+        {
+          "start": 30.67,
+          "end": 36.53
+        },
+        {
+          "start": 36.8,
+          "end": 42.67
+        },
+        {
+          "start": 42.93,
+          "end": 48.8
+        },
+        {
+          "start": 49.07,
+          "end": 54.93
+        },
+        {
+          "start": 55.2,
+          "end": 61.07
+        },
+        {
+          "start": 61.33,
+          "end": 67.2
+        },
+        {
+          "start": 67.47,
+          "end": 73.33
+        },
+        {
+          "start": 73.6,
+          "end": 79.47
+        },
+        {
+          "start": 79.73,
+          "end": 85.6
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "caesar-445-day-year",
+      "prompt": "Pick a leap-day rule and let the centuries pass. Find a rule that keeps the spring equinox within a day of its date for 1,000 years.",
+      "takeaway": "Caesar’s leap day every fourth year drifts a day about every 128 years, some 8 days in 1,000. Only the Gregorian rule, which skips three leap days every 400 years, stays within a day."
+    },
+    {
+      "type": "timeline",
+      "heading": "From Caesar to today’s calendar",
+      "events": [
+        {
+          "when": "46 BC",
+          "text": "Caesar makes the year 445 days."
+        },
+        {
+          "when": "45 BC",
+          "text": "365 days, leap day every 4th year."
+        },
+        {
+          "when": "44 BC",
+          "text": "Quintilis becomes July, for Caesar."
+        },
+        {
+          "when": "8 BC",
+          "text": "Sextilis becomes August."
+        },
+        {
+          "when": "AD 1582",
+          "text": "Gregorian reform drops ten days."
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Rome’s calendar, before and after",
+      "left": {
+        "label": "Before Caesar",
+        "text": "355 days, plus an extra month of 22 or 23 days whenever the pontifex maximus chose to add one."
+      },
+      "right": {
+        "label": "Caesar’s Julian calendar",
+        "text": "365 days, plus one leap day every fourth year, by a fixed rule anyone could check."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "Rome’s year once began in March. Which month’s name means ‘seventh’?",
+      "options": [
+        "September",
+        "July",
+        "October",
+        "December"
+      ],
+      "answer": 0,
+      "explanation": "September comes from septem, seven. October, November and December were the eighth, ninth and tenth months."
+    }
+  ],
+  "tags": [
+    "rome",
+    "calendar",
+    "caesar",
+    "leapyear"
+  ],
+  "source": {
+    "label": "Wikipedia: Julian calendar",
+    "url": "https://en.wikipedia.org/wiki/Julian_calendar"
+  },
+  "theme": {
+    "gradient": [
+      "#7f1d1d",
+      "#78350f"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T08:46:03Z"
+}

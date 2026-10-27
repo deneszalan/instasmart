@@ -80,12 +80,28 @@ export const EDITIONS = {
     ],
     about: 'Jeder Beitrag nennt unter ⋯ eine Quelle, damit du ihn prüfen kannst.',
   },
+  roma: {
+    id: 'roma',
+    name: 'Roma',
+    lang: 'en',
+    description: 'Roma: bite-sized stories, animations and puzzles about ancient Rome, how it worked and what it left us.',
+    dir: 'editions/roma',
+    path: 'roma',
+    fields: ['history'],
+    fieldText: {
+      history: { name: 'History', handle: 'ab.urbe.condita', emoji: '🏛️', gradient: ['#7f1d1d', '#a16207'], scope: 'The city, its people, its calendar and its empire' },
+    },
+    storageKey: 'roma:v1',
+    wiki: false,
+    authors: true,
+    about: 'Every post links a source so you can check it. Posts marked AI were written by an AI.',
+  },
 } as const satisfies Record<string, Edition>;
 
 export type EditionId = keyof typeof EDITIONS;
 export const EDITION_IDS = Object.keys(EDITIONS) as EditionId[];
 
-/** The edition a Vite mode builds: `--mode lesefutter` builds Lesefutter; any other mode builds Reckon. */
+/** The edition a Vite mode builds: `--mode lesefutter` builds Lesefutter, `--mode roma` Roma; any other mode builds Reckon. */
 export function editionForMode(mode: string): Edition {
   return mode in EDITIONS ? EDITIONS[mode as EditionId] : EDITIONS.reckon;
 }
