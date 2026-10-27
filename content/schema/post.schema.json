@@ -231,6 +231,10 @@
                   "two-consuls-one-year",
                   "caesar-ides-pompey-curia",
                   "augustus-offices-counted"
+                  "trajans-column-hill",
+                  "arch-of-constantine-spolia",
+                  "rome-after-the-sacks",
+                  "arch-of-titus-menorah"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

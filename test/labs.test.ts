@@ -135,6 +135,10 @@ import { foundingYear as palatineFounding, nearest as palatineNearest, reignFor 
 import { MAJORITY as CENTURIATE_MAJORITY, RICH as CENTURIATE_RICH, runVote as centuriateVote, shareOut as centuriateShare, TOTAL as CENTURIATE_TOTAL } from '../src/labs/politics/two-consuls-one-year';
 import { latest as caesarLatest, posOf as caesarPos, yearOf as caesarYear, yearsAfter as caesarAfter, yearsAt as caesarYearsAt } from '../src/labs/history/caesar-ides-pompey-curia';
 import { astro as augAstro, inscription as augInscription, matchesObelisk as augObelisk, roman as augRoman, STEPS as AUG_STEPS, tauAt as augTau, titlesAt as augTitles } from '../src/labs/history/augustus-offices-counted';
+import { backFor as trajanBack, COLUMN as TRAJAN_COLUMN, earthPerMetre as trajanEarth, faceHeight as trajanFace } from '../src/labs/engineering/trajans-column-hill';
+import { carvedBy as archCarvedBy, DEDICATED as ARCH_DEDICATED, REUSED_TOTAL as ARCH_REUSED } from '../src/labs/history/arch-of-constantine-spolia';
+import { density as sackDensity, estimateAt as sackAt, TENTH as SACK_TENTH } from '../src/labs/history/rome-after-the-sacks';
+import { contrast as titusContrast, ochreReflects as titusOchre, spotReflects as titusSpot, STANDS_OUT as TITUS_STANDS } from '../src/labs/art/arch-of-titus-menorah';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1257,5 +1261,35 @@ describe('lab maths', () => {
     expect(augTitles(augTau(0))).toMatchObject({ augustus: false, cos: 4, trib: 0 });
     const hits = Array.from({ length: AUG_STEPS + 1 }, (_, i) => i).filter((i) => augObelisk(augTitles(augTau(i))));
     expect(hits).toEqual([41, 42]);
+  it('Trajan’s Column: a 30° hillside cut back about 51.6 m leaves a face of 100 Roman feet (29.77 m) and about 767 m³ of earth per metre', () => {
+    expect(TRAJAN_COLUMN).toBeCloseTo(29.77, 9);
+    expect(trajanBack(30, TRAJAN_COLUMN)).toBeCloseTo(51.56, 2);
+    expect(trajanFace(30, trajanBack(30, TRAJAN_COLUMN))).toBeCloseTo(29.77, 9);
+    expect(trajanEarth(30, 51.56)).toBeCloseTo(767.4, 0);
+    expect(trajanEarth(45, 20) / trajanEarth(45, 10)).toBeCloseTo(4, 9);
+  });
+  it('Arch of Constantine: all 28 reused sculptures existed by AD 176, 139 years before the dedication; none for certain before 117', () => {
+    expect(ARCH_REUSED).toBe(28);
+    expect(archCarvedBy(116)).toBe(0);
+    expect(archCarvedBy(117)).toBe(12);
+    expect(archCarvedBy(175)).toBe(20);
+    expect(archCarvedBy(176)).toBe(28);
+    expect(ARCH_DEDICATED - 176).toBe(139);
+  });
+  it('Rome after the sacks: from up to a million to at most 60,000 by about 550; a million inside the walls is 72,150 per km²', () => {
+    expect(Math.round(sackDensity(1e6))).toBe(72150);
+    expect(sackAt(100).high).toBe(1e6);
+    expect(sackAt(454).high).toBe(500000);
+    expect(sackAt(549).high).toBeGreaterThanOrEqual(SACK_TENTH);
+    expect(sackAt(550).high).toBeLessThan(SACK_TENTH);
+    expect(sackAt(600).high).toBe(90000);
+  });
+  it('Arch of Titus: in the model, ochre traces stand out in blue light but hardly in red, because yellow ochre absorbs blue', () => {
+    expect(titusOchre(450)).toBeLessThan(0.15);
+    expect(titusOchre(650)).toBeGreaterThan(0.6);
+    expect(titusSpot(500, 0)).toBeCloseTo(0.85, 9);
+    expect(titusContrast(450)).toBeGreaterThan(TITUS_STANDS);
+    expect(titusContrast(500)).toBeLessThan(TITUS_STANDS);
+    expect(titusContrast(620)).toBeLessThan(1.1);
   });
 });

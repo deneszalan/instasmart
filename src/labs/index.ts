@@ -140,4 +140,8 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'two-consuls-one-year': lazy(() => import('./politics/two-consuls-one-year')),
   'caesar-ides-pompey-curia': lazy(() => import('./history/caesar-ides-pompey-curia')),
   'augustus-offices-counted': lazy(() => import('./history/augustus-offices-counted')),
+  'trajans-column-hill': lazy(() => import('./engineering/trajans-column-hill')),
+  'arch-of-constantine-spolia': lazy(() => import('./history/arch-of-constantine-spolia')),
+  'rome-after-the-sacks': lazy(() => import('./history/rome-after-the-sacks')),
+  'arch-of-titus-menorah': lazy(() => import('./art/arch-of-titus-menorah')),
 };

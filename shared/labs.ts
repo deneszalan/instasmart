@@ -140,6 +140,10 @@ export const LABS = {
   'two-consuls-one-year': 'Run a vote of the Roman Republic’s Centuriate Assembly, which elected the consuls: set how the 98 richest and the 95 other centuries vote, and see when the count stops.',
   'caesar-ides-pompey-curia': 'Drag through the centuries after Julius Caesar’s murder on the Ides of March, 44 BC, and see each account appear when it was written, with its count of wounds and his last words.',
   'augustus-offices-counted': 'Move through the life of Augustus, Rome’s first emperor, and read his titles as his inscriptions give them: consulships, the yearly count of his tribune’s power, chief priest, Father of the Country.',
+  'trajans-column-hill': "Cut a hillside back to level ground, as for Trajan’s Forum, and find how far back you must dig for a face as tall as Trajan’s Column.",
+  'arch-of-constantine-spolia': "Slide back through the years and watch the Arch of Constantine’s reused sculptures being carved, from Trajan’s time to Marcus Aurelius’s, long before AD 315.",
+  'rome-after-the-sacks': "Move through the years from AD 100 to 600 and see how scholars’ estimates of Rome’s people fall, from up to a million to some tens of thousands, as dots and as people per km².",
+  'arch-of-titus-menorah': "Light the menorah relief on the Arch of Titus with one colour at a time and find the light in which traces of yellow ochre stand out from bare marble.",
 } as const;
 
 export type LabId = keyof typeof LABS;
