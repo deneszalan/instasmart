@@ -91,6 +91,7 @@ import { round as chiralRound, rounds as chiralRounds } from '../src/labs/chemis
 import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
 import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
 import { MPS as SWE_MPS, OCT_15 as SWE_OCT_15, REJECT_AT as SWE_REJECT, tally as sweTally } from '../src/labs/politics/sweden-negative-parliamentarism';
+import { ridings as qcRidings, seatsWon as qcSeats } from '../src/labs/politics/quebec-first-past-the-post';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -753,5 +754,15 @@ describe('lab maths', () => {
     expect(abst.no).toBeGreaterThan(abst.yes);
     expect(sweTally(['yes', 'no', 'no', 'abstain', 'abstain', 'no', 'no', 'no']).approved).toBe(false);
     expect(sweTally(['no', 'yes', 'yes', 'no', 'no', 'yes', 'no', 'yes'])).toEqual({ yes: 173, no: 176, abstain: 0, approved: false });
+  });
+
+  it('first past the post: 13% spread over all ten ridings wins nothing; packed into three it wins three; into two, two; over four, none', () => {
+    expect(qcSeats(10)).toBe(0);
+    expect(qcSeats(3)).toBe(3);
+    expect(qcSeats(2)).toBe(2);
+    expect(qcSeats(4)).toBe(0);
+    const total = qcRidings(3).reduce((n, r) => n + r.ours, 0);
+    expect(total).toBeCloseTo(130, 9);
+    for (const r of qcRidings(5)) expect(r.ours + r.a + r.b).toBeCloseTo(100, 9);
   });
 });

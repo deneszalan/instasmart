@@ -96,4 +96,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'nobel-hall-woodford': lazy(() => import('./economics/nobel-hall-woodford')),
   'power-grid-transformers': lazy(() => import('./engineering/power-grid-transformers')),
   'sweden-negative-parliamentarism': lazy(() => import('./politics/sweden-negative-parliamentarism')),
+  'quebec-first-past-the-post': lazy(() => import('./politics/quebec-first-past-the-post')),
 };

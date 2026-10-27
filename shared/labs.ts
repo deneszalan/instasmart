@@ -96,6 +96,7 @@ export const LABS = {
   'nobel-hall-woodford': 'Set today’s interest rate and promise a path for the next two years, then see how spending today responds when people look ahead.',
   'power-grid-transformers': 'Step up the voltage of a power line carrying 10 MW and watch the current, and the power lost as heat, fall.',
   'sweden-negative-parliamentarism': 'Set how each party in Sweden’s Riksdag votes on a prime minister, and see that only 175 no votes can stop one, however few vote yes.',
+  'quebec-first-past-the-post': 'Spread a party’s 13% of the votes over more or fewer of ten ridings, and see first past the post turn the same votes into no seats or several.',
 } as const;
 
 export type LabId = keyof typeof LABS;

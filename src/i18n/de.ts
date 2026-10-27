@@ -1306,4 +1306,10 @@ export const de: Record<string, string> = {
   'PM approved': 'Bestätigt',
   'PM rejected': 'Abgelehnt',
   'Simplified: every MP votes with their party, and nobody is absent.': 'Vereinfacht: Alle Abgeordneten stimmen mit ihrer Partei, und niemand fehlt.',
+  'Ten ridings: your party has {s}% of all the votes and wins {n} seats': 'Zehn Wahlkreise: Deine Partei hat {s} % aller Stimmen und gewinnt {n} Sitze',
+  'Ridings your votes are spread over': 'Wahlkreise, auf die sich deine Stimmen verteilen',
+  'Your share of the votes': 'Dein Anteil an den Stimmen',
+  'Seats won': 'Gewonnene Sitze',
+  'Your share of the seats': 'Dein Anteil an den Sitzen',
+  'Green: your party. Each dot below a riding shows who wins it. Simplified: ten equal ridings, and two other parties share the rest of each riding 52 to 48.': 'Grün: deine Partei. Der Punkt unter jedem Wahlkreis zeigt, wer ihn gewinnt. Vereinfacht: zehn gleich große Wahlkreise, und zwei andere Parteien teilen sich den Rest jedes Wahlkreises 52 zu 48.',
 };
