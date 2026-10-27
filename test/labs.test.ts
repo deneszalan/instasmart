@@ -90,6 +90,11 @@ import { simulate as optoRun } from '../src/labs/body/optogenetics-nobel';
 import { round as chiralRound, rounds as chiralRounds } from '../src/labs/chemistry/mirror-molecules-nobel';
 import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
 import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
+import { flyby as juiceFlyby, turnAngle as juiceTurn, VINF as JUICE_VINF } from '../src/labs/space/juice-earth-gravity-assist';
+import { heightAfter as swiftHeight, periodAt as swiftPeriod, speedAt as swiftSpeed } from '../src/labs/space/swift-solar-drag-reentry';
+import { holds as positronHolds, REAL_RATIO as POSITRON_RATIO, simulate as positronRun } from '../src/labs/physics/one-positron-quantum-cyclotron';
+import { outcome as uranOutcome } from '../src/labs/chemistry/uranocenium-sandwich';
+import { duels as condorcetDuels, isCycle as condorcetCycle, winner as condorcetWinner } from '../src/labs/math/condorcet-cycle-klein-bottle';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -740,5 +745,58 @@ describe('lab maths', () => {
     expect(lineLoss(10).lossMW / lineLoss(100).lossMW).toBeCloseTo(100, 9);
     expect(lineLoss(70).share).toBeGreaterThan(0.01);
     expect(lineLoss(75).share).toBeLessThan(0.01);
+  });
+
+  it('gravity assist: Juice’s 8,640 km flyby turns it by 20°; passing behind Earth adds 3.5 km/s, in front it brakes, closer turns more', () => {
+    expect(JUICE_VINF).toBeCloseTo(11.24, 1);
+    expect(juiceTurn(8640, JUICE_VINF)).toBeCloseTo(20, 6);
+    expect(juiceFlyby(8640, 'behind').gain).toBeCloseTo(3.5, 2);
+    expect(juiceFlyby(8640, 'front').gain).toBeLessThan(0);
+    expect(juiceFlyby(300, 'behind').turn).toBeGreaterThan(juiceFlyby(8640, 'behind').turn);
+    expect(juiceFlyby(300, 'behind').gain).toBeGreaterThan(5);
+    expect(juiceFlyby(40000, 'behind').gain).toBeLessThan(2);
+    expect(Math.abs(juiceFlyby(8100, 'behind').gain - 3.5)).toBeLessThanOrEqual(0.1);
+    expect(Math.abs(juiceFlyby(9300, 'behind').gain - 3.5)).toBeGreaterThan(0.1);
+  });
+
+  it('satellite drag: about 183 m/s of braking takes a 600 km orbit down to 275 km and leaves it 183 m/s faster', () => {
+    expect(swiftSpeed(600)).toBeCloseTo(7.562, 3);
+    expect(swiftPeriod(600)).toBeCloseTo(96.5, 1);
+    expect(swiftHeight(0)).toBeCloseTo(600, 6);
+    expect(swiftHeight(182)).toBeGreaterThan(275);
+    expect(swiftHeight(183)).toBeLessThan(275);
+    expect((swiftSpeed(swiftHeight(150)) - swiftSpeed(600)) * 1000).toBeCloseTo(150, 6);
+  });
+
+  it('Penning trap: with no voltage the positron slides out, too much voltage beats the magnet, and it holds only if ωc² > 2ωz²', () => {
+    expect(positronRun(4, 0).fate).toBe('cap');
+    expect(positronRun(4, 2).fate).toBe('trapped');
+    expect(positronRun(3, 6).fate).toBe('ring');
+    expect(positronRun(0, 2).fate).toBe('ring');
+    expect(positronHolds(4, 2)).toBe(true);
+    expect(positronHolds(3, 6)).toBe(false);
+    for (let wc = 0; wc <= 8; wc += 1) for (let v = 0; v <= 8; v += 1) if (positronRun(wc, v).fate === 'trapped') expect(positronHolds(wc, v)).toBe(true);
+    expect(POSITRON_RATIO).toBeCloseTo(757.3, 1);
+  });
+
+  it('uranocenium: only a borate salt in a calm solvent keeps it; fluoride salts, silver and THF each destroy it', () => {
+    expect(uranOutcome('trityl', 'borate', 'difluorobenzene')).toBe('stable');
+    expect(uranOutcome('ferrocenium', 'borate', 'bromobenzene')).toBe('stable');
+    expect(uranOutcome('trityl', 'pf6', 'difluorobenzene')).toBe('fluoride');
+    expect(uranOutcome('trityl', 'sbf6', 'bromobenzene')).toBe('sbf6');
+    expect(uranOutcome('trityl', 'borate', 'thf')).toBe('solvent');
+    expect(uranOutcome('silver', 'borate', 'difluorobenzene')).toBe('rings');
+    expect(uranOutcome('silver', 'pf6', 'thf')).toBe('rings');
+  });
+
+  it('Condorcet: majorities run in a circle exactly when no group outnumbers the other two; otherwise the biggest group’s favourite wins', () => {
+    expect(condorcetDuels(1, 1, 1)).toEqual({ aliceBob: [2, 1], bobCarol: [2, 1], carolAlice: [2, 1] });
+    expect(condorcetCycle(1, 1, 1)).toBe(true);
+    expect(condorcetCycle(20, 15, 10)).toBe(true);
+    expect(condorcetCycle(30, 10, 10)).toBe(false);
+    expect(condorcetWinner(30, 10, 10)).toBe('Alice');
+    expect(condorcetWinner(5, 30, 10)).toBe('Bob');
+    expect(condorcetCycle(20, 10, 10)).toBe(false);
+    expect(condorcetWinner(20, 10, 10)).toBe(null);
   });
 });

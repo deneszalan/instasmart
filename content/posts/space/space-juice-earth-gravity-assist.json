@@ -1,0 +1,163 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-juice-earth-gravity-assist",
+  "field": "space",
+  "title": "Earth flung the European Space Agency’s Juice probe 3.5 km/s faster, with almost no fuel",
+  "emoji": "🛰️",
+  "body": "On 28 September 2026 the European Space Agency’s Juice probe passed 8,640 km above the Indian Ocean. The flyby turned its path by 20° and increased its speed by **3.5 km/s**, after just one small course correction four weeks earlier ([ESA](https://www.esa.int/Science_Exploration/Space_Science/Juice/Successful_Earth_flyby_improves_Juice_s_course_to_Jupiter)). This is a gravity assist. Seen from Earth, the probe falls in, speeds up and climbs out again, leaving exactly as fast as it arrived: only its direction changes. But Earth is racing round the Sun at about 30 km/s, and the probe’s speed relative to the Sun is Earth’s motion plus its own motion relative to Earth, so turning that towards Earth’s direction of travel makes the total bigger. Earth pays with a slowdown far too small to measure. Flybys of the Moon and Earth, Venus and Earth again are taking Juice to Jupiter by July 2031 with fuel to spare.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "On 28 September 2026 the Juice probe flew past Earth, bound for Jupiter. By how much did the flyby increase its speed?",
+      "min": 0,
+      "max": 15,
+      "step": 0.1,
+      "answer": 3.5,
+      "unit": "km/s",
+      "explanation": "3.5 km/s, about 12,600 km/h, from Earth’s gravity: the engine only gave one small nudge, four weeks earlier, to aim the flyby."
+    },
+    {
+      "type": "video",
+      "src": "juice.mp4",
+      "poster": "juice.jpg",
+      "alt": "Animation in violet deep space. Juice, a gold probe with long solar wings, sweeps past a blue Earth and bends by 20°. Then arrows: Earth's 30 km/s plus the probe's speed relative to Earth, turned, add up to a longer total. A ball bounces off a train, and Juice's looping route leads to Jupiter.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Spacial Harvest” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 6,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "juice-earth-gravity-assist",
+      "prompt": "Pick a side of Earth and how close to pass. Find a flyby that adds 3.5 km/s to the probe’s speed round the Sun, as for Juice.",
+      "takeaway": "Behind Earth at about 8,600 km, a 20° turn adds 3.5 km/s, as for Juice. Fly closer and the turn is sharper and the gain bigger; pass in front and the same turn takes speed away."
+    },
+    {
+      "type": "text",
+      "heading": "Why not fly straight there?",
+      "text": "Flying straight to Jupiter would be quicker, but its engineers say it would need an enormous rocket and a vast amount of fuel, plus more to brake at Jupiter, not fly past. Juice, just over 6,000 kg, is one of the heaviest probes ever launched, so it takes an eight-year scenic route, borrowing speed from planets."
+    },
+    {
+      "type": "timeline",
+      "heading": "Juice’s road to Jupiter",
+      "events": [
+        {
+          "when": "Apr 2023",
+          "text": "Launch on an Ariane 5"
+        },
+        {
+          "when": "Aug 2024",
+          "text": "Moon and Earth: a braking flyby"
+        },
+        {
+          "when": "2025",
+          "text": "Venus bends its path"
+        },
+        {
+          "when": "Sep 2026",
+          "text": "Earth: a 20° turn, +3.5 km/s"
+        },
+        {
+          "when": "Jul 2031",
+          "text": "Jupiter, after one more Earth flyby"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Seen from Earth, how fast does Juice leave after the flyby, compared with how fast it arrived?",
+      "options": [
+        "Exactly as fast",
+        "3.5 km/s faster",
+        "Twice as fast",
+        "Slower: Earth brakes it"
+      ],
+      "answer": 0,
+      "explanation": "Relative to Earth it falls in and climbs out again, so it leaves as fast as it came, only turned by 20°. The gain shows up relative to the Sun, because Earth itself is moving."
+    }
+  ],
+  "tags": [
+    "jupiter",
+    "esa",
+    "gravity",
+    "orbits",
+    "spacecraft"
+  ],
+  "source": {
+    "label": "European Space Agency: Successful Earth flyby improves Juice’s course to Jupiter",
+    "url": "https://www.esa.int/Science_Exploration/Space_Science/Juice/Successful_Earth_flyby_improves_Juice_s_course_to_Jupiter"
+  },
+  "theme": {
+    "gradient": [
+      "#0b0826",
+      "#33246e"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-26"
+}

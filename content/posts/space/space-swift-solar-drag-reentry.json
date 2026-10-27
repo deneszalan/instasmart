@@ -1,0 +1,163 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-swift-solar-drag-reentry",
+  "field": "space",
+  "title": "An active Sun puffed up Earth’s air and dragged the Swift space telescope down to 275 km",
+  "emoji": "☀️",
+  "body": "On 23 October 2026 NASA ended the mission of its Swift observatory. Launched in 2004 to about 600 km, it had sunk to **275 km** by 20 October, so low that drag stopped its telescopes pointing steadily ([NASA](https://science.nasa.gov/missions/swift/nasas-swift-mission-ends/)). Even hundreds of kilometres up a trace of air remains, and at about 7.6 km/s a satellite keeps ploughing into it, losing a little energy every orbit, so the orbit shrinks. Oddly, it speeds up as it sinks, because lower orbits are faster. How quickly this happens depends on the Sun: its X-rays and ultraviolet light heat the thin upper air, roughly 500 °C more when the Sun is very active, so the air swells and denser layers rise to the heights where satellites fly ([NOAA](https://www.swpc.noaa.gov/impacts/satellite-drag)). The Sun entered the peak of its 11-year cycle in 2024, Swift began to sink fast, and a robot spacecraft sent to boost it in 2026 gave up. It is expected to fall into the atmosphere within weeks.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Launched in 2004 to about 600 km, how high was the Swift space telescope when its mission ended in October 2026?",
+      "min": 0,
+      "max": 800,
+      "step": 5,
+      "answer": 275,
+      "unit": "km",
+      "explanation": "275 km, less than half its starting height. There the drag of the thin air stopped its telescopes pointing steadily, and below about 300 km a rescue had become too hard."
+    },
+    {
+      "type": "video",
+      "src": "swift.mp4",
+      "poster": "swift.jpg",
+      "alt": "Animation over Earth's glowing limb. The Swift telescope drops from 600 to 275 km, ploughing through sparse air as its orbit spirals inward and its speed rises. The Sun heats the upper air, lines of equal density rise, boosts get more frequent, and a curve of height falls ever faster.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Brittle Rille” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "swift-solar-drag-reentry",
+      "prompt": "Let the air brake Swift, starting from its 600 km orbit. Bring it down to 275 km, where its mission ended, and watch its speed.",
+      "takeaway": "About 183 m/s of braking took Swift from 600 km to 275 km, and left it 183 m/s faster, at 7.74 km/s. Lower orbits are faster: the fall gives back more energy than the air takes."
+    },
+    {
+      "type": "text",
+      "heading": "Why the Sun matters",
+      "text": "The thin upper air is heated by the Sun’s X-rays and ultraviolet light. When the Sun is very active it gets roughly 500 °C hotter and puffs up, so denser air rises to where satellites fly. A satellite boosted about 4 times a year when the Sun is quiet may need it every 2–3 weeks at the peak of its cycle."
+    },
+    {
+      "type": "timeline",
+      "heading": "Swift’s last years",
+      "events": [
+        {
+          "when": "Nov 2004",
+          "text": "Launched to about 600 km"
+        },
+        {
+          "when": "Oct 2024",
+          "text": "The Sun’s cycle is at its peak"
+        },
+        {
+          "when": "Feb 2026",
+          "text": "Science paused to cut drag"
+        },
+        {
+          "when": "Aug 2026",
+          "text": "A robot boost is called off"
+        },
+        {
+          "when": "Oct 2026",
+          "text": "At 275 km, the mission ends"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why does an active Sun pull satellites in low orbits down faster?",
+      "options": [
+        "It heats and swells the upper air",
+        "Its gravity gets stronger",
+        "Sunlight pushes them down",
+        "It makes them heavier"
+      ],
+      "answer": 0,
+      "explanation": "X-rays and ultraviolet light heat the upper air, which expands, so denser air reaches satellite heights. More air means more drag, and the orbit shrinks faster."
+    }
+  ],
+  "tags": [
+    "satellites",
+    "sun",
+    "nasa",
+    "orbits",
+    "atmosphere"
+  ],
+  "source": {
+    "label": "NASA: NASA’s Swift Mission Ends, Leaves Behind Scientific Bonanza (23 October 2026)",
+    "url": "https://science.nasa.gov/missions/swift/nasas-swift-mission-ends/"
+  },
+  "theme": {
+    "gradient": [
+      "#060a18",
+      "#123a5e"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-26"
+}
