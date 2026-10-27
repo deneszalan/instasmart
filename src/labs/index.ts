@@ -96,4 +96,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'nobel-hall-woodford': lazy(() => import('./economics/nobel-hall-woodford')),
   'power-grid-transformers': lazy(() => import('./engineering/power-grid-transformers')),
   'juice-earth-gravity-assist': lazy(() => import('./space/juice-earth-gravity-assist')),
+  'swift-solar-drag-reentry': lazy(() => import('./space/swift-solar-drag-reentry')),
 };

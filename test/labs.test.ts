@@ -91,6 +91,7 @@ import { round as chiralRound, rounds as chiralRounds } from '../src/labs/chemis
 import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
 import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
 import { flyby as juiceFlyby, turnAngle as juiceTurn, VINF as JUICE_VINF } from '../src/labs/space/juice-earth-gravity-assist';
+import { heightAfter as swiftHeight, periodAt as swiftPeriod, speedAt as swiftSpeed } from '../src/labs/space/swift-solar-drag-reentry';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -753,5 +754,14 @@ describe('lab maths', () => {
     expect(juiceFlyby(40000, 'behind').gain).toBeLessThan(2);
     expect(Math.abs(juiceFlyby(8100, 'behind').gain - 3.5)).toBeLessThanOrEqual(0.1);
     expect(Math.abs(juiceFlyby(9300, 'behind').gain - 3.5)).toBeGreaterThan(0.1);
+  });
+
+  it('satellite drag: about 183 m/s of braking takes a 600 km orbit down to 275 km and leaves it 183 m/s faster', () => {
+    expect(swiftSpeed(600)).toBeCloseTo(7.562, 3);
+    expect(swiftPeriod(600)).toBeCloseTo(96.5, 1);
+    expect(swiftHeight(0)).toBeCloseTo(600, 6);
+    expect(swiftHeight(182)).toBeGreaterThan(275);
+    expect(swiftHeight(183)).toBeLessThan(275);
+    expect((swiftSpeed(swiftHeight(150)) - swiftSpeed(600)) * 1000).toBeCloseTo(150, 6);
   });
 });

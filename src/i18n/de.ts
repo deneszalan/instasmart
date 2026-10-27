@@ -1303,4 +1303,13 @@ export const de: Record<string, string> = {
   'Turned by': 'Abgelenkt um',
   'Speed gained': 'Gewonnene Geschwindigkeit',
   'Simplified: Earth’s gravity only, Earth moving straight at 29.8 km/s, and an arrival at 11.2 km/s set to match Juice.': 'Vereinfacht: nur die Schwerkraft der Erde, die Erde fliegt geradlinig mit 29,8 km/s, und die Sonde kommt mit 11,2 km/s an, passend zu Juice.',
+  'heights exaggerated': 'Höhen übertrieben',
+  'air braking': 'Luftbremsung',
+  'speed gain': 'Tempogewinn',
+  'After {b} m/s of braking by the air, the orbit is {h} km up and the speed is {v} km/s': 'Nach {b} m/s Bremsung durch die Luft liegt die Umlaufbahn {h} km hoch und die Geschwindigkeit beträgt {v} km/s',
+  'Braking by the air so far': 'Bisherige Bremsung durch die Luft',
+  'Height above Earth': 'Höhe über der Erde',
+  'Orbital speed': 'Bahngeschwindigkeit',
+  'Time for one orbit': 'Dauer einer Umrundung',
+  'Simplified: a circular orbit that shrinks slowly, from Swift’s 600 km. How dense the air is, which the Sun changes, only sets how fast the braking adds up.': 'Vereinfacht: eine Kreisbahn, die langsam schrumpft, ab Swifts 600 km. Wie dicht die Luft ist, was die Sonne verändert, bestimmt nur, wie schnell sich die Bremsung summiert.',
 };
