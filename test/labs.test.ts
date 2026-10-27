@@ -126,6 +126,11 @@ import { DIAGONALS as ATHENS_DIAGONALS, DIST as ATHENS_DIST, EDGES as ATHENS_EDG
 import { bestLine, fits as thrustFits, PIECES as DOME_PIECES, SLICE_WEIGHT, THICK, thrustLine } from '../src/labs/engineering/st-peters-dome-chains';
 import { apennineSide, REGIONS as MAP_REGIONS } from '../src/labs/earth/gallery-of-maps-danti';
 import { LAYERS as CASTLE_LAYERS, newest as newestLayer } from '../src/labs/history/castel-sant-angelo-tomb-fortress';
+import { doorwayLit, litStretch, noonAltitude, placeOf, R as PANTHEON_R } from '../src/labs/engineering/pantheon-noon-sunbeam';
+import { MAX_ROWS as NAVONA_MAX_ROWS, nearEstimate as navonaNear, rowLength as navonaRow, seats as navonaSeats, STANDS as NAVONA_STANDS } from '../src/labs/history/navona-domitian-stadium';
+import { jetHeight as virgoJet, jetTop as virgoTop, nozzleSpeed as virgoSpeed } from '../src/labs/engineering/aqua-virgo-low-fountains';
+import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggio-calling-light';
+import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } from '../src/labs/economics/monte-testaccio-amphorae';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1153,5 +1158,44 @@ describe('lab maths', () => {
     expect(order).toEqual(['bastions', 'towers', 'door', 'chapel', 'walls']);
     expect(standing).toEqual(['tomb']);
     expect(newestLayer(['tomb', 'walls', 'chapel'])).toBe('chapel');
+  it('Pantheon: the noon light is on the dome in December, at the dome’s base at the equinox, fills the doorway around 21 April and lies on the floor in June', () => {
+    expect(Math.round(noonAltitude(355))).toBe(25);
+    expect(Math.round(noonAltitude(172))).toBe(72);
+    expect(placeOf(noonAltitude(355))).toBe('dome');
+    const [e0, e1] = litStretch(noonAltitude(80));
+    expect(e0).toBeLessThan(2 * PANTHEON_R);
+    expect(e1).toBeGreaterThan(2 * PANTHEON_R);
+    expect(doorwayLit(noonAltitude(111))).toBe(true);
+    expect(doorwayLit(noonAltitude(233))).toBe(true);
+    expect(doorwayLit(noonAltitude(80))).toBe(false);
+    expect(doorwayLit(noonAltitude(140))).toBe(false);
+    expect(placeOf(noonAltitude(172))).toBe('floor');
+  });
+  it('Navona stadium: the stands are about 26.5 m deep; some 27 rows at 50 cm a person seat about 30,000', () => {
+    expect(NAVONA_STANDS).toBeCloseTo(26.55, 2);
+    expect(NAVONA_MAX_ROWS).toBe(37);
+    expect(navonaRow(0)).toBeCloseTo(2 * 222 + Math.PI * 26.8, 1);
+    expect(navonaNear(navonaSeats(27, 0.5))).toBe(true);
+    expect(navonaNear(navonaSeats(24, 0.45))).toBe(true);
+    expect(navonaSeats(12, 0.6)).toBeLessThan(15000);
+    expect(navonaSeats(37, 0.35)).toBeGreaterThan(50000);
+  });
+  it('Aqua Virgo: a jet climbs only to its source level, so sinking the nozzle 1.5 m gives a 2 m jet from water half a metre above the street', () => {
+    expect(virgoJet(0.5, 0)).toBe(0.5);
+    expect(virgoJet(0.5, 1.5)).toBe(2);
+    expect(virgoTop(0.5, 1.5)).toBeCloseTo(0.5, 9);
+    expect(virgoSpeed(0.5, 1.5)).toBeCloseTo(6.26, 2);
+  });
+  it('Caravaggio: only black walls and a single window make the lit side 20 times as bright as the shadow side', () => {
+    expect(studioContrast('black', 'one')).toBeGreaterThan(TENEBRIST);
+    expect(studioContrast('black', 'one')).toBeCloseTo(34.33, 1);
+    expect(studioContrast('grey', 'one')).toBeLessThan(TENEBRIST);
+    expect(studioContrast('white', 'one')).toBeLessThan(4);
+    expect(studioContrast('black', 'two')).toBeLessThan(2);
+  });
+  it('Monte Testaccio: 25 to 53 million jars of 70 litres hold about 1.75 to 3.7 billion litres; 25 million over 250 years is 7 million litres a year', () => {
+    expect(testaccioLitres(25e6)).toBe(1.75e9);
+    expect(testaccioLitres(53e6)).toBe(3.71e9);
+    expect(testaccioPerYear(25e6, 250)).toBe(7e6);
   });
 });

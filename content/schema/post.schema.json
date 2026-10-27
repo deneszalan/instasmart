@@ -222,6 +222,11 @@
                   "st-peters-dome-chains",
                   "gallery-of-maps-danti",
                   "castel-sant-angelo-tomb-fortress"
+                  "pantheon-noon-sunbeam",
+                  "navona-domitian-stadium",
+                  "aqua-virgo-low-fountains",
+                  "caravaggio-calling-light",
+                  "monte-testaccio-amphorae"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

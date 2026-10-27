@@ -131,4 +131,9 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'st-peters-dome-chains': lazy(() => import('./engineering/st-peters-dome-chains')),
   'gallery-of-maps-danti': lazy(() => import('./earth/gallery-of-maps-danti')),
   'castel-sant-angelo-tomb-fortress': lazy(() => import('./history/castel-sant-angelo-tomb-fortress')),
+  'pantheon-noon-sunbeam': lazy(() => import('./engineering/pantheon-noon-sunbeam')),
+  'navona-domitian-stadium': lazy(() => import('./history/navona-domitian-stadium')),
+  'aqua-virgo-low-fountains': lazy(() => import('./engineering/aqua-virgo-low-fountains')),
+  'caravaggio-calling-light': lazy(() => import('./art/caravaggio-calling-light')),
+  'monte-testaccio-amphorae': lazy(() => import('./economics/monte-testaccio-amphorae')),
 };
