@@ -92,6 +92,7 @@ import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
 import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
 import { energyRatio, magnitude, moment as quakeMoment, PANAMA_MOMENT, shown as shownMag } from '../src/labs/earth/panama-quake-magnitude-scale';
 import { indexChange, meanChange, totalChange } from '../src/labs/biology/living-planet-index-average';
+import { paired as asoPaired, RNA as HBV_RNA, TARGET_AT as ASO_AT } from '../src/labs/body/bepirovirsen-antisense-hepatitis-b';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -760,5 +761,11 @@ describe('lab maths', () => {
     expect(indexChange([5, -60, 0])).toBeCloseTo(-25.1, 1);
     expect(indexChange([20, -90, -90])).toBeLessThan(-50);
     expect(totalChange([20, -90, -90])).toBeGreaterThan(0);
+  });
+
+  it('antisense: bepirovirsen pairs all 20 letters only at its target in the 70-letter stretch, at most 11 elsewhere', () => {
+    expect(HBV_RNA.length).toBe(70);
+    expect(asoPaired(ASO_AT)).toBe(20);
+    for (let at = 0; at <= HBV_RNA.length - 20; at++) if (at !== ASO_AT) expect(asoPaired(at)).toBeLessThanOrEqual(11);
   });
 });

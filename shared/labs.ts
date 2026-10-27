@@ -97,6 +97,7 @@ export const LABS = {
   'power-grid-transformers': 'Step up the voltage of a power line carrying 10 MW and watch the current, and the power lost as heat, fall.',
   'panama-quake-magnitude-scale': 'Set a fault’s length, depth and slip, and see its magnitude and energy against the Panama quake of 9 October 2026.',
   'living-planet-index-average': 'Change three wildlife populations of 400, 50 and 33 animals and compare the Living Planet Index’s average change with the number of animals.',
+  'bepirovirsen-antisense-hepatitis-b': 'Slide the 20 letters of the hepatitis B drug bepirovirsen along the virus’s RNA and find where every letter pairs.',
 } as const;
 
 export type LabId = keyof typeof LABS;

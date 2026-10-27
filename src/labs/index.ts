@@ -97,4 +97,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'power-grid-transformers': lazy(() => import('./engineering/power-grid-transformers')),
   'panama-quake-magnitude-scale': lazy(() => import('./earth/panama-quake-magnitude-scale')),
   'living-planet-index-average': lazy(() => import('./biology/living-planet-index-average')),
+  'bepirovirsen-antisense-hepatitis-b': lazy(() => import('./body/bepirovirsen-antisense-hepatitis-b')),
 };
