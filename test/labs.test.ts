@@ -111,6 +111,7 @@ import { canJoin, canSuspend, ELECT_AT as HRC_ELECT, UN_MEMBERS } from '../src/l
 import { banned as infBanned, kmAt, rangeClass } from '../src/labs/history/reykjavik-summit-inf-treaty';
 import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgment-three-votes';
 import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '../src/labs/history/caesar-445-day-year';
+import { busiestQueue, minutesToEmpty, openArches, PUBLIC_ARCHES } from '../src/labs/engineering/colosseum-numbered-arches';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -992,5 +993,16 @@ describe('lab maths', () => {
     expect(calendarDrift('three', 36)).toBeCloseTo(3.28, 2);
     expect(Math.abs(calendarDrift('gregorian', 1000))).toBeLessThan(1);
     expect(Math.abs(calendarDrift('four', 100))).toBeLessThan(1);
+  });
+
+  it('colosseum arches: 50,000 people through 4 arches at 3 a second take over an hour; spread evenly over all 76 they take under 4 minutes', () => {
+    expect(PUBLIC_ARCHES).toBe(76);
+    expect(minutesToEmpty(50000, 4, 0.25, 3)).toBeCloseTo(69.4, 1);
+    expect(minutesToEmpty(50000, 76, 0.25, 3)).toBeCloseTo(3.65, 2);
+    expect(busiestQueue(50000, 76, 0.25)).toBeCloseTo(50000 / 76, 6);
+    expect(minutesToEmpty(50000, 76, 0.5, 3)).toBeCloseTo(2 * minutesToEmpty(50000, 76, 0.25, 3), 6);
+    expect(minutesToEmpty(50000, 76, 0.35, 3)).toBeGreaterThan(5);
+    for (const n of [4, 8, 36, 76]) expect(openArches(n).size).toBe(n);
+    expect(Math.max(...openArches(76))).toBe(75);
   });
 });
