@@ -100,6 +100,11 @@ import { indexChange, meanChange, totalChange } from '../src/labs/biology/living
 import { paired as asoPaired, RNA as HBV_RNA, TARGET_AT as ASO_AT } from '../src/labs/body/bepirovirsen-antisense-hepatitis-b';
 import { bandBalance, glacier, ICE_FACTOR } from '../src/labs/earth/swiss-glaciers-snowline-2026';
 import { inside as coneInside, misses as coneMisses, MISSES as CONE_N, NHC_RADIUS_KM } from '../src/labs/psychology/hurricane-cone-not-storm-size';
+import { bruteForce, G as curveG, multiply as curveMultiply, ORDER as curveOrder, samePoint, searchSeconds, UNIVERSE_SECONDS } from '../src/labs/tech/certificate-key-number-four';
+import { clockCount, measured as leapMeasured } from '../src/labs/tech/leap-seconds-abolished';
+import { NUCLIDES, remaining as nuclideLeft, yearsAt as repositoryYears, yearsUntil } from '../src/labs/engineering/onkalo-nuclear-waste-licence';
+import { agreeing as sapphicAgreeing, fits as sapphicFits, SAPPHIC, SYLLABLES as SAPPHO_SYLLABLES } from '../src/labs/language/anne-carson-sappho-brackets';
+import { AVERAGE as AVERAGE_BASKET, inflationFor } from '../src/labs/economics/us-inflation-basket-weights';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -847,5 +852,69 @@ describe('lab maths', () => {
       expect(coneInside(pts, NHC_RADIUS_KM[h])).toBe((2 * CONE_N) / 3);
       expect(coneInside(pts, NHC_RADIUS_KM[h] / 2)).toBeLessThan(CONE_N / 2);
     }
+  });
+  it('certificate keys: the toy curve has 257 points, k·G repeats only after 257, brute force finds key 4 in 4 tries, and 99 bits outlast the universe', () => {
+    expect(curveOrder).toBe(257);
+    expect(curveMultiply(curveOrder)).toBeNull();
+    expect(samePoint(curveMultiply(1), curveG)).toBe(true);
+    const seen = new Set<string>();
+    for (let k = 1; k < curveOrder; k++) seen.add(String(curveMultiply(k)));
+    expect(seen.size).toBe(256);
+    for (const key of [4, 56, 66, 115, 155, 156, 230, 237]) expect(bruteForce(curveMultiply(key))).toBe(key);
+    expect(searchSeconds(8)).toBeLessThan(1e-9);
+    expect(searchSeconds(98)).toBeLessThan(UNIVERSE_SECONDS);
+    expect(searchSeconds(99)).toBeGreaterThan(UNIVERSE_SECONDS);
+    expect(Math.floor(Math.log10(searchSeconds(384) / (365.25 * 86400))) + 1).toBe(97);
+  });
+
+  it('leap seconds: a clock that repeats 23:59:59 steps back, so a half-second timer across it reads −0.5 s; a smear or no leap second never goes negative', () => {
+    expect(clockCount('repeat', 1.99)).toBeCloseTo(86399.99, 9);
+    expect(clockCount('repeat', 2)).toBeCloseTo(86399, 9);
+    expect(clockCount('repeat', 3)).toBeCloseTo(86400, 9);
+    expect(leapMeasured('repeat', 1.8, 0.5)).toBeCloseTo(-0.5, 9);
+    expect(leapMeasured('repeat', 0.5, 1)).toBeCloseTo(1, 9);
+    expect(leapMeasured('repeat', 1.5, 2)).toBeCloseTo(1, 9);
+    expect(leapMeasured('none', 1.8, 0.5)).toBeCloseTo(0.5, 9);
+    expect(leapMeasured('smear', 1.8, 0.5)).toBeCloseTo((0.5 * 86400) / 86401, 9);
+    for (let s = 0; s <= 3; s += 0.1) for (let l = 0.1; l <= 1.5; l += 0.1) {
+      expect(leapMeasured('smear', s, l)).toBeGreaterThan(0);
+      expect(leapMeasured('none', s, l)).toBeGreaterThan(0);
+    }
+  });
+
+  it('spent fuel: caesium-137 falls below a thousandth after about 300 years (ten half-lives), while 99% of plutonium-239 is still there', () => {
+    const cs = NUCLIDES.find((n) => n.id === 'cs137')!, pu = NUCLIDES.find((n) => n.id === 'pu239')!;
+    expect(nuclideLeft(cs.half, cs.half)).toBeCloseTo(0.5, 9);
+    expect(yearsUntil(cs.half, 1 / 1000)).toBeCloseTo(299.4, 1);
+    expect(nuclideLeft(cs.half, 300)).toBeLessThan(1 / 1000);
+    expect(nuclideLeft(pu.half, 300)).toBeGreaterThan(0.99);
+    expect(repositoryYears(0)).toBeCloseTo(1, 9);
+    expect(repositoryYears(100)).toBeCloseTo(1e6, 3);
+    expect(nuclideLeft(cs.half, repositoryYears(41))).toBeGreaterThan(1 / 1000);
+    expect(nuclideLeft(cs.half, repositoryYears(42))).toBeLessThan(1 / 1000);
+  });
+
+  it('Sapphic line: fragment 31 line 1 scans – u – – – u u – u – –; the 4th and last places may be either', () => {
+    expect(SAPPHO_SYLLABLES).toHaveLength(11);
+    expect(SAPPHIC).toHaveLength(11);
+    const L = 'long' as const, S = 'short' as const;
+    const line = [L, S, L, L, L, S, S, L, S, L, L];
+    expect(sapphicFits(line)).toBe(true);
+    expect(sapphicFits([L, S, L, S, L, S, S, L, S, L, S])).toBe(true);
+    expect(sapphicFits(line.map(() => S))).toBe(false);
+    expect(sapphicAgreeing(line.map(() => S))).toBe(6);
+    expect(sapphicFits([S, ...line.slice(1)])).toBe(false);
+  });
+
+  it('inflation basket: the average basket gives 3.7%, energy adds about 1.3 points, and from about 13.6% spent on energy inflation reaches 5%', () => {
+    expect(AVERAGE_BASKET.energy).toBeCloseTo(6.39, 1);
+    expect(AVERAGE_BASKET.food).toBeCloseTo(13.67, 1);
+    const avg = inflationFor(AVERAGE_BASKET.energy, AVERAGE_BASKET.food);
+    expect(avg.total).toBeCloseTo(3.7, 1);
+    expect(avg.energy).toBeCloseTo(1.3, 1);
+    expect(inflationFor(15, AVERAGE_BASKET.food).total).toBeCloseTo(5.26, 1);
+    expect(inflationFor(13.5, 13.5).total).toBeLessThan(5);
+    expect(inflationFor(14, 13.5).total).toBeGreaterThan(5);
+    expect(inflationFor(0, 13.5).total).toBeCloseTo(2.6 - 0.135 * 0.1, 6);
   });
 });

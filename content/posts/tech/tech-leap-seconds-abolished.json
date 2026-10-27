@@ -1,0 +1,167 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-leap-seconds-abolished",
+  "field": "tech",
+  "title": "From 2027 the world’s clocks stop adding leap seconds, which computers trip over",
+  "emoji": "⏱️",
+  "body": "On 15 October 2026 the General Conference on Weights and Measures, meeting in Versailles, decided that from 20 May 2027 world time, UTC, will run on without leap seconds ([Resolution 5](https://www.bipm.org/en/cgpm-2026/resolution-5)). UTC is kept by atomic clocks, whose seconds never vary, but the day is set by the Earth’s spin, which is a little irregular: in 1972 an average day was about 3 milliseconds longer than 86,400 seconds. Those milliseconds add up, so from 1972 to 2016 timekeepers added **27 leap seconds**, each a 23:59:60, to keep UTC within 0.9 seconds of the Earth. Many computers can’t write 23:59:60 and repeat 23:59:59 instead, so their clocks step backwards, and in 2012 and 2016 that tripped up services from Reddit to Cloudflare. Lately the Earth has spun a little faster, raising the prospect of the first negative leap second, which has never been tried. Under the new rule, clocks and the Earth may drift up to an hour apart; in many countries the time zone already puts clocks more than an hour off the Sun. Daylight saving time carries on as before.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "From 1972 to 2016, how many leap seconds were added to Coordinated Universal Time (UTC), the world’s clock time?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 27,
+      "unit": "seconds",
+      "explanation": "27. Each made one minute 61 seconds long, ending at 23:59:60, at the end of June or December. The last came on 31 December 2016."
+    },
+    {
+      "type": "video",
+      "src": "leapsecond.mp4",
+      "poster": "leapsecond.jpg",
+      "alt": "Animation in amber LED digits on dark teal: a clock reads 23:59:60. A caesium atom beside a spinning Earth, a year of 3-millisecond days adding up to a second, a sawtooth graph with 27 leap seconds, a Linux clock repeating 23:59:59, and the new rule from 20 May 2027 allowing up to an hour.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Prelude in C (BWV 846)” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 24.27
+        },
+        {
+          "start": 24.53,
+          "end": 30.4
+        },
+        {
+          "start": 30.67,
+          "end": 36.53
+        },
+        {
+          "start": 36.8,
+          "end": 42.67
+        },
+        {
+          "start": 42.93,
+          "end": 48.8
+        },
+        {
+          "start": 49.07,
+          "end": 54.93
+        },
+        {
+          "start": 55.2,
+          "end": 61.07
+        },
+        {
+          "start": 61.33,
+          "end": 67.2
+        },
+        {
+          "start": 67.47,
+          "end": 73.33
+        },
+        {
+          "start": 73.6,
+          "end": 79.47
+        },
+        {
+          "start": 79.73,
+          "end": 85.6
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "leap-seconds-abolished",
+      "prompt": "On a clock that repeats 23:59:59, find a start and a length that make the timer read less than zero.",
+      "takeaway": "In the repeat the clock jumped back, so the timer read below zero. A smear, or no leap second at all, keeps time moving forwards."
+    },
+    {
+      "type": "chart",
+      "heading": "Leap seconds added, by decade",
+      "items": [
+        {
+          "label": "1972–1979",
+          "value": 9
+        },
+        {
+          "label": "1980s",
+          "value": 6
+        },
+        {
+          "label": "1990s",
+          "value": 7
+        },
+        {
+          "label": "2000s",
+          "value": 2
+        },
+        {
+          "label": "2010s",
+          "value": 3,
+          "emphasis": true
+        }
+      ],
+      "unit": "leap seconds",
+      "note": "None since 31 December 2016, the last one."
+    },
+    {
+      "type": "text",
+      "heading": "Why not wait and see?",
+      "text": "A negative leap second, which would skip 23:59:59, has never been done. The 2026 resolution of the General Conference on Weights and Measures calls it a high risk for largely unprepared critical systems, and says getting ready would cost about as much as the millennium bug did."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did UTC need leap seconds at all?",
+      "options": [
+        "The Earth’s spin isn’t steady",
+        "Atomic clocks drift each year",
+        "A year is 365.25 days long",
+        "Daylight saving shifts clocks"
+      ],
+      "answer": 0,
+      "explanation": "Atomic seconds never vary, but a day is one turn of the Earth, which has run a few milliseconds long. Leap seconds kept clocks within 0.9 seconds of the Earth."
+    }
+  ],
+  "tags": [
+    "time",
+    "clocks",
+    "atomic",
+    "computers",
+    "earth",
+    "timekeeping"
+  ],
+  "source": {
+    "label": "International Bureau of Weights and Measures: Resolution 5 of the 28th General Conference (2026)",
+    "url": "https://www.bipm.org/en/cgpm-2026/resolution-5"
+  },
+  "theme": {
+    "gradient": [
+      "#081016",
+      "#173a4a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-26"
+}
