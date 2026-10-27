@@ -134,6 +134,7 @@ import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } fro
 import { backFor as trajanBack, COLUMN as TRAJAN_COLUMN, earthPerMetre as trajanEarth, faceHeight as trajanFace } from '../src/labs/engineering/trajans-column-hill';
 import { carvedBy as archCarvedBy, DEDICATED as ARCH_DEDICATED, REUSED_TOTAL as ARCH_REUSED } from '../src/labs/history/arch-of-constantine-spolia';
 import { density as sackDensity, estimateAt as sackAt, TENTH as SACK_TENTH } from '../src/labs/history/rome-after-the-sacks';
+import { contrast as titusContrast, ochreReflects as titusOchre, spotReflects as titusSpot, STANDS_OUT as TITUS_STANDS } from '../src/labs/art/arch-of-titus-menorah';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1224,5 +1225,13 @@ describe('lab maths', () => {
     expect(sackAt(549).high).toBeGreaterThanOrEqual(SACK_TENTH);
     expect(sackAt(550).high).toBeLessThan(SACK_TENTH);
     expect(sackAt(600).high).toBe(90000);
+  });
+  it('Arch of Titus: in the model, ochre traces stand out in blue light but hardly in red, because yellow ochre absorbs blue', () => {
+    expect(titusOchre(450)).toBeLessThan(0.15);
+    expect(titusOchre(650)).toBeGreaterThan(0.6);
+    expect(titusSpot(500, 0)).toBeCloseTo(0.85, 9);
+    expect(titusContrast(450)).toBeGreaterThan(TITUS_STANDS);
+    expect(titusContrast(500)).toBeLessThan(TITUS_STANDS);
+    expect(titusContrast(620)).toBeLessThan(1.1);
   });
 });

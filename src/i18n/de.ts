@@ -1806,4 +1806,12 @@ export const de: Record<string, string> = {
   'Richard Krautheimer’s upper limit': 'Obergrenze von Richard Krautheimer',
   'each dot: 10,000 people': 'jeder Punkt: 10.000 Menschen',
   'up to {n}': 'bis zu {n}',
+  'Bare marble': 'Blanker Marmor',
+  'Spot with ochre traces': 'Stelle mit Ockerspuren',
+  'Light reflected by bare marble and by a spot with ochre traces, lit at {n} nanometres': 'Von blankem Marmor und einer Stelle mit Ockerspuren reflektiertes Licht, beleuchtet mit {n} Nanometern',
+  'Colour of the light (wavelength)': 'Farbe des Lichts (Wellenlänge)',
+  'Bare marble reflects': 'Blanker Marmor reflektiert',
+  'Spot with ochre traces reflects': 'Stelle mit Ockerspuren reflektiert',
+  'Marble looks brighter by': 'Marmor wirkt heller um',
+  'Simplified model: illustrative curves, not the 2012 measurements. A spectrometer reads every colour at once.': 'Vereinfachtes Modell: anschauliche Kurven, nicht die Messungen von 2012. Ein Spektrometer misst alle Farben auf einmal.',
 };

@@ -1,0 +1,177 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-arch-of-titus-menorah",
+  "field": "art",
+  "title": "Traces found in 2012 show the menorah on Rome’s Arch of Titus was once painted yellow",
+  "emoji": "🕎",
+  "body": "Emperor Domitian built the [Arch of Titus](https://en.wikipedia.org/wiki/Arch_of_Titus) on the Via Sacra, by the Roman Forum, soon after AD 81, for his deified brother Titus. As a general, Titus had put down the Jewish revolt: in AD 70 his army destroyed Jerusalem and its Temple, the centre of Jewish worship, and in 71 he and his father Vespasian held a triumph in Rome. A relief inside the arch shows the Temple’s treasures carried in that procession, the seven-branched menorah at its heart. In June 2012 a team led by Steven Fine of Yeshiva University scanned it in 3D and used **UV-VIS spectrometry**, which measures which colours of light a surface reflects, without touching it. Yellow pigment soaks up blue light, and the readings found [traces of yellow ochre](https://www.yu.edu/node/22505) on the menorah’s arms and base, fitting the golden menorah described by the eyewitness historian Josephus. The relief’s menorah became the model for the emblem of the State of Israel, and Roman Jews long avoided walking under the arch. Built into a medieval fortress, the arch was rebuilt in the 1820s by Giuseppe Valadier, with the missing parts in travertine, so new and old can be told apart.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "In 2012 scientists found traces of paint on the menorah carved inside Rome’s Arch of Titus. What colour was it?",
+      "options": [
+        "Yellow",
+        "Red",
+        "Blue",
+        "Green"
+      ],
+      "answer": 0,
+      "explanation": "Yellow ochre, an earth pigment, on the menorah’s arms and base. It fits ancient descriptions of the Temple’s menorah as golden."
+    },
+    {
+      "type": "video",
+      "src": "titus-menorah.mp4",
+      "poster": "titus-menorah.jpg",
+      "alt": "Animation: the Arch of Titus on the Via Sacra, dates from AD 66 to 81, then the relief of the Temple's spoils with the menorah. A cyan line scans it in 3D; a light probe and a graph show yellow ochre absorbing blue light; the menorah's arms and base turn ochre. Then travertine fills the gaps.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Truth in the Stones” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "arch-of-titus-menorah",
+      "prompt": "Change the colour of the light on the relief. Find a colour in which the spot with ochre traces looks clearly darker than bare marble.",
+      "takeaway": "Blue or violet light: yellow ochre soaks it up, so the traces show as darker patches, while in red light they almost vanish. A spectrometer reads all colours at once."
+    },
+    {
+      "type": "image",
+      "src": "spoils-relief.jpg",
+      "alt": "Photo of the worn marble relief inside the Arch of Titus in Rome: a procession of men in tunics carrying a large seven-branched menorah on a stepped base, with placards on poles and long trumpets behind them.",
+      "caption": "The spoils relief on the south wall of the arch’s passage, with the menorah carried high.",
+      "fit": "cover",
+      "credit": "Jebulon · CC0"
+    },
+    {
+      "type": "flow",
+      "heading": "How the menorah’s colour was found",
+      "steps": [
+        {
+          "icon": "📐",
+          "label": "Scan the relief in 3D, to under a millimetre"
+        },
+        {
+          "icon": "💡",
+          "label": "Shine light on it, without touching it"
+        },
+        {
+          "icon": "🌈",
+          "label": "Measure the colours it reflects (UV-VIS)"
+        },
+        {
+          "icon": "🟡",
+          "label": "Yellow ochre on the arms and base"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Old and new on the Arch of Titus",
+      "left": {
+        "label": "Roman marble",
+        "text": "The fine white stone of the arch built soon after AD 81, with its carved reliefs."
+      },
+      "right": {
+        "label": "Travertine of the 1820s",
+        "text": "The plainer, porous stone Giuseppe Valadier used to fill the missing parts."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "Why did Giuseppe Valadier use travertine, not marble, for the parts of the Arch of Titus he rebuilt in the 1820s?",
+      "options": [
+        "So new and old can be told apart",
+        "Travertine is stronger",
+        "Marble was banned",
+        "To match the Colosseum"
+      ],
+      "answer": 0,
+      "explanation": "A plainer stone than the marble, it marks his work at a glance. The archaeological park that runs the site calls the restoration a milestone for conservation."
+    }
+  ],
+  "tags": [
+    "rome",
+    "titus",
+    "arch",
+    "menorah",
+    "colour",
+    "restoration"
+  ],
+  "source": {
+    "label": "Yeshiva University: Discovering the Menorah’s Original Color",
+    "url": "https://www.yu.edu/node/22505"
+  },
+  "theme": {
+    "gradient": [
+      "#141722",
+      "#4a3a26"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T18:41:21Z"
+}
