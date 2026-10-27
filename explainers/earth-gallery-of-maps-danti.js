@@ -18,7 +18,7 @@
 //   western from Liguria to Calabria, Sicilia, Sardinia, Corsica, and Avignon); Latium et Sabina shows Rome; each
 //   map shows a region and often a perspective view of its main city.
 // - Wikipedia, "Ignazio Danti", and MacTutor: begun in early 1580 and finished in about 18 months; in 1574 Danti
-//   found the spring equinox falling on 11 March, 11 days off; Gregory XIII made him papal mathematician and a
+//   found the spring equinox falling on 11 March; Gregory XIII made him papal mathematician and a
 //   member of the calendar commission. The History Blog (2016): Danti likened walking the corridor to walking up
 //   Italy on the spine of the Apennines.
 // The outline of Italy and the line of the Apennines are hand-simplified from coordinates; the panel order on each
@@ -295,10 +295,11 @@ function sceneDanti(t) {
       ctx.fillStyle = C.gold; ctx.beginPath(); ctx.arc(x, 290, 26, 0, TAU); ctx.fill();
       for (let i = 0; i < 12; i++) { const ang = (i / 12) * TAU; ctx.strokeStyle = C.gold; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(x + Math.cos(ang) * 32, 290 + Math.sin(ang) * 32); ctx.lineTo(x + Math.cos(ang) * 42, 290 + Math.sin(ang) * 42); ctx.stroke(); }
       font(600, 22); text('equinox measured by Danti', x + 56, 290, { base: 'middle', color: C.ink });
-      // 11 days off the calendar's date
-      const x2 = 96 + 14 * 42 + 18;
+      // 21 March, the date the Church's calendar assumed for the equinox (Wikipedia, "Gregorian calendar"). The
+      // sources differ on how many days off Danti's measurement was, so no count is shown.
+      const x2 = 96 + 13 * 42 + 18;
       ctx.strokeStyle = C.red; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(x, 248); ctx.lineTo(x, 262); ctx.moveTo(x2, 248); ctx.lineTo(x2, 262); ctx.moveTo(x, 255); ctx.lineTo(x2, 255); ctx.stroke();
-      font(700, 22); text('11 days', (x + x2) / 2 + 60, 340, { align: 'center', base: 'middle', color: C.red });
+      font(700, 22); text('the calendar’s date: 21 March', x2, 340, { align: 'right', base: 'middle', color: C.red });
     });
     A(seg(t, 55.6, 56.4), () => {
       ctx.fillStyle = 'rgba(255,255,255,0.5)'; k.rrect(CX - 300, 430, 600, 220, 10); ctx.fill();
