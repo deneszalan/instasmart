@@ -137,6 +137,7 @@ export const LABS = {
   'caravaggio-calling-light': 'Light a face as Caravaggio did: choose the studio’s walls and windows and see how dark the shadows get.',
   'monte-testaccio-amphorae': 'Set how many olive-oil jars Monte Testaccio holds and over how many years they came, and see how much oil Rome took in.',
   'santa-maria-maggiore-sixtus-arch': 'Turn on clues from Santa Maria Maggiore’s triumphal arch, its Latin line naming a bishop Sixtus, the Council of Ephesus and the later apse, until one window of years is left for the mosaic.',
+  'nasoni-finger-fountain': 'Cover the end of a Roman nasone’s spout with a finger and choose the size of the hole on top, and see how high the jet rises as the flow and the pressure lost in the pipes fall.',
 } as const;
 
 export type LabId = keyof typeof LABS;

@@ -132,6 +132,7 @@ import { jetHeight as virgoJet, jetTop as virgoTop, nozzleSpeed as virgoSpeed } 
 import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggio-calling-light';
 import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } from '../src/labs/economics/monte-testaccio-amphorae';
 import { fits as smmFits, LIBERIUS as SMM_LIBERIUS, windows as smmWindows, yearsLeft as smmYears } from '../src/labs/art/santa-maria-maggiore-sixtus-arch';
+import { flowShare as nasoniFlow, GOAL as NASONI_GOAL, HOLES as NASONI_HOLES, spoutPressure as nasoniPressure } from '../src/labs/engineering/nasoni-finger-fountain';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1209,5 +1210,15 @@ describe('lab maths', () => {
     expect(smmYears(solved)).toBe(8);
     expect(smmFits(solved, SMM_LIBERIUS)).toBe(false);
     expect(smmFits(smmWindows(['legal', 'apse']), SMM_LIBERIUS)).toBe(true);
+  });
+  it('Nasoni: blocking the spout cuts the flow, so the pressure at the spout climbs from about 9% to about 93% of the main', () => {
+    const hole = NASONI_HOLES.medium;
+    expect(nasoniPressure(0, hole)).toBeCloseTo(0.0936, 3);
+    expect(nasoniPressure(1, hole)).toBeCloseTo(0.9259, 3);
+    expect(nasoniFlow(0, hole)).toBe(1);
+    expect(nasoniFlow(1, hole)).toBeCloseTo(0.286, 3);
+    expect(nasoniPressure(1, NASONI_HOLES.small)).toBeGreaterThan(NASONI_GOAL);
+    expect(nasoniPressure(1, NASONI_HOLES.large)).toBeLessThan(NASONI_GOAL);
+    expect(nasoniPressure(0.9, hole)).toBeLessThan(NASONI_GOAL);
   });
 });
