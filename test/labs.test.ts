@@ -113,6 +113,7 @@ import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgme
 import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '../src/labs/history/caesar-445-day-year';
 import { coverage as goldCoverage, flashing as goldFlashing, GOAL as GOLD_GOAL, reflectedAngle as goldReflected, tiltsFor as goldTilts } from '../src/labs/art/trastevere-gold-tesserae';
 import { buried as scBuried, site as scSite, STEPS as SC_STEPS } from '../src/labs/earth/san-clemente-three-levels';
+import { farWidth as cpFar, viewAngle as cpView, widerThanRectangle as cpWider } from '../src/labs/art/campidoglio-trapezoid';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1016,5 +1017,14 @@ describe('lab maths', () => {
     expect(scSite(2, 'build')).toEqual(['ruins', 'roman']);
     expect(scBuried(2, 'build')).toBe(1);
     expect(SC_STEPS.map((s) => s.year)).toEqual([64, 90, 200, 392, 1100]);
+  });
+
+  it('Campidoglio: turning each side palace out by about 7.4° widens the square from 44 to 58 m, and from the ramp the far palace looks 1.32 times as wide as at the end of a rectangle', () => {
+    expect(cpFar(0)).toBe(44);
+    expect(cpFar(7.4)).toBeCloseTo(58, 0);
+    expect(cpWider(7.4)).toBeCloseTo(1.32, 2);
+    expect(cpView(44)).toBeCloseTo(39.1, 1);
+    expect(cpView(58)).toBeCloseTo(50.1, 1);
+    expect(cpWider(-5)).toBeLessThan(1);
   });
 });

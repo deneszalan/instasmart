@@ -118,4 +118,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'caesar-445-day-year': lazy(() => import('./history/caesar-445-day-year')),
   'trastevere-gold-tesserae': lazy(() => import('./art/trastevere-gold-tesserae')),
   'san-clemente-three-levels': lazy(() => import('./earth/san-clemente-three-levels')),
+  'campidoglio-trapezoid': lazy(() => import('./art/campidoglio-trapezoid')),
 };

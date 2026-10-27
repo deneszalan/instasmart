@@ -1561,4 +1561,13 @@ export const de: Record<string, string> = {
   'Deepest level to dig down to': 'Tiefste Ebene zum Ausgraben',
   'Heights are schematic. “Cleared the ruins away” is a what-if: at San Clemente, the builders filled each old building and built on top.': 'Höhen schematisch. „Die Ruinen weggeräumt“ ist ein Gedankenspiel: In San Clemente füllten die Bauleute jedes alte Gebäude auf und bauten darauf.',
   'San Clemente at this step': 'San Clemente in diesem Schritt',
+  'Palazzo Senatorio': 'Palazzo Senatorio',
+  'you, on the ramp': 'du, auf der Rampe',
+  'what you see': 'was du siehst',
+  'Plan of the square and the view from the ramp, side palaces turned out by {s} degrees': 'Grundriss des Platzes und Blick von der Rampe, Seitenpaläste um {s} Grad nach außen gedreht',
+  'Turn each side palace out by': 'Jeden Seitenpalast nach außen drehen um',
+  'Width at the far end': 'Breite am hinteren Ende',
+  'The far palace fills': 'Der hintere Palast füllt',
+  'Compared with a rectangle': 'Verglichen mit einem Rechteck',
+  'Model: the square as measured on OpenStreetMap, 44 m wide at the entrance and 54 m deep; you stand 8 m down the Cordonata. Façade heights are schematic.': 'Modell: der Platz nach OpenStreetMap, am Eingang 44 m breit und 54 m tief; du stehst 8 m weiter unten auf der Cordonata. Fassadenhöhen schematisch.',
 };
