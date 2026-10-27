@@ -210,7 +210,8 @@
                   "sistine-ceiling-giornate",
                   "school-of-athens-vanishing-point",
                   "st-peters-dome-chains",
-                  "gallery-of-maps-danti"
+                  "gallery-of-maps-danti",
+                  "castel-sant-angelo-tomb-fortress"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

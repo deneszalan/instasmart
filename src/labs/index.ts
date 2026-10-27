@@ -120,4 +120,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'school-of-athens-vanishing-point': lazy(() => import('./math/school-of-athens-vanishing-point')),
   'st-peters-dome-chains': lazy(() => import('./engineering/st-peters-dome-chains')),
   'gallery-of-maps-danti': lazy(() => import('./earth/gallery-of-maps-danti')),
+  'castel-sant-angelo-tomb-fortress': lazy(() => import('./history/castel-sant-angelo-tomb-fortress')),
 };

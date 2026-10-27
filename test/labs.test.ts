@@ -115,6 +115,7 @@ import { canLay, PATCHES as GIORNATE_PATCHES, relief, seams as giornateSeams, un
 import { DIAGONALS as ATHENS_DIAGONALS, DIST as ATHENS_DIST, EDGES as ATHENS_EDGES, EYE as ATHENS_EYE, offLine, project as athensProject } from '../src/labs/math/school-of-athens-vanishing-point';
 import { bestLine, fits as thrustFits, PIECES as DOME_PIECES, SLICE_WEIGHT, THICK, thrustLine } from '../src/labs/engineering/st-peters-dome-chains';
 import { apennineSide, REGIONS as MAP_REGIONS } from '../src/labs/earth/gallery-of-maps-danti';
+import { LAYERS as CASTLE_LAYERS, newest as newestLayer } from '../src/labs/history/castel-sant-angelo-tomb-fortress';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1036,5 +1037,17 @@ describe('lab maths', () => {
     expect(apennineSide(7.69, 45.07)).toBe('adriatic');
     expect(apennineSide(13.36, 38.12)).toBe('tyrrhenian');
     expect(apennineSide(18.17, 40.35)).toBe('adriatic');
+  });
+  it('castel sant angelo: peeling the newest layer each time ends at Hadrian’s tomb, the oldest', () => {
+    let standing = CASTLE_LAYERS.map((l) => l.id);
+    const order: string[] = [];
+    while (standing.length > 1) {
+      const top = newestLayer(standing)!;
+      order.push(top);
+      standing = standing.filter((s) => s !== top);
+    }
+    expect(order).toEqual(['bastions', 'towers', 'door', 'chapel', 'walls']);
+    expect(standing).toEqual(['tomb']);
+    expect(newestLayer(['tomb', 'walls', 'chapel'])).toBe('chapel');
   });
 });
