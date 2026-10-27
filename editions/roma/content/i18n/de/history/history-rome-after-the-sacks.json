@@ -1,0 +1,56 @@
+{
+  "id": "history-rome-after-the-sacks",
+  "title": "Rom hatte einst vielleicht eine Million Einwohner, 550 n. Chr. womöglich nur Zehntausende",
+  "body": "Im 1. und 2. Jh. n. Chr. lebten in Rom vielleicht bis zu einer Million Menschen, so die gängige Angabe; der Archäologe Glenn Storey kam auf etwa 450.000. Dann leerte sich die Stadt. Die Kaiser des Westens regierten ab 286 von Mailand aus, ab 402 von Ravenna. 410 plünderten die Westgoten König Alarichs Rom drei Tage lang, als erste fremde Feinde seit fast 800 Jahren, und 455 raubten die Vandalen es zwei Wochen lang aus; nach einer Schätzung blieben 455 noch 300.000 bis 500.000. Bei der [Belagerung 537–538](https://en.wikipedia.org/wiki/Siege_of_Rome_%28537%E2%80%93538%29) kappten die Goten die Aquädukte, die auch die Mühlen antrieben, und für etwa 550 bis 600 reichen die Schätzungen von rund 30.000 bis höchstens 90.000. Die wenigen, die blieben, sammelten sich auf dem Marsfeld (Campus Martius) am Tiber, doch der Archäologe Robert Coates-Stephens warnt, dass dieses Bild auf dünnen Belegen ruht; Päpste reparierten später Aquädukte wie die Aqua Virgo. Hochwasser, von den Hügeln gespülte Erde und überpflasterter Schutt hoben den Boden: Ende des 16. Jh. lagen die Kaiserforen 3 bis 4 Meter tief, und unter San Clemente nahe dem Kolosseum liegen drei Ebenen übereinander.",
+  "slides": [
+    {
+      "question": "Im alten Rom lebte einst vielleicht eine Million Menschen. Wie viele waren es um 550 n. Chr. nach einer Schätzung noch?",
+      "unit": "Menschen",
+      "explanation": "Etwa 30.000 nach einer Schätzung; andere nennen 60.000 oder um 600 höchstens 90.000. So oder so war die große Mehrheit der Römer fort."
+    },
+    {
+      "alt": "Animation: ein nächtlicher Plan Roms in der Aurelianischen Mauer, der Tiber blau, jeder Punkt 10.000 Menschen. Die Punkte schwinden mit den Plünderungen 410 und 455 und den gekappten Aquädukten 537; die letzten sammeln sich am Tiberknie. Dann begraben Schlick, Erde und Schutt eine antike Säule.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Geh durch die Jahre. Finde die erste Schätzung, in der selbst die höchste Zahl für Rom unter 100.000 liegt.",
+      "takeaway": "Um 550 n. Chr.: 30.000 bis 60.000 Menschen, wo einst vielleicht bis zu einer Million lebten. Innerhalb der Stadtmauern, auf 13,86 km², kamen nur noch wenige Tausend Menschen auf einen km²."
+    },
+    {
+      "alt": "Foto der „Colonnacce“ auf dem Nervaforum in Rom: der obere Teil einer antiken Steinmauer mit gemeißeltem Figurenfries und reich profiliertem Gesims, darüber ein Relief der Göttin Minerva, an den Seiten korinthische Säulenkapitelle.",
+      "caption": "Die „Colonnacce“ des Nervaforums, eines der Kaiserforen, die Ende des 16. Jahrhunderts 3 bis 4 m unter der Erde lagen."
+    },
+    {
+      "heading": "Schätzungen, wie viele Menschen in Rom lebten",
+      "items": [
+        { "label": "1.–2. Jh. n. Chr., hoch" },
+        { "label": "408 (Lançon)" },
+        { "label": "419 (Lançon)" },
+        { "label": "455, hoch" },
+        { "label": "um 550, eine Schätzung" }
+      ],
+      "unit": "Menschen",
+      "note": "Schätzungen schwanken stark: Der Archäologe Glenn Storey sieht den Höchststand bei etwa 450.000."
+    },
+    {
+      "heading": "Wie die Stadt schrumpfte und versank",
+      "events": [
+        { "when": "286", "text": "Westkaiser regieren aus Mailand." },
+        { "when": "410", "text": "Westgoten plündern Rom 3 Tage lang." },
+        { "when": "455", "text": "Vandalen rauben Rom 2 Wochen aus." },
+        { "when": "537", "text": "Belagernde Goten kappen Aquädukte." },
+        { "when": "Ende 16. Jh.", "text": "Die Kaiserforen liegen 3–4 m tief." }
+      ]
+    },
+    {
+      "question": "Wo lebten nach der üblichen Darstellung die meisten, die in Rom blieben, nachdem die Goten 537 die Aquädukte gekappt hatten?",
+      "options": [
+        "Auf dem Marsfeld, am Tiber",
+        "Auf dem Palatin",
+        "Im Kolosseum",
+        "Außerhalb der Stadtmauern"
+      ],
+      "explanation": "Nahe am Wasser des Flusses, auf dem Marsfeld, während sich die Hügel leerten. Manche Forscher halten die Belege für dünn, und Päpste ließen später einige Aquädukte reparieren."
+    }
+  ]
+}

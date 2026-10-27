@@ -1,0 +1,55 @@
+{
+  "id": "politics-vatican-city-1929",
+  "title": "Die Vatikanstadt, nur 0,44 km² groß, entstand 1929, um einen Streit um Rom beizulegen",
+  "body": "Am 20. September 1870 brachen italienische Truppen bei der Porta Pia in Rom ein. Das beendete den Kirchenstaat, den die Päpste seit 756 n. Chr. in Mittelitalien regiert hatten und der vor 1859 etwa 44.000 km² umfasste. Rom wurde Italiens Hauptstadt, doch Papst Pius IX. lehnte das ab, ebenso das Garantiegesetz, das Italien 1871 für ihn erließ; er und seine Nachfolger blieben im Vatikan und nannten sich Gefangene. Die „Römische Frage“ lösten erst die [Lateranverträge](https://www.vatican.va/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19290211_patti-lateranensi_it.html) vom 11. Februar 1929. Italien erkannte die Souveränität des Heiligen Stuhls, also des Papstes und seiner Kurie, über einen neuen Staat an, die Vatikanstadt, um ihm „absolute und sichtbare Unabhängigkeit“ zu sichern; der Heilige Stuhl erkannte das Königreich Italien mit der Hauptstadt Rom an. Die Vatikanstadt umfasst [0,44 km²](https://www.vaticanstate.va/en/state-and-government/general-informations/geography.html), samt dem Petersplatz, der allen offensteht und von italienischer Polizei überwacht wird. Sie ist eine **absolute Monarchie**: Der Papst gibt Gesetze, regiert und richtet mit voller Macht.",
+  "slides": [
+    {
+      "question": "Italien eroberte Rom am 20. September 1870. Wie viele Jahre weigerten sich die Päpste dann, den Vatikan zu verlassen?",
+      "unit": "Jahre",
+      "explanation": "59 Jahre: Von 1870 bis zu den Lateranverträgen vom 11. Februar 1929 blieben Papst Pius IX. und die vier folgenden Päpste im Vatikan und nannten sich Gefangene."
+    },
+    {
+      "alt": "Animation auf nachtblauer Karte: Roms Mauern und der Tiber, italienische Truppen brechen 1870 an der Porta Pia ein; die Päpste bis 1929 im Vatikan; die Lateranverträge; die echte Grenze der Vatikanstadt schrumpft zum Punkt in einem Quadrat so groß wie der Kirchenstaat; die Grenze am Petersplatz.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Tippe auf dieser Karte Roms herum und finde je eine Stelle der vier Gebietsarten, die die Lateranverträge von 1929 schufen.",
+      "takeaway": "Die Vatikanstadt ist der Staat des Heiligen Stuhls, doch auf ihrem offenen Petersplatz hält Italiens Polizei Ordnung. Große Basiliken anderswo liegen in Italien, gehören aber dem Heiligen Stuhl, mit Botschaftsimmunität."
+    },
+    {
+      "alt": "Foto von der Kuppel des Petersdoms: der ovale Petersplatz zwischen seinen zwei geschwungenen Kolonnaden, der Obelisk in der Mitte und dahinter die lange gerade Straße zum Tiber, mit den Dächern Roms unter dunstig blauem Himmel.",
+      "caption": "Der Petersplatz von der Kuppel aus. Die Grenze der Vatikanstadt verläuft über das offene Ende des Platzes, zwischen den beiden Armen der Kolonnaden."
+    },
+    {
+      "heading": "Vom Kirchenstaat zur Vatikanstadt",
+      "events": [
+        { "when": "756 n. Chr.", "text": "Der Kirchenstaat entsteht." },
+        { "when": "1860", "text": "Annexion der meisten Papstgebiete." },
+        { "when": "20. Sep. 1870", "text": "Italienische Truppen erobern Rom." },
+        { "when": "11. Feb. 1929", "text": "Die Lateranverträge schaffen die Vatikanstadt." },
+        { "when": "1984", "text": "Katholizismus nicht mehr Italiens Staatsreligion." }
+      ]
+    },
+    {
+      "heading": "Zwei Namen, zwei Dinge",
+      "left": {
+        "label": "Heiliger Stuhl",
+        "text": "Der Papst und die Zentralregierung der katholischen Kirche. Er ist souverän: Er schließt Verträge, wie den von 1929."
+      },
+      "right": {
+        "label": "Vatikanstadt",
+        "text": "Der Staat von 0,44 km², den der Vertrag unter der Souveränität des Heiligen Stuhls schuf, mit eigenen Gesetzen, Briefmarken und Euromünzen."
+      }
+    },
+    {
+      "question": "Der Petersplatz gehört zur Vatikanstadt. Wessen Polizei sorgt dort nach den Lateranverträgen von 1929 für Ordnung?",
+      "options": [
+        "Italiens Polizei",
+        "Die Schweizergarde",
+        "Die Vatikanische Gendarmerie",
+        "Roms Stadtwache"
+      ],
+      "explanation": "Artikel 3 des Lateranvertrags hält den Platz für alle offen und unter italienischer Polizei, die am Fuß der Treppe zum Petersdom haltmacht."
+    }
+  ]
+}

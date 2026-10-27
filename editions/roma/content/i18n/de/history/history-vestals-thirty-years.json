@@ -1,0 +1,53 @@
+{
+  "id": "history-vestals-thirty-years",
+  "title": "Roms Vestalinnen dienten mindestens 30 Jahre: zehn lernend, zehn dienend, zehn lehrend",
+  "body": "Auf dem Forum Romanum hütete der runde Vestatempel ein heiliges Feuer, das nach dem Glauben der Römer ihre Stadt schützte. Sechs Priesterinnen, die Vestalinnen, versorgten es abwechselnd, sodass immer eine bei ihm war, und wohnten im großen Haus der Vestalinnen direkt dahinter. Roms oberster Priester, der *pontifex maximus*, wählte jede mit 6 bis 10 Jahren per Los unter 20 Kandidatinnen. Sie gelobte mindestens 30 Jahre ehelosen Dienst: zehn Jahre die Riten lernen, zehn sie vollziehen, zehn sie lehren, schreiben [Dionysios von Halikarnassos](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Dionysius_of_Halicarnassus/2C%2A.html) und Plutarch. So erneuerten sich sechs Plätze langsam: Diente jede genau 30 Jahre, brauchte es **nur alle fünf Jahre** ein neues Mädchen. Nach 30 Jahren durfte eine Vestalin heiraten, doch wenige taten es, und manche blieben Jahrzehnte: Occia war 57 Jahre lang Vestalin. Wer das Feuer ausgehen ließ, wurde ausgepeitscht; die seltene Vestalin, die des Bruchs ihres Gelübdes überführt wurde, wurde lebendig begraben. 382 n. Chr. entzog Kaiser Gratian dem Kult die Mittel, und die letzte namentlich bekannte Vestalin, Coelia Concordia, erscheint 385.",
+  "slides": [
+    {
+      "question": "Rom hatte sechs Vestalinnen. Diente jede genau 30 Jahre: Wie oft musste im Schnitt ein neues Mädchen gewählt werden?",
+      "unit": "Jahre",
+      "explanation": "Alle 5 Jahre: 30 Jahre ÷ 6 Plätze. In der Praxis blieben manche viel länger, also wurden noch weniger Mädchen gewählt."
+    },
+    {
+      "alt": "Animation im Feuerschein bei Nacht: der runde Vestatempel mit Feuer, sechs Vestalinnen und ihr Haus, ein Mädchen von zwanzig per Los gewählt, 30 Jahre als drei farbige Jahrzehnte, ein Dienstplan in sechs Bahnen, alle 5 Jahre ein neues Mädchen, Occias 57 Jahre, ein Spiegel entzündet das Feuer neu.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Stell ein, wie lange jede Vestalin dient. Die Vestalin Occia diente 57 Jahre: Wenn alle sechs das täten, wie oft würde ein neues Mädchen gewählt?",
+      "takeaway": "Sechs Plätze und 30 Dienstjahre brauchen alle 5 Jahre ein neues Mädchen; bei 57 Jahren nur alle 9,5. Je länger die Vestalinnen dienten, desto weniger Mädchen musste Rom wählen."
+    },
+    {
+      "alt": "Foto der Reste des runden Tempels der Vesta auf dem Forum Romanum: ein gebogenes Stück Marmorwand mit korinthischen Säulen und einem Teil des Dachrands, hinter grünen Sträuchern und weiß blühendem Oleander.",
+      "caption": "Der Tempel der Vesta heute: Zweieinhalb Säulenjoche des Rundtempels wurden 1930–31 wieder aufgebaut."
+    },
+    {
+      "heading": "Die Vestalinnen und ihr Tempel",
+      "events": [
+        { "when": "38 v. Chr.", "text": "Occia wird Vestalin, für 57 Jahre." },
+        { "when": "191 n. Chr.", "text": "Feuer zerstört den Vestatempel." },
+        { "when": "382 n. Chr.", "text": "Kaiser Gratian streicht ihr Geld." },
+        { "when": "385 n. Chr.", "text": "Coelia Concordia, die letzte namentlich bekannte Vestalin." },
+        { "when": "1930–31", "text": "Tempel teilweise wieder aufgebaut." }
+      ]
+    },
+    {
+      "heading": "Die dreißig Jahre einer Vestalin",
+      "steps": [
+        { "label": "Jahre 1–10: die Riten lernen" },
+        { "label": "Jahre 11–20: sie vollziehen" },
+        { "label": "Jahre 21–30: die neuen Mädchen lehren" },
+        { "label": "Dann frei, zu gehen und zu heiraten" }
+      ]
+    },
+    {
+      "question": "Was durfte eine Vestalin nach ihren 30 Dienstjahren tun?",
+      "options": [
+        "Gehen und heiraten",
+        "Oberste Priesterin werden",
+        "In den Senat eintreten",
+        "Ihre Nachfolgerin wählen"
+      ],
+      "explanation": "Sie durfte gehen und heiraten, doch nur wenige taten es. Manche blieben ein Leben lang, wie Occia, die 57 Jahre Vestalin war."
+    }
+  ]
+}
