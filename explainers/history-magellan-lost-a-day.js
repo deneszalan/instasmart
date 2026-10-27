@@ -106,7 +106,7 @@ const CUES = [
   [5.8, 10.2, `Its log said *${LOG_DAY} 9 July*. Ashore it was ~${SHORE_DAY} 10 July~.`],
   [10.4, 15.0, 'Yet Pigafetta, the voyage’s chronicler, had written down every single day.'],
   [15.2, 20.8, 'They had left Spain in 1519 and sailed west, all the way round the world.'],
-  [21.0, 25.8, 'Magellan was killed in the Philippines in 1521; *Elcano* brought the Victoria home.'],
+  [21.0, 25.8, 'Magellan was killed in the Philippines in 1521; Juan Sebastián *Elcano* sailed the Victoria home.'],
   [26.0, 30.0, 'A day is the Sun coming round to noon again.'],
   [30.2, 36.0, `Sped up: here the ship sails once round the globe while ~${DEMO.days} days~ pass in Spain.`],
   [36.2, 41.6, 'Sailing west, it moves *with* the Sun, so each of its days runs a little long.'],

@@ -355,7 +355,7 @@ function header() {
 }
 
 const CUES = [
-  [0.5, 4.6, 'A petri dish *120 cm* long, with bands of antibiotic.'],
+  [0.5, 4.6, 'In 2016, Harvard scientists filled a dish *120 cm* long with bands of antibiotic.'],
   [4.7, 8.8, 'Could bacteria evolve their way to the *middle*?'],
   [9.0, 13.2, 'The edges hold none. Each band holds *ten times* more.'],
   [13.3, 17.9, `The middle: *${MIDDLE_TIMES.toLocaleString('en-US')} times* the first band, which stops ordinary ~E. coli~.`],

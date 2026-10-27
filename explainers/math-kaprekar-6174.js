@@ -211,7 +211,7 @@ const CUES = [
   [39.1, 42.4, `Not one needs more than ~${MAXSTEPS} steps~.`],
   [42.6, 47.0, `Why so fast? After one step, only *${FIRST.length}* answers are possible.`],
   [47.1, 50.8, `Those ${FIRST.length} all reach *6174* within ~${EXTRA} more~ steps.`],
-  [51.0, 54.8, 'That number is ~Kaprekar’s constant~.'],
+  [51.0, 54.8, 'That number is ~Kaprekar’s constant~, after Indian mathematician D. R. Kaprekar.'],
 ];
 
 // ---------- A + B: the machine ----------

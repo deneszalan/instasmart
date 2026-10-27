@@ -68,7 +68,7 @@ const T = { A: [0, 18.6], B: [18.3, 34.4], C: [34.1, 49.0], D: [48.7, 54.0] };
 const CUES = [
   [0.4, 4.5, 'Three doors. Behind one, a ~car~. Behind the others, goats.'],
   [4.6, 6.9, 'You pick *door 1*.'],
-  [7.0, 11.7, 'The host, who knows where the car is, opens a goat door.'],
+  [7.0, 11.7, 'The game-show host, who knows where the car is, opens a goat door.'],
   [11.8, 15.3, '*Stay* with door 1, or ~switch~ to door 2?'],
   [15.4, 18.5, 'Most people say it doesn’t matter: *50/50*.'],
   [18.7, 22.0, 'Let’s play ~300 games~ and keep score.'],

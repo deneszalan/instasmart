@@ -58,7 +58,7 @@ const DROPS = [
 
 // ---------- timeline ----------
 const CUES = [
-  [0.6, 4.8, 'An experiment started in *1927* is still running.'],
+  [0.6, 4.8, 'An experiment started in *1927* at the University of Queensland is still running.'],
   [5.0, 9.4, 'It has dripped only *nine times*.'],
   [9.8, 14.6, 'Pitch looks solid, but it is a liquid that flows *very slowly*.'],
   [14.8, 20.2, `In *1930* the stem was cut. The first drop fell in *${DROPS[0].year}*.`],

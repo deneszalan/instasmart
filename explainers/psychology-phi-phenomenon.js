@@ -85,7 +85,7 @@ const CUES = [
   [14.7, 17.7, 'Psychologists call it ~beta movement~.'],
   [17.8, 21.0, 'Yet nothing is ever drawn in between.'],
   [21.1, 24.6, 'Faster still: both seem *lit at once*.'],
-  [24.7, 29.1, 'Here, Wertheimer described a ghostly motion with no object: ~pure phi~.'],
+  [24.7, 29.1, 'Here, psychologist Max Wertheimer described a motion with no object: ~pure phi~.'],
   [29.2, 33.6, 'In a ring, a *shadow* may seem to race round.'],
   [33.8, 37.9, 'A flip-book is just *still pictures*, each a little different.'],
   [38.0, 41.6, 'Flip them fast enough and they *move*.'],

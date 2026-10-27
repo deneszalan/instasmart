@@ -91,7 +91,7 @@ START.forEach((n, i) => { n.sx = 130 + i * 145; });
 const CUES = [
   [0.4, 4.4, `How few bits does it take to store *${PHRASE}*?`],
   [4.5, 9.0, `A fixed code spends *${FIXED_LEN} bits* per letter: ${FIXED_TOTAL} in all.`],
-  [9.1, 12.6, 'Huffman’s idea: first, count each letter.'],
+  [9.1, 12.6, 'A student’s 1951 idea: first, count each letter.'],
   [12.7, 16.6, 'Then tie the two ~rarest~ cards together with string.'],
   [16.7, 20.9, `The new card carries their total: *${MERGES[0].w}*.`],
   [21.0, 25.0, 'Again, tie the two rarest. Ties? Either pair works.'],

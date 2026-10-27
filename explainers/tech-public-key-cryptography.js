@@ -77,8 +77,8 @@ const CUES = [
   [43.8, 48.8, `Each raises what they got to their own secret. Remainder: ~${S}~ for both!`],
   [48.9, 53.3, `Eve heard ${P}, ${G}, ${A} and ${B}, never ${SA} or ${SB}.`],
   [53.5, 57.9, 'Real keys have *hundreds of digits*: far too many to undo.'],
-  [58.0, 61.2, 'Diffie and Hellman published it in *1976*.'],
-  [61.3, 64.8, 'Britain’s GCHQ had found it first, in secret.'],
+  [58.0, 61.2, 'Whitfield Diffie and Martin Hellman published it in *1976*.'],
+  [61.3, 64.8, 'Britain’s codebreaking agency GCHQ had found it first, in secret.'],
 ];
 const DUR = 65.0;
 const c = (i) => CUES[i][0];

@@ -58,10 +58,10 @@ const CUES = [
   [19.5, 24.4, 'Then he’s a man who shaves himself, so the barber *mustn’t* shave him.'],
   [24.5, 29.2, 'Say he ~doesn’t~. Then the rule says the barber *must* shave him.'],
   [29.3, 33.8, 'Each answer flips to the other: no such barber *can exist*.'],
-  [33.9, 37.8, 'It’s a homely version of *Russell’s paradox*, about sets.'],
+  [33.9, 37.8, 'It’s a homely version of philosopher Bertrand *Russell’s paradox*, about sets.'],
   [37.9, 42.6, 'Most sets don’t contain themselves: the set of squares isn’t a square.'],
   [42.7, 48.0, 'Take ~R~, the set of all such sets. Is R in R? Same flip-flop.'],
-  [48.1, 52.3, 'In 1902 Russell wrote to *Frege*: it undermined Frege’s logic.'],
+  [48.1, 52.3, 'In 1902 Russell wrote to the logician *Gottlob Frege*: it undermined Frege’s logic.'],
   [52.4, 57.6, 'Russell said this barber form, suggested to him, was *not valid*.'],
   [57.7, 61.9, 'A barber can simply not exist. Sets needed ~new rules~.'],
 ];

@@ -51,7 +51,7 @@ const withAlpha = (a, fn) => k.alpha(a, fn);
 const T = { A: [0, 9.4], B: [9.1, 18.2], C1: [17.9, 30.9], C2: [30.6, 39.9], C3: [39.6, 49.0], D1: [48.7, 53.0], D2: [52.7, 58.4] };
 const SECTIONS = 2194, TILES = 1056006, RADIUS_M = 75.2;
 const CUES = [
-  [0.4, 4.6, 'Utzon’s 1957 design showed soaring shells with no defined geometry.'],
+  [0.4, 4.6, 'Jørn Utzon’s 1957 design for the Sydney Opera House: soaring shells with no set geometry.'],
   [4.7, 8.9, 'For years, nobody could work out how to build them.'],
   [9.0, 13.0, 'The team tried at least 12 forms: parabolas, ellipsoids…'],
   [13.1, 17.9, 'With no repeating curves, each precast piece would need its own mould.'],

@@ -51,7 +51,7 @@ const withAlpha = (a, fn) => k.alpha(a, fn);
 const T = { A: [0, 9.0], B: [8.7, 23.6], C: [23.4, 45.0], D: [44.8, 59.2] };
 const CUES = [
   [0.4, 4.8, 'Painters knew far things look smaller, but had no exact system.'],
-  [4.9, 8.8, 'In Florence, between 1415 and 1420, *Brunelleschi* found one.'],
+  [4.9, 8.8, 'In Florence, between 1415 and 1420, the architect *Filippo Brunelleschi* found one.'],
   [8.9, 14.1, 'He painted the *Baptistery* on a small panel and made a hole in it.'],
   [14.2, 18.5, 'You looked through the hole from behind, at the real Baptistery.'],
   [18.6, 23.4, 'Then a ~mirror~ was raised: you saw the painting instead. They matched.'],
@@ -61,7 +61,7 @@ const CUES = [
   [36.9, 41.0, 'Rows across the floor crowd closer as they recede.'],
   [41.1, 45.0, 'The result: a floor that looks truly ~deep~.'],
   [45.1, 49.4, 'Soon Masaccio, Donatello and others were using it.'],
-  [49.5, 53.8, 'Alberti wrote the method down in *De pictura*, about 1435.'],
+  [49.5, 53.8, 'The scholar Leon Battista *Alberti* wrote it down in *De pictura*, about 1435.'],
   [53.9, 58.6, 'The panel itself is lost: we know it from his biographer Manetti.'],
 ];
 

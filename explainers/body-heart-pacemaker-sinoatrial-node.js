@@ -47,7 +47,7 @@ const CUES = [
   [9.6, 14.4, 'About *15 mm* long, it sits in the wall of the right atrium.'],
   [14.5, 19.6, 'Its cells never rest: their voltage creeps up until it ~fires~ by itself.'],
   [20.0, 25.3, 'The pulse spreads across both *atria*, which squeeze. On the ECG: the ~P wave~.'],
-  [25.4, 30.6, 'At the *AV node* it waits a moment, so the ventricles can fill.'],
+  [25.4, 30.6, 'At the *AV node*, the gate to the ventricles, it waits a moment so they can fill.'],
   [30.7, 36.0, 'Then it races down the *bundle of His* and the *Purkinje fibres*.'],
   [36.1, 40.7, 'The signal sweeps the ventricles from the bottom up: the tall ~QRS~ spike.'],
   [40.8, 45.0, 'Then the ventricles reset, drawing the ~T wave~.'],
