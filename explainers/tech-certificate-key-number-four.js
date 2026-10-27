@@ -23,7 +23,7 @@
 // weaker keys whose labels resembled the good ones, and staff picked the weak ones.
 //
 // Scene plan (64.6 s). Important things stay above y = 930; captions are centred at y = 846.
-//  A  0.0– 9.2  The padlock and the chain of trust: root, intermediate, website.
+//  A  0.0– 9.2  The news (eMudhra's keys blocked), then the chain of trust: root, intermediate, website.
 //  B  9.2–23.0  A private key is a number k; the public key is k·G on a curve; forwards easy, backwards try.
 //  C 23.0–32.2  A real P-384 key has up to 116 digits; trying them all would take a 97-digit number of years.
 //  D 32.2–46.0  eMudhra's eight keys were all below 256; a 16 × 16 grid of every key up to 256 fills in.
@@ -78,14 +78,14 @@ const BIG = (() => { let s = 2026, out = '3'; while (out.length < P384_DIGITS) {
 
 // ---------- timeline ----------
 const CUES = [
-  [0.4, 4.6, 'The padlock means a *certificate* vouches that this really is the site you asked for.'],
-  [4.8, 9.0, 'It is signed by an *intermediate*, which is signed by a *root* your browser trusts.'],
+  [0.4, 4.6, 'In October 2026, browsers blocked eight keys of ^eMudhra^, a certificate authority in India.'],
+  [4.8, 9.0, 'A site’s *certificate* is signed by an *intermediate*, and that by a *root* your browser trusts.'],
   [9.2, 13.6, 'Each signer holds a ~private key~, one secret number, and a public key made from it.'],
   [13.8, 18.2, 'Take a point *G* on a curve and add it to itself ~k~ times: that point is the public key.'],
   [18.4, 22.8, 'Forwards is quick. Backwards, nobody knows a fast way: you try key after key.'],
-  [23.0, 27.4, `So the secret must be huge. A *P-384* key is a random number of up to *${P384_DIGITS} digits*.`],
+  [23.0, 27.4, `So the secret must be huge: on the curve *P-384*, a key is a random number of up to *${P384_DIGITS} digits*.`],
   [27.6, 32.0, `At a trillion tries a second, trying them all takes a number of years *${SEARCH_DIGITS} digits long*.`],
-  [32.2, 36.6, 'On 17 October 2026, a researcher reported eight ^eMudhra^ intermediate keys. One was ~4~.'],
+  [32.2, 36.6, 'On 17 October 2026, a researcher reported that one of eMudhra’s keys was ~4~.'],
   [36.8, 41.2, `All eight were below *256*: ${KEYS.slice(0, -1).join(', ')} and ${KEYS.at(-1)}.`],
   [41.4, 45.8, 'Trying the first 256 keys takes a laptop *less than a second*. Nothing had to be stolen.'],
   [46.0, 50.4, 'With them, anyone could issue a ~fake certificate~ for a website they don’t control.'],
@@ -150,12 +150,18 @@ function sceneChain(t) {
       ctx.fillStyle = C.green; k.rrect(lx - 15, ly - 8, 30, 24, 4); ctx.fill();
       font(500, 30); text('https://', 138, 146, { color: C.soft }); text('your-bank.example', 290, 146, { color: C.ink });
     });
+    // the news: whose keys
+    A(span(t, 0.6, 5.4, 0.5, 0.5), () => {
+      k.font(800, 72, SANS); text('eMudhra', W / 2, 300, { color: C.teal, align: 'center' });
+      k.font(500, 28, SANS); text('a certificate authority in India', W / 2, 356, { color: C.soft, align: 'center' });
+      A(seg(t, 1.6, 2.1), () => { font(700, 28); text('8 keys blocked · October 2026', W / 2, 410, { color: C.coral, align: 'center' }); });
+    });
     // the chain, built from the bottom up
     const cw = 600, cx = (W - cw) / 2;
     const rows = [
       { y: 610, title: 'your-bank.example', sub: 'website certificate', at: 1.2 },
-      { y: 430, title: 'Intermediate CA', sub: 'signs website certificates', at: 5.0 },
-      { y: 250, title: 'Root CA', sub: 'built into your browser', at: 6.2 },
+      { y: 430, title: 'Intermediate authority', sub: 'signs website certificates', at: 5.0 },
+      { y: 250, title: 'Root authority', sub: 'built into your browser', at: 6.2 },
     ];
     rows.forEach((r, i) => {
       const p = eout(seg(t, r.at, r.at + 0.6));
@@ -295,7 +301,7 @@ function sceneAfter(t) {
     const cw = 600, cx = (W - cw) / 2;
     // the chain again, now with a forged website certificate
     A(1 - seg(t, 54.9, 55.4), () => {
-      card(cx, 140, cw, 120, 'Root CA', 'built into your browser', { sealLabel: 'OK' });
+      card(cx, 140, cw, 120, 'Root authority', 'built into your browser', { sealLabel: 'OK' });
       card(cx, 320, cw, 120, 'EM DV TLS CA - G3C', 'eMudhra intermediate', { keyText: '', sealLabel: '' });
       const f = eout(seg(t, 46.6, 47.4));
       card(cx, 500 + (1 - f) * 40, cw, 120, 'any-site.example', 'signed with key 4', { a: f, sealLabel: '4' });

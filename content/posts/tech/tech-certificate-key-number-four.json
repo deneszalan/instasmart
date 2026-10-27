@@ -8,13 +8,13 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "A P-384 private key is a whole number picked at random. Up to how many digits long can it be?",
+      "question": "Keys for P-384, an elliptic curve used to sign web certificates, are random whole numbers. Up to how many digits?",
       "min": 1,
       "max": 300,
       "step": 1,
       "answer": 116,
       "unit": "digits",
-      "explanation": "116. Keys are picked from 1 up to about 3.9 × 10¹¹⁵, the number of points on the curve. Each of eMudhra’s eight weak keys had three digits at most."
+      "explanation": "116. Keys are picked from 1 up to about 3.9 × 10¹¹⁵, the number of points on the curve. Each of the eight weak keys at the Indian certificate authority eMudhra had three digits at most."
     },
     {
       "type": "video",
@@ -97,7 +97,7 @@
     {
       "type": "text",
       "heading": "Did a fake get through?",
-      "text": "Chrome rejects website certificates that aren’t listed in public Certificate Transparency logs, and it found none from the six web intermediates before it blocked them. So no fake made with these keys could have fooled Chrome by default. The worry is apps and devices that never learn a certificate was revoked."
+      "text": "Chrome rejects website certificates that aren’t listed in public Certificate Transparency logs. It found none signed by eMudhra’s six weak web intermediates before it blocked them, so no fake made with them could have fooled Chrome by default. The worry is apps and devices that never learn a certificate was revoked."
     },
     {
       "type": "timeline",
@@ -105,7 +105,7 @@
       "events": [
         {
           "when": "30 Apr 2025",
-          "text": "A batch of 24 keys is made"
+          "text": "eMudhra makes a batch of 24 keys"
         },
         {
           "when": "17 Oct 2026",
