@@ -808,6 +808,8 @@ describe('lab maths', () => {
     expect(condorcetWinner(5, 30, 10)).toBe('Bob');
     expect(condorcetCycle(20, 10, 10)).toBe(false);
     expect(condorcetWinner(20, 10, 10)).toBe(null);
+  });
+
   it('quake magnitude: the USGS moment gives 7.7; 32 times the moment adds about one step; 100 km × 20 km × 6.4 m makes a 7.7', () => {
     expect(shownMag(magnitude(PANAMA_MOMENT))).toBe(7.7);
     expect(magnitude(quakeMoment(40, 20, 4)) - magnitude(quakeMoment(10, 5, 2))).toBeCloseTo(1.0, 1);
