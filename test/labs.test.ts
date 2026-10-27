@@ -1101,6 +1101,7 @@ describe('lab maths', () => {
     expect(wfLeft(1950 - WF_ETRUSCAN)).toBeCloseTo(0.739, 3);
     expect(wfYear(0.739)).toBeCloseTo(-480, -1);
     expect(wfYear(1)).toBe(1950);
+  });
   it('sistine giornate: a patch can be numbered only after every older neighbour it laps over; the days in order always work; raking light shows the seams', () => {
     const byDay = GIORNATE_PATCHES.map((_, i) => i).sort((a, b) => GIORNATE_PATCHES[a].day - GIORNATE_PATCHES[b].day);
     const laid: number[] = [];
