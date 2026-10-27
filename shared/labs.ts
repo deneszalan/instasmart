@@ -110,6 +110,11 @@ export const LABS = {
   'onkalo-nuclear-waste-licence': 'Let a million years pass in a repository and watch four nuclides in spent fuel decay at their own half-lives, from decades to tens of thousands of years.',
   'anne-carson-sappho-brackets': 'Mark the 11 syllables of a line by Sappho long or short with simple rules, hear the rhythm, and find the Sapphic line.',
   'us-inflation-basket-weights': 'Change how much of your spending goes on energy and food, with real US price changes for the year to September 2026, and see your own inflation.',
+  'sweden-negative-parliamentarism': 'Set how each party in Sweden’s Riksdag votes on a prime minister, and see that only 175 no votes can stop one, however few vote yes.',
+  'quebec-first-past-the-post': 'Spread a party’s 13% of the votes over more or fewer of ten ridings, and see first past the post turn the same votes into no seats or several.',
+  'un-human-rights-council-election': 'Set the votes for, against and abstaining, and compare the 97 of 193 UN members needed to join the Human Rights Council with the two-thirds needed to suspend a member.',
+  'reykjavik-summit-inf-treaty': 'Pick how a missile is launched and how far it flies, and see whether the 1987 INF Treaty banned it.',
+  'nuremberg-judgment-three-votes': 'Cast the four Nuremberg judges’ votes and compare the Charter’s three-of-four rule for a conviction with a simple majority where the President breaks ties.',
 } as const;
 
 export type LabId = keyof typeof LABS;

@@ -110,4 +110,9 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'onkalo-nuclear-waste-licence': lazy(() => import('./engineering/onkalo-nuclear-waste-licence')),
   'anne-carson-sappho-brackets': lazy(() => import('./language/anne-carson-sappho-brackets')),
   'us-inflation-basket-weights': lazy(() => import('./economics/us-inflation-basket-weights')),
+  'sweden-negative-parliamentarism': lazy(() => import('./politics/sweden-negative-parliamentarism')),
+  'quebec-first-past-the-post': lazy(() => import('./politics/quebec-first-past-the-post')),
+  'un-human-rights-council-election': lazy(() => import('./politics/un-human-rights-council-election')),
+  'reykjavik-summit-inf-treaty': lazy(() => import('./history/reykjavik-summit-inf-treaty')),
+  'nuremberg-judgment-three-votes': lazy(() => import('./history/nuremberg-judgment-three-votes')),
 };

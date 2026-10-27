@@ -105,6 +105,11 @@ import { clockCount, measured as leapMeasured } from '../src/labs/tech/leap-seco
 import { NUCLIDES, remaining as nuclideLeft, yearsAt as repositoryYears, yearsUntil } from '../src/labs/engineering/onkalo-nuclear-waste-licence';
 import { agreeing as sapphicAgreeing, fits as sapphicFits, SAPPHIC, SYLLABLES as SAPPHO_SYLLABLES } from '../src/labs/language/anne-carson-sappho-brackets';
 import { AVERAGE as AVERAGE_BASKET, inflationFor } from '../src/labs/economics/us-inflation-basket-weights';
+import { MPS as SWE_MPS, OCT_15 as SWE_OCT_15, REJECT_AT as SWE_REJECT, tally as sweTally } from '../src/labs/politics/sweden-negative-parliamentarism';
+import { ridings as qcRidings, seatsWon as qcSeats } from '../src/labs/politics/quebec-first-past-the-post';
+import { canJoin, canSuspend, ELECT_AT as HRC_ELECT, UN_MEMBERS } from '../src/labs/politics/un-human-rights-council-election';
+import { banned as infBanned, kmAt, rangeClass } from '../src/labs/history/reykjavik-summit-inf-treaty';
+import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgment-three-votes';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -918,5 +923,61 @@ describe('lab maths', () => {
     expect(inflationFor(13.5, 13.5).total).toBeLessThan(5);
     expect(inflationFor(14, 13.5).total).toBeGreaterThan(5);
     expect(inflationFor(0, 13.5).total).toBeCloseTo(2.6 - 0.135 * 0.1, 6);
+  it('sweden pm vote: 349 seats and 175 no votes reject; 15 October rejected; with V, C and MP abstaining she passes on 99 yes to 173 no', () => {
+    expect(SWE_MPS).toBe(349);
+    expect(SWE_REJECT).toBe(175);
+    const oct = sweTally(SWE_OCT_15);
+    expect(oct).toEqual({ yes: 99, no: 250, abstain: 0, approved: false });
+    const abst = sweTally(['yes', 'no', 'no', 'abstain', 'abstain', 'no', 'abstain', 'no']);
+    expect(abst).toEqual({ yes: 99, no: 173, abstain: 77, approved: true });
+    expect(abst.no).toBeGreaterThan(abst.yes);
+    expect(sweTally(['yes', 'no', 'no', 'abstain', 'abstain', 'no', 'no', 'no']).approved).toBe(false);
+    expect(sweTally(['no', 'yes', 'yes', 'no', 'no', 'yes', 'no', 'yes'])).toEqual({ yes: 173, no: 176, abstain: 0, approved: false });
+  });
+
+  it('first past the post: 13% spread over all ten ridings wins nothing; packed into three it wins three; into two, two; over four, none', () => {
+    expect(qcSeats(10)).toBe(0);
+    expect(qcSeats(3)).toBe(3);
+    expect(qcSeats(2)).toBe(2);
+    expect(qcSeats(4)).toBe(0);
+    const total = qcRidings(3).reduce((n, r) => n + r.ours, 0);
+    expect(total).toBeCloseTo(130, 9);
+    for (const r of qcRidings(5)) expect(r.ours + r.a + r.b).toBeCloseTo(100, 9);
+  });
+
+  it('rights council: 97 of 193 to join; Russia 2022 suspended by 93 to 24 with 58 abstaining; Russia 2023 not elected with 83', () => {
+    expect(UN_MEMBERS).toBe(193);
+    expect(HRC_ELECT).toBe(97);
+    expect(canJoin(97)).toBe(true);
+    expect(canJoin(96)).toBe(false);
+    expect(canJoin(83)).toBe(false);
+    expect(canSuspend(93, 24)).toBe(true);
+    expect(canJoin(93)).toBe(false);
+    expect(canSuspend(120, 70)).toBe(false);
+    expect(canSuspend(2, 1)).toBe(true);
+    expect(canSuspend(0, 0)).toBe(false);
+  });
+
+  it('INF treaty: ground-launched 500 to 5,500 km banned; the same range from a ship or plane allowed; the slider spans 100 to 10,000 km', () => {
+    expect(infBanned('ground', 500)).toBe(true);
+    expect(infBanned('ground', 5500)).toBe(true);
+    expect(infBanned('ground', 450)).toBe(false);
+    expect(infBanned('ground', 6000)).toBe(false);
+    expect(infBanned('ship', 2500)).toBe(false);
+    expect(infBanned('plane', 2500)).toBe(false);
+    expect(rangeClass(800)).toBe('shorter');
+    expect(rangeClass(2500)).toBe('intermediate');
+    expect(kmAt(0)).toBe(100);
+    expect(kmAt(100)).toBe(10000);
+    expect(kmAt(50)).toBe(1000);
+  });
+
+  it('Nuremberg: three of four judges convict; a 2–2 split never does, though a tie-break by the President would', () => {
+    expect(convicts([true, true, true, false])).toBe(true);
+    expect(convicts([true, true, false, false])).toBe(false);
+    expect(convicts([true, true, true, true])).toBe(true);
+    expect(ordinaryDecision([true, true, false, false])).toBe(true);
+    expect(ordinaryDecision([true, false, true, false])).toBe(false);
+    expect(ordinaryDecision([false, false, false, true])).toBe(false);
   });
 });

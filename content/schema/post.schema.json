@@ -201,6 +201,11 @@
                   "onkalo-nuclear-waste-licence",
                   "anne-carson-sappho-brackets",
                   "us-inflation-basket-weights"
+                  "sweden-negative-parliamentarism",
+                  "quebec-first-past-the-post",
+                  "un-human-rights-council-election",
+                  "reykjavik-summit-inf-treaty",
+                  "nuremberg-judgment-three-votes"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },
