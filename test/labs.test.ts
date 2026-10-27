@@ -1158,6 +1158,7 @@ describe('lab maths', () => {
     expect(order).toEqual(['bastions', 'towers', 'door', 'chapel', 'walls']);
     expect(standing).toEqual(['tomb']);
     expect(newestLayer(['tomb', 'walls', 'chapel'])).toBe('chapel');
+  });
   it('Pantheon: the noon light is on the dome in December, at the dome’s base at the equinox, fills the doorway around 21 April and lies on the floor in June', () => {
     expect(Math.round(noonAltitude(355))).toBe(25);
     expect(Math.round(noonAltitude(172))).toBe(72);
