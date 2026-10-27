@@ -116,6 +116,11 @@ import { GATE_Y as CIRCUS_GATES, runs as circusRuns, unfairness as circusUnfairn
 import { plinysCase, verdict as curiaVerdict } from '../src/labs/politics/curia-vote-by-walking';
 import { interval as vestalInterval, stages as vestalStages } from '../src/labs/history/vestals-thirty-years';
 import { forum as forumState, FLOOR as FORUM_FLOOR, YEARLY_FLOOD } from '../src/labs/engineering/mouth-of-truth-drain';
+import { coverage as goldCoverage, flashing as goldFlashing, GOAL as GOLD_GOAL, reflectedAngle as goldReflected, tiltsFor as goldTilts } from '../src/labs/art/trastevere-gold-tesserae';
+import { buried as scBuried, site as scSite, STEPS as SC_STEPS } from '../src/labs/earth/san-clemente-three-levels';
+import { farWidth as cpFar, viewAngle as cpView, widerThanRectangle as cpWider } from '../src/labs/art/campidoglio-trapezoid';
+import { angularSize as akAngle, distanceFor as akDistance, DOME as AK_DOME, KEYHOLE_DISTANCE as AK_DIST, MOON as AK_MOON } from '../src/labs/art/aventine-keyhole-view';
+import { carbonLeft as wfLeft, ETRUSCAN_YEAR as WF_ETRUSCAN, radiocarbonAge as wfAge, roughYear as wfYear, WOLF_BP as WF_BP } from '../src/labs/history/capitoline-wolf-dating';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1046,5 +1051,49 @@ describe('lab maths', () => {
     expect(forumState(3, 9, true)).toBe('dry');
     expect(forumState(2.5, 9, true)).toBe('flooded');
     expect(forumState(0, 5, true)).toBe('dry');
+  it('Trastevere gold: a tile tipped by 1° turns its reflection by 2°; flat tiles flash only about 12 to 15 m from the wall; tilts up to 8° light up most of the nave', () => {
+    expect(goldReflected(0)).toBe(35);
+    expect(goldReflected(1)).toBe(37);
+    const flat = goldTilts(0);
+    expect(goldFlashing(flat, 13).length).toBeGreaterThan(0);
+    expect(goldFlashing(flat, 8).length).toBe(0);
+    expect(goldFlashing(flat, 20).length).toBe(0);
+    expect(goldCoverage(flat)).toBeLessThan(0.15);
+    expect(goldCoverage(goldTilts(8))).toBeGreaterThan(GOLD_GOAL);
+    expect(goldCoverage(goldTilts(2))).toBeLessThan(GOLD_GOAL);
+  });
+
+  it('San Clemente: building on the ruins leaves three levels under today’s church, the deepest the ruins of AD 64; clearing them away leaves none', () => {
+    expect(scSite(4, 'build')).toEqual(['ruins', 'roman', 'church4', 'church12']);
+    expect(scBuried(4, 'build')).toBe(3);
+    expect(scSite(4, 'clear')).toEqual(['church12']);
+    expect(scBuried(4, 'clear')).toBe(0);
+    expect(scSite(2, 'build')).toEqual(['ruins', 'roman']);
+    expect(scBuried(2, 'build')).toBe(1);
+    expect(SC_STEPS.map((s) => s.year)).toEqual([64, 90, 200, 392, 1100]);
+  });
+
+  it('Campidoglio: turning each side palace out by about 7.4° widens the square from 44 to 58 m, and from the ramp the far palace looks 1.32 times as wide as at the end of a rectangle', () => {
+    expect(cpFar(0)).toBe(44);
+    expect(cpFar(7.4)).toBeCloseTo(58, 0);
+    expect(cpWider(7.4)).toBeCloseTo(1.32, 2);
+    expect(cpView(44)).toBeCloseTo(39.1, 1);
+    expect(cpView(58)).toBeCloseTo(50.1, 1);
+    expect(cpWider(-5)).toBeLessThan(1);
+  });
+
+  it('Aventine keyhole: the 42 m dome spans 0.81° from 2,976 m, 1.55 full Moons; it would match the Moon from about 4.6 km, and twice as far it looks half as wide', () => {
+    expect(akAngle(AK_DOME, AK_DIST)).toBeCloseTo(0.81, 2);
+    expect(akAngle(AK_DOME, AK_DIST) / AK_MOON).toBeCloseTo(1.55, 2);
+    expect(akDistance(AK_DOME, AK_MOON)).toBeCloseTo(4628, -1);
+    expect(akAngle(AK_DOME, 2 * AK_DIST) / akAngle(AK_DOME, AK_DIST)).toBeCloseTo(0.5, 3);
+  });
+
+  it('Capitoline wolf: 963 radiocarbon years leave 88.7% of the carbon-14; a core from about 480 BC would hold about 74%', () => {
+    expect(wfLeft(WF_BP)).toBeCloseTo(0.887, 3);
+    expect(wfAge(wfLeft(WF_BP))).toBeCloseTo(963, 6);
+    expect(wfLeft(1950 - WF_ETRUSCAN)).toBeCloseTo(0.739, 3);
+    expect(wfYear(0.739)).toBeCloseTo(-480, -1);
+    expect(wfYear(1)).toBe(1950);
   });
 });

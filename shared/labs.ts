@@ -121,6 +121,11 @@ export const LABS = {
   'curia-vote-by-walking': 'Set how many senators back acquittal, banishment and death, and see how the verdict changes when the Senate divides into two sides, three groups, or the death party crosses over.',
   'vestals-thirty-years': 'Set how long every Vestal Virgin serves and watch six places turn over: how often a new girl is chosen, and how many are learning, serving and teaching.',
   'mouth-of-truth-drain': 'Raise the Forum valley’s floor with earth, set the Tiber’s level and add a canal, and find what keeps the valley dry in the yearly flood.',
+  'trastevere-gold-tesserae': 'Tilt the gold tiles of an apse mosaic and walk down the nave, to see from how much of it the Sun’s reflection flashes at you.',
+  'san-clemente-three-levels': 'Step through San Clemente’s history, rebuilding on the ruins or clearing them away, and see how many older levels stay buried under the floor.',
+  'campidoglio-trapezoid': 'Turn the side palaces of Rome’s Piazza del Campidoglio outwards and see, from the top of the Cordonata, how much more of your view the far palace fills.',
+  'aventine-keyhole-view': 'Move St Peter’s dome nearer or farther from the Aventine keyhole and compare how wide it looks with the full Moon.',
+  'capitoline-wolf-dating': 'Set how much carbon-14 is left in a sample and read its radiocarbon age, then find what a core cast in Etruscan times would hold, against the she-wolf’s.',
 } as const;
 
 export type LabId = keyof typeof LABS;

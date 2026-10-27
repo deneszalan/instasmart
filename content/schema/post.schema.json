@@ -212,6 +212,11 @@
                   "curia-vote-by-walking",
                   "vestals-thirty-years",
                   "mouth-of-truth-drain"
+                  "trastevere-gold-tesserae",
+                  "san-clemente-three-levels",
+                  "campidoglio-trapezoid",
+                  "aventine-keyhole-view",
+                  "capitoline-wolf-dating"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },
