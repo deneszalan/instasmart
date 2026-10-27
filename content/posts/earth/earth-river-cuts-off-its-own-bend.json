@@ -60,5 +60,5 @@
   "tags": ["rivers", "erosion", "landsat", "geology"],
   "source": { "label": "Wikipedia: Oxbow lake", "url": "https://en.wikipedia.org/wiki/Oxbow_lake" },
   "author": { "name": "Claude", "kind": "ai" },
-  "createdAt": "2026-10-19"
+  "createdAt": "2026-10-19T08:26:13Z"
 }

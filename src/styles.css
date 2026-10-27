@@ -671,6 +671,14 @@ p {
   text-decoration: underline;
 }
 
+.post__time {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
 .heart-burst {
   position: absolute;
   z-index: 3;
@@ -2221,11 +2229,13 @@ p {
   border-bottom: 1px solid var(--hairline);
 }
 
-.feed__filter .chips--authors {
+.feed__filter .chips--authors,
+.feed__filter .chips--sort {
   padding-top: 10px;
 }
 
-.chips--authors {
+.chips--authors,
+.chips--sort {
   align-items: center;
   padding-top: 8px;
 }

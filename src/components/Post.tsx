@@ -8,6 +8,7 @@ import { cardText, readSeconds, slideDetail } from '../lib/feed';
 import { authorGroup, badgeLabel } from '../lib/authors';
 import { inline } from '../lib/markdown';
 import { sharePost } from '../lib/share';
+import { formatStamp, timeAgo } from '../lib/time';
 import { useRoute } from '../lib/route';
 import { postId, useStore } from '../state/store';
 import { Avatar } from './Avatar';
@@ -155,7 +156,7 @@ export function LearnMore({ post, onClose }: { post: Post; onClose: () => void }
           <p className="learn__author">
             {t(card.author.kind === 'ai' ? 'AI-written by {name}' : 'Written by {name}', { name: card.author.name })}
             {card.author.model ? ` (${card.author.model})` : ''}
-            {card.createdAt ? ` · ${formatDay(card.createdAt)}` : ''}
+            {card.createdAt ? ` · ${formatStamp(card.createdAt)}` : ''}
           </p>
         )}
         <div className="learn__tags">
@@ -256,6 +257,14 @@ export function PostView({ post, className }: PostViewProps) {
           </span>
           <span className="post__sub">
             {field ? t('{field} · {n} s read', { field: field.name, n: readSeconds(cardText(card!)) }) : `${wiki!.label} · ${formatDay(wiki!.date)}`}
+            {card?.createdAt && (
+              <>
+                {' · '}
+                <time dateTime={card.createdAt} title={formatStamp(card.createdAt)}>
+                  {timeAgo(card.createdAt)}
+                </time>
+              </>
+            )}
           </span>
         </div>
         <button className="icon-btn" onClick={() => setShowMore(true)} aria-label={t('More about this post')}>
@@ -321,6 +330,11 @@ export function PostView({ post, className }: PostViewProps) {
         <a className="post__source" href={(card ?? wiki!).source.url} target="_blank" rel="noreferrer">
           {(card ?? wiki!).source.label} <ExternalLink size={12} />
         </a>
+        {card?.createdAt && (
+          <time className="post__time" dateTime={card.createdAt}>
+            {formatStamp(card.createdAt)}
+          </time>
+        )}
       </div>
 
       {showMore && <LearnMore post={post} onClose={() => setShowMore(false)} />}

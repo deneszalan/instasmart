@@ -55,7 +55,7 @@ export function preparePost(input: unknown, media: MediaInput[] = [], author?: s
   const isObject = (v: unknown): v is Record<string, unknown> => !!v && typeof v === 'object' && !Array.isArray(v);
   const withDefaults = isObject(input)
     ? {
-        createdAt: new Date().toISOString().slice(0, 10),
+        createdAt: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'),
         ...input,
         // Uploads through this server are always labelled as AI-written.
         author: { name: author ?? 'AI contributor', ...(isObject(input.author) ? input.author : {}), kind: 'ai' },

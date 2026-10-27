@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useReducer, type ReactNode } from 'react';
 import type { Post } from '../types';
 import type { WikiPost } from '../lib/wiki';
+import type { SortOrder } from '../lib/feed';
 import { EDITION } from '../edition';
 
 export type Theme = 'system' | 'light' | 'dark';
@@ -20,9 +21,10 @@ export interface LearnState {
   challenges: Record<string, { correct: boolean | null; at: number }>;
   /**
    * speed: the playback speed the reader picked for clips, or null to play each at its own default
-   * (animations a little slower); stepMode: pause explainers at the end of each step.
+   * (animations a little slower); stepMode: pause explainers at the end of each step; sort: how the feed and Explore
+   * order posts.
    */
-  settings: { wiki: boolean; theme: Theme; speed: number | null; stepMode: boolean };
+  settings: { wiki: boolean; theme: Theme; speed: number | null; stepMode: boolean; sort: SortOrder };
 }
 
 type Action =
@@ -46,7 +48,7 @@ export const initialState: LearnState = {
   activeDays: [],
   storiesViewed: {},
   challenges: {},
-  settings: { wiki: true, theme: 'system', speed: null, stepMode: false },
+  settings: { wiki: true, theme: 'system', speed: null, stepMode: false, sort: 'mix' },
 };
 
 export function localDay(date = new Date()): string {
