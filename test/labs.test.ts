@@ -115,6 +115,7 @@ import { busiestQueue, minutesToEmpty, openArches, PUBLIC_ARCHES } from '../src/
 import { GATE_Y as CIRCUS_GATES, runs as circusRuns, unfairness as circusUnfairness } from '../src/labs/math/circus-maximus-staggered-gates';
 import { plinysCase, verdict as curiaVerdict } from '../src/labs/politics/curia-vote-by-walking';
 import { interval as vestalInterval, stages as vestalStages } from '../src/labs/history/vestals-thirty-years';
+import { forum as forumState, FLOOR as FORUM_FLOOR, YEARLY_FLOOD } from '../src/labs/engineering/mouth-of-truth-drain';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1035,5 +1036,15 @@ describe('lab maths', () => {
     const s = vestalStages(60, 12);
     expect(s.learning + s.performing + s.teaching + s.staying).toBe(6);
     expect(s.staying).toBe(3);
+  });
+
+  it('mouth of truth drain: the yearly flood swamps the old 6 m floor; raised to 9 m and given a canal, it stays dry', () => {
+    expect(FORUM_FLOOR).toBe(6);
+    expect(YEARLY_FLOOD).toBe(9);
+    expect(forumState(0, 9, true)).toBe('flooded');
+    expect(forumState(3, 9, false)).toBe('marsh');
+    expect(forumState(3, 9, true)).toBe('dry');
+    expect(forumState(2.5, 9, true)).toBe('flooded');
+    expect(forumState(0, 5, true)).toBe('dry');
   });
 });

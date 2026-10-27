@@ -120,6 +120,7 @@ export const LABS = {
   'circus-maximus-staggered-gates': 'Bend the Circus Maximus’s row of 12 starting gates into a curve and choose its centre, until every chariot has the same run to the break line.',
   'curia-vote-by-walking': 'Set how many senators back acquittal, banishment and death, and see how the verdict changes when the Senate divides into two sides, three groups, or the death party crosses over.',
   'vestals-thirty-years': 'Set how long every Vestal Virgin serves and watch six places turn over: how often a new girl is chosen, and how many are learning, serving and teaching.',
+  'mouth-of-truth-drain': 'Raise the Forum valley’s floor with earth, set the Tiber’s level and add a canal, and find what keeps the valley dry in the yearly flood.',
 } as const;
 
 export type LabId = keyof typeof LABS;
