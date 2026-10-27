@@ -1,0 +1,51 @@
+{
+  "id": "politics-curia-vote-by-walking",
+  "title": "In der Kurie, Roms Senatshaus, stimmten Senatoren ab, indem sie auf eine Seite gingen",
+  "body": "Die Curia Julia auf dem Forum Romanum wurde von Julius Caesar begonnen und 29 v. Chr. von Augustus vollendet; der heutige Ziegelbau ist Kaiser Diokletians Neubau nach einem Brand 283 n. Chr. und blieb erhalten, weil er 630 n. Chr. zur Kirche wurde. Innen boten an jeder Längsseite drei breite Stufen Platz für etwa 300 Senatoren, am Ende ein Podium für den vorsitzenden Magistrat. Kleines entschied man per Zuruf oder Handzeichen. Bei Wichtigem hielt der Senat eine *discessio* ab, ein Auseinandertreten: Die Regel, die der Senator [Plinius der Jüngere](https://www.thelatinlibrary.com/pliny.ep8.html) zitiert, schickte die Befürworter eines Antrags auf die Seite seines Antragstellers und alle, die etwas anderes meinten, auf die andere. So war jede Abstimmung **eine Wahl zwischen zwei Seiten**. Um 105 n. Chr. lagen Plinius drei Anträge zu den Freigelassenen des toten Konsuls Afranius Dexter vor: Freispruch (sein eigener), Verbannung und Tod. Die Lager für Tod und Verbannung saßen vereint gegen den Freispruch. Plinius verlangte drei Gruppen, da der Freispruch mehr Anhänger hatte als jeder Gegenantrag allein; darauf wechselte der Antragsteller der Todesstrafe samt Anhängern zur Verbannung.",
+  "slides": [
+    {
+      "question": "Julius Caesar vergrößerte den römischen Senat. Wie viele Mitglieder hatte der Senat unter ihm?",
+      "unit": "Senatoren",
+      "explanation": "900. Der Senat der Republik hatte lange 300; nach dem Diktator Sulla etwa 500 bis 600, und Kaiser Augustus verkleinerte ihn später wieder auf 600."
+    },
+    {
+      "alt": "Animation in Porphyrrot und Marmor: die Curia Julia aus Ziegeln auf dem Forum, ihr Saal von oben mit Stufen für etwa 300 Senatoren, Balken für die Größe des Senats, Senatoren gehen zur Abstimmung auf eine Seite, und der Fall des Plinius mit drei farbigen Gruppen, die zu zweien werden.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Stell ein, wie viele Senatoren jeden Antrag stützen. Finde Zahlen, bei denen der Freispruch in drei Gruppen siegt, aber verliert, wenn die Todespartei wechselt.",
+      "takeaway": "Führt der Freispruch vor jedem Gegenantrag allein, aber nicht vor beiden zusammen, schlägt ihn der Bund der zwei härteren Gruppen. Genau diese Furcht trieb laut Plinius den Antragsteller der Todesstrafe hinüber."
+    },
+    {
+      "alt": "Foto der Curia Julia auf dem Forum Romanum: ein hoher, schlichter Ziegelbau mit Dreiecksgiebel, drei Bogenfenstern und einer grünen Bronzetür oben an einer kurzen Treppe.",
+      "caption": "Die Curia Julia heute: Kaiser Diokletians Senatshaus aus Ziegeln auf dem Forum Romanum."
+    },
+    {
+      "heading": "Senatoren im Vergleich zu den Plätzen der Kurie",
+      "items": [
+        { "label": "Republik" },
+        { "label": "Nach Sulla" },
+        { "label": "Julius Caesar" },
+        { "label": "Augustus" },
+        { "label": "Plätze in der Kurie" }
+      ],
+      "unit": "Senatoren",
+      "note": "Nach Sulla zwischen 500 und 600. Die Plätze der Kurie sind eine moderne Schätzung."
+    },
+    {
+      "text": "Ihr, die ihr dies meint, auf diese Seite; ihr, die ihr irgendetwas anderes meint, geht auf die Seite, der ihr zustimmt.",
+      "attribution": "Senatsregel, zitiert von Plinius dem Jüngeren, Briefe 8,14 (übersetzt)"
+    },
+    {
+      "question": "Warum wechselte in der von Plinius dem Jüngeren beschriebenen Abstimmung der Senator, der den Tod beantragt hatte, zur Verbannung?",
+      "options": [
+        "Er fürchtete, der Freispruch siege",
+        "Der Kaiser befahl es ihm",
+        "Verbannung war härter",
+        "Er hielt sie für unschuldig"
+      ],
+      "explanation": "Einzeln gezählt hatte der Freispruch mehr Anhänger als jeder Gegenantrag. Also schloss sich die Todespartei der Verbannung an: Sie wählte, wie Plinius schreibt, von welcher Seite sie besiegt würde."
+    }
+  ],
+  "source": { "label": "Plinius der Jüngere, Briefe 8,14 (Latein)" }
+}

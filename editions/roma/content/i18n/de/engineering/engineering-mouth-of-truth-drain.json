@@ -1,0 +1,43 @@
+{
+  "id": "engineering-mouth-of-truth-drain",
+  "title": "Der Mund der Wahrheit war wahrscheinlich ein römischer Kanaldeckel, kein Lügendetektor",
+  "body": "In der Vorhalle der Kirche Santa Maria in Cosmedin hängt der Mund der Wahrheit, die Bocca della Verità: eine Marmorscheibe von etwa 1,8 m Durchmesser und rund 1.300 kg, mit bärtigem Gesicht, wohl einem Meeres- oder Flussgott. Eine mittelalterliche Legende sagt, er beiße jedem die Hand ab, der mit der Hand in seinem Mund lügt; der Name stammt von 1485, und seit 1632 steht die Scheibe in der Vorhalle, schreibt [Roms Tourismusamt](https://www.turismoroma.it/en/places/mouth-truth). Augen, Nase und Mund sind Löcher, also war sie wahrscheinlich ein Kanaldeckel; wo sie zuerst lag, ist unbekannt. Nebenan mündet Roms großer Abwasserkanal, die Cloaca Maxima, bis heute in den Tiber. Rom brauchte sie, weil das Tal des Forums tief und sumpfig war: Sein Boden lag keine 6 m über dem Meer, und der Tiber flutete es in den meisten Jahren bis fast 9 m, schreibt der Historiker [John N. N. Hopkins](https://waters.iath.virginia.edu/Journal4Hopkins.pdf). In der Königszeit hoben bis zu 20.000 m³ Erde den Boden auf etwa 9 m; erst dann konnte ein Kanal die Bäche der Hügel **bergab zum Fluss** leiten. Später überwölbt, wurde er zur Kloake, und 33 v. Chr. fuhr der Feldherr Marcus Agrippa im Boot hindurch.",
+  "slides": [
+    {
+      "question": "Der Mund der Wahrheit in Rom ist eine gemeißelte Marmorscheibe von etwa 1,8 m Durchmesser. Wie schwer ist sie ungefähr?",
+      "explanation": "Etwa 1.300 kg, mehr als ein Kleinwagen. Augen, Nase und Mund sind Löcher: Sie war wohl ein römischer Kanaldeckel."
+    },
+    {
+      "alt": "Animation in Steingrau, Terrakotta und Wasserblau: der bärtige Mund der Wahrheit in der Kirchenvorhalle, eine Hand im Mund, Wasser rinnt durch die Löcher in einen Kanal; dann ein Schnitt durch das überflutete Forumstal, in fünf Schichten auf 9 m aufgefüllt, per Kanal entwässert, später überwölbt.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Heb den Boden des Forumstals an, stell den Tiber auf sein jährliches Hochwasser und wähle einen Abfluss. Halte das Forum trocken.",
+      "takeaway": "Trocken bleibt nur ein Boden auf Höhe der Hochwasserlinie, etwa 9 m, mit einem Kanal zum Fluss: Liegt er tiefer, strömt der Tiber herein; ohne Kanal machen die Bäche der Hügel einen Sumpf daraus."
+    },
+    {
+      "alt": "Foto des Munds der Wahrheit: eine große runde Marmorscheibe mit einem bärtigen Gesicht mit hohlen Augen, breiter Nase und offenem Mund, auf einem Steinsockel vor einer roten Wand, hinter einer Absperrkordel.",
+      "caption": "Der Mund der Wahrheit in der Vorhalle von Santa Maria in Cosmedin."
+    },
+    {
+      "heading": "Der Mund der Wahrheit",
+      "left": { "label": "Legende", "text": "Er beißt jedem die Hand ab, der mit der Hand in seinem Mund eine Lüge erzählt." },
+      "right": { "label": "Am wahrscheinlichsten", "text": "Ein römischer Kanaldeckel: Augen, Nase und Mund sind Löcher für das Wasser." }
+    },
+    {
+      "heading": "Höhen im Forumstal, über dem Meeresspiegel",
+      "items": [
+        { "label": "Alter Talboden" },
+        { "label": "Jährliches Tiberhochwasser" },
+        { "label": "Boden nach der Aufschüttung" }
+      ],
+      "note": "Nach Hopkins (2007): Der alte Boden lag knapp unter 6 m, das Hochwasser bei fast 9 m."
+    },
+    {
+      "question": "Warum wurde das Forumstal aufgeschüttet, bevor ein Kanal, der Anfang der Cloaca Maxima, es entwässern konnte?",
+      "options": ["Um es über das Tiberhochwasser zu heben", "Um den Kanal vor Feinden zu verbergen", "Um Platz für das Kolosseum zu schaffen", "Um es für Wagenrennen zu ebnen"],
+      "explanation": "Der Tiber überflutete das Tal in den meisten Jahren bis auf fast 9 m. Ein Kanal darunter liefe voll Flusswasser; mit dem Boden auf etwa 9 m konnte er bergab entwässern."
+    }
+  ],
+  "source": { "label": "Turismo Roma: Der Mund der Wahrheit" }
+}

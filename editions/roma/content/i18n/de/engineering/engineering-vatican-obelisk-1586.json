@@ -1,0 +1,78 @@
+{
+  "id": "engineering-vatican-obelisk-1586",
+  "title": "1586 versetzten 40 Winden den 327-t-Obelisken des Vatikans und teilten die Last von selbst",
+  "body": "1586 ließ Papst Sixtus V. den Vatikanischen Obelisken, eine 25,3 m hohe Nadel aus rotem Granit, unter Kaiser Caligula aus Ägypten gebracht, von der Seite des Petersdoms in die Mitte des Platzes davor versetzen. Als einziger Obelisk Roms steht er seit der Römerzeit, ohne je gestürzt zu sein. Der Architekt Domenico Fontana bestimmte zuerst sein Gewicht: Ein Kubikpalmo desselben Steins (ein römischer Palmo misst etwa 22 cm) wog 86 Pfund, der Schaft maß etwa 11.204 davon, also **963.537 Pfund**, rund 327 Tonnen. Eine Göpelwinde, eine stehende Trommel, von Männern und Pferden gedreht, hob etwa 20.000 Pfund; er nahm 40 und fünf riesige Hebel. Kritiker meinten, die Winden zögen nie gleichmäßig. Doch vier Pferde konnten keines seiner Seile zerreißen, wusste Fontana: Eine überlastete Winde bliebe stehen, bis die anderen aufholten. **Sie teilten sich die Last von selbst.** Eine Trompete hieß drehen, eine Glocke halt. Am 30. April hoben ihn 907 Männer und 75 Pferde an, am 10. September richteten ihn 800 Männer und 140 Pferde am neuen Platz auf, so [Fontanas Buch von 1590](https://archive.org/details/gri_33125008662708). Der Seemann, der „Wasser auf die Seile!“ rief, ist eine spätere Legende.",
+  "slides": [
+    {
+      "question": "Wie viele Männer bedienten am 30. April 1586 Domenico Fontanas 40 Winden und fünf Hebel, um den Obelisken zu heben?",
+      "unit": "Männer",
+      "explanation": "907 Männer und 75 Pferde, schrieb Fontana 1590. In 12 Zügen hoben sie den Obelisken 2¾ Palmi an, etwa 61 cm, damit man einen Schlitten darunterschieben konnte."
+    },
+    {
+      "alt": "Animation wie ein alter Kupferstich: der Vatikanische Obelisk am Petersdom 1586; ein Kubikpalmo Granit an einer Schnellwaage; ein Pferd dreht eine Winde; ein Holzturm um den Obelisken; 40 Seile reißen nacheinander, dann teilen sie die Last; der Obelisk wird gehoben, gerollt und aufgerichtet.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Stell die Seile mindestens 50 % ungleich ein, wähle, was ein überlastetes Seil tut, und blas die Trompete: Heb den Obelisken 2¾ Palmi, ohne dass ein Seil reißt.",
+      "takeaway": "Reißt ein überlastetes Seil, springt seine Last auf die anderen, und sie reißen nacheinander. Bleibt nur seine Winde stehen, drehen die anderen weiter, bis sie ihren Teil tragen, wie Fontana sagte: Kein Seil reißt."
+    },
+    {
+      "alt": "Foto des Vatikanischen Obelisken mitten auf dem Petersplatz: ein hoher, schlichter Schaft aus rosa Granit mit einem Kreuz an der Spitze, auf bronzenen Löwen und einem Steinsockel, zwischen geschwungenen Kolonnaden, dahinter die lange Straße zum Tiber unter bewölktem blauem Himmel."
+    },
+    {
+      "heading": "Domenico Fontanas Rechnung",
+      "steps": [
+        {
+          "label": "Ein Kubikpalmo des Granits: 86 Pfund"
+        },
+        {
+          "label": "Der Obelisk: etwa 11.204 Kubikpalmi"
+        },
+        {
+          "label": "Also 963.537 Pfund, etwa 327 Tonnen"
+        },
+        {
+          "label": "Eine Winde hebt etwa 20.000 Pfund"
+        },
+        {
+          "label": "40 Winden und fünf Hebel heben alles"
+        }
+      ]
+    },
+    {
+      "heading": "Der Vatikanische Obelisk",
+      "events": [
+        {
+          "when": "37–41 n. Chr.",
+          "text": "Kaiser Caligula lässt ihn aus Ägypten holen."
+        },
+        {
+          "when": "30. Apr. 1586",
+          "text": "Vom alten Sockel gehoben."
+        },
+        {
+          "when": "7. Mai 1586",
+          "text": "Auf einen Schlitten gesenkt."
+        },
+        {
+          "when": "10. Sep. 1586",
+          "text": "Auf dem Petersplatz aufgerichtet."
+        },
+        {
+          "when": "1590",
+          "text": "Fontana veröffentlicht, wie er es machte."
+        }
+      ]
+    },
+    {
+      "question": "Domenico Fontanas Kritiker fürchteten, eine seiner 40 Winden würde das ganze Gewicht nehmen und brechen. Warum geschah das nicht?",
+      "options": [
+        "Eine überlastete Winde blieb stehen",
+        "Eisenketten ersetzten die Seile",
+        "Ein Getriebe hielt alle 40 im Takt",
+        "Die Hebel trugen das Mehrgewicht"
+      ],
+      "explanation": "Vier Pferde konnten keines seiner Seile zerreißen; eine überlastete Winde ließ sich also nicht drehen, während die schwächer belasteten weiterliefen, bis sie ihren Teil trugen."
+    }
+  ]
+}

@@ -41,7 +41,7 @@ function facts(id: SourceId) {
     case 'nicolaus':
       return { who: t('Nicolaus of Damascus, Life of Augustus'), when: t('before AD 14'), wounds: '35', words: t('none reported') };
     case 'plutarch':
-      return { who: t('Plutarch, Life of Caesar'), when: t('early 2nd century AD'), wounds: '23', words: t('none: he covered his head with his toga') };
+      return { who: t('Plutarch, Life of Caesar'), when: t('early 2nd century AD'), wounds: '23', words: t('to Casca, in Latin: “Accursed Casca, what are you doing?” Then he covered his head') };
     case 'suetonius':
       return { who: t('Suetonius, Life of Julius Caesar'), when: t('AD 121'), wounds: '23', words: t('none, though some wrote of Greek words: “You too, child?”') };
     case 'dio':

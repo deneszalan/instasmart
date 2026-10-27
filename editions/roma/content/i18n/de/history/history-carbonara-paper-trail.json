@@ -1,0 +1,69 @@
+{
+  "id": "history-carbonara-paper-trail",
+  "title": "Carbonara ist nicht uralt: Ihr Name taucht erst 1939 auf, ihr erstes bekanntes Rezept 1952",
+  "body": "Carbonara, Pasta mit Ei, Pecorino, Speck und Pfeffer, ist ein Paradegericht Roms, doch ihre Papierspur ist kurz. Der Name erscheint zuerst am 23. August 1939 in *De Koerier*, einer niederländischen Zeitung in Niederländisch-Indien, die Spaghetti alla carbonara in einer Trattoria in Trastevere erwähnt; der Artikel, [2026 bekannt gemacht](https://www.ilpost.it/2026/02/16/carbonara-attestazione-americani/), nennt kein Rezept. Damit wackelt die beliebte Geschichte, amerikanische Soldaten hätten das Gericht nach Roms Befreiung 1944 aus ihren Speck- und Eirationen erfunden, auch wenn der Food-Historiker Alberto Grandi ihnen dennoch eine zentrale Rolle gibt. Das erste bekannte Rezept, vom Schauspieler Aldo Fabrizi, erschien im April 1952 in einer französischen Zeitung: Schmalz, Eier, Pecorino und Parmesan; Italiens erstes, 1954 in La Cucina Italiana, nahm Pancetta, Knoblauch und Gruyère. Wie der Food-Historiker [Luca Cesari](https://www.ricettestoriche.it/2018/03/04/storia-della-carbonara-capitolo-4-gli-ultimi-esiti-il-purismo-e-la-scienza/) zeigte, kam und ging die Sahne, und die strenge Fassung aus Guanciale, Pecorino und Ei setzte sich erst in den 2000er- und 2010er-Jahren durch.",
+  "slides": [
+    {
+      "question": "In welchem Jahr taucht der Name Carbonara nach heutigem Wissen der Food-Historiker zum ersten Mal gedruckt auf?",
+      "explanation": "1939: Eine niederländischsprachige Zeitung in Niederländisch-Indien erwähnt Spaghetti alla carbonara in einer Trattoria in Roms Viertel Trastevere. Der Artikel wurde erst 2026 gefunden."
+    },
+    {
+      "alt": "Animation auf einem dunklen Holztisch: ein Teller Carbonara, Karten für Zeitung, Speisekarte und Rezept, ein Zeitstreifen unter der Lupe, De Koerier von 1939, eine Rationsbox von 1944, Rezeptkarten von 1952 bis 1957 mit Zutaten, Zutatenbahnen über die Zeit und eine Pasta mit Ei und Käse von 1839.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Geh durch die Jahre und halte im ersten Jahr an, in dem eine gedruckte Carbonara Guanciale verwendet, gepökelte Schweinebacke.",
+      "takeaway": "1957, in einem englischsprachigen Reiseführer. Die ersten Rezepte von 1952 nahmen Schmalz oder Pancetta, Italiens erstes von 1954 Gruyère; Guanciale mit Pecorino wurde erst in den 2000ern und 2010ern zur festen Regel."
+    },
+    {
+      "alt": "Foto der Piazza di Santa Maria in Trastevere an einem bedeckten Tag: ein Steinbrunnen auf breiten Stufen mitten auf einem gepflasterten Platz, links der Glockenturm der Basilika mit Uhr, rechts blassgelbe Häuser mit Restaurantmarkisen und Topfpflanzen.",
+      "caption": "Die Piazza di Santa Maria in Trastevere, wo der Artikel von 1939 zwei rivalisierende Trattorien verortet, eine davon mit Spaghetti alla carbonara."
+    },
+    {
+      "heading": "Die Papierspur der Carbonara",
+      "events": [
+        {
+          "when": "1939",
+          "text": "Der Name gedruckt: De Koerier"
+        },
+        {
+          "when": "1944",
+          "text": "Alliierte Truppen erreichen Rom"
+        },
+        {
+          "when": "1952",
+          "text": "Erstes bekanntes Rezept, vom Schauspieler Aldo Fabrizi"
+        },
+        {
+          "when": "1954",
+          "text": "Italiens erstes gedrucktes Rezept"
+        },
+        {
+          "when": "2000er–2010er",
+          "text": "Nur noch Guanciale, Pecorino, Ei"
+        }
+      ]
+    },
+    {
+      "heading": "Geschichte und Beleg",
+      "left": {
+        "label": "Die Geschichte",
+        "text": "Amerikanische Soldaten erfanden die Carbonara nach 1944 in Rom, aus ihren Speck- und Eirationen."
+      },
+      "right": {
+        "label": "Der Beleg",
+        "text": "Der Name stand schon 1939 gedruckt, fünf Jahre früher. Wie das Rezept entstand, ist weiter umstritten."
+      }
+    },
+    {
+      "question": "Welchen Käse nahm Italiens erstes gedrucktes Carbonara-Rezept, 1954 in der Zeitschrift La Cucina Italiana?",
+      "options": [
+        "Gruyère",
+        "Pecorino romano",
+        "Mozzarella",
+        "Gorgonzola"
+      ],
+      "explanation": "Gruyère, mit Pancetta und Knoblauch. Pecorino und Guanciale wurden erst Jahrzehnte später zur strengen Regel."
+    }
+  ]
+}

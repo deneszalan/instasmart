@@ -1,0 +1,63 @@
+{
+  "id": "history-augustus-offices-counted",
+  "title": "Augustus regierte Rom mit den alten Ämtern der Republik, und seine Monumente zählen sie",
+  "body": "27 v. Chr. erklärte Octavian, Julius Caesars Erbe und Sieger der Bürgerkriege, er gebe den Staat Senat und Volk zurück; der Senat nannte ihn Augustus. Er behielt die Ämter der Republik, bekleidete sie aber selbst: Konsul jedes Jahr von 31 bis 23 v. Chr., dann lebenslang die Gewalt eines Volkstribuns, jährlich erneuert, Oberpriester ab 12 v. Chr. und „Vater des Vaterlandes“ ab 2 v. Chr. In seinem Tatenbericht ([Res Gestae](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/6%2A.html)) sagt er, er habe in keinem Amt mehr Macht gehabt als seine Kollegen. Da die Zählungen jährlich wuchsen, datieren sich seine Inschriften selbst: Der Obelisk, den er aus Ägypten holte, heute auf der Piazza del Popolo, nennt ihn zum 11. Mal Konsul im 14. Jahr seiner Tribunengewalt, also 10 oder 9 v. Chr. Auch die Stadt baute er um: allein 28 v. Chr. 82 Tempel, sagt er, und sein Forum mit dem Tempel des Mars Ultor, eröffnet 2 v. Chr. Laut Sueton rühmte er sich, Rom aus Ziegeln vorgefunden und aus Marmor hinterlassen zu haben, viel davon aus Lunas neuen Brüchen; [Cassius Dio](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/56%2A.html) bezog es auf die Stärke des Reiches.",
+  "slides": [
+    {
+      "question": "Wie viele Tempel hat Augustus laut seinem eigenen Tatenbericht in einem einzigen Jahr, 28 v. Chr., in Rom erneuert?",
+      "unit": "Tempel",
+      "explanation": "82, sagt er, „ohne einen auszulassen, der damals der Ausbesserung bedurfte“. Es war das Jahr, bevor der Senat ihn Augustus nannte."
+    },
+    {
+      "alt": "Animation in Verde-antico-Grün und weißem Marmor: Eine Inschrift erhält 27 v. Chr. den Namen AVGVSTVS; seine Ämter als Balken auf einer Zeitleiste, die Tribunengewalt gezählt bis XXXVII; die Obeliskinschrift mit COS XI und TRIB POT XIV; 82 Tempel; Ziegel wird Marmor; Luna-Marmor per Schiff nach Rom.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Geh durch Augustus’ Leben und lies seine Titel, wie eine Inschrift sie nennt. Finde ein Datum, das zum Obelisken passt: Konsul XI, Tribunengewalt Jahr XIV.",
+      "takeaway": "Nur von Mitte 10 bis Mitte 9 v. Chr.: Seine Tribunengewalt wurde ab 23 v. Chr. jährlich erneuert, sein 12. Konsulat kam erst 5 v. Chr. Die Titel trugen die Namen der Republik und datierten doch seine Herrschaft."
+    },
+    {
+      "alt": "Nachtfoto der angestrahlten Ruinen des Augustusforums in Rom: drei hohe kannelierte Säulen eines Tempels vor einer hohen grauen Steinmauer, mit Stufen, verstreuten Marmorblöcken und Häusern der Stadt ringsum.",
+      "caption": "Das Augustusforum heute: drei Säulen des Tempels des Mars Ultor vor der hohen Steinmauer des Forums."
+    },
+    {
+      "text": "Seit dieser Zeit überragte ich alle an Rang, an Amtsgewalt aber besaß ich nicht mehr als die, die in jedem Amt meine Kollegen waren.",
+      "attribution": "Augustus, Res Gestae 34 (übersetzt)"
+    },
+    {
+      "heading": "Augustus’ Titel, einer nach dem anderen",
+      "events": [
+        {
+          "when": "27 v. Chr.",
+          "text": "Vom Senat Augustus genannt"
+        },
+        {
+          "when": "23 v. Chr.",
+          "text": "Tribunengewalt auf Lebenszeit, jährlich gezählt"
+        },
+        {
+          "when": "12 v. Chr.",
+          "text": "Wird Oberpriester, pontifex maximus"
+        },
+        {
+          "when": "2 v. Chr.",
+          "text": "Zum Vater des Vaterlandes ernannt"
+        },
+        {
+          "when": "14 n. Chr.",
+          "text": "Stirbt mit 75, nach 13 Konsulaten"
+        }
+      ]
+    },
+    {
+      "question": "Was verrät die Angabe „TRIB POT XIV“ auf dem Obelisken, den Augustus in Rom aufstellen ließ?",
+      "options": [
+        "Sein 14. Jahr der Tribunengewalt",
+        "Er hat 14 Tempel erneuert",
+        "Sein 14. Sieg im Krieg",
+        "Der 14. Tag des Monats"
+      ],
+      "explanation": "Seine Tribunengewalt wurde ab 23 v. Chr. jedes Jahr erneuert, also datiert die Zählung den Stein: Jahr 14 lief von Mitte 10 bis Mitte 9 v. Chr."
+    }
+  ]
+}

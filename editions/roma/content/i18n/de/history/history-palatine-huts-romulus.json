@@ -1,0 +1,54 @@
+{
+  "id": "history-palatine-huts-romulus",
+  "title": "Roms Gründung 753 v. Chr. ist aus Königsjahren errechnet; Hütten am Palatin sind älter",
+  "body": "Der Legende nach gründete Romulus Rom am 21. April auf dem Palatin, am Hirtenfest Parilia. Das Jahr 753 v. Chr. legte der Gelehrte Varro im 1. Jh. v. Chr. fest, rund 700 Jahre später, und es ist errechnet: [Livius](https://www.thelatinlibrary.com/livy/liv.1.shtml) gibt Roms sieben Königen **244 Jahre**, und 244 Jahre vor den ersten Konsuln von 509 v. Chr. liegt 753 v. Chr. Das sind fast 35 Jahre pro König, was Historiker seit dem 19. Jahrhundert bezweifeln; andere antike Autoren nannten 814, 751, 748 oder 728 v. Chr. Die Archäologie datiert den Hügel anders. 1948 fand Salvatore Puglisi die Böden dreier Hütten im weichen Tuff des Cermalus, der Westkuppe des Palatins, mit Pfostenlöchern für Wände aus Flechtwerk und Lehm und einer Feuerstelle in der Mitte; [der archäologische Park](https://colosseo.it/en/itineraries/palatium-living-on-the-palatine-from-the-foundation-of-rome-to-the-modern-age/) datiert das Dorf nach seiner Keramik mindestens vom 9. bis ins 7. Jh. v. Chr. Die Römer pflegten dort eine „Hütte des Romulus“, nach Bränden und Stürmen ausgebessert. Die meisten Historiker meinen, Rom sei aus solchen Hügeldörfern gewachsen, die um 600 v. Chr. zu einer Stadt verschmolzen.",
+  "slides": [
+    {
+      "question": "Der Historiker Livius gibt Roms sieben legendären Königen zusammen 244 Jahre. Wie lange regierte jeder im Schnitt?",
+      "unit": "Jahre",
+      "explanation": "Etwa 35: 244 ÷ 7 = 34,9 Jahre pro König. Seit dem 19. Jahrhundert bezweifeln Historiker so lange Regierungszeiten und das darauf gebaute Gründungsdatum."
+    },
+    {
+      "alt": "Animation in der Dämmerung über dem Palatin: der 21. April 753 v. Chr., fünf antike Gründungsdaten auf einer Zeitleiste, sieben Regierungszeiten ab 509 v. Chr. zurückgestapelt, eine Grabung zu Hüttenböden und Pfostenlöchern im Fels, eine Strohhütte entsteht, ihr Grundriss, verschmelzende Dörfer.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Stell ein, wie lange Roms sieben legendäre Könige im Schnitt regierten, und finde das Gründungsjahr, das der Gelehrte Varro nannte: 753 v. Chr.",
+      "takeaway": "753 v. Chr. braucht sieben Regierungen von fast 35 Jahren, zusammen 244, wie Livius sie angibt; 814 v. Chr., das Jahr des Historikers Timaios, bräuchte fast 44. Die Hütten auf dem Palatin datiert man durch Graben."
+    },
+    {
+      "alt": "Foto eines flachen ovalen Bodens, in hellgrauen Fels gehauen, mit mehreren runden dunklen Löchern am Rand, unter einem modernen Schutzdach, das in der Mitte eine Metallstange stützt; ringsum liegen alte Steinblöcke.",
+      "caption": "Ein Hüttenboden im Tuff des Palatins: Die dunklen Löcher hielten die Pfosten seiner Wände."
+    },
+    {
+      "heading": "Zwei Wege, Roms Anfang zu datieren",
+      "left": {
+        "label": "Gezählt",
+        "text": "21. April 753 v. Chr.: rund 700 Jahre später vom Gelehrten Varro festgelegt, durch Rückrechnen von 244 Königsjahren ab 509 v. Chr."
+      },
+      "right": {
+        "label": "Gegraben",
+        "text": "Hüttenböden und Pfostenlöcher im Fels des Palatins, von einem Dorf mindestens des 9. bis 7. Jahrhunderts v. Chr., datiert nach seiner Keramik."
+      }
+    },
+    {
+      "heading": "Roms Anfänge",
+      "events": [
+        { "when": "9.–7. Jh. v. Chr.", "text": "Hütten auf dem Cermalus, einer Kuppe des Palatins" },
+        { "when": "um 600 v. Chr.", "text": "Die Hügeldörfer sind zu einer Stadt verschmolzen" },
+        { "when": "1. Jh. v. Chr.", "text": "Varro legt die Gründung auf 753 v. Chr. fest" },
+        { "when": "1948", "text": "Der Archäologe Salvatore Puglisi gräbt drei Hütten aus" }
+      ]
+    },
+    {
+      "question": "Woher wissen Archäologen, wo die Wände der Hütten auf dem Palatin standen?",
+      "options": [
+        "In den Fels gehauene Pfostenlöcher",
+        "Fundamente aus Stein",
+        "Ziegel mit eingestempelten Daten",
+        "Auf den Boden gemalte Umrisse"
+      ],
+      "explanation": "Die Wände waren Flechtwerk und Lehm an Holzpfosten. Sie sind verrottet, doch die Löcher, in denen die Pfosten im weichen Tuff standen, sind erhalten."
+    }
+  ]
+}

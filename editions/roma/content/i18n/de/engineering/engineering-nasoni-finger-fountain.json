@@ -1,0 +1,45 @@
+{
+  "id": "engineering-nasoni-finger-fountain",
+  "title": "Drück einen Finger auf den Auslauf eines Nasone, und oben schießt Wasser aus einem Loch",
+  "body": "Roms *Nasoni*, gusseiserne Straßenbrunnen, benannt nach ihrem gebogenen Auslauf, einer Art großer Nase, wurden ab 1874 unter Bürgermeister Luigi Pianciani aufgestellt (manche Quellen sagen 1872); die ersten hatten drei Ausläufe in Drachenform. [Roms Tourismusamt](https://turismoroma.it/it/node/57844) zählt heute etwa 2.800. Sie haben keinen Hahn: Das Wasser läuft Tag und Nacht in einen Abfluss, so bleibt es frisch, statt in den Leitungen zu stehen, und die offenen Ausläufe bauen zudem Druck im Netz ab, [sagt Fabrizio Di Mauro](https://www.internazionale.it/bloc-notes/annalisa-camilli/2017/07/06/chiudere-fontanelle-nasoni-roma), Autor eines Buchs über sie. Oben auf der Biegung des Auslaufs sitzt ein kleines Loch. Fließt das Wasser frei, verbraucht es den Großteil des Leitungsdrucks in den Rohren, denn die Reibung wächst mit dem Quadrat der Geschwindigkeit; am Auslauf bleibt wenig übrig. Hält man das Ende mit dem Finger zu, fließt viel weniger Wasser, die Verluste schrumpfen, und der Druck am Auslauf nähert sich wieder dem der Hauptleitung: Durch das Loch gepresst, wird er zum Strahl. Es ist dasselbe Wasser, das der Versorger Acea in Roms Wohnungen leitet.",
+  "slides": [
+    {
+      "question": "Wie viele Nasoni, Roms gusseiserne Trinkbrunnen, stehen heute etwa in der Stadt, laut ihrem Tourismusamt?",
+      "explanation": "Etwa 2.800, laut Turismo Roma im Jahr 2024; Wikipedia nennt 2.500 bis 2.800. Die ersten wurden 1874 aufgestellt."
+    },
+    {
+      "alt": "Animation auf Dunkelgrün: ein Nasone aus Gusseisen auf Pflaster, erst mit drei Drachenausläufen, dann mit einem gebogenen; 2.800 Punkte; Schnitt mit Hauptleitung und Abfluss; offene Ausläufe bauen Druck ab; ein Finger verschließt den Auslauf, ein Strahl springt oben aus dem Loch; Drucklinie im Rohr.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Halt den Finger aufs Ende des Auslaufs und wähle die Größe des Lochs oben. Bring den Strahl auf mindestens 85 % des Drucks der Hauptleitung.",
+      "takeaway": "Ganz verschlossen, mit kleinem Loch, fließt wenig Wasser, also geht wenig Druck verloren, und der Strahl steigt fast auf den Druck der Hauptleitung. Ein größeres Loch lässt mehr durch und schwächt ihn."
+    },
+    {
+      "alt": "Foto eines Nasone bei Nacht: eine verwitterte graue Säule aus Gusseisen mit gewölbter Kappe und einem gebogenen Auslauf, aus dem ein dünner Wasserstrahl fließt, in einer niedrigen Steinfassung auf nassem Kopfsteinpflaster, dahinter eine Ziegelmauer.",
+      "caption": "Ein Nasone auf Roms Pflaster: ein gebogener Auslauf, die „große Nase“, und Wasser, das nie versiegt."
+    },
+    {
+      "heading": "So funktioniert der Fingertrick",
+      "steps": [
+        { "label": "Offener Auslauf: Rohrreibung frisst Druck" },
+        { "label": "Finger auf dem Ende: viel weniger Durchfluss" },
+        { "label": "Weniger Fluss, weniger Reibung: Druck steigt" },
+        { "label": "Das Loch oben macht daraus einen Strahl" }
+      ]
+    },
+    {
+      "heading": "Roms Nasoni",
+      "events": [
+        { "text": "Erste Nasoni, mit drei Drachenausläufen" },
+        { "text": "Bei einer Dürre stellt Acea einige ab" },
+        { "text": "Etwa 2.800; drei neue am Forum" }
+      ]
+    },
+    {
+      "question": "Warum schießt das Wasser oben aus dem kleinen Loch, wenn man den Auslauf eines Nasone zuhält?",
+      "options": ["Weniger Durchfluss, weniger Druckverlust", "Der Finger erwärmt das Wasser", "Eine Pumpe im Inneren springt an", "Das Loch öffnet sich weiter"],
+      "explanation": "Wenn weniger Wasser fließt, geht in den Rohren viel weniger Druck durch Reibung verloren, also bleibt am Auslauf mehr, um einen Strahl aus dem Loch zu treiben."
+    }
+  ]
+}

@@ -1802,7 +1802,7 @@ export const de: Record<string, string> = {
   'none reported': 'keine überliefert',
   'Plutarch, Life of Caesar': 'Plutarch, Leben Caesars',
   'early 2nd century AD': 'frühes 2. Jahrhundert n. Chr.',
-  'none: he covered his head with his toga': 'keine: Er verhüllte sein Haupt mit der Toga',
+  'to Casca, in Latin: “Accursed Casca, what are you doing?” Then he covered his head': 'an Casca, auf Latein: „Verfluchter Casca, was tust du?“ Dann verhüllte er sein Haupt',
   'Suetonius, Life of Julius Caesar': 'Sueton, Leben des Julius Caesar',
   'AD 121': '121 n. Chr.',
   'none, though some wrote of Greek words: “You too, child?”': 'keine, doch manche schrieben von griechischen Worten: „Auch du, Kind?“',
@@ -1973,4 +1973,5 @@ export const de: Record<string, string> = {
   'Carbonara recipes in print': 'Gedruckte Carbonara-Rezepte',
   'Guanciale in a carbonara': 'Guanciale in einer Carbonara',
   'Only the documents and ingredients that food historians report are shown; others may still turn up, as the 1939 article did in 2026.': 'Gezeigt sind nur die Dokumente und Zutaten, die Ernährungshistoriker nennen; weitere können noch auftauchen, so wie der Artikel von 1939 im Jahr 2026.',
+  'Language': 'Sprache',
 };

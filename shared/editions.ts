@@ -1,6 +1,7 @@
 // One codebase, several apps. Each edition has its own posts, fields, language, name and saved
 // progress, and is built on its own (`vite build --mode <id>`). Editions don't link to each other.
 import { FIELD_BY_ID, FIELD_IDS, type Field, type FieldId } from './fields.ts';
+import type { Lang } from './translate.ts';
 
 /** A field's name and account in an edition's language. */
 export type FieldText = Pick<Field, 'name' | 'handle' | 'scope'> & Partial<Pick<Field, 'emoji' | 'gradient'>>;
@@ -31,6 +32,11 @@ export interface Edition {
   order?: readonly string[];
   /** The note at the bottom of the profile: where posts come from and how to check them. */
   about: string;
+  /**
+   * Other languages the reader can switch the app to, with this edition's own text in each. A post shows in
+   * one of them when it has a translation at content/i18n/<lang>/<field>/<id>.json, and in `lang` otherwise.
+   */
+  langs?: Partial<Record<Lang, { fieldText?: Partial<Record<FieldId, FieldText>>; about: string }>>;
 }
 
 export const EDITIONS = {
@@ -101,6 +107,20 @@ export const EDITIONS = {
     wiki: false,
     authors: true,
     about: 'Every post links a source so you can check it. Posts marked AI were written by an AI.',
+    langs: {
+      de: {
+        fieldText: {
+          history: { name: 'Geschichte', handle: 'ab.urbe.condita', scope: 'Die Stadt und ihre Menschen, von der Gründung bis zu den Päpsten' },
+          engineering: { name: 'Technik', handle: 'opus.caementicium', scope: 'Kuppeln, Aquädukte, Abwasserkanäle und Arenen: wie Rom gebaut wurde' },
+          art: { name: 'Kunst', handle: 'ars.longa', scope: 'Fresken, Mosaiken, Skulpturen, Plätze und die Bauten, die sie tragen' },
+          politics: { name: 'Politik', handle: 'senatus.populusque', scope: 'Der Senat, die Volksversammlungen und wie Rom regiert wurde' },
+          economics: { name: 'Wirtschaft', handle: 'pecunia', scope: 'Handel, Münzen, Preise und die Lebensmittel, die die Stadt ernährten' },
+          math: { name: 'Mathematik', handle: 'regula.et.circinus', scope: 'Geometrie und Zahlen in Roms Bauten, Spielen und Kunst' },
+          earth: { name: 'Erde', handle: 'septem.montes', scope: 'Hügel, Fluss, Hochwasser, Karten und der Boden, auf dem die Stadt steht' },
+        },
+        about: 'Jeder Beitrag nennt eine Quelle, damit du ihn prüfen kannst. Mit KI gekennzeichnete Beiträge hat eine KI geschrieben.',
+      },
+    },
   },
 } as const satisfies Record<string, Edition>;
 
@@ -110,6 +130,11 @@ export const EDITION_IDS = Object.keys(EDITIONS) as EditionId[];
 /** The edition a Vite mode builds: `--mode lesefutter` builds Lesefutter, `--mode roma` Roma; any other mode builds Reckon. */
 export function editionForMode(mode: string): Edition {
   return mode in EDITIONS ? EDITIONS[mode as EditionId] : EDITIONS.reckon;
+}
+
+/** The languages an edition's posts may be translated into, besides its own. */
+export function editionLangs(edition: Edition): Lang[] {
+  return Object.keys(edition.langs ?? {}) as Lang[];
 }
 
 /** An edition's fields, in its order and language. */

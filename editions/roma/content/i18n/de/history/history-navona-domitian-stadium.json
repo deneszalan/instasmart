@@ -1,0 +1,86 @@
+{
+  "id": "history-navona-domitian-stadium",
+  "title": "Die Piazza Navona hat die Form eines römischen Stadions: Rom baute Häuser auf die Ränge",
+  "body": "Roms Piazza Navona liegt über der Bahn des **Domitiansstadions**, das Kaiser Domitian 86 n. Chr. für Wettkämpfe nach griechischer Art eröffnete. Es war etwa 275 m lang und 106 m breit, im Norden gerundet und im Süden gerade, mit Plätzen für rund 30.000 Menschen auf Rängen, die ein Netz von Mauern trug. Nach der Kaiserzeit wohnten Arme in seinen Arkaden, und man brach seine Steine ab; auf den Rängen wuchsen Häuser und Paläste, während die Bahn in der Mitte frei blieb. Im späten 15. Jahrhundert zog der städtische Markt dorthin, und die Bahn wurde ein Platz, heute etwa 4,5 m über dem antiken Boden, wie [Turismo Roma](https://turismoroma.it/it/node/1103) schreibt; Reste sind unter dem Nordende erhalten. Selbst der Name kommt von den Spielen: *in agone*, „bei den Wettkämpfen“, wurde allmählich zu „Navona“. 1651 enthüllte der Bildhauer Gian Lorenzo Bernini dort seinen Vierströmebrunnen. Eine beliebte Legende sagt, sein Nil verhülle die Augen, um Sant’Agnese in Agone nicht zu sehen, die Kirche seines Rivalen Francesco Borromini; doch die Kirche wurde erst 1652 begonnen, und Borromini übernahm 1653. Der Schleier bedeutet, dass damals niemand wusste, wo der Nil entspringt.",
+  "slides": [
+    {
+      "heading": "Piazza Navona: Fakt oder Legende?",
+      "bins": [
+        "Fakt",
+        "Legende"
+      ],
+      "items": [
+        {
+          "text": "Der Platz folgt dem Umriss eines römischen Stadions"
+        },
+        {
+          "text": "Berninis Nil verbirgt die Augen vor Borrominis Kirche"
+        },
+        {
+          "text": "Häuser stehen auf den alten Rängen des Stadions"
+        },
+        {
+          "text": "Berninis Brunnen ist älter als die Kirche dahinter"
+        }
+      ],
+      "explanation": "Nur die Nil-Geschichte ist eine Legende: Der Brunnen wurde 1651 enthüllt, die Kirche erst 1652 begonnen."
+    },
+    {
+      "alt": "Animation wie ein gestochener Stadtplan: die lange Form der Piazza Navona, darüber Domitians Stadion von 86 n. Chr., dessen Ränge sich mit 30.000 Menschen füllen; Häuser wachsen auf den Rängen, die Bahn bleibt frei; ein Schnitt zeigt die Arena 4,5 m tief; dann Berninis Brunnen und Borrominis Kirche.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Leg Bankreihen um die Bahn und wähle, wie viel Bank jeder Zuschauer bekommt. Finde eine Bestuhlung für etwa 30.000 Menschen.",
+      "takeaway": "Etwa 25 bis 30 Reihen mit 45 bis 50 cm pro Person schaffen es und füllen den Großteil der 26,5 m zwischen Bahn und Außenmauer. Kleine Änderungen der Annahmen verschieben die Summe um Tausende."
+    },
+    {
+      "alt": "Die Piazza Navona bei Nacht, Blick nach Süden: der Obelisk über Berninis angestrahltem Vierströmebrunnen, rechts die Türme von Sant’Agnese in Agone, links eine geschwungene Häuserzeile."
+    },
+    {
+      "heading": "Vom Stadion zum Platz",
+      "events": [
+        {
+          "when": "86 n. Chr.",
+          "text": "Domitian eröffnet das Stadion"
+        },
+        {
+          "when": "Ende 15. Jahrhundert",
+          "text": "Der Markt der Stadt zieht auf die Bahn"
+        },
+        {
+          "when": "1651",
+          "text": "Bernini enthüllt den Vierströmebrunnen"
+        },
+        {
+          "when": "1652",
+          "text": "Sant’Agnese in Agone begonnen"
+        },
+        {
+          "when": "1653",
+          "text": "Borromini übernimmt die Kirche"
+        }
+      ]
+    },
+    {
+      "heading": "Der Schleier des Nils",
+      "left": {
+        "label": "Legende",
+        "text": "Berninis Nil verhüllt die Augen, um die Kirchenfassade seines Rivalen Francesco Borromini nicht zu sehen."
+      },
+      "right": {
+        "label": "Fakt",
+        "text": "Der Brunnen wurde 1651 enthüllt, bevor der Bau der Kirche begann. Der Schleier zeigt, dass die Nilquelle unbekannt war."
+      }
+    },
+    {
+      "question": "Warum behielt die Piazza Navona die Form von Kaiser Domitians Stadion?",
+      "options": [
+        "Man baute Häuser auf die alten Ränge",
+        "Papst Innozenz X. kopierte sie 1651",
+        "Tiberhochwasser haben sie ausgewaschen",
+        "Ihre Mauern wurden im 19. Jh. erneuert"
+      ],
+      "explanation": "Wohnhäuser und Paläste wuchsen auf den Rängen und ihren Mauern, während die offene Bahn erst Markt und dann Platz wurde."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "history-rome-ghetto-1555",
+  "title": "Von 1555 bis 1870 waren Roms Juden auf 3 Hektar am Tiber eingemauert",
+  "body": "Juden leben in Rom seit mindestens 161 v. Chr.; ihre Gemeinde ist eine der ältesten Europas. Im Juli 1555 zwang Papst Paul IV. sie mit der Bulle *Cum nimis absurdum* in ein ummauertes Viertel von etwa 3 Hektar am niedrigen Tiberufer, neben den Ruinen des [Portikus der Octavia](https://www.turismoroma.it/en/node/1113), den Kaiser Augustus 27–23 v. Chr. für seine Schwester erneuert hatte. Nachts wurden die Tore verschlossen; draußen mussten Männer einen gelben Hut und Frauen ein gelbes Tuch tragen, und Juden durften keinen Grundbesitz haben. Die Mauern rückten nicht, doch die Menschen wurden mehr, von etwa 2.000 im Jahr 1555 auf 4.000 bis 1656, **über 1.300 pro Hektar**; so wuchsen die Häuser Stockwerk um Stockwerk über dunklen Gassen, und der Fluss überschwemmte sie. Das Ghetto endete, als Italien 1870 Rom einnahm; seine Mauern fielen 1888, und 1904 öffnete auf dem geräumten Ufer die Große Synagoge. Am 16. Oktober 1943 verhaftete deutsche Polizei in Rom 1.259 Menschen; mehr als 1.000 wurden nach Auschwitz deportiert, nur 16 kehrten zurück. Stolpersteine aus Messing, *pietre d’inciampo*, markieren heute die letzten Wohnungen der Deportierten.",
+  "slides": [
+    {
+      "question": "Roms Ghetto, 1555 von Papst Paul IV. ummauert, umfasste etwa 3 Hektar. Wie viele Menschen lebten 1656 etwa darin?",
+      "unit": "Menschen",
+      "explanation": "Etwa 4.000, doppelt so viele wie die 2.000 von 1555: über 1.300 pro Hektar. Rom hat heute etwa 21 Einwohner pro Hektar."
+    },
+    {
+      "alt": "Animation, ein abendlicher Plan von Roms Ghetto am Tiber: die Mauern von 1555 am Portikus der Octavia; Punkte für die Bewohner füllen 3 Hektar; Häuser wachsen Stock um Stock; ein Hochwasser; die Mauern fallen, die Große Synagoge entsteht; eine stille Straße im Morgengrauen mit Stolpersteinen.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "1555 hätte ein Stockwerk über dem ganzen Viertel jedem 15 m² gegeben. Wähle 1656 und setze Stockwerke auf, bis wieder jeder so viel Platz hat.",
+      "takeaway": "4.000 Menschen auf denselben 3 Hektar brauchen zwei Stockwerke für den Platz, den 2.000 auf einem hatten. Mit Mauern, die nie wichen, konnte das Ghetto nur in die Höhe wachsen."
+    },
+    {
+      "alt": "Foto der verfallenen Eingangshalle des Portikus der Octavia in Rom: ein Ziegelbogen in einer Steinfront mit zwei kannelierten Marmorsäulen und einem zerbrochenen Dreiecksgiebel, ringsum Wohnhäuser, am rechten Rand ein Stück einer Kuppel.",
+      "caption": "Der Portikus der Octavia heute: großteils der Neubau von Kaiser Septimius Severus von 203 n. Chr.; der Ziegelbogen ersetzte nach einem Erdbeben 442 n. Chr. zwei Säulen."
+    },
+    {
+      "heading": "16. Oktober 1943",
+      "text": "Deutsche Polizei verhaftete in Rom 1.259 Menschen, darunter 207 Kinder, viele im und um das alte Ghetto. Nachdem einige freikamen, wurden am 18. Oktober 1.023 nach Auschwitz deportiert; 15 Männer und eine Frau kehrten zurück. Viele andere entgingen der Verhaftung in Verstecken, oft in katholischen Einrichtungen."
+    },
+    {
+      "heading": "Roms jüdisches Viertel",
+      "events": [
+        { "when": "161 v. Chr.", "text": "Erster Beleg für Juden in Rom." },
+        { "when": "1555", "text": "Papst Paul IV. schafft das Ghetto." },
+        { "when": "1870", "text": "Das Ghetto endet, als Italien Rom einnimmt." },
+        { "when": "1904", "text": "Die Große Synagoge öffnet." },
+        { "when": "16. Okt. 1943", "text": "Die deutsche Razzia." }
+      ]
+    },
+    {
+      "question": "Warum wurden die Häuser in Roms Ghetto, 1555 von Papst Paul IV. ummauert, so hoch?",
+      "options": [
+        "Mauern verhinderten jede Ausdehnung",
+        "Hohe Häuser hielten Hochwasser ab",
+        "Der Papst verlangte Türme",
+        "Land draußen war billiger"
+      ],
+      "explanation": "Das Viertel blieb bei etwa 3 Hektar, während sich seine Bewohner verdoppelten, von etwa 2.000 im Jahr 1555 auf 4.000 bis 1656; neuen Platz gab es nur obendrauf."
+    }
+  ]
+}

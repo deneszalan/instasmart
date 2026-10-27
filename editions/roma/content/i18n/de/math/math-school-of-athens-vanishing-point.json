@@ -1,0 +1,55 @@
+{
+  "id": "math-school-of-athens-vanishing-point",
+  "title": "In Raffaels Schule von Athen münden alle Fluchtlinien zwischen Platon und Aristoteles",
+  "body": "Raffael malte [Die Schule von Athen](https://en.wikipedia.org/wiki/The_School_of_Athens) 1509–1511 für Papst Julius II. an eine Wand der Stanza della Segnatura im Vatikanischen Palast; das Fresko ist etwa 7,7 m breit und 5 m hoch. Seine Halle ist in **Zentralperspektive** gezeichnet: Jede Kante, die gerade in die Tiefe läuft – Gesimse, Gewölbe, Bodenlinien –, zielt auf einen einzigen Fluchtpunkt zwischen Platon und Aristoteles, nach einer Messung etwa einen halben Meter unter der ausgestreckten Hand des Aristoteles. Dieser Punkt liegt auf der Augenhöhe des Malers, und eine Waagerechte durch ihn ist der Horizont. Der Boden verrät auch den Abstand: Sind seine Fliesen quadratisch, treffen sich ihre Diagonalen auf dem Horizont in zwei **Distanzpunkten**, und deren Abstand zum Fluchtpunkt zeigt, wie weit das Auge zurückstand. [Christopher Tyler und Michael Kubovy](https://webexhibits.org/sciartperspective/raphaelperspective4.html) rekonstruieren etwa 9 m, mit dem Horizont mindestens 4 m über dem Boden, in einem nur etwa 8 m langen Raum. Sie vermuten Absicht: Das Fresko beginnt 2 m über dem Boden; für die echte Augenhöhe eines Besuchers gezeichnet, wäre nichts von seinem Boden zu sehen.",
+  "slides": [
+    {
+      "prompt": "Der Maler Raffael baute die Schule von Athen um einen Punkt für das Auge des Betrachters. Kann ein Besucher im Raum dort stehen?",
+      "answer": "Nein: Er liegt etwa 9 m entfernt, hinter der gegenüberliegenden Wand",
+      "detail": "Die Forscher Christopher Tyler und Michael Kubovy errechneten das aus den Bodenfliesen, angenommen, sie sind quadratisch. Der Raum ist nur etwa 8 m lang, und das Auge liegt mindestens 4 m hoch."
+    },
+    {
+      "alt": "Animation auf dunklem Schiefer, ein Schema von Raffaels Schule von Athen: Rote Hilfslinien an den Hallenkanten treffen sich im goldenen Fluchtpunkt zwischen Platon und Aristoteles; der Horizont auf Augenhöhe; Fliesendiagonalen enden in zwei Distanzpunkten, 9 m weit; das Auge liegt hinter der Wand.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Zieh den Punkt, bis jede in die Tiefe laufende Kante durch ihn geht. Wechsle dann zum Distanzpunkt: Wo treffen die Fliesendiagonalen den Horizont?",
+      "takeaway": "Die Kanten treffen sich auf Augenhöhe, im Modell 4,2 m hoch; die Fliesendiagonalen treffen den Horizont 9 m seitlich davon: Das Auge stand 9 m zurück. Im echten Raum liegt dieser Punkt hinter der Wand gegenüber."
+    },
+    {
+      "alt": "Blick hinauf zur Schule von Athen an ihrer Wand im Vatikan: Platon in Rot und Aristoteles in Blau stehen in der Mitte des Freskos unter in die Tiefe führenden Bögen, darüber das bemalte Gewölbe des Raums.",
+      "caption": "Platon (rot) und Aristoteles (blau) stehen dort, wo die Linien der gemalten Halle zusammenlaufen."
+    },
+    {
+      "heading": "Wie man das Auge des Malers aus einem Bild abliest",
+      "steps": [
+        { "label": "Die in die Tiefe laufenden Kanten verlängern" },
+        { "label": "Sie treffen sich im Fluchtpunkt" },
+        { "label": "Eine Waagerechte durch ihn ist die Augenhöhe" },
+        { "label": "Diagonalen von Quadratfliesen: Distanzpunkte" },
+        { "label": "Ihr Abstand zu ihm: der Betrachtungsabstand" }
+      ]
+    },
+    {
+      "heading": "Wo das Auge sein soll und wo es ist",
+      "left": {
+        "label": "Das Auge der Perspektive",
+        "text": "Etwa 9 m von der Wand entfernt und mindestens 4 m über dem Boden, nach der Rekonstruktion von Tyler und Kubovy."
+      },
+      "right": {
+        "label": "Ein Besucher",
+        "text": "Er steht auf dem Boden eines etwa 8 m langen Raums, weit unter dem Horizont. Der gemalte Boden wirkt gekippt, führt das Auge aber trotzdem hinein."
+      }
+    },
+    {
+      "question": "Was verraten die Diagonalen der quadratischen Bodenfliesen in der Schule von Athen?",
+      "options": [
+        "Wie weit zurück das Auge des Malers war",
+        "Die Augenhöhe des Malers",
+        "Wie groß der echte Raum ist",
+        "Wo Platon und Aristoteles stehen"
+      ],
+      "explanation": "Die Fliesendiagonalen treffen sich auf dem Horizont in zwei Distanzpunkten; ihr Abstand zum Fluchtpunkt ist der Betrachtungsabstand. Der Fluchtpunkt selbst gibt die Augenhöhe an."
+    }
+  ]
+}

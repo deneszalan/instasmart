@@ -3,7 +3,7 @@
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { EDITION_IDS, EDITIONS, editionFields, type EditionId } from '../shared/editions.ts';
+import { EDITION_IDS, EDITIONS, editionFields, editionLangs, type EditionId } from '../shared/editions.ts';
 import { readContentFiles } from './disk.ts';
 import { postJsonSchema, type Post } from '../shared/schema.ts';
 import { postPath, serializePost, validateContent } from '../shared/validate.ts';
@@ -21,7 +21,7 @@ function check(): number {
     const edition = EDITIONS[id];
     const prefix = edition.dir === '.' ? '' : `${edition.dir}/`;
     const files = readContentFiles(join(root, edition.dir));
-    const { posts, problems } = validateContent(files, edition.fields);
+    const { posts, problems } = validateContent(files, edition.fields, editionLangs(edition));
     if (problems.length) {
       const byFile = Map.groupBy(problems, (p) => p.file);
       for (const [file, list] of byFile) {
@@ -34,7 +34,9 @@ function check(): number {
     }
     const media = files.filter((f) => f.path.startsWith('content/media/')).length;
     const perField = editionFields(edition).map((f) => `${f.id} ${posts.filter((p) => p.field === f.id).length}`).join(', ');
-    console.log(`✓ ${edition.name}: ${posts.length} posts and ${media} media files are valid.\n  ${perField}`);
+    const translated = editionLangs(edition).map((lang) => `${files.filter((f) => f.path.startsWith(`content/i18n/${lang}/`)).length} in ${lang}`);
+    const also = translated.length ? ` (translated: ${translated.join(', ')})` : '';
+    console.log(`✓ ${edition.name}: ${posts.length} posts${also} and ${media} media files are valid.\n  ${perField}`);
   }
   return failed ? 1 : 0;
 }

@@ -1,0 +1,42 @@
+{
+  "id": "politics-two-consuls-one-year",
+  "title": "Nach den Königen bekam Rom zwei Konsuln auf ein Jahr, jeder mit Veto gegen den anderen",
+  "body": "Der Überlieferung nach vertrieb Rom 509 v. Chr. seinen letzten König, Tarquinius Superbus, und [Livius](https://www.thelatinlibrary.com/livy/liv.1.shtml), der fast 500 Jahre später schrieb, berichtet, an seiner Stelle seien zwei Konsuln gewählt worden. Die Republik teilte diese Macht zweifach. Auf zwei Köpfe: Jeder Konsul konnte ein Veto einlegen, also verbieten, was der andere tat, und in Rom wechselten sie sich monatlich mit den Fasces ab, den Rutenbündeln ihrer 12 Liktoren. Zeitlich: Ein Konsul amtierte ein Jahr, ein zweites Mal meist erst nach etwa zehn Jahren. Gewählt wurden die Konsuln von der **Zenturienversammlung** auf dem Marsfeld, wo die Bürger in 193 nach Vermögen geordneten Gruppen abstimmten, den Zenturien, mit je einer Stimme. Bei Livius hielten die Reiter und die erste Klasse 98 davon und stimmten zuerst; waren sie sich einig, war die Wahl schon entschieden, obwohl laut Cicero eine einzige Zenturie der Ärmsten mehr Bürger zählte als fast die ganze erste Klasse. Die Römer benannten jedes Jahr nach seinen Konsuln, daher ist deren Marmorliste, die [Fasti Capitolini](https://en.wikipedia.org/wiki/Fasti_Capitolini) in den Kapitolinischen Museen, zugleich ein Kalender.",
+  "slides": [
+    {
+      "question": "Roms Konsuln wurden von 193 nach Vermögen geordneten Stimmgruppen gewählt. Wie viele hielten die zwei reichsten Klassen?",
+      "unit": "Gruppen",
+      "explanation": "98 laut Livius: 18 Zenturien der Reiter und 80 der ersten Klasse, mehr als die Hälfte von 193. Sie stimmten zuerst ab; waren sie sich einig, war die Wahl vorbei."
+    },
+    {
+      "alt": "Animation auf hellem Marmor: Eine Platte mit REX zerbricht, zwei Konsuln folgen; einer stoppt per Veto den anderen; je zwölf Liktoren, die Fasces wechseln monatlich; einjährige Amtszeiten in Reihe; 193 Stimmgruppen füllen sich ab den Reichsten bis zu einem STOP-Stempel; eine Konsulliste; SPQR.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Leg fest, wie die 98 reichsten und die 95 übrigen Zenturien für zwei Kandidaten stimmen. Finde eine Wahl, die vorbei ist, bevor die zweite Klasse drankommt.",
+      "takeaway": "Sind sich die Reiter und die erste Klasse einig, schlagen ihre 98 Stimmen schon die Hälfte von 193, und 95 Zenturien stimmen nie ab, obwohl laut Cicero eine davon mehr Bürger zählte als fast die ganze erste Klasse."
+    },
+    {
+      "alt": "Foto einer weißen Marmorwand in einem Museumssaal mit grauen Fragmenten antiken Steins, in die Reihen kleiner römischer Großbuchstaben gemeißelt sind; oben verläuft eine moderne Inschrift, davor steht ein behauener Block auf einem Sockel.",
+      "caption": "Die Fasti Capitolini in den Kapitolinischen Museen: Fragmente der marmornen Konsulliste, in eine Wand eingesetzt."
+    },
+    {
+      "text": "Ne plurimum valeant plurimi: damit nicht die größte Zahl die größte Macht habe.",
+      "attribution": "Cicero, Über den Staat 2,39, zur Ordnung der Zenturien (übersetzt)"
+    },
+    {
+      "alt": "Nahaufnahme eines grauen eisernen Kanaldeckels in einer Straße, mit Reihen abgerundeter Schlitze und einer erhabenen Platte in der Mitte mit den Buchstaben SPQR.",
+      "caption": "SPQR, der Senat und das Volk von Rom, auf einem Kanaldeckel im heutigen Rom."
+    },
+    {
+      "question": "Wie gaben Römer der Republik meist an, in welchem Jahr etwas geschah?",
+      "options": [
+        "Mit den Namen der zwei Konsuln",
+        "Gezählt ab der Geburt des Romulus",
+        "Nach der Nummer des Königs",
+        "Nach der Zahl der Senatssitzungen"
+      ],
+      "explanation": "Sie benannten das Jahr nach seinen zwei Konsuln: „im Konsulat von …“. So dient eine Konsulliste wie die Fasti Capitolini als Kalender."
+    }
+  ]
+}

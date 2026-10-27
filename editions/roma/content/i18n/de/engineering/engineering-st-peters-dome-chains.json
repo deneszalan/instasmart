@@ -1,0 +1,48 @@
+{
+  "id": "engineering-st-peters-dome-chains",
+  "title": "Eine hängende Kette zeigte in den 1740er-Jahren: Die rissige Kuppel des Petersdoms hält",
+  "body": "Michelangelo Buonarroti entwarf die Kuppel des [Petersdoms](https://en.wikipedia.org/wiki/St._Peter%27s_Basilica) 1547 neu, Giacomo della Porta und Domenico Fontana vollendeten sie 1590: zwei Ziegelschalen mit 16 Rippen, innen 41,5 m weit. In den 1740er-Jahren liefen lange Risse vom Fuß nach oben und teilten sie in Segmente, die wie einzelne Bögen wirkten. 1742–43 prüften drei Mathematiker, Thomas Le Seur, François Jacquier und Roger Boscovich, die Kuppel und forderten starke Verstärkungen; dann holte Papst Benedikt XIV. [Giovanni Poleni](https://en.wikipedia.org/wiki/Giovanni_Poleni) aus Padua. Poleni nutzte eine Idee von Robert Hooke: Eine hängende Kette steht nur unter Zug, also ist ihre umgedrehte Form ein Weg, auf dem Gewicht als reiner **Druck** wandert. Er hängte an eine Kette Gewichte im Verhältnis zu den Stücken eines Segments und fand, dass die umgedrehte Kurve in die Dicke der Kuppel passte: Jedes Segment konnte stehen. Gefährlich war, dass die Segmente am Fuß **nach außen drückten**; das halten Eisenringe wie Reifen an einem Fass: Sechs kamen in den 1740er-Jahren hinzu, nachdem man einen alten Ring gebrochen fand. Poleni veröffentlichte seine Analyse 1748.",
+  "slides": [
+    {
+      "question": "Wie viele neue Eisenringe wurden in den 1740er-Jahren um die rissige Kuppel des Petersdoms gelegt?",
+      "unit": "Ringe",
+      "explanation": "Sechs, nachdem der Architekt Luigi Vanvitelli einen der alten Ringe gebrochen fand. Der Mathematiker Giovanni Poleni hatte gezeigt: Die rissige Kuppel hält, wenn ihr Schub nach außen gehalten wird."
+    },
+    {
+      "alt": "Animation in der Dämmerung: die Kuppel des Petersdoms, Risse vom Fuß aufwärts, von oben als Segmente. Eine hängende Kette wird zum Bogen; ein Segment wird in Stücke geteilt, eine Kette mit passenden Gewichten klappt zu einer Linie im Mauerwerk um; Eisenringe legen sich um die Kuppel.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Stell den Schub nach außen am Fuß so ein, dass die Stützlinie, Polenis umgedrehte Kette, in das Segment aus Mauerwerk passt.",
+      "takeaway": "Nur ein enger Bereich an Schub hält die Linie in den 3 m Mauerwerk: Dann kann das Segment stehen, wie Poleni fand. Diesen Schub nach außen müssen der Tambour und die Eisenringe halten."
+    },
+    {
+      "alt": "Die Kuppel des Petersdoms vor blauem Himmel: bleigedeckt zwischen hellen Steinrippen, gekrönt von Laterne, Kugel und Kreuz, hinter den Statuen auf der Fassade der Basilika."
+    },
+    {
+      "heading": "Giovanni Polenis Test",
+      "steps": [
+        { "label": "Die rissige Kuppel als Segmente sehen" },
+        { "label": "Ein Segment in Stücke teilen" },
+        { "label": "Für jedes Stück ein Gewicht an die Kette" },
+        { "label": "Die Kurve der Kette umdrehen" },
+        { "label": "Sie passt ins Mauerwerk: Das Segment hält" }
+      ]
+    },
+    {
+      "heading": "Bau und Rettung der Kuppel",
+      "events": [
+        { "text": "Michelangelo Buonarroti plant die Kuppel neu." },
+        { "text": "Giacomo della Porta und Domenico Fontana vollenden sie." },
+        { "text": "Gutachten von drei Mathematikern." },
+        { "text": "Papst Benedikt XIV. holt Poleni." },
+        { "text": "Poleni veröffentlicht die Analyse." }
+      ]
+    },
+    {
+      "question": "Warum konnte eine hängende Kette Giovanni Poleni zeigen, ob die rissige Kuppel des Petersdoms sicher war?",
+      "options": ["Umgedreht zeigt sie reinen Druck", "Ihr Gewicht gleicht dem der Kuppel", "Sie misst, wie breit die Risse sind", "Sie hält die Kuppel zusammen"],
+      "explanation": "Eine Kette trägt nur Zug. Umgedreht ist ihre Kurve ein Weg, auf dem das Gewicht des Segments als reiner Druck wandert; bleibt dieser Weg im Mauerwerk, kann das Segment stehen."
+    }
+  ]
+}

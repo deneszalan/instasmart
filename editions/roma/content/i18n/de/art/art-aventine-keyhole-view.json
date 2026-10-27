@@ -1,0 +1,49 @@
+{
+  "id": "art-aventine-keyhole-view",
+  "title": "Ein Schlüsselloch auf dem Aventin rahmt hinter einem Gartenweg die 3 km ferne Peterskuppel",
+  "body": "Auf dem Aventin, an der Piazza dei Cavalieri di Malta, die der Radierer und Architekt Giovanni Battista Piranesi in den 1760er-Jahren gestaltete, stehen Besucher Schlange, um durch das Schlüsselloch im Tor zum Priorat des Malteserordens zu schauen. Sie sehen einen Gartenweg zwischen geschnittenen Hecken und an seinem Ende die Kuppel des Petersdoms. Laut OpenStreetMap führt der Weg etwa 90 m geradeaus auf die Kuppel zu, die 2.976 m vom Schlüsselloch entfernt ist. Das Schlüsselloch vergrößert nicht: Die etwa 42 m breite Kuppel füllt nur einen Winkel von 0,8 Grad, rund das Anderthalbfache der Breite des Vollmonds, genau wie von jedem anderen Ort in dieser Entfernung. Das Schlüsselloch rahmt sie nur: Die nahen Hecken füllen den Großteil des Blickfelds und verdecken die Stadt dazwischen. Die Villa gehört dem Souveränen Malteserorden, einem katholischen Orden, bekannt für Kranken- und Hilfsdienste. Er ist kein Staat, aber Italien erkennt die Villa als [exterritoriales Eigentum](https://www.orderofmalta.int/government/magistral-villa/) des Ordens an.",
+  "slides": [
+    {
+      "question": "Vom Schlüsselloch auf dem Aventin ist die Kuppel des Petersdoms etwa 3 km entfernt. Wie viele Vollmonde breit wirkt sie?",
+      "unit": "Vollmonde",
+      "explanation": "Etwa 1,55. Die 42 m breite Kuppel spannt aus 2.976 m Entfernung 0,81° auf, der Vollmond etwa 0,52°."
+    },
+    {
+      "alt": "Animation in der Dämmerung: Piranesis Mauer mit Obelisken und die grüne Tür auf dem Aventin; der Blick durchs Schlüsselloch durch einen Heckentunnel zur Kuppel des Petersdoms; eine Kartenlinie von 2.976 m; die 0,8° der Kuppel neben dem Vollmond; und der Rahmen naher Hecken, der die Stadt verdeckt.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Rücke die Kuppel des Petersdoms näher heran oder weiter weg. Aus welcher Entfernung wirkt sie genau so breit wie der Vollmond?",
+      "takeaway": "Aus etwa 4,6 km. Vom 2.976 m entfernten Schlüsselloch aus spannt sie 0,81° auf, anderthalb Monde: Der Winkel ist Größe ÷ Entfernung, und das Schlüsselloch rahmt sie nur."
+    },
+    {
+      "alt": "Foto eines dunklen Tunnels aus hohen, geschnittenen Hecken über einem Kiesweg; an seinem Ende, gerahmt von einem Bogen aus Blättern, steht die hellgraue, gerippte Kuppel des Petersdoms vor dunstigem Himmel über Bäumen.",
+      "caption": "Der Blick durch das Schlüsselloch des Priorats des Malteserordens: der von Hecken gesäumte Weg und dahinter die Kuppel des Petersdoms."
+    },
+    {
+      "heading": "Was das Schlüsselloch tut",
+      "left": {
+        "label": "Mythos",
+        "text": "Das Schlüsselloch wirkt wie eine Linse und lässt die Kuppel größer erscheinen, als sie ist."
+      },
+      "right": {
+        "label": "Tatsache",
+        "text": "Die Kuppel wirkt so klein wie von jedem Ort in 3 km Entfernung, 0,8°; Loch und Hecken rahmen sie nur."
+      }
+    },
+    {
+      "heading": "Piranesis einziger Bau",
+      "text": "Giovanni Battista Piranesi (1720–1778) war berühmt für seine Radierungen von Rom. Hinter diesem Tor wurde 1764–66 die Kirche Santa Maria del Priorato nach seinen Entwürfen umgebaut: Sie ist sein einziges Werk als Architekt, und dort liegt auch sein Grab."
+    },
+    {
+      "question": "Wäre die Kuppel des Petersdoms doppelt so weit vom Schlüsselloch entfernt, wie breit würde sie dann wirken?",
+      "options": [
+        "Halb so breit",
+        "Genauso breit",
+        "Ein Viertel so breit",
+        "Doppelt so breit"
+      ],
+      "explanation": "Der Winkel folgt Größe ÷ Entfernung: doppelt so weit, halber Winkel. Etwa 0,4°, weniger als der Vollmond."
+    }
+  ]
+}

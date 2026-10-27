@@ -1,0 +1,48 @@
+{
+  "id": "math-circus-maximus-staggered-gates",
+  "title": "Die 12 Startboxen des Circus Maximus standen im Bogen, damit jeder Wagen gleich weit fuhr",
+  "body": "Der Circus Maximus, Roms Wagenrennbahn im Tal zwischen Palatin und Aventin, war etwa 620 m lang. Die Rennen begannen aus 12 Startboxen, den *carceres*, die zugleich aufsprangen, wenn der vorsitzende Magistrat ein weißes Tuch fallen ließ. Bis zu einer weißen Linie am Beginn der ersten Geraden blieben die Lenker in ihren Bahnen. In gerader Reihe quer über die Bahn wären die äußeren Boxen weiter davon entfernt. Darum standen sie auf einem flachen Bogen, Teil eines Kreises mit dem Mittelpunkt auf der rechten Seite der Bahn, so [Smith’s Dictionary of Antiquities](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/SMIGRA%2A/Circus.html): Jeder Punkt eines Kreises ist **gleich weit vom Mittelpunkt entfernt**. Die Boxen wurden ausgelost. Ein Rennen ging meist über sieben Runden, seit spätestens 174 v. Chr. an sieben großen Eiern abgezählt; 33 v. Chr. fügte der Feldherr Marcus Agrippa sieben Bronzedelfine hinzu, weil man sich laut [Cassius Dio](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/49%2A.html) ständig verzählte. Der Historiker Dionysios von Halikarnassos schrieb von 150.000 Plätzen, Plinius der Ältere von 250.000; heute schätzt man höchstens 150.000.",
+  "slides": [
+    {
+      "question": "Wie viele Runden dauerte ein Wagenrennen im Circus Maximus in Rom meist?",
+      "unit": "Runden",
+      "explanation": "Sieben Runden, abgezählt an sieben großen Eiern und ab 33 v. Chr. zusätzlich an sieben Bronzedelfinen."
+    },
+    {
+      "alt": "Animation in brauner Tinte auf Sand: der Circus Maximus zwischen Palatin und Aventin, 12 Startboxen öffnen sich, Schnüre von jeder Box zur weißen Linie, ungleich bei gerader Reihe und gleich auf einem Bogen um den Punkt, Wagen in vier Farben auf sieben Runden, Eier und Delfine zählen mit.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Biege die Reihe der 12 Startboxen und wähle den Mittelpunkt des Bogens. Gib jedem Wagen denselben Weg bis zur weißen Linie.",
+      "takeaway": "Nur ein Kreisbogen um die Mitte der weißen Linie an der ersten Geraden macht alle 12 Wege gleich: Jeder Punkt eines Kreises ist gleich weit von seinem Mittelpunkt entfernt. Sonst starten manche Boxen weiter weg."
+    },
+    {
+      "alt": "Foto des Circus Maximus heute: ausgegrabene Ziegelgewölbe und eine Steintreppe, die einst die Sitzreihen trugen, dahinter das lange grüne Tal der Rennbahn und Pinien auf dem Hügel darüber.",
+      "caption": "Der Circus Maximus heute: Ziegelgewölbe der Sitzreihen und das grüne Tal, in dem die Bahn lag."
+    },
+    {
+      "heading": "Wie viele Plätze hatte der Circus Maximus?",
+      "items": [
+        { "label": "Dionysios von Halikarnassos" },
+        { "label": "Plinius der Ältere" },
+        { "label": "Heutige Schätzung, höchstens" }
+      ],
+      "unit": "Plätze",
+      "note": "Der Archäologe John Humphrey nennt die höhere Zahl überliefert, aber überzogen."
+    },
+    {
+      "heading": "Eier und Delfine",
+      "text": "Seit spätestens 174 v. Chr. zählten sieben große Eier auf der Mittelmauer des Circus Maximus die sieben Runden eines Rennens ab. 33 v. Chr. fügte der römische Feldherr Marcus Agrippa noch sieben Bronzedelfine hinzu, weil man sich, so der Historiker Cassius Dio, immer wieder verzählte, wie viele Runden gefahren waren."
+    },
+    {
+      "question": "Warum standen die 12 Startboxen des Circus Maximus im Bogen statt in gerader Reihe quer über die Bahn?",
+      "options": [
+        "Damit jeder Wagen gleich weit fuhr",
+        "Wegen des Gefälles am Hang",
+        "Damit der Kaiser jede Box sah",
+        "Um den Start zu bremsen"
+      ],
+      "explanation": "Der Bogen ist Teil eines Kreises um einen Punkt am Beginn der ersten Geraden, also war jede Box gleich weit von der weißen Linie entfernt."
+    }
+  ]
+}

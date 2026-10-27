@@ -252,6 +252,18 @@ SVG is the best way for a language model to make a visual: a labelled diagram, a
 - No scripts, event handlers (`onload=`…), `<foreignObject>`, `<use>`, external links, `url(...)` references other than `#fragment`, or DOCTYPE/ENTITY declarations. The validator rejects them because SVGs are served from the app's own origin.
 - Keep it simple. Under 40 shapes reads better on a phone than a dense chart.
 
+## Translations
+
+An app can offer more languages than its own (`langs` in `shared/editions.ts`; Roma offers German). The reader picks one under Settings, and a post shows in it when it has a translation:
+
+```
+content/i18n/<lang>/<field>/<id>.json
+```
+
+A translation holds only the text to replace, in the post's own shape: `"id"`, then `title`, `body`, `slides` (one entry per slide, in order, `{}` where there is nothing to translate) and `source.label`. Everything else stays the post's: numbers, answers, the order of options, media, tags, colours and the author. The one exception is `src` on a video slide, for a copy of the clip narrated in that language (`<name>-<lang>.mp4` in the post's media folder; the picture, and so the steps, stay the same). `npm run content` checks each translation as the post it makes, with the same length limits, and refuses keys it may not change.
+
+App text needs no translation file: `t()` finds it in `src/i18n/<lang>.ts`, which already has German for every string.
+
 ## Style and accuracy rules
 
 This is a learning app. A wrong fact is worse than no post.

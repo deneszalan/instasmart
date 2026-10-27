@@ -1,10 +1,25 @@
 import clipLengths from 'virtual:clip-lengths';
+import { applyTranslation } from '../../shared/translate.ts';
+import type { Post } from '../../shared/schema.ts';
+import { LANG } from '../i18n';
 import type { FieldId, KnowledgeCard } from '../types';
 
 // Every post is a JSON file in content/posts/<field>/<id>.json; images and clips live in content/media/<id>/.
 // @content is this edition's content/ folder (see vite.config.ts).
 const postFiles = import.meta.glob<KnowledgeCard>('@content/posts/*/*.json', { eager: true, import: 'default' });
 const mediaFiles = import.meta.glob<string>('@content/media/*/*', { eager: true, query: '?url', import: 'default' });
+// A post's translations are in content/i18n/<lang>/<field>/<id>.json; one in the reader's language replaces its text.
+const translationFiles = import.meta.glob<unknown>('@content/i18n/*/*/*.json', { eager: true, import: 'default' });
+const translations = new Map(
+  Object.entries(translationFiles)
+    .filter(([path]) => path.split('/').at(-3) === LANG)
+    .map(([path, data]) => [path.split('/').at(-1)!.replace(/\.json$/, ''), data]),
+);
+
+function translate(post: KnowledgeCard): KnowledgeCard {
+  const translation = translations.get(post.id);
+  return translation ? (applyTranslation(post as Post, translation).post as KnowledgeCard) : post;
+}
 
 /** Media URLs by "<post-id>/<file>". */
 const mediaUrls = new Map(Object.entries(mediaFiles).map(([path, url]) => [path.split('/').slice(-2).join('/'), url]));
@@ -29,6 +44,7 @@ function resolve(post: KnowledgeCard): KnowledgeCard {
 }
 
 export const LIBRARY: KnowledgeCard[] = Object.values(postFiles)
+  .map(translate)
   .map(resolve)
   .sort((a, b) => a.id.localeCompare(b.id));
 

@@ -1,0 +1,43 @@
+{
+  "id": "earth-san-clemente-three-levels",
+  "title": "Roms San Clemente steht auf einer verschütteten Kirche, die auf einem Mithras-Tempel steht",
+  "body": "Die Basilika San Clemente, ein paar Schritte vom Kolosseum entfernt, wurde um 1100 auf einer älteren Kirche errichtet. Diese Kirche, 392 n. Chr. schon belegt, war ihrerseits über römischen Bauten des späten 1. Jahrhunderts entstanden, die auf den Ruinen von Gebäuden standen, die im großen Brand von 64 n. Chr. abgebrannt waren. Jedes Mal räumten die Bauleute den Platz nicht: Sie [füllten die alten Gebäude mit Erde oder Schutt](https://basilicasanclemente.com/eng/history/) und nutzten ihre Mauern als Fundamente. So stieg der Boden mit jedem Neubau, beim letzten Mal um etwa 4 Meter, und die älteren Ebenen blieben darunter erhalten, die tiefste als älteste. Um 200 n. Chr. wurde ein Raum in einem der römischen Gebäude zum Mithräum, einem höhlenartigen Tempel, in dem sich Anhänger des Gottes Mithras trafen; sein Altar zeigt Mithras, wie er einen Stier tötet. Der Prior, Pater Joseph Mullooly, begann 1857, die verschüttete Kirche freizulegen. Wasser flutete die unterste Ebene, bis 1912–14 ein Entwässerungstunnel zum Kolosseum gegraben wurde, und an der tiefsten Stelle hört man noch einen unterirdischen Bach.",
+  "slides": [
+    {
+      "question": "Um 1100 wurde die alte Kirche von San Clemente mit Schutt verfüllt und überbaut. Wie viel höher liegt der neue Boden?",
+      "explanation": "Etwa 4 m. Die alte Kirche wurde bis oben an ihre Säulen mit Schutt gefüllt, und ihre Mauern wurden zu Fundamenten der neuen Kirche."
+    },
+    {
+      "alt": "Animation als Schnitt durch den Boden unter der Basilika San Clemente: Gebäude brennen 64 n. Chr. und werden verschüttet, römische Bauten mit einem Mithräum entstehen darauf, dann eine Kirche des 4. Jahrhunderts, dann die heutige Kirche etwa 4 m höher; dann Grabungen, eine Flut und ein Tunnel.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Geh zweimal durch die Geschichte von San Clemente: einmal auf den Ruinen bauend, einmal sie abräumend. Vergleiche, was zum Ausgraben bleibt.",
+      "takeaway": "Auf den Ruinen zu bauen ließ drei Ebenen unter dem heutigen Boden zurück, die tiefste die älteste. Hätte man sie abgeräumt, gäbe es nichts zu finden, was älter ist als die heutige Kirche."
+    },
+    {
+      "alt": "Foto eines gemeißelten Marmoraltars in einem dämmrigen unterirdischen Raum mit grob gewölbter Decke: Vorn kniet eine Gestalt mit Mütze und wehendem Umhang auf einem Stier; an beiden Wänden ziehen sich Steinbänke entlang.",
+      "caption": "Der Altar des Mithräums von San Clemente auf der untersten Ebene: Mithras tötet einen Stier. Die Anhänger saßen auf den Bänken an den Wänden."
+    },
+    {
+      "heading": "Drei Ebenen, die älteste zuerst",
+      "events": [
+        { "when": "64 n. Chr.", "text": "Brand; die Ruinen werden verfüllt" },
+        { "when": "um 200", "text": "Ein Mithräum in einem Römerhaus" },
+        { "when": "spätestens 392", "text": "Eine Kirche auf der römischen Ebene" },
+        { "when": "um 1100", "text": "Verfüllt; die heutige Kirche darauf" },
+        { "when": "1857", "text": "Pater Mullooly beginnt zu graben" }
+      ]
+    },
+    {
+      "heading": "Warum die Böden gestapelt sind",
+      "text": "Neu gebaut wurde hier nie von unten. Die Bauleute füllten jedes alte Gebäude mit Erde oder Schutt, ebneten es ein und nutzten seine Mauern als Fundamente. So stieg der Boden mit jedem Neubau, beim letzten Mal um etwa 4 m, und jede ältere Ebene blieb unter der nächsten erhalten: je tiefer, desto älter."
+    },
+    {
+      "question": "Das Mithräum von San Clemente wurde 1867 entdeckt. Warum konnte man es erst ab 1914 erforschen?",
+      "options": ["Wasser flutete es", "Die Kirche hatte es zugemauert", "Es lag unter einer öffentlichen Straße", "Der Papst verbot es"],
+      "explanation": "Grundwasser flutete die unterste Ebene. Ein Entwässerungstunnel zum Kolosseum, 1912–14 gegraben, leitete es ab."
+    }
+  ],
+  "source": { "label": "Basilika San Clemente: Geschichte" }
+}

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { C, Choice, dot, font, label, line, Range, Readouts, Stage, useGoal, type LabProps } from '../kit';
 import { t } from '../../i18n';
-import { formatNumber } from '../../lib/format';
+import { formatFixed, formatNumber } from '../../lib/format';
 
 /** The Sun's year from one March equinox to the next, about 365.2422 days; the model keeps it fixed. */
 export const SUN_YEAR = 365.2422;
@@ -109,7 +109,7 @@ export default function CaesarYear({ onDone }: LabProps) {
       <Range label={t('Years')} value={years} min={1} max={MAX_YEARS} step={1} onChange={(v) => setYears(Math.round(v))} format={(v) => formatNumber(v)} />
       <Readouts
         items={[
-          { label: t('Average year'), value: t('{n} days', { n: AVERAGE[rule].toFixed(4) }) },
+          { label: t('Average year'), value: t('{n} days', { n: formatFixed(AVERAGE[rule], 4) }) },
           {
             label: t('Equinox moved'),
             value: days < 0.05 ? t('not at all') : d > 0 ? t('{n} days earlier', { n: shown }) : t('{n} days later', { n: shown }),

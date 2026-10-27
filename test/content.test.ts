@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { EDITION_IDS, EDITIONS, type Edition } from '../shared/editions.ts';
+import { EDITION_IDS, EDITIONS, editionLangs, type Edition } from '../shared/editions.ts';
 import { readContentFiles } from '../scripts/disk.ts';
 import { validateContent } from '../shared/validate.ts';
 import { schemaText, SCHEMA_PATH } from '../scripts/content.ts';
@@ -10,7 +10,7 @@ import { clipSeconds, LIBRARY } from '../src/data/library';
 const root = join(__dirname, '..');
 
 const content = Object.fromEntries(
-  EDITION_IDS.map((id) => [id, validateContent(readContentFiles(join(root, EDITIONS[id].dir)), EDITIONS[id].fields)]),
+  EDITION_IDS.map((id) => [id, validateContent(readContentFiles(join(root, EDITIONS[id].dir)), EDITIONS[id].fields, editionLangs(EDITIONS[id]))]),
 );
 
 describe('every edition', () => {

@@ -20,11 +20,12 @@ function walk(dir: string, out: string[]): void {
   }
 }
 
-/** Every file under content/posts and content/media, with repo-relative POSIX paths. */
+/** Every file under content/posts, content/media and content/i18n, with repo-relative POSIX paths. */
 export function readContentFiles(root: string): ContentFile[] {
   const paths: string[] = [];
   walk(join(root, 'content', 'posts'), paths);
   walk(join(root, 'content', 'media'), paths);
+  walk(join(root, 'content', 'i18n'), paths);
   return paths.sort().map((full) => ({
     path: relative(root, full).split(sep).join('/'),
     bytes: readFileSync(full),

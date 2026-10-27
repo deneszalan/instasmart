@@ -1,0 +1,47 @@
+{
+  "id": "engineering-trajans-column-hill",
+  "title": "Die Trajanssäule ist 100 römische Fuß hoch, so hoch wie ein Hügel, der ihr wich, heißt es",
+  "body": "Die Trajanssäule wurde 113 n. Chr. auf dem neuen Forum Kaiser Trajans geweiht, der 98–117 regierte; bei seinem Tod war das Römische Reich so groß wie nie. Die Säule ist 100 römische Fuß (29,8 m) hoch, auf einem 5,4 m hohen Sockel, hohl, mit Wendeltreppe. Laut der Inschrift über ihrer Tür wurde sie errichtet *ad declarandum quantae altitudinis mons et locus tantis operibus sit egestus*: um zu zeigen, wie hoch Berg und Gelände für so große Bauten abgetragen wurden. Der Historiker Cassius Dio schreibt etwa ein Jahrhundert später, das Gelände sei hügelig gewesen und Trajan habe es um die Säulenhöhe abgetragen. Doch Geologie und Grabungen im frühen 20. Jahrhundert, die unter dem Fundament Straße und Häuser der frühen Kaiserzeit fanden, zeigten: Dort stand kein solcher Rücken. Die am wenigsten unbefriedigende Erklärung, schrieb [das Lexikon von Platner und Ashby](https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Forum_Trajani.html) 1929, ist Christian Hülsens: Der Hang des Quirinals wurde zurückgeschnitten, bis die Wand etwa 100 Fuß hoch war, und die **Trajansmärkte** davor stützen sie. Als Trajan 117 starb, kam seine Asche in den Sockel.",
+  "slides": [
+    {
+      "question": "Die Trajanssäule in Rom ist ohne Sockel 100 römische Fuß hoch. Wie viele Meter sind das etwa?",
+      "explanation": "Etwa 29,8 m: Ein römischer Fuß maß knapp 30 cm. Auf ihrem 5,4 m hohen Sockel ragt die Säule etwa 35 m hoch auf."
+    },
+    {
+      "alt": "Animation im Querschnitt, Dämmerung: die Trajanssäule mit goldenem Maßstab von 100 römischen Fuß, die Sockelinschrift, ein abgetragener Erdrücken, ein Graben mit Römerstraße unter der Säule, dann der Hang des Quirinals, zurückgeschnitten zu einer Wand so hoch wie die Säule, davor die Trajansmärkte.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Schneide den Hang bis auf ebenen Boden zurück. Wie weit musst du an einem 30°-Hang graben, für eine Wand so hoch wie die Trajanssäule, 100 römische Fuß?",
+      "takeaway": "Etwa 52 m weit, mit rund 770 m³ Erde pro Meter Hanglänge. Eine doppelt so hohe Wand kostet viermal so viel Erde: Ein Schnitt von 100 Fuß war eine riesige Arbeit."
+    },
+    {
+      "alt": "Foto der unteren Hälfte der Trajanssäule in Rom: ein Marmorschaft mit einem spiralförmigen Band gemeißelter Figuren auf einem quadratischen Sockel mit Waffenreliefs, einer kleinen Tür und darüber der Inschrifttafel; davor stehen zerbrochene graue Granitsäulen des Trajansforums.",
+      "caption": "Die Trajanssäule heute, hinter Granitsäulen des Trajansforums. Die Inschrift ist die Tafel über der Tür im Sockel."
+    },
+    {
+      "text": "Denn dieses ganze Gelände war hügelig gewesen, und er hatte es so weit abgetragen, wie die Säule hoch ist",
+      "attribution": "Cassius Dio, Römische Geschichte 68,16, frühes 3. Jh. n. Chr. (übersetzt)"
+    },
+    {
+      "heading": "Welcher Hügel?",
+      "left": { "label": "Die alte Lesart", "text": "Ein 100 römische Fuß hoher Rücken füllte einst das ganze Gelände, und die Säule zeigt seine Höhe." },
+      "right": { "label": "Die wohl richtige Lesart", "text": "Der Hang des Quirinals neben dem Forum wurde etwa 100 Fuß hoch zurückgeschnitten, und die Trajansmärkte stützen die Wand." }
+    },
+    {
+      "heading": "Trajans Forum und Säule",
+      "events": [
+        { "when": "98 n. Chr.", "text": "Trajan wird Kaiser." },
+        { "when": "112 n. Chr.", "text": "Sein Forum wird eingeweiht." },
+        { "when": "113 n. Chr.", "text": "Die Säule wird geweiht, 12. Mai." },
+        { "when": "117 n. Chr.", "text": "Trajan stirbt; Asche im Sockel." },
+        { "text": "Ein bronzener Petrus ersetzt Trajans verlorene Statue." }
+      ]
+    },
+    {
+      "question": "Was fanden Grabungen im frühen 20. Jahrhundert unter dem Fundament der Trajanssäule in Rom?",
+      "options": ["Eine römische Straße und Häuser", "Den Fels eines Hügels", "Trajans goldene Urne", "Einen verschütteten Tempel"],
+      "explanation": "Eine Straße und Häuser der frühen Kaiserzeit, also stand an dieser Stelle kein Hügel. Der „Hügel“ war wohl der zurückgeschnittene Hang des Quirinals."
+    }
+  ]
+}

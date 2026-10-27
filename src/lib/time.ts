@@ -1,7 +1,7 @@
 import type { KnowledgeCard } from '../types';
-import { EDITION } from '../edition';
+import { LANG } from '../i18n';
 
-const LOCALE = EDITION.lang === 'de' ? 'de-DE' : undefined;
+const LOCALE = LANG === 'de' ? 'de-DE' : undefined;
 const MINUTE = 60_000;
 const HOUR = 60 * MINUTE;
 const DAY = 24 * HOUR;
