@@ -134,6 +134,7 @@ import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } fro
 import { move as obeliskMove, NEED as OBELISK_NEED, ROPES as OBELISK_ROPES, slacks as obeliskSlacks, start as obeliskStart, TARGET as OBELISK_TARGET } from '../src/labs/engineering/vatican-obelisk-1586';
 import { classify as vaticanClassify, insideBorder as vaticanInside, PLACES as VATICAN_PLACES } from '../src/labs/politics/vatican-city-1929';
 import { BEST as PIETA_BEST, fit as pietaFit, MARY_HEAD_X } from '../src/labs/art/pieta-michelangelo';
+import { floorPerPerson as ghettoFloor, groundPerPerson as ghettoGround, PEOPLE as GHETTO_PEOPLE, perHectare as ghettoPerHa, ROME_PER_HA, TARGET as GHETTO_TARGET } from '../src/labs/history/rome-ghetto-1555';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1237,5 +1238,14 @@ describe('lab maths', () => {
     expect(pietaFit(MARY_HEAD_X, 180)).toBeGreaterThan(PIETA_BEST.f - 0.03);
     expect(pietaFit(40, 240)).toBeLessThan(PIETA_BEST.f - 0.1);
     expect(pietaFit(170, 140)).toBeLessThan(PIETA_BEST.f - 0.1);
+  });
+  it('Rome ghetto: 4,000 people on 3 hectares in 1656 is over 1,300 a hectare, about 60 times Rome today, and needs two floors for the room one floor gave in 1555', () => {
+    expect(ghettoPerHa(GHETTO_PEOPLE[1656])).toBeCloseTo(1333.3, 1);
+    expect(Math.round(ROME_PER_HA)).toBe(21);
+    expect(ghettoPerHa(GHETTO_PEOPLE[1656]) / ROME_PER_HA).toBeGreaterThan(60);
+    expect(ghettoGround(GHETTO_PEOPLE[1555])).toBe(15);
+    expect(GHETTO_TARGET).toBe(15);
+    expect(ghettoFloor(GHETTO_PEOPLE[1656], 1)).toBeLessThan(GHETTO_TARGET);
+    expect(ghettoFloor(GHETTO_PEOPLE[1656], 2)).toBe(GHETTO_TARGET);
   });
 });

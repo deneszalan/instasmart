@@ -139,4 +139,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'vatican-obelisk-1586': lazy(() => import('./engineering/vatican-obelisk-1586')),
   'vatican-city-1929': lazy(() => import('./politics/vatican-city-1929')),
   'pieta-michelangelo': lazy(() => import('./art/pieta-michelangelo')),
+  'rome-ghetto-1555': lazy(() => import('./history/rome-ghetto-1555')),
 };

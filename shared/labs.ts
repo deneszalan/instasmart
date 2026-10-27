@@ -139,6 +139,7 @@ export const LABS = {
   'vatican-obelisk-1586': 'Make the 40 ropes of Fontana’s capstans start unevenly tight and sound the trumpet: see overloaded ropes snap, as his critics feared, or their capstans stop while the others catch up.',
   'vatican-city-1929': 'Tap places on a map of Rome and see what each is under the Lateran Treaty of 1929: Vatican City, St Peter’s Square policed by Italy, Holy See property with an embassy’s immunities, or Italy.',
   'pieta-michelangelo': 'Drag the tip of a triangle standing on the base of Michelangelo’s Pietà until it fits the outline of the whole group, and see where the best tip lies.',
+  'rome-ghetto-1555': 'Pick a year in Rome’s ghetto, from 2,000 people in 1555 to 4,000 in 1656, and add floors to its houses to see how much room each person could have on the same 3 hectares.',
 } as const;
 
 export type LabId = keyof typeof LABS;
