@@ -1268,6 +1268,7 @@ describe('lab maths', () => {
     expect(augTitles(augTau(0))).toMatchObject({ augustus: false, cos: 4, trib: 0 });
     const hits = Array.from({ length: AUG_STEPS + 1 }, (_, i) => i).filter((i) => augObelisk(augTitles(augTau(i))));
     expect(hits).toEqual([41, 42]);
+  });
   it('Trajan’s Column: a 30° hillside cut back about 51.6 m leaves a face of 100 Roman feet (29.77 m) and about 767 m³ of earth per metre', () => {
     expect(TRAJAN_COLUMN).toBeCloseTo(29.77, 9);
     expect(trajanBack(30, TRAJAN_COLUMN)).toBeCloseTo(51.56, 2);
@@ -1298,6 +1299,7 @@ describe('lab maths', () => {
     expect(titusContrast(450)).toBeGreaterThan(TITUS_STANDS);
     expect(titusContrast(500)).toBeLessThan(TITUS_STANDS);
     expect(titusContrast(620)).toBeLessThan(1.1);
+  });
   it('Vatican obelisk: with uneven ropes, overloaded capstans that stop let all 40 share the load and lift it 2¾ palms; ropes that snap fail', () => {
     const slack = obeliskSlacks(0.5);
     let s = obeliskStart(slack);
@@ -1342,6 +1344,7 @@ describe('lab maths', () => {
     expect(GHETTO_TARGET).toBe(15);
     expect(ghettoFloor(GHETTO_PEOPLE[1656], 1)).toBeLessThan(GHETTO_TARGET);
     expect(ghettoFloor(GHETTO_PEOPLE[1656], 2)).toBe(GHETTO_TARGET);
+  });
   it('Santa Maria Maggiore: a bishop Sixtus, after Ephesus and before the 1295 apse leaves only Sixtus III, 432–440', () => {
     expect(smmWindows([])).toEqual([[100, 1600]]);
     expect(smmWindows(['sixtus'])).toHaveLength(5);
