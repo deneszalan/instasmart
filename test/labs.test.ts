@@ -94,6 +94,7 @@ import { bruteForce, G as curveG, multiply as curveMultiply, ORDER as curveOrder
 import { clockCount, measured as leapMeasured } from '../src/labs/tech/leap-seconds-abolished';
 import { NUCLIDES, remaining as nuclideLeft, yearsAt as repositoryYears, yearsUntil } from '../src/labs/engineering/onkalo-nuclear-waste-licence';
 import { agreeing as sapphicAgreeing, fits as sapphicFits, SAPPHIC, SYLLABLES as SAPPHO_SYLLABLES } from '../src/labs/language/anne-carson-sappho-brackets';
+import { AVERAGE as AVERAGE_BASKET, inflationFor } from '../src/labs/economics/us-inflation-basket-weights';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -797,5 +798,17 @@ describe('lab maths', () => {
     expect(sapphicFits(line.map(() => S))).toBe(false);
     expect(sapphicAgreeing(line.map(() => S))).toBe(6);
     expect(sapphicFits([S, ...line.slice(1)])).toBe(false);
+  });
+
+  it('inflation basket: the average basket gives 3.7%, energy adds about 1.3 points, and from about 13.6% spent on energy inflation reaches 5%', () => {
+    expect(AVERAGE_BASKET.energy).toBeCloseTo(6.39, 1);
+    expect(AVERAGE_BASKET.food).toBeCloseTo(13.67, 1);
+    const avg = inflationFor(AVERAGE_BASKET.energy, AVERAGE_BASKET.food);
+    expect(avg.total).toBeCloseTo(3.7, 1);
+    expect(avg.energy).toBeCloseTo(1.3, 1);
+    expect(inflationFor(15, AVERAGE_BASKET.food).total).toBeCloseTo(5.26, 1);
+    expect(inflationFor(13.5, 13.5).total).toBeLessThan(5);
+    expect(inflationFor(14, 13.5).total).toBeGreaterThan(5);
+    expect(inflationFor(0, 13.5).total).toBeCloseTo(2.6 - 0.135 * 0.1, 6);
   });
 });

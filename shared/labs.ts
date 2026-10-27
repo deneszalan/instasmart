@@ -99,6 +99,7 @@ export const LABS = {
   'leap-seconds-abolished': 'Time an event across a leap second on a clock that repeats 23:59:59, smears the second or has none, and make the timer read less than zero.',
   'onkalo-nuclear-waste-licence': 'Let a million years pass in a repository and watch four nuclides in spent fuel decay at their own half-lives, from decades to tens of thousands of years.',
   'anne-carson-sappho-brackets': 'Mark the 11 syllables of a line by Sappho long or short with simple rules, hear the rhythm, and find the Sapphic line.',
+  'us-inflation-basket-weights': 'Change how much of your spending goes on energy and food, with real US price changes for the year to September 2026, and see your own inflation.',
 } as const;
 
 export type LabId = keyof typeof LABS;

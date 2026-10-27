@@ -99,4 +99,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'leap-seconds-abolished': lazy(() => import('./tech/leap-seconds-abolished')),
   'onkalo-nuclear-waste-licence': lazy(() => import('./engineering/onkalo-nuclear-waste-licence')),
   'anne-carson-sappho-brackets': lazy(() => import('./language/anne-carson-sappho-brackets')),
+  'us-inflation-basket-weights': lazy(() => import('./economics/us-inflation-basket-weights')),
 };
