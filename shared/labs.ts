@@ -139,6 +139,7 @@ export const LABS = {
   'palatine-huts-romulus': 'Set how long Rome’s seven legendary kings reigned on average, count back from the first consuls of 509 BC, and see which ancient founding date you reach, beside the Palatine hut village dated by digging.',
   'two-consuls-one-year': 'Run a vote of the Roman Republic’s Centuriate Assembly, which elected the consuls: set how the 98 richest and the 95 other centuries vote, and see when the count stops.',
   'caesar-ides-pompey-curia': 'Drag through the centuries after Julius Caesar’s murder on the Ides of March, 44 BC, and see each account appear when it was written, with its count of wounds and his last words.',
+  'augustus-offices-counted': 'Move through the life of Augustus, Rome’s first emperor, and read his titles as his inscriptions give them: consulships, the yearly count of his tribune’s power, chief priest, Father of the Country.',
 } as const;
 
 export type LabId = keyof typeof LABS;

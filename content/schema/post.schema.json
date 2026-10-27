@@ -229,7 +229,8 @@
                   "monte-testaccio-amphorae",
                   "palatine-huts-romulus",
                   "two-consuls-one-year",
-                  "caesar-ides-pompey-curia"
+                  "caesar-ides-pompey-curia",
+                  "augustus-offices-counted"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

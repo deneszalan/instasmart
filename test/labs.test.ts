@@ -134,6 +134,7 @@ import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } fro
 import { foundingYear as palatineFounding, nearest as palatineNearest, reignFor as palatineReign, VARRO_BC as PALATINE_VARRO } from '../src/labs/history/palatine-huts-romulus';
 import { MAJORITY as CENTURIATE_MAJORITY, RICH as CENTURIATE_RICH, runVote as centuriateVote, shareOut as centuriateShare, TOTAL as CENTURIATE_TOTAL } from '../src/labs/politics/two-consuls-one-year';
 import { latest as caesarLatest, posOf as caesarPos, yearOf as caesarYear, yearsAfter as caesarAfter, yearsAt as caesarYearsAt } from '../src/labs/history/caesar-ides-pompey-curia';
+import { astro as augAstro, inscription as augInscription, matchesObelisk as augObelisk, roman as augRoman, STEPS as AUG_STEPS, tauAt as augTau, titlesAt as augTitles } from '../src/labs/history/augustus-offices-counted';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1236,5 +1237,20 @@ describe('lab maths', () => {
     expect(caesarLatest(160)?.id).toBe('plutarch');
     expect(caesarLatest(caesarYearsAt(100))?.id).toBe('shakespeare');
     for (const n of [0, 100, 270, 900, 1700]) expect(caesarYearsAt(caesarPos(n))).toBeCloseTo(n, 6);
+  });
+  it('Augustus: consul XI and tribune’s power XIV only from mid-10 to mid-9 BC, the obelisk’s date; XXXVII by AD 14', () => {
+    expect(augRoman(14)).toBe('XIV');
+    expect(augRoman(37)).toBe('XXXVII');
+    expect(augTitles(augAstro(-10) + 0.75)).toMatchObject({ cos: 11, trib: 14, pontifex: true, pater: false, augustus: true });
+    expect(augObelisk(augTitles(augAstro(-10) + 0.25))).toBe(false);
+    expect(augObelisk(augTitles(augAstro(-9) + 0.25))).toBe(true);
+    expect(augObelisk(augTitles(augAstro(-9) + 0.75))).toBe(false);
+    expect(augTitles(augAstro(11) + 0.6).trib).toBe(34);
+    const last = augTitles(augTau(AUG_STEPS));
+    expect(last).toMatchObject({ cos: 13, trib: 37, pater: true });
+    expect(augInscription(last).join(' ')).toContain('TRIB · POT · XXXVII');
+    expect(augTitles(augTau(0))).toMatchObject({ augustus: false, cos: 4, trib: 0 });
+    const hits = Array.from({ length: AUG_STEPS + 1 }, (_, i) => i).filter((i) => augObelisk(augTitles(augTau(i))));
+    expect(hits).toEqual([41, 42]);
   });
 });
