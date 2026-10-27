@@ -120,6 +120,7 @@ export const LABS = {
   'navona-domitian-stadium': 'Wrap rows of benches round the track of the Stadium of Domitian, under today’s Piazza Navona, and see how many spectators fit.',
   'aqua-virgo-low-fountains': 'Set how high the Aqua Virgo’s water stands at its end and how deep a fountain is sunk, and see how high its jet can rise.',
   'caravaggio-calling-light': 'Light a face as Caravaggio did: choose the studio’s walls and windows and see how dark the shadows get.',
+  'monte-testaccio-amphorae': 'Set how many olive-oil jars Monte Testaccio holds and over how many years they came, and see how much oil Rome took in.',
 } as const;
 
 export type LabId = keyof typeof LABS;

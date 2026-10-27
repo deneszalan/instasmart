@@ -115,6 +115,7 @@ import { doorwayLit, litStretch, noonAltitude, placeOf, R as PANTHEON_R } from '
 import { MAX_ROWS as NAVONA_MAX_ROWS, nearEstimate as navonaNear, rowLength as navonaRow, seats as navonaSeats, STANDS as NAVONA_STANDS } from '../src/labs/history/navona-domitian-stadium';
 import { jetHeight as virgoJet, jetTop as virgoTop, nozzleSpeed as virgoSpeed } from '../src/labs/engineering/aqua-virgo-low-fountains';
 import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggio-calling-light';
+import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } from '../src/labs/economics/monte-testaccio-amphorae';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1031,5 +1032,10 @@ describe('lab maths', () => {
     expect(studioContrast('grey', 'one')).toBeLessThan(TENEBRIST);
     expect(studioContrast('white', 'one')).toBeLessThan(4);
     expect(studioContrast('black', 'two')).toBeLessThan(2);
+  });
+  it('Monte Testaccio: 25 to 53 million jars of 70 litres hold about 1.75 to 3.7 billion litres; 25 million over 250 years is 7 million litres a year', () => {
+    expect(testaccioLitres(25e6)).toBe(1.75e9);
+    expect(testaccioLitres(53e6)).toBe(3.71e9);
+    expect(testaccioPerYear(25e6, 250)).toBe(7e6);
   });
 });
