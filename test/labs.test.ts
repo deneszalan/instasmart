@@ -92,6 +92,7 @@ import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
 import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
 import { bruteForce, G as curveG, multiply as curveMultiply, ORDER as curveOrder, samePoint, searchSeconds, UNIVERSE_SECONDS } from '../src/labs/tech/certificate-key-number-four';
 import { clockCount, measured as leapMeasured } from '../src/labs/tech/leap-seconds-abolished';
+import { NUCLIDES, remaining as nuclideLeft, yearsAt as repositoryYears, yearsUntil } from '../src/labs/engineering/onkalo-nuclear-waste-licence';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -771,5 +772,17 @@ describe('lab maths', () => {
       expect(leapMeasured('smear', s, l)).toBeGreaterThan(0);
       expect(leapMeasured('none', s, l)).toBeGreaterThan(0);
     }
+  });
+
+  it('spent fuel: caesium-137 falls below a thousandth after about 300 years (ten half-lives), while 99% of plutonium-239 is still there', () => {
+    const cs = NUCLIDES.find((n) => n.id === 'cs137')!, pu = NUCLIDES.find((n) => n.id === 'pu239')!;
+    expect(nuclideLeft(cs.half, cs.half)).toBeCloseTo(0.5, 9);
+    expect(yearsUntil(cs.half, 1 / 1000)).toBeCloseTo(299.4, 1);
+    expect(nuclideLeft(cs.half, 300)).toBeLessThan(1 / 1000);
+    expect(nuclideLeft(pu.half, 300)).toBeGreaterThan(0.99);
+    expect(repositoryYears(0)).toBeCloseTo(1, 9);
+    expect(repositoryYears(100)).toBeCloseTo(1e6, 3);
+    expect(nuclideLeft(cs.half, repositoryYears(41))).toBeGreaterThan(1 / 1000);
+    expect(nuclideLeft(cs.half, repositoryYears(42))).toBeLessThan(1 / 1000);
   });
 });

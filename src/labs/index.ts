@@ -97,4 +97,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'power-grid-transformers': lazy(() => import('./engineering/power-grid-transformers')),
   'certificate-key-number-four': lazy(() => import('./tech/certificate-key-number-four')),
   'leap-seconds-abolished': lazy(() => import('./tech/leap-seconds-abolished')),
+  'onkalo-nuclear-waste-licence': lazy(() => import('./engineering/onkalo-nuclear-waste-licence')),
 };
