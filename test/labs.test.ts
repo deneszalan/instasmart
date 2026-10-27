@@ -133,6 +133,7 @@ import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggi
 import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } from '../src/labs/economics/monte-testaccio-amphorae';
 import { foundingYear as palatineFounding, nearest as palatineNearest, reignFor as palatineReign, VARRO_BC as PALATINE_VARRO } from '../src/labs/history/palatine-huts-romulus';
 import { MAJORITY as CENTURIATE_MAJORITY, RICH as CENTURIATE_RICH, runVote as centuriateVote, shareOut as centuriateShare, TOTAL as CENTURIATE_TOTAL } from '../src/labs/politics/two-consuls-one-year';
+import { latest as caesarLatest, posOf as caesarPos, yearOf as caesarYear, yearsAfter as caesarAfter, yearsAt as caesarYearsAt } from '../src/labs/history/caesar-ides-pompey-curia';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1222,5 +1223,18 @@ describe('lab maths', () => {
     expect(centuriateVote(60, 30)).toMatchObject({ winner: 'B', called: 188 });
     expect(centuriateVote(49, 48).called).toBe(193);
     for (const n of [0, 7, 48, 95]) expect(centuriateShare(n).reduce((s, x) => s + x, 0)).toBe(n);
+  });
+  it('Caesar: Suetonius wrote 164 years after the Ides of 44 BC, Shakespeare 1,642; the slider reaches every account', () => {
+    expect(caesarAfter(121)).toBe(164);
+    expect(caesarAfter(1599)).toBe(1642);
+    expect(caesarAfter(14)).toBe(57);
+    expect(caesarYear(0)).toBe(-44);
+    expect(caesarYear(44)).toBe(1);
+    expect(caesarYear(164)).toBe(121);
+    expect(caesarLatest(30)).toBeUndefined();
+    expect(caesarLatest(60)?.id).toBe('nicolaus');
+    expect(caesarLatest(160)?.id).toBe('plutarch');
+    expect(caesarLatest(caesarYearsAt(100))?.id).toBe('shakespeare');
+    for (const n of [0, 100, 270, 900, 1700]) expect(caesarYearsAt(caesarPos(n))).toBeCloseTo(n, 6);
   });
 });

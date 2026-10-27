@@ -228,7 +228,8 @@
                   "caravaggio-calling-light",
                   "monte-testaccio-amphorae",
                   "palatine-huts-romulus",
-                  "two-consuls-one-year"
+                  "two-consuls-one-year",
+                  "caesar-ides-pompey-curia"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },
