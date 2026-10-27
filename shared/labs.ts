@@ -98,6 +98,7 @@ export const LABS = {
   'sweden-negative-parliamentarism': 'Set how each party in Sweden’s Riksdag votes on a prime minister, and see that only 175 no votes can stop one, however few vote yes.',
   'quebec-first-past-the-post': 'Spread a party’s 13% of the votes over more or fewer of ten ridings, and see first past the post turn the same votes into no seats or several.',
   'un-human-rights-council-election': 'Set the votes for, against and abstaining, and compare the 97 of 193 UN members needed to join the Human Rights Council with the two-thirds needed to suspend a member.',
+  'reykjavik-summit-inf-treaty': 'Pick how a missile is launched and how far it flies, and see whether the 1987 INF Treaty banned it.',
 } as const;
 
 export type LabId = keyof typeof LABS;

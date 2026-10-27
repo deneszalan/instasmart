@@ -188,7 +188,8 @@
                   "power-grid-transformers",
                   "sweden-negative-parliamentarism",
                   "quebec-first-past-the-post",
-                  "un-human-rights-council-election"
+                  "un-human-rights-council-election",
+                  "reykjavik-summit-inf-treaty"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },
