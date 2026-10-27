@@ -137,4 +137,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'caravaggio-calling-light': lazy(() => import('./art/caravaggio-calling-light')),
   'monte-testaccio-amphorae': lazy(() => import('./economics/monte-testaccio-amphorae')),
   'vatican-obelisk-1586': lazy(() => import('./engineering/vatican-obelisk-1586')),
+  'vatican-city-1929': lazy(() => import('./politics/vatican-city-1929')),
 };

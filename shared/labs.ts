@@ -137,6 +137,7 @@ export const LABS = {
   'caravaggio-calling-light': 'Light a face as Caravaggio did: choose the studio’s walls and windows and see how dark the shadows get.',
   'monte-testaccio-amphorae': 'Set how many olive-oil jars Monte Testaccio holds and over how many years they came, and see how much oil Rome took in.',
   'vatican-obelisk-1586': 'Make the 40 ropes of Fontana’s capstans start unevenly tight and sound the trumpet: see overloaded ropes snap, as his critics feared, or their capstans stop while the others catch up.',
+  'vatican-city-1929': 'Tap places on a map of Rome and see what each is under the Lateran Treaty of 1929: Vatican City, St Peter’s Square policed by Italy, Holy See property with an embassy’s immunities, or Italy.',
 } as const;
 
 export type LabId = keyof typeof LABS;

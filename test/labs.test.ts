@@ -132,6 +132,7 @@ import { jetHeight as virgoJet, jetTop as virgoTop, nozzleSpeed as virgoSpeed } 
 import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggio-calling-light';
 import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } from '../src/labs/economics/monte-testaccio-amphorae';
 import { move as obeliskMove, NEED as OBELISK_NEED, ROPES as OBELISK_ROPES, slacks as obeliskSlacks, start as obeliskStart, TARGET as OBELISK_TARGET } from '../src/labs/engineering/vatican-obelisk-1586';
+import { classify as vaticanClassify, insideBorder as vaticanInside, PLACES as VATICAN_PLACES } from '../src/labs/politics/vatican-city-1929';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1217,5 +1218,16 @@ describe('lab maths', () => {
     let g = obeliskStart(even);
     for (let i = 0; i < 14; i++) g = obeliskMove(g, even, 'snap');
     expect(g.broken.some(Boolean)).toBe(false);
+  });
+  it('Vatican City: the basilica and gardens are inside the border, the square is Vatican City policed by Italy, the Lateran is Holy See property in Italy', () => {
+    expect(vaticanInside(41.9022, 12.4536)).toBe(true);
+    expect(vaticanInside(41.902, 12.4615)).toBe(false);
+    expect(vaticanClassify(41.9022, 12.4536).kind).toBe('vatican');
+    expect(vaticanClassify(41.904, 12.45).kind).toBe('vatican');
+    expect(vaticanClassify(41.90222, 12.45727).kind).toBe('square');
+    expect(vaticanClassify(41.88585, 12.50559)).toEqual({ kind: 'embassy', place: 'lateran' });
+    expect(vaticanClassify(41.89094, 12.4919).kind).toBe('italy');
+    expect(vaticanClassify(41.88, 12.52).kind).toBe('italy');
+    for (const p of VATICAN_PLACES) expect(vaticanClassify(p.lat, p.lon, 0.05).kind).toBe(p.kind);
   });
 });

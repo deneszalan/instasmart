@@ -1,0 +1,179 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-vatican-city-1929",
+  "field": "politics",
+  "title": "Vatican City, a state of just 0.44 km², was made in 1929 to settle a quarrel over Rome",
+  "emoji": "🗝️",
+  "body": "On 20 September 1870 Italian troops broke through Rome’s walls near Porta Pia and took the city, ending the Papal States, which the popes had ruled in central Italy since AD 756 and which had covered about 44,000 km² before 1859. Rome became Italy’s capital, but Pope Pius IX refused to accept it, or the Law of Guarantees that Italy passed for him in 1871; he and the next popes stayed inside the Vatican and called themselves prisoners. This standoff, the Roman Question, ended with the [Lateran Treaty](https://www.vatican.va/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19290211_patti-lateranensi_it.html) of 11 February 1929. Italy recognised the sovereignty of the Holy See, the pope and the central government of the Catholic Church, over a new state, Vatican City, to assure it ‘absolute and visible independence’; the Holy See recognised the Kingdom of Italy with Rome as its capital. Vatican City covers [0.44 km²](https://www.vaticanstate.va/en/state-and-government/general-informations/geography.html), including St Peter’s Square, which stays open to all and is policed by Italy. It is an **absolute monarchy**: the pope holds full power to make laws, govern and judge.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Italian troops took Rome on 20 September 1870. For how many years did the popes then refuse to leave the Vatican?",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "answer": 59,
+      "unit": "years",
+      "explanation": "59 years: from 1870 until the Lateran Treaty of 11 February 1929, Pius IX and the next four popes stayed inside the Vatican, calling themselves prisoners."
+    },
+    {
+      "type": "video",
+      "src": "vatican.mp4",
+      "poster": "vatican.jpg",
+      "alt": "Animation on a night-blue map: Rome's walls and the Tiber, Italian troops breaking in at Porta Pia in 1870; the popes inside the Vatican until 1929; the Lateran Treaty signed; Vatican City's real border shrinking to a dot in a square as big as the Papal States; the border across St Peter's Square.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Sinfonia Number 5” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "vatican-city-1929",
+      "prompt": "Tap around this map of Rome and find a spot of each of the four kinds of territory that the 1929 Lateran Treaty set up.",
+      "takeaway": "Vatican City is the Holy See’s own state, but its St Peter’s Square stays open and Italian police keep order there. The great basilicas elsewhere are in Italy yet belong to the Holy See, with an embassy’s immunities."
+    },
+    {
+      "type": "image",
+      "src": "square-photo.jpg",
+      "alt": "Photo from the dome of St Peter’s Basilica: the oval St Peter’s Square between its two curved colonnades, the obelisk in the middle, and the long straight street to the Tiber beyond, with the rooftops of Rome under a hazy blue sky.",
+      "caption": "St Peter’s Square from the dome. Vatican City’s border crosses the open end of the square, between the two arms of the colonnade.",
+      "fit": "cover",
+      "credit": "Agawis · CC BY-SA 4.0"
+    },
+    {
+      "type": "timeline",
+      "heading": "From the Papal States to Vatican City",
+      "events": [
+        {
+          "when": "AD 756",
+          "text": "The Papal States begin."
+        },
+        {
+          "when": "1860",
+          "text": "Most papal lands are annexed."
+        },
+        {
+          "when": "20 Sep 1870",
+          "text": "Italian troops take Rome."
+        },
+        {
+          "when": "11 Feb 1929",
+          "text": "The Lateran Treaty creates Vatican City."
+        },
+        {
+          "when": "1984",
+          "text": "Catholicism stops being Italy’s state religion."
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Two names, two things",
+      "left": {
+        "label": "Holy See",
+        "text": "The pope and the central government of the Catholic Church. It is sovereign: it signs treaties, like the one of 1929."
+      },
+      "right": {
+        "label": "Vatican City",
+        "text": "The state of 0.44 km² that the treaty created under the Holy See’s sovereignty, with its own laws, stamps and euro coins."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "St Peter’s Square is part of Vatican City. Under the 1929 Lateran Treaty, whose police keep order in it?",
+      "options": [
+        "Italy’s police",
+        "The Swiss Guard",
+        "The Vatican Gendarmerie",
+        "Rome’s city guards"
+      ],
+      "answer": 0,
+      "explanation": "Article 3 of the treaty keeps the square open to the public and under the Italian police, who stop at the foot of the steps of St Peter’s Basilica."
+    }
+  ],
+  "tags": [
+    "rome",
+    "vatican",
+    "politics",
+    "papacy",
+    "lateran",
+    "italy"
+  ],
+  "source": {
+    "label": "Vatican City State: History",
+    "url": "https://www.vaticanstate.va/en/state-and-government/history.html"
+  },
+  "createdAt": "2026-10-27T18:26:10Z",
+  "theme": {
+    "gradient": [
+      "#0f1628",
+      "#4a3d14"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}
