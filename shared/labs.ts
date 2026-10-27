@@ -119,6 +119,7 @@ export const LABS = {
   'sistine-ceiling-giornate': 'Light a fresco panel from the side until the seams between its day-patches show, and number the patches in the order they were laid.',
   'school-of-athens-vanishing-point': 'Drag a point until it lies on every receding edge of a schematic School of Athens, then find where the floor tiles’ diagonals meet the horizon, and read off the painter’s eye height and distance.',
   'st-peters-dome-chains': 'Set the outward push and the lantern’s load on one slice of a cracked dome, and find a line of thrust, Poleni’s hanging chain turned over, that stays inside the masonry.',
+  'gallery-of-maps-danti': 'Place regions of Italy on the two walls of the Vatican’s Gallery of Maps by which side of the Apennines they lie, and watch the corridor fill from north to south.',
 } as const;
 
 export type LabId = keyof typeof LABS;

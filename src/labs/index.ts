@@ -119,4 +119,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'sistine-ceiling-giornate': lazy(() => import('./art/sistine-ceiling-giornate')),
   'school-of-athens-vanishing-point': lazy(() => import('./math/school-of-athens-vanishing-point')),
   'st-peters-dome-chains': lazy(() => import('./engineering/st-peters-dome-chains')),
+  'gallery-of-maps-danti': lazy(() => import('./earth/gallery-of-maps-danti')),
 };

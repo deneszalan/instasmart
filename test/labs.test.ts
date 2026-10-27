@@ -114,6 +114,7 @@ import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '
 import { canLay, PATCHES as GIORNATE_PATCHES, relief, seams as giornateSeams, under as lapsOver } from '../src/labs/art/sistine-ceiling-giornate';
 import { DIAGONALS as ATHENS_DIAGONALS, DIST as ATHENS_DIST, EDGES as ATHENS_EDGES, EYE as ATHENS_EYE, offLine, project as athensProject } from '../src/labs/math/school-of-athens-vanishing-point';
 import { bestLine, fits as thrustFits, PIECES as DOME_PIECES, SLICE_WEIGHT, THICK, thrustLine } from '../src/labs/engineering/st-peters-dome-chains';
+import { apennineSide, REGIONS as MAP_REGIONS } from '../src/labs/earth/gallery-of-maps-danti';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1027,5 +1028,13 @@ describe('lab maths', () => {
     expect(pts.at(-1)![1]).toBeCloseTo(0, 9);
     expect(DOME_PIECES[0].w).toBeGreaterThan(DOME_PIECES.at(-1)!.w);
     expect(DOME_PIECES.reduce((s, p) => s + p.w, 0)).toBeCloseTo(SLICE_WEIGHT, 9);
+  });
+  it('gallery of maps: every region lies on the side of the Apennines that matches its wall; Rome is west, Milan and Turin drain to the Adriatic side', () => {
+    for (const r of MAP_REGIONS) expect([r.name, apennineSide(r.lon, r.lat)]).toEqual([r.name, r.wall]);
+    expect(apennineSide(12.5, 41.9)).toBe('tyrrhenian');
+    expect(apennineSide(9.19, 45.46)).toBe('adriatic');
+    expect(apennineSide(7.69, 45.07)).toBe('adriatic');
+    expect(apennineSide(13.36, 38.12)).toBe('tyrrhenian');
+    expect(apennineSide(18.17, 40.35)).toBe('adriatic');
   });
 });
