@@ -136,6 +136,7 @@ export const LABS = {
   'aqua-virgo-low-fountains': 'Set how high the Aqua Virgo’s water stands at its end and how deep a fountain is sunk, and see how high its jet can rise.',
   'caravaggio-calling-light': 'Light a face as Caravaggio did: choose the studio’s walls and windows and see how dark the shadows get.',
   'monte-testaccio-amphorae': 'Set how many olive-oil jars Monte Testaccio holds and over how many years they came, and see how much oil Rome took in.',
+  'palatine-huts-romulus': 'Set how long Rome’s seven legendary kings reigned on average, count back from the first consuls of 509 BC, and see which ancient founding date you reach, beside the Palatine hut village dated by digging.',
 } as const;
 
 export type LabId = keyof typeof LABS;

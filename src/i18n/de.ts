@@ -1771,4 +1771,12 @@ export const de: Record<string, string> = {
   '{n} million litres': '{n} Millionen Liter',
   'Estimates tried': 'Ausprobierte Schätzungen',
   'Simplified: every jar held 70 litres and the jars came evenly over the years; the real flow rose and fell.': 'Vereinfacht: Jeder Krug fasste 70 Liter, und die Krüge kamen gleichmäßig über die Jahre; in Wirklichkeit schwankte der Zustrom.',
+  'Average reign of each king': 'Durchschnittliche Regierungszeit jedes Königs',
+  'Founding year by this count, BC': 'Gründungsjahr nach dieser Rechnung, v. Chr.',
+  'Nearest ancient founding date, BC': 'Nächstes antikes Gründungsdatum, v. Chr.',
+  'Palatine hut village, dated by digging': 'Hüttendorf auf dem Palatin, durch Grabungen datiert',
+  'Republic, from 509 BC': 'Republik, ab 509 v. Chr.',
+  'Seven reigns of {r} years counted back from 509 BC reach {n} BC': 'Sieben Regierungszeiten von je {r} Jahren, von 509 v. Chr. zurückgezählt, führen nach {n} v. Chr.',
+  'Simplified: one average reign for all seven kings, counted back from 509 BC, the first year of the Republic by Varro’s count.': 'Vereinfacht: eine durchschnittliche Regierungszeit für alle sieben Könige, zurückgezählt von 509 v. Chr., dem ersten Jahr der Republik nach Varros Zählung.',
+  'Years of the seven kings': 'Jahre der sieben Könige',
 };

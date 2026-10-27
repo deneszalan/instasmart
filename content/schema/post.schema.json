@@ -226,7 +226,8 @@
                   "navona-domitian-stadium",
                   "aqua-virgo-low-fountains",
                   "caravaggio-calling-light",
-                  "monte-testaccio-amphorae"
+                  "monte-testaccio-amphorae",
+                  "palatine-huts-romulus"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

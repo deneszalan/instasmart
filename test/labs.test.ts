@@ -131,6 +131,7 @@ import { MAX_ROWS as NAVONA_MAX_ROWS, nearEstimate as navonaNear, rowLength as n
 import { jetHeight as virgoJet, jetTop as virgoTop, nozzleSpeed as virgoSpeed } from '../src/labs/engineering/aqua-virgo-low-fountains';
 import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggio-calling-light';
 import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } from '../src/labs/economics/monte-testaccio-amphorae';
+import { foundingYear as palatineFounding, nearest as palatineNearest, reignFor as palatineReign, VARRO_BC as PALATINE_VARRO } from '../src/labs/history/palatine-huts-romulus';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1198,5 +1199,15 @@ describe('lab maths', () => {
     expect(testaccioLitres(25e6)).toBe(1.75e9);
     expect(testaccioLitres(53e6)).toBe(3.71e9);
     expect(testaccioPerYear(25e6, 250)).toBe(7e6);
+  });
+  it('Palatine: 244 years of seven kings back from 509 BC is Varro’s 753 BC, almost 35 years a reign; Timaeus’s 814 BC would need nearly 44', () => {
+    expect(palatineFounding(244 / 7)).toBe(PALATINE_VARRO);
+    expect(palatineFounding(34.8)).toBe(753);
+    expect(palatineFounding(34.9)).toBe(753);
+    expect(palatineFounding(35)).toBe(754);
+    expect(palatineReign(753)).toBeCloseTo(34.86, 2);
+    expect(palatineReign(814)).toBeCloseTo(43.57, 2);
+    expect(palatineNearest(palatineFounding(20)).who).toBe('Cincius');
+    expect(palatineNearest(753).who).toBe('Varro');
   });
 });

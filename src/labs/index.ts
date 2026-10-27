@@ -136,4 +136,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'aqua-virgo-low-fountains': lazy(() => import('./engineering/aqua-virgo-low-fountains')),
   'caravaggio-calling-light': lazy(() => import('./art/caravaggio-calling-light')),
   'monte-testaccio-amphorae': lazy(() => import('./economics/monte-testaccio-amphorae')),
+  'palatine-huts-romulus': lazy(() => import('./history/palatine-huts-romulus')),
 };
