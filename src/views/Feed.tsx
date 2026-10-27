@@ -3,10 +3,11 @@ import { Check } from 'lucide-react';
 import type { KnowledgeCard, Post } from '../types';
 import { LIBRARY } from '../data/library';
 import { authorGroup } from '../lib/authors';
-import { endlessFeed, take, type FeedEntry } from '../lib/feed';
+import { endlessFeed, sortCards, take, type FeedEntry } from '../lib/feed';
 import { createWikiStream, type WikiPost } from '../lib/wiki';
 import { useStore } from '../state/store';
 import { PostView } from '../components/Post';
+import { SortChips } from '../components/SortChips';
 import { StoriesBar } from '../components/StoriesBar';
 import { WRITERS, WriterChips } from '../components/WriterChips';
 import { t } from '../i18n';
@@ -64,15 +65,16 @@ function CaughtUp({ round, total, writer, inOrder, onShowAll }: CaughtUpProps) {
 }
 
 interface FeedProps {
-  /** "Written by" filter: an author group id, or "" for everyone. The parent remounts the feed when it changes. */
+  /** "Written by" filter: an author group id, or "" for everyone. The parent remounts the feed when it or the sort order changes. */
   by: string;
   onBy: (id: string) => void;
 }
 
 export function Feed({ by, onBy }: FeedProps) {
   const { state } = useStore();
-  // Wikipedia's posts aren't by any of the writers, so they only appear in the unfiltered feed.
-  const wikiEnabled = EDITION.wiki && state.settings.wiki && !by;
+  const { sort } = state.settings;
+  // Wikipedia's posts aren't by any of the writers or in the library's timeline, so they only appear in the unfiltered, mixed feed.
+  const wikiEnabled = EDITION.wiki && state.settings.wiki && !by && sort === 'mix';
   const writer = WRITERS.find((w) => w.id === by)?.label;
 
   /** Next page of entries. A one-writer feed stops after its first full round. */
@@ -85,13 +87,15 @@ export function Feed({ by, onBy }: FeedProps) {
     [by],
   );
 
-  // The stream is created once per visit. It opens with the edition's set order, if any, then pieces you haven't read yet.
+  // The stream is created once per visit. Mixed, it opens with the edition's set order, if any, then pieces you haven't
+  // read yet; sorted by time, every round lists the whole library in that order.
   const [session] = useState(() => {
     const cards: KnowledgeCard[] = by ? LIBRARY.filter((c) => authorGroup(c)?.id === by) : LIBRARY;
-    if (cards.length === 0) return { cards, feed: null, firstPage: [], done: true };
-    const feed = endlessFeed(cards, { seed: Date.now(), seen: new Set(Object.keys(state.seen)), first: EDITION.order });
-    const first = takePage(feed);
-    return { cards, feed, firstPage: first.entries, done: first.done };
+    if (cards.length === 0) return { cards, feed: null, firstPage: [], done: true, inOrder: false };
+    const first = sort === 'mix' ? EDITION.order : sortCards(cards, sort).map((c) => c.id);
+    const feed = endlessFeed(cards, { seed: Date.now(), seen: new Set(Object.keys(state.seen)), first });
+    const page = takePage(feed);
+    return { cards, feed, firstPage: page.entries, done: page.done, inOrder: cards.every((c) => first?.includes(c.id)) };
   });
   const { feed } = session;
   const [ended, setEnded] = useState(session.done);
@@ -166,6 +170,7 @@ export function Feed({ by, onBy }: FeedProps) {
       <StoriesBar />
       <div className="feed__filter">
         <WriterChips value={by} onChange={onBy} />
+        <SortChips />
       </div>
       {!feed && (
         <div className="empty">
@@ -183,7 +188,7 @@ export function Feed({ by, onBy }: FeedProps) {
             round={item.round}
             total={session.cards.length}
             writer={by ? (writer ?? t('this writer')) : undefined}
-            inOrder={session.cards.every((c) => EDITION.order?.includes(c.id))}
+            inOrder={session.inOrder}
             onShowAll={() => onBy('')}
           />
         ) : (

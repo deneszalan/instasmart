@@ -95,7 +95,7 @@ function Shell() {
 
       <main className="main">
         <div hidden={route.tab !== 'home'}>
-          <Feed key={route.by || 'everyone'} by={route.by} onBy={(by) => navigate({ by }, { replace: true })} />
+          <Feed key={`${route.by || 'everyone'}:${state.settings.sort}`} by={route.by} onBy={(by) => navigate({ by }, { replace: true })} />
         </div>
         {route.tab === 'explore' && (
           <Explore

@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { FieldId, KnowledgeCard } from '../src/types';
-import { createRng, endlessFeed, searchCards, spreadByField, take } from '../src/lib/feed';
+import { createRng, endlessFeed, searchCards, sortCards, spreadByField, take } from '../src/lib/feed';
+import { formatStamp, publishedAt, timeAgo } from '../src/lib/time';
 
 function card(field: FieldId, n: number, extra: Partial<KnowledgeCard> = {}): KnowledgeCard {
   return {
@@ -123,5 +124,55 @@ describe('searchCards', () => {
 
   it('returns everything for an empty query', () => {
     expect(searchCards(cards, '  ')).toHaveLength(2);
+  });
+});
+
+describe('sortCards', () => {
+  const dated = [
+    card('physics', 1, { createdAt: '2026-10-19T01:09:57Z' }),
+    card('history', 1, { createdAt: '2026-10-27T06:00:00Z' }),
+    card('art', 1, { createdAt: '2026-10-19T01:09:57Z' }),
+    card('music', 1),
+    card('music', 2, { createdAt: '2026-10-20' }),
+  ];
+  it('puts the newest first, breaking ties by id, and undated posts last', () => {
+    expect(sortCards(dated, 'newest').map((c) => c.id)).toEqual(['history-1', 'music-2', 'art-1', 'physics-1', 'music-1']);
+  });
+  it('reverses for oldest first', () => {
+    expect(sortCards(dated, 'oldest').map((c) => c.id)).toEqual(['music-1', 'art-1', 'physics-1', 'music-2', 'history-1']);
+  });
+  it('leaves the input alone', () => {
+    const ids = dated.map((c) => c.id);
+    sortCards(dated, 'newest');
+    expect(dated.map((c) => c.id)).toEqual(ids);
+  });
+  it('gives a sorted feed the same order every round', () => {
+    const first = sortCards(dated, 'newest').map((c) => c.id);
+    const entries = take(endlessFeed(dated, { seed: 3, first }), 12);
+    const ids = entries.map((e) => (e.type === 'card' ? e.card.id : '|'));
+    expect(ids).toEqual([...first, '|', ...first, '|']);
+  });
+});
+
+describe('post times', () => {
+  const now = Date.parse('2026-10-27T12:00:00Z');
+  it('reads a timestamp, and a bare day as noon UTC', () => {
+    expect(publishedAt({ createdAt: '2026-10-27T06:30:00Z' })).toBe(Date.parse('2026-10-27T06:30:00Z'));
+    expect(publishedAt({ createdAt: '2026-10-20' })).toBe(Date.parse('2026-10-20T12:00:00Z'));
+    expect(publishedAt({})).toBe(0);
+  });
+  it('says how long ago, then the date after a week', () => {
+    expect(timeAgo('2026-10-27T11:59:30Z', now)).toBe('now');
+    expect(timeAgo('2026-10-27T11:15:00Z', now)).toBe('45 minutes ago');
+    expect(timeAgo('2026-10-27T06:00:00Z', now)).toBe('6 hours ago');
+    expect(timeAgo('2026-10-26T06:00:00Z', now)).toBe('yesterday');
+    expect(timeAgo('2026-10-22T06:00:00Z', now)).toBe('5 days ago');
+    expect(timeAgo('2026-10-27', now)).toBe('today');
+    expect(timeAgo('2026-10-12T06:00:00Z', now)).toBe('Oct 12');
+    expect(timeAgo('2025-10-12T06:00:00Z', now)).toBe('Oct 12, 2025');
+  });
+  it('writes the full date and time, or just the date', () => {
+    expect(formatStamp('2026-10-20')).toBe('October 20, 2026');
+    expect(formatStamp('2026-10-27T06:30:00Z')).toMatch(/^October 2[67], 2026 at \d{1,2}:\d{2}/);
   });
 });

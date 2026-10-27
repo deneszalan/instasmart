@@ -6,7 +6,9 @@ import { LIBRARY } from '../data/library';
 import { authorGroup } from '../lib/authors';
 import { firstInteractive } from '../lib/interactive';
 import { firstAnimation, firstComic, firstFootage, firstVisual } from '../lib/visual';
-import { createRng, searchCards, shuffle } from '../lib/feed';
+import { createRng, searchCards, shuffle, sortCards } from '../lib/feed';
+import { useStore } from '../state/store';
+import { SortChips } from '../components/SortChips';
 import { Tile } from '../components/Tile';
 import { WRITERS, WriterChips } from '../components/WriterChips';
 import { t } from '../i18n';
@@ -39,8 +41,10 @@ export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExplorePro
   const [videoOnly, setVideoOnly] = useState(false);
   const [animationOnly, setAnimationOnly] = useState(false);
   const [comicOnly, setComicOnly] = useState(false);
-  // A per-visit shuffle so the grid isn't grouped by field.
-  const [order] = useState(() => shuffle(LIBRARY, createRng(Date.now())));
+  const { sort } = useStore().state.settings;
+  // Mixed is a per-visit shuffle so the grid isn't grouped by field; the other orders go by publication time.
+  const [shuffled] = useState(() => shuffle(LIBRARY, createRng(Date.now())));
+  const order = useMemo(() => (sort === 'mix' ? shuffled : sortCards(LIBRARY, sort)), [shuffled, sort]);
 
   const results = useMemo(() => {
     const filtered = order.filter(
@@ -113,6 +117,7 @@ export function Explore({ query, onQuery, author, onAuthor, onOpen }: ExplorePro
           ))}
         </div>
         <WriterChips value={author} onChange={onAuthor} />
+        <SortChips />
       </div>
 
       <p className="explore__count">

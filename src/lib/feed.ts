@@ -1,5 +1,6 @@
 import type { FieldId, KnowledgeCard, Slide } from '../types';
 import { plain } from './markdown';
+import { publishedAt } from './time';
 import { t } from '../i18n';
 
 /** Small, fast seeded PRNG (mulberry32) so feed order is reproducible in tests. */
@@ -71,6 +72,15 @@ export function spreadByField(
     remaining--;
   }
   return out;
+}
+
+/** How the feed and Explore order posts: mixed by field (the default), or by publication time. */
+export type SortOrder = 'mix' | 'newest' | 'oldest';
+
+/** Cards by publication time; posts published at the same moment keep a stable order by id. */
+export function sortCards(cards: readonly KnowledgeCard[], order: Exclude<SortOrder, 'mix'>): KnowledgeCard[] {
+  const dir = order === 'newest' ? -1 : 1;
+  return cards.slice().sort((a, b) => dir * (publishedAt(a) - publishedAt(b)) || a.id.localeCompare(b.id));
 }
 
 export type FeedEntry =

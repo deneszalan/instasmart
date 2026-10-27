@@ -1514,4 +1514,8 @@ export const de: Record<string, string> = {
   'guilty': 'schuldig',
   'not guilty': 'nicht schuldig',
   '{n} of the 4 judges vote guilty': '{n} der 4 Richter stimmen für schuldig',
+  'Sort': 'Sortieren',
+  'Mixed': 'Gemischt',
+  'Newest': 'Neueste',
+  'Oldest': 'Älteste',
 };
