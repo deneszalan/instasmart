@@ -98,6 +98,7 @@ export const LABS = {
   'panama-quake-magnitude-scale': 'Set a fault’s length, depth and slip, and see its magnitude and energy against the Panama quake of 9 October 2026.',
   'living-planet-index-average': 'Change three wildlife populations of 400, 50 and 33 animals and compare the Living Planet Index’s average change with the number of animals.',
   'bepirovirsen-antisense-hepatitis-b': 'Slide the 20 letters of the hepatitis B drug bepirovirsen along the virus’s RNA and find where every letter pairs.',
+  'swiss-glaciers-snowline-2026': 'Set the winter snow and the summer freezing level on a toy glacier and watch its break-even line and yearly balance move.',
 } as const;
 
 export type LabId = keyof typeof LABS;

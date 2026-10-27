@@ -98,4 +98,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'panama-quake-magnitude-scale': lazy(() => import('./earth/panama-quake-magnitude-scale')),
   'living-planet-index-average': lazy(() => import('./biology/living-planet-index-average')),
   'bepirovirsen-antisense-hepatitis-b': lazy(() => import('./body/bepirovirsen-antisense-hepatitis-b')),
+  'swiss-glaciers-snowline-2026': lazy(() => import('./earth/swiss-glaciers-snowline-2026')),
 };

@@ -1321,4 +1321,13 @@ export const de: Record<string, string> = {
   'yes: the target': 'ja: das Ziel',
   'not here': 'hier nicht',
   '70 letters of hepatitis B virus RNA from a reference genome. Pairs: A with T, U with A, G with C.': '70 Buchstaben RNA des Hepatitis-B-Virus aus einem Referenzgenom. Paare: A mit T, U mit A, G mit C.',
+  'freezing level {z} m': 'Nullgradgrenze {z} m',
+  'above the top': 'über dem Gipfel',
+  'below the tongue': 'unter der Zunge',
+  'A toy glacier with {s}% of normal winter snow and the summer freezing level at {z} m: average balance {b} m of water': 'Ein Modellgletscher mit {s} % des normalen Winterschnees und der sommerlichen Nullgradgrenze auf {z} m: mittlere Bilanz {b} m Wasser',
+  'Winter snow': 'Winterschnee',
+  'Summer freezing level': 'Nullgradgrenze im Sommer',
+  'Break-even line': 'Gleichgewichtslinie',
+  'Average glacier balance': 'Mittlere Gletscherbilanz',
+  'Toy model with made-up numbers: snow grows with height, melt with the distance below the freezing level, and bare ice melts 1.5 times as fast.': 'Spielmodell mit erfundenen Zahlen: Der Schnee nimmt mit der Höhe zu, die Schmelze mit dem Abstand unter der Nullgradgrenze, und blankes Eis schmilzt 1,5-mal so schnell.',
 };

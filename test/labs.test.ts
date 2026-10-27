@@ -93,6 +93,7 @@ import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
 import { energyRatio, magnitude, moment as quakeMoment, PANAMA_MOMENT, shown as shownMag } from '../src/labs/earth/panama-quake-magnitude-scale';
 import { indexChange, meanChange, totalChange } from '../src/labs/biology/living-planet-index-average';
 import { paired as asoPaired, RNA as HBV_RNA, TARGET_AT as ASO_AT } from '../src/labs/body/bepirovirsen-antisense-hepatitis-b';
+import { bandBalance, glacier, ICE_FACTOR } from '../src/labs/earth/swiss-glaciers-snowline-2026';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -767,5 +768,16 @@ describe('lab maths', () => {
     expect(HBV_RNA.length).toBe(70);
     expect(asoPaired(ASO_AT)).toBe(20);
     for (let at = 0; at <= HBV_RNA.length - 20; at++) if (at !== ASO_AT) expect(asoPaired(at)).toBeLessThanOrEqual(11);
+  });
+
+  it('glacier budget: a thin snowy winter and a high freezing level lose everywhere; more snow or a cooler summer balances it', () => {
+    expect(glacier(0.75, 4400).allLose).toBe(true);
+    expect(glacier(0.75, 4000).mean).toBeLessThan(-2);
+    expect(glacier(1, 3100).mean).toBeGreaterThan(0);
+    const even = glacier(1, 3300).even!;
+    expect(even).toBeGreaterThan(2700);
+    expect(even).toBeLessThan(2900);
+    // once the snow is gone, the ice melts faster
+    expect(bandBalance(2000, 0, 3000)).toBeCloseTo(-ICE_FACTOR * 0.0028 * 1000, 9);
   });
 });
