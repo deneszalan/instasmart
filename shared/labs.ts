@@ -115,6 +115,7 @@ export const LABS = {
   'un-human-rights-council-election': 'Set the votes for, against and abstaining, and compare the 97 of 193 UN members needed to join the Human Rights Council with the two-thirds needed to suspend a member.',
   'reykjavik-summit-inf-treaty': 'Pick how a missile is launched and how far it flies, and see whether the 1987 INF Treaty banned it.',
   'nuremberg-judgment-three-votes': 'Cast the four Nuremberg judges’ votes and compare the Charter’s three-of-four rule for a conviction with a simple majority where the President breaks ties.',
+  'caesar-445-day-year': 'Pick a leap-day rule, from none to Caesar’s and the Gregorian, and let the centuries pass to see how far the equinox drifts in the calendar.',
 } as const;
 
 export type LabId = keyof typeof LABS;

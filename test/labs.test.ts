@@ -110,6 +110,7 @@ import { ridings as qcRidings, seatsWon as qcSeats } from '../src/labs/politics/
 import { canJoin, canSuspend, ELECT_AT as HRC_ELECT, UN_MEMBERS } from '../src/labs/politics/un-human-rights-council-election';
 import { banned as infBanned, kmAt, rangeClass } from '../src/labs/history/reykjavik-summit-inf-treaty';
 import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgment-three-votes';
+import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '../src/labs/history/caesar-445-day-year';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -981,5 +982,15 @@ describe('lab maths', () => {
     expect(ordinaryDecision([true, true, false, false])).toBe(true);
     expect(ordinaryDecision([true, false, true, false])).toBe(false);
     expect(ordinaryDecision([false, false, false, true])).toBe(false);
+  });
+
+  it('caesar calendar: every 4th year drifts a day in about 128 years; every 3rd and none drift fast; only the Gregorian rule stays within a day over 1,000 years', () => {
+    expect(JULIAN_AVERAGE.four).toBe(365.25);
+    expect(Math.round(yearsPerDay('four'))).toBe(128);
+    expect(calendarDrift('four', 1000)).toBeCloseTo(7.8, 1);
+    expect(calendarDrift('none', 100)).toBeCloseTo(-24.22, 2);
+    expect(calendarDrift('three', 36)).toBeCloseTo(3.28, 2);
+    expect(Math.abs(calendarDrift('gregorian', 1000))).toBeLessThan(1);
+    expect(Math.abs(calendarDrift('four', 100))).toBeLessThan(1);
   });
 });

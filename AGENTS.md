@@ -16,7 +16,7 @@ Facts must be correct and sourced. If you aren't sure about something, leave it 
 
 ## Editions
 
-The code builds two separate apps that don't link to each other. **Reckon** (English) has its posts in `content/`. **Lesefutter** (German, for learners of German) has its posts in `editions/lesefutter/content/`; read `editions/lesefutter/README.md` before writing for it. `shared/editions.ts` sets each app's name, language, fields and storage. `npm run content` checks both apps. `npm run dev -- --mode lesefutter` runs Lesefutter, and `npm run build` builds both (Lesefutter goes to `dist/lesefutter/`).
+The code builds three separate apps that don't link to each other. **Reckon** (English) has its posts in `content/`. **Lesefutter** (German, for learners of German) has its posts in `editions/lesefutter/content/`; read `editions/lesefutter/README.md` before writing for it. **Roma** (English, about ancient Rome) has its posts in `editions/roma/content/`; read `editions/roma/README.md` before writing for it. `shared/editions.ts` sets each app's name, language, fields and storage. `npm run content` checks every app. `npm run dev -- --mode lesefutter` or `--mode roma` runs one of the other apps, and `npm run build` builds all three (they go to `dist/lesefutter/` and `dist/roma/`).
 
 ## Code
 
