@@ -189,7 +189,8 @@
                   "panama-quake-magnitude-scale",
                   "living-planet-index-average",
                   "bepirovirsen-antisense-hepatitis-b",
-                  "swiss-glaciers-snowline-2026"
+                  "swiss-glaciers-snowline-2026",
+                  "hurricane-cone-not-storm-size"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

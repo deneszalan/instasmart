@@ -99,6 +99,7 @@ export const LABS = {
   'living-planet-index-average': 'Change three wildlife populations of 400, 50 and 33 animals and compare the Living Planet Index’s average change with the number of animals.',
   'bepirovirsen-antisense-hepatitis-b': 'Slide the 20 letters of the hepatitis B drug bepirovirsen along the virus’s RNA and find where every letter pairs.',
   'swiss-glaciers-snowline-2026': 'Set the winter snow and the summer freezing level on a toy glacier and watch its break-even line and yearly balance move.',
+  'hurricane-cone-not-storm-size': 'Size a hurricane forecast circle for 1, 3 or 5 days ahead until it holds two-thirds of simulated forecast misses, as the cone’s circles do.',
 } as const;
 
 export type LabId = keyof typeof LABS;

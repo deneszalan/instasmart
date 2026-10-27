@@ -99,4 +99,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'living-planet-index-average': lazy(() => import('./biology/living-planet-index-average')),
   'bepirovirsen-antisense-hepatitis-b': lazy(() => import('./body/bepirovirsen-antisense-hepatitis-b')),
   'swiss-glaciers-snowline-2026': lazy(() => import('./earth/swiss-glaciers-snowline-2026')),
+  'hurricane-cone-not-storm-size': lazy(() => import('./psychology/hurricane-cone-not-storm-size')),
 };

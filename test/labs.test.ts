@@ -94,6 +94,7 @@ import { energyRatio, magnitude, moment as quakeMoment, PANAMA_MOMENT, shown as 
 import { indexChange, meanChange, totalChange } from '../src/labs/biology/living-planet-index-average';
 import { paired as asoPaired, RNA as HBV_RNA, TARGET_AT as ASO_AT } from '../src/labs/body/bepirovirsen-antisense-hepatitis-b';
 import { bandBalance, glacier, ICE_FACTOR } from '../src/labs/earth/swiss-glaciers-snowline-2026';
+import { inside as coneInside, misses as coneMisses, MISSES as CONE_N, NHC_RADIUS_KM } from '../src/labs/psychology/hurricane-cone-not-storm-size';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -779,5 +780,16 @@ describe('lab maths', () => {
     expect(even).toBeLessThan(2900);
     // once the snow is gone, the ice melts faster
     expect(bandBalance(2000, 0, 3000)).toBeCloseTo(-ICE_FACTOR * 0.0028 * 1000, 9);
+  });
+
+  it('hurricane cone: each NHC 2026 circle holds exactly two-thirds of the simulated misses', () => {
+    expect(NHC_RADIUS_KM[24]).toBeCloseTo(72.2, 1);
+    expect(NHC_RADIUS_KM[120]).toBeCloseTo(370.4, 1);
+    for (const h of [24, 72, 120]) {
+      const pts = coneMisses(h);
+      expect(pts.length).toBe(CONE_N);
+      expect(coneInside(pts, NHC_RADIUS_KM[h])).toBe((2 * CONE_N) / 3);
+      expect(coneInside(pts, NHC_RADIUS_KM[h] / 2)).toBeLessThan(CONE_N / 2);
+    }
   });
 });
