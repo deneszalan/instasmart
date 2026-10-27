@@ -186,7 +186,8 @@
                   "mirror-molecules-nobel",
                   "nobel-hall-woodford",
                   "power-grid-transformers",
-                  "panama-quake-magnitude-scale"
+                  "panama-quake-magnitude-scale",
+                  "living-planet-index-average"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

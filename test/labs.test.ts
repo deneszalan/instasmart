@@ -91,6 +91,7 @@ import { round as chiralRound, rounds as chiralRounds } from '../src/labs/chemis
 import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
 import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
 import { energyRatio, magnitude, moment as quakeMoment, PANAMA_MOMENT, shown as shownMag } from '../src/labs/earth/panama-quake-magnitude-scale';
+import { indexChange, meanChange, totalChange } from '../src/labs/biology/living-planet-index-average';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -750,5 +751,14 @@ describe('lab maths', () => {
     expect(energyRatio(7.7, 6.6)).toBeCloseTo(44.7, 1);
     expect(shownMag(magnitude(quakeMoment(100, 20, 6.4)))).toBe(7.7);
     expect(shownMag(magnitude(quakeMoment(20, 10, 1)))).toBeLessThan(7);
+  });
+
+  it('living planet index: the report’s example averages −18% but loses 2% of animals; a doubling and a halving cancel', () => {
+    expect(meanChange([5, -60, 0])).toBeCloseTo(-18.33, 1);
+    expect(totalChange([5, -60, 0])).toBeCloseTo((-10 / 483) * 100, 6);
+    expect(indexChange([100, -50, 0])).toBeCloseTo(0, 9);
+    expect(indexChange([5, -60, 0])).toBeCloseTo(-25.1, 1);
+    expect(indexChange([20, -90, -90])).toBeLessThan(-50);
+    expect(totalChange([20, -90, -90])).toBeGreaterThan(0);
   });
 });

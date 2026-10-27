@@ -1302,4 +1302,13 @@ export const de: Record<string, string> = {
   'Quake magnitude': 'Magnitude des Bebens',
   'Energy against Panama 2026': 'Energie im Vergleich zu Panama 2026',
   'Simplified: rock rigidity is fixed at 30 gigapascals, a value often used for the crust.': 'Vereinfacht: Die Steifigkeit des Gesteins ist auf 30 Gigapascal festgelegt, einen für die Erdkruste oft verwendeten Wert.',
+  '{a} → {b}': '{a} → {b}',
+  'Three populations change by {a}, {b} and {c}; the index changes by {i} and the number of animals by {n}': 'Drei Bestände ändern sich um {a}, {b} und {c}; der Index ändert sich um {i} und die Zahl der Tiere um {n}',
+  '400 animals': '400 Tiere',
+  '50 animals': '50 Tiere',
+  '33 animals': '33 Tiere',
+  'Average of the changes': 'Mittel der Änderungen',
+  'Index (geometric mean)': 'Index (geometrisches Mittel)',
+  'Animals in total': 'Tiere insgesamt',
+  'Simplified: three populations, one step and no weights.': 'Vereinfacht: drei Bestände, ein Schritt und keine Gewichtung.',
 };
