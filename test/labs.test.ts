@@ -133,6 +133,7 @@ import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggi
 import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } from '../src/labs/economics/monte-testaccio-amphorae';
 import { move as obeliskMove, NEED as OBELISK_NEED, ROPES as OBELISK_ROPES, slacks as obeliskSlacks, start as obeliskStart, TARGET as OBELISK_TARGET } from '../src/labs/engineering/vatican-obelisk-1586';
 import { classify as vaticanClassify, insideBorder as vaticanInside, PLACES as VATICAN_PLACES } from '../src/labs/politics/vatican-city-1929';
+import { BEST as PIETA_BEST, fit as pietaFit, MARY_HEAD_X } from '../src/labs/art/pieta-michelangelo';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1229,5 +1230,12 @@ describe('lab maths', () => {
     expect(vaticanClassify(41.89094, 12.4919).kind).toBe('italy');
     expect(vaticanClassify(41.88, 12.52).kind).toBe('italy');
     for (const p of VATICAN_PLACES) expect(vaticanClassify(p.lat, p.lon, 0.05).kind).toBe(p.kind);
+  });
+  it('Pietà: the triangle that best fits the outline of the group has its tip right above Mary’s head', () => {
+    expect(Math.abs(PIETA_BEST.ax - MARY_HEAD_X)).toBeLessThanOrEqual(4);
+    expect(PIETA_BEST.f).toBeGreaterThan(0.8);
+    expect(pietaFit(MARY_HEAD_X, 180)).toBeGreaterThan(PIETA_BEST.f - 0.03);
+    expect(pietaFit(40, 240)).toBeLessThan(PIETA_BEST.f - 0.1);
+    expect(pietaFit(170, 140)).toBeLessThan(PIETA_BEST.f - 0.1);
   });
 });

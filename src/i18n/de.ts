@@ -1802,4 +1802,12 @@ export const de: Record<string, string> = {
   'Vatican City, policed by Italy': 'Vatikanstadt, aber von Italiens Polizei überwacht',
   'elsewhere in Rome': 'anderswo in Rom',
   'none yet': 'noch keiner',
+  'drag the tip': 'Spitze ziehen',
+  'The outline of the Pietà with a triangle on its base; the fit is {f}%': 'Der Umriss der Pietà mit einem Dreieck auf ihrem Sockel; die Übereinstimmung beträgt {f} %',
+  'Tip of the triangle, across': 'Spitze des Dreiecks, waagrecht',
+  'Tip of the triangle, height': 'Spitze des Dreiecks, Höhe',
+  'Fit to the group': 'Übereinstimmung mit der Gruppe',
+  'Best possible fit': 'Beste mögliche Übereinstimmung',
+  'Mary’s head, across': 'Marias Kopf, waagrecht',
+  'Fit = overlap ÷ combined area. The outline is traced, simplified, from a photograph of the statue, 195 cm wide.': 'Übereinstimmung = Überlappung ÷ gemeinsame Fläche. Der Umriss ist vereinfacht nach einem Foto der 195 cm breiten Statue nachgezeichnet.',
 };
