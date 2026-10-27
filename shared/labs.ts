@@ -116,6 +116,11 @@ export const LABS = {
   'reykjavik-summit-inf-treaty': 'Pick how a missile is launched and how far it flies, and see whether the 1987 INF Treaty banned it.',
   'nuremberg-judgment-three-votes': 'Cast the four Nuremberg judges’ votes and compare the Charter’s three-of-four rule for a conviction with a simple majority where the President breaks ties.',
   'caesar-445-day-year': 'Pick a leap-day rule, from none to Caesar’s and the Gregorian, and let the centuries pass to see how far the equinox drifts in the calendar.',
+  'colosseum-numbered-arches': 'Open more of the Colosseum’s 76 numbered arches and spread the crowd between them, and see how long the busiest queue takes to get through.',
+  'circus-maximus-staggered-gates': 'Bend the Circus Maximus’s row of 12 starting gates into a curve and choose its centre, until every chariot has the same run to the break line.',
+  'curia-vote-by-walking': 'Set how many senators back acquittal, banishment and death, and see how the verdict changes when the Senate divides into two sides, three groups, or the death party crosses over.',
+  'vestals-thirty-years': 'Set how long every Vestal Virgin serves and watch six places turn over: how often a new girl is chosen, and how many are learning, serving and teaching.',
+  'mouth-of-truth-drain': 'Raise the Forum valley’s floor with earth, set the Tiber’s level and add a canal, and find what keeps the valley dry in the yearly flood.',
 } as const;
 
 export type LabId = keyof typeof LABS;

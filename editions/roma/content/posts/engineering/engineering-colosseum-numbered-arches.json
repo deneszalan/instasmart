@@ -1,0 +1,182 @@
+{
+  "id": "engineering-colosseum-numbered-arches",
+  "field": "engineering",
+  "title": "The Colosseum’s 76 public arches were numbered, and a token sent you to yours",
+  "emoji": "🏟️",
+  "body": "The Colosseum in Rome, finished in AD 80, had 80 arches at ground level. Over each of the 76 for the public, a number was carved and painted red; 29 can still be read on the north side, such as **LII**, 52. The four on the building’s axes had no number and were probably for the emperor and the elite. Spectators followed paths marked on the inner arches and on their tokens, *tesserae*, says [the archaeological park](https://colosseo.it/en/marvels/the-cavea-of-the-colosseum-and-the-belvedere-terrace/). Each arch led to its own stairs and then to a *vomitorium*, a passage into the seats named from the Latin for spewing out. Seats went by rank, senators at the front and the poorest at the top, and every row of every wedge was numbered. A list from AD 354 says the building held 87,000; modern estimates are about 50,000. Splitting such a crowd over 76 gates, each with its own stairs, is what modern stadiums do: a [2021 computer simulation](https://unistroy.spbstu.ru/article/2021.95.4/) of 48,000 spectators found that the stairs shared the load evenly, with no need to hold anyone back.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The Colosseum had 80 arches at ground level. How many of them were numbered for the public?",
+      "min": 0,
+      "max": 80,
+      "step": 1,
+      "answer": 76,
+      "unit": "arches",
+      "explanation": "76. The four on the building’s axes had no number: they were grand entrances, probably for the emperor and the elite."
+    },
+    {
+      "type": "video",
+      "src": "colosseum-arches.mp4",
+      "poster": "colosseum-arches.jpg",
+      "alt": "Animation in travertine and red on a dusk sky: the Colosseum's oval plan with 80 arches, a façade with arches numbered L to LIII in red, a token marked LII, queues at 4 arches against 76, a cross-section with stairs and vomitoria, seats by rank, and bars for 87,000 and about 50,000.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Rising Game” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "colosseum-numbered-arches",
+      "prompt": "Open more of the Colosseum’s numbered arches and spread the crowd between them. Get 50,000 people out in under 5 minutes.",
+      "takeaway": "Through 4 arches the model needs over an hour; through all 76, evenly shared, under 4 minutes. Crowd one quarter of the building and its queues decide the time: that is what the numbered tokens prevented."
+    },
+    {
+      "type": "image",
+      "src": "arch-lii.jpg",
+      "alt": "Close-up photo of a ground-floor arch of the Colosseum in warm sunlight: above the arch, the carved Roman numerals L, I, I of entrance 52 are faintly visible in the weathered travertine.",
+      "caption": "Entrance LII of the Colosseum: the numerals are carved just above the arch.",
+      "fit": "cover",
+      "credit": "WarpFlyght · CC BY-SA 3.0"
+    },
+    {
+      "type": "flow",
+      "heading": "From token to seat in the Colosseum",
+      "steps": [
+        {
+          "icon": "🎟️",
+          "label": "A token, a tessera, shows the way"
+        },
+        {
+          "icon": "🔢",
+          "label": "One of 76 numbered arches"
+        },
+        {
+          "icon": "🪜",
+          "label": "That arch’s own staircase"
+        },
+        {
+          "icon": "🚪",
+          "label": "A vomitorium opens into the tier"
+        },
+        {
+          "icon": "💺",
+          "label": "Wedge, numbered row, seat"
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "heading": "How many people could the Colosseum hold?",
+      "items": [
+        {
+          "label": "List of AD 354",
+          "value": 87000
+        },
+        {
+          "label": "Modern estimate",
+          "value": 50000,
+          "emphasis": true
+        }
+      ],
+      "unit": "people",
+      "note": "Estimates for different periods range from about 50,000 to 80,000."
+    },
+    {
+      "type": "quiz",
+      "question": "The Colosseum’s stairs ended in vomitoria, passages into the seats. What does the name come from?",
+      "options": [
+        "Latin for ‘spewing out’",
+        "A room for being sick",
+        "The architect’s name",
+        "Greek for ‘door’"
+      ],
+      "answer": 0,
+      "explanation": "From the Latin for a rapid discharge, the root of English ‘vomit’: the passages poured people into their tier and out again."
+    }
+  ],
+  "tags": [
+    "rome",
+    "colosseum",
+    "architecture",
+    "crowds",
+    "stadiums"
+  ],
+  "source": {
+    "label": "Parco archeologico del Colosseo: The Cavea",
+    "url": "https://colosseo.it/en/marvels/the-cavea-of-the-colosseum-and-the-belvedere-terrace/"
+  },
+  "theme": {
+    "gradient": [
+      "#141d33",
+      "#4a3446"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T10:18:02Z"
+}

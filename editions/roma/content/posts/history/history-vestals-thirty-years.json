@@ -1,0 +1,187 @@
+{
+  "id": "history-vestals-thirty-years",
+  "field": "history",
+  "title": "Rome’s Vestal Virgins served at least 30 years: ten learning, ten serving, ten teaching",
+  "emoji": "🔥",
+  "body": "In the Roman Forum, the round Temple of Vesta held a sacred fire that Romans believed kept their city safe. Six priestesses, the Vestal Virgins, tended it in turns, so that one was always with it, and lived in the large House of the Vestals right behind. Rome’s chief priest, the *pontifex maximus*, chose each one as a girl of 6 to 10, by lot from 20 candidates. She vowed at least 30 years of service, unmarried: ten learning the rites, ten performing them and ten teaching them, write [Dionysius of Halicarnassus](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Dionysius_of_Halicarnassus/2C%2A.html) and Plutarch. So six places renewed themselves slowly: if each served exactly 30 years, a new girl was needed **only every five years**. After 30 years a Vestal was free to marry, but few did, and some stayed for decades: Occia was a Vestal for 57 years. One who let the fire go out was whipped; the rare Vestal convicted of breaking her vow was buried alive. In AD 382 Emperor Gratian took away the cult’s funds, and the last Vestal known by name, Coelia Concordia, appears in 385.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Rome had six Vestals. If each served exactly 30 years, how often would a new girl have to be chosen, on average?",
+      "min": 1,
+      "max": 30,
+      "step": 1,
+      "answer": 5,
+      "unit": "years",
+      "explanation": "Every 5 years: 30 years ÷ 6 places. In practice some stayed on far longer, so even fewer girls were chosen."
+    },
+    {
+      "type": "video",
+      "src": "vestals-years.mp4",
+      "poster": "vestals-years.jpg",
+      "alt": "Animation in firelight at night: the round Temple of Vesta with its fire, six Vestals and their house, one girl in twenty chosen by lot, 30 years as three coloured decades, a six-lane rota with a new girl every 5 years, Occia's 57 years, and a mirror relighting the fire.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Firesong” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "vestals-thirty-years",
+      "prompt": "Set how long every Vestal serves. Occia served 57 years: if all six did, how often would a new girl be chosen?",
+      "takeaway": "Six places and 30-year terms need a new girl every 5 years; 57-year terms, only every 9.5. The longer Vestals served, the fewer girls Rome had to choose."
+    },
+    {
+      "type": "image",
+      "src": "temple-today.jpg",
+      "alt": "Photo of the remains of the round Temple of Vesta in the Roman Forum: a curved stretch of marble wall with Corinthian columns and part of the roof edge, behind green shrubs and white oleander flowers.",
+      "caption": "The Temple of Vesta today: two and a half bays of the round temple were rebuilt in 1930–31.",
+      "fit": "cover",
+      "credit": "Jebulon · CC0"
+    },
+    {
+      "type": "timeline",
+      "heading": "The Vestals and their temple",
+      "events": [
+        {
+          "when": "38 BC",
+          "text": "Occia starts 57 years as a Vestal."
+        },
+        {
+          "when": "AD 191",
+          "text": "Fire destroys the Temple of Vesta."
+        },
+        {
+          "when": "AD 382",
+          "text": "Emperor Gratian takes their funds."
+        },
+        {
+          "when": "AD 385",
+          "text": "Coelia Concordia, last Vestal named."
+        },
+        {
+          "when": "1930–31",
+          "text": "Part of the temple is rebuilt."
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "heading": "A Vestal’s thirty years",
+      "steps": [
+        {
+          "icon": "📜",
+          "label": "Years 1–10: learning the rites"
+        },
+        {
+          "icon": "🔥",
+          "label": "Years 11–20: performing them"
+        },
+        {
+          "icon": "🗣️",
+          "label": "Years 21–30: teaching the new girls"
+        },
+        {
+          "icon": "🚪",
+          "label": "Then free to leave and marry"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "After her 30 years of service, what was a Vestal Virgin free to do?",
+      "options": [
+        "Leave and marry",
+        "Become chief priest",
+        "Join the Senate",
+        "Choose her successor"
+      ],
+      "answer": 0,
+      "explanation": "She could leave and marry, but few did. Some stayed on for life, like Occia, who was a Vestal for 57 years."
+    }
+  ],
+  "tags": [
+    "rome",
+    "vestals",
+    "religion",
+    "forum",
+    "priestesses"
+  ],
+  "source": {
+    "label": "Wikipedia: Vestal Virgin",
+    "url": "https://en.wikipedia.org/wiki/Vestal_Virgin"
+  },
+  "theme": {
+    "gradient": [
+      "#24161a",
+      "#7a2e1c"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T11:58:24Z"
+}

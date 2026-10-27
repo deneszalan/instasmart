@@ -1,0 +1,165 @@
+{
+  "id": "math-circus-maximus-staggered-gates",
+  "field": "math",
+  "title": "The Circus Maximus’s 12 starting gates stood on a curve to give every chariot the same run",
+  "emoji": "🏇",
+  "body": "The Circus Maximus, Rome’s chariot-racing track in the valley between the Palatine and Aventine hills, was about 620 m long. Its races began from 12 gates, the *carceres*, which sprang open together when the presiding magistrate dropped a white cloth. Drivers had to keep to their lanes until a white break line at the mouth of the first straight. In a straight row across the track, the outer gates would have been farther from that point. So the gates stood on a gentle curve, part of a circle whose centre lay on the right-hand side of the track, says [Smith’s Dictionary of Antiquities](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/SMIGRA%2A/Circus.html): every point of a circle is **the same distance from its centre**. Gates were drawn by lot. A race was usually seven laps, counted off on seven large eggs from at least 174 BC; in 33 BC the general Marcus Agrippa added seven bronze dolphins because, says [Cassius Dio](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/49%2A.html), people kept miscounting. The historian Dionysius of Halicarnassus wrote of 150,000 seats, Pliny the Elder of 250,000; modern scholars think 150,000 at most.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "A chariot race at Rome’s Circus Maximus usually lasted how many laps of the track?",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "answer": 7,
+      "unit": "laps",
+      "explanation": "Seven laps, counted off on seven large eggs and, from 33 BC, on seven bronze dolphins as well."
+    },
+    {
+      "type": "video",
+      "src": "circus-gates.mp4",
+      "poster": "circus-gates.jpg",
+      "alt": "Animation in brown ink on sand: the Circus Maximus between the Palatine and Aventine, 12 starting gates opening, strings from each gate to the break line unequal for a straight row and equal on an arc drawn round the point, chariots in four colours on seven laps, eggs and dolphins counting.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Cut and Run” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "circus-maximus-staggered-gates",
+      "prompt": "Bend the row of 12 starting gates and pick the centre of the curve. Give every chariot the same run to the break line.",
+      "takeaway": "Only an arc of a circle round the middle of the first straight makes all 12 runs equal: every point of a circle is the same distance from its centre. Centre it anywhere else and some gates start farther away."
+    },
+    {
+      "type": "image",
+      "src": "circus-today.jpg",
+      "alt": "Photo of the Circus Maximus today: excavated brick vaults and a stone stair that once held up the seating, with the long grassy valley of the race track behind and pine trees on the hill above.",
+      "caption": "The Circus Maximus today: brick vaults of the seating, and the grassy valley where the track lay.",
+      "fit": "cover",
+      "credit": "Mbattista22 · CC BY-SA 4.0"
+    },
+    {
+      "type": "chart",
+      "heading": "How many seats did the Circus Maximus have?",
+      "items": [
+        {
+          "label": "Dionysius of Halicarnassus",
+          "value": 150000
+        },
+        {
+          "label": "Pliny the Elder",
+          "value": 250000
+        },
+        {
+          "label": "Modern estimate, at most",
+          "value": 150000,
+          "emphasis": true
+        }
+      ],
+      "unit": "seats",
+      "note": "The archaeologist John Humphrey calls the higher figure traditional but excessive."
+    },
+    {
+      "type": "text",
+      "heading": "Eggs and dolphins",
+      "text": "From at least 174 BC, seven large eggs on the Circus Maximus’s central barrier counted off a race’s seven laps. In 33 BC the Roman general Marcus Agrippa added seven bronze dolphins as well, because, says the historian Cassius Dio, people kept making mistakes about how many laps had been run."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did the Circus Maximus’s 12 starting gates stand on a curve rather than in a straight row across the track?",
+      "options": [
+        "To give every chariot the same run",
+        "To fit the slope of the hill",
+        "To let the emperor see every gate",
+        "To slow the start down"
+      ],
+      "answer": 0,
+      "explanation": "The curve is part of a circle round a point at the mouth of the first straight, so every gate was the same distance from the break line."
+    }
+  ],
+  "tags": [
+    "rome",
+    "circus",
+    "chariots",
+    "geometry",
+    "circle"
+  ],
+  "source": {
+    "label": "Encyclopaedia Romana: Circus Maximus",
+    "url": "https://penelope.uchicago.edu/~grout/encyclopaedia_romana/circusmaximus/circusmaximus.html"
+  },
+  "theme": {
+    "gradient": [
+      "#3a2a1c",
+      "#7a3a1e"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T11:26:43Z"
+}

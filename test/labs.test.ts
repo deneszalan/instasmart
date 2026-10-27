@@ -111,6 +111,11 @@ import { canJoin, canSuspend, ELECT_AT as HRC_ELECT, UN_MEMBERS } from '../src/l
 import { banned as infBanned, kmAt, rangeClass } from '../src/labs/history/reykjavik-summit-inf-treaty';
 import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgment-three-votes';
 import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '../src/labs/history/caesar-445-day-year';
+import { busiestQueue, minutesToEmpty, openArches, PUBLIC_ARCHES } from '../src/labs/engineering/colosseum-numbered-arches';
+import { GATE_Y as CIRCUS_GATES, runs as circusRuns, unfairness as circusUnfairness } from '../src/labs/math/circus-maximus-staggered-gates';
+import { plinysCase, verdict as curiaVerdict } from '../src/labs/politics/curia-vote-by-walking';
+import { interval as vestalInterval, stages as vestalStages } from '../src/labs/history/vestals-thirty-years';
+import { forum as forumState, FLOOR as FORUM_FLOOR, YEARLY_FLOOD } from '../src/labs/engineering/mouth-of-truth-drain';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -682,7 +687,6 @@ describe('lab maths', () => {
     expect(heliumAt(20 * 60)).toBeLessThan(heliumAt(10 * 60));
   });
 
-
   it('ebola tracing: with 2 infections per missed case, chains shrink once more than half of contacts are found', () => {
     expect(perCase(2, 0.5)).toBe(1);
     expect(perCase(2, 0.55)).toBeLessThan(1);
@@ -992,5 +996,55 @@ describe('lab maths', () => {
     expect(calendarDrift('three', 36)).toBeCloseTo(3.28, 2);
     expect(Math.abs(calendarDrift('gregorian', 1000))).toBeLessThan(1);
     expect(Math.abs(calendarDrift('four', 100))).toBeLessThan(1);
+  });
+
+  it('colosseum arches: 50,000 people through 4 arches at 3 a second take over an hour; spread evenly over all 76 they take under 4 minutes', () => {
+    expect(PUBLIC_ARCHES).toBe(76);
+    expect(minutesToEmpty(50000, 4, 0.25, 3)).toBeCloseTo(69.4, 1);
+    expect(minutesToEmpty(50000, 76, 0.25, 3)).toBeCloseTo(3.65, 2);
+    expect(busiestQueue(50000, 76, 0.25)).toBeCloseTo(50000 / 76, 6);
+    expect(minutesToEmpty(50000, 76, 0.5, 3)).toBeCloseTo(2 * minutesToEmpty(50000, 76, 0.25, 3), 6);
+    expect(minutesToEmpty(50000, 76, 0.35, 3)).toBeGreaterThan(5);
+    for (const n of [4, 8, 36, 76]) expect(openArches(n).size).toBe(n);
+    expect(Math.max(...openArches(76))).toBe(75);
+  });
+
+  it('circus gates: a straight row gives the outer chariot a longer run; an arc round the break point makes all 12 equal, an arc round the track’s middle does not', () => {
+    expect(CIRCUS_GATES).toHaveLength(12);
+    expect(circusUnfairness(0, 'straight')).toBeGreaterThan(0.15);
+    expect(circusUnfairness(1, 'straight')).toBeLessThan(1e-9);
+    expect(circusUnfairness(1, 'track')).toBeGreaterThan(0.01);
+    const r = circusRuns(1, 'straight');
+    expect(Math.max(...r) - Math.min(...r)).toBeLessThan(1e-9);
+  });
+
+  it('curia vote: with acquittal ahead of each rival alone but not of both, three groups acquit and the death party crossing over banishes', () => {
+    expect(curiaVerdict(110, 80, 60, 'three')).toBe('acquit');
+    expect(curiaVerdict(110, 80, 60, 'cross')).toBe('banish');
+    expect(curiaVerdict(110, 80, 60, 'together')).toBe('banish');
+    expect(curiaVerdict(110, 40, 90, 'together')).toBe('death');
+    expect(curiaVerdict(150, 50, 50, 'cross')).toBe('acquit');
+    expect(curiaVerdict(100, 100, 50, 'three')).toBe('tie');
+    expect(plinysCase(110, 80, 60)).toBe(true);
+    expect(plinysCase(150, 50, 50)).toBe(false);
+  });
+
+  it('vestals: six places and 30-year terms need a new girl every 5 years, two in each decade; 57-year terms only every 9.5', () => {
+    expect(vestalInterval(30)).toBe(5);
+    expect(vestalInterval(57)).toBeCloseTo(9.5, 6);
+    for (const y of [0, 7, 33, 61]) expect(vestalStages(30, y)).toEqual({ learning: 2, performing: 2, teaching: 2, staying: 0 });
+    const s = vestalStages(60, 12);
+    expect(s.learning + s.performing + s.teaching + s.staying).toBe(6);
+    expect(s.staying).toBe(3);
+  });
+
+  it('mouth of truth drain: the yearly flood swamps the old 6 m floor; raised to 9 m and given a canal, it stays dry', () => {
+    expect(FORUM_FLOOR).toBe(6);
+    expect(YEARLY_FLOOD).toBe(9);
+    expect(forumState(0, 9, true)).toBe('flooded');
+    expect(forumState(3, 9, false)).toBe('marsh');
+    expect(forumState(3, 9, true)).toBe('dry');
+    expect(forumState(2.5, 9, true)).toBe('flooded');
+    expect(forumState(0, 5, true)).toBe('dry');
   });
 });

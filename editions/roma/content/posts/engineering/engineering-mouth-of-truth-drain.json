@@ -1,0 +1,172 @@
+{
+  "id": "engineering-mouth-of-truth-drain",
+  "field": "engineering",
+  "title": "The Mouth of Truth was probably a Roman drain cover, not a lie detector",
+  "emoji": "🗿",
+  "body": "In the porch of the church of Santa Maria in Cosmedin hangs the Bocca della Verità, a marble disc about 1.8 m across and some 1,300 kg, carved with a bearded face, probably a sea or river god. A medieval legend says it bites off the hand of anyone who lies with a hand in its mouth; the name dates from 1485, and the disc has stood in the porch since 1632, says [Rome’s tourist office](https://www.turismoroma.it/en/places/mouth-truth). Its eyes, nose and mouth are holes, so it was most likely a drain cover, though where it first lay is unknown. Close by, Rome’s great drain, the Cloaca Maxima, still empties into the Tiber. Rome needed it because the Forum valley was low and marshy: its floor lay under 6 m above sea level, and the Tiber flooded it most years to almost 9 m, writes the historian [John N. N. Hopkins](https://waters.iath.virginia.edu/Journal4Hopkins.pdf). In the age of Rome’s kings, up to 20,000 m³ of earth raised the floor to about 9 m; only then could a canal lead the hills’ streams **downhill to the river**. Later vaulted over, it became a sewer, and in 33 BC the general Marcus Agrippa sailed through it.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The Mouth of Truth in Rome is a carved marble disc about 1.8 m across. Roughly how heavy is it?",
+      "min": 100,
+      "max": 3000,
+      "step": 50,
+      "answer": 1300,
+      "unit": "kg",
+      "explanation": "About 1,300 kg, more than a small car. Its eyes, nose and mouth are holes: it was probably a Roman drain cover."
+    },
+    {
+      "type": "video",
+      "src": "mouth-drain.mp4",
+      "poster": "mouth-drain.jpg",
+      "alt": "Animation in stone grey, terracotta and water blue: the bearded marble Mouth of Truth in its church porch, a hand in its mouth, water running through its holes into a drain, then a section of the Forum valley flooding, filled in five layers to 9 m and drained by a canal, later vaulted.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Fearless First” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "mouth-of-truth-drain",
+      "prompt": "Raise the Forum valley’s floor, set the Tiber to its yearly flood and choose a drain. Keep the Forum dry.",
+      "takeaway": "Only a floor raised to the flood line, about 9 m, with a canal to the river stays dry: lower, the Tiber pours in; without the canal, the hill streams make a marsh."
+    },
+    {
+      "type": "image",
+      "src": "bocca-today.jpg",
+      "alt": "Photo of the Mouth of Truth: a large round marble disc carved with a bearded face with hollow eyes, a broad nose and an open mouth, standing on a stone pedestal against a red wall, behind a rope barrier.",
+      "caption": "The Mouth of Truth in the porch of Santa Maria in Cosmedin.",
+      "fit": "cover",
+      "credit": "Sailko · CC BY 3.0"
+    },
+    {
+      "type": "compare",
+      "heading": "The Mouth of Truth",
+      "left": {
+        "label": "Legend",
+        "text": "It bites off the hand of anyone who tells a lie with a hand in its mouth."
+      },
+      "right": {
+        "label": "Most likely",
+        "text": "A Roman drain cover: its eyes, nose and mouth are holes for the water."
+      }
+    },
+    {
+      "type": "chart",
+      "heading": "Heights in the Forum valley, above sea level",
+      "items": [
+        {
+          "label": "Old valley floor",
+          "value": 6
+        },
+        {
+          "label": "Tiber’s yearly flood",
+          "value": 9
+        },
+        {
+          "label": "Floor after the fill",
+          "value": 9,
+          "emphasis": true
+        }
+      ],
+      "unit": "m",
+      "note": "After Hopkins (2007): the old floor was just under 6 m, the flood almost 9 m."
+    },
+    {
+      "type": "quiz",
+      "question": "Why was the Forum valley filled in before a canal, the start of the Cloaca Maxima, could drain it?",
+      "options": [
+        "To lift it above the Tiber’s floods",
+        "To hide the drain from enemies",
+        "To make room for the Colosseum",
+        "To level it for chariot races"
+      ],
+      "answer": 0,
+      "explanation": "The Tiber flooded the valley most years to almost 9 m. A canal below that would fill with river water; with the floor raised to about 9 m, it could drain downhill."
+    }
+  ],
+  "tags": [
+    "rome",
+    "drains",
+    "cloaca",
+    "tiber",
+    "legends"
+  ],
+  "source": {
+    "label": "Turismo Roma: The Mouth of Truth",
+    "url": "https://www.turismoroma.it/en/places/mouth-truth"
+  },
+  "theme": {
+    "gradient": [
+      "#18232c",
+      "#33505f"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-27T12:09:27Z"
+}
