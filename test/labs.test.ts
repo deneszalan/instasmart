@@ -132,6 +132,7 @@ import { jetHeight as virgoJet, jetTop as virgoTop, nozzleSpeed as virgoSpeed } 
 import { contrast as studioContrast, TENEBRIST } from '../src/labs/art/caravaggio-calling-light';
 import { litresPerYear as testaccioPerYear, totalLitres as testaccioLitres } from '../src/labs/economics/monte-testaccio-amphorae';
 import { backFor as trajanBack, COLUMN as TRAJAN_COLUMN, earthPerMetre as trajanEarth, faceHeight as trajanFace } from '../src/labs/engineering/trajans-column-hill';
+import { carvedBy as archCarvedBy, DEDICATED as ARCH_DEDICATED, REUSED_TOTAL as ARCH_REUSED } from '../src/labs/history/arch-of-constantine-spolia';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1206,5 +1207,13 @@ describe('lab maths', () => {
     expect(trajanFace(30, trajanBack(30, TRAJAN_COLUMN))).toBeCloseTo(29.77, 9);
     expect(trajanEarth(30, 51.56)).toBeCloseTo(767.4, 0);
     expect(trajanEarth(45, 20) / trajanEarth(45, 10)).toBeCloseTo(4, 9);
+  });
+  it('Arch of Constantine: all 28 reused sculptures existed by AD 176, 139 years before the dedication; none for certain before 117', () => {
+    expect(ARCH_REUSED).toBe(28);
+    expect(archCarvedBy(116)).toBe(0);
+    expect(archCarvedBy(117)).toBe(12);
+    expect(archCarvedBy(175)).toBe(20);
+    expect(archCarvedBy(176)).toBe(28);
+    expect(ARCH_DEDICATED - 176).toBe(139);
   });
 });

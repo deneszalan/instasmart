@@ -137,6 +137,7 @@ export const LABS = {
   'caravaggio-calling-light': 'Light a face as Caravaggio did: choose the studio’s walls and windows and see how dark the shadows get.',
   'monte-testaccio-amphorae': 'Set how many olive-oil jars Monte Testaccio holds and over how many years they came, and see how much oil Rome took in.',
   'trajans-column-hill': "Cut a hillside back to level ground, as for Trajan’s Forum, and find how far back you must dig for a face as tall as Trajan’s Column.",
+  'arch-of-constantine-spolia': "Slide back through the years and watch the Arch of Constantine’s reused sculptures being carved, from Trajan’s time to Marcus Aurelius’s, long before AD 315.",
 } as const;
 
 export type LabId = keyof typeof LABS;
