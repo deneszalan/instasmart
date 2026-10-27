@@ -1312,4 +1312,13 @@ export const de: Record<string, string> = {
   'Orbital speed': 'Bahngeschwindigkeit',
   'Time for one orbit': 'Dauer einer Umrundung',
   'Simplified: a circular orbit that shrinks slowly, from Swift’s 600 km. How dense the air is, which the Sun changes, only sets how fast the braking adds up.': 'Vereinfacht: eine Kreisbahn, die langsam schrumpft, ab Swifts 600 km. Wie dicht die Luft ist, was die Sonne verändert, bestimmt nur, wie schnell sich die Bremsung summiert.',
+  'Held in place': 'Festgehalten',
+  'Hit an end cap': 'An eine Endkappe gestoßen',
+  'Hit the ring': 'An den Ring gestoßen',
+  'A positron in a Penning trap, seen from the side and from above: {f}': 'Ein Positron in einer Penningfalle, von der Seite und von oben gesehen: {f}',
+  'Magnet strength': 'Magnetstärke',
+  'End-cap voltage': 'Spannung an den Endkappen',
+  'The positron': 'Das Positron',
+  'Circling ÷ bouncing': 'Kreisen ÷ Pendeln',
+  'Toy units and an ideal trap.': 'Modelleinheiten und eine ideale Falle.',
 };

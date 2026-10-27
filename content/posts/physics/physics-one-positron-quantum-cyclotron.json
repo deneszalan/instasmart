@@ -1,0 +1,145 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-one-positron-quantum-cyclotron",
+  "field": "physics",
+  "title": "One positron, a speck of antimatter, was kept for months without ever touching a wall",
+  "emoji": "🧲",
+  "body": "In October 2026 physicist Gerald Gabrielse’s group at Northwestern University reported a “one-positron quantum cyclotron”, accepted in Physical Review Letters ([preprint](https://arxiv.org/abs/2605.08147)). A positron is the electron’s antimatter twin: the same mass, the opposite charge, and it is destroyed in a flash of gamma rays as soon as it touches ordinary matter. So it floats in a vacuum inside a **Penning trap**. A 5.6-tesla magnet bends its motion into tight circles, about 156 billion turns a second, so it cannot drift sideways, and charged electrodes at both ends push it back, so instead of sliding out along the field it bounces to and fro about 206 million times a second. Cooled to 0.3 degrees above absolute zero, its circling settles into the lowest quantum state, and microwaves can lift it one level at a time. Next the team wants to measure the positron’s tiny magnetism as precisely as the electron’s, known to 1 part in 10 trillion. Theory says the two must be exactly equal, so any difference would break a basic symmetry of physics, CPT.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "A positron is destroyed the instant it touches ordinary matter. So how can a lab keep one for months?",
+      "answer": "Float it in a vacuum, held only by magnetic and electric fields",
+      "detail": "A Penning trap: a strong magnet stops it drifting sideways and charged end caps stop it sliding out. Nothing solid ever touches it."
+    },
+    {
+      "type": "video",
+      "src": "positron.mp4",
+      "poster": "positron.jpg",
+      "alt": "Animation in a cold teal lab. An electron and a positron side by side; a positron hits a wall and flashes into gamma rays. In a Penning trap the positron circles in a magnet, slides out along the field, and copper end caps bounce it back. It cools to the lowest energy level; microwaves lift it.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Ice Flow” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 7,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "one-positron-quantum-cyclotron",
+      "prompt": "Set the magnet and the voltage on the end caps of a Penning trap. Keep the positron away from every wall for the whole run.",
+      "takeaway": "Both are needed: no voltage and it slides out; too much and it spirals into the ring. It holds when circling beats bouncing by over 1.41 times. In the real trap: 757 times."
+    },
+    {
+      "type": "text",
+      "heading": "Catching one",
+      "text": "Physicist Gerald Gabrielse’s team at Northwestern University in the US takes positrons from a weak radioactive sodium-22 source and slows them in a crystal of tungsten, so that the trap can catch one. Loading a positron takes 8 to 11 hours, but once caught, a single one has stayed trapped for months."
+    },
+    {
+      "type": "compare",
+      "heading": "Two tiny magnets",
+      "left": {
+        "label": "Electron",
+        "text": "Its magnetism is known to 1 part in 10 trillion, measured with a single electron in the same kind of trap."
+      },
+      "right": {
+        "label": "Positron",
+        "text": "The team’s next goal: the same precision. Theory says the two must be exactly equal."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "In a Penning trap, what stops the positron sliding out along the magnetic field?",
+      "options": [
+        "Charged electrodes at the ends",
+        "A glass wall",
+        "The extreme cold",
+        "Earth’s gravity"
+      ],
+      "answer": 0,
+      "explanation": "The magnet only stops it drifting sideways. Charged end caps push the positron back towards the middle, so it bounces to and fro about 206 million times a second."
+    }
+  ],
+  "tags": [
+    "antimatter",
+    "positron",
+    "quantum",
+    "magnets",
+    "particles"
+  ],
+  "source": {
+    "label": "Myers et al.: One-Positron Quantum Cyclotron (preprint, accepted in Physical Review Letters)",
+    "url": "https://arxiv.org/abs/2605.08147"
+  },
+  "theme": {
+    "gradient": [
+      "#021015",
+      "#0b3a45"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-26"
+}

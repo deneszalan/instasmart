@@ -92,6 +92,7 @@ import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
 import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
 import { flyby as juiceFlyby, turnAngle as juiceTurn, VINF as JUICE_VINF } from '../src/labs/space/juice-earth-gravity-assist';
 import { heightAfter as swiftHeight, periodAt as swiftPeriod, speedAt as swiftSpeed } from '../src/labs/space/swift-solar-drag-reentry';
+import { holds as positronHolds, REAL_RATIO as POSITRON_RATIO, simulate as positronRun } from '../src/labs/physics/one-positron-quantum-cyclotron';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -763,5 +764,16 @@ describe('lab maths', () => {
     expect(swiftHeight(182)).toBeGreaterThan(275);
     expect(swiftHeight(183)).toBeLessThan(275);
     expect((swiftSpeed(swiftHeight(150)) - swiftSpeed(600)) * 1000).toBeCloseTo(150, 6);
+  });
+
+  it('Penning trap: with no voltage the positron slides out, too much voltage beats the magnet, and it holds only if ωc² > 2ωz²', () => {
+    expect(positronRun(4, 0).fate).toBe('cap');
+    expect(positronRun(4, 2).fate).toBe('trapped');
+    expect(positronRun(3, 6).fate).toBe('ring');
+    expect(positronRun(0, 2).fate).toBe('ring');
+    expect(positronHolds(4, 2)).toBe(true);
+    expect(positronHolds(3, 6)).toBe(false);
+    for (let wc = 0; wc <= 8; wc += 1) for (let v = 0; v <= 8; v += 1) if (positronRun(wc, v).fate === 'trapped') expect(positronHolds(wc, v)).toBe(true);
+    expect(POSITRON_RATIO).toBeCloseTo(757.3, 1);
   });
 });

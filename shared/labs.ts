@@ -97,6 +97,7 @@ export const LABS = {
   'power-grid-transformers': 'Step up the voltage of a power line carrying 10 MW and watch the current, and the power lost as heat, fall.',
   'juice-earth-gravity-assist': 'Choose which side of Earth a probe passes and how close, and see the turn and the speed it gains or loses round the Sun.',
   'swift-solar-drag-reentry': 'Let the air brake a satellite in a 600 km orbit, and watch it sink, and speed up by as much as it was braked.',
+  'one-positron-quantum-cyclotron': 'Set the magnet and the end-cap voltage of a Penning trap and see whether a positron stays clear of every wall.',
 } as const;
 
 export type LabId = keyof typeof LABS;
