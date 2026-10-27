@@ -111,6 +111,7 @@ import { canJoin, canSuspend, ELECT_AT as HRC_ELECT, UN_MEMBERS } from '../src/l
 import { banned as infBanned, kmAt, rangeClass } from '../src/labs/history/reykjavik-summit-inf-treaty';
 import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgment-three-votes';
 import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '../src/labs/history/caesar-445-day-year';
+import { doorwayLit, litStretch, noonAltitude, placeOf, R as PANTHEON_R } from '../src/labs/engineering/pantheon-noon-sunbeam';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -992,5 +993,18 @@ describe('lab maths', () => {
     expect(calendarDrift('three', 36)).toBeCloseTo(3.28, 2);
     expect(Math.abs(calendarDrift('gregorian', 1000))).toBeLessThan(1);
     expect(Math.abs(calendarDrift('four', 100))).toBeLessThan(1);
+  });
+  it('Pantheon: the noon light is on the dome in December, at the dome’s base at the equinox, fills the doorway around 21 April and lies on the floor in June', () => {
+    expect(Math.round(noonAltitude(355))).toBe(25);
+    expect(Math.round(noonAltitude(172))).toBe(72);
+    expect(placeOf(noonAltitude(355))).toBe('dome');
+    const [e0, e1] = litStretch(noonAltitude(80));
+    expect(e0).toBeLessThan(2 * PANTHEON_R);
+    expect(e1).toBeGreaterThan(2 * PANTHEON_R);
+    expect(doorwayLit(noonAltitude(111))).toBe(true);
+    expect(doorwayLit(noonAltitude(233))).toBe(true);
+    expect(doorwayLit(noonAltitude(80))).toBe(false);
+    expect(doorwayLit(noonAltitude(140))).toBe(false);
+    expect(placeOf(noonAltitude(172))).toBe('floor');
   });
 });
