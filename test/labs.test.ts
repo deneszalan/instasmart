@@ -112,6 +112,7 @@ import { banned as infBanned, kmAt, rangeClass } from '../src/labs/history/reykj
 import { convicts, ordinaryDecision } from '../src/labs/history/nuremberg-judgment-three-votes';
 import { AVERAGE as JULIAN_AVERAGE, drift as calendarDrift, yearsPerDay } from '../src/labs/history/caesar-445-day-year';
 import { doorwayLit, litStretch, noonAltitude, placeOf, R as PANTHEON_R } from '../src/labs/engineering/pantheon-noon-sunbeam';
+import { MAX_ROWS as NAVONA_MAX_ROWS, nearEstimate as navonaNear, rowLength as navonaRow, seats as navonaSeats, STANDS as NAVONA_STANDS } from '../src/labs/history/navona-domitian-stadium';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1006,5 +1007,14 @@ describe('lab maths', () => {
     expect(doorwayLit(noonAltitude(80))).toBe(false);
     expect(doorwayLit(noonAltitude(140))).toBe(false);
     expect(placeOf(noonAltitude(172))).toBe('floor');
+  });
+  it('Navona stadium: the stands are about 26.5 m deep; some 27 rows at 50 cm a person seat about 30,000', () => {
+    expect(NAVONA_STANDS).toBeCloseTo(26.55, 2);
+    expect(NAVONA_MAX_ROWS).toBe(37);
+    expect(navonaRow(0)).toBeCloseTo(2 * 222 + Math.PI * 26.8, 1);
+    expect(navonaNear(navonaSeats(27, 0.5))).toBe(true);
+    expect(navonaNear(navonaSeats(24, 0.45))).toBe(true);
+    expect(navonaSeats(12, 0.6)).toBeLessThan(15000);
+    expect(navonaSeats(37, 0.35)).toBeGreaterThan(50000);
   });
 });
