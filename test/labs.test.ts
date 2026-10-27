@@ -90,6 +90,7 @@ import { simulate as optoRun } from '../src/labs/body/optogenetics-nobel';
 import { round as chiralRound, rounds as chiralRounds } from '../src/labs/chemistry/mirror-molecules-nobel';
 import { spendingToday } from '../src/labs/economics/nobel-hall-woodford';
 import { lineLoss } from '../src/labs/engineering/power-grid-transformers';
+import { energyRatio, magnitude, moment as quakeMoment, PANAMA_MOMENT, shown as shownMag } from '../src/labs/earth/panama-quake-magnitude-scale';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -740,5 +741,14 @@ describe('lab maths', () => {
     expect(lineLoss(10).lossMW / lineLoss(100).lossMW).toBeCloseTo(100, 9);
     expect(lineLoss(70).share).toBeGreaterThan(0.01);
     expect(lineLoss(75).share).toBeLessThan(0.01);
+  });
+
+  it('quake magnitude: the USGS moment gives 7.7; 32 times the moment adds about one step; 100 km × 20 km × 6.4 m makes a 7.7', () => {
+    expect(shownMag(magnitude(PANAMA_MOMENT))).toBe(7.7);
+    expect(magnitude(quakeMoment(40, 20, 4)) - magnitude(quakeMoment(10, 5, 2))).toBeCloseTo(1.0, 1);
+    expect(energyRatio(8, 7.7)).toBeCloseTo(2.82, 2);
+    expect(energyRatio(7.7, 6.6)).toBeCloseTo(44.7, 1);
+    expect(shownMag(magnitude(quakeMoment(100, 20, 6.4)))).toBe(7.7);
+    expect(shownMag(magnitude(quakeMoment(20, 10, 1)))).toBeLessThan(7);
   });
 });
