@@ -10,7 +10,8 @@
     },
     {
       "alt": "Animation auf nachtblauer Karte: Roms Mauern und der Tiber, italienische Truppen brechen 1870 an der Porta Pia ein; die Päpste bis 1929 im Vatikan; die Lateranverträge; die echte Grenze der Vatikanstadt schrumpft zum Punkt in einem Quadrat so groß wie der Kirchenstaat; die Grenze am Petersplatz.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "vatican-de.mp4"
     },
     {
       "prompt": "Tippe auf dieser Karte Roms herum und finde je eine Stelle der vier Gebietsarten, die die Lateranverträge von 1929 schufen.",
@@ -23,11 +24,26 @@
     {
       "heading": "Vom Kirchenstaat zur Vatikanstadt",
       "events": [
-        { "when": "756 n. Chr.", "text": "Der Kirchenstaat entsteht." },
-        { "when": "1860", "text": "Annexion der meisten Papstgebiete." },
-        { "when": "20. Sep. 1870", "text": "Italienische Truppen erobern Rom." },
-        { "when": "11. Feb. 1929", "text": "Die Lateranverträge schaffen die Vatikanstadt." },
-        { "when": "1984", "text": "Katholizismus nicht mehr Italiens Staatsreligion." }
+        {
+          "when": "756 n. Chr.",
+          "text": "Der Kirchenstaat entsteht."
+        },
+        {
+          "when": "1860",
+          "text": "Annexion der meisten Papstgebiete."
+        },
+        {
+          "when": "20. Sep. 1870",
+          "text": "Italienische Truppen erobern Rom."
+        },
+        {
+          "when": "11. Feb. 1929",
+          "text": "Die Lateranverträge schaffen die Vatikanstadt."
+        },
+        {
+          "when": "1984",
+          "text": "Katholizismus nicht mehr Italiens Staatsreligion."
+        }
       ]
     },
     {
