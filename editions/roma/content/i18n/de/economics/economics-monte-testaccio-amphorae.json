@@ -9,7 +9,8 @@
     },
     {
       "alt": "Animation an einem hellen Tag in Rom: der Monte Testaccio, 35 m hoch, aus Scherben; ein 70-Liter-Ölkrug (Dressel 20) aus der Baetica; seine Aufschriften und Gewichte; öliger Ton und Kalk ergeben Seife; ein Esel trägt Krüge über Terrassen aus Krügen und Scherben; Balken für 25 und 53 Millionen Krüge.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "testaccio-de.mp4"
     },
     {
       "prompt": "Stell die Zahl der Krüge im Hügel auf jede Schätzung, 25 und 53 Millionen, und sieh, wie viel Olivenöl das jeweils bedeutet.",
@@ -21,29 +22,52 @@
     {
       "heading": "Von einem spanischen Gut auf einen römischen Hügel",
       "steps": [
-        { "label": "Öl in der Baetica, Südspanien, abgefüllt" },
-        { "label": "In Krügen zu 70 Litern nach Rom verschifft" },
-        { "label": "Aufschriften: Gewichte, Händler, Prüfer" },
-        { "label": "Öl umgefüllt, Krüge am Hügel zerschlagen" }
+        {
+          "label": "Öl in der Baetica, Südspanien, abgefüllt"
+        },
+        {
+          "label": "In Krügen zu 70 Litern nach Rom verschifft"
+        },
+        {
+          "label": "Aufschriften: Gewichte, Händler, Prüfer"
+        },
+        {
+          "label": "Öl umgefüllt, Krüge am Hügel zerschlagen"
+        }
       ]
     },
     {
       "heading": "Krüge im Monte Testaccio: zwei Schätzungen",
       "items": [
-        { "label": "José Remesal" },
-        { "label": "2005 genannte Zahl" }
+        {
+          "label": "José Remesal"
+        },
+        {
+          "label": "2005 genannte Zahl"
+        }
       ],
       "unit": "Millionen",
       "note": "Geschätzt, nicht gezählt: Co-Grabungsleiter José Remesal; 53 Millionen nennt Bryan Ward-Perkins."
     },
     {
       "heading": "Warum nicht wiederverwenden?",
-      "left": { "label": "Viele Amphoren", "text": "Für andere Waren wiederverwendet oder zu Splitt für Baubeton zerkleinert." },
-      "right": { "label": "Diese Ölkrüge", "text": "Dicke Wände zerbrachen in große, gewölbte Stücke, und öliger Ton könnte den Mörtel verdorben haben." }
+      "left": {
+        "label": "Viele Amphoren",
+        "text": "Für andere Waren wiederverwendet oder zu Splitt für Baubeton zerkleinert."
+      },
+      "right": {
+        "label": "Diese Ölkrüge",
+        "text": "Dicke Wände zerbrachen in große, gewölbte Stücke, und öliger Ton könnte den Mörtel verdorben haben."
+      }
     },
     {
       "question": "Was hielten die aufgemalten Aufschriften auf den Ölkrügen des Monte Testaccio fest?",
-      "options": ["Das Gewicht des Krugs und des Öls", "Die Wohnadresse des Käufers in Rom", "Den Namen des Schiffs und seine Route", "Den Verkaufspreis des Öls"],
+      "options": [
+        "Das Gewicht des Krugs und des Öls",
+        "Die Wohnadresse des Käufers in Rom",
+        "Den Namen des Schiffs und seine Route",
+        "Den Verkaufspreis des Öls"
+      ],
       "explanation": "Die Aufschriften, tituli picti, nennen das Leergewicht des Krugs, den Händler, das Gewicht des Öls, wer es gewogen hat und den Bezirk des Landguts."
     }
   ]

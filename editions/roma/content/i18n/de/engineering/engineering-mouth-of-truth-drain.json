@@ -9,7 +9,8 @@
     },
     {
       "alt": "Animation in Steingrau, Terrakotta und Wasserblau: der bärtige Mund der Wahrheit in der Kirchenvorhalle, eine Hand im Mund, Wasser rinnt durch die Löcher in einen Kanal; dann ein Schnitt durch das überflutete Forumstal, in fünf Schichten auf 9 m aufgefüllt, per Kanal entwässert, später überwölbt.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "mouth-drain-de.mp4"
     },
     {
       "prompt": "Heb den Boden des Forumstals an, stell den Tiber auf sein jährliches Hochwasser und wähle einen Abfluss. Halte das Forum trocken.",
@@ -21,23 +22,42 @@
     },
     {
       "heading": "Der Mund der Wahrheit",
-      "left": { "label": "Legende", "text": "Er beißt jedem die Hand ab, der mit der Hand in seinem Mund eine Lüge erzählt." },
-      "right": { "label": "Am wahrscheinlichsten", "text": "Ein römischer Kanaldeckel: Augen, Nase und Mund sind Löcher für das Wasser." }
+      "left": {
+        "label": "Legende",
+        "text": "Er beißt jedem die Hand ab, der mit der Hand in seinem Mund eine Lüge erzählt."
+      },
+      "right": {
+        "label": "Am wahrscheinlichsten",
+        "text": "Ein römischer Kanaldeckel: Augen, Nase und Mund sind Löcher für das Wasser."
+      }
     },
     {
       "heading": "Höhen im Forumstal, über dem Meeresspiegel",
       "items": [
-        { "label": "Alter Talboden" },
-        { "label": "Jährliches Tiberhochwasser" },
-        { "label": "Boden nach der Aufschüttung" }
+        {
+          "label": "Alter Talboden"
+        },
+        {
+          "label": "Jährliches Tiberhochwasser"
+        },
+        {
+          "label": "Boden nach der Aufschüttung"
+        }
       ],
       "note": "Nach Hopkins (2007): Der alte Boden lag knapp unter 6 m, das Hochwasser bei fast 9 m."
     },
     {
       "question": "Warum wurde das Forumstal aufgeschüttet, bevor ein Kanal, der Anfang der Cloaca Maxima, es entwässern konnte?",
-      "options": ["Um es über das Tiberhochwasser zu heben", "Um den Kanal vor Feinden zu verbergen", "Um Platz für das Kolosseum zu schaffen", "Um es für Wagenrennen zu ebnen"],
+      "options": [
+        "Um es über das Tiberhochwasser zu heben",
+        "Um den Kanal vor Feinden zu verbergen",
+        "Um Platz für das Kolosseum zu schaffen",
+        "Um es für Wagenrennen zu ebnen"
+      ],
       "explanation": "Der Tiber überflutete das Tal in den meisten Jahren bis auf fast 9 m. Ein Kanal darunter liefe voll Flusswasser; mit dem Boden auf etwa 9 m konnte er bergab entwässern."
     }
   ],
-  "source": { "label": "Turismo Roma: Der Mund der Wahrheit" }
+  "source": {
+    "label": "Turismo Roma: Der Mund der Wahrheit"
+  }
 }

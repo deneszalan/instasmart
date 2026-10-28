@@ -9,7 +9,8 @@
     },
     {
       "alt": "Animation auf Dunkelgrün: ein Nasone aus Gusseisen auf Pflaster, erst mit drei Drachenausläufen, dann mit einem gebogenen; 2.800 Punkte; Schnitt mit Hauptleitung und Abfluss; offene Ausläufe bauen Druck ab; ein Finger verschließt den Auslauf, ein Strahl springt oben aus dem Loch; Drucklinie im Rohr.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "nasoni-jet-de.mp4"
     },
     {
       "prompt": "Halt den Finger aufs Ende des Auslaufs und wähle die Größe des Lochs oben. Bring den Strahl auf mindestens 85 % des Drucks der Hauptleitung.",
@@ -22,23 +23,42 @@
     {
       "heading": "So funktioniert der Fingertrick",
       "steps": [
-        { "label": "Offener Auslauf: Rohrreibung frisst Druck" },
-        { "label": "Finger auf dem Ende: viel weniger Durchfluss" },
-        { "label": "Weniger Fluss, weniger Reibung: Druck steigt" },
-        { "label": "Das Loch oben macht daraus einen Strahl" }
+        {
+          "label": "Offener Auslauf: Rohrreibung frisst Druck"
+        },
+        {
+          "label": "Finger auf dem Ende: viel weniger Durchfluss"
+        },
+        {
+          "label": "Weniger Fluss, weniger Reibung: Druck steigt"
+        },
+        {
+          "label": "Das Loch oben macht daraus einen Strahl"
+        }
       ]
     },
     {
       "heading": "Roms Nasoni",
       "events": [
-        { "text": "Erste Nasoni, mit drei Drachenausläufen" },
-        { "text": "Bei einer Dürre stellt Acea einige ab" },
-        { "text": "Etwa 2.800; drei neue am Forum" }
+        {
+          "text": "Erste Nasoni, mit drei Drachenausläufen"
+        },
+        {
+          "text": "Bei einer Dürre stellt Acea einige ab"
+        },
+        {
+          "text": "Etwa 2.800; drei neue am Forum"
+        }
       ]
     },
     {
       "question": "Warum schießt das Wasser oben aus dem kleinen Loch, wenn man den Auslauf eines Nasone zuhält?",
-      "options": ["Weniger Durchfluss, weniger Druckverlust", "Der Finger erwärmt das Wasser", "Eine Pumpe im Inneren springt an", "Das Loch öffnet sich weiter"],
+      "options": [
+        "Weniger Durchfluss, weniger Druckverlust",
+        "Der Finger erwärmt das Wasser",
+        "Eine Pumpe im Inneren springt an",
+        "Das Loch öffnet sich weiter"
+      ],
       "explanation": "Wenn weniger Wasser fließt, geht in den Rohren viel weniger Druck durch Reibung verloren, also bleibt am Auslauf mehr, um einen Strahl aus dem Loch zu treiben."
     }
   ]

@@ -9,7 +9,8 @@
     },
     {
       "alt": "Animation im Schnitt durch das Pantheon, warmer Beton vor Abendhimmel: Das Mittagslicht aus dem Oculus trifft im Dezember hoch die Kassettenkuppel, gleitet im März zum Kuppelfuß, füllt um den 21. April die Nordtür und liegt im Sommer auf dem Boden; dann ein Wintertag von oben gesehen.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "pantheon-de.mp4"
     },
     {
       "prompt": "Zieh durch das Jahr und finde einen Tag, an dem das Mittagslicht die ganze Tür bedeckt, vom Boden bis zum oberen Rand.",
@@ -21,21 +22,47 @@
     {
       "heading": "Wo das Mittagslicht im Pantheon hinfällt",
       "events": [
-        { "when": "Dezember", "text": "Hoch an den Kassetten der Kuppel" },
-        { "when": "März", "text": "Am Fuß der Kuppel" },
-        { "when": "Um den 21. April", "text": "Füllt die Tür bis zum Boden" },
-        { "when": "Mai bis August", "text": "Auf dem Boden vor der Tür" },
-        { "when": "September", "text": "Wieder am Fuß der Kuppel" }
+        {
+          "when": "Dezember",
+          "text": "Hoch an den Kassetten der Kuppel"
+        },
+        {
+          "when": "März",
+          "text": "Am Fuß der Kuppel"
+        },
+        {
+          "when": "Um den 21. April",
+          "text": "Füllt die Tür bis zum Boden"
+        },
+        {
+          "when": "Mai bis August",
+          "text": "Auf dem Boden vor der Tür"
+        },
+        {
+          "when": "September",
+          "text": "Wieder am Fuß der Kuppel"
+        }
       ]
     },
     {
       "heading": "Eine Sonnenuhr, umgestülpt",
-      "left": { "label": "Eine Sonnenuhr", "text": "Ein Schatten wandert über markierte Linien und zeigt Stunde und Jahreszeit." },
-      "right": { "label": "Das Pantheon", "text": "Ein Lichtfleck wandert über Kuppel, Wand und Boden, ohne Linien, an denen man ihn ablesen könnte." }
+      "left": {
+        "label": "Eine Sonnenuhr",
+        "text": "Ein Schatten wandert über markierte Linien und zeigt Stunde und Jahreszeit."
+      },
+      "right": {
+        "label": "Das Pantheon",
+        "text": "Ein Lichtfleck wandert über Kuppel, Wand und Boden, ohne Linien, an denen man ihn ablesen könnte."
+      }
     },
     {
       "question": "Warum fällt das Mittagslicht im Pantheon immer auf die Seite mit der Tür?",
-      "options": ["Die Tür zeigt nach Norden", "Der Boden fällt zur Tür hin ab", "Der Oculus sitzt nicht mittig", "Spiegel in der Kuppel lenken es um"],
+      "options": [
+        "Die Tür zeigt nach Norden",
+        "Der Boden fällt zur Tür hin ab",
+        "Der Oculus sitzt nicht mittig",
+        "Spiegel in der Kuppel lenken es um"
+      ],
       "explanation": "Mittags steht die Sonne genau im Süden, also fällt das Licht durch den Oculus nach Norden, zur Tür hin, die nach Norden zeigt. Durch die Tür selbst fällt kein Sonnenlicht herein."
     }
   ]
