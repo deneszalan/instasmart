@@ -5,12 +5,18 @@
   "slides": [
     {
       "question": "Die Barcaccia, ein bootsförmiger Brunnen an Roms Spanischer Treppe, liegt unter Straßenniveau. Warum?",
-      "options": ["Sein Aquäduktwasser hatte wenig Druck", "Zum Schutz vor Tiberhochwasser", "Um ihn vor dem Papstpalast zu verbergen", "Sein Stein war zu schwer zum Anheben"],
+      "options": [
+        "Sein Aquäduktwasser hatte wenig Druck",
+        "Zum Schutz vor Tiberhochwasser",
+        "Um ihn vor dem Papstpalast zu verbergen",
+        "Sein Stein war zu schwer zum Anheben"
+      ],
       "explanation": "Sein Wasser kommt aus der Aqua Virgo, deren tief liegende Quellen zu wenig Druck für Fontänen oder Kaskaden lassen; darum setzte der Bildhauer Pietro Bernini den Brunnen unter die Straße."
     },
     {
       "alt": "Animation in Nachttürkis und Travertin: der Trevi-Brunnen, sein Becken unter der Straße; das lange Profil der Aqua Virgo ab tiefen Quellen, 21 km, zu 91 % unterirdisch; ein Rohr, dessen Wasser auf Quellhöhe stoppt; die versenkte Barcaccia; das stürzende Wasser des Trevi; Münzen für die Caritas.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "trevi-de.mp4"
     },
     {
       "prompt": "Das Wasser des Aquädukts steht nur einen halben Meter über der Straße. Senke den Brunnen ab, bis seine Fontäne mindestens 2 m hoch ist.",
@@ -27,10 +33,18 @@
     {
       "heading": "Wie eine tiefe Quelle einen Brunnen formt",
       "steps": [
-        { "label": "Quellen nur etwa 24 m über dem Meer" },
-        { "label": "Ein Kanal, der auf 21 km wenige Meter fällt" },
-        { "label": "Wasser im Rohr steigt nicht über die Quelle" },
-        { "label": "Versenkte Brunnen mit Überlauf und Kaskaden" }
+        {
+          "label": "Quellen nur etwa 24 m über dem Meer"
+        },
+        {
+          "label": "Ein Kanal, der auf 21 km wenige Meter fällt"
+        },
+        {
+          "label": "Wasser im Rohr steigt nicht über die Quelle"
+        },
+        {
+          "label": "Versenkte Brunnen mit Überlauf und Kaskaden"
+        }
       ]
     },
     {
@@ -40,7 +54,12 @@
     },
     {
       "question": "Was bestimmt ohne Pumpe den höchsten Punkt, den das Wasser eines Brunnens erreichen kann?",
-      "options": ["Die Höhe, von der sein Wasser kommt", "Die Breite der Leitung", "Die Länge des Aquädukts", "Die Größe des Beckens"],
+      "options": [
+        "Die Höhe, von der sein Wasser kommt",
+        "Die Breite der Leitung",
+        "Die Länge des Aquädukts",
+        "Die Größe des Beckens"
+      ],
       "explanation": "Wasser in einer Leitung steigt nicht höher als seine Quelle, abzüglich etwas Reibung. Die tiefen Quellen der Aqua Virgo lassen wenig Höhe, darum liegen ihre Brunnen tief."
     }
   ]

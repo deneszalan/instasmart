@@ -10,7 +10,8 @@
     },
     {
       "alt": "Animation in der Dämmerung: die Kuppel des Petersdoms, Risse vom Fuß aufwärts, von oben als Segmente. Eine hängende Kette wird zum Bogen; ein Segment wird in Stücke geteilt, eine Kette mit passenden Gewichten klappt zu einer Linie im Mauerwerk um; Eisenringe legen sich um die Kuppel.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "chains-de.mp4"
     },
     {
       "prompt": "Stell den Schub nach außen am Fuß so ein, dass die Stützlinie, Polenis umgedrehte Kette, in das Segment aus Mauerwerk passt.",
@@ -22,26 +23,51 @@
     {
       "heading": "Giovanni Polenis Test",
       "steps": [
-        { "label": "Die rissige Kuppel als Segmente sehen" },
-        { "label": "Ein Segment in Stücke teilen" },
-        { "label": "Für jedes Stück ein Gewicht an die Kette" },
-        { "label": "Die Kurve der Kette umdrehen" },
-        { "label": "Sie passt ins Mauerwerk: Das Segment hält" }
+        {
+          "label": "Die rissige Kuppel als Segmente sehen"
+        },
+        {
+          "label": "Ein Segment in Stücke teilen"
+        },
+        {
+          "label": "Für jedes Stück ein Gewicht an die Kette"
+        },
+        {
+          "label": "Die Kurve der Kette umdrehen"
+        },
+        {
+          "label": "Sie passt ins Mauerwerk: Das Segment hält"
+        }
       ]
     },
     {
       "heading": "Bau und Rettung der Kuppel",
       "events": [
-        { "text": "Michelangelo Buonarroti plant die Kuppel neu." },
-        { "text": "Giacomo della Porta und Domenico Fontana vollenden sie." },
-        { "text": "Gutachten von drei Mathematikern." },
-        { "text": "Papst Benedikt XIV. holt Poleni." },
-        { "text": "Poleni veröffentlicht die Analyse." }
+        {
+          "text": "Michelangelo Buonarroti plant die Kuppel neu."
+        },
+        {
+          "text": "Giacomo della Porta und Domenico Fontana vollenden sie."
+        },
+        {
+          "text": "Gutachten von drei Mathematikern."
+        },
+        {
+          "text": "Papst Benedikt XIV. holt Poleni."
+        },
+        {
+          "text": "Poleni veröffentlicht die Analyse."
+        }
       ]
     },
     {
       "question": "Warum konnte eine hängende Kette Giovanni Poleni zeigen, ob die rissige Kuppel des Petersdoms sicher war?",
-      "options": ["Umgedreht zeigt sie reinen Druck", "Ihr Gewicht gleicht dem der Kuppel", "Sie misst, wie breit die Risse sind", "Sie hält die Kuppel zusammen"],
+      "options": [
+        "Umgedreht zeigt sie reinen Druck",
+        "Ihr Gewicht gleicht dem der Kuppel",
+        "Sie misst, wie breit die Risse sind",
+        "Sie hält die Kuppel zusammen"
+      ],
       "explanation": "Eine Kette trägt nur Zug. Umgedreht ist ihre Kurve ein Weg, auf dem das Gewicht des Segments als reiner Druck wandert; bleibt dieser Weg im Mauerwerk, kann das Segment stehen."
     }
   ]

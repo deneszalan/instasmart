@@ -10,7 +10,8 @@
     },
     {
       "alt": "Animation, ein abendlicher Plan von Roms Ghetto am Tiber: die Mauern von 1555 am Portikus der Octavia; Punkte für die Bewohner füllen 3 Hektar; Häuser wachsen Stock um Stock; ein Hochwasser; die Mauern fallen, die Große Synagoge entsteht; eine stille Straße im Morgengrauen mit Stolpersteinen.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "ghetto-de.mp4"
     },
     {
       "prompt": "1555 hätte ein Stockwerk über dem ganzen Viertel jedem 15 m² gegeben. Wähle 1656 und setze Stockwerke auf, bis wieder jeder so viel Platz hat.",
@@ -27,11 +28,26 @@
     {
       "heading": "Roms jüdisches Viertel",
       "events": [
-        { "when": "161 v. Chr.", "text": "Erster Beleg für Juden in Rom." },
-        { "when": "1555", "text": "Papst Paul IV. schafft das Ghetto." },
-        { "when": "1870", "text": "Das Ghetto endet, als Italien Rom einnimmt." },
-        { "when": "1904", "text": "Die Große Synagoge öffnet." },
-        { "when": "16. Okt. 1943", "text": "Die deutsche Razzia." }
+        {
+          "when": "161 v. Chr.",
+          "text": "Erster Beleg für Juden in Rom."
+        },
+        {
+          "when": "1555",
+          "text": "Papst Paul IV. schafft das Ghetto."
+        },
+        {
+          "when": "1870",
+          "text": "Das Ghetto endet, als Italien Rom einnimmt."
+        },
+        {
+          "when": "1904",
+          "text": "Die Große Synagoge öffnet."
+        },
+        {
+          "when": "16. Okt. 1943",
+          "text": "Die deutsche Razzia."
+        }
       ]
     },
     {

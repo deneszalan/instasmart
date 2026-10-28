@@ -10,7 +10,8 @@
     },
     {
       "alt": "Animation auf bemaltem Putz: Eine Steintafel zeigt CDXLV, 445 Tage, 46 v. Chr. Zwölf Monatssäulen ergeben 355 Tage, zehn weniger als das Sonnenjahr. Ein Zusatzmonat wird eingeschoben oder ausgelassen, die Monate verrutschen gegen die Jahreszeiten, und 355 + 23 + 67 Tage ergeben 445.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "caesar-year-de.mp4"
     },
     {
       "prompt": "Wähle eine Schalttagsregel und lass die Jahrhunderte vergehen. Finde eine, die die Frühlings-Tagundnachtgleiche 1.000 Jahre lang auf einen Tag genau hält.",
@@ -19,23 +20,51 @@
     {
       "heading": "Von Caesar zum heutigen Kalender",
       "events": [
-        { "when": "46 v. Chr.", "text": "Caesar lässt das Jahr 445 Tage dauern." },
-        { "when": "45 v. Chr.", "text": "365 Tage, Schalttag alle 4 Jahre." },
-        { "when": "44 v. Chr.", "text": "Quintilis wird Juli, nach Caesar." },
-        { "when": "8 v. Chr.", "text": "Sextilis wird August." },
-        { "when": "1582", "text": "Gregorianische Reform streicht 10 Tage." }
+        {
+          "when": "46 v. Chr.",
+          "text": "Caesar lässt das Jahr 445 Tage dauern."
+        },
+        {
+          "when": "45 v. Chr.",
+          "text": "365 Tage, Schalttag alle 4 Jahre."
+        },
+        {
+          "when": "44 v. Chr.",
+          "text": "Quintilis wird Juli, nach Caesar."
+        },
+        {
+          "when": "8 v. Chr.",
+          "text": "Sextilis wird August."
+        },
+        {
+          "when": "1582",
+          "text": "Gregorianische Reform streicht 10 Tage."
+        }
       ]
     },
     {
       "heading": "Roms Kalender, vorher und nachher",
-      "left": { "label": "Vor Caesar", "text": "355 Tage, dazu ein Zusatzmonat von 22 oder 23 Tagen, wann immer der pontifex maximus einen einschob." },
-      "right": { "label": "Julianischer Kalender", "text": "365 Tage, dazu ein Schalttag in jedem vierten Jahr, nach einer festen Regel, die jeder prüfen konnte." }
+      "left": {
+        "label": "Vor Caesar",
+        "text": "355 Tage, dazu ein Zusatzmonat von 22 oder 23 Tagen, wann immer der pontifex maximus einen einschob."
+      },
+      "right": {
+        "label": "Julianischer Kalender",
+        "text": "365 Tage, dazu ein Schalttag in jedem vierten Jahr, nach einer festen Regel, die jeder prüfen konnte."
+      }
     },
     {
       "question": "Roms Jahr begann einst im März. Welcher Monatsname bedeutet „der siebte“?",
-      "options": ["September", "Juli", "Oktober", "Dezember"],
+      "options": [
+        "September",
+        "Juli",
+        "Oktober",
+        "Dezember"
+      ],
       "explanation": "September kommt von septem, sieben. Oktober, November und Dezember waren der achte, neunte und zehnte Monat."
     }
   ],
-  "source": { "label": "Wikipedia: Julian calendar" }
+  "source": {
+    "label": "Wikipedia: Julian calendar"
+  }
 }

@@ -9,7 +9,8 @@
     },
     {
       "alt": "Animation als Schnitt durch den Boden unter der Basilika San Clemente: Gebäude brennen 64 n. Chr. und werden verschüttet, römische Bauten mit einem Mithräum entstehen darauf, dann eine Kirche des 4. Jahrhunderts, dann die heutige Kirche etwa 4 m höher; dann Grabungen, eine Flut und ein Tunnel.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "threelevels-de.mp4"
     },
     {
       "prompt": "Geh zweimal durch die Geschichte von San Clemente: einmal auf den Ruinen bauend, einmal sie abräumend. Vergleiche, was zum Ausgraben bleibt.",
@@ -22,11 +23,26 @@
     {
       "heading": "Drei Ebenen, die älteste zuerst",
       "events": [
-        { "when": "64 n. Chr.", "text": "Brand; die Ruinen werden verfüllt" },
-        { "when": "um 200", "text": "Ein Mithräum in einem Römerhaus" },
-        { "when": "spätestens 392", "text": "Eine Kirche auf der römischen Ebene" },
-        { "when": "um 1100", "text": "Verfüllt; die heutige Kirche darauf" },
-        { "when": "1857", "text": "Pater Mullooly beginnt zu graben" }
+        {
+          "when": "64 n. Chr.",
+          "text": "Brand; die Ruinen werden verfüllt"
+        },
+        {
+          "when": "um 200",
+          "text": "Ein Mithräum in einem Römerhaus"
+        },
+        {
+          "when": "spätestens 392",
+          "text": "Eine Kirche auf der römischen Ebene"
+        },
+        {
+          "when": "um 1100",
+          "text": "Verfüllt; die heutige Kirche darauf"
+        },
+        {
+          "when": "1857",
+          "text": "Pater Mullooly beginnt zu graben"
+        }
       ]
     },
     {
@@ -35,9 +51,16 @@
     },
     {
       "question": "Das Mithräum von San Clemente wurde 1867 entdeckt. Warum konnte man es erst ab 1914 erforschen?",
-      "options": ["Wasser flutete es", "Die Kirche hatte es zugemauert", "Es lag unter einer öffentlichen Straße", "Der Papst verbot es"],
+      "options": [
+        "Wasser flutete es",
+        "Die Kirche hatte es zugemauert",
+        "Es lag unter einer öffentlichen Straße",
+        "Der Papst verbot es"
+      ],
       "explanation": "Grundwasser flutete die unterste Ebene. Ein Entwässerungstunnel zum Kolosseum, 1912–14 gegraben, leitete es ab."
     }
   ],
-  "source": { "label": "Basilika San Clemente: Geschichte" }
+  "source": {
+    "label": "Basilika San Clemente: Geschichte"
+  }
 }

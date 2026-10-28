@@ -10,7 +10,8 @@
     },
     {
       "alt": "Animation in Porphyrrot und Marmor: die Curia Julia aus Ziegeln auf dem Forum, ihr Saal von oben mit Stufen für etwa 300 Senatoren, Balken für die Größe des Senats, Senatoren gehen zur Abstimmung auf eine Seite, und der Fall des Plinius mit drei farbigen Gruppen, die zu zweien werden.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "curia-vote-de.mp4"
     },
     {
       "prompt": "Stell ein, wie viele Senatoren jeden Antrag stützen. Finde Zahlen, bei denen der Freispruch in drei Gruppen siegt, aber verliert, wenn die Todespartei wechselt.",
@@ -23,11 +24,21 @@
     {
       "heading": "Senatoren im Vergleich zu den Plätzen der Kurie",
       "items": [
-        { "label": "Republik" },
-        { "label": "Nach Sulla" },
-        { "label": "Julius Caesar" },
-        { "label": "Augustus" },
-        { "label": "Plätze in der Kurie" }
+        {
+          "label": "Republik"
+        },
+        {
+          "label": "Nach Sulla"
+        },
+        {
+          "label": "Julius Caesar"
+        },
+        {
+          "label": "Augustus"
+        },
+        {
+          "label": "Plätze in der Kurie"
+        }
       ],
       "unit": "Senatoren",
       "note": "Nach Sulla zwischen 500 und 600. Die Plätze der Kurie sind eine moderne Schätzung."
@@ -47,5 +58,7 @@
       "explanation": "Einzeln gezählt hatte der Freispruch mehr Anhänger als jeder Gegenantrag. Also schloss sich die Todespartei der Verbannung an: Sie wählte, wie Plinius schreibt, von welcher Seite sie besiegt würde."
     }
   ],
-  "source": { "label": "Plinius der Jüngere, Briefe 8,14 (Latein)" }
+  "source": {
+    "label": "Plinius der Jüngere, Briefe 8,14 (Latein)"
+  }
 }

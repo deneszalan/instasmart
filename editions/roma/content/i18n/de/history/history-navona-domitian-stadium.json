@@ -27,7 +27,8 @@
     },
     {
       "alt": "Animation wie ein gestochener Stadtplan: die lange Form der Piazza Navona, darüber Domitians Stadion von 86 n. Chr., dessen Ränge sich mit 30.000 Menschen füllen; Häuser wachsen auf den Rängen, die Bahn bleibt frei; ein Schnitt zeigt die Arena 4,5 m tief; dann Berninis Brunnen und Borrominis Kirche.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "navona-de.mp4"
     },
     {
       "prompt": "Leg Bankreihen um die Bahn und wähle, wie viel Bank jeder Zuschauer bekommt. Finde eine Bestuhlung für etwa 30.000 Menschen.",

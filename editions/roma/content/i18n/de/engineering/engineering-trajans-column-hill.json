@@ -9,7 +9,8 @@
     },
     {
       "alt": "Animation im Querschnitt, Dämmerung: die Trajanssäule mit goldenem Maßstab von 100 römischen Fuß, die Sockelinschrift, ein abgetragener Erdrücken, ein Graben mit Römerstraße unter der Säule, dann der Hang des Quirinals, zurückgeschnitten zu einer Wand so hoch wie die Säule, davor die Trajansmärkte.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "trajan-hill-de.mp4"
     },
     {
       "prompt": "Schneide den Hang bis auf ebenen Boden zurück. Wie weit musst du an einem 30°-Hang graben, für eine Wand so hoch wie die Trajanssäule, 100 römische Fuß?",
@@ -25,22 +26,47 @@
     },
     {
       "heading": "Welcher Hügel?",
-      "left": { "label": "Die alte Lesart", "text": "Ein 100 römische Fuß hoher Rücken füllte einst das ganze Gelände, und die Säule zeigt seine Höhe." },
-      "right": { "label": "Die wohl richtige Lesart", "text": "Der Hang des Quirinals neben dem Forum wurde etwa 100 Fuß hoch zurückgeschnitten, und die Trajansmärkte stützen die Wand." }
+      "left": {
+        "label": "Die alte Lesart",
+        "text": "Ein 100 römische Fuß hoher Rücken füllte einst das ganze Gelände, und die Säule zeigt seine Höhe."
+      },
+      "right": {
+        "label": "Die wohl richtige Lesart",
+        "text": "Der Hang des Quirinals neben dem Forum wurde etwa 100 Fuß hoch zurückgeschnitten, und die Trajansmärkte stützen die Wand."
+      }
     },
     {
       "heading": "Trajans Forum und Säule",
       "events": [
-        { "when": "98 n. Chr.", "text": "Trajan wird Kaiser." },
-        { "when": "112 n. Chr.", "text": "Sein Forum wird eingeweiht." },
-        { "when": "113 n. Chr.", "text": "Die Säule wird geweiht, 12. Mai." },
-        { "when": "117 n. Chr.", "text": "Trajan stirbt; Asche im Sockel." },
-        { "text": "Ein bronzener Petrus ersetzt Trajans verlorene Statue." }
+        {
+          "when": "98 n. Chr.",
+          "text": "Trajan wird Kaiser."
+        },
+        {
+          "when": "112 n. Chr.",
+          "text": "Sein Forum wird eingeweiht."
+        },
+        {
+          "when": "113 n. Chr.",
+          "text": "Die Säule wird geweiht, 12. Mai."
+        },
+        {
+          "when": "117 n. Chr.",
+          "text": "Trajan stirbt; Asche im Sockel."
+        },
+        {
+          "text": "Ein bronzener Petrus ersetzt Trajans verlorene Statue."
+        }
       ]
     },
     {
       "question": "Was fanden Grabungen im frühen 20. Jahrhundert unter dem Fundament der Trajanssäule in Rom?",
-      "options": ["Eine römische Straße und Häuser", "Den Fels eines Hügels", "Trajans goldene Urne", "Einen verschütteten Tempel"],
+      "options": [
+        "Eine römische Straße und Häuser",
+        "Den Fels eines Hügels",
+        "Trajans goldene Urne",
+        "Einen verschütteten Tempel"
+      ],
       "explanation": "Eine Straße und Häuser der frühen Kaiserzeit, also stand an dieser Stelle kein Hügel. Der „Hügel“ war wohl der zurückgeschnittene Hang des Quirinals."
     }
   ]

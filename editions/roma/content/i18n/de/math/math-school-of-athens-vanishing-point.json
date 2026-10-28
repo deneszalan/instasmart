@@ -10,7 +10,8 @@
     },
     {
       "alt": "Animation auf dunklem Schiefer, ein Schema von Raffaels Schule von Athen: Rote Hilfslinien an den Hallenkanten treffen sich im goldenen Fluchtpunkt zwischen Platon und Aristoteles; der Horizont auf Augenhöhe; Fliesendiagonalen enden in zwei Distanzpunkten, 9 m weit; das Auge liegt hinter der Wand.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "perspective-de.mp4"
     },
     {
       "prompt": "Zieh den Punkt, bis jede in die Tiefe laufende Kante durch ihn geht. Wechsle dann zum Distanzpunkt: Wo treffen die Fliesendiagonalen den Horizont?",
@@ -23,11 +24,21 @@
     {
       "heading": "Wie man das Auge des Malers aus einem Bild abliest",
       "steps": [
-        { "label": "Die in die Tiefe laufenden Kanten verlängern" },
-        { "label": "Sie treffen sich im Fluchtpunkt" },
-        { "label": "Eine Waagerechte durch ihn ist die Augenhöhe" },
-        { "label": "Diagonalen von Quadratfliesen: Distanzpunkte" },
-        { "label": "Ihr Abstand zu ihm: der Betrachtungsabstand" }
+        {
+          "label": "Die in die Tiefe laufenden Kanten verlängern"
+        },
+        {
+          "label": "Sie treffen sich im Fluchtpunkt"
+        },
+        {
+          "label": "Eine Waagerechte durch ihn ist die Augenhöhe"
+        },
+        {
+          "label": "Diagonalen von Quadratfliesen: Distanzpunkte"
+        },
+        {
+          "label": "Ihr Abstand zu ihm: der Betrachtungsabstand"
+        }
       ]
     },
     {

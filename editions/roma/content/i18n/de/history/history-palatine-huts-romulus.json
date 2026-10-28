@@ -10,7 +10,8 @@
     },
     {
       "alt": "Animation in der Dämmerung über dem Palatin: der 21. April 753 v. Chr., fünf antike Gründungsdaten auf einer Zeitleiste, sieben Regierungszeiten ab 509 v. Chr. zurückgestapelt, eine Grabung zu Hüttenböden und Pfostenlöchern im Fels, eine Strohhütte entsteht, ihr Grundriss, verschmelzende Dörfer.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "palatinehuts-de.mp4"
     },
     {
       "prompt": "Stell ein, wie lange Roms sieben legendäre Könige im Schnitt regierten, und finde das Gründungsjahr, das der Gelehrte Varro nannte: 753 v. Chr.",
@@ -34,10 +35,22 @@
     {
       "heading": "Roms Anfänge",
       "events": [
-        { "when": "9.–7. Jh. v. Chr.", "text": "Hütten auf dem Cermalus, einer Kuppe des Palatins" },
-        { "when": "um 600 v. Chr.", "text": "Die Hügeldörfer sind zu einer Stadt verschmolzen" },
-        { "when": "1. Jh. v. Chr.", "text": "Varro legt die Gründung auf 753 v. Chr. fest" },
-        { "when": "1948", "text": "Der Archäologe Salvatore Puglisi gräbt drei Hütten aus" }
+        {
+          "when": "9.–7. Jh. v. Chr.",
+          "text": "Hütten auf dem Cermalus, einer Kuppe des Palatins"
+        },
+        {
+          "when": "um 600 v. Chr.",
+          "text": "Die Hügeldörfer sind zu einer Stadt verschmolzen"
+        },
+        {
+          "when": "1. Jh. v. Chr.",
+          "text": "Varro legt die Gründung auf 753 v. Chr. fest"
+        },
+        {
+          "when": "1948",
+          "text": "Der Archäologe Salvatore Puglisi gräbt drei Hütten aus"
+        }
       ]
     },
     {

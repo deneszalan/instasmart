@@ -10,7 +10,8 @@
     },
     {
       "alt": "Animation in Travertin und Rot vor Abendhimmel: der ovale Grundriss des Kolosseums mit 80 Bögen, eine Fassade mit rot nummerierten Bögen L bis LIII, eine Marke mit LII, Schlangen an 4 Bögen gegen 76, ein Schnitt mit Treppen und Vomitorien, Sitze nach Rang und Balken für 87.000 und etwa 50.000.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "colosseum-arches-de.mp4"
     },
     {
       "prompt": "Öffne mehr der nummerierten Bögen des Kolosseums und verteile die Menge auf sie. Bring 50.000 Menschen in unter 5 Minuten hinaus.",
@@ -23,27 +24,48 @@
     {
       "heading": "Von der Marke zum Sitzplatz im Kolosseum",
       "steps": [
-        { "label": "Eine Marke, eine tessera, weist den Weg" },
-        { "label": "Einer von 76 nummerierten Bögen" },
-        { "label": "Die eigene Treppe dieses Bogens" },
-        { "label": "Ein Vomitorium öffnet sich zum Rang" },
-        { "label": "Keil, nummerierte Reihe, Sitz" }
+        {
+          "label": "Eine Marke, eine tessera, weist den Weg"
+        },
+        {
+          "label": "Einer von 76 nummerierten Bögen"
+        },
+        {
+          "label": "Die eigene Treppe dieses Bogens"
+        },
+        {
+          "label": "Ein Vomitorium öffnet sich zum Rang"
+        },
+        {
+          "label": "Keil, nummerierte Reihe, Sitz"
+        }
       ]
     },
     {
       "heading": "Wie viele Menschen fasste das Kolosseum?",
       "items": [
-        { "label": "Liste von 354 n. Chr." },
-        { "label": "Moderne Schätzung" }
+        {
+          "label": "Liste von 354 n. Chr."
+        },
+        {
+          "label": "Moderne Schätzung"
+        }
       ],
       "unit": "Menschen",
       "note": "Schätzungen für verschiedene Zeiten reichen von etwa 50.000 bis 80.000."
     },
     {
       "question": "Die Treppen des Kolosseums endeten in Vomitorien, Gängen zu den Sitzen. Woher kommt der Name?",
-      "options": ["Latein für „ausspeien“", "Ein Raum zum Erbrechen", "Der Name des Architekten", "Griechisch für „Tür“"],
+      "options": [
+        "Latein für „ausspeien“",
+        "Ein Raum zum Erbrechen",
+        "Der Name des Architekten",
+        "Griechisch für „Tür“"
+      ],
       "explanation": "Vom lateinischen Wort für schnelles Ausstoßen, der Wurzel des englischen „vomit“: Die Gänge spien die Menschen in ihren Rang und wieder hinaus."
     }
   ],
-  "source": { "label": "Parco archeologico del Colosseo: Die Cavea" }
+  "source": {
+    "label": "Parco archeologico del Colosseo: Die Cavea"
+  }
 }
