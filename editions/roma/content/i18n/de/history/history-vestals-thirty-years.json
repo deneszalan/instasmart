@@ -10,7 +10,8 @@
     },
     {
       "alt": "Animation im Feuerschein bei Nacht: der runde Vestatempel mit Feuer, sechs Vestalinnen und ihr Haus, ein Mädchen von zwanzig per Los gewählt, 30 Jahre als drei farbige Jahrzehnte, ein Dienstplan in sechs Bahnen, alle 5 Jahre ein neues Mädchen, Occias 57 Jahre, ein Spiegel entzündet das Feuer neu.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "vestals-years-de.mp4"
     },
     {
       "prompt": "Stell ein, wie lange jede Vestalin dient. Die Vestalin Occia diente 57 Jahre: Wenn alle sechs das täten, wie oft würde ein neues Mädchen gewählt?",
@@ -23,20 +24,43 @@
     {
       "heading": "Die Vestalinnen und ihr Tempel",
       "events": [
-        { "when": "38 v. Chr.", "text": "Occia wird Vestalin, für 57 Jahre." },
-        { "when": "191 n. Chr.", "text": "Feuer zerstört den Vestatempel." },
-        { "when": "382 n. Chr.", "text": "Kaiser Gratian streicht ihr Geld." },
-        { "when": "385 n. Chr.", "text": "Coelia Concordia, die letzte namentlich bekannte Vestalin." },
-        { "when": "1930–31", "text": "Tempel teilweise wieder aufgebaut." }
+        {
+          "when": "38 v. Chr.",
+          "text": "Occia wird Vestalin, für 57 Jahre."
+        },
+        {
+          "when": "191 n. Chr.",
+          "text": "Feuer zerstört den Vestatempel."
+        },
+        {
+          "when": "382 n. Chr.",
+          "text": "Kaiser Gratian streicht ihr Geld."
+        },
+        {
+          "when": "385 n. Chr.",
+          "text": "Coelia Concordia, die letzte namentlich bekannte Vestalin."
+        },
+        {
+          "when": "1930–31",
+          "text": "Tempel teilweise wieder aufgebaut."
+        }
       ]
     },
     {
       "heading": "Die dreißig Jahre einer Vestalin",
       "steps": [
-        { "label": "Jahre 1–10: die Riten lernen" },
-        { "label": "Jahre 11–20: sie vollziehen" },
-        { "label": "Jahre 21–30: die neuen Mädchen lehren" },
-        { "label": "Dann frei, zu gehen und zu heiraten" }
+        {
+          "label": "Jahre 1–10: die Riten lernen"
+        },
+        {
+          "label": "Jahre 11–20: sie vollziehen"
+        },
+        {
+          "label": "Jahre 21–30: die neuen Mädchen lehren"
+        },
+        {
+          "label": "Dann frei, zu gehen und zu heiraten"
+        }
       ]
     },
     {

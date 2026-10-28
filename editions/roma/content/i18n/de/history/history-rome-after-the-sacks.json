@@ -10,7 +10,8 @@
     },
     {
       "alt": "Animation: ein nächtlicher Plan Roms in der Aurelianischen Mauer, der Tiber blau, jeder Punkt 10.000 Menschen. Die Punkte schwinden mit den Plünderungen 410 und 455 und den gekappten Aquädukten 537; die letzten sammeln sich am Tiberknie. Dann begraben Schlick, Erde und Schutt eine antike Säule.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "city-shrinks-de.mp4"
     },
     {
       "prompt": "Geh durch die Jahre. Finde die erste Schätzung, in der selbst die höchste Zahl für Rom unter 100.000 liegt.",
@@ -23,11 +24,21 @@
     {
       "heading": "Schätzungen, wie viele Menschen in Rom lebten",
       "items": [
-        { "label": "1.–2. Jh. n. Chr., hoch" },
-        { "label": "408 (Lançon)" },
-        { "label": "419 (Lançon)" },
-        { "label": "455, hoch" },
-        { "label": "um 550, eine Schätzung" }
+        {
+          "label": "1.–2. Jh. n. Chr., hoch"
+        },
+        {
+          "label": "408 (Lançon)"
+        },
+        {
+          "label": "419 (Lançon)"
+        },
+        {
+          "label": "455, hoch"
+        },
+        {
+          "label": "um 550, eine Schätzung"
+        }
       ],
       "unit": "Menschen",
       "note": "Schätzungen schwanken stark: Der Archäologe Glenn Storey sieht den Höchststand bei etwa 450.000."
@@ -35,11 +46,26 @@
     {
       "heading": "Wie die Stadt schrumpfte und versank",
       "events": [
-        { "when": "286", "text": "Westkaiser regieren aus Mailand." },
-        { "when": "410", "text": "Westgoten plündern Rom 3 Tage lang." },
-        { "when": "455", "text": "Vandalen rauben Rom 2 Wochen aus." },
-        { "when": "537", "text": "Belagernde Goten kappen Aquädukte." },
-        { "when": "Ende 16. Jh.", "text": "Die Kaiserforen liegen 3–4 m tief." }
+        {
+          "when": "286",
+          "text": "Westkaiser regieren aus Mailand."
+        },
+        {
+          "when": "410",
+          "text": "Westgoten plündern Rom 3 Tage lang."
+        },
+        {
+          "when": "455",
+          "text": "Vandalen rauben Rom 2 Wochen aus."
+        },
+        {
+          "when": "537",
+          "text": "Belagernde Goten kappen Aquädukte."
+        },
+        {
+          "when": "Ende 16. Jh.",
+          "text": "Die Kaiserforen liegen 3–4 m tief."
+        }
       ]
     },
     {

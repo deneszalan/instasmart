@@ -10,7 +10,8 @@
     },
     {
       "alt": "Animation in brauner Tinte auf Sand: der Circus Maximus zwischen Palatin und Aventin, 12 Startboxen öffnen sich, Schnüre von jeder Box zur weißen Linie, ungleich bei gerader Reihe und gleich auf einem Bogen um den Punkt, Wagen in vier Farben auf sieben Runden, Eier und Delfine zählen mit.",
-      "credit": "Roma · eigene Animation · KI-Stimme"
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "circus-gates-de.mp4"
     },
     {
       "prompt": "Biege die Reihe der 12 Startboxen und wähle den Mittelpunkt des Bogens. Gib jedem Wagen denselben Weg bis zur weißen Linie.",
@@ -23,9 +24,15 @@
     {
       "heading": "Wie viele Plätze hatte der Circus Maximus?",
       "items": [
-        { "label": "Dionysios von Halikarnassos" },
-        { "label": "Plinius der Ältere" },
-        { "label": "Heutige Schätzung, höchstens" }
+        {
+          "label": "Dionysios von Halikarnassos"
+        },
+        {
+          "label": "Plinius der Ältere"
+        },
+        {
+          "label": "Heutige Schätzung, höchstens"
+        }
       ],
       "unit": "Plätze",
       "note": "Der Archäologe John Humphrey nennt die höhere Zahl überliefert, aber überzogen."
