@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { FieldId, KnowledgeCard } from '../src/types';
-import { createRng, endlessFeed, searchCards, sortCards, spreadByField, take } from '../src/lib/feed';
-import { formatStamp, publishedAt, timeAgo } from '../src/lib/time';
+import { createRng, endlessFeed, newsFirst, searchCards, sortCards, spreadByField, take } from '../src/lib/feed';
+import { formatNewsDate, formatStamp, newsAt, publishedAt, timeAgo } from '../src/lib/time';
 
 function card(field: FieldId, n: number, extra: Partial<KnowledgeCard> = {}): KnowledgeCard {
   return {
@@ -151,6 +151,26 @@ describe('sortCards', () => {
     const entries = take(endlessFeed(dated, { seed: 3, first }), 12);
     const ids = entries.map((e) => (e.type === 'card' ? e.card.id : '|'));
     expect(ids).toEqual([...first, '|', ...first, '|']);
+  });
+});
+
+describe('news', () => {
+  const posts = [
+    card('politics', 1, { news: '2026-10-25', createdAt: '2026-10-26' }),
+    card('physics', 1),
+    card('space', 1, { news: '2026-10', createdAt: '2026-10-27' }),
+    card('politics', 2, { news: '2026-11-03', createdAt: '2026-10-26' }),
+    card('earth', 1, { news: '2026-10-25', createdAt: '2026-10-29' }),
+  ];
+  it('lists only news posts, the latest event first, then the newest post', () => {
+    expect(newsFirst(posts).map((c) => c.id)).toEqual(['politics-2', 'earth-1', 'politics-1', 'space-1']);
+  });
+  it('counts a month-only date from its first day', () => {
+    expect(newsAt('2026-10')).toBe(Date.parse('2026-10-01T12:00:00Z'));
+  });
+  it('writes the day, or only the month', () => {
+    expect(formatNewsDate('2026-10-25')).toBe('October 25, 2026');
+    expect(formatNewsDate('2026-10')).toBe('October 2026');
   });
 });
 

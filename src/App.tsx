@@ -1,5 +1,5 @@
-import { useEffect, useLayoutEffect, useRef } from 'react';
-import { Bookmark, Compass, Flame, House, User } from 'lucide-react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { Bookmark, Compass, Flame, House, Newspaper, User } from 'lucide-react';
 import type { Post } from './types';
 import { CARD_BY_ID } from './data/library';
 import { useRoute, type Tab } from './lib/route';
@@ -11,13 +11,16 @@ import { Sheet } from './components/Sheet';
 import { Toast } from './components/Toast';
 import { Explore } from './views/Explore';
 import { Feed } from './views/Feed';
+import { News, NEWS } from './views/News';
 import { Profile } from './views/Profile';
 import { Saved } from './views/Saved';
 import { t } from './i18n';
 import { EDITION } from './edition';
 
+// The News tab shows only in an edition with news posts.
 const NAV: { tab: Tab; label: string; icon: typeof House }[] = [
   { tab: 'home', label: t('Home'), icon: House },
+  ...(NEWS.length > 0 ? [{ tab: 'news' as const, label: t('News'), icon: Newspaper }] : []),
   { tab: 'explore', label: t('Explore'), icon: Compass },
   { tab: 'saved', label: t('Saved'), icon: Bookmark },
   { tab: 'profile', label: t('Profile'), icon: User },
@@ -46,6 +49,11 @@ function Shell() {
   const scrollByTab = useRef<Partial<Record<Tab, number>>>({});
   const lastTab = useRef(route.tab);
   const days = streak(state.activeDays);
+  // Like the feed, News stays mounted once opened, so coming back keeps its place.
+  const [newsOpened, setNewsOpened] = useState(route.tab === 'news');
+  useEffect(() => {
+    if (route.tab === 'news') setNewsOpened(true);
+  }, [route.tab]);
 
   // Each tab keeps its own scroll position, like a native app.
   useEffect(() => {
@@ -97,6 +105,11 @@ function Shell() {
         <div hidden={route.tab !== 'home'}>
           <Feed key={`${route.by || 'everyone'}:${state.settings.sort}`} by={route.by} onBy={(by) => navigate({ by }, { replace: true })} />
         </div>
+        {NEWS.length > 0 && newsOpened && (
+          <div hidden={route.tab !== 'news'}>
+            <News />
+          </div>
+        )}
         {route.tab === 'explore' && (
           <Explore
             query={route.q}

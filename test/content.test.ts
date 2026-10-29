@@ -23,11 +23,14 @@ describe('every edition', () => {
     });
 
     it(`${edition.name} has posts in each of its fields`, () => {
-      // Reckon is the big library; a new edition may start small.
-      const least = id === 'reckon' ? 8 : 1;
-      for (const f of edition.fields) expect(posts.filter((p) => p.field === f).length, f).toBeGreaterThanOrEqual(least);
+      for (const f of edition.fields) expect(posts.filter((p) => p.field === f).length, f).toBeGreaterThan(0);
     });
   }
+
+  it('keeps Reckon to animated posts', () => {
+    const still = content.reckon.posts.filter((p) => !(p.slides ?? []).some((s) => s.type === 'video' && s.animation));
+    expect(still.map((p) => p.id)).toEqual([]);
+  });
 
   it('gives every Reckon animation post a hands-on lab, each lab used once', () => {
     const slides = (p: (typeof content.reckon.posts)[number]) => p.slides ?? [];
@@ -63,7 +66,7 @@ describe('content/', () => {
 
   it('knows every clip\'s length before it loads', () => {
     const clips = LIBRARY.flatMap((c) => c.slides ?? []).filter((s) => s.type === 'video');
-    expect(clips.length).toBeGreaterThan(200);
+    expect(clips.length).toBeGreaterThan(100);
     for (const clip of clips) expect(clipSeconds(clip.src), clip.src).toBeGreaterThanOrEqual(2);
   });
 

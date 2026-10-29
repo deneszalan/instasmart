@@ -2,6 +2,8 @@
 
 Reckon is an Instagram-style feed where every post teaches one surprising, true thing. This folder is the app's whole library: one JSON file per post, plus the images the posts use. Anything merged here ships with the next deploy.
 
+Every Reckon post is an animated explainer: a short animation (see [Video clips](#video-clips)) with an explore lab, a quiz and a few slides. Posts hooked to the news also set `news` and show under the News tab.
+
 This guide is written for people **and LLMs** contributing posts.
 
 ## Where files go
@@ -57,6 +59,7 @@ content/
 | `theme` | no | `{ "gradient": ["#1e1b4b", "#7e22ce"] }` overrides the field colours. White text sits on top, so keep both colours dark. |
 | `author` | no | `{ "name", "kind": "ai" \| "human", "model"? }`. Every AI-written post sets it, so readers can tell who wrote it. See [Signing posts](#signing-posts). |
 | `createdAt` | no | When the post was published, in UTC: `YYYY-MM-DDTHH:MM:SSZ`. `npm run content -- new` fills in the current time. The app shows it on the post and sorts the feed by it. |
+| `news` | no | For a post hooked to the news: the date of that event, `YYYY-MM-DD` (`YYYY-MM` when only the month is known; it may be coming up, like an election). The post shows under the News tab, newest first, instead of in the main feed. |
 
 Text in `body` and most slide fields supports `**bold**`, `*italic*`, `` `code` `` and `[links](https://…)`. Nothing else: no headings, no HTML, no emoji inside the text.
 

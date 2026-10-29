@@ -146,6 +146,16 @@ import { floorPerPerson as ghettoFloor, groundPerPerson as ghettoGround, PEOPLE 
 import { fits as smmFits, LIBERIUS as SMM_LIBERIUS, windows as smmWindows, yearsLeft as smmYears } from '../src/labs/art/santa-maria-maggiore-sixtus-arch';
 import { flowShare as nasoniFlow, GOAL as NASONI_GOAL, HOLES as NASONI_HOLES, spoutPressure as nasoniPressure } from '../src/labs/engineering/nasoni-finger-fountain';
 import { DOCS as CARB_DOCS, firstName as carbFirstName, firstWith as carbFirstWith, known as carbKnown } from '../src/labs/history/carbonara-paper-trail';
+import { IN_2025 as CO2_IN, OUT_2025 as CO2_OUT, STEADY_AT as CO2_STEADY, yearlyChange as co2Change } from '../src/labs/earth/co2-half-stays-in-air';
+import { GOAL_RINGS as TBM_GOAL, mine as tbmMine, place as tbmPlace, SEGMENTS as TBM_SEGMENTS, START as TBM_START, type Tbm } from '../src/labs/engineering/hudson-tunnel-boring-machine';
+import { dayToTime as kskDay, LAST_SAFE_DAY as KSK_LAST, trustsNewKeyAt as kskTrusts, works as kskWorks } from '../src/labs/tech/dnssec-root-key-rollover';
+import { azimuth as swAzimuth, compassError as swError, GOAL as SW_GOAL, kmPerDegree as swKmPerDeg, shiftMinutes as swShift } from '../src/labs/biology/shearwater-jet-lag-sun-compass';
+import { beadSpeedChange as gasDv, kick as gasKick, MASS_U as GAS_MASS, meanSpeed as gasMean, speedFor as gasSpeedFor, THRESHOLD as GAS_THRESHOLD } from '../src/labs/physics/levitated-nanoparticle-gas-kicks';
+import { ageFromSlope as rbAge, decayedShare as rbDecayed, grainAt as rbGrain, GRAINS as RB_GRAINS, slope as rbSlope, TARGET_AGE as RB_TARGET } from '../src/labs/space/mars-meteorite-rubidium-clock';
+import { BALLOTS as LV_BALLOTS, elected as lvElected, NO_MARKS as LV_NO_MARKS, ranking as lvRanking, votes as lvVotes } from '../src/labs/politics/latvia-open-list-votes';
+import { fits as hitFits, LINE as HIT_LINE, OFFER as HIT_OFFER, reading as hitReading, WORDS as HIT_WORDS } from '../src/labs/language/hittite-bread-and-water';
+import { BEATS as CLAP_BEATS, NO_SILENCE as CLAP_NO_SILENCE, overlap as clapOverlap, PATTERN as CLAP_PATTERN, shifted as clapShifted } from '../src/labs/music/clapping-music-phase-shift';
+import { enlarge as solEnlarge, FULL as SOL_FULL, STAGES as SOL_STAGES } from '../src/labs/art/statue-of-liberty-enlarged-by-four';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1373,5 +1383,117 @@ describe('lab maths', () => {
     expect(carbFirstWith('cream')).toBe(1960);
     expect(carbKnown(1952).filter((d) => d.kind === 'recipe')).toHaveLength(2);
     expect(CARB_DOCS.map((d) => d.year)).toEqual([...CARB_DOCS.map((d) => d.year)].sort((a, b) => a - b));
+  });
+  it('CO₂ bathtub: with half of 2025’s emissions staying, the level stops rising at half of 2025’s emissions', () => {
+    expect(CO2_IN).toBeCloseTo(5.6, 6);
+    expect(CO2_OUT).toBeCloseTo(2.8, 6);
+    expect(co2Change(100)).toBeCloseTo(2.8, 6);
+    expect(co2Change(80)).toBeGreaterThan(0);
+    expect(co2Change(50)).toBeCloseTo(0, 6);
+    expect(co2Change(0)).toBeCloseTo(-2.8, 6);
+    expect(CO2_STEADY).toBeCloseTo(50, 6);
+  });
+  it('Tunnel boring machine: it can only push off a finished ring, so each stroke needs a ring built behind it', () => {
+    expect(tbmPlace(TBM_START).refused).toBe('no-gap');
+    let s: Tbm = tbmMine(TBM_START).next;
+    expect(s.extended).toBe(true);
+    expect(tbmMine(s).refused).toBe('jacks-out');
+    s = tbmPlace(s).next;
+    expect(s.placed).toBe(1);
+    expect(tbmMine(s).refused).toBe('ring-unfinished');
+    for (let i = 1; i < TBM_SEGMENTS; i++) s = tbmPlace(s).next;
+    expect(s).toEqual({ rings: 1, extended: false, placed: 0 });
+    for (let r = 1; r < TBM_GOAL; r++) {
+      s = tbmMine(s).next;
+      for (let i = 0; i < TBM_SEGMENTS; i++) s = tbmPlace(s).next;
+    }
+    expect(s.rings).toBe(TBM_GOAL);
+  });
+  it('Root key rollover: with automatic updates a resolver must be on by 11 September 2026, 30 days before the switch', () => {
+    expect(new Date(kskDay(KSK_LAST)).toISOString().slice(0, 10)).toBe('2026-09-11');
+    expect(kskWorks(KSK_LAST, 'auto')).toBe(true);
+    expect(kskWorks(KSK_LAST + 1, 'auto')).toBe(false);
+    expect(new Date(kskTrusts(10, 'auto')!).toISOString().slice(0, 10)).toBe('2025-02-10');
+    expect(kskWorks(10, 'off')).toBe(false);
+    expect(kskWorks(KSK_LAST + 100, 'auto')).toBe(false);
+  });
+  it('Shearwater jet lag: 1,000 km at 52° N is 58 minutes of sun time; 50 minutes at 2 pm turns the sun compass about 15° clockwise', () => {
+    expect(swAzimuth(12)).toBeCloseTo(180, 6);
+    expect(swAzimuth(6)).toBeLessThan(90);
+    expect(swAzimuth(18)).toBeGreaterThan(270);
+    expect(swKmPerDeg()).toBeCloseTo(68.53, 1);
+    expect(swShift(1000)).toBeCloseTo(58.4, 1);
+    expect(swShift(-1000)).toBeCloseTo(-58.4, 1);
+    expect(swError(14, (50 / 4) * swKmPerDeg())).toBeCloseTo(14.8, 1);
+    expect(swError(10, -850)).toBeLessThan(0);
+    expect(swError(12, 550)).toBeGreaterThan(SW_GOAL - 0.5);
+    expect(swError(8, 1000)).toBeLessThan(SW_GOAL - 0.5);
+    expect(swError(15, -900)).toBeLessThan(-(SW_GOAL - 0.5));
+  });
+  it('Gas kicks: a typical xenon atom bouncing back kicks 177 keV/c, below the 200 keV/c the experiment could see; 245 m/s reaches it', () => {
+    expect(gasMean(GAS_MASS.xe)).toBeCloseTo(217.4, 1);
+    expect(gasKick(GAS_MASS.xe, gasMean(GAS_MASS.xe), true)).toBeCloseTo(177.3, 1);
+    expect(gasKick(GAS_MASS.xe, 300, false)).toBeCloseTo(gasKick(GAS_MASS.xe, 300, true) / 2, 6);
+    expect(gasSpeedFor(GAS_THRESHOLD, GAS_MASS.xe)).toBeCloseTo(245.1, 1);
+    expect(gasKick(GAS_MASS.xe, 245, true)).toBeLessThan(GAS_THRESHOLD);
+    expect(gasKick(GAS_MASS.xe, 250, true)).toBeGreaterThan(GAS_THRESHOLD);
+    expect(gasKick(GAS_MASS.xe, 250, true)).toBeLessThan(GAS_THRESHOLD + 5);
+    expect(gasDv(390)).toBeCloseTo(0.208, 3);
+    expect(gasKick(GAS_MASS.sf6, gasMean(GAS_MASS.sf6), true)).toBeGreaterThan(gasKick(GAS_MASS.kr, gasMean(GAS_MASS.kr), true));
+  });
+  it('Rubidium clock: after 4.1 billion years 5.6% of the rubidium-87 has decayed and the isochron slope is 0.059, whatever the starting mix', () => {
+    expect(rbDecayed(49.23)).toBeCloseTo(0.5, 6);
+    expect(rbDecayed(RB_TARGET)).toBeCloseTo(0.0561, 4);
+    expect(rbSlope(RB_TARGET)).toBeCloseTo(0.0594, 4);
+    expect(rbAge(rbSlope(RB_TARGET))).toBeCloseTo(RB_TARGET, 9);
+    for (const mix of [0.7, 0.72, 0.75]) {
+      const pts = RB_GRAINS.map((x0) => rbGrain(x0, RB_TARGET, mix));
+      for (const p of pts) expect(p.y).toBeCloseTo(mix + p.x * rbSlope(RB_TARGET), 12);
+    }
+    const g = rbGrain(1, RB_TARGET);
+    expect(g.x + g.y).toBeCloseTo(1 + 0.7, 12);
+  });
+  it('Latvia open list: votes are ballots + for − against; against marks on four rivals give the last name a seat', () => {
+    expect(lvVotes(LV_NO_MARKS)).toEqual([1000, 1000, 1000, 1000, 1000, 1000]);
+    expect(LV_BALLOTS).toBe(1000);
+    expect(lvElected(LV_NO_MARKS)).toEqual([0, 1]);
+    const struck = { pro: [0, 0, 0, 0, 0, 0], con: [50, 50, 50, 50, 0, 0] };
+    expect(lvRanking(struck).slice(0, 2)).toEqual([4, 5]);
+    expect(lvElected(struck)).toContain(5);
+    const boosted = { pro: [0, 0, 0, 0, 0, 50], con: [0, 0, 0, 0, 0, 0] };
+    expect(lvElected(boosted)).toEqual([5, 0]);
+    // the real case it models: 34,294 Progressive ballots in Rīga; No. 43 got 4,577 for and 856 against, No. 4 got 2,841 and 6,502
+    expect(34294 + 4577 - 856).toBe(38015);
+    expect(34294 + 2841 - 6502).toBe(30633);
+  });
+  it('Hittite: Hrozný’s line has five words, NINDA known; each unknown word fits one meaning, offered out of order', () => {
+    expect(HIT_LINE).toEqual(['nu', 'NINDA-an', 'ezzatteni', 'watar-ma', 'ekutteni']);
+    expect(HIT_WORDS.map((w, i) => hitFits(i, w.meaning))).toEqual([true, true, true]);
+    expect(hitFits(0, 1)).toBe(false);
+    expect(hitFits(1, 2)).toBe(false);
+    expect([...HIT_OFFER].sort()).toEqual([0, 1, 2]);
+    expect(HIT_OFFER.some((m, i) => m === HIT_WORDS[i].meaning)).toBe(false);
+    expect(hitReading([true, true, false]).done).toBe(false);
+    expect(hitReading([true, true, true]).done).toBe(true);
+  });
+  it('Clapping Music: 8 claps in 12 beats; one move takes the first beat to the end; 12 moves are unison; no silence at 1, 6 and 11', () => {
+    expect(CLAP_BEATS).toBe(12);
+    expect(CLAP_PATTERN.filter(Boolean)).toHaveLength(8);
+    expect(clapShifted(1).join('')).toBe('110110101101');
+    expect(clapShifted(12)).toEqual([...CLAP_PATTERN]);
+    expect(clapOverlap(0)).toEqual({ both: 8, one: 0, silent: 4 });
+    expect(clapOverlap(1)).toEqual({ both: 4, one: 8, silent: 0 });
+    expect(CLAP_NO_SILENCE).toEqual([1, 6, 11]);
+    expect(new Set(Array.from({ length: 12 }, (_, s) => clapShifted(s).join(''))).size).toBe(12);
+    expect(Math.max(...Array.from({ length: 11 }, (_, s) => clapOverlap(s + 1).silent))).toBe(2);
+  });
+  it('Statue of Liberty: four times taller is 16 times the skin and 64 times the volume; the statue is about 37 times the study model', () => {
+    expect(solEnlarge(4)).toEqual({ height: 5, skin: 16, volume: 64 });
+    expect(SOL_FULL).toBeCloseTo(36.84, 2);
+    expect(solEnlarge(SOL_FULL).height).toBeCloseTo(46.05, 2);
+    expect(solEnlarge(SOL_FULL).skin).toBeCloseTo(1357, 0);
+    expect(Math.round(solEnlarge(SOL_FULL).volume / 1000)).toBe(50);
+    expect(SOL_STAGES.map((s) => s.m)).toEqual([1.25, 2.85, 11, 46.05]);
+    expect(SOL_STAGES[2].m / SOL_STAGES[1].m).toBeCloseTo(3.86, 2);
   });
 });

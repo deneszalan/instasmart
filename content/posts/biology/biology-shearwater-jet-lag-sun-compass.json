@@ -1,0 +1,167 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-shearwater-jet-lag-sun-compass",
+  "field": "biology",
+  "title": "Fast flights east or west give seabirds jet lag, and it turns their sun compass",
+  "emoji": "🧭",
+  "body": "On 29 October 2026 a study in the journal Science reported that Manx shearwaters, seabirds that nest in the UK, get a kind of jet lag. Over 20 years, Oxford biologist Tim Guilford and colleagues fitted 1,045 of them with GPS trackers and followed 1,837 flights home from feeding grounds up to 1,000 km away ([Science News](https://www.sciencenews.org/article/seabird-jet-lag-navigation-off-course)). The birds steer by the Sun, whose direction swings round the sky during the day, so they need a body clock to know where it should be. But the Earth turns 15° an hour, so sun time runs an hour later for every 15° of longitude east. Fly fast enough east or west and the sun time changes before the clock can reset: the Sun stands further round the sky than the bird expects, or not as far, and its heading turns by the same angle. The tracks veered just as predicted, by up to 15°, adding only a few kilometres to a trip, and the errors showed even near familiar coast, a sign that the birds mix sun and land cues.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Manx shearwaters steer by the Sun. After fast flights east or west, by up to how many degrees did their way home veer?",
+      "min": 0,
+      "max": 90,
+      "step": 1,
+      "answer": 15,
+      "unit": "°",
+      "explanation": "Up to 15°, as the researchers had predicted from the birds’ body clocks running behind or ahead of the local sun time. It added only a few kilometres to a trip."
+    },
+    {
+      "type": "video",
+      "src": "shearwater.mp4",
+      "poster": "shearwater.jpg",
+      "alt": "Animation on a night-teal sea chart: GPS tracks lead to a colony. A Sun circles a compass ring from northeast to northwest as a bird holds its course. Clocks on lines of longitude run later to the east, a body clock falls behind, and the expected and real Sun part as the bird turns 15° clockwise.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Journey To Ascend” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 6,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "shearwater-jet-lag-sun-compass",
+      "prompt": "Fly the shearwater east or west and set its body clock. Find a flight that turns its sun compass by 15°, the most the 2026 study found.",
+      "takeaway": "Near noon about 550 km east or west does it; at 8 am or 4 pm even 1,000 km gives less, because the Sun’s direction moves fastest around noon, about 27° an hour in midsummer."
+    },
+    {
+      "type": "chart",
+      "heading": "How far the Sun’s direction moves in one hour, on a midsummer day in Britain",
+      "items": [
+        {
+          "label": "5 to 6 am",
+          "value": 11
+        },
+        {
+          "label": "8 to 9 am",
+          "value": 14
+        },
+        {
+          "label": "11 am to noon",
+          "value": 28,
+          "emphasis": true
+        },
+        {
+          "label": "2 to 3 pm",
+          "value": 17
+        },
+        {
+          "label": "6 to 7 pm",
+          "value": 11
+        }
+      ],
+      "unit": "°",
+      "note": "Computed for 52° N on 21 June, in sun time: how far a body clock an hour out misreads the Sun."
+    },
+    {
+      "type": "text",
+      "heading": "Clockwise or anticlockwise",
+      "text": "Seen from Britain, the Sun moves clockwise round the sky, from the northeast at dawn through the south to the northwest. After a fast flight east, sun time is ahead of a bird’s body clock, so the Sun stands further round than it expects and it veers clockwise. After a fast flight west, it veers anticlockwise."
+    },
+    {
+      "type": "quiz",
+      "question": "Why does a bird that steers by the Sun need a body clock?",
+      "options": [
+        "The Sun’s direction changes all day",
+        "To know when the tide turns",
+        "The Sun is dimmer in the evening",
+        "To count how far it has flown"
+      ],
+      "answer": 0,
+      "explanation": "In a British summer the Sun rises in the northeast, is due south at noon and sets in the northwest. The same direction of the Sun means a different way home at each hour."
+    }
+  ],
+  "tags": [
+    "birds",
+    "navigation",
+    "sun",
+    "clocks",
+    "migration"
+  ],
+  "source": {
+    "label": "Science News: Seabirds get jet lag, too, and it can throw them a bit off course (29 October 2026)",
+    "url": "https://www.sciencenews.org/article/seabird-jet-lag-navigation-off-course"
+  },
+  "theme": {
+    "gradient": [
+      "#051a23",
+      "#1d4c5a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-29T19:00:00Z",
+  "news": "2026-10-29"
+}

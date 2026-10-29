@@ -44,15 +44,15 @@ export const EDITIONS = {
     id: 'reckon',
     name: 'Reckon',
     lang: 'en',
-    description: 'Reckon you know? An endless feed of bite-sized knowledge, quizzes and puzzles from science, history, art and more.',
+    description: 'Reckon you know? Short animated explainers from science, history, art and the news, each with a quiz and a hands-on experiment.',
     dir: '.',
     path: '',
     fields: FIELD_IDS.filter((f) => f !== 'literature'),
     storageKey: 'reckon:v1',
-    wiki: true,
+    wiki: false,
     authors: true,
     about:
-      'Posts live as files in the Reckon GitHub repository. Ones marked AI were written by an AI, and every post links a source so you can check it. Live posts come from Wikipedia’s featured content, under CC BY-SA.',
+      'Posts live as files in the Reckon GitHub repository. Ones marked AI were written by an AI, and every post links a source so you can check it.',
   },
   lesefutter: {
     id: 'lesefutter',

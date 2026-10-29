@@ -1,0 +1,175 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-hudson-tunnel-boring-machine",
+  "field": "engineering",
+  "title": "The machine boring the new Hudson rail tunnel pushes off the walls it has just built",
+  "emoji": "🚇",
+  "body": "On 8 October 2026 the [Gateway Development Commission](https://www.gatewayprogram.org/wp-content/uploads/2026/10/TBM-Start-of-Mining-Press-Release.pdf) said the first tunnel boring machine of the Hudson Tunnel Project had begun mining in North Bergen, New Jersey: the start of the first new rail tunnel under the Hudson River since the North River Tunnel went into service in 1910. The machine digs and builds at once. Its spinning cutterhead, 28 feet 8 inches across, presses steel disc cutters into the rock until it breaks into chips, buckets drop the chips onto a conveyor belt, and an erector arm sets precast concrete segments into rings that form the tunnel's permanent lining. To move forward, hydraulic thrust jacks brace against the newest finished ring and push, so after each stroke the machine stops to build another ring to push from. This machine and a second one, both made for hard, dry rock, are to bore 5,100 feet to a shaft on the Weehawken–Hoboken border at about 30 feet a day, before a second pair built for the mixed ground under the river takes over toward Manhattan.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "About how many feet of tunnel a day is the first Hudson tunnel boring machine expected to dig and line?",
+      "min": 1,
+      "max": 200,
+      "step": 1,
+      "answer": 30,
+      "unit": "feet",
+      "explanation": "About 30 feet (9 metres) a day, scheduled maintenance pauses included, says the Gateway Development Commission: a little more than the machine is wide."
+    },
+    {
+      "type": "video",
+      "src": "tbm.mp4",
+      "poster": "tbm.jpg",
+      "alt": "Animation in a cutaway through dark rock: a yellow cutterhead starts turning on 8 October 2026, and a map runs from North Bergen under the Palisades to a shaft. Disc cutters chip the rock, a belt carries it out, an arm sets concrete segments, and teal jacks push off the newest ring.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Carpe Diem” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "hudson-tunnel-boring-machine",
+      "prompt": "Mine and build until three rings of lining are done. What happens if you try to mine before a ring is finished?",
+      "takeaway": "The jacks need a finished ring to push on, so the machine works in strokes: mine one ring’s width, stop, build the ring in the gap, then push off it again."
+    },
+    {
+      "type": "flow",
+      "heading": "One cycle of the machine",
+      "steps": [
+        {
+          "icon": "🔩",
+          "label": "Thrust jacks push off the newest ring"
+        },
+        {
+          "icon": "⚙️",
+          "label": "Disc cutters break the rock into chips"
+        },
+        {
+          "icon": "🪣",
+          "label": "Buckets drop the chips on a conveyor"
+        },
+        {
+          "icon": "🧱",
+          "label": "An erector arm builds the next ring"
+        }
+      ],
+      "cycle": true
+    },
+    {
+      "type": "stat",
+      "value": "1910",
+      "label": "since then, no new rail tunnel has been built under the Hudson River",
+      "text": "That year the North River Tunnel went into service. The Gateway Development Commission says the new two-tube tunnel is the first since, and the old one is to be rehabilitated."
+    },
+    {
+      "type": "compare",
+      "heading": "Two pairs of machines",
+      "left": {
+        "label": "Under the Palisades",
+        "text": "Two single shield machines, made for hard, dry rock, bore 5,100 feet from North Bergen to a shaft on the Weehawken–Hoboken border."
+      },
+      "right": {
+        "label": "Under the river",
+        "text": "At the shaft they are lifted out, and a second pair, designed for the mixed ground under the Hudson, bores on toward Manhattan."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "What do the thrust jacks of the Hudson tunnel boring machine push against to move it forward?",
+      "options": [
+        "The newest ring of concrete lining",
+        "The rock face in front",
+        "Anchors drilled into the cliff",
+        "The trailing gantries"
+      ],
+      "answer": 0,
+      "explanation": "The hydraulic thrust jacks brace against the completed lining, says the Gateway Development Commission, so the machine has to finish a ring before each push."
+    }
+  ],
+  "tags": [
+    "tunnels",
+    "trains",
+    "machines",
+    "newyork",
+    "newjersey",
+    "construction"
+  ],
+  "source": {
+    "label": "Gateway Development Commission: First Hudson Tunnel Project tunnel boring machine begins mining (8 October 2026)",
+    "url": "https://www.gatewayprogram.org/wp-content/uploads/2026/10/TBM-Start-of-Mining-Press-Release.pdf"
+  },
+  "theme": {
+    "gradient": [
+      "#211d1b",
+      "#5c4210"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-29T19:29:18Z",
+  "news": "2026-10-08"
+}

@@ -1,0 +1,186 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-dnssec-root-key-rollover",
+  "field": "tech",
+  "title": "The internet’s address book switched master keys for only the second time ever",
+  "emoji": "🔑",
+  "body": "On 11 October 2026 at 14:00 UTC, the root zone of the Domain Name System, which turns names into the numbers computers connect to, began signing with a new key, KSK-2024 (key tag 38696), the [Internet Assigned Numbers Authority reported](https://www.iana.org/news/2026/root-zone-begins-using-new-ksk-2026). With the system's security extensions, DNSSEC, answers carry digital signatures: a site's key signs its answer, a parent zone such as .org vouches for that key, and the root vouches for .org, so a resolver only has to keep one key by heart, the root's, called the trust anchor. You can't swap that key by just announcing a new one, since a forger could do the same, so the new key went into the root zone on 11 January 2025, signed by the old one, and resolvers that update themselves waited 30 days before trusting it, time to spot a fake made with a stolen key. By July more than 95% of resolvers that report their keys had it; one that checks signatures but knew only the old key would fail every lookup after the switch. The first change, in 2018, came a year late because too many resolvers weren't ready, and the old key is due to be revoked in January 2027.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How many days must a resolver see a new root key of the Domain Name System before it trusts it automatically?",
+      "min": 0,
+      "max": 365,
+      "step": 1,
+      "answer": 30,
+      "unit": "days",
+      "explanation": "30 days, under the standard RFC 5011. If a thief who had stolen the old key slipped in a fake new one, the key's real owners would have time to notice and revoke it."
+    },
+    {
+      "type": "video",
+      "src": "rootkey.mp4",
+      "poster": "rootkey.jpg",
+      "alt": "Animation on a deep indigo network: an amber root key, 20326, gives way to a mint one, 38696. A resolver asks name servers for example.org; a forged answer has no valid seal; keys vouch down from the root. The new key waits 30 days, then signs alone, and a resolver with only the old key fails.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Invariance” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 6,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "dnssec-root-key-rollover",
+      "prompt": "Switch on a resolver that knows only the old key. With automatic updates, what is the last day it can start and still be ready for the switch?",
+      "takeaway": "11 September 2026: it must see the new key for 30 days, and from 11 October the root signs with it alone. Start later, or without updates, and every lookup fails."
+    },
+    {
+      "type": "flow",
+      "heading": "How a resolver checks a signed answer",
+      "steps": [
+        {
+          "icon": "🔑",
+          "label": "It keeps the root’s key by heart"
+        },
+        {
+          "icon": "🌐",
+          "label": "The root vouches for .org’s key"
+        },
+        {
+          "icon": "🏷️",
+          "label": ".org vouches for example.org’s key"
+        },
+        {
+          "icon": "✅",
+          "label": "example.org’s key signs the answer"
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "The root’s keys",
+      "events": [
+        {
+          "when": "2010",
+          "text": "Root zone first signed"
+        },
+        {
+          "when": "11 Oct 2018",
+          "text": "First key change, a year late"
+        },
+        {
+          "when": "11 Jan 2025",
+          "text": "New key published, signed by the old"
+        },
+        {
+          "when": "11 Oct 2026",
+          "text": "Root signs with the new key only"
+        },
+        {
+          "when": "Jan 2027",
+          "text": "Old key due to be revoked"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Did anything break?",
+      "text": "The Internet Corporation for Assigned Names and Numbers (ICANN), which manages the root key, reported on 15 October 2026 that the change was completed as planned. It said it was looking into reports of problems at a limited number of systems, and whether the switch caused them."
+    },
+    {
+      "type": "quiz",
+      "question": "On 12 October 2026, a resolver that knew only the old root key, 20326, looked up a name. What happened?",
+      "options": [
+        "The lookup failed",
+        "It got an unchecked answer",
+        "It trusted the new key at once",
+        "It switched to the old root zone"
+      ],
+      "answer": 0,
+      "explanation": "The root's keys were now signed by the new key alone, which it couldn't check, so every answer failed validation. ICANN had warned that such resolvers would fail to find any name at all."
+    }
+  ],
+  "tags": [
+    "internet",
+    "dns",
+    "cryptography",
+    "security",
+    "keys"
+  ],
+  "source": {
+    "label": "IANA: DNS Root Zone Begins Using New Key Signing Key (11 October 2026)",
+    "url": "https://www.iana.org/news/2026/root-zone-begins-using-new-ksk-2026"
+  },
+  "theme": {
+    "gradient": [
+      "#100e24",
+      "#2b2463"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-29T19:51:36Z",
+  "news": "2026-10-11"
+}
