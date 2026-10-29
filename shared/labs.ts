@@ -154,6 +154,7 @@ export const LABS = {
   'latvia-open-list-votes': 'Add for and against marks to the names on an imaginary Latvian party list and see how their votes, ballots plus for minus against, decide who takes the list’s two seats.',
   'hittite-bread-and-water': 'Read Bedřich Hrozný’s line of Hittite from 1915 as he did: start from the known Sumerian sign for bread and match the three unknown words to their meanings by their look-alikes in Latin, German and English.',
   'clapping-music-phase-shift': 'Move the second clapper of Steve Reich’s Clapping Music ahead one beat at a time, hear the two parts, and count the beats where both clap, one claps or nobody does.',
+  'statue-of-liberty-enlarged-by-four': 'Enlarge Bartholdi’s 1.25 m study model of the Statue of Liberty and watch its height, its copper skin and the volume it would have if solid grow, up to the 46 m statue.',
 } as const;
 
 export type LabId = keyof typeof LABS;

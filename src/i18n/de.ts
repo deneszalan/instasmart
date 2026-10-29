@@ -2007,4 +2007,11 @@ export const de: Record<string, string> = {
   'Silent beats': 'Stille Schläge',
   'No-silence positions found': 'Gefundene Lagen ohne Stille',
   'Clapper 1 sounds high, clapper 2 low. At 12 beats ahead the two are back in unison, as at 0.': 'Klatscher 1 klingt hoch, Klatscher 2 tief. Bei 12 Schlägen voraus klatschen beide wieder gleich, wie bei 0.',
+  'a person, 1.7 m': 'ein Mensch, 1,7 m',
+  'study model': 'Studienmodell',
+  'A statue {k} times as tall as the 1.25 m study model: {m} m': 'Eine Statue, {k}-mal so hoch wie das 1,25 m hohe Studienmodell: {m} m',
+  'Times taller than the study model': 'Mal höher als das Studienmodell',
+  'Copper skin, × model': 'Kupferhaut, × Modell',
+  'Volume if solid, × model': 'Volumen, wenn massiv, × Modell',
+  'Gold ticks: Bartholdi’s models of 1.25, 2.85 and 11 m and the statue, 46 m from base to torch. Simplified: the shape stays the same at every size.': 'Goldene Striche: Bartholdis Modelle von 1,25, 2,85 und 11 m und die Statue, 46 m vom Sockel bis zur Fackel. Vereinfacht: Die Form bleibt in jeder Größe gleich.',
 };

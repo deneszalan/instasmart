@@ -149,6 +149,7 @@ import { DOCS as CARB_DOCS, firstName as carbFirstName, firstWith as carbFirstWi
 import { BALLOTS as LV_BALLOTS, elected as lvElected, NO_MARKS as LV_NO_MARKS, ranking as lvRanking, votes as lvVotes } from '../src/labs/politics/latvia-open-list-votes';
 import { fits as hitFits, LINE as HIT_LINE, OFFER as HIT_OFFER, reading as hitReading, WORDS as HIT_WORDS } from '../src/labs/language/hittite-bread-and-water';
 import { BEATS as CLAP_BEATS, NO_SILENCE as CLAP_NO_SILENCE, overlap as clapOverlap, PATTERN as CLAP_PATTERN, shifted as clapShifted } from '../src/labs/music/clapping-music-phase-shift';
+import { enlarge as solEnlarge, FULL as SOL_FULL, STAGES as SOL_STAGES } from '../src/labs/art/statue-of-liberty-enlarged-by-four';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1410,5 +1411,14 @@ describe('lab maths', () => {
     expect(CLAP_NO_SILENCE).toEqual([1, 6, 11]);
     expect(new Set(Array.from({ length: 12 }, (_, s) => clapShifted(s).join(''))).size).toBe(12);
     expect(Math.max(...Array.from({ length: 11 }, (_, s) => clapOverlap(s + 1).silent))).toBe(2);
+  });
+  it('Statue of Liberty: four times taller is 16 times the skin and 64 times the volume; the statue is about 37 times the study model', () => {
+    expect(solEnlarge(4)).toEqual({ height: 5, skin: 16, volume: 64 });
+    expect(SOL_FULL).toBeCloseTo(36.84, 2);
+    expect(solEnlarge(SOL_FULL).height).toBeCloseTo(46.05, 2);
+    expect(solEnlarge(SOL_FULL).skin).toBeCloseTo(1357, 0);
+    expect(Math.round(solEnlarge(SOL_FULL).volume / 1000)).toBe(50);
+    expect(SOL_STAGES.map((s) => s.m)).toEqual([1.25, 2.85, 11, 46.05]);
+    expect(SOL_STAGES[2].m / SOL_STAGES[1].m).toBeCloseTo(3.86, 2);
   });
 });

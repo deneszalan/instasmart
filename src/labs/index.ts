@@ -154,4 +154,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'latvia-open-list-votes': lazy(() => import('./politics/latvia-open-list-votes')),
   'hittite-bread-and-water': lazy(() => import('./language/hittite-bread-and-water')),
   'clapping-music-phase-shift': lazy(() => import('./music/clapping-music-phase-shift')),
+  'statue-of-liberty-enlarged-by-four': lazy(() => import('./art/statue-of-liberty-enlarged-by-four')),
 };
