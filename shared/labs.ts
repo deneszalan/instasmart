@@ -157,6 +157,10 @@ export const LABS = {
   'shearwater-jet-lag-sun-compass': 'Fly a Manx shearwater east or west and set its body clock, and see how far its sun compass turns when the Sun stands where the clock does not expect it.',
   'levitated-nanoparticle-gas-kicks': 'Send a krypton, xenon or sulfur hexafluoride particle at a laser-held glass bead, choose how it bounces, and see whether its kick is big enough to pick out of the noise.',
   'mars-meteorite-rubidium-clock': 'Age a rock whose grains hold rubidium-87 and watch them climb a tilting line as it turns into strontium-87; read the age from the slope, whatever strontium the rock started with.',
+  'latvia-open-list-votes': 'Add for and against marks to the names on an imaginary Latvian party list and see how their votes, ballots plus for minus against, decide who takes the list’s two seats.',
+  'hittite-bread-and-water': 'Read Bedřich Hrozný’s line of Hittite from 1915 as he did: start from the known Sumerian sign for bread and match the three unknown words to their meanings by their look-alikes in Latin, German and English.',
+  'clapping-music-phase-shift': 'Move the second clapper of Steve Reich’s Clapping Music ahead one beat at a time, hear the two parts, and count the beats where both clap, one claps or nobody does.',
+  'statue-of-liberty-enlarged-by-four': 'Enlarge Bartholdi’s 1.25 m study model of the Statue of Liberty and watch its height, its copper skin and the volume it would have if solid grow, up to the 46 m statue.',
 } as const;
 
 export type LabId = keyof typeof LABS;

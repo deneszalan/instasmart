@@ -152,6 +152,10 @@ import { dayToTime as kskDay, LAST_SAFE_DAY as KSK_LAST, trustsNewKeyAt as kskTr
 import { azimuth as swAzimuth, compassError as swError, GOAL as SW_GOAL, kmPerDegree as swKmPerDeg, shiftMinutes as swShift } from '../src/labs/biology/shearwater-jet-lag-sun-compass';
 import { beadSpeedChange as gasDv, kick as gasKick, MASS_U as GAS_MASS, meanSpeed as gasMean, speedFor as gasSpeedFor, THRESHOLD as GAS_THRESHOLD } from '../src/labs/physics/levitated-nanoparticle-gas-kicks';
 import { ageFromSlope as rbAge, decayedShare as rbDecayed, grainAt as rbGrain, GRAINS as RB_GRAINS, slope as rbSlope, TARGET_AGE as RB_TARGET } from '../src/labs/space/mars-meteorite-rubidium-clock';
+import { BALLOTS as LV_BALLOTS, elected as lvElected, NO_MARKS as LV_NO_MARKS, ranking as lvRanking, votes as lvVotes } from '../src/labs/politics/latvia-open-list-votes';
+import { fits as hitFits, LINE as HIT_LINE, OFFER as HIT_OFFER, reading as hitReading, WORDS as HIT_WORDS } from '../src/labs/language/hittite-bread-and-water';
+import { BEATS as CLAP_BEATS, NO_SILENCE as CLAP_NO_SILENCE, overlap as clapOverlap, PATTERN as CLAP_PATTERN, shifted as clapShifted } from '../src/labs/music/clapping-music-phase-shift';
+import { enlarge as solEnlarge, FULL as SOL_FULL, STAGES as SOL_STAGES } from '../src/labs/art/statue-of-liberty-enlarged-by-four';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1448,5 +1452,48 @@ describe('lab maths', () => {
     }
     const g = rbGrain(1, RB_TARGET);
     expect(g.x + g.y).toBeCloseTo(1 + 0.7, 12);
+  });
+  it('Latvia open list: votes are ballots + for − against; against marks on four rivals give the last name a seat', () => {
+    expect(lvVotes(LV_NO_MARKS)).toEqual([1000, 1000, 1000, 1000, 1000, 1000]);
+    expect(LV_BALLOTS).toBe(1000);
+    expect(lvElected(LV_NO_MARKS)).toEqual([0, 1]);
+    const struck = { pro: [0, 0, 0, 0, 0, 0], con: [50, 50, 50, 50, 0, 0] };
+    expect(lvRanking(struck).slice(0, 2)).toEqual([4, 5]);
+    expect(lvElected(struck)).toContain(5);
+    const boosted = { pro: [0, 0, 0, 0, 0, 50], con: [0, 0, 0, 0, 0, 0] };
+    expect(lvElected(boosted)).toEqual([5, 0]);
+    // the real case it models: 34,294 Progressive ballots in Rīga; No. 43 got 4,577 for and 856 against, No. 4 got 2,841 and 6,502
+    expect(34294 + 4577 - 856).toBe(38015);
+    expect(34294 + 2841 - 6502).toBe(30633);
+  });
+  it('Hittite: Hrozný’s line has five words, NINDA known; each unknown word fits one meaning, offered out of order', () => {
+    expect(HIT_LINE).toEqual(['nu', 'NINDA-an', 'ezzatteni', 'watar-ma', 'ekutteni']);
+    expect(HIT_WORDS.map((w, i) => hitFits(i, w.meaning))).toEqual([true, true, true]);
+    expect(hitFits(0, 1)).toBe(false);
+    expect(hitFits(1, 2)).toBe(false);
+    expect([...HIT_OFFER].sort()).toEqual([0, 1, 2]);
+    expect(HIT_OFFER.some((m, i) => m === HIT_WORDS[i].meaning)).toBe(false);
+    expect(hitReading([true, true, false]).done).toBe(false);
+    expect(hitReading([true, true, true]).done).toBe(true);
+  });
+  it('Clapping Music: 8 claps in 12 beats; one move takes the first beat to the end; 12 moves are unison; no silence at 1, 6 and 11', () => {
+    expect(CLAP_BEATS).toBe(12);
+    expect(CLAP_PATTERN.filter(Boolean)).toHaveLength(8);
+    expect(clapShifted(1).join('')).toBe('110110101101');
+    expect(clapShifted(12)).toEqual([...CLAP_PATTERN]);
+    expect(clapOverlap(0)).toEqual({ both: 8, one: 0, silent: 4 });
+    expect(clapOverlap(1)).toEqual({ both: 4, one: 8, silent: 0 });
+    expect(CLAP_NO_SILENCE).toEqual([1, 6, 11]);
+    expect(new Set(Array.from({ length: 12 }, (_, s) => clapShifted(s).join(''))).size).toBe(12);
+    expect(Math.max(...Array.from({ length: 11 }, (_, s) => clapOverlap(s + 1).silent))).toBe(2);
+  });
+  it('Statue of Liberty: four times taller is 16 times the skin and 64 times the volume; the statue is about 37 times the study model', () => {
+    expect(solEnlarge(4)).toEqual({ height: 5, skin: 16, volume: 64 });
+    expect(SOL_FULL).toBeCloseTo(36.84, 2);
+    expect(solEnlarge(SOL_FULL).height).toBeCloseTo(46.05, 2);
+    expect(solEnlarge(SOL_FULL).skin).toBeCloseTo(1357, 0);
+    expect(Math.round(solEnlarge(SOL_FULL).volume / 1000)).toBe(50);
+    expect(SOL_STAGES.map((s) => s.m)).toEqual([1.25, 2.85, 11, 46.05]);
+    expect(SOL_STAGES[2].m / SOL_STAGES[1].m).toBeCloseTo(3.86, 2);
   });
 });

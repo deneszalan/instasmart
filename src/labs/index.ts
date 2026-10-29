@@ -157,4 +157,8 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'shearwater-jet-lag-sun-compass': lazy(() => import('./biology/shearwater-jet-lag-sun-compass')),
   'levitated-nanoparticle-gas-kicks': lazy(() => import('./physics/levitated-nanoparticle-gas-kicks')),
   'mars-meteorite-rubidium-clock': lazy(() => import('./space/mars-meteorite-rubidium-clock')),
+  'latvia-open-list-votes': lazy(() => import('./politics/latvia-open-list-votes')),
+  'hittite-bread-and-water': lazy(() => import('./language/hittite-bread-and-water')),
+  'clapping-music-phase-shift': lazy(() => import('./music/clapping-music-phase-shift')),
+  'statue-of-liberty-enlarged-by-four': lazy(() => import('./art/statue-of-liberty-enlarged-by-four')),
 };
