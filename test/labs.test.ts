@@ -148,6 +148,7 @@ import { flowShare as nasoniFlow, GOAL as NASONI_GOAL, HOLES as NASONI_HOLES, sp
 import { DOCS as CARB_DOCS, firstName as carbFirstName, firstWith as carbFirstWith, known as carbKnown } from '../src/labs/history/carbonara-paper-trail';
 import { BALLOTS as LV_BALLOTS, elected as lvElected, NO_MARKS as LV_NO_MARKS, ranking as lvRanking, votes as lvVotes } from '../src/labs/politics/latvia-open-list-votes';
 import { fits as hitFits, LINE as HIT_LINE, OFFER as HIT_OFFER, reading as hitReading, WORDS as HIT_WORDS } from '../src/labs/language/hittite-bread-and-water';
+import { BEATS as CLAP_BEATS, NO_SILENCE as CLAP_NO_SILENCE, overlap as clapOverlap, PATTERN as CLAP_PATTERN, shifted as clapShifted } from '../src/labs/music/clapping-music-phase-shift';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1398,5 +1399,16 @@ describe('lab maths', () => {
     expect(HIT_OFFER.some((m, i) => m === HIT_WORDS[i].meaning)).toBe(false);
     expect(hitReading([true, true, false]).done).toBe(false);
     expect(hitReading([true, true, true]).done).toBe(true);
+  });
+  it('Clapping Music: 8 claps in 12 beats; one move takes the first beat to the end; 12 moves are unison; no silence at 1, 6 and 11', () => {
+    expect(CLAP_BEATS).toBe(12);
+    expect(CLAP_PATTERN.filter(Boolean)).toHaveLength(8);
+    expect(clapShifted(1).join('')).toBe('110110101101');
+    expect(clapShifted(12)).toEqual([...CLAP_PATTERN]);
+    expect(clapOverlap(0)).toEqual({ both: 8, one: 0, silent: 4 });
+    expect(clapOverlap(1)).toEqual({ both: 4, one: 8, silent: 0 });
+    expect(CLAP_NO_SILENCE).toEqual([1, 6, 11]);
+    expect(new Set(Array.from({ length: 12 }, (_, s) => clapShifted(s).join(''))).size).toBe(12);
+    expect(Math.max(...Array.from({ length: 11 }, (_, s) => clapOverlap(s + 1).silent))).toBe(2);
   });
 });

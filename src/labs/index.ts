@@ -153,4 +153,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'carbonara-paper-trail': lazy(() => import('./history/carbonara-paper-trail')),
   'latvia-open-list-votes': lazy(() => import('./politics/latvia-open-list-votes')),
   'hittite-bread-and-water': lazy(() => import('./language/hittite-bread-and-water')),
+  'clapping-music-phase-shift': lazy(() => import('./music/clapping-music-phase-shift')),
 };
