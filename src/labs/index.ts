@@ -152,4 +152,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'nasoni-finger-fountain': lazy(() => import('./engineering/nasoni-finger-fountain')),
   'carbonara-paper-trail': lazy(() => import('./history/carbonara-paper-trail')),
   'co2-half-stays-in-air': lazy(() => import('./earth/co2-half-stays-in-air')),
+  'hudson-tunnel-boring-machine': lazy(() => import('./engineering/hudson-tunnel-boring-machine')),
 };

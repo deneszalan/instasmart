@@ -242,7 +242,8 @@
                   "santa-maria-maggiore-sixtus-arch",
                   "nasoni-finger-fountain",
                   "carbonara-paper-trail",
-                  "co2-half-stays-in-air"
+                  "co2-half-stays-in-air",
+                  "hudson-tunnel-boring-machine"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

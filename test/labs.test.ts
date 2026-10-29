@@ -147,6 +147,7 @@ import { fits as smmFits, LIBERIUS as SMM_LIBERIUS, windows as smmWindows, years
 import { flowShare as nasoniFlow, GOAL as NASONI_GOAL, HOLES as NASONI_HOLES, spoutPressure as nasoniPressure } from '../src/labs/engineering/nasoni-finger-fountain';
 import { DOCS as CARB_DOCS, firstName as carbFirstName, firstWith as carbFirstWith, known as carbKnown } from '../src/labs/history/carbonara-paper-trail';
 import { IN_2025 as CO2_IN, OUT_2025 as CO2_OUT, STEADY_AT as CO2_STEADY, yearlyChange as co2Change } from '../src/labs/earth/co2-half-stays-in-air';
+import { GOAL_RINGS as TBM_GOAL, mine as tbmMine, place as tbmPlace, SEGMENTS as TBM_SEGMENTS, START as TBM_START, type Tbm } from '../src/labs/engineering/hudson-tunnel-boring-machine';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1383,5 +1384,21 @@ describe('lab maths', () => {
     expect(co2Change(50)).toBeCloseTo(0, 6);
     expect(co2Change(0)).toBeCloseTo(-2.8, 6);
     expect(CO2_STEADY).toBeCloseTo(50, 6);
+  });
+  it('Tunnel boring machine: it can only push off a finished ring, so each stroke needs a ring built behind it', () => {
+    expect(tbmPlace(TBM_START).refused).toBe('no-gap');
+    let s: Tbm = tbmMine(TBM_START).next;
+    expect(s.extended).toBe(true);
+    expect(tbmMine(s).refused).toBe('jacks-out');
+    s = tbmPlace(s).next;
+    expect(s.placed).toBe(1);
+    expect(tbmMine(s).refused).toBe('ring-unfinished');
+    for (let i = 1; i < TBM_SEGMENTS; i++) s = tbmPlace(s).next;
+    expect(s).toEqual({ rings: 1, extended: false, placed: 0 });
+    for (let r = 1; r < TBM_GOAL; r++) {
+      s = tbmMine(s).next;
+      for (let i = 0; i < TBM_SEGMENTS; i++) s = tbmPlace(s).next;
+    }
+    expect(s.rings).toBe(TBM_GOAL);
   });
 });
