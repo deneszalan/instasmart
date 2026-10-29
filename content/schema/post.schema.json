@@ -243,7 +243,8 @@
                   "nasoni-finger-fountain",
                   "carbonara-paper-trail",
                   "shearwater-jet-lag-sun-compass",
-                  "levitated-nanoparticle-gas-kicks"
+                  "levitated-nanoparticle-gas-kicks",
+                  "mars-meteorite-rubidium-clock"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

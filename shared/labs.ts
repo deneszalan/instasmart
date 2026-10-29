@@ -153,6 +153,7 @@ export const LABS = {
   'carbonara-paper-trail': 'Drag through the years of carbonara’s paper trail, from an 1839 egg-and-cheese pasta to today’s recipe websites, and find when the name, the first recipe and guanciale first appear in print.',
   'shearwater-jet-lag-sun-compass': 'Fly a Manx shearwater east or west and set its body clock, and see how far its sun compass turns when the Sun stands where the clock does not expect it.',
   'levitated-nanoparticle-gas-kicks': 'Send a krypton, xenon or sulfur hexafluoride particle at a laser-held glass bead, choose how it bounces, and see whether its kick is big enough to pick out of the noise.',
+  'mars-meteorite-rubidium-clock': 'Age a rock whose grains hold rubidium-87 and watch them climb a tilting line as it turns into strontium-87; read the age from the slope, whatever strontium the rock started with.',
 } as const;
 
 export type LabId = keyof typeof LABS;

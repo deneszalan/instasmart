@@ -1,0 +1,160 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-mars-meteorite-rubidium-clock",
+  "field": "space",
+  "title": "A meteorite from Mars is over 4.1 billion years old, and its atoms are the clock",
+  "emoji": "☄️",
+  "body": "On 29 October 2026 NASA reported, from a study in the journal Science, that Teghaza 001, a rose-coloured rock of about 800 g found in the Sahara in 2022, is a piece of Mars’s crust that formed more than 4.1 billion years ago, one of the three oldest Martian meteorites known ([NASA](https://www.nasa.gov/solar-system/planets/mars/nasa-funded-study-details-one-of-oldest-mars-meteorites-ever-found/)). Part of the dating was done in the lab of Caltech geochemist François Tissot, which measures single mineral grains on a chip smaller than a fingernail. Rubidium-87 turns into strontium-87 so slowly that half of it takes about 49 billion years ([Wikipedia](https://en.wikipedia.org/wiki/Rubidium%E2%80%93strontium_dating)). The grains of a cooling rock all get the same mix of strontium but different amounts of rubidium, so the richer grains gain more strontium-87 over time: plotted together they fall on a straight line that gets steeper as the rock ages. The slope gives the age and the line’s starting point gives the strontium the rock began with, so nothing has to be guessed. The dating showed that water altered Teghaza 001 about 4.1 billion years ago, so the rock itself is older still.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Rubidium-87 slowly turns into strontium-87. How many billion years does it take for half of it to change?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 49,
+      "unit": "billion years",
+      "explanation": "About 49 billion years (49.23), more than three times the age of the universe. So in 4.1 billion years only about 5.6% of it changes, which is still enough to measure."
+    },
+    {
+      "type": "video",
+      "src": "rubidium.mp4",
+      "poster": "rubidium.jpg",
+      "alt": "Animation over a dusk desert: a rose-pink stone from Mars and a time bar marking over 4.1 billion years. Violet rubidium atoms turn teal as some become strontium. Five grains on a plot climb from a flat line that tilts to a slope of 0.059, then single grains, water and 13 matching places on Mars.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Dreamy Flashback” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 7,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "mars-meteorite-rubidium-clock",
+      "prompt": "Age the rock to 4.1 billion years, like Teghaza 001’s water. Then change the strontium mix it started with: does the age read from the slope change?",
+      "takeaway": "No: the slope stays 0.059 and the age 4.1 billion years; only the line’s starting height moves. So the method needs no guess of how much strontium-87 the rock began with."
+    },
+    {
+      "type": "flow",
+      "heading": "How a rubidium clock dates a rock",
+      "steps": [
+        {
+          "icon": "🌋",
+          "label": "Magma cools: grains share one strontium mix"
+        },
+        {
+          "icon": "⚛️",
+          "label": "Rubidium-87 slowly becomes strontium-87"
+        },
+        {
+          "icon": "💎",
+          "label": "Grains with more rubidium gain more of it"
+        },
+        {
+          "icon": "📈",
+          "label": "The slope of their line gives the age"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "How do we know it came from Mars?",
+      "text": "Its oxygen isotopes, the mix of slightly lighter and heavier oxygen atoms, match those of other meteorites from Mars, researchers at the University of New Mexico found. Impacts on Mars blast rocks into space, and roughly 435 meteorites from Mars are known. A study found 13 places on Mars whose rocks match Teghaza 001."
+    },
+    {
+      "type": "quiz",
+      "question": "A rock’s grains are plotted with rubidium across and strontium-87 up. What gives the rock’s age?",
+      "options": [
+        "The slope of their line",
+        "Where the line starts",
+        "How many grains there are",
+        "The size of the biggest grain"
+      ],
+      "answer": 0,
+      "explanation": "The line tilts as rubidium-87 decays, so its slope gives the age. Where it starts gives the strontium mix the rock began with, so that does not have to be guessed."
+    }
+  ],
+  "tags": [
+    "mars",
+    "meteorites",
+    "radioactivity",
+    "dating",
+    "isotopes"
+  ],
+  "source": {
+    "label": "NASA: NASA-funded Study Details One of Oldest Mars Meteorites Ever Found (29 October 2026)",
+    "url": "https://www.nasa.gov/solar-system/planets/mars/nasa-funded-study-details-one-of-oldest-mars-meteorites-ever-found/"
+  },
+  "theme": {
+    "gradient": [
+      "#1a0d0b",
+      "#5a2a1b"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-29T21:00:00Z",
+  "news": "2026-10-29"
+}
