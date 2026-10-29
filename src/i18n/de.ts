@@ -1974,4 +1974,7 @@ export const de: Record<string, string> = {
   'Guanciale in a carbonara': 'Guanciale in einer Carbonara',
   'Only the documents and ingredients that food historians report are shown; others may still turn up, as the 1939 article did in 2026.': 'Gezeigt sind nur die Dokumente und Zutaten, die Ernährungshistoriker nennen; weitere können noch auftauchen, so wie der Artikel von 1939 im Jahr 2026.',
   'Language': 'Sprache',
+  'News': 'Aktuelles',
+  'Coming up: {date}': 'Steht bevor: {date}',
+  'Animated explainers on what’s in the news: how it works and what the numbers mean. The latest first.': 'Animierte Erklärungen zu dem, was in den Nachrichten ist: wie es funktioniert und was die Zahlen bedeuten. Das Neueste zuerst.',
 };

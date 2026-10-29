@@ -35,3 +35,16 @@ export function timeAgo(stamp: string, now = Date.now()): string {
   const sameYear = new Date(at).getFullYear() === new Date(now).getFullYear();
   return new Date(at).toLocaleDateString(LOCALE, { month: 'short', day: 'numeric', ...(sameYear ? {} : { year: 'numeric' }) });
 }
+
+/** When the event a news post is hooked to happens, in ms: noon UTC that day, or on the 1st for a month-only date. */
+export function newsAt(news: string): number {
+  return Date.parse(news.length === 7 ? `${news}-01T12:00:00Z` : `${news}T12:00:00Z`);
+}
+
+/** "25 October 2026", or "October 2026" for a month-only date, in the reader's language. */
+export function formatNewsDate(news: string): string {
+  const date = new Date(newsAt(news));
+  return news.length === 7
+    ? date.toLocaleDateString(LOCALE, { month: 'long', year: 'numeric', timeZone: 'UTC' })
+    : date.toLocaleDateString(LOCALE, { dateStyle: 'long', timeZone: 'UTC' });
+}

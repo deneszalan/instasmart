@@ -1,6 +1,6 @@
 import type { FieldId, KnowledgeCard, Slide } from '../types';
 import { plain } from './markdown';
-import { publishedAt } from './time';
+import { newsAt, publishedAt } from './time';
 import { t } from '../i18n';
 
 /** Small, fast seeded PRNG (mulberry32) so feed order is reproducible in tests. */
@@ -218,4 +218,11 @@ export function searchCards(cards: readonly KnowledgeCard[], query: string): Kno
     const haystack = `${cardText(c)} ${c.tags.join(' ')} ${c.field}`.toLowerCase();
     return terms.every((t) => haystack.includes(t));
   });
+}
+
+/** News posts, the latest event first; posts about the same day, the newest first, then by id. Other posts are left out. */
+export function newsFirst(cards: readonly KnowledgeCard[]): KnowledgeCard[] {
+  return cards
+    .filter((c) => c.news)
+    .sort((a, b) => newsAt(b.news!) - newsAt(a.news!) || publishedAt(b) - publishedAt(a) || a.id.localeCompare(b.id));
 }

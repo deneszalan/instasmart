@@ -16,6 +16,8 @@ import { EDITION } from '../edition';
 type FeedItem = Post | { kind: 'caught-up'; key: string; round: number };
 
 const PAGE_SIZE = 6;
+/** News posts have their own tab, so the feed leaves them out. */
+const FEED_CARDS = LIBRARY.filter((c) => !c.news);
 /** One live Wikipedia post after every this many library cards. */
 const WIKI_EVERY = 4;
 
@@ -90,7 +92,7 @@ export function Feed({ by, onBy }: FeedProps) {
   // The stream is created once per visit. Mixed, it opens with the edition's set order, if any, then pieces you haven't
   // read yet; sorted by time, every round lists the whole library in that order.
   const [session] = useState(() => {
-    const cards: KnowledgeCard[] = by ? LIBRARY.filter((c) => authorGroup(c)?.id === by) : LIBRARY;
+    const cards: KnowledgeCard[] = by ? FEED_CARDS.filter((c) => authorGroup(c)?.id === by) : FEED_CARDS;
     if (cards.length === 0) return { cards, feed: null, firstPage: [], done: true, inOrder: false };
     const first = sort === 'mix' ? EDITION.order : sortCards(cards, sort).map((c) => c.id);
     const feed = endlessFeed(cards, { seed: Date.now(), seen: new Set(Object.keys(state.seen)), first });

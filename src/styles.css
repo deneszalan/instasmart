@@ -4522,3 +4522,19 @@ p {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+/* ---------- News ---------- */
+.news__intro {
+  margin: -6px 14px 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.news__date {
+  margin: 0;
+  padding: 14px 14px 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--muted);
+}

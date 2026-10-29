@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 
-export type Tab = 'home' | 'explore' | 'saved' | 'profile';
+export type Tab = 'home' | 'news' | 'explore' | 'saved' | 'profile';
 
 export interface Route {
   tab: Tab;
@@ -12,7 +12,7 @@ export interface Route {
   by: string;
 }
 
-const TABS: Tab[] = ['home', 'explore', 'saved', 'profile'];
+const TABS: Tab[] = ['home', 'news', 'explore', 'saved', 'profile'];
 
 export function parseHash(hash: string): Route {
   const [path, query = ''] = hash.replace(/^#\/?/, '').split('?');
