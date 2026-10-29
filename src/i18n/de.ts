@@ -1976,7 +1976,7 @@ export const de: Record<string, string> = {
   'Language': 'Sprache',
   'News': 'Aktuelles',
   'Coming up: {date}': 'Steht bevor: {date}',
-  'Animated explainers on what’s in the news: how it works and what the numbers mean. The latest first.': 'Animierte Erklärungen zu dem, was in den Nachrichten ist: wie es funktioniert und was die Zahlen bedeuten. Das Neueste zuerst.',
+  'Animated explainers on what’s in the news: how it works and what the numbers mean.': 'Animierte Erklärungen zu dem, was in den Nachrichten ist: wie es funktioniert und was die Zahlen bedeuten.',
   'CO₂ in the air': 'CO₂ in der Luft',
   'in: {v} ppm a year': 'rein: {v} ppm pro Jahr',
   'out: {v} ppm a year': 'raus: {v} ppm pro Jahr',

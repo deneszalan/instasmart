@@ -220,9 +220,13 @@ export function searchCards(cards: readonly KnowledgeCard[], query: string): Kno
   });
 }
 
-/** News posts, the latest event first; posts about the same day, the newest first, then by id. Other posts are left out. */
-export function newsFirst(cards: readonly KnowledgeCard[]): KnowledgeCard[] {
-  return cards
-    .filter((c) => c.news)
-    .sort((a, b) => newsAt(b.news!) - newsAt(a.news!) || publishedAt(b) - publishedAt(a) || a.id.localeCompare(b.id));
+/**
+ * News posts in the reader's order: by the date of their event, the latest or the earliest first (posts about the same
+ * day by when they were published, then by id), or mixed by field like the feed. Other posts are left out.
+ */
+export function sortNews(cards: readonly KnowledgeCard[], order: SortOrder, rng: () => number = Math.random): KnowledgeCard[] {
+  const news = cards.filter((c) => c.news);
+  if (order === 'mix') return spreadByField(news, rng);
+  const dir = order === 'newest' ? -1 : 1;
+  return news.sort((a, b) => dir * (newsAt(a.news!) - newsAt(b.news!) || publishedAt(a) - publishedAt(b)) || a.id.localeCompare(b.id));
 }
