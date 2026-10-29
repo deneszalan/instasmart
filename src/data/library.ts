@@ -1,4 +1,5 @@
 import clipLengths from 'virtual:clip-lengths';
+import mediaSizes from 'virtual:media-sizes';
 import { applyTranslation } from '../../shared/translate.ts';
 import type { Post } from '../../shared/schema.ts';
 import { LANG } from '../i18n';
@@ -54,6 +55,13 @@ const lengthByUrl = new Map(Object.entries(clipLengths).map(([path, seconds]) =>
 /** A clip's length in seconds, known before it loads, or undefined. */
 export function clipSeconds(src: string): number | undefined {
   return lengthByUrl.get(src);
+}
+
+const bytesByUrl = new Map(Object.entries(mediaSizes).map(([path, bytes]) => [resolveImage(path.split('/')[0], path.split('/')[1]), bytes]));
+
+/** A picture's or clip's size in bytes, by the URL slides carry, or undefined. */
+export function mediaBytes(src: string): number | undefined {
+  return bytesByUrl.get(src);
 }
 
 export const CARD_BY_ID: ReadonlyMap<string, KnowledgeCard> = new Map(LIBRARY.map((c) => [c.id, c]));

@@ -37,6 +37,11 @@ export interface Edition {
    * one of them when it has a translation at content/i18n/<lang>/<field>/<id>.json, and in `lang` otherwise.
    */
   langs?: Partial<Record<Lang, { fieldText?: Partial<Record<FieldId, FieldText>>; about: string }>>;
+  /**
+   * The app can be used without internet: it installs an offline worker (src/offline-worker.js) that keeps the app,
+   * and Settings offers to save every post's pictures and clips on the device. Also a Home Screen icon and manifest.
+   */
+  offline?: boolean;
 }
 
 export const EDITIONS = {
@@ -105,6 +110,7 @@ export const EDITIONS = {
     },
     storageKey: 'roma:v1',
     wiki: false,
+    offline: true,
     authors: true,
     about: 'Every post links a source so you can check it. Posts marked AI were written by an AI.',
     langs: {
