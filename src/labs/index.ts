@@ -153,4 +153,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'carbonara-paper-trail': lazy(() => import('./history/carbonara-paper-trail')),
   'co2-half-stays-in-air': lazy(() => import('./earth/co2-half-stays-in-air')),
   'hudson-tunnel-boring-machine': lazy(() => import('./engineering/hudson-tunnel-boring-machine')),
+  'dnssec-root-key-rollover': lazy(() => import('./tech/dnssec-root-key-rollover')),
 };

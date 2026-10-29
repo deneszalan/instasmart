@@ -153,6 +153,7 @@ export const LABS = {
   'carbonara-paper-trail': 'Drag through the years of carbonara’s paper trail, from an 1839 egg-and-cheese pasta to today’s recipe websites, and find when the name, the first recipe and guanciale first appear in print.',
   'co2-half-stays-in-air': 'Turn a bathtub’s tap, the CO₂ that people emit, up or down against drains held at what land and ocean took up in 2025, and find the emissions at which the level in the air stops rising.',
   'hudson-tunnel-boring-machine': 'Run a tunnel boring machine like the one under New Jersey’s Palisades: mine one stroke as its jacks push off the newest ring of lining, then place the segments of the next ring before it can push again.',
+  'dnssec-root-key-rollover': 'Switch on a resolver that knows only the old root key of the Domain Name System, on any day from January 2025, and see whether it learns the new key in time for the switch on 11 October 2026.',
 } as const;
 
 export type LabId = keyof typeof LABS;

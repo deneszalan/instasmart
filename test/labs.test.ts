@@ -148,6 +148,7 @@ import { flowShare as nasoniFlow, GOAL as NASONI_GOAL, HOLES as NASONI_HOLES, sp
 import { DOCS as CARB_DOCS, firstName as carbFirstName, firstWith as carbFirstWith, known as carbKnown } from '../src/labs/history/carbonara-paper-trail';
 import { IN_2025 as CO2_IN, OUT_2025 as CO2_OUT, STEADY_AT as CO2_STEADY, yearlyChange as co2Change } from '../src/labs/earth/co2-half-stays-in-air';
 import { GOAL_RINGS as TBM_GOAL, mine as tbmMine, place as tbmPlace, SEGMENTS as TBM_SEGMENTS, START as TBM_START, type Tbm } from '../src/labs/engineering/hudson-tunnel-boring-machine';
+import { dayToTime as kskDay, LAST_SAFE_DAY as KSK_LAST, trustsNewKeyAt as kskTrusts, works as kskWorks } from '../src/labs/tech/dnssec-root-key-rollover';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1400,5 +1401,13 @@ describe('lab maths', () => {
       for (let i = 0; i < TBM_SEGMENTS; i++) s = tbmPlace(s).next;
     }
     expect(s.rings).toBe(TBM_GOAL);
+  });
+  it('Root key rollover: with automatic updates a resolver must be on by 11 September 2026, 30 days before the switch', () => {
+    expect(new Date(kskDay(KSK_LAST)).toISOString().slice(0, 10)).toBe('2026-09-11');
+    expect(kskWorks(KSK_LAST, 'auto')).toBe(true);
+    expect(kskWorks(KSK_LAST + 1, 'auto')).toBe(false);
+    expect(new Date(kskTrusts(10, 'auto')!).toISOString().slice(0, 10)).toBe('2025-02-10');
+    expect(kskWorks(10, 'off')).toBe(false);
+    expect(kskWorks(KSK_LAST + 100, 'auto')).toBe(false);
   });
 });
