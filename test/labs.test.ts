@@ -149,6 +149,9 @@ import { DOCS as CARB_DOCS, firstName as carbFirstName, firstWith as carbFirstWi
 import { IN_2025 as CO2_IN, OUT_2025 as CO2_OUT, STEADY_AT as CO2_STEADY, yearlyChange as co2Change } from '../src/labs/earth/co2-half-stays-in-air';
 import { GOAL_RINGS as TBM_GOAL, mine as tbmMine, place as tbmPlace, SEGMENTS as TBM_SEGMENTS, START as TBM_START, type Tbm } from '../src/labs/engineering/hudson-tunnel-boring-machine';
 import { dayToTime as kskDay, LAST_SAFE_DAY as KSK_LAST, trustsNewKeyAt as kskTrusts, works as kskWorks } from '../src/labs/tech/dnssec-root-key-rollover';
+import { azimuth as swAzimuth, compassError as swError, GOAL as SW_GOAL, kmPerDegree as swKmPerDeg, shiftMinutes as swShift } from '../src/labs/biology/shearwater-jet-lag-sun-compass';
+import { beadSpeedChange as gasDv, kick as gasKick, MASS_U as GAS_MASS, meanSpeed as gasMean, speedFor as gasSpeedFor, THRESHOLD as GAS_THRESHOLD } from '../src/labs/physics/levitated-nanoparticle-gas-kicks';
+import { ageFromSlope as rbAge, decayedShare as rbDecayed, grainAt as rbGrain, GRAINS as RB_GRAINS, slope as rbSlope, TARGET_AGE as RB_TARGET } from '../src/labs/space/mars-meteorite-rubidium-clock';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1409,5 +1412,41 @@ describe('lab maths', () => {
     expect(new Date(kskTrusts(10, 'auto')!).toISOString().slice(0, 10)).toBe('2025-02-10');
     expect(kskWorks(10, 'off')).toBe(false);
     expect(kskWorks(KSK_LAST + 100, 'auto')).toBe(false);
+  });
+  it('Shearwater jet lag: 1,000 km at 52° N is 58 minutes of sun time; 50 minutes at 2 pm turns the sun compass about 15° clockwise', () => {
+    expect(swAzimuth(12)).toBeCloseTo(180, 6);
+    expect(swAzimuth(6)).toBeLessThan(90);
+    expect(swAzimuth(18)).toBeGreaterThan(270);
+    expect(swKmPerDeg()).toBeCloseTo(68.53, 1);
+    expect(swShift(1000)).toBeCloseTo(58.4, 1);
+    expect(swShift(-1000)).toBeCloseTo(-58.4, 1);
+    expect(swError(14, (50 / 4) * swKmPerDeg())).toBeCloseTo(14.8, 1);
+    expect(swError(10, -850)).toBeLessThan(0);
+    expect(swError(12, 550)).toBeGreaterThan(SW_GOAL - 0.5);
+    expect(swError(8, 1000)).toBeLessThan(SW_GOAL - 0.5);
+    expect(swError(15, -900)).toBeLessThan(-(SW_GOAL - 0.5));
+  });
+  it('Gas kicks: a typical xenon atom bouncing back kicks 177 keV/c, below the 200 keV/c the experiment could see; 245 m/s reaches it', () => {
+    expect(gasMean(GAS_MASS.xe)).toBeCloseTo(217.4, 1);
+    expect(gasKick(GAS_MASS.xe, gasMean(GAS_MASS.xe), true)).toBeCloseTo(177.3, 1);
+    expect(gasKick(GAS_MASS.xe, 300, false)).toBeCloseTo(gasKick(GAS_MASS.xe, 300, true) / 2, 6);
+    expect(gasSpeedFor(GAS_THRESHOLD, GAS_MASS.xe)).toBeCloseTo(245.1, 1);
+    expect(gasKick(GAS_MASS.xe, 245, true)).toBeLessThan(GAS_THRESHOLD);
+    expect(gasKick(GAS_MASS.xe, 250, true)).toBeGreaterThan(GAS_THRESHOLD);
+    expect(gasKick(GAS_MASS.xe, 250, true)).toBeLessThan(GAS_THRESHOLD + 5);
+    expect(gasDv(390)).toBeCloseTo(0.208, 3);
+    expect(gasKick(GAS_MASS.sf6, gasMean(GAS_MASS.sf6), true)).toBeGreaterThan(gasKick(GAS_MASS.kr, gasMean(GAS_MASS.kr), true));
+  });
+  it('Rubidium clock: after 4.1 billion years 5.6% of the rubidium-87 has decayed and the isochron slope is 0.059, whatever the starting mix', () => {
+    expect(rbDecayed(49.23)).toBeCloseTo(0.5, 6);
+    expect(rbDecayed(RB_TARGET)).toBeCloseTo(0.0561, 4);
+    expect(rbSlope(RB_TARGET)).toBeCloseTo(0.0594, 4);
+    expect(rbAge(rbSlope(RB_TARGET))).toBeCloseTo(RB_TARGET, 9);
+    for (const mix of [0.7, 0.72, 0.75]) {
+      const pts = RB_GRAINS.map((x0) => rbGrain(x0, RB_TARGET, mix));
+      for (const p of pts) expect(p.y).toBeCloseTo(mix + p.x * rbSlope(RB_TARGET), 12);
+    }
+    const g = rbGrain(1, RB_TARGET);
+    expect(g.x + g.y).toBeCloseTo(1 + 0.7, 12);
   });
 });

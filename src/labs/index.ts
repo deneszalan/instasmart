@@ -154,4 +154,7 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'co2-half-stays-in-air': lazy(() => import('./earth/co2-half-stays-in-air')),
   'hudson-tunnel-boring-machine': lazy(() => import('./engineering/hudson-tunnel-boring-machine')),
   'dnssec-root-key-rollover': lazy(() => import('./tech/dnssec-root-key-rollover')),
+  'shearwater-jet-lag-sun-compass': lazy(() => import('./biology/shearwater-jet-lag-sun-compass')),
+  'levitated-nanoparticle-gas-kicks': lazy(() => import('./physics/levitated-nanoparticle-gas-kicks')),
+  'mars-meteorite-rubidium-clock': lazy(() => import('./space/mars-meteorite-rubidium-clock')),
 };

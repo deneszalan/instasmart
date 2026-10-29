@@ -154,6 +154,9 @@ export const LABS = {
   'co2-half-stays-in-air': 'Turn a bathtub’s tap, the CO₂ that people emit, up or down against drains held at what land and ocean took up in 2025, and find the emissions at which the level in the air stops rising.',
   'hudson-tunnel-boring-machine': 'Run a tunnel boring machine like the one under New Jersey’s Palisades: mine one stroke as its jacks push off the newest ring of lining, then place the segments of the next ring before it can push again.',
   'dnssec-root-key-rollover': 'Switch on a resolver that knows only the old root key of the Domain Name System, on any day from January 2025, and see whether it learns the new key in time for the switch on 11 October 2026.',
+  'shearwater-jet-lag-sun-compass': 'Fly a Manx shearwater east or west and set its body clock, and see how far its sun compass turns when the Sun stands where the clock does not expect it.',
+  'levitated-nanoparticle-gas-kicks': 'Send a krypton, xenon or sulfur hexafluoride particle at a laser-held glass bead, choose how it bounces, and see whether its kick is big enough to pick out of the noise.',
+  'mars-meteorite-rubidium-clock': 'Age a rock whose grains hold rubidium-87 and watch them climb a tilting line as it turns into strontium-87; read the age from the slope, whatever strontium the rock started with.',
 } as const;
 
 export type LabId = keyof typeof LABS;

@@ -244,7 +244,10 @@
                   "carbonara-paper-trail",
                   "co2-half-stays-in-air",
                   "hudson-tunnel-boring-machine",
-                  "dnssec-root-key-rollover"
+                  "dnssec-root-key-rollover",
+                  "shearwater-jet-lag-sun-compass",
+                  "levitated-nanoparticle-gas-kicks",
+                  "mars-meteorite-rubidium-clock"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },
