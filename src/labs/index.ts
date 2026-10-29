@@ -151,4 +151,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'santa-maria-maggiore-sixtus-arch': lazy(() => import('./art/santa-maria-maggiore-sixtus-arch')),
   'nasoni-finger-fountain': lazy(() => import('./engineering/nasoni-finger-fountain')),
   'carbonara-paper-trail': lazy(() => import('./history/carbonara-paper-trail')),
+  'co2-half-stays-in-air': lazy(() => import('./earth/co2-half-stays-in-air')),
 };

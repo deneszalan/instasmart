@@ -146,6 +146,7 @@ import { floorPerPerson as ghettoFloor, groundPerPerson as ghettoGround, PEOPLE 
 import { fits as smmFits, LIBERIUS as SMM_LIBERIUS, windows as smmWindows, yearsLeft as smmYears } from '../src/labs/art/santa-maria-maggiore-sixtus-arch';
 import { flowShare as nasoniFlow, GOAL as NASONI_GOAL, HOLES as NASONI_HOLES, spoutPressure as nasoniPressure } from '../src/labs/engineering/nasoni-finger-fountain';
 import { DOCS as CARB_DOCS, firstName as carbFirstName, firstWith as carbFirstWith, known as carbKnown } from '../src/labs/history/carbonara-paper-trail';
+import { IN_2025 as CO2_IN, OUT_2025 as CO2_OUT, STEADY_AT as CO2_STEADY, yearlyChange as co2Change } from '../src/labs/earth/co2-half-stays-in-air';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1373,5 +1374,14 @@ describe('lab maths', () => {
     expect(carbFirstWith('cream')).toBe(1960);
     expect(carbKnown(1952).filter((d) => d.kind === 'recipe')).toHaveLength(2);
     expect(CARB_DOCS.map((d) => d.year)).toEqual([...CARB_DOCS.map((d) => d.year)].sort((a, b) => a - b));
+  });
+  it('CO₂ bathtub: with half of 2025’s emissions staying, the level stops rising at half of 2025’s emissions', () => {
+    expect(CO2_IN).toBeCloseTo(5.6, 6);
+    expect(CO2_OUT).toBeCloseTo(2.8, 6);
+    expect(co2Change(100)).toBeCloseTo(2.8, 6);
+    expect(co2Change(80)).toBeGreaterThan(0);
+    expect(co2Change(50)).toBeCloseTo(0, 6);
+    expect(co2Change(0)).toBeCloseTo(-2.8, 6);
+    expect(CO2_STEADY).toBeCloseTo(50, 6);
   });
 });
