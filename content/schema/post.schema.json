@@ -241,7 +241,10 @@
                   "rome-ghetto-1555",
                   "santa-maria-maggiore-sixtus-arch",
                   "nasoni-finger-fountain",
-                  "carbonara-paper-trail"
+                  "carbonara-paper-trail",
+                  "co2-half-stays-in-air",
+                  "hudson-tunnel-boring-machine",
+                  "dnssec-root-key-rollover"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

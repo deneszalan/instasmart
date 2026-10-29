@@ -146,6 +146,9 @@ import { floorPerPerson as ghettoFloor, groundPerPerson as ghettoGround, PEOPLE 
 import { fits as smmFits, LIBERIUS as SMM_LIBERIUS, windows as smmWindows, yearsLeft as smmYears } from '../src/labs/art/santa-maria-maggiore-sixtus-arch';
 import { flowShare as nasoniFlow, GOAL as NASONI_GOAL, HOLES as NASONI_HOLES, spoutPressure as nasoniPressure } from '../src/labs/engineering/nasoni-finger-fountain';
 import { DOCS as CARB_DOCS, firstName as carbFirstName, firstWith as carbFirstWith, known as carbKnown } from '../src/labs/history/carbonara-paper-trail';
+import { IN_2025 as CO2_IN, OUT_2025 as CO2_OUT, STEADY_AT as CO2_STEADY, yearlyChange as co2Change } from '../src/labs/earth/co2-half-stays-in-air';
+import { GOAL_RINGS as TBM_GOAL, mine as tbmMine, place as tbmPlace, SEGMENTS as TBM_SEGMENTS, START as TBM_START, type Tbm } from '../src/labs/engineering/hudson-tunnel-boring-machine';
+import { dayToTime as kskDay, LAST_SAFE_DAY as KSK_LAST, trustsNewKeyAt as kskTrusts, works as kskWorks } from '../src/labs/tech/dnssec-root-key-rollover';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1373,5 +1376,38 @@ describe('lab maths', () => {
     expect(carbFirstWith('cream')).toBe(1960);
     expect(carbKnown(1952).filter((d) => d.kind === 'recipe')).toHaveLength(2);
     expect(CARB_DOCS.map((d) => d.year)).toEqual([...CARB_DOCS.map((d) => d.year)].sort((a, b) => a - b));
+  });
+  it('CO₂ bathtub: with half of 2025’s emissions staying, the level stops rising at half of 2025’s emissions', () => {
+    expect(CO2_IN).toBeCloseTo(5.6, 6);
+    expect(CO2_OUT).toBeCloseTo(2.8, 6);
+    expect(co2Change(100)).toBeCloseTo(2.8, 6);
+    expect(co2Change(80)).toBeGreaterThan(0);
+    expect(co2Change(50)).toBeCloseTo(0, 6);
+    expect(co2Change(0)).toBeCloseTo(-2.8, 6);
+    expect(CO2_STEADY).toBeCloseTo(50, 6);
+  });
+  it('Tunnel boring machine: it can only push off a finished ring, so each stroke needs a ring built behind it', () => {
+    expect(tbmPlace(TBM_START).refused).toBe('no-gap');
+    let s: Tbm = tbmMine(TBM_START).next;
+    expect(s.extended).toBe(true);
+    expect(tbmMine(s).refused).toBe('jacks-out');
+    s = tbmPlace(s).next;
+    expect(s.placed).toBe(1);
+    expect(tbmMine(s).refused).toBe('ring-unfinished');
+    for (let i = 1; i < TBM_SEGMENTS; i++) s = tbmPlace(s).next;
+    expect(s).toEqual({ rings: 1, extended: false, placed: 0 });
+    for (let r = 1; r < TBM_GOAL; r++) {
+      s = tbmMine(s).next;
+      for (let i = 0; i < TBM_SEGMENTS; i++) s = tbmPlace(s).next;
+    }
+    expect(s.rings).toBe(TBM_GOAL);
+  });
+  it('Root key rollover: with automatic updates a resolver must be on by 11 September 2026, 30 days before the switch', () => {
+    expect(new Date(kskDay(KSK_LAST)).toISOString().slice(0, 10)).toBe('2026-09-11');
+    expect(kskWorks(KSK_LAST, 'auto')).toBe(true);
+    expect(kskWorks(KSK_LAST + 1, 'auto')).toBe(false);
+    expect(new Date(kskTrusts(10, 'auto')!).toISOString().slice(0, 10)).toBe('2025-02-10');
+    expect(kskWorks(10, 'off')).toBe(false);
+    expect(kskWorks(KSK_LAST + 100, 'auto')).toBe(false);
   });
 });
