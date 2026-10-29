@@ -146,6 +146,7 @@ import { floorPerPerson as ghettoFloor, groundPerPerson as ghettoGround, PEOPLE 
 import { fits as smmFits, LIBERIUS as SMM_LIBERIUS, windows as smmWindows, yearsLeft as smmYears } from '../src/labs/art/santa-maria-maggiore-sixtus-arch';
 import { flowShare as nasoniFlow, GOAL as NASONI_GOAL, HOLES as NASONI_HOLES, spoutPressure as nasoniPressure } from '../src/labs/engineering/nasoni-finger-fountain';
 import { DOCS as CARB_DOCS, firstName as carbFirstName, firstWith as carbFirstWith, known as carbKnown } from '../src/labs/history/carbonara-paper-trail';
+import { BALLOTS as LV_BALLOTS, elected as lvElected, NO_MARKS as LV_NO_MARKS, ranking as lvRanking, votes as lvVotes } from '../src/labs/politics/latvia-open-list-votes';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1373,5 +1374,18 @@ describe('lab maths', () => {
     expect(carbFirstWith('cream')).toBe(1960);
     expect(carbKnown(1952).filter((d) => d.kind === 'recipe')).toHaveLength(2);
     expect(CARB_DOCS.map((d) => d.year)).toEqual([...CARB_DOCS.map((d) => d.year)].sort((a, b) => a - b));
+  });
+  it('Latvia open list: votes are ballots + for − against; against marks on four rivals give the last name a seat', () => {
+    expect(lvVotes(LV_NO_MARKS)).toEqual([1000, 1000, 1000, 1000, 1000, 1000]);
+    expect(LV_BALLOTS).toBe(1000);
+    expect(lvElected(LV_NO_MARKS)).toEqual([0, 1]);
+    const struck = { pro: [0, 0, 0, 0, 0, 0], con: [50, 50, 50, 50, 0, 0] };
+    expect(lvRanking(struck).slice(0, 2)).toEqual([4, 5]);
+    expect(lvElected(struck)).toContain(5);
+    const boosted = { pro: [0, 0, 0, 0, 0, 50], con: [0, 0, 0, 0, 0, 0] };
+    expect(lvElected(boosted)).toEqual([5, 0]);
+    // the real case it models: 34,294 Progressive ballots in Rīga; No. 43 got 4,577 for and 856 against, No. 4 got 2,841 and 6,502
+    expect(34294 + 4577 - 856).toBe(38015);
+    expect(34294 + 2841 - 6502).toBe(30633);
   });
 });
