@@ -147,6 +147,7 @@ import { fits as smmFits, LIBERIUS as SMM_LIBERIUS, windows as smmWindows, years
 import { flowShare as nasoniFlow, GOAL as NASONI_GOAL, HOLES as NASONI_HOLES, spoutPressure as nasoniPressure } from '../src/labs/engineering/nasoni-finger-fountain';
 import { DOCS as CARB_DOCS, firstName as carbFirstName, firstWith as carbFirstWith, known as carbKnown } from '../src/labs/history/carbonara-paper-trail';
 import { BALLOTS as LV_BALLOTS, elected as lvElected, NO_MARKS as LV_NO_MARKS, ranking as lvRanking, votes as lvVotes } from '../src/labs/politics/latvia-open-list-votes';
+import { fits as hitFits, LINE as HIT_LINE, OFFER as HIT_OFFER, reading as hitReading, WORDS as HIT_WORDS } from '../src/labs/language/hittite-bread-and-water';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1387,5 +1388,15 @@ describe('lab maths', () => {
     // the real case it models: 34,294 Progressive ballots in Rīga; No. 43 got 4,577 for and 856 against, No. 4 got 2,841 and 6,502
     expect(34294 + 4577 - 856).toBe(38015);
     expect(34294 + 2841 - 6502).toBe(30633);
+  });
+  it('Hittite: Hrozný’s line has five words, NINDA known; each unknown word fits one meaning, offered out of order', () => {
+    expect(HIT_LINE).toEqual(['nu', 'NINDA-an', 'ezzatteni', 'watar-ma', 'ekutteni']);
+    expect(HIT_WORDS.map((w, i) => hitFits(i, w.meaning))).toEqual([true, true, true]);
+    expect(hitFits(0, 1)).toBe(false);
+    expect(hitFits(1, 2)).toBe(false);
+    expect([...HIT_OFFER].sort()).toEqual([0, 1, 2]);
+    expect(HIT_OFFER.some((m, i) => m === HIT_WORDS[i].meaning)).toBe(false);
+    expect(hitReading([true, true, false]).done).toBe(false);
+    expect(hitReading([true, true, true]).done).toBe(true);
   });
 });

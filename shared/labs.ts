@@ -152,6 +152,7 @@ export const LABS = {
   'nasoni-finger-fountain': 'Cover the end of a Roman nasone’s spout with a finger and choose the size of the hole on top, and see how high the jet rises as the flow and the pressure lost in the pipes fall.',
   'carbonara-paper-trail': 'Drag through the years of carbonara’s paper trail, from an 1839 egg-and-cheese pasta to today’s recipe websites, and find when the name, the first recipe and guanciale first appear in print.',
   'latvia-open-list-votes': 'Add for and against marks to the names on an imaginary Latvian party list and see how their votes, ballots plus for minus against, decide who takes the list’s two seats.',
+  'hittite-bread-and-water': 'Read Bedřich Hrozný’s line of Hittite from 1915 as he did: start from the known Sumerian sign for bread and match the three unknown words to their meanings by their look-alikes in Latin, German and English.',
 } as const;
 
 export type LabId = keyof typeof LABS;
