@@ -242,7 +242,8 @@
                   "santa-maria-maggiore-sixtus-arch",
                   "nasoni-finger-fountain",
                   "carbonara-paper-trail",
-                  "shearwater-jet-lag-sun-compass"
+                  "shearwater-jet-lag-sun-compass",
+                  "levitated-nanoparticle-gas-kicks"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

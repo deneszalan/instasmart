@@ -147,6 +147,7 @@ import { fits as smmFits, LIBERIUS as SMM_LIBERIUS, windows as smmWindows, years
 import { flowShare as nasoniFlow, GOAL as NASONI_GOAL, HOLES as NASONI_HOLES, spoutPressure as nasoniPressure } from '../src/labs/engineering/nasoni-finger-fountain';
 import { DOCS as CARB_DOCS, firstName as carbFirstName, firstWith as carbFirstWith, known as carbKnown } from '../src/labs/history/carbonara-paper-trail';
 import { azimuth as swAzimuth, compassError as swError, GOAL as SW_GOAL, kmPerDegree as swKmPerDeg, shiftMinutes as swShift } from '../src/labs/biology/shearwater-jet-lag-sun-compass';
+import { beadSpeedChange as gasDv, kick as gasKick, MASS_U as GAS_MASS, meanSpeed as gasMean, speedFor as gasSpeedFor, THRESHOLD as GAS_THRESHOLD } from '../src/labs/physics/levitated-nanoparticle-gas-kicks';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1387,5 +1388,16 @@ describe('lab maths', () => {
     expect(swError(12, 550)).toBeGreaterThan(SW_GOAL - 0.5);
     expect(swError(8, 1000)).toBeLessThan(SW_GOAL - 0.5);
     expect(swError(15, -900)).toBeLessThan(-(SW_GOAL - 0.5));
+  });
+  it('Gas kicks: a typical xenon atom bouncing back kicks 177 keV/c, below the 200 keV/c the experiment could see; 245 m/s reaches it', () => {
+    expect(gasMean(GAS_MASS.xe)).toBeCloseTo(217.4, 1);
+    expect(gasKick(GAS_MASS.xe, gasMean(GAS_MASS.xe), true)).toBeCloseTo(177.3, 1);
+    expect(gasKick(GAS_MASS.xe, 300, false)).toBeCloseTo(gasKick(GAS_MASS.xe, 300, true) / 2, 6);
+    expect(gasSpeedFor(GAS_THRESHOLD, GAS_MASS.xe)).toBeCloseTo(245.1, 1);
+    expect(gasKick(GAS_MASS.xe, 245, true)).toBeLessThan(GAS_THRESHOLD);
+    expect(gasKick(GAS_MASS.xe, 250, true)).toBeGreaterThan(GAS_THRESHOLD);
+    expect(gasKick(GAS_MASS.xe, 250, true)).toBeLessThan(GAS_THRESHOLD + 5);
+    expect(gasDv(390)).toBeCloseTo(0.208, 3);
+    expect(gasKick(GAS_MASS.sf6, gasMean(GAS_MASS.sf6), true)).toBeGreaterThan(gasKick(GAS_MASS.kr, gasMean(GAS_MASS.kr), true));
   });
 });

@@ -1,0 +1,176 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-levitated-nanoparticle-gas-kicks",
+  "field": "physics",
+  "title": "A speck of glass held up by a laser felt the kicks of single gas atoms",
+  "emoji": "🔬",
+  "body": "On 19 October 2026 physicists at Yale University reported in Physical Review Letters that they had felt individual gas atoms hitting a glass bead 100 nanometres across ([arXiv](https://arxiv.org/abs/2604.18371)). A focused laser held the bead in a vacuum chamber like a spring, so it swung to and fro along the beam 48,000 times a second, and light bouncing back off it tracked every swing. When the team let in traces of krypton, xenon or sulfur hexafluoride, each particle that bounced off changed that swing a little: a kick of momentum, mass times speed, which for the smallest kicks they could pick out, 200 keV/c in physicists’ units, changed the bead’s speed by about a tenth of a millimetre a second ([Science News](https://www.sciencenews.org/article/nanoparticle-tiny-impact-gas-atom)). In air, molecules hit a bead that size about 90 trillion times a second and blur into the jiggle called Brownian motion; in a near vacuum the hits come one at a time, so counting them measures the pressure. The group, led by David Moore, hopes such sensors will one day measure the emptiest vacuums and feel kicks from particles like neutrinos ([Physics World](https://physicsworld.com/?p=131173)).",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "In air, about how many times a second do gas molecules hit a glass bead 100 nanometres across? Answer in trillions.",
+      "min": 0,
+      "max": 200,
+      "step": 1,
+      "answer": 91,
+      "unit": "trillion",
+      "explanation": "About 91 trillion times a second, from the kinetic theory of gases for air at 20 °C. So many hits blur into a jiggle; in a near vacuum they come one at a time."
+    },
+    {
+      "type": "video",
+      "src": "kicks.mp4",
+      "poster": "kicks.jpg",
+      "alt": "Animation in a dark vacuum chamber: a pink laser holds a glowing glass bead that swings along the beam, traced on a scope. Xenon atoms drift in; one bounces off and kicks the bead. A sum gives 177 keV/c, a scale shows kicks seen from 200, air molecules make it jiggle, and single kicks are counted.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Ether Vox” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 6,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "levitated-nanoparticle-gas-kicks",
+      "prompt": "Pick xenon and let its atom bounce straight back. Find the slowest atom whose kick clears the 200 keV/c the experiment could pick out.",
+      "takeaway": "About 250 m/s: faster than xenon’s average of 217 m/s at 20 °C, which kicks only 177 keV/c. So the team caught the faster, more direct hits; an atom that sticks kicks half as hard."
+    },
+    {
+      "type": "rank",
+      "heading": "Rank the kicks of particles bouncing straight back at their average speed",
+      "items": [
+        {
+          "label": "Krypton atom",
+          "value": 142
+        },
+        {
+          "label": "Xenon atom",
+          "value": 177
+        },
+        {
+          "label": "Sulfur hexafluoride",
+          "value": 187
+        }
+      ],
+      "unit": "keV/c",
+      "note": "Computed: kick = 2 × mass × average speed, for gases at 20 °C.",
+      "explanation": "Heavier particles move slower, but not by enough: at the same temperature speed falls as 1/√mass, so the kick still grows as √mass."
+    },
+    {
+      "type": "timeline",
+      "heading": "From a jiggle to single hits",
+      "events": [
+        {
+          "when": "1828",
+          "text": "Botanist Robert Brown reports tiny particles jiggling in water"
+        },
+        {
+          "when": "1905",
+          "text": "Albert Einstein explains the jiggle as countless molecules hitting"
+        },
+        {
+          "when": "2010",
+          "text": "Physicists catch a laser-trapped glass bead’s speed mid-jiggle"
+        },
+        {
+          "when": "2026",
+          "text": "At Yale, single gas atoms’ kicks are felt one by one"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "How could the Yale team use the levitated glass bead to measure the pressure of the gas in the chamber?",
+      "options": [
+        "By counting kicks per second",
+        "By weighing the bead",
+        "By timing the laser light",
+        "By watching the bead glow"
+      ],
+      "answer": 0,
+      "explanation": "More gas means more particles hitting the bead. The rate of kicks they counted gave the gas pressure, and it matched the chamber’s pressure gauge."
+    }
+  ],
+  "tags": [
+    "atoms",
+    "momentum",
+    "lasers",
+    "vacuum",
+    "brownianmotion"
+  ],
+  "source": {
+    "label": "Tseng et al., Optomechanical Detection of Individual Gas Collisions (arXiv, Physical Review Letters, 2026)",
+    "url": "https://arxiv.org/abs/2604.18371"
+  },
+  "theme": {
+    "gradient": [
+      "#06040d",
+      "#3a1840"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-29T20:00:00Z",
+  "news": "2026-10-19"
+}
