@@ -146,6 +146,7 @@ import { floorPerPerson as ghettoFloor, groundPerPerson as ghettoGround, PEOPLE 
 import { fits as smmFits, LIBERIUS as SMM_LIBERIUS, windows as smmWindows, yearsLeft as smmYears } from '../src/labs/art/santa-maria-maggiore-sixtus-arch';
 import { flowShare as nasoniFlow, GOAL as NASONI_GOAL, HOLES as NASONI_HOLES, spoutPressure as nasoniPressure } from '../src/labs/engineering/nasoni-finger-fountain';
 import { DOCS as CARB_DOCS, firstName as carbFirstName, firstWith as carbFirstWith, known as carbKnown } from '../src/labs/history/carbonara-paper-trail';
+import { azimuth as swAzimuth, compassError as swError, GOAL as SW_GOAL, kmPerDegree as swKmPerDeg, shiftMinutes as swShift } from '../src/labs/biology/shearwater-jet-lag-sun-compass';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1373,5 +1374,18 @@ describe('lab maths', () => {
     expect(carbFirstWith('cream')).toBe(1960);
     expect(carbKnown(1952).filter((d) => d.kind === 'recipe')).toHaveLength(2);
     expect(CARB_DOCS.map((d) => d.year)).toEqual([...CARB_DOCS.map((d) => d.year)].sort((a, b) => a - b));
+  });
+  it('Shearwater jet lag: 1,000 km at 52° N is 58 minutes of sun time; 50 minutes at 2 pm turns the sun compass about 15° clockwise', () => {
+    expect(swAzimuth(12)).toBeCloseTo(180, 6);
+    expect(swAzimuth(6)).toBeLessThan(90);
+    expect(swAzimuth(18)).toBeGreaterThan(270);
+    expect(swKmPerDeg()).toBeCloseTo(68.53, 1);
+    expect(swShift(1000)).toBeCloseTo(58.4, 1);
+    expect(swShift(-1000)).toBeCloseTo(-58.4, 1);
+    expect(swError(14, (50 / 4) * swKmPerDeg())).toBeCloseTo(14.8, 1);
+    expect(swError(10, -850)).toBeLessThan(0);
+    expect(swError(12, 550)).toBeGreaterThan(SW_GOAL - 0.5);
+    expect(swError(8, 1000)).toBeLessThan(SW_GOAL - 0.5);
+    expect(swError(15, -900)).toBeLessThan(-(SW_GOAL - 0.5));
   });
 });
