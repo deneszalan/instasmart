@@ -2113,4 +2113,12 @@ export const de: Record<string, string> = {
   'Save the rest': 'Den Rest speichern',
   'Remove the saved copy': 'Gespeicherte Kopie löschen',
   'On iPhone or iPad, first add {name} to your Home Screen (Share, then Add to Home Screen) and save it from there: iOS keeps the saved copy only for Home Screen apps.': 'Auf dem iPhone oder iPad füge {name} zuerst zum Home-Bildschirm hinzu (Teilen, dann „Zum Home-Bildschirm“) und speichere es dort: iOS behält die gespeicherte Kopie nur für Apps auf dem Home-Bildschirm.',
+  'Pollak’s arm': 'Pollaks Arm',
+  'holes in line': 'Löcher in einer Linie',
+  'Laocoön’s shoulder and Pollak’s arm; its drill hole is {d}° and {c} cm off the shoulder’s': 'Laokoons Schulter und Pollaks Arm; sein Bohrloch liegt {d}° und {c} cm neben dem der Schulter',
+  'Turn the arm': 'Arm drehen',
+  'Slide it sideways': 'Seitlich verschieben',
+  'Simplified model: the arm is one rigid piece, so its bend can’t change. Shapes and angles are illustrative.': 'Vereinfachtes Modell: Der Arm ist ein starres Stück, seine Beugung kann sich nicht ändern. Formen und Winkel sind nur zur Anschauung.',
+  'Holes turned apart by': 'Löcher verdreht um',
+  'Holes apart sideways by': 'Löcher seitlich versetzt um',
 };
