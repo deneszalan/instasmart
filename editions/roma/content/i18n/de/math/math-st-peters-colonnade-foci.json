@@ -1,0 +1,68 @@
+{
+  "id": "math-st-peters-colonnade-foci",
+  "title": "Auf einer Scheibe am Petersplatz werden Berninis vier Säulenreihen zu einer",
+  "body": "Gian Lorenzo Bernini baute die Kolonnaden des [Petersplatzes](https://en.wikipedia.org/wiki/St._Peter%27s_Square) 1656–1667 für Papst Alexander VII.: 284 Säulen und 88 Pfeiler, vier Reihen tief, im Bogen um ein Oval. Zwischen dem Obelisken und jedem Brunnen liegt eine runde Steinplatte im Pflaster: *Centro del colonnato*, Mittelpunkt der Kolonnade. Wer darauf steht und zur näheren Kolonnade blickt, sieht ihre vier Reihen zu einer verschmelzen, wie die [Seite des Vatikans](https://www.vatican.va/content/vatican/en/ra/piastrelle-centro-del-colonnato.html) beschreibt. Der Grund ist Geometrie: Die Reihen sind **Kreisbögen um diese Scheibe**, und jede Vierergruppe steht auf einem Radius. So läuft jede Sichtlinie von der Scheibe an einer Gruppe entlang, und die vordere Säule verdeckt die drei dahinter. Von überall sonst schneiden die Sichtlinien quer durch die Gruppen. Oft heißen die Scheiben Brennpunkte, doch [ein Preprint von 2026](https://www.researchsquare.com/article/rs-10455562/v1) beschreibt nach früheren Vermessungen ein *ovato tondo*: zwei Kreise um die Scheiben, etwa 66 m auseinander, durch zwei weitere Bögen zur Beinahe-Ellipse verbunden.",
+  "slides": [
+    {
+      "question": "Die Kolonnaden des Architekten Gian Lorenzo Bernini am Petersplatz sind vier Reihen tief. Wie viele Säulen haben sie?",
+      "unit": "Säulen",
+      "explanation": "284 Säulen und 88 Pfeiler, sagt der Vatikan, gebaut 1656–1667. Oben stehen 140 Heiligenstatuen, jede etwa 3 m hoch."
+    },
+    {
+      "alt": "Animation auf dunklem Pflaumenrot: ein Plan des Petersplatzes mit Oval, Obelisk, Brunnen und zwei Kolonnaden aus vier Reihen. Ein Sichtfenster zeigt die Säulen aus der Sicht eines Spaziergängers, erst ein Gewirr, dann von der Scheibe aus eine saubere Reihe. Kreise bilden das Oval.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Geh über den Petersplatz und finde die Stelle, an der keine Säule der hinteren Reihen von Berninis nördlicher Kolonnade zu sehen ist.",
+      "takeaway": "Nur auf der Scheibe, dem Mittelpunkt der Kreise der Kolonnade, liegt jede Vierergruppe in einer Linie: Jede Sichtlinie folgt einem Radius. Vom Obelisken oder anderswo lugen Dutzende hintere Säulen hervor."
+    },
+    {
+      "alt": "Nahaufnahme einer runden weißen Marmorplatte im dunklen Pflaster des Petersplatzes, in der Mitte eine graue Steinscheibe, rundherum eingemeißelt die Worte CENTRO DEL COLONNATO.",
+      "caption": "Eine der beiden Scheiben, ins Pflaster gesetzt zwischen dem Obelisken und einem Brunnen."
+    },
+    {
+      "heading": "Warum die vier Reihen eins werden",
+      "steps": [
+        {
+          "label": "Jede Kolonnade ist ein Kreisbogen"
+        },
+        {
+          "label": "Die Scheibe markiert den Kreismittelpunkt"
+        },
+        {
+          "label": "Jede Vierergruppe liegt auf einem Radius"
+        },
+        {
+          "label": "Sichtlinien folgen den Gruppen"
+        },
+        {
+          "label": "Die vordere Säule verdeckt die drei dahinter"
+        }
+      ]
+    },
+    {
+      "heading": "Brennpunkte oder Mittelpunkte?",
+      "left": {
+        "label": "Oft gesagt",
+        "text": "Der Platz ist eine Ellipse, und die Scheiben markieren ihre zwei Brennpunkte."
+      },
+      "right": {
+        "label": "Die Geometrie",
+        "text": "Der Grundriss ist ein Oval aus Kreisbögen, und jede Scheibe ist der Mittelpunkt der Kreise ihrer Kolonnade. Das bringt die Reihen in eine Linie."
+      }
+    },
+    {
+      "question": "Auf der Scheibe zwischen dem Obelisken und dem nördlichen Brunnen des Petersplatzes: Wessen vier Säulenreihen werden zu einer?",
+      "options": [
+        "Die der näheren, nördlichen",
+        "Die der südlichen, gegenüber",
+        "Beide zugleich",
+        "Keine: nur vom Obelisken aus"
+      ],
+      "explanation": "Jede Scheibe ist der Mittelpunkt der Kreise der näheren Kolonnade. Von dort zeigen die Gruppen der fernen Kolonnade woandershin; deren eigene Scheibe liegt jenseits des Obelisken."
+    }
+  ],
+  "source": {
+    "label": "Vatikan: Mittelpunkt der Kolonnade, Petersplatz (englisch)"
+  }
+}

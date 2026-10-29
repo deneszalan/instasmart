@@ -2100,4 +2100,12 @@ export const de: Record<string, string> = {
   'Copper skin, × model': 'Kupferhaut, × Modell',
   'Volume if solid, × model': 'Volumen, wenn massiv, × Modell',
   'Gold ticks: Bartholdi’s models of 1.25, 2.85 and 11 m and the statue, 46 m from base to torch. Simplified: the shape stays the same at every size.': 'Goldene Striche: Bartholdis Modelle von 1,25, 2,85 und 11 m und die Statue, 46 m vom Sockel bis zur Fackel. Vereinfacht: Die Form bleibt in jeder Größe gleich.',
+  'What you see from there': 'Was du von dort siehst',
+  'St Peter’s obelisk': 'Obelisk von Sankt Peter',
+  'disc: centro del colonnato': 'Scheibe: centro del colonnato',
+  'A simplified plan of St Peter’s Square and its north colonnade of four rows, with the view from where you stand; drag to move': 'Ein vereinfachter Plan des Petersplatzes mit seiner nördlichen Kolonnade aus vier Reihen und dem Blick von deinem Standort; zum Bewegen ziehen',
+  'Columns seen': 'Gesehene Säulen',
+  'Back rows showing': 'Sichtbare hintere Reihen',
+  'From the disc': 'Abstand zur Scheibe',
+  'Drag on the plan; near the disc you click onto it. Red: back-row columns you can see. Simplified: 35 sets of four.': 'Zieh auf dem Plan; nahe der Scheibe rastest du auf ihr ein. Rot: sichtbare Säulen der hinteren Reihen. Vereinfacht: 35 Vierergruppen.',
 };

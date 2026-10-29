@@ -156,6 +156,7 @@ import { BALLOTS as LV_BALLOTS, elected as lvElected, NO_MARKS as LV_NO_MARKS, r
 import { fits as hitFits, LINE as HIT_LINE, OFFER as HIT_OFFER, reading as hitReading, WORDS as HIT_WORDS } from '../src/labs/language/hittite-bread-and-water';
 import { BEATS as CLAP_BEATS, NO_SILENCE as CLAP_NO_SILENCE, overlap as clapOverlap, PATTERN as CLAP_PATTERN, shifted as clapShifted } from '../src/labs/music/clapping-music-phase-shift';
 import { enlarge as solEnlarge, FULL as SOL_FULL, STAGES as SOL_STAGES } from '../src/labs/art/statue-of-liberty-enlarged-by-four';
+import { COL_DISC, COL_ROWS, COL_SETS, colonnadeColumns, placeEye, sightFrom } from '../src/labs/math/st-peters-colonnade-foci';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1495,5 +1496,21 @@ describe('lab maths', () => {
     expect(Math.round(solEnlarge(SOL_FULL).volume / 1000)).toBe(50);
     expect(SOL_STAGES.map((s) => s.m)).toEqual([1.25, 2.85, 11, 46.05]);
     expect(SOL_STAGES[2].m / SOL_STAGES[1].m).toBeCloseTo(3.86, 2);
+  });
+  it('St Peter’s colonnade: from its disc only the front column of each set of four shows; from the obelisk or the other disc the back rows show', () => {
+    const cols = colonnadeColumns();
+    expect(cols).toHaveLength(COL_SETS * 4);
+    for (const c of cols) expect(Math.hypot(c.x - COL_DISC, c.y)).toBeCloseTo(COL_ROWS[c.row], 9);
+    const fromDisc = sightFrom(COL_DISC, 0);
+    expect(fromDisc.seen).toHaveLength(COL_SETS);
+    expect(fromDisc.rear).toBe(0);
+    expect(fromDisc.seen.every((c) => c.row === 0)).toBe(true);
+    expect(sightFrom(0, 0).rear).toBeGreaterThan(COL_SETS);
+    expect(sightFrom(-COL_DISC, 0).rear).toBeGreaterThan(COL_SETS);
+    expect(sightFrom(20, -30).rear).toBeGreaterThan(COL_SETS);
+    expect(placeEye(COL_DISC + 1.5, 1)).toEqual([COL_DISC, 0]);
+    const [x, y] = placeEye(300, 0);
+    expect(x).toBeLessThan(99.06);
+    expect(y).toBe(0);
   });
 });
