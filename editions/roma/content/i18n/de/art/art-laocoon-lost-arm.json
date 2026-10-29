@@ -1,0 +1,68 @@
+{
+  "id": "art-laocoon-lost-arm",
+  "title": "Vier Jahrhunderte hob der Laokoon im Vatikan einen Ersatzarm; sein verlorener war gebeugt",
+  "body": "Die Marmorgruppe [Laokoon und seine Söhne](https://en.wikipedia.org/wiki/Laoco%C3%B6n_and_His_Sons), ein trojanischer Priester und seine Söhne im Angriff von Seeschlangen, wurde im Januar 1506 auf dem Esquilin ausgegraben. Der Architekt Giuliano da Sangallo erkannte mit Michelangelo darin das Werk, das der römische Autor Plinius der Ältere gepriesen hatte. Papst Julius II. kaufte es; heute steht es im Achteckigen Hof der Vatikanischen Museen, die es nach langer Debatte auf etwa 40–30 v. Chr. datieren. Dem Vater fehlte der rechte Arm. Michelangelo meinte, er sei zurückgebogen gewesen, doch 1532 setzte der Bildhauer Giovanni Montorsoli einen hoch erhobenen Arm aus Terrakotta an; diese Haltung blieb bis 1957. 1903 kaufte der Archäologe Ludwig Pollak in einer Steinmetzwerkstatt nahe dem Fundort einen gebeugten Marmorarm und schenkte ihn 1906 dem Vatikan. Er wirkte zu klein, doch frühere Ergänzungen hatten die Schulter abgetragen, und ein Bohrloch in seiner Bruchfläche fluchtet mit einem in der Schulter. 1957 setzte Filippo Magi ihn an, mit Gips in der Lücke. Pollak, der Jude war, wurde im Oktober 1943 bei der Razzia der Nazis gegen Roms Juden verschleppt und in Auschwitz ermordet.",
+  "slides": [
+    {
+      "question": "1906 schenkte der Archäologe Ludwig Pollak dem Vatikan einen gebeugten Arm für den Laokoon. Wann kam er an die Statue?",
+      "explanation": "1957. Der Arm lag etwa ein halbes Jahrhundert in den Depots der Vatikanischen Museen, bis der Archäologe Filippo Magi die alten Zusätze abnahm und ihn ansetzte."
+    },
+    {
+      "alt": "Animation auf dunklem Grünspan: Die Laokoon-Gruppe steigt aus einer Grube im Weinberg in eine Nische, ohne rechten Arm. Ein erhobener Terrakotta-Arm von 1532 kommt an und wieder ab; in Großaufnahme dreht sich ein gebeugter Marmorarm, bis sein Bohrloch mit dem der Schulter fluchtet.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Dreh und schieb den gebeugten Marmorarm, den Ludwig Pollak fand, bis sein Bohrloch mit dem in Laokoons Schulter fluchtet.",
+      "takeaway": "Die Löcher fluchten nur in einem Winkel, und dort steigt der Arm an und sein Unterarm biegt sich zum Kopf zurück: Die Beugung ist in den Marmor gehauen. Gips füllt die Lücke zwischen den Bruchflächen."
+    },
+    {
+      "alt": "Die marmorne Laokoon-Gruppe vor einer grauen Wand: in der Mitte ein bärtiger Mann, sein rechter Arm nach oben und hinter den Kopf gebeugt, neben ihm zwei junge Männer, alle von Schlangen umschlungen.",
+      "caption": "Laokoon und seine Söhne heute in den Vatikanischen Museen: Pollaks Arm ist der, der sich hinter den Kopf des Vaters beugt."
+    },
+    {
+      "heading": "Der lange Weg des Arms zurück",
+      "events": [
+        {
+          "text": "Auf dem Esquilin ausgegraben; Papst Julius II. kauft ihn"
+        },
+        {
+          "text": "Bildhauer Giovanni Montorsoli setzt einen erhobenen Arm aus Ton an"
+        },
+        {
+          "text": "Archäologe Ludwig Pollak findet einen gebeugten Arm; Schenkung 1906"
+        },
+        {
+          "text": "Filippo Magi setzt ihn an, die Lücke mit Gips gefüllt"
+        }
+      ]
+    },
+    {
+      "heading": "Ist es Laokoons eigener Arm?",
+      "left": {
+        "label": "Dafür",
+        "text": "Ein Bohrloch in seiner Bruchfläche fluchtet genau mit einem in der Schulter. Zu klein wirkte er nur, weil frühere Ergänzungen die Schulter abgetragen hatten."
+      },
+      "right": {
+        "label": "Zweifel",
+        "text": "Die Althistorikerin Mary Beard nennt einen Gipskeil zwischen Arm und Schulter, kleineren Maßstab und etwas anderen Marmor. Pollak dachte erst an eine Kopie."
+      }
+    },
+    {
+      "label": "Marmorstücke in der Laokoon-Gruppe des Vatikans",
+      "text": "Der römische Autor Plinius der Ältere schrieb, der Laokoon sei aus einem einzigen Block gehauen. Die 1506 gefundene Gruppe besteht aus mindestens sieben ineinandergreifenden Teilen."
+    },
+    {
+      "question": "Warum wirkte Ludwig Pollaks gebeugter Arm zuerst zu klein für den Laokoon im Vatikan?",
+      "options": [
+        "Die Schulter war abgetragen worden",
+        "Er stammte von einer Kinderstatue",
+        "Marmor schrumpft über Jahrhunderte",
+        "Plinius nannte den Arm klein"
+      ],
+      "explanation": "Die Schulter war für frühere Arme abgeschlagen und abgenutzt worden, ihr Bruch passte nicht mehr. Ein Bohrloch in jeder Bruchfläche zeigte dann, dass die Teile fluchten."
+    }
+  ],
+  "source": {
+    "label": "Vatican News: Laocoön and the Arm of Memory (englisch)"
+  }
+}

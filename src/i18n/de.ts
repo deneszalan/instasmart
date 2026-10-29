@@ -2100,4 +2100,12 @@ export const de: Record<string, string> = {
   'Copper skin, × model': 'Kupferhaut, × Modell',
   'Volume if solid, × model': 'Volumen, wenn massiv, × Modell',
   'Gold ticks: Bartholdi’s models of 1.25, 2.85 and 11 m and the statue, 46 m from base to torch. Simplified: the shape stays the same at every size.': 'Goldene Striche: Bartholdis Modelle von 1,25, 2,85 und 11 m und die Statue, 46 m vom Sockel bis zur Fackel. Vereinfacht: Die Form bleibt in jeder Größe gleich.',
+  'Pollak’s arm': 'Pollaks Arm',
+  'holes in line': 'Löcher in einer Linie',
+  'Laocoön’s shoulder and Pollak’s arm; its drill hole is {d}° and {c} cm off the shoulder’s': 'Laokoons Schulter und Pollaks Arm; sein Bohrloch liegt {d}° und {c} cm neben dem der Schulter',
+  'Turn the arm': 'Arm drehen',
+  'Slide it sideways': 'Seitlich verschieben',
+  'Simplified model: the arm is one rigid piece, so its bend can’t change. Shapes and angles are illustrative.': 'Vereinfachtes Modell: Der Arm ist ein starres Stück, seine Beugung kann sich nicht ändern. Formen und Winkel sind nur zur Anschauung.',
+  'Holes turned apart by': 'Löcher verdreht um',
+  'Holes apart sideways by': 'Löcher seitlich versetzt um',
 };

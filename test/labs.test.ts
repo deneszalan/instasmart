@@ -156,6 +156,7 @@ import { BALLOTS as LV_BALLOTS, elected as lvElected, NO_MARKS as LV_NO_MARKS, r
 import { fits as hitFits, LINE as HIT_LINE, OFFER as HIT_OFFER, reading as hitReading, WORDS as HIT_WORDS } from '../src/labs/language/hittite-bread-and-water';
 import { BEATS as CLAP_BEATS, NO_SILENCE as CLAP_NO_SILENCE, overlap as clapOverlap, PATTERN as CLAP_PATTERN, shifted as clapShifted } from '../src/labs/music/clapping-music-phase-shift';
 import { enlarge as solEnlarge, FULL as SOL_FULL, STAGES as SOL_STAGES } from '../src/labs/art/statue-of-liberty-enlarged-by-four';
+import { aligned as laoAligned, armEnds as laoArmEnds, FIT as LAO_FIT, HEAD as LAO_HEAD, holesOff as laoHolesOff, SHOULDER as LAO_SHOULDER } from '../src/labs/art/laocoon-lost-arm';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1495,5 +1496,15 @@ describe('lab maths', () => {
     expect(Math.round(solEnlarge(SOL_FULL).volume / 1000)).toBe(50);
     expect(SOL_STAGES.map((s) => s.m)).toEqual([1.25, 2.85, 11, 46.05]);
     expect(SOL_STAGES[2].m / SOL_STAGES[1].m).toBeCloseTo(3.86, 2);
+  });
+  it('Laocoön: the drill holes line up at one angle only; there the rigid bent arm rises and folds back toward the head', () => {
+    expect(laoHolesOff(LAO_FIT, 0)).toEqual({ deg: 0, cm: 0 });
+    expect(laoAligned(LAO_FIT, 0)).toBe(true);
+    expect(laoAligned(LAO_FIT + 3, 0)).toBe(false);
+    expect(laoAligned(LAO_FIT, 0.5)).toBe(false);
+    expect(laoAligned(196, 2.5)).toBe(false);
+    const { elbow, end } = laoArmEnds(LAO_FIT);
+    expect(elbow[1]).toBeGreaterThan(LAO_SHOULDER[1]);
+    expect(Math.hypot(end[0] - LAO_HEAD[0], end[1] - LAO_HEAD[1])).toBeLessThan(Math.hypot(elbow[0] - LAO_HEAD[0], elbow[1] - LAO_HEAD[1]));
   });
 });

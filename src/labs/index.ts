@@ -161,4 +161,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'hittite-bread-and-water': lazy(() => import('./language/hittite-bread-and-water')),
   'clapping-music-phase-shift': lazy(() => import('./music/clapping-music-phase-shift')),
   'statue-of-liberty-enlarged-by-four': lazy(() => import('./art/statue-of-liberty-enlarged-by-four')),
+  'laocoon-lost-arm': lazy(() => import('./art/laocoon-lost-arm')),
 };
