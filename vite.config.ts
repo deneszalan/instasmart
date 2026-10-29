@@ -1,4 +1,5 @@
-import { readdirSync, readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { defineConfig, type Plugin } from 'vitest/config';
@@ -42,6 +43,78 @@ function clipLengths(media: string): Plugin {
   };
 }
 
+/**
+ * `virtual:media-sizes`: every media file's size in bytes, keyed "<post-id>/<file>", so an app that can be saved for
+ * use without internet can say how much it will download.
+ */
+function mediaSizes(media: string): Plugin {
+  const id = 'virtual:media-sizes';
+  return {
+    name: 'media-sizes',
+    resolveId: (source) => (source === id ? `\0${id}` : undefined),
+    load(resolved) {
+      if (resolved !== `\0${id}`) return;
+      const sizes: Record<string, number> = {};
+      for (const post of existsSync(media) ? readdirSync(media) : []) {
+        for (const file of readdirSync(join(media, post))) sizes[`${post}/${file}`] = statSync(join(media, post, file)).size;
+      }
+      return `export default ${JSON.stringify(sizes)};`;
+    },
+  };
+}
+
+/** Pictures and clips: an offline app saves these from Settings, since they are nearly all of its size. */
+const MEDIA_FILE = /\.(mp4|jpe?g|png|webp|gif)$/i;
+
+/**
+ * For an edition that works without internet (`offline`): sw.js, the offline worker (src/offline-worker.js) with the
+ * app's own files to keep (page, scripts, styles, fonts, icons), a web app manifest and the Home Screen tags.
+ */
+function offlineApp(edition: Edition, publicDir: string): Plugin {
+  const icons = [192, 512].filter((size) => existsSync(join(publicDir, `icon-${size}.png`)));
+  return {
+    name: 'offline-app',
+    apply: 'build',
+    enforce: 'post',
+    transformIndexHtml: (html) =>
+      html.replace(
+        '</head>',
+        [
+          '  <link rel="manifest" href="./manifest.webmanifest" />',
+          existsSync(join(publicDir, 'icon-180.png')) ? '  <link rel="apple-touch-icon" href="./icon-180.png" />' : '',
+          '  <meta name="apple-mobile-web-app-capable" content="yes" />',
+          '  <meta name="mobile-web-app-capable" content="yes" />',
+          '</head>',
+        ]
+          .filter(Boolean)
+          .join('\n  '),
+      ),
+    generateBundle(_, bundle) {
+      const manifest = {
+        name: edition.name,
+        short_name: edition.name,
+        description: edition.description,
+        lang: edition.lang,
+        start_url: './',
+        scope: './',
+        display: 'standalone',
+        background_color: '#000000',
+        theme_color: '#000000',
+        icons: icons.map((size) => ({ src: `icon-${size}.png`, sizes: `${size}x${size}`, type: 'image/png' })),
+      };
+      this.emitFile({ type: 'asset', fileName: 'manifest.webmanifest', source: JSON.stringify(manifest, null, 2) });
+      const own = existsSync(publicDir) ? readdirSync(publicDir) : [];
+      const files = Object.keys(bundle).filter((f) => !MEDIA_FILE.test(f) && f !== 'index.html');
+      const shell = [...new Set(['./', 'index.html', 'manifest.webmanifest', ...own, ...files])];
+      const version = createHash('sha1').update(shell.join('\n')).digest('hex').slice(0, 12);
+      const source = readFileSync(join(root, 'src/offline-worker.js'), 'utf8')
+        .replace("'__VERSION__'", JSON.stringify(version))
+        .replace('__SHELL__', JSON.stringify(shell));
+      this.emitFile({ type: 'asset', fileName: 'sw.js', source });
+    },
+  };
+}
+
 /** The page's language, title and description come from the edition. */
 function editionPage(edition: Edition): Plugin {
   return {
@@ -58,13 +131,20 @@ function editionPage(edition: Edition): Plugin {
 export default defineConfig(({ mode }) => {
   const edition = editionForMode(mode);
   const content = join(root, edition.dir, 'content');
+  const publicDir = join(root, edition.dir, 'public');
   return {
-    plugins: [react(), clipLengths(join(content, 'media')), editionPage(edition)],
+    plugins: [
+      react(),
+      clipLengths(join(content, 'media')),
+      mediaSizes(join(content, 'media')),
+      editionPage(edition),
+      ...(edition.offline ? [offlineApp(edition, publicDir)] : []),
+    ],
     // Relative asset paths so the build works from any sub-path (e.g. GitHub Pages).
     base: './',
     define: { __EDITION__: JSON.stringify(edition) },
     resolve: { alias: { '@content': content } },
-    publicDir: join(root, edition.dir, 'public'),
+    publicDir,
     build: { outDir: join(root, 'dist', edition.path) },
     test: {
       environment: 'node',

@@ -3,6 +3,8 @@ import { FIELDS } from '../data/fields';
 import { LIBRARY } from '../data/library';
 import { streak, useStore, type Theme } from '../state/store';
 import { Avatar } from '../components/Avatar';
+import { OfflineSave } from '../components/OfflineSave';
+import { OFFLINE } from '../lib/offline';
 import { LANG, LANG_NAMES, LANGS, setLang, t } from '../i18n';
 import { EDITION } from '../edition';
 
@@ -111,6 +113,8 @@ export function Profile() {
           ))}
         </ul>
       </section>
+
+      {OFFLINE && <OfflineSave />}
 
       <section className="card-box">
         <h2 className="section-title">{t('Settings')}</h2>
