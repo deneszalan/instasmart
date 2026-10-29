@@ -667,6 +667,12 @@ export const Post = z
       .refine((s) => !Number.isNaN(Date.parse(s.length === 10 ? `${s}T00:00:00Z` : s)), 'Not a real date')
       .optional()
       .describe('When the post was published, in UTC: YYYY-MM-DDTHH:MM:SSZ. A bare YYYY-MM-DD also works. The app shows it on the post and sorts by it.'),
+    news: z
+      .string()
+      .regex(/^\d{4}-\d{2}(-\d{2})?$/, 'Use YYYY-MM-DD, or YYYY-MM when only the month is known')
+      .refine((s) => !Number.isNaN(Date.parse(s.length === 7 ? `${s}-01T00:00:00Z` : `${s}T00:00:00Z`)), 'Not a real date')
+      .optional()
+      .describe('For a post hooked to the news: the date of that event, YYYY-MM-DD (YYYY-MM when only the month is known; it may be coming up). The post shows under News, newest first, and not in the main feed.'),
   })
   .strict()
   .superRefine((post, ctx) => {
