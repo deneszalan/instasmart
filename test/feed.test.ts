@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { FieldId, KnowledgeCard } from '../src/types';
-import { createRng, endlessFeed, newsFirst, searchCards, sortCards, spreadByField, take } from '../src/lib/feed';
+import { createRng, endlessFeed, searchCards, sortCards, sortNews, spreadByField, take } from '../src/lib/feed';
 import { formatNewsDate, formatStamp, newsAt, publishedAt, timeAgo } from '../src/lib/time';
 
 function card(field: FieldId, n: number, extra: Partial<KnowledgeCard> = {}): KnowledgeCard {
@@ -163,7 +163,15 @@ describe('news', () => {
     card('earth', 1, { news: '2026-10-25', createdAt: '2026-10-29' }),
   ];
   it('lists only news posts, the latest event first, then the newest post', () => {
-    expect(newsFirst(posts).map((c) => c.id)).toEqual(['politics-2', 'earth-1', 'politics-1', 'space-1']);
+    expect(sortNews(posts, 'newest').map((c) => c.id)).toEqual(['politics-2', 'earth-1', 'politics-1', 'space-1']);
+  });
+  it('reverses for the earliest event first', () => {
+    expect(sortNews(posts, 'oldest').map((c) => c.id)).toEqual(['space-1', 'politics-1', 'earth-1', 'politics-2']);
+  });
+  it('mixes them by field, like the feed', () => {
+    const mixed = sortNews(posts, 'mix', createRng(7)).map((c) => c.id);
+    expect(mixed.slice().sort()).toEqual(['earth-1', 'politics-1', 'politics-2', 'space-1']);
+    expect(mixed.some((id, i) => i > 0 && id.split('-')[0] === mixed[i - 1].split('-')[0])).toBe(false);
   });
   it('counts a month-only date from its first day', () => {
     expect(newsAt('2026-10')).toBe(Date.parse('2026-10-01T12:00:00Z'));

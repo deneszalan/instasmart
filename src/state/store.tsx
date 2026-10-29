@@ -22,9 +22,9 @@ export interface LearnState {
   /**
    * speed: the playback speed the reader picked for clips, or null to play each at its own default
    * (animations a little slower); stepMode: pause explainers at the end of each step; sort: how the feed and Explore
-   * order posts.
+   * order posts; newsSort: how the News tab orders its posts, by the date of their event.
    */
-  settings: { wiki: boolean; theme: Theme; speed: number | null; stepMode: boolean; sort: SortOrder };
+  settings: { wiki: boolean; theme: Theme; speed: number | null; stepMode: boolean; sort: SortOrder; newsSort: SortOrder };
 }
 
 type Action =
@@ -48,7 +48,7 @@ export const initialState: LearnState = {
   activeDays: [],
   storiesViewed: {},
   challenges: {},
-  settings: { wiki: true, theme: 'system', speed: null, stepMode: false, sort: 'mix' },
+  settings: { wiki: true, theme: 'system', speed: null, stepMode: false, sort: 'mix', newsSort: 'newest' },
 };
 
 export function localDay(date = new Date()): string {

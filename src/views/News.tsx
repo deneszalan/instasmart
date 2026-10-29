@@ -1,12 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
 import { LIBRARY } from '../data/library';
-import { newsFirst } from '../lib/feed';
+import { createRng, sortNews, type SortOrder } from '../lib/feed';
 import { formatNewsDate, newsAt } from '../lib/time';
+import { useStore } from '../state/store';
 import { PostView } from '../components/Post';
+import { SortChips } from '../components/SortChips';
 import { t } from '../i18n';
 
-/** Posts hooked to the news, the latest event first. */
-export const NEWS = newsFirst(LIBRARY);
+/** Posts hooked to the news. */
+export const NEWS = LIBRARY.filter((c) => c.news);
 
 const PAGE_SIZE = 6;
 
@@ -17,9 +19,27 @@ function dateline(news: string, now = Date.now()): string {
 }
 
 export function News() {
+  const { state } = useStore();
+  const order = state.settings.newsSort;
+  return (
+    <div className="feed news">
+      <h1 className="view-title">{t('News')}</h1>
+      <p className="news__intro">{t('Animated explainers on what’s in the news: how it works and what the numbers mean.')}</p>
+      <div className="feed__filter">
+        <SortChips setting="newsSort" />
+      </div>
+      <NewsList key={order} order={order} />
+    </div>
+  );
+}
+
+/** The posts in one order. A new order starts a new list, from the top. */
+function NewsList({ order }: { order: SortOrder }) {
+  // Mixed is shuffled once per list, like the feed; by date the order is set.
+  const [cards] = useState(() => sortNews(LIBRARY, order, createRng(Date.now())));
   const [shown, setShown] = useState(PAGE_SIZE);
   const sentinel = useRef<HTMLDivElement>(null);
-  const more = shown < NEWS.length;
+  const more = shown < cards.length;
 
   // Re-observe after every page so a sentinel that is still on screen loads again.
   useEffect(() => {
@@ -33,10 +53,8 @@ export function News() {
   }, [shown, more]);
 
   return (
-    <div className="feed news">
-      <h1 className="view-title">{t('News')}</h1>
-      <p className="news__intro">{t('Animated explainers on what’s in the news: how it works and what the numbers mean. The latest first.')}</p>
-      {NEWS.slice(0, shown).map((card) => (
+    <>
+      {cards.slice(0, shown).map((card) => (
         <section key={card.id} className="news__item">
           <p className="news__date">
             <time dateTime={card.news}>{dateline(card.news!)}</time>
@@ -53,6 +71,6 @@ export function News() {
           <div className="skeleton__media" />
         </div>
       </div>
-    </div>
+    </>
   );
 }
