@@ -4,7 +4,7 @@
   "field": "politics",
   "title": "Redraw the district lines and 40% of the votes can win 60% of the seats",
   "emoji": "🗺️",
-  "body": "Each US state draws its own House districts, normally once a decade after the census. Whoever holds the pen can **pack** the other side’s voters into a few districts they win by huge margins and **crack** the rest across districts they narrowly lose, so the same votes can produce very different seat counts. The trick is named after Elbridge Gerry, the Massachusetts governor who in 1812 signed a map with a state senate district likened to a salamander. For the 3 November 2026 midterms, [10 states have adopted new congressional maps](https://www.nbcnewyork.com/news/politics/house-redistricting-gop-democrats-2026-midterm-elections/6508364/) in the middle of the decade: eight whose maps NBC News expects could help Republicans by up to 16 seats, and California and Utah, where new maps could help Democrats by up to 6.",
+  "body": "Each US state draws its own House districts, normally once a decade after the census. Whoever holds the pen can **pack** the other side’s voters into a few districts they win by huge margins and **crack** the rest across districts they narrowly lose, so the same votes can produce very different seat counts. The trick is named after Elbridge Gerry, the Massachusetts governor who in 1812 signed a map with a state senate district likened to a salamander. For the 3 November 2026 midterms, nine states will use new congressional maps drawn in the middle of the decade: seven whose maps could help Republicans by up to 15 seats, going by [NBC News’s state-by-state estimates](https://www.nbcnewyork.com/news/politics/house-redistricting-gop-democrats-2026-midterm-elections/6508364/), and California and Utah, where new maps could help Democrats by up to 6. A tenth state, Missouri, also drew one, but must use its 2022 map this time: on 25 September 2026 the US Supreme Court [declined, for the third time](https://www.scotusblog.com/2026/09/for-the-third-time-supreme-court-declines-to-allow-missouri-to-use-congressional-map-expected-to/), to let it switch.",
   "slides": [
     {
       "type": "estimate",
@@ -20,7 +20,7 @@
       "type": "video",
       "src": "redistricting.mp4",
       "poster": "redistricting.jpg",
-      "alt": "Animation on drafting paper: a grid of 30 purple and 20 orange voters is cut into five districts three ways, giving purple 5 seats to 0, then 3 to 2, then orange 3 to 2. A salamander recalls the 1812 gerrymander, and tiles show the ten states with new maps for 2026.",
+      "alt": "Animation on drafting paper: a grid of 30 purple and 20 orange voters is cut into five districts three ways, giving purple 5 seats to 0, then 3 to 2, then orange 3 to 2. A salamander recalls the 1812 gerrymander, and tiles show the nine states with new maps for 2026.",
       "fit": "cover",
       "animation": true,
       "credit": "Reckon · original animation · AI narration",
