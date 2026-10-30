@@ -161,6 +161,7 @@ import { COL_DISC, COL_ROWS, COL_SETS, colonnadeColumns, placeEye, sightFrom } f
 import { STAIR_HEADROOM, gentlestTurns, stairDesign } from '../src/labs/engineering/vatican-double-helix-stairs';
 import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need as concNeed, votes as concVotes, wins as concWins } from '../src/labs/politics/conclave-two-thirds';
 import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
+import { annualRate as gdpAnnualRate, levels as gdpLevels, quarterBehind as gdpQuarterBehind, reached as gdpReached, yearOnYear as gdpYearOnYear } from '../src/labs/economics/us-gdp-annual-rate';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1567,5 +1568,18 @@ describe('lab maths', () => {
     expect(sgHit(SG_PLACES.castle)).toBe('castle');
     expect(sgHit([41.90315, 12.4605])).toBe('passetto');
     expect(sgHit([41.9049, 12.4600])).toBe(null);
+  });
+  it('US GDP: 3.4% at an annual rate is about 0.84% a quarter; 1.2% a quarter is about 4.9% a year', () => {
+    expect(gdpQuarterBehind(3.4)).toBeCloseTo(0.84, 2);
+    expect(gdpQuarterBehind(3.4).toFixed(1)).toBe('0.8');
+    expect(gdpAnnualRate(gdpQuarterBehind(3.4))).toBeCloseTo(3.4, 9);
+    expect(gdpAnnualRate(1.2)).toBeCloseTo(4.887, 3);
+    expect(gdpAnnualRate(1)).toBeCloseTo(4.06, 2);
+    expect(gdpYearOnYear([1, 1, 1, 1])).toBeCloseTo(gdpAnnualRate(1), 9);
+    expect(gdpLevels([0.5, 0.5, 0.5, 0.5])).toHaveLength(5);
+    expect(gdpLevels([1, 1, 1, 1])[4]).toBeCloseTo(104.0604, 4);
+    expect(gdpReached([0, 0, 0, 1])).toBe(true);
+    expect(gdpReached([0.5, 0.5, 0.5, 0.5])).toBe(false);
+    expect(gdpReached([1, 1, 1, 1])).toBe(false);
   });
 });
