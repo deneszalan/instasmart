@@ -166,6 +166,7 @@ export const LABS = {
   'vatican-double-helix-stairs': 'Wind one or two ramps up a 22 m shaft like Giuseppe Momo’s at the Vatican Museums, set how many turns each makes, and see the headroom, slope and length: a double helix halves the headroom.',
   'conclave-two-thirds': 'Back one candidate with groups of the 133 cardinals of May 2025 and see why two thirds, 89 votes, needs three of four groups, while the 1996 rule’s late majority of 67 needed only two.',
   'swiss-guard-sack-of-rome': 'Follow the Swiss Guard on a map of today through 6 May 1527: tap where its 189 men gathered by the obelisk, the Passetto the 42 survivors took Pope Clement VII along, and the castle where they took him.',
+  'starry-night-dawn-sky-date': 'Step through the dawns of June and July 1889 over Saint-Rémy, with the Moon and Venus computed, and find the ones where a crescent Moon stands above Venus inside the narrow frame of Van Gogh’s view, as in The Starry Night.',
 } as const;
 
 export type LabId = keyof typeof LABS;

@@ -161,6 +161,7 @@ import { COL_DISC, COL_ROWS, COL_SETS, colonnadeColumns, placeEye, sightFrom } f
 import { STAIR_HEADROOM, gentlestTurns, stairDesign } from '../src/labs/engineering/vatican-double-helix-stairs';
 import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need as concNeed, votes as concVotes, wins as concWins } from '../src/labs/politics/conclave-two-thirds';
 import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
+import { DAWNS as SN_DAWNS, dawnDate as snDate, fits as snFits, skyAt as snSky } from '../src/labs/art/starry-night-dawn-sky-date';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1567,5 +1568,16 @@ describe('lab maths', () => {
     expect(sgHit(SG_PLACES.castle)).toBe('castle');
     expect(sgHit([41.90315, 12.4605])).toBe('passetto');
     expect(sgHit([41.9049, 12.4600])).toBe(null);
+  });
+  it('Starry Night: the low-precision sky matches the 2026 paper and finds the same three dawns', () => {
+    const july = [21, 22, 23, 24].map((d) => snSky(7, d).sep);
+    [29.7, 18.6, 7.66, 3.2].forEach((v, i) => expect(Math.abs(july[i] - v)).toBeLessThan(0.25));
+    expect(Math.abs(snSky(6, 19, 2 + 27 / 60).lit * 100 - 63.1)).toBeLessThan(1);
+    expect(Math.abs(snSky(6, 19, 2 + 27 / 60).venus.alt - 3)).toBeLessThan(0.2);
+    expect(Math.abs(snSky(7, 22).lit * 100 - 28.44)).toBeLessThan(1);
+    const hits = SN_DAWNS.map((s, i) => [s, snDate(i)] as const).filter(([s]) => snFits(s)).map(([, d]) => `${d.day}/${d.month}`);
+    expect(hits).toEqual(['23/6', '22/7', '23/7']);
+    expect(snDate(0)).toEqual({ month: 6, day: 1 });
+    expect(snDate(60)).toEqual({ month: 7, day: 31 });
   });
 });
