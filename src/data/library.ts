@@ -26,6 +26,9 @@ function translate(post: KnowledgeCard): KnowledgeCard {
 /** Media URLs by "<post-id>/<file>". */
 const mediaUrls = new Map(Object.entries(mediaFiles).map(([path, url]) => [path.split('/').slice(-2).join('/'), url]));
 
+/** Every picture and clip of this version of the app, in every language. */
+export const MEDIA_URLS: readonly string[] = [...mediaUrls.values()];
+
 function resolveImage(postId: string, src: string): string {
   if (src.startsWith('https://')) return src;
   return mediaUrls.get(`${postId}/${src}`) ?? src;

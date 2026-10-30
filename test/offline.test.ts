@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { runInNewContext } from 'node:vm';
 import { describe, expect, it } from 'vitest';
-import { bytesOf, filesOf, newest, postFiles } from '../src/lib/offline';
+import { bytesOf, filesOf, newest, outdated, postFiles } from '../src/lib/offline';
 import type { KnowledgeCard } from '../src/types';
 
 /** The offline worker as the build writes it, run in a bare context to reach its functions. */
@@ -54,6 +54,10 @@ describe('saving posts for offline', () => {
   it('counts a file two posts share once', () => {
     expect(filesOf([a, b], base)).toHaveLength(4);
     expect(bytesOf([a, b], base)).toBe(0); // test files have no known size
+  });
+  it('finds saved copies no post uses any more, such as a clip a newer version replaced', () => {
+    const saved = ['https://example.org/roma/assets/a-OLD.mp4', 'https://example.org/roma/assets/a-NEW.mp4', 'https://example.org/roma/assets/b.jpg'];
+    expect(outdated(saved, ['./assets/a-NEW.mp4', 'https://example.org/roma/assets/b.jpg'], base)).toEqual(['https://example.org/roma/assets/a-OLD.mp4']);
   });
   it('keeps the newest posts first', () => {
     expect(newest(2, [a, b, c]).map((p) => p.id)).toEqual(['history-b', 'history-c']);
