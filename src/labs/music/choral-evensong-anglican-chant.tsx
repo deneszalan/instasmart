@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { Btn, C, Choice, label, pluck, Readouts, Stage, useAudio, useFrame, useGoal, type LabProps } from '../kit';
+import { Btn, C, Choice, font, label, pluck, Readouts, Stage, useAudio, useFrame, useGoal, type LabProps } from '../kit';
 import { t } from '../../i18n';
 
 /**
@@ -81,9 +81,35 @@ export default function AnglicanChant({ onDone, active }: LabProps) {
 
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
     const x0 = 6, x1 = w - 6, gap = Math.min(9, h / 16), yb = Math.min(h - 40, 4.5 * gap + 34 + 4 * gap);
-    // widths: reciting notes stretch with their syllables
+    // the words go in two rows, a reciting note's in the first and the other notes' taking turns, so neighbours
+    // never share a row
+    const words = VERSES[v].map(show), rowOf = (i: number) => (SLOTS[i].reciting ? 0 : i % 2);
+    // each note's slot as narrow as its note and its words allow: a reciting note's words inside its slot, every word
+    // centred under its note and clear of the word before it in its row, and the last word inside the stage; the
+    // words shrink until the slots fit across the stage
+    let size = 10, tws: number[] = [], need: number[] = [];
+    for (; ; size -= 0.5) {
+      tws = SLOTS.map((sl, i) => {
+        font(ctx, sl.reciting ? size + 0.5 : size, 800);
+        return ctx.measureText(words[i]).width;
+      });
+      const mids: number[] = [], prev: (number | undefined)[] = [undefined, undefined];
+      let e = 0;
+      need = tws.map((tw, i) => {
+        const p = prev[rowOf(i)], from = p === undefined ? tw / 2 : mids[p] + (tws[p] + tw) / 2 + 5;
+        let sw = Math.max(SLOTS[i].reciting ? tw + 6 : 15, 2 * (from - e));
+        if (i === tws.length - 1) sw = Math.max(sw, from + tw / 2 - e);
+        mids.push(e + sw / 2);
+        prev[rowOf(i)] = i;
+        e += sw;
+        return sw;
+      });
+      if (need.reduce((a, b) => a + b, 0) <= x1 - x0 || size <= 7.5) break;
+    }
+    // the room left over goes to the notes as before: reciting notes stretch with their syllables
     const base = SLOTS.map((s, i) => (s.reciting ? 0.6 + VERSES[v][i].length * 0.95 : 1));
-    const sum = base.reduce((a, b) => a + b, 0);
+    const sum = base.reduce((a, b) => a + b, 0), spare = x1 - x0 - need.reduce((a, b) => a + b, 0);
+    const widths = spare >= 0 ? need.map((n, i) => n + (spare * base[i]) / sum) : need.map((n) => (n * (x1 - x0)) / (x1 - x0 - spare));
     let x = x0;
     ctx.strokeStyle = C.line;
     ctx.lineWidth = 1;
@@ -94,7 +120,7 @@ export default function AnglicanChant({ onDone, active }: LabProps) {
       ctx.stroke();
     }
     SLOTS.forEach((s, i) => {
-      const sw = ((x1 - x0) * base[i]) / sum, cx = x + sw / 2, ny = yb - s.step * gap, lit = i === now;
+      const sw = widths[i], cx = x + sw / 2, ny = yb - s.step * gap, lit = i === now;
       if (s.reciting) {
         ctx.fillStyle = 'rgba(143,208,174,0.16)';
         ctx.fillRect(x + 2, yb - 4 * gap - 6, sw - 4, 4 * gap + 12);
@@ -114,8 +140,9 @@ export default function AnglicanChant({ onDone, active }: LabProps) {
         ctx.lineTo(cx + 5.6, ny - 28);
         ctx.stroke();
       }
-      const y = yb + 18 + (s.reciting ? 0 : (i % 2) * 15);
-      label(ctx, show(VERSES[v][i]), cx, y, { size: s.reciting ? 10.5 : 10, weight: lit ? 800 : 600, color: lit ? GOLD : s.reciting ? MINT : C.soft });
+      // the last word may sit left of its note's centre to stay inside the stage
+      const wx = Math.min(cx, x1 - tws[i] / 2);
+      label(ctx, words[i], wx, yb + 18 + rowOf(i) * 15, { size: s.reciting ? size + 0.5 : size, weight: lit ? 800 : 600, color: lit ? GOLD : s.reciting ? MINT : C.soft });
       x += sw;
       if (!SLOTS[i + 1] || SLOTS[i + 1].bar !== s.bar) {
         ctx.strokeStyle = C.faint;

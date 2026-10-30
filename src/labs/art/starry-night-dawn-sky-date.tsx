@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { C, dot, label, line, Range, Readouts, Stage, useGoal, type LabProps } from '../kit';
+import { C, clamp, dot, font, label, line, Range, Readouts, Stage, useGoal, type LabProps } from '../kit';
 import { t } from '../../i18n';
 import { formatNumber, withUnit } from '../../lib/format';
 
@@ -138,6 +138,27 @@ const AZ0 = 60, AZ1 = 112;
 
 const dateLabel = (m: number, d: number) => (m === 6 ? t('{d} June 1889', { d }) : t('{d} July 1889', { d }));
 
+interface Box {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+/** The area two boxes share. */
+const overlap = (a: Box, b: Box) =>
+  Math.max(0, Math.min(a.x + a.w, b.x + b.w) - Math.max(a.x, b.x)) * Math.max(0, Math.min(a.y + a.h, b.y + b.h) - Math.max(a.y, b.y));
+/** Centres for a `tw` × `th` label around box `a`, with their distance from it: nearest first, on the sides in the order given, each also slid to either end of that side. */
+const beside = (a: Box, sides: ('above' | 'below' | 'left' | 'right')[]) => (tw: number, th: number) =>
+  [1, 5, 10, 16, 23, 31].flatMap((d) =>
+    sides.flatMap((side) =>
+      [0, -1, 1].map((m): [number, number, number] => {
+        const cx = a.x + a.w / 2, cy = a.y + a.h / 2;
+        if (side === 'above' || side === 'below') return [cx + (m * (tw - a.w)) / 2, side === 'below' ? a.y + a.h + d + th / 2 : a.y - d - th / 2, d];
+        return [side === 'right' ? a.x + a.w + d + tw / 2 : a.x - d - tw / 2, cy + (m * (th + a.h)) / 2, d];
+      }),
+    ),
+  );
+
 export default function StarryNightDawnSky({ onDone }: LabProps) {
   const [i, setI] = useState(18);
   const s = DAWNS[i], { month, day } = dawnDate(i), ok = fits(s);
@@ -147,21 +168,25 @@ export default function StarryNightDawnSky({ onDone }: LabProps) {
     // degrees to pixels: fit 52° of azimuth across and 28° of altitude up, whichever is tighter
     const x0 = 6, x1 = w - 6, yH = h - 22, k = Math.min((x1 - x0) / (AZ1 - AZ0), (yH - 8) / 28), mid = (AZ0 + AZ1) / 2;
     const X = (p: Hor) => (x0 + x1) / 2 + (p.az - mid) * Math.cos(p.alt * R) * k, Y = (p: Hor) => yH - p.alt * k;
+    // everything drawn in the sky, and each label once placed: a new label keeps clear of all of it
+    const taken: Box[] = [];
     ctx.save();
     ctx.beginPath();
     ctx.rect(0, 0, w, h);
     ctx.clip();
+    font(ctx, 9);
     for (const alt of [10, 20, 30]) {
       line(ctx, x0, Y({ az: 0, alt }), x1, Y({ az: 0, alt }), C.line, 1);
       label(ctx, `${alt}°`, x0 + 2, Y({ az: 0, alt }) - 7, { size: 9, align: 'left', color: C.faint });
+      taken.push({ x: x0, y: Y({ az: 0, alt }) - 13, w: ctx.measureText(`${alt}°`).width + 6, h: 12 });
     }
     ctx.fillStyle = '#0a1638';
     ctx.fillRect(0, yH, w, h - yH);
     line(ctx, 0, yH, w, yH, C.faint, 1.5);
     label(ctx, t('east'), X({ az: 90, alt: 0 }), yH + 11, { size: 10, color: C.soft });
     // the Hyades' V, once it has risen
-    const up = s.hyades.filter((p) => p.alt > 0.5);
-    if (up.length === s.hyades.length) {
+    const up = s.hyades.filter((p) => p.alt > 0.5), hyades = up.length === s.hyades.length;
+    if (hyades) {
       ctx.strokeStyle = 'rgba(139,227,198,0.5)';
       ctx.setLineDash([3, 3]);
       ctx.lineWidth = 1.2;
@@ -169,22 +194,27 @@ export default function StarryNightDawnSky({ onDone }: LabProps) {
       s.hyades.forEach((p, j) => (j ? ctx.lineTo(X(p), Y(p)) : ctx.moveTo(X(p), Y(p))));
       ctx.stroke();
       ctx.setLineDash([]);
-      label(ctx, t('the Hyades'), X(s.hyades[0]) - 8, Y(s.hyades[0]) - 4, { size: 10, align: 'right', color: MINT });
     }
     s.hyades.forEach((p, j) => p.alt > 0.5 && dot(ctx, X(p), Y(p), j === 4 ? 2.6 : 1.8, j === 4 ? '#ffd1a8' : C.ink));
-    // the narrow frame, centred between the Moon and Venus
+    const hx = up.map(X), hy = up.map(Y), stars = { x: Math.min(...hx) - 4, y: Math.min(...hy) - 4, w: Math.max(...hx) - Math.min(...hx) + 8, h: Math.max(...hy) - Math.min(...hy) + 8 };
+    if (up.length) taken.push(stars);
+    // the narrow frame, centred between the Moon and Venus; a label may sit inside it but not on its edges
     const fx = (X(s.moon) + X(s.venus)) / 2, fy = (Y(s.moon) + Y(s.venus)) / 2;
     if (s.moon.alt > -5 && s.sep < 40) {
+      const fl = fx - (FRAME.w * k) / 2, ft = fy - (FRAME.h * k) / 2, fw = FRAME.w * k, fh = FRAME.h * k;
       ctx.strokeStyle = ok ? GOLD : CORAL;
       ctx.lineWidth = 2;
-      ctx.strokeRect(fx - (FRAME.w * k) / 2, fy - (FRAME.h * k) / 2, FRAME.w * k, FRAME.h * k);
+      ctx.strokeRect(fl, ft, fw, fh);
+      taken.push({ x: fl - 2, y: ft - 2, w: fw + 4, h: 4 }, { x: fl - 2, y: ft + fh - 2, w: fw + 4, h: 4 }, { x: fl - 2, y: ft - 2, w: 4, h: fh + 4 }, { x: fl + fw - 2, y: ft - 2, w: 4, h: fh + 4 });
     }
     // Venus
-    dot(ctx, X(s.venus), Y(s.venus), 4, VENUS);
-    label(ctx, t('Venus, the morning star'), X(s.venus), Y(s.venus) + 11, { size: 10, color: VENUS });
+    const vx = X(s.venus), vy = Y(s.venus), venus = { x: vx - 5, y: vy - 5, w: 10, h: 10 };
+    dot(ctx, vx, vy, 4, VENUS);
+    taken.push(venus);
     // the Moon, drawn three times its size, lit on the side towards the Sun
+    const mx = X(s.moon), my = Y(s.moon), r = 7.5, moonBox = { x: mx - r - 1, y: my - r - 1, w: 2 * r + 2, h: 2 * r + 2 };
     if (s.moon.alt > 0) {
-      const mx = X(s.moon), my = Y(s.moon), r = 7.5, ang = Math.atan2(Y(s.sun) - my, X(s.sun) - mx), rx = r * (1 - 2 * s.lit);
+      const ang = Math.atan2(Y(s.sun) - my, X(s.sun) - mx), rx = r * (1 - 2 * s.lit);
       ctx.save();
       ctx.translate(mx, my);
       ctx.rotate(ang);
@@ -199,10 +229,49 @@ export default function StarryNightDawnSky({ onDone }: LabProps) {
       else ctx.ellipse(0, 0, -rx, r, 0, Math.PI / 2, (3 * Math.PI) / 2, false);
       ctx.fill();
       ctx.restore();
-      const edge = mx > w - 60;
-      label(ctx, t('Moon, drawn larger'), edge ? w - 6 : mx, my - 14, { size: 10, color: MOON, align: edge ? 'right' : 'center' });
-    } else label(ctx, t('The Moon has not risen'), w / 2, 14, { size: 10, color: C.soft });
-    if (s.moon.alt > 0 && X(s.moon) > w - 4) label(ctx, t('The Moon is further south →'), w - 8, Math.max(14, Math.min(yH - 10, Y(s.moon))), { size: 10, align: 'right', color: MOON });
+      taken.push(moonBox);
+    }
+    // the labels, each at the first spot near its object that stays in the sky and clear of everything else: the
+    // ones pinned to an edge of the stage first, then Venus's, the Moon's and the Hyades'
+    const sky = { x: 2, y: 2, w: w - 4, h: yH - 4 };
+    const put = (texts: string[], color: string, spots: (tw: number, th: number) => [number, number, number][]) => {
+      // a spot right by the object for the full text, else for the short one, else any spot, else the least crowded
+      let best = { text: texts[0], box: sky, hit: Infinity };
+      for (const near of [true, false])
+        for (const text of texts) {
+          font(ctx, 10);
+          const tw = ctx.measureText(text).width + 4, th = 12;
+          for (const [cx, cy, d] of spots(tw, th)) {
+            if (near && d > 10) continue;
+            const box = { x: clamp(cx - tw / 2, sky.x, sky.x + sky.w - tw), y: clamp(cy - th / 2, sky.y, sky.y + sky.h - th), w: tw, h: th };
+            const hit = taken.reduce((sum, o) => sum + overlap(box, o), 0);
+            if (hit < best.hit) best = { text, box, hit };
+            if (!hit) {
+              taken.push(box);
+              label(ctx, text, box.x + tw / 2, box.y + th / 2, { size: 10, color });
+              return;
+            }
+          }
+        }
+      taken.push(best.box);
+      label(ctx, best.text, best.box.x + best.box.w / 2, best.box.y + best.box.h / 2, { size: 10, color });
+    };
+    // spots along the top of the stage, nearest to (x, y) first
+    const along = (x: number, y: number) => (tw: number, th: number) =>
+      [0, 1, 2, 3]
+        .flatMap((row) => [0, -0.5, 0.5, -1, 1].map((m) => ({ m, row, d: Math.hypot(m * tw, row * (th + 2)) })))
+        .sort((a, b) => a.d - b.d)
+        .map(({ m, row }): [number, number, number] => [x + m * tw, y + th / 2 + row * (th + 2), 0]);
+    const shown = s.moon.alt > 0 && mx <= w - 4 && my >= 0;
+    if (s.moon.alt <= 0) put([t('The Moon has not risen')], C.soft, along(w / 2, 4));
+    else if (mx > w - 4) {
+      const ym = clamp(my, 8, yH - 8);
+      put([t('The Moon is further south →')], MOON, (tw, th) => [0, -1, 1, -2, 2, -3, 3].map((m) => [w - 4 - tw / 2, ym + m * (th + 2), 0]));
+    } else if (!shown) put([t('The Moon is higher ↑')], MOON, along(mx, 4));
+    // where the sky is crowded, Venus and the Moon go by their names alone (the planet's is the same in German)
+    put([t('Venus, the morning star'), 'Venus'], VENUS, beside(venus, ['below', 'above', 'right', 'left']));
+    if (shown) put([t('Moon, drawn larger'), t('Moon')], MOON, beside(moonBox, ['above', 'below', 'left', 'right']));
+    if (hyades) put([t('the Hyades')], MINT, beside(stars, ['left', 'above', 'below', 'right']));
     ctx.restore();
   };
 

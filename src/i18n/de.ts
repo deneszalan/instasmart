@@ -2576,4 +2576,6 @@ export const de: Record<string, string> = {
   '1 in {n} billion': '1 in {n} Milliarden',
   '1 in {n} million': '1 in {n} Millionen',
   'zeros only in the pale band': 'Nullstellen nur im hellen Band',
+  'The Moon is higher ↑': 'Der Mond steht höher ↑',
+  'Moon': 'Mond',
 };
