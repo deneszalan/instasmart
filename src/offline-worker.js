@@ -3,10 +3,14 @@
 // It keeps the app itself, the page, scripts and styles, so it opens without internet, and serves the pictures and clips
 // the reader saved under "Use without internet" from their own cache, including the byte ranges a video player asks for.
 const VERSION = '__VERSION__';
+/** The apps share the site, and so the browser's caches: each names its own after itself. */
+const ID = '__ID__';
 const SHELL = __SHELL__;
-const APP = `app-${VERSION}`;
+/** Other apps under this one's address (Reckon is at the site's root; Roma and Lesefutter below it): theirs to serve. */
+const NESTED = __NESTED__;
+const APP = `${ID}:app-${VERSION}`;
 const FONTS = 'fonts';
-// The saved media are in the "media" cache, which the page fills (src/lib/offline.ts) and new versions keep.
+// The saved media are in the "<id>:media" cache, which the page fills (src/lib/offline.ts) and new versions keep.
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -21,7 +25,8 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches
       .keys()
-      .then((keys) => Promise.all(keys.filter((key) => key.startsWith('app-') && key !== APP).map((key) => caches.delete(key))))
+      // Older versions of this app's files, and the unnamed ones of the first offline version.
+      .then((keys) => Promise.all(keys.filter((key) => (key.startsWith(`${ID}:app-`) && key !== APP) || key.startsWith('app-')).map((key) => caches.delete(key))))
       .then(() => self.clients.claim()),
   );
 });
@@ -90,6 +95,7 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(request.url);
   if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') event.respondWith(font(request));
   else if (url.origin !== self.location.origin) return;
+  else if (NESTED.some((path) => request.url.startsWith(new URL(path, self.registration.scope).href))) return;
   else if (request.mode === 'navigate') event.respondWith(page(request));
   else event.respondWith(file(request));
 });

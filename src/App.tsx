@@ -1,7 +1,9 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Bookmark, Compass, Flame, House, Newspaper, User } from 'lucide-react';
 import type { Post } from './types';
-import { CARD_BY_ID } from './data/library';
+import { CARD_BY_ID, LIBRARY } from './data/library';
+import { OFFLINE_ONLY } from './data/offline-set';
+import { setOfflineOnly } from './lib/offline';
 import { useRoute, type Tab } from './lib/route';
 import { toast } from './lib/toast';
 import { streak, StoreProvider, useStore, type LearnState } from './state/store';
@@ -100,6 +102,12 @@ function Shell() {
           <span>{days}</span>
         </button>
       </header>
+      {OFFLINE_ONLY && (
+        <div className="offline-bar" role="status">
+          <span>{t(LIBRARY.length === 1 ? 'Offline mode: 1 saved post' : 'Offline mode: {n} saved posts', { n: LIBRARY.length })}</span>
+          <button onClick={() => setOfflineOnly(false)}>{t('Show all')}</button>
+        </div>
+      )}
 
       <main className="main">
         <div hidden={route.tab !== 'home'}>

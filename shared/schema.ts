@@ -673,11 +673,17 @@ export const Post = z
       .refine((s) => !Number.isNaN(Date.parse(s.length === 7 ? `${s}-01T00:00:00Z` : `${s}T00:00:00Z`)), 'Not a real date')
       .optional()
       .describe('For a post hooked to the news: the date of that event, YYYY-MM-DD (YYYY-MM when only the month is known; it may be coming up). The post shows under News, newest first, and not in the main feed.'),
+    newsArticle: Source.optional().describe(
+      'For a news post: a report of the event on a news site, for readers who want the news itself. Label: the outlet and the headline, e.g. "Reuters: Brazil’s Lula wins runoff".',
+    ),
   })
   .strict()
   .superRefine((post, ctx) => {
     if (!post.id.startsWith(`${post.field}-`)) {
       ctx.addIssue({ code: 'custom', path: ['id'], message: `id must start with "${post.field}-"` });
+    }
+    if (post.newsArticle && !post.news) {
+      ctx.addIssue({ code: 'custom', path: ['newsArticle'], message: 'Only a news post links a news article: set "news" too' });
     }
   });
 

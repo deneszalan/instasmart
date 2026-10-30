@@ -169,6 +169,11 @@ export function LearnMore({ post, onClose }: { post: Post; onClose: () => void }
         <a className="btn btn--primary" href={card.source.url} target="_blank" rel="noreferrer">
           {t('Source: {label}', { label: card.source.label })} <ExternalLink size={16} />
         </a>
+        {card.newsArticle && (
+          <a className="btn learn__news" href={card.newsArticle.url} target="_blank" rel="noreferrer">
+            {t('In the news: {label}', { label: card.newsArticle.label })} <ExternalLink size={16} />
+          </a>
+        )}
         <h4 className="learn__subhead">{t('More from {field}', { field: field.name })}</h4>
         <ul className="learn__related">
           {relatedCards(card).map((c) => (
@@ -330,6 +335,11 @@ export function PostView({ post, className }: PostViewProps) {
         <a className="post__source" href={(card ?? wiki!).source.url} target="_blank" rel="noreferrer">
           {(card ?? wiki!).source.label} <ExternalLink size={12} />
         </a>
+        {card?.newsArticle && (
+          <a className="post__source post__source--news" href={card.newsArticle.url} target="_blank" rel="noreferrer">
+            {t('In the news: {label}', { label: card.newsArticle.label })} <ExternalLink size={12} />
+          </a>
+        )}
         {card?.createdAt && (
           <time className="post__time" dateTime={card.createdAt}>
             {formatStamp(card.createdAt)}
