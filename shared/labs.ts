@@ -181,6 +181,11 @@ export const LABS = {
   'bulgaria-turnout-runoff': 'Set the leader’s share of the ballots and the turnout in a Bulgarian presidential first round and see which of the constitution’s two conditions, over half the ballots and over half the voters, is met; load the first rounds of 2026 and 2006.',
   'new-zealand-mmp-party-vote': 'Replay New Zealand’s 2008 election under MMP: let ACT lose Epsom or New Zealand First win an electorate, and see how the 120 seats are shared by party vote, with list MPs and overhang seats.',
   'uniting-for-peace-1956': 'Cast the votes of the UN Security Council of 1956, 11 members with 5 permanent ones, and see whether a draft passes as a decision, where a permanent member’s no is a veto, and as the procedural call to the General Assembly, where it is not.',
+  'tibet-quake-plateau-spreads': 'Raise a block of crust and change India’s squeeze, and see which push is biggest and whether the block breaks on a thrust, strike-slip or normal fault, as the Tibetan Plateau does.',
+  'php2shell-out-of-memory-flaw': 'Fill a toy table under a memory limit, counting each entry before or after getting its memory, and see when running out leaves a half-built entry behind, the idea behind the first PHP2Shell flaw.',
+  'champi-eyewall-replacement': 'Shrink a typhoon’s new outer eyewall toward the centre and watch its winds speed up as it keeps its spin, until they beat the old eyewall’s 130 knots, as Super Typhoon Champi’s did.',
+  'tortoise-distance-sampling': 'Walk a survey line past 120 tortoises, make the scrub thicker or thinner, and compare the tortoises seen with the estimate corrected by distance sampling, as on Aldabra.',
+  'western-sydney-digital-tower': 'Change how far apart planes line up to land at Western Sydney International and see the minutes between landings, the landings an hour, and how small the next plane looks to the cameras.',
 } as const;
 
 export type LabId = keyof typeof LABS;

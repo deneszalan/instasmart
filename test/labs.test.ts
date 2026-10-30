@@ -176,6 +176,11 @@ import { COUPON as BOND_COUPON, FACE as BOND_FACE, priceAt as bondPriceAt, reach
 import { electedInRoundOne as bgElected, locks as bgLocks, reached as bgReached, ROUNDS as BG_ROUNDS } from '../src/labs/politics/bulgaria-turnout-runoff';
 import { allocate as nzAllocate, electorates as nzElectorates, reached as nzReached, TOTAL as NZ_TOTAL, VOTES as NZ_VOTES } from '../src/labs/politics/new-zealand-mmp-party-vote';
 import { count as unCount, HUNGARY_DRAFT as UN_HUNGARY, NEED as UN_NEED, passes as unPasses, reached as unReached, SEATS as UN_SEATS } from '../src/labs/history/uniting-for-peace-1956';
+import { faultType as tibFault, pushes as tibPushes, stretches as tibStretch } from '../src/labs/earth/tibet-quake-plateau-spreads';
+import { ENTRIES as PHP_ENTRIES, fill as phpFill, TOTAL_KB as PHP_TOTAL } from '../src/labs/tech/php2shell-out-of-memory-flaw';
+import { BEATS_AT as CHAMPI_BEATS, innerLeft as champiLeft, OLD_KT as CHAMPI_OLD, ringSpeed as champiSpeed } from '../src/labs/earth/champi-eyewall-replacement';
+import { corrected as torCorrected, detect as torDetect, stripWidth as torStrip, TRUE_N as TOR_N, walkLine as torWalk } from '../src/labs/math/tortoise-distance-sampling';
+import { buttonAt as wsiButton, landingsPerHour as wsiPerHour, minutesBetween as wsiMinutes, SPEED_KT as WSI_SPEED } from '../src/labs/engineering/western-sydney-digital-tower';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1766,5 +1771,44 @@ describe('lab maths', () => {
     const sevenYes = UN_SEATS.map((_, i) => (i < 7 ? 'yes' : 'abstain') as 'yes' | 'abstain');
     expect(unPasses(sevenYes, 'substantive')).toBe(true);
     expect(unReached(sevenYes)).toBe(false);
+  it('Tibet: low land under a squeeze breaks on a thrust; high land on a normal fault stretching east–west', () => {
+    expect(tibFault(0, 60)).toBe('thrust');
+    expect(tibFault(2, 60)).toBe('strike-slip');
+    expect(tibFault(5, 60)).toBe('normal');
+    expect(tibStretch(5, 60)).toBe('east-west');
+    expect(tibPushes(0, 0)).toEqual({ vertical: 100, northSouth: 100, eastWest: 100 });
+  });
+  it('PHP2Shell toy: counting first leaves a half-built entry when memory runs out; memory first does not', () => {
+    expect(PHP_TOTAL).toBe(27);
+    expect(phpFill(30, 'count-first')).toMatchObject({ crashed: false, count: PHP_ENTRIES.length, built: PHP_ENTRIES.length });
+    expect(phpFill(12, 'count-first')).toMatchObject({ crashed: true, count: 3, built: 2, halfBuilt: true });
+    expect(phpFill(12, 'memory-first')).toMatchObject({ crashed: true, count: 2, built: 2, halfBuilt: false });
+    for (let limit = 6; limit <= 30; limit++) expect(phpFill(limit, 'memory-first').halfBuilt).toBe(false);
+  });
+  it('Champi: a ring that halves its radius doubles its speed; at 18 nautical miles it beats the old 130 knots', () => {
+    expect(champiSpeed(40)).toBe(60);
+    expect(champiSpeed(20)).toBe(120);
+    expect(CHAMPI_BEATS).toBe(18);
+    expect(champiSpeed(CHAMPI_BEATS)).toBeGreaterThanOrEqual(CHAMPI_OLD);
+    expect(champiSpeed(CHAMPI_BEATS + 1)).toBeLessThan(CHAMPI_OLD);
+    expect(champiLeft(40)).toBe(1);
+    expect(champiLeft(10)).toBe(0);
+  });
+  it('Tortoises: the half-normal strip is σ·√(π/2) when 50 m is far; in scrub fewer than half are seen but the corrected count lands near 120', () => {
+    expect(torDetect(0, 10)).toBe(1);
+    expect(torStrip(10)).toBeCloseTo(10 * Math.sqrt(Math.PI / 2), 1);
+    expect(torStrip(1000)).toBeCloseTo(50, 0);
+    const pts = torWalk(10, 1), seen = pts.filter((p) => p.seen).length;
+    expect(pts).toHaveLength(TOR_N);
+    expect(seen).toBeLessThan(TOR_N / 2);
+    expect(Math.abs(torCorrected(seen, 10) - TOR_N)).toBeLessThanOrEqual(TOR_N * 0.25);
+  });
+  it('Western Sydney: 15 nautical miles is 7 minutes at about 129 knots; 5 nautical miles fits three times as many landings', () => {
+    expect(WSI_SPEED).toBeCloseTo(128.6, 1);
+    expect(wsiMinutes(15)).toBeCloseTo(7, 6);
+    expect(wsiPerHour(15)).toBeCloseTo(8.57, 2);
+    expect(wsiPerHour(5)).toBeCloseTo(3 * wsiPerHour(15), 6);
+    expect(Math.round(wsiPerHour(4))).toBe(32);
+    expect(Math.round(wsiButton(15))).toBe(8);
   });
 });

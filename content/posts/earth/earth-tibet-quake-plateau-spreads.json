@@ -1,0 +1,175 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-tibet-quake-plateau-spreads",
+  "field": "earth",
+  "title": "Tibet’s magnitude 7.0 quake pulled the ground apart: the high plateau spreads like honey",
+  "emoji": "🍯",
+  "body": "On 22 October 2026 at 10:33 pm local time a magnitude 7.0 earthquake struck the Nagqu region of northern Tibet, in China, and the [US Geological Survey found](https://earthquake.usgs.gov/earthquakes/eventpage/us6000u43g) it came from normal faulting: the crust was stretched and one block slid down a sloping crack. That seems odd, because India is still pushing north into Asia, squeezing Tibet. The reason is height. The plateau averages more than 4,500 metres above sea level, so deep down its rock carries far more weight than the rock under the lowlands around it, and that weight pushes outward. To the north and south India and the rest of Asia hold it in, so it spreads east and west, the way, the USGS says, a pile of honey spreads flat after it is poured, and its crust cracks along faults running roughly north–south. At the plateau’s southern edge, India still slides under Asia on thrust faults that raise the Himalaya, so Tibet is squeezed and spreading at the same time. The quake struck a thinly populated area about 4,800 metres up, where at least 16 people were killed.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Since 1900, how many earthquakes of magnitude 7 or more have struck the Tibetan Plateau and its edges?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 29,
+      "explanation": "29, the US Geological Survey counts. The largest, magnitude 8.6, struck Assam and Tibet on 15 August 1950."
+    },
+    {
+      "type": "video",
+      "src": "plateau.mp4",
+      "poster": "plateau.jpg",
+      "alt": "Animation on a dark topographic night: a schematic map marks a magnitude 7.0 quake in Tibet as India pushes north. Rock blocks slide down a normal fault; a pile of honey spreads flat; a top view of the plateau, held north and south, spreads east and west and cracks along north-south faults.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Bittersweet” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "tibet-quake-plateau-spreads",
+      "prompt": "The block starts low and squeezed by India. Raise the land and find when the crust stops breaking on thrust faults and pulls apart east–west instead.",
+      "takeaway": "Once the weight from above is the biggest push, the block breaks on a normal fault and stretches the way it is least held, east–west, like the Tibetan Plateau. Low land under a strong squeeze breaks on thrusts."
+    },
+    {
+      "type": "compare",
+      "heading": "Two ways a fault can break",
+      "left": {
+        "label": "Thrust fault",
+        "text": "Squeezing wins: rock is shoved up a sloping crack. At Tibet’s southern edge India slides under Asia this way, raising the Himalaya."
+      },
+      "right": {
+        "label": "Normal fault",
+        "text": "Stretching wins: one block slides down a sloping crack. The Tibet quake of 22 October 2026 broke this way, high on the plateau."
+      }
+    },
+    {
+      "type": "flow",
+      "heading": "Why a high plateau pulls itself apart",
+      "steps": [
+        {
+          "icon": "🏔️",
+          "label": "India’s push has raised the crust 4,500 m"
+        },
+        {
+          "icon": "⚖️",
+          "label": "Deep down, all that rock weighs heavily"
+        },
+        {
+          "icon": "↔️",
+          "label": "Held north–south, it spreads east–west"
+        },
+        {
+          "icon": "💥",
+          "label": "Blocks drop down north–south faults"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "How big was the break?",
+      "text": "The US Geological Survey says normal-fault earthquakes of magnitude 7 typically break a patch of fault about 50 km long and 20 km wide. For this one, it found a crack in the crust dipping moderately, either to the northwest or to the southeast."
+    },
+    {
+      "type": "quiz",
+      "question": "India pushes the Tibetan Plateau from the south. Why did the plateau's 7.0 earthquake of October 2026 pull the ground apart instead?",
+      "options": [
+        "Its height makes it spread sideways",
+        "India pulls it from below",
+        "Melting ice made it lighter",
+        "The Pacific drags it east"
+      ],
+      "answer": 0,
+      "explanation": "The plateau is so high that the weight of its rock pushes outward. Held in to the north and south, it spreads east and west, and the stretched crust breaks on normal faults."
+    }
+  ],
+  "tags": [
+    "earthquakes",
+    "tibet",
+    "faults",
+    "plates",
+    "mountains"
+  ],
+  "source": {
+    "label": "US Geological Survey: M 7.0, 191 km ENE of Nagqu, China (22 October 2026)",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u43g"
+  },
+  "theme": {
+    "gradient": [
+      "#1e2833",
+      "#6e3a24"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T07:00:00Z",
+  "news": "2026-10-22",
+  "newsArticle": {
+    "label": "Al Jazeera: Powerful earthquake in Tibet kills at least 16 people",
+    "url": "https://www.aljazeera.com/news/2026/10/22/magnitude-7-earthquake-kills-16-people-in-chinas-tibet-xinhua-reports"
+  }
+}

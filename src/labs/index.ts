@@ -181,4 +181,9 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'bulgaria-turnout-runoff': lazy(() => import('./politics/bulgaria-turnout-runoff')),
   'new-zealand-mmp-party-vote': lazy(() => import('./politics/new-zealand-mmp-party-vote')),
   'uniting-for-peace-1956': lazy(() => import('./history/uniting-for-peace-1956')),
+  'tibet-quake-plateau-spreads': lazy(() => import('./earth/tibet-quake-plateau-spreads')),
+  'php2shell-out-of-memory-flaw': lazy(() => import('./tech/php2shell-out-of-memory-flaw')),
+  'champi-eyewall-replacement': lazy(() => import('./earth/champi-eyewall-replacement')),
+  'tortoise-distance-sampling': lazy(() => import('./math/tortoise-distance-sampling')),
+  'western-sydney-digital-tower': lazy(() => import('./engineering/western-sydney-digital-tower')),
 };
