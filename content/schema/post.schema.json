@@ -1898,6 +1898,26 @@
       "description": "For a post hooked to the news: the date of that event, YYYY-MM-DD (YYYY-MM when only the month is known; it may be coming up). The post shows under News, newest first, and not in the main feed.",
       "type": "string",
       "pattern": "^\\d{4}-\\d{2}(-\\d{2})?$"
+    },
+    "newsArticle": {
+      "description": "For a news post: a report of the event on a news site, for readers who want the news itself. Label: the outlet and the headline, e.g. \"Reuters: Brazil’s Lula wins runoff\".",
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "label",
+        "url"
+      ],
+      "additionalProperties": false
     }
   },
   "required": [

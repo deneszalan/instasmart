@@ -2165,4 +2165,5 @@ export const de: Record<string, string> = {
   'a street of the Borgo': 'eine Straße im Borgo',
   'the obelisk since 1586': 'der Obelisk seit 1586',
   'the obelisk’s spot in 1527': 'Platz des Obelisken 1527',
+  'In the news: {label}': 'In den Nachrichten: {label}',
 };

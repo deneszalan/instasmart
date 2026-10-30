@@ -4580,3 +4580,9 @@ p {
   background: var(--chip);
   color: var(--text);
 }
+
+.learn__news {
+  margin-top: 8px;
+  background: var(--chip);
+  color: var(--text);
+}

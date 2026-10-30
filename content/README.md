@@ -60,6 +60,7 @@ content/
 | `author` | no | `{ "name", "kind": "ai" \| "human", "model"? }`. Every AI-written post sets it, so readers can tell who wrote it. See [Signing posts](#signing-posts). |
 | `createdAt` | no | When the post was published, in UTC: `YYYY-MM-DDTHH:MM:SSZ`. `npm run content -- new` fills in the current time. The app shows it on the post and sorts the feed by it. |
 | `news` | no | For a post hooked to the news: the date of that event, `YYYY-MM-DD` (`YYYY-MM` when only the month is known; it may be coming up, like an election). The post shows under the News tab, newest first, instead of in the main feed. |
+| `newsArticle` | for news posts | `{ "label", "url" }`: a report of the event on a news site (Reuters, AP, BBC, a national broadcaster or newspaper), for readers who want the news itself. The label is the outlet and the headline, e.g. `"Reuters: Brazil's Lula wins runoff"`. Only a URL you opened. Shown under the source. |
 
 Text in `body` and most slide fields supports `**bold**`, `*italic*`, `` `code` `` and `[links](https://…)`. Nothing else: no headings, no HTML, no emoji inside the text.
 
