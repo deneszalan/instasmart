@@ -4,7 +4,7 @@
   "field": "earth",
   "title": "About half the CO₂ we emit stays in the air, and it piled up to a record in 2025",
   "emoji": "🛁",
-  "body": "On 27 October 2026 the World Meteorological Organization reported in its [Greenhouse Gas Bulletin](https://wmo.int/node/39151) that carbon dioxide in the air averaged a record 426.8 parts per million (ppm) in 2025, 2.8 ppm more than a year before and 53% above the level of 1750. Picture the air as a bathtub: burning coal, oil and gas pours CO₂ in, plants on land and the ocean drain out about half of each year's emissions, and the rest stays, affecting the climate for decades and even centuries, so it piles up. The yearly rise has tripled since the 1960s, from 0.8 ppm a year to 2.4 ppm a year in 2011–2020, and from 2023 to 2024 it jumped by 3.5 ppm, the most since measurements began in 1957, when a strong El Niño brought drought and wildfires that weakened the land's drain. The level only stops rising when what goes in falls to what the drains take out.",
+  "body": "On 27 October 2026 the World Meteorological Organization reported in its [Greenhouse Gas Bulletin](https://wmo.int/node/39151) that carbon dioxide in the air averaged a record 426.8 parts per million (ppm) in 2025, 2.8 ppm more than a year before and 53% above the level of 1750. Picture the air as a bathtub: burning coal, oil and gas pours CO₂ in, plants on land and the ocean drain out about half of each year's emissions, and the rest stays, affecting the climate for decades and even centuries, so it piles up. The yearly rise has tripled since the 1960s, from 0.8 ppm a year to 2.4 ppm a year in 2011–2020, and from 2023 to 2024 it jumped by 3.6 ppm (first reported as 3.5), the most since measurements began in 1957, when a strong El Niño brought drought and wildfires that weakened the land's drain. The level only stops rising when what goes in falls to what the drains take out.",
   "slides": [
     {
       "type": "estimate",
@@ -20,7 +20,7 @@
       "type": "video",
       "src": "bathtub.mp4",
       "poster": "bathtub.jpg",
-      "alt": "Animation on a pale tiled wall: a card reads 426.8 ppm, four rust dots in a grid of 10,000, 1750 against 2025. A bathtub fills from a tap of CO₂ while green land and blue ocean drains take half. Bars of yearly rises: 0.8, 2.4, 3.5 in an El Niño, 2.8. Then the tap turns down to half.",
+      "alt": "Animation on a pale tiled wall: a card reads 426.8 ppm, four rust dots in a grid of 10,000, 1750 against 2025. A bathtub fills from a tap of CO₂ while green land and blue ocean drains take half. Bars of yearly rises: 0.8, 2.4, 3.6 in an El Niño, 2.8. Then the tap turns down to half.",
       "fit": "cover",
       "animation": true,
       "credit": "Reckon · original animation · AI narration",
@@ -108,7 +108,7 @@
         },
         {
           "label": "2023 to 2024",
-          "value": 3.5
+          "value": 3.6
         },
         {
           "label": "2024 to 2025",
@@ -117,7 +117,7 @@
         }
       ],
       "unit": "ppm",
-      "note": "World Meteorological Organization, Greenhouse Gas Bulletins of 2025 and 2026."
+      "note": "World Meteorological Organization, Greenhouse Gas Bulletin of 2026."
     },
     {
       "type": "compare",
@@ -134,11 +134,11 @@
     {
       "type": "text",
       "heading": "Why some years jump",
-      "text": "The drains are not fixed. In the strong El Niño of 2023 and 2024, drought, drier plants and more wildfires weakened the land's uptake, so more CO₂ stayed in the air. Warmer seawater also dissolves less CO₂. So the rise was 3.5 ppm one year and 2.8 ppm the next, while the burning of fossil fuels went on."
+      "text": "The drains are not fixed. In the strong El Niño of 2023 and 2024, drought, drier plants and more wildfires weakened the land's uptake, so more CO₂ stayed in the air. Warmer seawater also dissolves less CO₂. So the rise was 3.6 ppm one year and 2.8 ppm the next, while the burning of fossil fuels went on."
     },
     {
       "type": "quiz",
-      "question": "CO₂ rose 3.5 ppm from 2023 to 2024 but 2.8 ppm from 2024 to 2025. What made the second rise smaller?",
+      "question": "CO₂ rose 3.6 ppm from 2023 to 2024 but 2.8 ppm from 2024 to 2025. What made the second rise smaller?",
       "options": [
         "Plants on land took up more again",
         "Emissions fell by half",
@@ -172,5 +172,8 @@
   },
   "createdAt": "2026-10-29T19:12:33Z",
   "news": "2026-10-27",
-  "newsArticle": {"label": "CBS News (AFP): Greenhouse gas levels set records in 2025, U.N. says, expressing alarm", "url": "https://www.cbsnews.com/news/greenhouse-gas-levels-records-again-2025-un/"}
+  "newsArticle": {
+    "label": "CBS News (AFP): Greenhouse gas levels set records in 2025, U.N. says, expressing alarm",
+    "url": "https://www.cbsnews.com/news/greenhouse-gas-levels-records-again-2025-un/"
+  }
 }

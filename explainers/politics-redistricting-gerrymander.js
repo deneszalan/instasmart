@@ -9,15 +9,22 @@
 // Facts: Wikipedia, "Gerrymandering": the word appeared in the Boston Gazette on 26 March 1812, after Governor
 // Elbridge Gerry signed a bill redrawing Massachusetts state senate districts; one district was likened to a
 // salamander; packing concentrates a group's voters in few districts, cracking spreads them thin. US House
-// districts are redrawn after each ten-yearly census. NBC News (3 June 2026): 10 states (Texas, Florida, Ohio,
-// North Carolina, Missouri, Tennessee, Louisiana, Alabama, California, Utah) adopted new congressional maps
-// for 2026; up to 16 seats could shift to Republicans and 6 to Democrats.
+// districts are redrawn after each ten-yearly census. NBC News (Jane C. Timm, 3 June 2026): 10 states had adopted
+// new congressional maps; up to 16 seats could shift to Republicans and 6 to Democrats; per state, up to: Texas 5,
+// Florida 4, Ohio 2, North Carolina 1, Missouri 1, Tennessee 1, Louisiana 1, Alabama 1 (R); California 5, Utah 1
+// (D). Missouri's map is blocked for 2026: SCOTUSblog (25 September 2026), for the third time the Supreme Court
+// declined to allow Missouri to use its 2025 map; "the 2022 map—not the 2025 map—must be used in the 2026
+// congressional election". AP (28 September 2026): new districts are used this year in Alabama, California,
+// Florida, Louisiana, North Carolina, Ohio, Tennessee, Texas and Utah. Maryland's special session only sent a
+// constitutional amendment to the November ballot; it approves no map and does not affect 2026 (Fox 5 DC and
+// WTOP, 4 August 2026). So nine states vote with new mid-decade maps, and NBC's estimates for them add up to 15
+// seats for Republicans (summed below) and 6 for Democrats.
 //
 // Scene plan (60 s). Important things stay above y = 930; captions are centred at y = 846.
 //  A  0.0– 9.0  Hook: 50 voters, 5 seats; who wins depends on the lines.
 //  B  9.0–32.0  Three maps: rows (5–0, cracking), a fair map (3–2), column pairs (packing, 2–3).
 //  C 32.0–41.2  Elbridge Gerry and the 1812 salamander.
-//  D 41.2–55.0  Maps are redrawn after each census; for 2026, ten states redrew mid-decade.
+//  D 41.2–55.0  Maps are redrawn after each census; for 2026, nine states use maps redrawn mid-decade.
 //  E 55.0–60.0  Same voters, different lines, different winners.
 const W = 864, H = 1080;
 const { clamp, seg, lerp, span } = Kit;
@@ -55,6 +62,16 @@ const RES = { rows: tally(MAPS.rows), fair: tally(MAPS.fair), pairs: tally(MAPS.
 // ---------- grid geometry ----------
 const G = { x: 112, y: 236, cell: 64 };
 
+// ---------- the states with new maps for 2026, with NBC News's top estimate of seats each could shift ----------
+// (Missouri drew one too, but must use its 2022 map in 2026.)
+const STATES = [
+  ['TX', 'Texas', 'R', 5], ['FL', 'Florida', 'R', 4], ['OH', 'Ohio', 'R', 2], ['NC', 'North Carolina', 'R', 1],
+  ['TN', 'Tennessee', 'R', 1], ['LA', 'Louisiana', 'R', 1], ['AL', 'Alabama', 'R', 1], ['CA', 'California', 'D', 5], ['UT', 'Utah', 'D', 1],
+];
+const SEATS = { R: 0, D: 0 };
+for (const [, , side, n] of STATES) SEATS[side] += n; // 15 and 6
+const NUMBER = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+
 // ---------- timeline ----------
 const T = { A: [0, 9.0], B: [9.0, 32.0], C: [32.0, 41.2], D: [41.2, 55.0], E: [55.0, 60] };
 const CUES = [
@@ -68,8 +85,8 @@ const CUES = [
   [32.2, 36.6, 'This is a ^gerrymander^, after the Massachusetts governor Elbridge Gerry.'],
   [36.8, 41.2, 'In 1812 a newspaper likened a state senate district drawn under him to a ^salamander^.'],
   [41.4, 45.8, 'US House maps are normally redrawn once a decade, after each ^census^.'],
-  [46.0, 50.4, 'But for the 2026 midterms, ^ten states^ have adopted new maps mid-decade.'],
-  [50.6, 55.0, 'NBC News counted up to ^16 seats^ that could shift to Republicans, and ^6^ to Democrats.'],
+  [46.0, 50.4, `But for the 2026 midterms, ^${NUMBER[STATES.length]} states^ will use new maps drawn mid-decade.`],
+  [50.6, 55.0, `NBC News estimates: up to ^${SEATS.R} seats^ could shift to Republicans, ^${SEATS.D}^ to Democrats.`],
   [55.2, 59.8, 'Same voters. Different lines. ^Different winners^.'],
 ];
 
@@ -212,10 +229,6 @@ function sceneGerry(t) {
   });
 }
 
-const STATES = [
-  ['TX', 'Texas', 'R'], ['FL', 'Florida', 'R'], ['OH', 'Ohio', 'R'], ['NC', 'North Carolina', 'R'], ['MO', 'Missouri', 'R'],
-  ['TN', 'Tennessee', 'R'], ['LA', 'Louisiana', 'R'], ['AL', 'Alabama', 'R'], ['CA', 'California', 'D'], ['UT', 'Utah', 'D'],
-];
 function sceneCensus(t) {
   const a = span(t, 41.4, 55.2, 0.5, 0.4);
   if (a <= 0) return;
@@ -234,7 +247,7 @@ function sceneCensus(t) {
       ctx.fillStyle = C.red; ctx.beginPath(); ctx.arc(X(2026), y, 12, 0, Math.PI * 2); ctx.fill();
       font(800, 26); text('2026', X(2026), y + 34, { color: C.red, align: 'center', base: 'middle' });
     });
-    // the ten states with new maps
+    // the nine states with new maps, and a note on Missouri
     const groups = [['Could help Republicans', 'R', 300], ['Could help Democrats', 'D', 610]];
     for (const [title, side, gy] of groups) {
       const list = STATES.filter((s) => s[2] === side);
@@ -256,9 +269,12 @@ function sceneCensus(t) {
         });
       });
     }
+    A(eout(seg(t, 48.0, 48.8)), () => {
+      font(500, 22); text('Missouri redrew too, but must use its 2022 map', 130, 556, { color: C.soft, base: 'middle' });
+    });
     A(eout(seg(t, 50.8, 51.6)), () => {
-      font(800, 30); text('up to 16 seats', 738, 300, { color: C.red, align: 'right', base: 'middle' });
-      text('up to 6 seats', 738, 610, { color: C.blue, align: 'right', base: 'middle' });
+      font(800, 30); text(`up to ${SEATS.R} seats`, 738, 300, { color: C.red, align: 'right', base: 'middle' });
+      text(`up to ${SEATS.D} seats`, 738, 610, { color: C.blue, align: 'right', base: 'middle' });
       font(500, 20); text('NBC News estimates', 738, 740, { color: C.soft, align: 'right', base: 'middle' });
     });
   });
