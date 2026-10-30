@@ -2572,4 +2572,6 @@ export const de: Record<string, string> = {
   'Clock reads': 'Die Uhr zeigt',
   'Age marks kept': 'Altersmarken behalten',
   'Simplified: twelve made-up sites drift evenly with age, and the direct route erases the drift along a smooth curve that keeps 5% of it, as the study’s long-cultured cells kept about 5% of donor age. Horvath’s real clock reads 353 sites with a typical error of 3.6 years.': 'Vereinfacht: zwölf erfundene Stellen driften gleichmäßig mit dem Alter, und der direkte Weg löscht die Drift entlang einer glatten Kurve, die 5 % davon behält, wie die lange kultivierten Zellen der Studie etwa 5 % des Spenderalters behielten. Horvaths echte Uhr liest 353 Stellen mit einem typischen Fehler von 3,6 Jahren.',
+  'The Moon is higher ↑': 'Der Mond steht höher ↑',
+  'Moon': 'Mond',
 };
