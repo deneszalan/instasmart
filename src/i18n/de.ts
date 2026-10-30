@@ -2202,4 +2202,11 @@ export const de: Record<string, string> = {
   'Player A’s score': 'Wertung von Spieler A',
   'Player B’s score': 'Wertung von Spielerin B',
   'Invented ideas and ratings. The 2026 study had five judges, who did not know the players’ ages, rate every use from 1 to 5, and scored each person by their best three.': 'Erfundene Ideen und Bewertungen. In der Studie von 2026 bewerteten fünf Jurorinnen und Juroren, die das Alter nicht kannten, jede Verwendung von 1 bis 5, und jede Person wurde nach ihren besten drei gewertet.',
+  'Verse {n} of the Magnificat set to a 7-bar chant; {a} and {b} syllables on its two reciting notes': 'Vers {n} des Magnificat auf einen Chant mit 7 Takten; {a} und {b} Silben auf seinen beiden Rezitationstönen',
+  'Verse of the Magnificat': 'Vers des Magnificat',
+  'Magnificat verse {n}': 'Vers {n}',
+  'Sing the verse': 'Vers singen',
+  'Syllables on reciting note 1': 'Silben auf Rezitationston 1',
+  'Syllables on reciting note 2': 'Silben auf Rezitationston 2',
+  'An invented example chant, sung by simple tones. The words and their pointing follow the Parish Psalter example on Wikipedia; real choirs sing at speech pace, more freely.': 'Ein erfundener Beispiel-Chant, gespielt mit einfachen Tönen. Die Worte und ihre Einteilung folgen dem Beispiel des Parish Psalter auf Wikipedia; echte Chöre singen freier, im Tempo der Sprache.',
 };

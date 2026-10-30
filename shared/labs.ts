@@ -169,6 +169,7 @@ export const LABS = {
   'starry-night-dawn-sky-date': 'Step through the dawns of June and July 1889 over Saint-Rémy, with the Moon and Venus computed, and find the ones where a crescent Moon stands above Venus inside the narrow frame of Van Gogh’s view, as in The Starry Night.',
   'bad-apple-rule-breaking': 'Run a simulated group of 100 people who copy each other’s rule-breaking, set how often someone overshoots what they see and how many always follow the rule, and watch whether the group tips into rule-breaking.',
   'adults-outscore-children-creativity': 'Score two imaginary players’ uses for a tin can, one with many ordinary ideas and one with a few original ones, by counting, adding, averaging or taking the best three, and see which rule rewards quality.',
+  'choral-evensong-anglican-chant': 'Sing the first four verses of the Magnificat to the same 7-bar Anglican chant and watch its reciting notes stretch to hold one syllable or seven.',
 } as const;
 
 export type LabId = keyof typeof LABS;

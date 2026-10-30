@@ -164,6 +164,7 @@ import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthK
 import { DAWNS as SN_DAWNS, dawnDate as snDate, fits as snFits, skyAt as snSky } from '../src/labs/art/starry-night-dawn-sky-date';
 import { finalAverage as baAverage, MEASURED as BA_MEASURED, SEEDS as BA_SEEDS, simulate as baSimulate, TIPPED as BA_TIPPED } from '../src/labs/psychology/bad-apple-rule-breaking';
 import { A_RATINGS as CR_A, B_RATINGS as CR_B, counted as crCounted, GOAL_IDEAS as CR_GOAL, score as crScore } from '../src/labs/psychology/adults-outscore-children-creativity';
+import { BARS as AC_BARS, recitingSyllables as acReciting, show as acShow, SLOTS as AC_SLOTS, timing as acTiming, VERSES as AC_VERSES } from '../src/labs/music/choral-evensong-anglican-chant';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1603,5 +1604,16 @@ describe('lab maths', () => {
     expect(crScore(CR_A, 'best3')).toBeCloseTo((2.4 + 2.2 + 2.0) / 3, 9);
     expect(crCounted(CR_B, 'best3').sort()).toEqual([0, 1, 2]);
     expect(crCounted(CR_B, 'sum')).toEqual([0, 1, 2, 3]);
+  });
+  it('Anglican chant: 7 bars, reciting notes in bars 1 and 4, and verse 4 puts 7 syllables on one note', () => {
+    expect(AC_BARS).toHaveLength(7);
+    expect(AC_BARS.map((b, i) => (b.reciting ? i + 1 : 0)).filter(Boolean)).toEqual([1, 4]);
+    AC_VERSES.forEach((v) => expect(v).toHaveLength(AC_SLOTS.length));
+    expect([0, 1, 2, 3].map(acReciting)).toEqual([[3, 6], [1, 1], [2, 3], [7, 1]]);
+    expect(acShow(AC_VERSES[3][0])).toBe('For he that is mighty hath');
+    expect(acShow(AC_VERSES[0][4])).toBe('And my spirit hath re-');
+    const tm = acTiming(3);
+    expect(tm[0].d).toBeGreaterThan(tm[4].d);
+    tm.slice(1).forEach((x, i) => expect(x.at).toBeGreaterThanOrEqual(tm[i].at + tm[i].d));
   });
 });
