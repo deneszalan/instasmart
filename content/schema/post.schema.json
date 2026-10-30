@@ -260,7 +260,8 @@
                   "phobos-rises-in-the-west",
                   "lycurgus-cup-gold-silver-specks",
                   "cavendish-banana-three-chromosome-sets",
-                  "penicillin-allergy-label"
+                  "penicillin-allergy-label",
+                  "space-mirror-sunlight-spot"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

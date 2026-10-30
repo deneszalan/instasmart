@@ -170,6 +170,7 @@ export const LABS = {
   'lycurgus-cup-gold-silver-specks': 'Light a glass cup like the Roman Lycurgus Cup from the front or from behind, and add gold and silver specks up to the Romans’ amount: see which colours of white light pass through and which bounce back.',
   'cavendish-banana-three-chromosome-sets': 'Make sex cells from a plant with two or three sets of chromosomes, for 1 to 11 kinds, and count how many come out balanced: with pairs every one does; with a Cavendish banana’s trios hardly any.',
   'penicillin-allergy-label': 'Treat a run of patients labelled allergic to penicillin: check each label as a doctor would, then pick penicillin or a broader antibiotic, and see how many helpful gut bacteria survive and how many drug-resistant ones move in.',
+  'space-mirror-sunlight-spot': 'Set a space mirror\'s width, its height and how far it is from overhead, and see the patch of sunlight it can light: an image of the Sun about 6 km wide from 645 km, and how many full Moons bright.',
 } as const;
 
 export type LabId = keyof typeof LABS;

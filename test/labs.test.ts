@@ -165,6 +165,7 @@ import { betweenRisings as phoBetween, DEIMOS as PHO_DEIMOS, hoursUp as phoUp, K
 import { blueGreenLost as lycLost, colourOf as lycColour, extinction as lycExt, GOLD_PPM as LYC_GOLD, hueName as lycHue, seen as lycSeen } from '../src/labs/chemistry/lycurgus-cup-gold-silver-specks';
 import { balanced as banBalanced, balancedChance as banChance, KINDS as BAN_KINDS, sexCell as banCell } from '../src/labs/biology/cavendish-banana-three-chromosome-sets';
 import { goodOutcome as penGood, START as PEN_START, treat as penTreat, trulyAllergic as penAllergic } from '../src/labs/body/penicillin-allergy-label';
+import { fullMoons as mirMoons, goalMet as mirGoal, MOON_RATIO as MIR_MOON, patchKm as mirPatch, share as mirShare } from '../src/labs/physics/space-mirror-sunlight-spot';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1619,5 +1620,17 @@ describe('lab maths', () => {
     expect(broad.resistant).toBeGreaterThan(narrow.resistant);
     expect(penGood(narrow)).toBe(true);
     expect(penGood(broad)).toBe(false);
+  });
+  it('Space mirror: from 645 km the patch is about 6 km wide; an 18 m mirror gives 1/111,000 of sunlight, about 3.6 full Moons', () => {
+    expect(mirPatch(645)[0]).toBeCloseTo(6.0, 1);
+    expect(Math.round(MIR_MOON / 1000)).toBe(398);
+    expect(Math.round(1 / mirShare(18, 645) / 1000)).toBe(111);
+    expect(mirMoons(18, 645)).toBeCloseTo(3.6, 1);
+    expect(mirMoons(18, 1290) / mirMoons(18, 645)).toBeCloseTo(0.25, 9);
+    expect(mirMoons(36, 645) / mirMoons(18, 645)).toBeCloseTo(4, 9);
+    expect(mirPatch(645, 60)[1]).toBeCloseTo(4 * mirPatch(645)[0], 9);
+    expect(mirGoal(8, 645, 0)).toBe(false);
+    expect(mirGoal(8, 500, 0)).toBe(true);
+    expect(mirGoal(18, 300, 0)).toBe(false);
   });
 });

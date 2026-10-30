@@ -170,4 +170,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'lycurgus-cup-gold-silver-specks': lazy(() => import('./chemistry/lycurgus-cup-gold-silver-specks')),
   'cavendish-banana-three-chromosome-sets': lazy(() => import('./biology/cavendish-banana-three-chromosome-sets')),
   'penicillin-allergy-label': lazy(() => import('./body/penicillin-allergy-label')),
+  'space-mirror-sunlight-spot': lazy(() => import('./physics/space-mirror-sunlight-spot')),
 };
