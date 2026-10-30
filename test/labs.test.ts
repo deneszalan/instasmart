@@ -162,6 +162,7 @@ import { STAIR_HEADROOM, gentlestTurns, stairDesign } from '../src/labs/engineer
 import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need as concNeed, votes as concVotes, wins as concWins } from '../src/labs/politics/conclave-two-thirds';
 import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
 import { faultType as tibFault, pushes as tibPushes, stretches as tibStretch } from '../src/labs/earth/tibet-quake-plateau-spreads';
+import { ENTRIES as PHP_ENTRIES, fill as phpFill, TOTAL_KB as PHP_TOTAL } from '../src/labs/tech/php2shell-out-of-memory-flaw';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1575,5 +1576,12 @@ describe('lab maths', () => {
     expect(tibFault(5, 60)).toBe('normal');
     expect(tibStretch(5, 60)).toBe('east-west');
     expect(tibPushes(0, 0)).toEqual({ vertical: 100, northSouth: 100, eastWest: 100 });
+  });
+  it('PHP2Shell toy: counting first leaves a half-built entry when memory runs out; memory first does not', () => {
+    expect(PHP_TOTAL).toBe(27);
+    expect(phpFill(30, 'count-first')).toMatchObject({ crashed: false, count: PHP_ENTRIES.length, built: PHP_ENTRIES.length });
+    expect(phpFill(12, 'count-first')).toMatchObject({ crashed: true, count: 3, built: 2, halfBuilt: true });
+    expect(phpFill(12, 'memory-first')).toMatchObject({ crashed: true, count: 2, built: 2, halfBuilt: false });
+    for (let limit = 6; limit <= 30; limit++) expect(phpFill(limit, 'memory-first').halfBuilt).toBe(false);
   });
 });

@@ -1,0 +1,184 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "tech-php2shell-out-of-memory-flaw",
+  "field": "tech",
+  "title": "PHP2Shell: running out of memory at just the wrong moment could let attackers into servers",
+  "emoji": "🧩",
+  "body": "On 21 October 2026 the makers of PHP, the programming language behind an estimated 70% of websites, released emergency fixes for two critical flaws nicknamed PHP2Shell, a day earlier than planned after word of them leaked; many sites, government ones among them, went offline to update. A PHP server keeps workers that handle one web request after another in the same memory, and each request has a memory limit: go over it and PHP stops the request with an error. The trouble lay in the tidy-up afterwards. In one flaw, adding an entry to a table took two steps, counting it and then getting memory for its name, so a crash in between left a half-built entry that the tidy-up handled as real, corrupting memory. In the other, a pointer could be left aimed at memory that had already been freed; the next request on the same worker could move in there and PHP would read its bytes as trusted, a bug called a use-after-free. As the [PHP Foundation explained](https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/), on some servers this worked before any website code ran, and researchers showed it let them run their own code.",
+  "slides": [
+    {
+      "type": "fill",
+      "question": "Out of 10 websites, how many are estimated to run on PHP, the programming language with the PHP2Shell flaws?",
+      "icon": "🌐",
+      "total": 10,
+      "answer": 7,
+      "explanation": "About 7: an estimated 70% of websites use PHP, including sites built with WordPress, so a flaw in PHP itself put millions of sites at risk."
+    },
+    {
+      "type": "video",
+      "src": "php2shell.mp4",
+      "poster": "php2shell.jpg",
+      "alt": "Animation in a dark server room: PHP2Shell, fixed on 21 October 2026. A worker's memory fills cell by cell until a request hits its limit. A table counts an entry before getting its memory, leaving a half-built slot pointing at junk; a stale pointer then reads the next request's bytes.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Concentration” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 7,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "php2shell-out-of-memory-flaw",
+      "prompt": "Lower the memory limit until the request runs out partway, and look at the table. Then swap the order of the two steps and make it run out again.",
+      "takeaway": "Count first, and running out of memory always leaves a counted entry with nothing behind it, junk the tidy-up then trusts. Get the memory first and a crash leaves nothing half-built."
+    },
+    {
+      "type": "flow",
+      "heading": "How the attack worked",
+      "steps": [
+        {
+          "icon": "💥",
+          "label": "Request 1 hits the memory limit mid-step"
+        },
+        {
+          "icon": "🧷",
+          "label": "Half-built data or a stale pointer is left"
+        },
+        {
+          "icon": "📦",
+          "label": "Request 2 moves into the freed memory"
+        },
+        {
+          "icon": "⚠️",
+          "label": "PHP trusts those bytes as its own data"
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "From first clue to fix",
+      "events": [
+        {
+          "when": "2024",
+          "text": "An audit turns up the first signs of the out-of-memory problem"
+        },
+        {
+          "when": "11 Aug 2026",
+          "text": "Security firm Calif reports a way to run code"
+        },
+        {
+          "when": "20 Oct 2026",
+          "text": "The flaws’ names leak online"
+        },
+        {
+          "when": "21 Oct 2026",
+          "text": "Fixes released, a day early"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "What is a use-after-free?",
+      "text": "Programs borrow memory and hand it back when they are done. A use-after-free is a bug in which code keeps using memory after handing it back. By then something else may have moved in, here the next web request, so the program reads data it never wrote and trusts it."
+    },
+    {
+      "type": "quiz",
+      "question": "In the first PHP2Shell flaw, why did running out of memory between “count it” and “get memory for its name” cause trouble?",
+      "options": [
+        "A counted entry pointed at junk",
+        "The count went below zero",
+        "The website’s code was deleted",
+        "The memory limit switched off"
+      ],
+      "answer": 0,
+      "explanation": "The entry was already counted but had no memory of its own, so it pointed at leftover junk. The tidy-up trusted the count and handled the junk as a real entry, corrupting memory."
+    }
+  ],
+  "tags": [
+    "security",
+    "php",
+    "memory",
+    "websites",
+    "bugs"
+  ],
+  "source": {
+    "label": "The PHP Foundation: Today’s PHP Security Release, and How We’re Strengthening PHP Security (21 October 2026)",
+    "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/"
+  },
+  "theme": {
+    "gradient": [
+      "#0d1316",
+      "#1f4a43"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T07:30:00Z",
+  "news": "2026-10-21",
+  "newsArticle": {
+    "label": "The Guardian: What is PHP and how serious is the computer language flaw causing website shutdowns?",
+    "url": "https://www.theguardian.com/technology/2026/oct/22/what-is-php-computer-language-flaw-causing-global-website-shutdowns"
+  }
+}

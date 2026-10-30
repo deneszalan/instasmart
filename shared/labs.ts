@@ -167,6 +167,7 @@ export const LABS = {
   'conclave-two-thirds': 'Back one candidate with groups of the 133 cardinals of May 2025 and see why two thirds, 89 votes, needs three of four groups, while the 1996 rule’s late majority of 67 needed only two.',
   'swiss-guard-sack-of-rome': 'Follow the Swiss Guard on a map of today through 6 May 1527: tap where its 189 men gathered by the obelisk, the Passetto the 42 survivors took Pope Clement VII along, and the castle where they took him.',
   'tibet-quake-plateau-spreads': 'Raise a block of crust and change India’s squeeze, and see which push is biggest and whether the block breaks on a thrust, strike-slip or normal fault, as the Tibetan Plateau does.',
+  'php2shell-out-of-memory-flaw': 'Fill a toy table under a memory limit, counting each entry before or after getting its memory, and see when running out leaves a half-built entry behind, the idea behind the first PHP2Shell flaw.',
 } as const;
 
 export type LabId = keyof typeof LABS;
