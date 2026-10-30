@@ -2575,5 +2575,5 @@ export const de: Record<string, string> = {
   'under 1 in a trillion': 'unter 1 in einer Billion',
   '1 in {n} billion': '1 in {n} Milliarden',
   '1 in {n} million': '1 in {n} Millionen',
-  'zeros can only be in the pale band': 'Nullstellen nur im hellen Band',
+  'zeros only in the pale band': 'Nullstellen nur im hellen Band',
 };

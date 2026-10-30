@@ -25,8 +25,9 @@ export default function QuasiRiemann({ onDone }: LabProps) {
   useGoal(x === X_GOAL && goalMet(theta), onDone);
 
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
-    // the strip, with θ as the right-hand wall for zeros
-    const x0 = w * 0.1, x1 = w * 0.9, y0 = 16, y1 = h * 0.42;
+    // the strip, with θ as the right-hand wall for zeros and 1 − θ the left one; its top row holds the captions,
+    // so the lines start below it
+    const x0 = w * 0.1, x1 = w * 0.9, y0 = 6, y1 = y0 + Math.min(90, Math.max(28, h * 0.3)), yt = y0 + 18;
     ctx.fillStyle = 'rgba(255,255,255,0.05)';
     ctx.fillRect(x0, y0, x1 - x0, y1 - y0);
     const X = (re: number) => lerp(x0, x1, re);
@@ -36,34 +37,39 @@ export default function QuasiRiemann({ onDone }: LabProps) {
     ctx.strokeStyle = GOLD;
     ctx.setLineDash([5, 4]);
     ctx.beginPath();
-    ctx.moveTo(X(0.5), y0);
+    ctx.moveTo(X(0.5), yt);
     ctx.lineTo(X(0.5), y1);
     ctx.stroke();
     ctx.setLineDash([]);
     ctx.strokeStyle = RED;
     ctx.lineWidth = 2;
     ctx.beginPath();
-    ctx.moveTo(X(theta), y0);
+    ctx.moveTo(X(theta), yt);
     ctx.lineTo(X(theta), y1);
     ctx.stroke();
     ctx.lineWidth = 1.5;
-    label(ctx, '0', x0, y1 + 10, { size: 10, color: C.faint });
-    label(ctx, '½', X(0.5), y1 + 10, { size: 10, color: GOLD });
-    label(ctx, '1', x1, y1 + 10, { size: 10, color: C.faint });
-    label(ctx, t('θ = {v}', { v: theta.toFixed(2) }), Math.min(X(theta), x1 - 30), y0 + 10, { size: 10, color: RED });
-    label(ctx, t('zeros can only be in the pale band'), (x0 + x1) / 2, y1 - 10, { size: 10, color: C.soft });
-    // bars, log scale: primes up to x, and the error bound
-    const bx0 = w * 0.1, bx1 = w - 8, by = h * 0.66;
+    label(ctx, t('zeros only in the pale band'), x0 + 6, y0 + 9, { size: 10, align: 'left', color: C.soft });
+    label(ctx, t('θ = {v}', { v: theta.toFixed(2) }), x1 - 4, y0 + 9, { size: 10, align: 'right', color: RED });
+    label(ctx, '0', x0, y1 + 9, { size: 10, color: C.faint });
+    label(ctx, '½', X(0.5), y1 + 9, { size: 10, color: GOLD });
+    label(ctx, '1', x1, y1 + 9, { size: 10, color: C.faint });
+    // two bars on a log scale along the bottom: the primes up to x, and the error bound, each with a caption row above
+    const short_ = h < 125, bh = short_ ? 8 : 10, yB = h - (short_ ? 11 : 13), yA = yB - (short_ ? 26 : 30), off = short_ ? 11 : 13;
+    const bx0 = x0, bx1 = w - 8;
     const B = (v: number) => lerp(bx0, bx1, Math.log10(Math.max(1, v)) / 12);
-    label(ctx, t('primes up to x'), bx0, by - 22, { size: 10, align: 'left', color: C.soft });
-    ctx.fillStyle = C.soft;
-    ctx.fillRect(bx0, by - 12, B(primes) - bx0, 14);
-    label(ctx, short(primes), Math.min(B(primes) + 6, w - 60), by - 5, { size: 10, align: 'left', color: C.ink });
-    label(ctx, t('error bound x^θ'), bx0, by + 24, { size: 10, align: 'left', color: RED });
-    ctx.fillStyle = goalMet(theta) && x === X_GOAL ? GREEN : RED;
-    ctx.fillRect(bx0, by + 34, B(bound) - bx0, 14);
-    label(ctx, short(bound), Math.min(B(bound) + 6, w - 60), by + 41, { size: 10, align: 'left', color: C.ink });
-    label(ctx, t('log scale'), bx1, h - 8, { size: 9, align: 'right', color: C.faint });
+    const bar = (y: number, v: number, col: string) => {
+      const end = B(v);
+      ctx.fillStyle = col;
+      ctx.fillRect(bx0, y - bh / 2, end - bx0, bh);
+      // the value beside the bar, or inside its end when it reaches the edge
+      if (end > w - 70) label(ctx, short(v), end - 4, y, { size: 10, align: 'right', color: '#050b1c' });
+      else label(ctx, short(v), end + 6, y, { size: 10, align: 'left', color: C.ink });
+    };
+    label(ctx, t('primes up to x'), bx0, yA - off, { size: 10, align: 'left', color: C.soft });
+    bar(yA, primes, C.soft);
+    label(ctx, t('error bound x^θ'), bx0, yB - off, { size: 10, align: 'left', color: RED });
+    label(ctx, t('log scale'), bx1, yB - off, { size: 9, align: 'right', color: C.faint });
+    bar(yB, bound, goalMet(theta) && x === X_GOAL ? GREEN : RED);
   };
 
   return (
