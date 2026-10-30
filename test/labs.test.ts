@@ -1699,6 +1699,7 @@ describe('lab maths', () => {
     expect(mirGoal(8, 645, 0)).toBe(false);
     expect(mirGoal(8, 500, 0)).toBe(true);
     expect(mirGoal(18, 300, 0)).toBe(false);
+  });
   it('US GDP: 3.4% at an annual rate is about 0.84% a quarter; 1.2% a quarter is about 4.9% a year', () => {
     expect(gdpQuarterBehind(3.4)).toBeCloseTo(0.84, 2);
     expect(gdpQuarterBehind(3.4).toFixed(1)).toBe('0.8');
