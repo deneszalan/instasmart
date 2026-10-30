@@ -1,0 +1,176 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-bulgaria-turnout-runoff",
+  "field": "politics",
+  "title": "Bulgaria’s president can win in round one only if over half of all voters turn out",
+  "emoji": "🔒",
+  "body": "On 25 October 2026 Bulgaria voted for its president, and the race went to a runoff on 1 November, [AP reported](https://www.ajc.com/news/2026/10/presidential-race-in-bulgaria-heads-to-runoff-due-to-record-low-turnout/). Bulgaria’s [constitution](https://www.constituteproject.org/constitution/Bulgaria_2015) sets two conditions for a first-round win: a candidate needs more than half of the valid ballots, and more than half of all eligible voters must have cast a ballot. Miss either, and the two leading candidates meet again within seven days, where whoever gets more votes wins, however many people vote. In 2026 both conditions failed: among 27 pairs of candidates for president and vice-president, President Iliana Iotova and her running mate got about 35% and former caretaker prime minister Andrey Gyurov and his about 32%, while fewer than a quarter of the 6.6 million registered voters took part, a record low. A majority alone is not enough either: in 2006 President Georgi Parvanov won 64% in the first round, but turnout was 44%, so he faced a runoff, which he won with 76%.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "In Bulgaria’s 2006 presidential election, President Georgi Parvanov won 64% of the valid ballots in round one. Was he elected that day?",
+      "answer": "No: only 44% of voters turned out, so he faced a runoff.",
+      "detail": "Bulgaria’s constitution also requires more than half of all eligible voters to vote in round one. Parvanov won the runoff with 76%, on a turnout of 43%."
+    },
+    {
+      "type": "video",
+      "src": "locks.mp4",
+      "poster": "locks.jpg",
+      "alt": "Animation on pine-green night: a ballot with 27 numbered pairs; a door marked win in round one with two padlocks, over half the ballots and over half the voters; 2026 bars of about 35% and 32% and a crowd of 100 with fewer than 25 voting; a runoff; 2006 with 64% on 44% turnout.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Faceoff” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "bulgaria-turnout-runoff",
+      "prompt": "Find a first round where the leader wins a majority of the ballots yet still faces a runoff, as in 2006.",
+      "takeaway": "Any share over 50% with a turnout of 50% or less does it: both conditions must hold. In 2006 Parvanov had 64% on a 44% turnout; the first round of 2026 failed both."
+    },
+    {
+      "type": "flow",
+      "heading": "How Bulgaria elects its president",
+      "steps": [
+        {
+          "icon": "🗳️",
+          "label": "Round one: pairs of president and deputy"
+        },
+        {
+          "icon": "➗",
+          "label": "Over half of the valid ballots?"
+        },
+        {
+          "icon": "👥",
+          "label": "Over half of all voters voted?"
+        },
+        {
+          "icon": "✅",
+          "label": "Both: elected in round one"
+        },
+        {
+          "icon": "🔁",
+          "label": "If not: the top two meet within 7 days"
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "heading": "First round, 25 October 2026: share of the valid ballots",
+      "items": [
+        {
+          "label": "Iliana Iotova",
+          "value": 34.76,
+          "emphasis": true
+        },
+        {
+          "label": "Andrey Gyurov",
+          "value": 31.95
+        },
+        {
+          "label": "Needed in round one",
+          "value": 50
+        }
+      ],
+      "unit": "%",
+      "note": "Central Election Commission figures. Round one also needs over 50% turnout; it was under 25%."
+    },
+    {
+      "type": "quiz",
+      "question": "Under Bulgaria’s constitution, what turnout does the presidential runoff need for its winner to be elected?",
+      "options": [
+        "No minimum at all",
+        "More than 50%",
+        "More than 25%",
+        "Two thirds"
+      ],
+      "answer": 0,
+      "explanation": "None: in the second round the candidate with more votes wins. The turnout rule applies only to winning in round one."
+    }
+  ],
+  "tags": [
+    "bulgaria",
+    "elections",
+    "voting",
+    "turnout",
+    "president"
+  ],
+  "source": {
+    "label": "Constitute Project: Constitution of Bulgaria, article 93",
+    "url": "https://www.constituteproject.org/constitution/Bulgaria_2015"
+  },
+  "theme": {
+    "gradient": [
+      "#13261d",
+      "#2a5a43"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T06:00:00Z",
+  "news": "2026-10-25",
+  "newsArticle": {
+    "label": "AP via the Atlanta Journal-Constitution: Presidential race in Bulgaria heads to runoff due to record low turnout",
+    "url": "https://www.ajc.com/news/2026/10/presidential-race-in-bulgaria-heads-to-runoff-due-to-record-low-turnout/"
+  }
+}

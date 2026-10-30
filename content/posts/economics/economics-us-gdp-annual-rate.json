@@ -1,0 +1,175 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "economics-us-gdp-annual-rate",
+  "field": "economics",
+  "title": "America’s ‘3.4% growth’ was 0.8% in three months, compounded to a yearly pace",
+  "emoji": "📈",
+  "body": "On 29 October 2026 the US Bureau of Economic Analysis [reported](https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026) that real GDP, the value of the goods and services the country produces with price rises taken out, grew “at an annual rate of 3.4 percent” from July to September. In those three months the economy grew about 0.8%: the same release gives that as the quarterly rate. An annual rate, the bureau [explains](https://www.bea.gov/help/faq/122), shows what the change would be if the quarterly rate continued for four quarters, compounded like interest: 1.0084 × 1.0084 × 1.0084 × 1.0084 ≈ 1.034. It makes a quarter easy to compare with whole years, and it is not a forecast. Other countries lead with other rulers. China’s statistics bureau [reported](https://www.stats.gov.cn/english/PressRelease/202610/t20261021_1965671.html) 4.5% for the same quarter, but measured against July to September 2025; against the quarter before, China grew 1.2%, which as a US-style annual rate would be about 4.9%. So before comparing two growth figures, check whether each is against the last quarter, annualised or against a year earlier.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The US said its economy grew at an ‘annual rate’ of 3.4% in July–September 2026. How much did it grow in those 3 months?",
+      "min": 0,
+      "max": 4,
+      "step": 0.1,
+      "answer": 0.8,
+      "unit": "%",
+      "explanation": "About 0.8%, the Bureau of Economic Analysis’s own figure at a quarterly rate. The 3.4% is what four such quarters in a row would add up to, compounded."
+    },
+    {
+      "type": "video",
+      "src": "rulers.mp4",
+      "poster": "rulers.jpg",
+      "alt": "Animation on dark slate graph paper: 3.4% at an annual rate; bars of real GDP where July–September is 0.84% above April–June; four imagined quarters compound to 1.034; China’s 4.5% year on year beside its 1.2% quarter; three coloured rulers.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Dream Culture” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "us-gdp-annual-rate",
+      "prompt": "Get July–September over 4% at an annual rate while its growth against a year before stays at 2% or less.",
+      "takeaway": "A single strong quarter does it: 1% in July–September is over 4% at an annual rate, yet after flat quarters only about 1% year on year. Same economy, different rulers, so check which one a figure uses."
+    },
+    {
+      "type": "chart",
+      "heading": "Growth in July–September 2026, measured on different rulers",
+      "items": [
+        {
+          "label": "US: vs the quarter before",
+          "value": 0.8
+        },
+        {
+          "label": "US: at an annual rate",
+          "value": 3.4,
+          "emphasis": true
+        },
+        {
+          "label": "China: vs the quarter before",
+          "value": 1.2
+        },
+        {
+          "label": "China: vs a year before",
+          "value": 4.5
+        }
+      ],
+      "unit": "%",
+      "note": "US Bureau of Economic Analysis; National Bureau of Statistics of China. October 2026."
+    },
+    {
+      "type": "compare",
+      "heading": "Two ways to report one quarter",
+      "left": {
+        "label": "Annual rate (US)",
+        "text": "This quarter against the one before, compounded as if it went on for four quarters. Quick to show a turn, and every wiggle looks about four times bigger."
+      },
+      "right": {
+        "label": "Year on year (China)",
+        "text": "This quarter against the same quarter a year earlier. It adds up the last four quarters, so it is smoother but slower to show a turn."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Why not do it for months too?",
+      "text": "The US Bureau of Economic Analysis publishes monthly figures, such as personal income, at monthly rates: annual rates would “excessively exaggerate the month-to-month changes”. Volatile quarterly series, such as company profits, are left at quarterly rates too."
+    },
+    {
+      "type": "quiz",
+      "question": "An economy grows 1% in one quarter. How would the United States report that growth?",
+      "options": [
+        "About 4.1% at an annual rate",
+        "1% at an annual rate",
+        "About 0.25% at an annual rate",
+        "4% year on year"
+      ],
+      "answer": 0,
+      "explanation": "Compounded over four quarters: 1.01 × 1.01 × 1.01 × 1.01 ≈ 1.041, so about 4.1%. Simply multiplying by 4 would give 4%, a little less."
+    }
+  ],
+  "tags": [
+    "gdp",
+    "economy",
+    "statistics",
+    "growth",
+    "china"
+  ],
+  "source": {
+    "label": "US Bureau of Economic Analysis: GDP (Advance Estimate), 3rd Quarter 2026",
+    "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026"
+  },
+  "theme": {
+    "gradient": [
+      "#10232b",
+      "#2f6f73"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T05:10:00Z",
+  "news": "2026-10-29",
+  "newsArticle": {
+    "label": "PBS NewsHour: U.S. economy grows at brisk 3.4% pace in third quarter on strong consumer spending and AI investment",
+    "url": "https://www.pbs.org/newshour/economy/u-s-economy-grows-at-brisk-3-4-pace-in-third-quarter-on-strong-consumer-spending-and-ai-investment"
+  }
+}

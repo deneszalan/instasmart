@@ -267,6 +267,11 @@
                   "cavendish-banana-three-chromosome-sets",
                   "penicillin-allergy-label",
                   "space-mirror-sunlight-spot"
+                  "us-gdp-annual-rate",
+                  "bond-price-yield-seesaw",
+                  "bulgaria-turnout-runoff",
+                  "new-zealand-mmp-party-vote",
+                  "uniting-for-peace-1956"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

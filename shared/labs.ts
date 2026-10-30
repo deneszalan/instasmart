@@ -176,6 +176,11 @@ export const LABS = {
   'cavendish-banana-three-chromosome-sets': 'Make sex cells from a plant with two or three sets of chromosomes, for 1 to 11 kinds, and count how many come out balanced: with pairs every one does; with a Cavendish banana’s trios hardly any.',
   'penicillin-allergy-label': 'Treat a run of patients labelled allergic to penicillin: check each label as a doctor would, then pick penicillin or a broader antibiotic, and see how many helpful gut bacteria survive and how many drug-resistant ones move in.',
   'space-mirror-sunlight-spot': 'Set a space mirror\'s width, its height and how far it is from overhead, and see the patch of sunlight it can light: an image of the Sun about 6 km wide from 645 km, and how many full Moons bright.',
+  'us-gdp-annual-rate': 'Set an imaginary economy’s growth in each of four quarters and read the newest quarter three ways: against the quarter before, at a US-style annual rate, and against the same quarter a year earlier.',
+  'bond-price-yield-seesaw': 'Set the price paid for an example bond of €100 paying €3 a year, over 2, 10 or 30 years, and watch its yield to maturity move the other way, like a seesaw.',
+  'bulgaria-turnout-runoff': 'Set the leader’s share of the ballots and the turnout in a Bulgarian presidential first round and see which of the constitution’s two conditions, over half the ballots and over half the voters, is met; load the first rounds of 2026 and 2006.',
+  'new-zealand-mmp-party-vote': 'Replay New Zealand’s 2008 election under MMP: let ACT lose Epsom or New Zealand First win an electorate, and see how the 120 seats are shared by party vote, with list MPs and overhang seats.',
+  'uniting-for-peace-1956': 'Cast the votes of the UN Security Council of 1956, 11 members with 5 permanent ones, and see whether a draft passes as a decision, where a permanent member’s no is a veto, and as the procedural call to the General Assembly, where it is not.',
 } as const;
 
 export type LabId = keyof typeof LABS;

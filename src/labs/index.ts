@@ -176,4 +176,9 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'cavendish-banana-three-chromosome-sets': lazy(() => import('./biology/cavendish-banana-three-chromosome-sets')),
   'penicillin-allergy-label': lazy(() => import('./body/penicillin-allergy-label')),
   'space-mirror-sunlight-spot': lazy(() => import('./physics/space-mirror-sunlight-spot')),
+  'us-gdp-annual-rate': lazy(() => import('./economics/us-gdp-annual-rate')),
+  'bond-price-yield-seesaw': lazy(() => import('./economics/bond-price-yield-seesaw')),
+  'bulgaria-turnout-runoff': lazy(() => import('./politics/bulgaria-turnout-runoff')),
+  'new-zealand-mmp-party-vote': lazy(() => import('./politics/new-zealand-mmp-party-vote')),
+  'uniting-for-peace-1956': lazy(() => import('./history/uniting-for-peace-1956')),
 };

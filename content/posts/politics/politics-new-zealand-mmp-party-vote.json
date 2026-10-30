@@ -1,0 +1,183 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-new-zealand-mmp-party-vote",
+  "field": "politics",
+  "title": "In New Zealand’s 2008 election, 4.07% of party votes won no seats, but 3.65% won five",
+  "emoji": "🥝",
+  "body": "On 26 October 2026 advance voting opened for New Zealand’s general election of 7 November, Reuters [reported](https://www.thestar.com.my/news/world/2026/10/26/voting-opens-in-new-zealand-for-november-7-election-with-no-clear-frontrunner). New Zealand uses mixed-member proportional voting (MMP): each voter has an electorate vote, which elects a local MP in each of 71 electorates, and a party vote, which decides how many of the 120 seats each party gets, in proportion. A party’s local winners count inside its share, and MPs from its list fill the rest. But a party shares in the seats only with 5% of the party vote or at least one electorate, as this [guide to the system](https://en.wikipedia.org/wiki/Electoral_system_of_New_Zealand) explains. In 2008 New Zealand First won 4.07% of the party vote and no electorate, so its 95,356 votes elected no one; ACT won 3.65%, but its leader Rodney Hide held Epsom, so ACT got 5 seats, 4 of them from its list. A party that wins more electorates than its share keeps them as overhang seats: in 2008 the Māori Party won 5 electorates on a party vote worth 3 seats, and parliament had 122 members.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "New Zealand’s parliament normally has 120 seats. How many MPs did its 2008 general election produce?",
+      "min": 100,
+      "max": 140,
+      "step": 1,
+      "answer": 122,
+      "explanation": "122: the Māori Party won 5 electorates while its party vote was worth only 3 seats, and kept the 2 extra as overhang seats."
+    },
+    {
+      "type": "video",
+      "src": "two-votes.mp4",
+      "poster": "two-votes.jpg",
+      "alt": "Animation on night-ocean blue: a ballot with a party vote and an electorate vote; 71 electorates; 120 seats shared in proportion, an example party's 36 as 20 local and 16 list; the 5% or one-electorate gate; 2008 bars for New Zealand First and ACT; a hemicycle growing to 122 seats.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Hidden Wonders” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "new-zealand-mmp-party-vote",
+      "prompt": "Switch on both what-ifs: ACT loses Epsom and New Zealand First wins a seat. What are their 2008 votes worth then?",
+      "takeaway": "Without Epsom, ACT’s 3.65% wins nothing; with one electorate, New Zealand First’s 4.07% would have been worth 5 seats. One local seat decides whether a small party’s votes count."
+    },
+    {
+      "type": "flow",
+      "heading": "How New Zealand’s two votes become seats",
+      "steps": [
+        {
+          "icon": "🗳️",
+          "label": "A party vote and an electorate vote"
+        },
+        {
+          "icon": "🚪",
+          "label": "In: 5% of party votes, or one electorate"
+        },
+        {
+          "icon": "📊",
+          "label": "Party votes share out the 120 seats"
+        },
+        {
+          "icon": "📍",
+          "label": "Local winners count inside each share"
+        },
+        {
+          "icon": "📋",
+          "label": "List MPs fill the rest"
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "heading": "Seats won in 2008, with each party’s share of the party vote",
+      "items": [
+        {
+          "label": "New Zealand First (4.07%)",
+          "value": 0
+        },
+        {
+          "label": "ACT (3.65%)",
+          "value": 5,
+          "emphasis": true
+        },
+        {
+          "label": "Māori Party (2.39%)",
+          "value": 5
+        },
+        {
+          "label": "Green Party (6.72%)",
+          "value": 9
+        }
+      ],
+      "unit": "seats",
+      "note": "ACT held the Epsom electorate; the Māori Party won 5 electorates; the Greens passed 5%."
+    },
+    {
+      "type": "quiz",
+      "question": "Under New Zealand’s MMP, what decides how many seats in all a party gets, once it qualifies?",
+      "options": [
+        "Its share of the party vote",
+        "How many electorates it wins",
+        "Its share of electorate votes",
+        "The length of its list"
+      ],
+      "answer": 0,
+      "explanation": "The party vote. Local winners count inside that share; only a party that wins more electorates than its share gets extra, overhang seats."
+    }
+  ],
+  "tags": [
+    "newzealand",
+    "elections",
+    "voting",
+    "parliament",
+    "mmp"
+  ],
+  "source": {
+    "label": "Wikipedia: Electoral system of New Zealand",
+    "url": "https://en.wikipedia.org/wiki/Electoral_system_of_New_Zealand"
+  },
+  "theme": {
+    "gradient": [
+      "#0f2236",
+      "#1f5c63"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T07:40:00Z",
+  "news": "2026-10-26",
+  "newsArticle": {
+    "label": "Reuters via The Star: Voting opens in New Zealand for November 7 election with no clear frontrunner",
+    "url": "https://www.thestar.com.my/news/world/2026/10/26/voting-opens-in-new-zealand-for-november-7-election-with-no-clear-frontrunner"
+  }
+}

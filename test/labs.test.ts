@@ -171,6 +171,11 @@ import { blueGreenLost as lycLost, colourOf as lycColour, extinction as lycExt, 
 import { balanced as banBalanced, balancedChance as banChance, KINDS as BAN_KINDS, sexCell as banCell } from '../src/labs/biology/cavendish-banana-three-chromosome-sets';
 import { goodOutcome as penGood, START as PEN_START, treat as penTreat, trulyAllergic as penAllergic } from '../src/labs/body/penicillin-allergy-label';
 import { fullMoons as mirMoons, goalMet as mirGoal, MOON_RATIO as MIR_MOON, patchKm as mirPatch, share as mirShare } from '../src/labs/physics/space-mirror-sunlight-spot';
+import { annualRate as gdpAnnualRate, levels as gdpLevels, quarterBehind as gdpQuarterBehind, reached as gdpReached, yearOnYear as gdpYearOnYear } from '../src/labs/economics/us-gdp-annual-rate';
+import { COUPON as BOND_COUPON, FACE as BOND_FACE, priceAt as bondPriceAt, reached as bondReached, yieldAt as bondYieldAt } from '../src/labs/economics/bond-price-yield-seesaw';
+import { electedInRoundOne as bgElected, locks as bgLocks, reached as bgReached, ROUNDS as BG_ROUNDS } from '../src/labs/politics/bulgaria-turnout-runoff';
+import { allocate as nzAllocate, electorates as nzElectorates, reached as nzReached, TOTAL as NZ_TOTAL, VOTES as NZ_VOTES } from '../src/labs/politics/new-zealand-mmp-party-vote';
+import { count as unCount, HUNGARY_DRAFT as UN_HUNGARY, NEED as UN_NEED, passes as unPasses, reached as unReached, SEATS as UN_SEATS } from '../src/labs/history/uniting-for-peace-1956';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1694,5 +1699,71 @@ describe('lab maths', () => {
     expect(mirGoal(8, 645, 0)).toBe(false);
     expect(mirGoal(8, 500, 0)).toBe(true);
     expect(mirGoal(18, 300, 0)).toBe(false);
+  it('US GDP: 3.4% at an annual rate is about 0.84% a quarter; 1.2% a quarter is about 4.9% a year', () => {
+    expect(gdpQuarterBehind(3.4)).toBeCloseTo(0.84, 2);
+    expect(gdpQuarterBehind(3.4).toFixed(1)).toBe('0.8');
+    expect(gdpAnnualRate(gdpQuarterBehind(3.4))).toBeCloseTo(3.4, 9);
+    expect(gdpAnnualRate(1.2)).toBeCloseTo(4.887, 3);
+    expect(gdpAnnualRate(1)).toBeCloseTo(4.06, 2);
+    expect(gdpYearOnYear([1, 1, 1, 1])).toBeCloseTo(gdpAnnualRate(1), 9);
+    expect(gdpLevels([0.5, 0.5, 0.5, 0.5])).toHaveLength(5);
+    expect(gdpLevels([1, 1, 1, 1])[4]).toBeCloseTo(104.0604, 4);
+    expect(gdpReached([0, 0, 0, 1])).toBe(true);
+    expect(gdpReached([0.5, 0.5, 0.5, 0.5])).toBe(false);
+    expect(gdpReached([1, 1, 1, 1])).toBe(false);
+  });
+  it('Bond seesaw: a €100 bond paying €3 is worth €100 at 3%, about €84.56 at 5%; the SEC example gives $925 and $1,082', () => {
+    expect(bondPriceAt(3, 10)).toBeCloseTo(BOND_FACE, 9);
+    expect(bondPriceAt(5, 10)).toBeCloseTo(84.56, 2);
+    expect(bondPriceAt(4, 10)).toBeCloseTo(91.89, 2);
+    expect(bondYieldAt(bondPriceAt(5, 10), 10)).toBeCloseTo(5, 6);
+    expect(bondYieldAt(90, 10)).toBeGreaterThan(bondYieldAt(95, 10));
+    expect(bondPriceAt(5, 30)).toBeCloseTo(69.255, 3);
+    expect(bondPriceAt(5, 2)).toBeCloseTo(96.28, 2);
+    expect(Math.round(bondPriceAt(2, 18, 15, 1000))).toBe(925);
+    expect(Math.round(bondPriceAt(1, 18, 15, 1000))).toBe(1082);
+    expect(BOND_COUPON).toBe(3);
+    expect(bondReached(84.6, 10)).toBe(true);
+    expect(bondReached(84.6, 30)).toBe(false);
+    expect(bondReached(100, 10)).toBe(false);
+  });
+  it('Bulgaria: a round-one win needs over half the ballots and over half the voters; 2026 and 2006 both went to runoffs', () => {
+    expect(bgElected(51, 51)).toBe(true);
+    expect(bgElected(50, 90)).toBe(false);
+    expect(bgElected(90, 50)).toBe(false);
+    expect(bgElected(BG_ROUNDS[2026].share, BG_ROUNDS[2026].turnout)).toBe(false);
+    expect(bgElected(100, BG_ROUNDS[2026].turnout)).toBe(false);
+    expect(bgElected(BG_ROUNDS[2006].share, BG_ROUNDS[2006].turnout)).toBe(false);
+    expect(bgLocks(BG_ROUNDS[2006].share, BG_ROUNDS[2006].turnout)).toEqual({ majority: true, turnout: false });
+    expect(bgReached(64, 44)).toBe(true);
+    expect(bgReached(40, 44)).toBe(false);
+    expect(bgReached(64, 60)).toBe(false);
+  });
+  it('New Zealand MMP: 2008 gives ACT 5 seats through Epsom, New Zealand First none and 2 overhang seats; with an electorate NZ First would have had 5', () => {
+    const base = nzAllocate(nzElectorates(true, false));
+    expect(base.total).toEqual({ National: 58, Labour: 43, Green: 9, ACT: 5, Maori: 5, Progressive: 1, United: 1, NZFirst: 0 });
+    expect(base.share.Maori).toBe(3);
+    expect(base.house).toBe(122);
+    const swap = nzAllocate(nzElectorates(false, true));
+    expect(swap.total.ACT).toBe(0);
+    expect(swap.total.NZFirst).toBe(5);
+    expect(nzReached(false, true)).toBe(true);
+    expect(nzReached(true, false)).toBe(false);
+    expect((NZ_VOTES.NZFirst / NZ_TOTAL) * 100).toBeCloseTo(4.07, 2);
+    expect((NZ_VOTES.ACT / NZ_TOTAL) * 100).toBeCloseTo(3.65, 2);
+  });
+  it('Uniting for Peace: a permanent no blocks a decision with 9 yes votes but not the procedural call to the Assembly', () => {
+    expect(UN_SEATS).toHaveLength(11);
+    expect(UN_NEED).toBe(7);
+    expect(unCount(UN_HUNGARY)).toEqual({ yes: 9, vetoes: 1 });
+    expect(unPasses(UN_HUNGARY, 'substantive')).toBe(false);
+    expect(unPasses(UN_HUNGARY, 'procedural')).toBe(true);
+    expect(unReached(UN_HUNGARY)).toBe(true);
+    const elected = UN_SEATS.map((s) => (s === 'elected' ? 'no' : 'yes') as 'yes' | 'no');
+    expect(unPasses(elected, 'substantive')).toBe(false);
+    expect(unCount(elected).vetoes).toBe(0);
+    const sevenYes = UN_SEATS.map((_, i) => (i < 7 ? 'yes' : 'abstain') as 'yes' | 'abstain');
+    expect(unPasses(sevenYes, 'substantive')).toBe(true);
+    expect(unReached(sevenYes)).toBe(false);
   });
 });
