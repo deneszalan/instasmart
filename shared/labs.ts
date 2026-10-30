@@ -169,6 +169,7 @@ export const LABS = {
   'tibet-quake-plateau-spreads': 'Raise a block of crust and change India’s squeeze, and see which push is biggest and whether the block breaks on a thrust, strike-slip or normal fault, as the Tibetan Plateau does.',
   'php2shell-out-of-memory-flaw': 'Fill a toy table under a memory limit, counting each entry before or after getting its memory, and see when running out leaves a half-built entry behind, the idea behind the first PHP2Shell flaw.',
   'champi-eyewall-replacement': 'Shrink a typhoon’s new outer eyewall toward the centre and watch its winds speed up as it keeps its spin, until they beat the old eyewall’s 130 knots, as Super Typhoon Champi’s did.',
+  'tortoise-distance-sampling': 'Walk a survey line past 120 tortoises, make the scrub thicker or thinner, and compare the tortoises seen with the estimate corrected by distance sampling, as on Aldabra.',
 } as const;
 
 export type LabId = keyof typeof LABS;

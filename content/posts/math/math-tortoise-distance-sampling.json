@@ -1,0 +1,179 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-tortoise-distance-sampling",
+  "field": "math",
+  "title": "Aldabra has about 180,000 giant tortoises, and maths counts the ones nobody saw",
+  "emoji": "🐢",
+  "body": "On 7 October 2026 the Seychelles Islands Foundation and the University of Exeter reported about 180,000 giant tortoises on Aldabra Atoll in the Seychelles, a best estimate of almost 183,000 adults and sub-adults for 2018 to 2021, far above the 100,000 estimated in the 1990s. That doesn't mean the population nearly doubled, [the researchers warned](https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/ecology-and-conservation/new-study-reports-largest-ever-population-estimate-for-seychelles-giant-tortoises/): the old surveys didn't account for tortoises that were there but not seen. The new count uses distance sampling. Surveyors walk set lines at dawn and note how far each tortoise they see is from the line, at right angles. They spot almost every one right by the line and fewer farther out, so the sightings thin out along a detection curve. Squeezing that curve into a strip in which every tortoise would have been seen gives an effective width, and the tortoises seen, divided by the strip's area, give the density. In dense scrub the curve drops faster, so each sighting stands for more tortoises; the team fitted a curve for each habitat and scaled up by its area.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Before this study, the most cited count of Aldabra’s giant tortoises came from the 1990s. What was it?",
+      "min": 0,
+      "max": 300000,
+      "step": 5000,
+      "answer": 100000,
+      "explanation": "About 100,000. The new estimate is about 180,000, but the researchers say that does not mean the population nearly doubled: the old counts missed tortoises hidden in scrub and shade."
+    },
+    {
+      "type": "video",
+      "src": "tortoises.mp4",
+      "poster": "tortoises.jpg",
+      "alt": "Animation on a sandy field notebook: 180,000 tortoises against 100,000 in the 1990s. A surveyor walks a red line past tortoises, seen ones solid and missed ones dashed; bars of sightings thin out with distance under a blue detection curve, squeezed into an effective strip; a ringed atoll.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Enchanted Journey” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 6,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "tortoise-distance-sampling",
+      "prompt": "Make the scrub thicker until surveyors see fewer than half of the 120 tortoises. Does the corrected estimate still land near the truth?",
+      "takeaway": "Yes, give or take chance: the corrected count divides the tortoises seen by how much of the band you can really see. Fewer sightings each stand for more tortoises, so hidden ones still count."
+    },
+    {
+      "type": "flow",
+      "heading": "Counting tortoises by distance",
+      "steps": [
+        {
+          "icon": "🚶",
+          "label": "Walk a set line at dawn"
+        },
+        {
+          "icon": "📏",
+          "label": "Note each tortoise’s distance from the line"
+        },
+        {
+          "icon": "📉",
+          "label": "Fit how sightings thin out with distance"
+        },
+        {
+          "icon": "📐",
+          "label": "Turn that into an effective strip width"
+        },
+        {
+          "icon": "🗺️",
+          "label": "Divide by the strip’s area, then scale up"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Two ways to count",
+      "left": {
+        "label": "Counting what you see",
+        "text": "Adds up the tortoises spotted. Those hidden in scrub or deep shade never count, so the total comes out too low."
+      },
+      "right": {
+        "label": "Distance sampling",
+        "text": "Uses how sightings thin out with distance to estimate how many were missed, habitat by habitat."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Why count at dawn?",
+      "text": "The surveys run between sunrise and 9 am, because tortoises tend to seek shade once it gets hot, and a tortoise in deep shade is easy to miss. The estimate covers adults and sub-adults only: young tortoises hide too well to be counted this way."
+    },
+    {
+      "type": "quiz",
+      "question": "In dense scrub on Aldabra, the detection curve drops faster with distance. What does that mean for each tortoise the surveyors see there?",
+      "options": [
+        "It stands for more tortoises",
+        "It stands for fewer tortoises",
+        "It is left out of the count",
+        "It counts only in the dry season"
+      ],
+      "answer": 0,
+      "explanation": "Where you can't see far, the effective strip is narrow, so many tortoises go unseen. Each sighting therefore stands for more of them when the count is scaled up."
+    }
+  ],
+  "tags": [
+    "statistics",
+    "sampling",
+    "tortoises",
+    "seychelles",
+    "ecology"
+  ],
+  "source": {
+    "label": "Ecology and Evolution (2026): Inferring the Abundance of an Island Megaherbivore From Semi-Structured Distance Sampling",
+    "url": "https://doi.org/10.1002/ece3.74282"
+  },
+  "theme": {
+    "gradient": [
+      "#2b2a24",
+      "#2f6f8f"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T08:30:00Z",
+  "news": "2026-10-07",
+  "newsArticle": {
+    "label": "The Guardian: Scientists discover 180,000 giant tortoises on one Seychelles island",
+    "url": "https://www.theguardian.com/environment/2026/oct/08/researchers-find-180000-giant-tortoises-living-on-island-in-seychelles"
+  }
+}

@@ -164,6 +164,7 @@ import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthK
 import { faultType as tibFault, pushes as tibPushes, stretches as tibStretch } from '../src/labs/earth/tibet-quake-plateau-spreads';
 import { ENTRIES as PHP_ENTRIES, fill as phpFill, TOTAL_KB as PHP_TOTAL } from '../src/labs/tech/php2shell-out-of-memory-flaw';
 import { BEATS_AT as CHAMPI_BEATS, innerLeft as champiLeft, OLD_KT as CHAMPI_OLD, ringSpeed as champiSpeed } from '../src/labs/earth/champi-eyewall-replacement';
+import { corrected as torCorrected, detect as torDetect, stripWidth as torStrip, TRUE_N as TOR_N, walkLine as torWalk } from '../src/labs/math/tortoise-distance-sampling';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1593,5 +1594,14 @@ describe('lab maths', () => {
     expect(champiSpeed(CHAMPI_BEATS + 1)).toBeLessThan(CHAMPI_OLD);
     expect(champiLeft(40)).toBe(1);
     expect(champiLeft(10)).toBe(0);
+  });
+  it('Tortoises: the half-normal strip is σ·√(π/2) when 50 m is far; in scrub fewer than half are seen but the corrected count lands near 120', () => {
+    expect(torDetect(0, 10)).toBe(1);
+    expect(torStrip(10)).toBeCloseTo(10 * Math.sqrt(Math.PI / 2), 1);
+    expect(torStrip(1000)).toBeCloseTo(50, 0);
+    const pts = torWalk(10, 1), seen = pts.filter((p) => p.seen).length;
+    expect(pts).toHaveLength(TOR_N);
+    expect(seen).toBeLessThan(TOR_N / 2);
+    expect(Math.abs(torCorrected(seen, 10) - TOR_N)).toBeLessThanOrEqual(TOR_N * 0.25);
   });
 });

@@ -2203,4 +2203,13 @@ export const de: Record<string, string> = {
   '{v} knots': '{v} Knoten',
   'Old eyewall left': 'Rest der alten Augenwand',
   'Simplified: the ring keeps its spin (speed × radius) and loses none to friction; the starting ring of 60 knots at 40 nautical miles is an illustration.': 'Vereinfacht: Der Ring behält seinen Drehimpuls (Geschwindigkeit × Radius) und verliert nichts durch Reibung; der Startring mit 60 Knoten in 40 Seemeilen ist nur ein Beispiel.',
+  'effective strip: {m} m each side': 'effektiver Streifen: {m} m je Seite',
+  'band: 50 m each side': 'Band: 50 m je Seite',
+  '{s} of {n} tortoises seen; corrected estimate {e}': '{s} von {n} Schildkröten gesehen; korrigierte Schätzung {e}',
+  'How far you can see into the scrub (σ)': 'Wie weit man ins Gebüsch sieht (σ)',
+  'Walk the line again': 'Die Linie noch einmal ablaufen',
+  'Tortoises seen': 'Gesehene Schildkröten',
+  'Corrected estimate': 'Korrigierte Schätzung',
+  'Really there': 'Wirklich da',
+  'Simplified: a made-up strip of 120 tortoises, with the right curve already known. The study had to fit its curves from the sightings.': 'Vereinfacht: ein erfundener Streifen mit 120 Schildkröten, die richtige Kurve ist schon bekannt. Die Studie musste ihre Kurven aus den Sichtungen ermitteln.',
 };
