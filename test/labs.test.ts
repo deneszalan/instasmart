@@ -1634,6 +1634,7 @@ describe('lab maths', () => {
     const tm = acTiming(3);
     expect(tm[0].d).toBeGreaterThan(tm[4].d);
     tm.slice(1).forEach((x, i) => expect(x.at).toBeGreaterThanOrEqual(tm[i].at + tm[i].d));
+  });
   it('Phobos: 7 h 39 min a lap, rising every 11.1 h for 4.24 h; the keep-pace orbit is 20,428 km; Deimos rises in the east', () => {
     expect(phoPeriod(PHO_PHOBOS)).toBeCloseTo(0.31891 * 24, 1);
     expect(phoPeriod(PHO_DEIMOS)).toBeCloseTo(1.26244 * 24, 1);
