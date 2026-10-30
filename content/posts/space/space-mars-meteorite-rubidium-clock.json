@@ -156,5 +156,6 @@
     "kind": "ai"
   },
   "createdAt": "2026-10-29T21:00:00Z",
-  "news": "2026-10-29"
+  "news": "2026-10-29",
+  "newsArticle": {"label": "Scientific American: Oldest known Mars rock is a ‘Rosetta stone’ for the Red Planet’s watery past", "url": "https://www.scientificamerican.com/article/oldest-known-mars-rock-is-a-rosetta-stone-for-the-red-planets-watery-past/"}
 }

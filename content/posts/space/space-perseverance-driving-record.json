@@ -168,5 +168,6 @@
     "kind": "ai"
   },
   "createdAt": "2026-10-26T21:27:01Z",
-  "news": "2026-10-11"
+  "news": "2026-10-11",
+  "newsArticle": {"label": "The Canberra Times (Reuters): NASA rover breaks record for off-planet driving on Mars", "url": "https://www.canberratimes.com.au/story/9368043/nasa-rover-breaks-record-for-off-planet-driving-on-mars/"}
 }

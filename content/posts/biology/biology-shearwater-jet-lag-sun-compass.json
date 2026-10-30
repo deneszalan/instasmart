@@ -163,5 +163,6 @@
     "kind": "ai"
   },
   "createdAt": "2026-10-29T19:00:00Z",
-  "news": "2026-10-29"
+  "news": "2026-10-29",
+  "newsArticle": {"label": "NPR: Even birds get jet lagged, study shows", "url": "https://www.npr.org/2026/10/29/nx-s1-6019228/manx-shearwater-jet-lag-birds"}
 }
