@@ -1508,6 +1508,7 @@ describe('lab maths', () => {
     const { elbow, end } = laoArmEnds(LAO_FIT);
     expect(elbow[1]).toBeGreaterThan(LAO_SHOULDER[1]);
     expect(Math.hypot(end[0] - LAO_HEAD[0], end[1] - LAO_HEAD[1])).toBeLessThan(Math.hypot(elbow[0] - LAO_HEAD[0], elbow[1] - LAO_HEAD[1]));
+  });
   it('St Peter’s colonnade: from its disc only the front column of each set of four shows; from the obelisk or the other disc the back rows show', () => {
     const cols = colonnadeColumns();
     expect(cols).toHaveLength(COL_SETS * 4);
