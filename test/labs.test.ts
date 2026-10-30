@@ -164,6 +164,7 @@ import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthK
 import { annualRate as gdpAnnualRate, levels as gdpLevels, quarterBehind as gdpQuarterBehind, reached as gdpReached, yearOnYear as gdpYearOnYear } from '../src/labs/economics/us-gdp-annual-rate';
 import { COUPON as BOND_COUPON, FACE as BOND_FACE, priceAt as bondPriceAt, reached as bondReached, yieldAt as bondYieldAt } from '../src/labs/economics/bond-price-yield-seesaw';
 import { electedInRoundOne as bgElected, locks as bgLocks, reached as bgReached, ROUNDS as BG_ROUNDS } from '../src/labs/politics/bulgaria-turnout-runoff';
+import { allocate as nzAllocate, electorates as nzElectorates, reached as nzReached, TOTAL as NZ_TOTAL, VOTES as NZ_VOTES } from '../src/labs/politics/new-zealand-mmp-party-vote';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1610,5 +1611,18 @@ describe('lab maths', () => {
     expect(bgReached(64, 44)).toBe(true);
     expect(bgReached(40, 44)).toBe(false);
     expect(bgReached(64, 60)).toBe(false);
+  });
+  it('New Zealand MMP: 2008 gives ACT 5 seats through Epsom, New Zealand First none and 2 overhang seats; with an electorate NZ First would have had 5', () => {
+    const base = nzAllocate(nzElectorates(true, false));
+    expect(base.total).toEqual({ National: 58, Labour: 43, Green: 9, ACT: 5, Maori: 5, Progressive: 1, United: 1, NZFirst: 0 });
+    expect(base.share.Maori).toBe(3);
+    expect(base.house).toBe(122);
+    const swap = nzAllocate(nzElectorates(false, true));
+    expect(swap.total.ACT).toBe(0);
+    expect(swap.total.NZFirst).toBe(5);
+    expect(nzReached(false, true)).toBe(true);
+    expect(nzReached(true, false)).toBe(false);
+    expect((NZ_VOTES.NZFirst / NZ_TOTAL) * 100).toBeCloseTo(4.07, 2);
+    expect((NZ_VOTES.ACT / NZ_TOTAL) * 100).toBeCloseTo(3.65, 2);
   });
 });

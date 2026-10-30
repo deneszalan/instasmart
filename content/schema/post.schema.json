@@ -259,7 +259,8 @@
                   "swiss-guard-sack-of-rome",
                   "us-gdp-annual-rate",
                   "bond-price-yield-seesaw",
-                  "bulgaria-turnout-runoff"
+                  "bulgaria-turnout-runoff",
+                  "new-zealand-mmp-party-vote"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

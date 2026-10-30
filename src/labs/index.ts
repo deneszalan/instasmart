@@ -169,4 +169,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'us-gdp-annual-rate': lazy(() => import('./economics/us-gdp-annual-rate')),
   'bond-price-yield-seesaw': lazy(() => import('./economics/bond-price-yield-seesaw')),
   'bulgaria-turnout-runoff': lazy(() => import('./politics/bulgaria-turnout-runoff')),
+  'new-zealand-mmp-party-vote': lazy(() => import('./politics/new-zealand-mmp-party-vote')),
 };
