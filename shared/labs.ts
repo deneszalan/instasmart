@@ -162,6 +162,8 @@ export const LABS = {
   'clapping-music-phase-shift': 'Move the second clapper of Steve Reich’s Clapping Music ahead one beat at a time, hear the two parts, and count the beats where both clap, one claps or nobody does.',
   'statue-of-liberty-enlarged-by-four': 'Enlarge Bartholdi’s 1.25 m study model of the Statue of Liberty and watch its height, its copper skin and the volume it would have if solid grow, up to the 46 m statue.',
   'laocoon-lost-arm': 'Turn and slide the bent marble arm Ludwig Pollak found until its drill hole lines up with the one in Laocoön’s shoulder, and see which way the forearm then points.',
+  'st-peters-colonnade-foci': 'Walk round a simplified plan of St Peter’s Square and watch the four rows of Bernini’s north colonnade from where you stand, until you find the disc where every set of four columns lines up into one.',
+  'vatican-double-helix-stairs': 'Wind one or two ramps up a 22 m shaft like Giuseppe Momo’s at the Vatican Museums, set how many turns each makes, and see the headroom, slope and length: a double helix halves the headroom.',
 } as const;
 
 export type LabId = keyof typeof LABS;

@@ -1,0 +1,68 @@
+{
+  "id": "engineering-vatican-double-helix-stairs",
+  "title": "Die Wendeltreppe der Vatikanischen Museen von 1932 sind zwei Rampen: hinauf und hinab",
+  "body": "1932 eröffnete Papst Pius XI. einen neuen Eingang zu den Vatikanischen Museen, mit einer Treppe des Architekten Giuseppe Momo. Für die 22 m von der Straße bis auf die Höhe der Gärten grub man einen Schacht in Form eines Kegelstumpfs in eine Bastion der alten Mauern. Darin winden sich **zwei Rampen von je 94 m, eine für Besucher, die hinaufgehen, eine für die, die herunterkommen**, laut Eröffnungsheft ([zitiert von der Direktorin der Museen](https://www.museivaticani.va/content/dam/museivaticani/pdf/eventi_novita/Area_stampa/Rassegna_stampa/2020/40_portone_simbolo_apertura.pdf)). Die zweite Rampe beginnt eine halbe Drehung versetzt, darum wechseln sich an jeder Stelle der Wand die Böden ab. Der Preis: Über jeder Rampe läuft die andere, also muss jede pro Drehung doppelt so hoch steigen wie ihre Kopfhöhe. Genau genommen sind es [Kegelspiralen](https://www.iemest.eu/life-safety-and-security/images/Doc/ARTICOLI/2016/dipaola_26/FrancescoDiPaola01.pdf), denn der Schacht wird nach unten enger. Oft heißt sie Bramante-Treppe, doch Donato Bramantes Rampe, bis 1512 für Papst Julius II. begonnen, ist eine einzige Spirale für Pferde und Maultiere. Heute ist die Treppe von 1932 der Ausgang.",
+  "slides": [
+    {
+      "question": "Giuseppe Momos Treppe von 1932 in den Vatikanischen Museen steigt von der Straße bis zur Museumsebene. Wie viele Meter?",
+      "explanation": "22 m, in einem Schacht in Form eines Kegelstumpfs. 15.000 m³ Erde wurden dafür ausgehoben, sagt das Heft von 1932."
+    },
+    {
+      "alt": "Animation in Art-déco-Grün und Bronze: ein trichterförmiger Schacht, 22 m tief, darin eine bernsteinfarbene Rampe hinauf und eine blaue hinab, eine halbe Drehung versetzt. Ein Schnitt zeigt die Böden im Wechsel; dann Bramantes einzelne Rampe mit 36 Säulen und Orvietos Doppelbrunnen.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Winde zwei Rampen den 22 m tiefen Schacht hinauf und finde die meisten Drehungen, die flachste Steigung, die noch 2,2 m Kopfhöhe lässt. Probier dann eine Rampe.",
+      "takeaway": "Bei zwei Rampen läuft die andere auf halber Höhe zwischen deinen Böden, darum sind hier höchstens 4 Drehungen drin: 15 % Steigung. Eine Rampe allein schafft 8 Drehungen mit 7 %. Die Doppelhelix zahlt mit Steilheit."
+    },
+    {
+      "alt": "Blick von oben in Giuseppe Momos Wendeltreppe in den Vatikanischen Museen: graue Stufenrampen mit weißen Kanten winden sich zwischen verzierten Bronzegeländern hinab zu einem runden Boden tief unten, mit einigen Besuchern auf den Rampen und grünem Marmor an der Wand.",
+      "caption": "Giuseppe Momos Treppe von oben: Ihre Bronzegeländer winden sich hinab in den Schacht."
+    },
+    {
+      "heading": "Welche ist die Bramante-Treppe?",
+      "left": {
+        "label": "Oft gesagt",
+        "text": "Die berühmte Doppelspirale in den Vatikanischen Museen ist Donato Bramantes Werk, aus dem frühen 16. Jahrhundert."
+      },
+      "right": {
+        "label": "Tatsächlich",
+        "text": "Die Doppelspirale ist Giuseppe Momos Werk von 1932. Bramantes Rampe, bis 1512 in einem Turm des Belvedere begonnen, ist eine Spirale mit 36 Säulen."
+      }
+    },
+    {
+      "heading": "Spiralen zum Hinauf- und Hinabgehen",
+      "events": [
+        {
+          "when": "bis 1512",
+          "text": "Donato Bramantes einzelne Spiralrampe für Julius II. wird begonnen."
+        },
+        {
+          "when": "1527–1537",
+          "text": "Orvietos Brunnen erhält zwei Rampen für Esel, hinab und hinauf."
+        },
+        {
+          "when": "7. Dez. 1932",
+          "text": "Papst Pius XI. eröffnet den Eingang mit Momos zwei Rampen."
+        },
+        {
+          "when": "2000",
+          "text": "Ein zweiter Eingang öffnet daneben."
+        }
+      ]
+    },
+    {
+      "question": "Warum muss in Giuseppe Momos Treppe von 1932 jede Rampe pro Drehung doppelt so hoch steigen wie ihre Kopfhöhe?",
+      "options": [
+        "Die andere Rampe läuft dazwischen",
+        "Der Schacht wird nach unten enger",
+        "Jede Rampe ist 94 m lang",
+        "Die Rampen bestehen aus Stufen"
+      ],
+      "explanation": "Eine halbe Drehung nachdem deine Rampe eine Stelle der Wand passiert, passiert sie die andere. Der Boden über deinem Kopf gehört also der anderen Rampe, eine halbe Drehung höher."
+    }
+  ],
+  "source": {
+    "label": "Vatikanische Museen: der Eingang von 1932 (L’Osservatore Romano, 2020, italienisch)"
+  }
+}

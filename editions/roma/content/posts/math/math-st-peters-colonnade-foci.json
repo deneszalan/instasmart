@@ -1,0 +1,179 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-st-peters-colonnade-foci",
+  "field": "math",
+  "title": "Stand on a disc in St Peter’s Square and Bernini’s four rows of columns become one",
+  "emoji": "🏛️",
+  "body": "Gian Lorenzo Bernini built the colonnades of [St Peter’s Square](https://en.wikipedia.org/wiki/St._Peter%27s_Square) in 1656–1667 for Pope Alexander VII: 284 columns and 88 pillars, four rows deep, curving round an oval. Between the obelisk and each fountain, a round stone in the paving reads *Centro del colonnato*, centre of the colonnade. Stand on one and face the nearer colonnade, and its four rows close up into one, as the [Vatican’s own page](https://www.vatican.va/content/vatican/en/ra/piastrelle-centro-del-colonnato.html) describes. The reason is geometry: the rows are **arcs of circles centred on that disc**, and each set of four columns stands on one radius, so every line of sight from the disc runs along a set and the front column hides the three behind. From anywhere else the sight lines cut across the sets. The discs are often called the oval’s foci, but [a 2026 preprint](https://www.researchsquare.com/article/rs-10455562/v1), building on earlier surveys, describes an *ovato tondo*: two circles round the discs, about 66 m apart, joined by two wider arcs into a near-ellipse.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Architect Gian Lorenzo Bernini’s colonnades round St Peter’s Square are four rows deep. How many columns do they have?",
+      "min": 50,
+      "max": 600,
+      "step": 1,
+      "answer": 284,
+      "unit": "columns",
+      "explanation": "284 columns and 88 pillars, the Vatican says, built in 1656–1667. 140 statues of saints, about 3 m tall, stand along the top."
+    },
+    {
+      "type": "video",
+      "src": "colonnade.mp4",
+      "poster": "colonnade.jpg",
+      "alt": "Animation on a dark plum ground: a plan of St Peter’s Square with its oval, obelisk, fountains and two four-row colonnades. A view panel shows the columns from a walker’s eye, a jumble of rows, then one clean row from the disc. Sight lines run from the disc along each set; circles make the oval.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Floating Cities” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "st-peters-colonnade-foci",
+      "prompt": "Walk round St Peter’s Square and find the spot where no back-row column of Bernini’s north colonnade shows.",
+      "takeaway": "Only on the disc, the centre of the colonnade’s circles, does every set of four line up, because each sight line runs along a radius. From the obelisk or anywhere else, dozens of back-row columns peek out."
+    },
+    {
+      "type": "image",
+      "src": "disc-photo.jpg",
+      "alt": "Close-up of a round white marble plaque set in the dark cobbles of St Peter’s Square, with a grey stone disc in the middle and the words CENTRO DEL COLONNATO carved round the ring.",
+      "fit": "cover",
+      "caption": "One of the two discs, set in the cobbles between the obelisk and a fountain.",
+      "credit": "Joseolgon · CC BY 4.0"
+    },
+    {
+      "type": "flow",
+      "heading": "Why the four rows line up",
+      "steps": [
+        {
+          "icon": "⭕",
+          "label": "Each colonnade is an arc of a circle"
+        },
+        {
+          "icon": "📍",
+          "label": "The disc marks that circle’s centre"
+        },
+        {
+          "icon": "📏",
+          "label": "Each set of four columns lies on one radius"
+        },
+        {
+          "icon": "👁️",
+          "label": "From the disc, sight lines run along sets"
+        },
+        {
+          "icon": "🏛️",
+          "label": "The front column hides the three behind"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Foci or centres?",
+      "left": {
+        "label": "Often said",
+        "text": "The square is an ellipse, and the discs mark its two foci."
+      },
+      "right": {
+        "label": "The geometry",
+        "text": "The plan is an oval of circle arcs, and each disc is the centre of its colonnade’s circles. That is what lines up the rows."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "On the disc between the obelisk and the north fountain of St Peter’s Square, which colonnade’s four rows close up into one?",
+      "options": [
+        "The north one, the nearer",
+        "The south one, across the square",
+        "Both at once",
+        "Neither: only from the obelisk"
+      ],
+      "answer": 0,
+      "explanation": "Each disc is the centre of the nearer colonnade’s circles. From it, the far colonnade’s sets point elsewhere, so its rows still show: its own disc is on the other side of the obelisk."
+    }
+  ],
+  "tags": [
+    "rome",
+    "vatican",
+    "bernini",
+    "geometry",
+    "circles",
+    "baroque"
+  ],
+  "source": {
+    "label": "Vatican: Centre of the colonnade, St Peter’s Square",
+    "url": "https://www.vatican.va/content/vatican/en/ra/piastrelle-centro-del-colonnato.html"
+  },
+  "createdAt": "2026-10-29T23:59:00Z",
+  "theme": {
+    "gradient": [
+      "#231a22",
+      "#4b3446"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}

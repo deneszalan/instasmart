@@ -157,6 +157,8 @@ import { fits as hitFits, LINE as HIT_LINE, OFFER as HIT_OFFER, reading as hitRe
 import { BEATS as CLAP_BEATS, NO_SILENCE as CLAP_NO_SILENCE, overlap as clapOverlap, PATTERN as CLAP_PATTERN, shifted as clapShifted } from '../src/labs/music/clapping-music-phase-shift';
 import { enlarge as solEnlarge, FULL as SOL_FULL, STAGES as SOL_STAGES } from '../src/labs/art/statue-of-liberty-enlarged-by-four';
 import { aligned as laoAligned, armEnds as laoArmEnds, FIT as LAO_FIT, HEAD as LAO_HEAD, holesOff as laoHolesOff, SHOULDER as LAO_SHOULDER } from '../src/labs/art/laocoon-lost-arm';
+import { COL_DISC, COL_ROWS, COL_SETS, colonnadeColumns, placeEye, sightFrom } from '../src/labs/math/st-peters-colonnade-foci';
+import { STAIR_HEADROOM, gentlestTurns, stairDesign } from '../src/labs/engineering/vatican-double-helix-stairs';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1506,5 +1508,34 @@ describe('lab maths', () => {
     const { elbow, end } = laoArmEnds(LAO_FIT);
     expect(elbow[1]).toBeGreaterThan(LAO_SHOULDER[1]);
     expect(Math.hypot(end[0] - LAO_HEAD[0], end[1] - LAO_HEAD[1])).toBeLessThan(Math.hypot(elbow[0] - LAO_HEAD[0], elbow[1] - LAO_HEAD[1]));
+  it('St Peter’s colonnade: from its disc only the front column of each set of four shows; from the obelisk or the other disc the back rows show', () => {
+    const cols = colonnadeColumns();
+    expect(cols).toHaveLength(COL_SETS * 4);
+    for (const c of cols) expect(Math.hypot(c.x - COL_DISC, c.y)).toBeCloseTo(COL_ROWS[c.row], 9);
+    const fromDisc = sightFrom(COL_DISC, 0);
+    expect(fromDisc.seen).toHaveLength(COL_SETS);
+    expect(fromDisc.rear).toBe(0);
+    expect(fromDisc.seen.every((c) => c.row === 0)).toBe(true);
+    expect(sightFrom(0, 0).rear).toBeGreaterThan(COL_SETS);
+    expect(sightFrom(-COL_DISC, 0).rear).toBeGreaterThan(COL_SETS);
+    expect(sightFrom(20, -30).rear).toBeGreaterThan(COL_SETS);
+    expect(placeEye(COL_DISC + 1.5, 1)).toEqual([COL_DISC, 0]);
+    const [x, y] = placeEye(300, 0);
+    expect(x).toBeLessThan(99.06);
+    expect(y).toBe(0);
+  });
+  it('Double helix stairs: a second ramp halves the headroom, so it can make at most half the turns, at twice the slope', () => {
+    const one = stairDesign(1, 4), two = stairDesign(2, 4);
+    expect(one.pitch).toBeCloseTo(5.5, 9);
+    expect(two.pitch).toBeCloseTo(5.5, 9);
+    expect(one.headroom).toBeCloseTo(5, 9);
+    expect(two.headroom).toBeCloseTo(2.25, 9);
+    expect(gentlestTurns(1)).toBe(8);
+    expect(gentlestTurns(2)).toBe(4);
+    expect(stairDesign(2, 4.5).headroom).toBeLessThan(STAIR_HEADROOM);
+    expect(stairDesign(2, 4).slope).toBeCloseTo(2 * stairDesign(1, 8).slope, 9);
+    expect(Math.round(stairDesign(2, 4).slope * 100)).toBe(15);
+    expect(Math.round(stairDesign(1, 8).slope * 100)).toBe(7);
+    expect(stairDesign(1, 1).length).toBeCloseTo(Math.hypot(2 * Math.PI * 6, 22), 9);
   });
 });
