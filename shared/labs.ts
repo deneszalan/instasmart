@@ -170,6 +170,7 @@ export const LABS = {
   'bond-price-yield-seesaw': 'Set the price paid for an example bond of €100 paying €3 a year, over 2, 10 or 30 years, and watch its yield to maturity move the other way, like a seesaw.',
   'bulgaria-turnout-runoff': 'Set the leader’s share of the ballots and the turnout in a Bulgarian presidential first round and see which of the constitution’s two conditions, over half the ballots and over half the voters, is met; load the first rounds of 2026 and 2006.',
   'new-zealand-mmp-party-vote': 'Replay New Zealand’s 2008 election under MMP: let ACT lose Epsom or New Zealand First win an electorate, and see how the 120 seats are shared by party vote, with list MPs and overhang seats.',
+  'uniting-for-peace-1956': 'Cast the votes of the UN Security Council of 1956, 11 members with 5 permanent ones, and see whether a draft passes as a decision, where a permanent member’s no is a veto, and as the procedural call to the General Assembly, where it is not.',
 } as const;
 
 export type LabId = keyof typeof LABS;

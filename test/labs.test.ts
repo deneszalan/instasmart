@@ -165,6 +165,7 @@ import { annualRate as gdpAnnualRate, levels as gdpLevels, quarterBehind as gdpQ
 import { COUPON as BOND_COUPON, FACE as BOND_FACE, priceAt as bondPriceAt, reached as bondReached, yieldAt as bondYieldAt } from '../src/labs/economics/bond-price-yield-seesaw';
 import { electedInRoundOne as bgElected, locks as bgLocks, reached as bgReached, ROUNDS as BG_ROUNDS } from '../src/labs/politics/bulgaria-turnout-runoff';
 import { allocate as nzAllocate, electorates as nzElectorates, reached as nzReached, TOTAL as NZ_TOTAL, VOTES as NZ_VOTES } from '../src/labs/politics/new-zealand-mmp-party-vote';
+import { count as unCount, HUNGARY_DRAFT as UN_HUNGARY, NEED as UN_NEED, passes as unPasses, reached as unReached, SEATS as UN_SEATS } from '../src/labs/history/uniting-for-peace-1956';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1624,5 +1625,19 @@ describe('lab maths', () => {
     expect(nzReached(true, false)).toBe(false);
     expect((NZ_VOTES.NZFirst / NZ_TOTAL) * 100).toBeCloseTo(4.07, 2);
     expect((NZ_VOTES.ACT / NZ_TOTAL) * 100).toBeCloseTo(3.65, 2);
+  });
+  it('Uniting for Peace: a permanent no blocks a decision with 9 yes votes but not the procedural call to the Assembly', () => {
+    expect(UN_SEATS).toHaveLength(11);
+    expect(UN_NEED).toBe(7);
+    expect(unCount(UN_HUNGARY)).toEqual({ yes: 9, vetoes: 1 });
+    expect(unPasses(UN_HUNGARY, 'substantive')).toBe(false);
+    expect(unPasses(UN_HUNGARY, 'procedural')).toBe(true);
+    expect(unReached(UN_HUNGARY)).toBe(true);
+    const elected = UN_SEATS.map((s) => (s === 'elected' ? 'no' : 'yes') as 'yes' | 'no');
+    expect(unPasses(elected, 'substantive')).toBe(false);
+    expect(unCount(elected).vetoes).toBe(0);
+    const sevenYes = UN_SEATS.map((_, i) => (i < 7 ? 'yes' : 'abstain') as 'yes' | 'abstain');
+    expect(unPasses(sevenYes, 'substantive')).toBe(true);
+    expect(unReached(sevenYes)).toBe(false);
   });
 });
