@@ -1,0 +1,63 @@
+{
+  "id": "politics-conclave-two-thirds",
+  "title": "In der Sixtinischen Kapelle braucht ein Papst zwei Drittel: im Mai 2025 89 von 133 Stimmen",
+  "body": "Den Papst wählen nur Kardinäle, die bei Beginn der Sedisvakanz unter 80 waren, und nur in der Sixtinischen Kapelle: im Mai 2025 133 der 135 Berechtigten. Jeder schreibt einen Namen auf einen Zettel mit dem Kopf *Eligo in Summum Pontificem* (Ich wähle zum Höchsten Pontifex) in verstellter Schrift; drei Skrutatoren lesen jede Stimme vor. Nach [Universi Dominici Gregis](https://www.vatican.va/content/john-paul-ii/en/apost_constitutions/documents/hf_jp-ii_apc_22021996_universi-dominici-gregis.html), den Regeln von 1996, braucht der Sieger **zwei Drittel** der Stimmen: 89 von 133. So können beliebige 45 Kardinäle jeden Kandidaten blockieren; keine Gruppe siegt allein. Diese Regeln erlaubten aber, nach 33 oder 34 Wahlgängen zur einfachen Mehrheit zu wechseln; der Autor Paul Collins warnte, das könne eine knappe Mehrheit zum Ausharren ermutigen. Am 11. Juni 2007 stellte Papst Benedikt XVI. die zwei Drittel für jeden Wahlgang wieder her. Nach jedem Vormittag und Nachmittag brennen die Zettel; Chemikalien färben den Rauch schwarz, oder weiß für einen neuen Papst. Am 8. Mai 2025 stieg um 18:07 Uhr nach dem vierten Wahlgang weißer Rauch auf: Robert Francis Prevost war Papst Leo XIV.",
+  "slides": [
+    {
+      "question": "Im Mai 2025 durften die Kardinäle bis zu viermal am Tag wählen. Wie viele Wahlgänge brauchte es bis zum neuen Papst?",
+      "unit": "Wahlgänge",
+      "explanation": "4: einer am Abend des 7. Mai und drei am 8. Mai, zwei am Vormittag und der vierte am Nachmittag, als um 18:07 Uhr weißer Rauch aufstieg."
+    },
+    {
+      "alt": "Animation in Scharlachrot und Elfenbein: 133 Kardinäle füllen einen Plan der Sixtinischen Kapelle; ein Stimmzettel, Eligo in Summum Pontificem, gefaltet in eine Urne; Nadel und Faden; 89 von 133 Plätzen golden; die Regel von 1996; ein Ofen, schwarzer und weißer Rauch; Leo XIV.",
+      "credit": "Roma · eigene Animation · KI-Stimme",
+      "src": "conclave-de.mp4"
+    },
+    {
+      "prompt": "Unterstütze einen Kandidaten mit Gruppen, bis er zwei Drittel hat. Wechsle dann zur Regel von 1996 für späte Wahlgänge und siege mit nur zwei Gruppen.",
+      "takeaway": "Keine zwei dieser Gruppen kommen auf 89, also müssen drei der vier zustimmen. Mit der späten Mehrheit von 67 nach der Regel von 1996 reichten die größte Gruppe und eine beliebige andere, sobald 34 Wahlgänge vorbei waren."
+    },
+    {
+      "alt": "Foto zwischen Gebäuden des Vatikans nach oben: links die hohe, schlichte Ziegelwand der Sixtinischen Kapelle mit kleinen Rundbogenfenstern oben; rechts eine kleine Kuppel und dahinter die große graue Kuppel des Petersdoms unter blassem Himmel.",
+      "caption": "Die Sixtinische Kapelle (links), außen ein schlichter Ziegelbau, neben der Kuppel des Petersdoms. Im Konklave steigt der Rauch aus einem Ofenrohr auf ihrem Dach."
+    },
+    {
+      "heading": "Ein Wahlgang in der Sixtinischen Kapelle",
+      "steps": [
+        {
+          "label": "Einen Namen schreiben, mit verstellter Hand"
+        },
+        {
+          "label": "Falten, schwören, in die Urne legen"
+        },
+        {
+          "label": "Drei Skrutatoren lesen jeden Namen vor"
+        },
+        {
+          "label": "Eine Nadel fädelt jeden Zettel durch Eligo"
+        },
+        {
+          "label": "Verbrennen: schwarzer oder weißer Rauch"
+        }
+      ]
+    },
+    {
+      "heading": "Wenn die Kardinäle sich nicht einigen",
+      "left": {
+        "label": "1996 bis 2007",
+        "text": "Zwei Drittel für die ersten 33 oder 34 Wahlgänge. Dann konnte eine Mehrheit zur einfachen Mehrheit wechseln: 67 von 133."
+      },
+      "right": {
+        "label": "Seit 2007",
+        "text": "Zwei Drittel für jeden Wahlgang. Am Ende bleiben nur die zwei Bestplatzierten übrig, und seit 2013 dürfen diese beiden nicht mitwählen."
+      }
+    },
+    {
+      "question": "Im Konklave vom Mai 2025 wählten 133 Kardinäle. Wie viele von ihnen konnten, indem sie andere wählten, jeden Kandidaten stoppen?",
+      "explanation": "45: Dann bekommt ein Kandidat höchstens 88 Stimmen, eine weniger als die nötigen 89, zwei Drittel von 133. Bei einfacher Mehrheit wären 67 nötig, und 67 könnten blockieren."
+    }
+  ],
+  "source": {
+    "label": "Vatikan: Universi Dominici Gregis (1996, englisch)"
+  }
+}

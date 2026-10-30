@@ -156,6 +156,11 @@ import { BALLOTS as LV_BALLOTS, elected as lvElected, NO_MARKS as LV_NO_MARKS, r
 import { fits as hitFits, LINE as HIT_LINE, OFFER as HIT_OFFER, reading as hitReading, WORDS as HIT_WORDS } from '../src/labs/language/hittite-bread-and-water';
 import { BEATS as CLAP_BEATS, NO_SILENCE as CLAP_NO_SILENCE, overlap as clapOverlap, PATTERN as CLAP_PATTERN, shifted as clapShifted } from '../src/labs/music/clapping-music-phase-shift';
 import { enlarge as solEnlarge, FULL as SOL_FULL, STAGES as SOL_STAGES } from '../src/labs/art/statue-of-liberty-enlarged-by-four';
+import { aligned as laoAligned, armEnds as laoArmEnds, FIT as LAO_FIT, HEAD as LAO_HEAD, holesOff as laoHolesOff, SHOULDER as LAO_SHOULDER } from '../src/labs/art/laocoon-lost-arm';
+import { COL_DISC, COL_ROWS, COL_SETS, colonnadeColumns, placeEye, sightFrom } from '../src/labs/math/st-peters-colonnade-foci';
+import { STAIR_HEADROOM, gentlestTurns, stairDesign } from '../src/labs/engineering/vatican-double-helix-stairs';
+import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need as concNeed, votes as concVotes, wins as concWins } from '../src/labs/politics/conclave-two-thirds';
+import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1495,5 +1500,72 @@ describe('lab maths', () => {
     expect(Math.round(solEnlarge(SOL_FULL).volume / 1000)).toBe(50);
     expect(SOL_STAGES.map((s) => s.m)).toEqual([1.25, 2.85, 11, 46.05]);
     expect(SOL_STAGES[2].m / SOL_STAGES[1].m).toBeCloseTo(3.86, 2);
+  });
+  it('Laocoön: the drill holes line up at one angle only; there the rigid bent arm rises and folds back toward the head', () => {
+    expect(laoHolesOff(LAO_FIT, 0)).toEqual({ deg: 0, cm: 0 });
+    expect(laoAligned(LAO_FIT, 0)).toBe(true);
+    expect(laoAligned(LAO_FIT + 3, 0)).toBe(false);
+    expect(laoAligned(LAO_FIT, 0.5)).toBe(false);
+    expect(laoAligned(196, 2.5)).toBe(false);
+    const { elbow, end } = laoArmEnds(LAO_FIT);
+    expect(elbow[1]).toBeGreaterThan(LAO_SHOULDER[1]);
+    expect(Math.hypot(end[0] - LAO_HEAD[0], end[1] - LAO_HEAD[1])).toBeLessThan(Math.hypot(elbow[0] - LAO_HEAD[0], elbow[1] - LAO_HEAD[1]));
+  });
+  it('St Peter’s colonnade: from its disc only the front column of each set of four shows; from the obelisk or the other disc the back rows show', () => {
+    const cols = colonnadeColumns();
+    expect(cols).toHaveLength(COL_SETS * 4);
+    for (const c of cols) expect(Math.hypot(c.x - COL_DISC, c.y)).toBeCloseTo(COL_ROWS[c.row], 9);
+    const fromDisc = sightFrom(COL_DISC, 0);
+    expect(fromDisc.seen).toHaveLength(COL_SETS);
+    expect(fromDisc.rear).toBe(0);
+    expect(fromDisc.seen.every((c) => c.row === 0)).toBe(true);
+    expect(sightFrom(0, 0).rear).toBeGreaterThan(COL_SETS);
+    expect(sightFrom(-COL_DISC, 0).rear).toBeGreaterThan(COL_SETS);
+    expect(sightFrom(20, -30).rear).toBeGreaterThan(COL_SETS);
+    expect(placeEye(COL_DISC + 1.5, 1)).toEqual([COL_DISC, 0]);
+    const [x, y] = placeEye(300, 0);
+    expect(x).toBeLessThan(99.06);
+    expect(y).toBe(0);
+  });
+  it('Double helix stairs: a second ramp halves the headroom, so it can make at most half the turns, at twice the slope', () => {
+    const one = stairDesign(1, 4), two = stairDesign(2, 4);
+    expect(one.pitch).toBeCloseTo(5.5, 9);
+    expect(two.pitch).toBeCloseTo(5.5, 9);
+    expect(one.headroom).toBeCloseTo(5, 9);
+    expect(two.headroom).toBeCloseTo(2.25, 9);
+    expect(gentlestTurns(1)).toBe(8);
+    expect(gentlestTurns(2)).toBe(4);
+    expect(stairDesign(2, 4.5).headroom).toBeLessThan(STAIR_HEADROOM);
+    expect(stairDesign(2, 4).slope).toBeCloseTo(2 * stairDesign(1, 8).slope, 9);
+    expect(Math.round(stairDesign(2, 4).slope * 100)).toBe(15);
+    expect(Math.round(stairDesign(1, 8).slope * 100)).toBe(7);
+    expect(stairDesign(1, 1).length).toBeCloseTo(Math.hypot(2 * Math.PI * 6, 22), 9);
+  });
+  it('Conclave: two thirds of 133 is 89 and 45 can block; no two of the imagined groups reach 89, the biggest and any other reach 67', () => {
+    expect(concNeed(CONC_N, 'two-thirds')).toBe(89);
+    expect(concNeed(CONC_N, 'late-1996')).toBe(67);
+    expect(concBlockers(CONC_N, 'two-thirds')).toBe(45);
+    expect(concNeed(120, 'two-thirds')).toBe(80);
+    expect(concNeed(115, 'two-thirds')).toBe(77);
+    expect(CONC_BLOCS.reduce((a, b) => a + b, 0)).toBe(CONC_N);
+    const pairs: boolean[][] = [];
+    for (let i = 0; i < 4; i++) for (let j = i + 1; j < 4; j++) pairs.push([0, 1, 2, 3].map((k) => k === i || k === j));
+    expect(pairs.some((c) => concWins(c, 'two-thirds'))).toBe(false);
+    expect(pairs.filter((c) => concWins(c, 'late-1996')).map(concVotes)).toEqual([84, 75, 70]);
+    expect(concWins([true, true, true, false], 'two-thirds')).toBe(true);
+    expect(concWins([false, true, true, true], 'two-thirds')).toBe(false);
+  });
+  it('Swiss Guard: 189 − 147 = 42; the Passetto on the map is about 0.75 km; taps find the 1527 route', () => {
+    expect(SG_GUARDS - SG_DIED).toBe(42);
+    expect(SG_SURVIVED).toBe(42);
+    expect(sgLength(SG_PASSETTO)).toBeGreaterThan(0.7);
+    expect(sgLength(SG_PASSETTO)).toBeLessThan(0.85);
+    expect(sgKm(SG_PLACES.obelisk1527, SG_PLACES.obeliskNow)).toBeCloseTo(0.24, 1);
+    expect(SG_ROUTE).toEqual(['obelisk1527', 'passetto', 'castle']);
+    expect(sgHit(SG_PLACES.obelisk1527)).toBe('obelisk1527');
+    expect(sgHit(SG_PLACES.obeliskNow)).toBe('obeliskNow');
+    expect(sgHit(SG_PLACES.castle)).toBe('castle');
+    expect(sgHit([41.90315, 12.4605])).toBe('passetto');
+    expect(sgHit([41.9049, 12.4600])).toBe(null);
   });
 });

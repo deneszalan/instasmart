@@ -1,0 +1,181 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-laocoon-lost-arm",
+  "field": "art",
+  "title": "For four centuries the Vatican’s Laocoön raised a restored arm; his lost one was bent",
+  "emoji": "🏛️",
+  "body": "The marble group [Laocoön and His Sons](https://en.wikipedia.org/wiki/Laoco%C3%B6n_and_His_Sons), a Trojan priest and his sons attacked by sea serpents, was dug up in January 1506 on Rome’s Esquiline Hill. The architect Giuliano da Sangallo, there with Michelangelo, knew it as the work the Roman writer Pliny the Elder had praised. Pope Julius II bought it; it stands in the Octagonal Court of the Vatican Museums, which date it, amid much debate, to about 40–30 BC. The father’s right arm was missing. Michelangelo thought it had bent back, but in 1532 the sculptor Giovanni Montorsoli added a terracotta arm raised high; that pose stayed until 1957. In 1903 the archaeologist Ludwig Pollak bought a bent marble arm in a stonecutter’s shop near the findspot, and in 1906 gave it to the Vatican. It looked too small, but earlier fittings had worn the shoulder back, and a drill hole in its break lines up with one in the shoulder’s. In 1957 Filippo Magi fitted it, with plaster in the gap. Pollak, who was Jewish, was seized in the Nazi round-up of Rome’s Jews in October 1943 and killed at Auschwitz.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "In 1906 archaeologist Ludwig Pollak gave the Vatican a bent marble arm for the Laocoön. When was it fitted?",
+      "min": 1906,
+      "max": 2000,
+      "step": 1,
+      "answer": 1957,
+      "format": "year",
+      "explanation": "In 1957. The arm waited about half a century in the Vatican Museums’ storerooms before archaeologist Filippo Magi took off the old additions and fitted it."
+    },
+    {
+      "type": "video",
+      "src": "laocoon.mp4",
+      "poster": "laocoon.jpg",
+      "alt": "Animation on dark verdigris: the Laocoön group rises from a vineyard pit into a niche, its right arm missing. A raised terracotta arm of 1532 is fitted, then taken off; in close-up a bent marble arm turns until its drill hole lines up with the shoulder's and is fitted, bent back toward the head.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration",
+      "music": "“Court of the Queen” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 24.27
+        },
+        {
+          "start": 24.53,
+          "end": 30.4
+        },
+        {
+          "start": 30.67,
+          "end": 36.53
+        },
+        {
+          "start": 36.8,
+          "end": 42.67
+        },
+        {
+          "start": 42.93,
+          "end": 48.8
+        },
+        {
+          "start": 49.07,
+          "end": 54.93
+        },
+        {
+          "start": 55.2,
+          "end": 61.07
+        },
+        {
+          "start": 61.33,
+          "end": 67.2
+        },
+        {
+          "start": 67.47,
+          "end": 73.33
+        },
+        {
+          "start": 73.6,
+          "end": 79.47
+        },
+        {
+          "start": 79.73,
+          "end": 85.6
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "laocoon-lost-arm",
+      "prompt": "Turn and slide the bent marble arm Ludwig Pollak found until its drill hole lines up with the one in Laocoön’s shoulder.",
+      "takeaway": "The holes line up at one angle only, and there the arm rises and its forearm folds back by the head: the bend is carved into the marble. Plaster fills the gap between the two breaks."
+    },
+    {
+      "type": "image",
+      "src": "laocoon-photo.jpg",
+      "fit": "cover",
+      "alt": "The marble Laocoön group against a grey wall: a bearded man in the middle, his right arm bent up and back behind his head, two youths beside him, all wound in serpents.",
+      "caption": "Laocoön and His Sons in the Vatican Museums today: Pollak’s arm is the one bent up behind the father’s head.",
+      "credit": "Marie-Lan Nguyen · Public domain"
+    },
+    {
+      "type": "timeline",
+      "heading": "The arm’s long way back",
+      "events": [
+        {
+          "when": "1506",
+          "text": "Dug up on the Esquiline; Pope Julius II buys it"
+        },
+        {
+          "when": "1532",
+          "text": "Sculptor Giovanni Montorsoli adds a raised terracotta arm"
+        },
+        {
+          "when": "1903",
+          "text": "Archaeologist Ludwig Pollak finds a bent arm; gives it in 1906"
+        },
+        {
+          "when": "1957",
+          "text": "Filippo Magi fits it, with plaster in the gap"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Is it Laocoön’s own arm?",
+      "left": {
+        "label": "For",
+        "text": "A drill hole in its break lines up perfectly with one in the shoulder’s. It looked too small only because earlier fittings had worn the shoulder back."
+      },
+      "right": {
+        "label": "Doubts",
+        "text": "Classicist Mary Beard notes a plaster wedge between arm and shoulder, a smaller scale and slightly different marble. Pollak first thought of a smaller copy."
+      }
+    },
+    {
+      "type": "stat",
+      "value": "7+",
+      "label": "pieces of marble in the Vatican’s Laocoön group",
+      "text": "The Roman writer Pliny the Elder said the Laocoön was carved from a single block. The group found in 1506 is made of at least seven interlocking pieces."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did Ludwig Pollak’s bent arm at first look too small for the Vatican’s Laocoön?",
+      "options": [
+        "Earlier fittings wore the shoulder back",
+        "It came from a child’s statue",
+        "Marble shrinks over the centuries",
+        "Pliny said the arm was small"
+      ],
+      "answer": 0,
+      "explanation": "The shoulder had been cut and worn back to fit earlier arms, so its break no longer matched. A drill hole in each break then showed that the pieces line up."
+    }
+  ],
+  "tags": [
+    "rome",
+    "vatican",
+    "laocoon",
+    "sculpture",
+    "restoration",
+    "michelangelo"
+  ],
+  "source": {
+    "label": "Vatican News: Laocoön and the Arm of Memory",
+    "url": "https://www.vaticannews.va/en/vatican-city/news/2024-05/segreti-musei-vaticani-braccio-laocoonte-ludwig-pollak-nogara.html"
+  },
+  "createdAt": "2026-10-29T23:58:31Z",
+  "theme": {
+    "gradient": [
+      "#0f1d1c",
+      "#2a4a45"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}

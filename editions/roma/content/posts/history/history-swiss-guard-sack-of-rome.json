@@ -1,0 +1,172 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-swiss-guard-sack-of-rome",
+  "field": "history",
+  "title": "The Swiss Guard swears in recruits on 6 May: that day in 1527, 147 of its 189 men died",
+  "emoji": "⚔️",
+  "body": "The Pontifical Swiss Guard counts its founding day as 22 January 1506, when 150 Swiss soldiers under Captain Kaspar von Silenen marched in through Rome’s Porta del Popolo and were blessed by Pope Julius II in the Vatican. On 6 May 1527 the army of Emperor Charles V, unpaid and out of control, stormed Rome. According to the [Guard’s own history](https://www.schweizergarde.ch/paepstliche-schweizergarde/de/ueber-uns/geschichte/), its 189 men gathered by the obelisk, which then stood beside St Peter’s Basilica, near the Campo Santo Teutonico. **147 of them died**, among them their commander Kaspar Röist, while 42 escorted Pope Clement VII along the Passetto, a corridor about 800 m long inside an old wall, to Castel Sant’Angelo. Rome was looted for eight days; when the pope surrendered in June, the Guard was disbanded, and it was formed again only in 1548. Since 1911 its new recruits have, as a rule, been sworn in on the anniversary, 6 May, in the Vatican’s San Damaso courtyard: each grasps the Guard’s flag, raises three fingers and swears to protect the pope, at the cost of his own life if need be. On 6 May 2026, 28 recruits took the oath; 2027 marks 500 years.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The Pope’s Swiss Guard counts 22 January of which year as its founding day?",
+      "min": 1400,
+      "max": 1700,
+      "step": 1,
+      "answer": 1506,
+      "format": "year",
+      "explanation": "1506: 150 Swiss under Captain Kaspar von Silenen marched in through Rome’s Porta del Popolo and were blessed by Pope Julius II in the Vatican."
+    },
+    {
+      "type": "video",
+      "src": "swissguard.mp4",
+      "poster": "swissguard.jpg",
+      "alt": "Animation on night stone in the Swiss Guard’s blue, yellow and red: 150 dots enter Rome at the Porta del Popolo in 1506; on a map of today, 189 guards by the obelisk beside St Peter’s on 6 May 1527, 147 fade, 42 go along the Passetto to Castel Sant’Angelo; the flag and the oath.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Roma · original animation · AI narration · map data © OpenStreetMap contributors",
+      "music": "“Angevin” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 4
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "swiss-guard-sack-of-rome",
+      "prompt": "Follow the 42 on a map of today: tap where the 189 guards gathered (the obelisk then stood just south of St Peter’s), then their way out, then where it led.",
+      "takeaway": "The Guard gathered beside St Peter’s, where the obelisk stood until 1586. The 42 survivors took Pope Clement VII along the Passetto, about 800 m, into Castel Sant’Angelo."
+    },
+    {
+      "type": "image",
+      "src": "passetto-photo.jpg",
+      "alt": "Photo from the top of Castel Sant’Angelo looking west: a long stone wall with arches, the Passetto, runs from the right towards the Vatican between streets and pine trees; St Peter’s dome and the Apostolic Palace stand on the skyline at the top left.",
+      "caption": "The view from Castel Sant’Angelo: the Passetto is the long wall with arches on the right, running towards the Vatican and the dome of St Peter’s Basilica.",
+      "fit": "cover",
+      "credit": "Chris 73 · CC BY-SA 3.0 · cropped"
+    },
+    {
+      "type": "timeline",
+      "heading": "The Swiss Guard and 6 May",
+      "events": [
+        {
+          "when": "22 Jan 1506",
+          "text": "150 Swiss arrive for Julius II."
+        },
+        {
+          "when": "6 May 1527",
+          "text": "147 of 189 guards die."
+        },
+        {
+          "when": "1548",
+          "text": "The Guard is formed again."
+        },
+        {
+          "when": "1911",
+          "text": "Swearing-in on 6 May from now on."
+        },
+        {
+          "when": "6 May 2027",
+          "text": "500 years since 1527."
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "I, Halberdier …, swear to keep faithfully and conscientiously all that has just been read out to me, so help me God and our holy patrons!",
+      "attribution": "Each recruit’s answer at the flag (Pontifical Swiss Guard, translated)"
+    },
+    {
+      "type": "quiz",
+      "question": "After 6 May 1527, when Rome was stormed and looted, how long were the popes without a Swiss Guard?",
+      "options": [
+        "21 years",
+        "None: it never stopped",
+        "5 years",
+        "About 100 years"
+      ],
+      "answer": 0,
+      "explanation": "When Pope Clement VII surrendered in June 1527, the Guard was disbanded and replaced by German landsknechts. It was formed again in 1548, with 150 new guards."
+    }
+  ],
+  "tags": [
+    "vatican",
+    "swissguard",
+    "papacy",
+    "renaissance",
+    "sackofrome",
+    "history"
+  ],
+  "source": {
+    "label": "Pontifical Swiss Guard: Geschichte (German)",
+    "url": "https://www.schweizergarde.ch/paepstliche-schweizergarde/de/ueber-uns/geschichte/"
+  },
+  "createdAt": "2026-10-30T00:27:42Z",
+  "theme": {
+    "gradient": [
+      "#111319",
+      "#26345a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}
