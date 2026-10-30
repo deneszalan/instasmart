@@ -161,6 +161,26 @@ import { COL_DISC, COL_ROWS, COL_SETS, colonnadeColumns, placeEye, sightFrom } f
 import { STAIR_HEADROOM, gentlestTurns, stairDesign } from '../src/labs/engineering/vatican-double-helix-stairs';
 import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need as concNeed, votes as concVotes, wins as concWins } from '../src/labs/politics/conclave-two-thirds';
 import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
+import { DAWNS as SN_DAWNS, dawnDate as snDate, fits as snFits, skyAt as snSky } from '../src/labs/art/starry-night-dawn-sky-date';
+import { finalAverage as baAverage, MEASURED as BA_MEASURED, SEEDS as BA_SEEDS, simulate as baSimulate, TIPPED as BA_TIPPED } from '../src/labs/psychology/bad-apple-rule-breaking';
+import { tryCut as mxCut, WORDS as MX_WORDS } from '../src/labs/language/maxxing-word-of-the-year';
+import { A_RATINGS as CR_A, B_RATINGS as CR_B, counted as crCounted, GOAL_IDEAS as CR_GOAL, score as crScore } from '../src/labs/psychology/adults-outscore-children-creativity';
+import { BARS as AC_BARS, recitingSyllables as acReciting, show as acShow, SLOTS as AC_SLOTS, timing as acTiming, VERSES as AC_VERSES } from '../src/labs/music/choral-evensong-anglican-chant';
+import { betweenRisings as phoBetween, DEIMOS as PHO_DEIMOS, hoursUp as phoUp, KEEP_PACE as PHO_KEEP, keepsPace as phoKeeps, PHOBOS as PHO_PHOBOS, period as phoPeriod, T_MARS as PHO_T_MARS } from '../src/labs/space/phobos-rises-in-the-west';
+import { blueGreenLost as lycLost, colourOf as lycColour, extinction as lycExt, GOLD_PPM as LYC_GOLD, hueName as lycHue, seen as lycSeen } from '../src/labs/chemistry/lycurgus-cup-gold-silver-specks';
+import { balanced as banBalanced, balancedChance as banChance, KINDS as BAN_KINDS, sexCell as banCell } from '../src/labs/biology/cavendish-banana-three-chromosome-sets';
+import { goodOutcome as penGood, START as PEN_START, treat as penTreat, trulyAllergic as penAllergic } from '../src/labs/body/penicillin-allergy-label';
+import { fullMoons as mirMoons, goalMet as mirGoal, MOON_RATIO as MIR_MOON, patchKm as mirPatch, share as mirShare } from '../src/labs/physics/space-mirror-sunlight-spot';
+import { annualRate as gdpAnnualRate, levels as gdpLevels, quarterBehind as gdpQuarterBehind, reached as gdpReached, yearOnYear as gdpYearOnYear } from '../src/labs/economics/us-gdp-annual-rate';
+import { COUPON as BOND_COUPON, FACE as BOND_FACE, priceAt as bondPriceAt, reached as bondReached, yieldAt as bondYieldAt } from '../src/labs/economics/bond-price-yield-seesaw';
+import { electedInRoundOne as bgElected, locks as bgLocks, reached as bgReached, ROUNDS as BG_ROUNDS } from '../src/labs/politics/bulgaria-turnout-runoff';
+import { allocate as nzAllocate, electorates as nzElectorates, reached as nzReached, TOTAL as NZ_TOTAL, VOTES as NZ_VOTES } from '../src/labs/politics/new-zealand-mmp-party-vote';
+import { count as unCount, HUNGARY_DRAFT as UN_HUNGARY, NEED as UN_NEED, passes as unPasses, reached as unReached, SEATS as UN_SEATS } from '../src/labs/history/uniting-for-peace-1956';
+import { faultType as tibFault, pushes as tibPushes, stretches as tibStretch } from '../src/labs/earth/tibet-quake-plateau-spreads';
+import { ENTRIES as PHP_ENTRIES, fill as phpFill, TOTAL_KB as PHP_TOTAL } from '../src/labs/tech/php2shell-out-of-memory-flaw';
+import { BEATS_AT as CHAMPI_BEATS, innerLeft as champiLeft, OLD_KT as CHAMPI_OLD, ringSpeed as champiSpeed } from '../src/labs/earth/champi-eyewall-replacement';
+import { corrected as torCorrected, detect as torDetect, stripWidth as torStrip, TRUE_N as TOR_N, walkLine as torWalk } from '../src/labs/math/tortoise-distance-sampling';
+import { buttonAt as wsiButton, landingsPerHour as wsiPerHour, minutesBetween as wsiMinutes, SPEED_KT as WSI_SPEED } from '../src/labs/engineering/western-sydney-digital-tower';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1567,5 +1587,229 @@ describe('lab maths', () => {
     expect(sgHit(SG_PLACES.castle)).toBe('castle');
     expect(sgHit([41.90315, 12.4605])).toBe('passetto');
     expect(sgHit([41.9049, 12.4600])).toBe(null);
+  });
+  it('Starry Night: the low-precision sky matches the 2026 paper and finds the same three dawns', () => {
+    const july = [21, 22, 23, 24].map((d) => snSky(7, d).sep);
+    [29.7, 18.6, 7.66, 3.2].forEach((v, i) => expect(Math.abs(july[i] - v)).toBeLessThan(0.25));
+    expect(Math.abs(snSky(6, 19, 2 + 27 / 60).lit * 100 - 63.1)).toBeLessThan(1);
+    expect(Math.abs(snSky(6, 19, 2 + 27 / 60).venus.alt - 3)).toBeLessThan(0.2);
+    expect(Math.abs(snSky(7, 22).lit * 100 - 28.44)).toBeLessThan(1);
+    const hits = SN_DAWNS.map((s, i) => [s, snDate(i)] as const).filter(([s]) => snFits(s)).map(([, d]) => `${d.day}/${d.month}`);
+    expect(hits).toEqual(['23/6', '22/7', '23/7']);
+    expect(snDate(0)).toEqual({ month: 6, day: 1 });
+    expect(snDate(60)).toEqual({ month: 7, day: 31 });
+  });
+  it('Bad apple: copying alone levels off, rare overshoots tip the group, steady rule-followers hold it', () => {
+    const avg = (e: number, steady: number) => baAverage(BA_SEEDS.map((sd) => baSimulate(e, steady, sd)));
+    expect(avg(0, 0)).toBeGreaterThan(0.3);
+    expect(avg(0, 0)).toBeLessThan(0.7);
+    expect(avg(BA_MEASURED, 0)).toBeGreaterThanOrEqual(BA_TIPPED);
+    expect(avg(0.02, 0)).toBeLessThan(BA_TIPPED);
+    expect(avg(BA_MEASURED, 0.25)).toBeLessThan(0.2);
+    const run = baSimulate(0.03, 0.2, 7);
+    expect(run.end.slice(0, run.steady).every((v) => v === 0)).toBe(true);
+    expect(run.end.every((v) => v >= 0 && v <= 1)).toBe(true);
+  });
+  it('Maxxing: each word frees its libfix at the right cut, and only there', () => {
+    expect(mxCut(0, 4)).toMatchObject({ piece: 'HOLIC', right: true });
+    expect(mxCut(0, 7)).toMatchObject({ piece: 'IC', right: false, ownParts: true });
+    expect(mxCut(1, 5).piece).toBe('GATE');
+    expect(mxCut(2, 3).piece).toBe('ATHON');
+    expect(mxCut(3, 3).piece).toBe('BURGER');
+    expect(mxCut(3, 7)).toMatchObject({ piece: 'ER', ownParts: true, right: false });
+    expect(mxCut(4, 3).piece).toBe('MAXING');
+    MX_WORDS.forEach((w, i) => {
+      const rights = Array.from({ length: w.word.length - 1 }, (_, n) => n + 1).filter((n) => mxCut(i as 0, n).right);
+      expect(rights).toEqual([w.cut]);
+    });
+  });
+  it('Creativity scoring: counting and adding reward a long list, averaging and the best three reward quality', () => {
+    const a = CR_A.slice(0, CR_GOAL);
+    expect(crScore(a, 'count')).toBeGreaterThan(crScore(CR_B, 'count'));
+    expect(crScore(a, 'sum')).toBeGreaterThan(crScore(CR_B, 'sum'));
+    expect(crScore(CR_B, 'average')).toBeGreaterThan(crScore(a, 'average'));
+    expect(crScore(CR_B, 'best3')).toBeCloseTo((4.0 + 3.6 + 3.2) / 3, 9);
+    expect(crScore(CR_B, 'best3')).toBeGreaterThan(crScore(CR_A, 'best3'));
+    expect(crScore(CR_A, 'best3')).toBeCloseTo((2.4 + 2.2 + 2.0) / 3, 9);
+    expect(crCounted(CR_B, 'best3').sort()).toEqual([0, 1, 2]);
+    expect(crCounted(CR_B, 'sum')).toEqual([0, 1, 2, 3]);
+  });
+  it('Anglican chant: 7 bars, reciting notes in bars 1 and 4, and verse 4 puts 7 syllables on one note', () => {
+    expect(AC_BARS).toHaveLength(7);
+    expect(AC_BARS.map((b, i) => (b.reciting ? i + 1 : 0)).filter(Boolean)).toEqual([1, 4]);
+    AC_VERSES.forEach((v) => expect(v).toHaveLength(AC_SLOTS.length));
+    expect([0, 1, 2, 3].map(acReciting)).toEqual([[3, 6], [1, 1], [2, 3], [7, 1]]);
+    expect(acShow(AC_VERSES[3][0])).toBe('For he that is mighty hath');
+    expect(acShow(AC_VERSES[0][4])).toBe('And my spirit hath re-');
+    const tm = acTiming(3);
+    expect(tm[0].d).toBeGreaterThan(tm[4].d);
+    tm.slice(1).forEach((x, i) => expect(x.at).toBeGreaterThanOrEqual(tm[i].at + tm[i].d));
+  });
+  it('Phobos: 7 h 39 min a lap, rising every 11.1 h for 4.24 h; the keep-pace orbit is 20,428 km; Deimos rises in the east', () => {
+    expect(phoPeriod(PHO_PHOBOS)).toBeCloseTo(0.31891 * 24, 1);
+    expect(phoPeriod(PHO_DEIMOS)).toBeCloseTo(1.26244 * 24, 1);
+    expect(Math.round(PHO_KEEP)).toBe(20428);
+    expect(phoPeriod(PHO_KEEP)).toBeCloseTo(PHO_T_MARS, 9);
+    expect(phoBetween(PHO_PHOBOS)).toBeCloseTo(11.1, 1);
+    expect(phoUp(PHO_PHOBOS)).toBeCloseTo(4.25, 1);
+    expect(phoBetween(PHO_DEIMOS)).toBeLessThan(-100);
+    expect(phoKeeps(20400)).toBe(true);
+    expect(phoKeeps(20300)).toBe(false);
+    expect(phoKeeps(20500)).toBe(false);
+    expect(phoKeeps(12000)).toBe(false);
+  });
+  it('Lycurgus Cup: with the Romans’ metal the cup looks red lit from behind and green from the front; without it, white; 40 ppm is 1 g in 25 kg', () => {
+    expect(lycHue(lycColour(lycSeen('behind', 1)))).toBe('red');
+    expect(lycHue(lycColour(lycSeen('front', 1)))).toBe('green');
+    expect(lycHue(lycColour(lycSeen('behind', 0)))).toBe('white');
+    expect(lycHue(lycColour(lycSeen('front', 0)))).toBe('white');
+    expect(lycExt(510)).toBe(1);
+    expect(lycExt(650)).toBeLessThan(0.05);
+    expect(lycLost(1)).toBeGreaterThan(0.9);
+    expect(lycLost(0)).toBe(0);
+    expect(1e6 / LYC_GOLD / 1000).toBe(25);
+  });
+  it('Cavendish: with 3 sets of 11 chromosomes about 1 sex cell in 1,024 is balanced; with pairs all are', () => {
+    expect(banChance(3, BAN_KINDS)).toBe(2 / 2048);
+    expect(Math.round(1 / banChance(3, BAN_KINDS))).toBe(1024);
+    expect(banChance(2, BAN_KINDS)).toBe(1);
+    expect(banChance(3, 1)).toBe(1);
+    const rand = rng(42);
+    let good = 0;
+    for (let i = 0; i < 200000; i++) if (banBalanced(banCell(3, BAN_KINDS, rand))) good++;
+    expect(good / 200000).toBeGreaterThan(0.0007);
+    expect(good / 200000).toBeLessThan(0.0013);
+    expect(banBalanced(banCell(2, BAN_KINDS, rand))).toBe(true);
+    expect(banCell(3, BAN_KINDS, rand).every((n) => n === 1 || n === 2)).toBe(true);
+  });
+  it('Penicillin label: 1 labelled patient in 10 is truly allergic; penicillin clears the toy infection keeping 90% of gut bacteria, a broad drug keeps 30% and lets resistant ones grow', () => {
+    expect(Array.from({ length: 100 }, (_, i) => i).filter(penAllergic).length).toBe(10);
+    const narrow = penTreat('penicillin'), broad = penTreat('broad');
+    expect(narrow.infection).toBe(0);
+    expect(broad.infection).toBe(0);
+    expect(narrow.gut / PEN_START.gut).toBeCloseTo(0.9, 9);
+    expect(broad.gut / PEN_START.gut).toBeCloseTo(0.3, 9);
+    expect(broad.resistant).toBeGreaterThan(narrow.resistant);
+    expect(penGood(narrow)).toBe(true);
+    expect(penGood(broad)).toBe(false);
+  });
+  it('Space mirror: from 645 km the patch is about 6 km wide; an 18 m mirror gives 1/111,000 of sunlight, about 3.6 full Moons', () => {
+    expect(mirPatch(645)[0]).toBeCloseTo(6.0, 1);
+    expect(Math.round(MIR_MOON / 1000)).toBe(398);
+    expect(Math.round(1 / mirShare(18, 645) / 1000)).toBe(111);
+    expect(mirMoons(18, 645)).toBeCloseTo(3.6, 1);
+    expect(mirMoons(18, 1290) / mirMoons(18, 645)).toBeCloseTo(0.25, 9);
+    expect(mirMoons(36, 645) / mirMoons(18, 645)).toBeCloseTo(4, 9);
+    expect(mirPatch(645, 60)[1]).toBeCloseTo(4 * mirPatch(645)[0], 9);
+    expect(mirGoal(8, 645, 0)).toBe(false);
+    expect(mirGoal(8, 500, 0)).toBe(true);
+    expect(mirGoal(18, 300, 0)).toBe(false);
+  });
+  it('US GDP: 3.4% at an annual rate is about 0.84% a quarter; 1.2% a quarter is about 4.9% a year', () => {
+    expect(gdpQuarterBehind(3.4)).toBeCloseTo(0.84, 2);
+    expect(gdpQuarterBehind(3.4).toFixed(1)).toBe('0.8');
+    expect(gdpAnnualRate(gdpQuarterBehind(3.4))).toBeCloseTo(3.4, 9);
+    expect(gdpAnnualRate(1.2)).toBeCloseTo(4.887, 3);
+    expect(gdpAnnualRate(1)).toBeCloseTo(4.06, 2);
+    expect(gdpYearOnYear([1, 1, 1, 1])).toBeCloseTo(gdpAnnualRate(1), 9);
+    expect(gdpLevels([0.5, 0.5, 0.5, 0.5])).toHaveLength(5);
+    expect(gdpLevels([1, 1, 1, 1])[4]).toBeCloseTo(104.0604, 4);
+    expect(gdpReached([0, 0, 0, 1])).toBe(true);
+    expect(gdpReached([0.5, 0.5, 0.5, 0.5])).toBe(false);
+    expect(gdpReached([1, 1, 1, 1])).toBe(false);
+  });
+  it('Bond seesaw: a €100 bond paying €3 is worth €100 at 3%, about €84.56 at 5%; the SEC example gives $925 and $1,082', () => {
+    expect(bondPriceAt(3, 10)).toBeCloseTo(BOND_FACE, 9);
+    expect(bondPriceAt(5, 10)).toBeCloseTo(84.56, 2);
+    expect(bondPriceAt(4, 10)).toBeCloseTo(91.89, 2);
+    expect(bondYieldAt(bondPriceAt(5, 10), 10)).toBeCloseTo(5, 6);
+    expect(bondYieldAt(90, 10)).toBeGreaterThan(bondYieldAt(95, 10));
+    expect(bondPriceAt(5, 30)).toBeCloseTo(69.255, 3);
+    expect(bondPriceAt(5, 2)).toBeCloseTo(96.28, 2);
+    expect(Math.round(bondPriceAt(2, 18, 15, 1000))).toBe(925);
+    expect(Math.round(bondPriceAt(1, 18, 15, 1000))).toBe(1082);
+    expect(BOND_COUPON).toBe(3);
+    expect(bondReached(84.6, 10)).toBe(true);
+    expect(bondReached(84.6, 30)).toBe(false);
+    expect(bondReached(100, 10)).toBe(false);
+  });
+  it('Bulgaria: a round-one win needs over half the ballots and over half the voters; 2026 and 2006 both went to runoffs', () => {
+    expect(bgElected(51, 51)).toBe(true);
+    expect(bgElected(50, 90)).toBe(false);
+    expect(bgElected(90, 50)).toBe(false);
+    expect(bgElected(BG_ROUNDS[2026].share, BG_ROUNDS[2026].turnout)).toBe(false);
+    expect(bgElected(100, BG_ROUNDS[2026].turnout)).toBe(false);
+    expect(bgElected(BG_ROUNDS[2006].share, BG_ROUNDS[2006].turnout)).toBe(false);
+    expect(bgLocks(BG_ROUNDS[2006].share, BG_ROUNDS[2006].turnout)).toEqual({ majority: true, turnout: false });
+    expect(bgReached(64, 44)).toBe(true);
+    expect(bgReached(40, 44)).toBe(false);
+    expect(bgReached(64, 60)).toBe(false);
+  });
+  it('New Zealand MMP: 2008 gives ACT 5 seats through Epsom, New Zealand First none and 2 overhang seats; with an electorate NZ First would have had 5', () => {
+    const base = nzAllocate(nzElectorates(true, false));
+    expect(base.total).toEqual({ National: 58, Labour: 43, Green: 9, ACT: 5, Maori: 5, Progressive: 1, United: 1, NZFirst: 0 });
+    expect(base.share.Maori).toBe(3);
+    expect(base.house).toBe(122);
+    const swap = nzAllocate(nzElectorates(false, true));
+    expect(swap.total.ACT).toBe(0);
+    expect(swap.total.NZFirst).toBe(5);
+    expect(nzReached(false, true)).toBe(true);
+    expect(nzReached(true, false)).toBe(false);
+    expect((NZ_VOTES.NZFirst / NZ_TOTAL) * 100).toBeCloseTo(4.07, 2);
+    expect((NZ_VOTES.ACT / NZ_TOTAL) * 100).toBeCloseTo(3.65, 2);
+  });
+  it('Uniting for Peace: a permanent no blocks a decision with 9 yes votes but not the procedural call to the Assembly', () => {
+    expect(UN_SEATS).toHaveLength(11);
+    expect(UN_NEED).toBe(7);
+    expect(unCount(UN_HUNGARY)).toEqual({ yes: 9, vetoes: 1 });
+    expect(unPasses(UN_HUNGARY, 'substantive')).toBe(false);
+    expect(unPasses(UN_HUNGARY, 'procedural')).toBe(true);
+    expect(unReached(UN_HUNGARY)).toBe(true);
+    const elected = UN_SEATS.map((s) => (s === 'elected' ? 'no' : 'yes') as 'yes' | 'no');
+    expect(unPasses(elected, 'substantive')).toBe(false);
+    expect(unCount(elected).vetoes).toBe(0);
+    const sevenYes = UN_SEATS.map((_, i) => (i < 7 ? 'yes' : 'abstain') as 'yes' | 'abstain');
+    expect(unPasses(sevenYes, 'substantive')).toBe(true);
+    expect(unReached(sevenYes)).toBe(false);
+  });
+  it('Tibet: low land under a squeeze breaks on a thrust; high land on a normal fault stretching east–west', () => {
+    expect(tibFault(0, 60)).toBe('thrust');
+    expect(tibFault(2, 60)).toBe('strike-slip');
+    expect(tibFault(5, 60)).toBe('normal');
+    expect(tibStretch(5, 60)).toBe('east-west');
+    expect(tibPushes(0, 0)).toEqual({ vertical: 100, northSouth: 100, eastWest: 100 });
+  });
+  it('PHP2Shell toy: counting first leaves a half-built entry when memory runs out; memory first does not', () => {
+    expect(PHP_TOTAL).toBe(27);
+    expect(phpFill(30, 'count-first')).toMatchObject({ crashed: false, count: PHP_ENTRIES.length, built: PHP_ENTRIES.length });
+    expect(phpFill(12, 'count-first')).toMatchObject({ crashed: true, count: 3, built: 2, halfBuilt: true });
+    expect(phpFill(12, 'memory-first')).toMatchObject({ crashed: true, count: 2, built: 2, halfBuilt: false });
+    for (let limit = 6; limit <= 30; limit++) expect(phpFill(limit, 'memory-first').halfBuilt).toBe(false);
+  });
+  it('Champi: a ring that halves its radius doubles its speed; at 18 nautical miles it beats the old 130 knots', () => {
+    expect(champiSpeed(40)).toBe(60);
+    expect(champiSpeed(20)).toBe(120);
+    expect(CHAMPI_BEATS).toBe(18);
+    expect(champiSpeed(CHAMPI_BEATS)).toBeGreaterThanOrEqual(CHAMPI_OLD);
+    expect(champiSpeed(CHAMPI_BEATS + 1)).toBeLessThan(CHAMPI_OLD);
+    expect(champiLeft(40)).toBe(1);
+    expect(champiLeft(10)).toBe(0);
+  });
+  it('Tortoises: the half-normal strip is σ·√(π/2) when 50 m is far; in scrub fewer than half are seen but the corrected count lands near 120', () => {
+    expect(torDetect(0, 10)).toBe(1);
+    expect(torStrip(10)).toBeCloseTo(10 * Math.sqrt(Math.PI / 2), 1);
+    expect(torStrip(1000)).toBeCloseTo(50, 0);
+    const pts = torWalk(10, 1), seen = pts.filter((p) => p.seen).length;
+    expect(pts).toHaveLength(TOR_N);
+    expect(seen).toBeLessThan(TOR_N / 2);
+    expect(Math.abs(torCorrected(seen, 10) - TOR_N)).toBeLessThanOrEqual(TOR_N * 0.25);
+  });
+  it('Western Sydney: 15 nautical miles is 7 minutes at about 129 knots; 5 nautical miles fits three times as many landings', () => {
+    expect(WSI_SPEED).toBeCloseTo(128.6, 1);
+    expect(wsiMinutes(15)).toBeCloseTo(7, 6);
+    expect(wsiPerHour(15)).toBeCloseTo(8.57, 2);
+    expect(wsiPerHour(5)).toBeCloseTo(3 * wsiPerHour(15), 6);
+    expect(Math.round(wsiPerHour(4))).toBe(32);
+    expect(Math.round(wsiButton(15))).toBe(8);
   });
 });

@@ -161,5 +161,6 @@
     "kind": "ai"
   },
   "createdAt": "2026-10-26T21:22:34Z",
-  "news": "2026-10-06"
+  "news": "2026-10-06",
+  "newsArticle": {"label": "Physics World: Francis Halzen wins Nobel Prize in Physics", "url": "https://physicsworld.com/a/francis-halzen-wins-nobel-prize-in-physics/"}
 }

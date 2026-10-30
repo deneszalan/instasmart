@@ -1,0 +1,185 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-western-sydney-digital-tower",
+  "field": "engineering",
+  "title": "Sydney’s new airport has no control tower: controllers 17 km away watch it on camera",
+  "emoji": "📹",
+  "body": "On 25 October 2026 Western Sydney International opened to passengers, the first major airport in Australia without a traditional control tower. Instead, [Airservices Australia says](https://www.airservicesaustralia.com/airservices-australia-launches-nations-first-purpose-built-digital-air-traffic-control-service-at-western-sydney-international-airport/), more than 20 high-resolution cameras watch the airfield and the sky around it and send their pictures to a control room at Eastern Creek, some 17 km away, where the views are joined into one panorama with each plane labelled. The catch is geometry: a plane looks half as wide at twice the distance, so an A320, 35.8 m across, seen from 28 km is as wide as a 1 cm button 8 m away. In August 2026 The Sydney Morning Herald reported that distant planes look like mosquitoes on the screens, so landing aircraft were being kept 15 nautical miles apart instead of the usual four to five, about seven minutes between landings. At that spacing no more than about 9 planes an hour could land, against 26 to 32 at the usual spacing. Airservices told the paper it had no camera changes planned and its services could safely handle the forecast flights.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Western Sydney International airport has no control tower. How far away do its air traffic controllers sit?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 17,
+      "unit": "km",
+      "explanation": "About 17 km, in a control room at Eastern Creek, watching the airport on screens fed by more than 20 cameras."
+    },
+    {
+      "type": "video",
+      "src": "tower.mp4",
+      "poster": "tower.jpg",
+      "alt": "Animation of a night airfield: a plane takes off past a crossed-out control tower and a camera mast, 17 km from a control room. Camera views join into a labelled panorama; sight lines show a plane half as wide at twice the distance; two approach lines space planes 5 and 15 nautical miles apart.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Late Night Radio” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "western-sydney-digital-tower",
+      "prompt": "Landing planes were reported kept 15 nautical miles apart. Close the gap: at what spacing could three times as many planes land each hour?",
+      "takeaway": "At 5 nautical miles: about 26 landings an hour instead of 8.6, at the same speed. Each plane in the queue is then a third as far away and looks three times as wide."
+    },
+    {
+      "type": "flow",
+      "heading": "How a digital tower works",
+      "steps": [
+        {
+          "icon": "📹",
+          "label": "Cameras on a mast film the airfield and sky"
+        },
+        {
+          "icon": "📡",
+          "label": "The feeds stream to a room 17 km away"
+        },
+        {
+          "icon": "🖥️",
+          "label": "They are joined into one panorama"
+        },
+        {
+          "icon": "🏷️",
+          "label": "Each plane is labelled and tracked"
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "heading": "Planes that could land in an hour, by spacing on the approach",
+      "items": [
+        {
+          "label": "4 nautical miles apart",
+          "value": 32
+        },
+        {
+          "label": "5 nautical miles apart",
+          "value": 26
+        },
+        {
+          "label": "15 nautical miles apart",
+          "value": 8.6,
+          "emphasis": true
+        }
+      ],
+      "unit": "per hour",
+      "note": "Worked out from the Sydney Morning Herald’s figure: 15 nautical miles is about 7 minutes."
+    },
+    {
+      "type": "text",
+      "heading": "Who decides?",
+      "text": "Australia’s Civil Aviation Safety Authority (CASA) approved the airport’s digital air traffic service in phases, with operational limits, because it is the first of its kind in Australia. It told The Sydney Morning Herald the limits would stay until it was satisfied that any changes could be made safely."
+    },
+    {
+      "type": "quiz",
+      "question": "An A320 flies twice as far from Western Sydney International’s cameras. How wide does it look on the screen?",
+      "options": [
+        "Half as wide",
+        "A quarter as wide",
+        "Just as wide",
+        "Twice as wide"
+      ],
+      "answer": 0,
+      "explanation": "The angle a plane covers is about its width divided by its distance, so twice as far means half as wide, and a quarter of the area on screen."
+    }
+  ],
+  "tags": [
+    "airports",
+    "cameras",
+    "aviation",
+    "australia",
+    "geometry"
+  ],
+  "source": {
+    "label": "Airservices Australia: nation’s first purpose-built digital air traffic control service at Western Sydney International",
+    "url": "https://www.airservicesaustralia.com/airservices-australia-launches-nations-first-purpose-built-digital-air-traffic-control-service-at-western-sydney-international-airport/"
+  },
+  "theme": {
+    "gradient": [
+      "#0a0f1a",
+      "#1f3d5c"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T09:00:00Z",
+  "news": "2026-10-25",
+  "newsArticle": {
+    "label": "The Guardian: Western Sydney airport is open from today. Here’s everything you need to know",
+    "url": "https://www.theguardian.com/australia-news/2026/oct/25/western-sydney-international-airport-wsi-open-airlines-flights-cost-transport-history"
+  }
+}

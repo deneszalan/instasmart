@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { C, label, Range, Readouts, Stage, useGoal, type LabProps } from '../kit';
+import { C, clamp, font, label, Range, Readouts, Stage, useGoal, type LabProps } from '../kit';
 import { t } from '../../i18n';
 import { formatNumber } from '../../lib/format';
 
@@ -32,32 +32,49 @@ export default function InflationBasket({ onDone }: LabProps) {
 
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
     const x0 = 12, bw = w - 24;
+    // A heading shrinks to fit a narrow phone rather than run off the edge.
+    const heading = (s: string, y: number) => {
+      font(ctx, 11);
+      label(ctx, s, x0, y, { size: Math.max(9, Math.min(11, (11 * bw) / ctx.measureText(s).width)), align: 'left', color: C.soft });
+    };
+    // On a short stage (small phones) the bars get thinner, so both rows and their labels still fit.
+    const bh = clamp((h - 82) / 2, 14, 22);
     // your spending, as one bar
-    label(ctx, t('Your spending'), x0, 12, { size: 11, align: 'left', color: C.soft });
+    heading(t('Your spending'), 9);
     let x = x0;
     for (const [key, share] of [['energy', energy], ['food', food], ['rest', 100 - energy - food]] as const) {
       ctx.fillStyle = COLOURS[key];
-      ctx.fillRect(x, 22, (bw * share) / 100, 22);
+      ctx.fillRect(x, 18, (bw * share) / 100, bh);
       x += (bw * share) / 100;
     }
-    label(ctx, t('energy spending'), x0, 56, { size: 10, align: 'left', color: COLOURS.energy });
-    label(ctx, t('food spending'), x0 + bw * 0.4, 56, { size: 10, align: 'center', color: COLOURS.food });
-    label(ctx, t('everything else you buy'), x0 + bw, 56, { size: 10, align: 'right', color: COLOURS.rest });
+    // the food label under its part of the bar, kept clear of the labels at either end
+    const ly = 18 + bh + 10;
+    font(ctx, 10);
+    const left = x0 + ctx.measureText(t('energy')).width + 8;
+    const right = x0 + bw - ctx.measureText(t('everything else')).width - 8;
+    const half = ctx.measureText(t('food')).width / 2;
+    const foodAt = clamp(x0 + (bw * (energy + food / 2)) / 100, left + half, Math.max(left + half, right - half));
+    label(ctx, t('energy'), x0, ly, { size: 10, align: 'left', color: COLOURS.energy });
+    label(ctx, t('food'), foodAt, ly, { size: 10, align: 'center', color: COLOURS.food });
+    label(ctx, t('everything else'), x0 + bw, ly, { size: 10, align: 'right', color: COLOURS.rest });
     // the pushes, on a scale of 0 to 8 points
-    const y = Math.max(88, h * 0.52), sc = bw / 8;
-    label(ctx, t('What each part adds to your inflation, in points'), x0, y - 12, { size: 11, align: 'left', color: C.soft });
+    const y = Math.min(Math.max(ly + 26, h * 0.52), h - bh - 28), sc = bw / 8;
+    heading(t('What each part adds to your inflation, in points'), y - 12);
     x = x0;
     for (const key of ['energy', 'food', 'rest'] as const) {
       ctx.fillStyle = COLOURS[key];
-      ctx.fillRect(x, y, mine[key] * sc, 22);
+      ctx.fillRect(x, y, mine[key] * sc, bh);
       x += mine[key] * sc;
     }
-    for (let p = 0; p <= 8; p += 2) label(ctx, String(p), x0 + p * sc, y + 34, { size: 10, color: C.faint });
-    // the average and the goal
-    for (const [v, col, name] of [[avg.total, C.ink, t('average basket, {v}', { v: pct(avg.total) })], [GOAL, C.accent, t('your goal, {v}', { v: pct(GOAL) })]] as const) {
+    for (let p = 0; p <= 8; p += 2) label(ctx, String(p), x0 + p * sc, y + bh + 11, { size: 10, color: C.faint });
+    // the average and the goal, close together on the scale: the average's label ends at its line, the goal's starts at its own
+    for (const [v, col, name, align] of [
+      [avg.total, C.ink, t('average basket, {v}', { v: pct(avg.total) }), 'right'],
+      [GOAL, C.accent, t('your goal, {v}', { v: pct(GOAL) }), 'left'],
+    ] as const) {
       ctx.fillStyle = col;
-      ctx.fillRect(x0 + v * sc - 1, y - 4, 2, 30);
-      label(ctx, name, x0 + v * sc, y + 46, { size: 10, color: col });
+      ctx.fillRect(x0 + v * sc - 1, y - 4, 2, bh + 8);
+      label(ctx, name, x0 + v * sc + (align === 'right' ? -4 : 4), y + bh + 23, { size: 10, color: col, align });
     }
   };
 

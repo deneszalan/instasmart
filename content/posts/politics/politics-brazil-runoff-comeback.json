@@ -156,5 +156,6 @@
     "kind": "ai"
   },
   "createdAt": "2026-10-26T21:25:45Z",
-  "news": "2026-10-25"
+  "news": "2026-10-25",
+  "newsArticle": {"label": "PBS NewsHour (AP): Incumbent Lula is declared winner of Brazil's election as Bolsonaro rejects results", "url": "https://www.pbs.org/newshour/world/incumbent-lula-is-declared-winner-of-brazils-election-as-bolsonaro-rejects-results"}
 }

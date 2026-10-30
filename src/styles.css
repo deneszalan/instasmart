@@ -152,9 +152,8 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
-  background: color-mix(in srgb, var(--bg) 92%, transparent);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  /* Solid: where a browser doesn't blur what's behind it, a see-through bar let the scrolled post's name show through. */
+  background: var(--bg);
   border-bottom: 1px solid var(--hairline);
 }
 

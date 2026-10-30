@@ -172,5 +172,6 @@
     "kind": "ai"
   },
   "createdAt": "2026-10-29T20:00:00Z",
-  "news": "2026-10-19"
+  "news": "2026-10-19",
+  "newsArticle": {"label": "Science News: A nanoparticle revealed the tiny impact of a single gas atom", "url": "https://www.sciencenews.org/article/nanoparticle-tiny-impact-gas-atom"}
 }

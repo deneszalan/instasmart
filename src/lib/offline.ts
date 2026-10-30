@@ -1,5 +1,5 @@
 import type { KnowledgeCard } from '../types';
-import { ALL_CARDS, mediaBytes } from '../data/library';
+import { ALL_CARDS, MEDIA_URLS, mediaBytes } from '../data/library';
 import { readOffline, writeOffline } from '../data/offline-set';
 import { sortCards } from './feed';
 import { LANG } from '../i18n';
@@ -90,6 +90,15 @@ export async function savedPosts(cards: readonly KnowledgeCard[] = ALL_CARDS): P
   return done;
 }
 
+/**
+ * Saved files no post of this version uses: a clip that was re-rendered comes with a new name, so the copy saved before
+ * belongs to nothing any more. Absolute URLs, as the cache keeps them.
+ */
+export function outdated(saved: Iterable<string>, current: readonly string[] = MEDIA_URLS, base = location.href): string[] {
+  const now = new Set(current.map((src) => new URL(src, base).href));
+  return [...saved].filter((url) => !now.has(url));
+}
+
 /** The offline worker is running, so the app itself opens without internet. */
 export async function appReady(): Promise<boolean> {
   if (!OFFLINE) return false;
@@ -131,6 +140,7 @@ export async function keepOffline(chosen: readonly KnowledgeCard[], onProgress: 
   for (const f of filesOf(ALL_CARDS.filter((c) => !chosenIds.has(c.id)))) {
     if (!keep.has(f.url) && saved.has(f.url)) await cache.delete(f.url);
   }
+  for (const url of outdated(saved)) await cache.delete(url);
   if (OFFLINE && import.meta.env.PROD) await navigator.serviceWorker.ready;
   const record = readOffline();
   writeOffline({ ...record, posts: { ...record.posts, [LANG]: chosen.map((c) => c.id) } });

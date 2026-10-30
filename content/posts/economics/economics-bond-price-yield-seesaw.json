@@ -1,0 +1,171 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "economics-bond-price-yield-seesaw",
+  "field": "economics",
+  "title": "Bond prices and yields move like a seesaw, and France’s 10-year yield passed 5%",
+  "emoji": "⚖️",
+  "body": "On 21 October 2026 the yield on France’s 10-year government bonds rose past 5%, the highest since 2002, AFP [reported](https://www.france24.com/en/live-news/20261021-five-things-to-know-as-french-bond-yield-tops-5), in a sell-off it linked to a budget standoff and protests. A bond’s payments are fixed when it is first sold: say €3 a year for 10 years, then €100 back. After that it is traded, and the only thing that can move is its price. Pay €100 and those payments earn 3% a year; pay about €85 and the very same payments, plus €15 more back than you paid, earn about 5% a year. That return on the price, if you hold the bond to the end, is its yield, so when prices fall yields rise, like the seesaw in the US Securities and Exchange Commission’s [guide](https://www.sec.gov/files/ib_interestraterisk.pdf). Buyers pay less when new loans pay more or when they want more for the risk; on 21 October lenders wanted about 1.6 percentage points a year more from France than from Germany, a gap called the spread. France’s old bonds keep their coupons; the higher yield is what its new borrowing will cost.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "A bond pays €3 a year for 10 years, then €100 back. What price would make it earn 5% a year?",
+      "min": 50,
+      "max": 120,
+      "step": 1,
+      "answer": 85,
+      "unit": "euros",
+      "explanation": "About €85 (€84.56). At that price the same €3 a year, plus €15 more back than you paid, works out at 5% a year. Bought for €100, it earns 3%."
+    },
+    {
+      "type": "video",
+      "src": "seesaw.mp4",
+      "poster": "seesaw.jpg",
+      "alt": "Animation in a night-blue banking hall: a gauge rises to 5% for France’s 10-year bonds; a cream bond certificate with ten €3 coupons and €100 at the end; a brass seesaw where the price falls to €92 and €85 as the yield rises to 4% and 5%; bars for France and Germany.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Gothamlicious” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "bond-price-yield-seesaw",
+      "prompt": "Find the price that makes the 10-year bond yield 5%. Then try 30 years: is the price cut bigger or smaller?",
+      "takeaway": "About €84.60 makes the 10-year bond yield 5%. The 30-year one must fall to about €69 for the same yield: the longer the fixed promise, the further its price swings when yields move."
+    },
+    {
+      "type": "compare",
+      "heading": "One bond, two prices",
+      "left": {
+        "label": "Bought for €100",
+        "text": "€3 a year, then the €100 back: a yield of 3% a year."
+      },
+      "right": {
+        "label": "Bought for about €85",
+        "text": "The same €3 a year, plus €15 more back than you paid: about 5% a year. A lower price means a higher yield."
+      }
+    },
+    {
+      "type": "chart",
+      "heading": "A $1,000 US bond paying 3%: its price one year on",
+      "items": [
+        {
+          "label": "When bought, rates at 3%",
+          "value": 1000
+        },
+        {
+          "label": "Rates fall to 2%",
+          "value": 1082
+        },
+        {
+          "label": "Rates rise to 4%",
+          "value": 925,
+          "emphasis": true
+        }
+      ],
+      "unit": "$",
+      "note": "Example from the US Securities and Exchange Commission: a 10-year Treasury bond, 9 years left."
+    },
+    {
+      "type": "text",
+      "heading": "France against Germany",
+      "text": "On 21 October 2026 investors asked about 1.6 percentage points a year more to hold France’s 10-year bonds than Germany’s, AFP reported. French government debt is almost 120% of the country’s GDP, Germany’s about 66%."
+    },
+    {
+      "type": "quiz",
+      "question": "A news report says a country’s government bond yields are rising. What is happening to the prices of its existing bonds?",
+      "options": [
+        "They are falling",
+        "They are rising",
+        "They stay at face value",
+        "Their coupons are rising"
+      ],
+      "answer": 0,
+      "explanation": "The coupons and the money back are fixed, so a higher yield can only come from a lower price. New bonds have to offer more to find buyers."
+    }
+  ],
+  "tags": [
+    "bonds",
+    "interest",
+    "france",
+    "debt",
+    "markets"
+  ],
+  "source": {
+    "label": "US Securities and Exchange Commission: Interest rate risk, when interest rates go up, prices of fixed-rate bonds fall",
+    "url": "https://www.sec.gov/files/ib_interestraterisk.pdf"
+  },
+  "theme": {
+    "gradient": [
+      "#141b33",
+      "#5b4720"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T05:40:00Z",
+  "news": "2026-10-21",
+  "newsArticle": {
+    "label": "France 24: Five things to know as French bond yield tops 5%",
+    "url": "https://www.france24.com/en/live-news/20261021-five-things-to-know-as-french-bond-yield-tops-5"
+  }
+}

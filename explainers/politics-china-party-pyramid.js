@@ -11,10 +11,17 @@
 // rigorous party self-governance". Wikipedia, "Central Committee of the Chinese Communist Party": it usually meets
 // at least once a year in a plenum; selection is done privately, usually through consultation of the Politburo.
 // Xi Jinping has been General Secretary since 2012.
+// The pyramid is drawn as elected in 2022, and labelled so. Since then: People's Daily (30 June 2026, from the
+// Organization Department): nearly 101.29 million members at the end of 2025. Communiqué of the fifth plenum
+// (29 October 2026, Chinese foreign ministry site): 162 members and 117 alternates attended; it confirmed the
+// expulsion of 33 people from the party, including Ma Xingrui and Zhang Youxia (former Politburo members, NBC News
+// from Reuters, 29 October 2026); ten alternates filled empty seats; Zhang Shengmin was elected to the Politburo.
+// It names no change to the Standing Committee, and none of its seven is among those expelled.
 //
 // Scene plan (58 s). Important things stay above y = 930; captions are centred at y = 846.
 //  A  0.0– 8.6  Hook: the fifth plenum in Beijing, 26–29 October 2026.
-//  B  8.6–31.0  The pyramid, layer by layer: members, Congress, Central Committee, Politburo, Standing Committee.
+//  B  8.6–31.0  The pyramid as elected in 2022, layer by layer: members, Congress, Central Committee, Politburo,
+//               Standing Committee.
 //  C 31.0–40.0  On paper, elections; in practice, private consultation. Plenums at least once a year.
 //  D 40.0–58.0  The five plenums of this Central Committee, and the next Congress in 2027.
 const W = 864, H = 1080;
@@ -37,7 +44,7 @@ const LAYERS = [
   { name: 'Party members', n: 96e6, label: 'more than 96 million', note: 'in 2022' },
   { name: 'National Congress', n: 2296, label: '2,296 delegates', note: 'every five years' },
   { name: 'Central Committee', n: 205, label: '205 members + 171 alternates', note: 'elected 2022' },
-  { name: 'Politburo', n: 24, label: '24 members', note: '' },
+  { name: 'Politburo', n: 24, label: '24 members', note: 'elected 2022' },
   { name: 'Standing Committee', n: 7, label: '7 members', note: '' },
   { name: 'General Secretary', n: 1, label: 'Xi Jinping, since 2012', note: '' },
 ];
@@ -50,17 +57,17 @@ const bandW = (i) => lerp(PY.w0, PY.w1, i / (LAYERS.length - 1));
 const T = { A: [0, 8.6], B: [8.6, 31.0], C: [31.0, 40.0], D: [40.0, 58] };
 const LAYER_T = [9.0, 13.4, 17.8, 22.2, 22.2, 26.6];
 const CUES = [
-  [0.4, 4.4, 'From 26 to 29 October 2026, China’s Communist Party holds its *fifth plenum*.'],
+  [0.4, 4.4, 'From 26 to 29 October 2026, China’s Communist Party held its *fifth plenum*.'],
   [4.6, 8.6, 'It’s one layer of a pyramid that decides who runs the country.'],
-  [8.8, 13.2, 'At the base: more than *96 million* party members.'],
+  [8.8, 13.2, 'At the base, in 2022: more than *96 million* party members.'],
   [13.4, 17.6, 'Every five years they send about 2,300 delegates to a *National Congress*.'],
-  [17.8, 22.0, 'The Congress elects a *Central Committee*: 205 members and 171 alternates.'],
-  [22.2, 26.4, 'That committee picks the *Politburo*, 24 members, and its *Standing Committee*, 7.'],
+  [17.8, 22.0, 'In 2022 the Congress elected a *Central Committee*: 205 members and 171 alternates.'],
+  [22.2, 26.4, 'That committee picked the *Politburo*, 24 members, and its *Standing Committee*, 7.'],
   [26.6, 30.8, 'And the *General Secretary*: since 2012, Xi Jinping.'],
   [31.0, 35.4, 'On paper, each layer elects the next. In practice, the choices are made *privately*.'],
   [35.6, 40.0, 'Between congresses the Central Committee meets about once a year, in *plenums*.'],
   [40.2, 44.6, 'This committee’s plenums have chosen leaders, reformed ministries and set a five-year plan.'],
-  [44.8, 49.2, 'The fifth is about *party discipline*: “full and rigorous party self-governance”.'],
+  [44.8, 49.2, 'The fifth was about *party discipline*: “full and rigorous party self-governance”.'],
   [49.4, 53.6, 'Its term ends at the next National Congress, due in *2027*.'],
   [53.8, 57.8, 'There, a new Central Committee is chosen, and the pyramid starts again.'],
 ];
@@ -162,6 +169,10 @@ function scenePyramid(t) {
         font(700, i >= 3 ? 30 : 34); text(i === 5 ? '1' : big, x, y + h / 2 - 14, { color: i === 5 ? C.seal : C.ink, align: right ? 'left' : 'right', base: 'middle' });
         font(500, 21); text(L.name, x, y + h / 2 + 16, { color: C.soft, align: right ? 'left' : 'right', base: 'middle' });
       });
+    });
+    // the year these numbers are from
+    A(eout(seg(t, 9.0, 9.8)) * (1 - seg(t, 31.0, 31.6)), () => {
+      font(600, 28); text('The pyramid as elected in 2022', W / 2, 140, { color: C.soft, align: 'center', base: 'middle' });
     });
     // Xi Jinping's name on the top layer
     A(span(t, 27.0, 31.0), () => {

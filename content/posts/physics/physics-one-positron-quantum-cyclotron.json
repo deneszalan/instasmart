@@ -142,5 +142,6 @@
     "kind": "ai"
   },
   "createdAt": "2026-10-27T02:59:47Z",
-  "news": "2026-10-20"
+  "news": "2026-10-20",
+  "newsArticle": {"label": "Physics World: One-positron quantum cyclotron could put the Standard Model to the test", "url": "https://physicsworld.com/a/one-positron-quantum-cyclotron-could-put-the-standard-model-to-the-test/"}
 }
