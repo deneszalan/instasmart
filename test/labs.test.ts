@@ -181,6 +181,9 @@ import { ENTRIES as PHP_ENTRIES, fill as phpFill, TOTAL_KB as PHP_TOTAL } from '
 import { BEATS_AT as CHAMPI_BEATS, innerLeft as champiLeft, OLD_KT as CHAMPI_OLD, ringSpeed as champiSpeed } from '../src/labs/earth/champi-eyewall-replacement';
 import { corrected as torCorrected, detect as torDetect, stripWidth as torStrip, TRUE_N as TOR_N, walkLine as torWalk } from '../src/labs/math/tortoise-distance-sampling';
 import { buttonAt as wsiButton, landingsPerHour as wsiPerHour, minutesBetween as wsiMinutes, SPEED_KT as WSI_SPEED } from '../src/labs/engineering/western-sydney-digital-tower';
+import { dhondt as srbDhondt, LISTS as SRB_LISTS, THRESHOLD as SRB_THRESHOLD, withYours as srbWithYours } from '../src/labs/politics/serbia-minority-lists-35-percent';
+import { BIG as ECB_BIG, hasVote as ecbHasVote, sittingOut as ecbSittingOut, SMALL as ECB_SMALL, VOTES as ECB_VOTES } from '../src/labs/economics/ecb-rotating-votes';
+import { ageFromFraction as c14Age, fractionLeft as c14Left, HALF_LIFE as C14_HALF, RANGE as C14_RANGE, THIS_YEAR as C14_NOW } from '../src/labs/history/westminster-sarcophagus-radiocarbon';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1811,5 +1814,37 @@ describe('lab maths', () => {
     expect(wsiPerHour(5)).toBeCloseTo(3 * wsiPerHour(15), 6);
     expect(Math.round(wsiPerHour(4))).toBe(32);
     expect(Math.round(wsiButton(15))).toBe(8);
+  });
+  it('Serbia 2026: d’Hondt on the preliminary count gives 140 / 104 and 6 minority seats; 12,000 votes win a seat only as a minority list', () => {
+    const r = srbDhondt(SRB_LISTS);
+    expect(r.won.reduce((a, b) => a + b, 0)).toBe(250);
+    expect(r.won[0]).toBe(140);
+    expect(r.won[1]).toBe(104);
+    expect(SRB_LISTS.reduce((s, l, i) => s + (l.minority ? r.won[i] : 0), 0)).toBe(6);
+    expect(Math.round(SRB_THRESHOLD)).toBe(128082);
+    expect(srbWithYours(12000, true).won.at(-1)).toBe(1);
+    expect(srbWithYours(12000, false).won.at(-1)).toBe(0);
+    expect(srbWithYours(130000, false).won.at(-1)).toBe(7);
+  });
+  it('ECB 2026: every month one of the big five and five of the sixteen sit out; France sits out in October, Germany in March and August', () => {
+    expect(ECB_VOTES).toBe(21);
+    for (let m = 0; m < 12; m++) {
+      const out = ecbSittingOut(m);
+      expect(out.filter((c) => ECB_BIG.includes(c))).toHaveLength(1);
+      expect(out.filter((c) => ECB_SMALL.includes(c))).toHaveLength(5);
+    }
+    expect(ecbHasVote('FR', 9)).toBe(false);
+    expect(ecbHasVote('DE', 9)).toBe(true);
+    expect([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].filter((m) => !ecbHasVote('DE', m))).toEqual([2, 7]);
+    expect(ecbSittingOut(9)).toEqual(['FR', 'LV', 'LT', 'LU', 'MT', 'AT']);
+  });
+  it('Radiocarbon: half is left after one half-life; a bone with about 88.5% left dates to the Abbey’s 987–1052', () => {
+    expect(c14Left(C14_HALF)).toBeCloseTo(0.5, 9);
+    expect(c14Age(0.5)).toBeCloseTo(C14_HALF, 6);
+    expect(c14Age(0.25)).toBeCloseTo(2 * C14_HALF, 6);
+    const year = C14_NOW - c14Age(0.885);
+    expect(year).toBeGreaterThanOrEqual(C14_RANGE[0]);
+    expect(year).toBeLessThanOrEqual(C14_RANGE[1]);
+    expect(C14_NOW - c14Age(0.8)).toBeLessThan(C14_RANGE[0]);
   });
 });

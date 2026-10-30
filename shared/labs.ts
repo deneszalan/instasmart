@@ -186,6 +186,9 @@ export const LABS = {
   'champi-eyewall-replacement': 'Shrink a typhoon’s new outer eyewall toward the centre and watch its winds speed up as it keeps its spin, until they beat the old eyewall’s 130 knots, as Super Typhoon Champi’s did.',
   'tortoise-distance-sampling': 'Walk a survey line past 120 tortoises, make the scrub thicker or thinner, and compare the tortoises seen with the estimate corrected by distance sampling, as on Aldabra.',
   'western-sydney-digital-tower': 'Change how far apart planes line up to land at Western Sydney International and see the minutes between landings, the landings an hour, and how small the next plane looks to the cameras.',
+  'serbia-minority-lists-35-percent': 'Add a list of your own to Serbia’s 2026 count, set its votes and make it a minority list or an ordinary one, and see how many of the 250 seats d’Hondt gives it: minority lists skip the 3% line and get their quotients raised by 35%.',
+  'ecb-rotating-votes': 'Step through the months of 2026 at the European Central Bank’s table of 27 and see which of the 21 governors have no vote that month under the rotation: one of the big five and five of the other sixteen.',
+  'westminster-sarcophagus-radiocarbon': 'Set how much carbon-14 a bone has left and read off the years since death on the decay curve of carbon-14, which halves every 5,700 years, until you land in the late-Saxon range Westminster Abbey got for its Roman sarcophagus.',
 } as const;
 
 export type LabId = keyof typeof LABS;

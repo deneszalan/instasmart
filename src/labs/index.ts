@@ -186,4 +186,7 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'champi-eyewall-replacement': lazy(() => import('./earth/champi-eyewall-replacement')),
   'tortoise-distance-sampling': lazy(() => import('./math/tortoise-distance-sampling')),
   'western-sydney-digital-tower': lazy(() => import('./engineering/western-sydney-digital-tower')),
+  'serbia-minority-lists-35-percent': lazy(() => import('./politics/serbia-minority-lists-35-percent')),
+  'ecb-rotating-votes': lazy(() => import('./economics/ecb-rotating-votes')),
+  'westminster-sarcophagus-radiocarbon': lazy(() => import('./history/westminster-sarcophagus-radiocarbon')),
 };
