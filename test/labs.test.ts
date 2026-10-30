@@ -181,6 +181,16 @@ import { ENTRIES as PHP_ENTRIES, fill as phpFill, TOTAL_KB as PHP_TOTAL } from '
 import { BEATS_AT as CHAMPI_BEATS, innerLeft as champiLeft, OLD_KT as CHAMPI_OLD, ringSpeed as champiSpeed } from '../src/labs/earth/champi-eyewall-replacement';
 import { corrected as torCorrected, detect as torDetect, stripWidth as torStrip, TRUE_N as TOR_N, walkLine as torWalk } from '../src/labs/math/tortoise-distance-sampling';
 import { buttonAt as wsiButton, landingsPerHour as wsiPerHour, minutesBetween as wsiMinutes, SPEED_KT as WSI_SPEED } from '../src/labs/engineering/western-sydney-digital-tower';
+import { dhondt as srbDhondt, LISTS as SRB_LISTS, THRESHOLD as SRB_THRESHOLD, withYours as srbWithYours } from '../src/labs/politics/serbia-minority-lists-35-percent';
+import { BIG as ECB_BIG, hasVote as ecbHasVote, sittingOut as ecbSittingOut, SMALL as ECB_SMALL, VOTES as ECB_VOTES } from '../src/labs/economics/ecb-rotating-votes';
+import { ageFromFraction as c14Age, fractionLeft as c14Left, HALF_LIFE as C14_HALF, RANGE as C14_RANGE, THIS_YEAR as C14_NOW } from '../src/labs/history/westminster-sarcophagus-radiocarbon';
+import { HOMOGENEOUS_AT as MARS_HOMO, iceForms as marsIce, SEEDED_AT as MARS_SEEDED } from '../src/labs/space/mars-cloud-no-dust-seeds';
+import { energyPerKg as cometEnergy, hcnFate as cometFate, peakTemperature as cometT, TNT_MJ as COMET_TNT, V_EARTH as COMET_V, V_MIN as COMET_VMIN } from '../src/labs/chemistry/comet-hcn-impact-speed';
+import { choose as qChoose, GOAL as Q_GOAL, majorityError as qMajority } from '../src/labs/physics/logical-qubit-37-for-one';
+import { errorBound as rhBound, goalMet as rhGoal, primesAbout as rhPrimes, THETA_LEAN as RH_LEAN, THETA_NEW as RH_NEW } from '../src/labs/math/quasi-riemann-zero-strip';
+import { crossingTime as snakeCross, ROLL_MAX as SNAKE_MAX, ROLL_MIN as SNAKE_MIN, slitherSpeed as snakeSlither, TRACK_M as SNAKE_TRACK } from '../src/labs/biology/reed-snake-cartwheel';
+import { canForm as bayForm, LAT_MIN as BAY_LAT, SHEAR_MAX as BAY_SHEAR, SST_MIN as BAY_SST } from '../src/labs/earth/bay-of-bengal-cyclone-season';
+import { FLOOR as CLOCK_FLOOR, profile as clockProfile, readAge as clockRead, retained as clockRetained } from '../src/labs/body/blood-cells-epigenetic-clock';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1811,5 +1821,98 @@ describe('lab maths', () => {
     expect(wsiPerHour(5)).toBeCloseTo(3 * wsiPerHour(15), 6);
     expect(Math.round(wsiPerHour(4))).toBe(32);
     expect(Math.round(wsiButton(15))).toBe(8);
+  });
+  it('Serbia 2026: d’Hondt on the preliminary count gives 140 / 104 and 6 minority seats; 12,000 votes win a seat only as a minority list', () => {
+    const r = srbDhondt(SRB_LISTS);
+    expect(r.won.reduce((a, b) => a + b, 0)).toBe(250);
+    expect(r.won[0]).toBe(140);
+    expect(r.won[1]).toBe(104);
+    expect(SRB_LISTS.reduce((s, l, i) => s + (l.minority ? r.won[i] : 0), 0)).toBe(6);
+    expect(Math.round(SRB_THRESHOLD)).toBe(128082);
+    expect(srbWithYours(12000, true).won.at(-1)).toBe(1);
+    expect(srbWithYours(12000, false).won.at(-1)).toBe(0);
+    expect(srbWithYours(130000, false).won.at(-1)).toBe(7);
+  });
+  it('ECB 2026: every month one of the big five and five of the sixteen sit out; France sits out in October, Germany in March and August', () => {
+    expect(ECB_VOTES).toBe(21);
+    for (let m = 0; m < 12; m++) {
+      const out = ecbSittingOut(m);
+      expect(out.filter((c) => ECB_BIG.includes(c))).toHaveLength(1);
+      expect(out.filter((c) => ECB_SMALL.includes(c))).toHaveLength(5);
+    }
+    expect(ecbHasVote('FR', 9)).toBe(false);
+    expect(ecbHasVote('DE', 9)).toBe(true);
+    expect([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].filter((m) => !ecbHasVote('DE', m))).toEqual([2, 7]);
+    expect(ecbSittingOut(9)).toEqual(['FR', 'LV', 'LT', 'LU', 'MT', 'AT']);
+  });
+  it('Radiocarbon: half is left after one half-life; a bone with about 88.5% left dates to the Abbey’s 987–1052', () => {
+    expect(c14Left(C14_HALF)).toBeCloseTo(0.5, 9);
+    expect(c14Age(0.5)).toBeCloseTo(C14_HALF, 6);
+    expect(c14Age(0.25)).toBeCloseTo(2 * C14_HALF, 6);
+    const year = C14_NOW - c14Age(0.885);
+    expect(year).toBeGreaterThanOrEqual(C14_RANGE[0]);
+    expect(year).toBeLessThanOrEqual(C14_RANGE[1]);
+    expect(C14_NOW - c14Age(0.8)).toBeLessThan(C14_RANGE[0]);
+  });
+  it('Mars cloud: ice needs a seed unless the vapour is about 100,000 times over saturation', () => {
+    expect(marsIce(5, 1)).toBe('none');
+    expect(marsIce(5, MARS_SEEDED)).toBe('seeded');
+    expect(marsIce(0, 1000)).toBe('none');
+    expect(marsIce(0, MARS_HOMO)).toBe('homogeneous');
+    expect(marsIce(3, MARS_HOMO * 10)).toBe('homogeneous');
+  });
+  it('Comet HCN: 28 km/s is about 94 times TNT per kilogram; head-on it destroys HCN, a 15° graze keeps it', () => {
+    expect(cometEnergy(COMET_V)).toBeCloseTo(397.6, 1);
+    expect(Math.round(cometEnergy(COMET_V) / COMET_TNT)).toBe(95);
+    expect(cometFate(cometT(COMET_V, 90))).toBe('destroyed');
+    expect(cometFate(cometT(COMET_VMIN, 90))).toBe('survives');
+    expect(cometFate(cometT(COMET_V, 15))).toBe('survives');
+    expect(cometFate(cometT(15, 90))).toBe('partly');
+    expect(cometT(10, 90)).toBeCloseTo(18.02 * Math.pow(10, 2.17), 6);
+  });
+  it('Repetition code: one copy errs as the qubit does; at 1% seven copies beat one in a million; above 50% more copies hurt', () => {
+    expect(qChoose(5, 2)).toBe(10);
+    expect(qMajority(0.01, 1)).toBeCloseTo(0.01, 12);
+    expect(qMajority(0.01, 3)).toBeCloseTo(3 * 0.0001 * 0.99 + 0.000001, 12);
+    expect(qMajority(0.5, 5)).toBeCloseTo(0.5, 12);
+    expect(qMajority(0.01, 7)).toBeLessThan(Q_GOAL);
+    expect(qMajority(0.01, 5)).toBeGreaterThan(Q_GOAL);
+    expect(qMajority(0.6, 7)).toBeGreaterThan(qMajority(0.6, 3));
+  });
+  it('Quasi-Riemann: x^θ at a billion is about 178 million for 11/12, 75 million for 7/8 and 31,623 for ½; only θ ≤ 0.71 meets the goal', () => {
+    expect(rhBound(1e9, RH_NEW)).toBeCloseTo(1.778e8, -5);
+    expect(rhBound(1e9, RH_LEAN)).toBeCloseTo(7.499e7, -5);
+    expect(rhBound(1e9, 0.5)).toBeCloseTo(31623, 0);
+    expect(rhPrimes(1e9)).toBeCloseTo(4.825e7, -5);
+    expect(rhGoal(0.5)).toBe(true);
+    expect(rhGoal(0.71)).toBe(true);
+    expect(rhGoal(0.72)).toBe(false);
+    expect(rhGoal(RH_NEW)).toBe(false);
+  });
+  it('Reed snakes: the 2.2 m track takes 0.6 s at the fastest roll and 1.28 s at the slowest; slithering takes four times longer', () => {
+    expect(SNAKE_TRACK).toBe(2.2);
+    expect(snakeCross(SNAKE_MAX)).toBeCloseTo(0.596, 3);
+    expect(snakeCross(SNAKE_MIN)).toBeCloseTo(1.279, 3);
+    expect(snakeCross(snakeSlither(3))).toBeCloseTo(4 * snakeCross(3), 9);
+    expect(snakeCross(2.2)).toBe(1);
+  });
+  it('Bay of Bengal: warm sea with strong shear gives a depression at most; low shear a cyclone; a cool sea or the equator nothing', () => {
+    expect(BAY_SST).toBe(26.5);
+    expect(bayForm(29, 20, 15)).toBe('depression');
+    expect(bayForm(29, BAY_SHEAR, 15)).toBe('cyclone');
+    expect(bayForm(26, 5, 15)).toBe('none');
+    expect(bayForm(29, 5, BAY_LAT - 5)).toBe('none');
+    expect(bayForm(29, 5, BAY_LAT)).toBe('cyclone');
+  });
+  it('blood-cells-epigenetic-clock: the toy clock reads the donor age back and the direct route erases it slowly', () => {
+    for (const a of [0, 40, 101]) expect(clockRead(clockProfile(a, 0, 'direct'))).toBeCloseTo(a, 6);
+    expect(clockRetained(0, 'direct')).toBe(1);
+    expect(clockRetained(49, 'direct')).toBeGreaterThan(0.15);
+    expect(clockRetained(49, 'direct')).toBeLessThan(0.25);
+    expect(clockRetained(1000, 'direct')).toBeCloseTo(CLOCK_FLOOR, 6);
+    expect(clockRetained(10, 'pluripotent')).toBe(0);
+    expect(clockRead(clockProfile(80, 50, 'direct'))).toBeLessThan(20);
+    expect(clockRead(clockProfile(80, 0, 'pluripotent'))).toBeCloseTo(0, 6);
+    for (const v of clockProfile(101, 0, 'direct')) { expect(v).toBeGreaterThanOrEqual(0); expect(v).toBeLessThanOrEqual(1); }
   });
 });

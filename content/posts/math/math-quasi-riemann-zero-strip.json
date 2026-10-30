@@ -1,0 +1,167 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "math-quasi-riemann-zero-strip",
+  "field": "math",
+  "title": "An AI-written proof narrows where the zeta zeros can hide; Riemann’s line stays unproven",
+  "emoji": "📐",
+  "body": "On 6 October 2026 OpenAI posted 722 mathematics manuscripts to a [public repository](https://github.com/openai/math), and one claims the quasi-Riemann hypothesis, [Quanta Magazine reported](https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/). The Riemann zeta function, 1 + 1/2ˢ + 1/3ˢ + …, equals a product with one factor per prime, so the points where it vanishes control how the primes are spread; those zeros lie in a strip with real part between 0 and 1, and [Riemann’s 1859 conjecture](https://www.claymath.org/millennium/riemann-hypothesis/), says they all sit on the middle line, real part ½. The AI’s papers claim less: no zeros beyond 11/12 or below 1/12. A 199-page version proving the looser bounds 1/8 and 7/8 was machine-checked in the Lean proof assistant; the 49-page 11/12 version has not been, and mathematicians reading it think it holds, though Peter Sarnak will not call it a theorem until every detail is checked. The zero furthest from the edge sets how far prime counts can stray, by roughly x to the power θ: up to a billion, about 180 million for 11/12, against about 32,000 if Riemann is right.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The Riemann hypothesis says every nontrivial zero of the zeta function has a real part of exactly what?",
+      "min": 0,
+      "max": 1,
+      "step": 0.05,
+      "answer": 0.5,
+      "explanation": "One half. The zeros are known to lie in the strip between 0 and 1; Riemann’s 1859 guess puts them all on the middle line. The new AI papers only narrow the strip, to between 1/12 and 11/12."
+    },
+    {
+      "type": "video",
+      "src": "zeros.mp4",
+      "poster": "zeros.jpg",
+      "alt": "Animation on chalkboard blue: a stack of manuscripts, the zeta series and Euler’s product, a critical strip with a gold dashed line at ½ and white zeros on it, red walls at 1/12 and 11/12 and green dashed ones at 1/8 and 7/8, and log-scale bars of x to the theta up to a billion.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Dreamer” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 8,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 24.27
+        },
+        {
+          "start": 24.53,
+          "end": 30.4
+        },
+        {
+          "start": 30.67,
+          "end": 36.53
+        },
+        {
+          "start": 36.8,
+          "end": 42.67
+        },
+        {
+          "start": 42.93,
+          "end": 48.8
+        },
+        {
+          "start": 49.07,
+          "end": 54.93
+        },
+        {
+          "start": 55.2,
+          "end": 61.07
+        },
+        {
+          "start": 61.33,
+          "end": 67.2
+        },
+        {
+          "start": 67.47,
+          "end": 73.33
+        },
+        {
+          "start": 73.6,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "quasi-riemann-zero-strip",
+      "prompt": "Count primes up to a trillion. Slide θ until the error bound falls under 1% of the count. How far below 11/12 must it go?",
+      "takeaway": "To about 0.71. The 11/12 bound still allows an error near 10% of the prime count up to a trillion, 7/8 about 5%, while Riemann’s ½ would give one millionth. Narrowing the strip helps; only the line makes the bound tiny."
+    },
+    {
+      "type": "timeline",
+      "heading": "From Riemann to the AI papers",
+      "events": [
+        {
+          "when": "1859",
+          "text": "Bernhard Riemann conjectures that all the zeros have real part ½"
+        },
+        {
+          "when": "1896",
+          "text": "Hadamard and de la Vallée Poussin: no zeros on the strip’s edges"
+        },
+        {
+          "when": "2000",
+          "text": "The Clay Institute makes it a Millennium Prize Problem"
+        },
+        {
+          "when": "6 Oct 2026",
+          "text": "OpenAI posts 722 AI manuscripts, one claiming no zeros beyond 11/12"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "What is checked, what is claimed",
+      "left": {
+        "label": "Checked in Lean",
+        "text": "A 199-page version: all zeros have real part between 1/8 and 7/8, verified line by line by the Lean proof assistant, Quanta reports."
+      },
+      "right": {
+        "label": "Being read",
+        "text": "A 49-page version: between 1/12 and 11/12. Not machine-checked; experts who read it think it holds. Not a theorem yet, says Peter Sarnak."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "What would the quasi-Riemann hypothesis, as claimed in October 2026, say about the zeta function’s zeros?",
+      "options": [
+        "They keep away from the strip’s edges",
+        "They all sit on the line ½",
+        "There are only finitely many",
+        "They are all whole numbers"
+      ],
+      "answer": 0,
+      "explanation": "No zero has real part beyond 11/12 or below 1/12: the strip where zeros can live shrinks. Riemann’s full hypothesis, every zero on the line ½, remains open."
+    }
+  ],
+  "tags": [
+    "riemann",
+    "primes",
+    "zeta",
+    "ai",
+    "proofs",
+    "openai"
+  ],
+  "source": {
+    "label": "GitHub: openai/math, the repository of OpenAI’s AI-written mathematics manuscripts",
+    "url": "https://github.com/openai/math"
+  },
+  "theme": {
+    "gradient": [
+      "#13203a",
+      "#2a3a5a"
+    ]
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T13:00:00Z",
+  "news": "2026-10-06",
+  "newsArticle": {
+    "label": "Quanta Magazine: AI Proved the Quasi-Riemann Hypothesis. What Happens Now?",
+    "url": "https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/"
+  }
+}

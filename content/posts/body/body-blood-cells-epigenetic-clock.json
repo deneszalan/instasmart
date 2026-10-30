@@ -1,0 +1,177 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-blood-cells-epigenetic-clock",
+  "field": "body",
+  "title": "An 80-year-old’s blood cells became brain stem cells that read under 20 on the DNA clock",
+  "emoji": "🧬",
+  "body": "On 9 October 2026 the University of Bonn reported that red blood cell precursors from an 80-year-old, converted directly into neural stem cells, had a molecular age of under 20 by [epigenetic clocks](https://www.uni-bonn.de/en/news/211-2026), the rejuvenation unfolding over more than 100 days, as [Nautilus reported](https://nautil.us/blood-cells-from-an-80-year-old-transformed-into-young-brain-cells-1285722). Such clocks read the methyl tags on DNA at CpG sites, which drift with age: Steve Horvath’s 2013 clock fits age to [353 of them](https://en.wikipedia.org/wiki/Epigenetic_clock) with a median error of 3.6 years across 51 tissues, and reads near zero for embryonic and induced pluripotent stem cells. Oliver Brüstle’s team skipped the pluripotent stage, converting blood precursors from 15 donors aged newborn to 101 with the factors SOX2 and cMYC; the new cells kept on average about [13% of their donor’s age](https://pubmed.ncbi.nlm.nih.gov/42829448/), 5% after longer culture, with most age marks reset after about 50 days. It is a cell model in a dish, not a treatment; the authors see the slow reset as a way to study what speeds rejuvenation up or slows it down.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Steve Horvath’s 2013 epigenetic clock reads age from methylation at how many CpG sites?",
+      "min": 10,
+      "max": 1000,
+      "step": 1,
+      "answer": 353,
+      "unit": "sites",
+      "explanation": "353 sites, picked by an elastic-net fit to about 8,000 samples from 51 tissues and cell types; 193 of them gain methyl tags with age and 160 lose them. Its median error is 3.6 years."
+    },
+    {
+      "type": "video",
+      "src": "clock.mp4",
+      "poster": "clock.jpg",
+      "alt": "Animation on deep plum: a red blood precursor becomes a mint neural stem cell as a gold gauge falls from 80 to under 20, a DNA band of CpG sites fills with coral methyl tags as an age counter climbs, two routes to a neural stem cell are compared, and a curve shows age marks fading over 100 days.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Folk Round” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 6,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12.27
+        },
+        {
+          "start": 12.53,
+          "end": 18.4
+        },
+        {
+          "start": 18.67,
+          "end": 24.53
+        },
+        {
+          "start": 24.8,
+          "end": 30.67
+        },
+        {
+          "start": 30.93,
+          "end": 36.8
+        },
+        {
+          "start": 37.07,
+          "end": 42.93
+        },
+        {
+          "start": 43.2,
+          "end": 49.07
+        },
+        {
+          "start": 49.33,
+          "end": 55.2
+        },
+        {
+          "start": 55.47,
+          "end": 61.33
+        },
+        {
+          "start": 61.6,
+          "end": 67.47
+        },
+        {
+          "start": 67.73,
+          "end": 73.6
+        },
+        {
+          "start": 73.87,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "blood-cells-epigenetic-clock",
+      "prompt": "Take an 80-year-old’s cells down the direct route. How many days of conversion does it take before the toy clock reads under 20?",
+      "takeaway": "In the toy model the marks fade along a smooth curve, so an 80-year-old’s cells read under 20 after about seven weeks, as the Bonn cells did after about 50 days; the pluripotent route erases them at once."
+    },
+    {
+      "type": "compare",
+      "heading": "Two routes to a neural stem cell",
+      "left": {
+        "label": "Via pluripotent cells",
+        "text": "The usual route first reprograms blood cells into induced pluripotent stem cells, which resets the clock to near zero at once, then makes neural stem cells."
+      },
+      "right": {
+        "label": "Direct (Bonn, 2026)",
+        "text": "SOX2 and cMYC turn blood precursors straight into neural stem cells. The clock still resets, but slowly: most age marks go in about 50 days."
+      }
+    },
+    {
+      "type": "flow",
+      "heading": "What the clock reads",
+      "steps": [
+        {
+          "icon": "🧬",
+          "label": "Methyl tags sit on DNA at CpG sites"
+        },
+        {
+          "icon": "⏳",
+          "label": "With age some sites gain tags, some lose"
+        },
+        {
+          "icon": "🧮",
+          "label": "A formula over 353 sites gives an age"
+        },
+        {
+          "icon": "🎯",
+          "label": "Median error 3.6 years across 51 tissues"
+        },
+        {
+          "icon": "🔄",
+          "label": "Reprogramming to stem cells resets it"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why did the Bonn team welcome the fact that the clock reset slowly, over weeks rather than at once?",
+      "options": [
+        "A slow reset can be watched and probed",
+        "Slow resets make older cells",
+        "Fast resets damage the DNA code",
+        "The cells divide faster that way"
+      ],
+      "answer": 0,
+      "explanation": "Rejuvenation could be tracked for over 100 days, so the conversion serves as a model for testing what speeds the reset up or slows it down; the de-ageing even continued with cell division blocked."
+    },
+    {
+      "type": "text",
+      "heading": "What it does not show",
+      "text": "The cells were converted in culture; no person was made younger, and the clock measures methylation marks, not health or function. The study reports that the de-aged cells lacked the usual age-associated hallmarks, like iPS-derived cells, but what the marks do for a cell, and for ageing, is still being worked out."
+    }
+  ],
+  "tags": [
+    "epigenetics",
+    "ageing",
+    "stemcells",
+    "dna",
+    "methylation",
+    "bonn"
+  ],
+  "source": {
+    "label": "Wikipedia: Epigenetic clock",
+    "url": "https://en.wikipedia.org/wiki/Epigenetic_clock"
+  },
+  "theme": {
+    "gradient": [
+      "#1b1030",
+      "#2a1540"
+    ]
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T15:00:00Z",
+  "news": "2026-10-09",
+  "newsArticle": {
+    "label": "Nautilus: Blood Cells From an 80-Year-Old Transformed into Young Brain Cells",
+    "url": "https://nautil.us/blood-cells-from-an-80-year-old-transformed-into-young-brain-cells-1285722"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "economics-ecb-rotating-votes",
+  "field": "economics",
+  "title": "When the ECB held its rates on 29 October, France’s central bank governor had no vote",
+  "emoji": "🏦",
+  "body": "On 29 October 2026 the European Central Bank’s Governing Council [kept its three key rates unchanged](https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html), with the deposit facility at 2.50%, and France’s central bank governor sat at the table without a vote. The council has 27 members, the ECB’s six-member Executive Board and the 21 national central bank governors, but only 21 votes: the board members always vote, while the governors share 15 votes that [rotate every month](https://www.ecb.europa.eu/ecb/educational/explainers/tell-me-more/html/voting-rotation.en.html). Governors are ranked by the size of their economy and financial sector: the top five, Germany, France, Italy, Spain and the Netherlands, share four votes, so one of them sits out each month; the other sixteen share eleven, so five sit out. The [timetable for 2026](https://www.ecb.europa.eu/ecb/orga/decisions/govc/html/votingrights.en.html) gave France its months off in May and October; in November it is Italy’s turn. Everyone attends and speaks; the rotation decides only who votes. It began on 1 January 2015, when Lithuania’s entry into the euro took the number of governors above 18.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The European Central Bank’s council has 27 members. How many votes are there when it sets interest rates?",
+      "min": 0,
+      "max": 27,
+      "step": 1,
+      "answer": 21,
+      "explanation": "21: the six Executive Board members always vote, and the 21 national central bank governors share 15 votes that rotate every month."
+    },
+    {
+      "type": "video",
+      "src": "rotation.mp4",
+      "poster": "rotation.jpg",
+      "alt": "Animation on deep blue: the ECB’s deposit rate of 2.50%, a round table of 27 chairs with six gold board seats, 21 vote tokens, the big five and the sixteen in two panels, a month strip running to October with France’s chair crossed out, and bars of months with a vote.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Wallpaper” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 24.27
+        },
+        {
+          "start": 24.53,
+          "end": 30.4
+        },
+        {
+          "start": 30.67,
+          "end": 36.53
+        },
+        {
+          "start": 36.8,
+          "end": 42.67
+        },
+        {
+          "start": 42.93,
+          "end": 48.8
+        },
+        {
+          "start": 49.07,
+          "end": 54.93
+        },
+        {
+          "start": 55.2,
+          "end": 61.07
+        },
+        {
+          "start": 61.33,
+          "end": 67.2
+        },
+        {
+          "start": 67.47,
+          "end": 73.33
+        },
+        {
+          "start": 73.6,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "ecb-rotating-votes",
+      "prompt": "Step through the months of 2026 and find one in which Germany’s central bank governor has no vote.",
+      "takeaway": "March and August: the big five share four votes, so each sits out one month in five. The other sixteen share eleven and sit out five months in sixteen. The six board members always vote."
+    },
+    {
+      "type": "compare",
+      "heading": "Two groups of governors",
+      "left": {
+        "label": "The top five",
+        "text": "Germany, France, Italy, Spain and the Netherlands share 4 votes: one of them sits out each month, so each votes in 9.6 months of 12."
+      },
+      "right": {
+        "label": "The other sixteen",
+        "text": "They share 11 votes: five of them sit out each month, so each votes in about 8.25 months of 12. Everyone still attends and speaks."
+      }
+    },
+    {
+      "type": "timeline",
+      "heading": "How the votes came to rotate",
+      "events": [
+        {
+          "when": "1 Jan 2015",
+          "text": "Lithuania joins the euro: 19 governors, more than 18, and the rotation begins"
+        },
+        {
+          "when": "1 Jan 2026",
+          "text": "Bulgaria joins: 21 governors share 15 votes"
+        },
+        {
+          "when": "29 Oct 2026",
+          "text": "Rates held at 2.50%; France’s governor has no vote this month"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "On 29 October 2026, which of these central bank governors had no vote at the European Central Bank?",
+      "options": [
+        "France’s",
+        "Germany’s",
+        "Italy’s",
+        "Spain’s"
+      ],
+      "answer": 0,
+      "explanation": "The ECB’s 2026 timetable gave the Banque de France its months off in May and October. Germany sat out in March and August, Italy in January, June and November, Spain in April and September."
+    }
+  ],
+  "tags": [
+    "ecb",
+    "euro",
+    "rates",
+    "centralbanks",
+    "voting"
+  ],
+  "source": {
+    "label": "European Central Bank: Voting rights in the Governing Council, 2026",
+    "url": "https://www.ecb.europa.eu/ecb/orga/decisions/govc/html/votingrights.en.html"
+  },
+  "theme": {
+    "gradient": [
+      "#0b1f4d",
+      "#1b3a7a"
+    ]
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T10:30:00Z",
+  "news": "2026-10-29",
+  "newsArticle": {
+    "label": "Euronews: ECB holds rates at 2.5% as Lagarde announces early exit with inflation near double the target",
+    "url": "https://www.euronews.com/2026/10/29/ecb-holds-rates-at-25-as-lagarde-announces-early-exit-with-inflation-near-double-the-targe"
+  }
+}
