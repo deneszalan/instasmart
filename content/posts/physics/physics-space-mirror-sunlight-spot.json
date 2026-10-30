@@ -1,0 +1,157 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "physics-space-mirror-sunlight-spot",
+  "field": "physics",
+  "title": "A mirror 645 km up can’t light a patch smaller than about 6 km: the Sun isn’t a point",
+  "emoji": "🪞",
+  "body": "On 26 October 2026 the Guardian reported a night-lighting test near Lone Pine, California, by Reflect Orbital, a US startup that aims to launch 50,000 mirror satellites to send sunlight down at night; US regulators approved a first one, with an 18 m mirror, in July, and critics have asked them to reconsider ([the Guardian](https://www.theguardian.com/us-news/2026/oct/26/california-sunlight-space-mirrors-satellites)). Physics sets what each mirror can do. The Sun is a disc about 0.53° across ([NASA](https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html)), so light from its opposite edges arrives at slightly different angles and leaves a mirror spread by the same 0.53°: the lit patch is an image of the Sun, about 6 km wide from 645 km overhead, whatever the mirror’s size. The 254 m² of sunlight on the mirror is shared over about 28 km², roughly 1/111,000 of full sunlight, or about 3.6 times the light of a full Moon, at best. A curved mirror can’t beat that: seen from the ground, a mirror can at most shine like a bit of the Sun’s surface, so its light is the share of the Sun’s disc it covers in your sky.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "An 18 m mirror 645 km up reflects sunlight onto a patch of ground. At best, how many times as bright as a full Moon?",
+      "min": 0,
+      "max": 50,
+      "step": 0.1,
+      "answer": 3.6,
+      "explanation": "About 3.6 full Moons: the mirror’s 254 m² of sunlight spreads over about 28 km², roughly 1/111,000 of full sunlight. A full Moon is about 400,000 times dimmer than the Sun."
+    },
+    {
+      "type": "video",
+      "src": "mirror.mp4",
+      "poster": "mirror.jpg",
+      "alt": "Animation on a desert night: a mirror satellite beams light down. In a side view, rays from opposite edges of the Sun spread the beam into a 6 km patch; sunny spots under a tree; a tiny mirror dot inside a huge patch; a ladder from full Moon to noon Sun; the Sun’s disc with the mirror as a speck.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Envision” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 6,
+        "shock": 7
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "space-mirror-sunlight-spot",
+      "prompt": "Change the mirror, its height and its angle. Light the patch at least as brightly as a full Moon with a mirror no wider than 8 m.",
+      "takeaway": "Brightness goes with (mirror width ÷ distance)²: lower the orbit to about 500 km and an 8 m mirror manages one full Moon. Wherever you put it, the patch stays an image of the Sun, kilometres wide."
+    },
+    {
+      "type": "scale",
+      "heading": "The mirror and the patch of ground it lights, by area",
+      "items": [
+        {
+          "label": "Mirror, 254 m²",
+          "value": 254
+        },
+        {
+          "label": "Lit patch, 28 km²",
+          "value": 28300000
+        }
+      ],
+      "unit": "m²",
+      "note": "For an 18 m mirror 645 km straight overhead. At a slant the patch is bigger and dimmer."
+    },
+    {
+      "type": "text",
+      "heading": "Why a curved mirror can’t help",
+      "text": "A mirror can’t make light brighter than its source. Seen from the ground, the best any mirror can do is shine like a piece of the Sun’s surface. So the light it sends you is the share of the Sun’s disc it covers in your sky: an 18 m mirror 645 km up is about 1/333 of the Sun’s width, and (1/333)² is about 1/111,000."
+    },
+    {
+      "type": "quiz",
+      "question": "Why can’t an 18 m mirror 645 km up light a patch of ground just 18 m wide?",
+      "options": [
+        "The Sun is a disc, not a point",
+        "The air bends the light apart",
+        "The mirror moves too fast",
+        "Gravity bends the light"
+      ],
+      "answer": 0,
+      "explanation": "Light from opposite edges of the Sun arrives at angles 0.53° apart, so the reflected beam spreads by 0.53°: about 6 km over 645 km."
+    }
+  ],
+  "tags": [
+    "light",
+    "optics",
+    "satellites",
+    "sun",
+    "moon"
+  ],
+  "source": {
+    "label": "NASA: Sun Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"
+  },
+  "theme": {
+    "gradient": [
+      "#0a0d24",
+      "#4a3a12"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T16:00:00Z",
+  "news": "2026-10",
+  "newsArticle": {
+    "label": "The Guardian: Sunlight at night: US startup’s demonstration of lighting Earth from space draws criticism",
+    "url": "https://www.theguardian.com/us-news/2026/oct/26/california-sunlight-space-mirrors-satellites"
+  }
+}

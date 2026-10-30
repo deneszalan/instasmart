@@ -1,0 +1,174 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "body-penicillin-allergy-label",
+  "field": "body",
+  "title": "Most Australians labelled allergic to penicillin turn out not to be",
+  "emoji": "💊",
+  "body": "On 22 October 2026 the Guardian reported that the Australasian Society of Clinical Immunology and Allergy had changed its penicillin allergy guidelines: about 2.8 million Australians, 1 in 10, have been labelled allergic, but up to 90% of them are not ([the Guardian](https://www.theguardian.com/australia-news/2026/oct/22/penicillin-allergy-australia-doctors-antibiotic-guidelines)). Labels often come from a rash or nausea during an illness, which the illness may have caused, from doctors noting side effects as allergies to be safe, or from a childhood story. In a true allergy the body has made antibodies called IgE that sit on mast cells; a later dose links them and the cells release histamine within minutes, and US health officials say these antibodies may fade over time ([CDC](https://www.cdc.gov/antibiotic-use/hcp/clinical-signs/index.html)). A wrong label matters: penicillin is narrow, aimed at the bacteria behind an infection, while broader drugs used instead also kill helpful gut bacteria and leave room for drug-resistant superbugs. Doctors can check with a careful history, skin tests or, for low-risk patients, a dose given under watch; no one should test themselves.",
+  "slides": [
+    {
+      "type": "fill",
+      "question": "Of 10 Australians labelled allergic to penicillin, how many are probably not allergic at all?",
+      "icon": "🧍",
+      "total": 10,
+      "answer": 9,
+      "explanation": "Up to 9 in 10, by the evidence behind the new guidelines of Australia’s allergy specialists (October 2026). About 2.8 million Australians carry the label."
+    },
+    {
+      "type": "video",
+      "src": "penicillin.mp4",
+      "poster": "penicillin.jpg",
+      "alt": "Animation in clinic blue: an allergy tag, then 100 people, 10 tagged, 9 turning green. A rash during a fever; a tag kept from childhood. Gold antibodies on a lilac mast cell burst out pink histamine. A narrow drug clears coral bacteria; a broad one wipes out mint gut bacteria and violet move in.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Clean Soul” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "penicillin-allergy-label",
+      "prompt": "Treat patients labelled allergic to penicillin. Clear one patient’s infection while keeping at least 80% of their helpful gut bacteria.",
+      "takeaway": "Only checking the label first opens the way to penicillin, which in this toy model clears the infection and keeps 90% of the gut bacteria; the broader drug keeps 30% and feeds resistant ones."
+    },
+    {
+      "type": "flow",
+      "heading": "How a true penicillin allergy works",
+      "steps": [
+        {
+          "icon": "💊",
+          "label": "A first dose: the body makes antibodies"
+        },
+        {
+          "icon": "🧲",
+          "label": "They sit on mast cells, ready"
+        },
+        {
+          "icon": "🔗",
+          "label": "A later dose links the antibodies"
+        },
+        {
+          "icon": "💥",
+          "label": "Histamine floods out within minutes"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Narrow or broad",
+      "left": {
+        "label": "Penicillin",
+        "text": "Narrow: aimed at the kind of bacteria behind the infection, so more of the gut’s helpful bacteria survive."
+      },
+      "right": {
+        "label": "Broader antibiotics",
+        "text": "Also kill many helpful gut bacteria, leaving room for superbugs that resist many drugs."
+      }
+    },
+    {
+      "type": "quote",
+      "text": "No one should try taking penicillin themselves to find out whether they are allergic. Antibiotics should only be taken when prescribed for the individual taking them.",
+      "attribution": "Nick Cooling, Royal Australian College of General Practitioners"
+    },
+    {
+      "type": "quiz",
+      "question": "Why can a wrong penicillin allergy label do harm?",
+      "options": [
+        "Doctors turn to broader antibiotics",
+        "It makes penicillin stop working",
+        "The label can cause a real allergy",
+        "It makes the illness last longer"
+      ],
+      "answer": 0,
+      "explanation": "Broader antibiotics also kill helpful gut bacteria and leave room for drug-resistant superbugs, which can spread to other people."
+    }
+  ],
+  "tags": [
+    "allergy",
+    "antibiotics",
+    "penicillin",
+    "immunity",
+    "australia"
+  ],
+  "source": {
+    "label": "US Centers for Disease Control and Prevention: Clinical Features of Penicillin Allergy",
+    "url": "https://www.cdc.gov/antibiotic-use/hcp/clinical-signs/index.html"
+  },
+  "theme": {
+    "gradient": [
+      "#0a1424",
+      "#47182a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T15:00:00Z",
+  "news": "2026-10-22",
+  "newsArticle": {
+    "label": "The Guardian: Majority of Australians who report penicillin allergy not truly allergic",
+    "url": "https://www.theguardian.com/australia-news/2026/oct/22/penicillin-allergy-australia-doctors-antibiotic-guidelines"
+  }
+}

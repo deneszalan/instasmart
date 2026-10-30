@@ -1,0 +1,180 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "space-phobos-rises-in-the-west",
+  "field": "space",
+  "title": "Japan’s probe is off to Phobos, a moon that laps Mars faster than Mars turns",
+  "emoji": "🌑",
+  "body": "Before dawn on 20 October 2026, Japan time, the Japan Aerospace Exploration Agency (JAXA) launched its Martian Moons eXploration probe, MMX, on an H3 rocket from Tanegashima. It is to reach Mars in 2027 and bring at least 10 grams of the moon Phobos to Earth in 2031 ([BBC News](https://www.bbc.com/news/articles/cmvgxvkv54w1o), [ESA](https://www.esa.int/ESA_Multimedia/Images/2026/10/MMX_lifts_off_to_Mars_s_moon_Phobos)). Phobos circles only about 6,000 km above Mars, in 7 hours 39 minutes, while Mars turns once in 24 hours 37 minutes, so Phobos overtakes the ground: from Mars it rises in the west, crosses the sky in about four hours, sets in the east and rises again every 11 hours. A moon about 20,400 km from Mars’s centre would keep pace with the ground; the outer moon, Deimos, is beyond that and rises in the east. Phobos also raises a slight tidal bulge in Mars that lags behind it, and its pull slows Phobos, which sinks about 1.8 metres closer every century; NASA expects it to crash or break up into a ring in about 50 million years. Our Moon is the reverse: Earth turns faster than the Moon orbits, so Earth’s bulge runs ahead and the Moon drifts away about 3.8 cm a year.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Mars turns once in 24 h 37 min. How many hours does its inner moon, Phobos, take to go once round Mars?",
+      "min": 1,
+      "max": 48,
+      "step": 0.1,
+      "answer": 7.7,
+      "unit": "h",
+      "explanation": "7 h 39 min: Phobos laps Mars about three times in each Martian day, so seen from the ground it rises in the west and sets in the east."
+    },
+    {
+      "type": "video",
+      "src": "phobos.mp4",
+      "poster": "phobos.jpg",
+      "alt": "Animation over a rust-coloured night: a probe flies from Japan to Mars. To scale, Phobos laps a turning Mars thrice a day, rises in the west over a Martian horizon and sets in the east, and a brass ring marks the orbit that keeps pace. A lagging bulge drags Phobos down; Earth’s pushes the Moon out.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Airship Serenity” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 6,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "phobos-rises-in-the-west",
+      "prompt": "Move the moon nearer to Mars or farther out. Find the distance at which it would seem to hang still over one spot of Mars.",
+      "takeaway": "About 20,400 km from Mars’s centre one lap takes 24 h 37 min, a Martian day. Phobos, at 9,378 km, is far inside and rises in the west; Deimos, at 23,459 km, is outside and rises in the east."
+    },
+    {
+      "type": "chart",
+      "heading": "Once round, in hours: Mars’s two moons and Mars itself",
+      "items": [
+        {
+          "label": "Phobos, one orbit",
+          "value": 7.7,
+          "emphasis": true
+        },
+        {
+          "label": "Mars, one turn",
+          "value": 24.6
+        },
+        {
+          "label": "Deimos, one orbit",
+          "value": 30.3
+        }
+      ],
+      "unit": "h",
+      "note": "NASA fact sheet. A moon slower than the ground below, like Deimos, rises in the east."
+    },
+    {
+      "type": "timeline",
+      "heading": "MMX’s round trip",
+      "events": [
+        {
+          "when": "Oct 2026",
+          "text": "Launch on an H3 rocket from Tanegashima, Japan"
+        },
+        {
+          "when": "Aug 2027",
+          "text": "Arrives at Mars; later the rover Idefix scouts Phobos"
+        },
+        {
+          "when": "Nov 2030",
+          "text": "Leaves Mars with at least 10 g of Phobos"
+        },
+        {
+          "when": "2031",
+          "text": "The capsule lands in the desert of South Australia"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why does Phobos rise in the west and set in the east, seen from Mars?",
+      "options": [
+        "It orbits faster than Mars turns",
+        "Mars spins the other way to Earth",
+        "Phobos orbits Mars backwards",
+        "Its orbit is steeply tilted"
+      ],
+      "answer": 0,
+      "explanation": "Both go east, but Phobos goes round in 7 h 39 min and Mars turns in 24 h 37 min. Phobos overtakes the ground, so it climbs up from the western horizon."
+    }
+  ],
+  "tags": [
+    "mars",
+    "moons",
+    "orbits",
+    "tides",
+    "jaxa"
+  ],
+  "source": {
+    "label": "NASA: Phobos",
+    "url": "https://science.nasa.gov/mars/moons/phobos/"
+  },
+  "theme": {
+    "gradient": [
+      "#1f0c08",
+      "#6a2c19"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T12:00:00Z",
+  "news": "2026-10-20",
+  "newsArticle": {
+    "label": "BBC News: Mission blasts off for Mars to grab a piece of its moon",
+    "url": "https://www.bbc.com/news/articles/cmvgxvkv54w1o"
+  }
+}

@@ -171,4 +171,9 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'maxxing-word-of-the-year': lazy(() => import('./language/maxxing-word-of-the-year')),
   'adults-outscore-children-creativity': lazy(() => import('./psychology/adults-outscore-children-creativity')),
   'choral-evensong-anglican-chant': lazy(() => import('./music/choral-evensong-anglican-chant')),
+  'phobos-rises-in-the-west': lazy(() => import('./space/phobos-rises-in-the-west')),
+  'lycurgus-cup-gold-silver-specks': lazy(() => import('./chemistry/lycurgus-cup-gold-silver-specks')),
+  'cavendish-banana-three-chromosome-sets': lazy(() => import('./biology/cavendish-banana-three-chromosome-sets')),
+  'penicillin-allergy-label': lazy(() => import('./body/penicillin-allergy-label')),
+  'space-mirror-sunlight-spot': lazy(() => import('./physics/space-mirror-sunlight-spot')),
 };

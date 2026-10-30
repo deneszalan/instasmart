@@ -166,6 +166,11 @@ import { finalAverage as baAverage, MEASURED as BA_MEASURED, SEEDS as BA_SEEDS, 
 import { tryCut as mxCut, WORDS as MX_WORDS } from '../src/labs/language/maxxing-word-of-the-year';
 import { A_RATINGS as CR_A, B_RATINGS as CR_B, counted as crCounted, GOAL_IDEAS as CR_GOAL, score as crScore } from '../src/labs/psychology/adults-outscore-children-creativity';
 import { BARS as AC_BARS, recitingSyllables as acReciting, show as acShow, SLOTS as AC_SLOTS, timing as acTiming, VERSES as AC_VERSES } from '../src/labs/music/choral-evensong-anglican-chant';
+import { betweenRisings as phoBetween, DEIMOS as PHO_DEIMOS, hoursUp as phoUp, KEEP_PACE as PHO_KEEP, keepsPace as phoKeeps, PHOBOS as PHO_PHOBOS, period as phoPeriod, T_MARS as PHO_T_MARS } from '../src/labs/space/phobos-rises-in-the-west';
+import { blueGreenLost as lycLost, colourOf as lycColour, extinction as lycExt, GOLD_PPM as LYC_GOLD, hueName as lycHue, seen as lycSeen } from '../src/labs/chemistry/lycurgus-cup-gold-silver-specks';
+import { balanced as banBalanced, balancedChance as banChance, KINDS as BAN_KINDS, sexCell as banCell } from '../src/labs/biology/cavendish-banana-three-chromosome-sets';
+import { goodOutcome as penGood, START as PEN_START, treat as penTreat, trulyAllergic as penAllergic } from '../src/labs/body/penicillin-allergy-label';
+import { fullMoons as mirMoons, goalMet as mirGoal, MOON_RATIO as MIR_MOON, patchKm as mirPatch, share as mirShare } from '../src/labs/physics/space-mirror-sunlight-spot';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1629,5 +1634,64 @@ describe('lab maths', () => {
     const tm = acTiming(3);
     expect(tm[0].d).toBeGreaterThan(tm[4].d);
     tm.slice(1).forEach((x, i) => expect(x.at).toBeGreaterThanOrEqual(tm[i].at + tm[i].d));
+  it('Phobos: 7 h 39 min a lap, rising every 11.1 h for 4.24 h; the keep-pace orbit is 20,428 km; Deimos rises in the east', () => {
+    expect(phoPeriod(PHO_PHOBOS)).toBeCloseTo(0.31891 * 24, 1);
+    expect(phoPeriod(PHO_DEIMOS)).toBeCloseTo(1.26244 * 24, 1);
+    expect(Math.round(PHO_KEEP)).toBe(20428);
+    expect(phoPeriod(PHO_KEEP)).toBeCloseTo(PHO_T_MARS, 9);
+    expect(phoBetween(PHO_PHOBOS)).toBeCloseTo(11.1, 1);
+    expect(phoUp(PHO_PHOBOS)).toBeCloseTo(4.25, 1);
+    expect(phoBetween(PHO_DEIMOS)).toBeLessThan(-100);
+    expect(phoKeeps(20400)).toBe(true);
+    expect(phoKeeps(20300)).toBe(false);
+    expect(phoKeeps(20500)).toBe(false);
+    expect(phoKeeps(12000)).toBe(false);
+  });
+  it('Lycurgus Cup: with the Romans’ metal the cup looks red lit from behind and green from the front; without it, white; 40 ppm is 1 g in 25 kg', () => {
+    expect(lycHue(lycColour(lycSeen('behind', 1)))).toBe('red');
+    expect(lycHue(lycColour(lycSeen('front', 1)))).toBe('green');
+    expect(lycHue(lycColour(lycSeen('behind', 0)))).toBe('white');
+    expect(lycHue(lycColour(lycSeen('front', 0)))).toBe('white');
+    expect(lycExt(510)).toBe(1);
+    expect(lycExt(650)).toBeLessThan(0.05);
+    expect(lycLost(1)).toBeGreaterThan(0.9);
+    expect(lycLost(0)).toBe(0);
+    expect(1e6 / LYC_GOLD / 1000).toBe(25);
+  });
+  it('Cavendish: with 3 sets of 11 chromosomes about 1 sex cell in 1,024 is balanced; with pairs all are', () => {
+    expect(banChance(3, BAN_KINDS)).toBe(2 / 2048);
+    expect(Math.round(1 / banChance(3, BAN_KINDS))).toBe(1024);
+    expect(banChance(2, BAN_KINDS)).toBe(1);
+    expect(banChance(3, 1)).toBe(1);
+    const rand = rng(42);
+    let good = 0;
+    for (let i = 0; i < 200000; i++) if (banBalanced(banCell(3, BAN_KINDS, rand))) good++;
+    expect(good / 200000).toBeGreaterThan(0.0007);
+    expect(good / 200000).toBeLessThan(0.0013);
+    expect(banBalanced(banCell(2, BAN_KINDS, rand))).toBe(true);
+    expect(banCell(3, BAN_KINDS, rand).every((n) => n === 1 || n === 2)).toBe(true);
+  });
+  it('Penicillin label: 1 labelled patient in 10 is truly allergic; penicillin clears the toy infection keeping 90% of gut bacteria, a broad drug keeps 30% and lets resistant ones grow', () => {
+    expect(Array.from({ length: 100 }, (_, i) => i).filter(penAllergic).length).toBe(10);
+    const narrow = penTreat('penicillin'), broad = penTreat('broad');
+    expect(narrow.infection).toBe(0);
+    expect(broad.infection).toBe(0);
+    expect(narrow.gut / PEN_START.gut).toBeCloseTo(0.9, 9);
+    expect(broad.gut / PEN_START.gut).toBeCloseTo(0.3, 9);
+    expect(broad.resistant).toBeGreaterThan(narrow.resistant);
+    expect(penGood(narrow)).toBe(true);
+    expect(penGood(broad)).toBe(false);
+  });
+  it('Space mirror: from 645 km the patch is about 6 km wide; an 18 m mirror gives 1/111,000 of sunlight, about 3.6 full Moons', () => {
+    expect(mirPatch(645)[0]).toBeCloseTo(6.0, 1);
+    expect(Math.round(MIR_MOON / 1000)).toBe(398);
+    expect(Math.round(1 / mirShare(18, 645) / 1000)).toBe(111);
+    expect(mirMoons(18, 645)).toBeCloseTo(3.6, 1);
+    expect(mirMoons(18, 1290) / mirMoons(18, 645)).toBeCloseTo(0.25, 9);
+    expect(mirMoons(36, 645) / mirMoons(18, 645)).toBeCloseTo(4, 9);
+    expect(mirPatch(645, 60)[1]).toBeCloseTo(4 * mirPatch(645)[0], 9);
+    expect(mirGoal(8, 645, 0)).toBe(false);
+    expect(mirGoal(8, 500, 0)).toBe(true);
+    expect(mirGoal(18, 300, 0)).toBe(false);
   });
 });

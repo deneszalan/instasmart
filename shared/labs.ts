@@ -171,6 +171,11 @@ export const LABS = {
   'maxxing-word-of-the-year': 'Cut words such as alcoholic, Watergate, marathon, hamburger and min-maxing where English cut them, and see the new endings, or libfixes, that came off: -holic, -gate, -athon, burger and maxxing.',
   'adults-outscore-children-creativity': 'Score two imaginary players’ uses for a tin can, one with many ordinary ideas and one with a few original ones, by counting, adding, averaging or taking the best three, and see which rule rewards quality.',
   'choral-evensong-anglican-chant': 'Sing the first four verses of the Magnificat to the same 7-bar Anglican chant and watch its reciting notes stretch to hold one syllable or seven.',
+  'phobos-rises-in-the-west': 'Move a moon nearer to Mars or farther out and see how long one lap takes against Mars’s day of 24 h 37 min: inside the orbit that keeps pace it rises in the west, like Phobos; outside it rises in the east, like Deimos.',
+  'lycurgus-cup-gold-silver-specks': 'Light a glass cup like the Roman Lycurgus Cup from the front or from behind, and add gold and silver specks up to the Romans’ amount: see which colours of white light pass through and which bounce back.',
+  'cavendish-banana-three-chromosome-sets': 'Make sex cells from a plant with two or three sets of chromosomes, for 1 to 11 kinds, and count how many come out balanced: with pairs every one does; with a Cavendish banana’s trios hardly any.',
+  'penicillin-allergy-label': 'Treat a run of patients labelled allergic to penicillin: check each label as a doctor would, then pick penicillin or a broader antibiotic, and see how many helpful gut bacteria survive and how many drug-resistant ones move in.',
+  'space-mirror-sunlight-spot': 'Set a space mirror\'s width, its height and how far it is from overhead, and see the patch of sunlight it can light: an image of the Sun about 6 km wide from 645 km, and how many full Moons bright.',
 } as const;
 
 export type LabId = keyof typeof LABS;
