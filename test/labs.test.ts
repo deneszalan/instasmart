@@ -1771,6 +1771,7 @@ describe('lab maths', () => {
     const sevenYes = UN_SEATS.map((_, i) => (i < 7 ? 'yes' : 'abstain') as 'yes' | 'abstain');
     expect(unPasses(sevenYes, 'substantive')).toBe(true);
     expect(unReached(sevenYes)).toBe(false);
+  });
   it('Tibet: low land under a squeeze breaks on a thrust; high land on a normal fault stretching east–west', () => {
     expect(tibFault(0, 60)).toBe('thrust');
     expect(tibFault(2, 60)).toBe('strike-slip');
