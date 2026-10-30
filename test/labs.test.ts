@@ -161,6 +161,11 @@ import { COL_DISC, COL_ROWS, COL_SETS, colonnadeColumns, placeEye, sightFrom } f
 import { STAIR_HEADROOM, gentlestTurns, stairDesign } from '../src/labs/engineering/vatican-double-helix-stairs';
 import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need as concNeed, votes as concVotes, wins as concWins } from '../src/labs/politics/conclave-two-thirds';
 import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
+import { DAWNS as SN_DAWNS, dawnDate as snDate, fits as snFits, skyAt as snSky } from '../src/labs/art/starry-night-dawn-sky-date';
+import { finalAverage as baAverage, MEASURED as BA_MEASURED, SEEDS as BA_SEEDS, simulate as baSimulate, TIPPED as BA_TIPPED } from '../src/labs/psychology/bad-apple-rule-breaking';
+import { tryCut as mxCut, WORDS as MX_WORDS } from '../src/labs/language/maxxing-word-of-the-year';
+import { A_RATINGS as CR_A, B_RATINGS as CR_B, counted as crCounted, GOAL_IDEAS as CR_GOAL, score as crScore } from '../src/labs/psychology/adults-outscore-children-creativity';
+import { BARS as AC_BARS, recitingSyllables as acReciting, show as acShow, SLOTS as AC_SLOTS, timing as acTiming, VERSES as AC_VERSES } from '../src/labs/music/choral-evensong-anglican-chant';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1567,5 +1572,62 @@ describe('lab maths', () => {
     expect(sgHit(SG_PLACES.castle)).toBe('castle');
     expect(sgHit([41.90315, 12.4605])).toBe('passetto');
     expect(sgHit([41.9049, 12.4600])).toBe(null);
+  });
+  it('Starry Night: the low-precision sky matches the 2026 paper and finds the same three dawns', () => {
+    const july = [21, 22, 23, 24].map((d) => snSky(7, d).sep);
+    [29.7, 18.6, 7.66, 3.2].forEach((v, i) => expect(Math.abs(july[i] - v)).toBeLessThan(0.25));
+    expect(Math.abs(snSky(6, 19, 2 + 27 / 60).lit * 100 - 63.1)).toBeLessThan(1);
+    expect(Math.abs(snSky(6, 19, 2 + 27 / 60).venus.alt - 3)).toBeLessThan(0.2);
+    expect(Math.abs(snSky(7, 22).lit * 100 - 28.44)).toBeLessThan(1);
+    const hits = SN_DAWNS.map((s, i) => [s, snDate(i)] as const).filter(([s]) => snFits(s)).map(([, d]) => `${d.day}/${d.month}`);
+    expect(hits).toEqual(['23/6', '22/7', '23/7']);
+    expect(snDate(0)).toEqual({ month: 6, day: 1 });
+    expect(snDate(60)).toEqual({ month: 7, day: 31 });
+  });
+  it('Bad apple: copying alone levels off, rare overshoots tip the group, steady rule-followers hold it', () => {
+    const avg = (e: number, steady: number) => baAverage(BA_SEEDS.map((sd) => baSimulate(e, steady, sd)));
+    expect(avg(0, 0)).toBeGreaterThan(0.3);
+    expect(avg(0, 0)).toBeLessThan(0.7);
+    expect(avg(BA_MEASURED, 0)).toBeGreaterThanOrEqual(BA_TIPPED);
+    expect(avg(0.02, 0)).toBeLessThan(BA_TIPPED);
+    expect(avg(BA_MEASURED, 0.25)).toBeLessThan(0.2);
+    const run = baSimulate(0.03, 0.2, 7);
+    expect(run.end.slice(0, run.steady).every((v) => v === 0)).toBe(true);
+    expect(run.end.every((v) => v >= 0 && v <= 1)).toBe(true);
+  });
+  it('Maxxing: each word frees its libfix at the right cut, and only there', () => {
+    expect(mxCut(0, 4)).toMatchObject({ piece: 'HOLIC', right: true });
+    expect(mxCut(0, 7)).toMatchObject({ piece: 'IC', right: false, ownParts: true });
+    expect(mxCut(1, 5).piece).toBe('GATE');
+    expect(mxCut(2, 3).piece).toBe('ATHON');
+    expect(mxCut(3, 3).piece).toBe('BURGER');
+    expect(mxCut(3, 7)).toMatchObject({ piece: 'ER', ownParts: true, right: false });
+    expect(mxCut(4, 3).piece).toBe('MAXING');
+    MX_WORDS.forEach((w, i) => {
+      const rights = Array.from({ length: w.word.length - 1 }, (_, n) => n + 1).filter((n) => mxCut(i as 0, n).right);
+      expect(rights).toEqual([w.cut]);
+    });
+  });
+  it('Creativity scoring: counting and adding reward a long list, averaging and the best three reward quality', () => {
+    const a = CR_A.slice(0, CR_GOAL);
+    expect(crScore(a, 'count')).toBeGreaterThan(crScore(CR_B, 'count'));
+    expect(crScore(a, 'sum')).toBeGreaterThan(crScore(CR_B, 'sum'));
+    expect(crScore(CR_B, 'average')).toBeGreaterThan(crScore(a, 'average'));
+    expect(crScore(CR_B, 'best3')).toBeCloseTo((4.0 + 3.6 + 3.2) / 3, 9);
+    expect(crScore(CR_B, 'best3')).toBeGreaterThan(crScore(CR_A, 'best3'));
+    expect(crScore(CR_A, 'best3')).toBeCloseTo((2.4 + 2.2 + 2.0) / 3, 9);
+    expect(crCounted(CR_B, 'best3').sort()).toEqual([0, 1, 2]);
+    expect(crCounted(CR_B, 'sum')).toEqual([0, 1, 2, 3]);
+  });
+  it('Anglican chant: 7 bars, reciting notes in bars 1 and 4, and verse 4 puts 7 syllables on one note', () => {
+    expect(AC_BARS).toHaveLength(7);
+    expect(AC_BARS.map((b, i) => (b.reciting ? i + 1 : 0)).filter(Boolean)).toEqual([1, 4]);
+    AC_VERSES.forEach((v) => expect(v).toHaveLength(AC_SLOTS.length));
+    expect([0, 1, 2, 3].map(acReciting)).toEqual([[3, 6], [1, 1], [2, 3], [7, 1]]);
+    expect(acShow(AC_VERSES[3][0])).toBe('For he that is mighty hath');
+    expect(acShow(AC_VERSES[0][4])).toBe('And my spirit hath re-');
+    const tm = acTiming(3);
+    expect(tm[0].d).toBeGreaterThan(tm[4].d);
+    tm.slice(1).forEach((x, i) => expect(x.at).toBeGreaterThanOrEqual(tm[i].at + tm[i].d));
   });
 });
