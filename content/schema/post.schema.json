@@ -258,7 +258,8 @@
                   "conclave-two-thirds",
                   "swiss-guard-sack-of-rome",
                   "starry-night-dawn-sky-date",
-                  "bad-apple-rule-breaking"
+                  "bad-apple-rule-breaking",
+                  "adults-outscore-children-creativity"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },
