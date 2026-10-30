@@ -192,6 +192,8 @@ export const LABS = {
   'mars-cloud-no-dust-seeds': 'Fill a box of air with dust seeds and water vapour, push the vapour past what the air can hold, and see when ice forms: on seeds almost at once, or with no seeds at all only at about 100,000 times saturation, as in the model of the Arsia Mons cloud on Mars.',
   'comet-hcn-impact-speed': 'Set a comet’s impact speed and angle and read its energy per kilogram, how many times TNT that is, and the peak temperature of the shock, to see whether the hydrogen cyanide it carries survives, breaks or is destroyed.',
   'logical-qubit-37-for-one': 'Protect one bit with copies read by majority vote: set how often each copy flips and how many copies there are, and watch the logical error fall below one in a million, or, above the threshold, get worse with every copy added.',
+  'quasi-riemann-zero-strip': 'Slide θ, the furthest a zero of the zeta function may sit from the edge of the critical strip, and see the bound x^θ on how far the count of primes up to a million, a billion or a trillion can stray: 11/12 narrows the strip, Riemann’s ½ makes the bound tiny.',
+  'reed-snake-cartwheel': 'Race a rolling dwarf reed snake against a slithering one over the study’s 2.2 m track: set the rolling speed within the measured 1.72 to 3.69 m/s, with the slither at a quarter of it, and read the crossing times.',
 } as const;
 
 export type LabId = keyof typeof LABS;

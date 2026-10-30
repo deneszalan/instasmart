@@ -192,4 +192,6 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'mars-cloud-no-dust-seeds': lazy(() => import('./space/mars-cloud-no-dust-seeds')),
   'comet-hcn-impact-speed': lazy(() => import('./chemistry/comet-hcn-impact-speed')),
   'logical-qubit-37-for-one': lazy(() => import('./physics/logical-qubit-37-for-one')),
+  'quasi-riemann-zero-strip': lazy(() => import('./math/quasi-riemann-zero-strip')),
+  'reed-snake-cartwheel': lazy(() => import('./biology/reed-snake-cartwheel')),
 };

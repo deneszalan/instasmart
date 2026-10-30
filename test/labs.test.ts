@@ -187,6 +187,8 @@ import { ageFromFraction as c14Age, fractionLeft as c14Left, HALF_LIFE as C14_HA
 import { HOMOGENEOUS_AT as MARS_HOMO, iceForms as marsIce, SEEDED_AT as MARS_SEEDED } from '../src/labs/space/mars-cloud-no-dust-seeds';
 import { energyPerKg as cometEnergy, hcnFate as cometFate, peakTemperature as cometT, TNT_MJ as COMET_TNT, V_EARTH as COMET_V, V_MIN as COMET_VMIN } from '../src/labs/chemistry/comet-hcn-impact-speed';
 import { choose as qChoose, GOAL as Q_GOAL, majorityError as qMajority } from '../src/labs/physics/logical-qubit-37-for-one';
+import { errorBound as rhBound, goalMet as rhGoal, primesAbout as rhPrimes, THETA_LEAN as RH_LEAN, THETA_NEW as RH_NEW } from '../src/labs/math/quasi-riemann-zero-strip';
+import { crossingTime as snakeCross, ROLL_MAX as SNAKE_MAX, ROLL_MIN as SNAKE_MIN, slitherSpeed as snakeSlither, TRACK_M as SNAKE_TRACK } from '../src/labs/biology/reed-snake-cartwheel';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1874,5 +1876,22 @@ describe('lab maths', () => {
     expect(qMajority(0.01, 7)).toBeLessThan(Q_GOAL);
     expect(qMajority(0.01, 5)).toBeGreaterThan(Q_GOAL);
     expect(qMajority(0.6, 7)).toBeGreaterThan(qMajority(0.6, 3));
+  });
+  it('Quasi-Riemann: x^θ at a billion is about 178 million for 11/12, 75 million for 7/8 and 31,623 for ½; only θ ≤ 0.71 meets the goal', () => {
+    expect(rhBound(1e9, RH_NEW)).toBeCloseTo(1.778e8, -5);
+    expect(rhBound(1e9, RH_LEAN)).toBeCloseTo(7.499e7, -5);
+    expect(rhBound(1e9, 0.5)).toBeCloseTo(31623, 0);
+    expect(rhPrimes(1e9)).toBeCloseTo(4.825e7, -5);
+    expect(rhGoal(0.5)).toBe(true);
+    expect(rhGoal(0.71)).toBe(true);
+    expect(rhGoal(0.72)).toBe(false);
+    expect(rhGoal(RH_NEW)).toBe(false);
+  });
+  it('Reed snakes: the 2.2 m track takes 0.6 s at the fastest roll and 1.28 s at the slowest; slithering takes four times longer', () => {
+    expect(SNAKE_TRACK).toBe(2.2);
+    expect(snakeCross(SNAKE_MAX)).toBeCloseTo(0.596, 3);
+    expect(snakeCross(SNAKE_MIN)).toBeCloseTo(1.279, 3);
+    expect(snakeCross(snakeSlither(3))).toBeCloseTo(4 * snakeCross(3), 9);
+    expect(snakeCross(2.2)).toBe(1);
   });
 });
