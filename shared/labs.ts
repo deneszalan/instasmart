@@ -168,6 +168,7 @@ export const LABS = {
   'swiss-guard-sack-of-rome': 'Follow the Swiss Guard on a map of today through 6 May 1527: tap where its 189 men gathered by the obelisk, the Passetto the 42 survivors took Pope Clement VII along, and the castle where they took him.',
   'phobos-rises-in-the-west': 'Move a moon nearer to Mars or farther out and see how long one lap takes against Mars’s day of 24 h 37 min: inside the orbit that keeps pace it rises in the west, like Phobos; outside it rises in the east, like Deimos.',
   'lycurgus-cup-gold-silver-specks': 'Light a glass cup like the Roman Lycurgus Cup from the front or from behind, and add gold and silver specks up to the Romans’ amount: see which colours of white light pass through and which bounce back.',
+  'penicillin-allergy-label': 'Treat a run of patients labelled allergic to penicillin: check each label as a doctor would, then pick penicillin or a broader antibiotic, and see how many helpful gut bacteria survive and how many drug-resistant ones move in.',
 } as const;
 
 export type LabId = keyof typeof LABS;

@@ -163,6 +163,7 @@ import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need
 import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
 import { betweenRisings as phoBetween, DEIMOS as PHO_DEIMOS, hoursUp as phoUp, KEEP_PACE as PHO_KEEP, keepsPace as phoKeeps, PHOBOS as PHO_PHOBOS, period as phoPeriod, T_MARS as PHO_T_MARS } from '../src/labs/space/phobos-rises-in-the-west';
 import { blueGreenLost as lycLost, colourOf as lycColour, extinction as lycExt, GOLD_PPM as LYC_GOLD, hueName as lycHue, seen as lycSeen } from '../src/labs/chemistry/lycurgus-cup-gold-silver-specks';
+import { goodOutcome as penGood, START as PEN_START, treat as penTreat, trulyAllergic as penAllergic } from '../src/labs/body/penicillin-allergy-label';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1593,5 +1594,16 @@ describe('lab maths', () => {
     expect(lycLost(1)).toBeGreaterThan(0.9);
     expect(lycLost(0)).toBe(0);
     expect(1e6 / LYC_GOLD / 1000).toBe(25);
+  });
+  it('Penicillin label: 1 labelled patient in 10 is truly allergic; penicillin clears the toy infection keeping 90% of gut bacteria, a broad drug keeps 30% and lets resistant ones grow', () => {
+    expect(Array.from({ length: 100 }, (_, i) => i).filter(penAllergic).length).toBe(10);
+    const narrow = penTreat('penicillin'), broad = penTreat('broad');
+    expect(narrow.infection).toBe(0);
+    expect(broad.infection).toBe(0);
+    expect(narrow.gut / PEN_START.gut).toBeCloseTo(0.9, 9);
+    expect(broad.gut / PEN_START.gut).toBeCloseTo(0.3, 9);
+    expect(broad.resistant).toBeGreaterThan(narrow.resistant);
+    expect(penGood(narrow)).toBe(true);
+    expect(penGood(broad)).toBe(false);
   });
 });

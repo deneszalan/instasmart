@@ -168,4 +168,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'swiss-guard-sack-of-rome': lazy(() => import('./history/swiss-guard-sack-of-rome')),
   'phobos-rises-in-the-west': lazy(() => import('./space/phobos-rises-in-the-west')),
   'lycurgus-cup-gold-silver-specks': lazy(() => import('./chemistry/lycurgus-cup-gold-silver-specks')),
+  'penicillin-allergy-label': lazy(() => import('./body/penicillin-allergy-label')),
 };
