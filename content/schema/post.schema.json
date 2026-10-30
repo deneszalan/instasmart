@@ -258,7 +258,8 @@
                   "conclave-two-thirds",
                   "swiss-guard-sack-of-rome",
                   "us-gdp-annual-rate",
-                  "bond-price-yield-seesaw"
+                  "bond-price-yield-seesaw",
+                  "bulgaria-turnout-runoff"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

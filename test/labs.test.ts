@@ -163,6 +163,7 @@ import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need
 import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
 import { annualRate as gdpAnnualRate, levels as gdpLevels, quarterBehind as gdpQuarterBehind, reached as gdpReached, yearOnYear as gdpYearOnYear } from '../src/labs/economics/us-gdp-annual-rate';
 import { COUPON as BOND_COUPON, FACE as BOND_FACE, priceAt as bondPriceAt, reached as bondReached, yieldAt as bondYieldAt } from '../src/labs/economics/bond-price-yield-seesaw';
+import { electedInRoundOne as bgElected, locks as bgLocks, reached as bgReached, ROUNDS as BG_ROUNDS } from '../src/labs/politics/bulgaria-turnout-runoff';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1597,5 +1598,17 @@ describe('lab maths', () => {
     expect(bondReached(84.6, 10)).toBe(true);
     expect(bondReached(84.6, 30)).toBe(false);
     expect(bondReached(100, 10)).toBe(false);
+  });
+  it('Bulgaria: a round-one win needs over half the ballots and over half the voters; 2026 and 2006 both went to runoffs', () => {
+    expect(bgElected(51, 51)).toBe(true);
+    expect(bgElected(50, 90)).toBe(false);
+    expect(bgElected(90, 50)).toBe(false);
+    expect(bgElected(BG_ROUNDS[2026].share, BG_ROUNDS[2026].turnout)).toBe(false);
+    expect(bgElected(100, BG_ROUNDS[2026].turnout)).toBe(false);
+    expect(bgElected(BG_ROUNDS[2006].share, BG_ROUNDS[2006].turnout)).toBe(false);
+    expect(bgLocks(BG_ROUNDS[2006].share, BG_ROUNDS[2006].turnout)).toEqual({ majority: true, turnout: false });
+    expect(bgReached(64, 44)).toBe(true);
+    expect(bgReached(40, 44)).toBe(false);
+    expect(bgReached(64, 60)).toBe(false);
   });
 });

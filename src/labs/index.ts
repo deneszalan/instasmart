@@ -168,4 +168,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'swiss-guard-sack-of-rome': lazy(() => import('./history/swiss-guard-sack-of-rome')),
   'us-gdp-annual-rate': lazy(() => import('./economics/us-gdp-annual-rate')),
   'bond-price-yield-seesaw': lazy(() => import('./economics/bond-price-yield-seesaw')),
+  'bulgaria-turnout-runoff': lazy(() => import('./politics/bulgaria-turnout-runoff')),
 };
