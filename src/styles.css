@@ -85,6 +85,10 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  /* The page scrolls but doesn't zoom (pinch or double tap); pictures and videos zoom on their own (src/lib/pinch-zoom.ts). */
+  touch-action: pan-x pan-y;
+  /* Nothing may widen the page past the screen: a browser would zoom out to show it all. */
+  overflow-x: clip;
 }
 
 body {
@@ -4631,4 +4635,21 @@ p {
 .offline__actions .btn:disabled {
   opacity: 0.55;
   cursor: default;
+}
+
+/* A pinched picture or clip, enlarged over the page (src/lib/pinch-zoom.ts). */
+.pinch-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  pointer-events: none;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.pinch-layer--back,
+.pinch-layer--back > * {
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
 }
