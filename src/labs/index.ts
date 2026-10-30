@@ -162,4 +162,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'clapping-music-phase-shift': lazy(() => import('./music/clapping-music-phase-shift')),
   'statue-of-liberty-enlarged-by-four': lazy(() => import('./art/statue-of-liberty-enlarged-by-four')),
   'conclave-two-thirds': lazy(() => import('./politics/conclave-two-thirds')),
+  'swiss-guard-sack-of-rome': lazy(() => import('./history/swiss-guard-sack-of-rome')),
 };

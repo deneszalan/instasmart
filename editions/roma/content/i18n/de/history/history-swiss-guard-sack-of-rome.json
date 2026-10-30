@@ -1,0 +1,65 @@
+{
+  "id": "history-swiss-guard-sack-of-rome",
+  "title": "Die Schweizergarde vereidigt am 6. Mai: An diesem Tag 1527 starben 147 ihrer 189 Männer",
+  "body": "Die Päpstliche Schweizergarde zählt den 22. Januar 1506 als ihren Gründungstag: Damals zogen 150 Schweizer unter Hauptmann Kaspar von Silenen durch Roms Porta del Popolo ein und wurden im Vatikan von Papst Julius II. gesegnet. Am 6. Mai 1527 stürmte das unbezahlte, außer Kontrolle geratene Heer Kaiser Karls V. Rom. Nach der [Geschichte der Garde](https://www.schweizergarde.ch/paepstliche-schweizergarde/de/ueber-uns/geschichte/) sammelten sich ihre 189 Männer beim Obelisken, der damals neben dem Petersdom stand, nahe dem Campo Santo Teutonico. **147 von ihnen starben**, darunter ihr Kommandant Kaspar Röist, während 42 Papst Clemens VII. durch den Passetto, einen etwa 800 m langen Gang in einer alten Mauer, in die Engelsburg brachten. Rom wurde acht Tage lang geplündert; als der Papst im Juni kapitulierte, wurde die Garde aufgelöst und erst 1548 neu gebildet. Seit 1911 werden ihre neuen Rekruten in der Regel am Jahrestag, dem 6. Mai, im Damasushof des Vatikans vereidigt: Jeder fasst die Fahne der Garde, hebt drei Finger und schwört, den Papst zu schützen, wenn nötig unter Einsatz seines Lebens. Am 6. Mai 2026 schworen 28 Rekruten; 2027 jährt sich der Tag zum 500. Mal.",
+  "slides": [
+    {
+      "question": "Die Schweizergarde des Papstes zählt den 22. Januar welchen Jahres als ihren Gründungstag?",
+      "explanation": "1506: 150 Schweizer unter Hauptmann Kaspar von Silenen zogen durch Roms Porta del Popolo ein und wurden von Papst Julius II. im Vatikan gesegnet."
+    },
+    {
+      "alt": "Animation auf Nachtstein in Blau, Gelb und Rot der Schweizergarde: 150 Punkte ziehen 1506 an der Porta del Popolo in Rom ein; auf einer Karte von heute 189 Gardisten beim Obelisken am Petersdom am 6. Mai 1527, 147 verblassen, 42 ziehen durch den Passetto zur Engelsburg; Fahne und Eid.",
+      "credit": "Roma · eigene Animation · KI-Stimme"
+    },
+    {
+      "prompt": "Folge den 42 auf einer Karte von heute: Tippe, wo sich die 189 Gardisten sammelten (südlich des Petersdoms), dann auf ihren Fluchtweg und sein Ziel.",
+      "takeaway": "Die Garde sammelte sich neben dem Petersdom, wo der Obelisk bis 1586 stand. Die 42 Überlebenden brachten Papst Clemens VII. durch den etwa 800 m langen Passetto in die Engelsburg."
+    },
+    {
+      "alt": "Foto von der Engelsburg nach Westen: Eine lange Steinmauer mit Bögen, der Passetto, läuft von rechts zwischen Straßen und Pinien zum Vatikan; oben links am Horizont die Kuppel des Petersdoms und der Apostolische Palast.",
+      "caption": "Der Blick von der Engelsburg: Der Passetto ist die lange Mauer mit Bögen rechts, die zum Vatikan und zur Kuppel des Petersdoms führt."
+    },
+    {
+      "heading": "Die Schweizergarde und der 6. Mai",
+      "events": [
+        {
+          "when": "22. Jan. 1506",
+          "text": "150 Schweizer kommen zu Julius II."
+        },
+        {
+          "when": "6. Mai 1527",
+          "text": "147 von 189 Gardisten sterben."
+        },
+        {
+          "when": "1548",
+          "text": "Die Garde wird neu gebildet."
+        },
+        {
+          "when": "1911",
+          "text": "Ab jetzt Vereidigung am 6. Mai."
+        },
+        {
+          "when": "6. Mai 2027",
+          "text": "500 Jahre seit 1527."
+        }
+      ]
+    },
+    {
+      "text": "Ich, Hellebardier …, schwöre, alles das, was mir soeben vorgelesen wurde, gewissenhaft und treu zu halten, so wahr mir Gott und unsere Heiligen Patrone helfen!",
+      "attribution": "Antwort jedes Rekruten an der Fahne (Päpstliche Schweizergarde)"
+    },
+    {
+      "question": "Wie lange waren die Päpste nach dem 6. Mai 1527, als Rom gestürmt und geplündert wurde, ohne Schweizergarde?",
+      "options": [
+        "21 Jahre",
+        "Gar nicht: sie bestand fort",
+        "5 Jahre",
+        "Etwa 100 Jahre"
+      ],
+      "explanation": "Als Papst Clemens VII. im Juni 1527 kapitulierte, wurde die Garde aufgelöst und durch deutsche Landsknechte ersetzt. 1548 wurde sie mit 150 neuen Gardisten neu gebildet."
+    }
+  ],
+  "source": {
+    "label": "Päpstliche Schweizergarde: Geschichte"
+  }
+}

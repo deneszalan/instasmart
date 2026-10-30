@@ -162,6 +162,7 @@ export const LABS = {
   'clapping-music-phase-shift': 'Move the second clapper of Steve Reich’s Clapping Music ahead one beat at a time, hear the two parts, and count the beats where both clap, one claps or nobody does.',
   'statue-of-liberty-enlarged-by-four': 'Enlarge Bartholdi’s 1.25 m study model of the Statue of Liberty and watch its height, its copper skin and the volume it would have if solid grow, up to the 46 m statue.',
   'conclave-two-thirds': 'Back one candidate with groups of the 133 cardinals of May 2025 and see why two thirds, 89 votes, needs three of four groups, while the 1996 rule’s late majority of 67 needed only two.',
+  'swiss-guard-sack-of-rome': 'Follow the Swiss Guard on a map of today through 6 May 1527: tap where its 189 men gathered by the obelisk, the Passetto the 42 survivors took Pope Clement VII along, and the castle where they took him.',
 } as const;
 
 export type LabId = keyof typeof LABS;

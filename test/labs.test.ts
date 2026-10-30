@@ -157,6 +157,7 @@ import { fits as hitFits, LINE as HIT_LINE, OFFER as HIT_OFFER, reading as hitRe
 import { BEATS as CLAP_BEATS, NO_SILENCE as CLAP_NO_SILENCE, overlap as clapOverlap, PATTERN as CLAP_PATTERN, shifted as clapShifted } from '../src/labs/music/clapping-music-phase-shift';
 import { enlarge as solEnlarge, FULL as SOL_FULL, STAGES as SOL_STAGES } from '../src/labs/art/statue-of-liberty-enlarged-by-four';
 import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need as concNeed, votes as concVotes, wins as concWins } from '../src/labs/politics/conclave-two-thirds';
+import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1510,5 +1511,18 @@ describe('lab maths', () => {
     expect(pairs.filter((c) => concWins(c, 'late-1996')).map(concVotes)).toEqual([84, 75, 70]);
     expect(concWins([true, true, true, false], 'two-thirds')).toBe(true);
     expect(concWins([false, true, true, true], 'two-thirds')).toBe(false);
+  });
+  it('Swiss Guard: 189 − 147 = 42; the Passetto on the map is about 0.75 km; taps find the 1527 route', () => {
+    expect(SG_GUARDS - SG_DIED).toBe(42);
+    expect(SG_SURVIVED).toBe(42);
+    expect(sgLength(SG_PASSETTO)).toBeGreaterThan(0.7);
+    expect(sgLength(SG_PASSETTO)).toBeLessThan(0.85);
+    expect(sgKm(SG_PLACES.obelisk1527, SG_PLACES.obeliskNow)).toBeCloseTo(0.24, 1);
+    expect(SG_ROUTE).toEqual(['obelisk1527', 'passetto', 'castle']);
+    expect(sgHit(SG_PLACES.obelisk1527)).toBe('obelisk1527');
+    expect(sgHit(SG_PLACES.obeliskNow)).toBe('obeliskNow');
+    expect(sgHit(SG_PLACES.castle)).toBe('castle');
+    expect(sgHit([41.90315, 12.4605])).toBe('passetto');
+    expect(sgHit([41.9049, 12.4600])).toBe(null);
   });
 });
