@@ -184,6 +184,9 @@ import { buttonAt as wsiButton, landingsPerHour as wsiPerHour, minutesBetween as
 import { dhondt as srbDhondt, LISTS as SRB_LISTS, THRESHOLD as SRB_THRESHOLD, withYours as srbWithYours } from '../src/labs/politics/serbia-minority-lists-35-percent';
 import { BIG as ECB_BIG, hasVote as ecbHasVote, sittingOut as ecbSittingOut, SMALL as ECB_SMALL, VOTES as ECB_VOTES } from '../src/labs/economics/ecb-rotating-votes';
 import { ageFromFraction as c14Age, fractionLeft as c14Left, HALF_LIFE as C14_HALF, RANGE as C14_RANGE, THIS_YEAR as C14_NOW } from '../src/labs/history/westminster-sarcophagus-radiocarbon';
+import { HOMOGENEOUS_AT as MARS_HOMO, iceForms as marsIce, SEEDED_AT as MARS_SEEDED } from '../src/labs/space/mars-cloud-no-dust-seeds';
+import { energyPerKg as cometEnergy, hcnFate as cometFate, peakTemperature as cometT, TNT_MJ as COMET_TNT, V_EARTH as COMET_V, V_MIN as COMET_VMIN } from '../src/labs/chemistry/comet-hcn-impact-speed';
+import { choose as qChoose, GOAL as Q_GOAL, majorityError as qMajority } from '../src/labs/physics/logical-qubit-37-for-one';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1846,5 +1849,30 @@ describe('lab maths', () => {
     expect(year).toBeGreaterThanOrEqual(C14_RANGE[0]);
     expect(year).toBeLessThanOrEqual(C14_RANGE[1]);
     expect(C14_NOW - c14Age(0.8)).toBeLessThan(C14_RANGE[0]);
+  });
+  it('Mars cloud: ice needs a seed unless the vapour is about 100,000 times over saturation', () => {
+    expect(marsIce(5, 1)).toBe('none');
+    expect(marsIce(5, MARS_SEEDED)).toBe('seeded');
+    expect(marsIce(0, 1000)).toBe('none');
+    expect(marsIce(0, MARS_HOMO)).toBe('homogeneous');
+    expect(marsIce(3, MARS_HOMO * 10)).toBe('homogeneous');
+  });
+  it('Comet HCN: 28 km/s is about 94 times TNT per kilogram; head-on it destroys HCN, a 15° graze keeps it', () => {
+    expect(cometEnergy(COMET_V)).toBeCloseTo(397.6, 1);
+    expect(Math.round(cometEnergy(COMET_V) / COMET_TNT)).toBe(95);
+    expect(cometFate(cometT(COMET_V, 90))).toBe('destroyed');
+    expect(cometFate(cometT(COMET_VMIN, 90))).toBe('survives');
+    expect(cometFate(cometT(COMET_V, 15))).toBe('survives');
+    expect(cometFate(cometT(15, 90))).toBe('partly');
+    expect(cometT(10, 90)).toBeCloseTo(18.02 * Math.pow(10, 2.17), 6);
+  });
+  it('Repetition code: one copy errs as the qubit does; at 1% seven copies beat one in a million; above 50% more copies hurt', () => {
+    expect(qChoose(5, 2)).toBe(10);
+    expect(qMajority(0.01, 1)).toBeCloseTo(0.01, 12);
+    expect(qMajority(0.01, 3)).toBeCloseTo(3 * 0.0001 * 0.99 + 0.000001, 12);
+    expect(qMajority(0.5, 5)).toBeCloseTo(0.5, 12);
+    expect(qMajority(0.01, 7)).toBeLessThan(Q_GOAL);
+    expect(qMajority(0.01, 5)).toBeGreaterThan(Q_GOAL);
+    expect(qMajority(0.6, 7)).toBeGreaterThan(qMajority(0.6, 3));
   });
 });

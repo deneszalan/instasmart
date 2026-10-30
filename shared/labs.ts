@@ -189,6 +189,9 @@ export const LABS = {
   'serbia-minority-lists-35-percent': 'Add a list of your own to Serbia’s 2026 count, set its votes and make it a minority list or an ordinary one, and see how many of the 250 seats d’Hondt gives it: minority lists skip the 3% line and get their quotients raised by 35%.',
   'ecb-rotating-votes': 'Step through the months of 2026 at the European Central Bank’s table of 27 and see which of the 21 governors have no vote that month under the rotation: one of the big five and five of the other sixteen.',
   'westminster-sarcophagus-radiocarbon': 'Set how much carbon-14 a bone has left and read off the years since death on the decay curve of carbon-14, which halves every 5,700 years, until you land in the late-Saxon range Westminster Abbey got for its Roman sarcophagus.',
+  'mars-cloud-no-dust-seeds': 'Fill a box of air with dust seeds and water vapour, push the vapour past what the air can hold, and see when ice forms: on seeds almost at once, or with no seeds at all only at about 100,000 times saturation, as in the model of the Arsia Mons cloud on Mars.',
+  'comet-hcn-impact-speed': 'Set a comet’s impact speed and angle and read its energy per kilogram, how many times TNT that is, and the peak temperature of the shock, to see whether the hydrogen cyanide it carries survives, breaks or is destroyed.',
+  'logical-qubit-37-for-one': 'Protect one bit with copies read by majority vote: set how often each copy flips and how many copies there are, and watch the logical error fall below one in a million, or, above the threshold, get worse with every copy added.',
 } as const;
 
 export type LabId = keyof typeof LABS;

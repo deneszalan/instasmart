@@ -189,4 +189,7 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'serbia-minority-lists-35-percent': lazy(() => import('./politics/serbia-minority-lists-35-percent')),
   'ecb-rotating-votes': lazy(() => import('./economics/ecb-rotating-votes')),
   'westminster-sarcophagus-radiocarbon': lazy(() => import('./history/westminster-sarcophagus-radiocarbon')),
+  'mars-cloud-no-dust-seeds': lazy(() => import('./space/mars-cloud-no-dust-seeds')),
+  'comet-hcn-impact-speed': lazy(() => import('./chemistry/comet-hcn-impact-speed')),
+  'logical-qubit-37-for-one': lazy(() => import('./physics/logical-qubit-37-for-one')),
 };
