@@ -22,7 +22,15 @@ export const GOAL = 1e-6;
 const PRESETS = [0.001, 0.005, 0.01, 0.05, 0.2, 0.5, 0.6] as const;
 
 const TEAL = '#5ef2d2', MAGENTA = '#ff6bd6', RED = '#ff5c5c';
-const oneIn = (e: number) => (e >= 0.01 ? `${(e * 100).toFixed(1)}%` : t('1 in {n}', { n: formatNumber(Math.round(1 / e)) }));
+/** An error rate as "1 in n", kept short enough for a label when n runs into the billions. */
+const oneIn = (e: number) => {
+  if (e >= 0.01) return `${(e * 100).toFixed(1)}%`;
+  const n = 1 / e;
+  if (n >= 1e12) return t('under 1 in a trillion');
+  if (n >= 1e9) return t('1 in {n} billion', { n: (n / 1e9).toFixed(n >= 1e10 ? 0 : 1) });
+  if (n >= 1e6) return t('1 in {n} million', { n: (n / 1e6).toFixed(n >= 1e7 ? 0 : 1) });
+  return t('1 in {n}', { n: formatNumber(Math.round(n)) });
+};
 
 export default function LogicalQubit({ onDone }: LabProps) {
   const [p, setP] = useState<number>(0.01);
@@ -33,32 +41,45 @@ export default function LogicalQubit({ onDone }: LabProps) {
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
     // the copies: flipped ones in red, from a fixed sample so the picture stays still
     const r = rng(11 + n);
-    const s = Math.min(26, (w - 20) / n);
+    const s = Math.min(26, (w - 20) / n, h * 0.22);
+    const cy = 10 + s * 0.32;
     let flipped = 0;
     for (let i = 0; i < n; i++) {
       const bad = r() < p;
       if (bad) flipped++;
       ctx.fillStyle = bad ? RED : TEAL;
       ctx.beginPath();
-      ctx.arc(w / 2 + (i - (n - 1) / 2) * s, h * 0.28, s * 0.32, 0, Math.PI * 2);
+      ctx.arc(w / 2 + (i - (n - 1) / 2) * s, cy, s * 0.32, 0, Math.PI * 2);
       ctx.fill();
     }
     const vote = flipped > n / 2;
-    label(ctx, t('{n} copies, {f} flipped → majority says {v}', { n, f: flipped, v: vote ? t('wrong') : t('right') }), w / 2, h * 0.28 + s * 0.32 + 16, { size: 11, color: vote ? RED : C.soft });
-    // log bar of the logical error against the physical one
-    const x0 = 24, x1 = w - 10, y = h * 0.74;
+    label(ctx, t('{n} copies, {f} flipped → majority says {v}', { n, f: flipped, v: vote ? t('wrong') : t('right') }), w / 2, cy + s * 0.32 + 12, { size: 11, color: vote ? RED : C.soft });
+    // a log scale of error rates along the bottom: a tick for one qubit, a dot for the code, and a legend row above it
+    const x0 = 16, x1 = w - 16, yb = h - 26;
     const X = (v: number) => x0 + ((Math.log10(Math.max(1e-9, v)) + 9) / 9) * (x1 - x0);
     ctx.fillStyle = 'rgba(255,255,255,0.1)';
-    ctx.fillRect(x0, y - 6, x1 - x0, 12);
-    for (const v of [1e-9, 1e-6, 1e-3, 1]) label(ctx, v === 1 ? '100%' : v === 1e-3 ? '0.1%' : v === 1e-6 ? t('1 in a million') : '', X(v), y + 22, { size: 9, color: C.faint });
-    ctx.fillStyle = C.soft;
-    ctx.fillRect(X(p) - 1, y - 18, 2, 24);
-    label(ctx, t('one qubit'), X(p), y - 26, { size: 10, color: C.soft });
-    ctx.fillStyle = e < GOAL ? TEAL : e <= p ? MAGENTA : RED;
+    ctx.fillRect(x0, yb - 5, x1 - x0, 10);
+    for (const [v, txt] of [[1e-9, t('1 in a billion')], [1e-6, t('1 in a million')], [1e-3, '0.1%'], [1, '100%']] as const) {
+      ctx.fillStyle = 'rgba(255,255,255,0.25)';
+      ctx.fillRect(X(v) - 0.5, yb - 8, 1, 16);
+      label(ctx, txt, X(v), yb + 14, { size: 9, align: v === 1e-9 ? 'left' : v === 1 ? 'right' : 'center', color: C.faint });
+    }
+    const col = e < GOAL ? TEAL : e <= p ? MAGENTA : RED;
+    ctx.fillStyle = C.ink;
+    ctx.fillRect(X(p) - 1, yb - 10, 2, 20);
+    ctx.fillStyle = col;
     ctx.beginPath();
-    ctx.arc(X(e), y, 8, 0, Math.PI * 2);
+    ctx.arc(X(e), yb, 7, 0, Math.PI * 2);
     ctx.fill();
-    label(ctx, t('code: {e}', { e: oneIn(e) }), X(e), y + 40, { size: 11, color: e < GOAL ? TEAL : e <= p ? MAGENTA : RED });
+    const ly = yb - 20;
+    ctx.fillStyle = C.ink;
+    ctx.fillRect(x0, ly - 6, 2, 12);
+    label(ctx, t('one qubit: {p}%', { p: (p * 100).toString() }), x0 + 8, ly, { size: 10, align: 'left', color: C.soft });
+    ctx.fillStyle = col;
+    ctx.beginPath();
+    ctx.arc(x1 - 4, ly, 5, 0, Math.PI * 2);
+    ctx.fill();
+    label(ctx, t('code: {e}', { e: oneIn(e) }), x1 - 14, ly, { size: 10, align: 'right', color: col });
   };
 
   return (
