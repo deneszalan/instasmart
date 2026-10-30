@@ -1,0 +1,180 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-decaf-coffee-caffeine-removal",
+  "field": "chemistry",
+  "title": "Decaf is made from raw green beans: the caffeine is washed out, the flavour kept in",
+  "emoji": "☕",
+  "body": "Decaf is made from green, unroasted beans: steam or hot water swells them so the caffeine, which dissolves far better when hot, can get out, while the flavour molecules stay in or are put back. Direct methods rinse steamed beans with methylene chloride or ethyl acetate, then steam the solvent off; ethyl acetate occurs in fruit, so such decaf may be sold as “naturally decaffeinated”. The indirect method draws caffeine and flavour into hot water, strips the caffeine from it with a solvent and lets the beans soak the rest back up, while the [Swiss Water Process](https://www.swisswater.com/pages/coffee-decaffeination-process) uses a green coffee extract that already holds everything but caffeine, so only caffeine leaves and carbon filters trap it. Above 31 °C and 74 bar, carbon dioxide turns supercritical and dissolves caffeine too, as German chemist Kurt Zosel found in 1967; Bremen coffee merchant Ludwig Roselius had patented his process, using benzene, in 1905. About 97% of the caffeine goes, the US National Coffee Association says, leaving 2 to 15 mg a cup, and US rules cap leftover methylene chloride at [10 parts per million](https://www.law.cornell.edu/cfr/text/21/173.255).",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Decaf isn’t caffeine-free. What share of the caffeine is usually taken out, according to the US coffee industry?",
+      "min": 50,
+      "max": 100,
+      "step": 1,
+      "answer": 97,
+      "unit": "%",
+      "explanation": "About 97%, says the US National Coffee Association, leaving roughly 2 to 15 mg in a cup of decaf, against about 95 mg in a regular 8-ounce cup."
+    },
+    {
+      "type": "video",
+      "src": "decaf.mp4",
+      "poster": "decaf.jpg",
+      "alt": "Animation on dark burlap: green beans lose gold caffeine hexagons before roasting. Steam swells a bean; caffeine dissolves in 46 mL of water at 25 °C, 5.5 mL at 80 °C. Solvent, water, coffee extract with carbon filters and supercritical CO₂ each pull caffeine out. Cups: 95 mg against 2 to 15 mg.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Bossa Antigua” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 4
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "decaf-coffee-caffeine-removal",
+      "prompt": "Make decaf: take out 97% of the caffeine and keep 90% of the flavour.",
+      "takeaway": "Six rounds, if the caffeine is taken out of the liquid. Hot water takes flavour too."
+    },
+    {
+      "type": "text",
+      "heading": "How much caffeine may decaf keep?",
+      "text": "EU law lets instant coffee be called decaffeinated only if caffeine is at most 0.3% of its coffee dry matter. Germany’s coffee rules allow decaf beans at most 0.1%, by dry weight. In the US, the Food and Drug Administration says a cup of decaf typically has 2 to 15 mg."
+    },
+    {
+      "type": "chart",
+      "heading": "Most methylene chloride allowed in decaf, in mg per kg of coffee",
+      "items": [
+        {
+          "label": "United States",
+          "value": 10
+        },
+        {
+          "label": "European Union",
+          "value": 2
+        }
+      ],
+      "unit": "mg/kg",
+      "note": "US: 10 parts per million in roasted and instant decaf. EU: 2 mg/kg in roasted coffee."
+    },
+    {
+      "type": "timeline",
+      "heading": "Taking the caffeine out",
+      "events": [
+        {
+          "when": "1905",
+          "text": "Ludwig Roselius of Bremen patents decaf made with benzene"
+        },
+        {
+          "when": "1906",
+          "text": "Roselius founds Kaffee HAG"
+        },
+        {
+          "when": "1967",
+          "text": "Chemist Kurt Zosel finds caffeine dissolves in supercritical CO₂"
+        },
+        {
+          "when": "1970",
+          "text": "Zosel files a patent on decaf made with it"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "A petition in the US",
+      "text": "In May 2026 the US Food and Drug Administration reopened comments on a petition, led by the Environmental Defense Fund, to drop methylene chloride from its food additive rules. Comments closed on 29 June; no decision had been published by late October. The National Coffee Association, the US industry group, opposes it."
+    },
+    {
+      "type": "quiz",
+      "question": "In the Swiss Water Process, why does the flavour stay in the beans while the caffeine leaves?",
+      "options": [
+        "The extract already holds the flavour",
+        "Carbon filters return the flavour",
+        "Cold water can’t dissolve flavour",
+        "Flavour molecules are too big"
+      ],
+      "answer": 0,
+      "explanation": "The green coffee extract is full of the bean’s other compounds but has no caffeine, so only caffeine moves out of the beans. Carbon filters trap it, and the extract is used again."
+    }
+  ],
+  "tags": [
+    "coffee",
+    "caffeine",
+    "decaf",
+    "solvents",
+    "food"
+  ],
+  "source": {
+    "label": "Max Planck Society: Coffee withdrawal, on decaffeination processes (2014)",
+    "url": "https://www.mpg.de/8365156/coffee-decaffeination-processes"
+  },
+  "theme": {
+    "gradient": [
+      "#24160e",
+      "#3b4a2c"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T18:59:13Z"
+}

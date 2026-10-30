@@ -191,6 +191,7 @@ import { errorBound as rhBound, goalMet as rhGoal, primesAbout as rhPrimes, THET
 import { crossingTime as snakeCross, ROLL_MAX as SNAKE_MAX, ROLL_MIN as SNAKE_MIN, slitherSpeed as snakeSlither, TRACK_M as SNAKE_TRACK } from '../src/labs/biology/reed-snake-cartwheel';
 import { canForm as bayForm, LAT_MIN as BAY_LAT, SHEAR_MAX as BAY_SHEAR, SST_MIN as BAY_SST } from '../src/labs/earth/bay-of-bengal-cyclone-season';
 import { FLOOR as CLOCK_FLOOR, profile as clockProfile, readAge as clockRead, retained as clockRetained } from '../src/labs/body/blood-cells-epigenetic-clock';
+import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decafRemoved, soak as decafSoak } from '../src/labs/chemistry/decaf-coffee-caffeine-removal';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1914,5 +1915,21 @@ describe('lab maths', () => {
     expect(clockRead(clockProfile(80, 50, 'direct'))).toBeLessThan(20);
     expect(clockRead(clockProfile(80, 0, 'pluripotent'))).toBeCloseTo(0, 6);
     for (const v of clockProfile(101, 0, 'direct')) { expect(v).toBeGreaterThanOrEqual(0); expect(v).toBeLessThanOrEqual(1); }
+  });
+  it('decaf: each round halves the caffeine only if the liquid is cleaned; water takes flavour, the extract and a solvent keep it', () => {
+    expect(decafRemoved(decafSoak('extract', true, 5))).toBeLessThan(DECAF_GOAL);
+    expect(decafRemoved(decafSoak('extract', true, 6))).toBeCloseTo(98.4375, 6);
+    expect(decafOk(decafSoak('extract', true, 6))).toBe(true);
+    expect(decafOk(decafSoak('solvent', true, 6))).toBe(true);
+    expect(decafSoak('water', true, 8).flavour).toBeCloseTo(0.5, 9);
+    expect(decafOk(decafSoak('water', true, 8))).toBe(false);
+    expect(decafSoak('extract', false, 8).caffeine).toBeCloseTo(0.5, 9);
+    expect(decafSoak('solvent', false, 8).caffeine).toBeCloseTo(0.5, 9);
+    expect(decafSoak('extract', true, 4).flavour).toBe(1);
+    for (const l of ['water', 'extract', 'solvent'] as const) for (const c of [true, false]) {
+      const r = decafSoak(l, c, 7);
+      expect(r.caffeine + r.liquidCaffeine + r.caught).toBeCloseTo(1, 9);
+    }
+    expect(decafSoak('water', false, 0)).toEqual({ caffeine: 1, flavour: 1, liquidCaffeine: 0, liquidFlavour: 0, caught: 0 });
   });
 });
