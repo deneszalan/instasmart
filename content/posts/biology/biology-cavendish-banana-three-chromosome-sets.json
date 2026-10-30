@@ -1,0 +1,167 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "biology-cavendish-banana-three-chromosome-sets",
+  "field": "biology",
+  "title": "A Cavendish banana has three sets of chromosomes, so it almost never makes a seed",
+  "emoji": "🍌",
+  "body": "In October 2026 Yelloway, a venture of Chiquita and the breeders KeyGene, announced a fertile Cavendish breeding line; on 22 October the Guardian asked if it could help save the banana ([the Guardian](https://www.theguardian.com/global-development/2026/oct/22/have-scientists-finally-found-a-way-to-save-the-banana-from-disaster)). The Cavendish has three sets of its 11 kinds of chromosome, 33 in all; a wild banana has two ([Wikipedia](https://en.wikipedia.org/wiki/Musa_acuminata)). Making sex cells halves the chromosomes: pairs split evenly, but a trio sends two copies one way and one the other, so in a simple model only about 1 sex cell in 1,024 is balanced. So it makes almost no seeds, and its fruit grows without pollination. Farmers plant offshoots instead, so every Cavendish is a near-identical clone, open to the same diseases, like TR4, a strain of the Panama disease fungus that felled the Gros Michel banana from the 1950s. Yelloway says its line keeps 100% Cavendish genes and has been crossed with resistant bananas ([FreshPlaza](https://www.freshplaza.com/asia/article/9882446/fertile-cavendish-banana-line-developed-for-disease-resistant-breeding/)); how is not yet published.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Cavendish bananas have no working seeds. So where does each new Cavendish plant come from?",
+      "answer": "An offshoot of an older plant",
+      "detail": "Each new plant sprouts from the base of another, so every Cavendish is a near-identical clone, open to the same diseases."
+    },
+    {
+      "type": "video",
+      "src": "banana.mp4",
+      "poster": "banana.jpg",
+      "alt": "Animation in a night-green plantation: a slice with no seeds beside a wild one full of them. Clone plants sprout from offshoots and brown together as a fungus spreads. Coloured chromosomes split: pairs evenly, trios two and one; a grid of 1,024 squares has one green. Hand crosses give a seed or two.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Gaslamp Funworks” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 6,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "cavendish-banana-three-chromosome-sets",
+      "prompt": "Make sex cells with 2 or 3 chromosome sets. With a Cavendish’s 3 sets of 11 kinds, how many come out balanced?",
+      "takeaway": "About 1 in 1,024: all 11 trios must split the same way. With pairs every sex cell is balanced, so wild bananas are full of seeds."
+    },
+    {
+      "type": "compare",
+      "heading": "Two sets or three",
+      "left": {
+        "label": "Wild banana",
+        "text": "2 sets of 11 chromosomes, 22 in all. Pairs split evenly, so its sex cells work, and its fruit is full of hard seeds."
+      },
+      "right": {
+        "label": "Cavendish",
+        "text": "3 sets, 33 in all. Trios can’t split evenly, so its sex cells nearly always come out unbalanced: almost no seeds."
+      }
+    },
+    {
+      "type": "timeline",
+      "heading": "The Cavendish and Panama disease",
+      "events": [
+        {
+          "when": "1950s",
+          "text": "Panama disease fells the Gros Michel; the Cavendish takes over"
+        },
+        {
+          "when": "Dec 2025",
+          "text": "Its TR4 strain is found in Ecuador, the top exporter"
+        },
+        {
+          "when": "Oct 2026",
+          "text": "Yelloway announces a fertile Cavendish line"
+        },
+        {
+          "when": "2030",
+          "text": "Yelloway’s aim for a first new variety"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why do a Cavendish banana’s sex cells almost never work?",
+      "options": [
+        "Its chromosome trios can’t split evenly",
+        "It has too few chromosomes",
+        "Its flowers are never pollinated",
+        "A fungus destroys them"
+      ],
+      "answer": 0,
+      "explanation": "Each of its 11 chromosome trios splits two and one, so a sex cell is balanced only if all 11 go the same way: about 1 in 1,024 in a simple model."
+    }
+  ],
+  "tags": [
+    "bananas",
+    "chromosomes",
+    "genetics",
+    "crops",
+    "breeding"
+  ],
+  "source": {
+    "label": "Wikipedia: Musa acuminata",
+    "url": "https://en.wikipedia.org/wiki/Musa_acuminata"
+  },
+  "theme": {
+    "gradient": [
+      "#0a2213",
+      "#4f4a10"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T14:00:00Z",
+  "news": "2026-10",
+  "newsArticle": {
+    "label": "The Guardian: Have scientists finally found a way to save the banana from disaster?",
+    "url": "https://www.theguardian.com/global-development/2026/oct/22/have-scientists-finally-found-a-way-to-save-the-banana-from-disaster"
+  }
+}

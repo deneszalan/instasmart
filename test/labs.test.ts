@@ -163,6 +163,7 @@ import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need
 import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
 import { betweenRisings as phoBetween, DEIMOS as PHO_DEIMOS, hoursUp as phoUp, KEEP_PACE as PHO_KEEP, keepsPace as phoKeeps, PHOBOS as PHO_PHOBOS, period as phoPeriod, T_MARS as PHO_T_MARS } from '../src/labs/space/phobos-rises-in-the-west';
 import { blueGreenLost as lycLost, colourOf as lycColour, extinction as lycExt, GOLD_PPM as LYC_GOLD, hueName as lycHue, seen as lycSeen } from '../src/labs/chemistry/lycurgus-cup-gold-silver-specks';
+import { balanced as banBalanced, balancedChance as banChance, KINDS as BAN_KINDS, sexCell as banCell } from '../src/labs/biology/cavendish-banana-three-chromosome-sets';
 import { goodOutcome as penGood, START as PEN_START, treat as penTreat, trulyAllergic as penAllergic } from '../src/labs/body/penicillin-allergy-label';
 
 describe('labs', () => {
@@ -1594,6 +1595,19 @@ describe('lab maths', () => {
     expect(lycLost(1)).toBeGreaterThan(0.9);
     expect(lycLost(0)).toBe(0);
     expect(1e6 / LYC_GOLD / 1000).toBe(25);
+  });
+  it('Cavendish: with 3 sets of 11 chromosomes about 1 sex cell in 1,024 is balanced; with pairs all are', () => {
+    expect(banChance(3, BAN_KINDS)).toBe(2 / 2048);
+    expect(Math.round(1 / banChance(3, BAN_KINDS))).toBe(1024);
+    expect(banChance(2, BAN_KINDS)).toBe(1);
+    expect(banChance(3, 1)).toBe(1);
+    const rand = rng(42);
+    let good = 0;
+    for (let i = 0; i < 200000; i++) if (banBalanced(banCell(3, BAN_KINDS, rand))) good++;
+    expect(good / 200000).toBeGreaterThan(0.0007);
+    expect(good / 200000).toBeLessThan(0.0013);
+    expect(banBalanced(banCell(2, BAN_KINDS, rand))).toBe(true);
+    expect(banCell(3, BAN_KINDS, rand).every((n) => n === 1 || n === 2)).toBe(true);
   });
   it('Penicillin label: 1 labelled patient in 10 is truly allergic; penicillin clears the toy infection keeping 90% of gut bacteria, a broad drug keeps 30% and lets resistant ones grow', () => {
     expect(Array.from({ length: 100 }, (_, i) => i).filter(penAllergic).length).toBe(10);
