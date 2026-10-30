@@ -13,10 +13,15 @@
 // Oksana Tarasova: the more modest rise reflects recovery of the land carbon sinks and reduced fire emissions
 // in 2025 after the strong 2023/2024 El Niño, which reduced the efficiency of the biosphere through drought,
 // drier vegetation and more wildfires; Ko Barrett: CO₂ has a very long lifetime and will affect the climate for
-// decades and even centuries; 179 stations. WMO press release for Bulletin No. 21 (15 October 2025): from 2023
-// to 2024 CO₂ rose by 3.5 ppm, the largest increase since modern measurements started in 1957; 423.9 ppm in
-// 2024; as global temperature rises, oceans absorb less CO₂ because of decreased solubility at higher
-// temperatures.
+// decades and even centuries; 179 stations. The rise from 2023 to 2024 is 3.6 ppm in Bulletin No. 22: its
+// Japanese edition, published by the Japan Meteorological Agency, which runs WMO's World Data Centre for
+// Greenhouse Gases (https://www.data.jma.go.jp/env/info/wdcgg/GHG_Bulletin-22_j.pdf): the 2.8 ppm rise of 2025
+// was smaller than the record 3.6 ppm of 2023 to 2024; the Centre's global annual means used in the Bulletin
+// (https://gaw.kishou.go.jp/publications/global_mean_mole_fractions, 27 October 2026): 420.4 ppm in 2023, 424.0
+// in 2024, 426.8 in 2025; AFP (27 October 2026) also gives 3.6. (The English text sits behind a bot check on
+// library.wmo.int.) WMO press release for Bulletin No. 21 (15 October 2025): from 2023 to 2024 CO₂ rose by 3.5 ppm,
+// the largest increase since modern measurements started in 1957 (revised to 3.6 with the new data); as global
+// temperature rises, oceans absorb less CO₂ because of decreased solubility at higher temperatures.
 // Computed here: the 1750 level, 426.8 / 1.53 ≈ 279 ppm (said as "about 280"); the extra since 1750, ≈ 148 ppm;
 // 426.8 per million = 4.27 per 10,000. The closing tap demonstration is a simplified model that holds the drains
 // at what they took in 2025, about half of that year's emissions (≈ 2.8 of ≈ 5.6 ppm); it is labelled so.
@@ -24,7 +29,7 @@
 // Scene plan (65.0 s). Important things stay above y = 930; captions are centred at y = 846.
 //  A  0.0–14.2  Hook: 426.8 ppm; what ppm means (4 dots in 10,000); 1750 vs 2025.
 //  B 14.2–28.0  The bathtub: the tap pours CO₂ in, land and ocean drain about half, the rest stays.
-//  C 28.0–51.0  The yearly rise: 0.8 (1960s), 2.4 (2011–2020), 3.5 (2023→24, El Niño), 2.8 (2024→25).
+//  C 28.0–51.0  The yearly rise: 0.8 (1960s), 2.4 (2011–2020), 3.6 (2023→24, El Niño), 2.8 (2024→25).
 //  D 51.0–65.0  Warmer seawater holds less; what stays piles up; the level steadies only when in = out.
 const W = 864, H = 1080;
 const { clamp, seg, lerp, span } = Kit;
@@ -45,7 +50,7 @@ const text = (s, x, y, o = {}) => k.text(s, x, y, { color: C.ink, base: 'middle'
 const A = (a, fn) => k.alpha(a, fn);
 
 // ---------- the numbers (WMO) ----------
-const PPM = 426.8, SHARE_OF_1750 = 1.53, RISE_2025 = 2.8, RISE_2024 = 3.5, RISE_1960S = 0.8, RISE_2010S = 2.4;
+const PPM = 426.8, SHARE_OF_1750 = 1.53, RISE_2025 = 2.8, RISE_2024 = 3.6, RISE_1960S = 0.8, RISE_2010S = 2.4;
 const PRE = PPM / SHARE_OF_1750; // ≈ 279
 const EXTRA = PPM - PRE; // ≈ 148
 const PER_10K = PPM / 100; // 4.27
@@ -336,7 +341,7 @@ function rises(t) {
       const x = XS[i], h = r.v * PX * g;
       const hot = i === 2 && t > 41.8 && t < 46.4;
       A(Math.min(1, g * 3), () => {
-        ctx.strokeStyle = C.faint; ctx.lineWidth = 3; k.rrect(x - BW / 2 - 7, BASE - 4.0 * PX, BW + 14, 4.0 * PX, [16, 16, 0, 0]); ctx.stroke();
+        ctx.strokeStyle = C.faint; ctx.lineWidth = 3; k.rrect(x - BW / 2 - 7, BASE - 4.2 * PX, BW + 14, 4.2 * PX, [16, 16, 0, 0]); ctx.stroke();
         font(600, 24); text(r.a, x, BASE + 30, { color: C.ink, align: 'center' });
         font(500, 22); text(r.b, x, BASE + 58, { color: C.soft, align: 'center' });
       });
