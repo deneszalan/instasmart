@@ -286,7 +286,8 @@
                   "quasi-riemann-zero-strip",
                   "reed-snake-cartwheel",
                   "bay-of-bengal-cyclone-season",
-                  "blood-cells-epigenetic-clock"
+                  "blood-cells-epigenetic-clock",
+                  "decaf-coffee-caffeine-removal"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },
