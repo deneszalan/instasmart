@@ -161,6 +161,7 @@ export const LABS = {
   'hittite-bread-and-water': 'Read Bedřich Hrozný’s line of Hittite from 1915 as he did: start from the known Sumerian sign for bread and match the three unknown words to their meanings by their look-alikes in Latin, German and English.',
   'clapping-music-phase-shift': 'Move the second clapper of Steve Reich’s Clapping Music ahead one beat at a time, hear the two parts, and count the beats where both clap, one claps or nobody does.',
   'statue-of-liberty-enlarged-by-four': 'Enlarge Bartholdi’s 1.25 m study model of the Statue of Liberty and watch its height, its copper skin and the volume it would have if solid grow, up to the 46 m statue.',
+  'conclave-two-thirds': 'Back one candidate with groups of the 133 cardinals of May 2025 and see why two thirds, 89 votes, needs three of four groups, while the 1996 rule’s late majority of 67 needed only two.',
 } as const;
 
 export type LabId = keyof typeof LABS;

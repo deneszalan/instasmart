@@ -156,6 +156,7 @@ import { BALLOTS as LV_BALLOTS, elected as lvElected, NO_MARKS as LV_NO_MARKS, r
 import { fits as hitFits, LINE as HIT_LINE, OFFER as HIT_OFFER, reading as hitReading, WORDS as HIT_WORDS } from '../src/labs/language/hittite-bread-and-water';
 import { BEATS as CLAP_BEATS, NO_SILENCE as CLAP_NO_SILENCE, overlap as clapOverlap, PATTERN as CLAP_PATTERN, shifted as clapShifted } from '../src/labs/music/clapping-music-phase-shift';
 import { enlarge as solEnlarge, FULL as SOL_FULL, STAGES as SOL_STAGES } from '../src/labs/art/statue-of-liberty-enlarged-by-four';
+import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need as concNeed, votes as concVotes, wins as concWins } from '../src/labs/politics/conclave-two-thirds';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1495,5 +1496,19 @@ describe('lab maths', () => {
     expect(Math.round(solEnlarge(SOL_FULL).volume / 1000)).toBe(50);
     expect(SOL_STAGES.map((s) => s.m)).toEqual([1.25, 2.85, 11, 46.05]);
     expect(SOL_STAGES[2].m / SOL_STAGES[1].m).toBeCloseTo(3.86, 2);
+  });
+  it('Conclave: two thirds of 133 is 89 and 45 can block; no two of the imagined groups reach 89, the biggest and any other reach 67', () => {
+    expect(concNeed(CONC_N, 'two-thirds')).toBe(89);
+    expect(concNeed(CONC_N, 'late-1996')).toBe(67);
+    expect(concBlockers(CONC_N, 'two-thirds')).toBe(45);
+    expect(concNeed(120, 'two-thirds')).toBe(80);
+    expect(concNeed(115, 'two-thirds')).toBe(77);
+    expect(CONC_BLOCS.reduce((a, b) => a + b, 0)).toBe(CONC_N);
+    const pairs: boolean[][] = [];
+    for (let i = 0; i < 4; i++) for (let j = i + 1; j < 4; j++) pairs.push([0, 1, 2, 3].map((k) => k === i || k === j));
+    expect(pairs.some((c) => concWins(c, 'two-thirds'))).toBe(false);
+    expect(pairs.filter((c) => concWins(c, 'late-1996')).map(concVotes)).toEqual([84, 75, 70]);
+    expect(concWins([true, true, true, false], 'two-thirds')).toBe(true);
+    expect(concWins([false, true, true, true], 'two-thirds')).toBe(false);
   });
 });
