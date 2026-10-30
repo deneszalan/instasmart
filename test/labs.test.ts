@@ -189,6 +189,8 @@ import { energyPerKg as cometEnergy, hcnFate as cometFate, peakTemperature as co
 import { choose as qChoose, GOAL as Q_GOAL, majorityError as qMajority } from '../src/labs/physics/logical-qubit-37-for-one';
 import { errorBound as rhBound, goalMet as rhGoal, primesAbout as rhPrimes, THETA_LEAN as RH_LEAN, THETA_NEW as RH_NEW } from '../src/labs/math/quasi-riemann-zero-strip';
 import { crossingTime as snakeCross, ROLL_MAX as SNAKE_MAX, ROLL_MIN as SNAKE_MIN, slitherSpeed as snakeSlither, TRACK_M as SNAKE_TRACK } from '../src/labs/biology/reed-snake-cartwheel';
+import { canForm as bayForm, LAT_MIN as BAY_LAT, SHEAR_MAX as BAY_SHEAR, SST_MIN as BAY_SST } from '../src/labs/earth/bay-of-bengal-cyclone-season';
+import { FLOOR as CLOCK_FLOOR, profile as clockProfile, readAge as clockRead, retained as clockRetained } from '../src/labs/body/blood-cells-epigenetic-clock';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1893,5 +1895,24 @@ describe('lab maths', () => {
     expect(snakeCross(SNAKE_MIN)).toBeCloseTo(1.279, 3);
     expect(snakeCross(snakeSlither(3))).toBeCloseTo(4 * snakeCross(3), 9);
     expect(snakeCross(2.2)).toBe(1);
+  });
+  it('Bay of Bengal: warm sea with strong shear gives a depression at most; low shear a cyclone; a cool sea or the equator nothing', () => {
+    expect(BAY_SST).toBe(26.5);
+    expect(bayForm(29, 20, 15)).toBe('depression');
+    expect(bayForm(29, BAY_SHEAR, 15)).toBe('cyclone');
+    expect(bayForm(26, 5, 15)).toBe('none');
+    expect(bayForm(29, 5, BAY_LAT - 5)).toBe('none');
+    expect(bayForm(29, 5, BAY_LAT)).toBe('cyclone');
+  });
+  it('blood-cells-epigenetic-clock: the toy clock reads the donor age back and the direct route erases it slowly', () => {
+    for (const a of [0, 40, 101]) expect(clockRead(clockProfile(a, 0, 'direct'))).toBeCloseTo(a, 6);
+    expect(clockRetained(0, 'direct')).toBe(1);
+    expect(clockRetained(49, 'direct')).toBeGreaterThan(0.15);
+    expect(clockRetained(49, 'direct')).toBeLessThan(0.25);
+    expect(clockRetained(1000, 'direct')).toBeCloseTo(CLOCK_FLOOR, 6);
+    expect(clockRetained(10, 'pluripotent')).toBe(0);
+    expect(clockRead(clockProfile(80, 50, 'direct'))).toBeLessThan(20);
+    expect(clockRead(clockProfile(80, 0, 'pluripotent'))).toBeCloseTo(0, 6);
+    for (const v of clockProfile(101, 0, 'direct')) { expect(v).toBeGreaterThanOrEqual(0); expect(v).toBeLessThanOrEqual(1); }
   });
 });

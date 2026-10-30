@@ -194,6 +194,8 @@ export const LABS = {
   'logical-qubit-37-for-one': 'Protect one bit with copies read by majority vote: set how often each copy flips and how many copies there are, and watch the logical error fall below one in a million, or, above the threshold, get worse with every copy added.',
   'quasi-riemann-zero-strip': 'Slide θ, the furthest a zero of the zeta function may sit from the edge of the critical strip, and see the bound x^θ on how far the count of primes up to a million, a billion or a trillion can stray: 11/12 narrows the strip, Riemann’s ½ makes the bound tiny.',
   'reed-snake-cartwheel': 'Race a rolling dwarf reed snake against a slithering one over the study’s 2.2 m track: set the rolling speed within the measured 1.72 to 3.69 m/s, with the slither at a quarter of it, and read the crossing times.',
+  'bay-of-bengal-cyclone-season': 'Set the sea temperature, the wind shear between the surface and the heights, and the latitude, and see whether a tropical cyclone can grow, stays a depression, or nothing forms: the monsoon’s shear is what keeps the Bay of Bengal quiet in summer.',
+  'blood-cells-epigenetic-clock': 'A toy epigenetic clock: set a donor’s age and watch methyl tags drift at twelve sites, then convert the cells directly into neural stem cells or via pluripotent stem cells and read how young the clock says they are, as in the Bonn study that took an 80-year-old’s blood cells to under 20.',
 } as const;
 
 export type LabId = keyof typeof LABS;

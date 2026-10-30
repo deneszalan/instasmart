@@ -194,4 +194,6 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'logical-qubit-37-for-one': lazy(() => import('./physics/logical-qubit-37-for-one')),
   'quasi-riemann-zero-strip': lazy(() => import('./math/quasi-riemann-zero-strip')),
   'reed-snake-cartwheel': lazy(() => import('./biology/reed-snake-cartwheel')),
+  'bay-of-bengal-cyclone-season': lazy(() => import('./earth/bay-of-bengal-cyclone-season')),
+  'blood-cells-epigenetic-clock': lazy(() => import('./body/blood-cells-epigenetic-clock')),
 };
