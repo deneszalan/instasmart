@@ -52,8 +52,9 @@ export default function BloodCellsEpigeneticClock({ onDone }: LabProps) {
   useGoal(route === 'direct' && age >= 80 && reading < 20, onDone);
 
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
-    // the two strands, with a site on each crest
-    const y0 = h * 0.4, amp = 10, x0 = 24, x1 = w - 24;
+    // the two strands, with a site on each crest; on a short stage the band sits higher and loses its captions
+    const tall = h >= 150;
+    const y0 = tall ? h * 0.4 : h * 0.36, amp = 10, x0 = 24, x1 = w - 24;
     ctx.lineWidth = 2;
     for (const sgn of [1, -1]) {
       ctx.strokeStyle = STRAND;
@@ -67,20 +68,20 @@ export default function BloodCellsEpigeneticClock({ onDone }: LabProps) {
       ctx.beginPath(); ctx.arc(x, y0, 9, 0, Math.PI * 2); ctx.fill();
       ctx.fillStyle = TAG;
       ctx.beginPath(); ctx.moveTo(x, y0); ctx.arc(x, y0, 9, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * p[i]); ctx.closePath(); ctx.fill();
-      label(ctx, s.drift > 0 ? '+' : '−', x, y0 + 22, { size: 10, color: C.soft });
+      if (h >= 125) label(ctx, s.drift > 0 ? '+' : '−', x, y0 + 20, { size: 10, color: C.soft });
     });
-    // the gauge: the reading as a needle, the donor's age as a faint mark
-    const gy = h - 36, gx0 = 24, gx1 = w - 24;
+    // the gauge along the bottom: the reading as a bar, the donor's age as a mark below it
+    const gy = h - 26, gx0 = 24, gx1 = w - 24;
     ctx.strokeStyle = 'rgba(255,255,255,0.25)'; ctx.lineWidth = 4; ctx.lineCap = 'round';
     ctx.beginPath(); ctx.moveTo(gx0, gy); ctx.lineTo(gx1, gy); ctx.stroke();
     ctx.strokeStyle = reading < 20 ? YOUNG : DIAL;
     ctx.beginPath(); ctx.moveTo(gx0, gy); ctx.lineTo(gx0 + (Math.max(0, reading) / DONOR_MAX) * (gx1 - gx0), gy); ctx.stroke();
     ctx.lineCap = 'butt';
     const dx = gx0 + (age / DONOR_MAX) * (gx1 - gx0);
-    ctx.strokeStyle = C.soft; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(dx, gy - 10); ctx.lineTo(dx, gy + 10); ctx.stroke();
-    label(ctx, t('donor {a}', { a: age }), dx, gy + 20, { size: 10, color: C.soft });
-    label(ctx, t('reads {r} years', { r: shown }), w / 2, gy - 18, { size: 12, color: reading < 20 ? YOUNG : DIAL });
-    label(ctx, t('{n} sites · methylated share in colour', { n: SITES.length }), w / 2, 12, { size: 10, color: C.soft });
+    ctx.strokeStyle = C.soft; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(dx, gy - 7); ctx.lineTo(dx, gy + 7); ctx.stroke();
+    label(ctx, t('donor {a}', { a: age }), dx, gy + 15, { size: 10, color: C.soft });
+    label(ctx, t('reads {r} years', { r: shown }), gx1, gy - 13, { size: 12, align: 'right', color: reading < 20 ? YOUNG : DIAL });
+    if (tall) label(ctx, t('{n} sites · methylated share in colour', { n: SITES.length }), w / 2, 12, { size: 10, color: C.soft });
   };
 
   return (
