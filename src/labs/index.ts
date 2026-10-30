@@ -167,4 +167,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'conclave-two-thirds': lazy(() => import('./politics/conclave-two-thirds')),
   'swiss-guard-sack-of-rome': lazy(() => import('./history/swiss-guard-sack-of-rome')),
   'us-gdp-annual-rate': lazy(() => import('./economics/us-gdp-annual-rate')),
+  'bond-price-yield-seesaw': lazy(() => import('./economics/bond-price-yield-seesaw')),
 };

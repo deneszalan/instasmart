@@ -162,6 +162,7 @@ import { STAIR_HEADROOM, gentlestTurns, stairDesign } from '../src/labs/engineer
 import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need as concNeed, votes as concVotes, wins as concWins } from '../src/labs/politics/conclave-two-thirds';
 import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
 import { annualRate as gdpAnnualRate, levels as gdpLevels, quarterBehind as gdpQuarterBehind, reached as gdpReached, yearOnYear as gdpYearOnYear } from '../src/labs/economics/us-gdp-annual-rate';
+import { COUPON as BOND_COUPON, FACE as BOND_FACE, priceAt as bondPriceAt, reached as bondReached, yieldAt as bondYieldAt } from '../src/labs/economics/bond-price-yield-seesaw';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1581,5 +1582,20 @@ describe('lab maths', () => {
     expect(gdpReached([0, 0, 0, 1])).toBe(true);
     expect(gdpReached([0.5, 0.5, 0.5, 0.5])).toBe(false);
     expect(gdpReached([1, 1, 1, 1])).toBe(false);
+  });
+  it('Bond seesaw: a €100 bond paying €3 is worth €100 at 3%, about €84.56 at 5%; the SEC example gives $925 and $1,082', () => {
+    expect(bondPriceAt(3, 10)).toBeCloseTo(BOND_FACE, 9);
+    expect(bondPriceAt(5, 10)).toBeCloseTo(84.56, 2);
+    expect(bondPriceAt(4, 10)).toBeCloseTo(91.89, 2);
+    expect(bondYieldAt(bondPriceAt(5, 10), 10)).toBeCloseTo(5, 6);
+    expect(bondYieldAt(90, 10)).toBeGreaterThan(bondYieldAt(95, 10));
+    expect(bondPriceAt(5, 30)).toBeCloseTo(69.255, 3);
+    expect(bondPriceAt(5, 2)).toBeCloseTo(96.28, 2);
+    expect(Math.round(bondPriceAt(2, 18, 15, 1000))).toBe(925);
+    expect(Math.round(bondPriceAt(1, 18, 15, 1000))).toBe(1082);
+    expect(BOND_COUPON).toBe(3);
+    expect(bondReached(84.6, 10)).toBe(true);
+    expect(bondReached(84.6, 30)).toBe(false);
+    expect(bondReached(100, 10)).toBe(false);
   });
 });

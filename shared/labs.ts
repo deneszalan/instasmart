@@ -167,6 +167,7 @@ export const LABS = {
   'conclave-two-thirds': 'Back one candidate with groups of the 133 cardinals of May 2025 and see why two thirds, 89 votes, needs three of four groups, while the 1996 rule’s late majority of 67 needed only two.',
   'swiss-guard-sack-of-rome': 'Follow the Swiss Guard on a map of today through 6 May 1527: tap where its 189 men gathered by the obelisk, the Passetto the 42 survivors took Pope Clement VII along, and the castle where they took him.',
   'us-gdp-annual-rate': 'Set an imaginary economy’s growth in each of four quarters and read the newest quarter three ways: against the quarter before, at a US-style annual rate, and against the same quarter a year earlier.',
+  'bond-price-yield-seesaw': 'Set the price paid for an example bond of €100 paying €3 a year, over 2, 10 or 30 years, and watch its yield to maturity move the other way, like a seesaw.',
 } as const;
 
 export type LabId = keyof typeof LABS;
