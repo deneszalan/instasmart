@@ -2156,7 +2156,7 @@ export const de: Record<string, string> = {
   'Imagined groups: real cardinals vote in secret, one by one, not in blocs.': 'Gedachte Gruppen: Echte Kardinäle wählen geheim, jeder für sich, nicht in Blöcken.',
   'A map of the Vatican and the Borgo today. {q}': 'Eine Karte des Vatikans und des Borgo heute. {q}',
   'Map of today, not of 1527': 'Karte von heute, nicht von 1527',
-  'Simplified map of today from OpenStreetMap; the obelisk’s place in 1527 is approximate.': 'Vereinfachte Karte von heute nach OpenStreetMap; der Platz des Obelisken 1527 ist ungefähr.',
+  'Simplified map of today, with places from OpenStreetMap (© OpenStreetMap contributors); the obelisk’s place in 1527 is approximate.': 'Vereinfachte Karte von heute, mit Orten aus OpenStreetMap (© OpenStreetMap-Mitwirkende); der Platz des Obelisken 1527 ist ungefähr.',
   'Steps of 6 May 1527 found': 'Gefundene Stationen des 6. Mai 1527',
   'Where did the 189 guards gather?': 'Wo sammelten sich die 189 Gardisten?',
   'Where did they take him?': 'Wohin brachten sie ihn?',

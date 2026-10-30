@@ -1540,6 +1540,7 @@ describe('lab maths', () => {
     expect(Math.round(stairDesign(2, 4).slope * 100)).toBe(15);
     expect(Math.round(stairDesign(1, 8).slope * 100)).toBe(7);
     expect(stairDesign(1, 1).length).toBeCloseTo(Math.hypot(2 * Math.PI * 6, 22), 9);
+  });
   it('Conclave: two thirds of 133 is 89 and 45 can block; no two of the imagined groups reach 89, the biggest and any other reach 67', () => {
     expect(concNeed(CONC_N, 'two-thirds')).toBe(89);
     expect(concNeed(CONC_N, 'late-1996')).toBe(67);

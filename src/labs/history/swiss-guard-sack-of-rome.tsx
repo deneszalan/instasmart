@@ -160,7 +160,7 @@ export default function SwissGuardRoute({ onDone }: LabProps) {
         ]}
       />
       <Btn ghost onClick={() => { setStep(0); setTap(null); }}>{t('Start again')}</Btn>
-      <p className="lab__note">{t('Simplified map of today from OpenStreetMap; the obelisk’s place in 1527 is approximate.')}</p>
+      <p className="lab__note">{t('Simplified map of today, with places from OpenStreetMap (© OpenStreetMap contributors); the obelisk’s place in 1527 is approximate.')}</p>
     </div>
   );
 }
