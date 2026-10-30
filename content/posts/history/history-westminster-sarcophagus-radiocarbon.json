@@ -1,0 +1,161 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-westminster-sarcophagus-radiocarbon",
+  "field": "history",
+  "title": "Westminster Abbey’s Roman coffin held a Saxon abbot: the carbon in his bones gave the date",
+  "emoji": "⚰️",
+  "body": "On 21 October 2026 Westminster Abbey in London [announced](https://www.westminster-abbey.org/abbey-news/mystery-of-abbeys-roman-sarcophagus-solved) who probably lay in the Roman sarcophagus excavated on its North Green in 1869. The limestone coffin is inscribed for Valerius Amandinus, a wealthy Briton of about 300 to 400 AD, but its lid was re-cut with a Latin cross of the 10th or 11th century, so the Abbey sent a bone sample to the Scottish Universities Environmental Research Centre for radiocarbon dating. Living things take in carbon-14, a radioactive carbon made by cosmic rays in the upper air, through plants and food; at death the supply stops and what is there decays, half of it every [5,700 years or so](https://en.wikipedia.org/wiki/Radiocarbon_dating). A bone about a thousand years old still holds roughly 88% of its carbon-14, and a calibration curve from tree rings, which allows for the air’s changing carbon-14, turns the raw age into calendar years: here 987 to 1052. The man was 35 to 49, and the Abbey’s consultant archaeologist Warwick Rodwell concludes he was a high-ranking monk, most likely Abbot Aelfwig, who died around 1020, or his successor Wulnoth, who died in 1049.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "A bone from someone who died around the year 1020 still holds what share of its carbon-14 today?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 88,
+      "unit": "%",
+      "explanation": "About 88%: carbon-14 halves every 5,700 years or so, and a thousand years is less than a fifth of a half-life. The lab measures the share and turns it into a date."
+    },
+    {
+      "type": "video",
+      "src": "sarcophagus.mp4",
+      "poster": "sarcophagus.jpg",
+      "alt": "Animation on dark stone: a pale Roman sarcophagus lettered VALERIVS AMANDINVS, a cross cut into its lid, a bone sample sent to a lab; cosmic rays making carbon-14, the decay curve with a 5,700-year half-life and 88% left, a tree-ring calibration curve, and two abbots’ cards.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Darkling” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 6,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.13
+        },
+        {
+          "start": 6.4,
+          "end": 12
+        },
+        {
+          "start": 12.27,
+          "end": 18.13
+        },
+        {
+          "start": 18.4,
+          "end": 24.27
+        },
+        {
+          "start": 24.53,
+          "end": 30.4
+        },
+        {
+          "start": 30.67,
+          "end": 36.53
+        },
+        {
+          "start": 36.8,
+          "end": 42.67
+        },
+        {
+          "start": 42.93,
+          "end": 48.8
+        },
+        {
+          "start": 49.07,
+          "end": 54.93
+        },
+        {
+          "start": 55.2,
+          "end": 61.07
+        },
+        {
+          "start": 61.33,
+          "end": 67.2
+        },
+        {
+          "start": 67.47,
+          "end": 73.33
+        },
+        {
+          "start": 73.6,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "westminster-sarcophagus-radiocarbon",
+      "prompt": "Slide the share of carbon-14 left in a bone until its date of death lands in the Abbey’s range, 987 to 1052.",
+      "takeaway": "About 88%: a thousand years is less than a fifth of carbon-14’s 5,700-year half-life, so only an eighth of it has gone. Every 0.1% of difference shifts the date by about eight years."
+    },
+    {
+      "type": "timeline",
+      "heading": "The coffin’s two lives",
+      "events": [
+        {
+          "when": "c. 300–400",
+          "text": "Carved for Valerius Amandinus, a wealthy Roman Briton"
+        },
+        {
+          "when": "987–1052",
+          "text": "Date range for the bones inside; the lid re-cut with a cross"
+        },
+        {
+          "when": "1869",
+          "text": "Excavated on Westminster Abbey’s North Green"
+        },
+        {
+          "when": "21 Oct 2026",
+          "text": "The Abbey names Abbot Aelfwig or Wulnoth as the likely man"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why a range, not a year",
+      "text": "The lab measures how much carbon-14 is left, with some uncertainty, and the air’s carbon-14 has varied over the centuries. Tree rings of known age supply a calibration curve that turns the raw age into calendar years, and its wiggles widen or narrow the answer. For the man in the sarcophagus it came out as 987 to 1052."
+    },
+    {
+      "type": "quiz",
+      "question": "How could a laboratory tell roughly when the man in Westminster Abbey’s Roman sarcophagus died?",
+      "options": [
+        "His bones lost carbon-14 at a known rate",
+        "The coffin’s stone was dated",
+        "The cross on the lid was dated",
+        "Roman coins lay beside him"
+      ],
+      "answer": 0,
+      "explanation": "Living things take in carbon-14 from the air; after death it decays with a half-life of about 5,700 years. The bone kept about 88%, which calibration turned into the years 987 to 1052."
+    }
+  ],
+  "tags": [
+    "westminster",
+    "radiocarbon",
+    "archaeology",
+    "saxons",
+    "rome",
+    "dating"
+  ],
+  "source": {
+    "label": "Westminster Abbey: Mystery of Abbey’s Roman sarcophagus solved (21 October 2026)",
+    "url": "https://www.westminster-abbey.org/abbey-news/mystery-of-abbeys-roman-sarcophagus-solved"
+  },
+  "theme": {
+    "gradient": [
+      "#1f1b17",
+      "#4a3b2a"
+    ]
+  },
+  "author": {
+    "name": "Fable",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T11:00:00Z",
+  "news": "2026-10-21",
+  "newsArticle": {
+    "label": "ThePrint: Who was buried in a Roman sarcophagus at Westminster Abbey? New study offers clues",
+    "url": "https://theprint.in/feature/who-was-buried-in-a-roman-sarcophagus-at-westminster-abbey-new-study-offers-clues/3077923/"
+  }
+}
