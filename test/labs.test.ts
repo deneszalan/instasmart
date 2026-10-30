@@ -161,6 +161,7 @@ import { COL_DISC, COL_ROWS, COL_SETS, colonnadeColumns, placeEye, sightFrom } f
 import { STAIR_HEADROOM, gentlestTurns, stairDesign } from '../src/labs/engineering/vatican-double-helix-stairs';
 import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need as concNeed, votes as concVotes, wins as concWins } from '../src/labs/politics/conclave-two-thirds';
 import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
+import { betweenRisings as phoBetween, DEIMOS as PHO_DEIMOS, hoursUp as phoUp, KEEP_PACE as PHO_KEEP, keepsPace as phoKeeps, PHOBOS as PHO_PHOBOS, period as phoPeriod, T_MARS as PHO_T_MARS } from '../src/labs/space/phobos-rises-in-the-west';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1567,5 +1568,18 @@ describe('lab maths', () => {
     expect(sgHit(SG_PLACES.castle)).toBe('castle');
     expect(sgHit([41.90315, 12.4605])).toBe('passetto');
     expect(sgHit([41.9049, 12.4600])).toBe(null);
+  });
+  it('Phobos: 7 h 39 min a lap, rising every 11.1 h for 4.24 h; the keep-pace orbit is 20,428 km; Deimos rises in the east', () => {
+    expect(phoPeriod(PHO_PHOBOS)).toBeCloseTo(0.31891 * 24, 1);
+    expect(phoPeriod(PHO_DEIMOS)).toBeCloseTo(1.26244 * 24, 1);
+    expect(Math.round(PHO_KEEP)).toBe(20428);
+    expect(phoPeriod(PHO_KEEP)).toBeCloseTo(PHO_T_MARS, 9);
+    expect(phoBetween(PHO_PHOBOS)).toBeCloseTo(11.1, 1);
+    expect(phoUp(PHO_PHOBOS)).toBeCloseTo(4.25, 1);
+    expect(phoBetween(PHO_DEIMOS)).toBeLessThan(-100);
+    expect(phoKeeps(20400)).toBe(true);
+    expect(phoKeeps(20300)).toBe(false);
+    expect(phoKeeps(20500)).toBe(false);
+    expect(phoKeeps(12000)).toBe(false);
   });
 });
