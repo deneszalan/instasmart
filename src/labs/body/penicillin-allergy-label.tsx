@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Btn, C, Choice, label, Readouts, Stage, useGoal, type LabProps } from '../kit';
+import { Btn, C, Choice, clamp, font, label, Readouts, Stage, useGoal, type LabProps } from '../kit';
 import { t } from '../../i18n';
 import { formatNumber } from '../../lib/format';
 
@@ -60,8 +60,12 @@ export default function PenicillinLabel({ onDone }: LabProps) {
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
     // the record's label
     const tagText = blocked ? t('Penicillin blocked by the label') : !checked ? t('Allergy label: penicillin') : allergic ? t('Checked: truly allergic') : t('Checked: not allergic, label removed');
-    label(ctx, t('Labelled patient {n}', { n: formatNumber(patient + 1) }), 10, 14, { size: 11, color: C.soft, align: 'left' });
-    label(ctx, tagText, w - 10, 14, { size: 11, color: blocked || !checked || allergic ? RED : C.good, align: 'right' });
+    // it shrinks to fit beside the patient's number on a narrow phone
+    const who = t('Labelled patient {n}', { n: formatNumber(patient + 1) });
+    font(ctx, 11);
+    const tagSize = clamp((11 * (w - 32 - ctx.measureText(who).width)) / ctx.measureText(tagText).width, 7.5, 11);
+    label(ctx, who, 10, 14, { size: 11, color: C.soft, align: 'left' });
+    label(ctx, tagText, w - 10, 14, { size: tagSize, color: blocked || !checked || allergic ? RED : C.good, align: 'right' });
     // the bacteria, in a grid
     const all = [...Array(counts.infection).fill(CORAL), ...Array(counts.gut).fill(MINT), ...Array(counts.resistant).fill(VIOLET)];
     const cols = 16, rows = Math.ceil((START.infection + START.gut + START.resistant + 30) / cols), cw = (w - 20) / cols, ch = (h - 54) / rows;
@@ -73,11 +77,20 @@ export default function PenicillinLabel({ onDone }: LabProps) {
       ctx.fill();
     });
     const key: [string, string][] = [[CORAL, t('infection bacteria')], [MINT, t('helpful gut bacteria')], [VIOLET, t('drug-resistant')]];
+    // the key spread across the width, first at the left edge and last at the right with equal gaps between,
+    // its names shrinking so each swatch stays clear of the name before it
+    font(ctx, 9.5);
+    const names = key.reduce((sum, [, s]) => sum + ctx.measureText(s).width, 0);
+    const keySize = clamp((9.5 * (w - 20 - key.length * 14 - (key.length - 1) * 14)) / names, 7.5, 9.5);
+    font(ctx, keySize);
+    const widths = key.map(([, s]) => 14 + ctx.measureText(s).width);
+    const gap = (w - 20 - widths.reduce((a, b) => a + b, 0)) / (key.length - 1);
+    let x = 10;
     key.forEach(([col, s], i) => {
-      const x = 10 + [0, 0.32, 0.7][i] * (w - 20);
       ctx.fillStyle = col;
       ctx.fillRect(x, h - 14, 10, 5);
-      label(ctx, s, x + 14, h - 11, { size: 9.5, color: C.soft, align: 'left' });
+      label(ctx, s, x + 14, h - 11, { size: keySize, color: C.soft, align: 'left' });
+      x += widths[i] + gap;
     });
   };
 
