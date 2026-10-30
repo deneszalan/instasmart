@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { C, dot, label, line, Range, Readouts, Stage, useFrame, useGoal, type LabProps } from '../kit';
+import { C, dot, font, label, line, Range, Readouts, Stage, useFrame, useGoal, type LabProps } from '../kit';
 import { t } from '../../i18n';
 import { formatNumber } from '../../lib/format';
 
@@ -44,7 +44,12 @@ export default function PhobosRisesInTheWest({ onDone, active }: LabProps) {
   useGoal(pace, onDone);
 
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
-    const cx = w / 2, cy = h / 2, s = (Math.min(w, h) / 2 - 16) / 30000;
+    // the moons' names go in a column right of the widest orbit the slider reaches, each joined to its ring by a
+    // thin line, so they never sit on a ring or the moving moon; on a squarish stage the drawing shrinks to leave room
+    font(ctx, 9.5);
+    const names = Math.max(ctx.measureText('Phobos').width, ctx.measureText('Deimos').width) + 14;
+    const s = (Math.min(w - 2 * names, h) / 2 - 16) / 30000, outer = 30000 * s + 6;
+    const cx = Math.min(w / 2, w - names - outer - 4), cy = h / 2;
     const ring = (rr: number, color: string, width: number, dash: number[] = []) => {
       ctx.save();
       ctx.strokeStyle = color;
@@ -58,9 +63,13 @@ export default function PhobosRisesInTheWest({ onDone, active }: LabProps) {
     ring(PHOBOS, C.line, 1, [3, 4]);
     ring(DEIMOS, C.line, 1, [3, 4]);
     ring(KEEP_PACE, 'rgba(242,191,79,0.45)', 1.5, [6, 4]);
-    // the moons' names are the same in English and German
-    label(ctx, 'Phobos', cx + PHOBOS * s + 3, cy, { size: 9.5, color: C.faint, align: 'left' });
-    label(ctx, 'Deimos', cx, cy - DEIMOS * s - 7, { size: 9.5, color: C.faint });
+    // the moons' names are the same in English and German: Deimos above the middle, Phobos below it
+    const nx = cx + outer + 8, dy = Math.min(h / 2 - 9, Math.max(10, outer * 0.45));
+    for (const [name, rr, y] of [['Deimos', DEIMOS, cy - dy], ['Phobos', PHOBOS, cy + dy]] as const) {
+      const a = Math.atan2(y - cy, nx - 4 - cx);
+      line(ctx, cx + Math.cos(a) * rr * s, cy + Math.sin(a) * rr * s, nx - 4, y, C.faint, 1);
+      label(ctx, name, nx, y, { size: 9.5, color: C.faint, align: 'left' });
+    }
     // Mars, turning, with a flag on its equator
     const rot = (hours / T_MARS) * Math.PI * 2;
     dot(ctx, cx, cy, R_MARS * s, RUST);
