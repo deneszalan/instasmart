@@ -159,6 +159,8 @@ import { enlarge as solEnlarge, FULL as SOL_FULL, STAGES as SOL_STAGES } from '.
 import { aligned as laoAligned, armEnds as laoArmEnds, FIT as LAO_FIT, HEAD as LAO_HEAD, holesOff as laoHolesOff, SHOULDER as LAO_SHOULDER } from '../src/labs/art/laocoon-lost-arm';
 import { COL_DISC, COL_ROWS, COL_SETS, colonnadeColumns, placeEye, sightFrom } from '../src/labs/math/st-peters-colonnade-foci';
 import { STAIR_HEADROOM, gentlestTurns, stairDesign } from '../src/labs/engineering/vatican-double-helix-stairs';
+import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need as concNeed, votes as concVotes, wins as concWins } from '../src/labs/politics/conclave-two-thirds';
+import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1538,5 +1540,31 @@ describe('lab maths', () => {
     expect(Math.round(stairDesign(2, 4).slope * 100)).toBe(15);
     expect(Math.round(stairDesign(1, 8).slope * 100)).toBe(7);
     expect(stairDesign(1, 1).length).toBeCloseTo(Math.hypot(2 * Math.PI * 6, 22), 9);
+  it('Conclave: two thirds of 133 is 89 and 45 can block; no two of the imagined groups reach 89, the biggest and any other reach 67', () => {
+    expect(concNeed(CONC_N, 'two-thirds')).toBe(89);
+    expect(concNeed(CONC_N, 'late-1996')).toBe(67);
+    expect(concBlockers(CONC_N, 'two-thirds')).toBe(45);
+    expect(concNeed(120, 'two-thirds')).toBe(80);
+    expect(concNeed(115, 'two-thirds')).toBe(77);
+    expect(CONC_BLOCS.reduce((a, b) => a + b, 0)).toBe(CONC_N);
+    const pairs: boolean[][] = [];
+    for (let i = 0; i < 4; i++) for (let j = i + 1; j < 4; j++) pairs.push([0, 1, 2, 3].map((k) => k === i || k === j));
+    expect(pairs.some((c) => concWins(c, 'two-thirds'))).toBe(false);
+    expect(pairs.filter((c) => concWins(c, 'late-1996')).map(concVotes)).toEqual([84, 75, 70]);
+    expect(concWins([true, true, true, false], 'two-thirds')).toBe(true);
+    expect(concWins([false, true, true, true], 'two-thirds')).toBe(false);
+  });
+  it('Swiss Guard: 189 − 147 = 42; the Passetto on the map is about 0.75 km; taps find the 1527 route', () => {
+    expect(SG_GUARDS - SG_DIED).toBe(42);
+    expect(SG_SURVIVED).toBe(42);
+    expect(sgLength(SG_PASSETTO)).toBeGreaterThan(0.7);
+    expect(sgLength(SG_PASSETTO)).toBeLessThan(0.85);
+    expect(sgKm(SG_PLACES.obelisk1527, SG_PLACES.obeliskNow)).toBeCloseTo(0.24, 1);
+    expect(SG_ROUTE).toEqual(['obelisk1527', 'passetto', 'castle']);
+    expect(sgHit(SG_PLACES.obelisk1527)).toBe('obelisk1527');
+    expect(sgHit(SG_PLACES.obeliskNow)).toBe('obeliskNow');
+    expect(sgHit(SG_PLACES.castle)).toBe('castle');
+    expect(sgHit([41.90315, 12.4605])).toBe('passetto');
+    expect(sgHit([41.9049, 12.4600])).toBe(null);
   });
 });

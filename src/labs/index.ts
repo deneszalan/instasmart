@@ -164,4 +164,6 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'laocoon-lost-arm': lazy(() => import('./art/laocoon-lost-arm')),
   'st-peters-colonnade-foci': lazy(() => import('./math/st-peters-colonnade-foci')),
   'vatican-double-helix-stairs': lazy(() => import('./engineering/vatican-double-helix-stairs')),
+  'conclave-two-thirds': lazy(() => import('./politics/conclave-two-thirds')),
+  'swiss-guard-sack-of-rome': lazy(() => import('./history/swiss-guard-sack-of-rome')),
 };

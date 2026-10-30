@@ -255,6 +255,8 @@
                   "laocoon-lost-arm",
                   "st-peters-colonnade-foci",
                   "vatican-double-helix-stairs"
+                  "conclave-two-thirds",
+                  "swiss-guard-sack-of-rome"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },
