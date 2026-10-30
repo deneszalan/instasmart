@@ -258,7 +258,8 @@
                   "conclave-two-thirds",
                   "swiss-guard-sack-of-rome",
                   "tibet-quake-plateau-spreads",
-                  "php2shell-out-of-memory-flaw"
+                  "php2shell-out-of-memory-flaw",
+                  "champi-eyewall-replacement"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

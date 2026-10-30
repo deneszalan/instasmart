@@ -1,0 +1,194 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-champi-eyewall-replacement",
+  "field": "earth",
+  "title": "Super Typhoon Champi rebuilt its eyewall three times, then peaked near 300 km/h",
+  "emoji": "🌀",
+  "body": "Between 17 and 20 October 2026, Super Typhoon Champi passed just south of Guam and crossed the Philippine Sea while its winds rose, dipped and rose again, and the US Joint Typhoon Warning Center (JTWC) tied the dips to eyewall replacement cycles. A typhoon's strongest winds whirl in its eyewall, a ring of thunderstorms around the calm eye. In an intense storm, a rainband farther out can close into a second ring, with a clear moat between the two; on 17 October radar on Guam showed Champi's about 30 nautical miles (55 km) from the centre. The new ring captures the warm, moist air flowing in and the spin it carries, so the inner ring starves and the storm weakens, as Champi did from 130 to 120 knots on 18 October. Then the new ring contracts and, like a skater pulling in her arms, spins faster. On 19 October the JTWC [described Champi's third such swap](https://wiki.chlod.net/jtwc/prog/2026-10-19-2120-wp2926prog.txt), and on 20 October, over seas of 29 to 31 °C, it peaked at 160 knots, about 296 km/h, averaged over one minute. Cooler water and wind shear wore it down before it passed Taiwan on 23 October.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How fast were Super Typhoon Champi’s strongest winds at its peak on 20 October 2026, in km/h, averaged over a minute?",
+      "min": 0,
+      "max": 400,
+      "step": 1,
+      "answer": 296,
+      "unit": "km/h",
+      "explanation": "About 296 km/h: the US Joint Typhoon Warning Center put them at 160 knots. Champi had dipped and come back more than once on the way there."
+    },
+    {
+      "type": "video",
+      "src": "eyewall.mp4",
+      "poster": "eyewall.jpg",
+      "alt": "Animation on a deep ocean blue: Champi's path past Guam and a wind chart that rises, dips and rises. Seen from above, a bright eyewall circles the calm eye; an outer ring forms with a clear moat, the inner ring fades, then the new ring shrinks and spins faster, like a skater pulling in her arms.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Iron Horse” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "champi-eyewall-replacement",
+      "prompt": "A new ring forms 40 nautical miles out with 60-knot winds. Shrink it: how small must it get before its winds beat the old eyewall’s 130 knots?",
+      "takeaway": "About 18 nautical miles: keeping its spin, a ring that shrinks to half the radius doubles its speed. That is why a typhoon can come back stronger after an eyewall swap, as Champi did."
+    },
+    {
+      "type": "flow",
+      "heading": "An eyewall replacement cycle",
+      "steps": [
+        {
+          "icon": "⭕",
+          "label": "A rainband closes into an outer ring"
+        },
+        {
+          "icon": "💨",
+          "label": "It grabs the warm, moist air flowing in"
+        },
+        {
+          "icon": "📉",
+          "label": "The inner eyewall starves: winds dip"
+        },
+        {
+          "icon": "⛸️",
+          "label": "The new ring shrinks and spins up"
+        }
+      ],
+      "cycle": true
+    },
+    {
+      "type": "chart",
+      "heading": "Champi’s strongest winds in knots, from the Joint Typhoon Warning Center",
+      "items": [
+        {
+          "label": "17 Oct, 18:00 UTC",
+          "value": 130
+        },
+        {
+          "label": "18 Oct, 12:00 UTC",
+          "value": 120
+        },
+        {
+          "label": "19 Oct, 06:00 UTC",
+          "value": 140
+        },
+        {
+          "label": "20 Oct, 00:00 UTC",
+          "value": 130
+        },
+        {
+          "label": "20 Oct, 18:00 UTC",
+          "value": 160,
+          "emphasis": true
+        }
+      ],
+      "unit": "knots",
+      "note": "One-minute average winds from JTWC warnings; the dips came during eyewall swaps."
+    },
+    {
+      "type": "text",
+      "heading": "An eye within an eye",
+      "text": "Typhoon Sarah in 1956 was the first storm seen with two eyewalls, “an eye within an eye”. From 1962 the US Project Stormfury seeded hurricanes with silver iodide, hoping to weaken them this way. Then researchers saw unseeded storms do the same on their own, which called its successes into question."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did Super Typhoon Champi weaken for a while as a second ring of storms formed around its eyewall?",
+      "options": [
+        "The outer ring starved the inner one",
+        "It hit land on Guam",
+        "Its eye filled with cold air",
+        "Its rainbands ran out of rain"
+      ],
+      "answer": 0,
+      "explanation": "The outer ring took the warm, moist air and spin flowing in, so the inner eyewall, where the strongest winds were, faded. Once the new ring shrank, the winds picked up again."
+    }
+  ],
+  "tags": [
+    "typhoons",
+    "hurricanes",
+    "weather",
+    "storms",
+    "pacific"
+  ],
+  "source": {
+    "label": "Wikipedia: Eyewall replacement cycle",
+    "url": "https://en.wikipedia.org/wiki/Eyewall_replacement_cycle"
+  },
+  "theme": {
+    "gradient": [
+      "#06121f",
+      "#174a6e"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T08:00:00Z",
+  "news": "2026-10-20",
+  "newsArticle": {
+    "label": "AP (The Atlanta Journal-Constitution): Typhoon Champi strengthens to Category 5 but moves away from land; Trudy weakens",
+    "url": "https://www.ajc.com/news/2026/10/hurricane-trudy-weakens-off-mexico-and-typhoon-champi-moves-away-from-land/"
+  }
+}

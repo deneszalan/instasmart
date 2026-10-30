@@ -2194,4 +2194,13 @@ export const de: Record<string, string> = {
   'Entries counted': 'Gezählte Einträge',
   'Entries really built': 'Wirklich fertige Einträge',
   'A toy model of the first PHP2Shell flaw, with made-up sizes: not PHP’s real code or fix.': 'Ein Spielzeugmodell der ersten PHP2Shell-Lücke, mit erfundenen Größen: nicht PHPs echter Code und nicht seine Korrektur.',
+  'new ring: {v} knots': 'neuer Ring: {v} Knoten',
+  'old eyewall: {v} knots': 'alte Augenwand: {v} Knoten',
+  'A new ring {r} nautical miles from the centre, with winds of {v} knots': 'Ein neuer Ring {r} Seemeilen vom Zentrum, mit Winden von {v} Knoten',
+  'Radius of the new ring': 'Radius des neuen Rings',
+  '{n} nautical miles': '{n} Seemeilen',
+  'New ring’s winds': 'Wind im neuen Ring',
+  '{v} knots': '{v} Knoten',
+  'Old eyewall left': 'Rest der alten Augenwand',
+  'Simplified: the ring keeps its spin (speed × radius) and loses none to friction; the starting ring of 60 knots at 40 nautical miles is an illustration.': 'Vereinfacht: Der Ring behält seinen Drehimpuls (Geschwindigkeit × Radius) und verliert nichts durch Reibung; der Startring mit 60 Knoten in 40 Seemeilen ist nur ein Beispiel.',
 };

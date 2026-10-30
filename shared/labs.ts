@@ -168,6 +168,7 @@ export const LABS = {
   'swiss-guard-sack-of-rome': 'Follow the Swiss Guard on a map of today through 6 May 1527: tap where its 189 men gathered by the obelisk, the Passetto the 42 survivors took Pope Clement VII along, and the castle where they took him.',
   'tibet-quake-plateau-spreads': 'Raise a block of crust and change India’s squeeze, and see which push is biggest and whether the block breaks on a thrust, strike-slip or normal fault, as the Tibetan Plateau does.',
   'php2shell-out-of-memory-flaw': 'Fill a toy table under a memory limit, counting each entry before or after getting its memory, and see when running out leaves a half-built entry behind, the idea behind the first PHP2Shell flaw.',
+  'champi-eyewall-replacement': 'Shrink a typhoon’s new outer eyewall toward the centre and watch its winds speed up as it keeps its spin, until they beat the old eyewall’s 130 knots, as Super Typhoon Champi’s did.',
 } as const;
 
 export type LabId = keyof typeof LABS;
