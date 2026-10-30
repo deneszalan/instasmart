@@ -165,6 +165,7 @@ import { faultType as tibFault, pushes as tibPushes, stretches as tibStretch } f
 import { ENTRIES as PHP_ENTRIES, fill as phpFill, TOTAL_KB as PHP_TOTAL } from '../src/labs/tech/php2shell-out-of-memory-flaw';
 import { BEATS_AT as CHAMPI_BEATS, innerLeft as champiLeft, OLD_KT as CHAMPI_OLD, ringSpeed as champiSpeed } from '../src/labs/earth/champi-eyewall-replacement';
 import { corrected as torCorrected, detect as torDetect, stripWidth as torStrip, TRUE_N as TOR_N, walkLine as torWalk } from '../src/labs/math/tortoise-distance-sampling';
+import { buttonAt as wsiButton, landingsPerHour as wsiPerHour, minutesBetween as wsiMinutes, SPEED_KT as WSI_SPEED } from '../src/labs/engineering/western-sydney-digital-tower';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1603,5 +1604,13 @@ describe('lab maths', () => {
     expect(pts).toHaveLength(TOR_N);
     expect(seen).toBeLessThan(TOR_N / 2);
     expect(Math.abs(torCorrected(seen, 10) - TOR_N)).toBeLessThanOrEqual(TOR_N * 0.25);
+  });
+  it('Western Sydney: 15 nautical miles is 7 minutes at about 129 knots; 5 nautical miles fits three times as many landings', () => {
+    expect(WSI_SPEED).toBeCloseTo(128.6, 1);
+    expect(wsiMinutes(15)).toBeCloseTo(7, 6);
+    expect(wsiPerHour(15)).toBeCloseTo(8.57, 2);
+    expect(wsiPerHour(5)).toBeCloseTo(3 * wsiPerHour(15), 6);
+    expect(Math.round(wsiPerHour(4))).toBe(32);
+    expect(Math.round(wsiButton(15))).toBe(8);
   });
 });

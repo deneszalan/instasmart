@@ -170,6 +170,7 @@ export const LABS = {
   'php2shell-out-of-memory-flaw': 'Fill a toy table under a memory limit, counting each entry before or after getting its memory, and see when running out leaves a half-built entry behind, the idea behind the first PHP2Shell flaw.',
   'champi-eyewall-replacement': 'Shrink a typhoon’s new outer eyewall toward the centre and watch its winds speed up as it keeps its spin, until they beat the old eyewall’s 130 knots, as Super Typhoon Champi’s did.',
   'tortoise-distance-sampling': 'Walk a survey line past 120 tortoises, make the scrub thicker or thinner, and compare the tortoises seen with the estimate corrected by distance sampling, as on Aldabra.',
+  'western-sydney-digital-tower': 'Change how far apart planes line up to land at Western Sydney International and see the minutes between landings, the landings an hour, and how small the next plane looks to the cameras.',
 } as const;
 
 export type LabId = keyof typeof LABS;

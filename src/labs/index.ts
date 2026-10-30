@@ -170,4 +170,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'php2shell-out-of-memory-flaw': lazy(() => import('./tech/php2shell-out-of-memory-flaw')),
   'champi-eyewall-replacement': lazy(() => import('./earth/champi-eyewall-replacement')),
   'tortoise-distance-sampling': lazy(() => import('./math/tortoise-distance-sampling')),
+  'western-sydney-digital-tower': lazy(() => import('./engineering/western-sydney-digital-tower')),
 };
