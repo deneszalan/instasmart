@@ -2,9 +2,9 @@
   "$schema": "../../schema/post.schema.json",
   "id": "politics-china-party-pyramid",
   "field": "politics",
-  "title": "China’s Communist Party has more than 96 million members, and seven sit at the very top",
+  "title": "China’s Communist Party has more than 100 million members, and seven sit at the very top",
   "emoji": "🏯",
-  "body": "From 26 to 29 October 2026 the Central Committee of China’s Communist Party meets in Beijing for its fifth plenum, on “full and rigorous party self-governance”. It is one layer of a pyramid. More than 96 million members choose 2,296 delegates to a National Congress held every five years; the Congress elects a Central Committee of 205 members and 171 alternates; that committee elects a Politburo of 24, its Standing Committee of 7, and the General Secretary, Xi Jinping since 2012. Formally each layer elects the next, but in practice the choices are made privately, usually through consultation in the Politburo. Between congresses the Central Committee meets about once a year in plenums. This one has now met five times since 2022, and its term ends at the 21st National Congress, due in 2027.",
+  "body": "From 26 to 29 October 2026 the Central Committee of China’s Communist Party met in Beijing for its fifth plenum, on “full and rigorous party self-governance”. It is one layer of a pyramid. In 2022 the party’s more than 96 million members (over 101 million by the end of 2025) sent 2,296 delegates to a National Congress, held every five years; the Congress elected a Central Committee of 205 members and 171 alternates, which elected a Politburo of 24, its Standing Committee of 7, and the General Secretary, Xi Jinping since 2012. Formally each layer elects the next, but in practice the choices are made privately, usually through consultation in the Politburo. Between congresses the Central Committee meets about once a year in plenums. This one has now met five times since 2022, and its term ends at the 21st National Congress, due in 2027. This plenum confirmed the expulsion from the party of 33 officials, among them two former Politburo members, Ma Xingrui and Zhang Youxia, and filled ten empty seats on the Central Committee with alternates.",
   "slides": [
     {
       "type": "estimate",
@@ -14,13 +14,13 @@
       "step": 1,
       "answer": 7,
       "unit": "people",
-      "explanation": "Seven, elected by the Central Committee in October 2022. The wider Politburo has 24 members."
+      "explanation": "Seven, elected by the Central Committee in October 2022. The wider Politburo was elected with 24 members."
     },
     {
       "type": "video",
       "src": "pyramid.mp4",
       "poster": "pyramid.jpg",
-      "alt": "Animation on rice paper with a red seal: a pyramid builds up layer by layer, from more than 96 million party members to 2,296 congress delegates, 205 Central Committee members, a 24-member Politburo, 7 Standing Committee members and one General Secretary, then a timeline of five plenums to 2027.",
+      "alt": "Animation on rice paper with a red seal: a pyramid builds up as elected in 2022, from more than 96 million party members to 2,296 congress delegates, 205 Central Committee members, a 24-member Politburo, 7 Standing Committee members and one General Secretary, then five plenums to 2027.",
       "fit": "cover",
       "animation": true,
       "credit": "Reckon · original animation · AI narration",
@@ -87,8 +87,8 @@
     {
       "type": "explore",
       "lab": "china-party-pyramid",
-      "prompt": "Climb the pyramid from the party’s members to the top. How many members does each Standing Committee seat stand for?",
-      "takeaway": "About 14 million party members for each of the seven Standing Committee seats, and all 96 million for the one General Secretary."
+      "prompt": "Climb the pyramid as it was elected in 2022, from the party’s members to the top. How many members did each Standing Committee seat stand for?",
+      "takeaway": "In 2022, about 14 million party members for each of the seven Standing Committee seats, and all 96 million for the one General Secretary. With over 101 million members by 2025, it is still about 14 million."
     },
     {
       "type": "timeline",
@@ -158,5 +158,8 @@
   },
   "createdAt": "2026-10-26T20:47:08Z",
   "news": "2026-10-26",
-  "newsArticle": {"label": "NBC News (Reuters): China's Communist Party expels 33 officials in post-Mao-era record purge", "url": "https://www.nbcnews.com/world/china/chinas-communist-party-expels-33-officials-post-mao-era-record-purge-rcna606319"}
+  "newsArticle": {
+    "label": "NBC News (Reuters): China's Communist Party expels 33 officials in post-Mao-era record purge",
+    "url": "https://www.nbcnews.com/world/china/chinas-communist-party-expels-33-officials-post-mao-era-record-purge-rcna606319"
+  }
 }
