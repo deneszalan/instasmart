@@ -38,7 +38,7 @@ export default function WestminsterRadiocarbon({ onDone }: LabProps) {
     const a0 = THIS_YEAR - RANGE[1], a1 = THIS_YEAR - RANGE[0];
     ctx.fillStyle = 'rgba(224,184,90,0.25)';
     ctx.fillRect(X(a0), y0, Math.max(3, X(a1) - X(a0)), y1 - y0);
-    label(ctx, t('987–1052'), X(a1) + 4, y0 + 8, { size: 10, align: 'left', color: GOLD });
+    label(ctx, t('987–1052'), X(a1) + 4, y1 - 8, { size: 10, align: 'left', color: GOLD });
     // the curve
     ctx.strokeStyle = CYAN;
     ctx.lineWidth = 2.5;
@@ -65,7 +65,8 @@ export default function WestminsterRadiocarbon({ onDone }: LabProps) {
     ctx.beginPath();
     ctx.arc(px, py, 5, 0, Math.PI * 2);
     ctx.fill();
-    label(ctx, t('{p}% left → {n} years', { p: percent.toFixed(1), n: formatNumber(Math.round(age)) }), Math.min(px + 8, w - 110), py - 12, { size: 10, align: 'left', color: hit ? GOLD : C.ink });
+    // the reading, in the top-right corner, where the curve never goes
+    label(ctx, t('{p}% left → {n} years', { p: percent.toFixed(1), n: formatNumber(Math.round(age)) }), x1 - 4, y0 + 8, { size: 10, align: 'right', color: hit ? GOLD : C.ink });
   };
 
   return (

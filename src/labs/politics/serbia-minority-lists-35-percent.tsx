@@ -67,39 +67,49 @@ export default function SerbiaMinorityLists({ onDone }: LabProps) {
 
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
     // a scale of quotients from 0 to 40,000, drawn as a vertical ladder; the cut is the 250th quotient
-    const lo = 0, hi = 40000, top = 22, bot = h - 20, x0 = w * 0.5;
+    // the chips sit in the middle column, so the cut's label on the right never meets them
+    const lo = 0, hi = 40000, top = 22, bot = h - 20, gx = w * 0.2, cx = w * 0.5;
     const Y = (q: number) => bot - ((Math.min(hi, q) - lo) / (hi - lo)) * (bot - top);
+    // on a short stage the rungs are too close to label every one
+    const every = (bot - top) / 4 >= 14 ? 10000 : 20000;
     for (const q of [10000, 20000, 30000, 40000]) {
       ctx.strokeStyle = C.line;
       ctx.beginPath();
-      ctx.moveTo(w * 0.2, Y(q));
+      ctx.moveTo(gx, Y(q));
       ctx.lineTo(w - 6, Y(q));
       ctx.stroke();
-      label(ctx, formatNumber(q), w * 0.2 - 6, Y(q), { size: 10, align: 'right', color: C.faint });
+      if (q % every === 0) label(ctx, formatNumber(q), gx - 6, Y(q), { size: 10, align: 'right', color: C.faint });
     }
-    label(ctx, t('Quotients: votes ÷ 1, 2, 3 …'), w * 0.2, 9, { size: 10, align: 'left', color: C.soft });
+    label(ctx, t('Quotients: votes ÷ 1, 2, 3 …'), gx, 9, { size: 10, align: 'left', color: C.soft });
     // the cut
     const cy = Y(r.last);
     ctx.strokeStyle = GOLD;
     ctx.setLineDash([6, 4]);
     ctx.beginPath();
-    ctx.moveTo(w * 0.2, cy);
+    ctx.moveTo(gx, cy);
     ctx.lineTo(w - 6, cy);
     ctx.stroke();
     ctx.setLineDash([]);
     label(ctx, t('250th number: {q}', { q: formatNumber(Math.round(r.last)) }), w - 8, cy - 9, { size: 10, align: 'right', color: GOLD });
-    // your list's quotients ÷1 … ÷4, as a column of chips
-    const cx = x0 + w * 0.12;
+    // your list's quotients ÷1 … ÷4, as chips on the ladder; where a chip would sit on the one above, just a dot beside it
+    let lastY = -Infinity;
     for (let d = 1; d <= 4; d++) {
       const q = base / d;
       if (q > hi) continue;
       const won = q >= r.last;
       const y = Y(q);
-      ctx.fillStyle = won ? (minority ? GREEN : C.ink) : 'rgba(255,255,255,0.14)';
+      // opaque chips, so the cut line never runs through their text
+      ctx.fillStyle = won ? (minority ? GREEN : C.ink) : '#3b2f41';
       ctx.beginPath();
-      ctx.roundRect(cx - 40, y - 8, 80, 16, 4);
-      ctx.fill();
-      label(ctx, `÷${d} = ${formatNumber(Math.round(q))}`, cx, y, { size: 10, align: 'center', color: won ? '#050b1c' : C.soft });
+      if (y - lastY >= 18) {
+        ctx.roundRect(cx - 40, y - 8, 80, 16, 4);
+        ctx.fill();
+        label(ctx, `÷${d} = ${formatNumber(Math.round(q))}`, cx, y, { size: 10, align: 'center', color: won ? '#050b1c' : C.soft });
+        lastY = y;
+      } else {
+        ctx.arc(cx - 48, y, 3, 0, Math.PI * 2);
+        ctx.fill();
+      }
     }
     // the plain votes, when the bonus lifts them
     if (minority && votes < THRESHOLD && votes > 0) {
@@ -114,9 +124,11 @@ export default function SerbiaMinorityLists({ onDone }: LabProps) {
       label(ctx, t('× 1.35'), cx - 56, (y1 + y2) / 2, { size: 10, align: 'right', color: GREEN });
     }
     if (!minority && votes < THRESHOLD) {
-      label(ctx, t('under 3%: takes no part'), cx, Y(Math.min(hi, votes)) - 16, { size: 10, align: 'center', color: RED });
+      // on the left, so it never meets the cut's label on the right; below the chip when the chip is at the top
+      const y = Y(Math.min(hi, votes));
+      label(ctx, t('under 3%: takes no part'), gx + 4, y - 16 >= top + 2 ? y - 16 : y + 16, { size: 10, align: 'left', color: RED });
     }
-    label(ctx, t('your list'), cx, h - 8, { size: 10, align: 'center', color: C.soft });
+    label(ctx, t('your list'), cx, h - 7, { size: 10, align: 'center', color: C.soft });
   };
 
   return (

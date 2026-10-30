@@ -54,7 +54,7 @@ export default function CometHcn({ onDone }: LabProps) {
     ctx.beginPath();
     ctx.arc(hx, gy, 34, Math.PI, Math.PI + a);
     ctx.stroke();
-    label(ctx, `${angle}°`, hx - 46, gy - 14, { size: 11, color: C.soft });
+    label(ctx, `${angle}°`, hx - 44, gy + 16, { size: 11, color: C.soft });
     // a glow at the ground scaled by the heat
     const glow = Math.min(1, T / 25000);
     const g = ctx.createRadialGradient(hx, gy, 2, hx, gy, 30 + 60 * glow);
@@ -64,9 +64,10 @@ export default function CometHcn({ onDone }: LabProps) {
     ctx.beginPath();
     ctx.arc(hx, gy, 30 + 60 * glow, 0, Math.PI * 2);
     ctx.fill();
-    label(ctx, `${formatNumber(Math.round(T))} K`, hx, gy + 26, { size: 14, color: col });
-    label(ctx, fate === 'survives' ? t('HCN survives') : fate === 'partly' ? t('most HCN breaks') : t('no HCN left'), hx, gy + 44, { size: 11, color: col });
-    label(ctx, t('{v} km/s', { v: speed.toFixed(1) }), sx + 8, sy - 10, { size: 11, align: 'left', color: C.soft });
+    // the temperature and the verdict below the ground on the right, where they fit even on a short stage
+    label(ctx, `${formatNumber(Math.round(T))} K`, w - 8, gy + 16, { size: 13, align: 'right', color: col });
+    label(ctx, fate === 'survives' ? t('HCN survives') : fate === 'partly' ? t('most HCN breaks') : t('no HCN left'), w - 8, gy + 32, { size: 10, align: 'right', color: col });
+    label(ctx, t('{v} km/s', { v: speed.toFixed(1) }), sx + 8, Math.max(9, sy - 10), { size: 11, align: 'left', color: C.soft });
   };
 
   return (
