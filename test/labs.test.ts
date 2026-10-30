@@ -161,6 +161,7 @@ import { COL_DISC, COL_ROWS, COL_SETS, colonnadeColumns, placeEye, sightFrom } f
 import { STAIR_HEADROOM, gentlestTurns, stairDesign } from '../src/labs/engineering/vatican-double-helix-stairs';
 import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need as concNeed, votes as concVotes, wins as concWins } from '../src/labs/politics/conclave-two-thirds';
 import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
+import { faultType as tibFault, pushes as tibPushes, stretches as tibStretch } from '../src/labs/earth/tibet-quake-plateau-spreads';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1567,5 +1568,12 @@ describe('lab maths', () => {
     expect(sgHit(SG_PLACES.castle)).toBe('castle');
     expect(sgHit([41.90315, 12.4605])).toBe('passetto');
     expect(sgHit([41.9049, 12.4600])).toBe(null);
+  });
+  it('Tibet: low land under a squeeze breaks on a thrust; high land on a normal fault stretching east–west', () => {
+    expect(tibFault(0, 60)).toBe('thrust');
+    expect(tibFault(2, 60)).toBe('strike-slip');
+    expect(tibFault(5, 60)).toBe('normal');
+    expect(tibStretch(5, 60)).toBe('east-west');
+    expect(tibPushes(0, 0)).toEqual({ vertical: 100, northSouth: 100, eastWest: 100 });
   });
 });
