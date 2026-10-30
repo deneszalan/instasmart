@@ -168,6 +168,7 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'swiss-guard-sack-of-rome': lazy(() => import('./history/swiss-guard-sack-of-rome')),
   'starry-night-dawn-sky-date': lazy(() => import('./art/starry-night-dawn-sky-date')),
   'bad-apple-rule-breaking': lazy(() => import('./psychology/bad-apple-rule-breaking')),
+  'maxxing-word-of-the-year': lazy(() => import('./language/maxxing-word-of-the-year')),
   'adults-outscore-children-creativity': lazy(() => import('./psychology/adults-outscore-children-creativity')),
   'choral-evensong-anglican-chant': lazy(() => import('./music/choral-evensong-anglican-chant')),
 };

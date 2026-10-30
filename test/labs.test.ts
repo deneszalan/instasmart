@@ -163,6 +163,7 @@ import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need
 import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
 import { DAWNS as SN_DAWNS, dawnDate as snDate, fits as snFits, skyAt as snSky } from '../src/labs/art/starry-night-dawn-sky-date';
 import { finalAverage as baAverage, MEASURED as BA_MEASURED, SEEDS as BA_SEEDS, simulate as baSimulate, TIPPED as BA_TIPPED } from '../src/labs/psychology/bad-apple-rule-breaking';
+import { tryCut as mxCut, WORDS as MX_WORDS } from '../src/labs/language/maxxing-word-of-the-year';
 import { A_RATINGS as CR_A, B_RATINGS as CR_B, counted as crCounted, GOAL_IDEAS as CR_GOAL, score as crScore } from '../src/labs/psychology/adults-outscore-children-creativity';
 import { BARS as AC_BARS, recitingSyllables as acReciting, show as acShow, SLOTS as AC_SLOTS, timing as acTiming, VERSES as AC_VERSES } from '../src/labs/music/choral-evensong-anglican-chant';
 
@@ -1593,6 +1594,19 @@ describe('lab maths', () => {
     const run = baSimulate(0.03, 0.2, 7);
     expect(run.end.slice(0, run.steady).every((v) => v === 0)).toBe(true);
     expect(run.end.every((v) => v >= 0 && v <= 1)).toBe(true);
+  });
+  it('Maxxing: each word frees its libfix at the right cut, and only there', () => {
+    expect(mxCut(0, 4)).toMatchObject({ piece: 'HOLIC', right: true });
+    expect(mxCut(0, 7)).toMatchObject({ piece: 'IC', right: false, ownParts: true });
+    expect(mxCut(1, 5).piece).toBe('GATE');
+    expect(mxCut(2, 3).piece).toBe('ATHON');
+    expect(mxCut(3, 3).piece).toBe('BURGER');
+    expect(mxCut(3, 7)).toMatchObject({ piece: 'ER', ownParts: true, right: false });
+    expect(mxCut(4, 3).piece).toBe('MAXING');
+    MX_WORDS.forEach((w, i) => {
+      const rights = Array.from({ length: w.word.length - 1 }, (_, n) => n + 1).filter((n) => mxCut(i as 0, n).right);
+      expect(rights).toEqual([w.cut]);
+    });
   });
   it('Creativity scoring: counting and adding reward a long list, averaging and the best three reward quality', () => {
     const a = CR_A.slice(0, CR_GOAL);
