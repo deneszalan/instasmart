@@ -44,7 +44,7 @@ export default function UsGdpAnnualRate({ onDone }: LabProps) {
       const x = L + slot * i + slot * 0.18, bw = slot * 0.64;
       ctx.fillStyle = i === pick + 1 ? MINT : BAR;
       ctx.fillRect(x, Y(v), bw, base - Y(v));
-      label(ctx, i === 0 ? t('a year ago') : names[i - 1], x + bw / 2, base + 11, { size: 9, color: i === pick + 1 ? MINT : C.faint });
+      label(ctx, i === 0 ? t('year ago') : names[i - 1], x + bw / 2, base + 11, { size: 9, color: i === pick + 1 ? MINT : C.faint });
       label(ctx, formatNumber(Math.round(v * 10) / 10), x + bw / 2, Y(v) - 8, { size: 9.5, color: C.soft });
     });
     // the annual rate: the newest quarter's pace kept up for a whole year, from the quarter before
@@ -74,12 +74,12 @@ export default function UsGdpAnnualRate({ onDone }: LabProps) {
       />
       <Readouts
         items={[
-          { label: t('Jul–Sep, against Apr–Jun'), value: pct(qs[3]), tone: 'good' },
-          { label: t('Jul–Sep at an annual rate'), value: pct(ann), tone: ann >= 4 ? 'accent' : undefined },
-          { label: t('Jul–Sep, year on year'), value: pct(yoy), tone: yoy <= 2 ? undefined : 'bad' },
+          { label: t('vs Apr–Jun'), value: pct(qs[3]), tone: 'good' },
+          { label: t('At an annual rate'), value: pct(ann), tone: ann >= 4 ? 'accent' : undefined },
+          { label: t('Year on year'), value: pct(yoy), tone: yoy <= 2 ? undefined : 'bad' },
         ]}
       />
-      <p className="lab__note">{t('Simplified: an imaginary economy that was 100 a year ago. The annual rate compounds the newest quarter four times; year on year multiplies all four quarters.')}</p>
+      <p className="lab__note">{t('Simplified: an imaginary economy that was 100 a year ago.')}</p>
     </div>
   );
 }

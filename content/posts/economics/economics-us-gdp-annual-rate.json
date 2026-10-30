@@ -87,7 +87,7 @@
     {
       "type": "explore",
       "lab": "us-gdp-annual-rate",
-      "prompt": "Make the newest quarter, July–September, read over 4% at an annual rate while its growth against a year before stays at 2% or less.",
+      "prompt": "Get July–September over 4% at an annual rate while its growth against a year before stays at 2% or less.",
       "takeaway": "A single strong quarter does it: 1% in July–September is over 4% at an annual rate, yet after flat quarters only about 1% year on year. Same economy, different rulers, so check which one a figure uses."
     },
     {

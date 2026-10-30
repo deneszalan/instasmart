@@ -44,7 +44,7 @@ export default function BondPriceYield({ onDone }: LabProps) {
 
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
     // left: the seesaw; right: price against yield for the chosen bond
-    const sx = w * 0.24, sy = h * 0.55, len = w * 0.4;
+    const sx = w * 0.22, sy = h * 0.5, len = w * 0.36;
     const tilt = Math.max(-0.45, Math.min(0.45, (y - COUPON) * 0.07));
     ctx.fillStyle = '#a77f2e';
     ctx.beginPath();
@@ -65,8 +65,8 @@ export default function BondPriceYield({ onDone }: LabProps) {
     ctx.restore();
     label(ctx, euro(price), sx - (len / 2 - len * 0.17) * Math.cos(tilt), sy - 15 + (len / 2 - len * 0.17) * Math.sin(tilt), { size: 11, color: '#0a0f1f' });
     label(ctx, pct(y), sx + (len / 2 - len * 0.17) * Math.cos(tilt), sy - 15 - (len / 2 - len * 0.17) * Math.sin(tilt), { size: 11, color: '#0a0f1f' });
-    label(ctx, t('bond price'), sx - len * 0.33, sy + 46, { size: 10, color: PRICE });
-    label(ctx, t('bond yield'), sx + len * 0.33, sy + 46, { size: 10, color: YIELD });
+    label(ctx, t('bond price'), sx - len * 0.33, sy + 34, { size: 10, color: PRICE });
+    label(ctx, t('bond yield'), sx + len * 0.33, sy + 34, { size: 10, color: YIELD });
 
     const L = w * 0.5, R = w - 8, top = 14, base = h - 22;
     const X = (p: number) => L + ((p - P_MIN) / (P_MAX - P_MIN)) * (R - L);
@@ -104,10 +104,10 @@ export default function BondPriceYield({ onDone }: LabProps) {
         items={[
           { label: t('Yield to maturity'), value: pct(y), tone: Math.abs(y - 5) <= 0.05 ? 'good' : 'accent' },
           { label: t('€3 ÷ price'), value: pct((COUPON / price) * 100) },
-          { label: t('Back at the end, against the price'), value: `${price <= FACE ? '+' : '−'}${euro(Math.abs(FACE - price))}` },
+          { label: t('Gain at the end'), value: `${price <= FACE ? '+' : '−'}${euro(Math.abs(FACE - price))}` },
         ]}
       />
-      <p className="lab__note">{t('Simplified: an example bond of €100 paying €3 once a year, held to the end; the yield is the rate at which all its payments are worth the price.')}</p>
+      <p className="lab__note">{t('Simplified: an example bond paying €3 once a year, held to the end.')}</p>
     </div>
   );
 }

@@ -87,7 +87,7 @@
     {
       "type": "explore",
       "lab": "bond-price-yield-seesaw",
-      "prompt": "Find the price at which the 10-year bond yields 5%. Then switch to 30 years: does the same yield need a bigger or a smaller price cut?",
+      "prompt": "Find the price that makes the 10-year bond yield 5%. Then try 30 years: is the price cut bigger or smaller?",
       "takeaway": "About €84.60 makes the 10-year bond yield 5%. The 30-year one must fall to about €69 for the same yield: the longer the fixed promise, the further its price swings when yields move."
     },
     {
