@@ -167,4 +167,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'conclave-two-thirds': lazy(() => import('./politics/conclave-two-thirds')),
   'swiss-guard-sack-of-rome': lazy(() => import('./history/swiss-guard-sack-of-rome')),
   'starry-night-dawn-sky-date': lazy(() => import('./art/starry-night-dawn-sky-date')),
+  'bad-apple-rule-breaking': lazy(() => import('./psychology/bad-apple-rule-breaking')),
 };

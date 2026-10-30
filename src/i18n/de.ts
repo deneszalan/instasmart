@@ -2181,4 +2181,13 @@ export const de: Record<string, string> = {
   '{d} July 1889': '{d}. Juli 1889',
   '{d} June 1889': '{d}. Juni 1889',
   'The Moon is further south →': 'Der Mond steht weiter im Süden →',
+  '100 people at the end': '100 Menschen am Ende',
+  'average rule-breaking over time': 'durchschnittlicher Regelbruch im Lauf der Zeit',
+  'A simulated group of 100: overshooting in {e} of updates, {s} who always follow the rule; average rule-breaking at the end {a}': 'Eine simulierte Gruppe von 100: Übertreiben bei {e} der Schritte, {s} halten sich immer an die Regel; durchschnittlicher Regelbruch am Ende {a}',
+  'Chance of overshooting': 'Chance zu übertreiben',
+  'Always follow the rule': 'Halten sich immer an die Regel',
+  'Average rule-breaking at the end': 'Durchschnittlicher Regelbruch am Ende',
+  'Measured in the study': 'In der Studie gemessen',
+  'overshoot in {n} of cases': 'Übertreiben in {n} der Fälle',
+  'Simplified model after the 2026 study’s simulation: each step one person moves towards another’s choice, more towards worse examples than better ones. The strengths are illustrative; three runs are shown.': 'Vereinfachtes Modell nach der Simulation der Studie von 2026: Bei jedem Schritt nähert sich eine Person der Wahl einer anderen, stärker schlechteren Vorbildern als besseren. Die Stärken sind nur zur Veranschaulichung; gezeigt sind drei Durchläufe.',
 };

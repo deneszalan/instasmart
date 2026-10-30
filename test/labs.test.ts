@@ -162,6 +162,7 @@ import { STAIR_HEADROOM, gentlestTurns, stairDesign } from '../src/labs/engineer
 import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need as concNeed, votes as concVotes, wins as concWins } from '../src/labs/politics/conclave-two-thirds';
 import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
 import { DAWNS as SN_DAWNS, dawnDate as snDate, fits as snFits, skyAt as snSky } from '../src/labs/art/starry-night-dawn-sky-date';
+import { finalAverage as baAverage, MEASURED as BA_MEASURED, SEEDS as BA_SEEDS, simulate as baSimulate, TIPPED as BA_TIPPED } from '../src/labs/psychology/bad-apple-rule-breaking';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1579,5 +1580,16 @@ describe('lab maths', () => {
     expect(hits).toEqual(['23/6', '22/7', '23/7']);
     expect(snDate(0)).toEqual({ month: 6, day: 1 });
     expect(snDate(60)).toEqual({ month: 7, day: 31 });
+  });
+  it('Bad apple: copying alone levels off, rare overshoots tip the group, steady rule-followers hold it', () => {
+    const avg = (e: number, steady: number) => baAverage(BA_SEEDS.map((sd) => baSimulate(e, steady, sd)));
+    expect(avg(0, 0)).toBeGreaterThan(0.3);
+    expect(avg(0, 0)).toBeLessThan(0.7);
+    expect(avg(BA_MEASURED, 0)).toBeGreaterThanOrEqual(BA_TIPPED);
+    expect(avg(0.02, 0)).toBeLessThan(BA_TIPPED);
+    expect(avg(BA_MEASURED, 0.25)).toBeLessThan(0.2);
+    const run = baSimulate(0.03, 0.2, 7);
+    expect(run.end.slice(0, run.steady).every((v) => v === 0)).toBe(true);
+    expect(run.end.every((v) => v >= 0 && v <= 1)).toBe(true);
   });
 });
