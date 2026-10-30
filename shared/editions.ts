@@ -38,8 +38,9 @@ export interface Edition {
    */
   langs?: Partial<Record<Lang, { fieldText?: Partial<Record<FieldId, FieldText>>; about: string }>>;
   /**
-   * The app can be used without internet: it installs an offline worker (src/offline-worker.js) that keeps the app,
-   * and Settings offers to save every post's pictures and clips on the device. Also a Home Screen icon and manifest.
+   * The app can be used without internet: it installs an offline worker (src/offline-worker.js) that keeps the app;
+   * Settings lets the reader save the newest posts (as many as they choose) and switch to offline mode, where only
+   * those show. Also a Home Screen icon and manifest.
    */
   offline?: boolean;
 }
@@ -55,6 +56,7 @@ export const EDITIONS = {
     fields: FIELD_IDS.filter((f) => f !== 'literature'),
     storageKey: 'reckon:v1',
     wiki: false,
+    offline: true,
     authors: true,
     about:
       'Posts live as files in the Reckon GitHub repository. Ones marked AI were written by an AI, and every post links a source so you can check it.',
@@ -76,6 +78,7 @@ export const EDITIONS = {
     },
     storageKey: 'lesefutter:v1',
     wiki: false,
+    offline: true,
     authors: false,
     order: [
       'history-nibelungenlied-hintergrund',

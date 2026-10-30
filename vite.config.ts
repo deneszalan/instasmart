@@ -4,7 +4,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { defineConfig, type Plugin } from 'vitest/config';
 import react from '@vitejs/plugin-react';
-import { editionForMode, type Edition } from './shared/editions.ts';
+import { EDITIONS, editionForMode, type Edition } from './shared/editions.ts';
 import { readMp4 } from './shared/video.ts';
 
 const root = dirname(fileURLToPath(import.meta.url));
@@ -107,9 +107,15 @@ function offlineApp(edition: Edition, publicDir: string): Plugin {
       const files = Object.keys(bundle).filter((f) => !MEDIA_FILE.test(f) && f !== 'index.html');
       const shell = [...new Set(['./', 'index.html', 'manifest.webmanifest', ...own, ...files])];
       const version = createHash('sha1').update(shell.join('\n')).digest('hex').slice(0, 12);
+      // Apps whose path starts below this one's (all of them, for Reckon at the root).
+      const nested = Object.values(EDITIONS as Record<string, Edition>)
+        .filter((e) => e.id !== edition.id && (edition.path === '' ? e.path !== '' : e.path.startsWith(`${edition.path}/`)))
+        .map((e) => `${edition.path === '' ? e.path : e.path.slice(edition.path.length + 1)}/`);
       const source = readFileSync(join(root, 'src/offline-worker.js'), 'utf8')
         .replace("'__VERSION__'", JSON.stringify(version))
-        .replace('__SHELL__', JSON.stringify(shell));
+        .replace("'__ID__'", JSON.stringify(edition.id))
+        .replace('__SHELL__', JSON.stringify(shell))
+        .replace('__NESTED__', JSON.stringify(nested));
       this.emitFile({ type: 'asset', fileName: 'sw.js', source });
     },
   };

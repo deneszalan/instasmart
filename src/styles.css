@@ -4586,3 +4586,50 @@ p {
   background: var(--chip);
   color: var(--text);
 }
+
+.offline__pick {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 0 12px;
+}
+
+.offline__pick-label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.offline__pick input[type='range'] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.offline__mode {
+  border-top: 1px solid var(--hairline);
+  padding-top: 12px;
+}
+
+.offline-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--chip);
+  color: var(--text);
+}
+
+.offline-bar button {
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+}
+
+.offline__actions .btn:disabled {
+  opacity: 0.55;
+  cursor: default;
+}

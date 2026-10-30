@@ -1,23 +1,27 @@
 import { readFileSync } from 'node:fs';
 import { runInNewContext } from 'node:vm';
 import { describe, expect, it } from 'vitest';
-import { offlineFiles, status } from '../src/lib/offline';
+import { bytesOf, filesOf, newest, postFiles } from '../src/lib/offline';
 import type { KnowledgeCard } from '../src/types';
 
 /** The offline worker as the build writes it, run in a bare context to reach its functions. */
-function worker(): { parseRange: (header: string, size: number) => { start: number; end: number } | null; SHELL: string[] } {
+function worker(): { parseRange: (header: string, size: number) => { start: number; end: number } | null; SHELL: string[]; APP: string; NESTED: string[] } {
   const source = readFileSync(new URL('../src/offline-worker.js', import.meta.url), 'utf8')
-    .replace("'__VERSION__'", '"test"')
-    .replace('__SHELL__', '["./", "index.html"]');
+    .replace("'__VERSION__'", '"v1"')
+    .replace("'__ID__'", '"reckon"')
+    .replace('__SHELL__', '["./", "index.html"]')
+    .replace('__NESTED__', '["lesefutter/", "roma/"]');
   const context: Record<string, unknown> = { self: { addEventListener: () => {} } };
-  runInNewContext(`${source}\nthis.parseRange = parseRange; this.SHELL = SHELL;`, context);
+  runInNewContext(`${source}\nthis.parseRange = parseRange; this.SHELL = SHELL; this.APP = APP; this.NESTED = NESTED;`, context);
   return context as never;
 }
 
 describe('the offline worker', () => {
-  const { parseRange, SHELL } = worker();
-  it('gets the app files the build fills in', () => {
+  const { parseRange, SHELL, APP, NESTED } = worker();
+  it('gets the app files, its name and the apps under it from the build', () => {
     expect(SHELL).toEqual(['./', 'index.html']);
+    expect(APP).toBe('reckon:app-v1');
+    expect(NESTED).toEqual(['lesefutter/', 'roma/']);
   });
   it('serves the byte ranges a video player asks for', () => {
     expect(parseRange('bytes=0-', 1000)).toEqual({ start: 0, end: 999 });
@@ -33,27 +37,26 @@ describe('the offline worker', () => {
   });
 });
 
-describe('saving for offline', () => {
-  const card = (id: string, slides: unknown[], cover?: string) =>
-    ({ id, field: 'history', title: id, slides, ...(cover ? { cover: { src: cover, alt: 'x' } } : {}) }) as unknown as KnowledgeCard;
+describe('saving posts for offline', () => {
+  const card = (id: string, createdAt: string, slides: unknown[], cover?: string) =>
+    ({ id, field: 'history', title: id, createdAt, slides, ...(cover ? { cover: { src: cover, alt: 'x' } } : {}) }) as unknown as KnowledgeCard;
   const base = 'https://example.org/roma/';
-  const cards = [
-    card('history-a', [{ type: 'video', src: 'https://example.org/roma/assets/a.mp4', poster: 'https://example.org/roma/assets/a.jpg' }, { type: 'quiz' }]),
-    card('history-b', [{ type: 'image', src: './assets/b.jpg' }, { type: 'video', src: './assets/b.mp4', poster: 'https://example.org/roma/assets/a.jpg' }], 'https://upload.wikimedia.org/c.jpg'),
-  ];
-  it('lists each picture and clip once, and only the app’s own', () => {
-    expect(offlineFiles(cards, base).map((f) => f.url)).toEqual([
-      'https://example.org/roma/assets/a.mp4',
-      'https://example.org/roma/assets/a.jpg',
+  const a = card('history-a', '2026-10-01', [{ type: 'video', src: 'https://example.org/roma/assets/a.mp4', poster: 'https://example.org/roma/assets/a.jpg' }, { type: 'quiz' }]);
+  const b = card('history-b', '2026-10-20', [{ type: 'image', src: './assets/b.jpg' }, { type: 'video', src: './assets/b.mp4', poster: 'https://example.org/roma/assets/a.jpg' }], 'https://upload.wikimedia.org/c.jpg');
+  const c = card('history-c', '2026-10-10', [{ type: 'text', text: 'x' }]);
+  it('lists a post’s pictures and clips, only the app’s own', () => {
+    expect(postFiles(b, base).map((f) => f.url)).toEqual([
       'https://example.org/roma/assets/b.jpg',
       'https://example.org/roma/assets/b.mp4',
+      'https://example.org/roma/assets/a.jpg',
     ]);
   });
-  it('counts what is saved', () => {
-    const files = [
-      { url: 'a', bytes: 100 },
-      { url: 'b', bytes: 50 },
-    ];
-    expect(status(files, new Set(['b']), true)).toEqual({ saved: 1, total: 2, savedBytes: 50, totalBytes: 150, app: true });
+  it('counts a file two posts share once', () => {
+    expect(filesOf([a, b], base)).toHaveLength(4);
+    expect(bytesOf([a, b], base)).toBe(0); // test files have no known size
+  });
+  it('keeps the newest posts first', () => {
+    expect(newest(2, [a, b, c]).map((p) => p.id)).toEqual(['history-b', 'history-c']);
+    expect(newest(5, [a, b, c])).toHaveLength(3);
   });
 });

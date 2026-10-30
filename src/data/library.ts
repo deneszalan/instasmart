@@ -3,6 +3,7 @@ import mediaSizes from 'virtual:media-sizes';
 import { applyTranslation } from '../../shared/translate.ts';
 import type { Post } from '../../shared/schema.ts';
 import { LANG } from '../i18n';
+import { OFFLINE_ONLY, SAVED_IDS } from './offline-set';
 import type { FieldId, KnowledgeCard } from '../types';
 
 // Every post is a JSON file in content/posts/<field>/<id>.json; images and clips live in content/media/<id>/.
@@ -44,10 +45,14 @@ function resolve(post: KnowledgeCard): KnowledgeCard {
   };
 }
 
-export const LIBRARY: KnowledgeCard[] = Object.values(postFiles)
+/** Every post of this app, in the reader's language. */
+export const ALL_CARDS: KnowledgeCard[] = Object.values(postFiles)
   .map(translate)
   .map(resolve)
   .sort((a, b) => a.id.localeCompare(b.id));
+
+/** The posts the app shows: all of them, or in offline mode only the ones saved on this device. */
+export const LIBRARY: KnowledgeCard[] = OFFLINE_ONLY ? ALL_CARDS.filter((c) => SAVED_IDS.has(c.id)) : ALL_CARDS;
 
 // Clip lengths by the clip's URL, which is what slides carry once resolved.
 const lengthByUrl = new Map(Object.entries(clipLengths).map(([path, seconds]) => [resolveImage(path.split('/')[0], path.split('/')[1]), seconds]));

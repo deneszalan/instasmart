@@ -14,7 +14,7 @@ editions/roma/
 - Fields: `history`, `engineering`, `art`, `politics`, `economics`, `math` and `earth`, each with a Rome-flavoured name and account in `fieldText` in `shared/editions.ts`. Every field an app lists needs at least one post, so add a new field (good next ones: `language` for Latin, `body` for Roman medicine) together with its first post.
 - Animations work as in Reckon (`explainers/README.md`); the render finds the post in this folder. Credit them `"Roma · original animation"` (`· AI narration` when narrated), and give each animation post an explore lab, as in Reckon.
 - German: Roma can be switched to German under Settings. Each post has its German text in `content/i18n/de/<field>/<id>.json` (see "Translations" in `content/README.md`); a new post should get one too. The German captions for each animation are kept in `explainers/i18n/de/<id>.json`, ready for a German-subtitled render.
-- Offline: Roma works without internet (`offline: true` in `shared/editions.ts`). Its offline worker (`src/offline-worker.js`, written into the build as `sw.js`) keeps the app itself, and Profile's "Use without internet" saves every post's pictures and clips in the reader's language; after new posts it offers to save the rest. On iPhone it has to be saved from the Home Screen app.
+- Offline: like every app, Roma works without internet; see "Offline" in `AGENTS.md`. On iPhone it has to be saved from the Home Screen app.
 - Post ids must be unique across all apps, because `explainers/` and the labs are shared. Reckon already has posts on the Pantheon's dome, Roman concrete and Pompeii's food counters: Roma can cover them too, but with its own ids and its own take.
 
 ## Facts
