@@ -257,7 +257,8 @@
                   "vatican-double-helix-stairs",
                   "conclave-two-thirds",
                   "swiss-guard-sack-of-rome",
-                  "phobos-rises-in-the-west"
+                  "phobos-rises-in-the-west",
+                  "lycurgus-cup-gold-silver-specks"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

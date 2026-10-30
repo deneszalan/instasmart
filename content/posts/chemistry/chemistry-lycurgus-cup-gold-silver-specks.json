@@ -1,0 +1,185 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-lycurgus-cup-gold-silver-specks",
+  "field": "chemistry",
+  "title": "A Roman cup is jade green in normal light and ruby red when lit from behind",
+  "emoji": "🏺",
+  "body": "On 25 October 2026 the Guardian reported that Lisa Hollands, a University of Sheffield technician, had remade the colour-changing glass of the Lycurgus Cup, a 4th-century Roman cup in the British Museum: jade green in normal light, ruby red lit from behind ([the Guardian](https://www.theguardian.com/science/2026/oct/25/scientists-rediscover-ancient-roman-colour-changing-glass)). The colour comes from metal, not dye: one analysis found about 330 parts per million of silver and 40 of gold, in alloy specks about 70 nanometres across, far smaller than the 400 to 700 nm waves of visible light ([Wikipedia](https://en.wikipedia.org/wiki/Lycurgus_Cup)). Light makes the free electrons in each speck slosh to and fro, and they respond most to blue and green: light passing through loses those colours, leaving red and orange, while light falling on the front is scattered back green. The specks’ size and shape set the colours, and they form as the glass cools, so Hollands varied furnaces, ingredients and oxygen, even adding sugar. Ian Freestone of University College London says the colour changed with the glass’s place in the furnace, so the Romans could hardly have controlled it.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Specks of gold help colour the Lycurgus Cup. About how many parts per million of its glass are gold?",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "answer": 40,
+      "unit": "ppm",
+      "explanation": "About 40 parts per million of gold, with about 330 of silver, by one analysis: one gram of gold in 25 kilograms of glass."
+    },
+    {
+      "type": "video",
+      "src": "lycurgus.mp4",
+      "poster": "lycurgus.jpg",
+      "alt": "Animation in a dark museum: a Roman cup glows jade green with a lamp in front and ruby red with the lamp behind. A magnifier shows silver and gold specks; light waves of 400 to 700 nm dwarf a 70 nm speck whose electrons slosh; blue and green rays stop in the glass, red passes, green bounces back.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Devonshire Waltz Moderato” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 6,
+        "shock": 7
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "lycurgus-cup-gold-silver-specks",
+      "prompt": "Add gold and silver specks to the glass, then move the lamp. Make the cup look ruby red, then jade green, with about the Romans’ amount of metal.",
+      "takeaway": "The same specks do both: passing light loses its blue and green, leaving red, while light from the front is scattered back green. With no metal, the glass shows neither colour."
+    },
+    {
+      "type": "compare",
+      "heading": "One glass, two colours",
+      "left": {
+        "label": "Lamp in front",
+        "text": "Green: the metal specks scatter green light back towards you, so the glass looks an opaque jade."
+      },
+      "right": {
+        "label": "Lamp behind",
+        "text": "Red: on the way through, the specks take out blue and green, so mostly red and orange reach your eye."
+      }
+    },
+    {
+      "type": "spectrum",
+      "heading": "A speck in the glass against waves of light, in nanometres",
+      "min": 0,
+      "max": 800,
+      "unit": "nm",
+      "marks": [
+        {
+          "label": "Speck of silver-gold",
+          "value": 70,
+          "emphasis": true
+        },
+        {
+          "label": "Violet light wave",
+          "value": 400
+        },
+        {
+          "label": "Green light wave",
+          "value": 550
+        },
+        {
+          "label": "Red light wave",
+          "value": 700
+        }
+      ],
+      "colors": [
+        "#e8c06a",
+        "#e0304a"
+      ],
+      "note": "Speck size from an electron-microscope study of the cup (Barber and Freestone, 1990)."
+    },
+    {
+      "type": "quote",
+      "text": "The fact that the colour is so sensitive to the position in the furnace suggests that it would have been very difficult for the Romans to control the colour.",
+      "attribution": "Ian Freestone, University College London, in the Guardian (2026)"
+    },
+    {
+      "type": "quiz",
+      "question": "Why does the Lycurgus Cup glow red when a lamp shines from behind it?",
+      "options": [
+        "Metal specks take out blue and green",
+        "The glass is dyed with a red pigment",
+        "The lamp’s heat makes the glass glow",
+        "Red light bends around the cup"
+      ],
+      "answer": 0,
+      "explanation": "Silver-gold specks about 70 nm across respond most to blue and green light. Light passing through loses those colours, so red and orange are left."
+    }
+  ],
+  "tags": [
+    "glass",
+    "nanoparticles",
+    "light",
+    "romans",
+    "colour"
+  ],
+  "source": {
+    "label": "University of Sheffield: Technician cracks 1,600-year-old mystery to replicate Roman masterpiece",
+    "url": "https://sheffield.ac.uk/news/technician-cracks-1600-year-old-mystery-replicate-roman-masterpiece"
+  },
+  "theme": {
+    "gradient": [
+      "#0c2a1f",
+      "#5c1020"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-30T13:00:00Z",
+  "news": "2026-10-25",
+  "newsArticle": {
+    "label": "The Guardian: ‘It’s magic’: scientists rediscover how to make ancient Roman colour-changing glass",
+    "url": "https://www.theguardian.com/science/2026/oct/25/scientists-rediscover-ancient-roman-colour-changing-glass"
+  }
+}

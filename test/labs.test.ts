@@ -162,6 +162,7 @@ import { STAIR_HEADROOM, gentlestTurns, stairDesign } from '../src/labs/engineer
 import { blockers as concBlockers, BLOCS as CONC_BLOCS, ELECTORS as CONC_N, need as concNeed, votes as concVotes, wins as concWins } from '../src/labs/politics/conclave-two-thirds';
 import { DIED as SG_DIED, GUARDS as SG_GUARDS, hit as sgHit, km as sgKm, lengthKm as sgLength, PASSETTO as SG_PASSETTO, PLACES as SG_PLACES, ROUTE as SG_ROUTE, SURVIVED as SG_SURVIVED } from '../src/labs/history/swiss-guard-sack-of-rome';
 import { betweenRisings as phoBetween, DEIMOS as PHO_DEIMOS, hoursUp as phoUp, KEEP_PACE as PHO_KEEP, keepsPace as phoKeeps, PHOBOS as PHO_PHOBOS, period as phoPeriod, T_MARS as PHO_T_MARS } from '../src/labs/space/phobos-rises-in-the-west';
+import { blueGreenLost as lycLost, colourOf as lycColour, extinction as lycExt, GOLD_PPM as LYC_GOLD, hueName as lycHue, seen as lycSeen } from '../src/labs/chemistry/lycurgus-cup-gold-silver-specks';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1581,5 +1582,16 @@ describe('lab maths', () => {
     expect(phoKeeps(20300)).toBe(false);
     expect(phoKeeps(20500)).toBe(false);
     expect(phoKeeps(12000)).toBe(false);
+  });
+  it('Lycurgus Cup: with the Romans’ metal the cup looks red lit from behind and green from the front; without it, white; 40 ppm is 1 g in 25 kg', () => {
+    expect(lycHue(lycColour(lycSeen('behind', 1)))).toBe('red');
+    expect(lycHue(lycColour(lycSeen('front', 1)))).toBe('green');
+    expect(lycHue(lycColour(lycSeen('behind', 0)))).toBe('white');
+    expect(lycHue(lycColour(lycSeen('front', 0)))).toBe('white');
+    expect(lycExt(510)).toBe(1);
+    expect(lycExt(650)).toBeLessThan(0.05);
+    expect(lycLost(1)).toBeGreaterThan(0.9);
+    expect(lycLost(0)).toBe(0);
+    expect(1e6 / LYC_GOLD / 1000).toBe(25);
   });
 });

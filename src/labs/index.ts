@@ -167,4 +167,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'conclave-two-thirds': lazy(() => import('./politics/conclave-two-thirds')),
   'swiss-guard-sack-of-rome': lazy(() => import('./history/swiss-guard-sack-of-rome')),
   'phobos-rises-in-the-west': lazy(() => import('./space/phobos-rises-in-the-west')),
+  'lycurgus-cup-gold-silver-specks': lazy(() => import('./chemistry/lycurgus-cup-gold-silver-specks')),
 };
