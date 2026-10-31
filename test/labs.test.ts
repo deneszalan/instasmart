@@ -192,6 +192,7 @@ import { crossingTime as snakeCross, ROLL_MAX as SNAKE_MAX, ROLL_MIN as SNAKE_MI
 import { canForm as bayForm, LAT_MIN as BAY_LAT, SHEAR_MAX as BAY_SHEAR, SST_MIN as BAY_SST } from '../src/labs/earth/bay-of-bengal-cyclone-season';
 import { FLOOR as CLOCK_FLOOR, profile as clockProfile, readAge as clockRead, retained as clockRetained } from '../src/labs/body/blood-cells-epigenetic-clock';
 import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decafRemoved, soak as decafSoak } from '../src/labs/chemistry/decaf-coffee-caffeine-removal';
+import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX, MIN_STEP as ORZO_STEP, ORZO as ORZO_BAND, brownRate as orzoRate, dryMinutes as orzoDry, isOrzo, roastDegree as orzoRoast, waterLeft as orzoWater } from '../src/labs/chemistry/caffe-orzo-roasted-barley';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1931,5 +1932,23 @@ describe('lab maths', () => {
       expect(r.caffeine + r.liquidCaffeine + r.caught).toBeCloseTo(1, 9);
     }
     expect(decafSoak('water', false, 0)).toEqual({ caffeine: 1, flavour: 1, liquidCaffeine: 0, liquidFlavour: 0, caught: 0 });
+  });
+
+  it('orzo: the grain dries before it browns, browning doubles every 10 °C, the orzo band is reachable from 190 to 240 °C, and caffeine stays 0', () => {
+    expect(orzoRate(210) / orzoRate(200)).toBeCloseTo(2, 9);
+    expect(orzoRate(110)).toBe(0);
+    expect(orzoRoast(110, ORZO_MAX)).toBe(0);
+    expect(orzoWater(100, ORZO_MAX)).toBe(0);
+    expect(orzoRoast(200, orzoDry(200))).toBe(0);
+    expect(orzoWater(200, 0)).toBeCloseTo(12.9, 9);
+    expect(orzoWater(200, orzoDry(200))).toBe(0);
+    const hits = (T: number) => Array.from({ length: ORZO_MAX / ORZO_STEP + 1 }, (_, i) => i * ORZO_STEP).filter((m) => isOrzo(orzoRoast(T, m)));
+    for (const T of [190, 200, 220, 230, 240]) expect(hits(T).length).toBeGreaterThan(0);
+    for (const T of [100, 150, 180, 250, 260]) expect(hits(T)).toEqual([]);
+    expect(hits(200).length).toBeGreaterThan(hits(230).length);
+    expect(orzoRoast(260, 2)).toBeGreaterThan(ORZO_BURNT);
+    expect(isOrzo(ORZO_BAND[0])).toBe(true);
+    expect(isOrzo(ORZO_BAND[1])).toBe(false);
+    expect(ORZO_CAFFEINE).toBe(0);
   });
 });

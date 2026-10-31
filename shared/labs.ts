@@ -197,6 +197,7 @@ export const LABS = {
   'bay-of-bengal-cyclone-season': 'Set the sea temperature, the wind shear between the surface and the heights, and the latitude, and see whether a tropical cyclone can grow, stays a depression, or nothing forms: the monsoon’s shear is what keeps the Bay of Bengal quiet in summer.',
   'blood-cells-epigenetic-clock': 'A toy epigenetic clock: set a donor’s age and watch methyl tags drift at twelve sites, then convert the cells directly into neural stem cells or via pluripotent stem cells and read how young the clock says they are, as in the Bonn study that took an 80-year-old’s blood cells to under 20.',
   'decaf-coffee-caffeine-removal': 'A toy model of decaffeination: soak green coffee beans in plain hot water, a green coffee extract (as in the Swiss Water Process) or a solvent, choose whether the caffeine is taken out of the liquid each round, and try to remove 97% of the caffeine while keeping the flavour in the beans.',
+  'caffe-orzo-roasted-barley': 'Roast barley in a toy roaster: set the heat and the time, watch the grain dry and then brown, and aim for the dark brown of caffè d’orzo without burning it, while the caffeine stays at 0 mg at every setting.',
 } as const;
 
 export type LabId = keyof typeof LABS;
