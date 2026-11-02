@@ -12,6 +12,8 @@ export interface Film {
   src: string;
   poster?: string;
   seconds?: number;
+  /** The language of the film's voice and pictures. */
+  lang: string;
 }
 
 /** A section's long film (`films` in shared/editions.ts), in the reader's language where it has one, else the app's own. */
@@ -26,8 +28,14 @@ export function filmFor(field: FieldId): Film | null {
     src,
     poster: own ? pick('jpg') : mediaUrl('films', `${field}.jpg`),
     seconds: clipSeconds(src),
+    lang: own ? LANG : EDITION.lang,
   };
 }
+
+/** The sections that have a film title in shared/editions.ts, in the edition's order; some may not have the film yet. */
+export const FILM_FIELDS: FieldId[] = EDITION.fields.filter((field) => EDITION.films?.[field]);
+/** Whether the top bar offers the films page. */
+export const HAS_FILMS = FILM_FIELDS.some((field) => filmFor(field));
 
 /** "Watch the full story · 9 min" under a post whose section has a film; opens it full screen. */
 export function FilmButton({ field }: { field: FieldId }) {
@@ -48,7 +56,7 @@ export function FilmButton({ field }: { field: FieldId }) {
   );
 }
 
-function FilmPlayer({ film, onClose }: { film: Film; onClose: () => void }) {
+export function FilmPlayer({ film, onClose }: { film: Film; onClose: () => void }) {
   useEffect(() => lockScroll(), []);
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose();

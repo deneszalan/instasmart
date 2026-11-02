@@ -656,4 +656,8 @@ export const fr: Record<string, string> = {
   '{ft} ft ({m} m)': '{m} m ({ft} pieds)',
   'Feet shot for each foot kept': 'Pieds tournés pour un pied gardé',
   'Final cut, minutes': 'Montage final, minutes',
+  'The films': 'Les films',
+  'One long film for each section, 5 to 10 minutes.': 'Un long film pour chaque section, de 5 à 10 minutes.',
+  'English version': 'Version anglaise',
+  'Coming soon': 'Bientôt',
 };

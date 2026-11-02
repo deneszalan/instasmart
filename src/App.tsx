@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { Bookmark, Compass, Flame, House, Newspaper, User } from 'lucide-react';
+import { Bookmark, Clapperboard, Compass, Flame, House, Newspaper, User } from 'lucide-react';
 import type { Post } from './types';
 import { CARD_BY_ID, LIBRARY } from './data/library';
 import { OFFLINE_ONLY } from './data/offline-set';
@@ -8,11 +8,13 @@ import { useRoute, type Tab } from './lib/route';
 import { toast } from './lib/toast';
 import { streak, StoreProvider, useStore, type LearnState } from './state/store';
 import { ErrorBoundary } from './components/ErrorBoundary';
+import { HAS_FILMS } from './components/Film';
 import { PostView } from './components/Post';
 import { Sheet } from './components/Sheet';
 import { Toast } from './components/Toast';
 import { Explore } from './views/Explore';
 import { Feed } from './views/Feed';
+import { Films } from './views/Films';
 import { News, NEWS } from './views/News';
 import { Profile } from './views/Profile';
 import { Saved } from './views/Saved';
@@ -96,10 +98,22 @@ function Shell() {
         <button className="logo" onClick={() => goTab('home')} aria-label={t('{name} home', { name: APP_NAME })}>
           {APP_NAME}
         </button>
-        <button className="topbar__streak" onClick={() => goTab('profile')} aria-label={t(days === 1 ? '1-day learning streak' : '{n}-day learning streak', { n: days })}>
-          <Flame size={22} className={days > 0 ? 'streak__flame--on' : undefined} />
-          <span>{days}</span>
-        </button>
+        <div className="topbar__end">
+          {HAS_FILMS && (
+            <button
+              className="icon-btn topbar__films"
+              onClick={() => goTab('films')}
+              aria-label={t('The films')}
+              aria-current={route.tab === 'films' ? 'page' : undefined}
+            >
+              <Clapperboard size={24} strokeWidth={route.tab === 'films' ? 2.4 : 1.8} />
+            </button>
+          )}
+          <button className="topbar__streak" onClick={() => goTab('profile')} aria-label={t(days === 1 ? '1-day learning streak' : '{n}-day learning streak', { n: days })}>
+            <Flame size={22} className={days > 0 ? 'streak__flame--on' : undefined} />
+            <span>{days}</span>
+          </button>
+        </div>
       </header>
       {OFFLINE_ONLY && (
         <div className="offline-bar" role="status">
@@ -128,6 +142,7 @@ function Shell() {
         )}
         {route.tab === 'saved' && <Saved onOpen={openPost} />}
         {route.tab === 'profile' && <Profile />}
+        {route.tab === 'films' && <Films />}
       </main>
 
       <nav className="bottombar" aria-label={t('Main')}>

@@ -75,4 +75,9 @@ describe('route', () => {
     expect(toHash(route)).toBe('#/explore?q=%23space&by=chatgpt');
     expect(parseHash('#/p/space-test').by).toBe('');
   });
+
+  it('opens the films page from its own link', () => {
+    expect(parseHash('#/films').tab).toBe('films');
+    expect(toHash({ tab: 'films', q: '', post: null, by: '' })).toBe('#/films');
+  });
 });
