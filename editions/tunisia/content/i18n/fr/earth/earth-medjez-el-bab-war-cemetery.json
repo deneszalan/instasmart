@@ -1,0 +1,59 @@
+{
+  "id": "earth-medjez-el-bab-war-cemetery",
+  "title": "Le plus grand cimetière du Commonwealth en Tunisie est là où le front s’est figé des mois",
+  "body": "Le cimetière de la [Commission des sépultures de guerre du Commonwealth](https://admin.cwgc.org/visit-us/find-cemeteries-memorials/cemetery-details/47314/medjez-el-bab-war-cemetery/) à **Medjez-el-Bab**, à environ 60 km à l’ouest de Tunis sur la route du Kef, est le plus grand cimetière militaire du Commonwealth en Tunisie. Pourquoi là ? Dès décembre 1942, Medjez-el-Bab marque la limite de l’avance alliée sur Tunis, et la ville reste sur la ligne de front jusqu’aux offensives alliées d’avril et mai 1943. Le cimetière compte 2 903 militaires du Commonwealth de la Seconde Guerre mondiale, inhumés ou commémorés ; 385 tombes sont anonymes. En son sein, le mémorial de Medjez-el-Bab porte les noms de près de 2 000 hommes sans sépulture connue : des soldats de la 1re armée britannique morts en Algérie et en Tunisie entre le 8 novembre 1942 et le 13 mai 1943, et de la 8e armée à partir du 20 février 1943. Les disparus de la 8e armée en Tunisie avant cette date sont nommés au mémorial d’El-Alamein, en Égypte. Sir Hubert Worthington a dessiné le cimetière et le mémorial. La Commission le replante aujourd’hui de végétaux résistants à la sécheresse, et réduit de 75 % sa pelouse arrosée.",
+  "slides": [
+    {
+      "question": "Combien de militaires du Commonwealth sont inhumés ou commémorés au cimetière militaire de Medjez-el-Bab, en Tunisie ?",
+      "explanation": "2 903, de la Seconde Guerre mondiale, selon la Commission des sépultures de guerre du Commonwealth ; 385 tombes sont anonymes. Son mémorial nomme près de 2 000 autres hommes."
+    },
+    {
+      "alt": "Animation sur un ciel clair et de la pierre pâle : carte schématique du front de Medjez-el-Bab, pelouse de stèles, panneaux de noms du mémorial, dates de la 1re et de la 8e armée, croix du Sacrifice et pierre du Souvenir, puis une pelouse replantée.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "medjez-fr.mp4",
+      "poster": "medjez-fr.jpg"
+    },
+    {
+      "prompt": "Choisis l’armée et la date de la mort d’un disparu. Trouve le premier jour où un soldat de la 8e armée est nommé à Medjez-el-Bab.",
+      "takeaway": "Le 20 février 1943. Avant, les disparus de la 8e armée en Tunisie sont nommés au mémorial d’El-Alamein, en Égypte ; ceux de la 1re armée le sont toujours à Medjez-el-Bab."
+    },
+    {
+      "heading": "Environ 13 tombes sur 100 sont anonymes à Medjez-el-Bab",
+      "note": "385 sur 2 903 (CWGC)"
+    },
+    {
+      "heading": "Les dates du mémorial",
+      "events": [
+        {
+          "when": "8 nov. 1942",
+          "text": "Début des noms de la 1re armée"
+        },
+        {
+          "when": "déc. 1942",
+          "text": "L’avance sur Tunis s’arrête à Medjez"
+        },
+        {
+          "when": "20 févr. 1943",
+          "text": "Début des noms de la 8e armée"
+        },
+        {
+          "when": "13 mai 1943",
+          "text": "Dernière date du mémorial"
+        }
+      ]
+    },
+    {
+      "question": "Un soldat de la 8e armée a disparu en Tunisie en janvier 1943. Quel mémorial porte son nom ?",
+      "options": [
+        "Le mémorial d’El-Alamein, Égypte",
+        "Le mémorial de Medjez-el-Bab",
+        "Un mémorial à Tunis",
+        "Un mémorial à Londres"
+      ],
+      "explanation": "Le mémorial d’El-Alamein nomme les disparus de la 8e armée en Tunisie jusqu’au 19 février 1943. À partir du 20 février 1943, ils sont nommés à Medjez-el-Bab."
+    }
+  ],
+  "source": {
+    "label": "CWGC : cimetière militaire de Medjez-el-Bab"
+  }
+}

@@ -202,6 +202,7 @@ export const LABS = {
   'moncef-bey-deposed-1943': 'Slide month by month from June 1942 to September 1948 through the reign and exile of Moncef Bey, the Bey of Tunis: see where he was, who held Tunis, and his days on the throne against his days in exile, and find the month the French deposed him.',
   'keith-douglas-alamein-to-zem-zem': 'A reading map for Keith Douglas, the British poet and tank officer: place El Alamein, Wadi Zem Zem, Tunisia and Tilly-sur-Seulles on a schematic map and see what he did and wrote at each, from his memoir Alamein to Zem Zem to the poems dated Tunisia 1943.',
   'wedding-song-albou-tunis-1942': 'A viewing tool for Karin Albou’s film Le Chant des mariées (The Wedding Song, 2008): match six of its scenes to the history they draw on in occupied Tunis, from the forced labour of December 1942 to the levy on the Jewish community, or mark them as invented, and see them on a timeline of the occupation.',
+  'medjez-el-bab-war-cemetery': 'Choose the army and the date a Commonwealth soldier with no known grave died in Algeria or Tunisia, between 8 November 1942 and 13 May 1943, and see which memorial names him: the Medjez-el-Bab Memorial in Tunisia or the Alamein Memorial in Egypt; find the day the Eighth Army\'s missing start to be named at Medjez-el-Bab.',
 } as const;
 
 export type LabId = keyof typeof LABS;
