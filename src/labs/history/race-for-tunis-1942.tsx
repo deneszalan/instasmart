@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { C, Choice, dot, label, line, Range, Stage, useGoal, type LabProps } from '../kit';
+import { C, Choice, clamp, dot, font, labelPlacer, line, Range, Stage, useGoal, type LabelSide, type LabProps } from '../kit';
 import { t } from '../../i18n';
 import { formatNumber } from '../../lib/format';
 
@@ -80,36 +80,56 @@ export default function RaceForTunis({ onDone }: LabProps) {
   const dist = (mi: number) => t('{mi} mi · {km} km', { mi: formatNumber(Math.round(mi)), km: formatNumber(Math.round(toKm(mi))) });
 
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
+    // the credit along the bottom, smaller on a narrow phone so it fits on one line
+    const credit = t('Schematic; straight-line distances; 1 mi = 1.6 km.');
+    font(ctx, 9);
+    const cs = clamp((9 * (w - 8)) / ctx.measureText(credit).width, 7.5, 9);
     // schematic map of northern Tunisia, lon 7.6–10.45, lat 36.3–37.4; Youks-les-Bains lies off it to the south
     const lon0 = 7.6, lon1 = 10.45, lat0 = 36.3, lat1 = 37.4, c = Math.cos(rad(36.8));
-    const s = Math.min((w - 12) / ((lon1 - lon0) * c), (h - 22) / (lat1 - lat0));
+    // the map ends far enough above the credit for Youks' dot, which sits on its bottom edge
+    const s = Math.min((w - 12) / ((lon1 - lon0) * c), (h - 16 - cs * 1.15) / (lat1 - lat0));
     const ox = (w - (lon1 - lon0) * c * s) / 2, oy = 4, bottom = oy + (lat1 - lat0) * s;
     const P = ([lo, la]: LonLat): [number, number] => [ox + (lo - lon0) * c * s, Math.min(bottom, oy + (lat1 - la) * s)];
+    const place = labelPlacer(ctx, w, h);
     const coast: LonLat[] = [[7.6, 36.89], [7.76, 36.9], [8.44, 36.9], [8.76, 36.96], [9.2, 37.23], [9.85, 37.34], [10.19, 37.17], [10.28, 37.18], [10.29, 36.92], [10.34, 36.73], [10.45, 36.71], [10.45, 36.3], [7.6, 36.3]];
     ctx.fillStyle = 'rgba(163,177,142,0.20)';
     ctx.beginPath(); coast.forEach((q, i) => { const [x, y] = P(q); if (i) ctx.lineTo(x, y); else ctx.moveTo(x, y); }); ctx.closePath(); ctx.fill();
-    ROUTE.forEach((q, i) => { if (i) { const [a, b] = P(ROUTE[i - 1]), [x, y] = P(q); line(ctx, a, b, x, y, C.faint, 2, [4, 4]); } });
-    const [ax, ay] = P(ROUTE[0]), [px, py] = P(p);
+    // the rain behind everything else, so it never runs through a name
+    if (rain) for (let i = 0; i < 70; i++) { const x = (i * 53.3) % (w * 0.62), y = (i * 37.1) % (h - 30); line(ctx, x, y, x - 3, y + 9, 'rgba(143,195,230,0.35)', 1); }
+    const road = ROUTE.map(P);
+    road.forEach(([x, y], i) => { if (i) line(ctx, road[i - 1][0], road[i - 1][1], x, y, C.faint, 2, [4, 4]); });
+    place.path(road, 2);
+    const [ax, ay] = road[0], [px, py] = P(p);
     line(ctx, ax, ay, px, py, AMBER, 3);
+    place.path([[ax, ay], [px, py]], 2.5);
+    // the nearest working field of each side joined to the spearhead
+    const segs = ([[axis, LAVENDER], [allied, AMBER]] as const).map(([{ field, mi }, col]) => {
+      const [x, y] = P(field.at);
+      line(ctx, px, py, x, y, col, 2, [5, 4]);
+      place.path([[px, py], [x, y]], 2);
+      return { x, y, mi, col };
+    });
+    // airfields, rain-closed ones greyed, and Tunis
     const [tx, ty] = P(PLACES.tunis);
-    dot(ctx, tx, ty, 3, C.ink); label(ctx, 'Tunis', tx + 4, ty + 10, { size: 10, color: C.ink });
-    // airfields; rain-closed ones greyed; the nearest working one of each side joined to the spearhead
-    for (const f of FIELDS) {
+    dot(ctx, tx, ty, 3, C.ink);
+    place.mark(tx, ty, 4.5);
+    const fields = FIELDS.map((f) => {
       const [x, y] = P(f.at), open = !rain || f.usableInRain, col = !open ? C.faint : f.side === 'axis' ? LAVENDER : AMBER;
       dot(ctx, x, y, 4.5, col);
-      const name = f.id === 'youks' ? 'Youks ↓' : fieldName(f);
-      label(ctx, name, f.id === 'youks' ? x - 6 : x, f.side === 'axis' || f.id === 'youks' ? y - 9 : y + 11, { size: 10, color: col, align: f.id === 'aouina' ? 'left' : f.id === 'youks' ? 'right' : 'center' });
-    }
-    const seg = (to: Field, mi: number, col: string) => {
-      const [x, y] = P(to.at);
-      line(ctx, px, py, x, y, col, 2, [5, 4]);
-      label(ctx, t('{mi} mi', { mi: formatNumber(Math.round(mi)) }), (px + x) / 2, (py + y) / 2 - 8, { size: 11, color: col });
-    };
-    seg(axis.field, axis.mi, LAVENDER);
-    seg(allied.field, allied.mi, AMBER);
-    if (rain) for (let i = 0; i < 70; i++) { const x = (i * 53.3) % (w * 0.62), y = (i * 37.1) % (h - 30); line(ctx, x, y, x - 3, y + 9, 'rgba(143,195,230,0.35)', 1); }
+      place.mark(x, y, 6);
+      return { f, x, y, col };
+    });
     dot(ctx, px, py, 6, AMBER);
-    label(ctx, t('Schematic; straight-line distances; 1 mi = 1.6 km.'), w / 2, h - 7, { size: 9, color: C.faint });
+    place.mark(px, py, 7.5);
+    // the names: the credit first, along the bottom, then the places, then the distances wherever they are clear
+    place.put([[credit]], cs, C.faint, [{ x: w / 2, y: h - 3, align: 'center', v: 'bottom' }]);
+    place.put([['Tunis']], 10, C.ink, place.around(tx, ty, 3, 10, ['S', 'SE', 'SW', 'E']));
+    const sides: Record<Field['id'], LabelSide[]> = { aouina: ['NE', 'E', 'N'], sidiAhmed: ['N', 'NW', 'NE', 'W'], souk: ['S', 'SW', 'SE', 'W'], bone: ['S', 'SW', 'W', 'N', 'NW'], youks: ['NW', 'W', 'NE'] };
+    for (const { f, x, y, col } of fields) place.put([[f.id === 'youks' ? 'Youks ↓' : fieldName(f)]], 10, col, place.around(x, y, 4.5, 10, sides[f.id]));
+    for (const g of segs) {
+      const text = t('{mi} mi', { mi: formatNumber(Math.round(g.mi)) });
+      place.put([[text]], 11, g.col, [...place.beside(px, py, g.x, g.y, text, 11), ...place.around(px, py, 6, 11, ['N', 'S', 'NE', 'NW', 'SE', 'SW', 'E', 'W'])], { backing: 'rgba(20,24,20,0.85)' });
+    }
   };
 
   return (
