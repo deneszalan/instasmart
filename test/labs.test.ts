@@ -195,6 +195,7 @@ import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decaf
 import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX, MIN_STEP as ORZO_STEP, ORZO as ORZO_BAND, brownRate as orzoRate, dryMinutes as orzoDry, isOrzo, roastDegree as orzoRoast, waterLeft as orzoWater } from '../src/labs/chemistry/caffe-orzo-roasted-barley';
 import { COUNTS as TUNIS_COUNTS, COUNT_IDS as TUNIS_COUNT_IDS, foundExtremes as tunisExtremes, spread as tunisSpread, squaresFor as tunisSquares } from '../src/labs/history/end-in-tunisia-may-1943';
 import { LETTER as BOURG_LETTER, LAST_INDEX as BOURG_LAST, fromIndex as bourgFrom, monthIndex as bourgIndex, whereIn as bourgWhere } from '../src/labs/politics/bourguiba-and-the-axis-1943';
+import { DIARY as GHEZ_DIARY, LAST_DAY as GHEZ_LAST, WAR as GHEZ_WAR, dayOf as ghezDay, latest as ghezLatest, meetingDays as ghezMeet } from '../src/labs/literature/ghez-six-mois-sous-la-botte';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1981,5 +1982,17 @@ describe('lab maths', () => {
     expect(bourgWhere(1943, 4).holder).toBe('axisTunis');
     expect(bourgWhere(1944, 6)).toEqual({ place: 'tunis', holder: 'watched' });
     expect(bourgWhere(1945, 4).place).toBe('cairo');
+  });
+
+  it('Ghez diary: 185 days from 9 November 1942 to 13 May 1943; the diary and the war meet only on 7 May 1943', () => {
+    expect(GHEZ_LAST).toBe(185);
+    expect(ghezDay(1942, 12, 14)).toBe(35);
+    expect(ghezMeet()).toEqual([ghezDay(1943, 5, 7)]);
+    expect(ghezLatest(GHEZ_DIARY, 0)).toBeUndefined();
+    expect(ghezLatest(GHEZ_WAR, 0)?.id).toBe('landing');
+    expect(ghezLatest(GHEZ_DIARY, ghezDay(1942, 12, 15))?.id).toBe('count');
+    expect(ghezLatest(GHEZ_WAR, ghezDay(1943, 5, 6))?.id).toBe('kasserine');
+    expect(ghezLatest(GHEZ_DIARY, GHEZ_LAST)?.id).toBe('emptied');
+    for (let i = 1; i < GHEZ_DIARY.length; i++) expect(GHEZ_DIARY[i].day).toBeGreaterThan(GHEZ_DIARY[i - 1].day);
   });
 });

@@ -1,0 +1,60 @@
+{
+  "id": "literature-ghez-six-mois-sous-la-botte",
+  "title": "À Tunis, Paul Ghez dut recruter des travailleurs forcés juifs, et tint un journal",
+  "body": "Les troupes allemandes et italiennes occupent Tunis en novembre 1942. En décembre, les SS de Walter Rauff exigent des hommes juifs pour le travail forcé, et les dirigeants de la communauté doivent créer un comité pour les recruter ; à sa tête, **Paul Ghez** (1898-1971), avocat né à Sousse et membre du conseil de la communauté juive ([Posen Library](https://www.posenlibrary.com/node/1259)). Son journal, ***Six mois sous la botte***, imprimé à Tunis en 1943, suit l’occupation jour après jour jusqu’au 8 mai 1943 : les confiscations, les ordres et les listes, 3 585 hommes recrutés au 14 décembre, une marche à pied jusqu’au camp de Cheylus, ses efforts pour réduire les effectifs, les familles venues à son bureau, et le 7 mai, quand les Alliés entrent dans Tunis, le retour des travailleurs. C’est un témoignage direct, pas un roman : ses chapitres datés sont répertoriés par le [Centre de documentation sur les Juifs d’Afrique du Nord en guerre](https://northafricanjews-ww2.org.il/en/?p=49163), à Jérusalem. Au total, environ 5 000 hommes juifs furent envoyés dans des camps de travail et d’internement en Tunisie ([Musée de l’Holocauste Montréal](https://museeholocauste.ca/en/?p=13181)).",
+  "slides": [
+    {
+      "question": "Les Allemands exigent du travail forcé juif à Tunis en décembre 1942. Combien d’hommes sont recrutés au 14 décembre ?",
+      "unit": "hommes",
+      "explanation": "3 585, selon le décompte du journal de Paul Ghez. Au total, environ 5 000 hommes juifs furent envoyés en camps de travail et d’internement en Tunisie."
+    },
+    {
+      "alt": "Animation sur papier : un calendrier de novembre 1942 à mai 1943 à deux lignes, la guerre et le journal de Paul Ghez ; des entrées tapées dans un carnet ; 3 585 hommes ; des silhouettes grises marchant vers un camp ; des familles ; puis le 7 mai 1943, quand les deux lignes se rejoignent.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "ghez-diary-fr.mp4",
+      "poster": "ghez-diary-fr.jpg"
+    },
+    {
+      "prompt": "Fais défiler l’occupation jour après jour. Trouve le jour où la guerre et le journal de Paul Ghez ont chacun une entrée à la même date.",
+      "takeaway": "Le 7 mai 1943 : les Alliés entrent dans Tunis, et Paul Ghez organise le retour des travailleurs forcés. Le lendemain, il trouve son appartement vidé par les Allemands."
+    },
+    {
+      "heading": "Quel genre de livre ?",
+      "text": "Un journal, ni roman ni mémoires écrits après coup : des chapitres datés de novembre 1942 à mai 1943, imprimés à Tunis en 1943. Il nomme des personnes, des lieux, des chiffres, et consigne ordres, listes, camps, ses efforts pour réduire les effectifs et les familles venues à son bureau."
+    },
+    {
+      "heading": "Six mois dans le journal",
+      "events": [
+        {
+          "when": "7 déc. 1942",
+          "text": "L’ordre de travail forcé ; les listes."
+        },
+        {
+          "when": "14 déc.",
+          "text": "3 585 hommes recrutés à ce jour."
+        },
+        {
+          "when": "15 avr. 1943",
+          "text": "Des travailleurs ramenés du front."
+        },
+        {
+          "when": "7 mai",
+          "text": "Les Alliés entrent dans Tunis ; les travailleurs rentrent."
+        }
+      ]
+    },
+    {
+      "question": "Quel rôle tient Paul Ghez sous l’occupation allemande de Tunis, selon son journal et la Posen Library ?",
+      "options": [
+        "Chef du comité de recrutement",
+        "Maire de Tunis",
+        "Interprète de l’armée allemande",
+        "Rédacteur d’un journal juif"
+      ],
+      "explanation": "Il préside le comité que les dirigeants de la communauté juive ont dû créer pour fournir des hommes au travail forcé allemand. Son journal paraît à Tunis en 1943."
+    }
+  ],
+  "source": {
+    "label": "Posen Library : Paul Ghez, Six mois sous la botte"
+  }
+}
