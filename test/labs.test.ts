@@ -196,6 +196,7 @@ import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX,
 import { GAP as KAS_GAP, REACH as KAS_REACH, covered as kasCovered, helped as kasHelped, holds as kasHolds, positions as kasPositions } from '../src/labs/history/kasserine-pass-1943';
 import { DEPOSED_MONTH as MON_DEPOSED, LAST_MONTH as MON_LAST, daysInExile as monExile, daysOnThrone as monThrone, monthOf as monMonth, powerAt as monPower, whereAt as monWhere } from '../src/labs/politics/moncef-bey-deposed-1943';
 import { ORDER as KD_ORDER, SPOTS as KD_SPOTS, africa as kdAfrica, hits as kdHits, inset as kdInset } from '../src/labs/literature/keith-douglas-alamein-to-zem-zem';
+import { END as WS_END, SCENES as WS_SCENES, START as WS_START, WHEN as WS_WHEN, axisX as wsAxisX, isRight as wsRight } from '../src/labs/art/wedding-song-albou-tunis-1942';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1999,5 +2000,20 @@ describe('lab maths', () => {
     for (const id of ['alamein', 'zemzem', 'tunisia'] as const) expect(KD_SPOTS[id].v).toBeGreaterThan(0.42);
     expect(kdAfrica(8, 37.6)).toEqual({ u: 0.04, v: 0.42 });
     expect(kdInset(-2, 51)).toEqual({ u: 0.04, v: 0.06 });
+  });
+  it('wedding song: each scene has one right answer, two are invented, and the real events fall inside the occupation', () => {
+    const echoes = ['levy', 'labour', 'radio', 'invented'] as const;
+    for (const s of WS_SCENES) expect(echoes.filter((e) => wsRight(s.id, e))).toHaveLength(1);
+    expect(WS_SCENES.filter((s) => s.echo === 'invented').map((s) => s.id)).toEqual(['friends', 'khaled']);
+    expect(wsRight('marriage', 'levy')).toBe(true);
+    expect(wsRight('raoul', 'labour')).toBe(true);
+    for (const [a, b] of Object.values(WS_WHEN)) {
+      expect(a).toBeGreaterThanOrEqual(WS_START);
+      expect(b).toBeLessThanOrEqual(WS_END);
+      expect(b).toBeGreaterThanOrEqual(a);
+    }
+    expect(WS_WHEN.labour[0]).toBeLessThan(WS_WHEN.levy[0]);
+    expect(wsAxisX(WS_START, 10, 110)).toBe(10);
+    expect(wsAxisX(WS_END, 10, 110)).toBe(110);
   });
 });

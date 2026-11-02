@@ -201,4 +201,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'kasserine-pass-1943': lazy(() => import('./history/kasserine-pass-1943')),
   'moncef-bey-deposed-1943': lazy(() => import('./politics/moncef-bey-deposed-1943')),
   'keith-douglas-alamein-to-zem-zem': lazy(() => import('./literature/keith-douglas-alamein-to-zem-zem')),
+  'wedding-song-albou-tunis-1942': lazy(() => import('./art/wedding-song-albou-tunis-1942')),
 };
