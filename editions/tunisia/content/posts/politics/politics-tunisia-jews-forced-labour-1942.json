@@ -1,0 +1,164 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-tunisia-jews-forced-labour-1942",
+  "field": "politics",
+  "title": "In 1942–43 the German occupiers forced about 5,000 Jewish men in Tunisia into labour camps",
+  "emoji": "🕯️",
+  "body": "Tunisia, a French protectorate, was under German occupation for six months, from 9 November 1942 until Tunis was freed on 7 May 1943. About 90,000 Jews lived there, says the [Mémorial de la Shoah](https://www.memorialdelashoah.org/en/evenements-expositions/commemorations/souvenir-de-rafl-e-de-tunis-9-decembre-1942.html). With the army came an SS unit under Walter Rauff, developer of the gas vans used to murder Jews in eastern Europe. Community leaders were arrested; on 6 December Rauff demanded 2,000 workers (some accounts say 3,000), and on 9 December the SS rounded up men in Tunis. The community's leaders were made to run a committee that recruited them. About 5,000 men were sent to forced labour in 32 to about 40 camps, many near the front, by the counts of the Mémorial and the [US Holocaust Memorial Museum](https://encyclopedia.ushmm.org/content/en/article/labor-and-internment-camps-in-north-africa). Jews also faced fines, confiscations, hostage-taking and, in some towns, a yellow star. As the [Montreal Holocaust Museum](https://museeholocauste.ca/en/resources-training/the-holocaust-in-tunisia/) puts it, time, resources and the course of the war limited what the SS could do.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "German forces began to arrive in Tunis on 9 November 1942. For how many days did they hold the city?",
+      "min": 30,
+      "max": 365,
+      "step": 1,
+      "answer": 179,
+      "unit": "days",
+      "explanation": "179 days: British troops entered Tunis on 7 May 1943. Forced labour for Jewish men had begun five months earlier, in December 1942."
+    },
+    {
+      "type": "video",
+      "src": "occupation-calendar.mp4",
+      "poster": "occupation-calendar.jpg",
+      "alt": "Animation in night blue: a calendar of the 179 days of German occupation fills square by square from 9 November 1942. Paper notices show the SS order of 6 December and the roundup of 9 December; plain figures stand for about 5,000 forced labourers; a candle; then 7 May 1943, Tunis freed.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Plaint” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "tunisia-jews-forced-labour-1942",
+      "prompt": "Drag through the calendar of the occupation. Find the day Tunis was freed, and read how long the forced labour had lasted.",
+      "takeaway": "7 May 1943, day 179 of the occupation. The order for workers had come on 6 December 1942, 152 days earlier: about five months of forced labour for some 5,000 men."
+    },
+    {
+      "type": "timeline",
+      "heading": "Six months under occupation",
+      "events": [
+        {
+          "when": "9 Nov 1942",
+          "text": "German forces begin to arrive in Tunis"
+        },
+        {
+          "when": "6 Dec",
+          "text": "SS order: supply men for forced labour"
+        },
+        {
+          "when": "9 Dec",
+          "text": "SS roundup of Jewish men in Tunis"
+        },
+        {
+          "when": "Dec–Apr",
+          "text": "About 5,000 men at forced labour"
+        },
+        {
+          "when": "7 May 1943",
+          "text": "British troops enter Tunis"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Made to organise it",
+      "text": "Under threat, the community's own leaders, its president Moïse Borgel and the lawyer Paul Ghez among them, had to run a committee that drew up the lists of workers. Both men published their accounts in 1943 and 1944, and the historian Haïm Saadoun notes that they do not always agree."
+    },
+    {
+      "type": "quiz",
+      "question": "When the SS demanded Jewish workers in occupied Tunis in December 1942, who was made to draw up the lists?",
+      "options": [
+        "The community's own leaders",
+        "The French police",
+        "The Bey of Tunis",
+        "The Italian consulate"
+      ],
+      "answer": 0,
+      "explanation": "The community's leaders, under threat, ran a recruitment committee. About 5,000 men were sent to forced labour before Tunis was freed on 7 May 1943."
+    }
+  ],
+  "tags": [
+    "tunisia",
+    "jews",
+    "holocaust",
+    "forcedlabour",
+    "occupation",
+    "1942"
+  ],
+  "source": {
+    "label": "US Holocaust Memorial Museum: Labor and Internment Camps in North Africa",
+    "url": "https://encyclopedia.ushmm.org/content/en/article/labor-and-internment-camps-in-north-africa"
+  },
+  "theme": {
+    "gradient": [
+      "#1b2038",
+      "#5a3a48"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T10:58:33Z"
+}

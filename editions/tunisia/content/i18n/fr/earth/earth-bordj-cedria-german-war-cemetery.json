@@ -1,0 +1,70 @@
+{
+  "id": "earth-bordj-cedria-german-war-cemetery",
+  "title": "À Bordj Cedria, 8 562 soldats allemands reposent en ossuaires : le cimetière d’un occupant",
+  "body": "Près de Hammam-Lif, le [cimetière militaire allemand de Bordj Cedria](https://kriegsgraeberstaetten.volksbund.de/friedhof/bordj-cedria) abrite 8 562 soldats allemands morts pendant la campagne de Tunisie de 1942-1943, au combat ou en captivité. Leur armée, avec celle de l’Italie, a occupé le nord et l’est du pays six mois durant ; sous cette occupation, environ 5 000 hommes juifs de Tunisie ont été astreints au travail forcé. Après la capitulation du 13 mai 1943, ils reposaient dans six cimetières provisoires et des tombes de campagne. Un accord germano-tunisien sur les sépultures de guerre entre en vigueur en 1966 ; le cimetière est bâti de 1973 à 1975, les morts y sont transférés et beaucoup des quelque 2 000 inconnus identifiés. Il ouvre en 1977. Pas de rangées de croix : les restes reposent dans des ossuaires, en six cours étagées, et une pierre en trois langues donne le nombre. Le Volksbund, commission allemande des sépultures de guerre, l’entretient ; chaque novembre, l’ambassadeur d’Allemagne y dépose une gerbe. Le Volksbund lui-même écrit qu’après 1945 honorer les soldats tombés en héros est devenu tabou, et voit ces cimetières comme des lieux pour apprendre.",
+  "slides": [
+    {
+      "question": "Le cimetière militaire allemand de Bordj Cedria, près de Tunis, a ouvert au public en quelle année ?",
+      "explanation": "En 1977, 34 ans après la capitulation du 13 mai 1943. Un accord germano-tunisien est venu d’abord, en 1966 ; le cimetière a été bâti de 1973 à 1975."
+    },
+    {
+      "alt": "Animation au crépuscule sur une colline aux cyprès : six cours de pierre étagées sur la pente ; une carte schématique de la Tunisie, le nord et l’est tenus par l’Axe en couleur ; six cimetières provisoires ; un accord de 1966 ; une pierre en trois langues ; des carreaux bleus et jaunes ; une gerbe.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "cedria-fr.mp4",
+      "poster": "cedria-fr.jpg"
+    },
+    {
+      "prompt": "Fais défiler les années depuis 1943 et trouve celle où l’on a pu, pour la première fois, se recueillir à Bordj Cedria.",
+      "takeaway": "1977, 34 ans après la capitulation : un accord en 1966, la construction de 1973 à 1975, puis les transferts. Depuis, chaque novembre, deux dimanches avant l’Avent, l’ambassadeur d’Allemagne y dépose une gerbe."
+    },
+    {
+      "heading": "Des tombes de campagne à Bordj Cedria",
+      "events": [
+        {
+          "when": "13 mai 1943",
+          "text": "Capitulation de l’Axe en Tunisie"
+        },
+        {
+          "when": "28 mars 1966",
+          "text": "Accord germano-tunisien sur les sépultures de guerre"
+        },
+        {
+          "when": "1973-1975",
+          "text": "Construction du cimetière ; transfert des morts"
+        },
+        {
+          "when": "28 sept. 1977",
+          "text": "Ouverture au public"
+        }
+      ]
+    },
+    {
+      "heading": "Six cimetières provisoires, avant 1973",
+      "items": [
+        "Nassen, au cap Bon",
+        "Bizerte",
+        "La Mornaghia",
+        "El M’Dou",
+        "Mateur",
+        "Sfax, et des tombes de campagne dans tout le pays"
+      ]
+    },
+    {
+      "text": "Vu les crimes de guerre commis par des Allemands, un « culte des héros » officiel était tabou après la fin de la guerre, en 1945.",
+      "attribution": "Module pédagogique du Volksbund (traduit de l’allemand)"
+    },
+    {
+      "question": "À Bordj Cedria, près de Tunis, comment reposent les morts allemands de 1942-1943 ?",
+      "options": [
+        "En ossuaires, dans six cours",
+        "En rangées, sous des croix",
+        "Dans une seule fosse commune",
+        "Dans une crypte unique"
+      ],
+      "explanation": "Le Volksbund a aménagé six cours étagées sur la colline, les restes en ossuaires, et une pierre en arabe, en allemand et en français qui donne le nombre : 8 562."
+    }
+  ],
+  "source": {
+    "label": "Volksbund : Kriegsgräberstätte Bordj-Cedria (en allemand)"
+  }
+}

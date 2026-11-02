@@ -213,6 +213,16 @@ export const LABS = {
   'ghez-six-mois-sous-la-botte': 'Slide day by day through the German occupation of Tunis, November 1942 to May 1943, with the war on one line and the dated chapters of Paul Ghez’s diary on the other, and find the day they meet.',
   'patton-el-guettar': 'Sort five claims about the battle of El Guettar, 23 March 1943, into what only the film Patton (1970) shows and what the record says, and watch a schematic plan of the valley fill in.',
   'gammarth-french-military-cemetery': 'Pick a French soldier of the Tunisian campaign of 1942–43, Christian, Jewish, Muslim or never identified, and see where he was buried: an individual grave or the ossuary at Gammarth, or a Muslim cemetery elsewhere.',
+  'mareth-line-left-hook': 'Slide day by day through March 1943 on a schematic map of the Mareth Line in southern Tunisia: Medenine, the frontal attack across the Wadi Zigzaou, and the New Zealand Corps’ left hook to the Tebaga Gap, with the British official history’s dates and distances.',
+  'khaled-abdul-wahab-mahdia': 'Read the testimonies Yad Vashem cited about Khaled Abdul-Wahab’s farm near Mahdia in 1943, set whether hosting the families broke a law and whether the Germans knew, and see how its test of risk decides the title of Righteous Among the Nations.',
+  'ernie-pyle-here-is-your-war': 'Tap a schematic map of Tunisia to find five places Ernie Pyle reported from in Here Is Your War (1943), Sbeitla, Fériana, Gafsa, Mateur and Bizerte, and read what he saw at each.',
+  'villa-jasmin-boughedir-moati': 'Sort nine cards from Férid Boughedir’s film Villa Jasmin (2008) into documented history, the Moati family’s memory and the film’s own telling, and read where each comes from.',
+  'bordj-cedria-german-war-cemetery': 'Slide from 1943 to today and follow the German dead of the Tunisian campaign from six makeshift cemeteries and field graves to the ossuaries of Bordj Cedria, with the year of the agreement, the building, the opening and each November’s day of mourning.',
+  'race-for-tunis-1942': 'Push the Allied spearhead of November 1942 along the road from Souk el Arba towards Tunis on a schematic map, switch on the winter rain, and read how far it is from Tunis, from the nearest Axis airfield and from the nearest Allied airfield that can still fly.',
+  'tunisia-jews-forced-labour-1942': 'A calendar of the German occupation of Tunis, one square per day from 9 November 1942: drag through the days to see when the SS ordered Jewish men into forced labour, when the roundup came and when Tunis was freed.',
+  'memmi-pillar-of-salt': 'Sort episodes of Albert Memmi’s novel La Statue de sel and of his own life onto two threads that run together and then part: told in the novel and lived by Memmi, in the novel only, or in his life only.',
+  'north-africa-american-cemetery-carthage': 'Find graves on a schematic plan of the North Africa American Cemetery at Carthage, as a visiting family would: each practice record gives a plot (A to I), a row and a grave number.',
+  'tunisian-victory-1944-film': 'A cutting room for the 1944 documentary Tunisian Victory: set the running time of the finished film and see how much of the 300,000 feet of film shot (as Variety reported) it keeps, at 90 feet of 35 mm film a minute.',
 } as const;
 
 export type LabId = keyof typeof LABS;

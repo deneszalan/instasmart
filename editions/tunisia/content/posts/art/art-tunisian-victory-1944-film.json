@@ -1,0 +1,153 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-tunisian-victory-1944-film",
+  "field": "art",
+  "title": "The 1944 film Tunisian Victory re-created scenes after much American footage sank at sea",
+  "emoji": "🎞️",
+  "body": "*Tunisian Victory* (1944) is the joint British–American documentary of the war in Tunisia. British army filmmakers, who had made the hit *Desert Victory* about El Alamein, were making their own film, *Africa Freed*; then the British and American wartime information agencies agreed on one joint film. Hollywood director Frank Capra, a US Army colonel, and Britain's Hugh Stewart, who led a joint staff of some 300 including 50 cameramen, made it. Much American footage was lost when German forces sank the ship carrying it, so scenes were re-created: George Stevens filmed tanks and troops for two weeks, and John Huston shot planes and dummy tanks in Orlando and the California desert; the [AFI Catalog](https://catalog.afi.com/Film/27693-TUNISIAN-VICTORY) is unsure those reached the final cut. After a months-long struggle over who would tell the story, Capra took control, and the film opened on 16 March 1944, as the [US National Archives](https://unwritten-record.blogs.archives.gov/2017/11/08/tunisian-victory-operation-torch-gets-the-hollywood-treatment) recounts. Britain's Imperial War Museum notes that it gives the American effort far more weight than *Africa Freed*.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The fighting in Tunisia ended on 13 May 1943. How many months later did the Allied documentary Tunisian Victory open?",
+      "min": 0,
+      "max": 24,
+      "step": 1,
+      "answer": 10,
+      "unit": "months",
+      "explanation": "About 10 months: it opened on 16 March 1944, after a long dispute between British and American officials over who would tell the story."
+    },
+    {
+      "type": "video",
+      "src": "tunisian-victory.mp4",
+      "poster": "tunisian-victory.jpg",
+      "alt": "Animation in a dark cutting room: film cans for Desert Victory and Africa Freed, London and Washington agreeing on one film, cameras along a 2,000-mile front, a ship sinking with its reels, dummy tanks being filmed, two soldiers' voices, a tilted balance and a calendar to 16 March 1944.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Desert City” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "tunisian-victory-1944-film",
+      "prompt": "Set the running time of the finished film and see how much of the footage shot it keeps. Find the real length: 76 minutes.",
+      "takeaway": "76 minutes is about 6,840 feet of film (the print measures 6,871): roughly one foot kept for every 44 shot, about 2% of the 300,000 feet Variety reported. The rest went unused here."
+    },
+    {
+      "type": "list",
+      "heading": "Who made it",
+      "style": "bullets",
+      "items": [
+        "Frank Capra: Hollywood director, US Army colonel",
+        "Hugh Stewart: British army film officer, led the team",
+        "George Stevens, John Huston: re-created scenes",
+        "Bernard Miles, Burgess Meredith: two soldiers’ voices",
+        "William Alwyn, Dimitri Tiomkin: the music"
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Filmed in the war, or made after?",
+      "left": {
+        "label": "From the campaign",
+        "text": "Film shot by about 50 British and American cameramen on a 2,000-mile front, plus newsreels and captured enemy film."
+      },
+      "right": {
+        "label": "Made afterwards",
+        "text": "Re-created scenes, some shot by George Stevens, perhaps more by John Huston in Florida and California, and two invented soldiers."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "Why did the makers of the 1944 documentary Tunisian Victory re-create scenes of the campaign?",
+      "options": [
+        "Much American footage sank at sea",
+        "Filming was banned in Tunisia",
+        "The British kept their footage",
+        "They ran out of film stock"
+      ],
+      "answer": 0,
+      "explanation": "German forces sank the ship carrying much of the American footage, says the US National Archives, so Frank Capra turned to stock footage and re-creations."
+    }
+  ],
+  "tags": [
+    "film",
+    "documentary",
+    "capra",
+    "propaganda",
+    "tunisianvictory",
+    "1944"
+  ],
+  "source": {
+    "label": "US National Archives, The Unwritten Record: Tunisian Victory, Operation Torch gets the Hollywood treatment",
+    "url": "https://unwritten-record.blogs.archives.gov/2017/11/08/tunisian-victory-operation-torch-gets-the-hollywood-treatment"
+  },
+  "theme": {
+    "gradient": [
+      "#141416",
+      "#5a4320"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T11:19:03Z"
+}

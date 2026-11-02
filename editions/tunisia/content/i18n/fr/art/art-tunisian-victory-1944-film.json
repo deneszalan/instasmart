@@ -1,0 +1,56 @@
+{
+  "id": "art-tunisian-victory-1944-film",
+  "title": "Le documentaire Tunisian Victory (1944) recrée des scènes après un naufrage de pellicule",
+  "body": "*Tunisian Victory* (1944) est le documentaire anglo-américain de la guerre en Tunisie. Les cinéastes de l’armée britannique, auteurs du succès *Desert Victory* sur El-Alamein, préparaient *Africa Freed* ; Londres et Washington décident finalement d’un film commun. Le réalisateur hollywoodien Frank Capra, colonel de l’armée américaine, et le Britannique Hugh Stewart, chef d’une équipe d’environ 300 personnes dont 50 opérateurs, le réalisent. Beaucoup d’images américaines sont perdues quand les Allemands coulent leur navire ; on recrée donc des scènes : George Stevens filme chars et soldats deux semaines, John Huston des avions et des chars factices en Floride et en Californie, mais le [catalogue de l’AFI](https://catalog.afi.com/Film/27693-TUNISIAN-VICTORY) doute qu’elles aient été gardées. Après des mois de querelle sur qui raconterait l’histoire, Capra prend la main ; le film sort le 16 mars 1944, rappellent les [Archives nationales américaines](https://unwritten-record.blogs.archives.gov/2017/11/08/tunisian-victory-operation-torch-gets-the-hollywood-treatment). L’Imperial War Museum note qu’il donne bien plus de poids à l’effort américain qu’*Africa Freed*.",
+  "slides": [
+    {
+      "question": "Les combats en Tunisie s’achèvent le 13 mai 1943. Combien de mois après sort le documentaire allié Tunisian Victory ?",
+      "unit": "mois",
+      "explanation": "Environ 10 mois : il sort le 16 mars 1944, après une longue dispute entre responsables britanniques et américains sur qui raconterait l’histoire."
+    },
+    {
+      "alt": "Animation en salle de montage : boîtes de films Desert Victory et Africa Freed, Londres et Washington d’accord, caméras le long d’un front de 3 200 km, un navire qui coule avec ses bobines, des chars factices filmés, deux voix de soldats, une balance penchée, un calendrier jusqu’au 16 mars 1944.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "tunisian-victory-fr.mp4",
+      "poster": "tunisian-victory-fr.jpg"
+    },
+    {
+      "prompt": "Règle la durée du film terminé et vois quelle part du métrage tourné il garde. Trouve la vraie durée : 76 minutes.",
+      "takeaway": "76 minutes, c’est environ 2 085 m de pellicule (la copie en mesure 2 094) : à peu près un mètre gardé pour 44 tournés, environ 2 % des 91 000 m (300 000 pieds) annoncés par Variety. Le reste n’a pas servi ici."
+    },
+    {
+      "heading": "Qui l’a fait",
+      "items": [
+        "Frank Capra : réalisateur, colonel américain",
+        "Hugh Stewart : officier du cinéma de l’armée britannique",
+        "George Stevens, John Huston : scènes recréées",
+        "Bernard Miles, Burgess Meredith : voix de deux soldats",
+        "William Alwyn, Dimitri Tiomkin : la musique"
+      ]
+    },
+    {
+      "heading": "Filmé pendant la guerre, ou après ?",
+      "left": {
+        "label": "Pendant la campagne",
+        "text": "Images d’une cinquantaine d’opérateurs britanniques et américains sur un front de 3 200 km, plus actualités et films pris à l’ennemi."
+      },
+      "right": {
+        "label": "Après coup",
+        "text": "Scènes recréées, certaines par George Stevens, d’autres peut-être par John Huston en Floride et en Californie, et deux soldats inventés."
+      }
+    },
+    {
+      "question": "Pourquoi les auteurs du documentaire Tunisian Victory (1944) ont-ils recréé des scènes de la campagne ?",
+      "options": [
+        "Des images avaient sombré en mer",
+        "Filmer était interdit en Tunisie",
+        "Les Britanniques gardaient leurs images",
+        "Ils manquaient de pellicule"
+      ],
+      "explanation": "Les Allemands avaient coulé le navire qui transportait une grande partie des images américaines, selon les Archives nationales américaines ; Frank Capra recourt alors aux reconstitutions."
+    }
+  ],
+  "source": {
+    "label": "Archives nationales américaines, The Unwritten Record : Tunisian Victory, Operation Torch gets the Hollywood treatment"
+  }
+}

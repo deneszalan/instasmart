@@ -1,0 +1,163 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-villa-jasmin-boughedir-moati",
+  "field": "art",
+  "title": "Villa Jasmin tells the war of a Jewish family in Tunis through history, memory and fiction",
+  "emoji": "🎬",
+  "body": "*Villa Jasmin* (2008), by the Tunisian director Férid Boughedir, adapts a 2003 novel by the French journalist Serge Moati about his father, also Serge (1903–1957), a Jewish socialist journalist in Tunis. In the film a son returns to Tunis in 1976 to find his parents’ past: the father’s fights with the French authorities in the 1930s, Vichy’s anti-Jewish laws from 1940, the German occupation of Tunis from November 1942, the villa requisitioned, the father arrested and deported. Some of this is history: the US Holocaust Memorial Museum documents the occupation’s yellow star, confiscations and forced labour for about 5,000 Jewish men; the Allies entered Tunis on 7 May 1943. Some is family memory: in a [2018 interview for the museum](https://collections.ushmm.org/oh_findingaids/RG-50.030.1003_sum_en.pdf), his daughter Nine Moati recalled his deportation to Sachsenhausen, a German taking “Moati” for an Italian name, and an escape “apparently” helped by a dentist, though she could not fix the dates. And some is the film’s own telling: it renames the family Boccara and shows the father in a Paris newsreel. The real Serge Moati died in 1957; his son Henry later took his name.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "In the film Villa Jasmin (2008), a Jewish journalist from Tunis is deported to a camp in Germany. History, family memory or invention?",
+      "answer": "Family memory: the Moati family’s account",
+      "detail": "The film follows Serge Moati’s novel about his father. His daughter Nine Moati recalled his deportation to Sachsenhausen, but not its exact dates."
+    },
+    {
+      "type": "video",
+      "src": "jasmin.mp4",
+      "poster": "jasmin.jpg",
+      "alt": "Animation at dusk: a white villa with jasmine and blue arched doors; then the story as framed cards in three colours, blue for documented history from 1940 to 1943, amber for the Moati family's memories of deportation and return, rose for the film's own choices, braided together at the end.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Mirage” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 4
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "villa-jasmin-boughedir-moati",
+      "prompt": "Sort nine cards from the film Villa Jasmin into documented history, the Moati family’s memory and the film’s own telling.",
+      "takeaway": "Three of each: the occupation, Vichy’s laws and forced labour are documented; Sachsenhausen, the ‘Italian’ name and the dentist come from the family; the name Boccara, the newsreel and the 1976 frame are the film’s."
+    },
+    {
+      "type": "timeline",
+      "heading": "What the film draws on",
+      "events": [
+        {
+          "when": "1935",
+          "text": "The father, a socialist editor, is expelled from Tunisia"
+        },
+        {
+          "when": "Nov 1942",
+          "text": "German troops occupy Tunis"
+        },
+        {
+          "when": "7 May 1943",
+          "text": "The Allies enter Tunis"
+        },
+        {
+          "when": "2003, 2008",
+          "text": "Serge Moati’s novel; Boughedir’s film"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Memory or film?",
+      "left": {
+        "label": "Family memory",
+        "text": "His daughter recalled that a German took “Moati” for an Italian name, and that he “apparently” escaped with a dentist’s help."
+      },
+      "right": {
+        "label": "The film’s telling",
+        "text": "It renames the family Boccara, frames the story as a son’s return in 1976 and shows the father in a Paris newsreel."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "In Villa Jasmin, the family of the journalist Serge Moati’s father has a different name. Which?",
+      "options": [
+        "Boccara",
+        "Boukris",
+        "Ghez",
+        "Memmi"
+      ],
+      "answer": 0,
+      "explanation": "The film calls the family Boccara. Changing names is one of a film’s choices, alongside its frame: a son’s return to Tunis in 1976."
+    }
+  ],
+  "tags": [
+    "villajasmin",
+    "boughedir",
+    "moati",
+    "film",
+    "memory",
+    "tunis"
+  ],
+  "source": {
+    "label": "USHMM: Oral history interview with Nine Moati Cariès (2018), summary",
+    "url": "https://collections.ushmm.org/oh_findingaids/RG-50.030.1003_sum_en.pdf"
+  },
+  "theme": {
+    "gradient": [
+      "#13222a",
+      "#5b3a4a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T11:28:55Z"
+}

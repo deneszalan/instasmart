@@ -1,0 +1,76 @@
+{
+  "id": "politics-khaled-abdul-wahab-mahdia",
+  "title": "Khaled Abdul-Wahab a abrité deux douzaines de Juifs ; Yad Vashem n’y a vu aucun risque",
+  "body": "En novembre 1942, les Allemands occupent la côte tunisienne, Mahdia comprise. Khaled Abdul-Wahab (1911-1997), propriétaire d’une grande famille musulmane, intermédiaire de la ville auprès des Allemands, emmène deux familles juives, les Boukris et les Ouzzan, environ deux douzaines de personnes, dans sa ferme de Tlelsa, hors de Mahdia. Elles y restent quatre mois, jusqu’à l’arrivée des Britanniques en avril 1943. Anny Boukris, 11 ans à l’époque, a raconté qu’il avait agi en apprenant qu’un officier allemand voulait violer sa mère. Au début des années 2000, elle confie ce récit à l’historien Robert Satloff, qui le vérifie à Mahdia, le publie dans *Among the Righteous* (2006) et, en 2007, présente Abdul-Wahab à Yad Vashem, mémorial israélien de la Shoah : le premier Arabe proposé. Le titre de Juste parmi les nations exige un risque pour la vie, la liberté ou la situation du sauveteur. [La commission de Yad Vashem](https://www.yadvashem.org/blog/abdelwahab-the-full-picture) a conclu qu’il n’avait enfreint aucune loi, que les Allemands savaient les familles à la ferme, et que « faute de risque, il n’était pas éligible », tout en saluant sa solidarité. Sa famille et Satloff contestent.",
+  "slides": [
+    {
+      "prompt": "Khaled Abdul-Wahab a abrité deux familles juives dans sa ferme près de Mahdia, en Tunisie, en 1943. Yad Vashem l’a-t-il nommé Juste ?",
+      "answer": "Non : sa commission n’a trouvé aucun risque dans son geste",
+      "detail": "Le titre exige un risque pour la vie, la liberté ou la situation du sauveteur. Yad Vashem a jugé qu’il n’avait enfreint aucune loi et que les Allemands savaient les familles à la ferme."
+    },
+    {
+      "alt": "Animation de nuit : une carte schématique de la Tunisie avec Mahdia ; des soldats chassent une famille juive de sa maison ; un trajet nocturne vers une ferme parmi les oliviers ; deux douzaines de silhouettes, quatre mois ; une cassette ; puis quatre lampes, les critères de Yad Vashem.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "mahdia-fr.mp4",
+      "poster": "mahdia-fr.jpg"
+    },
+    {
+      "prompt": "Lis au moins deux témoignages, puis touche les deux cases pour dire ce qu’ils montrent : une loi l’interdisait-elle ? Les Allemands savaient-ils ?",
+      "takeaway": "Aucune loi ne l’interdisait et les Allemands savaient, ils comptaient même les familles : « faute de risque, il n’était pas éligible ». Une aide cachée ou illégale aurait comporté un risque."
+    },
+    {
+      "heading": "Les quatre critères de Yad Vashem",
+      "items": [
+        "Une aide active pour sauver des Juifs de la mort ou de la déportation",
+        "Un risque pour la vie, la liberté ou la situation du sauveteur",
+        "Le désir d’aider, sans paiement ni autre récompense",
+        "Le témoignage des personnes aidées, ou des documents probants"
+      ]
+    },
+    {
+      "heading": "Khaled Abdul-Wahab et les familles",
+      "events": [
+        {
+          "when": "Nov. 1942",
+          "text": "Les troupes allemandes occupent Mahdia"
+        },
+        {
+          "when": "1942-1943",
+          "text": "Deux douzaines de personnes passent quatre mois dans sa ferme"
+        },
+        {
+          "when": "Avril 1943",
+          "text": "Les Britanniques arrivent ; les familles rentrent chez elles"
+        },
+        {
+          "when": "2007",
+          "text": "Robert Satloff le présente à Yad Vashem"
+        }
+      ]
+    },
+    {
+      "heading": "Deux lectures de la même ferme",
+      "left": {
+        "label": "Commission de Yad Vashem",
+        "text": "Aucune loi enfreinte, et les Allemands savaient les familles là : « faute de risque, il n’était pas éligible »."
+      },
+      "right": {
+        "label": "Sa fille Faiza",
+        "text": "« Mon père a ouvert sa maison aux Juifs, et Yad Vashem ne nous a pas ouvert la sienne », disait-elle en 2010."
+      }
+    },
+    {
+      "question": "Comment l’historien américain Robert Satloff a-t-il entendu parler de Khaled Abdul-Wahab ?",
+      "options": [
+        "Par Anny Boukris, abritée enfant",
+        "Par sa fille Faiza",
+        "Par le journal d’un officier allemand",
+        "Par les archives de Yad Vashem"
+      ],
+      "explanation": "Anny Boukris, 11 ans en 1943, lui a confié son récit au début des années 2000 et est morte deux semaines plus tard. Il a ensuite retrouvé ses amies d’enfance et la ferme, à Mahdia."
+    }
+  ],
+  "source": {
+    "label": "Yad Vashem : Abdelwahab, the full picture (2011)"
+  }
+}

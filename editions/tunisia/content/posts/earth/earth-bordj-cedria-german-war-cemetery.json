@@ -1,0 +1,173 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-bordj-cedria-german-war-cemetery",
+  "field": "earth",
+  "title": "At Bordj Cedria, 8,562 German soldiers lie in ossuaries: an invading army’s cemetery",
+  "emoji": "🕯️",
+  "body": "On a slope of the Keddel hills near Hammam-Lif, about 25 km from Tunis, the [German war cemetery of Bordj Cedria](https://kriegsgraeberstaetten.volksbund.de/friedhof/bordj-cedria) holds 8,562 German soldiers who died in the Tunisian campaign of 1942–43, in battle or as prisoners of war. They belonged to the army that, with Italy’s, occupied northern and eastern Tunisia for six months; under that occupation about 5,000 Tunisian Jewish men were put to forced labour. After the surrender of 13 May 1943 the German dead lay in six makeshift cemeteries and in field graves. A German–Tunisian war graves agreement came into force in 1966; the cemetery was built from 1973 to 1975, the dead were moved here, and many of about 2,000 unknown were identified. It opened in 1977. There are no rows of crosses: the remains lie in ossuaries in six staggered courtyards, and a stone in Arabic, German and French gives the number. It is kept by the Volksbund, Germany’s war graves commission, and each November the German ambassador lays a wreath. The Volksbund itself says that after 1945 honouring fallen soldiers as heroes became taboo, and calls such cemeteries places to learn.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The German war cemetery at Bordj Cedria, near Tunis, opened to the public in which year?",
+      "min": 1943,
+      "max": 2000,
+      "step": 1,
+      "answer": 1977,
+      "format": "year",
+      "explanation": "1977, 34 years after the surrender of 13 May 1943. A German–Tunisian agreement came first, in 1966; the cemetery was built from 1973 to 1975."
+    },
+    {
+      "type": "video",
+      "src": "cedria.mp4",
+      "poster": "cedria.jpg",
+      "alt": "Animation at dusk on a hillside with cypresses: six stone courtyards stepping up the slope; a schematic map of Tunisia with the Axis-held north and east shaded; six makeshift cemeteries listed; a 1966 agreement; a stone in three languages; blue and yellow tiles; a wreath; what the Volksbund says.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Unwritten Return” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "bordj-cedria-german-war-cemetery",
+      "prompt": "Slide from 1943 and find the year the German dead of the Tunisian campaign could first be visited at Bordj Cedria.",
+      "takeaway": "1977, 34 years after the surrender: an agreement in 1966, building from 1973 to 1975, then the reburials. Since then, each November, two Sundays before Advent, the German ambassador lays a wreath there."
+    },
+    {
+      "type": "timeline",
+      "heading": "From field graves to Bordj Cedria",
+      "events": [
+        {
+          "when": "13 May 1943",
+          "text": "Axis surrender in Tunisia"
+        },
+        {
+          "when": "28 Mar 1966",
+          "text": "German–Tunisian war graves agreement"
+        },
+        {
+          "when": "1973–1975",
+          "text": "Cemetery built; the dead moved in"
+        },
+        {
+          "when": "28 Sep 1977",
+          "text": "Opened to the public"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "heading": "Six makeshift cemeteries, before 1973",
+      "style": "bullets",
+      "items": [
+        "Nassen, on Cap Bon",
+        "Bizerte",
+        "La Mornaghia",
+        "El M’Dou",
+        "Mateur",
+        "Sfax, and field graves across the country"
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Given the war crimes committed by Germans, an official ‘hero worship’ was taboo after the war ended in 1945.",
+      "attribution": "Volksbund teaching module (translated from the German)"
+    },
+    {
+      "type": "quiz",
+      "question": "At Bordj Cedria, near Tunis, how do the German dead of 1942–43 lie?",
+      "options": [
+        "In ossuaries in six courtyards",
+        "In rows under crosses",
+        "In one mass grave",
+        "In a single crypt"
+      ],
+      "answer": 0,
+      "explanation": "The Volksbund laid out six staggered courtyards on the hillside, with the remains in ossuaries, and a stone in Arabic, German and French giving the number: 8,562."
+    }
+  ],
+  "tags": [
+    "bordjcedria",
+    "volksbund",
+    "cemetery",
+    "remembrance",
+    "germany",
+    "1943"
+  ],
+  "source": {
+    "label": "Volksbund: Kriegsgräberstätte Bordj-Cedria",
+    "url": "https://kriegsgraeberstaetten.volksbund.de/friedhof/bordj-cedria"
+  },
+  "theme": {
+    "gradient": [
+      "#1b222b",
+      "#4a4552"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T11:32:50Z"
+}

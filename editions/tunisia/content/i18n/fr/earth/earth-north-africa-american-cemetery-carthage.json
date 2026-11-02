@@ -1,0 +1,60 @@
+{
+  "id": "earth-north-africa-american-cemetery-carthage",
+  "title": "Près de Carthage, un cimetière américain nomme plus de disparus qu’il n’abrite de tombes",
+  "body": "Le cimetière et mémorial américain d’Afrique du Nord se trouve à Carthage, à 16 km de Tunis, sur une partie du site de la Carthage romaine. L’American Battle Monuments Commission (ABMC), qui le gère, l’a créé en 1948 pour regrouper des tombes provisoires d’Afrique du Nord, sur un terrain cédé gratuitement et à perpétuité par la Tunisie ; il est inauguré le 21 juillet 1960. Sur 11 hectares, 2 833 stèles s’alignent en neuf carrés, avec des bassins aux croisements des allées ; la plupart des morts honorés sont tombés entre l’Afrique du Nord et le golfe Persique. Le long de l’allée, les tables des disparus, longues de 111 m, portent 3 724 noms d’hommes disparus sur terre, en mer et dans les airs ; une rosette marque ceux retrouvés et identifiés depuis. Les cartes en mosaïque du mémorial retracent la campagne, de novembre 1942 à mai 1943. L’entrée est libre tous les jours sauf le 25 décembre et le 1er janvier. Chiffres de la [brochure](https://www.npshistory.com/publications/battlefield/abmc/north-africa/brochure-e-2024.pdf) et de la [page visite](https://www.abmc.gov/plan/plan-your-visit-to-north-africa-american-cemetery/) de l’ABMC (en anglais).",
+  "slides": [
+    {
+      "question": "Le cimetière américain d’Afrique du Nord, à Carthage, compte 2 833 stèles. Combien de noms sur ses tables des disparus ?",
+      "unit": "noms",
+      "explanation": "3 724 noms, sur un mur de 111 m (364 pieds) : plus de disparus que de tombes. Une rosette marque ceux retrouvés et identifiés depuis."
+    },
+    {
+      "alt": "Animation au crépuscule : le golfe de Tunis et Carthage en schéma, puis le plan du cimetière, neuf carrés et des bassins ; stèles en croix et en étoiles de David ; un long mur de noms aux rosettes dorées ; une carte en mosaïque ; la statue de l’Honneur ; le train vers Carthage-Amilcar.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "carthage-cemetery-fr.mp4",
+      "poster": "carthage-cemetery-fr.jpg"
+    },
+    {
+      "prompt": "Une famille veut se recueillir sur une tombe. Avec les fiches d’exercice, trouve trois tombes sur le plan : le carré, puis la rangée, puis la tombe.",
+      "takeaway": "Chaque tombe a une adresse. La recherche en ligne de l’ABMC donne carré, rangée et tombe, et le personnel du bâtiment d’accueil y conduit les familles. Le plan est schématique ; les vraies rangées diffèrent."
+    },
+    {
+      "heading": "Mémoire à Carthage",
+      "items": [
+        {
+          "label": "Stèles"
+        },
+        {
+          "label": "Noms de disparus"
+        }
+      ],
+      "note": "American Battle Monuments Commission, 2024"
+    },
+    {
+      "heading": "Qui repose ici",
+      "text": "La plupart sont tombés pendant la Seconde Guerre mondiale, de l’Afrique du Nord au golfe Persique, selon l’ABMC. Les stèles comptent 2 777 croix latines et 56 étoiles de David. Parmi les morts, quatre paires de frères et le capitaine Foy Draper, champion olympique de relais en 1936."
+    },
+    {
+      "heading": "Visiter",
+      "items": [
+        "Entrée libre, sans réservation ; ouvert tous les jours sauf le 25 décembre et le 1er janvier",
+        "Dernière entrée à 16 h 45",
+        "Train TGM de Tunis-Marine à Carthage-Amilcar, puis 700 m à pied",
+        "Le personnel du bâtiment d’accueil conduit les familles aux tombes"
+      ]
+    },
+    {
+      "question": "Sur les tables des disparus du cimetière américain de Carthage, que signifie une rosette à côté d’un nom ?",
+      "options": [
+        "Il a été retrouvé et identifié",
+        "Il a été décoré pour bravoure",
+        "C’était un officier",
+        "Il était né en Tunisie"
+      ],
+      "explanation": "Le mur porte 3 724 noms d’hommes disparus dans la région. Une rosette marque un homme dont les restes ont été retrouvés et identifiés après la gravure du mur."
+    }
+  ],
+  "source": {
+    "label": "American Battle Monuments Commission : histoire du cimetière américain d’Afrique du Nord"
+  }
+}

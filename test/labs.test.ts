@@ -208,6 +208,16 @@ import { LETTER as BOURG_LETTER, LAST_INDEX as BOURG_LAST, fromIndex as bourgFro
 import { DIARY as GHEZ_DIARY, LAST_DAY as GHEZ_LAST, WAR as GHEZ_WAR, dayOf as ghezDay, latest as ghezLatest, meetingDays as ghezMeet } from '../src/labs/literature/ghez-six-mois-sous-la-botte';
 import { CLAIMS as PATTON_CLAIMS, allRight as pattonAllRight, score as pattonScore } from '../src/labs/art/patton-el-guettar';
 import { KINDS as GAMMARTH_KINDS, allSeen as gammarthAllSeen, atGammarth, placeOf as gammarthPlace } from '../src/labs/earth/gammarth-french-military-cemetery';
+import { hookKm as marethHookKm, hookMiles as marethHookMiles, mainAttack as marethMain, SWITCH_DAY as MARETH_SWITCH } from '../src/labs/history/mareth-line-left-hook';
+import { matchesRecord as wahabRecord, riskFound as wahabRisk } from '../src/labs/politics/khaled-abdul-wahab-mahdia';
+import { kmBetween as pyleKm, PLACES as PYLE_PLACES, TOLERANCE_KM as PYLE_TOL, toleranceKm as pyleTolFor } from '../src/labs/literature/ernie-pyle-here-is-your-war';
+import { ITEMS as JASMIN_ITEMS, score as jasminScore, STRANDS as JASMIN_STRANDS } from '../src/labs/art/villa-jasmin-boughedir-moati';
+import { dayOfMourning as cedriaMourning, firstAdvent as cedriaAdvent, OPENED as CEDRIA_OPENED, stageOf as cedriaStage } from '../src/labs/earth/bordj-cedria-german-war-cemetery';
+import { along as raceAlong, DJEDEIDA_AT as RACE_DJEDEIDA, miles as raceMiles, nearest as raceNearest, PLACES as RACE_PLACES, ROUTE_LENGTH as RACE_LENGTH, FIELDS as RACE_FIELDS } from '../src/labs/history/race-for-tunis-1942';
+import { dayOf as occDay, EVENTS as OCC_EVENTS, eventAt as occEventAt, FREED as OCC_FREED, ORDER as OCC_ORDER, ROUNDUP as OCC_ROUNDUP, SURRENDER as OCC_SURRENDER, dateOf as occDate } from '../src/labs/politics/tunisia-jews-forced-labour-1942';
+import { EPISODES as MEMMI_EPISODES, score as memmiScore } from '../src/labs/literature/memmi-pillar-of-salt';
+import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plotAt as cemPlotAt, plotRect as cemPlotRect, zoomBox as cemZoom, PLOTS as CEM_PLOTS, RECORDS as CEM_RECORDS, ROWS as CEM_ROWS, GRAVES as CEM_GRAVES } from '../src/labs/earth/north-africa-american-cemetery-carthage';
+import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, FT_PER_MIN as TV_FT_PER_MIN, hoursOf as tvHours, ratio as tvRatio, SHOT_FT as TV_SHOT } from '../src/labs/art/tunisian-victory-1944-film';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2164,5 +2174,121 @@ describe('lab maths', () => {
     expect(GAMMARTH_KINDS.filter(atGammarth)).toEqual(['christian', 'jewish', 'unknown']);
     expect(gammarthAllSeen(['christian', 'jewish', 'unknown'])).toBe(false);
     expect(gammarthAllSeen(['muslim', 'christian', 'unknown', 'jewish'])).toBe(true);
+  });
+  it('mareth: the hook covers 50 + 25 + 40 + 10 miles, about 200 km, and becomes the main attack on 23 March', () => {
+    expect(marethHookMiles(16)).toBe(0);
+    expect(marethHookMiles(17)).toBe(50);
+    expect(marethHookMiles(20)).toBe(75);
+    expect(marethHookMiles(21)).toBe(125);
+    expect(marethHookKm(21)).toBe(200);
+    expect(marethHookKm(17)).toBe(80);
+    expect(marethMain(19)).toBe('none');
+    expect(marethMain(20)).toBe('frontal');
+    expect(marethMain(22)).toBe('frontal');
+    expect(marethMain(MARETH_SWITCH)).toBe('hook');
+    expect(MARETH_SWITCH).toBe(23);
+  });
+  it('abdul-wahab: risk needs a broken law or help kept from the Germans; the record shows neither', () => {
+    expect(wahabRisk(false, false)).toBe(false);
+    expect(wahabRisk(true, false)).toBe(true);
+    expect(wahabRisk(false, true)).toBe(true);
+    expect(wahabRecord(false, false)).toBe(true);
+    expect(wahabRecord(true, false)).toBe(false);
+    expect(wahabRecord(false, true)).toBe(false);
+  });
+  it('pyle: great-circle distances between his places, and none closer than the tolerance to the next one', () => {
+    const at = (id: string) => PYLE_PLACES.find((p) => p.id === id)!;
+    const d = (a: string, b: string) => pyleKm(at(a).lat, at(a).lon, at(b).lat, at(b).lon);
+    expect(pyleKm(0, 0, 0, 1)).toBeCloseTo(111.19, 1);
+    expect(d('mateur', 'bizerte')).toBeGreaterThan(28);
+    expect(d('mateur', 'bizerte')).toBeLessThan(34);
+    expect(d('sbeitla', 'gafsa')).toBeGreaterThan(95);
+    expect(d('sbeitla', 'gafsa')).toBeLessThan(105);
+    for (const a of PYLE_PLACES) for (const b of PYLE_PLACES) if (a !== b) expect(pyleKm(a.lat, a.lon, b.lat, b.lon)).toBeGreaterThan(PYLE_TOL);
+    expect(pyleTolFor(2)).toBe(PYLE_TOL);
+    expect(pyleTolFor(0.4)).toBeCloseTo(60, 9);
+  });
+  it('villa jasmin: nine cards, three in each strand, scored against their strand', () => {
+    expect(JASMIN_ITEMS).toHaveLength(9);
+    for (const s of JASMIN_STRANDS) expect(JASMIN_ITEMS.filter((it) => it.strand === s)).toHaveLength(3);
+    const all = Object.fromEntries(JASMIN_ITEMS.map((it) => [it.id, it.strand]));
+    expect(jasminScore(all)).toBe(9);
+    expect(jasminScore({})).toBe(0);
+    expect(jasminScore({ ...all, boccara: 'history' })).toBe(8);
+  });
+  it('bordj cedria: the day of mourning is two Sundays before Advent, and the cemetery opens in 1977', () => {
+    const iso = (d: Date) => d.toISOString().slice(0, 10);
+    expect(iso(cedriaAdvent(2026))).toBe('2026-11-29');
+    expect(iso(cedriaMourning(2026))).toBe('2026-11-15');
+    expect(iso(cedriaMourning(2015))).toBe('2015-11-15');
+    expect(iso(cedriaMourning(2022))).toBe('2022-11-13');
+    expect(iso(cedriaAdvent(1977))).toBe('1977-11-27');
+    for (let y = 1977; y <= 2030; y++) { const d = cedriaMourning(y); expect(d.getUTCDay()).toBe(0); expect(d.getUTCMonth()).toBe(10); expect(d.getUTCDate()).toBeGreaterThanOrEqual(13); expect(d.getUTCDate()).toBeLessThanOrEqual(19); }
+    expect(cedriaStage(1965)).toBe('scattered');
+    expect(cedriaStage(1966)).toBe('agreement');
+    expect(cedriaStage(1974)).toBe('building');
+    expect(cedriaStage(CEDRIA_OPENED)).toBe('open');
+    expect(CEDRIA_OPENED - 1943).toBe(34);
+  });
+  it('race for Tunis: the airfields sit where Howe puts them, Djedeida is about 13 miles from Tunis, and rain leaves only Bône to the Allies', () => {
+    const field = (id: string) => RACE_FIELDS.find((f) => f.id === id)!.at;
+    expect(raceMiles(field('souk'), RACE_PLACES.tunis)).toBeCloseTo(80, -1);
+    expect(Math.abs(raceMiles(field('bone'), RACE_PLACES.tunis) - 135)).toBeLessThan(5);
+    expect(Math.abs(raceMiles(field('youks'), RACE_PLACES.tunis) - 155)).toBeLessThan(5);
+    expect(Math.round(raceMiles(RACE_PLACES.djedeida, RACE_PLACES.tunis))).toBe(13);
+    expect(raceAlong(0)).toEqual(RACE_PLACES.souk);
+    expect(raceMiles(raceAlong(RACE_LENGTH), RACE_PLACES.tunis)).toBeLessThan(0.01);
+    expect(raceMiles(raceAlong(RACE_DJEDEIDA), RACE_PLACES.djedeida)).toBeLessThan(0.01);
+    const p = raceAlong(Math.round(RACE_DJEDEIDA));
+    expect(raceNearest(p, 'axis', false).field.id).toBe('aouina');
+    expect(raceNearest(p, 'allied', false).field.id).toBe('souk');
+    expect(raceNearest(p, 'allied', true).field.id).toBe('bone');
+    expect(raceNearest(p, 'allied', true).mi).toBeGreaterThan(5 * raceNearest(p, 'axis', true).mi);
+    expect(raceNearest(raceAlong(0), 'allied', false).mi).toBe(0);
+  });
+  it('occupation calendar: Tunis is freed on day 179, the order for workers comes on day 27, and events run in order', () => {
+    expect(OCC_FREED).toBe(179);
+    expect(OCC_SURRENDER).toBe(185);
+    expect(OCC_ORDER).toBe(27);
+    expect(OCC_ROUNDUP).toBe(30);
+    expect(occDay(1942, 11, 9)).toBe(0);
+    expect(occDate(OCC_FREED).toISOString().slice(0, 10)).toBe('1943-05-07');
+    expect(occDate(OCC_ORDER).toISOString().slice(0, 10)).toBe('1942-12-06');
+    for (let i = 1; i < OCC_EVENTS.length; i++) expect(OCC_EVENTS[i].day).toBeGreaterThan(OCC_EVENTS[i - 1].day);
+    expect(occEventAt(0).id).toBe('arrive');
+    expect(occEventAt(OCC_ROUNDUP + 50).id).toBe('camps');
+    expect(occEventAt(OCC_FREED).id).toBe('freed');
+  });
+  it('Memmi fork: every episode has one thread, all three threads are used, and only the right answers score', () => {
+    const right = Object.fromEntries(MEMMI_EPISODES.map((e) => [e.id, e.thread]));
+    expect(memmiScore(right)).toBe(MEMMI_EPISODES.length);
+    expect(memmiScore({})).toBe(0);
+    expect(new Set(MEMMI_EPISODES.map((e) => e.thread))).toEqual(new Set(['both', 'novel', 'life']));
+    expect(new Set(MEMMI_EPISODES.map((e) => e.id)).size).toBe(MEMMI_EPISODES.length);
+    expect(memmiScore({ ...right, ship: 'life' })).toBe(MEMMI_EPISODES.length - 1);
+    expect(MEMMI_EPISODES.find((e) => e.id === 'camp')!.thread).toBe('both');
+  });
+  it('cemetery plan: plots A to C lie nearest the mall, every plot and grave maps to a point and back, and the practice records exist', () => {
+    for (const [w, h] of [[340, 150], [412, 220]]) {
+      const B = cemPlan(w, h), Z = cemZoom(w, h);
+      for (let i = 0; i < 9; i++) { const r = cemPlotRect(B, i); expect(cemPlotAt(B, r.x0 + r.w / 2, r.y0 + r.h / 2)).toBe(i); }
+      expect(cemPlotRect(B, 0).y0).toBeGreaterThan(cemPlotRect(B, 6).y0);
+      expect(cemPlotRect(B, 2).x0).toBeGreaterThan(cemPlotRect(B, 0).x0);
+      for (const row of [1, 6, CEM_ROWS]) for (const grave of [1, 9, CEM_GRAVES]) {
+        const [x, y] = cemPoint(Z, row, grave);
+        expect(cemGraveAt(Z, x, y)).toEqual({ row, grave });
+      }
+      expect(cemPoint(Z, 1, 1)[1]).toBeGreaterThan(cemPoint(Z, CEM_ROWS, 1)[1]);
+      expect(cemGraveAt(Z, 1, 1)).toBeNull();
+    }
+    for (const r of CEM_RECORDS) { expect(CEM_PLOTS).toContain(r.plot); expect(r.row).toBeLessThanOrEqual(CEM_ROWS); expect(r.grave).toBeLessThanOrEqual(CEM_GRAVES); }
+  });
+  it('Tunisian Victory cutting room: 90 feet a minute, 76 minutes is about the 6,871-foot print, and about 44 feet were shot per foot kept', () => {
+    expect(TV_FT_PER_MIN).toBe(90);
+    expect(Math.abs(tvFeet(TV_FINAL_MIN) - TV_FINAL_FT)).toBeLessThan(90);
+    expect(Math.round(tvRatio(tvFeet(TV_FINAL_MIN)))).toBe(44);
+    expect(Math.round(tvRatio(TV_FINAL_FT))).toBe(44);
+    expect(tvHours(TV_SHOT)).toBeCloseTo(55.6, 1);
+    expect(tvRatio(tvFeet(10))).toBeGreaterThan(tvRatio(tvFeet(120)));
   });
 });
