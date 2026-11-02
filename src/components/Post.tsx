@@ -14,6 +14,7 @@ import { postId, useStore } from '../state/store';
 import { Avatar } from './Avatar';
 import { CardMedia, WikiMedia } from './Media';
 import { Sheet } from './Sheet';
+import { FilmButton } from './Film';
 import { LOCALE, t } from '../i18n';
 import { EDITION } from '../edition';
 
@@ -340,6 +341,7 @@ export function PostView({ post, className }: PostViewProps) {
             {t('In the news: {label}', { label: card.newsArticle.label })} <ExternalLink size={12} />
           </a>
         )}
+        {card && <FilmButton field={card.field} />}
         {card?.createdAt && (
           <time className="post__time" dateTime={card.createdAt}>
             {formatStamp(card.createdAt)}

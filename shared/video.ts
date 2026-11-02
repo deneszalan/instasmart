@@ -178,6 +178,32 @@ export const MIN_VIDEO_SECONDS = 2;
 export const MAX_VIDEO_SECONDS = 90;
 export const MAX_VIDEO_WIDTH = 1080;
 
+/** A film: the long, widescreen telling of a whole section, played from its posts (`films` in shared/editions.ts). */
+export const MIN_FILM_SECONDS = 60;
+export const MAX_FILM_SECONDS = 20 * 60;
+export const MAX_FILM_WIDTH = 1280;
+/** About 6 MB a minute, and under GitHub's 100 MB a file. */
+export const maxFilmBytes = (seconds: number) => Math.min(95_000_000, Math.round(seconds * 100_000));
+
+/** Everything wrong with a film, in words a contributor can act on. */
+export function filmProblems(bytes: Uint8Array): string[] {
+  let info: VideoInfo;
+  try {
+    info = readMp4(bytes);
+  } catch (err) {
+    return [(err as Error).message];
+  }
+  const problems: string[] = [];
+  const limit = maxFilmBytes(info.durationSeconds);
+  if (bytes.length > limit) problems.push(`film is ${bytes.length} bytes; the limit for ${info.durationSeconds.toFixed(0)} s is ${limit}. Encode it at 1280×720 and compress it more`);
+  if (info.videoCodec !== 'avc1' && info.videoCodec !== 'avc3') problems.push(`the video track must be H.264 (avc1); it is ${info.videoCodec ?? 'missing'}`);
+  if (info.audioCodec !== 'mp4a') problems.push(`the audio track must be AAC (mp4a); it is ${info.audioCodec ?? 'missing'}`);
+  if (info.durationSeconds < MIN_FILM_SECONDS || info.durationSeconds > MAX_FILM_SECONDS) problems.push(`film is ${info.durationSeconds.toFixed(0)} s long; keep it between ${MIN_FILM_SECONDS} s and ${MAX_FILM_SECONDS / 60} minutes`);
+  if (info.width > MAX_FILM_WIDTH) problems.push(`film is ${info.width} px wide; keep it at most ${MAX_FILM_WIDTH} px`);
+  if (!info.fastStart) problems.push('the index comes after the video data; re-encode with `-movflags +faststart`');
+  return problems;
+}
+
 /** Everything wrong with a clip, in words a contributor can act on. */
 export function videoProblems(bytes: Uint8Array): string[] {
   let info: VideoInfo;

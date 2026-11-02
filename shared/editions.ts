@@ -36,7 +36,13 @@ export interface Edition {
    * Other languages the reader can switch the app to, with this edition's own text (and name, if it differs) in each. A post shows in
    * one of them when it has a translation at content/i18n/<lang>/<field>/<id>.json, and in `lang` otherwise.
    */
-  langs?: Partial<Record<Lang, { name?: string; fieldText?: Partial<Record<FieldId, FieldText>>; about: string }>>;
+  langs?: Partial<Record<Lang, { name?: string; fieldText?: Partial<Record<FieldId, FieldText>>; films?: Partial<Record<FieldId, string>>; about: string }>>;
+  /**
+   * A long film for a whole section, by field: its title here (and in `langs`), its files in
+   * content/media/films/<field>.mp4 and .jpg (<field>-<lang>.mp4 for another language). Every post of the section
+   * offers it ("Watch the full story"); a film is never saved for offline use.
+   */
+  films?: Partial<Record<FieldId, string>>;
   /**
    * The app can be used without internet: it installs an offline worker (src/offline-worker.js) that keeps the app;
    * Settings lets the reader save the newest posts (as many as they choose) and switch to offline mode, where only
@@ -148,6 +154,14 @@ export const EDITIONS = {
       earth: { name: 'Remembrance', handle: 'lieux.de.memoire', emoji: '🕯️', gradient: ['#1c3a2e', '#57534e'], scope: 'Cemeteries, memorials, museums and the places where the war is remembered' },
       engineering: { name: 'Visit', handle: 'sur.les.traces', emoji: '🧭', gradient: ['#134e4a', '#a16207'], scope: 'Places in Tunisia you can visit today that tell the story of the war' },
     },
+    films: {
+      history: 'The Tunisian campaign, November 1942 to May 1943',
+      politics: 'Six months under occupation',
+      literature: 'The war in Tunisia in words',
+      art: 'The war in Tunisia on screen',
+      earth: 'Remembering 1943',
+      engineering: 'On the trail of 1943',
+    },
     storageKey: 'tunisia:v1',
     wiki: false,
     offline: true,
@@ -156,6 +170,14 @@ export const EDITIONS = {
     langs: {
       fr: {
         name: 'Tunisie 1943',
+        films: {
+          history: 'La campagne de Tunisie, novembre 1942 – mai 1943',
+          politics: 'Six mois sous l’occupation',
+          literature: 'La guerre de Tunisie en mots',
+          art: 'La guerre de Tunisie à l’écran',
+          earth: 'Se souvenir de 1943',
+          engineering: 'Sur les traces de 1943',
+        },
         fieldText: {
           history: { name: 'Campagne', handle: 'front.de.tunisie', scope: 'Les combats de novembre 1942 à mai 1943 : armées, batailles, terrain et ravitaillement' },
           politics: { name: 'Occupation', handle: 'tunis.1942', scope: 'La vie pendant la guerre : le bey, les Français, l’occupation de l’Axe, et les Juifs, musulmans et Européens de Tunisie' },

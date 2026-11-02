@@ -1,6 +1,6 @@
 import { FIELD_IDS } from './fields.ts';
 import { formatIssues, localMedia, MEDIA_EXTENSIONS, Post, VIDEO_EXTENSIONS } from './schema.ts';
-import { readMp4, STEP_STILL_BEFORE_END, stepStill, videoProblems } from './video.ts';
+import { filmProblems, readMp4, STEP_STILL_BEFORE_END, stepStill, videoProblems } from './video.ts';
 import { applyTranslation, TRANSLATIONS_DIR, translationPath } from './translate.ts';
 
 /** A file in the repository, addressed by its repo-relative path. */
@@ -16,6 +16,8 @@ export interface Problem {
 
 export const POSTS_DIR = 'content/posts';
 export const MEDIA_DIR = 'content/media';
+/** A section's long film (`films` in shared/editions.ts) lives in content/media/films/<field>[-<lang>].mp4, with a .jpg still. */
+export const FILMS = 'films';
 
 export const MAX_IMAGE_BYTES = 1_500_000;
 export const MAX_SVG_BYTES = 300_000;
@@ -198,6 +200,18 @@ export function validateContent(files: ContentFile[], fields: readonly string[] 
         continue;
       }
       const [postId, name] = parts;
+      if (postId === FILMS) {
+        const m = /^([a-z]+)(?:-([a-z]{2}))?\.(mp4|jpg)$/.exec(name);
+        if (!m || !fields.includes(m[1]) || (m[2] && !langs.includes(m[2]))) {
+          problems.push({ file: file.path, message: `a film is named <field>.mp4 or <field>-<lang>.mp4 (and .jpg for its still), for a field (${fields.join(', ')})${langs.length ? ` and a language (${langs.join(', ')})` : ''} of this app` });
+          continue;
+        }
+        if (m[3] === 'mp4') {
+          for (const message of filmProblems(file.bytes)) problems.push({ file: file.path, message });
+          if (!files.some((f) => f.path === file.path.replace(/\.mp4$/, '.jpg'))) problems.push({ file: file.path, message: `add its still at ${file.path.replace(/\.mp4$/, '.jpg')}` });
+        } else for (const message of mediaProblems(name, file.bytes)) problems.push({ file: file.path, message });
+        continue;
+      }
       if (!media.has(postId)) media.set(postId, new Set());
       media.get(postId)!.add(name);
       mediaBytes.set(file.path, file.bytes);

@@ -4653,3 +4653,75 @@ p {
     background-color 0.25s ease,
     transform 0.25s ease;
 }
+
+/* A section's long film (src/components/Film.tsx): a button under each of its posts, and a full-screen player. */
+.film-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 2px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--hairline);
+  background: var(--chip, transparent);
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.film {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+}
+
+.film__bar {
+  position: absolute;
+  top: env(safe-area-inset-top, 0px);
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px 10px 16px;
+}
+
+.film__title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.film__video {
+  width: 100%;
+  max-height: 100dvh;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.film__hint {
+  position: absolute;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 18px);
+  left: 0;
+  right: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+@media (orientation: landscape) {
+  .film__hint {
+    display: none;
+  }
+}
