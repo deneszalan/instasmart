@@ -193,6 +193,7 @@ import { canForm as bayForm, LAT_MIN as BAY_LAT, SHEAR_MAX as BAY_SHEAR, SST_MIN
 import { FLOOR as CLOCK_FLOOR, profile as clockProfile, readAge as clockRead, retained as clockRetained } from '../src/labs/body/blood-cells-epigenetic-clock';
 import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decafRemoved, soak as decafSoak } from '../src/labs/chemistry/decaf-coffee-caffeine-removal';
 import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX, MIN_STEP as ORZO_STEP, ORZO as ORZO_BAND, brownRate as orzoRate, dryMinutes as orzoDry, isOrzo, roastDegree as orzoRoast, waterLeft as orzoWater } from '../src/labs/chemistry/caffe-orzo-roasted-barley';
+import { COUNTS as TUNIS_COUNTS, COUNT_IDS as TUNIS_COUNT_IDS, foundExtremes as tunisExtremes, spread as tunisSpread, squaresFor as tunisSquares } from '../src/labs/history/end-in-tunisia-may-1943';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1950,5 +1951,18 @@ describe('lab maths', () => {
     expect(isOrzo(ORZO_BAND[0])).toBe(true);
     expect(isOrzo(ORZO_BAND[1])).toBe(false);
     expect(ORZO_CAFFEINE).toBe(0);
+  });
+
+  it('end in Tunisia: five prisoner counts from 238,243 to 300,000, 61,757 apart, as squares of 1,000', () => {
+    expect(TUNIS_COUNTS.playfair).toBe(238243);
+    expect(TUNIS_COUNTS.howe).toBe(275000);
+    expect(TUNIS_COUNTS.arnim).toBe(300000);
+    expect(tunisSpread(TUNIS_COUNT_IDS).gap).toBe(61757);
+    expect(tunisSpread(['playfair', 'howe']).gap).toBe(36757);
+    expect(tunisSquares(238243)).toBe(238);
+    expect(tunisSquares(TUNIS_COUNTS.arnim)).toBe(300);
+    expect(tunisExtremes(['playfair'])).toBe(false);
+    expect(tunisExtremes(['playfair', 'howe'])).toBe(false);
+    expect(tunisExtremes(['howe', 'arnim', 'playfair'])).toBe(true);
   });
 });

@@ -198,4 +198,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'blood-cells-epigenetic-clock': lazy(() => import('./body/blood-cells-epigenetic-clock')),
   'decaf-coffee-caffeine-removal': lazy(() => import('./chemistry/decaf-coffee-caffeine-removal')),
   'caffe-orzo-roasted-barley': lazy(() => import('./chemistry/caffe-orzo-roasted-barley')),
+  'end-in-tunisia-may-1943': lazy(() => import('./history/end-in-tunisia-may-1943')),
 };

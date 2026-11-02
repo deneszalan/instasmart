@@ -1,0 +1,71 @@
+{
+  "id": "history-end-in-tunisia-may-1943",
+  "title": "Mai 1943 : la guerre d’Afrique finit en Tunisie, avec un quart de million de prisonniers",
+  "body": "Le 6 mai 1943, la Première Armée britannique perce le front à l’ouest de Tunis, et le **7 mai** ses chars entrent dans Tunis tandis que l’infanterie américaine entre dans Bizerte. Les armées allemande et italienne sont coupées en deux : les chars britanniques forcent le passage d’Hammam-Lif et isolent la presqu’île du cap Bon, et le XIXe corps français se referme autour de Zaghouan. Le **13 mai**, le maréchal italien Giovanni Messe rend la dernière armée de l’Axe en Afrique. Pourquoi tant de prisonniers ? Les armées de l’Axe étaient acculées à la mer, que les navires et les avions alliés surveillaient jour et nuit ; elles manquaient d’essence et de vivres, et seules quelques centaines d’hommes s’échappèrent en bateau. Les décomptes diffèrent : l’histoire officielle britannique donne 238 243 prisonniers non blessés (101 784 Allemands, 89 442 Italiens), l’historien officiel de l’armée américaine environ 275 000, et le Musée du mémorial de l’Holocauste des États-Unis 267 000 : les historiens retiennent [environ un quart de million](https://en.wikipedia.org/wiki/Tunisian_campaign). En Allemagne, on compara la défaite à Stalingrad : « Tunisgrad ».",
+  "slides": [
+    {
+      "question": "Les Alliés prennent Tunis et Bizerte le 7 mai 1943. Combien de jours après la dernière armée de l’Axe capitule-t-elle ?",
+      "unit": "jours",
+      "explanation": "Six jours : le maréchal italien Giovanni Messe a rendu sa 1re Armée le 13 mai 1943. En une semaine, les armées allemande et italienne de Tunisie s’étaient effondrées."
+    },
+    {
+      "alt": "Animation sur une carte schématique du nord-est tunisien : la zone tenue par l’Axe se réduit quand les flèches alliées atteignent Tunis et Bizerte le 7 mai 1943 et isolent le cap Bon ; navires et avions gardent la mer. Puis cinq décomptes de prisonniers et « Tunisgrad ».",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "end-in-tunisia-fr.mp4",
+      "poster": "end-in-tunisia-fr.jpg"
+    },
+    {
+      "prompt": "Passe en revue les cinq décomptes de prisonniers de l’Axe. Trouve le plus bas et le plus haut, et regarde l’écart.",
+      "takeaway": "De 238 243 (histoire officielle britannique, non-blessés seuls) à 300 000 (estimation de von Arnim) : 61 757 d’écart. Chacun a compté autrement ; les historiens disent environ un quart de million."
+    },
+    {
+      "heading": "La dernière semaine",
+      "events": [
+        {
+          "when": "6 mai 1943",
+          "text": "La Première Armée britannique perce à l’ouest de Tunis."
+        },
+        {
+          "when": "7 mai",
+          "text": "Chars britanniques à Tunis, Américains à Bizerte."
+        },
+        {
+          "when": "9-11 mai",
+          "text": "Des dizaines de milliers se rendent ; le cap Bon est isolé."
+        },
+        {
+          "when": "13 mai",
+          "text": "Le maréchal Messe rend la dernière armée de l’Axe en Afrique."
+        }
+      ]
+    },
+    {
+      "heading": "Qui compte ?",
+      "left": {
+        "label": "Histoire britannique",
+        "text": "238 243 prisonniers non blessés : 101 784 Allemands, 89 442 Italiens, le reste sans détail."
+      },
+      "right": {
+        "label": "Historien américain",
+        "text": "Environ 275 000 soldats de l’Axe capturés. Les historiens disent en général environ un quart de million."
+      }
+    },
+    {
+      "heading": "Pourquoi tant ?",
+      "text": "Les armées allemande et italienne de Tunisie étaient acculées à la mer. Avions et navires alliés coupaient leur ravitaillement et surveillaient la traversée vers la Sicile, à environ 145 km. Chars et canons furent abandonnés faute d’essence, et seules quelques centaines d’hommes s’enfuirent en bateau."
+    },
+    {
+      "question": "En mai 1943, pourquoi si peu de soldats allemands et italiens ont-ils pu quitter la Tunisie ?",
+      "options": [
+        "Navires et avions alliés veillaient",
+        "La Sicile était déjà aux Alliés",
+        "Une tempête fermait tous les ports",
+        "On leur avait promis une trêve"
+      ],
+      "explanation": "Les navires et avions alliés surveillaient la mer jusqu’à la Sicile, à environ 145 km, et seules quelques centaines d’hommes passèrent. Les Alliés n’ont débarqué en Sicile qu’en juillet 1943."
+    }
+  ],
+  "source": {
+    "label": "Musée du mémorial de l’Holocauste des États-Unis : la campagne de Tunisie"
+  }
+}
