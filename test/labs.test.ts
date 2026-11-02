@@ -193,6 +193,7 @@ import { canForm as bayForm, LAT_MIN as BAY_LAT, SHEAR_MAX as BAY_SHEAR, SST_MIN
 import { FLOOR as CLOCK_FLOOR, profile as clockProfile, readAge as clockRead, retained as clockRetained } from '../src/labs/body/blood-cells-epigenetic-clock';
 import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decafRemoved, soak as decafSoak } from '../src/labs/chemistry/decaf-coffee-caffeine-removal';
 import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX, MIN_STEP as ORZO_STEP, ORZO as ORZO_BAND, brownRate as orzoRate, dryMinutes as orzoDry, isOrzo, roastDegree as orzoRoast, waterLeft as orzoWater } from '../src/labs/chemistry/caffe-orzo-roasted-barley';
+import { GAP as KAS_GAP, REACH as KAS_REACH, covered as kasCovered, helped as kasHelped, holds as kasHolds, positions as kasPositions } from '../src/labs/history/kasserine-pass-1943';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1950,5 +1951,21 @@ describe('lab maths', () => {
     expect(isOrzo(ORZO_BAND[0])).toBe(true);
     expect(isOrzo(ORZO_BAND[1])).toBe(false);
     expect(ORZO_CAFFEINE).toBe(0);
+  });
+
+  it('kasserine: two positions can cover the gap only out of each other’s reach; three or four close together hold it', () => {
+    expect(KAS_GAP).toBe(4);
+    expect(KAS_REACH).toBe(1);
+    expect(kasPositions(3, 1)).toEqual([1, 2, 3]);
+    expect(kasCovered(2, 2)).toBe(true);
+    expect(kasHelped(2, 2)).toBe(0);
+    for (let s = 0.5; s <= 3.0001; s += 0.1) expect(kasHolds(2, Math.round(s * 10) / 10)).toBe(false);
+    expect(kasHolds(3, 1)).toBe(true);
+    expect(kasHolds(3, 0.9)).toBe(false);
+    expect(kasHolds(4, 0.7)).toBe(true);
+    expect(kasHolds(4, 0.6)).toBe(false);
+    expect(kasHolds(4, 1.1)).toBe(false);
+    expect(kasCovered(3, 2.5)).toBe(false);
+    expect(kasHelped(4, 1)).toBe(4);
   });
 });
