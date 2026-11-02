@@ -1,0 +1,165 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-mareth-line-museum-casemates",
+  "field": "engineering",
+  "title": "At Mareth you can see bunkers France built against Italy that the Axis held in 1943",
+  "emoji": "🧱",
+  "body": "The **Mareth Line Military Museum**, run by Tunisia’s defence ministry, stands on a hill above the Wadi Zigzaou near Mareth, between Gabès and Medenine, beside casemates of the line it explains. France, which then ruled Tunisia as a protectorate, built the **Mareth Line** from 1936 to 1940 against a possible attack from Italian Libya: some 40 to 50 km of defences (sources differ) from the sea to the Matmata hills, with 40 infantry casemates, 8 artillery casemates and 15 command posts. After France’s defeat in 1940 an Italian-German commission disarmed it; after the Allied landings of November 1942 the Axis rearmed it. In March 1943 Italian and German troops under General Giovanni Messe held it against Britain’s Eighth Army until it was outflanked through the Tebaga Gap to the west. Inside the museum are maps, photographs, uniforms and weapons found on the spot; outside, guns and command posts. On the hill, look south-east, toward Medenine and Libya: that is the way the line was built to face. Check opening times locally; the military museums sometimes open free on national holidays.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The Mareth Line, built by France in southern Tunisia from 1936, had how many infantry casemates (concrete bunkers)?",
+      "min": 0,
+      "max": 200,
+      "step": 1,
+      "answer": 40,
+      "explanation": "40 infantry casemates, plus 8 large artillery casemates and 15 command posts, along some 40 to 50 km behind the Wadi Zigzaou."
+    },
+    {
+      "type": "video",
+      "src": "mareth-museum.mp4",
+      "poster": "mareth-museum.jpg",
+      "alt": "Animation: a schematic map of southern Tunisia in sand and slate; the Mareth Line drawn from the sea to the Matmata hills behind the Wadi Zigzaou, with counts of casemates; 1940, 1942 and March 1943 in turn; a casemate in cross-section by the museum; a compass on the museum's hill.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Silver Flame” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 4
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "mareth-line-museum-casemates",
+      "prompt": "You stand on the Mareth Line museum’s hill. Turn the compass to face Mareth, Medenine, the Matmata hills at Toujane and Gabès.",
+      "takeaway": "Medenine, toward Libya, lies about 145°, south-east: the way the line was built to face. Gabès, behind it, is about 332°; Toujane, where it met the hills, about 220°."
+    },
+    {
+      "type": "timeline",
+      "heading": "One line, three armies",
+      "events": [
+        {
+          "when": "1936–1940",
+          "text": "France builds the line against Italian Libya"
+        },
+        {
+          "when": "1940",
+          "text": "After France’s defeat, it is disarmed"
+        },
+        {
+          "when": "Nov 1942",
+          "text": "Axis forces rearm it against the Allies"
+        },
+        {
+          "when": "Mar 1943",
+          "text": "The Eighth Army attacks, then outflanks it"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "heading": "On the spot",
+      "style": "bullets",
+      "items": [
+        "Inside: maps, photographs, uniforms, weapons found here",
+        "Outside: guns and command posts, and casemates nearby",
+        "Look south-east, toward Medenine: the way the line faced",
+        "Check opening times locally before you go"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "France built the Mareth Line in southern Tunisia in 1936–1940. Which attack was it meant to stop?",
+      "options": [
+        "An Italian attack from Libya",
+        "A British attack from Egypt",
+        "A German attack from the sea",
+        "An American landing"
+      ],
+      "answer": 0,
+      "explanation": "An attack from Italian Libya, to the south-east. In 1943 the same line was held by Italian and German troops against Britain’s Eighth Army."
+    }
+  ],
+  "tags": [
+    "mareth",
+    "museum",
+    "bunkers",
+    "gabes",
+    "fortification",
+    "visit"
+  ],
+  "source": {
+    "label": "La Presse: Histoire militaire tunisienne, quatre musées à découvrir",
+    "url": "https://www.lapresse.tn/?p=4321750"
+  },
+  "createdAt": "2026-11-02T11:01:20Z",
+  "theme": {
+    "gradient": [
+      "#1f2421",
+      "#6b5a3a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}

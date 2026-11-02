@@ -199,6 +199,7 @@ export const LABS = {
   'decaf-coffee-caffeine-removal': 'A toy model of decaffeination: soak green coffee beans in plain hot water, a green coffee extract (as in the Swiss Water Process) or a solvent, choose whether the caffeine is taken out of the liquid each round, and try to remove 97% of the caffeine while keeping the flavour in the beans.',
   'caffe-orzo-roasted-barley': 'Roast barley in a toy roaster: set the heat and the time, watch the grain dry and then brown, and aim for the dark brown of caffè d’orzo without burning it, while the caffeine stays at 0 mg at every setting.',
   'takrouna-maori-battalion-cliff': 'Step back from the edge of a cliff and watch its face and foot drop out of sight: the dead ground below a steep rock like Takrouna’s.',
+  'mareth-line-museum-casemates': 'Stand on the Mareth Line museum’s hill and turn a compass to face Mareth, Medenine, the Matmata hills and Gabès: which way the line looked.',
 } as const;
 
 export type LabId = keyof typeof LABS;

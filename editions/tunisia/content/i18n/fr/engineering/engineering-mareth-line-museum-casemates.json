@@ -1,0 +1,64 @@
+{
+  "id": "engineering-mareth-line-museum-casemates",
+  "title": "À Mareth, des blockhaus bâtis par la France contre l’Italie, tenus par l’Axe en 1943",
+  "body": "Le **musée militaire de la ligne Mareth**, géré par le ministère tunisien de la Défense, occupe une colline au-dessus de l’oued Zigzaou, près de Mareth, entre Gabès et Médenine, près de casemates de la ligne. La France, qui gouvernait alors la Tunisie, construit la **ligne Mareth** de 1936 à 1940 contre une possible attaque venue de la Libye italienne : 40 à 50 km de défenses selon les sources, de la mer aux monts de Matmata, avec 40 casemates d’infanterie, 8 casemates d’artillerie et 15 postes de commandement. Après la défaite française de 1940, une commission italo-allemande la désarme ; après le débarquement allié de novembre 1942, l’Axe la réarme. En mars 1943, Italiens et Allemands, sous les ordres du général Giovanni Messe, la tiennent face à la 8e armée britannique, jusqu’à ce qu’elle soit contournée par la trouée de Tebaga, à l’ouest. Le musée expose cartes, photographies, uniformes et armes trouvés sur place ; dehors, des canons et des postes de commandement. Sur la colline, regardez vers le sud-est, vers Médenine et la Libye : c’est de là qu’on attendait l’ennemi. Vérifiez les horaires sur place.",
+  "slides": [
+    {
+      "question": "Combien de casemates d’infanterie (blockhaus en béton) comptait la ligne Mareth, bâtie par la France à partir de 1936 ?",
+      "explanation": "40 casemates d’infanterie, plus 8 grandes casemates d’artillerie et 15 postes de commandement, sur 40 à 50 km derrière l’oued Zigzaou."
+    },
+    {
+      "alt": "Animation : une carte schématique du Sud tunisien, sable et ardoise, la ligne Mareth tracée de la mer aux monts de Matmata derrière l’oued Zigzaou, avec le nombre de casemates ; 1940, 1942 puis mars 1943 ; une casemate en coupe près du musée ; une boussole sur la colline du musée.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "mareth-museum-fr.mp4",
+      "poster": "mareth-museum-fr.jpg"
+    },
+    {
+      "prompt": "Tu es sur la colline du musée de la ligne Mareth. Tourne la boussole vers Mareth, Médenine, Toujane dans les monts de Matmata, et Gabès.",
+      "takeaway": "Médenine, vers la Libye, est à environ 145°, au sud-est : la direction que la ligne devait tenir. Gabès, derrière elle, est à environ 332° ; Toujane, où elle rejoignait les monts, à environ 220°."
+    },
+    {
+      "heading": "Une ligne, trois armées",
+      "events": [
+        {
+          "when": "1936–1940",
+          "text": "La France bâtit la ligne face à la Libye italienne"
+        },
+        {
+          "when": "1940",
+          "text": "Après la défaite française, elle est désarmée"
+        },
+        {
+          "when": "nov. 1942",
+          "text": "L’Axe la réarme contre les Alliés"
+        },
+        {
+          "when": "mars 1943",
+          "text": "La 8e armée l’attaque, puis la contourne"
+        }
+      ]
+    },
+    {
+      "heading": "Sur place",
+      "items": [
+        "À l’intérieur : cartes, photos, uniformes, armes trouvées ici",
+        "Dehors : canons et postes de commandement, casemates proches",
+        "Regardez au sud-est, vers Médenine : le front de la ligne",
+        "Vérifiez les horaires sur place avant de venir"
+      ]
+    },
+    {
+      "question": "La France a bâti la ligne Mareth dans le Sud tunisien en 1936–1940. Quelle attaque devait-elle arrêter ?",
+      "options": [
+        "Une attaque italienne depuis la Libye",
+        "Une attaque britannique depuis l’Égypte",
+        "Une attaque allemande par la mer",
+        "Un débarquement américain"
+      ],
+      "explanation": "Une attaque depuis la Libye italienne, au sud-est. En 1943, la même ligne fut tenue par des Italiens et des Allemands face à la 8e armée britannique."
+    }
+  ],
+  "source": {
+    "label": "La Presse (Tunis) : Histoire militaire tunisienne, quatre musées à découvrir"
+  }
+}
