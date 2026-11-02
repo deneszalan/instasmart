@@ -196,6 +196,7 @@ import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX,
 import { hookKm as marethHookKm, hookMiles as marethHookMiles, mainAttack as marethMain, SWITCH_DAY as MARETH_SWITCH } from '../src/labs/history/mareth-line-left-hook';
 import { matchesRecord as wahabRecord, riskFound as wahabRisk } from '../src/labs/politics/khaled-abdul-wahab-mahdia';
 import { kmBetween as pyleKm, PLACES as PYLE_PLACES, TOLERANCE_KM as PYLE_TOL, toleranceKm as pyleTolFor } from '../src/labs/literature/ernie-pyle-here-is-your-war';
+import { ITEMS as JASMIN_ITEMS, score as jasminScore, STRANDS as JASMIN_STRANDS } from '../src/labs/art/villa-jasmin-boughedir-moati';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1986,5 +1987,13 @@ describe('lab maths', () => {
     for (const a of PYLE_PLACES) for (const b of PYLE_PLACES) if (a !== b) expect(pyleKm(a.lat, a.lon, b.lat, b.lon)).toBeGreaterThan(PYLE_TOL);
     expect(pyleTolFor(2)).toBe(PYLE_TOL);
     expect(pyleTolFor(0.4)).toBeCloseTo(60, 9);
+  });
+  it('villa jasmin: nine cards, three in each strand, scored against their strand', () => {
+    expect(JASMIN_ITEMS).toHaveLength(9);
+    for (const s of JASMIN_STRANDS) expect(JASMIN_ITEMS.filter((it) => it.strand === s)).toHaveLength(3);
+    const all = Object.fromEntries(JASMIN_ITEMS.map((it) => [it.id, it.strand]));
+    expect(jasminScore(all)).toBe(9);
+    expect(jasminScore({})).toBe(0);
+    expect(jasminScore({ ...all, boccara: 'history' })).toBe(8);
   });
 });
