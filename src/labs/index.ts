@@ -197,4 +197,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'bay-of-bengal-cyclone-season': lazy(() => import('./earth/bay-of-bengal-cyclone-season')),
   'blood-cells-epigenetic-clock': lazy(() => import('./body/blood-cells-epigenetic-clock')),
   'decaf-coffee-caffeine-removal': lazy(() => import('./chemistry/decaf-coffee-caffeine-removal')),
+  'caffe-orzo-roasted-barley': lazy(() => import('./chemistry/caffe-orzo-roasted-barley')),
 };

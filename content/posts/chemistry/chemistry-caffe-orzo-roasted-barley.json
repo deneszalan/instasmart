@@ -1,0 +1,192 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "chemistry-caffe-orzo-roasted-barley",
+  "field": "chemistry",
+  "title": "Caffè d’orzo is just roasted barley: the roast makes coffee-like aromas, but no caffeine",
+  "emoji": "🌾",
+  "body": "Caffè d’orzo is barley, *Hordeum vulgare*, roasted dark, ground and brewed like espresso; *orzo* is simply Italian for barley. Roasting does to the grain what it does to coffee beans: once its water has steamed off, sugars react with amino acids in the Maillard reaction, the reaction that browns food, and caramelise, making brown melanoidins and dozens of aroma molecules. In a [cereal coffee whose aroma comes mainly from roasted barley](https://pubmed.ncbi.nlm.nih.gov/23414530/), the strongest odorant was 2-furfurylthiol, also a key aroma of coffee. No roast can make caffeine, which barley never had: decaf keeps 2 to 15 mg a cup, says the US Food and Drug Administration, but orzo has none. It took hold in Italy in the late 1930s, when Fascist Italy’s drive for self-sufficiency, spurred by League of Nations sanctions in 1935, rationed imports and made coffee dear, [writes historian Tito Menzani](https://e-review.it/sites/default/images/articles/media/325/menzani_caffe.pdf). Two caveats: roasted cereals form [acrylamide](https://www.efsa.europa.eu/en/topics/topic/acrylamide), as roasted coffee does, and barley contains gluten.",
+  "slides": [
+    {
+      "type": "quiz",
+      "question": "Caffè d’orzo has no coffee in it. So why does roasted barley smell so much like coffee?",
+      "options": [
+        "Barley grains hold coffee oils",
+        "Roasting makes similar molecules",
+        "Barley and coffee are related plants",
+        "It is sprayed with coffee aroma"
+      ],
+      "answer": 1,
+      "explanation": "In both, heat makes sugars react with amino acids (the Maillard reaction) and sugars caramelise. A barley cereal coffee’s strongest odorant, 2-furfurylthiol, is a key coffee aroma too."
+    },
+    {
+      "type": "video",
+      "src": "orzo.mp4",
+      "poster": "orzo.jpg",
+      "alt": "Animation on green terrazzo: a cup of un orzo; hordeum becomes orzo, barley. A raw grain is 60% starch, 12% protein, 3% sugars; a roaster dries it, then sugars and amino acids brown it. 2-furfurylthiol links barley and coffee; decaf 2–15 mg, orzo 0 mg; 1935 sanctions; acrylamide, gluten.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Reckon · original animation · AI narration",
+      "music": "“Carefree” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 4
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "caffe-orzo-roasted-barley",
+      "prompt": "Roast the barley dark brown, like orzo, without burning it.",
+      "takeaway": "Browning starts once the grain is dry and speeds up with heat: hot roasts burn fast. Caffeine stayed at 0 mg."
+    },
+    {
+      "type": "text",
+      "heading": "Orzo means barley",
+      "text": "*Orzo* is the Italian word for barley, from the Latin *hordeum*; the plant is *Hordeum vulgare*. English uses the word for a small, rice-shaped pasta, a use first known from 1917, says Merriam-Webster. In an Italian bar, “un orzo” is the drink, and it can be ordered in all the ways an espresso can."
+    },
+    {
+      "type": "timeline",
+      "heading": "Orzo for coffee in Italy",
+      "events": [
+        {
+          "when": "1935",
+          "text": "League of Nations sanctions over Ethiopia, from 18 November"
+        },
+        {
+          "when": "Late 1930s",
+          "text": "Autarky rations imports; orzo and chicory spread"
+        },
+        {
+          "when": "1945",
+          "text": "After Italy’s liberation, chicory coffee is soon dropped"
+        },
+        {
+          "when": "Postwar",
+          "text": "Orzo stays on, stirred into children’s breakfast milk"
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "heading": "Acrylamide, which forms in roasting: EU benchmark levels",
+      "items": [
+        {
+          "label": "Roast coffee",
+          "value": 400
+        },
+        {
+          "label": "Cereal coffee substitutes",
+          "value": 500,
+          "emphasis": true
+        },
+        {
+          "label": "Instant coffee",
+          "value": 850
+        },
+        {
+          "label": "Chicory coffee substitutes",
+          "value": 4000
+        }
+      ],
+      "unit": "µg/kg",
+      "note": "Regulation (EU) 2017/2158: performance targets for producers, not legal limits."
+    },
+    {
+      "type": "text",
+      "heading": "Not for people with coeliac disease",
+      "text": "Barley is one of the grains that contain gluten. The Associazione Italiana Celiachia, Italy’s coeliac association, lists barley among the grains people with coeliac disease must avoid, and says coffee is fine for them as long as it isn’t orzo."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did caffè d’orzo take hold in Italy in the late 1930s?",
+      "options": [
+        "A new law banned espresso machines",
+        "Barley prices fell after big harvests",
+        "Imports were rationed; coffee grew dear",
+        "Coffee harvests failed in Brazil"
+      ],
+      "answer": 2,
+      "explanation": "After League of Nations sanctions in 1935, Fascist Italy’s drive for self-sufficiency, autarchia, rationed imports and pushed up the price of coffee; barley and chicory substitutes took hold."
+    }
+  ],
+  "tags": [
+    "coffee",
+    "barley",
+    "caffeine",
+    "roasting",
+    "italy",
+    "food"
+  ],
+  "source": {
+    "label": "Majcher et al., Journal of Agricultural and Food Chemistry (2013): aroma compounds of cereal coffee",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23414530/"
+  },
+  "theme": {
+    "gradient": [
+      "#16413a",
+      "#4a2a16"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-10-31T17:40:00Z"
+}
