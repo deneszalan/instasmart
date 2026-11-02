@@ -200,6 +200,7 @@ export const LABS = {
   'caffe-orzo-roasted-barley': 'Roast barley in a toy roaster: set the heat and the time, watch the grain dry and then brown, and aim for the dark brown of caffè d’orzo without burning it, while the caffeine stays at 0 mg at every setting.',
   'kasserine-pass-1943': 'A toy model of mutual support from the Battle of Kasserine Pass: set how many positions hold a gap between two ridges and how far apart they stand, and find a layout where the whole gap is watched and every position is within reach of a neighbour that can help it.',
   'moncef-bey-deposed-1943': 'Slide month by month from June 1942 to September 1948 through the reign and exile of Moncef Bey, the Bey of Tunis: see where he was, who held Tunis, and his days on the throne against his days in exile, and find the month the French deposed him.',
+  'keith-douglas-alamein-to-zem-zem': 'A reading map for Keith Douglas, the British poet and tank officer: place El Alamein, Wadi Zem Zem, Tunisia and Tilly-sur-Seulles on a schematic map and see what he did and wrote at each, from his memoir Alamein to Zem Zem to the poems dated Tunisia 1943.',
 } as const;
 
 export type LabId = keyof typeof LABS;

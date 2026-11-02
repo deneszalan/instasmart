@@ -195,6 +195,7 @@ import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decaf
 import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX, MIN_STEP as ORZO_STEP, ORZO as ORZO_BAND, brownRate as orzoRate, dryMinutes as orzoDry, isOrzo, roastDegree as orzoRoast, waterLeft as orzoWater } from '../src/labs/chemistry/caffe-orzo-roasted-barley';
 import { GAP as KAS_GAP, REACH as KAS_REACH, covered as kasCovered, helped as kasHelped, holds as kasHolds, positions as kasPositions } from '../src/labs/history/kasserine-pass-1943';
 import { DEPOSED_MONTH as MON_DEPOSED, LAST_MONTH as MON_LAST, daysInExile as monExile, daysOnThrone as monThrone, monthOf as monMonth, powerAt as monPower, whereAt as monWhere } from '../src/labs/politics/moncef-bey-deposed-1943';
+import { ORDER as KD_ORDER, SPOTS as KD_SPOTS, africa as kdAfrica, hits as kdHits, inset as kdInset } from '../src/labs/literature/keith-douglas-alamein-to-zem-zem';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1986,5 +1987,17 @@ describe('lab maths', () => {
     expect(monWhere(39)).toBe('algeria');
     expect(monWhere(40)).toBe('pau');
     expect([monPower(4), monPower(5), monPower(10), monPower(11)]).toEqual(['vichy', 'axis', 'axis', 'restored']);
+  });
+  it('keith douglas: each place is found where it is, the memoir runs west from El Alamein to Wadi Zem Zem, Normandy sits in the inset', () => {
+    const w = 360, h = 220;
+    for (const id of KD_ORDER) expect(kdHits(id, KD_SPOTS[id].u * w, KD_SPOTS[id].v * h, w, h)).toBe(true);
+    expect(kdHits('alamein', KD_SPOTS.zemzem.u * w, KD_SPOTS.zemzem.v * h, w, h)).toBe(false);
+    expect(kdHits('tunisia', KD_SPOTS.zemzem.u * w, KD_SPOTS.zemzem.v * h, w, h)).toBe(false);
+    expect(KD_SPOTS.alamein.u).toBeGreaterThan(KD_SPOTS.zemzem.u);
+    expect(KD_SPOTS.zemzem.u).toBeGreaterThan(KD_SPOTS.tunisia.u);
+    expect(KD_SPOTS.tilly.v).toBeLessThan(0.4);
+    for (const id of ['alamein', 'zemzem', 'tunisia'] as const) expect(KD_SPOTS[id].v).toBeGreaterThan(0.42);
+    expect(kdAfrica(8, 37.6)).toEqual({ u: 0.04, v: 0.42 });
+    expect(kdInset(-2, 51)).toEqual({ u: 0.04, v: 0.06 });
   });
 });
