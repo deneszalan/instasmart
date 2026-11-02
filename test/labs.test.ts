@@ -193,6 +193,7 @@ import { canForm as bayForm, LAT_MIN as BAY_LAT, SHEAR_MAX as BAY_SHEAR, SST_MIN
 import { FLOOR as CLOCK_FLOOR, profile as clockProfile, readAge as clockRead, retained as clockRetained } from '../src/labs/body/blood-cells-epigenetic-clock';
 import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decafRemoved, soak as decafSoak } from '../src/labs/chemistry/decaf-coffee-caffeine-removal';
 import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX, MIN_STEP as ORZO_STEP, ORZO as ORZO_BAND, brownRate as orzoRate, dryMinutes as orzoDry, isOrzo, roastDegree as orzoRoast, waterLeft as orzoWater } from '../src/labs/chemistry/caffe-orzo-roasted-barley';
+import { along as raceAlong, DJEDEIDA_AT as RACE_DJEDEIDA, miles as raceMiles, nearest as raceNearest, PLACES as RACE_PLACES, ROUTE_LENGTH as RACE_LENGTH, FIELDS as RACE_FIELDS } from '../src/labs/history/race-for-tunis-1942';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1950,5 +1951,21 @@ describe('lab maths', () => {
     expect(isOrzo(ORZO_BAND[0])).toBe(true);
     expect(isOrzo(ORZO_BAND[1])).toBe(false);
     expect(ORZO_CAFFEINE).toBe(0);
+  });
+  it('race for Tunis: the airfields sit where Howe puts them, Djedeida is about 13 miles from Tunis, and rain leaves only Bône to the Allies', () => {
+    const field = (id: string) => RACE_FIELDS.find((f) => f.id === id)!.at;
+    expect(raceMiles(field('souk'), RACE_PLACES.tunis)).toBeCloseTo(80, -1);
+    expect(Math.abs(raceMiles(field('bone'), RACE_PLACES.tunis) - 135)).toBeLessThan(5);
+    expect(Math.abs(raceMiles(field('youks'), RACE_PLACES.tunis) - 155)).toBeLessThan(5);
+    expect(Math.round(raceMiles(RACE_PLACES.djedeida, RACE_PLACES.tunis))).toBe(13);
+    expect(raceAlong(0)).toEqual(RACE_PLACES.souk);
+    expect(raceMiles(raceAlong(RACE_LENGTH), RACE_PLACES.tunis)).toBeLessThan(0.01);
+    expect(raceMiles(raceAlong(RACE_DJEDEIDA), RACE_PLACES.djedeida)).toBeLessThan(0.01);
+    const p = raceAlong(Math.round(RACE_DJEDEIDA));
+    expect(raceNearest(p, 'axis', false).field.id).toBe('aouina');
+    expect(raceNearest(p, 'allied', false).field.id).toBe('souk');
+    expect(raceNearest(p, 'allied', true).field.id).toBe('bone');
+    expect(raceNearest(p, 'allied', true).mi).toBeGreaterThan(5 * raceNearest(p, 'axis', true).mi);
+    expect(raceNearest(raceAlong(0), 'allied', false).mi).toBe(0);
   });
 });

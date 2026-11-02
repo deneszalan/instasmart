@@ -249,4 +249,13 @@ export const fr: Record<string, string> = {
   'Offline mode': 'Mode hors connexion',
   'Show only the saved posts, so everything you open works without internet.': 'N’afficher que les publications enregistrées, pour que tout ce que tu ouvres fonctionne hors connexion.',
   'On iPhone or iPad, first add {name} to your Home Screen (Share, then Add to Home Screen) and save from there: iOS keeps saved posts only for Home Screen apps.': 'Sur iPhone ou iPad, ajoute d’abord {name} à l’écran d’accueil (Partager, puis «\u00a0Sur l’écran d’accueil\u00a0») et enregistre depuis cette app\u00a0: iOS ne conserve les publications enregistrées que pour les apps de l’écran d’accueil.',
+  '{mi} mi · {km} km': '{km} km · {mi} milles',
+  'Map of northern Tunisia: the Allied spearhead is {d} along the road from Souk el Arba, {tunis} from Tunis': 'Carte du nord de la Tunisie : la pointe alliée est à {d} de Souk el Arba par la route, à {tunis} de Tunis',
+  '{mi} mi': '{mi} milles',
+  'Miles from Souk el Arba': 'Milles depuis Souk el Arba',
+  'Weather over the airfields': 'Temps sur les aérodromes',
+  'Dry weather': 'Temps sec',
+  'Winter rain': 'Pluies d’hiver',
+  'Tunis {a} mi · Axis airfield {b} mi · Allied airfield in use {c} mi': 'Tunis à {a} mi · aérodrome de l’Axe à {b} mi · aérodrome allié utilisable à {c} mi',
+  'Schematic; straight-line distances; 1 mi = 1.6 km.': 'Schéma ; distances à vol d’oiseau ; 1 mi = 1,6 km.',
 };

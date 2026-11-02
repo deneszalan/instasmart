@@ -1,0 +1,176 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-race-for-tunis-1942",
+  "field": "history",
+  "title": "The Allies landed in North Africa in 1942 to take Tunis in weeks. It took six months",
+  "emoji": "🗺️",
+  "body": "On 8 November 1942, in **Operation Torch**, about 125,000 American and British soldiers, sailors and airmen landed in Morocco and Algeria. The real prize lay east: Tunisia, a French protectorate under the Bey of Tunis, whose ports of Tunis and Bizerte face Sicily. The Axis moved faster. From 9 November German planes landed at El Aouina, by Tunis, and by mid-November about 15,000 German and 9,000 Italian troops held the two ports. The Allies came overland from Algiers, some 400 miles, and French troops, North African riflemen among them, fought beside British and American units. On 28 November they reached Djedeida, 13 miles from Tunis, and got no closer. Axis fighters flew several missions a day from hard airfields by Tunis; Allied squadrons on distant dirt fields often managed one, and rain turned those fields to mud. After a failed attack on Longstop Hill, Eisenhower called a halt on 24 December, and the fight for Tunisia lasted until 13 May 1943. Figures from the US Army's [campaign history](https://archive.org/details/TunisiaCmh72-12) and its [official history](https://archive.org/details/NorthwestAfrica-nsia) of the landings and the race.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "After landing in Algeria on 8 November 1942, the Allies dashed east for Tunis. How many miles from Tunis did they get?",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "answer": 13,
+      "unit": "miles",
+      "explanation": "13 miles: on 28 November they reached Djedeida, west of Tunis, and were stopped there. By 10 December German counter-attacks had pushed them back to Medjez el Bab."
+    },
+    {
+      "type": "video",
+      "src": "race-for-tunis.mp4",
+      "poster": "race-for-tunis.jpg",
+      "alt": "Animation on a dark schematic map: amber arrows land at Casablanca, Oran and Algiers on 8 November 1942, lavender planes fly from Sicily to Tunis, and amber arrows push east to Djedeida, 13 miles from Tunis. Then airfields near and far, rain, the front pushed back and a calendar to May 1943.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Lightless Dawn” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "race-for-tunis-1942",
+      "prompt": "Push the Allied spearhead east to Djedeida, where it stopped on 28 November 1942, then switch on the winter rain. Whose airfields are closer?",
+      "takeaway": "At Djedeida, about 13 miles from Tunis, the Axis field at El Aouina was some 17 miles away and the nearest Allied one, Souk el Arba, 68. In rain only Bône’s could fly, about 120 miles off."
+    },
+    {
+      "type": "timeline",
+      "heading": "The race for Tunis",
+      "events": [
+        {
+          "when": "8 Nov 1942",
+          "text": "Torch landings at Casablanca, Oran, Algiers"
+        },
+        {
+          "when": "9 Nov",
+          "text": "German planes land at El Aouina, by Tunis"
+        },
+        {
+          "when": "28 Nov",
+          "text": "Allies stopped 13 miles from Tunis"
+        },
+        {
+          "when": "24 Dec",
+          "text": "Eisenhower halts the advance"
+        },
+        {
+          "when": "13 May 1943",
+          "text": "Axis forces in Tunisia surrender"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Why the Axis won the race",
+      "left": {
+        "label": "Axis",
+        "text": "Hard airfields by Tunis and Bizerte, so fighters flew several missions a day. Troops came by air and sea from Sicily."
+      },
+      "right": {
+        "label": "Allies",
+        "text": "Fields 80 to 155 miles from Tunis, mud in the rain, often one mission a day. Trains from Algiers took four to six days."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Not only British and Americans",
+      "text": "Tunisia was a French protectorate, and French troops there, under General Georges Barré, turned against the Germans. On 19 November they fought them at Medjez el Bab. Their units included European zouaves and North African riflemen, the tirailleurs."
+    },
+    {
+      "type": "quiz",
+      "question": "In November 1942 German fighters flew several missions a day over the Tunisian front, Allied ones often just one. What was the main reason?",
+      "options": [
+        "Their airfields were by Tunis",
+        "They had far more pilots",
+        "They flew only at night",
+        "Their planes carried more fuel"
+      ],
+      "answer": 0,
+      "explanation": "Distance. Axis squadrons flew from hard airfields at Tunis and Bizerte, close to the front; Allied fields were 80 to 155 miles away, and rain closed most of them."
+    }
+  ],
+  "tags": [
+    "tunisia",
+    "torch",
+    "tunis",
+    "airfields",
+    "1942",
+    "campaign"
+  ],
+  "source": {
+    "label": "US Army Center of Military History: Tunisia, 17 November 1942–13 May 1943",
+    "url": "https://archive.org/details/TunisiaCmh72-12"
+  },
+  "theme": {
+    "gradient": [
+      "#13212a",
+      "#4a5a3a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T10:40:43Z"
+}

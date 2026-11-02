@@ -2611,4 +2611,13 @@ export const de: Record<string, string> = {
   'still drying': 'trocknet noch',
   'rich, roasty': 'kräftig, röstig',
   'Toy model: the grain dries, then browns from 120 °C, twice as fast every 10 °C hotter.': 'Spielzeugmodell: Das Korn trocknet, dann bräunt es ab 120 °C, alle 10 °C heißer doppelt so schnell.',
+  '{mi} mi · {km} km': '{mi} Meilen · {km} km',
+  'Map of northern Tunisia: the Allied spearhead is {d} along the road from Souk el Arba, {tunis} from Tunis': 'Karte Nordtunesiens: Die alliierte Spitze ist {d} auf der Straße von Souk el Arba entfernt, {tunis} von Tunis',
+  '{mi} mi': '{mi} Meilen',
+  'Miles from Souk el Arba': 'Meilen ab Souk el Arba',
+  'Weather over the airfields': 'Wetter über den Flugplätzen',
+  'Dry weather': 'Trocken',
+  'Winter rain': 'Winterregen',
+  'Tunis {a} mi · Axis airfield {b} mi · Allied airfield in use {c} mi': 'Tunis {a} Meilen · Flugplatz der Achse {b} Meilen · nutzbarer alliierter Flugplatz {c} Meilen',
+  'Schematic; straight-line distances; 1 mi = 1.6 km.': 'Schematisch; Luftlinien; 1 Meile = 1,6 km.',
 };
