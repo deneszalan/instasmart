@@ -8,6 +8,11 @@
 //   npm run explainer -- <post-id> --name <name> --narration speech.wav [--music-gap 12]
 //                                                          mix a spoken track over the clip's music
 //   [--edition lesefutter]                                   for a post in another edition that isn't written yet
+//   npm run explainer -- <post-id> --lang fr --name <name>-fr [--keep-sound] [--still <s>]
+//                                                          the clip in another language: captions and labels from
+//                                                          explainers/i18n/<lang>/<post-id>.json (see explainers/README.md);
+//                                                          also works with --preview and --srt. Points the post's translation
+//                                                          (content/i18n/<lang>/…) at the new clip; the post itself is untouched
 //
 // The clip's steps are the scene's captions; they are written into the post's slide for this clip,
 // and keyframes sit where the player jumps to, so jumping is instant. --preview and --still take
@@ -131,6 +136,28 @@ function writeSteps(file: string, steps: Step[], src?: string): string {
   return file.slice(root.length + 1);
 }
 
+/** How each language writes numbers in a scene (Kit's fmt). */
+const LOCALES: Record<string, string> = { de: 'de-DE', fr: 'fr-FR' };
+
+/**
+ * Point the post's translation into `lang` at a clip made in that language: its video slide (the one whose
+ * steps match) gets the clip's src and poster. Says what it did, or what to do when there's no translation yet.
+ */
+function pointTranslation(postFile: string, lang: string, steps: Step[], src: string, poster: string): string {
+  const post = JSON.parse(readFileSync(postFile, 'utf8')) as { field: string; id: string; slides?: { type: string; animation?: boolean; steps?: Step[] }[] };
+  const at = post.slides?.findIndex((s) => s.type === 'video' && s.animation) ?? -1;
+  const own = at >= 0 ? post.slides![at].steps ?? [] : [];
+  const same = own.length === steps.length && own.every((s, i) => Math.abs(s.start - steps[i].start) < 0.02 && Math.abs(s.end - steps[i].end) < 0.02);
+  if (!same) return `The ${lang} captions are timed differently from the post's steps; re-render the English clip or check the scene.`;
+  const trFile = postFile.replace(/content\/posts\/[^/]+\/[^/]+\.json$/, `content/i18n/${lang}/${post.field}/${post.id}.json`);
+  if (!existsSync(trFile)) return `No translation yet: in ${shown(trFile)}, give slide ${at + 1} "src": "${src}" and "poster": "${poster}".`;
+  const tr = JSON.parse(readFileSync(trFile, 'utf8')) as { slides?: Record<string, unknown>[] };
+  if (!tr.slides || tr.slides.length !== post.slides!.length) return `${shown(trFile)} has no slides list like the post's; give slide ${at + 1} "src": "${src}" and "poster": "${poster}".`;
+  tr.slides[at] = { ...tr.slides[at], src, poster };
+  writeFileSync(trFile, `${JSON.stringify(tr, null, 2)}\n`);
+  return `${shown(trFile)}: slide ${at + 1} now plays ${src}`;
+}
+
 /** Captions as an SRT file: numbered cues, `HH:MM:SS,mmm --> HH:MM:SS,mmm`, a blank line between. */
 function srt(cues: { start: number; end: number; text: string }[]): string {
   const time = (s: number) => {
@@ -201,6 +228,7 @@ async function main(): Promise<number> {
       narration: { type: 'string' },
       'music-gap': { type: 'string', default: '12' },
       edition: { type: 'string' },
+      lang: { type: 'string' },
     },
   });
   const post = positionals[0];
@@ -229,6 +257,32 @@ async function main(): Promise<number> {
     // Kit loads a font named in the scene from the library's files.
     const fonts = Object.fromEntries(Object.entries(catalog).map(([name, f]) => [name, { files: f.files.map(({ file, weight, style }) => ({ file, weight, style })) }]));
     await page.addInitScript({ content: `window.FONTS = ${JSON.stringify(fonts)};` });
+    // Another language: the scene's captions and labels come from its translation (see Kit's tr()).
+    const lang = values.lang;
+    if (lang) {
+      const file = join(root, 'explainers', 'i18n', lang, `${post}.json`);
+      if (!existsSync(file)) throw new Error(`--lang ${lang}: write ${shown(file)} first ({ "captions": [...], "labels": {...} })`);
+      const tr = JSON.parse(readFileSync(file, 'utf8')) as Record<string, unknown>;
+      await page.addInitScript({ content: `window.TR = ${JSON.stringify({ ...tr, locale: LOCALES[lang] ?? lang })};` });
+    }
+    /** In another language, what the scene drew that its translation doesn't cover; the caption counts must match too. */
+    const translationGaps = async (): Promise<boolean> => {
+      if (!lang) return true;
+      const missing = (await page.evaluate('window.__untranslated()')) as string[];
+      const file = JSON.parse(readFileSync(join(root, 'explainers', 'i18n', lang, `${post}.json`), 'utf8')) as { captions?: unknown[] };
+      const seen = Number(await page.evaluate('window.__captionCount()'));
+      let ok = true;
+      if ((file.captions?.length ?? 0) !== seen) {
+        console.error(`The scene has ${seen} captions, the ${lang} file ${file.captions?.length ?? 0}: give one per caption, in order.`);
+        ok = false;
+      }
+      if (missing.length) {
+        console.error(`Drawn in English, with no "labels" entry in explainers/i18n/${lang}/${post}.json (a name that stays the same can map to itself):`);
+        for (const s of missing) console.error(`  ${JSON.stringify(s)}`);
+        ok = false;
+      }
+      return ok;
+    };
     await page.goto(`${pathToFileURL(join(root, 'explainers', 'page.html')).href}?scene=${post}`);
     // The page code runs in the browser, so it is passed as strings (scripts/ has no DOM types).
     await page.waitForFunction('"ready" in window');
@@ -294,7 +348,8 @@ async function main(): Promise<number> {
       for (const t of values.preview.split(',').map(Number)) writeFileSync(join(dir, `t${t}.png`), await frame(t));
       fail();
       console.log(`Stills written to ${dir}`);
-      return reportGlyphs(await glyphCheck(page)) ? 0 : 1;
+      const glyphs = reportGlyphs(await glyphCheck(page));
+      return (await translationGaps()) && glyphs ? 0 : 1;
     }
 
     // Draw every frame into a near-lossless master, then encode the clip from it,
@@ -313,6 +368,7 @@ async function main(): Promise<number> {
     fail();
     // Every frame has been drawn, so every character is known: none may be missing from all fonts.
     if (!reportGlyphs(await glyphCheck(page))) return 1;
+    if (!(await translationGaps())) return 1;
 
     const dir = home.media;
     mkdirSync(dir, { recursive: true });
@@ -362,6 +418,11 @@ async function main(): Promise<number> {
     if (problems.length) {
       console.error(`\n${problems.join('\n')}`);
       return 1;
+    }
+    if (lang) {
+      // The clip has the English one's steps (the same captions at the same times); the translation points at it.
+      console.log(pointTranslation(home.file, lang, steps, `${name}.mp4`, `${name}.jpg`));
+      return 0;
     }
     try {
       console.log(`${steps.length} steps written to ${writeSteps(home.file, steps, `${name}.mp4`)}`);

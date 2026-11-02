@@ -188,3 +188,23 @@ describe('validateContent', () => {
     ]);
   });
 });
+
+describe('films', () => {
+  const JPG = new Uint8Array([0xff, 0xd8, 0xff, 0xe0, 0, 0x10, 0x4a, 0x46, 0x49, 0x46, 0, 0]);
+  const check = (...paths: string[]) =>
+    validateContent([file('content/posts/space/space-test-post.json', JSON.stringify(post())), ...paths.map((p) => file(p, p.endsWith('.jpg') ? JPG : enc('not a video')))], ['space', 'history'], ['fr'])
+      .problems.map((p) => [p.file.replace('content/media/films/', ''), p.message.split(';')[0].split(':')[0]]);
+  it('live in content/media/films/, named after a field of the app and a language it offers', () => {
+    expect(check('content/media/films/history.jpg', 'content/media/films/space-fr.jpg')).toEqual([]);
+    expect(check('content/media/films/music.jpg', 'content/media/films/history-de.jpg', 'content/media/films/history-trailer.jpg').map(([f]) => f)).toEqual([
+      'music.jpg',
+      'history-de.jpg',
+      'history-trailer.jpg',
+    ]);
+  });
+  it('are checked as films, each with its still', () => {
+    const problems = check('content/media/films/history.mp4');
+    expect(problems.map(([f]) => f)).toEqual(['history.mp4', 'history.mp4']);
+    expect(problems[1][1]).toBe('add its still at content/media/films/history.jpg');
+  });
+});

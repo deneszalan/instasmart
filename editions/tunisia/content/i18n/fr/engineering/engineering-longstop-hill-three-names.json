@@ -1,0 +1,65 @@
+{
+  "id": "engineering-longstop-hill-three-names",
+  "title": "Près de Medjez el Bab, une même crête porte trois noms : tunisien, britannique et allemand",
+  "body": "Au nord de Medjez el Bab, à environ 48 km de Tunis, une crête à deux sommets, le **djebel el Ahmera** et le djebel Rhar, domine la vallée de la Medjerda. Les soldats britanniques l’appelèrent **Longstop Hill**, d’après un poste du cricket, loin derrière le gardien de guichet ; c’était le dernier grand obstacle naturel sur la route de Tunis, et les Allemands le tenaient. Dans la nuit du 22 au 23 décembre 1942, sous une forte pluie, les Coldstream Guards s’en emparent ; les Américains du 18e d’infanterie qui les relèvent sont chassés du djebel el Ahmera, et le jour de Noël une contre-attaque chasse à nouveau les Guards. Les Allemands l’appelèrent **der Weihnachtsberg**, la montagne de Noël, et la poussée alliée vers Tunis s’arrêta pour des mois. En avril 1943, la 78e division britannique attaque à nouveau : les Argyll and Sutherland Highlanders prennent le djebel el Ahmera, et le commandant John Anderson, qui les mène après la mort de leur chef, reçoit la croix de Victoria. Le 26 avril, un char Churchill atteint le sommet et les combats cessent dans la matinée. Aujourd’hui, on voit la crête depuis la route au nord de Medjez el Bab ; renseignez-vous sur place avant d’y monter.",
+  "slides": [
+    {
+      "question": "Prise en décembre 1942 puis perdue, Longstop Hill fut reprise pour de bon combien de mois plus tard ?",
+      "unit": "mois",
+      "explanation": "Environ quatre : de Noël 1942 à la fin d’avril 1943, quand la 78e division prit les deux sommets. Tunis tomba deux semaines plus tard, le 7 mai."
+    },
+    {
+      "alt": "Animation : une crête à deux sommets au-dessus d’une route et d’une rivière, en plan puis de profil. Un terrain de cricket vu d’en haut montre le long stop. Flèches pour décembre 1942 sous la pluie ; vert printanier et chars pour avril 1943 ; trois cartes de noms.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "longstop-fr.mp4",
+      "poster": "longstop-fr.jpg"
+    },
+    {
+      "prompt": "Les soldats britanniques ont donné à la colline le nom d’un joueur de cricket. Place le joueur au poste de long stop.",
+      "takeaway": "Dans l’axe, derrière le gardien de guichet, vers la limite du terrain : le dernier joueur, là pour arrêter les balles qui passent. Longstop Hill était le dernier grand obstacle naturel sur la route de Tunis."
+    },
+    {
+      "heading": "Sur place",
+      "items": [
+        "Deux sommets : le djebel Rhar, le plus haut, et le djebel el Ahmera",
+        "En contrebas, la route et la vallée de la Medjerda vers Tunis",
+        "Le cimetière militaire du Commonwealth de Medjez el Bab, tout proche",
+        "Renseignez-vous sur place avant de monter sur la colline"
+      ]
+    },
+    {
+      "heading": "Longstop Hill",
+      "events": [
+        {
+          "when": "22–23 déc. 1942",
+          "text": "Les Coldstream Guards la prennent sous la pluie"
+        },
+        {
+          "when": "25 déc. 1942",
+          "text": "Une contre-attaque allemande les en chasse"
+        },
+        {
+          "when": "fin avr. 1943",
+          "text": "La 78e division prend les deux sommets"
+        },
+        {
+          "when": "7 mai 1943",
+          "text": "Tunis tombe aux mains des Alliés"
+        }
+      ]
+    },
+    {
+      "question": "Des soldats britanniques ont baptisé une crête près de Medjez el Bab « Longstop Hill ». D’où vient ce nom ?",
+      "options": [
+        "D’un poste au cricket",
+        "D’un signal ferroviaire",
+        "D’une tactique de football",
+        "D’une borne milliaire romaine"
+      ],
+      "explanation": "Au cricket, le long stop se tient loin derrière le gardien de guichet pour arrêter les balles qui passent. La crête était le dernier grand obstacle naturel sur la route de Tunis."
+    }
+  ],
+  "source": {
+    "label": "Wikipédia (en anglais) : Battle of Longstop Hill"
+  }
+}

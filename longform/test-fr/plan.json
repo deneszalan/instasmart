@@ -1,0 +1,41 @@
+{
+ "duration": 45.85,
+ "lines": [
+  {
+   "key": "o1",
+   "start": 1,
+   "natural": 2.83,
+   "measured": 1
+  },
+  {
+   "key": "o2",
+   "start": 4.4,
+   "natural": 4.25,
+   "measured": 31
+  },
+  {
+   "key": "a1",
+   "start": 15.97,
+   "natural": 4.47,
+   "measured": 61
+  },
+  {
+   "key": "a2",
+   "start": 21.01,
+   "natural": 4.15,
+   "measured": 91
+  },
+  {
+   "key": "b1",
+   "start": 30.48,
+   "natural": 4.88,
+   "measured": 121
+  },
+  {
+   "key": "b2",
+   "start": 35.93,
+   "natural": 2.8,
+   "measured": 151
+  }
+ ]
+}

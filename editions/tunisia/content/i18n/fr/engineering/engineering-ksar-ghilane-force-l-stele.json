@@ -1,0 +1,65 @@
+{
+  "id": "engineering-ksar-ghilane-force-l-stele",
+  "title": "À Ksar Ghilane, une stèle rappelle les Français libres venus du Tchad, mars 1943",
+  "body": "**Ksar Ghilane** est une oasis au bord oriental du Grand Erg oriental, la mer de dunes tunisienne, reliée par une route goudronnée à Douz, à 80 km au nord. On y vient pour les dunes et une source chaude. À moins d’un kilomètre des palmiers se dressent les ruines de **Tisavar**, un fort romain bâti sous l’empereur Commode (180-192) ou avant, et une stèle que l’on appelle ici la colonne du général Leclerc. Elle rappelle les journées du 23 février au 10 mars 1943, quand la **force L**, les Français libres du général Philippe Leclerc, tenait l’oasis. Avec ses troupes coloniales du Tchad, Leclerc avait pris le Fezzan à la Libye italienne, puis rejoint la 8e armée britannique du général Montgomery le 26 janvier 1943. Ksar Ghilane gardait le flanc désertique, à l’ouest de la ligne Mareth tenue par l’Axe. Le 10 mars 1943, un groupement blindé allemand attaque ; frappé par l’aviation alliée, dont les Kittyhawk du 3e escadron de l’armée de l’air australienne, il est repoussé. En août 1943, la force L devient le noyau de la 2e division blindée. Renseignez-vous sur les conseils aux voyageurs avant de partir dans le désert.",
+  "slides": [
+    {
+      "question": "À Ksar Ghilane, une stèle de 1943 voisine avec le fort romain de Tisavar. Le fort est plus vieux d’au moins… ?",
+      "unit": "ans",
+      "explanation": "Au moins 1 750 ans : Tisavar fut bâti sous l’empereur Commode, qui régna de 180 à 192, ou avant. Tous deux marquent une frontière du désert."
+    },
+    {
+      "alt": "Animation au crépuscule : dunes or et rouille, palmiers autour d’une source, un fort romain en ruine et une stèle. Une carte schématique suit la force L du Tchad à l’oasis par le Fezzan ; une flèche rouge s’arrête avant les palmiers le 10 mars 1943 ; des avions passent.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "ksar-ghilane-fr.mp4",
+      "poster": "ksar-ghilane-fr.jpg"
+    },
+    {
+      "prompt": "Devine le chemin parcouru par la force L : règle la distance de Fort-Lamy, au Tchad, à Ksar Ghilane, puis mesure. Vise à 15 % près.",
+      "takeaway": "Environ 2 390 km à vol d’oiseau, 2 470 par le Fezzan ; les pistes du désert étaient plus longues encore."
+    },
+    {
+      "heading": "La force L en 1943",
+      "events": [
+        {
+          "when": "26 janv. 1943",
+          "text": "Leclerc rejoint la 8e armée de Montgomery"
+        },
+        {
+          "when": "23 févr. 1943",
+          "text": "La force L à Ksar Ghilane, dit la stèle"
+        },
+        {
+          "when": "10 mars 1943",
+          "text": "Une attaque allemande repoussée, avec l’aviation"
+        },
+        {
+          "when": "24 août 1943",
+          "text": "Elle devient la 2e division blindée"
+        }
+      ]
+    },
+    {
+      "heading": "À voir",
+      "items": [
+        "Tisavar, le fort romain, à moins d’un kilomètre des palmiers",
+        "La stèle, « colonne du général Leclerc », à 1 km à l’est des combats",
+        "La source chaude et les dunes du Grand Erg oriental",
+        "Consultez les conseils aux voyageurs avant de partir"
+      ]
+    },
+    {
+      "question": "Des Français libres tenaient l’oasis de Ksar Ghilane en mars 1943. D’où venait la force L du général Leclerc ?",
+      "options": [
+        "Du Tchad",
+        "D’Algérie",
+        "D’Égypte",
+        "Du Maroc"
+      ],
+      "explanation": "Du Tchad, à travers le Sahara, en prenant au passage le Fezzan à la Libye italienne. La stèle dit qu’ils sont venus « du Tchad »."
+    }
+  ],
+  "source": {
+    "label": "Ministère des Armées, Chemins de mémoire : Philippe Leclerc"
+  }
+}

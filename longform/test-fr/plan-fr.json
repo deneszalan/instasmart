@@ -1,0 +1,35 @@
+{
+ "duration": 49.91,
+ "lines": [
+  {
+   "key": "o1",
+   "start": 1,
+   "natural": 3.115
+  },
+  {
+   "key": "o2",
+   "start": 4.69,
+   "natural": 5.867
+  },
+  {
+   "key": "a1",
+   "start": 17.87,
+   "natural": 5.525
+  },
+  {
+   "key": "a2",
+   "start": 23.97,
+   "natural": 5.355
+  },
+  {
+   "key": "b1",
+   "start": 34.64,
+   "natural": 4.331
+  },
+  {
+   "key": "b2",
+   "start": 39.54,
+   "natural": 3.243
+  }
+ ]
+}

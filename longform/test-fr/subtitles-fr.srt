@@ -1,0 +1,23 @@
+1
+00:00:01,000 --> 00:00:04,610
+Une même scène animée peut-elle se jouer en deux langues ?
+
+2
+00:00:04,690 --> 00:00:12,270
+Ce court essai dit chaque phrase deux fois, une fois en anglais et une fois en français.
+
+3
+00:00:17,870 --> 00:00:23,890
+La voix française garde son propre rythme, alors la vidéo française a sa propre chronologie.
+
+4
+00:00:23,970 --> 00:00:31,040
+La scène est calée sur les phrases, elle suit donc l’un ou l’autre minutage sans rien changer.
+
+5
+00:00:34,640 --> 00:00:39,460
+Ici, 1 250 000 s’écrit à la manière de chaque langue.
+
+6
+00:00:39,540 --> 00:00:44,510
+Et chaque étiquette à l’écran est remplacée par sa version française.

@@ -12,9 +12,13 @@
 <script src="kit.js"></script>
 <script>
   // Loads a video's timeline, then its scene: ?video=<slug> loads <slug>/timeline.js and <slug>/scene.js.
-  const dir = new URLSearchParams(location.search).get('video');
+  // &lang=fr loads the French timeline, <slug>/timeline-fr.js, instead (render.mjs sets window.TR for kit.js).
+  const q = new URLSearchParams(location.search), dir = q.get('video'), lang = q.get('lang');
+  // In French, Kit.fmt groups thousands with a narrow no-break space (U+202F), which most fonts in the library lack; the
+  // browser then draws it almost without width (1250000). On screen a no-break space (U+00A0) reads as 1 250 000.
+  if (window.TR) { const fmt = Kit.fmt; Kit.fmt = (n) => fmt(n).replace(/\u202f/g, '\u00a0'); }
   const load = (src) => new Promise((ok, fail) => { const s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = () => fail(new Error(`could not load ${src}`)); document.body.appendChild(s); });
-  load(`${dir}/timeline.js`).catch(() => {}).then(() => load(`${dir}/scene.js`));
+  load(`${dir}/timeline${lang ? `-${lang}` : ''}.js`).catch(() => {}).then(() => load(`${dir}/scene.js`));
 </script>
 </body>
 </html>

@@ -10,7 +10,30 @@
     out: (x) => 1 - Math.pow(1 - x, 3),
     back: (x) => 1 + 2.70158 * Math.pow(x - 1, 3) + 1.70158 * Math.pow(x - 1, 2),
   };
-  const fmt = (n) => Math.round(n).toLocaleString('en-US');
+  // ---------- other languages ----------
+  // `npm run explainer -- <id> --lang fr` renders the scene in another language: it sets window.TR from
+  // explainers/i18n/<lang>/<id>.json, { "captions": [...one per caption cue, in order...], "labels": { "English": "French" } }.
+  // Captions are swapped as Kit's captions() first sees them; any other text a scene draws (fillText, rich())
+  // is swapped when the whole string is in "labels", and measured as drawn, so layouts follow the longer text.
+  const TR = window.TR ?? null;
+  const untranslated = new Set();
+  /** The text in the render's language: its "labels" entry, or itself (noted, if it has words, so the render can list it). */
+  const tr = (s) => {
+    if (!TR || typeof s !== 'string') return s;
+    const out = TR.labels?.[s];
+    if (out != null) return out;
+    if (/\p{L}{2,}/u.test(s)) untranslated.add(s);
+    return s;
+  };
+  window.__untranslated = () => [...untranslated];
+  const captionLists = new WeakSet();
+  let captionCount = 0;
+  window.__captionCount = () => captionCount;
+  /** Inside rich() the words are already in the render's language. */
+  let asIs = 0;
+  // French groups thousands with a narrow no-break space, which most of the library's fonts lack and draw with almost no
+  // width (1250000); an ordinary no-break space reads right.
+  const fmt = (n) => Math.round(n).toLocaleString(TR?.locale ?? 'en-US').replace(/\u202f/g, '\u00a0');
   /** Opacity of something shown from a to b, fading in over fi seconds and out over fo. */
   const span = (t, a, b, fi = 0.35, fo = 0.35) => Math.min(fi ? seg(t, a, a + fi) : 1, fo ? 1 - seg(t, b - fo, b) : 1);
 
@@ -47,6 +70,7 @@
   for (const name of ['fillText', 'strokeText']) {
     const draw = proto[name];
     proto[name] = function (text, ...rest) {
+      if (!asIs) text = tr(text);
       const parts = splitFont(this.font);
       const key = parts ? familyList(parts[1]).filter((f) => !FALLBACK_NAMES.includes(f)).join(', ') : this.font;
       let chars = drawn.get(key);
@@ -55,6 +79,8 @@
       return draw.call(this, text, ...rest);
     };
   }
+  const measure = proto.measureText;
+  proto.measureText = function (text) { return measure.call(this, asIs ? text : tr(text)); };
   window.__drawn = () => Object.fromEntries([...drawn].map(([key, chars]) => [key, [...chars].join('')]));
 
   function tools(ctx) {
@@ -75,6 +101,11 @@
     const rich = (s, cx, cy, { maxW, size, lh = size * 1.3, weight = 700, family, ink, marks = {} }) => {
       // Remembered so `npm run explainer -- <id> --srt` can strip the marks from the captions.
       for (const m in marks) (window.__marks ??= new Set()).add(m);
+      if (!asIs) s = tr(s);
+      asIs++;
+      try { richText(s, cx, cy, { maxW, size, lh, weight, family, ink, marks }); } finally { asIs--; }
+    };
+    const richText = (s, cx, cy, { maxW, size, lh, weight, family, ink, marks }) => {
       font(weight, size, family);
       let mode = null;
       const toks = [];
@@ -114,10 +145,16 @@
     /** Captions: cues are [start, end, text]; each rises into place and fades out. */
     const captions = (t, cues, { x, y, rise = 22, ...style }) => {
       // Remembered so `npm run explainer` can turn the captions into the clip's steps.
+      // In another language each cue's text is swapped, in order, the first time the list is seen.
+      if (TR?.captions && !captionLists.has(cues)) {
+        captionLists.add(cues);
+        for (const cue of cues) { const s = TR.captions[captionCount++]; if (typeof s === 'string') cue[2] = s; }
+      }
       (window.__cues ??= new Set()).add(cues);
       for (const [a, b, s] of cues) {
         if (t < a || t > b) continue;
-        alpha(span(t, a, b, 0.25, 0.2), () => rich(s, x, y + (1 - ease.out(seg(t, a, a + 0.35))) * rise, style));
+        asIs++;
+        try { alpha(span(t, a, b, 0.25, 0.2), () => rich(s, x, y + (1 - ease.out(seg(t, a, a + 0.35))) * rise, style)); } finally { asIs--; }
       }
     };
 
@@ -153,5 +190,5 @@
     window.ready = Promise.all(loads).then(() => { window.render(0); return true; });
   }
 
-  window.Kit = { clamp, seg, lerp, ease, fmt, span, scene };
+  window.Kit = { clamp, seg, lerp, ease, fmt, span, scene, tr };
 })();

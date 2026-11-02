@@ -2,15 +2,30 @@
 //   node render.mjs preview <slug> t1,t2,...       PNG stills in <slug>/prev/, then the font check
 //   node render.mjs video <slug> <out.mp4> <from> <to>   one chunk of the picture (run several in parallel)
 //   node render.mjs scan <slug>                     draw every frame, list any that throw
+// A last argument `fr` renders the French version: it loads <slug>/timeline-fr.js and sets window.TR from
+// <slug>/labels-fr.json before kit.js loads, so every whole string the scene draws is swapped for its French and Kit.fmt
+// writes numbers the French way. Preview then writes its stills to <slug>/prev-fr/ and lists what was still drawn in English.
+//   node render.mjs preview <slug> t1,t2,... fr    node render.mjs video <slug> <out.mp4> <from> <to> fr    node render.mjs scan <slug> fr
 import { spawn } from 'node:child_process';
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { chromium } from '/home/user/instasmart/node_modules/playwright-core/index.mjs';
 import { covers } from '/home/user/instasmart/scripts/fonts.ts';
 const here = dirname(fileURLToPath(import.meta.url));
-const [mode, slug, a, b, c] = process.argv.slice(2);
+const args = process.argv.slice(2);
+const LOCALES = { fr: 'fr-FR' };
+const lang = args.length > 2 && LOCALES[args.at(-1)] ? args.pop() : null;
+const [mode, slug, a, b, c] = args;
 const FPS = 30;
+// The other language's timeline and on-screen text: { "labels": { "English": "Français", ... } }.
+let TR = null;
+if (lang) {
+  const tl = join(here, slug, `timeline-${lang}.js`), lf = join(here, slug, `labels-${lang}.json`);
+  if (!existsSync(tl)) throw new Error(`${slug}/timeline-${lang}.js is missing: run tts-${lang}.sh ${slug} (or node timing.mjs build-${lang} ${slug})`);
+  if (!existsSync(lf)) throw new Error(`${slug}/labels-${lang}.json is missing: write it, { "labels": { "English text": "its translation" } }`);
+  TR = { locale: LOCALES[lang], ...JSON.parse(readFileSync(lf, 'utf8')) };
+}
 const catalog = JSON.parse(readFileSync('/home/user/instasmart/explainers/fonts/catalog.json', 'utf8'));
 const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH ?? '/opt/pw-browsers/chromium' });
 const page = await browser.newPage();
@@ -18,12 +33,15 @@ const errors = [];
 page.on('pageerror', (e) => errors.push(e.message));
 const fonts = Object.fromEntries(Object.entries(catalog).map(([n, f]) => [n, { files: f.files.map(({ file, weight, style }) => ({ file, weight, style })) }]));
 await page.addInitScript({ content: `window.FONTS = ${JSON.stringify(fonts)};` });
-await page.goto(`${pathToFileURL(join(here, 'page.html')).href}?video=${slug}`);
+if (TR) await page.addInitScript({ content: `window.TR = ${JSON.stringify(TR)};` });
+await page.goto(`${pathToFileURL(join(here, 'page.html')).href}?video=${slug}${lang ? `&lang=${lang}` : ''}`);
 await page.waitForFunction('"ready" in window', null, { timeout: 60000 });
 await page.evaluate('window.ready');
 const W = await page.evaluate('document.getElementById("c").width'), H = await page.evaluate('document.getElementById("c").height');
 const png = async (t) => Buffer.from(String(await page.evaluate(`window.render(${t}), document.getElementById('c').toDataURL('image/png').split(',')[1]`)), 'base64');
 const jpg = async (t) => Buffer.from(String(await page.evaluate(`window.render(${t}), document.getElementById('c').toDataURL('image/jpeg', 0.95).split(',')[1]`)), 'base64');
+/** A character as it can be read in a list: invisible ones (U+202F, the narrow space in French numbers) by code. */
+const shown = (ch) => (/[\s\p{Cf}]/u.test(ch) ? `U+${ch.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')}` : ch);
 function glyphs() {
   return page.evaluate('[window.__drawn?.() ?? {}, window.__fontFiles ?? []]').then(([drawn, loaded]) => {
     const byFile = new Map(Object.values(catalog).flatMap((f) => f.files.map((x) => [x.file, covers(x.covers)])));
@@ -35,17 +53,24 @@ function glyphs() {
       if (!has.length) continue;
       const lack = [...chars].filter((ch) => ch.codePointAt(0) > 0x20 && !has.some((h) => h(ch.codePointAt(0))));
       const none = lack.filter((ch) => !fb.some((h) => h(ch.codePointAt(0))));
-      if (lack.length) out.push(`${stack}: ${lack.filter((ch) => !none.includes(ch)).join(' ')}${none.length ? `  NO FONT: ${none.join(' ')}` : ''}`);
+      if (lack.length) out.push(`${stack}: ${lack.filter((ch) => !none.includes(ch)).map(shown).join(' ')}${none.length ? `  NO FONT: ${none.map(shown).join(' ')}` : ''}`);
     }
     return out;
   });
 }
 if (mode === 'preview') {
-  const dir = join(here, slug, 'prev');
+  const dir = join(here, slug, lang ? `prev-${lang}` : 'prev');
   mkdirSync(dir, { recursive: true });
   for (const t of a.split(',').map(Number)) writeFileSync(join(dir, `t${t.toFixed(2).padStart(7, '0')}.png`), await png(t));
   const g = await glyphs();
   console.log(`${W}×${H}: stills in ${dir}${g.length ? `\nfallback font used for: ${g.join(' | ')}` : ''}`);
+  if (lang) {
+    // Every text with words drawn so far (at load and in these stills) that labels-<lang>.json doesn't translate.
+    const missing = await page.evaluate('window.__untranslated()');
+    console.log(missing.length
+      ? `drawn in English, with no labels-${lang}.json entry (a name that stays the same can map to itself):\n${missing.map((s) => `  ${JSON.stringify(s)}`).join('\n')}`
+      : `every text drawn in these stills has its labels-${lang}.json entry`);
+  }
 } else if (mode === 'scan') {
   // Draw every frame without encoding and list the times where drawing throws (a stills check can miss them).
   const bad = await page.evaluate(`(() => { const out = []; for (let i = 0; i <= window.DURATION * ${FPS}; i++) { try { window.render(i / ${FPS}); } catch (e) { if (out.length < 8) out.push((i / ${FPS}).toFixed(2) + ' s: ' + e.message); else if (out.length === 8) out.push('…'); } } return out; })()`);

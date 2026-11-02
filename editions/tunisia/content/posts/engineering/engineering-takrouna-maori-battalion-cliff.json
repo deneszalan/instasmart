@@ -1,0 +1,166 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-takrouna-maori-battalion-cliff",
+  "field": "engineering",
+  "title": "Near Enfidha, Māori soldiers climbed the cliff of Takrouna’s village rock in April 1943",
+  "emoji": "🧗",
+  "body": "**Takrouna** is a Berber village on a rock about 200 metres high, some 5 km from Enfidha (Enfidaville under the French). In April 1943 it was part of the Axis’s last front in Tunisia, held by Italian troops, among them paratroopers of the Folgore division, with a German company. On the night of 19 to 20 April 1943 the New Zealand Division attacked it, and at dawn Lance-Sergeant **Haane Manahi** of the 28th (Māori) Battalion led a few men up the cliff to the ledge below the summit. After a counter-attack on 21 April he helped retake the ledge and the village. Four generals backed him for the Victoria Cross, but London awarded the Distinguished Conduct Medal; in 2007 his family received a sword and a letter from Queen Elizabeth II. Today you walk up past stone houses with vaulted rooms to the shrine of Sidi Abdelkader, with the plain spread out below. Enfidaville War Cemetery, 1 km west of Enfidha’s centre, holds 1,551 Commonwealth graves. Check opening times and access locally.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "After Takrouna, April 1943, Haane Manahi was put up for the Victoria Cross. In what year was he finally honoured?",
+      "min": 1943,
+      "max": 2020,
+      "step": 1,
+      "answer": 2007,
+      "format": "year",
+      "explanation": "In March 2007, 64 years later: in Rotorua, New Zealand, Prince Andrew gave his sons an altar cloth, a sword and a letter from Queen Elizabeth II."
+    },
+    {
+      "type": "video",
+      "src": "takrouna.mp4",
+      "poster": "takrouna.jpg",
+      "alt": "Animation at dawn: Takrouna's rock in profile, white houses on top, an olive plain below. A dotted line of small figures climbs the cliff to a ledge on 20 April 1943; medal cards, a sword and a letter for 2007; the village path today, rows of headstones at Enfidaville War Cemetery, a schematic map.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Ascending the Vale” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "takrouna-maori-battalion-cliff",
+      "prompt": "Stand on top of a 40 m cliff. Find the farthest you can step back from the edge and still see the ground 10 m out from its foot.",
+      "takeaway": "Only 0.4 m. One step back and the foot of the cliff and the face itself drop out of sight: steep ground hides its own foot. Simplified: flat top, vertical face."
+    },
+    {
+      "type": "timeline",
+      "heading": "Takrouna, 1943 and after",
+      "events": [
+        {
+          "when": "19 Apr 1943",
+          "text": "Enfidaville falls; New Zealanders ready to attack Takrouna"
+        },
+        {
+          "when": "20–21 Apr",
+          "text": "Manahi’s party climbs to the ledge; it is lost, then won back"
+        },
+        {
+          "when": "22 Jul 1943",
+          "text": "His Distinguished Conduct Medal is announced"
+        },
+        {
+          "when": "Mar 2007",
+          "text": "His sons receive a sword and a royal letter"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "heading": "What to look for",
+      "style": "bullets",
+      "items": [
+        "The path up through stone houses with vaulted rooms and small courtyards",
+        "The shrine of Sidi Abdelkader El Jilani, the village’s patron saint",
+        "From the top: the plain east to Hergla and the sea",
+        "Enfidaville War Cemetery: 1 km west of Enfidha’s centre, on the Zaghouan road"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Haane Manahi of New Zealand’s Māori Battalion was recommended for the Victoria Cross for Takrouna. What did he receive in 1943?",
+      "options": [
+        "The Distinguished Conduct Medal",
+        "The Victoria Cross",
+        "No award at all",
+        "A French Legion of Honour"
+      ],
+      "answer": 0,
+      "explanation": "The Distinguished Conduct Medal, announced on 22 July 1943. The recommendation, backed by four generals, was downgraded in London."
+    }
+  ],
+  "tags": [
+    "takrouna",
+    "enfidha",
+    "newzealand",
+    "maori",
+    "cemetery",
+    "visit"
+  ],
+  "source": {
+    "label": "Wikipedia: Takrouna",
+    "url": "https://en.wikipedia.org/wiki/Takrouna"
+  },
+  "createdAt": "2026-11-02T10:48:05Z",
+  "theme": {
+    "gradient": [
+      "#1d2238",
+      "#6b4a3a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}

@@ -193,6 +193,11 @@ import { canForm as bayForm, LAT_MIN as BAY_LAT, SHEAR_MAX as BAY_SHEAR, SST_MIN
 import { FLOOR as CLOCK_FLOOR, profile as clockProfile, readAge as clockRead, retained as clockRetained } from '../src/labs/body/blood-cells-epigenetic-clock';
 import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decafRemoved, soak as decafSoak } from '../src/labs/chemistry/decaf-coffee-caffeine-removal';
 import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX, MIN_STEP as ORZO_STEP, ORZO as ORZO_BAND, brownRate as orzoRate, dryMinutes as orzoDry, isOrzo, roastDegree as orzoRoast, waterLeft as orzoWater } from '../src/labs/chemistry/caffe-orzo-roasted-barley';
+import { EYE as TAK_EYE, SEE_OUT as TAK_SEE, faceHidden as takFace, farthestBack as takBack, hiddenWidth as takHidden } from '../src/labs/engineering/takrouna-maori-battalion-cliff';
+import { MUSEUM as MARETH_MUSEUM, PLACES as MARETH_PLACES, angleGap as marethGap, bearing as marethBearing, distanceKm as marethKm, facing as marethFacing } from '../src/labs/engineering/mareth-line-museum-casemates';
+import { STRAIGHT as KSAR_STRAIGHT, TO_TUNIS as KSAR_TUNIS, VIA_FEZZAN as KSAR_VIA, close as ksarClose, distanceKm as ksarKm } from '../src/labs/engineering/ksar-ghilane-force-l-stele';
+import { AXIS_IN as DAR_AXIS_IN, LEFT as DAR_LEFT, axisInHammamet as darAxis, day as darDay, fits as darFits, lastFit as darLastFit, rommelAt as darRommel } from '../src/labs/engineering/dar-sebastian-hammamet-legend';
+import { angleOff as longAngle, shareToBoundary as longShare, spotOf as longSpot } from '../src/labs/engineering/longstop-hill-three-names';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1950,5 +1955,73 @@ describe('lab maths', () => {
     expect(isOrzo(ORZO_BAND[0])).toBe(true);
     expect(isOrzo(ORZO_BAND[1])).toBe(false);
     expect(ORZO_CAFFEINE).toBe(0);
+  });
+
+  it('takrouna cliff: the sight line over the edge hides height × back / eye metres, nothing at the edge, and 0.4 m is the farthest step back for a 40 m cliff', () => {
+    expect(takHidden(40, 0)).toBe(0);
+    expect(takHidden(40, 1.6)).toBeCloseTo(40, 9);
+    expect(takHidden(40, 0.4)).toBeCloseTo(TAK_SEE, 9);
+    expect(takHidden(80, 0.4)).toBeCloseTo(2 * TAK_SEE, 9);
+    expect(takHidden(40, 0.4, 2 * TAK_EYE)).toBeCloseTo(TAK_SEE / 2, 9);
+    expect(takBack(40)).toBeCloseTo(0.4, 9);
+    expect(takHidden(40, takBack(40) + 0.1)).toBeGreaterThan(TAK_SEE);
+    expect(takFace(0)).toBe(false);
+    expect(takFace(0.1)).toBe(true);
+  });
+
+  it('mareth compass: from the museum Medenine lies south-east, Gabès north-west, Toujane south-west, and each is found within 10°', () => {
+    expect(marethBearing([0, 0], [1, 0])).toBeCloseTo(0, 6);
+    expect(marethBearing([0, 0], [0, 1])).toBeCloseTo(90, 6);
+    expect(marethBearing(MARETH_MUSEUM, MARETH_PLACES.medenine)).toBeCloseTo(145.2, 0);
+    expect(marethBearing(MARETH_MUSEUM, MARETH_PLACES.gabes)).toBeCloseTo(332.1, 0);
+    expect(marethBearing(MARETH_MUSEUM, MARETH_PLACES.toujane)).toBeCloseTo(220.3, 0);
+    expect(marethKm(MARETH_MUSEUM, MARETH_PLACES.medenine)).toBeCloseTo(35.6, 0);
+    expect(marethKm([0, 0], [1, 0])).toBeCloseTo(111.2, 0);
+    expect(marethGap(350, 10)).toBe(20);
+    expect(marethGap(10, 350)).toBe(20);
+    expect(marethFacing(145)).toBe('medenine');
+    expect(marethFacing(332)).toBe('gabes');
+    expect(marethFacing(220)).toBe('toujane');
+    expect(marethFacing(37)).toBe('mareth');
+    expect(marethFacing(270)).toBe(null);
+  });
+
+  it('ksar ghilane: Chad is about 2,400 km away in a straight line, the Fezzan detour adds a little, and a guess counts within 15%', () => {
+    expect(ksarKm([0, 0], [1, 0])).toBeCloseTo(111.2, 0);
+    expect(Math.round(KSAR_STRAIGHT / 100) * 100).toBe(2400);
+    expect(KSAR_VIA).toBeGreaterThan(KSAR_STRAIGHT);
+    expect(Math.round(KSAR_VIA / 10) * 10).toBe(2470);
+    expect(Math.round(KSAR_TUNIS / 10) * 10).toBe(430);
+    expect(ksarClose(2400)).toBe(true);
+    expect(ksarClose(2050)).toBe(true);
+    expect(ksarClose(2000)).toBe(false);
+    expect(ksarClose(800)).toBe(false);
+  });
+
+  it('dar sebastian: the Rommel story can only fit from 23 February to 9 March 1943 for sure, and 9 March is the last possible day', () => {
+    expect(darDay(1943, 3, 9) - darDay(1943, 2, 23)).toBe(14);
+    expect(darLastFit()).toBe(DAR_LEFT);
+    expect(darFits(DAR_LEFT)).toBe('yes');
+    expect(darFits(DAR_LEFT + 1)).toBe('no');
+    expect(darFits(darDay(1943, 2, 10))).toBe('maybe');
+    expect(darFits(darDay(1942, 12, 25))).toBe('no');
+    expect(darRommel(darDay(1942, 12, 25))).toBe('libya');
+    expect(darRommel(darDay(1943, 4, 1))).toBe('gone');
+    expect(darAxis(DAR_AXIS_IN - 1)).toBe(false);
+    expect(darAxis(darDay(1943, 5, 12))).toBe(true);
+    expect(darAxis(darDay(1943, 5, 13))).toBe(false);
+  });
+
+  it('longstop: the long stop stands straight behind the stumps, more than halfway to the boundary', () => {
+    expect(longSpot(0, 0.8)).toBe('longstop');
+    expect(longSpot(0.1, 0.9)).toBe('longstop');
+    expect(longSpot(0, 0.35)).toBe('close');
+    expect(longSpot(0.5, 0.6)).toBe('wide');
+    expect(longSpot(0, -0.8)).toBe('wide');
+    expect(longSpot(0, 1.05)).toBe('out');
+    expect(longAngle(0, 0.5)).toBeCloseTo(0, 9);
+    expect(longAngle(0.3, 0.42)).toBeCloseTo(45, 6);
+    expect(longShare(0, 1)).toBeCloseTo(1, 9);
+    expect(longShare(0, 0.56)).toBeCloseTo(0.5, 9);
   });
 });

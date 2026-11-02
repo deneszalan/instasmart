@@ -14,7 +14,8 @@ import { postId, useStore } from '../state/store';
 import { Avatar } from './Avatar';
 import { CardMedia, WikiMedia } from './Media';
 import { Sheet } from './Sheet';
-import { LANG, t } from '../i18n';
+import { FilmButton } from './Film';
+import { LOCALE, t } from '../i18n';
 import { EDITION } from '../edition';
 
 /** Mark a post as read once at least 60% of it has been on screen for 1.5 seconds. */
@@ -76,7 +77,7 @@ function relatedCards(card: KnowledgeCard, count = 3): KnowledgeCard[] {
 }
 
 function formatDay(day: string): string {
-  return new Date(`${day}T12:00:00Z`).toLocaleDateString(LANG === 'de' ? 'de-DE' : undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+  return new Date(`${day}T12:00:00Z`).toLocaleDateString(LOCALE, { month: 'short', day: 'numeric', year: 'numeric' });
 }
 
 /** The "go deeper" sheet: the full explanation, every slide, tags, source and related pieces. */
@@ -340,6 +341,7 @@ export function PostView({ post, className }: PostViewProps) {
             {t('In the news: {label}', { label: card.newsArticle.label })} <ExternalLink size={12} />
           </a>
         )}
+        {card && <FilmButton field={card.field} />}
         {card?.createdAt && (
           <time className="post__time" dateTime={card.createdAt}>
             {formatStamp(card.createdAt)}

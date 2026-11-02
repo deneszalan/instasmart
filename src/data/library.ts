@@ -29,6 +29,9 @@ const mediaUrls = new Map(Object.entries(mediaFiles).map(([path, url]) => [path.
 /** Every picture and clip of this version of the app, in every language. */
 export const MEDIA_URLS: readonly string[] = [...mediaUrls.values()];
 
+/** A file in content/media/<folder>/, or undefined if there is none. */
+export const mediaUrl = (folder: string, name: string): string | undefined => mediaUrls.get(`${folder}/${name}`);
+
 function resolveImage(postId: string, src: string): string {
   if (src.startsWith('https://')) return src;
   return mediaUrls.get(`${postId}/${src}`) ?? src;
