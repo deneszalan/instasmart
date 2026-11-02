@@ -1,0 +1,145 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-patton-el-guettar",
+  "field": "art",
+  "title": "In the film Patton, Rommel attacks at El Guettar. In March 1943 he had already left Africa",
+  "emoji": "🎬",
+  "body": "In ***Patton*** (1970), directed by Franklin J. Schaffner, George C. Scott plays US General George S. Patton, who takes over the beaten II Corps in Tunisia and leads it to victory at El Guettar. In the film his aides wake him because Rommel is about to attack; a book by Rommel on tank warfare lies by his bed, and as the German tanks are driven back he cries out that he read it. Rommel never finished such a book, and he had left Africa for good on 9 March 1943. On 23 March the German 10th Panzer Division attacked the US 1st Infantry Division in the El Guettar valley: a minefield at the Keddab wadi stopped eight tanks, American artillery and tank destroyers knocked out about thirty more, and by midday the Germans fell back ([National WWII Museum](https://www.nationalww2museum.org/war/articles/us-ii-corps-el-guettar)). The fighting then went on into April [without a breakthrough](https://en.wikipedia.org/wiki/Battle_of_El_Guettar). The film, shot in Almería in Spain, turns weeks of fighting into one morning and a German division into Rommel himself. It won seven Oscars, including Best Picture.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "In the film Patton (1970), US General George S. Patton beats Rommel at El Guettar, Tunisia. Where was Rommel on the day, 23 March 1943?",
+      "answer": "In Europe: he had left Africa",
+      "detail": "Field Marshal Erwin Rommel left for Germany on 9 March 1943 and never returned to Africa. The attack was made by the German 10th Panzer Division."
+    },
+    {
+      "type": "video",
+      "src": "patton-el-guettar.mp4",
+      "poster": "patton-el-guettar.jpg",
+      "alt": "Animation: a dark cinema shows two drawn scenes in amber, a bedside book and a general watching tanks from a ridge. Then a March 1943 timeline, and a schematic plan of the El Guettar valley where a minefield and American guns stop German tanks; then what the film changes.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Hero Down” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "patton-el-guettar",
+      "prompt": "Sort each claim about El Guettar: only in the film, or in the 1943 record? Get all five right.",
+      "takeaway": "Rommel's command and his tank book are only in the film. In the record, the 10th Panzer Division attacked on 23 March, mines and guns stopped it, and the fighting went on to 7 April."
+    },
+    {
+      "type": "compare",
+      "heading": "Screen and record",
+      "left": {
+        "label": "In the film",
+        "text": "Rommel attacks. Patton, who has read Rommel's tank book, watches the German tanks fail in one morning."
+      },
+      "right": {
+        "label": "In March 1943",
+        "text": "The 10th Panzer Division attacks on 23 March; mines and US guns stop it; the fighting goes on into April."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "What the film gets right",
+      "text": "Patton did take over the shaken US II Corps after the defeat at Kasserine, on 6 March 1943, and on 23 March his troops did stop a German armoured attack at El Guettar. The defence was the work of General Terry Allen's 1st Infantry Division, its gunners and its riflemen."
+    },
+    {
+      "type": "quiz",
+      "question": "In the film Patton, which Rommel book lies by Patton's bed on the morning of El Guettar?",
+      "options": [
+        "The Tank in Attack",
+        "Infantry Attacks",
+        "The Rommel Papers",
+        "Desert War Diaries"
+      ],
+      "answer": 0,
+      "explanation": "The Tank in Attack: Rommel planned it but never finished it. His real book, Infantry Attacks (1937), is the one Patton is reported to have read."
+    }
+  ],
+  "tags": [
+    "film",
+    "patton",
+    "elguettar",
+    "rommel",
+    "1943"
+  ],
+  "source": {
+    "label": "National WWII Museum: US II Corps at El Guettar",
+    "url": "https://www.nationalww2museum.org/war/articles/us-ii-corps-el-guettar"
+  },
+  "theme": {
+    "gradient": [
+      "#141414",
+      "#6b4a12"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T11:29:32Z"
+}

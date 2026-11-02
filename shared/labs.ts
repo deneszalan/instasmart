@@ -201,6 +201,7 @@ export const LABS = {
   'end-in-tunisia-may-1943': 'Tap through five counts of the Axis soldiers taken prisoner in Tunisia in May 1943, from the British and American official histories to General von Arnim’s own estimate, drawn as squares of 1,000, and see how far apart they are.',
   'bourguiba-and-the-axis-1943': 'Slide month by month from April 1938 to April 1945 and follow Habib Bourguiba from French prisons to Rome, Tunis and Cairo: where he was, who held him, and what happened that month.',
   'ghez-six-mois-sous-la-botte': 'Slide day by day through the German occupation of Tunis, November 1942 to May 1943, with the war on one line and the dated chapters of Paul Ghez’s diary on the other, and find the day they meet.',
+  'patton-el-guettar': 'Sort five claims about the battle of El Guettar, 23 March 1943, into what only the film Patton (1970) shows and what the record says, and watch a schematic plan of the valley fill in.',
 } as const;
 
 export type LabId = keyof typeof LABS;

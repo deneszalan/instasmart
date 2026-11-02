@@ -201,4 +201,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'end-in-tunisia-may-1943': lazy(() => import('./history/end-in-tunisia-may-1943')),
   'bourguiba-and-the-axis-1943': lazy(() => import('./politics/bourguiba-and-the-axis-1943')),
   'ghez-six-mois-sous-la-botte': lazy(() => import('./literature/ghez-six-mois-sous-la-botte')),
+  'patton-el-guettar': lazy(() => import('./art/patton-el-guettar')),
 };

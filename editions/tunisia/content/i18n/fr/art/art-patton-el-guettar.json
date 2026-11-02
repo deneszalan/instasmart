@@ -1,0 +1,50 @@
+{
+  "id": "art-patton-el-guettar",
+  "title": "Dans le film Patton, Rommel attaque à El Guettar. En mars 1943, il avait quitté l’Afrique",
+  "body": "Dans ***Patton*** (1970), de Franklin J. Schaffner, George C. Scott incarne le général américain George S. Patton, qui reprend en Tunisie le IIe corps battu et le mène à la victoire à El Guettar. Dans le film, ses aides de camp le réveillent parce que Rommel va attaquer ; un livre de Rommel sur les chars est posé près de son lit, et quand les chars allemands sont repoussés, il s’écrie qu’il l’a lu. Rommel n’a jamais achevé un tel livre, et il avait quitté l’Afrique pour de bon le 9 mars 1943. Le 23 mars, la 10e Panzerdivision allemande attaque la 1re division d’infanterie américaine dans la vallée d’El Guettar : un champ de mines au oued Keddab arrête huit chars, l’artillerie et les chasseurs de chars américains en détruisent une trentaine d’autres, et à midi les Allemands reculent ([National WWII Museum](https://www.nationalww2museum.org/war/articles/us-ii-corps-el-guettar)). Les combats durent ensuite jusqu’en avril [sans percée](https://en.wikipedia.org/wiki/Battle_of_El_Guettar). Tourné à Almería, en Espagne, le film réduit des semaines de combat à une matinée, et une division allemande à Rommel lui-même. Il a reçu sept Oscars, dont celui du meilleur film.",
+  "slides": [
+    {
+      "prompt": "Dans Patton (1970), le général américain George S. Patton bat Rommel à El Guettar, en Tunisie. Où était Rommel le 23 mars 1943 ?",
+      "answer": "En Europe : il avait quitté l’Afrique",
+      "detail": "Le maréchal Erwin Rommel est parti pour l’Allemagne le 9 mars 1943 et n’est jamais revenu en Afrique. L’attaque fut menée par la 10e Panzerdivision allemande."
+    },
+    {
+      "alt": "Animation : dans une salle de cinéma, deux scènes dessinées, un livre près d’un lit et un général observant des chars. Puis une frise de mars 1943 et un plan schématique de la vallée d’El Guettar où mines et canons américains arrêtent les chars allemands ; enfin ce que le film change.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "patton-el-guettar-fr.mp4",
+      "poster": "patton-el-guettar-fr.jpg"
+    },
+    {
+      "prompt": "Classe chaque affirmation sur El Guettar : seulement dans le film, ou dans les sources de 1943 ? Trouve les cinq.",
+      "takeaway": "Le commandement de Rommel et son livre sur les chars n’existent que dans le film. Selon les sources, la 10e Panzerdivision attaque le 23 mars, mines et canons l’arrêtent, et les combats durent jusqu’au 7 avril."
+    },
+    {
+      "heading": "L’écran et l’histoire",
+      "left": {
+        "label": "Dans le film",
+        "text": "Rommel attaque. Patton, qui a lu son livre sur les chars, regarde les chars allemands échouer en une matinée."
+      },
+      "right": {
+        "label": "En mars 1943",
+        "text": "La 10e Panzerdivision attaque le 23 mars ; mines et canons américains l’arrêtent ; les combats durent jusqu’en avril."
+      }
+    },
+    {
+      "heading": "Ce que le film montre juste",
+      "text": "Patton a bien repris le IIe corps américain, ébranlé par la défaite de Kasserine, le 6 mars 1943, et le 23 mars ses troupes ont bien arrêté une attaque blindée allemande à El Guettar. La défense fut l’œuvre de la 1re division d’infanterie du général Terry Allen, de ses artilleurs et de ses fantassins."
+    },
+    {
+      "question": "Dans le film Patton, quel livre de Rommel est posé près du lit de Patton le matin d’El Guettar ?",
+      "options": [
+        "Le char à l’attaque",
+        "L’infanterie attaque",
+        "Les carnets de Rommel",
+        "Journal du désert"
+      ],
+      "explanation": "« Le char à l’attaque » (Panzer greift an) : Rommel l’avait prévu mais ne l’a jamais achevé. Son vrai livre, « L’infanterie attaque » (1937), est celui que Patton aurait lu."
+    }
+  ],
+  "source": {
+    "label": "National WWII Museum : le IIe corps américain à El Guettar"
+  }
+}

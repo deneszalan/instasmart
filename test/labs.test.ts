@@ -196,6 +196,7 @@ import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX,
 import { COUNTS as TUNIS_COUNTS, COUNT_IDS as TUNIS_COUNT_IDS, foundExtremes as tunisExtremes, spread as tunisSpread, squaresFor as tunisSquares } from '../src/labs/history/end-in-tunisia-may-1943';
 import { LETTER as BOURG_LETTER, LAST_INDEX as BOURG_LAST, fromIndex as bourgFrom, monthIndex as bourgIndex, whereIn as bourgWhere } from '../src/labs/politics/bourguiba-and-the-axis-1943';
 import { DIARY as GHEZ_DIARY, LAST_DAY as GHEZ_LAST, WAR as GHEZ_WAR, dayOf as ghezDay, latest as ghezLatest, meetingDays as ghezMeet } from '../src/labs/literature/ghez-six-mois-sous-la-botte';
+import { CLAIMS as PATTON_CLAIMS, allRight as pattonAllRight, score as pattonScore } from '../src/labs/art/patton-el-guettar';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1994,5 +1995,13 @@ describe('lab maths', () => {
     expect(ghezLatest(GHEZ_WAR, ghezDay(1943, 5, 6))?.id).toBe('kasserine');
     expect(ghezLatest(GHEZ_DIARY, GHEZ_LAST)?.id).toBe('emptied');
     for (let i = 1; i < GHEZ_DIARY.length; i++) expect(GHEZ_DIARY[i].day).toBeGreaterThan(GHEZ_DIARY[i - 1].day);
+  });
+
+  it('Patton at El Guettar: two claims are only in the film, three are in the record, and all five must be sorted', () => {
+    expect(PATTON_CLAIMS.filter((c) => c.side === 'film').map((c) => c.id).sort()).toEqual(['book', 'rommel']);
+    expect(pattonScore({})).toBe(0);
+    expect(pattonScore({ rommel: 'record', panzer: 'record' })).toBe(1);
+    expect(pattonAllRight({ rommel: 'film', book: 'film', panzer: 'record', mines: 'record' })).toBe(false);
+    expect(pattonAllRight({ rommel: 'film', book: 'film', panzer: 'record', mines: 'record', weeks: 'record' })).toBe(true);
   });
 });
