@@ -16,8 +16,7 @@ import { Feed } from './views/Feed';
 import { News, NEWS } from './views/News';
 import { Profile } from './views/Profile';
 import { Saved } from './views/Saved';
-import { t } from './i18n';
-import { EDITION } from './edition';
+import { APP_NAME, t } from './i18n';
 
 // The News tab shows only in an edition with news posts.
 const NAV: { tab: Tab; label: string; icon: typeof House }[] = [
@@ -94,8 +93,8 @@ function Shell() {
   return (
     <div className="app">
       <header className="topbar">
-        <button className="logo" onClick={() => goTab('home')} aria-label={t('{name} home', { name: EDITION.name })}>
-          {EDITION.name}
+        <button className="logo" onClick={() => goTab('home')} aria-label={t('{name} home', { name: APP_NAME })}>
+          {APP_NAME}
         </button>
         <button className="topbar__streak" onClick={() => goTab('profile')} aria-label={t(days === 1 ? '1-day learning streak' : '{n}-day learning streak', { n: days })}>
           <Flame size={22} className={days > 0 ? 'streak__flame--on' : undefined} />

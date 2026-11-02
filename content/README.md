@@ -258,15 +258,15 @@ SVG is the best way for a language model to make a visual: a labelled diagram, a
 
 ## Translations
 
-An app can offer more languages than its own (`langs` in `shared/editions.ts`; Roma offers German). The reader picks one under Settings, and a post shows in it when it has a translation:
+An app can offer more languages than its own (`langs` in `shared/editions.ts`; Roma offers German, Tunisia 1943 French). The reader picks one under Settings, and a post shows in it when it has a translation:
 
 ```
 content/i18n/<lang>/<field>/<id>.json
 ```
 
-A translation holds only the text to replace, in the post's own shape: `"id"`, then `title`, `body`, `slides` (one entry per slide, in order, `{}` where there is nothing to translate) and `source.label`. Everything else stays the post's: numbers, answers, the order of options, media, tags, colours and the author. The one exception is `src` on a video slide, for a copy of the clip narrated in that language (`<name>-<lang>.mp4` in the post's media folder; the picture, and so the steps, stay the same). `npm run content` checks each translation as the post it makes, with the same length limits, and refuses keys it may not change.
+A translation holds only the text to replace, in the post's own shape: `"id"`, then `title`, `body`, `slides` (one entry per slide, in order, `{}` where there is nothing to translate) and `source.label`. Everything else stays the post's: numbers, answers, the order of options, media, tags, colours and the author. The exceptions are `src` and `poster` on a video slide, for a copy of the clip in that language (`<name>-<lang>.mp4` and `.jpg` in the post's media folder; narrated in it, and with the captions and labels drawn in it if the scene was rendered with `--lang`, see "Other languages" in `explainers/README.md`; the steps stay the same). `npm run content` checks each translation as the post it makes, with the same length limits, and refuses keys it may not change.
 
-App text needs no translation file: `t()` finds it in `src/i18n/<lang>.ts`, which already has German for every string.
+App text needs no translation file: `t()` finds it in `src/i18n/<lang>.ts`, which has German for every string, and French for the app's own and the labs of the apps that offer French.
 
 ## Style and accuracy rules
 

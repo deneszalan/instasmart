@@ -8,7 +8,7 @@ const TABLES: Partial<Record<Lang, Record<string, string>>> = { de };
 export const LANGS: readonly Lang[] = [EDITION.lang, ...(Object.keys(EDITION.langs ?? {}) as Lang[])];
 
 /** Each language's name in itself, as a language menu shows it. */
-export const LANG_NAMES: Record<Lang, string> = { en: 'English', de: 'Deutsch' };
+export const LANG_NAMES: Record<Lang, string> = { en: 'English', de: 'Deutsch', fr: 'Français' };
 
 const LANG_KEY = `${EDITION.storageKey}:lang`;
 
@@ -27,6 +27,12 @@ function storedLang(): string | null {
 
 /** The language this page runs in. It is fixed while the page is open; setLang reloads. */
 export const LANG: Lang = pickLang(storedLang());
+
+/** How dates and numbers are written in the reader's language (English: the browser's own way). */
+export const LOCALE: string | undefined = ({ en: undefined, de: 'de-DE', fr: 'fr-FR' } as const)[LANG];
+
+/** The app's name in the reader's language. */
+export const APP_NAME: string = EDITION.langs?.[LANG]?.name ?? EDITION.name;
 
 /** Switch the app to `lang`: the choice is remembered, and the page reloads so every text, date and number follows. */
 export function setLang(lang: Lang) {

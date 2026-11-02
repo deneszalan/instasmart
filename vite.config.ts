@@ -133,7 +133,7 @@ function editionPage(edition: Edition): Plugin {
   };
 }
 
-// `vite --mode lesefutter` and `vite build --mode lesefutter` make Lesefutter, `--mode roma` Roma; other modes make Reckon.
+// `vite --mode lesefutter` and `vite build --mode lesefutter` make Lesefutter, `--mode roma` Roma, `--mode tunisia` Tunisia 1943; other modes make Reckon.
 export default defineConfig(({ mode }) => {
   const edition = editionForMode(mode);
   const content = join(root, edition.dir, 'content');

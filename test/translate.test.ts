@@ -41,14 +41,14 @@ describe('translations', () => {
       id: 'history-other-post',
       field: 'art',
       tags: ['x'],
-      slides: [{ answer: 1, options: ['Nur eine'] }, { poster: 'other.jpg', extra: 'neu' }],
+      slides: [{ answer: 1, options: ['Nur eine'] }, { fit: 'contain', extra: 'neu' }],
     });
     expect(problems).toEqual([
       '"id" must be "history-test-post", the post it translates',
       'field: "field" can\'t be translated; leave it out',
       'slides[0].answer: numbers and switches stay the post\'s; leave it out',
       'slides[0].options: must be a list of 2, like the post\'s',
-      'slides[1].poster: "poster" can\'t be translated; leave it out',
+      'slides[1].fit: the post has nothing here to translate',
       'slides[1].extra: the post has nothing here to translate',
     ]);
     expect(de.field).toBe('history');

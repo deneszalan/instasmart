@@ -3,7 +3,7 @@
 import type { Post } from './schema.ts';
 
 /** The languages an app can be read in. */
-export type Lang = 'en' | 'de';
+export type Lang = 'en' | 'de' | 'fr';
 
 export const TRANSLATIONS_DIR = 'content/i18n';
 
@@ -15,6 +15,9 @@ export function translationPath(lang: string, post: Pick<Post, 'field' | 'id'>):
 /** Strings a translation may not change: names of things rather than text a reader reads. */
 const FIXED = new Set(['id', 'field', 'type', 'lab', 'poster', 'emoji', 'icon', 'format', 'fit', 'href', 'url', 'createdAt', 'author', 'theme', 'captionAt', 'kind', 'timing', 'style', 'colors', 'src']);
 
+/** On a video slide a translation may point at its own clip and still. */
+const VIDEO_OWN = new Set(['src', 'poster']);
+
 export interface Translated {
   post: Post;
   problems: string[];
@@ -22,8 +25,8 @@ export interface Translated {
 
 /**
  * The post with a translation's strings in place of its own. A translation may only replace strings that
- * the post has (arrays must keep their length), plus `src` on a video slide, for a clip narrated in the
- * translation's language. Anything else is reported, and the post's own value is kept.
+ * the post has (arrays must keep their length), plus `src` and `poster` on a video slide, for a clip narrated
+ * (and captioned) in the translation's language. Anything else is reported, and the post's own value is kept.
  */
 export function applyTranslation(post: Post, translation: unknown): Translated {
   const problems: string[] = [];
@@ -35,7 +38,7 @@ export function applyTranslation(post: Post, translation: unknown): Translated {
     }
     if (typeof base === 'string') {
       if (typeof over !== 'string') problems.push(`${path}: must be text, like the post's`);
-      else if (FIXED.has(key) && !(key === 'src' && inVideo) && over !== base) problems.push(`${path}: "${key}" can't be translated; leave it out`);
+      else if (FIXED.has(key) && !(VIDEO_OWN.has(key) && inVideo) && over !== base) problems.push(`${path}: "${key}" can't be translated; leave it out`);
       else return over;
       return base;
     }
@@ -54,7 +57,7 @@ export function applyTranslation(post: Post, translation: unknown): Translated {
       const out: Record<string, unknown> = { ...(base as Record<string, unknown>) };
       const video = (base as { type?: unknown }).type === 'video';
       for (const [k, v] of Object.entries(over as Record<string, unknown>)) {
-        if (FIXED.has(k) && !(k === 'src' && video) && v !== (base as Record<string, unknown>)[k]) {
+        if (FIXED.has(k) && !(VIDEO_OWN.has(k) && video) && v !== (base as Record<string, unknown>)[k]) {
           if (k in (base as object)) problems.push(`${path ? `${path}.` : ''}${k}: "${k}" can't be translated; leave it out`);
           else problems.push(`${path ? `${path}.` : ''}${k}: the post has nothing here to translate`);
           continue;
