@@ -249,4 +249,13 @@ export const fr: Record<string, string> = {
   'Offline mode': 'Mode hors connexion',
   'Show only the saved posts, so everything you open works without internet.': 'N’afficher que les publications enregistrées, pour que tout ce que tu ouvres fonctionne hors connexion.',
   'On iPhone or iPad, first add {name} to your Home Screen (Share, then Add to Home Screen) and save from there: iOS keeps saved posts only for Home Screen apps.': 'Sur iPhone ou iPad, ajoute d’abord {name} à l’écran d’accueil (Partager, puis «\u00a0Sur l’écran d’accueil\u00a0») et enregistre depuis cette app\u00a0: iOS ne conserve les publications enregistrées que pour les apps de l’écran d’accueil.',
+  '{n} m from the foot': 'à {n} m du pied',
+  '{n} m high cliff': 'falaise de {n} m',
+  'Schematic: walker drawn larger; flat top, vertical face': 'Schéma\u00a0: marcheur agrandi, paroi verticale',
+  'A cliff {h} m high; standing {d} m back from the edge hides the ground up to {x} m from its foot': 'Une falaise de {h} m\u00a0; à {d} m en retrait du bord, le sol est caché jusqu’à {x} m de son pied',
+  'Step back from the edge (m)': 'Recul depuis le bord (m)',
+  'Ground hidden beyond the foot': 'Sol caché au-delà du pied',
+  'A climber at the foot': 'Un grimpeur au pied',
+  'out of view': 'hors de vue',
+  'in full view': 'bien visible',
 };

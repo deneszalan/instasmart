@@ -1,0 +1,64 @@
+{
+  "id": "engineering-takrouna-maori-battalion-cliff",
+  "title": "À Takrouna, près d’Enfidha, des soldats maoris ont gravi une falaise en avril 1943",
+  "body": "**Takrouna** est un village berbère perché sur un rocher d’environ 200 mètres, à quelque 5 km d’Enfidha (Enfidaville sous le protectorat français). En avril 1943, il faisait partie du dernier front de l’Axe en Tunisie, tenu par des troupes italiennes, dont des parachutistes de la division Folgore, et une compagnie allemande. Dans la nuit du 19 au 20 avril 1943, la division néo-zélandaise l’attaque ; à l’aube, le sous-officier **Haane Manahi**, du 28e bataillon (maori), conduit quelques hommes en haut de la falaise jusqu’à la corniche sous le sommet. Après une contre-attaque le 21 avril, il aide à reprendre la corniche puis le village. Quatre généraux le proposent pour la croix de Victoria, mais Londres lui décerne la Distinguished Conduct Medal ; en 2007, sa famille reçoit une épée et une lettre de la reine Élisabeth II. Aujourd’hui, on monte à pied entre des maisons de pierre aux pièces voûtées jusqu’à la zaouïa de Sidi Abdelkader, avec la plaine à ses pieds. Le cimetière militaire d’Enfidaville, à 1 km à l’ouest du centre d’Enfidha, compte 1 551 tombes du Commonwealth. Vérifiez sur place horaires et conditions d’accès.",
+  "slides": [
+    {
+      "question": "Après Takrouna, en avril 1943, Haane Manahi fut proposé pour la croix de Victoria. En quelle année fut-il enfin honoré ?",
+      "explanation": "En mars 2007, 64 ans plus tard : à Rotorua, en Nouvelle-Zélande, le prince Andrew remit à ses fils une nappe d’autel, une épée et une lettre de la reine Élisabeth II."
+    },
+    {
+      "alt": "Animation à l’aube : le rocher de Takrouna de profil, maisons blanches au sommet, plaine d’oliviers. De petites silhouettes gravissent la falaise jusqu’à une corniche le 20 avril 1943 ; médailles, épée et lettre pour 2007 ; le village aujourd’hui, les stèles du cimetière d’Enfidaville, une carte.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "takrouna-fr.mp4",
+      "poster": "takrouna-fr.jpg"
+    },
+    {
+      "prompt": "Tiens-toi au sommet d’une falaise de 40 m. Trouve jusqu’où tu peux reculer du bord en voyant encore le sol à 10 m de son pied.",
+      "takeaway": "Seulement 0,4 m. Un pas en arrière, et le pied de la falaise comme sa paroi disparaissent : un relief abrupt cache son propre pied. Simplifié : sommet plat, paroi verticale."
+    },
+    {
+      "heading": "Takrouna, 1943 et après",
+      "events": [
+        {
+          "when": "19 avr. 1943",
+          "text": "Enfidaville tombe ; les Néo-Zélandais se préparent à attaquer"
+        },
+        {
+          "when": "20–21 avr.",
+          "text": "Le groupe de Manahi prend la corniche, la perd, la reprend"
+        },
+        {
+          "when": "22 juil. 1943",
+          "text": "Sa Distinguished Conduct Medal est annoncée"
+        },
+        {
+          "when": "mars 2007",
+          "text": "Ses fils reçoivent une épée et une lettre royale"
+        }
+      ]
+    },
+    {
+      "heading": "À voir sur place",
+      "items": [
+        "Le chemin entre les maisons de pierre aux pièces voûtées et petites cours",
+        "La zaouïa de Sidi Abdelkader El Jilani, saint patron du village",
+        "Du sommet : la plaine vers l’est, jusqu’à Hergla et la mer",
+        "Le cimetière d’Enfidaville : à 1 km à l’ouest du centre d’Enfidha, route de Zaghouan"
+      ]
+    },
+    {
+      "question": "Haane Manahi, du bataillon maori néo-zélandais, fut proposé pour la croix de Victoria après Takrouna. Que reçut-il en 1943 ?",
+      "options": [
+        "La Distinguished Conduct Medal",
+        "La croix de Victoria",
+        "Aucune décoration",
+        "La Légion d’honneur"
+      ],
+      "explanation": "La Distinguished Conduct Medal, annoncée le 22 juillet 1943. La proposition, soutenue par quatre généraux, fut revue à la baisse à Londres."
+    }
+  ],
+  "source": {
+    "label": "Wikipédia (en anglais) : Takrouna"
+  }
+}

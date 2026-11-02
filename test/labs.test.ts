@@ -193,6 +193,7 @@ import { canForm as bayForm, LAT_MIN as BAY_LAT, SHEAR_MAX as BAY_SHEAR, SST_MIN
 import { FLOOR as CLOCK_FLOOR, profile as clockProfile, readAge as clockRead, retained as clockRetained } from '../src/labs/body/blood-cells-epigenetic-clock';
 import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decafRemoved, soak as decafSoak } from '../src/labs/chemistry/decaf-coffee-caffeine-removal';
 import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX, MIN_STEP as ORZO_STEP, ORZO as ORZO_BAND, brownRate as orzoRate, dryMinutes as orzoDry, isOrzo, roastDegree as orzoRoast, waterLeft as orzoWater } from '../src/labs/chemistry/caffe-orzo-roasted-barley';
+import { EYE as TAK_EYE, SEE_OUT as TAK_SEE, faceHidden as takFace, farthestBack as takBack, hiddenWidth as takHidden } from '../src/labs/engineering/takrouna-maori-battalion-cliff';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1950,5 +1951,17 @@ describe('lab maths', () => {
     expect(isOrzo(ORZO_BAND[0])).toBe(true);
     expect(isOrzo(ORZO_BAND[1])).toBe(false);
     expect(ORZO_CAFFEINE).toBe(0);
+  });
+
+  it('takrouna cliff: the sight line over the edge hides height × back / eye metres, nothing at the edge, and 0.4 m is the farthest step back for a 40 m cliff', () => {
+    expect(takHidden(40, 0)).toBe(0);
+    expect(takHidden(40, 1.6)).toBeCloseTo(40, 9);
+    expect(takHidden(40, 0.4)).toBeCloseTo(TAK_SEE, 9);
+    expect(takHidden(80, 0.4)).toBeCloseTo(2 * TAK_SEE, 9);
+    expect(takHidden(40, 0.4, 2 * TAK_EYE)).toBeCloseTo(TAK_SEE / 2, 9);
+    expect(takBack(40)).toBeCloseTo(0.4, 9);
+    expect(takHidden(40, takBack(40) + 0.1)).toBeGreaterThan(TAK_SEE);
+    expect(takFace(0)).toBe(false);
+    expect(takFace(0.1)).toBe(true);
   });
 });

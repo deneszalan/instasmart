@@ -2611,4 +2611,13 @@ export const de: Record<string, string> = {
   'still drying': 'trocknet noch',
   'rich, roasty': 'kräftig, röstig',
   'Toy model: the grain dries, then browns from 120 °C, twice as fast every 10 °C hotter.': 'Spielzeugmodell: Das Korn trocknet, dann bräunt es ab 120 °C, alle 10 °C heißer doppelt so schnell.',
+  '{n} m from the foot': '{n} m vom Fuß',
+  '{n} m high cliff': 'Felswand, {n} m hoch',
+  'Schematic: walker drawn larger; flat top, vertical face': 'Schema: Person vergrößert, senkrechte Wand',
+  'A cliff {h} m high; standing {d} m back from the edge hides the ground up to {x} m from its foot': 'Eine {h} m hohe Felswand; wer {d} m hinter der Kante steht, sieht den Boden bis {x} m vor ihrem Fuß nicht',
+  'Step back from the edge (m)': 'Abstand zur Kante (m)',
+  'Ground hidden beyond the foot': 'Verdeckter Boden vor dem Fuß',
+  'A climber at the foot': 'Jemand am Fuß der Wand',
+  'out of view': 'nicht zu sehen',
+  'in full view': 'gut zu sehen',
 };
