@@ -11,7 +11,7 @@ editions/tunisia/
 ```
 
 - Run it: `npm run dev -- --mode tunisia`. Build it: `npm run build` builds every app; this one goes to `dist/tunisia/`.
-- Published at https://deneszalan.github.io/tunisia-1943/ from its own repository, [deneszalan/tunisia-1943](https://github.com/deneszalan/tunisia-1943), whose workflow builds this repository's main branch every hour when it has changed: the apps here share GitHub Pages' 1 GB per site, and this one, with its French clips and long videos, needs its own. This repository's own deploy leaves `dist/tunisia/` out.
+- Published at https://deneszalan.github.io/Tun-WW/ from its own repository, [deneszalan/Tun-WW](https://github.com/deneszalan/Tun-WW), whose workflow builds this repository's main branch every hour when it has changed: the apps here share GitHub Pages' 1 GB per site, and this one, with its French clips and long videos, needs its own. This repository's own deploy leaves `dist/tunisia/` out.
 - New post: `npm run content -- new <field> <slug> --edition tunisia`. Check: `npm run content` checks every app.
 - Fields, renamed for this app in `fieldText` in `shared/editions.ts`: `history` (Campaign), `politics` (Occupation), `literature` (Literature), `art` (Film), `earth` (Remembrance) and `engineering` (Visit: places in Tunisia you can visit today that tell the story of the war; say what there is to see, and to check opening times locally, without giving prices or times that change).
 - Every post is an animation with an explore lab, as in Reckon (`explainers/README.md`, "Explore labs" in `content/README.md`). Credit the clip `"Tunisia 1943 · original animation · AI narration"`; in French `"Tunisie 1943 · animation originale · voix IA"`.
