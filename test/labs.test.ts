@@ -197,6 +197,7 @@ import { COUNTS as TUNIS_COUNTS, COUNT_IDS as TUNIS_COUNT_IDS, foundExtremes as 
 import { LETTER as BOURG_LETTER, LAST_INDEX as BOURG_LAST, fromIndex as bourgFrom, monthIndex as bourgIndex, whereIn as bourgWhere } from '../src/labs/politics/bourguiba-and-the-axis-1943';
 import { DIARY as GHEZ_DIARY, LAST_DAY as GHEZ_LAST, WAR as GHEZ_WAR, dayOf as ghezDay, latest as ghezLatest, meetingDays as ghezMeet } from '../src/labs/literature/ghez-six-mois-sous-la-botte';
 import { CLAIMS as PATTON_CLAIMS, allRight as pattonAllRight, score as pattonScore } from '../src/labs/art/patton-el-guettar';
+import { KINDS as GAMMARTH_KINDS, allSeen as gammarthAllSeen, atGammarth, placeOf as gammarthPlace } from '../src/labs/earth/gammarth-french-military-cemetery';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2003,5 +2004,15 @@ describe('lab maths', () => {
     expect(pattonScore({ rommel: 'record', panzer: 'record' })).toBe(1);
     expect(pattonAllRight({ rommel: 'film', book: 'film', panzer: 'record', mines: 'record' })).toBe(false);
     expect(pattonAllRight({ rommel: 'film', book: 'film', panzer: 'record', mines: 'record', weeks: 'record' })).toBe(true);
+  });
+
+  it('Gammarth: Christian and Jewish soldiers in individual graves, the unidentified in the ossuary, Muslim soldiers elsewhere', () => {
+    expect(gammarthPlace('christian')).toBe('graves');
+    expect(gammarthPlace('jewish')).toBe('graves');
+    expect(gammarthPlace('unknown')).toBe('ossuary');
+    expect(gammarthPlace('muslim')).toBe('muslim');
+    expect(GAMMARTH_KINDS.filter(atGammarth)).toEqual(['christian', 'jewish', 'unknown']);
+    expect(gammarthAllSeen(['christian', 'jewish', 'unknown'])).toBe(false);
+    expect(gammarthAllSeen(['muslim', 'christian', 'unknown', 'jewish'])).toBe(true);
   });
 });

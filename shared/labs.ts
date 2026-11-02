@@ -202,6 +202,7 @@ export const LABS = {
   'bourguiba-and-the-axis-1943': 'Slide month by month from April 1938 to April 1945 and follow Habib Bourguiba from French prisons to Rome, Tunis and Cairo: where he was, who held him, and what happened that month.',
   'ghez-six-mois-sous-la-botte': 'Slide day by day through the German occupation of Tunis, November 1942 to May 1943, with the war on one line and the dated chapters of Paul Ghez’s diary on the other, and find the day they meet.',
   'patton-el-guettar': 'Sort five claims about the battle of El Guettar, 23 March 1943, into what only the film Patton (1970) shows and what the record says, and watch a schematic plan of the valley fill in.',
+  'gammarth-french-military-cemetery': 'Pick a French soldier of the Tunisian campaign of 1942–43, Christian, Jewish, Muslim or never identified, and see where he was buried: an individual grave or the ossuary at Gammarth, or a Muslim cemetery elsewhere.',
 } as const;
 
 export type LabId = keyof typeof LABS;

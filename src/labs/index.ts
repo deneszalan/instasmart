@@ -202,4 +202,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'bourguiba-and-the-axis-1943': lazy(() => import('./politics/bourguiba-and-the-axis-1943')),
   'ghez-six-mois-sous-la-botte': lazy(() => import('./literature/ghez-six-mois-sous-la-botte')),
   'patton-el-guettar': lazy(() => import('./art/patton-el-guettar')),
+  'gammarth-french-military-cemetery': lazy(() => import('./earth/gammarth-french-military-cemetery')),
 };

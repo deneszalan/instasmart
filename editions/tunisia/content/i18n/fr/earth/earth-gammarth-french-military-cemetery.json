@@ -1,0 +1,60 @@
+{
+  "id": "earth-gammarth-french-military-cemetery",
+  "title": "Gammarth, cimetière militaire français des non-musulmans : les musulmans reposent ailleurs",
+  "body": "Au-dessus de La Marsa, le cimetière militaire français de Gammarth ouvre le 5 janvier 1944 pour les morts français de la campagne de Tunisie de 1942-1943. Cette armée comptait des tirailleurs tunisiens, algériens et marocains et des Européens, et ses morts furent inhumés selon leur foi : Gammarth reçut chrétiens, juifs et autres non-musulmans, tandis que les soldats musulmans furent inhumés dans des cimetières musulmans, comme à Haffouz ou Tarf ech-Chena. À Enfidha, un cimetière de 1949 abrite 235 soldats des trois religions. Après l’indépendance, des monuments aux morts furent démontés, dont en 1957 celui de Tunis pour les deux guerres, qui nommait aussi des Tunisiens ([Habib Kazdaghli](https://www.hesperis-tamuda.com/Downloads/2010-2019/2018/fascicule-1/11.pdf)). De 1966 à 1968, les carrés militaires des cimetières communaux furent regroupés à Gammarth : **1 875** soldats des deux guerres et d’Indochine y ont une tombe individuelle, et l’ossuaire abrite 1 220 caissettes de restes inconnus. L’ambassade de France l’entretient ; en 2015, une exposition honora des vétérans tunisiens des régiments de tirailleurs ([Courrier de l’Atlas](https://www.lecourrierdelatlas.com/?p=147315)).",
+  "slides": [
+    {
+      "question": "Le cimetière militaire français de Gammarth ouvre en 1944. Combien de soldats y ont une tombe individuelle ?",
+      "unit": "soldats",
+      "explanation": "1 875, des deux guerres mondiales et d’Indochine, dont beaucoup regroupés là en 1966-1968 depuis des cimetières communaux. L’ossuaire abrite aussi 1 220 caissettes de restes inconnus."
+    },
+    {
+      "alt": "Animation : une colline de croix et de stèles blanches parmi les cyprès, au-dessus de la mer, à Gammarth ; des panneaux sur les soldats, l’inhumation selon la foi et Enfidha ; un monument démonté ; des tombes regroupées sur une Tunisie schématique ; 1 875 et 1 220 ; une couronne.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "gammarth-fr.mp4",
+      "poster": "gammarth-fr.jpg"
+    },
+    {
+      "prompt": "Choisis chaque soldat de 1942-1943 et regarde où il a été inhumé. Lequel ne repose pas à Gammarth ?",
+      "takeaway": "Le soldat musulman : il fut inhumé à part, dans un cimetière musulman comme Haffouz ou Tarf ech-Chena. Gammarth reçut chrétiens et juifs sous leur emblème, et les non-identifiés dans son ossuaire."
+    },
+    {
+      "heading": "Inhumés selon leur foi",
+      "text": "Gammarth fut créé pour les soldats chrétiens, juifs et autres non-musulmans des troupes nord-africaines de l’armée française. Les soldats musulmans, dont beaucoup de tirailleurs tunisiens, algériens et marocains, furent inhumés dans des cimetières musulmans, comme à Haffouz ou Tarf ech-Chena."
+    },
+    {
+      "heading": "Un cimetière et sa mémoire",
+      "events": [
+        {
+          "when": "1944",
+          "text": "Gammarth ouvre, le 5 janvier."
+        },
+        {
+          "when": "1949",
+          "text": "Cimetière militaire d’Enfidha : 235 soldats de trois religions."
+        },
+        {
+          "when": "1957",
+          "text": "Tunis démonte son monument aux morts des deux guerres."
+        },
+        {
+          "when": "1966-1968",
+          "text": "Les tombes militaires des cimetières communaux vont à Gammarth."
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi n’y a-t-il pas de tombes musulmanes au cimetière militaire français de Gammarth ?",
+      "options": [
+        "Les musulmans reposent à part",
+        "Aucun musulman n’est mort en 1942-1943",
+        "Leurs tombes sont parties en France",
+        "La Tunisie les a réclamées en 1956"
+      ],
+      "explanation": "Par respect de leur foi, les soldats musulmans de l’armée française furent inhumés dans des cimetières musulmans, comme à Haffouz ou Tarf ech-Chena ; Gammarth reçut les morts non musulmans."
+    }
+  ],
+  "source": {
+    "label": "Wikipédia : Cimetière militaire de Gammarth"
+  }
+}
