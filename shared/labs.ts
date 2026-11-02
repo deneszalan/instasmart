@@ -200,6 +200,7 @@ export const LABS = {
   'caffe-orzo-roasted-barley': 'Roast barley in a toy roaster: set the heat and the time, watch the grain dry and then brown, and aim for the dark brown of caffè d’orzo without burning it, while the caffeine stays at 0 mg at every setting.',
   'takrouna-maori-battalion-cliff': 'Step back from the edge of a cliff and watch its face and foot drop out of sight: the dead ground below a steep rock like Takrouna’s.',
   'mareth-line-museum-casemates': 'Stand on the Mareth Line museum’s hill and turn a compass to face Mareth, Medenine, the Matmata hills and Gabès: which way the line looked.',
+  'ksar-ghilane-force-l-stele': 'Guess how far General Leclerc’s Force L had come from Chad to the oasis of Ksar Ghilane, then measure it on a schematic map, straight and via the Fezzan.',
 } as const;
 
 export type LabId = keyof typeof LABS;

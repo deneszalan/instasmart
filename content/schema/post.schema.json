@@ -290,7 +290,8 @@
                   "decaf-coffee-caffeine-removal",
                   "caffe-orzo-roasted-barley",
                   "takrouna-maori-battalion-cliff",
-                  "mareth-line-museum-casemates"
+                  "mareth-line-museum-casemates",
+                  "ksar-ghilane-force-l-stele"
                 ],
                 "description": "Which built-in lab to show: an experiment the reader runs themselves. shared/labs.ts lists them."
               },

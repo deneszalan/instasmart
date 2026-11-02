@@ -195,6 +195,7 @@ import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decaf
 import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX, MIN_STEP as ORZO_STEP, ORZO as ORZO_BAND, brownRate as orzoRate, dryMinutes as orzoDry, isOrzo, roastDegree as orzoRoast, waterLeft as orzoWater } from '../src/labs/chemistry/caffe-orzo-roasted-barley';
 import { EYE as TAK_EYE, SEE_OUT as TAK_SEE, faceHidden as takFace, farthestBack as takBack, hiddenWidth as takHidden } from '../src/labs/engineering/takrouna-maori-battalion-cliff';
 import { MUSEUM as MARETH_MUSEUM, PLACES as MARETH_PLACES, angleGap as marethGap, bearing as marethBearing, distanceKm as marethKm, facing as marethFacing } from '../src/labs/engineering/mareth-line-museum-casemates';
+import { STRAIGHT as KSAR_STRAIGHT, TO_TUNIS as KSAR_TUNIS, VIA_FEZZAN as KSAR_VIA, close as ksarClose, distanceKm as ksarKm } from '../src/labs/engineering/ksar-ghilane-force-l-stele';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1981,5 +1982,17 @@ describe('lab maths', () => {
     expect(marethFacing(220)).toBe('toujane');
     expect(marethFacing(37)).toBe('mareth');
     expect(marethFacing(270)).toBe(null);
+  });
+
+  it('ksar ghilane: Chad is about 2,400 km away in a straight line, the Fezzan detour adds a little, and a guess counts within 15%', () => {
+    expect(ksarKm([0, 0], [1, 0])).toBeCloseTo(111.2, 0);
+    expect(Math.round(KSAR_STRAIGHT / 100) * 100).toBe(2400);
+    expect(KSAR_VIA).toBeGreaterThan(KSAR_STRAIGHT);
+    expect(Math.round(KSAR_VIA / 10) * 10).toBe(2470);
+    expect(Math.round(KSAR_TUNIS / 10) * 10).toBe(430);
+    expect(ksarClose(2400)).toBe(true);
+    expect(ksarClose(2050)).toBe(true);
+    expect(ksarClose(2000)).toBe(false);
+    expect(ksarClose(800)).toBe(false);
   });
 });

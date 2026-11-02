@@ -268,4 +268,13 @@ export const fr: Record<string, string> = {
   'Lined up with': 'Dans l’axe de',
   'Places found': 'Lieux trouvés',
   'Simplified: straight lines from the museum, within 10°.': 'Simplifié\u00a0: lignes droites depuis le musée, à 10° près.',
+  'Your guess: Chad to the oasis (km)': 'Du Tchad à l’oasis (km)',
+  'Measure the distance': 'Mesurer la distance',
+  'Straight line from Chad': 'À vol d’oiseau',
+  'Via the Fezzan': 'Par le Fezzan',
+  'A distance scale from Chad to Ksar Ghilane; your guess is {g} km': 'Une échelle des distances du Tchad à Ksar Ghilane\u00a0; ton estimation\u00a0: {g} km',
+  'your guess, km': 'ton estimation, km',
+  'via the Fezzan (Sabha)': 'par le Fezzan (Sebha)',
+  'Straight-line distances on the globe; desert tracks were longer': 'Distances à vol d’oiseau\u00a0; les pistes étaient plus longues',
+  'Fort-Lamy, Chad': 'Fort-Lamy, Tchad',
 };
