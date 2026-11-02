@@ -1,0 +1,23 @@
+1
+00:00:01,000 --> 00:00:04,320
+Can one animated scene play in two languages?
+
+2
+00:00:04,400 --> 00:00:10,370
+This short test says every line twice, once in English and once in French.
+
+3
+00:00:15,970 --> 00:00:20,930
+The French voice keeps its own pace, so the French video gets its own timeline.
+
+4
+00:00:21,010 --> 00:00:26,880
+The scene is keyed to the lines, so it follows either timing without a change.
+
+5
+00:00:30,480 --> 00:00:35,850
+Here, 1,250,000 is written the way each language writes it.
+
+6
+00:00:35,930 --> 00:00:40,450
+And every label on screen is swapped for its French.

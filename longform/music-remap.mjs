@@ -1,16 +1,19 @@
 // Move a music plan onto a new timeline, keeping every change of track at the same chapter card (or the same line).
 //   node music-remap.mjs <slug>                   <slug>/music.json onto <slug>-dialogue's timeline -> <slug>-dialogue/music.json
 //   node music-remap.mjs <dir> --since <old.js>   <dir>/music.json from the old timeline onto <dir>/timeline.js (after a re-recording)
+//   node music-remap.mjs <slug> --fr              <slug>/music.json onto the French timeline (timeline-fr.js) -> <slug>/music-fr.json
 // Then checks that every track is long enough for its segment.
 import { execFileSync } from 'node:child_process';
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 const S = import.meta.dirname, [arg, flag, old] = process.argv.slice(2);
 const read = (file) => JSON.parse(readFileSync(file, 'utf8').replace(/^[\s\S]*?window\.TL = /, '').replace(/;\s*$/, ''));
-const [fromTL, toDir, musicFile] = flag === '--since'
-  ? [read(old), join(S, arg), join(S, arg, 'music.json')]
-  : [read(join(S, arg, 'timeline.js')), join(S, `${arg}-dialogue`), join(S, arg, 'music.json')];
-const from = fromTL, to = read(join(toDir, 'timeline.js'));
+const [fromTL, toFile, musicFile, outFile] = flag === '--since'
+  ? [read(old), join(S, arg, 'timeline.js'), join(S, arg, 'music.json'), join(S, arg, 'music.json')]
+  : flag === '--fr'
+    ? [read(join(S, arg, 'timeline.js')), join(S, arg, 'timeline-fr.js'), join(S, arg, 'music.json'), join(S, arg, 'music-fr.json')]
+    : [read(join(S, arg, 'timeline.js')), join(S, `${arg}-dialogue`, 'timeline.js'), join(S, arg, 'music.json'), join(S, `${arg}-dialogue`, 'music.json')];
+const from = fromTL, to = read(toFile);
 if (from.chapters.length !== to.chapters.length) throw new Error('the two timelines need the same chapters');
 const map = (x) => {
   if (x <= 0) return 0;
@@ -28,6 +31,6 @@ for (const m of music) {
   const need = (m.offset ?? 0) + m.until - m.at;
   if (need > len) { ok = false; console.log(`TOO SHORT: ${m.file.split('/').pop()} needs ${need.toFixed(1)} s from ${(m.offset ?? 0)} s, it has ${len.toFixed(1)} s`); }
 }
-writeFileSync(join(toDir, 'music.json'), `${JSON.stringify(music, null, 1)}\n`);
-console.log(`${join(toDir, 'music.json').slice(S.length + 1)}: ${music.length} segments, ${from.duration} s -> ${to.duration} s${ok ? '' : '  (fix the segments marked TOO SHORT)'}`);
+writeFileSync(outFile, `${JSON.stringify(music, null, 1)}\n`);
+console.log(`${outFile.slice(S.length + 1)}: ${music.length} segments, ${from.duration} s -> ${to.duration} s${ok ? '' : '  (fix the segments marked TOO SHORT)'}`);
 process.exitCode = ok ? 0 : 2;

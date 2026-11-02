@@ -40,6 +40,7 @@ Kit.scene({ width: 1920, height: 1080, duration: DURATION, pace: 1, fonts: ['Fam
 - Chapter title cards during each chapter's gap (`CH[i].at` → `+3.9 s`), parts that crossfade under them (see `monty-long.js` `draw()`), a cold-open title, and a **credits card** at the end: the title, "Reckon · original animation", the music credit lines, the sources. Don't mention AI anywhere.
 - **Show, don't tell**; compute numbers in code (run the simulation, the geometry), so picture, narration and source agree. Ease everything, crossfade, nothing jumps. No realistic people (simple shapes, silhouettes, icons are fine); caption simplified drawings (maps, machines, orbits not to scale) as diagrams.
 - **A distinct, designed look** (your task gives a direction): a textured or deep background, a consistent palette, two font families from the library. Paint static backgrounds once into an offscreen canvas of 1920×1080.
+- If your task asks for a French version, read section 6 before you write the scene: the same scene plays both languages.
 
 ## 4. Check it
 - `node $S/render.mjs preview <slug> t1,t2,…` writes PNG stills to `$S/<slug>/prev/` and lists any character drawn from the fallback font (`NO FONT` must never appear). Check a still at **every line's midpoint** (read the times from `timeline.js`) plus the title cards and the credits; combine them with `montage $(ls $S/<slug>/prev/*.png) -tile 4x -geometry 480x270+3+3 sheet.png` and look at the sheets. Fix overlaps, clipped text, crowding, contrast, anything off-screen. Two or three rounds.
@@ -48,8 +49,34 @@ Kit.scene({ width: 1920, height: 1080, duration: DURATION, pace: 1, fonts: ['Fam
 ## 5. Music: `$S/<slug>/music.json`
 `node /tmp/claude-0/-home-user-instasmart/597d1c62-e00b-59e9-a6a1-fbf35da32d35/scratchpad/video-posts/tools/music-find.mjs --feel <moods> [--q words] [--min 180]` searches Kevin MacLeod's catalogue (CC BY 4.0); `bash …/tools/music-get.sh "<file name>"` downloads it and prints its path and credit line. Choose by mood, tempo, instruments and description; you can't listen. Use 1–3 tracks; change track only at a chapter card. **Claim each track** by appending `<slug> | <file name>` to `$S/music-claims.txt` right away; no track may be used twice across the videos (and not "Happy Happy Game Show" or "Half Mystery"). `music.json`: `[{ "file": "<path>", "at": <video s>, "until": <video s>, "offset": <s into the track> }]` covering 0 → `duration`, consecutive segments overlapping ~3 s under a title card. A track must be long enough for its segment (offset + length ≤ track length). Put the credit lines on the credits card exactly as music-get printed them.
 
+## 6. The French version (when your task asks for one)
+The French video shares your scene. Its voice is XTTS-v2 (speaker Ana Florence), and it gets its own timeline from that voice. Your scene is keyed to line keys, so it plays to the French timing unchanged, and kit.js swaps every string it draws for the French in `labels-fr.json`. Start the French once the English script, scene and stills are final. `$S/test-fr/` is a small finished example. "French version" in `$S/README.md` has the details.
+1. **`FR` in `script.mjs`.** Export `FR = { <key>: { text, say? } }` with every key of `LINES`. Write natural French as a French narrator would say it, not a word-for-word translation, but keep the same facts and hedges. Each line must still say what the screen shows at that line, because the animation is keyed to it.
+   - `text` is the subtitle. Use French typography: ’, « », a narrow no-break space before ? ! ; :, 1 250 000, and a decimal comma (2,4).
+   - `say` is what the voice reads, where it differs. Numbers and years go in words ("mille neuf cent quarante-trois", "deux virgule quatre pour cent"), and so do symbols and units ("kilomètres", "degrés"). Leave off the final full stop.
+   - "Write for the ear" applies in French too: the connecting words, a verb in every sentence, no caption-style colons.
+   - Keep each line under about 200 characters. XTTS is less steady on long lines, and it cuts a French line after 273.
+   - French runs 10–25% longer than English. If an animation needs a different hold after a French line, set `HOLD_FR = { <key>: seconds }`; any key it doesn't name keeps its `HOLD` value.
+2. **`$S/<slug>/labels-fr.json`**: `{ "labels": { "<English, exactly as drawn>": "<French>" } }`, for every string with words that the scene draws.
+   - Write chapter titles as the scene draws them, e.g. `"THE MARETH LINE"` after `.toUpperCase()` and `"PART 2"`; the timeline keeps the English titles for this.
+   - Include the headings and lines of the credits card. A name or credit line that stays the same maps to itself.
+   - Only whole strings are swapped. Draw words and numbers as separate strings (`fmt(n)`, then `'stadia'`), not `` `${fmt(n)} stadia` ``.
+   - Kit.fmt writes whole numbers the French way (`1 250 000`). For a decimal, use `x.toLocaleString(window.TR?.locale ?? 'en-US', { maximumFractionDigits: 1 })`; `toFixed()` writes 7.2 in French too.
+   - In labels, use the ordinary no-break space (U+00A0) where French puts one, as in `« Titre »` or `Pourquoi ?`. Most families in the library lack the narrow one (U+202F), and the browser draws it almost without width.
+3. **`bash $S/tts-fr.sh <slug>`** records every French line once.
+   - Only one XTTS process may run on this machine, so it waits for `xtts.lock` if another is recording. XTTS is slow: on a busy machine, allow a few minutes a line.
+   - It keeps every line it has recorded, so a re-run records only new or reworded lines.
+   - Each take is checked with French speech recognition, with up to four takes a line. At the end it lists any line that still sounds wrong: words not heard, more said after the last word, a statement ending on a rising tone, a rushed or drawn-out pace. `rec-fr/report.txt` shows what was heard for every line. Reword a flagged line in `FR` (or spell a name in `say` the way it's said) and run the script again.
+   - It also builds the French timeline (`timeline-fr.js`, `subtitles-fr.srt`, `plan-fr.json`) with `node $S/timing.mjs build-fr <slug>`. Run that alone after changing only `HOLD_FR`.
+   - Then it checks that your music fits the longer French timeline. If it prints `TOO SHORT`, change `music.json` so that every segment fits both timelines.
+4. **Preview the French**: `node $S/render.mjs preview <slug> t1,t2,… fr` writes `$S/<slug>/prev-fr/`. Read the times from `timeline-fr.js`: every line's midpoint, the title cards, the credits.
+   - Give every string it lists as "drawn in English" its label.
+   - Look at the sheets for French text that overflows, overlaps or crowds. French is often 20–30% longer. The fix must work in both languages, because the scene is shared: shorten the French, or let the layout measure the text (a chip as wide as `ctx.measureText()`, a title whose size steps down until it fits).
+   - Check the font list as for the English. `NO FONT` must never appear.
+5. Do **not** run `render-video.sh` or `app.sh`. The final renders run centrally, one at a time: `render-video.sh <slug> fr` makes `<slug>-fr.mp4`, and `app.sh <slug> fr` makes the phone app's copy.
+
 ## Report when done (compact, ~250 words)
-Slug, length, chapters (titles), voice, the music (credit lines), the look (palette, fonts, motif), the key facts with their source URLs, anything you left out or weren't sure about, and the times of 3 stills that best show the video.
+Slug, length, chapters (titles), voice, the music (credit lines), the look (palette, fonts, motif), the key facts with their source URLs, anything you left out or weren't sure about, and the times of 3 stills that best show the video. With a French version: its length, and any line the recognition still flags.
 
 ## Then: the dialogue version
 Every video also gets a dialogue version, in which two narrators talk the story through. When the monologue version is finished and checked, read `$S/DIALOGUE.md` and make it (your task names the cast), then send one report covering both.
