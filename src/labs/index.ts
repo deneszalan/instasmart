@@ -198,4 +198,9 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'blood-cells-epigenetic-clock': lazy(() => import('./body/blood-cells-epigenetic-clock')),
   'decaf-coffee-caffeine-removal': lazy(() => import('./chemistry/decaf-coffee-caffeine-removal')),
   'caffe-orzo-roasted-barley': lazy(() => import('./chemistry/caffe-orzo-roasted-barley')),
+  'takrouna-maori-battalion-cliff': lazy(() => import('./engineering/takrouna-maori-battalion-cliff')),
+  'mareth-line-museum-casemates': lazy(() => import('./engineering/mareth-line-museum-casemates')),
+  'ksar-ghilane-force-l-stele': lazy(() => import('./engineering/ksar-ghilane-force-l-stele')),
+  'dar-sebastian-hammamet-legend': lazy(() => import('./engineering/dar-sebastian-hammamet-legend')),
+  'longstop-hill-three-names': lazy(() => import('./engineering/longstop-hill-three-names')),
 };

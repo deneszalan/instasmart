@@ -1,0 +1,166 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-ksar-ghilane-force-l-stele",
+  "field": "engineering",
+  "title": "At the oasis of Ksar Ghilane, a stele recalls Free French troops from Chad, March 1943",
+  "emoji": "🏜️",
+  "body": "**Ksar Ghilane** is an oasis on the eastern edge of the Grand Erg Oriental, Tunisia’s sea of dunes, linked by an asphalt road to Douz, 80 km to the north. Visitors come for the dunes and a warm spring. Within a kilometre of the palms are the ruins of **Tisavar**, a Roman fort built under Emperor Commodus (180–192) or earlier, and a stele known locally as General Leclerc’s column. It recalls 23 February to 10 March 1943, when **Force L**, the Free French troops of General Philippe Leclerc, held the oasis. With colonial troops from Chad, Leclerc had taken the Fezzan from Italian Libya, then joined General Montgomery’s British Eighth Army on 26 January 1943. Ksar Ghilane lay on the desert flank, west of the Axis-held Mareth Line. On 10 March 1943 a German armoured group attacked; with Allied aircraft striking it, among them Kittyhawks of No. 3 Squadron, Royal Australian Air Force, the attack was beaten off. In August 1943 Force L became the core of the French 2nd Armoured Division. Check current travel advice and local conditions before heading into the desert.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Near the oasis of Ksar Ghilane stand a 1943 stele and the Roman fort of Tisavar. At least how much older is the fort?",
+      "min": 0,
+      "max": 3000,
+      "step": 50,
+      "answer": 1750,
+      "unit": "years",
+      "explanation": "At least 1,750 years: Tisavar was built under Emperor Commodus, who reigned from AD 180 to 192, or earlier. Both mark a desert frontier."
+    },
+    {
+      "type": "video",
+      "src": "ksar-ghilane.mp4",
+      "poster": "ksar-ghilane.jpg",
+      "alt": "Animation at dusk: dunes in bands of gold and rust, palms around a spring, a ruined Roman fort and a slim stele. A schematic map traces Force L from Chad through the Fezzan to the oasis, west of the Mareth Line; a red arrow stops short of the palms on 10 March 1943; aircraft pass.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Reawakening” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "ksar-ghilane-force-l-stele",
+      "prompt": "Guess how far Force L had come: set the distance from Fort-Lamy in Chad to Ksar Ghilane, then measure. Get within 15%.",
+      "takeaway": "About 2,390 km in a straight line, 2,470 via the Fezzan; the desert tracks were longer still."
+    },
+    {
+      "type": "timeline",
+      "heading": "Force L, 1943",
+      "events": [
+        {
+          "when": "26 Jan 1943",
+          "text": "Leclerc joins Montgomery’s Eighth Army"
+        },
+        {
+          "when": "23 Feb 1943",
+          "text": "Force L at Ksar Ghilane, says the stele"
+        },
+        {
+          "when": "10 Mar 1943",
+          "text": "A German attack is beaten off, with air support"
+        },
+        {
+          "when": "24 Aug 1943",
+          "text": "It becomes the 2nd Armoured Division"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "heading": "What to see",
+      "style": "bullets",
+      "items": [
+        "Tisavar, the Roman fort, within a kilometre of the palms",
+        "The stele, ‘General Leclerc’s column’, about 1 km east of the fighting",
+        "The warm spring and the dunes of the Grand Erg Oriental",
+        "Check travel advice before heading into the desert"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Free French troops held the oasis of Ksar Ghilane in March 1943. Where had General Leclerc’s Force L come from?",
+      "options": [
+        "Chad",
+        "Algeria",
+        "Egypt",
+        "Morocco"
+      ],
+      "answer": 0,
+      "explanation": "From Chad, across the Sahara, taking the Fezzan from Italian Libya on the way. The stele says they came “from Chad”."
+    }
+  ],
+  "tags": [
+    "ksarghilane",
+    "oasis",
+    "leclerc",
+    "freefrench",
+    "sahara",
+    "visit"
+  ],
+  "source": {
+    "label": "French Ministry of the Armed Forces, Chemins de mémoire: Philippe Leclerc",
+    "url": "https://www.defense.gouv.fr/chemins-memoire/histoire-memoires/personnalites/personnalites-lettre-e-lettre-m/philippe-leclerc"
+  },
+  "createdAt": "2026-11-02T11:21:16Z",
+  "theme": {
+    "gradient": [
+      "#1a1430",
+      "#7a3f2a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}
