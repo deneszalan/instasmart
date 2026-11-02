@@ -1,0 +1,75 @@
+{
+  "id": "politics-moncef-bey-deposed-1943",
+  "title": "Moncef Bey a régné onze mois sur la Tunisie en guerre, puis la France l’a déposé",
+  "body": "La Tunisie est alors un protectorat français : le bey de Tunis signe les lois, mais le résident général de France gouverne. **Moncef Bey** monte sur le trône le 19 juin 1942, réclame à Vichy des réformes en faveur des Tunisiens et nomme le 1er janvier 1943 un gouvernement de Tunisiens dirigé par M’hamed Chenik. Dès novembre 1942, Allemands et Italiens occupent Tunis et l’est du pays ; les Allemands imposent le travail forcé à quelque 4 000 hommes juifs et prélèvent 20 millions de francs sur la communauté juive. Selon l’[encyclopédie du musée américain de l’Holocauste](https://encyclopedia.ushmm.org/content/fr/article/anti-jewish-legislation-in-north-africa), des responsables locaux, dont Moncef Bey, ont bloqué les lois antijuives, malgré une autorité réduite par le protectorat ; il a aussi ajourné expulsions et « aryanisation » à la demande de la communauté juive. Après la capitulation de l’Axe, les autorités françaises d’Alger, sous le général Henri Giraud, le déposent le 14 mai 1943 pour collaboration ; le général Alphonse Juin, chargé de l’opération, écrira n’avoir rien trouvé de sérieux contre lui. Exilé en Algérie puis à Pau, il y meurt en 1948 ; il repose à Tunis.",
+  "slides": [
+    {
+      "question": "Moncef Bey devient bey de Tunis le 19 juin 1942. Combien de jours règne-t-il avant d’être déposé par la France ?",
+      "unit": "jours",
+      "explanation": "329 jours, du 19 juin 1942 au 14 mai 1943. Son exil, jusqu’à sa mort à Pau le 1er septembre 1948, a duré 1 937 jours."
+    },
+    {
+      "alt": "Animation sur fond bleu nuit, frise d’étoiles à huit branches : la silhouette du bey face au résident général, des décrets antijuifs qui attendent son sceau, des cercles du pouvoir, puis une carte schématique de son exil de Tunis à Laghouat, Ténès et Pau.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "moncef-bey-fr.mp4",
+      "poster": "moncef-bey-fr.jpg"
+    },
+    {
+      "prompt": "Fais défiler les mois depuis juin 1942. Trouve le mois où Moncef Bey perd son trône, puis compare ses jours de règne et ses jours d’exil.",
+      "takeaway": "Mai 1943 : 329 jours sur le trône. L’exil dure ensuite 1 937 jours, près de six fois plus, jusqu’à sa mort à Pau le 1er septembre 1948."
+    },
+    {
+      "heading": "Déposé en mai 1943",
+      "left": {
+        "label": "L’accusation française",
+        "text": "Les autorités françaises d’Alger déposent Moncef Bey en l’accusant d’avoir collaboré avec les occupants allemands et italiens."
+      },
+      "right": {
+        "label": "Le verdict de Juin",
+        "text": "Le général Alphonse Juin, chargé de la destitution, écrit dans ses mémoires n’avoir rien trouvé de sérieux contre lui."
+      }
+    },
+    {
+      "heading": "Le bey et les Juifs de Tunisie",
+      "text": "Les Juifs de Tunisie sont sujets du bey. Selon le musée américain de l’Holocauste, des responsables locaux, dont Moncef Bey, ont bloqué les lois antijuives ; il a aussi ajourné expulsions et « aryanisation » à la demande de la communauté juive. Mais son pouvoir restait limité, et la persécution a continué."
+    },
+    {
+      "heading": "Règne et exil",
+      "events": [
+        {
+          "when": "19 juin 1942",
+          "text": "Moncef Bey monte sur le trône"
+        },
+        {
+          "when": "nov. 1942",
+          "text": "L’Axe occupe Tunis"
+        },
+        {
+          "when": "14 mai 1943",
+          "text": "Déposé, envoyé en Algérie"
+        },
+        {
+          "when": "oct. 1945",
+          "text": "Transféré à Pau, en France"
+        },
+        {
+          "when": "1er sept. 1948",
+          "text": "Meurt en exil à Pau"
+        }
+      ]
+    },
+    {
+      "question": "Qui a déposé Moncef Bey, bey de Tunis, en mai 1943 ?",
+      "options": [
+        "Les autorités françaises d’Alger",
+        "L’armée allemande",
+        "L’armée italienne",
+        "Un parlement tunisien"
+      ],
+      "explanation": "Les autorités françaises d’Alger, sous le général Henri Giraud, après la capitulation de l’Axe en Tunisie, en l’accusant de collaboration. Il meurt en exil en 1948."
+    }
+  ],
+  "source": {
+    "label": "USHMM, Encyclopédie de la Shoah : la législation antijuive en Afrique du Nord"
+  }
+}

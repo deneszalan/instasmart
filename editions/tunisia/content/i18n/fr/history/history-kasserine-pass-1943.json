@@ -1,0 +1,71 @@
+{
+  "id": "history-kasserine-pass-1943",
+  "title": "Repoussée de 80 km en Tunisie en 1943, l’armée américaine apprend à se battre autrement",
+  "body": "En février 1943, au centre de la Tunisie, l’armée américaine livre sa première campagne contre l’armée allemande. Le 14 février, deux divisions blindées allemandes frappent Sidi Bou Zid, où l’infanterie américaine occupe des collines trop éloignées pour s’entraider ; la 1re division blindée perd 98 chars et environ la moitié de sa force en deux jours, selon l’historien Martin Blumenson. Les Alliés reculent d’environ 80 km, jusqu’à la Dorsale occidentale, et les 19 et 20 février les troupes allemandes et italiennes d’Erwin Rommel percent à la **passe de Kasserine**. Elles sont arrêtées à Sbiba, au djebel el-Hamra et à Thala, où l’artillerie alliée massée brise la dernière attaque le 22 février ; la passe est reprise le 25. Le [National WWII Museum](https://www.nationalww2museum.org/war/articles/battle-kasserine-pass) en cite les causes : terrain mal reconnu, divisions dispersées, Alliés mal coordonnés, inexpérience. Ensuite, le Britannique Harold Alexander prend la tête des armées alliées, George S. Patton remplace Lloyd Fredendall au IIe corps le 6 mars, et l’entraînement est revu. Le 23 mars, à El Guettar, les Américains tiennent.",
+  "slides": [
+    {
+      "question": "En février 1943, de combien de miles environ (1 mile = 1,6 km) les Alliés ont-ils reculé au centre de la Tunisie ?",
+      "unit": "miles",
+      "explanation": "Environ 50 miles (80 km) : de la Dorsale orientale, près du col de Faïd, aux cols de la Dorsale occidentale, où ils tiennent à Sbiba, au djebel el-Hamra et à Thala."
+    },
+    {
+      "alt": "Animation sur une carte schématique du centre de la Tunisie : deux chaînes hachurées, les flèches rouille des attaques allemandes et italiennes par Sidi Bou Zid et la passe de Kasserine, des barres bleues où les Alliés tiennent, puis le commandement allié et El Guettar.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "kasserine-fr.mp4",
+      "poster": "kasserine-fr.jpg"
+    },
+    {
+      "prompt": "Règle le nombre de positions et leur écart : toute la brèche surveillée, chacune à portée d’un voisin.",
+      "takeaway": "Deux positions ne couvrent la brèche que hors de portée l’une de l’autre, comme à Sidi Bou Zid. Trois ou quatre, plus proches, la tiennent."
+    },
+    {
+      "heading": "Kasserine, 1943",
+      "events": [
+        {
+          "when": "14 févr.",
+          "text": "Les Panzer frappent Sidi Bou Zid"
+        },
+        {
+          "when": "19–20 févr.",
+          "text": "Erwin Rommel prend la passe"
+        },
+        {
+          "when": "22 févr.",
+          "text": "L’artillerie alliée tient Thala"
+        },
+        {
+          "when": "6 mars",
+          "text": "George S. Patton au IIe corps"
+        },
+        {
+          "when": "23 mars",
+          "text": "Les Américains tiennent à El Guettar"
+        }
+      ]
+    },
+    {
+      "heading": "Les leçons de Kasserine",
+      "left": {
+        "label": "Pourquoi cette défaite",
+        "text": "Terrain mal reconnu, divisions dispersées, unités trop éloignées les unes des autres, Alliés mal coordonnés."
+      },
+      "right": {
+        "label": "Ce qui a changé",
+        "text": "Un seul commandement allié sous Harold Alexander, Patton au IIe corps, un entraînement revu, des unités placées pour se couvrir."
+      }
+    },
+    {
+      "question": "Qu’est-ce qui a arrêté la dernière attaque allemande de la bataille de Kasserine, à Thala (Tunisie), le 22 février 1943 ?",
+      "options": [
+        "L’artillerie alliée massée",
+        "Des pluies inondant les routes",
+        "Des parachutistes sur ses arrières",
+        "Une flotte française au large"
+      ],
+      "explanation": "Les canons britanniques et américains massés, dont ceux de la 9e division d’infanterie américaine tout juste arrivés du Maroc, brisent l’attaque. Rommel met alors fin à l’offensive."
+    }
+  ],
+  "source": {
+    "label": "The National WWII Museum : la bataille de la passe de Kasserine"
+  }
+}

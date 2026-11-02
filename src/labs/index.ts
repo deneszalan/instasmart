@@ -203,4 +203,9 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'ksar-ghilane-force-l-stele': lazy(() => import('./engineering/ksar-ghilane-force-l-stele')),
   'dar-sebastian-hammamet-legend': lazy(() => import('./engineering/dar-sebastian-hammamet-legend')),
   'longstop-hill-three-names': lazy(() => import('./engineering/longstop-hill-three-names')),
+  'kasserine-pass-1943': lazy(() => import('./history/kasserine-pass-1943')),
+  'moncef-bey-deposed-1943': lazy(() => import('./politics/moncef-bey-deposed-1943')),
+  'keith-douglas-alamein-to-zem-zem': lazy(() => import('./literature/keith-douglas-alamein-to-zem-zem')),
+  'wedding-song-albou-tunis-1942': lazy(() => import('./art/wedding-song-albou-tunis-1942')),
+  'medjez-el-bab-war-cemetery': lazy(() => import('./earth/medjez-el-bab-war-cemetery')),
 };
