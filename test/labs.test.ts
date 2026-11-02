@@ -2028,6 +2028,7 @@ describe('lab maths', () => {
     expect(longAngle(0.3, 0.42)).toBeCloseTo(45, 6);
     expect(longShare(0, 1)).toBeCloseTo(1, 9);
     expect(longShare(0, 0.56)).toBeCloseTo(0.5, 9);
+  });
   it('kasserine: two positions can cover the gap only out of each other’s reach; three or four close together hold it', () => {
     expect(KAS_GAP).toBe(4);
     expect(KAS_REACH).toBe(1);

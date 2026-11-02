@@ -343,7 +343,6 @@ export const fr: Record<string, string> = {
   'Normandy, inset': 'Normandie, en médaillon',
   'North Africa, schematic map': 'Afrique du Nord, carte schématique',
   'Place to put on the map': 'Lieu à placer sur la carte',
-  'Places found': 'Lieux trouvés',
   'Tilly-sur-Seulles, Normandy, 9 June 1944: killed three days after D-Day, aged 24.': 'Tilly-sur-Seulles, Normandie, 9 juin 1944\u00a0: tué trois jours après le Débarquement, à 24 ans.',
   'Tunisia, 1943: back in the fight. “Aristocrats” is dated Tunisia 1943.': 'Tunisie, 1943\u00a0: de retour au combat. «\u00a0Aristocrats\u00a0» est daté «\u00a0Tunisie 1943\u00a0».',
   'Tunisia, in 1943': 'Tunisie, en 1943',

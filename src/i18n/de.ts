@@ -2704,7 +2704,6 @@ export const de: Record<string, string> = {
   'Normandy, inset': 'Normandie, Ausschnitt',
   'North Africa, schematic map': 'Nordafrika, schematische Karte',
   'Place to put on the map': 'Ort, der auf die Karte soll',
-  'Places found': 'Gefundene Orte',
   'Tilly-sur-Seulles, Normandy, 9 June 1944: killed three days after D-Day, aged 24.': 'Tilly-sur-Seulles, Normandie, 9. Juni 1944: drei Tage nach dem D-Day gefallen, mit 24 Jahren.',
   'Tunisia, 1943: back in the fight. “Aristocrats” is dated Tunisia 1943.': 'Tunesien, 1943: wieder im Kampf. „Aristocrats“ ist mit Tunesien 1943 datiert.',
   'Tunisia, in 1943': 'Tunesien, 1943',
