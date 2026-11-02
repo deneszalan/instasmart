@@ -1,8 +1,9 @@
 import { EDITION } from '../edition';
 import type { Lang } from '../../shared/translate.ts';
 import { de } from './de';
+import { fr } from './fr';
 
-const TABLES: Partial<Record<Lang, Record<string, string>>> = { de };
+const TABLES: Partial<Record<Lang, Record<string, string>>> = { de, fr };
 
 /** The languages a reader can pick in this edition, its own first. */
 export const LANGS: readonly Lang[] = [EDITION.lang, ...(Object.keys(EDITION.langs ?? {}) as Lang[])];

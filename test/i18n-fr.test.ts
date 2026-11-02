@@ -1,6 +1,7 @@
-import { readdirSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join, sep } from 'node:path';
 import { describe, expect, it } from 'vitest';
+import { EDITIONS, type Edition } from '../shared/editions';
 import { fr } from '../src/i18n/fr';
 
 const src = join(__dirname, '..', 'src');
@@ -49,6 +50,32 @@ describe('French text', () => {
   it('has a translation for every text the app outside the labs passes to t()', () => {
     expect(app.size).toBeGreaterThan(0);
     expect([...app].filter((k) => !(k in fr))).toEqual([]);
+  });
+
+  it('has a translation for every text of the labs in the apps that offer French', () => {
+    const registry = readFileSync(join(src, 'labs', 'index.ts'), 'utf8');
+    const labFile = (id: string) => {
+      const m = new RegExp(`'${id}': lazy\\(\\(\\) => import\\('\\./([^']+)'\\)\\)`).exec(registry);
+      return m ? join(src, 'labs', `${m[1]}.tsx`) : null;
+    };
+    const missing: string[] = [];
+    for (const edition of Object.values(EDITIONS) as Edition[]) {
+      if (!edition.langs || !('fr' in edition.langs)) continue;
+      const dir = join(__dirname, '..', edition.dir, 'content', 'posts');
+      if (!existsSync(dir)) continue;
+      for (const field of readdirSync(dir)) {
+        for (const name of readdirSync(join(dir, field))) {
+          const post = JSON.parse(readFileSync(join(dir, field, name), 'utf8')) as { slides?: { type: string; lab?: string }[] };
+          for (const slide of post.slides ?? []) {
+            if (slide.type !== 'explore' || !slide.lab) continue;
+            const file = labFile(slide.lab);
+            if (!file) continue;
+            for (const key of keysUsed(readFileSync(file, 'utf8'))) if (!(key in fr)) missing.push(`${slide.lab}: ${key}`);
+          }
+        }
+      }
+    }
+    expect(missing).toEqual([]);
   });
 
   it('has no translations that nothing uses', () => {
