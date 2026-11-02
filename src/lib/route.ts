@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 
-export type Tab = 'home' | 'news' | 'explore' | 'saved' | 'profile';
+/** `films` is the page of long films, opened from the top bar in an edition that has them. */
+export type Tab = 'home' | 'news' | 'explore' | 'saved' | 'profile' | 'films';
 
 export interface Route {
   tab: Tab;
@@ -12,7 +13,7 @@ export interface Route {
   by: string;
 }
 
-const TABS: Tab[] = ['home', 'news', 'explore', 'saved', 'profile'];
+const TABS: Tab[] = ['home', 'news', 'explore', 'saved', 'profile', 'films'];
 
 export function parseHash(hash: string): Route {
   const [path, query = ''] = hash.replace(/^#\/?/, '').split('?');

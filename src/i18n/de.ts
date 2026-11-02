@@ -3017,4 +3017,8 @@ export const de: Record<string, string> = {
   '{ft} ft ({m} m)': '{ft} Fuß ({m} m)',
   'Feet shot for each foot kept': 'Gedrehte Fuß pro behaltenem Fuß',
   'Final cut, minutes': 'Endfassung, Minuten',
+  'The films': 'Die Filme',
+  'One long film for each section, 5 to 10 minutes.': 'Ein langer Film für jede Rubrik, 5 bis 10 Minuten.',
+  'English version': 'Englische Fassung',
+  'Coming soon': 'Demnächst',
 };
