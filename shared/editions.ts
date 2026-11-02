@@ -145,7 +145,8 @@ export const EDITIONS = {
       'Tunisia 1943: the Second World War in Tunisia in short animations and stories: the campaign of 1942–43, life under occupation, the novels and films it inspired, and how it is remembered.',
     dir: 'editions/tunisia',
     path: 'tunisia',
-    fields: ['history', 'politics', 'literature', 'art', 'earth', 'engineering'],
+    // The sections that have posts; the others (history, politics, literature, art, earth) join as theirs arrive.
+    fields: ['engineering'],
     fieldText: {
       history: { name: 'Campaign', handle: 'front.de.tunisie', emoji: '🪖', gradient: ['#3f3a24', '#8a6d2f'], scope: 'The fighting of November 1942 to May 1943: armies, battles, terrain and supplies' },
       politics: { name: 'Occupation', handle: 'tunis.1942', emoji: '📜', gradient: ['#1f2a44', '#7c2d12'], scope: 'Life under the war: the Bey, the French, the Axis occupation, and Tunisia’s Jews, Muslims and Europeans' },
