@@ -273,7 +273,8 @@ type LabelBox = { x0: number; y0: number; x1: number; y1: number };
  * Puts labels where they cover least of a drawing, for stages from a short phone to a tall tablet. Record the lines
  * and dots as marks first (`mark`, `path`, `block`); each `put` then tries its spots in order and takes the first
  * that covers no mark and no label put before it and stays on the stage, or else the one that covers least, on a
- * dark backing if one is given. `around` gives the spots beside a dot, `beside` those beside a line.
+ * dark backing if one is given (a `halo` instead lets a line pass behind the text). `around` gives the spots
+ * beside a dot, `beside` those beside a line.
  */
 export function labelPlacer(ctx: CanvasRenderingContext2D, w: number, h: number) {
   const marks: { x: number; y: number; r: number }[] = [];
@@ -300,12 +301,12 @@ export function labelPlacer(ctx: CanvasRenderingContext2D, w: number, h: number)
   };
   /**
    * Spots for a label of `size` beside a dot, each keeping the label at least `r` + 2 px from its centre: the first
-   * side of `sides`, then a step or two further out that way, then the next side, and so on, so a name moves a
-   * little along its own side before it swaps sides.
+   * side of `sides`, then up to `steps` - 1 steps of 6 px further out that way, then the next side, and so on, so a
+   * name moves a little along its own side before it swaps sides.
    */
-  const around = (x: number, y: number, r: number, size: number, sides: LabelSide[]): LabelSpot[] =>
+  const around = (x: number, y: number, r: number, size: number, sides: LabelSide[], steps = 4): LabelSpot[] =>
     sides
-      .flatMap((d, rank) => [0, 1, 2, 3].map((step) => ({ d, step, order: 2 * rank + step + rank / 10 })))
+      .flatMap((d, rank) => Array.from({ length: steps }, (_, step) => ({ d, step, order: 2 * rank + step + rank / 10 })))
       .sort((a, b) => a.order - b.order)
       .map(({ d, step }): LabelSpot => {
         const g = r + 3 + step * 6, half = size * 0.575, c = (g - 1) * 0.72;
@@ -331,7 +332,7 @@ export function labelPlacer(ctx: CanvasRenderingContext2D, w: number, h: number)
    * Draws a label at the best of `spots`, trying each of `options` (the same text on one line, then on more), and
    * keeps it clear of the labels put after it. Returns its box.
    */
-  const put = (options: string[][], size: number, color: string, spots: LabelSpot[], { weight = 700, backing }: { weight?: number; backing?: string } = {}) => {
+  const put = (options: string[][], size: number, color: string, spots: LabelSpot[], { weight = 700, backing, halo }: { weight?: number; backing?: string; halo?: string } = {}) => {
     font(ctx, size, weight);
     let best = { c: Infinity, lines: options[0], spot: spots[0] };
     search: for (const lines of options)
@@ -348,7 +349,20 @@ export function labelPlacer(ctx: CanvasRenderingContext2D, w: number, h: number)
       ctx.roundRect(b.x0 - 2, b.y0, b.x1 - b.x0 + 4, b.y1 - b.y0, 4);
       ctx.fill();
     }
-    best.lines.forEach((s, i) => label(ctx, s, best.spot.x, b.y0 + 1 + (i + 0.5) * size * 1.15, { size, weight, color, align: best.spot.align }));
+    best.lines.forEach((s, i) => {
+      const y = b.y0 + 1 + (i + 0.5) * size * 1.15;
+      if (halo) {
+        ctx.save();
+        ctx.strokeStyle = halo;
+        ctx.lineWidth = 3.5;
+        ctx.lineJoin = 'round';
+        ctx.textAlign = best.spot.align;
+        ctx.textBaseline = 'middle';
+        ctx.strokeText(s, best.spot.x, y);
+        ctx.restore();
+      }
+      label(ctx, s, best.spot.x, y, { size, weight, color, align: best.spot.align });
+    });
     return b;
   };
   return { mark, path, block, around, beside, put };

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { C, dot, label, Readouts, Stage, useGoal, type LabProps, type StagePointer } from '../kit';
+import { C, clamp, dot, font, labelPlacer, Readouts, Stage, useGoal, type LabelSide, type LabProps, type StagePointer } from '../kit';
 import { t } from '../../i18n';
 import { formatNumber } from '../../lib/format';
 
@@ -36,6 +36,16 @@ const OUTLINE: [number, number][] = [[36.95, 8.76], [37.23, 9.22], [37.27, 9.87]
 const BOX = { lat0: 34.15, lat1: 37.45, lon0: 7.9, lon1: 11.2 };
 const KM_LAT = 111.2, KM_LON = 111.2 * Math.cos((35.4 * Math.PI) / 180);
 const PENCIL = '#c8553d';
+/** Where each name goes beside its dot, in order of preference: Bizerte east, clear of Mateur's name to its south-west. */
+const SIDES: Record<PlaceId, LabelSide[]> = {
+  sbeitla: ['W', 'NW', 'E', 'SW', 'N', 'NE', 'S', 'SE'],
+  feriana: ['W', 'SW', 'NW', 'S', 'E', 'SE', 'N', 'NE'],
+  gafsa: ['W', 'E', 'SW', 'SE', 'S', 'NW', 'NE', 'N'],
+  mateur: ['W', 'NW', 'SW', 'E', 'N', 'S', 'NE', 'SE'],
+  bizerte: ['E', 'NE', 'W', 'NW', 'N', 'SE', 'S', 'SW'],
+};
+/** Room under the map for its caption, so the outline never runs through it. */
+const CAPTION = 16;
 
 export default function PyleTunisia({ onDone }: LabProps) {
   const [placed, setPlaced] = useState<PlaceId[]>([]);
@@ -45,9 +55,10 @@ export default function PyleTunisia({ onDone }: LabProps) {
   useGoal(!next, onDone);
 
   const frame = (w: number, h: number) => {
-    const wk = (BOX.lon1 - BOX.lon0) * KM_LON, hk = (BOX.lat1 - BOX.lat0) * KM_LAT;
-    const s = Math.min((w - 8) / wk, (h - 8) / hk);
-    return { s, ox: (w - wk * s) / 2, oy: (h - hk * s) / 2 };
+    // 8 px over the map, so a name beside Bizerte, near its top, stays on the stage
+    const wk = (BOX.lon1 - BOX.lon0) * KM_LON, hk = (BOX.lat1 - BOX.lat0) * KM_LAT, mh = h - CAPTION;
+    const s = Math.min((w - 8) / wk, (mh - 12) / hk);
+    return { s, ox: (w - wk * s) / 2, oy: 8 + (mh - 12 - hk * s) / 2 };
   };
   const toXY = (lat: number, lon: number, w: number, h: number): [number, number] => {
     const { s, ox, oy } = frame(w, h);
@@ -67,22 +78,36 @@ export default function PyleTunisia({ onDone }: LabProps) {
 
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
     if (w !== size.w || h !== size.h) queueMicrotask(() => setSize({ w, h }));
-    ctx.save(); ctx.beginPath(); ctx.rect(0, 0, w, h); ctx.clip();
+    const place = labelPlacer(ctx, w, h);
+    // the outline, cut off above the caption's strip
+    const outline = OUTLINE.map(([la, lo]) => toXY(la, lo, w, h));
+    ctx.save(); ctx.beginPath(); ctx.rect(0, 0, w, h - CAPTION); ctx.clip();
     ctx.fillStyle = 'rgba(239,232,214,0.16)'; ctx.strokeStyle = 'rgba(255,255,255,0.45)'; ctx.lineWidth = 1.5;
-    ctx.beginPath(); OUTLINE.forEach(([la, lo], i) => { const [x, y] = toXY(la, lo, w, h); i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }); ctx.closePath(); ctx.fill(); ctx.stroke(); ctx.restore();
+    ctx.beginPath(); outline.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); ctx.closePath(); ctx.fill(); ctx.stroke(); ctx.restore();
     const fs = Math.max(10, Math.min(13, w / 28));
-    const [tx, ty] = toXY(36.8, 10.18, w, h); dot(ctx, tx, ty, 3, C.soft); label(ctx, 'Tunis', tx + 5, ty + 9, { size: fs - 1, color: C.soft, align: 'left' });
-    for (const p of PLACES) {
-      if (!placed.includes(p.id)) continue;
-      const [x, y] = toXY(p.lat, p.lon, w, h);
-      dot(ctx, x, y, 5, PENCIL);
-      label(ctx, p.name, x - 7, y, { size: fs, color: C.ink, align: 'right' });
-    }
+    // the caption in its strip, smaller on a narrow phone so it stays on one line
+    const caption = t('Schematic map of northern and central Tunisia');
+    font(ctx, fs - 2);
+    const cs = clamp(((fs - 2) * (w - 8)) / ctx.measureText(caption).width, 7.5, fs - 2);
+    place.put([[caption]], cs, C.faint, [{ x: w / 2, y: h - 2, align: 'center', v: 'bottom' }]);
+    place.block(0, h - CAPTION, w, h);
+    // the dots first, then their names beside them, clear of the dots and each other; the outline may pass behind a
+    // name, on a dark halo, rather than push it far from its dot on a small map
+    const [tx, ty] = toXY(36.8, 10.18, w, h);
+    dot(ctx, tx, ty, 3, C.soft);
+    place.mark(tx, ty, 4.5);
+    const found = PLACES.filter((p) => placed.includes(p.id)).map((p) => ({ p, at: toXY(p.lat, p.lon, w, h) }));
+    // smaller dots on a small map, so Mateur's and Bizerte's don't touch
+    const r = clamp(14 * frame(w, h).s, 3.5, 5);
+    for (const { at: [x, y] } of found) { dot(ctx, x, y, r, PENCIL); place.mark(x, y, r + 1.5); }
     if (tap && next) {
       const [x, y] = toXY(tap.lat, tap.lon, w, h);
       ctx.strokeStyle = C.bad; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(x - 6, y - 6); ctx.lineTo(x + 6, y + 6); ctx.moveTo(x + 6, y - 6); ctx.lineTo(x - 6, y + 6); ctx.stroke();
+      place.mark(x, y, 9);
     }
-    label(ctx, t('Schematic map of northern and central Tunisia'), w / 2, h - 8, { size: fs - 2, color: C.faint });
+    const halo = 'rgba(32,28,22,0.9)';
+    for (const { p, at: [x, y] } of found) place.put([[p.name]], fs, C.ink, place.around(x, y, r, fs, SIDES[p.id], 2), { halo });
+    place.put([['Tunis']], fs - 1, C.soft, place.around(tx, ty, 3, fs - 1, ['SE', 'E', 'S', 'SW', 'W', 'NE', 'N', 'NW']), { halo });
   };
 
   const off = tap && next ? kmBetween(tap.lat, tap.lon, next.lat, next.lon) : null;
