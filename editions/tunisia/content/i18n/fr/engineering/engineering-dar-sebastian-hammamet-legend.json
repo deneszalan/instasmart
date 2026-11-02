@@ -1,0 +1,85 @@
+{
+  "id": "engineering-dar-sebastian-hammamet-legend",
+  "title": "Dar Sebastian, à Hammamet : les guides y logent Rommel, les archives sont plus minces",
+  "body": "**Dar Sebastian**, à Hammamet, est la villa que George Sebastian, né en Roumanie, fit bâtir vers 1930 (les sources donnent de 1927 à 1934), dans un jardin d’une dizaine d’hectares au bord de la mer. Il la vendit à l’État tunisien dans les années 1960 ; c’est aujourd’hui le Centre culturel international de Hammamet, dont le président Habib Bourguiba inaugura le théâtre de plein air en 1964 et qui accueille chaque été le festival de Hammamet. Les guides disent souvent que Rommel en fit son quartier général. L’écrivain tunisien Hatem Bourial, qui a raconté son histoire, écrit que Sebastian partit en 1939 et que la maison fut réquisitionnée par l’armée allemande ; de Rommel, il dit seulement qu’il « y aurait même passé quelques nuits ». Les dates sont serrées : Rommel prit le commandement du groupe d’armées Afrique en Tunisie le 23 février 1943 et quitta l’Afrique le 9 mars. Aucune de ces sources ne cite de document d’époque. Même chose pour l’histoire, reprise sans date par l’agence TAP, d’un Churchill écrivant ici une partie de ses mémoires. Profitez de la maison et du jardin, et pesez les récits de guerre source par source. Vérifiez les horaires sur place.",
+  "slides": [
+    {
+      "alt": "Animation : une villa blanche à arcades et petite coupole dans un jardin vert au bord de la mer, à Hammamet, un théâtre de plein air à côté. Des fiches tamponnées DOCUMENTÉ, RAPPORTÉ ou RACONTÉ apparaissent une à une ; une frise de novembre 1942 à mai 1943 marque du 23 février au 9 mars 1943.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "dar-sebastian-fr.mp4",
+      "poster": "dar-sebastian-fr.jpg"
+    },
+    {
+      "prompt": "Parcours 1942-1943. Trouve le dernier jour où Rommel aurait pu dormir à Dar Sebastian.",
+      "takeaway": "Le 9 mars 1943 : il quitta l’Afrique ce jour-là. L’histoire ne peut tenir que quelques semaines début 1943, et aucun document d’époque ne la montre. Les dates écartent un récit ; seuls des documents le prouvent."
+    },
+    {
+      "heading": "Documenté, ou non prouvé ?",
+      "bins": [
+        "Documenté",
+        "Non prouvé"
+      ],
+      "items": [
+        {
+          "text": "Sebastian fit bâtir la villa vers 1930"
+        },
+        {
+          "text": "Bourguiba inaugura son théâtre en 1964"
+        },
+        {
+          "text": "Rommel en fit son quartier général"
+        },
+        {
+          "text": "Churchill y écrivit ses mémoires"
+        },
+        {
+          "text": "Les cendres de Sebastian sont au jardin"
+        }
+      ],
+      "explanation": "Maison, bâtisseur et théâtre sont attestés. Rommel et Churchill : aucun document d’époque. Les cendres, selon Bourial, sont une légende."
+    },
+    {
+      "heading": "Dar Sebastian",
+      "events": [
+        {
+          "when": "1927–1934",
+          "text": "Sebastian bâtit la villa (dates variables)"
+        },
+        {
+          "when": "nov. 1942",
+          "text": "Arrivée des troupes de l’Axe, présentes jusqu’en mai 1943"
+        },
+        {
+          "when": "9 mars 1943",
+          "text": "Rommel quitte l’Afrique pour de bon"
+        },
+        {
+          "when": "1964",
+          "text": "Bourguiba inaugure le théâtre de plein air"
+        }
+      ]
+    },
+    {
+      "heading": "À voir",
+      "items": [
+        "La maison : style local et touches Art déco",
+        "Le jardin, une dizaine d’hectares au bord de la mer",
+        "Le théâtre de plein air de 1964, lieu du festival d’été",
+        "Vérifiez les horaires sur place"
+      ]
+    },
+    {
+      "question": "Les guides disent que Rommel fit de Dar Sebastian, à Hammamet, son quartier général. Que permettent les dates ?",
+      "options": [
+        "Quelques semaines début 1943",
+        "Un séjour de 1940 à 1945",
+        "Rien : il ne vint pas en Tunisie",
+        "Un séjour avant-guerre, en 1938"
+      ],
+      "explanation": "Rommel prit le commandement en Tunisie le 23 février 1943 et quitta l’Afrique le 9 mars. L’histoire ne peut tenir qu’au début de 1943, et les sources ne citent aucun document d’époque."
+    }
+  ],
+  "source": {
+    "label": "Webdo (Hatem Bourial) : Hammamet, le fabuleux destin de George Sebastian"
+  }
+}

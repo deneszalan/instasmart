@@ -196,6 +196,7 @@ import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX,
 import { EYE as TAK_EYE, SEE_OUT as TAK_SEE, faceHidden as takFace, farthestBack as takBack, hiddenWidth as takHidden } from '../src/labs/engineering/takrouna-maori-battalion-cliff';
 import { MUSEUM as MARETH_MUSEUM, PLACES as MARETH_PLACES, angleGap as marethGap, bearing as marethBearing, distanceKm as marethKm, facing as marethFacing } from '../src/labs/engineering/mareth-line-museum-casemates';
 import { STRAIGHT as KSAR_STRAIGHT, TO_TUNIS as KSAR_TUNIS, VIA_FEZZAN as KSAR_VIA, close as ksarClose, distanceKm as ksarKm } from '../src/labs/engineering/ksar-ghilane-force-l-stele';
+import { AXIS_IN as DAR_AXIS_IN, LEFT as DAR_LEFT, axisInHammamet as darAxis, day as darDay, fits as darFits, lastFit as darLastFit, rommelAt as darRommel } from '../src/labs/engineering/dar-sebastian-hammamet-legend';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1994,5 +1995,19 @@ describe('lab maths', () => {
     expect(ksarClose(2050)).toBe(true);
     expect(ksarClose(2000)).toBe(false);
     expect(ksarClose(800)).toBe(false);
+  });
+
+  it('dar sebastian: the Rommel story can only fit from 23 February to 9 March 1943 for sure, and 9 March is the last possible day', () => {
+    expect(darDay(1943, 3, 9) - darDay(1943, 2, 23)).toBe(14);
+    expect(darLastFit()).toBe(DAR_LEFT);
+    expect(darFits(DAR_LEFT)).toBe('yes');
+    expect(darFits(DAR_LEFT + 1)).toBe('no');
+    expect(darFits(darDay(1943, 2, 10))).toBe('maybe');
+    expect(darFits(darDay(1942, 12, 25))).toBe('no');
+    expect(darRommel(darDay(1942, 12, 25))).toBe('libya');
+    expect(darRommel(darDay(1943, 4, 1))).toBe('gone');
+    expect(darAxis(DAR_AXIS_IN - 1)).toBe(false);
+    expect(darAxis(darDay(1943, 5, 12))).toBe(true);
+    expect(darAxis(darDay(1943, 5, 13))).toBe(false);
   });
 });

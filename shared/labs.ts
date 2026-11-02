@@ -201,6 +201,7 @@ export const LABS = {
   'takrouna-maori-battalion-cliff': 'Step back from the edge of a cliff and watch its face and foot drop out of sight: the dead ground below a steep rock like Takrouna’s.',
   'mareth-line-museum-casemates': 'Stand on the Mareth Line museum’s hill and turn a compass to face Mareth, Medenine, the Matmata hills and Gabès: which way the line looked.',
   'ksar-ghilane-force-l-stele': 'Guess how far General Leclerc’s Force L had come from Chad to the oasis of Ksar Ghilane, then measure it on a schematic map, straight and via the Fezzan.',
+  'dar-sebastian-hammamet-legend': 'Slide through November 1942 to May 1943 and test the story that Rommel slept at Hammamet’s Dar Sebastian against the dates: when could it fit at all?',
 } as const;
 
 export type LabId = keyof typeof LABS;

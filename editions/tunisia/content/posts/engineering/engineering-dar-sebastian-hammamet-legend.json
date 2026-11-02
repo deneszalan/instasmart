@@ -1,0 +1,187 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-dar-sebastian-hammamet-legend",
+  "field": "engineering",
+  "title": "Hammamet’s Dar Sebastian: guides say Rommel stayed there; the record is thinner",
+  "emoji": "🏡",
+  "body": "**Dar Sebastian** in Hammamet is the villa that George Sebastian, born in Romania, had built around 1930 (sources give 1927 to 1934), in a garden of about ten hectares by the sea. He sold it to the Tunisian state in the 1960s; it is now the International Cultural Centre of Hammamet, whose open-air theatre President Habib Bourguiba opened in 1964 and which hosts the Hammamet festival each summer. Guides often say Rommel used it as his headquarters. The Tunisian writer Hatem Bourial, who has written its history, says Sebastian left in 1939 and that the German army requisitioned the house; of Rommel he writes only that he “may even have spent a few nights” there. The dates are tight: Rommel took command of Army Group Africa in Tunisia on 23 February 1943 and left Africa on 9 March. None of these sources cites a wartime document. The same goes for the story, repeated by Tunisia’s news agency without a date, that Winston Churchill wrote part of his memoirs here. Enjoy the house and garden, and weigh the war stories source by source. Check opening times locally.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "dar-sebastian.mp4",
+      "poster": "dar-sebastian.jpg",
+      "alt": "Animation: a white villa with arcades and a small dome in a green garden by the sea at Hammamet, an open-air theatre beside it. Paper cards stamped DOCUMENTED, REPORTED or TOLD appear one by one; a date bar from November 1942 to May 1943 marks 23 February to 9 March 1943.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Tranquility” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "dar-sebastian-hammamet-legend",
+      "prompt": "Slide through 1942–43. Find the last day on which Rommel could have slept at Dar Sebastian.",
+      "takeaway": "9 March 1943: he left Africa that day for good. The story can fit only a few weeks of early 1943, and no wartime document in the sources shows it. Dates can rule a story out."
+    },
+    {
+      "type": "sort",
+      "heading": "Documented, or not proven?",
+      "bins": [
+        "Documented",
+        "Not proven"
+      ],
+      "items": [
+        {
+          "text": "Sebastian had the villa built around 1930",
+          "bin": 0
+        },
+        {
+          "text": "Bourguiba opened its theatre in 1964",
+          "bin": 0
+        },
+        {
+          "text": "Rommel made it his headquarters",
+          "bin": 1
+        },
+        {
+          "text": "Churchill wrote memoirs here",
+          "bin": 1
+        },
+        {
+          "text": "Sebastian’s ashes lie in the garden",
+          "bin": 1
+        }
+      ],
+      "explanation": "The house, its builder and its theatre are on record. The Rommel and Churchill stories come with no wartime document; the ashes, Bourial says, are a legend."
+    },
+    {
+      "type": "timeline",
+      "heading": "Dar Sebastian",
+      "events": [
+        {
+          "when": "1927–1934",
+          "text": "Sebastian builds the villa (dates differ)"
+        },
+        {
+          "when": "Nov 1942",
+          "text": "Axis troops arrive; they hold the area until May 1943"
+        },
+        {
+          "when": "9 Mar 1943",
+          "text": "Rommel leaves Africa for good"
+        },
+        {
+          "when": "1964",
+          "text": "Bourguiba opens the open-air theatre"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "heading": "What to see",
+      "style": "bullets",
+      "items": [
+        "The house: local style with Art Deco touches",
+        "The garden, about ten hectares by the sea",
+        "The open-air theatre of 1964, home of the summer festival",
+        "Check opening times locally"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Guides say Rommel used Hammamet’s Dar Sebastian as his headquarters. What do the dates allow?",
+      "options": [
+        "Only a few weeks in early 1943",
+        "Living there from 1940 to 1945",
+        "Nothing: he was never in Tunisia",
+        "A stay before the war, in 1938"
+      ],
+      "answer": 0,
+      "explanation": "Rommel took command in Tunisia on 23 February 1943 and left Africa on 9 March. The story can only fit early 1943, and the sources cite no wartime document."
+    }
+  ],
+  "tags": [
+    "hammamet",
+    "darsebastian",
+    "rommel",
+    "villa",
+    "legend",
+    "visit"
+  ],
+  "source": {
+    "label": "Webdo (Hatem Bourial): Hammamet, le fabuleux destin de George Sebastian",
+    "url": "https://www.webdo.tn/fr/actualite/les-billets-de-hatem-bourial/hammamet-le-fabuleux-destin-de-george-sebastian/188530"
+  },
+  "createdAt": "2026-11-02T11:22:15Z",
+  "theme": {
+    "gradient": [
+      "#0f2a3f",
+      "#2f6340"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}

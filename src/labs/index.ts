@@ -201,4 +201,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'takrouna-maori-battalion-cliff': lazy(() => import('./engineering/takrouna-maori-battalion-cliff')),
   'mareth-line-museum-casemates': lazy(() => import('./engineering/mareth-line-museum-casemates')),
   'ksar-ghilane-force-l-stele': lazy(() => import('./engineering/ksar-ghilane-force-l-stele')),
+  'dar-sebastian-hammamet-legend': lazy(() => import('./engineering/dar-sebastian-hammamet-legend')),
 };
