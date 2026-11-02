@@ -2894,8 +2894,6 @@ export const de: Record<string, string> = {
   'Schematic map of northern and central Tunisia': 'Schematische Karte von Nord- und Mitteltunesien',
   'Schematic map of Tunisia: tap where each place of Ernie Pyle’s book lies': 'Schematische Karte Tunesiens: Tippe, wo jeder Ort aus Ernie Pyles Buch liegt',
   'Tap the map for': 'Tippe auf der Karte auf',
-  'Your last tap': 'Dein letzter Tipp',
-  'Places found': 'Gefundene Orte',
   '{km} km away': '{km} km daneben',
   '{n} of {total} places': '{n} von {total} Orten',
   'all five placed': 'alle fünf gefunden',

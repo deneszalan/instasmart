@@ -2169,6 +2169,7 @@ describe('lab maths', () => {
     expect(GAMMARTH_KINDS.filter(atGammarth)).toEqual(['christian', 'jewish', 'unknown']);
     expect(gammarthAllSeen(['christian', 'jewish', 'unknown'])).toBe(false);
     expect(gammarthAllSeen(['muslim', 'christian', 'unknown', 'jewish'])).toBe(true);
+  });
   it('mareth: the hook covers 50 + 25 + 40 + 10 miles, about 200 km, and becomes the main attack on 23 March', () => {
     expect(marethHookMiles(16)).toBe(0);
     expect(marethHookMiles(17)).toBe(50);

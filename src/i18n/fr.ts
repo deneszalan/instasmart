@@ -533,8 +533,6 @@ export const fr: Record<string, string> = {
   'Schematic map of northern and central Tunisia': 'Carte schématique du nord et du centre de la Tunisie',
   'Schematic map of Tunisia: tap where each place of Ernie Pyle’s book lies': 'Carte schématique de la Tunisie\u00a0: touche l’endroit où se trouve chaque lieu du livre d’Ernie Pyle',
   'Tap the map for': 'Touche la carte pour',
-  'Your last tap': 'Ta dernière touche',
-  'Places found': 'Lieux trouvés',
   '{km} km away': 'à {km} km',
   '{n} of {total} places': '{n} lieux sur {total}',
   'all five placed': 'les cinq trouvés',
