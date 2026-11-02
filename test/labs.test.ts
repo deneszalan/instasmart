@@ -203,6 +203,11 @@ import { DEPOSED_MONTH as MON_DEPOSED, LAST_MONTH as MON_LAST, daysInExile as mo
 import { ORDER as KD_ORDER, SPOTS as KD_SPOTS, africa as kdAfrica, hits as kdHits, inset as kdInset } from '../src/labs/literature/keith-douglas-alamein-to-zem-zem';
 import { END as WS_END, SCENES as WS_SCENES, START as WS_START, WHEN as WS_WHEN, axisX as wsAxisX, isRight as wsRight } from '../src/labs/art/wedding-song-albou-tunis-1942';
 import { SPAN as MZ_SPAN, SWITCH_DAY as MZ_SWITCH, memorialFor as mzMemorial } from '../src/labs/earth/medjez-el-bab-war-cemetery';
+import { COUNTS as TUNIS_COUNTS, COUNT_IDS as TUNIS_COUNT_IDS, foundExtremes as tunisExtremes, spread as tunisSpread, squaresFor as tunisSquares } from '../src/labs/history/end-in-tunisia-may-1943';
+import { LETTER as BOURG_LETTER, LAST_INDEX as BOURG_LAST, fromIndex as bourgFrom, monthIndex as bourgIndex, whereIn as bourgWhere } from '../src/labs/politics/bourguiba-and-the-axis-1943';
+import { DIARY as GHEZ_DIARY, LAST_DAY as GHEZ_LAST, WAR as GHEZ_WAR, dayOf as ghezDay, latest as ghezLatest, meetingDays as ghezMeet } from '../src/labs/literature/ghez-six-mois-sous-la-botte';
+import { CLAIMS as PATTON_CLAIMS, allRight as pattonAllRight, score as pattonScore } from '../src/labs/art/patton-el-guettar';
+import { KINDS as GAMMARTH_KINDS, allSeen as gammarthAllSeen, atGammarth, placeOf as gammarthPlace } from '../src/labs/earth/gammarth-french-military-cemetery';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2101,5 +2106,63 @@ describe('lab maths', () => {
     expect(mzMemorial('eighth', MZ_SWITCH - 1)).toBe('alamein');
     expect(mzMemorial('eighth', MZ_SWITCH)).toBe('medjez');
     expect(mzMemorial('eighth', MZ_SPAN)).toBe('medjez');
+  });
+  it('end in Tunisia: five prisoner counts from 238,243 to 300,000, 61,757 apart, as squares of 1,000', () => {
+    expect(TUNIS_COUNTS.playfair).toBe(238243);
+    expect(TUNIS_COUNTS.howe).toBe(275000);
+    expect(TUNIS_COUNTS.arnim).toBe(300000);
+    expect(tunisSpread(TUNIS_COUNT_IDS).gap).toBe(61757);
+    expect(tunisSpread(['playfair', 'howe']).gap).toBe(36757);
+    expect(tunisSquares(238243)).toBe(238);
+    expect(tunisSquares(TUNIS_COUNTS.arnim)).toBe(300);
+    expect(tunisExtremes(['playfair'])).toBe(false);
+    expect(tunisExtremes(['playfair', 'howe'])).toBe(false);
+    expect(tunisExtremes(['howe', 'arnim', 'playfair'])).toBe(true);
+  });
+
+  it('Bourguiba: a prisoner of Vichy France when he wrote his letter of August 1942, in Italian hands in Rome early in 1943, in Cairo by April 1945', () => {
+    expect(bourgIndex(1938, 4)).toBe(0);
+    expect(bourgIndex(1945, 4)).toBe(BOURG_LAST);
+    expect(bourgFrom(bourgIndex(1942, 8))).toEqual({ year: 1942, month: 8 });
+    expect(bourgFrom(9)).toEqual({ year: 1939, month: 1 });
+    expect(bourgWhere(BOURG_LETTER.year, BOURG_LETTER.month)).toEqual({ place: 'marseille', holder: 'vichy' });
+    expect(bourgWhere(1938, 4)).toEqual({ place: 'tunisPrison', holder: 'france' });
+    expect(bourgWhere(1939, 6).place).toBe('teboursouk');
+    expect(bourgWhere(1942, 11).place).toBe('lyon');
+    expect(bourgWhere(1942, 12).holder).toBe('germany');
+    expect(bourgWhere(1943, 2)).toEqual({ place: 'rome', holder: 'italy' });
+    expect(bourgWhere(1943, 4).holder).toBe('axisTunis');
+    expect(bourgWhere(1944, 6)).toEqual({ place: 'tunis', holder: 'watched' });
+    expect(bourgWhere(1945, 4).place).toBe('cairo');
+  });
+
+  it('Ghez diary: 185 days from 9 November 1942 to 13 May 1943; the diary and the war meet only on 7 May 1943', () => {
+    expect(GHEZ_LAST).toBe(185);
+    expect(ghezDay(1942, 12, 14)).toBe(35);
+    expect(ghezMeet()).toEqual([ghezDay(1943, 5, 7)]);
+    expect(ghezLatest(GHEZ_DIARY, 0)).toBeUndefined();
+    expect(ghezLatest(GHEZ_WAR, 0)?.id).toBe('landing');
+    expect(ghezLatest(GHEZ_DIARY, ghezDay(1942, 12, 15))?.id).toBe('count');
+    expect(ghezLatest(GHEZ_WAR, ghezDay(1943, 5, 6))?.id).toBe('kasserine');
+    expect(ghezLatest(GHEZ_DIARY, GHEZ_LAST)?.id).toBe('emptied');
+    for (let i = 1; i < GHEZ_DIARY.length; i++) expect(GHEZ_DIARY[i].day).toBeGreaterThan(GHEZ_DIARY[i - 1].day);
+  });
+
+  it('Patton at El Guettar: two claims are only in the film, three are in the record, and all five must be sorted', () => {
+    expect(PATTON_CLAIMS.filter((c) => c.side === 'film').map((c) => c.id).sort()).toEqual(['book', 'rommel']);
+    expect(pattonScore({})).toBe(0);
+    expect(pattonScore({ rommel: 'record', panzer: 'record' })).toBe(1);
+    expect(pattonAllRight({ rommel: 'film', book: 'film', panzer: 'record', mines: 'record' })).toBe(false);
+    expect(pattonAllRight({ rommel: 'film', book: 'film', panzer: 'record', mines: 'record', weeks: 'record' })).toBe(true);
+  });
+
+  it('Gammarth: Christian and Jewish soldiers in individual graves, the unidentified in the ossuary, Muslim soldiers elsewhere', () => {
+    expect(gammarthPlace('christian')).toBe('graves');
+    expect(gammarthPlace('jewish')).toBe('graves');
+    expect(gammarthPlace('unknown')).toBe('ossuary');
+    expect(gammarthPlace('muslim')).toBe('muslim');
+    expect(GAMMARTH_KINDS.filter(atGammarth)).toEqual(['christian', 'jewish', 'unknown']);
+    expect(gammarthAllSeen(['christian', 'jewish', 'unknown'])).toBe(false);
+    expect(gammarthAllSeen(['muslim', 'christian', 'unknown', 'jewish'])).toBe(true);
   });
 });

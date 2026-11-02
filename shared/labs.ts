@@ -208,6 +208,11 @@ export const LABS = {
   'keith-douglas-alamein-to-zem-zem': 'A reading map for Keith Douglas, the British poet and tank officer: place El Alamein, Wadi Zem Zem, Tunisia and Tilly-sur-Seulles on a schematic map and see what he did and wrote at each, from his memoir Alamein to Zem Zem to the poems dated Tunisia 1943.',
   'wedding-song-albou-tunis-1942': 'A viewing tool for Karin Albou’s film Le Chant des mariées (The Wedding Song, 2008): match six of its scenes to the history they draw on in occupied Tunis, from the forced labour of December 1942 to the levy on the Jewish community, or mark them as invented, and see them on a timeline of the occupation.',
   'medjez-el-bab-war-cemetery': 'Choose the army and the date a Commonwealth soldier with no known grave died in Algeria or Tunisia, between 8 November 1942 and 13 May 1943, and see which memorial names him: the Medjez-el-Bab Memorial in Tunisia or the Alamein Memorial in Egypt; find the day the Eighth Army\'s missing start to be named at Medjez-el-Bab.',
+  'end-in-tunisia-may-1943': 'Tap through five counts of the Axis soldiers taken prisoner in Tunisia in May 1943, from the British and American official histories to General von Arnim’s own estimate, drawn as squares of 1,000, and see how far apart they are.',
+  'bourguiba-and-the-axis-1943': 'Slide month by month from April 1938 to April 1945 and follow Habib Bourguiba from French prisons to Rome, Tunis and Cairo: where he was, who held him, and what happened that month.',
+  'ghez-six-mois-sous-la-botte': 'Slide day by day through the German occupation of Tunis, November 1942 to May 1943, with the war on one line and the dated chapters of Paul Ghez’s diary on the other, and find the day they meet.',
+  'patton-el-guettar': 'Sort five claims about the battle of El Guettar, 23 March 1943, into what only the film Patton (1970) shows and what the record says, and watch a schematic plan of the valley fill in.',
+  'gammarth-french-military-cemetery': 'Pick a French soldier of the Tunisian campaign of 1942–43, Christian, Jewish, Muslim or never identified, and see where he was buried: an individual grave or the ossuary at Gammarth, or a Muslim cemetery elsewhere.',
 } as const;
 
 export type LabId = keyof typeof LABS;

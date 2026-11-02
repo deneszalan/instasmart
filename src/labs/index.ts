@@ -208,4 +208,9 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'keith-douglas-alamein-to-zem-zem': lazy(() => import('./literature/keith-douglas-alamein-to-zem-zem')),
   'wedding-song-albou-tunis-1942': lazy(() => import('./art/wedding-song-albou-tunis-1942')),
   'medjez-el-bab-war-cemetery': lazy(() => import('./earth/medjez-el-bab-war-cemetery')),
+  'end-in-tunisia-may-1943': lazy(() => import('./history/end-in-tunisia-may-1943')),
+  'bourguiba-and-the-axis-1943': lazy(() => import('./politics/bourguiba-and-the-axis-1943')),
+  'ghez-six-mois-sous-la-botte': lazy(() => import('./literature/ghez-six-mois-sous-la-botte')),
+  'patton-el-guettar': lazy(() => import('./art/patton-el-guettar')),
+  'gammarth-french-military-cemetery': lazy(() => import('./earth/gammarth-french-military-cemetery')),
 };
