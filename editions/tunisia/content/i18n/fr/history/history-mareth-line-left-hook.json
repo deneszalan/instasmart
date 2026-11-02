@@ -1,0 +1,71 @@
+{
+  "id": "history-mareth-line-left-hook",
+  "title": "Bâtie par la France contre l’Italie, la ligne Mareth est tombée en 1943, contournée",
+  "body": "La France a bâti la [ligne Mareth](https://fr.wikipedia.org/wiki/Ligne_Mareth) dans les années 1930, contre une attaque italienne venue de Libye : quelque 35 km de blockhaus derrière l’oued Zigzaou, de la mer aux monts des Matmata. En mars 1943, retournement : la 1re armée italienne du général Giovanni Messe et des divisions allemandes la tiennent face à la 8e armée britannique du général Bernard Montgomery. Le 6 mars, à Médenine, le maréchal Erwin Rommel attaque le premier et perd de 44 à 56 chars face aux canons antichars, selon les Britanniques : sa dernière bataille en Afrique. L’attaque frontale à travers l’oued, les 20 et 21 mars, est repoussée. Le corps néo-zélandais du général Bernard Freyberg, environ 25 600 hommes avec les Français libres de Leclerc, contourne les monts par le désert sur 200 km jusqu’à la trouée de Tebaga. Montgomery fait de ce « crochet par la gauche » son attaque principale ; le 26 mars à 16 heures, soleil dans le dos, la percée réussit. Le 28, l’Axe se replie sur l’oued Akarit. L’[histoire officielle britannique](https://archive.org/details/med-middle-east-vol-4) juge que le crochet a gagné la bataille sans en faire une victoire : l’Axe s’est échappé.",
+  "slides": [
+    {
+      "prompt": "En mars 1943, des troupes italiennes et allemandes tiennent la ligne Mareth, dans le Sud tunisien. Qui l’avait construite, et contre qui ?",
+      "answer": "La France, dans les années 1930, contre l’armée italienne de Libye",
+      "detail": "Les crédits sont votés en 1936. Après la défaite de 1940, la ligne est désarmée ; en 1942-1943, le génie de l’Axe la répare et la prolonge face aux Britanniques venus de Libye."
+    },
+    {
+      "alt": "Animation sur une carte nocturne du Sud tunisien : la ligne Mareth en rouge, de la mer aux monts des Matmata ; l’Axe derrière elle, la 8e armée qui arrive ; Médenine le 6 mars ; l’oued Zigzaou franchi de nuit, en coupe ; puis une longue flèche bleue autour des monts jusqu’à la trouée de Tebaga.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "mareth-fr.mp4",
+      "poster": "mareth-fr.jpg"
+    },
+    {
+      "prompt": "Fais défiler mars 1943 et trouve le jour où Montgomery fait du crochet par la gauche, et non de l’attaque frontale, son attaque principale.",
+      "takeaway": "Le 23 mars, vers 2 heures du matin, après l’échec de l’attaque frontale à travers l’oued Zigzaou. Le crochet, quelque 200 km autour des monts, perce à la trouée de Tebaga le 26 mars ; dès le 28, l’Axe se replie."
+    },
+    {
+      "heading": "La bataille de la ligne Mareth, 1943",
+      "events": [
+        {
+          "when": "6 mars",
+          "text": "Médenine : l’attaque de Rommel est arrêtée"
+        },
+        {
+          "when": "20-22 mars",
+          "text": "Attaque frontale à travers l’oued Zigzaou, repoussée"
+        },
+        {
+          "when": "26 mars",
+          "text": "Le crochet par la gauche perce à la trouée de Tebaga"
+        },
+        {
+          "when": "28-29 mars",
+          "text": "L’Axe se replie sur l’oued Akarit ; entrée à Gabès"
+        }
+      ]
+    },
+    {
+      "heading": "Deux façons d’aborder la ligne",
+      "left": {
+        "label": "Attaque frontale",
+        "text": "Nuit du 20 au 21 mars, près de la mer : un seul passage étroit sur l’oued, peu de chars de l’autre côté, repoussée dès le 23 mars."
+      },
+      "right": {
+        "label": "Crochet par la gauche",
+        "text": "Environ 25 600 hommes et 151 chars contournent les monts jusqu’à la trouée de Tebaga ; devenu l’attaque principale le 23 mars, il perce le 26."
+      }
+    },
+    {
+      "heading": "Qui s’est battu à Mareth",
+      "text": "La 8e armée réunit Britanniques, Néo-Zélandais (dont le bataillon maori), Indiens et Français libres, parmi lesquels les soldats africains du régiment du Tchad, dans la force L du général Leclerc. En face, des divisions italiennes et allemandes. La bataille traverse Mareth, Zarat, Médenine."
+    },
+    {
+      "question": "Pourquoi l’attaque de la 8e armée à la trouée de Tebaga, le 26 mars 1943, commence-t-elle à 16 heures ?",
+      "options": [
+        "Le soleil aveuglait les défenseurs",
+        "La marée était basse",
+        "Les attaques de nuit étaient interdites",
+        "Une trêve finissait à 16 heures"
+      ],
+      "explanation": "Selon l’histoire officielle britannique, 16 heures convenait aux plans de l’aviation et lançait l’infanterie « quand le soleil aveuglait l’ennemi ». Un vent fort poussait aussi la poussière vers lui."
+    }
+  ],
+  "source": {
+    "label": "The Mediterranean and Middle East, vol. IV (histoire officielle britannique, 1966)"
+  }
+}

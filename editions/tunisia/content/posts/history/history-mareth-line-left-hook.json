@@ -1,0 +1,168 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-mareth-line-left-hook",
+  "field": "history",
+  "title": "France built the Mareth Line against Italy. In 1943 it was beaten by going round it",
+  "emoji": "🗺️",
+  "body": "France built the [Mareth Line](https://en.wikipedia.org/wiki/Mareth_Line) in southern Tunisia in the 1930s against an Italian attack from Libya: about 35 km of blockhouses behind the Wadi Zigzaou, from the sea to the Matmata hills. In March 1943 it faced the other way: Italy’s First Army under General Giovanni Messe, with German divisions, held it against General Bernard Montgomery’s British Eighth Army. On 6 March, at Medenine, Field Marshal Erwin Rommel attacked first and lost between 44 and 56 tanks to anti-tank guns, by the British count: his last battle in Africa. Montgomery’s frontal attack across the wadi on 20–21 March was thrown back. The New Zealand Corps under Lieutenant-General Bernard Freyberg, about 25,600 men with General Leclerc’s Free French, went round the hills, some 200 km through the desert, to the Tebaga Gap. Montgomery made this “left hook” his main attack, and on 26 March at 4 p.m., the sun behind them, it broke through. By 28 March the Axis was falling back to the Wadi Akarit. The [British official history](https://archive.org/details/med-middle-east-vol-4) judged that the hook won the battle but could not make a victory of it: the Axis army got away.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "In March 1943 Italian and German troops held the Mareth Line in southern Tunisia. Who had built it, and against whom?",
+      "answer": "France, in the 1930s, against Italy’s army in Libya",
+      "detail": "Work was funded in 1936. After France’s defeat in 1940 the line was disarmed; in 1942–43 Axis engineers repaired and extended it to face the British, coming from Libya."
+    },
+    {
+      "type": "video",
+      "src": "mareth.mp4",
+      "poster": "mareth.jpg",
+      "alt": "Animation on a night map of southern Tunisia: the Mareth Line in red from the sea to the Matmata hills, Axis units behind it and Eighth Army units arriving; Medenine on 6 March; a cross-section of the Wadi Zigzaou crossed at night; then a long dashed blue arrow round the hills to the Tebaga Gap.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Despair and Triumph” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "mareth-line-left-hook",
+      "prompt": "Slide through March 1943 and find the day Montgomery made the left hook, not the frontal attack, his main attack.",
+      "takeaway": "23 March, at about 2 a.m., after the frontal attack across the Wadi Zigzaou was thrown back. The hook, some 200 km round the hills, broke through at the Tebaga Gap on 26 March; by 28 March the Axis was pulling back."
+    },
+    {
+      "type": "timeline",
+      "heading": "The battle of the Mareth Line, 1943",
+      "events": [
+        {
+          "when": "6 March",
+          "text": "Medenine: Rommel’s attack is stopped"
+        },
+        {
+          "when": "20–22 March",
+          "text": "Frontal attack across the Wadi Zigzaou, thrown back"
+        },
+        {
+          "when": "26 March",
+          "text": "The left hook breaks through at the Tebaga Gap"
+        },
+        {
+          "when": "28–29 March",
+          "text": "Axis falls back to the Wadi Akarit; Gabès entered"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Two ways at the line",
+      "left": {
+        "label": "Frontal attack",
+        "text": "Night of 20–21 March, near the sea: one narrow crossing of the wadi, few tanks over, pushed back by 23 March."
+      },
+      "right": {
+        "label": "Left hook",
+        "text": "About 25,600 men and 151 tanks went round the hills to the Tebaga Gap; made the main attack on 23 March, it broke through on 26 March."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Who fought at Mareth",
+      "text": "The Eighth Army brought British, New Zealand (among them the Māori Battalion), Indian and Free French troops, including African soldiers of the Chad regiment in General Leclerc’s Force L. Facing them were Italian and German divisions. The battle passed through the villages of southern Tunisia: Mareth, Zarat, Medenine."
+    },
+    {
+      "type": "quiz",
+      "question": "Why did the Eighth Army’s attack at the Tebaga Gap on 26 March 1943 begin at 4 p.m.?",
+      "options": [
+        "The sun was in the defenders’ eyes",
+        "The tide was out",
+        "Night attacks were forbidden",
+        "A truce ended at 4 p.m."
+      ],
+      "answer": 0,
+      "explanation": "The British official history: 4 p.m. suited the air forces’ plans and sent the infantry in “when the sun was blinding the enemy’s eyes”. A strong wind blew the dust that way too."
+    }
+  ],
+  "tags": [
+    "mareth",
+    "medenine",
+    "tebaga",
+    "montgomery",
+    "desert",
+    "1943"
+  ],
+  "source": {
+    "label": "The Mediterranean and Middle East, vol. IV (British official history, 1966)",
+    "url": "https://archive.org/details/med-middle-east-vol-4"
+  },
+  "theme": {
+    "gradient": [
+      "#1b1f1c",
+      "#4a4331"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T10:44:13Z"
+}

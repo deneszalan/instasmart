@@ -208,6 +208,11 @@ import { LETTER as BOURG_LETTER, LAST_INDEX as BOURG_LAST, fromIndex as bourgFro
 import { DIARY as GHEZ_DIARY, LAST_DAY as GHEZ_LAST, WAR as GHEZ_WAR, dayOf as ghezDay, latest as ghezLatest, meetingDays as ghezMeet } from '../src/labs/literature/ghez-six-mois-sous-la-botte';
 import { CLAIMS as PATTON_CLAIMS, allRight as pattonAllRight, score as pattonScore } from '../src/labs/art/patton-el-guettar';
 import { KINDS as GAMMARTH_KINDS, allSeen as gammarthAllSeen, atGammarth, placeOf as gammarthPlace } from '../src/labs/earth/gammarth-french-military-cemetery';
+import { hookKm as marethHookKm, hookMiles as marethHookMiles, mainAttack as marethMain, SWITCH_DAY as MARETH_SWITCH } from '../src/labs/history/mareth-line-left-hook';
+import { matchesRecord as wahabRecord, riskFound as wahabRisk } from '../src/labs/politics/khaled-abdul-wahab-mahdia';
+import { kmBetween as pyleKm, PLACES as PYLE_PLACES, TOLERANCE_KM as PYLE_TOL, toleranceKm as pyleTolFor } from '../src/labs/literature/ernie-pyle-here-is-your-war';
+import { ITEMS as JASMIN_ITEMS, score as jasminScore, STRANDS as JASMIN_STRANDS } from '../src/labs/art/villa-jasmin-boughedir-moati';
+import { dayOfMourning as cedriaMourning, firstAdvent as cedriaAdvent, OPENED as CEDRIA_OPENED, stageOf as cedriaStage } from '../src/labs/earth/bordj-cedria-german-war-cemetery';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2164,5 +2169,59 @@ describe('lab maths', () => {
     expect(GAMMARTH_KINDS.filter(atGammarth)).toEqual(['christian', 'jewish', 'unknown']);
     expect(gammarthAllSeen(['christian', 'jewish', 'unknown'])).toBe(false);
     expect(gammarthAllSeen(['muslim', 'christian', 'unknown', 'jewish'])).toBe(true);
+  it('mareth: the hook covers 50 + 25 + 40 + 10 miles, about 200 km, and becomes the main attack on 23 March', () => {
+    expect(marethHookMiles(16)).toBe(0);
+    expect(marethHookMiles(17)).toBe(50);
+    expect(marethHookMiles(20)).toBe(75);
+    expect(marethHookMiles(21)).toBe(125);
+    expect(marethHookKm(21)).toBe(200);
+    expect(marethHookKm(17)).toBe(80);
+    expect(marethMain(19)).toBe('none');
+    expect(marethMain(20)).toBe('frontal');
+    expect(marethMain(22)).toBe('frontal');
+    expect(marethMain(MARETH_SWITCH)).toBe('hook');
+    expect(MARETH_SWITCH).toBe(23);
+  });
+  it('abdul-wahab: risk needs a broken law or help kept from the Germans; the record shows neither', () => {
+    expect(wahabRisk(false, false)).toBe(false);
+    expect(wahabRisk(true, false)).toBe(true);
+    expect(wahabRisk(false, true)).toBe(true);
+    expect(wahabRecord(false, false)).toBe(true);
+    expect(wahabRecord(true, false)).toBe(false);
+    expect(wahabRecord(false, true)).toBe(false);
+  });
+  it('pyle: great-circle distances between his places, and none closer than the tolerance to the next one', () => {
+    const at = (id: string) => PYLE_PLACES.find((p) => p.id === id)!;
+    const d = (a: string, b: string) => pyleKm(at(a).lat, at(a).lon, at(b).lat, at(b).lon);
+    expect(pyleKm(0, 0, 0, 1)).toBeCloseTo(111.19, 1);
+    expect(d('mateur', 'bizerte')).toBeGreaterThan(28);
+    expect(d('mateur', 'bizerte')).toBeLessThan(34);
+    expect(d('sbeitla', 'gafsa')).toBeGreaterThan(95);
+    expect(d('sbeitla', 'gafsa')).toBeLessThan(105);
+    for (const a of PYLE_PLACES) for (const b of PYLE_PLACES) if (a !== b) expect(pyleKm(a.lat, a.lon, b.lat, b.lon)).toBeGreaterThan(PYLE_TOL);
+    expect(pyleTolFor(2)).toBe(PYLE_TOL);
+    expect(pyleTolFor(0.4)).toBeCloseTo(60, 9);
+  });
+  it('villa jasmin: nine cards, three in each strand, scored against their strand', () => {
+    expect(JASMIN_ITEMS).toHaveLength(9);
+    for (const s of JASMIN_STRANDS) expect(JASMIN_ITEMS.filter((it) => it.strand === s)).toHaveLength(3);
+    const all = Object.fromEntries(JASMIN_ITEMS.map((it) => [it.id, it.strand]));
+    expect(jasminScore(all)).toBe(9);
+    expect(jasminScore({})).toBe(0);
+    expect(jasminScore({ ...all, boccara: 'history' })).toBe(8);
+  });
+  it('bordj cedria: the day of mourning is two Sundays before Advent, and the cemetery opens in 1977', () => {
+    const iso = (d: Date) => d.toISOString().slice(0, 10);
+    expect(iso(cedriaAdvent(2026))).toBe('2026-11-29');
+    expect(iso(cedriaMourning(2026))).toBe('2026-11-15');
+    expect(iso(cedriaMourning(2015))).toBe('2015-11-15');
+    expect(iso(cedriaMourning(2022))).toBe('2022-11-13');
+    expect(iso(cedriaAdvent(1977))).toBe('1977-11-27');
+    for (let y = 1977; y <= 2030; y++) { const d = cedriaMourning(y); expect(d.getUTCDay()).toBe(0); expect(d.getUTCMonth()).toBe(10); expect(d.getUTCDate()).toBeGreaterThanOrEqual(13); expect(d.getUTCDate()).toBeLessThanOrEqual(19); }
+    expect(cedriaStage(1965)).toBe('scattered');
+    expect(cedriaStage(1966)).toBe('agreement');
+    expect(cedriaStage(1974)).toBe('building');
+    expect(cedriaStage(CEDRIA_OPENED)).toBe('open');
+    expect(CEDRIA_OPENED - 1943).toBe(34);
   });
 });

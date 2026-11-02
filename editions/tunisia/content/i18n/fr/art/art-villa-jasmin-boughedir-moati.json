@@ -1,0 +1,67 @@
+{
+  "id": "art-villa-jasmin-boughedir-moati",
+  "title": "Villa Jasmin raconte la guerre d’une famille juive de Tunis : histoire, mémoire et fiction",
+  "body": "*Villa Jasmin* (2008), du cinéaste tunisien Férid Boughedir, adapte un roman de 2003 du journaliste français Serge Moati sur son père, Serge lui aussi (1903-1957), journaliste juif socialiste à Tunis. Dans le film, un fils revient à Tunis en 1976 sur les traces de ses parents : les combats du père contre les autorités françaises, les lois antijuives de Vichy à partir de 1940, l’occupation allemande de Tunis en novembre 1942, la villa réquisitionnée, le père arrêté et déporté. Une part est de l’histoire : le Mémorial de l’Holocauste des États-Unis documente l’étoile jaune, les confiscations et le travail forcé de quelque 5 000 hommes juifs ; les Alliés entrent dans Tunis le 7 mai 1943. Une part est mémoire familiale : dans un [entretien de 2018 pour ce musée](https://collections.ushmm.org/oh_findingaids/RG-50.030.1003_sum_en.pdf), sa fille Nine Moati évoquait sa déportation à Sachsenhausen, un Allemand prenant « Moati » pour un nom italien, et une évasion « apparemment » aidée par un dentiste, sans dates précises. Le reste est le récit du film : il rebaptise la famille Boccara et montre le père aux actualités. Le vrai Serge Moati meurt en 1957 ; son fils Henry prendra son prénom.",
+  "slides": [
+    {
+      "prompt": "Dans le film Villa Jasmin (2008), un journaliste juif de Tunis est déporté dans un camp en Allemagne. Histoire, mémoire ou invention ?",
+      "answer": "Mémoire familiale : le récit de la famille Moati",
+      "detail": "Le film suit le roman de Serge Moati sur son père. Sa fille Nine Moati se souvenait de sa déportation à Sachsenhausen, mais pas des dates exactes."
+    },
+    {
+      "alt": "Animation au crépuscule : une villa blanche, du jasmin, des portes bleues en arc ; puis l’histoire en cartes de trois couleurs, bleu pour l’histoire établie de 1940 à 1943, ambre pour la mémoire de la famille Moati, rose pour les choix du film, tressées à la fin.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "jasmin-fr.mp4",
+      "poster": "jasmin-fr.jpg"
+    },
+    {
+      "prompt": "Classe neuf cartes du film Villa Jasmin : histoire établie, mémoire de la famille Moati ou récit propre au film.",
+      "takeaway": "Trois de chaque : l’occupation, les lois de Vichy et le travail forcé sont établis ; Sachsenhausen, le nom « italien » et le dentiste viennent de la famille ; Boccara, les actualités et 1976 sont du film."
+    },
+    {
+      "heading": "Ce dont s’inspire le film",
+      "events": [
+        {
+          "when": "1935",
+          "text": "Le père, rédacteur socialiste, est expulsé de Tunisie"
+        },
+        {
+          "when": "Nov. 1942",
+          "text": "Les troupes allemandes occupent Tunis"
+        },
+        {
+          "when": "7 mai 1943",
+          "text": "Les Alliés entrent dans Tunis"
+        },
+        {
+          "when": "2003, 2008",
+          "text": "Le roman de Serge Moati ; le film de Boughedir"
+        }
+      ]
+    },
+    {
+      "heading": "Mémoire ou film ?",
+      "left": {
+        "label": "Mémoire familiale",
+        "text": "Sa fille se souvenait qu’un Allemand avait pris « Moati » pour un nom italien, et qu’il s’était « apparemment » évadé grâce à un dentiste."
+      },
+      "right": {
+        "label": "Le récit du film",
+        "text": "Il rebaptise la famille Boccara, fait du récit le retour d’un fils en 1976 et montre le père dans des actualités parisiennes."
+      }
+    },
+    {
+      "question": "Dans Villa Jasmin, la famille du père de Serge Moati porte un autre nom. Lequel ?",
+      "options": [
+        "Boccara",
+        "Boukris",
+        "Ghez",
+        "Memmi"
+      ],
+      "explanation": "Le film l’appelle Boccara. Changer les noms fait partie des choix d’un film, comme son cadre : le retour d’un fils à Tunis en 1976."
+    }
+  ],
+  "source": {
+    "label": "USHMM : entretien avec Nine Moati Cariès (2018), résumé"
+  }
+}

@@ -213,6 +213,11 @@ export const LABS = {
   'ghez-six-mois-sous-la-botte': 'Slide day by day through the German occupation of Tunis, November 1942 to May 1943, with the war on one line and the dated chapters of Paul Ghez’s diary on the other, and find the day they meet.',
   'patton-el-guettar': 'Sort five claims about the battle of El Guettar, 23 March 1943, into what only the film Patton (1970) shows and what the record says, and watch a schematic plan of the valley fill in.',
   'gammarth-french-military-cemetery': 'Pick a French soldier of the Tunisian campaign of 1942–43, Christian, Jewish, Muslim or never identified, and see where he was buried: an individual grave or the ossuary at Gammarth, or a Muslim cemetery elsewhere.',
+  'mareth-line-left-hook': 'Slide day by day through March 1943 on a schematic map of the Mareth Line in southern Tunisia: Medenine, the frontal attack across the Wadi Zigzaou, and the New Zealand Corps’ left hook to the Tebaga Gap, with the British official history’s dates and distances.',
+  'khaled-abdul-wahab-mahdia': 'Read the testimonies Yad Vashem cited about Khaled Abdul-Wahab’s farm near Mahdia in 1943, set whether hosting the families broke a law and whether the Germans knew, and see how its test of risk decides the title of Righteous Among the Nations.',
+  'ernie-pyle-here-is-your-war': 'Tap a schematic map of Tunisia to find five places Ernie Pyle reported from in Here Is Your War (1943), Sbeitla, Fériana, Gafsa, Mateur and Bizerte, and read what he saw at each.',
+  'villa-jasmin-boughedir-moati': 'Sort nine cards from Férid Boughedir’s film Villa Jasmin (2008) into documented history, the Moati family’s memory and the film’s own telling, and read where each comes from.',
+  'bordj-cedria-german-war-cemetery': 'Slide from 1943 to today and follow the German dead of the Tunisian campaign from six makeshift cemeteries and field graves to the ossuaries of Bordj Cedria, with the year of the agreement, the building, the opening and each November’s day of mourning.',
 } as const;
 
 export type LabId = keyof typeof LABS;

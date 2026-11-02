@@ -213,4 +213,9 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'ghez-six-mois-sous-la-botte': lazy(() => import('./literature/ghez-six-mois-sous-la-botte')),
   'patton-el-guettar': lazy(() => import('./art/patton-el-guettar')),
   'gammarth-french-military-cemetery': lazy(() => import('./earth/gammarth-french-military-cemetery')),
+  'mareth-line-left-hook': lazy(() => import('./history/mareth-line-left-hook')),
+  'khaled-abdul-wahab-mahdia': lazy(() => import('./politics/khaled-abdul-wahab-mahdia')),
+  'ernie-pyle-here-is-your-war': lazy(() => import('./literature/ernie-pyle-here-is-your-war')),
+  'villa-jasmin-boughedir-moati': lazy(() => import('./art/villa-jasmin-boughedir-moati')),
+  'bordj-cedria-german-war-cemetery': lazy(() => import('./earth/bordj-cedria-german-war-cemetery')),
 };

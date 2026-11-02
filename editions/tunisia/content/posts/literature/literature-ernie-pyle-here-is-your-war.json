@@ -1,0 +1,165 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "literature-ernie-pyle-here-is-your-war",
+  "field": "literature",
+  "title": "Ernie Pyle reported Tunisia from the foxholes, printing soldiers’ names and home streets",
+  "emoji": "📰",
+  "body": "Ernie Pyle (1900–1945), a Scripps-Howard columnist, followed American troops through the Tunisian campaign: the retreat around Sbeitla in February 1943, Gafsa in March, the hills before Mateur with the 1st Infantry Division in April, the fall of Bizerte and Tunis in May. His columns, published that year as [*Here Is Your War*](https://archive.org/details/in.ernet.dli.2015.268113), left the “Big Picture” to others. He wrote what he called the “worm’s-eye view”: tired men, mud, fear and graves, with the soldiers named, their home towns and often their street addresses. “I loved the infantry because they were the underdogs,” he wrote of the final push. His column ran in 42 newspapers in November 1942 and 122 by April 1943, says his biographer Ray Boomhower; in 1944 he won the [Pulitzer Prize](https://en.wikipedia.org/wiki/Pulitzer_Prize_for_Correspondence) “for distinguished war correspondence during the year 1943”. The book sees Tunisia through American eyes; Tunisians stay at its edges, often judged through French officers’ prejudices, though he noted that both armies cleared Arab families from the battle area. He was killed on Ie Shima, off Okinawa, on 18 April 1945.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "In November 1942, 42 American newspapers ran Ernie Pyle’s war column. About how many ran it by April 1943?",
+      "min": 0,
+      "max": 300,
+      "step": 1,
+      "answer": 122,
+      "unit": "newspapers",
+      "explanation": "122, according to his biographer Ray Boomhower: nearly three times as many in five months. At his death in 1945 it ran in about 400 daily and 300 weekly papers."
+    },
+    {
+      "type": "video",
+      "src": "pyle.mp4",
+      "poster": "pyle.jpg",
+      "alt": "Animation by lamplight in an army tent: a typewriter and a typed sheet; a schematic map of Tunisia with Ernie Pyle's route from Sidi Bou Zid and Sbeitla to Gafsa, Mateur and Bizerte; a sheet with names underlined in red pencil; a grid of newspapers growing from 42 to 122; a Pulitzer medal.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Lost Frontier” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 4
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "ernie-pyle-here-is-your-war",
+      "prompt": "Tap the map to find five places Ernie Pyle reported from in Here Is Your War, from Sbeitla to Bizerte.",
+      "takeaway": "His Tunisia ran from the central plains, Sbeitla, Fériana and Gafsa, in the winter of 1943, to the northern hills before Mateur and wrecked Bizerte in May: the American front, seen at ground level."
+    },
+    {
+      "type": "quote",
+      "text": "I loved the infantry because they were the underdogs.",
+      "attribution": "Ernie Pyle, Here Is Your War (1943), on the final push in northern Tunisia"
+    },
+    {
+      "type": "timeline",
+      "heading": "Ernie Pyle’s Tunisian campaign",
+      "events": [
+        {
+          "when": "Feb 1943",
+          "text": "Retreat from Sidi Bou Zid and Sbeitla"
+        },
+        {
+          "when": "Apr 1943",
+          "text": "With the 1st Infantry Division before Mateur"
+        },
+        {
+          "when": "1943",
+          "text": "His columns published as Here Is Your War"
+        },
+        {
+          "when": "1944",
+          "text": "Pulitzer Prize for his war reporting of 1943"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "What the book leaves at the edges",
+      "text": "Here Is Your War sees Tunisia through American eyes. Tunisians appear at its margins, often judged through French officers’ prejudices and those of his time. Yet Pyle also recorded that both armies cleared Arab families out of the battle area, and held some they suspected in open-air camps."
+    },
+    {
+      "type": "quiz",
+      "question": "What did Ernie Pyle call his way of seeing the war in Tunisia, in Here Is Your War?",
+      "options": [
+        "The worm’s-eye view",
+        "The Big Picture",
+        "The general’s map",
+        "The front page"
+      ],
+      "answer": 0,
+      "explanation": "He wrote that he knew nothing of the “Big Picture”, only what he saw from the “worm’s-eye view”: tired soldiers, convoys, foxholes and graves."
+    }
+  ],
+  "tags": [
+    "erniepyle",
+    "journalism",
+    "pulitzer",
+    "infantry",
+    "memoir",
+    "1943"
+  ],
+  "source": {
+    "label": "Ernie Pyle: Here Is Your War (Henry Holt, 1943), Internet Archive",
+    "url": "https://archive.org/details/in.ernet.dli.2015.268113"
+  },
+  "theme": {
+    "gradient": [
+      "#1d1c16",
+      "#5a4a2e"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T11:20:17Z"
+}
