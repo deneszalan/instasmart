@@ -199,6 +199,7 @@ export const LABS = {
   'decaf-coffee-caffeine-removal': 'A toy model of decaffeination: soak green coffee beans in plain hot water, a green coffee extract (as in the Swiss Water Process) or a solvent, choose whether the caffeine is taken out of the liquid each round, and try to remove 97% of the caffeine while keeping the flavour in the beans.',
   'caffe-orzo-roasted-barley': 'Roast barley in a toy roaster: set the heat and the time, watch the grain dry and then brown, and aim for the dark brown of caffè d’orzo without burning it, while the caffeine stays at 0 mg at every setting.',
   'kasserine-pass-1943': 'A toy model of mutual support from the Battle of Kasserine Pass: set how many positions hold a gap between two ridges and how far apart they stand, and find a layout where the whole gap is watched and every position is within reach of a neighbour that can help it.',
+  'moncef-bey-deposed-1943': 'Slide month by month from June 1942 to September 1948 through the reign and exile of Moncef Bey, the Bey of Tunis: see where he was, who held Tunis, and his days on the throne against his days in exile, and find the month the French deposed him.',
 } as const;
 
 export type LabId = keyof typeof LABS;

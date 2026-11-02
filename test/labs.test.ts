@@ -194,6 +194,7 @@ import { FLOOR as CLOCK_FLOOR, profile as clockProfile, readAge as clockRead, re
 import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decafRemoved, soak as decafSoak } from '../src/labs/chemistry/decaf-coffee-caffeine-removal';
 import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX, MIN_STEP as ORZO_STEP, ORZO as ORZO_BAND, brownRate as orzoRate, dryMinutes as orzoDry, isOrzo, roastDegree as orzoRoast, waterLeft as orzoWater } from '../src/labs/chemistry/caffe-orzo-roasted-barley';
 import { GAP as KAS_GAP, REACH as KAS_REACH, covered as kasCovered, helped as kasHelped, holds as kasHolds, positions as kasPositions } from '../src/labs/history/kasserine-pass-1943';
+import { DEPOSED_MONTH as MON_DEPOSED, LAST_MONTH as MON_LAST, daysInExile as monExile, daysOnThrone as monThrone, monthOf as monMonth, powerAt as monPower, whereAt as monWhere } from '../src/labs/politics/moncef-bey-deposed-1943';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1967,5 +1968,23 @@ describe('lab maths', () => {
     expect(kasHolds(4, 1.1)).toBe(false);
     expect(kasCovered(3, 2.5)).toBe(false);
     expect(kasHelped(4, 1)).toBe(4);
+  });
+  it('moncef bey: 329 days on the throne from 19 June 1942, deposed in May 1943, 1,937 days in exile to 1 September 1948', () => {
+    expect(monMonth(0)).toEqual({ y: 1942, m: 6 });
+    expect(monMonth(MON_DEPOSED)).toEqual({ y: 1943, m: 5 });
+    expect(monMonth(MON_LAST)).toEqual({ y: 1948, m: 9 });
+    expect(monMonth(40)).toEqual({ y: 1945, m: 10 });
+    expect(monThrone(0)).toBe(11);
+    expect(monThrone(MON_DEPOSED - 1)).toBeLessThan(329);
+    expect(monThrone(MON_DEPOSED)).toBe(329);
+    expect(monThrone(MON_LAST)).toBe(329);
+    expect(monExile(MON_DEPOSED - 1)).toBe(0);
+    expect(monExile(MON_DEPOSED)).toBe(17);
+    expect(monExile(MON_LAST)).toBe(1937);
+    expect(monWhere(MON_DEPOSED - 1)).toBe('tunis');
+    expect(monWhere(MON_DEPOSED)).toBe('algeria');
+    expect(monWhere(39)).toBe('algeria');
+    expect(monWhere(40)).toBe('pau');
+    expect([monPower(4), monPower(5), monPower(10), monPower(11)]).toEqual(['vichy', 'axis', 'axis', 'restored']);
   });
 });
