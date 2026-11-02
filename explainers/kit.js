@@ -31,7 +31,9 @@
   window.__captionCount = () => captionCount;
   /** Inside rich() the words are already in the render's language. */
   let asIs = 0;
-  const fmt = (n) => Math.round(n).toLocaleString(TR?.locale ?? 'en-US');
+  // French groups thousands with a narrow no-break space, which most of the library's fonts lack and draw with almost no
+  // width (1250000); an ordinary no-break space reads right.
+  const fmt = (n) => Math.round(n).toLocaleString(TR?.locale ?? 'en-US').replace(/ /g, ' ');
   /** Opacity of something shown from a to b, fading in over fi seconds and out over fo. */
   const span = (t, a, b, fi = 0.35, fo = 0.35) => Math.min(fi ? seg(t, a, a + fi) : 1, fo ? 1 - seg(t, b - fo, b) : 1);
 
