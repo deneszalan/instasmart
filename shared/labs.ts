@@ -199,6 +199,7 @@ export const LABS = {
   'decaf-coffee-caffeine-removal': 'A toy model of decaffeination: soak green coffee beans in plain hot water, a green coffee extract (as in the Swiss Water Process) or a solvent, choose whether the caffeine is taken out of the liquid each round, and try to remove 97% of the caffeine while keeping the flavour in the beans.',
   'caffe-orzo-roasted-barley': 'Roast barley in a toy roaster: set the heat and the time, watch the grain dry and then brown, and aim for the dark brown of caffè d’orzo without burning it, while the caffeine stays at 0 mg at every setting.',
   'mareth-line-left-hook': 'Slide day by day through March 1943 on a schematic map of the Mareth Line in southern Tunisia: Medenine, the frontal attack across the Wadi Zigzaou, and the New Zealand Corps’ left hook to the Tebaga Gap, with the British official history’s dates and distances.',
+  'khaled-abdul-wahab-mahdia': 'Read the testimonies Yad Vashem cited about Khaled Abdul-Wahab’s farm near Mahdia in 1943, set whether hosting the families broke a law and whether the Germans knew, and see how its test of risk decides the title of Righteous Among the Nations.',
 } as const;
 
 export type LabId = keyof typeof LABS;

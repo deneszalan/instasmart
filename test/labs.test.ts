@@ -194,6 +194,7 @@ import { FLOOR as CLOCK_FLOOR, profile as clockProfile, readAge as clockRead, re
 import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decafRemoved, soak as decafSoak } from '../src/labs/chemistry/decaf-coffee-caffeine-removal';
 import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX, MIN_STEP as ORZO_STEP, ORZO as ORZO_BAND, brownRate as orzoRate, dryMinutes as orzoDry, isOrzo, roastDegree as orzoRoast, waterLeft as orzoWater } from '../src/labs/chemistry/caffe-orzo-roasted-barley';
 import { hookKm as marethHookKm, hookMiles as marethHookMiles, mainAttack as marethMain, SWITCH_DAY as MARETH_SWITCH } from '../src/labs/history/mareth-line-left-hook';
+import { matchesRecord as wahabRecord, riskFound as wahabRisk } from '../src/labs/politics/khaled-abdul-wahab-mahdia';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1964,5 +1965,13 @@ describe('lab maths', () => {
     expect(marethMain(22)).toBe('frontal');
     expect(marethMain(MARETH_SWITCH)).toBe('hook');
     expect(MARETH_SWITCH).toBe(23);
+  });
+  it('abdul-wahab: risk needs a broken law or help kept from the Germans; the record shows neither', () => {
+    expect(wahabRisk(false, false)).toBe(false);
+    expect(wahabRisk(true, false)).toBe(true);
+    expect(wahabRisk(false, true)).toBe(true);
+    expect(wahabRecord(false, false)).toBe(true);
+    expect(wahabRecord(true, false)).toBe(false);
+    expect(wahabRecord(false, true)).toBe(false);
   });
 });

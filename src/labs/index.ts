@@ -199,4 +199,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'decaf-coffee-caffeine-removal': lazy(() => import('./chemistry/decaf-coffee-caffeine-removal')),
   'caffe-orzo-roasted-barley': lazy(() => import('./chemistry/caffe-orzo-roasted-barley')),
   'mareth-line-left-hook': lazy(() => import('./history/mareth-line-left-hook')),
+  'khaled-abdul-wahab-mahdia': lazy(() => import('./politics/khaled-abdul-wahab-mahdia')),
 };

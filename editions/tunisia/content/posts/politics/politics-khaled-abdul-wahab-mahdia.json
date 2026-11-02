@@ -1,0 +1,174 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-khaled-abdul-wahab-mahdia",
+  "field": "politics",
+  "title": "Khaled Abdul-Wahab sheltered two dozen Jews in 1943; Yad Vashem’s risk test said no",
+  "emoji": "🕯️",
+  "body": "German troops occupied the Tunisian coast in November 1942, the port of Mahdia among it. Khaled Abdul-Wahab (1911–1997), a landowner from a prominent Muslim family who dealt with the Germans for the town, took two Jewish families, the Boukris and the Ouzzans, about two dozen people, to his farm at Tlelsa outside Mahdia. They stayed some four months, until the British arrived in April 1943. Anny Boukris, 11 at the time, said he acted when he learned that a German officer planned to rape her mother. In the early 2000s she told the story to the American historian Robert Satloff, who checked it in Mahdia, wrote it up in *Among the Righteous* (2006) and in 2007 nominated Abdul-Wahab to Yad Vashem, Israel’s Holocaust memorial, the first Arab put forward. Its title Righteous Among the Nations requires risk to the rescuer’s life, liberty or position. [Yad Vashem’s Commission](https://www.yadvashem.org/blog/abdelwahab-the-full-picture) found that he broke no law and that the Germans knew the families were on the farm, and concluded that “in the absence of risk, he was not eligible”, while praising his solidarity. His family and Satloff disagree.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Khaled Abdul-Wahab sheltered two Jewish families on his farm near Mahdia, Tunisia, in 1943. Did Yad Vashem name him a Righteous?",
+      "answer": "No: its Commission found no risk in what he did",
+      "detail": "The title requires risk to the rescuer’s life, liberty or position. Yad Vashem said he broke no law and that the Germans knew the families were on his farm."
+    },
+    {
+      "type": "video",
+      "src": "mahdia.mp4",
+      "poster": "mahdia.jpg",
+      "alt": "Animation at night: a schematic map of Tunisia with Mahdia; white houses where soldiers turn a Jewish family out; a night drive to a farm among olive trees; about two dozen small figures and four months; a tape recording; then Yad Vashem's four tests as lamps, the lamp for risk dimming.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Rumination” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "khaled-abdul-wahab-mahdia",
+      "prompt": "Read at least two testimonies, then tap the two boxes to set what they say: did a law forbid hosting the families, and did the Germans know?",
+      "takeaway": "No law forbade it and the Germans knew, even counting the families, so Yad Vashem found no risk: “in the absence of risk, he was not eligible”. Help that was hidden or against a law would have carried risk."
+    },
+    {
+      "type": "list",
+      "heading": "Yad Vashem’s four tests for a Righteous",
+      "style": "numbers",
+      "items": [
+        "Active help to save Jews from death or deportation",
+        "Risk to the rescuer’s life, liberty or position",
+        "A wish to help, not payment or another reward",
+        "Testimony of those helped, or clear documents"
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "Khaled Abdul-Wahab and the families",
+      "events": [
+        {
+          "when": "Nov 1942",
+          "text": "German troops occupy Mahdia"
+        },
+        {
+          "when": "1942–43",
+          "text": "About two dozen people stay four months on his farm"
+        },
+        {
+          "when": "April 1943",
+          "text": "The British arrive; the families go home"
+        },
+        {
+          "when": "2007",
+          "text": "Robert Satloff nominates him to Yad Vashem"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Two readings of the same farm",
+      "left": {
+        "label": "Yad Vashem’s Commission",
+        "text": "He broke no law, and the Germans knew the families were there: “in the absence of risk, he was not eligible”."
+      },
+      "right": {
+        "label": "His daughter Faiza",
+        "text": "“My father opened his home to Jews and Yad Vashem did not open their home to us,” she said in 2010."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "How did the American historian Robert Satloff first hear the story of Khaled Abdul-Wahab?",
+      "options": [
+        "From Anny Boukris, sheltered as a girl",
+        "From his daughter Faiza",
+        "From a German officer’s diary",
+        "From Yad Vashem’s archive"
+      ],
+      "answer": 0,
+      "explanation": "Anny Boukris, 11 in 1943, recorded her story for him in the early 2000s and died two weeks later. He then found her childhood friends and the farm in Mahdia."
+    }
+  ],
+  "tags": [
+    "mahdia",
+    "righteous",
+    "yadvashem",
+    "rescue",
+    "occupation",
+    "1943"
+  ],
+  "source": {
+    "label": "Yad Vashem: Abdelwahab, the full picture (2011)",
+    "url": "https://www.yadvashem.org/blog/abdelwahab-the-full-picture"
+  },
+  "theme": {
+    "gradient": [
+      "#16202b",
+      "#4f5e31"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T10:54:57Z"
+}
