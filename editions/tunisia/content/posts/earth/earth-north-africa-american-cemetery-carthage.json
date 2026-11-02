@@ -1,0 +1,165 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-north-africa-american-cemetery-carthage",
+  "field": "earth",
+  "title": "Beside ancient Carthage, an American war cemetery names more missing men than it buries",
+  "emoji": "🕊️",
+  "body": "The North Africa American Cemetery and Memorial lies at Carthage, 10 miles from Tunis, over part of the site of Roman Carthage. The American Battle Monuments Commission (ABMC), which runs it, set it up in 1948 to gather temporary graves from across North Africa, on land the government of Tunisia granted free and for ever; it was dedicated on 21 July 1960. On 27 acres, 2,833 headstones stand in straight lines in nine plots, with pools where the paths cross; most of those honoured died in operations from North Africa to the Persian Gulf. Along the mall, the Tablets of the Missing, 364 feet long, name 3,724 men missing on land, at sea and in the air; a rosette marks those found and identified since. The memorial's maps in mosaic and ceramic trace the campaign from the November 1942 landings to the Axis surrender in May 1943. Entry is free every day except 25 December and 1 January. Figures from ABMC's [visitor brochure](https://www.npshistory.com/publications/battlefield/abmc/north-africa/brochure-e-2024.pdf) and [visiting page](https://www.abmc.gov/plan/plan-your-visit-to-north-africa-american-cemetery/).",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The North Africa American Cemetery at Carthage has 2,833 headstones. How many names are on its Tablets of the Missing?",
+      "min": 0,
+      "max": 6000,
+      "step": 1,
+      "answer": 3724,
+      "unit": "names",
+      "explanation": "3,724 names, on a wall 364 feet long: more men missing than buried here. A rosette marks those found and identified since."
+    },
+    {
+      "type": "video",
+      "src": "carthage-cemetery.mp4",
+      "poster": "carthage-cemetery.jpg",
+      "alt": "Animation at dusk: a schematic Gulf of Tunis with Carthage, then the cemetery plan in green and white, nine plots and pools; headstones as crosses and Stars of David; a long wall of names with gold rosettes; a mosaic map; the statue Honor; a train line from Tunis to Carthage-Amilcar.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Long Note Two” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 2,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "north-africa-american-cemetery-carthage",
+      "prompt": "A family wants to visit a grave. Use the practice records to find three graves on the plan: the plot, then the row, then the grave.",
+      "takeaway": "Every grave has an address. ABMC's burial search gives plot, row and grave, and staff in the visitor building take families there. The plan here is schematic; the real rows differ."
+    },
+    {
+      "type": "chart",
+      "heading": "Remembered at Carthage",
+      "items": [
+        {
+          "label": "Headstones",
+          "value": 2833
+        },
+        {
+          "label": "Names of the missing",
+          "value": 3724,
+          "emphasis": true
+        }
+      ],
+      "note": "American Battle Monuments Commission, 2024"
+    },
+    {
+      "type": "text",
+      "heading": "Who lies here",
+      "text": "Most of those honoured died in the Second World War, in operations from North Africa to the Persian Gulf, says ABMC. The headstones are 2,777 Latin crosses and 56 Stars of David. Among the dead are four pairs of brothers and Captain Foy Draper, of the winning US relay team at the 1936 Olympics."
+    },
+    {
+      "type": "list",
+      "heading": "Visiting",
+      "style": "bullets",
+      "items": [
+        "Free, no booking; open daily except 25 December and 1 January",
+        "Last entry 4:45 p.m.",
+        "TGM train from Tunis Marine to Carthage-Amilcar, then 700 m on foot",
+        "Staff in the visitor building take families to a grave"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "On the Tablets of the Missing at the North Africa American Cemetery in Carthage, what does a rosette beside a name mean?",
+      "options": [
+        "He was later found and identified",
+        "He won a medal for bravery",
+        "He was an officer",
+        "He was born in Tunisia"
+      ],
+      "answer": 0,
+      "explanation": "The wall lists 3,724 men missing in the region. A rosette marks a man whose remains were recovered and identified after the wall was carved."
+    }
+  ],
+  "tags": [
+    "cemetery",
+    "carthage",
+    "abmc",
+    "memorial",
+    "missing",
+    "tunisia"
+  ],
+  "source": {
+    "label": "American Battle Monuments Commission: History of North Africa American Cemetery",
+    "url": "https://www.abmc.gov/history/discover-the-history-of-north-africa-american-cemetery/"
+  },
+  "theme": {
+    "gradient": [
+      "#152a26",
+      "#2f5a45"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T11:27:14Z"
+}

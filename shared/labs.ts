@@ -218,6 +218,11 @@ export const LABS = {
   'ernie-pyle-here-is-your-war': 'Tap a schematic map of Tunisia to find five places Ernie Pyle reported from in Here Is Your War (1943), Sbeitla, Fériana, Gafsa, Mateur and Bizerte, and read what he saw at each.',
   'villa-jasmin-boughedir-moati': 'Sort nine cards from Férid Boughedir’s film Villa Jasmin (2008) into documented history, the Moati family’s memory and the film’s own telling, and read where each comes from.',
   'bordj-cedria-german-war-cemetery': 'Slide from 1943 to today and follow the German dead of the Tunisian campaign from six makeshift cemeteries and field graves to the ossuaries of Bordj Cedria, with the year of the agreement, the building, the opening and each November’s day of mourning.',
+  'race-for-tunis-1942': 'Push the Allied spearhead of November 1942 along the road from Souk el Arba towards Tunis on a schematic map, switch on the winter rain, and read how far it is from Tunis, from the nearest Axis airfield and from the nearest Allied airfield that can still fly.',
+  'tunisia-jews-forced-labour-1942': 'A calendar of the German occupation of Tunis, one square per day from 9 November 1942: drag through the days to see when the SS ordered Jewish men into forced labour, when the roundup came and when Tunis was freed.',
+  'memmi-pillar-of-salt': 'Sort episodes of Albert Memmi’s novel La Statue de sel and of his own life onto two threads that run together and then part: told in the novel and lived by Memmi, in the novel only, or in his life only.',
+  'north-africa-american-cemetery-carthage': 'Find graves on a schematic plan of the North Africa American Cemetery at Carthage, as a visiting family would: each practice record gives a plot (A to I), a row and a grave number.',
+  'tunisian-victory-1944-film': 'A cutting room for the 1944 documentary Tunisian Victory: set the running time of the finished film and see how much of the 300,000 feet of film shot (as Variety reported) it keeps, at 90 feet of 35 mm film a minute.',
 } as const;
 
 export type LabId = keyof typeof LABS;

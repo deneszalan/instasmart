@@ -1,0 +1,75 @@
+{
+  "id": "history-race-for-tunis-1942",
+  "title": "Les Alliés débarquent en 1942 pour prendre Tunis en quelques semaines. Il faudra six mois",
+  "body": "Le 8 novembre 1942, avec l’**opération Torch**, quelque 125 000 soldats, marins et aviateurs américains et britanniques débarquent au Maroc et en Algérie. Le véritable enjeu est à l’est : la Tunisie, protectorat français sous l’autorité du bey, dont les ports de Tunis et de Bizerte font face à la Sicile. L’Axe va plus vite : dès le 9 novembre, des avions allemands se posent à El Aouina, près de Tunis, et à la mi-novembre environ 15 000 Allemands et 9 000 Italiens tiennent les deux ports. Les Alliés viennent d’Alger par la route, à quelque 640 km, et les troupes françaises de Tunisie, tirailleurs compris, se battent à leurs côtés. Le 28 novembre, ils atteignent Djedeida, à 21 km de Tunis, et n’iront pas plus loin. Les chasseurs de l’Axe font plusieurs sorties par jour depuis des pistes en dur aux portes de Tunis ; les escadrilles alliées, sur des terrains lointains, souvent une seule, et la pluie les noie dans la boue. Après l’échec de Longstop Hill, Eisenhower suspend l’offensive le 24 décembre : la bataille de Tunisie durera jusqu’au 13 mai 1943. Source : [l’histoire de la campagne](https://archive.org/details/TunisiaCmh72-12) de l’armée américaine (en anglais).",
+  "slides": [
+    {
+      "question": "Débarqués en Algérie le 8 novembre 1942, les Alliés foncent vers Tunis. À combien de milles en arrivent-ils ?",
+      "unit": "milles",
+      "explanation": "13 milles, soit 21 km : le 28 novembre, ils atteignent Djedeida, à l’ouest de Tunis, et y sont arrêtés. Le 10 décembre, les contre-attaques allemandes les ont repoussés jusqu’à Medjez el-Bab."
+    },
+    {
+      "alt": "Animation sur une carte schématique : des flèches ambre débarquent à Casablanca, Oran et Alger le 8 novembre 1942, des avions lavande volent de Sicile à Tunis, les flèches ambre poussent jusqu’à Djedeida, à 21 km de Tunis. Puis aérodromes, pluie, recul du front et calendrier jusqu’à mai 1943.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "race-for-tunis-fr.mp4",
+      "poster": "race-for-tunis-fr.jpg"
+    },
+    {
+      "prompt": "Pousse la pointe alliée jusqu’à Djedeida, où elle s’arrête le 28 novembre 1942, puis active les pluies d’hiver. Quels aérodromes sont les plus proches ?",
+      "takeaway": "À Djedeida, à 21 km de Tunis, l’aérodrome de l’Axe d’El Aouina est à environ 27 km, et le plus proche des Alliés, Souk el Arba, à 110. Sous la pluie, seul celui de Bône peut servir, à près de 200 km."
+    },
+    {
+      "heading": "La course vers Tunis",
+      "events": [
+        {
+          "when": "8 nov. 1942",
+          "text": "Débarquements de l’opération Torch"
+        },
+        {
+          "when": "9 nov.",
+          "text": "Avions allemands à El Aouina"
+        },
+        {
+          "when": "28 nov.",
+          "text": "Les Alliés stoppés à 21 km de Tunis"
+        },
+        {
+          "when": "24 déc.",
+          "text": "Eisenhower suspend l’offensive"
+        },
+        {
+          "when": "13 mai 1943",
+          "text": "Capitulation de l’Axe en Tunisie"
+        }
+      ]
+    },
+    {
+      "heading": "Pourquoi l’Axe a gagné la course",
+      "left": {
+        "label": "Axe",
+        "text": "Des aérodromes en dur à Tunis et Bizerte : plusieurs sorties par jour. Hommes et matériel arrivent de Sicile par air et par mer."
+      },
+      "right": {
+        "label": "Alliés",
+        "text": "Des terrains à 130–250 km de Tunis, noyés de boue sous la pluie : souvent une sortie par jour. Le train d’Alger met quatre à six jours."
+      }
+    },
+    {
+      "heading": "Pas seulement des Anglo-Américains",
+      "text": "La Tunisie est un protectorat français, et les troupes françaises qui y stationnent, sous le général Georges Barré, se retournent contre les Allemands. Le 19 novembre, elles les affrontent à Medjez el-Bab. Leurs unités comptent des zouaves européens et des tirailleurs nord-africains."
+    },
+    {
+      "question": "En novembre 1942, les chasseurs allemands font plusieurs sorties par jour sur le front tunisien, les alliés souvent une seule. Pourquoi ?",
+      "options": [
+        "Leurs terrains étaient près de Tunis",
+        "Ils avaient bien plus de pilotes",
+        "Ils ne volaient que de nuit",
+        "Leurs avions emportaient plus d’essence"
+      ],
+      "explanation": "La distance. L’Axe décollait de terrains en dur à Tunis et Bizerte, près du front ; les terrains alliés étaient à 130–250 km, et la pluie fermait la plupart d’entre eux."
+    }
+  ],
+  "source": {
+    "label": "Centre d’histoire militaire de l’armée américaine : Tunisia, 17 November 1942–13 May 1943"
+  }
+}

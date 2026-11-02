@@ -1,0 +1,64 @@
+{
+  "id": "politics-tunisia-jews-forced-labour-1942",
+  "title": "En 1942-1943, l’occupant allemand impose le travail forcé à quelque 5 000 Juifs de Tunisie",
+  "body": "La Tunisie, protectorat français, vit six mois sous occupation allemande, du 9 novembre 1942 au 7 mai 1943. Environ 90 000 Juifs y vivent, dit le [Mémorial de la Shoah](https://www.memorialdelashoah.org/en/evenements-expositions/commemorations/souvenir-de-rafl-e-de-tunis-9-decembre-1942.html). Avec l’armée arrive une unité SS de Walter Rauff, concepteur des camions à gaz utilisés pour tuer des Juifs à l’Est. Des dirigeants de la communauté juive sont arrêtés ; le 6 décembre, Rauff exige 2 000 travailleurs (3 000 selon d’autres), et le 9 les SS raflent des hommes à Tunis. Ses responsables doivent diriger un comité qui recrute la main-d’œuvre. Environ 5 000 hommes sont envoyés au travail forcé, dans 32 à une quarantaine de camps, souvent près du front, selon le Mémorial et le [musée de l’Holocauste de Washington](https://encyclopedia.ushmm.org/content/en/article/labor-and-internment-camps-in-north-africa). S’y ajoutent amendes, confiscations, otages et, dans certaines villes, l’étoile jaune. Selon le [Musée de l’Holocauste Montréal](https://museeholocauste.ca/en/resources-training/the-holocaust-in-tunisia/), le temps, les moyens et le cours de la guerre ont limité l’action des SS.",
+  "slides": [
+    {
+      "question": "Les troupes allemandes arrivent à Tunis à partir du 9 novembre 1942. Pendant combien de jours tiennent-elles la ville ?",
+      "unit": "jours",
+      "explanation": "179 jours : les troupes britanniques entrent dans Tunis le 7 mai 1943. Le travail forcé des hommes juifs avait commencé cinq mois plus tôt, en décembre 1942."
+    },
+    {
+      "alt": "Animation bleu nuit : un calendrier des 179 jours d’occupation se remplit case par case dès le 9 novembre 1942. Des avis montrent l’ordre SS du 6 décembre et la rafle du 9 ; des silhouettes figurent quelque 5 000 travailleurs forcés ; une bougie ; puis le 7 mai 1943, Tunis libérée.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "occupation-calendar-fr.mp4",
+      "poster": "occupation-calendar-fr.jpg"
+    },
+    {
+      "prompt": "Parcours le calendrier de l’occupation. Trouve le jour où Tunis est libérée, et lis depuis combien de temps durait le travail forcé.",
+      "takeaway": "Le 7 mai 1943, 179e jour de l’occupation. L’ordre de réquisition datait du 6 décembre 1942, 152 jours plus tôt : environ cinq mois de travail forcé pour quelque 5 000 hommes."
+    },
+    {
+      "heading": "Six mois d’occupation",
+      "events": [
+        {
+          "when": "9 nov. 1942",
+          "text": "Arrivée des troupes allemandes"
+        },
+        {
+          "when": "6 déc.",
+          "text": "Ordre SS : fournir des hommes"
+        },
+        {
+          "when": "9 déc.",
+          "text": "Rafle d’hommes juifs à Tunis"
+        },
+        {
+          "when": "déc.–avr.",
+          "text": "Quelque 5 000 hommes au travail forcé"
+        },
+        {
+          "when": "7 mai 1943",
+          "text": "Les Britanniques entrent à Tunis"
+        }
+      ]
+    },
+    {
+      "heading": "Contraints de l’organiser",
+      "text": "Sous la menace, les responsables de la communauté, dont son président Moïse Borgel et l’avocat Paul Ghez, doivent diriger un comité qui dresse les listes de travailleurs. Tous deux publient leur témoignage en 1943 et 1944, et l’historien Haïm Saadoun note qu’ils ne concordent pas toujours."
+    },
+    {
+      "question": "Quand les SS exigent des travailleurs juifs à Tunis occupée en décembre 1942, qui doit dresser les listes ?",
+      "options": [
+        "Les dirigeants de la communauté",
+        "La police française",
+        "Le bey de Tunis",
+        "Le consulat d’Italie"
+      ],
+      "explanation": "Les dirigeants de la communauté, sous la menace, dirigent un comité de recrutement. Environ 5 000 hommes sont envoyés au travail forcé avant la libération de Tunis, le 7 mai 1943."
+    }
+  ],
+  "source": {
+    "label": "Musée américain du mémorial de l’Holocauste : Labor and Internment Camps in North Africa"
+  }
+}
