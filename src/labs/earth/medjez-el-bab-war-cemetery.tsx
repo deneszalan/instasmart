@@ -49,7 +49,8 @@ export default function MedjezMemorial({ onDone }: LabProps) {
     line(ctx, w / 2, ny - 6, tx, y + 26 * k + 24, place === 'medjez' ? GREEN : RUST, 2, [5, 4]);
     ctx.fillStyle = C.ink; ctx.fillRect(w / 2 - 26, ny - 6, 52, 12);
     label(ctx, t('his name'), w / 2, ny + 14, { size: 10, color: C.soft });
-    label(ctx, t('schematic, not to scale'), w - 6, 10, { size: 9, color: C.faint, align: 'right' });
+    // Bottom left, clear of the memorials' crosses.
+    label(ctx, t('schematic, not to scale'), 6, h - 8, { size: 9, color: C.faint, align: 'left' });
   };
 
   return (

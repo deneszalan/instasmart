@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { C, label, Range, Readouts, Stage, useGoal, type LabProps } from '../kit';
+import { C, font, label, Range, Readouts, Stage, useGoal, type LabProps } from '../kit';
 import { LOCALE, t } from '../../i18n';
 import { formatNumber } from '../../lib/format';
 
@@ -64,6 +64,11 @@ export default function MoncefBey({ onDone }: LabProps) {
       ctx.fillStyle = here ? GOLD : C.faint; ctx.beginPath(); ctx.arc(x, yy, here ? 6 : 4, 0, Math.PI * 2); ctx.fill();
       label(ctx, name, x + (id === 'tenes' ? -8 : 8), yy, { size: 11, color: here ? GOLD : C.soft, align: id === 'tenes' ? 'right' : 'left' });
     }
+    // On a dark backing, so the coastline under it doesn't run through the words.
+    font(ctx, 9);
+    const noteW = ctx.measureText(t('Schematic map of the exile')).width;
+    ctx.fillStyle = 'rgba(12, 16, 32, 0.92)';
+    ctx.fillRect(w - 11 - noteW, 2, noteW + 10, 16);
     label(ctx, t('Schematic map of the exile'), w - 6, 10, { size: 9, color: C.faint, align: 'right' });
     // the timeline: reign in gold, exile in blue, the cursor at this month
     const ty = h - 24, x0 = 8, x1 = w - 8, X = (ms: number) => x0 + ((ms - ACCESSION) / (DEATH - ACCESSION)) * (x1 - x0);
