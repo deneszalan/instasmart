@@ -195,6 +195,7 @@ import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decaf
 import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX, MIN_STEP as ORZO_STEP, ORZO as ORZO_BAND, brownRate as orzoRate, dryMinutes as orzoDry, isOrzo, roastDegree as orzoRoast, waterLeft as orzoWater } from '../src/labs/chemistry/caffe-orzo-roasted-barley';
 import { along as raceAlong, DJEDEIDA_AT as RACE_DJEDEIDA, miles as raceMiles, nearest as raceNearest, PLACES as RACE_PLACES, ROUTE_LENGTH as RACE_LENGTH, FIELDS as RACE_FIELDS } from '../src/labs/history/race-for-tunis-1942';
 import { dayOf as occDay, EVENTS as OCC_EVENTS, eventAt as occEventAt, FREED as OCC_FREED, ORDER as OCC_ORDER, ROUNDUP as OCC_ROUNDUP, SURRENDER as OCC_SURRENDER, dateOf as occDate } from '../src/labs/politics/tunisia-jews-forced-labour-1942';
+import { EPISODES as MEMMI_EPISODES, score as memmiScore } from '../src/labs/literature/memmi-pillar-of-salt';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1981,5 +1982,14 @@ describe('lab maths', () => {
     expect(occEventAt(0).id).toBe('arrive');
     expect(occEventAt(OCC_ROUNDUP + 50).id).toBe('camps');
     expect(occEventAt(OCC_FREED).id).toBe('freed');
+  });
+  it('Memmi fork: every episode has one thread, all three threads are used, and only the right answers score', () => {
+    const right = Object.fromEntries(MEMMI_EPISODES.map((e) => [e.id, e.thread]));
+    expect(memmiScore(right)).toBe(MEMMI_EPISODES.length);
+    expect(memmiScore({})).toBe(0);
+    expect(new Set(MEMMI_EPISODES.map((e) => e.thread))).toEqual(new Set(['both', 'novel', 'life']));
+    expect(new Set(MEMMI_EPISODES.map((e) => e.id)).size).toBe(MEMMI_EPISODES.length);
+    expect(memmiScore({ ...right, ship: 'life' })).toBe(MEMMI_EPISODES.length - 1);
+    expect(MEMMI_EPISODES.find((e) => e.id === 'camp')!.thread).toBe('both');
   });
 });

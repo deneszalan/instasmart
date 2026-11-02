@@ -1,0 +1,146 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "literature-memmi-pillar-of-salt",
+  "field": "literature",
+  "title": "Albert Memmi gave his own life to the hero of his 1953 novel, then changed its ending",
+  "emoji": "📖",
+  "body": "Albert Memmi (1920–2020) was born by the Hara, the old Jewish quarter of Tunis, the son of a saddler. His first novel, *La Statue de sel* (1953; in English *The Pillar of Salt*), with a preface by Albert Camus, is told by Alexandre Mordekhaï Benillouche, who grows up in an alley there, wins a scholarship to the French lycée and finds himself a stranger in his own city, never fully French once Vichy's anti-Jewish laws arrive. When German troops occupy Tunis in November 1942, he asks to be sent to a forced labour camp, then escapes. Much of this is Memmi's life: he too was in a labour camp in 1942–43, \"more or less voluntarily\" as he put it, and the historian Haïm Saadoun argues the novel rests on the diary he kept. The ending is fiction: Alexandre sails for South America, while Memmi studied in Algiers and Paris, taught in Tunis and moved to France after independence. In French, see [France Culture's guide](https://www.radiofrance.fr/franceculture/retournez-vous-sur-la-statue-de-sel-un-roman-qui-nous-aide-a-penser-la-decolonisation-et-le-racisme-1537375) and [Saadoun's article](https://shs.cairn.info/revue-d-histoire-de-la-shoah-2016-2-page-561).",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "Albert Memmi called his 1953 novel about a Jewish boy from Tunis La Statue de sel, The Pillar of Salt. Which story gives the title?",
+      "answer": "Lot’s wife, in the Book of Genesis",
+      "detail": "Fleeing Sodom, she looked back and was turned into a pillar of salt. Memmi’s narrator ends his book by looking back on his own life."
+    },
+    {
+      "type": "video",
+      "src": "pillar-of-salt.mp4",
+      "poster": "pillar-of-salt.jpg",
+      "alt": "Animation on cream paper: a drawn title plate for La Statue de sel (1953), an alley in Tunis with a blue door, two coloured threads for Albert Memmi's life and his novel running side by side to a labour camp, then parting: a ship for the novel, Algiers, Paris and Tunis for Memmi.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Ossuary 5 - Rest” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 4
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "memmi-pillar-of-salt",
+      "prompt": "Sort eight episodes: in Memmi's life and his novel, in the novel only, or in his life only. Where do the two stories part?",
+      "takeaway": "Childhood by the Hara, the French lycée and the 1942–43 labour camp are in both. The name Benillouche and the ship to South America are fiction; Algiers, Paris, the 1953 book and France are Memmi's alone."
+    },
+    {
+      "type": "quote",
+      "text": "Here is a French writer from Tunisia who is neither French nor Tunisian.",
+      "attribution": "Albert Camus, preface to La Statue de sel, 1953 (translated)"
+    },
+    {
+      "type": "compare",
+      "heading": "Life or fiction?",
+      "left": {
+        "label": "From Memmi’s life",
+        "text": "Born by the Hara, a saddler’s son; a scholarship to the French lycée; a forced labour camp in 1942–43, kept in a diary."
+      },
+      "right": {
+        "label": "Invented or changed",
+        "text": "The narrator’s name, Alexandre Mordekhaï Benillouche, and the ending: he sails for South America, while Memmi studied in Algiers and Paris."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "In Albert Memmi’s novel La Statue de sel, what does the narrator Alexandre do when the Germans demand Jewish workers in Tunis?",
+      "options": [
+        "Asks to go to a labour camp",
+        "Hides in the Hara",
+        "Joins the French army",
+        "Leaves for Paris"
+      ],
+      "answer": 0,
+      "explanation": "Staying behind feels intolerable, so he asks to be sent to a camp, and later escapes. Memmi himself was in a labour camp in 1942–43, “more or less voluntarily”."
+    }
+  ],
+  "tags": [
+    "memmi",
+    "novel",
+    "tunis",
+    "hara",
+    "laborcamp",
+    "camus"
+  ],
+  "source": {
+    "label": "Haïm Saadoun: Nouvelle lecture de La Statue de sel d’Albert Memmi (Revue d’histoire de la Shoah, 2016)",
+    "url": "https://shs.cairn.info/revue-d-histoire-de-la-shoah-2016-2-page-561"
+  },
+  "theme": {
+    "gradient": [
+      "#1f2440",
+      "#8a3f2c"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T11:03:48Z"
+}

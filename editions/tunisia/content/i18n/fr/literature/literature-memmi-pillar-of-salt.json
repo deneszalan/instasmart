@@ -1,0 +1,50 @@
+{
+  "id": "literature-memmi-pillar-of-salt",
+  "title": "Albert Memmi a prêté sa vie au héros de son roman de 1953, puis en a changé la fin",
+  "body": "Albert Memmi (1920-2020) naît près de la Hara, le vieux quartier juif de Tunis, fils d’un bourrelier. Son premier roman, *La Statue de sel* (1953), préfacé par Albert Camus, est raconté par Alexandre Mordekhaï Benillouche, qui grandit dans une impasse du quartier, obtient une bourse pour le lycée français et se découvre étranger dans sa ville natale, jamais tout à fait français après les lois antijuives de Vichy. Quand les troupes allemandes occupent Tunis, en novembre 1942, il demande à partir pour un camp de travail forcé, puis s’en évade. C’est en bonne part la vie de Memmi : lui aussi connaît un camp de travail en 1942-1943, « à peu près volontairement », disait-il, et selon l’historien Haïm Saadoun le roman s’appuie sur son journal. La fin est inventée : Alexandre part pour l’Amérique du Sud, tandis que Memmi étudie à Alger et à Paris, enseigne à Tunis et s’installe en France après l’indépendance. Lire [le guide de France Culture](https://www.radiofrance.fr/franceculture/retournez-vous-sur-la-statue-de-sel-un-roman-qui-nous-aide-a-penser-la-decolonisation-et-le-racisme-1537375) et [l’article de Saadoun](https://shs.cairn.info/revue-d-histoire-de-la-shoah-2016-2-page-561).",
+  "slides": [
+    {
+      "prompt": "Albert Memmi intitule son roman de 1953 sur un garçon juif de Tunis La Statue de sel. De quel récit vient ce titre ?",
+      "answer": "La femme de Loth, dans la Genèse",
+      "detail": "En fuyant Sodome, elle se retourne et devient une statue de sel. Le narrateur de Memmi termine son livre en se retournant sur sa propre vie."
+    },
+    {
+      "alt": "Animation sur papier crème : une plaque de titre pour La Statue de sel (1953), une impasse de Tunis à la porte bleue, deux fils de couleur, la vie d’Albert Memmi et son roman, côte à côte jusqu’au camp de travail, puis séparés : un bateau pour le roman, Alger, Paris et Tunis pour Memmi.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "pillar-of-salt-fr.mp4",
+      "poster": "pillar-of-salt-fr.jpg"
+    },
+    {
+      "prompt": "Classe huit épisodes : dans la vie de Memmi et dans son roman, dans le roman seulement, ou dans sa vie seulement. Où les deux histoires se séparent-elles ?",
+      "takeaway": "L’enfance près de la Hara, le lycée et le camp de 1942-1943 sont dans les deux. Le nom de Benillouche et le bateau pour l’Amérique du Sud sont inventés ; Alger, Paris, le livre de 1953 et la France sont à Memmi seul."
+    },
+    {
+      "text": "Voici un écrivain français de Tunisie, qui n’est ni français ni Tunisien.",
+      "attribution": "Albert Camus, préface de La Statue de sel, 1953"
+    },
+    {
+      "heading": "Vie ou fiction ?",
+      "left": {
+        "label": "La vie de Memmi",
+        "text": "Né près de la Hara, fils d’un bourrelier ; une bourse pour le lycée français ; un camp de travail forcé en 1942-1943, consigné dans un journal."
+      },
+      "right": {
+        "label": "Inventé ou changé",
+        "text": "Le nom du narrateur, Alexandre Mordekhaï Benillouche, et la fin : il part pour l’Amérique du Sud, quand Memmi étudie à Alger et à Paris."
+      }
+    },
+    {
+      "question": "Dans La Statue de sel d’Albert Memmi, que fait le narrateur Alexandre quand les Allemands exigent des travailleurs juifs à Tunis ?",
+      "options": [
+        "Il demande à partir au camp",
+        "Il se cache dans la Hara",
+        "Il s’engage dans l’armée",
+        "Il part pour Paris"
+      ],
+      "explanation": "Rester lui semble intolérable : il demande à être envoyé au camp, puis s’en évade. Memmi lui-même connut un camp de travail en 1942-1943, « à peu près volontairement »."
+    }
+  ],
+  "source": {
+    "label": "Haïm Saadoun : Nouvelle lecture de La Statue de sel d’Albert Memmi (Revue d’histoire de la Shoah, 2016)"
+  }
+}

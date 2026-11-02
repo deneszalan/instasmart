@@ -200,4 +200,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'caffe-orzo-roasted-barley': lazy(() => import('./chemistry/caffe-orzo-roasted-barley')),
   'race-for-tunis-1942': lazy(() => import('./history/race-for-tunis-1942')),
   'tunisia-jews-forced-labour-1942': lazy(() => import('./politics/tunisia-jews-forced-labour-1942')),
+  'memmi-pillar-of-salt': lazy(() => import('./literature/memmi-pillar-of-salt')),
 };
