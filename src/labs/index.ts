@@ -202,4 +202,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'khaled-abdul-wahab-mahdia': lazy(() => import('./politics/khaled-abdul-wahab-mahdia')),
   'ernie-pyle-here-is-your-war': lazy(() => import('./literature/ernie-pyle-here-is-your-war')),
   'villa-jasmin-boughedir-moati': lazy(() => import('./art/villa-jasmin-boughedir-moati')),
+  'bordj-cedria-german-war-cemetery': lazy(() => import('./earth/bordj-cedria-german-war-cemetery')),
 };

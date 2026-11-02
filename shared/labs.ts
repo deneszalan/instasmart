@@ -202,6 +202,7 @@ export const LABS = {
   'khaled-abdul-wahab-mahdia': 'Read the testimonies Yad Vashem cited about Khaled Abdul-Wahab’s farm near Mahdia in 1943, set whether hosting the families broke a law and whether the Germans knew, and see how its test of risk decides the title of Righteous Among the Nations.',
   'ernie-pyle-here-is-your-war': 'Tap a schematic map of Tunisia to find five places Ernie Pyle reported from in Here Is Your War (1943), Sbeitla, Fériana, Gafsa, Mateur and Bizerte, and read what he saw at each.',
   'villa-jasmin-boughedir-moati': 'Sort nine cards from Férid Boughedir’s film Villa Jasmin (2008) into documented history, the Moati family’s memory and the film’s own telling, and read where each comes from.',
+  'bordj-cedria-german-war-cemetery': 'Slide from 1943 to today and follow the German dead of the Tunisian campaign from six makeshift cemeteries and field graves to the ossuaries of Bordj Cedria, with the year of the agreement, the building, the opening and each November’s day of mourning.',
 } as const;
 
 export type LabId = keyof typeof LABS;

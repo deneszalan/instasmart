@@ -197,6 +197,7 @@ import { hookKm as marethHookKm, hookMiles as marethHookMiles, mainAttack as mar
 import { matchesRecord as wahabRecord, riskFound as wahabRisk } from '../src/labs/politics/khaled-abdul-wahab-mahdia';
 import { kmBetween as pyleKm, PLACES as PYLE_PLACES, TOLERANCE_KM as PYLE_TOL, toleranceKm as pyleTolFor } from '../src/labs/literature/ernie-pyle-here-is-your-war';
 import { ITEMS as JASMIN_ITEMS, score as jasminScore, STRANDS as JASMIN_STRANDS } from '../src/labs/art/villa-jasmin-boughedir-moati';
+import { dayOfMourning as cedriaMourning, firstAdvent as cedriaAdvent, OPENED as CEDRIA_OPENED, stageOf as cedriaStage } from '../src/labs/earth/bordj-cedria-german-war-cemetery';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1995,5 +1996,19 @@ describe('lab maths', () => {
     expect(jasminScore(all)).toBe(9);
     expect(jasminScore({})).toBe(0);
     expect(jasminScore({ ...all, boccara: 'history' })).toBe(8);
+  });
+  it('bordj cedria: the day of mourning is two Sundays before Advent, and the cemetery opens in 1977', () => {
+    const iso = (d: Date) => d.toISOString().slice(0, 10);
+    expect(iso(cedriaAdvent(2026))).toBe('2026-11-29');
+    expect(iso(cedriaMourning(2026))).toBe('2026-11-15');
+    expect(iso(cedriaMourning(2015))).toBe('2015-11-15');
+    expect(iso(cedriaMourning(2022))).toBe('2022-11-13');
+    expect(iso(cedriaAdvent(1977))).toBe('1977-11-27');
+    for (let y = 1977; y <= 2030; y++) { const d = cedriaMourning(y); expect(d.getUTCDay()).toBe(0); expect(d.getUTCMonth()).toBe(10); expect(d.getUTCDate()).toBeGreaterThanOrEqual(13); expect(d.getUTCDate()).toBeLessThanOrEqual(19); }
+    expect(cedriaStage(1965)).toBe('scattered');
+    expect(cedriaStage(1966)).toBe('agreement');
+    expect(cedriaStage(1974)).toBe('building');
+    expect(cedriaStage(CEDRIA_OPENED)).toBe('open');
+    expect(CEDRIA_OPENED - 1943).toBe(34);
   });
 });
