@@ -199,6 +199,7 @@ export const LABS = {
   'decaf-coffee-caffeine-removal': 'A toy model of decaffeination: soak green coffee beans in plain hot water, a green coffee extract (as in the Swiss Water Process) or a solvent, choose whether the caffeine is taken out of the liquid each round, and try to remove 97% of the caffeine while keeping the flavour in the beans.',
   'caffe-orzo-roasted-barley': 'Roast barley in a toy roaster: set the heat and the time, watch the grain dry and then brown, and aim for the dark brown of caffè d’orzo without burning it, while the caffeine stays at 0 mg at every setting.',
   'end-in-tunisia-may-1943': 'Tap through five counts of the Axis soldiers taken prisoner in Tunisia in May 1943, from the British and American official histories to General von Arnim’s own estimate, drawn as squares of 1,000, and see how far apart they are.',
+  'bourguiba-and-the-axis-1943': 'Slide month by month from April 1938 to April 1945 and follow Habib Bourguiba from French prisons to Rome, Tunis and Cairo: where he was, who held him, and what happened that month.',
 } as const;
 
 export type LabId = keyof typeof LABS;

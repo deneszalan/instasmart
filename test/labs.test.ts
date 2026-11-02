@@ -194,6 +194,7 @@ import { FLOOR as CLOCK_FLOOR, profile as clockProfile, readAge as clockRead, re
 import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decafRemoved, soak as decafSoak } from '../src/labs/chemistry/decaf-coffee-caffeine-removal';
 import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX, MIN_STEP as ORZO_STEP, ORZO as ORZO_BAND, brownRate as orzoRate, dryMinutes as orzoDry, isOrzo, roastDegree as orzoRoast, waterLeft as orzoWater } from '../src/labs/chemistry/caffe-orzo-roasted-barley';
 import { COUNTS as TUNIS_COUNTS, COUNT_IDS as TUNIS_COUNT_IDS, foundExtremes as tunisExtremes, spread as tunisSpread, squaresFor as tunisSquares } from '../src/labs/history/end-in-tunisia-may-1943';
+import { LETTER as BOURG_LETTER, LAST_INDEX as BOURG_LAST, fromIndex as bourgFrom, monthIndex as bourgIndex, whereIn as bourgWhere } from '../src/labs/politics/bourguiba-and-the-axis-1943';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1964,5 +1965,21 @@ describe('lab maths', () => {
     expect(tunisExtremes(['playfair'])).toBe(false);
     expect(tunisExtremes(['playfair', 'howe'])).toBe(false);
     expect(tunisExtremes(['howe', 'arnim', 'playfair'])).toBe(true);
+  });
+
+  it('Bourguiba: a prisoner of Vichy France when he wrote his letter of August 1942, in Italian hands in Rome early in 1943, in Cairo by April 1945', () => {
+    expect(bourgIndex(1938, 4)).toBe(0);
+    expect(bourgIndex(1945, 4)).toBe(BOURG_LAST);
+    expect(bourgFrom(bourgIndex(1942, 8))).toEqual({ year: 1942, month: 8 });
+    expect(bourgFrom(9)).toEqual({ year: 1939, month: 1 });
+    expect(bourgWhere(BOURG_LETTER.year, BOURG_LETTER.month)).toEqual({ place: 'marseille', holder: 'vichy' });
+    expect(bourgWhere(1938, 4)).toEqual({ place: 'tunisPrison', holder: 'france' });
+    expect(bourgWhere(1939, 6).place).toBe('teboursouk');
+    expect(bourgWhere(1942, 11).place).toBe('lyon');
+    expect(bourgWhere(1942, 12).holder).toBe('germany');
+    expect(bourgWhere(1943, 2)).toEqual({ place: 'rome', holder: 'italy' });
+    expect(bourgWhere(1943, 4).holder).toBe('axisTunis');
+    expect(bourgWhere(1944, 6)).toEqual({ place: 'tunis', holder: 'watched' });
+    expect(bourgWhere(1945, 4).place).toBe('cairo');
   });
 });

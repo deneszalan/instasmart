@@ -1,0 +1,71 @@
+{
+  "id": "politics-bourguiba-and-the-axis-1943",
+  "title": "De sa prison, en 1942, Habib Bourguiba écrit que l’Allemagne ne gagnera pas la guerre",
+  "body": "Habib Bourguiba dirigeait le Néo-Destour, le parti qui réclamait l’indépendance de la Tunisie. Arrêté après les manifestations du 9 avril 1938 à Tunis, il fut détenu dans des prisons françaises, à partir de 1940 au fort Saint-Nicolas, à Marseille. De là, en août 1942, il écrivit au président par intérim du parti, Habib Thameur, que l’Allemagne ne gagnerait pas la guerre, et ordonna aux militants de s’allier aux gaullistes. Fin 1942, les Allemands le libérèrent et le remirent aux Italiens, qui le reçurent avec les honneurs à Rome en janvier 1943 et voulaient une déclaration en faveur de l’Axe ; selon le [Larousse](https://www.larousse.fr/encyclopedie/personnage/Habib_ibn_Ali_Bourguiba/109843), il refusa, persuadé de la victoire des Alliés. Ramené à Tunis en avril 1943, il appela son parti à soutenir les Alliés. Après la prise de Tunis le 7 mai, les Français déposèrent le souverain, Moncef Bey, accusé de collaboration, mais Bourguiba ne fut pas poursuivi : le consul américain Hooker Doolittle [plaida pour lui](https://csmonitor.com/2000/0412/p9s1.html). En 1945, il partit pour Le Caire ; en 1956, il mena la Tunisie à l’indépendance.",
+  "slides": [
+    {
+      "prompt": "En janvier 1943, l’Italie fasciste reçoit avec les honneurs à Rome le nationaliste tunisien Habib Bourguiba. Qu’attend-elle de lui ?",
+      "answer": "Une déclaration publique pour l’Axe",
+      "detail": "Il ne la donne pas. En août 1942, encore prisonnier à Marseille, il avait déjà écrit que l’Allemagne ne gagnerait pas la guerre."
+    },
+    {
+      "alt": "Animation sur une carte schématique et sombre de la Méditerranée : l’itinéraire d’Habib Bourguiba, de Tunis aux prisons de Marseille et de Lyon, puis Rome, Tunis et Le Caire, coloré selon qui le détient ; sa lettre d’août 1942 ; puis 1956 et le drapeau tunisien.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "bourguiba-fr.mp4",
+      "poster": "bourguiba-fr.jpg"
+    },
+    {
+      "prompt": "Fais défiler les mois de 1938 à 1945. Trouve le mois où Habib Bourguiba écrit que l’Allemagne ne gagnera pas la guerre, et regarde qui le détient alors.",
+      "takeaway": "Août 1942, au fort Saint-Nicolas à Marseille : prisonnier du régime de Vichy. Il avait choisi les Alliés des mois avant que les Allemands ne le libèrent et que l’Italie ne le courtise à Rome."
+    },
+    {
+      "text": "L’Allemagne ne gagnera pas la guerre et ne peut la gagner.",
+      "attribution": "Habib Bourguiba, lettre écrite dans sa prison de Marseille, août 1942"
+    },
+    {
+      "heading": "Habib Bourguiba, 1942-1956",
+      "events": [
+        {
+          "when": "août 1942",
+          "text": "Écrit que l’Allemagne ne gagnera pas la guerre."
+        },
+        {
+          "when": "janv. 1943",
+          "text": "À Rome ; ne donne aucune déclaration à l’Axe."
+        },
+        {
+          "when": "avr. 1943",
+          "text": "De retour à Tunis ; appelle son parti à soutenir les Alliés."
+        },
+        {
+          "when": "1956",
+          "text": "Mène la Tunisie à l’indépendance."
+        }
+      ]
+    },
+    {
+      "heading": "Deux destins en mai 1943",
+      "left": {
+        "label": "Moncef Bey",
+        "text": "Souverain de la Tunisie depuis 1942. Déposé par les Français en mai 1943, accusé de collaboration, et exilé."
+      },
+      "right": {
+        "label": "Habib Bourguiba",
+        "text": "Avait refusé l’Axe. Pas poursuivi, mais surveillé ; en 1945, il part au Caire plaider la cause tunisienne."
+      }
+    },
+    {
+      "question": "En août 1942, qui détient Habib Bourguiba quand il écrit que l’Allemagne ne gagnera pas la guerre ?",
+      "options": [
+        "La France, à Marseille",
+        "L’Italie, à Rome",
+        "L’Allemagne, à Lyon",
+        "Personne : il est libre à Tunis"
+      ],
+      "explanation": "La France : il est au fort Saint-Nicolas à Marseille, sous le régime de Vichy. Les Allemands ne le libèrent que fin 1942, puis les Italiens le reçoivent à Rome."
+    }
+  ],
+  "source": {
+    "label": "Larousse : Habib ibn Ali Bourguiba"
+  }
+}
