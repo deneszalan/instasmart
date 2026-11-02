@@ -4,7 +4,8 @@ import { Clapperboard, X } from 'lucide-react';
 import type { FieldId } from '../types';
 import { clipSeconds, mediaUrl } from '../data/library';
 import { EDITION } from '../edition';
-import { LANG, t } from '../i18n';
+import { LANG, LANG_NAMES, t } from '../i18n';
+import type { Lang } from '../../shared/translate.ts';
 import { lockScroll } from '../lib/scrollLock';
 
 export interface Film {
@@ -13,7 +14,9 @@ export interface Film {
   poster?: string;
   seconds?: number;
   /** The language of the film's voice and pictures. */
-  lang: string;
+  lang: Lang;
+  /** Its subtitles (WebVTT), in the same language. */
+  subtitles?: string;
 }
 
 /** A section's long film (`films` in shared/editions.ts), in the reader's language where it has one, else the app's own. */
@@ -29,6 +32,7 @@ export function filmFor(field: FieldId): Film | null {
     poster: own ? pick('jpg') : mediaUrl('films', `${field}.jpg`),
     seconds: clipSeconds(src),
     lang: own ? LANG : EDITION.lang,
+    subtitles: mediaUrl('films', own ? `${field}-${LANG}.vtt` : `${field}.vtt`),
   };
 }
 
@@ -71,7 +75,9 @@ export function FilmPlayer({ film, onClose }: { film: Film; onClose: () => void 
           <X size={24} />
         </button>
       </div>
-      <video className="film__video" src={film.src} poster={film.poster} controls autoPlay playsInline preload="metadata" />
+      <video className="film__video" src={film.src} poster={film.poster} controls autoPlay playsInline preload="metadata">
+        {film.subtitles && <track kind="subtitles" src={film.subtitles} srcLang={film.lang} label={LANG_NAMES[film.lang]} default />}
+      </video>
       <p className="film__hint">{t('Turn your phone sideways for a bigger picture.')}</p>
     </div>,
     document.body,

@@ -16,7 +16,7 @@ export interface Problem {
 
 export const POSTS_DIR = 'content/posts';
 export const MEDIA_DIR = 'content/media';
-/** A section's long film (`films` in shared/editions.ts) lives in content/media/films/<field>[-<lang>].mp4, with a .jpg still. */
+/** A section's long film (`films` in shared/editions.ts) lives in content/media/films/<field>[-<lang>].mp4, with a .jpg still and .vtt subtitles. */
 export const FILMS = 'films';
 
 export const MAX_IMAGE_BYTES = 1_500_000;
@@ -72,6 +72,24 @@ export function svgProblems(svg: string): string[] {
 }
 
 const ALLOWED_EXTENSIONS: readonly string[] = [...MEDIA_EXTENSIONS, ...VIDEO_EXTENSIONS];
+
+/** A film's subtitles: WebVTT, at most 200 kB, with cues in order that each have text. */
+export function subtitleProblems(text: string): string[] {
+  if (!/^\uFEFF?WEBVTT(?:[ \t].*)?(?:\r?\n|$)/.test(text)) return ['subtitles must be WebVTT, starting with "WEBVTT"'];
+  if (text.length > 200_000) return ['subtitles are over 200 kB'];
+  const time = (s: string) => s.split(':').reduce((t, part) => t * 60 + Number(part), 0);
+  const cues = [...text.matchAll(/^((?:\d\d:)?\d\d:\d\d\.\d{3}) --> ((?:\d\d:)?\d\d:\d\d\.\d{3})[^\n]*\r?\n(.*)$/gm)];
+  if (!cues.length) return ['subtitles have no cues ("00:00:01.000 --> 00:00:04.000", then the text)'];
+  const problems: string[] = [];
+  let last = 0;
+  for (const [, a, b, line] of cues) {
+    const [start, end] = [time(a), time(b)];
+    if (end <= start || start < last) problems.push(`cue ${a} --> ${b} is out of order`);
+    if (!line.trim()) problems.push(`cue ${a} --> ${b} has no text`);
+    last = start;
+  }
+  return problems.slice(0, 3);
+}
 
 /** Check one media file: allowed type, matching content, size limits, SVG safety and playable video. */
 export function mediaProblems(name: string, bytes: Uint8Array): string[] {
@@ -201,14 +219,19 @@ export function validateContent(files: ContentFile[], fields: readonly string[] 
       }
       const [postId, name] = parts;
       if (postId === FILMS) {
-        const m = /^([a-z]+)(?:-([a-z]{2}))?\.(mp4|jpg)$/.exec(name);
+        const m = /^([a-z]+)(?:-([a-z]{2}))?\.(mp4|jpg|vtt)$/.exec(name);
         if (!m || !fields.includes(m[1]) || (m[2] && !langs.includes(m[2]))) {
-          problems.push({ file: file.path, message: `a film is named <field>.mp4 or <field>-<lang>.mp4 (and .jpg for its still), for a field (${fields.join(', ')})${langs.length ? ` and a language (${langs.join(', ')})` : ''} of this app` });
+          problems.push({ file: file.path, message: `a film is named <field>.mp4 or <field>-<lang>.mp4 (with .jpg for its still and .vtt for its subtitles), for a field (${fields.join(', ')})${langs.length ? ` and a language (${langs.join(', ')})` : ''} of this app` });
           continue;
         }
+        const sibling = (ext: string) => file.path.replace(/\.[a-z0-9]+$/, `.${ext}`);
         if (m[3] === 'mp4') {
           for (const message of filmProblems(file.bytes)) problems.push({ file: file.path, message });
-          if (!files.some((f) => f.path === file.path.replace(/\.mp4$/, '.jpg'))) problems.push({ file: file.path, message: `add its still at ${file.path.replace(/\.mp4$/, '.jpg')}` });
+          for (const [ext, what] of [['jpg', 'still'], ['vtt', 'subtitles']])
+            if (!files.some((f) => f.path === sibling(ext))) problems.push({ file: file.path, message: `add its ${what} at ${sibling(ext)}` });
+        } else if (m[3] === 'vtt') {
+          for (const message of subtitleProblems(new TextDecoder().decode(file.bytes))) problems.push({ file: file.path, message });
+          if (!files.some((f) => f.path === sibling('mp4'))) problems.push({ file: file.path, message: `subtitles without their film ${sibling('mp4')}` });
         } else for (const message of mediaProblems(name, file.bytes)) problems.push({ file: file.path, message });
         continue;
       }
