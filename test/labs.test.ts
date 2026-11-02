@@ -193,6 +193,7 @@ import { canForm as bayForm, LAT_MIN as BAY_LAT, SHEAR_MAX as BAY_SHEAR, SST_MIN
 import { FLOOR as CLOCK_FLOOR, profile as clockProfile, readAge as clockRead, retained as clockRetained } from '../src/labs/body/blood-cells-epigenetic-clock';
 import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decafRemoved, soak as decafSoak } from '../src/labs/chemistry/decaf-coffee-caffeine-removal';
 import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX, MIN_STEP as ORZO_STEP, ORZO as ORZO_BAND, brownRate as orzoRate, dryMinutes as orzoDry, isOrzo, roastDegree as orzoRoast, waterLeft as orzoWater } from '../src/labs/chemistry/caffe-orzo-roasted-barley';
+import { hookKm as marethHookKm, hookMiles as marethHookMiles, mainAttack as marethMain, SWITCH_DAY as MARETH_SWITCH } from '../src/labs/history/mareth-line-left-hook';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1950,5 +1951,18 @@ describe('lab maths', () => {
     expect(isOrzo(ORZO_BAND[0])).toBe(true);
     expect(isOrzo(ORZO_BAND[1])).toBe(false);
     expect(ORZO_CAFFEINE).toBe(0);
+  });
+  it('mareth: the hook covers 50 + 25 + 40 + 10 miles, about 200 km, and becomes the main attack on 23 March', () => {
+    expect(marethHookMiles(16)).toBe(0);
+    expect(marethHookMiles(17)).toBe(50);
+    expect(marethHookMiles(20)).toBe(75);
+    expect(marethHookMiles(21)).toBe(125);
+    expect(marethHookKm(21)).toBe(200);
+    expect(marethHookKm(17)).toBe(80);
+    expect(marethMain(19)).toBe('none');
+    expect(marethMain(20)).toBe('frontal');
+    expect(marethMain(22)).toBe('frontal');
+    expect(marethMain(MARETH_SWITCH)).toBe('hook');
+    expect(MARETH_SWITCH).toBe(23);
   });
 });
