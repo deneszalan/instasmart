@@ -199,6 +199,7 @@ export const LABS = {
   'decaf-coffee-caffeine-removal': 'A toy model of decaffeination: soak green coffee beans in plain hot water, a green coffee extract (as in the Swiss Water Process) or a solvent, choose whether the caffeine is taken out of the liquid each round, and try to remove 97% of the caffeine while keeping the flavour in the beans.',
   'caffe-orzo-roasted-barley': 'Roast barley in a toy roaster: set the heat and the time, watch the grain dry and then brown, and aim for the dark brown of caffè d’orzo without burning it, while the caffeine stays at 0 mg at every setting.',
   'race-for-tunis-1942': 'Push the Allied spearhead of November 1942 along the road from Souk el Arba towards Tunis on a schematic map, switch on the winter rain, and read how far it is from Tunis, from the nearest Axis airfield and from the nearest Allied airfield that can still fly.',
+  'tunisia-jews-forced-labour-1942': 'A calendar of the German occupation of Tunis, one square per day from 9 November 1942: drag through the days to see when the SS ordered Jewish men into forced labour, when the roundup came and when Tunis was freed.',
 } as const;
 
 export type LabId = keyof typeof LABS;

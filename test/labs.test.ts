@@ -194,6 +194,7 @@ import { FLOOR as CLOCK_FLOOR, profile as clockProfile, readAge as clockRead, re
 import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decafRemoved, soak as decafSoak } from '../src/labs/chemistry/decaf-coffee-caffeine-removal';
 import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX, MIN_STEP as ORZO_STEP, ORZO as ORZO_BAND, brownRate as orzoRate, dryMinutes as orzoDry, isOrzo, roastDegree as orzoRoast, waterLeft as orzoWater } from '../src/labs/chemistry/caffe-orzo-roasted-barley';
 import { along as raceAlong, DJEDEIDA_AT as RACE_DJEDEIDA, miles as raceMiles, nearest as raceNearest, PLACES as RACE_PLACES, ROUTE_LENGTH as RACE_LENGTH, FIELDS as RACE_FIELDS } from '../src/labs/history/race-for-tunis-1942';
+import { dayOf as occDay, EVENTS as OCC_EVENTS, eventAt as occEventAt, FREED as OCC_FREED, ORDER as OCC_ORDER, ROUNDUP as OCC_ROUNDUP, SURRENDER as OCC_SURRENDER, dateOf as occDate } from '../src/labs/politics/tunisia-jews-forced-labour-1942';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1967,5 +1968,18 @@ describe('lab maths', () => {
     expect(raceNearest(p, 'allied', true).field.id).toBe('bone');
     expect(raceNearest(p, 'allied', true).mi).toBeGreaterThan(5 * raceNearest(p, 'axis', true).mi);
     expect(raceNearest(raceAlong(0), 'allied', false).mi).toBe(0);
+  });
+  it('occupation calendar: Tunis is freed on day 179, the order for workers comes on day 27, and events run in order', () => {
+    expect(OCC_FREED).toBe(179);
+    expect(OCC_SURRENDER).toBe(185);
+    expect(OCC_ORDER).toBe(27);
+    expect(OCC_ROUNDUP).toBe(30);
+    expect(occDay(1942, 11, 9)).toBe(0);
+    expect(occDate(OCC_FREED).toISOString().slice(0, 10)).toBe('1943-05-07');
+    expect(occDate(OCC_ORDER).toISOString().slice(0, 10)).toBe('1942-12-06');
+    for (let i = 1; i < OCC_EVENTS.length; i++) expect(OCC_EVENTS[i].day).toBeGreaterThan(OCC_EVENTS[i - 1].day);
+    expect(occEventAt(0).id).toBe('arrive');
+    expect(occEventAt(OCC_ROUNDUP + 50).id).toBe('camps');
+    expect(occEventAt(OCC_FREED).id).toBe('freed');
   });
 });
