@@ -300,4 +300,13 @@ export const fr: Record<string, string> = {
   '← Back to the plan': '← Retour au plan',
   'Plot {plot}': 'Carré {plot}',
   'Row 1 nearest the mall, grave 1 at the west. Schematic.': 'Rangée 1 près de l’allée, tombe 1 à l’ouest. Schéma.',
+  'All the film shot: {h} hours': 'Tout ce qui a été tourné : {h} heures',
+  'Kept: about {n} of these {total} squares': 'Gardé : environ {n} de ces {total} cases',
+  '{min} min = {ft} ft': '{min} min = {ft} pieds',
+  'Variety’s figure for footage shot; 90 feet of 35 mm film a minute.': 'Métrage tourné selon Variety ; 90 pieds de pellicule 35 mm par minute.',
+  'The cutting room: {min} minutes kept from {h} hours of film shot': 'La salle de montage : {min} minutes gardées sur {h} heures tournées',
+  'Film kept': 'Pellicule gardée',
+  '{ft} ft ({m} m)': '{m} m ({ft} pieds)',
+  'Feet shot for each foot kept': 'Pieds tournés pour un pied gardé',
+  'Final cut, minutes': 'Montage final, minutes',
 };

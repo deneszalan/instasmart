@@ -202,6 +202,7 @@ export const LABS = {
   'tunisia-jews-forced-labour-1942': 'A calendar of the German occupation of Tunis, one square per day from 9 November 1942: drag through the days to see when the SS ordered Jewish men into forced labour, when the roundup came and when Tunis was freed.',
   'memmi-pillar-of-salt': 'Sort episodes of Albert Memmi’s novel La Statue de sel and of his own life onto two threads that run together and then part: told in the novel and lived by Memmi, in the novel only, or in his life only.',
   'north-africa-american-cemetery-carthage': 'Find graves on a schematic plan of the North Africa American Cemetery at Carthage, as a visiting family would: each practice record gives a plot (A to I), a row and a grave number.',
+  'tunisian-victory-1944-film': 'A cutting room for the 1944 documentary Tunisian Victory: set the running time of the finished film and see how much of the 300,000 feet of film shot (as Variety reported) it keeps, at 90 feet of 35 mm film a minute.',
 } as const;
 
 export type LabId = keyof typeof LABS;

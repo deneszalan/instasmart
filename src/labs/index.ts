@@ -202,4 +202,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'tunisia-jews-forced-labour-1942': lazy(() => import('./politics/tunisia-jews-forced-labour-1942')),
   'memmi-pillar-of-salt': lazy(() => import('./literature/memmi-pillar-of-salt')),
   'north-africa-american-cemetery-carthage': lazy(() => import('./earth/north-africa-american-cemetery-carthage')),
+  'tunisian-victory-1944-film': lazy(() => import('./art/tunisian-victory-1944-film')),
 };

@@ -197,6 +197,7 @@ import { along as raceAlong, DJEDEIDA_AT as RACE_DJEDEIDA, miles as raceMiles, n
 import { dayOf as occDay, EVENTS as OCC_EVENTS, eventAt as occEventAt, FREED as OCC_FREED, ORDER as OCC_ORDER, ROUNDUP as OCC_ROUNDUP, SURRENDER as OCC_SURRENDER, dateOf as occDate } from '../src/labs/politics/tunisia-jews-forced-labour-1942';
 import { EPISODES as MEMMI_EPISODES, score as memmiScore } from '../src/labs/literature/memmi-pillar-of-salt';
 import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plotAt as cemPlotAt, plotRect as cemPlotRect, zoomBox as cemZoom, PLOTS as CEM_PLOTS, RECORDS as CEM_RECORDS, ROWS as CEM_ROWS, GRAVES as CEM_GRAVES } from '../src/labs/earth/north-africa-american-cemetery-carthage';
+import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, FT_PER_MIN as TV_FT_PER_MIN, hoursOf as tvHours, ratio as tvRatio, SHOT_FT as TV_SHOT } from '../src/labs/art/tunisian-victory-1944-film';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2007,5 +2008,13 @@ describe('lab maths', () => {
       expect(cemGraveAt(Z, 1, 1)).toBeNull();
     }
     for (const r of CEM_RECORDS) { expect(CEM_PLOTS).toContain(r.plot); expect(r.row).toBeLessThanOrEqual(CEM_ROWS); expect(r.grave).toBeLessThanOrEqual(CEM_GRAVES); }
+  });
+  it('Tunisian Victory cutting room: 90 feet a minute, 76 minutes is about the 6,871-foot print, and about 44 feet were shot per foot kept', () => {
+    expect(TV_FT_PER_MIN).toBe(90);
+    expect(Math.abs(tvFeet(TV_FINAL_MIN) - TV_FINAL_FT)).toBeLessThan(90);
+    expect(Math.round(tvRatio(tvFeet(TV_FINAL_MIN)))).toBe(44);
+    expect(Math.round(tvRatio(TV_FINAL_FT))).toBe(44);
+    expect(tvHours(TV_SHOT)).toBeCloseTo(55.6, 1);
+    expect(tvRatio(tvFeet(10))).toBeGreaterThan(tvRatio(tvFeet(120)));
   });
 });

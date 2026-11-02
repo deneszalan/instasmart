@@ -2662,4 +2662,13 @@ export const de: Record<string, string> = {
   '← Back to the plan': '← Zurück zum Plan',
   'Plot {plot}': 'Feld {plot}',
   'Row 1 nearest the mall, grave 1 at the west. Schematic.': 'Reihe 1 an der Promenade, Grab 1 im Westen. Schematisch.',
+  'All the film shot: {h} hours': 'Alles gedrehte Material: {h} Stunden',
+  'Kept: about {n} of these {total} squares': 'Behalten: etwa {n} dieser {total} Felder',
+  '{min} min = {ft} ft': '{min} Min. = {ft} Fuß',
+  'Variety’s figure for footage shot; 90 feet of 35 mm film a minute.': 'Drehmenge laut Variety; 90 Fuß 35-mm-Film pro Minute.',
+  'The cutting room: {min} minutes kept from {h} hours of film shot': 'Der Schneideraum: {min} Minuten aus {h} Stunden gedrehtem Film',
+  'Film kept': 'Behaltener Film',
+  '{ft} ft ({m} m)': '{ft} Fuß ({m} m)',
+  'Feet shot for each foot kept': 'Gedrehte Fuß pro behaltenem Fuß',
+  'Final cut, minutes': 'Endfassung, Minuten',
 };
