@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { C, dot, label, Range, Readouts, Stage, useGoal, type LabProps } from '../kit';
+import { C, clamp, dot, labelPlacer, Range, Readouts, Stage, useGoal, type LabelSide, type LabelSpot, type LabProps } from '../kit';
 import { t } from '../../i18n';
 import { formatNumber } from '../../lib/format';
 
@@ -58,6 +58,8 @@ function along(pts: [number, number][], f: number): [number, number] {
 
 const BLUE = '#7fb6e6', AXIS = '#d8c7a2', RED = '#e05a3a';
 
+type Pt = [number, number];
+
 function note(day: number): string {
   if (day === 6) return t('6 March: at Medenine, Rommel’s attack is stopped by anti-tank guns.');
   if (day <= 10) return t('The Eighth Army prepares; the Axis holds the Mareth Line.');
@@ -82,8 +84,11 @@ export default function MarethLeftHook({ onDone }: LabProps) {
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
     const wk = (BOX.lon1 - BOX.lon0) * KM_LON, hk = (BOX.lat1 - BOX.lat0) * KM_LAT;
     const s = Math.min((w - 8) / wk, (h - 8) / hk), ox = (w - wk * s) / 2, oy = (h - hk * s) / 2;
-    const P = ([lat, lon]: LL): [number, number] => [ox + (lon - BOX.lon0) * KM_LON * s, oy + (BOX.lat1 - lat) * KM_LAT * s];
-    const path = (pts: [number, number][]) => { ctx.beginPath(); pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); };
+    // marks drawn in pixels shrink with the map on a short stage, so they keep their place among the towns
+    const k = clamp(s / 1.25, 0.6, 1.5);
+    const P = ([lat, lon]: LL): Pt => [ox + (lon - BOX.lon0) * KM_LON * s, oy + (BOX.lat1 - lat) * KM_LAT * s];
+    const path = (pts: Pt[]) => { ctx.beginPath(); pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); };
+    const place = labelPlacer(ctx, w, h);
     // land and sea
     ctx.fillStyle = 'rgba(214,190,140,0.12)'; ctx.fillRect(ox, oy, wk * s, hk * s);
     const coast = COAST.map(P);
@@ -96,47 +101,82 @@ export default function MarethLeftHook({ onDone }: LabProps) {
     ctx.lineWidth = Math.max(6, 9 * s * 3); path(TEBAGA.map(P)); ctx.stroke();
     ctx.restore();
     const fs = Math.max(9, Math.min(12, w / 30));
-    label(ctx, t('Matmata hills'), P([33.1, 10.12])[0], P([33.1, 10.12])[1], { size: fs - 1, color: C.faint, align: 'right' });
     // the Mareth Line
-    const held = day < 28;
-    ctx.save(); ctx.strokeStyle = RED; ctx.globalAlpha = held ? 1 : 0.35; ctx.lineWidth = 4; ctx.setLineDash(held ? [] : [5, 5]); path(LINE.map(P)); ctx.stroke(); ctx.restore();
+    const held = day < 28, line = LINE.map(P);
+    ctx.save(); ctx.strokeStyle = RED; ctx.globalAlpha = held ? 1 : 0.35; ctx.lineWidth = 4; ctx.setLineDash(held ? [] : [5, 5]); path(line); ctx.stroke(); ctx.restore();
+    place.path(line, 2.5);
     // Axis behind the line, and their withdrawal
     const axisAt: LL[] = [[33.75, 10.2], [33.68, 10.12], [33.6, 10.02]];
+    const bw = Math.max(6, 10 * k), bh = Math.max(5, 8 * k);
     for (const a of axisAt) {
       const p = P(a), q = P(AKARIT);
       const [x, y] = day >= 28 ? q : day === 27 ? [p[0] + (q[0] - p[0]) * 0.4, p[1] + (q[1] - p[1]) * 0.4] : p;
-      ctx.fillStyle = AXIS; ctx.fillRect(x - 5, y - 4, 10, 8);
+      ctx.fillStyle = AXIS; ctx.fillRect(x - bw / 2, y - bh / 2, bw, bh);
+      place.block(x - bw / 2, y - bh / 2, x + bw / 2, y + bh / 2);
     }
     // Medenine, 6 March: the attack stopped
     if (day === 6) {
       const m = P(MEDENINE);
       ctx.strokeStyle = AXIS; ctx.lineWidth = 2.5;
-      for (const dy of [-10, 6]) { ctx.beginPath(); ctx.moveTo(m[0] - 46, m[1] + dy - 12); ctx.lineTo(m[0] - 16, m[1] + dy); ctx.stroke(); }
-      for (let i = 0; i < 4; i++) dot(ctx, m[0] - 10, m[1] - 14 + i * 9, 2.5, BLUE);
+      for (const dy of [-10, 6]) {
+        const from: Pt = [m[0] - 46 * k, m[1] + (dy - 12) * k], to: Pt = [m[0] - 16 * k, m[1] + dy * k];
+        ctx.beginPath(); ctx.moveTo(...from); ctx.lineTo(...to); ctx.stroke();
+        place.path([from, to], 1.5);
+      }
+      for (let i = 0; i < 4; i++) { const [x, y] = [m[0] - 10 * k, m[1] + (-14 + i * 9) * k]; dot(ctx, x, y, 2.5, BLUE); place.mark(x, y, 2.5); }
     }
     // the frontal attack, 20-22 March
     if (attack === 'frontal') {
       const a = P([33.6, 10.48]), b = P([33.68, 10.33]);
       ctx.strokeStyle = BLUE; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
       dot(ctx, b[0], b[1], 4, BLUE);
+      place.path([a, b], 2); place.mark(b[0], b[1], 4);
     }
     // the hook: dashed route, the corps' position
     const hookPts = HOOK.map(P);
     ctx.save(); ctx.strokeStyle = 'rgba(127,182,230,0.45)'; ctx.lineWidth = 2; ctx.setLineDash([4, 4]); path(hookPts); ctx.stroke(); ctx.restore();
+    place.path(hookPts, 1.5);
     if (day >= 11) {
-      let pos: [number, number];
+      let pos: Pt;
       if (day <= 25) pos = along(hookPts, hookMiles(day) / 125);
       else pos = along(ONWARD.map(P), day === 26 ? 0.12 : day === 27 ? 0.45 : day === 28 ? 0.62 : 1);
-      dot(ctx, pos[0], pos[1], attack === 'hook' ? 7 : 5, BLUE);
-      if (attack === 'hook') { ctx.strokeStyle = BLUE; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(pos[0], pos[1], 11, 0, Math.PI * 2); ctx.stroke(); }
+      const ring = Math.max(8, 11 * k);
+      dot(ctx, pos[0], pos[1], attack === 'hook' ? 7 * ring / 11 : 5, BLUE);
+      if (attack === 'hook') { ctx.strokeStyle = BLUE; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(pos[0], pos[1], ring, 0, Math.PI * 2); ctx.stroke(); }
+      place.mark(pos[0], pos[1], attack === 'hook' ? ring + 1 : 5);
     }
-    // places
-    const town = (ll: LL, name: string, dx = 6, align: CanvasTextAlign = 'left') => { const [x, y] = P(ll); dot(ctx, x, y, 2.5, C.soft); label(ctx, name, x + dx, y, { size: fs, color: C.soft, align }); };
-    town(GABES, 'Gabès'); town(HAMMA, 'El Hamma', -6, 'right'); town(MEDENINE, 'Medenine'); town(TATA, 'Foum Tatahouine', -6, 'right');
-    town(MARETH, 'Mareth', 6);
-    town(AKARIT, t('Wadi Akarit'), -6, 'right');
-    const g = P(GAP); label(ctx, t('Tebaga Gap'), g[0] - 6, g[1] + 12, { size: fs, color: '#f2c062', align: 'right' });
-    label(ctx, t('Schematic · British official history'), w - 4, h - 6, { size: fs - 3, color: C.faint, align: 'right' });
+    // places: the dots first, so no name covers another town's dot, then the names, most important first
+    const towns: [LL, string, LabelSide[]][] = [
+      [MARETH, 'Mareth', ['E', 'SE', 'NE', 'S']],
+      [GABES, 'Gabès', ['E', 'NE', 'SE', 'N']],
+      [HAMMA, 'El Hamma', ['W', 'NW', 'SW', 'N']],
+      [MEDENINE, 'Medenine', ['E', 'SE', 'NE', 'S']],
+      [TATA, 'Foum Tatahouine', ['E', 'NE', 'W', 'NW']],
+      [AKARIT, t('Wadi Akarit'), ['W', 'E', 'SW', 'NW']],
+    ];
+    for (const [ll] of towns) { const [x, y] = P(ll); dot(ctx, x, y, 2.5, C.soft); place.mark(x, y, 4); }
+    for (const [ll, name, dirs] of towns) { const [x, y] = P(ll); place.put([[name]], fs, C.soft, place.around(x, y, 2.5, fs, dirs)); }
+    // the gap, west of the corps' ring when it is there
+    const g = P(GAP);
+    place.put([[t('Tebaga Gap')]], fs, '#f2c062', place.around(g[0], g[1], Math.max(8, 11 * k), fs, ['W', 'SW', 'NW', 'N', 'S', 'E']));
+    // the credit in a corner, on two lines if one won't fit, and not across the sea's edge at the map's side
+    place.path([[ox + wk * s, oy], [ox + wk * s, coast[coast.length - 1][1]]], 2);
+    const credit = t('Schematic · British official history'), cut = credit.indexOf(' · '), source = credit.slice(cut + 3);
+    const mid = [...source.matchAll(/ /g)].map((m) => m.index).sort((a, b) => Math.abs(a - source.length / 2) - Math.abs(b - source.length / 2))[0] ?? -1;
+    const creditLines = [[credit], [credit.slice(0, cut), source]];
+    if (mid > 0) creditLines.push([credit.slice(0, cut), source.slice(0, mid), source.slice(mid + 1)]);
+    place.put(creditLines, Math.max(7.5, fs - 3), C.faint, [
+      { x: w - 3, y: h - 3, align: 'right', v: 'bottom' }, { x: w - 3, y: 3, align: 'right', v: 'top' },
+      { x: 3, y: h - 3, align: 'left', v: 'bottom' }, { x: 3, y: 3, align: 'left', v: 'top' },
+    ]);
+    // the hills' name along their ridge, wherever it is clear, on two lines if it must
+    const hills = HILLS.map(P), hillSpots: LabelSpot[] = [], hillName = t('Matmata hills'), sp = hillName.lastIndexOf(' ');
+    for (const dy of [0, 6, -6, 12, -12])
+      for (const f of [0.62, 0.5, 0.74, 0.4, 0.84, 0.3, 0.92, 0.2]) {
+        const [x, y] = along(hills, f);
+        hillSpots.push({ x, y: y + dy, align: 'center' }, { x: x + 6, y: y + dy, align: 'left' }, { x: x - 6, y: y + dy, align: 'right' });
+      }
+    place.put(sp > 0 ? [[hillName], [hillName.slice(0, sp), hillName.slice(sp + 1)]] : [[hillName]], fs - 1, C.faint, hillSpots);
   };
 
   const km = hookKm(day);

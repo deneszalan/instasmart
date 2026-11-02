@@ -259,6 +259,101 @@ export function dot(ctx: CanvasRenderingContext2D, x: number, y: number, r: numb
   ctx.fill();
 }
 
+/** Where a label goes: `y` is its middle, or its top or bottom edge when `v` says so. */
+export interface LabelSpot {
+  x: number;
+  y: number;
+  align: CanvasTextAlign;
+  v?: 'top' | 'bottom';
+}
+export type LabelSide = 'E' | 'W' | 'N' | 'S' | 'NE' | 'SE' | 'NW' | 'SW';
+type LabelBox = { x0: number; y0: number; x1: number; y1: number };
+
+/**
+ * Puts labels where they cover least of a drawing, for stages from a short phone to a tall tablet. Record the lines
+ * and dots as marks first (`mark`, `path`, `block`); each `put` then tries its spots in order and takes the first
+ * that covers no mark and no label put before it and stays on the stage, or else the one that covers least, on a
+ * dark backing if one is given. `around` gives the spots beside a dot, `beside` those beside a line.
+ */
+export function labelPlacer(ctx: CanvasRenderingContext2D, w: number, h: number) {
+  const marks: { x: number; y: number; r: number }[] = [];
+  const boxes: LabelBox[] = [];
+  const mark = (x: number, y: number, r: number) => void marks.push({ x, y, r });
+  /** Marks a polyline every 2 px, `r` being half its width plus the room to keep. */
+  const path = (pts: [number, number][], r: number) => {
+    for (let i = 1; i < pts.length; i++) {
+      const [ax, ay] = pts[i - 1], [bx, by] = pts[i], n = Math.max(1, Math.ceil(Math.hypot(bx - ax, by - ay) / 2));
+      for (let k = 0; k <= n; k++) mark(ax + ((bx - ax) * k) / n, ay + ((by - ay) * k) / n, r);
+    }
+  };
+  const block = (x0: number, y0: number, x1: number, y1: number) => void boxes.push({ x0, y0, x1, y1 });
+  const box = (lines: string[], size: number, { x, y, align, v }: LabelSpot): LabelBox => {
+    const wd = Math.max(...lines.map((s) => ctx.measureText(s).width)), ht = size * 1.15 * lines.length;
+    const x0 = align === 'left' ? x : align === 'right' ? x - wd : x - wd / 2, y0 = v === 'top' ? y : v === 'bottom' ? y - ht : y - ht / 2;
+    return { x0: x0 - 1, y0: y0 - 1, x1: x0 + wd + 1, y1: y0 + ht + 1 };
+  };
+  const cost = (b: LabelBox) => {
+    let c = 1000 * (Math.max(0, 2 - b.x0) + Math.max(0, b.x1 - w + 2) + Math.max(0, 2 - b.y0) + Math.max(0, b.y1 - h + 2));
+    for (const m of marks) if (Math.max(b.x0 - m.x, 0, m.x - b.x1) ** 2 + Math.max(b.y0 - m.y, 0, m.y - b.y1) ** 2 < m.r * m.r) c += 1;
+    for (const o of boxes) c += Math.max(0, Math.min(b.x1, o.x1) - Math.max(b.x0, o.x0)) * Math.max(0, Math.min(b.y1, o.y1) - Math.max(b.y0, o.y0));
+    return c;
+  };
+  /**
+   * Spots for a label of `size` beside a dot, each keeping the label at least `r` + 2 px from its centre: the first
+   * side of `sides`, then a step or two further out that way, then the next side, and so on, so a name moves a
+   * little along its own side before it swaps sides.
+   */
+  const around = (x: number, y: number, r: number, size: number, sides: LabelSide[]): LabelSpot[] =>
+    sides
+      .flatMap((d, rank) => [0, 1, 2, 3].map((step) => ({ d, step, order: 2 * rank + step + rank / 10 })))
+      .sort((a, b) => a.order - b.order)
+      .map(({ d, step }): LabelSpot => {
+        const g = r + 3 + step * 6, half = size * 0.575, c = (g - 1) * 0.72;
+        if (d === 'E') return { x: x + g, y, align: 'left' };
+        if (d === 'W') return { x: x - g, y, align: 'right' };
+        if (d === 'N') return { x, y: y - g - half, align: 'center' };
+        if (d === 'S') return { x, y: y + g + half, align: 'center' };
+        return { x: x + (d[1] === 'E' ? c + 1 : -c - 1), y: y + (d[0] === 'S' ? c + half + 1 : -c - half - 1), align: d[1] === 'E' ? 'left' : 'right' };
+      });
+  /** Spots for `text` beside the line from a to b, `gap` px off it on either side, from its middle outwards, then further off. */
+  const beside = (ax: number, ay: number, bx: number, by: number, text: string, size: number, gap = 4): LabelSpot[] => {
+    font(ctx, size);
+    const len = Math.hypot(bx - ax, by - ay), hw = ctx.measureText(text).width / 2 + 1, hh = size * 0.58 + 1;
+    if (len < 1) return [];
+    const nx = -(by - ay) / len, ny = (bx - ax) / len, off = hw * Math.abs(nx) + hh * Math.abs(ny);
+    return [0, 8].flatMap((more) =>
+      [0.5, 0.4, 0.6, 0.3, 0.7, 0.2, 0.8].flatMap((f) =>
+        [1, -1].map((side): LabelSpot => ({ x: ax + (bx - ax) * f + nx * (off + gap + more) * side, y: ay + (by - ay) * f + ny * (off + gap + more) * side, align: 'center' })),
+      ),
+    );
+  };
+  /**
+   * Draws a label at the best of `spots`, trying each of `options` (the same text on one line, then on more), and
+   * keeps it clear of the labels put after it. Returns its box.
+   */
+  const put = (options: string[][], size: number, color: string, spots: LabelSpot[], { weight = 700, backing }: { weight?: number; backing?: string } = {}) => {
+    font(ctx, size, weight);
+    let best = { c: Infinity, lines: options[0], spot: spots[0] };
+    search: for (const lines of options)
+      for (const spot of spots) {
+        const c = cost(box(lines, size, spot));
+        if (c < best.c) best = { c, lines, spot };
+        if (!c) break search;
+      }
+    const b = box(best.lines, size, best.spot);
+    boxes.push(b);
+    if (best.c && backing) {
+      ctx.fillStyle = backing;
+      ctx.beginPath();
+      ctx.roundRect(b.x0 - 2, b.y0, b.x1 - b.x0 + 4, b.y1 - b.y0, 4);
+      ctx.fill();
+    }
+    best.lines.forEach((s, i) => label(ctx, s, best.spot.x, b.y0 + 1 + (i + 0.5) * size * 1.15, { size, weight, color, align: best.spot.align }));
+    return b;
+  };
+  return { mark, path, block, around, beside, put };
+}
+
 /** A seeded random number generator (mulberry32), so a lab can replay the same random run. */
 export function rng(seed: number) {
   let a = seed >>> 0;
