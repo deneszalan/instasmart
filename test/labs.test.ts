@@ -196,6 +196,7 @@ import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX,
 import { along as raceAlong, DJEDEIDA_AT as RACE_DJEDEIDA, miles as raceMiles, nearest as raceNearest, PLACES as RACE_PLACES, ROUTE_LENGTH as RACE_LENGTH, FIELDS as RACE_FIELDS } from '../src/labs/history/race-for-tunis-1942';
 import { dayOf as occDay, EVENTS as OCC_EVENTS, eventAt as occEventAt, FREED as OCC_FREED, ORDER as OCC_ORDER, ROUNDUP as OCC_ROUNDUP, SURRENDER as OCC_SURRENDER, dateOf as occDate } from '../src/labs/politics/tunisia-jews-forced-labour-1942';
 import { EPISODES as MEMMI_EPISODES, score as memmiScore } from '../src/labs/literature/memmi-pillar-of-salt';
+import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plotAt as cemPlotAt, plotRect as cemPlotRect, zoomBox as cemZoom, PLOTS as CEM_PLOTS, RECORDS as CEM_RECORDS, ROWS as CEM_ROWS, GRAVES as CEM_GRAVES } from '../src/labs/earth/north-africa-american-cemetery-carthage';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1991,5 +1992,20 @@ describe('lab maths', () => {
     expect(new Set(MEMMI_EPISODES.map((e) => e.id)).size).toBe(MEMMI_EPISODES.length);
     expect(memmiScore({ ...right, ship: 'life' })).toBe(MEMMI_EPISODES.length - 1);
     expect(MEMMI_EPISODES.find((e) => e.id === 'camp')!.thread).toBe('both');
+  });
+  it('cemetery plan: plots A to C lie nearest the mall, every plot and grave maps to a point and back, and the practice records exist', () => {
+    for (const [w, h] of [[340, 150], [412, 220]]) {
+      const B = cemPlan(w, h), Z = cemZoom(w, h);
+      for (let i = 0; i < 9; i++) { const r = cemPlotRect(B, i); expect(cemPlotAt(B, r.x0 + r.w / 2, r.y0 + r.h / 2)).toBe(i); }
+      expect(cemPlotRect(B, 0).y0).toBeGreaterThan(cemPlotRect(B, 6).y0);
+      expect(cemPlotRect(B, 2).x0).toBeGreaterThan(cemPlotRect(B, 0).x0);
+      for (const row of [1, 6, CEM_ROWS]) for (const grave of [1, 9, CEM_GRAVES]) {
+        const [x, y] = cemPoint(Z, row, grave);
+        expect(cemGraveAt(Z, x, y)).toEqual({ row, grave });
+      }
+      expect(cemPoint(Z, 1, 1)[1]).toBeGreaterThan(cemPoint(Z, CEM_ROWS, 1)[1]);
+      expect(cemGraveAt(Z, 1, 1)).toBeNull();
+    }
+    for (const r of CEM_RECORDS) { expect(CEM_PLOTS).toContain(r.plot); expect(r.row).toBeLessThanOrEqual(CEM_ROWS); expect(r.grave).toBeLessThanOrEqual(CEM_GRAVES); }
   });
 });

@@ -201,6 +201,7 @@ export const LABS = {
   'race-for-tunis-1942': 'Push the Allied spearhead of November 1942 along the road from Souk el Arba towards Tunis on a schematic map, switch on the winter rain, and read how far it is from Tunis, from the nearest Axis airfield and from the nearest Allied airfield that can still fly.',
   'tunisia-jews-forced-labour-1942': 'A calendar of the German occupation of Tunis, one square per day from 9 November 1942: drag through the days to see when the SS ordered Jewish men into forced labour, when the roundup came and when Tunis was freed.',
   'memmi-pillar-of-salt': 'Sort episodes of Albert Memmi’s novel La Statue de sel and of his own life onto two threads that run together and then part: told in the novel and lived by Memmi, in the novel only, or in his life only.',
+  'north-africa-american-cemetery-carthage': 'Find graves on a schematic plan of the North Africa American Cemetery at Carthage, as a visiting family would: each practice record gives a plot (A to I), a row and a grave number.',
 } as const;
 
 export type LabId = keyof typeof LABS;
