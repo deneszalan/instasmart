@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { mediaProblems, svgProblems, validateContent, type ContentFile } from '../shared/validate.ts';
+import { mediaProblems, subtitleProblems, svgProblems, validateContent, type ContentFile } from '../shared/validate.ts';
 
 const enc = (s: string) => new TextEncoder().encode(s);
 const PNG = new Uint8Array([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a, 0, 0, 0, 0]);
@@ -191,8 +191,10 @@ describe('validateContent', () => {
 
 describe('films', () => {
   const JPG = new Uint8Array([0xff, 0xd8, 0xff, 0xe0, 0, 0x10, 0x4a, 0x46, 0x49, 0x46, 0, 0]);
+  const VTT = enc('WEBVTT\n\n00:00:01.000 --> 00:00:04.000\nThe first line.\n\n00:00:04.100 --> 00:00:06.000\nThe second.\n');
+  const body = (p: string) => (p.endsWith('.jpg') ? JPG : p.endsWith('.vtt') ? VTT : enc('not a video'));
   const check = (...paths: string[]) =>
-    validateContent([file('content/posts/space/space-test-post.json', JSON.stringify(post())), ...paths.map((p) => file(p, p.endsWith('.jpg') ? JPG : enc('not a video')))], ['space', 'history'], ['fr'])
+    validateContent([file('content/posts/space/space-test-post.json', JSON.stringify(post())), ...paths.map((p) => file(p, body(p)))], ['space', 'history'], ['fr'])
       .problems.map((p) => [p.file.replace('content/media/films/', ''), p.message.split(';')[0].split(':')[0]]);
   it('live in content/media/films/, named after a field of the app and a language it offers', () => {
     expect(check('content/media/films/history.jpg', 'content/media/films/space-fr.jpg')).toEqual([]);
@@ -202,9 +204,17 @@ describe('films', () => {
       'history-trailer.jpg',
     ]);
   });
-  it('are checked as films, each with its still', () => {
+  it('are checked as films, each with its still and subtitles', () => {
     const problems = check('content/media/films/history.mp4');
-    expect(problems.map(([f]) => f)).toEqual(['history.mp4', 'history.mp4']);
+    expect(problems.map(([f]) => f)).toEqual(['history.mp4', 'history.mp4', 'history.mp4']);
     expect(problems[1][1]).toBe('add its still at content/media/films/history.jpg');
+    expect(problems[2][1]).toBe('add its subtitles at content/media/films/history.vtt');
+  });
+  it('take WebVTT subtitles, cues in order, beside their film', () => {
+    expect(subtitleProblems('WEBVTT\n\n00:00:01.000 --> 00:00:04.000\nHello.\n')).toEqual([]);
+    expect(subtitleProblems('1\n00:00:01,000 --> 00:00:04,000\nHello.\n')).toEqual(['subtitles must be WebVTT, starting with "WEBVTT"']);
+    expect(subtitleProblems('WEBVTT\n\n00:00:05.000 --> 00:00:06.000\nB\n\n00:00:01.000 --> 00:00:02.000\nA\n')).toEqual(['cue 00:00:01.000 --> 00:00:02.000 is out of order']);
+    expect(subtitleProblems('WEBVTT\n')[0]).toMatch(/no cues/);
+    expect(check('content/media/films/history.vtt').map(([, m]) => m)).toEqual(['subtitles without their film content/media/films/history.mp4']);
   });
 });
