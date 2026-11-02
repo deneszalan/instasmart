@@ -12,7 +12,7 @@ editions/tunisia/
 
 - Run it: `npm run dev -- --mode tunisia`. Build it: `npm run build` builds every app; this one goes to `dist/tunisia/`.
 - New post: `npm run content -- new <field> <slug> --edition tunisia`. Check: `npm run content` checks every app.
-- Fields, renamed for this app in `fieldText` in `shared/editions.ts`: `history` (Campaign), `politics` (Occupation), `literature` (Literature), `art` (Film) and `earth` (Remembrance).
+- Fields, renamed for this app in `fieldText` in `shared/editions.ts`: `history` (Campaign), `politics` (Occupation), `literature` (Literature), `art` (Film), `earth` (Remembrance) and `engineering` (Visit: places in Tunisia you can visit today that tell the story of the war; say what there is to see, and to check opening times locally, without giving prices or times that change).
 - Every post is an animation with an explore lab, as in Reckon (`explainers/README.md`, "Explore labs" in `content/README.md`). Credit the clip `"Tunisia 1943 · original animation · AI narration"`; in French `"Tunisie 1943 · animation originale · voix IA"`.
 - Post ids must be unique across all apps, because `explainers/` and the labs are shared.
 
