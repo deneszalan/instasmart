@@ -198,6 +198,16 @@ import { MUSEUM as MARETH_MUSEUM, PLACES as MARETH_PLACES, angleGap as marethGap
 import { STRAIGHT as KSAR_STRAIGHT, TO_TUNIS as KSAR_TUNIS, VIA_FEZZAN as KSAR_VIA, close as ksarClose, distanceKm as ksarKm } from '../src/labs/engineering/ksar-ghilane-force-l-stele';
 import { AXIS_IN as DAR_AXIS_IN, LEFT as DAR_LEFT, axisInHammamet as darAxis, day as darDay, fits as darFits, lastFit as darLastFit, rommelAt as darRommel } from '../src/labs/engineering/dar-sebastian-hammamet-legend';
 import { angleOff as longAngle, shareToBoundary as longShare, spotOf as longSpot } from '../src/labs/engineering/longstop-hill-three-names';
+import { GAP as KAS_GAP, REACH as KAS_REACH, covered as kasCovered, helped as kasHelped, holds as kasHolds, positions as kasPositions } from '../src/labs/history/kasserine-pass-1943';
+import { DEPOSED_MONTH as MON_DEPOSED, LAST_MONTH as MON_LAST, daysInExile as monExile, daysOnThrone as monThrone, monthOf as monMonth, powerAt as monPower, whereAt as monWhere } from '../src/labs/politics/moncef-bey-deposed-1943';
+import { ORDER as KD_ORDER, SPOTS as KD_SPOTS, africa as kdAfrica, hits as kdHits, inset as kdInset } from '../src/labs/literature/keith-douglas-alamein-to-zem-zem';
+import { END as WS_END, SCENES as WS_SCENES, START as WS_START, WHEN as WS_WHEN, axisX as wsAxisX, isRight as wsRight } from '../src/labs/art/wedding-song-albou-tunis-1942';
+import { SPAN as MZ_SPAN, SWITCH_DAY as MZ_SWITCH, memorialFor as mzMemorial } from '../src/labs/earth/medjez-el-bab-war-cemetery';
+import { COUNTS as TUNIS_COUNTS, COUNT_IDS as TUNIS_COUNT_IDS, foundExtremes as tunisExtremes, spread as tunisSpread, squaresFor as tunisSquares } from '../src/labs/history/end-in-tunisia-may-1943';
+import { LETTER as BOURG_LETTER, LAST_INDEX as BOURG_LAST, fromIndex as bourgFrom, monthIndex as bourgIndex, whereIn as bourgWhere } from '../src/labs/politics/bourguiba-and-the-axis-1943';
+import { DIARY as GHEZ_DIARY, LAST_DAY as GHEZ_LAST, WAR as GHEZ_WAR, dayOf as ghezDay, latest as ghezLatest, meetingDays as ghezMeet } from '../src/labs/literature/ghez-six-mois-sous-la-botte';
+import { CLAIMS as PATTON_CLAIMS, allRight as pattonAllRight, score as pattonScore } from '../src/labs/art/patton-el-guettar';
+import { KINDS as GAMMARTH_KINDS, allSeen as gammarthAllSeen, atGammarth, placeOf as gammarthPlace } from '../src/labs/earth/gammarth-french-military-cemetery';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2023,5 +2033,136 @@ describe('lab maths', () => {
     expect(longAngle(0.3, 0.42)).toBeCloseTo(45, 6);
     expect(longShare(0, 1)).toBeCloseTo(1, 9);
     expect(longShare(0, 0.56)).toBeCloseTo(0.5, 9);
+  });
+  it('kasserine: two positions can cover the gap only out of each other’s reach; three or four close together hold it', () => {
+    expect(KAS_GAP).toBe(4);
+    expect(KAS_REACH).toBe(1);
+    expect(kasPositions(3, 1)).toEqual([1, 2, 3]);
+    expect(kasCovered(2, 2)).toBe(true);
+    expect(kasHelped(2, 2)).toBe(0);
+    for (let s = 0.5; s <= 3.0001; s += 0.1) expect(kasHolds(2, Math.round(s * 10) / 10)).toBe(false);
+    expect(kasHolds(3, 1)).toBe(true);
+    expect(kasHolds(3, 0.9)).toBe(false);
+    expect(kasHolds(4, 0.7)).toBe(true);
+    expect(kasHolds(4, 0.6)).toBe(false);
+    expect(kasHolds(4, 1.1)).toBe(false);
+    expect(kasCovered(3, 2.5)).toBe(false);
+    expect(kasHelped(4, 1)).toBe(4);
+  });
+
+  it('moncef bey: 329 days on the throne from 19 June 1942, deposed in May 1943, 1,937 days in exile to 1 September 1948', () => {
+    expect(monMonth(0)).toEqual({ y: 1942, m: 6 });
+    expect(monMonth(MON_DEPOSED)).toEqual({ y: 1943, m: 5 });
+    expect(monMonth(MON_LAST)).toEqual({ y: 1948, m: 9 });
+    expect(monMonth(40)).toEqual({ y: 1945, m: 10 });
+    expect(monThrone(0)).toBe(11);
+    expect(monThrone(MON_DEPOSED - 1)).toBeLessThan(329);
+    expect(monThrone(MON_DEPOSED)).toBe(329);
+    expect(monThrone(MON_LAST)).toBe(329);
+    expect(monExile(MON_DEPOSED - 1)).toBe(0);
+    expect(monExile(MON_DEPOSED)).toBe(17);
+    expect(monExile(MON_LAST)).toBe(1937);
+    expect(monWhere(MON_DEPOSED - 1)).toBe('tunis');
+    expect(monWhere(MON_DEPOSED)).toBe('algeria');
+    expect(monWhere(39)).toBe('algeria');
+    expect(monWhere(40)).toBe('pau');
+    expect([monPower(4), monPower(5), monPower(10), monPower(11)]).toEqual(['vichy', 'axis', 'axis', 'restored']);
+  });
+
+  it('keith douglas: each place is found where it is, the memoir runs west from El Alamein to Wadi Zem Zem, Normandy sits in the inset', () => {
+    const w = 360, h = 220;
+    for (const id of KD_ORDER) expect(kdHits(id, KD_SPOTS[id].u * w, KD_SPOTS[id].v * h, w, h)).toBe(true);
+    expect(kdHits('alamein', KD_SPOTS.zemzem.u * w, KD_SPOTS.zemzem.v * h, w, h)).toBe(false);
+    expect(kdHits('tunisia', KD_SPOTS.zemzem.u * w, KD_SPOTS.zemzem.v * h, w, h)).toBe(false);
+    expect(KD_SPOTS.alamein.u).toBeGreaterThan(KD_SPOTS.zemzem.u);
+    expect(KD_SPOTS.zemzem.u).toBeGreaterThan(KD_SPOTS.tunisia.u);
+    expect(KD_SPOTS.tilly.v).toBeLessThan(0.4);
+    for (const id of ['alamein', 'zemzem', 'tunisia'] as const) expect(KD_SPOTS[id].v).toBeGreaterThan(0.42);
+    expect(kdAfrica(8, 37.6)).toEqual({ u: 0.04, v: 0.42 });
+    expect(kdInset(-2, 51)).toEqual({ u: 0.04, v: 0.06 });
+  });
+
+  it('wedding song: each scene has one right answer, two are invented, and the real events fall inside the occupation', () => {
+    const echoes = ['levy', 'labour', 'radio', 'invented'] as const;
+    for (const s of WS_SCENES) expect(echoes.filter((e) => wsRight(s.id, e))).toHaveLength(1);
+    expect(WS_SCENES.filter((s) => s.echo === 'invented').map((s) => s.id)).toEqual(['friends', 'khaled']);
+    expect(wsRight('marriage', 'levy')).toBe(true);
+    expect(wsRight('raoul', 'labour')).toBe(true);
+    for (const [a, b] of Object.values(WS_WHEN)) {
+      expect(a).toBeGreaterThanOrEqual(WS_START);
+      expect(b).toBeLessThanOrEqual(WS_END);
+      expect(b).toBeGreaterThanOrEqual(a);
+    }
+    expect(WS_WHEN.labour[0]).toBeLessThan(WS_WHEN.levy[0]);
+    expect(wsAxisX(WS_START, 10, 110)).toBe(10);
+    expect(wsAxisX(WS_END, 10, 110)).toBe(110);
+  });
+
+  it('medjez-el-bab: First Army missing always at Medjez; Eighth Army at Alamein up to 19 February 1943, at Medjez from 20 February', () => {
+    expect(MZ_SPAN).toBe(186);
+    expect(MZ_SWITCH).toBe(104);
+    for (const d of [0, 50, MZ_SWITCH - 1, MZ_SWITCH, MZ_SPAN]) expect(mzMemorial('first', d)).toBe('medjez');
+    expect(mzMemorial('eighth', 0)).toBe('alamein');
+    expect(mzMemorial('eighth', MZ_SWITCH - 1)).toBe('alamein');
+    expect(mzMemorial('eighth', MZ_SWITCH)).toBe('medjez');
+    expect(mzMemorial('eighth', MZ_SPAN)).toBe('medjez');
+  });
+  it('end in Tunisia: five prisoner counts from 238,243 to 300,000, 61,757 apart, as squares of 1,000', () => {
+    expect(TUNIS_COUNTS.playfair).toBe(238243);
+    expect(TUNIS_COUNTS.howe).toBe(275000);
+    expect(TUNIS_COUNTS.arnim).toBe(300000);
+    expect(tunisSpread(TUNIS_COUNT_IDS).gap).toBe(61757);
+    expect(tunisSpread(['playfair', 'howe']).gap).toBe(36757);
+    expect(tunisSquares(238243)).toBe(238);
+    expect(tunisSquares(TUNIS_COUNTS.arnim)).toBe(300);
+    expect(tunisExtremes(['playfair'])).toBe(false);
+    expect(tunisExtremes(['playfair', 'howe'])).toBe(false);
+    expect(tunisExtremes(['howe', 'arnim', 'playfair'])).toBe(true);
+  });
+
+  it('Bourguiba: a prisoner of Vichy France when he wrote his letter of August 1942, in Italian hands in Rome early in 1943, in Cairo by April 1945', () => {
+    expect(bourgIndex(1938, 4)).toBe(0);
+    expect(bourgIndex(1945, 4)).toBe(BOURG_LAST);
+    expect(bourgFrom(bourgIndex(1942, 8))).toEqual({ year: 1942, month: 8 });
+    expect(bourgFrom(9)).toEqual({ year: 1939, month: 1 });
+    expect(bourgWhere(BOURG_LETTER.year, BOURG_LETTER.month)).toEqual({ place: 'marseille', holder: 'vichy' });
+    expect(bourgWhere(1938, 4)).toEqual({ place: 'tunisPrison', holder: 'france' });
+    expect(bourgWhere(1939, 6).place).toBe('teboursouk');
+    expect(bourgWhere(1942, 11).place).toBe('lyon');
+    expect(bourgWhere(1942, 12).holder).toBe('germany');
+    expect(bourgWhere(1943, 2)).toEqual({ place: 'rome', holder: 'italy' });
+    expect(bourgWhere(1943, 4).holder).toBe('axisTunis');
+    expect(bourgWhere(1944, 6)).toEqual({ place: 'tunis', holder: 'watched' });
+    expect(bourgWhere(1945, 4).place).toBe('cairo');
+  });
+
+  it('Ghez diary: 185 days from 9 November 1942 to 13 May 1943; the diary and the war meet only on 7 May 1943', () => {
+    expect(GHEZ_LAST).toBe(185);
+    expect(ghezDay(1942, 12, 14)).toBe(35);
+    expect(ghezMeet()).toEqual([ghezDay(1943, 5, 7)]);
+    expect(ghezLatest(GHEZ_DIARY, 0)).toBeUndefined();
+    expect(ghezLatest(GHEZ_WAR, 0)?.id).toBe('landing');
+    expect(ghezLatest(GHEZ_DIARY, ghezDay(1942, 12, 15))?.id).toBe('count');
+    expect(ghezLatest(GHEZ_WAR, ghezDay(1943, 5, 6))?.id).toBe('kasserine');
+    expect(ghezLatest(GHEZ_DIARY, GHEZ_LAST)?.id).toBe('emptied');
+    for (let i = 1; i < GHEZ_DIARY.length; i++) expect(GHEZ_DIARY[i].day).toBeGreaterThan(GHEZ_DIARY[i - 1].day);
+  });
+
+  it('Patton at El Guettar: two claims are only in the film, three are in the record, and all five must be sorted', () => {
+    expect(PATTON_CLAIMS.filter((c) => c.side === 'film').map((c) => c.id).sort()).toEqual(['book', 'rommel']);
+    expect(pattonScore({})).toBe(0);
+    expect(pattonScore({ rommel: 'record', panzer: 'record' })).toBe(1);
+    expect(pattonAllRight({ rommel: 'film', book: 'film', panzer: 'record', mines: 'record' })).toBe(false);
+    expect(pattonAllRight({ rommel: 'film', book: 'film', panzer: 'record', mines: 'record', weeks: 'record' })).toBe(true);
+  });
+
+  it('Gammarth: Christian and Jewish soldiers in individual graves, the unidentified in the ossuary, Muslim soldiers elsewhere', () => {
+    expect(gammarthPlace('christian')).toBe('graves');
+    expect(gammarthPlace('jewish')).toBe('graves');
+    expect(gammarthPlace('unknown')).toBe('ossuary');
+    expect(gammarthPlace('muslim')).toBe('muslim');
+    expect(GAMMARTH_KINDS.filter(atGammarth)).toEqual(['christian', 'jewish', 'unknown']);
+    expect(gammarthAllSeen(['christian', 'jewish', 'unknown'])).toBe(false);
+    expect(gammarthAllSeen(['muslim', 'christian', 'unknown', 'jewish'])).toBe(true);
   });
 });

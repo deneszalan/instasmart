@@ -1,0 +1,172 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-end-in-tunisia-may-1943",
+  "field": "history",
+  "title": "May 1943: the war in Africa ended in Tunisia with about a quarter of a million prisoners",
+  "emoji": "🗺️",
+  "body": "On 6 May 1943 the British First Army broke through west of Tunis, and on **7 May** British tanks entered Tunis while American infantry entered Bizerte. The German and Italian armies were cut in two: British tanks forced the pass at Hammam-Lif and sealed off the Cap Bon peninsula, and the French XIX Corps closed in round Zaghouan. On **13 May** the Italian Marshal Giovanni Messe surrendered the last Axis army in Africa. Why so many prisoners? The Axis armies had their backs to the sea, which Allied warships and aircraft watched day and night; they were short of fuel and supplies, and only a few hundred men escaped by boat. The counts differ: the British official history gives 238,243 unwounded prisoners (101,784 German, 89,442 Italian), the US Army's official historian about 275,000, and the US Holocaust Memorial Museum 267,000, so historians say [about a quarter of a million](https://en.wikipedia.org/wiki/Tunisian_campaign). In Germany the defeat was compared with Stalingrad: 'Tunisgrad'.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Allied troops entered Tunis and Bizerte on 7 May 1943. How many days later did the last Axis army in Africa surrender?",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "answer": 6,
+      "unit": "days",
+      "explanation": "Six days: the Italian Marshal Giovanni Messe surrendered his First Army on 13 May 1943. Within a week the German and Italian armies in Tunisia had collapsed."
+    },
+    {
+      "type": "video",
+      "src": "end-in-tunisia.mp4",
+      "poster": "end-in-tunisia.jpg",
+      "alt": "Animation on a schematic map of north-east Tunisia: a rust-hatched Axis-held area shrinks as Allied arrows reach Tunis and Bizerte on 7 May 1943 and seal off Cap Bon; ships and planes watch the sea. Then five prisoner counts as bars, from 238,243 to 300,000, and the word Tunisgrad.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Undaunted” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "end-in-tunisia-may-1943",
+      "prompt": "Tap through the five counts of Axis prisoners. Find the lowest and the highest, and see how far apart they are.",
+      "takeaway": "238,243 (British official history, unwounded men only) to 300,000 (von Arnim’s own estimate): 61,757 apart. Each counted at a different time and in a different way; historians say about a quarter of a million."
+    },
+    {
+      "type": "timeline",
+      "heading": "The last week",
+      "events": [
+        {
+          "when": "6 May 1943",
+          "text": "The British First Army breaks through west of Tunis."
+        },
+        {
+          "when": "7 May",
+          "text": "British tanks enter Tunis; American infantry enters Bizerte."
+        },
+        {
+          "when": "9–11 May",
+          "text": "Tens of thousands surrender; British troops seal off Cap Bon."
+        },
+        {
+          "when": "13 May",
+          "text": "Marshal Giovanni Messe surrenders the last Axis army in Africa."
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Whose count?",
+      "left": {
+        "label": "British official history",
+        "text": "238,243 unwounded prisoners: 101,784 German, 89,442 Italian, the rest not split by army."
+      },
+      "right": {
+        "label": "US official historian",
+        "text": "About 275,000 Axis soldiers captured. Historians usually say about a quarter of a million."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Why so many?",
+      "text": "The German and Italian armies in Tunisia had their backs to the sea. Allied aircraft and warships cut their supplies and watched the crossing to Sicily, about 145 km away. Tanks and guns were left behind for lack of fuel, and only a few hundred men escaped by boat."
+    },
+    {
+      "type": "quiz",
+      "question": "In May 1943, why could so few German and Italian soldiers escape from Tunisia?",
+      "options": [
+        "Allied ships and planes watched the sea",
+        "Sicily was already in Allied hands",
+        "A storm closed every port",
+        "They had been promised a truce"
+      ],
+      "answer": 0,
+      "explanation": "Allied warships and aircraft watched the sea to Sicily, about 145 km away, and only a few hundred men got across. The Allies did not land in Sicily until July 1943."
+    }
+  ],
+  "tags": [
+    "tunisia",
+    "1943",
+    "tunis",
+    "bizerte",
+    "surrender",
+    "prisoners"
+  ],
+  "source": {
+    "label": "US Holocaust Memorial Museum: Tunisia Campaign",
+    "url": "https://encyclopedia.ushmm.org/content/en/article/tunisia-campaign"
+  },
+  "theme": {
+    "gradient": [
+      "#16344a",
+      "#6b5a32"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T10:44:07Z"
+}

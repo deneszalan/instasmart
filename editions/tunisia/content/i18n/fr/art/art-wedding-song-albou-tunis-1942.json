@@ -1,0 +1,91 @@
+{
+  "id": "art-wedding-song-albou-tunis-1942",
+  "title": "Le Chant des mariées invente deux amies de Tunis occupée, mais pas l’occupation",
+  "body": "*Le Chant des mariées*, film franco-tunisien écrit et réalisé par Karin Albou et sorti en 2008, suit deux amies de 16 ans à Tunis en 1942 : Nour, musulmane, et Myriam, juive. Les deux jeunes filles, Khaled, le fiancé de Nour, et Raoul, le riche médecin bien plus âgé que Myriam doit épouser, sont inventés. Le monde qui les entoure ne l’est pas. Les troupes allemandes occupent Tunis de novembre 1942 à mai 1943 ; le 6 décembre, elles exigent des travailleurs juifs, et quelque 4 000 hommes partent au travail forcé ; le 22 décembre, elles prélèvent 20 millions de francs sur la communauté juive, censés « payer » les bombardements alliés, comme le consigne [un rapport du gouvernement américain de juin 1943](https://history.state.gov/historicaldocuments/frus1943v02/d258). Dans le film, la mère de Myriam, jouée par Albou elle-même, arrange le mariage parce qu’il faut de l’argent pour cette amende, et Raoul se retrouve au travail forcé. Des tracts flattent les musulmans et accusent les Juifs, comme la propagande nazie en arabe, et le travail de Khaled pour les Allemands éprouve l’amitié. En décembre 2017, le film a été projeté à Tunis pour les 75 ans de la rafle du 9 décembre 1942.",
+  "slides": [
+    {
+      "heading": "Inventé, ou historique ?",
+      "bins": [
+        "Inventé",
+        "Histoire"
+      ],
+      "items": [
+        {
+          "text": "Nour et Myriam, amies intimes"
+        },
+        {
+          "text": "20 millions de francs exigés des Juifs"
+        },
+        {
+          "text": "Raoul, le riche médecin âgé"
+        },
+        {
+          "text": "Des hommes juifs au travail forcé"
+        },
+        {
+          "text": "Les troupes allemandes à Tunis"
+        }
+      ],
+      "explanation": "Le film invente ses personnages et leur histoire, et les place au milieu des ordres réels de l’occupation allemande de Tunis, de novembre 1942 à mai 1943."
+    },
+    {
+      "alt": "Animation sur un fond noir chaud bordé de carreaux turquoise et crème : deux jeunes filles dans une cour de Tunis, une pellicule de film, puis deux pistes, le film inventé en haut et l’histoire datée en bas, reliées par des fils, des tracts et une radio, une salle de cinéma en 2017.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "wedding-song-fr.mp4",
+      "poster": "wedding-song-fr.jpg"
+    },
+    {
+      "prompt": "Pour chaque scène du film, choisis l’événement historique dont elle s’inspire, ou dis qu’elle est inventée.",
+      "takeaway": "Les personnages et l’amitié sont inventés. L’amende, le travail forcé et la propagande sont réels, tous de l’occupation de Tunis, de novembre 1942 à mai 1943."
+    },
+    {
+      "heading": "Le Chant des mariées",
+      "left": {
+        "label": "Inventé",
+        "text": "Nour, Myriam, Khaled et Raoul : leur amitié, le mariage, la jalousie et la fin de l’histoire."
+      },
+      "right": {
+        "label": "Histoire",
+        "text": "Les troupes allemandes à Tunis dès novembre 1942, le travail forcé dès décembre, 20 millions de francs exigés des Juifs."
+      }
+    },
+    {
+      "heading": "Le film et l’histoire",
+      "events": [
+        {
+          "when": "nov. 1942",
+          "text": "Les troupes allemandes à Tunis"
+        },
+        {
+          "when": "6 déc. 1942",
+          "text": "Des Juifs requis au travail forcé"
+        },
+        {
+          "when": "22 déc. 1942",
+          "text": "20 millions de francs exigés"
+        },
+        {
+          "when": "mai 1943",
+          "text": "Les armées de l’Axe capitulent"
+        },
+        {
+          "when": "déc. 2008",
+          "text": "Sortie du film de Karin Albou"
+        }
+      ]
+    },
+    {
+      "question": "Dans Le Chant des mariées de Karin Albou, pourquoi la mère de Myriam la marie-t-elle au médecin Raoul ?",
+      "options": [
+        "Pour payer une amende sur les Juifs",
+        "Pour quitter la Tunisie",
+        "Pour sauver la famille de Nour",
+        "Pour que Myriam reste à l’école"
+      ],
+      "explanation": "Il faut de l’argent pour l’amende imposée à la communauté juive, comme l’ont réellement exigé les occupants allemands : 20 millions de francs, le 22 décembre 1942."
+    }
+  ],
+  "source": {
+    "label": "Hommes & migrations : Le Chant des mariées (critique, 2009)"
+  }
+}

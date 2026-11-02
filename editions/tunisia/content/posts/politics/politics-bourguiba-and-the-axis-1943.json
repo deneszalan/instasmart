@@ -1,0 +1,167 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-bourguiba-and-the-axis-1943",
+  "field": "politics",
+  "title": "From a French prison in 1942, Habib Bourguiba wrote that Germany would not win the war",
+  "emoji": "✉️",
+  "body": "Habib Bourguiba led the Neo-Destour, the party campaigning for Tunisia's independence from France. Arrested after the protests in Tunis of 9 April 1938, he was held in French prisons, from 1940 at Fort Saint-Nicolas in Marseille. From there, in August 1942, he wrote to the party's acting leader, Habib Thameur, that Germany would not win the war, and told activists to work with de Gaulle's Free French. Late in 1942 the Germans freed him and handed him to the Italians, who received him with honours in Rome in January 1943 and wanted a declaration for the Axis; [Larousse](https://www.larousse.fr/encyclopedie/personnage/Habib_ibn_Ali_Bourguiba/109843) says he refused, convinced the Allies would win. Brought back to Tunis in April 1943, he told his party to back the Allies. After the Allies took Tunis on 7 May, the French deposed Tunisia's ruler, Moncef Bey, accusing him of collaboration, but Bourguiba was not charged: the US consul Hooker Doolittle [spoke up for him](https://csmonitor.com/2000/0412/p9s1.html). In 1945 he left for Cairo, and in 1956 he led Tunisia to independence.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "In January 1943 Fascist Italy received Habib Bourguiba, a Tunisian nationalist just out of prison, with honours in Rome. What did it want?",
+      "answer": "A public declaration for the Axis",
+      "detail": "He did not give one. In August 1942, still a prisoner in Marseille, he had already written that Germany would not win the war."
+    },
+    {
+      "type": "video",
+      "src": "bourguiba.mp4",
+      "poster": "bourguiba.jpg",
+      "alt": "Animation on a dark schematic map of the Mediterranean: Habib Bourguiba's route from Tunis to prisons in Marseille and Lyon, to Rome, back to Tunis and on to Cairo, coloured by who held him; his August 1942 letter on paper; then 1956 and the flag of Tunisia.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Stay the Course” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "bourguiba-and-the-axis-1943",
+      "prompt": "Slide through the months from 1938 to 1945. Find the month Habib Bourguiba wrote that Germany would not win the war, and see who held him then.",
+      "takeaway": "August 1942, in Fort Saint-Nicolas in Marseille: a prisoner of Vichy France. He backed the Allies months before the Germans freed him and Italy courted him in Rome."
+    },
+    {
+      "type": "quote",
+      "text": "Germany will not win the war and cannot win it.",
+      "attribution": "Habib Bourguiba, letter from his prison in Marseille, August 1942"
+    },
+    {
+      "type": "timeline",
+      "heading": "Habib Bourguiba, 1942–1956",
+      "events": [
+        {
+          "when": "Aug 1942",
+          "text": "Writes that Germany will not win the war."
+        },
+        {
+          "when": "Jan 1943",
+          "text": "In Rome; gives the Axis no declaration."
+        },
+        {
+          "when": "Apr 1943",
+          "text": "Back in Tunis; tells his party to back the Allies."
+        },
+        {
+          "when": "1956",
+          "text": "Leads Tunisia to independence."
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Two fates in May 1943",
+      "left": {
+        "label": "Moncef Bey",
+        "text": "Tunisia's ruler since 1942. Deposed by the French in May 1943, accused of collaboration, and sent into exile."
+      },
+      "right": {
+        "label": "Habib Bourguiba",
+        "text": "Had refused the Axis. Not charged, though watched; in 1945 he left for Cairo to plead Tunisia's cause."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "In August 1942, who held Habib Bourguiba prisoner when he wrote that Germany would not win the war?",
+      "options": [
+        "France, in Marseille",
+        "Italy, in Rome",
+        "Germany, in Lyon",
+        "Nobody: he was free in Tunis"
+      ],
+      "answer": 0,
+      "explanation": "France: he was in Fort Saint-Nicolas in Marseille, under the Vichy regime. The Germans freed him only late in 1942, and the Italians then received him in Rome."
+    }
+  ],
+  "tags": [
+    "tunisia",
+    "bourguiba",
+    "independence",
+    "1943",
+    "occupation"
+  ],
+  "source": {
+    "label": "Larousse: Habib ibn Ali Bourguiba",
+    "url": "https://www.larousse.fr/encyclopedie/personnage/Habib_ibn_Ali_Bourguiba/109843"
+  },
+  "theme": {
+    "gradient": [
+      "#1b2440",
+      "#7a3a1c"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T11:17:47Z"
+}

@@ -1,0 +1,176 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-moncef-bey-deposed-1943",
+  "field": "politics",
+  "title": "Moncef Bey reigned over Tunisia for 11 months of war, then the French deposed him",
+  "emoji": "👑",
+  "body": "Tunisia was a French protectorate: its monarch, the Bey of Tunis, signed the laws, but a French resident-general held the real power. **Moncef Bey** came to the throne on 19 June 1942, asked Vichy France for reforms giving Tunisians a bigger say, and on 1 January 1943 named a government of Tunisians under M’hamed Chenik. From November 1942 German and Italian troops occupied Tunis and the east; the Germans forced about 4,000 Jewish men into labour and levied 20 million francs on the Jewish community. The [United States Holocaust Memorial Museum](https://encyclopedia.ushmm.org/content/en/article/anti-jewish-legislation-in-north-africa) writes that local leaders, Moncef Bey among them, stalled anti-Jewish laws, though the protectorate restricted his authority; its archive records that he postponed evictions and “Aryanization” when the Jewish community asked. After the Axis surrender, the French authorities in Algiers under General Henri Giraud deposed him on 14 May 1943, accusing him of collaboration; General Alphonse Juin, who carried it out, later wrote that he had found nothing serious against him. Exiled to Algeria, then Pau in France, he died there in 1948 and lies in Tunis.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Moncef Bey became Bey of Tunis on 19 June 1942. About how many days did he reign before the French deposed him?",
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "answer": 329,
+      "unit": "days",
+      "explanation": "329 days, from 19 June 1942 to 14 May 1943. His exile, until his death in Pau, France, on 1 September 1948, lasted 1,937 days."
+    },
+    {
+      "type": "video",
+      "src": "moncef-bey.mp4",
+      "poster": "moncef-bey.jpg",
+      "alt": "Animation on a midnight-blue night with a frieze of eight-pointed stars: the Bey facing the French resident-general, anti-Jewish decrees waiting for his seal, nested circles of power, then a schematic map of his exile from Tunis to Laghouat, Ténès and Pau.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Gloom Horizon” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "moncef-bey-deposed-1943",
+      "prompt": "Slide through the months from June 1942. Find the month Moncef Bey lost his throne, then compare his days on the throne with his days in exile.",
+      "takeaway": "May 1943: 329 days on the throne. Exile then lasted 1,937 days, nearly six times as long, until he died in Pau on 1 September 1948."
+    },
+    {
+      "type": "compare",
+      "heading": "Deposed in May 1943",
+      "left": {
+        "label": "The French charge",
+        "text": "The French authorities in Algiers deposed Moncef Bey, accusing him of collaborating with the German and Italian occupiers."
+      },
+      "right": {
+        "label": "General Juin’s verdict",
+        "text": "General Alphonse Juin, who carried out the deposition, wrote in his memoirs that he had found nothing serious against him."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "The Bey and Tunisia’s Jews",
+      "text": "Tunisia’s Jews were the Bey’s subjects. The US Holocaust Memorial Museum says local leaders, Moncef Bey among them, stalled anti-Jewish laws, and that he postponed evictions and “Aryanization” of property when the Jewish community asked. His power was limited, and German persecution went on."
+    },
+    {
+      "type": "timeline",
+      "heading": "Reign and exile",
+      "events": [
+        {
+          "when": "19 Jun 1942",
+          "text": "Moncef Bey comes to the throne"
+        },
+        {
+          "when": "Nov 1942",
+          "text": "Axis troops occupy Tunis"
+        },
+        {
+          "when": "14 May 1943",
+          "text": "Deposed, flown to Algeria"
+        },
+        {
+          "when": "Oct 1945",
+          "text": "Moved to Pau, in France"
+        },
+        {
+          "when": "1 Sep 1948",
+          "text": "Dies in exile in Pau"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Who deposed Moncef Bey, the Bey of Tunis, in May 1943?",
+      "options": [
+        "The French authorities in Algiers",
+        "The German army",
+        "The Italian army",
+        "A Tunisian parliament"
+      ],
+      "answer": 0,
+      "explanation": "The French authorities in Algiers under General Henri Giraud, after the Axis surrender in Tunisia, accusing him of collaboration. He died in exile in 1948."
+    }
+  ],
+  "tags": [
+    "tunisia",
+    "moncefbey",
+    "1943",
+    "protectorate",
+    "exile",
+    "ww2"
+  ],
+  "source": {
+    "label": "USHMM Holocaust Encyclopedia: Anti-Jewish Legislation in North Africa",
+    "url": "https://encyclopedia.ushmm.org/content/en/article/anti-jewish-legislation-in-north-africa"
+  },
+  "theme": {
+    "gradient": [
+      "#15203a",
+      "#5a4520"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T11:17:42Z"
+}

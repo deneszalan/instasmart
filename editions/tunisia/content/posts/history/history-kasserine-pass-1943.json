@@ -1,0 +1,171 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-kasserine-pass-1943",
+  "field": "history",
+  "title": "Pushed back 50 miles in Tunisia in February 1943, the US Army changed how it fought",
+  "emoji": "🗺️",
+  "body": "In February 1943, in central Tunisia, the US Army was in its first campaign against the German army. On 14 February two German panzer divisions struck at Sidi Bou Zid, where US infantry sat on separate hills too far apart to support each other; the US 1st Armored Division lost 98 tanks and about half its strength in two days, by the historian Martin Blumenson’s count. The Allies fell back about 50 miles to the passes of the Western Dorsal, and on 19–20 February German and Italian troops under Erwin Rommel broke through the **Kasserine Pass**. They were held at Sbiba, Djebel el Hamra and Thala, where massed British and US guns stopped the last attack on 22 February; Rommel pulled back, and the pass was retaken by 25 February. [The National WWII Museum](https://www.nationalww2museum.org/war/articles/battle-kasserine-pass) names the causes: commanders who had not seen the ground, divisions split up, Americans, British and French poorly coordinated, and inexperience. Afterwards British general Harold Alexander took command of the Allied armies, George S. Patton replaced Lloyd Fredendall at the US II Corps on 6 March, and training was revised. On 23 March, at El Guettar, US troops held.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "In February 1943, about how many miles were Allied forces in central Tunisia pushed back before they held?",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "answer": 50,
+      "unit": "miles",
+      "explanation": "About 50 miles (80 km): from the Eastern Dorsal near the Faïd Pass back to the passes of the Western Dorsal, where they held at Sbiba, Djebel el Hamra and Thala."
+    },
+    {
+      "type": "video",
+      "src": "kasserine.mp4",
+      "poster": "kasserine.jpg",
+      "alt": "Animation on a dark olive schematic map of central Tunisia: two hatched mountain ridges, rust arrows of the German and Italian attacks through Sidi Bou Zid and the Kasserine Pass, blue bars where the Allies held at Sbiba, Djebel el Hamra and Thala, then the new Allied command and El Guettar.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Ossuary 7 - Resolve” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "kasserine-pass-1943",
+      "prompt": "Set the number of positions and their spacing so the whole gap is watched and each can help a neighbour.",
+      "takeaway": "Two cover the gap only out of each other’s reach, alone as at Sidi Bou Zid. Three or four, closer together, hold it."
+    },
+    {
+      "type": "timeline",
+      "heading": "Kasserine, 1943",
+      "events": [
+        {
+          "when": "14 Feb",
+          "text": "Panzers strike at Sidi Bou Zid"
+        },
+        {
+          "when": "19–20 Feb",
+          "text": "Erwin Rommel’s troops take the pass"
+        },
+        {
+          "when": "22 Feb",
+          "text": "Allied guns stop him at Thala"
+        },
+        {
+          "when": "6 March",
+          "text": "George S. Patton takes over II Corps"
+        },
+        {
+          "when": "23 March",
+          "text": "US troops hold at El Guettar"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Kasserine’s lessons",
+      "left": {
+        "label": "Why the US units lost",
+        "text": "Commanders had not seen the ground, divisions were split up, units sat too far apart, and Allies were poorly coordinated."
+      },
+      "right": {
+        "label": "What changed",
+        "text": "One Allied command under Harold Alexander, Patton at II Corps, revised training, units placed to cover each other."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "What stopped the last German attack of the Kasserine battle, at Thala in Tunisia on 22 February 1943?",
+      "options": [
+        "Massed British and US artillery",
+        "Heavy rain flooding the roads",
+        "Paratroops landing behind it",
+        "A French fleet off the coast"
+      ],
+      "answer": 0,
+      "explanation": "Massed British and American guns, some just arrived from Morocco with the US 9th Infantry Division, broke up the attack. Rommel then called the offensive off."
+    }
+  ],
+  "tags": [
+    "tunisia",
+    "kasserine",
+    "1943",
+    "usarmy",
+    "rommel",
+    "ww2"
+  ],
+  "source": {
+    "label": "The National WWII Museum: The Battle of Kasserine Pass",
+    "url": "https://www.nationalww2museum.org/war/articles/battle-kasserine-pass"
+  },
+  "theme": {
+    "gradient": [
+      "#1f261e",
+      "#4d4426"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T10:43:09Z"
+}

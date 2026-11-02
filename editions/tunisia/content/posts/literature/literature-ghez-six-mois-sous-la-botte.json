@@ -1,0 +1,160 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "literature-ghez-six-mois-sous-la-botte",
+  "field": "literature",
+  "title": "Paul Ghez had to find Jewish forced labourers for the Germans in Tunis, and kept a diary",
+  "emoji": "📓",
+  "body": "German and Italian troops occupied Tunis in November 1942. In December the SS, under Walter Rauff, demanded Jewish men for forced labour, and the community's leaders had to set up a committee to recruit them; at its head was **Paul Ghez** (1898–1971), a lawyer born in Sousse and a member of the Jewish community council ([Posen Library](https://www.posenlibrary.com/node/1259)). His diary, ***Six mois sous la botte*** (Six months under the boot), printed in Tunis in 1943, follows the occupation day by day until 8 May 1943: the confiscations, the orders and lists, 3,585 men recruited by 14 December, a march on foot to the camp at Cheylus, his efforts to lower the numbers, the families who came to his office, and on 7 May, as the Allies entered Tunis, the return of the workers. It is a first-hand record, not a novel: its dated chapters are indexed by the [Documentation Center of North African Jews during WWII](https://northafricanjews-ww2.org.il/en/?p=49163) in Jerusalem. In all, about 5,000 Jewish men were sent to labour and internment camps in Tunisia ([Montreal Holocaust Museum](https://museeholocauste.ca/en/?p=13181)).",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The Germans ordered Jewish forced labour in Tunis in December 1942. How many men had been recruited by 14 December?",
+      "min": 0,
+      "max": 10000,
+      "step": 5,
+      "answer": 3585,
+      "unit": "men",
+      "explanation": "3,585, by the count in Paul Ghez's diary. In all, about 5,000 Jewish men were sent to labour and internment camps in Tunisia."
+    },
+    {
+      "type": "video",
+      "src": "ghez-diary.mp4",
+      "poster": "ghez-diary.jpg",
+      "alt": "Animation on paper: a calendar of November 1942 to May 1943 with two lanes, the war and Paul Ghez's diary; dated entries typed into a notebook; the count of 3,585 men; plain grey figures walking to a camp; families at an office; then 7 May 1943, when both lanes meet.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Gymnopedie No 2” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "ghez-six-mois-sous-la-botte",
+      "prompt": "Slide day by day through the occupation. Find the day when the war and Paul Ghez's diary both have an entry on the same date.",
+      "takeaway": "7 May 1943: the Allies entered Tunis, and Paul Ghez arranged for the forced labourers to come home. The next day he found that the Germans had emptied his flat."
+    },
+    {
+      "type": "text",
+      "heading": "What kind of book?",
+      "text": "A diary, not a novel or a later memoir: dated chapters from November 1942 to May 1943, printed in Tunis in 1943. It names people, places and numbers, and records orders, lists, camps, his efforts to lower the numbers and the families who came to his office."
+    },
+    {
+      "type": "timeline",
+      "heading": "Six months in the diary",
+      "events": [
+        {
+          "when": "7 Dec 1942",
+          "text": "The order for forced labour; the lists."
+        },
+        {
+          "when": "14 Dec",
+          "text": "3,585 men recruited so far."
+        },
+        {
+          "when": "15 Apr 1943",
+          "text": "Workers moved back from the front."
+        },
+        {
+          "when": "7 May",
+          "text": "The Allies enter Tunis; the workers come home."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What was Paul Ghez's role during the German occupation of Tunis, according to his diary and the Posen Library?",
+      "options": [
+        "Head of the recruitment committee",
+        "Mayor of Tunis",
+        "Interpreter for the German army",
+        "Editor of a Jewish newspaper"
+      ],
+      "answer": 0,
+      "explanation": "He headed the committee that the Jewish community's leaders had to set up to supply men for the Germans' forced labour. His diary came out in Tunis in 1943."
+    }
+  ],
+  "tags": [
+    "tunisia",
+    "diary",
+    "forcedlabour",
+    "tunis",
+    "1943",
+    "occupation"
+  ],
+  "source": {
+    "label": "Posen Library: Paul Ghez, Six Months under the Boot",
+    "url": "https://www.posenlibrary.com/node/1259"
+  },
+  "theme": {
+    "gradient": [
+      "#2b2622",
+      "#7a2c2c"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T11:25:38Z"
+}

@@ -1,0 +1,159 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-gammarth-french-military-cemetery",
+  "field": "earth",
+  "title": "France's war cemetery at Gammarth took its non-Muslim dead; Muslim soldiers lie elsewhere",
+  "emoji": "🕯️",
+  "body": "Above La Marsa, north of Tunis, the French military cemetery opened on 5 January 1944 for the dead of the French army of the Tunisian campaign of 1942–43. That army included Tunisian, Algerian and Moroccan tirailleurs as well as Europeans, and its dead were buried by faith: Gammarth took Christian, Jewish and other non-Muslim soldiers, while Muslim soldiers were buried in Muslim cemeteries, such as those at Haffouz and Tarf ech-Chena. At Enfidha, a cemetery of 1949 holds 235 soldiers of all three faiths. After independence, war memorials came down, among them in 1957 the monument in Tunis to the dead of both wars, though such memorials also named Tunisians ([Habib Kazdaghli](https://www.hesperis-tamuda.com/Downloads/2010-2019/2018/fascicule-1/11.pdf)). From 1966 to 1968, French military graves from town cemeteries were gathered at Gammarth: today **1,875** soldiers of both world wars and Indochina lie there in individual graves, and the ossuary holds 1,220 boxes of unknown remains. The French embassy keeps it; in 2015 an exhibition honoured Tunisian veterans of the tirailleur regiments ([Le Courrier de l'Atlas](https://www.lecourrierdelatlas.com/?p=147315)).",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "The French military cemetery at Gammarth, near Tunis, opened in 1944. How many soldiers lie there in individual graves?",
+      "min": 0,
+      "max": 5000,
+      "step": 25,
+      "answer": 1875,
+      "unit": "soldiers",
+      "explanation": "1,875, from both world wars and Indochina, many gathered there from town cemeteries in 1966–68. The ossuary also holds 1,220 boxes of unknown remains."
+    },
+    {
+      "type": "video",
+      "src": "gammarth.mp4",
+      "poster": "gammarth.jpg",
+      "alt": "Animation: a hillside of white crosses and steles among cypresses above the sea at Gammarth; panels on the soldiers who served, burial by faith and Enfidha; a war memorial taken down; dotted lines gathering graves across a schematic Tunisia; 1,875 and 1,220; a wreath.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Sincerely” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "gammarth-french-military-cemetery",
+      "prompt": "Pick each kind of soldier of 1942–43 and see where he was buried. Which of them does not lie at Gammarth?",
+      "takeaway": "The Muslim soldier: Muslim soldiers were buried apart, in Muslim cemeteries such as Haffouz and Tarf ech-Chena. Gammarth took Christian and Jewish soldiers under their own emblems, and the unidentified in its ossuary."
+    },
+    {
+      "type": "text",
+      "heading": "Buried by faith",
+      "text": "Gammarth was made for the Christian, Jewish and other non-Muslim soldiers of the French army's North African troops. Muslim soldiers, many of them Tunisian, Algerian and Moroccan tirailleurs, were buried in Muslim cemeteries, such as those at Haffouz and Tarf ech-Chena."
+    },
+    {
+      "type": "timeline",
+      "heading": "A cemetery and its memory",
+      "events": [
+        {
+          "when": "1944",
+          "text": "Gammarth opens, on 5 January."
+        },
+        {
+          "when": "1949",
+          "text": "Enfidha's military cemetery: 235 soldiers of three faiths."
+        },
+        {
+          "when": "1957",
+          "text": "Tunis takes down its monument to the dead of both wars."
+        },
+        {
+          "when": "1966–68",
+          "text": "Military graves from town cemeteries move to Gammarth."
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Why are there no Muslim graves in the French military cemetery at Gammarth?",
+      "options": [
+        "Muslim soldiers were buried apart",
+        "No Muslim soldiers died in 1942–43",
+        "Their graves were moved to France",
+        "Tunisia asked for them in 1956"
+      ],
+      "answer": 0,
+      "explanation": "Out of respect for their faith, Muslim soldiers of the French army were buried in Muslim cemeteries, such as those at Haffouz and Tarf ech-Chena; Gammarth took the non-Muslim dead."
+    }
+  ],
+  "tags": [
+    "tunisia",
+    "cemetery",
+    "gammarth",
+    "tirailleurs",
+    "remembrance"
+  ],
+  "source": {
+    "label": "Wikipédia (fr): Cimetière militaire de Gammarth",
+    "url": "https://fr.wikipedia.org/wiki/Cimeti%C3%A8re_militaire_de_Gammarth"
+  },
+  "theme": {
+    "gradient": [
+      "#173a2e",
+      "#3f4f5a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T11:38:05Z"
+}

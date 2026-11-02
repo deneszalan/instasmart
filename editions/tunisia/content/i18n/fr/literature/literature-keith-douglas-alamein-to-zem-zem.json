@@ -1,0 +1,63 @@
+{
+  "id": "literature-keith-douglas-alamein-to-zem-zem",
+  "title": "Keith Douglas, officier de chars, a écrit la guerre du désert, puis est tombé en Normandie",
+  "body": "Keith Douglas, né en 1920, poète britannique, est officier de chars des Sherwood Rangers Yeomanry. Quand la bataille d’El-Alamein s’ouvre en Égypte, en octobre 1942, il quitte un poste d’état-major pour rejoindre son régiment malgré les ordres, et combat à travers la Libye jusqu’à ce qu’une mine le blesse à l’oued Zem Zem, en janvier 1943. Son récit en prose de ces mois, *Alamein to Zem Zem*, illustré de ses propres dessins, paraît en 1946 ; la [Commission des sépultures de guerre du Commonwealth](https://admin.cwgc.org/our-work/blog/remembering-the-poets-of-world-war-two/) y voit l’un des récits les plus expressifs de la campagne d’Afrique du Nord. Il se bat de nouveau en Tunisie en 1943 et y écrit des poèmes : « Aristocrats » est daté « Tunisie 1943 ». Dans « Vergissmeinnicht », tiré de ce qu’il a vu, des soldats reviennent sur un champ de bataille trois semaines plus tard et trouvent l’artilleur allemand qui avait touché le char du narrateur, avec la photo signée de son amie, Steffi. Le vers « For here the lover and killer are mingled » (« car ici l’amant et le tueur se confondent ») voit les deux hommes en un seul. Douglas est tué en Normandie le 9 juin 1944, à 24 ans.",
+  "slides": [
+    {
+      "alt": "Animation sur une page de carnet crème, au crayon et à l’encre : un parcours le long d’une côte schématique d’Afrique du Nord, d’El-Alamein à l’oued Zem Zem puis à la Tunisie, un livre dessiné, une photo laissée dans le sable, des myosotis bleus, puis la Normandie.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "douglas-fr.mp4",
+      "poster": "douglas-fr.jpg"
+    },
+    {
+      "prompt": "Choisis un lieu de la guerre de Keith Douglas, puis touche son emplacement sur la carte. Place les quatre.",
+      "takeaway": "Le récit va d’El-Alamein, en Égypte, à l’oued Zem Zem, en Libye : il s’arrête avant la Tunisie, où Douglas écrit ses poèmes de 1943. Il meurt en Normandie en 1944."
+    },
+    {
+      "text": "Car ici l’amant et le tueur se confondent",
+      "attribution": "Keith Douglas, « Vergissmeinnicht », 1943 (trad.)"
+    },
+    {
+      "heading": "La guerre de Keith Douglas",
+      "events": [
+        {
+          "when": "oct. 1942",
+          "text": "Rejoint le combat à El-Alamein"
+        },
+        {
+          "when": "janv. 1943",
+          "text": "Blessé à l’oued Zem Zem, Libye"
+        },
+        {
+          "when": "1943",
+          "text": "Combat en Tunisie, y écrit"
+        },
+        {
+          "when": "9 juin 1944",
+          "text": "Tué en Normandie, à 24 ans"
+        },
+        {
+          "when": "1946",
+          "text": "Parution d’Alamein to Zem Zem"
+        }
+      ]
+    },
+    {
+      "heading": "Récit et poème",
+      "text": "Alamein to Zem Zem est le récit en prose d’événements réels, d’El-Alamein en octobre 1942 à l’oued Zem Zem en janvier 1943. « Vergissmeinnicht » est un poème tiré de ce que Douglas a vu : un artilleur allemand mort et la photo de son amie."
+    },
+    {
+      "question": "Dans le poème « Vergissmeinnicht » de Keith Douglas, que trouvent les soldats près de l’artilleur allemand mort ?",
+      "options": [
+        "Une photo signée Steffi",
+        "Un journal de la bataille",
+        "Une lettre de sa mère",
+        "Une carte de la Tunisie"
+      ],
+      "explanation": "La photo de son amie, signée « Steffi. Vergissmeinnicht », « ne m’oublie pas » en allemand. Ils la trouvent trois semaines après le combat."
+    }
+  ],
+  "source": {
+    "label": "CWGC : se souvenir des poètes de la Seconde Guerre mondiale"
+  }
+}

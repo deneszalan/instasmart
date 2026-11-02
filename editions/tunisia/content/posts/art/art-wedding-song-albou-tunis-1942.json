@@ -1,0 +1,192 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "art-wedding-song-albou-tunis-1942",
+  "field": "art",
+  "title": "Le Chant des mariées invents two girls in occupied Tunis, not the orders they live under",
+  "emoji": "🎞️",
+  "body": "*Le Chant des mariées* (The Wedding Song), a 2008 French-Tunisian film written and directed by Karin Albou, follows two 16-year-old friends in Tunis in 1942: Nour, a Muslim, and Myriam, a Jew. The girls, Nour’s fiancé Khaled and Raoul, the rich older doctor Myriam must marry, are invented. The world around them is not. German troops held Tunis from November 1942 to May 1943; on 6 December they demanded Jewish workers, and about 4,000 were sent to forced labour; on 22 December they levied 20 million francs on the Jewish community, saying it would pay for Allied bombing, as [a US government report of June 1943](https://history.state.gov/historicaldocuments/frus1943v02/d258) records. In the film, Myriam’s mother, played by Albou herself, arranges the marriage because money is needed for that fine, and Raoul ends up in forced labour. Leaflets court the Muslims and blame the Jews, as Nazi propaganda did in Arabic, and Khaled’s work for the Germans strains the friendship. In December 2017 the film was shown in Tunis to mark 75 years since the roundup of 9 December 1942.",
+  "slides": [
+    {
+      "type": "sort",
+      "heading": "Invented, or history?",
+      "bins": [
+        "Invented",
+        "History"
+      ],
+      "items": [
+        {
+          "text": "Nour and Myriam, best friends",
+          "bin": 0
+        },
+        {
+          "text": "A levy of 20 million francs on Jews",
+          "bin": 1
+        },
+        {
+          "text": "Raoul, the rich older doctor",
+          "bin": 0
+        },
+        {
+          "text": "Jewish men sent to forced labour",
+          "bin": 1
+        },
+        {
+          "text": "German troops in Tunis",
+          "bin": 1
+        }
+      ],
+      "explanation": "The film invents its characters and their story, and sets them among real orders of the German occupation of Tunis, November 1942 to May 1943."
+    },
+    {
+      "type": "video",
+      "src": "wedding-song.mp4",
+      "poster": "wedding-song.jpg",
+      "alt": "Animation on warm black with a teal and cream tile band: two girls as simple figures in a Tunis courtyard inside a film frame, four invented characters, then two tracks, the invented film above and dated history below, joined by threads; leaflets and a radio; a cinema in 2017.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“Promises to Keep” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "wedding-song-albou-tunis-1942",
+      "prompt": "For each scene of the film, pick the real event it draws on, or say it is invented.",
+      "takeaway": "The characters and their friendship are invented. The fine, the forced labour and the propaganda are real, all from the occupation of Tunis, November 1942 to May 1943."
+    },
+    {
+      "type": "compare",
+      "heading": "Le Chant des mariées",
+      "left": {
+        "label": "Invented",
+        "text": "Nour, Myriam, Khaled and Raoul: their friendship, the marriage, the jealousy and how it ends."
+      },
+      "right": {
+        "label": "History",
+        "text": "German troops in Tunis from November 1942, forced labour from December, a levy of 20 million francs on Tunis’s Jews."
+      }
+    },
+    {
+      "type": "timeline",
+      "heading": "The film and the history",
+      "events": [
+        {
+          "when": "Nov 1942",
+          "text": "German troops arrive in Tunis"
+        },
+        {
+          "when": "6 Dec 1942",
+          "text": "Jewish men demanded for labour"
+        },
+        {
+          "when": "22 Dec 1942",
+          "text": "20 million francs levied on Jews"
+        },
+        {
+          "when": "May 1943",
+          "text": "The Axis armies surrender"
+        },
+        {
+          "when": "Dec 2008",
+          "text": "Karin Albou’s film opens in France"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "In Karin Albou’s film Le Chant des mariées, why does Myriam’s mother arrange her marriage to the doctor Raoul?",
+      "options": [
+        "To pay a fine on the Jews",
+        "To leave Tunisia for France",
+        "To save Nour’s family",
+        "To keep Myriam at school"
+      ],
+      "answer": 0,
+      "explanation": "Money is needed to pay a fine on the Jewish community, as the German occupiers really demanded: 20 million francs on 22 December 1942."
+    }
+  ],
+  "tags": [
+    "tunisia",
+    "film",
+    "karinalbou",
+    "occupation",
+    "1942",
+    "ww2"
+  ],
+  "source": {
+    "label": "Hommes & migrations: Le Chant des mariées (review, 2009)",
+    "url": "https://journals.openedition.org/hommesmigrations/185"
+  },
+  "theme": {
+    "gradient": [
+      "#1e1612",
+      "#6b4a1f"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-02T11:44:58Z"
+}
