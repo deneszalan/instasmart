@@ -200,6 +200,7 @@ export const LABS = {
   'caffe-orzo-roasted-barley': 'Roast barley in a toy roaster: set the heat and the time, watch the grain dry and then brown, and aim for the dark brown of caffè d’orzo without burning it, while the caffeine stays at 0 mg at every setting.',
   'mareth-line-left-hook': 'Slide day by day through March 1943 on a schematic map of the Mareth Line in southern Tunisia: Medenine, the frontal attack across the Wadi Zigzaou, and the New Zealand Corps’ left hook to the Tebaga Gap, with the British official history’s dates and distances.',
   'khaled-abdul-wahab-mahdia': 'Read the testimonies Yad Vashem cited about Khaled Abdul-Wahab’s farm near Mahdia in 1943, set whether hosting the families broke a law and whether the Germans knew, and see how its test of risk decides the title of Righteous Among the Nations.',
+  'ernie-pyle-here-is-your-war': 'Tap a schematic map of Tunisia to find five places Ernie Pyle reported from in Here Is Your War (1943), Sbeitla, Fériana, Gafsa, Mateur and Bizerte, and read what he saw at each.',
 } as const;
 
 export type LabId = keyof typeof LABS;

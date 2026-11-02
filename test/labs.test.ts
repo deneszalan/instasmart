@@ -195,6 +195,7 @@ import { GOAL_REMOVED as DECAF_GOAL, isDecaf as decafOk, removedPercent as decaf
 import { BURNT as ORZO_BURNT, CAFFEINE_MG as ORZO_CAFFEINE, MAX_MIN as ORZO_MAX, MIN_STEP as ORZO_STEP, ORZO as ORZO_BAND, brownRate as orzoRate, dryMinutes as orzoDry, isOrzo, roastDegree as orzoRoast, waterLeft as orzoWater } from '../src/labs/chemistry/caffe-orzo-roasted-barley';
 import { hookKm as marethHookKm, hookMiles as marethHookMiles, mainAttack as marethMain, SWITCH_DAY as MARETH_SWITCH } from '../src/labs/history/mareth-line-left-hook';
 import { matchesRecord as wahabRecord, riskFound as wahabRisk } from '../src/labs/politics/khaled-abdul-wahab-mahdia';
+import { kmBetween as pyleKm, PLACES as PYLE_PLACES, TOLERANCE_KM as PYLE_TOL, toleranceKm as pyleTolFor } from '../src/labs/literature/ernie-pyle-here-is-your-war';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -1973,5 +1974,17 @@ describe('lab maths', () => {
     expect(wahabRecord(false, false)).toBe(true);
     expect(wahabRecord(true, false)).toBe(false);
     expect(wahabRecord(false, true)).toBe(false);
+  });
+  it('pyle: great-circle distances between his places, and none closer than the tolerance to the next one', () => {
+    const at = (id: string) => PYLE_PLACES.find((p) => p.id === id)!;
+    const d = (a: string, b: string) => pyleKm(at(a).lat, at(a).lon, at(b).lat, at(b).lon);
+    expect(pyleKm(0, 0, 0, 1)).toBeCloseTo(111.19, 1);
+    expect(d('mateur', 'bizerte')).toBeGreaterThan(28);
+    expect(d('mateur', 'bizerte')).toBeLessThan(34);
+    expect(d('sbeitla', 'gafsa')).toBeGreaterThan(95);
+    expect(d('sbeitla', 'gafsa')).toBeLessThan(105);
+    for (const a of PYLE_PLACES) for (const b of PYLE_PLACES) if (a !== b) expect(pyleKm(a.lat, a.lon, b.lat, b.lon)).toBeGreaterThan(PYLE_TOL);
+    expect(pyleTolFor(2)).toBe(PYLE_TOL);
+    expect(pyleTolFor(0.4)).toBeCloseTo(60, 9);
   });
 });

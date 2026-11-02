@@ -1,0 +1,64 @@
+{
+  "id": "literature-ernie-pyle-here-is-your-war",
+  "title": "Ernie Pyle a raconté la Tunisie des trous d’homme, avec le nom et la rue des soldats",
+  "body": "Ernie Pyle (1900-1945), chroniqueur de Scripps-Howard, suit les troupes américaines pendant la campagne de Tunisie : la retraite autour de Sbeitla en février 1943, Gafsa en mars, les collines devant Mateur en avril, la chute de Bizerte et de Tunis en mai. Ses chroniques, réunies en 1943 dans [*Here Is Your War*](https://archive.org/details/in.ernet.dli.2015.268113), laissent la « vue d’ensemble » aux autres. Il écrit ce qu’il appelle la vue « au ras du sol » : hommes épuisés, boue, peur, tombes, avec les soldats nommés, leur ville et souvent leur adresse. « J’aimais l’infanterie parce que c’étaient les parents pauvres », écrit-il. Sa chronique paraît dans 42 journaux en novembre 1942 et 122 en avril 1943, selon son biographe Ray Boomhower ; en 1944, il reçoit le [prix Pulitzer](https://en.wikipedia.org/wiki/Pulitzer_Prize_for_Correspondence) « pour ses remarquables correspondances de guerre de l’année 1943 ». Le livre voit la Tunisie avec des yeux américains : les Tunisiens restent en marge, souvent jugés à travers les préjugés d’officiers français, même s’il note que les deux armées ont chassé les familles arabes des combats. Il meurt à Ie Shima, près d’Okinawa, le 18 avril 1945.",
+  "slides": [
+    {
+      "question": "En novembre 1942, 42 journaux américains publiaient la chronique de guerre d’Ernie Pyle. Combien environ en avril 1943 ?",
+      "unit": "journaux",
+      "explanation": "122, selon son biographe Ray Boomhower : près de trois fois plus en cinq mois. À sa mort, en 1945, environ 400 quotidiens et 300 hebdomadaires la publiaient."
+    },
+    {
+      "alt": "Animation à la lueur d’une lampe, sous une tente : une machine à écrire ; une carte schématique de la Tunisie avec le trajet d’Ernie Pyle, de Sidi Bou Zid et Sbeitla à Gafsa, Mateur et Bizerte ; des noms soulignés au crayon rouge ; des journaux, de 42 à 122 ; une médaille Pulitzer.",
+      "credit": "Tunisie 1943 · animation originale · voix IA",
+      "src": "pyle-fr.mp4",
+      "poster": "pyle-fr.jpg"
+    },
+    {
+      "prompt": "Touche la carte pour retrouver cinq lieux d’où Ernie Pyle a écrit dans Here Is Your War, de Sbeitla à Bizerte.",
+      "takeaway": "Sa Tunisie va des plaines du centre, Sbeitla, Fériana et Gafsa, l’hiver 1943, aux collines du nord devant Mateur et à Bizerte détruite en mai : le front américain, vu au ras du sol."
+    },
+    {
+      "text": "J’aimais l’infanterie parce que c’étaient les parents pauvres.",
+      "attribution": "Ernie Pyle, Here Is Your War, 1943 (traduction)"
+    },
+    {
+      "heading": "La campagne de Tunisie d’Ernie Pyle",
+      "events": [
+        {
+          "when": "Févr. 1943",
+          "text": "Retraite depuis Sidi Bou Zid et Sbeitla"
+        },
+        {
+          "when": "Avr. 1943",
+          "text": "Avec la 1re division d’infanterie devant Mateur"
+        },
+        {
+          "when": "1943",
+          "text": "Ses chroniques paraissent : Here Is Your War"
+        },
+        {
+          "when": "1944",
+          "text": "Prix Pulitzer pour ses reportages de guerre de 1943"
+        }
+      ]
+    },
+    {
+      "heading": "Ce que le livre laisse en marge",
+      "text": "Here Is Your War voit la Tunisie avec des yeux américains. Les Tunisiens y apparaissent en marge, souvent jugés à travers les préjugés d’officiers français et de son époque. Pyle note pourtant que les deux armées ont chassé les familles arabes de la zone des combats, et enfermé des suspects dans des camps en plein air."
+    },
+    {
+      "question": "Comment Ernie Pyle appelait-il sa manière de voir la guerre en Tunisie, dans Here Is Your War ?",
+      "options": [
+        "La vue au ras du sol",
+        "La vue d’ensemble",
+        "La carte du général",
+        "La une du journal"
+      ],
+      "explanation": "Il écrit ne rien savoir de la « vue d’ensemble », seulement ce qu’on voit « au ras du sol » (worm’s-eye view) : soldats épuisés, convois, trous d’homme et tombes."
+    }
+  ],
+  "source": {
+    "label": "Ernie Pyle : Here Is Your War (Henry Holt, 1943), Internet Archive"
+  }
+}
