@@ -1,0 +1,166 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-longstop-hill-three-names",
+  "field": "engineering",
+  "title": "Near Medjez el Bab, one ridge has three names: Tunisian, British and German",
+  "emoji": "⛰️",
+  "body": "North of Medjez el Bab, about 48 km from Tunis, a ridge with two summits, **Djebel el Ahmera** and Djebel Rhar, rises over the Medjerda valley. British soldiers called it **Longstop Hill**, after the cricket fielder who stands far behind the wicketkeeper; it was the last great natural barrier on the road to Tunis, and German troops held it. On the night of 22 to 23 December 1942, in heavy rain, the Coldstream Guards took it; soldiers of the US 18th Infantry took over and were pushed off Djebel el Ahmera, and on Christmas Day a German counter-attack drove the Guards off again. The Germans called it **der Weihnachtsberg**, Christmas Hill, and the Allied push on Tunis stopped for months. In April 1943 the British 78th Division attacked again: the Argyll and Sutherland Highlanders took Djebel el Ahmera, and Major John Anderson, who led them after their commander was killed, received the Victoria Cross. On 26 April a Churchill tank reached the summit and the fighting ended that morning. Today you see the ridge from the road north of Medjez el Bab; ask locally before walking up, and find the Commonwealth war cemetery close by in Medjez el Bab.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "British troops took Longstop Hill in December 1942 and lost it. About how many months later did they take it for good?",
+      "min": 0,
+      "max": 12,
+      "step": 1,
+      "answer": 4,
+      "unit": "months",
+      "explanation": "About four: from Christmas 1942 to late April 1943, when the 78th Division took both summits. Tunis fell two weeks later, on 7 May."
+    },
+    {
+      "type": "video",
+      "src": "longstop.mp4",
+      "poster": "longstop.jpg",
+      "alt": "Animation: a ridge with two summits over a valley road and river, first on a schematic plan, then in profile. A cricket field from above shows the long stop behind the wicketkeeper. Blue and red arrows for December 1942 in the rain; spring green and tanks for April 1943; three name cards.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Tunisia 1943 · original animation · AI narration",
+      "music": "“On the Shore” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "longstop-hill-three-names",
+      "prompt": "British soldiers named the hill after a cricket fielder. Drag the fielder to the long-stop position.",
+      "takeaway": "Straight behind the wicketkeeper, towards the boundary: the last fielder, there to stop the balls that get past. Longstop Hill was the last great natural barrier on the road to Tunis."
+    },
+    {
+      "type": "list",
+      "heading": "On the spot",
+      "style": "bullets",
+      "items": [
+        "Two summits: Djebel Rhar, the higher, and Djebel el Ahmera",
+        "Below them, the road and the Medjerda valley toward Tunis",
+        "The Commonwealth war cemetery at Medjez el Bab, close by",
+        "Ask locally before walking up the hill"
+      ]
+    },
+    {
+      "type": "timeline",
+      "heading": "Longstop Hill",
+      "events": [
+        {
+          "when": "22–23 Dec 1942",
+          "text": "Coldstream Guards take it in heavy rain"
+        },
+        {
+          "when": "25 Dec 1942",
+          "text": "A German counter-attack drives them off"
+        },
+        {
+          "when": "Late Apr 1943",
+          "text": "The 78th Division takes both summits"
+        },
+        {
+          "when": "7 May 1943",
+          "text": "Tunis falls to the Allies"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "British soldiers named a ridge near Medjez el Bab ‘Longstop Hill’. Where does the name come from?",
+      "options": [
+        "A cricket fielding position",
+        "A railway signal",
+        "A football tactic",
+        "A Roman milestone"
+      ],
+      "answer": 0,
+      "explanation": "In cricket, the long stop stands far behind the wicketkeeper, to stop balls that get past. The ridge was the last great natural barrier on the road to Tunis."
+    }
+  ],
+  "tags": [
+    "longstop",
+    "medjezelbab",
+    "tunis",
+    "names",
+    "battlefield",
+    "visit"
+  ],
+  "source": {
+    "label": "Wikipedia: Battle of Longstop Hill",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Longstop_Hill"
+  },
+  "createdAt": "2026-11-02T11:26:29Z",
+  "theme": {
+    "gradient": [
+      "#1c2733",
+      "#56703a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}

@@ -202,6 +202,7 @@ export const LABS = {
   'mareth-line-museum-casemates': 'Stand on the Mareth Line museum’s hill and turn a compass to face Mareth, Medenine, the Matmata hills and Gabès: which way the line looked.',
   'ksar-ghilane-force-l-stele': 'Guess how far General Leclerc’s Force L had come from Chad to the oasis of Ksar Ghilane, then measure it on a schematic map, straight and via the Fezzan.',
   'dar-sebastian-hammamet-legend': 'Slide through November 1942 to May 1943 and test the story that Rommel slept at Hammamet’s Dar Sebastian against the dates: when could it fit at all?',
+  'longstop-hill-three-names': 'Find the long stop on a cricket field, the fielder far behind the wicketkeeper who gave Longstop Hill near Medjez el Bab its British name.',
 } as const;
 
 export type LabId = keyof typeof LABS;

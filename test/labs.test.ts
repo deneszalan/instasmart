@@ -197,6 +197,7 @@ import { EYE as TAK_EYE, SEE_OUT as TAK_SEE, faceHidden as takFace, farthestBack
 import { MUSEUM as MARETH_MUSEUM, PLACES as MARETH_PLACES, angleGap as marethGap, bearing as marethBearing, distanceKm as marethKm, facing as marethFacing } from '../src/labs/engineering/mareth-line-museum-casemates';
 import { STRAIGHT as KSAR_STRAIGHT, TO_TUNIS as KSAR_TUNIS, VIA_FEZZAN as KSAR_VIA, close as ksarClose, distanceKm as ksarKm } from '../src/labs/engineering/ksar-ghilane-force-l-stele';
 import { AXIS_IN as DAR_AXIS_IN, LEFT as DAR_LEFT, axisInHammamet as darAxis, day as darDay, fits as darFits, lastFit as darLastFit, rommelAt as darRommel } from '../src/labs/engineering/dar-sebastian-hammamet-legend';
+import { angleOff as longAngle, shareToBoundary as longShare, spotOf as longSpot } from '../src/labs/engineering/longstop-hill-three-names';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2009,5 +2010,18 @@ describe('lab maths', () => {
     expect(darAxis(DAR_AXIS_IN - 1)).toBe(false);
     expect(darAxis(darDay(1943, 5, 12))).toBe(true);
     expect(darAxis(darDay(1943, 5, 13))).toBe(false);
+  });
+
+  it('longstop: the long stop stands straight behind the stumps, more than halfway to the boundary', () => {
+    expect(longSpot(0, 0.8)).toBe('longstop');
+    expect(longSpot(0.1, 0.9)).toBe('longstop');
+    expect(longSpot(0, 0.35)).toBe('close');
+    expect(longSpot(0.5, 0.6)).toBe('wide');
+    expect(longSpot(0, -0.8)).toBe('wide');
+    expect(longSpot(0, 1.05)).toBe('out');
+    expect(longAngle(0, 0.5)).toBeCloseTo(0, 9);
+    expect(longAngle(0.3, 0.42)).toBeCloseTo(45, 6);
+    expect(longShare(0, 1)).toBeCloseTo(1, 9);
+    expect(longShare(0, 0.56)).toBeCloseTo(0.5, 9);
   });
 });
