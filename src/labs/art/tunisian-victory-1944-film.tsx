@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { C, label, Range, Readouts, Stage, useGoal, type LabProps } from '../kit';
+import { C, clamp, font, label, Range, Readouts, Stage, useGoal, type LabProps } from '../kit';
 import { t } from '../../i18n';
 import { formatNumber } from '../../lib/format';
 
@@ -27,23 +27,32 @@ export default function CuttingRoom({ onDone }: LabProps) {
   useGoal(min === FINAL_MIN, onDone);
 
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
+    // the note along the bottom, smaller on a narrow phone so it stays on one line
+    const note = t('Variety’s figure for footage shot; 90 feet of 35 mm film a minute.');
+    font(ctx, 9);
+    const ns = clamp((9 * (w - 8)) / ctx.measureText(note).width, 7, 9), noteTop = h - 4 - ns * 1.2;
+    label(ctx, note, w / 2, h - 4 - ns * 0.6, { size: ns, color: C.faint });
     // all the film shot, as a long bar of frames; the kept share in brass
-    const n = 60, gap = 2, fw = (w - 16 - gap * (n - 1)) / n, y0 = h * 0.18, fh = h * 0.2;
+    const n = 60, gap = 2, fw = (w - 16 - gap * (n - 1)) / n, y0 = 24, fh = clamp(h * 0.14, 10, 24);
     const keptFrames = Math.max(1, Math.round(n / r));
     for (let i = 0; i < n; i++) {
       const x = 8 + i * (fw + gap);
       ctx.fillStyle = i < keptFrames ? BRASS : 'rgba(255,255,255,0.14)';
       ctx.fillRect(x, y0, fw, fh);
     }
-    label(ctx, t('All the film shot: {h} hours', { h: formatNumber(Math.round(hoursOf(SHOT_FT) * 10) / 10) }), w / 2, y0 - 12, { size: 11, color: C.soft });
-    label(ctx, t('Kept: about {n} of these {total} squares', { n: formatNumber(Math.round((n / r) * 10) / 10), total: formatNumber(n) }), w / 2, y0 + fh + 14, { size: 11, color: BRASS });
-    // a reel for the finished film, growing with its length
-    const rr = Math.min(h * 0.22, 14 + Math.sqrt(kept) * 0.9);
-    const cx = w / 2, cy = h * 0.72;
+    label(ctx, t('All the film shot: {h} hours', { h: formatNumber(Math.round(hoursOf(SHOT_FT) * 10) / 10) }), w / 2, y0 - 11, { size: 11, color: C.soft });
+    label(ctx, t('Kept: about {n} of these {total} squares', { n: formatNumber(Math.round((n / r) * 10) / 10), total: formatNumber(n) }), w / 2, y0 + fh + 12, { size: 11, color: BRASS });
+    // a reel for the finished film, growing with its length, in the room between the squares' label and the note
+    const top = y0 + fh + 22, room = noteTop - 4 - top;
+    const rr = Math.max(6, Math.min(room / 2 - 2, 14 + Math.sqrt(kept) * 0.9)), cy = top + room / 2;
+    // its length inside the reel when it fits there, else beside it, the two centred together
+    const text = t('{min} min = {ft} ft', { min: formatNumber(min), ft: formatNumber(Math.round(kept)) });
+    font(ctx, 12);
+    const tw = ctx.measureText(text).width, inside = tw + 16 <= 2 * rr;
+    const cx = inside ? w / 2 : Math.max(rr + 6, (w - (2 * rr + 10 + tw)) / 2 + rr);
     ctx.fillStyle = 'rgba(255,255,255,0.08)'; ctx.beginPath(); ctx.arc(cx, cy, rr, 0, Math.PI * 2); ctx.fill();
     ctx.strokeStyle = min === FINAL_MIN ? STEEL : BRASS; ctx.lineWidth = 3; ctx.stroke();
-    label(ctx, t('{min} min = {ft} ft', { min: formatNumber(min), ft: formatNumber(Math.round(kept)) }), cx, cy, { size: 12, color: C.ink });
-    label(ctx, t('Variety’s figure for footage shot; 90 feet of 35 mm film a minute.'), w / 2, h - 8, { size: 9, color: C.faint });
+    label(ctx, text, inside ? cx : cx + rr + 10, cy, { size: 12, color: C.ink, align: inside ? 'center' : 'left' });
   };
 
   return (
