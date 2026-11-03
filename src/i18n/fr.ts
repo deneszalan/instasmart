@@ -249,7 +249,7 @@ export const fr: Record<string, string> = {
   'Offline mode': 'Mode hors connexion',
   'Show only the saved posts, so everything you open works without internet.': 'N’afficher que les publications enregistrées, pour que tout ce que tu ouvres fonctionne hors connexion.',
   'On iPhone or iPad, first add {name} to your Home Screen (Share, then Add to Home Screen) and save from there: iOS keeps saved posts only for Home Screen apps.': 'Sur iPhone ou iPad, ajoute d’abord {name} à l’écran d’accueil (Partager, puis «\u00a0Sur l’écran d’accueil\u00a0») et enregistre depuis cette app\u00a0: iOS ne conserve les publications enregistrées que pour les apps de l’écran d’accueil.',
-  'Watch the full story': 'Voir toute l’histoire',
+  'Watch the full story: {section}': 'Voir toute l’histoire : {section}',
   '{n} min': '{n} min',
   'Close the film': 'Fermer le film',
   'Turn your phone sideways for a bigger picture.': 'Tourne ton téléphone pour agrandir l’image.',

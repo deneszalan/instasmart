@@ -211,7 +211,8 @@ import { KINDS as GAMMARTH_KINDS, allSeen as gammarthAllSeen, atGammarth, placeO
 import { hookKm as marethHookKm, hookMiles as marethHookMiles, mainAttack as marethMain, SWITCH_DAY as MARETH_SWITCH } from '../src/labs/history/mareth-line-left-hook';
 import { matchesRecord as wahabRecord, riskFound as wahabRisk } from '../src/labs/politics/khaled-abdul-wahab-mahdia';
 import { kmBetween as pyleKm, PLACES as PYLE_PLACES, TOLERANCE_KM as PYLE_TOL, toleranceKm as pyleTolFor } from '../src/labs/literature/ernie-pyle-here-is-your-war';
-import { ITEMS as JASMIN_ITEMS, score as jasminScore, STRANDS as JASMIN_STRANDS } from '../src/labs/art/villa-jasmin-boughedir-moati';
+import { deal as jasminDeal, ITEMS as JASMIN_ITEMS, score as jasminScore, STRANDS as JASMIN_STRANDS } from '../src/labs/art/villa-jasmin-boughedir-moati';
+import { createRng } from '../src/lib/feed';
 import { dayOfMourning as cedriaMourning, firstAdvent as cedriaAdvent, OPENED as CEDRIA_OPENED, stageOf as cedriaStage } from '../src/labs/earth/bordj-cedria-german-war-cemetery';
 import { along as raceAlong, DJEDEIDA_AT as RACE_DJEDEIDA, miles as raceMiles, nearest as raceNearest, PLACES as RACE_PLACES, ROUTE_LENGTH as RACE_LENGTH, FIELDS as RACE_FIELDS } from '../src/labs/history/race-for-tunis-1942';
 import { dayOf as occDay, EVENTS as OCC_EVENTS, eventAt as occEventAt, FREED as OCC_FREED, ORDER as OCC_ORDER, ROUNDUP as OCC_ROUNDUP, SURRENDER as OCC_SURRENDER, dateOf as occDate } from '../src/labs/politics/tunisia-jews-forced-labour-1942';
@@ -2215,6 +2216,16 @@ describe('lab maths', () => {
     expect(jasminScore(all)).toBe(9);
     expect(jasminScore({})).toBe(0);
     expect(jasminScore({ ...all, boccara: 'history' })).toBe(8);
+  });
+  it('villa jasmin: the cards are dealt shuffled, never two of a strand in a row', () => {
+    const orders = new Set<string>();
+    for (let seed = 1; seed <= 50; seed++) {
+      const order = jasminDeal(createRng(seed));
+      expect([...order].map((it) => it.id).sort()).toEqual(JASMIN_ITEMS.map((it) => it.id).sort());
+      for (let k = 1; k < order.length; k++) expect(order[k].strand).not.toBe(order[k - 1].strand);
+      orders.add(order.map((it) => it.id).join());
+    }
+    expect(orders.size).toBeGreaterThan(40);
   });
   it('bordj cedria: the day of mourning is two Sundays before Advent, and the cemetery opens in 1977', () => {
     const iso = (d: Date) => d.toISOString().slice(0, 10);

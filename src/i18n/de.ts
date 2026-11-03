@@ -2611,7 +2611,7 @@ export const de: Record<string, string> = {
   'still drying': 'trocknet noch',
   'rich, roasty': 'kräftig, röstig',
   'Toy model: the grain dries, then browns from 120 °C, twice as fast every 10 °C hotter.': 'Spielzeugmodell: Das Korn trocknet, dann bräunt es ab 120 °C, alle 10 °C heißer doppelt so schnell.',
-  'Watch the full story': 'Die ganze Geschichte ansehen',
+  'Watch the full story: {section}': 'Die ganze Geschichte ansehen: {section}',
   'Close the film': 'Film schließen',
   'Turn your phone sideways for a bigger picture.': 'Dreh dein Handy quer für ein größeres Bild.',
   '{n} m from the foot': '{n} m vom Fuß',
