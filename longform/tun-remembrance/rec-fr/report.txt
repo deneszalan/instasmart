@@ -1,0 +1,201 @@
+o1       6.5 s  15.9 c/s  heard 0.96  seed 1
+       say:   À Carthage, au bord de la mer, des croix blanches et des étoiles de David s'alignent en rangées droites
+       heard: A cartage, au bord de la mer, des croix blanches et des étoiles de David s'alignent en rangée droit.
+o2       6.6 s  14.6 c/s  heard 0.97  seed 2
+       say:   À Medjez-el-Bab, à l'ouest de Tunis, des pierres tombales identiques se suivent, rang après rang
+       heard: A Medjézelbabe, à l'ouest de Tunis, des pierres tombales identiques se suivent, rang après rang.
+o3       5.7 s  16.4 c/s  heard 0.98  seed 1
+       say:   Sur les hauteurs de Gammarth, au nord de Tunis, des croix et des stèles se dressent en rangées
+       heard: Sur les hauteurs de Gamart, au nord de Tunis, des croix et des stèles se dressent en rangée.
+o4       5.7 s  15.7 c/s  heard 0.98  seed 1
+       say:   Et à Borj Cédria, il n'y a aucune rangée, seulement six cours de pierre à flanc de colline
+       heard: et à Borge Cédria, il n'y a aucune rangée, seulement six cours de pierre à flanc de colline.
+o6       6.1 s  20.2 c/s  heard 1.00  seed 1
+       say:   Et beaucoup de ceux qui sont morts dans cette guerre n'ont pas de tel lieu. Ce film visite les quatre, puis regarde au-delà
+       heard: et beaucoup de ceux qui sont morts dans cette guerre n'ont pas de tel lieu. Ce film visite les quatre puis regarde au-delà.
+a1       9.2 s  18.9 c/s  heard 0.94  seed 2
+       say:   De novembre mille neuf cent quarante-deux à mai mille neuf cent quarante-trois, la guerre traverse la Tunisie, alors protectorat français, avec pour souverain le bey de Tunis
+       heard: De novembre 1942 à mai 1943, la guerre traverse la Tunisie, à leur protecteur à français, avec pour souverain le beille de Tunis.
+a2       9.2 s  16.4 c/s  heard 0.97  seed 1
+       say:   Les troupes allemandes et italiennes occupent Tunis, Bizerte et l'est du pays, face aux armées britanniques, du Commonwealth, américaines et françaises
+       heard: Les troupes allemandes et italiennes occupent Tunis, Bizerte et l'aide du pays face aux armées britanniques du Commonwealth américaine et française.
+a3       7.9 s  15.3 c/s  heard 0.99  seed 1
+       say:   Les Tunisiens de toutes confessions, musulmans, juifs et chrétiens, vivent l'occupation, les bombardements et les combats
+       heard: Les Tunisiens de toute confession, musulmans, juifs et chrétiens, vivent l'occupation, les bombardements et les combats.
+a5       5.2 s  18.8 c/s  heard 0.99  seed 1
+       say:   Après la guerre, chaque pays décide comment rassembler ses morts, et comment marquer leurs tombes
+       heard: Après la guerre, chaque pays décide comment rassembler ses morts et comment marquer leur tombe.
+a6       4.8 s  18.0 c/s  heard 0.99  seed 1
+       say:   Quatre de ces cimetières se trouvent à une soixantaine de kilomètres de Tunis, au plus
+       heard: Quatre de ses cimetières se trouvent à une soixantaine de kilomètres de Tunis. Au plus...
+c1       6.4 s  16.8 c/s  heard 0.98  seed 1
+       say:   Première étape, Carthage, où le cimetière américain d'Afrique du Nord recouvre une partie de la cité romaine
+       heard: Première étape, Cartage ou le cimetière américain d'Afrique du Nord recouvre une partie de la cité romaine.
+c2       6.0 s  18.1 c/s  heard 1.00  seed 1
+       say:   Il est géré par une agence du gouvernement des États-Unis, la commission américaine des monuments de bataille
+       heard: Il est géré par une agence du gouvernement des États-Unis. La Commission américaine des Monuments de bataille.
+c3       7.9 s  18.9 c/s  heard 0.99  seed 1
+       say:   Il est créé en mille neuf cent quarante-huit, sur un terrain que la Tunisie cède gratuitement et à perpétuité, et inauguré en mille neuf cent soixante
+       heard: Il est créé en 1948 sur un terrain que la Tunisie cède gratuitement et a perpétuité et inauguré en 1960.
+c4       8.9 s  16.8 c/s  heard 0.96  seed 1
+       say:   Sur onze hectares, deux mille huit cent trente-trois stèles s'alignent en rangées droites, en neuf carrés, avec des bassins aux croisements des allées
+       heard: Sur 11 hectares, 2833, Stel s'aligne en rangée droite, en 9 carrés, avec des bassins au croisement des allées.
+c5       5.7 s  17.3 c/s  heard 0.99  seed 1
+       say:   On y compte deux mille sept cent soixante-dix-sept croix latines et cinquante-six étoiles de David
+       heard: On y compte 2777 croix-latine et 56 étoiles de David.
+c6       7.3 s  18.4 c/s  heard 1.00  seed 1
+       say:   La plupart des morts honorés ici sont tombés lors d'opérations allant de l'Afrique du Nord au golfe Persique, pas seulement en Tunisie
+       heard: La plupart des morts honorés ici sont tombés lors d'opérations allant de l'Afrique du Nord au Golfe Persique, pas seulement en Tunisie.
+c7       7.1 s  17.1 c/s  heard 1.00  seed 2
+       say:   Le long de l'allée, les tables des disparus s'étendent sur trois cent soixante-quatre pieds, soit environ cent onze mètres
+       heard: Le long de l'allée, les tables des disparus s'étendent sur 364 pieds, soit environ 111 mètres.
+c8       7.5 s  19.0 c/s  heard 0.99  seed 1
+       say:   Elles portent les noms de trois mille sept cent vingt-quatre hommes disparus sur terre, en mer et dans les airs, plus qu'il n'y a de tombes ici
+       heard: Elle porte les noms de 3724 hommes, disparus sur terre, en mer et dans les airs, plus qu'il n'y a de tombes ici.
+c9       3.8 s  18.7 c/s  heard 0.99  seed 1
+       say:   Une rosette près d'un nom signale un homme retrouvé et identifié depuis
+       heard: Une rosette près d'un nom signal, un homme retrouvé et identifié depuis.
+m1      10.0 s  18.5 c/s  heard 0.97  seed 1
+       say:   À une soixantaine de kilomètres à l'ouest de Tunis, Medjez-el-Bab reste sur la ligne de front de décembre mille neuf cent quarante-deux jusqu'aux offensives alliées du printemps suivant
+       heard: à une soixantaine de kilomètres à l'ouest de Tunis, mais Jézel Bab reste sur la ligne de front de décembre 1942 jusqu'aux offensives alliés du printemps suivant.
+m3       9.0 s  16.6 c/s  heard 1.00  seed 1
+       say:   On y trouve aujourd'hui le plus grand cimetière militaire du Commonwealth en Tunisie, géré par la Commission des sépultures de guerre du Commonwealth
+       heard: On y trouve aujourd'hui le plus grand cimetière militaire du Commonwealth en Tunisie, géré par la Commission des sépultures de guerre du Commonwealth.
+m4       7.3 s  19.0 c/s  heard 0.98  seed 1
+       say:   La Commission y compte deux mille neuf cent trois militaires inhumés ou commémorés, et trois cent quatre-vingt-cinq tombes y sont anonymes
+       heard: La commission y compte de 1903 militaires inhumés, ou commémorés, et 385 tombes y sont anonynes.
+m5       8.8 s  16.0 c/s  heard 0.97  seed 1
+       say:   Toutes ses pierres tombales sont identiques, quels que soient le grade, l'origine ou la foi, avec un insigne, un nom et un symbole religieux
+       heard: Toutes ces pierres tombales sont identiques, quel que soit le grade, l'origine ou la foi, avec un insignes, un nom et un symbole religieux.
+m7       9.1 s  14.8 c/s  heard 0.99  seed 1
+       say:   À Medjez, un mémorial porte les noms de près de deux mille autres hommes de la première et de la huitième armée, sans sépulture connue
+       heard: A Medjez, un mémorial porte les noms de près de deux mille autres hommes de la première et de la huitième armée, sans sépulture connue.
+m8       5.0 s  16.3 c/s  heard 0.99  seed 1
+       say:   En Tunisie, la Commission entretient huit cimetières militaires, de Tabarka à Sfax
+       heard: en Tunisie, la commission entretient huit cimetières militaires de Tabarka, Asfax.
+g1       7.4 s  18.1 c/s  heard 0.99  seed 1
+       say:   Au nord de Tunis, sur les hauteurs de Gammarth, la France ouvre un cimetière militaire le cinq janvier mille neuf cent quarante-quatre
+       heard: Au nord de Tunis, sur les hauteurs de Gamart, la France ouvre un cimetière militaire le 5 janvier 1944.
+g2       6.5 s  17.2 c/s  heard 1.00  seed 1
+       say:   L'armée française en Tunisie comptait des tirailleurs tunisiens, algériens et marocains, ainsi que des Européens
+       heard: L'armée française en Tunisie comptait des tirailleurs tunisiens, algériens et marocains, ainsi que des Européens.
+g3       6.6 s  16.7 c/s  heard 0.98  seed 1
+       say:   Ses morts sont inhumés selon leur foi, et Gammarth reçoit les chrétiens, les juifs et les autres non-musulmans
+       heard: Ces morts sont inhumés selon leur foi et Gamart reçoit les chrétiens, les Juifs et les autres non musulmans.
+g4       7.5 s  17.9 c/s  heard 0.96  seed 1
+       say:   Les soldats musulmans, dont beaucoup de tirailleurs, reposent dans des cimetières musulmans, à Haffouz ou à Tarf ech-Chéna par exemple
+       heard: Les soldats musulmans, dont beaucoup de tirs ailleurs, reposent dans des cimetières musulmans, à Hafouz ou à Tarf eqshena par exemple.
+g5       8.3 s  17.8 c/s  heard 1.00  seed 1
+       say:   Les tombes militaires françaises indiquent la foi de chacun, avec une croix latine, ou une stèle portant une étoile de David, un croissant, ou rien
+       heard: Les tombes militaires françaises indiquent la foi de chacun, avec une croix latine ou une stèle portant une étoile de David, un croissant ou rien.
+g7       7.8 s  15.7 c/s  heard 0.98  seed 1
+       say:   De mille neuf cent soixante-six à soixante-huit, Gammarth reçoit les tombes militaires françaises des cimetières communaux
+       heard: De 1966 à 68, Gamar reçoit les tombes militaires françaises des cimetières communaux.
+g8       8.7 s  17.4 c/s  heard 1.00  seed 1
+       say:   Selon le consulat de France, mille huit cent soixante-quinze soldats y reposent dans des tombes individuelles, des deux guerres mondiales et d'Indochine
+       heard: Selon le Consulat de France, 1875, soldats y reposent dans des tombes individuelles, des deux guerres mondiales et d'Indochine.
+g9       8.4 s  15.0 c/s  heard 0.96  seed 1
+       say:   Un ossuaire abrite mille deux cent vingt caissettes de restes de soldats inconnus, et l'ambassade de France entretient le site
+       heard: Un os suaire abrite 1220, quessette de reste de soldats inconnus et l'ambassade de France entretient le site.
+b1       9.2 s  14.6 c/s  heard 0.95  seed 1
+       say:   À quelque vingt-cinq kilomètres de Tunis, près de Hammam-Lif, le cimetière militaire allemand de Borj Cédria s'étend à flanc de colline
+       heard: A quelques vingt-cinq kilomètres de Tunis, près de Hamamlif, le cimetière militaire allemand de Borges-Sédria s'étend à flanc de Colline.
+b2       8.0 s  18.2 c/s  heard 1.00  seed 1
+       say:   Il abrite huit mille cinq cent soixante-deux soldats allemands morts en mille neuf cent quarante-deux et quarante-trois, au combat ou en captivité
+       heard: Il abrite 8562 soldats allemands morts en 1942 et 43 au combat ou en captivité.
+b4       7.7 s  20.9 c/s  heard 1.00  seed 1
+       say:   Après un accord germano-tunisien en mille neuf cent soixante-six, le cimetière est construit de mille neuf cent soixante-treize à mille neuf cent soixante-quinze
+       heard: Après un accord germano-tunisien en 1966, le cimetière est construit de 1973 à 1975.
+b6       5.6 s  19.6 c/s  heard 0.95  seed 1
+       say:   Il n'y a pas de rangées de tombes. Les restes reposent dans des ossuaires, en six cours étagées sur la colline
+       heard: Il n'y a pas d'oranger de tombe. Les restes reposent dans des osuaires, en six cours étagés sur la colline.
+b7       6.7 s  16.8 c/s  heard 1.00  seed 1
+       say:   Une pierre en arabe, en allemand et en français donne le nombre, et rappelle cent quatre soldats jamais retrouvés
+       heard: Une pierre en arabe, en allemand et en français donne le nombre et rappelle 104 soldats jamais retrouvés.
+b8       7.0 s  18.2 c/s  heard 0.95  seed 1
+       say:   Il ouvre en mille neuf cent soixante-dix-sept, et le Folksbound, la commission allemande des sépultures de guerre, l'entretient
+       heard: Il ouvre, en 1977, et le Volkswagen, la Commission allemande des sépultures de guerre, l'entretient.
+b9       7.3 s  19.6 c/s  heard 0.98  seed 1
+       say:   Le Folksbound lui-même écrit qu'au vu des crimes de guerre allemands, honorer les morts en héros était tabou après mille neuf cent quarante-cinq
+       heard: Le Foxbound lui-même écrit qu'au vu des crimes de guerre allemand, honorer les morts en héros était tabou après 1945.
+b10      4.0 s  19.8 c/s  heard 1.00  seed 1
+       say:   Pour lui, les cimetières militaires comme celui-ci sont des lieux pour apprendre
+       heard: Pour lui, les cimetières militaires comme celui-ci sont des lieux pour apprendre.
+b11      8.8 s  15.4 c/s  heard 0.99  seed 1
+       say:   L'Italie, elle, a rapatrié ses morts d'outre-mer, y compris de Tunisie, dans un mémorial à Bari ouvert en mille neuf cent soixante-sept
+       heard: L'Italie, elle, a rapatrié ses morts d'outre-mer, y compris de Tunisie, dans un mémorial à Barry ouvert en 1967.
+w1       8.9 s  15.0 c/s  heard 0.99  seed 1
+       say:   Ainsi, quatre pays se souviennent avec des croix et des étoiles, des pierres tombales, des croix et des stèles, et des cours de pierre
+       heard: Ainsi, quatre pays se souviennent avec des croix et des étoiles, des pierres tombales, des croix et des stêles et des cours de pierre.
+w2       6.5 s  19.6 c/s  heard 0.99  seed 1
+       say:   On ne peut pas simplement additionner leurs chiffres. Chaque organisme compte à sa façon, et certains incluent d'autres guerres
+       heard: On ne peut pas simplement additionner leurs chiffres. Chaque organisme compte à sa façon et certains inclut d'autres guerres.
+w3       3.7 s  20.6 c/s  heard 1.00  seed 1
+       say:   Et beaucoup de ceux qui sont morts en Tunisie n'ont aucun cimetière militaire
+       heard: Et beaucoup de ceux qui sont morts en Tunisie n'ont aucun cimetière militaire.
+w4       5.0 s  20.4 c/s  heard 0.98  seed 1
+       say:   Des Tunisiens sont morts comme soldats de l'armée française, et comme civils dans leurs propres villes
+       heard: Des tunisiens sont morts comme soldats de l'armée française et comme civils dans leur propre ville.
+w5       7.0 s  19.3 c/s  heard 1.00  seed 1
+       say:   Sous l'occupation allemande, environ cinq mille hommes juifs sont envoyés au travail forcé, dans trente-deux à une quarantaine de camps
+       heard: Sous l'occupation allemande, environ 5 000 hommes juifs sont envoyés au travail forcé dans 32 à une quarantaine de camps.
+w6       6.7 s  21.1 c/s  heard 0.99  seed 1
+       say:   Selon un rapport américain de juin mille neuf cent quarante-trois, leurs chantiers subissent des attaques aériennes alliées presque constantes
+       heard: Selon un rapport américain de juin 1943, leurs chantiers subissent des attaques aériennes alliées presque constant.
+w7       4.0 s  20.3 c/s  heard 1.00  seed 1
+       say:   Certains sont tués, et des Juifs de Tunisie sont déportés vers des camps en Europe
+       heard: Certains sont tués et des Juifs de Tunisie sont déportés vers des camps en Europe.
+w9       6.3 s  18.3 c/s  heard 1.00  seed 1
+       say:   Les villes aussi sont bombardées. Les raids sur les ports, les gares et les usines font beaucoup de victimes civiles
+       heard: Les villes aussi sont bombardées. Les raids sur les ports, les gares et les usines font beaucoup de victimes civiles.
+w10      5.1 s  16.7 c/s  heard 0.85  seed 1
+       say:   Selon un décompte, Sousse à elle seule est bombardée trente-neuf fois en ces six mois
+       heard: Selon un des comptes, Soussaël seul bombardait 39 fois en ces 6 mois.
+w11      8.1 s  17.8 c/s  heard 0.98  seed 1
+       say:   L'historien Mark Willis écrit que la plupart des grandes villes ont été détruites ou gravement endommagées, et que ce bilan est largement oublié
+       heard: L'historien Marc Willis écrit que la plupart des grandes villes ont été détruites ou gravement dommagées et que ce bilan est largement oublié.
+w12      6.2 s  19.7 c/s  heard 0.99  seed 2
+       say:   Aucun cimetière militaire ne rassemble ces morts. Leur mémoire vit dans les familles, dans les villes et dans les archives
+       heard: Aucun cimetière militaire ne rassemble ses morts. Leur mémoire vit dans les familles, dans les villes et dans les archives.
+r1       8.0 s  18.4 c/s  heard 1.00  seed 1
+       say:   Après l'indépendance, des monuments aux morts sont démontés. En mille neuf cent cinquante-sept, Tunis retire son monument aux morts des deux guerres
+       heard: Après l'indépendance, des monuments aux morts sont démontés. En 1957, Tunis retire son monument aux morts des deux guerres.
+r2       8.6 s  16.4 c/s  heard 0.99  seed 1
+       say:   Les cérémonies continuent. En mai, les Américains se réunissent à Carthage pour le Mémorial Day, et à Gammarth, la France marque le huit mai
+       heard: Les cérémonies continuent. En mai, les Américains se réunissent à cartage pour le Mémorial Day, et à Gamart, la France marque le 8 mai.
+r3       6.5 s  16.7 c/s  heard 0.99  seed 1
+       say:   En novembre, la France célèbre l'Armistice à Gammarth, et une cérémonie du Souvenir se tient à Medjez-el-Bab
+       heard: En novembre, la France célèbre l'armistice à Gamart, et une cérémonie du souvenir se tient à Medjezelbab.
+r4       7.6 s  16.7 c/s  heard 0.97  seed 1
+       say:   Lors du jour de deuil national allemand, deux dimanches avant l'Avent, l'ambassadeur d'Allemagne dépose une gerbe à Borj Cédria
+       heard: Lors du jour de deuil national allemand, deux dimanches avant l'avent, l'ambassadeur d'Allemagne dépose une gerbe à Bourges-Sédria.
+r5      10.2 s  15.3 c/s  heard 0.99  seed 1
+       say:   En deux mille vingt-deux, les États-Unis et la Tunisie conviennent que des soldats inconnus de Carthage pourront être exhumés, pour tenter de les identifier
+       heard: En 2022, les États-Unis et la Tunisie conviennent que des soldats inconnus de cartages pourront être exhumés pour tenter de les identifier.
+r6       4.4 s  18.8 c/s  heard 1.00  seed 1
+       say:   Ces organismes publient leurs registres en ligne, et chacun peut y chercher un nom
+       heard: Ces organismes publient leurs registres en ligne et chacun peut y chercher un nom.
+r7       3.8 s  22.5 c/s  heard 1.00  seed 1
+       say:   La persécution des Juifs de Tunisie est documentée elle aussi, en partie dès l'époque
+       heard: La persécution des Juifs de Tunisie est documentée elle aussi en partie dès l'époque.
+r8       6.5 s  18.1 c/s  heard 0.97  seed 1
+       say:   Paul Ghez, contraint de recruter les travailleurs forcés, publie son journal à Tunis en mille neuf cent quarante-trois
+       heard: Paul Guéze, contraint de recruter les travailleurs forcés, publie son journal à Tunis en 1943.
+r9       5.4 s  16.6 c/s  heard 0.98  seed 1
+       say:   À Jérusalem, un centre de documentation indexe des milliers de documents et de témoignages
+       heard: A Jérusalem, un centre de documentation index des milliers de documents et de témoignages.
+r10      7.4 s  16.2 c/s  heard 0.97  seed 1
+       say:   À Washington, le musée-mémorial de l'Holocauste des États-Unis recueille des témoignages, dont certains venus de Tunisie
+       heard: A Washington, le musée mémorial de l'Holo Coast des États-Unis recueille des témoignages, dont certains venus de Tunisie.
+r11      7.2 s  17.3 c/s  heard 1.00  seed 1
+       say:   À Paris, le Mémorial de la Shoah organise une cérémonie pour la rafle de Tunis du neuf décembre mille neuf cent quarante-deux
+       heard: À Paris, le Mémorial de la Shoah organise une cérémonie pour la rafle de Tunis du 9 décembre 1942.
+r12      5.8 s  20.0 c/s  heard 0.98  seed 1
+       say:   Se souvenir de mille neuf cent quarante-trois en Tunisie, c'est voir les rangées, et aussi ceux qui n'y figurent pas
+       heard: Ce souvenir de 1943 en Tunisie, c'est voir les rangées et aussi ceux qui ne figurent pas.
+r13      5.1 s  15.8 c/s  heard 1.00  seed 1
+       say:   Si vous visitez un cimetière, vérifiez l'accès sur place, et faites-le en silence
+       heard: Si vous visitez un cimetière, vérifiez l'accès sur place et faites-le en silence.
+r14      5.8 s  16.3 c/s  heard 1.00  seed 1
+       say:   Chaque nom gravé dans la pierre, chaque nom conservé dans une archive, a appartenu à quelqu'un
+       heard: Chaque nom gravé dans la pierre, chaque nom conservé dans une archive a appartenu à quelqu'un.

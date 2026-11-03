@@ -1,0 +1,210 @@
+o1       6.8 s  18.8 c/s  heard 1.00  seed 1
+       say:   De novembre mille neuf cent quarante-deux à mai mille neuf cent quarante-trois, la Seconde Guerre mondiale a traversé la Tunisie
+       heard: de novembre 1942 à mai 1943, la Seconde Guerre mondiale a traversé la Tunisie.
+o2       5.3 s  19.9 c/s  heard 0.98  seed 1
+       say:   Un reporter américain l'a racontée depuis sa tente. Un officier de chars britannique en a tiré des poèmes
+       heard: Un reporter américain l'a raconté depuis sa tante, un officier de char britannique en a tiré des poèmes.
+o3       7.3 s  17.4 c/s  heard 0.99  seed 1
+       say:   Dans Tunis occupée, un avocat juif tenait son journal. Un jeune homme du quartier juif de la ville en a fait plus tard un roman
+       heard: Dans Tunis occupé, un avocat juif tenait son journal, un jeune homme du quartier juif de la ville en a fait plus tard un roman.
+o4       4.5 s  16.5 c/s  heard 0.99  seed 1
+       say:   Quatre écrivains, quatre points de vue. Voici la guerre de Tunisie, en mots
+       heard: 4 écrivains, 4 points de vue. Voici la guerre de Tunisie, en mot.
+a1       6.4 s  17.4 c/s  heard 0.96  seed 1
+       say:   En mille neuf cent quarante-deux, la Tunisie est un protectorat français, gouverné en titre par le bey de Tunis
+       heard: En 1942, la Tunisie est un protecteur à Français, gouverné en titre par le Bay de Tunis.
+a2       7.2 s  16.7 c/s  heard 0.98  seed 1
+       say:   Le huit novembre, les Alliés débarquent au Maroc et en Algérie. Dès le lendemain, des avions allemands se posent à Tunis
+       heard: Lui novembre, les alliés débarquent au Maroc et en Algérie. Dès le lendemain, des avions allemands se posent à Tunis.
+a3       7.7 s  19.2 c/s  heard 1.00  seed 1
+       say:   Les troupes allemandes et italiennes tiennent Tunis, Bizerte et l'est du pays, tandis que les armées alliées approchent par l'Algérie et par la Libye
+       heard: Les troupes allemandes et italiennes tiennent Tunis, Bizerte et l'Est du pays, tandis que les armées alliées approchent par l'Algérie et par la Libye.
+a4       6.3 s  16.2 c/s  heard 0.99  seed 1
+       say:   Les Tunisiens de toutes confessions, musulmans, juifs et chrétiens, vivent l'occupation et les combats
+       heard: Les tunisiens de toute confession, musulmans, juifs et chrétiens, vivent l'occupation et les combats.
+a5       8.9 s  18.0 c/s  heard 1.00  seed 1
+       say:   Le sept mai mille neuf cent quarante-trois, les troupes alliées entrent dans Tunis et Bizerte. Le treize mai, les dernières armées de l'Axe en Afrique se rendent
+       heard: Le 7 mai 1943, les troupes alliées entrent dans Tunis et Bizerte. Le 13 mai, les dernières armées de l'Axe en Afrique se rendent.
+a6       4.9 s  14.6 c/s  heard 1.00  seed 1
+       say:   Nos quatre écrivains ont vu, chacun, une part différente de ces six mois
+       heard: nos quatre écrivains ont vu, chacun, une part différente de ces six mois.
+a7       5.4 s  19.0 c/s  heard 0.98  seed 1
+       say:   Ernie Païle suit les soldats américains sur le front ouest, des plaines du centre aux collines du nord
+       heard: Ernie Payle suit les soldats américains sur le front ouest, des plaines du centre au colline du nord.
+a8       6.8 s  17.0 c/s  heard 0.99  seed 1
+       say:   Keith Douglas combat dans les chars britanniques, de l'Égypte à travers la Libye, et arrive en Tunisie au printemps
+       heard: Keith Douglas combat dans les chars britanniques. De l'Egypte à travers la Libye et arrive en Tunisie au printemps.
+a9       5.3 s  17.8 c/s  heard 0.98  seed 1
+       say:   Paul Guez vit l'occupation à l'intérieur de Tunis, parmi les dirigeants de sa communauté juive
+       heard: Paul Guéze vit l'occupation à l'intérieur de Tunis, parmi les dirigeants de sa communauté juive.
+a10      6.3 s  18.1 c/s  heard 0.97  seed 1
+       say:   Et Albert Memmi, un jeune homme du quartier juif de Tunis, la voit depuis la ville, puis depuis un camp de travail
+       heard: Et Albert Mémi, un jeune homme du quartier juif de Tunis, la voie depuis la ville puis depuis un camp de travail.
+a11      9.7 s  18.8 c/s  heard 1.00  seed 3
+       say:   Deux de leurs livres paraissent en mille neuf cent quarante-trois, en pleine guerre. Un autre paraît en mille neuf cent quarante-six, et le dernier en mille neuf cent cinquante-trois
+       heard: Deux de leurs livres paraissent en 1943 en pleine guerre, un autre paraît en 1946 et le dernier en 1953.
+a12      7.0 s  15.6 c/s  heard 0.99  seed 1
+       say:   Pour chacun, on se demandera qui l'a écrit, de quel genre de livre il s'agit, et ce qui y est réel ou inventé
+       heard: Pour chacun, on se demandera qu'il l'a écrit, de quel genre de livre il s'agit, et ce qui est réel ou inventé.
+p1       8.1 s  19.5 c/s  heard 0.98  seed 3
+       say:   Ernie Païle, chroniqueur des journaux Scripps Howard, arrive en Afrique du Nord à la fin de mille neuf cent quarante-deux, et vit comme les soldats américains
+       heard: Ernie Payle, chroniqueur des journaux Scripps Awards, arrive en Afrique du Nord à la fin de 1942 et vit comme les soldats américains.
+p2       7.4 s  17.6 c/s  heard 0.94  seed 1
+       say:   En février mille neuf cent quarante-trois, il bat en retraite avec eux depuis Sbeïtla. En mars, il est à Gafsa, reprise dans le sud
+       heard: En février 1943, il bat en retraite avec eux depuis ce biais-clas. En mars, il est à Gafsa, reprise dans le sud.
+p3       7.4 s  15.8 c/s  heard 0.98  seed 1
+       say:   En avril, il rejoint la première division d'infanterie dans les collines devant Mateur, et en mai, il arrive à Bizerte
+       heard: En avril, il rejoint la première division d'infanterie dans les collines de vent-mateur et en mai, il arrive à Bizerre.
+p4       8.1 s  18.7 c/s  heard 1.00  seed 1
+       say:   C'est du reportage. Ce sont de courtes chroniques écrites en quelques jours, réunies en mille neuf cent quarante-trois dans un livre, Voici votre guerre
+       heard: c'est du reportage. Ce sont de courtes chroniques écrites en quelques jours, réunies en 1943, dans un livre. Voici votre guerre.
+p5       6.6 s  23.4 c/s  heard 0.99  seed 2
+       say:   Sa chronique paraît dans quarante-deux journaux en novembre mille neuf cent quarante-deux, et dans cent vingt-deux en avril mille neuf cent quarante-trois
+       heard: Sa chronique parait dans 42 journaux en novembre 1942 et dans 122 en avril 1943.
+p6       5.1 s  19.8 c/s  heard 0.95  seed 1
+       say:   Il laisse aux généraux la vue d'ensemble. Il écrit, je ne connais que ce que nous voyons au ras du sol
+       heard: Il laisse au généreau la vue d'ensemble. Il écrit, je ne connais que ce que nous voyons aura du seul.
+p7       8.3 s  15.3 c/s  heard 1.00  seed 2
+       say:   Ce regard, ce sont des hommes épuisés, la boue, la peur et les tombes, et des soldats nommés, avec leur ville, souvent leur rue
+       heard: Ce regard, ce sont des hommes épuisés, la boue, la peur et les tombes, et des soldats nommés, avec leur ville, souvent leur rue.
+p8       7.7 s  17.0 c/s  heard 1.00  seed 1
+       say:   C'est du reportage, pas de la fiction. Mais il ne montre que ce qu'un Américain a vu, et ce que la censure militaire a laissé passer
+       heard: C'est du reportage, pas de la fiction, mais il ne montre que ce qu'un américain a vu et ce que la censure militaire a laissé passer.
+p9       7.9 s  21.1 c/s  heard 0.99  seed 1
+       say:   Les Tunisiens restent en marge, souvent vus à travers les préjugés d'officiers français, même s'il note que les deux armées ont chassé les familles arabes des combats
+       heard: Les tunisiens restent en marge, souvent vus à travers les préjugés d'officiers français, même s'ils notent que les deux armées ont chassé les familles arabes des combats.
+p10      6.5 s  20.6 c/s  heard 1.00  seed 3
+       say:   Il reçoit le prix Pulitzer en mille neuf cent quarante-quatre, et il est tué dans le Pacifique en avril mille neuf cent quarante-cinq
+       heard: Il reçoit le prix Pulitzer en 1944 et il est tué dans le Pacifique en avril 1945.
+d1       6.4 s  16.0 c/s  heard 1.00  seed 1
+       say:   Keith Douglas est un poète britannique et, à vingt-deux ans, officier de chars dans le désert égyptien
+       heard: Keith Douglas est un poète britannique et, à 22 ans, officier de chars dans le désert égyptien.
+d2       7.3 s  17.0 c/s  heard 0.96  seed 1
+       say:   À El-Alamein, en octobre mille neuf cent quarante-deux, il quitte un poste d'état-major et rejoint son régiment sans ordres
+       heard: À elle à la main, en octobre 1942, il quitte un poste d'État-major et rejoint son régiment sans ordre.
+d3       8.0 s  17.5 c/s  heard 0.97  seed 2
+       say:   Avec son régiment, il combat à travers la Libye, jusqu'à ce qu'une mine le blesse à l'oued Zem Zem, en janvier mille neuf cent quarante-trois
+       heard: Avec son régiment, il combat à travers la Libye jusqu'à ce qu'une mine le blesse à le Wetzem-Zem en janvier 1943.
+d4       7.6 s  17.2 c/s  heard 1.00  seed 2
+       say:   À l'hôpital, il commence les poèmes de guerre qui feront son nom, puis au printemps, il rejoint son régiment, désormais en Tunisie
+       heard: À l'hôpital, il commence les poèmes de guerre qui feront son nom, puis au printemps, il rejoint son régiment, désormais en Tunisie.
+d5       8.0 s  13.6 c/s  heard 1.00  seed 1
+       say:   Son livre en prose, Alamein to Zem Zem, est un récit de ses mois dans le désert, jusqu'au jour de sa blessure
+       heard: Son livre en prose, Alamein to Zemzem, est un récit de ses mois dans le désert jusqu'au jour de sa blessure.
+d6       6.1 s  17.9 c/s  heard 0.99  seed 1
+       say:   Il l'illustre de ses propres dessins. Le livre paraît en mille neuf cent quarante-six, deux ans après sa mort
+       heard: Il l'illustre de ses propres dessins. Le livre parait en 1946, deux ans après sa mort.
+d7       9.6 s  14.2 c/s  heard 0.95  seed 1
+       say:   Un récit raconte des faits réels, tels que l'auteur s'en souvient et les choisit. Son colonel, Edward Kellett, y apparaît sous un surnom
+       heard: Un récit raconte des faits réels, telles que l'auteur s'en souvient et les choisit. Son colonel, Édouard Kélet, y apparaît sous un surnom.
+d8       8.5 s  19.8 c/s  heard 0.99  seed 1
+       say:   Ses poèmes vont plus loin. Dans un poème au titre allemand qui veut dire ne m'oublie pas, des soldats reviennent sur un champ de bataille trois semaines après le combat
+       heard: Ces poèmes vont plus loin. Dans un poème au titre allemand qui veut dire ne m'oublie pas, des soldats reviennent sur un champ de bataille trois semaines après le combat.
+d9       5.9 s  19.4 c/s  heard 0.94  seed 1  CHECK: its end wasn't heard
+       say:   Ils retrouvent l'artilleur allemand qui avait touché le char du narrateur, et une photo signée de son amie, Steffi
+       heard: Il retrouve l'artilleur allemand qui avait touché le char du narrateur et une photo signée de son ami, Stéphie.
+d10      6.1 s  16.0 c/s  heard 0.99  seed 1
+       say:   Douglas écrit, car ici l'amant et le tueur se confondent. Le poème voit les deux en un seul homme
+       heard: Douglas écrit, car ici Laman et le Tueur se confondent. Le poème voit les deux en un seul homme.
+d11      7.3 s  21.9 c/s  heard 1.00  seed 1
+       say:   Il rentre en Angleterre en décembre mille neuf cent quarante-trois, et il est tué en Normandie le neuf juin mille neuf cent quarante-quatre, à vingt-quatre ans
+       heard: Il rentre en Angleterre en décembre 1943 et il est tué en Normandie le 9 juin 1944 à 24 ans.
+g1       6.4 s  19.8 c/s  heard 0.97  seed 1
+       say:   Paul Guez, né à Sousse en mille huit cent quatre-vingt-dix-huit, est avocat à Tunis et membre du conseil de la communauté juive
+       heard: Paul Guéze, né à Sous en 1898, est avocat à Tunis et membre du Conseil de la communauté juive.
+g2      10.0 s  16.1 c/s  heard 0.98  seed 1
+       say:   Avec les troupes allemandes arrive une unité SS dirigée par Walter Raouf. Les Juifs de Tunisie subissent amendes, confiscations, prises d'otages et travail forcé
+       heard: Avec les troupes allemandes arrivent une unité SS dirigée par Walter Rauf. Les Juifs de Tunisie subissent amendes, confiscations, prises d'otage et travail forcés.
+g3       8.8 s  16.4 c/s  heard 0.98  seed 1
+       say:   En décembre, les SS exigent des travailleurs juifs. Les dirigeants de la communauté doivent former un comité pour les recruter, présidé par Guez
+       heard: En décembre, les SS exigent des travailleurs juifs. Les dirigeants de la communauté doivent former un comité pour les recruter, présidé par Geys.
+g4       6.5 s  19.5 c/s  heard 0.99  seed 1
+       say:   Son livre est un journal, fait d'entrées datées, de novembre mille neuf cent quarante-deux à mai mille neuf cent quarante-trois
+       heard: Son livre est un journal fait d'entrée datée de novembre 1942 à mai 1943.
+g5       5.0 s  20.7 c/s  heard 1.00  seed 1
+       say:   Il l'intitule Six mois sous la botte, et le livre est imprimé à Tunis en mille neuf cent quarante-trois
+       heard: Il l'intitule « 6 mois sous la botte » et le livre est imprimé à Tunis en 1943.
+g6       6.6 s  19.0 c/s  heard 0.93  seed 2
+       say:   Il consigne les ordres et les listes. Au quatorze décembre, il compte trois mille cinq cent quatre-vingt-cinq hommes recrutés
+       heard: Ils consignent les ordres et les listes. Au 14 décembre, ils comptent 3,585 hommes recruter.
+g7       6.0 s  17.7 c/s  heard 0.97  seed 1
+       say:   Certains partent à pied pour le camp de Chéylus. D'autres travaillent sur des aérodromes, ou près du front
+       heard: Certains partent à pied pour le camp de Chilus. D'autres travaillent sur des aérodrômes ou près du front.
+g8       4.2 s  21.7 c/s  heard 0.98  seed 1
+       say:   Des familles viennent à son bureau réclamer leurs fils, et il tente de réduire les effectifs
+       heard: Des familles viennent à son bureau réclamer leurs fils et ils tentent de réduire les effectifs.
+g9       8.6 s  18.7 c/s  heard 0.99  seed 1
+       say:   Au total, quelque cinq mille hommes juifs sont astreints au travail forcé, dans une quarantaine de camps, selon le Musée mémorial de l'Holocauste des États-Unis
+       heard: Au total, quelques 5 000 hommes juifs sont astreins au travail forcé, dans une quarantaine de camps, selon le Musée Mémorial de l'Holocauste des États-Unis.
+g10      8.5 s  15.8 c/s  heard 0.97  seed 1
+       say:   Le sept mai, quand les Alliés entrent dans Tunis, il organise le retour des travailleurs. Le lendemain, il trouve son appartement vidé
+       heard: Le 7 mai, quand les alliés entrent dans Tunis, ils organisent le retour des travailleurs. Le lendemain, ils trouvent son appartement vidé.
+g11      7.3 s  17.8 c/s  heard 1.00  seed 1
+       say:   Rien n'y est inventé. Mais c'est le regard d'un seul homme, dans une position terrible, entre les ordres allemands et les familles
+       heard: Rien n'y est inventé mais c'est le regard d'un seul homme dans une position terrible entre les ordres allemands et les familles.
+g12      6.3 s  16.4 c/s  heard 0.96  seed 1
+       say:   D'autres récits de ces mois existent, et l'historien Haïm Saadoun note qu'ils ne concordent pas toujours
+       heard: D'autres récits de ces mois existent, et l'historien Haim Sadoun note qu'il ne concorde pas toujours.
+m1       7.1 s  15.9 c/s  heard 0.97  seed 1
+       say:   Albert Memmi naît en mille neuf cent vingt près de la Hara, le vieux quartier juif de Tunis, fils d'un bourrelier
+       heard: Albert Mémi nait en 1920 près de la Ara, le vieux quartier juif de Tunis, fils d'un bourrelier.
+m2       4.9 s  20.0 c/s  heard 0.99  seed 1
+       say:   À la maison, il parle l'arabe des Juifs de Tunis. Une bourse lui ouvre les portes du lycée français
+       heard: A la maison, il parle l'arabe des Juifs de Tunis. Une bourse lui ouvre les portes du lycée français.
+m3       9.4 s  15.2 c/s  heard 1.00  seed 1
+       say:   En mille neuf cent quarante-deux et quarante-trois, il part dans un camp de travail forcé, presque de son plein gré, comme il le dira plus tard
+       heard: En 1942 et 43, il part dans un camp de travail forcé, presque de son plein gré, comme il le dira plus tard.
+m4       7.0 s  16.3 c/s  heard 1.00  seed 2
+       say:   En mille neuf cent cinquante-trois, il publie son premier roman, La Statue de sel, avec une préface d'Albert Camus
+       heard: En 1953, il publie son premier roman « La statue de sel » avec une préface d'Albert Camus.
+m5       4.7 s  17.1 c/s  heard 0.96  seed 1
+       say:   C'est un roman. Son narrateur porte un autre nom, Alexandre Mordekhaï Benillouche
+       heard: C'est un roman. Son narrateur porte un autre nom, Alexandre Mordekai Beniloche.
+m6       6.8 s  17.1 c/s  heard 1.00  seed 1
+       say:   Alexandre grandit dans une impasse près de la Hara, entre au lycée français, et se sent étranger dans sa propre ville
+       heard: Alexandre grandit dans une impasse près de la Hara entre au lycée français et se sent étranger dans sa propre ville.
+m7       4.4 s  19.5 c/s  heard 0.93  seed 1
+       say:   Les lois antijuives de Vichy lui apprennent qu'il ne sera jamais tout à fait français
+       heard: Les lois antiches vivent de Vichy lui apprennent qu'il ne sera jamais tout à fait français.
+m8       6.4 s  21.2 c/s  heard 0.99  seed 1
+       say:   Quand les Allemands exigent des travailleurs juifs, Memmi lui fait dire, j'ai demandé à partir parce qu'il m'était intolérable de rester
+       heard: Quand les Allemands exigent des travailleurs juifs, Mehmi lui fait dire « j'ai demandé à partir parce qu'il m'était intolérable de rester ».
+m9       3.7 s  17.1 c/s  heard 1.00  seed 1
+       say:   Au camp, Alexandre tient un journal, puis s'évade avec des amis
+       heard: au camp Alexandre tient un journal, puis s'évade avec des amis.
+m10      7.4 s  15.3 c/s  heard 0.96  seed 1
+       say:   C'est en grande partie la vie de Memmi. Selon l'historien Haïm Saadoun, le roman s'appuie sur son journal du camp
+       heard: C'est en grande partie la vie de Mamie. Selon historien Haim Saadoun, le roman s'appuie sur son journal du camp.
+m11      9.6 s  15.3 c/s  heard 0.99  seed 1
+       say:   La fin est inventée. Alexandre part pour l'Amérique du Sud, tandis que Memmi étudie à Alger et à Paris, enseigne à Tunis, puis s'installe en France
+       heard: La fin est inventée. Alexandre part pour l'Amérique du Sud, tandis que Mimi étudie à Alger et à Paris, enseigne à Tunis, puis s'installe en France.
+m12     10.3 s  13.4 c/s  heard 0.92  seed 1
+       say:   Le titre évoque la femme de Loth, dans la Genèse, changée en statue de sel pour s'être retournée. Un roman, lui aussi, regarde en arrière
+       heard: Le titre évoque la femme de Lotte, dans la jeunesse, changer en statut de scelles pour s'être retourné. Un roman lui aussi, regarde en arrière.
+r1       3.3 s  18.3 c/s  heard 1.00  seed 1
+       say:   Posons les quatre livres côte à côte, sur les mêmes six mois
+       heard: Posons les quatre livres côte à côte sur les mêmes six mois.
+r2       5.7 s  17.3 c/s  heard 0.96  seed 1
+       say:   Païle voit le front du côté américain. Douglas voit la guerre du désert depuis un char britannique
+       heard: Paillie le voit à le front du côté américain. Douglas voit la guerre du désert depuis un char britannique.
+r3       5.5 s  19.7 c/s  heard 0.98  seed 1
+       say:   Guez voit ce que les soldats ne voient pas, l'occupation vécue de l'intérieur de la communauté juive de Tunis
+       heard: Gaye voit ce que les soldats ne voient pas, l'occupation vécue de l'intérieur de la communauté juive de Tunis.
+r4       5.1 s  17.0 c/s  heard 0.93  seed 1
+       say:   Memmi la vit en jeune Juif tunisien, et dix ans plus tard, il la transforme en fiction
+       heard: m'a mis la vie en jeune juif tunisien et dix ans plus tard, il a transformé en fiction.
+r5       6.3 s  19.1 c/s  heard 0.99  seed 1
+       say:   Le reportage est rapide et proche, mais censuré. Le journal est précis sur les dates, mais il voit depuis un seul bureau
+       heard: Le reportage est rapide et proche, mais censuré. Le journal est précis sur les dates, mais il se voit depuis un seul bureau.
+r6       6.1 s  14.6 c/s  heard 1.00  seed 1
+       say:   Le récit choisit ce qu'il retient. Le roman invente, pour faire sentir ce qu'a été une vie
+       heard: Le récit choisit ce qu'il retient. Le roman invente pour faire sentir ce qu'a été une vie.
+r7      11.7 s  16.2 c/s  heard 0.97  seed 1
+       say:   Ces quatre livres, tous écrits par des hommes, disent peu des familles musulmanes dont les champs devinrent des champs de bataille, des femmes de Tunis, ou des soldats italiens et allemands
+       heard: Ces quatre livres, tous écrits par des hommes, disent peu des familles musulmanes, dont les chants devinrent des chants de bataille, des femmes de Tunis ou des soldats italiens et allemands.
+r8       6.7 s  15.8 c/s  heard 0.99  seed 1
+       say:   Aucun livre, à lui seul, n'est toute la guerre. Lus ensemble, et avec soin, ils en montrent bien davantage
+       heard: aucun livre à lui seul, n'est toute la guerre, lui ensemble, et avec soin ils en montrent bien davantage.
+r9       5.4 s  16.8 c/s  heard 0.99  seed 1
+       say:   Demandez à chaque livre qui l'a écrit, d'où, et quand, et la guerre de Tunisie se rapproche
+       heard: demandée à chaque livre qu'il a écrit, d'où, et quand, et la guerre de Tunisie se rapproche.

@@ -1,0 +1,183 @@
+o1       4.9 s  21.1 c/s  heard 1.00  seed 1
+       say:   En novembre mille neuf cent quarante-deux, les chefs alliés espèrent prendre Tunis en quelques semaines
+       heard: En novembre 1942, les chefs alliés espèrent prendre Tunis en quelques semaines.
+o2       5.9 s  18.4 c/s  heard 0.98  seed 1
+       say:   Il leur faudra six mois, et les combats traverseront toute la Tunisie, du désert du Sud aux collines du Nord
+       heard: Il leur faudra six mois et les combats traverseront toute la Tunisie du désert du sud Colline du Nord.
+o3       6.6 s  18.1 c/s  heard 0.98  seed 1
+       say:   Des soldats viendront de cinq continents, et ils se battront parmi les villes, les fermes et les villages des Tunisiens
+       heard: Des soldats viendront de cinq continents et se battront parmi les villes, les fermes et les villages des Tunisiens.
+o4       6.0 s  20.5 c/s  heard 0.99  seed 3
+       say:   Voici l'histoire de la campagne de Tunisie, de novembre mille neuf cent quarante-deux à mai mille neuf cent quarante-trois
+       heard: Voici l'histoire de la campagne et de Tunisie, de novembre 1942 à mai 1943.
+r1       8.0 s  19.2 c/s  heard 0.96  seed 1
+       say:   En mille neuf cent quarante-deux, la Tunisie est un protectorat français. Moncef Bey règne, mais le vrai pouvoir appartient à un résident général français
+       heard: En 1942, la Tunisie est un protecteur à Français, Montsef-Byrègne, mais le vrai pouvoir appartient à un résident général français.
+r2       7.4 s  19.6 c/s  heard 1.00  seed 1
+       say:   C'est l'amiral Jean-Pierre Estéva, nommé par le gouvernement de Vichy, celui qui a signé l'armistice avec l'Allemagne en mille neuf cent quarante
+       heard: C'est l'amiral Jean-Pierre Stéva, nommé par le gouvernement de Vichy, celui qui a signé l'armistice avec l'Allemagne en 1940.
+r3       9.3 s  17.4 c/s  heard 0.99  seed 1
+       say:   Le huit novembre, avec l'opération Torch, quelque cent vingt-cinq mille soldats, marins et aviateurs américains et britanniques débarquent au Maroc et en Algérie
+       heard: Le 8 novembre, avec l'opération Torche, quelques 125 000 soldats, marins et aviateurs américains et britanniques débarquent au Maroc et en Algérie.
+r4       8.0 s  16.7 c/s  heard 1.00  seed 1
+       say:   En trois jours, les troupes françaises sur place cessent le combat. Mais le véritable enjeu est à l'est, en Tunisie, face à la Sicile
+       heard: En trois jours, les troupes françaises sur place cessent le combat. Mais le véritable enjeu est à l'est, en Tunisie, face à la Sicile.
+r5       8.7 s  16.2 c/s  heard 1.00  seed 1
+       say:   L'Allemagne est plus rapide. Dès le neuf novembre, des avions allemands se posent à El Aouina, près de Tunis, et Estéva ne les en empêche pas
+       heard: l'Allemagne est plus rapide. Dès le 9 novembre, des avions allemands se posent à Helaouina, près de Tunis, et Estéva ne les en empêche pas.
+r6       5.8 s  17.8 c/s  heard 0.99  seed 1
+       say:   À la mi-novembre, Tunis et Bizerte sont tenues par environ quinze mille Allemands et neuf mille Italiens
+       heard: À la mi-novembre, Tunis et Bizerte sont tenus par environ 15 000 Allemands et 9 000 Italiens.
+r7       7.7 s  18.6 c/s  heard 0.97  seed 1
+       say:   Mais les troupes françaises du général Georges Barré se retournent contre les Allemands, et les affrontent à Medjez el-Bab le dix-neuf novembre
+       heard: Mais les troupes françaises du général Georges Barré se retournent contre les Allemands et les affrontent à Metges El-Bab le 19 novembre.
+r8       8.6 s  16.8 c/s  heard 0.93  seed 1
+       say:   Depuis Alger, à plus de six cents kilomètres, la Première Armée britannique fonce vers l'est, avec des chars américains et des troupes françaises
+       heard: Depuis Alger, à plus de 600 km, la 1ère armée britannique fonce vers l'Est, avec des chars américains et des troupes françaises.
+r9       7.2 s  15.8 c/s  heard 0.92  seed 1
+       say:   Le vingt-huit novembre, elle atteint Djédéida, à vingt et un kilomètres seulement de Tunis, et n'ira pas plus loin
+       heard: Le 28 novembre, elle atteint GDIDA à 21 km seulement de Tunis et n'ira pas plus loin.
+r10      8.6 s  17.5 c/s  heard 0.99  seed 1
+       say:   Les chasseurs de l'Axe décollent de pistes en dur aux portes de Tunis, et les avions alliés, de terrains lointains, que la pluie d'hiver change en boue
+       heard: Les chasseurs de l'Axe décollent de pistes en dure aux portes de Tunis et les avions alliés de terrains lointains que la pluie d'hiver change en bout.
+r11      7.9 s  17.1 c/s  heard 0.97  seed 1
+       say:   Des contre-attaques repoussent les Alliés jusqu'à Medjez el-Bab, et le vingt-quatre décembre, le général Eisenhower suspend l'offensive
+       heard: Des contre-attaques repoussent les alliés jusqu'à Metges El-Bab, et le 24 décembre, le général Eisenhower suspend l'offensive.
+w1       8.1 s  16.9 c/s  heard 1.00  seed 3
+       say:   Tout l'hiver, le front suit les crêtes des montagnes. Les Britanniques tiennent le nord, les Français le centre, et les Américains le sud
+       heard: Tout l'hiver, le front suit les crêtes des montagnes. Les Britanniques tiennent le Nord, les Français le Centre et les Américains le Sud.
+w2       7.1 s  17.6 c/s  heard 1.00  seed 1
+       say:   En janvier, des attaques allemandes frappent les Français au centre. Mal équipés, ils résistent durement, mais sont submergés
+       heard: En janvier, des attaques allemandes frappent les Français au centre, mal équipés. Ils résistent durement mais sont submergés.
+w3       8.9 s  17.5 c/s  heard 1.00  seed 1
+       say:   Selon les archives de l'armée française, quelque soixante-treize mille soldats français sont en Tunisie en mars, dont environ cinquante mille Nord-Africains
+       heard: Selon les archives de l'armée française, quelques 73 000 soldats français sont en Tunisie en mars, dont environ 50 000 nord-africains.
+w4       7.3 s  16.8 c/s  heard 0.99  seed 1
+       say:   Parmi eux, aux côtés des Américains et des Britanniques, se battent des tirailleurs tunisiens, avec un matériel de fortune
+       heard: Parmi eux, au côté des Américains et des Britanniques, se battent des tirailleurs tunisiens avec un matériel de fortune.
+w5       6.6 s  18.3 c/s  heard 0.98  seed 1
+       say:   De l'est arrive la huitième armée britannique, qui a repoussé les armées de l'Axe hors d'Égypte, puis à travers la Libye
+       heard: De l'est arrive la 8e armée britannique qui a repoussé les armées de l'Axe hors d'Égypte, puis à travers la Libye.
+w6       6.8 s  21.2 c/s  heard 0.99  seed 1
+       say:   Avec elle viennent des Néo-Zélandais, des Indiens, des Français libres venus du Tchad et des Grecs, et des aviateurs australiens et sud-africains
+       heard: Avec elles viennent des Néosélandais, des Indiens, des Français libres venus du Tchad et des Grecs, et des aviateurs australiens et sud-africains.
+w7       7.0 s  18.0 c/s  heard 0.99  seed 1
+       say:   En face, il y a des Allemands et des Italiens. La cinquième armée blindée tient le nord, et la première armée italienne le sud
+       heard: En face, il y a des Allemands et des Italiens. La cinquième armée blinde étient le Nord et la première armée italienne le Sud.
+k1       6.8 s  17.8 c/s  heard 1.00  seed 1
+       say:   En février, l'Axe frappe les Américains au sud. C'est la première campagne de l'armée américaine contre l'armée allemande
+       heard: En février, l'Axe frappe les Américains au Sud. C'est la première campagne de l'armée américaine contre l'armée allemande.
+k2       7.6 s  18.0 c/s  heard 0.99  seed 1
+       say:   Le quatorze février, les panzers frappent à Sidi Bou Zid, où l'infanterie américaine occupe des collines trop éloignées pour s'entraider
+       heard: Le 14 février, les Panzer frappent à Siddi Bouzid, où l'infanterie américaine occupe des collines trop éloignées pour s'entraider.
+k3       9.8 s  15.9 c/s  heard 1.00  seed 1
+       say:   En deux jours, la première division blindée américaine perd quatre-vingt-dix-huit chars et environ la moitié de sa force, selon l'historien Martin Blumenson
+       heard: En deux jours, la première division blindée américaine perd 98 chars et environ la moitié de sa force. Selon l'historien Martin Blumenson.
+k4       4.4 s  22.1 c/s  heard 0.93  seed 1
+       say:   Les Alliés reculent d'environ quatre-vingts kilomètres, jusqu'aux cols de la dorsale occidentale
+       heard: Les alliés reculent d'environ 80 km jusqu'au col de la dorsale occidentale.
+k5       5.7 s  19.9 c/s  heard 0.99  seed 1
+       say:   Les dix-neuf et vingt février, les troupes allemandes et italiennes d'Erwin Rommel percent à la passe de Kasserine
+       heard: Les 19 et 20 février, les troupes allemandes et italiennes d'Erwin Rommel, percent à la passe de Casserine.
+k6       7.3 s  19.3 c/s  heard 0.93  seed 1
+       say:   Elles sont arrêtées à Sbiba, au djebel el-Hamra et à Thala, où les canons britanniques et américains massés les stoppent le vingt-deux février
+       heard: Elles sont arrêtées à Zbiba, au Jebel El Hamra, et à Tala, où les canons britanniques et américains massaient les stops le 22 février.
+k7      10.1 s  18.8 c/s  heard 0.99  seed 2
+       say:   Un musée américain de la guerre en cite les causes. Les chefs n'avaient pas vu le terrain, les divisions étaient dispersées, la coordination mauvaise, et les troupes manquaient d'expérience
+       heard: Un musée américain de la guerre en citent les causes. Les chefs n'avaient pas vu le terrain. Les divisions étaient dispersées, la coordination mauvaise et les troupes manquaient d'expérience.
+k8       7.9 s  19.3 c/s  heard 1.00  seed 1
+       say:   Les Alliés changent alors. Harold Alexander prend le commandement de leurs armées, et le six mars, George Patton prend celui du deuxième corps américain
+       heard: Les alliés changent alors. Harold Alexander prend le commandement de leurs armées. Et le 6 mars, George Patton prend celui du deuxième corps américain.
+k9       5.7 s  16.6 c/s  heard 0.97  seed 1
+       say:   Le vingt-trois mars, à El Guettar, les troupes américaines tiennent face à une division blindée
+       heard: Le 23 mars, à El Guétard, les troupes américaines tiennent face à une division blindée.
+m1       8.0 s  15.2 c/s  heard 0.98  seed 1
+       say:   Au sud, la ligne Mareth est tenue par la première armée italienne du général Giovanni Messé, avec des divisions allemandes
+       heard: Au sud, la ligne marête est tenue par la première armée italienne du général Giovanni Messé, avec des divisions allemandes.
+m2       9.1 s  17.3 c/s  heard 0.99  seed 1
+       say:   La France l'avait construite dans les années trente contre une attaque venue de la Libye italienne. Désormais, elle fait face aux Britanniques, venus de Libye
+       heard: La France avait construite dans les années 30 contre une attaque venue de la Libye italienne. Désormais, elle fait face aux Britanniques, venue de Libye.
+m3      10.3 s  15.9 c/s  heard 0.98  seed 2
+       say:   Le six mars, à Médenine, Rommel attaque, et perd de quarante-quatre à cinquante-six chars, selon le décompte britannique. Trois jours plus tard, il quitte l'Afrique
+       heard: Le 6 mars, à Medenine, Romel attaque, et perd de 44 à 56 ch selon le décompte britannique. Trois jours plus tard, il quitte l'Afrique.
+m4       7.3 s  17.2 c/s  heard 0.98  seed 1
+       say:   Dans la nuit du vingt mars, l'attaque frontale de Montgomery à travers l'oued Zigzaou, près du village de Zarat, est repoussée
+       heard: Dans la nuit du 20 mars, l'attaque frontale de Montgomery à travers l'ouet zigzaou, près du village de Zarath, est repoussée.
+m5       9.1 s  18.7 c/s  heard 0.93  seed 1
+       say:   Pendant ce temps, le corps néo-zélandais et les Français libres du général Leclerc contournent les collines sur quelque deux cents kilomètres, jusqu'à la trouée de Tébaga
+       heard: Pendant ce temps, le corps néosélandais et français libre du général Leclerc contourne les collines sur quelques 200 km, jusqu'à la trouée de Thébaga.
+m6       8.4 s  16.6 c/s  heard 0.95  seed 3
+       say:   Ce crochet par la gauche devient l'attaque principale de Montgomery. Le vingt-six mars, à seize heures, avec le soleil dans le dos, il perce
+       heard: se crocher par la gauche, devient l'attaque principale de Montgomery. Le 26 mars, à 16 heures, avec le soleil dans le dos, il perçait.
+m7       8.0 s  17.7 c/s  heard 1.00  seed 2
+       say:   L'histoire officielle britannique juge que le crochet a gagné la bataille, sans pouvoir en faire une victoire. L'armée de l'Axe s'est échappée
+       heard: Histoire officielle britannique juge que le crochet a gagné la bataille sans pouvoir en faire une victoire. L'armée de l'Axe s'est échappée.
+a1       6.3 s  17.9 c/s  heard 0.94  seed 3
+       say:   L'Axe se retranche ensuite sur l'oued Akarit, au nord de Gabès, dans un passage entre la mer et des marais salés
+       heard: L'axe se retranche ensuite sur l'ouai d'Acarit, au nord de Gabès, dans un passage entre la mer et des marées salées.
+a2       8.2 s  18.3 c/s  heard 0.94  seed 1
+       say:   Dans la nuit du cinq avril, des soldats indiens et gourkhas gravissent ses collines en silence, avec des divisions écossaise et anglaise à leurs côtés
+       heard: Dans la nuit du 5 avril, des soldats indiens égourquats gravissent ces collines en silence avec des divisions écossaises et anglaises à leur côté.
+a3       8.9 s  16.5 c/s  heard 0.99  seed 1
+       say:   Les troupes italiennes et allemandes résistent durement, mais se retirent la nuit suivante. Le sept avril, la huitième armée rejoint les Américains
+       heard: Les troupes italiennes et allemandes résistent durement, mais se retirent la nuit suivante. Le 7 avril, la 8e armée rejoint les Américains.
+a4       6.4 s  19.8 c/s  heard 0.95  seed 2
+       say:   Elle remonte vers le nord par Sfax et Sousse, sur plus de deux cents kilomètres, et les deux fronts alliés n'en font plus qu'un
+       heard: Elle remonte vers le nord par Sfax et Souss, sur plus de 200 km, et les deux fronts alliés n'en font plus qu'un.
+a5       8.2 s  17.7 c/s  heard 0.97  seed 1
+       say:   Les dix-neuf et vingt avril, la huitième armée prend Enfidaville et le village perché de Takrouna aux Italiens et aux Allemands qui les défendent
+       heard: Les 19 et 20 avril, la VIIIe Armée prend Enfi d'Aville et le village perché de Takruna aux Italiens et aux Allemands, qui les défendent.
+a6       8.6 s  18.8 c/s  heard 0.96  seed 2
+       say:   À l'ouest, les Britanniques prennent Longstop Hill, et les Américains la cote six cent neuf, au plus tard le premier mai, au prix de lourdes pertes des deux côtés
+       heard: À l'ouest, les Britanniques prennent Longstop Hill et les Américains la cotent 609, au plus tard le 1er mai, au prix de lourdes pertes des deux côtés.
+e1       8.2 s  15.3 c/s  heard 0.93  seed 1
+       say:   Le six mai, la Première Armée perce à l'ouest de Tunis, avec de l'infanterie indienne et des chars venus de la huitième armée
+       heard: Le 6 mai, la 1re armée perse à l'Ouest de Tunis, avec de l'infanterie indienne et des chars venus de la 8e armée.
+e2       5.9 s  16.3 c/s  heard 1.00  seed 1
+       say:   Le sept mai, les chars britanniques entrent dans Tunis. À Bizerte, c'est l'infanterie américaine
+       heard: Le 7 mai, les chars britanniques entrent dans Tunis. À Bizerte, c'est l'infanterie américaine.
+e3       7.3 s  19.4 c/s  heard 0.99  seed 2
+       say:   Les armées de l'Axe sont coupées en deux. Les chars britanniques isolent le cap Bon, et les troupes françaises se referment autour de Zaghouan
+       heard: Les armées de l'axe sont coupées en deux. Les chars britanniques isolent le cap bon et les troupes françaises se referment autour de Zagouane.
+e4       7.3 s  19.1 c/s  heard 0.96  seed 1
+       say:   Derrière elles s'étend la mer, surveillée jour et nuit par les navires et les avions alliés. Seules quelques centaines d'hommes s'échappent
+       heard: Derrière elles s'étant la mer, surveillées jours et nuits par les navires et les avions alliés. Seuls quelques centaines d'hommes s'échappent.
+e5       7.0 s  17.6 c/s  heard 0.98  seed 1
+       say:   Le treize mai mille neuf cent quarante-trois, le maréchal italien Giovanni Messé rend la dernière armée de l'Axe en Afrique
+       heard: Le 13 mai 1943, le maréchal italien Giovanni messer rend la dernière armée de l'axe en Afrique.
+e6      10.0 s  19.6 c/s  heard 1.00  seed 1
+       say:   Combien de prisonniers ? L'histoire officielle britannique en compte deux cent trente-huit mille deux cent quarante-trois, et l'historien officiel américain, environ deux cent soixante-quinze mille
+       heard: Combien de prisonniers ? L'histoire officielle britannique en compte 238 243 et l'historien officiel américain, environ 275 000.
+e7       7.1 s  15.9 c/s  heard 0.94  seed 1
+       say:   Les historiens parlent en général d'environ un quart de million. En Allemagne, on compara la défaite à Stalingrad
+       heard: Les historiens parlent en général d'environ ¼ de millions. En Allemagne, on compare la défaite à Stalingrad.
+e8      10.5 s  16.6 c/s  heard 0.99  seed 1
+       say:   Les Alliés ont perdu de soixante-dix mille à soixante-seize mille hommes, tués, blessés ou disparus, selon les décomptes américain et britannique, dont plus de onze mille tués
+       heard: Les alliés ont perdu de 70 000 à 76 000 hommes, tués, blessés ou disparus, selon les décomptes américains et britanniques, dont plus de 11 000 tués.
+e9       8.7 s  19.9 c/s  heard 1.00  seed 1
+       say:   Les pertes allemandes et italiennes sont moins sûres. L'historien Rick Atkinson estime les morts à environ huit mille cinq cents Allemands et trois mille sept cents Italiens
+       heard: Les pertes allemandes et italiennes sont moins sûres. L'historien Rick Atkinson estime les morts à environ 8500 allemands et 3700 italiens.
+p1       9.5 s  13.4 c/s  heard 0.99  seed 1
+       say:   Et les Tunisiens ? L'historien Mark Willis écrit que les civils, pris entre les deux camps, ont subi des pertes humaines énormes
+       heard: Et les Tunisiens ? L'historien Marc Willis écrit que les civils, pris entre les deux camps, ont subi des pertes humaines énormes.
+p2       6.0 s  19.4 c/s  heard 1.00  seed 1
+       say:   Presque toutes les grandes villes de Tunisie ont été détruites ou gravement endommagées, et son économie a été ruinée
+       heard: presque toutes les grandes villes de Tunisie ont été détruites ou gravement endommagées et son économie a été ruinée.
+p3       8.7 s  17.3 c/s  heard 1.00  seed 1
+       say:   Sous l'occupation, les Allemands avaient contraint environ cinq mille hommes juifs de Tunisie au travail forcé, dans des camps souvent proches du front
+       heard: Sous l'occupation, les Allemands avaient contraint environ 5000 hommes juifs de Tunisie au travail forcé dans des camps souvent proches du front.
+p4      10.8 s  11.7 c/s  heard 0.98  seed 1
+       say:   La fin des combats ne libère pas la Tunisie. Le quatorze mai, les Français déposent Moncef Bey, en l'accusant de collaboration
+       heard: La fin des combats ne libère pas la Tunisie. Le 14 mai, les Français déposent Montsef Bay en l'accusant de collaboration.
+p5       8.7 s  18.4 c/s  heard 0.99  seed 1
+       say:   Pour les Alliés, c'est un début. Le dix juillet mille neuf cent quarante-trois, ils débarquent en Sicile, certains partis de Tunisie, et bientôt, Mussolini tombe
+       heard: pour les Alliés, c'est un début. Le 10 juillet 1943, il débarque en Sicile certains partis de Tunisie et bientôt Mussolini tombe.
+p6      11.2 s  16.5 c/s  heard 0.99  seed 1
+       say:   L'armée américaine en tire des leçons. Elle apprend à garder ses unités assez proches pour s'entraider, à grouper ses chars, et à faire agir fantassins, chars, canons et avions ensemble
+       heard: l'armée américaine entière des leçons. Elle apprend à garder ses unités assez proches pour s'entraider, à grouper ses chars et à faire agir fantasins, chars, canons et avions ensemble.
+p7       5.6 s  21.6 c/s  heard 0.97  seed 2
+       say:   Elle quitte la Tunisie avec des milliers de soldats aguerris, et des chefs comme Patton et Bradley les mèneront en Sicile
+       heard: Elle quitte la Tunisie avec des milliers de soldats à guéris et des chefs comme Patton et Bradley les mèneront en Sicile.
+p8       6.2 s  21.1 c/s  heard 1.00  seed 1
+       say:   Six mois de guerre ont traversé la Tunisie. Souvenons-nous des soldats de toutes les armées, et des Tunisiens, dont c'était le pays
+       heard: six mois de guerre ont traversé la Tunisie. Souvenons-nous des soldats de toutes les armées et des Tunisiens dont c'était le pays.

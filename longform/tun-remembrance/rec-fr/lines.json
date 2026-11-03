@@ -1,0 +1,270 @@
+[
+ {
+  "key": "o1",
+  "spoken": "À Carthage, au bord de la mer, des croix blanches et des étoiles de David s'alignent en rangées droites"
+ },
+ {
+  "key": "o2",
+  "spoken": "À Medjez-el-Bab, à l'ouest de Tunis, des pierres tombales identiques se suivent, rang après rang"
+ },
+ {
+  "key": "o3",
+  "spoken": "Sur les hauteurs de Gammarth, au nord de Tunis, des croix et des stèles se dressent en rangées"
+ },
+ {
+  "key": "o4",
+  "spoken": "Et à Borj Cédria, il n'y a aucune rangée, seulement six cours de pierre à flanc de colline"
+ },
+ {
+  "key": "o6",
+  "spoken": "Et beaucoup de ceux qui sont morts dans cette guerre n'ont pas de tel lieu. Ce film visite les quatre, puis regarde au-delà"
+ },
+ {
+  "key": "a1",
+  "spoken": "De novembre mille neuf cent quarante-deux à mai mille neuf cent quarante-trois, la guerre traverse la Tunisie, alors protectorat français, avec pour souverain le bey de Tunis"
+ },
+ {
+  "key": "a2",
+  "spoken": "Les troupes allemandes et italiennes occupent Tunis, Bizerte et l'est du pays, face aux armées britanniques, du Commonwealth, américaines et françaises"
+ },
+ {
+  "key": "a3",
+  "spoken": "Les Tunisiens de toutes confessions, musulmans, juifs et chrétiens, vivent l'occupation, les bombardements et les combats"
+ },
+ {
+  "key": "a5",
+  "spoken": "Après la guerre, chaque pays décide comment rassembler ses morts, et comment marquer leurs tombes"
+ },
+ {
+  "key": "a6",
+  "spoken": "Quatre de ces cimetières se trouvent à une soixantaine de kilomètres de Tunis, au plus"
+ },
+ {
+  "key": "c1",
+  "spoken": "Première étape, Carthage, où le cimetière américain d'Afrique du Nord recouvre une partie de la cité romaine"
+ },
+ {
+  "key": "c2",
+  "spoken": "Il est géré par une agence du gouvernement des États-Unis, la commission américaine des monuments de bataille"
+ },
+ {
+  "key": "c3",
+  "spoken": "Il est créé en mille neuf cent quarante-huit, sur un terrain que la Tunisie cède gratuitement et à perpétuité, et inauguré en mille neuf cent soixante"
+ },
+ {
+  "key": "c4",
+  "spoken": "Sur onze hectares, deux mille huit cent trente-trois stèles s'alignent en rangées droites, en neuf carrés, avec des bassins aux croisements des allées"
+ },
+ {
+  "key": "c5",
+  "spoken": "On y compte deux mille sept cent soixante-dix-sept croix latines et cinquante-six étoiles de David"
+ },
+ {
+  "key": "c6",
+  "spoken": "La plupart des morts honorés ici sont tombés lors d'opérations allant de l'Afrique du Nord au golfe Persique, pas seulement en Tunisie"
+ },
+ {
+  "key": "c7",
+  "spoken": "Le long de l'allée, les tables des disparus s'étendent sur trois cent soixante-quatre pieds, soit environ cent onze mètres"
+ },
+ {
+  "key": "c8",
+  "spoken": "Elles portent les noms de trois mille sept cent vingt-quatre hommes disparus sur terre, en mer et dans les airs, plus qu'il n'y a de tombes ici"
+ },
+ {
+  "key": "c9",
+  "spoken": "Une rosette près d'un nom signale un homme retrouvé et identifié depuis"
+ },
+ {
+  "key": "m1",
+  "spoken": "À une soixantaine de kilomètres à l'ouest de Tunis, Medjez-el-Bab reste sur la ligne de front de décembre mille neuf cent quarante-deux jusqu'aux offensives alliées du printemps suivant"
+ },
+ {
+  "key": "m3",
+  "spoken": "On y trouve aujourd'hui le plus grand cimetière militaire du Commonwealth en Tunisie, géré par la Commission des sépultures de guerre du Commonwealth"
+ },
+ {
+  "key": "m4",
+  "spoken": "La Commission y compte deux mille neuf cent trois militaires inhumés ou commémorés, et trois cent quatre-vingt-cinq tombes y sont anonymes"
+ },
+ {
+  "key": "m5",
+  "spoken": "Toutes ses pierres tombales sont identiques, quels que soient le grade, l'origine ou la foi, avec un insigne, un nom et un symbole religieux"
+ },
+ {
+  "key": "m7",
+  "spoken": "À Medjez, un mémorial porte les noms de près de deux mille autres hommes de la première et de la huitième armée, sans sépulture connue"
+ },
+ {
+  "key": "m8",
+  "spoken": "En Tunisie, la Commission entretient huit cimetières militaires, de Tabarka à Sfax"
+ },
+ {
+  "key": "g1",
+  "spoken": "Au nord de Tunis, sur les hauteurs de Gammarth, la France ouvre un cimetière militaire le cinq janvier mille neuf cent quarante-quatre"
+ },
+ {
+  "key": "g2",
+  "spoken": "L'armée française en Tunisie comptait des tirailleurs tunisiens, algériens et marocains, ainsi que des Européens"
+ },
+ {
+  "key": "g3",
+  "spoken": "Ses morts sont inhumés selon leur foi, et Gammarth reçoit les chrétiens, les juifs et les autres non-musulmans"
+ },
+ {
+  "key": "g4",
+  "spoken": "Les soldats musulmans, dont beaucoup de tirailleurs, reposent dans des cimetières musulmans, à Haffouz ou à Tarf ech-Chéna par exemple"
+ },
+ {
+  "key": "g5",
+  "spoken": "Les tombes militaires françaises indiquent la foi de chacun, avec une croix latine, ou une stèle portant une étoile de David, un croissant, ou rien"
+ },
+ {
+  "key": "g7",
+  "spoken": "De mille neuf cent soixante-six à soixante-huit, Gammarth reçoit les tombes militaires françaises des cimetières communaux"
+ },
+ {
+  "key": "g8",
+  "spoken": "Selon le consulat de France, mille huit cent soixante-quinze soldats y reposent dans des tombes individuelles, des deux guerres mondiales et d'Indochine"
+ },
+ {
+  "key": "g9",
+  "spoken": "Un ossuaire abrite mille deux cent vingt caissettes de restes de soldats inconnus, et l'ambassade de France entretient le site"
+ },
+ {
+  "key": "b1",
+  "spoken": "À quelque vingt-cinq kilomètres de Tunis, près de Hammam-Lif, le cimetière militaire allemand de Borj Cédria s'étend à flanc de colline"
+ },
+ {
+  "key": "b2",
+  "spoken": "Il abrite huit mille cinq cent soixante-deux soldats allemands morts en mille neuf cent quarante-deux et quarante-trois, au combat ou en captivité"
+ },
+ {
+  "key": "b4",
+  "spoken": "Après un accord germano-tunisien en mille neuf cent soixante-six, le cimetière est construit de mille neuf cent soixante-treize à mille neuf cent soixante-quinze"
+ },
+ {
+  "key": "b6",
+  "spoken": "Il n'y a pas de rangées de tombes. Les restes reposent dans des ossuaires, en six cours étagées sur la colline"
+ },
+ {
+  "key": "b7",
+  "spoken": "Une pierre en arabe, en allemand et en français donne le nombre, et rappelle cent quatre soldats jamais retrouvés"
+ },
+ {
+  "key": "b8",
+  "spoken": "Il ouvre en mille neuf cent soixante-dix-sept, et le Folksbound, la commission allemande des sépultures de guerre, l'entretient"
+ },
+ {
+  "key": "b9",
+  "spoken": "Le Folksbound lui-même écrit qu'au vu des crimes de guerre allemands, honorer les morts en héros était tabou après mille neuf cent quarante-cinq"
+ },
+ {
+  "key": "b10",
+  "spoken": "Pour lui, les cimetières militaires comme celui-ci sont des lieux pour apprendre"
+ },
+ {
+  "key": "b11",
+  "spoken": "L'Italie, elle, a rapatrié ses morts d'outre-mer, y compris de Tunisie, dans un mémorial à Bari ouvert en mille neuf cent soixante-sept"
+ },
+ {
+  "key": "w1",
+  "spoken": "Ainsi, quatre pays se souviennent avec des croix et des étoiles, des pierres tombales, des croix et des stèles, et des cours de pierre"
+ },
+ {
+  "key": "w2",
+  "spoken": "On ne peut pas simplement additionner leurs chiffres. Chaque organisme compte à sa façon, et certains incluent d'autres guerres"
+ },
+ {
+  "key": "w3",
+  "spoken": "Et beaucoup de ceux qui sont morts en Tunisie n'ont aucun cimetière militaire"
+ },
+ {
+  "key": "w4",
+  "spoken": "Des Tunisiens sont morts comme soldats de l'armée française, et comme civils dans leurs propres villes"
+ },
+ {
+  "key": "w5",
+  "spoken": "Sous l'occupation allemande, environ cinq mille hommes juifs sont envoyés au travail forcé, dans trente-deux à une quarantaine de camps"
+ },
+ {
+  "key": "w6",
+  "spoken": "Selon un rapport américain de juin mille neuf cent quarante-trois, leurs chantiers subissent des attaques aériennes alliées presque constantes"
+ },
+ {
+  "key": "w7",
+  "spoken": "Certains sont tués, et des Juifs de Tunisie sont déportés vers des camps en Europe"
+ },
+ {
+  "key": "w9",
+  "spoken": "Les villes aussi sont bombardées. Les raids sur les ports, les gares et les usines font beaucoup de victimes civiles"
+ },
+ {
+  "key": "w10",
+  "spoken": "Selon un décompte, Sousse à elle seule est bombardée trente-neuf fois en ces six mois"
+ },
+ {
+  "key": "w11",
+  "spoken": "L'historien Mark Willis écrit que la plupart des grandes villes ont été détruites ou gravement endommagées, et que ce bilan est largement oublié"
+ },
+ {
+  "key": "w12",
+  "spoken": "Aucun cimetière militaire ne rassemble ces morts. Leur mémoire vit dans les familles, dans les villes et dans les archives"
+ },
+ {
+  "key": "r1",
+  "spoken": "Après l'indépendance, des monuments aux morts sont démontés. En mille neuf cent cinquante-sept, Tunis retire son monument aux morts des deux guerres"
+ },
+ {
+  "key": "r2",
+  "spoken": "Les cérémonies continuent. En mai, les Américains se réunissent à Carthage pour le Mémorial Day, et à Gammarth, la France marque le huit mai"
+ },
+ {
+  "key": "r3",
+  "spoken": "En novembre, la France célèbre l'Armistice à Gammarth, et une cérémonie du Souvenir se tient à Medjez-el-Bab"
+ },
+ {
+  "key": "r4",
+  "spoken": "Lors du jour de deuil national allemand, deux dimanches avant l'Avent, l'ambassadeur d'Allemagne dépose une gerbe à Borj Cédria"
+ },
+ {
+  "key": "r5",
+  "spoken": "En deux mille vingt-deux, les États-Unis et la Tunisie conviennent que des soldats inconnus de Carthage pourront être exhumés, pour tenter de les identifier"
+ },
+ {
+  "key": "r6",
+  "spoken": "Ces organismes publient leurs registres en ligne, et chacun peut y chercher un nom"
+ },
+ {
+  "key": "r7",
+  "spoken": "La persécution des Juifs de Tunisie est documentée elle aussi, en partie dès l'époque"
+ },
+ {
+  "key": "r8",
+  "spoken": "Paul Ghez, contraint de recruter les travailleurs forcés, publie son journal à Tunis en mille neuf cent quarante-trois"
+ },
+ {
+  "key": "r9",
+  "spoken": "À Jérusalem, un centre de documentation indexe des milliers de documents et de témoignages"
+ },
+ {
+  "key": "r10",
+  "spoken": "À Washington, le musée-mémorial de l'Holocauste des États-Unis recueille des témoignages, dont certains venus de Tunisie"
+ },
+ {
+  "key": "r11",
+  "spoken": "À Paris, le Mémorial de la Shoah organise une cérémonie pour la rafle de Tunis du neuf décembre mille neuf cent quarante-deux"
+ },
+ {
+  "key": "r12",
+  "spoken": "Se souvenir de mille neuf cent quarante-trois en Tunisie, c'est voir les rangées, et aussi ceux qui n'y figurent pas"
+ },
+ {
+  "key": "r13",
+  "spoken": "Si vous visitez un cimetière, vérifiez l'accès sur place, et faites-le en silence"
+ },
+ {
+  "key": "r14",
+  "spoken": "Chaque nom gravé dans la pierre, chaque nom conservé dans une archive, a appartenu à quelqu'un"
+ }
+]
