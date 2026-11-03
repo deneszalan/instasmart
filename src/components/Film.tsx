@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { Clapperboard, X } from 'lucide-react';
 import type { FieldId } from '../types';
 import { clipSeconds, mediaUrl } from '../data/library';
+import { FIELD_BY_ID } from '../data/fields';
 import { EDITION } from '../edition';
 import { LANG, LANG_NAMES, t } from '../i18n';
 import type { Lang } from '../../shared/translate.ts';
@@ -41,7 +42,7 @@ export const FILM_FIELDS: FieldId[] = EDITION.fields.filter((field) => EDITION.f
 /** Whether the top bar offers the films page. */
 export const HAS_FILMS = FILM_FIELDS.some((field) => filmFor(field));
 
-/** "Watch the full story · 9 min" under a post whose section has a film; opens it full screen. */
+/** "Watch the full story: Literature · 9 min" under a post whose section has a film; opens it full screen. */
 export function FilmButton({ field }: { field: FieldId }) {
   const [open, setOpen] = useState(false);
   const film = filmFor(field);
@@ -51,7 +52,7 @@ export function FilmButton({ field }: { field: FieldId }) {
       <button className="film-btn" onClick={() => setOpen(true)}>
         <Clapperboard size={16} aria-hidden />
         <span>
-          {t('Watch the full story')}
+          {t('Watch the full story: {section}', { section: FIELD_BY_ID[field]?.name ?? '' })}
           {film.seconds ? ` · ${t('{n} min', { n: Math.round(film.seconds / 60) })}` : ''}
         </span>
       </button>

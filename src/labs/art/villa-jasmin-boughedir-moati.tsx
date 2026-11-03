@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { C, label, Stage, useGoal, type LabProps, type StagePointer } from '../kit';
 import { t } from '../../i18n';
 import { formatNumber } from '../../lib/format';
+import { shuffle } from '../../lib/feed';
 
 /**
  * Elements of Férid Boughedir's film Villa Jasmin (2008), sorted by where they come from:
@@ -22,6 +23,17 @@ export const ITEMS: { id: string; strand: Strand }[] = [
   { id: 'newsreel', strand: 'film' },
   { id: 'return1976', strand: 'film' },
 ];
+
+/**
+ * The order the cards are dealt in: shuffled, and never two cards of the same strand in a row, so the order
+ * gives nothing away (ITEMS lists them strand by strand).
+ */
+export function deal(rng: () => number = Math.random): typeof ITEMS {
+  for (let tries = 0; ; tries++) {
+    const order = shuffle(ITEMS, rng);
+    if (tries > 200 || order.every((it, k) => k === 0 || order[k - 1].strand !== it.strand)) return order;
+  }
+}
 
 /** How many of the reader's answers (item id → strand) are right. */
 export function score(answers: Record<string, Strand>): number {
@@ -57,7 +69,8 @@ export default function VillaJasminStrands({ onDone }: LabProps) {
   const [i, setI] = useState(0);
   const [tried, setTried] = useState<Strand | null>(null);
   const [width, setWidth] = useState(1);
-  const item = ITEMS[i];
+  const [order] = useState(() => deal());
+  const item = order[i];
   const right = Object.keys(answers).length;
   useGoal(right === ITEMS.length, onDone);
   const solved = item ? !!answers[item.id] : false;
