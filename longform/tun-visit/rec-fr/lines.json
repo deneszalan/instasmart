@@ -1,0 +1,266 @@
+[
+ {
+  "key": "o1",
+  "spoken": "Près d'une oasis du désert tunisien se dresse une colonne de pierre pour des soldats venus du Tchad"
+ },
+ {
+  "key": "o2",
+  "spoken": "Sur une colline près de Mareth, des blockhaus de béton regardent toujours vers le sud-est"
+ },
+ {
+  "key": "o3",
+  "spoken": "Près d'Enfidha, un village se dresse sur un rocher que des soldats ont escaladé à l'aube"
+ },
+ {
+  "key": "o4",
+  "spoken": "La guerre de mille neuf cent quarante-deux et quarante-trois a laissé de telles traces partout en Tunisie, et nous allons les suivre"
+ },
+ {
+  "key": "a1",
+  "spoken": "En mille neuf cent quarante-deux, la Tunisie est un protectorat français, gouverné en titre par le bey de Tunis"
+ },
+ {
+  "key": "a2",
+  "spoken": "En novembre, les Alliés débarquent au Maroc et en Algérie, et l'Allemagne et l'Italie envoient aussitôt des troupes à Tunis"
+ },
+ {
+  "key": "a3",
+  "spoken": "Les armées alliées approchent par l'ouest et par la Libye, avec des soldats de nombreux pays"
+ },
+ {
+  "key": "a4",
+  "spoken": "Les Tunisiens de toutes confessions, musulmans, juifs et chrétiens, vivent l'occupation et les combats"
+ },
+ {
+  "key": "a5",
+  "spoken": "Tout s'achève le treize mai mille neuf cent quarante-trois, quand les dernières forces de l'Axe en Afrique se rendent"
+ },
+ {
+  "key": "a6",
+  "spoken": "Notre itinéraire va du sud au nord, sur quelque cinq cents kilomètres à vol d'oiseau"
+ },
+ {
+  "key": "a7",
+  "spoken": "À chaque étape, on se demande ce qui s'est passé, ce qu'on voit aujourd'hui, et comment le lire sur place"
+ },
+ {
+  "key": "k1",
+  "spoken": "Notre première étape est Ksar Ghilane, une oasis au bord de la grande mer de dunes tunisienne"
+ },
+ {
+  "key": "k2",
+  "spoken": "En février mille neuf cent quarante-trois arrive la force L. Ce sont les Français libres du général Leclerc, avec des troupes coloniales du Tchad"
+ },
+ {
+  "key": "k3",
+  "spoken": "Fort-Lamy, alors capitale du Tchad, est à quelque deux mille quatre cents kilomètres à vol d'oiseau. Ici, ils gardent le flanc désertique de la huitième armée"
+ },
+ {
+  "key": "k4",
+  "spoken": "Le dix mars, un groupement blindé allemand attaque. L'aviation alliée le frappe, avec des pilotes australiens, et l'attaque échoue"
+ },
+ {
+  "key": "k5",
+  "spoken": "Aujourd'hui, on vient pour les dunes et une source chaude, et près des palmiers se dresse Tisavar, un fort romain"
+ },
+ {
+  "key": "k6",
+  "spoken": "À un kilomètre environ à l'est des combats se dresse la stèle, qu'on appelle ici la colonne du général Leclerc"
+ },
+ {
+  "key": "k7",
+  "spoken": "Lisez-les ensemble. Tous deux marquent une frontière du désert, à au moins mille sept cent cinquante ans d'écart"
+ },
+ {
+  "key": "k8",
+  "spoken": "Une précaution. La France déconseille les zones désertiques à ses voyageurs, alors consultez ces conseils avant de prévoir cette étape"
+ },
+ {
+  "key": "m1",
+  "spoken": "À quelque quatre-vingt-dix kilomètres au nord-est, près de Mareth, un musée se dresse sur une colline"
+ },
+ {
+  "key": "m2",
+  "spoken": "Il explique la ligne Mareth, que la France construisit de mille neuf cent trente-six à mille neuf cent quarante, contre une attaque venue de la Libye italienne"
+ },
+ {
+  "key": "m3",
+  "spoken": "Elle courait sur quarante à cinquante kilomètres, de la mer aux collines, avec quarante casemates d'infanterie, huit d'artillerie et quinze postes de commandement"
+ },
+ {
+  "key": "m4",
+  "spoken": "Désarmée après la défaite française de mille neuf cent quarante, elle fut réarmée par l'Axe à la fin de mille neuf cent quarante-deux"
+ },
+ {
+  "key": "m5",
+  "spoken": "Le vingt mars mille neuf cent quarante-trois, la huitième armée attaque à travers l'oued, face aux Italiens et aux Allemands. Elle est repoussée"
+ },
+ {
+  "key": "m6",
+  "spoken": "Pendant ce temps, les Néo-Zélandais et la force L ont contourné les collines sur quelque deux cents kilomètres, jusqu'à la trouée de Tébaga"
+ },
+ {
+  "key": "m7",
+  "spoken": "Ils percent le vingt-six mars, et deux jours plus tard, l'Axe se replie vers le nord"
+ },
+ {
+  "key": "m8",
+  "spoken": "Aujourd'hui, le musée, géré par le ministère de la Défense, montre cartes, photos et uniformes, avec des canons et des casemates dehors"
+ },
+ {
+  "key": "m9",
+  "spoken": "Cherchez la meurtrière d'une casemate. Elle regarde vers le sud-est, vers Médenine et la Libye, d'où l'on attendait l'ennemi"
+ },
+ {
+  "key": "t1",
+  "spoken": "En avril, l'Axe se replie vers le nord, sur les collines autour d'Enfidha"
+ },
+ {
+  "key": "t2",
+  "spoken": "À cinq kilomètres de la ville, le village de Takrouna se dresse sur un piton rocheux qui culmine à environ deux cents mètres"
+ },
+ {
+  "key": "t3",
+  "spoken": "Des troupes italiennes le tiennent, avec une compagnie allemande. Dans la nuit du dix-neuf avril, la division néo-zélandaise attaque"
+ },
+ {
+  "key": "t4",
+  "spoken": "À l'aube, le sous-officier Hané Manahi, du vingt-huitième bataillon maori, mène quelques hommes en haut de la falaise, jusqu'à une corniche"
+ },
+ {
+  "key": "t5",
+  "spoken": "Le vingt et un avril, une contre-attaque reprend la corniche. Manahi aide à la reconquérir, puis le village"
+ },
+ {
+  "key": "t6",
+  "spoken": "Quatre généraux le proposent pour la croix de Victoria, mais Londres lui accorde une médaille moindre"
+ },
+ {
+  "key": "t7",
+  "spoken": "En deux mille sept, ses fils reçoivent de la reine Élisabeth deux une épée et une lettre"
+ },
+ {
+  "key": "t8",
+  "spoken": "Aujourd'hui, on monte à pied, entre des maisons de pierre aux pièces voûtées. Seules quelques familles y vivent encore"
+ },
+ {
+  "key": "t9",
+  "spoken": "Près du sommet se trouve la zaouïa de Sidi Abdelkader, et la plaine s'étend vers l'est jusqu'à la mer"
+ },
+ {
+  "key": "t10",
+  "spoken": "Reculez d'un pas depuis le bord du sommet, et la falaise disparaît. Un relief abrupt cache son propre pied"
+ },
+ {
+  "key": "t11",
+  "spoken": "À Enfidha, le cimetière militaire du Commonwealth compte mille cinq cent cinquante et une tombes, la plupart des dernières batailles de mille neuf cent quarante-trois"
+ },
+ {
+  "key": "v1",
+  "spoken": "À Hammamet, à quarante kilomètres au nord-est, une villa blanche se dresse dans un jardin au bord de la mer. C'est Dar Sébastian"
+ },
+ {
+  "key": "v2",
+  "spoken": "George Sébastian, né en Roumanie, la fit construire vers mille neuf cent trente"
+ },
+ {
+  "key": "v3",
+  "spoken": "C'est aujourd'hui un centre culturel, dont le président Habib Bourguiba inaugura le théâtre de plein air en mille neuf cent soixante-quatre"
+ },
+ {
+  "key": "v4",
+  "spoken": "Les guides disent souvent que Rommel y a séjourné, ou même qu'il en fit son quartier général"
+ },
+ {
+  "key": "v5",
+  "spoken": "Hatem Bourial, écrivain tunisien qui en a raconté l'histoire, écrit que l'armée allemande la réquisitionna"
+ },
+ {
+  "key": "v6",
+  "spoken": "De Rommel, il écrit seulement qu'il y aurait même passé quelques nuits"
+ },
+ {
+  "key": "v7",
+  "spoken": "Vérifions les dates. Rommel prend le commandement de toutes les forces de l'Axe en Tunisie le vingt-trois février mille neuf cent quarante-trois, et quitte l'Afrique pour de bon le neuf mars"
+ },
+ {
+  "key": "v8",
+  "spoken": "L'histoire ne peut donc tenir que quelques semaines, et aucune de ces sources ne cite de document d'époque"
+ },
+ {
+  "key": "v9",
+  "spoken": "Pas plus que le récit d'un Winston Churchill écrivant ici ses mémoires"
+ },
+ {
+  "key": "v10",
+  "spoken": "Profitez de la maison et du jardin, et pesez chaque récit de guerre. Demandez qui le raconte, quand, et sur quelles preuves"
+ },
+ {
+  "key": "l1",
+  "spoken": "Notre dernière étape est à cent kilomètres au nord-ouest, près de Medjez el Bab"
+ },
+ {
+  "key": "l2",
+  "spoken": "Ici, une crête à deux sommets, le djebel el Ahmera et le djebel Rhar, domine la vallée de la Medjerda"
+ },
+ {
+  "key": "l3",
+  "spoken": "Les soldats britanniques l'appelèrent Longstop Hill, d'après le joueur de cricket placé loin derrière le gardien de guichet"
+ },
+ {
+  "key": "l4",
+  "spoken": "Comme ce long stop, elle était le dernier grand obstacle sur la route de Tunis"
+ },
+ {
+  "key": "l5",
+  "spoken": "Les Coldstream Guards la prennent sous la pluie le vingt-deux décembre mille neuf cent quarante-deux, mais à Noël, les contre-attaques allemandes en ont chassé les Alliés"
+ },
+ {
+  "key": "l6",
+  "spoken": "Les Allemands l'appelèrent la montagne de Noël, et la poussée alliée vers Tunis s'arrêta pour quatre mois"
+ },
+ {
+  "key": "l7",
+  "spoken": "En avril mille neuf cent quarante-trois, la soixante-dix-huitième division britannique attaque à nouveau, et les Argyll and Sutherland Highlanders prennent le djebel el Ahmera"
+ },
+ {
+  "key": "l8",
+  "spoken": "Leur chef, le commandant John Anderson, reçoit la croix de Victoria. Le sept mai, les troupes alliées entrent dans Tunis"
+ },
+ {
+  "key": "l9",
+  "spoken": "Aujourd'hui, on voit la crête depuis la route au nord de Medjez el Bab. Renseignez-vous sur place avant d'y monter"
+ },
+ {
+  "key": "l10",
+  "spoken": "En ville se trouve le plus grand cimetière militaire du Commonwealth en Tunisie, où deux mille neuf cent trois soldats sont inhumés ou commémorés"
+ },
+ {
+  "key": "l11",
+  "spoken": "Et écoutez les noms. Une même crête en porte trois, tunisien, britannique et allemand, laissés par ceux qui étaient là"
+ },
+ {
+  "key": "r1",
+  "spoken": "Cinq étapes et quelque cinq cents kilomètres, des dunes aux portes de Tunis"
+ },
+ {
+  "key": "r2",
+  "spoken": "À chaque fois, le terrain aide à lire la guerre, avec une pierre, une meurtrière, un bord de falaise, une date, ou un nom"
+ },
+ {
+  "key": "r3",
+  "spoken": "Pour ceux qui vivent ici, ce ne sont pas seulement des champs de bataille. Ce sont une oasis, un village, un jardin et une vallée"
+ },
+ {
+  "key": "r4",
+  "spoken": "Beaucoup de soldats venus ici ne sont jamais rentrés. Leurs cimetières font aussi partie du chemin"
+ },
+ {
+  "key": "r5",
+  "spoken": "Vérifiez l'accès sur place, voyagez en douceur, et laissez chaque lieu comme vous l'avez trouvé"
+ },
+ {
+  "key": "r6",
+  "spoken": "La guerre a traversé la Tunisie en six mois. Ses traces sont toujours là, pour qui sait regarder"
+ }
+]

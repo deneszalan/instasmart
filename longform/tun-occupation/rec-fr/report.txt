@@ -1,0 +1,219 @@
+o1       9.5 s  14.9 c/s  heard 1.00  seed 2
+       say:   Le sept mai mille neuf cent quarante-trois, les troupes alliées entrent dans Tunis. Six mois d'occupation allemande et italienne prennent fin
+       heard: Le 7 mai 1943, les troupes alliées entrent dans Tunis. 6 mois d'occupation allemande et italienne prennent fin.
+o2       8.3 s  16.6 c/s  heard 0.98  seed 2
+       say:   Une semaine plus tard, le souverain de la Tunisie, Moncef Bey, est envoyé en exil par avion. Non par les Allemands, mais par les Français
+       heard: Une semaine plus tard, le souverain de la Tunisie, Montsef Bay, est envoyé en exil par avion, non par les Allemands mais par les Français.
+o3       6.8 s  17.5 c/s  heard 0.94  seed 1
+       say:   Pour comprendre pourquoi, il faut revenir sur ces six mois, quand quatre pouvoirs s'exerçaient à la fois sur la Tunisie
+       heard: comprendre pourquoi, il faut revenir sur ces six mois, quand quatre pouvoirs s'exercer à la foi sur la Tunisie.
+o4       6.6 s  15.4 c/s  heard 0.98  seed 1
+       say:   Voici l'histoire de ses dirigeants, de ses nationalistes, des persécutés, et de ceux qui les ont aidés
+       heard: Voici l'histoire de ces dirigeants, de ces nationalistes, des persécutés et de ceux qui les ont aidés.
+a1       7.1 s  17.8 c/s  heard 0.95  seed 1
+       say:   Depuis mille huit cent quatre-vingt-un, la Tunisie est un protectorat français. Son souverain, le bey de Tunis, signe les lois
+       heard: Depuis 1881, la Tunisie est un protecteur à français. Son souverain, le beille de Tunis, signe les lois.
+a2       4.2 s  20.4 c/s  heard 1.00  seed 1
+       say:   Mais le vrai pouvoir appartient à un haut fonctionnaire français, le résident général
+       heard: Mais le vrai pouvoir appartient à un haut fonctionnaire français, le résident général.
+a3      11.1 s  15.4 c/s  heard 1.00  seed 3
+       say:   Depuis mille neuf cent quarante, le résident général est l'amiral Jean-Pierre Estéva. Il obéit au régime du maréchal Pétain, à Vichy, qui collabore avec l'Allemagne nazie
+       heard: Depuis 1940, le résident général est l'amiral Jean-Pierre Estéva. Il obéit au régime du maréchal Pétain, à Vichy, qui collabore avec l'Allemagne nazie.
+a5       9.3 s  15.7 c/s  heard 0.98  seed 1
+       say:   En juin mille neuf cent quarante-deux, Moncef Bey monte sur le trône. Il demande à Vichy des réformes, dont davantage de Tunisiens au gouvernement
+       heard: En juin 1942, Montsefby monte sur le trône. Il demande à Vichy des réformes, dont davantage de tunisiens au gouvernement.
+a8       8.3 s  16.3 c/s  heard 1.00  seed 1
+       say:   Puis, le huit novembre, les Alliés débarquent au Maroc et en Algérie, et dès le lendemain, des avions allemands se posent près de Tunis
+       heard: Puis, le 8 novembre, les alliés débarquent au Maroc et en Algérie, et dès le lendemain, des avions allemands se posent près de Tunis.
+a9      10.0 s  16.2 c/s  heard 0.96  seed 1
+       say:   Sous la pression de Vichy, Estéva les laisse utiliser les bases françaises. Les troupes allemandes et italiennes affluent à Tunis, à Bizerte et dans l'est du pays
+       heard: Sous la pression de Vichy, Estéva Lélaisse utilisait les bases françaises. Les troupes allemandes et italiennes afflues à Tunis, à Bizerte et dans l'est du pays.
+a10      5.6 s  18.8 c/s  heard 1.00  seed 1
+       say:   Dans l'ouest, les troupes françaises rejoignent les Alliés, et la ligne de front coupe la Tunisie en deux
+       heard: Dans l'Ouest, les troupes françaises rejoignent les alliés et la ligne de front coupe la Tunisie en deux.
+a11      7.6 s  14.6 c/s  heard 0.97  seed 1
+       say:   Dans Tunis occupée, le bey et l'amiral de Vichy restent en place, à côté des commandements allemand et italien
+       heard: Dans Tunis occupé, le baie et l'amiral de Vichy restent en place, à côté des commandements allemands et italiens.
+a13      7.9 s  16.3 c/s  heard 0.99  seed 3
+       say:   Le bey refuse une offre italienne de rompre avec la France, et un appel américain à rejoindre les Alliés. Il ne prend aucun parti
+       heard: Le Bay refuse une offre italienne de rompre avec la France et un appel américain à rejoindre les alliés. Il ne prend aucun parti.
+a15      7.4 s  14.9 c/s  heard 1.00  seed 1
+       say:   Pour les musulmans, les Juifs et les Européens, l'occupation apporte les bombardements, les pénuries et la peur
+       heard: pour les musulmans, les juifs et les européens, l'occupation apporte les bombardements, les pénuries et la peur.
+a16      5.0 s  19.6 c/s  heard 0.99  seed 1
+       say:   La propagande allemande cherche à gagner la majorité musulmane. Et l'occupant s'en prend aux Juifs
+       heard: La propagande allemande cherche à gagner la majorité musulmane. Et l'occupant s'en prend au juif.
+j1       5.6 s  20.8 c/s  heard 0.98  seed 1
+       say:   Environ quatre-vingt-dix mille Juifs vivent en Tunisie. La plupart sont sujets du bey, comme leurs voisins musulmans
+       heard: Environ 90 000 Juifs vivent en Tunisie. La plupart sont sujets du baie, comme leurs voisins musulmans.
+j2       8.2 s  19.7 c/s  heard 0.97  seed 1
+       say:   Les lois antijuives de Vichy s'appliquent depuis mille neuf cent quarante, mais selon le musée américain de l'Holocauste, Estéva et les deux beys les ont freinées
+       heard: Les lois anti-juives de Vichy s'appliquent depuis 1940, mais selon le Musée américain de l'Holocauste, Estéva et les deux Bayes, ils ont freiné.
+j3       3.0 s  18.2 c/s  heard 1.00  seed 1
+       say:   Et l'Italie protège les Juifs de nationalité italienne
+       heard: et l'Italie protège les Juifs de nationalité italienne.
+j5       7.9 s  17.7 c/s  heard 0.98  seed 1
+       say:   Avec l'armée allemande arrive une unité SS dirigée par Walter Rauff, qui avait conçu les camions à gaz utilisés pour tuer des Juifs à l'Est
+       heard: Avec l'armée allemande, arrive une unité SS dirigée par Walter Rof, qui avait conçu les camions à gaz utilisées pour tuer des Juifs à l'Est.
+j6       3.6 s  21.9 c/s  heard 1.00  seed 1
+       say:   En deux semaines, les Allemands arrêtent des dirigeants de la communauté juive
+       heard: En deux semaines, les Allemands arrêtent des dirigeants de la communauté juive.
+j7       7.6 s  16.6 c/s  heard 0.97  seed 2
+       say:   Le six décembre, Rauff ordonne à la communauté de livrer des hommes pour le travail forcé, deux mille d'abord, puis trois mille
+       heard: Le 6 décembre, Roof ordonne à la communauté de livrer des hommes pour le travail forcé 2000 d'abord, puis 3000.
+j8       6.4 s  16.5 c/s  heard 0.99  seed 1
+       say:   Le neuf décembre, les SS pénètrent dans des synagogues et raflent des hommes juifs dans les rues de Tunis
+       heard: Le 9 décembre, les SS pénètrent dans des synagogues et rafle des hommes juifs dans les rues de Tunis.
+j9       5.8 s  17.6 c/s  heard 1.00  seed 1
+       say:   Sous la menace, les responsables de la communauté doivent eux-mêmes dresser les listes de travailleurs
+       heard: Sous la menace, les responsables de la communauté doivent eux-mêmes dresser les listes de travailleurs.
+j10      5.6 s  17.8 c/s  heard 0.97  seed 1
+       say:   À la tête de leur comité, l'avocat Paul Ghez tient un journal. Il l'intitule Six mois sous la botte
+       heard: À la tête de leur comité, l'avocat Paul Guest tient un journal. Il l'intitule 6 mois sous la botte.
+j11      6.5 s  19.0 c/s  heard 1.00  seed 2
+       say:   Environ cinq mille hommes sont envoyés au travail forcé, dans trente-deux à une quarantaine de camps, souvent près du front
+       heard: Environ 5 000 hommes sont envoyés au travail forcé, dans 32 à une quarantaine de camps, souvent près du front.
+j12     11.3 s  13.2 c/s  heard 0.96  seed 1
+       say:   Selon Yad Vachem, des dizaines d'entre eux meurent dans les pires camps, à Bizerte et à Mateur, de maladie, de travail, de sévices et sous les bombes
+       heard: Selon Yad Vashem, des dizaines d'entre eux meurent dans les pire camps, à bisert et amateurs, de maladies, de travail, de sévices et sous les bombes.
+j13      5.6 s  15.1 c/s  heard 0.96  seed 1
+       say:   Gilbert Mazouz, dix-neuf ans, est abattu par un soldat allemand en route vers un camp
+       heard: Gilbert Mazouz, 19 ans, est abattu par un soldat allemand en route vers Incan.
+j14      7.1 s  19.8 c/s  heard 1.00  seed 1
+       say:   Le vingt-deux décembre, les Allemands imposent à la communauté une amende de vingt millions de francs, en l'accusant des bombardements alliés
+       heard: Le 22 décembre, les Allemands imposent à la communauté une amende de 20 millions de francs en l'accusant des bombardements alliés.
+j15      6.5 s  17.3 c/s  heard 1.00  seed 1
+       say:   Des maisons sont saisies, des otages sont pris, et dans certaines villes, les Juifs doivent porter l'étoile jaune
+       heard: Des maisons sont saisies, des otages sont pris et dans certaines villes les juifs doivent porter l'étoile jaune.
+j16      3.3 s  22.2 c/s  heard 0.99  seed 1
+       say:   Une poignée d'entre eux sont déportés vers des camps de la Pologne occupée
+       heard: Une poignée d'entre eux sont déportées vers des camps de la Pologne occupée.
+j18      9.2 s  14.6 c/s  heard 0.97  seed 1
+       say:   Selon Yad Vachem, les SS étaient venus pour bien pire. Les Juifs de Tunisie ont été sauvés parce que les Allemands ont manqué de temps
+       heard: Selon Yad Vashem, les essais s'étaient venus pour bien pire. Les Juifs de Tunisie ont été sauvés parce que les Allemands ont manqué de temps.
+n1       8.0 s  15.5 c/s  heard 0.98  seed 1
+       say:   Beaucoup de Tunisiens veulent l'indépendance. Leur principal parti est le Néo-Destour, dirigé par un avocat, Habib Bourguiba
+       heard: Beaucoup de tunisiens veulent l'indépendance. Leur principale partie est le néo-destour, dirigé par un avocat, Habib Burgiba.
+n2       7.8 s  21.7 c/s  heard 1.00  seed 1
+       say:   Après des manifestations en mille neuf cent trente-huit, les Français l'emprisonnent, et à partir de mille neuf cent quarante, ils le détiennent dans un fort à Marseille
+       heard: Après des manifestations en 1938, les Français l'emprisonnent, et à partir de 1940, ils le détiennent dans un fort à Marseille.
+n3       7.6 s  19.6 c/s  heard 1.00  seed 1
+       say:   En août mille neuf cent quarante-deux, il écrit de sa cellule à son parti que l'Allemagne ne gagnera pas la guerre, et qu'elle ne peut pas la gagner
+       heard: En août 1942, il écrit de sa cellule à son parti que l'Allemagne ne gagnera pas la guerre et qu'elle ne peut pas la gagner.
+n4       2.8 s  22.7 c/s  heard 1.00  seed 1
+       say:   Il leur dit de s'allier aux Français libres du général de Gaulle
+       heard: Il leur dit de s'allier aux Français libres du général de Gaulle.
+n5       5.2 s  19.2 c/s  heard 1.00  seed 1
+       say:   Fin mille neuf cent quarante-deux, les Allemands le libèrent et le remettent à leurs alliés italiens
+       heard: fin 1942, les Allemands le libèrent et le remettent à leurs alliés italiens.
+n6       7.0 s  17.8 c/s  heard 1.00  seed 1
+       say:   En janvier mille neuf cent quarante-trois, Rome le reçoit avec les honneurs et veut qu'il parle en faveur de l'Axe. Il refuse
+       heard: En janvier 1943, Rome le reçoit avec les honneurs et veut qu'il parle en faveur de l'Axe. Il refuse.
+n7       3.8 s  16.1 c/s  heard 1.00  seed 1
+       say:   Certains militants tunisiens, eux, travaillent avec l'occupant
+       heard: Certains militants tunisiens, eux, travaillent avec l'occupant.
+n8       5.7 s  18.3 c/s  heard 0.99  seed 1
+       say:   Ramené à Tunis en avril mille neuf cent quarante-trois, Bourguiba appelle son parti à soutenir les Alliés
+       heard: Ramene à Tunis en avril 1943, Bourguiba appelle son parti à soutenir les alliés.
+h1       5.9 s  18.4 c/s  heard 0.99  seed 1
+       say:   Certains ont aidé. L'historien Robert Satloff a recueilli leurs histoires, et aussi des histoires de trahison
+       heard: Certains ont aidé. L'historien Robert Sattloff a recueilli leurs histoires et aussi des histoires de trahison.
+h2       6.6 s  19.9 c/s  heard 0.95  seed 1
+       say:   Il raconte comment les ministres de Moncef Bey prévenaient les dirigeants juifs des projets allemands et plaidaient pour les otages
+       heard: Ils racontent comment les ministres de Mont-Safe Bay prévenaient les dirigeants juifs des projets allemands et plaidaient pour les otages.
+h3       8.4 s  15.1 c/s  heard 0.96  seed 1
+       say:   Et comment Si Ali Sakkat, ancien maire de Tunis, abrita dans sa ferme, près de Zaghouan, une soixantaine de travailleurs évadés
+       heard: et comment si Alice Akat, ancien maire de Tunis, abrita dans sa ferme, près de Zagwan, une soixantaine de travailleurs évadés.
+h4       5.8 s  17.1 c/s  heard 0.96  seed 1
+       say:   Sur la côte, à Mahdia, des soldats allemands s'emparent de la maison des Boukris, une famille juive
+       heard: Sur la côte, à Madia, des soldats allemands s'emparent de la maison des Boucheries, une famille juive.
+h5       5.6 s  18.1 c/s  heard 0.99  seed 1
+       say:   Khaled Abdoul-Wahab, issu d'une grande famille musulmane, traite avec les Allemands au nom de la ville
+       heard: Khaled Abdul Wahab, issu d'une grande famille musulmane, traite avec les Allemands au nom de la ville.
+h6       6.9 s  18.7 c/s  heard 0.97  seed 1
+       say:   Anny Boukris, alors âgée de onze ans, a raconté plus tard qu'il avait appris qu'un officier allemand projetait d'agresser sa mère
+       heard: Annie Bucris, alors âgée de 11 ans, a raconté plus tard qu'il avait appris qu'un officier allemand projetait d'agresser sa mère.
+h7       6.1 s  17.3 c/s  heard 0.95  seed 1
+       say:   De nuit, il conduit sa famille et les Ouzzan, environ deux douzaines de personnes, dans sa ferme de Tlelsa
+       heard: De nuit, il conduit sa famille et les usannes, environ deux douzaines de personnes dans sa ferme de Clelsa.
+h8       5.0 s  21.6 c/s  heard 0.98  seed 1
+       say:   Ils y restent quatre mois environ, jusqu'à l'arrivée des Britanniques en avril mille neuf cent quarante-trois
+       heard: Il y reste quatre mois environ, jusqu'à l'arrivée des Britanniques en avril 1943.
+h9       7.8 s  14.9 c/s  heard 0.99  seed 2
+       say:   En deux mille sept, Satloff le propose à Yad Vachem, le mémorial israélien de la Shoah, comme Juste parmi les nations
+       heard: En 2007, Satloff le propose à Yad Vashem, le mémorial israélien de la Shoah, comme juste parmi les nations.
+h10      7.9 s  14.4 c/s  heard 1.00  seed 2
+       say:   Ce titre repose sur quatre critères. L'un d'eux est le risque pour la vie, la liberté ou la situation du sauveteur
+       heard: Ce titre repose sur quatre critères, l'un d'eux est le risque pour la vie, la liberté ou la situation du sauveteur.
+h11      6.3 s  19.7 c/s  heard 0.98  seed 1
+       say:   La commission de Yad Vachem a conclu qu'il n'avait enfreint aucune loi, et que les Allemands savaient les familles à la ferme
+       heard: La commission de Yad Vashem a conclu qu'il n'avait en frein aucune loi et que les allemands savaient les familles à la ferme.
+h12      6.3 s  18.9 c/s  heard 0.97  seed 1
+       say:   Une femme abritée là-bas se souvient d'avoir mis son étoile jaune pour être comptée quand des soldats venaient vérifier
+       heard: Une femme abritait là-bas, se souvient d'avoir mis son étoile jaune pour être comptée, quand des soldats venaient vérifier.
+h13      5.5 s  15.6 c/s  heard 0.96  seed 1
+       say:   Faute de risque, a-t-elle jugé, il n'était pas éligible, tout en saluant sa solidarité
+       heard: faute de risques, a-t-elle jugé et n'était pas éligible, tout en saluant sa solidarité.
+h14      7.6 s  15.7 c/s  heard 0.98  seed 1
+       say:   D'autres contestent. Eva Weisel, abritée là enfant, se souvient d'officiers allemands ivres qui menacèrent les familles
+       heard: D'autres contests. Eva Weisel, abritée là-en-fant, se souvient d'officiers allemands ivres qui menacèrent les familles.
+h15      5.7 s  18.8 c/s  heard 0.98  seed 1
+       say:   Sa famille et Satloff la contestent aussi. L'accueil est bien attesté, c'est le risque qui est en question
+       heard: Sa famille et sa cloffe la contestent aussi. L'accueil est bien attesté, c'est le risque qui est en question.
+l1       8.1 s  20.1 c/s  heard 0.98  seed 1
+       say:   Le sept mai mille neuf cent quarante-trois, les troupes britanniques entrent dans Tunis, et les Américains dans Bizerte. Les travailleurs forcés rentrent chez eux
+       heard: Le 7 mai 1943, les troupes britanniques entrent dans Tunis et les Américains d'ambiserte. Les travailleurs forcés rentrent chez eux.
+l2       9.9 s  14.1 c/s  heard 0.97  seed 1
+       say:   Le treize mai, les dernières armées de l'Axe en Afrique capitulent. Estéva, emmené en France par les Allemands, sera condamné pour trahison
+       heard: Le 13 mai, les dernières armées de l'Axe en Afrique, capitule. Estéva, ennée en France par les Allemands, sera condamné pour trahison.
+l4       7.2 s  16.4 c/s  heard 0.97  seed 1
+       say:   Les autorités françaises d'Alger, sous le général Henri Giraud, accusent alors Moncef Bey d'avoir collaboré avec l'Axe
+       heard: Les autorités françaises d'Alger, sous le général Henri Giraud, accusent alors Monsef Bay d'avoir collaboré avec l'AX.
+l5       7.3 s  14.5 c/s  heard 0.94  seed 1
+       say:   Le quatorze mai, comme il refuse d'abdiquer, Giraud le dépose, et un avion l'emmène à Laghouat, en Algérie
+       heard: Le 14 mai, comme il refuse d'abdiquer, Jiro le dépose et un avion l'emmène à Lagoit en Algérie.
+l6       5.7 s  16.9 c/s  heard 1.00  seed 1
+       say:   Le général Alphonse Juin, chargé de l'opération, écrira n'avoir rien trouvé de sérieux contre lui
+       heard: Le général Alphonse Juin, chargé de l'opération, écrira n'avoir rien trouvé de sérieux contre lui.
+l7       6.0 s  19.1 c/s  heard 0.98  seed 1
+       say:   Pour les Juifs de Tunisie, les lois antijuives de Vichy restent en vigueur jusqu'en mille neuf cent quarante-quatre
+       heard: pour les Juifs de Tunisie, les lois anti-juifs de Vichy restent en vigueur jusqu'en 1944.
+l8       3.7 s  19.8 c/s  heard 1.00  seed 2
+       say:   Et les Français ferment les écoles et les journaux des Italiens de Tunisie
+       heard: et les Français ferment les écoles et les journaux des Italiens de Tunisie.
+l9       5.9 s  16.3 c/s  heard 0.96  seed 1
+       say:   Bourguiba, qui avait refusé l'Axe, n'est pas poursuivi. Un diplomate américain a plaidé pour lui
+       heard: Bourguiba, qui avait refusé l'axe, n'est pas poursuivi, un diplomate américain implédé pour lui.
+l10      7.2 s  14.6 c/s  heard 0.94  seed 1
+       say:   Pour beaucoup de Tunisiens, le bey déchu devient un symbole, et son successeur, Lamine Bey, un usurpateur
+       heard: Pour beaucoup de tunisiens, le beille des chus devient un symbole, et son successeur, Lamine Bay, un usurpateur.
+l11      7.6 s  18.4 c/s  heard 0.96  seed 1
+       say:   Moncef Bey meurt en exil à Pau, en mille neuf cent quarante-huit. Des milliers de personnes, dont des Juifs, suivent ses funérailles à Tunis
+       heard: Monsef B meurt en exil à peau, en 1948. Des milliers de personnes dans des Juifs suivent ses funérailles à Tunis.
+l12      7.6 s  18.2 c/s  heard 1.00  seed 2
+       say:   Bourguiba porte la cause tunisienne à l'étranger, et retourne en prison. En mille neuf cent cinquante-quatre, la France promet l'autonomie
+       heard: Burguiba porte la cause tunisienne à l'étranger et retourne en prison. En 1954, la France promet l'autonomie.
+l13     10.8 s  15.6 c/s  heard 1.00  seed 1
+       say:   Le vingt mars mille neuf cent cinquante-six, la Tunisie devient indépendante. En mille neuf cent cinquante-sept, la monarchie est abolie, et Bourguiba devient président
+       heard: Le 20 mars 1956, la Tunisie devient indépendante. En 1957, la monarchie est abolie et Bourguiba devient président.
+r1       4.7 s  18.2 c/s  heard 0.96  seed 1
+       say:   Six mois d'occupation ont laissé bien des histoires, chacune à raconter pour elle-même
+       heard: 6 mois d'occupation ont laissé bien des histoires. Chacune a raconté pour elle-même.
+r2       6.1 s  17.0 c/s  heard 1.00  seed 1
+       say:   Les Juifs de Tunisie ont connu le travail forcé, les amendes et la peur, et certains ne sont pas revenus
+       heard: Les Juifs de Tunisie ont connu le travail forcé, les amendes et la peur, et certains ne sont pas revenus.
+r3       3.8 s  21.6 c/s  heard 1.00  seed 1
+       say:   Les familles musulmanes et européennes ont connu les bombardements et les pénuries
+       heard: Les familles musulmanes et européennes ont connu les bombardements et les pénuries.
+r4       4.9 s  19.1 c/s  heard 0.95  seed 1
+       say:   Un bey a protégé ses sujets autant qu'il le pouvait, puis les Français lui ont pris son trône
+       heard: un baie à protéger ses sujets autant qu'il le pouvait, puis les Français lui ont pris son trône.
+r5       4.9 s  17.6 c/s  heard 0.97  seed 1
+       say:   Des nationalistes ont dû choisir leur camp. Des voisins ont aidé, et certains ont trahi
+       heard: Les nationalistes ont dû choisir leur camp. Les voisins ont aidé et certains ont trahi.
+r6       8.1 s  15.4 c/s  heard 0.95  seed 1
+       say:   On commémore toujours la rafle de Tunis, à Paris comme à Tunis, et à La Marsa, une place porte désormais le nom de Moncef Bey
+       heard: On commémore toujours la rafle de Tunis, à Paris comme à Tunis, et à la Marseille. Une place porte désormais le nom de Montsefbey.
+r7       7.0 s  16.5 c/s  heard 1.00  seed 1
+       say:   Une part de cette histoire est documentée, une autre reste contestée. Savoir les distinguer fait partie du souvenir
+       heard: Une part de cette histoire est documentée, une autre reste contestée. Savoir les distinguer fait partie du souvenir.

@@ -1,0 +1,201 @@
+o1       7.9 s  19.2 c/s  heard 1.00  seed 1
+       say:   Pour un film de mille neuf cent quarante-quatre sur la guerre de Tunisie, des scènes ont été reconstituées, certaines jusqu'en Floride et en Californie
+       heard: Pour un film de 1944 sur la guerre de Tunisie, des scènes ont été reconstituées, certaines jusqu'en Floride et en Californie.
+o2       7.2 s  19.5 c/s  heard 1.00  seed 1
+       say:   Un film hollywoodien de mille neuf cent soixante-dix a déplacé une bataille tunisienne en Espagne, et lui a donné le mauvais général allemand
+       heard: Un film hollywoodien de 1970 a déplacé une bataille tunisienne en Espagne et lui a donné le mauvais général allemand.
+o3       5.2 s  18.1 c/s  heard 1.00  seed 1
+       say:   Et deux films de deux mille huit ont ramené la guerre dans une villa et dans une cour de Tunis
+       heard: et deux films de 2008 ont ramené la guerre dans une villa et dans une cour de Tunis.
+o4       7.4 s  16.0 c/s  heard 1.00  seed 1
+       say:   Quatre films, quatre façons de raconter les mêmes six mois. Chacun nous montre la guerre, et l'époque qui l'a vu naître
+       heard: Quatre films, quatre façons de raconter les mêmes six mois. Chacun nous montre la guerre et l'époque qu'il a vu naître.
+a1       6.4 s  17.4 c/s  heard 0.96  seed 1
+       say:   En mille neuf cent quarante-deux, la Tunisie est un protectorat français, gouverné en titre par le bey de Tunis
+       heard: En 1942, la Tunisie est un protecteur à Français, gouverné en titre par le Bay de Tunis.
+a2       7.4 s  17.0 c/s  heard 1.00  seed 1
+       say:   En novembre, des troupes allemandes et italiennes affluent à Tunis, et les armées alliées approchent par l'Algérie et la Libye
+       heard: En novembre, des troupes allemandes et italiennes affluent à Tunis, et les armées alliées approchent par l'Algérie et la Libye.
+a3       2.9 s  23.4 c/s  heard 1.00  seed 4
+       say:   Les combats durent jusqu'au treize mai mille neuf cent quarante-trois
+       heard: Les combats durent jusqu'au 13 mai 1943.
+a4       7.9 s  15.3 c/s  heard 0.99  seed 1
+       say:   Les Tunisiens de toutes confessions, musulmans, juifs et chrétiens, vivent l'occupation, les bombardements et les combats
+       heard: Les Tunisiens de toute confession, musulmans, juifs et chrétiens, vivent l'occupation, les bombardements et les combats.
+a5       6.1 s  19.1 c/s  heard 0.99  seed 1
+       say:   Depuis, le cinéma n'a cessé de raconter cette histoire. Nous suivons quatre films, dans l'ordre où ils ont été faits
+       heard: Depuis, le cinéma n'a cessé de raconter cette histoire. Nous suivons quatre films dans l'ordre où ils ont été fait.
+a6       6.3 s  18.5 c/s  heard 1.00  seed 2
+       say:   Pour chacun, on se demande qui l'a fait et pour qui, ce qu'il montre, ce qu'il invente, et ce qu'il dit de son époque
+       heard: Pour chacun on se demande qui l'a fait et pour qui ce qu'il montre, ce qu'il invente et ce qu'il dit de son époque.
+v1       3.8 s  20.8 c/s  heard 0.96  seed 1  CHECK: its end wasn't heard
+       say:   Notre premier film a été fait pendant la guerre, par les armées qui la menaient
+       heard: Notre premier film a été fait pendant la guerre par les armées qui l'a menée.
+v2       9.1 s  15.7 c/s  heard 0.91  seed 1
+       say:   Les cinéastes de l'armée britannique avaient eu un succès avec Desert Victory, sur El Alamein, et commencé un film sur la Tunisie, Africa Freed
+       heard: Les cinéastes de l'armée britannique avaient eu un succès avec Désertes-Victorie, sur elle à la main et commencer un film sur la Tunisie, Afrikafride.
+v3       6.6 s  17.7 c/s  heard 0.96  seed 1
+       say:   Puis les services d'information britannique et américain s'accordent plutôt sur un seul film commun, Tunisian Victory
+       heard: puis les services d'information britannique et américain s'accordent plutôt sur un seul film commun, Tunisienne Victoria.
+v4       9.6 s  16.1 c/s  heard 0.93  seed 1
+       say:   Le réalisateur hollywoodien Frank Capra, alors colonel de l'armée américaine, le réalise avec le Britannique Hugh Stewart et quelque trois cents personnes
+       heard: Le réalisateur olivoudien Franck Capra, alors colonel de l'armée américaine, le réalise avec le britannique Yoke Stewart et quelques 300 personnes.
+v5       7.9 s  13.5 c/s  heard 0.96  seed 1
+       say:   Il suit la campagne, du débarquement à la capitulation. Toutes les voix y sont britanniques ou américaines
+       heard: Ils suivent la campagne du débarquement à la capitulation. Toutes les voies sont britanniques ou américaines.
+v6       6.2 s  17.0 c/s  heard 0.95  seed 1
+       say:   L'Imperial War Museum britannique note qu'il donne bien plus de poids à l'effort américain qu'Africa Freed
+       heard: l'Imperial War Museum britannique, note qu'il donne bien plus de poids à l'effort américain. Kafrika Fride
+v7       7.4 s  20.8 c/s  heard 1.00  seed 1
+       say:   Une grande part a été filmée pendant la campagne, mais beaucoup d'images américaines sont perdues quand les Allemands coulent le navire qui les transporte
+       heard: Une grande part a été filmée pendant la campagne mais beaucoup d'images américaines sont perdues quand les Allemands coulent le navire qui les transport.
+v8       6.8 s  15.7 c/s  heard 0.96  seed 2
+       say:   On reconstitue donc des scènes. George Stevens, basé à Alger, passe deux semaines à filmer chars et soldats
+       heard: On reconstitue donc des scènes. George Stevens, basé à G, passe deux semaines à filmer char et soldat.
+v9       7.2 s  15.7 c/s  heard 0.99  seed 1
+       say:   John Huston filme des avions et des chars factices en Floride et en Californie. On ignore si ces scènes ont servi
+       heard: John Huston, film des avions et des chars factices en Floride et en Californie. On ignore si ces scènes ont servi.
+v10      7.1 s  16.3 c/s  heard 0.99  seed 1
+       say:   Et ses deux soldats narrateurs, un Britannique et un Américain, sont inventés, et des acteurs leur prêtent leur voix
+       heard: Et ces deux soldats narrateurs, un Britannique et un Américain sont inventés et des acteurs leur prêtent leur voix.
+v11      6.9 s  22.1 c/s  heard 1.00  seed 1
+       say:   Les deux équipes se disputent des mois pour savoir qui racontera l'histoire. Capra prend la main, et le film sort en mars mille neuf cent quarante-quatre
+       heard: Les deux équipes se disputent des mois pour savoir qui racontra l'histoire. Capra prend la main et le film sort en mars 1944.
+v12      6.9 s  19.8 c/s  heard 0.96  seed 1
+       say:   Ses narrateurs parlent de la plus grande des opérations combinées, et ses soldats finissent par espérer bâtir ensemble un monde meilleur
+       heard: Ces narrateurs parlent de la plus grande des opérations combinées. Et ces soldats finissent par espérer bâtir ensemble la Monde Meilleure.
+v13      3.4 s  23.1 c/s  heard 1.00  seed 1
+       say:   Fait pour le public de l'arrière, en pleine guerre, c'est l'histoire des armées
+       heard: fait pour le public de l'arrière en pleine guerre, c'est l'histoire des armées.
+p1       6.2 s  17.2 c/s  heard 0.94  seed 1
+       say:   Vingt-six ans plus tard, Hollywood revient à la bataille avec Patton, produit par la Twentieth Century Fox
+       heard: 26 ans plus tard, Hollywood revient à la bataille avec Patton, produit par la 20th Century Fox.
+p2       8.5 s  15.1 c/s  heard 0.98  seed 1
+       say:   Franklin Schaffner le réalise, sur un scénario de Francis Ford Coppola et Edmund North, avec George Scott dans le rôle de Patton
+       heard: Franklin Schaffner le réalise sur un scénario de Francis Ford Coppola et Edmund Norse avec George Scott dans le rôle de Patton.
+p3       6.1 s  15.8 c/s  heard 0.93  seed 1
+       say:   Dans le film, après la défaite américaine de Kasserine, Patton reprend le deuxième corps, ébranlé
+       heard: Dans le film, après la défaite américaine de Cacerine, Patton reprend le deuxième corps et branlait.
+p4       8.1 s  14.9 c/s  heard 0.96  seed 1
+       say:   Un matin, ses aides de camp le réveillent, car Rommel va attaquer. Près du lit est posé un livre de Rommel sur les chars
+       heard: Un matin, ses aides de camp le réveillent, car Romel va attaquer. Prédulis est posé un livre de Romel sur les chars.
+p5       5.7 s  17.9 c/s  heard 0.99  seed 1
+       say:   Quand les chars allemands reculent à El Guettar, le Patton de Scott lance à Rommel, j'ai lu votre livre
+       heard: Quand les chars allemands reculent à El Guettard, le paton de Scott lance à Rommel, j'ai lu votre livre.
+p6       8.3 s  18.2 c/s  heard 0.99  seed 1
+       say:   L'histoire est tout autre. Rommel n'a jamais achevé un tel livre, et il avait quitté l'Afrique pour de bon le neuf mars mille neuf cent quarante-trois
+       heard: l'histoire est tout autre. Romel n'a jamais acheté un tel livre, et il avait quitté l'Afrique pour de bon le 9 mars 1943.
+p7       8.0 s  17.4 c/s  heard 1.00  seed 1
+       say:   Le vingt-trois mars, la dixième division blindée allemande attaque la première division d'infanterie américaine dans la vallée d'El Guettar
+       heard: Le 23 mars, la dixième division blindée allemande attaque la première division d'infanterie américaine dans la vallée Del Guetta.
+p8       7.0 s  19.5 c/s  heard 0.97  seed 1
+       say:   Un champ de mines arrête huit chars, les canons américains en détruisent une trentaine d'autres, et à midi, les Allemands se sont repliés
+       heard: Un champ de mine arrête huits de chars, les canons américains en détruisent une trentaine d'autres. Et à midi, les Allemands se sont repluyés.
+p9       7.7 s  16.5 c/s  heard 0.98  seed 1
+       say:   Les combats se poursuivent en avril. Le film fait de ces semaines une matinée, et de deux divisions un duel entre deux généraux
+       heard: les combats se poursuivent en avril. Le film fait de ces semaines une matinée et de deux divisions induelles entre deux généraux.
+p10      4.9 s  20.2 c/s  heard 1.00  seed 1
+       say:   Et sa Tunisie n'est pas la Tunisie. Ces scènes ont été tournées à Alméria, dans le sud de l'Espagne
+       heard: Et sa Tunisie n'est pas la Tunisie, ces scènes ont été tournées à Alméria dans le sud de l'Espagne.
+p11      5.3 s  17.9 c/s  heard 1.00  seed 1
+       say:   Patton sort en mille neuf cent soixante-dix, alors que les États-Unis font la guerre au Vietnam
+       heard: Patton sort en 1970, alors que les États-Unis font la guerre au Vietnam.
+p12      6.9 s  14.8 c/s  heard 0.98  seed 1
+       say:   Les uns y voient un héros, les autres un avertissement. Le président Nixon le regarde encore et encore
+       heard: Les uns y voient à héros, les autres, un avertissement. Le président Nixon le regarde encore et encore.
+p13      7.3 s  16.2 c/s  heard 1.00  seed 2
+       say:   Il remporte sept Oscars, dont celui du meilleur film. C'est l'histoire d'un général, et la Tunisie n'y est qu'un décor
+       heard: Il remporte sept Oscars, dont celui du meilleur film. C'est l'histoire d'un général et la Tunisie n'y est qu'un décor.
+j1       7.2 s  18.7 c/s  heard 0.97  seed 1
+       say:   Notre troisième film est l'œuvre d'un Tunisien. Férid Boughedir est né à Hammam-Lif, près de Tunis, en mille neuf cent quarante-quatre
+       heard: Notre troisième film est l'œuvre d'un Tunisien. Féryd Boudir est né à Hamamlif, près de Tunis, en 1944.
+j2       9.7 s  17.7 c/s  heard 1.00  seed 1
+       say:   Historien des cinémas d'Afrique et du monde arabe, il avait filmé des voisins musulmans, juifs et chrétiens dans Un été à La Goulette, en mille neuf cent quatre-vingt-seize
+       heard: Historien des cinémas d'Afrique et du monde arabe, il avait filmé des voisins musulmans, juifs et chrétiens dans un été à la goulette en 1996.
+j3       7.6 s  17.8 c/s  heard 0.97  seed 1
+       say:   En deux mille huit, il tourne Villa Jasmin pour la télévision française, d'après un roman de deux mille trois du journaliste Serge Moati
+       heard: En 2008, il tourne village Asmain pour la télévision française d'après un roman de 2003 du journaliste Serge Moiti.
+j4       9.2 s  13.8 c/s  heard 0.98  seed 1
+       say:   Moati, né à Tunis en mille neuf cent quarante-six, y raconte son père, prénommé Serge lui aussi, journaliste juif et socialiste
+       heard: Moati, né à Tunis en 1946, il raconte son père, prénommé Serge lui aussi, journaliste juif et socialiste.
+j5       5.1 s  20.1 c/s  heard 1.00  seed 1
+       say:   Dans le film, un fils revient à Tunis en mille neuf cent soixante-seize, sur les traces de ses parents
+       heard: Dans le film, un fils revient à Tunis en 1976 sur les traces de ses parents.
+j6       9.3 s  20.8 c/s  heard 0.99  seed 1
+       say:   Une part relève de l'histoire. Les lois antijuives de Vichy atteignent la Tunisie en mille neuf cent quarante, et les troupes allemandes tiennent Tunis dès novembre mille neuf cent quarante-deux
+       heard: une part relève de l'histoire. Les lois anti-juifs de Vichy atteignent à la Tunisie en 1940. Et les troupes allemandes tiennent Tunis dès novembre 1942.
+j7       6.2 s  17.9 c/s  heard 0.99  seed 1
+       say:   Quelque cinq mille hommes juifs sont envoyés au travail forcé, selon le Mémorial de l'Holocauste des États-Unis
+       heard: Quelques 5 000 hommes juifs sont envoyés au travail forcé, selon le Mémorial de l'Holocauste des États-Unis.
+j8       8.0 s  17.1 c/s  heard 0.99  seed 1
+       say:   Une autre part relève de la mémoire familiale. Sa fille Nine se souvenait qu'il avait été déporté à Sachsenhausen, un camp près de Berlin
+       heard: Une autre part relève de la mémoire familiale. Safi Nine se souvenait qu'il avait été déporté à Sachsenhausen, un camp près de Berlin.
+j9       6.4 s  18.5 c/s  heard 1.00  seed 1
+       say:   Elle se rappelait qu'un Allemand avait pris Moati pour un nom italien, et une évasion, apparemment, grâce à un dentiste
+       heard: Elle se rappelait qu'un allemand avait pris Moati pour un nom italien et une évasion apparemment grâce à un dentiste.
+j10      5.9 s  18.8 c/s  heard 1.00  seed 1
+       say:   Mais elle ne pouvait pas fixer les dates. Le film fait ses propres choix, et rebaptise même la famille Boccara
+       heard: Mais elle ne pouvait pas fixer les dates. Le film fait ses propres choix et rebaptise même la famille BoccaRa.
+j11      9.4 s  15.5 c/s  heard 1.00  seed 1
+       say:   Le vrai Serge Moati meurt en mille neuf cent cinquante-sept. Son fils Henri, onze ans, part pour Paris, et prendra plus tard le prénom de son père
+       heard: Le vrai Serge Moati meurt en 1957. Son fils Henri, 11 ans, part pour Paris et prendra plus tard le prénom de son père.
+j12      7.5 s  16.0 c/s  heard 0.99  seed 1
+       say:   Fait par deux hommes nés à Tunis ou tout près, dans les années quarante, c'est l'histoire d'un fils, racontée de mémoire
+       heard: fait par deux hommes nés à Tunis ou tout près, dans les années 40, c'est l'histoire d'un fils, raconté de mémoire.
+w1       7.4 s  13.9 c/s  heard 0.98  seed 1
+       say:   Notre dernier film, Le Chant des mariées, a été écrit et réalisé par la cinéaste française Karin Albou
+       heard: Notre dernier film, Le Chant des mariés, a été écrit et réalisé par la cinéaste française Karine Albu.
+w2       5.3 s  18.8 c/s  heard 1.00  seed 1
+       say:   Film franco-tunisien, surtout en arabe et en français, il sort en France en décembre deux mille huit
+       heard: film franco-tunisien, surtout en arabe et en français, il sort en France en décembre 2008.
+w3       8.8 s  14.4 c/s  heard 0.94  seed 3
+       say:   À Tunis, en mille neuf cent quarante-deux, Nour, musulmane, et Myriam, juive, ont seize ans, sont voisines et meilleures amies
+       heard: A Tunis en 1942, Nour, musulmane, émiriam, juive, ont 16 ans, son voisine et meilleurs amis.
+w4       4.9 s  17.6 c/s  heard 0.99  seed 1
+       say:   Le fiancé de Nour, Khaled, travaille pour les Allemands, et lui interdit de voir Myriam
+       heard: Le fiancé de Nour Khaled travaille pour les Allemands et lui interdit de voir Miriam.
+w5       5.8 s  20.8 c/s  heard 0.98  seed 1
+       say:   Le front est loin. La guerre atteint les jeunes filles sous forme d'ordres, de tracts et de bombes, jusque dans leur rue
+       heard: Le front est loin. La guerre atteint les jeunes filles sous forme d'ordre, de tractes et de bombes, jusque dans le rue.
+w6       8.7 s  16.1 c/s  heard 0.98  seed 1
+       say:   Les jeunes filles sont inventées, comme Khaled et Raoul, le riche médecin plus âgé que Myriam doit épouser. Les ordres, eux, sont historiques
+       heard: Les jeunes filles sont inventées, comme Caled et Raoul, le riche médecin plus âgé que Miriam doit épouser. Les ordres, eux, sont historiques.
+w7       7.3 s  21.4 c/s  heard 1.00  seed 1
+       say:   Le six décembre mille neuf cent quarante-deux, les Allemands exigent des travailleurs juifs à Tunis, et quelque quatre mille hommes partent au travail forcé
+       heard: Le 6 décembre 1942, les Allemands exigent des travailleurs juifs à Tunis et quelques 4000 hommes partent au travail forcé.
+w8       9.1 s  18.1 c/s  heard 1.00  seed 1
+       say:   Le vingt-deux décembre, ils prélèvent vingt millions de francs sur la communauté juive. Un rapport américain de juin mille neuf cent quarante-trois consigne les deux
+       heard: Le 22 décembre, ils prélèvent 20 millions de francs sur la communauté juive. Un rapport américain de juin 1943 consigne les deux
+w9       7.0 s  17.9 c/s  heard 0.98  seed 1
+       say:   Dans le film, la mère de Myriam la marie parce qu'il faut de l'argent pour payer cette somme, et Raoul finit au travail forcé
+       heard: Dans le film, la mère de Miriam, la mari, parce qu'il faut de l'argent pour payer cette somme. Et Raoul finit au travail forcé.
+w10      7.5 s  16.1 c/s  heard 0.99  seed 1
+       say:   Dans le film, des tracts allemands flattent les musulmans et accusent les Juifs, comme le faisait la radio nazie en arabe
+       heard: Dans le film, des tracts allemands flatent les musulmans et accusent les juifs, comme le faisait la radio nazie en Arabes.
+w11      6.2 s  16.7 c/s  heard 1.00  seed 1
+       say:   Tourné plus de soixante ans après, il place l'amitié d'une musulmane et d'une juive au cœur de la guerre
+       heard: Tourné plus de 60 ans après, il place l'amitié d'une musulmane et d'une juive au coeur de la guerre.
+w12      7.4 s  19.6 c/s  heard 1.00  seed 1
+       say:   En décembre deux mille dix-sept, il a été projeté à Tunis pour les soixante-quinze ans de la rafle du neuf décembre mille neuf cent quarante-deux
+       heard: En décembre 2017, il a été projeté à Tunis pour les 75 ans de la rafle du 9 décembre 1942.
+r1       3.5 s  22.3 c/s  heard 0.99  seed 1
+       say:   Mettez les quatre films côte à côte, et vous verrez l'histoire changer de mains
+       heard: Mettez les quatre films côte à côte et vous verrez l'histoire changer de main.
+r2       7.5 s  18.4 c/s  heard 1.00  seed 2
+       say:   En mille neuf cent quarante-quatre, les armées racontent leur propre victoire, avec des voix britanniques et américaines, en pleine guerre
+       heard: En 1944, les armées racontent leur propre victoire, avec des voix britanniques et américaines en pleine guerre.
+r3       7.1 s  17.6 c/s  heard 1.00  seed 1
+       say:   En mille neuf cent soixante-dix, Hollywood raconte l'histoire d'un général américain, et l'Espagne joue le rôle de la Tunisie
+       heard: En 1970, Hollywood raconte l'histoire d'un général américain et l'Espagne joue le rôle de la Tunisie.
+r4       8.3 s  14.8 c/s  heard 1.00  seed 1
+       say:   En deux mille huit, un cinéaste tunisien et un film franco-tunisien se tournent vers les gens de Tunis, juifs et musulmans
+       heard: En 2008, un cinéaste tunisien et un film franco-tunisien se tournent vers les gens de Tunis, juifs et musulmans.
+r5       4.5 s  20.4 c/s  heard 0.98  seed 1
+       say:   La caméra passe de la ligne de front à une villa et à une cour, et des généraux aux voisins
+       heard: La caméra passe de la ligne de front à une villa et à une cour et des généraux voisins.
+r6       4.4 s  18.9 c/s  heard 1.00  seed 1
+       say:   Tout film de guerre est donc deux fois une source, sur la guerre, et sur son époque
+       heard: Tout film de guerre est donc deux fois une source sur la guerre et sur son époque.
+r7       8.1 s  14.8 c/s  heard 0.98  seed 1
+       say:   Les combats ont duré six mois, et leurs films couvrent plus de soixante ans. Regardez-les, et demandez-vous qui raconte
+       heard: Les combats ont duré six mois et leur film couvre plus de 60 ans. Regardez-les et demandez-vous qui raconte.
