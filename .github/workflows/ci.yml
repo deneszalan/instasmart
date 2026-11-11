@@ -23,4 +23,4 @@ jobs:
       - run: npm run typecheck
       - run: npm test
       - name: Build every app
-        run: npx vite build && npx vite build --mode lesefutter && npx vite build --mode roma && npx vite build --mode tunisia
+        run: npx vite build && npx vite build --mode lesefutter && npx vite build --mode roma && npx vite build --mode tunisia && npx vite build --mode hungary

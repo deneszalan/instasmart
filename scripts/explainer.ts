@@ -137,7 +137,7 @@ function writeSteps(file: string, steps: Step[], src?: string): string {
 }
 
 /** How each language writes numbers in a scene (Kit's fmt). */
-const LOCALES: Record<string, string> = { de: 'de-DE', fr: 'fr-FR' };
+const LOCALES: Record<string, string> = { de: 'de-DE', fr: 'fr-FR', hu: 'hu-HU' };
 
 /**
  * Point the post's translation into `lang` at a clip made in that language: its video slide (the one whose

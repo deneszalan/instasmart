@@ -29,7 +29,7 @@ jobs:
       - run: npm run content
       - run: npm run build
       # Tunisia 1943 is published from its own repository, deneszalan/Tun-WW, so this site stays under GitHub Pages' 1 GB.
-      - run: rm -rf dist/tunisia
+      - run: rm -rf dist/tunisia dist/hungary
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist

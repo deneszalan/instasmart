@@ -2,20 +2,24 @@ import { EDITION } from '../edition';
 import type { Lang } from '../../shared/translate.ts';
 import { de } from './de';
 import { fr } from './fr';
+import { hu } from './hu';
 
-const TABLES: Partial<Record<Lang, Record<string, string>>> = { de, fr };
+const TABLES: Partial<Record<Lang, Record<string, string>>> = { de, fr, hu };
 
-/** The languages a reader can pick in this edition, its own first. */
-export const LANGS: readonly Lang[] = [EDITION.lang, ...(Object.keys(EDITION.langs ?? {}) as Lang[])];
+/** The language the app opens in: the edition's own, or its `defaultLang`. */
+const OPENS_IN: Lang = EDITION.defaultLang ?? EDITION.lang;
+
+/** The languages a reader can pick in this edition, the one it opens in first. */
+export const LANGS: readonly Lang[] = [...new Set<Lang>([OPENS_IN, EDITION.lang, ...(Object.keys(EDITION.langs ?? {}) as Lang[])])];
 
 /** Each language's name in itself, as a language menu shows it. */
-export const LANG_NAMES: Record<Lang, string> = { en: 'English', de: 'Deutsch', fr: 'Français' };
+export const LANG_NAMES: Record<Lang, string> = { en: 'English', de: 'Deutsch', fr: 'Français', hu: 'Magyar' };
 
 const LANG_KEY = `${EDITION.storageKey}:lang`;
 
-/** The language to run in: a stored choice this edition offers, or the edition's own. */
+/** The language to run in: a stored choice this edition offers, or the one it opens in. */
 export function pickLang(stored: string | null): Lang {
-  return stored && (LANGS as readonly string[]).includes(stored) ? (stored as Lang) : EDITION.lang;
+  return stored && (LANGS as readonly string[]).includes(stored) ? (stored as Lang) : OPENS_IN;
 }
 
 function storedLang(): string | null {
@@ -30,7 +34,7 @@ function storedLang(): string | null {
 export const LANG: Lang = pickLang(storedLang());
 
 /** How dates and numbers are written in the reader's language (English: the browser's own way). */
-export const LOCALE: string | undefined = ({ en: undefined, de: 'de-DE', fr: 'fr-FR' } as const)[LANG];
+export const LOCALE: string | undefined = ({ en: undefined, de: 'de-DE', fr: 'fr-FR', hu: 'hu-HU' } as const)[LANG];
 
 /** The app's name in the reader's language. */
 export const APP_NAME: string = EDITION.langs?.[LANG]?.name ?? EDITION.name;

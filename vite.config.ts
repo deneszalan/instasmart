@@ -4,7 +4,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { defineConfig, type Plugin } from 'vitest/config';
 import react from '@vitejs/plugin-react';
-import { EDITIONS, editionForMode, type Edition } from './shared/editions.ts';
+import { EDITIONS, editionFace, editionForMode, type Edition } from './shared/editions.ts';
 import { readMp4 } from './shared/video.ts';
 
 const root = dirname(fileURLToPath(import.meta.url));
@@ -91,10 +91,10 @@ function offlineApp(edition: Edition, publicDir: string): Plugin {
       ),
     generateBundle(_, bundle) {
       const manifest = {
-        name: edition.name,
-        short_name: edition.name,
-        description: edition.description,
-        lang: edition.lang,
+        name: editionFace(edition).name,
+        short_name: editionFace(edition).name,
+        description: editionFace(edition).description,
+        lang: editionFace(edition).lang,
         start_url: './',
         scope: './',
         display: 'standalone',
@@ -127,9 +127,9 @@ function editionPage(edition: Edition): Plugin {
     name: 'edition-page',
     transformIndexHtml: (html) =>
       html
-        .replace('<html lang="en">', `<html lang="${edition.lang}">`)
-        .replace(/<title>.*<\/title>/, `<title>${edition.name}</title>`)
-        .replace(/(<meta name="description" content=")[^"]*"/, `$1${edition.description}"`),
+        .replace('<html lang="en">', `<html lang="${editionFace(edition).lang}">`)
+        .replace(/<title>.*<\/title>/, `<title>${editionFace(edition).name}</title>`)
+        .replace(/(<meta name="description" content=")[^"]*"/, `$1${editionFace(edition).description}"`),
   };
 }
 
