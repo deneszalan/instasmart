@@ -223,6 +223,7 @@ export const LABS = {
   'memmi-pillar-of-salt': 'Sort episodes of Albert Memmi’s novel La Statue de sel and of his own life onto two threads that run together and then part: told in the novel and lived by Memmi, in the novel only, or in his life only.',
   'north-africa-american-cemetery-carthage': 'Find graves on a schematic plan of the North Africa American Cemetery at Carthage, as a visiting family would: each practice record gives a plot (A to I), a row and a grave number.',
   'tunisian-victory-1944-film': 'A cutting room for the 1944 documentary Tunisian Victory: set the running time of the finished film and see how much of the 300,000 feet of film shot (as Variety reported) it keeps, at 90 feet of 35 mm film a minute.',
+  'rajk-show-trial-1949': 'Put the Rajk case in order on a time line from 1948 to 1956: Stalin\'s break with Tito, the show trial, the hanging, the regime\'s admission that the charges were false, the reburial and the revolution, and see how long the silence lasted.',
 } as const;
 
 export type LabId = keyof typeof LABS;

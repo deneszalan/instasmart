@@ -1,0 +1,169 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-rajk-show-trial-1949",
+  "field": "history",
+  "title": "In 1949 Hungary’s ex-interior minister confessed on the radio to crimes he never committed",
+  "emoji": "⚖️",
+  "body": "In September 1949 László Rajk, a veteran Communist who had fought in Spain and served as Hungary’s minister of the interior and then foreign minister, went on trial in Budapest. The People’s Court accused him of spying for the West and plotting with Yugoslavia’s leader Tito, whom Stalin had broken with a year earlier; the US embassy in Moscow called the trial the Kremlin’s most serious public move against “Titoism”. Broadcast on the radio, Rajk confessed to everything: every participant, judge and prosecutors included, recited texts learned by heart ([hvg.hu](https://hvg.hu/itthon/20091013_rajk_per_vadlott)). Witnesses later told the UN Special Committee that the accused had been tortured, and that János Kádár, then interior minister, had promised Rajk his life for a false statement. Rajk, Tibor Szőnyi and András Szalai were hanged on 15 October 1949, and secret side trials followed. The lesson was plain: **nobody, however loyal, was safe**. On 27 March 1956 Mátyás Rákosi admitted that the charges had been “fabricated”; on 6 October 1956 Rajk was reburied, seventeen days before the revolution.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How many years passed between László Rajk’s execution in 1949 and the regime’s admission that the charges were false?",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "answer": 6,
+      "unit": "years",
+      "explanation": "About six and a half: Rajk was hanged on 15 October 1949, and on 27 March 1956 Mátyás Rákosi admitted the charges had been fabricated."
+    },
+    {
+      "type": "video",
+      "src": "rajk.mp4",
+      "poster": "rajk.jpg",
+      "alt": "Animation on a dark desk: a typed police file on László Rajk with a red ARRESTED stamp, a schematic of Moscow’s break with Belgrade, a court drawn as plain shapes with a radio microphone, a script of rehearsed answers, the verdict of 1949, and the stamp FABRICATED of 1956.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Darkling” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "rajk-show-trial-1949",
+      "prompt": "Tap the events of the Rajk case in the order they happened, from Stalin’s break with Tito to the revolution.",
+      "takeaway": "The lie stood for six and a half years: Rajk was hanged in October 1949, and only in March 1956 did Rákosi admit the charges were false. Seven months later came the reburial, then the revolution."
+    },
+    {
+      "type": "timeline",
+      "heading": "The Rajk case",
+      "events": [
+        {
+          "when": "1948",
+          "text": "Stalin breaks with Yugoslavia’s Tito"
+        },
+        {
+          "when": "Sept 1949",
+          "text": "Rajk’s trial, broadcast on the radio"
+        },
+        {
+          "when": "15 Oct 1949",
+          "text": "Rajk, Szőnyi and Szalai are hanged"
+        },
+        {
+          "when": "27 March 1956",
+          "text": "Charges declared fabricated"
+        },
+        {
+          "when": "6 Oct 1956",
+          "text": "Rajk is reburied in Budapest"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "How a show trial worked",
+      "text": "The charges were invented and the confessions forced through torture. In court everyone, judge and prosecutors too, recited texts learned by heart. Broadcast across the country, the trial spoke to every listener: if a leading Communist could be made to call himself a traitor, anyone could be next."
+    },
+    {
+      "type": "quote",
+      "text": "Kremlin’s most determined and serious public effort since emergence of Titoism.",
+      "attribution": "US embassy in Moscow on the Rajk trial, 26 September 1949"
+    },
+    {
+      "type": "quiz",
+      "question": "Who, witnesses told the UN in 1957, urged László Rajk to make a false confession and promised he would live?",
+      "options": [
+        "János Kádár",
+        "Imre Nagy",
+        "Josip Broz Tito",
+        "His defence lawyer"
+      ],
+      "answer": 0,
+      "explanation": "János Kádár, who had followed Rajk as interior minister. The UN Special Committee was also told he was one of the four who signed the order for Rajk’s execution."
+    }
+  ],
+  "tags": [
+    "rajk",
+    "showtrial",
+    "1949",
+    "rakosi",
+    "kadar",
+    "tito"
+  ],
+  "source": {
+    "label": "UN Special Committee on the Problem of Hungary: Report (1957)",
+    "url": "https://mek.oszk.hu/01200/01274/"
+  },
+  "theme": {
+    "gradient": [
+      "#1f1b18",
+      "#5a2a22"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-11T23:27:25Z"
+}

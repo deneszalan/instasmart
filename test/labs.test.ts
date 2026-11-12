@@ -219,6 +219,7 @@ import { dayOf as occDay, EVENTS as OCC_EVENTS, eventAt as occEventAt, FREED as 
 import { EPISODES as MEMMI_EPISODES, score as memmiScore } from '../src/labs/literature/memmi-pillar-of-salt';
 import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plotAt as cemPlotAt, plotRect as cemPlotRect, zoomBox as cemZoom, PLOTS as CEM_PLOTS, RECORDS as CEM_RECORDS, ROWS as CEM_ROWS, GRAVES as CEM_GRAVES } from '../src/labs/earth/north-africa-american-cemetery-carthage';
 import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, FT_PER_MIN as TV_FT_PER_MIN, hoursOf as tvHours, ratio as tvRatio, SHOT_FT as TV_SHOT } from '../src/labs/art/tunisian-victory-1944-film';
+import { done as rajkDone, EVENTS as RAJK_EVENTS, gap as rajkGap, nextExpected as rajkNext, SHUFFLED as RAJK_SHUFFLED, yearOf as rajkYear } from '../src/labs/history/rajk-show-trial-1949';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2301,5 +2302,18 @@ describe('lab maths', () => {
     expect(Math.round(tvRatio(TV_FINAL_FT))).toBe(44);
     expect(tvHours(TV_SHOT)).toBeCloseTo(55.6, 1);
     expect(tvRatio(tvFeet(10))).toBeGreaterThan(tvRatio(tvFeet(120)));
+  });
+  it('Rajk time line: events in date order, six and a half years from the hanging to the admission, 17 days from the reburial to the revolution', () => {
+    const ys = RAJK_EVENTS.map(rajkYear);
+    expect([...ys].sort((a, b) => a - b)).toEqual(ys);
+    expect([...RAJK_SHUFFLED].sort()).toEqual(RAJK_EVENTS.map((e) => e.id).sort());
+    const by = (id: string) => RAJK_EVENTS.find((e) => e.id === id)!;
+    expect(rajkGap(by('hanged'), by('admitted'))).toEqual({ years: 6, months: 5 });
+    expect(rajkGap(by('trial'), by('hanged'))).toEqual({ years: 0, months: 0 });
+    expect(Math.round((Date.UTC(1956, 9, 23) - Date.UTC(1956, 9, 6)) / 864e5)).toBe(17);
+    expect(rajkNext([])).toBe('split');
+    expect(rajkNext(['split', 'trial'])).toBe('hanged');
+    expect(rajkDone(RAJK_EVENTS.map((e) => e.id))).toBe(true);
+    expect(rajkDone(['split'])).toBe(false);
   });
 });
