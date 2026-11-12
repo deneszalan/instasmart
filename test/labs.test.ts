@@ -222,6 +222,7 @@ import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, 
 import { done as rajkDone, EVENTS as RAJK_EVENTS, gap as rajkGap, nextExpected as rajkNext, SHUFFLED as RAJK_SHUFFLED, yearOf as rajkYear } from '../src/labs/history/rajk-show-trial-1949';
 import { AUSTRIA_LEFT as SOV_AUSTRIA_LEFT, AUSTRIA_TREATY as SOV_AUSTRIA_TREATY, bases as sovBases, inAustria as sovInAustria, LAST as SOV_LAST, monthIndex as sovMonth, reached as sovReached, TREATY as SOV_TREATY, WARSAW as SOV_WARSAW } from '../src/labs/philosophy/soviet-troops-and-national-symbols';
 import { cell as octCell, DAY as OCT_DAY, dayAt as octDayAt, daysBetween as octDays, DECK as OCT_DECK, done as octDone, fits as octFits } from '../src/labs/politics/rajk-reburial-and-the-16-points';
+import { DAYS as WEEK_DAYS, firstFooled as weekFirstFooled, fooled as weekFooled } from '../src/labs/engineering/nagy-government-and-neutrality';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2343,5 +2344,13 @@ describe('lab maths', () => {
     expect(octFits('points', 23)).toBe(false);
     expect(octDone(OCT_DECK)).toBe(true);
     expect(octDone(OCT_DECK.slice(1))).toBe(false);
+  });
+  it('second week of 1956: eight days; Budapest expected withdrawal while Moscow had decided otherwise only on 31 October', () => {
+    expect(WEEK_DAYS.length).toBe(8);
+    expect(WEEK_DAYS[0]).toMatchObject({ m: 10, d: 28 });
+    expect(WEEK_DAYS[7]).toMatchObject({ m: 11, d: 4 });
+    expect(weekFirstFooled()).toBe(3);
+    expect(WEEK_DAYS[weekFirstFooled()]).toMatchObject({ m: 10, d: 31 });
+    expect(WEEK_DAYS.filter((_, i) => weekFooled(i)).length).toBe(1);
   });
 });

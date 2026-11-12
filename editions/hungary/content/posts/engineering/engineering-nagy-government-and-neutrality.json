@@ -1,0 +1,176 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-nagy-government-and-neutrality",
+  "field": "engineering",
+  "title": "Hungary declared itself neutral on 1 November 1956, a day after Moscow decided to crush it",
+  "emoji": "🕊️",
+  "body": "On 28 October 1956, after five days of fighting, Prime Minister Imre Nagy ordered a ceasefire and told the country on the radio that the uprising was no “counter-revolution” but “a great national and democratic movement”. The ÁVH security police was dissolved on 29 October; on 30 October one-party rule ended, other parties joined the cabinet, free elections were promised, Soviet tanks began to leave Budapest, and revolutionary and workers’ councils ran towns and factories. Cardinal József Mindszenty, a prisoner for years, was freed. That day, too, insurgents took the Communist Party’s Budapest offices on Köztársaság tér, and some defenders, many of them young conscripts, were lynched by the crowd. Moscow’s declaration of 30 October promised respect for its allies’ sovereignty, but on 31 October Nikita Khrushchev told the Soviet leaders the troops should not leave ([meeting notes](https://nsarchive2.gwu.edu/NSAEBB/NSAEBB76/doc6.pdf)). When new Soviet divisions crossed the border on 1 November, Nagy declared Hungary **neutral**, out of the Warsaw Pact, and appealed to the UN. Three days later the Soviet army attacked.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Prime Minister Imre Nagy declared Hungary neutral on 1 November 1956. How many days until the Soviet attack?",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "answer": 3,
+      "unit": "days",
+      "explanation": "Three: neutrality was declared on the evening of 1 November, and the Soviet attack on Budapest began at 4.15 a.m. on 4 November."
+    },
+    {
+      "type": "video",
+      "src": "week.mp4",
+      "poster": "week.jpg",
+      "alt": "Animation on deep teal: a strip of eight days, 28 October to 4 November 1956, along the top; a radio, a struck-out ÁVH badge, a cabinet table, councils on a schematic map, Moscow’s declaration, a lane for Moscow’s secret decision, Soviet arrows at the border, the word NEUTRAL, four parties.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation",
+      "music": "“Prelude and Action” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "nagy-government-and-neutrality",
+      "prompt": "Step through the days from 28 October to 4 November. Find the day when Budapest and Moscow expected opposite things.",
+      "takeaway": "31 October: Budapest watched Soviet tanks leave while, in secret, the Presidium decided they would stay and crush the revolution. Nagy learned of new troops the next day."
+    },
+    {
+      "type": "timeline",
+      "heading": "The week of hope",
+      "events": [
+        {
+          "when": "28 Oct",
+          "text": "Imre Nagy orders a ceasefire"
+        },
+        {
+          "when": "30 Oct",
+          "text": "One-party rule ends"
+        },
+        {
+          "when": "31 Oct",
+          "text": "Moscow decides, in secret, to crush it"
+        },
+        {
+          "when": "1 Nov",
+          "text": "Hungary declares neutrality"
+        },
+        {
+          "when": "4 Nov",
+          "text": "The Soviet army attacks"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "31 October 1956",
+      "left": {
+        "label": "Budapest, in public",
+        "text": "Soviet tanks leave the city. Nagy tells a crowd: “we are living in the first days of our sovereignty and independence”."
+      },
+      "right": {
+        "label": "Moscow, in secret",
+        "text": "Nikita Khrushchev tells the Soviet leaders the troops should stay and “restore order”, under a new government."
+      }
+    },
+    {
+      "type": "text",
+      "heading": "Köztársaság tér, 30 October",
+      "text": "A crowd besieged the Communist Party’s Budapest offices, where rumour had it prisoners were held. After it fell, defenders, among them young conscript guards, were shot and some lynched; attackers died too. The Kádár regime later held up the lynchings as proof of a “counter-revolution”."
+    },
+    {
+      "type": "quiz",
+      "question": "On 31 October 1956, what did Soviet leader Nikita Khrushchev tell the Presidium about the Soviet troops in Hungary?",
+      "options": [
+        "They should not be withdrawn",
+        "They should leave at once",
+        "They should join Nagy’s army",
+        "They should move to Poland"
+      ],
+      "answer": 0,
+      "explanation": "“We should reexamine our assessment and should not withdraw our troops from Hungary and Budapest,” the notes record. A new government was to be set up; the attack came on 4 November."
+    }
+  ],
+  "tags": [
+    "neutrality",
+    "imrenagy",
+    "warsawpact",
+    "khrushchev",
+    "mindszenty",
+    "1956"
+  ],
+  "source": {
+    "label": "UN Special Committee on the Problem of Hungary: Report (1957)",
+    "url": "https://mek.oszk.hu/01200/01274/"
+  },
+  "theme": {
+    "gradient": [
+      "#0f1f1d",
+      "#5a4214"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-12T00:33:15Z"
+}
