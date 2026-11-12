@@ -224,6 +224,7 @@ export const LABS = {
   'north-africa-american-cemetery-carthage': 'Find graves on a schematic plan of the North Africa American Cemetery at Carthage, as a visiting family would: each practice record gives a plot (A to I), a row and a grave number.',
   'tunisian-victory-1944-film': 'A cutting room for the 1944 documentary Tunisian Victory: set the running time of the finished film and see how much of the 300,000 feet of film shot (as Variety reported) it keeps, at 90 feet of 35 mm film a minute.',
   '1945-election-smallholders-win': 'Share out the 18 posts of Hungary’s coalition cabinet of November 1945 in proportion to the parties’ seats after the free election, then see the real cabinet: fewer posts for the Smallholders, who had won 245 of 409 seats, and the Interior Ministry, with the police, for a Communist.',
+  'avh-terror-and-recsk': 'A toy model of the fear the ÁVH spread: set how many people you speak to openly and what share might be informers, and see the chance that at least one of them reports you, as witnesses described to the UN in 1957.',
 } as const;
 
 export type LabId = keyof typeof LABS;

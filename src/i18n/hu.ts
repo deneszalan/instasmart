@@ -12,4 +12,13 @@ export const hu: Record<string, string> = {
   'Your cabinet of 18': 'A te 18 tagú kormányod',
   '{n} cabinet posts': '{n} tárca',
   'Smallholders: seats {a}, posts {b}': 'Kisgazdák: mandátum {a}, tárca {b}',
+  'you speak': 'te beszélsz',
+  'Toy model: illustrative shares, not historical counts': 'Játékmodell: szemléltető arányok, nem történeti adatok',
+  'You speak openly to {n} people; if one in {k} informs, the chance that at least one of them does is {p}': '{n} emberrel beszélsz nyíltan; ha minden {k}. ember besúgó, {p} az esély, hogy legalább egyikük az',
+  'People you speak to openly': 'Akikkel nyíltan beszélsz',
+  '{n} people you trust': '{n} bizalmas',
+  'One informer in every': 'Egy besúgó ennyi emberből',
+  '1 informer in {n}': 'minden {n}.',
+  'At least one informs': 'Legalább egy besúgó',
+  'Informers to expect': 'Várható besúgók',
 };

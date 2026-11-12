@@ -1,0 +1,164 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "philosophy-avh-terror-and-recsk",
+  "field": "philosophy",
+  "title": "Without any trial, Hungary’s secret police sent people to break stone at Recsk, 1950–53",
+  "emoji": "🔦",
+  "body": "From 1950 the State Protection Authority (ÁVH), the political police of Mátyás Rákosi’s dictatorship, answered only to the government. Its headquarters at 60 Andrássy út in Budapest had been the Arrow Cross party’s. Witnesses told the [UN Special Committee](https://mek.oszk.hu/01200/01274/) in 1957 that its informers sat in every office and factory, “so that no one knew, even when talking to friends, where his words would be repeated half an hour later”; a 1952 law even punished shunning an informer. Prisoners were beaten, starved and threatened until they confessed. Thousands were held without any trial: at **Recsk**, a secret camp in the Mátra hills, about 1,300 men at a time broke stone in a quarry from 1950 to 1953, by former prisoners’ counts, and from June 1950 whole families were deported to 12 forced-labour camps on the Hortobágy plain, from which official records counted 7,281 people released in 1953. Internment was abolished on 26 July 1953, but the fear stayed. In October 1956 the crowds demanded that the ÁVH be disbanded, and some of its men were lynched: hatred of the ÁVH was one of the reasons the revolution broke out.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "A 1952 Hungarian law punished anyone who shunned an informer of the ÁVH secret police. Up to how many months in prison?",
+      "min": 0,
+      "max": 36,
+      "step": 1,
+      "answer": 6,
+      "unit": "months",
+      "explanation": "Up to six months, by Law II of 1952, as the UN Special Committee reported in 1957: even avoiding an informer could be a crime."
+    },
+    {
+      "type": "video",
+      "src": "avh.mp4",
+      "poster": "avh.jpg",
+      "alt": "Animation on a night-blue card: the ÁVH building at 60 Andrássy út, lit windows of informers in flats and a factory, a cell door, a schematic map of internment camps, the Recsk quarry behind wire, deportations to 12 Hortobágy camps, the decree of July 1953, a crowd with a banner in October 1956.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Oppressive Gloom” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "avh-terror-and-recsk",
+      "prompt": "Pick one informer in 50, then find how many people you can speak to openly before it is more likely than not that one of them informs.",
+      "takeaway": "35 people. Even if only 1 in 50 informed, a circle that size more likely than not held one: fear spread far beyond the informers. A toy model, with made-up shares."
+    },
+    {
+      "type": "quote",
+      "text": "No one knew, even when talking to friends, where his words would be repeated half an hour later.",
+      "attribution": "UN Special Committee on Hungary, 1957 report, from witnesses’ accounts"
+    },
+    {
+      "type": "timeline",
+      "heading": "The ÁVH and its camps",
+      "events": [
+        {
+          "when": "1945",
+          "text": "Political police move into 60 Andrássy út"
+        },
+        {
+          "when": "1950",
+          "text": "Recsk camp opens; the ÁVH answers to the government"
+        },
+        {
+          "when": "June 1950",
+          "text": "Families deported to the Hortobágy"
+        },
+        {
+          "when": "26 July 1953",
+          "text": "Internment abolished"
+        },
+        {
+          "when": "Oct 1956",
+          "text": "Crowds demand: disband the ÁVH"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "On what basis were most prisoners held at the Recsk labour camp in Hungary in 1950–53?",
+      "options": [
+        "No trial: they were interned",
+        "A prison sentence from a court",
+        "Their military service",
+        "Unpaid taxes"
+      ],
+      "answer": 0,
+      "explanation": "The ÁVH interned them without any trial. Most were released by mid-September 1953, after internment was abolished; some were then put on trial and sentenced."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "avh",
+    "recsk",
+    "terror",
+    "internment",
+    "rakosi"
+  ],
+  "source": {
+    "label": "UN: Report of the Special Committee on the Problem of Hungary (1957), Hungarian Electronic Library",
+    "url": "https://mek.oszk.hu/01200/01274/"
+  },
+  "theme": {
+    "gradient": [
+      "#161a22",
+      "#40261f"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-11T23:50:00Z"
+}

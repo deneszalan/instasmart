@@ -3033,4 +3033,13 @@ export const de: Record<string, string> = {
   'Your cabinet of 18': 'Dein Kabinett aus 18',
   '{n} cabinet posts': '{n} Ministerposten',
   'Smallholders: seats {a}, posts {b}': 'Kleinlandwirte: Sitze {a}, Posten {b}',
+  'you speak': 'du sprichst',
+  'Toy model: illustrative shares, not historical counts': 'Spielmodell: Anteile zur Veranschaulichung, keine historischen Zahlen',
+  'You speak openly to {n} people; if one in {k} informs, the chance that at least one of them does is {p}': 'Du sprichst offen mit {n} Menschen; wenn einer von {k} Spitzel ist, ist mit {p} Wahrscheinlichkeit mindestens einer darunter',
+  'People you speak to openly': 'Menschen, mit denen du offen sprichst',
+  '{n} people you trust': '{n} Vertraute',
+  'One informer in every': 'Ein Spitzel unter je',
+  '1 informer in {n}': '1 Spitzel unter {n}',
+  'At least one informs': 'Mindestens einer spitzelt',
+  'Informers to expect': 'Erwartete Spitzel',
 };

@@ -220,6 +220,7 @@ import { EPISODES as MEMMI_EPISODES, score as memmiScore } from '../src/labs/lit
 import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plotAt as cemPlotAt, plotRect as cemPlotRect, zoomBox as cemZoom, PLOTS as CEM_PLOTS, RECORDS as CEM_RECORDS, ROWS as CEM_ROWS, GRAVES as CEM_GRAVES } from '../src/labs/earth/north-africa-american-cemetery-carthage';
 import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, FT_PER_MIN as TV_FT_PER_MIN, hoursOf as tvHours, ratio as tvRatio, SHOT_FT as TV_SHOT } from '../src/labs/art/tunisian-victory-1944-film';
 import { ACTUAL as E45_ACTUAL, SEATS as E45_SEATS, TOTAL_SEATS as E45_TOTAL, cabinet as e45Cabinet, fairShare as e45Fair, proportional as e45Proportional } from '../src/labs/history/1945-election-smallholders-win';
+import { atLeastOne as avhAtLeastOne, circleForEvenOdds as avhEven, reached as avhReached, GOAL_SHARE as AVH_GOAL } from '../src/labs/philosophy/avh-terror-and-recsk';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2312,5 +2313,15 @@ describe('lab maths', () => {
     expect(e45Proportional(e45Cabinet(E45_ACTUAL.szdp, E45_ACTUAL.mkp, E45_ACTUAL.npp))).toBe(false);
     expect(e45Cabinet(4, 4, 1).fkgp).toBe(9);
     expect(e45Fair({ fkgp: 1, szdp: 1, mkp: 1, npp: 1, pdp: 0 }, 4)).toEqual({ fkgp: 1, szdp: 1, mkp: 1, npp: 1, pdp: 0 });
+  });
+  it('ÁVH informers toy model: with one informer in 50, 35 confidants make it more likely than not that one informs', () => {
+    expect(avhAtLeastOne(1, 10)).toBeCloseTo(0.1, 10);
+    expect(avhAtLeastOne(0, 10)).toBe(0);
+    expect(avhEven(50)).toBe(35);
+    expect(avhEven(10)).toBe(7);
+    expect(avhEven(25)).toBe(17);
+    expect(avhReached(35, AVH_GOAL)).toBe(true);
+    expect(avhReached(34, AVH_GOAL)).toBe(false);
+    expect(avhReached(40, 10)).toBe(false);
   });
 });
