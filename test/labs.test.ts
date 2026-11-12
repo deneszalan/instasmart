@@ -224,6 +224,7 @@ import { AUSTRIA_LEFT as SOV_AUSTRIA_LEFT, AUSTRIA_TREATY as SOV_AUSTRIA_TREATY,
 import { cell as octCell, DAY as OCT_DAY, dayAt as octDayAt, daysBetween as octDays, DECK as OCT_DECK, done as octDone, fits as octFits } from '../src/labs/politics/rajk-reburial-and-the-16-points';
 import { DAYS as WEEK_DAYS, firstFooled as weekFirstFooled, fooled as weekFooled } from '../src/labs/engineering/nagy-government-and-neutrality';
 import { CARDS as EMB_CARDS, done as embDone, score as embScore, tally as embTally } from '../src/labs/earth/nagy-yugoslav-embassy-abduction';
+import { DATES as ANN_DATES, done as annDone, PAIRS as ANN_PAIRS, pairKey as annKey, sameDay as annSameDay, yearsApart as annYears } from '../src/labs/economics/reburial-16-june-1989';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2363,5 +2364,14 @@ describe('lab maths', () => {
     expect(embScore(right)).toBe(6);
     expect(embDone(right)).toBe(true);
     expect(embDone({})).toBe(false);
+  });
+  it('anniversaries: exactly two pairs of dates share a day, 31 and 33 years apart', () => {
+    const ids = ANN_DATES.map((x) => x.id);
+    const pairs = ids.flatMap((a, i) => ids.slice(i + 1).filter((b) => annSameDay(a, b)).map((b) => annKey(a, b)));
+    expect(pairs.sort()).toEqual(ANN_PAIRS.map(([a, b]) => annKey(a, b)).sort());
+    expect(annYears('executed', 'reburial')).toBe(31);
+    expect(annYears('revolution', 'republic')).toBe(33);
+    expect(annDone(pairs)).toBe(true);
+    expect(annDone(pairs.slice(1))).toBe(false);
   });
 });

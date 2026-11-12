@@ -228,6 +228,7 @@ export const LABS = {
   'rajk-reburial-and-the-16-points': 'Pin the road to 23 October 1956 on a wall calendar of October: the reburial of László Rajk, Imre Nagy back in the party, MEFESZ in Szeged, the Polish October, compulsory Russian dropped, the students\' 16 points and the march to the Bem statue.',
   'nagy-government-and-neutrality': 'Step through the revolution\'s second week, 28 October to 4 November 1956, in two lanes: what Budapest knew in public and what the Soviet leadership decided in secret, and find the day the two parted.',
   'nagy-yugoslav-embassy-abduction': 'Read a claim against the record: Kádár\'s government said Imre Nagy\'s group left the Yugoslav embassy for Romania at its own request. Check facts from the UN report of 1957 one by one: does each support the claim, contradict it, or say nothing about it?',
+  'reburial-16-june-1989': 'Six dates from 1956 to 1989: find the two pairs that fall on the same day of the year, the executions of 16 June 1958 and the reburial of 16 June 1989, and the revolution of 23 October 1956 and the Republic proclaimed on 23 October 1989.',
 } as const;
 
 export type LabId = keyof typeof LABS;
