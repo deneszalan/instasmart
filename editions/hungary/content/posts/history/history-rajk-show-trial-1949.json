@@ -8,7 +8,7 @@
   "slides": [
     {
       "type": "estimate",
-      "question": "How many years passed between László Rajk’s execution in 1949 and the regime’s admission that the charges were false?",
+      "question": "How many years passed between ex-minister László Rajk’s execution in 1949 and the admission that the charges were false?",
       "min": 0,
       "max": 20,
       "step": 1,
