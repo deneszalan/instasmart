@@ -221,6 +221,7 @@ import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plot
 import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, FT_PER_MIN as TV_FT_PER_MIN, hoursOf as tvHours, ratio as tvRatio, SHOT_FT as TV_SHOT } from '../src/labs/art/tunisian-victory-1944-film';
 import { ACTUAL as E45_ACTUAL, SEATS as E45_SEATS, TOTAL_SEATS as E45_TOTAL, cabinet as e45Cabinet, fairShare as e45Fair, proportional as e45Proportional } from '../src/labs/history/1945-election-smallholders-win';
 import { atLeastOne as avhAtLeastOne, circleForEvenOdds as avhEven, reached as avhReached, GOAL_SHARE as AVH_GOAL } from '../src/labs/philosophy/avh-terror-and-recsk';
+import { ORDER as OCT23_ORDER, PLACES as OCT23_PLACES, complete as oct23Complete, placeAt as oct23PlaceAt, project as oct23Project } from '../src/labs/engineering/23-october-statue-and-radio';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2323,5 +2324,19 @@ describe('lab maths', () => {
     expect(avhReached(35, AVH_GOAL)).toBe(true);
     expect(avhReached(34, AVH_GOAL)).toBe(false);
     expect(avhReached(40, 10)).toBe(false);
+  });
+  it('23 October map: every place is found by a tap on its dot, Buda lies west of Pest, and the day runs from the Petőfi statue to the Stalin statue', () => {
+    for (const [w, h] of [[330, 260], [412, 300]]) {
+      for (const id of OCT23_ORDER) {
+        const [x, y] = oct23Project(...OCT23_PLACES[id], w, h);
+        expect(oct23PlaceAt(x + 3, y - 3, w, h)).toBe(id);
+        expect(x).toBeGreaterThan(0); expect(x).toBeLessThan(w); expect(y).toBeGreaterThan(0); expect(y).toBeLessThan(h);
+      }
+      expect(oct23Project(...OCT23_PLACES.bem, w, h)[0]).toBeLessThan(oct23Project(...OCT23_PLACES.parl, w, h)[0]);
+      expect(oct23PlaceAt(1, 1, w, h)).toBeNull();
+    }
+    expect(OCT23_ORDER[0]).toBe('petofi');
+    expect(oct23Complete(OCT23_ORDER)).toBe(true);
+    expect(oct23Complete(['bem', 'petofi', 'parl', 'radio', 'stalin'])).toBe(false);
   });
 });

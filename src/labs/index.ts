@@ -225,4 +225,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'tunisian-victory-1944-film': lazy(() => import('./art/tunisian-victory-1944-film')),
   '1945-election-smallholders-win': lazy(() => import('./history/1945-election-smallholders-win')),
   'avh-terror-and-recsk': lazy(() => import('./philosophy/avh-terror-and-recsk')),
+  '23-october-statue-and-radio': lazy(() => import('./engineering/23-october-statue-and-radio')),
 };
