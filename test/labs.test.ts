@@ -221,6 +221,7 @@ import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plot
 import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, FT_PER_MIN as TV_FT_PER_MIN, hoursOf as tvHours, ratio as tvRatio, SHOT_FT as TV_SHOT } from '../src/labs/art/tunisian-victory-1944-film';
 import { ACTUAL as E45_ACTUAL, SEATS as E45_SEATS, TOTAL_SEATS as E45_TOTAL, cabinet as e45Cabinet, fairShare as e45Fair, proportional as e45Proportional } from '../src/labs/history/1945-election-smallholders-win';
 import { atLeastOne as avhAtLeastOne, circleForEvenOdds as avhEven, reached as avhReached, GOAL_SHARE as AVH_GOAL } from '../src/labs/philosophy/avh-terror-and-recsk';
+import { EVENTS as NAGY53_EVENTS, ORDER as NAGY53_ORDER, complete as nagy53Complete, eventDate as nagy53Date, isNext as nagy53Next } from '../src/labs/politics/imre-nagy-new-course-1953';
 import { ORDER as OCT23_ORDER, PLACES as OCT23_PLACES, complete as oct23Complete, placeAt as oct23PlaceAt, project as oct23Project } from '../src/labs/engineering/23-october-statue-and-radio';
 
 describe('labs', () => {
@@ -2324,6 +2325,17 @@ describe('lab maths', () => {
     expect(avhReached(35, AVH_GOAL)).toBe(true);
     expect(avhReached(34, AVH_GOAL)).toBe(false);
     expect(avhReached(40, 10)).toBe(false);
+  });
+  it('Nagy’s new course: six events in date order, from Stalin’s death to the expulsion, with dates in the reader’s language', () => {
+    expect(NAGY53_ORDER).toEqual(['stalin', 'moscow', 'speech', 'amnesty', 'condemned', 'expelled']);
+    expect(NAGY53_EVENTS).toHaveLength(6);
+    expect(nagy53Next([], 'stalin')).toBe(true);
+    expect(nagy53Next(['stalin'], 'speech')).toBe(false);
+    expect(nagy53Complete(NAGY53_ORDER)).toBe(true);
+    expect(nagy53Complete(['moscow', 'stalin', 'speech', 'amnesty', 'condemned', 'expelled'])).toBe(false);
+    expect(nagy53Date('speech', 'en-GB')).toBe('4 July 1953');
+    expect(nagy53Date('speech', 'hu-HU')).toBe('1953. július 4.');
+    expect(nagy53Date('moscow', 'en-GB')).toBe('June 1953');
   });
   it('23 October map: every place is found by a tap on its dot, Buda lies west of Pest, and the day runs from the Petőfi statue to the Stalin statue', () => {
     for (const [w, h] of [[330, 260], [412, 300]]) {

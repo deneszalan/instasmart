@@ -1,0 +1,70 @@
+{
+  "id": "politics-imre-nagy-new-course-1953",
+  "title": "Nagy Imre 1953-ban feloszlatta az internálótáborokat, de a párt Rákosi kezében maradt",
+  "body": "Sztálin 1953. március 5-i halála után moszkvai utódai nyugalmat akartak Magyarországon, ahol a bérből élők reálbére 1949 óta egyötödével csökkent. Júniusban Moszkvába rendelték a magyar vezetőket, elítélték Rákosi Mátyás politikáját, és **Nagy Imrét**, az 1945-ös földreform végrehajtóját tették meg miniszterelnöknek. Nagy 1953. július 4-én az Országgyűlésben meghirdette az „új szakaszt”: feloszlatták az internálótáborokat, véget ért a kitelepítés, amnesztia szabadított sokakat; a pénz a nehézipartól az élelmiszerre, a lakásépítésre és a fogyasztási cikkekre került; a parasztok kiléphettek a termelőszövetkezetekből, és kevesebbet kellett beszolgáltatniuk. A pártjelentések szerint a falvakban örömtüzeket gyújtottak, és 1954-re a fogyasztás mintegy egyötödével nőtt 1950-hez képest – foglalja össze az [1956-os Intézet](https://mek.oszk.hu/01900/01937/html/ora1/ora1.htm). Rákosi azonban a párt első titkára maradt, a párt kezében maradt a sajtó, a rádió és az apparátus, ő pedig Moszkvában azzal érvelt, hogy az új szakasz a szocializmust veszélyezteti. 1955-ben Moszkva Nagy ellen fordult: márciusban a párt elítélte, áprilisban leváltották, decemberben kizárták. Neve a reformot jelentette.",
+  "slides": [
+    {
+      "question": "1953-ra mennyivel csökkent a bérből élők reálbére Magyarországon 1949-hez képest?",
+      "explanation": "Mintegy 20%-kal, az 1956-os Intézet szerint. Az összeomlás szélén álló gazdaság miatt Moszkva nyugalmat és új miniszterelnököt akart."
+    },
+    {
+      "alt": "Animáció éjkék, borostyánszínben derengő alapon: 1953. március 5. naptárlapja, vonal Budapest és Moszkva között, zuhanó reálbérek, Nagy Imre, vázlatos Országház és az új szakasz intézkedései, örömtüzek a falvakban, majd két oszlop, kormány és párt, és Nagy bukásának lépései 1955-ben.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "newcourse-hu.mp4",
+      "poster": "newcourse-hu.jpg"
+    },
+    {
+      "prompt": "Koppints Nagy Imre első kormányának hat eseményére abban a sorrendben, ahogy történtek, és nézd, ahogy az idővonalra kerülnek.",
+      "takeaway": "Alig két év remény: az 1953. július 4-i új szakasztól az 1955. áprilisi bukásig. Rákosi, aki a párt élén maradt, visszanyerte Moszkva támogatását."
+    },
+    {
+      "heading": "Két hatalmi központ, 1953–55",
+      "left": {
+        "label": "Kormány: Nagy Imre",
+        "text": "Feloszlatta a táborokat, véget vetett a kitelepítésnek, amnesztia, kevesebb pénz a nehéziparnak, szabad kilépés a téeszből."
+      },
+      "right": {
+        "label": "Párt: Rákosi Mátyás",
+        "text": "Első titkár maradt. A párt kezében volt a sajtó, a rádió és az apparátus, és minden reformot lassított."
+      }
+    },
+    {
+      "heading": "Nagy Imre első kormánya",
+      "events": [
+        {
+          "when": "1953. márc. 5.",
+          "text": "Meghal Sztálin"
+        },
+        {
+          "when": "1953. júl. 4.",
+          "text": "Nagy meghirdeti az új szakaszt"
+        },
+        {
+          "when": "1953. júl. 26.",
+          "text": "Amnesztia, véget ér az internálás"
+        },
+        {
+          "when": "1955. ápr.",
+          "text": "Leváltják a miniszterelnököt"
+        },
+        {
+          "when": "1955. dec.",
+          "text": "Kizárják a pártból"
+        }
+      ]
+    },
+    {
+      "question": "Ki tartotta kézben a kormányzó pártot, amíg Nagy Imre 1953 és 1955 között miniszterelnök volt?",
+      "options": [
+        "Rákosi Mátyás",
+        "Kádár János",
+        "Gerő Ernő",
+        "Hegedüs András"
+      ],
+      "explanation": "Rákosi Mátyás a Magyar Dolgozók Pártja első titkára maradt, és visszanyerte Moszkva támogatását. 1955 áprilisában Hegedüs András követte Nagyot a miniszterelnöki székben."
+    }
+  ],
+  "source": {
+    "label": "1956-os Intézet (Szakolczai Attila): Válság és útkeresés, 1953–1956"
+  }
+}
