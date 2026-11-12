@@ -1,0 +1,80 @@
+{
+  "id": "history-1945-election-smallholders-win",
+  "title": "1945-ben a kisgazdák 57%-kal nyertek, a rendőrséget mégis a kommunisták kapták meg",
+  "body": "1945. november 4-én, szovjet megszállás alatt, szabad választást tartottak Magyarországon. A **Független Kisgazdapárt** a szavazatok mintegy 57%-át és a 409 választott mandátumból 245-öt szerzett, Rákosi Mátyás kommunistái nagyjából 17%-ot. Az amerikai követ Budapestről [azt jelentette](https://history.state.gov/historicaldocuments/frus1945v04/d853), hogy semmi sem utal arra, hogy a választás ne lett volna szabad. A valódi hatalom azonban a Szövetséges Ellenőrző Bizottság elnökéé, Kliment Vorosilov szovjet marsallé volt, aki a Library of Congress szerint megvétózta, hogy kisgazda legyen a belügyminiszter. A november 15-én megalakult koalíciós kormány 18 tagjából 9 volt kisgazda, a belügyi tárcát pedig a kisgazdák [átengedték](https://history.state.gov/historicaldocuments/frus1945v04/d856) a kommunista Nagy Imrének. Ez a minisztérium irányította a rendőrséget és a politikai rendőrséget. Ennek birtokában a kommunisták sorra felőrölték riválisaikat (Rákosi később szalámitaktikának nevezte ezt): 1947-ben a szovjet hatóságok letartóztatták Kovács Bélát, a kisgazdák főtitkárát, az az évi újabb választást csalások kísérték, 1949-ben pedig már csak egyetlen listára lehetett szavazni.",
+  "slides": [
+    {
+      "question": "Az 1945. november 4-i szabad választáson nagyjából a szavazatok hány százalékát kapta a kommunista párt?",
+      "explanation": "Mintegy 17%-ot (a végeredmény szerint 16,96%-ot), alig kevesebbet a szociáldemokraták 17,4%-ánál. A Független Kisgazdapárt mintegy 57%-ot kapott."
+    },
+    {
+      "alt": "Animáció sötétzöld alapon: Magyarország vázlatos térképe, szavazólapok, az 1945. november 4-i eredmények oszlopai, a 409 mandátum félköre 245 kisgazda hellyel, egy 18 székes kormányasztal, ahol a belügy egy kommunistáé lesz, végül a szeletenként felőrölt riválisok és az 1949-es egyetlen lista.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "election1945-hu.mp4",
+      "poster": "election1945-hu.jpg"
+    },
+    {
+      "prompt": "Oszd szét az 1945. novemberi kormány 18 tárcáját a pártok között az új nemzetgyűlésben szerzett mandátumaik arányában.",
+      "takeaway": "Arányosan a kisgazdák 409-ből 245 mandátuma 18-ból 11 tárcát érne. Csak 9-et kaptak, a belügyet pedig, vele a rendőrséget, egy kommunista vezette."
+    },
+    {
+      "heading": "Szavazatok, 1945. november 4.",
+      "items": [
+        {
+          "label": "Kisgazdák"
+        },
+        {
+          "label": "Szociáldemokraták"
+        },
+        {
+          "label": "Kommunisták"
+        },
+        {
+          "label": "Nemzeti Parasztpárt"
+        },
+        {
+          "label": "Polgári Demokraták"
+        }
+      ],
+      "note": "Végeredmény; részvétel mintegy 92,5% (Nohlen és Stöver)"
+    },
+    {
+      "heading": "A szabad választástól az egy listáig",
+      "events": [
+        {
+          "when": "1945. nov. 4.",
+          "text": "A kisgazdák 57%-ot kapnak"
+        },
+        {
+          "when": "1945. nov. 15.",
+          "text": "Kommunista belügyminiszter"
+        },
+        {
+          "when": "1947",
+          "text": "Letartóztatják Kovács Bélát"
+        },
+        {
+          "when": "1947",
+          "text": "Újabb választás, csalásokkal"
+        },
+        {
+          "when": "1949",
+          "text": "Egyetlen lista, népköztársaság"
+        }
+      ]
+    },
+    {
+      "question": "Melyik minisztériumot engedték át a kisgazdák a kommunistáknak az 1945-ös választás után, bár ők szerezték meg a többséget?",
+      "options": [
+        "A belügyminisztériumot",
+        "A külügyminisztériumot",
+        "A pénzügyminisztériumot",
+        "A földművelésügyit"
+      ],
+      "explanation": "A belügyminisztérium irányította a rendőrséget és a politikai rendőrséget. 1945. november 15-én a kommunista Nagy Imre vette át, miután Vorosilov marsall megvétózta a kisgazda jelöltet."
+    }
+  ],
+  "source": {
+    "label": "Az amerikai külügyminisztérium történeti hivatala: távirat Budapestről a választásról, 1945. november 9."
+  }
+}

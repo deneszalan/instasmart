@@ -219,6 +219,7 @@ import { dayOf as occDay, EVENTS as OCC_EVENTS, eventAt as occEventAt, FREED as 
 import { EPISODES as MEMMI_EPISODES, score as memmiScore } from '../src/labs/literature/memmi-pillar-of-salt';
 import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plotAt as cemPlotAt, plotRect as cemPlotRect, zoomBox as cemZoom, PLOTS as CEM_PLOTS, RECORDS as CEM_RECORDS, ROWS as CEM_ROWS, GRAVES as CEM_GRAVES } from '../src/labs/earth/north-africa-american-cemetery-carthage';
 import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, FT_PER_MIN as TV_FT_PER_MIN, hoursOf as tvHours, ratio as tvRatio, SHOT_FT as TV_SHOT } from '../src/labs/art/tunisian-victory-1944-film';
+import { ACTUAL as E45_ACTUAL, SEATS as E45_SEATS, TOTAL_SEATS as E45_TOTAL, cabinet as e45Cabinet, fairShare as e45Fair, proportional as e45Proportional } from '../src/labs/history/1945-election-smallholders-win';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2301,5 +2302,15 @@ describe('lab maths', () => {
     expect(Math.round(tvRatio(TV_FINAL_FT))).toBe(44);
     expect(tvHours(TV_SHOT)).toBeCloseTo(55.6, 1);
     expect(tvRatio(tvFeet(10))).toBeGreaterThan(tvRatio(tvFeet(120)));
+  });
+  it('1945 election: 409 seats, 245 for the Smallholders; 18 posts in proportion would be 11, 3, 3 and 1, the real cabinet 9, 4, 4 and 1', () => {
+    expect(E45_TOTAL).toBe(409);
+    expect(E45_SEATS.fkgp * 2).toBeGreaterThan(E45_TOTAL);
+    expect(e45Fair()).toEqual({ fkgp: 11, szdp: 3, mkp: 3, npp: 1, pdp: 0 });
+    expect(Object.values(E45_ACTUAL).reduce((a, b) => a + b, 0)).toBe(18);
+    expect(e45Proportional(e45Cabinet(3, 3, 1))).toBe(true);
+    expect(e45Proportional(e45Cabinet(E45_ACTUAL.szdp, E45_ACTUAL.mkp, E45_ACTUAL.npp))).toBe(false);
+    expect(e45Cabinet(4, 4, 1).fkgp).toBe(9);
+    expect(e45Fair({ fkgp: 1, szdp: 1, mkp: 1, npp: 1, pdp: 0 }, 4)).toEqual({ fkgp: 1, szdp: 1, mkp: 1, npp: 1, pdp: 0 });
   });
 });
