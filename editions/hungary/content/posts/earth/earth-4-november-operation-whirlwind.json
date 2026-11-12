@@ -1,0 +1,170 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-4-november-operation-whirlwind",
+  "field": "earth",
+  "title": "At dawn on 4 November 1956 Soviet forces attacked Budapest; the UN voted, but no help came",
+  "emoji": "📻",
+  "body": "At 4.15 a.m. on 4 November 1956 Soviet forces attacked Budapest and other Hungarian cities: parts of 17 divisions with about 60,000 soldiers, by military historian Miklós Horváth’s count, while the UN committee estimated some 2,500 Soviet tanks in Hungary by 3 November. At 5.05 another radio station announced János Kádár’s “Revolutionary Worker-Peasant Government”, which said it had asked the Soviet army for help. At 5.20 Prime Minister Imre Nagy spoke on Free Radio Kossuth: “Our troops are in combat. The Government is at its post.” The station fell silent at 8.07; Nagy took refuge in the Yugoslav embassy, while young fighters and workers held out for days in the Corvin köz, at Csepel and Újpest. That day the UN General Assembly called on the Soviet Union to withdraw, by 50 votes to 8, but Moscow ignored it. In the same days Israel, Britain and France were attacking Egypt over the Suez Canal. On 27 October the US had said it did not see Eastern Europe’s nations as potential military allies, and the UN Special Committee found that Radio Free Europe, though encouraging, gave no reason to expect military help.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "On 4 November 1956, how many members of the UN General Assembly voted that Soviet forces should leave Hungary?",
+      "min": 0,
+      "max": 80,
+      "step": 1,
+      "answer": 50,
+      "explanation": "50 voted for, 8 against and 15 abstained. The Soviet Union and the new Kádár government ignored the call."
+    },
+    {
+      "type": "video",
+      "src": "nov4.mp4",
+      "poster": "nov4.jpg",
+      "alt": "Animation in pre-dawn slate: a schematic map of Hungary with arrows of the attack at 4.15, two radio sets for Kádár’s station and Free Radio Kossuth, the Yugoslav embassy and Parliament, places of resistance, UN vote bars, a sketch of Suez, Dulles’s words, Radio Free Europe and refugees’ hopes.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Dark Fog” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "4-november-operation-whirlwind",
+      "prompt": "Turn the clock through the morning of 4 November 1956 and find the last words Free Radio Kossuth broadcast before it fell silent.",
+      "takeaway": "At 7.57 the Writers’ Union cried “Help Hungary!”; at 8.07 Free Radio Kossuth fell silent. Kádár’s government, announced at 5.05, now had the airwaves."
+    },
+    {
+      "type": "timeline",
+      "heading": "The morning of 4 November",
+      "events": [
+        {
+          "when": "4.15",
+          "text": "The Soviet attack begins"
+        },
+        {
+          "when": "5.05",
+          "text": "Kádár’s government announced"
+        },
+        {
+          "when": "5.20",
+          "text": "Imre Nagy: “Our troops are in combat”"
+        },
+        {
+          "when": "7.57",
+          "text": "Writers’ Union: “Help Hungary!”"
+        },
+        {
+          "when": "8.07",
+          "text": "Free Radio Kossuth falls silent"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "What was hoped, and what came",
+      "left": {
+        "label": "Hoped for",
+        "text": "Of 1,000 refugees asked in Austria in 1957, 96% had trusted in some help from the United States."
+      },
+      "right": {
+        "label": "What came",
+        "text": "A UN vote, ignored. No troops: the US had said it did not see Eastern Europe as potential military allies."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "As Soviet forces attacked Hungary on 4 November 1956, who was named on the radio as head of a new “Revolutionary Worker-Peasant Government”?",
+      "options": [
+        "János Kádár",
+        "Imre Nagy",
+        "Pál Maléter",
+        "Mátyás Rákosi"
+      ],
+      "answer": 0,
+      "explanation": "János Kádár’s government was announced at 5.05 a.m. on another station. Imre Nagy, still prime minister, spoke at 5.20 on Free Radio Kossuth."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "1956",
+    "4november",
+    "kadar",
+    "un",
+    "suez"
+  ],
+  "source": {
+    "label": "National Security Archive: The 1956 Hungarian Revolution (briefing book, 2002)",
+    "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB76/"
+  },
+  "theme": {
+    "gradient": [
+      "#111826",
+      "#57534e"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-12T01:00:00Z"
+}

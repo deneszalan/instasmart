@@ -223,6 +223,7 @@ import { ACTUAL as E45_ACTUAL, SEATS as E45_SEATS, TOTAL_SEATS as E45_TOTAL, cab
 import { atLeastOne as avhAtLeastOne, circleForEvenOdds as avhEven, reached as avhReached, GOAL_SHARE as AVH_GOAL } from '../src/labs/philosophy/avh-terror-and-recsk';
 import { EVENTS as NAGY53_EVENTS, ORDER as NAGY53_ORDER, complete as nagy53Complete, eventDate as nagy53Date, isNext as nagy53Next } from '../src/labs/politics/imre-nagy-new-course-1953';
 import { ORDER as OCT23_ORDER, PLACES as OCT23_PLACES, complete as oct23Complete, placeAt as oct23PlaceAt, project as oct23Project } from '../src/labs/engineering/23-october-statue-and-radio';
+import { LOG as NOV4_LOG, clockText as nov4Clock, heard as nov4Heard, onLastWords as nov4LastWords } from '../src/labs/earth/4-november-operation-whirlwind';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2350,5 +2351,16 @@ describe('lab maths', () => {
     expect(OCT23_ORDER[0]).toBe('petofi');
     expect(oct23Complete(OCT23_ORDER)).toBe(true);
     expect(oct23Complete(['bem', 'petofi', 'parl', 'radio', 'stalin'])).toBe(false);
+  });
+  it('4 November radio: Kádár at 5.05 before Nagy at 5.20, and Free Radio Kossuth’s last words at 7.57 before silence at 8.07', () => {
+    expect(nov4Heard('kadar', 5 * 60 + 10)?.id).toBe('kadar505');
+    expect(nov4Heard('kossuth', 5 * 60 + 10)).toBeNull();
+    expect(nov4Heard('kossuth', 5 * 60 + 20)?.id).toBe('nagy520');
+    expect(nov4LastWords(7 * 60 + 57)).toBe(true);
+    expect(nov4LastWords(8 * 60 + 6)).toBe(true);
+    expect(nov4LastWords(8 * 60 + 7)).toBe(false);
+    expect(nov4LastWords(7 * 60 + 56)).toBe(false);
+    expect(nov4Clock(4 * 60 + 15)).toBe('4.15');
+    expect([...NOV4_LOG].sort((a, b) => a.at - b.at).map((b) => b.id)).toEqual(NOV4_LOG.map((b) => b.id));
   });
 });
