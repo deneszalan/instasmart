@@ -229,4 +229,10 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   '23-october-statue-and-radio': lazy(() => import('./engineering/23-october-statue-and-radio')),
   '4-november-operation-whirlwind': lazy(() => import('./earth/4-november-operation-whirlwind')),
   'reprisals-and-the-nagy-trial': lazy(() => import('./economics/reprisals-and-the-nagy-trial')),
+  'rajk-show-trial-1949': lazy(() => import('./history/rajk-show-trial-1949')),
+  'soviet-troops-and-national-symbols': lazy(() => import('./philosophy/soviet-troops-and-national-symbols')),
+  'rajk-reburial-and-the-16-points': lazy(() => import('./politics/rajk-reburial-and-the-16-points')),
+  'nagy-government-and-neutrality': lazy(() => import('./engineering/nagy-government-and-neutrality')),
+  'nagy-yugoslav-embassy-abduction': lazy(() => import('./earth/nagy-yugoslav-embassy-abduction')),
+  'reburial-16-june-1989': lazy(() => import('./economics/reburial-16-june-1989')),
 };

@@ -229,6 +229,12 @@ export const LABS = {
   '23-october-statue-and-radio': 'Follow 23 October 1956 on a schematic map of central Budapest: from each clue, tap where it happened, from the march at the Petőfi statue at 3 p.m. to the shots at the Radio and the fall of the Stalin statue after 9 p.m.',
   '4-november-operation-whirlwind': 'Turn the clock through the morning of 4 November 1956 and hear what Free Radio Kossuth and the station announcing János Kádár’s government broadcast, minute by minute, until Free Radio Kossuth fell silent at 8.07.',
   'reprisals-and-the-nagy-trial': 'Guess what share of the people sentenced after Hungary’s 1956 revolution the regime could label “class enemies”, on a grid of 100, then see its own figures: at most five per cent; the rest were workers, peasants, clerks and students.',
+  'rajk-show-trial-1949': 'Put the Rajk case in order on a time line from 1948 to 1956: Stalin\'s break with Tito, the show trial, the hanging, the regime\'s admission that the charges were false, the reburial and the revolution, and see how long the silence lasted.',
+  'soviet-troops-and-national-symbols': 'Slide through the months from 1945 to October 1956 and see on what legal basis Soviet troops stood in Hungary: the 1945 armistice, the 1947 peace treaty\'s lines to Austria, then the Warsaw Pact; find the moment when no Soviet zone in Austria was left to guard and the troops stayed anyway.',
+  'rajk-reburial-and-the-16-points': 'Pin the road to 23 October 1956 on a wall calendar of October: the reburial of László Rajk, Imre Nagy back in the party, MEFESZ in Szeged, the Polish October, compulsory Russian dropped, the students\' 16 points and the march to the Bem statue.',
+  'nagy-government-and-neutrality': 'Step through the revolution\'s second week, 28 October to 4 November 1956, in two lanes: what Budapest knew in public and what the Soviet leadership decided in secret, and find the day the two parted.',
+  'nagy-yugoslav-embassy-abduction': 'Read a claim against the record: Kádár\'s government said Imre Nagy\'s group left the Yugoslav embassy for Romania at its own request. Check facts from the UN report of 1957 one by one: does each support the claim, contradict it, or say nothing about it?',
+  'reburial-16-june-1989': 'Six dates from 1956 to 1989: find the two pairs that fall on the same day of the year, the executions of 16 June 1958 and the reburial of 16 June 1989, and the revolution of 23 October 1956 and the Republic proclaimed on 23 October 1989.',
 } as const;
 
 export type LabId = keyof typeof LABS;

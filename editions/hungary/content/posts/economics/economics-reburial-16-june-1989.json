@@ -1,0 +1,164 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "economics-reburial-16-june-1989",
+  "field": "economics",
+  "title": "On 16 June 1989, 31 years to the day after his execution, Hungary reburied Imre Nagy",
+  "emoji": "🕯️",
+  "body": "On 16 June 1958, after a secret trial, Imre Nagy, prime minister during the revolution of 1956, was executed with defence minister Pál Maléter and journalist Miklós Gimes; they were buried in secret, without names, in plot 301 of the Rákoskeresztúr cemetery in Budapest. In the spring of 1989 their remains were found and exhumed, and on 16 June 1989, thirty-one years to the day, six coffins lay on the steps of the Műcsarnok on Heroes’ Square: Nagy, Maléter, Gimes, Géza Losonczy, who had died in custody, József Szilágyi, executed in April 1958, and an empty one for all the dead of 1956. About **250,000 people** came, by the count of the [Open Society Archives](https://galeriacentralis.archivum.org/storage/uploads/3b6ef8ae-87cf-4c09-817f-704095c5c434/Kegyetlenseg-es-kegyelet_program4print_A5.pdf), and radio and television broadcast it live. Speakers called for the Soviet troops to leave and for free elections; Viktor Orbán, speaking for the young, said democracy and communism are incompatible. On 23 October 1989 Mátyás Szűrös proclaimed the Republic of Hungary from the balcony of Parliament, and a law of 1990 made 23 October a national day.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "About how many people came to Heroes’ Square in Budapest on 16 June 1989 to rebury Imre Nagy, prime minister in 1956?",
+      "min": 0,
+      "max": 1000000,
+      "step": 10000,
+      "answer": 250000,
+      "unit": "people",
+      "explanation": "About 250,000, the figure of the Open Society Archives and of the Hungarian news site Index. A British diplomat who was there recalled 200,000."
+    },
+    {
+      "type": "video",
+      "src": "reburial.mp4",
+      "poster": "reburial.jpg",
+      "alt": "Animation at dusk: candles, a calendar page of 16 June 1958, rows of unmarked mounds in plot 301, six coffins on the steps of the Műcsarnok with one left empty, a crowd of points, the burial with names, the Parliament balcony of 23 October 1989 and a calendar page: 23 October.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“At Rest” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "reburial-16-june-1989",
+      "prompt": "Six dates from 1956 to 1989. Tap two dates that fall on the same day of the year, and find both pairs.",
+      "takeaway": "16 June: executed in 1958, reburied in 1989, 31 years to the day. 23 October: the revolution of 1956 and the Republic of 1989, 33 years apart. In 1989 Hungary answered 1956 on its own dates."
+    },
+    {
+      "type": "text",
+      "heading": "Plot 301",
+      "text": "Imre Nagy, defence minister Pál Maléter and journalist Miklós Gimes lay unnamed in plot 301 of Budapest’s Rákoskeresztúr cemetery for three decades. In spring 1989 experts exhumed and identified their remains. After the ceremony on Heroes’ Square they were buried there again, with their names."
+    },
+    {
+      "type": "timeline",
+      "heading": "From 1958 to the Republic",
+      "events": [
+        {
+          "when": "16 June 1958",
+          "text": "Nagy, Maléter and Gimes executed"
+        },
+        {
+          "when": "Spring 1989",
+          "text": "Their remains exhumed in plot 301"
+        },
+        {
+          "when": "16 June 1989",
+          "text": "Reburial, Heroes’ Square"
+        },
+        {
+          "when": "23 Oct 1989",
+          "text": "The Republic of Hungary proclaimed"
+        },
+        {
+          "when": "1990",
+          "text": "23 October becomes a national day"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "On Heroes’ Square on 16 June 1989, who was the sixth coffin, the empty one, meant for?",
+      "options": [
+        "All the dead of 1956",
+        "Cardinal Mindszenty",
+        "László Rajk",
+        "The Soviet soldiers"
+      ],
+      "answer": 0,
+      "explanation": "It stood for all the dead of the revolution. The other five held Imre Nagy, Pál Maléter, Miklós Gimes, Géza Losonczy and József Szilágyi."
+    }
+  ],
+  "tags": [
+    "imrenagy",
+    "reburial",
+    "1989",
+    "plot301",
+    "republic",
+    "october23"
+  ],
+  "source": {
+    "label": "OSA Archivum: Kegyetlenség és kegyelet (programme, 1958 and 1989)",
+    "url": "https://galeriacentralis.archivum.org/storage/uploads/3b6ef8ae-87cf-4c09-817f-704095c5c434/Kegyetlenseg-es-kegyelet_program4print_A5.pdf"
+  },
+  "theme": {
+    "gradient": [
+      "#151a20",
+      "#4a3a1c"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-12T01:01:06Z"
+}

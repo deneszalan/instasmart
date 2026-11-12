@@ -1,0 +1,75 @@
+{
+  "id": "engineering-nagy-government-and-neutrality",
+  "title": "Az ország 1956. november 1-jén semleges lett; Moszkva előző nap a leveréséről döntött",
+  "body": "1956. október 28-án, öt napi harc után Nagy Imre miniszterelnök tűzszünetet rendelt el, és a rádióban kijelentette: ami történik, nem „ellenforradalom”, hanem „hatalmas, nemzeti és demokratikus mozgalom”. Október 29-én feloszlatták az ÁVH-t; 30-án véget ért az egypártrendszer, más pártok is beléptek a kormányba, szabad választásokat ígértek, a szovjet tankok elkezdték elhagyni Budapestet, forradalmi bizottságok és munkástanácsok irányították a városokat és gyárakat. Kiszabadult a régóta fogva tartott Mindszenty József bíboros. Ugyanaznap a felkelők elfoglalták a Budapesti Pártbizottság Köztársaság téri székházát, és a tömeg a védők közül többeket, köztük fiatal sorkatonákat meglincselt. A szovjet kormány október 30-i nyilatkozata a szövetségesek szuverenitásának tiszteletben tartását ígérte, ám október 31-én Hruscsov azt mondta a szovjet vezetőknek, hogy a csapatokat nem szabad kivonni ([jegyzetek](https://nsarchive2.gwu.edu/NSAEBB/NSAEBB76/doc6.pdf)). Amikor november 1-jén új szovjet hadosztályok lépték át a határt, Nagy Imre kinyilvánította Magyarország **semlegességét**, a kilépést a Varsói Szerződésből, és az ENSZ-hez fordult. Három nappal később támadott a szovjet hadsereg.",
+  "slides": [
+    {
+      "question": "Nagy Imre miniszterelnök 1956. november 1-jén kinyilvánította a semlegességet. Hány nap múlva támadtak a szovjetek?",
+      "unit": "nap",
+      "explanation": "Három: a semlegességet november 1-jén este jelentették be, a szovjet támadás Budapest ellen november 4-én hajnali 4.15-kor indult."
+    },
+    {
+      "alt": "Animáció mélyzöld alapon: felül nyolc nap csíkja, 1956. október 28-tól november 4-ig; rádió, áthúzott ÁVH-jelvény, kormányasztal, forradalmi bizottságok vázlatos térképen, Moszkva nyilatkozata, Moszkva titkos döntésének sávja, szovjet nyilak a határon, a SEMLEGES szó és a négy párt.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "week-hu.mp4",
+      "poster": "week-hu.jpg"
+    },
+    {
+      "prompt": "Lépkedj végig a napokon október 28-tól november 4-ig. Keresd meg azt a napot, amikor Budapest és Moszkva ellenkező dolgot várt.",
+      "takeaway": "Október 31.: Budapest a kivonuló szovjet tankokat figyelte, miközben a moszkvai pártelnökség titokban úgy döntött, hogy a csapatok maradnak, és leverik a forradalmat. Nagy Imre másnap értesült az új csapatokról."
+    },
+    {
+      "heading": "A remény hete",
+      "events": [
+        {
+          "when": "okt. 28.",
+          "text": "Nagy Imre tűzszünetet rendel el"
+        },
+        {
+          "when": "okt. 30.",
+          "text": "Véget ér az egypártrendszer"
+        },
+        {
+          "when": "okt. 31.",
+          "text": "Moszkva titokban a leverés mellett dönt"
+        },
+        {
+          "when": "nov. 1.",
+          "text": "Magyarország semleges lesz"
+        },
+        {
+          "when": "nov. 4.",
+          "text": "Támad a szovjet hadsereg"
+        }
+      ]
+    },
+    {
+      "heading": "1956. október 31.",
+      "left": {
+        "label": "Budapest, nyilvánosan",
+        "text": "A szovjet tankok elhagyják a várost. Nagy Imre a tömegnek: szuverenitásunk és függetlenségünk első napjait éljük."
+      },
+      "right": {
+        "label": "Moszkva, titokban",
+        "text": "Hruscsov közli a szovjet vezetőkkel: a csapatok maradnak, és „rendet teremtenek”, új kormánnyal."
+      }
+    },
+    {
+      "heading": "Köztársaság tér, október 30.",
+      "text": "Tömeg ostromolta a Budapesti Pártbizottság székházát, ahol a hírek szerint foglyokat tartottak. Eleste után a védők közül, köztük fiatal sorkatonák közül, többeket lelőttek, néhányat meglincseltek; támadók is meghaltak. A Kádár-rendszer később a lincseléseket mutatta fel az „ellenforradalom” bizonyítékaként."
+    },
+    {
+      "question": "Mit mondott Nyikita Hruscsov szovjet vezető 1956. október 31-én a pártelnökségnek a magyarországi szovjet csapatokról?",
+      "options": [
+        "Nem szabad kivonni őket",
+        "Azonnal vonuljanak ki",
+        "Álljanak Nagy Imre mellé",
+        "Vonuljanak Lengyelországba"
+      ],
+      "explanation": "„Felül kell vizsgálnunk értékelésünket, és nem kell kivonnunk csapatainkat Magyarországról és Budapestről” – rögzítik a jegyzetek. Új kormányt akartak; a támadás november 4-én jött."
+    }
+  ],
+  "source": {
+    "label": "Az ENSZ különbizottsága a magyar kérdésről: jelentés (1957)"
+  }
+}

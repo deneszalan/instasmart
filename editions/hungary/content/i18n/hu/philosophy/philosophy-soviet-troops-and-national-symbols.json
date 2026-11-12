@@ -1,0 +1,54 @@
+{
+  "id": "philosophy-soviet-troops-and-national-symbols",
+  "title": "1956-ban a magyarok lyukat vágtak a saját zászlójukba, és ez lett a forradalom jelképe",
+  "body": "1956. október 23-án a budapesti felvonulók kivágták a kommunista címert a piros-fehér-zöld zászlókból, és a **lyukas zászló** lett a forradalom jelképe. A címer az idegen hatalmat jelentette. A szovjet csapatok 1944–45-ben, a németek elleni harcokban jöttek be, és itt maradtak: az 1947-es békeszerződés szerint az ausztriai szovjet övezetbe vezető vonalakat őrizhették, Ausztria 1955-ös felszabadulása után pedig a Varsói Szerződés tartotta itt őket, októberig mintegy 20 000 katonát. Az 1945-ös fegyverszünet 200 millió dollárnyi áru szállítását rótta ki a Szovjetunió javára, a magyarországi német vagyon, több mint 500 vállalatban való részesedés szovjet kézbe került ([Honvári János](https://openaccess.ludovika.hu/nke/catalog/download/32/299/771?inline=1)), a pécsi uránt pedig szovjet koncesszióban bányászták. 1949-ben szovjet mintájú címer váltotta fel a Kossuth-címert, az orosz kötelező tantárgy volt, március 15. pedig munkanap. Az ENSZ különbizottsága szerint a szovjet katonák személy szerint nem voltak népszerűtlenek; az emberek az idegen hatalmat nehezményezték, amely hatalmon tartotta a rendszert. A diákok 16 pontja így kezdődött: minden szovjet csapatot ki kell vonni.",
+  "slides": [
+    {
+      "question": "1956 októbere előtt nagyjából hány szovjet katona állomásozott Magyarországon az ENSZ-bizottság értesülése szerint?",
+      "unit": "katona",
+      "explanation": "Mintegy 20 000: két szovjet gépesített hadosztály, nagyjából 600 harckocsival, ahogy az ENSZ különbizottságának elmondták. Október 23. után sokkal több érkezett."
+    },
+    {
+      "alt": "Animáció sötétzöld alapon: piros-fehér-zöld zászló kivágott címerrel, Magyarország vázlatos térképe a szovjet hadsereg nyilaival és egy Ausztria felé tartó szaggatott vonallal, jóvátételi ládák, 500 vállalat rácsa, urán Pécsnél, a Kossuth-címer az 1949-es címer mellett, végül a diákok 16 pontja.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "flag-hu.mp4",
+      "poster": "flag-hu.jpg"
+    },
+    {
+      "prompt": "Lépkedj a hónapokon 1945 és 1956 között. Mikor nem maradt már szovjet zóna Ausztriában?",
+      "takeaway": "1955 őszétől nem volt szovjet zóna Ausztriában, a békeszerződés indoka tehát megszűnt. A csapatok mégis maradtak: az osztrák államszerződés előtti napon aláírt Varsói Szerződés új alapot adott nekik."
+    },
+    {
+      "heading": "Kényszer és követelés",
+      "left": {
+        "label": "Amit a rendszer előírt",
+        "text": "Szovjet csapatok a Varsói Szerződés alapján, szovjet mintájú címer, orosz nyelv az iskolában, március 15. munkanap."
+      },
+      "right": {
+        "label": "A diákok követelése",
+        "text": "Minden szovjet csapat távozzon, vissza a Kossuth-címert, március 15. legyen ünnep, október 6. nemzeti gyásznap."
+      }
+    },
+    {
+      "text": "A meglévő, magyar népnek idegen címer helyett kívánjuk a régi magyar Kossuth-címer visszaállítását.",
+      "attribution": "A műegyetemisták 16 pontja, 14. pont, Budapest, 1956. október 22."
+    },
+    {
+      "heading": "Nem a katonák ellen",
+      "text": "Az ENSZ különbizottsága szerint a szovjet katonák személy szerint nem voltak népszerűtlenek. Amit az emberek nehezményeztek, az az volt, amit képviseltek: egy idegen hatalom, amely olyan rendszert tartott hatalmon, amelyet nem ők választottak. A lyukas zászló ezt utasította el, nem a szomszédokat."
+    },
+    {
+      "question": "Az 1947-es békeszerződés szerint milyen indokkal maradhattak szovjet csapatok Magyarországon?",
+      "options": [
+        "Az ausztriai zónájuk vonalainak őrzésére",
+        "Magyarország védelmére Jugoszlávia ellen",
+        "A háborús jóvátétel behajtására",
+        "Az uránbányák működtetésére"
+      ],
+      "explanation": "A 22. cikk megengedte, hogy a Szovjetunió csapatokat tartson az ausztriai övezetével való összeköttetésre. Ausztria 1955-ös felszabadulása után a Varsói Szerződés lett az új alap."
+    }
+  ],
+  "source": {
+    "label": "Az ENSZ különbizottsága a magyar kérdésről: jelentés (1957)"
+  }
+}

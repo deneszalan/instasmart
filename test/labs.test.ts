@@ -225,6 +225,12 @@ import { EVENTS as NAGY53_EVENTS, ORDER as NAGY53_ORDER, complete as nagy53Compl
 import { ORDER as OCT23_ORDER, PLACES as OCT23_PLACES, complete as oct23Complete, placeAt as oct23PlaceAt, project as oct23Project } from '../src/labs/engineering/23-october-statue-and-radio';
 import { LOG as NOV4_LOG, clockText as nov4Clock, heard as nov4Heard, onLastWords as nov4LastWords } from '../src/labs/earth/4-november-operation-whirlwind';
 import { CLASS_ENEMIES_MAX_PCT as REP_MAX, lit as repLit, missBy as repMiss } from '../src/labs/economics/reprisals-and-the-nagy-trial';
+import { done as rajkDone, EVENTS as RAJK_EVENTS, gap as rajkGap, nextExpected as rajkNext, SHUFFLED as RAJK_SHUFFLED, yearOf as rajkYear } from '../src/labs/history/rajk-show-trial-1949';
+import { AUSTRIA_LEFT as SOV_AUSTRIA_LEFT, AUSTRIA_TREATY as SOV_AUSTRIA_TREATY, bases as sovBases, inAustria as sovInAustria, LAST as SOV_LAST, monthIndex as sovMonth, reached as sovReached, TREATY as SOV_TREATY, WARSAW as SOV_WARSAW } from '../src/labs/philosophy/soviet-troops-and-national-symbols';
+import { cell as octCell, DAY as OCT_DAY, dayAt as octDayAt, daysBetween as octDays, DECK as OCT_DECK, done as octDone, fits as octFits } from '../src/labs/politics/rajk-reburial-and-the-16-points';
+import { DAYS as WEEK_DAYS, firstFooled as weekFirstFooled, fooled as weekFooled } from '../src/labs/engineering/nagy-government-and-neutrality';
+import { CARDS as EMB_CARDS, done as embDone, score as embScore, tally as embTally } from '../src/labs/earth/nagy-yugoslav-embassy-abduction';
+import { DATES as ANN_DATES, done as annDone, PAIRS as ANN_PAIRS, pairKey as annKey, sameDay as annSameDay, yearsApart as annYears } from '../src/labs/economics/reburial-16-june-1989';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2371,5 +2377,71 @@ describe('lab maths', () => {
     expect(repLit(-3)).toBe(0);
     expect(repMiss(50)).toBe(45);
     expect(repMiss(5)).toBe(0);
+  });
+  it('Rajk time line: events in date order, six and a half years from the hanging to the admission, 17 days from the reburial to the revolution', () => {
+    const ys = RAJK_EVENTS.map(rajkYear);
+    expect([...ys].sort((a, b) => a - b)).toEqual(ys);
+    expect([...RAJK_SHUFFLED].sort()).toEqual(RAJK_EVENTS.map((e) => e.id).sort());
+    const by = (id: string) => RAJK_EVENTS.find((e) => e.id === id)!;
+    expect(rajkGap(by('hanged'), by('admitted'))).toEqual({ years: 6, months: 5 });
+    expect(rajkGap(by('trial'), by('hanged'))).toEqual({ years: 0, months: 0 });
+    expect(Math.round((Date.UTC(1956, 9, 23) - Date.UTC(1956, 9, 6)) / 864e5)).toBe(17);
+    expect(rajkNext([])).toBe('split');
+    expect(rajkNext(['split', 'trial'])).toBe('hanged');
+    expect(rajkDone(RAJK_EVENTS.map((e) => e.id))).toBe(true);
+    expect(rajkDone(['split'])).toBe(false);
+  });
+  it('Soviet troops in Hungary: armistice, then the treaty’s lines to Austria, then the Warsaw Pact; the goal only after the troops left Austria', () => {
+    expect(SOV_LAST).toBe(sovMonth(1956, 10));
+    expect(SOV_TREATY).toBe(sovMonth(1947, 9));
+    expect(SOV_WARSAW).toBeLessThan(SOV_AUSTRIA_TREATY);
+    expect(sovBases(sovMonth(1946, 1))).toEqual(['armistice']);
+    expect(sovBases(sovMonth(1950, 1))).toEqual(['treaty']);
+    expect(sovBases(sovMonth(1955, 6))).toEqual(['treaty', 'warsaw']);
+    expect(sovBases(sovMonth(1956, 1))).toEqual(['warsaw']);
+    for (let m = 0; m <= SOV_LAST; m++) expect(sovBases(m).length).toBeGreaterThan(0);
+    expect(sovInAustria(SOV_AUSTRIA_LEFT)).toBe(true);
+    expect(sovReached(SOV_AUSTRIA_LEFT)).toBe(false);
+    expect(sovReached(SOV_AUSTRIA_LEFT + 1)).toBe(true);
+    expect(sovReached(sovMonth(1950, 1))).toBe(false);
+  });
+  it('October 1956 calendar: every event on its day, 1 October a Monday, 17 days from the reburial to the march', () => {
+    expect(new Date(Date.UTC(1956, 9, 1)).getUTCDay()).toBe(1);
+    expect(octCell(23)).toEqual({ col: 1, row: 3 });
+    expect(new Date(Date.UTC(1956, 9, 23)).getUTCDay()).toBe(2);
+    for (let d = 1; d <= 28; d++) { const c = octCell(d); expect(octDayAt(c.col, c.row)).toBe(d); }
+    expect([...OCT_DECK].sort()).toEqual(Object.keys(OCT_DAY).sort());
+    expect(octDays('reburial', 'march')).toBe(17);
+    expect(octFits('points', 22)).toBe(true);
+    expect(octFits('points', 23)).toBe(false);
+    expect(octDone(OCT_DECK)).toBe(true);
+    expect(octDone(OCT_DECK.slice(1))).toBe(false);
+  });
+  it('second week of 1956: eight days; Budapest expected withdrawal while Moscow had decided otherwise only on 31 October', () => {
+    expect(WEEK_DAYS.length).toBe(8);
+    expect(WEEK_DAYS[0]).toMatchObject({ m: 10, d: 28 });
+    expect(WEEK_DAYS[7]).toMatchObject({ m: 11, d: 4 });
+    expect(weekFirstFooled()).toBe(3);
+    expect(WEEK_DAYS[weekFirstFooled()]).toMatchObject({ m: 10, d: 31 });
+    expect(WEEK_DAYS.filter((_, i) => weekFooled(i)).length).toBe(1);
+  });
+  it('embassy claim: no fact supports the communiqué of 23 November 1956; five contradict it, one is neutral', () => {
+    expect(EMB_CARDS.length).toBe(6);
+    expect(embTally('supports')).toBe(0);
+    expect(embTally('contradicts')).toBe(5);
+    expect(embTally('neither')).toBe(1);
+    const right = Object.fromEntries(EMB_CARDS.map((c) => [c.id, c.answer]));
+    expect(embScore(right)).toBe(6);
+    expect(embDone(right)).toBe(true);
+    expect(embDone({})).toBe(false);
+  });
+  it('anniversaries: exactly two pairs of dates share a day, 31 and 33 years apart', () => {
+    const ids = ANN_DATES.map((x) => x.id);
+    const pairs = ids.flatMap((a, i) => ids.slice(i + 1).filter((b) => annSameDay(a, b)).map((b) => annKey(a, b)));
+    expect(pairs.sort()).toEqual(ANN_PAIRS.map(([a, b]) => annKey(a, b)).sort());
+    expect(annYears('executed', 'reburial')).toBe(31);
+    expect(annYears('revolution', 'republic')).toBe(33);
+    expect(annDone(pairs)).toBe(true);
+    expect(annDone(pairs.slice(1))).toBe(false);
   });
 });
