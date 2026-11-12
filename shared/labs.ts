@@ -228,6 +228,7 @@ export const LABS = {
   'imre-nagy-new-course-1953': 'Tap six events of Imre Nagy’s first government in the order they happened, from Stalin’s death in March 1953 to Nagy’s expulsion from the party in December 1955, and see them land on a timeline with his time as prime minister.',
   '23-october-statue-and-radio': 'Follow 23 October 1956 on a schematic map of central Budapest: from each clue, tap where it happened, from the march at the Petőfi statue at 3 p.m. to the shots at the Radio and the fall of the Stalin statue after 9 p.m.',
   '4-november-operation-whirlwind': 'Turn the clock through the morning of 4 November 1956 and hear what Free Radio Kossuth and the station announcing János Kádár’s government broadcast, minute by minute, until Free Radio Kossuth fell silent at 8.07.',
+  'reprisals-and-the-nagy-trial': 'Guess what share of the people sentenced after Hungary’s 1956 revolution the regime could label “class enemies”, on a grid of 100, then see its own figures: at most five per cent; the rest were workers, peasants, clerks and students.',
 } as const;
 
 export type LabId = keyof typeof LABS;

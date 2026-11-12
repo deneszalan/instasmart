@@ -224,6 +224,7 @@ import { atLeastOne as avhAtLeastOne, circleForEvenOdds as avhEven, reached as a
 import { EVENTS as NAGY53_EVENTS, ORDER as NAGY53_ORDER, complete as nagy53Complete, eventDate as nagy53Date, isNext as nagy53Next } from '../src/labs/politics/imre-nagy-new-course-1953';
 import { ORDER as OCT23_ORDER, PLACES as OCT23_PLACES, complete as oct23Complete, placeAt as oct23PlaceAt, project as oct23Project } from '../src/labs/engineering/23-october-statue-and-radio';
 import { LOG as NOV4_LOG, clockText as nov4Clock, heard as nov4Heard, onLastWords as nov4LastWords } from '../src/labs/earth/4-november-operation-whirlwind';
+import { CLASS_ENEMIES_MAX_PCT as REP_MAX, lit as repLit, missBy as repMiss } from '../src/labs/economics/reprisals-and-the-nagy-trial';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2362,5 +2363,13 @@ describe('lab maths', () => {
     expect(nov4LastWords(7 * 60 + 56)).toBe(false);
     expect(nov4Clock(4 * 60 + 15)).toBe('4.15');
     expect([...NOV4_LOG].sort((a, b) => a.at - b.at).map((b) => b.id)).toEqual(NOV4_LOG.map((b) => b.id));
+  });
+  it('reprisals: at most 5 in 100 of those sentenced were “class enemies” by the regime’s own figures', () => {
+    expect(REP_MAX).toBe(5);
+    expect(repLit(REP_MAX)).toBe(5);
+    expect(repLit(150)).toBe(100);
+    expect(repLit(-3)).toBe(0);
+    expect(repMiss(50)).toBe(45);
+    expect(repMiss(5)).toBe(0);
   });
 });

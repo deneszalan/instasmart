@@ -63,4 +63,11 @@ export const hu: Record<string, string> = {
   'To Soviet soldiers: “Do not shoot!”': 'A szovjet katonákhoz: „Ne lőjetek!”',
   'Writers’ Union: “Help Hungary!”': 'Írószövetség: „Segítsetek Magyarországnak!”',
   'nothing yet in this log': 'még semmi ebben a naplóban',
+  '100 people sentenced after 1956': '100 elítélt 1956 után',
+  'Your guess: {n} “class enemies” in 100': 'A tipped: 100-ból {n} „osztályellenség”',
+  'The regime’s own figures: at most {n}': 'A rendszer saját adatai: legfeljebb {n}',
+  'The rest: workers, peasants, clerks, students': 'A többi: munkás, paraszt, alkalmazott, diák',
+  'A grid of 100 people sentenced after 1956: your guess is {n} “class enemies”': '100, 1956 után elítélt ember: a tipped {n} „osztályellenség”',
+  '“Class enemies” among them': '„Osztályellenség” közöttük',
+  'Show the regime’s own figures': 'Mutasd a rendszer saját adatait',
 };

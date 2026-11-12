@@ -3084,4 +3084,11 @@ export const de: Record<string, string> = {
   'To Soviet soldiers: “Do not shoot!”': 'An die sowjetischen Soldaten: „Nicht schießen!“',
   'Writers’ Union: “Help Hungary!”': 'Schriftstellerverband: „Helft Ungarn!“',
   'nothing yet in this log': 'noch nichts in dieser Liste',
+  '100 people sentenced after 1956': '100 nach 1956 Verurteilte',
+  'Your guess: {n} “class enemies” in 100': 'Dein Tipp: {n} „Klassenfeinde“ unter 100',
+  'The regime’s own figures: at most {n}': 'Die eigenen Zahlen des Regimes: höchstens {n}',
+  'The rest: workers, peasants, clerks, students': 'Der Rest: Arbeiter, Bauern, Angestellte, Studenten',
+  'A grid of 100 people sentenced after 1956: your guess is {n} “class enemies”': 'Ein Raster aus 100 nach 1956 Verurteilten: dein Tipp sind {n} „Klassenfeinde“',
+  '“Class enemies” among them': '„Klassenfeinde“ darunter',
+  'Show the regime’s own figures': 'Die Zahlen des Regimes zeigen',
 };

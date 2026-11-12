@@ -228,4 +228,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'imre-nagy-new-course-1953': lazy(() => import('./politics/imre-nagy-new-course-1953')),
   '23-october-statue-and-radio': lazy(() => import('./engineering/23-october-statue-and-radio')),
   '4-november-operation-whirlwind': lazy(() => import('./earth/4-november-operation-whirlwind')),
+  'reprisals-and-the-nagy-trial': lazy(() => import('./economics/reprisals-and-the-nagy-trial')),
 };
