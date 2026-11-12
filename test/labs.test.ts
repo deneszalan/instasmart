@@ -221,6 +221,7 @@ import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plot
 import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, FT_PER_MIN as TV_FT_PER_MIN, hoursOf as tvHours, ratio as tvRatio, SHOT_FT as TV_SHOT } from '../src/labs/art/tunisian-victory-1944-film';
 import { ACTS as SL_ACTS, CAST as SL_CAST, ROLL as SL_ROLL, TALLY as SL_TALLY, shareOfCast as slShareCast, shareOfRoll as slShareRoll } from '../src/labs/history/1949-single-list-and-rakosi-cult';
 import { cutFor as nsCutFor, IKARUS_CUT as NS_CUT, matchesIkarus as nsMatches, payShare as nsPay, raiseFor as nsRaiseFor } from '../src/labs/philosophy/norms-wages-and-deliveries';
+import { CLAIMS as TG_CLAIMS, score as tgScore } from '../src/labs/politics/secret-speech-and-petofi-circle-1956';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2320,5 +2321,13 @@ describe('lab maths', () => {
     expect(nsMatches(100, 50)).toBe(false);
     expect(nsMatches(110, 55)).toBe(false);
     expect(nsPay(155, 55)).toBeCloseTo(100, 9);
+  });
+  it('July 1956 telegram: five claims, two supported and three contradicted, scored only when judged right', () => {
+    expect(TG_CLAIMS).toHaveLength(5);
+    expect(TG_CLAIMS.filter((c) => c.verdict === 'supported').map((c) => c.id)).toEqual(['wages', 'army']);
+    const right = Object.fromEntries(TG_CLAIMS.map((c) => [c.id, c.verdict]));
+    expect(tgScore(right)).toBe(5);
+    expect(tgScore({})).toBe(0);
+    expect(tgScore({ ...right, health: 'supported' })).toBe(4);
   });
 });
