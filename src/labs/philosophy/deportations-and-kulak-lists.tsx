@@ -31,8 +31,8 @@ export default function KulakQuota({ onDone }: LabProps) {
   useGoal(meetsHighest(harvest, quota), onDone);
 
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
-    const base = h - 30, top = 26, kgPx = (base - top) / HARVEST_MAX, bw = Math.min(90, w * 0.24);
-    const x1 = w * 0.3 - bw / 2, x2 = w * 0.7 - bw / 2;
+    const base = h - 30, top = 26, kgPx = (base - top) / HARVEST_MAX, bw = Math.min(70, w * 0.18);
+    const x1 = w * 0.42 - bw / 2, x2 = w * 0.76 - bw / 2;
     // the harvest
     ctx.fillStyle = WHEAT;
     ctx.fillRect(x1, base - harvest * kgPx, bw, harvest * kgPx);
@@ -46,9 +46,9 @@ export default function KulakQuota({ onDone }: LabProps) {
     // the 1951 average harvest
     const ya = base - AVERAGE_1951 * kgPx;
     line(ctx, 8, ya, w - 8, ya, 'rgba(255,255,255,0.5)', 1, [4, 4]);
-    label(ctx, t('1951 average harvest'), w - 8, ya - 8, { size: 9, color: C.soft, align: 'right' });
+    label(ctx, t('1951 average'), 8, ya - 8, { size: 9, color: C.soft, align: 'left' });
     line(ctx, 8, base, w - 8, base, C.faint, 1);
-    label(ctx, t('kg per hold; simplified: all goods counted as wheat'), 8, 12, { size: 9, color: C.faint, align: 'left' });
+    label(ctx, t('kg per hold; simplified: all goods as wheat'), 8, 12, { size: 9, color: C.faint, align: 'left' });
   };
 
   return (

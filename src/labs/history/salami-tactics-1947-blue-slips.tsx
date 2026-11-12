@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { C, label, line, Range, Readouts, Stage, useGoal, type LabProps } from '../kit';
+import { C, font, label, line, Range, Readouts, Stage, useGoal, type LabProps } from '../kit';
 import { t } from '../../i18n';
 import { formatFixed, formatNumber } from '../../lib/format';
 
@@ -52,7 +52,9 @@ export default function SalamiBlueSlips({ onDone }: LabProps) {
   const colour = (id: PartyId) => (id === 'mkp' ? RED : id === 'fkgp' ? GREEN : id === 'mfp' ? GOLD : GREY);
 
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
-    const left = Math.min(150, w * 0.4), right = 12, top = 30, rowH = (h - top - 26) / RESULTS.length;
+    font(ctx, 10);
+    const widest = Math.max(...RESULTS.map((r) => ctx.measureText(name(r.id)).width));
+    const left = Math.min(widest + 12, w * 0.5), right = 12, top = 30, rowH = (h - top - 26) / RESULTS.length;
     const max = MKP, X = (v: number) => left + ((w - left - right) * v) / max;
     RESULTS.forEach((r, i) => {
       const y = top + i * rowH, bh = Math.min(22, rowH * 0.62);
