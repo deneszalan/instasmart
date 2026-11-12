@@ -241,4 +241,10 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'corvin-passage-young-fighters': lazy(() => import('./engineering/corvin-passage-young-fighters')),
   'last-fighting-csepel-dunapentele': lazy(() => import('./earth/last-fighting-csepel-dunapentele')),
   'refugees-and-the-andau-bridge': lazy(() => import('./economics/refugees-and-the-andau-bridge')),
+  '1949-single-list-and-rakosi-cult': lazy(() => import('./history/1949-single-list-and-rakosi-cult')),
+  'norms-wages-and-deliveries': lazy(() => import('./philosophy/norms-wages-and-deliveries')),
+  'secret-speech-and-petofi-circle-1956': lazy(() => import('./politics/secret-speech-and-petofi-circle-1956')),
+  'kossuth-square-25-october': lazy(() => import('./engineering/kossuth-square-25-october')),
+  'workers-councils-general-strike': lazy(() => import('./earth/workers-councils-general-strike')),
+  'kadar-era-and-the-silence': lazy(() => import('./economics/kadar-era-and-the-silence')),
 };

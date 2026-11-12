@@ -1,0 +1,171 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-1949-single-list-and-rakosi-cult",
+  "field": "history",
+  "title": "Hungary’s 1949 election had one list, and an unmarked ballot counted as a yes",
+  "emoji": "🗳️",
+  "body": "After the war Hungary held a fairly free election: on 4 November 1945 the Smallholders won 57% and the Communists 17%. Then the Communist leader Mátyás Rákosi split, banned and jailed his rivals one slice at a time (the “salami tactics”), and on 12 June 1948 the Social Democrats were merged into his party as the Hungarian Working People’s Party (MDP). On 15 May 1949 voters got a **single list**, the People’s Front’s, drawn up by the MDP. A yes needed no mark: the ballot went in as it was; a no meant crossing out a circle with two lines, and a polling committee could note who lingered in the booth. The Interior Ministry counted 95.6% of those who voted for the list ([György Gyarmati, Betekintő](https://www.betekinto.hu/sites/default/files/betekinto-szamok/2015_2_gyarmati.pdf)). On 20 August 1949 a constitution on the Soviet model of 1936 made Hungary a People’s Republic. Around Rákosi grew a cult copied from Stalin’s: for his 60th birthday, on 9 March 1952, gifts from all over the country filled the former Palace of Justice in Budapest ([Museum of Ethnography](https://neprajz.hu/en/kiallitasok/idoszaki/2012eng/rakosi60-at-neprajz.hu.html)).",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "In Hungary’s single-list election of 15 May 1949, what share of those who voted backed the list, by the official count?",
+      "min": 40,
+      "max": 100,
+      "step": 0.1,
+      "answer": 95.6,
+      "unit": "%",
+      "explanation": "95.6% by the Interior Ministry’s count: 5,478,515 of 5,730,519 ballots. 165,283 voted against, 86,721 ballots were invalid, and 323,273 people on the roll did not vote."
+    },
+    {
+      "type": "video",
+      "src": "single-list.mp4",
+      "poster": "single-list.jpg",
+      "alt": "Animation on a dark red poster background: the 1945 election as bars, rival parties sliced away, two parties merging into the MDP, a one-list ballot dropped into a box or crossed out, the official 95.6% bar, a Soviet-model constitution, and gilt frames for Stalin and Rákosi.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Investigations” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "1949-single-list-and-rakosi-cult",
+      "prompt": "Try all four things a voter could do with the 1949 ballot: what could the polling committee see?",
+      "takeaway": "Only a yes took no act at all: 5,478,515 dropped the ballot in as it was, 95.6% of those who voted and 90.5% of everyone on the roll. A no took two strokes behind the curtain."
+    },
+    {
+      "type": "compare",
+      "heading": "Two elections",
+      "left": {
+        "label": "4 November 1945",
+        "text": "Several parties and a secret ballot: Smallholders 57%, Social Democrats 17%, Communists 17%."
+      },
+      "right": {
+        "label": "15 May 1949",
+        "text": "One list, drawn up by the Communist-led MDP. A yes needed no mark at all: 95.6% for the list."
+      }
+    },
+    {
+      "type": "timeline",
+      "heading": "Hungary, 1945–1952",
+      "events": [
+        {
+          "when": "4 Nov 1945",
+          "text": "Free election: Smallholders win 57%"
+        },
+        {
+          "when": "12 Jun 1948",
+          "text": "Social Democrats merged: the MDP"
+        },
+        {
+          "when": "15 May 1949",
+          "text": "Single-list election"
+        },
+        {
+          "when": "20 Aug 1949",
+          "text": "A constitution on the Soviet model"
+        },
+        {
+          "when": "9 Mar 1952",
+          "text": "Rákosi’s 60th birthday gifts on show"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "In Hungary’s single-list election of 1949, what did a voter have to do to vote against the list?",
+      "options": [
+        "Cross out a circle with two lines",
+        "Write “no” across the ballot",
+        "Ask for a different ballot",
+        "Leave the ballot unmarked"
+      ],
+      "answer": 0,
+      "explanation": "An unmarked ballot counted as a yes. A no meant crossing out the circle with two lines, behind the curtain, where taking long could be noted."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "1949",
+    "election",
+    "rakosi",
+    "propaganda",
+    "communism"
+  ],
+  "source": {
+    "label": "Betekintő: György Gyarmati on Hungary’s election of 1949 (in Hungarian)",
+    "url": "https://www.betekinto.hu/sites/default/files/betekinto-szamok/2015_2_gyarmati.pdf"
+  },
+  "theme": {
+    "gradient": [
+      "#2b1013",
+      "#6b1d1f"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-11T23:33:37Z"
+}

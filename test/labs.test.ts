@@ -237,6 +237,12 @@ import { dayOfYear as y55Day, EVENTS as Y55_EVENTS, inOrder as y55InOrder, nextE
 import { nearest as cvNearest, PLACES as CV_PLACES, project as cvProject, side as cvSide } from '../src/labs/engineering/corvin-passage-young-fighters';
 import { FIRST_DAY as LF_FIRST, holding as lfHolding, LAST_DAY as LF_LAST, onlyMecsek as lfOnlyMecsek } from '../src/labs/earth/last-fighting-csepel-dunapentele';
 import { ACTUAL as WL_ACTUAL, allClose as wlAllClose, off as wlOff } from '../src/labs/economics/refugees-and-the-andau-bridge';
+import { ACTS as SL_ACTS, CAST as SL_CAST, ROLL as SL_ROLL, TALLY as SL_TALLY, shareOfCast as slShareCast, shareOfRoll as slShareRoll } from '../src/labs/history/1949-single-list-and-rakosi-cult';
+import { cutFor as nsCutFor, IKARUS_CUT as NS_CUT, matchesIkarus as nsMatches, payShare as nsPay, raiseFor as nsRaiseFor } from '../src/labs/philosophy/norms-wages-and-deliveries';
+import { CLAIMS as TG_CLAIMS, score as tgScore } from '../src/labs/politics/secret-speech-and-petofi-circle-1956';
+import { EVENTS as KS_EVENTS, PLACES as KS_PLACES, placeAt as ksPlaceAt, project as ksProject, type Place as KsPlace } from '../src/labs/engineering/kossuth-square-25-october';
+import { DEMANDS as WC_DEMANDS, granted as wcGranted, matches as wcMatches } from '../src/labs/earth/workers-councils-general-strike';
+import { change as kbChange, INCOME as KB_INCOME, peakYear as kbPeak, WAGE as KB_WAGE, YEARS as KB_YEARS } from '../src/labs/economics/kadar-era-and-the-silence';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2496,5 +2502,59 @@ describe('lab maths', () => {
     expect(wlAllClose({ men: 61, young: 75, minors: 10 })).toBe(true);
     expect(wlAllClose({ men: 60, young: 70, minors: 15 })).toBe(false);
     expect(wlOff('minors', 50)).toBe(35);
+  });
+  it('1949 single list: 95.6% of ballots cast and 90.5% of the roll were for the list, and the tally adds up', () => {
+    expect(SL_CAST).toBe(5730519);
+    expect(SL_CAST + SL_TALLY.away).toBe(SL_ROLL);
+    expect(slShareCast('yes')!.toFixed(1)).toBe('95.6');
+    expect(slShareRoll('yes').toFixed(1)).toBe('90.5');
+    expect(slShareCast('no')!.toFixed(2)).toBe('2.88');
+    expect(slShareCast('away')).toBeNull();
+    expect(SL_ACTS.reduce((s, a) => s + slShareRoll(a), 0)).toBeCloseTo(100, 6);
+  });
+  it('norm squeeze: a norm raised by about 55% cuts pay by 35.5% for the same work, as at Ikarus in 1950', () => {
+    expect(nsRaiseFor(NS_CUT)).toBeCloseTo(55.04, 1);
+    expect(nsCutFor(55)).toBeCloseTo(35.48, 2);
+    expect(nsMatches(100, 55)).toBe(true);
+    expect(nsMatches(100, 50)).toBe(false);
+    expect(nsMatches(110, 55)).toBe(false);
+    expect(nsPay(155, 55)).toBeCloseTo(100, 9);
+  });
+  it('July 1956 telegram: five claims, two supported and three contradicted, scored only when judged right', () => {
+    expect(TG_CLAIMS).toHaveLength(5);
+    expect(TG_CLAIMS.filter((c) => c.verdict === 'supported').map((c) => c.id)).toEqual(['wages', 'army']);
+    const right = Object.fromEntries(TG_CLAIMS.map((c) => [c.id, c.verdict]));
+    expect(tgScore(right)).toBe(5);
+    expect(tgScore({})).toBe(0);
+    expect(tgScore({ ...right, health: 'supported' })).toBe(4);
+  });
+  it('Kossuth Square map: every place is hit where it is drawn, Bem lies west of Pest’s places, and the volley is at Parliament', () => {
+    for (const [w, h] of [[320, 260], [412, 300]]) {
+      for (const p of Object.keys(KS_PLACES) as KsPlace[]) {
+        const [x, y] = ksProject(w, h, ...KS_PLACES[p]);
+        expect(ksPlaceAt(w, h, x, y)).toBe(p);
+        expect(x).toBeGreaterThan(0); expect(x).toBeLessThan(w); expect(y).toBeGreaterThan(20); expect(y).toBeLessThan(h);
+      }
+      expect(ksProject(w, h, ...KS_PLACES.bem)[0]).toBeLessThan(ksProject(w, h, ...KS_PLACES.parliament)[0]);
+      expect(ksPlaceAt(w, h, 1, 1)).toBeNull();
+    }
+    expect(KS_EVENTS).toHaveLength(6);
+    expect(KS_EVENTS.at(-1)!.place).toBe('parliament');
+  });
+  it('Kádár’s answers: five demands, none granted, guesses scored against the record', () => {
+    expect(WC_DEMANDS).toHaveLength(5);
+    expect(wcGranted()).toBe(0);
+    const record = Object.fromEntries(WC_DEMANDS.map((d) => [d.id, d.outcome]));
+    expect(wcMatches(record)).toBe(5);
+    expect(wcMatches({})).toBe(0);
+    expect(wcMatches({ ...record, writing: 'granted' })).toBe(4);
+  });
+  it('Kádár-era bargain: real wages peak in 1980 and fall to 142 by 1990, while real income per head keeps rising', () => {
+    expect(kbPeak()).toBe(1980);
+    expect(KB_YEARS).toHaveLength(KB_WAGE.length);
+    expect(KB_WAGE.at(-1)).toBe(142);
+    expect(KB_INCOME.every((v, i) => i === 0 || v > KB_INCOME[i - 1])).toBe(true);
+    expect(kbChange(KB_WAGE, 3)).toBeCloseTo(17.83, 1);
+    expect(kbChange(KB_WAGE, 0)).toBe(0);
   });
 });

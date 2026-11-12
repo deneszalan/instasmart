@@ -1,0 +1,71 @@
+{
+  "id": "philosophy-norms-wages-and-deliveries",
+  "title": "Az ötvenes évek elején a vas és az acél országát építették, a reálbér ötödével esett",
+  "body": "Az 1950. január 1-jén indult első ötéves terv a vas és az acél országává akarta tenni Magyarországot. A tervezett beruházás az 1948-as tervezet 27,6 milliárd forintjáról 1951 februárjára 85 milliárdra nőtt, és az iparra jutó rész nagyjából kilenctizede a nehéziparé lett ([Domonkos Endre](https://real.mtak.hu/147658)). Az árát a dolgozók fizették meg: a magasabb **normák** miatt ugyanazért a munkáért kevesebb bér járt (az Ikarusban 1950-ben 35,5 százalékkal esett az átlagbér), 1951-től újra jegyre adták az élelmiszert, és mindenkitől egyhavi fizetésnyi békekölcsönt vártak évente. 1952-ben a reálbér nagyjából kétharmada volt a háború előttinek. Falun a kötelező beszolgáltatást a föld szerint szabták ki, nem a termés szerint, alacsony, rögzített áron, a padlásokon pedig rejtett gabonát kerestek. 1953 nyaráig mintegy 400 000 magángazdaság szűnt meg. 1956 októberében a diákok követelései között ott volt „az ipari normák teljes felülvizsgálata”, október 30-án pedig Nagy Imre kormánya eltörölte a beszolgáltatást ([az ENSZ különbizottsága, 1957](https://mek.oszk.hu/01200/01274/)).",
+  "slides": [
+    {
+      "question": "1952-ben a magyar reálbér a háború előtti szint hány százaléka volt?",
+      "unit": "%",
+      "explanation": "Nagyjából 66%, az 1938-as szint kétharmada, Romsics Ignác adatai szerint. Az árak elszaladtak a bérek elől, és az ötvenes évek elején a reálbér mintegy ötödével esett."
+    },
+    {
+      "alt": "Animáció kormos, acélszürke lapon: gyárkémények, a terv beruházásai oszlopokban, a normavonal, amely fölfelé tolódik, miközben a bér zsugorodik, a reálbér 1938-ban és 1952-ben, a békekölcsön, a jegyív, a búzamező a beadással és a padlássöprés.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "norms-hu.mp4",
+      "poster": "norms-hu.jpg"
+    },
+    {
+      "prompt": "Keresd meg a normaemelést, amely ugyanazért a munkáért 35,5%-kal csökkenti a bért, mint 1950-ben az Ikarusban.",
+      "takeaway": "Nagyjából 55%-os normaemelés 35,5%-kal csökkenti a bért ugyanazért a munkáért. A régi bérhez 55%-kal többet kellett volna termelni."
+    },
+    {
+      "heading": "Az első ötéves terv tervezett beruházásai",
+      "items": [
+        {
+          "label": "1948-as tervezet"
+        },
+        {
+          "label": "1949. április"
+        },
+        {
+          "label": "1949. december"
+        },
+        {
+          "label": "1951. február"
+        }
+      ],
+      "unit": "mrd Ft",
+      "note": "Milliárd forint, 1950–1954-re; Domonkos Endre (2022), Berend T. Iván nyomán"
+    },
+    {
+      "heading": "Így működött a kötelező beszolgáltatás",
+      "steps": [
+        {
+          "label": "A beadást a föld szabta meg"
+        },
+        {
+          "label": "Járt, bármilyen volt a termés"
+        },
+        {
+          "label": "Alacsony, rögzített áron fizettek"
+        },
+        {
+          "label": "A padláson rejtett gabonát kerestek"
+        }
+      ]
+    },
+    {
+      "question": "Az ötvenes évek elején mi szabta meg, mennyit kellett egy gazdaságnak beszolgáltatnia az államnak?",
+      "options": [
+        "A föld nagysága és minősége",
+        "Az adott évi termés",
+        "A család létszáma",
+        "A helyi piaci ár"
+      ],
+      "explanation": "A beadás mértékét a föld szabta meg, a terméstől függetlenül, és alacsony, rögzített áron fizettek érte, így rossz évben sem lett kevesebb."
+    }
+  ],
+  "source": {
+    "label": "Domonkos Endre: A sztálinista gazdaságpolitika következményei Magyarországon (1949–1953), angol nyelven"
+  }
+}
