@@ -57,4 +57,11 @@ export const hu: Record<string, string> = {
   'Day of November 1956': '1956 novemberének napja',
   'Strongholds still holding': 'Még kitartó gócok',
   'Strongholds fallen': 'Elesett gócok',
+  'Men, of every 100': 'Férfi, minden 100-ból',
+  'Aged 15 to 39, of every 100': '15–39 éves, minden 100-ból',
+  'Under 18, of every 100': '18 év alatti, minden 100-ból',
+  'Your guesses of who left Hungary in 1956–57: {a} men, {b} aged 15 to 39, {c} under 18, of every 100': 'Tippjeid arról, kik hagyták el Magyarországot 1956–57-ben: minden 100-ból {a} férfi, {b} 15–39 éves, {c} 18 év alatti',
+  'Check my guesses': 'Ellenőrzöm a tippjeimet',
+  'All three within five: a young exodus, mostly men.': 'Mindhárom öt ponton belül: fiatalok, többségükben férfiak mentek el.',
+  'Not all within five yet. Drag the dots and check again.': 'Még nem mind van öt ponton belül. Húzd el a pontokat, és ellenőrizd újra!',
 };

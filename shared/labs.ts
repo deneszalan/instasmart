@@ -228,6 +228,7 @@ export const LABS = {
   'nagy-ousted-rakosi-returns-1955': '1955 in Hungary and next door in Austria: tap seven events in the order they happened, from Moscow condemning Imre Nagy to the Warsaw Pact, the Austrian State Treaty a day later, the Soviet troops leaving Vienna and Hungary joining the UN, and watch them take their place on a timeline.',
   'corvin-passage-young-fighters': 'Where Budapest\'s armed groups held out in October 1956: find the Corvin köz, Széna tér, Baross tér, Móricz Zsigmond körtér and Csepel on a schematic map of the city, on both sides of the Danube.',
   'last-fighting-csepel-dunapentele': 'The last strongholds of Hungary\'s armed resistance after the Soviet attack of 4 November 1956: move day by day through November and watch Széna tér, the Corvin köz, Dunapentele, Éles sarok, Csepel and the Mecsek hills fall, and find the days when only the Mecsek group held out.',
+  'refugees-and-the-andau-bridge': 'Who the refugees of 1956–57 were: guess, per 100 people who fled Hungary, how many were men, how many were aged 15 to 39 and how many were under 18, then check against the statistics and get all three within five.',
 } as const;
 
 export type LabId = keyof typeof LABS;

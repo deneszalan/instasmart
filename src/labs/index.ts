@@ -228,4 +228,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'nagy-ousted-rakosi-returns-1955': lazy(() => import('./politics/nagy-ousted-rakosi-returns-1955')),
   'corvin-passage-young-fighters': lazy(() => import('./engineering/corvin-passage-young-fighters')),
   'last-fighting-csepel-dunapentele': lazy(() => import('./earth/last-fighting-csepel-dunapentele')),
+  'refugees-and-the-andau-bridge': lazy(() => import('./economics/refugees-and-the-andau-bridge')),
 };

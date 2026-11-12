@@ -3078,4 +3078,11 @@ export const de: Record<string, string> = {
   'Day of November 1956': 'Tag im November 1956',
   'Strongholds still holding': 'Stützpunkte, die noch halten',
   'Strongholds fallen': 'Gefallene Stützpunkte',
+  'Men, of every 100': 'Männer, von je 100',
+  'Aged 15 to 39, of every 100': '15 bis 39 Jahre alt, von je 100',
+  'Under 18, of every 100': 'Unter 18, von je 100',
+  'Your guesses of who left Hungary in 1956–57: {a} men, {b} aged 15 to 39, {c} under 18, of every 100': 'Deine Schätzungen, wer Ungarn 1956–57 verließ: von je 100 {a} Männer, {b} im Alter von 15 bis 39, {c} unter 18',
+  'Check my guesses': 'Schätzungen prüfen',
+  'All three within five: a young exodus, mostly men.': 'Alle drei auf fünf genau: ein junger Auszug, meist Männer.',
+  'Not all within five yet. Drag the dots and check again.': 'Noch nicht alle auf fünf genau. Ziehe die Punkte und prüfe noch einmal.',
 };

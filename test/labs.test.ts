@@ -224,6 +224,7 @@ import { AVERAGE_1951 as KQ_AVG, leftOver as kqLeft, meetsHighest as kqMeets, QU
 import { dayOfYear as y55Day, EVENTS as Y55_EVENTS, inOrder as y55InOrder, nextEvent as y55Next } from '../src/labs/politics/nagy-ousted-rakosi-returns-1955';
 import { nearest as cvNearest, PLACES as CV_PLACES, project as cvProject, side as cvSide } from '../src/labs/engineering/corvin-passage-young-fighters';
 import { FIRST_DAY as LF_FIRST, holding as lfHolding, LAST_DAY as LF_LAST, onlyMecsek as lfOnlyMecsek } from '../src/labs/earth/last-fighting-csepel-dunapentele';
+import { ACTUAL as WL_ACTUAL, allClose as wlAllClose, off as wlOff } from '../src/labs/economics/refugees-and-the-andau-bridge';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2347,5 +2348,11 @@ describe('lab maths', () => {
     expect(only[0]).toBe(10);
     expect(only[only.length - 1]).toBe(19);
     expect(lfHolding(20)).toHaveLength(0);
+  });
+  it('who left: the real shares count as close, a guess six points off does not', () => {
+    expect(wlAllClose({ ...WL_ACTUAL })).toBe(true);
+    expect(wlAllClose({ men: 61, young: 75, minors: 10 })).toBe(true);
+    expect(wlAllClose({ men: 60, young: 70, minors: 15 })).toBe(false);
+    expect(wlOff('minors', 50)).toBe(35);
   });
 });
