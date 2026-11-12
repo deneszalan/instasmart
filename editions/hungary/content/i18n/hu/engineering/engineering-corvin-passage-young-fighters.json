@@ -1,0 +1,65 @@
+{
+  "id": "engineering-corvin-passage-young-fighters",
+  "title": "1956 októberében fiatal munkások és diákok tartották a Corvin közt a tankokkal szemben",
+  "body": "1956. október 24-én hajnalban szovjet harckocsik vonultak be Budapestre, hogy leverjék az előző este kitört felkelést. Magyarországi bázisaikról jöttek: egy ENSZ-vizsgálat szerint mintegy 20 000 katona és 600 harckocsi állomásozott itt. Egy éjszaka alatt szerveződött fegyveres csoportokba ütköztek, többnyire fiatal munkásokba és diákokba. A legnagyobb a **Corvin közt** tartotta, a VIII. kerületi mozi körüli átjárót, magas házak gyűrűjében; az Üllői út túloldalán, a Kilián laktanyában Maléter Pál ezredes katonái melléjük álltak. A csoportok figyelték a széles utakat, lecsaptak az arra haladó tankokra, majd visszahúzódtak a mellékutcákba, ahová a szinte gyalogság nélküli tankok nem követhették őket – Molotov-koktéllal, barikádokkal, a lakók segítségével. Budán is harcoltak, Csepelről pedig munkások jöttek. Október 28-án kudarcot vallott egy szovjet támadás a Corvin köz ellen, és Nagy Imre kormánya tűzszünetet rendelt el; október 30-ra a szovjet csapatok elhagyták Budapestet. Az ár nagy volt: a harcokban meghaltak több mint ötöde húsz év alatti volt, ahogy az [ENSZ különbizottsága](https://digitallibrary.un.org/record/712474/files/A_3592-EN.pdf) feljegyezte.",
+  "slides": [
+    {
+      "prompt": "1956 októberében hogyan tarthattak ki házi készítésű fegyverekkel fiatalok a szovjet tankokkal szemben Budapest mellékutcáiban?",
+      "answer": "A tankok mellett alig volt gyalogság",
+      "detail": "Egymagában a tank nem látott és nem tudott fordulni a szűk utcákban. A felkelők a mellékutcákból csaptak le, aztán visszahúzódtak oda, ahová a tankok nem mertek követni őket."
+    },
+    {
+      "alt": "Animáció alkonyi szürkében: szürke tömbökként ábrázolt szovjet tankok egy vázlatos Budapesten, borostyánszínű pontok a csoportoknak, a Corvin mozi és a Kilián laktanya alaprajza, tank a széles úton, nyilak a mellékutcákba, tűzszünet, kivonulás, végül a halottak életkora.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "corvin-hu.mp4",
+      "poster": "corvin-hu.jpg"
+    },
+    {
+      "prompt": "Keresd meg Budapest vázlatos térképén azt az öt helyet, ahol 1956 októberében fegyveres csoportok tartottak ki!",
+      "takeaway": "A Corvin köz és a Baross tér Pesten, a Széna tér és a Móricz Zsigmond körtér Budán, Csepel gyárszigete délen: a harc az egész városra kiterjedt, minden csoport a saját környékén harcolt."
+    },
+    {
+      "value": "Több mint ötöde",
+      "label": "a harcokban elhunytaknak húsz év alatti volt",
+      "text": "Százból 28 volt 20 és 29 év közötti – jegyezte fel 1957-ben az ENSZ különbizottsága magyar statisztikák alapján. A főváros ifjúsága, írta, vezető szerepet játszott."
+    },
+    {
+      "heading": "Budapest, 1956 október",
+      "events": [
+        {
+          "when": "okt. 23., 21 óra",
+          "text": "Szovjet egységek indulnak Budapestre"
+        },
+        {
+          "when": "okt. 24., hajnal",
+          "text": "Megérkeznek a tankok, kezdődik az utcai harc"
+        },
+        {
+          "when": "okt. 25.",
+          "text": "Maléter Pál a Kilián laktanyában"
+        },
+        {
+          "when": "okt. 28.",
+          "text": "Kudarcot vall a támadás; tűzszünet"
+        },
+        {
+          "when": "okt. 29–30.",
+          "text": "A szovjetek kivonulnak Budapestről"
+        }
+      ]
+    },
+    {
+      "question": "Mi volt a Corvin köz Budapesten 1956 októberében?",
+      "options": [
+        "A felkelők tartotta mozi-átjáró",
+        "A szovjet hadsereg főhadiszállása",
+        "A Magyar Rádió épülete",
+        "Egy pályaudvar"
+      ],
+      "explanation": "A Corvin mozi körüli átjáró a VIII. kerületben, ahol az Üllői út a Nagykörúttal találkozik: a felkelők legnagyobb ellenállási gócpontja."
+    }
+  ],
+  "source": {
+    "label": "ENSZ: A magyar kérdéssel foglalkozó különbizottság jelentése (1957)"
+  }
+}

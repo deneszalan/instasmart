@@ -222,6 +222,7 @@ import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, 
 import { communistPlace as salPlace, communistShare as salShare, ESTIMATES as SAL_ESTIMATES, RESULTS as SAL_RESULTS, toLoseFirst as salToLose, TOTAL as SAL_TOTAL } from '../src/labs/history/salami-tactics-1947-blue-slips';
 import { AVERAGE_1951 as KQ_AVG, leftOver as kqLeft, meetsHighest as kqMeets, QUOTAS as KQ_QUOTAS, takes as kqTakes } from '../src/labs/philosophy/deportations-and-kulak-lists';
 import { dayOfYear as y55Day, EVENTS as Y55_EVENTS, inOrder as y55InOrder, nextEvent as y55Next } from '../src/labs/politics/nagy-ousted-rakosi-returns-1955';
+import { nearest as cvNearest, PLACES as CV_PLACES, project as cvProject, side as cvSide } from '../src/labs/engineering/corvin-passage-young-fighters';
 import { FIRST_DAY as LF_FIRST, holding as lfHolding, LAST_DAY as LF_LAST, onlyMecsek as lfOnlyMecsek } from '../src/labs/earth/last-fighting-csepel-dunapentele';
 
 describe('labs', () => {
@@ -2330,6 +2331,14 @@ describe('lab maths', () => {
     expect(y55Next([])).toBe('moscow');
     expect(y55Next(['moscow', 'nagyOut'])).toBe('warsaw');
     expect(y55InOrder(['treaty', 'warsaw'])).toBe(false);
+  });
+  it('Corvin map: the Buda places lie west of the Danube, the Pest ones east, Csepel on its island, and each dot can be tapped', () => {
+    expect(cvSide('szena')).toBe('buda');
+    expect(cvSide('moricz')).toBe('buda');
+    expect(cvSide('corvin')).toBe('pest');
+    expect(cvSide('baross')).toBe('pest');
+    expect(cvSide('csepel')).toBe('island');
+    for (const [w, h] of [[300, 220], [360, 240]]) for (const p of CV_PLACES) { const [x, y] = cvProject(p.lon, p.lat, w, h); expect(cvNearest(x + 3, y - 3, w, h)).toBe(p.id); }
   });
   it('last strongholds: all six hold on 4 November; from 10 to 19 November only the Mecsek group does', () => {
     expect(lfHolding(LF_FIRST)).toHaveLength(6);

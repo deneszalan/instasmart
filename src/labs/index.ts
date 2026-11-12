@@ -226,5 +226,6 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'salami-tactics-1947-blue-slips': lazy(() => import('./history/salami-tactics-1947-blue-slips')),
   'deportations-and-kulak-lists': lazy(() => import('./philosophy/deportations-and-kulak-lists')),
   'nagy-ousted-rakosi-returns-1955': lazy(() => import('./politics/nagy-ousted-rakosi-returns-1955')),
+  'corvin-passage-young-fighters': lazy(() => import('./engineering/corvin-passage-young-fighters')),
   'last-fighting-csepel-dunapentele': lazy(() => import('./earth/last-fighting-csepel-dunapentele')),
 };

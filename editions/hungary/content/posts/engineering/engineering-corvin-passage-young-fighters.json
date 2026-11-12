@@ -1,0 +1,160 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-corvin-passage-young-fighters",
+  "field": "engineering",
+  "title": "In October 1956, young workers and students held Budapest’s Corvin köz against tanks",
+  "emoji": "🇭🇺",
+  "body": "At dawn on 24 October 1956 Soviet tanks rolled into Budapest to crush the uprising that had begun the night before. They came from bases in Hungary itself: about 20,000 troops and 600 tanks, a UN inquiry found. They met armed groups formed overnight, mostly young workers and students. The biggest held the **Corvin köz**, a passage round a cinema in Pest’s 8th district, ringed by tall houses; across Üllői út, Hungarian soldiers in the Kilián barracks under Colonel Pál Maléter took their side. The groups watched the wide avenues, struck at passing tanks and withdrew into side streets where tanks with almost no infantry could not follow, with petrol bombs and barricades and the help of their neighbours. There were groups in Buda too, at Széna tér and Móricz Zsigmond körtér, and workers came in from Csepel. On 28 October a Soviet attack on the Corvin köz failed and Imre Nagy’s government ordered a ceasefire; by 30 October the Soviet troops were leaving Budapest. The cost was high: more than one in five of those who died in the fighting were under twenty, the [UN Special Committee](https://digitallibrary.un.org/record/712474/files/A_3592-EN.pdf) noted.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "In October 1956, how could young people with home-made weapons hold off Soviet tanks in Budapest’s back streets?",
+      "answer": "The tanks had almost no infantry",
+      "detail": "Alone, a tank could not see or turn in narrow streets. The fighters struck from side streets, then withdrew where the tanks dared not follow."
+    },
+    {
+      "type": "video",
+      "src": "corvin.mp4",
+      "poster": "corvin.jpg",
+      "alt": "Animation in dusk grey: Soviet tanks as grey blocks entering a schematic Budapest, amber dots for the armed groups, a plan of the round Corvin cinema and the Kilián barracks, a tank on the wide avenue and arrows into the side streets, the ceasefire and withdrawal, then bars of the ages of the dead.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Night Vigil” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "corvin-passage-young-fighters",
+      "prompt": "Find the five places where Budapest’s armed groups held out in October 1956 on a schematic map of the city.",
+      "takeaway": "Corvin köz and Baross tér in Pest, Széna tér and Móricz Zsigmond körtér in Buda, Csepel’s factory island in the south: the fighting spread across the city, each group in its own neighbourhood."
+    },
+    {
+      "type": "stat",
+      "value": "Over 1 in 5",
+      "label": "of those who died in the fighting were under twenty",
+      "text": "28 in 100 were aged 20 to 29, the UN Special Committee noted in 1957, from Hungarian statistics. The youth of Budapest, it wrote, played a leading part."
+    },
+    {
+      "type": "timeline",
+      "heading": "Budapest, October 1956",
+      "events": [
+        {
+          "when": "23 Oct, 9 p.m.",
+          "text": "Soviet units ordered into Budapest"
+        },
+        {
+          "when": "24 Oct, dawn",
+          "text": "Tanks arrive; the street fighting begins"
+        },
+        {
+          "when": "25 Oct",
+          "text": "Pál Maléter at the Kilián barracks"
+        },
+        {
+          "when": "28 Oct",
+          "text": "Attack on the Corvin köz fails; ceasefire"
+        },
+        {
+          "when": "29–30 Oct",
+          "text": "Soviet troops leave Budapest"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What was the Corvin köz in Budapest in October 1956?",
+      "options": [
+        "A cinema passage held by rebels",
+        "The Soviet army’s headquarters",
+        "The state radio building",
+        "A railway station"
+      ],
+      "answer": 0,
+      "explanation": "A passage round the Corvin cinema in Pest’s 8th district, where Üllői út meets the Grand Boulevard: the biggest stronghold of the fighters."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "1956",
+    "budapest",
+    "corvinkoz",
+    "revolution"
+  ],
+  "source": {
+    "label": "United Nations: Report of the Special Committee on the Problem of Hungary (1957)",
+    "url": "https://digitallibrary.un.org/record/712474/files/A_3592-EN.pdf"
+  },
+  "createdAt": "2026-11-12T00:50:00Z",
+  "theme": {
+    "gradient": [
+      "#1d1b20",
+      "#4a3a26"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}
