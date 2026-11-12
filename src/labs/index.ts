@@ -235,4 +235,10 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'nagy-government-and-neutrality': lazy(() => import('./engineering/nagy-government-and-neutrality')),
   'nagy-yugoslav-embassy-abduction': lazy(() => import('./earth/nagy-yugoslav-embassy-abduction')),
   'reburial-16-june-1989': lazy(() => import('./economics/reburial-16-june-1989')),
+  'salami-tactics-1947-blue-slips': lazy(() => import('./history/salami-tactics-1947-blue-slips')),
+  'deportations-and-kulak-lists': lazy(() => import('./philosophy/deportations-and-kulak-lists')),
+  'nagy-ousted-rakosi-returns-1955': lazy(() => import('./politics/nagy-ousted-rakosi-returns-1955')),
+  'corvin-passage-young-fighters': lazy(() => import('./engineering/corvin-passage-young-fighters')),
+  'last-fighting-csepel-dunapentele': lazy(() => import('./earth/last-fighting-csepel-dunapentele')),
+  'refugees-and-the-andau-bridge': lazy(() => import('./economics/refugees-and-the-andau-bridge')),
 };

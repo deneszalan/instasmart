@@ -1,0 +1,170 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "economics-refugees-and-the-andau-bridge",
+  "field": "economics",
+  "title": "After November 1956, nearly 200,000 Hungarians fled, many over a little bridge at Andau",
+  "emoji": "🌉",
+  "body": "After the Soviet attack of 4 November 1956, and again in December when the reprisals began, Hungarians left in tens of thousands. Austria had opened its door early: on 28 October its interior minister, Oskar Helmer, offered asylum to any Hungarian who asked. At **Andau**, a narrow wooden bridge over the Einser canal near the border, about 70,000 people crossed from 6 November, by Austrian accounts; later in November the bridge was blown up, and people still crossed over its ruins. In all, **193,885** people fled to Austria and Yugoslavia, Hungary’s Central Statistical Office counted. Nearly two in three were men, most were young, and about 10,000 children under 15 left without their parents. The UN gave the coordination of relief to its refugee agency, the UNHCR, which worked with the Red Cross, the migration committee ICEM and charities; countries around the world took the refugees in, the United States and Canada most of all. By the end of May 1957, 11,447 had gone home, and about 176,000 stayed abroad for good, as [the demographers László Hablicsek and Sándor Illés show](https://www.ksh.hu/statszemle_archive/2007/2007_02/2007_02_157.pdf).",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "How many people fled Hungary to Austria and Yugoslavia in 1956–57?",
+      "min": 0,
+      "max": 500000,
+      "step": 1000,
+      "answer": 193885,
+      "unit": "people",
+      "explanation": "193,885, by the count of Hungary’s Central Statistical Office in 1957, which matched the Austrian and Yugoslav figures: about 180,000 into Austria, about 20,000 into Yugoslavia."
+    },
+    {
+      "type": "video",
+      "src": "andau.mp4",
+      "poster": "andau.jpg",
+      "alt": "Animation on a snowy night blue: a schematic border by Lake Neusiedl, the Einser canal and the little Andau bridge, warm lights of people walking west, the bridge broken, then a grid of 100 refugees by sex and age, the UN refugee agency, and arcs from Austria to the countries that took them in.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Eternal Hope” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "refugees-and-the-andau-bridge",
+      "prompt": "Of every 100 who fled in 1956–57, how many were men, aged 15 to 39, under 18? Drag the dots, then check.",
+      "takeaway": "66 men, 70 aged 15 to 39, 15 under 18: a young exodus, mostly men, many of them skilled. Hungary lost one in ten of its engineers."
+    },
+    {
+      "type": "chart",
+      "heading": "Where Hungary’s refugees settled, by 1960",
+      "items": [
+        {
+          "label": "United States",
+          "value": 44110,
+          "emphasis": true
+        },
+        {
+          "label": "Canada",
+          "value": 39190
+        },
+        {
+          "label": "Australia",
+          "value": 15390
+        },
+        {
+          "label": "West Germany",
+          "value": 14400
+        },
+        {
+          "label": "Britain",
+          "value": 13670
+        },
+        {
+          "label": "Switzerland",
+          "value": 10480
+        }
+      ],
+      "note": "A 1960 study for the UN, cited by the historian Tadeusz Kopyś (2024)"
+    },
+    {
+      "type": "text",
+      "heading": "Who they were",
+      "text": "Nearly two in three were men, and seven in ten were aged 15 to 39. About 10,000 children under 15 left without their parents. More than 80% had last lived in Budapest or further west. One in ten of Hungary’s engineers and one in twenty of its doctors left."
+    },
+    {
+      "type": "quiz",
+      "question": "What did the small bridge at Andau, crossed by about 70,000 Hungarians in November 1956, span?",
+      "options": [
+        "The Einser canal in Austria",
+        "The Danube at Komárom",
+        "The Drava at Barcs",
+        "The Tisza at Szeged"
+      ],
+      "answer": 0,
+      "explanation": "A narrow wooden bridge over the Einser canal near Lake Neusiedl, by the border. It was blown up later in November; people still crossed over its ruins."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "1956",
+    "refugees",
+    "austria",
+    "andau",
+    "unhcr"
+  ],
+  "source": {
+    "label": "László Hablicsek and Sándor Illés: The demographic effects of the 1956 emigration (Statisztikai Szemle, 2007)",
+    "url": "https://www.ksh.hu/statszemle_archive/2007/2007_02/2007_02_157.pdf"
+  },
+  "createdAt": "2026-11-12T02:00:00Z",
+  "theme": {
+    "gradient": [
+      "#152030",
+      "#3e4d5e"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}

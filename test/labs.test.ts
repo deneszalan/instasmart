@@ -231,6 +231,12 @@ import { cell as octCell, DAY as OCT_DAY, dayAt as octDayAt, daysBetween as octD
 import { DAYS as WEEK_DAYS, firstFooled as weekFirstFooled, fooled as weekFooled } from '../src/labs/engineering/nagy-government-and-neutrality';
 import { CARDS as EMB_CARDS, done as embDone, score as embScore, tally as embTally } from '../src/labs/earth/nagy-yugoslav-embassy-abduction';
 import { DATES as ANN_DATES, done as annDone, PAIRS as ANN_PAIRS, pairKey as annKey, sameDay as annSameDay, yearsApart as annYears } from '../src/labs/economics/reburial-16-june-1989';
+import { communistPlace as salPlace, communistShare as salShare, ESTIMATES as SAL_ESTIMATES, RESULTS as SAL_RESULTS, toLoseFirst as salToLose, TOTAL as SAL_TOTAL } from '../src/labs/history/salami-tactics-1947-blue-slips';
+import { AVERAGE_1951 as KQ_AVG, leftOver as kqLeft, meetsHighest as kqMeets, QUOTAS as KQ_QUOTAS, takes as kqTakes } from '../src/labs/philosophy/deportations-and-kulak-lists';
+import { dayOfYear as y55Day, EVENTS as Y55_EVENTS, inOrder as y55InOrder, nextEvent as y55Next } from '../src/labs/politics/nagy-ousted-rakosi-returns-1955';
+import { nearest as cvNearest, PLACES as CV_PLACES, project as cvProject, side as cvSide } from '../src/labs/engineering/corvin-passage-young-fighters';
+import { FIRST_DAY as LF_FIRST, holding as lfHolding, LAST_DAY as LF_LAST, onlyMecsek as lfOnlyMecsek } from '../src/labs/earth/last-fighting-csepel-dunapentele';
+import { ACTUAL as WL_ACTUAL, allClose as wlAllClose, off as wlOff } from '../src/labs/economics/refugees-and-the-andau-bridge';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2443,5 +2449,52 @@ describe('lab maths', () => {
     expect(annYears('revolution', 'republic')).toBe(33);
     expect(annDone(pairs)).toBe(true);
     expect(annDone(pairs.slice(1))).toBe(false);
+  });
+  it('salami tactics: the 1947 shares match the official results, and no estimate of the false votes costs the Communists first place', () => {
+    expect(salShare(0)).toBeCloseTo(22.24, 1);
+    expect((100 * SAL_RESULTS[2].votes) / SAL_TOTAL).toBeCloseTo(15.34, 2);
+    expect(salToLose).toBe(286743);
+    for (const e of SAL_ESTIMATES) expect(salPlace(e)).toBe(1);
+    expect(salPlace(salToLose - 1)).toBe(1);
+    expect(salPlace(salToLose)).toBe(2);
+    expect(salPlace(287000)).toBe(2);
+  });
+  it('kulák quota: in 1951 the highest quota was more than the whole average harvest', () => {
+    expect(kqLeft(KQ_AVG, KQ_QUOTAS[0])).toBe(270);
+    expect(kqLeft(KQ_AVG, KQ_QUOTAS[1])).toBe(-130);
+    expect(kqTakes(KQ_AVG, KQ_QUOTAS[1])).toBeGreaterThan(100);
+    expect(kqMeets(1090, 1100)).toBe(false);
+    expect(kqMeets(1100, 1100)).toBe(true);
+    expect(kqMeets(1500, 700)).toBe(false);
+  });
+  it('1955: the events are listed in time order, the Warsaw Pact one day before the Austrian State Treaty', () => {
+    expect(y55InOrder(Y55_EVENTS.map((e) => e.id))).toBe(true);
+    expect(y55Day(5, 15) - y55Day(5, 14)).toBe(1);
+    expect(y55Day(12, 31)).toBe(365);
+    expect(y55Next([])).toBe('moscow');
+    expect(y55Next(['moscow', 'nagyOut'])).toBe('warsaw');
+    expect(y55InOrder(['treaty', 'warsaw'])).toBe(false);
+  });
+  it('Corvin map: the Buda places lie west of the Danube, the Pest ones east, Csepel on its island, and each dot can be tapped', () => {
+    expect(cvSide('szena')).toBe('buda');
+    expect(cvSide('moricz')).toBe('buda');
+    expect(cvSide('corvin')).toBe('pest');
+    expect(cvSide('baross')).toBe('pest');
+    expect(cvSide('csepel')).toBe('island');
+    for (const [w, h] of [[300, 220], [360, 240]]) for (const p of CV_PLACES) { const [x, y] = cvProject(p.lon, p.lat, w, h); expect(cvNearest(x + 3, y - 3, w, h)).toBe(p.id); }
+  });
+  it('last strongholds: all six hold on 4 November; from 10 to 19 November only the Mecsek group does', () => {
+    expect(lfHolding(LF_FIRST)).toHaveLength(6);
+    expect(lfHolding(9)).toContain('csepel');
+    const only = Array.from({ length: LF_LAST - LF_FIRST + 1 }, (_, i) => LF_FIRST + i).filter(lfOnlyMecsek);
+    expect(only[0]).toBe(10);
+    expect(only[only.length - 1]).toBe(19);
+    expect(lfHolding(20)).toHaveLength(0);
+  });
+  it('who left: the real shares count as close, a guess six points off does not', () => {
+    expect(wlAllClose({ ...WL_ACTUAL })).toBe(true);
+    expect(wlAllClose({ men: 61, young: 75, minors: 10 })).toBe(true);
+    expect(wlAllClose({ men: 60, young: 70, minors: 15 })).toBe(false);
+    expect(wlOff('minors', 50)).toBe(35);
   });
 });
