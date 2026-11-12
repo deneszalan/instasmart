@@ -1,0 +1,175 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-last-fighting-csepel-dunapentele",
+  "field": "earth",
+  "title": "Csepel held out until 9 November 1956: the last days of Hungary’s armed resistance",
+  "emoji": "🕯️",
+  "body": "At 4:15 a.m. on 4 November 1956 Soviet forces attacked Budapest and towns across Hungary; at 5:20 Prime Minister Imre Nagy said on the radio: “Our troops are fighting. The Government is in its place,” as the [National Security Archive](https://nsarchive2.gwu.edu/NSAEBB/NSAEBB76/) records. The Soviets surrounded the barracks and disarmed the army almost everywhere. In Budapest the Corvin köz group held until 6 November, and the working districts of Újpest and **Csepel** held out longest: on Csepel Island factory workers and the local army unit fought together until they were broken on 9 November, the day Soviet artillery shelled the town centre and 54 people died there. In the new steel town of **Dunapentele**, then Sztálinváros, the workers’ Rákóczi radio called for help until the town was bombed and taken on 7 November. Near Pécs, several hundred men held out in the Mecsek hills until 19 November. By 11 November the organized fighting was over, though the workers’ councils struck on. The uprising cost about 2,500 to 3,000 Hungarian lives, by Hungarian statistics, and 720 Soviet soldiers died, by the Soviet army’s own count.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "By the Soviet army’s own later count, how many of its soldiers died in Hungary in October–November 1956?",
+      "min": 0,
+      "max": 5000,
+      "step": 10,
+      "answer": 720,
+      "unit": "soldiers",
+      "explanation": "720 dead and 1,540 wounded, in figures the Russian military published in 1993. About 2,500 to 3,000 Hungarians died."
+    },
+    {
+      "type": "video",
+      "src": "lastdays.mp4",
+      "poster": "lastdays.jpg",
+      "alt": "Animation in cold November grey-blue: red arrows of the Soviet attack on a schematic map of Hungary, Csepel Island with its steelworks, Dunapentele's radio rings, the Mecsek hills and a November date strip, then the numbers of the dead with their sources under the flag with the hole.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Lightless Dawn” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "last-fighting-csepel-dunapentele",
+      "prompt": "Move through November 1956 and find the days when only one group still held out.",
+      "takeaway": "From 10 to 19 November only the group in the Mecsek hills near Pécs held on; Csepel had fallen on 9 November, Dunapentele on the 7th. The workers’ councils struck on for weeks."
+    },
+    {
+      "type": "quote",
+      "text": "Our troops are fighting. The Government is in its place.",
+      "attribution": "Prime Minister Imre Nagy on the radio, 4 November 1956, 5:20 a.m."
+    },
+    {
+      "type": "timeline",
+      "heading": "After 4 November 1956",
+      "events": [
+        {
+          "when": "4 Nov",
+          "text": "Soviet attack; the army disarmed"
+        },
+        {
+          "when": "6 Nov",
+          "text": "Corvin köz resistance ends"
+        },
+        {
+          "when": "7 Nov",
+          "text": "Dunapentele bombed and taken"
+        },
+        {
+          "when": "9 Nov",
+          "text": "Csepel’s defence broken"
+        },
+        {
+          "when": "19 Nov",
+          "text": "The Mecsek group gives up"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "heading": "Counting the dead",
+      "left": {
+        "label": "Hungarians",
+        "text": "About 2,500–3,000 (Hungarian statistics); 2,502 known to the Statistical Office in 1957, about 2,700 by recent research. Some 19,000 wounded."
+      },
+      "right": {
+        "label": "Soviet soldiers",
+        "text": "720 dead and 1,540 wounded, by the Soviet army’s own count, published in 1993."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "Where in Budapest did the armed resistance after 4 November 1956 hold out longest?",
+      "options": [
+        "Csepel and Újpest",
+        "Castle Hill",
+        "Margaret Island",
+        "Heroes’ Square"
+      ],
+      "answer": 0,
+      "explanation": "The working districts of Csepel and Újpest were attacked later and were better prepared. Csepel’s defence was broken on 9 November."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "1956",
+    "csepel",
+    "dunapentele",
+    "pecs"
+  ],
+  "source": {
+    "label": "Éva Tulipán and Gábor Molnár: The victims of the 1956 revolution, a map database (Betekintő, 2016)",
+    "url": "https://www.betekinto.hu/sites/default/files/betekinto-szamok/2016_3_tulipan_molnar_0.pdf"
+  },
+  "createdAt": "2026-11-12T01:30:00Z",
+  "theme": {
+    "gradient": [
+      "#1a2027",
+      "#3d4a52"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}

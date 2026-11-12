@@ -3062,4 +3062,10 @@ export const de: Record<string, string> = {
   'Order 1955 again': '1955 noch einmal ordnen',
   'Not yet: something else came first.': 'Noch nicht: Etwas anderes kam zuerst.',
   'Tap the events of 1955 in the order they happened. Wrong taps: {n}': 'Tippe die Ereignisse von 1955 in ihrer Reihenfolge an. Falsche Tipps: {n}',
+  'Rest of Hungary': 'Übriges Ungarn',
+  'Schematic; sporadic fighting went on after these days': 'Schematisch; vereinzelt wurde nach diesen Tagen weitergekämpft',
+  '{d} November 1956: {n} strongholds still holding out': '{d}. November 1956: {n} Stützpunkte halten noch',
+  'Day of November 1956': 'Tag im November 1956',
+  'Strongholds still holding': 'Stützpunkte, die noch halten',
+  'Strongholds fallen': 'Gefallene Stützpunkte',
 };

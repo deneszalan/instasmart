@@ -41,4 +41,10 @@ export const hu: Record<string, string> = {
   'Order 1955 again': '1955 sorba rendezése újra',
   'Not yet: something else came first.': 'Még nem: valami más volt előbb.',
   'Tap the events of 1955 in the order they happened. Wrong taps: {n}': 'Koppints 1955 eseményeire abban a sorrendben, ahogy történtek! Téves koppintás: {n}',
+  'Rest of Hungary': 'Vidék',
+  'Schematic; sporadic fighting went on after these days': 'Vázlatos; szórványos harcok e napok után is voltak',
+  '{d} November 1956: {n} strongholds still holding out': '1956. november {d}.: {n} ellenállási góc tart még ki',
+  'Day of November 1956': '1956 novemberének napja',
+  'Strongholds still holding': 'Még kitartó gócok',
+  'Strongholds fallen': 'Elesett gócok',
 };

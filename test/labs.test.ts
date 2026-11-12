@@ -222,6 +222,7 @@ import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, 
 import { communistPlace as salPlace, communistShare as salShare, ESTIMATES as SAL_ESTIMATES, RESULTS as SAL_RESULTS, toLoseFirst as salToLose, TOTAL as SAL_TOTAL } from '../src/labs/history/salami-tactics-1947-blue-slips';
 import { AVERAGE_1951 as KQ_AVG, leftOver as kqLeft, meetsHighest as kqMeets, QUOTAS as KQ_QUOTAS, takes as kqTakes } from '../src/labs/philosophy/deportations-and-kulak-lists';
 import { dayOfYear as y55Day, EVENTS as Y55_EVENTS, inOrder as y55InOrder, nextEvent as y55Next } from '../src/labs/politics/nagy-ousted-rakosi-returns-1955';
+import { FIRST_DAY as LF_FIRST, holding as lfHolding, LAST_DAY as LF_LAST, onlyMecsek as lfOnlyMecsek } from '../src/labs/earth/last-fighting-csepel-dunapentele';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2329,5 +2330,13 @@ describe('lab maths', () => {
     expect(y55Next([])).toBe('moscow');
     expect(y55Next(['moscow', 'nagyOut'])).toBe('warsaw');
     expect(y55InOrder(['treaty', 'warsaw'])).toBe(false);
+  });
+  it('last strongholds: all six hold on 4 November; from 10 to 19 November only the Mecsek group does', () => {
+    expect(lfHolding(LF_FIRST)).toHaveLength(6);
+    expect(lfHolding(9)).toContain('csepel');
+    const only = Array.from({ length: LF_LAST - LF_FIRST + 1 }, (_, i) => LF_FIRST + i).filter(lfOnlyMecsek);
+    expect(only[0]).toBe(10);
+    expect(only[only.length - 1]).toBe(19);
+    expect(lfHolding(20)).toHaveLength(0);
   });
 });
