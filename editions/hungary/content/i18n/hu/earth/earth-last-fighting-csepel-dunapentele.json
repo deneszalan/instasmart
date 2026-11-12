@@ -1,0 +1,75 @@
+{
+  "id": "earth-last-fighting-csepel-dunapentele",
+  "title": "Csepel 1956. november 9-ig tartott ki: a fegyveres ellenállás utolsó napjai",
+  "body": "1956. november 4-én hajnali 4.15-kor a szovjet csapatok megtámadták Budapestet és az ország városait; 5.20-kor Nagy Imre miniszterelnök a rádióban ezt mondta: „Csapataink harcban állnak. A kormány a helyén van” – ahogy a [National Security Archive](https://nsarchive2.gwu.edu/NSAEBB/NSAEBB76/) rögzíti. A szovjetek körülzárták a laktanyákat, és szinte mindenütt lefegyverezték a honvédséget. Budapesten a corvinisták november 6-ig tartottak ki, a munkáskerületek, Újpest és **Csepel** pedig a legtovább: a Csepel-szigeten gyári munkások és a helyi katonai egység együtt harcolt, amíg november 9-én meg nem törték őket – azon a napon szovjet tüzérség lőtte a belvárost, és 54 ember halt meg. Az új acélvárosban, **Dunapentelén**, akkor Sztálinvárosban, a munkások Rákóczi adója segítséget kért, amíg a várost november 7-én le nem bombázták és el nem foglalták. Pécs mellett több százan november 19-ig kitartottak a Mecsekben. November 11-re a szervezett harc véget ért, de a munkástanácsok sztrájkoltak tovább. A magyar statisztika szerint mintegy 2500–3000 magyar halt meg, a szovjet hadsereg saját számítása szerint 720 katonája.",
+  "slides": [
+    {
+      "question": "A szovjet hadsereg saját számítása szerint hány katonája halt meg Magyarországon 1956 októberében és novemberében?",
+      "unit": "katona",
+      "explanation": "720 halott és 1540 sebesült, az orosz hadsereg által 1993-ban közölt adatok szerint. Magyar részről mintegy 2500–3000 halott."
+    },
+    {
+      "alt": "Animáció hideg novemberi szürkéskékben: a szovjet támadás vörös nyilai Magyarország vázlatos térképén, a Csepel-sziget a vasművel, Dunapentele rádiójának hullámai, a Mecsek és egy novemberi naptársáv, végül a halottak számai forrásaikkal a lyukas zászló alatt.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "lastdays-hu.mp4",
+      "poster": "lastdays-hu.jpg"
+    },
+    {
+      "prompt": "Haladj végig 1956 novemberén, és keresd meg azokat a napokat, amikor már csak egy csoport tartott ki!",
+      "takeaway": "November 10. és 19. között már csak a Pécs melletti mecseki csoport tartott ki; Csepel november 9-én, Dunapentele 7-én esett el. A munkástanácsok még hetekig sztrájkoltak."
+    },
+    {
+      "text": "Csapataink harcban állnak. A kormány a helyén van.",
+      "attribution": "Nagy Imre miniszterelnök a rádióban, 1956. november 4., hajnali 5.20"
+    },
+    {
+      "heading": "1956. november 4. után",
+      "events": [
+        {
+          "when": "nov. 4.",
+          "text": "Szovjet támadás; lefegyverzett honvédség"
+        },
+        {
+          "when": "nov. 6.",
+          "text": "Véget ér a Corvin köz ellenállása"
+        },
+        {
+          "when": "nov. 7.",
+          "text": "Dunapentelét bombázzák, elfoglalják"
+        },
+        {
+          "when": "nov. 9.",
+          "text": "Megtörik Csepel védelmét"
+        },
+        {
+          "when": "nov. 19.",
+          "text": "A mecseki csoport feladja"
+        }
+      ]
+    },
+    {
+      "heading": "A halottak számbavétele",
+      "left": {
+        "label": "Magyarok",
+        "text": "Mintegy 2500–3000 (magyar statisztika); a KSH 1957-ben 2502 ismert halálesetet tartott számon, újabb kutatások szerint kb. 2700. Mintegy 19 000 sebesült."
+      },
+      "right": {
+        "label": "Szovjet katonák",
+        "text": "720 halott és 1540 sebesült, a szovjet hadsereg saját, 1993-ban közölt számítása szerint."
+      }
+    },
+    {
+      "question": "Budapesten hol tartott ki a legtovább a fegyveres ellenállás 1956. november 4. után?",
+      "options": [
+        "Csepelen és Újpesten",
+        "A Várhegyen",
+        "A Margitszigeten",
+        "A Hősök terén"
+      ],
+      "explanation": "A munkáskerületeket, Csepelt és Újpestet később támadták, és jobban felkészültek. Csepel védelmét november 9-én törték meg."
+    }
+  ],
+  "source": {
+    "label": "Tulipán Éva – Molnár Gábor: Az 1956-os forradalom áldozatainak térinformatikai adatbázisa (Betekintő, 2016)"
+  }
+}

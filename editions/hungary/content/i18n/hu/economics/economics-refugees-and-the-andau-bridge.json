@@ -1,0 +1,63 @@
+{
+  "id": "economics-refugees-and-the-andau-bridge",
+  "title": "1956 novembere után csaknem 200 000 magyar menekült el, sokan az andaui kis hídon át",
+  "body": "Az 1956. november 4-i szovjet támadás után, majd decemberben, amikor megkezdődött a megtorlás, magyarok tízezrei hagyták el az országot. Ausztria korán kinyitotta kapuját: október 28-án Oskar Helmer belügyminiszter menedéket ígért minden magyarnak, aki kéri. **Andaunál**, az Einser-csatornán átvezető keskeny fahídon osztrák adatok szerint november 6-tól mintegy 70 000 ember kelt át; később, novemberben a hidat felrobbantották, de az emberek a romjain is átkeltek. A KSH számítása szerint összesen **193 885** ember menekült Ausztriába és Jugoszláviába. Csaknem kétharmaduk férfi volt, többségük fiatal, és mintegy 10 000 tizenöt év alatti gyermek szülei nélkül ment el. Az ENSZ a segélyezés összehangolását menekültügyi szervezetére, az UNHCR-re bízta, amely a Vöröskereszttel, az ICEM migrációs bizottsággal és segélyszervezetekkel dolgozott; a menekülteket a világ számos országa befogadta, leginkább az Egyesült Államok és Kanada. 1957 május végéig 11 447-en tértek haza, mintegy 176 000-en végleg kint maradtak, ahogy [Hablicsek László és Illés Sándor demográfusok bemutatják](https://www.ksh.hu/statszemle_archive/2007/2007_02/2007_02_157.pdf).",
+  "slides": [
+    {
+      "question": "Hányan menekültek el Magyarországról Ausztriába és Jugoszláviába 1956–57-ben?",
+      "unit": "ember",
+      "explanation": "193 885-en, a KSH 1957-es számítása szerint, amely egyezett az osztrák és jugoszláv adatokkal: mintegy 180 000-en Ausztriába, mintegy 20 000-en Jugoszláviába."
+    },
+    {
+      "alt": "Animáció havas éjkékben: vázlatos határ a Fertő tónál, az Einser-csatorna és a kis andaui híd, nyugat felé tartó emberek meleg fényei, a lerombolt híd, majd 100 menekült nem és kor szerint, az ENSZ menekültügyi szervezete, és ívek Ausztriából a befogadó országokba.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "andau-hu.mp4",
+      "poster": "andau-hu.jpg"
+    },
+    {
+      "prompt": "Minden 100 menekültből hány volt férfi, 15–39 éves, 18 év alatti? Húzd a pontokat, aztán ellenőrizd!",
+      "takeaway": "66 férfi, 70 fő 15–39 éves, 15 fő 18 év alatti: fiatalok mentek el, többségükben férfiak, sokan szakemberek. Az ország mérnökeinek tizede távozott."
+    },
+    {
+      "heading": "Hol telepedtek le a magyar menekültek 1960-ig",
+      "items": [
+        {
+          "label": "Egyesült Államok"
+        },
+        {
+          "label": "Kanada"
+        },
+        {
+          "label": "Ausztrália"
+        },
+        {
+          "label": "NSZK"
+        },
+        {
+          "label": "Nagy-Britannia"
+        },
+        {
+          "label": "Svájc"
+        }
+      ],
+      "note": "Egy 1960-as ENSZ-tanulmány, idézi Tadeusz Kopyś történész (2024)"
+    },
+    {
+      "heading": "Kik voltak?",
+      "text": "Csaknem háromból kettő férfi volt, tízből hét 15 és 39 év közötti. Mintegy 10 000 tizenöt év alatti gyermek szülei nélkül ment el. Több mint 80%-uk Budapesten vagy attól nyugatra lakott utoljára. Az ország mérnökeinek tizede, orvosainak huszada távozott."
+    },
+    {
+      "question": "Mit ívelt át az andaui kis híd, amelyen 1956 novemberében mintegy 70 000 magyar kelt át?",
+      "options": [
+        "Az ausztriai Einser-csatornát",
+        "A Dunát Komáromnál",
+        "A Drávát Barcsnál",
+        "A Tiszát Szegednél"
+      ],
+      "explanation": "Keskeny fahíd volt az Einser-csatornán, a Fertő tó közelében, a határ mellett. Később, novemberben felrobbantották; az emberek a romjain is átkeltek."
+    }
+  ],
+  "source": {
+    "label": "Hablicsek László – Illés Sándor: Az 1956-os kivándorlás népességi hatásai (Statisztikai Szemle, 2007)"
+  }
+}

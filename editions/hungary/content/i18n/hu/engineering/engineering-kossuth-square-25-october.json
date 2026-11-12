@@ -1,0 +1,71 @@
+{
+  "id": "engineering-kossuth-square-25-october",
+  "title": "Máig vitatott, hányan haltak meg 1956. október 25-én a budapesti Országház előtt",
+  "body": "1956. október 25-én, csütörtökön, a felkelés harmadik napján az Astoria közelében az emberek szovjet harckocsik legénységével beszélgettek; néhány legénység felengedte őket a tankokra, a tornyokon magyar zászló lengett, és együtt indultak az Országházhoz, a Kossuth térre, abban a reményben, hogy Nagy Imre miniszterelnök szól hozzájuk. Tizenegy és tizenkét óra között a fegyvertelen tömegre több irányból tüzet nyitottak. Hogy ki lőtt, máig vitatott: a mellékutcák szovjet harckocsijai (Kő András és Nagy J. Lambert), a háztetőkön és a Földművelésügyi Minisztériumban lévő lövészek (az ENSZ különbizottsága 1957-ben, Kéri Edit), a téren álló magyar határőrök (Horváth Miklós). A **halottak száma** ugyanilyen vitatott: a rendszer „Fehér Könyve” szerint 22, név szerint legalább 75 ismert, az ENSZ által közölt becslések 300 és 800 közöttiek, egyes szemtanúk ezerről beszélnek ([Jobbágyi Gábor, Hungarian Review](https://hungarianreview.com/?p=1178)). Senkit sem vontak felelősségre. Másnap Mosonmagyaróváron a határőrök a laktanyájuk előtt fegyvertelen tömegre lőttek; a korabeli hírek 59–105 halottról szóltak, a tömeg pedig bosszúból megölt két tisztet, köztük Vági József főhadnagyot.",
+  "slides": [
+    {
+      "prompt": "1956. október 25-én egy budapesti tömeg szovjet harckocsikkal együtt vonult az Országházhoz. Miért mentek oda?",
+      "answer": "Nagy Imre miniszterelnököt akarták látni",
+      "detail": "Az Astoria közelében beszélgettek a harckocsizókkal, akik felengedték őket a tankokra, és magyar zászlót tűztek ki."
+    },
+    {
+      "alt": "Animáció kőszürke lapon: Budapest vázlatos térképe a Dunával, harckocsik és tömeg az Astoriánál, a menet az Országházhoz, majd a Kossuth tér alaprajza, a lövések három változata szaggatott vonalakkal, a halottak becsült száma egy skálán, végül Mosonmagyaróvár Magyarország térképén.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "kossuth-square-hu.mp4",
+      "poster": "kossuth-square-hu.jpg"
+    },
+    {
+      "prompt": "Koppints oda a térképen, ahol a forradalom első napjainak eseményei történtek, sorban.",
+      "takeaway": "Október 23-án a Bem-szobortól az Országházig, a Rádióig és a Sztálin-szoborig, 25-én az Astoriától a Kossuth térig: a sortűz egy békés, a harckocsizókkal barátkozó tömeget ért."
+    },
+    {
+      "heading": "Becslések a Kossuth téri halottakról",
+      "ends": [
+        "Nulla",
+        "1000"
+      ],
+      "marks": [
+        {
+          "label": "Fehér Könyv, 1957"
+        },
+        {
+          "label": "Név szerint ismert, 2001"
+        },
+        {
+          "label": "ENSZ: alsó becslés"
+        },
+        {
+          "label": "ENSZ: felső becslés"
+        },
+        {
+          "label": "Egyes szemtanúk"
+        }
+      ],
+      "note": "Jobbágyi Gábor, Hungarian Review; az ENSZ különbizottsága, 1957"
+    },
+    {
+      "heading": "Ki lőtt?",
+      "left": {
+        "label": "A változatok eltérnek",
+        "text": "Szovjet harckocsik a mellékutcákban; háztetők és a minisztérium; határőrök a téren."
+      },
+      "right": {
+        "label": "Amiben egyeznek",
+        "text": "A tömeg fegyvertelen volt, egyszerre több oldalról lőttek, és senkit sem vontak felelősségre."
+      }
+    },
+    {
+      "question": "1956. október 25-én mit tett a budapesti Országház elé vonuló tömeg közvetlenül a sortűz előtt?",
+      "options": [
+        "Szovjet harckocsizókkal beszélgetett",
+        "Megostromolta a Rádiót",
+        "Ledöntötte a Sztálin-szobrot",
+        "Megtámadta a pártházat"
+      ],
+      "explanation": "Az Astoria közelében szovjet harckocsizókkal beszélgettek, akik felengedték őket a tankokra és magyar zászlót tűztek ki; együtt mentek az Országházhoz."
+    }
+  ],
+  "source": {
+    "label": "Hungarian Review: Jobbágyi Gábor, Véres csütörtök, 1956 (angolul)"
+  }
+}

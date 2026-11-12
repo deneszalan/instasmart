@@ -1,0 +1,164 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-nagy-yugoslav-embassy-abduction",
+  "field": "earth",
+  "title": "In 1956 Imre Nagy left the Yugoslav embassy under a written promise, and was abducted",
+  "emoji": "🚌",
+  "body": "At 5.20 a.m. on 4 November 1956 Prime Minister Imre Nagy announced on the radio that Soviet troops were attacking Budapest; about an hour later he took refuge in the Yugoslav embassy, followed by ministers, writers, László Rajk’s widow Júlia, fifteen other women and seventeen children. Outside, János Kádár’s new government, backed by the Soviet army, wanted them out. Yugoslavia asked for a written guarantee that they could go home freely or to Yugoslavia; Nagy refused Kádár’s proposal of Romania and his demand that he resign and criticise himself. On 21 November Kádár promised in writing no sanctions for their past activities and a free journey home. The next evening a bus came; **Soviet soldiers boarded it**, the two Yugoslav diplomats on board were put off at the Soviet military command, and the bus left under armoured escort. Kádár’s government said the group had gone to Romania at its own request; the [UN Special Committee](https://mek.oszk.hu/01200/01274/) found they were forced. At Snagov, near Bucharest, they were held under guard until Nagy’s arrest on 14 April 1957.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "From 4 November 1956, how many days did Prime Minister Imre Nagy’s group stay in the Yugoslav embassy in Budapest?",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "answer": 18,
+      "unit": "days",
+      "explanation": "18 days: from the morning of 4 November until the evening of 22 November, when they boarded the bus Kádár’s government had sent."
+    },
+    {
+      "type": "video",
+      "src": "embassy.mp4",
+      "poster": "embassy.jpg",
+      "alt": "Animation in night blue and amber: a schematic Budapest with Parliament and the Yugoslav embassy, letters between Belgrade and Kádár, a bus boarded by Soviet soldiers and driven off between armoured cars, a dashed flight to Snagov in Romania, and a calendar page: 14 April 1957.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Half Mystery” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "nagy-yugoslav-embassy-abduction",
+      "prompt": "Kádár’s government said Nagy’s group went to Romania at its own request. Check each fact from the record: for it, against it, or neither?",
+      "takeaway": "Not one fact supports the claim; five contradict it. The group had refused Romania, been promised a free journey home, and was taken by Soviet soldiers without being told where."
+    },
+    {
+      "type": "quote",
+      "text": "…does not desire to apply sanctions against Imre Nagy and the members of his group for their past activities.",
+      "attribution": "János Kádár, new prime minister, to Yugoslavia, 21 November 1956"
+    },
+    {
+      "type": "timeline",
+      "heading": "From refuge to Snagov",
+      "events": [
+        {
+          "when": "4 Nov 1956",
+          "text": "Nagy takes refuge in the Yugoslav embassy"
+        },
+        {
+          "when": "21 Nov",
+          "text": "Kádár promises a free journey home"
+        },
+        {
+          "when": "22 Nov",
+          "text": "Soviet soldiers take over the bus"
+        },
+        {
+          "when": "23 Nov",
+          "text": "Kádár’s government: “they went to Romania”"
+        },
+        {
+          "when": "14 Apr 1957",
+          "text": "Nagy arrested at Snagov"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "What were the two Yugoslav diplomats on Imre Nagy’s bus sent to make sure of on 22 November 1956?",
+      "options": [
+        "That the group got home",
+        "That the bus reached Romania",
+        "That Nagy met Kádár",
+        "That the embassy was closed"
+      ],
+      "answer": 0,
+      "explanation": "The Yugoslav ambassador sent them along to see that Nagy and his party reached their homes, as Kádár had promised. At the Soviet military command they were ordered off."
+    }
+  ],
+  "tags": [
+    "imrenagy",
+    "yugoslavia",
+    "kadar",
+    "snagov",
+    "romania",
+    "abduction"
+  ],
+  "source": {
+    "label": "UN Special Committee on the Problem of Hungary: Report (1957)",
+    "url": "https://mek.oszk.hu/01200/01274/"
+  },
+  "theme": {
+    "gradient": [
+      "#0e1424",
+      "#4a3412"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-12T00:49:03Z"
+}

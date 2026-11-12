@@ -1,0 +1,213 @@
+o1       8.6 s  15.9 c/s  heard 0.97  seed 1
+       say:   Ezerkilencszázötvenhat november negyedikén hajnali öt óra húsz perckor Nagy Imre miniszterelnök harmincöt másodpercig beszélt a rádióban
+       heard: 1956. november 4-én hajnali, 5 óra 20 perc kór nagy imre miniszterelnök 35 másodpercig beszélt a rádióban.
+o2       6.2 s  15.4 c/s  heard 0.97  seed 1
+       say:   Szovjet csapatok támadták Budapestet. Csapataink harcban állnak, mondta. A kormány a helyén van
+       heard: Szóviét csapatok támadták Budapestet, csapataink harcban állnak mondta, a kormány a helyén van.
+o3       7.7 s  13.9 c/s  heard 0.95  seed 1
+       say:   A fegyveres ellenállást egy héten belül leverték. A munkások fegyver nélkül, december közepéig tartottak ki
+       heard: A fegyver és ellen állást egy héten belül leverték. A munkások fegyver nélkül decender közepék tartottak ki.
+o4       2.4 s  16.6 c/s  heard 0.98  seed 1
+       say:   Ez a film azoknak a heteknek a története
+       heard: Ez a film azoknak a heteknek a történet.
+a1       4.4 s  17.4 c/s  heard 0.88  seed 2
+       say:   November harmadikán a magyar kormány a szovjet csapatok kivonásáról tárgyalt
+       heard: November 3-án a Magyar Kormány a Szóviét Csapató kivonásáról tárgyat.
+a2       8.2 s  15.8 c/s  heard 0.95  seed 1
+       say:   A szovjet vezetés azonban, ahogy saját feljegyzései mutatják, október harmincegyedikén titokban elhatározta a forradalom leverését
+       heard: A Szovjet vezetés azonban, hogy saját feljedzései mutatják, oktober 31-én titokban elhatároszta a forradalom leverését.
+a3       7.6 s  16.1 c/s  heard 0.92  seed 1
+       say:   Éjfél körül a szovjet állambiztonság letartóztatta a magyar tárgyalóküldöttséget, köztük Maléter Pál honvédelmi minisztert
+       heard: Éfjel körül a Szovjet állambisztonság letartúztatta a magyar tárgyaló küldötséget, köztük Maréter Pál Honvédelmény isterstől.
+a4       7.5 s  15.5 c/s  heard 0.93  seed 1
+       say:   November negyedikén hajnali négy óra tizenöt perckor a szovjet csapatok megtámadták Budapestet és az ország városait
+       heard: November 4-én hajnali 4 óra 15 perc kór, a szövjet csapatok megtálmatták Budapestet és az országvárosa.
+a5       6.9 s  16.7 c/s  heard 0.96  seed 1
+       say:   Horváth Miklós hadtörténész szerint tizenhét hadosztály egységei, mintegy hatvanezer katona vett részt a támadásban
+       heard: Horvát Miklós hadd történés szerint 17 hadosztály egységei, mint egy 60.000 katonave príszt a támadásban.
+a6       6.9 s  16.6 c/s  heard 0.95  seed 1
+       say:   A Honvédelmi Minisztérium tábornokai megtiltották az ellenállást, és a honvédséget szinte mindenütt lefegyverezték
+       heard: A Honvédelmi Minisztérium tábornokai megtyutották az ellenelást, és a Honvédséget szinte mindenütt lefegyverezti.
+a7       8.4 s  17.3 c/s  heard 0.95  seed 1
+       say:   Sok szovjet katona távoli vidékekről érkezett sorkatona volt. Tanúk az ENSZ előtt elmondták, hogy némelyikük azt hitte, Egyiptomban, Szueznél van
+       heard: Sok szóvjet katona távoli vidékekről érkezett sorkatona volt. Tanuk az EN-selőt elmondták, hogy némelyikük azt hitte egyibb tomban szúhezni el van.
+b1       7.2 s  13.4 c/s  heard 0.97  seed 1
+       say:   Hajnali öt óra öt perckor egy másik adó már bejelentette az új kormányt, Kádár János vezetésével
+       heard: Hajnali 5 óra 5 perc kor egy másik adó már bejelentette az új kormányt, Kádályános vezetésével.
+b2       6.8 s  15.9 c/s  heard 0.96  seed 1
+       say:   Úgy hírlett, Szolnokról sugároz, az Ötvenhatos Intézet szerint azonban Ungvárról, a szovjet Ukrajnából szólt
+       heard: Úgy hirlett szolnokról sugároz az 56-os intézen szerint azonban ungvárról a Szovjet Ukrajnábor szól.
+b3       7.8 s  15.3 c/s  heard 0.95  seed 1
+       say:   Kádár papíron még mindig Nagy Imre kormányának tagja volt, de november elsején eltűnt, és repülőgéppel Moszkvába vitték
+       heard: Kádárpapírom még mindig nagy imre kormányának tagja volt, de november elségyen eltűnt, és repülőgéppel Moszlvába vitté.
+b4       6.1 s  16.6 c/s  heard 0.94  seed 1
+       say:   Kormánya ellenforradalomnak nevezte a felkelést, és közölte, hogy a szovjet hadsereg segítségét kérte
+       heard: A gormánya ellen forradalomnak nem ez de a felkelést, és közölt ehogy a Szovjet hadsereg segítségét ghérte.
+b5       8.3 s  16.9 c/s  heard 0.90  seed 1
+       say:   Öt óra húsz perckor Nagy Imre szólalt meg a Szabad Kossuth Rádióban. Hat óra körül elhagyta a Parlamentet, és a jugoszláv nagykövetségre ment
+       heard: 5 óra-20 perc kór nagyémre szóralt meg a szabadkosú trádióban. 6 óra körül elhajta a parlamentet is a Júgoflágnagy követségemen.
+b6       6.6 s  16.7 c/s  heard 0.97  seed 1
+       say:   Hét óra ötvenhét perckor az Írószövetség a világ íróihoz és tudósaihoz fordult, hogy segítsenek Magyarországnak
+       heard: 7 óra, 57 Berszkor az írószövetség a világi íróihoz és tudósaihoz fordult, hogy segítsenek Magyarországnak.
+b7       3.3 s  17.0 c/s  heard 0.94  seed 1
+       say:   Nyolc óra hét perckor a Szabad Kossuth Rádió elhallgatott
+       heard: 8 óra hét perc kór a szabadkosú trádiú elhalgatott.
+b8       7.2 s  15.0 c/s  heard 0.98  seed 1
+       say:   Egyetlen miniszter maradt a helyén a Parlamentben, amikor a szovjet katonák megérkeztek. Bibó István volt az
+       heard: Egyetlen miniszker maradt a helyén a parlamentben, amikor a Szovjet katonák megérkeztek. Bibo István volt az a...
+b9       7.8 s  17.5 c/s  heard 0.97  seed 1
+       say:   Kiáltványában arra kérte a magyarokat, hogy se a megszállókat, se az általuk létrehozott bábkormányt ne ismerjék el törvényes hatalomnak
+       heard: Csiatványában arra kérte a magyarokat, hogy se a megszállókat, se az általuk létrehozott bábkormányt ne ismerjé kell törvényes hatalomnak.
+b10      7.5 s  16.0 c/s  heard 0.95  seed 1
+       say:   A passzív ellenállás minden eszközére hívott fel, de kérte, hogy Budapest vízellátását és a közszolgáltatásokat kíméljék
+       heard: A passzív ellenállás minden eszközére hívott fel, de kérte, hogy Budapest lézel látását is a köszolgáltatásokat kímeljé.
+c1       5.8 s  16.8 c/s  heard 0.98  seed 1
+       say:   Fiatal felkelők és munkások harcoltak tovább, abban bízva, hogy kitartanak, amíg a világ közbelép
+       heard: Fiatal felkelők és munkások harcoltak tovább, abban bízva, hogy kitartanak amíg a világ közbeli.
+c2       5.3 s  15.5 c/s  heard 0.91  seed 1
+       say:   Budapesten a Corvin köz tüzérségi támadás után, november hatodikán reggel esett el
+       heard: Budapesten a Korvin köztüzési támadás után november 6-t reggelesett el.
+c3       4.9 s  15.8 c/s  heard 0.94  seed 1
+       say:   A legtovább a munkáskerületek tartottak ki, északon Újpest, délen pedig Csepel
+       heard: A legtovább a munkásskerületek tartottak ki északon újpest délempedik csep.
+c4       3.8 s  16.2 c/s  heard 0.96  seed 1
+       say:   Csepelen a munkások és a helyi honvédalakulat együtt harcoltak
+       heard: Csepellen a munkások és a helyi hónvéd alakuljat együtt harcolta.
+c5       7.6 s  16.6 c/s  heard 0.92  seed 2
+       say:   November kilencedikén a szovjet tüzérség lőtte a csepeli belvárost. Aznap ötvennégy ember halt meg ott, köztük egész családok
+       heard: November 9-én a szóviát tűzésségülőttel Cseppeli belvárost, aznap 54 ember halt meg ott, köztük egész család.
+c6       2.3 s  14.0 c/s  heard 0.93  seed 1
+       say:   Estére megtörték Csepel védelmét
+       heard: Ezt ére megtörték csapelvédelmét.
+c7       6.4 s  15.9 c/s  heard 0.98  seed 1
+       say:   Az acélvárosban, Dunapentelén, akkor Sztálinvárosban szintén együtt álltak ki a munkások és a katonák
+       heard: Az Acélvárosban, Duna Pentelén, akkor Stálinvárosban szintén együtt állt a ki a munkások és a katoná.
+c8       7.3 s  14.6 c/s  heard 0.88  seed 1
+       say:   Rádiója magyarul és németül kért segítséget. November hetedikén a várost bombázták és ágyúzták, és elesett
+       heard: Rádiója magyarul és Némető kérd segítséget. November 7-i kina városd bombászták és ágyúztát is elese.
+c9       6.4 s  17.5 c/s  heard 0.90  seed 1
+       say:   Pécs mellett több százan november tizenkilencedikéig kitartottak a Mecsekben, aztán gyalog átmentek Jugoszláviába
+       heard: Pécs mellett több százal november 19-i kék ki tartottak a meccsekben, azt engyalog átmentek Jókó Flávia-ból.
+c10      4.0 s  16.5 c/s  heard 0.91  seed 1
+       say:   November tizenegyedikére megtört a szervezett fegyveres ellenállás
+       heard: November 14-i kéremektőst a szervezett fegyveres ellenállás.
+c11     11.0 s  14.5 c/s  heard 0.96  seed 1
+       say:   Hányan haltak meg? A Központi Statisztikai Hivatal ezerkilencszázötvenhét elején kétezer-ötszázkettő ismert halálesetet számolt össze az egész felkelés idejéből
+       heard: Hányan hajtak meg? A Központi Statistikai Hivatal 1957 elején 2502 ismert halálesetett számoldössze az egész felkerés idejéből.
+c12      9.1 s  15.1 c/s  heard 0.98  seed 1
+       say:   Újabb kutatások szerint a valódi szám mintegy kétezer-hétszáz. A legtöbb forrás kétezer-ötszáz és háromezer közötti magyar halottal számol
+       heard: Újabb kutatások szerint a valódi szám, mint egy 2700. A legtöbb forrás 2500 és 3000 között ki Magyar halodta a számol.
+c13      4.7 s  15.3 c/s  heard 0.98  seed 1
+       say:   A szovjet hadsereg saját számítása szerint hétszázhúsz katonája halt meg
+       heard: A Szovjet hadsereg saját számítása szerint 720 katonája haltmet.
+c14      7.8 s  14.9 c/s  heard 0.97  seed 1
+       say:   Diákok és munkások voltak, katonák és járókelők, fiatalok és idősek, és otthonuktól messze került szovjet sorkatonák
+       heard: Diákok és munkások voltak, katonák is járó kellők, fiatalok is idősek, és otthonuktól messzekerült szóvjet sor katonák.
+d1       7.5 s  14.9 c/s  heard 0.94  seed 1
+       say:   A jugoszláv nagykövetségen Nagy Imréhez miniszterek, írók és családtagjaik csatlakoztak, köztük tizenhét gyermek
+       heard: a Júgos Sláv nagy követségen nagy Imréhezminifterek, írók és családtagjaig csatlakosztak, köztük 17 gyernek.
+d2       6.4 s  17.0 c/s  heard 0.91  seed 1
+       say:   Odakint szovjet harckocsik álltak. A november hetedikén felesküdött Kádár-kormány azt akarta, hogy kijöjjenek
+       heard: Odakint szóviát harc kocsik áltak. A november 7-én felesküdött kádárkormány azt akarta, hogy kiőjjen.
+d3       5.7 s  16.3 c/s  heard 0.94  seed 1
+       say:   Nagy Imre nem mondott le, és amíg szabad volt, kétséges maradt, hogy Kádár joggal kormányoz-e
+       heard: Nagy imre nem mondott le, és amik szabad volt, kétséges maradt, hogy káldály joggalkolmányoze.
+d4       8.4 s  15.3 c/s  heard 0.95  seed 1
+       say:   Belgrád írásos garanciát kért, hogy a csoport szabadon hazatérhet. Kádár inkább Romániát javasolta, de Nagy Imre ezt elutasította
+       heard: Delgrád írásos garancsiát kért, hogy a csoport szabadonhazat érhet. Kádáinkább Rumányi átjavasolta, de nagy imrehez elutasította.
+d5       7.0 s  14.7 c/s  heard 0.90  seed 1
+       say:   November huszonegyedikén Kádár írásban ígérte meg, hogy korábbi tevékenységükért nem éri őket megtorlás
+       heard: November 21-i kémkáda a rírásban így értemet, hogy korábbi tevékensélybükért nem érj őket megtorlás.
+d6       6.8 s  15.6 c/s  heard 0.92  seed 1
+       say:   Másnap este busz jött, hogy hazavigye őket, és szovjet katonák ragaszkodtak hozzá, hogy ők is felszálljanak
+       heard: Másnap este busz jött, hogy hazavigyelj őket, és szuviát katonák ragaszkottak hozzá, hogy ők is verszálljanak.
+d7       6.9 s  16.6 c/s  heard 0.96  seed 1
+       say:   A szovjet parancsnokságon a két jugoszláv diplomatát leszállították, a busz pedig páncélautók kíséretében elhajtott
+       heard: A Szovjet parancsnokságon a két Jugoszláv diplomatát leszállították, a duspedig páncélautó kisiretében elhajtott.
+d8       5.8 s  14.5 c/s  heard 0.99  seed 1
+       say:   A csoportot repülővel Romániába vitték. A Kádár-kormány azt állította, hogy ők kérték
+       heard: A csoportot repülővel romániába vitték. A kádár kormány azt állította, hogy ő kérték.
+d9       4.7 s  18.8 c/s  heard 0.94  seed 1
+       say:   Az ENSZ különbizottsága szerint erővel vitték el őket, és azt sem mondták meg nekik, hová
+       heard: Az ENC külön bizottsága szerint erővedíték el őket, és azt sem mondták meg nekik hová?
+d10      6.1 s  16.3 c/s  heard 0.96  seed 1
+       say:   Ezerkilencszázötvenhét áprilisában Nagy Imrét Romániában letartóztatták, és hazahozták, titkos perre
+       heard: 1957. Áprilisában nagy Imrét romániában letartúztatták és hazahozták tipkospel.
+e1       4.9 s  15.2 c/s  heard 0.96  seed 1
+       say:   A fegyverek elhallgattak, de a gyárak álltak. Sehol sem vették fel a munkát
+       heard: A fegyverek elhalgattak, de a gyárok álltok, sehol sem vették fel a munkát.
+e2       4.4 s  17.7 c/s  heard 0.96  seed 1
+       say:   Most az október óta megválasztott üzemi munkástanácsok vezették az ellenállást
+       heard: Most az oktober óta megválasztott üzemi vonkást a nácsok vezették az ellenállást.
+e3       8.2 s  16.5 c/s  heard 0.96  seed 1
+       say:   November tizennegyedikén megalakították a Nagybudapesti Központi Munkástanácsot, amelynek a huszonhárom éves Rácz Sándor lett az elnöke
+       heard: November 14-én megalakították a nagy Budapesti központi munkás tanácsot, amelynek a 23 éves rád Sándor lett az elnöke.
+e4       5.1 s  17.4 c/s  heard 0.99  seed 1
+       say:   A szovjet csapatok kivonását, szabad választásokat és Nagy Imre visszatérését követelték
+       heard: A Szovjet csapatok kivonását, szabadválasztásokat és nagy imre visszatérését követelt.
+e5       5.6 s  16.5 c/s  heard 0.99  seed 1
+       say:   Kádár sokat ígért. Amikor azonban írásban kérték, azt felelte, hogy elég kell legyen a szava
+       heard: Kádás sokat ígért. Amikor azonban írásban kérték, azt felelte, hogy elég kell legyen a szava.
+e6      10.0 s  14.4 c/s  heard 0.89  seed 1
+       say:   November huszonegyedikén szovjet harckocsik akadályozták meg a tanácsok országos értekezletét, és Budapest negyvennyolc órás sztrájkkal válaszolt
+       heard: Navenberg 21-én szóviatt harckocsik akadályoztát meg a tanácsok országos értekezletét és Budapest 48 órás strájás strájákal válaszott.
+e7       5.2 s  14.7 c/s  heard 0.90  seed 1
+       say:   December negyedikén több ezer asszony vonult némán, virágokkal a Hősök terére
+       heard: De csember 4-én több ezer asszony van volt némán, virágokkal a hűsök terére.
+e8       6.4 s  15.1 c/s  heard 0.99  seed 1
+       say:   Szovjet katonák várták őket, de eljött India nagykövete is, és az asszonyok letehették virágaikat
+       heard: Szovjet katonák várták őket, de eljött india nagy követel is, és az asszonyok letehették virágaikat.
+e9       9.3 s  15.5 c/s  heard 0.93  seed 1
+       say:   December nyolcadikán a bányavárosban, Salgótarjánban mintegy négyezer ember követelte két letartóztatott munkástanács-vezető szabadon bocsátását
+       heard: Decsember 8-án a bányavárosban, Sallgó Tarjánban mind 1-4 ezer ember követeltek így letartúztatott munkástanács vezető szabadonpucsátását.
+e10      6.4 s  17.4 c/s  heard 0.99  seed 1
+       say:   Karhatalmisták, rendőrök és szovjet katonák lőttek a tömegbe. Hogy mi indította el a lövöldözést, máig vitatott
+       heard: A karhatalmisták rendőrök és szovjet katonák lőttek a tömegbe, hogy mi indította el a lövöldözést, máig vitatott.
+e11      5.2 s  17.0 c/s  heard 0.99  seed 1
+       say:   A halottak közül negyvenhatot ismerünk név szerint, a becslések ennél is többről szólnak
+       heard: A halottak közül 46-ot ismerünk név szerint, a becslések ennél is többről szólna.
+e12      4.0 s  17.0 c/s  heard 0.96  seed 1
+       say:   December kilencedikén a kormány betiltotta a Központi Munkástanácsot
+       heard: December 9-én a kormány betiltotta a központi munkás tanácsot.
+e13      9.2 s  13.8 c/s  heard 0.95  seed 1
+       say:   December tizenegyedikén Kádár az Országházba hívta Rácz Sándort és a tanács titkárát, Bali Sándort, és ott letartóztatták őket
+       heard: Decsember 11-én, Kádár az országházba hívta rád Sándort, és a tanács titkárát Balis Sándort, és ott letartóztatták őket.
+e14     10.4 s  14.1 c/s  heard 0.91  seed 1
+       say:   A december tizenegyedikei és tizenkettedikei sztrájk volt az utolsó. December közepére a puszta szükség visszakényszerítette az embereket a munkába
+       heard: A DeCsenber 11-ei és 12-ei strike volt az utolsó. DeCsenber közepére a pusztaszükség visszakényszerítette az embereket a munkába.
+f1       7.1 s  12.8 c/s  heard 0.94  seed 1
+       say:   Miért nem jött segítség? Az ENSZ Biztonsági Tanácsában a Szovjetunió megvétózta a fellépést
+       heard: Miért nem jött segítséd? Az ENZ biztonsági tanácsában a Szovjetunió meglétuszt a felépést.
+f2       9.0 s  15.0 c/s  heard 0.96  seed 1
+       say:   November negyedikén a Közgyűlés ötven szavazattal nyolc ellenében felszólította csapatai kivonására. Moszkva és Kádár nem törődött vele
+       heard: November 4-én a közgyűlés 50 szavazattal 8 ellenében felszólított a csapatai kivonására. Moszkva és Kádár nömtörődött vele.
+f3       8.8 s  17.1 c/s  heard 0.91  seed 1
+       say:   Ugyanezekben a napokban Izrael, Nagy-Britannia és Franciaország megtámadta Egyiptomot a Szuezi-csatorna miatt, az Egyesült Államok pedig ellenezte ezt
+       heard: Ugyanezekben a napokban Izrael el nagy Britannia és Franciaország megtámadte egyébként a motosszú ezi csatornamijat. Az egyesült államok pedig elleneztelt.
+f4       6.5 s  15.0 c/s  heard 0.97  seed 1
+       say:   Az Egyesült Államok elítélte a szovjet támadást, de Magyarországért nem kockáztatott világháborút
+       heard: Az egyesült államok erítérte a szovjet támadást, de Magyarországért nem kockáztatott világháborút.
+f5       7.8 s  17.1 c/s  heard 0.93  seed 1
+       say:   Dalesz külügyminiszter már október huszonhetedikén kijelentette, hogy ezeket a népeket nem tekintik lehetséges katonai szövetségesnek
+       heard: Dal eszkülig miniszter már oktober 27-én kielentette, hogy ezeket a népeket nem tekinti tehetséges katonai szövetségesne.
+f6       5.3 s  15.6 c/s  heard 0.94  seed 1
+       say:   A Münchenből, amerikai pénzből sugárzó Szabad Európa Rádió bátorította a felkelőket
+       heard: Amincs emből amerikai pénzből sugárzó szabad Európa rádió bátorította a felkerülket.
+f7       5.3 s  17.1 c/s  heard 0.99  seed 1
+       say:   Saját belső vizsgálata szerint egyetlen kivétellel nem ígért közvetlenül katonai segítséget
+       heard: Saját belső vizsgálata szerint egyetlen kivétellel nem ígírt közvetlenül katonai segítsége.
+f8       7.1 s  15.5 c/s  heard 0.95  seed 1
+       say:   November negyedikén egy londoni lapot idézett, amely szerint amerikai segítség jöhet, ha a magyarok kitartanak
+       heard: November 4-én egy Londoni lapot ibézett, amely szerint Amerikai segítség jöhet ha a magyarok kitartana.
+f9       9.5 s  15.9 c/s  heard 0.95  seed 1
+       say:   Sok hallgató ígéretet hallott ki belőle. Egy felmérésben ezer Ausztriába menekült magyar kilencvenhat százaléka bízott valamilyen amerikai segítségben
+       heard: Sok hallgató ígéretet hallod ki belőle. Egy felmérésben 1000 Austria-ba menekült Magyar 96%-a bízot valamilyen amerikai segítségben.
+f10      6.6 s  14.9 c/s  heard 0.94  seed 1
+       say:   A fegyveresek egy hétig tartottak ki, a munkások öt hétig. December közepére leverték a forradalmat
+       heard: A fegyveresek egy hétig tartottak ki, a munkások öt hétid. December közé a pére levérték a forradahamat.
+f11      7.3 s  15.0 c/s  heard 0.98  seed 1
+       say:   Addigra tömegesen menekültek az emberek a határon át, végül mintegy kétszázezren, és megkezdődött a megtorlás
+       heard: Addigra tömegesen meneköltek az emberek a határon át. Végül mint egy 200 ezeren és megkezdődött a megtorlás.
+f12      9.0 s  14.9 c/s  heard 0.97  seed 1
+       say:   A rendszer több mint harminc évig ellenforradalomnak nevezte ötvenhatot. Hogy mit hagyott maga után, az már a történet következő része
+       heard: A rendszer több mint harminc évig ellen forradalomnak nevezte 56-ot, hogy mit hagyott maga után, az már a történet közül része.

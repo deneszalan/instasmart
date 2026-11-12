@@ -1,0 +1,64 @@
+{
+  "id": "earth-nagy-yugoslav-embassy-abduction",
+  "title": "Nagy Imre írásos ígéretre hagyta el 1956-ban a jugoszláv nagykövetséget, és elhurcolták",
+  "body": "1956. november 4-én hajnali 5 óra 20 perckor Nagy Imre miniszterelnök a rádióban bejelentette, hogy szovjet csapatok támadják Budapestet; nagyjából egy órával később a jugoszláv nagykövetségre menekült, ahová miniszterek, írók, Rajk László özvegye, Rajk Júlia, továbbá tizenöt asszony és tizenhét gyermek követte. Odakint Kádár János szovjet hadsereg támogatta új kormánya azt akarta, hogy jöjjenek ki. Jugoszlávia írásos garanciát kért arra, hogy szabadon hazatérhetnek vagy Jugoszláviába mehetnek; Nagy Imre elutasította, hogy Romániába menjen, s azt is, hogy lemondjon és önkritikát gyakoroljon. November 21-én Kádár írásban ígérte, hogy korábbi tevékenységükért nem lesz megtorlás, és szabadon hazatérhetnek. Másnap este busz jött értük; **szovjet katonák szálltak fel rá**, a két jugoszláv diplomatát a szovjet katonai parancsnokságon leszállították, a busz pedig páncélautók kíséretében elhajtott. A Kádár-kormány szerint a csoport saját kérésére ment Romániába; az [ENSZ különbizottsága](https://mek.oszk.hu/01200/01274/) szerint kényszerítették őket. A Bukarest melletti Snagovban őrizet alatt tartották őket, míg Nagy Imrét 1957. április 14-én letartóztatták.",
+  "slides": [
+    {
+      "question": "1956. november 4-től hány napot töltött Nagy Imre miniszterelnök csoportja a budapesti jugoszláv nagykövetségen?",
+      "unit": "nap",
+      "explanation": "18 napot: november 4. reggelétől november 22. estéjéig, amikor felszálltak a Kádár-kormány küldte buszra."
+    },
+    {
+      "alt": "Animáció éjkékben és borostyánszínben: Budapest vázlatos térképe a Parlamenttel és a jugoszláv nagykövetséggel, levelek Belgrád és Kádár között, egy busz, amelyre szovjet katonák szállnak fel, páncélautók között elhajt, szaggatott repülőút Snagovba, Romániába, végül egy naptárlap: 1957. április 14.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "embassy-hu.mp4",
+      "poster": "embassy-hu.jpg"
+    },
+    {
+      "prompt": "A Kádár-kormány szerint Nagy Imre csoportja saját kérésére ment Romániába. Vizsgáld meg a tényeket egyenként: mellette, ellene vagy egyik sem?",
+      "takeaway": "Egyetlen tény sem támasztja alá az állítást, öt ellentmond neki. A csoport elutasította Romániát, szabad hazatérést ígértek nekik, és szovjet katonák vitték el őket úgy, hogy azt sem mondták meg, hová."
+    },
+    {
+      "text": "…nem kíván szankciókat alkalmazni Nagy Imrével és csoportja tagjaival szemben korábbi tevékenységükért.",
+      "attribution": "Kádár János, az új kormány feje, 1956. nov. 21. (visszafordítás angolból)"
+    },
+    {
+      "heading": "A menedéktől Snagovig",
+      "events": [
+        {
+          "when": "1956. nov. 4.",
+          "text": "Nagy Imre a jugoszláv nagykövetségre menekül"
+        },
+        {
+          "when": "nov. 21.",
+          "text": "Kádár szabad hazatérést ígér"
+        },
+        {
+          "when": "nov. 22.",
+          "text": "Szovjet katonák veszik át a buszt"
+        },
+        {
+          "when": "nov. 23.",
+          "text": "Kádár-kormány: „Romániába mentek”"
+        },
+        {
+          "when": "1957. ápr. 14.",
+          "text": "Nagy Imrét Snagovban letartóztatják"
+        }
+      ]
+    },
+    {
+      "question": "Mit kellett volna biztosítania a Nagy Imre buszán utazó két jugoszláv diplomatának 1956. november 22-én?",
+      "options": [
+        "Hogy a csoport hazaérjen",
+        "Hogy a busz Romániába érjen",
+        "Hogy Nagy találkozzon Kádárral",
+        "Hogy bezárják a nagykövetséget"
+      ],
+      "explanation": "A jugoszláv nagykövet azért küldte velük őket, hogy Nagy Imre és társai – Kádár ígérete szerint – hazaérjenek. A szovjet katonai parancsnokságon leszállították őket."
+    }
+  ],
+  "source": {
+    "label": "Az ENSZ különbizottsága a magyar kérdésről: jelentés (1957)"
+  }
+}

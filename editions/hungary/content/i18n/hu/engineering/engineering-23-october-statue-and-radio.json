@@ -1,0 +1,56 @@
+{
+  "id": "engineering-23-october-statue-and-radio",
+  "title": "1956. október 23-án Budapest békésen vonult; este kilenckor lövések dördültek a Rádiónál",
+  "body": "1956. október 23-án, kedden a budapesti diákok a lengyelek melletti rokonszenvtüntetésre vonultak, kezükben az előző este a Műegyetemen megfogalmazott 16 ponttal: a szovjet csapatok kivonása, szabad választások, Nagy Imrét a kormány élére. A betiltott, majd engedélyezett menet délután 3-kor indult a pesti Petőfi-szobortól és Budáról, és a Bem-szobornál találkozott, ahol megjelentek a kivágott kommunista címerű zászlók. Este 6-ra az [ENSZ különbizottságának](https://mek.oszk.hu/01200/01274/) becslése szerint 200–300 ezer ember állt a Parlament előtt. Este 8-kor Gerő Ernő pártvezető a rádióban elítélte a „nacionalista tüntetéseket”; kilenc körül Nagy Imre röviden szólt az erkélyről; fél tíz körül ledőlt a Dózsa György úti Sztálin-szobor. A Bródy Sándor utcai Rádiónál, amelyet az ÁVH őrzött, a diákok be akarták olvastatni követeléseiket. Kilenc után könnygáz, majd lövések jöttek az épületből, és az utcán emberek haltak meg. Az biztos, hogy ekkor kezdődött a lövöldözés; hogy ki lőtt először, és miért, máig nem tisztázott, ahogy az 1956-os Intézet is írja. Munkások hoztak fegyvert, katonák álltak át, hajnali 2 körül szovjet harckocsik érkeztek.",
+  "slides": [
+    {
+      "prompt": "1956. október 23-án a budapesti diákok azt akarták, hogy a Magyar Rádió beolvassa követeléseiket. Mi történt aznap este a Rádiónál?",
+      "answer": "Lövések: az első budapesti halottak",
+      "detail": "Este kilenc után könnygáz, majd lövések jöttek az ÁVH által őrzött épületből. Hogy ki adta le az első lövést, máig vitatott."
+    },
+    {
+      "alt": "Animáció: zászló, a 16 pont, majd Budapest belvárosának vázlatos térképe a Dunával, a menet a Petőfi-szobortól a Bem-szoborig, a tömeg a Parlamentnél, Gerő beszéde, a ledőlő Sztálin-szobor, a Rádió épülete, a bizonyos és a vitatott tények, végül szovjet harckocsik.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "oct23-hu.mp4",
+      "poster": "oct23-hu.jpg"
+    },
+    {
+      "prompt": "Kövesd október 23-át a térképen: olvasd el a nyomokat, és koppints oda, ahol az esemény történt, délután 3-tól este fél tízig.",
+      "takeaway": "A Petőfi-szobortól a Dunán át a Bem-szoborig, vissza a Parlamenthez, aztán a Rádió és a Sztálin-szobor: hat óra alatt a felvonulásból felkelés lett."
+    },
+    {
+      "heading": "A Rádiónál, 1956. október 23.",
+      "left": {
+        "label": "Bizonyos",
+        "text": "Este kilenc körül könnygáz, majd lövések az ÁVH által őrzött épületből. Az utcán emberek haltak meg."
+      },
+      "right": {
+        "label": "Vitatott",
+        "text": "Ki adta le az első lövést, és kinek a parancsára; hányan haltak meg ott: legalább 3, egyes tanúk szerint 8."
+      }
+    },
+    {
+      "heading": "1956. október 23., időrendben",
+      "items": [
+        "Elindul a menet",
+        "Hatalmas tömeg a Parlamentnél",
+        "Gerő Ernő beszél a rádióban",
+        "Ledől a Sztálin-szobor"
+      ],
+      "explanation": "Délután 3-kor a menet; este 6-ra a tömeg a Parlamentnél; 8-kor Gerő beszéde; fél tíz körül ledőlt a szobor."
+    },
+    {
+      "question": "Mit vágtak ki a tüntetők a magyar zászlókból 1956. október 23-án Budapesten?",
+      "options": [
+        "A kommunista címert",
+        "A piros sávot",
+        "A zöld sávot",
+        "A fehér sávot"
+      ],
+      "explanation": "A kommunista állam címerét vágták ki, lyukat hagyva a helyén. A lyukas zászló lett 1956 jelképe."
+    }
+  ],
+  "source": {
+    "label": "1956-os Intézet (Szakolczai Attila): Forradalom és szabadságharc, október 23–27."
+  }
+}

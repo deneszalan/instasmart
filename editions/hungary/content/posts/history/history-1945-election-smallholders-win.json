@@ -1,0 +1,188 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-1945-election-smallholders-win",
+  "field": "history",
+  "title": "Hungary’s free vote of 1945 gave the Smallholders 57%, yet the Communists got the police",
+  "emoji": "🗳️",
+  "body": "On 4 November 1945, half a year after the war in Europe ended and with Soviet troops in the country, Hungary held a free election. The **Independent Smallholders’ Party** won about 57% of the votes and 245 of the 409 elected seats; the Communists of Mátyás Rákosi won about 17%. The US representative in Budapest [reported](https://history.state.gov/historicaldocuments/frus1945v04/d853) no evidence that the vote was anything but free. But real power lay with the Allied Control Commission under Soviet marshal Kliment Voroshilov, who, by the Library of Congress’s country study, vetoed a Smallholder at the Interior Ministry. The coalition of 15 November had 18 ministers, 9 of them Smallholders, and the Smallholders [conceded the Interior Ministry](https://history.state.gov/historicaldocuments/frus1945v04/d856) to the Communist Imre Nagy. That ministry ran the police and the political police. With it the Communists wore their rivals down, a method Rákosi later called “salami tactics”: Smallholder leader Béla Kovács was arrested by Soviet authorities in 1947, a second election that year was tainted by fraud, and in 1949 voters had a single list.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "In Hungary’s free election of 4 November 1945, about what share of the votes did the Communist Party win?",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "answer": 17,
+      "unit": "%",
+      "explanation": "About 17% (16.96% in the final count), close to the Social Democrats’ 17.4%. The Independent Smallholders’ Party won about 57%."
+    },
+    {
+      "type": "video",
+      "src": "election1945.mp4",
+      "poster": "election1945.jpg",
+      "alt": "Animation on a dark green card: a schematic map of Hungary, ballot papers, bars of the 4 November 1945 vote, a hemicycle of 409 seats with 245 for the Smallholders, a cabinet of 18 where the Interior Ministry goes to a Communist, then rivals cut down slice by slice to one list in 1949.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Deliberate Thought” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "1945-election-smallholders-win",
+      "prompt": "Share out the 18 posts of the November 1945 cabinet in proportion to the parties’ seats in the new National Assembly.",
+      "takeaway": "In proportion, the Smallholders’ 245 of 409 seats give 11 of 18 posts. They got 9, and the Interior Ministry, with the police, went to a Communist."
+    },
+    {
+      "type": "chart",
+      "heading": "Votes in Hungary, 4 November 1945",
+      "items": [
+        {
+          "label": "Smallholders",
+          "value": 57,
+          "emphasis": true
+        },
+        {
+          "label": "Social Democrats",
+          "value": 17.4
+        },
+        {
+          "label": "Communists",
+          "value": 17
+        },
+        {
+          "label": "National Peasants",
+          "value": 6.9
+        },
+        {
+          "label": "Civic Democrats",
+          "value": 1.6
+        }
+      ],
+      "unit": "%",
+      "note": "Final count; turnout about 92.5% (Nohlen and Stöver)"
+    },
+    {
+      "type": "timeline",
+      "heading": "From a free vote to one list",
+      "events": [
+        {
+          "when": "4 Nov 1945",
+          "text": "Smallholders win 57% of the vote"
+        },
+        {
+          "when": "15 Nov 1945",
+          "text": "A Communist interior minister"
+        },
+        {
+          "when": "1947",
+          "text": "Smallholder Béla Kovács arrested"
+        },
+        {
+          "when": "1947",
+          "text": "New election, tainted by fraud"
+        },
+        {
+          "when": "1949",
+          "text": "A single list; a People’s Republic"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "After Hungary’s 1945 election, which ministry did the Smallholders concede to the Communists, though they had won a majority?",
+      "options": [
+        "The Interior Ministry",
+        "The Foreign Ministry",
+        "The Finance Ministry",
+        "The Ministry of Agriculture"
+      ],
+      "answer": 0,
+      "explanation": "The Interior Ministry ran the police and the political police. Communist Imre Nagy took it on 15 November 1945, after Soviet marshal Voroshilov had vetoed a Smallholder there."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "1945",
+    "election",
+    "smallholders",
+    "voroshilov",
+    "rakosi"
+  ],
+  "source": {
+    "label": "US Office of the Historian: telegram from Budapest on Hungary’s election, 9 November 1945",
+    "url": "https://history.state.gov/historicaldocuments/frus1945v04/d853"
+  },
+  "theme": {
+    "gradient": [
+      "#1b2420",
+      "#3e3a22"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-11T23:40:00Z"
+}

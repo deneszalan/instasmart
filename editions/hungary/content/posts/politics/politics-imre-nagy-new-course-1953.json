@@ -1,0 +1,171 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-imre-nagy-new-course-1953",
+  "field": "politics",
+  "title": "In 1953 Imre Nagy closed Hungary’s internment camps, but Rákosi kept control of the party",
+  "emoji": "🌅",
+  "body": "After Joseph Stalin died on 5 March 1953, his successors in Moscow wanted calm in Hungary, where wage earners’ real wages had fallen by a fifth since 1949. In June they summoned Hungary’s leaders, condemned Mátyás Rákosi’s policies and made **Imre Nagy**, the Communist who had carried out the 1945 land reform, prime minister. On 4 July 1953 Nagy announced a “new course” in Parliament: the internment camps were dissolved, the deportations ended and an amnesty set many free; money moved from heavy industry to food, housing and consumer goods; peasants could leave the collective farms and deliver less to the state. Party reports told of villages lighting bonfires for him, and by 1954 consumption was about a fifth higher than in 1950, as the [1956 Institute](https://mek.oszk.hu/01900/01937/html/ora1/ora1.htm) recounts. But Rákosi stayed First Secretary of the party, which controlled the press, the radio and the officials, and argued in Moscow that the new course endangered socialism. In 1955 Moscow turned against Nagy: the party condemned him in March, removed him as prime minister in April and expelled him in December. His name still stood for reform.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "By 1953, by how much had the real wages of Hungary’s wage earners fallen since 1949?",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "answer": 20,
+      "unit": "%",
+      "explanation": "By about 20%, by the 1956 Institute’s account. With the economy near collapse, Moscow wanted calm in Hungary and a new prime minister."
+    },
+    {
+      "type": "video",
+      "src": "newcourse.mp4",
+      "poster": "newcourse.jpg",
+      "alt": "Animation on a night-blue card that glows amber: a calendar for 5 March 1953, a line from Budapest to Moscow, real wages falling, Imre Nagy, a schematic Parliament and the measures of the new course, village bonfires, then two pillars, government and party, and the steps of Nagy’s fall in 1955.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Peace of Mind” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 4
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "imre-nagy-new-course-1953",
+      "prompt": "Tap the six events of Imre Nagy’s first government in the order they happened, and watch them land on the timeline.",
+      "takeaway": "Under two years of hope: from the new course of 4 July 1953 to his fall in April 1955. Rákosi, still head of the party, won Moscow back."
+    },
+    {
+      "type": "compare",
+      "heading": "Two centres of power, 1953–55",
+      "left": {
+        "label": "Government: Imre Nagy",
+        "text": "Closed the camps, ended deportations, an amnesty, less for heavy industry, peasants free to leave the co-ops."
+      },
+      "right": {
+        "label": "Party: Mátyás Rákosi",
+        "text": "Stayed First Secretary. The party ran the press, the radio and the officials, and slowed every reform."
+      }
+    },
+    {
+      "type": "timeline",
+      "heading": "Nagy’s first government",
+      "events": [
+        {
+          "when": "5 March 1953",
+          "text": "Stalin dies"
+        },
+        {
+          "when": "4 July 1953",
+          "text": "Nagy announces a new course"
+        },
+        {
+          "when": "26 July 1953",
+          "text": "Amnesty; internment abolished"
+        },
+        {
+          "when": "April 1955",
+          "text": "Removed as prime minister"
+        },
+        {
+          "when": "Dec 1955",
+          "text": "Expelled from the party"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Who kept control of Hungary’s ruling party while Imre Nagy was prime minister in 1953–55?",
+      "options": [
+        "Mátyás Rákosi",
+        "János Kádár",
+        "Ernő Gerő",
+        "András Hegedüs"
+      ],
+      "answer": 0,
+      "explanation": "Mátyás Rákosi stayed First Secretary of the Hungarian Workers’ Party and won Moscow back to his side. In April 1955 András Hegedüs replaced Nagy as prime minister."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "1953",
+    "imrenagy",
+    "newcourse",
+    "rakosi",
+    "amnesty"
+  ],
+  "source": {
+    "label": "1956 Institute (Szakolczai Attila): Crisis and the search for a way out, 1953–56 (in Hungarian)",
+    "url": "https://mek.oszk.hu/01900/01937/html/ora1/ora1.htm"
+  },
+  "theme": {
+    "gradient": [
+      "#16213a",
+      "#5a3a1e"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-11T23:55:00Z"
+}

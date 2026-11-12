@@ -1,0 +1,176 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-nagy-ousted-rakosi-returns-1955",
+  "field": "politics",
+  "title": "In 1955 Soviet troops left Austria; in Hungary, Mátyás Rákosi pushed Imre Nagy out",
+  "emoji": "⚖️",
+  "body": "In July 1953, after Stalin’s death, Moscow made the reformer **Imre Nagy** prime minister of Hungary, but **Mátyás Rákosi** stayed party leader and worked to win his power back. In January 1955 the Soviet leaders condemned Nagy’s course; in April the party threw him out of its leadership, Rákosi’s choice András Hegedüs became prime minister, and in December Nagy was expelled from the party. Next door, events ran the other way. On 14 May 1955 Hungary signed the Warsaw Pact; the next day the Austrian State Treaty ended the occupation of Austria, the last Soviet units left Vienna on 19 September, and in October Austria declared itself neutral. Since the 1947 peace treaty, Soviet troops had stayed in Hungary to guard their lines of communication with their zone in Austria, and many Hungarians expected them to go too. They stayed. On 14 December 1955 Hungary joined the United Nations. Both examples came back in 1956: on 1 November Imre Nagy declared Hungary neutral and appealed to the UN, as the [UN Special Committee’s report](https://digitallibrary.un.org/record/712474/files/A_3592-EN.pdf) records.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "In May 1955, how many days apart were the Warsaw Pact and the Austrian State Treaty signed?",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "answer": 1,
+      "unit": "days",
+      "explanation": "One day: the Warsaw Pact on 14 May 1955, the Austrian State Treaty in Vienna on 15 May."
+    },
+    {
+      "type": "video",
+      "src": "nagy1955.mp4",
+      "poster": "nagy1955.jpg",
+      "alt": "Animation on a slate-blue night: a beam tipping from Imre Nagy to Mátyás Rákosi, Nagy’s offices struck off one by one, then a schematic map of Austria and Hungary with the Soviet supply line, Austria freed and neutral while the line stays in Hungary, a UN ring, and Hungary’s neutrality in 1956.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Rumination” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "nagy-ousted-rakosi-returns-1955",
+      "prompt": "Tap the events of 1955 in Hungary and Austria in the order they happened.",
+      "takeaway": "Within one day in May 1955 Hungary was bound into a Soviet-led alliance and Austria won its way out of occupation. By December Soviet troops had left Austria but stayed in Hungary, and Imre Nagy was out."
+    },
+    {
+      "type": "timeline",
+      "heading": "1955, two neighbours",
+      "events": [
+        {
+          "when": "18 April",
+          "text": "Nagy out, András Hegedüs premier"
+        },
+        {
+          "when": "14 May",
+          "text": "Hungary signs the Warsaw Pact"
+        },
+        {
+          "when": "15 May",
+          "text": "Austrian State Treaty signed"
+        },
+        {
+          "when": "19 Sept",
+          "text": "Last Soviet units leave Vienna"
+        },
+        {
+          "when": "14 Dec",
+          "text": "Hungary joins the UN"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "heading": "Why Soviet troops were in Hungary",
+      "text": "The 1947 peace treaty let the Soviet Union keep troops in Hungary to guard its lines of communication with its zone in Austria. Austria’s State Treaty of 15 May 1955 ended that occupation. The Warsaw Pact, signed the day before, set up a joint command under a Soviet marshal, and two Soviet divisions stayed in Hungary."
+    },
+    {
+      "type": "compare",
+      "heading": "End of 1955",
+      "left": {
+        "label": "Hungary",
+        "text": "Mátyás Rákosi back in control, Imre Nagy expelled from the party, Soviet troops still there, in the Warsaw Pact."
+      },
+      "right": {
+        "label": "Austria",
+        "text": "Occupation over, the last Soviet units gone from Vienna, neutral by law since 26 October."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "Under the 1947 peace treaty, why could the Soviet Union keep troops in Hungary?",
+      "options": [
+        "To guard supply lines to Austria",
+        "To defend Hungary’s borders",
+        "To supervise Hungary’s elections",
+        "To rebuild the Danube bridges"
+      ],
+      "answer": 0,
+      "explanation": "Article 22 let it keep forces “for the maintenance of the lines of communication” with its zone of occupation in Austria. That zone ended in 1955."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "1955",
+    "imrenagy",
+    "rakosi",
+    "austria",
+    "warsawpact"
+  ],
+  "source": {
+    "label": "United Nations: Report of the Special Committee on the Problem of Hungary (1957)",
+    "url": "https://digitallibrary.un.org/record/712474/files/A_3592-EN.pdf"
+  },
+  "createdAt": "2026-11-12T00:30:00Z",
+  "theme": {
+    "gradient": [
+      "#162231",
+      "#2c5450"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}

@@ -1,0 +1,195 @@
+o1       7.9 s  17.5 c/s  heard 0.95  seed 1
+       say:   Ezerkilencszáznegyvenöt november negyedikén a magyarok szabadon választhattak több párt közül, és a kommunisták tizenhét százalékot kaptak
+       heard: 1945. november 4-én a magyarok szabadon választhatak többárt közül, és a kommunisták 17 százalékot kapda.
+o2       7.4 s  15.7 c/s  heard 0.96  seed 1
+       say:   Ezerkilencszáznegyvenkilenc május tizenötödikén már egyetlen lista volt, és a jelöletlen szavazólap igennek számított
+       heard: 1949 május 15-én már egyetlálista volt, és a jelöletlen szavazóllap igennek számított.
+o3       5.4 s  17.7 c/s  heard 0.85  seed 1
+       say:   A hivatalos eredmény szerint a szavazók kilencvenöt egész hat tized százaléka támogatta a listát
+       heard: A hivatalus eredményszerint a szavazió 95.6%-at ámogatta a listát.
+o4       9.7 s  16.1 c/s  heard 0.96  seed 1
+       say:   A kettő között Magyarország szeletenként veszítette el a szabadságát. Elmondjuk, hogyan történt, és miért számított még ezerkilencszázötvenhat októberében is
+       heard: a kettő között magyarország feletenként veszítette el a szabottsággat. Elmondjuk hogyan történt, és miért számított még 1956 októberében is.
+a1       7.8 s  16.1 c/s  heard 0.98  seed 1
+       say:   Magyarország Németország oldalán lépett be a háborúba, ezerkilencszáznegyvennégy márciusában pedig német csapatok szállták meg
+       heard: Magyarország, Németország oldalán lépett be a háborúba. 1944 márciusában pedig Német csapatok szállták.
+a2       7.6 s  15.9 c/s  heard 0.97  seed 1
+       say:   Abban az évben mintegy négyszázharminchétezer zsidót deportáltak Magyarországról, többségüket Auschwitzban gyilkolták meg
+       heard: Abban az évben, mint egy 437 ezer zsidót deportáltak Magyarországról, többségüket AUS vizban gyilkolták meg.
+a3       8.6 s  15.4 c/s  heard 0.98  seed 2
+       say:   Ősszel a Vörös Hadsereg harcolva nyomult be az országba, Budapestet pedig decembertől ezerkilencszáznegyvenöt februárjáig ostromolták
+       heard: Ősszel a vörös hadsereg harcolva nyomolt be az országba, Budapestet pedig decembertől 1945 februáljáig ostromoltá.
+a4       5.4 s  18.0 c/s  heard 0.98  seed 1
+       say:   Áprilisra kiűzték a németeket, és becslések szerint a nemzeti vagyon negyven százaléka elpusztult
+       heard: Áprilisra kihűzték a németeket, és becsülések szerint a nemzeti vagyon 40 százalika elpusztult.
+a5       5.0 s  16.9 c/s  heard 0.97  seed 1
+       say:   A németeket kiűző szovjet katonák fosztogattak is, és nagyon sok nőt megerőszakoltak
+       heard: A Németeket kihűzés szovjet katonák fosztogattak is, és nagyon sok nőt megerőszakolta.
+a6       7.7 s  15.4 c/s  heard 0.96  seed 1
+       say:   Mintegy hatszázezer magyart, katonákat és civileket, hurcoltak szovjet táborokba, és nagyjából harmaduk sosem tért haza
+       heard: Mint egy 600-er magyart, katonákat is cívileket, húrcoltak szóvjet táborokba, és nagyjából harmadók sosem tért haza.
+a7       7.9 s  13.7 c/s  heard 0.98  seed 1
+       say:   Gyarmati György történész fél szabadulásnak nevezi ezt. A nácik elmentek, de az ország megszállás alá került
+       heard: gyarmati györgy történész fél szabadulásnak nevezí azt. A nácik elmentek, de az ország megszállás alá került.
+a8       5.9 s  17.8 c/s  heard 0.97  seed 3
+       say:   Ezerkilencszáznegyvenöt januárjában a Debrecenben megalakult ideiglenes kormány aláírta a fegyverszünetet
+       heard: 1945 januáriában a Debrecenben megalakult ideiglenes kormány aláírt a fegyverszűnet.
+a9       8.0 s  13.7 c/s  heard 0.96  seed 1
+       say:   A valódi hatalom ettől fogva a Szövetséges Ellenőrző Bizottságé volt, élén Kliment Vorosilov szovjet marsallal
+       heard: A valódi hatalom ettől fogva a szövetséges ellenőrző bizottságé volt Élin Kliment, Varusilov Szovjet Marsállal.
+a10      8.4 s  16.5 c/s  heard 1.00  seed 1
+       say:   Ezerkilencszáznegyvenöt márciusában a földreform felosztotta a nagybirtokokat, és mintegy hatszáznegyvenezer szegény paraszt jutott földhöz
+       heard: 1945 márciusában a föld reform felosztotta a nagy birtokokat, és mint egy 640 ezer szegény parasztjutott földhöz.
+b1       8.4 s  15.5 c/s  heard 0.96  seed 1
+       say:   Ezerkilencszáznegyvenöt november negyedikén hat, az Ellenőrző Bizottság által engedélyezett párt indult a nemzetgyűlési választáson
+       heard: 1945. november 4-én hat, az ellenőrző bizottságáltal endedélyezett párt indult a nemzegyűlési választáson.
+b2       6.1 s  17.0 c/s  heard 0.86  seed 1
+       say:   A szavazás titkos volt, és a választójogosultak kilencvenkét egész öt tized százaléka járult az urnákhoz
+       heard: A szavazás titkos volt, és a választó jogosult a 92.5%-a lékajáról az úrnakhoz.
+b3       5.6 s  18.5 c/s  heard 1.00  seed 1
+       say:   A Független Kisgazdapárt a szavazatok mintegy ötvenhét százalékát kapta, így egyedül is többségbe jutott
+       heard: A független kis gazdapárt a szavazatok mint egy 57 százalékát kapta, így egyedül is több ségbe jutott.
+b4       7.7 s  13.2 c/s  heard 0.87  seed 1
+       say:   A szociáldemokraták tizenhét egész négy tized, Rákosi Mátyás kommunistái tizenhét százalékot értek el
+       heard: a Szociáldemokraták 17,4% rákosi mátyás kommunistályi 17%-ot értek el.
+b5       5.6 s  19.4 c/s  heard 0.99  seed 1
+       say:   Az amerikai követ azt jelentette Budapestről, hogy semmi sem utal arra, hogy a választás ne lett volna szabad
+       heard: Az amerikai követ azt jelentette Budapestről, hogy semmi sem utala arra, hogy a választás ne lett volna szabad.
+b6       6.0 s  16.7 c/s  heard 0.95  seed 1
+       say:   A szövetségesek azonban koalíciót követeltek, és a tizennyolc miniszterből csak kilenc lett kisgazda
+       heard: A szövetségesek azonban koalíciót követeltek, és a 18 miniszterből csak kilánsz lett kiskozda.
+b7       5.2 s  16.7 c/s  heard 0.94  seed 1
+       say:   Vorosilov megvétózta, hogy kisgazda vezesse a rendőrséget irányító belügyminisztériumot
+       heard: Varosilov megvétúzta, hogy kis gazdal vezese a rendőrséget irányító belügyminizkériomot.
+b8       5.6 s  16.6 c/s  heard 1.00  seed 1
+       say:   A tárcát a kommunista Nagy Imre kapta, aki ezerkilencszázötvenhatban majd a kormány élére áll
+       heard: A tárcát a kommunista nagy imre kapta, aki 1956-ban majd a kormány élére áll.
+b9       5.2 s  16.4 c/s  heard 1.00  seed 1
+       say:   A Péter Gábor vezette politikai rendőrség kezdettől a kommunistáknak engedelmeskedett
+       heard: A Péter Gábor vezette politikai rendőrség kezdettől a kommunistáknak engedelmeskedett.
+b10      7.1 s  13.9 c/s  heard 0.93  seed 1
+       say:   Ezerkilencszáznegyvenhat februárjában Magyarország köztársaság lett, elnöke a kisgazda Tildy Zoltán
+       heard: 1946 februárjában Magyarország köztásosság lett, elnöke a kisgozda Tjödízoltán.
+b11     11.6 s  13.4 c/s  heard 0.98  seed 1
+       say:   Közben összeomlott a pénz. Ezerkilencszáznegyvenhat júliusában az árak nagyjából tizenöt óránként megduplázódtak, ez volt a valaha mért legnagyobb infláció
+       heard: közben összeomlott a pénz. 1946 júliusában az árok nagyjából 15 óránként megduplázuttak, ez volt a valaha mért legnagyobb infláció.
+b12      3.3 s  16.7 c/s  heard 0.98  seed 1
+       say:   Augusztusban az értéktelen pengő helyére a forint lépett
+       heard: Augustusban az értéktelen pengő helyére a forint lépet.
+c1       6.9 s  13.0 c/s  heard 0.97  seed 1
+       say:   Rákosi később szalámitaktikának nevezte a módszerét. A riválisokat szeletenként vágták le
+       heard: Rákosi később szalámi taktikának neveszte a mód szerét, a ríváli sokat szeleten kint vágták le.
+c3       9.0 s  15.6 c/s  heard 0.98  seed 1
+       say:   Ezerkilencszáznegyvenhat végén a politikai rendőrség köztársaságellenes összeesküvést jelentett be, és kisgazda képviselőket tartóztatott le
+       heard: 1946 végén a politikai rendőrség köztársosság ellenes összeesküvést jelentett be, és kis gazda képviselőket tartusztatott le.
+c4       6.1 s  13.7 c/s  heard 0.95  seed 1
+       say:   Vallomásaikat kínzással csikarták ki a politikai rendőrség Andrássy úti székházában
+       heard: Valomásaikat kényzással csikarták ki a politikai rendőrség Andrássi útiszégházában.
+c5      10.3 s  15.9 c/s  heard 0.98  seed 1
+       say:   A parlament nem függesztette fel Kovács Béla kisgazda főtitkár mentelmi jogát, ezért ezerkilencszáznegyvenhét február huszonötödikén szovjet katonák tartóztatták le
+       heard: A parlament nem függesztette fel kovácsbél a kis gazda főtitkármentelmi jogát. Ezért 1947 február 25-én szovjet katonáktartóztatták le.
+c6       3.2 s  16.2 c/s  heard 1.00  seed 1
+       say:   Nyolc évet töltött szovjet börtönökben és táborokban
+       heard: 8 évet töltött szovjet börtönökben és táborokban.
+c7       6.0 s  17.7 c/s  heard 0.94  seed 1
+       say:   Májusban Nagy Ferenc miniszterelnököt svájci szabadsága alatt vádolták meg. Lemondott, és külföldön maradt
+       heard: Májusban nagy Ferenc miniszterelnök egy Svájci szabadsága alatt vádolták meg. Lemondott is külföldön marak.
+c8       7.7 s  17.2 c/s  heard 0.97  seed 1
+       say:   Az ezerkilencszáznegyvenhét augusztus harmincegyedikei választás előtt mintegy négyszázhatvanhétezer embert húztak ki a névjegyzékből
+       heard: Az 1947 augustus 31. érdikei választás előtt, mint egy 467 ezer embert húztak ki a névjedzékből.
+c9       8.9 s  15.7 c/s  heard 1.00  seed 1
+       say:   A választás napján kommunista aktivisták szavazókörről szavazókörre jártak, és a távol lévőknek szánt kék cédulákkal szavaztak újra meg újra
+       heard: A választás napján kommunista aktivisták szavazó körről szavazó körre jártak, és a távol lévőknek szánt kék cédulákkal szavaztak újra meg újra.
+c10      8.9 s  15.4 c/s  heard 0.95  seed 1
+       say:   Hogy hány hamis szavazat lett ebből, vitatott. A rendőrfőnök csaknem hatvanháromezret számolt, más becslések mintegy kétszázezerig mennek
+       heard: hogy hányhamis szavazat lett ebből vithatott. A rendőrfőnök csak nem 63 ezzelett számolt, más becsléset, mint egy 200 erig menne.
+c11      6.3 s  14.8 c/s  heard 0.95  seed 1
+       say:   A kommunisták huszonkét százalékkal elsők lettek, a kisgazdák tizenöt százalékra estek vissza
+       heard: A kommunisták 22 százalékkal elsők lettet, a kis gazdák 15 százalékra estet vissza.
+c12      8.5 s  16.1 c/s  heard 0.97  seed 1
+       say:   Az ellenzéki pártok együtt így is mintegy negyven százalékot kaptak. Aztán a Függetlenségi Párt negyvenkilenc mandátumát megsemmisítették
+       heard: Az ellenzéki pártok együtt így is, mint egy nejven százalékot haptak, aztán a függetlenségi párt 49 mandátumát megsem isítették.
+d1      10.2 s  15.3 c/s  heard 0.98  seed 1
+       say:   A kommunisták ezerkilencszáznegyvennyolcat a fordulat évének nevezték. Március huszonötödikén egy nap alatt államosították a száz főnél nagyobb vállalatokat
+       heard: A kommunisták 1948-at a fordulat évének nevezték. Március 25-én egy nap alatt államosították a száz főnél nagyobb vállalatokat.
+d2       8.2 s  14.4 c/s  heard 0.98  seed 1  CHECK: its end wasn't heard
+       say:   Júniusban a szociáldemokratákat beolvasztották a kommunista pártba, és létrejött a Magyar Dolgozók Pártja, az em-dé-pé
+       heard: Jóniusban a Szociáldemokratákat beolvasztották a kommunista pártba és létrejött a magyar dolgozók pártja az MDP.
+d3       7.4 s  14.7 c/s  heard 0.92  seed 1
+       say:   Az ellenálló szociáldemokratákat, köztük Kéthly Annát, kiszorították, Tildy Zoltán elnököt pedig lemondatták
+       heard: az ellenállú sociálydemokratákat köztük két hi annát, kiszorították, dildizoltan elnökött pedig elmondatták.
+d5       8.8 s  15.0 c/s  heard 0.92  seed 1
+       say:   Ezerkilencszáznegyvenkilenc május tizenötödikén a választók egyetlen listát kaptak, a Népfrontét, amelyet az em-dé-pé állított össze
+       heard: 1959. m. 15-én a választók egyetlen listát kaptak a népfrontét, amelyet az MDP állított össze.
+d6       5.6 s  13.4 c/s  heard 0.94  seed 1
+       say:   Az igenhez nem kellett jelölés. A lapot úgy, ahogy volt, bedobták az urnába
+       heard: Az igenhez nem kellett jelöli is. A lapot úgy, hogy volt, bedopták az úrnába.
+d7       7.1 s  15.5 c/s  heard 0.93  seed 1
+       say:   A nemhez egy kört kellett két vonallal áthúzni a függöny mögött, és feljegyezhették, ki időzik soká a fülkében
+       heard: A nemhez egy kört kellett két vonalál áthúzni a függöny mögött és feljedjesz hették, ki időzik sokkal a fölkében.
+d9       7.5 s  15.0 c/s  heard 0.93  seed 1
+       say:   Ezerkilencszáznegyvenkilenc augusztus huszadikán szovjet mintájú alkotmány tette Magyarországot népköztársasággá
+       heard: 1949. augustus 20-án, Szovjet mintájó alkotmány tette Magyarországot népgőztásossággá.
+d10      5.7 s  13.4 c/s  heard 0.96  seed 1
+       say:   A régi Kossuth-címer helyére vörös csillagos új címer került, a zászlókra is
+       heard: A régi kosut címer helyére, vörös csillagos új címer került, az áztlókra is.
+e2      10.3 s  15.0 c/s  heard 0.91  seed 2
+       say:   Ezerkilencszáznegyvennyolc december huszonhatodikán letartóztatták Mindszenty József bíborost, a magyar katolikus egyház fejét, és életfogytiglanra ítélték
+       heard: 1948 december 26-án letartóztatták minthogy József Bíborost, a magyar katorikus egyház fejét, és életfottiglanra itirték.
+e3       8.7 s  16.5 c/s  heard 0.96  seed 1
+       say:   Sztálin ezerkilencszáznegyvennyolcban szakított Titóval, Jugoszlávia kommunista vezetőjével, és minden szovjet szövetséges titoistákra vadászott
+       heard: Stálin 1948-ban szakított titóval, Júgos Slávia kommunista vezető ével, és minden szovjet szövetséges titóistákra vadászó.
+e4       7.7 s  13.8 c/s  heard 0.97  seed 1
+       say:   Magyarországon Rajk László lett a kiszemelt áldozat, a spanyol polgárháború veteránja, volt belügyminiszter
+       heard: Magyarországon rajk lászló lett a kiszemelt ádozat. A spanyol polgárháború veteránya volt belügyminisztel.
+e5       9.4 s  16.2 c/s  heard 0.97  seed 1
+       say:   Kémkedéssel és Titóval szőtt összeesküvéssel vádolták, és ezerkilencszáznegyvenkilenc szeptemberében, a rádió nyilvánossága előtt állították bíróság elé
+       heard: Kémkedéssel és Titoval szőt összeesküvés elváldolták, és 1949 szeptemberében a rádió nyilvánossága előtt állították bíróságeli.
+e6       5.7 s  12.4 c/s  heard 0.97  seed 1
+       say:   Rajk mindent beismert. Minden kérdést és minden választ előre megírtak
+       heard: Rajt mindent be ismert. Minden kérdést és minden választ előre megírt a...
+e7       8.1 s  16.9 c/s  heard 0.94  seed 1
+       say:   Tanúk később elmondták az ensznek, hogy a vádlottakat megkínozták, és hogy Kádár János belügyminiszter életet ígért Rajknak a vallomásért
+       heard: Tanúk később elmondták az ensznek, hogy a várlottakat megkinozták és hogy Kádári János belügyminister életet igért rajtnak a vallomási.
+e8       9.2 s  15.9 c/s  heard 0.96  seed 1
+       say:   Ezerkilencszáznegyvenkilenc október tizenötödikén Rajkot Szőnyi Tiborral és Szalai Andrással együtt felakasztották. Titkos mellékperek következtek
+       heard: 1949. oktober 15-én rajkot szőnyitiborral és szalajjandrással együtt felakasztották. Titkos mellékperek következte.
+e9       4.6 s  18.1 c/s  heard 0.98  seed 1
+       say:   Rákosi arra intette a pártot, hogy minden hiba mögött keresse meg az ellenség kezét
+       heard: Rákosi arra intette a pártot, hogy minden híba mögött keres se meg az ellenség közét.
+e10     12.3 s  13.0 c/s  heard 0.97  seed 2
+       say:   A tanulság világos volt. Senki sem volt biztonságban. Ezerkilencszázötvenegyben magát Kádárt is letartóztatták, és koholt vádak alapján életfogytiglanra ítélték
+       heard: A tanulság világos volt, senki sem volt biztonságban. 1951-ben magát kádárt is letartóztatták, és kóholt vádak alapján életfújtiglanra ítérték.
+e11      6.6 s  15.5 c/s  heard 0.99  seed 4
+       say:   A rendszer csak ezerkilencszázötvenhat márciusában ismerte el, hogy a Rajk elleni vádak koholtak voltak
+       heard: A rendszer csak 1956 Márciusában ismerte el, hogy a rajt elleni vádak koholtak voltak.
+g1       7.1 s  14.5 c/s  heard 0.96  seed 2
+       say:   Az ötvenes évek elejére a hatalom egyetlen párté lett, azon belül pedig egyetlen emberé, Rákosi Mátyásé
+       heard: az 50-es évek elejére a hatalom egyetlen párté lett, azon belül pedig egyetlen emberé vácosi mátyási.
+g2       5.6 s  16.4 c/s  heard 0.94  seed 4
+       say:   Arcképe Sztáliné mellett függött, a sajtó pedig Sztálin legjobb magyar tanítványának nevezte
+       heard: Arzgépe Stáliné mellett függött, a sajtó pedig Stálin legjobb magyar tanétványának neveszt.
+g3       9.1 s  14.9 c/s  heard 0.96  seed 1
+       say:   Hatvanadik születésnapjára, ezerkilencszázötvenkettő március kilencedikén, az egész ország ajándékai megtöltöttek egy budapesti palotát
+       heard: 60. születés napjára, 1952. március 9-én, az egész ország ajándékai megtöltöttek egy budapesti palottát.
+g4       3.2 s  16.2 c/s  heard 0.94  seed 1
+       say:   Augusztusban a miniszterelnöki tisztséget is átvette
+       heard: Augustusban a miniszterelnőkit is cséget is átvette.
+g5       6.5 s  14.5 c/s  heard 0.93  seed 1
+       say:   Az ötéves terv a nehézipart hajszolta, egy új Duna-parti vasművet pedig Sztálinról neveztek el
+       heard: Az öt éves terv nehézipart hajszolta, egy új duna parte basnüvet pedig Stalinról neveztek el.
+g6       9.8 s  15.7 c/s  heard 0.95  seed 1
+       say:   A parasztokat termelőszövetkezetekbe kényszerítették, az ávéhá mindenkit figyelt, a reálbérek pedig negyvenkilenc és ötvenhárom között ötödével csökkentek
+       heard: A barasztogat termelő szövetkezetekbe kényszerítették, az AVH mindenkit figyelt, a Reabirek pedig 49 és 53 között 5 ével csökkente.
+g8       8.7 s  15.1 c/s  heard 0.90  seed 1
+       say:   Ezerkilencszázötvenhárom március ötödikén meghalt Sztálin. Három nappal később az országgyűlés törvénybe iktatta halhatatlan emlékét
+       heard: 1953. Március 5. épp meghaltatárin. Három nappal később az ország jövés törvénybe iktatta hallhatatlan emléki.
+g9       6.8 s  16.3 c/s  heard 0.97  seed 1
+       say:   Nyolc év alatt a szabad választásból egyetlen lista lett, a koalícióból pedig szovjet csapatok őrizte diktatúra
+       heard: Nolc év alatt a szabad választásból egyetlen lest alatt, a koalícióból pedig szovjet csapatok őrisztediktatúra.
+g10      8.6 s  14.2 c/s  heard 0.99  seed 1
+       say:   A terror, a kitelepítések, a szegénység és az idegen csapatok vitték utcára a magyarokat ezerkilencszázötvenhat októberében
+       heard: a terror, a kitelepítések, a szegénység és az idegen csapatok vitték utcára a magyarokat 1956. oktoberében.
+g11      6.5 s  16.1 c/s  heard 0.98  seed 1
+       say:   A vörös csillagos címert pedig kivágták a zászlókból. Hogy miért keltek fel, arról szól a következő film
+       heard: A vörös csillagos címer pedig kívágták a szászlókból, hogy miért keltek fel arról szól a következő film?

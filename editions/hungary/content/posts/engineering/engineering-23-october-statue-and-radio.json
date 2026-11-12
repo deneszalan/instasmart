@@ -1,0 +1,152 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-23-october-statue-and-radio",
+  "field": "engineering",
+  "title": "On 23 October 1956 Budapest marched in peace; by 9 p.m. shots rang out at the Radio",
+  "emoji": "📻",
+  "body": "On Tuesday 23 October 1956 Budapest’s students marched in sympathy with Poland, carrying 16 demands drawn up the night before at the Technical University: Soviet troops out, free elections, Imre Nagy in government. Banned and then allowed, the march set off at 3 p.m. from the Petőfi statue in Pest and from Buda and met at the Bem statue, where flags with the Communist crest cut out appeared. By 6 p.m., the [UN Special Committee](https://mek.oszk.hu/01200/01274/) estimated, 200,000 to 300,000 people stood before Parliament. At 8 p.m. party leader Ernő Gerő condemned “nationalist demonstrations” on the radio; about 9 p.m. Imre Nagy spoke briefly from a balcony; at about 9.30 p.m. the Stalin statue on Dózsa György út fell. At the Radio in Bródy Sándor utca, guarded by the ÁVH secret police, students wanted their demands broadcast. Shortly after 9 p.m. tear gas and then shots came from the building, and people in the street were killed. That the firing began then is documented; who fired the very first shot, and why, is still not settled, as the 1956 Institute notes. Workers brought arms, soldiers joined the crowd, and at about 2 a.m. Soviet tanks entered the city.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "On 23 October 1956, students in Budapest wanted Hungarian Radio to read out their demands. What happened at the Radio that evening?",
+      "answer": "Shots: the first dead in Budapest",
+      "detail": "Shortly after 9 p.m. tear gas, then firing, came from the building, guarded by the ÁVH secret police. Who fired the very first shot is still disputed."
+    },
+    {
+      "type": "video",
+      "src": "oct23.mp4",
+      "poster": "oct23.jpg",
+      "alt": "Animation: a flag, the 16 points, then a schematic map of central Budapest with the Danube, the march from the Petőfi statue to the Bem statue, the crowd at Parliament, Gerő’s broadcast, the Stalin statue toppling, the Radio building, what is documented and disputed, and Soviet tanks.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Stormfront” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "23-october-statue-and-radio",
+      "prompt": "Follow 23 October 1956 on the map: read each clue and tap the place where it happened, from 3 p.m. to about 9.30 p.m.",
+      "takeaway": "From the Petőfi statue across the Danube to the Bem statue, back to Parliament, then the Radio and the Stalin statue: in six hours a march became an uprising."
+    },
+    {
+      "type": "compare",
+      "heading": "At the Radio, 23 October 1956",
+      "left": {
+        "label": "Documented",
+        "text": "About 9 p.m. tear gas, then firing from the building, guarded by the ÁVH. People in the street were killed."
+      },
+      "right": {
+        "label": "Disputed",
+        "text": "Who fired the very first shot, and on whose order; how many died there: at least 3, some witnesses said 8."
+      }
+    },
+    {
+      "type": "order",
+      "heading": "23 October 1956, earliest first",
+      "items": [
+        "The march sets off",
+        "A vast crowd at Parliament",
+        "Ernő Gerő speaks on the radio",
+        "The Stalin statue falls"
+      ],
+      "explanation": "3 p.m. the march; by 6 p.m. the crowd at Parliament; 8 p.m. Gerő’s speech; about 9.30 p.m. the statue fell."
+    },
+    {
+      "type": "quiz",
+      "question": "On 23 October 1956, what did demonstrators in Budapest cut out of their Hungarian flags?",
+      "options": [
+        "The Communist crest",
+        "The red stripe",
+        "The green stripe",
+        "The white stripe"
+      ],
+      "answer": 0,
+      "explanation": "They cut out the crest of the Communist state, leaving a hole. The flag with the hole became the symbol of 1956."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "1956",
+    "budapest",
+    "23october",
+    "radio",
+    "stalinstatue"
+  ],
+  "source": {
+    "label": "1956 Institute (Szakolczai Attila): Revolution and freedom fight, 23–27 October (in Hungarian)",
+    "url": "https://mek.oszk.hu/01900/01937/html/ora2/ora2.htm"
+  },
+  "theme": {
+    "gradient": [
+      "#161c20",
+      "#3c2a22"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-12T00:30:00Z"
+}

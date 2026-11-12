@@ -3,7 +3,7 @@
 import type { Post } from './schema.ts';
 
 /** The languages an app can be read in. */
-export type Lang = 'en' | 'de' | 'fr';
+export type Lang = 'en' | 'de' | 'fr' | 'hu';
 
 export const TRANSLATIONS_DIR = 'content/i18n';
 

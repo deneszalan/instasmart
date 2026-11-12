@@ -1,0 +1,64 @@
+{
+  "id": "economics-reburial-16-june-1989",
+  "title": "1989. június 16-án, kivégzése után napra pontosan 31 évvel temették újra Nagy Imrét",
+  "body": "1958. június 16-án titkos per után kivégezték Nagy Imrét, az 1956-os forradalom miniszterelnökét, Maléter Pál honvédelmi minisztert és Gimes Miklós újságírót; titokban, jeltelenül temették el őket a rákoskeresztúri Új köztemető 301-es parcellájában. 1989 tavaszán megtalálták és exhumálták földi maradványaikat, és 1989. június 16-án, napra pontosan harmincegy évvel később, hat koporsó állt a Hősök terén, a Műcsarnok lépcsőjén: Nagy Imréé, Maléter Pálé, Gimes Miklósé, a vizsgálati fogságban meghalt Losonczy Gézáé, az 1958 áprilisában kivégzett Szilágyi Józsefé, és egy üres, 1956 minden halottjáé. Az [OSA Archívum](https://galeriacentralis.archivum.org/storage/uploads/3b6ef8ae-87cf-4c09-817f-704095c5c434/Kegyetlenseg-es-kegyelet_program4print_A5.pdf) szerint mintegy **250 000 ember** jött el, a rádió és a televízió élőben közvetítette. A szónokok a szovjet csapatok kivonását és szabad választásokat követeltek; Orbán Viktor a fiatalok nevében kimondta, hogy a demokrácia és a kommunizmus összeegyeztethetetlen. 1989. október 23-án Szűrös Mátyás a Parlament erkélyéről kikiáltotta a Magyar Köztársaságot, egy 1990-es törvény pedig október 23-át nemzeti ünneppé nyilvánította.",
+  "slides": [
+    {
+      "question": "Hányan jöttek el a Hősök terére 1989. június 16-án Nagy Imre, 1956 miniszterelnöke újratemetésére?",
+      "unit": "ember",
+      "explanation": "Mintegy 250 000-en, az OSA Archívum és az Index adata szerint. Egy jelen lévő brit diplomata 200 000 emberre emlékezett."
+    },
+    {
+      "alt": "Animáció alkonyi színekben: gyertyák, egy 1958. június 16-i naptárlap, jeltelen sírhantok sorai a 301-es parcellában, hat koporsó a Műcsarnok lépcsőjén, egyikük üres, pontokból álló tömeg, temetés névvel, a Parlament erkélye 1989. október 23-án, végül egy naptárlap: október 23.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "reburial-hu.mp4",
+      "poster": "reburial-hu.jpg"
+    },
+    {
+      "prompt": "Hat dátum 1956 és 1989 között: keresd meg a két párt, amely az év ugyanazon napjára esik.",
+      "takeaway": "Június 16.: 1958-ban kivégzés, 1989-ben újratemetés, napra pontosan 31 év. Október 23.: az 1956-os forradalom és az 1989-es köztársaság, 33 év különbséggel. 1989-ben az ország a saját dátumain felelt 1956-nak."
+    },
+    {
+      "heading": "A 301-es parcella",
+      "text": "Nagy Imre, Maléter Pál honvédelmi miniszter és Gimes Miklós újságíró három évtizedig jeltelenül feküdt a rákoskeresztúri Új köztemető 301-es parcellájában. 1989 tavaszán szakértők exhumálták és azonosították maradványaikat. A Hősök terén tartott szertartás után ott temették el őket újra, immár névvel."
+    },
+    {
+      "heading": "1958-tól a köztársaságig",
+      "events": [
+        {
+          "when": "1958. jún. 16.",
+          "text": "Nagy, Maléter és Gimes kivégzése"
+        },
+        {
+          "when": "1989 tavasza",
+          "text": "Exhumálás a 301-es parcellában"
+        },
+        {
+          "when": "1989. jún. 16.",
+          "text": "Újratemetés, Hősök tere"
+        },
+        {
+          "when": "1989. okt. 23.",
+          "text": "A Magyar Köztársaság kikiáltása"
+        },
+        {
+          "when": "1990",
+          "text": "Október 23. nemzeti ünnep lesz"
+        }
+      ]
+    },
+    {
+      "question": "Kinek szólt 1989. június 16-án a Hősök terén a hatodik, üres koporsó?",
+      "options": [
+        "1956 minden halottjának",
+        "Mindszenty József bíborosnak",
+        "Rajk Lászlónak",
+        "A szovjet katonáknak"
+      ],
+      "explanation": "A forradalom minden halottját jelképezte. A másik ötben Nagy Imre, Maléter Pál, Gimes Miklós, Losonczy Géza és Szilágyi József nyugodott."
+    }
+  ],
+  "source": {
+    "label": "OSA Archívum: Kegyetlenség és kegyelet (program, 1958 és 1989)"
+  }
+}

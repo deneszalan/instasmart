@@ -1,0 +1,75 @@
+{
+  "id": "politics-nagy-ousted-rakosi-returns-1955",
+  "title": "1955: a szovjetek kivonultak Ausztriából, itthon Rákosi Mátyás félreállította Nagy Imrét",
+  "body": "1953 júliusában, Sztálin halála után Moszkva a reformer **Nagy Imrét** tette meg miniszterelnöknek, **Rákosi Mátyás** azonban pártvezető maradt, és vissza akarta szerezni a hatalmát. 1955 januárjában a szovjet vezetők elítélték Nagy politikáját; áprilisban a párt kizárta őt a vezetésből, Rákosi embere, Hegedüs András lett a miniszterelnök, decemberben pedig Nagyot a pártból is kizárták. A szomszédban az események az ellenkező irányba haladtak. 1955. május 14-én Magyarország aláírta a Varsói Szerződést; másnap az osztrák államszerződés véget vetett Ausztria megszállásának, az utolsó szovjet egységek szeptember 19-én elhagyták Bécset, októberben pedig Ausztria kimondta semlegességét. Az 1947-es békeszerződés óta a szovjet csapatok azért maradhattak Magyarországon, hogy őrizzék ausztriai zónájuk utánpótlási vonalait, és sok magyar azt várta, hogy most innen is kivonulnak. Maradtak. 1955. december 14-én Magyarország az ENSZ tagja lett. 1956-ban mindkét példa visszatért: november 1-jén Nagy Imre kinyilvánította az ország semlegességét, és az ENSZ-hez fordult, ahogy az [ENSZ különbizottságának jelentése](https://digitallibrary.un.org/record/712474/files/A_3592-EN.pdf) rögzíti.",
+  "slides": [
+    {
+      "question": "1955 májusában hány nap különbséggel írták alá a Varsói Szerződést és az osztrák államszerződést?",
+      "unit": "nap",
+      "explanation": "Egy nap: a Varsói Szerződést 1955. május 14-én, az osztrák államszerződést május 15-én Bécsben írták alá."
+    },
+    {
+      "alt": "Animáció palakék háttéren: Nagy Imrétől Rákosi Mátyás felé billenő mérleg, Nagy áthúzott tisztségei, majd Ausztria és Magyarország vázlatos térképe a szovjet utánpótlási vonallal: Ausztria szabad és semleges lesz, a vonal Magyarországon marad; ENSZ-gyűrű és az 1956-os semlegesség.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "nagy1955-hu.mp4",
+      "poster": "nagy1955-hu.jpg"
+    },
+    {
+      "prompt": "Koppints 1955 magyarországi és ausztriai eseményeire abban a sorrendben, ahogy történtek!",
+      "takeaway": "1955 májusában egy nap alatt Magyarország egy szovjet vezetésű szövetség tagja lett, Ausztria pedig kiszabadult a megszállásból. Decemberre a szovjetek elhagyták Ausztriát, de itt maradtak, Nagy Imre pedig kiszorult."
+    },
+    {
+      "heading": "1955, két szomszéd",
+      "events": [
+        {
+          "when": "április 18.",
+          "text": "Nagy bukik, Hegedüs András a kormányfő"
+        },
+        {
+          "when": "május 14.",
+          "text": "Aláírják a Varsói Szerződést"
+        },
+        {
+          "when": "május 15.",
+          "text": "Osztrák államszerződés"
+        },
+        {
+          "when": "szept. 19.",
+          "text": "Az utolsó szovjet egységek elhagyják Bécset"
+        },
+        {
+          "when": "dec. 14.",
+          "text": "Magyarország ENSZ-tag lesz"
+        }
+      ]
+    },
+    {
+      "heading": "Miért voltak itt szovjet csapatok?",
+      "text": "Az 1947-es békeszerződés szerint a Szovjetunió csapatokat tarthatott itt az ausztriai övezetébe vezető összeköttetés őrzésére. Az 1955. május 15-i osztrák államszerződés véget vetett a megszállásnak. Az előző nap aláírt Varsói Szerződés szovjet marsall alatti közös parancsnokságot hozott; két szovjet hadosztály maradt."
+    },
+    {
+      "heading": "1955 végén",
+      "left": {
+        "label": "Magyarország",
+        "text": "Rákosi Mátyás újra az úr, Nagy Imrét kizárták a pártból, a szovjet csapatok maradnak, az ország a Varsói Szerződés tagja."
+      },
+      "right": {
+        "label": "Ausztria",
+        "text": "Véget ért a megszállás, az utolsó szovjet egységek elhagyták Bécset, október 26. óta törvény szerint semleges."
+      }
+    },
+    {
+      "question": "Az 1947-es békeszerződés szerint miért tarthatott a Szovjetunió csapatokat Magyarországon?",
+      "options": [
+        "Az Ausztriába vezető utak őrzésére",
+        "Magyarország határainak védelmére",
+        "A választások felügyeletére",
+        "A dunai hidak újjáépítésére"
+      ],
+      "explanation": "A 22. cikk megengedte, hogy erőket tartson az ausztriai megszállási övezetével való „összeköttetés fenntartására”. Ez az övezet 1955-ben megszűnt."
+    }
+  ],
+  "source": {
+    "label": "ENSZ: A magyar kérdéssel foglalkozó különbizottság jelentése (1957)"
+  }
+}

@@ -1,0 +1,183 @@
+o1       6.7 s  15.8 c/s  heard 0.96  seed 1
+       say:   Ezerkilencszázötvenhat október huszonkettedikén budapesti egyetemisták tizenhat követelést fogalmaztak meg
+       heard: 1956. Oktober 22-én Budapesti Egyetemisták, 16 követelist fogalmaztak meg.
+o2       7.0 s  17.3 c/s  heard 0.97  seed 1
+       say:   Vonuljanak ki a szovjet csapatok, vizsgálják felül a normákat, rendezzék a beszolgáltatást, és jöjjön vissza a régi címer
+       heard: vonuljana kia szóvjet csapatok, vizsgálják felül a normákat, rendezjék a beszolgáltatást és jöjjön vissza a régi címel.
+o3       5.1 s  17.5 c/s  heard 0.97  seed 1
+       say:   Mindegyik pont mögött ott volt valami, amit magyarok milliói a saját bőrükön tapasztaltak
+       heard: mindegyik pont megött ott volt valami, amit mágyarok milliói a sajátből rükön tapasztalta.
+o4       4.7 s  17.9 c/s  heard 0.98  seed 1
+       say:   Másnap a felvonulásból forradalom lett. Hogy miért, ahhoz hét évet kell visszamennünk
+       heard: Másnap a felvonulásból forradalom le, hogy miért ahhoz hét évet kell vissza mennünk.
+a1       7.2 s  16.0 c/s  heard 0.96  seed 1
+       say:   Ezerkilencszáznegyvenkilencre Magyarország egypártállam lett, Rákosi Mátyás és a Magyar Dolgozók Pártja uralma alatt
+       heard: 1949-re Magyarország egypár tállam lett Rákusi Mátyás és a Magyar Dolgozók pártyaúral mahala.
+a2       6.4 s  13.8 c/s  heard 0.98  seed 2
+       say:   Ennek a hatalomnak az ökle az Államvédelmi Hatóság, az ávéhá, a politikai rendőrség volt
+       heard: Ennek a hatalomnak az ők le az államvédelmi hatóság, az ÁVH, a politikai rendőrség volt.
+a3       5.3 s  17.1 c/s  heard 0.93  seed 1
+       say:   Székháza a budapesti Andrássy út hatvan volt, ahol korábban a nyilaskeresztes párt működött
+       heard: Székháza Budapesti Andrássi út 60 volt, ahol korábban a nyilaskereftes párt nyüködött.
+a4       6.3 s  16.6 c/s  heard 0.96  seed 2
+       say:   Ötventől papíron a kormánynak felelt, valójában egyedül Rákosinak, szovjet tanácsadók felügyelete mellett
+       heard: 50-öl papíron a kormánynak felelt, valójában egyedül rákosínak, szovjet tanácsaduk felügyeletemell.
+a5       6.3 s  17.5 c/s  heard 0.98  seed 1
+       say:   Az ötvenhatos Intézet szerint ötven és ötvenhárom között mintegy hatszázötvenezer ember ellen indított eljárást
+       heard: Az 56-os intézet szerint 50 és 53 között mint egy 650.000 ember elleni ditott eljárás.
+a6       9.4 s  14.5 c/s  heard 0.99  seed 2
+       say:   Mindez egy alig több mint kilencmilliós országban történt. Besúgói ott ültek a hivatalokban, a gyárakban, az iskolákban és a bérházakban
+       heard: mindez egy alig több mint 9 milliós országban történt. Besúgói ott ültek a hivatalokban, a gyárokban, az iskolákban és a bérházakban.
+a7       6.0 s  19.0 c/s  heard 0.98  seed 1
+       say:   Tanúk mondták el később az Egyesült Nemzeteknek, hogy senki sem tudhatta, hol ismétlik el a szavait fél óra múlva
+       heard: Tanuk mondták el később az egyesült nenzeteknek, hogy senki sem tudhatta, hol ismétlik el a szavait fél óra mólva.
+a8       6.9 s  15.8 c/s  heard 0.99  seed 1
+       say:   Egy ötvenkettes törvény még azt is hat hónapig terjedő börtönnel büntette, aki hátrányosan bánt egy besúgóval
+       heard: Egy 52-es törvén még azt is 6 hónapig terjedő börtönnel büntette, aki hátrányosan bánt egy besugóval.
+a9       6.3 s  14.6 c/s  heard 0.94  seed 1
+       say:   A zárkákban a foglyokat verték, éheztették és fenyegették, amíg alá nem írták a vallomásukat
+       heard: A zárkákban a fogyokat vérték, éheztették és fenyegették, amig alán nem érták a vallomásokat.
+a10      8.8 s  13.7 c/s  heard 0.97  seed 1
+       say:   A kommunisták sem voltak biztonságban. Rajk László volt belügyminisztert negyvenkilencben koholt vádak alapján kivégezték
+       heard: A kommunisták semmi voltak biztonságban. Raik, László volt belügyminisztert, 49-ben koholt Váda-Kalapiján kivégeztét.
+b1       7.7 s  15.0 c/s  heard 0.99  seed 1
+       say:   Az ávéhának bíróságra sem volt szüksége. Egyszerűen internálhatta, vagyis ítélet nélkül fogva tarthatta az embereket
+       heard: az AVH-nak bíróságra sem volt szüksége. Egyszerűen internálhatta, vagy is ítélet nélkül fogva tarthatta az embereket.
+b2       8.3 s  13.7 c/s  heard 0.98  seed 1
+       say:   Kulákká bélyegzett parasztok, szociáldemokraták, egyházi emberek és úgynevezett osztályidegenek kerültek táborokba
+       heard: Kulákká bélyekzet parasztok, Szociáldemokraták, egyházi emberek és úgynevezett osztályi degenek kerültek táborokba.
+b3       7.1 s  13.7 c/s  heard 0.92  seed 1
+       say:   Volt tábor Kistarcsán, Tiszalökön és Kazincbarcikán, és ott volt a legrettegettebb, a mátrai Recsk
+       heard: Volt tábor kistartsán, Tiszalőkön és Kazínszborcikán, és ott volt a legrettegettebb. A mátraire.
+b4       8.4 s  15.2 c/s  heard 0.91  seed 1
+       say:   Az ötvenben nyitott titkos táborban a volt rabok szerint egyszerre ezerkétszáz, ezerháromszáz ember törte a követ egy kőbányában
+       heard: Az 50-ben nyitott titkos tábornó volt rabok szerint egy szerzse 1900-1300 ember törte a követek külbányában.
+b6      11.2 s  15.0 c/s  heard 0.94  seed 1
+       say:   Egész családokat is elhurcoltak. Ezerkilencszázötven június huszonharmadikán hajnalban ávósok és rendőrök verték fel a családokat a déli és nyugati határ menti falvakban
+       heard: Egész családokat is elhurcoltak. 1953-án hajnalban ávósok és rendőrök verték fel a családokat a déli és nyugati határmenti falvakban.
+b7       8.7 s  14.7 c/s  heard 0.96  seed 1
+       say:   Azon az éjszakán kétezer-négyszáznegyvenhat embert vittek a Hortobágy zárt munkatáboraiba. Ötvenháromra tizenkét ilyen tábor lett
+       heard: Azon az éjszakán 2446 embert vittek a Horstobágyzárt munkot táborraiba. 53-ra 17 ilyen tábor le.
+b8       8.9 s  15.5 c/s  heard 0.99  seed 1
+       say:   Amikor ötvenháromban bezárták őket, a hivatalos kimutatás hétezer-kétszáznyolcvanegy szabadultat számolt, pedig ennél többet hurcoltak el
+       heard: Amikor 53-ban vezárták őket, a hivatalos kimutatás 7281 szabadultat számolt, pedig ennél többet húrcoltak el.
+b9      10.6 s  15.0 c/s  heard 0.96  seed 1
+       say:   Ötvenegyben a rendszer magát Budapestet vette célba, és tizenkétezer-hétszáznégy embert telepített ki, volt nemeseket, tiszteket, tisztviselőket a családjukkal
+       heard: 51-ben a rendszer magát Budapestet vettet szélba, és 12.704 embert telepített ki. Volt nemeseket, tiszteket, tisztliselüket a családjukkal.
+b10      6.8 s  13.5 c/s  heard 0.97  seed 1
+       say:   Százharmincnyolc keleti faluba vitték őket, idegenek házaiba, gyakran éppen kulákcsaládokhoz
+       heard: 138 keleti farubba vitték őket, idegenek házaiba, gyakran éppen hulák családokhoz.
+b11      5.0 s  17.3 c/s  heard 0.98  seed 1
+       say:   Az osztályidegennek bélyegzett családok gyerekeit pedig kizárhatták a továbbtanulásból
+       heard: Az osztályi degennek bélyekzet családok gyerekeit pedig kizárhatták a tovább tanulásból.
+c1       6.0 s  14.8 c/s  heard 0.99  seed 2
+       say:   Közben a rendszer a mezőgazdasági országból a vas és az acél országát akarta megteremteni
+       heard: Közben a rendszer a mezőgazdasági országból a vasis az acél országát akarta megteremteni.
+c2      10.0 s  14.6 c/s  heard 0.97  seed 1
+       say:   Az első ötéves terv ezerkilencszázötvenben indult. A koreai háború kitörése után Sztálin több fegyvert követelt, és a tervszámok az egekbe szöktek
+       heard: Az első 5 éves terv 1950-ben indult. A koréai háború kitörése után Stalin több fegyvert követelt, és a terv számok az egek beszökt.
+c3       9.3 s  15.9 c/s  heard 0.92  seed 1
+       say:   A tervezett beruházás huszonhét egész hat tized milliárdról nyolcvanöt milliárd forintra nőtt, és az iparra jutó rész kilenctizede a nehéziparé lett
+       heard: A tervezet beruházás 27,6 milliárdról 85 milliárd forintra nőtt, és ez iparra jutó rész 9-10-e a nehéziparéle.
+c4       4.7 s  17.2 c/s  heard 0.97  seed 1
+       say:   A gyárakban a bér a normától függött, attól, hogy mennyi számít egynapi munkának
+       heard: A gyárabban a béro normától függött, attól, hogy mennyi számít egy napi munkának.
+c5       8.3 s  14.1 c/s  heard 0.93  seed 1
+       say:   A normákat folyton emelték. Az Ikarusban ötvenben az új normák harmincöt és fél százalékkal csökkentették az átlagbért
+       heard: a normákat folyton emelték. Az ikarúsban 50-ben az új normák 30 és 1,5 százalékkal csökkentették az átlagbé.
+c6       7.6 s  15.6 c/s  heard 0.98  seed 2
+       say:   A dolgozóktól azt is elvárták, hogy évente legalább egyhavi fizetésüket kölcsönadják az államnak, ez volt a békekölcsön
+       heard: A dolgozóktól azt is elvárták, hogy évente legalább egyhavi fizetésüket kölcsön hagyják az államnak. Ez volt a béke kölcsön.
+c7       5.1 s  15.4 c/s  heard 0.96  seed 2
+       say:   Ötvenegy januárjától, hat évvel a háború után, újra jegyre adták az élelmiszert
+       heard: 51 januárjától 6 éve a háború után újra jegyre adták az élelmyszer.
+c9       6.5 s  16.1 c/s  heard 0.86  seed 1
+       say:   Romsics Ignác történész adatai szerint ötvenkettőben a reálbér nagyjából a háború előtti kétharmada volt
+       heard: Romségs ígynált störténéz adatai szerint 52-ben a reábbél nagyjából háború előtti 2-3-a volt.
+c10      6.2 s  16.0 c/s  heard 0.99  seed 1
+       say:   Ötvennégyben a szakszervezetek saját felmérése szerint a bérből élők harmada a létminimum alatt élt
+       heard: 54-ben a szakszervezetek saját felmérése szerint, a bérből élők harmada a létminium alattél.
+d1       8.2 s  15.5 c/s  heard 0.94  seed 1
+       say:   Falun a parasztok kötelező beszolgáltatással tartoztak, gabonát, húst és más terményt kellett leadniuk alacsony, rögzített áron
+       heard: Faluna parasztok kötelező besolgáltatással tartoztak. Gabonát, húst és mást hérmint kellett ladniuk a lacsony, rögzitebb táron.
+d2       5.1 s  18.0 c/s  heard 0.96  seed 1
+       say:   A beadást a föld szerint szabták ki, nem a termés szerint, így rossz évben sem lett kevesebb
+       heard: A behadást a föld szerint szapták ki nem a termér szerint, így rossz évben sem lett kevesebb.
+d3      14.1 s  12.7 c/s  heard 0.94  seed 1
+       say:   Aki huszonöt holdnál, azaz mintegy tizennégy hektárnál többön gazdálkodott, kuláknak bélyegezték. Ezerkilencszáznegyvenkilencben hatvanegyezer-kilencszázhuszonkét ilyen gazda volt
+       heard: Aki 25 hordnál, az az mint egy 14 hektárnál többön gazdálkodott, kuláknak béjegeszték. Ezer 1949-ben 61.920 kép ilyen gazdavól.
+d4       9.9 s  14.2 c/s  heard 0.93  seed 1
+       say:   A kulákcsaládokra rótták a legnagyobb terhet. Ötvenegyben holdanként hétszáztól ezeregyszáz kilogrammig terjedő búza értékét kellett beadniuk
+       heard: A kulák családokra ródták a legnagyobb terhet. 51-ben, holdanként 700-tól 1100 kg még terjedő búza értékét kellett beadniú.
+d5       7.6 s  15.0 c/s  heard 0.95  seed 1
+       say:   Abban az évben, a korszak legjobb esztendejében, az átlagos búzatermés holdanként kilencszázhetven kilogramm volt
+       heard: Abban az évben, a korszak legjobb eszten de évben. Az átlagos búza termés Holdanként 970 kirobran volt.
+d6       6.5 s  14.6 c/s  heard 0.92  seed 1
+       say:   Brigádok kutatták át a pincéket és a padlásokat rejtett gabona után. Ezt hívták padlássöprésnek
+       heard: Dég ádok kutatták át a pincéket és a padlásokat rejtett Gabonau-tán. Ezt hívták padlásra prísne.
+d7       6.9 s  18.3 c/s  heard 0.96  seed 1
+       say:   Negyvennyolc és ötvenöt között a hivatalos statisztika szerint csaknem kétszázezer embert ítéltek el közellátási bűntett miatt
+       heard: 48,55 között a hivatalós statisztika szerint csak nem 200 ezer embert így értekel közel látási bűntet miatt.
+d9       7.6 s  16.2 c/s  heard 0.97  seed 1
+       say:   Még Dobi István, a rendszer államfője is elismerte később, hogy a falunak sokszorta több oka volt panaszra, mint a városnak
+       heard: Még dobbi István, a rendszer államfője is elismerte később, hogy a falunak sok szortető boka volt panaszra, mint a városna.
+e1      10.9 s  14.2 c/s  heard 0.98  seed 1
+       say:   A rendszer mögött a Szovjetunió állt. Hadserege negyvennégyben és negyvenötben, a németek elleni harcban jött be az országba, és azóta is itt állomásozott
+       heard: A rendszer mögött a Szovjetunió állt, hagyserege 44-ben és 45-ben, a Németek elleni harcban jött be az országban, és azúta is itt állomásozott.
+e2       6.8 s  18.5 c/s  heard 0.95  seed 1
+       say:   A negyvenhetes békeszerződés szerint szovjet csapatok maradhattak, hogy őrizzék az ausztriai szovjet övezetbe vezető vonalakat
+       heard: A 47-es békeserződés szerint szóvjet csapatok maradhatnak, hogy őrizzék az Austria-i szóvjet övezetbevezető vonala.
+e3       9.5 s  15.2 c/s  heard 0.99  seed 1
+       say:   Ötvenöt májusában egy szerződés véget vetett Ausztria megszállásának. Egy nappal korábban az új Varsói Szerződés már új alapot adott a maradásra
+       heard: 55 májúsában egy szerződés véget vetett Ausztria megszállásának, egy nappal korábban az új varsói szerződés már új alapot adott a maradás.
+e4       9.7 s  15.4 c/s  heard 0.98  seed 1
+       say:   Az Egyesült Nemzetek bizottságának értesülése szerint ötvenhat októbere előtt mintegy húszezer szovjet katona és hatszáz harckocsi volt Magyarországon
+       heard: Az egyesült nemzetek bizottságának értessűvése szerint, 56 oktober előtt mint egy 20.000 szovjet katona, és 600 harckocsi volt magyarországon.
+e5       8.9 s  13.6 c/s  heard 0.92  seed 1
+       say:   Fizetni is kellett. A negyvenötös fegyverszünet kétszázmillió dollár értékű áru szállítását rótta ki a Szovjetunió javára
+       heard: Fizetni is kellett. A 45-ös fegyves szünet 200 nélió dollár értékű Árusz állítását ródta ki a Szoviatumió javára.
+e7       9.3 s  15.8 c/s  heard 0.97  seed 2
+       say:   A Moszkvával kötött kereskedelmi szerződések titkosak maradtak. Pécs mellett uránt bányásztak, és az emberek úgy tudták, hogy a Szovjetunióba kerül
+       heard: A moszkvával költött kereskedelmi szerződések titkosak maradtak. Pécsmellett uránt bány eztak, és az emberek úgy tudták, hogy a szobjatúnió bakerül.
+e8       8.5 s  16.0 c/s  heard 0.94  seed 1
+       say:   A szovjet hatalom a jelképekben is megmutatkozott. Negyvenkilencben vörös csillagos, szovjet mintájú címer váltotta fel a Kossuth-címert
+       heard: A szóviát hatalom a jelképekben is megmutatkozott. 49-ben vörös csillagos szóviát minktájú címer változt a fel a kosut címer.
+e9       5.7 s  16.5 c/s  heard 0.97  seed 1
+       say:   A katonák szovjet mintájú egyenruhát hordtak, az iskolában pedig kötelező volt az orosz nyelv
+       heard: A katonák szóvjetmintájú egyenru hát hordtak, az iskolában pedig kötelező volt az orosznyály.
+e10      7.9 s  13.7 c/s  heard 0.97  seed 1
+       say:   Március tizenötödike, a negyvennyolcas forradalom évfordulója nem volt többé ünnep, csak közönséges munkanap
+       heard: Marcius 15-e. A 48-as forradalom évfordulója nem volt többé ünnep. Csak közönséges munkana.
+e12      9.3 s  17.9 c/s  heard 0.96  seed 1
+       say:   Az Egyesült Nemzetek bizottsága szerint maguk a szovjet katonák nem voltak népszerűtlenek. Az emberek az idegen hatalmat utasították el, amely a rendszert fenntartotta
+       heard: Az egyesült nemzetek bizottsága szerint megok a szóviát katonák nem voltak népszerűtlenek. Az emberek az idegen hatalmat utasították el, amely a rendszert hen tartotta.
+f1      11.5 s  13.2 c/s  heard 0.95  seed 1
+       say:   Sztálin ezerkilencszázötvenhárom márciusában meghalt. Az új miniszterelnök, Nagy Imre idején bezárták az internálótáborokat, és sok fogoly hazatérhetett
+       heard: Stalin 1953 márciusában meghalt. Az új miniszterelnök nagy émre idején vezárták az internáló táborokat, és sokfogói hazatérhető.
+f2       5.7 s  15.2 c/s  heard 0.98  seed 1
+       say:   Az ávéhá azonban megmaradt, a pártot továbbra is Rákosi vezette, és a félelem is maradt
+       heard: Az AVH azonban megmaradt, a pártot továbbra is rákosívezette, és a félelem is maradt.
+f3      10.2 s  16.1 c/s  heard 0.97  seed 1
+       say:   Ötvenhatra a munkásoknak, a parasztoknak, a diákoknak és az íróknak egyaránt megvoltak a sérelmeik, és a diákok tizenhat pontja szinte egyenként sorra vette ezeket
+       heard: 56-ra a munkásoknak, a paraztoknak, a diákoknak és az íróknak egyaránt megvoltak a sérelmeit, és a diákok 16 pontja szinte egyénként sorra vette ezek.
+f5       7.3 s  16.9 c/s  heard 0.94  seed 1
+       say:   Az első pont a szovjet csapatok kivonását követelte, a nyolcadik pedig nyílt tájékoztatást kért a jóvátételről és az uránról
+       heard: Az első pont a Szovjet csapatok kivonását követelte a 8. perig nyilv tájékoztatást kért a jóvátítellről és az uráról.
+f6       7.7 s  14.7 c/s  heard 0.92  seed 1
+       say:   A kilencedik és a tizedik pont a normák revízióját, létminimumot és a beszolgáltatás új alapokra helyezését kérte
+       heard: A 9. és a 10. pontanolmák revízióját lét minimum ott és a beszolgáltatás új alapokra helyezését kértem.
+f8       8.7 s  15.4 c/s  heard 0.98  seed 3
+       say:   A tizenegyedik és a tizenkettedik pont a politikai perek felülvizsgálatát, szólásszabadságot és a káderanyag megsemmisítését követelte
+       heard: A tizenegyedik és a tizenkettedik pont a politikai perek felül vizsgálatát, szórázszabadságot és a káderanyag megsemmisítését követelt.
+f10      8.7 s  16.3 c/s  heard 0.94  seed 1
+       say:   A tizenharmadik és a tizennegyedik pont a Sztálin-szobor lebontását, a Kossuth-címert és azt kérte, hogy március tizenötödike újra ünnep legyen
+       heard: A Tizen harmadék és a Tizen egyedik pont a Stalin szoborlebontását a kosut címert is azt kérte, hogy Március 15-e újra ünnep legyen.
+f11      3.2 s  18.5 c/s  heard 0.94  seed 3
+       say:   És mindenütt követelték azt is, hogy oszlassák fel az ávéhát
+       heard: és minden üt követelték azt is, hogy jószlassák fel az ÁVH.
+f12      9.2 s  13.7 c/s  heard 0.97  seed 1
+       say:   Egy tizennyolc éves diáklány később így foglalta össze az Egyesült Nemzeteknek. Szabadságot akartunk, nem kényelmes, jó életet
+       heard: Egy 18 éves diáklány később így foglalta össze az egyesült nendveteknek. Szabadságot akartunk, nem kényelmes, jó életet.
+f13      7.9 s  13.8 c/s  heard 0.93  seed 1
+       say:   Sztálin halálától ötvenhat októberéig három év telt el, reményekkel és csalódásokkal. Ez volt az út októberig
+       heard: Stálin halálától 56 oktoberék, három évteltel, reményekkel is csalódásokkal. Ez volt az út oktoberék.

@@ -20,6 +20,9 @@ SPEAKER, SPEED = 'Ana Florence', 1.0
 CPS = 17.0                      # characters a second, Ana Florence at speed 1, pauses included (report.txt: each line's)
 GOOD, TAIL, RISE = 0.85, 2, 1.0
 mode, d = sys.argv[1], sys.argv[2].rstrip('/')
+# The second language is French unless <slug>/lang2.txt names another (hu: Hungary 1956's films use hu/narrate.py).
+if os.path.exists(f'{d}/lang2.txt') and open(f'{d}/lang2.txt').read().strip() == 'hu':
+    NARRATE = '/tmp/claude-0/-home-user/597d1c62-e00b-59e9-a6a1-fbf35da32d35/scratchpad/hu'
 rec, cache = f'{d}/rec-fr', f'{d}/rec-fr/cache'
 
 
@@ -84,7 +87,8 @@ elif mode == 'record':
         import narrate as nr
         import soundfile as sf
         nr.DE = rec                     # take() caches its takes in {DE}/cache/{pid}/
-        lines_todo = todo()
+        # At most XTTS_BATCH lines a process (tts-fr.sh loops): XTTS grows about 0.1 GB a line and a long run is killed.
+        lines_todo = todo()[:int(os.environ.get('XTTS_BATCH', '0')) or None]
         for n, l in enumerate(lines_todo, 1):
             say, best = l['spoken'], None
             for seed in (1, 2, 3, 4):

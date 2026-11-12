@@ -219,6 +219,30 @@ import { dayOf as occDay, EVENTS as OCC_EVENTS, eventAt as occEventAt, FREED as 
 import { EPISODES as MEMMI_EPISODES, score as memmiScore } from '../src/labs/literature/memmi-pillar-of-salt';
 import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plotAt as cemPlotAt, plotRect as cemPlotRect, zoomBox as cemZoom, PLOTS as CEM_PLOTS, RECORDS as CEM_RECORDS, ROWS as CEM_ROWS, GRAVES as CEM_GRAVES } from '../src/labs/earth/north-africa-american-cemetery-carthage';
 import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, FT_PER_MIN as TV_FT_PER_MIN, hoursOf as tvHours, ratio as tvRatio, SHOT_FT as TV_SHOT } from '../src/labs/art/tunisian-victory-1944-film';
+import { ACTUAL as E45_ACTUAL, SEATS as E45_SEATS, TOTAL_SEATS as E45_TOTAL, cabinet as e45Cabinet, fairShare as e45Fair, proportional as e45Proportional } from '../src/labs/history/1945-election-smallholders-win';
+import { atLeastOne as avhAtLeastOne, circleForEvenOdds as avhEven, reached as avhReached, GOAL_SHARE as AVH_GOAL } from '../src/labs/philosophy/avh-terror-and-recsk';
+import { EVENTS as NAGY53_EVENTS, ORDER as NAGY53_ORDER, complete as nagy53Complete, eventDate as nagy53Date, isNext as nagy53Next } from '../src/labs/politics/imre-nagy-new-course-1953';
+import { ORDER as OCT23_ORDER, PLACES as OCT23_PLACES, complete as oct23Complete, placeAt as oct23PlaceAt, project as oct23Project } from '../src/labs/engineering/23-october-statue-and-radio';
+import { LOG as NOV4_LOG, clockText as nov4Clock, heard as nov4Heard, onLastWords as nov4LastWords } from '../src/labs/earth/4-november-operation-whirlwind';
+import { CLASS_ENEMIES_MAX_PCT as REP_MAX, lit as repLit, missBy as repMiss } from '../src/labs/economics/reprisals-and-the-nagy-trial';
+import { done as rajkDone, EVENTS as RAJK_EVENTS, gap as rajkGap, nextExpected as rajkNext, SHUFFLED as RAJK_SHUFFLED, yearOf as rajkYear } from '../src/labs/history/rajk-show-trial-1949';
+import { AUSTRIA_LEFT as SOV_AUSTRIA_LEFT, AUSTRIA_TREATY as SOV_AUSTRIA_TREATY, bases as sovBases, inAustria as sovInAustria, LAST as SOV_LAST, monthIndex as sovMonth, reached as sovReached, TREATY as SOV_TREATY, WARSAW as SOV_WARSAW } from '../src/labs/philosophy/soviet-troops-and-national-symbols';
+import { cell as octCell, DAY as OCT_DAY, dayAt as octDayAt, daysBetween as octDays, DECK as OCT_DECK, done as octDone, fits as octFits } from '../src/labs/politics/rajk-reburial-and-the-16-points';
+import { DAYS as WEEK_DAYS, firstFooled as weekFirstFooled, fooled as weekFooled } from '../src/labs/engineering/nagy-government-and-neutrality';
+import { CARDS as EMB_CARDS, done as embDone, score as embScore, tally as embTally } from '../src/labs/earth/nagy-yugoslav-embassy-abduction';
+import { DATES as ANN_DATES, done as annDone, PAIRS as ANN_PAIRS, pairKey as annKey, sameDay as annSameDay, yearsApart as annYears } from '../src/labs/economics/reburial-16-june-1989';
+import { communistPlace as salPlace, communistShare as salShare, ESTIMATES as SAL_ESTIMATES, RESULTS as SAL_RESULTS, toLoseFirst as salToLose, TOTAL as SAL_TOTAL } from '../src/labs/history/salami-tactics-1947-blue-slips';
+import { AVERAGE_1951 as KQ_AVG, leftOver as kqLeft, meetsHighest as kqMeets, QUOTAS as KQ_QUOTAS, takes as kqTakes } from '../src/labs/philosophy/deportations-and-kulak-lists';
+import { dayOfYear as y55Day, EVENTS as Y55_EVENTS, inOrder as y55InOrder, nextEvent as y55Next } from '../src/labs/politics/nagy-ousted-rakosi-returns-1955';
+import { nearest as cvNearest, PLACES as CV_PLACES, project as cvProject, side as cvSide } from '../src/labs/engineering/corvin-passage-young-fighters';
+import { FIRST_DAY as LF_FIRST, holding as lfHolding, LAST_DAY as LF_LAST, onlyMecsek as lfOnlyMecsek } from '../src/labs/earth/last-fighting-csepel-dunapentele';
+import { ACTUAL as WL_ACTUAL, allClose as wlAllClose, off as wlOff } from '../src/labs/economics/refugees-and-the-andau-bridge';
+import { ACTS as SL_ACTS, CAST as SL_CAST, ROLL as SL_ROLL, TALLY as SL_TALLY, shareOfCast as slShareCast, shareOfRoll as slShareRoll } from '../src/labs/history/1949-single-list-and-rakosi-cult';
+import { cutFor as nsCutFor, IKARUS_CUT as NS_CUT, matchesIkarus as nsMatches, payShare as nsPay, raiseFor as nsRaiseFor } from '../src/labs/philosophy/norms-wages-and-deliveries';
+import { CLAIMS as TG_CLAIMS, score as tgScore } from '../src/labs/politics/secret-speech-and-petofi-circle-1956';
+import { EVENTS as KS_EVENTS, PLACES as KS_PLACES, placeAt as ksPlaceAt, project as ksProject, type Place as KsPlace } from '../src/labs/engineering/kossuth-square-25-october';
+import { DEMANDS as WC_DEMANDS, granted as wcGranted, matches as wcMatches } from '../src/labs/earth/workers-councils-general-strike';
+import { change as kbChange, INCOME as KB_INCOME, peakYear as kbPeak, WAGE as KB_WAGE, YEARS as KB_YEARS } from '../src/labs/economics/kadar-era-and-the-silence';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2301,5 +2325,236 @@ describe('lab maths', () => {
     expect(Math.round(tvRatio(TV_FINAL_FT))).toBe(44);
     expect(tvHours(TV_SHOT)).toBeCloseTo(55.6, 1);
     expect(tvRatio(tvFeet(10))).toBeGreaterThan(tvRatio(tvFeet(120)));
+  });
+  it('1945 election: 409 seats, 245 for the Smallholders; 18 posts in proportion would be 11, 3, 3 and 1, the real cabinet 9, 4, 4 and 1', () => {
+    expect(E45_TOTAL).toBe(409);
+    expect(E45_SEATS.fkgp * 2).toBeGreaterThan(E45_TOTAL);
+    expect(e45Fair()).toEqual({ fkgp: 11, szdp: 3, mkp: 3, npp: 1, pdp: 0 });
+    expect(Object.values(E45_ACTUAL).reduce((a, b) => a + b, 0)).toBe(18);
+    expect(e45Proportional(e45Cabinet(3, 3, 1))).toBe(true);
+    expect(e45Proportional(e45Cabinet(E45_ACTUAL.szdp, E45_ACTUAL.mkp, E45_ACTUAL.npp))).toBe(false);
+    expect(e45Cabinet(4, 4, 1).fkgp).toBe(9);
+    expect(e45Fair({ fkgp: 1, szdp: 1, mkp: 1, npp: 1, pdp: 0 }, 4)).toEqual({ fkgp: 1, szdp: 1, mkp: 1, npp: 1, pdp: 0 });
+  });
+  it('ÁVH informers toy model: with one informer in 50, 35 confidants make it more likely than not that one informs', () => {
+    expect(avhAtLeastOne(1, 10)).toBeCloseTo(0.1, 10);
+    expect(avhAtLeastOne(0, 10)).toBe(0);
+    expect(avhEven(50)).toBe(35);
+    expect(avhEven(10)).toBe(7);
+    expect(avhEven(25)).toBe(17);
+    expect(avhReached(35, AVH_GOAL)).toBe(true);
+    expect(avhReached(34, AVH_GOAL)).toBe(false);
+    expect(avhReached(40, 10)).toBe(false);
+  });
+  it('Nagy’s new course: six events in date order, from Stalin’s death to the expulsion, with dates in the reader’s language', () => {
+    expect(NAGY53_ORDER).toEqual(['stalin', 'moscow', 'speech', 'amnesty', 'condemned', 'expelled']);
+    expect(NAGY53_EVENTS).toHaveLength(6);
+    expect(nagy53Next([], 'stalin')).toBe(true);
+    expect(nagy53Next(['stalin'], 'speech')).toBe(false);
+    expect(nagy53Complete(NAGY53_ORDER)).toBe(true);
+    expect(nagy53Complete(['moscow', 'stalin', 'speech', 'amnesty', 'condemned', 'expelled'])).toBe(false);
+    expect(nagy53Date('speech', 'en-GB')).toBe('4 July 1953');
+    expect(nagy53Date('speech', 'hu-HU')).toBe('1953. július 4.');
+    expect(nagy53Date('moscow', 'en-GB')).toBe('June 1953');
+  });
+  it('23 October map: every place is found by a tap on its dot, Buda lies west of Pest, and the day runs from the Petőfi statue to the Stalin statue', () => {
+    for (const [w, h] of [[330, 260], [412, 300]]) {
+      for (const id of OCT23_ORDER) {
+        const [x, y] = oct23Project(...OCT23_PLACES[id], w, h);
+        expect(oct23PlaceAt(x + 3, y - 3, w, h)).toBe(id);
+        expect(x).toBeGreaterThan(0); expect(x).toBeLessThan(w); expect(y).toBeGreaterThan(0); expect(y).toBeLessThan(h);
+      }
+      expect(oct23Project(...OCT23_PLACES.bem, w, h)[0]).toBeLessThan(oct23Project(...OCT23_PLACES.parl, w, h)[0]);
+      expect(oct23PlaceAt(1, 1, w, h)).toBeNull();
+    }
+    expect(OCT23_ORDER[0]).toBe('petofi');
+    expect(oct23Complete(OCT23_ORDER)).toBe(true);
+    expect(oct23Complete(['bem', 'petofi', 'parl', 'radio', 'stalin'])).toBe(false);
+  });
+  it('4 November radio: Kádár at 5.05 before Nagy at 5.20, and Free Radio Kossuth’s last words at 7.57 before silence at 8.07', () => {
+    expect(nov4Heard('kadar', 5 * 60 + 10)?.id).toBe('kadar505');
+    expect(nov4Heard('kossuth', 5 * 60 + 10)).toBeNull();
+    expect(nov4Heard('kossuth', 5 * 60 + 20)?.id).toBe('nagy520');
+    expect(nov4LastWords(7 * 60 + 57)).toBe(true);
+    expect(nov4LastWords(8 * 60 + 6)).toBe(true);
+    expect(nov4LastWords(8 * 60 + 7)).toBe(false);
+    expect(nov4LastWords(7 * 60 + 56)).toBe(false);
+    expect(nov4Clock(4 * 60 + 15)).toBe('4.15');
+    expect([...NOV4_LOG].sort((a, b) => a.at - b.at).map((b) => b.id)).toEqual(NOV4_LOG.map((b) => b.id));
+  });
+  it('reprisals: at most 5 in 100 of those sentenced were “class enemies” by the regime’s own figures', () => {
+    expect(REP_MAX).toBe(5);
+    expect(repLit(REP_MAX)).toBe(5);
+    expect(repLit(150)).toBe(100);
+    expect(repLit(-3)).toBe(0);
+    expect(repMiss(50)).toBe(45);
+    expect(repMiss(5)).toBe(0);
+  });
+  it('Rajk time line: events in date order, six and a half years from the hanging to the admission, 17 days from the reburial to the revolution', () => {
+    const ys = RAJK_EVENTS.map(rajkYear);
+    expect([...ys].sort((a, b) => a - b)).toEqual(ys);
+    expect([...RAJK_SHUFFLED].sort()).toEqual(RAJK_EVENTS.map((e) => e.id).sort());
+    const by = (id: string) => RAJK_EVENTS.find((e) => e.id === id)!;
+    expect(rajkGap(by('hanged'), by('admitted'))).toEqual({ years: 6, months: 5 });
+    expect(rajkGap(by('trial'), by('hanged'))).toEqual({ years: 0, months: 0 });
+    expect(Math.round((Date.UTC(1956, 9, 23) - Date.UTC(1956, 9, 6)) / 864e5)).toBe(17);
+    expect(rajkNext([])).toBe('split');
+    expect(rajkNext(['split', 'trial'])).toBe('hanged');
+    expect(rajkDone(RAJK_EVENTS.map((e) => e.id))).toBe(true);
+    expect(rajkDone(['split'])).toBe(false);
+  });
+  it('Soviet troops in Hungary: armistice, then the treaty’s lines to Austria, then the Warsaw Pact; the goal only after the troops left Austria', () => {
+    expect(SOV_LAST).toBe(sovMonth(1956, 10));
+    expect(SOV_TREATY).toBe(sovMonth(1947, 9));
+    expect(SOV_WARSAW).toBeLessThan(SOV_AUSTRIA_TREATY);
+    expect(sovBases(sovMonth(1946, 1))).toEqual(['armistice']);
+    expect(sovBases(sovMonth(1950, 1))).toEqual(['treaty']);
+    expect(sovBases(sovMonth(1955, 6))).toEqual(['treaty', 'warsaw']);
+    expect(sovBases(sovMonth(1956, 1))).toEqual(['warsaw']);
+    for (let m = 0; m <= SOV_LAST; m++) expect(sovBases(m).length).toBeGreaterThan(0);
+    expect(sovInAustria(SOV_AUSTRIA_LEFT)).toBe(true);
+    expect(sovReached(SOV_AUSTRIA_LEFT)).toBe(false);
+    expect(sovReached(SOV_AUSTRIA_LEFT + 1)).toBe(true);
+    expect(sovReached(sovMonth(1950, 1))).toBe(false);
+  });
+  it('October 1956 calendar: every event on its day, 1 October a Monday, 17 days from the reburial to the march', () => {
+    expect(new Date(Date.UTC(1956, 9, 1)).getUTCDay()).toBe(1);
+    expect(octCell(23)).toEqual({ col: 1, row: 3 });
+    expect(new Date(Date.UTC(1956, 9, 23)).getUTCDay()).toBe(2);
+    for (let d = 1; d <= 28; d++) { const c = octCell(d); expect(octDayAt(c.col, c.row)).toBe(d); }
+    expect([...OCT_DECK].sort()).toEqual(Object.keys(OCT_DAY).sort());
+    expect(octDays('reburial', 'march')).toBe(17);
+    expect(octFits('points', 22)).toBe(true);
+    expect(octFits('points', 23)).toBe(false);
+    expect(octDone(OCT_DECK)).toBe(true);
+    expect(octDone(OCT_DECK.slice(1))).toBe(false);
+  });
+  it('second week of 1956: eight days; Budapest expected withdrawal while Moscow had decided otherwise only on 31 October', () => {
+    expect(WEEK_DAYS.length).toBe(8);
+    expect(WEEK_DAYS[0]).toMatchObject({ m: 10, d: 28 });
+    expect(WEEK_DAYS[7]).toMatchObject({ m: 11, d: 4 });
+    expect(weekFirstFooled()).toBe(3);
+    expect(WEEK_DAYS[weekFirstFooled()]).toMatchObject({ m: 10, d: 31 });
+    expect(WEEK_DAYS.filter((_, i) => weekFooled(i)).length).toBe(1);
+  });
+  it('embassy claim: no fact supports the communiqué of 23 November 1956; five contradict it, one is neutral', () => {
+    expect(EMB_CARDS.length).toBe(6);
+    expect(embTally('supports')).toBe(0);
+    expect(embTally('contradicts')).toBe(5);
+    expect(embTally('neither')).toBe(1);
+    const right = Object.fromEntries(EMB_CARDS.map((c) => [c.id, c.answer]));
+    expect(embScore(right)).toBe(6);
+    expect(embDone(right)).toBe(true);
+    expect(embDone({})).toBe(false);
+  });
+  it('anniversaries: exactly two pairs of dates share a day, 31 and 33 years apart', () => {
+    const ids = ANN_DATES.map((x) => x.id);
+    const pairs = ids.flatMap((a, i) => ids.slice(i + 1).filter((b) => annSameDay(a, b)).map((b) => annKey(a, b)));
+    expect(pairs.sort()).toEqual(ANN_PAIRS.map(([a, b]) => annKey(a, b)).sort());
+    expect(annYears('executed', 'reburial')).toBe(31);
+    expect(annYears('revolution', 'republic')).toBe(33);
+    expect(annDone(pairs)).toBe(true);
+    expect(annDone(pairs.slice(1))).toBe(false);
+  });
+  it('salami tactics: the 1947 shares match the official results, and no estimate of the false votes costs the Communists first place', () => {
+    expect(salShare(0)).toBeCloseTo(22.24, 1);
+    expect((100 * SAL_RESULTS[2].votes) / SAL_TOTAL).toBeCloseTo(15.34, 2);
+    expect(salToLose).toBe(286743);
+    for (const e of SAL_ESTIMATES) expect(salPlace(e)).toBe(1);
+    expect(salPlace(salToLose - 1)).toBe(1);
+    expect(salPlace(salToLose)).toBe(2);
+    expect(salPlace(287000)).toBe(2);
+  });
+  it('kulák quota: in 1951 the highest quota was more than the whole average harvest', () => {
+    expect(kqLeft(KQ_AVG, KQ_QUOTAS[0])).toBe(270);
+    expect(kqLeft(KQ_AVG, KQ_QUOTAS[1])).toBe(-130);
+    expect(kqTakes(KQ_AVG, KQ_QUOTAS[1])).toBeGreaterThan(100);
+    expect(kqMeets(1090, 1100)).toBe(false);
+    expect(kqMeets(1100, 1100)).toBe(true);
+    expect(kqMeets(1500, 700)).toBe(false);
+  });
+  it('1955: the events are listed in time order, the Warsaw Pact one day before the Austrian State Treaty', () => {
+    expect(y55InOrder(Y55_EVENTS.map((e) => e.id))).toBe(true);
+    expect(y55Day(5, 15) - y55Day(5, 14)).toBe(1);
+    expect(y55Day(12, 31)).toBe(365);
+    expect(y55Next([])).toBe('moscow');
+    expect(y55Next(['moscow', 'nagyOut'])).toBe('warsaw');
+    expect(y55InOrder(['treaty', 'warsaw'])).toBe(false);
+  });
+  it('Corvin map: the Buda places lie west of the Danube, the Pest ones east, Csepel on its island, and each dot can be tapped', () => {
+    expect(cvSide('szena')).toBe('buda');
+    expect(cvSide('moricz')).toBe('buda');
+    expect(cvSide('corvin')).toBe('pest');
+    expect(cvSide('baross')).toBe('pest');
+    expect(cvSide('csepel')).toBe('island');
+    for (const [w, h] of [[300, 220], [360, 240]]) for (const p of CV_PLACES) { const [x, y] = cvProject(p.lon, p.lat, w, h); expect(cvNearest(x + 3, y - 3, w, h)).toBe(p.id); }
+  });
+  it('last strongholds: all six hold on 4 November; from 10 to 19 November only the Mecsek group does', () => {
+    expect(lfHolding(LF_FIRST)).toHaveLength(6);
+    expect(lfHolding(9)).toContain('csepel');
+    const only = Array.from({ length: LF_LAST - LF_FIRST + 1 }, (_, i) => LF_FIRST + i).filter(lfOnlyMecsek);
+    expect(only[0]).toBe(10);
+    expect(only[only.length - 1]).toBe(19);
+    expect(lfHolding(20)).toHaveLength(0);
+  });
+  it('who left: the real shares count as close, a guess six points off does not', () => {
+    expect(wlAllClose({ ...WL_ACTUAL })).toBe(true);
+    expect(wlAllClose({ men: 61, young: 75, minors: 10 })).toBe(true);
+    expect(wlAllClose({ men: 60, young: 70, minors: 15 })).toBe(false);
+    expect(wlOff('minors', 50)).toBe(35);
+  });
+  it('1949 single list: 95.6% of ballots cast and 90.5% of the roll were for the list, and the tally adds up', () => {
+    expect(SL_CAST).toBe(5730519);
+    expect(SL_CAST + SL_TALLY.away).toBe(SL_ROLL);
+    expect(slShareCast('yes')!.toFixed(1)).toBe('95.6');
+    expect(slShareRoll('yes').toFixed(1)).toBe('90.5');
+    expect(slShareCast('no')!.toFixed(2)).toBe('2.88');
+    expect(slShareCast('away')).toBeNull();
+    expect(SL_ACTS.reduce((s, a) => s + slShareRoll(a), 0)).toBeCloseTo(100, 6);
+  });
+  it('norm squeeze: a norm raised by about 55% cuts pay by 35.5% for the same work, as at Ikarus in 1950', () => {
+    expect(nsRaiseFor(NS_CUT)).toBeCloseTo(55.04, 1);
+    expect(nsCutFor(55)).toBeCloseTo(35.48, 2);
+    expect(nsMatches(100, 55)).toBe(true);
+    expect(nsMatches(100, 50)).toBe(false);
+    expect(nsMatches(110, 55)).toBe(false);
+    expect(nsPay(155, 55)).toBeCloseTo(100, 9);
+  });
+  it('July 1956 telegram: five claims, two supported and three contradicted, scored only when judged right', () => {
+    expect(TG_CLAIMS).toHaveLength(5);
+    expect(TG_CLAIMS.filter((c) => c.verdict === 'supported').map((c) => c.id)).toEqual(['wages', 'army']);
+    const right = Object.fromEntries(TG_CLAIMS.map((c) => [c.id, c.verdict]));
+    expect(tgScore(right)).toBe(5);
+    expect(tgScore({})).toBe(0);
+    expect(tgScore({ ...right, health: 'supported' })).toBe(4);
+  });
+  it('Kossuth Square map: every place is hit where it is drawn, Bem lies west of Pest’s places, and the volley is at Parliament', () => {
+    for (const [w, h] of [[320, 260], [412, 300]]) {
+      for (const p of Object.keys(KS_PLACES) as KsPlace[]) {
+        const [x, y] = ksProject(w, h, ...KS_PLACES[p]);
+        expect(ksPlaceAt(w, h, x, y)).toBe(p);
+        expect(x).toBeGreaterThan(0); expect(x).toBeLessThan(w); expect(y).toBeGreaterThan(20); expect(y).toBeLessThan(h);
+      }
+      expect(ksProject(w, h, ...KS_PLACES.bem)[0]).toBeLessThan(ksProject(w, h, ...KS_PLACES.parliament)[0]);
+      expect(ksPlaceAt(w, h, 1, 1)).toBeNull();
+    }
+    expect(KS_EVENTS).toHaveLength(6);
+    expect(KS_EVENTS.at(-1)!.place).toBe('parliament');
+  });
+  it('Kádár’s answers: five demands, none granted, guesses scored against the record', () => {
+    expect(WC_DEMANDS).toHaveLength(5);
+    expect(wcGranted()).toBe(0);
+    const record = Object.fromEntries(WC_DEMANDS.map((d) => [d.id, d.outcome]));
+    expect(wcMatches(record)).toBe(5);
+    expect(wcMatches({})).toBe(0);
+    expect(wcMatches({ ...record, writing: 'granted' })).toBe(4);
+  });
+  it('Kádár-era bargain: real wages peak in 1980 and fall to 142 by 1990, while real income per head keeps rising', () => {
+    expect(kbPeak()).toBe(1980);
+    expect(KB_YEARS).toHaveLength(KB_WAGE.length);
+    expect(KB_WAGE.at(-1)).toBe(142);
+    expect(KB_INCOME.every((v, i) => i === 0 || v > KB_INCOME[i - 1])).toBe(true);
+    expect(kbChange(KB_WAGE, 3)).toBeCloseTo(17.83, 1);
+    expect(kbChange(KB_WAGE, 0)).toBe(0);
   });
 });

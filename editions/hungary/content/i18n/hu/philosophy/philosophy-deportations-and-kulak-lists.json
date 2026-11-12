@@ -1,0 +1,68 @@
+{
+  "id": "philosophy-deportations-and-kulak-lists",
+  "title": "Rákosi Mátyás Magyarországán az „osztályellenség” egy éjszaka alatt elveszíthette otthonát",
+  "body": "Rákosi Mátyás kommunista rendszere magyarok egész csoportjait kezelte **„osztályellenségként”**. A falvakban aki 25 holdnál (kb. 14 hektárnál) többön gazdálkodott, **kuláklistára** került – 1949-ben 61 922 földtulajdonos –, később pedig bármely paraszt, aki ellenállt a kollektivizálásnak. A kulákcsaládoknak egyre többet kellett beadniuk: 1951-ben holdanként 700–1100 kg búza értékét, miközben az átlagtermés 970 kg volt. 1948 és 1955 között csaknem 200 000 embert ítéltek el „közellátási bűntett” miatt. 1950. június 23-án éjjel a rendőrség 2446 embert hurcolt el a déli határ menti falvakból a Hortobágy zárt családi táboraiba; 1953-ra tizenkét ilyen tábor volt. 1951 májusa és júliusa között 12 704 embert – volt nemeseket, tiszteket, tisztviselőket és családjukat – telepítettek ki Budapestről 138 keleti faluba, ahogy [Kis-Kapin Róbert történész leírja](https://www.betekinto.hu/sites/default/files/betekinto-szamok/2011_1_kis_kapin.pdf). A táborok Nagy Imre miniszterelnök 1953. júliusi amnesztiája után bezártak, de a legtöbb család sosem kapta vissza az otthonát.",
+  "slides": [
+    {
+      "question": "1951 májusa és júliusa között hány embert telepített ki a rendszer Budapestről keleti falvakba?",
+      "unit": "ember",
+      "explanation": "12 704 embert, 5182 családot, 1951. május 21. és július 18. között. 138 faluba vitték és idegenek házaiban helyezték el őket."
+    },
+    {
+      "alt": "Animáció földbarna és búzasárga színekben: gépelt kuláklista, egy 25 holdas föld, a termésnél magasabb beadási oszlop, az elítéltek évről évre, majd Magyarország vázlatos térképe éjszakai nyilakkal a déli határtól a hortobágyi táborokig, és Budapestről 138 faluba tartó nyilakkal.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "classenemies-hu.mp4",
+      "poster": "classenemies-hu.jpg"
+    },
+    {
+      "prompt": "Válaszd az 1951-es legnagyobb kulák beadást, és keresd meg, mekkora holdankénti termés kellett ahhoz, hogy egy család épp teljesítse!",
+      "takeaway": "Holdanként 1100 kg: 130 kg-mal több az 1951-es átlagtermésnél, pedig az volt a korszak legjobb éve, és vetőmagra, kenyérre semmi sem maradt. Sok kulákgazdaság tönkrement e terhek alatt."
+    },
+    {
+      "heading": "Ki volt kulák?",
+      "text": "Rákosi Mátyás rendszere 1949-től kuláknak tekintett mindenkit, aki 25 kataszteri holdnál (kb. 14 hektárnál) többön gazdálkodott – oroszul a szó gazdag parasztot jelent –: abban az évben 61 922 embert. Később bármely ellenálló parasztot. Rájuk rótták a legnagyobb beadást; sokukat földjük „felajánlására” kényszerítették."
+    },
+    {
+      "heading": "„Közellátási bűntett” miatt elítéltek",
+      "note": "Statisztikai évkönyv, idézi Magyar Bálint (1986)"
+    },
+    {
+      "heading": "Kitelepítve a saját hazájukban",
+      "events": [
+        {
+          "when": "1950. jún. 23.",
+          "text": "2446 embert hurcolnak el"
+        },
+        {
+          "when": "1950–1953",
+          "text": "45 újabb hullám, 12 tábor"
+        },
+        {
+          "when": "1951. máj.–júl.",
+          "text": "12 704 ember Budapestről"
+        },
+        {
+          "when": "1953. júl. 26.",
+          "text": "Amnesztia Nagy Imre alatt"
+        },
+        {
+          "when": "1956 augusztus",
+          "text": "Újra szabadon lakhatnak bárhol"
+        }
+      ]
+    },
+    {
+      "question": "Kiket telepítettek ki Budapestről a keleti falvakba 1951-ben?",
+      "options": [
+        "Volt nemeseket, tiszteket",
+        "Normát nem teljesítő munkásokat",
+        "Egyetemistákat",
+        "Szovjet tanácsadók családjait"
+      ],
+      "explanation": "„Osztályidegeneket” és családjukat: volt arisztokratákat, földbirtokosokat, gyárosokat, főtisztviselőket, tiszteket és papokat, összesen 12 704 embert."
+    }
+  ],
+  "source": {
+    "label": "Saád József: Hortobágyi deportáltak és 1956 (Telepesek Társadalmi Múzeum Alapítvány, Magyar Nemzeti Levéltár)"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "history-rajk-show-trial-1949",
+  "title": "1949-ben Rajk László a rádióban vallott be olyan bűnöket, amelyeket sosem követett el",
+  "body": "1949 szeptemberében Budapesten bíróság elé állították Rajk Lászlót, a spanyol polgárháborút megjárt kommunista veteránt, aki előbb belügy-, majd külügyminiszter volt. A népbíróság azzal vádolta, hogy a Nyugatnak kémkedett, és összeesküdött Tito jugoszláv vezetővel, akivel Sztálin egy évvel korábban szakított; az Egyesült Államok moszkvai nagykövetsége a Kreml addigi legkomolyabb nyilvános fellépésének nevezte a pert a „titoizmus” ellen. A rádióban közvetített tárgyaláson Rajk mindent beismert: valamennyi szereplő, a bírót és az ügyészeket is beleértve, betanult szöveget mondott fel ([hvg.hu](https://hvg.hu/itthon/20091013_rajk_per_vadlott)). Tanúk később az ENSZ különbizottsága előtt elmondták, hogy a vádlottakat megkínozták, és hogy Kádár János, az akkori belügyminiszter életet ígért Rajknak egy hamis vallomásért. Rajkot, Szőnyi Tibort és Szalai Andrást 1949. október 15-én felakasztották, és titkos mellékperek következtek. A tanulság világos volt: **senki sem lehetett biztonságban, akármilyen hűséges volt is**. 1956. március 27-én Rákosi Mátyás elismerte, hogy a vádak „koholtak” voltak; Rajkot 1956. október 6-án temették újra, tizenhét nappal a forradalom előtt.",
+  "slides": [
+    {
+      "question": "Hány év telt el Rajk László volt miniszter 1949-es kivégzése és a vádak hamisságának elismerése között?",
+      "unit": "év",
+      "explanation": "Nagyjából hat és fél: Rajkot 1949. október 15-én akasztották fel, Rákosi Mátyás pedig 1956. március 27-én ismerte el, hogy a vádak koholtak voltak."
+    },
+    {
+      "alt": "Animáció sötét íróasztalon: gépelt rendőrségi akta Rajk Lászlóról piros LETARTÓZTATVA bélyegzővel, Moszkva és Belgrád szakításának vázlata, egyszerű formákkal rajzolt tárgyalóterem rádiómikrofonnal, a betanult válaszok forgatókönyve, az 1949-es ítélet és 1956-ból a KOHOLT bélyegző.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "rajk-hu.mp4",
+      "poster": "rajk-hu.jpg"
+    },
+    {
+      "prompt": "Koppints a Rajk-ügy eseményeire időrendben, a Titóval való szakítástól a forradalomig.",
+      "takeaway": "A hazugság hat és fél évig állt: Rajkot 1949 októberében végezték ki, és Rákosi csak 1956 márciusában ismerte el, hogy a vádak hamisak voltak. Hét hónappal később jött az újratemetés, aztán a forradalom."
+    },
+    {
+      "heading": "A Rajk-ügy",
+      "events": [
+        {
+          "when": "1948",
+          "text": "Sztálin szakít a jugoszláv Titóval"
+        },
+        {
+          "when": "1949. szept.",
+          "text": "Rajk pere, a rádió közvetítésével"
+        },
+        {
+          "when": "1949. okt. 15.",
+          "text": "Rajkot, Szőnyit és Szalait kivégzik"
+        },
+        {
+          "when": "1956. márc. 27.",
+          "text": "A vádakat koholtnak nyilvánítják"
+        },
+        {
+          "when": "1956. okt. 6.",
+          "text": "Rajkot újratemetik Budapesten"
+        }
+      ]
+    },
+    {
+      "heading": "Hogyan működött a koncepciós per?",
+      "text": "A vádakat kitalálták, a vallomásokat kínzással csikarták ki. A tárgyaláson mindenki, a bíró és az ügyészek is, betanult szöveget mondott. Az egész országnak közvetített per minden hallgatónak szólt: ha egy vezető kommunistát rá lehetett bírni, hogy árulónak nevezze magát, akárki lehetett a következő."
+    },
+    {
+      "text": "A Kreml legeltökéltebb és legkomolyabb nyilvános erőfeszítése a titoizmus megjelenése óta.",
+      "attribution": "Az Egyesült Államok moszkvai nagykövetsége a Rajk-perről, 1949. szeptember 26."
+    },
+    {
+      "question": "Ki beszélte rá Rajk Lászlót a hamis vallomásra, életet ígérve neki, az ENSZ előtt 1957-ben valló tanúk szerint?",
+      "options": [
+        "Kádár János",
+        "Nagy Imre",
+        "Josip Broz Tito",
+        "A védőügyvédje"
+      ],
+      "explanation": "Kádár János, aki Rajkot a belügyminiszteri székben követte. Az ENSZ különbizottságának azt is elmondták, hogy ő volt egyike annak a négy embernek, aki aláírta Rajk kivégzési parancsát."
+    }
+  ],
+  "source": {
+    "label": "Az ENSZ különbizottsága a magyar kérdésről: jelentés (1957)"
+  }
+}

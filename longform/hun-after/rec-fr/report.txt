@@ -1,0 +1,198 @@
+o1       9.3 s  12.2 c/s  heard 0.98  seed 1
+       say:   Budapest, ezerkilencszáznyolcvankilenc június tizenhatodika. A Hősök terén, a Műcsarnok lépcsőjén hat koporsó áll
+       heard: Budapest 1989, június 16-a. A hősökterén, a műcsarnok lépcsőjén 6 koporsó áll.
+o2       7.4 s  15.3 c/s  heard 0.98  seed 4
+       say:   Négyben ezerkilencszázötvenhat után kivégzett férfiak fekszenek, egyben pedig egy férfi, aki a börtönben halt meg
+       heard: Mégben 1956 után kivégzett férfiak fekszenek, egyben pedig egy férfi, aki a börtönben halt meg.
+o3       5.0 s  11.8 c/s  heard 1.00  seed 1
+       say:   A hatodik koporsó üres. Ötvenhat minden halottját jelképezi
+       heard: A hatodik koporsó üres. 56 minden halottját jelképezi.
+o4       9.4 s  14.2 c/s  heard 0.98  seed 1
+       say:   Kétszáz-kétszázötvenezer ember jött el, napra pontosan harmincegy évvel azután, hogy kivégezték Nagy Imrét, ötvenhat miniszterelnökét
+       heard: 200-250.000 ember jött el. Napra pontosan 31 ével azután, hogy kivégezték nagy imrét 56 miniszterelnöki.
+o5       6.7 s  16.2 c/s  heard 0.98  seed 1
+       say:   Hogyan jutott el az ország a titkos kivégzéstől idáig? Ez annak a története, amit ötvenhat maga után hagyott
+       heard: Hogyan jutott el az országa titkos kivegzéstől idáig? Ez onnak a története, amit 56 maga után hagyott.
+r1       9.4 s  13.8 c/s  heard 0.99  seed 1
+       say:   Ezerkilencszázötvenhat decemberére leverték a forradalmat, és a szovjet hadsereg által hatalomra segített Kádár János kormányzott
+       heard: 1956 decemberére leverték a forradalmat, és a Szovjet hadsereg által hatalomra segített Kádár János kormányzó.
+r3       6.9 s  15.2 c/s  heard 0.91  seed 1
+       say:   Decemberben jöttek a statáriális bíróságok. Egy elrejtett fegyver ekkor legalább tíz év börtönt jelentett
+       heard: Decsemberben jöttek a statáriáris bíróságok. Egy elréped fegyverek korleg a láb tíz év bőstönt jelentett.
+r4       5.5 s  17.6 c/s  heard 0.95  seed 1
+       say:   Akit veszélyesnek tartottak, azt internálhatták, vagyis ítélet nélkül hónapokig fogva tarthatták
+       heard: akit veszélyesnél tartottak azt internálhatták, vagy is itt életnél kül hónapokig fogba tarthatták.
+r5       8.1 s  16.5 c/s  heard 0.97  seed 1
+       say:   Az ötvenhatos Intézet szerint a bíróságok több mint huszonkétezer embert ítéltek börtönre, és még többet tartottak fogva ítélet nélkül
+       heard: Az 56-os intézet szerint a bíróságok több mint 22.000 embert ítéltek Börtönre, és még többet tartottak fogva ítéletni a kül.
+r6       4.2 s  16.8 c/s  heard 1.00  seed 1
+       say:   Összesen nagyjából minden kétszázadik magyar vesztette el a szabadságát
+       heard: Összesen nagyjából minden kétszázadik magyar vesztette el a szabadságát.
+r7       6.7 s  15.1 c/s  heard 0.98  seed 3
+       say:   És kétszázhuszonkilenc embert végeztek ki a forradalomban való részvételéért. Többségük harcolt benne
+       heard: És 229 embert végeztek ki a forradaromban való részvételéért. Töbségük harcolt benne.
+r8       8.4 s  16.3 c/s  heard 0.98  seed 1
+       say:   Még a rendszer saját adatai szerint is legfeljebb száz közül öt volt osztályellenség. A többség munkás, paraszt, alkalmazott és diák volt
+       heard: Még a rendszer saját adatai szerint is legfejebb száz közül öt volt osztály ellenség, a többség munkás paraszt alkalmazott kis diák volt.
+r10      6.5 s  18.4 c/s  heard 0.88  seed 1
+       say:   Az internálás ezerkilencszázhatvanegyben szűnt meg, a foglyok többsége pedig csak ezerkilencszázhatvanháromban szabadult
+       heard: Az internálás 1961-ben szűnt, mert a fogjuktepsége felét csak 1963-ban szabad.
+f1       6.9 s  14.4 c/s  heard 0.96  seed 1
+       say:   Sokan nem vártak. Ausztria már október huszonnyolcadikán menedéket ígért minden magyarnak, aki kéri
+       heard: Sokan nem vártak. Austria már október 28-án menedéket igért minden magyarnak, aki kéri.
+f2       3.6 s  15.7 c/s  heard 0.88  seed 1
+       say:   November negyedike után tízezrek indultak el nyugat felé
+       heard: November 4 után tíz ezzerek indultak el nyugad felé.
+f3       6.5 s  15.6 c/s  heard 0.93  seed 1
+       say:   Az ausztriai Andau közelében egy keskeny fahíd vezetett át az Ájnzer-csatornán, nem messze a határtól
+       heard: Az Austria-i Andau közelében egy keskén fahírd vezetettelt az ányzer csatornán, nem messze a hatástól.
+f4       4.9 s  16.9 c/s  heard 0.94  seed 2
+       say:   Osztrák adatok szerint november hatodikától mintegy hetvenezer ember kelt át rajta
+       heard: Oztrák adatok szerint november 6. dekátor, mint egy 70.000 ember kell tátrajta.
+f5       4.9 s  16.9 c/s  heard 0.91  seed 2
+       say:   November huszonegyedikén a hidat felrobbantották. Az emberek a romjain is átkeltek
+       heard: November 21-én a hiddad félróbban tották, az emberek a romjain is átkelt.
+f6       5.7 s  15.4 c/s  heard 0.90  seed 1
+       say:   Decemberben, amikor megkezdődött a megtorlás, egy második, még nagyobb hullám indult el
+       heard: De csendelben, amikor megkezdődött a megtorlás, egy másodit, még nagyobb hullámínt út el.
+f7       8.1 s  15.6 c/s  heard 0.98  seed 1
+       say:   A Központi Statisztikai Hivatal százkilencvenháromezer nyolcszáznyolcvanöt menekültet számolt össze, többségük Ausztriába ment
+       heard: A központi statistikai hivattal 193.885 menekültet számolt össze, többségük Austriában men.
+f8       5.7 s  15.3 c/s  heard 0.98  seed 1
+       say:   Csaknem háromból kettő férfi volt, tízből hét pedig tizenöt és harminckilenc év közötti
+       heard: Csak nem háromból kettő férfi volt, 10ből 7 pedig 15 és 39 szív közötti.
+f9       7.4 s  15.2 c/s  heard 0.96  seed 1
+       say:   Mintegy tízezer, tizenöt évnél fiatalabb gyermek szülei nélkül ment el. Az ország mérnökeinek tizede is távozott
+       heard: Mint egy tízer, tizenötérne, fiatalabb gyermek szüleinél külmentel. Az ország mérnökeinek tizede is távozott.
+f10      9.7 s  15.5 c/s  heard 0.99  seed 1
+       say:   A segélyezést az ensz menekültügyi szervezete hangolta össze. Az Egyesült Államok mintegy negyvennégyezer, Kanada harminckilencezer embert fogadott be
+       heard: A segélyezést az ENSZ menekültügyi szervezete hangolta össze. Az egyesült államok mint egy 44.000, Kanada 39.000 embert fogadott bebe.
+f12     11.6 s  12.7 c/s  heard 0.96  seed 1
+       say:   Ezerkilencszázötvenhét május végéig mindössze tizenegyezer-négyszáznegyvenheten tértek haza. Mintegy százhetvenhatezer ember végleg külföldön maradt
+       heard: 1957 május végéig mindösszel 11.447 értek hoza, mint egy 176.000 ember védle külföldön maradt.
+n1       6.2 s  16.2 c/s  heard 0.94  seed 1
+       say:   Nagy Imre, a forradalom miniszterelnöke, november negyedikén a jugoszláv követségen kapott menedéket
+       heard: Nagy Imre, a forradalom miniszterelnöke, november 4-én a Jukoszlás követségen kapott menedéket.
+n2       8.6 s  13.5 c/s  heard 0.89  seed 1
+       say:   Honvédelmi miniszterét, Maléter Pált előző éjjel tartóztatták le, a szovjet katonai vezetéssel folytatott tárgyaláson
+       heard: Honvédelmi miniszkerét, Maréter Pált előző él tartozdatták le, a szuvjet katonai vezetissel folytatott tátyalásul.
+n3       8.1 s  12.2 c/s  heard 0.95  seed 1
+       say:   Kádár kormánya írásban ígérte meg, hogy hazamehetnek. November huszonkettedikén autóbuszra szálltak
+       heard: Kádár kormánya írásban így érte meg, hogy haza mehetnek. November 22-én autóbúsra szállta.
+n4       6.4 s  15.0 c/s  heard 0.95  seed 1
+       say:   Szovjet katonák is felszálltak, páncélautók kísérték el a buszt, és a csoportot Romániába vitték
+       heard: Szovjet katonák is felszáltak. Páncélautók is értékel a buszt, és a csoportot romániába vittli.
+n5       8.0 s  14.6 c/s  heard 0.99  seed 1
+       say:   Ezerkilencszázötvenhét elején Kádár pártvezetése, Moszkva egyetértésével, úgy döntött, hogy bíróság elé állítja őket
+       heard: 1957 elején Kádár párt vezetése, Moszka egyetértésével úgy döntött, hogy bíróság elé állítja őket.
+n6       8.7 s  14.9 c/s  heard 0.99  seed 1
+       say:   A per ezerkilencszázötvennyolc februárjában kezdődött, Moszkva kérésére félbeszakadt, és júniusban zárt ajtók mögött folytatódott
+       heard: A PER-1958 februárjában kezdődött, Moszka kérésére félbe szakat, és jóniusban zártajtók mögött folytatódott.
+n7       5.7 s  14.8 c/s  heard 0.96  seed 1
+       say:   Rainer János történész szerint a döntő, ha nem is kizárólagos felelősség Kádáré volt
+       heard: Rainer János történés szerint a döntő, hanem is kizárólagos felelőség kádáréval.
+n8       7.6 s  15.9 c/s  heard 0.94  seed 1
+       say:   Ezerkilencszázötvennyolc június tizenötödikén a bíróság halálra ítélte Nagy Imrét, Maléter Pált és Gimes Miklós újságírót
+       heard: 1958 június 15-dikén a Bióság hadárait érte nagy imrét, maléterpát és gyimes miklós újságírótú.
+n9       7.8 s  15.1 c/s  heard 0.95  seed 1
+       say:   A többiek börtönbüntetést kaptak. Losonczy Géza vizsgálati fogságban halt meg, Szilágyi Józsefet áprilisban kivégezték
+       heard: A többiek börtönbüntetést kaptak. Losoncsígéz a vizsgálati fokságban halt, mert Szilágyi Józsefet Áprilisban kivégeztét.
+n10      5.1 s  14.4 c/s  heard 0.96  seed 1
+       say:   Nagy Imre nem kért kegyelmet. Kegyelmet nem kérek, mondta a bíróság előtt
+       heard: Nagyimre nem kérd kegyelmet, kegyelmet nem kérek, mondta a bíróság elő.
+n11      8.4 s  13.9 c/s  heard 0.96  seed 1
+       say:   Június tizenhatodikán hajnalban felakasztották őket egy budapesti börtön udvarán, és ott temették el őket, jeltelenül
+       heard: Jónius 16-án hajnalban felakasztották őket egy budapesti börtön udvarán, és ott emették el őket, jel terenül.
+n12      2.1 s  15.6 c/s  heard 0.92  seed 2
+       say:   A per csak ekkor vált nyilvánossá
+       heard: A ber csak ekkor vált nyilvánossára.
+n13     11.2 s  13.9 c/s  heard 0.97  seed 1
+       say:   Ezerkilencszázhatvanegyben koporsóikat titokban egy budapesti temető háromszázegyes parcellájába vitték, sok más, ötvenhat után kivégzett közé, hamis néven
+       heard: 1961-ben koporsóikat titokban egy budapesti temető 3%-es parcelájába vitték, sok más 56 után kivégzet közé, Hamis néven.
+k1       6.1 s  15.1 c/s  heard 0.91  seed 1
+       say:   Kádár ezerkilencszáznyolcvannyolcig vezette az állampártot, és kétszer miniszterelnök is volt
+       heard: Kádár 1988-cik vezette az állampártat és két szerminíftarán ők is volt.
+k2       5.9 s  13.8 c/s  heard 0.98  seed 1
+       say:   Ezerkilencszázhatvanegyben alkut kínált. Aki nincs ellenünk, mondta, az velünk van
+       heard: 1961-ben alkud kínált. Aki nincs ellenünk, mondta, az velünk van.
+k3       7.7 s  16.3 c/s  heard 0.96  seed 1
+       say:   Ezerkilencszázhatvankettőben, egy Washingtonnal kötött titkos megegyezés után, az ensz levette napirendjéről a magyar kérdést
+       heard: 1962-ben egy Washington-nől kötött titkos megegyezés után az Ernst Levet-te napírengyéről a Magyar kérdést.
+k4       9.2 s  14.5 c/s  heard 0.96  seed 1
+       say:   Ezerkilencszázhatvanhárom márciusában amnesztia jött. Az ötvenhat miatt elítéltek többsége kiszabadult, több százan börtönben maradtak
+       heard: 1963 Márciusában Amnesty-a jött. Az 56 miatt elitértek többsége kiszabadult, több százon börtönben maradta.
+k6       4.7 s  16.3 c/s  heard 0.91  seed 1
+       say:   Ezerkilencszázhatvannyolctól egy reform piaci elemeket vitt a tervgazdaságba
+       heard: 1968-tól egy reformpiaci elemet jött vitt a tervgozdasátból.
+k7      10.3 s  16.2 c/s  heard 0.97  seed 1
+       say:   A hivatalos adatok szerint a reálbér ezerkilencszázhatvan és ezerkilencszázhetvenöt között másfélszeresére nőtt, aztán megtorpant, a nyolcvanas években pedig csökkent
+       heard: A hivatalos adatok szerint a rejábér 1960 és 1975 között másfél szeresírenőtt. Aztán megtorbant a 80-as években pedig csökkön.
+k8       5.7 s  13.2 c/s  heard 0.93  seed 1
+       say:   Volt, aki gulyáskommunizmusnak nevezte. Puhább diktatúra volt, de diktatúra
+       heard: Volt a kigújás kommunizmusnak neveztő. Poábbdiktatóra volt, dediktatóra.
+k9       5.5 s  15.4 c/s  heard 1.00  seed 1
+       say:   Az alku másik oldala a hallgatás volt. A tankönyvekben ötvenhat ellenforradalom volt
+       heard: Az Alku másik oldala a hallgatás volt, a tankönyvekben 56 ellen forradalom volt.
+k11      6.8 s  15.2 c/s  heard 0.96  seed 2
+       say:   A nyolcvanas évekre sajnálatos eseményekké szelídült, de nyilvánosan megemlékezni még mindig tilos volt
+       heard: A 80-as évekre sajnálatos események képszer idült. De nyilvánosan megemlékezni még mindig tirós volt.
+b1       6.9 s  13.7 c/s  heard 0.97  seed 2
+       say:   Ezerkilencszáznyolcvannyolc májusában, a gyengülő rendszerben, Kádárt leváltották a párt éléről
+       heard: 1988 májussában. A gyengűről rendszerben kád át leváltották a párt éléről.
+b2       8.1 s  15.5 c/s  heard 0.96  seed 3
+       say:   Egykori ötvenhatos elítéltek megalakították a Történelmi Igazságtétel Bizottságát, és a kivégzettek rehabilitálását követelték
+       heard: Egy kori 56 evítéltek megalakították a történelmi igazság kétel bizottságát, és a kivégzettek rehabili tálását követelt.
+b3       8.6 s  14.5 c/s  heard 0.98  seed 1
+       say:   Ezerkilencszáznyolcvannyolc június tizenhatodikán sokan elmentek a jeltelen sírokhoz. A városban a rendőrök tüntetőket vertek
+       heard: 1988 június 16-án sokan elmentek a jeltelensírokhoz. A városban a rendőrök tüntetőket vertek.
+b5       8.3 s  14.6 c/s  heard 0.94  seed 1
+       say:   Aztán ezerkilencszáznyolcvankilenc január huszonnyolcadikán Pozsgay Imre államminiszter népfelkelésnek nevezte ötvenhatot
+       heard: Aztán 1989, január, 28-án, poszgai imre áll a miniszternírt felkelésnek nevezte 56-ot.
+b6       6.2 s  15.5 c/s  heard 0.96  seed 1
+       say:   Tavasszal felnyitották a háromszázegyes parcella sírjait, és azonosították Nagy Imrét és társait
+       heard: Tavasszal fenyütották a 301-es parcellasíriait és azonosították nagy imrétéstársai.
+b7      10.7 s  14.2 c/s  heard 0.97  seed 1
+       say:   Ezerkilencszáznyolcvankilenc június tizenhatodikán pedig megtartották a temetést, amellyel filmünk kezdődött. A rádió és a televízió élőben közvetítette
+       heard: 1989 Június 16-dikán pedig megtartották a temekést, amelyel filmünk kezdődött. A rádió is a televízió élőben köszvetítette.
+b8       4.5 s  16.3 c/s  heard 0.89  seed 1
+       say:   A szónokok a szovjet csapatok kivonását és szabad választásokat követeltek
+       heard: A szónukok a szövjet csapató kivonyását és szabadváloztásokot követelte.
+b9       5.9 s  16.9 c/s  heard 0.95  seed 1
+       say:   A fiatalok nevében Orbán Viktor azt mondta, hogy a demokrácia és a kommunizmus összeegyeztethetetlen
+       heard: A fiatalok nevében Orbán Viktor azt mondta, hogy a demokrácia is a kommunizus összeigezthetetlen.
+b10      6.2 s  14.8 c/s  heard 0.97  seed 1
+       say:   A temetőben felolvasták a kivégzettek névsorát, és a halottakat újra eltemették, a nevükkel
+       heard: A temetőben felolvasták a kivégzettek név sorát, és a halottakod újra eltemették a nevükkel.
+b11      9.6 s  14.4 c/s  heard 0.97  seed 3
+       say:   Július hatodikán a Legfelsőbb Bíróság hatályon kívül helyezte az ezerkilencszázötvennyolcas ítéletet. Ugyanazon a napon meghalt Kádár János
+       heard: Jólius hatodikán a legfelső bíróság hatályon kívülhelyezte az 1958-as ítéletet. Ugyanazon a napom meghalt gáldá rjános.
+m1      10.0 s  15.4 c/s  heard 0.94  seed 1
+       say:   Ezerkilencszáznyolcvankilenc október huszonharmadikán, pontosan harminchárom évvel a forradalom kitörése után, a Népköztársaságból Magyar Köztársaság lett
+       heard: 1989. oktober 23-án, pontosan 33 évvel a forradalom kitörése után, a nép köztársosságból magyar köztársosság le.
+m2       7.3 s  15.0 c/s  heard 0.93  seed 1
+       say:   Az ideiglenes köztársasági elnök, Szűrös Mátyás a Parlament erkélyéről kiáltotta ki, több tízezer ember előtt
+       heard: Az ideiglenes köztársossági elnök, szűrös mátyás a parlamenterkii iről kiáltott a ki, több tívezer ember előtt.
+m3       7.6 s  17.2 c/s  heard 0.93  seed 1
+       say:   Ezerkilencszázkilencvenben szabad választásokat tartottak, és egy új törvény október huszonharmadikát nemzeti ünneppé nyilvánította
+       heard: 1990-ben szabad választásokat tartottak, és egy új törvény oktober 23-t nemzeti ünnep bényérvájnatott.
+m4       6.1 s  16.8 c/s  heard 0.92  seed 1
+       say:   Ezerkilencszázkilencvenegy június tizenkilencedikén az utolsó szovjet katona is elhagyta Magyarországot
+       heard: 1991. június, 19.én az utolsó szóviát Katona is elhajt a magyarószágot.
+m5       7.5 s  14.9 c/s  heard 0.99  seed 1
+       say:   A diákok első követelése ezerkilencszázötvenhatban a szovjet csapatok kivonása volt. Harmincöt év kellett hozzá
+       heard: a diákok első követelése 1956-ben a szovjet csapatok kivonása volt, 35 év kellett hozzá.
+m6       7.2 s  12.8 c/s  heard 0.93  seed 1
+       say:   Ma, október huszonharmadikán, ismét lyukas zászlók lobognak, ahogy ezerkilencszázötvenhatban
+       heard: Ma, Oktober 23-án, ismét jukas zászlók lobognak, ahogy 1956-ban.
+m7       7.7 s  15.7 c/s  heard 0.90  seed 1
+       say:   A háromszázegyes parcella ma a Nemzeti Gyászpark része, az andaui hidat pedig ezerkilencszázkilencvenhatban újjáépítették
+       heard: A 301-es parcella, Mon Enveti Gelszberg résző, az Andaui hiddat pedig 1996-ban újjájépítettél.
+m9      11.3 s  13.7 c/s  heard 0.96  seed 1
+       say:   Ötvenhat sok halottat hagyott maga után. Harcosokat és járókelőket, magyar és szovjet katonákat, az ávéhá áldozatait, és a tömeg által meglincselt ávósokat
+       heard: 56 sok halottad hagyott maga után. Harcosokat és járókel őket. Magyar és szovjet katonákat az ÁVH áldozatait, és te meg által neglincselt álvosokat.
+m10      7.9 s  14.5 c/s  heard 0.97  seed 1
+       say:   Hagyott maga után mintegy kétszázezer életet, amely külföldön kezdődött újra, és itthon három évtizednyi hallgatást
+       heard: hagyott maga után mind egy kétszázeve életet, amely külföldön kezdődött újra, és itthon három évtizednyi hallgatást.
+m11      7.0 s  13.6 c/s  heard 0.99  seed 1
+       say:   És neveket hagyott. Harminc évig nem kerülhettek a sírokra. Most újra ott állnak, és emlékezünk
+       heard: és neveket hagyott. 30 évig nem kerülhettek a sírokra. Most újra ott állnak is emlékezünk.

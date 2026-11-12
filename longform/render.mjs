@@ -24,7 +24,9 @@ if (lang) {
   const tl = join(here, slug, `timeline-${lang}.js`), lf = join(here, slug, `labels-${lang}.json`);
   if (!existsSync(tl)) throw new Error(`${slug}/timeline-${lang}.js is missing: run tts-${lang}.sh ${slug} (or node timing.mjs build-${lang} ${slug})`);
   if (!existsSync(lf)) throw new Error(`${slug}/labels-${lang}.json is missing: write it, { "labels": { "English text": "its translation" } }`);
-  TR = { locale: LOCALES[lang], ...JSON.parse(readFileSync(lf, 'utf8')) };
+  // The 'fr' slot is the second language: French unless <slug>/lang2.txt says hu (Hungary 1956's films).
+  const second = existsSync(join(here, slug, 'lang2.txt')) ? readFileSync(join(here, slug, 'lang2.txt'), 'utf8').trim() : 'fr';
+  TR = { locale: { fr: 'fr-FR', hu: 'hu-HU' }[second] ?? LOCALES[lang], ...JSON.parse(readFileSync(lf, 'utf8')) };
 }
 const catalog = JSON.parse(readFileSync('/home/user/instasmart/explainers/fonts/catalog.json', 'utf8'));
 const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH ?? '/opt/pw-browsers/chromium' });

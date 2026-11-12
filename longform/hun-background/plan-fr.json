@@ -1,0 +1,330 @@
+{
+ "duration": 562.42,
+ "lines": [
+  {
+   "key": "o1",
+   "start": 1,
+   "natural": 7.893
+  },
+  {
+   "key": "o2",
+   "start": 9.46,
+   "natural": 7.445
+  },
+  {
+   "key": "o3",
+   "start": 17.48,
+   "natural": 5.419
+  },
+  {
+   "key": "o4",
+   "start": 23.47,
+   "natural": 9.728
+  },
+  {
+   "key": "a1",
+   "start": 41.52,
+   "natural": 7.829
+  },
+  {
+   "key": "a2",
+   "start": 49.91,
+   "natural": 7.616
+  },
+  {
+   "key": "a3",
+   "start": 58.7,
+   "natural": 8.619
+  },
+  {
+   "key": "a4",
+   "start": 67.89,
+   "natural": 5.397
+  },
+  {
+   "key": "a5",
+   "start": 73.86,
+   "natural": 4.971
+  },
+  {
+   "key": "a6",
+   "start": 80,
+   "natural": 7.723
+  },
+  {
+   "key": "a7",
+   "start": 88.29,
+   "natural": 7.872
+  },
+  {
+   "key": "a8",
+   "start": 97.68,
+   "natural": 5.888
+  },
+  {
+   "key": "a9",
+   "start": 104.14,
+   "natural": 8.043
+  },
+  {
+   "key": "a10",
+   "start": 112.75,
+   "natural": 8.427
+  },
+  {
+   "key": "b1",
+   "start": 125.9,
+   "natural": 8.427
+  },
+  {
+   "key": "b2",
+   "start": 134.9,
+   "natural": 6.101
+  },
+  {
+   "key": "b3",
+   "start": 141.57,
+   "natural": 5.611
+  },
+  {
+   "key": "b4",
+   "start": 147.75,
+   "natural": 7.659
+  },
+  {
+   "key": "b5",
+   "start": 155.98,
+   "natural": 5.632
+  },
+  {
+   "key": "b6",
+   "start": 162.93,
+   "natural": 5.995
+  },
+  {
+   "key": "b7",
+   "start": 169.5,
+   "natural": 5.205
+  },
+  {
+   "key": "b8",
+   "start": 175.27,
+   "natural": 5.611
+  },
+  {
+   "key": "b9",
+   "start": 181.45,
+   "natural": 5.184
+  },
+  {
+   "key": "b10",
+   "start": 187.96,
+   "natural": 7.104
+  },
+  {
+   "key": "b11",
+   "start": 195.63,
+   "natural": 11.584
+  },
+  {
+   "key": "b12",
+   "start": 207.78,
+   "natural": 3.349
+  },
+  {
+   "key": "c1",
+   "start": 215.85,
+   "natural": 6.869
+  },
+  {
+   "key": "c3",
+   "start": 223.29,
+   "natural": 9.003
+  },
+  {
+   "key": "c4",
+   "start": 232.86,
+   "natural": 6.059
+  },
+  {
+   "key": "c5",
+   "start": 239.49,
+   "natural": 10.304
+  },
+  {
+   "key": "c6",
+   "start": 250.37,
+   "natural": 3.2
+  },
+  {
+   "key": "c7",
+   "start": 254.14,
+   "natural": 5.973
+  },
+  {
+   "key": "c8",
+   "start": 261.43,
+   "natural": 7.744
+  },
+  {
+   "key": "c9",
+   "start": 269.74,
+   "natural": 8.896
+  },
+  {
+   "key": "c10",
+   "start": 279.21,
+   "natural": 8.875
+  },
+  {
+   "key": "c11",
+   "start": 288.65,
+   "natural": 6.272
+  },
+  {
+   "key": "c12",
+   "start": 295.5,
+   "natural": 8.533
+  },
+  {
+   "key": "d1",
+   "start": 308.95,
+   "natural": 10.197
+  },
+  {
+   "key": "d2",
+   "start": 319.72,
+   "natural": 8.192
+  },
+  {
+   "key": "d3",
+   "start": 328.48,
+   "natural": 7.36
+  },
+  {
+   "key": "d5",
+   "start": 337.06,
+   "natural": 8.811
+  },
+  {
+   "key": "d6",
+   "start": 346.44,
+   "natural": 5.611
+  },
+  {
+   "key": "d7",
+   "start": 352.62,
+   "natural": 7.083
+  },
+  {
+   "key": "d9",
+   "start": 361.22,
+   "natural": 7.467
+  },
+  {
+   "key": "d10",
+   "start": 369.26,
+   "natural": 5.675
+  },
+  {
+   "key": "e2",
+   "start": 380.06,
+   "natural": 10.304
+  },
+  {
+   "key": "e3",
+   "start": 391.28,
+   "natural": 8.725
+  },
+  {
+   "key": "e4",
+   "start": 400.58,
+   "natural": 7.744
+  },
+  {
+   "key": "e5",
+   "start": 408.89,
+   "natural": 9.408
+  },
+  {
+   "key": "e6",
+   "start": 418.87,
+   "natural": 5.653
+  },
+  {
+   "key": "e7",
+   "start": 425.09,
+   "natural": 8.107
+  },
+  {
+   "key": "e8",
+   "start": 433.77,
+   "natural": 9.173
+  },
+  {
+   "key": "e9",
+   "start": 444.11,
+   "natural": 4.587
+  },
+  {
+   "key": "e10",
+   "start": 450.22,
+   "natural": 12.267
+  },
+  {
+   "key": "e11",
+   "start": 463.05,
+   "natural": 6.635
+  },
+  {
+   "key": "g1",
+   "start": 474.61,
+   "natural": 7.104
+  },
+  {
+   "key": "g2",
+   "start": 482.28,
+   "natural": 5.611
+  },
+  {
+   "key": "g3",
+   "start": 488.46,
+   "natural": 9.088
+  },
+  {
+   "key": "g4",
+   "start": 498.12,
+   "natural": 3.2
+  },
+  {
+   "key": "g5",
+   "start": 502.54,
+   "natural": 6.464
+  },
+  {
+   "key": "g6",
+   "start": 509.58,
+   "natural": 9.813
+  },
+  {
+   "key": "g8",
+   "start": 519.96,
+   "natural": 8.747
+  },
+  {
+   "key": "g9",
+   "start": 530.23,
+   "natural": 6.827
+  },
+  {
+   "key": "g10",
+   "start": 537.62,
+   "natural": 8.64
+  },
+  {
+   "key": "g11",
+   "start": 546.83,
+   "natural": 6.464
+  }
+ ]
+}

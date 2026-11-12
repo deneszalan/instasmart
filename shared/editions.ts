@@ -36,7 +36,12 @@ export interface Edition {
    * Other languages the reader can switch the app to, with this edition's own text (and name, if it differs) in each. A post shows in
    * one of them when it has a translation at content/i18n/<lang>/<field>/<id>.json, and in `lang` otherwise.
    */
-  langs?: Partial<Record<Lang, { name?: string; fieldText?: Partial<Record<FieldId, FieldText>>; films?: Partial<Record<FieldId, string>>; about: string }>>;
+  langs?: Partial<Record<Lang, { name?: string; description?: string; fieldText?: Partial<Record<FieldId, FieldText>>; films?: Partial<Record<FieldId, string>>; about: string }>>;
+  /**
+   * The language the app opens in, when it isn't `lang`: one of `langs`, e.g. Hungarian for an app whose posts are written
+   * in English and translated. Its name and description (in `langs`) are then the page's title and description too.
+   */
+  defaultLang?: Lang;
   /**
    * A long film for a whole section, by field: its title here (and in `langs`), its files in
    * content/media/films/<field>.mp4 and .jpg (<field>-<lang>.mp4 for another language). Every post of the section
@@ -190,6 +195,62 @@ export const EDITIONS = {
       },
     },
   },
+  hungary: {
+    id: 'hungary',
+    name: 'Hungary 1956',
+    lang: 'en',
+    defaultLang: 'hu',
+    description:
+      'Hungary 1956: the Hungarian revolution and freedom fight of 1956 in short animations: its background, why it broke out, the road to 23 October, the fighting, its crushing and its consequences.',
+    dir: 'editions/hungary',
+    path: 'hungary',
+    fields: ['history', 'philosophy', 'politics', 'engineering', 'earth', 'economics'],
+    fieldText: {
+      history: { name: 'Background', handle: 'elozmenyek.45', emoji: '📜', gradient: ['#3f2d20', '#7c5a2e'], scope: 'Hungary from 1945 to 1953: the end of the war, Soviet occupation, the Communist takeover and Rákosi’s dictatorship' },
+      philosophy: { name: 'Why', handle: 'miert.56', emoji: '❓', gradient: ['#1f2937', '#7f1d1d'], scope: 'Why the revolution broke out: terror and the ÁVH, poverty and compulsory deliveries, Soviet occupation and national grievances' },
+      politics: { name: 'The road to October', handle: 'ut.oktoberig', emoji: '📢', gradient: ['#1e3a8a', '#92400e'], scope: 'From Stalin’s death to October 1956: Imre Nagy’s first government, the Petőfi Circle, the Polish October, Rajk’s reburial' },
+      engineering: { name: 'The freedom fight', handle: 'pesti.srac', emoji: '🇭🇺', gradient: ['#14532d', '#991b1b'], scope: 'From 23 October to 4 November: the demonstration, the Radio, the fighting, the revolutionary councils, Nagy’s government and neutrality' },
+      earth: { name: 'The end', handle: 'november.negy', emoji: '🌑', gradient: ['#111827', '#57534e'], scope: '4 November and after: the Soviet attack, the last fighting, the general strike, Imre Nagy’s abduction' },
+      economics: { name: 'Consequences', handle: 'utoelet.56', emoji: '🕊️', gradient: ['#1e293b', '#3f6212'], scope: 'What followed: the reprisals, the refugees, the Kádár era and its silence, and the reburial of 1989' },
+    },
+    films: {
+      history: 'Before October: Hungary 1945–1956',
+      philosophy: 'Why Hungary rose',
+      politics: 'The road to 23 October',
+      engineering: 'The freedom fight, 23 October to 4 November',
+      earth: 'The crushing, 4 November 1956',
+      economics: 'What 1956 left behind',
+    },
+    storageKey: 'hungary:v1',
+    wiki: false,
+    offline: true,
+    authors: true,
+    about: 'Every post links a source so you can check it. Posts marked AI were written by an AI.',
+    langs: {
+      hu: {
+        name: 'Ötvenhat',
+        description:
+          'Ötvenhat: az 1956-os forradalom és szabadságharc rövid animációkban: előzmények, okok, az út október 23-ig, a harcok, a leverés és a következmények.',
+        films: {
+          history: 'Október előtt: Magyarország 1945–1956',
+          philosophy: 'Miért kelt fel az ország?',
+          politics: 'Az út október 23-ig',
+          engineering: 'A szabadságharc, október 23. – november 4.',
+          earth: 'A leverés, 1956. november 4.',
+          economics: 'Amit 1956 maga után hagyott',
+        },
+        fieldText: {
+          history: { name: 'Előzmények', handle: 'elozmenyek.45', scope: 'Magyarország 1945 és 1953 között: a háború vége, a szovjet megszállás, a kommunista hatalomátvétel és Rákosi diktatúrája' },
+          philosophy: { name: 'Miért?', handle: 'miert.56', scope: 'Miért tört ki a forradalom: terror és ÁVH, szegénység és beszolgáltatás, szovjet megszállás és nemzeti sérelmek' },
+          politics: { name: 'Az út októberig', handle: 'ut.oktoberig', scope: 'Sztálin halálától 1956 októberéig: Nagy Imre első kormánya, a Petőfi Kör, a lengyel október, Rajk László újratemetése' },
+          engineering: { name: 'A szabadságharc', handle: 'pesti.srac', scope: 'Október 23-tól november 4-ig: a tüntetés, a Rádió, a harcok, a forradalmi bizottságok, Nagy Imre kormánya és a semlegesség' },
+          earth: { name: 'A leverés', handle: 'november.negy', scope: 'November 4. és utána: a szovjet támadás, az utolsó harcok, a nagy sztrájk, Nagy Imre elhurcolása' },
+          economics: { name: 'Következmények', handle: 'utoelet.56', scope: 'Ami utána jött: a megtorlás, a menekültek, a Kádár-korszak és hallgatása, és az 1989-es újratemetés' },
+        },
+        about: 'Minden bejegyzés megad egy forrást, hogy ellenőrizhesd. Az MI jelölésű bejegyzéseket mesterséges intelligencia írta.',
+      },
+    },
+  },
 } as const satisfies Record<string, Edition>;
 
 export type EditionId = keyof typeof EDITIONS;
@@ -198,6 +259,13 @@ export const EDITION_IDS = Object.keys(EDITIONS) as EditionId[];
 /** The edition a Vite mode builds: `--mode lesefutter` builds Lesefutter, `--mode roma` Roma, `--mode tunisia` Tunisia 1943; any other mode builds Reckon. */
 export function editionForMode(mode: string): Edition {
   return mode in EDITIONS ? EDITIONS[mode as EditionId] : EDITIONS.reckon;
+}
+
+/** The language an edition opens in, and its name and description in that language: the page's and the Home Screen's. */
+export function editionFace(edition: Edition): { lang: Lang; name: string; description: string } {
+  const lang = edition.defaultLang ?? edition.lang;
+  const own = edition.langs?.[lang];
+  return { lang, name: own?.name ?? edition.name, description: own?.description ?? edition.description };
 }
 
 /** The languages an edition's posts may be translated into, besides its own. */

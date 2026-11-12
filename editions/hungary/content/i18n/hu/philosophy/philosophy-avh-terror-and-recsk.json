@@ -1,0 +1,64 @@
+{
+  "id": "philosophy-avh-terror-and-recsk",
+  "title": "Bírósági ítélet nélkül küldte követ törni Recskre az ÁVH, 1950 és 1953 között",
+  "body": "1950-től az Államvédelmi Hatóság (ÁVH), Rákosi Mátyás diktatúrájának politikai rendőrsége, csak a kormánynak felelt. Budapesti székháza, az Andrássy út 60., korábban a nyilaskeresztes párt központja volt. Tanúk 1957-ben az [ENSZ különbizottságának](https://mek.oszk.hu/01200/01274/) elmondták: besúgói minden hivatalban és gyárban ott voltak, így senki sem tudta, még ha barátaival beszélt is, hol ismétlik el szavait fél óra múlva; egy 1952-es törvény még azt is büntette, aki hátrányosan bánt egy besúgóval. A foglyokat verték, éheztették és fenyegették, amíg vallomást nem tettek. Ezreket tartottak fogva bírósági ítélet nélkül: **Recsken**, a Mátra titkos táborában, a volt rabok számítása szerint egyszerre mintegy 1300 ember tört követ egy kőbányában 1950 és 1953 között, 1950 júniusától pedig egész családokat hurcoltak a Hortobágy 12 kényszermunkatáborába, ahonnan 1953-ban a hivatalos adatok szerint 7281-en szabadultak. Az internálást 1953. július 26-án megszüntették, a félelem azonban maradt. 1956 októberében a tömeg az ÁVH feloszlatását követelte, és ávósokat lincseltek meg: az ÁVH iránti gyűlölet a forradalom egyik oka volt.",
+  "slides": [
+    {
+      "question": "Egy 1952-es törvény büntette, aki hátrányosan bánt az ÁVH egy besúgójával. Legfeljebb hány hónap börtön járt érte?",
+      "unit": "hónap",
+      "explanation": "Legfeljebb hat hónap, az 1952. évi II. törvény szerint, ahogy az ENSZ különbizottsága 1957-ben beszámolt róla: még a besúgó kerülése is bűn lehetett."
+    },
+    {
+      "alt": "Animáció éjkék alapon: az ÁVH székháza az Andrássy út 60.-ban, besúgók kivilágított ablakai, egy zárkaajtó, az internálótáborok vázlatos térképe, a recski kőbánya drót mögött, a hortobágyi deportálások, az 1953. júliusi határozat, végül egy tömeg 1956 októberében.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "avh-hu.mp4",
+      "poster": "avh-hu.jpg"
+    },
+    {
+      "prompt": "Válaszd ki, hogy minden 50. ember besúgó, és keresd meg, hány emberrel beszélhetsz nyíltan, mielőtt valószínűbb lesz, hogy egyikük besúgó, mint hogy nem.",
+      "takeaway": "35 emberrel. Ha csak minden ötvenedik ember súgott is be, egy ekkora körben valószínűbb volt, hogy akad köztük besúgó: a félelem jóval tovább terjedt, mint a besúgók köre. Játékmodell, kitalált arányokkal."
+    },
+    {
+      "text": "Senki sem tudta, még ha barátaival beszélt is, hol ismétlik el szavait fél óra múlva.",
+      "attribution": "Az ENSZ különbizottsága, 1957-es jelentés, a tanúk vallomásai alapján"
+    },
+    {
+      "heading": "Az ÁVH és táborai",
+      "events": [
+        {
+          "when": "1945",
+          "text": "Politikai rendőrség: Andrássy út 60."
+        },
+        {
+          "when": "1950",
+          "text": "Megnyílik a recski tábor"
+        },
+        {
+          "when": "1950. jún.",
+          "text": "Családokat hurcolnak a Hortobágyra"
+        },
+        {
+          "when": "1953. júl. 26.",
+          "text": "Megszűnik az internálás"
+        },
+        {
+          "when": "1956. okt.",
+          "text": "Követelés: oszlassák fel az ÁVH-t"
+        }
+      ]
+    },
+    {
+      "question": "Milyen alapon tartották fogva a legtöbb rabot a recski kényszermunkatáborban 1950 és 1953 között?",
+      "options": [
+        "Ítélet nélkül, internálva",
+        "Bírósági börtönítélettel",
+        "Katonai szolgálat címén",
+        "Adótartozás miatt"
+      ],
+      "explanation": "Az ÁVH bírósági ítélet nélkül internálta őket. Többségük 1953. szeptember közepéig szabadult, miután megszüntették az internálást; néhányukat ezután bíróság elé állították és elítélték."
+    }
+  ],
+  "source": {
+    "label": "ENSZ: a magyar kérdéssel foglalkozó különbizottság jelentése (1957), Magyar Elektronikus Könyvtár"
+  }
+}

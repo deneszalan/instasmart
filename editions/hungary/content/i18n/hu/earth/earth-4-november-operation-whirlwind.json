@@ -1,0 +1,70 @@
+{
+  "id": "earth-4-november-operation-whirlwind",
+  "title": "1956. november 4-én hajnalban lerohanták Budapestet; az ENSZ szavazott, segítség nem jött",
+  "body": "1956. november 4-én hajnali 4 óra 15 perckor a szovjet csapatok megtámadták Budapestet és más magyar városokat: Horváth Miklós hadtörténész szerint 17 hadosztály egységei, mintegy 60 ezer katona, az ENSZ különbizottságának becslése szerint november 3-ig mintegy 2500 harckocsival. 5.05-kor egy másik rádióadó bejelentette Kádár János „Forradalmi Munkás-Paraszt Kormányát”, amely közölte, hogy a szovjet hadsereg segítségét kérte. 5.20-kor Nagy Imre miniszterelnök szólalt meg a Szabad Kossuth Rádióban: „Csapataink harcban állnak. A kormány a helyén van.” Az adó 8.07-kor elhallgatott; Nagy Imre a jugoszláv követségre menekült, a fiatal fegyveresek és munkások pedig napokig kitartottak a Corvin közben, Csepelen és Újpesten. Aznap az ENSZ Közgyűlése 50 szavazattal 8 ellenében a szovjet csapatok kivonását követelte, Moszkva azonban nem törődött vele. Ugyanezekben a napokban Izrael, Nagy-Britannia és Franciaország megtámadta Egyiptomot a Szuezi-csatorna miatt. Az USA október 27-én kimondta, hogy Kelet-Európát nem tekinti lehetséges katonai szövetségesének, és az ENSZ különbizottsága szerint a Szabad Európa Rádió sem adott okot katonai segítség várására.",
+  "slides": [
+    {
+      "question": "1956. november 4-én az ENSZ Közgyűlésének hány tagja szavazta meg, hogy a szovjet csapatok hagyják el Magyarországot?",
+      "explanation": "50 igen, 8 nem és 15 tartózkodás. A Szovjetunió és az új Kádár-kormány nem törődött a felszólítással."
+    },
+    {
+      "alt": "Animáció hajnali palaszürkében: Magyarország vázlatos térképe a 4.15-ös támadás nyilaival, két rádió, Kádár adója és a Szabad Kossuth Rádió, a jugoszláv követség és a Parlament, az ellenállás helyei, az ENSZ-szavazás, Szuez vázlata, Dulles szavai és a menekültek reményei.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "nov4-hu.mp4",
+      "poster": "nov4-hu.jpg"
+    },
+    {
+      "prompt": "Pörgesd végig az órát 1956. november 4-ének reggelén, és keresd meg, mit mondott utoljára a Szabad Kossuth Rádió, mielőtt elhallgatott.",
+      "takeaway": "7.57-kor az Írószövetség kiáltotta: „Segítsetek Magyarországnak!”; 8.07-kor a Szabad Kossuth Rádió elhallgatott. Az 5.05-kor bejelentett Kádár-kormányé lett az éter."
+    },
+    {
+      "heading": "November 4. reggele",
+      "events": [
+        {
+          "when": "4.15",
+          "text": "Megindul a szovjet támadás"
+        },
+        {
+          "when": "5.05",
+          "text": "Bejelentik Kádár kormányát"
+        },
+        {
+          "when": "5.20",
+          "text": "Nagy Imre: „Csapataink harcban állnak”"
+        },
+        {
+          "when": "7.57",
+          "text": "Írószövetség: „Segítsetek!”"
+        },
+        {
+          "when": "8.07",
+          "text": "Elhallgat a Szabad Kossuth Rádió"
+        }
+      ]
+    },
+    {
+      "heading": "Amit reméltek, és ami jött",
+      "left": {
+        "label": "Remény",
+        "text": "1957-ben 1000 Ausztriában megkérdezett menekült 96%-a bízott valamilyen amerikai segítségben."
+      },
+      "right": {
+        "label": "Valóság",
+        "text": "Egy ENSZ-szavazás, amellyel senki sem törődött. Katonák nem jöttek: az USA nem tekintette Kelet-Európát katonai szövetségesnek."
+      }
+    },
+    {
+      "question": "1956. november 4-én, a szovjet támadás hajnalán ki állt a rádióban bejelentett „Forradalmi Munkás-Paraszt Kormány” élén?",
+      "options": [
+        "Kádár János",
+        "Nagy Imre",
+        "Maléter Pál",
+        "Rákosi Mátyás"
+      ],
+      "explanation": "Kádár János kormányát hajnali 5.05-kor egy másik adón jelentették be. Nagy Imre, még mindig miniszterelnökként, 5.20-kor szólalt meg a Szabad Kossuth Rádióban."
+    }
+  ],
+  "source": {
+    "label": "National Security Archive: Az 1956-os magyar forradalom (dokumentumválogatás, 2002, angolul)"
+  }
+}

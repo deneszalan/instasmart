@@ -1,0 +1,160 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "earth-workers-councils-general-strike",
+  "field": "earth",
+  "title": "After the Soviet attack of 4 November 1956, Hungary’s workers held out for five weeks",
+  "emoji": "🏭",
+  "body": "On 4 November 1956 Soviet troops attacked Budapest and János Kádár formed a new government. The fighting died down within days, but the factories stayed idle: the workers’ councils, elected in each factory since late October, kept up a **general strike**. On 14 November they formed the Greater Budapest Central Workers’ Council; its chairman, Sándor Rácz, 23, negotiated with Kádár for Soviet troops to leave, free elections and Imre Nagy’s return. Kádár promised much but would not sign: his word, he said, should be enough ([UN Special Committee, 1957](https://mek.oszk.hu/01200/01274/)). On 4 December several thousand women walked in silence to Heroes’ Square with flowers. On 8 December at Salgótarján the security forces and Soviet troops fired on a crowd demanding the release of two council leaders; 46 of the dead are known by name. On 9 December the government banned the Central Council and every council above the factory, and on 11 December Rácz and the council’s secretary, Sándor Bali, were arrested at Parliament, where Kádár had invited them. The strike of 11–12 December was the last.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "On 11 December 1956, János Kádár invited the workers’ council leaders Sándor Rácz and Sándor Bali to Parliament. What happened there?",
+      "answer": "They were arrested",
+      "detail": "Rácz, the 23-year-old chairman of the Central Workers’ Council, was sentenced to life in 1958 and freed by the amnesty of 1963."
+    },
+    {
+      "type": "video",
+      "src": "workers-councils.mp4",
+      "poster": "workers-councils.jpg",
+      "alt": "Animation on a winter-night background, with a strip of the days from 4 November to 12 December: idle factories, a workers’ council voting, the Central Workers’ Council, a negotiating table and an unsigned paper, flowers at Heroes’ Square, Salgótarján on a map, the ban and the arrests.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Peaceful Desolation” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "workers-councils-general-strike",
+      "prompt": "Guess what Kádár’s government did with each of the workers’ five demands, then read the UN record.",
+      "takeaway": "Kádár granted none: he took back or put off what he promised and refused the rest, then banned the councils and arrested their leaders."
+    },
+    {
+      "type": "timeline",
+      "heading": "Five weeks of resistance, 1956",
+      "events": [
+        {
+          "when": "4 Nov",
+          "text": "Soviet attack; Kádár’s government"
+        },
+        {
+          "when": "14 Nov",
+          "text": "Central Workers’ Council formed"
+        },
+        {
+          "when": "4 Dec",
+          "text": "Women’s silent march"
+        },
+        {
+          "when": "8 Dec",
+          "text": "Volley at Salgótarján"
+        },
+        {
+          "when": "11 Dec",
+          "text": "Rácz and Bali arrested"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "A tiger cannot be tamed by baits, it can be tamed and forced to peace only by beating it to death.",
+      "attribution": "János Kádár on the strikers’ leaders, 26 November 1956 (UN report)"
+    },
+    {
+      "type": "quiz",
+      "question": "What did Budapest’s Central Workers’ Council call for 11 and 12 December 1956, in protest against the arrests?",
+      "options": [
+        "A 48-hour strike",
+        "A march to Parliament",
+        "Talks in Moscow",
+        "New council elections"
+      ],
+      "answer": 0,
+      "explanation": "It called a 48-hour protest strike. The government banned the council on 9 December, and on 11 December its leaders were arrested; it was the last strike."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "1956",
+    "strike",
+    "workerscouncils",
+    "kadar",
+    "salgotarjan"
+  ],
+  "source": {
+    "label": "UN Special Committee on the Problem of Hungary: Report (1957)",
+    "url": "https://mek.oszk.hu/01200/01274/"
+  },
+  "theme": {
+    "gradient": [
+      "#17191d",
+      "#1f3a5a"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-12T00:12:31Z"
+}
