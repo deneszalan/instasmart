@@ -1,0 +1,75 @@
+{
+  "id": "history-salami-tactics-1947-blue-slips",
+  "title": "Szeletről szeletre: így vették át Rákosi Mátyás kommunistái a hatalmat, 1945–1947",
+  "body": "Az 1945. november 4-i szabad választáson a Független Kisgazdapárt 57%-ot, a kommunisták 17%-ot kaptak. A kommunisták azonban szovjet támogatással kezükben tartották a politikai rendőrséget, vezetőjük, **Rákosi Mátyás** pedig később **szalámitaktikának** nevezte, ami ezután jött: az ellenfeleket szeletenként vágták le. 1946 végén a rendőrség „összeesküvést” jelentett be, és kisgazda képviselőket tartóztatott le; 1947. február 25-én szovjet katonák elhurcolták a párt főtitkárát, Kovács Bélát, aki nyolc évet töltött szovjet börtönökben és táborokban; májusban Nagy Ferenc miniszterelnököt svájci szabadsága alatt lemondatták. Az 1947. augusztus 31-i választás előtt 466 853 embert zártak ki a szavazásból, a választás napján pedig kommunista aktivisták **kék cédulával** szavaztak újra és újra. Hogy ez hány hamis szavazat volt, vitatott: a rendőrfőnök jelentése szerint 62 981, más becslések szerint akár 200 000, ahogy [Csönge Attila történész bemutatja](https://epa.hu/00900/00995/00018/pdf/csongea09-2.pdf). A kommunisták 22%-kal elsők lettek, a kisgazdák 15%-ra estek vissza.",
+  "slides": [
+    {
+      "question": "Az 1945 novemberi szabad választáson a szavazatok hány százalékát kapta a Magyar Kommunista Párt?",
+      "unit": "%",
+      "explanation": "Körülbelül 17%-ot (16,96%). A Kisgazdapárt 57%-ot, a szociáldemokraták 17%-ot kaptak: egyértelmű többség a kommunistákkal szemben."
+    },
+    {
+      "alt": "Animáció sötét tintakék alapon: az 1945-ös választás egyetlen sávként; a kisgazdák 57%-a zöld szalámiként, amelyből szeletet szeletre vágnak; egy vázlatos körzet, ahol egy autónyi aktivista kék cédulával újra és újra szavaz; a hamis szavazatok becslései; az 1947-es eredmény.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "salami-hu.mp4",
+      "poster": "salami-hu.jpg"
+    },
+    {
+      "prompt": "Vonj le hamis szavazatokat a kommunisták 1947-es eredményéből! Mennyi kellene ahhoz, hogy elveszítsék az első helyet?",
+      "takeaway": "Mintegy 287 000: több bármelyik becslésnél (63 000-től kb. 200 000-ig). A kék cédulák növelték az előnyt, de a 466 853 ember kizárása a szavazásból többet nyomott a latban, Csönge Attila történész szerint."
+    },
+    {
+      "heading": "Szeletről szeletre",
+      "events": [
+        {
+          "when": "1945. nov. 4.",
+          "text": "Kisgazdák 57%, kommunisták 17%"
+        },
+        {
+          "when": "1946 vége",
+          "text": "„Összeesküvés”, letartóztatások"
+        },
+        {
+          "when": "1947. febr. 25.",
+          "text": "Kovács Bélát elhurcolják"
+        },
+        {
+          "when": "1947 május",
+          "text": "Nagy Ferencet lemondatják"
+        },
+        {
+          "when": "1947. aug. 31.",
+          "text": "A kékcédulás választás"
+        }
+      ]
+    },
+    {
+      "text": "A hangsúly azon van, hogy ne tiszteljük a törvényeket nagyon. De nem szabad odáig menni, hogy túlságosan kirívó legyen a visszaélés.",
+      "attribution": "MKP Jász-Nagykun-Szolnok megyei bizottsága, 1947. július 10."
+    },
+    {
+      "heading": "Kétféleképp hajlítható egy választás",
+      "left": {
+        "label": "Kihúzás a névjegyzékből",
+        "text": "466 853 embert zártak ki a szavazásból, a politikai rendőrség saját adata szerint. A párt 700–800 ezret tűzött ki célul."
+      },
+      "right": {
+        "label": "Kék cédulák",
+        "text": "62 981 hamis szavazat a rendőrfőnök jelentése szerint; a szokásos becslés mintegy 100 000, a legmagasabb kb. 200 000."
+      }
+    },
+    {
+      "question": "Mi volt a „kék cédula” az 1947. augusztus 31-i magyarországi választáson?",
+      "options": [
+        "Névjegyzék-kivonat máshol szavazáshoz",
+        "Szavazólap csak a kommunista listával",
+        "Átlépési engedély Ausztriába",
+        "Szakszervezeti tagsági igazolvány"
+      ],
+      "explanation": "A lakóhelyétől távol szavazhatott vele a választó. Kommunista aktivisták ezzel szavaztak újra és újra, egyik szavazókörben a másik után."
+    }
+  ],
+  "source": {
+    "label": "Csönge Attila: Az 1947-es választások a Jász-Nagykun-Szolnok vármegyei források tükrében (Múltunk, 2009)"
+  }
+}

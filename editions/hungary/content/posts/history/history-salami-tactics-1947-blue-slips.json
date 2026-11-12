@@ -1,0 +1,175 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "history-salami-tactics-1947-blue-slips",
+  "field": "history",
+  "title": "Slice by slice: how Mátyás Rákosi’s Communists took Hungary, 1945–1947",
+  "emoji": "🗳️",
+  "body": "In Hungary’s free election of 4 November 1945 the Smallholders’ Party won 57% of the vote and the Communists 17%. But the Communists, backed by the Soviet occupation forces, held the political police, and their leader **Mátyás Rákosi** later called what followed **salami tactics**: rivals cut away one slice at a time. In late 1946 the police announced a “conspiracy” and arrested Smallholder MPs; on 25 February 1947 Soviet soldiers took the party’s secretary general, Béla Kovács, who spent eight years in Soviet prisons and camps; in May Prime Minister Ferenc Nagy, on holiday in Switzerland, was made to resign. Before the election of 31 August 1947, 466,853 people were refused the vote, and on the day Communist activists voted again and again with **blue slips**, voter-list copies meant for voting away from home. How many false votes that made is disputed: 62,981 by the police chief’s own report, up to about 200,000 by other estimates, as the historian [Attila Csönge sets out](https://epa.hu/00900/00995/00018/pdf/csongea09-2.pdf). The Communists came first with 22%; the Smallholders fell to 15%.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "In Hungary’s free election of November 1945, what share of the vote did the Communist Party win?",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "answer": 17,
+      "unit": "%",
+      "explanation": "About 17% (16.96%). The Smallholders’ Party won 57% and the Social Democrats 17%: a clear majority against the Communists."
+    },
+    {
+      "type": "video",
+      "src": "salami.mp4",
+      "poster": "salami.jpg",
+      "alt": "Animation on dark ink blue: the 1945 vote as one bar; the Smallholders’ 57% as a green salami cut slice by slice; a schematic district where one car of activists votes again and again with blue slips; the estimates of false votes; the 1947 result.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Interloper” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "salami-tactics-1947-blue-slips",
+      "prompt": "Take false votes away from the Communists’ 1947 result. How many would it take for them to lose first place?",
+      "takeaway": "About 287,000: more than any estimate (63,000 to about 200,000). The slips padded the lead; refusing 466,853 people the vote weighed more, the historian Attila Csönge concludes."
+    },
+    {
+      "type": "timeline",
+      "heading": "Slice by slice",
+      "events": [
+        {
+          "when": "4 Nov 1945",
+          "text": "Smallholders win 57%, Communists 17%"
+        },
+        {
+          "when": "Late 1946",
+          "text": "A “conspiracy”: Smallholder MPs arrested"
+        },
+        {
+          "when": "25 Feb 1947",
+          "text": "Soviet soldiers take Béla Kovács"
+        },
+        {
+          "when": "May 1947",
+          "text": "Premier Ferenc Nagy made to resign"
+        },
+        {
+          "when": "31 Aug 1947",
+          "text": "The blue-slip election"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "The point is that we should not respect the laws very much. But we must not go so far that the abuse is too glaring.",
+      "attribution": "Hungarian Communist Party, Jász-Nagykun-Szolnok county committee, 10 July 1947"
+    },
+    {
+      "type": "compare",
+      "heading": "Two ways to bend a vote",
+      "left": {
+        "label": "Struck off the rolls",
+        "text": "466,853 people refused the vote, by the political police’s own count. The party had aimed at 700,000 to 800,000."
+      },
+      "right": {
+        "label": "Blue slips",
+        "text": "62,981 false votes by the police chief’s report; about 100,000 is the usual estimate, about 200,000 the highest."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "What was a “blue slip” (kék cédula) at Hungary’s election of 31 August 1947?",
+      "options": [
+        "A voter-list copy to vote elsewhere",
+        "A ballot for the Communist list only",
+        "A pass to cross into Austria",
+        "A trade union membership card"
+      ],
+      "answer": 0,
+      "explanation": "It let a voter cast a ballot away from home. Communist activists used them to vote again and again, at one polling station after another."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "1947",
+    "rakosi",
+    "elections",
+    "communism"
+  ],
+  "source": {
+    "label": "Attila Csönge: The 1947 elections in the sources of Jász-Nagykun-Szolnok county (Múltunk, 2009)",
+    "url": "https://epa.hu/00900/00995/00018/pdf/csongea09-2.pdf"
+  },
+  "theme": {
+    "gradient": [
+      "#151b2e",
+      "#34482c"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-11T23:31:00Z"
+}

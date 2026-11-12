@@ -219,6 +219,7 @@ import { dayOf as occDay, EVENTS as OCC_EVENTS, eventAt as occEventAt, FREED as 
 import { EPISODES as MEMMI_EPISODES, score as memmiScore } from '../src/labs/literature/memmi-pillar-of-salt';
 import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plotAt as cemPlotAt, plotRect as cemPlotRect, zoomBox as cemZoom, PLOTS as CEM_PLOTS, RECORDS as CEM_RECORDS, ROWS as CEM_ROWS, GRAVES as CEM_GRAVES } from '../src/labs/earth/north-africa-american-cemetery-carthage';
 import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, FT_PER_MIN as TV_FT_PER_MIN, hoursOf as tvHours, ratio as tvRatio, SHOT_FT as TV_SHOT } from '../src/labs/art/tunisian-victory-1944-film';
+import { communistPlace as salPlace, communistShare as salShare, ESTIMATES as SAL_ESTIMATES, RESULTS as SAL_RESULTS, toLoseFirst as salToLose, TOTAL as SAL_TOTAL } from '../src/labs/history/salami-tactics-1947-blue-slips';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2301,5 +2302,14 @@ describe('lab maths', () => {
     expect(Math.round(tvRatio(TV_FINAL_FT))).toBe(44);
     expect(tvHours(TV_SHOT)).toBeCloseTo(55.6, 1);
     expect(tvRatio(tvFeet(10))).toBeGreaterThan(tvRatio(tvFeet(120)));
+  });
+  it('salami tactics: the 1947 shares match the official results, and no estimate of the false votes costs the Communists first place', () => {
+    expect(salShare(0)).toBeCloseTo(22.24, 1);
+    expect((100 * SAL_RESULTS[2].votes) / SAL_TOTAL).toBeCloseTo(15.34, 2);
+    expect(salToLose).toBe(286743);
+    for (const e of SAL_ESTIMATES) expect(salPlace(e)).toBe(1);
+    expect(salPlace(salToLose - 1)).toBe(1);
+    expect(salPlace(salToLose)).toBe(2);
+    expect(salPlace(287000)).toBe(2);
   });
 });
