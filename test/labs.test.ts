@@ -224,6 +224,7 @@ import { cutFor as nsCutFor, IKARUS_CUT as NS_CUT, matchesIkarus as nsMatches, p
 import { CLAIMS as TG_CLAIMS, score as tgScore } from '../src/labs/politics/secret-speech-and-petofi-circle-1956';
 import { EVENTS as KS_EVENTS, PLACES as KS_PLACES, placeAt as ksPlaceAt, project as ksProject, type Place as KsPlace } from '../src/labs/engineering/kossuth-square-25-october';
 import { DEMANDS as WC_DEMANDS, granted as wcGranted, matches as wcMatches } from '../src/labs/earth/workers-councils-general-strike';
+import { change as kbChange, INCOME as KB_INCOME, peakYear as kbPeak, WAGE as KB_WAGE, YEARS as KB_YEARS } from '../src/labs/economics/kadar-era-and-the-silence';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2352,5 +2353,13 @@ describe('lab maths', () => {
     expect(wcMatches(record)).toBe(5);
     expect(wcMatches({})).toBe(0);
     expect(wcMatches({ ...record, writing: 'granted' })).toBe(4);
+  });
+  it('Kádár-era bargain: real wages peak in 1980 and fall to 142 by 1990, while real income per head keeps rising', () => {
+    expect(kbPeak()).toBe(1980);
+    expect(KB_YEARS).toHaveLength(KB_WAGE.length);
+    expect(KB_WAGE.at(-1)).toBe(142);
+    expect(KB_INCOME.every((v, i) => i === 0 || v > KB_INCOME[i - 1])).toBe(true);
+    expect(kbChange(KB_WAGE, 3)).toBeCloseTo(17.83, 1);
+    expect(kbChange(KB_WAGE, 0)).toBe(0);
   });
 });

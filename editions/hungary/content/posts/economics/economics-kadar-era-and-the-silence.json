@@ -1,0 +1,183 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "economics-kadar-era-and-the-silence",
+  "field": "economics",
+  "title": "Until 1989, Hungarian school books called the revolution of 1956 a ‘counter-revolution’",
+  "emoji": "📚",
+  "body": "After the Soviet army crushed the revolution, János Kádár ruled Hungary until 1988. First came reprisals: thousands were jailed, and Imre Nagy was hanged on 16 June 1958. Then Kádár offered a bargain: ‘whoever is not against us is with us’ (1961). In December 1962 the UN dropped ‘the Hungarian question’ after a secret understanding with Washington, and in March 1963 Kádár announced an amnesty that freed most of those jailed for 1956, though several hundred stayed in prison ([Békés and Kecskés, eds.](https://www.mek.oszk.hu/12900/12960/12960.pdf)). The New Economic Mechanism of 1968 brought some market rules into the planned economy, and living standards rose: by the Statistical Office’s figures real wages were half as high again in 1975 as in 1960, before falling in the 1980s ([KSH](https://www.ksh.hu/evkonyvek/2023/magyar-statisztikai-evkonyv-2023/pdf/statevk2023_1.pdf)). The other side of the bargain was **silence**: in school books 1956 was a ‘counter-revolution’, by the 1980s ‘the regrettable events’. On 28 January 1989 the minister Imre Pozsgay called it a ‘popular uprising’, and on 16 June 1989 Imre Nagy was reburied before some 200,000 people.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "By Hungary’s Statistical Office, what were real wages in 1975 as a percentage of their 1960 level?",
+      "min": 50,
+      "max": 250,
+      "step": 1,
+      "answer": 152,
+      "unit": "%",
+      "explanation": "152%: half as high again. Real income per head almost doubled (199). Real wages peaked in 1980 at 158 and fell to 142 by 1990."
+    },
+    {
+      "type": "video",
+      "src": "kadar-era.mp4",
+      "poster": "kadar-era.jpg",
+      "alt": "Animation in faded paper and olive: a bar of the Kádár era from 1956 to 1988, the reprisals, the slogan on a sheet of paper, a pair of scales with the UN deal and the amnesty, a steaming pot of goulash, the official real-wage and real-income curves, and a school book whose word for 1956 changes.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Long Note Four” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "kadar-era-and-the-silence",
+      "prompt": "Move through the official figures, 1960 to 1990, and find when real wages stopped rising.",
+      "takeaway": "In 1980, at 158. By 1990 real wages had fallen to 142, while real income per head kept rising: the material side of the bargain weakened in the 1980s."
+    },
+    {
+      "type": "chart",
+      "heading": "Real wages in Hungary, 1960 = 100",
+      "items": [
+        {
+          "label": "1960",
+          "value": 100
+        },
+        {
+          "label": "1970",
+          "value": 129
+        },
+        {
+          "label": "1980",
+          "value": 158,
+          "emphasis": true
+        },
+        {
+          "label": "1990",
+          "value": 142
+        }
+      ],
+      "note": "Hungarian Statistical Office, Statistical Yearbook 2023, table 1.2"
+    },
+    {
+      "type": "timeline",
+      "heading": "What 1956 was called",
+      "events": [
+        {
+          "when": "1960s",
+          "text": "In school books: a ‘counter-revolution’"
+        },
+        {
+          "when": "1980s",
+          "text": "‘The regrettable events of October’"
+        },
+        {
+          "when": "28 Jan 1989",
+          "text": "Imre Pozsgay: a ‘popular uprising’"
+        },
+        {
+          "when": "16 Jun 1989",
+          "text": "Imre Nagy is reburied"
+        },
+        {
+          "when": "Today",
+          "text": "‘Revolution and freedom fight’"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "In 1962–63, what did Hungary’s rulers get in return for an amnesty for those jailed after 1956?",
+      "options": [
+        "The UN dropped the ‘Hungarian question’",
+        "Soviet troops left Hungary",
+        "Western loans for industry",
+        "A seat on the UN Security Council"
+      ],
+      "answer": 0,
+      "explanation": "A secret Hungarian–US understanding: the UN General Assembly took the question off its agenda on 20 December 1962, and Kádár announced the amnesty on 21 March 1963."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "kadar",
+    "amnesty",
+    "goulashcommunism",
+    "memory",
+    "1989"
+  ],
+  "source": {
+    "label": "Hungarian History Teachers’ Association: how 1956 is taught (in Hungarian)",
+    "url": "https://tte.hu/kezd-kialakulni-1956-kanonja-az-oktatasban"
+  },
+  "theme": {
+    "gradient": [
+      "#1d201a",
+      "#4e3a1c"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-12T00:17:37Z"
+}

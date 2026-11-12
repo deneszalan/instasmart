@@ -228,4 +228,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'secret-speech-and-petofi-circle-1956': lazy(() => import('./politics/secret-speech-and-petofi-circle-1956')),
   'kossuth-square-25-october': lazy(() => import('./engineering/kossuth-square-25-october')),
   'workers-councils-general-strike': lazy(() => import('./earth/workers-councils-general-strike')),
+  'kadar-era-and-the-silence': lazy(() => import('./economics/kadar-era-and-the-silence')),
 };
