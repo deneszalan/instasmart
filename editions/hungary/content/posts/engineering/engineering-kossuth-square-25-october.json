@@ -1,0 +1,175 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "engineering-kossuth-square-25-october",
+  "field": "engineering",
+  "title": "How many died at Budapest’s Parliament on 25 October 1956 is still disputed",
+  "emoji": "🕯️",
+  "body": "On Thursday 25 October 1956, the third day of the uprising, people near the Astoria hotel in Budapest talked with the crews of Soviet tanks; some crews let them climb on, Hungarian flags flew from the turrets, and together they went to Parliament, in Kossuth Square, hoping to see Prime Minister Imre Nagy. Between 11 and noon the unarmed crowd was fired on from several directions. Who fired is still argued over: Soviet tanks in the side streets (András Kő and Lambert Nagy), shooters on the rooftops and in the Ministry of Agriculture (the UN Special Committee in 1957, Edit Kéri), Hungarian border guards on the square (Miklós Horváth). The **number of dead** is as disputed: 22 in the regime’s White Book, at least 75 named one by one, 300 to 800 in the estimates the UN reported, about 1,000 by some witnesses ([Gábor Jobbágyi, Hungarian Review](https://hungarianreview.com/?p=1178)). No one was called to account. The next day at Mosonmagyaróvár border guards fired on an unarmed crowd at their barracks; reports at the time gave 59 to 105 dead, and in revenge the crowd killed two of the officers, among them First Lieutenant József Vági.",
+  "slides": [
+    {
+      "type": "reveal",
+      "prompt": "On 25 October 1956 a Budapest crowd marched to Parliament together with Soviet tanks. Why were they going there?",
+      "answer": "To see Prime Minister Imre Nagy",
+      "detail": "They had talked with the tank crews near the Astoria hotel; the crews let them climb on and flew Hungarian flags."
+    },
+    {
+      "type": "video",
+      "src": "kossuth-square.mp4",
+      "poster": "kossuth-square.jpg",
+      "alt": "Animation in stone grey: a schematic map of Budapest with the Danube, tanks and a crowd at the Astoria, the march to Parliament, a plan of Kossuth Square with three accounts of the shooting as dashed lines, the estimates of the dead on a scale, and Mosonmagyaróvár on a map of Hungary.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Impact Lento” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 5,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "kossuth-square-25-october",
+      "prompt": "Tap where each event of the revolution’s first days happened, in order, on the map of Budapest.",
+      "takeaway": "From the Bem statue to Parliament, the Radio and the Stalin statue on 23 October, then the Astoria and Kossuth Square on 25 October: the volley hit a peaceful crowd that had befriended the tank crews."
+    },
+    {
+      "type": "spectrum",
+      "heading": "Estimates of the dead at Kossuth Square",
+      "min": 0,
+      "max": 1000,
+      "ends": [
+        "None",
+        "1,000"
+      ],
+      "marks": [
+        {
+          "label": "White Book, 1957",
+          "value": 22
+        },
+        {
+          "label": "Named one by one, 2001",
+          "value": 75,
+          "emphasis": true
+        },
+        {
+          "label": "UN report: low estimate",
+          "value": 300
+        },
+        {
+          "label": "UN report: high estimate",
+          "value": 800
+        },
+        {
+          "label": "Some eyewitnesses",
+          "value": 1000
+        }
+      ],
+      "note": "Gábor Jobbágyi, Hungarian Review; UN Special Committee, 1957"
+    },
+    {
+      "type": "compare",
+      "heading": "Who fired?",
+      "left": {
+        "label": "The accounts differ",
+        "text": "Soviet tanks in the side streets; rooftops and the Ministry of Agriculture; border guards on the square."
+      },
+      "right": {
+        "label": "What they share",
+        "text": "The crowd was unarmed, the fire came from several sides at once, and nobody was called to account."
+      }
+    },
+    {
+      "type": "quiz",
+      "question": "On 25 October 1956, what had the crowd at Budapest’s Parliament done just before the shooting?",
+      "options": [
+        "Talked with Soviet tank crews",
+        "Stormed the Radio building",
+        "Pulled down the Stalin statue",
+        "Attacked the party headquarters"
+      ],
+      "answer": 0,
+      "explanation": "Near the Astoria hotel they had talked with Soviet tank crews, who let them climb on and flew Hungarian flags; together they went to Parliament."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "1956",
+    "budapest",
+    "kossuthsquare",
+    "volley",
+    "memory"
+  ],
+  "source": {
+    "label": "Hungarian Review: Gábor Jobbágyi, Bloody Thursday, 1956",
+    "url": "https://hungarianreview.com/?p=1178"
+  },
+  "theme": {
+    "gradient": [
+      "#1b1e1d",
+      "#4a2620"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-12T00:05:43Z"
+}

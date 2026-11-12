@@ -226,6 +226,7 @@ export const LABS = {
   '1949-single-list-and-rakosi-cult': 'The single-list election of 15 May 1949 in Hungary: do what a voter could do with the ballot (drop it in unmarked, cross out the circle, spoil it or stay at home), see what the polling committee could see, and how many of the 6,053,792 people on the roll did the same.',
   'norms-wages-and-deliveries': 'The norm squeeze of Hungary’s early 1950s, simplified: a piece-rate worker is paid in proportion to the norm fulfilled; raise the norm and set your output, and find the norm rise that cut pay by 35.5% for unchanged work, as the new norms did at the Ikarus bus works in 1950.',
   'secret-speech-and-petofi-circle-1956': 'Read a source against claims: five statements about Mátyás Rákosi’s fall on 18 July 1956 and his successor Ernő Gerő, each to judge as supported or contradicted by the telegram the US Legation in Budapest sent the next day (FRUS 1955–1957, vol. XXV, doc. 83).',
+  'kossuth-square-25-october': 'Put the first days of Hungary’s 1956 revolution on a schematic map of Budapest, in order: the Bem statue and Parliament on 23 October, the shooting at the Radio, the Stalin statue, then on 25 October the talks with Soviet tank crews at the Astoria and the volley at Kossuth Square (UN Special Committee report, 1957).',
 } as const;
 
 export type LabId = keyof typeof LABS;

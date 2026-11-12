@@ -222,6 +222,7 @@ import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, 
 import { ACTS as SL_ACTS, CAST as SL_CAST, ROLL as SL_ROLL, TALLY as SL_TALLY, shareOfCast as slShareCast, shareOfRoll as slShareRoll } from '../src/labs/history/1949-single-list-and-rakosi-cult';
 import { cutFor as nsCutFor, IKARUS_CUT as NS_CUT, matchesIkarus as nsMatches, payShare as nsPay, raiseFor as nsRaiseFor } from '../src/labs/philosophy/norms-wages-and-deliveries';
 import { CLAIMS as TG_CLAIMS, score as tgScore } from '../src/labs/politics/secret-speech-and-petofi-circle-1956';
+import { EVENTS as KS_EVENTS, PLACES as KS_PLACES, placeAt as ksPlaceAt, project as ksProject, type Place as KsPlace } from '../src/labs/engineering/kossuth-square-25-october';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2329,5 +2330,18 @@ describe('lab maths', () => {
     expect(tgScore(right)).toBe(5);
     expect(tgScore({})).toBe(0);
     expect(tgScore({ ...right, health: 'supported' })).toBe(4);
+  });
+  it('Kossuth Square map: every place is hit where it is drawn, Bem lies west of Pest’s places, and the volley is at Parliament', () => {
+    for (const [w, h] of [[320, 260], [412, 300]]) {
+      for (const p of Object.keys(KS_PLACES) as KsPlace[]) {
+        const [x, y] = ksProject(w, h, ...KS_PLACES[p]);
+        expect(ksPlaceAt(w, h, x, y)).toBe(p);
+        expect(x).toBeGreaterThan(0); expect(x).toBeLessThan(w); expect(y).toBeGreaterThan(20); expect(y).toBeLessThan(h);
+      }
+      expect(ksProject(w, h, ...KS_PLACES.bem)[0]).toBeLessThan(ksProject(w, h, ...KS_PLACES.parliament)[0]);
+      expect(ksPlaceAt(w, h, 1, 1)).toBeNull();
+    }
+    expect(KS_EVENTS).toHaveLength(6);
+    expect(KS_EVENTS.at(-1)!.place).toBe('parliament');
   });
 });

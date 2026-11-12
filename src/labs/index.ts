@@ -226,4 +226,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   '1949-single-list-and-rakosi-cult': lazy(() => import('./history/1949-single-list-and-rakosi-cult')),
   'norms-wages-and-deliveries': lazy(() => import('./philosophy/norms-wages-and-deliveries')),
   'secret-speech-and-petofi-circle-1956': lazy(() => import('./politics/secret-speech-and-petofi-circle-1956')),
+  'kossuth-square-25-october': lazy(() => import('./engineering/kossuth-square-25-october')),
 };
