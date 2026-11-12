@@ -66,7 +66,6 @@ export default function SovietTroops({ onDone }: LabProps) {
       const left = X(r.from) < w * 0.55;
       label(ctx, r.name, left ? Math.max(X(r.from), pad) : X(r.to + 1), r.y - 8, { size: 11, color: C.soft, align: left ? 'left' : 'right' });
     });
-    if (h > 1) label(ctx, t('Legal basis'), pad, h * 0.47, { size: 10, color: C.faint, align: 'left' });
     for (const y of [1945, 1947, 1949, 1951, 1953, 1955]) label(ctx, String(y), X(monthIndex(y, 1)), h - 6, { size: 10, color: C.faint });
     // the chosen month
     const x = X(month + 0.5);
