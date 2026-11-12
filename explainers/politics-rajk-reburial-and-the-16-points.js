@@ -136,7 +136,7 @@ function sceneReburial(t) {
           A(seg(t, 5.2 + i * 0.25, 5.8 + i * 0.25), () => { font(600, 20); text(name, x + 64, y + 100, { align: 'center', color: C.soft }); });
         });
       });
-      A(seg(t, 6.4, 7.0), () => { font(500, 21, TXT); text('victims of the 1949 show trials, hanged as traitors', CX, 470, { align: 'center', color: C.amber }); });
+      A(seg(t, 6.4, 7.0), () => { font(500, 21, TXT); text('victims of the 1949 show trials, executed as traitors', CX, 470, { align: 'center', color: C.amber }); });
     });
     // the crowd gathers
     const fill = seg(t, 9.8, 13.2);
