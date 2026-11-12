@@ -223,4 +223,10 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'memmi-pillar-of-salt': lazy(() => import('./literature/memmi-pillar-of-salt')),
   'north-africa-american-cemetery-carthage': lazy(() => import('./earth/north-africa-american-cemetery-carthage')),
   'tunisian-victory-1944-film': lazy(() => import('./art/tunisian-victory-1944-film')),
+  '1945-election-smallholders-win': lazy(() => import('./history/1945-election-smallholders-win')),
+  'avh-terror-and-recsk': lazy(() => import('./philosophy/avh-terror-and-recsk')),
+  'imre-nagy-new-course-1953': lazy(() => import('./politics/imre-nagy-new-course-1953')),
+  '23-october-statue-and-radio': lazy(() => import('./engineering/23-october-statue-and-radio')),
+  '4-november-operation-whirlwind': lazy(() => import('./earth/4-november-operation-whirlwind')),
+  'reprisals-and-the-nagy-trial': lazy(() => import('./economics/reprisals-and-the-nagy-trial')),
 };

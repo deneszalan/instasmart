@@ -1,0 +1,70 @@
+{
+  "id": "economics-reprisals-and-the-nagy-trial",
+  "title": "1956 után 229 embert végeztek ki; Nagy Imre 1989-ig jeltelen sírban feküdt",
+  "body": "1956 decemberétől az 1963-as amnesztiáig tartott Kádár János rendszerének megtorlása. A bíróságok több mint 22 000 embert ítéltek börtönre, még többet internáltak vagy tartottak fogva ítélet nélkül, és az [1956-os Intézet](https://mek.oszk.hu/16600/16615/) számítása szerint **229** embert végeztek ki a forradalomban való részvételéért. Többségük munkás, paraszt, alkalmazott és diák volt: a rendszer saját statisztikái szerint sem volt köztük több 5%-nál „osztályellenség”. Mintegy 180–200 ezer ember hagyta el az országot. Nagy Imre és társai 1956. november 22-én, írásos menlevéllel hagyták el a jugoszláv követséget, ám elhurcolták és Romániában tartották fogva őket. 1958 júniusában egy budapesti bíróság zárt ajtók mögött tárgyalta ügyüket, a perről a nyilvánosság csak a kivégzések után értesült. Június 15-én halálra ítélték Nagy Imrét, Maléter Pál volt honvédelmi minisztert és Gimes Miklós újságírót. 1958. június 16-án hajnalban kivégezték, majd jeltelenül a börtönudvaron temették el őket; 1961-ben koporsóikat titokban egy budapesti temető 301-es parcellájába vitték, hamis néven. 1989. június 16-án, a Hősök terén tartott gyászszertartás után méltón újratemették őket.",
+  "slides": [
+    {
+      "question": "Nagyjából hány embert ítéltek börtönre a magyar bíróságok az 1956-os forradalom után?",
+      "unit": "fő",
+      "explanation": "Több mint 22 000-et, az 1956-os Intézet szerint. Még többet internáltak vagy tartottak fogva ítélet nélkül: összesen a lakosság mintegy fél százaléka veszítette el a szabadságát."
+    },
+    {
+      "alt": "Animáció sötét palaszürke alapon: az 1956–1963-as évek, statáriális iratok, az elítéltek és a kivégzettek száma, Ausztriába tartó menekültek, a jugoszláv követségről induló busz, zárt tárgyalóterem ajtaja, az 1958. június 15-i ítéletek, a gazos 301-es parcella, végül kopjafák és gyertyák 1989-ben.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "reprisals-hu.mp4",
+      "poster": "reprisals-hu.jpg"
+    },
+    {
+      "prompt": "A rendszer „osztályellenségre” hivatkozott. Tippeld meg, a 100 elítéltből hányat sorolhatott közéjük a saját adatai szerint, aztán nézd meg.",
+      "takeaway": "Legfeljebb 5-öt a 100-ból, még a rendszer saját adatai szerint is. A többiek munkások, parasztok, alkalmazottak és diákok voltak: azok, akik a forradalmat csinálták."
+    },
+    {
+      "heading": "Nagy Imre, 1956–1989",
+      "events": [
+        {
+          "when": "1956. nov. 22.",
+          "text": "Elhurcolják a követség elől"
+        },
+        {
+          "when": "1957. febr.",
+          "text": "A párt a perről dönt"
+        },
+        {
+          "when": "1958. jún. 16.",
+          "text": "Kivégzik Maléterrel és Gimessel"
+        },
+        {
+          "when": "1961. febr.",
+          "text": "A 301-es parcellába, hamis néven"
+        },
+        {
+          "when": "1989. jún. 16.",
+          "text": "Méltó újratemetés"
+        }
+      ]
+    },
+    {
+      "heading": "A Nagy Imre-per, 1958. június 15.",
+      "items": [
+        "Nagy Imre, Maléter Pál, Gimes Miklós: halál",
+        "Kopácsi Sándor: életfogytiglan",
+        "Donáth Ferenc: 12 év",
+        "Jánosi 8, Tildy 6, Vásárhelyi 5 év",
+        "Szilágyi Józsefet áprilisban kivégezték"
+      ]
+    },
+    {
+      "question": "Hová temették 1961-ben Nagy Imrét, Maléter Pált és Gimes Miklóst, három évvel kivégzésük után?",
+      "options": [
+        "Egy budapesti temető 301-es parcellájába",
+        "A Hősök terére",
+        "Szülőfalujukba",
+        "A jugoszláv követség kertjébe"
+      ],
+      "explanation": "A rákoskeresztúri Új köztemető 301-es parcellájába, jeltelen sírba, hamis néven, egészen 1989. június 16-i méltó újratemetésükig."
+    }
+  ],
+  "source": {
+    "label": "1956-os Intézet: A per. Nagy Imre és társai, 1958, 1989 (2008)"
+  }
+}

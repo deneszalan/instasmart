@@ -219,6 +219,12 @@ import { dayOf as occDay, EVENTS as OCC_EVENTS, eventAt as occEventAt, FREED as 
 import { EPISODES as MEMMI_EPISODES, score as memmiScore } from '../src/labs/literature/memmi-pillar-of-salt';
 import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plotAt as cemPlotAt, plotRect as cemPlotRect, zoomBox as cemZoom, PLOTS as CEM_PLOTS, RECORDS as CEM_RECORDS, ROWS as CEM_ROWS, GRAVES as CEM_GRAVES } from '../src/labs/earth/north-africa-american-cemetery-carthage';
 import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, FT_PER_MIN as TV_FT_PER_MIN, hoursOf as tvHours, ratio as tvRatio, SHOT_FT as TV_SHOT } from '../src/labs/art/tunisian-victory-1944-film';
+import { ACTUAL as E45_ACTUAL, SEATS as E45_SEATS, TOTAL_SEATS as E45_TOTAL, cabinet as e45Cabinet, fairShare as e45Fair, proportional as e45Proportional } from '../src/labs/history/1945-election-smallholders-win';
+import { atLeastOne as avhAtLeastOne, circleForEvenOdds as avhEven, reached as avhReached, GOAL_SHARE as AVH_GOAL } from '../src/labs/philosophy/avh-terror-and-recsk';
+import { EVENTS as NAGY53_EVENTS, ORDER as NAGY53_ORDER, complete as nagy53Complete, eventDate as nagy53Date, isNext as nagy53Next } from '../src/labs/politics/imre-nagy-new-course-1953';
+import { ORDER as OCT23_ORDER, PLACES as OCT23_PLACES, complete as oct23Complete, placeAt as oct23PlaceAt, project as oct23Project } from '../src/labs/engineering/23-october-statue-and-radio';
+import { LOG as NOV4_LOG, clockText as nov4Clock, heard as nov4Heard, onLastWords as nov4LastWords } from '../src/labs/earth/4-november-operation-whirlwind';
+import { CLASS_ENEMIES_MAX_PCT as REP_MAX, lit as repLit, missBy as repMiss } from '../src/labs/economics/reprisals-and-the-nagy-trial';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2301,5 +2307,69 @@ describe('lab maths', () => {
     expect(Math.round(tvRatio(TV_FINAL_FT))).toBe(44);
     expect(tvHours(TV_SHOT)).toBeCloseTo(55.6, 1);
     expect(tvRatio(tvFeet(10))).toBeGreaterThan(tvRatio(tvFeet(120)));
+  });
+  it('1945 election: 409 seats, 245 for the Smallholders; 18 posts in proportion would be 11, 3, 3 and 1, the real cabinet 9, 4, 4 and 1', () => {
+    expect(E45_TOTAL).toBe(409);
+    expect(E45_SEATS.fkgp * 2).toBeGreaterThan(E45_TOTAL);
+    expect(e45Fair()).toEqual({ fkgp: 11, szdp: 3, mkp: 3, npp: 1, pdp: 0 });
+    expect(Object.values(E45_ACTUAL).reduce((a, b) => a + b, 0)).toBe(18);
+    expect(e45Proportional(e45Cabinet(3, 3, 1))).toBe(true);
+    expect(e45Proportional(e45Cabinet(E45_ACTUAL.szdp, E45_ACTUAL.mkp, E45_ACTUAL.npp))).toBe(false);
+    expect(e45Cabinet(4, 4, 1).fkgp).toBe(9);
+    expect(e45Fair({ fkgp: 1, szdp: 1, mkp: 1, npp: 1, pdp: 0 }, 4)).toEqual({ fkgp: 1, szdp: 1, mkp: 1, npp: 1, pdp: 0 });
+  });
+  it('ÁVH informers toy model: with one informer in 50, 35 confidants make it more likely than not that one informs', () => {
+    expect(avhAtLeastOne(1, 10)).toBeCloseTo(0.1, 10);
+    expect(avhAtLeastOne(0, 10)).toBe(0);
+    expect(avhEven(50)).toBe(35);
+    expect(avhEven(10)).toBe(7);
+    expect(avhEven(25)).toBe(17);
+    expect(avhReached(35, AVH_GOAL)).toBe(true);
+    expect(avhReached(34, AVH_GOAL)).toBe(false);
+    expect(avhReached(40, 10)).toBe(false);
+  });
+  it('Nagy’s new course: six events in date order, from Stalin’s death to the expulsion, with dates in the reader’s language', () => {
+    expect(NAGY53_ORDER).toEqual(['stalin', 'moscow', 'speech', 'amnesty', 'condemned', 'expelled']);
+    expect(NAGY53_EVENTS).toHaveLength(6);
+    expect(nagy53Next([], 'stalin')).toBe(true);
+    expect(nagy53Next(['stalin'], 'speech')).toBe(false);
+    expect(nagy53Complete(NAGY53_ORDER)).toBe(true);
+    expect(nagy53Complete(['moscow', 'stalin', 'speech', 'amnesty', 'condemned', 'expelled'])).toBe(false);
+    expect(nagy53Date('speech', 'en-GB')).toBe('4 July 1953');
+    expect(nagy53Date('speech', 'hu-HU')).toBe('1953. július 4.');
+    expect(nagy53Date('moscow', 'en-GB')).toBe('June 1953');
+  });
+  it('23 October map: every place is found by a tap on its dot, Buda lies west of Pest, and the day runs from the Petőfi statue to the Stalin statue', () => {
+    for (const [w, h] of [[330, 260], [412, 300]]) {
+      for (const id of OCT23_ORDER) {
+        const [x, y] = oct23Project(...OCT23_PLACES[id], w, h);
+        expect(oct23PlaceAt(x + 3, y - 3, w, h)).toBe(id);
+        expect(x).toBeGreaterThan(0); expect(x).toBeLessThan(w); expect(y).toBeGreaterThan(0); expect(y).toBeLessThan(h);
+      }
+      expect(oct23Project(...OCT23_PLACES.bem, w, h)[0]).toBeLessThan(oct23Project(...OCT23_PLACES.parl, w, h)[0]);
+      expect(oct23PlaceAt(1, 1, w, h)).toBeNull();
+    }
+    expect(OCT23_ORDER[0]).toBe('petofi');
+    expect(oct23Complete(OCT23_ORDER)).toBe(true);
+    expect(oct23Complete(['bem', 'petofi', 'parl', 'radio', 'stalin'])).toBe(false);
+  });
+  it('4 November radio: Kádár at 5.05 before Nagy at 5.20, and Free Radio Kossuth’s last words at 7.57 before silence at 8.07', () => {
+    expect(nov4Heard('kadar', 5 * 60 + 10)?.id).toBe('kadar505');
+    expect(nov4Heard('kossuth', 5 * 60 + 10)).toBeNull();
+    expect(nov4Heard('kossuth', 5 * 60 + 20)?.id).toBe('nagy520');
+    expect(nov4LastWords(7 * 60 + 57)).toBe(true);
+    expect(nov4LastWords(8 * 60 + 6)).toBe(true);
+    expect(nov4LastWords(8 * 60 + 7)).toBe(false);
+    expect(nov4LastWords(7 * 60 + 56)).toBe(false);
+    expect(nov4Clock(4 * 60 + 15)).toBe('4.15');
+    expect([...NOV4_LOG].sort((a, b) => a.at - b.at).map((b) => b.id)).toEqual(NOV4_LOG.map((b) => b.id));
+  });
+  it('reprisals: at most 5 in 100 of those sentenced were “class enemies” by the regime’s own figures', () => {
+    expect(REP_MAX).toBe(5);
+    expect(repLit(REP_MAX)).toBe(5);
+    expect(repLit(150)).toBe(100);
+    expect(repLit(-3)).toBe(0);
+    expect(repMiss(50)).toBe(45);
+    expect(repMiss(5)).toBe(0);
   });
 });

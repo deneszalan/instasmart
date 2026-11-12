@@ -223,6 +223,12 @@ export const LABS = {
   'memmi-pillar-of-salt': 'Sort episodes of Albert Memmi’s novel La Statue de sel and of his own life onto two threads that run together and then part: told in the novel and lived by Memmi, in the novel only, or in his life only.',
   'north-africa-american-cemetery-carthage': 'Find graves on a schematic plan of the North Africa American Cemetery at Carthage, as a visiting family would: each practice record gives a plot (A to I), a row and a grave number.',
   'tunisian-victory-1944-film': 'A cutting room for the 1944 documentary Tunisian Victory: set the running time of the finished film and see how much of the 300,000 feet of film shot (as Variety reported) it keeps, at 90 feet of 35 mm film a minute.',
+  '1945-election-smallholders-win': 'Share out the 18 posts of Hungary’s coalition cabinet of November 1945 in proportion to the parties’ seats after the free election, then see the real cabinet: fewer posts for the Smallholders, who had won 245 of 409 seats, and the Interior Ministry, with the police, for a Communist.',
+  'avh-terror-and-recsk': 'A toy model of the fear the ÁVH spread: set how many people you speak to openly and what share might be informers, and see the chance that at least one of them reports you, as witnesses described to the UN in 1957.',
+  'imre-nagy-new-course-1953': 'Tap six events of Imre Nagy’s first government in the order they happened, from Stalin’s death in March 1953 to Nagy’s expulsion from the party in December 1955, and see them land on a timeline with his time as prime minister.',
+  '23-october-statue-and-radio': 'Follow 23 October 1956 on a schematic map of central Budapest: from each clue, tap where it happened, from the march at the Petőfi statue at 3 p.m. to the shots at the Radio and the fall of the Stalin statue after 9 p.m.',
+  '4-november-operation-whirlwind': 'Turn the clock through the morning of 4 November 1956 and hear what Free Radio Kossuth and the station announcing János Kádár’s government broadcast, minute by minute, until Free Radio Kossuth fell silent at 8.07.',
+  'reprisals-and-the-nagy-trial': 'Guess what share of the people sentenced after Hungary’s 1956 revolution the regime could label “class enemies”, on a grid of 100, then see its own figures: at most five per cent; the rest were workers, peasants, clerks and students.',
 } as const;
 
 export type LabId = keyof typeof LABS;

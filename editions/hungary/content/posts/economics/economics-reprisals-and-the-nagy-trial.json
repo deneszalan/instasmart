@@ -1,0 +1,170 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "economics-reprisals-and-the-nagy-trial",
+  "field": "economics",
+  "title": "After 1956 Hungary executed 229 people; Imre Nagy lay in an unmarked grave until 1989",
+  "emoji": "🕯️",
+  "body": "From December 1956 to the amnesty of 1963 János Kádár’s regime carried out its reprisals. Courts sentenced more than 22,000 people to prison, even more were interned or held without trial, and **229** were executed for their part in the revolution, by the count of the [1956 Institute](https://mek.oszk.hu/16600/16615/). Most were workers, peasants, clerks and students: even the regime’s own statistics could not show more than 5% as “class enemies”. Some 180,000 to 200,000 people left the country. Imre Nagy and his companions left the Yugoslav embassy on 22 November 1956 with a written promise of safe conduct, were seized and held in Romania. In June 1958 a court in Budapest tried them behind closed doors, and the public learned of the trial only after the executions. On 15 June it sentenced Nagy, former defence minister Pál Maléter and journalist Miklós Gimes to death. They were executed at dawn on 16 June 1958 and buried without a mark in the prison yard; in 1961 their coffins were moved in secret to plot 301 of a Budapest cemetery, under false names. On 16 June 1989, after a public funeral on Heroes’ Square, they were reburied there with honour.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "After Hungary’s 1956 revolution, about how many people did its courts sentence to prison?",
+      "min": 0,
+      "max": 100000,
+      "step": 1000,
+      "answer": 22000,
+      "unit": "people",
+      "explanation": "More than 22,000, by the 1956 Institute’s count. Even more were interned or held without trial: in all, about half a per cent of the population lost their liberty."
+    },
+    {
+      "type": "video",
+      "src": "reprisals.mp4",
+      "poster": "reprisals.jpg",
+      "alt": "Animation on dark slate: the years 1956 to 1963, summary-court papers, the numbers sentenced and executed, refugees crossing to Austria, a bus leaving the Yugoslav embassy, a closed courtroom door, the sentences of 15 June 1958, plot 301 overgrown, then grave posts and candles in 1989.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Quinns Song-First Night” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 3,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "reprisals-and-the-nagy-trial",
+      "prompt": "The regime blamed “class enemies”. Guess how many of 100 people sentenced after 1956 its own figures could label so, then check.",
+      "takeaway": "At most 5 in 100, even in the regime’s own figures. The rest were workers, peasants, clerks and students: the people who had made the revolution."
+    },
+    {
+      "type": "timeline",
+      "heading": "Imre Nagy, 1956–1989",
+      "events": [
+        {
+          "when": "22 Nov 1956",
+          "text": "Seized after leaving the embassy"
+        },
+        {
+          "when": "Feb 1957",
+          "text": "The party decides on a trial"
+        },
+        {
+          "when": "16 June 1958",
+          "text": "Executed with Maléter and Gimes"
+        },
+        {
+          "when": "Feb 1961",
+          "text": "Moved to plot 301, false names"
+        },
+        {
+          "when": "16 June 1989",
+          "text": "Reburied with honour"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "heading": "The Nagy trial, 15 June 1958",
+      "items": [
+        "Imre Nagy, Pál Maléter, Miklós Gimes: death",
+        "Sándor Kopácsi: life",
+        "Ferenc Donáth: 12 years",
+        "Jánosi 8, Tildy 6, Vásárhelyi 5 years",
+        "József Szilágyi: executed in April"
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Where were Imre Nagy, Pál Maléter and Miklós Gimes buried in 1961, three years after their execution?",
+      "options": [
+        "Plot 301 of a Budapest cemetery",
+        "On Heroes’ Square",
+        "In their home villages",
+        "In the Yugoslav embassy"
+      ],
+      "answer": 0,
+      "explanation": "In plot 301 of the New Public Cemetery at Rákoskeresztúr, in unmarked graves under false names, until their reburial there with honour on 16 June 1989."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "1956",
+    "reprisals",
+    "imrenagy",
+    "plot301",
+    "1989"
+  ],
+  "source": {
+    "label": "1956 Institute: A per. Nagy Imre és társai, 1958, 1989 (2008, in Hungarian)",
+    "url": "https://mek.oszk.hu/16600/16615/"
+  },
+  "theme": {
+    "gradient": [
+      "#151c24",
+      "#3f6212"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-12T01:30:00Z"
+}
