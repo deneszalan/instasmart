@@ -223,6 +223,7 @@ export const LABS = {
   'memmi-pillar-of-salt': 'Sort episodes of Albert Memmi’s novel La Statue de sel and of his own life onto two threads that run together and then part: told in the novel and lived by Memmi, in the novel only, or in his life only.',
   'north-africa-american-cemetery-carthage': 'Find graves on a schematic plan of the North Africa American Cemetery at Carthage, as a visiting family would: each practice record gives a plot (A to I), a row and a grave number.',
   'tunisian-victory-1944-film': 'A cutting room for the 1944 documentary Tunisian Victory: set the running time of the finished film and see how much of the 300,000 feet of film shot (as Variety reported) it keeps, at 90 feet of 35 mm film a minute.',
+  '1949-single-list-and-rakosi-cult': 'The single-list election of 15 May 1949 in Hungary: do what a voter could do with the ballot (drop it in unmarked, cross out the circle, spoil it or stay at home), see what the polling committee could see, and how many of the 6,053,792 people on the roll did the same.',
 } as const;
 
 export type LabId = keyof typeof LABS;

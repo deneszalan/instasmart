@@ -219,6 +219,7 @@ import { dayOf as occDay, EVENTS as OCC_EVENTS, eventAt as occEventAt, FREED as 
 import { EPISODES as MEMMI_EPISODES, score as memmiScore } from '../src/labs/literature/memmi-pillar-of-salt';
 import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plotAt as cemPlotAt, plotRect as cemPlotRect, zoomBox as cemZoom, PLOTS as CEM_PLOTS, RECORDS as CEM_RECORDS, ROWS as CEM_ROWS, GRAVES as CEM_GRAVES } from '../src/labs/earth/north-africa-american-cemetery-carthage';
 import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, FT_PER_MIN as TV_FT_PER_MIN, hoursOf as tvHours, ratio as tvRatio, SHOT_FT as TV_SHOT } from '../src/labs/art/tunisian-victory-1944-film';
+import { ACTS as SL_ACTS, CAST as SL_CAST, ROLL as SL_ROLL, TALLY as SL_TALLY, shareOfCast as slShareCast, shareOfRoll as slShareRoll } from '../src/labs/history/1949-single-list-and-rakosi-cult';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2301,5 +2302,14 @@ describe('lab maths', () => {
     expect(Math.round(tvRatio(TV_FINAL_FT))).toBe(44);
     expect(tvHours(TV_SHOT)).toBeCloseTo(55.6, 1);
     expect(tvRatio(tvFeet(10))).toBeGreaterThan(tvRatio(tvFeet(120)));
+  });
+  it('1949 single list: 95.6% of ballots cast and 90.5% of the roll were for the list, and the tally adds up', () => {
+    expect(SL_CAST).toBe(5730519);
+    expect(SL_CAST + SL_TALLY.away).toBe(SL_ROLL);
+    expect(slShareCast('yes')!.toFixed(1)).toBe('95.6');
+    expect(slShareRoll('yes').toFixed(1)).toBe('90.5');
+    expect(slShareCast('no')!.toFixed(2)).toBe('2.88');
+    expect(slShareCast('away')).toBeNull();
+    expect(SL_ACTS.reduce((s, a) => s + slShareRoll(a), 0)).toBeCloseTo(100, 6);
   });
 });

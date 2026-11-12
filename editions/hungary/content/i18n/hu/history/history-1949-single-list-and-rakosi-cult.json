@@ -1,0 +1,71 @@
+{
+  "id": "history-1949-single-list-and-rakosi-cult",
+  "title": "Az 1949-es választáson egy lista volt, és a jelöletlen szavazólap igennek számított",
+  "body": "A háború után Magyarországon viszonylag szabad választást tartottak: 1945. november 4-én a kisgazdák 57, a kommunisták 17 százalékot kaptak. Ezután a kommunista vezér, Rákosi Mátyás szeletenként számolta fel riválisait (ez volt a „szalámitaktika”), 1948. június 12-én pedig a szociáldemokratákat beolvasztották pártjába: így jött létre a Magyar Dolgozók Pártja (MDP). 1949. május 15-én a választók **egyetlen listát** kaptak, a Népfrontét, amelyet az MDP állított össze. Az igenhez nem kellett jelölés, a lapot úgy, ahogy volt, be lehetett dobni; a nemhez a kört két vonallal kellett áthúzni, és a bizottság feljegyezhette, ki időzik soká a fülkében. A Belügyminisztérium szerint a szavazók 95,6 százaléka voksolt a listára ([Gyarmati György, Betekintő](https://www.betekinto.hu/sites/default/files/betekinto-szamok/2015_2_gyarmati.pdf)). 1949. augusztus 20-án szovjet mintájú alkotmány tette Magyarországot népköztársasággá. Rákosi körül Sztálinéról mintázott kultusz nőtt: 1952. március 9-én, 60. születésnapjára az ország ajándékai megtöltötték a budapesti egykori Igazságügyi Palotát ([Néprajzi Múzeum](https://neprajz.hu/en/kiallitasok/idoszaki/2012eng/rakosi60-at-neprajz.hu.html)).",
+  "slides": [
+    {
+      "question": "Az 1949. május 15-i egylistás választáson a hivatalos adatok szerint a szavazók hány százaléka voksolt a listára?",
+      "unit": "%",
+      "explanation": "A Belügyminisztérium szerint 95,6%: 5 730 519 szavazatból 5 478 515. Ellene 165 283-an szavaztak, 86 721 szavazat érvénytelen volt, 323 273 választójogosult pedig nem szavazott."
+    },
+    {
+      "alt": "Animáció sötétvörös plakáthátterű lapon: az 1945-ös választás oszlopai, a szeletenként eltűnő riválisok, két párt összeolvadása MDP-vé, az egyetlen listás szavazólap az urnában vagy áthúzva, a hivatalos 95,6%, a szovjet mintájú alkotmány, Sztálin és Rákosi aranykerete.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "single-list-hu.mp4",
+      "poster": "single-list-hu.jpg"
+    },
+    {
+      "prompt": "Próbáld ki mind a négy lehetőséget az 1949-es szavazólappal: mit láthatott ebből a bizottság?",
+      "takeaway": "Csak az igenhez nem kellett semmit tenni: 5 478 515-en dobták be a lapot úgy, ahogy volt, a szavazók 95,6%-a, a választójogosultak 90,5%-a. A nemhez két vonás kellett a függöny mögött."
+    },
+    {
+      "heading": "Két választás",
+      "left": {
+        "label": "1945. november 4.",
+        "text": "Több párt, titkos szavazás: kisgazdák 57%, szociáldemokraták 17%, kommunisták 17%."
+      },
+      "right": {
+        "label": "1949. május 15.",
+        "text": "Egyetlen lista, a kommunista vezetésű MDP állította össze. Az igenhez semmi jelölés nem kellett: 95,6% a listára."
+      }
+    },
+    {
+      "heading": "Magyarország, 1945–1952",
+      "events": [
+        {
+          "when": "1945. nov. 4.",
+          "text": "Szabad választás: a kisgazdák 57%-ot kapnak"
+        },
+        {
+          "when": "1948. jún. 12.",
+          "text": "A szociáldemokratákat beolvasztják: MDP"
+        },
+        {
+          "when": "1949. máj. 15.",
+          "text": "Egylistás választás"
+        },
+        {
+          "when": "1949. aug. 20.",
+          "text": "Szovjet mintájú alkotmány"
+        },
+        {
+          "when": "1952. márc. 9.",
+          "text": "Rákosi 60. születésnapi ajándékai"
+        }
+      ]
+    },
+    {
+      "question": "Mit kellett tennie az 1949-es egylistás választáson annak, aki a lista ellen akart szavazni?",
+      "options": [
+        "Két vonallal áthúzni egy kört",
+        "Ráírni a lapra, hogy „nem”",
+        "Másik szavazólapot kérni",
+        "Jelöletlenül bedobni a lapot"
+      ],
+      "explanation": "A jelöletlen lap igennek számított. A nemhez a kört két vonallal kellett áthúzni a függöny mögött, ahol a hosszú időzést feljegyezhették."
+    }
+  ],
+  "source": {
+    "label": "Betekintő: Gyarmati György az 1949-es választásról"
+  }
+}

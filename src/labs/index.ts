@@ -223,4 +223,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'memmi-pillar-of-salt': lazy(() => import('./literature/memmi-pillar-of-salt')),
   'north-africa-american-cemetery-carthage': lazy(() => import('./earth/north-africa-american-cemetery-carthage')),
   'tunisian-victory-1944-film': lazy(() => import('./art/tunisian-victory-1944-film')),
+  '1949-single-list-and-rakosi-cult': lazy(() => import('./history/1949-single-list-and-rakosi-cult')),
 };
