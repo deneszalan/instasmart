@@ -224,6 +224,7 @@ export const LABS = {
   'north-africa-american-cemetery-carthage': 'Find graves on a schematic plan of the North Africa American Cemetery at Carthage, as a visiting family would: each practice record gives a plot (A to I), a row and a grave number.',
   'tunisian-victory-1944-film': 'A cutting room for the 1944 documentary Tunisian Victory: set the running time of the finished film and see how much of the 300,000 feet of film shot (as Variety reported) it keeps, at 90 feet of 35 mm film a minute.',
   '1949-single-list-and-rakosi-cult': 'The single-list election of 15 May 1949 in Hungary: do what a voter could do with the ballot (drop it in unmarked, cross out the circle, spoil it or stay at home), see what the polling committee could see, and how many of the 6,053,792 people on the roll did the same.',
+  'norms-wages-and-deliveries': 'The norm squeeze of Hungary’s early 1950s, simplified: a piece-rate worker is paid in proportion to the norm fulfilled; raise the norm and set your output, and find the norm rise that cut pay by 35.5% for unchanged work, as the new norms did at the Ikarus bus works in 1950.',
 } as const;
 
 export type LabId = keyof typeof LABS;

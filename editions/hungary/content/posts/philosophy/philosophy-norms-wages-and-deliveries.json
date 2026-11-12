@@ -1,0 +1,180 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "philosophy-norms-wages-and-deliveries",
+  "field": "philosophy",
+  "title": "In the early 1950s Hungary built ‘a land of iron and steel’ while real wages fell a fifth",
+  "emoji": "🏭",
+  "body": "Hungary’s first five-year plan, launched on 1 January 1950, set out to make the country ‘a land of iron and steel’. Its planned investment grew from 27.6 billion forints in the 1948 draft to 85 billion in February 1951, and about nine-tenths of industry’s share went to heavy industry ([Endre Domonkos](https://real.mtak.hu/147658)). Workers paid for it: higher **norms** meant the same work earned less (at the Ikarus bus works, average pay fell 35.5% in 1950), food was rationed again from 1951, and workers were pressed to buy Peace Loans worth a month’s pay a year. In 1952 real wages were about two-thirds of their pre-war level. In the villages, compulsory deliveries were set by the land, not by the harvest, at fixed low prices, and officials searched lofts for hidden grain. By the summer of 1953 some 400,000 private farms were gone. In October 1956 the students’ demands included ‘the complete revision of norms in industry’, and on 30 October Imre Nagy’s government abolished the compulsory deliveries ([UN Special Committee, 1957](https://mek.oszk.hu/01200/01274/)).",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "In 1952, what were Hungarian real wages as a percentage of their level before the Second World War?",
+      "min": 20,
+      "max": 150,
+      "step": 1,
+      "answer": 66,
+      "unit": "%",
+      "explanation": "About 66%, two-thirds of the 1938 level, by historian Ignác Romsics’s figures. Prices outran pay, and real wages fell by about a fifth in the early 1950s."
+    },
+    {
+      "type": "video",
+      "src": "norms.mp4",
+      "poster": "norms.jpg",
+      "alt": "Animation in soot grey and steel blue: factory chimneys, the plan’s investment rising from 27.6 to 85 billion forints, a norm line rising as pay shrinks, real wages in 1938 and 1952, a Peace Loan bond, ration coupons, a field where the quota stays the same in a bad year.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Crusade - Heavy Industry” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "norms-wages-and-deliveries",
+      "prompt": "Find the norm rise that cuts pay by 35.5% for the same work, as at the Ikarus bus works in 1950.",
+      "takeaway": "A norm raised by about 55% cuts pay by 35.5% for the same work. To earn as before, a worker would have had to produce 55% more."
+    },
+    {
+      "type": "chart",
+      "heading": "Planned investment of Hungary’s first five-year plan",
+      "items": [
+        {
+          "label": "1948 draft",
+          "value": 27.6
+        },
+        {
+          "label": "April 1949",
+          "value": 35
+        },
+        {
+          "label": "December 1949",
+          "value": 50.9
+        },
+        {
+          "label": "February 1951",
+          "value": 85,
+          "emphasis": true
+        }
+      ],
+      "unit": "bn Ft",
+      "note": "Billion forints, for 1950–1954; Endre Domonkos (2022), after Iván T. Berend"
+    },
+    {
+      "type": "flow",
+      "heading": "How the compulsory deliveries worked",
+      "steps": [
+        {
+          "icon": "🌾",
+          "label": "A quota set by the land’s size and quality"
+        },
+        {
+          "icon": "📦",
+          "label": "Owed in full, whatever the harvest"
+        },
+        {
+          "icon": "💰",
+          "label": "Paid for at fixed, low prices"
+        },
+        {
+          "icon": "🔍",
+          "label": "Lofts searched for hidden grain"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Under Hungary’s compulsory deliveries of the early 1950s, what set how much a farm had to hand over to the state?",
+      "options": [
+        "The size and quality of its land",
+        "That year’s harvest",
+        "The size of the family",
+        "The local market price"
+      ],
+      "answer": 0,
+      "explanation": "The quota was fixed by the land, regardless of the crop, and paid for at fixed low prices, so a bad year did not lower it."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "1950s",
+    "wages",
+    "industry",
+    "peasants",
+    "communism"
+  ],
+  "source": {
+    "label": "Endre Domonkos: The Consequences of Stalinist Economic Policy in Hungary (1949–1953)",
+    "url": "https://real.mtak.hu/147658"
+  },
+  "theme": {
+    "gradient": [
+      "#1d2227",
+      "#5a3a1e"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-11T23:51:21Z"
+}
