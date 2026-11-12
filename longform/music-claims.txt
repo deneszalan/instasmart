@@ -45,3 +45,18 @@ tun-campaign | Sad Trio.mp3
 tun-literature | Smoother Move.mp3
 tun-literature | Quinns Song-First Night.mp3
 tun-literature | Pride.mp3
+hun-end | Long Note Four.mp3
+hun-end | Cryptic Sorrow.mp3
+hun-why | Metaphysik.mp3
+hun-fight | Long Note Two.mp3
+hun-fight | When The Wind Blows.mp3
+hun-fight | Stay the Course.mp3
+hun-road | Overheat.mp3
+hun-road | Lightless Dawn.mp3
+hun-after | Blue Feather.mp3
+hun-after | Thunderbird.mp3
+hun-after | Aretes.mp3
+hun-why | Lost Time.mp3
+hun-why | Eternal Hope.mp3
+hun-background | Penumbra.mp3
+hun-background | Inexorable.mp3

@@ -9,7 +9,7 @@
 //   node timing.mjs build-fr <slug>   -> <slug>/timeline-fr.js, subtitles-fr.srt, plan-fr.json, from measure-fr.json (tts-fr.sh)
 // script.mjs then also exports FR: { key: { text, say? } } for every key of LINES, and optionally HOLD_FR: { key: seconds },
 // which overrides HOLD's entries for the French timeline (a key it doesn't name keeps HOLD's). Gaps and chapters come from LINES.
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 const [mode, slug] = process.argv.slice(2);
@@ -62,6 +62,8 @@ if (mode === 'measure') {
   const spokenFr = (k) => plain(FR[k].say ?? FR[k].text).replace(/["«»]/g, '').replace(/\s+/g, ' ').replace(/\s*\.$/, '').trim();
   // The French captions keep their typography (’, « », the no-break spaces before ; : ! ?); only the marks go.
   const captionFr = (s) => s.replace(/[*~^]/g, '').replace(/[ \t\r\n]+/g, ' ').trim();
+  // XTTS's longest line by language; the second language is French unless <slug>/lang2.txt says hu.
+  const LIMIT = existsSync(join(dir, 'lang2.txt')) && readFileSync(join(dir, 'lang2.txt'), 'utf8').trim() === 'hu' ? 224 : 273;
   if (mode === 'measure-fr') {
     mkdirSync(join(dir, 'rec-fr'), { recursive: true });
     writeFileSync(join(dir, 'rec-fr', 'lines.json'), JSON.stringify(LINES.map((l) => ({ key: l.key, spoken: spokenFr(l.key) })), null, 1));
@@ -71,7 +73,7 @@ if (mode === 'measure') {
       if (/\d/.test(s)) why.push('digits: write numbers and years in words in say');
       if (/[%°×÷=+/<>≈→−]/.test(s)) why.push('a symbol: say it in words');
       if (/:/.test(s)) why.push('a colon: give the voice the connecting words');
-      if (s.length > 273) why.push(`${s.length} characters: XTTS cuts a French line after 273, so split it`);
+      if (s.length > LIMIT) why.push(`${s.length} characters: XTTS cuts a line after ${LIMIT} in this language, so split it`);
       else if (s.length > 200) why.push(`${s.length} characters: XTTS is less steady on long lines`);
       if (why.length) flags.push(`  ${l.key.padEnd(5)} [${why.join('; ')}] ${s}`);
     }

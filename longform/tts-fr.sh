@@ -13,11 +13,15 @@ S=$(cd "$(dirname "$0")" && pwd); slug=$1; d=$S/$slug
 PY="/tmp/claude-0/-home-user/597d1c62-e00b-59e9-a6a1-fbf35da32d35/scratchpad/xtts-venv/bin/python -I"
 node $S/timing.mjs measure-fr $slug
 n=$($PY $S/frvoice.py plan $d)
-if [ "$n" -gt 0 ]; then
+# 20 lines a process at most (XTTS's memory grows with every line); another XTTS job may take its turn in between.
+while [ "$n" -gt 0 ]; do
   flock -n $S/xtts.lock true || echo "waiting for xtts.lock (another XTTS process is running)"
-  echo "recording $n French lines"
-  flock $S/xtts.lock env OMP_NUM_THREADS=3 MKL_NUM_THREADS=3 OMP_WAIT_POLICY=PASSIVE XTTS_THREADS=3 $PY $S/frvoice.py record $d
-fi
+  echo "recording $n lines, up to 20 in this round"
+  flock $S/xtts.lock env OMP_NUM_THREADS=3 MKL_NUM_THREADS=3 OMP_WAIT_POLICY=PASSIVE XTTS_THREADS=3 XTTS_BATCH=20 $PY $S/frvoice.py record $d
+  m=$($PY $S/frvoice.py plan $d)
+  [ "$m" -lt "$n" ] || { echo "no line recorded in this round; stopping"; exit 1; }
+  n=$m
+done
 $PY $S/frvoice.py build $d
 node $S/timing.mjs build-fr $slug
 # Early warning: does the music plan still fit the (usually longer) French timeline? render-video.sh <slug> fr stops if not.
