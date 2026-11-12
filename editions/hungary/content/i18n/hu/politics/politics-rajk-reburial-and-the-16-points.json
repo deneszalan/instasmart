@@ -1,0 +1,70 @@
+{
+  "id": "politics-rajk-reburial-and-the-16-points",
+  "title": "Tizenhét nap 1956 októberében: újratemetés, hírek Lengyelországból és a diákok 16 pontja",
+  "body": "1956. október 6-án a Kerepesi temetőben újratemették Rajk Lászlót, akit 1949-ben koncepciós per után felakasztottak, és vele három sorstársát. Hatalmas tömeg jött el – a becslések 100 000 és 350 000 között mozognak –, és a temetés tömegtüntetéssé vált a még hatalmon lévő sztálinista vezetés ellen. Nagy Imre, akit 1955-ben menesztettek a miniszterelnöki posztról, részvétét fejezte ki az özvegynek, Rajk Júliának, október 14-én pedig visszavették a pártba. Október 16-án a szegedi egyetemisták kiváltak a párt ifjúsági szövetségéből, és megalapították saját szervezetüket, a MEFESZ-t. Október 19-én szovjet vezetők bejelentés nélkül Varsóba repültek; 21-én Władysław Gomułkát választották a lengyel párt élére, Moszkva engedett, és ez reményt adott a magyaroknak. Október 22-én a Műegyetem aulájában több mint kétezren gyűltek össze, és a tíz követelésből [16 pont](https://mek.oszk.hu/01900/01937/html/szerviz/dokument/bme16ps.htm) lett: **a szovjet csapatok kivonása, Nagy Imre vezette kormány, szabad választások**. Amikor a rádió nem volt hajlandó beolvasni, a diákok október 23-ára felvonulást hirdettek.",
+  "slides": [
+    {
+      "alt": "Animáció őszi sötétkékben és borostyánszínben: felül 1956 októberének naptárcsíkja fut, négy koporsó és gyülekező tömeg jelzi Rajk újratemetését, vázlatos térkép köti Szegedet és Varsót Budapesthez, a diákok listája 10 pontról 16-ra nő, végül a menet a Bem-szobor felé indul.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "october-hu.mp4",
+      "poster": "october-hu.jpg"
+    },
+    {
+      "prompt": "Tűzd fel 1956 októberének minden eseményét a maga napjára, Rajk újratemetésétől az október 23-i felvonulásig.",
+      "takeaway": "Tizenhét nap: egy újratemetés, amelyből tüntetés lett, önállóan szerveződő diákok, a Moszkvával dacoló Lengyelország, és október 22-én a 16 pont. A felvonulás másnap következett."
+    },
+    {
+      "heading": "1956 októbere",
+      "events": [
+        {
+          "when": "okt. 6.",
+          "text": "Rajk László újratemetése hatalmas tömeg előtt"
+        },
+        {
+          "when": "okt. 14.",
+          "text": "Nagy Imre visszakerül a pártba"
+        },
+        {
+          "when": "okt. 16.",
+          "text": "Szegeden megalakul a MEFESZ"
+        },
+        {
+          "when": "okt. 21.",
+          "text": "Lengyelországban Gomułkát választják"
+        },
+        {
+          "when": "okt. 22.",
+          "text": "A 16 pont Budapesten"
+        }
+      ]
+    },
+    {
+      "heading": "A 16 pontból",
+      "items": [
+        "Minden szovjet csapatot ki kell vonni",
+        "Új kormány Nagy Imre vezetésével",
+        "Szabad választások több párt részvételével",
+        "Sajtószabadság és szabad rádió",
+        "Le kell bontani a Sztálin-szobrot",
+        "Vissza a Kossuth-címert"
+      ]
+    },
+    {
+      "text": "Az összes szovjet csapatoknak azonnali kivonását követeljük Magyarországról a békeszerződés határozatai alapján.",
+      "attribution": "A 16 pont 1. pontja, Műegyetem, Budapest, 1956. október 22."
+    },
+    {
+      "question": "Miért akartak a budapesti diákok 1956. október 23-án Bem József tábornok szobrához vonulni?",
+      "options": [
+        "Szolidaritásból Lengyelországgal",
+        "Rajk László gyászolására",
+        "Nagy Imre üdvözlésére",
+        "Az élelmiszerárak miatt"
+      ],
+      "explanation": "A lengyel Bem az 1848–49-es szabadságharc hőse volt. A szobrához vonulva a diákok Lengyelország mellett álltak ki, amely Moszkva akarata ellenére választotta Gomułkát."
+    }
+  ],
+  "source": {
+    "label": "Az ENSZ különbizottsága a magyar kérdésről: jelentés (1957)"
+  }
+}

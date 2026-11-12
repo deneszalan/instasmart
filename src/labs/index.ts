@@ -225,4 +225,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'tunisian-victory-1944-film': lazy(() => import('./art/tunisian-victory-1944-film')),
   'rajk-show-trial-1949': lazy(() => import('./history/rajk-show-trial-1949')),
   'soviet-troops-and-national-symbols': lazy(() => import('./philosophy/soviet-troops-and-national-symbols')),
+  'rajk-reburial-and-the-16-points': lazy(() => import('./politics/rajk-reburial-and-the-16-points')),
 };

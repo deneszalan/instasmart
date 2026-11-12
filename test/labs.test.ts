@@ -221,6 +221,7 @@ import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plot
 import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, FT_PER_MIN as TV_FT_PER_MIN, hoursOf as tvHours, ratio as tvRatio, SHOT_FT as TV_SHOT } from '../src/labs/art/tunisian-victory-1944-film';
 import { done as rajkDone, EVENTS as RAJK_EVENTS, gap as rajkGap, nextExpected as rajkNext, SHUFFLED as RAJK_SHUFFLED, yearOf as rajkYear } from '../src/labs/history/rajk-show-trial-1949';
 import { AUSTRIA_LEFT as SOV_AUSTRIA_LEFT, AUSTRIA_TREATY as SOV_AUSTRIA_TREATY, bases as sovBases, inAustria as sovInAustria, LAST as SOV_LAST, monthIndex as sovMonth, reached as sovReached, TREATY as SOV_TREATY, WARSAW as SOV_WARSAW } from '../src/labs/philosophy/soviet-troops-and-national-symbols';
+import { cell as octCell, DAY as OCT_DAY, dayAt as octDayAt, daysBetween as octDays, DECK as OCT_DECK, done as octDone, fits as octFits } from '../src/labs/politics/rajk-reburial-and-the-16-points';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2330,5 +2331,17 @@ describe('lab maths', () => {
     expect(sovReached(SOV_AUSTRIA_LEFT)).toBe(false);
     expect(sovReached(SOV_AUSTRIA_LEFT + 1)).toBe(true);
     expect(sovReached(sovMonth(1950, 1))).toBe(false);
+  });
+  it('October 1956 calendar: every event on its day, 1 October a Monday, 17 days from the reburial to the march', () => {
+    expect(new Date(Date.UTC(1956, 9, 1)).getUTCDay()).toBe(1);
+    expect(octCell(23)).toEqual({ col: 1, row: 3 });
+    expect(new Date(Date.UTC(1956, 9, 23)).getUTCDay()).toBe(2);
+    for (let d = 1; d <= 28; d++) { const c = octCell(d); expect(octDayAt(c.col, c.row)).toBe(d); }
+    expect([...OCT_DECK].sort()).toEqual(Object.keys(OCT_DAY).sort());
+    expect(octDays('reburial', 'march')).toBe(17);
+    expect(octFits('points', 22)).toBe(true);
+    expect(octFits('points', 23)).toBe(false);
+    expect(octDone(OCT_DECK)).toBe(true);
+    expect(octDone(OCT_DECK.slice(1))).toBe(false);
   });
 });

@@ -1,0 +1,167 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "politics-rajk-reburial-and-the-16-points",
+  "field": "politics",
+  "title": "Seventeen days in October 1956: a reburial, news from Poland and the students’ 16 points",
+  "emoji": "📜",
+  "body": "On 6 October 1956 László Rajk, hanged in 1949 after a show trial, was reburied at the Kerepesi cemetery in Budapest with three other victims of the same trials. A huge crowd came (estimates run from 100,000 to 350,000), and the funeral became a mass demonstration against the Stalinist leaders still in power. Imre Nagy, ousted as prime minister in 1955, offered his sympathy to the widow, Júlia Rajk, and on 14 October he was readmitted to the party. On 16 October students in Szeged left the party’s youth league and founded their own union, MEFESZ. On 19 October Soviet leaders flew unannounced to Warsaw; on 21 October Władysław Gomułka was elected Poland’s party leader, Moscow gave way, and Hungarians took heart. On 22 October more than 2,000 people filled the hall of the Technical University in Budapest, and a list of ten demands grew to the [sixteen points](https://mek.oszk.hu/01900/01937/html/szerviz/dokument/bme16ps.htm): **all Soviet troops out, a government under Nagy, free elections**. When the radio refused to broadcast them, the students called a march for 23 October.",
+  "slides": [
+    {
+      "type": "video",
+      "src": "october.mp4",
+      "poster": "october.jpg",
+      "alt": "Animation in autumn navy and amber: an October 1956 calendar strip runs along the top while four coffins and a gathering crowd mark Rajk’s reburial, a schematic map links Szeged and Warsaw to Budapest, a hall of students sees its list grow from 10 to 16 points, and a march heads to the Bem statue.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Decisions” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 4
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "rajk-reburial-and-the-16-points",
+      "prompt": "Pin each event of October 1956 on its day, from Rajk’s reburial to the march of 23 October.",
+      "takeaway": "Seventeen days: a reburial that became a demonstration, students organising on their own, Poland defying Moscow, and on 22 October the 16 points. The march came the next day."
+    },
+    {
+      "type": "timeline",
+      "heading": "October 1956",
+      "events": [
+        {
+          "when": "6 Oct",
+          "text": "László Rajk is reburied before a huge crowd"
+        },
+        {
+          "when": "14 Oct",
+          "text": "Imre Nagy is back in the party"
+        },
+        {
+          "when": "16 Oct",
+          "text": "Szeged students found MEFESZ"
+        },
+        {
+          "when": "21 Oct",
+          "text": "Gomułka elected in Poland"
+        },
+        {
+          "when": "22 Oct",
+          "text": "The 16 points in Budapest"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "heading": "Among the 16 points",
+      "style": "bullets",
+      "items": [
+        "All Soviet troops out of Hungary",
+        "A new government under Imre Nagy",
+        "Free elections with several parties",
+        "Freedom of the press and a free radio",
+        "The Stalin statue taken down",
+        "The Kossuth coat of arms restored"
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "We demand the immediate withdrawal of all Soviet troops in accordance with the provisions of the Peace Treaty.",
+      "attribution": "Point 1 of the 16 points, Technical University, Budapest, 22 October 1956"
+    },
+    {
+      "type": "quiz",
+      "question": "Why did the Budapest students plan a march to the statue of General Józef Bem on 23 October 1956?",
+      "options": [
+        "In sympathy with Poland",
+        "To mourn László Rajk",
+        "To greet Imre Nagy",
+        "To protest food prices"
+      ],
+      "answer": 0,
+      "explanation": "Bem, a Pole, was a hero of Hungary’s war of independence of 1848–49. A march to his statue showed solidarity with Poland, which had just chosen Gomułka against Moscow’s wishes."
+    }
+  ],
+  "tags": [
+    "rajk",
+    "16points",
+    "mefesz",
+    "gomulka",
+    "poland",
+    "october1956"
+  ],
+  "source": {
+    "label": "UN Special Committee on the Problem of Hungary: Report (1957)",
+    "url": "https://mek.oszk.hu/01200/01274/"
+  },
+  "theme": {
+    "gradient": [
+      "#131a2b",
+      "#5a3a12"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-12T00:14:34Z"
+}
