@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Btn, C, label, line, Readouts, Stage, useGoal, type LabProps } from '../kit';
+import { Btn, C, label, line, Stage, useGoal, type LabProps } from '../kit';
 import { LOCALE, t } from '../../i18n';
 import { formatNumber } from '../../lib/format';
 
@@ -36,12 +36,12 @@ export const done = (placed: RajkEvent['id'][]) => placed.length === EVENTS.leng
 
 function name(id: RajkEvent['id']) {
   switch (id) {
-    case 'split': return t('Stalin breaks with Tito');
-    case 'trial': return t('Rajk’s trial opens');
-    case 'hanged': return t('Rajk is hanged');
+    case 'split': return t('Split with Tito');
+    case 'trial': return t('Trial opens');
+    case 'hanged': return t('Rajk hanged');
     case 'admitted': return t('Charges declared false');
-    case 'reburied': return t('Rajk is reburied');
-    case 'revolution': return t('The revolution begins');
+    case 'reburied': return t('Rajk reburied');
+    case 'revolution': return t('Revolution begins');
   }
 }
 function when(e: RajkEvent) {
@@ -54,13 +54,12 @@ const RED = '#e8846f', GOLD = '#e2b85a';
 export default function RajkShowTrial({ onDone }: LabProps) {
   const [placed, setPlaced] = useState<RajkEvent['id'][]>([]);
   const [miss, setMiss] = useState<RajkEvent['id'] | null>(null);
-  const [errors, setErrors] = useState(0);
-  useGoal(done(placed), onDone);
+    useGoal(done(placed), onDone);
 
   const tap = (id: RajkEvent['id']) => {
     if (placed.includes(id)) return;
     if (id === nextExpected(placed)) { setPlaced([...placed, id]); setMiss(null); }
-    else { setMiss(id); setErrors(errors + 1); }
+    else setMiss(id);
   };
 
   const draw = (ctx: CanvasRenderingContext2D, { w, h }: { w: number; h: number }) => {
@@ -75,7 +74,8 @@ export default function RajkShowTrial({ onDone }: LabProps) {
     if (placed.includes('admitted')) {
       ctx.fillStyle = 'rgba(226,184,90,0.16)';
       ctx.fillRect(X(yearOf(ev('hanged'))), y0 - 10, X(yearOf(ev('admitted'))) - X(yearOf(ev('hanged'))), 20);
-      label(ctx, t('years of silence'), (X(yearOf(ev('hanged'))) + X(yearOf(ev('admitted')))) / 2, y0 + 34, { size: 11, color: GOLD });
+      const g2 = gap(ev('hanged'), ev('admitted'));
+      label(ctx, t('{y} years {m} months of silence', { y: formatNumber(g2.years), m: formatNumber(g2.months) }), (X(yearOf(ev('hanged'))) + X(yearOf(ev('admitted')))) / 2, y0 + 34, { size: 11, color: GOLD });
     }
     placed.forEach((id, i) => {
       const e = ev(id), x = X(yearOf(e)), up = i % 2 === 0, yy = up ? y0 - 26 - (i % 3) * 22 : y0 + 50 + (i % 3) * 18;
@@ -86,11 +86,11 @@ export default function RajkShowTrial({ onDone }: LabProps) {
       label(ctx, name(id), x, yy, { size: 11, color: C.ink, align });
       label(ctx, when(e), x, yy + (up ? -13 : 13), { size: 10, color: C.soft, align });
     });
-    if (!placed.length) label(ctx, t('Tap the events below in the order they happened'), w / 2, h * 0.22, { size: 12, color: C.soft });
+    if (!placed.length) label(ctx, t('Tap the events in order'), w / 2, h * 0.22, { size: 12, color: C.soft });
+    label(ctx, t('{n} of {total} events', { n: formatNumber(placed.length), total: formatNumber(EVENTS.length) }), w - 8, 12, { size: 10, color: done(placed) ? C.good : C.faint, align: 'right' });
   };
 
   const left = SHUFFLED.filter((id) => !placed.includes(id));
-  const g = placed.includes('admitted') ? gap(ev('hanged'), ev('admitted')) : null;
   return (
     <div className="lab">
       <Stage draw={draw} label={t('{n} of {total} events placed on the time line', { n: formatNumber(placed.length), total: formatNumber(EVENTS.length) })} />
@@ -101,18 +101,7 @@ export default function RajkShowTrial({ onDone }: LabProps) {
           </Btn>
         ))}
       </div>
-      <Readouts
-        items={[
-          { label: t('Events in order'), value: t('{n} of {total} events', { n: formatNumber(placed.length), total: formatNumber(EVENTS.length) }), tone: done(placed) ? 'good' : undefined },
-          {
-            label: t('From the hanging to the admission'),
-            value: g ? t('{y} years {m} months', { y: formatNumber(g.years), m: formatNumber(g.months) }) : '–',
-            tone: g ? 'accent' : undefined,
-          },
-          { label: t('Wrong taps'), value: formatNumber(errors), tone: errors ? 'bad' : undefined },
-        ]}
-      />
-      <p className="lab__note">{miss ? t('Not yet: something else happened before that.') : t('Dates from Hungarian sources and the UN report of 1957; the split with Tito is shown in mid-1948.')}</p>
+      <p className="lab__note">{miss ? t('Not yet: something else happened before that.') : t('Dates: Hungarian sources, UN report (1957); the split shown in mid-1948.')}</p>
     </div>
   );
 }
