@@ -227,6 +227,7 @@ export const LABS = {
   'norms-wages-and-deliveries': 'The norm squeeze of Hungary’s early 1950s, simplified: a piece-rate worker is paid in proportion to the norm fulfilled; raise the norm and set your output, and find the norm rise that cut pay by 35.5% for unchanged work, as the new norms did at the Ikarus bus works in 1950.',
   'secret-speech-and-petofi-circle-1956': 'Read a source against claims: five statements about Mátyás Rákosi’s fall on 18 July 1956 and his successor Ernő Gerő, each to judge as supported or contradicted by the telegram the US Legation in Budapest sent the next day (FRUS 1955–1957, vol. XXV, doc. 83).',
   'kossuth-square-25-october': 'Put the first days of Hungary’s 1956 revolution on a schematic map of Budapest, in order: the Bem statue and Parliament on 23 October, the shooting at the Radio, the Stalin statue, then on 25 October the talks with Soviet tank crews at the Astoria and the volley at Kossuth Square (UN Special Committee report, 1957).',
+  'workers-councils-general-strike': 'The demands of Budapest’s Central Workers’ Council in November 1956 (councils running the factories, a national council, Soviet troops out, Imre Nagy back, promises in writing): guess what János Kádár’s government did with each, then read the record from the UN Special Committee’s report of 1957.',
 } as const;
 
 export type LabId = keyof typeof LABS;

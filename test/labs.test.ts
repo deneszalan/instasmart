@@ -223,6 +223,7 @@ import { ACTS as SL_ACTS, CAST as SL_CAST, ROLL as SL_ROLL, TALLY as SL_TALLY, s
 import { cutFor as nsCutFor, IKARUS_CUT as NS_CUT, matchesIkarus as nsMatches, payShare as nsPay, raiseFor as nsRaiseFor } from '../src/labs/philosophy/norms-wages-and-deliveries';
 import { CLAIMS as TG_CLAIMS, score as tgScore } from '../src/labs/politics/secret-speech-and-petofi-circle-1956';
 import { EVENTS as KS_EVENTS, PLACES as KS_PLACES, placeAt as ksPlaceAt, project as ksProject, type Place as KsPlace } from '../src/labs/engineering/kossuth-square-25-october';
+import { DEMANDS as WC_DEMANDS, granted as wcGranted, matches as wcMatches } from '../src/labs/earth/workers-councils-general-strike';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2343,5 +2344,13 @@ describe('lab maths', () => {
     }
     expect(KS_EVENTS).toHaveLength(6);
     expect(KS_EVENTS.at(-1)!.place).toBe('parliament');
+  });
+  it('Kádár’s answers: five demands, none granted, guesses scored against the record', () => {
+    expect(WC_DEMANDS).toHaveLength(5);
+    expect(wcGranted()).toBe(0);
+    const record = Object.fromEntries(WC_DEMANDS.map((d) => [d.id, d.outcome]));
+    expect(wcMatches(record)).toBe(5);
+    expect(wcMatches({})).toBe(0);
+    expect(wcMatches({ ...record, writing: 'granted' })).toBe(4);
   });
 });

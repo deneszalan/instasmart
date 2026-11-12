@@ -1,0 +1,64 @@
+{
+  "id": "earth-workers-councils-general-strike",
+  "title": "Az 1956. november 4-i szovjet támadás után a munkások még öt hétig kitartottak",
+  "body": "1956. november 4-én a szovjet csapatok megtámadták Budapestet, és Kádár János új kormányt alakított. A harcok napok alatt elültek, de a gyárak álltak: az október vége óta minden üzemben megválasztott munkástanácsok fenntartották az **általános sztrájkot**. November 14-én megalakították a Nagybudapesti Központi Munkástanácsot; elnöke, a 23 éves Rácz Sándor a szovjet csapatok kivonásáért, szabad választásokért és Nagy Imre visszatéréséért tárgyalt Kádárral. Kádár sokat ígért, de semmit sem írt alá: azt mondta, elég kell legyen a szava ([az ENSZ különbizottsága, 1957](https://mek.oszk.hu/01200/01274/)). December 4-én több ezer asszony vonult némán, virágokkal a Hősök terére. December 8-án Salgótarjánban a karhatalom és a szovjet katonák a két letartóztatott munkástanács-vezető szabadon bocsátását követelő tömegre lőttek; 46 halottat név szerint ismerünk. December 9-én a kormány betiltotta a Központi Munkástanácsot és minden gyár feletti tanácsot, december 11-én pedig Rácz Sándort és a tanács titkárát, Bali Sándort az Országházban letartóztatták, ahová Kádár tárgyalni hívta őket. A december 11–12-i sztrájk volt az utolsó.",
+  "slides": [
+    {
+      "prompt": "1956. december 11-én Kádár János az Országházba hívta Rácz Sándor és Bali Sándor munkástanács-vezetőket. Mi történt ott?",
+      "answer": "Letartóztatták őket",
+      "detail": "Ráczot, a Központi Munkástanács 23 éves elnökét 1958-ban életfogytiglanra ítélték; az 1963-as amnesztiával szabadult."
+    },
+    {
+      "alt": "Animáció téli éjszakai lapon, a november 4. és december 12. közötti napok sávjával: álló gyárak, a munkástanács kézfelemeléssel, a Központi Munkástanács, a tárgyalóasztal, az aláíratlan papír, a Hősök tere virágokkal, Salgótarján a térképen, a betiltás, a letartóztatás az Országházban.",
+      "credit": "Ötvenhat · saját animáció · MI-narráció",
+      "src": "workers-councils-hu.mp4",
+      "poster": "workers-councils-hu.jpg"
+    },
+    {
+      "prompt": "Tippeld meg, mit tett Kádár kormánya a munkások öt követelésével, aztán olvasd el az ENSZ feljegyzését.",
+      "takeaway": "Egyiket sem teljesítette: az ígéreteket visszavonta vagy feltételekhez kötötte, a többit elutasította, aztán betiltotta a tanácsokat, és letartóztatta a vezetőiket."
+    },
+    {
+      "heading": "Öt hét ellenállás, 1956",
+      "events": [
+        {
+          "when": "nov. 4.",
+          "text": "Szovjet támadás; Kádár kormánya"
+        },
+        {
+          "when": "nov. 14.",
+          "text": "Megalakul a Központi Munkástanács"
+        },
+        {
+          "when": "dec. 4.",
+          "text": "Az asszonyok néma tüntetése"
+        },
+        {
+          "when": "dec. 8.",
+          "text": "Sortűz Salgótarjánban"
+        },
+        {
+          "when": "dec. 11.",
+          "text": "Ráczot és Balit letartóztatják"
+        }
+      ]
+    },
+    {
+      "text": "A tigrist nem lehet csalétekkel megszelídíteni; megszelídíteni és békére kényszeríteni csak agyonveréssel lehet.",
+      "attribution": "Kádár János a sztrájkszervezőkről, 1956. nov. 26. (az ENSZ-jelentés idézete)"
+    },
+    {
+      "question": "Mit hirdetett a Központi Munkástanács 1956. december 11–12-re a letartóztatások elleni tiltakozásul?",
+      "options": [
+        "48 órás sztrájkot",
+        "Felvonulást az Országházhoz",
+        "Tárgyalást Moszkvában",
+        "Új tanácsválasztást"
+      ],
+      "explanation": "48 órás tiltakozó sztrájkot hirdetett. A kormány december 9-én betiltotta a tanácsot, 11-én letartóztatta vezetőit; ez volt az utolsó sztrájk."
+    }
+  ],
+  "source": {
+    "label": "Az ENSZ különbizottságának jelentése a magyar kérdésről (1957), angolul"
+  }
+}
