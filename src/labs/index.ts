@@ -227,4 +227,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'soviet-troops-and-national-symbols': lazy(() => import('./philosophy/soviet-troops-and-national-symbols')),
   'rajk-reburial-and-the-16-points': lazy(() => import('./politics/rajk-reburial-and-the-16-points')),
   'nagy-government-and-neutrality': lazy(() => import('./engineering/nagy-government-and-neutrality')),
+  'nagy-yugoslav-embassy-abduction': lazy(() => import('./earth/nagy-yugoslav-embassy-abduction')),
 };

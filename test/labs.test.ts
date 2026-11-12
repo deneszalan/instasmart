@@ -223,6 +223,7 @@ import { done as rajkDone, EVENTS as RAJK_EVENTS, gap as rajkGap, nextExpected a
 import { AUSTRIA_LEFT as SOV_AUSTRIA_LEFT, AUSTRIA_TREATY as SOV_AUSTRIA_TREATY, bases as sovBases, inAustria as sovInAustria, LAST as SOV_LAST, monthIndex as sovMonth, reached as sovReached, TREATY as SOV_TREATY, WARSAW as SOV_WARSAW } from '../src/labs/philosophy/soviet-troops-and-national-symbols';
 import { cell as octCell, DAY as OCT_DAY, dayAt as octDayAt, daysBetween as octDays, DECK as OCT_DECK, done as octDone, fits as octFits } from '../src/labs/politics/rajk-reburial-and-the-16-points';
 import { DAYS as WEEK_DAYS, firstFooled as weekFirstFooled, fooled as weekFooled } from '../src/labs/engineering/nagy-government-and-neutrality';
+import { CARDS as EMB_CARDS, done as embDone, score as embScore, tally as embTally } from '../src/labs/earth/nagy-yugoslav-embassy-abduction';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2352,5 +2353,15 @@ describe('lab maths', () => {
     expect(weekFirstFooled()).toBe(3);
     expect(WEEK_DAYS[weekFirstFooled()]).toMatchObject({ m: 10, d: 31 });
     expect(WEEK_DAYS.filter((_, i) => weekFooled(i)).length).toBe(1);
+  });
+  it('embassy claim: no fact supports the communiqué of 23 November 1956; five contradict it, one is neutral', () => {
+    expect(EMB_CARDS.length).toBe(6);
+    expect(embTally('supports')).toBe(0);
+    expect(embTally('contradicts')).toBe(5);
+    expect(embTally('neither')).toBe(1);
+    const right = Object.fromEntries(EMB_CARDS.map((c) => [c.id, c.answer]));
+    expect(embScore(right)).toBe(6);
+    expect(embDone(right)).toBe(true);
+    expect(embDone({})).toBe(false);
   });
 });
