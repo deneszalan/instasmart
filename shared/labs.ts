@@ -224,6 +224,7 @@ export const LABS = {
   'north-africa-american-cemetery-carthage': 'Find graves on a schematic plan of the North Africa American Cemetery at Carthage, as a visiting family would: each practice record gives a plot (A to I), a row and a grave number.',
   'tunisian-victory-1944-film': 'A cutting room for the 1944 documentary Tunisian Victory: set the running time of the finished film and see how much of the 300,000 feet of film shot (as Variety reported) it keeps, at 90 feet of 35 mm film a minute.',
   'salami-tactics-1947-blue-slips': 'The Hungarian election of 31 August 1947, the blue-slip election: take the false votes away from the Communist result and find how many it would take for them to lose first place, against the estimates of 63,000 to about 200,000.',
+  'deportations-and-kulak-lists': 'A kulák family\'s delivery quota in Hungary in 1951 against its harvest: pick the lowest or the highest quota, 700 or 1,100 kg of wheat or its worth a hold, set the harvest, and find the harvest that just meets the highest quota, against the 1951 average of 970 kg.',
 } as const;
 
 export type LabId = keyof typeof LABS;

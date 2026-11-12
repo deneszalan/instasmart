@@ -224,4 +224,5 @@ export const LAB_COMPONENTS: Record<LabId, LazyExoticComponent<ComponentType<Lab
   'north-africa-american-cemetery-carthage': lazy(() => import('./earth/north-africa-american-cemetery-carthage')),
   'tunisian-victory-1944-film': lazy(() => import('./art/tunisian-victory-1944-film')),
   'salami-tactics-1947-blue-slips': lazy(() => import('./history/salami-tactics-1947-blue-slips')),
+  'deportations-and-kulak-lists': lazy(() => import('./philosophy/deportations-and-kulak-lists')),
 };

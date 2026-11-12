@@ -220,6 +220,7 @@ import { EPISODES as MEMMI_EPISODES, score as memmiScore } from '../src/labs/lit
 import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plotAt as cemPlotAt, plotRect as cemPlotRect, zoomBox as cemZoom, PLOTS as CEM_PLOTS, RECORDS as CEM_RECORDS, ROWS as CEM_ROWS, GRAVES as CEM_GRAVES } from '../src/labs/earth/north-africa-american-cemetery-carthage';
 import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, FT_PER_MIN as TV_FT_PER_MIN, hoursOf as tvHours, ratio as tvRatio, SHOT_FT as TV_SHOT } from '../src/labs/art/tunisian-victory-1944-film';
 import { communistPlace as salPlace, communistShare as salShare, ESTIMATES as SAL_ESTIMATES, RESULTS as SAL_RESULTS, toLoseFirst as salToLose, TOTAL as SAL_TOTAL } from '../src/labs/history/salami-tactics-1947-blue-slips';
+import { AVERAGE_1951 as KQ_AVG, leftOver as kqLeft, meetsHighest as kqMeets, QUOTAS as KQ_QUOTAS, takes as kqTakes } from '../src/labs/philosophy/deportations-and-kulak-lists';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2311,5 +2312,13 @@ describe('lab maths', () => {
     expect(salPlace(salToLose - 1)).toBe(1);
     expect(salPlace(salToLose)).toBe(2);
     expect(salPlace(287000)).toBe(2);
+  });
+  it('kulák quota: in 1951 the highest quota was more than the whole average harvest', () => {
+    expect(kqLeft(KQ_AVG, KQ_QUOTAS[0])).toBe(270);
+    expect(kqLeft(KQ_AVG, KQ_QUOTAS[1])).toBe(-130);
+    expect(kqTakes(KQ_AVG, KQ_QUOTAS[1])).toBeGreaterThan(100);
+    expect(kqMeets(1090, 1100)).toBe(false);
+    expect(kqMeets(1100, 1100)).toBe(true);
+    expect(kqMeets(1500, 700)).toBe(false);
   });
 });

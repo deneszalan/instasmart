@@ -1,0 +1,195 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "philosophy-deportations-and-kulak-lists",
+  "field": "philosophy",
+  "title": "In Mátyás Rákosi’s Hungary, a family labelled “class enemy” could lose its home overnight",
+  "emoji": "🌾",
+  "body": "Mátyás Rákosi’s Communist regime treated whole groups of Hungarians as **“class enemies”**. In the villages anyone farming more than 25 holds (about 14 hectares) was put on the **kulák** list, 61,922 landowners in 1949, and later any peasant who resisted collectivization could be one. Kulák families had to deliver ever more: in 1951 goods worth 700 to 1,100 kg of wheat a hold, when the average harvest was 970 kg. From 1948 to 1955 almost 200,000 people were convicted of “crimes against public supply”. On the night of 23 June 1950 the police took 2,446 people from villages near the southern border to closed family camps on the Hortobágy plain; by 1953 there were twelve. From May to July 1951, 12,704 people, former nobles, officers and officials with their families, were expelled from Budapest to 138 villages in the east, as [the historian Róbert Kis-Kapin describes](https://www.betekinto.hu/sites/default/files/betekinto-szamok/2011_1_kis_kapin.pdf). The camps closed after Prime Minister Imre Nagy’s amnesty of July 1953, but most families never got their homes back.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "From May to July 1951, how many people did Hungary’s regime expel from Budapest to villages in the east?",
+      "min": 0,
+      "max": 40000,
+      "step": 100,
+      "answer": 12704,
+      "unit": "people",
+      "explanation": "12,704 people in 5,182 families, between 21 May and 18 July 1951. They were sent to 138 villages and lodged in strangers’ houses."
+    },
+    {
+      "type": "video",
+      "src": "classenemies.mp4",
+      "poster": "classenemies.jpg",
+      "alt": "Animation in soil brown and wheat gold: a typed kulák list, a field of 25 holds, a quota bar taller than the harvest, convictions year by year, then a schematic map of Hungary with night arrows from the southern border to camps on the Hortobágy, and arrows from Budapest to 138 villages.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Heavy Heart” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 6
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "deportations-and-kulak-lists",
+      "prompt": "Pick the highest kulák quota of 1951 and find the harvest per hold a family needed just to meet it.",
+      "takeaway": "1,100 kg a hold: 130 kg more than the average harvest of 1951, the best year of the period, with nothing left for seed or bread. Many kulák farms collapsed under such quotas."
+    },
+    {
+      "type": "text",
+      "heading": "Who was a kulák?",
+      "text": "From 1949 Mátyás Rákosi’s regime counted anyone farming over 25 cadastral holds (about 14 hectares) as a kulák, Russian for a rich peasant: 61,922 landowners that year. Later the word covered any peasant who resisted collective farms. Kulák families had the heaviest quotas; many were made to give up their land."
+    },
+    {
+      "type": "chart",
+      "heading": "Convicted of “crimes against public supply”",
+      "items": [
+        {
+          "label": "1950",
+          "value": 26972
+        },
+        {
+          "label": "1951",
+          "value": 47296,
+          "emphasis": true
+        },
+        {
+          "label": "1952",
+          "value": 39560
+        },
+        {
+          "label": "1953",
+          "value": 20000
+        },
+        {
+          "label": "1954",
+          "value": 3974
+        },
+        {
+          "label": "1955",
+          "value": 5968
+        }
+      ],
+      "note": "Hungarian Statistical Yearbook, cited by Bálint Magyar (1986)"
+    },
+    {
+      "type": "timeline",
+      "heading": "Uprooted at home",
+      "events": [
+        {
+          "when": "23 June 1950",
+          "text": "2,446 people taken from the border zone"
+        },
+        {
+          "when": "1950–1953",
+          "text": "45 more waves; twelve closed camps"
+        },
+        {
+          "when": "May–July 1951",
+          "text": "12,704 people expelled from Budapest"
+        },
+        {
+          "when": "26 July 1953",
+          "text": "Amnesty under Imre Nagy"
+        },
+        {
+          "when": "August 1956",
+          "text": "Free to settle anywhere again"
+        }
+      ]
+    },
+    {
+      "type": "quiz",
+      "question": "Who was expelled from Budapest to villages in eastern Hungary in 1951?",
+      "options": [
+        "Former nobles, officers, officials",
+        "Workers who missed their norms",
+        "University students",
+        "Families of Soviet advisers"
+      ],
+      "answer": 0,
+      "explanation": "“Class aliens” and their families: former aristocrats, landowners, factory owners, senior officials, officers and clergy, 12,704 people in all."
+    }
+  ],
+  "tags": [
+    "hungary",
+    "rakosi",
+    "kulak",
+    "deportation",
+    "hortobagy"
+  ],
+  "source": {
+    "label": "József Saád: The Hortobágy deportees and 1956 (Telepesek Foundation, Hungarian National Archives)",
+    "url": "https://telepesek.mnl.gov.hu/pdf/hortob_dep_1956.pdf"
+  },
+  "createdAt": "2026-11-11T23:55:00Z",
+  "theme": {
+    "gradient": [
+      "#211a15",
+      "#5a4520"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  }
+}
