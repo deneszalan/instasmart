@@ -220,6 +220,7 @@ import { EPISODES as MEMMI_EPISODES, score as memmiScore } from '../src/labs/lit
 import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plotAt as cemPlotAt, plotRect as cemPlotRect, zoomBox as cemZoom, PLOTS as CEM_PLOTS, RECORDS as CEM_RECORDS, ROWS as CEM_ROWS, GRAVES as CEM_GRAVES } from '../src/labs/earth/north-africa-american-cemetery-carthage';
 import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, FT_PER_MIN as TV_FT_PER_MIN, hoursOf as tvHours, ratio as tvRatio, SHOT_FT as TV_SHOT } from '../src/labs/art/tunisian-victory-1944-film';
 import { done as rajkDone, EVENTS as RAJK_EVENTS, gap as rajkGap, nextExpected as rajkNext, SHUFFLED as RAJK_SHUFFLED, yearOf as rajkYear } from '../src/labs/history/rajk-show-trial-1949';
+import { AUSTRIA_LEFT as SOV_AUSTRIA_LEFT, AUSTRIA_TREATY as SOV_AUSTRIA_TREATY, bases as sovBases, inAustria as sovInAustria, LAST as SOV_LAST, monthIndex as sovMonth, reached as sovReached, TREATY as SOV_TREATY, WARSAW as SOV_WARSAW } from '../src/labs/philosophy/soviet-troops-and-national-symbols';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2315,5 +2316,19 @@ describe('lab maths', () => {
     expect(rajkNext(['split', 'trial'])).toBe('hanged');
     expect(rajkDone(RAJK_EVENTS.map((e) => e.id))).toBe(true);
     expect(rajkDone(['split'])).toBe(false);
+  });
+  it('Soviet troops in Hungary: armistice, then the treaty’s lines to Austria, then the Warsaw Pact; the goal only after the troops left Austria', () => {
+    expect(SOV_LAST).toBe(sovMonth(1956, 10));
+    expect(SOV_TREATY).toBe(sovMonth(1947, 9));
+    expect(SOV_WARSAW).toBeLessThan(SOV_AUSTRIA_TREATY);
+    expect(sovBases(sovMonth(1946, 1))).toEqual(['armistice']);
+    expect(sovBases(sovMonth(1950, 1))).toEqual(['treaty']);
+    expect(sovBases(sovMonth(1955, 6))).toEqual(['treaty', 'warsaw']);
+    expect(sovBases(sovMonth(1956, 1))).toEqual(['warsaw']);
+    for (let m = 0; m <= SOV_LAST; m++) expect(sovBases(m).length).toBeGreaterThan(0);
+    expect(sovInAustria(SOV_AUSTRIA_LEFT)).toBe(true);
+    expect(sovReached(SOV_AUSTRIA_LEFT)).toBe(false);
+    expect(sovReached(SOV_AUSTRIA_LEFT + 1)).toBe(true);
+    expect(sovReached(sovMonth(1950, 1))).toBe(false);
   });
 });

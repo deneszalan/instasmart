@@ -224,6 +224,7 @@ export const LABS = {
   'north-africa-american-cemetery-carthage': 'Find graves on a schematic plan of the North Africa American Cemetery at Carthage, as a visiting family would: each practice record gives a plot (A to I), a row and a grave number.',
   'tunisian-victory-1944-film': 'A cutting room for the 1944 documentary Tunisian Victory: set the running time of the finished film and see how much of the 300,000 feet of film shot (as Variety reported) it keeps, at 90 feet of 35 mm film a minute.',
   'rajk-show-trial-1949': 'Put the Rajk case in order on a time line from 1948 to 1956: Stalin\'s break with Tito, the show trial, the hanging, the regime\'s admission that the charges were false, the reburial and the revolution, and see how long the silence lasted.',
+  'soviet-troops-and-national-symbols': 'Slide through the months from 1945 to October 1956 and see on what legal basis Soviet troops stood in Hungary: the 1945 armistice, the 1947 peace treaty\'s lines to Austria, then the Warsaw Pact; find the moment when no Soviet zone in Austria was left to guard and the troops stayed anyway.',
 } as const;
 
 export type LabId = keyof typeof LABS;

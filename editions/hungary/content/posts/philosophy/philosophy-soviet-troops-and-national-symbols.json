@@ -1,0 +1,155 @@
+{
+  "$schema": "../../schema/post.schema.json",
+  "id": "philosophy-soviet-troops-and-national-symbols",
+  "field": "philosophy",
+  "title": "In 1956 Hungarians cut a hole in their own flag, and it became the revolution’s symbol",
+  "emoji": "🇭🇺",
+  "body": "On 23 October 1956 marchers in Budapest cut the Communist emblem out of Hungary’s red, white and green flags, and the **flag with a hole** became the symbol of the revolution. The emblem stood for foreign power. Soviet troops had entered Hungary fighting Germany in 1944–45 and stayed: the 1947 peace treaty let them guard the Soviet Army’s lines to its zone in Austria, and when Austria was freed in 1955 the new Warsaw Pact kept them, about 20,000 men before October, the UN Special Committee was told. The 1945 armistice made Hungary deliver goods worth 200 million dollars to the Soviet Union, German property in Hungary, shares in more than 500 firms, passed to Soviet hands ([János Honvári](https://openaccess.ludovika.hu/nke/catalog/download/32/299/771?inline=1)), and the uranium of Pécs was mined under a Soviet concession. In 1949 a Soviet-style emblem replaced the Kossuth arms, Russian was compulsory at school, and 15 March, the anniversary of the 1848 revolution, was a working day. The UN committee found the Soviet soldiers were not personally unpopular; people resented the foreign power that kept the regime in place. The students’ 16 points began: all Soviet troops out.",
+  "slides": [
+    {
+      "type": "estimate",
+      "question": "Before October 1956, about how many Soviet soldiers were stationed in Hungary, by the UN committee’s account?",
+      "min": 0,
+      "max": 100000,
+      "step": 1000,
+      "answer": 20000,
+      "unit": "soldiers",
+      "explanation": "About 20,000: two Soviet mechanized divisions with some 600 tanks, the UN Special Committee was told. Far more were brought in after 23 October."
+    },
+    {
+      "type": "video",
+      "src": "flag.mp4",
+      "poster": "flag.jpg",
+      "alt": "Animation on dark green: a red, white and green flag whose emblem is cut out, a schematic map of Hungary with Soviet army arrows and a dashed line to Austria, crates of reparations, a grid of 500 firms, uranium at Pécs, the Kossuth arms beside the 1949 emblem, and the students’ 16 points.",
+      "fit": "cover",
+      "animation": true,
+      "credit": "Hungary 1956 · original animation · AI narration",
+      "music": "“Heart of Nowhere” Kevin MacLeod (incompetech.com) · CC BY 4.0",
+      "ratings": {
+        "complexity": 4,
+        "shock": 5
+      },
+      "steps": [
+        {
+          "start": 0.53,
+          "end": 6.4
+        },
+        {
+          "start": 6.67,
+          "end": 12.53
+        },
+        {
+          "start": 12.8,
+          "end": 18.67
+        },
+        {
+          "start": 18.93,
+          "end": 24.8
+        },
+        {
+          "start": 25.07,
+          "end": 30.93
+        },
+        {
+          "start": 31.2,
+          "end": 37.07
+        },
+        {
+          "start": 37.33,
+          "end": 43.2
+        },
+        {
+          "start": 43.47,
+          "end": 49.33
+        },
+        {
+          "start": 49.6,
+          "end": 55.47
+        },
+        {
+          "start": 55.73,
+          "end": 61.6
+        },
+        {
+          "start": 61.87,
+          "end": 67.73
+        },
+        {
+          "start": 68,
+          "end": 73.87
+        },
+        {
+          "start": 74.13,
+          "end": 80
+        },
+        {
+          "start": 80.27,
+          "end": 86.13
+        }
+      ]
+    },
+    {
+      "type": "explore",
+      "lab": "soviet-troops-and-national-symbols",
+      "prompt": "Slide through the months from 1945 to 1956. Find a moment when Soviet troops had no zone left in Austria to guard.",
+      "takeaway": "From the autumn of 1955 there was no Soviet zone in Austria, so the treaty’s reason was gone. The troops stayed anyway: the Warsaw Pact, signed the day before Austria’s treaty, gave them a new basis."
+    },
+    {
+      "type": "compare",
+      "heading": "Imposed and demanded",
+      "left": {
+        "label": "Imposed by the regime",
+        "text": "Soviet troops under the Warsaw Pact, a Soviet-style emblem, Russian at school, 15 March a working day."
+      },
+      "right": {
+        "label": "Demanded, 22 Oct 1956",
+        "text": "All Soviet troops out, the Kossuth arms back, 15 March a holiday and 6 October a day of mourning."
+      }
+    },
+    {
+      "type": "quote",
+      "text": "In place of the existing coat of arms, which is foreign to the Hungarian people, we wish the re-introduction of the old Hungarian Kossuth arms.",
+      "attribution": "Point 14 of the students’ 16 points, Budapest, 22 October 1956"
+    },
+    {
+      "type": "text",
+      "heading": "Not against the soldiers",
+      "text": "The UN Special Committee found that the Soviet troops were not personally unpopular with Hungarians. What people resented was what they stood for: a foreign power that kept in place a regime they had not chosen. The hole in the flag rejected that power, not Hungary’s neighbours."
+    },
+    {
+      "type": "quiz",
+      "question": "Under the 1947 peace treaty, what reason allowed Soviet troops to stay in Hungary?",
+      "options": [
+        "To guard lines to their zone in Austria",
+        "To defend Hungary against Yugoslavia",
+        "To collect the war reparations",
+        "To run the uranium mines"
+      ],
+      "answer": 0,
+      "explanation": "Article 22 let the Soviet Union keep forces for its army’s lines of communication with its occupation zone in Austria. When Austria was freed in 1955, the Warsaw Pact took over as the basis."
+    }
+  ],
+  "tags": [
+    "flag",
+    "symbols",
+    "sovietarmy",
+    "kossutharms",
+    "16points",
+    "warsawpact"
+  ],
+  "source": {
+    "label": "UN Special Committee on the Problem of Hungary: Report (1957)",
+    "url": "https://mek.oszk.hu/01200/01274/"
+  },
+  "theme": {
+    "gradient": [
+      "#14201a",
+      "#5a1f24"
+    ]
+  },
+  "author": {
+    "name": "Claude",
+    "kind": "ai"
+  },
+  "createdAt": "2026-11-11T23:51:47Z"
+}
