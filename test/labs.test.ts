@@ -221,6 +221,7 @@ import { graveAt as cemGraveAt, gravePoint as cemPoint, planBox as cemPlan, plot
 import { feetFor as tvFeet, FINAL_FT as TV_FINAL_FT, FINAL_MIN as TV_FINAL_MIN, FT_PER_MIN as TV_FT_PER_MIN, hoursOf as tvHours, ratio as tvRatio, SHOT_FT as TV_SHOT } from '../src/labs/art/tunisian-victory-1944-film';
 import { communistPlace as salPlace, communistShare as salShare, ESTIMATES as SAL_ESTIMATES, RESULTS as SAL_RESULTS, toLoseFirst as salToLose, TOTAL as SAL_TOTAL } from '../src/labs/history/salami-tactics-1947-blue-slips';
 import { AVERAGE_1951 as KQ_AVG, leftOver as kqLeft, meetsHighest as kqMeets, QUOTAS as KQ_QUOTAS, takes as kqTakes } from '../src/labs/philosophy/deportations-and-kulak-lists';
+import { dayOfYear as y55Day, EVENTS as Y55_EVENTS, inOrder as y55InOrder, nextEvent as y55Next } from '../src/labs/politics/nagy-ousted-rakosi-returns-1955';
 
 describe('labs', () => {
   it('has a component for every lab and no others', () => {
@@ -2320,5 +2321,13 @@ describe('lab maths', () => {
     expect(kqMeets(1090, 1100)).toBe(false);
     expect(kqMeets(1100, 1100)).toBe(true);
     expect(kqMeets(1500, 700)).toBe(false);
+  });
+  it('1955: the events are listed in time order, the Warsaw Pact one day before the Austrian State Treaty', () => {
+    expect(y55InOrder(Y55_EVENTS.map((e) => e.id))).toBe(true);
+    expect(y55Day(5, 15) - y55Day(5, 14)).toBe(1);
+    expect(y55Day(12, 31)).toBe(365);
+    expect(y55Next([])).toBe('moscow');
+    expect(y55Next(['moscow', 'nagyOut'])).toBe('warsaw');
+    expect(y55InOrder(['treaty', 'warsaw'])).toBe(false);
   });
 });

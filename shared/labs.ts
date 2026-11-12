@@ -225,6 +225,7 @@ export const LABS = {
   'tunisian-victory-1944-film': 'A cutting room for the 1944 documentary Tunisian Victory: set the running time of the finished film and see how much of the 300,000 feet of film shot (as Variety reported) it keeps, at 90 feet of 35 mm film a minute.',
   'salami-tactics-1947-blue-slips': 'The Hungarian election of 31 August 1947, the blue-slip election: take the false votes away from the Communist result and find how many it would take for them to lose first place, against the estimates of 63,000 to about 200,000.',
   'deportations-and-kulak-lists': 'A kulák family\'s delivery quota in Hungary in 1951 against its harvest: pick the lowest or the highest quota, 700 or 1,100 kg of wheat or its worth a hold, set the harvest, and find the harvest that just meets the highest quota, against the 1951 average of 970 kg.',
+  'nagy-ousted-rakosi-returns-1955': '1955 in Hungary and next door in Austria: tap seven events in the order they happened, from Moscow condemning Imre Nagy to the Warsaw Pact, the Austrian State Treaty a day later, the Soviet troops leaving Vienna and Hungary joining the UN, and watch them take their place on a timeline.',
 } as const;
 
 export type LabId = keyof typeof LABS;
